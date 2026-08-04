@@ -2,5 +2,73 @@
 %%                       IAEW LaTeX Template                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Ermittlung des kurativen Einsparpotenzial}
-\label{ch:kusys_sim}
+\chapter{Ergebnisse der Fahrplanoptimierung}
+\label{ch:results}
+% ===============================================================
+% Zielumfang Kapitel 4: 16 Seiten
+%   4.1 Referenzfall ohne kurative Bindung ................... 3
+%   4.2 Fahrpläne und SoC-Verläufe unter Bindung ............. 4
+%   4.3 Erlöswirkung und Opportunitätskosten ................. 4
+%   4.4 Sensitivitäten ....................................... 4
+%   4.5 Ableitung der Mindestvergütung ....................... 1
+%
+% IN DIESEM KAPITEL NUR BESCHREIBEN, NICHT INTERPRETIEREN.
+% Das ist der häufigste Fehler bei dieser Kapitelaufteilung. Wer die
+% Trennung diszipliniert durchhält, schreibt Kapitel 5 fast von selbst.
+% ===============================================================
+
+% ---------------------------------------------------------------
+\section{Referenzfall ohne kurative Bindung}
+\label{sec:reference_case}
+% [Ziel: 3 Seiten]
+
+\begin{itemize}
+    \item Marktoptimaler Fahrplan des Batteriespeichers am Beispieltag
+    \item Zyklenzahl, Erlöse je Markt, Auslastung des SoC-Bands
+    \item Plausibilisierung gegen die Preiszeitreihe
+\end{itemize}
+
+% ---------------------------------------------------------------
+\section{Fahrpläne und SoC-Verläufe unter kurativer Bindung}
+\label{sec:bound_case}
+% [Ziel: 4 Seiten]
+
+\begin{itemize}
+    \item Veränderung des Fahrplans gegenüber dem Referenzfall
+    \item Verlauf des Ladezustands und Ausnutzung des verbleibenden Bands
+    \item Verlagerung von Lade- und Entladevorgängen in andere Viertelstunden
+\end{itemize}
+
+% ---------------------------------------------------------------
+\section{Erlöswirkung und Opportunitätskosten}
+\label{sec:revenue_impact}
+% [Ziel: 4 Seiten]
+
+\begin{itemize}
+    \item Erlösdifferenz zwischen freiem und gebundenem Fahrplan
+    \item Aufteilung nach Märkten
+    \item Gegenüberstellung mit der Vergütung nach dem modifizierten Weber-Ansatz aus Abschnitt \ref{sec:reference_verification}
+    \item Beide Komponenten des finanziellen Ausgleichs getrennt ausweisen: Erzeugungsauslagen und Optionswert
+\end{itemize}
+
+% ---------------------------------------------------------------
+\section{Sensitivitäten}
+\label{sec:sensitivities}
+% [Ziel: 4 Seiten]
+
+\begin{itemize}
+    \item Abrufhäufigkeit
+    \item Vergütungsniveau
+    \item Bindungsdauer und Breite des reservierten SoC-Bands
+    \item Anlagenauslegung (Verhältnis Energie zu Leistung)
+\end{itemize}
+
+% ---------------------------------------------------------------
+\section{Ableitung der mindestnotwendigen Vergütung}
+\label{sec:minimum_compensation}
+% [Ziel: 1 Seite]
+%
+% Das Ergebnis ist als konservative Obergrenze zu benennen: Mit
+% vollständiger Preiskenntnis trifft der unrestringierte Fahrplan jede
+% Preisspitze exakt, wodurch die Opportunitätskosten der Bindung nach
+% oben verzerrt sind. Die Begründung gehört nach Abschnitt 5.4.

@@ -2,238 +2,143 @@
 %%                       IAEW LaTeX Template                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Strommärkte und Betriebsplanung als Grundlage für kuratives Engpassmanagement}
-\label{ch:market_analysis}
+\chapter{Ausgestaltung und Modellierung des kurativen Marktmechanismus}
+\label{ch:design_model}
+% ===============================================================
+% Zielumfang Kapitel 3: 16 Seiten
+%   3.1 Entwurf des kurativen Marktprodukts .................. 4
+%   3.2 Modellierungsansatz und Systemgrenzen ................ 2
+%   3.3 Lineare Optimierung und Gurobi ....................... 1
+%   3.4 Mathematische Formulierung des Speichermodells ....... 5
+%   3.5 Eingangsdaten und Szenariorahmen 2030 ................ 2,5
+%   3.6 Referenzverfahren und Verifikation ................... 1,5
+%
+% Dieses Kapitel enthält den eigenen Beitrag der Arbeit. Der
+% Produktentwurf steht bewusst VOR der Modellierung, damit die
+% Modellgleichungen aus der Produktdefinition folgen.
+% ===============================================================
+
+% ---------------------------------------------------------------
+\section{Entwurf des kurativen Marktprodukts}
+\label{sec:product_design}
+% [Ziel: 4 Seiten]
+%
+% Hier wird der Anforderungskatalog aus Abschnitt 2.4.1 in ein
+% konkretes Produkt übersetzt. Jede Designentscheidung muss auf eine
+% Anforderung zurückverweisen.
+%
+% Rahmung: Was der ÜNB bei kurativer Vorhaltung kauft, IST eine Option
+% -- Strike, Prämie, Laufzeit, Ausübungswahrscheinlichkeit. Damit ist
+% das Produkt die konsequente Fortschreibung einer bereits
+% regulatorisch verankerten Bewertungslogik auf einen Aktortyp, für
+% den sie bislang nicht funktioniert.
 
 \begin{itemize}
-    \item Überblick über die relevanten Strommärkte und deren Bedeutung für den kurativen Netzbetrieb
-    \item Einordnung der Betriebsplanung als Bindeglied zwischen Marktgeschehen und Netzengpassmanagement
-    \item Ableitung von Anforderungen an ein kuratives Marktdesign als Überleitung zu Kapitel 4
+    \item Produktdefinition: Vorhalteleistung statt Arbeit; Begründung aus Abschnitt \ref{sec:interim_conclusion}
+    \item Bindungsdauer und Reaktionszeit, abgeleitet aus den TATL-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}
+    \item Beschaffungszeitpunkt im Verhältnis zum Intraday-Gate-Closure; Vorlage ist die Zeitstaffelung des modifizierten Weber-Ansatzes \cite{weber_gutachten_2015}
+    \item Lokationalität der Beschaffung \cite{blank_determination_2024}
+    \item Vergütungslogik und Präqualifikationsanforderungen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+    \item Abgrenzung zum Netzbooster \cite{consentec_systembooster_2026}
 \end{itemize}
 
-% Abbildungen:
-% \fig{} Zeitstrahl: Marktzeithorizonte von Terminmarkt bis Echtzeit (Day-Ahead, Intraday, Regelenergie, Redispatch)
+% ZU ENTSCHEIDEN UND ZU BEGRÜNDEN:
+% Sperrt kurative Vorhaltung die Anlage vollständig, oder bindet sie
+% nur das SoC-Band? Anlage 5 der Festlegung spricht von "gesperrter
+% Leistung", d. h. die gesamte Intraday-Optionalität entfällt.
+% Kurative Vorhaltung ist schwächer: Der Speicher darf weiter handeln,
+% muss aber Energie und Leistungsreserve für den Abruf vorhalten.
+% Bei der schwächeren Variante ist der Optionswert in Abschnitt 3.6
+% nur anteilig anzusetzen. An dieser Entscheidung hängen die Zahlen
+% in Kapitel 4.
 
-\section{Großhandelsmärkte}
-\label{sec:wholesale_markets}
+% ---------------------------------------------------------------
+\section{Modellierungsansatz und Systemgrenzen}
+\label{sec:model_scope}
+% [Ziel: 2 Seiten]
 
 \begin{itemize}
-    \item Überblick über die Struktur der deutschen und europäischen Großhandelsmärkte
-    \item Bedeutung der Großhandelsmärkte als primäre Erlösquelle für flexible Aktoren
+    \item Einzelanlagenbetrachtung statt Systemebene; Begründung und Konsequenzen
+    \item Deterministische Optimierung mit vollständiger Preiskenntnis; Abgrenzung gegenüber stochastischen Ansätzen
+    \item Zeitliche Auflösung: 96 Viertelstunden je Tag, konsistent zur Marktzeiteinheit seit dem 01.10.2025 \cite{ffe_saegezahn_2026}
+    \item Nicht abgebildet: Netzrestriktionen, Abrufwahrscheinlichkeit, Poolbildung
 \end{itemize}
 
-\subsection{Terminmarkt}
-\label{sec:market_termin}
+% ---------------------------------------------------------------
+\section{Lineare Optimierung und Gurobi}
+\label{sec:lp_gurobi}
+% [Ziel: 1 Seite -- diese Vorgabe strikt einhalten]
+%
+% Zwei Absätze genügen: Zielfunktion, Restriktionen,
+% Entscheidungsvariablen; danach Lösungsverfahren (Simplex bzw.
+% Barrier) und die verwendete Solver-Version. Kein Lehrbuchexkurs.
 
 \begin{itemize}
-    \item Handel von Strom für Wochen, Monate und Jahre im Voraus (Forwards, Futures)
-    \item Bedeutung für die langfristige Absicherung und Portfolioplanung von Speicherbetreibern
-    \item Geringe Relevanz für kurativen Einsatz aufgrund fehlender Kurzfristigkeit
+    \item Grundform des linearen Programms: Zielfunktion, Nebenbedingungen, Entscheidungsvariablen \cite{domschke_operations_2015}
+    \item Lösungsverfahren und Eindeutigkeit des Optimums \cite{domschke_operations_2015}
+    \item Verwendete Solver-Version und Lizenzart \cite{gurobi_reference_2026}
 \end{itemize}
 
-\subsection{Day-Ahead Spotmarkt}
-\label{sec:market_da}
+% ---------------------------------------------------------------
+\section{Mathematische Formulierung des Speichermodells}
+\label{sec:storage_model}
+% [Ziel: 5 Seiten]
+%
+% HIERHER gehören die technischen BESS-Eigenschaften -- SoC-Dynamik,
+% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.3.1.
 
 \begin{itemize}
-    \item Auktionsbasierter Handel für den Folgetag (EPEX SPOT, 12:00 Uhr Gate Closure)
-    \item Preisbildung und Merit-Order als Grundlage für Dispatch-Entscheidungen
-    \item Rolle des Day-Ahead-Marktes für die Fahrplanoptimierung von Batteriespeichern
-    \item Zusammenhang zwischen Day-Ahead-Preisen und Netzengpasssituationen
+    \item Zielfunktion: Erlösmaximierung über die Spotmärkte
+    \item SoC-Bilanzgleichung; ihre Dualvariable wird in Abschnitt \ref{sec:reference_verification} als Schattenpreis weiterverwendet
+    \item Leistungs- und Energiegrenzen, Lade- und Entladewirkungsgrad
+    \item Degradation und Zyklenkosten \cite{kumtepeli_energy_2020}
+    \item Restriktion der kurativen Vorhaltung: Bindung des SoC-Bands im Abrufzeitfenster
+    \item Zeitgekoppelte Formulierung von Flexibilitätsgeboten als methodische Referenz \cite{schmitt_linear_2020}
 \end{itemize}
 
-% Abbildungen:
-% \fig{} Merit-Order-Kurve: Preisbildung im Day-Ahead-Markt
+% WICHTIG -- vor dem Implementieren entscheiden:
+% Dualvariablen liefert Gurobi nur bei einem reinen LP. Sobald
+% Binärvariablen im Modell sind (z. B. zum Ausschluss von
+% gleichzeitigem Laden und Entladen), gibt es kein Pi. Falls Binaries
+% nötig sind: fixieren und als LP nachlösen.
 
-\subsection{Intraday Spotmarkt}
-\label{sec:market_id}
+% ---------------------------------------------------------------
+\section{Eingangsdaten und Szenariorahmen 2030}
+\label{sec:input_data}
+% [Ziel: 2,5 Seiten]
 
 \begin{itemize}
-    \item Kontinuierlicher Handel und Intraday-Auktionen (ID1, ID3) für Stunden- und Viertelstundenprodukte
-    \item Gate Closure 30 Minuten vor Lieferbeginn in Deutschland
-    \item Hohe Relevanz für kurativen Einsatz: kurzfristige Netzengpässe erst im Intraday-Horizont sichtbar
-    \item Viertelstundenprodukte als geeignetes Instrument für schnelle Batteriespeicher
+    \item Auswahl und Begründung des Beispieltages: Werktag im November 2025, also nach der Umstellung auf Viertelstundenprodukte; hohe Windeinspeisung und hohes Redispatch-Volumen \cite{ffe_saegezahn_2026, bundesnetzagentur_mengen_nodate}
+    \item Preiszeitreihen Day-Ahead und Intraday \cite{smard_marktdaten_2026}
+    \item Regelleistungspreise und Produktschnitte \cite{regelleistung_ausschreibungsdaten_2026}
+    \item Anlagenparameter des Batteriespeichers: Leistung, Energie, Wirkungsgrad; Kostenannahmen \cite{juelch_comparison_2016, garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
+    \item Szenariorahmen 2030 \cite{bundesnetzagentur_netzentwicklungsplan_2026}
 \end{itemize}
 
-\subsection{OTC-Handel}
-\label{sec:market_otc}
+% Für jede Datenquelle sind Abrufdatum, Zeitraum, Auflösung und
+% Filtereinstellungen zu dokumentieren -- sonst ist die Rechnung nicht
+% reproduzierbar.
+
+% ---------------------------------------------------------------
+\section{Referenzverfahren und Verifikation}
+\label{sec:reference_verification}
+% [Ziel: 1,5 Seiten]
+%
+% Kernsatz dieses Abschnitts:
+% "Das Verfahren der Festlegung BK8-22-0001-A wird übernommen, wobei
+% die iterative Grenzpreisbestimmung aus der Preisdauerlinie durch die
+% Dualvariablen der Speicheroptimierung ersetzt wird. Die Bewertung
+% der Intraday-Optionalität nach dem modifizierten Weber-Ansatz bleibt
+% unverändert."
+%
+% Die Implementierung wird gegen das Berechnungsbeispiel der
+% Bundesnetzagentur validiert -- eine behördlich publizierte
+% Referenzrechnung ist die stärkste verfügbare Verifikation.
 
 \begin{itemize}
-    \item Bilateraler Handel außerhalb der Börse zwischen Marktteilnehmern
-    \item Bedeutung für individuelle Lieferverträge und maßgeschneiderte Produkte
-    \item Eingeschränkte Transparenz und Liquidität im Vergleich zum Börsenhandel
+    \item Nachbildung des modifizierten Weber-Ansatzes als Referenzverfahren \cite{weber_gutachten_2015, bundesnetzagentur_anlage1_2024}
+    \item Ersetzung der iterativen Grenzpreisbestimmung durch die Dualvariablen aus Abschnitt \ref{sec:storage_model}
+    \item Anpassungen vom Pumpspeicher zum Batteriespeicher: symmetrische Leistung, Netzentgeltbefreiung nach §\,118 Abs.\,6 \ac{EnWG}, Zyklenkosten
+    \item Validierung gegen das Berechnungsbeispiel für Tagesspeicher \cite{bundesnetzagentur_berechnungsbeispiel_2024}
+    \item Zusammenführung ex post: Mindestvergütung als Summe aus deterministischer Erlösdifferenz und Optionswert
 \end{itemize}
-
-\section{Systemdienstleistungen und Regelenergiemärkte}
-\label{sec:system_markets}
-
-\begin{itemize}
-    \item Überblick über die Märkte für Systemdienstleistungen und deren Vergütungslogik
-    \item Bedeutung für Batteriespeicher als schnell aktivierbare Ressource
-\end{itemize}
-
-\subsection{Frequenzhaltung}
-\label{sec:frequency_control}
-
-\begin{itemize}
-    \item Überblick über die drei Regelenergieprodukte und deren zeitliche Aktivierungslogik
-    \item Präqualifikationsanforderungen und Marktstruktur (wöchentliche Auktionen)
-\end{itemize}
-
-\subsubsection{Primärregelleistung}
-\label{sec:market_fcr}
-
-\begin{itemize}
-    \item Automatische Frequenzstabilisierung innerhalb von 30 Sekunden (FCR)
-    \item Symmetrisches Produkt: gleichzeitige Vorhaltung von positiver und negativer Leistung
-    \item Hohe Eignung für Batteriespeicher aufgrund schneller Reaktionszeit
-\end{itemize}
-
-\subsubsection{Sekundärregelleistung}
-\label{sec:market_afrr}
-
-\begin{itemize}
-    \item Automatisch aktivierte Frequenzwiederherstellung (aFRR), Reaktionszeit 30 Sekunden
-    \item Getrennte Ausschreibung von positiver und negativer Regelleistung
-    \item Aktivierungswahrscheinlichkeit und Erlösstruktur für Speicherbetreiber
-\end{itemize}
-
-\subsubsection{Minutenreserve}
-\label{sec:market_mfrr}
-
-\begin{itemize}
-    \item Manuell aktivierte Frequenzwiederherstellung (mFRR), Aktivierung innerhalb von 15 Minuten
-    \item Viertelstündliche Ausschreibung seit Einführung der neuen Marktregeln
-    \item Geringere Anforderungen an Reaktionsgeschwindigkeit, aber höhere Aktivierungswahrscheinlichkeit
-\end{itemize}
-
-\section{Betriebsplanung und Dispatch-Prozesse}
-\label{sec:operations_planning}
-
-\begin{itemize}
-    \item Einordnung der Betriebsplanung in den zeitlichen Ablauf vom Terminmarkt bis zur Echtzeit
-    \item Zusammenspiel von Marktpositionen, Fahrplänen und netzbetreiberseitigen Eingriffen
-\end{itemize}
-
-% Abbildungen:
-% \fig{} Schematische Darstellung: Zusammenspiel Marktposition -> Fahrplan -> Netzengpass -> kurative Maßnahme
-
-\subsection{Day-Ahead Fahrplanung}
-\label{sec:da_scheduling}
-
-\begin{itemize}
-    \item Erstellung von Einspeise- und Bezugsfahrplänen nach Day-Ahead-Auktion
-    \item Rolle der ÜNB bei der Überprüfung der Fahrpläne auf Netzverträglichkeit
-    \item Identifikation von Engpässen im präventiven Horizont und Einleitung von Gegenmaßnahmen
-\end{itemize}
-
-\subsection{Intraday-Anpassungen}
-\label{sec:id_adjustments}
-
-\begin{itemize}
-    \item Aktualisierung der Fahrpläne durch Intraday-Handel und Prognoseaktualisierungen
-    \item Verkürzung des Planungshorizonts und zunehmende Unsicherheitsreduktion
-    \item Möglichkeit zur Anpassung von Redispatch-Maßnahmen bis kurz vor Lieferbeginn
-\end{itemize}
-
-\subsection{Redispatch 2.0}
-\label{sec:redispatch_process}
-
-\begin{itemize}
-    \item Prozessablauf von der Engpasserkennung bis zur Aktivierung und Abrechnung
-    \item Datenaustausch zwischen ÜNB, VNB und Anlagenbetreibern
-\end{itemize}
-
-% Abbildungen:
-% \fig{} Ablaufdiagramm: Redispatch 2.0 Prozessablauf mit Rollenverteilung ÜNB / VNB / Anlagenbetreiber
-
-\subsubsection{Gesetzlicher Rahmen}
-\label{sec:redispatch_legal}
-
-\begin{itemize}
-    \item \S~13 und \S~14 EnWG als rechtliche Grundlage für Redispatch-Maßnahmen
-    \item Erweiterung des Redispatch 2.0 auf erneuerbare Energien und Speicher ab 2021
-\end{itemize}
-
-\subsubsection{Rollenverteilung zwischen ÜNB und VNB}
-\label{sec:redispatch_roles}
-
-\begin{itemize}
-    \item ÜNB als koordinierender Netzbetreiber: Engpasserkennung und Maßnahmenauswahl
-    \item VNB als anweisender Netzbetreiber: Weiterleitung von Redispatch-Anforderungen
-    \item Herausforderungen bei der netzebenenübergreifenden Koordination
-\end{itemize}
-
-\subsubsection{Präventiver Redispatch und kurative Höherauslastung}
-\label{sec:redispatch_prev_cur}
-
-\begin{itemize}
-    \item Präventiver Redispatch: Anpassung von Einspeisefahrplänen vor Eintreten des Engpasses im Day-Ahead- oder Intraday-Horizont
-    \item Kurativer Redispatch: Eingriff nach Eintreten des Engpasses durch Anpassung von Wirkleistungseinspeisung in Echtzeit
-    \item Kurative Höherauslastung: Nutzung der transienten Stromtragfähigkeit (TATL) zur temporären Überschreitung des Dauergrenzwerts (PATL) - kein Redispatch, sondern Erweiterung des zulässigen Betriebsbereichs
-    \item Abgrenzung: Kurative Höherauslastung ersetzt oder reduziert den Bedarf an kurativem Redispatch, indem der Engpass durch Tolerierung transienter Überlastung überbrückt wird
-    \item Effizienzpotenzial: Kurative Höherauslastung ermöglicht Kosteneinsparung gegenüber präventivem Redispatch bei gleichzeitiger Wahrung der Netzsicherheit
-\end{itemize}
-
-\section{Marktdesign im Engpassmanagement}
-\label{sec:design_congestion}
-
-\begin{itemize}
-    \item Überblick über bestehende und diskutierte Marktdesignansätze zur Engpassbewältigung
-    \item Einordnung der Ansätze hinsichtlich ihrer Eignung für den kurativen Einsatz von Batteriespeichern
-\end{itemize}
-
-\subsection{Regionalisierung}
-\label{sec:regionalisation}
-
-\begin{itemize}
-    \item Motivation: Einheitliche Preiszone Deutschland führt zu ineffizienten Dispatch-Entscheidungen
-    \item Überblick über Ansätze zur räumlichen Differenzierung von Strompreisen
-\end{itemize}
-
-\subsubsection{Preiszonen}
-\label{sec:price_zones}
-
-\begin{itemize}
-    \item Aufteilung der einheitlichen Preiszone in mehrere Gebotszonen (z.B. Nord/Süd)
-    \item Erfahrungen aus dem europäischen Ausland (Skandinavien, Italien)
-    \item Politische und regulatorische Hürden in Deutschland
-\end{itemize}
-
-\subsubsection{Dispatch-Hubs}
-\label{sec:dispatch_hubs}
-
-\begin{itemize}
-    \item Lokale Flexibilitätsmärkte als Alternative zur vollständigen Preiszonen-Aufteilung
-    \item Konzept der Dispatch-Hubs: netzdienliche Ausschreibung in definierten Netzregionen
-    \item Potenzial für den gezielten Einsatz von Batteriespeichern in engpassgefährdeten Regionen
-\end{itemize}
-
-\subsection{Echtzeit-Redispatch}
-\label{sec:market_rt_redispatch}
-
-\begin{itemize}
-    \item Marktbasierte Aktivierung von Flexibilität in Echtzeit zur Engpassbehebung
-    \item Anforderungen an Latenz, Kommunikation und Preisbildung im Echtzeitbetrieb
-    \item Internationale Erfahrungen und Pilotprojekte (z.B. UK Balancing Mechanism)
-\end{itemize}
-
-\subsection{Ex-Ante Beschränkungen}
-\label{sec:exante}
-
-\begin{itemize}
-    \item Flow-Based Market Coupling (FBMC) als Instrument zur ex-ante Engpassberücksichtigung
-    \item Transmission Capacity Withholding: Reduktion verfügbarer Übertragungskapazität
-    \item Abwägung zwischen Marktintegration und Netzsicherheit
-\end{itemize}
-
-\subsection{Anforderungen an ein kuratives Marktdesign}
-\label{sec:market_curative}
-
-\begin{itemize}
-    \item Synthese der analysierten Ansätze: Welche Elemente eignen sich für ein kuratives Marktdesign?
-    \item Anforderungskatalog: Reaktionsgeschwindigkeit, Lokationalität, Vergütung, Diskriminierungsfreiheit
-    \item Offene Forschungsfragen als direkte Überleitung zu Kapitel 4: Inwiefern lässt sich durch die Integration eines lokalen Flexibilitätsmarktes für Batteriespeicher das kurative Redispatch-Volumen im deutschen Übertragungsnetz bis 2030 kostenoptimal reduzieren?
-\end{itemize}
-
-% Abbildungen:
-% \fig{} Vergleichsmatrix: Marktdesignansätze (Preiszonen, Dispatch-Hubs, Echtzeit-Redispatch, Ex-Ante) nach Kriterien des Anforderungskatalogs

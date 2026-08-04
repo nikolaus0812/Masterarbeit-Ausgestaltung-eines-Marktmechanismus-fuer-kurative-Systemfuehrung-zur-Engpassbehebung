@@ -1,12 +1,29 @@
-\chapter{Kurative Systemführung}
+\chapter{Kurative Systemführung und ihre marktliche Grundlage}
 \label{ch:curative_system}
-  
-Kurative Systemführung stellt einen ergänzenden Ansatz in der Systemführung dar, der die Kapazitätsgrenzen des bestehenden Übertragungsnetzes erweitert und damit einen Beitrag zur Reduktion des strukturellen Engpassmanagementbedarfs leisten kann. 
-Dieses Kapitel legt die konzeptionellen, physikalischen und regulatorischen Grundlagen dieses Ansatzes dar, leitet die Anforderungen an geeignete kurative Maßnahmen her und erörtert die Besonderheiten von \ac{BESS} für den kurativen Einsatz.
+% ===============================================================
+% Zielumfang Kapitel 2: 24 Seiten
+%   2.1 Kurative Systemführung ................................ 8
+%   2.2 Grenzen der bestehenden marktlichen Grundlage ......... 6
+%   2.3 Batteriespeicher als kurativer Aktor .................. 7
+%   2.4 Anforderungen an einen kurativen Marktmechanismus ..... 3
+%
+% ARGUMENTATIONSBOGEN -- beim Schreiben durchhalten:
+%   2.1 Kurative Systemführung ist technisch und regulatorisch möglich
+%   2.2 Die bestehenden marktlichen Instrumente können sie nicht beschaffen
+%   2.3 BESS sind der einzige Aktor für das Sekundenfenster, unterliegen
+%       aber einem Erlöskonflikt, der ihre Verfügbarkeit verhindert
+%   2.4 Daraus folgen Anforderungen an einen Mechanismus, den es nicht gibt
+% ===============================================================
 
-% ---------------------------------------------------------------
-\section{Grundlagen und Einordnung}
+Kurative Systemführung stellt einen ergänzenden Ansatz in der Systemführung dar, der die Kapazitätsgrenzen des bestehenden Übertragungsnetzes erweitert und damit einen Beitrag zur Reduktion des strukturellen Engpassmanagementbedarfs leisten kann. 
+Dieses Kapitel legt zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen dieses Ansatzes dar. 
+Anschließend wird untersucht, warum die bestehenden marktlichen Instrumente die für einen kurativen Einsatz erforderliche Vorhalteleistung nicht beschaffen können, weshalb Batteriespeicher als kurativer Aktor im Fokus stehen und welchem Erlöskonflikt sie dabei unterliegen. 
+Aus dieser Argumentation werden abschließend die Anforderungen an einen kurativen Marktmechanismus abgeleitet.
+
+% ###############################################################
+\section{Kurative Systemführung}
 \label{sec:curative_basics}
+% [Ziel: 8 Seiten]
 
 Der sichere Betrieb des deutschen Übertragungsnetzes erfordert zu jedem Zeitpunkt die Einhaltung des \mbox{(N-1)-Kriteriums}. 
 Dieses ist in der europäischen Leitlinie für den Übertragungsnetzbetrieb verbindlich definiert als \glqq{}die Regel, wonach die nach dem Auftreten eines Ausfalls weiter in Betrieb befindlichen Betriebsmittel innerhalb der Regelzone eines \ac{ÜNB} in der Lage sind, sich an die neue Betriebssituation anzupassen, ohne betriebliche Sicherheitsgrenzwerte zu überschreiten\grqq{} \cite[Art. 3 Abs. 14]{europaische_kommission_verordnung_2017}. 
@@ -15,10 +32,11 @@ Kurative Systemführung beschreibt dabei den Ansatz, das \mbox{(N-1)-Kriterium} 
 Physikalische Grundlage hierfür ist die thermische Trägheit von Betriebsmitteln, die kurzfristig höhere Strombelastungen tolerieren, als im Dauerbetrieb zulässig sind, und damit ein Zeitfenster für die Aktivierung kurativer Gegenmaßnahmen eröffnen.
 
 % ---------------------------------------------------------------
-\subsection{Präventive vs.\ kurative Systemführung}
+\subsection{Präventive und kurative Systemführung im Vergleich}
 \label{sec:prev_vs_cur}
+% [Ziel: 2,5 Seiten]
 
-Zur Einordnung beider Ansätze eignet sich das in Art.,18 \ac{SO GL} verankerte Vier-Zustands-Modell des Netzes: Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}. 
+Zur Einordnung beider Ansätze eignet sich das in Art.\,18 \ac{SO GL} verankerte Vier-Zustands-Modell des Netzes: Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}. 
 Im Normalbetrieb sind alle Betriebsmittel innerhalb ihrer Grenzwerte belastet und das System ist (N-1)-sicher. 
 Der Gefährdungszustand tritt ein, wenn ein Störfall zu einer Grenzwertverletzung führen würde, ohne dass unmittelbar eine Versorgungsunterbrechung droht. 
 Der Notzustand ist demgegenüber dadurch gekennzeichnet, dass Betriebsgrenzwerte bereits verletzt sind oder eine unmittelbare Gefährdung der Versorgungssicherheit besteht.
@@ -37,13 +55,13 @@ Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur 
 \end{figure}
 
 Der präventive Ansatz bietet den Vorteil hoher Planungssicherheit, da (N-1)-Sicherheit bereits in der Einsatzplanung sichergestellt wird und keine reaktiven Eingriffe im Fehlerfall erforderlich sind. 
-Diese Robustheit wird jedoch durch eine konservative Auslegung der zulässigen Betriebsmittelauslastung unterhalb der \ac{PATL} erreicht, welches zu einem erhöhten Redispatchbedarf und damit verbundenen Kosten führt \cite{sous_comparison_2025}. 
+Diese Robustheit wird jedoch durch eine konservative Auslegung der zulässigen Betriebsmittelauslastung unterhalb der \ac{PATL} erreicht, was zu einem erhöhten Redispatchbedarf und damit verbundenen Kosten führt \cite{sous_comparison_2025}. 
 Darüber hinaus stößt ein rein präventiver Betrieb mit der Einführung des \ac{IDC} an konzeptionelle Grenzen, da die zunehmend kurzfristige Handelsaktivität eine abschließende (N-1)-sichere Einsatzplanung zum Vortag erschwert. 
-Dieser Aspekt wird in Abschnitt \ref{sec:id_adjustments} vertieft.
+Dieser Aspekt wird in Abschnitt \ref{sec:market_horizons} vertieft.
 Die kurative Systemführung erschließt demgegenüber Effizienzpotenziale, indem sie die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster begreift und eine höhere Vorauslastung im Normalbetrieb erlaubt. 
 Dies reduziert den präventiven Redispatchbedarf und senkt dadurch die Systemführungskosten. 
 Der Effizienzgewinn geht jedoch mit erhöhten Anforderungen an den Automatisierungsgrad und die Sicherheit einher.
-Kurative Maßnahmen müssen im Fehlerfall zuverlässig und innerhalb des \ac{TATL}-Zeitfensters aktivierbar sein  \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Kurative Maßnahmen müssen im Fehlerfall zuverlässig und innerhalb des \ac{TATL}-Zeitfensters aktivierbar sein \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 \\
 Jahressimulationen belegen, dass der kurative Betrieb gegenüber dem rein präventiven Ansatz ein signifikantes Einsparpotenzial realisiert \cite{sous_comparison_2025}. 
 Vor diesem Hintergrund gewinnt die kurative Systemführung in Europa zunehmend an Bedeutung.
@@ -54,26 +72,28 @@ Der Begriff des kurativen Redispatchs, verstanden als nachgelagerte Einspeiseanp
 % ---------------------------------------------------------------
 \subsection{Rechtlicher Rahmen}
 \label{sec:legal_framework}
+% [Ziel: 2 Seiten]
 
 Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}. 
-§,13 Abs.,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+§\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen; da das Gesetz bei strom- und spannungsbedingten Anpassungen ausdrücklich die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie jedoch erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
-Für \ac{BESS} als kurative Ressource relevant ist zudem §,118 Abs.,6 \ac{EnWG}, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit einen wirtschaftlichen Anreiz für deren Einsatz im Netzbetrieb setzt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
+Für \ac{BESS} als kurative Ressource relevant ist zudem §\,118 Abs.\,6 \ac{EnWG}, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit einen wirtschaftlichen Anreiz für deren Einsatz im Netzbetrieb setzt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
 \\
 Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
 Sie verpflichtet jeden \ac{ÜNB}, für jedes Betriebsmittel betriebliche Sicherheitsgrenzwerte festzulegen, die neben Spannungs- und Kurzschlussstromgrenzwerten ausdrücklich auch vorübergehend zulässige Überlasten umfassen und damit die physikalische Grundlage für die \ac{TATL}-basierte kurative Höherauslastung bilden. 
 Nach Eintreten eines Fehlerfalles sind die Leistungsflüsse innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze zu führen.
 Grundlage für die Planung dieser Maßnahmen bildet eine Ausfallvarianten-Liste, die alle relevanten (N-1)-Szenarien erfasst \cite{europaische_kommission_verordnung_2017}. 
-Ergänzend verankert die "Verordnung zur  Festlegung  einer  Leitlinie  für  den  Übertragungsnetzbetrieb" auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 \\
-Ein marktbasiertes kuratives Engpassmanagement entspricht damit sowohl dem gesetzlichen Kostenminimierungsgebot des §,13 EnWG als auch den europäischen Planungsanforderungen der \ac{SO GL}. 
-Für die praktische Umsetzbarkeit stellt darüber hinaus die Zuverlässigkeit kurativer Maßnahmen eine zentrale Anforderung dar.
-Die \ac{SO GL} sowie Erkenntnisse aus dem Forschungsprojekt InnoSys 2030 zeigen, dass kurative Konzepte eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraussetzen \cite{innosys_2030_gesamtverbund_innovationen_2021, europaische_kommission_verordnung_2017}. 
-Die Ausgestaltung geeigneter Redundanzkonzepte von kurativen Maßnahmen ist nicht Gegenstand dieser Arbeit, stellt jedoch eine wesentliche Voraussetzung für den Übergang vom hier entwickelten Modell zur realen Betriebsimplementierung dar und wird daher im Ausblick in Abschnitt \ref{ch:conc} in den Rahmen dieser Arbeit eingeordnet.
+Ein marktbasiertes kuratives Engpassmanagement entspricht damit sowohl dem gesetzlichen Kostenminimierungsgebot des §\,13 \ac{EnWG} als auch den europäischen Planungsanforderungen der \ac{SO GL}.
+
+% HINWEIS: Der Redundanz-Absatz ist von hier nach 2.1.4 gewandert und
+% dort auf einen Satz gekürzt.
 
 % ---------------------------------------------------------------
-\section{Prozessablauf und Funktionsweise}
+\subsection{Prozessablauf und Zeitanforderungen}
 \label{sec:curative_functionality}
+% [Ziel: 2 Seiten]
 
 Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, die in Abbildung~\ref{fig:curativ_process} für die beiden beteiligten Akteure dargestellt sind: den \ac{ÜNB} und den kurativen Aktor.
 \\
@@ -84,15 +104,15 @@ Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, die i
     \label{fig:curativ_process}
 \end{figure}
 
-In der Betriebsplanung identifiziert der \ac{ÜNB} auf Basis vonNetzprognosen potenzielle Engpässe und überwacht dabei thermische Grenzwertesowie Spannungsbänder.
-N-1-gefährdete Situationen werden mithilfe von \ac{PTDF}- und \ac{LODF}-Sensitivitäten erkannt, die den Einfluss einer Leistungsänderung bzw.\ eines Leitungsausfalls auf die Lastflüsseim Netz linearisiert abbilden~\cite{blank_determination_2024}.
+In der Betriebsplanung identifiziert der \ac{ÜNB} auf Basis von Netzprognosen potenzielle Engpässe und überwacht dabei thermische Grenzwerte sowie Spannungsbänder.
+N-1-gefährdete Situationen werden mithilfe von \ac{PTDF}- und \ac{LODF}-Sensitivitäten erkannt, die den Einfluss einer Leistungsänderung bzw.\ eines Leitungsausfalls auf die Lastflüsse im Netz linearisiert abbilden~\cite{blank_determination_2024}.
 Für kritische Ausfallvarianten identifiziert der \ac{ÜNB} die Möglichkeit einer kurativen Maßnahme zur Engpassbehebung. 
 Das Spektrum geeigneter Gegenmaßnahmen umfasst nach InnoSys 2030 insgesamt 16 Maßnahmentypen in vier Kategorien: leistungsflusssteuernde Betriebsmittel, Spannungshaltung, Erzeugung und Last im Übertragungsnetz sowie Erzeugung und Last im Verteilernetz~\cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Der Aktor meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, das heißt die positive und negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann. 
 Bei energiebegrenzten Aktoren wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
 Dies erfordert eine gezielte Vorhaltung des Ladezustands im Vorfeld des Abrufs.
-Für den bilanziellen Ausgleich einer kurativen Maßnahme sind stets  mindestens zwei Aktoren erforderlich, die als Quelle und Senke koordiniert  eingesetzt werden. 
-Leistungsflusssteuernde  Betriebsmittel wie \ac{PST} und \ac{HGÜ} bilden hierbei eine Ausnahme, da  sie den Lastfluss direkt beeinflussen und keinen separaten bilanziellen  Ausgleich erfordern~\cite{leeuwen_integration_2020}.
+Für den bilanziellen Ausgleich einer kurativen Maßnahme sind stets mindestens zwei Aktoren erforderlich, die als Quelle und Senke koordiniert eingesetzt werden. 
+Leistungsflusssteuernde Betriebsmittel wie \ac{PST} und \ac{HGÜ} bilden hierbei eine Ausnahme, da sie den Lastfluss direkt beeinflussen und keinen separaten bilanziellen Ausgleich erfordern~\cite{leeuwen_integration_2020}.
 Im Normalbetrieb prüft der \ac{ÜNB} kontinuierlich in der Netzsicherheitsrechnung, ob die geplanten kurativen Maßnahmen bei Eintreten einer Ausfallvariante zur Befundfreiheit führen. 
 Bei positivem Befund wird die Maßnahme scharfgeschaltet und der Aktor verbleibt in Bereitschaft.
 Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus. 
@@ -101,115 +121,218 @@ Die Aktoren passen ihre Leistungspunkte innerhalb der vorgegebenen Reaktionszeit
 Der \ac{ÜNB} führt anschließend eine Neubewertung des Systemzustands durch, um die tatsächliche Wirksamkeit der Maßnahme zu überprüfen.
 In der Rückführung veranlasst der \ac{ÜNB} einen Redispatch zur Wiederherstellung des (N-1)-sicheren Zustands. 
 Der Aktor wird aus der kurativen Bindung entlassen und kehrt in den freien Betrieb zurück.
-% ---------------------------------------------------------------
-\subsection{Zeitanforderungen}
-\label{sec:time_requirements}
 
+% AUSFORMULIEREN -- diese Stichpunkte tragen die Zeitanforderungen und
+% liefern in 3.1 die Begründung für Bindungsdauer und Reaktionszeit.
 \begin{itemize}
-    \item Reaktionszeiten für kurative Eingriffe im Minuten- bis Sekundenbereich: drei TATL-Zeitfenster -- $<$10\,s („sehr schnell"), 2\,min („schnell"), 15\,min („langsam") -- orientiert an der Aktivierungsgeschwindigkeit der Aktoren \cite{innosys_2030_gesamtverbund_innovationen_2021}
-    \item Anforderungen an Aktivierungsgeschwindigkeit je Aktortyp: BESS als einziger Aktor für $<$10\,s-Zeitfenster geeignet, netzbildende Regelung möglich \cite{porst_betriebskonzepte_2025}; konventionelle Kraftwerke mit Vorlaufzeiten bis 24\,h eher für 15-Minuten-Fenster \cite{innosys_2030_gesamtverbund_innovationen_2021}; kombinierte präventiv/kurative Optimierung mit TATL-Constraints \cite{lindner_operation_2023}
-    \item Konsequenzen bei Überschreitung thermischer Grenzwerte (TATL vs.\ PATL): PATL = dauerhaft zulässige Betriebsmittelauslastung; TATL = temporär zulässige Überlast nach Art.\,25 EU \ac{SO GL}; Überschreitung der TATL gefährdet Betriebsmittelintegrität \cite{europaische_kommission_verordnung_2017}
-    \item Zeitfenster für präventive Maßnahmen im Vergleich (Day-Ahead, Intraday): Intraday-Handel bis 5 min vor Echtzeit gefährdet Stellpotenziale konventioneller Kraftwerke -- Fixierung kurativer Stellpotenziale als Designanforderung \cite{innosys_2030_gesamtverbund_innovationen_2021}
+    \item Drei TATL-Zeitfenster -- $<$10\,s („sehr schnell"), 2\,min („schnell"), 15\,min („langsam") -- orientiert an der Aktivierungsgeschwindigkeit der Aktoren \cite{innosys_2030_gesamtverbund_innovationen_2021}
+    \item Anforderungen je Aktortyp: \ac{BESS} als einziger Aktor für das $<$10\,s-Zeitfenster geeignet, netzbildende Regelung möglich \cite{porst_betriebskonzepte_2025}; konventionelle Kraftwerke mit Vorlaufzeiten bis 24\,h eher für das 15-Minuten-Fenster \cite{innosys_2030_gesamtverbund_innovationen_2021}; kombinierte präventiv-kurative Optimierung mit TATL-Restriktionen \cite{lindner_operation_2023}
+    \item Konsequenzen bei Überschreitung: \ac{PATL} als dauerhaft zulässige Auslastung, \ac{TATL} als temporär zulässige Überlast nach Art.\,25 \ac{SO GL}; Überschreitung der \ac{TATL} gefährdet die Betriebsmittelintegrität \cite{europaische_kommission_verordnung_2017}
 \end{itemize}
 
 % ---------------------------------------------------------------
-\subsection{Herausforderungen im Kontext der Energiewende}
+\subsection{Herausforderungen der Integration}
 \label{sec:challenges}
+% [Ziel: 1,5 Seiten]
+
+% AUSFORMULIEREN. Der Konflikt zwischen Intraday-Handel und Fixierung
+% kurativer Stellpotenziale ist keine Randnotiz, sondern die Vorlage
+% für den Beschaffungszeitpunkt in Abschnitt 3.1.
+\begin{itemize}
+    \item Rückgang steuerbarer konventioneller Kapazität als kurative Aktoren: rückläufige Verfügbarkeit durch Kohle- und Kernenergieausstieg, steigende Opportunitätskosten und Revisionsaufwände \cite{innosys_2030_gesamtverbund_innovationen_2021}; Flexibilität und neue steuerbare Kapazitäten als zentrales Zukunftsproblem \cite{bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}
+    \item Konflikt zwischen kurzfristigem Intraday-Handel und der Fixierung kurativer Stellpotenziale: Handel bis fünf Minuten vor Lieferbeginn gefährdet die Verfügbarkeit zugesagter Stellpotenziale \cite{innosys_2030_gesamtverbund_innovationen_2021}
+    \item Zunehmende Volatilität und Prognoseunsicherheit als Einschränkung der kurativen Planung \cite{lindner_operation_2023, rystad_energy_renewables__power_analytics_energy_2026}
+    \item Stand der Umsetzung im deutschen Übertragungsnetz: KuPilot als erste Echtbetrieb-Validierung \cite{tennet_tso_gmbh_pilotbetrieb_2025}; Netzbooster als bereits umgesetztes Instrument \cite{consentec_systembooster_2026}; Übertragung auf das Verteilnetz im Projekt kurSyV \cite{frauenhofer_iee_forschungsprojekt_2024, mende_optimised_2024}
+\end{itemize}
+
+% EIN SATZ, nicht mehr. Die Redundanzfrage wird hier abgegrenzt und
+% in Kapitel 6 als Ausblick wieder aufgegriffen.
+Zuverlässige kurative Konzepte setzen darüber hinaus eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022}; deren Ausgestaltung ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
+
+% ###############################################################
+\section{Grenzen der bestehenden marktlichen Grundlage}
+\label{sec:market_limits}
+% [Ziel: 6 Seiten]
+%
+% ZIEL DIESES ABSCHNITTS: Nicht die Märkte beschreiben, sondern zeigen,
+% dass keines der bestehenden Instrumente kurative Vorhalteleistung
+% beschaffen kann. Alles, was diesem Ziel nicht dient, gehört gekürzt.
+
+% ---------------------------------------------------------------
+\subsection{Marktzeithorizonte und Betriebsplanung}
+\label{sec:market_horizons}
+% [Ziel: 1,5 Seiten]
+% BEWUSST KURZ UND EINORDNEND. Terminmarkt und OTC jeweils ein Satz
+% mit expliziter Begründung der Nichtbetrachtung.
 
 \begin{itemize}
-    \item Zunehmende Volatilität durch hohen Anteil erneuerbarer Energien: Duck Curve in Deutschland 2025 am tiefsten seit fünf Jahren, steigende innertägliche Preisvolatilität \cite{rystad_energy_renewables__power_analytics_energy_2026}; Prognoseabhängigkeit und Wind-Unsicherheit als Einschränkung kurativer Planung \cite{lindner_operation_2023}
-    \item Steigende Redispatch-Kosten (Entwicklung 2019--2024): konkrete Jahreswerte in Mio.\,€ \cite{buesnetzagentur_monitoringbericht_2026}; EU-weit 4 Mrd.\,€ Engpassmanagementkosten 2023, +14{,}5\,\% Anstieg gegenüber Vorjahr \cite{agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}
-    \item Rückgang konventioneller steuerbarer Kraftwerke als kurative Aktoren: rückläufige Verfügbarkeit durch Kohle- und Kernenergieausstieg, steigende Opportunitätskosten und Revisionsaufwände \cite{innosys_2030_gesamtverbund_innovationen_2021}; Flexibilität und neue steuerbare Kapazitäten als zentrales Zukunftsproblem \cite{bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}
-    \item Notwendigkeit neuer flexibler Ressourcen, insbesondere Batteriespeicher: BESS als primäre Technologie für kurativen Netzbooster-Einsatz \cite{innosys_2030_gesamtverbund_innovationen_2021}; KuPilot als erste Echtbetrieb-Validierung des Konzepts \cite{tennet_tso_gmbh_pilotbetrieb_2025}; kurSyV-Projekt überträgt Ansatz auf Verteilnetz \cite{frauenhofer_iee_forschungsprojekt_2024, mende_optimised_2024}
+    \item Zeitstrahl der Spotmärkte: Day-Ahead-Auktion, Intraday-Auktionen (IDA1--IDA3 seit Juni 2024), kontinuierlicher Intraday-Handel, Gate Closure \cite{mahgoub_wie_2025}
+    \item Umstellung der Day-Ahead-Auktion auf Viertelstundenprodukte zum 01.10.2025 und deren Folgen für Preisbildung und Handelsvolumina \cite{ffe_saegezahn_2026}
+    \item Abgrenzung: Terminmarkt und OTC-Handel werden aufgrund fehlender Relevanz für die kurzfristige Fahrplanbildung bzw.\ eingeschränkter Preistransparenz nicht betrachtet
+    \item Rückbezug auf Abschnitt \ref{sec:prev_vs_cur}: Der kontinuierliche Intraday-Handel bis kurz vor Lieferbeginn ist der Grund, weshalb kurative Stellpotenziale nicht ohne Weiteres in der Vortagsplanung fixiert werden können
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Kurative Aktoren}
-\label{sec:curative_actors}
+\subsection{Vergütung von Redispatch-Maßnahmen und der modifizierte Weber-Ansatz}
+\label{sec:redispatch_compensation}
+% [Ziel: 3 Seiten]
+%
+% DAS IST DER ANGELPUNKT DER ARBEIT. Argumentationsreihenfolge:
+%   (1) Systematik des § 13a EnWG
+%   (2) Optionslogik des modifizierten Weber-Ansatzes
+%   (3) Warum sie bei Speichern versagt
+% Erst danach folgt der Schluss in 2.2.4.
 
 \begin{itemize}
-    \item Überblick und Vergleich der Aktoren nach Reaktionszeit, Flexibilität und Verfügbarkeit: Flexibilitätstypologie nach Erzeugung, Verbrauch, Speicherung und Netz \cite{vde_etg_flexibilisierung_2023}; 16 Maßnahmentypen mit Aktorenvergleich \cite{innosys_2030_gesamtverbund_innovationen_2021}
-    \item Veränderung des Aktorenportfolios durch die Energiewende bis 2030: netzbildende Regelung für BESS als systemrelevante Technologie identifiziert, erste Pilotprojekte (KuPilot, Netzbooster) bis 2028 geplant \cite{bundesnetzagentur_netzentwicklungsplan_2026}
-\end{itemize}
-
-% \fig{} Aktivierungszeiten der verschiedenen Aktoren im Vergleich (Balkendiagramm)
-
-% ---------------------------------------------------------------
-\subsubsection{Konventionelle Kraftwerke}
-\label{sec:conventional_plants}
-
-\begin{itemize}
-    \item Technische Eigenschaften -- Mindestleistung, Rampen, Mindeststillstandszeiten: Vorlaufzeiten bis 24\,h; Intraday-Handel bis 5 min vor Echtzeit gefährdet Stellpotenziale \cite{innosys_2030_gesamtverbund_innovationen_2021}
-    \item Rückläufige Verfügbarkeit durch Kohle- und Kernenergieausstieg: sinkende steuerbare Kapazität als strukturelles Problem für das Engpassmanagement \cite{bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}
-    \item Wirtschaftlichkeit -- Opportunitätskosten im Redispatch: Fixierung kurativer Stellpotenziale erfordert Kompensation für entgangene Markterlöse \cite{innosys_2030_gesamtverbund_innovationen_2021}
-\end{itemize}
-
-% ---------------------------------------------------------------
-\subsubsection{Windenergieanlagen}
-\label{sec:wind_turbines}
-
-\begin{itemize}
-    \item Einsatz im Redispatch 2.0 als abregelbare Einheit (primär Redispatch-down): §\,13k \ac{EnWG} „Nutzen statt Abregeln" als gesetzliche Grundlage für vorrangige Flexibilitätsnutzung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}
-    \item Vergütungsmechanismus nach Redispatch 2.0: Vergütung nach vermiedenen Erzeugungskosten \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}
-    \item Prognoseabhängigkeit und Unsicherheiten bei der Verfügbarkeit: Wind-Verfügbarkeit als wesentlicher Unsicherheitsfaktor in der kurativen Betriebsplanung \cite{lindner_operation_2023}
+    \item Bemessungslogik nach §\,13a \ac{EnWG}: bilanzieller und finanzieller Ausgleich, Erzeugungsauslagen, Werteverbrauch, nachgewiesene entgangene Erlösmöglichkeiten \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}
+    \item Der modifizierte Weber-Ansatz: flexible Erzeugung als Sequenz von Call-Optionen mit den variablen Erzeugungskosten als Strike-Preis; bei Speichern zusätzlich Put-Optionen auf der Ladeseite; Bewertung über eine geschlossene Formel unter Annahme absolut normalverteilter Preisänderungen \cite{weber_gutachten_2015}; Modifikation durch Kapitel 8.7 des Branchenleitfadens \cite{bdew_branchenleitfaden_2018}
+    \item Umsetzung in der geltenden Festlegung und deren Anlagen \cite{bundesnetzagentur_festlegung_2024, bundesnetzagentur_anlage1_2024}; Berechnungsbeispiel für Tagesspeicher \cite{bundesnetzagentur_berechnungsbeispiel_2024}
+    \item Gerichtlich bestätigter Befund: Leistungsvorhaltekosten sind nicht zu erstatten \cite{bundesnetzagentur_beschluss_2021}
+    \item Versagen bei Speichern: Überschätzung entgangener Erlösmöglichkeiten durch das finanzmathematische Modell \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}; Pfadabhängigkeit des Ladezustands, Verschiebung statt zusätzlicher Zyklen, gleichzeitige Flexibilitätseinbußen auf mehreren Märkten
+    \item Offener Punkt der Regulierung: Die Behandlung von Batteriespeichern wurde in der Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}
 \end{itemize}
 
 % ---------------------------------------------------------------
-\subsubsection{Photovoltaik}
-\label{sec:photovoltaics}
+\subsection{Flexible Netzanschlussvereinbarungen und §\,13k \ac{EnWG}}
+\label{sec:flexible_connection}
+% [Ziel: 0,5 Seiten]
 
 \begin{itemize}
-    \item Primär Abregelung -- starke Tageszeit- und Wetterabhängigkeit: PV als nachranging steuerbare Einheit, vorwiegend Redispatch-down \cite{vde_etg_flexibilisierung_2023}
-    \item Zunehmende Relevanz durch hohe und weiter wachsende installierte Leistung in Deutschland \cite{buesnetzagentur_monitoringbericht_2026}
+    \item §\,17 Abs.\,2b \ac{EnWG} als Rechtsgrundlage; für Speicher maßgeblich, weil nur diese Norm bidirektionale Vereinbarungen vorsieht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_faq_2025}
+    \item Kein Anspruch auf ein Angebot: Die Norm eröffnet dem Netzbetreiber lediglich eine Möglichkeit \cite{bundesnetzagentur_beschluss_2026}
+    \item §\,13k \ac{EnWG} „Nutzen statt Abregeln" als Vorrangregelung für Flexibilitätsnutzung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}
+    \item Befund: Beide Instrumente regeln Abregelung, nicht Vorhaltung, und greifen nicht flächendeckend
 \end{itemize}
 
 % ---------------------------------------------------------------
-\subsubsection{Pumpspeicher- und Laufwasserkraftwerke}
-\label{sec:hydro_storage}
+\subsection{Zwischenfazit: kurative Vorhaltung ohne Vergütungsgrundlage}
+\label{sec:interim_conclusion}
+% [Ziel: 1 Seite]
+%
+% ANGELPUNKT DER ARBEIT. Kernaussage: Der Gesetzgeber hat für
+% Flexibilität bereits eine optionsbasierte Bewertungslogik etabliert
+% -- sie bricht bei Speichern zusammen, und Vorhaltung als solche hat
+% in dieser Systematik keine Bemessungsgrundlage.
+
+% ###############################################################
+\section{Batteriespeicher als kurativer Aktor}
+\label{sec:bess_actor}
+% [Ziel: 7 Seiten]
+
+% ---------------------------------------------------------------
+\subsection{Aktorenvergleich und Auswahlbegründung}
+\label{sec:actor_comparison}
+% [Ziel: 1,5 Seiten]
+%
+% EINE VERGLEICHSTABELLE statt vier Unterabschnitten. Spalten:
+% Reaktionszeit, Energiebindung, Verfügbarkeit 2030, Vergütungspfad.
+% Zeilen: konventionelle Kraftwerke, Wind, PV, Pumpspeicher, BESS.
+% Der Fließtext begründet nur, warum BESS der einzige Aktor für das
+% Sekundenfenster ist.
+%
+% WICHTIG: Technische BESS-Eigenschaften (SoC-Dynamik, Wirkungsgrade,
+% Degradation) gehören NICHT hierher, sondern in Abschnitt 3.4 als
+% Modellannahmen. Sonst stehen sie zweimal in der Arbeit.
 
 \begin{itemize}
-    \item Bidirektionale Flexibilität der Pumpspeicher (Pump- und Turbinenbetrieb): schnelle Reaktionszeiten, gut für kuratives Engpassmanagement geeignet \cite{innosys_2030_gesamtverbund_innovationen_2021}; PSW Vianden konkret als Aktor im KuPilot-Pilotbetrieb eingesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}
-    \item Schnelle Reaktionszeiten, gut für kuratives Management geeignet \cite{innosys_2030_gesamtverbund_innovationen_2021}
-    \item Begrenzte Kapazität und geografische Konzentration in Deutschland \cite{vde_etg_flexibilisierung_2023}
+    \item Flexibilitätstypologie nach Erzeugung, Verbrauch, Speicherung und Netz \cite{vde_etg_flexibilisierung_2023}; 16 Maßnahmentypen mit Aktorenvergleich \cite{innosys_2030_gesamtverbund_innovationen_2021}
+    \item Konventionelle Kraftwerke: Vorlaufzeiten bis 24\,h, rückläufige Verfügbarkeit \cite{innosys_2030_gesamtverbund_innovationen_2021, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}
+    \item Wind und PV: primär abregelbar, prognoseabhängig \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}
+    \item Pumpspeicher: bidirektional und schnell, aber begrenzte Kapazität und geografisch konzentriert; im KuPilot-Pilotbetrieb eingesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025, vde_etg_flexibilisierung_2023}
+    \item \ac{BESS}: einziger Aktor für das $<$10\,s-Zeitfenster, netzbildende Regelung möglich \cite{porst_betriebskonzepte_2025}; technisch für alle Schichten der Frequenzregelung geeignet \cite{garttan_battery_2025}
 \end{itemize}
 
 % ---------------------------------------------------------------
-\subsection{Batteriespeicher}
-\label{sec:battery_storage}
+\subsection{Erlösquellen und Revenue Stacking}
+\label{sec:revenue_stacking}
+% [Ziel: 2 Seiten]
 
 \begin{itemize}
-    \item Technische Vorteile -- sehr schnelle Reaktionszeit, bidirektional, ortsflexibel: BESS als einziger Aktor für $<$10\,s-Zeitfenster; fünf Betriebskonzepte untersucht, Multi-Use als optimale Strategie \cite{porst_betriebskonzepte_2025}; Schichtenmodell Frequenzregelung -- BESS für alle Schichten (FFR bis mFRR) technisch geeignet \cite{garttan_battery_2025}
-    \item SoC-Abhängigkeit als zentrale Restriktion für den kurativen Einsatz: SoC-Band-Konflikt zwischen Marktoptimum (Revenue Stacking) und kurativer Verfügbarkeit \cite{garrett_fitzgerald_economics_2025}; SoC-Dynamik begrenzt Sustained-Response-Fähigkeit \cite{garttan_battery_2025}; LP-Formulierung mit zeitgekoppelten SoC-Restriktionen für Flexibilitätsgebote \cite{schmitt_linear_2020}
-    \item Aktuelle Marktentwicklung und installierte Kapazitäten in Deutschland: globaler BESS-Bestand Ende 2024 ca.\ 150\,GW / 363\,GWh, Kostenrückgang auf 274\,USD/kW (2023) \cite{garttan_battery_2025}; Deutschland als einer der führenden BESS-Märkte, Turnkey-Kosten Europa 2025 ca.\ 215\,\$/kWh \cite{rystad_energy_renewables__power_analytics_energy_2026}
-    \item Regulatorische Einordnung -- Speicher als Erzeuger und Verbraucher: §\,118 Abs.\,6 \ac{EnWG} Netzentgeltbefreiung für Speicher \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}; externe Effekte BESS und Instrumentenübersicht (Netzentgeltreform, Kapazitätszahlungen, marktbasierte Vergütung) \cite{anselm_eicke_systemdienlichkeit_2026}; Netzentgeltbelastung Großbatterien in €/kW \cite{hirth_netzentgelte_2025}
+    \item Erlösquellen im Überblick: Arbitrage auf den Spotmärkten, Regelleistung, Redispatch \cite{garrett_fitzgerald_economics_2025, bundesnetzagentur_systemstabilitatsbericht_2025}
+    \item Revenue Stacking als Standardstrategie; Einzelanwendung meist nicht wirtschaftlich \cite{garrett_fitzgerald_economics_2025}; Multi-Use als optimale Betriebsstrategie \cite{porst_betriebskonzepte_2025}
+    \item Wert der Vermarktung im kontinuierlichen Intraday-Markt \cite{hornek_value_2025}
+    \item Regelleistungsprodukte im Vergleich: FCR, aFRR, mFRR nach Aktivierungszeit, Produktschnitt, Auktionsrhythmus und Erlösniveau -- als Tabelle \cite{bundesnetzagentur_systemstabilitatsbericht_2025, ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+    \item Netzentgeltbelastung als Gegenposition \cite{hirth_netzentgelte_2025, anselm_eicke_systemdienlichkeit_2026}
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Anforderungen an die marktliche Einbindung}
+\subsection{Konflikt zwischen Marktoptimum und kurativer Verfügbarkeit}
+\label{sec:soc_conflict}
+% [Ziel: 2 Seiten]
+%
+% STÄRKSTER ABSCHNITT DES KAPITELS -- aber STRIKT QUALITATIV halten.
+% Er beschreibt genau das, was Kapitel 4 quantifiziert. Zahlen erst dort.
+%
+% Kernargument: Die FCR-Präqualifikation definiert bereits ein
+% reserviertes SoC-Band ("Schnabelkurve", 15-Minuten-Kriterium).
+% Kurative Vorhaltung ist ein ZWEITER Anspruch auf dasselbe Band.
+
+\begin{itemize}
+    \item Der zulässige SoC-Arbeitsbereich in der FCR-Präqualifikation: 15-Minuten-Kriterium, Arbeits- und Entscheidungsbereich, bilanzgruppenübergreifendes Nachlademanagement \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+    \item Die Breite dieses Bands ist eine regulatorische Entscheidung mit unmittelbarer Erlöswirkung: Ablösung des 30-Minuten- durch das 15-Minuten-Kriterium \cite{bundesnetzagentur_beschluss_2019}
+    \item Kurative Vorhaltung als zweiter, konkurrierender Anspruch auf dasselbe SoC-Band \cite{garrett_fitzgerald_economics_2025, garttan_battery_2025}
+    \item Zeitgekoppelte SoC-Restriktionen in der Gebotsbildung \cite{schmitt_linear_2020}; kombinierte präventiv-kurative Betriebsstrategien \cite{lindner_operation_2023}
+\end{itemize}
+
+% ---------------------------------------------------------------
+\subsection{Marktentwicklung bis 2030 und Rückwirkung auf das Engpassmanagement}
+\label{sec:market_development}
+% [Ziel: 1,5 Seiten]
+%
+% Kernaussage: Ein kurativer Markt greift in eine Marktentwicklung ein,
+% die selbst in Bewegung ist. Das ist ein starkes Argument für einen
+% Mechanismus, der VORHALTUNG statt ARBEIT vergütet -- hier vorwegnehmen
+% und in Abschnitt 5.1 wieder aufgreifen.
+
+\begin{itemize}
+    \item Installierte Kapazität und Kostenentwicklung \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
+    \item Rückwirkung der Speicher auf die Preisspreads, die ihre eigene Wirtschaftlichkeit tragen \cite{mahgoub_wie_2025}
+    \item Verschiebung des Aktorenportfolios im Engpassmanagement bis 2030 \cite{bundesnetzagentur_netzentwicklungsplan_2026}
+    \item Systemdienlichkeit und nicht internalisierte externe Effekte \cite{anselm_eicke_systemdienlichkeit_2026}
+\end{itemize}
+
+% ###############################################################
+\section{Anforderungen an einen kurativen Marktmechanismus}
 \label{sec:market_requirements}
+% [Ziel: 3 Seiten]
+%
+% ABGRENZUNG ZU KAPITEL 3: Hier steht, WAS der Mechanismus leisten muss.
+% WIE er ausgestaltet wird, steht in Abschnitt 3.1. Tauchen hier bereits
+% Bindungsdauern oder Beschaffungszeitpunkte auf, ist Kapitel 3
+% weggeschrieben.
+
+% ---------------------------------------------------------------
+\subsection{Ableitung des Anforderungskatalogs}
+\label{sec:requirements_catalogue}
+% [Ziel: 1 Seite]
 
 \begin{itemize}
-    \item Notwendigkeit wirtschaftlicher Anreize für kurativ verfügbare Kapazität: positive Externalitäten der BESS-Nutzung werden nicht vollständig internalisiert \cite{anselm_eicke_systemdienlichkeit_2026}
-    \item Spannungsfeld zwischen Markterlösen und netzdienlichem Einsatz: marktoptimaler Dispatch (Revenue Stacking) und netzoptimaler Dispatch (kurative Verfügbarkeit) konfligieren strukturell \cite{garrett_fitzgerald_economics_2025}
+    \item Reaktionsgeschwindigkeit entsprechend dem TATL-Zeitfenster (aus Abschnitt \ref{sec:curative_functionality})
+    \item Lokationalität, da Engpässe netzknotenscharf auftreten \cite{blank_determination_2024}
+    \item Vergütung von Vorhaltung statt Arbeit (aus Abschnitt \ref{sec:interim_conclusion})
+    \item Diskriminierungsfreiheit und Vorrang marktbasierter Beschaffung \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}
+    \item Vereinbarkeit mit bestehenden Präqualifikations- und Vermarktungsverpflichtungen (aus Abschnitt \ref{sec:soc_conflict})
 \end{itemize}
 
 % ---------------------------------------------------------------
-\subsection{Technische Mindestanforderungen}
-\label{sec:technical_requirements}
+\subsection{Bestehende Marktdesignansätze im Abgleich}
+\label{sec:market_design_comparison}
+% [Ziel: 1,5 Seiten]
+% VERGLEICHSMATRIX gegen den Anforderungskatalog aus 2.4.1.
 
 \begin{itemize}
-    \item Präqualifikationsanforderungen für Regelenergie und Redispatch: Marktvolumina FCR/aFRR/mFRR und Präqualifikationsanforderungen in Deutschland \cite{bundesnetzagentur_systemstabilitatsbericht_2025}; Mindestgebotsgröße und Aktivierungsgeschwindigkeit im Redispatch \cite{leeuwen_integration_2020}
-    \item Mindestgebotsgröße, Aktivierungsgeschwindigkeit und Kommunikationsanforderungen: LP-Formulierung von Flexibilitätsgeboten mit SoC-Restriktionen und Kompensationslogik für Speicher \cite{schmitt_linear_2020}
-    \item Messkonzepte und Abrechnungslogik: Abrechnungsprozesse Redispatch 2.0, Übergangsprozesse \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}
+    \item Lokationale Preisbildung und Preiszonenteilung \cite{oggioni_market_2013, newbery_market_2018, einsiedler_analysis_2025}
+    \item Lokationale Redispatch-Preise als Vergütungsgrundlage \cite{blank_determination_2024}
+    \item Kapazitätsmechanismen \cite{consentec_ausarbeitung_2024, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}
+    \item Netzbooster als bereits umgesetztes Instrument und dessen Abgrenzung zum hier entworfenen Mechanismus \cite{consentec_systembooster_2026}
 \end{itemize}
 
 % ---------------------------------------------------------------
-\subsection{Wirtschaftliche Rahmenbedingungen}
-\label{sec:economic_framework}
-
-\begin{itemize}
-    \item Erlösquellen für Batteriespeicher -- Arbitrage, Regelenergie, Redispatch: 13 Dienste in drei Kategorien (ISO-Dienste, Utility-Dienste, Kundendienste); Revenue Stacking als Standardstrategie, Einzelanwendung meist nicht wirtschaftlich \cite{garrett_fitzgerald_economics_2025}; Marktvolumina und Preisentwicklung FCR/aFRR/mFRR \cite{bundesnetzagentur_systemstabilitatsbericht_2025}
-    \item Vergütungslogik im Redispatch 2.0 (vermiedene Erzeugungskosten): Vergütung nach vermiedenen Erzeugungskosten; LMRP als mögliche Grundlage für marktbasierte Vergütung kurativer Maßnahmen \cite{blank_determination_2024}; bilanzieller Ausgleich VNB bis 2032 \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}
-    \item Netzentgeltbelastung: Sondernetzentgelt als spezifische Belastung für Großbatterien, konkrete €/kW-Zahlen \cite{hirth_netzentgelte_2025}; Quantifizierung systemischer Nutzen in €/kW als Grundlage für Vergütungsdesign \cite{anselm_eicke_systemdienlichkeit_2026}
-    \item Offene Frage -- ausreichende Vergütung kurativer Einsätze als Forschungsmotivation: marktbasierte Beschaffung kurativer Flexibilität als politisches Ziel \cite{bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}; strukturelle Hemmnisse für marktkonformen BESS-Dispatch noch ungelöst \cite{garrett_fitzgerald_economics_2025}
-\end{itemize}
+\subsection{Forschungslücke}
+\label{sec:research_gap}
+% [Ziel: 0,5 Seiten]
+%
+% Hier folgt die Lücke aus 24 Seiten Argumentation, statt in der
+% Einleitung behauptet zu werden. Stärkster Beleg: Die Beschlusskammer
+% hat die Behandlung von Batteriespeichern in der Festlegung
+% ausdrücklich offengelassen \cite{bundesnetzagentur_festlegung_2024}.

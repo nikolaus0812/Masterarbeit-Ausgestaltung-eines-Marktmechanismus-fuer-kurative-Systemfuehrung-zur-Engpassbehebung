@@ -1,10 +1,19 @@
 \chapter{Einleitung}
 \label{ch:intro}
+% ===============================================================
+% Zielumfang Kapitel 1: 5 Seiten
+% ===============================================================
+
+% ---------------------------------------------------------------
+\section{Motivation und Problemstellung}
+\label{sec:motivation}
+% [Ziel: 2 Seiten]
+
 Der anthropogen verursachte Klimawandel erfordert eine grundlegende Transformation des deutschen Energiesystems. 
 Zentrales Instrument dieser Transformation ist das Bundes-Klimaschutzgesetz, das bis zum Jahr 2045 die Erreichung von Netto-Treibhausgasneutralität in Deutschland vorschreibt \cite{bundesumweltministerium_bundes-klimaschutzgesetz_2019}. 
 Der Pfad dorthin ist durch Effizienzsteigerungen auf der Lastseite, eine weitreichende Elektrifizierung der Sektoren Wärme, Verkehr und Industrie sowie eine zunehmend erneuerbare Stromerzeugung definiert.
 Die Entwicklung des deutschen Stromsystems spiegelt diesen Wandel bereits deutlich wider.
-Mit einer Nettostromerzeugung von 477\,\si{TWh} im Jahr 2025 ist der Gesamtverbrauch das vierte Jahr in Folge gesunken, während der Anteil erneuerbarer Energien mit 58{,}3\,\% einen neuen Höchstwert erreichte \cite{bundesnetzagentur_monitoringbericht_2026}.
+Die Nettostromerzeugung ist mit 477\,\si{TWh} im Jahr 2025 das vierte Jahr in Folge gesunken, während der Anteil erneuerbarer Energien an der Nettostromerzeugung mit 58{,}3\,\% einen neuen Höchstwert erreichte \cite{bundesnetzagentur_monitoringbericht_2026}.
 Dieser strukturelle Wandel des Erzeugungsmix stellt das deutsche Übertragungsnetz vor wachsende Herausforderungen im Engpassmanagement, die durch den fortschreitenden Ausbau erneuerbarer Energien weiter zunehmen werden.
 
 Ursächlich hierfür ist ein geografisches Missverhältnis zwischen Erzeugungsschwerpunkten, vornehmlich Offshore- und Onshore-Windkraft im Norden, und industriellen Verbrauchszentren im Süden Deutschlands. 
@@ -13,6 +22,9 @@ Das Ergebnis sind wachsende strukturelle Engpässe im Übertragungsnetz, deren B
 Die monatlichen Gesamtkosten des Netzengpassmanagements variierten seit Juli 2022 zwischen rund 123\,Mio.\,Euro im Juni 2023 und rund 485\,Mio.\,Euro im Dezember 2024, ein Faktor von etwa vier zwischen dem günstigsten und dem teuersten Monat \cite{bundesnetzagentur_mengen_nodate}.
 Einzelne Extremsituationen können den Jahresverlauf dabei maßgeblich prägen: Im Dezember 2024 entfielen auf einen einzigen Monat rund 16\,\% der Jahresgesamtkosten 2024 \cite{bundesnetzagentur_mengen_nodate}.
 
+% HINWEIS: Dieser Absatz darf auf etwa die Hälfte gekürzt werden.
+% Tragend sind die 12,95 TWh Restbedarf und das Minimalkostenargument;
+% die Investitionssumme ist Beiwerk.
 Der aktuelle \ac{NEP} schätzt die erforderlichen Investitionen in den Netzausbau bis 2045 im Referenzszenario~B, das sich an den Zielvorgaben des Bundes-Klimaschutzgesetzes orientiert \cite{bundesumweltministerium_bundes-klimaschutzgesetz_2019}, auf rund 392\,Mrd.\,Euro \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Selbst nach vollständiger Umsetzung dieser Maßnahmen verbleibt im Referenzszenario~B ein struktureller Redispatchbedarf von 12{,}95\,\si{TWh} im Zieljahr 2045 \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Der \ac{NEP} verfolgt dabei explizit das Ziel, die Minimalkostenkombination aus Netzausbauinvestitionen und verbleibenden Engpassmanagementkosten zu finden, da eine vollständige Vermeidung von Engpassmanagement volkswirtschaftlich nicht sinnvoll ist \cite{bundesnetzagentur_netzentwicklungsplan_2026}. 
@@ -24,15 +36,59 @@ Betriebsmittel besitzen eine transiente Stromtragfähigkeit (\ac{TATL}), die kur
 Kurative Systemführung verfolgt den Ansatz, Engpässe nicht präventiv zu vermeiden, sondern sie nach ihrem Eintreten durch schnelle, gezielte Gegenmaßnahmen innerhalb der transienten Stromtragfähigkeit zu beheben, ohne die Betriebsmittel thermisch zu gefährden. 
 Auf diese Weise lässt sich nicht nur eine allgemeine Erhöhung der nutzbaren Übertragungskapazitäten erzielen, sondern lassen sich unter Einbindung der verursachenden Erzeuger-, Last- und Speichereinheiten auch Spitzenlastengpässe gezielt und kosteneffizient auflösen.
 
-Mit \ac{BESS} als aufstrebenden Strommarktteilnehmern soll dabei gezielt eine flexible und netzdienliche Einbindung dieser in das kurative Engpassmanagement untersucht werden.
+% ---------------------------------------------------------------
+\section{Stand der Forschung und Forschungslücke}
+\label{sec:state_of_research}
+% [Ziel: 0,5 Seiten]
+% BEWUSST KURZ HALTEN. Hier nur benennen, welche Literaturstränge
+% existieren und wo sie enden. Die hergeleitete, belegte Lücke steht
+% in Abschnitt 2.4.3 -- dort folgt sie aus 24 Seiten Argumentation
+% statt behauptet zu werden.
+
+\begin{itemize}
+    \item Technische Validierung der kurativen Systemführung: InnoSys 2030 als Verbundprojekt \cite{innosys_2030_gesamtverbund_innovationen_2021}; Integration kurativer Maßnahmen in das Engpassmanagement \cite{leeuwen_integration_2020}; Redundanzanforderungen \cite{sous_untersuchung_2022, sous_comparison_2025}; Echtbetrieb-Erprobung im KuPilot-Projekt \cite{tennet_tso_gmbh_pilotbetrieb_2025}
+    \item Betriebsführung von Batteriespeichern zwischen Markt und Netz \cite{lindner_operation_2023, porst_betriebskonzepte_2025}; Erlöspotenziale unter verändertem Marktdesign \cite{mahgoub_wie_2025}
+    \item Vergütung von Redispatch-Maßnahmen: optionsbasierte Bewertung entgangener Erlösmöglichkeiten \cite{weber_gutachten_2015}; Übertragbarkeit auf weitere Aktortypen \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}
+    \item Forschungslücke in einem Satz: Kurative Höherauslastung ist technisch validiert und regulatorisch zulässig, für die marktliche Beschaffung kurativer Vorhalteleistung von Batteriespeichern existiert jedoch kein ausgestalteter Mechanismus.
+\end{itemize}
+
+% ---------------------------------------------------------------
+\section{Zielsetzung und Forschungsfragen}
+\label{sec:research_questions}
+% [Ziel: 1 Seite]
+
 Trotz dieser technischen Eignung besteht bislang keine marktliche Grundlage, die eine wirtschaftliche Aktivierung von Batteriespeichern für den kurativen Netzbetrieb ermöglicht, ohne deren Rentabilität in anderen Märkten zu beeinträchtigen. 
 Die Novellierung des Energiewirtschaftsgesetzes im Rahmen des Redispatch~2.0 schafft zwar erste regulatorische Grundlagen für eine marktbasierte Einbindung von Speichern in das Engpassmanagement \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}, adressiert den gezielten kurativen Einsatz zur Höherauslastung jedoch nicht hinreichend.
-Bestehende Instrumente wie flexible Netzanschlussverträge verpflichten Batteriespeicher zwar zur Abregelung in Engpasssituationen, vergüten diesen netzdienlichen Beitrag jedoch nicht angemessen und schaffen damit keinen wirtschaftlichen Anreiz für einen gezielten kurativen Einsatz.
+% KORREKTUR gegenüber der Vorfassung: Ein Anspruch auf eine flexible
+% Netzanschlussvereinbarung besteht nicht. § 17 Abs. 2b EnWG eröffnet
+% dem Netzbetreiber lediglich die Möglichkeit, vgl. BK6-25-325.
+Flexible Netzanschlussvereinbarungen nach §\,17 Abs.\,2b \ac{EnWG} eröffnen zwar die Möglichkeit, die Einspeise- oder Entnahmeleistung in Engpasssituationen zu begrenzen, begründen jedoch weder einen Anspruch des Anlagenbetreibers auf ein solches Angebot noch eine Vergütung des netzdienlichen Beitrags \cite{bundesnetzagentur_beschluss_2026}.
 
 Vor diesem Hintergrund untersucht die vorliegende Arbeit im Zeithorizont eines 2030-Szenarios, charakterisiert durch einen hohen Anteil erneuerbarer Energien, fortbestehende Netzausbaurückstände und eine signifikant gestiegene installierte Batteriespeicherkapazität, die Möglichkeiten eines marktbasierten Mechanismus zur Einbindung von Erzeuger-, Last- und Speichereinheiten in das kurative Engpassmanagement. 
 Mit \ac{BESS} als aufstrebenden Strommarktteilnehmern soll der Fokus dabei gezielt auf eine flexible und netzdienliche Einbindung dieser Technologie gelegt werden.
-Der Aufbau der Arbeit gliedert sich wie folgt: Kapitel~\ref{ch:curative_system} legt die Grundlagen der kurativen Systemführung dar und erörtert die Möglichkeiten, Erzeugungs-, Last- und Speichereinheiten in die kurative Systemführung einzubinden. 
-Batteriespeicher als zentrale Flexibilisierungsoption werden dabei im Detail untersucht. 
-Kapitel~\ref{ch:market_analysis} analysiert die relevanten Strommärkte und leitet daraus ein Konzept für einen kurativen Marktmechanismus ab. 
-In Kapitel~\ref{ch:kusys_sim} wird anhand einer Fahrplanoptimierung eines Batteriespeichers die Wirksamkeit des entwickelten Mechanismus quantitativ untersucht. 
-Kapitel~\ref{ch:conc} fasst die Ergebnisse zusammen und gibt einen Ausblick auf weiteren Forschungsbedarf sowie die Ausgestaltung eines umfassenden Marktdesigns für die kurative Systemführung.
+
+% ENTWURF der Leitfrage -- vor dem Weiterschreiben mit der Betreuung
+% abstimmen. Bewusst anlagenscharf formuliert, damit sie durch die
+% Fahrplanoptimierung in Kapitel 4 tatsächlich beantwortet wird.
+Daraus leitet sich die folgende Leitfrage ab:
+\begin{quote}
+Wie muss ein Marktmechanismus für kurative Systemführung ausgestaltet sein, damit Batteriespeicher die erforderliche Vorhalteleistung wirtschaftlich bereitstellen, und welche Vergütung ist dafür mindestens erforderlich?
+\end{quote}
+
+Zur Beantwortung werden drei Teilfragen untersucht:
+\begin{enumerate}
+    \item Welche Anforderungen stellt die kurative Systemführung an ein Marktprodukt, und inwiefern erfüllen die bestehenden Vergütungsregelungen diese Anforderungen nicht?
+    \item Wie wirkt sich eine kurative Vorhalteverpflichtung auf den marktoptimalen Fahrplan und die Erlöse eines Batteriespeichers aus?
+    \item Welche Mindestvergütung ergibt sich daraus, und wie verhält sie sich zu der Vergütung, die nach geltender Festlegung zu leisten wäre?
+\end{enumerate}
+
+% ---------------------------------------------------------------
+\section{Aufbau der Arbeit}
+\label{sec:structure}
+% [Ziel: 0,5 Seiten]
+
+Kapitel~\ref{ch:curative_system} legt die Grundlagen der kurativen Systemführung dar, arbeitet die Grenzen der bestehenden marktlichen Grundlage heraus und begründet die Auswahl von Batteriespeichern als kurativem Aktor. 
+Daraus werden die Anforderungen an einen kurativen Marktmechanismus abgeleitet.
+Kapitel~\ref{ch:design_model} entwirft auf dieser Basis das Marktprodukt und beschreibt die Modellierung der Fahrplanoptimierung.
+Kapitel~\ref{ch:results} stellt die Ergebnisse der Optimierung dar, Kapitel~\ref{ch:discussion} ordnet sie in den regulatorischen Rahmen ein und würdigt die Modellannahmen kritisch. 
+Kapitel~\ref{ch:conc} fasst die Ergebnisse entlang der Forschungsfragen zusammen und gibt einen Ausblick auf weiteren Forschungsbedarf.
