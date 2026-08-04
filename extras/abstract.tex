@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% This file contains the abstract for your thesis in both versions, german and english. The correct order will be set depending on your language you have choosen in the personal settings file.
+
+%% English abstact
+\newcommand{\varAbstractEnglish}
+{\chapter*{Abstract}
+}
+%% German abstract
+\newcommand{\varAbstractGerman}
+{\chapter*{Kurzfassung}
+}
+% Include abstracts depending on chosen language
+\ifthenelse{\equal{\varLanguage}{german}}
+	{\varAbstractGerman
+	\varAbstractEnglish}
+	{\varAbstractEnglish}
+
+\cleardoublepage

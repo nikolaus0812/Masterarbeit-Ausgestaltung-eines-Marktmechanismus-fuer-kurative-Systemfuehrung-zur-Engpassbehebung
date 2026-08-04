@@ -1,0 +1,52 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%                     Chris Vertgewall (2022)                      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Change your personal settings in extras/personal_settings.tex
+% Within this template you will find some guidance concerning handling of graphics, creation of tables and structuring tools. Especially chapters/chapter_2 contains both advice and examples.
+% Please use pdfLaTeX as your standard compiler
+% Please make sure that your standard bibliography programm is biber instead ob bibtex
+% If you have problems compiling this template, make sure that you use the most recent version of your TeX distribution.
+% Usually, TeXLive produces less problems than MiKTeX, but the installation takes quite a long time. Another easy-to-use option is Overleaf
+
+\input{extras/personal_settings.tex} % Script for customizing the template with your personal settings
+\input{extras/header.tex} % Header, containing necessary declarations for writing and compiling the scripts
+\input{extras/rwth-colors.tex} % Official RWTH colors
+
+% Here, all the relevant parts of the thesis are included in their respective order
+\begin{document}
+	\frontmatter % Roman page numbering and no chapter numbering
+		\ifthenelse{\equal{\varKind}{Dissertation}}
+		{\include{extras/titlepage_diss.tex} % Titlepage
+			\include{extras/preface.tex}}
+		{\include{extras/titlepage_thesis.tex} % Titlepage
+			\onehalfspacing % One and a half line spacing
+			\ifthenelse{\equal{\varLanguage}{german}}{ % Declaration
+		    	\include{extras/declaration.tex}}{
+		   		\include{extras/declaration_en.tex}}}
+		\include{extras/abstract.tex} % Abstract
+		\phantomsection% Add table of contents entry to the table of contents
+		\ifthenelse{\equal{\varLanguage}{german}}
+			{\addcontentsline{toc}{chapter}{\protect{Inhaltsverzeichnis}}}{
+			 \addcontentsline{toc}{chapter}{\protect{Contents}}}
+		\tableofcontents % Print table of contents
+		\include{extras/abbreviations.tex} % List of abbreviations
+			
+	\mainmatter % Arabic page numbering and Arabic chapter numbering
+		% Include chapters
+		\include{chapters/chapter_1.tex}
+		\include{chapters/chapter_2.tex}
+		\include{chapters/chapter_3.tex}
+		\include{chapters/chapter_4.tex}
+		\include{chapters/chapter_5.tex}
+	  
+	\appendix % Arabic page numbering and alphabetic chapter numbering
+		\ifthenelse{\equal{\varLanguage}{german}}{
+		  	\renewcommand{\bibname}{Literaturverzeichnis}}{} % Rename from "Literatur" to "Literaturverzeichnis"
+		\printbibliography % Bibliography
+		\listoffigures % Print list of figures
+		\listoftables % Print list of tables
+		\include{extras/attachment.tex}  % Attachment
+	\backmatter
+\end{document}

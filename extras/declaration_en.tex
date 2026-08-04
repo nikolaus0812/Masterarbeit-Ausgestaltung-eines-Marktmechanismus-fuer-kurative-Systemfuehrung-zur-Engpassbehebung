@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\NameSize}
+\setlength{\NameSize}{\widthof{\varSurname, \varName}}
+\newlength{\NameOffset}
+\setlength{\NameOffset}{4cm - \widthof{\varMatNumber}}
+
+\newlength{\TabLength}
+\newlength{\NameDiff}
+\newlength{\DateLength}
+\ifthenelse{\lengthtest{6cm < \NameSize}}{
+	\setlength{\TabLength}{\widthof{\varSurname, \varName}}
+	\setlength{\NameDiff}{0cm}
+	\setlength{\DateLength}{\TabLength - \widthof{Aachen, \varDate}}}{
+	\setlength{\TabLength}{6cm}
+	\setlength{\NameDiff}{6cm - \NameSize}
+	\setlength{\DateLength}{6cm - \widthof{Aachen, \varDate}}}
+
+\chapter*{\centerline{Statutory Declaration in Lieu of an Oath}}
+\thispagestyle{empty} % Prevent headline on this page
+\hspace{-0.35cm}
+\begin{tabular}{p{\TabLength}c}
+	\underbar{{\varSurname, \varName}{\hspace{\NameDiff}}}&	\underbar{{\hspace{0.5\NameOffset}}{\varMatNumber}{\hspace{0.5\NameOffset}}}\\
+	Name, First Name&Matriculation Number
+\end{tabular}
+
+\vfill
+
+I hereby declare in lieu of an oath that I have completed the present {\varKind} entitled
+
+\textbf{\varEnglishTitle}
+
+independently and without illegitimate assistance from third parties (such as academic ghostwriters). I have used no other than the specified sources and aids. In case that the thesis is additionally submitted in an electronic format, I declare that the written and electronic versions are fully identical. The thesis has not been submitted to any examination body in this, or similar, form.
+
+\vfill
+
+\hspace{-0.35cm}
+\begin{tabular}{p{\TabLength}c}
+	\underbar{Aachen, \varDate\hspace{\DateLength}}&\underbar{\hspace{4cm}}\\
+	City, Date&Signature
+\end{tabular}
+
+\vfill
+\small
+\textbf{Official Notification:}
+
+\footnotesize
+\textbf{Para. 156 StGB (German Criminal Code): False Statutory Declarations} \newline
+Whoever  before  a  public  authority  competent  to  administer  statutory  declarations  falsely  makes  such  a  declaration  or  falsely testifies while referring to such a declaration shall be liable to imprisonment not exceeding three years or a fine.
+
+\textbf{Para. 161 StGB (German Criminal Code): False Statutory Declarations Due to Negligence} \newline
+(1) If a person commits one of the offences listed in sections 154 through156 negligently the penalty shall be imprisonment not exceeding one year or a fine.
+(2) The offender shall be exempt from liability if he or she corrects their false testimony in time. The provisions of section 158 (2) and (3) shall apply accordingly.
+
+\normalsize
+\vfill
+I have read and understood the above official notification:
+
+\hspace{-0.35cm}
+\begin{tabular}{p{\TabLength}c}
+	\underbar{Aachen, \varDate\hspace{\DateLength}}&\underbar{\hspace{4cm}}\\
+	City, Date&Signature
+\end{tabular}
+\newpage
+\thispagestyle{empty}

@@ -1,0 +1,303 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Loading if-then package
+\RequirePackage{ifthen}
+\ifthenelse{\equal{\varKind}{Dissertation}}
+{\documentclass[
+	fontsize=10pt, % Fontsize
+	a5paper, % Paper has A4 size
+	pdftex, % Set output driver to pdftex
+	parskip=half, % No indent at new paragraph
+	listof=toc, % Include lists of into table of contents
+	bibliography=toc, % Include bibliography into table of contents
+	numbers=noenddot, % Numbers of figures, tables etc. should not have an enddot
+	headings=normal, % Smaller heading font size
+	]{scrbook}} % Set document style to book using KOMA script
+{\documentclass[
+	fontsize=11pt, % Fontsize
+	a4paper, % Paper has A4 size
+	pdftex, % Set output driver to pdftex
+	parskip=half, % No indent at new paragraph
+	listof=toc, % Include lists of into table of contents
+	bibliography=toc, % Include bibliography into table of contents
+	numbers=noenddot, % Numbers of figures, tables etc. should not have an enddot
+	headings=normal, % Smaller heading font size
+	]{scrbook}} % Set document style to book using KOMA script
+
+
+
+% Package for better compatibility of other packages with KOMA-Script
+\usepackage{scrhack}
+
+% Page margins
+\ifthenelse{\equal{\varKind}{Dissertation}}
+{\newcommand{\varInner}{1.5cm}
+ \newcommand{\varOuter}{1.5cm}
+ \newcommand{\varTop}{1.8cm}
+ \newcommand{\varBottom}{1.8cm}
+ \ifthenelse{\equal{\varTwoside}{true}}
+ 	{\newcommand{\varBinding}{1cm}}
+ 	{\newcommand{\varBinding}{0cm}}
+}
+{\newcommand{\varInner}{2.5cm}
+ \newcommand{\varOuter}{2.5cm}
+ \newcommand{\varTop}{2.5cm}
+ \newcommand{\varBottom}{2.5cm}
+ \ifthenelse{\equal{\varTwoside}{true}}
+ 	{\newcommand{\varBinding}{1.2cm}}
+ 	{\newcommand{\varBinding}{0cm}}
+}
+\usepackage[twoside=\varTwoside, includehead, inner=\varInner, outer=\varOuter, top=\varTop, bottom=\varBottom, bindingoffset=\varBinding]{geometry}
+
+% Defining figures and tables as floats
+\usepackage{float}
+
+% Including special characters
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Loading language packages depending on chosen language (headings etc.)
+\ifthenelse{\equal{\varLanguage}{german}}
+	{\usepackage[ngerman]{babel}}
+	{\usepackage[english]{babel}}
+	
+% Load German Hyphenation patterns (Unfortunately causes an error with some MiKTeX versions)
+%\usepackage[ngerman=ngerman-x-latest]{hyphsubst}
+
+% German citation marks
+\usepackage[autostyle, german=quotes]{csquotes}
+
+\emergencystretch 1em % Bigger tolerance between words to avoid overfull hboxes
+
+% Better LaTeX standard font
+\usepackage{helvet}
+\ifthenelse{\equal{\varKind}{Dissertation}}
+{\ifthenelse{\equal{\varFontStyle}{serif}}
+	{} % Serif font
+	{\renewcommand{\familydefault}{\sfdefault}}} % Sans serif font if needed
+{\renewcommand{\familydefault}{\sfdefault}} % Sans serif font if needed
+
+%\addtokomafont{disposition}{\rmfamily} % Serif headings if needed
+
+% packages for including an manipulating graphics
+\usepackage[pdftex]{graphicx}
+\usepackage{wrapfig}
+\usepackage[section]{placeins}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{epstopdf}
+
+% Better color management
+\usepackage{color}
+
+% Line spacing manipulation
+\usepackage{setspace}
+
+% Package for performing arithmetic commands
+\usepackage{calc}
+
+% Package for creating urls
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-} % Allow URL line breaks at / and -
+
+%packages for mathematic statements and symbols
+\usepackage{amsmath} % Mathematic equations
+\usepackage{amssymb} % Mathematic symbols
+\usepackage{upgreek} % Provide upright Greek letters
+\usepackage{icomma} % Better spacing in decimal numbers with comma
+\usepackage{trfsigns} % \e for Euler, \j for imaginary unit
+%\usepackage{mathrsfs}
+\usepackage[locale=DE]{siunitx} % Correct use of SI units
+\sisetup{mode=math,detect-all}
+\usepackage[right]{eurosym} % Euro Symbol
+\usepackage{bm} % Access bold symbols in maths mode
+
+% Include acronyms
+\usepackage[nohyperlinks]{acronym}
+
+% Adjust blank space above and below headings
+\RedeclareSectionCommand[
+%runin=false,
+afterindent=false,
+beforeskip=1.25\baselineskip,
+afterskip=\baselineskip]{chapter}
+\RedeclareSectionCommand[
+%runin=false,
+afterindent=false,
+beforeskip=.75\baselineskip,
+afterskip=.5\baselineskip]{section}
+\RedeclareSectionCommand[
+%runin=false,
+afterindent=false,
+beforeskip=.75\baselineskip,
+afterskip=.5\baselineskip]{subsection}
+\RedeclareSectionCommand[
+%runin=false,
+afterindent=false,
+beforeskip=.55\baselineskip,
+afterskip=.25\baselineskip]{subsubsection}
+
+% TikZ
+\usepackage{standalone}
+\usepackage{pgf, tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{verbatim}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes.arrows}
+\usetikzlibrary{arrows}
+\usetikzlibrary{shapes}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shadows}
+\usetikzlibrary{patterns}
+\pgfplotsset{plot coordinates/math parser=false}
+\pgfplotsset{compat=newest}
+\pgfplotstableset{use comma,1000 sep=\,}
+\pgfkeys{/pgf/number format/.cd,fixed,precision=2} 
+\usepgfplotslibrary{groupplots}
+
+% Packages for tables
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{lscape}
+\usepackage{booktabs}
+\usepackage{dcolumn}
+\usepackage{multicol}
+\usepackage{multirow}
+\renewcommand*{\arraystretch}{1.2} % Higher line height in tables
+
+% Manipulating heading and foot nodes
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles % Clear presets
+\KOMAoptions{headsepline=true, plainheadsepline=true} % Line under headline
+\lohead[\leftmark]{\leftmark} % Chapter name on the left side of odd pages
+\rohead[\pagemark]{\pagemark} % Page numbering on the right side of odd pages
+\lehead[\pagemark]{\pagemark} % Page numbering on the left side of even pages
+\rehead[\leftmark]{\leftmark} % Chapter name on the right side of even pages
+\renewcommand*{\chaptermarkformat}{} % No Numbering of chapters in headline
+\renewcommand{\headfont}{\normalfont} % Normal font in headline
+\raggedbottom % No vertical balancing of line spaces
+\pagestyle{headings} % Set the standard page style
+
+\renewcommand*\chapterpagestyle{empty}
+
+\ifthenelse{\equal{\varLanguage}{german}}
+	{\usepackage[
+		backend=biber, % Use Biber as Backend
+		hyperref=true, % Create Links using Hyperref
+		style=alphabetic, % Alphabetic cite and bib style
+		giveninits=true, % Abbreviate first name with period
+		date=long, % Use long date format
+		sortlocale=auto, % Sort depending on language (german, english)
+	    url=true, % Print URLs
+	    minbibnames=3, % Print three authors before et al.
+	    ]{biblatex}}
+	{\usepackage[
+		backend=biber, % Use Biber as Backend
+		hyperref=true, % Create Links using Hyperref
+		style=alphabetic, % Alphabetic cite and bib style
+		giveninits=true, % Abbreviate first name with period
+		date=iso, % Use iso date format
+		urldate=iso, % Use iso date format YYYY-MM-DD
+		sortlocale=auto, % Sort depending on language (german, english)
+		url=true, % Print URLs
+		minbibnames=3, % Print three authors before et al.
+		]{biblatex}}
+
+\urlstyle{same} % Set URL font style to text font style
+% Set the abstract field to null to prevent errors caused by invalid symbols in the abstract
+\DeclareSourcemap{
+	\maps[datatype=bibtex]{
+		\map{
+			\step[fieldset=abstract, null]
+		}
+	}
+}
+
+
+% IAEW Citation Style
+\renewcommand*{\labelalphaothers}{}
+\DeclareLabelalphaTemplate{
+	\labelelement{
+		\field[final]{shorthand}
+		\field{label}
+		\field[strwidth=3,strside=left,uppercase=true,names=1]{labelname}}
+	\labelelement{\field[strwidth=2,strside=right]{year}}}
+
+\renewcommand{\labelnamepunct}{\addcolon\space} % Colon following author
+\DeclareFieldFormat{title}{#1} % No italic title
+\DeclareFieldFormat{citetitle}{#1} % No italic title
+\DeclareNameAlias{sortname}{family-given} % Family name first
+\DeclareNameAlias{author}{family-given} % Family name first
+
+\renewcommand{\multinamedelim}{\addsemicolon\space} % Semicolon between author names instead of comma
+\renewcommand{\finalnamedelim}{\addsemicolon\space} % Semicolon prior to last author name
+% Resolve problem with font size 12 in Latin Modern in Bilbiography
+\renewcommand\mkbibacro[1]{{\footnotesize\MakeUppercase{#1}}}
+
+% Set the bibliography path
+\bibliography{literature/literature.bib}
+
+% Packages for generating and including pdfs
+\usepackage{pdfsync} % Permit references back and forth between source and PDF
+\usepackage{pdflscape} % PDF support for the landscape environment
+\usepackage{pdfpages} % Better pdf page inclusion
+% Set pdf information according to selected language
+\ifthenelse{\equal{\varLanguage}{german}}
+{\usepackage[
+	pdftitle={\varGermanTitle},
+	pdfauthor={{\varName} {\varSurname}},
+	pdfcreator={pdfLaTeX with KOMA-Script},
+	pdfsubject={{\varKind} am IAEW, RWTH Aachen},
+	pdfkeywords={\varKeywords},
+	]{hyperref}}
+{\usepackage[
+pdftitle={\varEnglishTitle},
+pdfauthor={{\varName} {\varSurname}},
+pdfcreator={pdfLaTeX with KOMA-Script},
+pdfsubject={{\varKind} at IAEW, RWTH Aachen},
+pdfkeywords={\varKeywords},
+]{hyperref}}
+
+\hypersetup{
+   	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black,
+	urlcolor=black}
+\pdfcompresslevel=9 % PDF compress level
+
+% Set caption font size
+\setkomafont{caption}{\small}
+% Bold caption font
+\setkomafont{captionlabel}{\small\bfseries}
+
+% Use Formel instead of Gleichung
+\ifthenelse{\equal{\varLanguage}{german}}{
+	\renewcaptionname{ngerman}{\equationautorefname}{Formel}}{
+	\renewcaptionname{english}{\equationautorefname}{Formula}}
+% Change autorefname of subsections and subsubsections
+\ifthenelse{\equal{\varLanguage}{german}}{
+	\renewcaptionname{ngerman}{\subsectionautorefname}{\sectionautorefname}
+	\renewcaptionname{ngerman}{\subsubsectionautorefname}{\sectionautorefname}}{
+	\renewcaptionname{english}{\subsectionautorefname}{\sectionautorefname}
+	\renewcaptionname{english}{\subsubsectionautorefname}{\sectionautorefname}}
+
+% Set non-italic indices as standard
+\newcommand{\upsub}[1]{\sb{\mathrm{#1}}}
+\newcommand{\upsup}[1]{\sp{\mathrm{#1}}}
+
+\begingroup\lccode`~=`_\lowercase{\endgroup\let~\upsub}
+\begingroup\lccode`~=`^\lowercase{\endgroup\let~\upsup}
+
+\AtBeginDocument{%
+	\catcode`_=12 \catcode`^=12
+	\mathcode`_="8000
+	\mathcode`^="8000
+}

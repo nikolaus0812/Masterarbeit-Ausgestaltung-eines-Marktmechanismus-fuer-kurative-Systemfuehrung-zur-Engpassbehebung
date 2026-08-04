@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newlength{\NameSize}
+\setlength{\NameSize}{\widthof{\varSurname, \varName}}
+\newlength{\NameOffset}
+\setlength{\NameOffset}{4cm - \widthof{\varMatNumber}}
+
+\newlength{\TabLength}
+\newlength{\NameDiff}
+\newlength{\DateLength}
+\ifthenelse{\lengthtest{6cm < \NameSize}}{
+	\setlength{\TabLength}{\widthof{\varSurname, \varName}}
+	\setlength{\NameDiff}{0cm}
+	\setlength{\DateLength}{\TabLength - \widthof{Aachen, \varDate}}}{
+	\setlength{\TabLength}{6cm}
+	\setlength{\NameDiff}{6cm - \NameSize}
+	\setlength{\DateLength}{6cm - \widthof{Aachen, \varDate}}}
+
+\chapter*{\centerline{Eidesstattliche Versicherung}}
+\thispagestyle{empty} % Prevent headline on this page
+\hspace{-0.35cm}
+\begin{tabular}{p{\TabLength}c}
+	\underbar{{\varSurname, \varName}{\hspace{\NameDiff}}}&	\underbar{{\hspace{0.5\NameOffset}}{\varMatNumber}{\hspace{0.5\NameOffset}}}\\
+	Name, Vorname&Matrikelnummer
+\end{tabular}
+
+\vfill
+
+Ich versichere hiermit an Eides Statt, dass ich die vorliegende {\varKind} mit dem Titel
+
+\textbf{\varGermanTitle}
+
+selbstständig und ohne unzulässige fremde Hilfe (insbes. akademisches Ghostwriting) erbracht habe. Ich habe keine anderen als die angegebenen Quellen und Hilfsmittel benutzt. Für den Fall, dass die Arbeit zusätzlich auf einem Datenträger eingereicht wird, erkläre ich, dass die schriftliche und die elektronische Form vollständig übereinstimmen. Die Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen. 
+
+\vfill
+
+\hspace{-0.35cm}
+\begin{tabular}{p{\TabLength}c}
+	\underbar{Aachen, \varDate\hspace{\DateLength}}&\underbar{\hspace{4cm}}\\
+	Ort, Datum&Unterschrift
+\end{tabular}
+
+\vfill
+\small
+\textbf{Belehrung:}
+
+\footnotesize
+\textbf{§ 156 StGB: Falsche Versicherung an Eides Statt} \newline
+Wer vor einer zur Abnahme einer Versicherung an Eides Statt zuständigen Behörde eine solche Versicherung falsch abgibt oder unter Berufung auf eine solche Versicherung falsch aussagt, wird mit Freiheitsstrafe bis zu drei Jahren oder mit Geldstrafe bestraft. 
+
+\textbf{§ 161 StGB: Fahrlässiger Falscheid; fahrlässige falsche Versicherung an Eides Statt} \newline
+(1) Wenn eine der in §§ 154 bis 156 bezeichneten Handlungen aus Fahrlässigkeit begangen worden ist, so tritt Freiheitsstrafe bis zu einem Jahr oder Geldstrafe ein. \newline
+(2) Straflosigkeit tritt ein, wenn der Täter die falsche Angabe rechtzeitig berichtigt. Die Vorschriften des § 158 Abs. 2 und 3 gelten entsprechend.
+
+\normalsize
+\vfill
+Die vorstehende Belehrung habe ich zur Kenntnis genommen:
+
+\hspace{-0.35cm}
+\begin{tabular}{p{\TabLength}c}
+	\underbar{Aachen, \varDate\hspace{\DateLength}}&\underbar{\hspace{4cm}}\\
+	Ort, Datum&Unterschrift
+\end{tabular}
+\newpage
+\thispagestyle{empty}

@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+	\begin{figure}
+		\raggedleft
+		\ifthenelse{\equal{\varLanguage}{german}}
+		{\includegraphics[scale=0.76]{images/titlepage/IAEW_LOGO_DE.pdf}}
+		{\includegraphics[scale=0.76]{images/titlepage/IAEW_LOGO_EN.pdf}} 
+	\end{figure}
+	\begin{centering}
+		\ifthenelse{\equal{\varLanguage}{german}}
+		{Diese Arbeit wurde vorgelegt am\\Institut für Elektrische Anlagen und Netze, Digitalisierung und Energiewirtschaft\\}
+		{This work was submitted to the\\Institute for High Voltage Equipment and Grids, Digitalization and Energy Economics\\}
+		
+		\vfill
+		%% If you want to change the title manually, replace \varGermanTitle or \varEnglishTitle by your entry
+		\ifthenelse{\equal{\varLanguage}{german}}
+		{\Large\textbf\varGermanTitle\\} % setting german title as main title
+		{\Large\textbf\varEnglishTitle\\} % setting english title as main title
+		
+		\vfill
+		
+		\ifthenelse{\equal{\varLanguage}{german}}
+		{% setting english title as secondary title
+			\large\varEnglishTitle\\}
+		{% setting german title as secondary title
+			\large\varGermanTitle\\}		
+		
+		\vfill
+		
+		\large\textbf\varKind\\
+		\vspace{0.15cm}
+		\ifthenelse{\equal{\varLanguage}{german}}
+		{von\\}{ by\\}
+		\vspace{0.15cm}
+		\large\textbf{{\varAdress} {\varName} {\varSurname}}
+		\vspace{2cm}
+		
+	\end{centering}
+	
+	% Examinant, Supervisor, Date
+	\vfill
+	\vspace{2cm}
+	\ifthenelse{\equal{\varLanguage}{german}}
+		{\begin{tabular}{p{3cm}l}
+				1. Prüfer: & \varExaminant\\
+				2. Prüfer: & \varSecondExaminant\\
+				& \\
+				Betreuer: & \varFirstSupervisor\\
+				\ifthenelse{\equal{\varSecondSupervisor}{}}{}{& \varSecondSupervisor\\}
+				& \\
+				& Aachen, \varDate}
+		{\begin{tabular}{p{3cm}l}
+				1st Examiner: & \varExaminant\\
+				2nd Examiner: & \varSecondExaminant\\
+				& \\
+				Supervisor: & \varFirstSupervisor\\
+				\ifthenelse{\equal{\varSecondSupervisor}{}}{}{& \varSecondSupervisor\\}
+				& \\
+				& Aachen, \varDate}
+		\end{tabular}
+	\vspace{3cm}		
+	
+	\newpage
+	\thispagestyle{empty}
+\end{titlepage} 

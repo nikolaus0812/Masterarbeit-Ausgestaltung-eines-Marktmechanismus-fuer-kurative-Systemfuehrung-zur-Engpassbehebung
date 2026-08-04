@@ -1,0 +1,239 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                       IAEW LaTeX Template                        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Strommärkte und Betriebsplanung als Grundlage für kuratives Engpassmanagement}
+\label{ch:market_analysis}
+
+\begin{itemize}
+    \item Überblick über die relevanten Strommärkte und deren Bedeutung für den kurativen Netzbetrieb
+    \item Einordnung der Betriebsplanung als Bindeglied zwischen Marktgeschehen und Netzengpassmanagement
+    \item Ableitung von Anforderungen an ein kuratives Marktdesign als Überleitung zu Kapitel 4
+\end{itemize}
+
+% Abbildungen:
+% \fig{} Zeitstrahl: Marktzeithorizonte von Terminmarkt bis Echtzeit (Day-Ahead, Intraday, Regelenergie, Redispatch)
+
+\section{Großhandelsmärkte}
+\label{sec:wholesale_markets}
+
+\begin{itemize}
+    \item Überblick über die Struktur der deutschen und europäischen Großhandelsmärkte
+    \item Bedeutung der Großhandelsmärkte als primäre Erlösquelle für flexible Aktoren
+\end{itemize}
+
+\subsection{Terminmarkt}
+\label{sec:market_termin}
+
+\begin{itemize}
+    \item Handel von Strom für Wochen, Monate und Jahre im Voraus (Forwards, Futures)
+    \item Bedeutung für die langfristige Absicherung und Portfolioplanung von Speicherbetreibern
+    \item Geringe Relevanz für kurativen Einsatz aufgrund fehlender Kurzfristigkeit
+\end{itemize}
+
+\subsection{Day-Ahead Spotmarkt}
+\label{sec:market_da}
+
+\begin{itemize}
+    \item Auktionsbasierter Handel für den Folgetag (EPEX SPOT, 12:00 Uhr Gate Closure)
+    \item Preisbildung und Merit-Order als Grundlage für Dispatch-Entscheidungen
+    \item Rolle des Day-Ahead-Marktes für die Fahrplanoptimierung von Batteriespeichern
+    \item Zusammenhang zwischen Day-Ahead-Preisen und Netzengpasssituationen
+\end{itemize}
+
+% Abbildungen:
+% \fig{} Merit-Order-Kurve: Preisbildung im Day-Ahead-Markt
+
+\subsection{Intraday Spotmarkt}
+\label{sec:market_id}
+
+\begin{itemize}
+    \item Kontinuierlicher Handel und Intraday-Auktionen (ID1, ID3) für Stunden- und Viertelstundenprodukte
+    \item Gate Closure 30 Minuten vor Lieferbeginn in Deutschland
+    \item Hohe Relevanz für kurativen Einsatz: kurzfristige Netzengpässe erst im Intraday-Horizont sichtbar
+    \item Viertelstundenprodukte als geeignetes Instrument für schnelle Batteriespeicher
+\end{itemize}
+
+\subsection{OTC-Handel}
+\label{sec:market_otc}
+
+\begin{itemize}
+    \item Bilateraler Handel außerhalb der Börse zwischen Marktteilnehmern
+    \item Bedeutung für individuelle Lieferverträge und maßgeschneiderte Produkte
+    \item Eingeschränkte Transparenz und Liquidität im Vergleich zum Börsenhandel
+\end{itemize}
+
+\section{Systemdienstleistungen und Regelenergiemärkte}
+\label{sec:system_markets}
+
+\begin{itemize}
+    \item Überblick über die Märkte für Systemdienstleistungen und deren Vergütungslogik
+    \item Bedeutung für Batteriespeicher als schnell aktivierbare Ressource
+\end{itemize}
+
+\subsection{Frequenzhaltung}
+\label{sec:frequency_control}
+
+\begin{itemize}
+    \item Überblick über die drei Regelenergieprodukte und deren zeitliche Aktivierungslogik
+    \item Präqualifikationsanforderungen und Marktstruktur (wöchentliche Auktionen)
+\end{itemize}
+
+\subsubsection{Primärregelleistung}
+\label{sec:market_fcr}
+
+\begin{itemize}
+    \item Automatische Frequenzstabilisierung innerhalb von 30 Sekunden (FCR)
+    \item Symmetrisches Produkt: gleichzeitige Vorhaltung von positiver und negativer Leistung
+    \item Hohe Eignung für Batteriespeicher aufgrund schneller Reaktionszeit
+\end{itemize}
+
+\subsubsection{Sekundärregelleistung}
+\label{sec:market_afrr}
+
+\begin{itemize}
+    \item Automatisch aktivierte Frequenzwiederherstellung (aFRR), Reaktionszeit 30 Sekunden
+    \item Getrennte Ausschreibung von positiver und negativer Regelleistung
+    \item Aktivierungswahrscheinlichkeit und Erlösstruktur für Speicherbetreiber
+\end{itemize}
+
+\subsubsection{Minutenreserve}
+\label{sec:market_mfrr}
+
+\begin{itemize}
+    \item Manuell aktivierte Frequenzwiederherstellung (mFRR), Aktivierung innerhalb von 15 Minuten
+    \item Viertelstündliche Ausschreibung seit Einführung der neuen Marktregeln
+    \item Geringere Anforderungen an Reaktionsgeschwindigkeit, aber höhere Aktivierungswahrscheinlichkeit
+\end{itemize}
+
+\section{Betriebsplanung und Dispatch-Prozesse}
+\label{sec:operations_planning}
+
+\begin{itemize}
+    \item Einordnung der Betriebsplanung in den zeitlichen Ablauf vom Terminmarkt bis zur Echtzeit
+    \item Zusammenspiel von Marktpositionen, Fahrplänen und netzbetreiberseitigen Eingriffen
+\end{itemize}
+
+% Abbildungen:
+% \fig{} Schematische Darstellung: Zusammenspiel Marktposition -> Fahrplan -> Netzengpass -> kurative Maßnahme
+
+\subsection{Day-Ahead Fahrplanung}
+\label{sec:da_scheduling}
+
+\begin{itemize}
+    \item Erstellung von Einspeise- und Bezugsfahrplänen nach Day-Ahead-Auktion
+    \item Rolle der ÜNB bei der Überprüfung der Fahrpläne auf Netzverträglichkeit
+    \item Identifikation von Engpässen im präventiven Horizont und Einleitung von Gegenmaßnahmen
+\end{itemize}
+
+\subsection{Intraday-Anpassungen}
+\label{sec:id_adjustments}
+
+\begin{itemize}
+    \item Aktualisierung der Fahrpläne durch Intraday-Handel und Prognoseaktualisierungen
+    \item Verkürzung des Planungshorizonts und zunehmende Unsicherheitsreduktion
+    \item Möglichkeit zur Anpassung von Redispatch-Maßnahmen bis kurz vor Lieferbeginn
+\end{itemize}
+
+\subsection{Redispatch 2.0}
+\label{sec:redispatch_process}
+
+\begin{itemize}
+    \item Prozessablauf von der Engpasserkennung bis zur Aktivierung und Abrechnung
+    \item Datenaustausch zwischen ÜNB, VNB und Anlagenbetreibern
+\end{itemize}
+
+% Abbildungen:
+% \fig{} Ablaufdiagramm: Redispatch 2.0 Prozessablauf mit Rollenverteilung ÜNB / VNB / Anlagenbetreiber
+
+\subsubsection{Gesetzlicher Rahmen}
+\label{sec:redispatch_legal}
+
+\begin{itemize}
+    \item \S~13 und \S~14 EnWG als rechtliche Grundlage für Redispatch-Maßnahmen
+    \item Erweiterung des Redispatch 2.0 auf erneuerbare Energien und Speicher ab 2021
+\end{itemize}
+
+\subsubsection{Rollenverteilung zwischen ÜNB und VNB}
+\label{sec:redispatch_roles}
+
+\begin{itemize}
+    \item ÜNB als koordinierender Netzbetreiber: Engpasserkennung und Maßnahmenauswahl
+    \item VNB als anweisender Netzbetreiber: Weiterleitung von Redispatch-Anforderungen
+    \item Herausforderungen bei der netzebenenübergreifenden Koordination
+\end{itemize}
+
+\subsubsection{Präventiver Redispatch und kurative Höherauslastung}
+\label{sec:redispatch_prev_cur}
+
+\begin{itemize}
+    \item Präventiver Redispatch: Anpassung von Einspeisefahrplänen vor Eintreten des Engpasses im Day-Ahead- oder Intraday-Horizont
+    \item Kurativer Redispatch: Eingriff nach Eintreten des Engpasses durch Anpassung von Wirkleistungseinspeisung in Echtzeit
+    \item Kurative Höherauslastung: Nutzung der transienten Stromtragfähigkeit (TATL) zur temporären Überschreitung des Dauergrenzwerts (PATL) - kein Redispatch, sondern Erweiterung des zulässigen Betriebsbereichs
+    \item Abgrenzung: Kurative Höherauslastung ersetzt oder reduziert den Bedarf an kurativem Redispatch, indem der Engpass durch Tolerierung transienter Überlastung überbrückt wird
+    \item Effizienzpotenzial: Kurative Höherauslastung ermöglicht Kosteneinsparung gegenüber präventivem Redispatch bei gleichzeitiger Wahrung der Netzsicherheit
+\end{itemize}
+
+\section{Marktdesign im Engpassmanagement}
+\label{sec:design_congestion}
+
+\begin{itemize}
+    \item Überblick über bestehende und diskutierte Marktdesignansätze zur Engpassbewältigung
+    \item Einordnung der Ansätze hinsichtlich ihrer Eignung für den kurativen Einsatz von Batteriespeichern
+\end{itemize}
+
+\subsection{Regionalisierung}
+\label{sec:regionalisation}
+
+\begin{itemize}
+    \item Motivation: Einheitliche Preiszone Deutschland führt zu ineffizienten Dispatch-Entscheidungen
+    \item Überblick über Ansätze zur räumlichen Differenzierung von Strompreisen
+\end{itemize}
+
+\subsubsection{Preiszonen}
+\label{sec:price_zones}
+
+\begin{itemize}
+    \item Aufteilung der einheitlichen Preiszone in mehrere Gebotszonen (z.B. Nord/Süd)
+    \item Erfahrungen aus dem europäischen Ausland (Skandinavien, Italien)
+    \item Politische und regulatorische Hürden in Deutschland
+\end{itemize}
+
+\subsubsection{Dispatch-Hubs}
+\label{sec:dispatch_hubs}
+
+\begin{itemize}
+    \item Lokale Flexibilitätsmärkte als Alternative zur vollständigen Preiszonen-Aufteilung
+    \item Konzept der Dispatch-Hubs: netzdienliche Ausschreibung in definierten Netzregionen
+    \item Potenzial für den gezielten Einsatz von Batteriespeichern in engpassgefährdeten Regionen
+\end{itemize}
+
+\subsection{Echtzeit-Redispatch}
+\label{sec:market_rt_redispatch}
+
+\begin{itemize}
+    \item Marktbasierte Aktivierung von Flexibilität in Echtzeit zur Engpassbehebung
+    \item Anforderungen an Latenz, Kommunikation und Preisbildung im Echtzeitbetrieb
+    \item Internationale Erfahrungen und Pilotprojekte (z.B. UK Balancing Mechanism)
+\end{itemize}
+
+\subsection{Ex-Ante Beschränkungen}
+\label{sec:exante}
+
+\begin{itemize}
+    \item Flow-Based Market Coupling (FBMC) als Instrument zur ex-ante Engpassberücksichtigung
+    \item Transmission Capacity Withholding: Reduktion verfügbarer Übertragungskapazität
+    \item Abwägung zwischen Marktintegration und Netzsicherheit
+\end{itemize}
+
+\subsection{Anforderungen an ein kuratives Marktdesign}
+\label{sec:market_curative}
+
+\begin{itemize}
+    \item Synthese der analysierten Ansätze: Welche Elemente eignen sich für ein kuratives Marktdesign?
+    \item Anforderungskatalog: Reaktionsgeschwindigkeit, Lokationalität, Vergütung, Diskriminierungsfreiheit
+    \item Offene Forschungsfragen als direkte Überleitung zu Kapitel 4: Inwiefern lässt sich durch die Integration eines lokalen Flexibilitätsmarktes für Batteriespeicher das kurative Redispatch-Volumen im deutschen Übertragungsnetz bis 2030 kostenoptimal reduzieren?
+\end{itemize}
+
+% Abbildungen:
+% \fig{} Vergleichsmatrix: Marktdesignansätze (Preiszonen, Dispatch-Hubs, Echtzeit-Redispatch, Ex-Ante) nach Kriterien des Anforderungskatalogs
