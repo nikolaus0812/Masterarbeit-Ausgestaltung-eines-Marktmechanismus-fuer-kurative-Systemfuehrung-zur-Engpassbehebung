@@ -1,13 +1,52 @@
 \chapter{Einleitung}
 \label{ch:intro}
 % ===============================================================
-% Zielumfang Kapitel 1: 5 Seiten
+% Zielumfang Kapitel 1: 4,5 Seiten
+%   1.1 Motivation und Problemstellung ........................ 3
+%   1.2 Zielsetzung und Forschungsfragen ..................... 1
+%   1.3 Aufbau der Arbeit .................................... 0,5
+%
+% STRUKTURAENDERUNG: Der frueher hier stehende Abschnitt
+% "Stand der Forschung und Forschungslueke" ist aufgeloest. Begruendung
+% und Zielorte der Inhalte:
+%   - Die drei Literaturstraenge sind dorthin verlagert, wo die Quellen
+%     tatsaechlich verwendet werden: die Einleitung von Kapitel 2
+%     (Straenge 1 und 3) und die Einleitung von Abschnitt 2.3
+%     (Strang 2, Betriebsfuehrung von Batteriespeichern).
+%   - Die Forschungsluecke selbst stand doppelt: hier behauptet und in
+%     Abschnitt 2.4.3 hergeleitet. Sie steht jetzt nur noch dort, wo sie
+%     aus der Argumentation folgt.
+%   - Ein Vorwaertsverweis in Abschnitt 1.2 haelt die Luecke in der
+%     Einleitung praesent, ohne sie vorwegzunehmen.
+% ===============================================================
+%
+% LESEHILFE ZU DIESER FASSUNG
+% Alle neu eingefuegten oder umformulierten Passagen sind eingefasst in:
+%   % >>>>> VORSCHLAG ...
+%   % <<<<< ENDE VORSCHLAG
+% Unveraenderter Bestandstext steht ausserhalb dieser Marken.
+% Offene Stellen sind mit % PRUEFEN: bzw. [PLATZHALTER: ...] markiert.
 % ===============================================================
 
 % ---------------------------------------------------------------
 \section{Motivation und Problemstellung}
 \label{sec:motivation}
 % [Ziel: 2 Seiten]
+%
+% >>>>> VORSCHLAG: STRUKTUR VON ABSCHNITT 1.1
+% Der Abschnitt spannt das Problem jetzt in zwei explizit benannten
+% Straengen auf, weil die Arbeit auf beide antwortet:
+%   (P1) Mengenproblem           -- zu viel Redispatch, auch nach Netzausbau
+%   (P2) Kurzfristigkeitsproblem -- Engpaesse entstehen zunehmend
+%        prognosebedingt kurzfristig, praeventive Planung greift zu spaet
+% Die Straenge sind gekoppelt: P2 wird praeventiv nur durch zusaetzliche
+% Sicherheitsmargen beherrscht, die P1 weiter vergroessern. Genau an
+% dieser Kopplung setzt kurative Vorhaltung an.
+% Die \paragraph-Ueberschriften sind bei KOMA run-in und erscheinen bei
+% tocdepth=2 nicht im Inhaltsverzeichnis. Falls die Betreuung solche
+% Signalwoerter in der Einleitung nicht wuenscht: \paragraph{...}
+% loeschen, die Absaetze stehen auch ohne.
+% <<<<< ENDE VORSCHLAG
 
 Der anthropogen verursachte Klimawandel erfordert eine grundlegende Transformation des deutschen Energiesystems. 
 Zentrales Instrument dieser Transformation ist das Bundes-Klimaschutzgesetz, das bis zum Jahr 2045 die Erreichung von Netto-Treibhausgasneutralität in Deutschland vorschreibt \cite{bundesumweltministerium_bundes-klimaschutzgesetz_2019}. 
@@ -18,42 +57,93 @@ Dieser strukturelle Wandel des Erzeugungsmix stellt das deutsche Übertragungsne
 
 Ursächlich hierfür ist ein geografisches Missverhältnis zwischen Erzeugungsschwerpunkten, vornehmlich Offshore- und Onshore-Windkraft im Norden, und industriellen Verbrauchszentren im Süden Deutschlands. 
 Gleichzeitig scheiden steuerbare konventionelle Kraftwerke in der Nähe von Lastzentren aus dem Betrieb aus, die bislang zur Netzstabilisierung beigetragen haben.
-Das Ergebnis sind wachsende strukturelle Engpässe im Übertragungsnetz, deren Behebung durch Redispatch-Maßnahmen in den vergangenen Jahren erhebliche und stark schwankende Kosten verursacht. 
+
+% >>>>> VORSCHLAG: NEUER ABSATZ -- URSACHE IM MARKTDESIGN (SELBSTDISPATCH)
+% Begruendung: Das geografische Missverhaeltnis allein erklaert noch
+% nicht, warum daraus ein Engpassmanagementbedarf FOLGT. Der fehlende
+% Zwischenschritt ist das Marktdesign. Dieser Absatz liefert ihn und
+% verankert den Begriff, der in Abschnitt 2.2.1 vertieft wird.
+Verstärkt wird dieses Missverhältnis durch die Architektur des europäischen Strommarktes.
+Der deutsche Strommarkt folgt dem Selbstdispatch-Modell, in dem die Erzeugungs- und Verbrauchsfahrpläne sowie der Einsatz der Anlagen durch die Fahrplanverantwortlichen selbst und damit allein anhand von Preissignalen bestimmt werden \cite[Art.\,2 Abs.\,30]{europaisches_parlament_und_rat_der_eu_verordnung_2019}. 
+Innerhalb einer einheitlichen Gebotszone bildet der Börsenpreis die physikalische Belastung der Übertragungswege nicht ab, sodass marktoptimale Fahrpläne systematisch Leistungsflüsse erzeugen können, die das Netz nicht aufnehmen kann.
+Der \ac{ÜNB} verfügt über keinen Zugriff auf die Fahrplanbildung und kann die entstehende Netzüberlastung erst nachgelagert korrigieren.
+Die Höhe des Engpassmanagementbedarfs ist damit keine rein technische Größe, sondern eine unmittelbare Folge der Entkopplung von marktlicher Fahrplanbildung und physikalischer Netzrestriktion. 
+Abschnitt \ref{sec:market_horizons} greift diese Zuordnung auf und leitet aus ihr ab, dass kurative Stellpotenziale vom \ac{ÜNB} nicht angeordnet, sondern beschafft werden müssen.
+% <<<<< ENDE VORSCHLAG
+
+% >>>>> VORSCHLAG: PROBLEMSTRANG 1 -- MENGENPROBLEM
+% Der bestehende Kostenabsatz und der NEP-Absatz sind hier zu einem
+% Strang zusammengezogen. Der NEP-Absatz ist wie im Hinweis der
+% Vorfassung vorgesehen gekuerzt: die Investitionssumme ist auf einen
+% Nebensatz reduziert, tragend sind die 12,95 TWh und das
+% Minimalkostenargument.
+\paragraph{Das Mengenproblem des Engpassmanagements.}
+Das Ergebnis dieser Entkopplung sind wachsende strukturelle Engpässe im Übertragungsnetz, deren Behebung durch Redispatch-Maßnahmen in den vergangenen Jahren erhebliche und stark schwankende Kosten verursacht hat.
 Die monatlichen Gesamtkosten des Netzengpassmanagements variierten seit Juli 2022 zwischen rund 123\,Mio.\,Euro im Juni 2023 und rund 485\,Mio.\,Euro im Dezember 2024, ein Faktor von etwa vier zwischen dem günstigsten und dem teuersten Monat \cite{bundesnetzagentur_mengen_nodate}.
 Einzelne Extremsituationen können den Jahresverlauf dabei maßgeblich prägen: Im Dezember 2024 entfielen auf einen einzigen Monat rund 16\,\% der Jahresgesamtkosten 2024 \cite{bundesnetzagentur_mengen_nodate}.
+% PRUEFEN / ZAHL ERGAENZEN: Hier fehlt die MENGE als Gegenstueck zur
+% Kostenangabe -- das jaehrliche Redispatch-Volumen in TWh. Nur mit ihr
+% traegt die Bezeichnung "Mengenproblem". Belegbar aus
+% \cite{bundesnetzagentur_monitoringbericht_2026} (Kapitel
+% Netzengpassmanagement) oder den Quartalsberichten. Vorschlag mit
+% einzusetzender Zahl:
+%   Dem entspricht ein Eingriffsvolumen von rund [X]\,\si{TWh} im Jahr
+%   [JAHR] \cite{bundesnetzagentur_monitoringbericht_2026}.
+Entscheidend für die vorliegende Arbeit ist, dass es sich dabei nicht um ein Übergangsphänomen handelt, das mit dem Netzausbau vollständig verschwindet. 
+Der aktuelle \ac{NEP} weist im Referenzszenario~B, das sich an den Zielvorgaben des Bundes-Klimaschutzgesetzes orientiert, trotz Netzausbauinvestitionen von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Redispatchbedarf von 12{,}95\,\si{TWh} aus \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+Dieser Restbedarf ist kein Planungsdefizit, sondern Ergebnis einer bewussten Optimierung: Der \ac{NEP} verfolgt explizit das Ziel, die Minimalkostenkombination aus Netzausbauinvestitionen und verbleibenden Engpassmanagementkosten zu bestimmen, da eine vollständige Vermeidung von Engpassmanagement volkswirtschaftlich nicht sinnvoll ist \cite{bundesnetzagentur_netzentwicklungsplan_2026}. 
+Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen Zielzustands und muss durch Instrumente jenseits des Netzausbaus so günstig wie möglich bedient werden.
+% <<<<< ENDE VORSCHLAG
 
-% HINWEIS: Dieser Absatz darf auf etwa die Hälfte gekürzt werden.
-% Tragend sind die 12,95 TWh Restbedarf und das Minimalkostenargument;
-% die Investitionssumme ist Beiwerk.
-Der aktuelle \ac{NEP} schätzt die erforderlichen Investitionen in den Netzausbau bis 2045 im Referenzszenario~B, das sich an den Zielvorgaben des Bundes-Klimaschutzgesetzes orientiert \cite{bundesumweltministerium_bundes-klimaschutzgesetz_2019}, auf rund 392\,Mrd.\,Euro \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-Selbst nach vollständiger Umsetzung dieser Maßnahmen verbleibt im Referenzszenario~B ein struktureller Redispatchbedarf von 12{,}95\,\si{TWh} im Zieljahr 2045 \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-Der \ac{NEP} verfolgt dabei explizit das Ziel, die Minimalkostenkombination aus Netzausbauinvestitionen und verbleibenden Engpassmanagementkosten zu finden, da eine vollständige Vermeidung von Engpassmanagement volkswirtschaftlich nicht sinnvoll ist \cite{bundesnetzagentur_netzentwicklungsplan_2026}. 
-Der verbleibende Redispatchbedarf stellt damit eine strukturelle Größe dar, die durch ergänzende Maßnahmen jenseits des Netzausbaus adressiert werden muss.
+% >>>>> VORSCHLAG: PROBLEMSTRANG 2 -- KURZFRISTIGKEITSPROBLEM
+% Dieser Absatz ist neu und traegt die zweite Haelfte der Motivation.
+% Er begruendet, weshalb die Arbeit VORHALTUNG statt ARBEIT untersucht,
+% und liefert den Anschluss an das SoC-Argument in Abschnitt 2.3.3.
+% PRUEFEN: \cite{neef_kurzfristige_2026} ist in der literature.bib nur
+% rudimentaer erfasst (Titel, Autor, Jahr -- kein Journal, keine Seiten).
+% Vor Abgabe vervollstaendigen. Die mit dieser Quelle belegte Aussage
+% bitte gegen den Volltext abgleichen; wenn die Quelle den Punkt nicht
+% traegt, ist \cite{lindner_operation_2023} der Rueckfallbeleg.
+\paragraph{Das Kurzfristigkeitsproblem des Engpassmanagements.}
+Neben der Menge verändert sich die zeitliche Struktur der Engpässe.
+Die präventive Betriebsplanung setzt voraus, dass die Netzbelastung des Erfüllungszeitpunkts bereits am Vortag hinreichend genau bekannt ist, denn nur dann lässt sich (N-1)-Sicherheit vorab herstellen.
+Diese Voraussetzung erodiert aus zwei Richtungen gleichzeitig.
+Zum einen wächst mit dem Anteil wetterabhängiger Einspeisung der Prognosefehler, der die tatsächliche Netzbelastung von der geplanten trennt; Engpässe treten dadurch zunehmend erst kurzfristig und an zum Planungszeitpunkt nicht vorhergesehenen Betriebsmitteln auf \cite{neef_kurzfristige_2026, lindner_operation_2023}.
+Zum anderen bleibt die Fahrplanbildung im Selbstdispatch-Modell bis kurz vor Lieferbeginn offen: Der kontinuierliche Intraday-Handel erlaubt Anpassungen bis wenige Minuten vor dem Erfüllungszeitpunkt und kann damit Leistungsflüsse erzeugen, die in der Netzsicherheitsrechnung des Vortages nicht enthalten waren \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Der \ac{ÜNB} kann diese Restunsicherheit präventiv nur auf eine Weise beherrschen, nämlich durch zusätzliche Sicherheitsmargen auf die zulässige Betriebsmittelauslastung.
+Genau darin liegt die Kopplung beider Problemstränge: Wachsende Kurzfristigkeit wird in konservativere Vorauslastung übersetzt, und konservativere Vorauslastung erzeugt zusätzliches präventives Eingriffsvolumen.
+Das Kurzfristigkeitsproblem verschärft damit das Mengenproblem, statt ein davon unabhängiges Phänomen zu sein.
+% <<<<< ENDE VORSCHLAG
 
+% >>>>> VORSCHLAG: UEBERLEITUNG ZUR KURATIVEN SYSTEMFUEHRUNG
+% Der bestehende TATL-Absatz ist erhalten und lediglich um die beiden
+% letzten Saetze erweitert, die ihn explizit an die Problemstraenge
+% anbinden und die Rolle der Batteriespeicher vorbereiten. So beantwortet
+% die Einleitung die Frage "warum ausgerechnet Speicher" im Ansatz, ohne
+% Abschnitt 2.3 vorwegzunehmen.
+\paragraph{Kurative Systemführung als Ansatzpunkt.}
 Die Versorgungssicherheit im operativen Betrieb der \ac{ÜNB} basiert seit den 1960-er Jahren auf präventiver Systemführung, bei der Betriebsmittel bewusst unterhalb ihrer dauerhaften physikalischen Kapazitätsgrenze betrieben werden, um durch ausreichende Sicherheitsmargen die Systemstabilität im Fehlerfall zu gewährleisten.
 Dabei bleibt eine wesentliche physikalische Reserve systematisch ungenutzt. 
 Betriebsmittel besitzen eine transiente Stromtragfähigkeit (\ac{TATL}), die kurzfristig über der Dauerstrombelastbarkeit (\ac{PATL}) liegt und im Zuge einer kurativen Systemführung gezielt genutzt werden kann. 
 Kurative Systemführung verfolgt den Ansatz, Engpässe nicht präventiv zu vermeiden, sondern sie nach ihrem Eintreten durch schnelle, gezielte Gegenmaßnahmen innerhalb der transienten Stromtragfähigkeit zu beheben, ohne die Betriebsmittel thermisch zu gefährden. 
 Auf diese Weise lässt sich nicht nur eine allgemeine Erhöhung der nutzbaren Übertragungskapazitäten erzielen, sondern lassen sich unter Einbindung der verursachenden Erzeuger-, Last- und Speichereinheiten auch Spitzenlastengpässe gezielt und kosteneffizient auflösen.
+Der Ansatz adressiert damit beide Problemstränge zugleich: Die höhere zulässige Vorauslastung senkt das präventive Eingriffsvolumen, und die Verlagerung der Maßnahme in den Fehlerfall ersetzt eine vorab zu treffende Sicherheitsmarge durch eine erst bei Bedarf abgerufene Reaktion.
+Voraussetzung dafür ist allerdings ein Aktor, der innerhalb des \ac{TATL}-Zeitfensters zuverlässig verfügbar ist und dessen Stellpotenzial nicht durch die eigene marktliche Fahrplanbildung aufgebraucht wurde -- eine Anforderung, die im Zeithorizont 2030 vor allem \ac{BESS} erfüllen, die dafür jedoch eine bewusst vorgehaltene und damit vergütungsbedürftige Leistungsreserve bereitstellen müssen.
+% <<<<< ENDE VORSCHLAG
 
 % ---------------------------------------------------------------
-\section{Stand der Forschung und Forschungslücke}
-\label{sec:state_of_research}
-% [Ziel: 0,5 Seiten]
-% BEWUSST KURZ HALTEN. Hier nur benennen, welche Literaturstränge
-% existieren und wo sie enden. Die hergeleitete, belegte Lücke steht
-% in Abschnitt 2.4.3 -- dort folgt sie aus 24 Seiten Argumentation
-% statt behauptet zu werden.
-
-\begin{itemize}
-    \item Technische Validierung der kurativen Systemführung: InnoSys 2030 als Verbundprojekt \cite{innosys_2030_gesamtverbund_innovationen_2021}; Integration kurativer Maßnahmen in das Engpassmanagement \cite{leeuwen_integration_2020}; Redundanzanforderungen \cite{sous_untersuchung_2022, sous_comparison_2025}; Echtbetrieb-Erprobung im KuPilot-Projekt \cite{tennet_tso_gmbh_pilotbetrieb_2025}
-    \item Betriebsführung von Batteriespeichern zwischen Markt und Netz \cite{lindner_operation_2023, porst_betriebskonzepte_2025}; Erlöspotenziale unter verändertem Marktdesign \cite{mahgoub_wie_2025}
-    \item Vergütung von Redispatch-Maßnahmen: optionsbasierte Bewertung entgangener Erlösmöglichkeiten \cite{weber_gutachten_2015}; Übertragbarkeit auf weitere Aktortypen \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}
-    \item Forschungslücke in einem Satz: Kurative Höherauslastung ist technisch validiert und regulatorisch zulässig, für die marktliche Beschaffung kurativer Vorhalteleistung von Batteriespeichern existiert jedoch kein ausgestalteter Mechanismus.
-\end{itemize}
-
-% ---------------------------------------------------------------
-\section{Zielsetzung und Forschungsfragen}
+% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
+% Vorher: \section{Zielsetzung und Forschungsfragen}
+% "Forschungsfragen" ist in ingenieurwissenschaftlichen Arbeiten
+% seltener als "Zielsetzung und Vorgehensweise" oder
+% "Zielsetzung und Aufgabenstellung". Der Abschnitt enthaelt beides:
+% Ziel, Leitfrage mit Teilfragen und Abgrenzung.
+% ALTERNATIVE, falls die Leitfrage im Titel stehen soll:
+%   \section{Zielsetzung und Aufgabenstellung}
+% Falls die Betreuung "Forschungsfragen" ausdruecklich erwartet,
+% diesen Block einfach durch die alte Zeile ersetzen.
+\section{Zielsetzung und Vorgehensweise}
+% <<<<< ENDE VORSCHLAG
 \label{sec:research_questions}
 % [Ziel: 1 Seite]
 
@@ -63,6 +153,23 @@ Die Novellierung des Energiewirtschaftsgesetzes im Rahmen des Redispatch~2.0 sch
 % Netzanschlussvereinbarung besteht nicht. § 17 Abs. 2b EnWG eröffnet
 % dem Netzbetreiber lediglich die Möglichkeit, vgl. BK6-25-325.
 Flexible Netzanschlussvereinbarungen nach §\,17 Abs.\,2b \ac{EnWG} eröffnen zwar die Möglichkeit, die Einspeise- oder Entnahmeleistung in Engpasssituationen zu begrenzen, begründen jedoch weder einen Anspruch des Anlagenbetreibers auf ein solches Angebot noch eine Vergütung des netzdienlichen Beitrags \cite{bundesnetzagentur_beschluss_2026}.
+
+% >>>>> VORSCHLAG: EIN SATZ ZUR EINORDNUNG DES SELBSTDISPATCH
+% Bindet die Zielsetzung an den in 1.1 eingefuehrten Begriff zurueck und
+% macht deutlich, warum die Antwort ein MARKTmechanismus sein muss und
+% keine Betriebspflicht. Das ist die Scharnierstelle der Arbeit.
+Da die Fahrplanhoheit im Selbstdispatch-Modell beim Anlagenbetreiber liegt, lässt sich kurative Verfügbarkeit nicht anordnen, sondern nur über einen Anreiz herstellen, der mindestens den entgangenen Wert der aufgegebenen Vermarktungsoption deckt.
+% <<<<< ENDE VORSCHLAG
+
+% >>>>> VORSCHLAG: VORWAERTSVERWEIS AUF DIE FORSCHUNGSLUECKE
+% Ersetzt den aufgeloesten Abschnitt "Stand der Forschung und
+% Forschungsluecke". Zwei Saetze halten die Luecke in der Einleitung
+% praesent und benennen ihren Herleitungsort, ohne sie hier zu
+% behaupten. Der aufgeloeste Abschnitt hatte genau dieses Problem: Er
+% stellte die Luecke voran, bevor die Argumentation sie tragen konnte.
+Die kurative Höherauslastung ist technisch validiert und regulatorisch zulässig, und für flexible Erzeugung existiert eine etablierte Systematik zur Bewertung entgangener Erlösmöglichkeiten; für die marktliche Beschaffung kurativer Vorhalteleistung von Batteriespeichern ist gleichwohl kein Mechanismus ausgestaltet.
+Kapitel~\ref{ch:state_of_the_art} arbeitet die Grundlagen und den Stand der Technik zu diesen drei Feldern auf und leitet den Forschungsbedarf in Abschnitt \ref{sec:research_gap} aus dieser Argumentation her, statt ihn vorwegzunehmen.
+% <<<<< ENDE VORSCHLAG
 
 Vor diesem Hintergrund untersucht die vorliegende Arbeit im Zeithorizont eines 2030-Szenarios, charakterisiert durch einen hohen Anteil erneuerbarer Energien, fortbestehende Netzausbaurückstände und eine signifikant gestiegene installierte Batteriespeicherkapazität, die Möglichkeiten eines marktbasierten Mechanismus zur Einbindung von Erzeuger-, Last- und Speichereinheiten in das kurative Engpassmanagement. 
 Mit \ac{BESS} als aufstrebenden Strommarktteilnehmern soll der Fokus dabei gezielt auf eine flexible und netzdienliche Einbindung dieser Technologie gelegt werden.
@@ -82,13 +189,27 @@ Zur Beantwortung werden drei Teilfragen untersucht:
     \item Welche Mindestvergütung ergibt sich daraus, und wie verhält sie sich zu der Vergütung, die nach geltender Festlegung zu leisten wäre?
 \end{enumerate}
 
+% >>>>> VORSCHLAG: ABGRENZUNG
+% Eine explizite Abgrenzung fehlt bislang und wird in der Verteidigung
+% mit hoher Wahrscheinlichkeit gefragt. Vier Saetze genuegen; die Punkte
+% werden in Kapitel 5 als Limitationen und in Kapitel 6 als Ausblick
+% wieder aufgegriffen.
+Die Arbeit grenzt sich in vier Punkten ab.
+Sie betrachtet die kurative Höherauslastung und nicht den kurativen Redispatch ohne vorgelagerte Höherauslastung.
+Sie nimmt die Perspektive einer einzelnen Anlage ein und bestimmt deren Mindestvergütung, ohne die Marktergebnisse eines Wettbewerbs mehrerer Anbieter oder die netzweite Beschaffungsmenge zu modellieren.
+Sie unterstellt die netztechnische Wirksamkeit der Maßnahme als gegeben, da die Bestimmung wirksamer Aktoren an einem Netzknoten Gegenstand der Netzsicherheitsrechnung des \ac{ÜNB} und nicht dieser Arbeit ist.
+Und sie behandelt die Ausgestaltung der für einen Echtbetrieb erforderlichen Redundanz in Fehlerdetektion und Maßnahmenabruf nicht, sondern ordnet sie im Ausblick ein.
+% <<<<< ENDE VORSCHLAG
+
 % ---------------------------------------------------------------
 \section{Aufbau der Arbeit}
 \label{sec:structure}
 % [Ziel: 0,5 Seiten]
 
-Kapitel~\ref{ch:curative_system} legt die Grundlagen der kurativen Systemführung dar, arbeitet die Grenzen der bestehenden marktlichen Grundlage heraus und begründet die Auswahl von Batteriespeichern als kurativem Aktor. 
-Daraus werden die Anforderungen an einen kurativen Marktmechanismus abgeleitet.
+% >>>>> VORSCHLAG: AN DEN NEUEN KAPITELTITEL ANGEPASST
+Kapitel~\ref{ch:state_of_the_art} stellt die Grundlagen und den Stand der Technik dar: Es legt die Grundlagen der kurativen Systemführung, ordnet die marktlichen Rahmenbedingungen des Engpassmanagements ein und begründet die Auswahl von Batteriespeichern als kurativem Aktor. 
+Daraus werden die Anforderungen an einen kurativen Marktmechanismus abgeleitet und der Forschungsbedarf belegt.
+% <<<<< ENDE VORSCHLAG
 Kapitel~\ref{ch:design_model} entwirft auf dieser Basis das Marktprodukt und beschreibt die Modellierung der Fahrplanoptimierung.
 Kapitel~\ref{ch:results} stellt die Ergebnisse der Optimierung dar, Kapitel~\ref{ch:discussion} ordnet sie in den regulatorischen Rahmen ein und würdigt die Modellannahmen kritisch. 
 Kapitel~\ref{ch:conc} fasst die Ergebnisse entlang der Forschungsfragen zusammen und gibt einen Ausblick auf weiteren Forschungsbedarf.
