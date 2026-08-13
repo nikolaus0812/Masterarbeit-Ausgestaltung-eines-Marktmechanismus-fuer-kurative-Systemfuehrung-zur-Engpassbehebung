@@ -30,6 +30,16 @@ from svglib.svglib import svg2rlg
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def is_drawio(svg: Path) -> bool:
+    """draw.io-SVG erkennen und diesem Skript entziehen.
+
+    Ihr Text steckt in foreignObject-Elementen, die svglib nicht kennt. Das
+    Ergebnis waere eine PDF mit abgeschnittenen oder fehlenden
+    Beschriftungen. Diese Dateien gehoeren zu tools/drawio2pdf.py.
+    """
+    return "&lt;mxfile" in svg.read_text(encoding="utf-8", errors="ignore")[:4096]
+
+
 def made_here(pdf: Path) -> bool:
     """Stammt diese PDF aus diesem Skript?
 
@@ -53,6 +63,9 @@ def made_here(pdf: Path) -> bool:
 def convert(svg: Path) -> bool:
     """Konvertiert eine SVG-Datei. Gibt True zurueck, wenn geschrieben wurde."""
     pdf = svg.with_suffix(".pdf")
+    if is_drawio(svg):
+        print(f"  draw.io   {svg.relative_to(ROOT)} -- fuer tools/drawio2pdf.py")
+        return False
     if pdf.exists() and pdf.stat().st_mtime >= svg.stat().st_mtime:
         print(f"  aktuell   {svg.relative_to(ROOT)}")
         return False
