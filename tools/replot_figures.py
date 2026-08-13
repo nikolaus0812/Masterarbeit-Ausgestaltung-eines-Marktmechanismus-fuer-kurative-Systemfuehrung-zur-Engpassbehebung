@@ -58,16 +58,23 @@ OUT_DIR = ROOT / "figures" / "chapter_1"
 
 TEXTWIDTH_PT = 455.24411   # \textwidth, siehe main.log
 TEXTHEIGHT_PT = 665.38307  # \textheight
-TARGET_HEIGHT_PT = 215.0   # angestrebte Hoehe der Abbildung auf der Seite
-MAX_HEIGHT_PT = 228.0      # ein Drittel der Satzspiegelhoehe
+# Die Hoehe wird nicht mehr erzwungen. Eine senkrechte Achsenbeschriftung
+# braucht so viel Achsenhoehe, wie ihr Text lang ist; presst man die
+# Abbildung auf eine Zielhoehe, wird sie wieder abgeschnitten. Nachgefuehrt
+# wird daher nur die Breite, die Hoehe ergibt sich aus figsize.
+MAX_HEIGHT_PT = 285.0      # Hinweis, wenn es zu hoch wird
 
 # svglib rechnet px nach pt mit 72/96 um. Siehe tools/svg_thesis_style.py.
 PX_TO_PT = 0.75
 
 # Zielgroessen in pt auf der fertigen Seite.
 PT_TITLE = 14.0
-PT_TEXT = 11.0     # wie der Fliesstext
-PT_NOTE = 9.0      # Fussnote unter dem NEP-Diagramm
+# Im fertigen main.pdf gemessen: Fliesstext 10,91 pt, Bildunterschrift
+# 9,96 pt. Die Beschriftung im Diagramm orientiert sich an der
+# Bildunterschrift, die unmittelbar darunter steht -- gegen sie wirkte
+# Fliesstextgroesse zu gross.
+PT_TEXT = 10.0
+PT_NOTE = 8.5      # Fussnote unter dem NEP-Diagramm
 
 # Schriftgroesse der Folienfassung -> Zielgroesse. 16 ist der Titel, 8 die
 # Fussnote, alles dazwischen ist Beschriftung im Diagramm.
@@ -77,12 +84,12 @@ TARGETS = {16.0: PT_TITLE, 14.0: PT_TEXT, 11.0: PT_TEXT,
 FIGURES = {
     "engpassmanagement_nep.svg": dict(
         mode="patch", fn="plot_engpassmanagement_nep",
-        figsize=(6.3, 3.0), ncol=2, legend_y=-0.52,
+        figsize=(6.3, 3.6), ncol=2, legend_y=-0.30,
         title="Engpassmanagementbedarf im NEP25",
         ylabel="Engpassmanagementbedarf in TWh",
     ),
     "redispatch_jahresbedarf_2020_2025.svg": dict(
-        mode="own", figsize=(6.3, 3.0), ncol=1, legend_y=-0.22,
+        mode="own", figsize=(6.3, 3.6), ncol=2, legend_y=-0.20,
         title="Redispatch 2020 bis 2025",
         ylabel="Engpassmanagementbedarf in TWh",
     ),
@@ -121,16 +128,11 @@ def strip_source(fig) -> None:
 def place_head(ax, title: str, ylabel: str, conv) -> None:
     """Titel und Achsenbeschriftung ueber die Achse setzen.
 
-    Die Achsenbeschriftung laeuft senkrecht ueber die volle Bildhoehe und ist
-    laenger, als das flache Bild hoch ist. Sie steht deshalb waagerecht
-    linksbuendig unmittelbar ueber der Achse, der Titel darueber.
+    Die Achsenbeschriftung steht senkrecht neben der Achse. Sie ist lang,
+    die Abbildung braucht deshalb genug Hoehe -- siehe figsize in FIGURES.
     """
-    ax.set_ylabel("")
-    # Der Abstand muss die Achsenbeschriftung aufnehmen, die darunter liegt.
-    ax.set_title(title, fontsize=conv(16), pad=conv(14) * 1.9)
-    ax.annotate(ylabel, xy=(0.0, 1.0), xycoords="axes fraction",
-                xytext=(0, 4), textcoords="offset points",
-                ha="left", va="bottom", fontsize=conv(14))
+    ax.set_ylabel(ylabel, fontsize=conv(14))
+    ax.set_title(title, fontsize=conv(16), pad=conv(14) * 0.8)
 
 
 def tuck_notes(fig, ax) -> None:
@@ -158,7 +160,7 @@ def polish_nep(fig, cfg, conv) -> None:
     tuck_notes(fig, ax)
 
 
-def draw_redispatch(pp, plt, MaxNLocator, cfg, conv, figsize, out_dir):
+def draw_redispatch(pp, plt, MaxNLocator, Line2D, cfg, conv, figsize, out_dir):
     """Jahresredispatch als gestapelter Balken ueber der Achse.
 
     Ein Balken je Jahr, von unten nach oben Hochfahren, Runterfahren
@@ -170,9 +172,13 @@ def draw_redispatch(pp, plt, MaxNLocator, cfg, conv, figsize, out_dir):
     d = pp._redispatch_jahresmengen(2020, 2025)
     years = list(d.index)
     x = range(len(years))
+    # Der dritte Eintrag traegt kein "Runterfahren:" mehr. Beide Eintraege
+    # stehen in derselben Legendenzeile, das Wort gilt damit fuer beide.
+    # Gemessen: mit doppeltem Praefix ist die Legendenzeile 531 pt breit und
+    # passt nicht in die Textbreite von 455 pt, ohne 434 pt.
     parts = [("hoch", pp.C_HOCH_B, "Hochfahren"),
              ("ee", pp.C_EE, "Runterfahren: Wind + Photovoltaik"),
-             ("konv_runter", pp.C_RUNT_B, "Runterfahren: konventionell / sonstige")]
+             ("konv_runter", pp.C_RUNT_B, "konventionell / sonstige")]
     ges = d["gesamt"].to_numpy(float)
 
     with plt.rc_context(pp.PP):
@@ -208,14 +214,20 @@ def draw_redispatch(pp, plt, MaxNLocator, cfg, conv, figsize, out_dir):
         ax.set_xticklabels([str(y) for y in years], fontsize=conv(14))
         ax.tick_params(axis="y", labelsize=conv(14))
         place_head(ax, cfg["title"], cfg["ylabel"], conv)
-        # Wie _legend_below in plot.py, aber mit kompakteren Symbolen und
-        # engerem Spaltenabstand: die Beschriftungen sind lang, und bei 11 pt
-        # passen zwei Spalten sonst nicht in die Textbreite. Die Hilfsfunktion
-        # des Analyse-Repositorys nimmt diese Argumente nicht entgegen.
-        ax.legend(loc="upper center", bbox_to_anchor=(0.5, cfg["legend_y"]),
-                  ncol=cfg["ncol"], fontsize=conv(14), framealpha=0.0,
-                  columnspacing=1.0, handlelength=1.1, handletextpad=0.5,
-                  borderpad=0.2)
+        # Zwei Zeilen: oben Hochfahren allein, unten beide Runterfahren
+        # nebeneinander. matplotlib fuellt SPALTENWEISE, nicht zeilenweise --
+        # bei zwei Spalten landen die Eintraege 0 und 1 in der linken, 2 und 3
+        # in der rechten Spalte. Der Leereintrag muss deshalb an dritter
+        # Stelle stehen, damit er oben rechts zu liegen kommt.
+        # Kompakte Symbole und enger Spaltenabstand sind noetig, damit die
+        # beiden langen Beschriftungen nebeneinander in die Textbreite passen.
+        h, l = ax.get_legend_handles_labels()
+        blank = Line2D([], [], linestyle="none")
+        ax.legend([h[0], h[1], blank, h[2]], [l[0], l[1], " ", l[2]],
+                  loc="upper center", bbox_to_anchor=(0.5, cfg["legend_y"]),
+                  ncol=2, fontsize=conv(14), framealpha=0.0,
+                  columnspacing=0.6, handlelength=0.9, handletextpad=0.35,
+                  borderpad=0.1)
         fig.tight_layout()
     return pp._save_pp(fig, Path(out_dir), "redispatch_jahresbedarf_2020_2025.png")
 
@@ -232,6 +244,7 @@ def main() -> int:
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
         from matplotlib.ticker import MaxNLocator
+        from matplotlib.lines import Line2D
         from matplotlib.axes import Axes
         from matplotlib.figure import Figure
         from analysen.helpers import praesentation_plots as pp
@@ -263,7 +276,7 @@ def main() -> int:
                            "xtick.labelsize", "ytick.labelsize", "legend.fontsize")})
             try:
                 if cfg["mode"] == "own":
-                    draw_redispatch(pp, plt, MaxNLocator, cfg, conv, (fig_w, fig_h), OUT_DIR)
+                    draw_redispatch(pp, plt, MaxNLocator, Line2D, cfg, conv, (fig_w, fig_h), OUT_DIR)
                 else:
                     plt.subplots = (lambda *a, _fs=(fig_w, fig_h), **k:
                                     orig["subplots"](*a, **{**k, "figsize": _fs}))
@@ -297,11 +310,11 @@ def main() -> int:
             w, h = svg_size(svg)
             # Bei fester Schrift sind die Raender konstant; die Differenz laesst
             # sich direkt auf die figsize addieren.
-            dw, dh = TEXTWIDTH_PT - w, TARGET_HEIGHT_PT - h
-            if abs(dw) < 1.0 and abs(dh) < 1.0:
+            dw = TEXTWIDTH_PT - w
+            if abs(dw) < 1.0:
                 break
-            fig_w, fig_h = fig_w + dw / 72.0, fig_h + dh / 72.0
-            if fig_w < 1.0 or fig_h < 0.8:
+            fig_w = fig_w + dw / 72.0
+            if fig_w < 1.0:
                 print(f"  FEHLER  {name}: Breite laesst sich nicht auf "
                       f"{TEXTWIDTH_PT:.0f} pt bringen, gemessen {w:.0f} pt.")
                 print("          Untergrenze durch Legende oder Achsen"
