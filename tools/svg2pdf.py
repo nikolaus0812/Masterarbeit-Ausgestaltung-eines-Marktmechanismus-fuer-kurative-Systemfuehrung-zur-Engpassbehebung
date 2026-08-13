@@ -30,11 +30,39 @@ from svglib.svglib import svg2rlg
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def made_here(pdf: Path) -> bool:
+    """Stammt diese PDF aus diesem Skript?
+
+    Hintergrund: Nicht jede SVG im Repository soll ueber svglib laufen. Die
+    Abbildungen in figures/chapter_2 sind draw.io-Exporte; deren Text steckt
+    in foreignObject-Elementen, die svglib nicht kennt. Konvertiert man sie
+    trotzdem, entsteht eine PDF mit abgeschnittenen Beschriftungen und der
+    eingebrannten Meldung "Text is not SVG - cannot display". Genau das ist
+    einmal passiert und hat die vom Autor exportierten PDF ueberschrieben.
+
+    Deshalb wird nur ueberschrieben, was reportlab selbst erzeugt hat. Das
+    steht im Feld /Producer der PDF.
+    """
+    try:
+        head = pdf.read_bytes()[:4096]
+    except OSError:
+        return False
+    return b"ReportLab" in head
+
+
 def convert(svg: Path) -> bool:
     """Konvertiert eine SVG-Datei. Gibt True zurueck, wenn geschrieben wurde."""
     pdf = svg.with_suffix(".pdf")
     if pdf.exists() and pdf.stat().st_mtime >= svg.stat().st_mtime:
         print(f"  aktuell   {svg.relative_to(ROOT)}")
+        return False
+    if pdf.exists() and not made_here(pdf):
+        print(f"  UEBERSPRUNGEN  {pdf.relative_to(ROOT)}")
+        print("      Diese PDF stammt nicht aus diesem Skript und wird nicht")
+        print("      ueberschrieben. Sie wurde vermutlich direkt aus einem")
+        print("      Zeichenprogramm exportiert und ist dann besser als alles,")
+        print("      was svglib aus der SVG machen kann. Zum Ersetzen die PDF")
+        print("      von Hand loeschen.")
         return False
     drawing = svg2rlg(str(svg))
     if drawing is None:
