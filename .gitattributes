@@ -1,0 +1,19 @@
+# core.autocrlf ist auf dieser Maschine true. Ohne die folgenden Regeln
+# schreibt Git beim Auschecken Zeilenenden in Binaerdateien um und macht
+# damit PDF und Bilder unbrauchbar.
+
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.eps  binary
+*.ttf  binary
+*.otf  binary
+
+# Quelltext einheitlich mit LF im Repository, plattformueblich im
+# Arbeitsverzeichnis.
+*.tex  text
+*.bib  text
+*.py   text
+*.md   text
+*.svg  text
