@@ -14,3 +14,6 @@
 *.fdb_latexmk
 main.pdf
 *.pdfsync
+
+# Abgelegte Volltexte der zitierten Quellen -- nur lokal, nicht versioniert
+literature/PDFs/
