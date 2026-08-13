@@ -102,20 +102,22 @@ Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen 
 % figures/chapter_1/ kopiert. SVG-Master liegen daneben.
 %
 % Eingebunden ist das PDF, erzeugt aus dem SVG. Vektorgrafik, die
-% Beschriftungen bleiben echter Text. Nach einer Neuerzeugung der SVG in
-% bess_dispatch_optimization sind zwei Schritte noetig:
-%   python tools/svg_thesis_style.py   % Helvetica, Schriftgroessen 7-10 pt
-%   python tools/svg2pdf.py            % SVG -> PDF
-% Die Quell-SVG sind fuer Folien gebaut (Arial, Grundgroesse 14). Ohne den
-% ersten Schritt waeren die Achsenbeschriftungen groesser als der
-% Fliesstext.
+% Beschriftungen bleiben echter Text, 455 x 195 pt -- also volle Textbreite
+% bei 29 Prozent der Satzspiegelhoehe. Die Quellfassung in
+% bess_dispatch_optimization ist fuer Folien gebaut (Arial, Grundgroesse 14,
+% fast quadratisch); drei Schritte machen daraus die Fassung fuer die Arbeit:
+%   "C:/ProgramData/anaconda3/python.exe" tools/replot_figures.py
+%   python tools/svg_thesis_style.py
+%   python tools/svg2pdf.py
+% Der erste Schritt braucht ein Python mit matplotlib. Details in den
+% Kopfkommentaren der Skripte.
 %
-% SEITENBUDGET: Bei width=\textwidth ist jede Abbildung rund 14 cm hoch und
-% belegt gut 60 Prozent der Satzspiegelhoehe; beide stehen derzeit auf je
-% einer eigenen Seite. Kapitel 1 ist auf 4,5 Seiten veranschlagt. Falls das
-% zu viel ist: die Diagramme im Plotskript mit breiterem Seitenverhaeltnis
-% neu erzeugen (etwa figsize=(9, 5) statt quadratisch), nicht hier
-% herunterskalieren -- sonst schrumpft die Schrift wieder mit.
+% GESTALTUNG, vom flachen Format erzwungen und bei Bedarf umkehrbar:
+%   - Der Titel im Bild ist entfernt. Er wiederholte die \caption und
+%     belegte den Platz, den jetzt die Achsenbeschriftung braucht.
+%   - Die Achsenbeschriftung steht waagerecht ueber der Achse statt
+%     senkrecht daneben. Sie ist laenger, als das Bild hoch ist.
+%   Beides in tools/replot_figures.py, Funktion polish().
 %
 % PLATZHALTER, vor Abgabe zu pruefen:
 %   (1) QUELLENANGABE: Beide Grafiken tragen ihre Quelle bereits im Bild
