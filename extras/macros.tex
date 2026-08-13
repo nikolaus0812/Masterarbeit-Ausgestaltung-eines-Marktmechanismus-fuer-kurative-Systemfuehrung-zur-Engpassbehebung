@@ -1,0 +1,20 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                Eigene Makros dieser Masterarbeit                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Diese Datei sammelt die Makros des Autors. Die Dateien des
+%% IAEW-Templates (header.tex, personal_settings.tex) bleiben davon
+%% unberuehrt. Eingebunden wird sie in main.tex nach extras/header.tex.
+%% TikZ wird bereits in extras/header.tex geladen (\usepackage{pgf, tikz}),
+%% ein zusaetzliches \usepackage ist daher nicht noetig.
+
+% Platzhalter fuer noch nicht erstellte Abbildungen.
+% Argument: Beschreibung des geplanten Bildinhalts.
+% Vor Abgabe muessen alle Vorkommen durch \includegraphics ersetzt sein.
+\newcommand{\platzhalterabb}[1]{%
+  \begin{tikzpicture}
+    \node[draw, dashed, line width=1pt, rounded corners,
+          inner sep=1.5em, text width=0.82\textwidth, align=left]
+      {\textbf{[PLATZHALTER ABBILDUNG]}\par\vspace{0.6em}\small #1};
+  \end{tikzpicture}%
+}
