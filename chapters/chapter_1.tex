@@ -112,12 +112,18 @@ Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen 
 % Der erste Schritt braucht ein Python mit matplotlib. Details in den
 % Kopfkommentaren der Skripte.
 %
-% GESTALTUNG, vom flachen Format erzwungen und bei Bedarf umkehrbar:
-%   - Der Titel im Bild ist entfernt. Er wiederholte die \caption und
-%     belegte den Platz, den jetzt die Achsenbeschriftung braucht.
-%   - Die Achsenbeschriftung steht waagerecht ueber der Achse statt
-%     senkrecht daneben. Sie ist laenger, als das Bild hoch ist.
-%   Beides in tools/replot_figures.py, Funktion polish().
+% GESTALTUNG, alles in tools/replot_figures.py und dort umkehrbar:
+%   - Titel 14 pt, alle uebrigen Beschriftungen 11 pt wie der Fliesstext.
+%     Ausnahme ist die Fussnote unter dem NEP-Diagramm mit 9 pt.
+%   - Die Achsenbeschriftung steht waagerecht unter dem Titel statt
+%     senkrecht neben der Achse. Sie ist laenger, als das Bild hoch ist.
+%   - Die Quellenzeilen sind aus beiden Grafiken entfernt. Damit fehlt die
+%     Herkunftsangabe im Bild; sie gehoert jetzt in die \caption oder in
+%     ein \cite. PRUEFEN vor Abgabe.
+%   - Der Jahresbedarf ist ein gestapelter Balken ueber der Achse, nicht
+%     mehr das Spiegelbalkendiagramm der Folienfassung. Damit steht die
+%     Richtung nur noch in der Legende, nicht mehr in der
+%     Achsenbeschriftung.
 %
 % PLATZHALTER, vor Abgabe zu pruefen:
 %   (1) QUELLENANGABE: Beide Grafiken tragen ihre Quelle bereits im Bild
