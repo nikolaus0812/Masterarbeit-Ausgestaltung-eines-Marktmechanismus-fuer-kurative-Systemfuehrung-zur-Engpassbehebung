@@ -101,16 +101,22 @@ Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen 
 % (results/einzellauf/andere_analysen/redispatch) und sind nach
 % figures/chapter_1/ kopiert. SVG-Master liegen daneben.
 %
-% PLATZHALTER, vor Abgabe zu ersetzen:
-%   (1) Eingebunden ist das PNG, weil auf diesem System kein SVG-Konverter
-%       installiert ist (kein Inkscape, keine Python-SVG-Bibliothek).
-%       Rund 245 dpi bei 0,75 Textbreite -- fuer den Entwurf ausreichend,
-%       fuer den Druck bitte als PDF aus dem Plotskript exportieren
-%       (plt.savefig(..., format="pdf")) und \includegraphics umstellen.
-%   (2) QUELLENANGABE FEHLT in beiden Captions. Ueblich waere
-%       "Eigene Darstellung auf Basis von \cite{...}". Welche Datenbasis
-%       hinter den Auswertungen steht, geht aus den Grafiken nicht hervor;
-%       das kann nur der Autor ergaenzen.
+% Eingebunden ist das PDF, erzeugt aus dem SVG mit tools/svg2pdf.py
+% (svglib + reportlab). Vektorgrafik, die Beschriftungen bleiben echter
+% Text. Nach einer Neuerzeugung der SVG genuegt ein Aufruf von
+%   python tools/svg2pdf.py
+%
+% PLATZHALTER, vor Abgabe zu pruefen:
+%   (1) QUELLENANGABE: Beide Grafiken tragen ihre Quelle bereits im Bild
+%       ("Quelle: BNetzA -- smard.de" bzw. "Quelle: Uebertragungsnetz-
+%       betreiber (NEP 2037/2045, 2. Entwurf 2025)"). Ob das genuegt oder
+%       ob die Caption zusaetzlich \cite{bundesnetzagentur_mengen_nodate}
+%       bzw. \cite{bundesnetzagentur_netzentwicklungsplan_2026} tragen
+%       soll, entscheidet der Autor.
+%   (2) ABWEICHUNG ZWISCHEN ABBILDUNG UND TEXT: Der Fliesstext nennt fuer
+%       das Referenzszenario B 2045 einen Wert von 12,95 TWh, die
+%       Abbildung beschriftet B 2045 mit 13,0 und A 2045 mit 12,9. Vor
+%       Abgabe angleichen.
 %   (3) Beide Abbildungen sind im Fliesstext noch nicht referenziert. Die
 %       bestehenden Saetze sind bewusst unveraendert geblieben. Vorschlag
 %       fuer die Verweise, vom Autor einzusetzen:
@@ -124,14 +130,14 @@ Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen 
 %       uebernommen -- das ist eine tragende Angabe und gehoert belegt.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.png}
+    \includegraphics[width=0.75\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
     \caption{Jährliches Redispatch-Volumen 2020 bis 2025, aufgeteilt nach hochgefahrener und heruntergeregelter Energie}
     \label{fig:redispatch_jahresbedarf}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/chapter_1/engpassmanagement_nep.png}
+    \includegraphics[width=0.75\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
     \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan}
     \label{fig:engpassmanagement_nep}
 \end{figure}
