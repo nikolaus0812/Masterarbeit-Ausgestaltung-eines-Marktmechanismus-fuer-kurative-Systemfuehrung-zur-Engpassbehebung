@@ -101,10 +101,21 @@ Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen 
 % (results/einzellauf/andere_analysen/redispatch) und sind nach
 % figures/chapter_1/ kopiert. SVG-Master liegen daneben.
 %
-% Eingebunden ist das PDF, erzeugt aus dem SVG mit tools/svg2pdf.py
-% (svglib + reportlab). Vektorgrafik, die Beschriftungen bleiben echter
-% Text. Nach einer Neuerzeugung der SVG genuegt ein Aufruf von
-%   python tools/svg2pdf.py
+% Eingebunden ist das PDF, erzeugt aus dem SVG. Vektorgrafik, die
+% Beschriftungen bleiben echter Text. Nach einer Neuerzeugung der SVG in
+% bess_dispatch_optimization sind zwei Schritte noetig:
+%   python tools/svg_thesis_style.py   % Helvetica, Schriftgroessen 7-10 pt
+%   python tools/svg2pdf.py            % SVG -> PDF
+% Die Quell-SVG sind fuer Folien gebaut (Arial, Grundgroesse 14). Ohne den
+% ersten Schritt waeren die Achsenbeschriftungen groesser als der
+% Fliesstext.
+%
+% SEITENBUDGET: Bei width=\textwidth ist jede Abbildung rund 14 cm hoch und
+% belegt gut 60 Prozent der Satzspiegelhoehe; beide stehen derzeit auf je
+% einer eigenen Seite. Kapitel 1 ist auf 4,5 Seiten veranschlagt. Falls das
+% zu viel ist: die Diagramme im Plotskript mit breiterem Seitenverhaeltnis
+% neu erzeugen (etwa figsize=(9, 5) statt quadratisch), nicht hier
+% herunterskalieren -- sonst schrumpft die Schrift wieder mit.
 %
 % PLATZHALTER, vor Abgabe zu pruefen:
 %   (1) QUELLENANGABE: Beide Grafiken tragen ihre Quelle bereits im Bild
@@ -130,14 +141,14 @@ Ein dauerhaft verbleibendes Eingriffsvolumen ist damit Teil des kostenoptimalen 
 %       uebernommen -- das ist eine tragende Angabe und gehoert belegt.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
     \caption{Jährliches Redispatch-Volumen 2020 bis 2025, aufgeteilt nach hochgefahrener und heruntergeregelter Energie}
     \label{fig:redispatch_jahresbedarf}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.75\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
     \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan}
     \label{fig:engpassmanagement_nep}
 \end{figure}
