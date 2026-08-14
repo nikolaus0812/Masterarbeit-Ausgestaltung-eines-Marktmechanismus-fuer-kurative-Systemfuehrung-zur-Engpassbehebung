@@ -17,3 +17,6 @@ main.pdf
 
 # Abgelegte Volltexte der zitierten Quellen -- nur lokal, nicht versioniert
 literature/PDFs/
+
+# Python-Bytecode der Hilfsskripte
+tools/__pycache__/
