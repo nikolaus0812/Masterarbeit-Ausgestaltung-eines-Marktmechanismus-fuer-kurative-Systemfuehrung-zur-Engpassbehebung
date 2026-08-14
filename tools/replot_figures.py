@@ -203,10 +203,15 @@ def draw_redispatch(pp, plt, MaxNLocator, Line2D, cfg, conv, figsize, out_dir):
                             va="center", fontsize=conv(11), color="white",
                             zorder=5)
             base = [b + s for b, s in zip(base, v)]
+        # Die Summenzeile steht ueber den Balken und damit vor den
+        # Gitterlinien. Ein deckender Hintergrund verhindert, dass eine
+        # Gitterlinie durch die Ziffern laeuft.
         for i, g in enumerate(ges):
-            ax.annotate(f"{g:.1f}", xy=(i, g), xytext=(0, 3),
+            ax.annotate(f"{g:.1f}", xy=(i, g), xytext=(0, 4),
                         textcoords="offset points", ha="center", va="bottom",
-                        fontsize=conv(11), color=pp.C_GES)
+                        fontsize=conv(11), color=pp.C_GES, zorder=6,
+                        bbox=dict(facecolor="white", edgecolor="none",
+                                  pad=0.8))
 
         # Bei flacher Achse setzt matplotlib sonst nur zwei Teilstriche.
         ax.yaxis.set_major_locator(MaxNLocator(nbins=4, integer=True))

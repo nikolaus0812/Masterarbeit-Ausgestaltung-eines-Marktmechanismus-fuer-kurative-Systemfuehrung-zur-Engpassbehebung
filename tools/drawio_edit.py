@@ -77,7 +77,9 @@ def scale_geometry(xml: str, *, fy: float = 1.0, fx: float = 1.0,
 
 def write_and_export(svg: Path, xml: str) -> None:
     """mxfile als .drawio ablegen und PDF sowie SVG neu exportieren."""
-    tmp = svg.with_suffix(".drawio")
+    # Bewusst NICHT svg.with_suffix(".drawio"): unter diesem Namen liegt die
+    # unveraenderte Quelle. Das finally unten wuerde sie loeschen.
+    tmp = svg.with_name(svg.stem + ".export.tmp.drawio")
     tmp.write_text(xml, encoding="utf-8", newline="\n")
     try:
         for fmt, out in (("pdf", svg.with_suffix(".pdf")), ("svg", svg)):

@@ -49,7 +49,7 @@ PT_TEXT, PT_TITLE = 9.95, 13.93
 PT_PER_UNIT = {"curative_process": 10.70 / 18,
                "preventiv_vs._curative_redispatch": 9.69 / 17.2}
 BASE_FONT = {"curative_process": 12, "preventiv_vs._curative_redispatch": 14}
-VSCALE = {"curative_process": 1.6, "preventiv_vs._curative_redispatch": 1.2}
+VSCALE = {"curative_process": 1.85, "preventiv_vs._curative_redispatch": 1.2}
 
 TITLE = {
     "curative_process": ("Prozesskette einer kurativen Maßnahme", 50, 780, -12),
@@ -58,7 +58,18 @@ TITLE = {
 }
 
 BOX_FROM, BOX_TO = 130, 150
-BREAKS = {"Netzsicherheitrechnung": "Netzsicherheits-&#10;rechnung"}
+BREAKS = {
+    "Netzsicherheitrechnung": "Netzsicherheits-&#10;rechnung",
+    # Zweizeilig umbrochen reichte die Zeile bis an den Kastenrand.
+    "Abruf = Anpassung Leistungspunkt": "Abruf =&#10;Anpassung&#10;Leistungspunkt",
+}
+
+# Die beiden Achsenbeschriftungen standen zweizeilig. Einzeilig gelesen sind
+# sie ruhiger; der Platz ist da, sobald die Kaesten breit genug sind.
+ONELINE = {
+    'value="Zeit&#xa; in h"': 'value="Zeit in h"',
+    'value="Belastung &#xa;in A"': 'value="Belastung in A"',
+}
 
 
 def font_factor(name: str) -> float:
@@ -127,17 +138,57 @@ LEGEND = {
     '<mxPoint x="797" y="78" as="targetPoint" />':
         '<mxPoint x="444" y="269" as="targetPoint" />',
     # TATL und PATL standen bei x = 70 bis 130 und ragten damit ueber die
-    # Hochachse bei x = 120. Jetzt enden sie zehn Einheiten davor.
-    'x="70" y="80" width="60" height="40"': 'x="25" y="80" width="85" height="40"',
-    'x="70" y="120" width="60" height="40"': 'x="25" y="120" width="85" height="40"',
+    # Hochachse bei x = 120. Jetzt enden sie deutlich davor.
+    'x="70" y="80" width="60" height="40"': 'x="18" y="80" width="84" height="40"',
+    'x="70" y="120" width="60" height="40"': 'x="18" y="120" width="84" height="40"',
+    # "Zeit in h" einzeilig: der Kasten war mit 60 px zu schmal dafuer und
+    # sass zudem direkt am Pfeilende der Zeitachse.
+    'x="750" y="220" width="60" height="40"':
+        'x="690" y="232" width="120" height="30"',
+    # "Rückführung N-1" sass bei x = 570 bis 680 und wurde von der
+    # Ereignislinie bei x = 610 durchschnitten. Jetzt rechts davon.
+    'x="570" y="180" width="110" height="30"':
+        'x="628" y="178" width="140" height="30"',
 }
+
+# Die senkrechten Ereignislinien liefen bis y = 40 hinauf und schnitten
+# dort durch die Beschriftungen, die sie erklaeren. Sie enden jetzt
+# unterhalb davon; die Beschriftung steht frei darueber.
+# Die Marken bei x = 290 und die gestrichelte TATL-Linie sind in draw.io an
+# ihre Beschriftungen angebunden: die Linie endet an der Zelle, die
+# Beschriftung unterbricht sie also. Diese Zellen duerfen weder verschoben
+# noch ihre Endpunkte veraendert werden -- die Linie folgt sonst mit und
+# laeuft quer durch das Bild. Nur die freien Marken werden gekuerzt.
+MARKER_TOPS = [
+    ('<mxPoint x="440" y="40" as="targetPoint" />',
+     '<mxPoint x="440" y="102" as="targetPoint" />'),
+    ('<mxPoint x="560" y="40" as="targetPoint" />',
+     '<mxPoint x="560" y="124" as="targetPoint" />'),
+    ('<mxPoint x="610" y="40" as="targetPoint" />',
+     '<mxPoint x="610" y="124" as="targetPoint" />'),
+]
 
 # Die Achsenbeschriftung der Hochachse steht hochkant.
 YLABEL_OLD = 'x="50" y="35" width="60" height="40"'
-YLABEL_NEW = 'x="-85" y="115" width="160" height="30"'
+YLABEL_NEW = 'x="-88" y="116" width="180" height="28"'
 
 
 def edit_belastung(xml: str) -> str:
+    # "Kurative Reaktionszeit" ist die Beschriftung eines Massbandes und muss
+    # zwischen seinen Pfeilen stehen. Dort kreuzt sie zwangslaeufig die
+    # Ereignislinie. Ein weiss hinterlegter Kasten unterbricht die Linie --
+    # so wird eine Masslinie ueblicherweise beschriftet.
+    xml = xml.replace(
+        'value="Kurative Reaktionszeit" style="text;whiteSpace=wrap;'
+        'strokeColor=none;fillColor=default;',
+        'value="Kurative Reaktionszeit" style="text;whiteSpace=wrap;'
+        'strokeColor=none;fillColor=#FFFFFF;', 1)
+    for old, new in MARKER_TOPS:
+        xml = xml.replace(old, new)
+    for old, new in ONELINE.items():
+        if old not in xml:
+            raise ValueError(f"Nicht gefunden: {old[:60]}")
+        xml = xml.replace(old, new, 1)
     for old, new in LEGEND.items():
         if old not in xml:
             raise ValueError(f"Nicht gefunden: {old[:60]}")
@@ -197,7 +248,10 @@ def restyle(name: str, *, widen: bool = False, belastung: bool = False) -> None:
     im PDF nachmessen, Faktor korrigieren, erneut exportieren.
     """
     svg = FIG / f"{name}.svg"
-    source = de.read_mxfile(svg)
+    # Quelle ist die unveraenderte .drawio-Datei. Frueher wurde aus der SVG
+    # gelesen, die dieses Skript selbst schreibt -- ein zweiter Lauf haette
+    # die Aenderungen dann ein zweites Mal angewandt.
+    source = (FIG / f"{name}.drawio").read_text(encoding="utf-8")
     factor = font_factor(name)
     title_pt = PT_TITLE / PT_PER_UNIT[name]
 
