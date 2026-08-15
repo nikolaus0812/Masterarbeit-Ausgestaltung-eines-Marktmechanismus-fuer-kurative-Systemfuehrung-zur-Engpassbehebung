@@ -7,29 +7,158 @@
 % ===============================================================
 % Zielumfang Kapitel 5: 12 Seiten
 %   5.1 Einordnung in den regulatorischen Rahmen ............. 3
-%   5.2 Bewertung gegen den Anforderungskatalog .............. 3
-%   5.3 Übertragbarkeit auf Systemebene ...................... 2
-%   5.4 Kritische Würdigung der Modellannahmen ............... 3
+%   5.2 Bewertung anhand des Anforderungskatalogs ............ 3
+%   5.3 Uebertragbarkeit auf Systemebene ..................... 2
+%   5.4 Kritische Wuerdigung der Modellannahmen .............. 3
 %   5.5 Handlungsempfehlungen ................................ 1
+%
+% STAND DIESER FASSUNG: Die Punktelisten sind aus der Sammlung
+% abgrenzung_diskussion_sammlung.md uebertragen. Die Kennungen B1, C1,
+% D3 und so weiter verweisen dorthin, damit Herkunft und Belegstand
+% jedes Punktes nachpruefbar bleiben. Die Kennungen sind vor Abgabe zu
+% entfernen.
+%
+% BELEGSTAND, in den Kommentaren jeweils mitgefuehrt:
+%   [belegt]  Fundstelle vorhanden, direkt verwendbar
+%   [eigen]   in der Bearbeitung entstandene Argumentation, vor der
+%             Aufnahme selbst zu pruefen und in eigenen Worten zu
+%             schreiben
+%   [daten]   eigene Datenauswertung, Zahl aus dem Repository belegen
+%
+% STILVORGABE wie in Kapitel 1 und 2: vollstaendige Saetze, keine
+% Doppelpunkte, keine Gedankenstriche, keine Semikola im Fliesstext.
+% Die Vorfassung dieser Datei enthielt in zwei Listenpunkten einen
+% Gedankenstrich und ein Semikolon. Beide sind aufgeloest.
+%
+% BEGRIFFLICHKEIT FESTGELEGT: Die Vorfassung sprach von der
+% "Mindestverguetung", eine Zwischenfassung von einem
+% "Verguetungsbereich". Beides ist aufgegeben. Die Arbeit bestimmt die
+% "Untergrenze der Verguetung", weil die Obergrenze nicht bestimmt wird
+% und ein Bereich zwei Grenzen voraussetzt. Der Begriff ist hier
+% durchgehend angepasst und deckt sich mit Abschnitt 1.2.
+%
+% ABGRENZUNG GEHOERT NICHT IN DIESES KAPITEL: Die Punkte A1 bis A5 der
+% Sammlung sagen, was die Arbeit nicht untersucht. Das sind Festlegungen
+% und keine Verzerrungen des Modells. Sie gehoeren in die Systemgrenzen
+% in Abschnitt 3.2 und werden hier nur in ihrer Konsequenz aufgegriffen,
+% naemlich A2 und A3 in Abschnitt 5.3 und A5 in Abschnitt 5.2.
+% Der Kommentarblock am Ende von chapter_1.tex ist entsprechend nach
+% chapter_3.tex zu uebertragen und nicht nach chapter_6.tex.
 % ===============================================================
 
 % ---------------------------------------------------------------
 \section{Einordnung in den regulatorischen Rahmen}
 \label{sec:regulatory_discussion}
 % [Ziel: 3 Seiten]
+%
+% ARGUMENTATIONSBOGEN DES ABSCHNITTS: Der ermittelte Verguetungsbereich
+% wird an eine Systematik gehalten, die Vorhaltung nicht kennt. Daraus
+% folgt, dass er innerhalb des geltenden Rahmens nicht abbildbar ist.
+% Das ist die Einordnung, nicht die Bewertung. Die Bewertung gegen die
+% eigenen Anforderungen folgt in Abschnitt 5.2.
+%
+% PRUEFEN: Die Verweise \ref{sec:market_development} und
+% \ref{sec:requirements_catalogue} setzen die Labels aus Kapitel 2
+% voraus. Falls die Abschnitte 2.4.1 und 2.4.2 nach Kapitel 3 wandern,
+% sind beide Verweise nachzuziehen.
 
 \begin{itemize}
-    \item Verhältnis der ermittelten Mindestvergütung zur Systematik des §\,13a \ac{EnWG} \cite{bundesnetzagentur_festlegung_2024}
-    \item Rückgriff auf Abschnitt \ref{sec:market_development}: Ein kurativer Markt greift in eine Marktentwicklung ein, die selbst in Bewegung ist -- Argument für die Vergütung von Vorhaltung statt Arbeit \cite{mahgoub_wie_2025}
+    % B1 [belegt] Kern der regulatorischen Einordnung.
+    \item Verhältnis der ermittelten Untergrenze der Vergütung zur Systematik des §\,13a \ac{EnWG}, die den durchgeführten Eingriff entschädigt und keine Vorhaltung vergütet \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}
+    % B2 [belegt fuer die Struktur, eigen fuer die Folgerung auf BESS]
+    % TRAGENDER BEFUND. Die Festlegung bildet Erzeugungsauslagen plus
+    % max(Werteverbrauch, Opportunitaet). Der Weber-Optionswert kann
+    % damit in die Zahlung ueberhaupt nicht eingehen, wenn der
+    % Werteverbrauch groesser ist. Fuer Batteriespeicher ist genau das
+    % zu erwarten.
+    % PRUEFEN: Kapitel 1 und 2 beschreiben diese Struktur an mindestens
+    % einer Stelle noch additiv. Das untergraebt den Befund und ist vor
+    % Abgabe zu korrigieren.
+    \item Nicht additive Struktur der Vergütung nach geltender Festlegung und die Folge, dass der Optionswert für Batteriespeicher voraussichtlich nicht zahlungswirksam wird \cite{bundesnetzagentur_festlegung_2024}
+    % B3 [belegt] PRUEFEN: Redispatch 2.0 ist im Bestandstext noch als
+    % marktbasiert charakterisiert. Es ist ein Duldungs- und
+    % Entschaedigungsregime. Ohne diese Korrektur wird der eigene
+    % Entwurf als Variante eines bestehenden Marktes gelesen.
+    \item Abgrenzung des entworfenen Mechanismus gegenüber Redispatch~2.0 als Duldungs- und Entschädigungsregime \cite{bundesnetzagentur_festlegung_2024}
+    % B4 [belegt] Die Beschlusskammer 8 hat die Behandlung von
+    % Batteriespeichern einem spaeteren Hinweis vorbehalten. Damit ist
+    % die Forschungsluecke ein dokumentierter offener Punkt.
+    % Herleitung steht in Abschnitt 2.4.3, hier nur die Einordnung des
+    % eigenen Ergebnisses in diesen offenen Punkt.
+    \item Einordnung des Ergebnisses in den von der Beschlusskammer ausdrücklich offengehaltenen Regelungsbedarf für Speicheranlagen \cite{bundesnetzagentur_festlegung_2024}
+    % B5 [daten] Regimebruch 01.10.2025. Der innere Wert des
+    % Weber-Ansatzes hat mit der Viertelstundenauktion seine
+    % Bemessungsgrundlage verloren.
+    % PRUEFEN: Kennzahl aus dem Repository belegen, RMS(ID1 minus IDA1)
+    % von 46,8 auf 28,4 Euro je MWh.
     \item Folgen der Verlagerung von Handel aus der Intraday-Auktion in den Day-Ahead-Markt für die Bemessungsgrundlage des modifizierten Weber-Ansatzes \cite{ffe_saegezahn_2026}
-    \item Vergleichbarkeit mit der Behandlung von EE-Anlagen \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}
+    % B6 [eigen, gestuetzt auf mahgoub_wie_2025] Argument fuer
+    % Vorhalteverguetung. Eine arbeitsbezogene Verguetung waere an eine
+    % Bemessungsgrundlage gebunden, die sich unter ihr veraendert.
+    \item Rückgriff auf Abschnitt \ref{sec:market_development}, wonach ein kurativer Markt in eine Marktentwicklung eingreift, die selbst in Bewegung ist, und was daraus für die Vergütung von Vorhaltung anstelle von Arbeit folgt \cite{mahgoub_wie_2025}
+    % B7 [belegt]
+    \item Vergleichbarkeit mit der Behandlung von Anlagen zur Erzeugung aus erneuerbaren Energien \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}
 \end{itemize}
 
 % ---------------------------------------------------------------
 \section{Bewertung anhand des Anforderungskatalogs}
 \label{sec:requirements_assessment}
 % [Ziel: 3 Seiten]
+%
 % Systematischer Abgleich gegen Abschnitt \ref{sec:requirements_catalogue}.
+% Zusaetzlich zu den dort formulierten Anforderungen sind drei Punkte zu
+% bewerten, die sich erst aus der Modellierung ergeben.
+%
+% GAMING: Dieser Abschnitt traegt die ausfuehrliche Behandlung. Kapitel 1
+% zeigt die Auseinandersetzung nur an, Abschnitt 2.2.2 stellt sie im
+% Verguetungsregime dar. Die Punkte D1 und D2 der Sammlung gehoeren nach
+% 2.2.2, die Punkte D3 bis D5 hierher.
+% VORAUSSETZUNG: Der BMWi-Abschlussbericht von Hirth, Schlecht, Maurer
+% und Tersteegen 2019 muss in der literature.bib stehen, sonst ist nur
+% die ablehnende Position der Beschlusskammer belegt und die Diskussion
+% steht einseitig. PDF unter neon.energy. Bis dahin sind die
+% Platzhalterschluessel unten nicht aufloesbar.
+
+\begin{itemize}
+    % C1 [belegt] STARKER PUNKT. Die FCR-Praequalifikationsbedingungen
+    % definieren bereits einen reservierten SoC-Arbeitsbereich, die
+    % Schnabelkurve, samt Fuenfzehnminutenkriterium. Die kurative
+    % Vorhaltung ist damit der zweite Anspruch auf dasselbe Band.
+    \item Konkurrenz der kurativen Vorhaltung zu dem bereits durch die Präqualifikationsbedingungen reservierten Arbeitsbereich des Ladezustands \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+    % C2 [belegt] BK6-17-234 vom 02.05.2019. Praezedenzfall dafuer, dass
+    % die Bandbreite eine regulatorische Entscheidung mit unmittelbarer
+    % Erloeswirkung ist. Traegt die Argumentation zur Vorhaltedauer.
+    \item Bandbreite und Vorhaltedauer als regulatorische Entscheidung mit unmittelbarer Erlöswirkung
+    % D3 [eigen] ARGUMENT FUER DEN EIGENEN ENTWURF, steht bislang
+    % nirgends in der Arbeit. Haengt die Zahlung an der
+    % bereitgehaltenen Leistung und nicht am abgerufenen Volumen, so
+    % entfaellt der Anreiz, das Volumen zu vergroessern. Der Akteur
+    % verdient an der Verfuegbarkeit und nicht am Eingriff.
+    % Vor der Aufnahme gegen die Literatur zu Reliability Options
+    % pruefen, damit das Argument nicht als eigene Entdeckung steht,
+    % falls es dort bereits formuliert ist.
+    \item Wirkung der Vergütung von Vorhaltung anstelle von Arbeit auf den Anreiz zu engpassverstärkendem Bietverhalten
+    % D4 [eigen, gestuetzt auf C1] STAERKSTER EIGENER BEITRAG in diesem
+    % Block, weil er das Thema aus der Abwehrhaltung holt. Das
+    % Anreizproblem verschwindet nicht, es wandert. Eine
+    % Vorhalteverguetung schafft den Anreiz, Kapazitaet anzubieten, die
+    % nicht wirklich frei ist. Aus der Volumenmanipulation wird eine
+    % Nachweisfrage, und die Pruefbarkeit der Verfuegbarkeit wird zur
+    % konstitutiven Anforderung an den Mechanismus.
+    \item Verlagerung des Anreizproblems von der Menge des Eingriffs auf den Nachweis der Verfügbarkeit und die daraus folgende Anforderung an die Prüfbarkeit
+    % D5 [eigen] Die Opportunitaetskosten sind private Information des
+    % Bieters. Bei vielen geeigneten Anbietern disziplinieren sich
+    % Ueberzeichnungen gegenseitig, an einem Knoten mit wenigen
+    % wirksamen Anlagen nicht. Die Lage des Preises im
+    % Verguetungsbereich ist damit keine Modellgroesse, sondern eine
+    % Frage der Anbieterzahl. Der Satz dazu steht bereits in
+    % Abschnitt 1.2 und ist hier aufzuloesen.
+    \item Lokale Marktmacht bei geringer Zahl wirksamer Anbieter an einem Netzknoten und die Folge für die Lage des Preises oberhalb der ermittelten Untergrenze
+    % A5 [folgt aus A2] Offen sagen, dass die Arbeit das Bietverhalten
+    % nicht modelliert und die Aussagen dieses Abschnitts daher
+    % qualitativ bleiben.
+    \item Grenzen dieser Bewertung, da das Modell weder eine Bietfunktion noch einen Wettbewerb mehrerer Anbieter abbildet
+\end{itemize}
 
 % ---------------------------------------------------------------
 \section{Übertragbarkeit auf Systemebene}
@@ -37,9 +166,25 @@
 % [Ziel: 2 Seiten]
 %
 % Hier wird das Skalenproblem offen adressiert, statt darauf zu warten,
-% dass es im Kolloquium kommt: Eine Einzelanlagen-Optimierung trägt
+% dass es im Kolloquium kommt. Eine Einzelanlagenoptimierung traegt
 % keine systemweite Volumenaussage. Voraussetzungen und Grenzen einer
 % Hochrechnung benennen.
+
+\begin{itemize}
+    % E1 [eigen, folgt aus A2] Konsequenz der Einzelanlagenperspektive.
+    % Der Widerspruch zwischen Forschungsfrage und Methodik ist in
+    % Kapitel 1 bereits aufgeloest, hier steht die Folge fuer die
+    % Reichweite der Ergebnisse.
+    \item Voraussetzungen, unter denen eine Hochrechnung des Einzelanlagenergebnisses auf die Systemebene zulässig wäre, und Gründe, warum sie hier nicht vorgenommen wird
+    % E2 [belegt] Die Wirksamkeit eines Akteurs ist keine feste
+    % Eigenschaft seines Standorts. Die Verschiebung von der
+    % Nord-Sued- auf die Ost-West-Achse zeigt das, PV-Redispatch plus
+    % 94 Prozent, Offshore minus 27 Prozent im Jahr 2025.
+    \item Abhängigkeit der Wirksamkeit eines Akteurs von der jeweils vorherrschenden Erzeugungssituation und die Folge für eine Hochrechnung über Netzknoten \cite{bundesnetzagentur_smard_engpassmanagement_2026}
+    % A3 [Festlegung] Konsequenz der unterstellten netztechnischen
+    % Wirksamkeit fuer die Reichweite der Aussage.
+    \item Reichweite der Ergebnisse unter der Annahme gegebener netztechnischer Wirksamkeit der Maßnahme
+\end{itemize}
 
 % ---------------------------------------------------------------
 \section{Kritische Würdigung der Modellannahmen}
@@ -47,25 +192,89 @@
 % [Ziel: 3 Seiten]
 %
 % BEIDE Verzerrungsrichtungen darstellen, sonst wirkt der Abschnitt
-% einseitig:
-%   - Vollständige Preiskenntnis ÜBERSCHÄTZT die Erlösdifferenz.
-%     Weber räumt im Fazit seines Gutachtens dasselbe für sein
-%     Verfahren ein: Die Vernachlässigung zeitübergreifender
-%     Restriktionen führe tendenziell zur Überschätzung.
-%   - Vollständige Preiskenntnis UNTERSCHLÄGT den Optionswert
-%     vollständig (bei sigma = 0 ist er identisch null), weshalb er
-%     separat hinzugerechnet werden muss.
-% Ergänzend: Der Unterschied zwischen Erlöspotenzial und tatsächlich
-% realisiertem Erlös ist unabhängig belegt \cite{mahgoub_wie_2025}.
+% einseitig.
+%   - Vollstaendige Preiskenntnis UEBERSCHAETZT die Erloesdifferenz.
+%     Weber raeumt im Fazit seines Gutachtens dasselbe fuer sein
+%     Verfahren ein, naemlich dass die Vernachlaessigung
+%     zeituebergreifender Restriktionen tendenziell zur Ueberschaetzung
+%     fuehrt.
+%   - Vollstaendige Preiskenntnis UNTERSCHLAEGT den Optionswert
+%     vollstaendig, bei sigma gleich null ist er identisch null, weshalb
+%     er separat hinzugerechnet werden muss.
+% Ergaenzend: Der Unterschied zwischen Erloespotenzial und tatsaechlich
+% realisiertem Erloes ist unabhaengig belegt \cite{mahgoub_wie_2025}.
+%
+% ENTFALLEN gegenueber der Vorfassung: Der Punkt "Betrachtung eines
+% einzelnen Tages" ist ueberholt. Mit dem Regimebruch vom 01.10.2025 ist
+% der Auswertungszeitraum das vierte Quartal 2025, siehe F5.
 
 \begin{itemize}
-    \item Vollständige Preiskenntnis und ihre Verzerrungsrichtungen \cite{weber_gutachten_2015, mahgoub_wie_2025}
-    \item Einzelanlagenbetrachtung ohne Netzabbildung
-    \item Deterministischer Abruf statt Abrufwahrscheinlichkeit
-    \item Betrachtung eines einzelnen Tages
+    % F1 und F2 [methodisch zwingend, Weber belegt] Die beiden
+    % Verzerrungen laufen gegeneinander. Das ist der Grund fuer die
+    % hybride Ex-post-Rechnung und als solcher zu benennen. Der
+    % ermittelte Wert ist damit eine konservative Obergrenze, was keine
+    % Schwaeche, sondern eine saubere Eigenschaft des Ergebnisses ist.
+    \item Vollständige Preiskenntnis und ihre beiden gegenläufigen Verzerrungsrichtungen sowie die daraus folgende Einordnung des Ergebnisses als konservative Obergrenze \cite{weber_gutachten_2015, mahgoub_wie_2025}
+    % F3 [folgt aus A2 und A3]
+    \item Einzelanlagenbetrachtung ohne Abbildung des Netzes
+    % F4 [eigen] Ob der Fehlerfall eintritt, ist eine
+    % Wahrscheinlichkeit und keine Fahrplangroesse. Das Problem hat
+    % Optionscharakter. Damit ist der Weber-Ansatz nicht nur
+    % Kontrastmodell, sondern der methodisch naheliegende naechste
+    % Schritt, was den Ausblick in Abschnitt 6.2 traegt.
+    \item Deterministischer Abruf anstelle einer Abrufwahrscheinlichkeit
+    % F5 [daten] NEU. Der Regimebruch vom 01.10.2025 macht das vierte
+    % Quartal 2025 zum einzigen gueltigen Auswertungsfenster fuer die
+    % gewaehlte Architektur. Das ist eine kurze Zeitreihe, die
+    % Saisonalitaet ist damit nicht abgedeckt.
+    \item Beschränkung des Auswertungszeitraums auf das vierte Quartal 2025 und die daraus folgende fehlende Abdeckung saisonaler Effekte
+    % F6 [eigen, gegen Anlage 5 validiert] Die dokumentierte Begruendung
+    % dafuer, den Weber-Ansatz nur als Referenzrahmen zu fuehren,
+    % gehoert hierher und nicht nach 5.1. Tragend sind drei der sieben
+    % Gruende. Einperiodige deterministische Optimierung eliminiert den
+    % Optionswert konstruktionsbedingt. Fahrplanbasis und mu aus
+    % derselben Preisreihe erzeugen Zirkularitaet. Das
+    % Weber-Schwellenband von rund 43 Euro je MWh ist 1,3- bis 3,2-mal
+    % breiter als das technische Indifferenzband der Batterie von 23 bis
+    % 28 Euro je MWh und schwankt mit der Tagesvolatilitaet, waehrend
+    % das technische Band nahezu konstant bleibt.
+    \item Begründung der Entscheidung, den modifizierten Weber-Ansatz als Referenzrahmen und nicht als Bestandteil des Optimierungsmodells zu führen \cite{weber_gutachten_2015, bundesnetzagentur_festlegung_2024}
+    % F9 [methodisch zwingend] NEU. Das Modell ist gemischt-ganzzahlig,
+    % weil die Zusage der kurativen Vorhaltung je Periode nur ganz oder
+    % nicht erfolgen kann. Ein gemischt-ganzzahliges Problem hat keine
+    % Dualvariablen. Die Schwellenpreise sind daher aus dem Problem mit
+    % fixierten Binaervariablen zu gewinnen und gelten nur fuer die dort
+    % gewaehlte Kombination der Zusagen, nicht global. Diese
+    % Einschraenkung ist offen zu benennen, weil der Vergleich mit dem
+    % Weber-Schwellenband auf diesen Werten aufbaut.
+    \item Gewinnung der Schwellenpreise aus dem Problem mit fixierten Zusagen und die daraus folgende nur lokale Gültigkeit
+    % F7 [daten] 69 Prozent der Jahressumme der RMS-Werte stammen aus
+    % dem groessten Prozent der Viertelstunden. Eine Groesse mit dieser
+    % Konzentration als Volatilitaetsmass fuer eine Verguetung zu
+    % verwenden, ist begruendungsbeduerftig.
+    \item Eigenschaft des Volatilitätsmaßes der Festlegung als Maß der Verteilungsränder
+    % F8 [eigen] Fuer eine Anlage mit rund 2,25 Stunden Entladedauer ist
+    % die Kopplung der Ladezustandsbilanz bindend, die unabhaengige
+    % Bewertung einzelner Zeitscheiben ignoriert sie.
+    \item Unabhängige Bewertung einzelner Zeitscheiben im Referenzverfahren gegenüber der bindenden Kopplung des Ladezustands
 \end{itemize}
 
 % ---------------------------------------------------------------
 \section{Handlungsempfehlungen}
 \label{sec:recommendations}
 % [Ziel: 1 Seite]
+%
+% Alle vier Empfehlungen sind [eigen] und aus den belegten Punkten
+% abgeleitet. Sie folgen jeweils aus einem Befund der vorangehenden
+% Abschnitte und sind ohne diesen nicht zu formulieren.
+
+\begin{itemize}
+    % G1, aus D3 und B6
+    \item Vergütung der Vorhaltung anstelle der Arbeit
+    % G2, aus D4
+    \item Nachweisverfahren für die Verfügbarkeit als konstitutiver Bestandteil des Mechanismus
+    % G3, aus C1
+    \item Behandlung der Doppelbelegung des Ladezustandsbands gegenüber der Vorhaltung von Regelleistung
+    % G4, aus D5
+    \item Umgang mit lokaler Marktmacht an Netzknoten mit geringer Anbieterzahl
+\end{itemize}

@@ -88,7 +88,12 @@ Verstärkt wird das Missverhältnis durch die Architektur des europäischen Stro
 Der deutsche Strommarkt folgt dem Selbstdispatch-Modell, in dem die Erzeugungs- und Verbrauchsfahrpläne sowie der Einsatz der Anlagen durch die Fahrplanverantwortlichen dieser Anlagen selbst bestimmt werden \cite[Art.\,2 Abs.\,17]{europaische_kommission_verordnung_2017_ebgl}. 
 Maßgeblich für diese Entscheidung ist damit das Preissignal des Marktes und nicht der Zustand des Netzes.
 Innerhalb einer einheitlichen Gebotszone bildet der Börsenpreis die physikalische Belastung der Übertragungswege jedoch nicht ab, sodass marktoptimale Fahrpläne systematisch Leistungsflüsse erzeugen können, die das Netz nicht aufnehmen kann.
-Der \ac{ÜNB} verfügt über keinen Zugriff auf die Fahrplanbildung und kann die entstehende Netzüberlastung erst nachgelagert korrigieren.
+% ABGESCHWAECHT: Vorher stand hier, der UENB verfuege ueber keinen
+% Zugriff auf die Fahrplanbildung. Das las sich als institutionelles
+% Defizit des UENB. Die Zustaendigkeitsformulierung sagt dasselbe,
+% ist deskriptiv und deckt sich mit der EBGL-Definition zwei Saetze
+% vorher. Beim Ueberarbeiten nicht zurueckverschaerfen.
+Die Fahrplanbildung liegt nach diesem Modell nicht beim \ac{ÜNB}, der die entstehende Netzüberlastung daher erst nachgelagert korrigieren kann.
 Die Höhe des Engpassmanagementbedarfs ist damit keine rein technische Größe, sondern eine unmittelbare Folge der Entkopplung von marktlicher Fahrplanbildung und physikalischer Netzrestriktion. 
 Abschnitt \ref{sec:market_horizons} greift diese Zuordnung auf und leitet aus ihr ab, dass kurative Stellpotenziale vom \ac{ÜNB} nicht angeordnet, sondern beschafft werden müssen.
 
@@ -237,16 +242,23 @@ Die präventive Betriebsplanung setzt voraus, dass die Netzbelastung des Erfüll
 Diese Voraussetzung erodiert mit der Zunahme kurzfristig agierender Flexibilität.
 Der kontinuierliche Intraday-Handel hält die Fahrplanbildung bis wenige Minuten vor Lieferbeginn offen, und Anlagen mit kurzen Reaktionszeiten können dieses späte Handelsfenster nutzen \cite{innosys_2030_gesamtverbund_innovationen_2021, mahgoub_wie_2025}.
 Für Batteriespeicher liefert die Nachjustierung in diesem Fenster einen eigenständigen Wertbeitrag \cite{hornek_value_2025}.
-% PRUEFEN: Die Aussage, dass die Netzsicherheitsrechnung im Verlauf des
-% Erfuellungstages wiederholt und zuletzt kurz vor dem
-% Erfuellungszeitpunkt durchgefuehrt wird, ist bewusst ohne Zeitangabe
-% formuliert. Falls InnoSys 2030 oder \cite{leeuwen_integration_2020}
-% einen konkreten Vorlauf nennen, ist die Fundstelle als
-% \cite[S.\,XX]{...} zu praezisieren. Eine Zahl gehoert nur in den Text,
-% wenn sie belegt ist.
-Die Netzsicherheitsrechnung wird dabei nicht nur am Vortag, sondern im Verlauf des Erfüllungstages wiederholt durchgeführt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Auch ihr letzter Durchgang liegt jedoch vor dem Erfüllungszeitpunkt, sodass Fahrplanänderungen aus dem danach verbleibenden Handelsfenster in ihm nicht mehr enthalten sind.
-Der \ac{ÜNB} kann diese Änderungen nicht vorhersehen, weil ihm der Zugriff auf die Fahrplanbildung fehlt.
+% ABGESCHWAECHT UND ENTZITIERT: Vorher stand hier, die
+% Netzsicherheitsrechnung werde im Verlauf des Erfuellungstages
+% wiederholt durchgefuehrt, belegt mit InnoSys 2030. Diese Aussage ist
+% durch die Quelle nicht gedeckt und ist deshalb entfallen. Das Argument
+% traegt jetzt auf dem logisch zwingenden Teil, naemlich dass jeder
+% Rechendurchgang vor dem Erfuellungszeitpunkt liegt und den zu diesem
+% Zeitpunkt vorliegenden Fahrplanstand abbildet. Die
+% Zustaendigkeitsformulierung ersetzt die frueher hier stehende Wendung,
+% dem UENB fehle der Zugriff auf die Fahrplanbildung.
+% Beim Ueberarbeiten nicht in eine Prozessbehauptung zurueckverschaerfen.
+% Falls sich die Intraday-Aktualisierung doch belegen laesst, ist der
+% Ansatzpunkt nicht InnoSys 2030, sondern die Prozessbeschreibungen der
+% UENB zum Netzsicherheitsmanagement oder die
+% Redispatch-2.0-Prozessdokumentation. Vor dem Zitieren gegenpruefen.
+Auch eine mehrfach im Tagesverlauf aktualisierte Netzsicherheitsrechnung kann nur den zum jeweiligen Rechenzeitpunkt vorliegenden Fahrplanstand abbilden.
+Fahrplanänderungen aus dem danach verbleibenden Handelsfenster gehen in sie nicht mehr ein.
+Die Fahrplanbildung selbst liegt im Selbstdispatch bei den Marktakteuren, sodass der \ac{ÜNB} diese Änderungen nicht antizipieren, sondern erst nachgelagert erfassen kann.
 Dem Marktteilnehmer wiederum zeigt der zonale Preis die Netzbelastung nicht an.
 Beide Informationslücken folgen aus der Ausgestaltung des Marktdesigns.
 % GAMING: Bewusst knapp gehalten und als offener Streitpunkt formuliert.
@@ -291,14 +303,23 @@ Das erhöht die nutzbare Übertragungskapazität und erlaubt es, Spitzenlastengp
 Der Ansatz setzt damit unmittelbar am Volumen und an den Kosten des präventiven Eingriffsbedarfs an.
 Wie er darüber hinaus auf die zunehmende Kurzfristigkeit wirkt, arbeitet Abschnitt \ref{sec:prev_vs_cur} heraus.
 Voraussetzung dafür ist allerdings ein Akteur, dessen Technologie innerhalb des \acs{TATL}-Zeitfensters zuverlässig verfügbar ist und dessen Stellpotenzial nicht durch die eigene marktliche Fahrplanbildung aufgebraucht wurde.
-% ZURUECKGENOMMEN gegenueber der Vorfassung: Dort standen drei Saetze zu
-% BESS, die das Ergebnis von Abschnitt 2.3 vorwegnahmen. Ein Satz
-% genuegt. Er benennt die Technologie als vielversprechend und verweist
-% fuer die Pruefung weiter.
+% TECHNOLOGIEWAHL ALS SETZUNG: Die Vorfassung formulierte doppelt
+% abgeschwaecht, naemlich "vergleichsweise neuer Akteur" und "auf den
+% ersten Blick gut geeignet". Das las sich wie eine Vermutung, obwohl die
+% Technologiewahl eine Entscheidung des Verfassers ist. Jetzt steht hier
+% die Entscheidung, die Begruendung haengt am Verweis auf Abschnitt 2.3.
+% Der komparative Anschluss "am weitesten" ist bewusst gewaehlt und nicht
+% exklusiv formuliert, damit der Satz auch dann traegt, wenn in Abschnitt
+% 2.3 eine zweite Technologie als Randfall auftritt.
+% Die Neuartigkeit ist als eigener Satz gefuehrt, weil sie nicht die
+% Eignung abschwaecht, sondern den Verguetungsbedarf begruendet und damit
+% auf Abschnitt 2.4.3 vorausweist.
 % HINWEIS: Die Erstverwendung des Akronyms BESS liegt hier. Mit \ac{BESS}
 % setzt das Akronympaket die englische Langform, weshalb die Einfuehrung
 % ueber "im Folgenden als ... bezeichnet" gefuehrt wird.
-Als vergleichsweise neuer Akteur im Stromnetz erscheinen Batteriespeicher, im Folgenden als \ac{BESS} bezeichnet, dafür auf den ersten Blick gut geeignet, was Abschnitt \ref{sec:bess_actor} eingehender prüft.
+Diese Anforderungen erfüllen Batteriespeicher, im Folgenden als \ac{BESS} bezeichnet, unter den derzeit verfügbaren Technologien am weitesten.
+Als Akteur im Engpassmanagement sind sie dabei neuartig, weshalb sich die Frage nach einer geeigneten Vergütung überhaupt stellt.
+Sie werden in dieser Arbeit daher als kurativer Akteur untersucht, dessen Auswahl Abschnitt \ref{sec:bess_actor} technisch und ökonomisch begründet.
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT KONVENTIONALISIERT
@@ -347,7 +368,7 @@ Als vergleichsweise neuer Akteur im Stromnetz erscheinen Batteriespeicher, im Fo
 % bestehenden Grundlagen, an die sich der Mechanismus anlehnen kann.
 % Die Abgrenzung beider Grundlagen gegenueber der kurativen Vorhaltung
 % ist Gegenstand von Abschnitt 2.2 und wird hier nicht vorweggenommen.
-Die vorliegende Arbeit verfolgt das Ziel, einen Marktmechanismus für die kurative Vorhaltung zu entwerfen, der sich an der Beschaffung anderer Systemdienstleistungen orientiert, und zu bestimmen, in welchem Bereich sich die dafür erforderliche Vergütung bewegen müsste.
+Die vorliegende Arbeit verfolgt das Ziel, einen Marktmechanismus für die kurative Vorhaltung zu entwerfen, der sich an der Beschaffung anderer Systemdienstleistungen orientiert, und die Untergrenze der dafür erforderlichen Vergütung zu bestimmen.
 Dass die Beschaffung marktlich und nicht über eine Betriebspflicht erfolgen muss, folgt aus dem Selbstdispatch-Modell, in dem die Fahrplanhoheit beim Anlagenbetreiber liegt und kurative Verfügbarkeit deshalb nicht angeordnet, sondern nur über einen Anreiz hergestellt werden kann.
 Für andere Systemdienstleistungen bestehen solche Grundlagen bereits.
 Die Regelleistungsmärkte beschaffen vorgehaltene Leistung im Wettbewerb und vergüten damit die Bereitstellung und nicht allein den Abruf \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
@@ -359,16 +380,74 @@ Ob und in welchem Umfang sich eine dieser Grundlagen auf die kurative Vorhaltung
 % integriert. Der Bezug auf Batteriespeicher ist entfallen, weil die
 % Technologiewahl erst in Abschnitt 2.3 begruendet wird.
 Betrachtet wird dazu ein 2030-Szenario mit hohem Anteil erneuerbarer Energien, fortbestehenden Netzausbaurückständen und deutlich gestiegener installierter Speicherkapazität.
-Nach unten ist der gesuchte Bereich durch den Wert begrenzt, den die gebundene Kapazität in den übrigen Vermarktungswegen erzielen würde.
-Nach oben ist er durch den Wert begrenzt, den die kurative Maßnahme für den \ac{ÜNB} gegenüber der präventiven Alternative besitzt.
-Diese Alternative umfasst dabei nicht allein den präventiven Redispatch, sondern auch die Sicherheitsmargen, die erforderlich sind, um die nach der letzten Netzsicherheitsrechnung verbleibende Unsicherheit abzudecken.
-Innerhalb dieses Bereichs würde sich ein Marktpreis einpendeln, dessen Lage von der Zahl geeigneter Anbieter am jeweiligen Netzknoten abhängt.
-Zu klären sind dafür drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Vorhalteverpflichtung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Vergütungsbereich zu der Vergütung nach geltender Festlegung verhält.
+% SZENARIO GEGEN DATENGRUNDLAGE ABGESETZT: Der Absatz benannte bisher nur
+% das Zielszenario und liess offen, dass die Rechnung auf historischen
+% Preiszeitreihen beruht. Diese Luecke ist die naheliegende Rueckfrage im
+% Kolloquium und wird hier vorweg geschlossen.
+% PRUEFEN: Der Zeitraum ist hier bewusst unbestimmt als "juengere
+% Vergangenheit" bezeichnet. Die Festlegung des Auswertungsfensters und
+% ihre Begruendung ueber die Umstellung des Day-Ahead-Marktes zum
+% 01.10.2025 gehoeren nach Abschnitt 3.5. Falls dort ein Vorwaertsverweis
+% erwuenscht ist, hier ein \ref auf den Abschnitt ergaenzen.
+% PRUEFEN: Sobald das Auswertungsfenster ueber das vierte Quartal 2025
+% hinaus auf Anfang 2026 ausgedehnt wird, ist der Punkt F5 in
+% chapter_5.tex nachzuziehen.
+Die Untersuchung selbst erfolgt jedoch auf Grundlage des heute geltenden Strommarktdesigns und historischer Preiszeitreihen der jüngeren Vergangenheit.
+Damit wird nicht der Marktzustand des Jahres 2030 prognostiziert, sondern die Erlöswirkung einer kurativen Vorhaltebindung unter bekannten und nachvollziehbaren Marktbedingungen quantifiziert.
+% OBERGRENZE GESTRICHEN: Die Vorfassung setzte dem gesuchten Bereich eine
+% obere Grenze, naemlich den Wert der kurativen Massnahme gegenueber der
+% praeventiven Alternative einschliesslich der Sicherheitsmargen. Diese
+% Groesse wird in der Arbeit nicht bestimmt, weshalb die Aussage entfallen
+% ist. Das Argument, dass die praeventive Alternative auch die
+% Sicherheitsmargen umfasst, bleibt in Abschnitt 2.1.1 erhalten, wo es
+% hingehoert.
+% BEWUSST SCHWACH FORMULIERT: Poenalen, Praequalifikation und Liquiditaet
+% sind Merkmale der Ausgestaltung, die die Preisbildung beeinflussen. Sie
+% sind nicht Gegenstand der Untersuchung und werden nur angesprochen.
+% Die Formulierung im Konjunktiv haelt das fest und darf beim
+% Ueberarbeiten nicht in eine Untersuchungsankuendigung verschaerft
+% werden.
+% TERMINOLOGIE FESTGELEGT: Die Arbeit spricht durchgehend von der
+% "Untergrenze der Verguetung" und nicht mehr von einem
+% "Verguetungsbereich". Ein Bereich setzt zwei Grenzen voraus, und die
+% obere wird nicht bestimmt. Angepasst sind der Zielsatz am Anfang dieses
+% Abschnitts, die dritte Teilfrage unten und der Satz zu Kapitel 5 im
+% folgenden Absatz. Der Begriff "Mindestverguetung" bleibt vermieden,
+% weil er eine regulatorisch gesetzte Groesse suggeriert.
+% PRUEFEN: Dieselbe Umstellung ist in chapter_5.tex nachzuziehen,
+% Abschnitt 5.1 fuehrt bislang "Verhaeltnis des ermittelten
+% Verguetungsbereichs".
+Bestimmt wird dabei die Untergrenze der Vergütung, also der Wert, den die gebundene Kapazität in den übrigen Vermarktungswegen erzielen würde.
+Wo sich ein Marktpreis oberhalb dieser Grenze einpendeln würde, ist nicht Gegenstand dieser Arbeit.
+Maßgeblich wären dafür neben der Zahl geeigneter Anbieter am jeweiligen Netzknoten auch Merkmale der Ausgestaltung selbst, etwa Pönalen bei Nichtverfügbarkeit, Anforderungen an die Präqualifikation und die Liquidität des Marktes.
+Diese Einflussgrößen werden in Kapitel~\ref{ch:discussion} eingeordnet, aber nicht untersucht.
+Zur Beantwortung sind drei Teilfragen zu klären, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Vorhalteverpflichtung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich die daraus folgende Untergrenze der Vergütung zu der Vergütung nach geltender Festlegung verhält.
 
 Kapitel~\ref{ch:state_of_the_art} arbeitet die Grundlagen der kurativen Systemführung und die marktlichen Rahmenbedingungen des Engpassmanagements auf, prüft die Übertragbarkeit der bestehenden Vergütungssystematik, begründet die Technologiewahl und leitet daraus die Anforderungen an einen kurativen Marktmechanismus sowie den Forschungsbedarf ab.
-Kapitel~\ref{ch:design_model} entwirft auf dieser Grundlage das Marktprodukt, dessen konstitutives Merkmal die zeitliche Bindung der Zusage ist, beschreibt die Modellierung des Speicherbetriebs als lineares Optimierungsproblem und leitet daraus die zu untersuchenden Parametervariationen ab.
-Kapitel~\ref{ch:results} wertet die Optimierungsläufe über einen historischen Preiszeitraum aus, stellt die Erlösdifferenz zwischen unbeschränkter Vermarktung und kurativer Vorhaltebedingung dar und untersucht ihre Empfindlichkeit gegenüber den zuvor abgeleiteten Parametern sowie die aus den Dualvariablen der Ladezustandsbilanz gewonnenen Schwellenpreise.
-Kapitel~\ref{ch:discussion} ordnet den daraus bestimmten Vergütungsbereich in den regulatorischen Rahmen ein, vergleicht ihn mit der Vergütung nach geltender Festlegung und würdigt die Modellannahmen kritisch.
+% PRUEFEN, AKRONYM: Die Erstverwendung von MILP liegt hier. Der Eintrag
+% fehlt bislang in extras/abbreviations.tex und ist ueber die
+% Auftragsdatei fuer Claude Code nachzutragen. Bis dahin steht die
+% Langform ohne \ac.
+% MODELLKLASSE KORRIGIERT: Die Vorfassung sprach von einem linearen
+% Optimierungsproblem. Das Modell enthaelt eine Binaervariable fuer die
+% Zusage der kurativen Vorhaltung und ist damit gemischt-ganzzahlig. Die
+% Binaervariable folgt aus dem Produkt selbst, weil die Zusage je
+% Vorhalteperiode nur ganz oder nicht erfolgen kann. Das ist in
+% Abschnitt 3.2 zu begruenden.
+Kapitel~\ref{ch:design_model} entwirft auf dieser Grundlage das Marktprodukt, dessen konstitutives Merkmal die zeitliche Bindung der Zusage ist, beschreibt die Modellierung des Speicherbetriebs als gemischt-ganzzahliges lineares Optimierungsproblem und leitet daraus die zu untersuchenden Parametervariationen ab.
+% ERGEBNISGROESSE KORRIGIERT: Die Vorfassung nannte die Erloesdifferenz
+% zwischen zwei Laeufen. Das trifft das Verfahren nicht. Die Verguetung
+% wird so bestimmt, dass die kurative Vorhaltung die uebrigen
+% Opportunitaeten gerade schlaegt, weshalb der Erloes konstruktionsgemaess
+% gleich bleibt und die gesuchte Groesse der Breakeven-Wert selbst ist.
+% Eine Erloesdifferenz auszuweisen waere daher irrefuehrend.
+% PRUEFEN: Die Schwellenpreise aus der Ladezustandsbilanz sind
+% Dualvariablen und damit nur am gemischt-ganzzahligen Problem mit
+% fixierten Binaervariablen zu gewinnen. Diese Einschraenkung gehoert
+% nach Abschnitt 3.4 und als Punkt in Abschnitt 5.4.
+Kapitel~\ref{ch:results} wertet die Optimierungsläufe über einen historischen Preiszeitraum aus und bestimmt die Vergütung, bei der die kurative Vorhaltung gegenüber der übrigen Vermarktung gerade vorzugswürdig wird.
+Untersucht werden ihre Empfindlichkeit gegenüber den zuvor abgeleiteten Parametern sowie ihr Verhältnis zu den Schwellenpreisen, die sich aus der Ladezustandsbilanz ergeben.
+Kapitel~\ref{ch:discussion} ordnet die daraus bestimmte Untergrenze der Vergütung in den regulatorischen Rahmen ein, vergleicht ihn mit der Vergütung nach geltender Festlegung und würdigt die Modellannahmen kritisch.
 Kapitel~\ref{ch:conc} fasst die Ergebnisse entlang der Forschungsfragen zusammen, benennt die Grenzen der Untersuchung und gibt einen Ausblick auf weiteren Forschungsbedarf.
 
 % ===============================================================
