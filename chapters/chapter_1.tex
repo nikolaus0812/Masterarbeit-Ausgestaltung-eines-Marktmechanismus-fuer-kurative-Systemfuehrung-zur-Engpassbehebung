@@ -424,17 +424,16 @@ Diese Einflussgrößen werden in Kapitel~\ref{ch:discussion} eingeordnet, aber n
 Zur Beantwortung sind drei Teilfragen zu klären, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Vorhalteverpflichtung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich die daraus folgende Untergrenze der Vergütung zu der Vergütung nach geltender Festlegung verhält.
 
 Kapitel~\ref{ch:state_of_the_art} arbeitet die Grundlagen der kurativen Systemführung und die marktlichen Rahmenbedingungen des Engpassmanagements auf, prüft die Übertragbarkeit der bestehenden Vergütungssystematik, begründet die Technologiewahl und leitet daraus die Anforderungen an einen kurativen Marktmechanismus sowie den Forschungsbedarf ab.
-% PRUEFEN, AKRONYM: Die Erstverwendung von MILP liegt hier. Der Eintrag
-% fehlt bislang in extras/abbreviations.tex und ist ueber die
-% Auftragsdatei fuer Claude Code nachzutragen. Bis dahin steht die
-% Langform ohne \ac.
+% AKRONYM: Die Erstverwendung von MILP liegt hier. Der Eintrag steht in
+% extras/abbreviations.tex und traegt bewusst die deutsche Langform, weil
+% \ac sonst die englische Bezeichnung in den Satz setzt.
 % MODELLKLASSE KORRIGIERT: Die Vorfassung sprach von einem linearen
 % Optimierungsproblem. Das Modell enthaelt eine Binaervariable fuer die
 % Zusage der kurativen Vorhaltung und ist damit gemischt-ganzzahlig. Die
 % Binaervariable folgt aus dem Produkt selbst, weil die Zusage je
 % Vorhalteperiode nur ganz oder nicht erfolgen kann. Das ist in
 % Abschnitt 3.2 zu begruenden.
-Kapitel~\ref{ch:design_model} entwirft auf dieser Grundlage das Marktprodukt, dessen konstitutives Merkmal die zeitliche Bindung der Zusage ist, beschreibt die Modellierung des Speicherbetriebs als gemischt-ganzzahliges lineares Optimierungsproblem und leitet daraus die zu untersuchenden Parametervariationen ab.
+Kapitel~\ref{ch:design_model} entwirft auf dieser Grundlage das Marktprodukt, dessen konstitutives Merkmal die zeitliche Bindung der Zusage ist, beschreibt die Modellierung des Speicherbetriebs als \ac{MILP} und leitet daraus die zu untersuchenden Parametervariationen ab.
 % ERGEBNISGROESSE KORRIGIERT: Die Vorfassung nannte die Erloesdifferenz
 % zwischen zwei Laeufen. Das trifft das Verfahren nicht. Die Verguetung
 % wird so bestimmt, dass die kurative Vorhaltung die uebrigen
