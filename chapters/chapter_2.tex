@@ -1,121 +1,132 @@
-% >>>>> VORSCHLAG: KAPITELTITEL UND LABEL GEAENDERT
-% Vorher: \chapter{Kurative Systemführung und ihre marktliche Grundlage}
-%         \label{ch:curative_system}
-% Der alte Titel benannte den Gegenstand, nicht die Funktion des
-% Kapitels. Der neue Titel benennt die Funktion und deckt damit auch die
-% aus Abschnitt 1.2 hierher verlagerten Forschungsstraenge ab.
-% Alternativen, falls die Betreuung anders entscheidet:
-%   "Grundlagen und Stand der Technik"        (klassisch, knapper)
-%   "Stand der Technik und Regulierung"       (betont 2.2 statt 2.4)
-%   "Technische und marktliche Grundlagen"    (naeher am alten Titel)
-% Das Label wurde mitgeaendert, weil ch:curative_system unter diesem
-% Titel irrefuehrend waere. Beide Verweise in chapter_1.tex sind
-% angepasst; in Kapitel 3 bis 6 gibt es keine Verweise auf das
-% Kapitellabel.
-%
-% ANMERKUNG ZUR STRUKTUR -- zu entscheiden:
-% Abschnitt 2.4 (Anforderungen an einen kurativen Marktmechanismus) ist
-% kein Stand der Technik, sondern eigene Herleitung. Unter dem neuen
-% Kapiteltitel faellt das auf. Empfehlung: 2.4.1 und 2.4.2 als neuen
-% Abschnitt 3.1 vor den Produktentwurf ziehen und 2.4.3
-% (Forschungsluecke) als Abschnitt 2.4 hier behalten. Dann gilt:
-%   Kapitel 2 = fremde Arbeit + belegte Luecke        (21 Seiten)
-%   Kapitel 3 = Anforderungen -> Produkt -> Modell    (+3 Seiten)
-% Der Anschluss passt: chapter_3.tex verweist bereits auf
-% sec:interim_conclusion und sec:curative_functionality, und Abschnitt
-% 5.2 gleicht gegen sec:requirements_catalogue ab.
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \chapter{Stand der Technik, Regulierung und Forschung}
-% Dreigliedrige Aufzaehlung ist in Kapitelueberschriften unueblich. "Grundlagen und Stand der Technik" ist die gaengigste Formulierung in ingenieurwissenschaftlichen Arbeiten. Das Label ch:state_of_the_art passt weiterhin.
 \chapter{Grundlagen und Stand der Technik}
-% <<<<< ENDE VORSCHLAG
 \label{ch:state_of_the_art}
-% <<<<< ENDE VORSCHLAG
 % ===============================================================
-% Zielumfang Kapitel 2: 24 Seiten
-%   2.1 Kurative Systemführung ................................ 8
-%   2.2 Grenzen der bestehenden marktlichen Grundlage ......... 6
-%   2.3 Batteriespeicher als kurativer Akteur .................. 7
-%   2.4 Anforderungen an einen kurativen Marktmechanismus ..... 3
+% AUFBAU UND UMFANG, Zielwert 25 Seiten
+%   Kapiteleinleitung mit drei Literaturstraengen ........... 1
+%   2.1 Kurative Systemfuehrung ............................. 7,5
+%       2.1.1 Abgrenzung praeventiver und kurativer Systemfuehrung  2,5
+%       2.1.2 Rechtlicher Rahmen .............................. 2
+%       2.1.3 Prozessablauf und Zeitanforderungen ............. 2
+%       2.1.4 Herausforderungen der Umsetzung ................. 1
+%   2.2 Marktliche und regulatorische Rahmenbedingungen ..... 9
+%       2.2.1 Dispatchmodelle und Marktzeithorizonte .......... 2
+%       2.2.2 Beschaffung von Regelleistung .................. 1,5
+%       2.2.3 Verguetung von Redispatch-Massnahmen ........... 2
+%       2.2.4 Der modifizierte Weber-Ansatz ................. 2,5
+%       2.2.5 Flexible Netzanschlussvereinbarungen ........... 0,5
+%       2.2.6 Zwischenfazit .................................. 1
+%   2.3 Batteriespeicher als Technologie des kurativen Akteurs  6
+%       2.3.1 Vergleich kurativer Technologien ............... 1,5
+%       2.3.2 Erloesquellen und Mehrfachvermarktung .......... 1,5
+%       2.3.3 Zielkonflikt zwischen Vermarktung und Verfuegbarkeit  2
+%       2.3.4 Marktentwicklung bis 2030 ..................... 1
+%   2.4 Anforderungen und Forschungsbedarf .................. 2,5
+%       2.4.1 Anforderungskatalog ............................ 1
+%       2.4.2 Abgleich bestehender Marktdesignansaetze ....... 1
+%       2.4.3 Ableitung des Forschungsbedarfs ............... 0,5
 %
-% Der Stand der Forschung ist nicht mehr in der Einleitung, sondern in
-% die Kapiteleinleitung (Straenge 1 und 3) und die Einleitung von
-% Abschnitt 2.3 (Strang 2) integriert.
+% ARGUMENTATIONSBOGEN, beim Schreiben durchhalten:
+%   2.1 Kurative Systemfuehrung ist technisch erprobt und rechtlich
+%       zulaessig, aber sie braucht einen Akteur, der sich bindet.
+%   2.2 Fuer Systemdienstleistungen bestehen zwei prominente
+%       Verguetungslogiken. Die Regelleistung verguetet Vorhaltung, ist
+%       aber nicht lokational. Das Engpassmanagement ist lokational,
+%       verguetet aber den Eingriff. Keine der beiden passt.
+%   2.3 Batteriespeicher sind fuer das engste Zeitfenster die einzige
+%       geeignete Technologie, unterliegen aber einem Erloeskonflikt.
+%   2.4 Daraus folgen Anforderungen an einen Mechanismus, den es nicht
+%       gibt.
 %
-% ARGUMENTATIONSBOGEN -- beim Schreiben durchhalten:
-%   2.1 Kurative Systemführung ist technisch und regulatorisch möglich
-%   2.2 Die bestehenden marktlichen Instrumente können sie nicht beschaffen
-%   2.3 BESS sind der einzige Akteur für das Sekundenfenster, unterliegen
-%       aber einem Erlöskonflikt, der ihre Verfügbarkeit verhindert
-%   2.4 Daraus folgen Anforderungen an einen Mechanismus, den es nicht gibt
-% ===============================================================
+% STILVORGABE, identisch zu chapter_1.tex:
+%   - Vollstaendige Saetze mit Punkt als Satzende.
+%   - Keine Doppelpunkte, keine Gedankenstriche, keine Semikola im
+%     Fliesstext.
+%   - Listeneinleitungen ohne Doppelpunkt, mit "naemlich" oder
+%     "folgende".
+%   - Kein alleinstehendes \\ als Absatztrenner.
+%   - "Akteur" fuer den Marktteilnehmer, "Technologie" fuer die Anlage.
+%     Der Begriff "Aktor" wird nicht verwendet.
 %
-% LESEHILFE ZU DIESER FASSUNG
-% Alle ausformulierten Passagen sind eingefasst in:
-%   % >>>>> VORSCHLAG ...
-%   % <<<<< ENDE VORSCHLAG
-% Die urspruenglichen Stichpunkte stehen jeweils darunter als
-% Kontrollkommentar (% URSPRUENGLICHE STICHPUNKTE), damit die Zuordnung
-% Quelle -> Aussage nachpruefbar bleibt. Vor Abgabe loeschen.
-% Offene Stellen: % PRUEFEN: bzw. [PLATZHALTER: ...]
+% TERMINOLOGIE DER GESUCHTEN GROESSE, verbindlich:
+%   Verwendet wird "kurativer Reservierungspreis". Nicht verwendet werden
+%   "Mindestverguetung", "Verguetungsbereich" und "Untergrenze der
+%   Verguetung".
+%
+% AUSSAGEN, DIE NICHT UNBEMERKT VERSCHAERFT WERDEN DUERFEN:
+%   - Kurative Systemfuehrung ist erprobt, nicht validiert und zugelassen.
+%     KuPilot ist ein Pilotbetrieb, und die Zulaessigkeit folgt aus einer
+%     Auslegung des Kostenminimierungsgebots.
+%   - Zunehmende Kurzfristigkeit wird NICHT in zusaetzliches
+%     Eingriffsvolumen uebersetzt. Diese Kausalkette ist aufgegeben. Die
+%     Begruendung laeuft ueber das Handelsfenster hinter der letzten
+%     Netzsicherheitsrechnung.
+%   - Der finanzielle Ausgleich nach § 13a EnWG ist NICHT additiv.
+%     Werteverbrauch und entgangene Erloesmoeglichkeiten stehen in einer
+%     max()-Beziehung.
+%   - Die Forschungsluecke ist nicht das Fehlen einer Verguetung von
+%     Vorhaltung, sondern das Fehlen ihrer Verbindung mit
+%     Lokationalitaet.
+%
+% ZU DIESER FASSUNG:
+%   Die frueheren Blocks "% >>>>> VORSCHLAG" und "% URSPRUENGLICHE
+%   STICHPUNKTE" sind entfernt. Die Zuordnung Quelle zu Aussage ist ueber
+%   die Versionsgeschichte nachvollziehbar. Offene Stellen sind mit
+%   % OFFEN Nr. markiert und im Block am Dateiende gesammelt.
 % ===============================================================
 
-Kurative Systemführung stellt einen ergänzenden Ansatz in der Systemführung dar, der die Kapazitätsgrenzen des bestehenden Übertragungsnetzes erweitert und damit einen Beitrag zur Reduktion des strukturellen Engpassmanagementbedarfs leisten kann. 
-Dieses Kapitel legt zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen dieses Ansatzes dar. 
-Anschließend wird untersucht, warum die bestehenden marktlichen Instrumente die für einen kurativen Einsatz erforderliche Vorhalteleistung nicht beschaffen können, weshalb Batteriespeicher als kurativer Akteur im Fokus stehen und welchem Erlöskonflikt sie dabei unterliegen. 
-Aus dieser Argumentation werden abschließend die Anforderungen an einen kurativen Marktmechanismus abgeleitet.
+Kurative Systemführung stellt einen ergänzenden Ansatz in der Systemführung dar, der die Kapazitätsgrenzen des bestehenden Übertragungsnetzes erweitert und damit einen Beitrag zur Reduktion des strukturellen Engpassmanagementbedarfs leisten kann.
+Dieses Kapitel legt zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen dieses Ansatzes dar.
+Anschließend werden die bestehenden Vergütungslogiken für Systemdienstleistungen daraufhin untersucht, ob sich eine von ihnen auf die kurative Vorhaltung anwenden lässt.
+Darauf folgen die Begründung der Technologiewahl und der Erlöskonflikt, dem die gewählte Technologie unterliegt.
+Aus dieser Argumentation werden abschließend die Anforderungen an einen kurativen Marktmechanismus und der Forschungsbedarf abgeleitet.
 
-% >>>>> VORSCHLAG: FORSCHUNGSSTRAENGE, AUS DEM AUFGELOESTEN ABSCHNITT 1.2
-% Diese beiden Absaetze uebernehmen die Funktion des entfallenen
-% Abschnitts "Stand der Forschung und Forschungslueke" aus der
-% Einleitung. Sie stehen hier, weil die genannten Quellen in diesem
-% Kapitel tatsaechlich verwendet werden -- in der Einleitung standen sie
-% ohne Bezug zu einer Argumentation.
-% Strang 2 (Betriebsfuehrung von Batteriespeichern) ist nicht hier,
-% sondern in der Einleitung von Abschnitt 2.3 aufgenommen, wo er
-% inhaltlich hingehoert.
+% Die drei Literaturstraenge uebernehmen die Funktion des aufgeloesten
+% Abschnitts "Stand der Forschung" aus der Einleitung. Strang 2 ist nicht
+% hier, sondern in der Einleitung von Abschnitt 2.3 aufgenommen.
+% GEAENDERT: Strang 3 umfasst jetzt beide Verguetungslogiken und nicht
+% mehr allein den Weber-Ansatz, weil Abschnitt 2.2 die Regelleistung
+% gleichrangig behandelt.
 Die Literatur zum Gegenstand dieser Arbeit lässt sich in drei Stränge gliedern, die bislang nicht zusammengeführt sind und deren jeweiliger Endpunkt die Gliederung dieses Kapitels bestimmt.
-Der erste Strang betrifft die technische Validierung der kurativen Systemführung und ist Gegenstand des Abschnitts \ref{sec:curative_basics}.
+Der erste Strang betrifft die technische Erprobung der kurativen Systemführung und ist Gegenstand des Abschnitts \ref{sec:curative_basics}.
 Das Verbundprojekt InnoSys~2030 hat den Maßnahmenraum systematisiert und die Anforderungen an Aktivierungszeiten bestimmt \cite{innosys_2030_gesamtverbund_innovationen_2021}, ergänzt um Arbeiten zur Integration kurativer Maßnahmen in die Betriebsplanung \cite{leeuwen_integration_2020}, zu den daraus folgenden Redundanzanforderungen \cite{sous_untersuchung_2022, sous_comparison_2025} sowie um die erste Erprobung im realen Übertragungsnetzbetrieb im Projekt KuPilot \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
-Dieser Strang endet bei der Feststellung der technischen Machbarkeit; die Frage, wie die benötigten Akteure beschafft werden, stellt er nicht.
+Dieser Strang endet bei der Feststellung der technischen Machbarkeit.
+Die Frage, wie die benötigten Akteure beschafft werden, stellt er nicht.
 Der zweite Strang untersucht die Betriebsführung von Batteriespeichern im Spannungsfeld von Marktvermarktung und Netzdienlichkeit und wird in Abschnitt \ref{sec:bess_actor} aufgegriffen.
-Der dritte Strang befasst sich mit der Vergütung von Redispatch-Maßnahmen und ist Gegenstand des Abschnitts \ref{sec:redispatch_compensation}.
-Mit dem optionsbasierten Ansatz zur Bewertung entgangener Erlösmöglichkeiten \cite{weber_gutachten_2015} hat er die heute geltende Bemessungssystematik geprägt, und nachfolgende Arbeiten haben dessen Übertragbarkeit auf weitere Akteurstypen untersucht \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
-Er setzt jedoch durchgehend einen durchgeführten Eingriff voraus und behandelt die Bewertung einer vorgehaltenen, nicht abgerufenen Reaktionsfähigkeit nicht.
+Der dritte Strang befasst sich mit der Vergütung von Systemdienstleistungen und ist Gegenstand des Abschnitts \ref{sec:market_limits}.
+Für die Regelleistung ist die Beschaffung vorgehaltener Leistung im Wettbewerb etabliert und über die Präqualifikationsbedingungen ausgestaltet \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Für das Engpassmanagement hat der optionsbasierte Ansatz zur Bewertung entgangener Erlösmöglichkeiten die heute geltende Bemessungssystematik geprägt \cite{weber_gutachten_2015}, und nachfolgende Arbeiten haben dessen Übertragbarkeit auf weitere Technologien untersucht \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
+Beide Logiken decken jedoch nur eine der beiden Eigenschaften ab, die eine kurative Beschaffung benötigt.
 Zwischen diesen Endpunkten liegt der Forschungsbedarf, den Abschnitt \ref{sec:research_gap} aus der Argumentation dieses Kapitels herleitet und am regulatorischen Befund belegt.
-% <<<<< ENDE VORSCHLAG
 
 % ###############################################################
 \section{Kurative Systemführung}
 \label{sec:curative_basics}
-% [Ziel: 8 Seiten]
 
-Der sichere Betrieb des deutschen Übertragungsnetzes erfordert zu jedem Zeitpunkt die Einhaltung des \mbox{(N-1)-Kriteriums}. 
-Dieses ist in der europäischen Leitlinie für den Übertragungsnetzbetrieb verbindlich definiert als \glqq{}die Regel, wonach die nach dem Auftreten eines Ausfalls weiter in Betrieb befindlichen Betriebsmittel innerhalb der Regelzone eines \ac{ÜNB} in der Lage sind, sich an die neue Betriebssituation anzupassen, ohne betriebliche Sicherheitsgrenzwerte zu überschreiten\grqq{} \cite[Art. 3 Abs. 14]{europaische_kommission_verordnung_2017}. 
-Die Art und Weise, wie \ac{ÜNB} dieses Kriterium erfüllen, unterscheidet sich je nach Systemführungskonzept. 
-Kurative Systemführung beschreibt dabei den Ansatz, das \mbox{(N-1)-Kriterium} nicht präventiv, sondern durch vordefinierte Systemautomatiken oder manuell aktivierbare Gegenmaßnahmen nach Eintreten des Fehlerfalles sicherzustellen \cite{innosys_2030_gesamtverbund_innovationen_2021}. 
+Der sichere Betrieb des deutschen Übertragungsnetzes erfordert zu jedem Zeitpunkt die Einhaltung des \mbox{(N-1)-Kriteriums}.
+Dieses ist in der europäischen Leitlinie für den Übertragungsnetzbetrieb verbindlich definiert als \glqq{}die Regel, wonach die nach dem Auftreten eines Ausfalls weiter in Betrieb befindlichen Betriebsmittel innerhalb der Regelzone eines \ac{ÜNB} in der Lage sind, sich an die neue Betriebssituation anzupassen, ohne betriebliche Sicherheitsgrenzwerte zu überschreiten\grqq{} \cite[Art. 3 Abs. 14]{europaische_kommission_verordnung_2017}.
+Die Art und Weise, wie \ac{ÜNB} dieses Kriterium erfüllen, unterscheidet sich je nach Systemführungskonzept.
+Kurative Systemführung beschreibt dabei den Ansatz, das \mbox{(N-1)-Kriterium} nicht präventiv, sondern durch vordefinierte Systemautomatiken oder manuell aktivierbare Gegenmaßnahmen nach Eintreten des Fehlerfalles sicherzustellen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Physikalische Grundlage hierfür ist die thermische Trägheit von Betriebsmitteln, die kurzfristig höhere Strombelastungen tolerieren, als im Dauerbetrieb zulässig sind, und damit ein Zeitfenster für die Aktivierung kurativer Gegenmaßnahmen eröffnen.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Präventive und kurative Systemführung im Vergleich}
-% "im Vergleich" benennt die Darstellungsform, nicht den Gegenstand.
 \subsection{Abgrenzung präventiver und kurativer Systemführung}
-% <<<<< ENDE VORSCHLAG
 \label{sec:prev_vs_cur}
-% [Ziel: 2,5 Seiten]
 
-Zur Einordnung beider Ansätze eignet sich das in Art.\,18 \ac{SO GL} verankerte Vier-Zustands-Modell des Netzes: Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}. 
-Im Normalbetrieb sind alle Betriebsmittel innerhalb ihrer Grenzwerte belastet und das System ist (N-1)-sicher. 
-Der Gefährdungszustand tritt ein, wenn ein Störfall zu einer Grenzwertverletzung führen würde, ohne dass unmittelbar eine Versorgungsunterbrechung droht. 
+Zur Einordnung beider Ansätze eignet sich das in Art.\,18 \ac{SO GL} verankerte Vier-Zustands-Modell des Netzes mit Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}.
+Im Normalbetrieb sind alle Betriebsmittel innerhalb ihrer Grenzwerte belastet und das System ist (N-1)-sicher.
+Der Gefährdungszustand tritt ein, wenn ein Störfall zu einer Grenzwertverletzung führen würde, ohne dass unmittelbar eine Versorgungsunterbrechung droht.
 Der Notzustand ist demgegenüber dadurch gekennzeichnet, dass Betriebsgrenzwerte bereits verletzt sind oder eine unmittelbare Gefährdung der Versorgungssicherheit besteht.
-Kuratives Handeln setzt genau an dem Übergang zwischen beiden Zuständen an:
+Kuratives Handeln setzt genau an dem Übergang zwischen beiden Zuständen an.
 Es akzeptiert den Gefährdungszustand als transiente Betriebsphase und reagiert mit gezielten Eingriffen, bevor der Notzustand erreicht wird.
 Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SO GL} durch die Unterscheidung zwischen der dauerhaft zulässigen Strombelastbarkeit \ac{PATL} und der vorübergehend zulässigen Strombelastbarkeit \ac{TATL}.
-Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall. 
-Im präventiven Betrieb wird die Auslastung stets unterhalb der \ac{PATL} gehalten, sodass auch im \mbox{(N-1)-Fall} keine Grenzwertverletzung auftritt. 
+Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall.
+Im präventiven Betrieb wird die Auslastung stets unterhalb der \ac{PATL} gehalten, sodass auch im \mbox{(N-1)-Fall} keine Grenzwertverletzung auftritt.
 Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur \ac{PATL} im Normalbetrieb, nutzt nach Eintreten des Fehlerfalles das durch die \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine gezielte Gegenmaßnahme, bevor die transiente Stromtragfähigkeit überschritten wird.
-\\
+
+% OFFEN 1: Der Dateiname enthaelt einen Punkt vor der Extension. Der
+% Graphics-Treiber bestimmt die Extension anhand des letzten Punktes, was
+% bei manchen Konfigurationen fehlschlaegt. Datei nach
+% preventiv_vs_curative_redispatch.pdf umbenennen und den Pfad anpassen.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapter_2/preventiv_vs._curative_redispatch.pdf}
@@ -123,59 +134,65 @@ Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur 
     \label{fig:preventiv_kurativ}
 \end{figure}
 
-Der präventive Ansatz bietet den Vorteil hoher Planungssicherheit, da (N-1)-Sicherheit bereits in der Einsatzplanung sichergestellt wird und keine reaktiven Eingriffe im Fehlerfall erforderlich sind. 
-Diese Robustheit wird jedoch durch eine konservative Auslegung der zulässigen Betriebsmittelauslastung unterhalb der \ac{PATL} erreicht, was zu einem erhöhten Redispatchbedarf und damit verbundenen Kosten führt \cite{sous_comparison_2025}. 
-Darüber hinaus stößt ein rein präventiver Betrieb mit der Einführung des \ac{IDC} an konzeptionelle Grenzen, da die zunehmend kurzfristige Handelsaktivität eine abschließende (N-1)-sichere Einsatzplanung zum Vortag erschwert. 
+Der präventive Ansatz bietet den Vorteil hoher Planungssicherheit, da (N-1)-Sicherheit bereits in der Einsatzplanung sichergestellt wird und keine reaktiven Eingriffe im Fehlerfall erforderlich sind.
+Diese Robustheit wird jedoch durch eine konservative Auslegung der zulässigen Betriebsmittelauslastung unterhalb der \ac{PATL} erreicht, was zu einem erhöhten Redispatchbedarf und damit verbundenen Kosten führt \cite{sous_comparison_2025}.
+Darüber hinaus stößt ein rein präventiver Betrieb mit der Einführung des \ac{IDC} an konzeptionelle Grenzen, da die zunehmend kurzfristige Handelsaktivität eine abschließende (N-1)-sichere Einsatzplanung zum Vortag erschwert.
 Dieser Aspekt wird in Abschnitt \ref{sec:market_horizons} vertieft.
-Die kurative Systemführung erschließt demgegenüber Effizienzpotenziale, indem sie die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster begreift und eine höhere Vorauslastung im Normalbetrieb erlaubt. 
-Dies reduziert den präventiven Redispatchbedarf und senkt dadurch die Systemführungskosten. 
+Die kurative Systemführung erschließt demgegenüber Effizienzpotenziale, indem sie die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster begreift und eine höhere Vorauslastung im Normalbetrieb erlaubt.
+Dies reduziert den präventiven Redispatchbedarf und senkt dadurch die Systemführungskosten.
 Der Effizienzgewinn geht jedoch mit erhöhten Anforderungen an den Automatisierungsgrad und die Sicherheit einher.
 Kurative Maßnahmen müssen im Fehlerfall zuverlässig und innerhalb des \ac{TATL}-Zeitfensters aktivierbar sein \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-\\
-Jahressimulationen belegen, dass der kurative Betrieb gegenüber dem rein präventiven Ansatz ein signifikantes Einsparpotenzial realisiert \cite{sous_comparison_2025}. 
+Jahressimulationen belegen, dass der kurative Betrieb gegenüber dem rein präventiven Ansatz ein signifikantes Einsparpotenzial realisiert \cite{sous_comparison_2025}.
 Vor diesem Hintergrund gewinnt die kurative Systemführung in Europa zunehmend an Bedeutung.
 Die konkrete Entwicklung im deutschen Übertragungsnetz wird in Abschnitt \ref{sec:challenges} vertieft.
 
-% >>>>> VORSCHLAG: ZWEI SAETZE ZUR RUECKBINDUNG AN DIE PROBLEMSTRAENGE
-% Bindet den Vergleich an die Einleitung zurueck. Ohne diese Bruecke
-% liest sich 2.1.1 wie ein Lehrbuchabschnitt; mit ihr ist klar, warum er
-% in dieser Arbeit steht.
+% GEAENDERT UND TRAGEND: Die frueher hier stehende Aussage, der praeventive
+% Ansatz uebersetze zunehmende Kurzfristigkeit unmittelbar in
+% zusaetzliches Eingriffsvolumen, ist entfallen. Diese Kausalkette ist
+% nicht belegbar. Die Begruendung laeuft jetzt ueber die
+% Disponierbarkeit, also darueber, dass eine praeventive Massnahme vor
+% der Erfuellung disponiert werden muss und eine kurative nicht. Das ist
+% eine Eigenschaft der Verfahren und keine Behauptung ueber Mengen.
+% Der Anschluss an Absatz 5 von Abschnitt 1.1 ist damit hergestellt.
 Für die Problemstellung dieser Arbeit ist die Unterscheidung in zweifacher Hinsicht bedeutsam.
-Der präventive Ansatz beantwortet Prognoseunsicherheit ausschließlich mit einer im Voraus zu bemessenden Sicherheitsmarge und übersetzt zunehmende Kurzfristigkeit damit unmittelbar in zusätzliches Eingriffsvolumen; der kurative Ansatz ersetzt diese Marge durch eine vorgehaltene, aber nur im Bedarfsfall abgerufene Reaktionsfähigkeit und entkoppelt so das Volumen der Vorsorge von dem Volumen der tatsächlichen Eingriffe.
-Die Kosten verschieben sich dadurch von den Erzeugungsauslagen einer durchgeführten Maßnahme zu den Vorhaltekosten einer bereitgestellten Option -- eine Verschiebung, für die die geltende Vergütungssystematik nach Abschnitt \ref{sec:redispatch_compensation} keine Bemessungsgrundlage kennt.
-% <<<<< ENDE VORSCHLAG
+Erstens muss eine präventive Gegenmaßnahme vor dem Erfüllungszeitpunkt disponiert werden, während eine kurative Maßnahme erst im Fehlerfall wirkt und daher auch Zustände abdecken kann, die nach der letzten Netzsicherheitsrechnung entstehen.
+Der kurative Ansatz ersetzt damit eine im Voraus zu bemessende Sicherheitsmarge durch eine vorgehaltene und nur im Bedarfsfall abgerufene Reaktionsfähigkeit.
+Zweitens verschieben sich die Kosten dadurch von den Erzeugungsauslagen einer durchgeführten Maßnahme zu den Vorhaltekosten einer bereitgestellten Option.
+Für diese Verschiebung kennt die Vergütungssystematik des Engpassmanagements nach Abschnitt \ref{sec:redispatch_compensation} keine Bemessungsgrundlage.
 
-Im Rahmen dieser Arbeit bezeichnet kurative Systemführung im Weiteren ausschließlich die kurative Höherauslastung, das heißt die bewusst höhere Vorauslastung von Betriebsmitteln bis zur \ac{PATL} im Normalbetrieb unter Nutzung der \ac{TATL}-Reserve im Fehlerfall. 
+Im Rahmen dieser Arbeit bezeichnet kurative Systemführung im Weiteren ausschließlich die kurative Höherauslastung, das heißt die bewusst höhere Vorauslastung von Betriebsmitteln bis zur \ac{PATL} im Normalbetrieb unter Nutzung der \ac{TATL}-Reserve im Fehlerfall.
 Der Begriff des kurativen Redispatchs, verstanden als nachgelagerte Einspeiseanpassung ohne vorgelagerte Höherauslastung, ist nicht Gegenstand dieser Arbeit.
 
 % ---------------------------------------------------------------
 \subsection{Rechtlicher Rahmen}
 \label{sec:legal_framework}
-% [Ziel: 2 Seiten]
 
-Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}. 
+Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}.
 §\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen; da das Gesetz bei strom- und spannungsbedingten Anpassungen ausdrücklich die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie jedoch erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
+Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen.
+Da das Gesetz bei strom- und spannungsbedingten Anpassungen ausdrücklich die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
 Für \ac{BESS} als kurative Ressource relevant ist zudem §\,118 Abs.\,6 \ac{EnWG}, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit einen wirtschaftlichen Anreiz für deren Einsatz im Netzbetrieb setzt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
-\\
-Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
-Sie verpflichtet jeden \ac{ÜNB}, für jedes Betriebsmittel betriebliche Sicherheitsgrenzwerte festzulegen, die neben Spannungs- und Kurzschlussstromgrenzwerten ausdrücklich auch vorübergehend zulässige Überlasten umfassen und damit die physikalische Grundlage für die \ac{TATL}-basierte kurative Höherauslastung bilden. 
-Nach Eintreten eines Fehlerfalles sind die Leistungsflüsse innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze zu führen.
-Grundlage für die Planung dieser Maßnahmen bildet eine Ausfallvarianten-Liste, die alle relevanten (N-1)-Szenarien erfasst \cite{europaische_kommission_verordnung_2017}. 
-Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-\\
-Ein marktbasiertes kuratives Engpassmanagement entspricht damit sowohl dem gesetzlichen Kostenminimierungsgebot des §\,13 \ac{EnWG} als auch den europäischen Planungsanforderungen der \ac{SO GL}.
 
-% HINWEIS: Der Redundanz-Absatz ist von hier nach 2.1.4 gewandert und
-% dort auf einen Satz gekürzt.
+Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
+Sie verpflichtet jeden \ac{ÜNB}, für jedes Betriebsmittel betriebliche Sicherheitsgrenzwerte festzulegen, die neben Spannungs- und Kurzschlussstromgrenzwerten ausdrücklich auch vorübergehend zulässige Überlasten umfassen und damit die physikalische Grundlage für die \ac{TATL}-basierte kurative Höherauslastung bilden.
+Nach Eintreten eines Fehlerfalles sind die Leistungsflüsse innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze zu führen.
+Grundlage für die Planung dieser Maßnahmen bildet eine Ausfallvarianten-Liste, die alle relevanten (N-1)-Szenarien erfasst \cite{europaische_kommission_verordnung_2017}.
+Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+
+% GEAENDERT: Die frueher hier stehende Formulierung, ein marktbasiertes
+% kuratives Engpassmanagement entspreche dem Kostenminimierungsgebot,
+% behauptete eine Zulaessigkeitsfeststellung. Der Satz sagt jetzt, dass
+% sich die Zulaessigkeit aus einer Auslegung ergibt und nicht aus einer
+% ausdruecklichen Regelung.
+Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten weder das \ac{EnWG} noch die \ac{SO GL}.
+Ihre Zulässigkeit lässt sich jedoch aus dem Kostenminimierungsgebot des §\,13 \ac{EnWG} und dem Vorrang marktbasierter Maßnahmen ableiten, soweit die kurative Maßnahme die kostengünstigere Alternative darstellt.
 
 % ---------------------------------------------------------------
 \subsection{Prozessablauf und Zeitanforderungen}
 \label{sec:curative_functionality}
-% [Ziel: 2 Seiten]
 
-Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, die in Abbildung~\ref{fig:curativ_process} für die beiden beteiligten Akteure dargestellt sind: den \ac{ÜNB} und den kurativen Akteur.
-\\
+Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, die in Abbildung~\ref{fig:curativ_process} für die beiden beteiligten Akteure dargestellt sind, nämlich den \ac{ÜNB} und den kurativen Akteur.
+
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapter_2/curative_process.pdf}
@@ -185,63 +202,48 @@ Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, die i
 
 In der Betriebsplanung identifiziert der \ac{ÜNB} auf Basis von Netzprognosen potenzielle Engpässe und überwacht dabei thermische Grenzwerte sowie Spannungsbänder.
 N-1-gefährdete Situationen werden mithilfe von \ac{PTDF}- und \ac{LODF}-Sensitivitäten erkannt, die den Einfluss einer Leistungsänderung bzw.\ eines Leitungsausfalls auf die Lastflüsse im Netz linearisiert abbilden~\cite{blank_determination_2024}.
-Für kritische Ausfallvarianten identifiziert der \ac{ÜNB} die Möglichkeit einer kurativen Maßnahme zur Engpassbehebung. 
-Das Spektrum geeigneter Gegenmaßnahmen umfasst nach InnoSys 2030 insgesamt 16 Maßnahmentypen in vier Kategorien: leistungsflusssteuernde Betriebsmittel, Spannungshaltung, Erzeugung und Last im Übertragungsnetz sowie Erzeugung und Last im Verteilernetz~\cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, das heißt die positive und negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann. 
-Bei energiebegrenzten Akteuren wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
+Für kritische Ausfallvarianten identifiziert der \ac{ÜNB} die Möglichkeit einer kurativen Maßnahme zur Engpassbehebung.
+Das Spektrum geeigneter Gegenmaßnahmen umfasst nach InnoSys 2030 insgesamt 16 Maßnahmentypen in vier Kategorien, nämlich leistungsflusssteuernde Betriebsmittel, Spannungshaltung, Erzeugung und Last im Übertragungsnetz sowie Erzeugung und Last im Verteilernetz~\cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, das heißt die positive und negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
+Bei energiebegrenzten Technologien wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
 Dies erfordert eine gezielte Vorhaltung des Ladezustands im Vorfeld des Abrufs.
-Für den bilanziellen Ausgleich einer kurativen Maßnahme sind stets mindestens zwei Akteure erforderlich, die als Quelle und Senke koordiniert eingesetzt werden. 
+Für den bilanziellen Ausgleich einer kurativen Maßnahme sind stets mindestens zwei Akteure erforderlich, die als Quelle und Senke koordiniert eingesetzt werden.
 Leistungsflusssteuernde Betriebsmittel wie \ac{PST} und \ac{HGÜ} bilden hierbei eine Ausnahme, da sie den Lastfluss direkt beeinflussen und keinen separaten bilanziellen Ausgleich erfordern~\cite{leeuwen_integration_2020}.
-Im Normalbetrieb prüft der \ac{ÜNB} kontinuierlich in der Netzsicherheitsrechnung, ob die geplanten kurativen Maßnahmen bei Eintreten einer Ausfallvariante zur Befundfreiheit führen. 
+Im Normalbetrieb prüft der \ac{ÜNB} kontinuierlich in der Netzsicherheitsrechnung, ob die geplanten kurativen Maßnahmen bei Eintreten einer Ausfallvariante zur Befundfreiheit führen.
 Bei positivem Befund wird die Maßnahme scharfgeschaltet und der Akteur verbleibt in Bereitschaft.
-Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus. 
-Im Rahmen des KuPilot-Projekts konnte eine Aktivierung innerhalb von maximal fünf Minuten nach Überlastungseintritt im realen Übertragungsnetzbetrieb erprobt werden~\cite{tennet_tso_gmbh_pilotbetrieb_2025}. 
+Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus.
+Im Rahmen des KuPilot-Projekts konnte eine Aktivierung innerhalb von maximal fünf Minuten nach Überlastungseintritt im realen Übertragungsnetzbetrieb erprobt werden~\cite{tennet_tso_gmbh_pilotbetrieb_2025}.
 Die Akteure passen ihre Leistungspunkte innerhalb der vorgegebenen Reaktionszeit an.
 Der \ac{ÜNB} führt anschließend eine Neubewertung des Systemzustands durch, um die tatsächliche Wirksamkeit der Maßnahme zu überprüfen.
-In der Rückführung veranlasst der \ac{ÜNB} einen Redispatch zur Wiederherstellung des (N-1)-sicheren Zustands. 
+In der Rückführung veranlasst der \ac{ÜNB} einen Redispatch zur Wiederherstellung des (N-1)-sicheren Zustands.
 Der Akteur wird aus der kurativen Bindung entlassen und kehrt in den freien Betrieb zurück.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG DER ZEITANFORDERUNGEN
 % Diese Passage traegt die Begruendung fuer Bindungsdauer und
 % Reaktionszeit in Abschnitt 3.1 und muss deshalb praezise sein.
-% PRUEFEN: Die drei Zeitfenster (<10 s / 2 min / 15 min) und ihre
-% Bezeichnungen sind aus der Stichpunktliste uebernommen. Bitte gegen
-% den Abschlussbericht InnoSys 2030 verifizieren und die Fundstelle als
-% \cite[S.\,XX]{...} ergaenzen -- die Dreiteilung ist das Fundament der
+% OFFEN 2: Die drei Zeitfenster und ihre Bezeichnungen gegen den
+% Abschlussbericht InnoSys 2030 verifizieren und die Fundstelle als
+% \cite[S.\,XX]{...} ergaenzen. Die Dreiteilung ist das Fundament der
 % Produktdefinition und wird in der Verteidigung nachgefragt.
 Die Anforderungen an die Aktivierungsgeschwindigkeit ergeben sich unmittelbar aus dem \ac{TATL}-Zeitfenster des jeweils betroffenen Betriebsmittels.
-InnoSys~2030 unterscheidet drei Klassen kurativer Maßnahmen, die sich an der erreichbaren Aktivierungsgeschwindigkeit der Akteure orientieren: sehr schnelle Maßnahmen mit einer Wirksamkeit von unter zehn Sekunden, schnelle Maßnahmen mit einer Wirksamkeit von etwa zwei Minuten und langsame Maßnahmen mit einer Wirksamkeit von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Die Klassen sind nicht gleichwertig, denn die verfügbare Reaktionszeit ist keine Wahlgröße des Akteurs, sondern eine Eigenschaft des Betriebsmittels: Je kürzer das zulässige Überlastintervall, desto kleiner der Kreis technisch geeigneter Akteure.
-Diese Kopplung bestimmt die Akteursauswahl.
+InnoSys~2030 unterscheidet drei Klassen kurativer Maßnahmen, die sich an der erreichbaren Aktivierungsgeschwindigkeit orientieren, nämlich sehr schnelle Maßnahmen mit einer Wirksamkeit von unter zehn Sekunden, schnelle Maßnahmen mit einer Wirksamkeit von etwa zwei Minuten und langsame Maßnahmen mit einer Wirksamkeit von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Die Klassen sind nicht gleichwertig, denn die verfügbare Reaktionszeit ist keine Wahlgröße des Akteurs, sondern eine Eigenschaft des Betriebsmittels.
+Je kürzer das zulässige Überlastintervall ausfällt, desto kleiner ist der Kreis technisch geeigneter Technologien.
+Diese Kopplung bestimmt die Technologiewahl.
 Konventionelle Kraftwerke besitzen Vorlaufzeiten von bis zu 24 Stunden und kommen daher praktisch ausschließlich für das 15-Minuten-Fenster in Betracht \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-\ac{BESS} hingegen erreichen ihren Zielleistungspunkt innerhalb von Sekunden und sind damit der einzige Akteurstyp, der auch das Zeitfenster von unter zehn Sekunden bedienen kann; darüber hinaus ermöglichen sie eine netzbildende Regelung \cite{porst_betriebskonzepte_2025}.
+\ac{BESS} hingegen erreichen ihren Zielleistungspunkt innerhalb von Sekunden und können damit auch das Zeitfenster von unter zehn Sekunden bedienen.
+Darüber hinaus ermöglichen sie eine netzbildende Regelung \cite{porst_betriebskonzepte_2025}.
 Arbeiten zur kombinierten präventiv-kurativen Optimierung berücksichtigen die \ac{TATL}-Restriktionen bereits explizit in der Einsatzplanung und bestätigen diese Zuordnung \cite{lindner_operation_2023}.
 Die Einhaltung der Reaktionszeit ist dabei keine Frage der Optimierungsgüte, sondern eine harte Nebenbedingung.
-Während die \ac{PATL} die dauerhaft zulässige Auslastung beschreibt, ist die \ac{TATL} nach Art.\,25 \ac{SO GL} lediglich eine zeitlich befristet zulässige Überlast; eine Überschreitung dieses Intervalls führt zu einer thermischen Beanspruchung jenseits der Auslegungsgrenzen und gefährdet die Integrität des Betriebsmittels \cite{europaische_kommission_verordnung_2017}.
+Während die \ac{PATL} die dauerhaft zulässige Auslastung beschreibt, ist die \ac{TATL} nach Art.\,25 \ac{SO GL} lediglich eine zeitlich befristet zulässige Überlast.
+Eine Überschreitung dieses Intervalls führt zu einer thermischen Beanspruchung jenseits der Auslegungsgrenzen und gefährdet die Integrität des Betriebsmittels \cite{europaische_kommission_verordnung_2017}.
 Ein kurativer Akteur, der die zugesagte Leistungsänderung nicht fristgerecht erbringt, wandelt den Gefährdungszustand daher nicht in den Normalzustand zurück, sondern führt das System in den Notzustand.
-Verfügbarkeit ist damit kein graduelles, sondern ein binäres Gütemerkmal des kurativen Produkts -- ein Befund, der in Abschnitt \ref{sec:requirements_catalogue} als Anforderung und in Abschnitt \ref{sec:soc_conflict} als Konfliktursache wieder aufgegriffen wird.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Drei TATL-Zeitfenster: <10 s, 2 min, 15 min \cite{innosys_...}
-% - Anforderungen je Akteurstyp: BESS einziger Akteur <10 s, netzbildend
-%   \cite{porst_betriebskonzepte_2025}; konv. Kraftwerke bis 24 h Vorlauf
-%   \cite{innosys_...}; praeventiv-kurative Optimierung \cite{lindner_...}
-% - Konsequenzen bei Ueberschreitung: Art. 25 SO GL, Betriebsmittelintegritaet
-% <<<<< ENDE VORSCHLAG
+Verfügbarkeit ist damit kein graduelles, sondern ein binäres Gütemerkmal des kurativen Produkts.
+Dieser Befund wird in Abschnitt \ref{sec:requirements_catalogue} als Anforderung und in Abschnitt \ref{sec:soc_conflict} als Konfliktursache wieder aufgegriffen.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Herausforderungen der Integration}
-% Der Abschnitt behandelt beides; die alte Ueberschrift deckte nur die Haelfte ab.
 \subsection{Herausforderungen der Umsetzung}
-% <<<<< ENDE VORSCHLAG
 \label{sec:challenges}
-% [Ziel: 1,5 Seiten]
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Der Konflikt zwischen Intraday-Handel und Fixierung kurativer
-% Stellpotenziale ist die Vorlage fuer den Beschaffungszeitpunkt in
-% Abschnitt 3.1 und steht deshalb am Ende des Absatzes als Befund.
 Der praktischen Umsetzung der kurativen Systemführung stehen drei Entwicklungen entgegen, die sich gegenseitig verstärken.
 Erstens schrumpft die Basis klassischer kurativer Akteure.
 Der Kohle- und Kernenergieausstieg reduziert die verfügbare steuerbare konventionelle Kapazität, während gleichzeitig die Opportunitätskosten und Revisionsaufwände der verbleibenden Anlagen steigen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
@@ -251,75 +253,61 @@ Mit steigendem Anteil wetterabhängiger Einspeisung wächst die Abweichung zwisc
 Für die kurative Planung bedeutet dies, dass die Menge der scharfzuschaltenden Maßnahmen nicht anhand eines einzelnen erwarteten Netzzustands, sondern gegen ein Spektrum möglicher Zustände zu bemessen ist.
 Drittens, und für diese Arbeit am bedeutsamsten, kollidiert die Fixierung kurativer Stellpotenziale mit dem kurzfristigen Handel.
 Der kontinuierliche Intraday-Handel erlaubt Fahrplanänderungen bis wenige Minuten vor Lieferbeginn, sodass ein Stellpotenzial, das dem \ac{ÜNB} in der Betriebsplanung zugesagt wurde, bis unmittelbar vor dem Erfüllungszeitpunkt durch eigene Vermarktung des Anlagenbetreibers entfallen kann \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Der Konflikt ist damit nicht technischer, sondern institutioneller Natur: Er entsteht aus der Trennung von Fahrplanhoheit und Systemverantwortung und ist der Grund, weshalb kurative Verfügbarkeit als eigenständige, verbindlich zugesagte und entsprechend vergütete Leistung ausgestaltet werden muss.
-\\
+Der Konflikt ist damit nicht technischer, sondern institutioneller Natur.
+Er entsteht aus der Trennung von Fahrplanhoheit und Systemverantwortung und ist der Grund, weshalb kurative Verfügbarkeit als eigenständige, verbindlich zugesagte und entsprechend vergütete Leistung ausgestaltet werden muss.
+
 Der Umsetzungsstand im deutschen Übertragungsnetz ist entsprechend heterogen.
-Mit dem KuPilot-Projekt liegt erstmals eine Validierung kurativer Maßnahmen im Echtbetrieb vor \cite{tennet_tso_gmbh_pilotbetrieb_2025}, und mit den Netzboostern existiert ein bereits umgesetztes Instrument, das speicherbasierte Leistung für den Fehlerfall vorhält \cite{consentec_systembooster_2026}.
+Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Echtbetrieb vor \cite{tennet_tso_gmbh_pilotbetrieb_2025}, und mit den Netzboostern existiert ein bereits umgesetztes Instrument, das speicherbasierte Leistung für den Fehlerfall vorhält \cite{consentec_systembooster_2026}.
 Die Übertragung des Konzepts auf die Verteilnetzebene wird im Projekt kurSyV untersucht \cite{frauenhofer_iee_forschungsprojekt_2024, mende_optimised_2024}.
 Eine marktliche Beschaffung kurativer Vorhalteleistung ist in keinem dieser Ansätze enthalten.
 
-% EIN SATZ, nicht mehr. Die Redundanzfrage wird hier abgegrenzt und
-% in Kapitel 6 als Ausblick wieder aufgegriffen.
-Zuverlässige kurative Konzepte setzen darüber hinaus eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022}; deren Ausgestaltung ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Rueckgang steuerbarer konv. Kapazitaet \cite{innosys_...,
-%   bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}
-% - Konflikt IDC vs. Fixierung kurativer Stellpotenziale \cite{innosys_...}
-% - Volatilitaet und Prognoseunsicherheit \cite{lindner_..., rystad_...}
-% - Umsetzungsstand: KuPilot, Netzbooster, kurSyV
-% <<<<< ENDE VORSCHLAG
+Zuverlässige kurative Konzepte setzen darüber hinaus eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022}.
+Deren Ausgestaltung ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
 
 % ###############################################################
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \section{Grenzen der bestehenden marktlichen Grundlage}
-% "Grenzen" ist eine Bewertung. Konventionell benennt die Ueberschrift den Gegenstand; den Befund traegt der Text.
 \section{Marktliche und regulatorische Rahmenbedingungen}
-% <<<<< ENDE VORSCHLAG
 \label{sec:market_limits}
-% [Ziel: 6 Seiten]
 %
-% ZIEL DIESES ABSCHNITTS: Nicht die Märkte beschreiben, sondern zeigen,
-% dass keines der bestehenden Instrumente kurative Vorhalteleistung
-% beschaffen kann. Alles, was diesem Ziel nicht dient, gehört gekürzt.
+% ZIEL DIESES ABSCHNITTS: Nicht die Maerkte beschreiben, sondern zeigen,
+% dass keine der bestehenden Verguetungslogiken kurative Vorhalteleistung
+% beschaffen kann. Alles, was diesem Ziel nicht dient, gehoert gekuerzt.
+%
+% NEUE GLIEDERUNG gegenueber der Vorfassung:
+%   2.2.2 Beschaffung von Regelleistung ist NEU. Sie fehlte, obwohl
+%         Abschnitt 1.2 sie ankuendigt und sie das einzige bestehende
+%         Regime ist, das Vorhaltung verguetet.
+%   2.2.3 Verguetung von Redispatch-Massnahmen ist auf die
+%         Konstruktionslogik des Regimes ausgerichtet und traegt die
+%         nicht additive max()-Struktur.
+%   2.2.4 Der modifizierte Weber-Ansatz ist NEU als eigener
+%         Unterabschnitt und ausfuehrlich, weil er der Angelpunkt der
+%         Arbeit ist.
+%   2.2.6 Das Zwischenfazit traegt die Ueberkreuzstellung und die
+%         praezise Fassung der Forschungsluecke.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: ABSCHNITTSTITEL GEAENDERT
-% Vorher: "Marktzeithorizonte und Betriebsplanung".
-% Der Selbstdispatch ist die tragende Aussage dieses Abschnitts, nicht
-% der Zeitstrahl -- deshalb steht er im Titel. Label unveraendert, alle
-% bestehenden \ref{sec:market_horizons} bleiben gueltig.
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Dezentrale Fahrplanbildung und Marktzeithorizonte}
-% Fachterminus statt Umschreibung, kuerzer.
 \subsection{Dispatchmodelle und Marktzeithorizonte}
-% <<<<< ENDE VORSCHLAG
 \label{sec:market_horizons}
-% [Ziel: 1,5 Seiten -- Vorschlag: auf 2 Seiten erweitern, dafuer 2.3.4
-%  um eine halbe Seite kuerzen. Begruendung: Der Selbstdispatch ist die
-%  institutionelle Begruendung der gesamten Arbeit.]
 
-% GEPRUEFT: Der Eintrag europaische_kommission_verordnung_2017_ebgl ist
-% in literature.bib vorhanden (Commit c5cf3e2), \acro{EBGL} ist in
-% extras/abbreviations.tex ergaenzt.
 Die europäische Regulierung unterscheidet zwei Modelle, nach denen Erzeugungs- und Verbrauchsfahrpläne zustande kommen.
+% OFFEN 3: Fundstelle der Legaldefinition. Kapitel 1 zitiert dieselbe
+% Stelle. Vor Abgabe eine der beiden in Betracht kommenden Fundstellen
+% verifizieren, also Art. 2 Abs. 17 EBGL oder Art. 2 Abs. 30 der
+% Verordnung (EU) 2019/943, und in beiden Kapiteln einheitlich setzen.
 Im Selbstdispatch-Modell werden die Fahrpläne und der Einsatz der Erzeugungs- und Verbrauchsanlagen durch die Fahrplanverantwortlichen dieser Anlagen selbst bestimmt \cite[Art.\,2 Abs.\,17]{europaische_kommission_verordnung_2017_ebgl}.
 Im zentralen Dispatch-Modell bestimmt demgegenüber der \ac{ÜNB} die Fahrpläne und den Einsatz der dispatchfähigen Anlagen im Rahmen eines integrierten Fahrplanerstellungsprozesses, der technische Anlagendaten, Anfahrcharakteristika und die Ergebnisse der Betriebssicherheitsanalyse gemeinsam berücksichtigt \cite[Art.\,2 Abs.\,18 und 19]{europaische_kommission_verordnung_2017_ebgl}.
-Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf das Selbstdispatch-Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}; in Europa betrifft dies eine Minderheit von Systemen, während der überwiegende Teil einschließlich Deutschlands dem Selbstdispatch folgt \cite{meeus_evolution_2020, einsiedler_analysis_2025}.
-% PRUEFEN: Die Aufzaehlung der zentral dispatchenden Mitgliedstaaten
-% (u.a. Irland, Italien, Polen, Griechenland, Ungarn) ist in der
-% Sekundaerliteratur gaengig, sollte aber gegen \cite{meeus_evolution_2020}
-% oder \cite{agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}
-% belegt werden, wenn sie namentlich in den Text soll. Zur Sicherheit ist
-% oben nur "eine Minderheit von Systemen" formuliert.
+Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf das Selbstdispatch-Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}.
+In Europa betrifft dies eine Minderheit von Systemen, während der überwiegende Teil einschließlich Deutschlands dem Selbstdispatch folgt \cite{meeus_evolution_2020, einsiedler_analysis_2025}.
 Für Großbritannien liegt mit der zentralen Einsatzoptimierung des Bilanzierungsmarktes ein Beispiel vor, in dem Netz- und Systemrestriktionen unmittelbar in die Einsatzentscheidung eingehen \cite{bukhsh_balancing_2024}.
 
 Die Wahl des Modells entscheidet darüber, an welcher Stelle des Prozesses Netzrestriktionen wirksam werden.
 Im zentralen Dispatch sind sie Nebenbedingung der Einsatzoptimierung und damit Teil der Fahrplanbildung selbst.
-Im Selbstdispatch bleiben sie außerhalb: Die Marktteilnehmer optimieren gegen einen zonalen Preis, der keine Information über die Belastung einzelner Betriebsmittel enthält, und der \ac{ÜNB} korrigiert das Ergebnis nachgelagert durch Redispatch.
+Im Selbstdispatch bleiben sie außerhalb.
+Die Marktteilnehmer optimieren gegen einen zonalen Preis, der keine Information über die Belastung einzelner Betriebsmittel enthält, und der \ac{ÜNB} korrigiert das Ergebnis nachgelagert durch Redispatch.
 Redispatch ist in dieser Lesart keine Störung des Marktergebnisses, sondern der systematisch vorgesehene Korrekturmechanismus eines Marktdesigns, das physikalische Restriktionen bewusst aus der Preisbildung ausklammert \cite{oggioni_market_2013, newbery_market_2018}.
 Aus dieser Zuordnung folgen zwei Konsequenzen, die die weitere Argumentation der Arbeit tragen.
-Erstens ist das Volumen des Engpassmanagements eine Funktion des Marktdesigns und nicht allein des Netzzustands; eine Verkleinerung der Gebotszonen oder eine lokationale Preisbildung würde einen Teil des heutigen Redispatchbedarfs in die Fahrplanbildung internalisieren \cite{horsch_role_2017, agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}.
+Erstens ist das Volumen des Engpassmanagements eine Funktion des Marktdesigns und nicht allein des Netzzustands.
+Eine Verkleinerung der Gebotszonen oder eine lokationale Preisbildung würde einen Teil des heutigen Redispatchbedarfs in die Fahrplanbildung internalisieren \cite{horsch_role_2017, agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}.
 Zweitens, und für den hier entworfenen Mechanismus entscheidend, verfügt der \ac{ÜNB} im Selbstdispatch über keinen Zugriff auf den Fahrplan einer Anlage.
 Er kann kurative Reaktionsfähigkeit deshalb nicht anordnen, sondern nur beschaffen, und zwar zu einem Preis, der dem Anlagenbetreiber den Verzicht auf die konkurrierende Vermarktung mindestens ausgleicht.
 Der Marktmechanismus ist damit nicht eine von mehreren denkbaren Ausgestaltungsoptionen, sondern die im gegebenen Dispatch-Modell einzig verfügbare Form der Beschaffung.
@@ -328,271 +316,48 @@ Innerhalb dieses Modells bildet sich der Fahrplan einer Anlage über eine Sequen
 Den Ausgangspunkt bildet die Day-Ahead-Auktion, die am Vortag alle Lieferzeitpunkte des Folgetages in einem einzigen Auktionsdurchgang preist.
 Zum 1.\,Oktober 2025 wurde ihr Produktschnitt von Stunden- auf Viertelstundenprodukte umgestellt, was die Preisbildung und die Volumenverteilung zwischen Day-Ahead- und Intraday-Handel merklich verändert hat \cite{ffe_saegezahn_2026}.
 Daran schließen die seit Juni 2024 etablierten Intraday-Auktionen \ac{IDA-1} bis \ac{IDA-3} an, die den Fahrplan zu definierten Zeitpunkten gegen aktualisierte Prognosen neu bewerten, sowie der kontinuierliche Intraday-Handel, der die Anpassung bis zum Gate Closure kurz vor Lieferbeginn offenhält \cite{mahgoub_wie_2025}.
-Terminmarkt und \ac{OTC}-Handel bleiben im Folgenden unberücksichtigt: Der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei, während der \ac{OTC}-Handel wegen bilateraler Preisbildung nicht mit der erforderlichen Transparenz beobachtbar ist.
+Terminmarkt und \ac{OTC}-Handel bleiben im Folgenden unberücksichtigt.
+Der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei, während der \ac{OTC}-Handel wegen bilateraler Preisbildung nicht mit der erforderlichen Transparenz beobachtbar ist.
 
 Diese Staffelung ist der Grund, weshalb kurative Stellpotenziale nicht ohne Weiteres in der Vortagsplanung fixiert werden können, wie in Abschnitt \ref{sec:prev_vs_cur} angekündigt.
 Zwischen dem Zeitpunkt, zu dem der \ac{ÜNB} eine kurative Maßnahme plant, und dem Zeitpunkt ihrer möglichen Aktivierung liegen mehrere Handelsgelegenheiten, in denen der Anlagenbetreiber seinen Fahrplan legitim und ohne Mitteilungspflicht gegenüber dem \ac{ÜNB} ändern kann.
-Eine kurative Zusage ist daher nur belastbar, wenn sie den Anlagenbetreiber über alle dazwischenliegenden Handelsgelegenheiten hinweg bindet -- was die Bindungsdauer zu einem konstitutiven Produktmerkmal macht und zugleich die zu vergütende Größe definiert.
+Eine kurative Zusage ist daher nur belastbar, wenn sie den Anlagenbetreiber über alle dazwischenliegenden Handelsgelegenheiten hinweg bindet.
+Damit wird die Bindungsdauer zu einem eigenständigen Produktmerkmal, das zugleich die zu vergütende Größe definiert.
 Die Ausgestaltung dieses Merkmals erfolgt in Abschnitt \ref{sec:product_design}.
-% GEPRUEFT: Label sec:product_design existiert in chapter_3.tex.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Zeitstrahl Spotmaerkte: DA, IDA1-3 seit Juni 2024, IDC, Gate Closure
-%   \cite{mahgoub_wie_2025}
-% - DA-Umstellung auf Viertelstunden 01.10.2025 \cite{ffe_saegezahn_2026}
-% - Abgrenzung Terminmarkt und OTC
-% - Rueckbezug auf 2.1.1: IDC als Grund gegen Fixierung am Vortag
-% <<<<< ENDE VORSCHLAG
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Vergütung von Redispatch-Maßnahmen und der modifizierte Weber-Ansatz}
-% Der Weber-Ansatz ist Inhalt, nicht zweiter Gegenstand. Konventionell einteilig.
-\subsection{Vergütung von Redispatch-Maßnahmen}
-% <<<<< ENDE VORSCHLAG
-\label{sec:redispatch_compensation}
-% [Ziel: 3 Seiten]
+% NEU. Dieser Unterabschnitt fehlte vollstaendig.
+\subsection{Beschaffung von Regelleistung}
+\label{sec:balancing_procurement}
 %
-% DAS IST DER ANGELPUNKT DER ARBEIT. Argumentationsreihenfolge:
-%   (1) Systematik des § 13a EnWG
-%   (2) Optionslogik des modifizierten Weber-Ansatzes
-%   (3) Warum sie bei Speichern versagt
-% Erst danach folgt der Schluss in 2.2.4.
-
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Bewusst in der Reihenfolge (1) Systematik, (2) Optionslogik,
-% (3) Versagen. Die Formeln bleiben Kapitel 3 vorbehalten; hier steht
-% nur die Bewertungslogik in Worten, damit 2.2 nicht zum Methodenkapitel
-% wird.
-% PRUEFEN: Alle Paragraphen- und Anlagenverweise gegen die Festlegung
-% BK8-22-0001-A und deren Anlagen abgleichen; die Fundstellen sind hier
-% absichtlich ohne Seitenangabe gesetzt und sollten praezisiert werden.
-Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG}.
-Die Norm unterscheidet zwischen dem bilanziellen Ausgleich, der die entstandene Abweichung in der Bilanzgruppe neutralisiert, und dem finanziellen Ausgleich, der den wirtschaftlichen Nachteil der Anpassung kompensiert \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Der finanzielle Ausgleich setzt sich aus mehreren Bestandteilen zusammen: den Erzeugungsauslagen der tatsächlich durchgeführten Anpassung, dem Werteverbrauch der Anlage sowie den nachgewiesenen entgangenen Erlösmöglichkeiten \cite{bundesnetzagentur_festlegung_2024}.
-Die Systematik ist damit vollständig auf den Eingriff bezogen: Bemessungsgegenstand ist die durchgeführte Maßnahme, nicht die Fähigkeit, sie durchführen zu können.
-Diese Ausrichtung ist keine Auslegungsfrage, sondern regulatorisch und gerichtlich bestätigt; Kosten der reinen Leistungsvorhaltung sind nach geltender Rechtslage nicht zu erstatten \cite{bundesnetzagentur_beschluss_2021}.
-% PRUEFEN: Formulierung "gerichtlich bestaetigt" nur verwenden, wenn
-% \cite{bundesnetzagentur_beschluss_2021} tatsaechlich eine
-% Gerichtsentscheidung bzw. deren Bestaetigung wiedergibt. Andernfalls
-% auf "regulatorisch festgestellt" abschwaechen.
-
-Für den anspruchsvollsten Bestandteil, die entgangenen Erlösmöglichkeiten, hat der Gesetzgeber eine finanzmathematische Bewertungslogik übernommen, die auf das Gutachten von Weber zurückgeht \cite{weber_gutachten_2015}.
-Deren Grundgedanke besteht darin, die Vermarktungsmöglichkeit einer flexiblen Anlage als Finanzoption aufzufassen.
-Eine flexible Erzeugungseinheit besitzt das Recht, aber nicht die Pflicht, in einem gegebenen Zeitintervall einzuspeisen; sie wird dies nur tun, wenn der erzielbare Marktpreis ihre variablen Erzeugungskosten übersteigt.
-Ökonomisch entspricht das einer Call-Option auf den Strompreis mit den variablen Erzeugungskosten als Basispreis, und die Vermarktungsmöglichkeit einer Anlage über einen Tag ist demnach eine Sequenz solcher Optionen.
-Wird die Anlage durch eine Anweisung des \ac{ÜNB} an der Ausübung gehindert, entspricht der entgangene Erlös dem Wert der verlorenen Option.
-Bei Speichern tritt zur Erzeugungsseite die Ladeseite hinzu, deren Vermarktungsmöglichkeit spiegelbildlich als Put-Option zu bewerten ist.
-Die Bewertung erfolgt über eine geschlossene Formel unter der Annahme absolut normalverteilter Preisänderungen \cite{weber_gutachten_2015}, wobei die praktische Anwendung durch Kapitel 8.7 des Branchenleitfadens \cite{bdew_branchenleitfaden_2018} sowie durch die geltende Festlegung und deren Anlagen konkretisiert wird \cite{bundesnetzagentur_festlegung_2024, bundesnetzagentur_anlage1_2024}.
-Ein von der \ac{BNetzA} veröffentlichtes Berechnungsbeispiel für einen Tagesspeicher zeigt die vorgesehene Rechenschrittfolge \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
-Die methodischen Einzelheiten dieses Verfahrens sowie seine Nachrechnung sind Gegenstand des Abschnitts \ref{sec:reference_verification}.
-% GEPRUEFT: Label sec:reference_verification existiert in chapter_3.tex
-% (Abschnitt "Referenzverfahren und Verifikation").
-
-Bei Batteriespeichern stößt diese Systematik jedoch an drei Grenzen.
-Die erste ist methodisch: Das Optionsmodell bewertet jedes Zeitintervall isoliert, während der Handlungsspielraum eines Speichers pfadabhängig ist.
-Ob eine Anlage in einem Intervall einspeisen kann, hängt vom Ladezustand ab, den vorangegangene Entscheidungen hinterlassen haben, und eine Nichteinspeisung in einem Intervall erhöht die Einspeisemöglichkeit in einem späteren.
-Eine intervallweise Aufsummierung von Optionswerten überschätzt den entgangenen Erlös daher systematisch, weil sie unterstellt, dass jede verhinderte Ausübung endgültig verloren ist \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
-Die zweite Grenze betrifft den Gegenstand des Verlusts: Ein Eingriff bei einem Speicher führt in vielen Fällen nicht zu einer entfallenen, sondern zu einer verschobenen Ein- oder Ausspeisung, sodass der wirtschaftliche Nachteil in der schlechteren Preislage der Ersatzausübung und im zusätzlichen Werteverbrauch liegt, nicht im vollständigen Verlust der Erlösmöglichkeit.
-Die dritte Grenze liegt in der Mehrfachvermarktung: Ein Speicher vermarktet dieselbe Leistung und denselben Ladezustandsbereich typischerweise parallel auf Spot- und Regelleistungsmärkten, sodass ein Eingriff gleichzeitig mehrere Erlösströme beeinträchtigt, ohne dass die auf einen einzelnen Markt bezogene Optionsbewertung dies erfassen könnte.
-Konsequenterweise hat die Beschlusskammer die Behandlung von Batteriespeichern in der Festlegung nicht abschließend geregelt, sondern ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
-Damit liegt für den in dieser Arbeit betrachteten Akteurstyp nicht nur eine ungeeignete, sondern eine ausdrücklich offengelassene Vergütungsgrundlage vor.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Bemessungslogik § 13a EnWG \cite{bundesministerium_..., bundesnetzagentur_festlegung_2024}
-% - Modifizierter Weber-Ansatz: Call/Put, Basispreis, geschlossene Formel
-%   \cite{weber_gutachten_2015}; Kapitel 8.7 \cite{bdew_branchenleitfaden_2018}
-% - Umsetzung in der Festlegung \cite{bundesnetzagentur_festlegung_2024,
-%   bundesnetzagentur_anlage1_2024}; Berechnungsbeispiel
-%   \cite{bundesnetzagentur_berechnungsbeispiel_2024}
-% - Leistungsvorhaltekosten nicht erstattungsfaehig \cite{bundesnetzagentur_beschluss_2021}
-% - Versagen bei Speichern: Ueberschaetzung \cite{iaew_abschlussbericht_2023,
-%   iaew_folgestudie_2024}; Pfadabhaengigkeit; Verschiebung; Mehrfachvermarktung
-% - Offener Punkt: spaetere Mitteilung \cite{bundesnetzagentur_festlegung_2024}
-% <<<<< ENDE VORSCHLAG
-
-% ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KORRIGIERT (BEHEBT KOMPILIERFEHLER)
-% Vorher: \subsection{Flexible Netzanschlussvereinbarungen und §\,13k \ac{EnWG}}
-% Diese Zeile war die einzige Fehlerquelle im gesamten Dokument und hat
-% vier "Missing { inserted"-Fehler erzeugt. Ursache ist \, in der
-% Ueberschrift: hyperref muss die Ueberschrift in einen PDF-String fuer
-% das Bookmark umwandeln, und \, ist in dieser Praeambel-Konfiguration
-% dort nicht robust. Zwei Aenderungen:
-%   \, -> ~   (behebt den Fehler, geprueft: 0 Fehler im Gesamtbuild)
-%   \ac{EnWG} -> EnWG  (in Ueberschriften keine Akronymmakros, sonst
-%                       wird bei Erstverwendung die Langform dort
-%                       ausgeschrieben)
-% Dieselbe Regel gilt fuer alle weiteren Ueberschriften in Kapitel 3-6.
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Flexible Netzanschlussvereinbarungen und §~13k EnWG}
-% Paragraphenzeichen in Ueberschriften sind unueblich; loest zugleich das hyperref-Problem dauerhaft.
-\subsection{Flexible Netzanschlussvereinbarungen und vorrangige Flexibilitätsnutzung}
-% <<<<< ENDE VORSCHLAG
-\label{sec:flexible_connection}
-% <<<<< ENDE VORSCHLAG
-% [Ziel: 0,5 Seiten]
-
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Bewusst knapp gehalten. Der Abschnitt hat nur eine Aufgabe: die beiden
-% naheliegenden Gegeneinwaende ("gibt es doch schon") ausschliessen.
-Als mögliche Alternativen zu einer eigenständigen Vergütung kurativer Vorhaltung kommen zwei neuere Instrumente in Betracht.
-§\,17 Abs.\,2b \ac{EnWG} erlaubt die Vereinbarung flexibler Netzanschlüsse und ist für Speicher deshalb besonders relevant, weil nur diese Norm eine Begrenzung sowohl der Einspeise- als auch der Entnahmeleistung und damit eine bidirektionale Ausgestaltung vorsieht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_faq_2025}.
-Die Norm begründet allerdings keinen Anspruch des Anlagenbetreibers auf ein solches Angebot, sondern eröffnet dem Netzbetreiber lediglich eine Möglichkeit \cite{bundesnetzagentur_beschluss_2026}.
-§\,13k \ac{EnWG} verfolgt mit dem Grundsatz \glqq{}Nutzen statt Abregeln\grqq{} einen komplementären Ansatz und regelt den Vorrang der Flexibilitätsnutzung gegenüber der Abregelung erneuerbarer Erzeugung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Beide Instrumente sind für den hier untersuchten Zweck jedoch aus demselben Grund unzureichend: Sie regeln die Zulässigkeit und die Rangfolge von Begrenzungen im Eintrittsfall, nicht die Bereitstellung und Vergütung einer im Voraus vorgehaltenen Reaktionsfähigkeit -- und sie greifen zudem nicht flächendeckend, sondern nur, soweit der Netzbetreiber sie im Einzelfall anbietet.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - § 17 Abs. 2b EnWG, bidirektional \cite{..., bundesnetzagentur_faq_2025}
-% - Kein Anspruch auf Angebot \cite{bundesnetzagentur_beschluss_2026}
-% - § 13k EnWG "Nutzen statt Abregeln"
-% - Befund: regeln Abregelung, nicht Vorhaltung
-% <<<<< ENDE VORSCHLAG
-
-% ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Zwischenfazit: kurative Vorhaltung ohne Vergütungsgrundlage}
-% Doppelpunkt mit nachgestellter These ist in deutschen Ingenieurarbeiten unueblich.
-\subsection{Zwischenfazit}
-% <<<<< ENDE VORSCHLAG
-\label{sec:interim_conclusion}
-% [Ziel: 1 Seite]
+% ZWECK: Die Regelleistung ist das einzige bestehende Regime, das
+% Vorhaltung und nicht Arbeit verguetet. Sie ist damit die naechste
+% Verwandte des gesuchten Produkts und gleichzeitig der Beleg dafuer,
+% dass eine Verguetung von Vorhaltung regulatorisch etabliert ist.
+% ABGRENZUNG, damit nichts doppelt steht:
+%   Hier steht die BESCHAFFUNGSLOGIK.
+%   Abschnitt 2.3.2 behandelt die Regelleistung als Erloesquelle.
+%   Abschnitt 2.3.3 behandelt den reservierten Ladezustandsbereich als
+%     konkurrierenden Anspruch.
 %
-% ANGELPUNKT DER ARBEIT. Kernaussage: Der Gesetzgeber hat für
-% Flexibilität bereits eine optionsbasierte Bewertungslogik etabliert
-% -- sie bricht bei Speichern zusammen, und Vorhaltung als solche hat
-% in dieser Systematik keine Bemessungsgrundlage.
+% OFFEN 4: Produktschnitt, Auktionsrhythmus und Ausschreibungszeitpunkte
+% gegen die Praequalifikationsbedingungen und die Ausschreibungsdaten
+% verifizieren. Diese Angaben aendern sich regulatorisch.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Dieser Abschnitt fasst 2.2 in drei Befunden zusammen und formuliert
-% die Bewertungsaufgabe, die Kapitel 3 und 4 loesen. Er sollte in der
-% Endfassung ohne neue Quellen auskommen -- alles steht bereits oben.
-Die Betrachtung der bestehenden marktlichen Grundlage führt zu drei Befunden.
-Erstens liegt die Fahrplanhoheit im Selbstdispatch-Modell beim Anlagenbetreiber, sodass kurative Verfügbarkeit nur über einen Preis und nicht über eine Anweisung herstellbar ist, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung dieser Zusage zum konstitutiven Produktmerkmal.
-Zweitens hat der Gesetzgeber für Flexibilität bereits eine optionsbasierte Bewertungslogik etabliert, die den Verzicht auf eine Vermarktungsmöglichkeit als Verlust eines Ausübungsrechts fasst.
-Diese Logik ist dem Gegenstand grundsätzlich angemessen, versagt bei Batteriespeichern jedoch an der Pfadabhängigkeit des Ladezustands und an der Parallelvermarktung -- und wurde für diesen Akteurstyp von der Beschlusskammer ausdrücklich offengelassen.
-Drittens, und für die Fragestellung dieser Arbeit entscheidend, bezieht sich die gesamte Systematik auf den durchgeführten Eingriff.
-Die reine Bereitstellung von Reaktionsfähigkeit hat in ihr keine Bemessungsgrundlage; Vorhaltekosten sind nach geltender Rechtslage nicht erstattungsfähig.
-Damit entsteht eine Asymmetrie zwischen dem, was die kurative Systemführung technisch verlangt, und dem, was der regulatorische Rahmen ökonomisch abbildet: Verlangt wird eine über mehrere Handelsgelegenheiten hinweg bindende, mit hoher Wahrscheinlichkeit nicht abgerufene Bereitstellung; vergütet wird ausschließlich der seltene Abruf.
-Ein Anlagenbetreiber, der sein Stellpotenzial vorhält, trägt die Opportunitätskosten der entgangenen Vermarktung in jedem Intervall der Bindung, erhält jedoch nur in jenen Intervallen einen Ausgleich, in denen tatsächlich abgerufen wird.
-Unter dieser Anreizstruktur ist die Vorhaltung für den Betreiber nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar.
-Die Bewertungsaufgabe dieser Arbeit lässt sich daraus präzise formulieren: Zu bestimmen ist der Wert der Vermarktungsoption, auf die ein Batteriespeicher durch eine kurative Vorhalteverpflichtung verzichtet, unter Berücksichtigung der Pfadabhängigkeit seines Ladezustands und seiner parallelen Erlösquellen.
-Dieser Wert bildet die Untergrenze einer anreizkompatiblen Vergütung und ist Gegenstand der Modellierung in Kapitel~\ref{ch:design_model}.
-% <<<<< ENDE VORSCHLAG
+Die Frequenzhaltung wird in Deutschland über drei Regelleistungsprodukte beschafft, die sich in Aktivierungsart und Reaktionszeit unterscheiden.
+Gemeinsam ist ihnen die Beschaffungslogik.
+Die \ac{ÜNB} schreiben eine Leistungsmenge aus, die Anbieter geben Leistungspreise ab, und die Zuschlagserteilung verpflichtet den Anbieter, die zugesagte Leistung über die gesamte Erbringungsperiode bereitzuhalten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Vergütet wird damit die Bereitstellung und nicht der Abruf, während der tatsächliche Energieabruf bei \ac{aFRR} und \ac{mFRR} zusätzlich über einen Arbeitspreis abgerechnet wird.
+Voraussetzung für die Teilnahme ist ein Präqualifikationsverfahren, in dem die technische Eignung der Anlage nachgewiesen und ein zulässiger Arbeitsbereich festgelegt wird \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Tabelle~\ref{tab:regelleistung} stellt die drei Produkte gegenüber.
 
-% ###############################################################
-\section{Batteriespeicher als kurativer Akteur}
-\label{sec:bess_actor}
-% [Ziel: 7 Seiten]
-
-% >>>>> VORSCHLAG: EINLEITUNG ZU 2.3 (STRANG 2 AUS ABSCHNITT 1.2)
-% Der Abschnitt hatte bisher keinen einleitenden Text, sondern begann
-% unmittelbar mit 2.3.1. Diese Einleitung schliesst die Luecke und nimmt
-% zugleich den zweiten Forschungsstrang aus dem aufgeloesten Abschnitt
-% 1.2 auf, der inhaltlich hierher gehoert.
-Der zweite der eingangs benannten Forschungsstränge befasst sich mit der Betriebsführung von Batteriespeichern zwischen marktlicher Vermarktung und netzdienlichem Einsatz.
-Arbeiten zu präventiven und kurativen Betriebsstrategien haben gezeigt, dass sich ein netzdienlicher Beitrag nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellen lässt \cite{lindner_operation_2023, porst_betriebskonzepte_2025}, und Untersuchungen zu den Erlöspotenzialen unter verändertem Marktdesign haben die wirtschaftliche Empfindlichkeit dieser Anpassung herausgearbeitet \cite{mahgoub_wie_2025}.
-Was dieser Strang offenlässt, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
-Genau diese Frage ist Gegenstand des folgenden Abschnitts: Er begründet zunächst, weshalb Batteriespeicher für das anspruchsvollste kurative Zeitfenster der einzige geeignete Akteurstyp sind, stellt anschließend ihre Erlösquellen dar und arbeitet den Konflikt heraus, der zwischen der marktoptimalen Betriebsweise und der kurativen Verfügbarkeit entsteht.
-% <<<<< ENDE VORSCHLAG
-
-% ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Akteursvergleich und Auswahlbegründung}
-% Nominalstil, kuerzer; die Auswahlbegruendung ist Teil des Vergleichs.
-\subsection{Vergleich kurativer Akteure}
-% <<<<< ENDE VORSCHLAG
-\label{sec:actor_comparison}
-% [Ziel: 1,5 Seiten]
-%
-% EINE VERGLEICHSTABELLE statt vier Unterabschnitten. Spalten:
-% Reaktionszeit, Energiebindung, Verfügbarkeit 2030, Vergütungspfad.
-% Zeilen: konventionelle Kraftwerke, Wind, PV, Pumpspeicher, BESS.
-% Der Fließtext begründet nur, warum BESS der einzige Akteur für das
-% Sekundenfenster ist.
-%
-% WICHTIG: Technische BESS-Eigenschaften (SoC-Dynamik, Wirkungsgrade,
-% Degradation) gehören NICHT hierher, sondern in Abschnitt 3.4 als
-% Modellannahmen. Sonst stehen sie zweimal in der Arbeit.
-
-% >>>>> VORSCHLAG: AUSFORMULIERUNG UND TABELLENGERUEST
-% Der Fliesstext haelt sich strikt an die Vorgabe im Kommentar: keine
-% technischen BESS-Eigenschaften, nur die Auswahlbegruendung.
-% ACHTUNG: Die Tabelle ist ein GERUEST. Die Eintraege sind aus den
-% Stichpunkten und der zitierten Literatur abgeleitet, aber NICHT
-% quellenscharf geprueft -- insbesondere die Spalte "Verfuegbarkeit 2030"
-% ist eine Einschaetzung und muss entweder belegt oder als eigene
-% Einschaetzung gekennzeichnet werden. Bitte Zelle fuer Zelle
-% durchgehen, bevor die Tabelle in die Arbeit geht.
-Die Eignung eines Akteurs für die kurative Systemführung entscheidet sich an vier Merkmalen: der erreichbaren Reaktionszeit, der Frage, ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, der zu erwartenden Verfügbarkeit im Zeithorizont 2030 sowie dem Vergütungspfad, über den die Bereitstellung heute abgebildet würde.
-Tabelle~\ref{tab:akteursvergleich} stellt die in Betracht kommenden Akteurstypen entlang dieser Merkmale gegenüber.
-Die Systematisierung folgt der Flexibilitätstypologie nach Erzeugung, Verbrauch, Speicherung und Netz \cite{vde_etg_flexibilisierung_2023} sowie dem Maßnahmenkatalog aus InnoSys~2030 \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-
+% OFFEN 5: Die Spalte Erloesniveau ist absichtlich leer. Sie sollte aus
+% einer eigenen Auswertung der Ausschreibungsdaten fuer den in Kapitel 4
+% verwendeten Betrachtungszeitraum gefuellt werden, sonst entsteht ein
+% Bruch zur eigenen Datenbasis.
 \begin{table}[htbp]
     \centering
-    \caption{Vergleich kurativer Akteurstypen. Eigene Darstellung. % PRUEFEN: Quellenangabe je Zelle ergaenzen oder als eigene Einschaetzung kennzeichnen.
-    }
-    \label{tab:akteursvergleich}
-    \small
-    \begin{tabular}{p{2.6cm}p{2.4cm}p{2.6cm}p{2.6cm}p{2.6cm}}
-        \hline
-        \textbf{Akteurstyp} & \textbf{Reaktionszeit} & \textbf{Energiebindung} & \textbf{Verfügbarkeit 2030} & \textbf{Vergütungspfad} \\
-        \hline
-        Konventionelle Kraftwerke & Vorlaufzeit bis 24\,h & keine (brennstoff\-gebunden) & rückläufig & §\,13a \ac{EnWG}, Weber-Ansatz \\
-        Windenergie & schnell, nur abregelnd & keine & prognose\-abhängig & §\,13a \ac{EnWG} \\
-        Photovoltaik & schnell, nur abregelnd & keine & prognose\-abhängig, tageszeitlich begrenzt & §\,13a \ac{EnWG} \\
-        Pumpspeicher & Sekunden bis Minuten & ja & begrenzt, geografisch konzentriert & §\,13a \ac{EnWG}, Speicher\-behandlung offen \\
-        \ac{BESS} & Sekunden & ja, ladezustands\-abhängig & stark steigend & offen \\
-        \hline
-    \end{tabular}
-\end{table}
-
-Der Vergleich zeigt, dass die Akteurstypen nicht gleichmäßig über die drei Zeitfenster aus Abschnitt \ref{sec:curative_functionality} verteilt sind.
-Konventionelle Kraftwerke sind wegen ihrer Vorlaufzeiten auf das 15-Minuten-Fenster beschränkt und zugleich der Akteurstyp mit rückläufiger Verfügbarkeit \cite{innosys_2030_gesamtverbund_innovationen_2021, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
-Wind- und Photovoltaikanlagen reagieren zwar schnell, stellen aber im Wesentlichen nur ein Abregelpotenzial bereit und sind in ihrer Verfügbarkeit an die Einspeisesituation gebunden, die dem Engpass typischerweise zugrunde liegt \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
-Pumpspeicher sind bidirektional und schnell und wurden im KuPilot-Pilotbetrieb bereits eingesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025, vde_etg_flexibilisierung_2023}; ihre Kapazität ist jedoch begrenzt und geografisch stark konzentriert, sodass sie nur an wenigen Netzknoten wirksam sind.
-\ac{BESS} bleiben damit der einzige Akteurstyp, der das Zeitfenster von unter zehn Sekunden bedienen kann, dabei bidirektional wirkt, netzbildende Regelung ermöglicht \cite{porst_betriebskonzepte_2025} und technisch für alle Schichten der Frequenzregelung geeignet ist \cite{garttan_battery_2025}.
-Für die weitere Untersuchung folgt daraus eine doppelte Begründung der Akteurswahl: \ac{BESS} sind für das anspruchsvollste Zeitfenster nicht nur geeignet, sondern alternativlos, und sie sind gleichzeitig der einzige der betrachteten Typen, für den kein anwendbarer Vergütungspfad existiert.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Flexibilitaetstypologie \cite{vde_etg_flexibilisierung_2023}; 16
-%   Massnahmentypen \cite{innosys_...}
-% - Konv. Kraftwerke: Vorlauf bis 24 h, ruecklaeufig
-% - Wind und PV: primaer abregelbar, prognoseabhaengig
-% - Pumpspeicher: bidirektional, begrenzt, KuPilot
-% - BESS: einziger Akteur <10 s, netzbildend, alle Frequenzregelschichten
-% <<<<< ENDE VORSCHLAG
-
-% ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Erlösquellen und Revenue Stacking}
-% Anglizismus in der Ueberschrift vermieden; der Begriff wird im Text eingefuehrt.
-\subsection{Erlösquellen und Mehrfachvermarktung}
-% <<<<< ENDE VORSCHLAG
-\label{sec:revenue_stacking}
-% [Ziel: 2 Seiten]
-
-% >>>>> VORSCHLAG: AUSFORMULIERUNG UND TABELLENGERUEST
-% PRUEFEN -- WICHTIG: Die Produktparameter in Tabelle
-% \ref{tab:regelleistung} (Aktivierungszeit, Produktschnitt,
-% Auktionsrhythmus) sind Standardangaben, aber die Details aendern sich
-% regulatorisch. Bitte vollstaendig gegen die
-% Praequalifikationsbedingungen \cite{ubertragungsnetzbetreiber_...} und
-% die Ausschreibungsdaten \cite{regelleistung_ausschreibungsdaten_2026}
-% verifizieren. Die Spalte "Erloesniveau" ist absichtlich leer gelassen:
-% Sie sollte mit eigenen Auswertungen der Ausschreibungsdaten fuer den
-% in Kapitel 4 verwendeten Betrachtungszeitraum gefuellt werden, sonst
-% entsteht ein Bruch zur eigenen Datenbasis.
-Ein Batteriespeicher erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus einem Bündel paralleler Vermarktungswege.
-Die drei wesentlichen Quellen sind die Arbitrage auf den Spotmärkten, die Bereitstellung von Regelleistung und die Teilnahme am Redispatch \cite{garrett_fitzgerald_economics_2025, bundesnetzagentur_systemstabilitatsbericht_2025}.
-Die gleichzeitige Nutzung mehrerer Quellen, als Revenue Stacking bezeichnet, ist dabei nicht eine Ertragsoptimierung am Rande, sondern Voraussetzung der Wirtschaftlichkeit: Die Vermarktung in einer einzelnen Anwendung trägt die Investition in der Regel nicht \cite{garrett_fitzgerald_economics_2025}, weshalb Multi-Use-Strategien als optimale Betriebsstrategie gelten \cite{porst_betriebskonzepte_2025}.
-Innerhalb der Spotvermarktung gewinnt dabei der kontinuierliche Intraday-Handel an Bedeutung, da er die Nachjustierung der Fahrpläne an aktualisierte Preis- und Prognoseinformationen erlaubt und dadurch einen eigenständigen Wertbeitrag über die Day-Ahead-Arbitrage hinaus liefert \cite{hornek_value_2025}.
-Tabelle~\ref{tab:regelleistung} stellt die drei Regelleistungsprodukte gegenüber, die für \ac{BESS} in Betracht kommen.
-
-\begin{table}[htbp]
-    \centering
-    \caption{Regelleistungsprodukte im Vergleich. % PRUEFEN: alle Angaben gegen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024} verifizieren.
-    }
+    \caption{Regelleistungsprodukte im Vergleich.}
     \label{tab:regelleistung}
     \small
     \begin{tabular}{p{2.2cm}p{2.8cm}p{2.4cm}p{2.6cm}p{2.6cm}}
@@ -606,117 +371,336 @@ Tabelle~\ref{tab:regelleistung} stellt die drei Regelleistungsprodukte gegenübe
     \end{tabular}
 \end{table}
 
-Den Erlösen steht eine Kostenposition gegenüber, die für die Bewertung kurativer Vorhaltung nicht unerheblich ist.
-Die Netzentgeltbelastung von Speichern und die Ausgestaltung der Entgeltsystematik beeinflussen unmittelbar, welche Vermarktungswege wirtschaftlich tragfähig sind \cite{hirth_netzentgelte_2025}; darüber hinaus wird diskutiert, in welchem Umfang die Entgeltsystematik systemdienliches Verhalten überhaupt anreizt und welche externen Effekte dabei nicht internalisiert werden \cite{anselm_eicke_systemdienlichkeit_2026}.
-Für die weitere Argumentation ist an dieser Stelle vor allem eine Eigenschaft des Erlösbündels festzuhalten: Die parallelen Vermarktungswege greifen nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage.
-Eine zusätzliche Verpflichtung tritt damit nicht neben das bestehende Bündel, sondern konkurriert mit ihm -- der Gegenstand des folgenden Abschnitts.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Erloesquellen: Arbitrage, Regelleistung, Redispatch
-%   \cite{garrett_fitzgerald_economics_2025, bundesnetzagentur_systemstabilitatsbericht_2025}
-% - Revenue Stacking als Standardstrategie; Einzelanwendung unwirtschaftlich
-% - Wert der IDC-Vermarktung \cite{hornek_value_2025}
-% - Regelleistungsprodukte als Tabelle
-% - Netzentgeltbelastung \cite{hirth_netzentgelte_2025, anselm_eicke_systemdienlichkeit_2026}
-% <<<<< ENDE VORSCHLAG
+Für die vorliegende Arbeit ist an dieser Logik zweierlei bedeutsam.
+Erstens belegt sie, dass die Vergütung vorgehaltener und überwiegend nicht abgerufener Leistung regulatorisch etabliert und wettbewerblich organisierbar ist.
+Der Einwand, eine Vergütung reiner Bereitstellung sei systemfremd, trifft für Systemdienstleistungen insgesamt nicht zu.
+Zweitens ist die Beschaffung nicht lokational ausgestaltet.
+Die Produkte dienen dem Frequenzausgleich im gesamten Regelverbund, und die Wirkung eines Abrufs auf die Belastung eines einzelnen Betriebsmittels ist für die Zuschlagserteilung unerheblich.
+Eine kurative Maßnahme ist demgegenüber nur wirksam, wenn der Akteur an einem Netzknoten mit hinreichender Sensitivität gegenüber dem betroffenen Betriebsmittel angeschlossen ist.
+Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung nicht unmittelbar anwendbar, liefert aber die Form, an der sich ein kurativer Mechanismus orientieren kann.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Konflikt zwischen Marktoptimum und kurativer Verfügbarkeit}
-% "Zielkonflikt" ist der etablierte Terminus; "Vermarktung" praeziser als "Marktoptimum".
-\subsection{Zielkonflikt zwischen Vermarktung und kurativer Verfügbarkeit}
-% <<<<< ENDE VORSCHLAG
-\label{sec:soc_conflict}
-% [Ziel: 2 Seiten]
+\subsection{Vergütung von Redispatch-Maßnahmen}
+\label{sec:redispatch_compensation}
 %
-% STÄRKSTER ABSCHNITT DES KAPITELS -- aber STRIKT QUALITATIV halten.
-% Er beschreibt genau das, was Kapitel 4 quantifiziert. Zahlen erst dort.
+% AUFGABE: Das bestehende Regime so darstellen, dass seine
+% Konstruktionslogik sichtbar wird, naemlich Entschaedigung eines
+% angeordneten Eingriffs und nicht Beschaffung einer Faehigkeit. NICHT
+% die Marktkommunikation von Redispatch 2.0 ausbreiten.
 %
-% Kernargument: Die FCR-Präqualifikation definiert bereits ein
-% reserviertes SoC-Band ("Schnabelkurve", 15-Minuten-Kriterium).
-% Kurative Vorhaltung ist ein ZWEITER Anspruch auf dasselbe Band.
+% TRAGEND: Die max()-Struktur des finanziellen Ausgleichs. Die frueher
+% hier stehende additive Darstellung war falsch und hat das Argument in
+% Abschnitt 2.2.4 untergraben.
+%
+% OFFEN 6: Alle Paragraphen- und Anlagenverweise gegen die Festlegung und
+% deren Anlagen abgleichen. Die Fundstellen sind ohne Seitenangabe
+% gesetzt und sollten praezisiert werden. Zusaetzlich die Schreibweise des
+% Aktenzeichens einheitlich fuehren, weil die Bundesnetzagentur auf ihren
+% Seiten BK8-22-001-A und in Dateinamen BK8-22-0001 verwendet.
+% OFFEN 7: Die Satz- und Nummernzaehlung in § 13a Abs. 2 EnWG gegen die
+% aktuelle Fassung pruefen. Das EnWG wurde zuletzt zum 23.12.2025
+% geaendert.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Strikt qualitativ, wie im Kommentar gefordert -- keine einzige Zahl.
-% Der Abschnitt endet mit der Formulierung der Groesse, die Kapitel 4
-% berechnet, damit die Anschlussstelle eindeutig ist.
-% PRUEFEN: Die Bezeichnung "Schnabelkurve" ist Branchenjargon. Entweder
-% als solchen kennzeichnen und die regulatorische Bezeichnung aus
-% \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
-% voranstellen, oder ganz weglassen.
+Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG}.
+Die Anpassung erfolgt dabei nicht auf Grundlage eines Gebots, sondern als Anordnung des Netzbetreibers, die der Anlagenbetreiber zu dulden hat.
+Redispatch~2.0 hat diese Systematik prozessual vereinheitlicht und den Kreis der einbezogenen Anlagen erweitert, an ihrem Charakter als Duldungs- und Entschädigungsregime jedoch nichts geändert \cite{bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025}.
+Die Norm unterscheidet zwischen dem bilanziellen Ausgleich, der die entstandene Abweichung in der Bilanzgruppe neutralisiert, und dem finanziellen Ausgleich, der den wirtschaftlichen Nachteil der Anpassung kompensiert \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+
+% TRAGENDE STELLE. Die max()-Struktur ist die Grundlage des Arguments in
+% Abschnitt 2.2.4, dass der Optionswert bei Speichern nicht
+% zahlungswirksam werden muss.
+Der finanzielle Ausgleich ist dabei nicht additiv aufgebaut.
+Zu den Erzeugungsauslagen der tatsächlich durchgeführten Anpassung tritt der jeweils höhere Wert aus dem Werteverbrauch der Anlage und den nachgewiesenen entgangenen Erlösmöglichkeiten \cite{bundesnetzagentur_festlegung_2024}.
+Beide Größen stehen also in einem Auswahl- und nicht in einem Summenverhältnis, sodass der nachgewiesene Optionswert nur dann zahlungswirksam wird, wenn er den Werteverbrauch übersteigt.
+Die Bemessung erfolgt je nach Anlagenklasse über eine Spitzabrechnung anhand nachgewiesener Einzelwerte oder über eine Pauschalabrechnung mit typisierten Sätzen.
+Die Systematik ist damit vollständig auf den Eingriff bezogen.
+Bemessungsgegenstand ist die durchgeführte Maßnahme und nicht die Fähigkeit, sie durchführen zu können.
+% OFFEN 8: Die Formulierung "gerichtlich bestaetigt" wurde entfernt, weil
+% unklar ist, ob \cite{bundesnetzagentur_beschluss_2021} eine
+% Gerichtsentscheidung wiedergibt. Pruefen und gegebenenfalls ergaenzen.
+Kosten der reinen Leistungsvorhaltung sind nach dieser Systematik nicht erstattungsfähig \cite{bundesnetzagentur_beschluss_2021}.
+
+% GAMING. In Kapitel 1 nur angezeigt, hier ausgefuehrt.
+% OFFEN 9: Fundstelle in der Anlage 1 auf die Seite genau setzen.
+% OFFEN 10: Fuer die Gegenposition fehlt ein Beleg in der
+% literature.bib. In Betracht kommt der BMWi-Abschlussbericht von Hirth,
+% Schlecht, Maurer und Tersteegen zur kosten- oder marktbasierten
+% Beschaffung. Ohne ihn steht die Diskussion einseitig.
+Gegen die kostenbasierte Bemessung wird eingewandt, sie eröffne strukturell Anreize für ein engpassverstärkendes Bietverhalten, weil ein Anlagenbetreiber seinen Fahrplan so wählen kann, dass ein Eingriff und damit ein Entschädigungsanspruch wahrscheinlicher wird.
+Die Beschlusskammer hat dieses Vorbringen im Festlegungsverfahren geprüft und ist ihm nicht gefolgt \cite{bundesnetzagentur_anlage1_2024}.
+Für die vorliegende Arbeit ist der Streitpunkt in einer anderen Hinsicht bedeutsam.
+Eine Vergütung, die an die vorgehaltene Reaktionsfähigkeit und nicht an das Eingriffsvolumen anknüpft, entzieht einem solchen Verhalten die Grundlage, weil die Zahlung dann nicht mehr mit der Menge des Eingriffs wächst.
+Die Diskussion verlagert sich in diesem Fall von der Mengenmanipulation zur Überprüfung der zugesagten Verfügbarkeit.
+
+% ---------------------------------------------------------------
+% NEU als eigener Unterabschnitt und ausfuehrlich.
+\subsection{Der modifizierte Weber-Ansatz}
+\label{sec:weber_approach}
+%
+% DIES IST DER ANGELPUNKT DER ARBEIT. Vier Bloecke in dieser Reihenfolge:
+%   A  Optionslogik
+%   B  Umsetzung in der Festlegung und ihren Anlagen
+%   C  Rechenschrittfolge des Berechnungsbeispiels
+%   D  Grenzen bei Batteriespeichern
+%
+% ABGRENZUNG ZU KAPITEL 3: Hier steht, wie das Verfahren gedacht ist.
+% Die eigene Nachrechnung, die gefundenen Fehler und die quantitative
+% Bandbreitenanalyse stehen in Abschnitt \ref{sec:reference_verification}.
+% Die geschlossene Formel darf hier stehen, weil sie fremde Arbeit ist
+% und das Rechenbeispiel ohne sie nicht erklaerbar ist.
+%
+% OFFEN 11: Anlage 5 fehlt als bib-Eintrag. Bislang ist nur Anlage 1
+% erfasst. Eintrag anlegen und die Fundstellen in diesem Abschnitt darauf
+% umstellen.
+% OFFEN 12: Die Parametrisierung in Block B ist aus der eigenen
+% Implementierung abgeleitet. Jede Angabe gegen Anlage 5 verifizieren,
+% bevor der Abschnitt als final gilt.
+
+Für den anspruchsvollsten Bestandteil des finanziellen Ausgleichs, die entgangenen Erlösmöglichkeiten, hat die Beschlusskammer eine finanzmathematische Bewertungslogik übernommen, die auf ein Gutachten von Weber zurückgeht \cite{weber_gutachten_2015}.
+Deren Grundgedanke besteht darin, die Vermarktungsmöglichkeit einer flexiblen Anlage als Finanzoption aufzufassen.
+Eine flexible Erzeugungseinheit besitzt das Recht, aber nicht die Pflicht, in einem gegebenen Zeitintervall einzuspeisen, und sie wird dies nur tun, wenn der erzielbare Marktpreis ihre variablen Erzeugungskosten übersteigt.
+Ökonomisch entspricht das einer Call-Option auf den Strompreis mit den variablen Erzeugungskosten als Basispreis, und die Vermarktungsmöglichkeit einer Anlage über einen Tag ist demnach eine Sequenz solcher Optionen.
+Wird die Anlage durch eine Anweisung des \ac{ÜNB} an der Ausübung gehindert, entspricht der entgangene Erlös dem Wert der verlorenen Option.
+Bei Speichern tritt zur Ausspeiseseite die Einspeiseseite hinzu, deren Vermarktungsmöglichkeit spiegelbildlich als Put-Option zu bewerten ist.
+Der Optionswert setzt sich dabei aus dem inneren Wert und dem Zeitwert zusammen, wobei der innere Wert die bereits realisierte Differenz zwischen Marktpreis und Basispreis erfasst und der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung bis zum Erfüllungszeitpunkt.
+Als modifiziert wird der Ansatz bezeichnet, weil er anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen unterstellt, was erforderlich ist, da Strompreise negative Werte annehmen können \cite{weber_gutachten_2015}.
+
+Die praktische Anwendung konkretisieren Kapitel 8.7 des Branchenleitfadens \cite{bdew_branchenleitfaden_2018} sowie die geltende Festlegung und deren Anlagen \cite{bundesnetzagentur_festlegung_2024, bundesnetzagentur_anlage1_2024}.
+Die Bewertung erfolgt über eine geschlossene Formel, deren Eingangsgrößen der Basispreis, der erwartete Preis, die Restlaufzeit bis zum Erfüllungszeitpunkt und ein Volatilitätsmaß sind.
+Der Basispreis entspricht bei Speichern nicht den Brennstoffkosten, sondern dem Schwellenpreis, ab dem eine Ein- oder Ausspeisung wirtschaftlich ist, und schließt die richtungsabhängigen Degradationskosten ein.
+Das Volatilitätsmaß wird aus dem quadratischen Mittel beobachteter Preisdifferenzen zwischen einer früheren und einer späteren Handelsgelegenheit gebildet und beschreibt damit die Streuung der Preisänderung über die verbleibende Restlaufzeit.
+Als erwarteter Preis dient der Preis der letzten vor dem Eingriff verfügbaren Handelsgelegenheit.
+Da die Festlegung mehrere Preisreferenzen zulässt, ist der maßgebliche Wert über eine Auswahlregel aus mehreren Preisvarianten zu bestimmen.
+
+Ein von der \ac{BNetzA} veröffentlichtes Berechnungsbeispiel für einen Tagesspeicher zeigt die vorgesehene Rechenschrittfolge \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+Sie besteht aus vier Schritten.
+Zunächst wird für jede betroffene Viertelstunde der Schwellenpreis der Anlage bestimmt, getrennt für die Ein- und die Ausspeiserichtung.
+Anschließend wird das Volatilitätsmaß aus der historischen Preisdifferenzreihe berechnet und auf die Restlaufzeit der jeweiligen Viertelstunde bezogen.
+Im dritten Schritt wird der Optionswert je Viertelstunde und Richtung über die geschlossene Formel ermittelt.
+Im vierten Schritt werden die Werte der von der Anpassung betroffenen Viertelstunden aufsummiert und dem Werteverbrauch gegenübergestellt, wobei nach der Systematik des Abschnitts \ref{sec:redispatch_compensation} der höhere der beiden Werte zur Auszahlung kommt.
+% OFFEN 13: Eine Tabelle mit den Rechenschritten und den Originalzahlen
+% des Beispiels wuerde diesen Absatz erheblich nachvollziehbarer machen.
+% Sie ist noch nicht angelegt. Vorschlag fuer die Spalten: Schritt,
+% Groesse, Berechnung, Wert, Einheit.
+
+Auf Batteriespeicher lässt sich diese Bewertung nicht ohne Weiteres übertragen, und zwar aus fünf Gründen.
+Der erste liegt in der Annahme eines über den Tag konstanten Schwellenpreises.
+Weber begründet diese Vereinfachung mit einem hinreichend großen Speicherbecken, bei dem eine einzelne Ein- oder Ausspeisung den Füllstand kaum verändert \cite{weber_gutachten_2015}.
+Ein Batteriespeicher mit wenigen Stunden Entladedauer erfüllt diese Voraussetzung nicht, denn bei ihm verschiebt jede Ein- oder Ausspeisung den Schwellenpreis der folgenden Intervalle.
+Der zweite Grund ist die Pfadabhängigkeit des Handlungsspielraums.
+Das Optionsmodell bewertet jedes Zeitintervall isoliert, während die Möglichkeit einer Anlage, in einem Intervall auszuspeisen, vom Ladezustand abhängt, den vorangegangene Entscheidungen hinterlassen haben.
+Eine intervallweise Aufsummierung von Optionswerten überschätzt den entgangenen Erlös daher systematisch, weil sie unterstellt, dass jede verhinderte Ausübung endgültig verloren ist \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
+Der dritte Grund betrifft den Gegenstand des Verlusts.
+Ein Eingriff bei einem Speicher führt in vielen Fällen nicht zu einer entfallenen, sondern zu einer verschobenen Ein- oder Ausspeisung, sodass der wirtschaftliche Nachteil in der schlechteren Preislage der Ersatzausübung und im zusätzlichen Werteverbrauch liegt und nicht im vollständigen Verlust der Erlösmöglichkeit.
+Der vierte Grund liegt in der Mehrfachvermarktung.
+Ein Speicher vermarktet dieselbe Leistung und denselben Ladezustandsbereich typischerweise parallel auf Spot- und Regelleistungsmärkten, sodass ein Eingriff gleichzeitig mehrere Erlösströme beeinträchtigt, ohne dass die auf einen einzelnen Markt bezogene Optionsbewertung dies erfassen könnte.
+Der fünfte Grund folgt aus der Auswahlregel des finanziellen Ausgleichs.
+Da der Werteverbrauch eines Batteriespeichers mit jedem Zyklus anfällt und in die Vergleichsrechnung eingeht, ist nicht gesichert, dass der Optionswert überhaupt zahlungswirksam wird.
+% OFFEN 14: Der Wegfall der Grundlage des inneren Werts durch die
+% Umstellung der Day-Ahead-Auktion auf Viertelstundenprodukte zum
+% 01.10.2025 ist ein weiterer Punkt. Er ist hier noch nicht aufgenommen,
+% weil zu klaeren ist, ob er die Bewertungslogik oder nur die
+% Parametrisierung betrifft.
+
+Konsequenterweise hat die Beschlusskammer die Behandlung von Batteriespeichern in der Festlegung nicht abschließend geregelt, sondern ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+% OFFEN 15: Vor Abgabe pruefen, ob eine solche Mitteilung inzwischen
+% ergangen ist. Recherchestand August 2026 ist, dass keine vorliegt.
+% Dieser Punkt traegt die Forschungsluecke.
+Damit liegt für die in dieser Arbeit betrachtete Technologie nicht nur eine schwer anwendbare, sondern eine ausdrücklich offengelassene Bemessungsgrundlage vor.
+Die eigene Nachrechnung des Verfahrens und die quantitative Prüfung der genannten Einwände sind Gegenstand des Abschnitts \ref{sec:reference_verification}.
+
+% ---------------------------------------------------------------
+\subsection{Flexible Netzanschlussvereinbarungen und vorrangige Flexibilitätsnutzung}
+\label{sec:flexible_connection}
+%
+% Dieser Abschnitt hat nur eine Aufgabe, naemlich die beiden
+% naheliegenden Gegeneinwaende auszuschliessen. Bewusst knapp.
+
+Als mögliche Alternativen zu einer eigenständigen Vergütung kurativer Vorhaltung kommen zwei neuere Instrumente in Betracht.
+§\,17 Abs.\,2b \ac{EnWG} erlaubt die Vereinbarung flexibler Netzanschlüsse und ist für Speicher deshalb besonders relevant, weil nur diese Norm eine Begrenzung sowohl der Einspeise- als auch der Entnahmeleistung und damit eine bidirektionale Ausgestaltung vorsieht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_faq_2025}.
+Die Norm begründet allerdings keinen Anspruch des Anlagenbetreibers auf ein solches Angebot, sondern eröffnet dem Netzbetreiber lediglich eine Möglichkeit \cite{bundesnetzagentur_beschluss_2026}.
+§\,13k \ac{EnWG} verfolgt mit dem Grundsatz \glqq{}Nutzen statt Abregeln\grqq{} einen komplementären Ansatz und regelt den Vorrang der Flexibilitätsnutzung gegenüber der Abregelung erneuerbarer Erzeugung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Beide Instrumente sind für den hier untersuchten Zweck aus demselben Grund unzureichend.
+Sie regeln die Zulässigkeit und die Rangfolge von Begrenzungen im Eintrittsfall und nicht die Bereitstellung und Vergütung einer im Voraus vorgehaltenen Reaktionsfähigkeit.
+Zudem greifen sie nicht flächendeckend, sondern nur, soweit der Netzbetreiber sie im Einzelfall anbietet.
+
+% ---------------------------------------------------------------
+\subsection{Zwischenfazit}
+\label{sec:interim_conclusion}
+%
+% ANGELPUNKT. Dieser Abschnitt traegt die Ueberkreuzstellung und die
+% praezise Fassung der Forschungsluecke. Er sollte ohne neue Quellen
+% auskommen, weil alles bereits oben steht.
+
+Die Betrachtung der bestehenden marktlichen Grundlagen führt zu vier Befunden.
+Erstens liegt die Fahrplanhoheit im Selbstdispatch-Modell beim Anlagenbetreiber, sodass kurative Verfügbarkeit nur über einen Preis und nicht über eine Anweisung herstellbar ist.
+Die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung dieser Zusage zu einem eigenständigen Produktmerkmal.
+Zweitens ist die Vergütung vorgehaltener Leistung in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne jeden Bezug zum Netzknoten.
+Drittens ist das Engpassmanagement knotenscharf, bemisst aber ausschließlich den durchgeführten Eingriff, und die für Flexibilität etablierte optionsbasierte Bewertungslogik ist auf Batteriespeicher nicht anwendbar und für diese Technologie ausdrücklich offengelassen.
+Viertens folgt daraus eine Überkreuzstellung.
+Der Kategorie nach gehört die kurative Vorhaltung zum Engpassmanagement, der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
+
+Aus dieser Überkreuzstellung entsteht eine Asymmetrie zwischen dem, was die kurative Systemführung technisch verlangt, und dem, was der regulatorische Rahmen ökonomisch abbildet.
+Verlangt wird eine über mehrere Handelsgelegenheiten hinweg bindende und mit hoher Wahrscheinlichkeit nicht abgerufene Bereitstellung.
+Vergütet wird nach der Systematik des Engpassmanagements ausschließlich der seltene Abruf.
+Ein Anlagenbetreiber, der sein Stellpotenzial vorhält, trägt die Opportunitätskosten der entgangenen Vermarktung in jedem Intervall der Bindung, erhält jedoch nur in jenen Intervallen einen Ausgleich, in denen tatsächlich abgerufen wird.
+Unter dieser Anreizstruktur ist die Vorhaltung für den Betreiber nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar.
+
+Die Bewertungsaufgabe dieser Arbeit lässt sich daraus präzise formulieren.
+Zu bestimmen ist der kurative Reservierungspreis, also der Betrag, den ein Batteriespeicher für eine kurative Vorhalteverpflichtung mindestens fordern muss, um gegenüber seinen übrigen Vermarktungswegen indifferent zu sein.
+Er entspricht dem Wert der aufgegebenen Vermarktungsoption unter Berücksichtigung der Pfadabhängigkeit des Ladezustands und der parallelen Erlösquellen.
+Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
+
+% ###############################################################
+\section{Batteriespeicher als Technologie des kurativen Akteurs}
+\label{sec:bess_actor}
+
+Der zweite der eingangs benannten Forschungsstränge befasst sich mit der Betriebsführung von Batteriespeichern zwischen marktlicher Vermarktung und netzdienlichem Einsatz.
+Arbeiten zu präventiven und kurativen Betriebsstrategien haben gezeigt, dass sich ein netzdienlicher Beitrag nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellen lässt \cite{lindner_operation_2023, porst_betriebskonzepte_2025}, und Untersuchungen zu den Erlöspotenzialen unter verändertem Marktdesign haben die wirtschaftliche Empfindlichkeit dieser Anpassung herausgearbeitet \cite{mahgoub_wie_2025}.
+Was dieser Strang offenlässt, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
+Genau diese Frage ist Gegenstand des folgenden Abschnitts.
+Er begründet zunächst, weshalb Batteriespeicher für das anspruchsvollste kurative Zeitfenster die einzige geeignete Technologie sind, stellt anschließend ihre Erlösquellen dar und arbeitet den Konflikt heraus, der zwischen der marktoptimalen Betriebsweise und der kurativen Verfügbarkeit entsteht.
+
+% ---------------------------------------------------------------
+\subsection{Vergleich kurativer Technologien}
+\label{sec:actor_comparison}
+%
+% WICHTIG: Technische BESS-Eigenschaften wie Ladezustandsdynamik,
+% Wirkungsgrade und Degradation gehoeren NICHT hierher, sondern in
+% Abschnitt 3.4 als Modellannahmen.
+%
+% OFFEN 16: Die Tabelle ist ein Geruest. Die Spalte "Verfuegbarkeit 2030"
+% ist eine Einschaetzung und muss entweder belegt oder als eigene
+% Einschaetzung gekennzeichnet werden. Bitte Zelle fuer Zelle durchgehen.
+
+Die Eignung einer Technologie für die kurative Systemführung entscheidet sich anhand von vier Merkmalen, nämlich der erreichbaren Reaktionszeit, der Frage, ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, der zu erwartenden Verfügbarkeit im Zeithorizont 2030 sowie dem Vergütungspfad, über den die Bereitstellung heute abgebildet würde.
+Tabelle~\ref{tab:akteursvergleich} stellt die in Betracht kommenden Technologien entlang dieser Merkmale gegenüber.
+Die Systematisierung folgt der Flexibilitätstypologie nach Erzeugung, Verbrauch, Speicherung und Netz \cite{vde_etg_flexibilisierung_2023} sowie dem Maßnahmenkatalog aus InnoSys~2030 \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Vergleich kurativer Technologien. Eigene Darstellung.}
+    \label{tab:akteursvergleich}
+    \small
+    \begin{tabular}{p{2.6cm}p{2.4cm}p{2.6cm}p{2.6cm}p{2.6cm}}
+        \hline
+        \textbf{Technologie} & \textbf{Reaktionszeit} & \textbf{Energiebindung} & \textbf{Verfügbarkeit 2030} & \textbf{Vergütungspfad} \\
+        \hline
+        Konventionelle Kraftwerke & Vorlaufzeit bis 24\,h & keine (brennstoff\-gebunden) & rückläufig & §\,13a \ac{EnWG}, Weber-Ansatz \\
+        Windenergie & schnell, nur abregelnd & keine & prognose\-abhängig & §\,13a \ac{EnWG} \\
+        Photovoltaik & schnell, nur abregelnd & keine & prognose\-abhängig, tageszeitlich begrenzt & §\,13a \ac{EnWG} \\
+        Pumpspeicher & Sekunden bis Minuten & ja & begrenzt, geografisch konzentriert & §\,13a \ac{EnWG}, Speicher\-behandlung offen \\
+        \ac{BESS} & Sekunden & ja, ladezustands\-abhängig & stark steigend & offen \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Der Vergleich zeigt, dass die Technologien nicht gleichmäßig über die drei Zeitfenster aus Abschnitt \ref{sec:curative_functionality} verteilt sind.
+Konventionelle Kraftwerke sind wegen ihrer Vorlaufzeiten auf das 15-Minuten-Fenster beschränkt und zugleich die Technologie mit rückläufiger Verfügbarkeit \cite{innosys_2030_gesamtverbund_innovationen_2021, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
+Wind- und Photovoltaikanlagen reagieren zwar schnell, stellen aber im Wesentlichen nur ein Abregelpotenzial bereit und sind in ihrer Verfügbarkeit an die Einspeisesituation gebunden, die dem Engpass typischerweise zugrunde liegt \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
+Pumpspeicher sind bidirektional und schnell und wurden im KuPilot-Pilotbetrieb bereits eingesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025, vde_etg_flexibilisierung_2023}.
+Ihre Kapazität ist jedoch begrenzt und geografisch stark konzentriert, sodass sie nur an wenigen Netzknoten wirksam sind.
+\ac{BESS} bleiben damit die einzige Technologie, die das Zeitfenster von unter zehn Sekunden bedienen kann, dabei bidirektional wirkt, netzbildende Regelung ermöglicht \cite{porst_betriebskonzepte_2025} und technisch für alle Schichten der Frequenzregelung geeignet ist \cite{garttan_battery_2025}.
+Für die weitere Untersuchung folgt daraus eine doppelte Begründung der Technologiewahl.
+\ac{BESS} sind für das anspruchsvollste Zeitfenster nicht nur geeignet, sondern ohne Alternative, und sie sind gleichzeitig die einzige der betrachteten Technologien, für die kein anwendbarer Vergütungspfad existiert.
+% ERGAENZUNG, Anschluss an Absatz 5 von Abschnitt 1.1: Dieselbe
+% Eigenschaft, die die Vermarktung bis kurz vor den Erfuellungszeitpunkt
+% erlaubt, qualifiziert die Technologie fuer das engste kurative
+% Zeitfenster. Der folgende Satz haelt das fest, ohne eine Aussage
+% darueber zu treffen, in welchem Umfang kurzfristige Engpaesse
+% entstehen.
+Bemerkenswert ist dabei, dass es dieselbe Eigenschaft ist, die diese Technologie für eine Vermarktung bis kurz vor den Erfüllungszeitpunkt und für einen Einsatz im engsten kurativen Zeitfenster qualifiziert.
+
+% ---------------------------------------------------------------
+\subsection{Erlösquellen und Mehrfachvermarktung}
+\label{sec:revenue_stacking}
+
+Ein Batteriespeicher erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus einem Bündel paralleler Vermarktungswege.
+Die drei wesentlichen Quellen sind die Arbitrage auf den Spotmärkten, die Bereitstellung von Regelleistung nach der in Abschnitt \ref{sec:balancing_procurement} beschriebenen Systematik und die Teilnahme am Redispatch \cite{garrett_fitzgerald_economics_2025, bundesnetzagentur_systemstabilitatsbericht_2025}.
+Die gleichzeitige Nutzung mehrerer Quellen, als Mehrfachvermarktung bezeichnet, ist dabei nicht eine Ertragsoptimierung am Rande, sondern Voraussetzung der Wirtschaftlichkeit.
+Die Vermarktung in einer einzelnen Anwendung trägt die Investition in der Regel nicht \cite{garrett_fitzgerald_economics_2025}, weshalb Mehrfachnutzungsstrategien als optimale Betriebsstrategie gelten \cite{porst_betriebskonzepte_2025}.
+Innerhalb der Spotvermarktung gewinnt dabei der kontinuierliche Intraday-Handel an Bedeutung, da er die Nachjustierung der Fahrpläne an aktualisierte Preis- und Prognoseinformationen erlaubt und dadurch einen eigenständigen Wertbeitrag über die Day-Ahead-Arbitrage hinaus liefert \cite{hornek_value_2025}.
+
+Den Erlösen steht eine Kostenposition gegenüber, die für die Bewertung kurativer Vorhaltung nicht unerheblich ist.
+Die Netzentgeltbelastung von Speichern und die Ausgestaltung der Entgeltsystematik beeinflussen unmittelbar, welche Vermarktungswege wirtschaftlich tragfähig sind \cite{hirth_netzentgelte_2025}.
+Darüber hinaus wird diskutiert, in welchem Umfang die Entgeltsystematik systemdienliches Verhalten überhaupt anreizt und welche externen Effekte dabei nicht internalisiert werden \cite{anselm_eicke_systemdienlichkeit_2026}.
+Für die weitere Argumentation ist an dieser Stelle vor allem eine Eigenschaft des Erlösbündels festzuhalten.
+Die parallelen Vermarktungswege greifen nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage.
+Eine zusätzliche Verpflichtung tritt damit nicht neben das bestehende Bündel, sondern konkurriert mit ihm.
+Diese Konkurrenz ist Gegenstand des folgenden Abschnitts.
+
+% ---------------------------------------------------------------
+\subsection{Zielkonflikt zwischen Vermarktung und kurativer Verfügbarkeit}
+\label{sec:soc_conflict}
+%
+% STAERKSTER ABSCHNITT DES KAPITELS, aber STRIKT QUALITATIV halten. Er
+% beschreibt genau das, was Kapitel 4 quantifiziert. Zahlen erst dort.
+%
+% Kernargument: Die FCR-Praequalifikation definiert bereits ein
+% reserviertes Ladezustandsband. Kurative Vorhaltung ist ein ZWEITER
+% Anspruch auf dasselbe Band.
+%
+% OFFEN 17: Die Bezeichnung "Schnabelkurve" ist Branchenjargon und im
+% Text bewusst nicht verwendet. Falls sie aufgenommen werden soll, ist
+% die regulatorische Bezeichnung voranzustellen.
+
 Der Ladezustand eines Batteriespeichers ist die knappe Ressource, um die alle seine Vermarktungswege konkurrieren.
 Diese Konkurrenz ist regulatorisch bereits anerkannt und ausgestaltet, und zwar in den Präqualifikationsbedingungen für die Vorhaltung von \ac{FCR}.
-Sie schreiben vor, dass eine Anlage jederzeit in der Lage sein muss, die angebotene Leistung über einen definierten Zeitraum vollständig zu erbringen, und definieren daraus einen zulässigen Arbeitsbereich des Ladezustands, innerhalb dessen sich die Anlage bewegen darf; ergänzt wird dieser durch Regelungen zum bilanzgruppenübergreifenden Nachlademanagement, die die Rückführung in den Arbeitsbereich ermöglichen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Sie schreiben vor, dass eine Anlage jederzeit in der Lage sein muss, die angebotene Leistung über einen definierten Zeitraum vollständig zu erbringen, und definieren daraus einen zulässigen Arbeitsbereich des Ladezustands, innerhalb dessen sich die Anlage bewegen darf.
+Ergänzt wird dieser durch Regelungen zum bilanzgruppenübergreifenden Nachlademanagement, die die Rückführung in den Arbeitsbereich ermöglichen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Wirtschaftlich bedeutet diese Vorgabe, dass ein Teil des nutzbaren Energieinhalts der Anlage für die Arbitrage nicht zur Verfügung steht.
-Dass die Breite dieses reservierten Bandes eine regulatorische Entscheidung mit unmittelbarer Erlöswirkung ist, zeigt die Ablösung des vormals geltenden 30-Minuten-Kriteriums durch das heutige 15-Minuten-Kriterium: Die Verkürzung des vorzuhaltenden Zeitraums hat den für die Vermarktung nutzbaren Bereich unmittelbar vergrößert \cite{bundesnetzagentur_beschluss_2019}.
+Dass die Breite dieses reservierten Bandes eine regulatorische Entscheidung mit unmittelbarer Erlöswirkung ist, zeigt die Ablösung des vormals geltenden 30-Minuten-Kriteriums durch das heutige 15-Minuten-Kriterium.
+Die Verkürzung des vorzuhaltenden Zeitraums hat den für die Vermarktung nutzbaren Bereich unmittelbar vergrößert \cite{bundesnetzagentur_beschluss_2019}.
 Für die vorliegende Arbeit ist dieser Vorgang in zweifacher Hinsicht instruktiv.
-Er belegt, dass die Bemessung einer Vorhaltepflicht als regulatorischer Gestaltungsparameter behandelt wird und nicht als technische Konstante, und er liefert einen Präzedenzfall dafür, dass die Dauer der Bindung und nicht nur die vorgehaltene Leistung die Erlöswirkung bestimmt -- ein Argument, das in Abschnitt \ref{sec:requirements_catalogue} in die Produktanforderungen und in Kapitel~\ref{ch:discussion} in die Diskussion der Vergütungsdauer eingeht.
+Er belegt, dass die Bemessung einer Vorhaltepflicht als regulatorischer Gestaltungsparameter behandelt wird und nicht als technische Konstante.
+Und er liefert einen Präzedenzfall dafür, dass die Dauer der Bindung und nicht nur die vorgehaltene Leistung die Erlöswirkung bestimmt.
+Dieses Argument geht in Abschnitt \ref{sec:requirements_catalogue} in die Produktanforderungen und in Kapitel~\ref{ch:discussion} in die Diskussion der Vergütungsdauer ein.
 
-Eine kurative Vorhalteverpflichtung tritt vor diesem Hintergrund nicht in eine leere Fläche, sondern erhebt einen zweiten, konkurrierenden Anspruch auf dieselbe Ressource.
+Eine kurative Vorhalteverpflichtung tritt vor diesem Hintergrund nicht in eine leere Fläche, sondern erhebt einen zweiten und konkurrierenden Anspruch auf dieselbe Ressource.
 Sie verlangt, dass die Anlage zu jedem Zeitpunkt der Bindung eine bestimmte Leistungsänderung in einer bestimmten Richtung erbringen kann, und damit, dass ihr Ladezustand eine entsprechende Reserve in genau dieser Richtung aufweist.
 Der marktoptimale Fahrplan hingegen führt den Ladezustand systematisch an die Ränder des zulässigen Bereichs, weil Arbitrage gerade darin besteht, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu entleeren.
-Beide Ansprüche sind daher nicht nur formal, sondern strukturell unvereinbar: Die kurative Verfügbarkeit ist genau in jenen Intervallen am stärksten eingeschränkt, in denen die Vermarktung den größten Wert erzielt, und das sind zugleich die Intervalle hoher Netzbelastung, in denen der Engpass auftritt.
+Beide Ansprüche sind daher nicht nur formal, sondern strukturell unvereinbar.
+Die kurative Verfügbarkeit ist genau in jenen Intervallen am stärksten eingeschränkt, in denen die Vermarktung den größten Wert erzielt, und das sind zugleich die Intervalle hoher Netzbelastung, in denen der Engpass auftritt.
 Der Konflikt hat dabei drei Wirkungsebenen.
-Er reduziert erstens den für die Arbitrage nutzbaren Energieinhalt, verändert zweitens den zeitlichen Verlauf des optimalen Fahrplans, weil zeitgekoppelte Ladezustandsrestriktionen in die Gebotsbildung eingehen und Entscheidungen über den gesamten Betrachtungshorizont verketten \cite{schmitt_linear_2020}, und schränkt drittens die parallele Vermarktung in weiteren Anwendungen ein, da die vorgehaltene Reserve für keine von ihnen mehr disponibel ist \cite{garrett_fitzgerald_economics_2025, garttan_battery_2025}.
+Er reduziert erstens den für die Arbitrage nutzbaren Energieinhalt.
+Er verändert zweitens den zeitlichen Verlauf des optimalen Fahrplans, weil zeitgekoppelte Ladezustandsrestriktionen in die Gebotsbildung eingehen und Entscheidungen über den gesamten Betrachtungshorizont verketten \cite{schmitt_linear_2020}.
+Und er schränkt drittens die parallele Vermarktung in weiteren Anwendungen ein, da die vorgehaltene Reserve für keine von ihnen mehr disponibel ist \cite{garrett_fitzgerald_economics_2025, garttan_battery_2025}.
 Arbeiten zu kombinierten präventiv-kurativen Betriebsstrategien bestätigen, dass eine kurative Einbindung nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellbar ist \cite{lindner_operation_2023}.
-Damit ist die zu bestimmende Größe benannt: Sie ist die Differenz zwischen dem Ergebnis der unbeschränkten Fahrplanoptimierung und dem Ergebnis derselben Optimierung unter kurativer Vorhaltebedingung, und sie ist zugleich die Untergrenze, unterhalb derer ein rationaler Anlagenbetreiber die Vorhaltung nicht anbieten wird.
-Ihre modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Zulaessiger SoC-Arbeitsbereich FCR-PQ: 15-Minuten-Kriterium,
-%   Arbeits-/Entscheidungsbereich, Nachlademanagement
-%   \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
-% - Bandbreite als regulatorische Entscheidung: 30 -> 15 min
-%   \cite{bundesnetzagentur_beschluss_2019}
-% - Kurative Vorhaltung als zweiter Anspruch \cite{garrett_..., garttan_...}
-% - Zeitgekoppelte SoC-Restriktionen \cite{schmitt_linear_2020};
-%   kombinierte Strategien \cite{lindner_operation_2023}
-% <<<<< ENDE VORSCHLAG
+Damit ist die zu bestimmende Größe benannt.
+Der kurative Reservierungspreis entspricht der Erlöswirkung dieser Umplanung und ist zugleich der Betrag, unterhalb dessen ein rationaler Anlagenbetreiber die Vorhaltung nicht anbietet.
+Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Marktentwicklung bis 2030 und Rückwirkung auf das Engpassmanagement}
-% Zweiteilige Ueberschrift gekuerzt; die Rueckwirkung ist Inhalt des Abschnitts.
 \subsection{Marktentwicklung bis 2030}
-% <<<<< ENDE VORSCHLAG
 \label{sec:market_development}
-% [Ziel: 1,5 Seiten]
 %
-% Kernaussage: Ein kurativer Markt greift in eine Marktentwicklung ein,
-% die selbst in Bewegung ist. Das ist ein starkes Argument für einen
-% Mechanismus, der VORHALTUNG statt ARBEIT vergütet -- hier vorwegnehmen
-% und in Abschnitt 5.1 wieder aufgreifen.
+% OFFEN 18: Fuer die installierte Kapazitaet im 2030-Szenario fehlt eine
+% konkrete Zahl, sonst bleibt das Szenario unbestimmt. Belegbar aus
+% \cite{rystad_energy_renewables__power_analytics_energy_2026} oder
+% \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Vorschlag: Diesen Abschnitt auf ca. 1 Seite kuerzen und die
-% eingesparte halbe Seite Abschnitt 2.2.1 (Selbstdispatch) zuschlagen.
-% PRUEFEN / ZAHL ERGAENZEN: Fuer die installierte Kapazitaet im
-% 2030-Szenario ist eine konkrete Zahl noetig, sonst bleibt das
-% Szenario unbestimmt. Belegbar aus \cite{rystad_energy_...} oder
-% \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Vorschlag:
-%   Fuer 2030 wird eine installierte Batteriespeicherkapazitaet von
-%   rund [X]\,\si{GW} erwartet \cite{...}.
 Der in dieser Arbeit betrachtete Zeithorizont ist kein stationärer Zustand.
-Die installierte Batteriespeicherkapazität wächst getrieben von sinkenden Systemkosten deutlich, und der Ausbau verändert die Zusammensetzung des für das Engpassmanagement verfügbaren Akteursportfolios \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026, bundesnetzagentur_netzentwicklungsplan_2026}.
-Dieser Ausbau wirkt auf die eigene Wirtschaftlichkeitsgrundlage zurück: Speicher verdienen an Preisspreads, und indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken, verringern sie genau die Spreads, aus denen sie ihre Erlöse ziehen \cite{mahgoub_wie_2025}.
+Die installierte Batteriespeicherkapazität wächst getrieben von sinkenden Systemkosten deutlich, und der Ausbau verändert die Zusammensetzung des für das Engpassmanagement verfügbaren Technologieportfolios \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026, bundesnetzagentur_netzentwicklungsplan_2026}.
+Dieser Ausbau wirkt auf die eigene Wirtschaftlichkeitsgrundlage zurück.
+Speicher verdienen an Preisspreads, und indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken, verringern sie genau die Spreads, aus denen sie ihre Erlöse ziehen \cite{mahgoub_wie_2025}.
 Für die Ausgestaltung eines kurativen Mechanismus hat diese Rückwirkung eine unmittelbare Konsequenz.
-Eine Vergütung, die an den Wert der entgangenen Arbitrage eines konkreten Zeitpunkts gebunden ist, folgt einer Größe, die sich mit dem Ausbaustand systematisch verändert; eine Vergütung der Vorhaltung als solcher ist demgegenüber robuster gegenüber dieser Entwicklung, weil sie das Bereitstellen der Reaktionsfähigkeit und nicht deren jeweils aktuellen Opportunitätswert honoriert.
+Eine Vergütung, die an den Wert der entgangenen Arbitrage eines konkreten Zeitpunkts gebunden ist, folgt einer Größe, die sich mit dem Ausbaustand systematisch verändert.
+Eine Vergütung der Vorhaltung als solcher ist demgegenüber robuster gegenüber dieser Entwicklung, weil sie das Bereitstellen der Reaktionsfähigkeit und nicht deren jeweils aktuellen Opportunitätswert honoriert.
 Hinzu kommt, dass die Systemdienlichkeit des Speicherbetriebs heute nur unvollständig in den Preissignalen abgebildet ist, sodass Standort- und Betriebsentscheidungen von den netzseitigen Effekten teilweise entkoppelt getroffen werden \cite{anselm_eicke_systemdienlichkeit_2026}.
 Ein Mechanismus, der lokationale Vorhaltung explizit vergütet, adressiert damit nicht nur ein Verfügbarkeitsproblem, sondern auch eine bestehende Anreizlücke.
 Die Bewertung dieses Zusammenhangs erfolgt in Abschnitt \ref{sec:regulatory_discussion}.
-% GEPRUEFT: Label sec:regulatory_discussion existiert in chapter_5.tex.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Installierte Kapazitaet und Kostenentwicklung \cite{garttan_..., rystad_...}
-% - Rueckwirkung auf Preisspreads \cite{mahgoub_wie_2025}
-% - Verschiebung des Akteursportfolios \cite{bundesnetzagentur_netzentwicklungsplan_2026}
-% - Systemdienlichkeit und externe Effekte \cite{anselm_eicke_systemdienlichkeit_2026}
-% <<<<< ENDE VORSCHLAG
 
 % ###############################################################
-\section{Anforderungen an einen kurativen Marktmechanismus}
+\section{Anforderungen und Forschungsbedarf}
 \label{sec:market_requirements}
-% [Ziel: 3 Seiten]
+%
+% OFFEN 19, ZU ENTSCHEIDEN: Die Abschnitte 2.4.1 und 2.4.2 sind eigene
+% Herleitung und damit strenggenommen kein Stand der Technik. Sie koennten
+% als Abschnitt 3.1 vor den Produktentwurf wandern, wodurch Kapitel 2 auf
+% rund 23 Seiten sinkt und Kapitel 3 um zwei Seiten waechst. Dagegen
+% spricht, dass der Abgleich in 2.4.2 mit den Netzboostern und der
+% lokationalen Preisbildung fremde Ansaetze behandelt und damit inhaltlich
+% hierher passt. Diese Fassung behaelt beide Abschnitte hier.
 %
 % ABGRENZUNG ZU KAPITEL 3: Hier steht, WAS der Mechanismus leisten muss.
 % WIE er ausgestaltet wird, steht in Abschnitt 3.1. Tauchen hier bereits
@@ -724,72 +708,52 @@ Die Bewertung dieses Zusammenhangs erfolgt in Abschnitt \ref{sec:regulatory_disc
 % weggeschrieben.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Ableitung des Anforderungskatalogs}
-% Nominalstil; die Ableitung ist der Inhalt.
 \subsection{Anforderungskatalog}
-% <<<<< ENDE VORSCHLAG
 \label{sec:requirements_catalogue}
-% [Ziel: 1 Seite]
+%
+% Die Nummerierung ist eingefuehrt, damit die Vergleichsmatrix in 2.4.2
+% und die Produktdefinition in 3.1 darauf verweisen koennen.
+% GEAENDERT: A1 traegt jetzt die Sanktionsbeduerftigkeit der binaeren
+% Erfuellung, weil eine binaere Anforderung ohne Poenale keine
+% verbindliche Zusage ist. A5 ist auf den Reservierungspreis umgestellt.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Sechs Anforderungen A1-A6, jede mit Herkunftsnachweis auf einen
-% vorangehenden Abschnitt. Die Nummerierung ist bewusst eingefuehrt,
-% damit die Vergleichsmatrix in 2.4.2 und die Produktdefinition in 3.1
-% darauf verweisen koennen, ohne die Anforderungen zu wiederholen.
-% Gegenueber der Stichpunktliste ist A5 (Anreizkompatibilitaet im
-% Selbstdispatch) neu -- sie folgt aus Abschnitt 2.2.1 und ist die
-% Anforderung, an der die Arbeit ihre Mindestverguetung ausrichtet.
-% ACHTUNG Abgrenzung: Keine Bindungsdauern, keine Beschaffungszeitpunkte,
-% keine Produktgroessen. Nur Eigenschaften.
 Aus der Argumentation dieses Kapitels lassen sich sechs Anforderungen an einen Mechanismus zur Beschaffung kurativer Vorhalteleistung ableiten.
-Sie beschreiben ausschließlich, was der Mechanismus leisten muss; die konkrete Ausgestaltung erfolgt in Abschnitt \ref{sec:product_design}.
+Sie beschreiben ausschließlich, was der Mechanismus leisten muss, während die konkrete Ausgestaltung in Abschnitt \ref{sec:product_design} erfolgt.
 
 \begin{description}
-    \item[A1 -- Reaktionsgeschwindigkeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit eine Eigenschaft des betroffenen Betriebsmittels und keine Wahlgröße des Akteurs ist. Die Erfüllung ist binär: Eine verspätete Leistungsänderung hat keinen verminderten, sondern keinen Wert (aus Abschnitt \ref{sec:curative_functionality}).
-    \item[A2 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, da die Wirksamkeit einer Maßnahme von der Sensitivität des Akteursstandorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein \cite{blank_determination_2024}.
+    \item[A1 -- Reaktionsgeschwindigkeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit eine Eigenschaft des betroffenen Betriebsmittels und keine Wahlgröße des Akteurs ist. Die Erfüllung ist binär, denn eine verspätete Leistungsänderung hat keinen verminderten, sondern keinen Wert. Eine binäre Anforderung setzt eine Sanktion bei Nichterfüllung voraus, da die Zusage andernfalls nicht verbindlich ist (aus Abschnitt \ref{sec:curative_functionality}).
+    \item[A2 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, da die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein \cite{blank_determination_2024}.
     \item[A3 -- Vergütung der Vorhaltung] Bemessungsgegenstand muss die verbindliche Bereitstellung von Reaktionsfähigkeit sein und nicht der durchgeführte Eingriff, da die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen (aus Abschnitt \ref{sec:interim_conclusion}).
     \item[A4 -- Diskriminierungsfreiheit] Der Zugang muss technologieoffen ausgestaltet sein und dem Vorrang marktbasierter Beschaffung vor Redispatch entsprechen \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-    \item[A5 -- Anreizkompatibilität] Die Vergütung muss mindestens die entgangenen Erlöse der aufgegebenen Vermarktung decken, weil im Selbstdispatch-Modell die Fahrplanhoheit beim Anlagenbetreiber liegt und Verfügbarkeit nur über einen Anreiz und nicht über eine Anweisung herstellbar ist (aus Abschnitt \ref{sec:market_horizons}).
+    \item[A5 -- Anreizkompatibilität] Die Vergütung muss mindestens den kurativen Reservierungspreis erreichen, weil im Selbstdispatch-Modell die Fahrplanhoheit beim Anlagenbetreiber liegt und Verfügbarkeit nur über einen Anreiz und nicht über eine Anweisung herstellbar ist (aus Abschnitt \ref{sec:market_horizons}).
     \item[A6 -- Vereinbarkeit mit bestehenden Verpflichtungen] Der Mechanismus muss mit den Präqualifikations- und Vermarktungsverpflichtungen vereinbar sein, unter denen die Anlage bereits steht, insbesondere mit dem für die Regelleistungsvorhaltung reservierten Ladezustandsbereich (aus Abschnitt \ref{sec:soc_conflict}).
 \end{description}
 
 Die Anforderungen sind nicht unabhängig voneinander.
-A5 und A6 stehen in einem Spannungsverhältnis, das den quantitativen Kern dieser Arbeit bildet: Je enger der durch bestehende Verpflichtungen bereits gebundene Ladezustandsbereich, desto höher der Wert der zusätzlich aufzugebenden Vermarktungsoption und damit die nach A5 erforderliche Mindestvergütung.
-A2 und A4 können ebenfalls in Konflikt treten, da eine netzknotenscharfe Beschaffung in Gebieten mit wenigen geeigneten Anlagen zu geringer Wettbewerbsintensität führt -- ein Aspekt, der in Kapitel~\ref{ch:discussion} aufgegriffen wird.
-
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Reaktionsgeschwindigkeit entsprechend TATL-Fenster (2.1.3)
-% - Lokationalitaet \cite{blank_determination_2024}
-% - Verguetung von Vorhaltung statt Arbeit (2.2.4)
-% - Diskriminierungsfreiheit \cite{europaisches_parlament_...}
-% - Vereinbarkeit mit Praequalifikation (2.3.3)
-% <<<<< ENDE VORSCHLAG
+A5 und A6 stehen in einem Spannungsverhältnis, das den quantitativen Kern dieser Arbeit bildet.
+Je enger der durch bestehende Verpflichtungen bereits gebundene Ladezustandsbereich ausfällt, desto höher ist der Wert der zusätzlich aufzugebenden Vermarktungsoption und damit der nach A5 erforderliche Reservierungspreis.
+A1 und A5 sind ebenfalls gekoppelt, da eine höhere Pönale die Verbindlichkeit der Zusage stärkt, zugleich aber eine Risikoprämie erzeugt und den geforderten Preis erhöht.
+A2 und A4 können in Konflikt treten, da eine netzknotenscharfe Beschaffung in Gebieten mit wenigen geeigneten Anlagen zu geringer Wettbewerbsintensität führt.
+Diese Zusammenhänge werden in Kapitel~\ref{ch:discussion} aufgegriffen.
 
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Bestehende Marktdesignansätze im Abgleich}
-% Nachgestelltes "im Abgleich" sprachlich unschoen; Nominalstil vorangestellt.
 \subsection{Abgleich bestehender Marktdesignansätze}
-% <<<<< ENDE VORSCHLAG
 \label{sec:market_design_comparison}
-% [Ziel: 1,5 Seiten]
-% VERGLEICHSMATRIX gegen den Anforderungskatalog aus 2.4.1.
+%
+% OFFEN 20: Die Bewertungen in der Matrix sind eigene Einschaetzungen und
+% muessen im Fliesstext begruendet sein. Eine Matrix mit unbegruendeten
+% Symbolen ist in der Verteidigung angreifbar. Bitte pruefen, ob die
+% Begruendung jeweils traegt.
+% GEAENDERT: Die Regelleistung ist als fuenfte Zeile aufgenommen. Sie
+% fehlte, obwohl sie A3 erfuellt und damit der naechstliegende Vergleich
+% ist.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG UND MATRIXGERUEST
-% ACHTUNG: Die Bewertungen in Tabelle \ref{tab:designabgleich} sind
-% Vorschlaege auf Basis der zitierten Literatur, aber es sind
-% BEWERTUNGEN und damit eigene Einschaetzungen. Sie muessen im Text
-% begruendet sein -- eine Matrix mit unbegruendeten Symbolen ist in der
-% Verteidigung angreifbar. Der Fliesstext unten begruendet die Zeilen;
-% bitte pruefen, ob die Begruendung jeweils traegt.
 Bevor ein neuer Mechanismus entworfen wird, ist zu prüfen, ob bestehende oder diskutierte Marktdesignansätze die Anforderungen A1 bis A6 bereits erfüllen.
-Tabelle~\ref{tab:designabgleich} stellt vier Ansätze gegenüber.
+Tabelle~\ref{tab:designabgleich} stellt fünf Ansätze gegenüber.
 
 \begin{table}[htbp]
     \centering
-    \caption{Abgleich bestehender Marktdesignansätze mit dem Anforderungskatalog. Eigene Bewertung. % PRUEFEN: Bewertungen im Fliesstext begruenden.
-    }
+    \caption{Abgleich bestehender Marktdesignansätze mit dem Anforderungskatalog. Eigene Bewertung.}
     \label{tab:designabgleich}
     \small
     \begin{tabular}{p{4.6cm}cccccc}
@@ -798,6 +762,7 @@ Tabelle~\ref{tab:designabgleich} stellt vier Ansätze gegenüber.
         \hline
         Lokationale Preisbildung / Zonenteilung & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
         Lokationale Redispatch-Preise & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
+        Regelleistungsmärkte & $\bullet$ & -- & $\bullet$ & $\bullet$ & $\bullet$ & $\circ$ \\
         Kapazitätsmechanismen & -- & $\circ$ & $\bullet$ & $\bullet$ & $\bullet$ & -- \\
         Netzbooster & $\bullet$ & $\bullet$ & $\bullet$ & -- & -- & -- \\
         \hline
@@ -806,45 +771,83 @@ Tabelle~\ref{tab:designabgleich} stellt vier Ansätze gegenüber.
 \end{table}
 
 Die lokationale Preisbildung, sei es über eine Teilung der Gebotszone oder über knotenscharfe Preise, adressiert die Ursache des Problems an der richtigen Stelle, indem sie Netzrestriktionen in die Fahrplanbildung internalisiert und damit den Redispatchbedarf verringert \cite{oggioni_market_2013, newbery_market_2018, einsiedler_analysis_2025}.
-Sie erzeugt jedoch kein Produkt für vorgehaltene Reaktionsfähigkeit: Ein lokationaler Preis bewertet die Einspeisung an einem Knoten, nicht die Fähigkeit, sie im Fehlerfall innerhalb von Sekunden zu ändern.
+Sie erzeugt jedoch kein Produkt für vorgehaltene Reaktionsfähigkeit, denn ein lokationaler Preis bewertet die Einspeisung an einem Knoten und nicht die Fähigkeit, sie im Fehlerfall innerhalb von Sekunden zu ändern.
 Dasselbe gilt für lokationale Redispatch-Preise, die eine sachgerechtere Bemessung des durchgeführten Eingriffs erlauben \cite{blank_determination_2024}, den Bemessungsgegenstand aber nicht von der Arbeit auf die Vorhaltung verlagern und damit A3 nicht erfüllen.
-Kapazitätsmechanismen vergüten demgegenüber gerade die Bereitstellung und nicht die Erzeugung und erfüllen A3 damit konzeptionell \cite{consentec_ausarbeitung_2024, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}; sie sind jedoch auf Leistungsbilanzsicherheit und nicht auf Netzengpässe ausgerichtet, weshalb ihnen die geforderte Lokationalität und die Differenzierung nach Reaktionszeit fehlen.
+Die Regelleistungsmärkte erfüllen A1, A3, A4 und A5, weil sie nach Reaktionszeit differenzierte Produkte im Wettbewerb beschaffen und die Bereitstellung vergüten.
+Ihnen fehlt jedoch die Lokationalität, und die Vereinbarkeit mit weiteren Verpflichtungen ist nur teilweise gegeben, da der reservierte Ladezustandsbereich bereits durch die Präqualifikation gebunden ist.
+Kapazitätsmechanismen vergüten ebenfalls die Bereitstellung und nicht die Erzeugung und erfüllen A3 damit konzeptionell \cite{consentec_ausarbeitung_2024, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
+Sie sind jedoch auf Leistungsbilanzsicherheit und nicht auf Netzengpässe ausgerichtet, weshalb ihnen die geforderte Lokationalität und die Differenzierung nach Reaktionszeit fehlen.
 Am nächsten kommt der Anforderung das Netzbooster-Konzept, das speicherbasierte Leistung standortscharf für den Fehlerfall vorhält und damit A1 bis A3 erfüllt \cite{consentec_systembooster_2026}.
-Es beruht allerdings auf einer regulierten Anlage im Eigentum oder unter Verfügung des Netzbetreibers und nicht auf einer wettbewerblichen Beschaffung von Marktteilnehmern; A4 und A5 sind damit nicht adressiert, und die Frage nach der Vergütung eines am Markt tätigen Anbieters stellt sich in diesem Konzept nicht.
+Es beruht allerdings auf einer regulierten Anlage im Eigentum oder unter Verfügung des Netzbetreibers und nicht auf einer wettbewerblichen Beschaffung von Marktteilnehmern.
+A4 und A5 sind damit nicht adressiert, und die Frage nach der Vergütung eines am Markt tätigen Anbieters stellt sich in diesem Konzept nicht.
 Genau diese Abgrenzung markiert den Gegenstand der vorliegenden Arbeit.
 
-% URSPRUENGLICHE STICHPUNKTE (Zuordnungskontrolle, vor Abgabe loeschen):
-% - Lokationale Preisbildung \cite{oggioni_market_2013, newbery_market_2018,
-%   einsiedler_analysis_2025}
-% - Lokationale Redispatch-Preise \cite{blank_determination_2024}
-% - Kapazitaetsmechanismen \cite{consentec_ausarbeitung_2024, bundesministerium_...}
-% - Netzbooster und Abgrenzung \cite{consentec_systembooster_2026}
-% <<<<< ENDE VORSCHLAG
-
 % ---------------------------------------------------------------
-% >>>>> VORSCHLAG: UEBERSCHRIFT KONVENTIONALISIERT
-% Vorher: \subsection{Forschungslücke}
-% "Ableitung des Forschungsbedarfs" ist die in Dissertationen gaengigere Formulierung und betont, dass der Bedarf hergeleitet wird.
 \subsection{Ableitung des Forschungsbedarfs}
-% <<<<< ENDE VORSCHLAG
 \label{sec:research_gap}
-% [Ziel: 0,5 Seiten]
 %
-% Hier folgt die Lücke aus 24 Seiten Argumentation, statt in der
-% Einleitung behauptet zu werden. Stärkster Beleg: Die Beschlusskammer
-% hat die Behandlung von Batteriespeichern in der Festlegung
-% ausdrücklich offengelassen \cite{bundesnetzagentur_festlegung_2024}.
+% Hier folgt die Luecke aus der Argumentation des Kapitels, statt in der
+% Einleitung behauptet zu werden.
+% GEAENDERT: Der Reifegrad ist zurueckgenommen, die Luecke ist auf die
+% Ueberkreuzstellung zugespitzt, und die gesuchte Groesse ist der
+% Reservierungspreis.
 
-% >>>>> VORSCHLAG: AUSFORMULIERUNG
-% Bewusst kurz und ohne neue Quellen ausser dem tragenden Beleg. Der
-% Abschnitt fuehrt die drei Straenge des Kapitels zusammen und endet mit
-% der Forschungsfrage in der anlagenscharfen Form, in der Kapitel 4 sie
-% beantwortet.
 Die Argumentation dieses Kapitels lässt sich zu einer Lücke zusammenführen.
-Die kurative Höherauslastung ist technisch validiert und im Echtbetrieb erprobt, und der rechtliche Rahmen aus §\,13 \ac{EnWG} und \ac{SO GL} lässt sie nicht nur zu, sondern legt sie über das Kostenminimierungsgebot nahe.
-Für das anspruchsvollste Zeitfenster sind Batteriespeicher der einzige geeignete Akteurstyp.
-Ihre Verfügbarkeit setzt jedoch eine Vorhaltung des Ladezustands voraus, die mit der marktoptimalen Betriebsweise und mit bereits bestehenden Präqualifikationsverpflichtungen konkurriert, und für diese Vorhaltung existiert keine Vergütungsgrundlage: Die Systematik des §\,13a \ac{EnWG} bemisst den durchgeführten Eingriff, Vorhaltekosten sind nach geltender Rechtslage nicht erstattungsfähig, und die Anwendung der optionsbasierten Bewertungslogik auf Batteriespeicher hat die Beschlusskammer in der geltenden Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+Die kurative Höherauslastung ist im Echtbetrieb erprobt, und der rechtliche Rahmen aus §\,13 \ac{EnWG} und \ac{SO GL} steht ihr nicht entgegen, sondern legt sie über das Kostenminimierungsgebot nahe.
+Für das anspruchsvollste Zeitfenster sind Batteriespeicher die einzige geeignete Technologie.
+Ihre Verfügbarkeit setzt jedoch eine Vorhaltung des Ladezustands voraus, die mit der marktoptimalen Betriebsweise und mit bereits bestehenden Präqualifikationsverpflichtungen konkurriert.
+Für diese Vorhaltung existiert keine passende Bemessungsgrundlage.
+Die Regelleistung vergütet Vorhaltung, kennt aber keinen Netzbezug.
+Die Systematik des §\,13a \ac{EnWG} ist knotenscharf, bemisst aber den durchgeführten Eingriff, Vorhaltekosten sind nach ihr nicht erstattungsfähig, und die Anwendung der optionsbasierten Bewertungslogik auf Batteriespeicher hat die Beschlusskammer in der geltenden Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
 Die Lücke ist damit nicht aus dem Fehlen von Literatur erschlossen, sondern durch einen regulatorischen Befund belegt.
-Sie besteht darin, dass für die marktliche Beschaffung kurativer Vorhalteleistung von Batteriespeichern weder ein Produkt noch eine Bemessungsgrundlage ausgestaltet ist.
-Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A6 genügt, und die Mindestvergütung bestimmt, die ein Batteriespeicher für dessen Bereitstellung verlangen muss.
-% <<<<< ENDE VORSCHLAG
+Sie besteht nicht darin, dass eine Vergütung von Vorhaltung fehlt, sondern darin, dass keine bestehende Logik Vorhaltung und Lokationalität verbindet.
+Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A6 genügt, und den kurativen Reservierungspreis bestimmt, den ein Batteriespeicher für dessen Bereitstellung fordern muss.
+
+% ===============================================================
+% OFFENE PUNKTE, gesammelt
+%   1  Dateiname der Abbildung 2.1 mit Punkt vor der Extension
+%   2  Drei TATL-Zeitfenster gegen InnoSys 2030 verifizieren
+%   3  Fundstelle der Legaldefinition des Selbstdispatch
+%   4  Produktparameter der Regelleistungsprodukte verifizieren
+%   5  Spalte Erloesniveau aus eigener Auswertung fuellen
+%   6  Fundstellen und Schreibweise des Aktenzeichens der Festlegung
+%   7  Satz- und Nummernzaehlung in § 13a Abs. 2 EnWG
+%   8  Rechtsnatur von \cite{bundesnetzagentur_beschluss_2021}
+%   9  Fundstelle in Anlage 1 zum Bietverhalten
+%  10  Fehlender bib-Eintrag fuer die Gegenposition zum Bietverhalten
+%  11  Fehlender bib-Eintrag fuer Anlage 5
+%  12  Parametrisierung des Weber-Ansatzes gegen Anlage 5 verifizieren
+%  13  Tabelle mit den Rechenschritten des Berechnungsbeispiels
+%  14  Wegfall der Grundlage des inneren Werts durch die DA-Reform
+%  15  Mitteilung der Beschlusskammer zu Batteriespeichern
+%  16  Spalte Verfuegbarkeit 2030 in Tabelle 2.2 belegen
+%  17  Bezeichnung des reservierten Ladezustandsbandes
+%  18  Installierte Batteriespeicherkapazitaet im 2030-Szenario
+%  19  Verbleib der Abschnitte 2.4.1 und 2.4.2
+%  20  Begruendung der Bewertungen in Tabelle 2.3
+%
+% ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1
+% uebernommen:
+%   chapter_3.tex, Abschnitt 3.1
+%     Poenale als Produktmerkmal neben Bindungsdauer, Reaktionszeit und
+%     Lokationalitaet aufnehmen.
+%   chapter_3.tex, Abschnitt 3.2
+%     Der Kommentarblock spricht von einer Obergrenze des
+%     Verguetungsbereichs. Auf den Reservierungspreis umstellen.
+%   chapter_3.tex, Abschnitte 3.4 und 3.6
+%     Drei Stellen bauen auf Dualvariablen der Ladezustandsbilanz auf.
+%     Diese sind aus der Methodik entfallen. Der Warnkommentar zu Pi bei
+%     Binaervariablen kann damit ebenfalls entfallen. Abschnitt 3.6 ist
+%     inhaltlich neu zu bestimmen, weil die Nachrechnung des
+%     Weber-Ansatzes keine Validierung des eigenen Modells mehr ist,
+%     sondern eine Nachrechnung des fremden Verfahrens zum Zweck der
+%     Kritik.
+%   chapter_4.tex, Abschnitt 4.3
+%     Die Gegenueberstellung mit dem Weber-Ansatz ist als Einordnung und
+%     nicht als Vergleich mit einer geltenden Verguetung zu formulieren.
+%   chapter_4.tex, Abschnitt 4.4
+%     Poenalehoehe als Sensitivitaet aufnehmen.
+%   chapter_4.tex, Abschnitt 4.5
+%     Ueberschrift und Label sec:minimum_compensation auf den
+%     Reservierungspreis umstellen, Vorschlag sec:reservation_price.
+% ===============================================================
