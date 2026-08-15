@@ -22,9 +22,16 @@ fontSize 17 ist "Netzsicherheitrechnung" breiter als sein Kasten. Die
 Kaesten werden deshalb verbreitert -- die Spaltenabstaende geben das her --
 und in dem einen Wort, das auch dann nicht passt, steht eine Trennung.
 
-ZUR SCHRIFTART: Die Quelle setzt jetzt durchgehend Helvetica. draw.io
-ersetzt sie beim Export durch Arial, weil es Helvetica nicht mitbringt.
-Beide sind metrisch gleich, ebenso wie das NimbusSans des Fliesstextes.
+ZUR SCHRIFTART: Die Quelle setzt durchgehend TeX Gyre Heros. Eine Schrift
+namens Helvetica gibt es auf diesem Rechner nicht, draw.io ersetzte sie
+beim Export durch Arial. TeX Gyre Heros stammt aus der TeX-Live-
+Installation und geht wie das NimbusSans des Fliesstextes auf die URW
+Nimbus Sans zurueck; es ist damit dieselbe Schrift, die usepackage helvet
+setzt. Installiert ist sie fuer das Benutzerkonto unter
+LOCALAPPDATA/Microsoft/Windows/Fonts, eingetragen in der Registrierung
+unter HKCU Software/Microsoft/Windows NT/CurrentVersion/Fonts. Fehlt sie,
+faellt draw.io wieder auf Arial zurueck: metrisch gleich, im Schriftbild
+aber anders.
 
 Aufruf:
     python tools/drawio_restyle.py
@@ -57,6 +64,8 @@ TITLE = {
         ("Betriebsmittelbelastung im Fehlerfall", 8, 800, 0),
 }
 
+SANS = "TeX Gyre Heros"
+
 BOX_FROM, BOX_TO = 130, 150
 BREAKS = {
     "Netzsicherheitrechnung": "Netzsicherheits-&#10;rechnung",
@@ -83,7 +92,7 @@ def normalize_fonts(xml: str) -> str:
     fett oder kursiv. In einer technischen Abbildung traegt das keine
     Bedeutung und macht das Bild unruhig.
     """
-    xml = xml.replace("fontFamily=Arial", "fontFamily=Helvetica")
+    xml = re.sub(r"fontFamily=(Arial|Helvetica)", f"fontFamily={SANS}", xml)
     xml = re.sub(r"fontStyle=\d+", "fontStyle=0", xml)
     # Fett und kursiv stehen teils nicht in der Formatangabe, sondern als
     # HTML im Text selbst -- und dort doppelt maskiert, weil das mxfile-XML
@@ -96,7 +105,7 @@ def normalize_fonts(xml: str) -> str:
         s = m.group(1)
         if "fontFamily=" in s or not s.strip():
             return m.group(0)
-        return f'style="{s.rstrip(";")};fontFamily=Helvetica;"'
+        return f'style="{s.rstrip(";")};fontFamily={SANS};"'
     return re.sub(r'style="([^"]*)"', add, xml)
 
 
@@ -149,6 +158,13 @@ LEGEND = {
     # Ereignislinie bei x = 610 durchschnitten. Jetzt rechts davon.
     'x="570" y="180" width="110" height="30"':
         'x="628" y="178" width="140" height="30"',
+    # "Kurative Reaktionszeit": der Kasten war mit 20 Einheiten nur eine
+    # Zeile hoch, die Beschriftung bricht aber zweizeilig um und ragte oben
+    # und unten heraus. Der weiss hinterlegte Kasten deckte die Ereignismarke
+    # deshalb nur in der Mitte ab, und die Marke lief durch "Kurative"
+    # hindurch. Jetzt so hoch wie der Text, Mitte bei y = 180 unveraendert.
+    'x="350" y="170" width="150" height="20"':
+        'x="349" y="157" width="152" height="46"',
 }
 
 # Die senkrechten Ereignislinien liefen bis y = 40 hinauf und schnitten
@@ -216,7 +232,7 @@ def add_title(xml: str, name: str, size: float) -> str:
     text, x, w, y = TITLE[name]
     cell = (f'<mxCell id="thesis-title" value="{text}" '
             f'style="text;html=1;align=center;verticalAlign=middle;'
-            f'fontFamily=Helvetica;fontSize={size:.1f};fontStyle=0;" '
+            f'fontFamily={SANS};fontSize={size:.1f};fontStyle=0;" '
             f'vertex="1" parent="1">'
             f'<mxGeometry x="{x}" y="{y}" width="{w}" height="34" as="geometry" />'
             f'</mxCell>')
