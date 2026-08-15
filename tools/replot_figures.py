@@ -8,8 +8,8 @@ darunter, Spiegelbalken um die Nulllinie.
 Zwei Wege:
 
   engpassmanagement_nep   ruft die Originalfunktion auf und korrigiert die
-                          fertige Figur (Titel, Achsenbeschriftung,
-                          Quellenzeile, Kopfhoehe).
+                          fertige Figur (Achsenbeschriftung, Quellenzeile,
+                          Kopfhoehe).
 
   redispatch_jahresbedarf wird hier neu gezeichnet. Die Originalfassung ist
                           ein Spiegelbalkendiagramm mit Hochfahren ueber und
@@ -23,8 +23,11 @@ Zwei Wege:
 Am anderen Repository wird nichts geaendert. Alle Abweichungen werden zur
 Laufzeit gesetzt und danach zurueckgenommen.
 
-SCHRIFTGROESSEN: Titel 14 pt, alles uebrige im Diagramm 11 pt wie der
-Fliesstext. Ausnahme ist die Fussnote unter dem NEP-Diagramm mit 9 pt.
+KEIN TITEL IM BILD: Die Abbildungen tragen keine Ueberschrift. Was sie
+zeigen, steht in der Bildunterschrift; ein Titel im Bild wiederholte sie.
+
+SCHRIFTGROESSEN: alles im Diagramm 11 pt wie der Fliesstext. Ausnahme ist
+die Fussnote unter dem NEP-Diagramm mit 9 pt.
 
 WIE DIE GROESSEN GETROFFEN WERDEN: Die Abbildung wird so erzeugt, dass sie
 bereits \\textwidth breit ist; dann skaliert LaTeX sie nicht mehr. Die
@@ -68,6 +71,10 @@ MAX_HEIGHT_PT = 285.0      # Hinweis, wenn es zu hoch wird
 PX_TO_PT = 0.75
 
 # Zielgroessen in pt auf der fertigen Seite.
+# PT_TITLE wird nicht mehr gesetzt, seit die Abbildungen ohne Ueberschrift
+# stehen. Der Eintrag bleibt, weil TARGETS die Groesse 16 der Folienfassung
+# noch abbilden muss: pp.PP traegt sie als axes.titlesize, und target_pt
+# soll dafuer keinen genaeherten Wert erfinden.
 PT_TITLE = 14.0
 # Im fertigen main.pdf gemessen: Fliesstext 10,91 pt, Bildunterschrift
 # 9,96 pt. Die Beschriftung im Diagramm orientiert sich an der
@@ -76,21 +83,31 @@ PT_TITLE = 14.0
 PT_TEXT = 10.0
 PT_NOTE = 8.5      # Fussnote unter dem NEP-Diagramm
 
-# Schriftgroesse der Folienfassung -> Zielgroesse. 16 ist der Titel, 8 die
-# Fussnote, alles dazwischen ist Beschriftung im Diagramm.
+# Schriftgroesse der Folienfassung -> Zielgroesse. 16 traegt die
+# Folienfassung als axes.titlesize, 8 ist die Fussnote, alles dazwischen ist
+# Beschriftung im Diagramm. Ein Titel wird nicht mehr gesetzt.
 TARGETS = {16.0: PT_TITLE, 14.0: PT_TEXT, 11.0: PT_TEXT,
            10.0: PT_TEXT, 9.0: PT_NOTE, 8.0: PT_NOTE}
 
+# HOEHEN, seit die Abbildungen ohne Titel stehen: 4,3 statt 3,6 und 3,8
+# statt 3,6. Die senkrechte Achsenbeschriftung ist laenger, als die Achse
+# hoch ist; ueber ihr Ende hinaus ragte sie frueher in den Raum, den der
+# Titel freihielt. Ohne Titel wurde sie am oberen Seitenrand beschnitten,
+# beim NEP-Diagramm um 4,8 pt, beim Redispatch-Diagramm um 1,7 pt. Die
+# Werte unten sind die kleinsten, bei denen nichts mehr uebersteht.
+# ACHTUNG: Wer diese Hoehen senkt, muss danach nachsehen, ob die
+# Achsenbeschriftung noch vollstaendig SICHTBAR ist. Eine Textsuche im PDF
+# genuegt dafuer NICHT -- der abgeschnittene Teil steht weiterhin im
+# Inhaltsstrom und wird gefunden. Zu pruefen ist die Textbegrenzung gegen
+# das Seitenrechteck.
 FIGURES = {
     "engpassmanagement_nep.svg": dict(
         mode="patch", fn="plot_engpassmanagement_nep",
-        figsize=(6.3, 3.6), ncol=2, legend_y=-0.30,
-        title="Engpassmanagementbedarf im NEP25",
+        figsize=(6.3, 4.3), ncol=2, legend_y=-0.30,
         ylabel="Engpassmanagementbedarf in TWh",
     ),
     "redispatch_jahresbedarf_2020_2025.svg": dict(
-        mode="own", figsize=(6.3, 3.6), ncol=2, legend_y=-0.20,
-        title="Redispatch 2020 bis 2025",
+        mode="own", figsize=(6.3, 3.8), ncol=2, legend_y=-0.20,
         ylabel="Engpassmanagementbedarf in TWh",
     ),
 }
@@ -125,14 +142,23 @@ def strip_source(fig) -> None:
             t.remove()
 
 
-def place_head(ax, title: str, ylabel: str, conv) -> None:
-    """Titel und Achsenbeschriftung ueber die Achse setzen.
+def place_head(ax, ylabel: str, conv) -> None:
+    """Achsenbeschriftung setzen.
 
     Die Achsenbeschriftung steht senkrecht neben der Achse. Sie ist lang,
     die Abbildung braucht deshalb genug Hoehe -- siehe figsize in FIGURES.
+
+    KEIN TITEL IM BILD: Die Aussage der Abbildung steht in der
+    Bildunterschrift. Ein Titel im Bild wiederholte sie und stuende zudem
+    in einer anderen Schriftgroesse unmittelbar darueber.
+
+    Der Titel wird ausdruecklich GELEERT und nicht nur nicht gesetzt. Die
+    Folienfassung in bess_dispatch_optimization bringt einen eigenen mit
+    ("Engpassmanagement-Bedarf 2032 bis 2045"); frueher hat ihn das hier
+    gesetzte set_title ueberschrieben. Ohne das Leeren bliebe er stehen.
     """
+    ax.set_title("")
     ax.set_ylabel(ylabel, fontsize=conv(14))
-    ax.set_title(title, fontsize=conv(16), pad=conv(14) * 0.8)
 
 
 def tuck_notes(fig, ax) -> None:
@@ -155,7 +181,7 @@ def polish_nep(fig, cfg, conv) -> None:
     ax = fig.axes[0]
     lo, hi = ax.get_ylim()
     ax.set_ylim(lo, hi * 1.05)
-    place_head(ax, cfg["title"], cfg["ylabel"], conv)
+    place_head(ax, cfg["ylabel"], conv)
     strip_source(fig)
     tuck_notes(fig, ax)
 
@@ -218,7 +244,7 @@ def draw_redispatch(pp, plt, MaxNLocator, Line2D, cfg, conv, figsize, out_dir):
         ax.set_xticks(list(x))
         ax.set_xticklabels([str(y) for y in years], fontsize=conv(14))
         ax.tick_params(axis="y", labelsize=conv(14))
-        place_head(ax, cfg["title"], cfg["ylabel"], conv)
+        place_head(ax, cfg["ylabel"], conv)
         # Zwei Zeilen: oben Hochfahren allein, unten beide Runterfahren
         # nebeneinander. matplotlib fuellt SPALTENWEISE, nicht zeilenweise --
         # bei zwei Spalten landen die Eintraege 0 und 1 in der linken, 2 und 3
@@ -252,7 +278,13 @@ def main() -> int:
         from matplotlib.lines import Line2D
         from matplotlib.axes import Axes
         from matplotlib.figure import Figure
-        from analysen.helpers import praesentation_plots as pp
+        # Die Plot-Bibliothek ist im Analyse-Repository umgezogen. Beide
+        # Ablagen werden versucht, damit dieses Skript in beiden Staenden
+        # laeuft.
+        try:
+            from analysen.code.helpers import praesentation_plots as pp
+        except ImportError:
+            from analysen.helpers import praesentation_plots as pp
     except ImportError as exc:
         print(f"Import fehlgeschlagen: {exc}")
         print('Mit einem Python aufrufen, das matplotlib hat, etwa '

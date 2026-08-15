@@ -2,8 +2,11 @@
 
 Ziel ist ein einheitliches Bild ueber alle vier Abbildungen der Arbeit. Die
 beiden Diagramme in Kapitel 1 entstehen aus matplotlib und kommen im
-fertigen main.pdf mit 9,95 pt Beschriftung und 13,93 pt Titel an. Genau
-darauf werden diese beiden hier eingestellt.
+fertigen main.pdf mit 9,95 pt Beschriftung an. Genau darauf werden diese
+beiden hier eingestellt.
+
+Keine der vier Abbildungen traegt eine Ueberschrift. Was sie zeigt, steht
+in der Bildunterschrift.
 
 DIE RECHNUNG: Auf der Seite erscheint die Beschriftung mit
 
@@ -47,8 +50,11 @@ import drawio_edit as de  # noqa: E402
 ROOT = Path(__file__).resolve().parent.parent
 FIG = ROOT / "figures" / "chapter_2"
 
-# Zielgroessen auf der Seite, abgeglichen mit den Kapitel-1-Abbildungen.
-PT_TEXT, PT_TITLE = 9.95, 13.93
+# Zielgroesse auf der Seite, abgeglichen mit den Kapitel-1-Abbildungen.
+# KEIN TITEL IM BILD: Die Abbildungen tragen keine Ueberschrift mehr. Was
+# sie zeigen, steht in der Bildunterschrift; ein Titel im Bild wiederholte
+# sie. Geregelt wird deshalb nur noch die Beschriftungsgroesse.
+PT_TEXT = 9.95
 
 # pt je fontSize-Einheit, aus dem fertigen main.pdf zurueckgerechnet.
 # Unterschiedlich, weil die Abbildungen verschieden breit sind und damit
@@ -57,12 +63,6 @@ PT_PER_UNIT = {"curative_process": 10.70 / 18,
                "preventiv_vs._curative_redispatch": 9.69 / 17.2}
 BASE_FONT = {"curative_process": 12, "preventiv_vs._curative_redispatch": 14}
 VSCALE = {"curative_process": 1.85, "preventiv_vs._curative_redispatch": 1.2}
-
-TITLE = {
-    "curative_process": ("Prozesskette einer kurativen Maßnahme", 50, 780, -12),
-    "preventiv_vs._curative_redispatch":
-        ("Betriebsmittelbelastung im Fehlerfall", 8, 800, 0),
-}
 
 SANS = "TeX Gyre Heros"
 
@@ -223,24 +223,13 @@ def edit_belastung(xml: str) -> str:
     return xml
 
 
-def add_title(xml: str, name: str, size: float) -> str:
-    """Titel oberhalb des Diagramms einfuegen.
+def measure(pdf: Path) -> float:
+    """Haeufigste Schriftgroesse in pt, wie sie auf der Seite ankommt.
 
-    Wird nach der Skalierung aufgerufen, die Groessen sind daher bereits die
-    endgueltigen.
+    Haeufigste, nicht groesste: gemessen wird die Beschriftung, und die
+    stellt die weitaus meisten Zeichen. Seit die Abbildungen ohne
+    Ueberschrift stehen, ist die groesste Groesse ohne eigene Bedeutung.
     """
-    text, x, w, y = TITLE[name]
-    cell = (f'<mxCell id="thesis-title" value="{text}" '
-            f'style="text;html=1;align=center;verticalAlign=middle;'
-            f'fontFamily={SANS};fontSize={size:.1f};fontStyle=0;" '
-            f'vertex="1" parent="1">'
-            f'<mxGeometry x="{x}" y="{y}" width="{w}" height="34" as="geometry" />'
-            f'</mxCell>')
-    return xml.replace("</root>", cell + "</root>", 1)
-
-
-def measure(pdf: Path) -> tuple[float, float]:
-    """Groesste und haeufigste Schriftgroesse in pt, wie sie auf der Seite ankommt."""
     import pymupdf
     d = pymupdf.open(pdf)
     scale = de.TEXTWIDTH_PT / d[0].rect.width
@@ -251,8 +240,7 @@ def measure(pdf: Path) -> tuple[float, float]:
                 pt = round(sp["size"] * scale, 2)
                 sizes[pt] = sizes.get(pt, 0) + len(sp["text"])
     d.close()
-    body = max(sizes.items(), key=lambda kv: kv[1])[0]
-    return body, max(sizes)
+    return max(sizes.items(), key=lambda kv: kv[1])[0]
 
 
 def restyle(name: str, *, widen: bool = False, belastung: bool = False) -> None:
@@ -269,7 +257,6 @@ def restyle(name: str, *, widen: bool = False, belastung: bool = False) -> None:
     # die Aenderungen dann ein zweites Mal angewandt.
     source = (FIG / f"{name}.drawio").read_text(encoding="utf-8")
     factor = font_factor(name)
-    title_pt = PT_TITLE / PT_PER_UNIT[name]
 
     for it in range(4):
         xml = source
@@ -281,17 +268,14 @@ def restyle(name: str, *, widen: bool = False, belastung: bool = False) -> None:
             xml = xml.replace(f'value="{old}"', f'value="{new}"')
         xml = normalize_fonts(xml)
         xml = de.scale_geometry(xml, fx=1.0, fy=VSCALE[name], font=factor)
-        xml = add_title(xml, name, title_pt)
         de.write_and_export(svg, xml)
 
-        body, title = measure(svg.with_suffix(".pdf"))
-        if abs(body - PT_TEXT) < 0.08 and abs(title - PT_TITLE) < 0.12:
-            print(f"  {name}: {body:.2f} pt Text, {title:.2f} pt Titel "
-                  f"({it + 1} Durchlaeufe)")
+        body = measure(svg.with_suffix(".pdf"))
+        if abs(body - PT_TEXT) < 0.08:
+            print(f"  {name}: {body:.2f} pt Text ({it + 1} Durchlaeufe)")
             return
         factor *= PT_TEXT / body
-        title_pt *= PT_TITLE / title
-    print(f"  {name}: WARNUNG, nicht eingeregelt -- {body:.2f} / {title:.2f} pt")
+    print(f"  {name}: WARNUNG, nicht eingeregelt -- {body:.2f} pt")
 
 
 def main() -> int:
