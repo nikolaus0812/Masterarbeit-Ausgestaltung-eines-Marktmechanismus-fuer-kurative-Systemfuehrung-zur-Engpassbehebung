@@ -2,11 +2,14 @@
 \label{ch:state_of_the_art}
 % ===============================================================
 % AUFBAU UND UMFANG, Zielwert 25 Seiten
+% REIHENFOLGE IN 2.1: Der Prozessablauf steht vor dem rechtlichen Rahmen,
+% weil die Prozesskette den Bezugspunkt fuer die Zeitanforderungen bildet
+% und der rechtliche Rahmen die dort beschriebenen Ablaeufe einordnet.
 %   Kapiteleinleitung mit drei Literaturstraengen ........... 1
-%   2.1 Kurative Systemfuehrung ............................. 7,5
+%   2.1 Kurative Systemfuehrung ............................. 8,5
 %       2.1.1 Abgrenzung praeventiver und kurativer Systemfuehrung  2,5
-%       2.1.2 Rechtlicher Rahmen .............................. 2
-%       2.1.3 Prozessablauf und Zeitanforderungen ............. 2
+%       2.1.2 Prozessablauf und Zeitanforderungen ............. 3
+%       2.1.3 Rechtlicher Rahmen .............................. 2
 %       2.1.4 Herausforderungen der Umsetzung ................. 1
 %   2.2 Marktliche und regulatorische Rahmenbedingungen ..... 9
 %       2.2.1 Dispatchmodelle und Marktzeithorizonte .......... 2
@@ -72,51 +75,60 @@
 %   STICHPUNKTE" sind entfernt. Die Zuordnung Quelle zu Aussage ist ueber
 %   die Versionsgeschichte nachvollziehbar. Offene Stellen sind mit
 %   % OFFEN Nr. markiert und im Block am Dateiende gesammelt.
+%
+% EINLEITUNGEN: Die Kapiteleinleitung nennt ausschliesslich, was in
+% diesem Kapitel behandelt wird. Der frueher dort stehende Absatz zu den
+% drei Literaturstraengen ist aufgeloest. Seine Inhalte stehen jetzt in
+% der Einleitung des Abschnitts, in dem die jeweiligen Quellen verwendet
+% werden, also die technische Erprobung in 2.1, die
+% Verguetungssystematiken in 2.2 und die Betriebsfuehrung von
+% Batteriespeichern in 2.3. Jede Abschnittseinleitung endet mit einem
+% Satz, der die Unterabschnitte ankuendigt.
 % ===============================================================
 
-Kurative Systemführung stellt einen ergänzenden Ansatz in der Systemführung dar, der die Kapazitätsgrenzen des bestehenden Übertragungsnetzes erweitert und damit einen Beitrag zur Reduktion des strukturellen Engpassmanagementbedarfs leisten kann.
-Dieses Kapitel legt zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen dieses Ansatzes dar.
+Ein Marktmechanismus für die kurative Vorhaltung ist in einen bestehenden technischen, rechtlichen und marktlichen Rahmen einzuordnen.
+Dieses Kapitel legt zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dar.
 Anschließend werden die bestehenden Vergütungslogiken für Systemdienstleistungen daraufhin untersucht, ob sich eine von ihnen auf die kurative Vorhaltung anwenden lässt.
 Darauf folgen die Begründung der Technologiewahl und der Erlöskonflikt, dem die gewählte Technologie unterliegt.
 Aus dieser Argumentation werden abschließend die Anforderungen an einen kurativen Marktmechanismus und der Forschungsbedarf abgeleitet.
-
-% Die drei Literaturstraenge uebernehmen die Funktion des aufgeloesten
-% Abschnitts "Stand der Forschung" aus der Einleitung. Strang 2 ist nicht
-% hier, sondern in der Einleitung von Abschnitt 2.3 aufgenommen.
-% GEAENDERT: Strang 3 umfasst jetzt beide Verguetungslogiken und nicht
-% mehr allein den Weber-Ansatz, weil Abschnitt 2.2 die Regelleistung
-% gleichrangig behandelt.
-Die Literatur zum Gegenstand dieser Arbeit lässt sich in drei Stränge gliedern, die bislang nicht zusammengeführt sind und deren jeweiliger Endpunkt die Gliederung dieses Kapitels bestimmt.
-Der erste Strang betrifft die technische Erprobung der kurativen Systemführung und ist Gegenstand des Abschnitts \ref{sec:curative_basics}.
-Das Verbundprojekt InnoSys~2030 hat den Maßnahmenraum systematisiert und die Anforderungen an Aktivierungszeiten bestimmt \cite{innosys_2030_gesamtverbund_innovationen_2021}, ergänzt um Arbeiten zur Integration kurativer Maßnahmen in die Betriebsplanung \cite{leeuwen_integration_2020}, zu den daraus folgenden Redundanzanforderungen \cite{sous_untersuchung_2022, sous_comparison_2025} sowie um die erste Erprobung im realen Übertragungsnetzbetrieb im Projekt KuPilot \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
-Dieser Strang endet bei der Feststellung der technischen Machbarkeit.
-Die Frage, wie die benötigten Akteure beschafft werden, stellt er nicht.
-Der zweite Strang untersucht die Betriebsführung von Batteriespeichern im Spannungsfeld von Marktvermarktung und Netzdienlichkeit und wird in Abschnitt \ref{sec:bess_actor} aufgegriffen.
-Der dritte Strang befasst sich mit der Vergütung von Systemdienstleistungen und ist Gegenstand des Abschnitts \ref{sec:market_limits}.
-Für die Regelleistung ist die Beschaffung vorgehaltener Leistung im Wettbewerb etabliert und über die Präqualifikationsbedingungen ausgestaltet \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Für das Engpassmanagement hat der optionsbasierte Ansatz zur Bewertung entgangener Erlösmöglichkeiten die heute geltende Bemessungssystematik geprägt \cite{weber_gutachten_2015}, und nachfolgende Arbeiten haben dessen Übertragbarkeit auf weitere Technologien untersucht \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
-Beide Logiken decken jedoch nur eine der beiden Eigenschaften ab, die eine kurative Beschaffung benötigt.
-Zwischen diesen Endpunkten liegt der Forschungsbedarf, den Abschnitt \ref{sec:research_gap} aus der Argumentation dieses Kapitels herleitet und am regulatorischen Befund belegt.
 
 % ###############################################################
 \section{Kurative Systemführung}
 \label{sec:curative_basics}
 
-Der sichere Betrieb des deutschen Übertragungsnetzes erfordert zu jedem Zeitpunkt die Einhaltung des \mbox{(N-1)-Kriteriums}.
-Dieses ist in der europäischen Leitlinie für den Übertragungsnetzbetrieb verbindlich definiert als \glqq{}die Regel, wonach die nach dem Auftreten eines Ausfalls weiter in Betrieb befindlichen Betriebsmittel innerhalb der Regelzone eines \ac{ÜNB} in der Lage sind, sich an die neue Betriebssituation anzupassen, ohne betriebliche Sicherheitsgrenzwerte zu überschreiten\grqq{} \cite[Art. 3 Abs. 14]{europaische_kommission_verordnung_2017}.
+% Der Abschnitt beginnt mit dem Gegenstand, also dem Engpassmanagement,
+% und fuehrt erst danach das (N-1)-Kriterium ein. Der rechtliche Rahmen
+% wird nur angerissen, weil Abschnitt 2.1.3 ihn ausfuehrt.
+Engpassmanagement bezeichnet die Gesamtheit der Maßnahmen, mit denen ein Netzbetreiber eine drohende oder bereits eingetretene Überlastung von Betriebsmitteln beseitigt.
+Die praktisch bedeutsamste dieser Maßnahmen ist der Redispatch, also die gezielte Anpassung der Einspeisung einzelner Anlagen zur Behebung des Engpasses \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Den rechtlichen Rahmen dafür stellt Abschnitt \ref{sec:legal_framework} dar.
+Maßstab für die Frage, wann ein Eingriff erforderlich ist, ist das \mbox{(N-1)-Kriterium}.
+Der sichere Betrieb des deutschen Übertragungsnetzes erfordert zu jedem Zeitpunkt dessen Einhaltung.
+Es ist in der europäischen Leitlinie für den Übertragungsnetzbetrieb verbindlich definiert als \glqq{}die Regel, wonach die nach dem Auftreten eines Ausfalls weiter in Betrieb befindlichen Betriebsmittel innerhalb der Regelzone eines \ac{ÜNB} in der Lage sind, sich an die neue Betriebssituation anzupassen, ohne betriebliche Sicherheitsgrenzwerte zu überschreiten\grqq{} \cite[Art. 3 Abs. 14]{europaische_kommission_verordnung_2017}.
 Die Art und Weise, wie \ac{ÜNB} dieses Kriterium erfüllen, unterscheidet sich je nach Systemführungskonzept.
 Kurative Systemführung beschreibt dabei den Ansatz, das \mbox{(N-1)-Kriterium} nicht präventiv, sondern durch vordefinierte Systemautomatiken oder manuell aktivierbare Gegenmaßnahmen nach Eintreten des Fehlerfalles sicherzustellen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+% Die Unterscheidung nach dem Zeitpunkt des Eingriffs ist die
+% begriffliche Grundlage des gesamten Kapitels. Bewusst ist von "beheben"
+% und nicht von "heilen" die Rede, weil die medizinische Metapher zwar
+% dem Wortursprung von kurativ entspricht, im Fliesstext aber unnoetig
+% bildhaft waere.
+Der Unterschied beider Ansätze liegt damit im Zeitpunkt des Eingriffs.
+Der präventive Ansatz bewirtschaftet den Engpass im Voraus, indem er ihn durch Anpassung der Fahrpläne gar nicht erst entstehen lässt, während der kurative Ansatz den bereits eingetretenen Engpass innerhalb des zulässigen Überlastintervalls behebt.
 Physikalische Grundlage hierfür ist die thermische Trägheit von Betriebsmitteln, die kurzfristig höhere Strombelastungen tolerieren, als im Dauerbetrieb zulässig sind, und damit ein Zeitfenster für die Aktivierung kurativer Gegenmaßnahmen eröffnen.
+Der Maßnahmenraum kurativer Eingriffe und die Anforderungen an ihre Aktivierungszeiten sind im Verbundprojekt InnoSys~2030 systematisiert worden \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Daran anschließend liegen Arbeiten zur Integration kurativer Maßnahmen in die Betriebsplanung vor \cite{leeuwen_integration_2020}.
+Dieser Abschnitt stellt auf dieser Grundlage die Abgrenzung gegenüber der präventiven Systemführung, den rechtlichen Rahmen, den Prozessablauf mit seinen Zeitanforderungen und die Herausforderungen der Umsetzung dar.
 
 % ---------------------------------------------------------------
-\subsection{Abgrenzung präventiver und kurativer Systemführung}
+\subsection{Präventive und kurative Systemführung im Engpassmanagement}
 \label{sec:prev_vs_cur}
 
 Zur Einordnung beider Ansätze eignet sich das in Art.\,18 \ac{SO GL} verankerte Vier-Zustands-Modell des Netzes mit Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}.
 Im Normalbetrieb sind alle Betriebsmittel innerhalb ihrer Grenzwerte belastet und das System ist (N-1)-sicher.
 Der Gefährdungszustand tritt ein, wenn ein Störfall zu einer Grenzwertverletzung führen würde, ohne dass unmittelbar eine Versorgungsunterbrechung droht.
 Der Notzustand ist demgegenüber dadurch gekennzeichnet, dass Betriebsgrenzwerte bereits verletzt sind oder eine unmittelbare Gefährdung der Versorgungssicherheit besteht.
-Kuratives Handeln setzt genau an dem Übergang zwischen beiden Zuständen an.
+Der Blackout-Zustand beschreibt schließlich den vollständigen oder teilweisen Zusammenbruch der Versorgung, an den sich der Netzwiederaufbau anschließt.
+Kuratives Handeln setzt am Übergang zwischen Gefährdungs- und Notzustand an.
 Es akzeptiert den Gefährdungszustand als transiente Betriebsphase und reagiert mit gezielten Eingriffen, bevor der Notzustand erreicht wird.
 Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SO GL} durch die Unterscheidung zwischen der dauerhaft zulässigen Strombelastbarkeit \ac{PATL} und der vorübergehend zulässigen Strombelastbarkeit \ac{TATL}.
 Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall.
@@ -134,64 +146,105 @@ Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur 
     \label{fig:preventiv_kurativ}
 \end{figure}
 
-Der präventive Ansatz bietet den Vorteil hoher Planungssicherheit, da (N-1)-Sicherheit bereits in der Einsatzplanung sichergestellt wird und keine reaktiven Eingriffe im Fehlerfall erforderlich sind.
-Diese Robustheit wird jedoch durch eine konservative Auslegung der zulässigen Betriebsmittelauslastung unterhalb der \ac{PATL} erreicht, was zu einem erhöhten Redispatchbedarf und damit verbundenen Kosten führt \cite{sous_comparison_2025}.
-Darüber hinaus stößt ein rein präventiver Betrieb mit der Einführung des \ac{IDC} an konzeptionelle Grenzen, da die zunehmend kurzfristige Handelsaktivität eine abschließende (N-1)-sichere Einsatzplanung zum Vortag erschwert.
-Dieser Aspekt wird in Abschnitt \ref{sec:market_horizons} vertieft.
-Die kurative Systemführung erschließt demgegenüber Effizienzpotenziale, indem sie die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster begreift und eine höhere Vorauslastung im Normalbetrieb erlaubt.
-Dies reduziert den präventiven Redispatchbedarf und senkt dadurch die Systemführungskosten.
-Der Effizienzgewinn geht jedoch mit erhöhten Anforderungen an den Automatisierungsgrad und die Sicherheit einher.
-Kurative Maßnahmen müssen im Fehlerfall zuverlässig und innerhalb des \ac{TATL}-Zeitfensters aktivierbar sein \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Jahressimulationen belegen, dass der kurative Betrieb gegenüber dem rein präventiven Ansatz ein signifikantes Einsparpotenzial realisiert \cite{sous_comparison_2025}.
-Vor diesem Hintergrund gewinnt die kurative Systemführung in Europa zunehmend an Bedeutung.
-Die konkrete Entwicklung im deutschen Übertragungsnetz wird in Abschnitt \ref{sec:challenges} vertieft.
+% AUFBAU DIESES ABSCHNITTS, in dieser Reihenfolge:
+%   Abs. 1  Vier-Zustands-Modell, PATL und TATL, Abbildung 2.1
+%   Abs. 2  Praeventive Systemfuehrung einschliesslich der gestuften
+%           Betriebsplanung, aus der der praeventive Redispatch hervorgeht
+%   Abs. 3  Drei Eigenschaften des praeventiven Ansatzes
+%   Abs. 4  Verstaerkung durch die Verlagerung der Fahrplanbildung
+%   Abs. 5  Kurative Systemfuehrung als Antwort auf zwei dieser
+%           Eigenschaften
+%   Abs. 6  Verschiebung der Kostenart und Begriffsabgrenzung
+% Die Prozesskette der Betriebsplanung steht hier und nicht in Abschnitt
+% 2.1.2, weil sie zum praeventiven Ansatz gehoert. Abschnitt 2.1.2
+% behandelt ausschliesslich den kurativen Prozess entlang der Abbildung.
+%
+% QUELLENLAGE: Fuer die europaeische Ebene traegt die SO GL. Fuer die
+% deutsche Umsetzung gibt es keine oeffentliche Quelle, die die einzelnen
+% Prozessstufen benennt. Der Text bleibt deshalb auf der Ebene der
+% Stufung und verzichtet auf die Praxiskuerzel.
+% OFFEN 22: Falls sich eine zitierfaehige UENB-Veroeffentlichung findet,
+% koennen die Prozessstufen benannt und die Kuerzel eingefuehrt werden.
+% Dann ist auch das Abkuerzungsverzeichnis zu ergaenzen. Ohne Beleg
+% duerfen sie nicht in den Text, weil sie eine Aussage ueber die
+% operative Praxis waeren.
+Der präventive Ansatz stellt (N-1)-Sicherheit her, indem er die zulässige Vorauslastung der Betriebsmittel unterhalb der \ac{PATL} begrenzt und die dafür erforderlichen Anpassungen bereits in der Einsatzplanung anordnet.
+Grundlage dafür ist eine gestufte Betriebsplanung, die den Netzzustand mit abnehmendem zeitlichen Vorlauf zunehmend genau abbildet.
+Die \ac{SO GL} verpflichtet die \ac{ÜNB}, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen, sie untereinander auszutauschen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
+Auf europäischer Ebene sind daraus abgestimmte Prognoseprozesse hervorgegangen, in denen die \ac{ÜNB} ihre Einzelnetzmodelle zu einem gemeinsamen Modell zusammenführen und den zu erwartenden Netzzustand für die jeweilige Vorlaufzeit bewerten.
+Die deutschen Redispatchprozesse lehnen sich an diese Stufung an und führen den erforderlichen Eingriff sukzessive durch, indem jede Planungsstufe den zu ihrem Zeitpunkt erkennbaren Engpass adressiert und die folgende Stufe die verbleibende Abweichung übernimmt \cite{leeuwen_integration_2020}.
+Der Vorteil dieses Vorgehens liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt und im Fehlerfall sind keine reaktiven Eingriffe erforderlich.
 
-% GEAENDERT UND TRAGEND: Die frueher hier stehende Aussage, der praeventive
-% Ansatz uebersetze zunehmende Kurzfristigkeit unmittelbar in
-% zusaetzliches Eingriffsvolumen, ist entfallen. Diese Kausalkette ist
-% nicht belegbar. Die Begruendung laeuft jetzt ueber die
-% Disponierbarkeit, also darueber, dass eine praeventive Massnahme vor
-% der Erfuellung disponiert werden muss und eine kurative nicht. Das ist
-% eine Eigenschaft der Verfahren und keine Behauptung ueber Mengen.
-% Der Anschluss an Absatz 5 von Abschnitt 1.1 ist damit hergestellt.
-Für die Problemstellung dieser Arbeit ist die Unterscheidung in zweifacher Hinsicht bedeutsam.
-Erstens muss eine präventive Gegenmaßnahme vor dem Erfüllungszeitpunkt disponiert werden, während eine kurative Maßnahme erst im Fehlerfall wirkt und daher auch Zustände abdecken kann, die nach der letzten Netzsicherheitsrechnung entstehen.
-Der kurative Ansatz ersetzt damit eine im Voraus zu bemessende Sicherheitsmarge durch eine vorgehaltene und nur im Bedarfsfall abgerufene Reaktionsfähigkeit.
-Zweitens verschieben sich die Kosten dadurch von den Erzeugungsauslagen einer durchgeführten Maßnahme zu den Vorhaltekosten einer bereitgestellten Option.
-Für diese Verschiebung kennt die Vergütungssystematik des Engpassmanagements nach Abschnitt \ref{sec:redispatch_compensation} keine Bemessungsgrundlage.
+% OFFEN 21: Fuer die technologieabhaengige Bemessung des finanziellen
+% Ausgleichs ist die Fundstelle zu praezisieren. Abschnitt 2.2.3 stellt
+% die Systematik dar. Eine Seitenangabe in der Festlegung waere hier
+% hilfreich, weil die Aussage sonst nur ueber die Norm belegt ist.
+Für die Fragestellung dieser Arbeit sind an diesem Ansatz drei Eigenschaften bedeutsam.
+Erstens wird die Robustheit über eine konservative Auslegung der zulässigen Auslastung erkauft, was den Redispatchbedarf und die damit verbundenen Kosten erhöht \cite{sous_comparison_2025}.
+Zweitens endet die Reichweite des Ansatzes mit der letzten Prognoserechnung, die vor dem Erfüllungszeitpunkt liegt.
+Fahrplanänderungen aus dem danach verbleibenden Handelsfenster sind in ihr nicht mehr enthalten, und die daraus entstehenden Netzzustände lassen sich präventiv nicht mehr beantworten.
+Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
+Stehen für einen Engpass nur wenige geeignete Anlagen zur Verfügung, kann bereits ein moderates Eingriffsvolumen hohe Kosten verursachen.
+Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
 
-Im Rahmen dieser Arbeit bezeichnet kurative Systemführung im Weiteren ausschließlich die kurative Höherauslastung, das heißt die bewusst höhere Vorauslastung von Betriebsmitteln bis zur \ac{PATL} im Normalbetrieb unter Nutzung der \ac{TATL}-Reserve im Fehlerfall.
-Der Begriff des kurativen Redispatchs, verstanden als nachgelagerte Einspeiseanpassung ohne vorgelagerte Höherauslastung, ist nicht Gegenstand dieser Arbeit.
+% BEGRUENDUNGSKETTE, jedes Glied entweder belegt oder aus dem zuvor
+% Gesagten abgeleitet:
+%   (1) Verlagerung der Fahrplanbildung in die kurzfristigen Maerkte
+%       -> belegt ueber mahgoub_wie_2025 und ffe_saegezahn_2026
+%   (2) Daraus folgt eine spaetere Bestimmung des massgeblichen
+%       Netzzustands und damit des Eingriffs -> Ableitung
+%   (3) Je spaeter der Eingriff, desto kleiner der Kreis technisch
+%       geeigneter Anlagen -> folgt aus den Vorlaufzeiten in Abschnitt
+%       2.1.2
+%   (4) Ein kleinerer Anbieterkreis erhoeht die Kosten -> folgt aus der
+%       dritten Eigenschaft
+% NICHT BEHAUPTET wird, dass der ueberwiegende Teil des
+% Redispatchvolumens heute kurz vor Echtzeit beschafft wird. Dafuer liegt
+% keine Quelle vor. Wer diese Aussage treffen will, braucht eine
+% Auswertung der Redispatch-Anordnungszeitpunkte.
+Die zweite und die dritte Eigenschaft verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
+Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt \cite{mahgoub_wie_2025}, und die Umstellung der Day-Ahead-Auktion auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
+Je später sich der maßgebliche Netzzustand einstellt, desto später ist auch der erforderliche Eingriff zu bestimmen.
+Mit der verbleibenden Vorlaufzeit sinkt jedoch die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der in Betracht kommenden Technologien Vorlaufzeiten von mehreren Stunden aufweist.
+Ein kleinerer Kreis geeigneter Anlagen schlägt sich nach der dritten Eigenschaft unmittelbar in den Kosten nieder.
 
-% ---------------------------------------------------------------
-\subsection{Rechtlicher Rahmen}
-\label{sec:legal_framework}
+% GEKUERZT: Der kurative Teil ist bewusst knapp gehalten und verweist
+% weiter, weil die Anforderungen in Abschnitt 2.1.2, die offenen
+% Umsetzungsfragen in Abschnitt 2.1.4 und die fehlende
+% Bemessungsgrundlage in den Abschnitten 2.2.3 und 2.2.6 ausgefuehrt
+% werden. Der Anschluss an Absatz 5 von Abschnitt 1.1 bleibt erhalten.
+% OFFEN 23: Die Unterscheidung zwischen kurativer Hoeherauslastung und
+% kurativem Redispatch ist gegen den Abschlussbericht InnoSys 2030 zu
+% verifizieren und mit einer Fundstelle zu versehen. Sie traegt die
+% Abgrenzung des Untersuchungsgegenstands und sollte belegt sein.
+Die kurative Systemführung setzt an der ersten und der zweiten dieser Eigenschaften an und tritt dabei in zwei Ausprägungen auf.
+Die kurative Höherauslastung begreift die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster und erlaubt eine bewusst höhere Vorauslastung im Normalbetrieb, wodurch der präventive Eingriffsbedarf sinkt.
+Der kurative Redispatch verzichtet auf eine solche Vorplanung und behebt eine Grenzwertverletzung, die sich erst nach der letzten Prognoserechnung eingestellt hat, innerhalb des zulässigen Überlastintervalls.
+Er ist damit die Antwort auf die zweite Eigenschaft, weil er Netzzustände abdeckt, für die sich präventiv keine Maßnahme mehr disponieren lässt.
+Beiden Ausprägungen ist gemeinsam, dass die Maßnahme erst nach dem Fehlereintritt wirkt und deshalb keine vorherige Disposition erfordert.
+Jahressimulationen belegen für den kurativen Betrieb ein signifikantes Einsparpotenzial gegenüber dem rein präventiven Ansatz \cite{sous_comparison_2025}.
+Der Effizienzgewinn geht mit erhöhten Anforderungen an Automatisierungsgrad und Sicherheit einher, die Abschnitt \ref{sec:curative_functionality} anhand der Prozesskette und Abschnitt \ref{sec:challenges} anhand der offenen Umsetzungsfragen ausführen.
+Zugleich ändert sich die Art der entstehenden Kosten, da an die Stelle der Erzeugungsauslagen einer durchgeführten Maßnahme die Vorhaltekosten einer bereitgestellten Reaktionsfähigkeit treten.
+Für diese Kostenart kennt die Vergütungssystematik des Engpassmanagements keine Bemessungsgrundlage, was Abschnitt \ref{sec:redispatch_compensation} darlegt und Abschnitt \ref{sec:interim_conclusion} zusammenführt.
 
-Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}.
-§\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen.
-Da das Gesetz bei strom- und spannungsbedingten Anpassungen ausdrücklich die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
-Für \ac{BESS} als kurative Ressource relevant ist zudem §\,118 Abs.\,6 \ac{EnWG}, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit einen wirtschaftlichen Anreiz für deren Einsatz im Netzbetrieb setzt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
-
-Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
-Sie verpflichtet jeden \ac{ÜNB}, für jedes Betriebsmittel betriebliche Sicherheitsgrenzwerte festzulegen, die neben Spannungs- und Kurzschlussstromgrenzwerten ausdrücklich auch vorübergehend zulässige Überlasten umfassen und damit die physikalische Grundlage für die \ac{TATL}-basierte kurative Höherauslastung bilden.
-Nach Eintreten eines Fehlerfalles sind die Leistungsflüsse innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze zu führen.
-Grundlage für die Planung dieser Maßnahmen bildet eine Ausfallvarianten-Liste, die alle relevanten (N-1)-Szenarien erfasst \cite{europaische_kommission_verordnung_2017}.
-Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-
-% GEAENDERT: Die frueher hier stehende Formulierung, ein marktbasiertes
-% kuratives Engpassmanagement entspreche dem Kostenminimierungsgebot,
-% behauptete eine Zulaessigkeitsfeststellung. Der Satz sagt jetzt, dass
-% sich die Zulaessigkeit aus einer Auslegung ergibt und nicht aus einer
-% ausdruecklichen Regelung.
-Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten weder das \ac{EnWG} noch die \ac{SO GL}.
-Ihre Zulässigkeit lässt sich jedoch aus dem Kostenminimierungsgebot des §\,13 \ac{EnWG} und dem Vorrang marktbasierter Maßnahmen ableiten, soweit die kurative Maßnahme die kostengünstigere Alternative darstellt.
+Im Rahmen dieser Arbeit bezeichnet kurative Systemführung im Weiteren ausschließlich die kurative Höherauslastung.
+Der kurative Redispatch ohne vorgelagerte Höherauslastung ist nicht Gegenstand der Untersuchung, weil bei ihm die vorzuhaltende Leistung nicht aus einer geplanten Betriebsweise folgt und die Vorhaltemenge damit nicht bestimmbar ist.
 
 % ---------------------------------------------------------------
 \subsection{Prozessablauf und Zeitanforderungen}
 \label{sec:curative_functionality}
 
-Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, die in Abbildung~\ref{fig:curativ_process} für die beiden beteiligten Akteure dargestellt sind, nämlich den \ac{ÜNB} und den kurativen Akteur.
+% NEU: Die praeventive Prozesskette. Sie ist der Bezugspunkt, gegen den
+% der kurative Prozess verstaendlich wird, und sie traegt die Aussage zur
+% Kurzfristigkeit.
+% AUFBAU DIESES ABSCHNITTS: Der Abschnitt folgt den vier Phasen der
+% Abbildung 2.2 in ihrer Reihenfolge und schliesst mit den
+% Zeitanforderungen, die sich aus dem TATL-Fenster ergeben. Die gestufte
+% Betriebsplanung des praeventiven Ansatzes steht in Abschnitt 2.1.1 und
+% wird hier nur als Bezugspunkt vorausgesetzt.
+Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, nämlich die Betriebsplanung, den Normalbetrieb, den Fehlerfall und die Rückführung.
+Abbildung~\ref{fig:curativ_process} stellt sie für die beiden beteiligten Akteure dar, nämlich den \ac{ÜNB} und den kurativen Akteur.
+Die folgende Darstellung folgt dieser Reihenfolge.
 
 \begin{figure}[htbp]
     \centering
@@ -241,6 +294,30 @@ Verfügbarkeit ist damit kein graduelles, sondern ein binäres Gütemerkmal des 
 Dieser Befund wird in Abschnitt \ref{sec:requirements_catalogue} als Anforderung und in Abschnitt \ref{sec:soc_conflict} als Konfliktursache wieder aufgegriffen.
 
 % ---------------------------------------------------------------
+\subsection{Rechtlicher Rahmen}
+\label{sec:legal_framework}
+
+Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}.
+§\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen.
+Da das Gesetz bei strom- und spannungsbedingten Anpassungen ausdrücklich die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
+Für \ac{BESS} als kurative Ressource relevant ist zudem §\,118 Abs.\,6 \ac{EnWG}, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit einen wirtschaftlichen Anreiz für deren Einsatz im Netzbetrieb setzt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
+
+Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
+Sie verpflichtet jeden \ac{ÜNB}, für jedes Betriebsmittel betriebliche Sicherheitsgrenzwerte festzulegen, die neben Spannungs- und Kurzschlussstromgrenzwerten ausdrücklich auch vorübergehend zulässige Überlasten umfassen und damit die physikalische Grundlage für die \ac{TATL}-basierte kurative Höherauslastung bilden.
+Nach Eintreten eines Fehlerfalles sind die Leistungsflüsse innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze zu führen.
+Grundlage für die Planung dieser Maßnahmen bildet eine Ausfallvarianten-Liste, die alle relevanten (N-1)-Szenarien erfasst \cite{europaische_kommission_verordnung_2017}.
+Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+
+% GEAENDERT: Die frueher hier stehende Formulierung, ein marktbasiertes
+% kuratives Engpassmanagement entspreche dem Kostenminimierungsgebot,
+% behauptete eine Zulaessigkeitsfeststellung. Der Satz sagt jetzt, dass
+% sich die Zulaessigkeit aus einer Auslegung ergibt und nicht aus einer
+% ausdruecklichen Regelung.
+Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten weder das \ac{EnWG} noch die \ac{SO GL}.
+Ihre Zulässigkeit lässt sich jedoch aus dem Kostenminimierungsgebot des §\,13 \ac{EnWG} und dem Vorrang marktbasierter Maßnahmen ableiten, soweit die kurative Maßnahme die kostengünstigere Alternative darstellt.
+
+% ---------------------------------------------------------------
 \subsection{Herausforderungen der Umsetzung}
 \label{sec:challenges}
 
@@ -261,8 +338,12 @@ Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Ec
 Die Übertragung des Konzepts auf die Verteilnetzebene wird im Projekt kurSyV untersucht \cite{frauenhofer_iee_forschungsprojekt_2024, mende_optimised_2024}.
 Eine marktliche Beschaffung kurativer Vorhalteleistung ist in keinem dieser Ansätze enthalten.
 
-Zuverlässige kurative Konzepte setzen darüber hinaus eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022}.
-Deren Ausgestaltung ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
+Zuverlässige kurative Konzepte setzen darüber hinaus eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022, sous_comparison_2025}.
+Der Grund liegt in der Verlagerung der Sicherheit selbst.
+Die präventive Systemführung stellt (N-1)-Sicherheit über eine vorab eingehaltene Auslastungsreserve her, die unabhängig von technischen Komponenten wirkt.
+Im kurativen Betrieb hängt sie demgegenüber an einer Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, die im Fehlerfall vollständig und fristgerecht funktionieren muss.
+Fällt ein Glied dieser Kette aus, führt der Ansatz das System nicht in den Normalzustand zurück, sondern in den Notzustand.
+Die Ausgestaltung dieser Redundanz ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
 
 % ###############################################################
 \section{Marktliche und regulatorische Rahmenbedingungen}
@@ -284,6 +365,13 @@ Deren Ausgestaltung ist nicht Gegenstand dieser Arbeit und wird im Ausblick in K
 %         Arbeit ist.
 %   2.2.6 Das Zwischenfazit traegt die Ueberkreuzstellung und die
 %         praezise Fassung der Forschungsluecke.
+
+Kurative Systemführung erweitert die Kapazitätsgrenzen des bestehenden Übertragungsnetzes, setzt dafür aber eine verbindliche Zusage des Anlagenbetreibers voraus.
+Dieser Abschnitt ordnet zunächst das deutsche Dispatchmodell ein, weil es darüber entscheidet, ob eine solche Zusage angeordnet oder beschafft werden muss.
+Anschließend werden die beiden prominenten Vergütungslogiken für Systemdienstleistungen dargestellt.
+Für die Regelleistung ist die Beschaffung vorgehaltener Leistung im Wettbewerb etabliert und über die Präqualifikationsbedingungen ausgestaltet \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Für das Engpassmanagement hat der optionsbasierte Ansatz zur Bewertung entgangener Erlösmöglichkeiten die geltende Bemessungssystematik geprägt \cite{weber_gutachten_2015}, und nachfolgende Arbeiten haben dessen Übertragbarkeit auf weitere Technologien untersucht \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
+Den Abschluss bilden zwei neuere Instrumente und ein Zwischenfazit, das beide Logiken gegen die Anforderungen der kurativen Vorhaltung stellt.
 
 % ---------------------------------------------------------------
 \subsection{Dispatchmodelle und Marktzeithorizonte}
@@ -420,8 +508,18 @@ Bemessungsgegenstand ist die durchgeführte Maßnahme und nicht die Fähigkeit, 
 % Gerichtsentscheidung wiedergibt. Pruefen und gegebenenfalls ergaenzen.
 Kosten der reinen Leistungsvorhaltung sind nach dieser Systematik nicht erstattungsfähig \cite{bundesnetzagentur_beschluss_2021}.
 
-% GAMING. In Kapitel 1 nur angezeigt, hier ausgefuehrt.
-% OFFEN 9: Fundstelle in der Anlage 1 auf die Seite genau setzen.
+% GAMING. Steht ausschliesslich hier, in Kapitel 1 ist die Passage
+% entfernt.
+% OFFEN 9, WICHTIG: Die Zuordnung der Aussage zu Anlage 1 ist NICHT
+% verifiziert. Der Wortlaut, dass der Argumentation eines
+% Verfahrensbeteiligten, der kostenbasierte Redispatch eroeffne
+% strukturell Potentiale fuer strategisches, engpassverstaerkendes
+% Bietverhalten, nach eingehender Pruefung nicht gefolgt werden koenne,
+% stammt aus einer Publikation der Bundesnetzagentur zum
+% Festlegungsverfahren. Welches Dokument und welche Seite, ist offen.
+% Solange das nicht geklaert ist, darf der Satz nicht als belegt gelten.
+% Alternativ kommt die Einleitungsverfuegung
+% \cite{bundesnetzagentur_einleitungsverfuegung_2022} in Betracht.
 % OFFEN 10: Fuer die Gegenposition fehlt ein Beleg in der
 % literature.bib. In Betracht kommt der BMWi-Abschlussbericht von Hirth,
 % Schlecht, Maurer und Tersteegen zur kosten- oder marktbasierten
@@ -555,9 +653,9 @@ Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
 \section{Batteriespeicher als Technologie des kurativen Akteurs}
 \label{sec:bess_actor}
 
-Der zweite der eingangs benannten Forschungsstränge befasst sich mit der Betriebsführung von Batteriespeichern zwischen marktlicher Vermarktung und netzdienlichem Einsatz.
+Die Betriebsführung von Batteriespeichern zwischen marktlicher Vermarktung und netzdienlichem Einsatz ist Gegenstand einer eigenen Forschungsrichtung.
 Arbeiten zu präventiven und kurativen Betriebsstrategien haben gezeigt, dass sich ein netzdienlicher Beitrag nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellen lässt \cite{lindner_operation_2023, porst_betriebskonzepte_2025}, und Untersuchungen zu den Erlöspotenzialen unter verändertem Marktdesign haben die wirtschaftliche Empfindlichkeit dieser Anpassung herausgearbeitet \cite{mahgoub_wie_2025}.
-Was dieser Strang offenlässt, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
+Was diese Arbeiten offenlassen, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
 Genau diese Frage ist Gegenstand des folgenden Abschnitts.
 Er begründet zunächst, weshalb Batteriespeicher für das anspruchsvollste kurative Zeitfenster die einzige geeignete Technologie sind, stellt anschließend ihre Erlösquellen dar und arbeitet den Konflikt heraus, der zwischen der marktoptimalen Betriebsweise und der kurativen Verfügbarkeit entsteht.
 
@@ -707,6 +805,9 @@ Die Bewertung dieses Zusammenhangs erfolgt in Abschnitt \ref{sec:regulatory_disc
 % Bindungsdauern oder Beschaffungszeitpunkte auf, ist Kapitel 3
 % weggeschrieben.
 
+Aus den vorangehenden Abschnitten ergeben sich Anforderungen, die ein Mechanismus zur Beschaffung kurativer Vorhalteleistung erfüllen muss.
+Dieser Abschnitt stellt sie zusammen, prüft, ob bestehende Marktdesignansätze sie bereits erfüllen, und leitet daraus den Forschungsbedarf ab.
+
 % ---------------------------------------------------------------
 \subsection{Anforderungskatalog}
 \label{sec:requirements_catalogue}
@@ -825,6 +926,12 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %  18  Installierte Batteriespeicherkapazitaet im 2030-Szenario
 %  19  Verbleib der Abschnitte 2.4.1 und 2.4.2
 %  20  Begruendung der Bewertungen in Tabelle 2.3
+%  21  Fundstelle fuer die technologieabhaengige Bemessung des
+%      finanziellen Ausgleichs
+%  22  Praxisbezeichnungen der Betriebsplanungsstufen verifizieren, dann
+%      Kuerzel in den Text und ins Abkuerzungsverzeichnis aufnehmen
+%  23  Unterscheidung zwischen kurativer Hoeherauslastung und kurativem
+%      Redispatch gegen InnoSys 2030 belegen
 %
 % ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1
 % uebernommen:
