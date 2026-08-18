@@ -30,12 +30,27 @@
 % Die Vorfassung dieser Datei enthielt in zwei Listenpunkten einen
 % Gedankenstrich und ein Semikolon. Beide sind aufgeloest.
 %
-% BEGRIFFLICHKEIT FESTGELEGT: Die Vorfassung sprach von der
-% "Mindestverguetung", eine Zwischenfassung von einem
-% "Verguetungsbereich". Beides ist aufgegeben. Die Arbeit bestimmt die
-% "Untergrenze der Verguetung", weil die Obergrenze nicht bestimmt wird
-% und ein Bereich zwei Grenzen voraussetzt. Der Begriff ist hier
-% durchgehend angepasst und deckt sich mit Abschnitt 1.2.
+% BEGRIFFLICHKEIT FESTGELEGT, Stand 18.08.2026: Die gesuchte Groesse
+% heisst kurativer Reservierungspreis. Aufgegeben sind
+% "Mindestverguetung", "Verguetungsbereich" und "Untergrenze der
+% Verguetung". Ein Reservierungspreis ist definitionsgemaess der Betrag,
+% unter dem ein Anbieter nicht verkauft, und traegt die Aussage damit
+% ohne Hilfskonstruktion. Grenzpreis und nicht Schwellenpreis, weil die
+% Anlage 2 zur Festlegung diesen Begriff fuehrt.
+%
+% WEITERE ENTSCHEIDUNGEN VOM 18.08.2026:
+%   1  Der modifizierte Weber-Ansatz wird nicht nachgerechnet. Punkt F6
+%      traegt deshalb nur noch die methodische Begruendung und keine
+%      Zahlen. Die Begruendung selbst steht in Abschnitt 3.6.
+%   2  Die Dualvariablen sind aus der Methodik entfallen. Der frueher
+%      hier stehende Punkt F9 zur Gewinnung der Grenzpreise aus dem
+%      Problem mit fixierten Zusagen ist damit gegenstandslos und
+%      entfernt.
+%   3  Zwei Pruefnotizen sind erledigt und entfernt, naemlich der
+%      Hinweis, Kapitel 1 und 2 beschrieben die Verguetungsstruktur noch
+%      additiv, und der Hinweis, Redispatch 2.0 sei noch als
+%      marktbasiert charakterisiert. Beides trifft auf die vorliegende
+%      Fassung nicht mehr zu.
 %
 % ABGRENZUNG GEHOERT NICHT IN DIESES KAPITEL: Die Punkte A1 bis A5 der
 % Sammlung sagen, was die Arbeit nicht untersucht. Das sind Festlegungen
@@ -64,21 +79,18 @@
 
 \begin{itemize}
     % B1 [belegt] Kern der regulatorischen Einordnung.
-    \item Verhältnis der ermittelten Untergrenze der Vergütung zur Systematik des §\,13a \ac{EnWG}, die den durchgeführten Eingriff entschädigt und keine Vorhaltung vergütet \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}
+    \item Verhältnis des ermittelten kurativen Reservierungspreises zur Systematik des §\,13a \ac{EnWG}, die den durchgeführten Eingriff entschädigt und keine Vorhaltung vergütet \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}
     % B2 [belegt fuer die Struktur, eigen fuer die Folgerung auf BESS]
     % TRAGENDER BEFUND. Die Festlegung bildet Erzeugungsauslagen plus
     % max(Werteverbrauch, Opportunitaet). Der Weber-Optionswert kann
     % damit in die Zahlung ueberhaupt nicht eingehen, wenn der
     % Werteverbrauch groesser ist. Fuer Batteriespeicher ist genau das
     % zu erwarten.
-    % PRUEFEN: Kapitel 1 und 2 beschreiben diese Struktur an mindestens
-    % einer Stelle noch additiv. Das untergraebt den Befund und ist vor
-    % Abgabe zu korrigieren.
+    % ERLEDIGT am 18.08.2026: Abschnitt 2.3.3 fuehrt die Struktur korrekt
+    % als Auswahlverhaeltnis, Kapitel 1 beschreibt sie an keiner Stelle.
     \item Nicht additive Struktur der Vergütung nach geltender Festlegung und die Folge, dass der Optionswert für Batteriespeicher voraussichtlich nicht zahlungswirksam wird \cite{bundesnetzagentur_festlegung_2024}
-    % B3 [belegt] PRUEFEN: Redispatch 2.0 ist im Bestandstext noch als
-    % marktbasiert charakterisiert. Es ist ein Duldungs- und
-    % Entschaedigungsregime. Ohne diese Korrektur wird der eigene
-    % Entwurf als Variante eines bestehenden Marktes gelesen.
+    % B3 [belegt] ERLEDIGT am 18.08.2026: Abschnitt 2.3.3 fuehrt
+    % Redispatch 2.0 als Duldungs- und Entschaedigungsregime.
     \item Abgrenzung des entworfenen Mechanismus gegenüber Redispatch~2.0 als Duldungs- und Entschädigungsregime \cite{bundesnetzagentur_festlegung_2024}
     % B4 [belegt] Die Beschlusskammer 8 hat die Behandlung von
     % Batteriespeichern einem spaeteren Hinweis vorbehalten. Damit ist
@@ -110,9 +122,9 @@
 % bewerten, die sich erst aus der Modellierung ergeben.
 %
 % GAMING: Dieser Abschnitt traegt die ausfuehrliche Behandlung. Kapitel 1
-% zeigt die Auseinandersetzung nur an, Abschnitt 2.2.2 stellt sie im
+% zeigt die Auseinandersetzung nur an, Abschnitt 2.3.3 stellt sie im
 % Verguetungsregime dar. Die Punkte D1 und D2 der Sammlung gehoeren nach
-% 2.2.2, die Punkte D3 bis D5 hierher.
+% 2.3.3, die Punkte D3 bis D5 hierher.
 % VORAUSSETZUNG: Der BMWi-Abschlussbericht von Hirth, Schlecht, Maurer
 % und Tersteegen 2019 muss in der literature.bib stehen, sonst ist nur
 % die ablehnende Position der Beschlusskammer belegt und die Diskussion
@@ -150,10 +162,10 @@
     % Bieters. Bei vielen geeigneten Anbietern disziplinieren sich
     % Ueberzeichnungen gegenseitig, an einem Knoten mit wenigen
     % wirksamen Anlagen nicht. Die Lage des Preises im
-    % Verguetungsbereich ist damit keine Modellgroesse, sondern eine
+    % Reservierungspreis ist damit keine Modellgroesse, sondern eine
     % Frage der Anbieterzahl. Der Satz dazu steht bereits in
     % Abschnitt 1.2 und ist hier aufzuloesen.
-    \item Lokale Marktmacht bei geringer Zahl wirksamer Anbieter an einem Netzknoten und die Folge für die Lage des Preises oberhalb der ermittelten Untergrenze
+    \item Lokale Marktmacht bei geringer Zahl wirksamer Anbieter an einem Netzknoten und die Folge für die Lage des Preises oberhalb des ermittelten kurativen Reservierungspreises
     % A5 [folgt aus A2] Offen sagen, dass die Arbeit das Bietverhalten
     % nicht modelliert und die Aussagen dieses Abschnitts daher
     % qualitativ bleiben.
@@ -228,26 +240,27 @@
     % gewaehlte Architektur. Das ist eine kurze Zeitreihe, die
     % Saisonalitaet ist damit nicht abgedeckt.
     \item Beschränkung des Auswertungszeitraums auf das vierte Quartal 2025 und die daraus folgende fehlende Abdeckung saisonaler Effekte
-    % F6 [eigen, gegen Anlage 5 validiert] Die dokumentierte Begruendung
-    % dafuer, den Weber-Ansatz nur als Referenzrahmen zu fuehren,
-    % gehoert hierher und nicht nach 5.1. Tragend sind drei der sieben
-    % Gruende. Einperiodige deterministische Optimierung eliminiert den
-    % Optionswert konstruktionsbedingt. Fahrplanbasis und mu aus
-    % derselben Preisreihe erzeugen Zirkularitaet. Das
-    % Weber-Schwellenband von rund 43 Euro je MWh ist 1,3- bis 3,2-mal
-    % breiter als das technische Indifferenzband der Batterie von 23 bis
-    % 28 Euro je MWh und schwankt mit der Tagesvolatilitaet, waehrend
-    % das technische Band nahezu konstant bleibt.
-    \item Begründung der Entscheidung, den modifizierten Weber-Ansatz als Referenzrahmen und nicht als Bestandteil des Optimierungsmodells zu führen \cite{weber_gutachten_2015, bundesnetzagentur_festlegung_2024}
-    % F9 [methodisch zwingend] NEU. Das Modell ist gemischt-ganzzahlig,
-    % weil die Zusage der kurativen Vorhaltung je Periode nur ganz oder
-    % nicht erfolgen kann. Ein gemischt-ganzzahliges Problem hat keine
-    % Dualvariablen. Die Schwellenpreise sind daher aus dem Problem mit
-    % fixierten Binaervariablen zu gewinnen und gelten nur fuer die dort
-    % gewaehlte Kombination der Zusagen, nicht global. Diese
-    % Einschraenkung ist offen zu benennen, weil der Vergleich mit dem
-    % Weber-Schwellenband auf diesen Werten aufbaut.
-    \item Gewinnung der Schwellenpreise aus dem Problem mit fixierten Zusagen und die daraus folgende nur lokale Gültigkeit
+    % F6 [eigen] GEAENDERT am 18.08.2026. Die Zahlen sind entfernt, weil
+    % sie eine Nachrechnung voraussetzen, die nicht stattfindet. Die
+    % drei methodischen Gruende stehen in Abschnitt 3.6, hier steht ihre
+    % Folge fuer die Reichweite des Ergebnisses, naemlich dass der
+    % ermittelte Wert rein opportunitaetskostenbasiert ist und keinen
+    % Optionswert enthaelt. Abschnitt 2.3.4 nennt daneben sechs
+    % inhaltliche Gruende gegen die Anwendbarkeit auf Batteriespeicher.
+    % Beide Ebenen nicht vermengen.
+    \item Folge der in Abschnitt \ref{sec:weber_exclusion} begründeten Abgrenzung, nämlich dass der ermittelte kurative Reservierungspreis rein opportunitätskostenbasiert ist und keinen Optionswert enthält \cite{weber_gutachten_2015, bundesnetzagentur_festlegung_2024}
+    % ENTFALLEN am 18.08.2026: Der Punkt F9 zur Gewinnung der Grenzpreise
+    % aus dem Problem mit fixierten Binaervariablen ist gegenstandslos,
+    % weil die Dualvariablen aus der Methodik entfallen sind. Sie wurden
+    % allein fuer den Vergleich mit dem Weber-Grenzpreisband gebraucht,
+    % und dieser Vergleich findet nicht statt. Nicht wieder aufnehmen,
+    % ohne zugleich Abschnitt 3.4 umzustellen.
+    % F10 [methodisch] NEU. Die Verifikation ueber den Revenue Index der
+    % ISEA Battery Charts vergleicht ein Modell mit vollstaendiger
+    % Preiskenntnis gegen ein Rolling-Intrinsic-Verfahren und einen
+    % engeren gegen einen weiteren Marktumfang. Beide Unterschiede sind
+    % hier als Grenze der Aussage zu benennen.
+    \item Reichweite der Verifikation über einen extern berechneten Erlösindex mit abweichender Vorausschau und abweichendem Marktumfang
     % F7 [daten] 69 Prozent der Jahressumme der RMS-Werte stammen aus
     % dem groessten Prozent der Viertelstunden. Eine Groesse mit dieser
     % Konzentration als Volatilitaetsmass fuer eine Verguetung zu

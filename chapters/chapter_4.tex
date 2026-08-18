@@ -7,14 +7,24 @@
 % ===============================================================
 % Zielumfang Kapitel 4: 16 Seiten
 %   4.1 Referenzfall ohne kurative Bindung ................... 3
-%   4.2 Fahrpläne und SoC-Verläufe unter Bindung ............. 4
-%   4.3 Erlöswirkung und Opportunitätskosten ................. 4
-%   4.4 Sensitivitäten ....................................... 4
-%   4.5 Ableitung der Mindestvergütung ....................... 1
+%   4.2 Fahrplaene und Ladezustandsverlaeufe unter Bindung ... 4
+%   4.3 Erloeswirkung und Opportunitaetskosten ............... 4
+%   4.4 Sensitivitaeten ...................................... 4
+%   4.5 Ableitung des kurativen Reservierungspreises ......... 1
 %
 % IN DIESEM KAPITEL NUR BESCHREIBEN, NICHT INTERPRETIEREN.
 % Das ist der häufigste Fehler bei dieser Kapitelaufteilung. Wer die
 % Trennung diszipliniert durchhält, schreibt Kapitel 5 fast von selbst.
+%
+% ENTSCHEIDUNGEN VOM 18.08.2026, verbindlich fuer dieses Kapitel:
+%   1  Die gesuchte Groesse heisst kurativer Reservierungspreis.
+%      Mindestverguetung und Erloesdifferenz werden nicht verwendet.
+%   2  Der modifizierte Weber-Ansatz wird nicht nachgerechnet. Die
+%      frueher in 4.3 vorgesehene Gegenueberstellung mit der Verguetung
+%      nach diesem Ansatz ist entfallen, weil ohne Nachrechnung keine
+%      Zahl vorliegt, gegen die gestellt werden koennte. Die Einordnung
+%      bleibt qualitativ in Abschnitt 5.1.
+%   3  Die Poenalehoehe ist als Sensitivitaet aufgenommen.
 % ===============================================================
 
 % ---------------------------------------------------------------
@@ -45,11 +55,16 @@
 % [Ziel: 4 Seiten]
 
 \begin{itemize}
-    \item Erlösdifferenz zwischen freiem und gebundenem Fahrplan
+    \item Unterschied der Erlöse zwischen freiem und gebundenem Fahrplan
     \item Aufteilung nach Märkten
-    \item Gegenüberstellung mit der Vergütung nach dem modifizierten Weber-Ansatz aus Abschnitt \ref{sec:reference_verification}
-    \item Beide Komponenten des finanziellen Ausgleichs getrennt ausweisen: Erzeugungsauslagen und Optionswert
+    \item Zerlegung in die entgangene Arbitrage und den zusätzlichen Werteverbrauch
 \end{itemize}
+
+% GESTRICHEN am 18.08.2026: Hier standen zwei Stichpunkte, naemlich die
+% Gegenueberstellung mit der Verguetung nach dem modifizierten
+% Weber-Ansatz und der getrennte Ausweis von Erzeugungsauslagen und
+% Optionswert. Beide setzen eine eigene Nachrechnung des fremden
+% Verfahrens voraus, die nicht stattfindet. Nicht wieder aufnehmen.
 
 % ---------------------------------------------------------------
 \section{Sensitivitätsanalyse}
@@ -59,16 +74,21 @@
 \begin{itemize}
     \item Abrufhäufigkeit
     \item Vergütungsniveau
-    \item Bindungsdauer und Breite des reservierten SoC-Bands
-    \item Anlagenauslegung (Verhältnis Energie zu Leistung)
+    \item Bindungsdauer und Breite des reservierten Ladezustandsbands
+    \item Höhe der Pönale bei Nichterfüllung
+    \item Anlagenauslegung, also das Verhältnis von Energie zu Leistung
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Ableitung der Mindestvergütung}
-\label{sec:minimum_compensation}
+\section{Ableitung des kurativen Reservierungspreises}
+\label{sec:reservation_price}
 % [Ziel: 1 Seite]
 %
-% Das Ergebnis ist als konservative Obergrenze zu benennen: Mit
-% vollständiger Preiskenntnis trifft der unrestringierte Fahrplan jede
-% Preisspitze exakt, wodurch die Opportunitätskosten der Bindung nach
-% oben verzerrt sind. Die Begründung gehört nach Abschnitt 5.4.
+% Das Ergebnis ist als konservative Obergrenze zu benennen, denn mit
+% vollstaendiger Preiskenntnis trifft der unrestringierte Fahrplan jede
+% Preisspitze exakt, wodurch die Opportunitaetskosten der Bindung nach
+% oben verzerrt sind. Die Begruendung gehoert nach Abschnitt 5.4.
+% KEINE OBERGRENZE DES PREISES nennen, auch nicht verneinend. Der
+% Reservierungspreis ist der opportunitaetskostenbasierte Teil des
+% Gebots und nicht das Gebot selbst, weil eine Poenale zusaetzlich eine
+% Risikopraemie erzeugt.

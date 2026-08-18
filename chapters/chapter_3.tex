@@ -8,14 +8,41 @@
 % Zielumfang Kapitel 3: 16 Seiten
 %   3.1 Entwurf des kurativen Marktprodukts .................. 4
 %   3.2 Modellierungsansatz und Systemgrenzen ................ 2
-%   3.3 Lineare Optimierung und Gurobi ....................... 1
-%   3.4 Mathematische Formulierung des Speichermodells ....... 5
-%   3.5 Eingangsdaten und Szenariorahmen 2030 ................ 2,5
-%   3.6 Referenzverfahren und Verifikation ................... 1,5
+%   3.3 Grundlagen der gemischt-ganzzahligen Optimierung ..... 1
+%   3.4 Mathematische Formulierung des Speichermodells ....... 4,5
+%   3.5 Eingangsdaten und Szenariorahmen ..................... 2,5
+%   3.6 Abgrenzung gegenueber dem modifizierten Weber-Ansatz . 1
+%   3.7 Verifikation des Modells ............................. 1
 %
 % Dieses Kapitel enthält den eigenen Beitrag der Arbeit. Der
 % Produktentwurf steht bewusst VOR der Modellierung, damit die
 % Modellgleichungen aus der Produktdefinition folgen.
+%
+% ENTSCHEIDUNGEN VOM 18.08.2026, verbindlich fuer dieses Kapitel:
+%   1  Der modifizierte Weber-Ansatz ist rein informativ Stand der
+%      Technik und steht in Abschnitt 2.3.4. Er geht NICHT in das
+%      Optimierungsmodell ein und wird NICHT nachgerechnet. Der frueher
+%      hier stehende Kernsatz, das Verfahren der Festlegung werde
+%      uebernommen und die iterative Grenzpreisbestimmung durch
+%      Dualvariablen ersetzt, ist aufgegeben. Nicht wieder aufnehmen.
+%   2  Der frueher gemeinsame Abschnitt 3.6 ist geteilt. Abschnitt 3.6
+%      traegt die BEGRUENDUNG, weshalb der Ansatz nicht in die
+%      Optimierung eingehen konnte, Abschnitt 3.7 die VERIFIKATION des
+%      eigenen Modells. Ohne die Teilung entfiele die Verifikation
+%      ersatzlos, weil das Berechnungsbeispiel der Bundesnetzagentur als
+%      Pruefmassstab wegfaellt.
+%   3  Abschnitt 3.6 fuehrt ausschliesslich methodische Gruende und
+%      keine Zahlen, weil das Kapitel vor den Ergebnissen steht.
+%   4  Die Dualvariablen der Ladezustandsbilanz sind aus der Methodik
+%      entfallen. Das Modell ist gemischt-ganzzahlig, weil die kurative
+%      Zusage je Periode nur ganz oder nicht erfolgen kann.
+%   5  Die Verifikation laeuft ueber den Revenue Index der ISEA Battery
+%      Charts, siehe Abschnitt 3.7.
+%
+% TERMINOLOGIE: Die gesuchte Groesse heisst kurativer Reservierungspreis.
+% Mindestverguetung, Verguetungsbereich, Untergrenze der Verguetung und
+% Erloesdifferenz werden nicht verwendet. Grenzpreis und nicht
+% Schwellenpreis, weil die Anlage 2 zur Festlegung diesen Begriff fuehrt.
 % ===============================================================
 
 % ---------------------------------------------------------------
@@ -27,30 +54,44 @@
 % konkretes Produkt übersetzt. Jede Designentscheidung muss auf eine
 % Anforderung zurückverweisen.
 %
-% Rahmung: Was der ÜNB bei kurativer Vorhaltung kauft, IST eine Option
-% -- Strike, Prämie, Laufzeit, Ausübungswahrscheinlichkeit. Damit ist
-% das Produkt die konsequente Fortschreibung einer bereits
-% regulatorisch verankerten Bewertungslogik auf einen Akteurstyp, für
-% den sie bislang nicht funktioniert.
+% ZURUECKGENOMMEN: Hier stand die Rahmung, was der UENB kaufe, sei eine
+% Option mit Strike, Praemie, Laufzeit und Ausuebungswahrscheinlichkeit,
+% und das Produkt sei die Fortschreibung einer regulatorisch verankerten
+% Bewertungslogik. Diese Rahmung fuehrt genau die Bewertungslogik als
+% eigene Grundlage ein, die die Arbeit nicht verwendet. Die strukturelle
+% Aehnlichkeit darf in einem Satz stehen, die Bewertungslogik nicht.
+% Nicht wieder aufnehmen.
+%
+% VORLAGE FUER DIE PRODUKTSTRUKTUR ist stattdessen die Trennung von
+% Leistungsvorhaltung und Arbeitsabruf bei der aFRR aus Abschnitt 2.3.2.
+% Abschnitt 2.3.2 kuendigt diese Vorlage ausdruecklich an, weshalb sie
+% hier einzuloesen ist.
 
 \begin{itemize}
-    \item Produktdefinition: Vorhalteleistung statt Arbeit; Begründung aus Abschnitt \ref{sec:interim_conclusion}
-    \item Bindungsdauer und Reaktionszeit, abgeleitet aus den TATL-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}
-    \item Beschaffungszeitpunkt im Verhältnis zum Intraday-Gate-Closure; Vorlage ist die Zeitstaffelung des modifizierten Weber-Ansatzes \cite{weber_gutachten_2015}
+    \item Produktdefinition, nämlich Vorhalteleistung anstelle von Arbeit, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A3
+    \item Trennung von Vorhaltung und Abruf nach dem Muster der \ac{aFRR} aus Abschnitt \ref{sec:balancing_procurement}
+    \item Bindungsdauer und Reaktionszeit, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, mit der Bindungsdauer als eigenständiger Bemessungsdimension nach Anforderung A3
+    \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels
     \item Lokationalität der Beschaffung \cite{blank_determination_2024}
+    \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A1
     \item Vergütungslogik und Präqualifikationsanforderungen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
     \item Abgrenzung zum Netzbooster \cite{consentec_systembooster_2026}
 \end{itemize}
 
-% ZU ENTSCHEIDEN UND ZU BEGRÜNDEN:
-% Sperrt kurative Vorhaltung die Anlage vollständig, oder bindet sie
-% nur das SoC-Band? Anlage 5 der Festlegung spricht von "gesperrter
-% Leistung", d. h. die gesamte Intraday-Optionalität entfällt.
-% Kurative Vorhaltung ist schwächer: Der Speicher darf weiter handeln,
-% muss aber Energie und Leistungsreserve für den Abruf vorhalten.
-% Bei der schwächeren Variante ist der Optionswert in Abschnitt 3.6
-% nur anteilig anzusetzen. An dieser Entscheidung hängen die Zahlen
-% in Kapitel 4.
+% ENTSCHIEDEN am 18.08.2026, hier nur noch festzuhalten und nicht erneut
+% zu oeffnen: Die kurative Vorhaltung sperrt die Anlage NICHT vollstaendig,
+% sondern bindet Leistung und Ladezustandsband. Der Speicher darf weiter
+% handeln, muss aber zu jedem Zeitpunkt der Bindung Energie und
+% Leistungsreserve in der geforderten Richtung vorhalten.
+% Kapitel 2 hat diese Entscheidung bereits getroffen. Abschnitt 2.2.3
+% beschreibt durchgehend die schwaechere Variante, und Anforderung A6
+% verlangt die Vereinbarkeit mit den bestehenden
+% Vermarktungsverpflichtungen, was eine vollstaendige Sperre ausschliesst.
+% ABGRENZUNG: Anlage 5 der Festlegung spricht von gesperrter Leistung und
+% laesst damit die gesamte Intraday-Optionalitaet entfallen. Der Unterschied
+% zum hier entworfenen Produkt ist zu benennen, weil er erklaert, weshalb
+% der ermittelte Reservierungspreis unter dem Ausgleich nach der Festlegung
+% liegen kann, ohne dass die Rechnung fehlerhaft waere.
 
 % ---------------------------------------------------------------
 \section{Modellierungsansatz und Systemgrenzen}
@@ -61,7 +102,8 @@
     \item Einzelanlagenbetrachtung statt Systemebene; Begründung und Konsequenzen
     \item Deterministische Optimierung mit vollständiger Preiskenntnis; Abgrenzung gegenüber stochastischen Ansätzen
     \item Zeitliche Auflösung: 96 Viertelstunden je Tag, konsistent zur Marktzeiteinheit seit dem 01.10.2025 \cite{ffe_saegezahn_2026}
-    \item Nicht abgebildet: Netzrestriktionen, Abrufwahrscheinlichkeit, Poolbildung
+    \item Nicht abgebildet sind Netzrestriktionen, Abrufwahrscheinlichkeit und Poolbildung
+    \item Nicht abgebildet ist ferner die Gegenseite der Maßnahme, obwohl der bilanzielle Ausgleich nach Abschnitt \ref{sec:curative_functionality} mindestens zwei koordinierte Akteure erfordert
 \end{itemize}
 
 % ===============================================================
@@ -84,8 +126,10 @@
 % Redispatch ohne vorgelagerte Hoeherauslastung.
 % Sie nimmt die Perspektive einer einzelnen Anlage ein und modelliert
 % weder einen Bietwettbewerb noch die netzweite Beschaffungsmenge,
-% sodass die Obergrenze des Verguetungsbereichs und die Lage des Preises
-% darin qualitativ eingeordnet, aber nicht berechnet werden.
+% sodass die Lage des tatsaechlichen Preises oberhalb des kurativen
+% Reservierungspreises qualitativ eingeordnet, aber nicht berechnet wird.
+% KEINE OBERGRENZE NENNEN, auch nicht verneinend. Siehe den Kommentar zu
+% Absatz 2 von Abschnitt 1.2.
 % Sie unterstellt die netztechnische Wirksamkeit der Massnahme als
 % gegeben, da die Bestimmung wirksamer Akteure an einem Netzknoten
 % Gegenstand der Netzsicherheitsrechnung des UENB und nicht dieser
@@ -96,17 +140,23 @@
 % ===============================================================
 
 % ---------------------------------------------------------------
-\section{Grundlagen der linearen Optimierung}
+\section{Grundlagen der gemischt-ganzzahligen linearen Optimierung}
 \label{sec:lp_gurobi}
-% [Ziel: 1 Seite -- diese Vorgabe strikt einhalten]
+% [Ziel: 1 Seite, diese Vorgabe strikt einhalten]
 %
-% Zwei Absätze genügen: Zielfunktion, Restriktionen,
-% Entscheidungsvariablen; danach Lösungsverfahren (Simplex bzw.
-% Barrier) und die verwendete Solver-Version. Kein Lehrbuchexkurs.
+% Zwei Absaetze genuegen, naemlich Zielfunktion, Restriktionen und
+% Entscheidungsvariablen, danach das Loesungsverfahren und die verwendete
+% Solver-Version. Kein Lehrbuchexkurs.
+% GEAENDERT: Die Ueberschrift nennt jetzt die gemischt-ganzzahlige Form,
+% weil die kurative Zusage als Binaervariable abgebildet ist. Der Abschnitt
+% muss deshalb ueber die Grundform hinaus das Branch-and-Bound-Verfahren
+% und die Folge benennen, dass ein gemischt-ganzzahliges Problem keine
+% Dualvariablen liefert.
 
 \begin{itemize}
-    \item Grundform des linearen Programms: Zielfunktion, Nebenbedingungen, Entscheidungsvariablen \cite{domschke_operations_2015}
-    \item Lösungsverfahren und Eindeutigkeit des Optimums \cite{domschke_operations_2015}
+    \item Grundform des linearen Programms mit Zielfunktion, Nebenbedingungen und Entscheidungsvariablen \cite{domschke_operations_2015}
+    \item Erweiterung um ganzzahlige Variablen und das Lösungsverfahren über Relaxierung und Verzweigung \cite{domschke_operations_2015}
+    \item Folge für die Auswertung, nämlich dass ein gemischt-ganzzahliges Problem keine Dualvariablen liefert
     \item Verwendete Solver-Version und Lizenzart \cite{gurobi_reference_2026}
 \end{itemize}
 
@@ -116,22 +166,27 @@
 % [Ziel: 5 Seiten]
 %
 % HIERHER gehören die technischen BESS-Eigenschaften -- SoC-Dynamik,
-% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.3.1.
+% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.2.1.
 
 \begin{itemize}
-    \item Zielfunktion: Erlösmaximierung über die Spotmärkte
-    \item SoC-Bilanzgleichung; ihre Dualvariable wird in Abschnitt \ref{sec:reference_verification} als Schattenpreis weiterverwendet
-    \item Leistungs- und Energiegrenzen, Lade- und Entladewirkungsgrad
+    \item Zielfunktion, nämlich Erlösmaximierung über die Spotmärkte
+    \item Ladezustandsbilanz mit Leistungs- und Energiegrenzen sowie Lade- und Entladewirkungsgrad
     \item Degradation und Zyklenkosten \cite{kumtepeli_energy_2020}
-    \item Restriktion der kurativen Vorhaltung: Bindung des SoC-Bands im Abrufzeitfenster
+    \item Restriktion der kurativen Vorhaltung, nämlich die Bindung des Ladezustandsbands über die Bindungsdauer
+    \item Binärvariable der kurativen Zusage je Periode und die daraus folgende gemischt-ganzzahlige Form
     \item Zeitgekoppelte Formulierung von Flexibilitätsgeboten als methodische Referenz \cite{schmitt_linear_2020}
 \end{itemize}
 
-% WICHTIG -- vor dem Implementieren entscheiden:
-% Dualvariablen liefert Gurobi nur bei einem reinen LP. Sobald
-% Binärvariablen im Modell sind (z. B. zum Ausschluss von
-% gleichzeitigem Laden und Entladen), gibt es kein Pi. Falls Binaries
-% nötig sind: fixieren und als LP nachlösen.
+% GESTRICHEN am 18.08.2026: Hier stand der Stichpunkt, die Dualvariable der
+% Ladezustandsbilanz werde als Schattenpreis weiterverwendet, sowie der
+% Warnkommentar zu Pi bei Binaervariablen. Beides ist gegenstandslos, weil
+% die Dualvariablen aus der Methodik entfallen sind. Sie wurden allein fuer
+% die Grenzpreisbestimmung im Weber-Verfahren gebraucht, und dieses
+% Verfahren ist kein Bestandteil des Modells mehr.
+% FALLS DIESE ENTSCHEIDUNG SPAETER GEDREHT WIRD: Dualvariablen waeren nur
+% aus einem zweiten Lauf mit fixierten Binaervariablen zu gewinnen und
+% gaelten dann allein fuer die dort gewaehlte Kombination der Zusagen. Der
+% zugehoerige Punkt F9 in Abschnitt 5.4 ist mit dieser Fassung entfallen.
 
 % ---------------------------------------------------------------
 \section{Eingangsdaten und Szenariorahmen}
@@ -151,25 +206,81 @@
 % reproduzierbar.
 
 % ---------------------------------------------------------------
-\section{Referenzverfahren und Verifikation}
-\label{sec:reference_verification}
-% [Ziel: 1,5 Seiten]
+\section{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
+\label{sec:weber_exclusion}
+% [Ziel: 1 Seite]
 %
-% Kernsatz dieses Abschnitts:
-% "Das Verfahren der Festlegung BK8-22-0001-A wird übernommen, wobei
-% die iterative Grenzpreisbestimmung aus der Preisdauerlinie durch die
-% Dualvariablen der Speicheroptimierung ersetzt wird. Die Bewertung
-% der Intraday-Optionalität nach dem modifizierten Weber-Ansatz bleibt
-% unverändert."
+% AUFGABE DIESES ABSCHNITTS: Begruenden, weshalb sich das in Abschnitt
+% 2.3.4 dargestellte Verfahren nicht als Bestandteil des
+% Optimierungsmodells fuehren laesst. Abschnitt 2.3.4 nennt sechs
+% INHALTLICHE Gruende, die gegen die Anwendbarkeit auf Batteriespeicher
+% sprechen. Hier stehen die drei METHODISCHEN Gruende, die gegen eine
+% Einbettung in das eigene Modell sprechen. Beide Ebenen sind
+% auseinanderzuhalten.
 %
-% Die Implementierung wird gegen das Berechnungsbeispiel der
-% Bundesnetzagentur validiert -- eine behördlich publizierte
-% Referenzrechnung ist die stärkste verfügbare Verifikation.
+% KEINE ZAHLEN in diesem Abschnitt, weil das Kapitel vor den Ergebnissen
+% steht. Die frueher vorgesehene Bandbreitenanalyse entfaellt mit der
+% Nachrechnung.
+%
+% NICHT ALS SCHWAECHE FORMULIEREN. Der Abschnitt sagt, welche
+% Voraussetzungen das Verfahren braucht und weshalb der gewaehlte
+% Modellansatz sie nicht bereitstellt. Er wertet das Verfahren nicht ab.
 
 \begin{itemize}
-    \item Nachbildung des modifizierten Weber-Ansatzes als Referenzverfahren \cite{weber_gutachten_2015, bundesnetzagentur_anlage1_2024}
-    \item Ersetzung der iterativen Grenzpreisbestimmung durch die Dualvariablen aus Abschnitt \ref{sec:storage_model}
-    \item Anpassungen vom Pumpspeicher zum Batteriespeicher: symmetrische Leistung, Netzentgeltbefreiung nach §\,118 Abs.\,6 \ac{EnWG}, Zyklenkosten
-    \item Validierung gegen das Berechnungsbeispiel für Tagesspeicher \cite{bundesnetzagentur_berechnungsbeispiel_2024}
-    \item Zusammenführung ex post: Mindestvergütung als Summe aus deterministischer Erlösdifferenz und Optionswert
+    \item Einordnung, nämlich dass der Ansatz nach Abschnitt \ref{sec:weber_approach} als Stand der Technik dargestellt ist und die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen prägt \cite{weber_gutachten_2015}
+    \item Erster Grund, nämlich dass eine einperiodige deterministische Optimierung mit vollständiger Preiskenntnis kein Volatilitätsmaß kennt und den Zeitwert der Option damit konstruktionsbedingt zu null macht
+    \item Zweiter Grund, nämlich dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre
+    \item Dritter Grund, nämlich dass der Ansatz jedes Zeitintervall unabhängig bewertet, während die Ladezustandsbilanz die Intervalle bindend koppelt und diese Kopplung für kurze Entladedauern nicht vernachlässigbar ist
+    \item Folge für die Ergebnisse, nämlich dass der ermittelte kurative Reservierungspreis opportunitätskostenbasiert ist und keinen Optionswert enthält, was in Abschnitt \ref{sec:model_critique} zu würdigen ist
+\end{itemize}
+
+% ---------------------------------------------------------------
+\section{Verifikation des Modells}
+\label{sec:model_verification}
+% [Ziel: 1 Seite]
+%
+% NEU am 18.08.2026. Der frueher vorgesehene Pruefmassstab, naemlich das
+% Berechnungsbeispiel der Bundesnetzagentur, faellt mit der Nachrechnung
+% weg. An seine Stelle tritt der Revenue Index der ISEA Battery Charts.
+%
+% BEGRIFFLICHE VORSICHT: Der Index prueft nicht, ob die Implementierung das
+% formulierte Problem korrekt loest, sondern ob das Erloesniveau plausibel
+% ist. Der Abschnitt sollte das offen sagen und den Index nicht als
+% Verifikation im engeren Sinn ausgeben.
+%
+% ZWEI UNTERSCHIEDE, die der Text offenlegen muss, sonst ist der Vergleich
+% angreifbar:
+%   1  VORAUSSCHAU. Der Index rechnet Rolling Intrinsic, also wiederholte
+%      Optimierung gegen die jeweils bekannte Preislage ohne Vorausschau.
+%      Das eigene Modell unterstellt vollstaendige Preiskenntnis. Der
+%      eigene Wert muss deshalb SYSTEMATISCH UEBER dem Index liegen. Genau
+%      das macht den Vergleich zu einer Pruefung mit Richtungsaussage und
+%      nicht nur zu einer Groessenordnungspruefung. Liegt der eigene Wert
+%      darunter, ist die Implementierung fehlerhaft.
+%   2  MARKTUMFANG. Der Index buendelt FCR, aFRR-Leistung, aFRR-Arbeit und
+%      kontinuierlichen Intraday-Handel. Das eigene Modell fuehrt die
+%      Spotvermarktung. Verglichen werden darf deshalb nicht das
+%      Gesamtniveau, sondern nur die vergleichbare Teilmenge, oder der
+%      eigene Wert ist ausdruecklich als Teilmenge auszuweisen.
+%
+% ZU DOKUMENTIEREN, sonst ist der Vergleich nicht nachvollziehbar:
+% Anlagenparameter des Index, insbesondere das Verhaeltnis von Energie zu
+% Leistung und der unterstellte Wirkungsgrad, ferner Indexstand,
+% Abrufdatum und der ausgewertete Zeitraum.
+%
+% OFFEN 1: Fuer die ISEA Battery Charts fehlt ein bib-Eintrag. Anzulegen
+% sind der Datenzugang mit Abrufdatum und, falls vorhanden, die
+% Methodikveroeffentlichung des Instituts. Ohne die Methodikquelle ist die
+% Beschreibung des Rolling-Intrinsic-Verfahrens nicht belegt.
+% OFFEN 2: Zu entscheiden, ob ergaenzend Grenzfallpruefungen am eigenen
+% Modell aufgenommen werden, also Wirkungsgrad eins, Vorhalteleistung null
+% und konstanter Preis, deren Ergebnis sich analytisch vorhersagen laesst.
+% Dafuer spricht, dass erst sie eine Verifikation im engeren Sinn sind.
+
+\begin{itemize}
+    \item Gegenstand und Aufbau des Vergleichsmaßstabs, nämlich ein je Tag ausgewiesener annualisierter Erlös in Tausend Euro je Megawatt und Jahr aus einem marktübergreifenden Modell über \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und kontinuierlichen Intraday-Handel
+    \item Unterschied in der Vorausschau, nämlich Rolling Intrinsic gegenüber vollständiger Preiskenntnis, und die daraus folgende Erwartung, dass der eigene Wert über dem Index liegt
+    \item Unterschied im Marktumfang und die daraus folgende Beschränkung des Vergleichs auf die vergleichbare Teilmenge
+    \item Abgleich der Anlagenparameter und Dokumentation von Indexstand, Abrufdatum und Auswertungszeitraum
+    \item Ergebnis des Abgleichs und Anschluss an die Würdigung der vollständigen Preiskenntnis in Abschnitt \ref{sec:model_critique}
 \end{itemize}

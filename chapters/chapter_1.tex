@@ -56,16 +56,12 @@
 %     Marktpreis und keine Obergrenze wird genannt. Siehe die Notiz vor
 %     Absatz 2 von 1.2.
 %
-% VORAUSGESETZTE GLIEDERUNG VON KAPITEL 2: Die numerischen
-% Abschnittsverweise in den Kommentaren dieser Datei setzen die Reihenfolge
-% 2.1 Kurative Systemfuehrung, 2.2 Batteriespeicher als Technologie des
-% kurativen Akteurs, 2.3 Marktliche und regulatorische Rahmenbedingungen
-% und 2.4 Anforderungen und Forschungsbedarf voraus. Betroffen sind die
-% Verweise auf 2.2.1 fuer den Technologievergleich, auf 2.3 fuer die
-% Abgrenzung der Verguetungslogiken und auf 2.3.1 fuer die Legaldefinition
-% des Selbstdispatch. Wird der Tausch von 2.2 und 2.3 nicht ausgefuehrt,
-% sind diese vier Stellen zurueckzustellen. Die \ref-Verweise im Fliesstext
-% sind davon nicht betroffen, weil sie ueber Marken laufen.
+% GLIEDERUNG VON KAPITEL 2, Stand 18.08.2026: Der Tausch ist AUSGEFUEHRT.
+% Die Reihenfolge lautet 2.1 Kurative Systemfuehrung, 2.2 Batteriespeicher
+% als Technologie des kurativen Akteurs, 2.3 Marktliche Rahmenbedingungen
+% und Verguetungslogiken sowie 2.4 Anforderungen und Forschungsbedarf. Die
+% numerischen Abschnittsverweise in den Kommentaren dieser Datei sind damit
+% gueltig und nicht mehr zurueckzustellen.
 %
 % OFFENE PUNKTE, im Text mit % OFFEN Nr. markiert:
 %   1  Berichtsjahr des Monitoringberichts fuer die 58,3 Prozent
@@ -85,31 +81,26 @@
 %      Standardsystematik und die Zuordnung eigene Einordnung
 %  14  Fundstelle fuer den Vorrang marktbasierter Massnahmen
 %
-% ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1:
+% ENTSCHEIDUNGEN VOM 18.08.2026, verbindlich fuer alle Kapitel:
+%   1  Der Tausch von 2.2 und 2.3 ist ausgefuehrt.
+%   2  Der modifizierte Weber-Ansatz ist rein informativ Stand der
+%      Technik in Abschnitt 2.3.4. Er wird weder nachgerechnet noch als
+%      Bestandteil des Optimierungsmodells gefuehrt. Abschnitt 3.6
+%      begruendet, weshalb das nicht ging.
+%   3  Die Dualvariablen der Ladezustandsbilanz sind aus der Methodik
+%      entfallen. Das Modell ist gemischt-ganzzahlig, weil die kurative
+%      Zusage je Periode binaer ist.
+%   4  Die Verifikation des Modells laeuft ueber den Revenue Index der
+%      ISEA Battery Charts in Abschnitt 3.7.
+%   5  Die gesuchte Groesse heisst durchgehend kurativer
+%      Reservierungspreis. Mindestverguetung, Verguetungsbereich,
+%      Untergrenze der Verguetung und Erloesdifferenz sind in allen
+%      Kapiteln ersetzt.
+%
+% ANSCHLUESSE AN SPAETERE KAPITEL, Stand 18.08.2026 alle erledigt:
 %   Kapitel 2 traegt die zugehoerigen Aufgaben am Ende von chapter_2.tex.
-%   chapter_3.tex, Abschnitt 3.1
-%     Poenale als Produktmerkmal neben Bindungsdauer, Reaktionszeit und
-%     Lokationalitaet aufnehmen.
-%   chapter_3.tex, Abschnitt 3.2
-%     Der Kommentarblock spricht von einer Obergrenze des
-%     Verguetungsbereichs. Auf den Reservierungspreis umstellen.
-%   chapter_3.tex, Abschnitte 3.4 und 3.6
-%     Drei Stellen bauen auf Dualvariablen der Ladezustandsbilanz auf.
-%     Diese sind aus der Methodik entfallen. Der Warnkommentar zu Pi bei
-%     Binaervariablen kann damit ebenfalls entfallen. Abschnitt 3.6 ist
-%     inhaltlich neu zu bestimmen, weil die Nachrechnung des
-%     Weber-Ansatzes keine Validierung des eigenen Modells mehr ist,
-%     sondern eine Nachrechnung des fremden Verfahrens zum Zweck der
-%     Kritik.
-%   chapter_4.tex, Abschnitt 4.3
-%     Die Gegenueberstellung mit der Verguetung nach dem modifizierten
-%     Weber-Ansatz ist als Einordnung und nicht als Vergleich mit einer
-%     geltenden Verguetung zu formulieren.
-%   chapter_4.tex, Abschnitt 4.4
-%     Poenalehoehe als Sensitivitaet aufnehmen.
-%   chapter_4.tex, Abschnitt 4.5
-%     Ueberschrift und Label sec:minimum_compensation auf den
-%     Reservierungspreis umstellen, Vorschlag sec:reservation_price.
+%   chapter_3.tex, Abschnitte 3.1, 3.2, 3.4, 3.6 und 3.7 sowie
+%   chapter_4.tex, Abschnitte 4.3, 4.4 und 4.5 sind umgestellt.
 % ===============================================================
 
 % Vorspann zwischen Kapitel- und Abschnittsueberschrift. Kapitel 2 ist
@@ -306,6 +297,12 @@ In welchem Umfang solche Zustände auftreten, ist nicht Gegenstand dieser Arbeit
 % 2.2.3 behandelt, wo das Verguetungsregime dargestellt ist. In der
 % Einleitung war es eine Nebenlinie und hat den Absatz zugespitzt, ohne
 % zur Fragestellung beizutragen.
+% EINGELOEST IN 2.1.1: Der folgende Schlusssatz kuendigt an, dass die Arbeit
+% auf diesen Befund wirkt. Abschnitt 2.1.1 haelt dazu fest, dass eine hoehere
+% zulaessige Vorauslastung den Bereich vergroessert, in dem eine spaete
+% Fahrplanaenderung ohne vorherige Disposition zulaessig bleibt. Ohne diesen
+% Satz dort wuerde die Frage allein vom kurativen Redispatch beantwortet,
+% der vom Untersuchungsgegenstand ausgenommen ist.
 % Der Schlusssatz benennt lediglich, was untersucht wird. Die Beobachtung,
 % dass dieselbe technische Eigenschaft die spaete Vermarktung und den
 % Einsatz im engsten kurativen Zeitfenster ermoeglicht, steht in
@@ -493,8 +490,12 @@ Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative
 % DUALVARIABLEN SIND ENTFALLEN. Siehe die Anschlussliste im Dateikopf.
 Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung, die für sie in Betracht kommenden Technologien und die marktlichen Rahmenbedingungen des Engpassmanagements einschließlich der Beschaffung von Regelleistung.
 Es begründet die Technologiewahl, prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt, leitet die Anforderungen an einen kurativen Marktmechanismus ab und benennt den Forschungsbedarf.
-Kapitel~\ref{ch:design_model} entwirft das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert den Speicherbetrieb als lineares Optimierungsproblem.
-Es beschreibt die verwendeten Eingangsdaten und das Referenzverfahren, gegen das die Implementierung verifiziert wird.
+% GEAENDERT: Das Modell ist gemischt-ganzzahlig, weil die kurative Zusage
+% als Binaervariable abgebildet ist. Der zweite Satz nannte frueher ein
+% Referenzverfahren, womit der modifizierte Weber-Ansatz gemeint war. Dieser
+% ist kein Bestandteil der Methodik mehr.
+Kapitel~\ref{ch:design_model} entwirft das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert den Speicherbetrieb als gemischt-ganzzahliges lineares Optimierungsproblem.
+Es beschreibt die verwendeten Eingangsdaten, begründet, weshalb sich die geltende Bemessungslogik für entgangene Erlösmöglichkeiten nicht in dieses Modell überführen lässt, und verifiziert die Implementierung gegen einen veröffentlichten Erlösindex für Batteriespeicher.
 Kapitel~\ref{ch:results} untersucht, wie sich eine kurative Vorhaltepflicht in den Betrieb eines Marktteilnehmers einfügt.
 Es stellt den Fahrplan, den Ladezustandsverlauf und die Erlöse unter Bindung dar, variiert anschließend die Produkt- und Anlagenparameter und bestimmt daraus den kurativen Reservierungspreis.
 Kapitel~\ref{ch:discussion} ordnet dieses Ergebnis in die bestehenden Vergütungslogiken für Systemdienstleistungen ein, gleicht das entworfene Produkt gegen die Anforderungen ab und würdigt die Modellannahmen kritisch.
