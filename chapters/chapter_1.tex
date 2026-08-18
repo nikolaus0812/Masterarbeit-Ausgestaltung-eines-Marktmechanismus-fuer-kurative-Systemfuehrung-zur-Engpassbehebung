@@ -49,12 +49,23 @@
 % AUSSAGEN, DIE NICHT UNBEMERKT VERSCHAERFT WERDEN DUERFEN:
 %   - Die Einleitung nimmt die Technologiewahl nicht vorweg. Sie nennt
 %     Batteriespeicher als auf den ersten Blick geeignet und verweist
-%     fuer die Pruefung auf Abschnitt 2.3.1.
+%     fuer die Pruefung auf Abschnitt 2.2.1.
 %   - Die Einleitung behauptet nicht, dass Batteriespeicher kurzfristige
 %     Engpaesse erzeugen. Siehe die Notiz vor Absatz 5 von 1.1.
 %   - Bestimmt wird der KURATIVE RESERVIERUNGSPREIS. Er ist nicht der
 %     Marktpreis und keine Obergrenze wird genannt. Siehe die Notiz vor
 %     Absatz 2 von 1.2.
+%
+% VORAUSGESETZTE GLIEDERUNG VON KAPITEL 2: Die numerischen
+% Abschnittsverweise in den Kommentaren dieser Datei setzen die Reihenfolge
+% 2.1 Kurative Systemfuehrung, 2.2 Batteriespeicher als Technologie des
+% kurativen Akteurs, 2.3 Marktliche und regulatorische Rahmenbedingungen
+% und 2.4 Anforderungen und Forschungsbedarf voraus. Betroffen sind die
+% Verweise auf 2.2.1 fuer den Technologievergleich, auf 2.3 fuer die
+% Abgrenzung der Verguetungslogiken und auf 2.3.1 fuer die Legaldefinition
+% des Selbstdispatch. Wird der Tausch von 2.2 und 2.3 nicht ausgefuehrt,
+% sind diese vier Stellen zurueckzustellen. Die \ref-Verweise im Fliesstext
+% sind davon nicht betroffen, weil sie ueber Marken laufen.
 %
 % OFFENE PUNKTE, im Text mit % OFFEN Nr. markiert:
 %   1  Berichtsjahr des Monitoringberichts fuer die 58,3 Prozent
@@ -67,10 +78,11 @@
 %   8  Zeitangabe zur letzten Netzsicherheitsrechnung
 %   9  entfallen, mit dem Bietverhalten nach chapter_2.tex verschoben
 %  10  entfallen, mit dem Bietverhalten nach chapter_2.tex verschoben
-%  11  Verfuegbarkeit von \acs im eingebundenen Akronympaket
+%  11  entfallen, die Akronyme TATL und PATL stehen nicht mehr in
+%      Kapitel 1, ihre Definition steht in Abschnitt 2.1.1
 %  12  Verbleib der Anforderungen A1 bis A6 in Kapitel 2 oder 3
-%  13  Zuordnung der kurativen Vorhaltung in der Systematik der
-%      Systemdienstleistungen
+%  13  entfallen, die Einteilung der Systemdienstleistungen ist
+%      Standardsystematik und die Zuordnung eigene Einordnung
 %  14  Fundstelle fuer den Vorrang marktbasierter Massnahmen
 %
 % ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1:
@@ -132,7 +144,7 @@ Mit dem Netzausbau und dem Zubau der Photovoltaik wird das Engpassmuster jedoch 
 Die Wirksamkeit eines Akteurs ist damit keine feste Eigenschaft seines Standorts, sondern hängt von der jeweils vorherrschenden Erzeugungssituation ab.
 
 Verstärkt wird das Missverhältnis durch die Architektur des europäischen Strommarktes.
-% OFFEN 3: Fundstelle der Legaldefinition. Abschnitt 2.2.1 zitiert
+% OFFEN 3: Fundstelle der Legaldefinition. Abschnitt 2.3.1 zitiert
 % Art. 2 Abs. 17 EBGL, diese Stelle ist entsprechend angepasst. Eine der
 % beiden Fundstellen verifizieren und in beiden Kapiteln einheitlich
 % setzen.
@@ -297,7 +309,7 @@ In welchem Umfang solche Zustände auftreten, ist nicht Gegenstand dieser Arbeit
 % Der Schlusssatz benennt lediglich, was untersucht wird. Die Beobachtung,
 % dass dieselbe technische Eigenschaft die spaete Vermarktung und den
 % Einsatz im engsten kurativen Zeitfenster ermoeglicht, steht in
-% Abschnitt 2.3.1 und muss hier nicht vorweggenommen werden.
+% Abschnitt 2.2.1 und muss hier nicht vorweggenommen werden.
 Untersucht wird jedoch, ob eine kurative Systemführung auf diesen Befund wirken kann.
 
 % ---------------------------------------------------------------
@@ -306,19 +318,20 @@ Untersucht wird jedoch, ob eine kurative Systemführung auf diesen Befund wirken
 % Der Absatz bindet an das Mengen- und Kostenproblem an. Die Wirkung der
 % kurativen Systemfuehrung auf die Kurzfristigkeit wird hier nur
 % angekuendigt und in Abschnitt 2.1.1 ausgefuehrt.
-% OFFEN 11: \acs setzt nur die Kurzform. Die vollstaendige Einfuehrung
-% von TATL und PATL erfolgt bei der SO-GL-Definition in Abschnitt 2.1.1.
-% Pruefen, ob das eingebundene Akronympaket \acs bereitstellt und ob die
-% Kurzform ohne Vollverwendung im Abkuerzungsverzeichnis erscheint.
-% Andernfalls \acused{TATL} und \acused{PATL} in der Praeambel ergaenzen.
+% GRENZE DIESES ABSATZES: Er sagt, WAS der kurative Ansatz tut, und nicht,
+% WIE er physikalisch funktioniert. Die transiente Stromtragfaehigkeit,
+% PATL und TATL sowie der Massnahmenraum gehoeren in die Abschnitte 2.1.1
+% und 2.1.2. Saetze, die den Mechanismus erklaeren oder die nutzbare
+% Uebertragungskapazitaet beziffern, gehoeren hier nicht hin.
+% KEINE AKRONYME IN DIESEM ABSATZ. Die Kuerzel TATL und PATL sind hier
+% entfernt. Die Definition beider Groessen einschliesslich der
+% Erstverwendung der Akronyme steht in Abschnitt 2.1.1.
 Die Versorgungssicherheit im operativen Betrieb der \ac{ÜNB} basiert seit den 1960er-Jahren auf präventiver Systemführung, bei der Betriebsmittel bewusst unterhalb ihrer dauerhaften physikalischen Kapazitätsgrenze betrieben werden, um durch ausreichende Sicherheitsmargen die Systemstabilität im Fehlerfall zu gewährleisten.
-Dabei bleibt eine wesentliche physikalische Reserve systematisch ungenutzt.
-Betriebsmittel besitzen eine transiente Stromtragfähigkeit (\acs{TATL}), die kurzfristig über der Dauerstrombelastbarkeit (\acs{PATL}) liegt und im Zuge einer kurativen Systemführung gezielt genutzt werden kann.
-Kurative Systemführung verfolgt den Ansatz, Engpässe nicht präventiv zu vermeiden, sondern sie nach ihrem Eintreten durch schnelle, gezielte Gegenmaßnahmen innerhalb der transienten Stromtragfähigkeit zu beheben, ohne die Betriebsmittel thermisch zu gefährden.
-Das erhöht die nutzbare Übertragungskapazität und erlaubt es, Spitzenlastengpässe unter Einbindung der verursachenden Erzeuger-, Last- und Speichereinheiten gezielt aufzulösen.
+Dabei bleibt eine wesentliche physikalische Reserve systematisch ungenutzt, denn Betriebsmittel lassen sich kurzfristig höher belasten, als im Dauerbetrieb zulässig ist.
+Die kurative Systemführung nutzt diese Reserve, indem sie Engpässe nicht im Voraus vermeidet, sondern sie nach ihrem Eintreten durch gezielte Gegenmaßnahmen behebt, und eröffnet damit ein Potenzial für eine höhere Auslastung des bestehenden Netzes.
 Der Ansatz setzt damit unmittelbar am Volumen und an den Kosten des präventiven Eingriffsbedarfs an.
 Wie er darüber hinaus auf die zunehmende Kurzfristigkeit wirkt, arbeitet Abschnitt \ref{sec:prev_vs_cur} heraus.
-Voraussetzung dafür ist allerdings ein Akteur, dessen Technologie innerhalb des \acs{TATL}-Zeitfensters zuverlässig verfügbar ist und dessen Stellpotenzial nicht durch die eigene marktliche Fahrplanbildung aufgebraucht wurde.
+Voraussetzung dafür ist allerdings ein Akteur, dessen Technologie innerhalb des dafür verbleibenden kurzen Zeitfensters zuverlässig reagiert und dessen Stellpotenzial nicht durch die eigene marktliche Fahrplanbildung aufgebraucht wurde.
 % Die Erstverwendung des Akronyms BESS liegt hier. Da das Akronympaket
 % dort die englische Langform setzt, ist die Einfuehrung ueber "im
 % Folgenden als ... bezeichnet" gefuehrt.
@@ -335,44 +348,66 @@ Als vergleichsweise neuer Akteur im Stromnetz erscheinen Batteriespeicher, im Fo
 \label{sec:research_questions}
 \label{sec:structure}
 
-% AUFBAU DES ABSATZES: Ziel, Einordnung der kurativen Vorhaltung als
-% Systemdienstleistung, Begruendung der marktlichen Beschaffung, die
-% beiden prominenten Verguetungslogiken, Verweis auf Kapitel 2.
+% AUFBAU DES ABSATZES: Ziel, Einordnung in die Betriebsfuehrung,
+% Abgrenzung gegenueber dem Redispatch, Vorrang der marktlichen
+% Beschaffung, der aus dem Selbstdispatch folgende Anreiz, die beiden
+% Verguetungslogiken mit ihrer je eigenen Beschaffungsform, offene Frage
+% nach dem Anreiz.
+% KEINE EFFIZIENZAUSSAGE HIER. Das Potenzial fuer eine hoehere Auslastung
+% steht im Ueberleitungsabsatz von 1.1 und gehoert nicht doppelt in die
+% Arbeit.
+% ZUR ABSTUFUNG: Der Satz sagt "mehrere Verguetungslogiken" und vermeidet
+% damit eine Vollstaendigkeitsbehauptung. Die frueher hier stehende
+% Ergaenzung, zwei von ihnen seien besonders prominent, ist entfernt, weil
+% "prominent" eine Wertung ist und die Stilvorgabe wertende Zuspitzungen
+% ausschliesst. Die uebrigen Bereiche der Systematik werden nicht
+% aufgezaehlt, weil ein Satz, dessen Inhalt allein eine Ausgrenzung ist,
+% hier nichts traegt.
+% KEIN KAPITELVERWEIS. Der Absatz endet mit der Frage und nicht mit einem
+% Verweis auf Kapitel 2. Der Kapiteldurchgang am Ende des Abschnitts sagt
+% ohnehin, wo sie beantwortet wird.
 %
 % ZUR EINORDNUNG: Die kurative Vorhaltung wird nicht als Sonderfall
 % neben den Systemdienstleistungen behandelt, sondern als eine von ihnen.
-% Damit lautet die Frage nicht, ob eine Uebertragung fremder Logiken
-% zulaessig ist, sondern welche der vorhandenen Logiken auf diesen Fall
-% passt. Der Absatz sagt ausdruecklich, dass es mehrere gibt und dass
-% Regelleistung und Engpassmanagement nur die prominentesten sind.
+% Sie gehoert funktional zur Betriebsfuehrung und damit in denselben
+% Bereich wie das Engpassmanagement. Die Frage lautet deshalb nicht, ob
+% eine Uebertragung fremder Logiken zulaessig ist, sondern welche der
+% vorhandenen Logiken auf diesen Fall passt.
+% ZUR EINORDNUNG, kein Beleg vorgesehen: Die Einteilung der
+% Systemdienstleistungen ist Standardsystematik des Fachs und wird hier
+% verwendet und nicht erklaert. Die Zuordnung der kurativen Vorhaltung zur
+% Betriebsfuehrung ist eigene Einordnung und keine Aussage ueber fremde
+% Arbeit. Beides braucht keine Quelle. Kein \cite an diese Stelle setzen,
+% weil eine Quelle die eigene Einordnung als fremden Befund ausgeben
+% wuerde.
+% UNANTASTBARKEIT DES REDISPATCH: Die kurative Massnahme ersetzt den
+% Redispatch nicht. Abschnitt 2.1.2 haelt fest, dass der UENB in der
+% Rueckfuehrung einen Redispatch veranlasst, um den (N-1)-sicheren Zustand
+% wiederherzustellen. Der dritte Satz kuendigt das an und darf nicht in
+% eine Ersetzungsaussage umformuliert werden.
 % Die Abgrenzung beider Logiken gegenueber der kurativen Vorhaltung ist
-% Gegenstand von Abschnitt 2.2 und wird hier nicht vorweggenommen.
+% Gegenstand von Abschnitt 2.3 und wird hier nicht vorweggenommen.
 Die vorliegende Arbeit verfolgt das Ziel, einen Marktmechanismus für die kurative Vorhaltung zu entwerfen und den kurativen Reservierungspreis zu bestimmen, den eine solche Bindung erfordert.
-% OFFEN 13: Die Zuordnung der kurativen Vorhaltung zu den
-% Systemdienstleistungen ist hier nur allgemein formuliert. Falls die
-% Arbeit die uebliche Vierteilung in Frequenzhaltung, Spannungshaltung,
-% Betriebsfuehrung und Versorgungswiederaufbau verwendet, waere die
-% Vorhaltung der Betriebsfuehrung zuzuordnen und die Systematik zu
-% zitieren. Der Beleg wuerde den folgenden Satz tragen.
-Die kurative Vorhaltung ist dabei selbst eine Systemdienstleistung, weil sie dem \ac{ÜNB} eine für den sicheren Netzbetrieb erforderliche Fähigkeit bereitstellt.
+Die kurative Vorhaltung ist dabei selbst eine Systemdienstleistung und innerhalb der üblichen Einteilung der Betriebsführung zuzuordnen, zu der auch das Engpassmanagement zählt.
+Den Redispatch ersetzt sie nicht, sondern ergänzt ihn um einen Eingriff nach dem Eintritt des Fehlerfalles.
 % ABGESCHWAECHT: Die frueher hier stehende Formulierung, die Beschaffung
 % muesse marktlich erfolgen, war zu stark. Eine marktliche Beschaffung ist
 % vorrangig und erwuenscht, aber keine Pflicht. Der Zweck ist der
 % kostenoptimale Betrieb des Systems.
 % OFFEN 14: Fundstelle fuer den Vorrang marktbasierter Massnahmen
-% praezisieren. Abschnitt 2.1.2 nennt dafuer die Verordnung ueber den
+% praezisieren. Abschnitt 2.1.3 nennt dafuer die Verordnung ueber den
 % Elektrizitaetsbinnenmarkt.
 Für ihre Beschaffung ist die marktliche Form vorrangig, weil sie den kostenoptimalen Betrieb des Systems unterstützt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-Im Selbstdispatch-Modell liegt zudem die Fahrplanhoheit beim Anlagenbetreiber, sodass sich kurative Verfügbarkeit über einen Anreiz und nicht über eine Anordnung herstellen lässt.
-Für Systemdienstleistungen bestehen bereits mehrere Vergütungslogiken, von denen zwei besonders prominent sind.
-Die Regelleistungsmärkte beschaffen vorgehaltene Leistung im Wettbewerb und vergüten damit die Bereitstellung und nicht allein den Abruf \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Das Engpassmanagement folgt demgegenüber der Systematik des §\,13a \ac{EnWG}, die den durchgeführten Eingriff entschädigt \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
-Welche dieser Logiken auf die kurative Vorhaltung passt, untersucht Kapitel~\ref{ch:state_of_the_art} und leitet daraus in Abschnitt \ref{sec:research_gap} den Forschungsbedarf her.
+Da der Anlagenbetreiber im Selbstdispatch-Modell über den Dispatch seiner Anlage entscheidet, lässt sich kurative Verfügbarkeit über einen Anreiz setzen.
+Dieser Anreiz muss aus einer Vergütung folgen, und innerhalb der Systemdienstleistungen bestehen dafür mehrere Vergütungslogiken.
+Die Frequenzhaltung wird über die Regelleistungsmärkte beschafft, die vorgehaltene Leistung im Wettbewerb kaufen und damit die Bereitstellung und nicht allein den Abruf vergüten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Das Engpassmanagement folgt demgegenüber keiner Beschaffungslogik, denn der Redispatch wird nach §\,13a \ac{EnWG} angeordnet und über einen finanziellen Ausgleich für den durchgeführten Eingriff entschädigt \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
+Ob eine dieser beiden Logiken den erforderlichen Anreiz für die kurative Vorhaltung setzt, ist damit zu klären.
 
 % Die Leitfrage steht nur im Zielsatz des vorangehenden Absatzes. Dieser
 % Absatz fuehrt den gesuchten Bereich aus und nennt die Teilfragen. Ein
 % Bezug auf Batteriespeicher fehlt bewusst, weil die Technologiewahl erst
-% in Abschnitt 2.3 begruendet wird.
+% in Abschnitt 2.2 begruendet wird.
 Der Betrachtungsrahmen ist ein 2030-Szenario mit hohem Anteil erneuerbarer Energien, fortbestehenden Netzausbaurückständen und deutlich gestiegener installierter Speicherkapazität.
 Gerechnet wird gleichwohl mit Preiszeitreihen der jüngeren Vergangenheit.
 Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Ergebnis mit einer zweiten Unsicherheit belasten, während beobachtete Preise nachvollziehbar sind und die für das Szenario maßgebliche Volatilität bereits aufweisen.
@@ -415,6 +450,12 @@ Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Er
 %     Nichtlieferung, Liquiditaet und Zahl der geeigneten Anbieter am
 %     Knoten bestimmen, welcher Preis sich tatsaechlich einstellt. Diese
 %     Groessen werden nicht modelliert.
+% WICHTIG: Der Satz sagt nicht mehr ausdruecklich, dass der Marktpreis
+% nicht bestimmt werden kann. Er nennt nur die zusaetzlich wirkenden
+% Groessen. Die Abgrenzung des Untersuchungsgegenstands muss deshalb in
+% Abschnitt 3.2 stehen, wo festgehalten ist, dass weder ein
+% Bietwettbewerb noch die netzweite Beschaffungsmenge modelliert wird.
+% Faellt sie dort weg, ist die Einschraenkung nirgends mehr ausgesprochen.
 %
 % KEINE EINORDNUNG AN DIESER STELLE. Der Vergleich mit den bestehenden
 % Regelungen und die Bewertung erfolgen in Kapitel 5. Die dritte
@@ -436,8 +477,7 @@ Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Er
 % NACHZUTRAGEN: siehe die Anschlussliste im Dateikopf.
 Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Bindung mindestens fordern muss, um gegenüber seinen übrigen Vermarktungswegen indifferent zu sein.
 Er bemisst die entgangenen Erlösmöglichkeiten und ist damit eine Eigenschaft der Anlage und ihres Umfelds.
-Wie hoch er ausfällt, folgt aus der Ausgestaltung des Produkts, also aus der Bindungsdauer, der geforderten Reaktionszeit und der vorzuhaltenden Leistung.
-Welcher Preis sich am Markt einstellt, lässt sich damit nicht bestimmen, denn darauf wirken zusätzlich die Präqualifikationsanforderungen, die Pönale bei Nichtlieferung, die Liquidität am jeweiligen Netzknoten und die Zahl der dort geeigneten Anbieter.
+Wie hoch er ausfällt, folgt aus der Ausgestaltung des Produkts, also aus der Bindungsdauer, der geforderten Reaktionszeit und der vorzuhaltenden Leistung, während auf den Preis, der sich am Markt einstellt, zusätzlich die Präqualifikationsanforderungen, die Pönale bei Nichtlieferung, die Liquidität am jeweiligen Netzknoten und die Zahl der dort geeigneten Anbieter wirken.
 Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Vorhalteverpflichtung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
 
 % Der Kapiteldurchgang traegt zugleich die methodische Vorgehensweise.
@@ -451,12 +491,8 @@ Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative
 % Bezugspunkt erhalten, ist aber nicht die Aussage des Kapitels.
 %
 % DUALVARIABLEN SIND ENTFALLEN. Siehe die Anschlussliste im Dateikopf.
-% NACHZUTRAGEN IN KAPITEL 2, siehe den Kommentar am Ende dieser Datei:
-% Die Regelleistung fehlt dort bislang als eigenstaendige
-% Systemdienstleistung. Der folgende Satz kuendigt sie an und ist erst
-% eingelöst, wenn Abschnitt 2.2 einen entsprechenden Unterabschnitt hat.
-Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung, die marktlichen Rahmenbedingungen des Engpassmanagements und die Beschaffung von Regelleistung.
-Es prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt, begründet die Technologiewahl, leitet die Anforderungen an einen kurativen Marktmechanismus ab und benennt den Forschungsbedarf.
+Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung, die für sie in Betracht kommenden Technologien und die marktlichen Rahmenbedingungen des Engpassmanagements einschließlich der Beschaffung von Regelleistung.
+Es begründet die Technologiewahl, prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt, leitet die Anforderungen an einen kurativen Marktmechanismus ab und benennt den Forschungsbedarf.
 Kapitel~\ref{ch:design_model} entwirft das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert den Speicherbetrieb als lineares Optimierungsproblem.
 Es beschreibt die verwendeten Eingangsdaten und das Referenzverfahren, gegen das die Implementierung verifiziert wird.
 Kapitel~\ref{ch:results} untersucht, wie sich eine kurative Vorhaltepflicht in den Betrieb eines Marktteilnehmers einfügt.
