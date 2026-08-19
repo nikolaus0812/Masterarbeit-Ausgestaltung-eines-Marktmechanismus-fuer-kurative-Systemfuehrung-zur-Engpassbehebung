@@ -1,4 +1,5 @@
 # LaTeX-Build-Artefakte
+*.claude
 *.aux
 *.bbl
 *.bcf

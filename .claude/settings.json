@@ -6,7 +6,42 @@
       "Read(//c/Program Files/**)",
       "Read(//c/Windows/Fonts//**)",
       "Read(//c/texlive/**)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(grep -nP '\\\\\\\\includegraphics|framebox|\\\\\\\\label\\\\{fig:' chapters/*.tex)",
+      "Bash(export LC_ALL=C.UTF-8)",
+      "Bash(grep -nP '\\\\\\\\includegraphics\\\\[[^]]*\\(width|scale\\)' chapter_*.tex)",
+      "Bash(grep -hoP '\\\\\\\\includegraphics\\(\\\\[[^]]*\\\\]\\)?\\\\{\\\\K[^}]+' chapter_*.tex)",
+      "Bash(read f *)",
+      "Bash([ -e \"../$f\" ])",
+      "Bash(grep -nP '^\\\\s*%\\\\s*\\\\\\\\includegraphics' chapter_*.tex)",
+      "Bash(python \"C:\\\\Users\\\\nikol\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--GIT-HUB-Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung\\\\8583d59d-d4e3-4cef-8f95-f5112bb4ec72\\\\scratchpad\\\\refcheck.py\" .)",
+      "Bash(pdflatex -interaction=nonstopmode -halt-on-error main.tex)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(python \"C:\\\\Users\\\\nikol\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--GIT-HUB-Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung\\\\8583d59d-d4e3-4cef-8f95-f5112bb4ec72\\\\scratchpad\\\\pdfsize.py\" engpassmanagement_nep.pdf pruefabbildung.pdf redispatch_jahresbedarf_2020_2025.pdf tatl_berechnung.pdf)",
+      "Bash(python -c \"import pypdf; print\\('pypdf ok'\\)\")",
+      "Bash(python -c \"import fitz; print\\('pymupdf ok'\\)\")",
+      "Bash(PYTHONIOENCODING=utf-8 python -c ' *)",
+      "Bash(cp C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/engpassmanagement_nep.pdf c:/GIT-HUB/Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung/figures/chapter_1/engpassmanagement_nep.pdf)",
+      "Bash(cp C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/redispatch_jahresbedarf_2020_2025.pdf c:/GIT-HUB/Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung/figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf)",
+      "Bash(cp C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/tatl_berechnung.pdf c:/GIT-HUB/Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung/figures/chapter_2/tatl_berechnung.pdf)",
+      "Bash(grep -n '^[[:space:]]*%[[:space:]]*\\\\\\\\\\\\\\\\includegraphics' chapter_*.tex)",
+      "Bash(echo \"biber=$?\")",
+      "Bash(echo \"pdflatex=$?\")",
+      "Bash(cd \"c:\\\\GIT-HUB\\\\Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung\" && git show origin/main:chapters/chapter_2.tex > /tmp/ch2_new.tex && grep -n \"OFFENE PUNKTE\" /tmp/ch2_new.tex && sed -n '/OFFENE PUNKTE, gesammelt/,/^% ANSCHLUESSE\\\\|^% ===/p' /tmp/ch2_new.tex | grep -nE '^%\\\\s+[0-9]+\\\\s' | tail -20)",
+      "Bash(grep -nE '\\\\\\\\label\\\\{fig:|\\\\\\\\includegraphics|framebox|\\\\\\\\section\\\\{|\\\\\\\\subsection\\\\{' /tmp/ch2_new.tex)",
+      "Bash(grep -E 'label\\\\{fig:|includegraphics|framebox|\\\\\\\\section\\\\{')",
+      "Bash(git pull *)",
+      "Bash(echo \"--- exit=$? ---\")",
+      "Bash(git stash *)",
+      "Bash(git rebase *)",
+      "Bash(latexmk -pdf -interaction=nonstopmode main.tex)",
+      "Bash(echo \"latexmk=$?\")",
+      "Bash(cp C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/markt_zeitschiene.pdf C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/weber_optionswert.pdf c:/GIT-HUB/Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung/figures/chapter_2/)",
+      "Bash(grep -nE '^\\\\\\\\\\(sub\\)?section\\\\{|^\\\\\\\\label\\\\{sec:' chapters/chapter_2.tex)",
+      "Bash(grep -nE \"^! |LaTeX Warning: \\(Reference|Citation\\)|Overfull \\\\\\\\\\\\\\\\hbox\" main.log)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
     ]
   }
 }
