@@ -870,7 +870,9 @@ Terminmarkt und \ac{OTC}-Handel bleiben im Folgenden unberücksichtigt.
 Der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei, während der \ac{OTC}-Handel wegen bilateraler Preisbildung nicht mit der erforderlichen Transparenz beobachtbar ist.
 Abbildung \ref{fig:markt_zeitschiene} stellt die Staffelung dieser Handelsgelegenheiten gemeinsam mit den Ausschreibungszeitpunkten der Regelleistung und den Stufen der Betriebsplanung auf einer gemeinsamen Zeitachse dar.
 
-% OFFEN 25: Zeitschiene der Maerkte. Die Abbildung soll auf einer
+% SPEZIFIKATION der Zeitschiene der Maerkte. Sie bleibt als Grundlage
+% spaeterer Aenderungen stehen, die Abbildung ist eingebunden.
+% Die Abbildung soll auf einer
 % gemeinsamen Zeitachse vom Vortag bis zum Erfuellungszeitpunkt vier
 % Spuren zeigen, naemlich die Spotmaerkte mit Day-Ahead-Auktion, IDA-1
 % bis IDA-3, kontinuierlichem Intraday-Handel und Gate Closure, die
@@ -885,12 +887,17 @@ Abbildung \ref{fig:markt_zeitschiene} stellt die Staffelung dieser Handelsgelege
 % sie gezeichnet werden.
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=1.0\textwidth]{figures/chapter_2/markt_zeitschiene.pdf}
-    \framebox[\textwidth]{\rule{0pt}{5cm}\textsf{[PLATZHALTER Abbildung, Zeitschiene der Märkte]}}
+    \includegraphics{figures/chapter_2/markt_zeitschiene.pdf}
     \caption{Zeitliche Staffelung der Handelsgelegenheiten, der Regelleistungsbeschaffung und der Betriebsplanung bis zum Erfüllungszeitpunkt. Eigene Darstellung.}
     \label{fig:markt_zeitschiene}
 \end{figure}
 
+Die obere Achse der Abbildung führt drei Stränge zusammen.
+Sie zeigt die Ausschreibungen der Regelleistung am Vortag, die mit der Primärregelleistung um 8 Uhr beginnen und mit der Minutenreserve um 10 Uhr enden, danach die Day-Ahead-Auktion um 12 Uhr sowie die drei Intraday-Auktionen, von denen die ersten beiden am Vortag und die dritte am Morgen des Liefertages stattfinden.
+Der kontinuierliche Intraday-Handel setzt mit der ersten Intraday-Auktion ein und läuft bis zum Erfüllungszeitpunkt durch.
+Darüber liegen die Rechenläufe des \ac{ÜNB}, also die Lastflussrechnungen für den Vortag und den Liefertag sowie die daran anschließenden Redispatchläufe.
+Der vergrößerte Ausschnitt löst die letzte Stunde vor Lieferbeginn auf, in der die Netzsicherheitsrechnung mindestens alle 15 Minuten wiederholt wird und die Handelsschlusszeitpunkte gestaffelt eintreten, nämlich 60 Minuten vor Lieferbeginn für den grenzüberschreitenden Handel, 30 Minuten davor für den deutschlandweiten Handel und 5 Minuten davor für den regelzoneninternen Handel.
+Genau dieser Ausschnitt trägt die für die Arbeit entscheidende Aussage, denn zwischen der letzten Netzsicherheitsrechnung, auf der eine Maßnahmenplanung beruhen kann, und dem Lieferbeginn bleibt ein Handelsfenster offen, in dem der Fahrplan noch verändert werden darf.
 Diese Staffelung ist der Grund, weshalb kurative Stellpotenziale nicht ohne Weiteres in der Vortagsplanung fixiert werden können, wie in Abschnitt \ref{sec:prev_vs_cur} angekündigt.
 Zwischen dem Zeitpunkt, zu dem der \ac{ÜNB} eine kurative Maßnahme plant, und dem Zeitpunkt ihrer möglichen Aktivierung liegen mehrere Handelsgelegenheiten, in denen der Anlagenbetreiber seinen Fahrplan legitim und ohne Mitteilungspflicht gegenüber dem \ac{ÜNB} ändern kann.
 Eine kurative Zusage ist daher nur belastbar, wenn sie den Anlagenbetreiber über alle dazwischenliegenden Handelsgelegenheiten hinweg bindet.
@@ -1086,9 +1093,39 @@ Deren Grundgedanke besteht darin, die Vermarktungsmöglichkeit einer flexiblen A
 Eine flexible Erzeugungseinheit besitzt das Recht, aber nicht die Pflicht, in einem gegebenen Zeitintervall einzuspeisen, und sie wird dies nur tun, wenn der erzielbare Marktpreis ihre variablen Erzeugungskosten übersteigt.
 Ökonomisch entspricht das einer Call-Option auf den Strompreis mit den variablen Erzeugungskosten als Basispreis, und die Vermarktungsmöglichkeit einer Anlage über einen Tag ist demnach eine Sequenz solcher Optionen.
 Wird die Anlage durch eine Anweisung des \ac{ÜNB} an der Ausübung gehindert, entspricht der entgangene Erlös dem Wert der verlorenen Option.
-Bei Speichern tritt zur Ausspeiseseite die Einspeiseseite hinzu, deren Vermarktungsmöglichkeit spiegelbildlich als Put-Option zu bewerten ist.
+Welche Optionsart dabei einschlägig ist, hängt nicht von der Betriebsart allein ab, sondern davon, ob die betroffene Optionalität zum Zeitpunkt der Anordnung bereits genutzt war.
+Für das thermische Kraftwerk unterscheidet das Gutachten zwei Fälle \cite[Abschnitt\,3.2]{weber_gutachten_2015}.
+War die Leistung noch nicht vermarktet und soll die Anlage nun einspeisen, verliert der Betreiber eine ungenutzte Erzeugungsoption, was einer Call-Option entspricht, und die Vergütung hat neben dem Optionswert die Aufwendungen in Höhe des Basispreises zu erstatten.
+War die Leistung dagegen bereits verkauft und soll die Anlage nun zurückfahren, verliert der Betreiber die Möglichkeit des günstigeren Rückkaufs, was einer Put-Option entspricht, wobei die eingesparten Aufwendungen gegenzurechnen sind.
+Bei Speichern tritt zur Ausspeiseseite die Einspeiseseite hinzu, und beide Seiten tragen jeweils beide Optionsarten \cite[Abschnitt\,3.3]{weber_gutachten_2015}.
+Eine ungenutzte Turbinenoptionalität ist eine Call-Option und eine bereits genutzte eine Put-Option, während sich das Verhältnis auf der Pumpseite umkehrt, weil dort die ungenutzte Optionalität eine Put-Option und die genutzte eine Call-Option ist.
+Ordnet man diese vier Fälle der Richtung des Eingriffs zu, ergibt sich eine einfache Regel, denn ein positiver Redispatch entwertet stets eine Call-Option und ein negativer Redispatch stets eine Put-Option.
+Der Unterschied zwischen den Betriebsarten liegt dann allein im Basispreis, der auf der Turbinenseite der obere und auf der Pumpseite der untere Grenzpreis ist.
+Tabelle~\ref{tab:weber_optionsfaelle} stellt diese Zuordnung zusammen.
 Der Optionswert setzt sich dabei aus dem inneren Wert und dem Zeitwert zusammen, wobei der innere Wert die bereits realisierte Differenz zwischen Marktpreis und Basispreis erfasst und der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung bis zum Erfüllungszeitpunkt.
 Als modifiziert wird der Ansatz bezeichnet, weil er anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen unterstellt, was erforderlich ist, da Strompreise negative Werte annehmen können \cite[Abschnitt\,3.1]{weber_gutachten_2015}.
+
+% Die Werte der letzten Spalte stammen unveraendert aus Anlage 5. Die
+% beiden Nullen bedeuten nicht, dass die Option wertlos waere, sondern
+% dass der Fall im Beispiel nicht auftritt, weil dort beide
+% Optionalitaeten ungenutzt sind. Die Legende sagt das ausdruecklich,
+% damit die Spalte nicht als Moneyness missverstanden wird.
+\begin{table}[htbp]
+    \centering
+    \caption{Zuordnung von Betriebsart und Eingriffsrichtung zu Optionsart und Basispreis im modifizierten Weber-Ansatz mit den Werten des Berechnungsbeispiels für ein Pumpspeicherkraftwerk. Darstellung nach \cite{weber_gutachten_2015} und \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
+    \label{tab:weber_optionsfaelle}
+    \small
+    \begin{tabular}{p{2.5cm}p{5.4cm}p{5.4cm}}
+        \hline
+         & \textbf{Positiver Redispatch} & \textbf{Negativer Redispatch} \\
+        \hline
+        \textbf{Turbinen\-betrieb} & Ungenutzte Turbinenoptionalität, bewertet als Call auf den oberen Grenzpreis von 99,97\,\si{\text{\euro}\per MWh}. Im Beispiel 0,36915\,\si{\text{\euro}\per MW}. & Genutzte Turbinenoptionalität, bewertet als Put auf denselben Grenzpreis. Im Beispiel nicht einschlägig. \\[0.6ex]
+        \textbf{Pumpbetrieb} & Genutzte Pumpoptionalität, bewertet als Call auf den unteren Grenzpreis von 56,93\,\si{\text{\euro}\per MWh}. Im Beispiel nicht einschlägig. & Ungenutzte Pumpoptionalität, bewertet als Put auf denselben Grenzpreis. Im Beispiel 0,57296\,\si{\text{\euro}\per MW}. \\
+        \hline
+        \multicolumn{3}{p{13.6cm}}{\footnotesize Im Berechnungsbeispiel sind beide Optionalitäten ungenutzt, weshalb nur die Call-Option der Turbinenseite und die Put-Option der Pumpseite anfallen. Bei einer gesperrten Leistung von 200\,MW auf der Turbinenseite und 180\,MW auf der Pumpseite ergeben sich daraus 73,83\,\text{\euro} und 103,13\,\text{\euro} und damit ein Gesamtbetrag von 176,96\,\text{\euro} für die Viertelstunde von 13 bis 13:15 Uhr.} \\
+        \hline
+    \end{tabular}
+\end{table}
 
 Die praktische Anwendung konkretisieren Kapitel 8.7 des Branchenleitfadens \cite{bdew_branchenleitfaden_2018} sowie die geltende Festlegung und deren Anlagen \cite{bundesnetzagentur_festlegung_2024, bundesnetzagentur_anlage1_2024}.
 Die Bewertung erfolgt über eine geschlossene Formel, deren Eingangsgrößen der Basispreis, der erwartete Preis, die Restlaufzeit bis zum Erfüllungszeitpunkt und ein Volatilitätsmaß sind.
@@ -1110,9 +1147,21 @@ Als erwarteter Preis dient der Preis der letzten vor dem Eingriff verfügbaren H
 % unterscheidet drei Verfahren nach dem Zeitpunkt der Anordnung.
 Das Gutachten unterscheidet dabei drei Fälle nach dem Zeitpunkt der Anordnung, nämlich die Anordnung nach der Intraday-Eröffnungsauktion, die Anordnung nach der Day-Ahead-Auktion aber vor der Eröffnungsauktion und die Anordnung vor der Day-Ahead-Auktion, für die jeweils eine andere Preisreferenz herangezogen wird \cite[Abschnitte\,4.1 bis 4.3]{weber_gutachten_2015}.
 Im zweiten Fall tritt zum Optionswert der innere Wert hinzu, der aus den systematischen Differenzen zwischen Viertelstunden- und Stundenpreisen folgt \cite[Abschnitt\,5.3]{weber_gutachten_2015}.
-Abbildung \ref{fig:weber_optionswert} veranschaulicht das Zusammenwirken dieser Eingangsgrößen.
+Abbildung \ref{fig:weber_optionswert} veranschaulicht das Zusammenwirken dieser Eingangsgrößen anhand des Berechnungsbeispiels.
+Teilbild a zeigt die nach dem Preis geordneten Viertelstunden des Tages und daran die Herleitung der beiden Grenzpreise, denn oberhalb des oberen Grenzpreises liegen die 16 Viertelstunden, in denen sich die Ausspeisung lohnt, und unterhalb des unteren Grenzpreises die 20 Viertelstunden, in denen sich die Einspeisung lohnt.
+Die hervorgehobene Viertelstunde von 13 bis 13:15 Uhr liegt mit einem erwarteten Preis von 75,93\,\si{\text{\euro}\per MWh} zwischen beiden Grenzpreisen, sodass in ihr keine der beiden Richtungen unmittelbar wirtschaftlich ist.
+Teilbild b trägt über dem erwarteten Preis den Wert beider Optionen auf, wobei die gestrichelten Geraden den inneren Wert und die durchgezogenen Kurven den gesamten Optionswert zeigen, sodass ihr senkrechter Abstand den Zeitwert bildet.
+An der hervorgehobenen Viertelstunde ist der innere Wert beider Optionen null, weil der erwartete Preis zwischen den Grenzpreisen liegt, und der gesamte Anspruch besteht dort aus Zeitwert.
+Er beträgt 1,48\,\si{\text{\euro}\per MWh} auf der Ausspeiseseite und 2,29\,\si{\text{\euro}\per MWh} auf der Einspeiseseite.
+Dass die Einspeiseseite den höheren Wert trägt, folgt allein aus der Lage des erwarteten Preises, dessen Abstand zum unteren Grenzpreis mit 19,00\,\si{\text{\euro}\per MWh} kleiner ist als der Abstand von 24,04\,\si{\text{\euro}\per MWh} zum oberen.
+Je näher der erwartete Preis an einem Grenzpreis liegt, desto wahrscheinlicher wird die Ausübung und desto höher ist der Zeitwert.
 
-% OFFEN 27: Schema des Optionswerts. Die Abbildung soll die
+% SPEZIFIKATION des Schemas des Optionswerts. Sie bleibt als Grundlage
+% spaeterer Aenderungen stehen, die Abbildung ist eingebunden. Das zweite
+% Teilbild zur Restlaufzeit ist nicht aufgenommen worden, stattdessen
+% zeigt Teilbild a die Preisdauerlinie, aus der die beiden Grenzpreise
+% hervorgehen.
+% Die Abbildung soll die
 % Bewertungslogik fuer ein einzelnes Viertelstundenintervall zeigen,
 % naemlich auf der Abszisse den Preis und auf der Ordinate den Wert, mit
 % dem Grenzpreis als Basispreis, dem Preis der letzten
@@ -1128,9 +1177,8 @@ Abbildung \ref{fig:weber_optionswert} veranschaulicht das Zusammenwirken dieser 
 % deshalb als Darstellung nach der Quelle zu kennzeichnen.
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=1.0\textwidth]{figures/chapter_2/weber_optionswert.pdf}
-    \framebox[\textwidth]{\rule{0pt}{5.5cm}\textsf{[PLATZHALTER Abbildung, Optionswertschema des modifizierten Weber-Ansatzes]}}
-    \caption{Bewertungslogik des modifizierten Weber-Ansatzes für ein Viertelstundenintervall mit Grenzpreis, erwartetem Preis, innerem Wert und Zeitwert. Eigene Darstellung nach \cite{weber_gutachten_2015}.}
+    \includegraphics{figures/chapter_2/weber_optionswert.pdf}
+    \caption{Bewertungslogik des modifizierten Weber-Ansatzes am Berechnungsbeispiel für ein Pumpspeicherkraftwerk. Teilbild a zeigt die Herleitung der beiden Grenzpreise aus der Preisdauerlinie des Tages, Teilbild b den Optionswert beider Richtungen in Abhängigkeit vom erwarteten Preis. Eigene Darstellung nach \cite{weber_gutachten_2015} und \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
     \label{fig:weber_optionswert}
 \end{figure}
 
@@ -1408,12 +1456,17 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %  23  Unterscheidung zwischen kurativer Hoeherauslastung und kurativem
 %      Redispatch gegen InnoSys 2030 belegen
 %  24  erledigt, sec:regulatory_discussion ist in chapter_5.tex gesetzt
-%  25  Abbildung Zeitschiene der Maerkte zeichnen, Platzhalter in 2.3.1
+%  25  erledigt, die Zeitschiene der Maerkte ist in 2.3.1 eingebunden und
+%      im Text beschrieben. Die Zeitpunkte sind noch gegen die
+%      Ausschreibungsbedingungen und die Marktregeln zu verifizieren,
+%      siehe Punkt 46
 %  26  Tabelle zur Zweiteilung der aFRR-Verguetung fuellen, Platzhalter in
 %      2.3.2, und entscheiden, ob Tabelle oder Abbildung
-%  27  Abbildung Optionswertschema zeichnen, Platzhalter in 2.3.4, und
-%      entscheiden, ob ein zweites Teilbild zur Restlaufzeit aufgenommen
-%      wird
+%  27  erledigt, das Optionswertschema ist in 2.3.4 eingebunden und im Text
+%      beschrieben. Entschieden ist gegen ein Teilbild zur Restlaufzeit.
+%      Teilbild a zeigt stattdessen die Preisdauerlinie, aus der die
+%      beiden Grenzpreise hervorgehen, weil ihre Herleitung sonst
+%      unbelegt bliebe
 %  28  Zusammenfallen von Preisspreizung und Engpassauftreten in Kapitel 4
 %      beantworten, offene Frage am Ende von 2.2.3
 %  29  Absatz- und Nummernzaehlung der PATL- und TATL-Fundstelle in
@@ -1458,6 +1511,23 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      etwa 0,7, damit beide Teilbilder lesbar bleiben. Entscheiden, ob
 %      die flachere Fassung bleibt oder im Repository
 %      bess_dispatch_optimization nachgesteuert wird
+%  46  Die Zeitpunkte in Abbildung 2.4 sind gegen die
+%      Ausschreibungsbedingungen der Regelleistung und gegen die
+%      Marktregeln der Boerse zu verifizieren, bevor die Arbeit abgegeben
+%      wird. Betroffen sind die drei Ausschreibungszeitpunkte am Vortag,
+%      die Zeitpunkte der drei Intraday-Auktionen und die vier
+%      Handelsschlusszeitpunkte im vergroesserten Ausschnitt
+%  47  Die Fussnote in Abbildung 2.5 nennt 73,85, 103,15 und 177,00 Euro.
+%      Anlage 5 weist 73,83, 103,13 und 176,96 Euro aus. Die Abbildung
+%      rechnet exakt, die Anlage rundet die Optionswerte je MW auf fuenf
+%      Nachkommastellen und rechnet damit weiter. Text und Tabelle 2.4
+%      tragen die Werte der Anlage, weil die Quelle massgeblich ist. Die
+%      Abweichung betraegt 0,02 Prozent. Zu entscheiden ist, ob die
+%      Abbildung im Repository bess_dispatch_optimization auf die Werte
+%      der Anlage umgestellt wird. Zugleich traegt die Ordinate von
+%      Teilbild b die Einheit Euro je MW und Stunde, waehrend der Text
+%      Euro je MWh schreibt. Beides ist dasselbe, die Schreibweise sollte
+%      aber einheitlich sein
 %
 % ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1
 % uebernommen:
