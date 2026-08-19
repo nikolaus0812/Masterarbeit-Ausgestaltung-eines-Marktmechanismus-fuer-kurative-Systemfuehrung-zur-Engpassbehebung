@@ -80,6 +80,12 @@
 %  13  entfallen, die Einteilung der Systemdienstleistungen ist
 %      Standardsystematik und die Zuordnung eigene Einordnung
 %  14  Fundstelle fuer den Vorrang marktbasierter Massnahmen
+%  15  erledigt. Beide Abbildungen sind mit der korrigierten Konstante neu
+%      erzeugt, also auf 6,29921 Zoll statt auf 455,244 big points. Sie
+%      messen jetzt 455,244 TeX-pt und damit genau den Satzspiegel. Die
+%      Angabe width=\textwidth ist in beiden \includegraphics entfallen,
+%      LaTeX skaliert nicht mehr. Wer die Dateien ersetzt, prueft die
+%      Naturbreite, bevor er die Angabe wieder einfuegt
 %
 % ENTSCHEIDUNGEN VOM 18.08.2026, verbindlich fuer alle Kapitel:
 %   1  Der Tausch von 2.2 und 2.3 ist ausgefuehrt.
@@ -207,7 +213,7 @@ Ursache dieses Ausreißers war eine ausgeprägte Windfront im Dezember 2024 \cit
 % erkennen laesst. Falls nicht, genuegt ein Zusatz in der Caption.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
+    \includegraphics{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
     \caption{Jährliches Maßnahmenvolumen des Netzengpassmanagements der Jahre 2020 bis 2025, aufgeteilt nach hoch- und heruntergeregelter Energie. Eigene Darstellung auf Basis von \cite{bundesnetzagentur_mengen_nodate}.}
     \label{fig:redispatch_jahresbedarf}
 \end{figure}
@@ -252,7 +258,7 @@ Das Entlastungspotenzial der kurativen Systemführung schätzt diese Arbeit nich
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
+    \includegraphics{figures/chapter_1/engpassmanagement_nep.pdf}
     \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Eigene Darstellung auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
     \label{fig:engpassmanagement_nep}
 \end{figure}

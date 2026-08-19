@@ -1,5 +1,20 @@
 """Diagramme fuer Kapitel 1 erzeugen: Querformat, Dokumenttypografie.
 
+NICHT AUSFUEHREN. Dieses Skript wandert vollstaendig in das Repository
+bess_dispatch_optimization, weil die Nachbearbeitung zur Erzeugung und nicht
+zur Schriftfassung gehoert. Bis zum Umzug bleibt es unveraendert liegen.
+
+Der Grund fuer die Sperre steht in TEXTWIDTH_PT weiter unten. Der Wert
+455,24411 wird dort mit 72 statt mit 72,27 in Zoll umgerechnet, das Skript
+zielt also auf big points statt auf TeX-Punkte. Ein Lauf schreibt die
+Abbildungen mit diesem alten Punktmass neu und macht sie wieder 0,37 Prozent
+zu breit. Die Zielbreite ist 6,29921 Zoll.
+
+Nach dem Umzug ersetzt die dortige Loesung dieses Skript. Jedes Analyseskript
+erhaelt eine standardmaessig leere Variable fuer ein optionales
+Zielverzeichnis. Ist sie gesetzt, legt das Skript die Datei zusaetzlich im
+Kapitelordner dieser Schriftfassung ab.
+
 Die Diagramme entstehen in bess_dispatch_optimization mit
 analysen/helpers/praesentation_plots.py. Dort sind sie auf Folien
 ausgelegt: halbe Folienbreite, Grundschriftgroesse 14, Legende einspaltig

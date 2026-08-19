@@ -60,9 +60,9 @@ PT_TEXT = 9.95
 # Unterschiedlich, weil die Abbildungen verschieden breit sind und damit
 # verschieden stark auf \textwidth verkleinert werden.
 PT_PER_UNIT = {"curative_process": 10.70 / 18,
-               "preventiv_vs._curative_redispatch": 9.69 / 17.2}
-BASE_FONT = {"curative_process": 12, "preventiv_vs._curative_redispatch": 14}
-VSCALE = {"curative_process": 1.85, "preventiv_vs._curative_redispatch": 1.2}
+               "preventiv_vs_curative_redispatch": 9.69 / 17.2}
+BASE_FONT = {"curative_process": 12, "preventiv_vs_curative_redispatch": 14}
+VSCALE = {"curative_process": 1.85, "preventiv_vs_curative_redispatch": 1.2}
 
 SANS = "TeX Gyre Heros"
 
@@ -280,7 +280,7 @@ def restyle(name: str, *, widen: bool = False, belastung: bool = False) -> None:
 
 def main() -> int:
     restyle("curative_process", widen=True)
-    restyle("preventiv_vs._curative_redispatch", belastung=True)
+    restyle("preventiv_vs_curative_redispatch", belastung=True)
     return 0
 
 

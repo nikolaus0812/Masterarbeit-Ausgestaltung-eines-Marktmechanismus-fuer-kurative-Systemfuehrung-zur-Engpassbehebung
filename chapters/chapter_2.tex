@@ -184,13 +184,11 @@ Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Untersch
 Im präventiven Betrieb wird die Auslastung stets unterhalb der \ac{PATL} gehalten, sodass auch im \mbox{(N-1)-Fall} keine Grenzwertverletzung auftritt.
 Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur \ac{PATL} im Normalbetrieb, nutzt nach Eintreten des Fehlerfalles das durch die \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine gezielte Gegenmaßnahme, bevor die transiente Stromtragfähigkeit überschritten wird.
 
-% OFFEN 1: Der Dateiname enthaelt einen Punkt vor der Extension. Der
-% Graphics-Treiber bestimmt die Extension anhand des letzten Punktes, was
-% bei manchen Konfigurationen fehlschlaegt. Datei nach
-% preventiv_vs_curative_redispatch.pdf umbenennen und den Pfad anpassen.
+% BREITENANGABE: Sie bleibt, solange die Naturbreite der Datei bei 595 bp
+% liegt. Siehe den offenen Punkt 44 am Dateiende.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\textwidth]{figures/chapter_2/preventiv_vs._curative_redispatch.pdf}
+    \includegraphics[width=1.0\textwidth]{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
     \caption{Vergleich der zeitlichen Betriebsmittelbelastung bei präventiver und kurativer Systemführung im Fehlerfall.}
     \label{fig:preventiv_kurativ}
 \end{figure}
@@ -331,6 +329,8 @@ Die folgende Darstellung folgt dieser Reihenfolge.
 % OFFEN 41: Die Caption ist um den Bezug auf den marktlichen Akteur
 % ergaenzt. Falls die Abbildung selbst noch die allgemeine Beschriftung
 % traegt, ist sie anzupassen, damit Schaubild und Caption uebereinstimmen.
+% BREITENANGABE: Sie bleibt, solange die Naturbreite der Datei bei 549 bp
+% liegt. Siehe den offenen Punkt 44 am Dateiende.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapter_2/curative_process.pdf}
@@ -427,9 +427,9 @@ Bei einer Überlast überwiegt der Wärmeeintrag, und die Leitertemperatur läuf
 Die zulässige Dauer der Überlast ist die Zeit, die dabei bis zum Erreichen der Grenztemperatur verstreicht, und aus ihr folgt die temporäre Stromobergrenze des Betriebsmittels.
 Abbildung \ref{fig:tatl_berechnung} stellt die Eingangsgrößen und den daraus folgenden Temperaturverlauf dar.
 
-% OFFEN 35: Schaubild zur Bestimmung der zulaessigen Ueberlastdauer, zwei
-% Teilbilder. Erzeugung ist an Claude Code vergeben, der Platzhalter bleibt
-% bis zum Austausch stehen.
+% SPEZIFIKATION des Schaubilds zur Bestimmung der zulaessigen
+% Ueberlastdauer, zwei Teilbilder. Sie bleibt als Grundlage spaeterer
+% Aenderungen stehen, die Abbildung ist eingebunden.
 %   Teilbild a: Zeit auf der Abszisse, Leiterseiltemperatur auf der
 %     Ordinate. Ausgangswert aus der Vorbelastung, danach drei
 %     exponentielle Verlaeufe fuer drei Ueberlasthoehen. Der hoechste
@@ -449,8 +449,7 @@ Abbildung \ref{fig:tatl_berechnung} stellt die Eingangsgrößen und den daraus f
 % vorliegende die Temperatur und die Kennlinie.
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=1.0\textwidth]{figures/chapter_2/tatl_berechnung.pdf}
-    \framebox[\textwidth]{\rule{0pt}{6cm}\textsf{[PLATZHALTER Abbildung, zwei Teilbilder zur zulässigen Überlastdauer]}}
+    \includegraphics{figures/chapter_2/tatl_berechnung.pdf}
     \caption{Schematische Darstellung der zulässigen Überlastdauer einer Freileitung. Teilbild a zeigt die Temperaturverläufe für drei Überlasthöhen, Teilbild b die daraus folgende Kennlinie aus zulässiger Belastbarkeit und zulässiger Dauer. Eigene Darstellung.}
     \label{fig:tatl_berechnung}
 \end{figure}
@@ -1375,7 +1374,9 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 
 % ===============================================================
 % OFFENE PUNKTE, gesammelt
-%   1  Dateiname der Abbildung 2.1 mit Punkt vor der Extension
+%   1  erledigt, die Datei heisst preventiv_vs_curative_redispatch und der
+%      Pfad im \includegraphics ist mitgezogen. Die vier Fundstellen des
+%      alten Namens in tools/drawio_restyle.py sind ebenfalls angepasst
 %   2  Drei Klassen gegen InnoSys 2030 verifizieren, Fundstelle ergaenzen.
 %      Die Klassen sind im Text als Systematisierung und nicht als
 %      normative Zeitfenster gekennzeichnet, was die Belegpflicht
@@ -1425,11 +1426,12 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      als eigene Erweiterung nach Abschnitt 3.4
 %  33  erledigt, der Gegeneinwand steht in 2.3.4
 %  34  Notation der Waermebilanz gegen den Formelsatz von TB 601 abgleichen
-%  35  Schaubild zur Bestimmung der zulaessigen Ueberlastdauer zeichnen.
-%      Entschieden ist, dass es neben Abbildung 2.1 bestehen bleibt, weil
+%  35  erledigt, das Schaubild zur Bestimmung der zulaessigen
+%      Ueberlastdauer ist eingebunden. Es steht neben Abbildung 2.1, weil
 %      diese die Betriebsmittelbelastung im Konzeptvergleich zeigt und die
 %      neue Abbildung die Temperatur und die Kennlinie aus Ueberlasthoehe
-%      und zulaessiger Dauer. Erzeugung ist an Claude Code vergeben.
+%      und zulaessiger Dauer. Offen bleibt das Seitenverhaeltnis, siehe
+%      Punkt 45
 %  36  erledigt, dena_hoeherauslastung_2022 gesetzt. Seitenangaben fuer die
 %      beiden Fundstellen ergaenzen
 %  37  Pauschalen TATL-Faktor in sous_untersuchung_2022 verifizieren und im
@@ -1445,6 +1447,17 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      und LODF-Sensitivitaeten, Kandidat leeuwen_integration_2020
 %  43  InnoSys-Dokument fuer die Berechnung der Zeit bis zur Grenztemperatur
 %      identifizieren, Abschlussbericht oder Systemfuehrungsprozess
+%  44  Die beiden draw.io-Abbildungen tragen eine Breitenangabe im
+%      \includegraphics, weil ihre Naturbreite mit 595 bp bei Abbildung 2.1
+%      und 549 bp bei Abbildung 2.2 ueber der Textbreite von 455 bp liegt.
+%      In den beiliegenden .drawio-Quellen ist die Zeichenflaeche auf
+%      160 mm zu setzen, die Schriftgroesse dort auf 9 pt zu stellen und
+%      der Export ohne Skalierung vorzunehmen. Danach entfaellt die
+%      Breitenangabe an beiden Stellen. Bis dahin bleibt sie stehen
+%  45  Abbildung 2.3 hat ein Seitenverhaeltnis von 0,46. Vorgesehen waren
+%      etwa 0,7, damit beide Teilbilder lesbar bleiben. Entscheiden, ob
+%      die flachere Fassung bleibt oder im Repository
+%      bess_dispatch_optimization nachgesteuert wird
 %
 % ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1
 % uebernommen:
