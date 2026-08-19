@@ -1188,39 +1188,39 @@ Zunächst wird für jede betroffene Viertelstunde der Grenzpreis der Anlage best
 Anschließend wird das Volatilitätsmaß aus der historischen Preisdifferenzreihe berechnet und auf die Restlaufzeit der jeweiligen Viertelstunde bezogen.
 Im dritten Schritt wird der Optionswert je Viertelstunde und Richtung über die geschlossene Formel ermittelt.
 Im vierten Schritt werden die Werte der von der Anpassung betroffenen Viertelstunden aufsummiert und dem Werteverbrauch gegenübergestellt, wobei nach der Systematik des Abschnitts \ref{sec:redispatch_compensation} der höhere der beiden Werte zur Auszahlung kommt.
-Tabelle~\ref{tab:weber_rechenbeispiel} gibt die Rechenschrittfolge mit den Größen und Werten des Beispiels wieder.
+Für die Erzeugungsauslagen unterscheidet die Festlegung dabei acht Vergütungsvarianten, die aus der Betriebsart und der Richtung des Eingriffs hervorgehen und von denen je Fall zwei zur Auswahl stehen \cite[S.\,24\,f.]{bundesnetzagentur_anlage1_2024}.
+Tabelle~\ref{tab:weber_verguetungsvarianten} stellt sie der jeweiligen Optionalität und dem daraus folgenden entgangenen Erlös gegenüber.
+Dabei bezeichnet $g_{\mathrm{T}}$ den Grenzpreis der Turbine und $g_{\mathrm{P}}$ den der Pumpe, $m$ den Mittelwert beider Grenzpreise, mit dem die Festlegung die Viertelstunden ohne wirtschaftliche Wälzung nähert, $\eta$ den Wirkungsgrad und $c_{\mathrm{NNE}}$ das beim Bezug anfallende Netznutzungsentgelt.
+Der entgangene Erlös folgt aus der geschlossenen Formel des Gutachtens.
+Mit dem Spread $S_v = \mu_v - X$ und $d_v = S_v / \sigma_v$ gilt $V_{\mathrm{C}} = S_v\,\Phi(d_v) + \sigma_v\,\varphi(d_v)$ sowie $V_{\mathrm{P}} = -S_v\,\Phi(-d_v) + \sigma_v\,\varphi(d_v)$, wobei $X$ der Grenzpreis der jeweiligen Richtung ist, $\Phi$ und $\varphi$ Verteilungsfunktion und Dichte der Standardnormalverteilung sind, $\Delta t$ die Dauer der Viertelstunde bezeichnet und $P$ die gesperrte Leistung.
+Der Index $v$ hält fest, dass der erwartete Preis und die Standardabweichung je Viertelstunde wechseln, während der Grenzpreis nach der Vereinfachung des Gutachtens über den Tag konstant bleibt \cite[Abschnitt\,3.3]{weber_gutachten_2015}.
 
-% OFFEN 13: Rechenbeispiel aus Anlage 5. Die Tabelle ist ein Geruest und
-% mit den Originalzahlen des Beispiels zu fuellen. Jede Zeile
-% entspricht einem Rechenschritt, sodass sich der Weg vom Grenzpreis
-% bis zum Auszahlungsbetrag nachrechnen laesst. Die Spalte Berechnung
-% enthaelt die verwendete Beziehung in Kurzform und nicht die
-% vollstaendige Formel. Es sind ausschliesslich Werte aus der Quelle
-% einzutragen, keine eigenen Rechenergebnisse, weil die Tabelle das
-% fremde Verfahren belegen soll. Eine eigene Nachrechnung findet nicht
-% statt. Falls das Beispiel mehr als etwa zehn Schritte umfasst,
-% ist auf die tragenden Schritte zu kuerzen und die Kuerzung in der
-% Legende zu vermerken.
-% OFFEN 11 haengt hieran, weil Anlage 5 als bib-Eintrag noch fehlt und
-% die Fundstelle dieser Tabelle darauf zu setzen ist.
+% Die acht Abrechnungspreise sind gegen Anlage 1 Seite 24 verifiziert,
+% ebenso die Auswahl ueber Maximum und Minimum auf Seite 25. Die
+% Zuordnung der Optionsart folgt Anlage 2 Abschnitt 3.3 und ist keine
+% eigene Ableitung. Die Kreuzverweise in der Spalte Abrechnungspreis
+% sind so gewollt, denn Anlage 1 definiert p2a ueber denselben Ausdruck
+% wie p4b und p3a ueber denselben wie p1b.
 \begin{table}[htbp]
     \centering
-    \caption{Rechenschrittfolge des Berechnungsbeispiels für einen Tagesspeicher. Darstellung nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
-    \label{tab:weber_rechenbeispiel}
+    \caption{Bestimmung des entgangenen Erlöses je Vergütungsvariante der Festlegung. Ungenutzt bezeichnet eine noch nicht vermarktete Optionalität, genutzt eine bereits vermarktete. Abgerechnet wird bei Erhöhung des Ausspeicherns und bei Minderung des Einspeicherns das Maximum der beiden Varianten, in den übrigen Fällen das Minimum. Der Grenzpreis ist über den Tag konstant, der erwartete Preis und die Standardabweichung wechseln je Viertelstunde $v$. Eigene Darstellung nach \cite{bundesnetzagentur_anlage1_2024} und \cite{weber_gutachten_2015}.}
+    \label{tab:weber_verguetungsvarianten}
     \small
-    \begin{tabular}{p{0.8cm}p{3.4cm}p{4.2cm}p{2.0cm}p{1.8cm}}
+    \begin{tabular}{@{}l>{\raggedright\arraybackslash}p{2.35cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{3.6cm}@{}}
         \hline
-        \textbf{Nr.} & \textbf{Größe} & \textbf{Berechnung} & \textbf{Wert} & \textbf{Einheit} \\
+        \textbf{Var.} & \textbf{Anweisung} & \textbf{Abrechnungspreis} & \textbf{Optionalität} & \textbf{Entgangener Erlös} \\
         \hline
-        1 & Grenzpreis Ausspeisung & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        2 & Grenzpreis Einspeisung & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        3 & Erwarteter Preis & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        4 & Volatilitätsmaß & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        5 & Restlaufzeit & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        6 & Optionswert je Viertelstunde & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        7 & Summe der betroffenen Viertelstunden & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        8 & Werteverbrauch & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
-        9 & Auszahlungsbetrag & [PLATZHALTER] & [PLATZ.] & [PLATZ.] \\
+        $p_{1a}$ & \multirow{2}{2.35cm}{Ausspeichern, Erhöhung} & $(m + c_{\mathrm{NNE}})/\eta$ & \multirow{2}{2.3cm}{ungenutzt, Call} & \multirow{2}{3.6cm}{$V_{\mathrm{C}}(\mu_v, g_{\mathrm{T}}, \sigma_v)\,\Delta t\,P$} \\
+        $p_{1b}$ & & Mittel der Preise $\geq g_{\mathrm{T}}$ & & \\
+        \hline
+        $p_{2a}$ & \multirow{2}{2.35cm}{Ausspeichern, Minderung} & $(p_{4b} + c_{\mathrm{NNE}})/\eta$ & \multirow{2}{2.3cm}{genutzt, Put} & \multirow{2}{3.6cm}{$V_{\mathrm{P}}(\mu_v, g_{\mathrm{T}}, \sigma_v)\,\Delta t\,P$} \\
+        $p_{2b}$ & & $m$ & & \\
+        \hline
+        $p_{3a}$ & \multirow{2}{2.35cm}{Einspeichern, Minderung} & $p_{1b}\,\eta - c_{\mathrm{NNE}}$ & \multirow{2}{2.3cm}{genutzt, Call} & \multirow{2}{3.6cm}{$V_{\mathrm{C}}(\mu_v, g_{\mathrm{P}}, \sigma_v)\,\Delta t\,P$} \\
+        $p_{3b}$ & & $m$ & & \\
+        \hline
+        $p_{4a}$ & \multirow{2}{2.35cm}{Einspeichern, Erhöhung} & $m\,\eta - c_{\mathrm{NNE}}$ & \multirow{2}{2.3cm}{ungenutzt, Put} & \multirow{2}{3.6cm}{$V_{\mathrm{P}}(\mu_v, g_{\mathrm{P}}, \sigma_v)\,\Delta t\,P$} \\
+        $p_{4b}$ & & Mittel der Preise $\leq g_{\mathrm{P}}$ & & \\
         \hline
     \end{tabular}
 \end{table}
@@ -1440,7 +1440,12 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %  11  erledigt, Anlage 5 liegt als bundesnetzagentur_berechnungsbeispiel_2024 vor
 %  12  teilweise erledigt, gegen Anlage 2 verifiziert, Grenzpreis fuer
 %      Batteriespeicher noch gegen Anlage 5 pruefen
-%  13  Tabelle mit den Rechenschritten des Berechnungsbeispiels
+%  13  erledigt, anders geloest als urspruenglich vorgesehen. Statt der
+%      Rechenschritte des Beispiels traegt Tabelle 2.5 die acht
+%      Verguetungsvarianten der Festlegung allgemein und ohne Zahlen.
+%      Das Beispiel steht dafuer in Abbildung 2.5 und in Tabelle 2.4.
+%      Das Label heisst jetzt tab:weber_verguetungsvarianten, weil
+%      tab:weber_rechenbeispiel den Inhalt nicht mehr traf
 %  14  erledigt, aus Anlage 2 beantwortet und als sechster Grund in 2.3.4
 %      aufgenommen, betroffen ist die Bewertungslogik
 %  15  Mitteilung der Beschlusskammer zu Batteriespeichern
