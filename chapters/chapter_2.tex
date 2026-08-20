@@ -60,6 +60,30 @@
 %     neuer Absatz beginnt nur bei einem echten Themenwechsel, nicht bei
 %     jedem neuen Argument. Diese Regel gilt fuer alle Kapitel.
 %
+% TERMINOLOGIE DER KURATIVEN SYSTEMFUEHRUNG, GEAENDERT am 20.08.2026:
+%   Der Begriff bezeichnet in der Arbeit BEIDE Auspraegungen, also die
+%   kurative Hoeherauslastung UND den kurativen Redispatch. Die frueher
+%   geltende Verengung auf die Hoeherauslastung ist AUFGEGEBEN.
+%   GRUND: Die Verengung war ueber die Bestimmbarkeit der Vorhaltemenge
+%   begruendet. Diese Begruendung traegt nicht, weil die Arbeit keine
+%   Potenziale bestimmt. Sie nimmt die Vorhaltemenge als Produktparameter
+%   entgegen und setzt die netztechnische Wirksamkeit als gegeben voraus,
+%   siehe Abschnitt 3.2. Aus Sicht des Anlagenbetreibers ist der Vorgang in
+%   beiden Faellen derselbe, naemlich Leistung und Ladezustandsband ueber
+%   eine Bindungsdauer fuer einen ungewissen Abruf freizuhalten.
+%   ABGEGRENZT wird die Arbeit stattdessen ueber ihren Gegenstand, also
+%   ueber die VORHALTUNG und nicht ueber die Verwendung der Reserve in der
+%   Betriebsplanung des UENB.
+%   DER UNTERSCHIED VERSCHWINDET NICHT, er wandert. Bei der
+%   Hoeherauslastung folgt die Bindungsdauer aus einem geplanten
+%   Betriebspunkt, im zweiten Fall muss sie den Zeitbereich abdecken, in dem
+%   der Zustand auftreten kann. Der Reservierungspreis steigt mit der
+%   Bindungsdauer, weshalb der Unterschied ueber die Sensitivitaet in
+%   Abschnitt 4.4 abgedeckt ist.
+%   IM TEXT VON 2.1.1 STEHT DIESE UEBERLEGUNG NICHT. Sie ist die Begruendung
+%   der Entscheidung und dort ohne Ertrag. Falls sie gebraucht wird, gehoert
+%   sie in Abschnitt 5.3 zur Uebertragbarkeit.
+%
 % TERMINOLOGIE DER GESUCHTEN GROESSE, verbindlich:
 %   Verwendet wird "kurativer Reservierungspreis". Nicht verwendet werden
 %   "Mindestverguetung", "Verguetungsbereich" und "Untergrenze der
@@ -199,10 +223,10 @@ Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur 
 %           Abbildung 2.1
 %   Abs. 2  Praeventive Systemfuehrung einschliesslich der gestuften
 %           Betriebsplanung, aus der der praeventive Redispatch hervorgeht
-%   Abs. 3  Drei Eigenschaften des praeventiven Ansatzes
+%   Abs. 3  Drei Merkmale des praeventiven Ansatzes
 %   Abs. 4  Verstaerkung durch die Verlagerung der Fahrplanbildung
 %   Abs. 5  Kurative Systemfuehrung als Antwort auf zwei dieser
-%           Eigenschaften
+%           Merkmale
 %   Abs. 6  Verschiebung der Kostenart und Begriffsabgrenzung
 % Die Prozesskette der Betriebsplanung steht hier und nicht in Abschnitt
 % 2.1.2, weil sie zum praeventiven Ansatz gehoert. Abschnitt 2.1.2
@@ -231,8 +255,31 @@ Der Vorteil dieses Vorgehens liegt in der Planungssicherheit, denn Engpässe wer
 % Ausgleichs ist die Fundstelle zu praezisieren. Abschnitt 2.3.3 stellt
 % die Systematik dar. Eine Seitenangabe in der Festlegung waere hier
 % hilfreich, weil die Aussage sonst nur ueber die Norm belegt ist.
-Für die Fragestellung dieser Arbeit sind an diesem Ansatz drei Eigenschaften bedeutsam.
-Erstens wird die Robustheit über eine konservative Auslegung der zulässigen Auslastung erkauft, was den Redispatchbedarf und die damit verbundenen Kosten erhöht \cite{sous_comparison_2025}.
+% GEAENDERT am 20.08.2026: Der Satz lautete frueher, fuer die Fragestellung
+% dieser Arbeit seien an diesem Ansatz drei Eigenschaften bedeutsam. Das
+% behauptete einen Bezug, den die drei Merkmale nicht einloesen, denn sie
+% erklaeren, woran der kurative Ansatz ansetzt, und sagen nichts ueber den
+% Reservierungspreis. Den Bezug zur Fragestellung zieht der Absatz selbst,
+% naemlich am Ende ueber die Verschiebung der Kostenart.
+% ZUR BENENNUNG: Diese Aufzaehlung heisst MERKMALE, die Aufzaehlung in
+% Abschnitt 2.1.2 heisst EIGENSCHAFTEN. Ohne die Unterscheidung sind zwei
+% Dreieraufzaehlungen in aufeinanderfolgenden Unterabschnitten verwechselbar
+% und ein spaeterer Verweis waere nicht eindeutig. Nicht zusammenfuehren.
+Für das Verständnis des kurativen Ansatzes sind an diesem Vorgehen drei Merkmale bedeutsam.
+% GEAENDERT: Die Vorfassung lautete, die Robustheit werde ueber eine
+% konservative Auslegung der zulaessigen Auslastung erkauft. Sachlich war
+% das richtig, denn der Preis ist eine Rechnung in Euro und kein
+% Sicherheitsrisiko. Sobald die Kausalkette aber im Satz steht, traegt sie
+% sich selbst und das Wort wird entbehrlich. Zugleich benennt die neue
+% Fassung die Margenbreite als die Groesse, an der die kurative
+% Hoeherauslastung spaeter ansetzt.
+% NICHT VERSCHAERFEN: Sous vergleicht zwei Betriebsweisen und variiert die
+% Margenbreite nicht als Parameter. Eine Aussage ueber die Haeufigkeit, mit
+% der marktoptimale Fahrplaene die Vorauslastung ueberschreiten, traegt die
+% Quelle nicht, denn ihr Modell startet aus einem gesetzten Einspeise- und
+% Lastszenario.
+Erstens beruht die Robustheit auf einer Sicherheitsmarge, die die Vorauslastung im fehlerfreien Zustand unterhalb der \ac{PATL} hält und den dafür erforderlichen Eingriff in die Fahrpläne verursacht.
+Die Breite dieser Marge wirkt damit unmittelbar auf Volumen und Kosten des Redispatch \cite{sous_comparison_2025}.
 Zweitens endet die Reichweite des Ansatzes mit der letzten Prognoserechnung, die vor dem Erfüllungszeitpunkt liegt.
 Fahrplanänderungen aus dem danach verbleibenden Handelsfenster sind in ihr nicht mehr enthalten, und die daraus entstehenden Netzzustände lassen sich präventiv nicht mehr beantworten.
 Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
@@ -259,56 +306,81 @@ Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nic
 %   (3) Je spaeter der Eingriff, desto kleiner der Kreis technisch
 %       geeigneter Anlagen -> folgt aus den Vorlaufzeiten in Abschnitt
 %       2.1.2
-%   (4) Ein kleinerer Anbieterkreis erhoeht die Kosten -> folgt aus der
-%       dritten Eigenschaft
+%   (4) Ein kleinerer Anbieterkreis erhoeht die Kosten -> folgt aus dem
+%       dritten Merkmal
 % NICHT BEHAUPTET wird, dass der ueberwiegende Teil des
 % Redispatchvolumens heute kurz vor Echtzeit beschafft wird. Dafuer liegt
 % keine Quelle vor. Wer diese Aussage treffen will, braucht eine
 % Auswertung der Redispatch-Anordnungszeitpunkte.
-Die zweite und die dritte Eigenschaft verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
+Das zweite und das dritte Merkmal verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
 Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt \cite{mahgoub_wie_2025}, und die Umstellung der Day-Ahead-Auktion auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
 Je später sich der maßgebliche Netzzustand einstellt, desto später ist auch der erforderliche Eingriff zu bestimmen.
 Mit der verbleibenden Vorlaufzeit sinkt jedoch die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der in Betracht kommenden Technologien Vorlaufzeiten von mehreren Stunden aufweist.
-Ein kleinerer Kreis geeigneter Anlagen schlägt sich nach der dritten Eigenschaft unmittelbar in den Kosten nieder.
+Ein kleinerer Kreis geeigneter Anlagen schlägt sich nach dem dritten Merkmal unmittelbar in den Kosten nieder.
 
 % GEKUERZT: Der kurative Teil ist bewusst knapp gehalten und verweist
 % weiter, weil die Anforderungen in Abschnitt 2.1.2, die offenen
 % Umsetzungsfragen in Abschnitt 2.1.4 und die fehlende
 % Bemessungsgrundlage in den Abschnitten 2.3.3 und 2.2.6 ausgefuehrt
 % werden. Der Anschluss an Absatz 5 von Abschnitt 1.1 bleibt erhalten.
+% ZURUECKGENOMMEN am 20.08.2026: Hier stand der Satz, eine hoehere
+% zulaessige Vorauslastung vergroessere den Bereich, in dem eine spaete
+% Fahrplanaenderung ohne vorherige Disposition zulaessig bleibe. Das ist
+% falsch, denn die thermische Reserve zwischen PATL und TATL ist eine
+% einzige Ressource. Was in der Betriebsplanung vorab belegt wird, steht
+% fuer spaet entstehende Netzzustaende nicht mehr zur Verfuegung. Es ist
+% ein Entweder-oder und keine doppelte Wirkung. Nicht wieder aufnehmen.
 % OFFEN 23: Die Unterscheidung zwischen kurativer Hoeherauslastung und
 % kurativem Redispatch ist gegen den Abschlussbericht InnoSys 2030 zu
-% verifizieren und mit einer Fundstelle zu versehen. Sie traegt die
-% Abgrenzung des Untersuchungsgegenstands und sollte belegt sein.
-Die kurative Systemführung setzt an der ersten und der zweiten dieser Eigenschaften an und tritt dabei in zwei Ausprägungen auf.
+% verifizieren und mit einer Fundstelle zu versehen.
+Die kurative Systemführung setzt am ersten und am zweiten dieser Merkmale an und tritt dabei in zwei Ausprägungen auf.
 Die kurative Höherauslastung begreift die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster und erlaubt eine bewusst höhere Vorauslastung im Normalbetrieb, wodurch der präventive Eingriffsbedarf sinkt.
-% EIGENE ABLEITUNG, kein \cite setzen. Der folgende Satz loest die
-% Ankuendigung aus Absatz 5 von Abschnitt 1.1 ein. Ohne ihn wuerde die dort
-% aufgeworfene Frage allein vom kurativen Redispatch beantwortet, der zwei
-% Absaetze weiter unten ausgeschlossen wird. Vor Abgabe selbst pruefen.
-Sie wirkt damit zugleich auf die zweite Eigenschaft, denn eine höhere zulässige Vorauslastung vergrößert den Bereich, innerhalb dessen eine nach der letzten Prognoserechnung eintretende Fahrplanänderung ohne vorherige Disposition zulässig bleibt.
 Der kurative Redispatch verzichtet auf eine solche Vorplanung und behebt eine Grenzwertverletzung, die sich erst nach der letzten Prognoserechnung eingestellt hat, innerhalb des zulässigen Überlastintervalls.
-Er ist damit die Antwort auf die zweite Eigenschaft, weil er Netzzustände abdeckt, für die sich präventiv keine Maßnahme mehr disponieren lässt.
+Er ist damit die Antwort auf das zweite Merkmal, weil er Netzzustände abdeckt, für die sich präventiv keine Maßnahme mehr disponieren lässt.
 Beiden Ausprägungen ist gemeinsam, dass die Maßnahme erst nach dem Fehlereintritt wirkt und deshalb keine vorherige Disposition erfordert.
+% EIGENE ABLEITUNG, kein \cite setzen. Die beiden folgenden Saetze tragen
+% den eigentlichen Vorteil des kurativen Ansatzes und damit die Begruendung
+% der ganzen Arbeit, denn aus ihnen folgt, dass der UENB Vorhaltung und
+% nicht Arbeit beschafft.
+% WICHTIG: Der zweite Satz haelt die Gegenrechnung offen. Fuer das System
+% tritt eine Bereitstellung an die Stelle eines sicheren Eingriffs, fuer den
+% Anlagenbetreiber fallen die Opportunitaetskosten dagegen in jedem
+% Intervall der Bindung an. Genau diese Asymmetrie traegt das
+% Zwischenfazit. Ohne den zweiten Satz liest sich der erste zwei Abschnitte
+% spaeter als Widerspruch.
+Darin liegt der Vorteil gegenüber dem präventiven Ansatz, denn dieser greift unabhängig davon in den Fahrplan ein, ob die Ausfallvariante überhaupt eintritt, während die kurative Maßnahme lediglich vorgehalten und allein im Fehlerfall abgerufen wird.
+Für den Anlagenbetreiber entfällt der Aufwand damit allerdings nicht, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss, was Abschnitt \ref{sec:interim_conclusion} aufgreift.
 Jahressimulationen belegen für den kurativen Betrieb ein signifikantes Einsparpotenzial gegenüber dem rein präventiven Ansatz \cite{sous_comparison_2025}.
 Der Effizienzgewinn geht mit erhöhten Anforderungen an Automatisierungsgrad und Sicherheit einher, die Abschnitt \ref{sec:curative_functionality} anhand der Prozesskette und Abschnitt \ref{sec:challenges} anhand des rechtlichen Rahmens und der offenen Umsetzungsfragen ausführen.
 Zugleich ändert sich die Art der entstehenden Kosten, da an die Stelle der Erzeugungsauslagen einer durchgeführten Maßnahme die Vorhaltekosten einer bereitgestellten Reaktionsfähigkeit treten.
 Für diese Kostenart kennt die Vergütungssystematik des Engpassmanagements keine Bemessungsgrundlage, was Abschnitt \ref{sec:redispatch_compensation} darlegt und Abschnitt \ref{sec:interim_conclusion} zusammenführt.
 
-% ZUR ABGRENZUNG: Der Ausschluss ist eine Entscheidung ueber die
-% Bestimmbarkeit der Vorhaltemenge und keine Abwertung des kurativen
-% Redispatch. Die beiden Ergaenzungssaetze halten das fest. Sie
-% wiederholen die Wirkungsweise nicht, weil sie zwei Absaetze weiter oben
-% steht.
-Im Rahmen dieser Arbeit bezeichnet kurative Systemführung im Weiteren ausschließlich die kurative Höherauslastung.
-Der kurative Redispatch ohne vorgelagerte Höherauslastung ist nicht Gegenstand der Untersuchung, weil bei ihm die vorzuhaltende Leistung nicht aus einer geplanten Betriebsweise folgt und die Vorhaltemenge damit nicht bestimmbar ist.
-Diese Abgrenzung betrifft allein die Bestimmbarkeit der Vorhaltemenge und nicht den Nutzen des Instruments, denn als rein reaktiver Sicherheitsmechanismus bleibt der kurative Redispatch ein eigenständiger Beitrag zur Systemstabilität.
-% EIGENE ABLEITUNG, kein \cite setzen. Der folgende Satz haelt den
-% Unterschied zur Prognoseunsicherheit in Abschnitt 2.1.3 fest. Ohne ihn
-% untergraebt der dortige Satz, die Menge sei gegen ein Spektrum moeglicher
-% Zustaende zu bemessen, die Begruendung dieser Abgrenzung.
-Bei der Höherauslastung besteht demgegenüber ein geplanter Betriebspunkt, gegen den sich die vorzuhaltende Leistung bemessen lässt, während die in Abschnitt \ref{sec:challenges} beschriebene Prognoseunsicherheit die Auswahl der scharfzuschaltenden Maßnahmen und nicht die Bestimmbarkeit der Menge betrifft.
-Welche der beiden Ausprägungen für eine konkrete Ausfallvariante vorzusehen ist, entscheidet sich am jeweiligen Systemzustand und ist Gegenstand der Betriebsplanung des \ac{ÜNB}.
+% GEAENDERT am 20.08.2026, TRAGEND. Der frueher hier stehende Ausschluss
+% des kurativen Redispatch ist aufgegeben. Er war ueber die Bestimmbarkeit
+% der Vorhaltemenge begruendet, und diese Begruendung traegt nicht, weil
+% die Arbeit keine Potenziale bestimmt, sondern die Vorhaltemenge als
+% Produktparameter entgegennimmt. Der Absatz grenzt jetzt ueber den
+% GEGENSTAND ab, naemlich ueber die Vorhaltung, und nicht ueber die
+% Verwendung der Reserve in der Betriebsplanung.
+% EIGENE ABLEITUNG in den Saetzen drei bis fuenf, kein \cite setzen.
+% NICHT VERSCHAERFEN: Der Absatz behauptet nicht, beide Auspraegungen seien
+% gleichwertig oder gleich haeufig. Er sagt, dass sie sich fuer den
+% Anlagenbetreiber allein in der Bindungsdauer unterscheiden.
+% GEKUERZT am 20.08.2026, von sechs auf vier Saetze:
+%   - PATL und TATL sind entfernt, weil die Reserve zwei Absaetze zuvor mit
+%     beiden Kuerzeln eingefuehrt ist und der Satz sie nur wiederholte.
+%   - Gestrichen ist der Satz, welche Auspraegung fuer eine konkrete
+%     Ausfallvariante vorzusehen sei. Der erste Satz sagt bereits, dass die
+%     Betriebsplanung ueber die Belegung der Reserve entscheidet.
+%   - Gestrichen ist ferner der Satz zum Unterschied in der Bindungsdauer,
+%     also dass sie im ersten Fall aus einem geplanten Betriebspunkt folgt
+%     und im zweiten den Zeitbereich abdecken muss. Die Aussage ist richtig,
+%     an dieser Stelle aber ohne Ertrag. Falls sie gebraucht wird, gehoert
+%     sie in Abschnitt 5.3 zur Uebertragbarkeit und nicht hierher.
+Beide Ausprägungen greifen auf dieselbe thermische Reserve zu, denn was die Betriebsplanung vorab belegt, steht für spät entstehende Netzzustände nicht mehr zur Verfügung.
+Die Literatur fasst die kurative Systemführung überwiegend als Höherauslastung und misst ihren Nutzen an der Senkung des präventiven Eingriffsbedarfs \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Für den Akteur, der die Reaktionsfähigkeit bereitstellt, ist der Vorgang in beiden Fällen derselbe, denn er hält Leistung und Ladezustandsbereich für einen ungewissen Abruf frei.
+Die vorliegende Arbeit betrachtet deshalb die Vorhaltung als solche und behandelt die Bindungsdauer als Produktmerkmal, dessen Wirkung Abschnitt \ref{sec:sensitivities} untersucht.
 
 % ---------------------------------------------------------------
 \subsection{Prozessablauf und Zeitanforderungen}
@@ -363,10 +435,29 @@ Diese Maßnahmentypen unterscheiden sich darin, wer über das eingesetzte Betrie
 Schaltmaßnahmen, die Sollwertanpassung leistungsflusssteuernder Betriebsmittel wie \ac{PST} und \ac{HGÜ} sowie der Einsatz von Netzboostern liegen im Verfügungsbereich des \ac{ÜNB} selbst und erfordern keine Zusage eines Dritten \cite{consentec_systembooster_2026}.
 Eingriffe in Erzeugung, Last und Speicherung setzen demgegenüber voraus, dass ein Anlagenbetreiber die geforderte Leistungsänderung zusagt und zum Abrufzeitpunkt erbringt.
 Nur bei den Maßnahmen der zweiten Gruppe stellt sich die Frage nach Vorhaltung und Vergütung, weshalb die weitere Betrachtung auf sie beschränkt bleibt und der Anlagenbetreiber im Folgenden als kurativer Akteur bezeichnet wird.
+% TRAGENDE ZAHL: Der folgende Satz beziffert, was von der Einbindung
+% marktlicher Akteure abhaengt, und begruendet damit, weshalb die Frage
+% nach dem Beschaffungsmechanismus keine Randfrage der kurativen
+% Systemfuehrung ist. Die beiden Stufen der Quelle entsprechen genau der
+% hier eingefuehrten Unterscheidung nach der Verfuegungsgewalt.
+% VORBEHALT, im Satz mitgefuehrt und nicht zu streichen: Die Zahlen stammen
+% aus einem synthetischen Netzmodell auf Basis des IEEE-118-Knoten-Modells
+% mit Zieljahr 2037. Die Autoren halten selbst fest, dass nicht alle
+% Aussagen auf ein reales Netz uebertragbar sind.
+Wie stark der Nutzen der kurativen Systemführung von dieser zweiten Gruppe abhängt, zeigt eine Jahressimulation auf einem synthetischen Netzmodell mit Zieljahr 2037, in der die Kosten des Engpassmanagements gegenüber dem rein präventiven Betrieb auf rund 42\,\% sinken, solange allein Phasenschieber und \ac{HGÜ} kurativ einsetzbar sind, und auf rund 2\,\%, sobald zusätzlich die Abregelung erneuerbarer Erzeugung sowie Pump- und Batteriespeicher zur Verfügung stehen \cite{sous_comparison_2025}.
 Die Abgrenzung gegenüber dem Netzbooster wird in Abschnitt \ref{sec:market_design_comparison} aufgegriffen.
 Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, das heißt die positive und negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
 Bei energiebegrenzten Technologien wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
 Dies erfordert eine gezielte Vorhaltung des Ladezustands im Vorfeld des Abrufs.
+% BELEGLAGE: Die Fundstelle bleibt bei van Leeuwen, weil
+% sous_comparison_2025 in diesem Absatz bereits einmal steht und eine
+% Quelle nach der Stilregel je Absatz nur einmal zitiert wird. Sachlich
+% traegt sous_comparison_2025 die Aussage staerker, denn dort ist die
+% Bilanzneutralitaet der kurativen Leistungsanpassungen je Ausfallvariante
+% als eigene Nebenbedingung formuliert und im Ergebnisteil ausdruecklich
+% festgehalten, dass die Abregelung erneuerbarer Erzeugung durch erhoehte
+% Einspeisung aus Speichern auszugleichen ist. Falls van Leeuwen an dieser
+% Stelle entfaellt, ist sous_comparison_2025 der Ersatz.
 Für den bilanziellen Ausgleich einer kurativen Maßnahme sind stets mindestens zwei Akteure erforderlich, die als Quelle und Senke koordiniert eingesetzt werden.
 Die eingangs genannten leistungsflusssteuernden Betriebsmittel bilden hierbei eine weitere Ausnahme, da sie den Lastfluss direkt beeinflussen und keinen separaten bilanziellen Ausgleich erfordern~\cite{leeuwen_integration_2020}.
 % EIGENE ABLEITUNG, kein \cite setzen. Ohne die beiden folgenden Saetze
@@ -487,13 +578,12 @@ Für eine Übertragungsstrecke ist folglich das Minimum der zulässigen Dauern �
 Aus dieser Berechnungslogik folgen drei Eigenschaften, die die Anforderungen an einen kurativen Akteur bestimmen.
 Erstens hängt die zulässige Dauer von der Höhe der zugelassenen Überlast ab, denn ein höherer Strom beschleunigt die Erwärmung.
 Eine weitergehende Höherauslastung erschließt damit ein größeres Entlastungspotenzial, verkürzt aber gleichzeitig das Zeitfenster für die Gegenmaßnahme.
-% OFFEN 38: Beleg fuer die zweite Eigenschaft. Der Fraunhofer-Tagungsband
-% zur Tagung Zukuenftige Stromnetze 2025 haelt fest, dass der Wert der
-% moeglichen Hoeherauslastung von der Vorbelastung zum Zeitpunkt des
-% Ereigniseintritts, von der Wirkungszeit der kurativen Massnahme und von
-% der maximalen Betriebsmitteltemperatur abhaengt. Einzelbeitrag
-% identifizieren, Eintrag anlegen, dann \cite setzen.
-Zweitens hängt die Dauer über die Vorbelastung und die Umgebungsbedingungen von der Betriebssituation ab und fällt für dasselbe Betriebsmittel unterschiedlich aus.
+% OFFEN 38, ERLEDIGT: Der Beleg steht in sous_comparison_2025, das in der
+% Einleitung genau diese Groessen nennt, naemlich Vorbelastung vor dem
+% Fehlereintritt, Dauer der Hoeherauslastung, Wettersituation und
+% thermische Eigenschaften des Leiters. Der Fraunhofer-Tagungsband wird
+% dafuer nicht mehr gebraucht.
+Zweitens hängt die Dauer über die Vorbelastung, die Wettersituation und die thermischen Eigenschaften des Leiters von der Betriebssituation ab und fällt für dasselbe Betriebsmittel unterschiedlich aus \cite{sous_comparison_2025}.
 Drittens ist die verfügbare Reaktionszeit deshalb keine Wahlgröße des Akteurs, sondern durch das betroffene Betriebsmittel und die Situation vorgegeben.
 
 % GEAENDERT: Die drei Klassen sind relativiert. Sie sind keine
@@ -614,6 +704,15 @@ Zunächst ist die thermische Reserve nicht in vollem Umfang nutzbar.
 Ein hoch ausgelastetes Netz wird bereits nahe an seinen Grenzen betrieben, und neben dem thermischen Grenzwert können auch Spannungsgrenzwerte und die Kurzschlussfestigkeit die zulässige Belastung nach oben begrenzen.
 Für eine Höherauslastung sind daher die zulässige Häufigkeit und die Gleichzeitigkeit mit diesen weiteren Anforderungen festzulegen \cite{dena_hoeherauslastung_2022}.
 Der für die Betriebsführung nutzbare Grenzwert kann deshalb unter dem thermisch bestimmten liegen.
+% BELEGTES BEISPIEL fuer diese Aussage. Der Satz zeigt an einem konkreten
+% Fall, dass die thermische Reserve nicht in vollem Umfang nutzbar ist.
+% ZUR STILREGEL: sous_comparison_2025 steht in diesem Absatz ein zweites
+% Mal, weil der Absatz sechs voneinander unabhaengige Umsetzungshindernisse
+% aufzaehlt und jedes seine eigene Fundstelle braucht. Dasselbe gilt bereits
+% fuer dena_hoeherauslastung_2022. Falls die Regel strikt gelten soll, ist
+% der Absatz in zwei zu teilen, naemlich technische und planerische
+% Hindernisse.
+Wie stark diese weiteren Grenzen wirken, zeigt eine Betriebssimulation, in der die thermisch berechneten \ac{TATL}-Werte auf 4000\,\si{\ampere} begrenzt werden, um Schutzeinrichtungen, Anforderungen der Systemstabilität und weitere äußere Grenzen abzubilden, wodurch die Mehrzahl der Werte auf der 380-kV-Ebene auf diese Schranke zurückfällt \cite{sous_comparison_2025}.
 Hinzu kommt, dass die Angaben zum \ac{TATL} für die einzelnen Betriebsmittel nicht durchgängig vorliegen.
 Ihre Erfassung setzt voraus, dass die Netzbetreiber die Anforderungen an Form und Inhalt dieser Angaben vorgeben, was aus Sicht der Hersteller die Bedingung für eine Normung und für die Entwicklung entsprechender Betriebsmittel ist \cite{dena_hoeherauslastung_2022}.
 Solange diese Grundlage fehlt, ist die kurative Höherauslastung auf Abschätzungen zur sicheren Seite angewiesen und schöpft das theoretische Potenzial nicht aus.
@@ -1496,8 +1595,9 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      beiden Fundstellen ergaenzen
 %  37  Pauschalen TATL-Faktor in sous_untersuchung_2022 verifizieren und im
 %      Satz nennen
-%  38  Beleg fuer die Abhaengigkeiten der Hoeherauslastung, Einzelbeitrag im
-%      Fraunhofer-Tagungsband 2025 identifizieren
+%  38  erledigt, die zweite Eigenschaft in 2.1.2 ist mit sous_comparison_2025
+%      belegt.
+%      Der Fraunhofer-Tagungsband wird dafuer nicht mehr gebraucht
 %  39  erledigt, iec_60076_7_2018 gesetzt. Abschnitts- oder Seitenangaben
 %      fuer die beiden Fundstellen ergaenzen
 %  40  entfallen, mit 39 zusammengefasst
@@ -1577,11 +1677,11 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %       Opportunitaetswert honoriert. Ein Mechanismus, der lokationale
 %       Vorhaltung explizit verguetet, adressiert damit nicht nur ein
 %       Verfuegbarkeitsproblem, sondern auch eine bestehende Anreizluecke.
-%   chapter_6.tex, Ausblick
-%     Die Beschaffung von Vorhaltung fuer den kurativen Redispatch ohne
-%     vorgelagerte Hoeherauslastung ist in dieser Arbeit ausgeschlossen,
-%     weil die Vorhaltemenge nicht aus einer geplanten Betriebsweise folgt.
-%     Als Anschlussfrage gehoert sie in den Ausblick, denn sie verlangt eine
-%     Bemessung der Menge gegen ein Spektrum moeglicher Netzzustaende und
-%     nicht gegen einen geplanten Betriebspunkt.
+%   chapter_6.tex, Ausblick, GEAENDERT am 20.08.2026
+%     Der kurative Redispatch ist nicht mehr ausgeschlossen. Als
+%     Anschlussfrage bleibt die BEMESSUNG DER MENGE, denn sie ist gegen ein
+%     Spektrum moeglicher Netzzustaende zu fuehren und nicht gegen einen
+%     geplanten Betriebspunkt. Diese Frage stellt sich auf der Seite des
+%     UENB und nicht auf der des Anlagenbetreibers, weshalb sie ausserhalb
+%     des Untersuchungsgegenstands liegt.
 % ===============================================================
