@@ -208,11 +208,13 @@ Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Untersch
 Im präventiven Betrieb wird die Auslastung stets unterhalb der \ac{PATL} gehalten, sodass auch im \mbox{(N-1)-Fall} keine Grenzwertverletzung auftritt.
 Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur \ac{PATL} im Normalbetrieb, nutzt nach Eintreten des Fehlerfalles das durch die \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine gezielte Gegenmaßnahme, bevor die transiente Stromtragfähigkeit überschritten wird.
 
-% BREITENANGABE: Sie bleibt, solange die Naturbreite der Datei bei 595 bp
-% liegt. Siehe den offenen Punkt 44 am Dateiende.
+% BREITENANGABE: entfallen. Die Datei entsteht jetzt in
+% bess_dispatch_optimization unter analysen/code/schrift/06_preventiv_kurativ/
+% und hat eine Naturbreite von 453,543 bp, also genau \textwidth. Offener
+% Punkt 44 damit erledigt.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\textwidth]{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
+    \includegraphics{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
     \caption{Vergleich der zeitlichen Betriebsmittelbelastung bei präventiver und kurativer Systemführung im Fehlerfall.}
     \label{fig:preventiv_kurativ}
 \end{figure}
@@ -401,11 +403,13 @@ Die folgende Darstellung folgt dieser Reihenfolge.
 % OFFEN 41: Die Caption ist um den Bezug auf den marktlichen Akteur
 % ergaenzt. Falls die Abbildung selbst noch die allgemeine Beschriftung
 % traegt, ist sie anzupassen, damit Schaubild und Caption uebereinstimmen.
-% BREITENANGABE: Sie bleibt, solange die Naturbreite der Datei bei 549 bp
-% liegt. Siehe den offenen Punkt 44 am Dateiende.
+% BREITENANGABE: entfallen. Die Datei entsteht jetzt in
+% bess_dispatch_optimization unter analysen/code/schrift/07_kurativer_prozess/
+% und hat eine Naturbreite von 453,543 bp, also genau \textwidth. Offener
+% Punkt 44 damit erledigt.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=1.0\textwidth]{figures/chapter_2/curative_process.pdf}
+    \includegraphics{figures/chapter_2/curative_process.pdf}
     \caption{Prozesskette einer kurativen Maßnahme bei Erbringung durch einen marktlichen Akteur.}
     \label{fig:curativ_process}
 \end{figure}
@@ -1607,13 +1611,19 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      und LODF-Sensitivitaeten, Kandidat leeuwen_integration_2020
 %  43  InnoSys-Dokument fuer die Berechnung der Zeit bis zur Grenztemperatur
 %      identifizieren, Abschlussbericht oder Systemfuehrungsprozess
-%  44  Die beiden draw.io-Abbildungen tragen eine Breitenangabe im
-%      \includegraphics, weil ihre Naturbreite mit 595 bp bei Abbildung 2.1
-%      und 549 bp bei Abbildung 2.2 ueber der Textbreite von 455 bp liegt.
-%      In den beiliegenden .drawio-Quellen ist die Zeichenflaeche auf
-%      160 mm zu setzen, die Schriftgroesse dort auf 9 pt zu stellen und
-%      der Export ohne Skalierung vorzunehmen. Danach entfaellt die
-%      Breitenangabe an beiden Stellen. Bis dahin bleibt sie stehen
+%  44  erledigt, aber anders als vorgesehen. Statt die .drawio-Quellen neu zu
+%      exportieren, entstehen beide Abbildungen jetzt in
+%      bess_dispatch_optimization mit matplotlib, unter
+%      analysen/code/schrift/06_preventiv_kurativ/ und
+%      analysen/code/schrift/07_kurativer_prozess/. Beide haben eine
+%      Naturbreite von 453,543 bp, also genau \textwidth, und sind mit
+%      demselben pdflatex und helvet gesetzt wie der Fliesstext. Die
+%      Breitenangabe ist an beiden Stellen entfallen. Damit stammen alle
+%      Abbildungen der Kapitel 1 und 2 aus einer Quelle.
+%      Die Dateien curative_process.drawio, curative_process.svg,
+%      preventiv_vs_curative_redispatch.drawio und
+%      preventiv_vs_curative_redispatch.svg unter figures/chapter_2/ sind
+%      damit gegenstandslos und koennen geloescht werden
 %  45  Abbildung 2.3 hat ein Seitenverhaeltnis von 0,46. Vorgesehen waren
 %      etwa 0,7, damit beide Teilbilder lesbar bleiben. Entscheiden, ob
 %      die flachere Fassung bleibt oder im Repository
