@@ -38,7 +38,16 @@
       "Bash(echo \"latexmk=$?\")",
       "Bash(cp C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/markt_zeitschiene.pdf C:/GIT-HUB/bess_dispatch_optimization/analysen/10_schrift/weber_optionswert.pdf c:/GIT-HUB/Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung/figures/chapter_2/)",
       "Bash(grep -nE '^\\\\\\\\\\(sub\\)?section\\\\{|^\\\\\\\\label\\\\{sec:' chapters/chapter_2.tex)",
-      "Bash(grep -nE \"^! |LaTeX Warning: \\(Reference|Citation\\)|Overfull \\\\\\\\\\\\\\\\hbox\" main.log)"
+      "Bash(grep -nE \"^! |LaTeX Warning: \\(Reference|Citation\\)|Overfull \\\\\\\\\\\\\\\\hbox\" main.log)",
+      "Bash(grep -nE 'DeclareMathOperator|newcommand.*\\\\\\\\\\(NNE|idx\\)|mathrm' extras/header.tex)",
+      "Bash(grep -oE \"Overfull \\\\\\\\\\\\\\\\hbox \\\\\\([0-9.]+pt\" main.log)",
+      "Bash(sort -u -t'\\(' -k2 -rn)",
+      "Bash(tasklist)",
+      "Bash(echo \"pass1=$?\")",
+      "Bash(echo \"pass2=$?\")",
+      "Bash(ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -i ~/.ssh/MA_ssh_key -T git@github.com)",
+      "Read(//c/Program Files/PuTTY//**)",
+      "Bash(tasklist //FI \"IMAGENAME eq pageant.exe\")"
     ],
     "additionalDirectories": [
       "\\tmp"
