@@ -47,7 +47,9 @@
       "Bash(echo \"pass2=$?\")",
       "Bash(ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new -i ~/.ssh/MA_ssh_key -T git@github.com)",
       "Read(//c/Program Files/PuTTY//**)",
-      "Bash(tasklist //FI \"IMAGENAME eq pageant.exe\")"
+      "Bash(tasklist //FI \"IMAGENAME eq pageant.exe\")",
+      "Bash(GIT_SSH=\"/c/Program Files/PuTTY/plink.exe\" git push)",
+      "Bash(GIT_SSH=\"/c/Program Files/PuTTY/plink.exe\" git ls-remote origin refs/heads/main)"
     ],
     "additionalDirectories": [
       "\\tmp"
