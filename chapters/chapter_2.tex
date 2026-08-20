@@ -1155,6 +1155,7 @@ An der hervorgehobenen Viertelstunde ist der innere Wert beider Optionen null, w
 Er beträgt 1,48\,\si{\text{\euro}\per MWh} auf der Ausspeiseseite und 2,29\,\si{\text{\euro}\per MWh} auf der Einspeiseseite.
 Dass die Einspeiseseite den höheren Wert trägt, folgt allein aus der Lage des erwarteten Preises, dessen Abstand zum unteren Grenzpreis mit 19,00\,\si{\text{\euro}\per MWh} kleiner ist als der Abstand von 24,04\,\si{\text{\euro}\per MWh} zum oberen.
 Je näher der erwartete Preis an einem Grenzpreis liegt, desto wahrscheinlicher wird die Ausübung und desto höher ist der Zeitwert.
+Diese Zerlegung ist zugleich der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt, denn eine Vergütung, die allein die bereits realisierte Preisdifferenz erstattet, zahlte für eine Viertelstunde ohne inneren Wert nichts, obwohl dem Betreiber mit der Anweisung auch die Chance auf eine günstigere Preisentwicklung genommen wird.
 
 % SPEZIFIKATION des Schemas des Optionswerts. Sie bleibt als Grundlage
 % spaeterer Aenderungen stehen, die Abbildung ist eingebunden. Das zweite
@@ -1232,6 +1233,7 @@ Der dritte bis fünfte Grund sind eigene Ableitungen aus der Systematik des fina
 Der erste liegt in der Annahme eines über den Tag konstanten Grenzpreises.
 Weber begründet diese Vereinfachung damit, dass sie bei hinreichend großen Speichern gültig ist, und hält zugleich fest, dass bindende Beckenrestriktionen bei der Ermittlung der entgangenen Optionalitäten zu berücksichtigen sind, indem nur die tatsächlich relevanten Stunden bewertet werden \cite[Abschnitt\,3.3]{weber_gutachten_2015}.
 Ein Batteriespeicher mit wenigen Stunden Entladedauer erfüllt die Voraussetzung nicht, denn bei ihm verschiebt jede Ein- oder Ausspeisung den Grenzpreis der folgenden Intervalle, sodass der vorgesehene Ausweg über die Auswahl relevanter Stunden zur Regel und nicht zum Einzelfall wird.
+Wie nah diese Grenze bereits bei einem Pumpspeicher liegt, zeigt das Berechnungsbeispiel selbst, denn dort endet die Bestimmung der Grenzpreise nach 16 Viertelstunden am Energievorrat der Anlage und nicht an der Wirtschaftlichkeit, die auch für die siebzehnte Viertelstunde noch erfüllt wäre \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
 Der zweite Grund ist die Pfadabhängigkeit des Handlungsspielraums.
 Das Optionsmodell bewertet jedes Zeitintervall isoliert, während die Möglichkeit einer Anlage, in einem Intervall auszuspeisen, vom Ladezustand abhängt, den vorangegangene Entscheidungen hinterlassen haben.
 Weber selbst benennt diese Vernachlässigung zeitübergreifender Restriktionen als Ursache einer tendenziellen Überschätzung der Optionalität \cite[Abschnitt\,6]{weber_gutachten_2015}, und Untersuchungen zur Übertragbarkeit auf weitere Technologien bestätigen den Befund \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
@@ -1527,9 +1529,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      rechnet exakt, die Anlage rundet die Optionswerte je MW auf fuenf
 %      Nachkommastellen und rechnet damit weiter. Text und Tabelle 2.4
 %      tragen die Werte der Anlage, weil die Quelle massgeblich ist. Die
-%      Abweichung betraegt 0,02 Prozent. Zu entscheiden ist, ob die
-%      Abbildung im Repository bess_dispatch_optimization auf die Werte
-%      der Anlage umgestellt wird. Zugleich traegt die Ordinate von
+%      Abweichung betraegt 0,02 Prozent. ENTSCHIEDEN am 20.08.2026: Die
+%      Abbildung bleibt bei den exakten Werten, weil sie damit richtig
+%      rechnet und die Differenz eine Aussage ueber die Anlage ist. Der
+%      Rechenweg ist in der README des Repositories
+%      bess_dispatch_optimization Variable fuer Variable belegt und dort
+%      von beiden Seiten unabhaengig nachgerechnet. Offen bleibt allein,
+%      ob die Abweichung im Fliesstext benannt wird, weil sonst zwei
+%      Zahlen ohne Erklaerung nebeneinander stehen. Zugleich traegt die Ordinate von
 %      Teilbild b die Einheit Euro je MW und Stunde, waehrend der Text
 %      Euro je MWh schreibt. Beides ist dasselbe, die Schreibweise sollte
 %      aber einheitlich sein
