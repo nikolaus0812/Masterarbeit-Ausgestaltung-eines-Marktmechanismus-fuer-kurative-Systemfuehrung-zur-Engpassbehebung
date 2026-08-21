@@ -24,7 +24,7 @@
 %       2.3.3 Verguetung von Redispatch-Massnahmen ........... 2
 %       2.3.4 Der modifizierte Weber-Ansatz ................. 2,5
 %       2.3.5 Zwischenfazit .................................. 1
-%   2.2 Batteriespeicher als Technologie des kurativen Akteurs  6
+%   2.2 Technologien kurativer Akteure ..................... 6
 %       2.2.1 Vergleich kurativer Technologien ............... 1,5
 %       2.2.2 Erloesquellen und Mehrfachvermarktung .......... 1,5
 %       2.2.3 Zielkonflikt zwischen Vermarktung und Verfuegbarkeit  2
@@ -208,13 +208,11 @@ Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Untersch
 Im präventiven Betrieb wird die Auslastung stets unterhalb der \ac{PATL} gehalten, sodass auch im \mbox{(N-1)-Fall} keine Grenzwertverletzung auftritt.
 Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur \ac{PATL} im Normalbetrieb, nutzt nach Eintreten des Fehlerfalles das durch die \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine gezielte Gegenmaßnahme, bevor die transiente Stromtragfähigkeit überschritten wird.
 
-% BREITENANGABE: entfallen. Die Datei entsteht jetzt in
-% bess_dispatch_optimization unter analysen/code/schrift/06_preventiv_kurativ/
-% und hat eine Naturbreite von 453,543 bp, also genau \textwidth. Offener
-% Punkt 44 damit erledigt.
+% BREITENANGABE: Sie bleibt, solange die Naturbreite der Datei bei 595 bp
+% liegt. Siehe den offenen Punkt 44 am Dateiende.
 \begin{figure}[htbp]
     \centering
-    \includegraphics{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
+    \includegraphics[width=1.0\textwidth]{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
     \caption{Vergleich der zeitlichen Betriebsmittelbelastung bei präventiver und kurativer Systemführung im Fehlerfall.}
     \label{fig:preventiv_kurativ}
 \end{figure}
@@ -403,13 +401,11 @@ Die folgende Darstellung folgt dieser Reihenfolge.
 % OFFEN 41: Die Caption ist um den Bezug auf den marktlichen Akteur
 % ergaenzt. Falls die Abbildung selbst noch die allgemeine Beschriftung
 % traegt, ist sie anzupassen, damit Schaubild und Caption uebereinstimmen.
-% BREITENANGABE: entfallen. Die Datei entsteht jetzt in
-% bess_dispatch_optimization unter analysen/code/schrift/07_kurativer_prozess/
-% und hat eine Naturbreite von 453,543 bp, also genau \textwidth. Offener
-% Punkt 44 damit erledigt.
+% BREITENANGABE: Sie bleibt, solange die Naturbreite der Datei bei 549 bp
+% liegt. Siehe den offenen Punkt 44 am Dateiende.
 \begin{figure}[htbp]
     \centering
-    \includegraphics{figures/chapter_2/curative_process.pdf}
+    \includegraphics[width=1.0\textwidth]{figures/chapter_2/curative_process.pdf}
     \caption{Prozesskette einer kurativen Maßnahme bei Erbringung durch einen marktlichen Akteur.}
     \label{fig:curativ_process}
 \end{figure}
@@ -738,14 +734,31 @@ Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Ec
 Damit bleibt die Frage offen, wie das Stellpotenzial eines Marktteilnehmers gesichert wird, denn eine marktliche Beschaffung kurativer Vorhalteleistung ist weder in den Pilotvorhaben noch in diesen Vorschriften enthalten.
 
 % ###############################################################
-\section{Batteriespeicher als Technologie des kurativen Akteurs}
-\label{sec:bess_actor}
+% UEBERSCHRIFT GEAENDERT am 20.08.2026: Sie lautete frueher
+% "Batteriespeicher als Technologie des kurativen Akteurs" und nahm damit
+% das Ergebnis des Vergleichs vorweg. Der Abschnitt erklaert jetzt zuerst
+% kurative Technologien allgemein, und der Batteriespeicher geht als
+% betrachtete Technologie aus dem Vergleich hervor.
+% MARKE GEAENDERT von sec:bess_actor nach sec:curative_technologies. Die
+% alte Marke war nirgends referenziert, weshalb die Umbenennung folgenlos
+% ist.
+\section{Technologien kurativer Akteure}
+\label{sec:curative_technologies}
 
-Die Betriebsführung von Batteriespeichern zwischen marktlicher Vermarktung und netzdienlichem Einsatz ist Gegenstand einer eigenen Forschungsrichtung.
-Arbeiten zu präventiven und kurativen Betriebsstrategien haben gezeigt, dass sich ein netzdienlicher Beitrag nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellen lässt \cite{lindner_operation_2023, porst_betriebskonzepte_2025}, und Untersuchungen zu den Erlöspotenzialen unter verändertem Marktdesign haben die wirtschaftliche Empfindlichkeit dieser Anpassung herausgearbeitet \cite{mahgoub_wie_2025}.
-Was diese Arbeiten offenlassen, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
-Genau diese Frage ist Gegenstand des folgenden Abschnitts.
-Er begründet zunächst, weshalb Batteriespeicher für das anspruchsvollste kurative Zeitfenster die einzige geeignete Technologie sind, stellt anschließend ihre Erlösquellen dar und arbeitet den Konflikt heraus, der zwischen der marktoptimalen Betriebsweise und der kurativen Verfügbarkeit entsteht.
+% NEUE EINLEITUNG, GEKUERZT am 20.08.2026. Sie sagt nur noch, WAS der
+% Abschnitt untersucht und WESHALB der rote Faden ihn an dieser Stelle
+% verlangt. Der Anschluss ist die Verfuegungsgewalt aus Abschnitt 2.1.2.
+% ZURUECKGENOMMEN: Eine Vorfassung beschrieb die Wirkprinzipien der
+% Technologiearten. Das doppelte den Maßnahmenraum aus 2.1.2 und den
+% Vergleich in 2.2.1. Nicht wieder aufnehmen.
+% KEIN \cite an dieser Stelle, weil der Absatz auf eine in Abschnitt 2.1.2
+% belegte Aussage zurueckgreift und selbst keine neue trifft.
+% ZUR AUFTEILUNG IN ZWEI FRAGEN: Sie ist bewusst gesetzt, weil sie den
+% Bogen bis Kapitel 4 spannt. Die technische Frage wird in diesem Abschnitt
+% beantwortet, die oekonomische erst mit dem Reservierungspreis.
+Die kurative Maßnahme ist nach Abschnitt \ref{sec:curative_functionality} auf die Zusage eines Anlagenbetreibers angewiesen, sobald sie über eine Anlage erbracht wird, die kein Betriebsmittel des \ac{ÜNB} ist.
+Damit stellt sich die Frage, welche Technologie eine solche Zusage einlösen kann und was ihr Betreiber dafür aufgibt.
+Dieser Abschnitt beantwortet die erste Frage über einen Vergleich der in Betracht kommenden Technologien und bereitet die zweite vor, indem er die Erlösquellen der gewählten Technologie und den Konflikt zwischen ihrer marktoptimalen Betriebsweise und der kurativen Verfügbarkeit darstellt.
 
 % ---------------------------------------------------------------
 \subsection{Vergleich kurativer Technologien}
@@ -755,51 +768,198 @@ Er begründet zunächst, weshalb Batteriespeicher für das anspruchsvollste kura
 % Wirkungsgrade und Degradation gehoeren NICHT hierher, sondern in
 % Abschnitt 3.4 als Modellannahmen.
 %
-% OFFEN 16: Die Tabelle ist ein Geruest. Die Spalte "Verfuegbarkeit 2030"
-% ist eine Einschaetzung und muss entweder belegt oder als eigene
-% Einschaetzung gekennzeichnet werden. Bitte Zelle fuer Zelle durchgehen.
+% TABELLE UEBERARBEITET am 20.08.2026, vier Entscheidungen:
+%   1  BREITE. Die Tabelle laeuft ueber \textwidth statt ueber feste
+%      Spaltenmaße, damit die Zellen ohne Trennstriche auskommen.
+%   2  REAKTIONSZEIT. Qualitative Stufen statt Zahlenangaben, weil
+%      Abschnitt 2.1.2 festhaelt, dass die zulaessige Dauer keine Konstante
+%      des Betriebsmittels ist. Eine Zahl in dieser Spalte widerspraeche
+%      dem. Die drei Klassen aus InnoSys 2030 bleiben der Bezugsrahmen und
+%      stehen im Fliesstext.
+%   3  BESTAND UND ENTWICKLUNG. Die Spalte nennt den Bestand 2024 und den
+%      Wert des Szenarios B fuer das Zieljahr 2037 nach dem Szenariorahmen
+%      zum Netzentwicklungsplan 2037/2045 in der Fassung von 2025. Damit
+%      ist sie belegt und keine eigene Einschaetzung mehr, OFFEN 16 ist
+%      erledigt.
+%      QUELLE: Netzentwicklungsplan Strom 2037/2045, Version 2025,
+%      2. Entwurf, Tabelle 1. Dort sind die Rahmendaten aus der Genehmigung
+%      des Szenariorahmens wiedergegeben. Zitiert wird der
+%      Netzentwicklungsplan selbst und nicht die Genehmigung, weil er das
+%      Dokument ist, aus dem die Tabelle stammt. Der bib-Eintrag
+%      bundesnetzagentur_netzentwicklungsplan_2026 liegt bereits vor und
+%      ist derselbe wie in Abschnitt 1.1.
+%      ZIELJAHR 2037 UND NICHT 2032: Die Tabelle weist nur die
+%      Zieljahre 2037 und 2045 aus. Ein Wert fuer 2032 liegt nicht vor.
+%      Abbildung 1.2 in Kapitel 1 nennt daneben das Zieljahr 2032, was auf
+%      einer anderen Quelle beruht. Vor Abgabe pruefen, ob beide Stellen
+%      auf dieselbe Fassung zu bringen sind, siehe den offenen Punkt 48.
+%      SZENARIO B UND NICHT A ODER C: Der Szenariorahmen fuehrt drei
+%      Szenarien. B ist gewaehlt, weil Abschnitt 1.1 dasselbe Szenario
+%      heranzieht. Zum Vergleich liegen die Grossbatteriespeicher 2037 bei
+%      41,1 GW in Szenario A und bei 67,6 GW in den Szenarien B und C.
+%      GROSSBATTERIESPEICHER UND NICHT ALLE BATTERIESPEICHER: Die Quelle
+%      unterscheidet Kleinbatteriespeicher mit 9,9 GW in der Referenz und
+%      59,5 GW im Szenario B 2037 von Grossbatteriespeichern mit 1,7 GW und
+%      67,6 GW. Massgeblich ist der zweite Wert, weil Heimspeicher als
+%      kurativer Akteur an einem Netzknoten des Uebertragungsnetzes nicht
+%      in Betracht kommen. Die Summe beider Werte ist NICHT einzutragen.
+%      WINDENERGIE: 72,7 ist die Summe aus 63,5 an Land und 9,2 auf See,
+%      214,2 die Summe aus 158,2 und 56.
+%   4  VERGUETUNGSPFAD. Die Spalte nennt die geltende Regelung des
+%      Engpassmanagements ueber die Fundstelle im EnWG und NICHT das
+%      Bewertungsverfahren. Der modifizierte Weber-Ansatz taucht hier
+%      bewusst nicht auf, weil er erst in Abschnitt 2.3.4 eingefuehrt wird
+%      und die Spalte sonst vorgreift.
+%      TRAGENDE UNTERSCHEIDUNG: Fuer Pumpspeicher ist die Bemessung
+%      GEREGELT, fuer Batteriespeicher OFFEN. Beide duerfen nicht
+%      gleichbehandelt werden, weil genau diese Differenz die
+%      Forschungsluecke in Abschnitt 2.4.3 traegt.
+%   5  ENERGIEBINDUNG. Wind und Photovoltaik binden keine Energie, sind
+%      dafuer aber dargebotsabhaengig, was ihre Verfuegbarkeit an dieselbe
+%      Wetterlage bindet, die den Engpass verursacht. Pumpspeicher und
+%      Batteriespeicher binden beide Energie, unterscheiden sich aber im
+%      Energieinhalt, was auf die erreichbare Bindungsdauer wirkt.
+% CAPTION: Der Zusatz "Eigene Darstellung" ist entfallen, weil die
+% Systematisierung fremden Quellen folgt und der Fliesstext das sagt. Die
+% Legende weist stattdessen die eine Spalte aus, die eigene Einschaetzung
+% ist.
 
-Die Eignung einer Technologie für die kurative Systemführung entscheidet sich anhand von vier Merkmalen, nämlich der erreichbaren Reaktionszeit, der Frage, ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, der zu erwartenden Verfügbarkeit im Zeithorizont 2030 sowie dem Vergütungspfad, über den die Bereitstellung heute abgebildet würde.
+% ZWECK DES VERGLEICHS. Die beiden ersten Saetze sind eigene Ableitung,
+% kein \cite setzen. Sie begruenden, weshalb ueberhaupt verglichen wird,
+% naemlich um die Eigenschaften zu finden, auf die der Mechanismus
+% zuschneiden soll, ohne an der Technologie anzusetzen.
+% VORWEGNAHME VON A4, bewusst: Der zweite Satz nimmt die
+% Diskriminierungsfreiheit vorweg. Ohne sie liesse sich der Vergleich nicht
+% begruenden. Anforderung A4 in Abschnitt 2.4.1 greift den Gedanken auf und
+% darf ihn nicht als neuen behaupten.
+% ENTFERNT: Das Kriterium der Verfuegungsgewalt stand hier und ist
+% entfallen, weil die Einleitung von 2.2 es bereits traegt.
+% ZUR AUFTEILUNG DER MERKMALE: Zwei betreffen die Anlage, eines den
+% Bestand und damit die Marktseite, und der Verguetungspfad steht in einem
+% eigenen Satz, weil er nicht die Eignung betrifft, sondern den Gegenstand
+% dieser Arbeit.
+Der Mechanismus soll die Anlagen erreichen, die eine kurative Zusage am verlässlichsten einlösen, ohne einzelne Technologien vom Zugang auszuschließen.
+Beides zugleich ist nur zu erreichen, wenn er nicht an der Technologie ansetzt, sondern an den Eigenschaften, auf die es ankommt.
+Welche das sind, zeigt der Vergleich der in Betracht kommenden Technologien.
+Er stützt sich auf zwei Eigenschaften der Anlage, nämlich die erreichbare Reaktionszeit und die Frage, ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, und stellt ihnen den Bestand und seine Entwicklung gegenüber, weil davon abhängt, wie viele geeignete Anbieter an einem Netzknoten zu erwarten sind.
+Hinzu tritt als viertes Merkmal der Vergütungspfad, über den ein Eingriff heute abgerechnet würde, der nicht die Eignung der Technologie betrifft, sondern die Frage, ob für sie bereits eine Bemessungsgrundlage besteht.
 Tabelle~\ref{tab:akteursvergleich} stellt die in Betracht kommenden Technologien entlang dieser Merkmale gegenüber.
 Die Systematisierung folgt der Flexibilitätstypologie nach Erzeugung, Verbrauch, Speicherung und Netz \cite{vde_etg_flexibilisierung_2023} sowie dem Maßnahmenkatalog aus InnoSys~2030 \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 
 \begin{table}[htbp]
     \centering
-    \caption{Vergleich kurativer Technologien. Eigene Darstellung.}
+    \caption{Vergleich der als kurativer Akteur in Betracht kommenden Technologien.}
     \label{tab:akteursvergleich}
     \small
-    \begin{tabular}{p{2.6cm}p{2.4cm}p{2.6cm}p{2.6cm}p{2.6cm}}
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{3.1cm}>{\raggedright\arraybackslash}p{2.8cm}>{\raggedright\arraybackslash}p{2.8cm}@{}}
         \hline
-        \textbf{Technologie} & \textbf{Reaktionszeit} & \textbf{Energiebindung} & \textbf{Verfügbarkeit 2030} & \textbf{Vergütungspfad} \\
+        \textbf{Technologie} & \textbf{Reaktionszeit} & \textbf{Energiebindung} & \textbf{Referenz 2024 und Szenario~B 2037 in \si{GW}} & \textbf{Vergütungspfad} \\
         \hline
-        Konventionelle Kraftwerke & Vorlaufzeit bis 24\,h & keine (brennstoff\-gebunden) & rückläufig & §\,13a \ac{EnWG}, Weber-Ansatz \\
-        Windenergie & schnell, nur abregelnd & keine & prognose\-abhängig & §\,13a \ac{EnWG} \\
-        Photovoltaik & schnell, nur abregelnd & keine & prognose\-abhängig, tageszeitlich begrenzt & §\,13a \ac{EnWG} \\
-        Pumpspeicher & Sekunden bis Minuten & ja & begrenzt, geografisch konzentriert & §\,13a \ac{EnWG}, Speicher\-behandlung offen \\
-        \ac{BESS} & Sekunden & ja, ladezustands\-abhängig & stark steigend & offen \\
+        Konventionelle Kraftwerke & langsam, Vorlaufzeit von Stunden & keine, brennstoffgebunden & 75,8, Rückgang auf 64,2 & §\,13a \ac{EnWG} \\
+        Windenergie & schnell, nur abregelnd & keine, dafür dargebotsabhängig & 72,7, Anstieg auf 214,2 & §\,13a \ac{EnWG} \\
+        Photovoltaik & schnell, nur abregelnd & keine, dafür dargebotsabhängig und tageszeitlich begrenzt & 99,8, Anstieg auf 345,4 & §\,13a \ac{EnWG} \\
+        Pumpspeicher & schnell & ja, großer Energieinhalt & 9,9, Anstieg auf 12,0 & §\,13a \ac{EnWG}, Bemessung geregelt \\
+        \ac{BESS} & sehr schnell & ja, geringer Energieinhalt & 1,7, Anstieg auf 67,6 & §\,13a \ac{EnWG}, Bemessung offen \\
         \hline
+        \multicolumn{5}{@{}p{13.7cm}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite[Tab.\,1]{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \ac{BESS} bezieht sich auf Großbatteriespeicher.} \\
     \end{tabular}
 \end{table}
 
-Der Vergleich zeigt, dass die Technologien nicht gleichmäßig über die drei Zeitfenster aus Abschnitt \ref{sec:curative_functionality} verteilt sind.
-Konventionelle Kraftwerke sind wegen ihrer Vorlaufzeiten auf das 15-Minuten-Fenster beschränkt und zugleich die Technologie mit rückläufiger Verfügbarkeit \cite{innosys_2030_gesamtverbund_innovationen_2021, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
-Wind- und Photovoltaikanlagen reagieren zwar schnell, stellen aber im Wesentlichen nur ein Abregelpotenzial bereit und sind in ihrer Verfügbarkeit an die Einspeisesituation gebunden, die dem Engpass typischerweise zugrunde liegt \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
-Pumpspeicher sind bidirektional und schnell und wurden im KuPilot-Pilotbetrieb bereits eingesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025, vde_etg_flexibilisierung_2023}.
-Ihre Kapazität ist jedoch begrenzt und geografisch stark konzentriert, sodass sie nur an wenigen Netzknoten wirksam sind.
-% GEKUERZT: Die netzbildende Regelung ist hier entfernt. Sie ist fuer die
-% kurative Hoeherauslastung ohne Bedeutung und wird in der Arbeit nicht
-% wieder aufgegriffen. Der Eintrag porst_betriebskonzepte_2025 bleibt ueber
-% 2.2.2 und die Einleitung von 2.2 in Gebrauch.
-\ac{BESS} bleiben damit die einzige Technologie, die das Zeitfenster von unter zehn Sekunden bedienen kann, dabei bidirektional wirkt und technisch für alle Schichten der Frequenzregelung geeignet ist \cite{garttan_battery_2025}.
-Für die weitere Untersuchung folgt daraus eine doppelte Begründung der Technologiewahl.
-\ac{BESS} sind unter den betrachteten Technologien die einzige, die das Zeitfenster von unter zehn Sekunden bedienen kann, und gleichzeitig die einzige, für die kein anwendbarer Vergütungspfad existiert.
-% ERGAENZUNG, Anschluss an Absatz 5 von Abschnitt 1.1: Dieselbe
-% Eigenschaft, die die Vermarktung bis kurz vor den Erfuellungszeitpunkt
-% erlaubt, qualifiziert die Technologie fuer das engste kurative
-% Zeitfenster. Der folgende Satz haelt das fest, ohne eine Aussage
-% darueber zu treffen, in welchem Umfang kurzfristige Engpaesse
-% entstehen.
-Es ist dabei dieselbe Eigenschaft, die diese Technologie für eine Vermarktung bis kurz vor den Erfüllungszeitpunkt und für einen Einsatz im engsten kurativen Zeitfenster qualifiziert.
+% NEU GEFASST am 20.08.2026. Die Einordnung erfolgt nach Anwendungsfaellen
+% und nicht mehr nach den drei Zeitfenstern. Die frueheren Saetze zum
+% 15-Minuten-Fenster und zum Zehnsekundenfenster sind entfallen, weil
+% Tabelle 2.1 die Reaktionszeit nur noch qualitativ fuehrt und die Saetze
+% ihr sonst widersprechen wuerden. Nicht wieder aufnehmen.
+% NEU AUFGENOMMEN: der Satz zur Senke bei Wind und Photovoltaik. Er loest
+% die Aussage aus Abschnitt 2.1.2 ein, dass eine kurative Massnahme
+% bilanziell auszugleichen ist und dafuer zwei Akteure erfordert.
+Die Technologien unterscheiden sich weniger darin, ob sie kurativ wirken können, als darin, unter welchen Bedingungen sie es tun.
+Konventionelle Kraftwerke wirken in beide Richtungen und binden keine Energie, sodass die Dauer einer Zusage ihre übrige Vermarktung kaum einschränkt.
+Ihre Vorlaufzeit schließt sie jedoch aus allen Anwendungsfällen aus, in denen die Leistungsänderung innerhalb weniger Minuten vorliegen muss, und ihr Bestand geht zurück \cite{innosys_2030_gesamtverbund_innovationen_2021, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
+Wind- und Photovoltaikanlagen reagieren schnell und binden ebenfalls keine Energie, stellen aber allein ein Abregelpotenzial bereit und wirken damit nur dort, wo die Entlastung durch eine Rücknahme von Einspeisung zu erreichen ist.
+Ihre Verfügbarkeit hängt am selben Dargebot, das den Engpass verursacht, was sie für die typischen Engpasssituationen verfügbar macht und sie zugleich auf diese beschränkt \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
+Da eine kurative Maßnahme nach Abschnitt \ref{sec:curative_functionality} bilanziell auszugleichen ist, setzt ihr Einsatz zusätzlich eine Senke voraus, die die zurückgenommene Einspeisung aufnimmt.
+Pumpspeicher wirken in beide Richtungen, reagieren schnell und tragen einen großen Energieinhalt, sodass auch eine über Stunden reichende Bindung nur einen kleinen Teil ihrer Kapazität beansprucht, und sie wurden im KuPilot-Pilotbetrieb bereits eingesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025, vde_etg_flexibilisierung_2023}.
+Ihre Zahl ist jedoch begrenzt und ihre Standorte sind geografisch konzentriert, sodass sie nur an wenigen Netzknoten wirksam sind.
+
+% ABSCHLUSSABSATZ, traegt die Technologiewahl.
+% GEAENDERT: Die frueher hier stehende Aussage, BESS seien die einzige
+% geeignete Technologie, ist zurueckgenommen. Tabelle 2.1 fuehrt
+% Pumpspeicher ebenfalls als schnell und bidirektional, weshalb der
+% Alleinstellungsanspruch dort nicht gedeckt ist. Der Unterschied liegt in
+% der Standortfreiheit und im wachsenden Bestand.
+% GEAENDERT am 20.08.2026: Hier stand der Satz, dieselbe Eigenschaft
+% qualifiziere die Technologie fuer eine Vermarktung bis kurz vor den
+% Erfuellungszeitpunkt und fuer einen kurativen Einsatz. Er war der
+% Anschluss an Absatz 5 von Abschnitt 1.1, blieb aber eine Behauptung ohne
+% technischen Grund. An seine Stelle tritt die Begruendung der kurzen
+% Reaktionszeit. Nicht wieder aufnehmen.
+% MECHANISMUS und darf nach der Stilregel ohne Fundstelle stehen.
+% FOLGE FUER KAPITEL 1: Der Kommentar vor dem Schlusssatz von Absatz 5 in
+% Abschnitt 1.1 verwies auf diesen Satz und ist entsprechend angepasst.
+% TRAGEND: Der Satz zum Energieinhalt fuehrt die Einschraenkung ein, aus
+% der in Abschnitt 2.2.3 der Zielkonflikt und in Kapitel 4 der
+% Reservierungspreis hervorgeht.
+\ac{BESS} vereinen die Eigenschaften, die bei den übrigen Technologien einzeln auftreten.
+% GEAENDERT am 20.08.2026: Der frueher hier stehende Halbsatz, BESS seien
+% technisch fuer alle Schichten der Frequenzregelung geeignet, ist
+% entfallen. Er beantwortet eine Frage, die der Abschnitt nicht stellt,
+% denn die Eignung fuer Primaer-, Sekundaer- und Minutenreserve sagt nichts
+% ueber die Eignung als kurativer Akteur im Engpassmanagement. Nicht wieder
+% aufnehmen. Der Eintrag garttan_battery_2025 bleibt ueber 2.2.2 und 2.2.4
+% in Gebrauch.
+% EIGENE ABLEITUNG, kein \cite setzen. Die beiden folgenden Saetze tragen
+% den Unterschied zu allen uebrigen Zeilen der Tabelle.
+% KORRIGIERT am 20.08.2026: Die Vorfassung sagte, die Stellfaehigkeit sei
+% nicht an einen Betriebszustand gebunden und die Anlage koenne aus jedem
+% Punkt ihres Arbeitsbereichs in beide Richtungen stellen. Das ist falsch,
+% denn eine Anlage an der Leistungsgrenze kann in dieser Richtung nicht
+% weiter stellen, und der Ladezustand begrenzt zusaetzlich. Richtig ist
+% allein, dass kein LAUFENDER BETRIEB Voraussetzung ist. Nicht wieder
+% verallgemeinern.
+% DER ZWEITE SATZ IST DIE EHRLICHE EINSCHRAENKUNG und zugleich der Keim des
+% Zielkonflikts in Abschnitt 2.2.3, denn genau die Abhaengigkeit vom
+% Betriebspunkt macht die Vorhaltung teuer.
+Sie wirken in beide Richtungen und erreichen die kürzesten Reaktionszeiten.
+Ihre Stellfähigkeit setzt dabei keinen laufenden Betrieb voraus, denn während ein konventionelles Kraftwerk am Netz sein muss, um seine Leistung senken zu können, und eine Windenergieanlage einspeisen muss, um abgeregelt werden zu können, kann ein Batteriespeicher auch aus dem Stillstand in beide Richtungen stellen.
+Wie viel Leistung in welcher Richtung verfügbar ist, hängt allerdings vom aktuellen Betriebspunkt und vom Ladezustand ab, denn eine Anlage, die bereits mit voller Leistung ein- oder ausspeist, kann in dieser Richtung nicht weiter stellen.
+% EIGENE ABLEITUNG, kein \cite setzen. Die Standortfreiheit ist der
+% eigentliche Unterschied zum Pumpspeicher und zugleich die Voraussetzung
+% der knotenscharfen Beschaffung. Anforderung A2 in Abschnitt 2.4.1 greift
+% den Gedanken auf und darf ihn nicht als neuen behaupten.
+Anders als Pumpspeicher sind sie in der Standortwahl nicht an die Topografie gebunden und kommen deshalb grundsätzlich an jedem Netzknoten in Betracht, und anders als konventionelle Kraftwerke wächst ihr Bestand.
+Für eine knotenscharfe Beschaffung ist das die entscheidende Eigenschaft, denn sie entscheidet darüber, ob an einem betroffenen Knoten überhaupt ein geeigneter Anbieter vorhanden ist.
+Technisch beruht diese Reaktionsfähigkeit auf der steuerbaren Leistungselektronik des Umrichters, deren Leistungsänderung keine mechanische Trägheit überwinden muss.
+% TRAGENDE STELLE, EIGENE ABLEITUNG, kein \cite setzen. Der Block dreht den
+% einzigen Nachteil der Technologie in ein Argument fuer die kurative
+% Systemfuehrung. Er folgt aus Material, das bereits im Kapitel steht,
+% naemlich aus der Rueckfuehrung in Abschnitt 2.1.2, in der der UENB den
+% (N-1)-sicheren Zustand ueber einen Redispatch wiederherstellt.
+% NICHT VERSCHAERFEN: Der zweite Satz ist als Mechanismus formuliert und
+% NICHT als Aussage darueber, in welchem Umfang Batteriespeicher heute im
+% Engpassmanagement eingesetzt werden. Eine solche Aussage waere ein Befund
+% ueber die Praxis und braeuchte eine Auswertung der Redispatch-Abrufe.
+% DER LETZTE SATZ IST UNVERZICHTBAR. Ohne ihn liest sich der Block so, als
+% spiele der Energieinhalt fuer die kurative Vorhaltung keine Rolle. Genau
+% das Gegenteil traegt Abschnitt 2.2.3 und den gesamten
+% Reservierungspreis. Die Einschraenkung verschwindet nicht, sie verschiebt
+% sich vom Abruf auf die Vorhaltung.
+Ihre Einschränkung liegt nicht in der Leistung, sondern im Energieinhalt.
+Für den Redispatch ist das der wesentliche Nachteil, weil dort die Leistungsänderung bis zur Auflösung des Engpasses zu halten ist und der Energieinhalt die erreichbare Dauer begrenzt.
+Die kurative Systemführung stellt diese Anforderung nicht, denn die Maßnahme überbrückt allein das Überlastintervall, bis der \ac{ÜNB} nach Abschnitt \ref{sec:curative_functionality} den \mbox{(N-1)-sicheren} Zustand über einen Redispatch wiederherstellt, sodass die abgerufene Energiemenge klein bleibt.
+Die Einschränkung verschiebt sich damit vom Abruf auf die Vorhaltung, denn gebunden ist der Ladezustandsbereich über die gesamte Bindungsdauer und nicht allein im Fehlerfall.
+% GEAENDERT am 20.08.2026: Der Schlusssatz sprach von einer doppelten
+% Begruendung der Technologiewahl und stellte damit zwei Befunde als
+% Argumentation nebeneinander. Er ist auf die schlichte Feststellung
+% zurueckgenommen, dass die technischen Voraussetzungen vorliegen und
+% allein die Verguetung offen ist. Nicht wieder zuspitzen.
+% PRAEZISIERT: Offen ist die Bemessung fuer Batteriespeicher im
+% Engpassmanagement ALLGEMEIN und nicht nur fuer die kurative Vorhaltung.
+% Grundlage ist der Vorbehalt der Beschlusskammer in Abschnitt 2.3.4. Die
+% weitere Fassung ist wichtig, weil die Forschungsluecke sonst enger
+% erscheint, als sie ist.
+Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, und die weitere Untersuchung richtet sich auf die Vergütung, deren Bemessung für diese Technologie im Engpassmanagement allgemein offen ist.
 
 % ---------------------------------------------------------------
 \subsection{Erlösquellen und Mehrfachvermarktung}
@@ -841,6 +1001,14 @@ Diese Konkurrenz ist Gegenstand des folgenden Abschnitts.
 % Text bewusst nicht verwendet. Falls sie aufgenommen werden soll, ist
 % die regulatorische Bezeichnung voranzustellen.
 
+% VERLAGERT aus der Einleitung von 2.2. Der Befund und die offene Frage
+% leiten hier unmittelbar in das Kernargument ueber. Falls sich beim
+% Durchgang zeigt, dass die drei Saetze das Kernargument ueberlagern, ist
+% daraus ein eigener Unterabschnitt zur Einbettung in die Einsatzplanung zu
+% machen.
+Arbeiten zu präventiven und kurativen Betriebsstrategien haben gezeigt, dass sich ein netzdienlicher Beitrag nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellen lässt \cite{lindner_operation_2023, porst_betriebskonzepte_2025}, und Untersuchungen zu den Erlöspotenzialen unter verändertem Marktdesign haben die wirtschaftliche Empfindlichkeit dieser Anpassung herausgearbeitet \cite{mahgoub_wie_2025}.
+Was diese Arbeiten offenlassen, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
+Ihre Ursache liegt in der Ressource, auf die jede solche Anpassung zugreift.
 Der Ladezustand eines Batteriespeichers ist die knappe Ressource, um die alle seine Vermarktungswege konkurrieren.
 Diese Konkurrenz ist regulatorisch bereits anerkannt und ausgestaltet, und zwar in den Präqualifikationsbedingungen für die Vorhaltung von \ac{FCR}.
 Sie schreiben vor, dass eine Anlage jederzeit in der Lage sein muss, die angebotene Leistung über einen definierten Zeitraum vollständig zu erbringen, und definieren daraus einen zulässigen Arbeitsbereich des Ladezustands, innerhalb dessen sich die Anlage bewegen darf.
@@ -1554,7 +1722,8 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %  14  erledigt, aus Anlage 2 beantwortet und als sechster Grund in 2.3.4
 %      aufgenommen, betroffen ist die Bewertungslogik
 %  15  Mitteilung der Beschlusskammer zu Batteriespeichern
-%  16  Spalte Verfuegbarkeit 2030 in Tabelle 2.3 belegen
+%  16  erledigt, die Spalte nennt jetzt Bestand und Entwicklung nach dem
+%      Netzentwicklungsplan und ist damit belegt statt geschaetzt
 %  17  Bezeichnung des reservierten Ladezustandsbandes
 %  18  Installierte Batteriespeicherkapazitaet im 2030-Szenario
 %  19  Verbleib der Abschnitte 2.4.1 und 2.4.2
@@ -1611,19 +1780,13 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      und LODF-Sensitivitaeten, Kandidat leeuwen_integration_2020
 %  43  InnoSys-Dokument fuer die Berechnung der Zeit bis zur Grenztemperatur
 %      identifizieren, Abschlussbericht oder Systemfuehrungsprozess
-%  44  erledigt, aber anders als vorgesehen. Statt die .drawio-Quellen neu zu
-%      exportieren, entstehen beide Abbildungen jetzt in
-%      bess_dispatch_optimization mit matplotlib, unter
-%      analysen/code/schrift/06_preventiv_kurativ/ und
-%      analysen/code/schrift/07_kurativer_prozess/. Beide haben eine
-%      Naturbreite von 453,543 bp, also genau \textwidth, und sind mit
-%      demselben pdflatex und helvet gesetzt wie der Fliesstext. Die
-%      Breitenangabe ist an beiden Stellen entfallen. Damit stammen alle
-%      Abbildungen der Kapitel 1 und 2 aus einer Quelle.
-%      Die Dateien curative_process.drawio, curative_process.svg,
-%      preventiv_vs_curative_redispatch.drawio und
-%      preventiv_vs_curative_redispatch.svg unter figures/chapter_2/ sind
-%      damit gegenstandslos und koennen geloescht werden
+%  44  Die beiden draw.io-Abbildungen tragen eine Breitenangabe im
+%      \includegraphics, weil ihre Naturbreite mit 595 bp bei Abbildung 2.1
+%      und 549 bp bei Abbildung 2.2 ueber der Textbreite von 455 bp liegt.
+%      In den beiliegenden .drawio-Quellen ist die Zeichenflaeche auf
+%      160 mm zu setzen, die Schriftgroesse dort auf 9 pt zu stellen und
+%      der Export ohne Skalierung vorzunehmen. Danach entfaellt die
+%      Breitenangabe an beiden Stellen. Bis dahin bleibt sie stehen
 %  45  Abbildung 2.3 hat ein Seitenverhaeltnis von 0,46. Vorgesehen waren
 %      etwa 0,7, damit beide Teilbilder lesbar bleiben. Entscheiden, ob
 %      die flachere Fassung bleibt oder im Repository
@@ -1634,6 +1797,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 %      wird. Betroffen sind die drei Ausschreibungszeitpunkte am Vortag,
 %      die Zeitpunkte der drei Intraday-Auktionen und die vier
 %      Handelsschlusszeitpunkte im vergroesserten Ausschnitt
+%  48  Zur vierten Spalte der Tabelle 2.1 sind drei Punkte offen.
+%      ERSTENS ist die Fundstelle mit \cite[Tab.\,1]{...} gesetzt. Falls die
+%      Betreuung Seitenangaben erwartet, ist die Seitenzahl im 2. Entwurf
+%      zu ergaenzen.
+%      ZWEITENS nennt Abbildung 1.2 in Kapitel 1 das Zieljahr 2032, das
+%      diese Tabelle nicht fuehrt, denn sie weist nur 2037 und 2045 aus.
+%      Beide Stellen auf dieselben Zieljahre bringen oder die Abweichung in
+%      der Legende der Abbildung erklaeren.
 %  47  Die Fussnote in Abbildung 2.5 nennt 73,85, 103,15 und 177,00 Euro.
 %      Anlage 5 weist 73,83, 103,13 und 176,96 Euro aus. Die Abbildung
 %      rechnet exakt, die Anlage rundet die Optionswerte je MW auf fuenf
