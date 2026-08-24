@@ -49,7 +49,7 @@
 % AUSSAGEN, DIE NICHT UNBEMERKT VERSCHAERFT WERDEN DUERFEN:
 %   - Die Einleitung nimmt die Technologiewahl nicht vorweg. Sie nennt
 %     Batteriespeicher als auf den ersten Blick geeignet und verweist
-%     fuer die Pruefung auf Abschnitt 2.2.1.
+%     fuer die Pruefung auf Abschnitt 2.2.
 %   - Die Einleitung behauptet nicht, dass Batteriespeicher kurzfristige
 %     Engpaesse erzeugen. Siehe die Notiz vor Absatz 5 von 1.1.
 %   - Bestimmt wird der KURATIVE RESERVIERUNGSPREIS. Er ist nicht der
@@ -98,14 +98,14 @@
 %      Vorhaltung. Der Unterschied zwischen beiden Auspraegungen wandert in
 %      die Bindungsdauer und damit in die Sensitivitaet in Abschnitt 4.4.
 %   2  Der modifizierte Weber-Ansatz ist rein informativ Stand der
-%      Technik in Abschnitt 2.3.4. Er wird weder nachgerechnet noch als
-%      Bestandteil des Optimierungsmodells gefuehrt. Abschnitt 3.6
+%      Technik in Abschnitt 2.3.3. Er wird weder nachgerechnet noch als
+%      Bestandteil des Optimierungsmodells gefuehrt. Abschnitt 3.4.1
 %      begruendet, weshalb das nicht ging.
 %   3  Die Dualvariablen der Ladezustandsbilanz sind aus der Methodik
 %      entfallen. Das Modell ist gemischt-ganzzahlig, weil die kurative
 %      Zusage je Periode binaer ist.
 %   4  Die Verifikation des Modells laeuft ueber den Revenue Index der
-%      ISEA Battery Charts in Abschnitt 3.7.
+%      ISEA Battery Charts in Abschnitt 3.4.2.
 %   5  Die gesuchte Groesse heisst durchgehend kurativer
 %      Reservierungspreis. Mindestverguetung, Verguetungsbereich,
 %      Untergrenze der Verguetung und Erloesdifferenz sind in allen
@@ -113,7 +113,7 @@
 %
 % ANSCHLUESSE AN SPAETERE KAPITEL, Stand 18.08.2026 alle erledigt:
 %   Kapitel 2 traegt die zugehoerigen Aufgaben am Ende von chapter_2.tex.
-%   chapter_3.tex, Abschnitte 3.1, 3.2, 3.4, 3.6 und 3.7 sowie
+%   chapter_3.tex, Abschnitte 3.2, 3.3.1, 3.3.3, 3.4.1 und 3.4.2 sowie
 %   chapter_4.tex, Abschnitte 4.3, 4.4 und 4.5 sind umgestellt.
 % ===============================================================
 
@@ -156,9 +156,17 @@ Verstärkt wird das Missverhältnis durch die Architektur des europäischen Stro
 Der deutsche Strommarkt folgt dem Selbstdispatch-Modell, in dem die Erzeugungs- und Verbrauchsfahrpläne sowie der Einsatz der Anlagen durch die Fahrplanverantwortlichen dieser Anlagen selbst bestimmt werden \cite[Art.\,2 Abs.\,17]{europaische_kommission_verordnung_2017_ebgl}.
 Maßgeblich für diese Entscheidung ist damit das Preissignal des Marktes und nicht der Zustand des Netzes.
 Innerhalb einer einheitlichen Gebotszone bildet der Börsenpreis die physikalische Belastung der Übertragungswege jedoch nicht ab, sodass marktoptimale Fahrpläne systematisch Leistungsflüsse erzeugen können, die das Netz nicht aufnehmen kann.
-Der \ac{ÜNB} verfügt über keinen Zugriff auf die Fahrplanbildung und kann die entstehende Netzüberlastung erst nachgelagert korrigieren.
+% WORTWAHL VEREINDEUTIGT am 24.08.2026. "Zugriff auf die Fahrplanbildung"
+% laesst offen, ob Kenntnis oder Verfuegung gemeint ist. Gemeint ist die
+% Verfuegung, denn der UENB bildet die Fahrplaene nicht mit. Kapitel 2
+% fuehrt die Unterscheidung durch, siehe das Zwischenfazit in Abschnitt
+% 2.3.6. Nicht wieder als fehlende Kenntnis formulieren.
+Der \ac{ÜNB} kann auf die Fahrplanbildung nicht einwirken und die entstehende Netzüberlastung deshalb erst nachgelagert korrigieren.
 Die Höhe des Engpassmanagementbedarfs ist damit keine rein technische Größe, sondern eine unmittelbare Folge der Entkopplung von marktlicher Fahrplanbildung und physikalischer Netzrestriktion.
-Abschnitt \ref{sec:market_horizons} greift diese Zuordnung auf und leitet aus ihr ab, dass kurative Stellpotenziale vom \ac{ÜNB} nicht angeordnet, sondern beschafft werden müssen.
+% VERWEIS NACHGEZOGEN am 24.08.2026. Die Ableitung steht nach der
+% Verlagerung im Zwischenfazit des Kapitels 2 und nicht mehr in
+% Abschnitt 2.3.1.
+Abschnitt \ref{sec:interim_conclusion} greift diese Zuordnung auf und leitet aus ihr ab, dass kurative Stellpotenziale vom \ac{ÜNB} nicht angeordnet, sondern beschafft werden müssen.
 
 Das Ergebnis dieser Entkopplung ist ein Eingriffsvolumen, das sich auf hohem Niveau verstetigt hat.
 Abbildung~\ref{fig:redispatch_jahresbedarf} stellt das jährliche Maßnahmenvolumen des Netzengpassmanagements dar, das die Reduzierung der Einspeisung und die zu deren Ausgleich erforderliche Erhöhung umfasst.
@@ -222,7 +230,7 @@ Ursache dieses Ausreißers war eine ausgeprägte Windfront im Dezember 2024 \cit
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
-    \caption{Jährliches Maßnahmenvolumen des Netzengpassmanagements der Jahre 2020 bis 2025, aufgeteilt nach hoch- und heruntergeregelter Energie. Eigene Darstellung auf Basis von \cite{bundesnetzagentur_mengen_nodate}.}
+    \caption{Jährliches Maßnahmenvolumen des Netzengpassmanagements der Jahre 2020 bis 2025, aufgeteilt nach hoch- und heruntergeregelter Energie. Auf Basis von \cite{bundesnetzagentur_mengen_nodate}.}
     \label{fig:redispatch_jahresbedarf}
 \end{figure}
 %\FloatBarrier
@@ -267,7 +275,7 @@ Das Entlastungspotenzial der kurativen Systemführung schätzt diese Arbeit nich
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_1/engpassmanagement_nep.pdf}
-    \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Eigene Darstellung auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
+    \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
     \label{fig:engpassmanagement_nep}
 \end{figure}
 %\FloatBarrier
@@ -287,9 +295,10 @@ Das Entlastungspotenzial der kurativen Systemführung schätzt diese Arbeit nich
 % technische Eigenschaft. Beim Ueberarbeiten nicht in eine
 % Tatsachenbehauptung verschaerfen.
 %
-% ZUM UMFANG: Der Absatz ist als Nebenbefund angelegt und umfasst zwoelf
-% Saetze. Falls das Seitenziel nicht haelt, sind die beiden Saetze zu den
-% Informationsluecken die ersten Kuerzungskandidaten.
+% ZUM UMFANG: Der Absatz ist als Nebenbefund angelegt und umfasst nach der
+% Streichung vom 24.08.2026 elf Saetze. Falls das Seitenziel nicht haelt,
+% sind die beiden verbliebenen Saetze zu den Informationsluecken die
+% ersten Kuerzungskandidaten.
 Neben dem Volumen verändert sich die zeitliche Struktur der Engpässe.
 Die präventive Betriebsplanung setzt voraus, dass die Netzbelastung des Erfüllungszeitpunkts bereits am Vortag hinreichend genau bekannt ist, denn nur dann lässt sich (N-1)-Sicherheit vorab herstellen.
 Diese Voraussetzung erodiert mit der Zunahme kurzfristig agierender Flexibilität.
@@ -301,14 +310,24 @@ Für Batteriespeicher liefert die Nachjustierung in diesem Fenster einen eigenst
 % Vorlauf nennen, ist die Fundstelle als \cite[S.\,XX]{...} zu
 % praezisieren. Eine Zahl gehoert nur in den Text, wenn sie belegt ist.
 Die Netzsicherheitsrechnung wird dabei nicht nur am Vortag, sondern im Verlauf des Erfüllungstages wiederholt durchgeführt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+% SATZ ENTFALLEN am 24.08.2026. Hier stand, der UENB koenne diese
+% Aenderungen nicht vorhersehen, weil ihm der Zugriff auf die
+% Fahrplanbildung fehle. Die Begruendung trifft nicht zu, denn im Regime
+% des Redispatch 2.0 werden die Einsatzplanungsdaten uebermittelt. Der
+% Grund liegt im ZEITPUNKT, und den nennt bereits der vorangehende Satz,
+% weshalb der Satz zugleich redundant war. NICHT wieder aufnehmen.
+% Die verbleibende Rede von Informationsluecken bleibt richtig, weil dem
+% UENB die Angabe zum Rechenzeitpunkt tatsaechlich fehlt. Sie steht damit
+% nicht im Widerspruch zu Abschnitt 2.3.6, der ein Verfuegungs- und kein
+% Informationsproblem beschreibt, denn dort geht es um den Zugriff auf den
+% Betriebspunkt und hier um die Kenntnis zum Rechenzeitpunkt.
 Auch ihr letzter Durchgang liegt jedoch vor dem Erfüllungszeitpunkt, sodass Fahrplanänderungen aus dem danach verbleibenden Handelsfenster in ihm nicht mehr enthalten sind.
-Der \ac{ÜNB} kann diese Änderungen nicht vorhersehen, weil ihm der Zugriff auf die Fahrplanbildung fehlt.
 Dem Marktteilnehmer wiederum zeigt der zonale Preis die Netzbelastung nicht an.
 Beide Informationslücken folgen aus der Ausgestaltung des Marktdesigns.
 Verändern sich die Leistungsflüsse nach dem letzten Rechendurchgang, kann ein Zustand entstehen, der nicht mehr (N-1)-sicher ist, weil sich eine präventive Gegenmaßnahme nicht mehr rechtzeitig disponieren lässt.
 In welchem Umfang solche Zustände auftreten, ist nicht Gegenstand dieser Arbeit.
 % Das Bietverhalten ist aus diesem Absatz entfernt und wird in Abschnitt
-% 2.2.3 behandelt, wo das Verguetungsregime dargestellt ist. In der
+% 2.3.5 behandelt, wo das Verguetungsregime dargestellt ist. In der
 % Einleitung war es eine Nebenlinie und hat den Absatz zugespitzt, ohne
 % zur Fragestellung beizutragen.
 % GEAENDERT am 20.08.2026: Der Schlusssatz ist jetzt einloesbar, weil die
@@ -321,9 +340,9 @@ In welchem Umfang solche Zustände auftreten, ist nicht Gegenstand dieser Arbeit
 % Der Schlusssatz benennt lediglich, was untersucht wird.
 % GEAENDERT am 20.08.2026: Hier stand der Hinweis, die Beobachtung, dass
 % dieselbe technische Eigenschaft die spaete Vermarktung und den kurativen
-% Einsatz ermoegliche, stehe in Abschnitt 2.2.1. Der dortige Satz ist
+% Einsatz ermoegliche, stehe in Abschnitt 2.2. Der dortige Satz ist
 % entfallen, weil er eine Behauptung ohne technischen Grund war. Abschnitt
-% 2.2.1 begruendet die kurze Reaktionszeit jetzt ueber die steuerbare
+% 2.2 begruendet die kurze Reaktionszeit jetzt ueber die steuerbare
 % Leistungselektronik. Der Zusammenhang zur spaeten Vermarktung wird in der
 % Arbeit nicht mehr ausdruecklich gezogen.
 Untersucht wird jedoch, ob eine kurative Systemführung auf diesen Befund wirken kann.
@@ -355,7 +374,7 @@ Als vergleichsweise neuer Akteur im Stromnetz erscheinen Batteriespeicher, im Fo
 
 % ---------------------------------------------------------------
 % OFFEN 12: Der Satz zu Kapitel 2 setzt voraus, dass die Anforderungen
-% A1 bis A6 dort verbleiben. Falls die Abschnitte 2.4.1 und 2.4.2 nach
+% A1 bis A6 dort verbleiben. Falls die Abschnitte 3.1.1 und 3.1.2 nach
 % Kapitel 3 wandern, ist die Ableitung der Anforderungen in den Satz zu
 % Kapitel 3 zu verschieben.
 % ALTERNATIVE UEBERSCHRIFT, falls die Betreuung sie erwartet:
@@ -411,7 +430,7 @@ Den Redispatch ersetzt sie nicht, sondern ergänzt ihn um einen Eingriff nach de
 % vorrangig und erwuenscht, aber keine Pflicht. Der Zweck ist der
 % kostenoptimale Betrieb des Systems.
 % OFFEN 14: Fundstelle fuer den Vorrang marktbasierter Massnahmen
-% praezisieren. Abschnitt 2.1.3 nennt dafuer die Verordnung ueber den
+% praezisieren. Abschnitt 2.1.4 nennt dafuer die Verordnung ueber den
 % Elektrizitaetsbinnenmarkt.
 Für ihre Beschaffung ist die marktliche Form vorrangig, weil sie den kostenoptimalen Betrieb des Systems unterstützt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 Da der Anlagenbetreiber im Selbstdispatch-Modell über den Dispatch seiner Anlage entscheidet, lässt sich kurative Verfügbarkeit über einen Anreiz setzen.
@@ -461,7 +480,7 @@ Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Er
 % ZWEI EBENEN, im Absatz bewusst getrennt gehalten:
 %   Produktseite. Bindungsdauer, Reaktionszeit und vorzuhaltende Leistung
 %     bestimmen, wie hoch der Reservierungspreis ausfaellt. Damit ist die
-%     Ausgestaltung in Abschnitt 3.1 die erste Bestimmungsgroesse.
+%     Ausgestaltung in Abschnitt 3.2 die erste Bestimmungsgroesse.
 %   Marktseite. Praequalifikationsanforderungen, Poenale bei
 %     Nichtlieferung, Liquiditaet und Zahl der geeigneten Anbieter am
 %     Knoten bestimmen, welcher Preis sich tatsaechlich einstellt. Diese
@@ -469,7 +488,7 @@ Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Er
 % WICHTIG: Der Satz sagt nicht mehr ausdruecklich, dass der Marktpreis
 % nicht bestimmt werden kann. Er nennt nur die zusaetzlich wirkenden
 % Groessen. Die Abgrenzung des Untersuchungsgegenstands muss deshalb in
-% Abschnitt 3.2 stehen, wo festgehalten ist, dass weder ein
+% Abschnitt 3.3.1 stehen, wo festgehalten ist, dass weder ein
 % Bietwettbewerb noch die netzweite Beschaffungsmenge modelliert wird.
 % Faellt sie dort weg, ist die Einschraenkung nirgends mehr ausgesprochen.
 %
@@ -478,7 +497,7 @@ Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Er
 % Teilfrage stellt diesen Vergleich nur als Frage.
 % ZUR POENALE, neu und in Kapitel 2 bis 4 noch nicht angelegt:
 % Die Poenale ist nicht nur ein Preisfaktor, sondern das
-% Durchsetzungsgegenstueck zur Bindung. Anforderung A1 in Abschnitt 2.4.1
+% Durchsetzungsgegenstueck zur Bindung. Anforderung A1 in Abschnitt 3.1.1
 % haelt fest, dass die Erfuellung binaer ist, weil eine verspaetete
 % Leistungsaenderung keinen verminderten, sondern keinen Wert hat. Eine
 % binaere Anforderung ohne Sanktion bei Nichterfuellung ist keine
@@ -507,13 +526,17 @@ Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative
 % Bezugspunkt erhalten, ist aber nicht die Aussage des Kapitels.
 %
 % DUALVARIABLEN SIND ENTFALLEN. Siehe die Anschlussliste im Dateikopf.
-Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung, die für sie in Betracht kommenden Technologien und die marktlichen Rahmenbedingungen des Engpassmanagements einschließlich der Beschaffung von Regelleistung.
-Es begründet die Technologiewahl, prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt, leitet die Anforderungen an einen kurativen Marktmechanismus ab und benennt den Forschungsbedarf.
+% GEAENDERT am 20.08.2026: Die Anforderungen und der Forschungsbedarf sind
+% ein eigenes Kapitel geworden und stehen nicht mehr in Kapitel 2. Der
+% Durchgang traegt deshalb einen zusaetzlichen Satz.
+Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung, die für sie in Betracht kommenden Technologien sowie die Vergütung und Beschaffung im Engpassmanagement einschließlich der Regelleistung.
+Es begründet die Technologiewahl und prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt.
 % GEAENDERT: Das Modell ist gemischt-ganzzahlig, weil die kurative Zusage
 % als Binaervariable abgebildet ist. Der zweite Satz nannte frueher ein
 % Referenzverfahren, womit der modifizierte Weber-Ansatz gemeint war. Dieser
 % ist kein Bestandteil der Methodik mehr.
-Kapitel~\ref{ch:design_model} entwirft das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert den Speicherbetrieb als gemischt-ganzzahliges lineares Optimierungsproblem.
+Kapitel~\ref{ch:design_model} leitet die Anforderungen an einen kurativen Marktmechanismus ab, gleicht sie gegen bestehende Marktdesignansätze ab und benennt den Forschungsbedarf.
+Darauf aufbauend entwirft es das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert den Speicherbetrieb als gemischt-ganzzahliges lineares Optimierungsproblem.
 Es beschreibt die verwendeten Eingangsdaten, begründet, weshalb sich die geltende Bemessungslogik für entgangene Erlösmöglichkeiten nicht in dieses Modell überführen lässt, und verifiziert die Implementierung gegen einen veröffentlichten Erlösindex für Batteriespeicher.
 Kapitel~\ref{ch:results} untersucht, wie sich eine kurative Vorhaltepflicht in den Betrieb eines Marktteilnehmers einfügt.
 Es stellt den Fahrplan, den Ladezustandsverlauf und die Erlöse unter Bindung dar, variiert anschließend die Produkt- und Anlagenparameter und bestimmt daraus den kurativen Reservierungspreis.

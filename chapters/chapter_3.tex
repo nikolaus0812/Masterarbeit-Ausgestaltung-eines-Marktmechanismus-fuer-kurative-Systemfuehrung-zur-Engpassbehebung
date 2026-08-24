@@ -2,17 +2,166 @@
 %%                       IAEW LaTeX Template                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Entwicklung eines Marktmechanismus für die kurative Systemführung}
+\chapter{Anforderungen und Entwicklung eines Marktmechanismus}
 \label{ch:design_model}
+% MARKE MITGEZOGEN am 20.08.2026: ch:requirements lag auf dem frueher
+% eigenstaendigen Kapitel der Anforderungen. Es ist in dieses Kapitel
+% eingegangen, weshalb die Marke hier liegt und gueltig bleibt.
+% sec:market_requirements liegt jetzt auf Abschnitt 3.1.1.
+\label{ch:requirements}
+
+%
+% OFFEN 19, ENTSCHIEDEN am 20.08.2026: Anforderungskatalog, Abgleich und
+% Forschungsbedarf stehen als Abschnitt 3.1.1 vor dem Produktentwurf und
+% nicht mehr in Kapitel 2. Sie sind eigene Herleitung und damit kein Stand
+% der Technik.
+%
+% ABGRENZUNG ZU KAPITEL 3: Hier steht, WAS der Mechanismus leisten muss.
+% WIE er ausgestaltet wird, steht in Abschnitt 3.2. Tauchen hier bereits
+% Bindungsdauern oder Beschaffungszeitpunkte auf, ist Kapitel 3
+% weggeschrieben.
+
+Aus den vorangehenden Abschnitten ergeben sich Anforderungen, die ein Mechanismus zur Beschaffung kurativer Vorhalteleistung erfüllen muss.
+Dieser Abschnitt stellt sie zusammen, prüft, ob bestehende Marktdesignansätze sie bereits erfüllen, und leitet daraus den Forschungsbedarf ab.
+
+% ---------------------------------------------------------------
+% ###############################################################
+\section{Anforderungen an einen kurativen Marktmechanismus}
+\label{sec:market_requirements}
+% [Ziel: 2,5 Seiten]
+%
+% GRUPPIERUNG vom 20.08.2026: Die drei Unterabschnitte beantworten
+% gemeinsam, WAS der Mechanismus leisten muss und weshalb es ihn nicht
+% gibt. Erst danach beginnt der eigene Entwurf.
+% EINLEITUNG dieses Abschnitts noch zu schreiben, etwa drei Saetze.
+
+% ---------------------------------------------------------------
+\subsection{Anforderungskatalog}
+\label{sec:requirements_catalogue}
+%
+% Die Nummerierung ist eingefuehrt, damit die Vergleichsmatrix in 3.1.2
+% und die Produktdefinition in 3.2 darauf verweisen koennen.
+% GEAENDERT: A1 traegt jetzt die Sanktionsbeduerftigkeit der binaeren
+% Erfuellung, weil eine binaere Anforderung ohne Poenale keine
+% verbindliche Zusage ist. A5 ist auf den Reservierungspreis umgestellt.
+
+Aus der Argumentation dieses Kapitels lassen sich sechs Anforderungen an einen Mechanismus zur Beschaffung kurativer Vorhalteleistung ableiten.
+Sie beschreiben ausschließlich, was der Mechanismus leisten muss, während die konkrete Ausgestaltung in Abschnitt \ref{sec:product_design} erfolgt.
+
+\begin{description}
+    \item[A1 -- Reaktionsgeschwindigkeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit durch das betroffene Betriebsmittel und die Betriebssituation vorgegeben und keine Wahlgröße des Akteurs ist. Die Erfüllung ist binär, denn eine verspätete Leistungsänderung hat keinen verminderten, sondern keinen Wert. Eine binäre Anforderung setzt eine Sanktion bei Nichterfüllung voraus, da die Zusage andernfalls nicht verbindlich ist (aus Abschnitt \ref{sec:curative_functionality}).
+    \item[A2 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, da die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein \cite{blank_determination_2024}.
+    \item[A3 -- Vergütung der Vorhaltung] Bemessungsgegenstand muss die verbindliche Bereitstellung von Reaktionsfähigkeit sein und nicht der durchgeführte Eingriff, da die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen (aus Abschnitt \ref{sec:interim_conclusion}). Bemessungsdimension ist dabei nicht allein die vorgehaltene Leistung, sondern auch die Dauer der Bindung, weil diese über die Zahl der gebundenen Intervalle die Erlöswirkung bestimmt (aus Abschnitt \ref{sec:soc_conflict}).
+    \item[A4 -- Diskriminierungsfreiheit] Der Zugang muss technologieoffen ausgestaltet sein und dem Vorrang marktbasierter Beschaffung vor Redispatch entsprechen \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+    \item[A5 -- Anreizkompatibilität] Die Vergütung muss mindestens den kurativen Reservierungspreis erreichen, weil im Selbstdispatch-Modell die Fahrplanhoheit beim Anlagenbetreiber liegt und Verfügbarkeit nur über einen Anreiz und nicht über eine Anweisung herstellbar ist (aus Abschnitt \ref{sec:interim_conclusion}).
+    \item[A6 -- Vereinbarkeit mit bestehenden Verpflichtungen] Der Mechanismus muss mit den Präqualifikations- und Vermarktungsverpflichtungen vereinbar sein, unter denen die Anlage bereits steht, insbesondere mit dem für die Regelleistungsvorhaltung reservierten Ladezustandsbereich (aus Abschnitt \ref{sec:soc_conflict}).
+\end{description}
+
+Die Anforderungen sind nicht unabhängig voneinander.
+A5 und A6 stehen in einem Spannungsverhältnis, das den quantitativen Kern dieser Arbeit bildet.
+Je enger der durch bestehende Verpflichtungen bereits gebundene Ladezustandsbereich ausfällt, desto höher ist der Wert der zusätzlich aufzugebenden Vermarktungsoption und damit der nach A5 erforderliche Reservierungspreis.
+A1 und A5 sind ebenfalls gekoppelt, da eine höhere Pönale die Verbindlichkeit der Zusage stärkt, zugleich aber eine Risikoprämie erzeugt und den geforderten Preis erhöht.
+A2 und A4 können in Konflikt treten, da eine netzknotenscharfe Beschaffung in Gebieten mit wenigen geeigneten Anlagen zu geringer Wettbewerbsintensität führt.
+Diese Zusammenhänge werden in Kapitel~\ref{ch:discussion} aufgegriffen.
+
+% ---------------------------------------------------------------
+\subsection{Abgleich bestehender Marktdesignansätze}
+\label{sec:market_design_comparison}
+%
+% OFFEN 20: Die Bewertungen in der Matrix sind eigene Einschaetzungen und
+% muessen im Fliesstext begruendet sein. Eine Matrix mit unbegruendeten
+% Symbolen ist in der Verteidigung angreifbar. Bitte pruefen, ob die
+% Begruendung jeweils traegt.
+% GEAENDERT: Die Regelleistung ist als fuenfte Zeile aufgenommen. Sie
+% fehlte, obwohl sie A3 erfuellt und damit der naechstliegende Vergleich
+% ist.
+
+Bevor ein neuer Mechanismus entworfen wird, ist zu prüfen, ob bestehende oder diskutierte Marktdesignansätze die Anforderungen A1 bis A6 bereits erfüllen.
+Tabelle~\ref{tab:designabgleich} stellt fünf Ansätze gegenüber.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Abgleich bestehender Marktdesignansätze mit dem Anforderungskatalog. Eigene Bewertung.}
+    \label{tab:designabgleich}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.34\textwidth-\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Ansatz} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
+        \hline
+        Lokationale Preisbildung / Zonenteilung & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
+        Lokationale Redispatch-Preise & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
+        Regelleistungsmärkte & $\bullet$ & -- & $\bullet$ & $\bullet$ & $\bullet$ & $\circ$ \\
+        Kapazitätsmechanismen & -- & $\circ$ & $\bullet$ & $\bullet$ & $\bullet$ & -- \\
+        Netzbooster & ($\bullet$) & ($\bullet$) & ($\bullet$) & -- & -- & -- \\
+        \hline
+        \multicolumn{7}{@{}p{\textwidth}@{}}{\footnotesize $\bullet$ erfüllt \quad $\circ$ teilweise erfüllt \quad ($\bullet$) konzeptionell erfüllt, im Betrieb nicht bestätigt \quad -- nicht erfüllt} \\
+    \end{tabular}
+\end{table}
+
+Die lokationale Preisbildung, sei es über eine Teilung der Gebotszone oder über knotenscharfe Preise, adressiert die Ursache des Problems an der richtigen Stelle, indem sie Netzrestriktionen in die Fahrplanbildung internalisiert und damit den Redispatchbedarf verringert \cite{oggioni_market_2013, newbery_market_2018, einsiedler_analysis_2025}.
+Sie erzeugt jedoch kein Produkt für vorgehaltene Reaktionsfähigkeit, denn ein lokationaler Preis bewertet die Einspeisung an einem Knoten und nicht die Fähigkeit, sie im Fehlerfall innerhalb von Sekunden zu ändern.
+Dasselbe gilt für lokationale Redispatch-Preise, die eine sachgerechtere Bemessung des durchgeführten Eingriffs erlauben \cite{blank_determination_2024}, den Bemessungsgegenstand aber nicht von der Arbeit auf die Vorhaltung verlagern und damit A3 nicht erfüllen.
+Die Regelleistungsmärkte erfüllen A1, A3, A4 und A5, weil sie nach Reaktionszeit differenzierte Produkte im Wettbewerb beschaffen und die Bereitstellung vergüten.
+Ihnen fehlt jedoch die Lokationalität, und die Vereinbarkeit mit weiteren Verpflichtungen ist nur teilweise gegeben, da der reservierte Ladezustandsbereich bereits durch die Präqualifikation gebunden ist.
+Kapazitätsmechanismen vergüten ebenfalls die Bereitstellung und nicht die Erzeugung und erfüllen A3 damit konzeptionell \cite{consentec_ausarbeitung_2024, bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
+Sie sind jedoch auf Leistungsbilanzsicherheit und nicht auf Netzengpässe ausgerichtet, weshalb ihnen die geforderte Lokationalität und die Differenzierung nach Reaktionszeit fehlen.
+% KORRIGIERT am 20.08.2026: Die Vorfassung sagte, das Netzbooster-Konzept
+% halte Leistung vor und erfuelle A1 bis A3. Die Vorhaben befinden sich in
+% der Umsetzung und eine Betriebserprobung steht aus, siehe Abschnitt
+% 2.1.3. Die Erfuellung ist damit konzeptionell und nicht erprobt.
+% NICHT WIEDER als erfuellt formulieren, ohne den Umsetzungsstand zu
+% pruefen. Beide Stellen muessen denselben Stand tragen.
+Am nächsten kommt der Anforderung das Netzbooster-Konzept, das speicherbasierte Leistung standortscharf für den Fehlerfall vorhalten soll und A1 bis A3 damit konzeptionell erfüllt \cite{consentec_systembooster_2026}.
+Eine Bestätigung im Betrieb steht allerdings aus, weil sich die Vorhaben nach Abschnitt \ref{sec:challenges} noch in der Umsetzung befinden.
+Es beruht allerdings auf einer regulierten Anlage im Eigentum oder unter Verfügung des Netzbetreibers und nicht auf einer wettbewerblichen Beschaffung von Marktteilnehmern.
+A4 und A5 sind damit nicht adressiert, und die Frage nach der Vergütung eines am Markt tätigen Anbieters stellt sich in diesem Konzept nicht.
+Genau diese Abgrenzung markiert den Gegenstand der vorliegenden Arbeit.
+
+% ---------------------------------------------------------------
+\subsection{Ableitung des Forschungsbedarfs}
+\label{sec:research_gap}
+%
+% Hier folgt die Luecke aus der Argumentation des Kapitels, statt in der
+% Einleitung behauptet zu werden.
+% GEAENDERT: Der Reifegrad ist zurueckgenommen, die Luecke ist auf die
+% Ueberkreuzstellung zugespitzt, und die gesuchte Groesse ist der
+% Reservierungspreis.
+
+Die Argumentation dieses Kapitels lässt sich zu einer Lücke zusammenführen.
+Die kurative Höherauslastung ist im Echtbetrieb erprobt, und der rechtliche Rahmen aus §\,13 \ac{EnWG} und \ac{SO GL} steht ihr nicht entgegen, sondern legt sie über das Kostenminimierungsgebot nahe.
+Für das anspruchsvollste Zeitfenster sind Batteriespeicher die einzige geeignete Technologie.
+Ihre Verfügbarkeit setzt jedoch eine Vorhaltung des Ladezustands voraus, die mit der marktoptimalen Betriebsweise und mit bereits bestehenden Präqualifikationsverpflichtungen konkurriert.
+Für diese Vorhaltung existiert keine passende Bemessungsgrundlage.
+Die Regelleistung vergütet Vorhaltung, kennt aber keinen Netzbezug.
+Die Systematik des §\,13a \ac{EnWG} ist knotenscharf, bemisst aber den durchgeführten Eingriff, Vorhaltekosten sind nach ihr nicht erstattungsfähig, und die Anwendung der optionsbasierten Bewertungslogik auf Batteriespeicher hat die Beschlusskammer in der geltenden Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+Die Lücke ist damit nicht aus dem Fehlen von Literatur erschlossen, sondern durch einen regulatorischen Befund belegt.
+Sie besteht nicht darin, dass eine Vergütung von Vorhaltung fehlt, sondern darin, dass keine bestehende Logik Vorhaltung und Lokationalität verbindet.
+Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A6 genügt, und den kurativen Reservierungspreis bestimmt, den ein Batteriespeicher für dessen Bereitstellung fordern muss.
 % ===============================================================
-% Zielumfang Kapitel 3: 16 Seiten
-%   3.1 Entwurf des kurativen Marktprodukts .................. 4
-%   3.2 Modellierungsansatz und Systemgrenzen ................ 2
-%   3.3 Grundlagen der gemischt-ganzzahligen Optimierung ..... 1
-%   3.4 Mathematische Formulierung des Speichermodells ....... 4,5
-%   3.5 Eingangsdaten und Szenariorahmen ..................... 2,5
-%   3.6 Abgrenzung gegenueber dem modifizierten Weber-Ansatz . 1
-%   3.7 Verifikation des Modells ............................. 1
+% Zielumfang Kapitel 3: 19 Seiten
+%   3.1 Anforderungen an einen kurativen Marktmechanismus ... 2,5
+%       3.1.1 Anforderungskatalog ......................... 1
+%       3.1.2 Abgleich bestehender Marktdesignansaetze ..... 1
+%       3.1.3 Ableitung des Forschungsbedarfs ............ 0,5
+%   3.2 Entwurf des kurativen Marktprodukts ................. 4
+%   3.3 Modellierung des Speicherbetriebs .................. 10
+%       3.3.1 Modellierungsansatz und Systemgrenzen ........ 2
+%       3.3.2 Grundlagen der gemischt-ganzzahligen Optimierung  1
+%       3.3.3 Mathematische Formulierung des Speichermodells  4,5
+%       3.3.4 Eingangsdaten und Szenariorahmen ............ 2,5
+%   3.4 Reichweite und Absicherung des Modells .............. 2
+%       3.4.1 Abgrenzung gegenueber dem Weber-Ansatz ....... 1
+%       3.4.2 Verifikation des Modells .................... 1
+%
+% ZUR GLIEDERUNGSTIEFE: Abschnitt 3.2 fuehrt keine Unterabschnitte, weil
+% der Produktentwurf ein zusammenhaengender Gedankengang ist. Ein Abschnitt
+% ohne Unterabschnitte neben solchen mit Unterabschnitten ist zulaessig und
+% in Abschnitt 2.2 ebenso geloest.
+%
+% ZUSAMMENLEGUNG VOM 20.08.2026: Das kurzzeitig eigenstaendige Kapitel mit
+% dem Anforderungskatalog ist als Abschnitt 3.1 in dieses Kapitel
+% eingegangen, weil die Kette von den Anforderungen ueber das Produkt zum
+% Modell durchlaeuft und eine Kapitelgrenze sie zerschneidet.
 %
 % Dieses Kapitel enthält den eigenen Beitrag der Arbeit. Der
 % Produktentwurf steht bewusst VOR der Modellierung, damit die
@@ -20,24 +169,24 @@
 %
 % ENTSCHEIDUNGEN VOM 18.08.2026, verbindlich fuer dieses Kapitel:
 %   1  Der modifizierte Weber-Ansatz ist rein informativ Stand der
-%      Technik und steht in Abschnitt 2.3.4. Er geht NICHT in das
+%      Technik und steht in Abschnitt 2.3.3. Er geht NICHT in das
 %      Optimierungsmodell ein und wird NICHT nachgerechnet. Der frueher
 %      hier stehende Kernsatz, das Verfahren der Festlegung werde
 %      uebernommen und die iterative Grenzpreisbestimmung durch
 %      Dualvariablen ersetzt, ist aufgegeben. Nicht wieder aufnehmen.
-%   2  Der frueher gemeinsame Abschnitt 3.6 ist geteilt. Abschnitt 3.6
+%   2  Der frueher gemeinsame Abschnitt 3.4.1 ist geteilt. Abschnitt 3.4.1
 %      traegt die BEGRUENDUNG, weshalb der Ansatz nicht in die
-%      Optimierung eingehen konnte, Abschnitt 3.7 die VERIFIKATION des
+%      Optimierung eingehen konnte, Abschnitt 3.4.2 die VERIFIKATION des
 %      eigenen Modells. Ohne die Teilung entfiele die Verifikation
 %      ersatzlos, weil das Berechnungsbeispiel der Bundesnetzagentur als
 %      Pruefmassstab wegfaellt.
-%   3  Abschnitt 3.6 fuehrt ausschliesslich methodische Gruende und
+%   3  Abschnitt 3.4.1 fuehrt ausschliesslich methodische Gruende und
 %      keine Zahlen, weil das Kapitel vor den Ergebnissen steht.
 %   4  Die Dualvariablen der Ladezustandsbilanz sind aus der Methodik
 %      entfallen. Das Modell ist gemischt-ganzzahlig, weil die kurative
 %      Zusage je Periode nur ganz oder nicht erfolgen kann.
 %   5  Die Verifikation laeuft ueber den Revenue Index der ISEA Battery
-%      Charts, siehe Abschnitt 3.7.
+%      Charts, siehe Abschnitt 3.4.2.
 %
 % TERMINOLOGIE: Die gesuchte Groesse heisst kurativer Reservierungspreis.
 % Mindestverguetung, Verguetungsbereich, Untergrenze der Verguetung und
@@ -46,11 +195,12 @@
 % ===============================================================
 
 % ---------------------------------------------------------------
+% ###############################################################
 \section{Entwurf des kurativen Marktprodukts}
 \label{sec:product_design}
 % [Ziel: 4 Seiten]
 %
-% Hier wird der Anforderungskatalog aus Abschnitt 2.4.1 in ein
+% Hier wird der Anforderungskatalog aus Abschnitt 3.1.1 in ein
 % konkretes Produkt übersetzt. Jede Designentscheidung muss auf eine
 % Anforderung zurückverweisen.
 %
@@ -63,8 +213,8 @@
 % Nicht wieder aufnehmen.
 %
 % VORLAGE FUER DIE PRODUKTSTRUKTUR ist stattdessen die Trennung von
-% Leistungsvorhaltung und Arbeitsabruf bei der aFRR aus Abschnitt 2.3.2.
-% Abschnitt 2.3.2 kuendigt diese Vorlage ausdruecklich an, weshalb sie
+% Leistungsvorhaltung und Arbeitsabruf bei der aFRR aus Abschnitt 2.3.4.
+% Abschnitt 2.3.4 kuendigt diese Vorlage ausdruecklich an, weshalb sie
 % hier einzuloesen ist.
 
 \begin{itemize}
@@ -83,7 +233,7 @@
 % sondern bindet Leistung und Ladezustandsband. Der Speicher darf weiter
 % handeln, muss aber zu jedem Zeitpunkt der Bindung Energie und
 % Leistungsreserve in der geforderten Richtung vorhalten.
-% Kapitel 2 hat diese Entscheidung bereits getroffen. Abschnitt 2.2.3
+% Kapitel 2 hat diese Entscheidung bereits getroffen. Abschnitt 2.3.5
 % beschreibt durchgehend die schwaechere Variante, und Anforderung A6
 % verlangt die Vereinbarkeit mit den bestehenden
 % Vermarktungsverpflichtungen, was eine vollstaendige Sperre ausschliesst.
@@ -94,7 +244,19 @@
 % liegen kann, ohne dass die Rechnung fehlerhaft waere.
 
 % ---------------------------------------------------------------
-\section{Modellierungsansatz und Systemgrenzen}
+% ###############################################################
+\section{Modellierung des Speicherbetriebs}
+\label{sec:storage_modelling}
+% [Ziel: 10 Seiten]
+%
+% GRUPPIERUNG vom 20.08.2026: Die vier Unterabschnitte fuehren vom
+% Modellierungsansatz ueber die Loesungsmethode und die Formulierung bis zu
+% den Daten. Sie beantworten gemeinsam, WIE der Speicherbetrieb unter dem
+% in Abschnitt 3.1.2 entworfenen Produkt abgebildet wird.
+% EINLEITUNG dieses Abschnitts noch zu schreiben, etwa drei Saetze.
+
+% ---------------------------------------------------------------
+\subsection{Modellierungsansatz und Systemgrenzen}
 \label{sec:model_scope}
 % [Ziel: 2 Seiten]
 
@@ -148,7 +310,7 @@
 % ===============================================================
 
 % ---------------------------------------------------------------
-\section{Grundlagen der gemischt-ganzzahligen linearen Optimierung}
+\subsection{Grundlagen der gemischt-ganzzahligen linearen Optimierung}
 \label{sec:lp_gurobi}
 % [Ziel: 1 Seite, diese Vorgabe strikt einhalten]
 %
@@ -169,12 +331,12 @@
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Mathematische Formulierung des Speichermodells}
+\subsection{Mathematische Formulierung des Speichermodells}
 \label{sec:storage_model}
 % [Ziel: 5 Seiten]
 %
 % HIERHER gehören die technischen BESS-Eigenschaften -- SoC-Dynamik,
-% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.2.1.
+% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.2.
 
 \begin{itemize}
     \item Zielfunktion, nämlich Erlösmaximierung über die Spotmärkte
@@ -197,7 +359,7 @@
 % zugehoerige Punkt F9 in Abschnitt 5.4 ist mit dieser Fassung entfallen.
 
 % ---------------------------------------------------------------
-\section{Eingangsdaten und Szenariorahmen}
+\subsection{Eingangsdaten und Szenariorahmen}
 \label{sec:input_data}
 % [Ziel: 2,5 Seiten]
 
@@ -214,13 +376,25 @@
 % reproduzierbar.
 
 % ---------------------------------------------------------------
-\section{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
+% ###############################################################
+\section{Reichweite und Absicherung des Modells}
+\label{sec:model_scope_verification}
+% [Ziel: 2 Seiten]
+%
+% GRUPPIERUNG vom 20.08.2026: Beide Unterabschnitte betreffen die Frage,
+% was das Modell leistet und was nicht. Der erste begruendet, was es
+% bewusst NICHT abbildet, der zweite prueft, ob das, was es abbildet,
+% plausibel ist.
+% EINLEITUNG dieses Abschnitts noch zu schreiben, zwei Saetze genuegen.
+
+% ---------------------------------------------------------------
+\subsection{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
 \label{sec:weber_exclusion}
 % [Ziel: 1 Seite]
 %
 % AUFGABE DIESES ABSCHNITTS: Begruenden, weshalb sich das in Abschnitt
-% 2.3.4 dargestellte Verfahren nicht als Bestandteil des
-% Optimierungsmodells fuehren laesst. Abschnitt 2.3.4 nennt sechs
+% 2.3.3 dargestellte Verfahren nicht als Bestandteil des
+% Optimierungsmodells fuehren laesst. Abschnitt 2.3.3 nennt sechs
 % INHALTLICHE Gruende, die gegen die Anwendbarkeit auf Batteriespeicher
 % sprechen. Hier stehen die drei METHODISCHEN Gruende, die gegen eine
 % Einbettung in das eigene Modell sprechen. Beide Ebenen sind
@@ -243,7 +417,7 @@
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Verifikation des Modells}
+\subsection{Verifikation des Modells}
 \label{sec:model_verification}
 % [Ziel: 1 Seite]
 %
@@ -292,3 +466,39 @@
     \item Abgleich der Anlagenparameter und Dokumentation von Indexstand, Abrufdatum und Auswertungszeitraum
     \item Ergebnis des Abgleichs und Anschluss an die Würdigung der vollständigen Preiskenntnis in Abschnitt \ref{sec:model_critique}
 \end{itemize}
+% ===============================================================
+% ZU DEN ABSCHNITTEN 3.1.1 BIS 3.1.3, uebernommen am 20.08.2026
+% HERKUNFT: Der Inhalt stand zuvor als Abschnitt 2.4 in chapter_2.tex und
+% kurzzeitig als eigenes Kapitel. Er steht jetzt am Anfang dieses Kapitels,
+% weil die Kette von den Anforderungen ueber das Produkt zum Modell
+% durchlaeuft. Die Marken ch:requirements und sec:market_requirements
+% liegen auf dem Kapitelanfang, damit alte Verweise gueltig bleiben.
+%
+% ARGUMENTATIONSBOGEN:
+%   4.1 Was der Mechanismus leisten muss, abgeleitet aus Kapitel 2.
+%   4.2 Ob ein bestehender Ansatz das bereits leistet.
+%   4.3 Die Luecke, die daraus folgt.
+%
+% ABGRENZUNG ZU KAPITEL 4: Hier steht, WAS der Mechanismus leisten muss.
+% WIE er ausgestaltet wird, steht in Abschnitt 5.1. Tauchen hier bereits
+% Bindungsdauern oder Beschaffungszeitpunkte auf, ist Kapitel 5
+% weggeschrieben.
+%
+% STILVORGABE wie in den Kapiteln 1 und 2, also vollstaendige Saetze, keine
+% Doppelpunkte, keine Gedankenstriche, keine Semikola im Fliesstext.
+%
+% ZWEI VORWEGNAHMEN AUS ABSCHNITT 2.2, nicht als neue Befunde behaupten:
+%   A2 Der Satz zur knotenscharfen Beschaffung ist dort ueber die
+%      Standortfreiheit der Batteriespeicher vorbereitet.
+%   A4 Der Satz, der Mechanismus muesse an Eigenschaften und nicht an der
+%      Technologie ansetzen, steht dort bereits.
+%
+% OFFENE PUNKTE
+%   1  Die Bewertungen in Tabelle 4.1 sind eigene Einschaetzungen und
+%      muessen im Fliesstext begruendet sein. Eine Matrix mit
+%      unbegruendeten Symbolen ist in der Verteidigung angreifbar.
+%   2  Vor Abgabe pruefen, ob eine Mitteilung der Beschlusskammer zu
+%      Batteriespeichern ergangen ist. Dieser Punkt traegt die
+%      Forschungsluecke. Recherchestand August 2026 ist, dass keine
+%      vorliegt.
+% ===============================================================

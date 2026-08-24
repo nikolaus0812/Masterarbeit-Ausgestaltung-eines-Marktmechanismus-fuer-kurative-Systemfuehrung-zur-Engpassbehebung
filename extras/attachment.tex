@@ -1,6 +1,337 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                       IAEW LaTeX Template                        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ---------------------------------------------------------------------------
+% Anhang: Berechnung des entgangenen Erloeses nach der Festlegung BK8-22-0001-A
+%
+% HERKUNFT: erstellt am 24.08.2026 aus Anlage 1 (Begruendung, 73 S.,
+% 05.06.2024) und Anlage 5 (Beispielrechnung). Anlage 2 ist das
+% Weber-Gutachten und wird ueber den bestehenden Schluessel
+% weber_gutachten_2015 zitiert.
+%
+% NACHGERECHNET am 24.08.2026 gegen die 96 Viertelstundenpreise der
+% Intraday-Eroeffnungsauktion vom 01.02.2024. Alle Grenzpreise, alle acht
+% Abrechnungspreise und beide Optionswerte reproduzieren. Zahlen deshalb
+% NICHT ohne erneutes Nachrechnen aendern.
+%
+% KONVENTIONEN: Das Dokument verwendet \hline und nicht booktabs sowie
+% \si{\text{\euro}\per MWh} und keine eigenen SI-Einheiten. Der Anhang ist
+% darauf umgestellt, damit die Praeambel keine zusaetzlichen Pakete braucht.
+% ---------------------------------------------------------------------------
 
-\chapter{Anhang A}
-\label{ch:anhang_a}
+\chapter{Berechnung des entgangenen Erlöses nach der Festlegung}
+\label{anh:weber}
+
+\section{Gegenstand}
+\label{anh:weber:gegenstand}
+
+Die Festlegung BK8-22-0001-A bestimmt den angemessenen finanziellen Ausgleich für Anpassungen der Wirkleistungserzeugung oder des Wirkleistungsbezugs nach §\,13a Abs.\,2 \ac{EnWG} \cite{bundesnetzagentur_festlegung_2024}.
+Auszugleichen sind je Viertelstunde der Maßnahme die Erzeugungsauslagen, der anteilige Werteverbrauch und die entgangenen Erlösmöglichkeiten, soweit letztere die beiden erstgenannten Positionen übersteigen \cite[Anlage\,1, S.\,13]{bundesnetzagentur_anlage1_2024}.
+Die entgangenen Erlösmöglichkeiten werden über den modifizierten Weber-Ansatz als Optionswert bestimmt, dessen methodische Grundlage das Gutachten in Anlage 2 liefert \cite{weber_gutachten_2015}.
+
+Dieser Anhang stellt das Verfahren für Tagesspeicher vollständig dar und rechnet es anhand des veröffentlichten Beispiels nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+Die Darstellung folgt dem Rechenweg, nämlich zuerst der Bestimmung der Grenzpreise, dann der daraus abgeleiteten Abrechnungspreise und zuletzt der Bewertung der Optionalität.
+Abschnitt~\ref{sec:weber_limits} des Hauptteils begründet, weshalb sich dieses Verfahren nicht auf Batteriespeicher übertragen lässt.
+
+\section{Erzeugungsauslagen und Grenzpreise}
+\label{anh:weber:grenzpreis}
+
+\subsection{Einsatzpreis als Bezugsgröße}
+\label{anh:weber:einsatzpreis}
+
+Für Speicheranlagen tritt an die Stelle brennstoffbezogener Auslagen ein Einsatzpreis.
+Er entspricht dem Wert der Lageenergie des Wassers, der im Rahmen einer zukünftigen Vermarktung erzielt werden kann, und wird über den Schattenpreis bestimmt, also über die Preisuntergrenze, ab der ein Einsatz wirtschaftlich sinnvoll ist \cite[Anlage\,1, S.\,20]{bundesnetzagentur_anlage1_2024}.
+Maßgeblich ist dabei das Verhältnis zwischen Turbinengröße und Beckenvolumen.
+
+Bei Tagesspeichern ergeben sich aufgrund des kurzen Planungshorizonts und des Einflusses von Regelleistungsabrufen im zeitlichen Verlauf variable Einsatzpreise.
+Für die Abwicklung von Redispatch-Maßnahmen werden aus prozessualer Sicht dennoch zumindest täglich konstante Arbeitspreise bevorzugt \cite[Anlage\,1, S.\,20]{bundesnetzagentur_anlage1_2024}.
+Der beschriebene Ansatz vernachlässigt daher die Regelleistungserbringung und berücksichtigt Beckenrestriktionen nur eingeschränkt.
+
+\subsection{Iterative Bestimmung}
+\label{anh:weber:iteration}
+
+Die Grenzpreise für den Turbineneinsatz $g_T$ und den Pumpeinsatz $g_P$ werden iterativ aus dem anlagenspezifischen Wirkungsgrad $\eta$, dem arbeitsabhängigen Netznutzungsentgelt für den Pumpbetrieb $c_{NNE}$, den zur Verfügung stehenden Turbinenvolllaststunden und den Ergebnissen der Viertelstunden-Intraday-Eröffnungsauktion bestimmt \cite[Anlage\,1, S.\,22]{bundesnetzagentur_anlage1_2024}.
+Die zur Verfügung stehenden Turbinenvolllaststunden sind dabei definiert als die Dauer in Stunden, bis die maximal mögliche Wassermenge mit voller Turbinenleistung vom Oberbecken in das Unterbecken abgelassen werden kann.
+Zwei Bedingungen sind einzuhalten, nämlich die Energieumwandlung nach Gleichung~\eqref{eq:anh:weber:umwandlung} und die ökonomische Effizienz nach Gleichung~\eqref{eq:anh:weber:effizienz}.
+
+\begin{align}
+  t_T \cdot P_T &= t_P \cdot P_P \cdot \eta \label{eq:anh:weber:umwandlung}\\
+  g_T \cdot \eta &> g_P + c_{NNE} \label{eq:anh:weber:effizienz}
+\end{align}
+
+Darin bezeichnen $P_T$ und $P_P$ die verfügbare Turbinen- beziehungsweise Pumpleistung sowie $t_T$ und $t_P$ die Dauer, in der mit $P_T$ turbiniert beziehungsweise mit $P_P$ gepumpt wird.
+% PRUEFEN: Anlage 1 setzt die Effizienzbedingung auf S. 22 mit einem
+% ueberzaehligen Operator, und Anlage 5 wiederholt den Setzfehler. Die hier
+% gesetzte Fassung ist die einzige sinnvolle Lesart und wird durch das
+% Zahlenbeispiel bestaetigt. Vor der Abgabe am Originaldokument pruefen.
+
+Der Prozess läuft unabhängig vom konkreten Speicherfüllstand allein anhand der Preisdauerlinie ab.
+Er beginnt mit der Kombination aus der teuersten Viertelstunde und dem über Gleichung~\eqref{eq:anh:weber:umwandlung} gewählten preisgünstigsten Zeitbereich und schreitet dann zur zweitteuersten Viertelstunde und zum zweitgünstigsten Zeitbereich fort.
+Beendet wird er durch die erstmalige Nichterfüllung der ökonomischen Effizienz oder spätestens dann, wenn die Anzahl der Iterationen die maximal verfügbare Turbinenarbeit überschreiten würde \cite[Anlage\,1, S.\,23]{bundesnetzagentur_anlage1_2024}.
+Die Preise des letzten erfolgreichen Iterationsschritts ergeben $g_T$ und $g_P$.
+
+Für den Fall eines außergewöhnlich flachen Preisprofils, in dem keine ökonomisch effiziente Wälzung möglich ist, sieht die Festlegung ein Ersatzverfahren vor, das auf dem Tagesdurchschnittspreis $p_m$ aufsetzt \cite[Anlage\,1, S.\,23]{bundesnetzagentur_anlage1_2024}.
+
+\begin{align}
+  g_T &= p_m + \frac{p_m \left(1 - \eta\right) + c_{NNE}}{1 + \eta} \label{eq:anh:weber:ersatzT}\\
+  g_P &= p_m - \frac{p_m \left(1 - \eta\right) + c_{NNE}}{1 + \eta} \label{eq:anh:weber:ersatzP}
+\end{align}
+
+\subsection{Die drei Preisbereiche}
+\label{anh:weber:bereiche}
+
+Anhand der beiden Grenzpreise zerfällt die geordnete Preisreihe des Tages in drei Bereiche \cite[Anlage\,1, S.\,24]{bundesnetzagentur_anlage1_2024}.
+Im obersten Bereich zwischen $g_T$ und dem Tageshöchstpreis wird turbiniert, im untersten zwischen $g_P$ und dem Tagestiefstpreis wird gepumpt.
+Im mittleren Bereich lassen die Preise kein wirtschaftliches Wälzen zu, weshalb er mit dem Mittelwert der beiden Grenzpreise genähert wird.
+Die beiden äußeren Bereiche werden durch ihre Mittelwerte nach Gleichung~\eqref{eq:anh:weber:mittelwerte} beschrieben, wobei $n_T$ die Anzahl der Viertelstunden mit einem Preis oberhalb von $g_T$ und $n_P$ die Anzahl der Viertelstunden mit einem Preis unterhalb von $g_P$ bezeichnet.
+
+\begin{equation}
+  \overline{p}_T = \frac{\sum_{p \geq g_T} p}{n_T}
+  \qquad
+  \overline{p}_P = \frac{\sum_{p \leq g_P} p}{n_P}
+  \qquad
+  \overline{p}_M = \frac{g_T + g_P}{2}
+  \label{eq:anh:weber:mittelwerte}
+\end{equation}
+
+\section{Die Abrechnungspreise}
+\label{anh:weber:abrechnung}
+
+Eine Redispatch-Maßnahme an einem Tagesspeicher zieht wegen der Änderung des Speicherinhalts eine Änderung des Speicherprogramms auch außerhalb des Maßnahmenzeitraums nach sich.
+Die Festlegung unterscheidet hierfür vier Fälle in jeweils zwei Varianten \cite[Anlage\,1, S.\,21\,f.]{bundesnetzagentur_anlage1_2024}.
+Eine Erhöhung des Turbineneinsatzes führt außerhalb des Zeitraums entweder zu einer Erhöhung des Pumpeinsatzes oder zu einer Minderung des Turbineneinsatzes.
+Eine Minderung des Turbineneinsatzes führt entweder zu einer Minderung des Pumpeinsatzes oder zu einer Erhöhung des Turbineneinsatzes.
+Eine Minderung des Pumpeinsatzes führt entweder zu einer Minderung des Turbineneinsatzes oder zu einer Erhöhung des Pumpeinsatzes.
+Eine Erhöhung des Pumpeinsatzes führt entweder zu einer Erhöhung des Turbineneinsatzes oder zu einer Minderung des Pumpeinsatzes.
+
+Die acht Reaktionsmöglichkeiten werden mit den Näherungswerten aus Gleichung~\eqref{eq:anh:weber:mittelwerte} bewertet \cite[Anlage\,1, S.\,24]{bundesnetzagentur_anlage1_2024}.
+
+\begin{align}
+  p_{1a} &= \frac{\overline{p}_M + c_{NNE}}{\eta}  &  p_{1b} &= \overline{p}_T \label{eq:anh:weber:p1}\\
+  p_{2a} &= \frac{\overline{p}_P + c_{NNE}}{\eta}  &  p_{2b} &= \overline{p}_M \label{eq:anh:weber:p2}\\
+  p_{3a} &= \overline{p}_T \cdot \eta - c_{NNE}    &  p_{3b} &= \overline{p}_M \label{eq:anh:weber:p3}\\
+  p_{4a} &= \overline{p}_M \cdot \eta - c_{NNE}    &  p_{4b} &= \overline{p}_P \label{eq:anh:weber:p4}
+\end{align}
+
+Die wechselseitigen Bezüge folgen der Richtung der Ausgleichsreaktion.
+Eine Variante, die zusätzliche Pumparbeit erfordert, dividiert den maßgeblichen Preis durch den Wirkungsgrad und addiert das Netznutzungsentgelt, weil die zusätzliche Arbeit erst eingespeichert werden muss.
+Eine Variante, die zusätzliche Turbinenarbeit auslöst, multipliziert stattdessen mit dem Wirkungsgrad und zieht das Netznutzungsentgelt ab.
+Die Varianten $p_{1b}$, $p_{2b}$, $p_{3b}$ und $p_{4b}$ greifen unmittelbar auf den Mittelwert desjenigen Preisbereichs zurück, in dem die Ausgleichsreaktion stattfindet.
+
+Weil sich vorab nicht feststellen lässt, über welche der beiden Varianten ein Fall tatsächlich ausgeglichen wird, und weil den Betreibern insbesondere bei zusätzlicher Erbringung von Regelleistung regelmäßig nur die ungünstigere Variante zur Verfügung steht, wird jeweils die für den Anlagenbetreiber günstigere Formel gewählt \cite[Anlage\,1, S.\,25]{bundesnetzagentur_anlage1_2024}.
+Tabelle~\ref{tab:anh:weber:varianten} fasst die Auswahlregel zusammen.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Auswahl zwischen den beiden Varianten eines Falles. Nach \cite[Anlage\,1, S.\,25]{bundesnetzagentur_anlage1_2024}.}
+    \label{tab:anh:weber:varianten}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.25\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.23\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Anweisung} & \textbf{Zahlungsrichtung} & \textbf{Bezeichnung} & \textbf{Regel} \\
+        \hline
+        Erhöhung Turbineneinsatz & Netzbetreiber an Anlagenbetreiber & $p_{\mathrm{Turb,pos}}$ & $\max(p_{1a}, p_{1b})$ \\
+        Minderung Turbineneinsatz & Anlagenbetreiber an Netzbetreiber & $p_{\mathrm{Turb,neg}}$ & $\min(p_{2a}, p_{2b})$ \\
+        Minderung Pumpeinsatz & Netzbetreiber an Anlagenbetreiber & $p_{\mathrm{pump,pos}}$ & $\max(p_{3a}, p_{3b})$ \\
+        Erhöhung Pumpeinsatz & Anlagenbetreiber an Netzbetreiber & $p_{\mathrm{pump,neg}}$ & $\min(p_{4a}, p_{4b})$ \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Die Festlegung benennt die Vereinfachungen, die den Ansatz aus Maximum und Minimum rechtfertigen \cite[Anlage\,1, S.\,25]{bundesnetzagentur_anlage1_2024}.
+Genannt werden die Annahme vollständiger Verfügbarkeit der Anlage zum Betrieb gegen Marktpreise, die Vernachlässigung von Systemdienst- und Besicherungsleistung sowie die Vernachlässigung der Änderung kurzfristiger Marktpreise.
+Die Einschränkung auf eine tagesscharfe Betrachtung führt besonders an Tagesgrenzen zu Abweichungen, sodass zum realen Ausgleich der Beckenstände eine teurere Alternative erforderlich werden kann.
+Das Zugrundelegen der Viertelstundenauktion als Preiskurve hat nach Angabe der Festlegung einen eher unterschätzenden Effekt auf die ermittelten Vergütungspreise.
+
+\section{Die Optionalität}
+\label{anh:weber:option}
+
+\subsection{Eingangsgrößen}
+\label{anh:weber:eingang}
+
+Der Optionswert bemisst den Verlust an Flexibilität, den eine Redispatch-Anweisung nach der ersten Fahrplanabgabe verursacht.
+Die Festlegung geht dabei vereinfachend davon aus, dass Anweisungen ausschließlich nach 14:30 Uhr des Vortages erfolgen, sodass alle Handelsmöglichkeiten auf dem Termin- und dem Day-Ahead-Markt unberührt bleiben \cite[Anlage\,1, S.\,49]{bundesnetzagentur_anlage1_2024}.
+Drei Eingangsgrößen gehen ein, nämlich der Erwartungswert des Intraday-Preisniveaus $\mu$, das Volatilitätsmaß $\sigma$ und der Strikepreis $X$ \cite[Anlage\,1, S.\,51]{bundesnetzagentur_anlage1_2024}.
+
+Als Erwartungswert dienen die Ergebnisse der Viertelstunden-Intraday-Eröffnungsauktion, die am Vortag um 15:15 Uhr verfügbar sind \cite[Anlage\,1, S.\,54]{bundesnetzagentur_anlage1_2024}.
+Für Maßnahmen vor 14:30 Uhr wird ersatzweise auf das stündliche Day-Ahead-Ergebnis zurückgegriffen, das über viertelstundenscharfe Auf- und Abschläge aus den mittleren Abweichungen der letzten 90 Tage umgerechnet wird.
+
+Das Volatilitätsmaß wird abweichend vom ursprünglichen Vorschlag nicht einmal monatlich über zwölf Monate, sondern rollierend für jedes Viertelstundenprodukt über die jeweils letzten 30 Tage ermittelt \cite[Anlage\,1, S.\,54]{bundesnetzagentur_anlage1_2024}.
+Datengrundlage ist die Differenz zwischen den volumengewichteten Preisen der letzten Stunde vor Handelsschluss, also dem Index der Viertelstundenprodukte des kontinuierlichen Intraday-Handels, und den Preisen der Intraday-Eröffnungsauktion.
+Die Berechnung erfolgt nach Gleichung~\eqref{eq:anh:weber:sigma} am Vortag $T-1$ für den Liefertag $T$ auf Basis der Tage $T-2$ bis $T-31$ \cite[Anlage\,1, S.\,55]{bundesnetzagentur_anlage1_2024}.
+
+\begin{equation}
+  \sigma = \sqrt{\frac{\sum_{i=1}^{n} \left( x_i - \mu_i \right)^2}{n}}
+  \label{eq:anh:weber:sigma}
+\end{equation}
+
+Darin ist $x_i$ der Index des untersuchten Viertelstundenprodukts, $\mu_i$ der entsprechende Preis der Viertelstunden-Intraday-Eröffnungsauktion und $n$ die Anzahl der untersuchten Elemente, also 30.
+Eine Umrechnung auf die Restlaufzeit bis zum Erfüllungszeitpunkt sieht die Festlegung nicht vor.
+
+Der Strikepreis entspricht den vorab gemeldeten arbeitsabhängigen Erzeugungsauslagen der Anlage.
+Für Tagesspeicher wird auf die Grenzpreise $g_T$ und $g_P$ zurückgegriffen \cite[Anlage\,1, S.\,55]{bundesnetzagentur_anlage1_2024}.
+% PRUEFEN: Fuer den Markttest nach Anlage 1, S. 39 gilt abweichend der
+% Mittelwert aus g_T und g_P als Strikepreis. Die dortige Verweisung duerfte
+% ein Verweisfehler sein. Vor der Abgabe pruefen.
+
+\subsection{Bewertungsformel}
+\label{anh:weber:formel}
+
+Die Schwankungen des Intraday-Marktes werden als arithmetische Brownsche Bewegung abgebildet, wobei die absoluten Preisänderungen als normalverteilte Zufallsvariablen modelliert werden und sich damit auch negative Strompreise ergeben können \cite[Anlage\,1, S.\,51]{bundesnetzagentur_anlage1_2024}.
+Der Wert der Call-Option und der Put-Option folgt daraus je Leistungseinheit nach den Gleichungen~\eqref{eq:anh:weber:call} und \eqref{eq:anh:weber:put} \cite[Anlage\,1, S.\,52]{bundesnetzagentur_anlage1_2024}.
+
+\begin{align}
+  d &= \frac{\mu - X}{\sigma} \label{eq:anh:weber:d}\\
+  V_C(X,\mu,\sigma) &= \sigma \left( d\,\Phi(d) + \varphi(d) \right) \label{eq:anh:weber:call}\\
+  V_P(X,\mu,\sigma) &= \sigma \left( \varphi(d) - d\,\Phi(-d) \right) \label{eq:anh:weber:put}
+\end{align}
+
+Darin sind $\Phi$ die Verteilungsfunktion und $\varphi$ die Dichtefunktion der Standardnormalverteilung.
+Beide Werte sind auf die Leistung und die Stunde bezogen und daher mit der Produktdauer zu multiplizieren, die für Viertelstundenprodukte eine Viertelstunde beträgt.
+% PRUEFEN: Die Multiplikation mit der Produktdauer ist in Anlage 1 nicht
+% ausgeschrieben. Sie folgt zwingend aus der angegebenen Einheit und wird
+% durch das Zahlenbeispiel bestaetigt.
+
+\subsection{Innerer Wert und Zuordnung der Optionsart}
+\label{anh:weber:innerer}
+
+Der Optionswert setzt sich aus dem Zeitwert und dem inneren Wert zusammen \cite[Anlage\,1, S.\,53]{bundesnetzagentur_anlage1_2024}.
+Der innere Wert gibt den Wert bei Ausübung zum aktuellen Zeitpunkt an und errechnet sich als Differenz zwischen Strikepreis und Erwartungswert des Strompreisniveaus.
+Im beschriebenen Verfahren wird er unabhängig vom konkreten Anweisungszeitpunkt voll vergütet, sofern er existiert.
+
+Ob eine Viertelstunde als Call oder als Put bewertet wird, folgt aus der Annahme, dass die Anlage gegenüber dem stündlichen Day-Ahead-Preis wirtschaftlich optimal eingesetzt wird \cite[Anlage\,1, S.\,52\,f.]{bundesnetzagentur_anlage1_2024}.
+Liegt der Day-Ahead-Preis über dem Strikepreis, gilt die Anlage als mit Maximallast vermarktet, sodass nur noch die Einsenkung als Optimierungsmöglichkeit verbleibt und die Put-Variante anzusetzen ist.
+Liegt er darunter, ist die Call-Variante anzusetzen.
+Auf diesem Weg wird zugleich derjenige innere Wert erfasst, der aus den systematischen Preisdifferenzen zwischen Stunden- und Viertelstundenprodukten beim späteren Handel im Viertelstundenraster entsteht.
+
+\section{Das Berechnungsbeispiel}
+\label{anh:weber:beispiel}
+
+\subsection{Anlagendaten und Datengrundlage}
+\label{anh:weber:daten}
+
+Das Beispiel betrachtet zwei Tagesspeicher für den Liefertag 1.\,Februar 2024 \cite[Anlage\,1, S.\,26]{bundesnetzagentur_anlage1_2024}.
+Tabelle~\ref{tab:anh:weber:anlage} führt die Kenngrößen und die daraus folgenden Ergebnisse auf.
+Preisgrundlage sind die 96 Viertelstundenpreise der Intraday-Eröffnungsauktion dieses Tages, das Volatilitätsmaß beruht auf den 30 vorangegangenen Tagen \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Kenngrößen und Ergebnisse der beiden Beispielanlagen. Preise in \si{\text{\euro}\per MWh}. Nach \cite[Anlage\,1, S.\,26]{bundesnetzagentur_anlage1_2024}.}
+    \label{tab:anh:weber:anlage}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.46\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.27\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.27\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Größe} & \textbf{Tagesspeicher 1} & \textbf{Tagesspeicher 2} \\
+        \hline
+        Wirkungsgrad $\eta$ & 87\,\% & 70\,\% \\
+        Netznutzungsentgelt $c_{NNE}$ & 0,50 & 1,50 \\
+        Volllaststunden & 4 & 6 \\
+        Turbinenleistung $P_T$ & 200\,\si{MW} & 400\,\si{MW} \\
+        Pumpleistung $P_P$ & 180\,\si{MW} & 350\,\si{MW} \\
+        \hline
+        Grenzpreis Turbine $g_T$ & 99,97 & 99,72 \\
+        Grenzpreis Pumpe $g_P$ & 56,93 & 67,06 \\
+        \hline
+        $p_{1a}$ und $p_{1b}$ & 90,75 und 109,20 & 121,27 und 108,16 \\
+        $p_{2a}$ und $p_{2b}$ & 47,74 und 78,45 & 69,65 und 83,39 \\
+        $p_{3a}$ und $p_{3b}$ & 94,51 und 78,45 & 74,21 und 83,39 \\
+        $p_{4a}$ und $p_{4b}$ & 67,75 und 41,03 & 56,87 und 47,26 \\
+        \hline
+        Erhöhung Turbine & 109,20 & 121,27 \\
+        Minderung Turbine & 47,74 & 69,65 \\
+        Minderung Pumpe & 94,51 & 83,39 \\
+        Erhöhung Pumpe & 41,03 & 47,26 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Bestimmung der Grenzpreise}
+\label{anh:weber:beispiel:grenzpreis}
+
+Tagesspeicher 1 verfügt über vier Volllaststunden, also über 16 Viertelstunden Turbinierdauer.
+Die Iteration endet für ihn bei der sechzehnten Viertelstunde der geordneten Reihe mit einem Preis von 99,97\,\si{\text{\euro}\per MWh}, sodass die verfügbare Turbinenarbeit die bindende Bedingung ist.
+Die zugehörige Pumpdauer beträgt nach Gleichung~\eqref{eq:anh:weber:umwandlung} 20 Viertelstunden, woraus $g_P = 56{,}93\,\si{\text{\euro}\per MWh}$ als zwanzigster Preis vom unteren Ende der Reihe folgt.
+Gleichung~\eqref{eq:anh:weber:effizienz} ist mit $99{,}97 \cdot 0{,}87 = 86{,}97 > 56{,}93 + 0{,}50 = 57{,}43$ erfüllt.
+
+Tagesspeicher 2 verfügt über sechs Volllaststunden, also über 24 Viertelstunden.
+Die Iteration endet für ihn dennoch bereits bei der achtzehnten Viertelstunde, weil die Effizienzbedingung bei der neunzehnten erstmals verletzt ist.
+Für $t_T = 18$ gilt $99{,}72 \cdot 0{,}70 = 69{,}80 > 67{,}06 + 1{,}50 = 68{,}56$, für $t_T = 19$ dagegen $97{,}86 \cdot 0{,}70 = 68{,}50 < 67{,}91 + 1{,}50 = 69{,}41$ \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+Bei Tagesspeicher 1 begrenzt somit der Energievorrat die Grenzpreisbestimmung, bei Tagesspeicher 2 die Wirtschaftlichkeitsbedingung.
+
+\subsection{Bestimmung der Abrechnungspreise}
+\label{anh:weber:beispiel:abrechnung}
+
+Für Tagesspeicher 1 folgen aus den 16 Viertelstunden oberhalb von $g_T$ und den 20 Viertelstunden unterhalb von $g_P$ die Mittelwerte nach Gleichung~\eqref{eq:anh:weber:mittelwerte}, nämlich $\overline{p}_T = 109{,}20\,\si{\text{\euro}\per MWh}$, $\overline{p}_P = 41{,}03\,\si{\text{\euro}\per MWh}$ und $\overline{p}_M = 78{,}45\,\si{\text{\euro}\per MWh}$.
+Daraus ergeben sich die acht Abrechnungspreise.
+
+\begin{align}
+  p_{1a} &= \frac{78{,}45 + 0{,}50}{0{,}87} = 90{,}75
+  & p_{1b} &= 109{,}20 \label{eq:anh:weber:beispiel:p1}\\
+  p_{2a} &= \frac{41{,}03 + 0{,}50}{0{,}87} = 47{,}74
+  & p_{2b} &= 78{,}45 \label{eq:anh:weber:beispiel:p2}\\
+  p_{3a} &= 109{,}20 \cdot 0{,}87 - 0{,}50 = 94{,}51
+  & p_{3b} &= 78{,}45 \label{eq:anh:weber:beispiel:p3}\\
+  p_{4a} &= 78{,}45 \cdot 0{,}87 - 0{,}50 = 67{,}75
+  & p_{4b} &= 41{,}03 \label{eq:anh:weber:beispiel:p4}
+\end{align}
+
+Nach der Auswahlregel aus Tabelle~\ref{tab:anh:weber:varianten} sind damit 109,20\,\si{\text{\euro}\per MWh} für die Erhöhung und 47,74\,\si{\text{\euro}\per MWh} für die Minderung des Turbineneinsatzes sowie 94,51\,\si{\text{\euro}\per MWh} für die Minderung und 41,03\,\si{\text{\euro}\per MWh} für die Erhöhung des Pumpeinsatzes maßgeblich.
+
+\subsection{Bewertung einer Viertelstunde}
+\label{anh:weber:beispiel:viertelstunde}
+
+Betrachtet wird eine Maßnahme in der Viertelstunde von 13:00 Uhr bis 13:15 Uhr, bei der dem Betreiber die Flexibilität der gesamten Anlagenleistung verloren geht.
+% PRUEFEN: Anlage 1 bezeichnet diese Viertelstunde auf S. 55 als "13:00 bis
+% 13:45 Uhr". Das umfasst drei Viertelstunden. Die Eingangswerte gehoeren
+% eindeutig zur Viertelstunde 13:00 bis 13:15 Uhr.
+Der Day-Ahead-Auktionspreis beträgt 57,26\,\si{\text{\euro}\per MWh}, der Preis der Intraday-Eröffnungsauktion 75,93\,\si{\text{\euro}\per MWh} und das Volatilitätsmaß 21,75\,\si{\text{\euro}\per MWh} \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+
+Da der Day-Ahead-Preis unter dem Strikepreis der Turbine liegt, wird deren Flexibilität als Call-Option bewertet, und da er über dem Strikepreis der Pumpe liegt, wird deren Flexibilität als Put-Option bewertet \cite[Anlage\,1, S.\,55\,f.]{bundesnetzagentur_anlage1_2024}.
+Für die Turbine mit $X = g_T = 99{,}97\,\si{\text{\euro}\per MWh}$ folgt aus Gleichung~\eqref{eq:anh:weber:d}
+
+\begin{equation}
+  d_T = \frac{75{,}93 - 99{,}97}{21{,}75} = -1{,}10529
+  \label{eq:anh:weber:beispiel:dt}
+\end{equation}
+
+mit $\Phi(d_T) = 0{,}13452$ und $\varphi(d_T) = 0{,}21658$.
+Gleichung~\eqref{eq:anh:weber:call} liefert daraus
+
+\begin{equation}
+  V_C = 21{,}75 \cdot \Big( \left(-1{,}10529\right) \cdot 0{,}13452 + 0{,}21658 \Big) \cdot 0{,}25 = 0{,}36915\,\si{\text{\euro}\per MW} .
+  \label{eq:anh:weber:beispiel:vc}
+\end{equation}
+
+Für die Pumpe mit $X = g_P = 56{,}93\,\si{\text{\euro}\per MWh}$ folgt $d_P = 19{,}00 / 21{,}75 = 0{,}87356$ mit $\Phi(-d_P) = 0{,}19118$ und $\varphi(d_P) = 0{,}27239$.
+Gleichung~\eqref{eq:anh:weber:put} liefert daraus
+
+\begin{equation}
+  V_P = 21{,}75 \cdot \Big( 0{,}27239 - 0{,}87356 \cdot 0{,}19118 \Big) \cdot 0{,}25 = 0{,}57296\,\si{\text{\euro}\per MW} .
+  \label{eq:anh:weber:beispiel:vp}
+\end{equation}
+
+\subsection{Aggregation zum Gesamtbetrag}
+\label{anh:weber:beispiel:aggregation}
+
+Die leistungsbezogenen Optionswerte werden mit der jeweils gesperrten Leistung multipliziert, die hier der vollen Turbinen- und Pumpleistung entspricht \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+
+\begin{align}
+  V_{C,\mathrm{ges}} &= 0{,}36915\,\si{\text{\euro}\per MW} \cdot 200\,\si{MW} = 73{,}83\,\text{\euro} \label{eq:anh:weber:beispiel:vcges}\\
+  V_{P,\mathrm{ges}} &= 0{,}57296\,\si{\text{\euro}\per MW} \cdot 180\,\si{MW} = 103{,}13\,\text{\euro} \label{eq:anh:weber:beispiel:vpges}\\
+  V &= V_{C,\mathrm{ges}} + V_{P,\mathrm{ges}} = 176{,}96\,\text{\euro} \label{eq:anh:weber:beispiel:vges}
+\end{align}
+
+% NACHGERECHNET am 24.08.2026 ohne Zwischenrundung. Es ergeben sich 0,36923
+% und 0,57306 Euro je MW sowie ein Gesamtbetrag von 176,998 Euro. Die
+% Abweichung stammt allein aus den gerundeten Werten von Phi und phi, mit
+% denen die Anlage weiterrechnet.
+Rechnet man ohne Zwischenrundung, ergibt sich ein Gesamtbetrag von 177,00\,\text{\euro}.
+Die Abweichung von rund vier Cent folgt daraus, dass die Anlage mit gerundeten Werten der Verteilungs- und der Dichtefunktion weiterrechnet.
+
+Der ermittelte Wert der Optionalität ist stets auf denjenigen Leistungsbereich anzuwenden, der ohne die Redispatch-Anweisung flexibel einsetzbar gewesen wäre \cite[Anlage\,1, S.\,54]{bundesnetzagentur_anlage1_2024}.
+Bei beidseitiger Fixierung des Arbeitspunktes ist das maximal die gesamte Anlagenleistung, bei einseitiger Fixierung nur der gesperrte Leistungsbereich.
+
+Die Zusammenführung mit den übrigen Positionen erfolgt bezogen auf die jeweilige Viertelstunde der Maßnahme \cite[Anlage\,1, S.\,13]{bundesnetzagentur_anlage1_2024}.
+Die Opportunität entspricht dabei der Differenz aus den entgangenen Erlösmöglichkeiten und dem Strikepreis und ist nur einzubeziehen, wenn sie den anteiligen Werteverbrauch übersteigt.
+Andernfalls tritt der anteilige Werteverbrauch neben die Erzeugungsauslagen.
+% TRAGEND fuer den fuenften Grund in Abschnitt 2.3.4. Weil der Strikepreis
+% bereits in der Optionsformel abgezogen ist, tritt der Optionswert allein
+% gegen den Werteverbrauch an. Das ist mit der Regel des Gesetzes identisch,
+% naemlich max(Nr. 1 + Nr. 2, Nr. 3), aber operativ die schaerfere Aussage.
