@@ -1700,38 +1700,36 @@ Anhang~\ref{anh:weber} stellt das Verfahren vollständig dar und rechnet es am B
 % Anhang und dort vollstaendiger, als sie hier je stand. Erhalten
 % bleibt allein die Zerlegung in inneren Wert und Zeitwert, weil der
 % sechste Grund sie voraussetzt.
-Abbildung~\ref{fig:weber_optionswert} zeigt die Herleitung der beiden Grenzpreise aus der Preisdauerlinie des Berechnungsbeispiels.
+Abbildung~\ref{fig:weber_optionswert} zeigt den Wert beider Optionen über dem erwarteten Viertelstundenpreisniveau, zerlegt in inneren Wert und Zeitwert.
 Liegt der erwartete Preis zwischen den Grenzpreisen, ist der innere Wert beider Optionen null und der gesamte Anspruch besteht aus Zeitwert.
 Diese Zerlegung ist zugleich der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt, denn eine Vergütung, die allein die bereits realisierte Preisdifferenz erstattet, zahlte für eine solche Viertelstunde nichts, obwohl dem Betreiber mit der Anweisung auch die Chance auf eine günstigere Preisentwicklung genommen wird.
-% SPEZIFIKATION des Schemas des Optionswerts. Sie bleibt als Grundlage
-% spaeterer Aenderungen stehen, die Abbildung ist eingebunden. Das zweite
-% Teilbild zur Restlaufzeit ist nicht aufgenommen worden, stattdessen
-% zeigt Teilbild a die Preisdauerlinie, aus der die beiden Grenzpreise
-% hervorgehen.
-% Die Abbildung soll die
-% Bewertungslogik fuer ein einzelnes Viertelstundenintervall zeigen,
-% naemlich auf der Abszisse den Preis und auf der Ordinate den Wert, mit
-% dem Grenzpreis als Basispreis, dem Preis der letzten
-% Handelsgelegenheit als erwartetem Preis, der Zerlegung des
-% Optionswerts in inneren Wert und Zeitwert sowie der aus dem
-% Volatilitaetsmass und der Restlaufzeit gebildeten Verteilung der
-% Preisaenderung. Beide Richtungen sind darzustellen, also die
-% Ausspeisung als Call und die Einspeisung als Put. Zu entscheiden ist,
-% ob zusaetzlich die Abnahme des Zeitwerts mit sinkender Restlaufzeit als
-% zweites Teilbild aufgenommen wird. Dafuer spricht, dass die
-% Zeitstaffelung die Vorlage fuer den Beschaffungszeitpunkt in Abschnitt
-% 3.2 ist. Die Abbildung gibt fremde Bewertungslogik wieder und ist
-% deshalb als Darstellung nach der Quelle zu kennzeichnen.
+% STAND DER ABBILDUNG, 25.08.2026. Sie zeigt die Bewertungslogik fuer EIN
+% Viertelstundenintervall, naemlich auf der Abszisse das erwartete
+% Preisniveau und auf der Ordinate den Wert, mit dem jeweiligen Grenzpreis
+% als Basispreis und der Zerlegung in inneren Wert und Zeitwert. Beide
+% Richtungen sind dargestellt, die Ausspeisung als Call und die
+% Einspeisung als Put; beide Kurven gelten fuer dieselbe Viertelstunde und
+% tragen deshalb dieselbe Standardabweichung. Vorbild ist Abbildung 9 der
+% Anlage 1, S. 54. Die Abbildung gibt fremde Bewertungslogik wieder und
+% ist deshalb als Darstellung nach der Quelle gekennzeichnet.
+%
+% ERLEDIGT: Die Teilung der Abbildung ist entfallen, sie enthaelt nur noch
+% ein Diagramm. Die Preisdauerlinie, die eine frueher geplante Teilbild-a
+% zeigen sollte, ist nicht Gegenstand dieser Abbildung. Die Unterschrift
+% und der einleitende Satz sind darauf zurueckgefuehrt.
+%
+% OFFEN: Die Abnahme des Zeitwerts mit sinkender Restlaufzeit ist NICHT
+% dargestellt. Dafuer spraeche, dass die Zeitstaffelung die Vorlage fuer
+% den Beschaffungszeitpunkt in Abschnitt 3.2 ist. Falls sie aufgenommen
+% wird, gehoert sie in eine EIGENE Abbildung und nicht in diese.
+%
+% Erzeugt in bess_dispatch_optimization unter
+% analysen/code/schrift/05_weber_optionswert/. Naturbreite 453,543 bp,
+% deshalb ohne Breitenangabe eingebunden.
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_2/weber_optionswert.pdf}
-% ACHTUNG, ABBILDUNG NOCH NICHT GETEILT. Die Unterschrift beschreibt
-% bereits den Zielzustand, naemlich nur die Preisdauerlinie mit den
-% beiden Grenzpreisen. Die vorhandene PDF-Datei enthaelt weiterhin beide
-% Teilbilder. Der Auftrag an Claude Code zur Teilung ist erteilt. Das
-% zweite Teilbild mit den Optionswertkurven gehoert in den Anhang.
-% Vor der Abgabe pruefen, ob die Teilung erfolgt ist.
-    \caption{Herleitung des oberen und des unteren Grenzpreises aus der Preisdauerlinie des Berechnungsbeispiels. Oberhalb des oberen Grenzpreises liegen die 16 Viertelstunden, in denen sich die Ausspeisung lohnt, unterhalb des unteren die 20 Viertelstunden, in denen sich die Einspeisung lohnt. Nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
+    \caption{Wert der Ausspeise- und der Einspeiseoption über dem erwarteten Viertelstundenpreisniveau, zerlegt in inneren Wert und Zeitwert, für die Viertelstunde des Berechnungsbeispiels. Zwischen den beiden Grenzpreisen sind beide Optionen aus dem Geld, sodass der gesamte Wert aus Zeitwert besteht. Eigene Darstellung nach \cite{weber_gutachten_2015} und \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
     \label{fig:weber_optionswert}
 \end{figure}
 
@@ -2229,10 +2227,11 @@ Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
 %  26  Tabelle zur Zweiteilung der aFRR-Verguetung fuellen, Platzhalter in
 %      2.3.4, und entscheiden, ob Tabelle oder Abbildung
 %  27  erledigt, das Optionswertschema ist in 2.3.3 eingebunden und im Text
-%      beschrieben. Entschieden ist gegen ein Teilbild zur Restlaufzeit.
-%      Teilbild a zeigt stattdessen die Preisdauerlinie, aus der die
-%      beiden Grenzpreise hervorgehen, weil ihre Herleitung sonst
-%      unbelegt bliebe
+%      beschrieben. Entschieden ist gegen ein Teilbild zur Restlaufzeit
+%      und, am 25.08.2026, auch gegen ein Teilbild mit der
+%      Preisdauerlinie. Die Abbildung hat nur noch ein Diagramm, naemlich
+%      die Zerlegung des Optionswerts in inneren Wert und Zeitwert. Die
+%      Herleitung der Grenzpreise steht im Text und im Anhang
 %  28  Zusammenfallen von Preisspreizung und Engpassauftreten in Kapitel 4
 %      beantworten, offene Frage am Ende von 2.3.5
 %  29  Absatz- und Nummernzaehlung der PATL- und TATL-Fundstelle in
