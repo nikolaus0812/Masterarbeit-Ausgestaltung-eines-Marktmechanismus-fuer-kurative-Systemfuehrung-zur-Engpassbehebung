@@ -805,224 +805,9 @@ Eine Überschreitung der zulässigen Dauer beansprucht das Betriebsmittel jensei
 Ein kurativer Akteur, der die zugesagte Leistungsänderung nicht fristgerecht erbringt, führt das System daher nicht in den Normalzustand zurück, sondern in den Notzustand.
 Verfügbarkeit ist damit kein graduelles, sondern ein binäres Gütemerkmal des kurativen Produkts.
 
-% ---------------------------------------------------------------
-% ZUSAMMENGELEGT: Der frueher eigenstaendige Abschnitt zum rechtlichen
-% Rahmen und der Abschnitt zu den Herausforderungen der Umsetzung stehen
-% jetzt gemeinsam. Der Grund ist inhaltlich, denn die Rechtsgrundlagen sind
-% nicht fuer die kurative Systemfuehrung geschaffen, sondern allgemein
-% gefasst, weshalb die fehlende ausdrueckliche Regelung selbst ein
-% Umsetzungshindernis ist und neben die praktischen Hindernisse gehoert.
-% GETEILT am 20.08.2026: Der frueher zusammengelegte Unterabschnitt ist
-% wieder in zwei geteilt, jetzt aber in der Reihenfolge Herausforderungen
-% und danach rechtlicher Rahmen. Die Herausforderungen folgen unmittelbar
-% aus dem Prozessablauf, und der Rechtsteil schliesst den Abschnitt ab und
-% uebergibt an die Technologie.
-% sec:legal_framework liegt auf 2.1.4, sec:challenges auf 2.1.3.
-% ---------------------------------------------------------------
-% NEUER UNTERABSCHNITT am 20.08.2026. Die Herausforderungen stehen jetzt
-% VOR dem rechtlichen Rahmen, weil sie aus dem Prozessablauf des
-% vorangehenden Unterabschnitts folgen und der Rechtsteil den Abschnitt
-% abschliesst.
-% DIE MARKE sec:challenges liegt hier, sie wird aus Abschnitt 2.1.1 und aus
-% dem Ausblick in Kapitel 6 referenziert.
-\subsection{Herausforderungen der Umsetzung}
-\label{sec:challenges}
-
-% STRUKTUR DER UMSETZUNGSFRAGEN, in dieser Reihenfolge:
-%   1  Nutzbarkeit der thermischen Reserve, weitere Grenzwertarten
-%   2  Fehlende Angaben und fehlende Normung des TATL
-%   3  Verlagerung der Sicherheit in eine Wirkungskette und Redundanz
-%   4  Prognoseunsicherheit in der Planung
-%   5  Umsetzungsstand in den Pilotvorhaben
-%   6  Beschaffungsproblem als Abschluss und Uebergang zum rechtlichen
-%      Rahmen, der klaert, ob eine marktliche Beschaffung zulaessig ist
-% Die offene Frage nach der Beschaffung bildet den letzten Satz und leitet
-% in den rechtlichen Rahmen ueber.
-%   Das Beschaffungsproblem wird hier nur als offene Frage benannt. Die
-%   Begruendung ueber das Selbstdispatch-Modell steht in Abschnitt 2.3.1.
-% Die frueher an erster Stelle stehende schrumpfende Basis konventioneller
-% Anlagen ist nach Abschnitt 2.1.1 verschoben. Sie erhoeht den praeventiven
-% Eingriffsbedarf und ist damit ein Argument fuer die kurative
-% Systemfuehrung und kein Hindernis ihrer Umsetzung.
-% GEAENDERT am 20.08.2026: Der Satz verwies frueher auf die zuvor
-% behandelten rechtlichen Fragen. Nach der Umstellung steht der Rechtsteil
-% dahinter, weshalb der Rueckbezug entfallen ist.
-In den laufenden Pilotvorhaben zeigen sich Hindernisse technischer und organisatorischer Natur.
-Zunächst ist die thermische Reserve nicht in vollem Umfang nutzbar.
-Ein hoch ausgelastetes Netz wird bereits nahe an seinen Grenzen betrieben, und neben dem thermischen Grenzwert können auch Spannungsgrenzwerte und die Kurzschlussfestigkeit die zulässige Belastung nach oben begrenzen.
-Für eine Höherauslastung sind daher die zulässige Häufigkeit und die Gleichzeitigkeit mit diesen weiteren Anforderungen festzulegen \cite{dena_hoeherauslastung_2022}.
-% ERGAENZT am 20.08.2026. Die Aussage ist als Mechanismus formuliert und
-% traegt deshalb keine eigene Fundstelle. Sie schaerft zugleich den
-% folgenden Punkt, denn die fehlenden TATL-Angaben betreffen nicht nur
-% Leitungen, sondern die gesamte Reihe.
-% BEGRIFF GEAENDERT: Du hattest Spannungswandler genannt. Diese liegen
-% parallel und fuehren keinen Laststrom, weshalb sie von einer
-% Hoeherauslastung nicht betroffen sind. Betroffen sind die in Reihe
-% liegenden Betriebsmittel, also Stromwandler, Leistungsschalter, Trenner
-% und Sammelschienen. Falls du bewusst Spannungswandler meinst, bitte
-% zurueckaendern und die Begruendung ergaenzen.
-% ANSCHLUSS an Abschnitt 2.1.2, wo bereits steht, dass fuer eine
-% Uebertragungsstrecke das Minimum ueber alle Betriebsmittel massgeblich
-% ist. Hier geht es um die Folge, naemlich dass diese Betriebsmittel
-% eigene Grenzen und eigene Angaben brauchen.
-Betroffen ist dabei nicht allein das thermisch bestimmende Betriebsmittel, sondern die gesamte Reihe der stromführenden Betriebsmittel einer Übertragungsstrecke, also auch Stromwandler, Leistungsschalter, Trenner und Sammelschienen, deren zulässige Belastung eigenen Grenzen unterliegt.
-Der für die Betriebsführung nutzbare Grenzwert kann damit unter dem thermisch bestimmten liegen.
-% BELEGTES BEISPIEL fuer diese Aussage. Der Satz zeigt an einem konkreten
-% Fall, dass die thermische Reserve nicht in vollem Umfang nutzbar ist.
-% ZUR STILREGEL: sous_comparison_2025 steht in diesem Absatz ein zweites
-% Mal, weil der Absatz sechs voneinander unabhaengige Umsetzungshindernisse
-% aufzaehlt und jedes seine eigene Fundstelle braucht. Dasselbe gilt bereits
-% fuer dena_hoeherauslastung_2022. Falls die Regel strikt gelten soll, ist
-% der Absatz in zwei zu teilen, naemlich technische und planerische
-% Hindernisse.
-% GESTRICHEN am 20.08.2026: Hier stand das Beispiel einer
-% Betriebssimulation, in der die thermisch berechneten TATL-Werte auf
-% 4000 Ampere begrenzt werden und die Mehrzahl der Werte auf der
-% 380-kV-Ebene auf diese Schranke zurueckfaellt. Der Befund belegte nur,
-% dass es weitere Grenzen gibt, was der vorangehende Satz bereits sagt.
-% Der Beleg steht in sous_comparison_2025, falls er gebraucht wird.
-% NEBENEFFEKT: Damit steht sous_comparison_2025 in diesem Absatz nur noch
-% einmal, naemlich beim Redundanzsatz. Die frueher dokumentierte Ausnahme
-% von der Regel, eine Quelle je Absatz nur einmal zu zitieren, ist damit
-% erledigt.
-% ERSETZT DURCH die Folgerung, die aus den weiteren Grenzen und aus der
-% Reihe der stromfuehrenden Betriebsmittel tatsaechlich folgt. EIGENE
-% ABLEITUNG, kein \cite setzen.
-% ANSCHLUSS: Der Satz bereitet die Lokationalitaet vor, die in Abschnitt
-% 3.1.1 als Anforderung A2 steht. Dort nicht als neuen Befund behaupten.
-Wie weit eine Höherauslastung möglich ist, ist deshalb standortspezifisch zu bestimmen, denn die begrenzende Größe unterscheidet sich von Strecke zu Strecke und nicht jede Leitung lässt sich im gleichen Maß höher auslasten.
-% ZURUECKGENOMMEN am 20.08.2026: Hier stand der Satz, die Erfassung setze
-% voraus, dass die Netzbetreiber die Anforderungen an Form und Inhalt der
-% Angaben vorgeben, was aus Sicht der Hersteller die Bedingung fuer eine
-% Normung und fuer die Entwicklung entsprechender Betriebsmittel sei. Das
-% ist eine zugespitzte Kausalkette und schreibt den Herstellern eine
-% Position zu. Beides ist nicht gedeckt, solange die Fundstelle nicht mit
-% Seitenangabe geprueft ist. Nicht wieder aufnehmen.
-% PRUEFEN: Ob das Impulspapier die fehlende einheitliche Vorgabe fuer Form
-% und Inhalt der Angaben ausdruecklich benennt. Falls nicht, traegt die
-% Fundstelle nur die erste Haelfte des Satzes und die zweite ist eigene
-% Ableitung oder zu streichen.
-% GESTRICHEN am 20.08.2026: Hier stand der Satz zu den nicht durchgaengig
-% vorliegenden TATL-Angaben und zur fehlenden einheitlichen Vorgabe fuer
-% Form und Inhalt. Nicht wieder aufnehmen.
-% DIE FOLGERUNG BLEIBT, haengt jetzt aber an der standortspezifischen
-% Bestimmung im vorangehenden Satz und nicht mehr an der Datenlage. Sie ist
-% damit EIGENE ABLEITUNG, kein \cite setzen.
-% FALLS AUCH DIESER SATZ ENTFAELLT, endet der Punkt zur Nutzbarkeit der
-% thermischen Reserve mit der standortspezifischen Bestimmung. Das traegt
-% ebenfalls, verliert aber die Aussage, dass das Potenzial derzeit nicht
-% ausgeschoepft wird.
-Solange diese Bestimmung nicht vorliegt, ist die kurative Höherauslastung auf Abschätzungen zur sicheren Seite angewiesen und schöpft das theoretische Potenzial nicht aus.
-Das schwerwiegendste technische Hindernis liegt in der Verlagerung der Sicherheit selbst.
-Die präventive Systemführung stellt (N-1)-Sicherheit über eine vorab eingehaltene Auslastungsreserve her, die unabhängig von technischen Komponenten wirkt.
-Im kurativen Betrieb hängt sie demgegenüber an einer Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, die im Fehlerfall vollständig und fristgerecht funktionieren muss.
-Fällt ein Glied dieser Kette aus, führt der Ansatz das System nicht in den Normalzustand zurück, sondern in den Notzustand.
-Zuverlässige kurative Konzepte setzen deshalb eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022, sous_comparison_2025}.
-Die Ausgestaltung dieser Redundanz ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
-Auf der Planungsseite erschwert die Prognoseunsicherheit die Auswahl der scharfzuschaltenden Maßnahmen.
-Mit steigendem Anteil wetterabhängiger Einspeisung wächst die Abweichung zwischen prognostizierter und tatsächlicher Netzbelastung, sodass sowohl der Ort als auch der Zeitpunkt eines Engpasses zum Planungszeitpunkt weniger belastbar bestimmbar sind \cite{lindner_operation_2023, rystad_energy_renewables__power_analytics_energy_2026}.
-Die Menge der vorzusehenden Maßnahmen ist damit nicht anhand eines einzelnen erwarteten Netzzustands, sondern gegen ein Spektrum möglicher Zustände zu bemessen.
-Der Umsetzungsstand im deutschen Übertragungsnetz ist entsprechend heterogen.
-% KORRIGIERT am 20.08.2026: Die Vorfassung nannte die Netzbooster ein
-% bereits umgesetztes Instrument, das Leistung fuer den Fehlerfall
-% vorhaelt. Das trifft nicht zu, denn die Vorhaben befinden sich in der
-% Umsetzung und eine Betriebserprobung steht aus. Die Formulierung ist
-% entsprechend zurueckgenommen. Nicht wieder als umgesetzt formulieren.
-% PRUEFEN VOR ABGABE: Der Umsetzungsstand kann sich aendern. Sollte bis
-% dahin ein Netzbooster in Betrieb gegangen sein, ist der Satz anzupassen.
-% ANSCHLUSS: Der Abgleich in Abschnitt 3.1.2 bewertet den Netzbooster gegen
-% die Anforderungen. Dort ist derselbe Umsetzungsstand zu beruecksichtigen,
-% damit beide Stellen nicht auseinanderlaufen.
-Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Echtbetrieb vor \cite{tennet_tso_gmbh_pilotbetrieb_2025}, und mit den Netzboostern befindet sich ein Instrument in der Umsetzung, das speicherbasierte Leistung für den Fehlerfall vorhalten soll, dessen Betriebserprobung aber noch aussteht \cite{consentec_systembooster_2026}.
-% GESTRICHEN: Hier stand der Hinweis auf das Projekt kurSyV zur Uebertragung
-% auf die Verteilnetzebene. Die Arbeit betrachtet die Uebertragungsnetzebene,
-% und der Satz zog keine Folgerung. Die beiden bib-Eintraege bleiben in der
-% literature.bib und koennen im Ausblick von Kapitel 6 verwendet werden.
-Damit bleibt die Frage offen, wie das Stellpotenzial eines Marktteilnehmers gesichert wird, denn eine marktliche Beschaffung kurativer Vorhalteleistung ist in keinem der Pilotvorhaben Gegenstand.
-Ob eine solche Beschaffung überhaupt zulässig wäre, entscheidet der rechtliche Rahmen.
-
-\subsection{Rechtlicher Rahmen}
-\label{sec:legal_framework}
-% ABSCHLUSS DES ABSCHNITTS 2.1. Der letzte Satz uebergibt an Abschnitt 2.2
-% und damit an die Frage, welche Technologie die offene Zusage einloesen
-% kann.
-
-Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}.
-§\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen, und da das Gesetz bei strom- und spannungsbedingten Anpassungen die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
-% VERSCHOBEN am 20.08.2026: Der Satz zu §\,118 Abs.\,6 EnWG stand hier
-% zwischen der Systemverantwortung und der SO GL und riss den Gedankengang
-% auf. Er steht jetzt am Ende des Unterabschnitts bei den uebrigen
-% speicherbezogenen Vorschriften. Nicht zurueckverschieben.
-% GEKUERZT: Der frueher hier stehende Satz zu den betrieblichen
-% Sicherheitsgrenzwerten ist entfallen, weil er die Aussage aus Abschnitt
-% 2.1.1 wiederholte, wo sie mit der Fundstelle auf Art. 25 steht und die
-% PATL- und TATL-Definition einleitet.
-% UMFORMULIERT am 20.08.2026: Die Vorfassung las sich als reine Pflicht.
-% Tatsaechlich ist die Bestimmung zugleich die Erlaubnisnorm, denn sie
-% laesst eine Auslastung oberhalb der PATL fuer eine begrenzte Zeit zu und
-% knuepft sie an die Rueckfuehrung. Genau darauf beruht die kurative
-% Hoeherauslastung.
-% KEIN WIDERSPRUCH zum spaeteren Befund, keine Regelung sei auf die kurative
-% Systemfuehrung zugeschnitten. Die SO GL erlaubt den BETRIEB, sie regelt
-% nicht die BESCHAFFUNG. Diese Unterscheidung traegt den Bogen des
-% Kapitels und darf nicht verwischt werden.
-% PRUEFEN: Der Erlaubnischarakter ist gegen Art.\,25 der SO GL zu
-% verifizieren, wo PATL und TATL definiert sind. Eine Artikelangabe in der
-% Fundstelle waere hier hilfreich.
-Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
-Sie lässt eine Auslastung oberhalb der \ac{PATL} für eine begrenzte Zeit ausdrücklich zu und verlangt dafür, dass die Leistungsflüsse nach Eintreten eines Fehlerfalles innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze geführt werden, wobei eine Ausfallvarianten-Liste mit allen relevanten (N-1)-Szenarien die Planungsgrundlage bildet \cite{europaische_kommission_verordnung_2017}.
-Der kurative Betrieb ist damit europarechtlich zulässig, solange die Rückführung innerhalb des Zeitfensters sichergestellt ist.
-Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-% GEAENDERT: Die frueher hier stehende Formulierung, ein marktbasiertes
-% kuratives Engpassmanagement entspreche dem Kostenminimierungsgebot,
-% behauptete eine Zulaessigkeitsfeststellung. Der Satz sagt jetzt, dass
-% sich die Zulaessigkeit aus einer Auslegung ergibt und nicht aus einer
-% ausdruecklichen Regelung.
-% BRUECKE ZU DEN UMSETZUNGSFRAGEN: Der letzte Satz dieses Absatzes ordnet
-% die fehlende Regelung als Hindernis der Umsetzung ein.
-% GEAENDERT am 20.08.2026: Das Wort "erstes" ist entfallen, weil der
-% Rechtsteil nach der Umstellung hinter den technischen und
-% organisatorischen Hindernissen steht und nicht mehr vor ihnen.
-Keine dieser Regelungen ist auf die kurative Systemführung zugeschnitten, denn sie fassen die Pflichten des \ac{ÜNB} allgemein und ohne Bezug auf den Zeitpunkt des Eingriffs.
-Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten deshalb weder das \ac{EnWG} noch die \ac{SO GL}.
-Ihre Zulässigkeit lässt sich lediglich aus dem Kostenminimierungsgebot und dem Vorrang marktbasierter Maßnahmen ableiten, soweit die kurative Maßnahme die kostengünstigere Alternative darstellt.
-Der Umsetzung steht damit entgegen, dass sie sich auf eine Auslegung und nicht auf eine ausdrückliche Regelung stützt.
-% VERSCHOBEN AUS DEM FRUEHEREN ABSCHNITT 2.3.6: Die beiden Vorschriften
-% zielen auf die Nutzung bestehender Netzkapazitaet und gehoeren damit zum
-% betrieblichen Rechtsrahmen und nicht zu den Beschaffungs- und
-% Verguetungslogiken. Ihre Aufgabe bleibt dieselbe, naemlich die beiden
-% naheliegenden Gegeneinwaende auszuschliessen. Die Marke
-% sec:flexible_connection bleibt erhalten.
-% ABSCHLUSS UND UEBERGANG: Das Beschaffungsproblem steht bewusst am Ende,
-% weil es den Gegenstand der Arbeit benennt und in Abschnitt 2.3 fortgesetzt
-% wird. Reihenfolge nicht aendern.
-\label{sec:flexible_connection}
-Zwei neuere Vorschriften des \ac{EnWG} zielen auf eine bessere Nutzung der bestehenden Netzkapazität und kommen daher als Instrumente in Betracht.
-§\,17 Abs.\,2b \ac{EnWG} erlaubt die Vereinbarung flexibler Netzanschlüsse und ist für Speicher deshalb besonders relevant, weil nur diese Norm eine Begrenzung sowohl der Einspeise- als auch der Entnahmeleistung und damit eine bidirektionale Ausgestaltung vorsieht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_faq_2025}.
-Sie begründet allerdings keinen Anspruch des Anlagenbetreibers auf ein solches Angebot, sondern eröffnet dem Netzbetreiber lediglich eine Möglichkeit \cite{bundesnetzagentur_beschluss_2026}.
-§\,13k \ac{EnWG} verfolgt mit dem Grundsatz \glqq{}Nutzen statt Abregeln\grqq{} einen komplementären Ansatz und regelt den Vorrang der Flexibilitätsnutzung gegenüber der Abregelung erneuerbarer Erzeugung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Beide Vorschriften regeln jedoch die Zulässigkeit und die Rangfolge von Begrenzungen im Eintrittsfall und nicht die Bereitstellung und Vergütung einer im Voraus vorgehaltenen Reaktionsfähigkeit, und sie greifen nur, soweit der Netzbetreiber sie im Einzelfall anbietet.
-% HIERHER VERSCHOBEN am 20.08.2026, aus dem Absatz zur Systemverantwortung.
-% Der Satz steht jetzt bei den uebrigen speicherbezogenen Vorschriften und
-% leitet zugleich in den Technologieabschnitt ueber.
-% FORMULIERUNG GEAENDERT: Die Vorfassung sagte, die Vorschrift setze einen
-% wirtschaftlichen Anreiz. Eine Entgeltbefreiung beseitigt eine Belastung,
-% sie setzt keinen Anreiz. Nicht zurueckaendern.
-Für \ac{BESS} als kurative Ressource ist zudem §\,118 Abs.\,6 \ac{EnWG} von Bedeutung, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit eine wirtschaftliche Hürde für deren Einsatz im Netzbetrieb beseitigt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
-% UEBERGANG ZU ABSCHNITT 2.2, ergaenzt am 20.08.2026. Ohne ihn endet der
-% Abschnitt 2.1 auf einer Verneinung und uebergibt an nichts.
-Die Bereitstellung bleibt damit an eine Zusage des Anlagenbetreibers gebunden, und welche Technologie eine solche Zusage einlösen kann, ist Gegenstand des folgenden Abschnitts.
-% GESTRICHEN: Hier standen drei Saetze zur Kollision mit dem kontinuierlichen
-% Intraday-Handel und zur institutionellen Natur des Hindernisses. Sie nahmen
-% das Argument aus Abschnitt 2.3.1 vorweg, ohne dessen Praemisse zu haben,
-% denn die institutionelle Natur folgt aus dem Selbstdispatch-Modell, das erst
-% dort eingefuehrt wird. Die Inhalte stehen an vier Stellen, naemlich in
-% 2.1.1 beim Handelsfenster hinter der letzten Prognoserechnung, in 2.3.1
-% beim fehlenden Zugriff auf den Fahrplan und bei der Bindung ueber alle
-% Handelsgelegenheiten sowie im Zwischenfazit als erstem Befund. Nicht
-% wieder aufnehmen.
-
+% VERSCHOBEN am 24.08.2026 aus dem eigenen Abschnitt 2.2 in den
+% Abschnitt 2.1. Die Technologien folgen den Zeitanforderungen, weil
+% diese das Auswahlkriterium liefern.
 % ###############################################################
 % UEBERSCHRIFT GEAENDERT am 20.08.2026: Sie lautete frueher
 % "Batteriespeicher als Technologie des kurativen Akteurs" und nahm damit
@@ -1032,7 +817,8 @@ Die Bereitstellung bleibt damit an eine Zusage des Anlagenbetreibers gebunden, u
 % MARKE GEAENDERT von sec:bess_actor nach sec:curative_technologies. Die
 % alte Marke war nirgends referenziert, weshalb die Umbenennung folgenlos
 % ist.
-\section{Technologien kurativer Akteure}
+\subsection{Technologien kurativer Akteure}
+\label{sec:curative_actors}
 \label{sec:curative_technologies}
 % MARKE MITGEZOGEN am 20.08.2026: sec:actor_comparison lag frueher auf dem
 % Unterabschnitt "Vergleich kurativer Technologien". Der Unterabschnitt ist
@@ -1261,6 +1047,520 @@ Die Einschränkung verschiebt sich damit vom Abruf auf die Vorhaltung, denn gebu
 % erscheint, als sie ist.
 Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, und die weitere Untersuchung richtet sich auf die Vergütung, deren Bemessung für diese Technologie im Engpassmanagement allgemein offen ist.
 
+% ---------------------------------------------------------------
+% ZUSAMMENGELEGT: Der frueher eigenstaendige Abschnitt zum rechtlichen
+% Rahmen und der Abschnitt zu den Herausforderungen der Umsetzung stehen
+% jetzt gemeinsam. Der Grund ist inhaltlich, denn die Rechtsgrundlagen sind
+% nicht fuer die kurative Systemfuehrung geschaffen, sondern allgemein
+% gefasst, weshalb die fehlende ausdrueckliche Regelung selbst ein
+% Umsetzungshindernis ist und neben die praktischen Hindernisse gehoert.
+% GETEILT am 20.08.2026: Der frueher zusammengelegte Unterabschnitt ist
+% wieder in zwei geteilt, jetzt aber in der Reihenfolge Herausforderungen
+% und danach rechtlicher Rahmen. Die Herausforderungen folgen unmittelbar
+% aus dem Prozessablauf, und der Rechtsteil schliesst den Abschnitt ab und
+% uebergibt an die Technologie.
+% sec:legal_framework liegt auf 2.1.4, sec:challenges auf 2.1.3.
+% ---------------------------------------------------------------
+% NEUER UNTERABSCHNITT am 20.08.2026. Die Herausforderungen stehen jetzt
+% VOR dem rechtlichen Rahmen, weil sie aus dem Prozessablauf des
+% vorangehenden Unterabschnitts folgen und der Rechtsteil den Abschnitt
+% abschliesst.
+% DIE MARKE sec:challenges liegt hier, sie wird aus Abschnitt 2.1.1 und aus
+% dem Ausblick in Kapitel 6 referenziert.
+\subsection{Herausforderungen der Umsetzung}
+\label{sec:challenges}
+
+% STRUKTUR DER UMSETZUNGSFRAGEN, in dieser Reihenfolge:
+%   1  Nutzbarkeit der thermischen Reserve, weitere Grenzwertarten
+%   2  Fehlende Angaben und fehlende Normung des TATL
+%   3  Verlagerung der Sicherheit in eine Wirkungskette und Redundanz
+%   4  Prognoseunsicherheit in der Planung
+%   5  Umsetzungsstand in den Pilotvorhaben
+%   6  Beschaffungsproblem als Abschluss und Uebergang zum rechtlichen
+%      Rahmen, der klaert, ob eine marktliche Beschaffung zulaessig ist
+% Die offene Frage nach der Beschaffung bildet den letzten Satz und leitet
+% in den rechtlichen Rahmen ueber.
+%   Das Beschaffungsproblem wird hier nur als offene Frage benannt. Die
+%   Begruendung ueber das Selbstdispatch-Modell steht in Abschnitt 2.3.1.
+% Die frueher an erster Stelle stehende schrumpfende Basis konventioneller
+% Anlagen ist nach Abschnitt 2.1.1 verschoben. Sie erhoeht den praeventiven
+% Eingriffsbedarf und ist damit ein Argument fuer die kurative
+% Systemfuehrung und kein Hindernis ihrer Umsetzung.
+% GEAENDERT am 20.08.2026: Der Satz verwies frueher auf die zuvor
+% behandelten rechtlichen Fragen. Nach der Umstellung steht der Rechtsteil
+% dahinter, weshalb der Rueckbezug entfallen ist.
+In den laufenden Pilotvorhaben zeigen sich Hindernisse technischer und organisatorischer Natur.
+Zunächst ist die thermische Reserve nicht in vollem Umfang nutzbar.
+Ein hoch ausgelastetes Netz wird bereits nahe an seinen Grenzen betrieben, und neben dem thermischen Grenzwert können auch Spannungsgrenzwerte und die Kurzschlussfestigkeit die zulässige Belastung nach oben begrenzen.
+Für eine Höherauslastung sind daher die zulässige Häufigkeit und die Gleichzeitigkeit mit diesen weiteren Anforderungen festzulegen \cite{dena_hoeherauslastung_2022}.
+% ERGAENZT am 20.08.2026. Die Aussage ist als Mechanismus formuliert und
+% traegt deshalb keine eigene Fundstelle. Sie schaerft zugleich den
+% folgenden Punkt, denn die fehlenden TATL-Angaben betreffen nicht nur
+% Leitungen, sondern die gesamte Reihe.
+% BEGRIFF GEAENDERT: Du hattest Spannungswandler genannt. Diese liegen
+% parallel und fuehren keinen Laststrom, weshalb sie von einer
+% Hoeherauslastung nicht betroffen sind. Betroffen sind die in Reihe
+% liegenden Betriebsmittel, also Stromwandler, Leistungsschalter, Trenner
+% und Sammelschienen. Falls du bewusst Spannungswandler meinst, bitte
+% zurueckaendern und die Begruendung ergaenzen.
+% ANSCHLUSS an Abschnitt 2.1.2, wo bereits steht, dass fuer eine
+% Uebertragungsstrecke das Minimum ueber alle Betriebsmittel massgeblich
+% ist. Hier geht es um die Folge, naemlich dass diese Betriebsmittel
+% eigene Grenzen und eigene Angaben brauchen.
+Betroffen ist dabei nicht allein das thermisch bestimmende Betriebsmittel, sondern die gesamte Reihe der stromführenden Betriebsmittel einer Übertragungsstrecke, also auch Stromwandler, Leistungsschalter, Trenner und Sammelschienen, deren zulässige Belastung eigenen Grenzen unterliegt.
+Der für die Betriebsführung nutzbare Grenzwert kann damit unter dem thermisch bestimmten liegen.
+% BELEGTES BEISPIEL fuer diese Aussage. Der Satz zeigt an einem konkreten
+% Fall, dass die thermische Reserve nicht in vollem Umfang nutzbar ist.
+% ZUR STILREGEL: sous_comparison_2025 steht in diesem Absatz ein zweites
+% Mal, weil der Absatz sechs voneinander unabhaengige Umsetzungshindernisse
+% aufzaehlt und jedes seine eigene Fundstelle braucht. Dasselbe gilt bereits
+% fuer dena_hoeherauslastung_2022. Falls die Regel strikt gelten soll, ist
+% der Absatz in zwei zu teilen, naemlich technische und planerische
+% Hindernisse.
+% GESTRICHEN am 20.08.2026: Hier stand das Beispiel einer
+% Betriebssimulation, in der die thermisch berechneten TATL-Werte auf
+% 4000 Ampere begrenzt werden und die Mehrzahl der Werte auf der
+% 380-kV-Ebene auf diese Schranke zurueckfaellt. Der Befund belegte nur,
+% dass es weitere Grenzen gibt, was der vorangehende Satz bereits sagt.
+% Der Beleg steht in sous_comparison_2025, falls er gebraucht wird.
+% NEBENEFFEKT: Damit steht sous_comparison_2025 in diesem Absatz nur noch
+% einmal, naemlich beim Redundanzsatz. Die frueher dokumentierte Ausnahme
+% von der Regel, eine Quelle je Absatz nur einmal zu zitieren, ist damit
+% erledigt.
+% ERSETZT DURCH die Folgerung, die aus den weiteren Grenzen und aus der
+% Reihe der stromfuehrenden Betriebsmittel tatsaechlich folgt. EIGENE
+% ABLEITUNG, kein \cite setzen.
+% ANSCHLUSS: Der Satz bereitet die Lokationalitaet vor, die in Abschnitt
+% 3.1.1 als Anforderung A2 steht. Dort nicht als neuen Befund behaupten.
+Wie weit eine Höherauslastung möglich ist, ist deshalb standortspezifisch zu bestimmen, denn die begrenzende Größe unterscheidet sich von Strecke zu Strecke und nicht jede Leitung lässt sich im gleichen Maß höher auslasten.
+% ZURUECKGENOMMEN am 20.08.2026: Hier stand der Satz, die Erfassung setze
+% voraus, dass die Netzbetreiber die Anforderungen an Form und Inhalt der
+% Angaben vorgeben, was aus Sicht der Hersteller die Bedingung fuer eine
+% Normung und fuer die Entwicklung entsprechender Betriebsmittel sei. Das
+% ist eine zugespitzte Kausalkette und schreibt den Herstellern eine
+% Position zu. Beides ist nicht gedeckt, solange die Fundstelle nicht mit
+% Seitenangabe geprueft ist. Nicht wieder aufnehmen.
+% PRUEFEN: Ob das Impulspapier die fehlende einheitliche Vorgabe fuer Form
+% und Inhalt der Angaben ausdruecklich benennt. Falls nicht, traegt die
+% Fundstelle nur die erste Haelfte des Satzes und die zweite ist eigene
+% Ableitung oder zu streichen.
+% GESTRICHEN am 20.08.2026: Hier stand der Satz zu den nicht durchgaengig
+% vorliegenden TATL-Angaben und zur fehlenden einheitlichen Vorgabe fuer
+% Form und Inhalt. Nicht wieder aufnehmen.
+% DIE FOLGERUNG BLEIBT, haengt jetzt aber an der standortspezifischen
+% Bestimmung im vorangehenden Satz und nicht mehr an der Datenlage. Sie ist
+% damit EIGENE ABLEITUNG, kein \cite setzen.
+% FALLS AUCH DIESER SATZ ENTFAELLT, endet der Punkt zur Nutzbarkeit der
+% thermischen Reserve mit der standortspezifischen Bestimmung. Das traegt
+% ebenfalls, verliert aber die Aussage, dass das Potenzial derzeit nicht
+% ausgeschoepft wird.
+Solange diese Bestimmung nicht vorliegt, ist die kurative Höherauslastung auf Abschätzungen zur sicheren Seite angewiesen und schöpft das theoretische Potenzial nicht aus.
+Das schwerwiegendste technische Hindernis liegt in der Verlagerung der Sicherheit selbst.
+Die präventive Systemführung stellt (N-1)-Sicherheit über eine vorab eingehaltene Auslastungsreserve her, die unabhängig von technischen Komponenten wirkt.
+Im kurativen Betrieb hängt sie demgegenüber an einer Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, die im Fehlerfall vollständig und fristgerecht funktionieren muss.
+Fällt ein Glied dieser Kette aus, führt der Ansatz das System nicht in den Normalzustand zurück, sondern in den Notzustand.
+Zuverlässige kurative Konzepte setzen deshalb eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022, sous_comparison_2025}.
+Die Ausgestaltung dieser Redundanz ist nicht Gegenstand dieser Arbeit und wird im Ausblick in Kapitel~\ref{ch:conc} eingeordnet.
+Auf der Planungsseite erschwert die Prognoseunsicherheit die Auswahl der scharfzuschaltenden Maßnahmen.
+Mit steigendem Anteil wetterabhängiger Einspeisung wächst die Abweichung zwischen prognostizierter und tatsächlicher Netzbelastung, sodass sowohl der Ort als auch der Zeitpunkt eines Engpasses zum Planungszeitpunkt weniger belastbar bestimmbar sind \cite{lindner_operation_2023, rystad_energy_renewables__power_analytics_energy_2026}.
+Die Menge der vorzusehenden Maßnahmen ist damit nicht anhand eines einzelnen erwarteten Netzzustands, sondern gegen ein Spektrum möglicher Zustände zu bemessen.
+Der Umsetzungsstand im deutschen Übertragungsnetz ist entsprechend heterogen.
+% KORRIGIERT am 20.08.2026: Die Vorfassung nannte die Netzbooster ein
+% bereits umgesetztes Instrument, das Leistung fuer den Fehlerfall
+% vorhaelt. Das trifft nicht zu, denn die Vorhaben befinden sich in der
+% Umsetzung und eine Betriebserprobung steht aus. Die Formulierung ist
+% entsprechend zurueckgenommen. Nicht wieder als umgesetzt formulieren.
+% PRUEFEN VOR ABGABE: Der Umsetzungsstand kann sich aendern. Sollte bis
+% dahin ein Netzbooster in Betrieb gegangen sein, ist der Satz anzupassen.
+% ANSCHLUSS: Der Abgleich in Abschnitt 3.1.2 bewertet den Netzbooster gegen
+% die Anforderungen. Dort ist derselbe Umsetzungsstand zu beruecksichtigen,
+% damit beide Stellen nicht auseinanderlaufen.
+Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Echtbetrieb vor \cite{tennet_tso_gmbh_pilotbetrieb_2025}, und mit den Netzboostern befindet sich ein Instrument in der Umsetzung, das speicherbasierte Leistung für den Fehlerfall vorhalten soll, dessen Betriebserprobung aber noch aussteht \cite{consentec_systembooster_2026}.
+% GESTRICHEN: Hier stand der Hinweis auf das Projekt kurSyV zur Uebertragung
+% auf die Verteilnetzebene. Die Arbeit betrachtet die Uebertragungsnetzebene,
+% und der Satz zog keine Folgerung. Die beiden bib-Eintraege bleiben in der
+% literature.bib und koennen im Ausblick von Kapitel 6 verwendet werden.
+Damit bleibt die Frage offen, wie das Stellpotenzial eines Marktteilnehmers gesichert wird, denn eine marktliche Beschaffung kurativer Vorhalteleistung ist in keinem der Pilotvorhaben Gegenstand.
+Ob eine solche Beschaffung überhaupt zulässig wäre, entscheidet der rechtliche Rahmen.
+
+\subsection{Rechtlicher Rahmen}
+\label{sec:legal_framework}
+% ABSCHLUSS DES ABSCHNITTS 2.1. Der letzte Satz uebergibt an Abschnitt 2.2
+% und damit an die Frage, welche Technologie die offene Zusage einloesen
+% kann.
+
+Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}.
+§\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen, und da das Gesetz bei strom- und spannungsbedingten Anpassungen die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
+% VERSCHOBEN am 20.08.2026: Der Satz zu §\,118 Abs.\,6 EnWG stand hier
+% zwischen der Systemverantwortung und der SO GL und riss den Gedankengang
+% auf. Er steht jetzt am Ende des Unterabschnitts bei den uebrigen
+% speicherbezogenen Vorschriften. Nicht zurueckverschieben.
+% GEKUERZT: Der frueher hier stehende Satz zu den betrieblichen
+% Sicherheitsgrenzwerten ist entfallen, weil er die Aussage aus Abschnitt
+% 2.1.1 wiederholte, wo sie mit der Fundstelle auf Art. 25 steht und die
+% PATL- und TATL-Definition einleitet.
+% UMFORMULIERT am 20.08.2026: Die Vorfassung las sich als reine Pflicht.
+% Tatsaechlich ist die Bestimmung zugleich die Erlaubnisnorm, denn sie
+% laesst eine Auslastung oberhalb der PATL fuer eine begrenzte Zeit zu und
+% knuepft sie an die Rueckfuehrung. Genau darauf beruht die kurative
+% Hoeherauslastung.
+% KEIN WIDERSPRUCH zum spaeteren Befund, keine Regelung sei auf die kurative
+% Systemfuehrung zugeschnitten. Die SO GL erlaubt den BETRIEB, sie regelt
+% nicht die BESCHAFFUNG. Diese Unterscheidung traegt den Bogen des
+% Kapitels und darf nicht verwischt werden.
+% PRUEFEN: Der Erlaubnischarakter ist gegen Art.\,25 der SO GL zu
+% verifizieren, wo PATL und TATL definiert sind. Eine Artikelangabe in der
+% Fundstelle waere hier hilfreich.
+Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
+Sie lässt eine Auslastung oberhalb der \ac{PATL} für eine begrenzte Zeit ausdrücklich zu und verlangt dafür, dass die Leistungsflüsse nach Eintreten eines Fehlerfalles innerhalb des durch die \ac{TATL} definierten Zeitfensters durch geeignete Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze geführt werden, wobei eine Ausfallvarianten-Liste mit allen relevanten (N-1)-Szenarien die Planungsgrundlage bildet \cite{europaische_kommission_verordnung_2017}.
+Der kurative Betrieb ist damit europarechtlich zulässig, solange die Rückführung innerhalb des Zeitfensters sichergestellt ist.
+Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+% GEAENDERT: Die frueher hier stehende Formulierung, ein marktbasiertes
+% kuratives Engpassmanagement entspreche dem Kostenminimierungsgebot,
+% behauptete eine Zulaessigkeitsfeststellung. Der Satz sagt jetzt, dass
+% sich die Zulaessigkeit aus einer Auslegung ergibt und nicht aus einer
+% ausdruecklichen Regelung.
+% BRUECKE ZU DEN UMSETZUNGSFRAGEN: Der letzte Satz dieses Absatzes ordnet
+% die fehlende Regelung als Hindernis der Umsetzung ein.
+% GEAENDERT am 20.08.2026: Das Wort "erstes" ist entfallen, weil der
+% Rechtsteil nach der Umstellung hinter den technischen und
+% organisatorischen Hindernissen steht und nicht mehr vor ihnen.
+Keine dieser Regelungen ist auf die kurative Systemführung zugeschnitten, denn sie fassen die Pflichten des \ac{ÜNB} allgemein und ohne Bezug auf den Zeitpunkt des Eingriffs.
+Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten deshalb weder das \ac{EnWG} noch die \ac{SO GL}.
+Ihre Zulässigkeit lässt sich lediglich aus dem Kostenminimierungsgebot und dem Vorrang marktbasierter Maßnahmen ableiten, soweit die kurative Maßnahme die kostengünstigere Alternative darstellt.
+Der Umsetzung steht damit entgegen, dass sie sich auf eine Auslegung und nicht auf eine ausdrückliche Regelung stützt.
+% VERSCHOBEN AUS DEM FRUEHEREN ABSCHNITT 2.3.6: Die beiden Vorschriften
+% zielen auf die Nutzung bestehender Netzkapazitaet und gehoeren damit zum
+% betrieblichen Rechtsrahmen und nicht zu den Beschaffungs- und
+% Verguetungslogiken. Ihre Aufgabe bleibt dieselbe, naemlich die beiden
+% naheliegenden Gegeneinwaende auszuschliessen. Die Marke
+% sec:flexible_connection bleibt erhalten.
+% ABSCHLUSS UND UEBERGANG: Das Beschaffungsproblem steht bewusst am Ende,
+% weil es den Gegenstand der Arbeit benennt und in Abschnitt 2.3 fortgesetzt
+% wird. Reihenfolge nicht aendern.
+\label{sec:flexible_connection}
+Zwei neuere Vorschriften des \ac{EnWG} zielen auf eine bessere Nutzung der bestehenden Netzkapazität und kommen daher als Instrumente in Betracht.
+§\,17 Abs.\,2b \ac{EnWG} erlaubt die Vereinbarung flexibler Netzanschlüsse und ist für Speicher deshalb besonders relevant, weil nur diese Norm eine Begrenzung sowohl der Einspeise- als auch der Entnahmeleistung und damit eine bidirektionale Ausgestaltung vorsieht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_faq_2025}.
+Sie begründet allerdings keinen Anspruch des Anlagenbetreibers auf ein solches Angebot, sondern eröffnet dem Netzbetreiber lediglich eine Möglichkeit \cite{bundesnetzagentur_beschluss_2026}.
+§\,13k \ac{EnWG} verfolgt mit dem Grundsatz \glqq{}Nutzen statt Abregeln\grqq{} einen komplementären Ansatz und regelt den Vorrang der Flexibilitätsnutzung gegenüber der Abregelung erneuerbarer Erzeugung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Beide Vorschriften regeln jedoch die Zulässigkeit und die Rangfolge von Begrenzungen im Eintrittsfall und nicht die Bereitstellung und Vergütung einer im Voraus vorgehaltenen Reaktionsfähigkeit, und sie greifen nur, soweit der Netzbetreiber sie im Einzelfall anbietet.
+% HIERHER VERSCHOBEN am 20.08.2026, aus dem Absatz zur Systemverantwortung.
+% Der Satz steht jetzt bei den uebrigen speicherbezogenen Vorschriften und
+% leitet zugleich in den Technologieabschnitt ueber.
+% FORMULIERUNG GEAENDERT: Die Vorfassung sagte, die Vorschrift setze einen
+% wirtschaftlichen Anreiz. Eine Entgeltbefreiung beseitigt eine Belastung,
+% sie setzt keinen Anreiz. Nicht zurueckaendern.
+Für \ac{BESS} als kurative Ressource ist zudem §\,118 Abs.\,6 \ac{EnWG} von Bedeutung, der die Netzentgeltbefreiung auf gemischt genutzte Speicher ausdehnt und damit eine wirtschaftliche Hürde für deren Einsatz im Netzbetrieb beseitigt \cite{bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025}.
+% UEBERGANG ZU ABSCHNITT 2.2, ergaenzt am 20.08.2026. Ohne ihn endet der
+% Abschnitt 2.1 auf einer Verneinung und uebergibt an nichts.
+Die Bereitstellung bleibt damit an eine Zusage des Anlagenbetreibers gebunden, und welche Technologie eine solche Zusage einlösen kann, ist Gegenstand des folgenden Abschnitts.
+% GESTRICHEN: Hier standen drei Saetze zur Kollision mit dem kontinuierlichen
+% Intraday-Handel und zur institutionellen Natur des Hindernisses. Sie nahmen
+% das Argument aus Abschnitt 2.3.1 vorweg, ohne dessen Praemisse zu haben,
+% denn die institutionelle Natur folgt aus dem Selbstdispatch-Modell, das erst
+% dort eingefuehrt wird. Die Inhalte stehen an vier Stellen, naemlich in
+% 2.1.1 beim Handelsfenster hinter der letzten Prognoserechnung, in 2.3.1
+% beim fehlenden Zugriff auf den Fahrplan und bei der Bindung ueber alle
+% Handelsgelegenheiten sowie im Zwischenfazit als erstem Befund. Nicht
+% wieder aufnehmen.
+
+% =====================================================================
+% ABSCHNITT 2.2, NEU am 24.08.2026.
+% Er beschreibt den Strommarkt und die Systemdienstleistungen und
+% traegt KEINE Verguetungsfragen. Diese stehen geschlossen in
+% Abschnitt 2.3.
+% AUFBAU: 2.2.1 wer den Fahrplan setzt, 2.2.2 wann er gesetzt und
+% geaendert werden kann, 2.2.3 welche Dienstleistungen daneben
+% beschafft werden.
+% =====================================================================
+\section{Marktrahmen und Systemdienstleistungen}
+\label{sec:market_framework}
+% EINLEITUNG. Sie benennt den WEG, naemlich die Integration eines
+% kurativen Produkts in die bestehenden Maerkte, und begruendet daraus
+% die Notwendigkeit, diese Maerkte zuerst zu verstehen.
+% Kosteneffizienz und Diskriminierungsfreiheit tauchen hier als
+% Anforderungen auf und werden im Anforderungskatalog in Abschnitt 3.1.1
+% aufgenommen. Bei Aenderungen dort diese Stelle mitziehen.
+Der vorige Abschnitt hat gezeigt, welche Anlagen eine kurative Zusage einlösen können.
+Kosteneffizient und diskriminierungsfrei lässt sich eine solche Zusage erlangen, indem ein kuratives Produkt in die bestehenden Strommärkte eingefügt wird, statt es daneben zu stellen.
+Dieser Abschnitt erklärt dazu die einzelnen Märkte und ihre zeitliche Einordnung.
+
+% VERSCHOBEN am 24.08.2026 aus Abschnitt 2.3. Der Unterabschnitt
+% beschreibt die Marktarchitektur und keine Verguetungslogik.
+% ---------------------------------------------------------------
+\subsection{Selbstdispatch und Zentraldispatch}
+\label{sec:dispatch_models}
+
+% NEU GEORDNET am 20.08.2026. Der Unterabschnitt fuehrt jetzt erst das
+% zentrale Dispatch-Modell als Kontrastfall und danach das Selbstdispatch.
+% Damit steht die entscheidende Aussage am Ende, naemlich dass ein eigener
+% Beschaffungsmechanismus erst im Selbstdispatch noetig wird.
+% OFFEN 3: Fundstelle der Legaldefinition. Kapitel 1 zitiert dieselbe
+% Stelle. Vor Abgabe eine der beiden in Betracht kommenden Fundstellen
+% verifizieren, also Art. 2 Abs. 17 EBGL oder Art. 2 Abs. 30 der
+% Verordnung (EU) 2019/943, und in beiden Kapiteln einheitlich setzen.
+% NICHT BEHAUPTEN, ein Modell sei kosteneffizienter als das andere. Das
+% Selbstdispatch internalisiert die Netzrestriktionen gerade nicht, der
+% zentrale Dispatch traegt dafuer die Last, die Kostenstruktur aller
+% Anlagen zu kennen. Welches Modell insgesamt guenstiger ist, ist offen.
+% PRAEZISION im vorletzten Satz des ersten Absatzes: Im zentralen Dispatch
+% entfaellt die BESCHAFFUNG, nicht die VERGUETUNG. Der Anlagenbetreiber
+% traegt die Opportunitaetskosten auch dort, nur wird der Betriebspunkt
+% nicht verhandelt. Diese Unterscheidung nicht verwischen.
+Die europäische Regulierung unterscheidet zwei Modelle, nach denen Erzeugungs- und Verbrauchsfahrpläne zustande kommen.
+Im zentralen Dispatch-Modell bestimmt der \ac{ÜNB} die Fahrpläne und den Einsatz der dispatchfähigen Anlagen im Rahmen eines integrierten Fahrplanerstellungsprozesses, der technische Anlagendaten, Anfahrcharakteristika und die Ergebnisse der Betriebssicherheitsanalyse gemeinsam berücksichtigt \cite[Art.\,2 Abs.\,18 und 19]{europaische_kommission_verordnung_2017_ebgl}.
+Netzrestriktionen sind dort Nebenbedingung der Einsatzoptimierung und damit Teil der Fahrplanbildung selbst, weshalb der Fahrplan die Grenzwerte von vornherein einhält und eine nachgelagerte Korrektur weitgehend entfällt.
+Eine kurative Reaktionsfähigkeit wäre in diesem Modell eine weitere Nebenbedingung derselben Optimierung.
+Der \ac{ÜNB} müsste sie vergüten, aber nicht beschaffen, denn er bestimmt den Betriebspunkt der Anlage ohnehin und kann den erforderlichen Leistungs- und Energievorrat unmittelbar freihalten.
+
+% ZWEITER ABSATZ, das Selbstdispatch. Die Reihenfolge ist bewusst
+% Beschreibung, Verbreitung, Begruendung, Folge fuer das
+% Engpassmanagement, Folge fuer die kurative Systemfuehrung.
+% ZUR BEGRUENDUNG DER VERBREITUNG, eigene Ableitung, kein \cite setzen:
+% Sie laeuft ueber die Information und nicht ueber die Effizienz. Der
+% Anlagenbetreiber kennt seine Kosten, der UENB kennt sie nicht.
+% NICHT SCHREIBEN, das Engpassmanagement sei im Selbstdispatch teurer. Es
+% tritt als eigener nachgelagerter Prozess auf, was etwas anderes ist.
+Im Selbstdispatch-Modell werden die Fahrpläne und der Einsatz der Erzeugungs- und Verbrauchsanlagen demgegenüber durch die Fahrplanverantwortlichen dieser Anlagen selbst bestimmt \cite[Art.\,2 Abs.\,17]{europaische_kommission_verordnung_2017_ebgl}.
+Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf dieses Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}, weshalb ihm in Europa der überwiegende Teil der Systeme einschließlich Deutschlands folgt \cite{meeus_evolution_2020}.
+Die Einsatzentscheidung bleibt damit bei demjenigen, der die Kosten seiner Anlage kennt, und der \ac{ÜNB} benötigt weder diese Kenntnis noch einen Zugriff auf den Betriebspunkt.
+Die Marktteilnehmer optimieren dabei gegen einen zonalen Preis, der keine Information über die Belastung einzelner Betriebsmittel enthält, weshalb der \ac{ÜNB} das Ergebnis nachgelagert durch Redispatch korrigiert.
+Redispatch ist in dieser Lesart keine Störung des Marktergebnisses, sondern der systematisch vorgesehene Korrekturmechanismus eines Marktdesigns, das physikalische Restriktionen bewusst aus der Preisbildung ausklammert \cite{oggioni_market_2013, newbery_market_2018}.
+% AUFGETEILT am 24.08.2026. Die Vorfassung nannte die Verkleinerung der
+% Gebotszonen und die lokationale Preisbildung in einem Nebensatz, ohne
+% dass einer der beiden Begriffe zuvor eingefuehrt war. Kapitel 1 fuehrt
+% nur die einheitliche Gebotszone und den zonalen Preis als Eigenschaften
+% des geltenden Designs, nicht deren Alternativen.
+% OHNE WERTUNG. Es steht hier, WAS die Ansaetze bewirken wuerden, und
+% nicht, ob sie vorzugswuerdig sind. Die Bewertung steht in Abschnitt
+% 3.1.2 und darf hier nicht vorweggenommen werden.
+% BEGRIFFE gleichlautend mit Abschnitt 3.1.2, naemlich Teilung der
+% Gebotszone und knotenscharfe Preisbildung. Nicht auseinanderlaufen
+% lassen.
+% ABGRENZUNG statt leerem Vorwaertsverweis. Der letzte Satz haelt fest,
+% dass die Arbeit die bestehende Zonenaufteilung voraussetzt. Das ist eine
+% Setzung und keine Ankuendigung.
+Das Engpassmanagement tritt damit als eigener nachgelagerter Prozess auf, dessen Volumen eine Funktion des Marktdesigns und nicht allein des Netzzustands ist.
+Als Alternativen zur einheitlichen Gebotszone werden folgende Ansätze diskutiert, nämlich deren Teilung in mehrere kleinere Zonen und eine knotenscharfe Preisbildung, die die Netzrestriktionen bereits in die Preisbildung aufnehmen und damit einen Teil des heutigen Redispatchbedarfs in die Fahrplanbildung internalisieren würden \cite{horsch_role_2017, agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}.
+Die vorliegende Arbeit setzt an der bestehenden Zonenaufteilung an, und der Abgleich dieser Ansätze mit den Anforderungen an einen kurativen Mechanismus erfolgt in Abschnitt \ref{sec:market_design_comparison}.
+% VERLAGERT NACH ABSCHNITT 2.3.6 am 24.08.2026. Hier stand die Ableitung,
+% dass kurative Reaktionsfaehigkeit nur beschafft und nicht angeordnet
+% werden kann, samt der Abgrenzung des flexiblen Netzanschlusses. Sie ist
+% eine Folgerung fuer die kurative Vorhaltung und keine Eigenschaft des
+% Selbstdispatch-Modells, weshalb sie in das Zwischenfazit gehoert. Der
+% Wortlaut steht dort im zweiten Absatz nach der Asymmetrie.
+% ENTFALLEN dabei: Der Satz zur Bindung ueber alle dazwischenliegenden
+% Handelsgelegenheiten. Abschnitt 2.3.5 leitet ihn vollstaendig her und
+% das Zwischenfazit haelt ihn in Befund 1 fest. Dreifach ist zu viel.
+% NICHT WIEDER hier aufnehmen, weil dieser Unterabschnitt sonst zwei
+% Aufgaben zugleich erfuellt.
+% BRUECKE ENTFERNT am 24.08.2026. Hier standen zwei Saetze zur
+% Duldungspflicht und ein Verweis auf den unmittelbar folgenden
+% Unterabschnitt. Beides war entbehrlich, denn die Duldungspflicht steht
+% im ersten Absatz von 2.3.2 noch einmal, und ein Vorwaertsverweis auf
+% den naechsten Unterabschnitt traegt nichts.
+% Die Asymmetrie, dass der UENB den Eingriff anordnen darf und die
+% Vorhaltung nicht, steht seit der Verlagerung im Zwischenfazit und als
+% kategorialer Einwand in Abschnitt 2.3.4. NICHT hier wieder aufnehmen.
+% Der Unterabschnitt endet damit auf seiner eigenen Folgerung, naemlich
+% dem Engpassmanagement als nachgelagertem Prozess und der Abgrenzung
+% gegen die Alternativen zur einheitlichen Gebotszone.
+
+% VERSCHOBEN am 24.08.2026 aus dem Unterabschnitt zum Wettbewerb um
+% Leistung und Ladezustand. Der Block schliesst unmittelbar an die
+% Dispatchmodelle an, worauf sein erster Satz mit "innerhalb dieses
+% Modells" auch immer schon Bezug nahm. Die Marke sec:market_horizons
+% ist mitgewandert, weil der Name hier passt.
+\subsection{Marktzeithorizonte und Handelsgelegenheiten}
+\label{sec:market_horizons}
+% AUFBAU, Reihenfolge nicht umstellen. Der Unterabschnitt geht die Maerkte
+% in der Reihenfolge abnehmenden Vorlaufs durch und erklaert sie unmittelbar
+% an der Zeitschiene. Die Rechenlaeufe des UENB stehen ZULETZT, weil sie
+% auf den Fahrplaenen aufsetzen und nicht umgekehrt.
+% KEINE REGELLEISTUNG. Die Ausschreibungszeitpunkte sind aus dem Text
+% entfernt. Abschnitt 2.2.3 verweist stattdessen auf diese Abbildung.
+% ABKUERZUNGEN werden hier eingefuehrt, weil dies der Abschnitt ist, der
+% die Maerkte benennt. Die Indizes ID3 und ID1 werden gebraucht, weil das
+% Volatilitaetsmass der Festlegung auf dem ID1 aufsetzt, siehe Abschnitt
+% 2.3.2, und weil Kapitel 5 auf sie zurueckgreift.
+% PRUEFEN: Die Handelsfenster, die Zahl der DACF- und IDCF-Laeufe und die
+% Zahl der praeventiven Redispatch-Optimierungen sind gegen die Vorgaben
+% der UENB zu belegen. Derzeit stehen sie unbelegt.
+Innerhalb dieses Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf.
+Abbildung~\ref{fig:markt_zeitschiene} stellt diese Staffelung gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer gemeinsamen Zeitachse dar.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{figures/chapter_2/markt_zeitschiene.pdf}
+    \caption{Zeitliche Staffelung der Handelsgelegenheiten, der Beschaffung von Systemdienstleistungen und der Rechenläufe des \ac{ÜNB} bis zum Erfüllungszeitpunkt.}
+    \label{fig:markt_zeitschiene}
+\end{figure}
+
+Am Anfang stehen der Terminmarkt und der \ac{OTC}-Handel.
+% GEAENDERT am 24.08.2026. Die Vorfassung begruendete den Ausschluss des
+% OTC-Handels mit fehlender Transparenz. Das trifft nicht zu, denn
+% Grosshandelsvertraege sind nach REMIT meldepflichtig und die
+% Mengenwirkung erreicht den UENB ohnehin ueber die Fahrplananmeldung.
+% NICHT wieder als Transparenzproblem formulieren.
+Beide bleiben im Folgenden unberücksichtigt, denn der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei, während der \ac{OTC}-Handel bilateral abgeschlossen wird und sich damit einer Nachvollziehbarkeit entzieht.
+
+% FORMULIERUNG: Die Abkuerzung steht im NOMINATIV, weil ihre Aufloesung
+% im Genitiv "die Auktion des Day-Ahead-Markt" ergaebe. Nicht in eine
+% deklinierte Stellung zuruecknehmen.
+% DA UND IDA IN EINEM ABSATZ, zusammengezogen am 24.08.2026. Beide sind
+% Auktionen mit derselben Preisbildung, weshalb der Umbruch dazwischen kein
+% Themenwechsel war.
+% PREISBILDUNG. Die Unterscheidung zwischen pay-as-cleared in den Auktionen
+% und pay-as-bid im kontinuierlichen Handel wird in Kapitel 3 fuer die
+% Ausgestaltung der Verguetung gebraucht.
+% Die Abkuerzung DA steht im NOMINATIV, weil ihre Aufloesung im Genitiv
+% "die Auktion des Day-Ahead-Markt" ergaebe. Nicht zuruecknehmen.
+% ACHTUNG: Die Mengenverlagerung betrifft NUR die erste Intraday-Auktion.
+% Nicht verallgemeinern.
+% PRUEFEN: Die Quelle nennt fuer November und Dezember 0,42 GWh, was im
+% Zusammenhang nur 0,42 TWh sein kann. Die Zahl ist deshalb nicht
+% uebernommen.
+Den Ausgangspunkt der betrachteten Fahrplanbildung bildet daher der \ac{DA}.
+Seine Auktion schließt um 12 Uhr des Vortages und preist alle Lieferzeitpunkte des Folgetages in einem einzigen Auktionsdurchgang, sodass ihr Handelsfenster den gesamten Liefertag umfasst.
+Der Zuschlag erfolgt nach dem Verfahren pay-as-cleared, sodass alle bezuschlagten Gebote unabhängig von ihrer Höhe den einheitlichen Markträumungspreis erhalten.
+Zum 1.\,Oktober 2025 wurde der Produktschnitt dieser Auktion von Stunden- auf Viertelstundenprodukte umgestellt \cite{ffe_saegezahn_2026}.
+Daran schließen die seit Juni 2024 etablierten Intraday-Auktionen an, die den Fahrplan zu definierten Zeitpunkten gegen aktualisierte Prognosen neu bewerten und ebenfalls nach pay-as-cleared abrechnen \cite{mahgoub_wie_2025}.
+Die \ac{IDA-1} schließt um 15 Uhr und die \ac{IDA-2} um 22 Uhr des Vortages, beide mit dem gesamten Folgetag als Handelsfenster, während die \ac{IDA-3} um 10 Uhr des Liefertages schließt und nur noch dessen zweite Hälfte umfasst.
+Mit der Umstellung des Produktschnitts hat sich ein Teil des kurzfristigen Ausgleichs aus diesen Auktionen in die Auktion des \ac{DA} verlagert.
+Deren Handelsvolumen erreichte im Oktober 2025 mit 26,7\,\si{TWh} den höchsten Monatswert des Jahres, während das Volumen der \ac{IDA-1} auf 0,56\,\si{TWh} und damit auf ein seit 2020 nicht mehr erreichtes Niveau fiel, ohne dass sich die Volumina der \ac{IDA-2} und der \ac{IDA-3} veränderten.
+% ABSATZUMBRUCH ERGAENZT am 24.08.2026. Der Abschnitt zum kontinuierlichen
+% Handel hing zuvor am Absatz zu den Intraday-Auktionen.
+% ABKUERZUNG IDC auf "Intraday Continuous" umgestellt, weil die deutsche
+% Aufloesung "kontinuierlicher Intraday-Markt" nach dem Artikel "der" die
+% falsche Adjektivendung traegt.
+% ID1 und ID3 tragen das Zeitfenster jetzt in der Aufloesung, weshalb der
+% Satz es nicht wiederholt.
+Den Abschluss bildet der \ac{IDC}, der mit der ersten Intraday-Auktion einsetzt und die Anpassung bis zum Gate Closure offenhält.
+Anders als in den Auktionen kommt hier jedes Geschäft einzeln zustande und wird nach pay-as-bid zu dem zwischen den Parteien vereinbarten Preis abgerechnet.
+Die Handelsschlusszeitpunkte treten dabei gestaffelt ein, nämlich 60 Minuten vor Lieferbeginn für den grenzüberschreitenden Handel, 30 Minuten davor für den deutschlandweiten Handel und 5 Minuten davor für den regelzoneninternen Handel.
+Sein Preisniveau wird über den \ac{ID3} und den \ac{ID1} abgebildet, die beide volumengewichtet sind.
+
+% RECHENLAEUFE. Sie stehen zuletzt, weil sie auf den Fahrplaenen aufsetzen.
+% RECHENLAEUFE, praezisiert am 24.08.2026.
+% REIHENFOLGE der Ebenen nicht vertauschen. Zuunterst die europaeisch
+% koordinierten Lastflussberechnungen, darauf die praeventiven
+% Redispatch-Prozesse, darauf die Netzsicherheitsrechnung.
+% PRUEFEN: Der europaeische Charakter der Lastflussberechnungen, die Zahl
+% der Laeufe, der jeweils betrachtete Zeitraum und die Zahl der
+% praeventiven Redispatch-Prozesse sind gegen die Vorgaben der UENB zu
+% belegen. Derzeit stehen sie unbelegt.
+% RECHENLAEUFE, praezisiert am 24.08.2026.
+% REIHENFOLGE der Ebenen nicht vertauschen. Zuunterst die europaeisch
+% koordinierten Lastflussberechnungen, darauf die praeventiven
+% Redispatch-Prozesse, darauf die Netzsicherheitsrechnung, zuletzt das
+% offene Handelsfenster als Folgerung.
+% KEINE KURATIVE AUSSAGE in diesem Absatz. Die Folgerung, dass eine
+% kurative Zusage ueber alle dazwischenliegenden Handelsgelegenheiten
+% binden muss und die Bindungsdauer damit zum Produktmerkmal wird, steht im
+% Zwischenfazit des Kapitels. Hier NICHT wieder aufnehmen, dieser
+% Unterabschnitt beschreibt den Markt.
+% PRUEFEN: Der europaeische Charakter der Lastflussberechnungen, die Zahl
+% der Laeufe, der jeweils betrachtete Zeitraum und die Zahl der praeventiven
+% Redispatch-Prozesse sind gegen die Vorgaben der UENB zu belegen. Derzeit
+% stehen sie unbelegt.
+Über den Handelsgelegenheiten liegen die Rechenläufe des \ac{ÜNB}, die den Netzzustand aus den gemeldeten Fahrplänen ableiten.
+Die zugrunde liegenden Lastflussberechnungen sind europäisch koordiniert, denn die \ac{ÜNB} tauschen ihre Fahrplan- und Netzdaten dafür untereinander aus.
+Am Vortag wird der \ac{DACF} mehrfach für den gesamten Folgetag gerechnet, während am Liefertag 24 stündliche Läufe des \ac{IDCF} folgen, die jeweils die kommende Stunde betrachten.
+Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf, nämlich zwei am Vortag und drei weitere am Liefertag.
+Die Netzsicherheitsrechnung wird daraus ausgelöst und prüft für jede folgende Viertelstunde, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt.
+Zwischen ihrem letzten Durchgang und dem Lieferbeginn bleibt gleichwohl ein Handelsfenster offen, in dem der Fahrplan noch verändert werden darf, ohne dass die Meldung dieser Änderung noch in einen der genannten Rechenläufe eingeht.
+% TRAGENDE STELLE des Unterabschnitts. Ohne das offene Handelsfenster nach
+% der letzten Vorschaurechnung entfaellt die Begruendung fuer eine
+% Bindungsdauer als Produktmerkmal. Nicht abschwaechen.
+% ENTFALLEN am 24.08.2026. Hier standen sechs Saetze zur kurativen
+% Folgerung, naemlich dass Stellpotenziale nicht in der Vortagsplanung
+% fixiert werden koennen, dass eine Zusage ueber alle dazwischenliegenden
+% Handelsgelegenheiten binden muss und dass die Bindungsdauer damit zum
+% Produktmerkmal wird.
+% Sie stehen im Zwischenfazit des Kapitels und gehoeren nicht in einen
+% Unterabschnitt, der den Markt beschreibt. NICHT wieder aufnehmen.
+% ACHTUNG: Abschnitt 2.1.1 kuendigt an, dass die Reichweite des praeventiven
+% Ansatzes mit der letzten Prognoserechnung endet. Diese Ankuendigung wird
+% jetzt vom Zwischenfazit eingeloest und nicht mehr hier.
+% ABSCHNITT 2.2.3, neu zusammengesetzt am 24.08.2026 aus der frueheren
+% Einleitung von Abschnitt 2.3 und dem beschreibenden Teil des
+% Unterabschnitts zur Beschaffung von Regelleistung.
+% HIER KEINE VERGUETUNG. Leistungspreis, Arbeitspreis und Erloesniveau
+% stehen in Abschnitt 2.3.4. Die Tabelle fuehrt deshalb keine Spalte
+% Erloesniveau mehr.
+\subsection{Systemdienstleistungen}
+\label{sec:ancillary_services}
+Die Systemdienstleistungen der Übertragungsnetzbetreiber gliedern sich üblicherweise in Frequenzhaltung, Spannungshaltung, Betriebsführung und Versorgungswiederaufbau.
+Die Spannungshaltung wird über Blindleistung erbracht und der Versorgungswiederaufbau über die Schwarzstartfähigkeit einzelner Anlagen, sodass beide die Wirkleistungseinspeisung nicht unmittelbar berühren und auf die Vermarktung an den Energiemärkten nicht wirken.
+In der Frequenzhaltung wird demgegenüber ein Band an Wirkleistung über einen Zeitraum reserviert und die Bereitstellung selbst vergütet, weshalb sie das einzige Regime ist, in dem eine Vorhaltung bereits einen Preis hat \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Auch die Betriebsführung greift auf die Wirkleistung zu, und zu ihr zählen das Engpassmanagement und die kurative Vorhaltung.
+% ZUSAMMENGEFUEHRT und abgeschwaecht am 20.08.2026. Die Vorfassung sagte,
+% eine Beurteilung sei erst moeglich, wenn feststehe, wie das
+% Engpassmanagement heute funktioniere. Das ist staerker formuliert als
+% noetig. Aus zwei Saetzen ist einer geworden.
+
+% KEINE KURATIVE AUSSAGE in diesem Unterabschnitt. Er beschreibt die
+% Systemdienstleistungen. Die Folgerungen fuer die kurative Systemfuehrung
+% stehen in Abschnitt 2.3 und im Zwischenfazit.
+% KEINE VERGUETUNG. Preisbildungsverfahren und Erloesniveau stehen in
+% Abschnitt 2.3.4.
+% BELEGT am 24.08.2026 gegen die Angaben der UENB. Vier-Stunden-Produkte
+% mit sechs Zeitscheiben je Tag, FCR symmetrisch, aFRR und mFRR getrennt
+% nach Richtung, Gate Closure der Leistungsausschreibung 8, 9 und 10 Uhr
+% des Vortages und damit vor dem Handelsschluss des DA um 12 Uhr.
+% PRUEFEN: Die Gate Closure des Regelarbeitsmarktes ist nicht aufgenommen,
+% weil die Angaben auseinandergehen. Aeltere Quellen nennen eine Stunde vor
+% Beginn der Zeitscheibe, waehrend nach dem Beitritt zu PICASSO und MARI
+% eine viertelstuendliche Abwicklung gilt. Vor einer Aufnahme klaeren.
+Die Frequenzhaltung wird in Deutschland über drei Regelleistungsprodukte beschafft, nämlich die \ac{FCR}, die \ac{aFRR} und die \ac{mFRR}.
+Gemeinsam ist ihnen die Beschaffungslogik.
+Die \ac{ÜNB} schreiben eine Leistungsmenge aus, die Anbieter geben Leistungspreise ab, und die Zuschlagserteilung verpflichtet den Anbieter, die zugesagte Leistung über die gesamte Erbringungsperiode bereitzuhalten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Voraussetzung für die Teilnahme ist ein Präqualifikationsverfahren, in dem die technische Eignung der Anlage nachgewiesen und ein zulässiger Arbeitsbereich festgelegt wird.
+Bei der \ac{aFRR} und der \ac{mFRR} werden Leistung und Arbeit in zwei getrennten Ausschreibungen beschafft, während bei der \ac{FCR} allein Leistung beschafft wird.
+Tabelle~\ref{tab:regelleistung} stellt die Produktmerkmale gegenüber.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Produktmerkmale der drei Regelleistungsprodukte.}
+    \label{tab:regelleistung}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.09\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.28\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.26\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Produkt} & \textbf{Richtung} & \textbf{Produktschnitt} & \textbf{Aktivierung} & \textbf{Handelsschluss} \\
+        \hline
+        \acs{FCR} & symmetrisch & Vier Stunden, nur Leistung & Automatisch, örtliche Frequenzmessung & 8 Uhr des Vortages \\
+        \acs{aFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Automatisch, Plattform PICASSO & 9 Uhr des Vortages \\
+        \acs{mFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Manuell, Plattform MARI & 10 Uhr des Vortages \\
+        \hline
+        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Der Handelsschluss bezieht sich auf die Ausschreibung der Leistung. Je Liefertag werden sechs Zeitscheiben ausgeschrieben.} \\
+    \end{tabular}
+\end{table}
+
+Alle drei Ausschreibungen schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag und damit vor der Auktion des \ac{DA} ab, sodass ein Anbieter seine Vermarktung an den Energiemärkten bereits unter Berücksichtigung einer erteilten Zuschlagsverpflichtung plant.
+% VEREINFACHT am 24.08.2026. "nicht lokational ausgestaltet" war unnoetig
+% abstrakt. Die Aussage lautet schlicht, dass der Standort keine Rolle
+% spielt.
+Wo eine Anlage im Netz steht, spielt für den Zuschlag keine Rolle, denn die Produkte dienen dem Frequenzausgleich in der gesamten Regelzone.
+% RAHMUNG. Sie benennt, was nach der Fahrplanbildung offen bleibt, und
+% leitet nach Abschnitt 2.3.
+% RAHMUNG, neu gefasst am 24.08.2026. Die Vorfassung fuehrte drei
+% Aufgaben des Systembetriebs ein und war damit umstaendlicher als noetig.
+% AUFGABE dieses Absatzes: Das Engpassmanagement als zweite
+% Systemdienstleistung mit Wirkleistungsbezug benennen und begruenden,
+% weshalb es NICHT marktlich beschafft wird. Daraus folgt die Bruecke nach
+% Abschnitt 2.3, denn die Kostenbasis ist der Grund, weshalb dort zwei
+% verschiedene Verguetungslogiken nebeneinanderstehen.
+% PRUEFEN: Der Grund fuer die kostenbasierte Ausgestaltung, naemlich die
+% fehlende Wettbewerblichkeit an einem einzelnen Netzknoten, ist gegen
+% \cite{hirth_kosten_2019} zu belegen. Die Quelle behandelt genau die
+% Gegenueberstellung von kostenbasiertem und marktbasiertem Redispatch.
+Neben der Regelleistung ist das Engpassmanagement die zweite Systemdienstleistung, die auf die Wirkleistung zugreift.
+Es wird jedoch nicht marktlich beschafft, sondern angeordnet und auf Kostenbasis ausgeglichen.
+Der Grund liegt darin, dass ein Engpass nur von denjenigen Anlagen behoben werden kann, die an den betroffenen Netzknoten angeschlossen sind, sodass an dieser Stelle regelmäßig kein Wettbewerb zwischen ausreichend vielen Anbietern besteht.
+Während die Regelleistung damit über Gebote bepreist wird, folgt die Vergütung im Engpassmanagement aus den Kosten der angeordneten Maßnahme.
+Woran sich diese Kosten im Einzelnen bemessen, stellt der folgende Abschnitt dar.
+
 % ###############################################################
 % UEBERSCHRIFT GEAENDERT am 20.08.2026, zweimal. Sie lautete zuerst
 % "Verguetung und Beschaffung im Engpassmanagement" und war damit enger als
@@ -1346,14 +1646,6 @@ Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, u
 % traegt nicht und ist entfernt.
 % KEIN VERWEIS auf die Einleitung. Die Zuordnung der kurativen Vorhaltung
 % zur Betriebsfuehrung ergibt sich aus dem letzten Satz selbst.
-Die Systemdienstleistungen der Übertragungsnetzbetreiber gliedern sich üblicherweise in Frequenzhaltung, Spannungshaltung, Betriebsführung und Versorgungswiederaufbau.
-Die Spannungshaltung wird über Blindleistung erbracht und der Versorgungswiederaufbau über die Schwarzstartfähigkeit einzelner Anlagen, sodass beide die Wirkleistungseinspeisung nicht unmittelbar berühren und auf die Vermarktung an den Energiemärkten nicht wirken.
-In der Frequenzhaltung wird demgegenüber ein Band an Wirkleistung über einen Zeitraum reserviert und die Bereitstellung selbst vergütet, weshalb sie das einzige Regime ist, in dem eine Vorhaltung bereits einen Preis hat \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Auch die Betriebsführung greift auf die Wirkleistung zu, und zu ihr zählen das Engpassmanagement und die kurative Vorhaltung.
-% ZUSAMMENGEFUEHRT und abgeschwaecht am 20.08.2026. Die Vorfassung sagte,
-% eine Beurteilung sei erst moeglich, wenn feststehe, wie das
-% Engpassmanagement heute funktioniere. Das ist staerker formuliert als
-% noetig. Aus zwei Saetzen ist einer geworden.
 Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären, nämlich auf welchem Weg der \ac{ÜNB} auf eine Anlage zugreift und woran sich die Zahlung bemisst.
 % BEGRIFF INTEGRIERT am 20.08.2026: Der Schlusssatz nennt jetzt die
 % Opportunitaeten. Der Begriff ist in der Arbeit gesetzt, denn die Anlage 2
@@ -1368,79 +1660,6 @@ Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären
 % dieselbe Leistung und denselben Ladezustand konkurriert. Das deckt sich
 % mit dem Titel von Abschnitt 2.3.5.
 Dieser Abschnitt erklärt dazu das geltende Regime des Engpassmanagements, stellt ihm die Beschaffung von Regelleistung gegenüber und zeigt zuletzt, mit welchen Opportunitäten eine kurative Vorhaltung konkurrieren würde.
-
-% ---------------------------------------------------------------
-\subsection{Anordnung und Beschaffung im Selbstdispatch-Modell}
-\label{sec:market_horizons}
-
-% NEU GEORDNET am 20.08.2026. Der Unterabschnitt fuehrt jetzt erst das
-% zentrale Dispatch-Modell als Kontrastfall und danach das Selbstdispatch.
-% Damit steht die entscheidende Aussage am Ende, naemlich dass ein eigener
-% Beschaffungsmechanismus erst im Selbstdispatch noetig wird.
-% OFFEN 3: Fundstelle der Legaldefinition. Kapitel 1 zitiert dieselbe
-% Stelle. Vor Abgabe eine der beiden in Betracht kommenden Fundstellen
-% verifizieren, also Art. 2 Abs. 17 EBGL oder Art. 2 Abs. 30 der
-% Verordnung (EU) 2019/943, und in beiden Kapiteln einheitlich setzen.
-% NICHT BEHAUPTEN, ein Modell sei kosteneffizienter als das andere. Das
-% Selbstdispatch internalisiert die Netzrestriktionen gerade nicht, der
-% zentrale Dispatch traegt dafuer die Last, die Kostenstruktur aller
-% Anlagen zu kennen. Welches Modell insgesamt guenstiger ist, ist offen.
-% PRAEZISION im vorletzten Satz des ersten Absatzes: Im zentralen Dispatch
-% entfaellt die BESCHAFFUNG, nicht die VERGUETUNG. Der Anlagenbetreiber
-% traegt die Opportunitaetskosten auch dort, nur wird der Betriebspunkt
-% nicht verhandelt. Diese Unterscheidung nicht verwischen.
-Die europäische Regulierung unterscheidet zwei Modelle, nach denen Erzeugungs- und Verbrauchsfahrpläne zustande kommen.
-Im zentralen Dispatch-Modell bestimmt der \ac{ÜNB} die Fahrpläne und den Einsatz der dispatchfähigen Anlagen im Rahmen eines integrierten Fahrplanerstellungsprozesses, der technische Anlagendaten, Anfahrcharakteristika und die Ergebnisse der Betriebssicherheitsanalyse gemeinsam berücksichtigt \cite[Art.\,2 Abs.\,18 und 19]{europaische_kommission_verordnung_2017_ebgl}.
-Netzrestriktionen sind dort Nebenbedingung der Einsatzoptimierung und damit Teil der Fahrplanbildung selbst, weshalb der Fahrplan die Grenzwerte von vornherein einhält und eine nachgelagerte Korrektur weitgehend entfällt.
-Eine kurative Reaktionsfähigkeit wäre in diesem Modell eine weitere Nebenbedingung derselben Optimierung.
-Der \ac{ÜNB} müsste sie vergüten, aber nicht beschaffen, denn er bestimmt den Betriebspunkt der Anlage ohnehin und kann den erforderlichen Leistungs- und Energievorrat unmittelbar freihalten.
-
-% ZWEITER ABSATZ, das Selbstdispatch. Die Reihenfolge ist bewusst
-% Beschreibung, Verbreitung, Begruendung, Folge fuer das
-% Engpassmanagement, Folge fuer die kurative Systemfuehrung.
-% ZUR BEGRUENDUNG DER VERBREITUNG, eigene Ableitung, kein \cite setzen:
-% Sie laeuft ueber die Information und nicht ueber die Effizienz. Der
-% Anlagenbetreiber kennt seine Kosten, der UENB kennt sie nicht.
-% NICHT SCHREIBEN, das Engpassmanagement sei im Selbstdispatch teurer. Es
-% tritt als eigener nachgelagerter Prozess auf, was etwas anderes ist.
-Im Selbstdispatch-Modell werden die Fahrpläne und der Einsatz der Erzeugungs- und Verbrauchsanlagen demgegenüber durch die Fahrplanverantwortlichen dieser Anlagen selbst bestimmt \cite[Art.\,2 Abs.\,17]{europaische_kommission_verordnung_2017_ebgl}.
-Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf dieses Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}, weshalb ihm in Europa der überwiegende Teil der Systeme einschließlich Deutschlands folgt \cite{meeus_evolution_2020}.
-Die Einsatzentscheidung bleibt damit bei demjenigen, der die Kosten seiner Anlage kennt, und der \ac{ÜNB} benötigt weder diese Kenntnis noch einen Zugriff auf den Betriebspunkt.
-Die Marktteilnehmer optimieren dabei gegen einen zonalen Preis, der keine Information über die Belastung einzelner Betriebsmittel enthält, weshalb der \ac{ÜNB} das Ergebnis nachgelagert durch Redispatch korrigiert.
-Redispatch ist in dieser Lesart keine Störung des Marktergebnisses, sondern der systematisch vorgesehene Korrekturmechanismus eines Marktdesigns, das physikalische Restriktionen bewusst aus der Preisbildung ausklammert \cite{oggioni_market_2013, newbery_market_2018}.
-% AUFGETEILT am 24.08.2026. Die Vorfassung nannte die Verkleinerung der
-% Gebotszonen und die lokationale Preisbildung in einem Nebensatz, ohne
-% dass einer der beiden Begriffe zuvor eingefuehrt war. Kapitel 1 fuehrt
-% nur die einheitliche Gebotszone und den zonalen Preis als Eigenschaften
-% des geltenden Designs, nicht deren Alternativen.
-% OHNE WERTUNG. Es steht hier, WAS die Ansaetze bewirken wuerden, und
-% nicht, ob sie vorzugswuerdig sind. Die Bewertung steht in Abschnitt
-% 3.1.2 und darf hier nicht vorweggenommen werden.
-% BEGRIFFE gleichlautend mit Abschnitt 3.1.2, naemlich Teilung der
-% Gebotszone und knotenscharfe Preisbildung. Nicht auseinanderlaufen
-% lassen.
-% ABGRENZUNG statt leerem Vorwaertsverweis. Der letzte Satz haelt fest,
-% dass die Arbeit die bestehende Zonenaufteilung voraussetzt. Das ist eine
-% Setzung und keine Ankuendigung.
-Das Engpassmanagement tritt damit als eigener nachgelagerter Prozess auf, dessen Volumen eine Funktion des Marktdesigns und nicht allein des Netzzustands ist.
-Als Alternativen zur einheitlichen Gebotszone werden folgende Ansätze diskutiert, nämlich deren Teilung in mehrere kleinere Zonen und eine knotenscharfe Preisbildung, die die Netzrestriktionen bereits in die Preisbildung aufnehmen und damit einen Teil des heutigen Redispatchbedarfs in die Fahrplanbildung internalisieren würden \cite{horsch_role_2017, agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}.
-Die vorliegende Arbeit setzt an der bestehenden Zonenaufteilung an, und der Abgleich dieser Ansätze mit den Anforderungen an einen kurativen Mechanismus erfolgt in Abschnitt \ref{sec:market_design_comparison}.
-% VERLAGERT NACH ABSCHNITT 2.3.6 am 24.08.2026. Hier stand die Ableitung,
-% dass kurative Reaktionsfaehigkeit nur beschafft und nicht angeordnet
-% werden kann, samt der Abgrenzung des flexiblen Netzanschlusses. Sie ist
-% eine Folgerung fuer die kurative Vorhaltung und keine Eigenschaft des
-% Selbstdispatch-Modells, weshalb sie in das Zwischenfazit gehoert. Der
-% Wortlaut steht dort im zweiten Absatz nach der Asymmetrie.
-% ENTFALLEN dabei: Der Satz zur Bindung ueber alle dazwischenliegenden
-% Handelsgelegenheiten. Abschnitt 2.3.5 leitet ihn vollstaendig her und
-% das Zwischenfazit haelt ihn in Befund 1 fest. Dreifach ist zu viel.
-% NICHT WIEDER hier aufnehmen, weil dieser Unterabschnitt sonst zwei
-% Aufgaben zugleich erfuellt.
-% BRUECKE zum folgenden Unterabschnitt. Sie haelt die Asymmetrie fest, die
-% den ganzen Abschnitt traegt, naemlich dass der UENB den Eingriff
-% anordnen darf, die Vorhaltung aber nicht.
-Die Fahrplanhoheit des Anlagenbetreibers steht dem Eingriff selbst allerdings nicht entgegen, denn §\,13a \ac{EnWG} begründet eine Duldungspflicht, sodass der \ac{ÜNB} die Anpassung anordnen und nicht vereinbaren muss.
-Wie dieser angeordnete Eingriff ausgeglichen wird, stellt Abschnitt \ref{sec:redispatch_compensation} dar.
 
 % ---------------------------------------------------------------
 \subsection{Vergütung von Redispatch-Maßnahmen}
@@ -1468,25 +1687,44 @@ Wie dieser angeordnete Eingriff ausgeglichen wird, stellt Abschnitt \ref{sec:red
 % Gesetz selbst und erklaert die abweichenden Satzangaben in der
 % Literatur. Die Arbeit zitiert durchgehend Satz 3.
 
-Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG}.
-Die Anpassung erfolgt dabei nicht auf Grundlage eines Gebots, sondern als Anordnung des Netzbetreibers, die der Anlagenbetreiber zu dulden hat.
-% GEKUERZT am 24.08.2026. Die prozessuale Vereinheitlichung trug nichts
-% zur Fragestellung bei. Der Ertrag des Satzes liegt im Nachsatz.
-Redispatch~2.0 hat den Kreis der einbezogenen Anlagen erweitert, am Charakter als Duldungs- und Entschädigungsregime jedoch nichts geändert \cite{bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025}.
-Die Norm unterscheidet zwischen dem bilanziellen Ausgleich, der die entstandene Abweichung in der Bilanzgruppe neutralisiert, und dem finanziellen Ausgleich, der den wirtschaftlichen Nachteil der Anpassung kompensiert \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-
-% MASSSTAB ZUERST, ergaenzt am 24.08.2026. Satz 2 formuliert den
-% Angemessenheitsmassstab als Indifferenzgebot und damit denselben
-% normativen Massstab, ueber den der kurative Reservierungspreis
-% definiert ist. Die Nummern sind lediglich seine Ausfuehrung fuer den
-% durchgefuehrten Eingriff. HIER steht nur die Feststellung. Die
-% Verbindung zum Reservierungspreis gehoert in das Zwischenfazit und in
-% Kapitel 5 und ist hier NICHT zu ziehen.
-% GESTRAFFT am 24.08.2026 auf drei Saetze. Der Absatz nennt nur noch den
-% Massstab und verweist auf die Tabelle. Die Erlaeuterung der einzelnen
-% Bestandteile folgt in den naechsten drei Absaetzen.
-Maßstab des finanziellen Ausgleichs ist ein Indifferenzgebot, denn angemessen ist der Ausgleich nach §\,13a Abs.\,2 Satz\,2 \ac{EnWG} dann, wenn er den Anlagenbetreiber unter Anrechnung des bilanziellen Ausgleichs wirtschaftlich weder besser noch schlechter stellt, als er ohne die Maßnahme stünde.
-Satz\,3 führt diesen Maßstab in fünf Bestandteile aus, die nur insoweit zu erstatten sind, als die angeforderte Anpassung sie verursacht hat, und Satz\,4 verpflichtet den Anlagenbetreiber zur Auskehrung ersparter Aufwendungen.
+% ZUSAMMENGEZOGEN am 24.08.2026. Vorher zerfiel der Absatz in vier
+% Saetze mit zwei einzelnen Belegankern. Beide Quellen stuetzen denselben
+% Sachverhalt, naemlich das Regime des Paragrafen 13a EnWG, und stehen
+% deshalb gemeinsam am ersten Satz. Danach folgt die Ausfuehrung ohne
+% weitere Anker. NICHT wieder auf einzelne Saetze aufteilen.
+% REIHENFOLGE: Erst was sich geaendert hat, dann was gerade nicht,
+% naemlich die Duldung. Darauf baut der kategoriale Einwand in Abschnitt
+% 2.3.4 auf.
+% DATUM: Das Netzausbaubeschleunigungsgesetz vom 13.05.2019 hat die
+% Regelungen aufgenommen, ANWENDBAR sind sie seit dem 01.10.2021. Die
+% beiden Daten nicht verwechseln.
+% PRUEFEN: Der Beleg ist derzeit der Gesetzestext, der das Datum der
+% Anwendbarkeit nicht selbst nennt. Es steht in den Uebergangsvorschriften
+% des Aenderungsgesetzes. Fundstelle nachtragen oder die
+% Bundesnetzagentur als Beleg heranziehen.
+Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0, die seit dem 1.\,Oktober 2021 anzuwenden ist \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025}.
+Zu diesem Tag wurde das Einspeisemanagement für Anlagen nach dem Erneuerbare-Energien-Gesetz und für Anlagen mit Kraft-Wärme-Kopplung in dasselbe Regime überführt, ohne dessen Funktionsweise zu verändern.
+Die Anpassung erfolgt weiterhin nicht auf Grundlage eines Gebots, sondern als Anordnung des Netzbetreibers, die der Anlagenbetreiber zu dulden hat.
+% ZURUECKGESCHNITTEN am 24.08.2026 von vier Saetzen auf einen.
+% Der bilanzielle Ausgleich wird nur GENANNT und nicht ausgefuehrt. Seine
+% einzige Aufgabe hier ist, die Anrechnung im naechsten Absatz zu tragen.
+% Der Mechanismus des Quelle-Senke-Paars steht bereits in Abschnitt 2.1.2
+% und fuer den Speicher in Abschnitt 2.2, eine dritte Nennung waere
+% Dopplung. NICHT wieder ausfuehren.
+% Der Unterabschnitt gehoert dem finanziellen Ausgleich, denn er traegt
+% die Fragestellung.
+Der Eingriff wird bilanziell ausgeglichen, sodass die beteiligten Bilanzkreise unberührt bleiben, und der finanzielle Ausgleich ersetzt in Geld, was er darüber hinaus kostet.
+% ABSAETZE VERBUNDEN am 24.08.2026. Der Satz zum bilanziellen Ausgleich
+% und der Massstabsabsatz behandeln denselben Gegenstand, naemlich wie
+% der Eingriff ausgeglichen wird. Der Absatzumbruch dazwischen war kein
+% Themenwechsel.
+% "auszukehren" durch "zu beruecksichtigen" ersetzt, weil die ersparten
+% Aufwendungen in die Bemessung eingehen und nicht als eigener Betrag
+% zurueckflieszen.
+Maßstab des finanziellen Ausgleichs ist ein Indifferenzgebot.
+Angemessen ist er nach §\,13a Abs.\,2 \ac{EnWG} dann, wenn er den Anlagenbetreiber wirtschaftlich weder besser noch schlechter stellt, als er ohne die Maßnahme stünde, sodass dieser durch die Anordnung weder verlieren noch verdienen soll.
+Angerechnet wird dabei der bilanzielle Ausgleich, weil er einen Teil des Nachteils bereits beseitigt hat.
+Die Norm führt diesen Maßstab in fünf Bestandteile aus, die nur insoweit zu erstatten sind, als die angeforderte Anpassung sie verursacht hat, und verpflichtet den Anlagenbetreiber zugleich, ersparte Aufwendungen zu berücksichtigen.
 Tabelle~\ref{tab:ausgleich_bestandteile} stellt die Bestandteile mit ihrem jeweiligen Bemessungsgegenstand zusammen.
 
 % TABELLE NEU am 24.08.2026. Sie traegt die Spalte Bemessungsgegenstand,
@@ -1498,15 +1736,22 @@ Tabelle~\ref{tab:ausgleich_bestandteile} stellt die Bestandteile mit ihrem jewei
     \caption{Bestandteile des angemessenen finanziellen Ausgleichs nach §\,13a Abs.\,2 \ac{EnWG} und ihr jeweiliger Bemessungsgegenstand. Nach \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.}
     \label{tab:ausgleich_bestandteile}
     \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.06\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.64\textwidth-\tabcolsep\relax}@{}}
+    % ABKUERZUNGEN: In der Tabelle steht \acs, also die Kurzform ohne
+    % Aufloesung. Die Erstnennung mit Aufloesung liegt im Fliesstext des
+    % folgenden Absatzes. Ein \ac an dieser Stelle wuerde die Aufloesung in
+    % das Gleitobjekt ziehen, was vermieden werden soll. NICHT auf \ac
+    % umstellen.
+    % SPALTENBREITEN so gewaehlt, dass keine Zelle mehr als zwei Zeilen
+    % braucht. Vor Aenderungen an den Texten die Zeilenzahl neu pruefen.
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.06\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.32\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-\tabcolsep\relax}@{}}
         \hline
         \textbf{Nr.} & \textbf{Bestandteil} & \textbf{Bemessungsgegenstand} \\
         \hline
         1 & Erzeugungsauslagen & Notwendige Auslagen der tatsächlichen Anpassung \\
-        2 & Anteiliger Werteverbrauch & Werteverbrauch der tatsächlichen Anpassung, bemessen nach Abs.\,3 über handelsrechtliche Restwerte und anrechenbare Betriebsstunden \\
+        2 & Anteiliger Werteverbrauch & Vorgezogene Abnutzung der Anlage, bemessen über anrechenbare Betriebsstunden \\
         3 & Entgangene Erlösmöglichkeiten & Nachgewiesener Betrag, soweit er die Summe aus Nr.\,1 und Nr.\,2 übersteigt \\
-        4 & Betriebsbereitschaft und Revisionsverschiebung & Notwendige Auslagen nach Abs.\,1 Satz\,2 Nr.\,1 und Nr.\,2 \\
-        5 & Anlagen nach dem \ac{EEG} und Anlagen mit \ac{KWK} & Entgangene Einnahmen zuzüglich zusätzlicher Aufwendungen \\
+        4 & Betriebsbereitschaft und Revisionsverschiebung & Notwendige Auslagen dafür, eine stillstehende Anlage anzufahren oder eine Revision zu verschieben \\
+        5 & Anlagen nach dem \acs{EEG} und mit \acs{KWK} & Entgangene Einnahmen zuzüglich zusätzlicher Aufwendungen \\
         \hline
         \multicolumn{3}{@{}p{\textwidth}@{}}{\footnotesize Ersparte Aufwendungen erstattet der Anlagenbetreiber nach Satz\,4 an den zuständigen \ac{ÜNB}.} \\
     \end{tabular}
@@ -1519,227 +1764,299 @@ Tabelle~\ref{tab:ausgleich_bestandteile} stellt die Bestandteile mit ihrem jewei
 % weil Nr. 3 nur ersetzt wird, soweit sie die SUMME der nach den Nummern
 % 1 und 2 zu erstattenden Kosten uebersteigt. Nicht wieder auf den
 % Werteverbrauch allein zurueckstellen.
-% NEU am 24.08.2026: Die Bestandteile werden jetzt einzeln erklaert und
-% jeweils auf den Batteriespeicher bezogen. Vorher stand hier nur die
-% Auswahlregel, sodass die Tabelle unkommentiert blieb.
-% PRUEFEN: Ob die Festlegung die Erzeugungsauslagen eines Speichers
-% tatsaechlich als Beschaffungskosten der eingespeicherten Energie
-% fuehrt, ist nicht verifiziert. Die Grenzpreisformel in Abschnitt 2.3.3
-% teilt durch den Wirkungsgrad, was dafuer spricht. Fundstelle in
-% Anlage 2 suchen und hier setzen.
-% PRUEFEN: Fuer die Aussage zur Alterung ist eine Fundstelle zu setzen.
-% Als physikalischer Mechanismus ist sie belegfrei zulaessig, ein Beleg
-% waere hier aber besser, weil daraus ein Einwand gegen den Schluessel
-% des Absatzes 3 folgt.
+% AUFBAU, Stand 24.08.2026. Reihenfolge NICHT umstellen.
+% A  Beschreibung der Nummern 1, 2, 4 und 5, wertungsfrei
+% B  Abgrenzung nach der Technologie, welche davon beim Speicher greifen
+% C  Abgrenzung nach dem Gegenstand, keine davon verguetet Vorhaltung
+% D  Nummer 3 als die Position, deren Bemessung die Arbeit beschaeftigt
+% Der Grund fuer diese Folge ist, dass die Bewertung erst nach der
+% vollstaendigen Beschreibung kommt und der Unterabschnitt auf Nummer 3
+% endet, weil Abschnitt 2.3.3 dort ansetzt.
+
+% A  BESCHREIBUNG, wertungsfrei. Hier steht NICHT, ob eine Position
+% einschlaegig ist. Das gehoert in die beiden folgenden Absaetze.
+% KORRIGIERT am 24.08.2026 gegen Anlage 1, S. 20. Die Erzeugungsauslagen
+% eines Speichers sind NICHT die Beschaffungskosten der eingespeicherten
+% Energie, sondern ein Schattenpreis. Nicht zurueckdrehen.
+% "Schluessel" durch "Verhaeltnis" ersetzt, weil das Gesetz in Abs. 3 von
+% "als Schluessel das Verhaeltnis aus" spricht. Der Verweis auf Abs. 3 ist
+% entfallen, weil der Satz mit "nach Nummer 2" bereits einen Normverweis
+% traegt. Fundstelle ist Paragraf 13a Abs. 3 EnWG.
 Die Erzeugungsauslagen nach Nummer~1 erfassen die zusätzlichen Auslagen der angeordneten Fahrweise.
 Bei einem thermischen Kraftwerk sind das die Brennstoff- und Emissionskosten der zusätzlich erzeugten Arbeit.
-% KORRIGIERT am 24.08.2026 gegen Anlage 1, S. 20. Die Vorfassung sprach
-% von Beschaffungskosten der eingespeicherten Energie. Das trifft nicht
-% zu. Die Festlegung setzt einen Einsatzpreis als SCHATTENPREIS an, also
-% den Wert der gespeicherten Energie in der kuenftigen Vermarktung. Das
-% ist ein Opportunitaetswert und keine historische Ausgabe. Nicht wieder
-% als Beschaffungskosten formulieren.
 Bei einem Speicher tritt an ihre Stelle ein Einsatzpreis, der nicht die tatsächlichen Beschaffungskosten abbildet, sondern den Wert der gespeicherten Energie in einer künftigen Vermarktung und deshalb als Grenzpreis unter Berücksichtigung des Wirkungsgrades und des Netznutzungsentgelts bestimmt wird \cite[Anlage\,1, S.\,20]{bundesnetzagentur_anlage1_2024}.
-Der anteilige Werteverbrauch nach Nummer~2 bildet die durch den Eingriff vorgezogene Abnutzung ab und wird nach Abs.\,3 aus den handelsrechtlichen Restwerten über einen Schlüssel aus anrechenbaren und geplanten Betriebsstunden bestimmt.
-Dieser Schlüssel ist auf thermische Anlagen zugeschnitten, denn die Alterung einer Lithium-Ionen-Zelle folgt nicht der Betriebsdauer, sondern dem Energiedurchsatz und der Entladetiefe.
-Beide Positionen werden je nach Anlagenklasse spitz anhand nachgewiesener Einzelwerte oder pauschal mit typisierten Sätzen abgerechnet \cite{bundesnetzagentur_festlegung_2024}.
-
-% TRAGENDE STELLE. Die Auswahlregel ist die Grundlage des fuenften
-% Grundes in Abschnitt 2.3.3.
-% KORRIGIERT am 24.08.2026 gegen den Gesetzeswortlaut. Die Vorfassung
-% las Nr. 1 plus max(Nr. 2, Nr. 3). Richtig ist max(Nr. 1 + Nr. 2, Nr. 3),
-% weil Nr. 3 nur ersetzt wird, soweit sie die SUMME der nach den Nummern
-% 1 und 2 zu erstattenden Kosten uebersteigt. Nicht wieder auf den
-% Werteverbrauch allein zurueckstellen.
+Der anteilige Werteverbrauch nach Nummer~2 bildet die durch den Eingriff vorgezogene Abnutzung ab und wird aus den handelsrechtlichen Restwerten über das Verhältnis aus anrechenbaren und geplanten Betriebsstunden bestimmt.
+% SATZ ENTFALLEN am 24.08.2026. Hier stand die Unterscheidung zwischen
+% Spitz- und Pauschalabrechnung. Sie beschreibt das Abrechnungsverfahren
+% und traegt fuer die Fragestellung nichts, weil der Reservierungspreis
+% nicht davon abhaengt, wie eine Position nachgewiesen wird. NICHT wieder
+% aufnehmen.
+% NUMMER 3 hier nur GENANNT, damit die Beschreibung der Reihe nach
+% durchlaeuft. Die Auswahlregel und die Einordnung stehen im letzten
+% Absatz dieses Unterabschnitts. Hier NICHT ausfuehren.
 Die entgangenen Erlösmöglichkeiten nach Nummer~3 erfassen den Erlös, den der Anlagenbetreiber ohne die Anordnung erzielt hätte.
-Sie treten nicht zu den ersten beiden Positionen hinzu, sondern werden nur ersetzt, wenn und soweit sie deren Summe übersteigen.
+Nummer~4 erstattet die Auslagen dafür, eine stillstehende Anlage betriebsbereit zu machen oder eine geplante Revision zu verschieben.
+% GEKUERZT am 24.08.2026. Das Beispiel der Windenergie- und
+% Photovoltaikanlagen und die Begruendung stehen im eigenen Absatz zu
+% Nummer 5 weiter unten. Hier nur die Beschreibung.
+Nummer~5 gilt für Anlagen nach dem \ac{EEG} und für Anlagen mit \ac{KWK} und ersetzt ihnen die entgangenen Einnahmen zuzüglich zusätzlicher Aufwendungen.
+
+% B  WELCHE TECHNOLOGIE, WELCHE POSITION.
+% Ausgangspunkt sind die Technologien aus Tabelle 2.1 und nicht die
+% Positionen. Erst danach wird sortiert. Reihenfolge nicht umdrehen.
+% PRUEFEN: Ob Windenergie- und Photovoltaikanlagen eine geplante Revision
+% im Sinne der Norm fuehren, ist offen. Der Satz zu Nummer 4 ist deshalb
+% ueber den ZUSCHNITT auf konventionelle Kraftwerke formuliert und nicht
+% ueber eine Behauptung zu jeder einzelnen Technologie.
+% PRUEFEN: Woraus sich die entgangenen Einnahmen einer gefoerderten
+% Anlage zusammensetzen, ist bewusst offengelassen. Vor einer genaueren
+% Aussage die Festlegung und das EEG heranziehen.
+% ALLE FUENF TECHNOLOGIEN aus Tabelle 2.1 durchgehen, nicht nur die
+% erneuerbaren und den Batteriespeicher. Ergaenzt am 24.08.2026.
+% VORSICHT bei den konventionellen Kraftwerken. Ein Teil von ihnen
+% erzeugt KWK-Strom und faellt insoweit unter Nummer 5. Deshalb steht im
+% Text "die Nummern 1 bis 4" und NICHT "alle ausser Nummer 5".
+Welche dieser Positionen einschlägig sind, hängt von der Technologie ab.
+Als kurative Akteure kommen nach Tabelle~\ref{tab:akteursvergleich} konventionelle Kraftwerke, Windenergie- und Photovoltaikanlagen sowie Pumpspeicher und Batteriespeicher in Betracht.
+Bei konventionellen Kraftwerken greifen die Nummern~1 bis 4, und Nummer~4 ist mit dem Anfahren und der Revisionsverschiebung ausdrücklich auf sie zugeschnitten.
+Für Windenergie- und Photovoltaikanlagen gilt stattdessen Nummer~5, deren Ausgleich sich nicht über eine verhinderte Vermarktung, sondern über die entgangenen Einnahmen zuzüglich zusätzlicher Aufwendungen bemisst, weil ihre Erlöse nicht allein aus dem Markt folgen.
+Für Pumpspeicher und Batteriespeicher greifen die Nummern~1 bis 3, denn sie vermarkten am Markt, sind aus dem Stillstand kurzfristig verfügbar und verursachen dafür keine gesonderten Auslagen.
+Das Regime führt damit zwei Bemessungslogiken nebeneinander, eine für geförderte und eine für marktvermarktete Anlagen, und keine von beiden bepreist eine Vorhaltung.
+
+% C  RELEVANZ UND PREISTREIBER. Auf diesen Absatz laeuft der
+% Unterabschnitt zu. Die beiden genannten Groessen entsprechen den beiden
+% Bestandteilen des Produktentwurfs in Abschnitt 3.2, naemlich der
+% Verguetung der Vorhaltung und der Verguetung des Abrufs. Diesen Bezug
+% HIER NICHT ausschreiben, er gehoert nach Kapitel 3.
+% Die Alterungskritik steht hier und nicht in der Beschreibung, weil sie
+% eine Bewertung ist.
+Für die beiden Speichertechnologien bleiben damit drei Positionen, die sich in ihrer Bedeutung deutlich unterscheiden.
+% GEKUERZT UND VERALLGEMEINERT am 24.08.2026.
+% Die Vorfassung behauptete, die Alterung einer Lithium-Ionen-Zelle
+% folge dem Energiedurchsatz und der Entladetiefe. Das ist eine
+% technische Aussage, fuer die keine Fundstelle vorliegt, und sie wird
+% hier nicht gebraucht. Der Satz stellt jetzt nur noch fest, dass die
+% Bezugsgroesse nicht auf die Technologie zugeschnitten ist.
+% Falls spaeter ein Beleg zur zyklischen und kalendarischen Alterung
+% vorliegt, kann die schaerfere Fassung zurueckkehren. Ohne Beleg NICHT.
+% ACHTUNG: Der Einwand ist ein Parametrisierungsproblem und laesst sich
+% durch eine andere Bezugsgroesse beheben. Er darf deshalb nicht so
+% ausgebaut werden, dass er dem Schluss von Abschnitt 2.3.4
+% widerspricht, wonach die sechs Gruende die Zerlegung und NICHT die
+% Parametrisierung betreffen.
+% BELEGT am 24.08.2026 aus Anlage 1, S. 45 f. Die Referenztabellen fuehren
+% Kernkraft, Braunkohle, Steinkohle, Dampfkraftwerke, Gasturbinen und
+% Pumpspeicher, aber keine Batteriespeicher. Auch die Ersatzregel fuer
+% unbekannte Investitionszeitpunkte nennt Vorlaufzeiten nur fuer Kohle,
+% Wasserkraft und Gas. Fuer ab 2016 in Betrieb genommene Anlagen greift
+% ein Auffangsatz auf S. 46, der einen anlagenscharfen Nachweis
+% unterstellt, ohne eine Form dafuer vorzuschreiben.
+% NICHT SCHREIBEN, Nummer 2 erfasse die Degradation nicht. Sie erfasst
+% sie dem Grunde nach, denn sie ist eine kalkulatorische Fiktion, die den
+% handelsrechtlichen Restwert fortschreibt, und der physische
+% Verzehrmechanismus ist fuer sie ohne Belang. Angreifbar ist allein die
+% Bezugsgroesse und der unbesetzte Nenner.
+Der anteilige Werteverbrauch nach Nummer~2 bleibt anwendbar, seine Bemessung über die Betriebsstunden ist jedoch nicht auf die Beanspruchung eines Batteriespeichers zugeschnitten, und die Referenzwerte für die geplanten Betriebsstunden decken diese Technologie nicht ab, sodass allein die Selbstauskunft des Betreibers bleibt \cite[Anlage\,1, S.\,45\,f.]{bundesnetzagentur_anlage1_2024}.
+Den Preis bestimmen deshalb die Erzeugungsauslagen nach Nummer~1 und die entgangenen Erlösmöglichkeiten nach Nummer~3.
+% ZUSAMMENGEZOGEN am 24.08.2026. Die Charakterisierung der beiden
+% Groessen und die Auswahlregel standen in zwei Absaetzen und begannen
+% beide mit demselben Gegensatz. Der Absatzumbruch war kein
+% Themenwechsel.
+% PRAEZISIERT: Nummer 1 erfasst nicht "den Wert der Arbeit", sondern den
+% Einsatzpreis der bewegten Arbeit, und faellt je bewegter Megawattstunde
+% an. Nummer 3 erfasst nicht "den Wert der Vermarktung", sondern den
+% Erlos der aufgegebenen Vermarktung, und bemisst sich nach der
+% gebundenen Leistung und der Dauer der Bindung.
+Die Erzeugungsauslagen fallen je bewegter Megawattstunde an und setzen damit einen Abruf voraus.
+Die entgangenen Erlösmöglichkeiten bemessen sich dagegen nach der gebundenen Leistung und der Dauer der Bindung und entstehen bereits, wenn der Fahrplan festgelegt und nicht mehr verändert wird.
+Beide stehen dabei nicht nebeneinander, denn die entgangenen Erlösmöglichkeiten werden nur ersetzt, wenn und soweit sie die Summe aus Erzeugungsauslagen und Werteverbrauch übersteigen.
 Zur Auszahlung kommt damit der höhere der beiden Beträge, nämlich entweder die Summe der tatsächlich entstandenen Kosten oder der nachgewiesene entgangene Erlös.
 Ein Optionswert wird folglich erst zahlungswirksam, wenn er beide Kostenpositionen zusammen übersteigt.
-Wie dieser Erlös zu bemessen ist, ist die eigentlich strittige Frage und Gegenstand des folgenden Abschnitts.
+% UEBERLEITUNG. Die Bemessung der Nummer 3 ist am Pumpspeicher
+% entwickelt worden, und genau deshalb schluesselt Abschnitt 2.3.3 sie
+% auf. Ohne diesen Satz bliebe offen, weshalb der folgende Abschnitt ein
+% Pumpspeicherbeispiel behandelt.
+% UEBERLEITUNG. Sie nennt den Zuschnitt auf den Pumpspeicher UND die
+% Problematik, die daraus fuer den Batteriespeicher folgt, naemlich die
+% viertelstundenweise Bewertung gegen die Kopplung der Intervalle. Ohne
+% diesen Hinweis wuesste der Leser nicht, worauf der folgende Abschnitt
+% hinauslaeuft. Die Konsequenz selbst steht am Ende von Abschnitt 2.3.4.
+Die Bemessung dieses Erlöses hat die Festlegung am Pumpspeicher entwickelt und bewertet dabei jede Viertelstunde für sich.
+Bei einem Speicher mit geringem Energieinhalt hängen die Viertelstunden jedoch zusammen, weil jede abgegebene Arbeit an anderer Stelle fehlt.
+Der folgende Abschnitt schlüsselt das Verfahren deshalb auf und prüft, ob es sich auf den Batteriespeicher übertragen lässt.
 
-% NEU am 24.08.2026: Warum die Nummern 4 und 5 bei einem
-% Batteriespeicher leerlaufen. Der Ertrag liegt darin, dass gerade die
-% Position, die am ehesten eine Vorbereitung verguetet, bei dieser
-% Technologie nicht greift.
-% NICHT ALS AUSNAHME formulieren. Nummer 4 ist eingriffsbezogen, weil
-% Abs. 1 Satz 2 die Aufforderung der Anpassung selbst zurechnet.
-% PRUEFEN: Ob ein Grossbatteriespeicher einen Revisionsfahrplan im Sinne
-% der Norm fuehrt. Formulierung bewusst eng gehalten.
-% ABGRENZUNG: Der Satz zu Nummer 5 gilt fuer den netzgekoppelten
-% Grossbatteriespeicher ohne Anlagenkombination. Bei einem Speicher
-% hinter demselben Netzverknuepfungspunkt wie eine EEG-Anlage kann die
-% Position einschlaegig sein. Falls Kapitel 3 solche Kombinationen
-% zulaesst, ist diese Stelle nachzuziehen.
-Die Nummern~4 und 5 laufen bei der hier betrachteten Technologie leer.
-Nummer~4 erstattet die Auslagen dafür, eine stillstehende Anlage betriebsbereit zu machen oder eine geplante Revision zu verschieben, und ist damit die einzige Position, die vor der Einspeisung ansetzt.
-Eine dauerhafte Bereitschaft vergütet sie gleichwohl nicht, denn §\,13a Abs.\,1 Satz\,2 \ac{EnWG} rechnet die entsprechende Aufforderung der Anpassung selbst zu.
-Ein Batteriespeicher ist zudem aus dem Stillstand binnen Sekunden verfügbar und kennt weder gesonderte Auslagen für die Herstellung der Betriebsbereitschaft noch einen Revisionsfahrplan, dessen Verschiebung Kosten auslöst.
-Nummer~5 setzt eine Anlage nach §\,3 Nummer~1 des Erneuerbare-Energien-Gesetzes oder \ac{KWK}-Strom voraus und trifft auf einen netzgekoppelten Großbatteriespeicher nicht zu.
-Für ihn verbleiben damit die Nummern~1 bis 3 sowie die nach Satz\,4 auszukehrenden ersparten Aufwendungen.
-
-% OFFEN 8, ERLEDIGT am 24.08.2026. Die Aussage folgt jetzt aus der Norm
-% und braucht den Beschluss nicht mehr. Der Eintrag
-% bundesnetzagentur_beschluss_2021 ist aus diesem Abschnitt entfernt. Vor
-% Abgabe pruefen, ob er anderswo noch zitiert wird, und ihn andernfalls
-% aus der literature.bib nehmen.
-% ZURUECKGENOMMEN am 24.08.2026: Nr. 4 ist KEINE Ausnahme von der
-% Eingriffsbezogenheit. Abs. 1 Satz 2 rechnet die Aufforderung an eine
-% nicht einspeisende Anlage der Anpassung selbst zu. Nicht als
-% Gegenbeispiel formulieren.
-% NICHT ueber Abs. 4 begruenden. Abs. 4 schliesst Kosten aus, die auch
-% OHNE die Anforderung entstehen. Kosten einer kurativen Vorhaltung
-% entstehen gerade wegen der Zusage und fallen deshalb nicht darunter.
-% Abs. 4 traegt hier nur als Nebenargument fuer die enge Fassung der Norm.
-% GESTRAFFT am 24.08.2026 von vier auf drei Saetze. Die Begruendung zur
-% Nummer 4 steht jetzt im vorangehenden Absatz und ist hier entfallen.
-% NICHT ueber Abs. 4 allein begruenden. Abs. 4 schliesst Kosten aus, die
-% auch OHNE die Anforderung entstehen. Kosten einer kurativen Vorhaltung
-% entstehen gerade wegen der Zusage und fallen deshalb nicht darunter.
-% Tragend ist Satz 3, der jeden Bestandteil an die Verursachung durch die
-% Anpassung bindet. Abs. 4 stuetzt das nur.
-Damit knüpfen alle einschlägigen Bestandteile an eine tatsächlich angeforderte Anpassung an.
-Abs.\,4 schließt zusätzlich diejenigen Kosten aus, die dem Anlagenbetreiber auch ohne die Anforderung entstehen, und benennt dafür ausdrücklich die Betriebsbereitschaftsauslagen und die Verzinsung des gebundenen Kapitals.
-Bemessungsgegenstand ist durchgängig die durchgeführte Maßnahme und nicht die Fähigkeit, sie durchführen zu können, sodass für eine Vorhaltung, der keine Anpassung folgt, nach dieser Systematik kein Anspruch entsteht.
-
-% GAMING. Steht ausschliesslich hier, in Kapitel 1 ist die Passage
-% entfernt.
-% OFFEN 9, WICHTIG: Die Zuordnung der Aussage zu Anlage 1 ist NICHT
-% verifiziert. Der Wortlaut, dass der Argumentation eines
-% Verfahrensbeteiligten, der kostenbasierte Redispatch eroeffne
-% strukturell Potentiale fuer strategisches, engpassverstaerkendes
-% Bietverhalten, nach eingehender Pruefung nicht gefolgt werden koenne,
-% stammt aus einer Publikation der Bundesnetzagentur zum
-% Festlegungsverfahren. Welches Dokument und welche Seite, ist offen.
-% Solange das nicht geklaert ist, darf der Satz nicht als belegt gelten.
-% Alternativ kommt die Einleitungsverfuegung
-% \cite{bundesnetzagentur_einleitungsverfuegung_2022} in Betracht.
-% OFFEN 10, erledigt: Die Gegenposition ist mit dem Abschlussbericht von
-% Hirth, Schlecht, Maurer und Tersteegen belegt. Der Eintrag
-% hirth_kosten_2019 liegt in der literature.bib. Zu pruefen bleibt, ob eine
-% Seitenangabe gesetzt werden soll, weil der Bericht umfangreich ist.
-Gegen die kostenbasierte Bemessung wird eingewandt, sie eröffne strukturell Anreize für ein engpassverstärkendes Bietverhalten, weil ein Anlagenbetreiber seinen Fahrplan so wählen kann, dass ein Eingriff und damit ein Entschädigungsanspruch wahrscheinlicher wird \cite{hirth_kosten_2019}.
-Die Beschlusskammer hat dieses Vorbringen im Festlegungsverfahren geprüft und ist ihm nicht gefolgt \cite{bundesnetzagentur_anlage1_2024}.
+% AUSGEFUEHRT am 24.08.2026. Vorher stand hier nur die Behauptung, ein
+% Betreiber koenne seinen Fahrplan entsprechend waehlen. Der Mechanismus
+% fehlte, und der Begriff inc-dec fiel nicht, obwohl Kapitel 5 an ihn
+% anknuepft.
+% ORT: Der Einwand betrifft die Kombination aus Selbstdispatch und
+% kostenbasiertem Ausgleich und gehoert deshalb hierher. NICHT zu den
+% entgangenen Erloesmoeglichkeiten verschieben, denn diese sind nur das
+% Zahlungsvehikel. Inc-dec entsteht auch bei rein kostenbasierter
+% Verguetung ohne jeden Optionswert, weshalb eine bessere
+% Bewertungsformel das Problem nicht loeste.
 % VERLAGERT NACH KAPITEL 5: Die frueher hier stehende Aussage, eine an
 % der vorgehaltenen Reaktionsfaehigkeit anknuepfende Verguetung entziehe
 % einem engpassverstaerkenden Bietverhalten die Grundlage, ist eine
 % Eigenschaft des eigenen Entwurfs und keine Eigenschaft des bestehenden
 % Regimes. Sie gehoert in die kritische Wuerdigung. Der Wortlaut steht im
-% Anschlussblock am Dateiende.
-Festzuhalten ist an dieser Stelle allein, dass die Bemessungsgröße des Regimes das Eingriffsvolumen ist und der Streit über Anreizwirkungen sich deshalb an der Menge des Eingriffs entfaltet.
+% Anschlussblock am Dateiende. HIER nicht vorwegnehmen.
+Gegen die kostenbasierte Bemessung wird eingewandt, sie eröffne strukturell Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
+Weil der Betreiber seinen Fahrplan im Selbstdispatch selbst setzt und der Ausgleich ihn anschließend so stellt, als hätte er ihn behalten, kann er hinter einem Engpass gezielt so einspeisen, dass ein Eingriff wahrscheinlich wird, und an der Differenz zwischen Marktpreis und Ausgleich verdienen.
+Dieses als inc-dec bezeichnete Verhalten setzt an der selbst gewählten Menge an und nicht an der Bewertungsformel.
+Die Beschlusskammer hat das Vorbringen im Festlegungsverfahren geprüft und ist ihm nicht gefolgt \cite{bundesnetzagentur_anlage1_2024}.
 
 % ---------------------------------------------------------------
 % NEU als eigener Unterabschnitt und ausfuehrlich.
 \subsection{Bemessung entgangener Erlösmöglichkeiten}
 \label{sec:weber_approach}
 %
-% DIES IST DER ANGELPUNKT DER ARBEIT. Vier Bloecke in dieser Reihenfolge:
-%   A  Optionslogik
-%   B  Umsetzung in der Festlegung und ihren Anlagen
-%   C  Rechenschrittfolge des Berechnungsbeispiels
-%   D  Grenzen bei Batteriespeichern, sechs Gruende
+% AUFGABE DIESES UNTERABSCHNITTS: Das Verfahren VERSTEHEN. Keine Kritik.
+% Die Abgrenzung steht geschlossen in Abschnitt 2.3.4 und ist hier weder
+% anzudeuten noch vorwegzunehmen.
+% AUFBAU, Reihenfolge nicht umstellen:
+%   A  Grundgedanke der Option
+%   B  Eingangsgroessen mit Symboltabelle
+%   C  Bewertungsformel
+%   D  Zuordnung von Call und Put, innerer Wert und Zeitwert
+%   E  Berechnungsbeispiel
+%   F  Aggregation
+% ALLE ZAHLEN am 24.08.2026 gegen die 96 Viertelstundenpreise der
+% Intraday-Eroeffnungsauktion vom 01.02.2024 nachgerechnet. Nicht ohne
+% erneutes Nachrechnen aendern.
 %
-% ABGRENZUNG ZU KAPITEL 3: Hier steht, wie das Verfahren gedacht ist.
-% Die eigene Nachrechnung, die gefundenen Fehler und die quantitative
-% Bandbreitenanalyse stehen in Abschnitt \ref{sec:reference_verification}.
-% Die geschlossene Formel darf hier stehen, weil sie fremde Arbeit ist
-% und das Rechenbeispiel ohne sie nicht erklaerbar ist.
-%
-% OFFEN 11: Anlage 5 fehlt als bib-Eintrag. Bislang ist nur Anlage 1
-% erfasst. Eintrag anlegen und die Fundstellen in diesem Abschnitt darauf
-% umstellen.
-% OFFEN 12, teilweise erledigt: Die Parametrisierung in Block B ist jetzt
-% gegen Anlage 2 verifiziert, naemlich Standardabweichung je
-% Viertelstundenprodukt, zwoelf Monate Historie, volumengewichteter
-% Dreistundenmittel vor Handelsschluss und drei Verfahren nach dem
-% Zeitpunkt der Anordnung. Offen bleibt allein der Grenzpreis fuer
-% Batteriespeicher, der gegen Anlage 5 zu pruefen ist.
 
-% TRAGENDE STELLE: Der Satz sagt nicht, die Logik gehe auf ein Gutachten
-% zurueck, sondern dass ein Gutachten von 2015 der Festlegung von 2024
-% unveraendert beiliegt. Das ist ein Befund ueber den Reifegrad der
-% Bemessungsgrundlage und keine Wertung. Belegbar am Dokument selbst,
-% dessen Quellenverzeichnis 2015 endet und dessen Datenbasis bis zum
-% 31.05.2015 reicht.
-Für den anspruchsvollsten Bestandteil des finanziellen Ausgleichs, die entgangenen Erlösmöglichkeiten, greift die Festlegung auf eine finanzmathematische Bewertungslogik zurück, die einem Gutachten von Weber aus dem Jahr 2015 entstammt und der Festlegung aus dem Jahr 2024 unverändert als Anlage 2 beiliegt \cite{weber_gutachten_2015}.
-Deren Grundgedanke besteht darin, die Vermarktungsmöglichkeit einer flexiblen Anlage als Finanzoption aufzufassen \cite[Abschnitt\,3.1]{weber_gutachten_2015}.
+% A  GRUNDGEDANKE
+Für den anspruchsvollsten Bestandteil des finanziellen Ausgleichs, die entgangenen Erlösmöglichkeiten, greift die Festlegung auf eine finanzmathematische Bewertungslogik zurück, die einem Gutachten von Weber aus dem Jahr 2015 entstammt und der Festlegung unverändert als Anlage 2 beiliegt \cite{weber_gutachten_2015}.
+Deren Grundgedanke besteht darin, die Vermarktungsmöglichkeit einer flexiblen Anlage als Finanzoption aufzufassen.
 Eine flexible Erzeugungseinheit besitzt das Recht, aber nicht die Pflicht, in einem gegebenen Zeitintervall einzuspeisen, und sie wird dies nur tun, wenn der erzielbare Marktpreis ihre variablen Erzeugungskosten übersteigt.
-Ökonomisch entspricht das einer Call-Option auf den Strompreis mit den variablen Erzeugungskosten als Basispreis, und die Vermarktungsmöglichkeit einer Anlage über einen Tag ist demnach eine Sequenz solcher Optionen.
+Ökonomisch entspricht das einer Call-Option auf den Strompreis mit den variablen Erzeugungskosten als Basispreis, und die Vermarktungsmöglichkeit über einen Tag ist demnach eine Sequenz solcher Optionen.
 Wird die Anlage durch eine Anweisung des \ac{ÜNB} an der Ausübung gehindert, entspricht der entgangene Erlös dem Wert der verlorenen Option.
-Welche Optionsart einschlägig ist, hängt davon ab, ob die betroffene Optionalität zum Zeitpunkt der Anordnung bereits vermarktet war \cite[Abschnitt\,3.2]{weber_gutachten_2015}.
-% GEKUERZT am 24.08.2026. Hier standen die zwei Faelle des thermischen
-% Kraftwerks, die vier Faelle des Speichers, die Regel positiv gleich
-% Call und negativ gleich Put sowie Tabelle 2.6. Keiner der sechs
-% Gruende in Abschnitt 2.3.4 setzt das voraus. Der Ertrag lag in einem
-% Halbsatz, naemlich dem oberen und dem unteren Grenzpreis, und der
-% steht jetzt im Absatz zur Umsetzung. Die vollstaendige Systematik
-% steht im Anhang.
-Bei einem Speicher tragen die Aus- und die Einspeiseseite jeweils eine eigene Option, deren Basispreis der obere beziehungsweise der untere Grenzpreis der Anlage ist \cite[Abschnitt\,3.3]{weber_gutachten_2015}.
-Der Optionswert setzt sich dabei aus dem inneren Wert und dem Zeitwert zusammen, wobei der innere Wert die bereits realisierte Differenz zwischen Marktpreis und Basispreis erfasst und der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung bis zum Erfüllungszeitpunkt.
-Als modifiziert wird der Ansatz bezeichnet, weil er anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen unterstellt, was erforderlich ist, da Strompreise negative Werte annehmen können \cite[Abschnitt\,3.1]{weber_gutachten_2015}.
+Bei einem Speicher tragen die Aus- und die Einspeiseseite jeweils eine eigene Option, deren Basispreis der obere beziehungsweise der untere Grenzpreis der Anlage ist.
+Als modifiziert wird der Ansatz bezeichnet, weil er anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen unterstellt, was erforderlich ist, da Strompreise negative Werte annehmen können.
 
-% Die Werte der letzten Spalte stammen unveraendert aus Anlage 5. Die
-% beiden Nullen bedeuten nicht, dass die Option wertlos waere, sondern
-% dass der Fall im Beispiel nicht auftritt, weil dort beide
-% Optionalitaeten ungenutzt sind. Die Legende sagt das ausdruecklich,
-% damit die Spalte nicht als Moneyness missverstanden wird.
-% TABELLE ENTFERNT am 24.08.2026 zusammen mit dem Text, der sie
-% einfuehrte. Sie stellte die vier Optionsfaelle eines
-% Pumpspeicherkraftwerks dar. Der Anhang fuehrt die Systematik
-% vollstaendig. Damit erledigt sich auch der Widerspruch, dass der
-% Fliesstext die Zuordnung als eigene Regel einfuehrte, waehrend der
-% Tabellenkommentar sie der Quelle zurechnete.
-Die Festlegung setzt diese Logik mit drei Eingangsgrößen um, nämlich dem Strikepreis, dem Erwartungswert des Intraday-Preisniveaus und einem Volatilitätsmaß \cite[Anlage\,1, S.\,51]{bundesnetzagentur_anlage1_2024}.
-Der Strikepreis ist bei Speichern der Grenzpreis, der iterativ aus der Preisdauerlinie des Tages unter Berücksichtigung des Wirkungsgrades, des Netznutzungsentgelts und der verfügbaren Volllaststunden bestimmt wird.
-Als Erwartungswert dienen die Ergebnisse der Viertelstunden-Intraday-Eröffnungsauktion, und das Volatilitätsmaß ist die Standardabweichung der Differenz zwischen dem Index des kontinuierlichen Intraday-Handels und ebendieser Auktion, rollierend über die jeweils letzten 30 Tage.
+% B  EINGANGSGROESSEN
+Die Festlegung setzt diese Logik mit drei Eingangsgrößen um, nämlich dem Basispreis, dem erwarteten Preisniveau und einem Volatilitätsmaß \cite[Anlage\,1, S.\,51]{bundesnetzagentur_anlage1_2024}.
+Der Basispreis ist bei Speichern der Grenzpreis, der iterativ aus der Preisdauerlinie des Tages unter Berücksichtigung des Wirkungsgrades, des Netznutzungsentgelts und der verfügbaren Volllaststunden bestimmt wird.
+Als erwartetes Preisniveau dienen die Ergebnisse der Viertelstunden-Intraday-Eröffnungsauktion, und das Volatilitätsmaß ist die Standardabweichung der Differenz zwischen dem Index des kontinuierlichen Intraday-Handels und ebendieser Auktion, rollierend über die jeweils letzten 30 Tage.
 Eine Umrechnung auf die verbleibende Restlaufzeit sieht das Verfahren nicht vor.
-Ob eine Viertelstunde als Call oder als Put bewertet wird, folgt aus dem Vergleich des stündlichen Day-Ahead-Preises mit dem Grenzpreis, denn liegt er darüber, gilt die Anlage als bereits mit Maximallast vermarktet.
-Über diesen Vergleich erfasst das Verfahren zugleich denjenigen inneren Wert, der aus den systematischen Differenzen zwischen Stunden- und Viertelstundenprodukten entsteht \cite[Anlage\,1, S.\,52\,f.]{bundesnetzagentur_anlage1_2024}.
-Anhang~\ref{anh:weber} stellt das Verfahren vollständig dar und rechnet es am Beispiel der Bundesnetzagentur nach.
-% GEKUERZT am 24.08.2026. Hier stand die durchgerechnete Viertelstunde
-% mit allen Betraegen des Berechnungsbeispiels. Sie steht jetzt im
-% Anhang und dort vollstaendiger, als sie hier je stand. Erhalten
-% bleibt allein die Zerlegung in inneren Wert und Zeitwert, weil der
-% sechste Grund sie voraussetzt.
-Abbildung~\ref{fig:weber_optionswert} zeigt den Wert beider Optionen über dem erwarteten Viertelstundenpreisniveau, zerlegt in inneren Wert und Zeitwert.
+Tabelle~\ref{tab:weber_symbole} fasst die Größen mit ihren Formelzeichen zusammen.
+
+% TABELLE SYMBOLE. Spaltenbreiten so gewaehlt, dass keine Zelle mehr als
+% zwei Zeilen braucht. Vor Textaenderungen die Zeilenzahl neu pruefen.
+\begin{table}[htbp]
+    \centering
+    \caption{Formelzeichen der Optionsbewertung nach dem modifizierten Weber-Ansatz. Nach \cite[Anlage\,1, S.\,51\,f.]{bundesnetzagentur_anlage1_2024}.}
+    \label{tab:weber_symbole}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.12\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.58\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Zeichen} & \textbf{Größe} & \textbf{Bestimmung} \\
+        \hline
+        $X$ & Basispreis & Oberer oder unterer Grenzpreis der Anlage \\
+        $\mu$ & Erwartetes Preisniveau & Ergebnis der Viertelstunden-Intraday-Eröffnungsauktion \\
+        $\sigma$ & Volatilitätsmaß & Standardabweichung der Differenz zwischen Intraday-Index und Eröffnungsauktion über 30 Tage \\
+        $d$ & Standardisierter Abstand & Abstand zwischen $\mu$ und $X$ in Vielfachen von $\sigma$ \\
+        $\Phi$, $\varphi$ & Verteilungs- und Dichtefunktion & Standardnormalverteilung \\
+        $V_C$, $V_P$ & Wert der Call- und der Put-Option & Bezogen auf Leistung und Stunde \\
+        \hline
+    \end{tabular}
+\end{table}
+
+% C  BEWERTUNGSFORMEL
+Aus diesen Größen folgt der Optionswert je Leistungseinheit nach den Gleichungen~\eqref{eq:weber_d} bis \eqref{eq:weber_put} \cite[Anlage\,1, S.\,52]{bundesnetzagentur_anlage1_2024}.
+
+\begin{align}
+  d &= \frac{\mu - X}{\sigma} \label{eq:weber_d}\\
+  V_C &= \sigma \left( d\,\Phi(d) + \varphi(d) \right) \label{eq:weber_call}\\
+  V_P &= \sigma \left( \varphi(d) - d\,\Phi(-d) \right) \label{eq:weber_put}
+\end{align}
+
+Beide Werte sind auf die Leistung und die Stunde bezogen und daher mit der Produktdauer zu multiplizieren, die für Viertelstundenprodukte eine Viertelstunde beträgt.
+
+% D  ZUORDNUNG, INNERER WERT UND ZEITWERT
+% TRAGEND fuer den sechsten Grund in Abschnitt 2.3.4 ist, dass die
+% Zuordnung am STUENDLICHEN Day-Ahead-Preis haengt. Nicht abschwaechen.
+Ob eine Viertelstunde als Call oder als Put bewertet wird, folgt aus dem Vergleich des stündlichen Day-Ahead-Preises mit dem Basispreis, wie Tabelle~\ref{tab:weber_optionsart} zeigt \cite[Anlage\,1, S.\,52\,f.]{bundesnetzagentur_anlage1_2024}.
+Über diesen Vergleich erfasst das Verfahren zugleich denjenigen inneren Wert, der aus den systematischen Differenzen zwischen Stunden- und Viertelstundenprodukten entsteht.
+Der Optionswert setzt sich dabei aus dem inneren Wert und dem Zeitwert zusammen, wobei der innere Wert die bereits realisierte Differenz zwischen erwartetem Preis und Basispreis erfasst und der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung.
+
+% TABELLE ZUORDNUNG. Bewusst zwei Zeilen. Sie ersetzt die frueher hier
+% stehende Tabelle mit den vier Optionsfaellen eines
+% Pumpspeicherkraftwerks, die fuer die Fragestellung nichts trug.
+\begin{table}[htbp]
+    \centering
+    \caption{Zuordnung der Optionsart über den Vergleich des stündlichen Day-Ahead-Preises mit dem Basispreis. Nach \cite[Anlage\,1, S.\,52\,f.]{bundesnetzagentur_anlage1_2024}.}
+    \label{tab:weber_optionsart}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.16\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.60\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Day-Ahead-Preis} & \textbf{Optionsart} & \textbf{Verlorene Möglichkeit} \\
+        \hline
+        Unter dem Basispreis & Call & Die Anlage gilt als nicht vermarktet, sodass der Einstieg bei steigendem Preis entfällt \\
+        Über dem Basispreis & Put & Die Anlage gilt als voll vermarktet, sodass die Rücknahme der Leistung entfällt \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Abbildung~\ref{fig:weber_optionswert} zeigt den Wert beider Optionen über dem erwarteten Preisniveau für die im Berechnungsbeispiel bewertete Viertelstunde.
 Liegt der erwartete Preis zwischen den Grenzpreisen, ist der innere Wert beider Optionen null und der gesamte Anspruch besteht aus Zeitwert.
 Diese Zerlegung ist zugleich der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt, denn eine Vergütung, die allein die bereits realisierte Preisdifferenz erstattet, zahlte für eine solche Viertelstunde nichts, obwohl dem Betreiber mit der Anweisung auch die Chance auf eine günstigere Preisentwicklung genommen wird.
-% STAND DER ABBILDUNG, 25.08.2026. Sie zeigt die Bewertungslogik fuer EIN
-% Viertelstundenintervall, naemlich auf der Abszisse das erwartete
-% Preisniveau und auf der Ordinate den Wert, mit dem jeweiligen Grenzpreis
-% als Basispreis und der Zerlegung in inneren Wert und Zeitwert. Beide
-% Richtungen sind dargestellt, die Ausspeisung als Call und die
-% Einspeisung als Put; beide Kurven gelten fuer dieselbe Viertelstunde und
-% tragen deshalb dieselbe Standardabweichung. Vorbild ist Abbildung 9 der
-% Anlage 1, S. 54. Die Abbildung gibt fremde Bewertungslogik wieder und
-% ist deshalb als Darstellung nach der Quelle gekennzeichnet.
-%
-% ERLEDIGT: Die Teilung der Abbildung ist entfallen, sie enthaelt nur noch
-% ein Diagramm. Die Preisdauerlinie, die eine frueher geplante Teilbild-a
-% zeigen sollte, ist nicht Gegenstand dieser Abbildung. Die Unterschrift
-% und der einleitende Satz sind darauf zurueckgefuehrt.
-%
-% OFFEN: Die Abnahme des Zeitwerts mit sinkender Restlaufzeit ist NICHT
-% dargestellt. Dafuer spraeche, dass die Zeitstaffelung die Vorlage fuer
-% den Beschaffungszeitpunkt in Abschnitt 3.2 ist. Falls sie aufgenommen
-% wird, gehoert sie in eine EIGENE Abbildung und nicht in diese.
-%
-% Erzeugt in bess_dispatch_optimization unter
-% analysen/code/schrift/05_weber_optionswert/. Naturbreite 453,543 bp,
-% deshalb ohne Breitenangabe eingebunden.
+
+% SPEZIFIKATION der Abbildung, Stand 24.08.2026. Sie zeigt auf der
+% Abszisse das erwartete Viertelstundenpreisniveau und auf der
+% Ordinate den Optionswert je MW und Viertelstunde, mit den beiden
+% Grenzpreisen als Basispreisen, der Zerlegung in inneren Wert und
+% Zeitwert sowie beiden Richtungen, naemlich der Ausspeisung als Call
+% und der Einspeisung als Put.
+% NACHGERECHNET am 24.08.2026. Die Kurven, die Nulldurchgaenge der
+% gestrichelten Geraden und die beiden Marker bei 0,369 und 0,573
+% Euro je MW reproduzieren. Der Faktor einer Viertelstunde ist
+% eingerechnet, weshalb die Ordinate Euro je MW und nicht je MWh
+% traegt.
+% DAS BEISPIEL NICHT TAUSCHEN. Der markierte Fall liegt bewusst aus
+% dem Geld, weil nur dann eine reine Differenzverguetung NULL zahlt,
+% waehrend der Optionswert positiv bleibt. Im Geld waere der
+% Unterschied nur quantitativ und der Absatz verloere sein Argument.
+% ACHTUNG bei der Annotation: Die Hilfslinie bei 110 Euro je MWh darf
+% NICHT als zweite Viertelstunde beschriftet werden. Das
+% Volatilitaetsmass von 21,75 Euro je MWh gilt rollierend je
+% Viertelstundenprodukt und damit nur fuer 13:00 bis 13:15 Uhr. Die
+% Linie zeigt dieselbe Option bei einem anderen erwarteten Preis.
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_2/weber_optionswert.pdf}
-    \caption{Wert der Ausspeise- und der Einspeiseoption über dem erwarteten Viertelstundenpreisniveau, zerlegt in inneren Wert und Zeitwert, für die Viertelstunde des Berechnungsbeispiels. Zwischen den beiden Grenzpreisen sind beide Optionen aus dem Geld, sodass der gesamte Wert aus Zeitwert besteht. Eigene Darstellung nach \cite{weber_gutachten_2015} und \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
+% UNTERSCHRIFT auf den tatsaechlichen Inhalt der Datei abgestimmt am
+% 24.08.2026. Es gibt kein Teilbild a und kein Teilbild b.
+% AUSSTEHEND, Auftrag an Claude Code erteilt: Zerlegungsannotation bei
+% einem erwarteten Preis von 110 Euro je MWh auf der Ausspeiseseite mit
+% innerem Wert von 2,51 und Zeitwert von 1,14 Euro je MW. Sobald sie
+% gesetzt ist, kann der Satz zu den gestrichelten Geraden knapper
+% ausfallen. Bis dahin traegt ihn die Unterschrift.
+    \caption{Wert der Aus- und der Einspeiseoption über dem erwarteten Viertelstundenpreisniveau für die Viertelstunde von 13:00 bis 13:15 Uhr des Berechnungsbeispiels. Die gestrichelten Geraden geben den inneren Wert und die durchgezogenen Kurven den gesamten Optionswert, sodass ihr senkrechter Abstand dem Zeitwert entspricht. Die Werte beziehen sich auf eine Viertelstunde. Nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
     \label{fig:weber_optionswert}
 \end{figure}
 
-% GEKUERZT am 24.08.2026. Hier standen die vier Rechenschritte und
-% Tabelle 2.7 mit den acht Verguetungsvarianten und ihren
-% Abrechnungspreisformeln. Beides betrifft ein Pumpspeicherkraftwerk
-% und traegt keinen der sechs Gruende. Der Anhang fuehrt es
-% vollstaendig. Erhalten bleibt allein die Gegenueberstellung mit dem
-% Werteverbrauch, weil der fuenfte Grund sie voraussetzt.
+% E  BERECHNUNGSBEISPIEL, kompakt.
+% ZAHLEN NACHGERECHNET. Die Anlage nennt 0,36915 und 0,57296 Euro je MW
+% sowie 176,96 Euro. Ohne Zwischenrundung ergeben sich 0,36923 und 0,57306
+% sowie 177,00 Euro. Die Abweichung stammt aus den gerundeten Werten von
+% Phi und phi, mit denen die Anlage weiterrechnet. Im Text stehen die
+% Werte der Anlage.
+% Der vollstaendige Rechenweg samt Grenzpreisbestimmung und
+% Abrechnungspreisen steht im Anhang. HIER nur die eine Viertelstunde.
+Ein veröffentlichtes Berechnungsbeispiel der \ac{BNetzA} führt das Verfahren für ein Pumpspeicherkraftwerk vor \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+Betrachtet wird eine Anlage mit \SI{200}{\mega\watt} Turbinen- und \SI{180}{\mega\watt} Pumpleistung, deren Grenzpreise sich zu 99,97 und 56,93\,\si{\text{\euro}\per MWh} ergeben.
+Für die Viertelstunde von 13:00 bis 13:15 Uhr betragen das erwartete Preisniveau 75,93 und das Volatilitätsmaß 21,75\,\si{\text{\euro}\per MWh}, während der Day-Ahead-Preis mit 57,26\,\si{\text{\euro}\per MWh} unter dem oberen und über dem unteren Grenzpreis liegt.
+Nach Tabelle~\ref{tab:weber_optionsart} wird die Ausspeiseseite deshalb als Call und die Einspeiseseite als Put bewertet, woraus sich mit Gleichung~\eqref{eq:weber_d} die standardisierten Abstände $d_C = -1{,}105$ und $d_P = 0{,}874$ ergeben.
+Die Gleichungen~\eqref{eq:weber_call} und \eqref{eq:weber_put} liefern daraus 0,369 und 0,573\,\si{\text{\euro}\per MW} für die Viertelstunde.
+Da der erwartete Preis zwischen beiden Grenzpreisen liegt, besteht dieser Betrag vollständig aus Zeitwert.
+Anhang~\ref{anh:weber} stellt das Verfahren einschließlich der Grenzpreisbestimmung und der Abrechnungspreise vollständig dar.
+
+% F  AGGREGATION
 Die je Viertelstunde und Richtung ermittelten Optionswerte werden mit der jeweils gesperrten Leistung multipliziert und dem anteiligen Werteverbrauch gegenübergestellt \cite[Anlage\,1, S.\,14]{bundesnetzagentur_anlage1_2024}.
+Im Beispiel ergibt das bei vollständiger Sperrung beider Richtungen 73,83 und 103,13\,\si{\text{\euro}} und damit einen Gesamtbetrag von 176,96\,\si{\text{\euro}} für die eine Viertelstunde.
+
 % ---------------------------------------------------------------------
 % NEUER UNTERABSCHNITT am 24.08.2026. Die Kritik traegt jetzt einen
 % eigenen Abschnitt, weil sie das Ergebnis des Kapitels ist und nicht
@@ -1750,6 +2067,19 @@ Die je Viertelstunde und Richtung ermittelten Optionswerte werden mit der jeweil
 % weil er unabhaengig von der Qualitaet der Bewertungsformel gilt. Die
 % sechs Gruende wirken erst, wenn ueberhaupt ein Eingriff erfolgt.
 % ---------------------------------------------------------------------
+% FUND FUER ABSCHNITT 3.2, hier bewusst NICHT im Fliesstext.
+% Die Festlegung trennt Bindung, Bereitschaft und Einsatz systematisch.
+% Die Bindung der Flexibilitaet weist sie der Nummer 3 zu, denn bei
+% beidseitiger Fixierung sind die Opportunitaetskosten auf den
+% Leistungsbereich anzusetzen, der ohne die Anweisung flexibel
+% einsetzbar gewesen waere, bei einseitiger Fixierung nur auf den
+% gesperrten Bereich (Anlage 1, Kap. 2.3, S. 48). Die Bereitschaft gilt
+% sie ueber Nummer 4 ab (S. 41). Nummer 2 knuepft dagegen an die Dauer
+% der Massnahme an (S. 35).
+% Das stuetzt die Zweiteilung des Produktentwurfs, ist aber eine EIGENE
+% Folgerung und keine Regel der Festlegung, weil die zeitliche
+% Definition der anrechenbaren Betriebsstunden dem entgegensteht. In
+% Kapitel 3 entsprechend kennzeichnen.
 \subsection{Grenzen der Erlösbestimmung für die kurative Systemführung}
 \label{sec:weber_limits}
 
@@ -1759,7 +2089,27 @@ Die je Viertelstunde und Richtung ermittelten Optionswerte werden mit der jeweil
 Die dargestellte Bemessung ist an eine angeordnete und geduldete Anpassung gebunden.
 §\,13a Abs.\,2 Satz\,3 \ac{EnWG} erstattet jeden Bestandteil nur insoweit, als die Anpassung ihn verursacht hat, und der Optionswert bemisst allein den Verlust an Flexibilität, den die Anweisung auslöst.
 Eine kurative Vorhaltezusage ist demgegenüber keine geduldete Anordnung, sondern eine im Voraus eingegangene Bindung, der in den meisten Intervallen überhaupt kein Eingriff folgt.
-Für diesen Fall kennt das Regime keinen Anspruch, und daran änderte auch eine für Batteriespeicher angepasste Bewertungsformel nichts.
+% VERLAGERT AUS ABSCHNITT 2.3.2 am 24.08.2026. Die beiden folgenden
+% Saetze stuetzen den kategorialen Einwand und standen dort in einem
+% eigenen Absatz, der die Aussage doppelte.
+% NICHT ueber Abs. 4 allein begruenden. Abs. 4 schliesst Kosten aus, die
+% auch OHNE die Anforderung entstehen. Kosten einer kurativen Vorhaltung
+% entstehen gerade wegen der Zusage und fallen deshalb nicht darunter.
+% Tragend ist Satz 3. Abs. 4 stuetzt das nur.
+% KORRIGIERT am 24.08.2026 gegen Anlage 1, S. 41. Die Vorfassung sagte,
+% auch die Auslagen zur Herstellung der Betriebsbereitschaft verguetenn
+% keine dauerhafte Bereitschaft. Das ist falsch. Die Festlegung regelt
+% ausdruecklich, dass die blosse Warmhaltung einer thermischen Anlage auf
+% Verlangen des Netzbetreibers einen Erstattungsanspruch nach Nummer 4
+% ausloest, OHNE dass anrechenbare Betriebsstunden anfallen. Das ist eine
+% Zahlung fuer Bereitschaft ohne Einsatz.
+% Der Unterschied liegt in der ART der Kosten. Erstattet werden Auslagen,
+% also tatsaechliche Ausgaben, und keine Opportunitaetskosten. NICHT
+% wieder als "verguetet keine Bereitschaft" formulieren, das oeffnet dem
+% Pruefer den Gegeneinwand.
+Eine Ausnahme bildet allein die Herstellung der Betriebsbereitschaft, denn die bloße Warmhaltung einer thermischen Anlage auf Verlangen des Netzbetreibers löst einen Erstattungsanspruch nach Nummer~4 aus, ohne dass anrechenbare Betriebsstunden anfallen \cite[Anlage\,1, S.\,41]{bundesnetzagentur_anlage1_2024}.
+Erstattet werden dabei Auslagen und keine Opportunitätskosten, weshalb die Position für einen Batteriespeicher leerläuft, dessen Vorhaltung nicht aus Ausgaben, sondern ausschließlich aus entgangener Vermarktung besteht.
+Für eine Vorhaltung, der keine Anpassung folgt, kennt das Regime damit keinen Anspruch, und daran änderte auch eine für Batteriespeicher angepasste Bewertungsformel nichts.
 Die folgenden sechs Gründe betreffen demgegenüber die Anwendbarkeit des Verfahrens auf die Technologie und wirken auch dann, wenn ein Eingriff tatsächlich erfolgt.
 
 Auf Batteriespeicher lässt sich die Bewertung dabei nicht ohne Weiteres übertragen, und zwar aus sechs Gründen.
@@ -1780,6 +2130,11 @@ Ein Batteriespeicher mit wenigen Stunden Entladedauer erfüllt die Voraussetzung
 Wie nah diese Grenze liegt, zeigt das Berechnungsbeispiel selbst, denn es führt zwei Anlagen und beide Regime vor \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
 Bei der Anlage mit vier Volllaststunden endet die Bestimmung der Grenzpreise nach 16 Viertelstunden am Energievorrat, während sie bei der Anlage mit sechs Volllaststunden bereits nach 18 Viertelstunden an der Wirtschaftlichkeitsbedingung abbricht.
 Der Umschlagpunkt zwischen beiden Regimen liegt damit zwischen vier und sechs Volllaststunden, sodass ein Batteriespeicher mit ein bis vier Stunden Entladedauer stets im energiebegrenzten Fall liegt.
+% BELEG ERGAENZT am 24.08.2026 aus Anlage 1, S. 12. Derselbe Einwand
+% wurde im Konsultationsverfahren erhoben. NICHT einem Unternehmen
+% zuordnen, denn das Dokument ordnet die Einwaende der Aufzaehlung keinem
+% einzelnen Beteiligten zu.
+Derselbe Einwand ist im Konsultationsverfahren erhoben worden, nämlich dass der Ansatz schlecht passe, weil die Zahl der Volllaststunden bei Batteriespeichern deutlich geringer sei als bei Pumpspeicherkraftwerken \cite[Anlage\,1, S.\,12]{bundesnetzagentur_anlage1_2024}.
 Der zweite Grund ist die Pfadabhängigkeit des Handlungsspielraums.
 Das Optionsmodell bewertet jedes Zeitintervall isoliert, während die Möglichkeit einer Anlage, in einem Intervall auszuspeisen, vom Ladezustand abhängt, den vorangegangene Entscheidungen hinterlassen haben.
 Weber selbst benennt diese Vernachlässigung zeitübergreifender Restriktionen als Ursache einer tendenziellen Überschätzung der Optionalität \cite[Abschnitt\,6]{weber_gutachten_2015}, und Untersuchungen zur Übertragbarkeit auf weitere Technologien bestätigen den Befund \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}.
@@ -1795,7 +2150,18 @@ Weber selbst benennt diese Vernachlässigung zeitübergreifender Restriktionen a
 % Abschnitt 6 zitiert ist.
 Dieselbe Quelle benennt im Fazit allerdings gegenläufige Vereinfachungen, die den Wert tendenziell unterschätzen, nämlich die Vernachlässigung der ausgeprägten Ränder der Intraday-Preisverteilung und die Korrelation von Redispatcheingriffen mit windstarken Zeiten, sodass die Richtung der Gesamtabweichung nach der Quelle nicht eindeutig ist.
 Der dritte Grund betrifft den Gegenstand des Verlusts.
+% BELEG ERGAENZT am 24.08.2026 aus Anlage 1, S. 12. Der Verschiebungs-
+% einwand wurde im Konsultationsverfahren zum anteiligen Werteverbrauch
+% erhoben. Die Antwort der Beschlusskammer besteht aus EINEM Satz, der
+% die Formel wiederholt.
+% Die Bewertung im letzten Satz ist eine eigene und als solche
+% formuliert. Nicht als Aussage des Dokuments ausgeben.
+% NICHT einem Unternehmen zuordnen.
 Ein Eingriff bei einem Speicher führt in vielen Fällen nicht zu einer entfallenen, sondern zu einer verschobenen Ein- oder Ausspeisung, sodass der wirtschaftliche Nachteil in der schlechteren Preislage der Ersatzausübung und im zusätzlichen Werteverbrauch liegt und nicht im vollständigen Verlust der Erlösmöglichkeit.
+% ANKER ENTFERNT am 24.08.2026. Dieselbe Fundstelle steht bereits beim
+% ersten Grund. Der Rueckbezug ueber "ebenfalls" traegt sie mit.
+Ebenfalls aus dem Konsultationsverfahren stammt der Hinweis, dass Zyklen infolge einer Maßnahme nicht zusätzlich absolviert, sondern verschoben würden, dort bezogen auf den anteiligen Werteverbrauch.
+Die Beschlusskammer hat darauf mit einem Satz geantwortet, der die Bemessungsformel wiederholt, und damit offengelassen, weshalb ein zeitlich verlagerter Zyklus einen der Maßnahme zurechenbaren Werteverzehr darstellt.
 Der vierte Grund liegt in der Mehrfachvermarktung.
 Ein Speicher vermarktet dieselbe Leistung und denselben Ladezustandsbereich typischerweise parallel auf Spot- und Regelleistungsmärkten, sodass ein Eingriff gleichzeitig mehrere Erlösströme beeinträchtigt, ohne dass die auf einen einzelnen Markt bezogene Optionsbewertung dies erfassen könnte.
 % NACHGEZOGEN am 24.08.2026 zur Korrektur in Abschnitt 2.3.2. Die
@@ -1848,92 +2214,64 @@ Damit liegt für die in dieser Arbeit betrachtete Technologie nicht nur eine sch
 % Nachrechnung des Verfahrens und eine quantitative Pruefung der Einwaende
 % an. Beides findet nicht statt. Der Weber-Ansatz ist rein informativ Stand
 % der Technik. Nicht wieder aufnehmen.
-Weshalb sich das Verfahren aus diesen Gründen nicht als Bestandteil des eigenen Optimierungsmodells führen lässt, begründet Abschnitt \ref{sec:weber_exclusion}.
+% METHODISCHE KONSEQUENZ, ergaenzt am 24.08.2026. Das ist der Schluss
+% des Abschnitts und zugleich die Begruendung des eigenen Vorgehens.
+% TRAGEND: Die sechs Gruende betreffen die ZERLEGUNG und nicht die
+% Parametrisierung. Eine reparierte Formel traefe die Groesse deshalb
+% weiterhin nicht. Zu bestimmen ist zuerst die tatsaechliche Nutzung der
+% Flexibilitaet. NICHT abschwaechen zu "die Formel muesste angepasst
+% werden", denn genau das ist die Aussage, die hier verneint wird.
+Die sechs Gründe betreffen dabei nicht die Wahl der Verteilungsannahme oder die Parametrisierung, sondern die Zerlegung selbst.
+Eine Option bewertet die Unsicherheit eines einzelnen Lieferintervalls, während der Wert eines Speichers daraus entsteht, dass er Arbeit zwischen Intervallen verschiebt.
+Eine Anpassung der Formel griffe deshalb zu kurz.
+Zu bestimmen ist zunächst, wie ein Batteriespeicher seine Flexibilität über den Tag tatsächlich einsetzt und welchen Beitrag die einzelnen Vermarktungswege dabei tragen, denn erst daraus folgt, was eine Bindung dieser Flexibilität kostet.
+Abschnitt \ref{sec:revenue_stacking} nimmt diese Frage auf, und weshalb sich das Verfahren nicht als Bestandteil des eigenen Optimierungsmodells führen lässt, begründet Abschnitt \ref{sec:weber_exclusion}.
 
 % ---------------------------------------------------------------
 % NEU. Dieser Unterabschnitt fehlte vollstaendig.
-\subsection{Beschaffung von Regelleistung}
+\subsection{Vergütung von \acs{FCR} und \acs{aFRR}}
 \label{sec:balancing_procurement}
-%
-% ZWECK: Die Regelleistung ist das einzige bestehende Regime, das
-% Vorhaltung und nicht Arbeit verguetet. Sie ist damit die naechste
-% Verwandte des gesuchten Produkts und gleichzeitig der Beleg dafuer,
-% dass eine Verguetung von Vorhaltung regulatorisch etabliert ist.
-% ABGRENZUNG, damit nichts doppelt steht:
-%   Hier steht die BESCHAFFUNGSLOGIK.
-%   Abschnitt 2.3.5 behandelt die Regelleistung als Erloesquelle.
-%   Abschnitt 2.3.5 behandelt den reservierten Ladezustandsbereich als
-%     konkurrierenden Anspruch.
-%
-% OFFEN 4: Produktschnitt, Auktionsrhythmus und Ausschreibungszeitpunkte
-% gegen die Praequalifikationsbedingungen und die Ausschreibungsdaten
-% verifizieren. Diese Angaben aendern sich regulatorisch.
+% NEU GESCHRIEBEN am 24.08.2026. Der beschreibende Teil steht jetzt in
+% Abschnitt 2.2.3. Hier bleibt ausschliesslich die Verguetung.
+% Die mFRR kommt nicht mehr vor, weil sie fuer den eigenen Entwurf nichts
+% beitraegt. FCR und aFRR tragen die beiden Muster, naemlich reine
+% Vorhalteverguetung und Trennung von Vorhaltung und Abruf.
+% Die frueheren zwei Tabellen sind zu einer zusammengefasst, die zugleich
+% die aus Abschnitt 2.2.3 entfernte Spalte Erloesniveau aufnimmt.
+Die Beschaffung nach Abschnitt \ref{sec:ancillary_services} führt zu zwei unterschiedlichen Vergütungsmustern.
+Bei der \ac{FCR} wird ausschließlich die Bereitstellung vergütet, denn ein Abruf erfolgt symmetrisch und wird nicht gesondert abgerechnet.
+Bei der \ac{aFRR} tritt neben den Leistungspreis ein Arbeitspreis, sodass Vorhaltung und Abruf getrennt bepreist werden.
+Tabelle~\ref{tab:balancing_remuneration} stellt beide Muster gegenüber.
 
-Die Frequenzhaltung wird in Deutschland über drei Regelleistungsprodukte beschafft, die sich in Aktivierungsart und Reaktionszeit unterscheiden.
-Gemeinsam ist ihnen die Beschaffungslogik.
-Die \ac{ÜNB} schreiben eine Leistungsmenge aus, die Anbieter geben Leistungspreise ab, und die Zuschlagserteilung verpflichtet den Anbieter, die zugesagte Leistung über die gesamte Erbringungsperiode bereitzuhalten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Vergütet wird damit die Bereitstellung und nicht der Abruf, während der tatsächliche Energieabruf bei \ac{aFRR} und \ac{mFRR} zusätzlich über einen Arbeitspreis abgerechnet wird.
-Voraussetzung für die Teilnahme ist ein Präqualifikationsverfahren, in dem die technische Eignung der Anlage nachgewiesen und ein zulässiger Arbeitsbereich festgelegt wird \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Tabelle~\ref{tab:regelleistung} stellt die drei Produkte gegenüber.
-Für die \ac{aFRR} ist die Trennung von Leistungsvorhaltung und Arbeitsabruf gesondert darzustellen, weil sie das Muster vorgibt, an dem sich die Bewertung der kurativen Vorhaltung orientiert.
-Tabelle~\ref{tab:afrr_leistung_arbeit} stellt beide Bestandteile entlang ihrer Beschaffung, ihrer Preisbildung und ihres Zeitbezugs gegenüber.
-
-% OFFEN 5: Die Spalte Erloesniveau ist absichtlich leer. Sie sollte aus
-% einer eigenen Auswertung der Ausschreibungsdaten fuer den in Kapitel 4
-% verwendeten Betrachtungszeitraum gefuellt werden, sonst entsteht ein
-% Bruch zur eigenen Datenbasis.
+% TABELLE. Sie ersetzt die frueheren Tabellen zu den Regelleistungsprodukten
+% und zur Zweiteilung der aFRR. Die Zeile Erloesniveau stammt aus der
+% Produkttabelle in Abschnitt 2.2.3.
 \begin{table}[htbp]
     \centering
-    \caption{Regelleistungsprodukte im Vergleich.}
-    \label{tab:regelleistung}
+    \caption{Vergütungsbestandteile der \ac{FCR} und der \ac{aFRR} im Vergleich.}
+    \label{tab:balancing_remuneration}
     \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.13\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.21\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-\tabcolsep\relax}@{}}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.28\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-\tabcolsep\relax}@{}}
         \hline
-        \textbf{Produkt} & \textbf{Aktivierung} & \textbf{Produkt\-schnitt} & \textbf{Auktions\-rhythmus} & \textbf{Erlösniveau} \\
+        \textbf{Merkmal} & \textbf{\acs{FCR} Vorhaltung} & \textbf{\acs{aFRR} Vorhaltung} & \textbf{\acs{aFRR} Abruf} \\
         \hline
-        \ac{FCR} & automatisch, Sekundenbereich & [PLATZHALTER] & täglich & [PLATZHALTER] \\
-        \ac{aFRR} & automatisch, Minutenbereich & [PLATZHALTER] & täglich & [PLATZHALTER] \\
-        \ac{mFRR} & manuell & [PLATZHALTER] & täglich & [PLATZHALTER] \\
+        Beschaffungszeitpunkt & [PLATZHALTER] & [PLATZHALTER] & [PLATZHALTER] \\
+        Preisbildung & [PLATZHALTER] & [PLATZHALTER] & [PLATZHALTER] \\
+        Bemessungsgröße & [PLATZHALTER] & [PLATZHALTER] & [PLATZHALTER] \\
+        Zeitbezug der Zahlung & [PLATZHALTER] & [PLATZHALTER] & [PLATZHALTER] \\
+        Eintrittswahrscheinlichkeit & [PLATZHALTER] & [PLATZHALTER] & [PLATZHALTER] \\
+        Erlösniveau & [PLATZHALTER] & [PLATZHALTER] & [PLATZHALTER] \\
         \hline
     \end{tabular}
 \end{table}
 
-% OFFEN 26: Zweiteilung der aFRR-Verguetung. Die Tabelle ist ein Geruest
-% und Zelle fuer Zelle zu fuellen. Vorgesehen sind die Zeilen
-% Beschaffungszeitpunkt, Preisbildung, Bemessungsgroesse, Zeitbezug der
-% Zahlung und Abrufwahrscheinlichkeit. Die Angaben zur Leistungsseite
-% folgen aus den Ausschreibungsbedingungen, die Angaben zur Arbeitsseite
-% aus der europaeischen Preisbildung ueber den grenzueberschreitenden
-% Merit-Order-Preis. Zu entscheiden ist, ob die Darstellung als Tabelle
-% bleibt oder als Abbildung mit zwei Zeitachsen ausgefuehrt wird. Fuer
-% die Tabelle spricht, dass die Gegenueberstellung kategorial und nicht
-% zeitlich ist. Die Zahlen zur Arbeitsseite sind mit der eigenen
-% Auswertung in Kapitel 4 konsistent zu halten.
-\begin{table}[htbp]
-    \centering
-    \caption{Leistungsvorhaltung und Arbeitsabruf bei \ac{aFRR} im Vergleich.}
-    \label{tab:afrr_leistung_arbeit}
-    \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.35\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.35\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Merkmal} & \textbf{Leistungsvorhaltung} & \textbf{Arbeitsabruf} \\
-        \hline
-        Beschaffungszeitpunkt & [PLATZHALTER] & [PLATZHALTER] \\
-        Preisbildung & [PLATZHALTER] & [PLATZHALTER] \\
-        Bemessungsgröße & [PLATZHALTER] & [PLATZHALTER] \\
-        Zeitbezug der Zahlung & [PLATZHALTER] & [PLATZHALTER] \\
-        Eintrittswahrscheinlichkeit & [PLATZHALTER] & [PLATZHALTER] \\
-        \hline
-    \end{tabular}
-\end{table}
-
-Für die vorliegende Arbeit ist an dieser Logik zweierlei bedeutsam.
-Erstens belegt sie, dass die Vergütung vorgehaltener und überwiegend nicht abgerufener Leistung regulatorisch etabliert und wettbewerblich organisierbar ist.
-Zweitens ist die Beschaffung nicht lokational ausgestaltet.
-Die Produkte dienen dem Frequenzausgleich im gesamten Regelverbund, und die Wirkung eines Abrufs auf die Belastung eines einzelnen Betriebsmittels ist für die Zuschlagserteilung unerheblich.
-Eine kurative Maßnahme ist demgegenüber nur wirksam, wenn der Akteur an einem Netzknoten mit hinreichender Sensitivität gegenüber dem betroffenen Betriebsmittel angeschlossen ist.
+% BEFUND. Der zweite Befund zur fehlenden Lokationalitaet steht jetzt in
+% Abschnitt 2.2.3, weil er eine Produkteigenschaft ist. Hier bleibt der
+% verguetungsbezogene Befund.
+Für die vorliegende Arbeit ist daran zweierlei bedeutsam.
+Erstens belegt die \ac{FCR}, dass die Vergütung vorgehaltener und überwiegend nicht abgerufener Leistung regulatorisch etabliert und wettbewerblich organisierbar ist.
+Zweitens zeigt die \ac{aFRR}, dass sich Vorhaltung und Abruf getrennt bepreisen lassen, was dem Umstand entspricht, dass eine kurative Zusage über die gesamte Bindungsdauer besteht, ein Abruf aber nur im Fehlerfall erfolgt.
 Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung nicht unmittelbar anwendbar, liefert aber die Form, an der sich ein kurativer Mechanismus orientieren kann.
-
 % ---------------------------------------------------------------
 % NEU ZUSAMMENGEFUEHRT am 20.08.2026. Dieser Unterabschnitt vereinigt vier
 % frueher getrennte Bloecke, naemlich die Staffelung der
@@ -1953,62 +2291,14 @@ Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung ni
 \label{sec:soc_conflict}
 \label{sec:market_development}
 
-Innerhalb dieses Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf.
-Den Ausgangspunkt bildet die Day-Ahead-Auktion, die am Vortag alle Lieferzeitpunkte des Folgetages in einem einzigen Auktionsdurchgang preist.
-Zum 1.\,Oktober 2025 wurde ihr Produktschnitt von Stunden- auf Viertelstundenprodukte umgestellt, was die Preisbildung und die Volumenverteilung zwischen Day-Ahead- und Intraday-Handel merklich verändert hat \cite{ffe_saegezahn_2026}.
-Daran schließen die seit Juni 2024 etablierten Intraday-Auktionen \ac{IDA-1} bis \ac{IDA-3} an, die den Fahrplan zu definierten Zeitpunkten gegen aktualisierte Prognosen neu bewerten, sowie der kontinuierliche Intraday-Handel, der die Anpassung bis zum Gate Closure kurz vor Lieferbeginn offenhält \cite{mahgoub_wie_2025}.
-Terminmarkt und \ac{OTC}-Handel bleiben im Folgenden unberücksichtigt.
-Der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei, während der \ac{OTC}-Handel wegen bilateraler Preisbildung nicht mit der erforderlichen Transparenz beobachtbar ist.
-Abbildung \ref{fig:markt_zeitschiene} stellt die Staffelung dieser Handelsgelegenheiten gemeinsam mit den Ausschreibungszeitpunkten der Regelleistung und den Stufen der Betriebsplanung auf einer gemeinsamen Zeitachse dar.
-
-% SPEZIFIKATION der Zeitschiene der Maerkte. Sie bleibt als Grundlage
-% spaeterer Aenderungen stehen, die Abbildung ist eingebunden.
-% Die Abbildung soll auf einer
-% gemeinsamen Zeitachse vom Vortag bis zum Erfuellungszeitpunkt vier
-% Spuren zeigen, naemlich die Spotmaerkte mit Day-Ahead-Auktion, IDA-1
-% bis IDA-3, kontinuierlichem Intraday-Handel und Gate Closure, die
-% Ausschreibungs- und Erbringungszeitpunkte der Regelleistung, die Stufen
-% der Betriebsplanung des UENB bis zur letzten Netzsicherheitsrechnung
-% sowie darunter das Zeitfenster, in dem eine kurative Zusage bindend
-% sein muss. Die Abbildung traegt zwei Aussagen, naemlich die Lage des
-% Handelsfensters hinter der letzten Netzsicherheitsrechnung aus
-% Abschnitt 2.1.1 und die Zahl der Handelsgelegenheiten, ueber die eine
-% Zusage hinweg binden muss. Die Zeitpunkte sind gegen die
-% Ausschreibungsbedingungen und die Marktregeln zu verifizieren, bevor
-% sie gezeichnet werden.
-\begin{figure}[htbp]
-    \centering
-    \includegraphics{figures/chapter_2/markt_zeitschiene.pdf}
-    \caption{Zeitliche Staffelung der Handelsgelegenheiten, der Regelleistungsbeschaffung und der Betriebsplanung bis zum Erfüllungszeitpunkt.}
-    \label{fig:markt_zeitschiene}
-\end{figure}
-
-Die obere Achse der Abbildung führt drei Stränge zusammen.
-Sie zeigt die Ausschreibungen der Regelleistung am Vortag, die mit der Primärregelleistung um 8 Uhr beginnen und mit der Minutenreserve um 10 Uhr enden, danach die Day-Ahead-Auktion um 12 Uhr sowie die drei Intraday-Auktionen, von denen die ersten beiden am Vortag und die dritte am Morgen des Liefertages stattfinden.
-Der kontinuierliche Intraday-Handel setzt mit der ersten Intraday-Auktion ein und läuft bis zum Erfüllungszeitpunkt durch.
-Darüber liegen die Rechenläufe des \ac{ÜNB}, also die Lastflussrechnungen für den Vortag und den Liefertag sowie die daran anschließenden Redispatchläufe.
-Der vergrößerte Ausschnitt löst die letzte Stunde vor Lieferbeginn auf, in der die Netzsicherheitsrechnung mindestens alle 15 Minuten wiederholt wird und die Handelsschlusszeitpunkte gestaffelt eintreten, nämlich 60 Minuten vor Lieferbeginn für den grenzüberschreitenden Handel, 30 Minuten davor für den deutschlandweiten Handel und 5 Minuten davor für den regelzoneninternen Handel.
-Genau dieser Ausschnitt trägt die für die Arbeit entscheidende Aussage, denn zwischen der letzten Netzsicherheitsrechnung, auf der eine Maßnahmenplanung beruhen kann, und dem Lieferbeginn bleibt ein Handelsfenster offen, in dem der Fahrplan noch verändert werden darf.
-Diese Staffelung ist der Grund, weshalb kurative Stellpotenziale nicht ohne Weiteres in der Vortagsplanung fixiert werden können, wie in Abschnitt \ref{sec:prev_vs_cur} angekündigt.
-% KORRIGIERT am 24.08.2026. Die Vorfassung sagte "ohne Mitteilungspflicht
-% gegenueber dem UENB". Das trifft nicht zu, denn Redispatch 2.0 verlangt
-% die Uebermittlung der Einsatzplanungsdaten. Massgeblich ist der
-% ZEITPUNKT der Meldung und nicht ihr Fehlen. Siehe Abschnitt 2.3.1.
-Zwischen dem Zeitpunkt, zu dem der \ac{ÜNB} eine kurative Maßnahme plant, und dem Zeitpunkt ihrer möglichen Aktivierung liegen mehrere Handelsgelegenheiten, in denen der Anlagenbetreiber seinen Fahrplan legitim ändern kann, ohne dass die Meldung dieser Änderung noch in eine Vorschaurechnung eingeht.
-Eine kurative Zusage ist daher nur belastbar, wenn sie den Anlagenbetreiber über alle dazwischenliegenden Handelsgelegenheiten hinweg bindet.
-Damit wird die Bindungsdauer zu einem eigenständigen Produktmerkmal, das zugleich die zu vergütende Größe definiert.
-Die Ausgestaltung dieses Merkmals erfolgt in Abschnitt \ref{sec:product_design}.
-% BRUECKE, eigene Ableitung. Sie fuehrt von der Staffelung der Maerkte auf
-% die Erloese, die eine Bindung ueber diese Staffelung hinweg aufgibt.
-Gegen welche Erlöse eine solche Bindung antritt, folgt aus dem Bündel der Vermarktungswege, über die ein Batteriespeicher verfügt.
-
-% --- frueher Unterabschnitt "Erloesquellen und Mehrfachvermarktung" ---
 Ein Batteriespeicher erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus einem Bündel paralleler Vermarktungswege.
 % VERWEISRICHTUNG: Nach dem Tausch von 2.2 und 2.3 zeigt dieser Verweis
 % vorwaerts. Die Formulierung ist entsprechend angepasst.
 Die drei wesentlichen Quellen sind die Arbitrage auf den Spotmärkten, die Bereitstellung von Regelleistung, deren Beschaffungslogik Abschnitt \ref{sec:balancing_procurement} darstellt, und die Teilnahme am Redispatch \cite{garrett_fitzgerald_economics_2025, bundesnetzagentur_systemstabilitatsbericht_2025}.
 Die gleichzeitige Nutzung mehrerer Quellen, als Mehrfachvermarktung bezeichnet, ist dabei nicht eine Ertragsoptimierung am Rande, sondern Voraussetzung der Wirtschaftlichkeit.
-Die Vermarktung in einer einzelnen Anwendung trägt die Investition in der Regel nicht \cite{garrett_fitzgerald_economics_2025}, weshalb Mehrfachnutzungsstrategien als optimale Betriebsstrategie gelten \cite{porst_betriebskonzepte_2025}.
+% ANKER ENTFERNT am 24.08.2026. garrett_fitzgerald_economics_2025 steht
+% bereits zwei Saetze zuvor am Satz zu den drei Erloesquellen.
+Die Vermarktung in einer einzelnen Anwendung trägt die Investition in der Regel nicht, weshalb Mehrfachnutzungsstrategien als optimale Betriebsstrategie gelten \cite{porst_betriebskonzepte_2025}.
 Innerhalb der Spotvermarktung gewinnt dabei der kontinuierliche Intraday-Handel an Bedeutung, da er die Nachjustierung der Fahrpläne an aktualisierte Preis- und Prognoseinformationen erlaubt und dadurch einen eigenständigen Wertbeitrag über die Day-Ahead-Arbitrage hinaus liefert \cite{hornek_value_2025}.
 
 Den Erlösen steht eine Kostenposition gegenüber, die für die Bewertung kurativer Vorhaltung nicht unerheblich ist.
@@ -2227,11 +2517,10 @@ Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
 %  26  Tabelle zur Zweiteilung der aFRR-Verguetung fuellen, Platzhalter in
 %      2.3.4, und entscheiden, ob Tabelle oder Abbildung
 %  27  erledigt, das Optionswertschema ist in 2.3.3 eingebunden und im Text
-%      beschrieben. Entschieden ist gegen ein Teilbild zur Restlaufzeit
-%      und, am 25.08.2026, auch gegen ein Teilbild mit der
-%      Preisdauerlinie. Die Abbildung hat nur noch ein Diagramm, naemlich
-%      die Zerlegung des Optionswerts in inneren Wert und Zeitwert. Die
-%      Herleitung der Grenzpreise steht im Text und im Anhang
+%      beschrieben. Entschieden ist gegen ein Teilbild zur Restlaufzeit.
+%      Teilbild a zeigt stattdessen die Preisdauerlinie, aus der die
+%      beiden Grenzpreise hervorgehen, weil ihre Herleitung sonst
+%      unbelegt bliebe
 %  28  Zusammenfallen von Preisspreizung und Engpassauftreten in Kapitel 4
 %      beantworten, offene Frage am Ende von 2.3.5
 %  29  Absatz- und Nummernzaehlung der PATL- und TATL-Fundstelle in
