@@ -49,7 +49,13 @@
       "Read(//c/Program Files/PuTTY//**)",
       "Bash(tasklist //FI \"IMAGENAME eq pageant.exe\")",
       "Bash(GIT_SSH=\"/c/Program Files/PuTTY/plink.exe\" git push)",
-      "Bash(GIT_SSH=\"/c/Program Files/PuTTY/plink.exe\" git ls-remote origin refs/heads/main)"
+      "Bash(GIT_SSH=\"/c/Program Files/PuTTY/plink.exe\" git ls-remote origin refs/heads/main)",
+      "Bash(PYTHONIOENCODING=utf-8 python \"C:\\\\Users\\\\nikol\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--GIT-HUB-Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung\\\\8583d59d-d4e3-4cef-8f95-f5112bb4ec72\\\\scratchpad\\\\add_bib.py\")",
+      "Bash(PYTHONIOENCODING=utf-8 python \"C:\\\\Users\\\\nikol\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--GIT-HUB-Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung\\\\8583d59d-d4e3-4cef-8f95-f5112bb4ec72\\\\scratchpad\\\\check_bib.py\")",
+      "Bash(biber --tool --validate-datamodel --output-file __TRACKED_VAR__/bibertool.bib --logfile __TRACKED_VAR__/bibertool literature/literature.bib)",
+      "Bash(grep -E 'ehrhart_analysis_2025|europaische_kommission_verordnung_2015' __TRACKED_VAR__/bibertool.blg)",
+      "Bash(grep -cE '^@\\(article|misc\\)\\\\{\\(ehrhart_analysis_2025|europaische_kommission_verordnung_2015\\),' __TRACKED_VAR__/bibertool.bib)",
+      "Bash(grep -cE ^@ __TRACKED_VAR__/bibertool.bib)"
     ],
     "additionalDirectories": [
       "\\tmp"
