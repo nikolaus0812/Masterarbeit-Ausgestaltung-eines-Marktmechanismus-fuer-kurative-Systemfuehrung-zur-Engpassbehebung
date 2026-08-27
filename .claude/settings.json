@@ -55,7 +55,12 @@
       "Bash(biber --tool --validate-datamodel --output-file __TRACKED_VAR__/bibertool.bib --logfile __TRACKED_VAR__/bibertool literature/literature.bib)",
       "Bash(grep -E 'ehrhart_analysis_2025|europaische_kommission_verordnung_2015' __TRACKED_VAR__/bibertool.blg)",
       "Bash(grep -cE '^@\\(article|misc\\)\\\\{\\(ehrhart_analysis_2025|europaische_kommission_verordnung_2015\\),' __TRACKED_VAR__/bibertool.bib)",
-      "Bash(grep -cE ^@ __TRACKED_VAR__/bibertool.bib)"
+      "Bash(grep -cE ^@ __TRACKED_VAR__/bibertool.bib)",
+      "Bash(PYTHONIOENCODING=utf-8 python \"C:\\\\Users\\\\nikol\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--GIT-HUB-Masterarbeit-Ausgestaltung-eines-Marktmechanismus-fuer-kurative-Systemfuehrung-zur-Engpassbehebung\\\\8583d59d-d4e3-4cef-8f95-f5112bb4ec72\\\\scratchpad\\\\add_bib2.py\")",
+      "Bash(PYTHONIOENCODING=utf-8 python __TRACKED_VAR__/check_bib.py)",
+      "Bash(biber --tool --validate-datamodel --output-file __TRACKED_VAR__/bt2.bib --logfile __TRACKED_VAR__/bt2 literature/literature.bib)",
+      "Bash(grep celi_cortes_m5use_2024 __TRACKED_VAR__/bt2.blg)",
+      "Bash(grep -A13 celi_cortes_m5use_2024 __TRACKED_VAR__/bt2.bib)"
     ],
     "additionalDirectories": [
       "\\tmp"
