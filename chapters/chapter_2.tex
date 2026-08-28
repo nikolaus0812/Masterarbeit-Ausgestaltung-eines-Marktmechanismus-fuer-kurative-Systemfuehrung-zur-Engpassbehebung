@@ -2401,391 +2401,148 @@ Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung ni
     \end{tabular}
 \end{table}
 
-% ---------------------------------------------------------------
-% NEU ZUSAMMENGEFUEHRT am 20.08.2026. Dieser Unterabschnitt vereinigt vier
-% frueher getrennte Bloecke, naemlich die Staffelung der
-% Handelsgelegenheiten aus dem frueheren Abschnitt 2.3.1, die Erloesquellen
-% und die Mehrfachvermarktung aus dem frueheren Abschnitt 2.3.5, den
-% Zielkonflikt aus dem frueheren Abschnitt 2.3.5 und die Marktentwicklung
-% aus dem frueheren Abschnitt 2.3.5.
-% GRUND: Alle vier beantworten dieselbe Frage, naemlich gegen welche
-% Vermarktung eine kurative Vorhaltung antritt. Getrennt standen sie vor
-% ihren eigenen Voraussetzungen, denn der Zielkonflikt baut auf dem
-% Arbeitsbereich des Ladezustands aus der Praequalifikation auf, die erst
-% in Abschnitt 2.3.3 eingefuehrt wird.
-% DREI MARKEN liegen jetzt auf diesem Unterabschnitt, damit die Verweise
-% aus dem Anforderungskatalog und aus Kapitel 6 gueltig bleiben.
+% ---------------------------------------------------------------------
+% ABSCHNITT 2.3.5, gekuerzt am 27.08.2026 von 3,3 auf rund 1,2 Seiten.
+% ENTFERNTE DOPPLUNGEN:
+%   - Die Bindung des Ladezustandsbereichs stand dreimal, naemlich hier
+%     zweimal und in Abschnitt 2.3.4 mit den Fuenfzehn- und
+%     Sechzig-Minuten-Anforderungen. Sie steht jetzt einmal.
+%   - Die Aussage zu praeventiven und kurativen Betriebsstrategien stand am
+%     Anfang des einen und am Ende des folgenden Absatzes.
+%   - Der zweite Anspruch auf dieselbe Ressource stand zweimal.
+%   - Die dritte der drei Wirkungsebenen stand bereits im zweiten Absatz.
+% ---------------------------------------------------------------------
 \subsection{Wettbewerb um Leistung und Ladezustand}
 \label{sec:revenue_stacking}
 \label{sec:soc_conflict}
 \label{sec:market_development}
 
-% NEU GEFASST am 27.08.2026 nach einer Belegpruefung. Drei Aussagen der
-% Vorfassung waren nicht getragen.
-%   - garttan_battery_2025 stuetzt die technische Faehigkeit zur parallelen
-%     Marktteilnahme NICHT. Die Quelle behandelt ein australisches
-%     Einzelbeispiel im FCAS-Markt.
-%   - porst_betriebskonzepte_2025 stuetzt die Aussage zur optimalen
-%     Betriebsfuehrung NICHT. Multi-Use meint dort einen systemdynamischen
-%     und keinen Erloesmehrwert.
-%   - Die Aussage, das Optimum sei praktisch nicht erreichbar, ist WIDERLEGT.
-%     Beide sind durch celi_cortes_m5use_2024 ersetzt, eine Arbeit des ISEA
-%     der RWTH am realen Speicher M5BAT in Aachen, die den kombinierten
-%     Betrieb aus FCR, aFRR und Arbitrage gegen den reinen FCR-Betrieb
-%     stellt.
-% WICHTIG FUER KAPITEL 4: Der Abstand zwischen prognosegestuetzter und
-% vollstaendig informierter Optimierung betraegt im kontinuierlichen
-% Intraday-Handel rund elf Prozent. Damit ist die Optimierung unter
-% vollstaendiger Preiskenntnis als Naeherung gerechtfertigt. Diese Stelle
-% ist der Beleg dafuer und darf nicht entfallen.
-% NICHT schreiben, die Mehrfachvermarktung ermoegliche eine optimale
-% Betriebsfuehrung. Sie erweitert die zulaessige Menge, ueber der optimiert
-% wird, und stellt keine Optimalitaet her.
 Ein Batteriespeicher erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen.
 Die beiden wesentlichen Quellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt.
-Für einen Großbatteriespeicher am deutschen Markt ist nachgewiesen, dass der kombinierte Betrieb aus \ac{FCR}, \ac{aFRR} und Arbitrage die Erlöse gegenüber der alleinigen Vorhaltung von \ac{FCR} erheblich steigert, weshalb die gleichzeitige Nutzung mehrerer Vermarktungswege als Voraussetzung eines wirtschaftlich robusten Betriebs gilt \cite{celi_cortes_m5use_2024}.
-Sie wird im Folgenden als Mehrfachvermarktung bezeichnet und im Schrifttum als Multi-Use geführt.
+Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs.
+% ZAHLEN ERGAENZT am 27.08.2026.
+% PRUEFEN: Das Bezugsjahr ist zu verifizieren. Die Arbeit ist im Oktober
+% 2024 erschienen, weshalb die Angabe eher auf 2023 oder auf den Stand
+% bei Einreichung zu beziehen sein duerfte. Die beiden Werte selbst
+% stammen aus der Einleitung der Quelle.
+Wie sehr sich die Anbieter inzwischen breiter aufstellen, zeigt die \ac{FCR}, für die bereits 810\,\si{MW} Batteriespeicherleistung präqualifiziert waren, während der gesamte deutsche Bedarf bei 564\,\si{MW} lag \cite{celi_cortes_m5use_2024}.
 
-% GRENZE DER MEHRFACHVERMARKTUNG. Sie bereitet den folgenden Absatz zum
-% Zielkonflikt vor, weil sie zeigt, dass der vorgehaltene Anteil nicht frei
-% waehlbar ist, sondern aus dem Arbeitsvermoegen folgt.
-Der Umfang der parallel vermarktbaren Leistung ist dabei begrenzt, denn die Präqualifikationsbedingungen bemessen die vermarktbare Leistung einer Anlage mit begrenztem Energiespeicher nach dem Arbeitsvermögen und den vorgesehenen Speichermanagementmaßnahmen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Innerhalb der Spotvermarktung gewinnt der kontinuierliche Intraday-Handel an Bedeutung, da er die Nachjustierung der Fahrpläne an aktualisierte Preis- und Prognoseinformationen erlaubt.
-Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede Entscheidung unter Unsicherheit über die folgenden, doch der daraus entstehende Abstand zu einer unter vollständiger Preiskenntnis optimierten Betriebsführung bleibt begrenzt.
-Für den deutschen kontinuierlichen Intraday-Handel erreicht eine prognosegestützte Handelsstrategie rund neunzig Prozent des Erlöses, der sich unter vollständiger Preiskenntnis ergäbe \cite{hornek_value_2025}.
+% GRENZEN DER MEHRFACHVERMARKTUNG.
+% VORSICHT BEI DER NACHWEISART. M5BAT erbringt derzeit ausschliesslich FCR.
+% Der Multi-Use-Betrieb ist GERECHNET und nicht gefahren, wenn auch mit
+% Messdaten parametriert. Deshalb steht hier "eine mit Messdaten
+% parametrierte Optimierungsrechnung" und NICHT "nachgewiesen".
+% KEINE ZAHL zum Erloeszuwachs. Der oft genannte Wert von 196 Prozent ist
+% zu 75 Prozent ein aFRR-Effekt und an eine Preisanomalie im Juli 2023
+% gekoppelt. Die robustere Angabe waeren 45 Prozent fuer FCR und
+% Intraday-Handel.
+% FUER KAPITEL 4 UND 5 TRAGEND: Der Abstand zwischen prognosegestuetzter
+% und vollstaendig informierter Optimierung betraegt rund elf Prozent.
+% Damit ist die Optimierung unter vollstaendiger Preiskenntnis als
+% Naeherung gerechtfertigt. Dieselbe Quelle zu M5Use raeumt zudem ein, dass
+% vollstaendige Voraussicht die Synergien zwischen Anwendungen
+% ueberzeichnet. Beides gehoert in die kritische Wuerdigung.
+% GETRENNT am 27.08.2026. Der erste Satz nennt einen physikalischen
+% Sachverhalt und braucht keine Quelle. Der zweite nennt eine Regel der
+% Praequalifikationsbedingungen und braucht sie.
+% NICHT schreiben, die Praequalifikationsbedingungen fuehrten den Speicher
+% als Anlage mit begrenztem Energiespeicher. Er IST eine solche.
+Für einen Speicher ist der Umfang der parallel vermarktbaren Leistung dabei begrenzt, denn sein Energieinhalt ist endlich.
+Die Präqualifikationsbedingungen tragen dem Rechnung und bemessen die vermarktbare Leistung nach dem Arbeitsvermögen und den vorgesehenen Speichermanagementmaßnahmen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+% ZWEI SAETZE ENTFERNT am 27.08.2026.
+% Der erste behauptete die zeitvariable Aufteilbarkeit der Leistung und
+% die Erloessteigerung. Das ist eine FAEHIGKEIT und stand damit in einem
+% Absatz, der von GRENZEN handelt, zudem doppelte er den ersten Absatz.
+% Der zweite ist inhaltlich wertvoll und in den folgenden Absatz
+% verschoben, wo er die Aussage zu den knappen Ressourcen belegt.
+Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede Entscheidung unter Unsicherheit über die folgenden.
+Der daraus entstehende Abstand zu einer unter vollständiger Preiskenntnis optimierten Betriebsführung ist jedoch begrenzt, denn für den deutschen kontinuierlichen Intraday-Handel erreicht eine prognosegestützte Handelsstrategie rund neunzig Prozent des Erlöses, der sich unter vollständiger Preiskenntnis ergäbe \cite{hornek_value_2025}.
 
-Für die weitere Argumentation ist an dieser Stelle vor allem eine Eigenschaft des Erlösbündels festzuhalten.
-Die parallelen Vermarktungswege greifen nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage.
-Eine zusätzliche Verpflichtung tritt damit nicht neben das bestehende Bündel, sondern konkurriert mit ihm.
-Worin diese Konkurrenz besteht, zeigt der Blick auf den Ladezustand.
+% DER LADEZUSTAND ALS KNAPPE RESSOURCE.
+% TRAGENDE STELLE. Der Praezedenzfall mit dem Fuenfzehn-Minuten-Kriterium
+% ist der einzige Beleg dafuer, dass die Bindungsdauer als
+% Gestaltungsparameter behandelt wird und nicht als technische Konstante.
+% NICHT streichen und nicht auf die Leistung verkuerzen, denn tragend ist
+% die DAUER.
+Die parallelen Vermarktungswege greifen dabei nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage.
+% HERKUNFT DES BELEGS im Satz genannt. Die Aussage stammt aus einer
+% Optimierungsrechnung fuer den Speicher M5BAT in Aachen, die mit Messdaten
+% parametriert ist. Der Multi-Use-Betrieb ist dort gerechnet und nicht
+% gefahren. NICHT als Beobachtung ausgeben.
+Wie eng sie zusammenhängen, zeigt eine Optimierungsrechnung für einen Speicher am deutschen Markt, in der der Handel im \ac{IDC} teilweise dazu dient, den Ladezustand in dem für die Regelleistung erforderlichen Bereich zu halten \cite{celi_cortes_m5use_2024}.
+% ZUSAMMENGEZOGEN am 27.08.2026. Der kurative Anspruch stand zuvor in einem
+% eigenen Absatz, dessen erste beide Saetze das Vorstehende wiederholten,
+% naemlich die Konkurrenz um dieselben Ressourcen und die Bindung des
+% Ladezustandsbereichs, die zudem bereits in Abschnitt 2.3.4 steht.
+% Uebrig bleiben die beiden Saetze, die etwas Neues sagen.
+Leistung und Speicherkapazität sind damit die knappen Ressourcen, um die alle Vermarktungswege konkurrieren, und eine kurative Vorhaltung erhebt darauf einen weiteren Anspruch.
+Der marktoptimale Fahrplan führt den Ladezustand dabei systematisch an die Ränder des zulässigen Bereichs, weil Arbitrage gerade darin besteht, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu leeren.
+Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}.
+% TRAGENDE STELLE. Der Praezedenzfall mit dem Fuenfzehn-Minuten-Kriterium
+% ist der einzige Beleg dafuer, dass die Bindungsdauer als
+% Gestaltungsparameter behandelt wird und nicht als technische Konstante.
+% NICHT streichen und nicht auf die Leistung verkuerzen, denn tragend ist
+% die DAUER.
+% AUF EINEN SATZ GEKUERZT am 27.08.2026. Die Folgerung, dass auch die
+% Dauer die Erloeswirkung bestimmt, steht jetzt im selben Satz.
+% BEISPIELHAFT fuer die FCR. Das Kriterium gibt vor, wie lange eine Anlage
+% die zugesagte Leistung ohne Nachladen durchgehend erbringen koennen muss.
+% Die UENB wollten dafuer 30 Minuten, die Bundesnetzagentur hat den Antrag
+% mit Beschluss BK6-17-234 vom 02.05.2019 abgelehnt, seither gelten die 15
+% Minuten aus Art. 156 Abs. 9 SO GL.
+% NICHT verallgemeinern. Fuer die aFRR gelten 60 Minuten bezogen auf die
+% vermarktete Leistung, siehe Abschnitt 2.3.4.
+Wie stark die Dauer der Bindung dabei auf die Erlöswirkung durchschlägt, zeigt beispielhaft die \ac{FCR}, bei der das vorgeschriebene Arbeitsvermögen von einer Vorhaltung über 30 Minuten auf eine über 15 Minuten gesenkt wurde und sich der für die übrige Vermarktung nutzbare Bereich dadurch unmittelbar vergrößert hat \cite{bundesnetzagentur_beschluss_2019}.
 
-% --- frueher Unterabschnitt "Zielkonflikt zwischen Vermarktung und
-%     kurativer Verfuegbarkeit" ---
-%
-% STAERKSTER ABSCHNITT DES KAPITELS, aber STRIKT QUALITATIV halten. Er
-% beschreibt genau das, was Kapitel 4 quantifiziert. Zahlen erst dort.
-%
-% Kernargument: Die FCR-Praequalifikation definiert bereits ein
-% reserviertes Ladezustandsband. Kurative Vorhaltung ist ein ZWEITER
-% Anspruch auf dasselbe Band.
-%
-% OFFEN 17: Die Bezeichnung "Schnabelkurve" ist Branchenjargon und im
-% Text bewusst nicht verwendet. Falls sie aufgenommen werden soll, ist
-% die regulatorische Bezeichnung voranzustellen.
+% MARKTENTWICKLUNG, von acht auf drei Saetze gekuerzt. Die einzige
+% Folgerung lautet, dass der Opportunitaetswert nicht stationaer ist.
+% Die Bewertung dieses Zusammenhangs steht in Kapitel 5.
+% NEU GEFASST am 27.08.2026. Die Aussage lautet nicht mehr nur, dass der
+% Wert schwankt, sondern dass sich die AUFTEILUNG auf die Maerkte
+% verschiebt, weil der Betreiber im Selbstdispatch-Modell erloesorientiert
+% entscheidet.
+% TRAGEND fuer Kapitel 5: Weder die vorgehaltene Menge noch die Haeufigkeit
+% von Leistungsanpassungen sind feste Groessen. Ein kurativer Mechanismus
+% trifft damit auf einen beweglichen Bezugspunkt.
+Wie sich die Leistung und der Energieinhalt auf die einzelnen Märkte verteilen, ist dabei keine feste Größe.
+Der Betreiber entscheidet im Selbstdispatch-Modell allein erlösorientiert und verschiebt die Anteile, sobald sich die relativen Preise zwischen Arbitrage und Regelleistung ändern.
+% AUFNAHMEFAEHIGKEIT DER MAERKTE. Der Bedarf an Regelleistung folgt der
+% Systemgroesse und waechst nicht mit der Speicherflotte, weshalb
+% zusaetzliche Leistung ueberwiegend in die Arbitrage geht und dort die
+% Spreads verringert.
+Die Regelleistungsmärkte sind dabei mengenmäßig eng begrenzt, denn ihr Bedarf folgt der Systemgröße und wächst nicht mit der Speicherflotte, sodass ein Zubau im Gigawattmaßstab die zusätzliche Leistung überwiegend in die Arbitrage drängt.
+Dort verringert sie genau die Preisspreads, aus denen die Erlöse stammen, weil Speicher Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}.
+Weder die vorgehaltene Menge noch die Häufigkeit von Leistungsanpassungen sind damit stabile Größen, sodass ein kurativer Mechanismus auf einen beweglichen Bezugspunkt trifft.
 
-% VERLAGERT aus der Einleitung von 2.2. Der Befund und die offene Frage
-% leiten hier unmittelbar in das Kernargument ueber. Falls sich beim
-% Durchgang zeigt, dass die drei Saetze das Kernargument ueberlagern, ist
-% daraus ein eigener Unterabschnitt zur Einbettung in die Einsatzplanung zu
-% machen.
-Arbeiten zu präventiven und kurativen Betriebsstrategien haben gezeigt, dass sich ein netzdienlicher Beitrag nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellen lässt \cite{lindner_operation_2023, porst_betriebskonzepte_2025}, und Untersuchungen zu den Erlöspotenzialen unter verändertem Marktdesign haben die wirtschaftliche Empfindlichkeit dieser Anpassung herausgearbeitet \cite{mahgoub_wie_2025}.
-Was diese Arbeiten offenlassen, ist die Frage, unter welchen Bedingungen ein Anlagenbetreiber die geforderte Anpassung freiwillig vornimmt.
-Ihre Ursache liegt in der Ressource, auf die jede solche Anpassung zugreift.
-Der Ladezustand eines Batteriespeichers ist die knappe Ressource, um die alle seine Vermarktungswege konkurrieren.
-Diese Konkurrenz ist regulatorisch bereits anerkannt und ausgestaltet, und zwar in den Präqualifikationsbedingungen für die Vorhaltung von \ac{FCR}.
-Sie schreiben vor, dass eine Anlage jederzeit in der Lage sein muss, die angebotene Leistung über einen definierten Zeitraum vollständig zu erbringen, und definieren daraus einen zulässigen Arbeitsbereich des Ladezustands, innerhalb dessen sich die Anlage bewegen darf.
-Ergänzt wird dieser durch Regelungen zum bilanzgruppenübergreifenden Nachlademanagement, die die Rückführung in den Arbeitsbereich ermöglichen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Wirtschaftlich bedeutet diese Vorgabe, dass ein Teil des nutzbaren Energieinhalts der Anlage für die Arbitrage nicht zur Verfügung steht.
-Dass die Breite dieses reservierten Bandes eine regulatorische Entscheidung mit unmittelbarer Erlöswirkung ist, zeigt die Ablösung des vormals geltenden 30-Minuten-Kriteriums durch das heutige 15-Minuten-Kriterium.
-Die Verkürzung des vorzuhaltenden Zeitraums hat den für die Vermarktung nutzbaren Bereich unmittelbar vergrößert \cite{bundesnetzagentur_beschluss_2019}.
-Für die vorliegende Arbeit ist dieser Vorgang in zweifacher Hinsicht instruktiv.
-Er belegt, dass die Bemessung einer Vorhaltepflicht als regulatorischer Gestaltungsparameter behandelt wird und nicht als technische Konstante.
-Und er liefert einen Präzedenzfall dafür, dass die Dauer der Bindung und nicht nur die vorgehaltene Leistung die Erlöswirkung bestimmt.
-Dieses Argument geht in Abschnitt \ref{sec:requirements_catalogue} in die Produktanforderungen und in Kapitel~\ref{ch:discussion} in die Diskussion der Vergütungsdauer ein.
-
-Eine kurative Vorhalteverpflichtung tritt vor diesem Hintergrund nicht in eine leere Fläche, sondern erhebt einen zweiten und konkurrierenden Anspruch auf dieselbe Ressource.
-Sie verlangt, dass die Anlage zu jedem Zeitpunkt der Bindung eine bestimmte Leistungsänderung in einer bestimmten Richtung erbringen kann, und damit, dass ihr Ladezustand eine entsprechende Reserve in genau dieser Richtung aufweist.
-Der marktoptimale Fahrplan hingegen führt den Ladezustand systematisch an die Ränder des zulässigen Bereichs, weil Arbitrage gerade darin besteht, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu entleeren.
-Beide Ansprüche richten sich damit auf dieselbe Ressource und stehen in Konkurrenz zueinander.
-Die Vorhaltung ist folglich dort am teuersten, wo die Vermarktung den größten Wert erzielt, weil dort die aufzugebende Erlösmöglichkeit am größten ist.
-% OFFEN 28: Die frueher hier stehende Aussage, die Intervalle hoher
-% Vermarktungswerte seien zugleich die Intervalle hoher Netzbelastung,
-% ist entfernt. Sie war unbelegt und nahm ein Ergebnis vorweg, das erst
-% Kapitel 4 liefern kann. Ob Preisspreizung und Engpassauftreten
-% zusammenfallen, ist eine Frage an die eigenen Rechnungen und im
-% Ergebnisteil zu beantworten. Faellt der Befund gegenlaeufig aus, ist
-% das ein eigenes Ergebnis und kein Widerspruch zu diesem Kapitel.
-Der Konflikt hat dabei drei Wirkungsebenen.
-Er reduziert erstens den für die Arbitrage nutzbaren Energieinhalt.
-Er verändert zweitens den zeitlichen Verlauf des optimalen Fahrplans, weil zeitgekoppelte Ladezustandsrestriktionen in die Gebotsbildung eingehen und Entscheidungen über den gesamten Betrachtungshorizont verketten \cite{schmitt_linear_2020}.
-Und er schränkt drittens die parallele Vermarktung in weiteren Anwendungen ein, da die vorgehaltene Reserve für keine von ihnen mehr disponibel ist \cite{garrett_fitzgerald_economics_2025, garttan_battery_2025}.
-Arbeiten zu kombinierten präventiv-kurativen Betriebsstrategien bestätigen, dass eine kurative Einbindung nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerte Zusatzfunktion darstellbar ist \cite{lindner_operation_2023}.
-% VERWEIS ENTFERNT: Nach dem Tausch von 2.2 und 2.3 folgt das Zwischenfazit
-% erst spaeter. Der Begriff ist ohnehin in Abschnitt 1.2 eingefuehrt.
-Damit ist die Ursache benannt, aus der der kurative Reservierungspreis entsteht.
-Er ist die Erlöswirkung dieser Umplanung und fällt umso höher aus, je weiter die Vorhaltung den Fahrplan von seinem unbeschränkten Optimum entfernt.
-Ob die Intervalle hoher Vermarktungswerte mit den Intervallen hoher Netzbelastung zusammenfallen, ist damit noch nicht entschieden und wird in Kapitel~\ref{ch:results} anhand der Rechnungen geprüft.
-
-% --- frueher Unterabschnitt "Marktentwicklung bis 2030" ---
-%
-% OFFEN 18: Fuer die installierte Kapazitaet im 2030-Szenario fehlt eine
-% konkrete Zahl, sonst bleibt das Szenario unbestimmt. Belegbar aus
-% \cite{rystad_energy_renewables__power_analytics_energy_2026} oder
-% \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-
-Der in dieser Arbeit betrachtete Zeithorizont ist kein stationärer Zustand.
-Die installierte Batteriespeicherkapazität wächst getrieben von sinkenden Systemkosten deutlich, und der Ausbau verändert die Zusammensetzung des für das Engpassmanagement verfügbaren Technologieportfolios \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026, bundesnetzagentur_netzentwicklungsplan_2026}.
-Dieser Ausbau wirkt auf die eigene Wirtschaftlichkeitsgrundlage zurück.
-Speicher verdienen an Preisspreads, und indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken, verringern sie genau die Spreads, aus denen sie ihre Erlöse ziehen \cite{mahgoub_wie_2025}.
-Für die Ausgestaltung eines kurativen Mechanismus hat diese Rückwirkung eine unmittelbare Konsequenz.
-Der Opportunitätswert einer Vorhaltung ist keine über den Betrachtungshorizont stabile Größe, sondern verändert sich mit dem Ausbaustand.
-Hinzu kommt, dass die Systemdienlichkeit des Speicherbetriebs heute nur unvollständig in den Preissignalen abgebildet ist, sodass Standort- und Betriebsentscheidungen von den netzseitigen Effekten teilweise entkoppelt getroffen werden \cite{anselm_eicke_systemdienlichkeit_2026}.
-% VERLAGERT NACH KAPITEL 5: Die frueher hier stehende Bewertung, eine
-% Verguetung der Vorhaltung als solcher sei gegenueber dieser Entwicklung
-% robuster als eine an der entgangenen Arbitrage bemessene, und die
-% Aussage, ein lokationaler Vorhaltemechanismus schliesse zugleich eine
-% Anreizluecke, sind vergleichende Bewertungen von
-% Gestaltungsalternativen. Der Wortlaut steht im Anschlussblock am
-% Dateiende.
-% OFFEN 24: Die Marke sec:regulatory_discussion ist die einzige
-% Abschnittsmarke, auf die dieses Kapitel vorwaerts verweist, ohne dass
-% ihr Ziel vorliegt. In chapter_5.tex pruefen, ob sie dort gesetzt ist,
-% und andernfalls setzen oder den Verweis auf Kapitel 5 als Ganzes
-% umstellen.
-Die Bewertung dieses Zusammenhangs erfolgt in Abschnitt \ref{sec:regulatory_discussion}.
-
-% ---------------------------------------------------------------
+% ---------------------------------------------------------------------
+% ABSCHNITT 2.3.6, gekuerzt am 27.08.2026 von 1,5 auf rund 0,8 Seiten.
+% Der Absatz zum Verfuegungsproblem wiederholte ueber acht Saetze Material
+% aus Abschnitt 2.2.1 und aus dem Abschnitt zu den flexiblen
+% Netzanschluessen. Er steht jetzt in zwei Saetzen mit Verweis.
+% NICHT VERWISCHEN: Der UENB kennt die Einsatzplanung, verfuegt aber nicht
+% ueber sie. Das ist ein Verfuegungs- und kein Informationsproblem.
+% ---------------------------------------------------------------------
 \subsection{Zwischenfazit}
 \label{sec:interim_conclusion}
-%
-% ANGELPUNKT. Dieser Abschnitt traegt die Ueberkreuzstellung und die
-% praezise Fassung der Forschungsluecke. Er sollte ohne neue Quellen
-% auskommen, weil alles bereits oben steht.
 
 Die Betrachtung der bestehenden marktlichen Grundlagen führt zu vier Befunden.
-Erstens liegt die Fahrplanhoheit im Selbstdispatch-Modell beim Anlagenbetreiber, sodass kurative Verfügbarkeit nur über einen Preis und nicht über eine Anweisung herstellbar ist.
-Die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung dieser Zusage zu einem eigenständigen Produktmerkmal.
+Erstens liegt die Fahrplanhoheit im Selbstdispatch-Modell beim Anlagenbetreiber, sodass kurative Verfügbarkeit nur über einen Preis und nicht über eine Anweisung herstellbar ist, wobei die Staffelung der kurzfristigen Märkte die zeitliche Bindung zu einem eigenständigen Produktmerkmal macht.
 Zweitens ist die Vergütung vorgehaltener Leistung in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne jeden Bezug zum Netzknoten.
-Drittens ist das Engpassmanagement knotenscharf, bemisst aber ausschließlich den durchgeführten Eingriff, und die für Flexibilität etablierte optionsbasierte Bewertungslogik ist auf Batteriespeicher nicht anwendbar und für diese Technologie ausdrücklich offengelassen.
-Viertens folgt daraus eine Überkreuzstellung.
-Der Kategorie nach gehört die kurative Vorhaltung zum Engpassmanagement, der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
+Drittens ist das Engpassmanagement knotenscharf, bemisst aber ausschließlich den durchgeführten Eingriff.
+Viertens folgt daraus eine Überkreuzstellung, denn der Kategorie nach gehört die kurative Vorhaltung zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
 
-Aus dieser Überkreuzstellung entsteht eine Asymmetrie zwischen dem, was die kurative Systemführung technisch verlangt, und dem, was der regulatorische Rahmen ökonomisch abbildet.
-Verlangt wird eine über mehrere Handelsgelegenheiten hinweg bindende und mit hoher Wahrscheinlichkeit nicht abgerufene Bereitstellung.
-Vergütet wird nach der Systematik des Engpassmanagements ausschließlich der seltene Abruf.
-Ein Anlagenbetreiber, der sein Stellpotenzial vorhält, trägt die Opportunitätskosten der entgangenen Vermarktung in jedem Intervall der Bindung, erhält jedoch nur in jenen Intervallen einen Ausgleich, in denen tatsächlich abgerufen wird.
-Unter dieser Anreizstruktur ist die Vorhaltung für den Betreiber nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar.
+Daraus entsteht eine Asymmetrie zwischen dem, was die kurative Systemführung technisch verlangt, und dem, was der Rahmen ökonomisch abbildet.
+Verlangt wird eine über mehrere Handelsgelegenheiten hinweg bindende und mit hoher Wahrscheinlichkeit nicht abgerufene Bereitstellung, vergütet wird allein der seltene Abruf.
+Ein Anlagenbetreiber trägt damit die Opportunitätskosten in jedem Intervall der Bindung und erhält nur in den wenigen Intervallen eines Eingriffs eine Zahlung, sodass die Vorhaltung für ihn nicht rational und die kurative Maßnahme im Bedarfsfall nicht verfügbar ist.
 
-% VERLAGERT AUS ABSCHNITT 2.3.1 am 24.08.2026. Der Absatz schliesst den
-% Gestaltungsraum und steht deshalb zwischen der Asymmetrie und der
-% Bewertungsaufgabe. Er fuehrt bewusst KEINE neue Quelle, damit das
-% Zwischenfazit ohne neue Belege auskommt.
-% KENNTNIS UND VERFUEGUNG NICHT VERWECHSELN. Im Regime des Redispatch 2.0
-% werden die Einsatzplanungsdaten, in der Marktkommunikation als KWEP
-% gefuehrt, fuer alle einbezogenen Anlagen uebermittelt. Der UENB KENNT den
-% geplanten Einsatz. Er kann ihn nur nicht bestimmen, und ein Teil der
-% Daten trifft zu spaet fuer die Vorschaurechnungen ein. NICHT wieder als
-% fehlende Kenntnis formulieren, denn ein Informationsproblem loeste sich
-% durch mehr Datenlieferung und die Arbeit haette keinen Gegenstand.
-% PRUEFEN: Fuer die Pflicht zur Uebermittlung der Einsatzplanungsdaten
-% fehlt eine Fundstelle. In Betracht kommen der Branchenleitfaden
-% \cite{bdew_branchenleitfaden_2018} und die Festlegungen der
-% Bundesnetzagentur zu den Datenformaten des Redispatch 2.0. Bis dahin
-% gilt der Satz als unbelegt. Faellt die Entscheidung fuer eine Fundstelle,
-% ist die Regel, dass das Zwischenfazit ohne neue Quellen auskommt,
-% ausdruecklich aufzugeben.
-% BEGRIFF: Im Text steht "Einsatzplanungsdaten" und nicht KWEP, weil das
-% Kuerzel Marktkommunikationsjargon ist.
-% ZUR ABGRENZUNG DES FLEXIBLEN NETZANSCHLUSSES: TRAGEND ist die RICHTUNG,
-% denn er erlaubt allein die Begrenzung und keine Erhoehung. Das ist ein
-% harter Ausschlussgrund. Die fehlende Bestimmbarkeit der Menge ist das
-% zweite und schwaechere Argument und steht deshalb dahinter.
-% ABGRENZUNG ZU ABSCHNITT 2.1.4: Dort steht die ZULAESSIGKEIT, hier die
-% ZUGRIFFSFORM. Den Rechtsinhalt nicht wiederholen.
-% NICHT SCHREIBEN, die Duldung sei entschaedigungsfrei. Ob § 17 Abs. 2b
-% EnWG einen Ausgleich vorsieht, ist nicht verifiziert. Der Gedanke, dass
-% die Kosten in die Anschlussentscheidung wandern statt zu verschwinden,
-% gehoert nach Kapitel 5 und erst nach Klaerung dieser Frage.
-% OFFEN: Ob der UENB bei einem Anschluss im Verteilernetz ueberhaupt
-% Vertragspartei eines flexiblen Netzanschlusses sein kann. Waere ein
-% weiterer Ausschlussgrund und ist hier bewusst nicht behauptet.
 Ein Zugriff, der ohne diesen Anreiz auskommt, steht dem \ac{ÜNB} gegenüber einem Marktteilnehmer nicht zur Verfügung.
-An Kenntnis des geplanten Einsatzes fehlt es ihm dabei nicht, denn im Regime des Redispatch~2.0 übermitteln die Anlagenbetreiber ihre Einsatzplanung als Planungsdaten.
-Diese Kenntnis begründet jedoch keine Verfügung über den Betriebspunkt, und ein Teil der Daten trifft so kurzfristig ein, dass er nicht mehr in die Vorschaurechnungen eingeht.
-Eine Ausnahme bilden die flexiblen Netzanschlüsse nach Abschnitt \ref{sec:flexible_connection}, denn sie verschaffen dem Netzbetreiber ein Zugriffsrecht auf eine fremde Anlage, das keine Zusage im Einzelfall voraussetzt.
-Sie erlauben jedoch allein die Begrenzung der Einspeise- oder Entnahmeleistung und wirken deshalb nur, soweit die Entlastung durch eine Rücknahme zu erreichen ist und die betroffene Anlage auf der belastenden Seite des Engpasses liegt.
-Hinzu kommt, dass die Vereinbarung die Erlaubnis und nicht die Menge sichert, weil sie den Betriebspunkt und beim Speicher den Ladezustand unberührt lässt und damit kein zusagbares Stellpotenzial begründet.
-Unberührt bleibt daneben der Weg über eine Anlage im Verfügungsbereich des Netzbetreibers, der in Abschnitt \ref{sec:market_design_comparison} behandelt wird.
-Für einen Marktteilnehmer bleibt damit allein die Beschaffung zu einem Preis, der ihm den Verzicht auf die konkurrierende Vermarktung mindestens ausgleicht.
+An Kenntnis des geplanten Einsatzes fehlt es ihm dabei nicht, denn die Anlagenbetreiber übermitteln ihre Einsatzplanung als Planungsdaten, doch diese Kenntnis begründet keine Verfügung über den Betriebspunkt.
+Auch die flexiblen Netzanschlüsse nach Abschnitt~\ref{sec:flexible_connection} helfen nicht weiter, weil sie allein die Begrenzung der Leistung erlauben und den Ladezustand unberührt lassen, sodass sie kein zusagbares Stellpotenzial sichern.
 
 Die Bewertungsaufgabe dieser Arbeit lässt sich daraus präzise formulieren.
-Zu bestimmen ist der kurative Reservierungspreis, also der Betrag, den ein Batteriespeicher für eine kurative Vorhalteverpflichtung mindestens fordern muss, um gegenüber seinen übrigen Vermarktungswegen indifferent zu sein.
-Er entspricht dem Wert der aufgegebenen Vermarktungsoption unter Berücksichtigung der Pfadabhängigkeit des Ladezustands und der parallelen Erlösquellen.
-Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
+Zu bestimmen ist der kurative Reservierungspreis, also der Betrag, den ein Batteriespeicher für eine kurative Vorhalteverpflichtung mindestens fordern muss, um gegenüber seiner besten alternativen Vermarktung indifferent zu sein.
+Er entspricht dem Wert der aufgegebenen Vermarktungsoption unter Berücksichtigung der Pfadabhängigkeit des Ladezustands und der parallelen Erlösquellen, und seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
 
-% ===============================================================
-% OFFENE PUNKTE, gesammelt
-%   1  erledigt, die Datei heisst preventiv_vs_curative_redispatch und der
-%      Pfad im \includegraphics ist mitgezogen. Die vier Fundstellen des
-%      alten Namens in tools/drawio_restyle.py sind ebenfalls angepasst
-%   2  Drei Klassen gegen InnoSys 2030 verifizieren, Fundstelle ergaenzen.
-%      Die Klassen sind im Text als Systematisierung und nicht als
-%      normative Zeitfenster gekennzeichnet, was die Belegpflicht
-%      verkleinert, aber nicht aufhebt
-%   3  Fundstelle der Legaldefinition des Selbstdispatch
-%   4  Produktparameter der Regelleistungsprodukte verifizieren
-%   5  Spalte Erloesniveau aus eigener Auswertung fuellen
-%   6  Fundstellen und Schreibweise des Aktenzeichens der Festlegung
-%   7  Satz- und Nummernzaehlung in § 13a Abs. 2 EnWG
-%   8  Rechtsnatur von \cite{bundesnetzagentur_beschluss_2021}
-%   9  Fundstelle in Anlage 1 zum Bietverhalten
-%  10  erledigt, Gegenposition ueber hirth_kosten_2019 belegt
-%  11  erledigt, Anlage 5 liegt als bundesnetzagentur_berechnungsbeispiel_2024 vor
-%  12  teilweise erledigt, gegen Anlage 2 verifiziert, Grenzpreis fuer
-%      Batteriespeicher noch gegen Anlage 5 pruefen
-%  13  erledigt, anders geloest als urspruenglich vorgesehen. Statt der
-%      Rechenschritte des Beispiels traegt Tabelle 2.5 die acht
-%      Verguetungsvarianten der Festlegung allgemein und ohne Zahlen.
-%      Das Beispiel steht dafuer in Abbildung 2.5 und in Tabelle 2.4.
-%      Das Label heisst jetzt tab:weber_verguetungsvarianten, weil
-%      tab:weber_rechenbeispiel den Inhalt nicht mehr traf
-%  14  erledigt, aus Anlage 2 beantwortet und als sechster Grund in 2.3.3
-%      aufgenommen, betroffen ist die Bewertungslogik
-%  15  Mitteilung der Beschlusskammer zu Batteriespeichern
-%  16  erledigt, die Spalte nennt jetzt Bestand und Entwicklung nach dem
-%      Netzentwicklungsplan und ist damit belegt statt geschaetzt
-%  17  Bezeichnung des reservierten Ladezustandsbandes
-%  18  Installierte Batteriespeicherkapazitaet im 2030-Szenario
-%  19  Verbleib der Abschnitte 3.1.1 und 3.1.2
-%  20  Begruendung der Bewertungen in Tabelle 2.2
-%  21  Fundstelle fuer die technologieabhaengige Bemessung des
-%      finanziellen Ausgleichs
-%  22  Praxisbezeichnungen der Betriebsplanungsstufen verifizieren, dann
-%      Kuerzel in den Text und ins Abkuerzungsverzeichnis aufnehmen
-%  23  Unterscheidung zwischen kurativer Hoeherauslastung und kurativem
-%      Redispatch gegen InnoSys 2030 belegen
-%  24  erledigt, sec:regulatory_discussion ist in chapter_5.tex gesetzt
-%  25  erledigt, die Zeitschiene der Maerkte ist in 2.3.1 eingebunden und
-%      im Text beschrieben. Die Zeitpunkte sind noch gegen die
-%      Ausschreibungsbedingungen und die Marktregeln zu verifizieren,
-%      siehe Punkt 46
-%  26  Tabelle zur Zweiteilung der aFRR-Verguetung fuellen, Platzhalter in
-%      2.3.4, und entscheiden, ob Tabelle oder Abbildung
-%  27  erledigt, das Optionswertschema ist in 2.3.3 eingebunden und im Text
-%      beschrieben. Entschieden ist gegen ein Teilbild zur Restlaufzeit.
-%      Teilbild a zeigt stattdessen die Preisdauerlinie, aus der die
-%      beiden Grenzpreise hervorgehen, weil ihre Herleitung sonst
-%      unbelegt bliebe
-%  28  Zusammenfallen von Preisspreizung und Engpassauftreten in Kapitel 4
-%      beantworten, offene Frage am Ende von 2.3.5
-%  29  Absatz- und Nummernzaehlung der PATL- und TATL-Fundstelle in
-%      Art. 25 SO GL verifizieren, betrifft 2.1.1 und 2.1.2
-%  30  Nach dem ersten Kompilat pruefen, ob die Umschreibung der Langformen
-%      von PATL und TATL in 2.1.1 neben der Akronymauflösung redundant ist
-%  31  TB 601 ist gesetzt. Offen bleibt nur, ob die Wetterparameter als
-%      eigene Aussage aufgenommen werden, dann cigre_weather_2006
-%  32  Degradationsbestandteil im Grenzpreis gegen Anlage 5 pruefen, sonst
-%      als eigene Erweiterung nach Abschnitt 3.3.3
-%  33  erledigt, der Gegeneinwand steht in 2.3.3
-%  34  Notation der Waermebilanz gegen den Formelsatz von TB 601 abgleichen
-%  35  erledigt, das Schaubild zur Bestimmung der zulaessigen
-%      Ueberlastdauer ist eingebunden. Es steht neben Abbildung 2.1, weil
-%      diese die Betriebsmittelbelastung im Konzeptvergleich zeigt und die
-%      neue Abbildung die Temperatur und die Kennlinie aus Ueberlasthoehe
-%      und zulaessiger Dauer. Offen bleibt das Seitenverhaeltnis, siehe
-%      Punkt 45
-%  36  erledigt, dena_hoeherauslastung_2022 gesetzt. Seitenangaben fuer die
-%      beiden Fundstellen ergaenzen
-%  37  Pauschalen TATL-Faktor in sous_untersuchung_2022 verifizieren und im
-%      Satz nennen
-%  38  erledigt, die zweite Eigenschaft in 2.1.2 ist mit sous_comparison_2025
-%      belegt.
-%      Der Fraunhofer-Tagungsband wird dafuer nicht mehr gebraucht
-%  39  erledigt, iec_60076_7_2018 gesetzt. Abschnitts- oder Seitenangaben
-%      fuer die beiden Fundstellen ergaenzen
-%  40  entfallen, mit 39 zusammengefasst
-%  41  Beschriftung der Abbildung 2.3 gegen die geaenderte Caption pruefen,
-%      Schaubild zeigt den Fall eines marktlichen Akteurs
-%  42  Fundstelle fuer die Erkennung N-1-gefaehrdeter Situationen ueber PTDF-
-%      und LODF-Sensitivitaeten, Kandidat leeuwen_integration_2020
-%  43  InnoSys-Dokument fuer die Berechnung der Zeit bis zur Grenztemperatur
-%      identifizieren, Abschlussbericht oder Systemfuehrungsprozess
-%  44  Die beiden draw.io-Abbildungen tragen eine Breitenangabe im
-%      \includegraphics, weil ihre Naturbreite mit 595 bp bei Abbildung 2.1
-%      und 549 bp bei Abbildung 2.2 ueber der Textbreite von 455 bp liegt.
-%      In den beiliegenden .drawio-Quellen ist die Zeichenflaeche auf
-%      160 mm zu setzen, die Schriftgroesse dort auf 9 pt zu stellen und
-%      der Export ohne Skalierung vorzunehmen. Danach entfaellt die
-%      Breitenangabe an beiden Stellen. Bis dahin bleibt sie stehen
-%  45  Abbildung 2.3 hat ein Seitenverhaeltnis von 0,46. Vorgesehen waren
-%      etwa 0,7, damit beide Teilbilder lesbar bleiben. Entscheiden, ob
-%      die flachere Fassung bleibt oder im Repository
-%      bess_dispatch_optimization nachgesteuert wird
-%  46  Die Zeitpunkte in Abbildung 2.4 sind gegen die
-%      Ausschreibungsbedingungen der Regelleistung und gegen die
-%      Marktregeln der Boerse zu verifizieren, bevor die Arbeit abgegeben
-%      wird. Betroffen sind die drei Ausschreibungszeitpunkte am Vortag,
-%      die Zeitpunkte der drei Intraday-Auktionen und die vier
-%      Handelsschlusszeitpunkte im vergroesserten Ausschnitt
-%  48  Zur vierten Spalte der Tabelle 2.1 sind drei Punkte offen.
-%      ERSTENS ist die Fundstelle mit \cite[Tab.\,1]{...} gesetzt. Falls die
-%      Betreuung Seitenangaben erwartet, ist die Seitenzahl im 2. Entwurf
-%      zu ergaenzen.
-%      ZWEITENS nennt Abbildung 1.2 in Kapitel 1 das Zieljahr 2032, das
-%      diese Tabelle nicht fuehrt, denn sie weist nur 2037 und 2045 aus.
-%      Beide Stellen auf dieselben Zieljahre bringen oder die Abweichung in
-%      der Legende der Abbildung erklaeren.
-%  47  Die Fussnote in Abbildung 2.5 nennt 73,85, 103,15 und 177,00 Euro.
-%      Anlage 5 weist 73,83, 103,13 und 176,96 Euro aus. Die Abbildung
-%      rechnet exakt, die Anlage rundet die Optionswerte je MW auf fuenf
-%      Nachkommastellen und rechnet damit weiter. Text und Tabelle 2.4
-%      tragen die Werte der Anlage, weil die Quelle massgeblich ist. Die
-%      Abweichung betraegt 0,02 Prozent. ENTSCHIEDEN am 20.08.2026: Die
-%      Abbildung bleibt bei den exakten Werten, weil sie damit richtig
-%      rechnet und die Differenz eine Aussage ueber die Anlage ist. Der
-%      Rechenweg ist in der README des Repositories
-%      bess_dispatch_optimization Variable fuer Variable belegt und dort
-%      von beiden Seiten unabhaengig nachgerechnet. Offen bleibt allein,
-%      ob die Abweichung im Fliesstext benannt wird, weil sonst zwei
-%      Zahlen ohne Erklaerung nebeneinander stehen. Zugleich traegt die Ordinate von
-%      Teilbild b die Einheit Euro je MW und Stunde, waehrend der Text
-%      Euro je MWh schreibt. Beides ist dasselbe, die Schreibweise sollte
-%      aber einheitlich sein
-%
-% ANSCHLUESSE AN SPAETERE KAPITEL, aus der Bearbeitung von Kapitel 1
-% uebernommen:
-%   chapter_3.tex, Abschnitt 3.2, erledigt am 18.08.2026
-%     Poenale ist als Produktmerkmal aufgenommen, ebenso die Trennung
-%     von Vorhaltung und Abruf nach dem Muster der aFRR aus 2.3.4.
-%   chapter_3.tex, Abschnitt 3.3.1, erledigt am 18.08.2026
-%     Der Kommentarblock ist auf den Reservierungspreis umgestellt.
-%   chapter_3.tex, Abschnitte 3.3.3, 3.4.1 und 3.4.2, erledigt am 18.08.2026
-%     Die Dualvariablen sind aus der Methodik entfernt. Abschnitt 3.4.1
-%     traegt jetzt die Begruendung, weshalb der modifizierte
-%     Weber-Ansatz nicht in die Optimierung eingehen konnte, und der
-%     neue Abschnitt 3.4.2 die Verifikation gegen den Revenue Index der
-%     ISEA Battery Charts.
-%   chapter_4.tex, Abschnitt 4.3, erledigt am 18.08.2026
-%     Die Gegenueberstellung mit dem Weber-Ansatz ist entfallen, weil
-%     ohne eigene Nachrechnung keine Zahl vorliegt, gegen die gestellt
-%     werden koennte. Die Einordnung bleibt qualitativ in Abschnitt 5.1.
-%   chapter_4.tex, Abschnitt 4.4
-%     Poenalehoehe als Sensitivitaet aufnehmen.
-%   chapter_4.tex, Abschnitt 4.5, erledigt am 18.08.2026
-%     Ueberschrift und Label sind auf sec:reservation_price umgestellt.
-%   chapter_5.tex, aus Kapitel 2 verlagerte Wortlaute
-%     Aus Abschnitt 2.3.2, zur Anreizwirkung der Bemessungsgroesse:
-%       Eine Verguetung, die an die vorgehaltene Reaktionsfaehigkeit und
-%       nicht an das Eingriffsvolumen anknuepft, entzieht einem solchen
-%       Verhalten die Grundlage, weil die Zahlung dann nicht mehr mit der
-%       Menge des Eingriffs waechst. Die Diskussion verlagert sich in
-%       diesem Fall von der Mengenmanipulation zur Ueberpruefung der
-%       zugesagten Verfuegbarkeit.
-%     Aus Abschnitt 2.3.5, zur Robustheit der Bemessungsvarianten:
-%       Eine Verguetung der Vorhaltung als solcher ist demgegenueber
-%       robuster gegenueber dieser Entwicklung, weil sie das Bereitstellen
-%       der Reaktionsfaehigkeit und nicht deren jeweils aktuellen
-%       Opportunitaetswert honoriert. Ein Mechanismus, der lokationale
-%       Vorhaltung explizit verguetet, adressiert damit nicht nur ein
-%       Verfuegbarkeitsproblem, sondern auch eine bestehende Anreizluecke.
-%   chapter_6.tex, Ausblick, GEAENDERT am 20.08.2026
-%     Der kurative Redispatch ist nicht mehr ausgeschlossen. Als
-%     Anschlussfrage bleibt die BEMESSUNG DER MENGE, denn sie ist gegen ein
-%     Spektrum moeglicher Netzzustaende zu fuehren und nicht gegen einen
-%     geplanten Betriebspunkt. Diese Frage stellt sich auf der Seite des
-%     UENB und nicht auf der des Anlagenbetreibers, weshalb sie ausserhalb
-%     des Untersuchungsgegenstands liegt.
-% ===============================================================
 % =====================================================================
 % ANSCHLUSSBLOCK, ergaenzt am 26.08.2026.
 % Die folgenden drei Passagen sind aus Abschnitt 2.3.3 entfernt worden.
@@ -2850,6 +2607,16 @@ Seine modellhafte Bestimmung ist Gegenstand des Kapitels~\ref{ch:design_model}.
 % Der Grund wird dadurch staerker, weil mit der Viertelstundenauktion
 % BEIDE Grundlagen entfallen, naemlich die Stunden-Viertelstunden-Differenz
 % und die Zuordnungsregel selbst. NICHT auf die Zeitfaelle zurueckstellen.
+%
+% (4) ZWEI SAETZE AUS ABSCHNITT 2.3.5, entfernt am 27.08.2026, weil sie
+%     Ergebnisse vorwegnehmen. Ziel ist Kapitel 4 fuer den ersten und
+%     Kapitel 5 fuer die Verallgemeinerung.
+%     Die Vorhaltung ist deshalb dort am teuersten, wo die Vermarktung den
+%     groessten Wert erzielt, weil dort die aufzugebende Erloesmoeglichkeit
+%     am groessten ist.
+%     Der kurative Reservierungspreis ist die Erloeswirkung dieser
+%     Umplanung und faellt umso hoeher aus, je weiter die Vorhaltung den
+%     Fahrplan von seinem unbeschraenkten Optimum entfernt.
 %
 % (3) INNERER WERT UND ZUORDNUNG, frueher der sechste Grund. Ziel offen.
 %     Er ist der einzige REPARIERBARE Einwand, weil die Behoerde die
