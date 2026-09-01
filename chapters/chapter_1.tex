@@ -37,7 +37,7 @@ Ausschlaggebend für diesen Ausreißer war eine Windfront im Dezember 2024 \cite
 \end{figure}
 
 Für die vorliegende Arbeit ist bedeutsam, dass es sich bei diesem Bedarf nicht um ein Übergangsphänomen handelt, das mit dem Netzausbau vollständig verschwindet.
-Der aktuelle \ac{NEP} weist im Referenzszenario~B, das sich an den Zielvorgaben des Bundes-Klima\-schutz\-gesetzes orientiert, bei einem ausgewiesenen Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Redispatchbedarf von rund 13\,\si{TWh} aus.
+Der aktuelle \ac{NEP} weist im Referenzszenario~B, das sich an den Zielvorgaben des Bundes-Klima\-schutz\-gesetzes orientiert, bei einem ausgewiesenen Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Engpassmanagementbedarf von rund 13\,\si{TWh} aus.
 Abbildung~\ref{fig:engpassmanagement_nep} stellt diesen Bedarf den Zieljahren 2032, 2037 und 2045 gegenüber.
 Der Bedarf sinkt bis zum Zieljahr 2037 auf 5{,}4 bis 8{,}6\,\si{TWh} und steigt bis 2045 in allen drei Szenarien wieder auf 11{,}1 bis 13{,}0\,\si{TWh}.
 Der ausgewiesene Restbedarf folgt aus der Zielsetzung des Verfahrens.
@@ -48,9 +48,6 @@ Seine Deckung fällt damit Instrumenten jenseits des Netzausbaus zu.
 Die dargestellten Zahlen und das beschriebene Engpassmuster zeigen dabei zwei Eigenschaften des Bedarfs, die für die Wahl des Instruments bedeutsam sind.
 Zum einen ist der Bedarf ereignisabhängig, denn Volumen und Kosten entwickeln sich nicht proportional zueinander, und einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
 Zum anderen verschiebt sich das räumliche Engpassmuster mit der jeweils vorherrschenden Erzeugungssituation.
-Ein Instrument, das erst bei Eintritt der jeweiligen Situation wirkt, adressiert beide Eigenschaften unmittelbarer als eine auf den kostenoptimalen Mittelwert ausgelegte Netzverstärkung.
-Das Entlastungspotenzial der kurativen Systemführung schätzt diese Arbeit nicht ab.
-Sie bestimmt jedoch, welchen Betrag ein Anlagenbetreiber für die Vorhaltung mindestens fordern muss, damit ihn die Bindung nicht schlechter stellt als die Vermarktung an den Energiemärkten, und damit eine der beiden Größen, die über die Kostenwirksamkeit entscheiden.
 
 \begin{figure}[htbp]
     \centering
@@ -63,29 +60,31 @@ Neben dem Volumen verändert sich die zeitliche Struktur der Engpässe.
 Die präventive Betriebsplanung setzt voraus, dass die Netzbelastung des Erfüllungszeitpunkts vorab hinreichend genau bekannt ist, denn nur dann lässt sich die (N-1)-Sicherheit rechtzeitig herstellen.
 Mit der Zunahme kurzfristig agierender Flexibilität wird diese Voraussetzung schwerer einzuhalten.
 Der kontinuierliche Intraday-Handel hält die Fahrplanbildung bis wenige Minuten vor Lieferbeginn offen, und Anlagen mit kurzen Reaktionszeiten können dieses späte Handelsfenster nutzen \cite{innosys_2030_gesamtverbund_innovationen_2021, mahgoub_wie_2025}.
-Für Batteriespeicher liefert die Nachjustierung in diesem Fenster einen eigenständigen Wertbeitrag \cite{hornek_value_2025}.
-Die Netzsicherheitsrechnung wird dabei nicht nur am Vortag, sondern im Verlauf des Erfüllungstages wiederholt durchgeführt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Die vorausschauenden Rechendurchgänge enden jedoch vor dem Erfüllungszeitpunkt, sodass Fahrplanänderungen aus dem danach verbleibenden Handelsfenster in ihnen nicht mehr enthalten sind.
+Besonders für Batteriespeicher, im Folgenden als \ac{BESS} bezeichnet, liefert die Nachjustierung in diesem Fenster einen eigenständigen Wertbeitrag \cite{hornek_value_2025}.
+Der \ac{ÜNB} prüft die Netzbelastung dabei in Vorschauprozessen am Vortag und im Verlauf des Erfüllungstages sowie in einer laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation \cite{leeuwen_integration_2020}.
+Die Vorschauprozesse enden jedoch vor dem Erfüllungszeitpunkt, sodass Fahrplanänderungen aus dem danach verbleibenden Handelsfenster in ihnen nicht mehr enthalten sind.
 Dem Marktteilnehmer wiederum zeigt der zonale Preis die Netzbelastung nicht an.
-Verändern sich die Leistungsflüsse nach dem letzten Rechendurchgang, kann ein Zustand entstehen, der nicht mehr (N-1)-sicher ist, weil sich eine präventive Gegenmaßnahme nicht mehr rechtzeitig disponieren lässt.
-In welchem Umfang solche Zustände auftreten, ist nicht Gegenstand dieser Arbeit.
-Eine Gegenmaßnahme, die erst nach dem Eintritt eines solchen Zustands greift, setzt hinter dem letzten Rechendurchgang an und ist von dieser zeitlichen Lücke deshalb nicht betroffen.
+Verändern sich die Leistungsflüsse nach der letzten Netzsicherheitsrechnung vor dem Erfüllungszeitpunkt, kann ein Zustand entstehen, der nicht mehr (N-1)-sicher ist, weil sich eine präventive Gegenmaßnahme nicht mehr rechtzeitig disponieren lässt.
 
-Die Versorgungssicherheit im operativen Betrieb der \ac{ÜNB} beruht auf präventiver Systemführung, bei der Betriebsmittel unterhalb ihrer dauerhaften physikalischen Kapazitätsgrenze betrieben werden.
+Die Versorgungssicherheit im operativen Betrieb der \ac{ÜNB} beruht vorrangig auf präventiver Systemführung, bei der Betriebsmittel unterhalb ihrer dauerhaften physikalischen Kapazitätsgrenze betrieben werden.
 Die so freigehaltene Sicherheitsmarge hält das System im Fehlerfall stabil.
 Dabei bleibt eine physikalische Reserve systematisch ungenutzt, denn Betriebsmittel lassen sich kurzfristig höher belasten, als im Dauerbetrieb zulässig ist.
-Die kurative Systemführung nutzt diese Reserve, indem sie Engpässe nicht im Voraus vermeidet, sondern sie nach ihrem Eintreten durch gezielte Gegenmaßnahmen behebt, und eröffnet damit ein Potenzial für eine höhere Auslastung des bestehenden Netzes.
-Der Ansatz zielt damit auf denselben Eingriffsbedarf, den die vorangehenden Absätze beziffert haben.
+Die kurative Systemführung vermeidet Engpässe nicht im Voraus, sondern behebt sie nach ihrem Eintreten durch gezielte Gegenmaßnahmen.
+Sie nutzt dafür diese Reserve und ermöglicht damit eine effizientere Nutzung des bestehenden Netzes.
+Sie setzt an demselben Eingriffsbedarf an, den die vorangehenden Absätze beziffert haben, denn eine Vorauslastung, die bisher durch eine präventive Maßnahme begrenzt werden musste, wird zulässig.
+Weil ein Abruf nur im Fehlerfall erfolgt, fällt zudem weniger Maßnahmenvolumen an als bei einer Vorsorge, die für jede Ausfallvariante im Voraus getroffen wird.
+Sie liegt zugleich hinter der letzten Netzsicherheitsrechnung, sodass ihr die zuvor beschriebene zeitliche Lücke nicht entgegensteht.
 Voraussetzung dafür ist allerdings ein Akteur, dessen Technologie innerhalb des verbleibenden kurzen Zeitfensters zuverlässig reagiert und dessen Stellpotenzial nicht durch die eigene marktliche Fahrplanbildung aufgebraucht wurde.
-Als vergleichsweise neuer Akteur im Stromnetz erscheinen Batteriespeicher, im Folgenden als \ac{BESS} bezeichnet, dafür auf den ersten Blick gut geeignet, was Abschnitt \ref{sec:actor_comparison} eingehender prüft.
+Als vergleichsweise neuer Akteur im Stromnetz erscheinen \ac{BESS} dafür auf den ersten Blick gut geeignet, was Abschnitt \ref{sec:actor_comparison} eingehender prüft.
 
 \section{Zielsetzung und Vorgehensweise}
 \label{sec:research_questions}
 \label{sec:structure}
 
 Die vorliegende Arbeit verfolgt das Ziel, einen Marktmechanismus für die kurative Vorhaltung zu entwerfen und den kurativen Reservierungspreis zu bestimmen.
+Das Verbundprojekt InnoSys~2030 hat das Potenzial der kurativen Systemführung für den deutschen Übertragungsnetzbetrieb untersucht und die dafür in Betracht kommenden Maßnahmen systematisiert \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Die kurative Vorhaltung ist dabei selbst eine Systemdienstleistung und gehört innerhalb der üblichen Einteilung zur Betriebsführung, zu der auch das Engpassmanagement zählt.
-Den Redispatch ersetzt sie nicht, sondern ergänzt ihn um einen Eingriff nach dem Eintritt des Fehlerfalles.
+Den Redispatch, also die vom \ac{ÜNB} angeordnete Anpassung der Einspeisung einzelner Anlagen zur Behebung eines Engpasses, ersetzt sie nicht, sondern ergänzt ihn um einen Eingriff nach dem Eintritt des Fehlerfalles.
 Für ihre Beschaffung ist die marktliche Form vorrangig, weil sie den kostenoptimalen Betrieb des Systems unterstützt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 Da der Anlagenbetreiber im Selbst\-dispatch-Modell über den Einsatz seiner Anlage entscheidet, lässt sich kurative Verfügbarkeit über einen Anreiz herbeiführen.
 Dieser Anreiz muss aus einer Vergütung folgen, und innerhalb der Systemdienstleistungen bestehen dafür mehrere Vergütungslogiken.
@@ -98,15 +97,16 @@ Die Arbeit rechnet gleichwohl mit den Preiszeitreihen des Jahres 2025.
 Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Ergebnis mit einer zweiten Unsicherheit belasten, während beobachtete Preise nachvollziehbar sind und die für das Szenario maßgebliche Volatilität bereits aufweisen.
 Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Bindung mindestens fordern muss, um gegenüber seinen übrigen Vermarktungswegen indifferent zu sein.
 Er bemisst die entgangenen Erlösmöglichkeiten und ist damit eine Eigenschaft der Anlage und ihres Umfelds.
+Das Entlastungspotenzial der kurativen Systemführung schätzt die Arbeit nicht ab, sie bestimmt allein den Preis ihrer Vorhaltung.
 Wie hoch er ausfällt, folgt aus der Ausgestaltung des Produkts, also aus der Bindungsdauer, der geforderten Reaktionszeit und der vorzuhaltenden Leistung.
 Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikationsanforderungen, die Pönale bei Nichtlieferung, die Liquidität am jeweiligen Netzknoten und die Zahl der dort geeigneten Anbieter.
 Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Vorhalteverpflichtung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
 
-Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung und die für sie in Betracht kommenden Technologien, stellt den Marktrahmen mit seinen Dispatchmodellen, Handelszeitpunkten und Systemdienstleistungen dar und untersucht die Vergütungslogiken des Engpassmanagements und der Regelleistung.
-Es begründet die Technologiewahl und prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt.
+Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung und die für sie in Betracht kommenden Technologien, stellt den Marktrahmen mit seinen Dispatchmodellen, Marktzeithorizonten und Systemdienstleistungen dar und untersucht die Vergütungslogiken des Engpassmanagements und der Regelleistung.
+Es begründet die Wahl der \ac{BESS} als kurativen Akteur und prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt.
 Kapitel~\ref{ch:design_model} leitet die Anforderungen an einen kurativen Marktmechanismus ab, gleicht sie gegen bestehende Marktdesignansätze ab und benennt den Forschungsbedarf.
-Darauf aufbauend entwirft es das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert den Speicherbetrieb als gemischt-ganz\-zahliges lineares Optimierungsproblem.
-Es beschreibt die verwendeten Eingangsdaten, begründet, weshalb sich die geltende Bemessungslogik für entgangene Erlösmöglichkeiten nicht in dieses Modell überführen lässt, und verifiziert die Implementierung gegen einen veröffentlichten Erlösindex für Batteriespeicher.
+Darauf aufbauend entwirft es das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert die Fahrplanbildung des Speichers als gemischt-ganz\-zahliges lineares Optimierungsproblem.
+Es beschreibt die verwendeten Eingangsdaten, begründet, weshalb sich die geltende Bemessungslogik für entgangene Erlösmöglichkeiten nicht in dieses Modell überführen lässt, und verifiziert die Implementierung gegen einen veröffentlichten Erlösindex für \ac{BESS}.
 Kapitel~\ref{ch:results} untersucht, wie sich eine kurative Vorhaltepflicht in den Betrieb eines Marktteilnehmers einfügt.
 Es stellt den Fahrplan, den Ladezustandsverlauf und die Erlöse unter Bindung dar, variiert anschließend die Produkt- und Anlagenparameter und bestimmt daraus den kurativen Reservierungspreis.
 Kapitel~\ref{ch:discussion} ordnet dieses Ergebnis in die bestehenden Vergütungslogiken für Systemdienstleistungen ein, gleicht das entworfene Produkt gegen die Anforderungen ab und würdigt die Modellannahmen kritisch.
