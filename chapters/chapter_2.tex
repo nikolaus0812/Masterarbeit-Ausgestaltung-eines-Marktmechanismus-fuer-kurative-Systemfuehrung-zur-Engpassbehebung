@@ -24,20 +24,21 @@ Dieser Abschnitt stellt auf dieser Grundlage die Abgrenzung gegenüber der präv
 \subsection{Präventive und kurative Systemführung im Engpassmanagement}
 \label{sec:prev_vs_cur}
 
-Zur Einordnung beider Ansätze eignet sich das in Art.\,18 \ac{SO GL} verankerte Vier-Zustands-Modell des Netzes mit Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}.
+Zur Einordnung beider Ansätze eignet sich das in Art.\,18 \ac{SOGL} verankerte Vier-Zustands-Modell des Netzes mit Normal-, Gefährdungs-, Not- und Blackout-Zustand \cite{europaische_kommission_verordnung_2017}.
 Im Normalbetrieb sind alle Betriebsmittel innerhalb ihrer Grenzwerte belastet und das System ist (N-1)-sicher.
 Der Gefährdungszustand tritt ein, wenn ein Ausfall aus der Ausfallvariantenliste zu einer Überschreitung der betrieblichen Sicherheitsgrenzwerte führt, selbst wenn Entlastungsmaßnahmen aktiviert werden.
 Der Notzustand ist demgegenüber dadurch gekennzeichnet, dass mindestens ein betrieblicher Sicherheitsgrenzwert nicht mehr eingehalten wird.
 Der Blackout-Zustand beschreibt schließlich den vollständigen oder teilweisen Zusammenbruch der Versorgung, an den sich der Netzwiederaufbau anschließt.
-Beide Ansätze bewegen sich dabei im Normalzustand.
+Sowohl die präventive als auch die kurative Systemführung bewegen sich dabei im Normalzustand.
 Die Verordnung rechnet die Wirkung der verfügbaren Entlastungsmaßnahmen dem Netzzustand zu, sodass das Netz normal bleibt, solange die Grenzwerte nach einem Ausfall unter Berücksichtigung dieser Maßnahmen eingehalten werden, und erst dann gefährdet ist, wenn sie dafür nicht ausreichen \cite{europaische_kommission_verordnung_2017}.
 Kurative Maßnahmen sind Entlastungsmaßnahmen in diesem Sinne, denn die Verordnung nennt als deren Arten unter anderem den Redispatch, die Topologieänderung und die Anpassung der Wirkleistungsflüsse von \ac{HGÜ}-Systemen und knüpft an den Zeitpunkt ihrer Aktivierung keine Bedingung.
 Der Unterschied beider Ansätze liegt damit im Zeitpunkt des Eingriffs.
 Der präventive Ansatz bewirtschaftet den Engpass im Voraus, indem er ihn durch Anpassung der Fahrpläne gar nicht erst entstehen lässt, während der kurative Ansatz den bereits eingetretenen Engpass innerhalb des zulässigen Überlastintervalls behebt.
 Physikalische Grundlage hierfür ist die thermische Trägheit von Betriebsmitteln, die kurzfristig höhere Strombelastungen tolerieren, als im Dauerbetrieb zulässig sind, und damit ein Zeitfenster für die Aktivierung kurativer Gegenmaßnahmen eröffnen.
-Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SO GL} über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat.
+Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SOGL} über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat.
 Die \ac{PATL} ist dabei die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann.
-Die \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist, wobei zu jeder Höhe der Überlast eine zugehörige zulässige Dauer festzulegen ist \cite{europaische_kommission_verordnung_2017}.
+Die \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist, wobei zu jeder Höhe der Überlast eine zugehörige zulässige Dauer festzulegen ist.
+Die Verordnung selbst verwendet diese beiden Bezeichnungen nicht, sondern spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.
 Der Abstand zwischen beiden Grenzwerten und die zugehörige Dauer bestimmen damit, wie viel Zeit für eine kurative Gegenmaßnahme zur Verfügung steht.
 Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall.
 Im präventiven Betrieb wird die Vorauslastung so weit begrenzt, dass die Belastung auch nach dem Ausfall unterhalb der \ac{PATL} bleibt.
@@ -52,7 +53,7 @@ Die kurative Systemführung erlaubt hingegen eine höhere Vorauslastung bis zur 
 
 Der präventive Ansatz stellt (N-1)-Sicherheit her, indem er die zulässige Vorauslastung der Betriebsmittel unterhalb der \ac{PATL} begrenzt und die dafür erforderlichen Anpassungen bereits in der Einsatzplanung anordnet.
 Grundlage dafür ist eine gestufte Betriebsplanung, die den Netzzustand mit abnehmendem zeitlichen Vorlauf zunehmend genau abbildet.
-Die \ac{SO GL} verpflichtet die \ac{ÜNB}, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen, sie untereinander auszutauschen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
+Die \ac{SOGL} verpflichtet die \ac{ÜNB}, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen, sie untereinander auszutauschen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
 Die deutschen Redispatchprozesse lehnen sich an diese Stufung an und führen den erforderlichen Eingriff sukzessive durch, indem jede Planungsstufe den zu ihrem Zeitpunkt erkennbaren Engpass adressiert und die folgende Stufe die verbleibende Abweichung übernimmt \cite{leeuwen_integration_2020}.
 Der Vorteil dieses Vorgehens liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt und im Fehlerfall sind keine reaktiven Eingriffe erforderlich.
 
@@ -174,7 +175,7 @@ Zweitens fällt die zulässige Dauer für dasselbe Betriebsmittel je nach Vorbel
 Drittens ist die verfügbare Reaktionszeit deshalb keine Wahlgröße des Akteurs, sondern durch das betroffene Betriebsmittel und die Situation vorgegeben.
 
 InnoSys~2030 systematisiert die kurativen Maßnahmen entlang dieser Spanne in drei Klassen, nämlich sehr schnelle Maßnahmen mit einer Wirksamkeit von unter zehn Sekunden, schnelle Maßnahmen mit einer Wirksamkeit von etwa zwei Minuten und langsame Maßnahmen mit einer Wirksamkeit von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Diese Klassen bilden die erreichbare Aktivierungsgeschwindigkeit ab und sind keine normativ festgelegten Zeitfenster, denn die im Einzelfall maßgebliche Dauer legt der \ac{ÜNB} nach Art.\,25 \ac{SO GL} fest.
+Diese Klassen bilden die erreichbare Aktivierungsgeschwindigkeit ab und sind keine normativ festgelegten Zeitfenster, denn die im Einzelfall maßgebliche Dauer legt der \ac{ÜNB} nach Art.\,25 \ac{SOGL} fest.
 Je kürzer das zulässige Überlastintervall ausfällt, desto kleiner ist der Kreis technisch geeigneter Technologien.
 Diese Kopplung bestimmt die Technologiewahl, die in Abschnitt \ref{sec:actor_comparison} begründet wird.
 In Ansätzen, die die \ac{TATL}-Restriktionen gemeinsam mit den präventiven Maßnahmen in der Einsatzplanung abbilden, ist die Einhaltung der Reaktionszeit keine Frage der Optimierungsgüte, sondern eine harte Nebenbedingung \cite{lindner_operation_2023}.
@@ -271,13 +272,14 @@ Ob eine solche Beschaffung überhaupt zulässig wäre, entscheidet der rechtlich
 Den rechtlichen Rahmen für das Engpassmanagement im deutschen Übertragungsnetz bildet in erster Linie das \ac{EnWG}.
 §\,13 Abs.\,1 \ac{EnWG} begründet die Systemverantwortung der \ac{ÜNB} und verpflichtet diese, Gefährdungen oder Störungen der Netzsicherheit durch netzbezogene Maßnahmen, marktbezogene Maßnahmen sowie zusätzliche Reserven zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 Kurative Eingriffe sind dabei der Kategorie der marktbezogenen Maßnahmen zuzuordnen, und da das Gesetz bei strom- und spannungsbedingten Anpassungen die kostenminimale Maßnahmenauswahl vorschreibt, dürfen sie erst nach Ausschöpfung kostengünstigerer Alternativen eingesetzt werden.
-Auf europäischer Ebene konkretisiert die \ac{SO GL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
-Sie lässt eine Auslastung oberhalb der \ac{PATL} für eine begrenzte Zeit ausdrücklich zu und verpflichtet die \ac{ÜNB} dazu, die Leistungsflüsse nach Eintreten eines Fehlerfalles innerhalb des durch die \ac{TATL} definierten Zeitfensters durch Entlastungsmaßnahmen wieder unter die \ac{PATL}-Grenze zu führen, wobei eine Ausfall\-varianten-Liste mit allen relevanten (N-1)-Szenarien die Planungsgrundlage bildet.
+Auf europäischer Ebene konkretisiert die \ac{SOGL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen.
+Sie verpflichtet die \ac{ÜNB} dazu, die Leistungsflüsse in der (N-1)-Situation unterhalb der vorübergehend zulässigen Überlast zu halten, nachdem sie innerhalb der dafür zulässigen Dauer Entlastungsmaßnahmen vorbereitet und umgesetzt haben, wobei eine Ausfall\-varianten-Liste mit allen relevanten (N-1)-Szenarien die Planungsgrundlage bildet.
+Das Netz befindet sich dabei nach dem Wortlaut der Verordnung im Normalzustand.
 Für die Auswahl der Entlastungsmaßnahmen gibt sie zudem vor, sie möglichst echtzeitnah zu aktivieren \cite{europaische_kommission_verordnung_2017}.
-Der kurative Betrieb ist damit europarechtlich zulässig, solange die Rückführung innerhalb des Zeitfensters sichergestellt ist.
+Der kurative Betrieb ist damit europarechtlich nicht nur zulässig, sondern für die (N-1)-Situation vorausgesetzt, solange die Rückführung innerhalb des Zeitfensters sichergestellt ist.
 Ergänzend verankert die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} auf Marktebene den Vorrang marktbasierter Maßnahmen vor Redispatch sowie einen diskriminierungsfreien Zugang für alle Technologien einschließlich Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 Keine dieser Regelungen ist auf die kurative Systemführung zugeschnitten, denn sie fassen die Pflichten des \ac{ÜNB} allgemein und regeln nicht, wie eine vorgehaltene Reaktionsfähigkeit zu beschaffen ist.
-Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten deshalb weder das \ac{EnWG} noch die \ac{SO GL}.
+Eine ausdrückliche Regelung zur marktlichen Beschaffung kurativer Maßnahmen enthalten deshalb weder das \ac{EnWG} noch die \ac{SOGL}.
 Ihre Zulässigkeit lässt sich lediglich aus dem Kostenminimierungsgebot und dem Vorrang marktbasierter Maßnahmen ableiten, soweit die kurative Maßnahme die kostengünstigere Alternative darstellt.
 Der Umsetzung steht damit entgegen, dass sie sich auf eine Auslegung und nicht auf eine ausdrückliche Regelung stützt.
 \label{sec:flexible_connection}
