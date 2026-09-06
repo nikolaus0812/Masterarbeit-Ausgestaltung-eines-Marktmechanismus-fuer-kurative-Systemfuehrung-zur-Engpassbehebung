@@ -162,26 +162,63 @@ Im zweiten Fall trägt der innere Wert nahezu den gesamten Optionswert der Aussp
 
 Die Gelegenheit entsteht erst nach der Auktion des \ac{DA}. Dort war die Stunde 19 als Ganzes zu $97{,}89\,\si{\text{\euro}\per MWh}$ handelbar, während die Viertelstunde von 19:00 bis 19:15 Uhr in der \ac{IDA-1} $144{,}02\,\si{\text{\euro}\per MWh}$ erzielte. Da der \ac{DA} zum Zeitpunkt des Beispiels ein Stundenprodukt war, konnte ein Speicher diesen Unterschied dort nicht abbilden. Seit der Umstellung des Produktschnitts zum 1.\,Oktober 2025 besteht er nicht mehr, sodass die Konstellation für den Untersuchungszeitraum neu zu prüfen wäre.
 
-Vor der \ac{IDA-1} entscheidet der Betreiber, ob er die \SI{50}{MWh} der 19-Uhr-Viertelstunde dort vermarktet. Hält er seine Anlage für nicht engpasswirksam, verkauft er sie zu $144{,}02\,\si{\text{\euro}\per MWh}$ und erzielt gegenüber seinem Einsatzpreis $g_T$ eine Spanne von $2202{,}50\,\text{\euro}$. Hält er sie für engpasswirksam, behält er die Menge zurück und vermarktet sie erst im kontinuierlichen Handel, für den hier exemplarisch mit dem \ac{ID1} von $112{,}90\,\si{\text{\euro}\per MWh}$ gerechnet ist, was $646{,}50\,\text{\euro}$ ergibt. Die späte Vermarktung erhöht die Wahrscheinlichkeit einer Anweisung, weil die Einspeisung erst nach den vorausschauenden Rechenläufen sichtbar wird.
+Vor der \ac{IDA-1} entscheidet der Betreiber, wie er die \SI{50}{MWh} der 19-Uhr-Viertelstunde bedient, und ihm stehen drei Wege offen. Verkauft er dort und speist aus, erlöst er $7201{,}00\,\text{\euro}$. Behält er die Menge zurück und vermarktet sie erst im kontinuierlichen Handel, für den hier exemplarisch mit dem \ac{ID1} von $112{,}90\,\si{\text{\euro}\per MWh}$ gerechnet ist, erlöst er $5645{,}00\,\text{\euro}$, erhöht aber die Wahrscheinlichkeit einer Anweisung, weil die Einspeisung erst nach den vorausschauenden Rechenläufen sichtbar wird. Verkauft er in der \ac{IDA-1} und kauft die Menge im kontinuierlichen Handel zurück, erzielt er nach Gleichung~\eqref{eq:anh:weber:rueckkauf} $1556{,}00\,\text{\euro}$, ohne den Betriebspunkt zu verändern und ohne den Ladezustand anzutasten, sodass weder eine Wiederbeschaffung noch ein Werteverbrauch anfallen und auch keine Anweisung ergeht, weil sein Fahrplan keine Einspeisung mehr ausweist.
 
-Die Vergütung ist in beiden Fällen dieselbe, denn die entgangene Erlösmöglichkeit bemisst sich am Preis der \ac{IDA-1} und nicht am erzielten Preis. Ergeht die Anweisung, bleibt das Geschäft bestehen, weil der \ac{ÜNB} die nicht eingespeiste Menge beschafft und in den Einspeisebilanzkreis bucht, und der finanzielle Ausgleich von $2241{,}88\,\text{\euro}$ tritt hinzu, während ersparte Aufwendungen zurückerstattet werden \cite{bundesnetzagentur_anlage1_2024}. Tabelle~\ref{tab:anh:weber:strategien} stellt die vier Ergebnisse gegenüber.
+\begin{equation}
+  G_R = \left( p_{\mathrm{IDA\text{-}1}} - p_{\mathrm{ID1}} \right) W = \left( 144{,}02 - 112{,}90 \right) \cdot 50 = 1556{,}00\,\text{\euro}
+  \label{eq:anh:weber:rueckkauf}
+\end{equation}
+
+Ergeht keine Anweisung, speist er aus, erlöst den Vermarktungspreis und trägt die Wiederbeschaffung selbst, deren Höhe ihm freisteht. Ergeht die Anweisung, treten drei Positionen nebeneinander. Erstens bleibt sein Geschäft bestehen, weil der \ac{ÜNB} die nicht eingespeiste Menge beschafft und in den Einspeisebilanzkreis bucht. Zweitens erstattet er die ersparte Aufwendung zum Abrechnungspreis für die Minderung des Turbineneinsatzes, unabhängig davon, was das Nachladen ihn tatsächlich kostet. Drittens erhält er von den beiden verbleibenden Positionen die höhere, nämlich den anteiligen Werteverbrauch oder die entgangene Erlösmöglichkeit \cite{bundesnetzagentur_anlage1_2024}.
+
+Der anteilige Werteverbrauch ist im Berechnungsbeispiel nicht beziffert. Er folgt aus dem handelsrechtlichen Restwert über das Verhältnis der anrechenbaren zu den geplanten Betriebsstunden und fällt bei einer Minderung gering aus, weil die Anlage weniger und nicht mehr läuft, sodass die entgangene Erlösmöglichkeit den Ausgleich bestimmt. Mit dem Vermarktungspreis $p_V$, der bewegten Arbeit $W$, den tatsächlichen Wiederbeschaffungskosten $C$, dem Abrechnungspreis $p_{\mathrm{neg}}$ und dem Optionswert $V$ lauten die beiden Ergebnisse damit wie folgt.
+
+\begin{align}
+  G_0 &= p_V \, W - C \label{eq:anh:weber:g0}\\
+  G_1 &= p_V \, W - p_{\mathrm{neg}} \, W + V \label{eq:anh:weber:g1}
+\end{align}
+
+Einzusetzen sind $W = \SI{50}{MWh}$, $p_{\mathrm{neg}} = 47{,}74\,\si{\text{\euro}\per MWh}$ und $V = 2241{,}88\,\text{\euro}$. Der Optionswert ist bei beiden Vermarktungswegen gleich, denn er bemisst sich am Preis der \ac{IDA-1}, und die Optionsart folgt dem Day-Ahead-Preis der Stunde 19, der mit $97{,}89\,\si{\text{\euro}\per MWh}$ unter $g_T$ liegt, sodass die Call-Formel auch dann anzuwenden ist, wenn die Menge in der \ac{IDA-1} bereits verkauft ist.
+
+\begin{align}
+  G_1^{\mathrm{IDA}} &= 7201{,}00 - 2387{,}00 + 2241{,}88 = 7055{,}88\,\text{\euro} \label{eq:anh:weber:g1ida}\\
+  G_1^{\mathrm{ID}} &= 5645{,}00 - 2387{,}00 + 2241{,}88 = 5499{,}88\,\text{\euro} \label{eq:anh:weber:g1id}
+\end{align}
+
+Die Wiederbeschaffung lässt sich am besten mit dem Turbinengrenzpreis beziffern, denn dieser ist der Wert, den die gespeicherte Energie in der nächstbesten Viertelstunde erzielt. Mit $99{,}97\,\si{\text{\euro}\per MWh}$ sind das $4998{,}50\,\text{\euro}$, woraus sich ohne Anweisung $2202{,}50$ und $646{,}50\,\text{\euro}$ ergeben. Die Festlegung erstattet demgegenüber nur $2387{,}00\,\text{\euro}$, sodass der Betreiber bei einer Anweisung einen Energiewert von $2611{,}50\,\text{\euro}$ behält, der nicht zurückgefordert wird. Für den Vergleich der beiden Wege ist die Höhe der Wiederbeschaffung ohne Belang, denn sie fällt bei beiden gleich an und hebt sich auf. Sie unterscheidet sich vom Optionswert allerdings in ihrer Bestimmbarkeit, denn dieser steht im Anweisungszeitpunkt fest, während das Nachladen erst später erfolgt, sodass die Anweisung eine unsichere künftige Auszahlung durch eine Erstattung zum Abrechnungspreis ersetzt. Maßgeblich für die Wahl ist der Erwartungswert nach Gleichung~\eqref{eq:anh:weber:erwartung}, in dem $q$ die Wahrscheinlichkeit bezeichnet, dass eine Anweisung ergeht.
+
+\begin{equation}
+  \operatorname{E}\left[G\right] = p_V \, W - C + q \, V
+  \label{eq:anh:weber:erwartung}
+\end{equation}
+
+Der Rückhalt kostet den Betreiber $1556{,}00\,\text{\euro}$ an Preisverzicht, denn um diesen Betrag liegt der Erlös im kontinuierlichen Handel unter dem der \ac{IDA-1}. Er lohnt sich deshalb erst, wenn der Zuwachs an Abrufwahrscheinlichkeit diesen Verzicht aufwiegt.
+
+\begin{equation}
+  \left( q_{\mathrm{ID}} - q_{\mathrm{IDA}} \right) V > \left( p_{\mathrm{IDA\text{-}1}} - p_{\mathrm{ID1}} \right) W
+  \qquad\Longleftrightarrow\qquad
+  q_{\mathrm{ID}} - q_{\mathrm{IDA}} > \frac{1556{,}00}{2241{,}88} = 0{,}694
+  \label{eq:anh:weber:schwelle}
+\end{equation}
+
+Der Rückhalt lohnt sich damit erst bei einem Zuwachs von mehr als 69 Prozentpunkten, sodass die Verankerung der Bemessung am Preis der \ac{IDA-1} den Anreiz dazu selbst begrenzt. Tabelle~\ref{tab:anh:weber:strategien} stellt die drei Wege gegenüber.
 
 \begin{table}[htbp]
     \centering
-    \caption{Ergebnis des Betreibers in der 19-Uhr-Viertelstunde in Euro. Für den kontinuierlichen Handel ist exemplarisch mit dem \acs{ID1} gerechnet.}
+    \caption{Ergebnis des Betreibers in der 19-Uhr-Viertelstunde in Euro. Für den kontinuierlichen Handel ist exemplarisch mit dem \acs{ID1} und für die Wiederbeschaffung mit dem Turbinengrenzpreis gerechnet.}
     \label{tab:anh:weber:strategien}
     \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.50\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.25\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.25\textwidth-2\tabcolsep\relax}@{}}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.40\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.20\textwidth-2\tabcolsep\relax}@{}}
         \hline
-        \textbf{Vermarktung} & \textbf{ohne Anweisung} & \textbf{mit Anweisung} \\
+        \textbf{Weg} & \textbf{Erlös} & \textbf{ohne Anweisung} & \textbf{mit Anweisung} \\
         \hline
-        in der \acs{IDA-1} & 2202,50 & 4444,38 \\
+        Verkauf in der \acs{IDA-1} und Ausspeisung & 7201,00 & 2202,50 & 7055,88 \\
         \hline
-        im kontinuierlichen Handel & 646,50 & 2888,38 \\
+        Verkauf im kontinuierlichen Handel und Ausspeisung & 5645,00 & 646,50 & 5499,88 \\
+        \hline
+        Verkauf in der \acs{IDA-1} und Rückkauf & 1556,00 & 1556,00 & entfällt \\
         \hline
     \end{tabular}
 \end{table}
-
-Der Rückhalt kostet den Betreiber $1556{,}00\,\text{\euro}$ an Preisverzicht. Er lohnt sich erst, wenn er die Wahrscheinlichkeit einer Anweisung um mehr als 69 Prozentpunkte erhöht, denn erst dann übersteigt der erwartete Zuwachs an Vergütung diesen Verzicht. Die Verankerung der Bemessung am Preis der \ac{IDA-1} begrenzt den Anreiz zum Rückhalt damit selbst.
 
 Unabhängig von dieser Wahl bleibt ein systematischer Teil. Angemessen ist der finanzielle Ausgleich, wenn er den Betreiber unter Anrechnung des bilanziellen Ausgleichs weder besser noch schlechter stellt als ohne die Maßnahme. Der Optionswert übersteigt den inneren Wert jedoch stets um den Zeitwert, hier um $39{,}38\,\text{\euro}$ oder 1,8 Prozent der Vergütung. Dieser Betrag vergütet eine Möglichkeit, die der Betreiber bereits ergriffen hat, und er wird mit einem Volatilitätsmaß gebildet, das nicht auf die verbleibende Zeit umgerechnet wird. Er fällt in jeder angewiesenen Viertelstunde an, ohne dass der Betreiber sich strategisch verhalten müsste.
