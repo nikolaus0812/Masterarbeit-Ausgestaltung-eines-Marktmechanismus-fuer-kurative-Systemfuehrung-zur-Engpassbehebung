@@ -1,7 +1,7 @@
 \chapter{Berechnung des entgangenen Erlöses nach der Festlegung}
 \label{anh:weber}
 
-Die Darstellung folgt dem Rechenweg der Festlegung BK8-22-0001-A und führt ihn anhand des veröffentlichten Beispiels für Tagesspeicher 1 durch \cite{bundesnetzagentur_berechnungsbeispiel_2024}. Die Anlage verfügt über \SI{200}{\mega\watt} Turbinen- und \SI{180}{\mega\watt} Pumpleistung, einen Wirkungsgrad von $\eta = 0{,}87$, ein Netznutzungsentgelt von $c_{NNE} = 0{,}50\,\si{\text{\euro}\per MWh}$ und vier Turbinenvolllaststunden. Datengrundlage sind die 96 Viertelstundenpreise der \ac{IDA-1} vom 01.02.2024.
+Die Darstellung folgt dem Rechenweg der Festlegung BK8-22-001-A und führt ihn anhand des veröffentlichten Beispiels für Tagesspeicher 1 durch \cite{bundesnetzagentur_berechnungsbeispiel_2024}. Die Anlage verfügt über \SI{200}{\mega\watt} Turbinen- und \SI{180}{\mega\watt} Pumpleistung, einen Wirkungsgrad von $\eta = 0{,}87$, ein Netznutzungsentgelt von $c_{NNE} = 0{,}50\,\si{\text{\euro}\per MWh}$ und vier Turbinenvolllaststunden. Datengrundlage sind die 96 Viertelstundenpreise der \ac{IDA-1} vom 01.02.2024. Preise der Eröffnungsauktion und Volatilitätsmaße entstammen dem Berechnungsbeispiel, Day-Ahead-Preise außer dem der Stunde 13 und alle Werte des \ac{ID1} des Liefertages veröffentlichten Marktdaten der Bundesnetzagentur \cite{bundesnetzagentur_berechnungsbeispiel_2024, smard_marktdaten_2026}.
 
 \section{Grenzpreise}
 \label{anh:weber:grenzpreis}
@@ -20,7 +20,7 @@ Der Prozess endet mit der erstmaligen Verletzung der Effizienzbedingung oder mit
   k_P &= \frac{t_T \cdot P_T}{\eta \cdot P_P \cdot \Delta t} = \frac{4 \cdot 200}{0{,}87 \cdot 180 \cdot 0{,}25} = 20{,}43 \label{eq:anh:weber:kp}
 \end{align}
 
-Abgerundet sind das 20 Pumpviertelstunden. Der Grenzpreis $g_T$ ist damit der $k_T$-größte und $g_P$ der $k_P$-kleinste Preis der geordneten Reihe des Tages.
+Gerundet sind das 20 Pumpviertelstunden. Der Grenzpreis $g_T$ ist damit der $k_T$-größte und $g_P$ der $k_P$-kleinste Preis der geordneten Reihe des Tages.
 
 \begin{equation}
   g_T = 99{,}97\,\si{\text{\euro}\per MWh}
@@ -32,9 +32,9 @@ Abgerundet sind das 20 Pumpviertelstunden. Der Grenzpreis $g_T$ ist damit der $k
 Die Effizienzbedingung nach Gleichung~\eqref{eq:anh:weber:effizienz} ist damit erfüllt. Ihre linke Seite ist der Erlös, den eine für den Pumpbetrieb bezogene Megawattstunde nach den Umwandlungsverlusten bei der Ausspeisung einbringt, ihre rechte Seite sind die Kosten ihres Bezugs einschließlich des Netznutzungsentgelts.
 
 \begin{equation}
-  \underbrace{99{,}97 \cdot 0{,}87}_{g_T \cdot \eta} = 86{,}97
+  \underbrace{99{,}97 \cdot 0{,}87}_{g_T \cdot \eta} = 86{,}97\,\si{\text{\euro}\per MWh}
   \quad > \quad
-  57{,}43 = \underbrace{56{,}93 + 0{,}50}_{g_P + c_{NNE}}
+  57{,}43\,\si{\text{\euro}\per MWh} = \underbrace{56{,}93 + 0{,}50}_{g_P + c_{NNE}}
   \label{eq:anh:weber:beispiel:effizienz}
 \end{equation}
 
@@ -52,17 +52,17 @@ Die beiden Grenzpreise zerlegen die Preisreihe in drei Bereiche, nämlich den Tu
   \label{eq:anh:weber:mittelwerte}
 \end{equation}
 
-Eine Maßnahme ändert den Speicherinhalt und zieht eine Anpassung des Speicherprogramms außerhalb des Maßnahmenzeitraums nach sich. Die Festlegung unterscheidet dafür vier Fälle in je zwei Varianten und bewertet sie nach den Gleichungen~\eqref{eq:anh:weber:beispiel:p1} bis~\eqref{eq:anh:weber:beispiel:p4}, hier bereits mit den Zahlen des Beispiels, in dem sich $\overline{p}_T = 109{,}20$, $\overline{p}_P = 41{,}03$ und $\overline{p}_M = 78{,}45\,\si{\text{\euro}\per MWh}$ ergeben.
+Eine Maßnahme ändert den Speicherinhalt und zieht eine Anpassung des Speicherprogramms außerhalb des Maßnahmenzeitraums nach sich. Die Festlegung unterscheidet dafür vier Fälle in je zwei Varianten und bewertet sie nach den Gleichungen~\eqref{eq:anh:weber:beispiel:p1} bis~\eqref{eq:anh:weber:beispiel:p4}, hier bereits mit den Zahlen des Beispiels, in dem sich $\overline{p}_T = 109{,}20\,\si{\text{\euro}\per MWh}$, $\overline{p}_P = 41{,}03\,\si{\text{\euro}\per MWh}$ und $\overline{p}_M = 78{,}45\,\si{\text{\euro}\per MWh}$ ergeben. Die Mittelwerte und die daraus gebildeten Abrechnungspreise werden ungerundet weitergerechnet, nämlich mit $\overline{p}_T = 109{,}2038\,\si{\text{\euro}\per MWh}$ und $\overline{p}_P = 41{,}0320\,\si{\text{\euro}\per MWh}$, und nur in der Darstellung auf zwei Stellen gerundet, sodass eine Nachrechnung mit den gerundeten Werten um bis zu $0{,}10\,\text{\euro}$ abweicht.
 
 \begin{align}
-  p_{1a} &= \frac{\overline{p}_M + c_{NNE}}{\eta} = 90{,}75
-  & p_{1b} &= \overline{p}_T = 109{,}20 \label{eq:anh:weber:beispiel:p1}\\
-  p_{2a} &= \frac{\overline{p}_P + c_{NNE}}{\eta} = 47{,}74
-  & p_{2b} &= \overline{p}_M = 78{,}45 \label{eq:anh:weber:beispiel:p2}\\
-  p_{3a} &= \overline{p}_T \cdot \eta - c_{NNE} = 94{,}51
-  & p_{3b} &= \overline{p}_M = 78{,}45 \label{eq:anh:weber:beispiel:p3}\\
-  p_{4a} &= \overline{p}_M \cdot \eta - c_{NNE} = 67{,}75
-  & p_{4b} &= \overline{p}_P = 41{,}03 \label{eq:anh:weber:beispiel:p4}
+  p_{1a} &= \frac{\overline{p}_M + c_{NNE}}{\eta} = 90{,}75\,\si{\text{\euro}\per MWh}
+  & p_{1b} &= \overline{p}_T = 109{,}20\,\si{\text{\euro}\per MWh} \label{eq:anh:weber:beispiel:p1}\\
+  p_{2a} &= \frac{\overline{p}_P + c_{NNE}}{\eta} = 47{,}74\,\si{\text{\euro}\per MWh}
+  & p_{2b} &= \overline{p}_M = 78{,}45\,\si{\text{\euro}\per MWh} \label{eq:anh:weber:beispiel:p2}\\
+  p_{3a} &= \overline{p}_T \cdot \eta - c_{NNE} = 94{,}51\,\si{\text{\euro}\per MWh}
+  & p_{3b} &= \overline{p}_M = 78{,}45\,\si{\text{\euro}\per MWh} \label{eq:anh:weber:beispiel:p3}\\
+  p_{4a} &= \overline{p}_M \cdot \eta - c_{NNE} = 67{,}75\,\si{\text{\euro}\per MWh}
+  & p_{4b} &= \overline{p}_P = 41{,}03\,\si{\text{\euro}\per MWh} \label{eq:anh:weber:beispiel:p4}
 \end{align}
 
 Welche der beiden Varianten maßgeblich ist und in welche Richtung gezahlt wird, hängt am Fall. Tabelle~\ref{tab:anh:weber:abrechnung} führt die vier Fälle mit der Auswahlregel, dem Wert des Beispiels und der Zahlungsrichtung auf \cite{bundesnetzagentur_anlage1_2024}.
@@ -87,12 +87,12 @@ Welche der beiden Varianten maßgeblich ist und in welche Richtung gezahlt wird,
     \end{tabular}
 \end{table}
 
-Im Beispiel bindet bei beiden Minderungsfällen die jeweils gegenüberliegende Seite, denn das Minimum fällt mit $47{,}74$ gegen $78{,}45\,\si{\text{\euro}\per MWh}$ auf die Pumpseite. Zwingend ist das nicht, bei einem engeren mittleren Bereich bindet stattdessen $p_{2b}$. Diese Preise vergüten die durch die Maßnahme tatsächlich bewegte Arbeit. Der Optionswert des folgenden Abschnitts vergütet demgegenüber die gesperrte Leistung. Beide gehen von denselben Grenzpreisen aus, die Abrechnungspreise über die Mittelwerte der drei Preisbereiche und der Optionswert über den Strikepreis der Option.
+Im Beispiel bindet bei beiden Minderungsfällen die jeweils gegenüberliegende Seite, denn bei der Minderung des Turbineneinsatzes fällt das Minimum mit $47{,}74\,\si{\text{\euro}\per MWh}$ gegen $78{,}45\,\si{\text{\euro}\per MWh}$ auf die Pumpseite und bei der Minderung des Pumpeinsatzes das Maximum mit $94{,}51\,\si{\text{\euro}\per MWh}$ gegen $78{,}45\,\si{\text{\euro}\per MWh}$ auf die Turbinenseite. Zwingend ist das nicht, bei einem engeren mittleren Bereich bindet stattdessen $p_{2b}$. Diese Preise vergüten die durch die Maßnahme angeforderte Arbeit. Der Optionswert des folgenden Abschnitts vergütet demgegenüber die gesperrte Leistung. Beide gehen von denselben Grenzpreisen aus, die Abrechnungspreise über die Mittelwerte der drei Preisbereiche und der Optionswert über den Strikepreis der Option.
 
 \section{Optionswert und Aggregation}
 \label{anh:weber:option}
 
-Bewertet wird eine Maßnahme in der Viertelstunde von 13:00 bis 13:15 Uhr, bei der dem Betreiber die Flexibilität der gesamten Anlagenleistung verloren geht. Der Day-Ahead-Preis beträgt $57{,}26$, der Preis der \ac{IDA-1} $\mu = 75{,}93$ und das Volatilitätsmaß $\sigma = 21{,}75\,\si{\text{\euro}\per MWh}$. Da der Day-Ahead-Preis unter $g_T$ und über $g_P$ liegt, wird die Turbinenseite als Call und die Pumpenseite als Put bewertet. Der Optionswert folgt aus dem standardisierten Abstand nach Gleichung~\eqref{eq:anh:weber:d} und den beiden Bewertungsformeln~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put}. Darin bezeichnen $\Phi$ und $\varphi$ die Verteilungs- und die Dichtefunktion der Standardnormalverteilung und $\Delta t = \SI{0,25}{h}$ die Produktdauer. Für die Turbinenseite ist $X = g_T$, für die Pumpenseite $X = g_P$.
+Bewertet wird eine Maßnahme in der Viertelstunde von 13:00 bis 13:15 Uhr, bei der dem Betreiber die Flexibilität der gesamten Anlagenleistung verloren geht. Der Day-Ahead-Preis beträgt $57{,}26\,\si{\text{\euro}\per MWh}$, der Preis der \ac{IDA-1} $\mu = 75{,}93\,\si{\text{\euro}\per MWh}$ und das Volatilitätsmaß $\sigma = 21{,}75\,\si{\text{\euro}\per MWh}$. Da der Day-Ahead-Preis unter $g_T$ und über $g_P$ liegt, wird die Turbinenseite als Call und die Pumpenseite als Put bewertet. Der Optionswert folgt aus dem standardisierten Abstand nach Gleichung~\eqref{eq:anh:weber:d} und den beiden Bewertungsformeln~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put}. Darin bezeichnen $\Phi$ und $\varphi$ die Verteilungs- und die Dichtefunktion der Standardnormalverteilung und $\Delta t = \SI{0,25}{h}$ die Produktdauer, die hier abweichend von den Gleichungen~\eqref{eq:weber_call} und~\eqref{eq:weber_put} des Grundlagenkapitels bereits in die Formel einbezogen ist, sodass $V_C$ und $V_P$ den Optionswert je Megawatt und Viertelstunde in \si{\text{\euro}\per MW} bezeichnen. Für die Turbinenseite ist $X = g_T$, für die Pumpenseite $X = g_P$.
 
 \begin{align}
   d &= \frac{\mu - X}{\sigma} \label{eq:anh:weber:d}\\
@@ -100,23 +100,23 @@ Bewertet wird eine Maßnahme in der Viertelstunde von 13:00 bis 13:15 Uhr, bei d
   V_P &= \sigma \left( \varphi(d) - d\,\Phi(-d) \right) \Delta t \label{eq:anh:weber:put}
 \end{align}
 
-Daraus ergeben sich die beiden Abstände.
+Das Volatilitätsmaß beträgt ungerundet $21{,}74848\,\si{\text{\euro}\per MWh}$ und wird in dieser Genauigkeit weitergerechnet, während die Festlegung es auf zwei Stellen gerundet ausweist. Daraus ergeben sich die beiden Abstände.
 
 \begin{equation}
-  d_T = \frac{75{,}93 - 99{,}97}{21{,}75} = -1{,}10529
+  d_T = \frac{75{,}93 - 99{,}97}{21{,}74848} = -1{,}105365
   \qquad
-  d_P = \frac{75{,}93 - 56{,}93}{21{,}75} = 0{,}87356
+  d_P = \frac{75{,}93 - 56{,}93}{21{,}74848} = 0{,}873624
   \label{eq:anh:weber:beispiel:d}
 \end{equation}
 
-Mit $\Phi(d_T) = 0{,}13452$, $\varphi(d_T) = 0{,}21658$, $\Phi(-d_P) = 0{,}19118$ und $\varphi(d_P) = 0{,}27239$ liefern die Gleichungen~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put} die Optionswerte.
+Mit $\Phi(d_T) = 0{,}134501$, $\varphi(d_T) = 0{,}216567$, $\Phi(-d_P) = 0{,}191161$ und $\varphi(d_P) = 0{,}272382$ liefern die Gleichungen~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put} die Optionswerte.
 
 \begin{align}
-  V_C &= 21{,}75 \cdot \Big( \left(-1{,}10529\right) \cdot 0{,}13452 + 0{,}21658 \Big) \cdot 0{,}25 = 0{,}36915\,\si{\text{\euro}\per MW} \label{eq:anh:weber:beispiel:vc}\\
-  V_P &= 21{,}75 \cdot \Big( 0{,}27239 - 0{,}87356 \cdot 0{,}19118 \Big) \cdot 0{,}25 = 0{,}57296\,\si{\text{\euro}\per MW} \label{eq:anh:weber:beispiel:vp}
+  V_C &= 21{,}74848 \cdot \Big( \left(-1{,}105365\right) \cdot 0{,}134501 + 0{,}216567 \Big) \cdot 0{,}25 = 0{,}36915\,\si{\text{\euro}\per MW} \label{eq:anh:weber:beispiel:vc}\\
+  V_P &= 21{,}74848 \cdot \Big( 0{,}272382 - 0{,}873624 \cdot 0{,}191161 \Big) \cdot 0{,}25 = 0{,}57296\,\si{\text{\euro}\per MW} \label{eq:anh:weber:beispiel:vp}
 \end{align}
 
-Die leistungsbezogenen Werte werden nach Gleichung~\eqref{eq:anh:weber:aggregation} mit dem gesperrten Leistungsbereich multipliziert, der hier der vollen Turbinen- und Pumpleistung entspricht. Das Volatilitätsmaß beträgt ungerundet $21{,}74848\,\si{\text{\euro}\per MWh}$ und wird in dieser Genauigkeit weitergerechnet, während die Festlegung es auf zwei Stellen gerundet ausweist. Mit dem gerundeten Wert ergäbe sich ein Gesamtbetrag von $177{,}00$ statt $176{,}96\,\text{\euro}$.
+Die leistungsbezogenen Werte werden nach Gleichung~\eqref{eq:anh:weber:aggregation} mit dem gesperrten Leistungsbereich multipliziert, der hier der vollen Turbinen- und Pumpleistung entspricht. Mit dem auf $21{,}75\,\si{\text{\euro}\per MWh}$ gerundeten Wert ergäbe sich ein Gesamtbetrag von $177{,}00\,\text{\euro}$ statt $176{,}96\,\text{\euro}$.
 
 \begin{equation}
   V = V_C \cdot P_T + V_P \cdot P_P
@@ -141,11 +141,11 @@ Der Optionswert nach den Gleichungen~\eqref{eq:anh:weber:call} und~\eqref{eq:anh
   \label{eq:anh:weber:innererwert}
 \end{equation}
 
-Im bewerteten Fall liegt $\mu$ zwischen den Grenzpreisen, beide Optionen sind aus dem Geld und der gesamte Betrag ist Zeitwert. Das Beispiel rechnet nur diese eine Viertelstunde durch, obwohl 15 Viertelstunden des Tages ein erwartetes Preisniveau oberhalb von $g_T$ tragen. Tabelle~\ref{tab:anh:weber:vergleich} wendet das Verfahren deshalb zusätzlich auf die teuerste Viertelstunde des Tages an, nämlich 19:00 bis 19:15 Uhr mit $\mu = 144{,}02$ und $\sigma = 28{,}79\,\si{\text{\euro}\per MWh}$. Der Day-Ahead-Preis dieser Stunde liegt mit $97{,}89\,\si{\text{\euro}\per MWh}$ unter $g_T$, sodass die Zuordnung der Optionsart unverändert bleibt.
+Im bewerteten Fall liegt $\mu$ zwischen den Grenzpreisen, beide Optionen sind aus dem Geld und der gesamte Betrag ist Zeitwert. Das Beispiel rechnet nur diese eine Viertelstunde durch, obwohl 15 Viertelstunden des Tages ein erwartetes Preisniveau oberhalb von $g_T$ tragen. Tabelle~\ref{tab:anh:weber:vergleich} wendet das Verfahren deshalb zusätzlich auf die teuerste Viertelstunde des Tages an, nämlich 19:00 bis 19:15 Uhr mit $\mu = 144{,}02\,\si{\text{\euro}\per MWh}$ und $\sigma = 28{,}79\,\si{\text{\euro}\per MWh}$. Der Day-Ahead-Preis dieser Stunde liegt mit $97{,}89\,\si{\text{\euro}\per MWh}$ unter $g_T$, sodass die Zuordnung der Optionsart unverändert bleibt \cite{smard_marktdaten_2026}.
 
 \begin{table}[htbp]
     \centering
-    \caption{Bewertung derselben Viertelstunde bei zwei erwarteten Preisniveaus.}
+    \caption{Bewertung zweier Viertelstunden desselben Tages bei unterschiedlichem erwartetem Preisniveau.}
     \label{tab:anh:weber:vergleich}
     \small
     \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.50\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.25\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.25\textwidth-2\tabcolsep\relax}@{}}
@@ -158,7 +158,7 @@ Im bewerteten Fall liegt $\mu$ zwischen den Grenzpreisen, beide Optionen sind au
         \hline
         \acs{ID1} in \si{\text{\euro}\per MWh} & 74,95 & 112,90 \\
         \hline
-        Volatilitätsmaß $\sigma$ in \si{\text{\euro}\per MWh} & 21,75 & 28,79 \\
+        Volatilitätsmaß $\sigma$ in \si{\text{\euro}\per MWh}$^{*}$ & 21,75 & 28,79 \\
         \hline
         Standardisierter Abstand $d_T$ & $-1{,}10536$ & 1,53022 \\
         \hline
@@ -168,38 +168,43 @@ Im bewerteten Fall liegt $\mu$ zwischen den Grenzpreisen, beide Optionen sind au
         \hline
         davon Zeitwert in \si{\text{\euro}\per MW} & 0,36915 & 0,19680 \\
         \hline
-        Entschädigung Ausspeisung in \text{\euro} & 73,83 & 2241,86 \\
+        Entschädigung Ausspeicherseite in \text{\euro} & 73,83 & 2241,86 \\
         \hline
-        Entschädigung Einspeisung in \text{\euro} & 103,13 & 0,45 \\
+        Entschädigung Einspeicherseite in \text{\euro} & 103,13 & 0,45 \\
         \hline
         Gesamtbetrag in \text{\euro} & 176,96 & 2242,31 \\
         \hline
     \end{tabular}
+
+    \vspace{0.5em}
+    \begin{minipage}{\textwidth}
+    \small $^{*}$ Gerechnet mit den ungerundeten Volatilitätsmaßen $21{,}74848\,\si{\text{\euro}\per MWh}$ und $28{,}78664\,\si{\text{\euro}\per MWh}$.
+    \end{minipage}
 \end{table}
 
-Im zweiten Fall trägt der innere Wert nahezu den gesamten Optionswert der Ausspeiseseite, während der Zeitwert auf einen kleinen Rest schrumpft und die Einspeiseoption ihren Wert fast vollständig verliert. Die Entschädigung steigt dadurch um den Faktor zwölf. Ein solcher Fall entsteht, wenn der Intraday-Handel die Viertelstunde über den Turbinengrenzpreis hebt, während der Day-Ahead-Preis darunter bleibt. In der Viertelstunde um 13:00 Uhr liegt dagegen auch der \ac{ID1} unter dem Turbinengrenzpreis, sodass eine Ausspeisung dort nicht lohnend gewesen wäre. Die zweite Spalte ist dabei eine eigene Anwendung des Verfahrens, denn das Beispiel weist für diese Viertelstunde keine Optionswerte aus. Der ermittelte Wert ist stets auf denjenigen Leistungsbereich anzuwenden, der ohne die Anweisung flexibel einsetzbar gewesen wäre, bei beidseitiger Fixierung also auf die gesamte Anlagenleistung und bei einseitiger nur auf den gesperrten Bereich. Wird durch die Maßnahme zugleich Arbeit bewegt, ist diese zum jeweiligen Abrechnungspreis zu vergüten. Da der Strikepreis bereits in der Optionsformel abgezogen ist, tritt der Optionswert allein gegen den anteiligen Werteverbrauch an und wird nur einbezogen, wenn er diesen übersteigt \cite{bundesnetzagentur_anlage1_2024}.
+Im zweiten Fall trägt der innere Wert nahezu den gesamten Optionswert der Ausspeicherseite, während der Zeitwert auf einen kleinen Rest schrumpft und die Einspeicheroption ihren Wert fast vollständig verliert. Die Entschädigung steigt dadurch um den Faktor $12{,}7$. Ein solcher Fall entsteht, wenn die \ac{IDA-1} die Viertelstunde über den Turbinengrenzpreis hebt, während der Day-Ahead-Preis darunter bleibt. In der Viertelstunde um 13:00 Uhr liegt dagegen auch der \ac{ID1} mit $74{,}95\,\si{\text{\euro}\per MWh}$ unter dem Turbinengrenzpreis, sodass eine Ausspeisung dort nicht lohnend gewesen wäre. Die zweite Spalte ist dabei eine eigene Anwendung des Verfahrens. Erwartetes Preisniveau und Volatilitätsmaß der Viertelstunde von 19:00 Uhr entstammen den Datenreihen des Berechnungsbeispiels, das für sie jedoch keine Optionswerte ausweist, der Day-Ahead-Preis und die Werte des \ac{ID1} beider Viertelstunden stammen aus veröffentlichten Marktdaten für den 01.02.2024 \cite{bundesnetzagentur_berechnungsbeispiel_2024, smard_marktdaten_2026}. Der ermittelte Wert ist stets auf denjenigen Leistungsbereich anzuwenden, der ohne die Anweisung flexibel einsetzbar gewesen wäre, bei beidseitiger Fixierung also auf die gesamte Anlagenleistung und bei einseitiger nur auf den gesperrten Bereich. Wird durch die Maßnahme zugleich Arbeit bewegt, ist diese zum jeweiligen Abrechnungspreis zu vergüten. Da der Strikepreis bereits in der Optionsformel abgezogen ist, tritt der Optionswert allein gegen den anteiligen Werteverbrauch an und wird nur einbezogen, wenn er diesen übersteigt \cite{bundesnetzagentur_anlage1_2024}.
 
 \section{Anreizwirkung}
 \label{anh:weber:anreiz}
 
 Der Abschnitt verfolgt eine einzelne Viertelstunde entlang der Zeitschiene des Vortages und fragt an jedem Punkt, was der Betreiber weiß, was er erwartet, worüber er noch entscheiden kann und mit welchen Beträgen er rechnet. Betrachtet wird die Viertelstunde von 19:00 bis 19:15 Uhr des 01.02.2024, die teuerste des Tages.
 
-Vor der Auktion des \ac{DA} plant der Betreiber aus einer Preisprognose und kann daraus ein Gebot einbringen, muss es aber nicht. Von den Größen, aus denen sich die Vergütung einer späteren Anweisung zusammensetzt, liegt nur das Volatilitätsmaß vor, denn es wird aus den 30 vorangegangenen Tagen gebildet. Weder das erwartete Preisniveau noch der Strikepreis sind bestimmt. Beide folgen nach Abschnitt~\ref{anh:weber:grenzpreis} und Abschnitt~\ref{anh:weber:option} aus den 96 Viertelstundenpreisen der \ac{IDA-1} des Liefertages, und diese Reihe entsteht erst am Nachmittag des Vortages. Eine Anweisung ist zu diesem Zeitpunkt nicht möglich.
+Vor der Auktion des \ac{DA} plant der Betreiber aus einer Preisprognose und kann daraus ein Gebot einbringen, muss es aber nicht. Von den Größen, aus denen sich die Vergütung einer späteren Anweisung zusammensetzt, liegt nur das Volatilitätsmaß vor, denn es wird aus den 30 vorangegangenen Tagen gebildet. Weder das erwartete Preisniveau noch der Strikepreis sind bestimmt. Beide folgen nach Abschnitt~\ref{anh:weber:grenzpreis} und Abschnitt~\ref{anh:weber:option} aus den 96 Viertelstundenpreisen der \ac{IDA-1} des Liefertages, und diese Reihe entsteht erst am Nachmittag des Vortages. Für eine Anweisung zu diesem Zeitpunkt sieht die Festlegung keine Bemessung vor, denn sie geht vereinfachend davon aus, dass Anweisungen ausschließlich nach der ersten Fahrplanabgabe um 14:30 Uhr des Vortages erfolgen \cite{bundesnetzagentur_anlage1_2024}.
 
-Mit dem Ergebnis des \ac{DA} steht der stündliche Preis des Liefertages fest, und der Betreiber kennt seine vorläufige Position, die er in der \ac{IDA-1} und im kontinuierlichen Handel noch verändern kann. Für die Bemessung ändert das wenig. Der Day-Ahead-Preis ist zwar die eine Hälfte des Vergleichs, über den sich die Optionsart entscheidet, doch die andere Hälfte fehlt weiterhin, denn der Strikepreis ist nicht gebildet. Die Optionsart steht damit nicht fest, obwohl einer ihrer beiden Eingangswerte vorliegt. Der Betreiber kann von hier an das Ergebnis der \ac{IDA-1} prognostizieren, auch unter Berücksichtigung seiner Vermarktung in der Day-Ahead-Auktion, und daraus abschätzen, in welche Richtung der Vergleich ausgehen dürfte. Seine Erwartung stützt sich auf Erzeugungs- und Lastprognosen, die bis zur Gebotsfrist weiter aktualisiert werden. Mit dem Day-Ahead-Ergebnis öffnet sich zugleich die \ac{IDA-1}, in der er die Viertelstunde vermarkten kann, und ab 14:30 Uhr des Vortages sind Anweisungen möglich, während die Gebotsfrist bis 15:00 Uhr läuft. In dieser halben Stunde überlagert sich beides, denn er kann sein Gebot noch abgeben oder ändern und dabei neu eingetroffene Prognosen berücksichtigen, und zugleich kann ihn bereits eine Anweisung treffen. Die Entscheidung über das Gebot fällt damit, bevor die Ergebnisse vorliegen, aus denen sich der Ausgleich vollständig berechnen lässt. In sie gehen der erwartete Preis, die Wahrscheinlichkeit einer Anweisung und die Vergütung ein, die sie brächte, und alle drei sind zu diesem Zeitpunkt zu prognostizieren. Trifft ihn hier eine Anweisung, so betrifft sie die Einspeisung, die sein Fahrplan aus der Day-Ahead-Auktion ausweist, und nur deshalb kann die Bemessung am Day-Ahead-Preis ansetzen. Das erwartete Preisniveau und der Strikepreis sind zu diesem Zeitpunkt noch unbestimmt, und die Festlegung sieht eine Schätzung allein für das erwartete Preisniveau vor. Geschätzt wird derselbe Preis, der die Bewertung danach trägt, also $\mu$ für dasselbe Viertelstundenprodukt, gebildet nach Gleichung~\eqref{eq:anh:weber:schaetzung} aus dem stündlichen Day-Ahead-Preis $p_{\mathrm{DA}}$ der zugehörigen Stunde und einem viertelstundenscharfen Auf- oder Abschlag $\Delta_{90}$, dem Mittelwert der Differenz aus dem Preis der \ac{IDA-1} und dem Day-Ahead-Preis derselben Stunde über die 90 vorangegangenen Tage \cite{bundesnetzagentur_anlage1_2024}.
+Mit dem Ergebnis des \ac{DA} steht der stündliche Preis des Liefertages fest, und der Betreiber kennt seine vorläufige Position, die er in der \ac{IDA-1} und im kontinuierlichen Handel noch verändern kann. Für die Bemessung ist damit der erste Eingangswert bestimmt. Der Day-Ahead-Preis ist zwar die eine Hälfte des Vergleichs, über den sich die Optionsart entscheidet, doch die andere Hälfte liegt nur als Schätzwert vor, denn der Strikepreis folgt aus den Grenzpreisen, die bis 14:30 Uhr aus der geschätzten Preisreihe der \ac{IDA-1} zu bilden sind. Die Optionsart steht damit nur vorläufig fest, obwohl einer ihrer beiden Eingangswerte bereits endgültig vorliegt. Der Betreiber kann von hier an das Ergebnis der \ac{IDA-1} prognostizieren, auch unter Berücksichtigung seiner Vermarktung in der Day-Ahead-Auktion, und daraus abschätzen, in welche Richtung der Vergleich ausgehen dürfte. Seine Erwartung stützt sich auf Erzeugungs- und Lastprognosen, die bis zur Gebotsfrist weiter aktualisiert werden. Zugleich kann er die Viertelstunde in der \ac{IDA-1} nach Abschnitt~\ref{sec:market_horizons} vermarkten, und ab 14:30 Uhr des Vortages sind Anweisungen möglich \cite{bundesnetzagentur_anlage1_2024}. In dieser halben Stunde überlagert sich beides, denn er kann sein Gebot noch abgeben oder ändern und dabei neu eingetroffene Prognosen berücksichtigen, und zugleich kann ihn bereits eine Anweisung treffen. Die Entscheidung über das Gebot fällt damit, bevor die Ergebnisse vorliegen, aus denen sich der Ausgleich vollständig berechnen lässt. In sie gehen der erwartete Preis, die Wahrscheinlichkeit einer Anweisung und die Vergütung ein, die sie brächte, und alle drei sind zu diesem Zeitpunkt zu prognostizieren. Trifft ihn hier eine Anweisung, so betrifft sie die Einspeisung, die sein Fahrplan aus der Day-Ahead-Auktion ausweist. Das erwartete Preisniveau und der Strikepreis sind zu diesem Zeitpunkt noch unbestimmt, weil beide aus der Preisreihe der \ac{IDA-1} folgen, die erst um 15:15 Uhr vorliegt. Die Festlegung schätzt diese Reihe deshalb täglich für jedes Viertelstundenprodukt aus dem stündlichen Day-Ahead-Preis und einem Auf- oder Abschlag, und aus der geschätzten Reihe folgen für Anweisungen vor 15:15 Uhr sowohl die Grenzpreise, die bis 14:30 Uhr zu melden sind, als auch das erwartete Preisniveau \cite{bundesnetzagentur_anlage1_2024}. Geschätzt wird derselbe Preis, der die Bewertung danach trägt, also $\mu$ für dasselbe Viertelstundenprodukt, gebildet nach Gleichung~\eqref{eq:anh:weber:schaetzung} aus dem stündlichen Day-Ahead-Preis $p_{\mathrm{DA}}$ der zugehörigen Stunde und einem viertelstundenscharfen Auf- oder Abschlag $\Delta_{90}$, dem Mittelwert der Differenz aus dem Preis der \ac{IDA-1} und dem Day-Ahead-Preis derselben Stunde über die 90 vorangegangenen Tage \cite{bundesnetzagentur_anlage1_2024}.
 \begin{equation}
   \hat{\mu} = p_{\mathrm{DA}} + \Delta_{90}
   \qquad
   \Delta_{90} = \frac{1}{90} \sum_{i=1}^{90} \left( p_{\mathrm{IDA\text{-}1},\,i} - p_{\mathrm{DA},\,i} \right)
   \label{eq:anh:weber:schaetzung}
 \end{equation}
-Die Schätzung bildet damit den Kenntnisstand des Betreibers im Anweisungszeitpunkt ab, denn der Optionswert misst, was ihm die Anweisung nimmt, und das bemisst sich an dem, womit er zu diesem Zeitpunkt rechnen konnte. Der Strikepreis braucht dafür keine eigene Regel, denn die Grenzpreise sind eine Eigenschaft der Preisreihe des Liefertages und lassen sich mit der Abrechnung bilden, die ohnehin erst nach der Lieferung erfolgt. Die Zuordnung der Optionsart folgt auch in diesem Fenster dem stündlichen Day-Ahead-Preis, denn dieser liegt bereits vor und die Regel unterscheidet nicht nach dem Anweisungszeitpunkt.
+Die Schätzung bildet damit den Kenntnisstand des Betreibers im Anweisungszeitpunkt ab, denn der Optionswert misst, was ihm die Anweisung nimmt, und das bemisst sich an dem, womit er zu diesem Zeitpunkt rechnen konnte. Die Zuordnung der Optionsart folgt auch in diesem Fenster dem stündlichen Day-Ahead-Preis, denn dieser liegt bereits vor und die Regel unterscheidet nicht nach dem Anweisungszeitpunkt.
 
-Um 15:15 Uhr liegt das Ergebnis der \ac{IDA-1} vor. Die Reihe der 96 Viertelstundenpreise trägt die Grenzpreise und über sie den Strikepreis, ihr Preis für das betrachtete Produkt liefert das erwartete Preisniveau, und das Volatilitätsmaß steht aus den 30 Vortagen fest. Für den Tagesspeicher ergeben sich 16 Turbinier- und 20 Pumpviertelstunden mit den Grenzpreisen $99{,}97$ und $56{,}93\,\si{\text{\euro}\per MWh}$, während dieselbe Reihe die betrachtete Viertelstunde mit $144{,}02\,\si{\text{\euro}\per MWh}$ bewertet. Der Day-Ahead-Preis der Stunde 19 liegt mit $97{,}89\,\si{\text{\euro}\per MWh}$ unter dem Turbinengrenzpreis, sodass die Turbinenseite als Call und damit als unvermarktet bewertet wird. Da die Anweisung allein den Turbineneinsatz mindert, ist nur diese Seite gesperrt, und ihr Call trägt $2241{,}86\,\text{\euro}$, davon $2202{,}50\,\text{\euro}$ innerer Wert. Die Pumpseite tritt hinzu, wenn die Anweisung auch den Pumpbetrieb erfasst. Damit ist die Höhe der Vergütung bestimmt, und der Betreiber weiß von hier an, was ihm ein Abruf einbringt, und kann diesen Betrag gegen seine Vermarktungsmöglichkeiten abwägen. Offen bleibt nur, ob eine Anweisung ergeht und wie sich der kontinuierliche Handel entwickelt, der die Vergütung nicht berührt, weil das Volatilitätsmaß aus dem \ac{ID1} der 30 Vortage und nicht aus dem des Liefertages stammt, und deshalb allein auf die Erlösalternativen wirkt.
+Um 15:15 Uhr liegt das Ergebnis der \ac{IDA-1} vor. Die Reihe der 96 Viertelstundenpreise trägt die Grenzpreise und über sie den Strikepreis, ihr Preis für das betrachtete Produkt liefert das erwartete Preisniveau, und das Volatilitätsmaß steht aus den 30 Vortagen fest. Für den Tagesspeicher ergeben sich 16 Turbinier- und 20 Pumpviertelstunden mit den Grenzpreisen $99{,}97\,\si{\text{\euro}\per MWh}$ und $56{,}93\,\si{\text{\euro}\per MWh}$, während dieselbe Reihe die betrachtete Viertelstunde mit $144{,}02\,\si{\text{\euro}\per MWh}$ bewertet. Der Day-Ahead-Preis der Stunde 19 liegt mit $97{,}89\,\si{\text{\euro}\per MWh}$ unter dem Turbinengrenzpreis, sodass die Turbinenseite als Call und damit als unvermarktet bewertet wird. Unterstellt ist eine einseitige Fixierung, bei der dem Betreiber der Pumpbetrieb offenbleibt, sodass nur die Turbinenseite gesperrt ist und ihr Call $2241{,}86\,\text{\euro}$ trägt, davon $2202{,}50\,\text{\euro}$ innerer Wert. Bei beidseitiger Fixierung tritt die Pumpseite mit $0{,}45\,\text{\euro}$ hinzu \cite{bundesnetzagentur_anlage1_2024}. Damit ist die Höhe der Vergütung bestimmt, und der Betreiber weiß von hier an, was ihm ein Abruf einbringt, und kann diesen Betrag gegen seine Vermarktungsmöglichkeiten abwägen. Offen bleibt nur, ob eine Anweisung ergeht und wie sich der kontinuierliche Handel entwickelt, der die Vergütung nicht berührt, weil das Volatilitätsmaß aus dem \ac{ID1} der 30 Vortage und nicht aus dem des Liefertages stammt, und deshalb allein auf die Erlösalternativen wirkt.
 
-Handelt der Betreiber allein mit Blick auf seine Markterlöse, kann er die Viertelstunde in der \ac{IDA-1} oder im kontinuierlichen Handel verkaufen und in beiden Fällen ausspeisen. Zur Wahl steht dabei die Turbinenleistung, und zwar nur der Teil der \SI{200}{\mega\watt}, der nicht am Regelleistungsmarkt gebunden oder für die Spannungshaltung vorgehalten ist, denn die am Regelleistungsmarkt bereitgestellte Leistungsscheibe wird für Redispatch-Maßnahmen nicht herangezogen \cite{bundesnetzagentur_anlage1_2024}. Im Folgenden ist die volle Leistung unterstellt, woraus über die Viertelstunde \SI{50}{MWh} folgen. Ein freiwilliger Pumpbetrieb kommt bei diesem Preisniveau nicht in Betracht, sodass allein die Turbinenseite betroffen ist. Wer in der \ac{IDA-1} verkaufen wollte, musste dort vor 15:00 Uhr bieten, und dieser Weg erlöst $7201{,}00\,\text{\euro}$. Der kontinuierliche Handel bleibt bis kurz vor Lieferbeginn offen und erlöst zum \ac{ID1} von $112{,}90\,\si{\text{\euro}\per MWh}$ $5645{,}00\,\text{\euro}$. Die Differenz von $1556{,}00\,\text{\euro}$ legt nahe, dass sich die Auktion im Rückblick mehr gelohnt hätte.
+Handelt der Betreiber allein mit Blick auf seine Markterlöse, kann er die Viertelstunde in der \ac{IDA-1} oder im kontinuierlichen Handel verkaufen und in beiden Fällen ausspeisen. Zur Wahl steht dabei die Turbinenleistung, und zwar nur der Teil der \SI{200}{\mega\watt}, der nicht am Regelleistungsmarkt gebunden ist, denn die am Regelleistungsmarkt bereitgestellte Leistungsscheibe wird für Redispatch-Maßnahmen nicht herangezogen \cite{bundesnetzagentur_anlage1_2024}. Im Folgenden ist die volle Leistung unterstellt, woraus über die Viertelstunde \SI{50}{MWh} folgen. Ein freiwilliger Pumpbetrieb kommt bei diesem Preisniveau nicht in Betracht, sodass allein die Turbinenseite betroffen ist. Wer in der \ac{IDA-1} verkaufen wollte, musste dort vor 15:00 Uhr bieten, und dieser Weg erlöst $7201{,}00\,\text{\euro}$. Der kontinuierliche Handel bleibt bis kurz vor Lieferbeginn offen und erlöst zum \ac{ID1} von $112{,}90\,\si{\text{\euro}\per MWh}$ $5645{,}00\,\text{\euro}$ \cite{smard_marktdaten_2026}. Die Differenz von $1556{,}00\,\text{\euro}$ legt nahe, dass sich die Auktion im Rückblick mehr gelohnt hätte.
 
-Aus der verkauften Menge folgt eine Einspeisung im Fahrplan, und auf diese bezieht sich die Anweisung, gleich ob der Verkauf in der \ac{IDA-1} oder im kontinuierlichen Handel zustande kam. Ergeht sie, bleibt das Geschäft des Betreibers bestehen, weil der \ac{ÜNB} die nicht eingespeiste Menge beschafft und in den Einspeisebilanzkreis bucht. Er erstattet die ersparte Aufwendung zum Abrechnungspreis der Minderung und erhält von den beiden verbleibenden Positionen die höhere, nämlich den anteiligen Werteverbrauch $A$ oder die entgangene Erlösmöglichkeit \cite{bundesnetzagentur_anlage1_2024}. Der Werteverbrauch fällt bei einer Minderung gering aus, weil die Anlage weniger und nicht mehr läuft, sodass der Optionswert das Maximum bestimmt.
+Aus der verkauften Menge folgt eine Einspeisung im Fahrplan, und auf diese bezieht sich die Anweisung, gleich ob der Verkauf in der \ac{IDA-1} oder im kontinuierlichen Handel zustande kam. Ergeht sie, bleibt das Geschäft des Betreibers bestehen, weil der \ac{ÜNB} die nicht eingespeiste Menge beschafft und in den Einspeisebilanzkreis bucht. Er erstattet die ersparte Aufwendung zum Abrechnungspreis der Minderung und erhält von den beiden verbleibenden Positionen die höhere, nämlich den anteiligen Werteverbrauch $A$ oder die entgangene Erlösmöglichkeit \cite{bundesnetzagentur_anlage1_2024}. Die Höhe des Werteverbrauchs hängt von den handelsrechtlichen Restwerten der Anlage ab, die das Beispiel nicht enthält, sodass im Folgenden unterstellt wird, dass der Optionswert das Maximum bestimmt.
 \begin{equation}
   Z = - p_{\mathrm{neg}} \, W + \max\left( A,\, V \right)
   \label{eq:anh:weber:verguetung}
@@ -209,14 +214,14 @@ Davon zu trennen ist das Ergebnis des Betreibers, also der Beitrag dieser Vierte
   G_0 &= p_V \, W - C \label{eq:anh:weber:g0}\\
   G_1 &= p_V \, W - p_{\mathrm{neg}} \, W + V \label{eq:anh:weber:g1}
 \end{align}
-Mit $W = \SI{50}{MWh}$, $p_{\mathrm{neg}} \, W = 2386{,}90$ und $V = 2241{,}86\,\text{\euro}$ ergeben sich die vier Ergebnisse.
+Mit $W = \SI{50}{MWh}$, $p_{\mathrm{neg}} \, W = 2386{,}90\,\text{\euro}$ und $V = 2241{,}86\,\text{\euro}$ ergeben sich die vier Ergebnisse.
 \begin{align}
   G_0^{\mathrm{IDA}} &= 7201{,}00 - 2386{,}90 = 4814{,}10\,\text{\euro} \label{eq:anh:weber:g0ida}\\
   G_0^{\mathrm{ID}} &= 5645{,}00 - 2386{,}90 = 3258{,}10\,\text{\euro} \label{eq:anh:weber:g0id}\\
   G_1^{\mathrm{IDA}} &= 7201{,}00 - 2386{,}90 + 2241{,}86 = 7055{,}96\,\text{\euro} \label{eq:anh:weber:g1ida}\\
   G_1^{\mathrm{ID}} &= 5645{,}00 - 2386{,}90 + 2241{,}86 = 5499{,}96\,\text{\euro} \label{eq:anh:weber:g1id}
 \end{align}
-$G_0$ ist der Arbitragegewinn, gerechnet mit dem mittleren Preis der Pumpviertelstunden als Beschaffungskosten. Über die \ac{IDA-1} liegt er um $1556{,}00\,\text{\euro}$ höher als im kontinuierlichen Handel. Ein Abruf hebt beide Wege um denselben Optionswert an, sodass der Betreiber gegenüber dem jeweiligen Arbitrageergebnis besser steht, gleich auf welchem Weg er vermarktet hat. Von dem Zeitpunkt an, zu dem sich der Optionswert berechnen lässt, weiß der Betreiber, wie vorteilhaft ein Abruf für ihn wäre, und kann abwägen, ob er früh und sicher in der \ac{IDA-1} vermarktet oder spät und unsicher im kontinuierlichen Handel, dafür aber mit höherer Aussicht auf einen Abruf. Eine späte Einspeisung erscheint erst kurz vor Lieferbeginn im Fahrplan und liegt den vorausschauenden Rechenläufen des \ac{ÜNB} nicht vor, sodass der Engpass erst spät erkannt wird und der Betriebspunkt, der ihn verschärft, durch die Anweisung geheilt und zugleich vergütet wird, was als Inc-Dec-Gaming bekannt ist.
+$G_0$ ist der Arbitragegewinn, gerechnet mit dem Abrechnungspreis der Minderung als Beschaffungskosten der ausgespeicherten Energie. Über die \ac{IDA-1} liegt er um $1556{,}00\,\text{\euro}$ höher als im kontinuierlichen Handel. Ein Abruf hebt beide Wege um denselben Optionswert an, sodass der Betreiber gegenüber dem jeweiligen Arbitrageergebnis besser steht, gleich auf welchem Weg er vermarktet hat. Von dem Zeitpunkt an, zu dem sich der Optionswert berechnen lässt, weiß der Betreiber, wie vorteilhaft ein Abruf für ihn wäre, und kann abwägen, ob er früh und sicher in der \ac{IDA-1} vermarktet oder spät und unsicher im kontinuierlichen Handel, dafür aber mit höherer Aussicht auf einen Abruf. Eine späte Einspeisung erscheint erst kurz vor Lieferbeginn im Fahrplan und liegt den vorausschauenden Rechenläufen des \ac{ÜNB} nicht vor, sodass der Engpass erst spät erkannt wird und der Betriebspunkt, der ihn verschärft, durch die Anweisung geheilt und zugleich vergütet wird, was als Inc-Dec-Gaming bekannt ist.
 
 Die bisherige Rechnung unterstellt eine Reduktion der Entladung auf null. Die Festlegung kennt daneben die Erhöhung des Pumpeinsatzes als eigenen Fall, für den nach Tabelle~\ref{tab:anh:weber:abrechnung} $p_{4b}$ mit $41{,}03\,\si{\text{\euro}\per MWh}$ maßgeblich ist und den der Betreiber ebenfalls an den Netzbetreiber zahlt. Beide Fälle lassen sich in derselben Viertelstunde verbinden, sodass die Anlage von voller Turbinierung auf vollen Pumpbetrieb wechselt und der Leistungshub von \SI{200}{\mega\watt} auf \SI{380}{\mega\watt} steigt. Tabelle~\ref{tab:anh:weber:schwenk} stellt beide Äste gegenüber und weist in der letzten Spalte aus, was der größere Hub zusätzlich auslöst.
 
@@ -227,11 +232,13 @@ Die bisherige Rechnung unterstellt eine Reduktion der Entladung auf null. Die Fe
     \small
     \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.28\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.14\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.14\textwidth-\tabcolsep\relax}>{\raggedleft\arraybackslash}p{\dimexpr0.16\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.28\textwidth-2\tabcolsep\relax}@{}}
         \hline
-        \textbf{Bestandteil} & \textbf{Minderung} & \textbf{Schwenk} & \textbf{Unterschied} & \textbf{Zahlung} \\
+        \textbf{Bestandteil} & \textbf{Minderung in \si{\text{\euro}}} & \textbf{Schwenk in \si{\text{\euro}}} & \textbf{Unterschied in \si{\text{\euro}}} & \textbf{Zahlung} \\
         \hline
         Abrechnungspreis der Minderung, \SI{50}{MWh} & $-2386{,}90$ & $-2386{,}90$ & 0,00 & Betreiber an \acs{ÜNB} \\
         \hline
         Abrechnungspreis der Pumperhöhung, \SI{45}{MWh} & entfällt & $-1846{,}44$ & $-1846{,}44$ & Betreiber an \acs{ÜNB} \\
+        \hline
+        Netznutzungsentgelt der Pumperhöhung, \SI{45}{MWh} & entfällt & $-22{,}50$ & $-22{,}50$ & Betreiber an Netzbetreiber \\
         \hline
         Speicherinhalt zu Beschaffungskosten & 2386,90 & 4255,84 & 1868,94 & am Markt$^{*}$ \\
         \hline
@@ -239,16 +246,16 @@ Die bisherige Rechnung unterstellt eine Reduktion der Entladung auf null. Die Fe
         \hline
         Optionswert, Put auf die Pumpleistung & entfällt & 0,45 & 0,45 & \acs{ÜNB} an Betreiber \\
         \hline
-        Vorteil der Anweisung & 2241,86 & 2264,81 & 22,95 & \\
+        Vorteil der Anweisung & 2241,86 & 2242,31 & 0,45 & \\
         \hline
     \end{tabular}
 
     \vspace{0.5em}
     \begin{minipage}{\textwidth}
-    \small $^{*}$ Vereinfachende Bewertung nach dem Weber-Ansatz. Die nicht turbinierte und die eingelagerte Arbeit sind mit $47{,}74$, die bezogene Arbeit der Pumperhöhung mit $41{,}03\,\si{\text{\euro}\per MWh}$ bewertet.
+    \small $^{*}$ Vereinfachende Bewertung nach dem Weber-Ansatz. Die nicht turbinierte und die eingelagerte Arbeit sind mit $47{,}74\,\si{\text{\euro}\per MWh}$, die bezogene Arbeit der Pumperhöhung mit $41{,}03\,\si{\text{\euro}\per MWh}$ bewertet. Die eingelagerte Arbeit von \SI{39{,}15}{MWh} entspricht zu $47{,}74\,\si{\text{\euro}\per MWh}$ dem Bezugspreis der 45 bezogenen MWh zuzüglich des Netznutzungsentgelts, sodass Abrechnungspreis, Netznutzungsentgelt und Speicherinhalt der Pumperhöhung sich zu null saldieren.
     \end{minipage}
 \end{table}
 
-Der Leistungshub steigt um 90 Prozent, der Vorteil des Betreibers um $22{,}95\,\text{\euro}$ und damit um ein Prozent. Davon entfallen $22{,}50\,\text{\euro}$ auf das Netznutzungsentgelt der zusätzlich bezogenen Arbeit und $0{,}45\,\text{\euro}$ auf den Put, der bei einem erwarteten Preisniveau von $144{,}02$ gegen einen Pumpgrenzpreis von $56{,}93\,\si{\text{\euro}\per MWh}$ nichts beiträgt. Alle übrigen Bestandteile fallen in beiden Ästen gleich an, weil die Abrechnungspreise den Betreiber auf beiden Seiten zu Kosten schadlos stellen. Für den Betreiber lohnt sich damit, angewiesen zu werden, nicht aber der Umfang der Anweisung.
+Der Leistungshub steigt um 90 Prozent, der Vorteil des Betreibers um $0{,}45\,\text{\euro}$ und damit um $0{,}02$ Prozent. Dieser Unterschied ist allein der Put, der bei einem erwarteten Preisniveau von $144{,}02\,\si{\text{\euro}\per MWh}$ gegen einen Pumpgrenzpreis von $56{,}93\,\si{\text{\euro}\per MWh}$ nahezu nichts beiträgt. Alle übrigen Bestandteile fallen in beiden Ästen gleich an, weil die Abrechnungspreise den Betreiber auf beiden Seiten zu Kosten schadlos stellen. Für den Betreiber lohnt sich damit, angewiesen zu werden, nicht aber der Umfang der Anweisung.
 
-Angemessen ist der finanzielle Ausgleich, wenn er den Betreiber unter Anrechnung des bilanziellen Ausgleichs weder besser noch schlechter stellt als ohne die Maßnahme. Die Rechnung dieses Abschnitts erreicht das nicht, denn die Anweisung stellt ihn um den Optionswert besser, der nach den Gleichungen~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put} niemals negativ und wegen des Zeitwerts auch nie null wird. Dieser beträgt hier $39{,}36\,\text{\euro}$, vergütet eine Möglichkeit, die der Betreiber bereits ergriffen hat, und wird mit einem Volatilitätsmaß gebildet, das nicht auf die verbleibende Zeit umgerechnet wird. Weder der Zeitpunkt noch der Umfang ändern daran etwas, denn der Zeitpunkt wirkt allein auf die Höhe des Optionswerts und der Umfang nach Tabelle~\ref{tab:anh:weber:schwenk} um $22{,}95\,\text{\euro}$. Eine Anweisung lohnt sich deshalb stets, und wer aus ihr stets einen Vorteil zieht, richtet sein Verhalten darauf ein, ihre Wahrscheinlichkeit zu erhöhen. Die Vergütung ist dabei von der tatsächlichen Vermarktung unabhängig, denn sie bemisst sich am Preis der \ac{IDA-1} und am Strikepreis und nicht an dem Preis, den der Betreiber erzielt hat. Zwei Betreiber derselben Anlage, von denen einer in der Auktion und der andere im kontinuierlichen Handel verkauft hat, stehen ohne Anweisung mit $4814{,}10$ und $3258{,}10\,\text{\euro}$ verschieden da und erhalten mit Anweisung denselben Optionswert. Wer die Leistung gar nicht vermarktet hat, erhält ihn ebenfalls, und dieser Fall ist es, den die Call-Formel unterstellt. Ein Speicher verhält sich unter dieser Bemessung deshalb nicht wie ohne Anweisung, sondern wählt zwischen Verhaltensweisen, die sich in Ergebnis und Abrufwahrscheinlichkeit unterscheiden. Die Annahme, die Maßnahme lasse ihn unberührt, trägt für diese Anlagenklasse nicht.
+Angemessen ist der finanzielle Ausgleich nach § 13a Absatz~2 Satz~2 EnWG, wenn er den Betreiber unter Anrechnung des bilanziellen Ausgleichs weder besser noch schlechter stellt als ohne die Maßnahme \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}. Die Rechnung dieses Abschnitts erreicht das nicht, denn die Anweisung stellt ihn um den Optionswert besser, der nach den Gleichungen~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put} niemals negativ und wegen des Zeitwerts auch nie null wird. Leitfaden und Festlegung halten Abweichungen des Optionswerts vom tatsächlichen Handelsergebnis im Mittel für vernachlässigbar, weil sie in beide Richtungen auftreten \cite{bdew_branchenleitfaden_2018, bundesnetzagentur_anlage1_2024}. Das gilt für den Fehler des aus Vortagen geschätzten Volatilitätsmaßes gegenüber der tatsächlichen Preisbewegung, nicht für die hier gezeigte Besserstellung, denn diese folgt aus zwei Regeln der Festlegung selbst, nämlich der Zuordnung der Optionsart nach dem Day-Ahead-Preis statt nach der tatsächlichen Vermarktung und der vollen Vergütung des inneren Werts unabhängig vom Anweisungszeitpunkt, und hat deshalb bei jeder Anweisung dasselbe Vorzeichen. Dieser beträgt hier $39{,}36\,\text{\euro}$, vergütet eine Möglichkeit, die der Betreiber bereits ergriffen hat, und wird mit einem Volatilitätsmaß gebildet, das nicht auf die verbleibende Zeit umgerechnet wird. Weder der Zeitpunkt noch der Umfang ändern daran etwas, denn der Zeitpunkt wirkt allein auf die Höhe des Optionswerts und der Umfang nach Tabelle~\ref{tab:anh:weber:schwenk} um $0{,}45\,\text{\euro}$. Eine Anweisung lohnt sich deshalb stets, und wer aus ihr stets einen Vorteil zieht, richtet sein Verhalten darauf ein, ihre Wahrscheinlichkeit zu erhöhen. Die Vergütung ist dabei von der tatsächlichen Vermarktung unabhängig, denn sie bemisst sich am Preis der \ac{IDA-1} und am Strikepreis und nicht an dem Preis, den der Betreiber erzielt hat. Zwei Betreiber derselben Anlage, von denen einer in der Auktion und der andere im kontinuierlichen Handel verkauft hat, stehen ohne Anweisung mit $4814{,}10\,\text{\euro}$ und $3258{,}10\,\text{\euro}$ verschieden da und erhalten mit Anweisung denselben Optionswert. Wer die Leistung gar nicht vermarktet hat, erhält ihn ebenfalls, und dieser Fall ist es, den die Call-Formel unterstellt. Ein Speicher verhält sich unter dieser Bemessung deshalb nicht wie ohne Anweisung, sondern wählt zwischen Verhaltensweisen, die sich in Ergebnis und Abrufwahrscheinlichkeit unterscheiden. Die Annahme, die Maßnahme lasse ihn unberührt, trägt für diese Anlagenklasse nicht.

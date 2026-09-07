@@ -490,7 +490,7 @@ Die Bemessung dieses Erlöses hat die Festlegung am \ac{PSKW} entwickelt und bew
 \subsection{Bemessung entgangener Erlösmöglichkeiten}
 \label{sec:weber_approach}
 
-Für den anspruchsvollsten Bestandteil des finanziellen Ausgleichs, die entgangenen Erlösmöglichkeiten, greift die Festlegung auf eine finanzmathematische Bewertungslogik zurück, die einem Gutachten von Weber aus dem Jahr 2015 entstammt und der Festlegung unverändert als Anlage 2 beiliegt \cite{weber_gutachten_2015}.
+Für die entgangenen Erlösmöglichkeiten, den einzigen Bestandteil des finanziellen Ausgleichs, der einen hypothetischen Marktverlauf bewerten muss, greift die Festlegung auf eine finanzmathematische Bewertungslogik zurück, die einem Gutachten von Weber aus dem Jahr 2015 entstammt und der Festlegung als Anlage 2 beiliegt \cite{bundesnetzagentur_festlegung_2024, weber_gutachten_2015}.
 Deren Grundgedanke besteht darin, die Vermarktungsmöglichkeit einer flexiblen Anlage als Finanzoption aufzufassen.
 Eine Option gewährt ihrem Inhaber dabei ein Recht und keine Pflicht, sodass er sie verfallen lässt, wenn ihre Ausübung sich nicht lohnt.
 Tabelle~\ref{tab:optionsarten} stellt die beiden Optionsarten und ihre Entsprechung bei einer Anlage gegenüber.
@@ -514,22 +514,24 @@ Tabelle~\ref{tab:optionsarten} stellt die beiden Optionsarten und ihre Entsprech
 Eine flexible Erzeugungseinheit besitzt das Recht, aber nicht die Pflicht, in einem gegebenen Zeitintervall einzuspeisen, und sie wird dies nur tun, wenn der erzielbare Marktpreis ihre variablen Erzeugungskosten übersteigt.
 Ökonomisch entspricht das einer Call-Option auf den Strompreis mit den variablen Erzeugungskosten als Basispreis.
 Das Gutachten bewertet die Vermarktungsmöglichkeit über einen Tag als Sequenz solcher Optionen und behandelt die einzelnen Intervalle dabei als voneinander unabhängig.
-Wird die Anlage durch eine Anweisung des \ac{ÜNB} an der Ausübung gehindert, entspricht der entgangene Erlös dem Wert der verlorenen Option.
+Wird die Anlage durch eine Anweisung des Netzbetreibers an der Ausübung gehindert, entspricht der entgangene Deckungsbeitrag dem Wert der verlorenen Option.
 Welche Optionsart dabei verloren geht, hängt davon ab, ob die Optionalität zum Zeitpunkt der Anweisung bereits vermarktet war, denn eine Anlage, die ihre Leistung schon verkauft hat, verliert nicht die Möglichkeit einzusteigen, sondern die Möglichkeit zurückzunehmen.
 Auch bei einer Erzeugungseinheit können daher beide Optionsarten auftreten.
-Ein Speicher lässt sich mit dieser Herleitung gleichwohl nicht vollständig erfassen, denn er speist nicht nur ein, sondern bezieht auch, sodass die Ausspeise- und die Einspeiseseite jeweils eine eigene Option tragen, deren Basispreis der obere beziehungsweise der untere Grenzpreis der Anlage ist.
-Als modifiziert wird der Ansatz bezeichnet, weil er anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen unterstellt, was erforderlich ist, da Strompreise negative Werte annehmen können.
-Die Festlegung übernimmt den modifizierten Ansatz aus dem Branchenleitfaden des Bundesverbandes der Energie- und Wasserwirtschaft \cite{bdew_branchenleitfaden_2018, bundesnetzagentur_anlage1_2024}.
+Ein Speicher lässt sich mit dieser Herleitung gleichwohl nicht vollständig erfassen, denn er speist nicht nur ein, sondern bezieht auch, sodass die Ausspeicher- und die Einspeicherseite jeweils eine eigene Option tragen, deren Basispreis der obere beziehungsweise der untere Grenzpreis der Anlage ist.
+Bereits das Gutachten unterstellt anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen, weil Strompreise negative Werte annehmen können \cite{weber_gutachten_2015}.
+Als modifiziert bezeichnet die Festlegung den Ansatz, weil sie ihn in der Fassung des Branchenleitfadens des Bundesverbandes der Energie- und Wasserwirtschaft übernimmt, der als Unterschied zum Gutachten ausdrücklich die rollierende Bestimmung des Volatilitätsmaßes benennt und den ID1-Index als Datengrundlage wählt \cite{bdew_branchenleitfaden_2018}.
+Die Festlegung übernimmt das Kapitel unverändert und legt lediglich den Preisindex neu fest, nämlich das Single Day-ahead Coupling für den Day-Ahead-Preis und die Börse mit dem höchsten Handelsvolumen für den Intraday-Index \cite{bundesnetzagentur_anlage1_2024}.
 
 Die Festlegung setzt diese Logik mit drei Eingangsgrößen um, nämlich dem dort als Strikepreis bezeichneten Basispreis, dem erwarteten Preisniveau und einem Volatilitätsmaß \cite{bundesnetzagentur_anlage1_2024}.
-Der Basispreis ist bei Speichern der Grenzpreis, der sich aus der nach dem Preis geordneten Reihe der Viertelstunden des Tages ergibt, gebildet aus den Preisen der \ac{IDA-1}.
-Dazu wird die teuerste Viertelstunde als Ausspeisung mit den günstigsten Viertelstunden als zugehöriger Einspeisung zusammengeführt, und das Verfahren schreitet paarweise zu den jeweils nächstteuren und nächstgünstigen fort.
-Ein solches Paar lohnt sich nur, solange der Erlös der Ausspeisung die Kosten der Einspeisung einschließlich der Umwandlungsverluste und des Netznutzungsentgelts übersteigt.
-Das Verfahren endet, sobald diese Bedingung verletzt ist oder die verfügbaren Volllaststunden ausgeschöpft sind, und die Preise des letzten noch lohnenden Paares bilden den oberen und den unteren Grenzpreis.
+Der Basispreis ist bei Tagesspeichern einer der beiden Grenzpreise, die sich aus der nach dem Preis geordneten Reihe der Viertelstunden des Tages ergeben, gebildet aus den Preisen der \ac{IDA-1}.
+Dazu wird die teuerste Viertelstunde als Ausspeicherung mit dem nach der Energieumwandlung bemessenen günstigsten Zeitbereich als zugehöriger Einspeicherung zusammengeführt, und das Verfahren schreitet schrittweise zu den jeweils nächstteuren Viertelstunden und nächstgünstigen Zeitbereichen fort.
+Ein solcher Schritt lohnt sich nur, solange der Erlös der Ausspeicherung die Kosten der Einspeicherung einschließlich der Umwandlungsverluste und des Netznutzungsentgelts übersteigt.
+Das Verfahren endet, sobald diese Bedingung verletzt ist oder die verfügbaren Volllaststunden ausgeschöpft sind, und die Preise des letzten noch lohnenden Schritts bilden den oberen und den unteren Grenzpreis.
 Als erwartetes Preisniveau dienen die Ergebnisse derselben Auktion, und das Volatilitätsmaß ist die Standardabweichung der Differenz zwischen dem \ac{ID1} und ebendieser Auktion, rollierend über die jeweils letzten 30 Tage.
-Weber sieht dafür eine Bestimmung einmal im Monat aus den vorangegangenen zwölf Monaten und auf Grundlage des \ac{ID3} vor.
-Die Festlegung weicht davon ab, um systematische Effekte aus im Zeitverlauf steigenden oder sinkenden Standardabweichungen weitgehend zu vermeiden \cite{bundesnetzagentur_anlage1_2024}.
-In der Optionsbewertung wächst die Unsicherheit mit der Wurzel der verbleibenden Zeit, sodass der Zeitwert gegen null geht, je näher der Ausübungszeitpunkt rückt.
+Weber sieht dafür eine Bestimmung einmal im Monat aus den vorangegangenen zwölf Monaten und auf Grundlage des \ac{ID3} vor \cite{weber_gutachten_2015}.
+Die Festlegung weicht in beiden Punkten davon ab.
+Das rollierende Fenster begründet sie damit, systematische Effekte aus im Zeitverlauf steigenden oder sinkenden Standardabweichungen weitgehend zu vermeiden, den Wechsel vom Dreistundenmittel auf den \ac{ID1} begründet sie nicht, der Leitfaden hält den Index für geeignet, die kurzfristigen Volatilitäten des Intraday-Marktes abzubilden \cite{bdew_branchenleitfaden_2018, bundesnetzagentur_anlage1_2024}.
+In der Optionsbewertung wächst die Unsicherheit mit der Wurzel der verbleibenden Zeit, sodass der Zeitwert gegen null geht, je näher der Ausübungszeitpunkt rückt \cite{hull_options_2014}.
 Die Festlegung verzichtet darauf, denn $\sigma$ misst bereits die Abweichung über ein festes Intervall, nämlich vom Preis der \ac{IDA-1} bis zum \ac{ID1}.
 Tabelle~\ref{tab:weber_symbole} fasst die Größen mit ihren Formelzeichen zusammen.
 
@@ -542,17 +544,19 @@ Tabelle~\ref{tab:weber_symbole} fasst die Größen mit ihren Formelzeichen zusam
         \hline
         \textbf{Zeichen} & \textbf{Größe} & \textbf{Bestimmung} \\
         \hline
-        $X_C$, $X_P$ & Basispreis & Oberer und unterer Grenzpreis, iterativ aus der Preisdauerlinie des Tages \\
+        $g_T$, $g_P$ & Grenzpreis & Grenzpreis für Turbinen- und für Pumpeinsatz, iterativ aus der Preisdauerlinie des Tages \\
+        \hline
+        $X$ & Basispreis & Grenzpreis der bewerteten Seite, $g_T$ für die Ausspeicher- und $g_P$ für die Einspeicherseite \\
         \hline
         $\mu$ & Erwartetes Preisniveau & Preis des Produkts in der \acs{IDA-1} \\
         \hline
         $\sigma$ & Volatilitätsmaß & Standardabweichung der Differenz aus \acs{ID1} und \acs{IDA-1} über 30 Tage \\
         \hline
-        $d_C$, $d_P$ & Standardisierter Abstand & Abstand zwischen $\mu$ und dem jeweiligen Basispreis in Vielfachen von $\sigma$ \\
+        $d_T$, $d_P$ & Standardisierter Abstand & Abstand zwischen $\mu$ und dem Basispreis der jeweiligen Seite in Vielfachen von $\sigma$ \\
         \hline
         $\Phi$, $\varphi$ & Verteilungs- und Dichtefunktion & Standardnormalverteilung \\
         \hline
-        $V_C$, $V_P$ & Wert der Call- und der Put-Option & Bezogen auf Leistung und Stunde \\
+        $V_C$, $V_P$ & Wert der Call- und der Put-Option & Bezogen auf Leistung und Stunde, Optionsart je Seite nach dem Vergleich des Day-Ahead-Preises mit dem Basispreis \\
         \hline
     \end{tabular}
 \end{table}
@@ -567,40 +571,41 @@ Aus diesen Größen folgt der Optionswert je Leistungseinheit nach den Gleichung
 
 Beide Werte sind auf die Leistung und die Stunde bezogen und daher mit der Produktdauer zu multiplizieren, die für Viertelstundenprodukte eine Viertelstunde beträgt.
 
-Ob eine Viertelstunde als Call oder als Put bewertet wird, folgt aus dem Vergleich des stündlichen Day-Ahead-Preises mit dem Basispreis. Als Index schreibt die Festlegung das Single Day-ahead Coupling vor, also die gekoppelte europäische Auktion, in der die Preise der Gebotszonen und die grenzüberschreitenden Flüsse gemeinsam bestimmt werden \cite{bundesnetzagentur_anlage1_2024}. Maßgeblich ist dabei je Seite der eigene Grenzpreis, für die Ausspeisung der obere und für die Einspeisung der untere. Die Festlegung unterstellt einen gegenüber dem Day-Ahead-Preis wirtschaftlich optimalen Einsatz der Anlage, sodass oberhalb des Basispreises nur die Rücknahme und unterhalb nur die Erhöhung der Einspeisung offensteht.
+Ob eine Viertelstunde als Call oder als Put bewertet wird, folgt aus dem Vergleich des stündlichen Day-Ahead-Preises mit dem Basispreis. Als Index schreibt die Festlegung das Single Day-ahead Coupling vor \cite{bundesnetzagentur_anlage1_2024}, also die gekoppelte europäische Auktion, in der die Preise der Gebotszonen und die grenzüberschreitenden Flüsse gemeinsam bestimmt werden \cite{europaische_kommission_verordnung_2015}. Maßgeblich ist dabei je Seite der eigene Grenzpreis, für die Ausspeicherseite der obere und für die Einspeicherseite der untere. Die Festlegung unterstellt einen gegenüber dem Day-Ahead-Preis wirtschaftlich optimalen Einsatz der Anlage, sodass oberhalb des Basispreises nur die Rücknahme und unterhalb nur die Erhöhung der Einspeisung offensteht.
 Die Festlegung bezeichnet die Zuordnung als Vereinfachung, denn andernfalls wäre bei jeder Änderung des Lastpunktes neu über die Optionsart zu entscheiden \cite{bundesnetzagentur_anlage1_2024}.
 Über diesen Vergleich erfasst das Verfahren zugleich denjenigen inneren Wert, der aus den systematischen Differenzen zwischen Stunden- und Viertelstundenprodukten entsteht \cite{bundesnetzagentur_anlage1_2024}.
-Solche Differenzen setzen voraus, dass beide Märkte verschiedene Produktschnitte führen, was seit der Umstellung des \ac{DA} auf Viertelstundenprodukte nicht mehr der Fall ist.
-Der Optionswert setzt sich dabei aus dem inneren Wert und dem Zeitwert zusammen, wobei der innere Wert die bereits realisierte Differenz zwischen erwartetem Preis und Basispreis erfasst und der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung.
+Solche Differenzen setzen voraus, dass beide Märkte verschiedene Produktschnitte führen, was seit der Umstellung des \ac{DA} auf Viertelstundenprodukte nicht mehr der Fall ist \cite{ffe_saegezahn_2026}.
+Die Zuordnung der Optionsart über den stündlichen Day-Ahead-Preis und ihre Begründung mit dem inneren Wert beziehen sich damit auf eine Marktstruktur, die bei Erlass der Festlegung galt, für den Beispieltag 2024 zutrifft und seither entfallen ist.
+Der Optionswert setzt sich dabei aus dem inneren Wert und dem Zeitwert zusammen, wobei der innere Wert die bei sofortiger Ausübung anfallende Differenz zwischen erwartetem Preis und Basispreis erfasst und der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung.
 Das Verfahren stützt sich damit auf zwei Preise mit getrennten Aufgaben, denn der Day-Ahead-Preis bestimmt die Optionsart und der Preis der \ac{IDA-1} den Optionswert.
 Welcher Preis das erwartete Preisniveau liefert, hängt dabei vom Zeitpunkt der Anweisung ab.
 Liegt das Ergebnis der \ac{IDA-1} vor, ist es dessen Preis, ergeht die Anweisung früher, wird es aus dem stündlichen Day-Ahead-Preis über einen viertelstundenscharfen Auf- oder Abschlag geschätzt, den die Festlegung aus den mittleren Abweichungen der vorangegangenen 90 Tage bildet \cite{bundesnetzagentur_anlage1_2024}.
-Der frühe Fall dürfte selten auftreten, weil die Redispatch-Prozesse überwiegend erst nach der \ac{IDA-1} anlaufen.
 
 Abbildung~\ref{fig:weber_optionswert} zeigt den Wert beider Optionen über dem erwarteten Preisniveau für die im Berechnungsbeispiel bewertete Viertelstunde.
-Liegt der erwartete Preis zwischen den Grenzpreisen, ist der innere Wert beider Optionen null und der gesamte Anspruch besteht aus Zeitwert.
-Diese Zerlegung ist zugleich der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt, denn eine Vergütung, die allein die bereits realisierte Preisdifferenz erstattet, zahlte für eine solche Viertelstunde nichts, obwohl dem Betreiber mit der Anweisung auch die Chance auf eine günstigere Preisentwicklung genommen wird.
+Liegen der Day-Ahead-Preis und der erwartete Preis zwischen den Grenzpreisen, ist der innere Wert beider Optionen null und der gesamte Optionswert besteht aus Zeitwert.
+Diese Zerlegung ist zugleich der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt, denn eine Vergütung, die allein die bei sofortiger Ausübung anfallende Preisdifferenz erstattet, zahlte für eine solche Viertelstunde nichts, obwohl dem Betreiber mit der Anweisung auch die Chance auf eine günstigere Preisentwicklung genommen wird.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_2/weber_optionswert.pdf}
-    \caption{Wert der Aus- und der Einspeiseoption je \si{MW} und Viertelstunde über dem erwarteten Preisniveau für die Viertelstunde von 13:00 bis 13:15 Uhr des 01.02.2024, in der sich 0,369 und 0,573\,\si{\text{\euro}\per MW} ergeben. Nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
+    \caption{Wert der Aus- und der Einspeicheroption je \si{MW} und Viertelstunde über dem erwarteten Preisniveau für die Viertelstunde von 13:00 bis 13:15 Uhr des 01.02.2024, in der sich 0,369\,\si{\text{\euro}\per MW} und 0,573\,\si{\text{\euro}\per MW} ergeben. Nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
     \label{fig:weber_optionswert}
 \end{figure}
 
 Ein veröffentlichtes Berechnungsbeispiel der \ac{BNetzA} führt das Verfahren für ein \ac{PSKW} vor \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
-Betrachtet wird eine Anlage mit \SI{200}{\mega\watt} Turbinen- und \SI{180}{\mega\watt} Pumpleistung, deren Grenzpreise sich zu $X_C = 99{,}97$ und $X_P = 56{,}93\,\si{\text{\euro}\per MWh}$ ergeben.
-Für die Viertelstunde von 13:00 bis 13:15 Uhr betragen das erwartete Preisniveau $\mu = 75{,}93$ und das Volatilitätsmaß $\sigma = 21{,}75\,\si{\text{\euro}\per MWh}$.
+Betrachtet wird eine Anlage mit \SI{200}{\mega\watt} Turbinen- und \SI{180}{\mega\watt} Pumpleistung, deren Grenzpreise sich zu $g_T = 99{,}97\,\si{\text{\euro}\per MWh}$ und $g_P = 56{,}93\,\si{\text{\euro}\per MWh}$ ergeben.
+Für die Viertelstunde von 13:00 bis 13:15 Uhr betragen das erwartete Preisniveau $\mu = 75{,}93\,\si{\text{\euro}\per MWh}$ und das Volatilitätsmaß $\sigma = 21{,}75\,\si{\text{\euro}\per MWh}$.
 Beide sind auf dieses Viertelstundenprodukt bezogen, $\mu$ auf seine Eröffnungsauktion und $\sigma$ auf die Abweichung seines \ac{ID1} von dieser Auktion über die vorangegangenen 30 Tage.
-Der Day-Ahead-Preis liegt mit 57,26\,\si{\text{\euro}\per MWh} unter dem oberen Grenzpreis, sodass für die Ausspeiseseite nur eine Erhöhung offensteht und sie als Call bewertet wird, und er liegt über dem unteren, sodass für die Einspeiseseite nur eine Rücknahme offensteht und sie als Put bewertet wird.
-Aus $\mu$ folgen mit Gleichung~\eqref{eq:weber_d} die standardisierten Abstände $d_C = -1{,}105$ und $d_P = 0{,}874$.
-Die Gleichungen~\eqref{eq:weber_call} und \eqref{eq:weber_put} liefern daraus $V_C = 1{,}477$ und $V_P = 2{,}292\,\si{\text{\euro}\per MWh}$, was nach Umrechnung auf die Produktdauer einer Viertelstunde 0,369 und 0,573\,\si{\text{\euro}\per MW} entspricht.
+Der Day-Ahead-Preis liegt mit 57,26\,\si{\text{\euro}\per MWh} unter dem Grenzpreis der Turbine, sodass die Turbine bei wirtschaftlich optimalem Einsatz stillstünde, ihr nur die Aufnahme der Ausspeicherung offensteht und sie als Call bewertet wird.
+Zugleich liegt er über dem Grenzpreis der Pumpe, sodass auch die Pumpe stillstünde, ihr nur die Aufnahme der Einspeicherung offensteht und sie als Put bewertet wird, weil der Wert dieser Möglichkeit mit fallendem Preis steigt.
+Aus $\mu$ folgen mit Gleichung~\eqref{eq:weber_d} die standardisierten Abstände $d_T = -1{,}105$ und $d_P = 0{,}874$.
+Die Gleichungen~\eqref{eq:weber_call} und \eqref{eq:weber_put} liefern daraus $V_C = 1{,}477\,\si{\text{\euro}\per\text{(MW\,h)}}$ und $V_P = 2{,}292\,\si{\text{\euro}\per\text{(MW\,h)}}$, was nach Umrechnung auf die Produktdauer einer Viertelstunde 0,369\,\si{\text{\euro}\per MW} und 0,573\,\si{\text{\euro}\per MW} entspricht.
 Beide Optionen sind damit aus dem Geld, sodass der Betrag vollständig aus Zeitwert besteht.
 Abbildung~\ref{fig:weber_optionswert} gilt dabei allein für diese Viertelstunde, denn das Volatilitätsmaß wird je Viertelstundenprodukt bestimmt und jedes andere Produkt liegt daher auf einer anderen Kurve.
-Anhang~\ref{anh:weber} stellt das Verfahren einschließlich der Grenzpreisbestimmung und der Abrechnungspreise vollständig dar.
+Anhang~\ref{anh:weber} stellt das Verfahren einschließlich der Grenzpreisbestimmung und der Abrechnungspreise vollständig dar und wendet es auf eine zweite Viertelstunde sowie auf die Entscheidungslage des Betreibers entlang des Vortages an.
 
 Die je Viertelstunde und Richtung ermittelten Optionswerte werden mit der jeweils gesperrten Leistung multipliziert und dem anteiligen Werteverbrauch gegenübergestellt \cite{bundesnetzagentur_anlage1_2024}.
-Im Beispiel ergibt das bei vollständiger Sperrung beider Richtungen 73,83 und 103,13\,\si{\text{\euro}} und damit einen Gesamtbetrag von 176,96\,\si{\text{\euro}} für die eine Viertelstunde.
+Im Beispiel ergibt das bei vollständiger Sperrung beider Richtungen 73,83\,\si{\text{\euro}} und 103,13\,\si{\text{\euro}} und damit einen Gesamtbetrag von 176,96\,\si{\text{\euro}} für die eine Viertelstunde.
 
 \subsection{Grenzen der Übertragbarkeit auf \acs{BESS}}
 \label{sec:weber_limits}
