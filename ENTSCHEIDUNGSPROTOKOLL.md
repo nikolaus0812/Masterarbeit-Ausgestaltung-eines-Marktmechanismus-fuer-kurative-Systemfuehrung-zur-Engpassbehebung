@@ -3869,6 +3869,51 @@ Textfassung, so wie sie für die Festlegung bereits vorliegt.
 Prüfstand. Die Datei umfasst 1392 Zeilen bei 1391 CRLF gegen 1391 Umbrüche und
 läuft ohne Befund durch die Prüfsuite.
 
+### 08.09.2026, Abschnitt 3.1.1 geparkt, Abschnitt 3.1 beginnt mit dem Katalog
+
+Entschieden vom Verfasser noch am selben Tag, an dem der Unterabschnitt entstanden
+ist. Abschnitt 3.1 beginnt jetzt unmittelbar mit dem Anforderungskatalog, die
+Abgrenzung gegen bestehende Ansätze erfolgt später.
+
+Grund. Der Unterabschnitt verglich die diskutierten Anpassungen mit einer kurativen
+Vorhaltung. Der Verfasser hat darauf hingewiesen, dass ein Vergleich mit dem
+Produkt dessen Definition voraussetzt und diese erst in Abschnitt 3.3 steht. An
+dieser Stelle nähme der Vergleich damit etwas vorweg.
+
+Vollständig erhalten. Die sechs Sätze stehen im Wortlaut als Kommentar in
+chapter_3.tex, zusammen mit den drei möglichen Zielorten und der Begründung. Nichts
+ist gelöscht.
+
+Zwischenschritte, die dabei entstanden und im Wortlaut im Dateikommentar stehen.
+Der Verfasser hatte den Unterabschnitt zuvor zweimal umgesteuert, erstens von einem
+Abgleich gegen die Anforderungen auf eine Darstellung der diskutierten Anpassungen,
+zweitens von fünf auf drei Ansätze, wobei die Regelleistungsmärkte, die
+Kapazitätsmechanismen und der Netzbooster entfielen. Der Netzbooster entfiel mit
+der Begründung, er sei kein Marktdesign, sondern kurative Systemführung mit einer
+regulierten Anlage.
+
+Ein Befund aus dieser Runde, der bleibt. Die knotenscharfen Grenzkosten sind keine
+Anpassung des Marktdesigns, sondern eine Erweiterung des kostenbasierten
+Redispatch. Der kapazitätsbasierte Redispatch dagegen ist eine, und er beschafft im
+Kern dieselbe Größe wie eine kurative Vorhaltung, unterschieden allein in Auslöser
+und Reaktionszeit. Dieser Gedanke stammt vom Verfasser und deckt sich mit dem
+Kommentar vom 06.09.2026, wonach der Abstand zum eigenen Entwurf auf die
+Reaktionszeit und die Vereinbarkeit mit bestehenden Verpflichtungen zusammenschmilzt.
+
+Neu im Repository ist STRUKTUR.md, ein Arbeitsdokument mit der Gesamtgliederung,
+dem Stand je Abschnitt, dem geparkten Material samt möglichen Zielorten und den
+offenen Zuordnungsfragen. Es ersetzt weder CLAUDE.md noch dieses Protokoll.
+
+Dabei ist aufgefallen, dass chapter_5.tex bereits einen Abschnitt Bewertung anhand
+des Anforderungskatalogs führt. Der Abgleich, den CLAUDE.md Abschnitt 9 nach
+Kapitel 5 verweist, hat dort also schon seinen Ort.
+
+Offen geblieben. Der zweite Satz der Abschnittseinleitung von 3.1 kündigt weiterhin
+die entfallene Prüfung der Marktdesignansätze an. Drei Fassungen lagen vor, die
+Wahl steht aus, weil der Verfasser zuerst die Struktur überdenkt.
+
+Prüfstand. chapter_3.tex läuft ohne Befund, 1421 CRLF gegen 1421 Umbrüche.
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
