@@ -3726,6 +3726,87 @@ Systemführung lesen. Beide Anmerkungen stehen als Kommentar an der Stelle.
 Prüfstand. Die Datei umfasst 1277 Zeilen bei 1276 CRLF gegen 1276 Umbrüche und
 unveränderter Kodierung. Die Prüfsuite läuft über sie ohne Befund.
 
+### 08.09.2026, Abschnitt 3.1 umgebaut und der Anforderungskatalog neu gefasst
+
+Zwei Entscheidungen des Verfassers, die zusammenwirken. Erstens stehen die
+bestehenden Marktdesignansätze jetzt vor den Anforderungen und nicht mehr
+dahinter. Zweitens trägt der Katalog acht statt sechs Anforderungen, und er ist
+technologieneutral gefasst.
+
+Reihenfolge. Der frühere Unterabschnitt 3.1.2 ist zu 3.1.1 geworden und heißt
+Bestehende Ansätze des Marktdesigns. Er gleicht nicht mehr ab, sondern stellt dar,
+denn an dieser Stelle gibt es die Anforderungen noch nicht. Damit entfällt
+Tabelle 3.1 mit ihren 36 eigenen Bewertungen, die als offener Punkt geführt waren,
+weil sie im Fließtext nicht begründet sind. Die Tabelle ist im Wortlaut als
+Kommentar erhalten und nicht wieder aufzunehmen.
+
+Marke. sec:market_design_comparison liegt jetzt auf 3.1.3. chapter_2.tex verweist
+mit ihr auf den Abgleich gegen die Anforderungen, und der findet seit dem Umbau
+dort statt. Kapitel 2 bleibt damit unberührt, was der Verfasser ausdrücklich
+wollte. Der neue Unterabschnitt 3.1.1 trägt die neue Marke
+sec:market_design_approaches.
+
+Katalog. Aus sechs Anforderungen sind acht geworden. Zwei Bündelungen sind
+aufgelöst. Das frühere A1 trug Differenzierung, binäre Erfüllung und
+Sanktionsbedürftigkeit, wovon die beiden letzten jetzt A2 bilden. Das frühere A3
+trug Bemessungsgegenstand und Bemessungsdimension, beides steht jetzt in A4. Neu
+hinzugekommen ist A8 Umsetzbarkeit. Jede Anforderung trägt jetzt eine Sache und
+lässt sich in Abschnitt 3.3 einzeln als Begründung anrufen.
+
+Technologieneutralität, auf Weisung des Verfassers. Der Katalog setzt die
+Technologie nicht mehr voraus, was ihn erst mit seiner eigenen Anforderung A5 in
+Einklang bringt, die technologieoffenen Zugang verlangt. A7 nennt deshalb den
+Zustand der Anlage und nicht mehr den für die Regelleistungsvorhaltung
+reservierten Ladezustandsbereich. Diese Wendung stammt aus Abschnitt 2.1.3, wo die
+kurative Zusage bei jeder Technologie einen Zustand der Anlage bindet, beim
+Kraftwerk den Betriebspunkt und beim Speicher den Ladezustand. Die Verengung auf
+das BESS bleibt in 3.1.3, wo sie hingehört.
+
+Eine Berichtigung. Das frühere A4 führte die Wendung Vorrang marktbasierter
+Beschaffung vor Redispatch. Sie ist am 02.09.2026 in Abschnitt 2.1.5 als
+missverständlich berichtigt worden, weil der Vorrang nicht gegenüber dem
+Redispatch besteht, sondern innerhalb des Redispatch, nämlich der marktbasierten
+Beschaffung gegenüber der Anordnung. Das neue A5 führt sie nicht mehr.
+
+Eigenständiges Argument, zu prüfen. Der Verfasser hat erwogen, in A5 zusätzlich
+das Verhältnis zum kostenbasierten Redispatch zu benennen. Nicht aufgenommen, aus
+drei Gründen. Erstens ist das Wort komplementär am 02.09.2026 in Abschnitt 2.1.5
+gestrichen worden, weil es die Beziehung behauptet, statt sie zu zeigen. Zweitens
+weist CLAUDE.md Abschnitt 8 das Verhältnis zum Redispatch der Gruppe D zu, also
+Abschnitt 3.3.4, wo es als Stichpunkt bereits liegt. Drittens entfällt mit der
+gewählten Fassung von A5 der Anlass, denn sie nennt den Vorrang der marktbasierten
+Beschaffung nicht mehr und kann deshalb nicht mehr als Forderung nach einem
+marktbasierten Redispatch missverstanden werden.
+
+Eigenständiges Argument, zu prüfen. A8 ist nach Angabe des Verfassers schwer zu
+bewerten und die Arbeit bewertet sie nicht. Daraus folgt, dass sie in einer Matrix
+keine Spalte tragen kann, weshalb der Text den Vorbehalt offen aussprechen wird.
+Belegbar ist an A8 der Teil, den Abschnitt 2.1.4 trägt, nämlich dass im
+KuPilot-Pilotbetrieb die Aktivierung innerhalb von maximal fünf Minuten
+automatisiert erfolgt.
+
+Nicht in den Katalog aufgenommen. Die Gegenseite des bilanziellen Ausgleichs zählt
+nach Entscheidung des Verfassers zu A8, steht dort aber nicht, weil die
+Anforderungen kurz bleiben und im folgenden Text ausgeführt werden. Der Verfasser
+hat dazu den Gedanken beigesteuert, dass dieselbe Anlage beide Rollen tragen kann,
+also kurativer Akteur für den einen Engpass und Gegenseite für den anderen.
+Angemerkt wurde einmal, dass zwei Anlagen, die auf verschiedene Engpässe wirken,
+nicht im selben Moment ausgelöst werden und der Gedanke deshalb auf die Aussage
+zurückfällt, dass zu jedem kurativen Akteur eine Gegenseite gehört. Ob eine solche
+Zusammenstellung ohne neuen Engpass funktioniert, kann die Arbeit nicht zeigen,
+weil Netzrestriktionen, Poolbildung und Gegenseite sämtlich außerhalb des Modells
+liegen.
+
+Umnummerierung. Vier Verweise in Abschnitt 3.3 sind nachgezogen, nämlich zweimal
+von A1 auf A2 für die binäre Erfüllung und zweimal von A3 auf A4 für den
+Bemessungsgegenstand. Der Einleitungssatz von 3.1.2 nennt jetzt acht statt sechs
+Anforderungen, und der Schlusssatz von 3.1.3 spricht von A1 bis A8.
+
+Prüfstand. Die Datei umfasst 1344 Zeilen bei 1343 CRLF gegen 1343 Umbrüche. Alle
+bisherigen Marken sind erhalten, neu ist sec:market_design_approaches, und
+tab:designabgleich ist mit der Tabelle in den Kommentar gewandert. Die Prüfsuite
+läuft über die Datei ohne Befund.
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
@@ -4934,6 +5015,22 @@ trifft für diese Fassung nicht mehr zu.
 25. Wendung Vermarktungsoption in Abschnitt 3.1.1. Sie ist für 3.2 durch den
     Eingriff 2 untersagt, steht aber in 3.1.1 im Fließtext. Gemeinsam mit dem
     offenen Punkt zu Basispreis und Strikepreis zu entscheiden.
+
+26. Fließtext von Abschnitt 3.1.1. Er misst die Ansätze durchgehend an A1 bis
+    A6 und kann das an seiner neuen Stelle vor den Anforderungen nicht mehr. Die
+    Sätze sind satzweise neu zu fassen, sodass sie beschreiben, was die Ansätze
+    leisten und was keiner von ihnen erzeugt.
+27. Ausführung der Anforderungen in Abschnitt 3.1.2. Der Katalog hält jede
+    Anforderung kurz, die Ausführung im folgenden Text fehlt noch. Dorthin
+    gehören die Gegenseite des bilanziellen Ausgleichs und der Vorbehalt, dass
+    die Arbeit A8 nicht bewertet.
+28. Kopplungsabsatz in 3.1.2. Er trägt die alten Nummern, den am 08.09.2026
+    gestrichenen Satz zum Spannungsverhältnis und die zu ersetzende Wendung Wert
+    der aufgegebenen Vermarktungsoption. Bereits gewählt ist als Ersatz der Satz
+    zur Freiwilligkeit der Teilnahme, der jetzt auf A6 zeigt.
+29. Verweise auf A-Nummern außerhalb von Kapitel 3. chapter_5.tex führt in einem
+    Kommentar F3 als Folge aus A2 und A3, was nach der Umnummerierung A3 und A4
+    wären. Nicht geändert, weil die Datei in dieser Sitzung nicht angefasst wurde.
 
 ## Anhang, vollstaendiger Kommentarbestand chapter_1.tex vor dem Entfernen am 28.08.2026
 

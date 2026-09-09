@@ -294,41 +294,14 @@ Aus den vorangehenden Abschnitten ergeben sich Anforderungen, die ein Mechanismu
 Dieser Abschnitt stellt sie zusammen, prüft, ob bestehende Marktdesignansätze sie bereits erfüllen, und leitet daraus den Forschungsbedarf ab.
 
 % ---------------------------------------------------------------
-\subsection{Anforderungskatalog}
-\label{sec:requirements_catalogue}
-%
-% Die Nummerierung ist eingefuehrt, damit die Vergleichsmatrix in 3.1.2
-% und die Produktdefinition in 3.2 darauf verweisen koennen.
-% GEAENDERT: A1 traegt jetzt die Sanktionsbeduerftigkeit der binaeren
-% Erfuellung, weil eine binaere Anforderung ohne Poenale keine
-% verbindliche Zusage ist. A5 ist auf den Reservierungspreis umgestellt.
-
-Aus der Argumentation dieses Kapitels lassen sich sechs Anforderungen an einen Mechanismus zur Beschaffung kurativer Vorhalteleistung ableiten.
-Sie beschreiben ausschließlich, was der Mechanismus leisten muss, während die konkrete Ausgestaltung in Abschnitt \ref{sec:product_design} erfolgt.
-
-\begin{description}
-    \item[A1 -- Reaktionsgeschwindigkeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit durch das betroffene Betriebsmittel und die Betriebssituation vorgegeben und keine Wahlgröße des Akteurs ist. Die Erfüllung ist binär, denn eine verspätete Leistungsänderung hat keinen verminderten, sondern keinen Wert. Eine binäre Anforderung setzt eine Sanktion bei Nichterfüllung voraus, da die Zusage andernfalls nicht verbindlich ist (aus Abschnitt \ref{sec:curative_functionality}).
-    \item[A2 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, da die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein \cite{blank_determination_2024}.
-    \item[A3 -- Vergütung der Vorhaltung] Bemessungsgegenstand muss die verbindliche Bereitstellung von Reaktionsfähigkeit sein und nicht der durchgeführte Eingriff, da die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen (aus Abschnitt \ref{sec:interim_conclusion}). Bemessungsdimension ist dabei nicht allein die vorgehaltene Leistung, sondern auch die Dauer der Bindung, weil diese über die Zahl der gebundenen Intervalle die Erlöswirkung bestimmt (aus Abschnitt \ref{sec:soc_conflict}).
-    \item[A4 -- Diskriminierungsfreiheit] Der Zugang muss technologieoffen ausgestaltet sein und dem Vorrang marktbasierter Beschaffung vor Redispatch entsprechen \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-    \item[A5 -- Anreizkompatibilität] Die Vergütung muss mindestens den kurativen Reservierungspreis erreichen, weil im Selbstdispatch-Modell die Fahrplanhoheit beim Anlagenbetreiber liegt und Verfügbarkeit nur über einen Anreiz und nicht über eine Anweisung herstellbar ist (aus Abschnitt \ref{sec:interim_conclusion}).
-    \item[A6 -- Vereinbarkeit mit bestehenden Verpflichtungen] Der Mechanismus muss mit den Präqualifikations- und Vermarktungsverpflichtungen vereinbar sein, unter denen die Anlage bereits steht, insbesondere mit dem für die Regelleistungsvorhaltung reservierten Ladezustandsbereich (aus Abschnitt \ref{sec:soc_conflict}).
-\end{description}
-
-Die Anforderungen sind nicht unabhängig voneinander.
-A5 und A6 stehen in einem Spannungsverhältnis, das den quantitativen Kern dieser Arbeit bildet.
-Je enger der durch bestehende Verpflichtungen bereits gebundene Ladezustandsbereich ausfällt, desto höher ist der Wert der zusätzlich aufzugebenden Vermarktungsoption und damit der nach A5 erforderliche Reservierungspreis.
-A1 und A5 sind ebenfalls gekoppelt, da eine höhere Pönale die Verbindlichkeit der Zusage stärkt, zugleich aber eine Risikoprämie erzeugt und den geforderten Preis erhöht.
-A2 und A4 können in Konflikt treten, da eine netzknotenscharfe Beschaffung in Gebieten mit wenigen geeigneten Anlagen zu geringer Wettbewerbsintensität führt.
-% GESTRICHEN am 06.09.2026, Befund S7. Hier stand der Satz, diese
-% Zusammenhaenge wuerden in Kapitel 5 aufgegriffen. Das ist ein
-% struktureller Vorverweis ohne Sachfunktion nach Attribut 9. Der Verweis
-% auf Abschnitt 3.2 im zweiten Absatz dieses Unterabschnitts bleibt, weil
-% er ein Sachverweis ist. Nicht wieder aufnehmen.
-
-% ---------------------------------------------------------------
-\subsection{Abgleich bestehender Marktdesignansätze}
-\label{sec:market_design_comparison}
+% UEBERSCHRIFT GEAENDERT am 08.09.2026. Der Unterabschnitt steht jetzt vor
+% den Anforderungen und gleicht deshalb nicht mehr ab, sondern stellt dar.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Abgleich bestehender Marktdesignansätze}
+\subsection{Bestehende Ansätze des Marktdesigns}
+% MARKE VERSCHOBEN am 08.09.2026 auf Abschnitt 3.1.3. chapter_2.tex verweist
+% mit ihr auf den Abgleich gegen die Anforderungen, und der findet dort statt.
+\label{sec:market_design_approaches}
 %
 % OFFEN 20: Die Bewertungen in der Matrix sind eigene Einschaetzungen und
 % muessen im Fliesstext begruendet sein. Eine Matrix mit unbegruendeten
@@ -339,37 +312,47 @@ A2 und A4 können in Konflikt treten, da eine netzknotenscharfe Beschaffung in G
 % ist.
 
 Bevor ein neuer Mechanismus entworfen wird, ist zu prüfen, ob bestehende oder diskutierte Marktdesignansätze die Anforderungen A1 bis A6 bereits erfüllen.
-Tabelle~\ref{tab:designabgleich} stellt sechs Ansätze gegenüber.
+% SATZ ENTFALLEN am 08.09.2026 mit der Tabelle. Wortlaut, nicht wieder
+% aufnehmen:
+%   Tabelle~\ref{tab:designabgleich} stellt sechs Ansätze gegenüber.
 
-\begin{table}[htbp]
-    \centering
-    % ZEILE ERGAENZT am 06.09.2026, Befund I5. Der kapazitaetsbasierte
-    % Redispatch nach Ehrhart, Eicke, Hirth und anderen fehlte, obwohl er
-    % der naechstliegende Vergleich ist, weil er wie der eigene Entwurf die
-    % bereitgehaltene Kapazitaet und nicht den Eingriff bemisst.
-    % ZU PRUEFEN, ob die eingetragene Bewertung traegt. Vorgeschlagen sind
-    % A1 nicht erfuellt, keine nach Reaktionszeit differenzierten Produkte.
-    % A2 erfuellt, engpassbezogene Beschaffung. A3 erfuellt, Bemessung der
-    % Bereitstellung. A4 erfuellt, wettbewerblich und technologieoffen.
-    % A5 teilweise erfuellt, hier sitzt die adverse Selektion. A6 nicht
-    % adressiert.
-    \caption{Abgleich bestehender Marktdesignansätze mit dem Anforderungskatalog. Eigene Bewertung.}
-    \label{tab:designabgleich}
-    \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.34\textwidth-\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Ansatz} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
-        \hline
-        Lokationale Preisbildung / Zonenteilung & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
-        Lokationale Redispatch-Preise & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
-        Regelleistungsmärkte & $\bullet$ & -- & $\bullet$ & $\bullet$ & $\bullet$ & $\circ$ \\
-        Kapazitätsmechanismen & -- & $\circ$ & $\bullet$ & $\bullet$ & $\bullet$ & -- \\
-        Kapazitätsbasierter Redispatch & -- & $\bullet$ & $\bullet$ & $\bullet$ & $\circ$ & -- \\
-        Netzbooster & ($\bullet$) & ($\bullet$) & ($\bullet$) & -- & -- & -- \\
-        \hline
-        \multicolumn{7}{@{}p{\textwidth}@{}}{\footnotesize $\bullet$ erfüllt \quad $\circ$ teilweise erfüllt \quad ($\bullet$) konzeptionell erfüllt, im Betrieb nicht bestätigt \quad -- nicht erfüllt} \\
-    \end{tabular}
-\end{table}
+% TABELLE ENTFALLEN am 08.09.2026, entschieden vom Verfasser. Die Ansaetze
+% stehen jetzt VOR den Anforderungen und lassen sich dort nicht mehr gegen
+% A1 bis A8 messen, weil es die Anforderungen an dieser Stelle noch nicht
+% gibt. Damit entfallen zugleich die 36 eigenen Bewertungen, die als offener
+% Punkt gefuehrt waren, weil sie im Fliesstext nicht begruendet sind.
+% Der Abgleich gegen die Anforderungen findet jetzt in Abschnitt 3.1.3 statt.
+% Die Marke tab:designabgleich entfaellt mit der Tabelle, sie war nur hier
+% referenziert. Wortlaut vollstaendig erhalten, nicht wieder aufnehmen:
+%   \begin{table}[htbp]
+%       \centering
+%       % ZEILE ERGAENZT am 06.09.2026, Befund I5. Der kapazitaetsbasierte
+%       % Redispatch nach Ehrhart, Eicke, Hirth und anderen fehlte, obwohl er
+%       % der naechstliegende Vergleich ist, weil er wie der eigene Entwurf die
+%       % bereitgehaltene Kapazitaet und nicht den Eingriff bemisst.
+%       % ZU PRUEFEN, ob die eingetragene Bewertung traegt. Vorgeschlagen sind
+%       % A1 nicht erfuellt, keine nach Reaktionszeit differenzierten Produkte.
+%       % A2 erfuellt, engpassbezogene Beschaffung. A3 erfuellt, Bemessung der
+%       % Bereitstellung. A4 erfuellt, wettbewerblich und technologieoffen.
+%       % A5 teilweise erfuellt, hier sitzt die adverse Selektion. A6 nicht
+%       % adressiert.
+%       \caption{Abgleich bestehender Marktdesignansätze mit dem Anforderungskatalog. Eigene Bewertung.}
+%       \label{tab:designabgleich}
+%       \small
+%       \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.34\textwidth-\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-2\tabcolsep\relax}>{\centering\arraybackslash}p{\dimexpr0.11\textwidth-\tabcolsep\relax}@{}}
+%           \hline
+%           \textbf{Ansatz} & \textbf{A1} & \textbf{A2} & \textbf{A3} & \textbf{A4} & \textbf{A5} & \textbf{A6} \\
+%           \hline
+%           Lokationale Preisbildung / Zonenteilung & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
+%           Lokationale Redispatch-Preise & -- & $\bullet$ & -- & $\bullet$ & $\circ$ & -- \\
+%           Regelleistungsmärkte & $\bullet$ & -- & $\bullet$ & $\bullet$ & $\bullet$ & $\circ$ \\
+%           Kapazitätsmechanismen & -- & $\circ$ & $\bullet$ & $\bullet$ & $\bullet$ & -- \\
+%           Kapazitätsbasierter Redispatch & -- & $\bullet$ & $\bullet$ & $\bullet$ & $\circ$ & -- \\
+%           Netzbooster & ($\bullet$) & ($\bullet$) & ($\bullet$) & -- & -- & -- \\
+%           \hline
+%           \multicolumn{7}{@{}p{\textwidth}@{}}{\footnotesize $\bullet$ erfüllt \quad $\circ$ teilweise erfüllt \quad ($\bullet$) konzeptionell erfüllt, im Betrieb nicht bestätigt \quad -- nicht erfüllt} \\
+%       \end{tabular}
+%   \end{table}
 
 Die lokationale Preisbildung, sei es über eine Teilung der Gebotszone oder über knotenscharfe Preise, adressiert die Ursache des Problems an der richtigen Stelle, indem sie Netzrestriktionen in die Fahrplanbildung internalisiert und damit den Redispatchbedarf verringert \cite{oggioni_market_2013, newbery_market_2018, einsiedler_analysis_2025}.
 Sie erzeugt jedoch kein Produkt für vorgehaltene Reaktionsfähigkeit, denn ein lokationaler Preis bewertet die Einspeisung an einem Knoten und nicht die Fähigkeit, sie im Fehlerfall innerhalb von Sekunden zu ändern.
@@ -404,9 +387,93 @@ Es beruht allerdings auf einer regulierten Anlage im Eigentum oder unter Verfüg
 A4 und A5 sind damit nicht adressiert, und die Frage nach der Vergütung eines am Markt tätigen Anbieters stellt sich in diesem Konzept nicht.
 Genau diese Abgrenzung markiert den Gegenstand der vorliegenden Arbeit.
 
+% ZU UEBERARBEITEN am 08.09.2026, satzweise. Der Fliesstext dieses
+% Unterabschnitts misst die Ansaetze durchgehend an A1 bis A6, etwa mit den
+% Wendungen erfuellen A1, A3, A4 und A5 sowie A4 und A5 sind damit nicht
+% adressiert. Das geht an dieser Stelle nicht mehr, weil die Anforderungen
+% erst danach stehen. Die Saetze sind neu zu fassen, sodass sie beschreiben,
+% was die Ansaetze leisten und was keiner von ihnen erzeugt, naemlich ein
+% Produkt fuer vorgehaltene Reaktionsfaehigkeit. Aus diesem Befund folgen die
+% Anforderungen im naechsten Unterabschnitt.
+
+% ---------------------------------------------------------------
+\subsection{Anforderungskatalog}
+\label{sec:requirements_catalogue}
+%
+% Die Nummerierung ist eingefuehrt, damit die Vergleichsmatrix in 3.1.2
+% und die Produktdefinition in 3.2 darauf verweisen koennen.
+% GEAENDERT: A1 traegt jetzt die Sanktionsbeduerftigkeit der binaeren
+% Erfuellung, weil eine binaere Anforderung ohne Poenale keine
+% verbindliche Zusage ist. A5 ist auf den Reservierungspreis umgestellt.
+
+% ZAHL BERICHTIGT am 08.09.2026 von sechs auf acht. Wortlaut vorher:
+%   Aus der Argumentation dieses Kapitels lassen sich sechs Anforderungen an einen Mechanismus zur Beschaffung kurativer Vorhalteleistung ableiten.
+Aus der Argumentation dieses Kapitels lassen sich acht Anforderungen an einen Mechanismus zur Beschaffung kurativer Vorhalteleistung ableiten.
+Sie beschreiben ausschließlich, was der Mechanismus leisten muss, während die konkrete Ausgestaltung in Abschnitt \ref{sec:product_design} erfolgt.
+
+% KATALOG NEU GEFASST am 08.09.2026, satzweise mit dem Verfasser. Aus sechs
+% Anforderungen sind acht geworden. A1 trug frueher drei Aussagen, naemlich
+% Differenzierung, binaere Erfuellung und Sanktion, davon stehen die beiden
+% letzten jetzt in A2. Das fruehere A3 trug Bemessungsgegenstand und
+% Bemessungsdimension, beides steht jetzt in A4. Neu sind A6 Teilnahme,
+% frueher Anreizkompatibilitaet und auf die Verguetung verengt, sowie A8
+% Umsetzbarkeit. Der Katalog ist technologieneutral gefasst, weshalb A7 den
+% Zustand der Anlage nennt und nicht mehr den Ladezustandsbereich.
+% BERICHTIGT dabei die Wendung in A5. Der Vorrang besteht nicht gegenueber
+% dem Redispatch, sondern innerhalb des Redispatch, siehe Abschnitt 2.1.5.
+% Die alte Fassung nennt A5 deshalb nicht mehr.
+% ALTE FASSUNG, vollstaendig erhalten, nicht wieder aufnehmen:
+%   \begin{description}
+%       \item[A1 -- Reaktionsgeschwindigkeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit durch das betroffene Betriebsmittel und die Betriebssituation vorgegeben und keine Wahlgröße des Akteurs ist. Die Erfüllung ist binär, denn eine verspätete Leistungsänderung hat keinen verminderten, sondern keinen Wert. Eine binäre Anforderung setzt eine Sanktion bei Nichterfüllung voraus, da die Zusage andernfalls nicht verbindlich ist (aus Abschnitt \ref{sec:curative_functionality}).
+%       \item[A2 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, da die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein \cite{blank_determination_2024}.
+%       \item[A3 -- Vergütung der Vorhaltung] Bemessungsgegenstand muss die verbindliche Bereitstellung von Reaktionsfähigkeit sein und nicht der durchgeführte Eingriff, da die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen (aus Abschnitt \ref{sec:interim_conclusion}). Bemessungsdimension ist dabei nicht allein die vorgehaltene Leistung, sondern auch die Dauer der Bindung, weil diese über die Zahl der gebundenen Intervalle die Erlöswirkung bestimmt (aus Abschnitt \ref{sec:soc_conflict}).
+%       \item[A4 -- Diskriminierungsfreiheit] Der Zugang muss technologieoffen ausgestaltet sein und dem Vorrang marktbasierter Beschaffung vor Redispatch entsprechen \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+%       \item[A5 -- Anreizkompatibilität] Die Vergütung muss mindestens den kurativen Reservierungspreis erreichen, weil im Selbstdispatch-Modell die Fahrplanhoheit beim Anlagenbetreiber liegt und Verfügbarkeit nur über einen Anreiz und nicht über eine Anweisung herstellbar ist (aus Abschnitt \ref{sec:interim_conclusion}).
+%       \item[A6 -- Vereinbarkeit mit bestehenden Verpflichtungen] Der Mechanismus muss mit den Präqualifikations- und Vermarktungsverpflichtungen vereinbar sein, unter denen die Anlage bereits steht, insbesondere mit dem für die Regelleistungsvorhaltung reservierten Ladezustandsbereich (aus Abschnitt \ref{sec:soc_conflict}).
+%   \end{description}
+
+\begin{description}
+    \item[A1 -- Reaktionszeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit vom betroffenen Betriebsmittel vorgegeben wird und keine Wahlgröße des Akteurs ist.
+    \item[A2 -- Verbindlichkeit] Die Zusage muss eine Sanktion bei Nichterfüllung tragen, weil eine verspätete Leistungsänderung wertlos ist und eine binäre Anforderung ohne Folgen keine Verbindlichkeit begründet.
+    \item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, weil die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein.
+    \item[A4 -- Bemessungsgegenstand] Die Vergütung muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, weil die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen.
+    \item[A5 -- Diskriminierungsfreiheit] Der Mechanismus muss an den geforderten Eigenschaften ansetzen und nicht an der Technologie, damit der Zugang diskriminierungsfrei bleibt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+    \item[A6 -- Teilnahme] Die Bedingungen der Teilnahme dürfen den erwarteten Vorteil nicht aufzehren, weil der Betreiber über sein Gebot allein entscheidet und die Maßnahme ohne Gebot nicht verfügbar ist.
+    \item[A7 -- Verträglichkeit] Der Mechanismus muss neben den bestehenden Verpflichtungen bestehen können, weil er denselben Zustand der Anlage bindet, den die übrigen Vermarktungswege und Systemdienstleistungen beanspruchen.
+    \item[A8 -- Umsetzbarkeit] Der Mechanismus muss in bestehende Betriebsprozesse integrierbar sein.
+\end{description}
+
+Die Anforderungen sind nicht unabhängig voneinander.
+A5 und A6 stehen in einem Spannungsverhältnis, das den quantitativen Kern dieser Arbeit bildet.
+Je enger der durch bestehende Verpflichtungen bereits gebundene Ladezustandsbereich ausfällt, desto höher ist der Wert der zusätzlich aufzugebenden Vermarktungsoption und damit der nach A5 erforderliche Reservierungspreis.
+A1 und A5 sind ebenfalls gekoppelt, da eine höhere Pönale die Verbindlichkeit der Zusage stärkt, zugleich aber eine Risikoprämie erzeugt und den geforderten Preis erhöht.
+A2 und A4 können in Konflikt treten, da eine netzknotenscharfe Beschaffung in Gebieten mit wenigen geeigneten Anlagen zu geringer Wettbewerbsintensität führt.
+% GESTRICHEN am 06.09.2026, Befund S7. Hier stand der Satz, diese
+% Zusammenhaenge wuerden in Kapitel 5 aufgegriffen. Das ist ein
+% struktureller Vorverweis ohne Sachfunktion nach Attribut 9. Der Verweis
+% auf Abschnitt 3.2 im zweiten Absatz dieses Unterabschnitts bleibt, weil
+% er ein Sachverweis ist. Nicht wieder aufnehmen.
+
+% AUSFUEHRUNG DER ANFORDERUNGEN, zu schreiben am 08.09.2026. Der Katalog
+% haelt jede Anforderung kurz. Der folgende Text fuehrt sie aus. Dorthin
+% gehoert insbesondere die Gegenseite des bilanziellen Ausgleichs, die zu A8
+% zaehlt und im Katalog bewusst nicht steht, sowie der Vorbehalt, dass die
+% Arbeit A8 nicht bewertet.
+%
+% DER FOLGENDE ABSATZ IST NEU ZU FASSEN. Er traegt die alten Nummern und
+% zwei Saetze, die mit dem Umbau entfallen sind. Der Satz zum
+% Spannungsverhaeltnis von A5 und A6 ist am 08.09.2026 gestrichen worden, und
+% der Satz mit der Wendung Wert der aufgegebenen Vermarktungsoption ist zu
+% ersetzen. Bereits gewaehlt ist als Ersatz der Satz, dass die Teilnahme
+% freiwillig ist, der jetzt auf A6 und nicht mehr auf A5 zeigt.
+
 % ---------------------------------------------------------------
 \subsection{Ableitung des Forschungsbedarfs}
 \label{sec:research_gap}
+% MARKE UEBERNOMMEN am 08.09.2026. sec:market_design_comparison lag auf dem
+% frueheren Abschnitt 3.1.2. chapter_2.tex verweist mit ihr auf den Abgleich
+% gegen die Anforderungen, und der findet seit dem Umbau hier statt.
+\label{sec:market_design_comparison}
 %
 % Hier folgt die Luecke aus der Argumentation des Kapitels, statt in der
 % Einleitung behauptet zu werden.
@@ -423,7 +490,7 @@ Die Regelleistung vergütet Vorhaltung, kennt aber keinen Netzbezug.
 Die Systematik des §\,13a \ac{EnWG} ist knotenscharf, bemisst aber den durchgeführten Eingriff, Vorhaltekosten sind nach ihr nicht erstattungsfähig, und die Anwendung der optionsbasierten Bewertungslogik auf ein \ac{BESS} hat die Beschlusskammer in der geltenden Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
 Die Lücke ist damit nicht aus dem Fehlen von Literatur erschlossen, sondern durch einen regulatorischen Befund belegt.
 Sie besteht nicht darin, dass eine Vergütung von Vorhaltung fehlt, sondern darin, dass keine bestehende Logik Vorhaltung und Lokationalität verbindet.
-Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A6 genügt, und den kurativen Reservierungspreis bestimmt, den ein \ac{BESS} für dessen Bereitstellung fordern muss.
+Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A8 genügt, und den kurativen Reservierungspreis bestimmt, den ein \ac{BESS} für dessen Bereitstellung fordern muss.
 
 % ---------------------------------------------------------------
 % ###############################################################
@@ -547,10 +614,10 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % weil alles Weitere auf ihr aufsetzt.
 
 \begin{itemize}
-    \item Produktdefinition, nämlich Vorhalteleistung anstelle von Arbeit, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A3
+    \item Produktdefinition, nämlich Vorhalteleistung anstelle von Arbeit, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A4
     \item Trennung von Vorhaltung und Abruf nach dem Muster der \ac{aFRR} aus Abschnitt \ref{sec:balancing_procurement}
     \item Richtung der Vorhaltung sowie die Festlegung, dass die Anlage nicht gesperrt, sondern in Leistung und Ladezustandsband gebunden wird und weiterhandeln darf
-    \item Binäre Erfüllung nach Anforderung A1 und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
+    \item Binäre Erfüllung nach Anforderung A2 und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
 \end{itemize}
 
 % ZWEI STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
@@ -568,7 +635,7 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 
 \begin{itemize}
     \item Vorgehaltene Leistung und gebundenes Ladezustandsband als die beiden Größen, die den Umfang der Bindung bestimmen
-    \item Bindungsdauer und Reaktionszeit, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, mit der Bindungsdauer als eigenständiger Bemessungsdimension nach Anforderung A3
+    \item Bindungsdauer und Reaktionszeit, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, mit der Bindungsdauer als eigenständiger Bemessungsdimension nach Anforderung A4
     \item Vergütungsform, also ob die Vergütung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt
     \item Tabelle der Produktparameter als Abschluss des Abschnitts, deren Größen Abschnitt \ref{sec:storage_model} als Symbole übernimmt
 \end{itemize}
@@ -614,7 +681,7 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
     \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels
     \item Ausschreibender und Turnus sowie das Zuschlagsverfahren
     \item Lokationalität der Beschaffung \cite{blank_determination_2024}
-    \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A1
+    \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A2
     \item Vergütungslogik und Präqualifikationsanforderungen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
     \item Abgrenzung zum Netzbooster \cite{consentec_systembooster_2026}
     \item Abgrenzung des marktbasierten kurativen Produkts gegenüber dem marktbasierten Redispatch, nämlich dass die kurative Vorhaltung allein Leistung reserviert, während der Redispatch zugleich eine Energielieferung auslöst \cite{hirth_kosten_2019}
