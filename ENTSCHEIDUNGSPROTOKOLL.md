@@ -3807,6 +3807,68 @@ bisherigen Marken sind erhalten, neu ist sec:market_design_approaches, und
 tab:designabgleich ist mit der Tabelle in den Kommentar gewandert. Die Prüfsuite
 läuft über die Datei ohne Befund.
 
+### 08.09.2026, Abschnitt 3.1.1 ausformuliert und auf das Marktdesign verengt
+
+Sechs Sätze, satzweise nach CLAUDE.md Abschnitt 3.2, jeder vom Verfasser aus drei
+Fassungen gewählt. Der Unterabschnitt beantwortet jetzt eine andere Frage als
+zuvor. Er benennt die diskutierten Anpassungen des Marktdesigns, die auf dasselbe
+Problem zielen wie ein kuratives Produkt, und schließt damit, dass keine von ihnen
+umgesetzt ist.
+
+Verengung, entschieden vom Verfasser. Behandelt werden nur noch die
+redispatchwirksamen Anpassungen, nämlich die räumliche Auflösung der Preisbildung,
+die knotenscharfen Grenzkosten für den Redispatch und der kapazitätsbasierte
+Redispatch. Entfallen sind die Regelleistungsmärkte, die Kapazitätsmechanismen und
+der Netzbooster. Die dreizehn Sätze der bisherigen Fassung stehen im Wortlaut als
+Kommentar und sind nicht wieder aufzunehmen.
+
+Die Regelleistung geht dabei nicht verloren. Sie trägt die eine Hälfte der
+Überkreuzstellung, nämlich dass Vorhaltung vergütet wird, ohne dass ein Netzbezug
+besteht, und dieser Satz steht in Abschnitt 3.1.3.
+
+Der Netzbooster ist kein Marktdesign, sondern kurative Systemführung mit einer
+regulierten Anlage, und Abschnitt 2.1.4 behandelt ihn bereits gesondert. Mit ihm
+entfällt allerdings der bisherige Schlusssatz von 3.1.1, wonach genau diese
+Abgrenzung den Gegenstand der Arbeit markiert. Das war die schärfste Abgrenzung des
+Kapitels. CLAUDE.md Abschnitt 9 sieht den Netzbooster ohnehin als eine der beiden
+nächstliegenden Alternativen in 3.1.3 vor, dort ist er nachzutragen.
+
+Belege, drei Vorbehalte. Erstens hat die Quellenprüfung vom 07.09.2026 Kapitel 3
+ausdrücklich nicht abgedeckt, die Schlüssel dort sind bisher nur auf Auflösbarkeit
+geprüft. Zweitens ist ehrhart_analysis_2025 mit diesem Absatz zum ersten Mal
+zitiert, und die Aussage, der Mechanismus bemesse die bereitgehaltene Kapazität
+statt des Eingriffs, stammt aus dem Kommentar vom 06.09.2026 zur inzwischen
+entfallenen Tabellenzeile und nicht aus der Quelle. Drittens gilt dasselbe für
+horsch_role_2017 und einsiedler_analysis_2025.
+
+Unbelegt. Die regionalen Gebiete allein für den Kurzfristhandel stehen als
+Untervariante im zweiten Satz. Eine eigene Fundstelle liegt in der Literaturdatei
+nicht vor. In Betracht käme die ACER-Veröffentlichung zu Cross-Zonal Trade, die
+Abschnitt 2.2.1 bereits führt.
+
+Ein Eintrag verliert seine einzige Fundstelle, nämlich consentec_ausarbeitung_2024
+zur Ausarbeitung eines Kapazitätsmechanismus. Er stand allein in dem Satz zu den
+Kapazitätsmechanismen, der mit der Verengung entfallen ist.
+
+Berichtigung eines eigenen Kommentars. Zunächst war vermerkt, oggioni_market_2013
+und newbery_market_2018 verlören ihre einzige Fundstelle. Das trifft nicht zu,
+beide werden weiterhin zitiert. Der Kommentar in der Datei ist entsprechend
+berichtigt.
+
+Befund zur Literatur, übergreifend. Von den 78 PDF-Dateien im Literaturordner sind
+zwölf verschlüsselt, sämtlich Dokumente der Bundesnetzagentur. Sie tragen einen
+Eigentümerschutz mit leerem Benutzerkennwort, weshalb sie sich in einem Betrachter
+ohne Nachfrage öffnen lassen. Für die sechs, auf die es ankommt, liegen in
+literature/txt bereits Textfassungen. Drei weitere Dateien überschreiten mit 266,
+269 und 272 Zeichen die Pfadgrenze von Windows, betroffen sind Hörsch, die
+Sous-Untersuchung und Garttan. Unabhängig davon liessen sich auch unverschlüsselte
+PDF-Dateien nicht lesen, nämlich Ehrhart, Einsiedler und Oggioni, obwohl keine von
+ihnen einen Verschlüsselungsmarker trägt. Der zuverlässige Weg ist deshalb die
+Textfassung, so wie sie für die Festlegung bereits vorliegt.
+
+Prüfstand. Die Datei umfasst 1392 Zeilen bei 1391 CRLF gegen 1391 Umbrüche und
+läuft ohne Befund durch die Prüfsuite.
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
@@ -5031,6 +5093,23 @@ trifft für diese Fassung nicht mehr zu.
 29. Verweise auf A-Nummern außerhalb von Kapitel 3. chapter_5.tex führt in einem
     Kommentar F3 als Folge aus A2 und A3, was nach der Umnummerierung A3 und A4
     wären. Nicht geändert, weil die Datei in dieser Sitzung nicht angefasst wurde.
+
+30. Beleg fuer ehrhart_analysis_2025. Die Aussage in Abschnitt 3.1.1 stammt aus
+    einem eigenen Kommentar und nicht aus der Quelle, deren Volltext sich nicht
+    oeffnen liess. Vor Abgabe zu bestaetigen, ebenso horsch_role_2017 und
+    einsiedler_analysis_2025.
+31. Regionale Gebiete allein fuer den Kurzfristhandel in Abschnitt 3.1.1. Ohne
+    eigene Fundstelle. In Betracht kommt die ACER-Veroeffentlichung aus 2.2.1.
+32. Netzbooster in Abschnitt 3.1.3. Er ist aus 3.1.1 entfallen, und mit ihm der
+    Satz, dass genau diese Abgrenzung den Gegenstand der Arbeit markiert. Nach
+    CLAUDE.md Abschnitt 9 gehoert er als naechstliegende Alternative nach 3.1.3
+    und ist dort nachzutragen.
+33. consentec_ausarbeitung_2024 ist seit dem 08.09.2026 nicht mehr zitiert.
+    Entweder an anderer Stelle verwenden oder vor Abgabe aus der Literaturdatei
+    nehmen.
+34. Lesbarkeit der Literatur. Drei Dateinamen ueberschreiten die Pfadgrenze und
+    sind zu kuerzen. Fuer Ehrhart und Hoersch waere eine Textfassung in
+    literature/txt der zuverlaessige Weg.
 
 ## Anhang, vollstaendiger Kommentarbestand chapter_1.tex vor dem Entfernen am 28.08.2026
 
