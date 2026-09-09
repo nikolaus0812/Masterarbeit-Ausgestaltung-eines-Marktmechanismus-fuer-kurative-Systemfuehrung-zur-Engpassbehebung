@@ -3914,6 +3914,52 @@ Wahl steht aus, weil der Verfasser zuerst die Struktur überdenkt.
 
 Prüfstand. chapter_3.tex läuft ohne Befund, 1421 CRLF gegen 1421 Umbrüche.
 
+### 08.09.2026, Kapitel 3 auf drei Abschnitte umgebaut, Zielumfang 14 Seiten
+
+Entschieden vom Verfasser. Anforderungen und Produkt stehen zusammen, danach die
+Optimierung, zuletzt die Validierung. Aus sieben Abschnitten sind drei geworden.
+
+Ausloeser ist eine Randbedingung, die der Verfasser gesetzt hat, naemlich dass die
+Ergebnisse vor Seite 50 beginnen. Der Build vom 08.09.2026 zeigt, dass Kapitel 3
+auf Seite 35 beginnt. Daraus folgt ein Hoechstumfang von 14 Seiten gegen die
+bisherigen 19 und die 21 mit den Eingangsdaten. Kapitel 2 umfasst dabei 29 Seiten
+gegen seinen eigenen Zielwert von 25, dort laege der zweite Hebel.
+
+Zuordnung. 3.1 traegt den Anforderungskatalog, die vier Unterabschnitte des
+Produkts aus dem frueheren Abschnitt 3.3 und zuletzt den Forschungsbedarf. 3.2
+traegt Ansatz und Loesungsverfahren, Eingangsdaten, Zielfunktion und Variablen,
+Nebenbedingungen und zuletzt Systemgrenzen und Abgrenzungen. 3.3 traegt die
+Validierung mit ihren beiden Unterabschnitten.
+
+Drei fruehere Abschnitte sind in 3.2.1 aufgegangen, naemlich der
+Modellierungsansatz, der Abschnitt zum kurativen Reservierungspreis als offener
+Groesse und die Methodendarstellung. Der Reservierungspreis steht dort, weil
+CLAUDE.md Abschnitt 7 ihm die Aufgabe gibt, die Modellwahl zu begruenden. Die
+Systemgrenzen und die Abgrenzung gegenueber dem Weber-Ansatz bilden gemeinsam
+3.2.5.
+
+Der Forschungsbedarf steht jetzt hinter dem Produkt. Das kehrt die uebliche
+Reihenfolge um, in der die Luecke die Arbeit begruendet, bevor die Loesung kommt.
+Der Verfasser hat das so gewaehlt, der Bogen lautet Anforderungen, Produkt, Luecke.
+Der Schlusssatz von 3.1.6 muesste daran angepasst werden.
+
+Keine Marke ist verloren. Alle 25 bleiben aktiv, darunter die drei, die von aussen
+referenziert werden, naemlich ch:design_model aus Kapitel 1,
+sec:market_design_comparison aus Kapitel 2 und sec:weber_exclusion aus Kapitel 5.
+Mitgezogen sind sec:product_design und sec:storage_model, deren Abschnitte
+entfallen sind, sowie sec:valuation_task und sec:lp_gurobi. Die Zahl der
+Stichpunkte ist mit 65 unveraendert, jede geaenderte Ueberschrift traegt die alte
+Fassung als Kommentar.
+
+Zu erledigen beim Ausformulieren, als Kommentar in 3.2.1 vermerkt. Der
+Unterabschnitt traegt noch die Stichpunkte zu den Systemgrenzen, also die
+Einzelanlagenbetrachtung, die nicht abgebildeten Groessen und die Gegenseite. Sie
+gehoeren nach 3.2.5.
+
+Der Build laeuft ohne Fehler durch, 67 Seiten, und die Pruefsuite meldet fuer
+chapter_3.tex keinen Befund. STRUKTUR.md ist auf den neuen Stand gebracht und
+traegt die gemessene Seitenrechnung.
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst

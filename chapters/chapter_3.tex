@@ -279,8 +279,14 @@ Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stell
 
 % ---------------------------------------------------------------
 % ###############################################################
-\section{Anforderungen an einen kurativen Marktmechanismus}
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Der Produktentwurf steht jetzt in diesem Abschnitt, weil der Verfasser Anforderungen und Produkt zusammen fuehren will.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \section{Anforderungen an einen kurativen Marktmechanismus}
+\section{Anforderungen und Produkt}
 \label{sec:market_requirements}
+% [Ziel: 5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2,5 Seiten]
 %
 % GRUPPIERUNG vom 20.08.2026: Die drei Unterabschnitte beantworten
@@ -475,8 +481,14 @@ Dieser Abschnitt stellt sie zusammen, prüft, ob bestehende Marktdesignansätze 
 %   % beide werden weiterhin an anderer Stelle zitiert.
 % ===============================================================
 
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Unveraendert, nur das Seitenziel ist an den Gesamtumfang von 14 Seiten angepasst.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Anforderungskatalog}
 \subsection{Anforderungskatalog}
 \label{sec:requirements_catalogue}
+% [Ziel: 1,5 Seiten, Katalog und Ausfuehrung]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %
 % Die Nummerierung ist eingefuehrt, damit die Vergleichsmatrix in 3.1.2
 % und die Produktdefinition in 3.2 darauf verweisen koennen.
@@ -546,140 +558,43 @@ A2 und A4 können in Konflikt treten, da eine netzknotenscharfe Beschaffung in G
 % freiwillig ist, der jetzt auf A6 und nicht mehr auf A5 zeigt.
 
 % ---------------------------------------------------------------
-\subsection{Ableitung des Forschungsbedarfs}
-\label{sec:research_gap}
-% MARKE UEBERNOMMEN am 08.09.2026. sec:market_design_comparison lag auf dem
-% frueheren Abschnitt 3.1.2. chapter_2.tex verweist mit ihr auf den Abgleich
-% gegen die Anforderungen, und der findet seit dem Umbau hier statt.
-\label{sec:market_design_comparison}
-%
-% Hier folgt die Luecke aus der Argumentation des Kapitels, statt in der
-% Einleitung behauptet zu werden.
-% GEAENDERT: Der Reifegrad ist zurueckgenommen, die Luecke ist auf die
-% Ueberkreuzstellung zugespitzt, und die gesuchte Groesse ist der
-% Reservierungspreis.
-
-Die Argumentation dieses Kapitels lässt sich zu einer Lücke zusammenführen.
-Die kurative Höherauslastung ist im Echtbetrieb erprobt, und der rechtliche Rahmen aus §\,13 \ac{EnWG} und \ac{SOGL} steht ihr nicht entgegen, sondern legt sie über das Kostenminimierungsgebot nahe.
-Für das anspruchsvollste Zeitfenster ist ein \ac{BESS} die einzige geeignete Technologie.
-Ihre Verfügbarkeit setzt jedoch eine Vorhaltung des Ladezustands voraus, die mit der marktoptimalen Betriebsweise und mit bereits bestehenden Präqualifikationsverpflichtungen konkurriert.
-Für diese Vorhaltung existiert keine passende Bemessungsgrundlage.
-Die Regelleistung vergütet Vorhaltung, kennt aber keinen Netzbezug.
-Die Systematik des §\,13a \ac{EnWG} ist knotenscharf, bemisst aber den durchgeführten Eingriff, Vorhaltekosten sind nach ihr nicht erstattungsfähig, und die Anwendung der optionsbasierten Bewertungslogik auf ein \ac{BESS} hat die Beschlusskammer in der geltenden Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
-Die Lücke ist damit nicht aus dem Fehlen von Literatur erschlossen, sondern durch einen regulatorischen Befund belegt.
-Sie besteht nicht darin, dass eine Vergütung von Vorhaltung fehlt, sondern darin, dass keine bestehende Logik Vorhaltung und Lokationalität verbindet.
-Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A8 genügt, und den kurativen Reservierungspreis bestimmt, den ein \ac{BESS} für dessen Bereitstellung fordern muss.
-
-% ---------------------------------------------------------------
-% ###############################################################
-\section{Der kurative Reservierungspreis als offene Größe}
-\label{sec:valuation_task}
-% [Ziel: 1,5 Seiten]
-%
-% NEUER ABSCHNITT am 08.09.2026, Stufe eins des Umbaus. Er nimmt den
-% Absatz zur Bewertungsaufgabe auf, der am 04.09.2026 aus dem
-% Zwischenfazit 2.4 entfernt wurde, und zerlegt ihn in seine drei
-% Bestandteile. Jeder Bestandteil erzeugt eine Anforderung an das Modell,
-% womit dieser Abschnitt die Wahl in 3.4 begruendet.
-%
-% MARKE. sec:valuation_task ist neu vergeben. sec:reservation_price war
-% nicht waehlbar, weil chapter_4.tex sie bereits fuehrt.
-%
-% Der folgende Kommentarblock stand bis zum 08.09.2026 als Einleitung von
-% Abschnitt 3.3 und ist unveraendert hierher gezogen, weil er genau den
-% Gegenstand dieses Abschnitts traegt.
-% EINLEITUNG DIESES ABSCHNITTS, festgelegt am 06.09.2026. Hierher gehoert
-% der Absatz zur Bewertungsaufgabe, der am 04.09.2026 aus dem
-% Zwischenfazit 2.4 entfernt wurde. Er steht bewusst NICHT am Kapitelanfang,
-% weil er dort vor dem Anforderungskatalog stuende und dessen Ergebnis
-% vorwegnaehme, und NICHT unmittelbar hinter 3.1.3, weil die Definition
-% dann zum dritten Mal nach Abschnitt 1.2 und dem Schlusssatz von 3.1.3
-% stuende.
-%
-% WORTLAUT DES ABGELEGTEN ABSATZES, als Vorlage und nicht zur woertlichen
-% Uebernahme:
-%   Die Bewertungsaufgabe dieser Arbeit folgt daraus. Zu bestimmen ist der
-%   kurative Reservierungspreis, also der Betrag, den ein BESS fuer eine
-%   kurative Vorhalteverpflichtung mindestens fordern muss, um gegenueber
-%   seiner besten alternativen Vermarktung indifferent zu sein. Er
-%   entspricht dem Wert der aufgegebenen Vermarktungsoption unter
-%   Beruecksichtigung der Pfadabhaengigkeit des Ladezustands und der
-%   parallelen Erloesquellen.
-%
-% ZWEI EINGRIFFE VOR DER UEBERNAHME.
-%   1  Der Halbsatz, die modellhafte Bestimmung sei Gegenstand des
-%      Kapitels 3, ist bereits gestrichen, weil er auf das eigene Kapitel
-%      verwiese.
-%   2  Die Wendung Wert der aufgegebenen Vermarktungsoption ist zu
-%      ersetzen, etwa durch entgangener Deckungsbeitrag der besten
-%      alternativen Vermarktung. Sie fuehrt sonst den Optionsbegriff als
-%      eigene Grundlage ein, und genau diese Rahmung ist fuer Abschnitt
-%      3.2 zurueckgenommen worden.
-%
-% WESHALB DER ABSATZ HIER TRAEGT. Seine drei Bestandteile nennen genau die
-% drei Eigenschaften, die die vier Unterabschnitte umsetzen.
-%   Der Wert der aufgegebenen Vermarktung ist eine Opportunitaetsgroesse
-%   und keine Kostenposition. Daraus folgt, dass das Modell den
-%   unrestringierten Fahrplan mitrechnen muss, weil die Groesse nur als
-%   Differenz existiert.
-%   Die Pfadabhaengigkeit des Ladezustands bedeutet, dass die Bindung einer
-%   Viertelstunde veraendert, was in der naechsten moeglich ist. Daraus
-%   folgt die zeitgekoppelte Formulierung in 3.3.3 und zugleich der dritte
-%   Grund in 3.4.1.
-%   Die parallelen Erloesquellen bedeuten, dass ein Teil des
-%   Ladezustandsbands durch die Praequalifikation bereits gebunden ist,
-%   weshalb die Grenzkosten der kurativen Bindung davon abhaengen, was
-%   schon zugesagt ist. Das ist das Spannungsverhaeltnis zwischen A5 und A6
-%   aus 3.1.1 und es begruendet die Marktauswahl in 3.3.1.
-%
-% VERHAELTNIS ZUM SCHLUSSSATZ VON 3.1.3. Dieser bleibt unveraendert und
-% benennt die Aufgabe grob. Die Einleitung nimmt sie auf und zerlegt sie in
-% das, was das Modell leisten muss. Die Wiederholung ist damit keine
-% Doppelung, sondern eine Aufloesung.
-
-\begin{itemize}
-    \item Bestimmung des kurativen Reservierungspreises als Betrag, bei dem der Betreiber gegenüber seiner besten alternativen Vermarktung indifferent ist
-    \item Erster Bestandteil, nämlich der entgangene Deckungsbeitrag der besten alternativen Vermarktung als Opportunitätsgröße, woraus folgt, dass das Modell den unrestringierten Fahrplan mitrechnen muss
-    \item Zweiter Bestandteil, nämlich die Pfadabhängigkeit des Ladezustands, woraus die zeitgekoppelte Formulierung folgt
-    \item Dritter Bestandteil, nämlich die parallelen Erlösquellen, woraus folgt, dass die Grenzkosten der Bindung davon abhängen, was bereits zugesagt ist
-\end{itemize}
-
-% VIER STICHPUNKTE ANGELEGT am 08.09.2026, Stufe eins. Sie sind das
-% Geruest aus dem Kommentarblock darueber und keine eigene Setzung. Beim
-% Ausformulieren gilt der dort vermerkte zweite Eingriff, naemlich dass die
-% Wendung Wert der aufgegebenen Vermarktungsoption nicht zu verwenden ist.
-
-% ---------------------------------------------------------------
-% ###############################################################
-% UEBERSCHRIFT GEAENDERT am 08.09.2026, Stufe eins des Umbaus
-% auf die Gliederung nach CLAUDE.md Abschnitt 7. Der Abschnitt beantwortet die Fragen des Produktentwurfs mit einem Rahmen und nicht mit einer fertigen Ausgestaltung.
-% Alte Fassung, nicht wieder aufnehmen:
-%   \section{Entwurf des kurativen Marktprodukts}
-\section{Rahmen des kurativen Marktprodukts}
+% ARCHIV am 08.09.2026. Der fruehere Abschnitt 3.3 Rahmen des kurativen
+% Marktprodukts entfaellt als eigener Abschnitt, seine vier Unterabschnitte
+% werden 3.1.2 bis 3.1.5. Ueberschrift und Kommentare sind hier archiviert,
+% die Marke sec:product_design ist mitgezogen, weil sie innerhalb dieser
+% Datei zweimal referenziert wird.
+%   \section{Rahmen des kurativen Marktprodukts}
+%   \label{sec:product_design}
+%   %   frueheres Seitenziel: [Ziel: 5 Seiten, eine Seite aus 3.3.3 uebernommen, Befund S2]
+%   % [Ziel: 3,5 Seiten]
+%   %
+%   % Hier wird der Anforderungskatalog aus Abschnitt 3.1.1 in ein
+%   % konkretes Produkt übersetzt. Jede Designentscheidung muss auf eine
+%   % Anforderung zurückverweisen.
+%   %
+%   % ZURUECKGENOMMEN: Hier stand die Rahmung, was der UENB kaufe, sei eine
+%   % Option mit Strike, Praemie, Laufzeit und Ausuebungswahrscheinlichkeit,
+%   % und das Produkt sei die Fortschreibung einer regulatorisch verankerten
+%   % Bewertungslogik. Diese Rahmung fuehrt genau die Bewertungslogik als
+%   % eigene Grundlage ein, die die Arbeit nicht verwendet. Die strukturelle
+%   % Aehnlichkeit darf in einem Satz stehen, die Bewertungslogik nicht.
+%   % Nicht wieder aufnehmen.
+%   %
+%   % VORLAGE FUER DIE PRODUKTSTRUKTUR ist stattdessen die Trennung von
+%   % Leistungsvorhaltung und Arbeitsabruf bei der aFRR aus Abschnitt 2.3.4.
+%   % Abschnitt 2.3.4 kuendigt diese Vorlage ausdruecklich an, weshalb sie
+%   % hier einzuloesen ist.
 \label{sec:product_design}
-%   frueheres Seitenziel: [Ziel: 5 Seiten, eine Seite aus 3.3.3 uebernommen, Befund S2]
-% [Ziel: 3,5 Seiten]
-%
-% Hier wird der Anforderungskatalog aus Abschnitt 3.1.1 in ein
-% konkretes Produkt übersetzt. Jede Designentscheidung muss auf eine
-% Anforderung zurückverweisen.
-%
-% ZURUECKGENOMMEN: Hier stand die Rahmung, was der UENB kaufe, sei eine
-% Option mit Strike, Praemie, Laufzeit und Ausuebungswahrscheinlichkeit,
-% und das Produkt sei die Fortschreibung einer regulatorisch verankerten
-% Bewertungslogik. Diese Rahmung fuehrt genau die Bewertungslogik als
-% eigene Grundlage ein, die die Arbeit nicht verwendet. Die strukturelle
-% Aehnlichkeit darf in einem Satz stehen, die Bewertungslogik nicht.
-% Nicht wieder aufnehmen.
-%
-% VORLAGE FUER DIE PRODUKTSTRUKTUR ist stattdessen die Trennung von
-% Leistungsvorhaltung und Arbeitsabruf bei der aFRR aus Abschnitt 2.3.4.
-% Abschnitt 2.3.4 kuendigt diese Vorlage ausdruecklich an, weshalb sie
-% hier einzuloesen ist.
 
 % ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.3.1 wird 3.1.2.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Gegenstand der Verpflichtung}
 \subsection{Gegenstand der Verpflichtung}
 \label{sec:product_scope}
+% [Ziel: 1 Seite]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
 %
 % UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser. Die
@@ -703,8 +618,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % dort als Gruppe A ausdruecklich genannt und keine eigene Setzung.
 
 % ---------------------------------------------------------------
-\subsection{Parameter des Modells}
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.3.2 wird 3.1.3. Parameter des Produkts statt des Modells, weil die Modellgroessen in 3.2 stehen.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Parameter des Modells}
+\subsection{Parameter des Produkts}
 \label{sec:product_parameters}
+% [Ziel: 1 Seite]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
 %
 % GRUPPE B bekommt nach Abschnitt 8 den vollen Vierschritt aus Setzung,
@@ -727,8 +648,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % Abschnitt 8 verlangt, das einmal offen zu sagen.
 
 % ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.3.3 wird 3.1.4.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Offene Fragen für die Auswertung}
 \subsection{Offene Fragen für die Auswertung}
 \label{sec:product_open_questions}
+% [Ziel: 0,5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 0,5 Seiten]
 %
 % GRUPPE C steht hier als Frage und wird hier NICHT beantwortet. Diese vier
@@ -744,8 +671,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 \end{itemize}
 
 % ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.3.4 wird 3.1.5.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Beschaffung und Durchsetzung}
 \subsection{Beschaffung und Durchsetzung}
 \label{sec:product_procurement}
+% [Ziel: 0,5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
 %
 % GRUPPE D bekommt nach Abschnitt 8 den Rahmen ohne Zahl. Bei zwei Fragen
@@ -814,8 +747,45 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % auf die Gliederung nach CLAUDE.md Abschnitt 7. Aus dem Unterabschnitt 3.3.1 wird der Abschnitt 3.4.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Modellierungsansatz und Systemgrenzen}
-\section{Modellierungsansatz und Systemgrenzen}
+
+% ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Steht jetzt hinter dem Produkt, weil der Verfasser die Luecke nach dem Entwurf ziehen will.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Ableitung des Forschungsbedarfs}
+\subsection{Ableitung des Forschungsbedarfs}
+\label{sec:research_gap}
+% [Ziel: 0,5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
+% MARKE UEBERNOMMEN am 08.09.2026. sec:market_design_comparison lag auf dem
+% frueheren Abschnitt 3.1.2. chapter_2.tex verweist mit ihr auf den Abgleich
+% gegen die Anforderungen, und der findet seit dem Umbau hier statt.
+\label{sec:market_design_comparison}
+%
+% Hier folgt die Luecke aus der Argumentation des Kapitels, statt in der
+% Einleitung behauptet zu werden.
+% GEAENDERT: Der Reifegrad ist zurueckgenommen, die Luecke ist auf die
+% Ueberkreuzstellung zugespitzt, und die gesuchte Groesse ist der
+% Reservierungspreis.
+
+Die Argumentation dieses Kapitels lässt sich zu einer Lücke zusammenführen.
+Die kurative Höherauslastung ist im Echtbetrieb erprobt, und der rechtliche Rahmen aus §\,13 \ac{EnWG} und \ac{SOGL} steht ihr nicht entgegen, sondern legt sie über das Kostenminimierungsgebot nahe.
+Für das anspruchsvollste Zeitfenster ist ein \ac{BESS} die einzige geeignete Technologie.
+Ihre Verfügbarkeit setzt jedoch eine Vorhaltung des Ladezustands voraus, die mit der marktoptimalen Betriebsweise und mit bereits bestehenden Präqualifikationsverpflichtungen konkurriert.
+Für diese Vorhaltung existiert keine passende Bemessungsgrundlage.
+Die Regelleistung vergütet Vorhaltung, kennt aber keinen Netzbezug.
+Die Systematik des §\,13a \ac{EnWG} ist knotenscharf, bemisst aber den durchgeführten Eingriff, Vorhaltekosten sind nach ihr nicht erstattungsfähig, und die Anwendung der optionsbasierten Bewertungslogik auf ein \ac{BESS} hat die Beschlusskammer in der geltenden Festlegung ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+Die Lücke ist damit nicht aus dem Fehlen von Literatur erschlossen, sondern durch einen regulatorischen Befund belegt.
+Sie besteht nicht darin, dass eine Vergütung von Vorhaltung fehlt, sondern darin, dass keine bestehende Logik Vorhaltung und Lokationalität verbindet.
+Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, das den Anforderungen A1 bis A8 genügt, und den kurativen Reservierungspreis bestimmt, den ein \ac{BESS} für dessen Bereitstellung fordern muss.
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Der Abschnitt traegt jetzt Ansatz, Eingangsdaten, Formulierung und zuletzt Systemgrenzen und Abgrenzungen.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \section{Modellierungsansatz und Systemgrenzen}
+\section{Optimierung des Speicherbetriebs}
 \label{sec:model_scope}
+% [Ziel: 7 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %   frueheres Seitenziel: [Ziel: 2,5 Seiten]
 % [Ziel: 4,5 Seiten, davon 2 aus dem frueheren Abschnitt 3.3.4]
 %
@@ -826,8 +796,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % Speicherbetriebs, die Ueberschrift des frueheren Abschnitts 3.3.
 
 % ---------------------------------------------------------------
-\subsection{Ansatz und Systemgrenzen}
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.4.1 wird 3.2.1. Die Systemgrenzen wandern in den letzten Unterabschnitt.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Ansatz und Systemgrenzen}
+\subsection{Ansatz und Lösungsverfahren}
 \label{sec:model_assumptions}
+% [Ziel: 1 Seite]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2,5 Seiten]
 %
 % ERGAENZT am 06.09.2026, Befund S3. Die Begruendung der Marktauswahl hatte
@@ -943,9 +919,172 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % auf die Gliederung nach CLAUDE.md Abschnitt 7. Der Unterabschnitt geht in 3.4 auf und fuehrt keine eigene Ueberschrift mehr.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Eingangsdaten}
+
+% ZU TRENNEN beim Ausformulieren, vermerkt am 08.09.2026. Dieser
+% Unterabschnitt traegt noch die Stichpunkte zu den Systemgrenzen, also die
+% Einzelanlagenbetrachtung, die nicht abgebildeten Groessen und die
+% Gegenseite. Sie gehoeren nach 3.2.5 Systemgrenzen und Abgrenzungen. Hier
+% bleiben Marktauswahl, deterministische Optimierung, zeitliche Aufloesung
+% und der Szenariorahmen.
+
+% HIERHER GEZOGEN am 08.09.2026. Der fruehere Abschnitt 3.2 Der kurative
+% Reservierungspreis als offene Groesse entfaellt als eigener Abschnitt. Er
+% begruendet nach CLAUDE.md Abschnitt 7 die Modellwahl und steht deshalb hier
+% am Anfang. Die Marke sec:valuation_task ist mitgezogen.
+
 % ---------------------------------------------------------------
+% ###############################################################
+% UEBERSCHRIFT AUFGEGANGEN am 08.09.2026. Der fruehere Abschnitt 3.2 fuehrt
+% keine eigene Ueberschrift mehr, sein Inhalt steht in 3.2.1 und begruendet
+% dort die Modellwahl. Alte Fassung, nicht wieder aufnehmen:
+%   \section{Der kurative Reservierungspreis als offene Größe}
+\label{sec:valuation_task}
+% [Ziel: 1,5 Seiten]
+%
+% NEUER ABSCHNITT am 08.09.2026, Stufe eins des Umbaus. Er nimmt den
+% Absatz zur Bewertungsaufgabe auf, der am 04.09.2026 aus dem
+% Zwischenfazit 2.4 entfernt wurde, und zerlegt ihn in seine drei
+% Bestandteile. Jeder Bestandteil erzeugt eine Anforderung an das Modell,
+% womit dieser Abschnitt die Wahl in 3.4 begruendet.
+%
+% MARKE. sec:valuation_task ist neu vergeben. sec:reservation_price war
+% nicht waehlbar, weil chapter_4.tex sie bereits fuehrt.
+%
+% Der folgende Kommentarblock stand bis zum 08.09.2026 als Einleitung von
+% Abschnitt 3.3 und ist unveraendert hierher gezogen, weil er genau den
+% Gegenstand dieses Abschnitts traegt.
+% EINLEITUNG DIESES ABSCHNITTS, festgelegt am 06.09.2026. Hierher gehoert
+% der Absatz zur Bewertungsaufgabe, der am 04.09.2026 aus dem
+% Zwischenfazit 2.4 entfernt wurde. Er steht bewusst NICHT am Kapitelanfang,
+% weil er dort vor dem Anforderungskatalog stuende und dessen Ergebnis
+% vorwegnaehme, und NICHT unmittelbar hinter 3.1.3, weil die Definition
+% dann zum dritten Mal nach Abschnitt 1.2 und dem Schlusssatz von 3.1.3
+% stuende.
+%
+% WORTLAUT DES ABGELEGTEN ABSATZES, als Vorlage und nicht zur woertlichen
+% Uebernahme:
+%   Die Bewertungsaufgabe dieser Arbeit folgt daraus. Zu bestimmen ist der
+%   kurative Reservierungspreis, also der Betrag, den ein BESS fuer eine
+%   kurative Vorhalteverpflichtung mindestens fordern muss, um gegenueber
+%   seiner besten alternativen Vermarktung indifferent zu sein. Er
+%   entspricht dem Wert der aufgegebenen Vermarktungsoption unter
+%   Beruecksichtigung der Pfadabhaengigkeit des Ladezustands und der
+%   parallelen Erloesquellen.
+%
+% ZWEI EINGRIFFE VOR DER UEBERNAHME.
+%   1  Der Halbsatz, die modellhafte Bestimmung sei Gegenstand des
+%      Kapitels 3, ist bereits gestrichen, weil er auf das eigene Kapitel
+%      verwiese.
+%   2  Die Wendung Wert der aufgegebenen Vermarktungsoption ist zu
+%      ersetzen, etwa durch entgangener Deckungsbeitrag der besten
+%      alternativen Vermarktung. Sie fuehrt sonst den Optionsbegriff als
+%      eigene Grundlage ein, und genau diese Rahmung ist fuer Abschnitt
+%      3.2 zurueckgenommen worden.
+%
+% WESHALB DER ABSATZ HIER TRAEGT. Seine drei Bestandteile nennen genau die
+% drei Eigenschaften, die die vier Unterabschnitte umsetzen.
+%   Der Wert der aufgegebenen Vermarktung ist eine Opportunitaetsgroesse
+%   und keine Kostenposition. Daraus folgt, dass das Modell den
+%   unrestringierten Fahrplan mitrechnen muss, weil die Groesse nur als
+%   Differenz existiert.
+%   Die Pfadabhaengigkeit des Ladezustands bedeutet, dass die Bindung einer
+%   Viertelstunde veraendert, was in der naechsten moeglich ist. Daraus
+%   folgt die zeitgekoppelte Formulierung in 3.3.3 und zugleich der dritte
+%   Grund in 3.4.1.
+%   Die parallelen Erloesquellen bedeuten, dass ein Teil des
+%   Ladezustandsbands durch die Praequalifikation bereits gebunden ist,
+%   weshalb die Grenzkosten der kurativen Bindung davon abhaengen, was
+%   schon zugesagt ist. Das ist das Spannungsverhaeltnis zwischen A5 und A6
+%   aus 3.1.1 und es begruendet die Marktauswahl in 3.3.1.
+%
+% VERHAELTNIS ZUM SCHLUSSSATZ VON 3.1.3. Dieser bleibt unveraendert und
+% benennt die Aufgabe grob. Die Einleitung nimmt sie auf und zerlegt sie in
+% das, was das Modell leisten muss. Die Wiederholung ist damit keine
+% Doppelung, sondern eine Aufloesung.
+
+\begin{itemize}
+    \item Bestimmung des kurativen Reservierungspreises als Betrag, bei dem der Betreiber gegenüber seiner besten alternativen Vermarktung indifferent ist
+    \item Erster Bestandteil, nämlich der entgangene Deckungsbeitrag der besten alternativen Vermarktung als Opportunitätsgröße, woraus folgt, dass das Modell den unrestringierten Fahrplan mitrechnen muss
+    \item Zweiter Bestandteil, nämlich die Pfadabhängigkeit des Ladezustands, woraus die zeitgekoppelte Formulierung folgt
+    \item Dritter Bestandteil, nämlich die parallelen Erlösquellen, woraus folgt, dass die Grenzkosten der Bindung davon abhängen, was bereits zugesagt ist
+\end{itemize}
+
+% VIER STICHPUNKTE ANGELEGT am 08.09.2026, Stufe eins. Sie sind das
+% Geruest aus dem Kommentarblock darueber und keine eigene Setzung. Beim
+% Ausformulieren gilt der dort vermerkte zweite Eingriff, naemlich dass die
+% Wendung Wert der aufgegebenen Vermarktungsoption nicht zu verwenden ist.
+
+% ---------------------------------------------------------------
+% ###############################################################
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Stufe eins des Umbaus
+% auf die Gliederung nach CLAUDE.md Abschnitt 7. Der Abschnitt beantwortet die Fragen des Produktentwurfs mit einem Rahmen und nicht mit einer fertigen Ausgestaltung.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \section{Entwurf des kurativen Marktprodukts}
+
+% METHODENDARSTELLUNG, hierher gezogen am 08.09.2026 aus dem frueheren
+% Abschnitt 3.5.1. Die Marke sec:lp_gurobi ist mitgezogen.
+
+% ---------------------------------------------------------------
+% UEBERSCHRIFT AUFGEGANGEN am 08.09.2026. Die Methodendarstellung fuehrt
+% keine eigene Ueberschrift mehr, sie steht in 3.2.1 Ansatz und
+% Loesungsverfahren. Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Modellstruktur und Lösungsverfahren}
+% [Ziel: 0,5 Seiten]
+% METHODENDARSTELLUNG, hierher gezogen am 08.09.2026. Der fruehere
+% Unterabschnitt 3.3.2 geht in diesem Abschnitt auf. Nach dem offenen
+% Punkt 1 in CLAUDE.md haengt sein Zuschnitt daran, ob eine Binaervariable
+% gleichzeitiges Laden und Entladen ausschliesst. Die Marke sec:lp_gurobi
+% ist mitgezogen.
+
+% ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Stufe eins des Umbaus
+% auf die Gliederung nach CLAUDE.md Abschnitt 7. Der Unterabschnitt geht in 3.5 auf und fuehrt keine eigene Ueberschrift mehr.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Grundlagen der gemischt-ganzzahligen linearen Optimierung}
+% UEBERSCHRIFT WIEDERHERGESTELLT am 08.09.2026 als Unterabschnitt 3.5.1.
+\label{sec:lp_gurobi}
+% [Ziel: 0,5 Seiten, Befund I9, diese Vorgabe strikt einhalten]
+%
+% GEKUERZT am 06.09.2026, Befund I9. Eine Seite Lehrbuchstoff steht in dem
+% Kapitel, das den eigenen Beitrag traegt. Der Abschnitt ist auf seine
+% Aufgabe zuzuschneiden, naemlich den Satz vorzubereiten, dass ein
+% gemischt-ganzzahliges Problem keine Dualvariablen liefert, denn dieser
+% Satz begruendet eine Entscheidung der Arbeit. Die Grundform des linearen
+% Programms genuegt in wenigen Saetzen.
+%
+% ABHAENGIG VON E1. Faellt die Entscheidung zugunsten der exogenen Bindung,
+% entfaellt dieser Abschnitt ganz, weil dann kein ganzzahliges Problem
+% vorliegt. Dann ist zugleich neu zu begruenden, weshalb die Dualvariablen
+% aus der Methodik entfernt wurden, denn das bisherige Argument haengt an
+% der gemischt-ganzzahligen Form.
+%
+% Zwei Absaetze genuegen, naemlich Zielfunktion, Restriktionen und
+% Entscheidungsvariablen, danach das Loesungsverfahren und die verwendete
+% Solver-Version. Kein Lehrbuchexkurs.
+% GEAENDERT: Die Ueberschrift nennt jetzt die gemischt-ganzzahlige Form,
+% weil die kurative Zusage als Binaervariable abgebildet ist. Der Abschnitt
+% muss deshalb ueber die Grundform hinaus das Branch-and-Bound-Verfahren
+% und die Folge benennen, dass ein gemischt-ganzzahliges Problem keine
+% Dualvariablen liefert.
+
+\begin{itemize}
+    \item Grundform des linearen Programms mit Zielfunktion, Nebenbedingungen und Entscheidungsvariablen \cite{domschke_operations_2015}
+    \item Erweiterung um ganzzahlige Variablen und das Lösungsverfahren über Relaxierung und Verzweigung \cite{domschke_operations_2015}
+    \item Folge für die Auswertung, nämlich dass ein gemischt-ganzzahliges Problem keine Dualvariablen liefert
+    \item Verwendete Solver-Version und Lizenzart \cite{gurobi_reference_2026}
+\end{itemize}
+
+%
+% HIERHER gehören die technischen BESS-Eigenschaften -- SoC-Dynamik,
+% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.2.
+% ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.4.2 wird 3.2.2, das Seitenziel sinkt von zwei auf eins.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Eingangsdaten}
 \subsection{Eingangsdaten}
-% [Ziel: 2 Seiten]
+%   frueheres Seitenziel: [Ziel: 2 Seiten]
+% [Ziel: 1 Seite]
 % UEBERSCHRIFT WIEDERHERGESTELLT am 08.09.2026. Sie war beim Umbau in einen
 % Kommentar ueberfuehrt worden, weil die Eingangsdaten in 3.4 aufgingen. Mit
 % der Entscheidung fuer Unterabschnitte tragen sie wieder eine eigene.
@@ -1001,69 +1140,16 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % auf die Gliederung nach CLAUDE.md Abschnitt 7. Aus dem Unterabschnitt 3.3.3 wird der Abschnitt 3.5.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Mathematische Formulierung des Speichermodells}
-\section{Mathematische Formulierung des Optimierungsproblems}
-\label{sec:storage_model}
-%   frueheres Seitenziel: [Ziel: 4 Seiten, eine Seite an 3.2 abgegeben, Befund S2]
-% [Ziel: 5 Seiten, davon 0,5 aus dem frueheren Abschnitt 3.3.2]
-%
-% DREI UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser.
-% Der Methodenteil ist dabei an den Anfang gerueckt, weil er beim Umbau am
-% Ende stand und die Reihenfolge sonst nicht traegt.
 
 % ---------------------------------------------------------------
-\subsection{Modellstruktur und Lösungsverfahren}
-% [Ziel: 0,5 Seiten]
-% METHODENDARSTELLUNG, hierher gezogen am 08.09.2026. Der fruehere
-% Unterabschnitt 3.3.2 geht in diesem Abschnitt auf. Nach dem offenen
-% Punkt 1 in CLAUDE.md haengt sein Zuschnitt daran, ob eine Binaervariable
-% gleichzeitiges Laden und Entladen ausschliesst. Die Marke sec:lp_gurobi
-% ist mitgezogen.
-
-% ---------------------------------------------------------------
-% UEBERSCHRIFT GEAENDERT am 08.09.2026, Stufe eins des Umbaus
-% auf die Gliederung nach CLAUDE.md Abschnitt 7. Der Unterabschnitt geht in 3.5 auf und fuehrt keine eigene Ueberschrift mehr.
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.5.2 wird 3.2.3.
 % Alte Fassung, nicht wieder aufnehmen:
-%   \subsection{Grundlagen der gemischt-ganzzahligen linearen Optimierung}
-% UEBERSCHRIFT WIEDERHERGESTELLT am 08.09.2026 als Unterabschnitt 3.5.1.
-\label{sec:lp_gurobi}
-% [Ziel: 0,5 Seiten, Befund I9, diese Vorgabe strikt einhalten]
-%
-% GEKUERZT am 06.09.2026, Befund I9. Eine Seite Lehrbuchstoff steht in dem
-% Kapitel, das den eigenen Beitrag traegt. Der Abschnitt ist auf seine
-% Aufgabe zuzuschneiden, naemlich den Satz vorzubereiten, dass ein
-% gemischt-ganzzahliges Problem keine Dualvariablen liefert, denn dieser
-% Satz begruendet eine Entscheidung der Arbeit. Die Grundform des linearen
-% Programms genuegt in wenigen Saetzen.
-%
-% ABHAENGIG VON E1. Faellt die Entscheidung zugunsten der exogenen Bindung,
-% entfaellt dieser Abschnitt ganz, weil dann kein ganzzahliges Problem
-% vorliegt. Dann ist zugleich neu zu begruenden, weshalb die Dualvariablen
-% aus der Methodik entfernt wurden, denn das bisherige Argument haengt an
-% der gemischt-ganzzahligen Form.
-%
-% Zwei Absaetze genuegen, naemlich Zielfunktion, Restriktionen und
-% Entscheidungsvariablen, danach das Loesungsverfahren und die verwendete
-% Solver-Version. Kein Lehrbuchexkurs.
-% GEAENDERT: Die Ueberschrift nennt jetzt die gemischt-ganzzahlige Form,
-% weil die kurative Zusage als Binaervariable abgebildet ist. Der Abschnitt
-% muss deshalb ueber die Grundform hinaus das Branch-and-Bound-Verfahren
-% und die Folge benennen, dass ein gemischt-ganzzahliges Problem keine
-% Dualvariablen liefert.
-
-\begin{itemize}
-    \item Grundform des linearen Programms mit Zielfunktion, Nebenbedingungen und Entscheidungsvariablen \cite{domschke_operations_2015}
-    \item Erweiterung um ganzzahlige Variablen und das Lösungsverfahren über Relaxierung und Verzweigung \cite{domschke_operations_2015}
-    \item Folge für die Auswertung, nämlich dass ein gemischt-ganzzahliges Problem keine Dualvariablen liefert
-    \item Verwendete Solver-Version und Lizenzart \cite{gurobi_reference_2026}
-\end{itemize}
-
-%
-% HIERHER gehören die technischen BESS-Eigenschaften -- SoC-Dynamik,
-% Wirkungsgrade, Degradation. NICHT in Abschnitt 2.2.
-
-% ---------------------------------------------------------------
+%   \subsection{Zielfunktion und Variablen}
 \subsection{Zielfunktion und Variablen}
 \label{sec:objective_variables}
+% [Ziel: 1,5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2 Seiten]
 % Nach CLAUDE.md Abschnitt 7 traegt dieser Abschnitt Mengen, Parameter,
 % Variablen und die Zielfunktion, jeweils mit einem Satz zu ihrer Aufgabe.
@@ -1074,8 +1160,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 \end{itemize}
 
 % ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.5.3 wird 3.2.4.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Nebenbedingungen}
 \subsection{Nebenbedingungen}
 \label{sec:constraints}
+% [Ziel: 2 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2,5 Seiten]
 
 \begin{itemize}
@@ -1194,8 +1286,29 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % auf die Gliederung nach CLAUDE.md Abschnitt 7. Aus dem Unterabschnitt 3.4.1 wird der Abschnitt 3.6.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
-\section{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
+
+% ---------------------------------------------------------------
+% ARCHIV am 08.09.2026. Der fruehere Abschnitt 3.5 Mathematische
+% Formulierung entfaellt als eigener Abschnitt, seine Unterabschnitte sind
+% jetzt 3.2.1, 3.2.3 und 3.2.4. Die Marke sec:storage_model ist mitgezogen,
+% weil sie innerhalb dieser Datei referenziert wird.
+%   \section{Mathematische Formulierung des Optimierungsproblems}
+%   \label{sec:storage_model}
+%   %   frueheres Seitenziel: [Ziel: 4 Seiten, eine Seite an 3.2 abgegeben, Befund S2]
+%   % [Ziel: 5 Seiten, davon 0,5 aus dem frueheren Abschnitt 3.3.2]
+%   %
+%   % DREI UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser.
+%   % Der Methodenteil ist dabei an den Anfang gerueckt, weil er beim Umbau am
+%   % Ende stand und die Reihenfolge sonst nicht traegt.
+\label{sec:storage_model}
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus dem frueheren Abschnitt 3.6 wird 3.2.5. Er traegt jetzt zusaetzlich die Systemgrenzen aus 3.2.1. Die Marke sec:weber_exclusion bleibt, chapter_5.tex verweist auf sie.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \section{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
+\subsection{Systemgrenzen und Abgrenzungen}
 \label{sec:weber_exclusion}
+% [Ziel: 1,5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %   frueheres Seitenziel: [Ziel: 1 Seite]
 % [Ziel: 1,5 Seiten]
 %
@@ -1282,8 +1395,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % auf die Gliederung nach CLAUDE.md Abschnitt 7. Aus dem Unterabschnitt 3.4.2 wird der Abschnitt 3.7. Die Ueberschrift folgt CLAUDE.md Abschnitt 7, die Marke sec:model_verification bleibt.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Prüfmaßstab und Prüfkriterium}
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.7 wird 3.3, das Seitenziel sinkt von 2,5 auf 2.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \section{Validierung des Modells}
 \section{Validierung des Modells}
 \label{sec:model_verification}
+% [Ziel: 2 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %   frueheres Seitenziel: [Ziel: 1 Seite]
 % [Ziel: 2,5 Seiten]
 %
@@ -1337,8 +1456,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 % Dafuer spricht, dass erst sie eine Verifikation im engeren Sinn sind.
 
 % ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.7.1 wird 3.3.1.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Vergleichsmaßstab}
 \subsection{Vergleichsmaßstab}
 \label{sec:validation_benchmark}
+% [Ziel: 1 Seite]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
 %
 % ZWEI UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser.
@@ -1349,8 +1474,14 @@ Die vorliegende Arbeit schließt diese Lücke, indem sie ein Produkt entwirft, d
 \end{itemize}
 
 % ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.7.2 wird 3.3.2.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Unterschiede in Vorausschau und Marktumfang}
 \subsection{Unterschiede in Vorausschau und Marktumfang}
 \label{sec:validation_differences}
+% [Ziel: 1 Seite]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1,5 Seiten]
 
 \begin{itemize}
