@@ -3960,6 +3960,196 @@ Der Build laeuft ohne Fehler durch, 67 Seiten, und die Pruefsuite meldet fuer
 chapter_3.tex keinen Befund. STRUKTUR.md ist auf den neuen Stand gebracht und
 traegt die gemessene Seitenrechnung.
 
+### 08.09.2026, Anforderungsbezuege in den Produktentwurf eingetragen
+
+Der Verfasser hat vorgegeben, dass das Produkt aus den Anforderungen entwickelt
+wird und sich daraus der Forschungsbedarf ableitet. Die Durchsicht von 3.1.2 bis
+3.1.5 hat ergeben, dass 15 der 19 Stichpunkte keinen Anforderungsbezug trugen und
+A8 im Produkt an keiner Stelle vorkam. Der Bezug ist jetzt in jedem Stichpunkt
+benannt, nach der folgenden Zuordnung, die der Verfasser bestaetigt hat.
+
+| Produktentscheidung | folgt aus |
+|---|---|
+| Vorhalteleistung statt Arbeit | A4, stand bereits |
+| Trennung von Vorhaltung und Abruf nach aFRR-Muster | A4 und A6 |
+| Bindung statt Sperrung, Anlage darf weiterhandeln | A7 |
+| Binaere Erfuellung | A2, stand bereits |
+| Vorgehaltene Leistung und Ladezustandsband | A4 und A7 |
+| Bindungsdauer und Reaktionszeit | A1 und A4 |
+| Verguetungsform | A4 |
+| Beschaffungszeitpunkt | A1 und A6 |
+| Ausschreibender, Turnus, Zuschlagsverfahren | A5 |
+| Lokationalitaet der Beschaffung | A3 |
+| Poenale | A2, stand bereits |
+| Verguetungslogik und Praequalifikation | A6 |
+| Abgrenzung zum Netzbooster | A5 |
+| Abgrenzung zum marktbasierten Redispatch | A4 |
+| Einfuegung in die Betriebsplanung | A8, neuer Stichpunkt |
+
+Die Tabelle der Produktparameter bleibt ohne Bezug, sie ist eine
+Darstellungsfrage. Die vier Stichpunkte in 3.1.4 bleiben ebenfalls ohne Bezug, sie
+sind Fragen und keine Antworten, und eine Frage laesst sich nicht aus einer
+Anforderung ableiten.
+
+Bei der Zuordnung ist beim Stichpunkt zur Bindungsdauer und Reaktionszeit nur A4
+benannt gewesen, obwohl die Reaktionszeit aus A1 folgt. Beides steht jetzt dort.
+
+Zwei Kommentare trugen die Nummerierung aus dem Katalog mit sechs Anforderungen.
+In 3.1.5 stand der Konflikt zwischen knotenscharfer Beschaffung nach A2 und
+Diskriminierungsfreiheit nach A4, richtig sind A3 und A5. In 3.2.1 stand die
+Vereinbarkeit als Anforderung A6, richtig ist A7. Beide Stellen tragen den Vermerk
+der Berichtigung mit der alten Nummer.
+
+Nicht berichtigt ist der Absatz zu den Kopplungen unter dem Katalog in 3.1.1. Er
+nennt A5 und A6, A1 und A5 sowie A2 und A4 und traegt damit durchgehend die alte
+Nummerierung. Er wird nicht nachnummeriert, sondern satzweise neu geschrieben,
+denn er enthaelt zwei Stellen, die ohnehin fallen. Die Wendung Wert der
+aufgegebenen Vermarktungsoption fuehrt den Optionsbegriff als eigene Grundlage
+ein, und der Satz zum Spannungsverhaeltnis ist am 08.09.2026 bereits als
+gestrichen vermerkt worden, steht aber noch im Text.
+
+### 08.09.2026, 3.1.6 in Stichpunkte ueberfuehrt
+
+Der Verfasser hat entschieden, den bisherigen Fliesstext des Forschungsbedarfs in
+Stichpunkte zu ueberfuehren, weil er aus der Zeit stammt, als der Unterabschnitt
+vor dem Produktentwurf stand. Der vollstaendige Wortlaut steht als Kommentar an
+der Stelle.
+
+Zwei Saetze sind dabei entfallen und nicht wieder aufzunehmen.
+
+Der erste lautete, die kurative Hoeherauslastung sei im Echtbetrieb erprobt und
+der rechtliche Rahmen aus § 13 EnWG und SO GL stehe ihr nicht entgegen, sondern
+lege sie ueber das Kostenminimierungsgebot nahe. Er wiederholt, was die
+Kapiteleinleitung sagt.
+
+Der zweite lautete, fuer das anspruchsvollste Zeitfenster sei ein BESS die einzige
+geeignete Technologie. Das ist ein eigenstaendiges Argument und geht ueber
+Abschnitt 2.1.3 hinaus, wo der Alleinstellungsanspruch am 20.08.2026
+zurueckgenommen worden ist. Die Behauptungsstaerke ist damit nicht gedeckt.
+
+Der Schlusssatz lautete, die vorliegende Arbeit schliesse diese Luecke, indem sie
+ein Produkt entwerfe, das den Anforderungen A1 bis A8 genuege, und den kurativen
+Reservierungspreis bestimme. Er ist ueberholt, weil das Produkt jetzt vor dem
+Forschungsbedarf steht und der Entwurf damit nicht mehr angekuendigt, sondern
+vorausgesetzt wird. An seine Stelle treten zwei Stichpunkte nach der Vorgabe des
+Verfassers, naemlich dass aus dem Rahmen mehr offene Fragen folgen, als eine
+Arbeit tragen kann, und dass diese Arbeit davon die Einbettung des Produkts in den
+Markt aufgreift und den kurativen Reservierungspreis bestimmt.
+
+Ein eigener Befund beim Zuschnitt der Bloecke. Der Archivkommentar zur Ueberschrift
+von 3.2 war in den Block von 3.1.6 geraten, weil die Blockgrenze nur Leerzeilen und
+Trennlinien zurueckgeht und nicht die davor stehenden Kommentare. Er steht wieder
+unmittelbar vor der Ueberschrift. Die Pruefsuite hat die dabei entstandene doppelte
+Leerzeile gemeldet, sie ist entfernt.
+
+Die Pruefsuite meldet fuer chapter_3.tex keinen Befund. Keine Marke ist verloren.
+
+
+### 09.09.2026, Abschnittseinleitung 3.1 und Listeneinleitung 3.1.1
+
+Beide Absaetze sind satzweise mit dem Verfasser neu gefasst worden.
+
+Die Abschnittseinleitung von 3.1 kuendigte im zweiten Satz noch die Pruefung
+bestehender Marktdesignansaetze an, die mit dem Umbau auf drei Abschnitte
+entfallen ist. Gewaehlt ist Fassung A. Der Satz nennt jetzt die drei Schritte des
+Abschnitts. Alte Fassung, nicht wieder aufnehmen.
+
+    Dieser Abschnitt stellt sie zusammen, prueft, ob bestehende
+    Marktdesignansaetze sie bereits erfuellen, und leitet daraus den
+    Forschungsbedarf ab.
+
+Die Listeneinleitung von 3.1.1 bestand aus zwei Saetzen, beide sind ersetzt,
+jeweils in Fassung C.
+
+Der erste Satz begann mit der Wendung aus der Argumentation dieses Kapitels. Sie
+traf nicht zu, denn die Anforderungen stammen aus Kapitel 2 und Kapitel 3 traegt
+bis zu dieser Stelle nur die Einleitung. Der Satz doppelte ausserdem den zweiten
+Satz der Abschnittseinleitung.
+
+Der zweite Satz verwies fuer die Ausgestaltung auf sec:product_design. Der Verweis
+ist entfallen. Seit dem Umbau steht die Ausgestaltung nicht mehr in einem eigenen
+Abschnitt, sondern in demselben Abschnitt 3.1, weshalb der Verweis ein
+struktureller Vorverweis ohne Sachfunktion nach Stilregel 9 war. Er loeste nach
+chapter_3.aux ausserdem auf 3.1.1 auf, also auf den Unterabschnitt, in dem er
+stand, weil die mitgezogene Marke hinter dem Katalog und vor der Ueberschrift von
+3.1.2 steht und damit den Zaehler von 3.1.1 uebernimmt. Das ist ein eigener
+Befund. Die Marke bleibt mit einem Kommentar stehen und ist nicht geloescht. Wird
+sie wieder gebraucht, ist stattdessen sec:product_scope zu verwenden.
+
+Alte Fassungen, nicht wieder aufnehmen.
+
+    Aus der Argumentation dieses Kapitels lassen sich acht Anforderungen an einen
+    Mechanismus zur Beschaffung kurativer Vorhalteleistung ableiten.
+    Sie beschreiben ausschliesslich, was der Mechanismus leisten muss, waehrend
+    die konkrete Ausgestaltung in Abschnitt sec:product_design erfolgt.
+
+### 09.09.2026, Ausfuehrung der Anforderungen A1 bis A8
+
+Der Verfasser hat entschieden, den Absatz zu den Kopplungen zu loeschen und die
+Stelle nach dem Katalog vollstaendig neu zu schreiben, mit zwei bis drei
+erlaeuternden Saetzen je Anforderung. Der geloeschte Absatz steht im Wortlaut als
+Kommentar in der Datei und ist im vorangehenden Eintrag begruendet.
+
+Entstanden sind drei Absaetze, naemlich A1 bis A3 zur technischen Wirksamkeit, A4
+bis A6 zur Bemessung und zum Zugang sowie A7 und A8 zur Vertraeglichkeit und zur
+Umsetzbarkeit. Die Aufteilung folgt dem Zweiteiler der neuen Listeneinleitung.
+
+Vier Eingriffe sind ueber die Wahl des Verfassers hinaus vorgenommen und ihm zur
+Pruefung vorgelegt.
+
+Zweimal ist ein einleitendes deshalb gestrichen worden, naemlich beim
+Eroeffnungssatz von A3 und beim Satz zur Praequalifikation in A5. Beide Fassungen
+waren als Folgesaetze angeboten und als Eroeffnungssaetze gewaehlt worden, wodurch
+der Anschluss fehlte.
+
+Zweimal ist eine Haeufung aufgeloest worden. Im ersten Absatz stand der UENB
+dreimal und die Vorauslastung dreimal in vier Saetzen, weshalb der vierte Satz
+jetzt die Einsatzplanung nennt. Im zweiten Absatz stand sodass dreimal und Gebot
+zweimal in zwei aufeinanderfolgenden Saetzen, weshalb der siebte Satz ohne beides
+auskommt. Im dritten Absatz nennt der vierte Satz den Netzknoten statt zum zweiten
+Mal den UENB und folgt damit zugleich enger dem Wortlaut von Abschnitt 2.1.2.
+
+Zwei Formulierungen stammen wortwoertlich vom Verfasser. Die Praequalifikation
+gewaehrleistet die technischen und physikalischen Eigenschaften, und der
+Mechanismus eroeffnet dem Anlagenbetreiber einen weiteren Markt mit eigenem
+Erloespotenzial. Die zweite ersetzt den angebotenen Gegensatz zwischen Preis und
+Anweisung, den der Verfasser nicht wollte.
+
+Drei Aussagen sind angeboten, angenommen und ausdruecklich auf spaeter verschoben
+worden. Sie stehen als Kommentar an ihrer Stelle.
+
+Erstens das Argument des Verfassers, dass der Bestand an BESS waechst, waehrend
+sich der Bedarf an Regelleistung aus der Dimensionierung des Systems ergibt und
+mit diesem Bestand nicht mitwaechst. Es ist ein eigenstaendiges Argument des
+Verfassers. Kapitel 2 belegt allein den Stand des Jahres 2024, naemlich 810 MW
+praequalifizierte BESS in der FCR bei einem deutschen Bedarf von 564 MW. Die
+Aussage ueber die Entwicklung geht darueber hinaus und ist zu belegen oder
+zurueckzunehmen. Der Verfasser will sie beim Ausgestalten des Produkts fuehren,
+die Vormerkung steht am Stichpunkt zur Bindung in 3.1.2.
+
+Zweitens der Satz, dass die Paarbildung nicht beliebig ist, weil eine Senke an
+einem anderen Netzknoten den ersten Engpass entlastet und zugleich einen zweiten
+verschaerfen kann. Auch das ist ein eigenstaendiges Argument des Verfassers und
+geht ueber Kapitel 2 hinaus. Vorgeschlagener Ort ist 3.1.5.
+
+Drittens der Vorbehalt, dass sich der Aufwand der Einfuegung in die
+Betriebsprozesse von aussen nicht beurteilen laesst, weil er die internen Ablaeufe
+des UENB betrifft. CLAUDE.md Abschnitt 8 verlangt diesen Vorbehalt. Vorgeschlagener
+Ort ist 3.1.5.
+
+Nicht geschrieben und weiterhin offen ist der Konflikt zwischen knotenscharfer
+Beschaffung nach A3 und Diskriminierungsfreiheit nach A5. Der fuenfte Satz des
+zweiten Absatzes streift ihn ueber die Zahl der Anbieter am Knoten, benennt ihn
+aber nicht. Nach CLAUDE.md Abschnitt 8 sagt der Text zu diesem Konflikt
+ausdruecklich, dass die Arbeit ihn nicht entscheidet.
+
+Die Pruefsuite meldet fuer chapter_3.tex keinen Befund. Der Build laeuft ohne
+Fehler durch, 68 Seiten. Kapitel 3 laeuft nach main.toc von Seite 35 bis Seite 42,
+also acht von vierzehn Seiten. 3.1.1 belegt davon zwei Seiten gegen ein Ziel von
+eineinhalb. Die Unterabschnitte 3.1.2 bis 3.1.6 stehen auf zwei Seiten, sind aber
+durchgehend Stichpunkt und tragen ein Ziel von dreieinhalb Seiten.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
