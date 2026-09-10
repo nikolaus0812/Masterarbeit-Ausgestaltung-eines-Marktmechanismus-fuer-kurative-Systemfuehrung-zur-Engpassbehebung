@@ -285,7 +285,8 @@ Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stell
 %   \section{Anforderungen an einen kurativen Marktmechanismus}
 \section{Anforderungen und Produkt}
 \label{sec:market_requirements}
-% [Ziel: 5 Seiten]
+% SEITENZIEL ERHOEHT am 09.09.2026 von 2 auf 3, weil Beschaffung und Durchsetzung hinzukommen.
+% [Ziel: 3 Seiten]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2,5 Seiten]
 %
@@ -768,18 +769,25 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
     Die kurative Zusage und die Vermarktung an den übrigen Märkten dürfen sich nicht gegenseitig ausschließen, und die Verfügbarkeit der Anlage für den Redispatch muss erhalten bleiben.
     \item[A8 -- Umsetzbarkeit] Der Mechanismus muss in bestehende Betriebsprozesse integrierbar sein.
     Die Beschaffung, der Abruf und der Nachweis müssen sich in die Prozesse einfügen, die der \ac{ÜNB} für das Engpassmanagement bereits führt.
-    Eine kurative Maßnahme ist bilanziell auszugleichen, weshalb an einem Netzknoten nicht eine einzelne Zusage genügt, sondern ein Paar aus Quelle und Senke erforderlich ist.
-% SATZ ERGAENZT am 09.09.2026, Fassung C, gewaehlt vom Verfasser. Er hat
-% vorgegeben, dass das Konzept alle Akteure so einbindet, dass jeder Eingriff
-% bilanziell ausgeglichen ist, und dass der Satz auf diese Wendung endet.
-% Die angebotene Fassung schloss mit und die Bilanz erhaelt. Geschrieben steht
-% bilanziell ausgeglichen ist, weil Kapitel 2 durchgehend diese Wendung fuehrt
-% und Stilregel 5 begriffliche Konstanz verlangt.
+% ZWEI SAETZE ZU EINEM am 09.09.2026, Fassung A, gewaehlt vom Verfasser.
+% Beide sagten nicht eines, sondern ein Paar beziehungsweise eine
+% Kombination, die Sache stand damit zweimal. Der Verfasser hat die Doppelung
+% gemeldet.
 %
-% FOLGE fuer 3.1.5, dort zu beruecksichtigen. Wird nicht das einzelne Gebot
-% bezuschlagt, sondern eine Kombination, dann betrifft das den Stichpunkt zum
-% Zuschlagsverfahren nach Anforderung A5.
-    Gegenstand der Beschaffung ist deshalb nicht das einzelne Gebot, sondern eine Kombination von Geboten, die den Engpass entlastet und bilanziell ausgeglichen ist.
+% ZUGLEICH BERICHTIGT. Das Paar legte genau zwei Beteiligte fest. Eine
+% kurative Massnahme kann nach Vorgabe des Verfassers ein Verbund mehrerer
+% Massnahmen sein, weshalb der Satz jetzt von einem Verbund von Geboten
+% spricht und die Zahl offen laesst.
+%
+% VERLOREN GEHT damit die Nennung von Quelle und Senke aus Abschnitt 2.1.2.
+% Kapitel 2 belegt dort mindestens zwei koordiniert eingesetzte Akteure. Dass
+% es mehr sein koennen, ist eine Ergaenzung des Verfassers und geht ueber den
+% Beleg hinaus. Die angebotene Fassung B haette Quellen und Senken behalten.
+%
+% ALTE FASSUNG, vollstaendig erhalten, nicht wieder aufnehmen:
+%   Eine kurative Maßnahme ist bilanziell auszugleichen, weshalb an einem Netzknoten nicht eine einzelne Zusage genügt, sondern ein Paar aus Quelle und Senke erforderlich ist.
+%   Gegenstand der Beschaffung ist deshalb nicht das einzelne Gebot, sondern eine Kombination von Geboten, die den Engpass entlastet und bilanziell ausgeglichen ist.
+    Gegenstand der Beschaffung ist nicht das einzelne Gebot, sondern ein Verbund von Geboten, der den Engpass entlastet und bilanziell ausgeglichen ist.
 \end{description}
 % GESTRICHEN am 06.09.2026, Befund S7. Hier stand der Satz, diese
 % Zusammenhaenge wuerden in Kapitel 5 aufgegriffen. Das ist ein
@@ -840,9 +848,28 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % Aus 3.3.1 wird 3.1.2.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Gegenstand der Verpflichtung}
-\subsection{Gegenstand der Verpflichtung}
+% UEBERSCHRIFT GEAENDERT am 09.09.2026, entschieden vom Verfasser. Der
+% Unterabschnitt traegt jetzt die Produktdefinition und die Parameter
+% gemeinsam. Gewaehlt ist Fassung C.
+%
+% BEGRIFF NEU EINGEFUEHRT. Vorhalteprodukt steht hier zum ersten Mal. Nach
+% Stilregel 5 ist er von hier an durchgehend zu verwenden und nicht durch
+% Produkt, Marktprodukt oder kurative Vorhaltung zu ersetzen, wo das Produkt
+% gemeint ist.
+%
+% FORMWECHSEL. CLAUDE.md Abschnitt 8 behandelt Gruppe A mit einer
+% Entscheidung ohne Bandbreite und Gruppe B mit dem vollen Vierschritt aus
+% Setzung, Begruendung, Bandbreite und Kriterium. Beide Formen laufen in
+% diesem Unterabschnitt jetzt nebeneinander, der Text muss den Wechsel
+% tragen.
+%
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Gegenstand der Verpflichtung}
+\subsection{Das kurative Vorhalteprodukt}
 \label{sec:product_scope}
-% [Ziel: 1 Seite]
+\label{sec:product_parameters}
+% [Ziel: 2 Seiten]
+% SEITENZIEL ZUSAMMENGEFASST am 09.09.2026 aus zweimal 1 Seite.
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
 %
@@ -870,7 +897,7 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % darueber hinaus und ist zu belegen oder zurueckzunehmen.
     \item Richtung der Vorhaltung sowie die Festlegung, dass die Anlage nicht gesperrt, sondern in Leistung und Ladezustandsband gebunden wird und weiterhandeln darf, nach Anforderung A7
     \item Binäre Erfüllung nach Anforderung A2 und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
-\end{itemize}
+% END ITEMIZE ENTFALLEN am 09.09.2026, die Stichpunkte des frueheren 3.1.3 folgen.
 
 % ZWEI STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
 % naemlich die Bindung statt Sperrung und die binaere Erfuellung. Beide sind
@@ -881,8 +908,12 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % Aus 3.3.2 wird 3.1.3. Parameter des Produkts statt des Modells, weil die Modellgroessen in 3.2 stehen.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Parameter des Modells}
-\subsection{Parameter des Produkts}
-\label{sec:product_parameters}
+% UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser. Der
+% fruehere Unterabschnitt 3.1.3 ist in 3.1.2 aufgegangen, weil beide
+% zusammen die Produktdefinition tragen und getrennt je eine halbe Seite
+% ergaeben. Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Parameter des Produkts}
+% MARKE VERSCHOBEN am 09.09.2026 auf die neue Ueberschrift oben.
 % [Ziel: 1 Seite]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
@@ -891,42 +922,11 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % Begruendung, Bandbreite und Kriterium und laeuft in eine Tabelle mit den
 % Spalten Groesse, Basisfall und in Kapitel 5 zu pruefen.
 
-\begin{itemize}
+% BEGIN ITEMIZE ENTFALLEN am 09.09.2026, die Stichpunkte laufen weiter.
     \item Vorgehaltene Leistung und gebundenes Ladezustandsband als die beiden Größen, die den Umfang der Bindung bestimmen, nach den Anforderungen A4 und A7
     \item Bindungsdauer und Reaktionszeit, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, nach Anforderung A1, mit der Bindungsdauer als eigenständiger Bemessungsdimension nach Anforderung A4
     \item Vergütungsform, also ob die Vergütung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
     \item Tabelle der Produktparameter als Abschluss des Abschnitts, deren Größen Abschnitt \ref{sec:storage_model} als Symbole übernimmt
-\end{itemize}
-
-% ZWEI STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
-% naemlich die vorgehaltene Leistung mit dem Ladezustandsband und die
-% Verguetungsform. Die Verguetungsform stand bisher gebuendelt mit den
-% Praequalifikationsanforderungen in einem Stichpunkt, der jetzt in Gruppe D
-% steht. Beim Ausformulieren ist diese Buendelung aufzuloesen.
-% SOBALD EINE ZAHL GESETZT IST, haengt jedes Ergebnis in Kapitel 4 an ihr.
-% Abschnitt 8 verlangt, das einmal offen zu sagen.
-
-% ---------------------------------------------------------------
-% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
-% Aus 3.3.3 wird 3.1.4.
-% Alte Fassung, nicht wieder aufnehmen:
-%   \subsection{Offene Fragen für die Auswertung}
-\subsection{Offene Fragen für die Auswertung}
-\label{sec:product_open_questions}
-% [Ziel: 0,5 Seiten]
-% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
-% [Ziel: 0,5 Seiten]
-%
-% GRUPPE C steht hier als Frage und wird hier NICHT beantwortet. Diese vier
-% sind die Bruecke nach Kapitel 5.
-% VIER STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026, sie
-% hatten in der bisherigen Fassung keinen Stichpunkt.
-
-\begin{itemize}
-    \item Welche Bindungsdauer vertretbar ist
-    \item Welche vorgehaltene Leistung vertretbar ist
-    \item Welche Reaktionszeitklasse vertretbar ist
-    \item Ab welchem Punkt die kurative Vorhaltung die Regelleistung und nicht mehr nur die Arbitrage verdrängt
 \end{itemize}
 
 % ---------------------------------------------------------------
@@ -934,11 +934,14 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % Aus 3.3.4 wird 3.1.5.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Beschaffung und Durchsetzung}
-\subsection{Beschaffung und Durchsetzung}
+% UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser.
+% Beschaffung und Durchsetzung gehen im Vorhalteprodukt auf, weil sie zum Produkt zaehlen.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Beschaffung und Durchsetzung}
 \label{sec:product_procurement}
-% [Ziel: 0,5 Seiten]
+% frueheres eigenes Seitenziel dieses Blocks: [Ziel: 0,5 Seiten]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
-% [Ziel: 1 Seite]
+% frueheres eigenes Seitenziel dieses Blocks: [Ziel: 1 Seite]
 %
 % GRUPPE D bekommt nach Abschnitt 8 den Rahmen ohne Zahl. Bei zwei Fragen
 % sagt der Text ausdruecklich, dass die Arbeit sie nicht entscheidet, naemlich
@@ -1017,7 +1020,8 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %   \subsection{Ableitung des Forschungsbedarfs}
 \subsection{Ableitung des Forschungsbedarfs}
 \label{sec:research_gap}
-% [Ziel: 0,5 Seiten]
+% SEITENZIEL ERHOEHT am 09.09.2026 von 0,5 auf 1, weil die offenen Fragen hinzukommen.
+% [Ziel: 1 Seite]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % MARKE UEBERNOMMEN am 08.09.2026. sec:market_design_comparison lag auf dem
 % frueheren Abschnitt 3.1.2. chapter_2.tex verweist mit ihr auf den Abgleich
@@ -1069,6 +1073,40 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
     \item Sie besteht darin, dass keine bestehende Logik Vorhaltung und Lokationalität verbindet
     \item Aus dem Rahmen folgen mehrere offene Fragen, mehr als eine Arbeit tragen kann
     \item Diese Arbeit greift davon die Einbettung des Produkts in den Markt auf und bestimmt den kurativen Reservierungspreis
+\end{itemize}
+
+% ZWEI STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
+% naemlich die vorgehaltene Leistung mit dem Ladezustandsband und die
+% Verguetungsform. Die Verguetungsform stand bisher gebuendelt mit den
+% Praequalifikationsanforderungen in einem Stichpunkt, der jetzt in Gruppe D
+% steht. Beim Ausformulieren ist diese Buendelung aufzuloesen.
+% SOBALD EINE ZAHL GESETZT IST, haengt jedes Ergebnis in Kapitel 4 an ihr.
+% Abschnitt 8 verlangt, das einmal offen zu sagen.
+
+% ---------------------------------------------------------------
+% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+% Aus 3.3.3 wird 3.1.4.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Offene Fragen für die Auswertung}
+% UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser.
+% Die offenen Fragen gehen in die Ableitung des Forschungsbedarfs auf. Sie sind nach CLAUDE.md Abschnitt 8 die Bruecke nach Kapitel 5.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Offene Fragen für die Auswertung}
+\label{sec:product_open_questions}
+% frueheres eigenes Seitenziel dieses Blocks: [Ziel: 0,5 Seiten]
+% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
+% frueheres eigenes Seitenziel dieses Blocks: [Ziel: 0,5 Seiten]
+%
+% GRUPPE C steht hier als Frage und wird hier NICHT beantwortet. Diese vier
+% sind die Bruecke nach Kapitel 5.
+% VIER STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026, sie
+% hatten in der bisherigen Fassung keinen Stichpunkt.
+
+\begin{itemize}
+    \item Welche Bindungsdauer vertretbar ist
+    \item Welche vorgehaltene Leistung vertretbar ist
+    \item Welche Reaktionszeitklasse vertretbar ist
+    \item Ab welchem Punkt die kurative Vorhaltung die Regelleistung und nicht mehr nur die Arbitrage verdrängt
 \end{itemize}
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
 % Der Abschnitt traegt jetzt Ansatz, Eingangsdaten, Formulierung und zuletzt Systemgrenzen und Abgrenzungen.
