@@ -51,7 +51,7 @@ Zielwert um vier Seiten überschreitet.
 | Überleitung | entfallen |
 | Abruf und Erfüllung | F, ein Absatz mit zehn Sätzen, zwei Punkte offen |
 | Überleitung | entfallen |
-| Beschaffung | T, Präqualifikation als Absatz mit sieben Sätzen, dreizehn Punkte offen |
+| Beschaffung | F, Präqualifikation acht Sätze, Ausschreibung und Gebot acht, Zuschlag fünf, Stichpunkt 27, 38 und 39 offen |
 | Abschluss | S, vier Punkte mit Tabelle |
 
 ---

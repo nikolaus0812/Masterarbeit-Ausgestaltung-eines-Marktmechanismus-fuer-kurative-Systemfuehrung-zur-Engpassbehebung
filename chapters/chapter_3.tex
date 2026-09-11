@@ -1360,6 +1360,17 @@ Diese drei Eigenschaften prüft die Präqualifikation der Regelleistung bereits,
 Die kurative Zusage führt der Akteur in den Planungsdaten mit, die er dem \ac{ÜNB} übermittelt, und weist nach einer Einplanung nach, dass er lieferfähig gewesen wäre.
 Eine für die Regelleistung präqualifizierte Anlage weist die dort geprüften Eigenschaften nicht erneut nach, sodass ihr Aufwand auf das beschränkt bleibt, was die kurative Zusage zusätzlich verlangt.
 Die Sensitivität des Standorts weist der Akteur nicht selbst nach, denn sie folgt aus dem Netzmodell des \ac{ÜNB}, weshalb er allein den Netzknoten angibt, an dem seine Anlage angeschlossen ist.
+% SATZ EINGEFUEGT am 11.09.2026, Fassung A, gewaehlt vom Verfasser. Er nimmt
+% die Verteilnetzbetreiber auf, die die Arbeit bis dahin nicht erwaehnte. Der
+% Satz spricht allgemein vom Netzbetreiber, an dessen Netz die Anlage
+% angeschlossen ist, das Wort Verteilnetz faellt nicht. Grundlage sind die
+% PQ-Bedingungen Seite 94 f. und Art. 182 Abs. 2 SO GL. Die Bestaetigung des
+% Anschlussnetzbetreibers gilt dort fuer Vorhaltung und Erbringung, getrennt
+% nach Richtung. Die Quelle ist in diesem Absatz bereits zitiert.
+% BEFUND fuer die Pruefung auf Dopplungen. Nach Art. 182 Abs. 2 SO GL erhebt
+% die Praequalifikation der Regelleistung den Netzanschlusspunkt bereits.
+% Neu am Satz davor ist damit nur, wofuer der Knoten genutzt wird.
+Wie in der Regelleistung bestätigt dabei der Netzbetreiber, an dessen Netz die Anlage angeschlossen ist, dass Vorhaltung und Abruf an diesem Anschluss möglich sind.
 Die Klassen von fünf und zehn Minuten deckt die Präqualifikation der \ac{aFRR} ab, während eine Anlage für die Klasse von zwei Minuten die schnellere Reaktion eigens nachweist.
 Anlagen, die nicht an der Regelleistung teilnehmen, weisen alle drei Eigenschaften selbst nach.
 
@@ -1367,16 +1378,99 @@ Anlagen, die nicht an der Regelleistung teilnehmen, weisen alle drei Eigenschaft
 % STICHPUNKT 27 BLEIBT, weil Satz 4 nur sagt, dass der Aufwand klein bleibt,
 % nicht aber, dass er vor dem Zuschlag anfaellt.
     \item Aufwand der Teilnahme, der aus Präqualifikation und laufenden Nachweisen unabhängig vom Zuschlag anfällt, nach Anforderung A6
-    \item Ausschreibender, nämlich der betroffene \ac{ÜNB} oder die vier \ac{ÜNB} gemeinsam, nach Anforderung A5
-    \item Produktzeitscheibe als Einheit der Ausschreibung, abzugrenzen von der Bindungsdauer, mit der \ac{aFRR} als Vorlage, deren Zeitscheiben vier Stunden umfassen
-    \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels, nach den Anforderungen A1 und A6
-    \item Turnus der Ausschreibung, also täglich, wöchentlich oder länger, und die Frage, ob er dem Turnus der Regelleistung folgt
-    \item Zuschlagsverfahren und Preisregel, also Einheitspreis oder Gebotspreis, nach Anforderung A5
-    \item Vergütungsform, also ob die Zahlung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
-    \item Verbundbeschaffung, also Zuschlag auf eine Kombination von Geboten statt auf das einzelne Gebot, weil die Maßnahme bilanziell ausgeglichen sein muss, nach Anforderung A8
-    \item Teilbarkeit des Gebots und Mindestlosgröße, weil beides an dünn besetzten Knoten über den Wettbewerb mitentscheidet, nach den Anforderungen A3 und A5
-    \item Aggregation mehrerer Anlagen zu einem Gebot, die in der Regelleistung üblich ist und den Wettbewerb nach A5 stärkt, der knotenscharfen Beschaffung nach A3 aber entgegensteht
-    \item Lokationalität der Beschaffung nach Anforderung A3, wobei die Paarbildung nicht beliebig ist, denn eine Senke an einem anderen Netzknoten entlastet zwar den ersten Engpass, kann aber zugleich einen zweiten verschärfen \cite{blank_determination_2024}
+\end{itemize}
+
+% AUSSCHREIBUNG UND ZUSCHLAG AUSFORMULIERT am 11.09.2026, satzweise mit dem
+% Verfasser, zwei Absaetze mit acht und fuenf Saetzen. Sie decken Stichpunkt
+% 28 bis 37 ab. Die Reihenfolge ist beim Absatzschluss mit Zustimmung des
+% Verfassers umgestellt, naemlich Verfahren und Bedarf, Gebot, Zuschlag und
+% zuletzt die Bekanntgabe. Der Umbruch liegt zwischen Gebot und Zuschlag.
+%
+% SETZUNGEN DES VERFASSERS.
+%   Gemeinsame Ausschreibung der deutschen UENB wie bei der aFRR.
+%   Bedarf aus den Rechenlaeufen der Redispatchplanung am Vortag. Der
+%   Verfasser sprach von den pRD-Laeufen, die Bezeichnung ist bei Amprion
+%   ueblich und steht bewusst nicht im Text. Die Abbildung
+%   fig:markt_zeitschiene fuehrt pRD1, pRD2 und WAPP ohne Erklaerung und ohne
+%   Eintrag im Abkuerzungsverzeichnis, das ist in der Pruefung auf Luecken
+%   aufzugreifen.
+%   Zeitscheibe von einer Stunde, mit Rueckbezug auf den Energievorhalt im
+%   Absatz zu Abruf und Erfuellung. Die Vorlage aFRR arbeitet mit
+%   Vierstundenscheiben, die Abweichung ist hingenommen.
+%   Taegliche und gleichzeitige Ausschreibung aller 24 Zeitscheiben. Dass ein
+%   Akteur je Zeitscheibe ein eigenes Gebot abgibt, ist eine Ergaenzung, die
+%   der Verfasser uebernommen hat.
+%   Preis je Zeitscheibe und Richtung in Euro je Megawatt und Stunde. Damit
+%   ist die Verguetungsform nach Stichpunkt 33 beantwortet.
+%   Mindestgroesse 25 MW, Zusammenfassung je Netzknoten, massgeblich die
+%   Wirkung am angegebenen Knoten, Beispiel Mittelspannung und 110-kV-Netz.
+%   HINWEIS, einmal gemeldet. 25 MW liegen weit ueber den 500 kW, die die
+%   Verordnung (EU) 2019/943 fuer Day-Ahead und Intraday verlangt, und
+%   stehen in Spannung zu A5. Die Zusammenfassung je Knoten faengt das auf.
+%   Hoechstleistung mit Teilzuschlag, der die Mindestgroesse nicht
+%   unterschreitet. Die Bedingung ist eine Ableitung, die der Verfasser
+%   gewaehlt hat.
+%   Kein Anspruch auf Zuschlag, pay-as-bid, Auswahl der benoetigten
+%   Zeitscheiben. Ehrhart 2025 Seite 7 stuetzt, dass die Preisregel das
+%   erwartete Ergebnis nicht verschiebt, steht aber nicht im Text.
+%   Vergleich nach Wirkung mit dem praeventiven Redispatch und den
+%   Massnahmen im eigenen Verfuegungsbereich. Das ist eine Regel fuer den
+%   Zuschlag und keine Grenze fuer den Preis. Nach Entscheidung 9 gibt die
+%   Arbeit fuer den Reservierungspreis keine Obergrenze an.
+%   Verbund aus beiden Richtungen. HINWEIS, einmal gemeldet. Der Satz steht
+%   nahe am Wortlaut von A8 in 3.1.1.
+%   Abstimmung der Sensitivitaeten, die entlastende Richtung am wirksamen
+%   Knoten, die Gegenrichtung an einem Knoten ohne Wirkung. Das loest den
+%   Einwand des Verfassers vom 09.09.2026 zur Paarbildung auf.
+%   Bekanntgabe vor 23.30 Uhr, damit fuer die erste Stunde der Handel
+%   zwischen den Regelzonen noch offen ist, 30 Minuten vor Lieferbeginn nach
+%   Abschnitt 2.2. Geschrieben steht 23.30 statt 23:30, weil Stilregel 7
+%   Doppelpunkte im Fliesstext ausschliesst. Der Verfasser setzte den Schluss
+%   der Ausschreibung gegen 23 Uhr, im Text steht allein die Frist der
+%   Bekanntgabe.
+%
+% FOLGE FUER DAS MODELL, gemeldet und in 3.2.1 vorgemerkt. Um 23 Uhr hat der
+% Akteur Day-Ahead, IDA-1 und IDA-2 bereits vermarktet. Das Modell optimiert
+% nach 3.2.1 alle Maerkte gemeinsam bei vollstaendiger Preiskenntnis und
+% unterstellt damit, die Bindung sei vor der Day-Ahead-Auktion bekannt.
+%
+% EINGRIFFE BEIM ABSATZSCHLUSS, vom Verfasser bestaetigt. Reihenfolge wie
+% oben. Satz 1 lautete, sodass ein Akteur nur ein Verfahren durchlaeuft, und
+% nannte das Produkt statt das Vorhalteprodukt. Satz 2 nannte die UENB statt
+% sie. Satz 3 lautete, sodass der Energievorhalt einen Abruf ueber eine volle
+% Zeitscheibe abdeckt. Der Satz zur Ausschreibung begann mit Damit.
+%
+% ERLEDIGTE STICHPUNKTE 28 BIS 37, nicht wieder aufnehmen:
+%   \item Ausschreibender, nämlich der betroffene \ac{ÜNB} oder die vier \ac{ÜNB} gemeinsam, nach Anforderung A5
+%   \item Produktzeitscheibe als Einheit der Ausschreibung, abzugrenzen von der Bindungsdauer, mit der \ac{aFRR} als Vorlage, deren Zeitscheiben vier Stunden umfassen
+%   \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels, nach den Anforderungen A1 und A6
+%   \item Turnus der Ausschreibung, also täglich, wöchentlich oder länger, und die Frage, ob er dem Turnus der Regelleistung folgt
+%   \item Zuschlagsverfahren und Preisregel, also Einheitspreis oder Gebotspreis, nach Anforderung A5
+%   \item Vergütungsform, also ob die Zahlung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
+%   \item Verbundbeschaffung, also Zuschlag auf eine Kombination von Geboten statt auf das einzelne Gebot, weil die Maßnahme bilanziell ausgeglichen sein muss, nach Anforderung A8
+%   \item Teilbarkeit des Gebots und Mindestlosgröße, weil beides an dünn besetzten Knoten über den Wettbewerb mitentscheidet, nach den Anforderungen A3 und A5
+%   \item Aggregation mehrerer Anlagen zu einem Gebot, die in der Regelleistung üblich ist und den Wettbewerb nach A5 stärkt, der knotenscharfen Beschaffung nach A3 aber entgegensteht
+%   \item Lokationalität der Beschaffung nach Anforderung A3, wobei die Paarbildung nicht beliebig ist, denn eine Senke an einem anderen Netzknoten entlastet zwar den ersten Engpass, kann aber zugleich einen zweiten verschärfen \cite{blank_determination_2024}
+
+Die deutschen \ac{ÜNB} schreiben das Vorhalteprodukt gemeinsam aus, wie sie es bei der \ac{aFRR} bereits tun, und ein Akteur durchläuft damit nur ein Verfahren.
+Den Bedarf ermitteln sie in den Rechenläufen ihrer Redispatchplanung am Vortag, sodass er vor dem Zuschlag feststeht.
+Ausgeschrieben wird je Zeitscheibe von einer Stunde, und der Energievorhalt von einer Megawattstunde je Megawatt deckt damit einen Abruf über eine volle Zeitscheibe ab.
+Die Ausschreibung findet täglich statt, und zwar gleichzeitig für alle 24 Zeitscheiben des Folgetages, für die ein Akteur jeweils ein eigenes Gebot abgeben kann.
+Das Gebot nennt für jede Zeitscheibe einen Preis in Euro je Megawatt und Stunde, getrennt für die positive und die negative Richtung.
+Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, und anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt das Vorhalteprodukt die Zusammenfassung nur je Netzknoten.
+Maßgeblich ist dabei allein die Wirkung am angegebenen Knoten, und bei Anlagen, die an vielen Knoten der Mittelspannung angeschlossen sind, zählt etwa nur die Wirkung am übergeordneten Knoten im 110-kV-Netz.
+Neben dem Preis nennt das Gebot eine Höchstleistung, von der die \ac{ÜNB} auch einen Teil bezuschlagen können, solange dieser die Mindestgröße nicht unterschreitet.
+
+Einen Anspruch auf Zuschlag hat der Akteur nicht, denn die \ac{ÜNB} nehmen Gebote nach pay-as-bid nur für die Zeitscheiben an, die sie benötigen.
+Dabei vergleichen sie jedes Gebot nach seiner Wirkung, also nach der Sensitivität des Netzknotens, mit dem präventiven Redispatch und den Maßnahmen in ihrem eigenen Verfügungsbereich.
+Bezuschlagt wird damit kein einzelnes Gebot, sondern ein Verbund aus Geboten beider Richtungen, der sich bilanziell ausgleicht.
+Im Verbund lassen sich die Sensitivitäten aufeinander abstimmen, indem die eine Richtung an einem wirksamen Knoten den Engpass entlastet und die Gegenrichtung an einem Knoten steht, der auf das Betriebsmittel kaum wirkt.
+Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der Akteur für die erste Stunde des Liefertages noch vor dem Handelsschluss zwischen den Regelzonen umplanen kann.
+
+% NOCH OFFEN, in der Pruefung auf Dopplungen zu klaeren. Beide sind
+% vermutlich durch A7, den Satz zum Bedarf und den Vergleich mit dem
+% praeventiven Redispatch weitgehend abgedeckt.
+\begin{itemize}
     \item Verhältnis zum Redispatch, nämlich dass die kurative Zusage die Verfügbarkeit der Anlage für eine Redispatchanweisung nicht aufhebt, nach den Anforderungen A4 und A7
     \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung nach Anforderung A8, mit dem Vorbehalt, dass sich ihr Aufwand von außen nicht beurteilen lässt, weil er die internen Abläufe des \ac{ÜNB} betrifft
 \end{itemize}
@@ -1586,6 +1680,15 @@ Anlagen, die nicht an der Regelleistung teilnehmen, weisen alle drei Eigenschaft
     \item Mengenmäßige Begrenzung der Regelleistungsmärkte, deren Bedarf der Systemgröße folgt und nicht mit der Speicherflotte wächst, sodass ein Zubau im Gigawattmaßstab die zusätzliche Leistung überwiegend in die Arbitrage drängt \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
     \item Kannibalisierung der Preisspreads, aus denen die Arbitrageerlöse stammen, weil Speicher Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}
     \item Einzelanlagenbetrachtung statt Systemebene, Begründung und Konsequenzen
+% VORMERKUNG vom 11.09.2026 aus 3.1.2, offener Punkt fuer die Modellwahl. Die
+% Ausschreibung des Vorhalteprodukts schliesst am Vortag gegen 23 Uhr, die
+% Zuschlaege stehen vor 23.30 Uhr fest. Day-Ahead, IDA-1 und IDA-2 sind dann
+% bereits vermarktet. Zu dieser Setzung passt das Modell nur, wenn es die
+% Mengen dieser Maerkte vor der Bindung festhaelt und die Bindung erst auf
+% den kontinuierlichen Intraday-Handel und die IDA-3 wirken laesst.
+% Entscheidung 2 bleibt unberuehrt, es aendert sich, was beide Laeufe
+% gemeinsam haben. Beruehrt ist auch der offene Punkt zu unzulaessigen
+% Laeufen, wenn der verkaufte Fahrplan das Band bereits belegt.
     \item Deterministische Optimierung mit vollständiger Preiskenntnis, Abgrenzung gegenüber stochastischen Ansätzen, gestützt darauf, dass eine prognosegestützte Handelsstrategie im deutschen kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses erreicht \cite{hornek_value_2025}
     \item Zeitliche Auflösung von 96 Viertelstunden je Tag, konsistent zur Marktzeiteinheit seit dem 01.10.2025 \cite{ffe_saegezahn_2026}
     \item Szenariorahmen 2030 als qualitative Einordnung des Untersuchungsrahmens und nicht als Eingangsgröße \cite{bundesnetzagentur_netzentwicklungsplan_2026}

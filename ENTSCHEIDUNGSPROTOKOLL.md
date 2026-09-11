@@ -4441,6 +4441,62 @@ Megawattstunde je zugesagtem Megawatt.
 Stichpunkt bleibt hinter dem Absatz stehen.
 
 
+### 11.09.2026, Nachtrag, Ausschreibung und Zuschlag in 3.1.2 ausformuliert
+
+Zwei Absaetze mit acht und fuenf Saetzen, dazu ein Satz zum Anschlussnetzbetreiber
+im Absatz zur Praequalifikation.
+
+**Setzungen des Verfassers.** Die deutschen UENB schreiben gemeinsam aus wie bei
+der aFRR. Den Bedarf ermitteln sie in den Rechenlaeufen der Redispatchplanung am
+Vortag. Der Verfasser nannte die pRD-Laeufe, die Bezeichnung steht bewusst nicht
+im Text. Zeitscheibe von einer Stunde. Taegliche und gleichzeitige Ausschreibung
+aller 24 Zeitscheiben. Preis je Zeitscheibe und Richtung in Euro je Megawatt und
+Stunde. Mindestgroesse 25 MW, Zusammenfassung je Netzknoten, massgeblich die
+Wirkung am angegebenen Knoten. Hoechstleistung mit Teilzuschlag, der die
+Mindestgroesse nicht unterschreitet. Kein Anspruch auf Zuschlag, pay-as-bid,
+Auswahl der benoetigten Zeitscheiben, Vergleich nach Wirkung mit dem praeventiven
+Redispatch und den Massnahmen im eigenen Verfuegungsbereich. Verbund aus beiden
+Richtungen, die entlastende Richtung am wirksamen Knoten, die Gegenrichtung an
+einem Knoten ohne Wirkung. Bekanntgabe vor 23.30 Uhr, damit der Handel zwischen
+den Regelzonen fuer die erste Stunde noch offen ist. Der Anschlussnetzbetreiber
+bestaetigt wie in der Regelleistung, dass Vorhaltung und Abruf an seinem Anschluss
+moeglich sind, PQ-Bedingungen Seite 94 f. und Art. 182 Abs. 2 SO GL.
+
+**Verworfen, nicht wieder aufnehmen.** Ausschreibender sei der UENB, in dessen
+Regelzone das Betriebsmittel liegt. Die Preisregel bleibe unter Verweis auf
+Ehrhart 2025 offen. Die Zeitscheibe umfasse vier Stunden wie bei der aFRR.
+Ausdruecklich nicht im Text steht nach Weisung des Verfassers, dass die
+Ausschreibung nach der IDA-2 schliesst.
+
+**Offener Punkt fuer das Modell.** Die Zuschlaege stehen vor 23.30 Uhr des
+Vortages fest, wenn Day-Ahead, IDA-1 und IDA-2 bereits vermarktet sind. Das
+Modell optimiert nach 3.2.1 alle Maerkte gemeinsam bei vollstaendiger
+Preiskenntnis und unterstellt damit, die Bindung sei vor der Day-Ahead-Auktion
+bekannt. Passend waere ein Modell, das die Mengen dieser Maerkte vor der Bindung
+festhaelt. Entscheidung 2 bleibt unberuehrt, beruehrt ist der offene Punkt zu
+unzulaessigen Laeufen. Nicht stellvertretend entschieden, in 3.2.1 vorgemerkt.
+
+**Gemeldet und so uebernommen.** 25 MW liegen weit ueber den 500 kW der Verordnung
+(EU) 2019/943 fuer Day-Ahead und Intraday und stehen in Spannung zu A5. Der Satz
+zum Verbund steht nahe am Wortlaut von A8. Der Vergleich mit dem praeventiven
+Redispatch ist eine Regel fuer den Zuschlag und keine Grenze fuer den Preis, damit
+Entscheidung 9 gewahrt bleibt.
+
+**Nebenbefunde fuer die Pruefung auf Dopplungen und Luecken.** Die Abbildung
+fig:markt_zeitschiene fuehrt pRD1, pRD2 und WAPP ohne Erklaerung und ohne Eintrag
+im Abkuerzungsverzeichnis. Nach Art. 182 Abs. 2 SO GL erhebt die Praequalifikation
+der Regelleistung den Netzanschlusspunkt bereits. Bei einer Zusammenfassung gibt
+der Akteur den uebergeordneten Knoten an und nicht den Anschluss jeder Anlage,
+was Satz 5 der Praequalifikation noch anders sagt. Stichpunkt 38 und 39 sind
+offen geblieben.
+
+**Eingriffe beim Absatzschluss**, bestaetigt. Reihenfolge Verfahren, Gebot,
+Zuschlag, Bekanntgabe, Umbruch zwischen Gebot und Zuschlag, zweimal sodass
+ersetzt, Vorhalteprodukt statt Produkt, 23.30 statt 23:30.
+
+Pruefsuite und Build siehe Commit.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
