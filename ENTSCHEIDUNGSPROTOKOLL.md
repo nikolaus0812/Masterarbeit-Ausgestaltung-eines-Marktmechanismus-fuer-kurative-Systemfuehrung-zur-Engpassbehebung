@@ -4150,6 +4150,198 @@ eineinhalb. Die Unterabschnitte 3.1.2 bis 3.1.6 stehen auf zwei Seiten, sind abe
 durchgehend Stichpunkt und tragen ein Ziel von dreieinhalb Seiten.
 
 
+### 09.09.2026, Endstand 3.1.1 und Umbau von 3.1 auf drei Unterabschnitte
+
+Dieser Eintrag holt sieben Eingriffe nach, die nach dem vorigen Eintrag desselben
+Tages geschehen sind.
+
+**Listeneinleitung.** Der Verfasser hat die Zweiteilung nach technischer
+Wirksamkeit und Rahmen der Beschaffung als teils teils verworfen. Der erste Satz
+sagt jetzt, wozu der Katalog dient, der zweite benennt den Geltungsbereich. Der
+Verfasser hat im ersten Satz fertiger Mechanismus durch einen Mechanismus
+ersetzt. Alte Fassungen, nicht wieder aufnehmen.
+
+    Die acht Anforderungen betreffen teils die technische Wirksamkeit der
+    Massnahme und teils den Rahmen, in dem sie beschafft wird.
+    Er benennt geforderte Eigenschaften und keine Technologie, sodass er fuer
+    jede Anlage gilt, die diese Eigenschaften erfuellt.
+
+Der zweite der beiden alten Saetze traf nach dem Verfasser die Sache nicht. Die
+Technologieneutralitaet steht seitdem allein in A5.
+
+**Ausfuehrung zugeordnet.** Die achtzehn Saetze standen zunaechst in drei
+Absaetzen, dann in einem, und stehen jetzt bei ihren Katalogeintraegen. Der
+Verfasser will Anforderung und Erlaeuterung nicht getrennt sehen.
+
+**Zitate gestrichen.** blank_determination_2024 im Satz zu den Sensitivitaeten und
+europaisches_parlament_und_rat_der_eu_verordnung_2019 im Katalogeintrag A5, beide
+weil Kapitel 2 die Sache behandelt. Keiner der beiden Eintraege verwaist. Der
+Katalog traegt damit keinen Beleg mehr.
+
+**A6 neu gefasst**, Fassung C. Der Eintrag richtet sich darauf aus, dass erst die
+marktliche Beschaffung eine Teilnahme eroeffnet. Gestrichen und nicht wieder
+aufzunehmen ist der Satz, ueber den Zuschlag entscheide der UENB und der Akteur
+trage den Aufwand der Teilnahme, bevor feststehe, ob er daraus einen Erloes
+erziele. Der Aufwandsgedanke steht seitdem in der Beschaffung von 3.1.2. Eigener
+Eingriff, weil er als er den Mechanismus meinen konnte, steht dort dieser.
+
+**A7**, zweiter Erlaeuterungssatz ersetzt. Der Verfasser will statt einer
+Mengenfrage, dass sich kurative Zusage und uebrige Vermarktung nicht ausschliessen
+und die Verfuegbarkeit fuer den Redispatch erhalten bleibt. Der Redispatch ist
+nach Entscheidung 8 bewusst nicht als Markt gefasst. Alte Fassung, nicht wieder
+aufnehmen.
+
+    Ob die kurative Vorhaltung die uebrigen Systemdienstleistungen
+    beeintraechtigt, haengt davon ab, wie viel Kapazitaet ihnen nach der
+    Bindung verbleibt.
+
+**A8.** Der Satz zum Paar aus Quelle und Senke und der Satz zur Kombination von
+Geboten sagten dasselbe, der Verfasser hat die Doppelung gemeldet. Stattdessen
+steht ein Satz zu einem Verbund von Geboten, der die Zahl der Beteiligten offen
+laesst, weil eine kurative Massnahme nach dem Verfasser ein Verbund mehrerer
+Massnahmen sein kann. Das geht ueber Abschnitt 2.1.2 hinaus, der mindestens zwei
+Akteure als Quelle und Senke belegt. Eigenstaendige Ergaenzung des Verfassers.
+Quelle und Senke stehen seitdem nicht mehr im Katalog.
+
+**Offen in 3.1.1.** In A2, A3, A4, A5 und A7 doppelt die weil-Begruendung des
+Katalogsatzes den ersten Erlaeuterungssatz. Der Befund ist als Kommentar vermerkt,
+die Entscheidung liegt beim Verfasser.
+
+**Umbau von 3.1.** Die frueheren Unterabschnitte Gegenstand der Verpflichtung,
+Parameter des Produkts sowie Beschaffung und Durchsetzung sind zu 3.1.2 Das
+kurative Vorhalteprodukt verschmolzen. Die offenen Fragen fuer die Auswertung
+sind in 3.1.3 Ableitung des Forschungsbedarfs aufgegangen, weil sie nach CLAUDE.md
+Abschnitt 8 die Bruecke nach Kapitel 5 sind. 3.1 hat damit drei Unterabschnitte.
+Vorhalteprodukt ist ein neuer Begriff und nach Stilregel 5 durchgehend zu fuehren.
+Alle Marken bleiben aktiv, sec:product_parameters loest auf 3.1.2 auf.
+
+**Stichpunkte von 3.1.2** zweimal neu geordnet. Die zweite Fassung folgt drei
+Kategorien, naemlich der Zusage, dem Abruf mit seiner Erfuellung und der
+Beschaffung. Die Zeitschiene entfaellt als Kategorie, weil Reaktionszeit und
+Bindungsdauer zur Zusage und Produktzeitscheibe, Beschaffungszeitpunkt und Turnus
+zur Beschaffung gehoeren. Die Praequalifikation entfaellt als Kategorie, weil sie
+die Zugangsbedingung zur Ausschreibung ist. Ergaenzt sind dreizehn Luecken, die
+der Verfasser bestaetigt hat, darunter als tragende die Ausschliesslichkeit der
+Zusage, also ob dieselbe Leistung zugleich fuer die Regelleistung zugesagt werden
+darf. Von ihr haengt ab, ob Opportunitaetskosten entstehen.
+
+**Einleitung von 3.1.2** ausformuliert, zwei Saetze. Der Verfasser hat die
+Ankuendigung von vier Fragen verworfen, weil die Kategorien Buendel und keine
+Fragen sind und das Wort in 3.1.3 fuer die offenen Fragen belegt ist. Er hat den
+Begriff Bandbreite aus CLAUDE.md Abschnitt 8 verworfen und die Einleitung nicht
+abgrenzend, sondern auf das Ziel gerichtet gewollt, naemlich die Pruefung, ob eine
+kurative Systemfuehrung mit marktlicher Beschaffung umsetzbar ist. Wirksamkeit ist
+dabei vermieden, weil der Begriff in A3 fuer die technische Wirkung einer
+Massnahme belegt ist. Der Stichpunkt, dass jedes spaetere Ergebnis an den
+gesetzten Zahlen haengt, ist auf Weisung uebersprungen und in den Abschluss zur
+Tabelle verschoben, weil CLAUDE.md Abschnitt 8 die Aussage verlangt.
+
+### 11.09.2026, Die Zusage in 3.1.2 ausformuliert
+
+Zwei Absaetze mit acht und sechs Saetzen. Der Umbruch liegt beim Wechsel von dem,
+was reserviert und bezahlt wird, zu den Zeitmerkmalen.
+
+**Entscheidungen des Verfassers.**
+
+Reserviert wird ein Leistungsband, also die Verschiebung des Leistungspunktes um
+die angebotene Leistungsaenderung, und daneben ein Ladezustandsband. Der Verfasser
+sprach von einem Delta, geschrieben steht Leistungsaenderung nach Kapitel 2.
+
+Der Abruf wird nicht gesondert verguetet, der eine Preis enthaelt den
+Energieanteil. Der Stichpunkt zur Verguetung des Abrufs als zweiter Preis nach dem
+Muster der aFRR ist deshalb ersetzt und nicht wieder aufzunehmen. Folge fuer das
+Modell, vom Verfasser zu pruefen. Der Energieanteil ist nicht abgebildet, weil die
+Abrufwahrscheinlichkeit nach Entscheidung 4 fehlt, und ist damit neben der
+Risikopraemie aus Entscheidung 5 ein weiterer nicht modellierter Bestandteil des
+Gebots. In 3.2.5 vorgemerkt.
+
+Gesperrt ist die zugesagte Leistung, ein allgemeines Handelsverbot besteht nicht.
+Den Vergleich mit Anlage 5 der Festlegung wollte der Verfasser nicht in 3.1.2. Er
+ist nach CLAUDE.md Abschnitt 8 zu nennen und in 3.2.5 vorgemerkt.
+
+Drei geschachtelte Reaktionszeitklassen mit zwei, fuenf und zehn Minuten, begruendet
+mit der Planbarkeit fuer den UENB und dem Zugang fuer viele Technologien. Das
+weicht von der Klassierung nach InnoSys 2030 in Abschnitt 2.1.3 ab, die unter zehn
+Sekunden, etwa zwei Minuten und bis zu 15 Minuten nennt. Die Abweichung steht noch
+nicht im Text und ist nachzuholen. Dass die Sekundenklasse entfaellt, laesst sich
+damit stuetzen, dass Schaltmassnahmen, PST, HGUE und Netzbooster nach Abschnitt
+2.1.2 im Verfuegungsbereich des UENB liegen. Eigenstaendiges Argument, vom
+Verfasser zu pruefen. Die Schachtelung loest den Wortlaut von A1 auf, wonach ein
+Gebot allein fuer seine Klasse gilt.
+
+Die Abgrenzungen gegenueber dem marktbasierten Redispatch und dem Netzbooster sind
+aus der Zusage gestrichen, weil 3.1.1 beide traegt. Verworfen und nicht wieder
+aufzunehmen sind drei Fassungen einer Abgrenzung nach Ausloeser und Zeitpunkt. Sie
+waren sachlich falsch, denn der kurative Redispatch ist nach CLAUDE.md Abschnitt 5
+Teil der kurativen Systemfuehrung, und auch der marktbasierte Redispatch wird ueber
+Gebote im Voraus beschafft.
+
+**Eigene Eingriffe beim Absatzschluss**, vom Verfasser bestaetigt. Bindungsdauer
+stand in zwei Saetzen, bevor sie eingefuehrt wird, und ist dort gestrichen. Der
+Satz zur Fahrplanhoheit wiederholte die beiden Baender und traegt nur noch die
+Fahrplanhoheit. Die Baender stehen im neunten Satz nicht mehr beim Namen.
+
+**Eigener Fehler.** Die Vormerkung des Verfassers zum wachsenden BESS-Bestand hing
+am frueheren Stichpunkt zur Bindung und ist beim Umsortieren am 09.09.2026 ins
+Archiv geraten. Sie ist wieder am Absatz zur Zusage vermerkt. Das Argument ist
+eigenstaendig und geht ueber den Beleg in Kapitel 2 hinaus, der allein den Stand
+2024 traegt.
+
+**Je einmal gemeldet und so uebernommen.** Die Ausschliesslichkeit steht als
+Beschreibung und nicht als Regel. Ladezustandsband setzt einen Speicher voraus und
+steht damit in Spannung zu A5.
+
+Pruefsuite ohne Befund, Build 0 Fehler. Kapitel 3 laeuft von Seite 35 bis Seite
+43, 3.1.2 von Seite 37 bis Seite 39.
+
+
+### 11.09.2026, Nachtrag, Abruf und Erfuellung in 3.1.2 ausformuliert
+
+Ein Absatz mit zehn Saetzen. Die Ueberleitung vor dem Abruf ist auf Weisung des
+Verfassers entfallen, der Absatz steigt mit dem Abruf selbst ein.
+
+**Setzungen des Verfassers.**
+
+Der Akteur erhaelt keine Anfrage, sondern ein Signal. Die Anlage haelt die
+Leistungsaenderung, bis der UENB den Systemzustand neu bewertet und den Engpass mit
+anderen Mitteln behoben hat. Die zweite Haelfte ist eine eigene Ableitung, durch
+Abschnitt 2.1.2 nicht gedeckt, der allein die Neubewertung nennt.
+
+Unguenstigster Fall eines einstuendigen Abrufs. Das Ladezustandsband enthaelt
+durchgehend eine Megawattstunde je zugesagtem Megawatt, gleichbleibend ueber die
+Bindung. Die strengere Lesart, in der die Energie mit der Bindungsdauer waechst,
+ist angeboten und verworfen. Kapitel 2 stuetzt die Stunde mit den 60 Minuten der
+aFRR. Die Zahl gehoert in die Tabelle der Produktparameter und treibt als
+unguenstigster Fall den Reservierungspreis. Offen gemeldet ist, dass der Satz nur
+die positive Richtung trifft, weil die negative freien Speicherraum statt
+Energiegehalt verlangt.
+
+Die bilanzielle Verantwortung fuer die Abweichung vom Fahrplan traegt der UENB, der
+den Abruf ausgeloest hat. Kapitel 2 regelt den bilanziellen Ausgleich nur fuer den
+Redispatch.
+
+Der Akteur weist die Einhaltung der beiden Baender und die Erbringung im Abruf
+nach. Die Poenale setzt schon an der fehlenden Handlungsfaehigkeit an. Befreit ist
+er allein bei einem unvorhersehbaren Ereignis ausserhalb seines Betriebs, das er
+unverzueglich zu melden hat. Daneben droht der Entzug der Praequalifikation. Ob die
+Regelleistung einen solchen Entzug kennt, ist nicht belegt, weil sich das
+Praequalifikationsdokument nicht oeffnen laesst. Offener Punkt, in Betracht kommt
+ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024 nach
+Textauszug.
+
+**Verworfen, nicht wieder aufnehmen.** Der Abruf erfolge automatisiert, weil die
+kuerzeste Klasse fuer eine Anweisung von Hand keine Zeit lasse. Und der Entzug der
+Praequalifikation drohe erst bei wiederholter Nichterfuellung.
+
+**Eigener Eingriff**, bestaetigt. Im siebten Satz ist der UENB gestrichen, der
+fuenfmal in zehn Saetzen stand.
+
+**Noch offen und als Stichpunkt hinter dem Absatz belassen.** Der Vorbehalt nach
+Entscheidung 5 zur Poenalehoehe, vorgesehen fuer 3.2.5 und dort bei den nicht
+modellierten Bestandteilen des Gebots vorgemerkt. Und die geplante Revision samt
+Ersatzbeschaffung, die unter die Ausnahme nicht faellt.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst

@@ -882,84 +882,445 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % GRUPPE A bekommt nach Abschnitt 8 eine Entscheidung und keine Bandbreite,
 % weil alles Weitere auf ihr aufsetzt.
 
-\begin{itemize}
-    \item Produktdefinition, nämlich Vorhalteleistung anstelle von Arbeit, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A4
-    \item Trennung von Vorhaltung und Abruf nach dem Muster der \ac{aFRR} aus Abschnitt \ref{sec:balancing_procurement}, nach den Anforderungen A4 und A6
-% VORMERKUNG des Verfassers vom 09.09.2026. Beim Ausgestalten dieses Punktes
-% ist sein Argument mitzufuehren, dass der Bestand an BESS waechst, waehrend
-% sich der Bedarf an Regelleistung aus der Dimensionierung des Systems ergibt
-% und mit diesem Bestand nicht mitwaechst, sodass eine zusaetzliche kurative
-% Bindung die uebrigen Systemdienstleistungen weniger verdraengt, als der
-% blosse Zugriff auf denselben Betriebszustand vermuten laesst. Das ist ein
-% eigenstaendiges Argument des Verfassers. Kapitel 2 belegt dazu allein den
-% Stand des Jahres 2024, naemlich 810 MW praequalifizierte BESS in der FCR bei
-% einem deutschen Bedarf von 564 MW. Die Aussage ueber die Entwicklung geht
-% darueber hinaus und ist zu belegen oder zurueckzunehmen.
-    \item Richtung der Vorhaltung sowie die Festlegung, dass die Anlage nicht gesperrt, sondern in Leistung und Ladezustandsband gebunden wird und weiterhandeln darf, nach Anforderung A7
-    \item Binäre Erfüllung nach Anforderung A2 und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
-% END ITEMIZE ENTFALLEN am 09.09.2026, die Stichpunkte des frueheren 3.1.3 folgen.
-
-% ZWEI STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
-% naemlich die Bindung statt Sperrung und die binaere Erfuellung. Beide sind
-% dort als Gruppe A ausdruecklich genannt und keine eigene Setzung.
-
-% ---------------------------------------------------------------
-% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
-% Aus 3.3.2 wird 3.1.3. Parameter des Produkts statt des Modells, weil die Modellgroessen in 3.2 stehen.
-% Alte Fassung, nicht wieder aufnehmen:
-%   \subsection{Parameter des Modells}
-% UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser. Der
-% fruehere Unterabschnitt 3.1.3 ist in 3.1.2 aufgegangen, weil beide
-% zusammen die Produktdefinition tragen und getrennt je eine halbe Seite
-% ergaeben. Alte Fassung, nicht wieder aufnehmen:
-%   \subsection{Parameter des Produkts}
-% MARKE VERSCHOBEN am 09.09.2026 auf die neue Ueberschrift oben.
-% [Ziel: 1 Seite]
-% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
-% [Ziel: 1 Seite]
+% STICHPUNKTE NEU GEGLIEDERT am 09.09.2026, entschieden vom Verfasser. Die
+% Ordnung folgt jetzt seinen vier Fragen, naemlich Lieferumfang, Zeitschiene,
+% Praequalifikation und Marktdesign, und nicht mehr der Entstehungsgeschichte
+% der Gliederung aus Gegenstand, Parameter und Beschaffung.
 %
-% GRUPPE B bekommt nach Abschnitt 8 den vollen Vierschritt aus Setzung,
-% Begruendung, Bandbreite und Kriterium und laeuft in eine Tabelle mit den
-% Spalten Groesse, Basisfall und in Kapitel 5 zu pruefen.
+% SECHS LUECKEN ERGAENZT, alle vom Verfasser bestaetigt. Nachweis und
+% Monitoring, Verbundbeschaffung, Aufwand der Teilnahme, Teilbarkeit des
+% Gebots, Produktzeitscheibe und die Richtung als eigenes Produktmerkmal.
+%
+% ZURUECKGESTELLTE AUSSAGEN AUS 3.1.1 sind eingeordnet, naemlich die
+% Paarbildung bei der Lokationalitaet und der Vorbehalt zu A8 bei der
+% Einfuegung in die Betriebsplanung.
+%
+% UMFANG. 27 Stichpunkte bei drei Seiten Ziel sind im Druck etwa anderthalb
+% Zeilen je Punkt. Zwei bis drei Saetze je Stichpunkt tragen nur beim
+% Lieferumfang, Praequalifikation und Marktdesign bekommen je einen Satz.
+%
+% ALTE FASSUNG DER STICHPUNKTE, vollstaendig erhalten, Reihenfolge wie vor
+% dem 09.09.2026:
+%   \begin{itemize}
+%   \item Produktdefinition, nämlich Vorhalteleistung anstelle von Arbeit, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A4
+%   \item Trennung von Vorhaltung und Abruf nach dem Muster der \ac{aFRR} aus Abschnitt \ref{sec:balancing_procurement}, nach den Anforderungen A4 und A6
+%   % VORMERKUNG des Verfassers vom 09.09.2026. Beim Ausgestalten dieses Punktes
+%   % ist sein Argument mitzufuehren, dass der Bestand an BESS waechst, waehrend
+%   % sich der Bedarf an Regelleistung aus der Dimensionierung des Systems ergibt
+%   % und mit diesem Bestand nicht mitwaechst, sodass eine zusaetzliche kurative
+%   % Bindung die uebrigen Systemdienstleistungen weniger verdraengt, als der
+%   % blosse Zugriff auf denselben Betriebszustand vermuten laesst. Das ist ein
+%   % eigenstaendiges Argument des Verfassers. Kapitel 2 belegt dazu allein den
+%   % Stand des Jahres 2024, naemlich 810 MW praequalifizierte BESS in der FCR bei
+%   % einem deutschen Bedarf von 564 MW. Die Aussage ueber die Entwicklung geht
+%   % darueber hinaus und ist zu belegen oder zurueckzunehmen.
+%   \item Richtung der Vorhaltung sowie die Festlegung, dass die Anlage nicht gesperrt, sondern in Leistung und Ladezustandsband gebunden wird und weiterhandeln darf, nach Anforderung A7
+%   \item Binäre Erfüllung nach Anforderung A2 und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
+%   % END ITEMIZE ENTFALLEN am 09.09.2026, die Stichpunkte des frueheren 3.1.3 folgen.
+%   % ZWEI STICHPUNKTE AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
+%   % naemlich die Bindung statt Sperrung und die binaere Erfuellung. Beide sind
+%   % dort als Gruppe A ausdruecklich genannt und keine eigene Setzung.
+%   % ---------------------------------------------------------------
+%   % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+%   % Aus 3.3.2 wird 3.1.3. Parameter des Produkts statt des Modells, weil die Modellgroessen in 3.2 stehen.
+%   % Alte Fassung, nicht wieder aufnehmen:
+%   %   \subsection{Parameter des Modells}
+%   % UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser. Der
+%   % fruehere Unterabschnitt 3.1.3 ist in 3.1.2 aufgegangen, weil beide
+%   % zusammen die Produktdefinition tragen und getrennt je eine halbe Seite
+%   % ergaeben. Alte Fassung, nicht wieder aufnehmen:
+%   %   \subsection{Parameter des Produkts}
+%   % MARKE VERSCHOBEN am 09.09.2026 auf die neue Ueberschrift oben.
+%   % [Ziel: 1 Seite]
+%   % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
+%   % [Ziel: 1 Seite]
+%   %
+%   % GRUPPE B bekommt nach Abschnitt 8 den vollen Vierschritt aus Setzung,
+%   % Begruendung, Bandbreite und Kriterium und laeuft in eine Tabelle mit den
+%   % Spalten Groesse, Basisfall und in Kapitel 5 zu pruefen.
+%   % BEGIN ITEMIZE ENTFALLEN am 09.09.2026, die Stichpunkte laufen weiter.
+%   \item Vorgehaltene Leistung und gebundenes Ladezustandsband als die beiden Größen, die den Umfang der Bindung bestimmen, nach den Anforderungen A4 und A7
+%   \item Bindungsdauer und Reaktionszeit, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, nach Anforderung A1, mit der Bindungsdauer als eigenständiger Bemessungsdimension nach Anforderung A4
+%   \item Vergütungsform, also ob die Vergütung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
+%   \item Tabelle der Produktparameter als Abschluss des Abschnitts, deren Größen Abschnitt \ref{sec:storage_model} als Symbole übernimmt
+%   \end{itemize}
+%   % ---------------------------------------------------------------
+%   % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
+%   % Aus 3.3.4 wird 3.1.5.
+%   % Alte Fassung, nicht wieder aufnehmen:
+%   %   \subsection{Beschaffung und Durchsetzung}
+%   % UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser.
+%   % Beschaffung und Durchsetzung gehen im Vorhalteprodukt auf, weil sie zum Produkt zaehlen.
+%   % Alte Fassung, nicht wieder aufnehmen:
+%   %   \subsection{Beschaffung und Durchsetzung}
+%   \label{sec:product_procurement}
+%   % frueheres eigenes Seitenziel dieses Blocks: [Ziel: 0,5 Seiten]
+%   % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
+%   % frueheres eigenes Seitenziel dieses Blocks: [Ziel: 1 Seite]
+%   %
+%   % GRUPPE D bekommt nach Abschnitt 8 den Rahmen ohne Zahl. Bei zwei Fragen
+%   % sagt der Text ausdruecklich, dass die Arbeit sie nicht entscheidet, naemlich
+%   % bei der Poenalehoehe, weil das Modell sie nach Entscheidung 5 nicht traegt,
+%   % und beim Konflikt zwischen knotenscharfer Beschaffung nach A3 und
+%   % Diskriminierungsfreiheit nach A5, weil er die netzweite Beschaffungsmenge
+%   % NUMMERN BERICHTIGT am 08.09.2026, frueher A2 und A4.
+%   % voraussetzt, die ausserhalb der Systemgrenzen liegt.
+%   \begin{itemize}
+%   \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels, nach den Anforderungen A1 und A6
+%   \item Ausschreibender und Turnus sowie das Zuschlagsverfahren, nach Anforderung A5
+%   \item Lokationalität der Beschaffung nach Anforderung A3 \cite{blank_determination_2024}
+%   \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A2
+%   \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung, nach Anforderung A8
+%   \item Vergütungslogik und Präqualifikationsanforderungen nach Anforderung A6 \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+%   \item Abgrenzung zum Netzbooster nach Anforderung A5 \cite{consentec_systembooster_2026}
+%   \item Abgrenzung des marktbasierten kurativen Produkts gegenüber dem marktbasierten Redispatch nach Anforderung A4, nämlich dass die kurative Vorhaltung allein Leistung reserviert, während der Redispatch zugleich eine Energielieferung auslöst \cite{hirth_kosten_2019}
+%   \end{itemize}
 
-% BEGIN ITEMIZE ENTFALLEN am 09.09.2026, die Stichpunkte laufen weiter.
-    \item Vorgehaltene Leistung und gebundenes Ladezustandsband als die beiden Größen, die den Umfang der Bindung bestimmen, nach den Anforderungen A4 und A7
-    \item Bindungsdauer und Reaktionszeit, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, nach Anforderung A1, mit der Bindungsdauer als eigenständiger Bemessungsdimension nach Anforderung A4
-    \item Vergütungsform, also ob die Vergütung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
-    \item Tabelle der Produktparameter als Abschluss des Abschnitts, deren Größen Abschnitt \ref{sec:storage_model} als Symbole übernimmt
+% --- Einleitung ---------------------------------------------------------
+% STICHPUNKTE NEU SORTIERT am 09.09.2026, zweite Fassung, entschieden vom
+% Verfasser. Die vier Kategorien vom Vormittag sind auf drei zusammengezogen,
+% naemlich die Zusage, der Abruf mit seiner Erfuellung und die Beschaffung.
+%
+% DIE ZEITSCHIENE ENTFAELLT als eigene Kategorie. Reaktionszeit und
+% Bindungsdauer sind Eigenschaften der Zusage, waehrend Produktzeitscheibe,
+% Beschaffungszeitpunkt und Turnus Eigenschaften der Beschaffung sind. Die
+% Kategorie vermischte beides.
+%
+% DIE PRAEQUALIFIKATION ENTFAELLT als eigene Kategorie. Sie ist die
+% Zugangsbedingung zur Ausschreibung und steht deshalb in der Beschaffung.
+%
+% SIEBEN LUECKEN ERGAENZT, alle vom Verfasser bestaetigt.
+%   1 Ausschliesslichkeit, also ob dieselbe Leistung zugleich fuer die
+%     Regelleistung und kurativ zugesagt werden darf. Das ist die Setzung, an
+%     der der gesuchte Preis haengt, und deshalb eine Entscheidung ohne
+%     Bandbreite.
+%   2 Ausloesung und Erbringung des Abrufs.
+%   3 Verguetung des Abrufs als zweiter Preis neben dem Leistungspreis.
+%   4 Traeger der Bilanzkreisabweichung.
+%   5 Aggregation und Poolbildung.
+%   6 Nichtverfuegbarkeit der Anlage, geplant und ungeplant.
+%   7 Kostenwaelzung, nach Entscheidung 7 ausserhalb des Untersuchungsrahmens.
+%
+% VIER STICHPUNKTE VERSCHOBEN gegenueber der ersten Fassung. Die
+% Verguetungsform steht jetzt in der Beschaffung, weil sie nicht sagt, was
+% geliefert wird, sondern woran die Zahlung ansetzt. Nachweis und Monitoring
+% sowie die Poenale stehen bei der Erfuellung und nicht mehr bei der
+% Praequalifikation beziehungsweise im Marktdesign. Die Produktzeitscheibe
+% steht in der Beschaffung.
+%
+% ALTE STICHPUNKTFOLGE der ersten Fassung vom 09.09.2026, vollstaendig
+% erhalten:
+%   \begin{itemize}
+%   \item Vier Fragen sind zu beantworten, nämlich der Lieferumfang, die Zeitschiene, die Präqualifikation und das Marktdesign
+%   \item Die Antworten sind ein Rahmen und keine fertige Ausgestaltung, weshalb jede Setzung eine Bandbreite und ein Kriterium trägt, an dem sich die Wahl innerhalb dieser Bandbreite entscheidet
+%   \item Sobald eine Zahl gesetzt ist, hängt jedes spätere Ergebnis an ihr, und das ist einmal offen zu sagen
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Vorhalteleistung anstelle von Arbeit als Gegenstand, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A4
+%   \item Trennung von Vorhaltung und Abruf nach dem Muster der \ac{aFRR} aus Abschnitt \ref{sec:balancing_procurement}, nach den Anforderungen A4 und A6
+%   \item Richtung der Vorhaltung als eigenes Produktmerkmal, nämlich positive und negative Leistungsänderung getrennt beschafft, weil an einem Netzknoten Quelle und Senke gebraucht werden, nach den Anforderungen A3 und A8
+%   \item Bindung statt Sperrung, also Bindung in Leistung und Ladezustandsband bei fortbestehender Handelsmöglichkeit, nach Anforderung A7, und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
+%   \item Binäre Erfüllung nach Anforderung A2
+%   \item Vorgehaltene Leistung als erste Bemessungsgröße, nach Anforderung A4
+%   \item Gebundenes Ladezustandsband als zweite Bemessungsgröße, weil eine energiebegrenzte Technologie die Leistung nur bei hinreichendem Ladezustand erbringt, nach den Anforderungen A4 und A7
+%   \item Vergütungsform, also ob die Vergütung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
+%   \item Abgrenzung gegenüber dem marktbasierten Redispatch nach Anforderung A4, nämlich dass die kurative Vorhaltung allein Leistung reserviert, während der Redispatch zugleich eine Energielieferung auslöst \cite{hirth_kosten_2019}
+%   \item Abgrenzung gegenüber dem Netzbooster nach Anforderung A5, der im Verfügungsbereich des \ac{ÜNB} liegt und keine Zusage eines Dritten voraussetzt \cite{consentec_systembooster_2026}
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Die beiden Bemessungsgrößen bleiben unbestimmt, solange offen ist, über welchen Zeitraum sie gelten und wann der Akteur sie zusagt
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Reaktionszeitklasse als Produktmerkmal, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, nach Anforderung A1
+%   \item Bindungsdauer als Zeitraum, über den die Zusage nach Zuschlag gilt, als eigenständige Bemessungsdimension nach Anforderung A4
+%   \item Produktzeitscheibe als Einheit der Ausschreibung, abzugrenzen von der Bindungsdauer, mit der \ac{aFRR} als Vorlage, deren Zeitscheiben vier Stunden umfassen
+%   \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels, nach den Anforderungen A1 und A6
+%   \item Turnus der Ausschreibung, also täglich, wöchentlich oder länger, und die Frage, ob er dem Turnus der Regelleistung folgt
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Wer eine solche Zusage abgeben darf und woran sich das vor dem Zuschlag prüfen lässt, bestimmt die Präqualifikation
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Nachzuweisende Eigenschaften, nämlich die erreichbare Reaktionszeit, die vorhaltbare Leistung, die Fähigkeit zur Einhaltung des Ladezustandsbandes und die Sensitivität des Standorts, nach Anforderung A5
+%   \item Anschluss an die bestehende Präqualifikation der Regelleistung, um den Aufwand gering zu halten, nach den Anforderungen A6 und A8 \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+%   \item Nachweis und Monitoring der Erfüllung im gebundenen Zeitraum, weil eine binäre Zusage ohne Nachweis nicht durchsetzbar ist, nach den Anforderungen A2 und A8
+%   \item Aufwand der Teilnahme, der aus Präqualifikation und laufenden Nachweisen unabhängig vom Zuschlag anfällt, nach Anforderung A6
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Aus Lieferumfang, Zeitschiene und Präqualifikation folgt, wie der \ac{ÜNB} das Produkt beschafft und die Zusage durchsetzt
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Ausschreibender, nämlich der betroffene \ac{ÜNB} oder die vier \ac{ÜNB} gemeinsam, nach Anforderung A5
+%   \item Zuschlagsverfahren und Preisregel, also Einheitspreis oder Gebotspreis, nach Anforderung A5
+%   \item Verbundbeschaffung, also Zuschlag auf eine Kombination von Geboten statt auf das einzelne Gebot, weil die Maßnahme bilanziell ausgeglichen sein muss, nach Anforderung A8
+%   \item Teilbarkeit des Gebots und Mindestlosgröße, weil beides an dünn besetzten Knoten über den Wettbewerb mitentscheidet, nach den Anforderungen A3 und A5
+%   \item Lokationalität der Beschaffung nach Anforderung A3, wobei die Paarbildung nicht beliebig ist, denn eine Senke an einem anderen Netzknoten entlastet zwar den ersten Engpass, kann aber zugleich einen zweiten verschärfen \cite{blank_determination_2024}
+%   \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A2, mit dem ausdrücklichen Vermerk, dass die Arbeit ihre Höhe nicht bestimmt, weil das Modell die Risikoprämie nicht trägt
+%   \item Verhältnis zum Redispatch, nämlich dass die kurative Zusage die Verfügbarkeit der Anlage für eine Redispatchanweisung nicht aufhebt, nach den Anforderungen A4 und A7
+%   \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung nach Anforderung A8, mit dem Vorbehalt, dass sich ihr Aufwand von außen nicht beurteilen lässt, weil er die internen Abläufe des \ac{ÜNB} betrifft
+%   \end{itemize}
+%   \begin{itemize}
+%   \item Tabelle der Produktparameter mit den Spalten Größe, Basisfall und in Kapitel 5 zu prüfen, deren Größen Abschnitt \ref{sec:storage_model} als Symbole übernimmt
+%   \item Abschluss, nämlich dass der Rahmen steht und die Größen bestimmt sind, die das Modell als Eingang braucht
+%   \end{itemize}
+
+% --- Einleitung ---------------------------------------------------------
+% EINLEITUNG AUSFORMULIERT am 09.09.2026, satzweise mit dem Verfasser.
+% Satz 1 Fassung B, Satz 2 Fassung C mit seiner Vorgabe, dass der Entwurf
+% pruefbar macht, ob eine kurative Systemfuehrung mit marktlicher Beschaffung
+% umsetzbar ist.
+%
+% BANDBREITE ENTFAELLT auf Weisung des Verfassers, der den Begriff nicht
+% verwenden will. CLAUDE.md Abschnitt 8 fuehrt ihn als dritten Teil jeder
+% Rahmenantwort. Die Sache bleibt sagbar, naemlich dass eine Festlegung nicht
+% endgueltig ist und der Text nennt, woran eine abweichende Wahl haenge. Der
+% Verfasser wollte die Einleitung ausserdem nicht abgrenzend, sondern auf das
+% Ziel gerichtet formuliert.
+%
+% WIRKSAMKEIT VERMIEDEN. Der Verfasser hat von Wirksamkeit gesprochen. Der
+% Begriff ist in A3 fuer die technische Wirkung einer Massnahme am
+% Betriebsmittel belegt und steht deshalb hier nicht.
+%
+% STICHPUNKT 3 UEBERSPRUNGEN am 09.09.2026 auf Weisung des Verfassers und
+% nicht geloescht, sondern in den Abschluss zur Tabelle verschoben, weil
+% CLAUDE.md Abschnitt 8 die Aussage einmal ausdruecklich verlangt und die
+% Zahlen dort stehen.
+%
+% ALTE STICHPUNKTE, nicht wieder aufnehmen:
+%   \item Der Entwurf bestimmt, was der Akteur zusagt, was bei einem Abruf geschieht und auf welchem Weg der \ac{ÜNB} die Zusage erwirbt
+%   \item Die Antworten sind ein Rahmen und keine fertige Ausgestaltung, weshalb jede Setzung eine Bandbreite und ein Kriterium trägt, an dem sich die Wahl innerhalb dieser Bandbreite entscheidet
+
+Ein kuratives Vorhalteprodukt verbindet den Akteur, der eine Leistungsänderung zusagt, mit dem \ac{ÜNB}, der sie in seine Einsatzplanung aufnimmt und im Fehlerfall abruft.
+Der Entwurf führt das Produkt so weit aus, dass sich prüfen lässt, ob eine kurative Systemführung mit marktlicher Beschaffung umsetzbar ist.
+
+% --- 1 Die Zusage -------------------------------------------------------
+% GRUPPE A nach CLAUDE.md Abschnitt 8, also Entscheidung und keine
+% Bandbreite, weil alles Weitere darauf aufsetzt. Das gilt fuer die ersten
+% fuenf Stichpunkte einschliesslich der Ausschliesslichkeit.
+% DIE ZUSAGE AUSFORMULIERT am 11.09.2026, satzweise mit dem Verfasser, zwei
+% Absaetze. Der Umbruch liegt nach dem achten Satz, weil das Thema dort von
+% dem, was reserviert und bezahlt wird, zu den Zeitmerkmalen wechselt.
+%
+% ENTSCHEIDUNGEN DES VERFASSERS in diesem Block.
+%   Reserviert wird ein Leistungsband, also die Verschiebung des
+%   Leistungspunktes um die angebotene Leistungsaenderung. Der Verfasser
+%   sprach von einem Delta. Geschrieben steht Leistungsaenderung, weil
+%   Kapitel 2 diesen Begriff fuehrt und Stilregel 5 Konstanz verlangt.
+%   Der Abruf wird nicht gesondert verguetet. Der eine Preis enthaelt den
+%   Energieanteil eines Abrufs. Das Modell deckt diesen Anteil nicht ab, weil
+%   die Abrufwahrscheinlichkeit nach Entscheidung 4 nicht modelliert ist. Er
+%   ist damit neben der Risikopraemie aus Entscheidung 5 ein weiterer nicht
+%   modellierter Bestandteil des Gebots und in 3.2.5 einmal zu nennen.
+%   Gesperrt ist die zugesagte Leistung, ein allgemeines Handelsverbot fuer
+%   das Zeitfenster besteht nicht. Das ist mit Bindung statt Sperrung aus
+%   CLAUDE.md Abschnitt 8 vereinbar, denn gesperrt ist die Leistung und
+%   gebunden die Anlage.
+%   Drei Reaktionszeitklassen mit zwei, fuenf und zehn Minuten, geschachtelt.
+%   Setzung des Verfassers, begruendet mit Planbarkeit fuer den UENB und
+%   breitem Zugang. Sie weicht von der Klassierung nach InnoSys 2030 in
+%   Abschnitt 2.1.3 ab, die unter zehn Sekunden, etwa zwei Minuten und bis zu
+%   15 Minuten nennt. Die fuenf Minuten entsprechen dem Pilotbetrieb von
+%   KuPilot. Dass die Sekundenklasse entfaellt, stuetzt sich darauf, dass
+%   Schaltmassnahmen, PST, HGUE und Netzbooster nach Abschnitt 2.1.2 im
+%   Verfuegungsbereich des UENB liegen. Das ist ein eigenstaendiges Argument
+%   und vom Verfasser zu pruefen. Der Text nennt die Abweichung von InnoSys
+%   noch nicht, das ist nachzuholen.
+%   Die Schachtelung loest den Wortlaut von A1 in 3.1.1 auf, wonach ein Gebot
+%   allein fuer seine Klasse gilt. Das Gebot bindet an eine Klasse, wer die
+%   kuerzere erfuellt, darf auch in den laengeren bieten.
+%
+% OFFENE HINWEISE, je einmal gemeldet und so uebernommen.
+%   Die Ausschliesslichkeit steht nur als Beschreibung dessen, was der Akteur
+%   tut, nicht als Regel. Fuer das Modell in 3.2 muss sie eindeutig sein.
+%   Ladezustandsband setzt einen Speicher voraus, waehrend A5 den Ansatz an
+%   Eigenschaften statt an Technologien verlangt. Technologieneutral waere
+%   eine Fassung ueber den vorzuhaltenden Energiegehalt.
+%   Der Unterschied zur Anlage 5 der Festlegung steht auf Wunsch des
+%   Verfassers nicht hier. CLAUDE.md Abschnitt 8 verlangt ihn. Vorgemerkt in
+%   3.2.5.
+%
+% VORMERKUNG des Verfassers vom 09.09.2026, WIEDER ANGEHAENGT am 11.09.2026.
+% Sie hing am frueheren Stichpunkt zur Bindung und ist beim Umsortieren am
+% 09.09.2026 ins Archiv geraten, ohne an einem lebenden Stichpunkt zu stehen.
+% Eigener Fehler. Der Verfasser will das Argument beim Ausgestalten des
+% Produkts fuehren, dass der Bestand an BESS waechst, waehrend sich der Bedarf
+% an Regelleistung aus der Dimensionierung des Systems ergibt und mit diesem
+% Bestand nicht mitwaechst, sodass die Ausschliesslichkeit der kurativen
+% Zusage die Regelleistung weniger verdraengt, als der Zugriff auf dieselbe
+% Leistung vermuten laesst. Eigenstaendiges Argument des Verfassers. Kapitel 2
+% belegt allein den Stand 2024, naemlich 810 MW praequalifizierte BESS in der
+% FCR bei 564 MW deutschem Bedarf. Die Aussage ueber die Entwicklung ist zu
+% belegen oder zurueckzunehmen. Ort noch offen, naheliegend hinter dem
+% fuenften Satz des ersten Absatzes.
+%
+% ZWEI STICHPUNKTE GESTRICHEN am 11.09.2026, entschieden vom Verfasser,
+% naemlich die Abgrenzungen gegenueber dem marktbasierten Redispatch und
+% gegenueber dem Netzbooster. 3.1.1 traegt beide bei A4 und A5, und das
+% Verhaeltnis zum Redispatch steht in der Beschaffung noch einmal. Die drei
+% angebotenen Fassungen einer Abgrenzung nach Ausloeser und Zeitpunkt sind
+% verworfen, nicht wieder aufnehmen. Sie waren sachlich falsch, weil der
+% kurative Redispatch nach CLAUDE.md Abschnitt 5 selbst Teil der kurativen
+% Systemfuehrung ist, und weil auch der marktbasierte Redispatch ueber Gebote
+% im Voraus beschafft wird.
+%
+% EIGENE EINGRIFFE beim Absatzschluss, vom Verfasser bestaetigt.
+%   Satz 2 und 3 nannten die Bindungsdauer, bevor Satz 13 sie einfuehrt.
+%   Satz 2 lautete, innerhalb dessen die Anlage ueber die gesamte
+%   Bindungsdauer zu bleiben hat. Satz 3 lautete, denn die Zusage besteht
+%   ueber die gesamte Bindungsdauer.
+%   Satz 8 lautete, der Akteur stelle seinen Fahrplan weiterhin selbst auf
+%   und halte dabei allein das zugesagte Leistungsband und das
+%   Ladezustandsband ein. Die zweite Haelfte wiederholte Satz 1 und 2.
+%   Satz 9 nannte beide Baender beim Namen, sie standen damit je viermal.
+%
+% ALTE STICHPUNKTE, vollstaendig erhalten, nicht wieder aufnehmen:
+%   \item Vorhalteleistung anstelle von Arbeit als Gegenstand, mit der Begründung aus Abschnitt \ref{sec:interim_conclusion} und Anforderung A4
+%   \item Trennung von Vorhaltung und Abruf nach dem Muster der \ac{aFRR} aus Abschnitt \ref{sec:balancing_procurement}, nach den Anforderungen A4 und A6
+%   \item Ausschließlichkeit der Zusage, also dass dieselbe Leistung nicht zugleich für die Regelleistung und kurativ vorgehalten werden darf, nach Anforderung A7, weil andernfalls keine Opportunitätskosten entstünden und der gesuchte Preis gegen null ginge
+%   \item Richtung der Vorhaltung als eigenes Produktmerkmal, nämlich positive und negative Leistungsänderung getrennt beschafft, weil an einem Netzknoten Quelle und Senke gebraucht werden, nach den Anforderungen A3 und A8
+%   \item Bindung statt Sperrung, also Bindung in Leistung und Ladezustandsband bei fortbestehender Handelsmöglichkeit, nach Anforderung A7, und der daraus folgende Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht
+%   \item Vorgehaltene Leistung als erste Bemessungsgröße, nach Anforderung A4
+%   \item Gebundenes Ladezustandsband als zweite Bemessungsgröße, weil eine energiebegrenzte Technologie die Leistung nur bei hinreichendem Ladezustand erbringt, nach den Anforderungen A4 und A7
+%   \item Reaktionszeitklasse als drittes Merkmal, abgeleitet aus den \ac{TATL}-Zeitfenstern in Abschnitt \ref{sec:curative_functionality}, nach Anforderung A1
+%   \item Bindungsdauer als Zeitraum, über den die Zusage nach Zuschlag gilt, als eigenständige Bemessungsdimension nach Anforderung A4
+%   \item Binäre Erfüllung nach Anforderung A2, denn die Zusage ist entweder innerhalb der Reaktionszeitklasse erbracht oder nicht
+%   \item Abgrenzung gegenüber dem marktbasierten Redispatch nach Anforderung A4, nämlich dass die kurative Vorhaltung allein Leistung reserviert, während der Redispatch zugleich eine Energielieferung auslöst \cite{hirth_kosten_2019}
+%   \item Abgrenzung gegenüber dem Netzbooster nach Anforderung A5, der im Verfügungsbereich des \ac{ÜNB} liegt und keine Zusage eines Dritten voraussetzt \cite{consentec_systembooster_2026}
+
+Der Akteur sagt zu, seinen Leistungspunkt im Fehlerfall um die angebotene Leistungsänderung zu verschieben, und reserviert dafür ein Leistungsband und keine Energiemenge.
+Neben dem Leistungsband reserviert die Zusage ein Ladezustandsband, innerhalb dessen die Anlage zu bleiben hat.
+Vorhaltung und Abruf sind zu unterscheiden, denn die Zusage besteht durchgehend, während ein Abruf nur im Fehlerfall erfolgt.
+Vergütet wird allein die Vorhaltung, und der Preis deckt damit sowohl die Bindung als auch die Energie, die ein Abruf kostet.
+Der Akteur nimmt die kurativ gebundene Leistung aus seiner übrigen Vermarktung heraus, und daraus entstehen die Opportunitätskosten, die er über den Preis ersetzt verlangt.
+Eine Anlage kann beide Richtungen anbieten, doch jede bindet einen anderen Teil des Ladezustandsbandes und ist deshalb ein eigenes Gebot.
+Gesperrt ist damit allein die zugesagte Leistung, während für das gebundene Zeitfenster kein allgemeines Handelsverbot gilt.
+Der Akteur stellt seinen Fahrplan weiterhin selbst auf.
+
+Ein Gebot nennt neben den beiden Bändern die Reaktionszeitklasse, für die der Akteur einsteht.
+Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei, weshalb das Produkt drei Klassen mit zwei, fünf und zehn Minuten führt.
+Wer die kürzeste Klasse erfüllt, erfüllt damit auch die längeren, sodass ein schneller Akteur in jeder Klasse anbieten kann.
+Die Klassen ersparen dem \ac{ÜNB} die Rechnung mit der Reaktionszeit jeder einzelnen Anlage, und drei Stufen halten den Zugang zugleich für viele Technologien offen.
+Hinzu tritt die Bindungsdauer, also der Zeitraum, über den die Zusage nach dem Zuschlag gilt.
+Eine verspätete oder zu geringe Leistungsänderung bringt das Betriebsmittel nicht mehr in einen dauerbelastbaren Zustand, weshalb die Erfüllung binär ist.
+
+% --- Ueberleitung, entfallen ------------------------------------------
+% STICHPUNKT ENTFALLEN am 11.09.2026, entschieden vom Verfasser. Der Absatz
+% zu Abruf und Erfuellung steigt ohne Ueberleitung mit dem Abruf selbst ein.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item Was die Zusage im Fehlerfall bedeutet und woran sich ihre Einhaltung belegen lässt, ist damit noch offen
+
+% --- 2 Abruf und Erfuellung ---------------------------------------------
+% ABRUF UND ERFUELLUNG AUSFORMULIERT am 11.09.2026, satzweise mit dem
+% Verfasser, ein Absatz mit zehn Saetzen. Er deckt Stichpunkt 17 bis 22 ab.
+% Die fehlende Verguetung des Abrufs steht bereits im vierten Satz der Zusage
+% und braucht hier keinen eigenen Satz.
+%
+% GEWAEHLTE FASSUNGEN UND SETZUNGEN.
+%   Satz 1 C, der Absatz steigt ohne Ueberleitung mit dem Abruf ein.
+%   Satz 2 C, das Signal statt einer Anfrage. Die Automatisierung nach
+%   KuPilot ist damit angedeutet, aber nicht ausgesprochen.
+%   Satz 3 B. Dass der UENB den Engpass danach mit anderen Mitteln behebt,
+%   ist eine eigene Ableitung und durch Abschnitt 2.1.2 nicht gedeckt, der
+%   allein die Neubewertung des Systemzustands nennt. Vom Verfasser zu pruefen.
+%   Satz 4 A, Setzung des Verfassers. Unguenstigster Fall eines einstuendigen
+%   Abrufs, gelesen als eine Megawattstunde je zugesagtem Megawatt,
+%   gleichbleibend ueber die Bindung und nicht mit ihr wachsend. Kapitel 2
+%   stuetzt die Stunde mit den 60 Minuten Erbringung der aFRR. Die Zahl
+%   gehoert in die Tabelle der Produktparameter und ist in Kapitel 5 zu
+%   pruefen, denn als unguenstigster Fall treibt sie den Reservierungspreis.
+%   HINWEIS, einmal gemeldet und so uebernommen. Der Satz gilt nur fuer die
+%   positive Richtung. Fuer die negative braucht die Anlage keinen
+%   Energiegehalt, sondern freien Speicherraum derselben Groesse.
+%   Satz 5 C mit ausgesprochener Verantwortung, Setzung des Verfassers.
+%   Kapitel 2 regelt den bilanziellen Ausgleich nur fuer den Redispatch.
+%   Satz 6 A.
+%   Satz 7 B, Setzung des Verfassers, dass die Poenale schon an der
+%   fehlenden Handlungsfaehigkeit ansetzt. EIGENER EINGRIFF, bestaetigt. Die
+%   gewaehlte Fassung endete mit weil der UENB die Vorauslastung auf die
+%   Zusage gestuetzt hat. Der UENB stand damit fuenfmal in zehn Saetzen.
+%   Satz 8 C und Satz 9, Setzung des Verfassers. Die Ausnahme fuer
+%   unvorhersehbare Ereignisse aeusserer Natur und die Meldepflicht. Der
+%   Verfasser sprach von schnellstmoeglich, geschrieben steht unverzueglich
+%   als eingefuehrter Rechtsbegriff. Die Meldung ist als Pflicht gefasst und
+%   nicht als Bedingung der Befreiung.
+%   Satz 10 B, Setzung des Verfassers. Ob die Regelleistung einen Entzug der
+%   Praequalifikation kennt, ist nicht belegt, weil sich das
+%   Praequalifikationsdokument nicht oeffnen laesst.
+%
+% VERWORFEN, nicht wieder aufnehmen.
+%   Der Abruf erfolge automatisiert, weil die kuerzeste Klasse fuer eine
+%   Anweisung von Hand keine Zeit lasse. Unbelegt.
+%   Wiederholt sich die Nichterfuellung, drohe der Entzug der
+%   Praequalifikation. Fuegte eine Bedingung hinzu, die der Verfasser nicht
+%   genannt hat.
+%
+% ALTE STICHPUNKTE, vollstaendig erhalten, nicht wieder aufnehmen:
+%   \item Auslösung des Abrufs durch den \ac{ÜNB} nach Eintritt der Überlastung, automatisiert nach dem Muster des Pilotbetriebs von KuPilot, nach Anforderung A1
+%   \item Dauer der Erbringung und Rückkehr in den Normalbetrieb, weil das \ac{TATL}-Zeitfenster endet, sobald das Betriebsmittel entlastet ist
+%   \item Keine gesonderte Vergütung des Abrufs, weil der Preis der Vorhaltung den Energieanteil bereits enthält, und der Hinweis, dass das Modell diesen Anteil nicht abbildet, nach Anforderung A4
+%   \item Bilanzieller Ausgleich des Eingriffs und die Frage, wer die Abweichung trägt, mit dem Redispatch als Vorlage, bei dem die beteiligten Bilanzkreise unberührt bleiben, nach Anforderung A8
+%   \item Nachweis und Monitoring der Erfüllung im gebundenen Zeitraum, weil eine binäre Zusage ohne Nachweis nicht durchsetzbar ist, nach den Anforderungen A2 und A8
+%   \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A2, mit dem ausdrücklichen Vermerk, dass die Arbeit ihre Höhe nicht bestimmt, weil das Modell die Risikoprämie nicht trägt
+%   \item Nichtverfügbarkeit der Anlage durch geplante Revision oder ungeplanten Ausfall, die von der Nichterfüllung zu unterscheiden ist und die Frage einer Ersatzbeschaffung aufwirft
+% Kommentar aus der Stichpunktliste, unveraendert:
+% STICHPUNKT ERSETZT am 11.09.2026. Der Verfasser hat entschieden, dass der
+% Abruf nicht gesondert verguetet wird und der eine Preis den Energieanteil
+% enthaelt. Der alte Stichpunkt sagte das Gegenteil. Alte Fassung, nicht
+% wieder aufnehmen:
+%   \item Vergütung des Abrufs als zweiter Preis neben der Vergütung der Vorhaltung, nach dem Muster von Leistungspreis und Arbeitspreis der \ac{aFRR}, nach Anforderung A4
+
+Den Abruf löst der \ac{ÜNB} aus, sobald nach einem Ausfall die Überlastung tatsächlich eintritt.
+Der Akteur erhält dabei keine Anfrage, sondern ein Signal, auf das seine Anlage innerhalb der zugesagten Klasse reagiert.
+Die Anlage hält die Leistungsänderung, bis der \ac{ÜNB} den Systemzustand neu bewertet und den Engpass mit anderen Mitteln behoben hat.
+Angenommen ist der ungünstigste Fall eines einstündigen Abrufs, weshalb das Ladezustandsband durchgehend eine Megawattstunde je zugesagtem Megawatt enthält.
+Die bilanzielle Verantwortung für die Abweichung vom Fahrplan liegt nicht beim Akteur, sondern beim \ac{ÜNB}, der den Abruf ausgelöst hat.
+Der Akteur weist zweierlei nach, nämlich dass seine Anlage die beiden Bänder über die Bindung eingehalten und im Abruf die Leistungsänderung innerhalb der Klasse erbracht hat.
+Die Pönale knüpft deshalb nicht erst an einen gescheiterten Abruf, sondern schon an die fehlende Handlungsfähigkeit, weil die Vorauslastung auf der Zusage beruht.
+Von der Pönale befreit ihn allein der Nachweis, dass seine Handlungsfähigkeit an einem unvorhersehbaren Ereignis außerhalb seines Betriebs scheiterte.
+Ein solches Ereignis hat er dem \ac{ÜNB} unverzüglich zu melden, damit dieser Gegenmaßnahmen einleiten kann.
+Neben der Pönale droht der Entzug der Präqualifikation, mit dem der Akteur den Zugang zum Markt verliert.
+
+% NOCH OFFEN aus Stichpunkt 22 und 23, nicht geloescht, sondern hier
+% belassen, bis ihr Ort entschieden ist.
+\begin{itemize}
+    \item Vorbehalt nach Entscheidung 5, dass die Arbeit die Höhe der Pönale nicht bestimmt, weil das Modell die daraus folgende Risikoprämie nicht trägt, vorgesehen für 3.2.5
+    \item Geplante Revision, die der Akteur bei seinem Gebot kennt und die nicht unter die Ausnahme für unvorhersehbare Ereignisse fällt, sowie die Frage einer Ersatzbeschaffung
 \end{itemize}
 
-% ---------------------------------------------------------------
-% UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
-% Aus 3.3.4 wird 3.1.5.
-% Alte Fassung, nicht wieder aufnehmen:
-%   \subsection{Beschaffung und Durchsetzung}
-% UEBERSCHRIFT ENTFALLEN am 09.09.2026, entschieden vom Verfasser.
-% Beschaffung und Durchsetzung gehen im Vorhalteprodukt auf, weil sie zum Produkt zaehlen.
-% Alte Fassung, nicht wieder aufnehmen:
-%   \subsection{Beschaffung und Durchsetzung}
-\label{sec:product_procurement}
-% frueheres eigenes Seitenziel dieses Blocks: [Ziel: 0,5 Seiten]
-% SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
-% frueheres eigenes Seitenziel dieses Blocks: [Ziel: 1 Seite]
-%
-% GRUPPE D bekommt nach Abschnitt 8 den Rahmen ohne Zahl. Bei zwei Fragen
-% sagt der Text ausdruecklich, dass die Arbeit sie nicht entscheidet, naemlich
-% bei der Poenalehoehe, weil das Modell sie nach Entscheidung 5 nicht traegt,
-% und beim Konflikt zwischen knotenscharfer Beschaffung nach A3 und
-% Diskriminierungsfreiheit nach A5, weil er die netzweite Beschaffungsmenge
-% NUMMERN BERICHTIGT am 08.09.2026, frueher A2 und A4.
-% voraussetzt, die ausserhalb der Systemgrenzen liegt.
-
+% --- Ueberleitung -------------------------------------------------------
 \begin{itemize}
+    \item Auf welchem Weg der \ac{ÜNB} eine so bestimmte Zusage erwirbt, entscheidet die Beschaffung
+\end{itemize}
+
+% --- 3 Beschaffung ------------------------------------------------------
+% GRUPPE D nach CLAUDE.md Abschnitt 8, also Rahmen ohne Zahl, mit Ausnahme
+% der Verguetungsform und der Produktzeitscheibe, die als Parameter in die
+% Tabelle eingehen.
+\begin{itemize}
+    \item Präqualifikation als Zugangsbedingung mit den nachzuweisenden Eigenschaften, nämlich der erreichbaren Reaktionszeit, der vorhaltbaren Leistung, der Fähigkeit zur Einhaltung des Ladezustandsbandes und der Sensitivität des Standorts, nach Anforderung A5
+    \item Anschluss an die bestehende Präqualifikation der Regelleistung, um den Aufwand gering zu halten, nach den Anforderungen A6 und A8 \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+    \item Aufwand der Teilnahme, der aus Präqualifikation und laufenden Nachweisen unabhängig vom Zuschlag anfällt, nach Anforderung A6
+    \item Ausschreibender, nämlich der betroffene \ac{ÜNB} oder die vier \ac{ÜNB} gemeinsam, nach Anforderung A5
+    \item Produktzeitscheibe als Einheit der Ausschreibung, abzugrenzen von der Bindungsdauer, mit der \ac{aFRR} als Vorlage, deren Zeitscheiben vier Stunden umfassen
     \item Beschaffungszeitpunkt im Verhältnis zum Gate Closure des kontinuierlichen Intraday-Handels, nach den Anforderungen A1 und A6
-    \item Ausschreibender und Turnus sowie das Zuschlagsverfahren, nach Anforderung A5
-    \item Lokationalität der Beschaffung nach Anforderung A3 \cite{blank_determination_2024}
-    \item Pönale bei Nichterfüllung als Durchsetzungsgegenstück zur binären Erfüllung nach Anforderung A2
-    \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung, nach Anforderung A8
-    \item Vergütungslogik und Präqualifikationsanforderungen nach Anforderung A6 \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
-    \item Abgrenzung zum Netzbooster nach Anforderung A5 \cite{consentec_systembooster_2026}
-    \item Abgrenzung des marktbasierten kurativen Produkts gegenüber dem marktbasierten Redispatch nach Anforderung A4, nämlich dass die kurative Vorhaltung allein Leistung reserviert, während der Redispatch zugleich eine Energielieferung auslöst \cite{hirth_kosten_2019}
+    \item Turnus der Ausschreibung, also täglich, wöchentlich oder länger, und die Frage, ob er dem Turnus der Regelleistung folgt
+    \item Zuschlagsverfahren und Preisregel, also Einheitspreis oder Gebotspreis, nach Anforderung A5
+    \item Vergütungsform, also ob die Zahlung an der vorgehaltenen Leistung, an der Bindungsdauer oder an beidem ansetzt, nach Anforderung A4
+    \item Verbundbeschaffung, also Zuschlag auf eine Kombination von Geboten statt auf das einzelne Gebot, weil die Maßnahme bilanziell ausgeglichen sein muss, nach Anforderung A8
+    \item Teilbarkeit des Gebots und Mindestlosgröße, weil beides an dünn besetzten Knoten über den Wettbewerb mitentscheidet, nach den Anforderungen A3 und A5
+    \item Aggregation mehrerer Anlagen zu einem Gebot, die in der Regelleistung üblich ist und den Wettbewerb nach A5 stärkt, der knotenscharfen Beschaffung nach A3 aber entgegensteht
+    \item Lokationalität der Beschaffung nach Anforderung A3, wobei die Paarbildung nicht beliebig ist, denn eine Senke an einem anderen Netzknoten entlastet zwar den ersten Engpass, kann aber zugleich einen zweiten verschärfen \cite{blank_determination_2024}
+    \item Verhältnis zum Redispatch, nämlich dass die kurative Zusage die Verfügbarkeit der Anlage für eine Redispatchanweisung nicht aufhebt, nach den Anforderungen A4 und A7
+    \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung nach Anforderung A8, mit dem Vorbehalt, dass sich ihr Aufwand von außen nicht beurteilen lässt, weil er die internen Abläufe des \ac{ÜNB} betrifft
+\end{itemize}
+
+% --- Abschluss ----------------------------------------------------------
+\begin{itemize}
+    \item Kostenwälzung, also wer die Vergütung trägt, liegt nach der Abgrenzung des Untersuchungsrahmens außerhalb dieser Arbeit
+    \item Tabelle der Produktparameter mit den Spalten Größe, Basisfall und in Kapitel 5 zu prüfen, deren Größen Abschnitt \ref{sec:storage_model} als Symbole übernimmt
+% HIERHER VERSCHOBEN am 09.09.2026 aus der Einleitung dieses Unterabschnitts.
+    \item Sobald eine Zahl gesetzt ist, hängt jedes spätere Ergebnis an ihr, und das ist einmal offen zu sagen
+    \item Abschluss, nämlich dass der Rahmen steht und die Größen bestimmt sind, die das Modell als Eingang braucht
 \end{itemize}
 
 % EIN STICHPUNKT AUS CLAUDE.md ABSCHNITT 8 UEBERNOMMEN am 08.09.2026,
@@ -1637,6 +1998,18 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %   \section{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
 \subsection{Systemgrenzen und Abgrenzungen}
 \label{sec:weber_exclusion}
+% VORMERKUNG vom 11.09.2026 aus 3.1.2. Zwei Aussagen sind hier einmal zu
+% nennen. Erstens der Unterschied zur Anlage 5 der Festlegung, die von
+% gesperrter Leistung ausgeht, waehrend das Vorhalteprodukt allein die
+% zugesagte Leistung sperrt und die Anlage weiterhandeln laesst. CLAUDE.md
+% Abschnitt 8 nennt das als Grund, weshalb der ermittelte Preis unter dem
+% dortigen Ausgleich liegen kann. Der Verfasser wollte den Vergleich nicht in
+% 3.1.2. Zweitens der Energieanteil eines Abrufs, den der eine Preis nach
+% 3.1.2 enthaelt und den das Modell nicht abbildet.
+% Drittens, ergaenzt am 11.09.2026, der Vorbehalt nach Entscheidung 5, dass
+% die Arbeit die Hoehe der Poenale nicht bestimmt, weil das Modell die daraus
+% folgende Risikopraemie nicht traegt. Alle drei zusammen sind die nicht
+% modellierten Bestandteile des Gebots neben dem Reservierungspreis.
 % [Ziel: 1,5 Seiten]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %   frueheres Seitenziel: [Ziel: 1 Seite]
