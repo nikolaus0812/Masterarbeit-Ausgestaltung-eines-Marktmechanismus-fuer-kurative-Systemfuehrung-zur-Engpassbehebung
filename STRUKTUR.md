@@ -50,8 +50,8 @@ Zielwert um vier Seiten überschreitet.
 | Die Zusage | F, zwei Absätze mit acht und sechs Sätzen |
 | Überleitung | entfallen |
 | Abruf und Erfüllung | F, ein Absatz mit zehn Sätzen, zwei Punkte offen |
-| Überleitung | S |
-| Beschaffung | S, fünfzehn Punkte |
+| Überleitung | entfallen |
+| Beschaffung | T, Präqualifikation als Absatz mit sieben Sätzen, dreizehn Punkte offen |
 | Abschluss | S, vier Punkte mit Tabelle |
 
 ---
@@ -75,7 +75,9 @@ Zielwert um vier Seiten überschreitet.
    Bestandteilen des Gebots vorgemerkt.
 9. **Geplante Revision und Ersatzbeschaffung**, als Stichpunkt hinter dem Absatz
    zu Abruf und Erfüllung.
-10. **Entzug der Präqualifikation**, Beleg aus der Regelleistung fehlt.
+10. **Entzug der Präqualifikation.** Die PQ-Bedingungen regeln ihn nicht, sie
+   verweisen für Vorhaltung und Erbringung auf den Rahmenvertrag, Seite 10. Der
+   Rahmenvertrag liegt nicht im Repository.
 
 ---
 
@@ -95,7 +97,9 @@ Zielwert um vier Seiten überschreitet.
 2. Abschnitt 4.4 führt noch Abrufhäufigkeit, Vergütungsniveau und Pönalehöhe, die
    nach den Entscheidungen 4, 5 und 6 entfallen.
 3. Die Belege für `ehrhart_analysis_2025`, `horsch_role_2017` und
-   `einsiedler_analysis_2025` sind nur auf Auflösbarkeit geprüft.
+   `einsiedler_analysis_2025` sind nur auf Auflösbarkeit geprüft. Seit dem
+   11.09.2026 sind alle Volltexte lesbar, über PyMuPDF und bei Hörsch über den
+   Langpfad-Präfix. Die inhaltliche Prüfung steht aus.
 4. `\ref{sec:storage_model}` im Abschluss von 3.1.2 löst auf 3.2.4 auf, gemeint
    ist 3.2.3.
 

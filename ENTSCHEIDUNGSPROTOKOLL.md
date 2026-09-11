@@ -444,6 +444,60 @@ tatsächlich stehen sie in 6 und 11. Abschnitt 3.1 nennt die Gliederung in
 Abschnitt 6 und die Prüfsuite in Abschnitt 5, tatsächlich 7 und 6. Nicht geändert,
 weil es ein bindendes Dokument des Verfassers ist.
 
+### 11.09.2026, Berichtigung, alle PDF-Volltexte sind lesbar
+
+Die Aussage vom 08.09.2026, die Volltexte im Repository liessen sich nicht lesen,
+ist falsch. Das gilt auch fuer die Wiederholung im Eintrag vom 11.09.2026 zu Abruf
+und Erfuellung, wonach sich das Praequalifikationsdokument nicht oeffnen lasse.
+Beide Aussagen beruhten allein auf dem Lesewerkzeug von Claude. Es lehnt PDF-Dateien
+mit gesetzten Berechtigungsangaben als passwortgeschuetzt ab. Eigener Fehler. Die
+Aussage ist am 11.09.2026 ungeprueft aus der frueheren Sitzung uebernommen worden.
+Der Wortlaut der frueheren Eintraege bleibt nach Abschnitt 11 unveraendert.
+
+**Befund.** Mit PyMuPDF oeffnen sich 75 der 78 Dateien in literature/PDFs ohne
+Passwort, darunter die Festlegung BK8-22-0001-A mit den Anlagen 1 bis 5 sowie die
+Volltexte von Ehrhart, Einsiedler und Oggioni. Die drei uebrigen, naemlich Hoersch
+2017, Sous 2022 und Garttan 2025, scheitern nur an der Pfadlaenge von 266 bis 269
+Zeichen und oeffnen sich ueber den Langpfad-Praefix.
+
+**Folge.** Die offenen Punkte zur inhaltlichen Deckung von ehrhart_analysis_2025,
+horsch_role_2017 und einsiedler_analysis_2025 lassen sich jetzt abarbeiten, ebenso
+jeder andere Beleg, der bisher nur auf Aufloesbarkeit geprueft war.
+
+**Praequalifikationsbedingungen der UENB vom 05.07.2024**, Schluessel
+ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024, 104 Seiten.
+Fundstellen fuer 3.1.2.
+
+- Seite 10. Das Dokument regelt nur, was im PQ-Verfahren geprueft wird. Vorhaltung
+  und Erbringung nach Zuschlag regelt der Rahmenvertrag.
+- Seite 14. Aendert sich die Zusammensetzung einer Reserveeinheit oder -gruppe,
+  erlischt die Praequalifikation, sofern der UENB nichts anderes feststellt.
+- Seite 16. Die vermarktbare Leistung ist die Leistung, die ueber vier Stunden bei
+  FRR und zwei Stunden bei FCR durchgehend erbracht werden kann.
+- Seite 18. Der PQ-Antrag ist kostenfrei. Die Kosten fuer die Voraussetzungen, etwa
+  die informationstechnischen Anforderungen, traegt der Anbieter.
+- Seite 19. Die Praequalifikation laeuft ab und laesst sich vorher erneut pruefen.
+- Seite 22. Der UENB prueft die korrekte Erbringung anhand von Bewegungsdaten,
+  also Offline- und Echtzeitdaten.
+- Seite 41. Bei FRR betraegt das minimale Arbeitsvermoegen 60 Minuten relativ zur
+  vermarktbaren Leistung und bei FCR und FRR 15 Minuten relativ zur PQ-Leistung.
+- Seite 64. Bei FCR ist die Mindestaktivierungszeit von 15 Minuten nach Artikel
+  156 SO GL nachzuweisen.
+- Seite 67. Speichermanagement haelt das Arbeitsvermoegen in einem erlaubten
+  Arbeitsbereich zwischen einem unteren und einem oberen Grenzladestand.
+
+**Folge fuer den Text.** Der Entzug der Praequalifikation als Sanktion fuer
+Nichterfuellung steht nicht in den PQ-Bedingungen. Er waere im Rahmenvertrag zu
+suchen, der nicht im Repository liegt. Offener Punkt, der Satz im Absatz zu Abruf
+und Erfuellung bleibt eine Setzung des Verfassers ohne Beleg, bis der Rahmenvertrag
+vorliegt. Umgekehrt stuetzt Seite 67, dass die Regelleistung ein Band zwischen zwei
+Grenzladestaenden bereits kennt, und Seite 22, dass der UENB die Erbringung schon
+heute anhand von Bewegungsdaten prueft.
+
+Der ausgezogene Text liegt im Arbeitsverzeichnis der Sitzung und nicht im
+Repository.
+
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -4340,6 +4394,51 @@ fuenfmal in zehn Saetzen stand.
 Entscheidung 5 zur Poenalehoehe, vorgesehen fuer 3.2.5 und dort bei den nicht
 modellierten Bestandteilen des Gebots vorgemerkt. Und die geplante Revision samt
 Ersatzbeschaffung, die unter die Ausnahme nicht faellt.
+
+
+### 11.09.2026, Nachtrag, Praequalifikation in 3.1.2 ausformuliert
+
+Ein Absatz mit sieben Saetzen, gestuetzt auf die PQ-Bedingungen der UENB vom
+05.07.2024, die sich seit heute lesen lassen. Die Ueberleitung vor der Beschaffung
+ist auf Weisung des Verfassers entfallen.
+
+**Berichtigung einer eigenen Aussage.** Im Gespraech hatte ich behauptet, die
+Praequalifikation der Regelleistung pruefe nur die Reaktion auf die Frequenz und
+nicht die auf ein Signal des UENB. Das ist falsch. Die Betriebsfahrt verlangt nach
+Seite 25, einen vorgegebenen Sollwert innerhalb von 30 Sekunden bei FCR, 5 Minuten
+bei aFRR und 12,5 Minuten bei mFRR zu erreichen. Allein bei der FCR ergibt sich der
+Sollwert aus der Frequenz. Die Aussage ist nicht in den Text gelangt.
+
+**Entscheidungen des Verfassers.** Die Leistung, das Folgen eines Sollwerts des
+UENB und das Arbeitsvermoegen prueft die Regelleistung bereits, und eine dort
+praequalifizierte Anlage weist sie nicht erneut nach. Neu nachzuweisen ist die
+Klasse von zwei Minuten, weil die aFRR fuenf Minuten verlangt und die FCR der
+Frequenz folgt. Anlagen ausserhalb der Regelleistung weisen alle drei
+Eigenschaften selbst nach. Der wertende Nachsatz, die Uebernahme verteile den
+Aufwand ungleich, ist auf Weisung gestrichen und nicht wieder aufzunehmen. Die
+Zusage wird in den Planungsdaten mitgefuehrt, und der Akteur weist nach einer
+Einplanung nach, dass er lieferfaehig gewesen waere. Der Verfasser sprach dabei vom
+KWEP-Prozess nach Anlage 1 der Festlegung. Geschrieben steht Planungsdaten, weil
+Kapitel 2 diesen Begriff fuehrt und KWEP nicht im Abkuerzungsverzeichnis steht.
+
+**Eigenstaendiges Argument, vom Verfasser gewaehlt und zu pruefen.** Die
+Sensitivitaet des Standorts weist der Akteur nicht nach, sie folgt aus dem
+Netzmodell des UENB, und der Akteur gibt allein den Netzknoten an. Daraus folgt die
+Anpassung von Satz 1, der die Sensitivitaet bis dahin unter den Nachweisen fuehrte.
+Die Regelleistung kennt nach Seite 14 nur die Regelzone.
+
+**Verworfen, nicht wieder aufnehmen.** Die Fassung, nach der eine fuer die
+Regelleistung praequalifizierte Anlage allein Sensitivitaet und Ladezustandsband
+zusaetzlich nachweise. Sie war unbelegt und schief, weil die Regelleistung das
+Arbeitsvermoegen nach Seite 41 bereits prueft. Und der Satz zur
+informationstechnischen Anbindung, den der Verfasser fuer entbehrlich hielt.
+
+**Nebenbefund.** Die 60 Minuten Arbeitsvermoegen der FRR nach Seite 41 entsprechen
+genau der Setzung des Verfassers im Absatz zu Abruf und Erfuellung, also einer
+Megawattstunde je zugesagtem Megawatt.
+
+**Offen.** Aus Stichpunkt 27 fehlt, dass der Aufwand vor dem Zuschlag anfaellt. Der
+Stichpunkt bleibt hinter dem Absatz stehen.
 
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
