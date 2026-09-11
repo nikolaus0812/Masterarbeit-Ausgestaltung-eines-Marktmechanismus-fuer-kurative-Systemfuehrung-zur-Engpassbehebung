@@ -4497,6 +4497,58 @@ ersetzt, Vorhalteprodukt statt Produkt, 23.30 statt 23:30.
 Pruefsuite und Build siehe Commit.
 
 
+### 11.09.2026, Nachtrag, Pruefung von 3.1 auf Dopplungen und Luecken
+
+Der Verfasser hat die Pruefung angeordnet und die Vorschlaege mit alles klar,
+setze um freigegeben. Jede geaenderte Stelle traegt ihre alte Fassung als
+Kommentar in der Datei.
+
+**Umgesetzt.**
+
+- D1. Der erste Satz der Einleitung von 3.1 ist gestrichen, er doppelte den ersten
+  Satz von 3.1.1.
+- D2. Der vierte Satz zu A1 ist gestrichen. Er traf eine Produktentscheidung im
+  Katalog und las sich gegen die Schachtelung der Reaktionszeitklassen.
+- D3. Der Katalogsatz zu A2 ist auf die Forderung gekuerzt. Dass eine verspaetete
+  Leistungsaenderung keinen Wert hat, stand dreimal.
+- D4. Im ersten Satz der Zusage ist und keine Energiemenge gestrichen, A4 traegt
+  den Gegensatz.
+- D5. Der Satz zur Bindungsdauer sagt nicht mehr tritt hinzu, das sagt A4.
+- D7. Der Satz zu den Planungsdaten steht nicht mehr in der Praequalifikation,
+  sondern ohne seine zweite Haelfte im Absatz zu Abruf und Erfuellung vor dem
+  Nachweis. Die zweite Haelfte doppelte den Nachweis.
+- D8. Der Satz zur Zeitscheibe nennt die Megawattstunde je Megawatt nicht erneut.
+- W1. Das Gebot nennt kein Ladezustandsband mehr, denn das Band folgt aus der
+  Leistung.
+- W2. Der Akteur gibt den Netzknoten an, dem seine Anlage zugeordnet ist, nicht
+  den, an dem sie angeschlossen ist, weil bei einer Zusammenfassung der
+  uebergeordnete Knoten zaehlt.
+- L3. Die Restliste hinter dem Absatz zu Abruf und Erfuellung entfaellt. Die
+  Poenalehoehe steht als Vormerkung in 3.2.5. Die geplante Revision erledigt sich
+  durch die taegliche Ausschreibung je Stunde, fuer ungeplante Ausfaelle leistet
+  die Meldepflicht die Gegenmassnahme.
+- L5. Die Restliste hinter dem Zuschlag entfaellt. Das Verhaeltnis zum Redispatch
+  traegt A7, die Betriebsplanung tragen A8 und der Satz zu den Rechenlaeufen. Der
+  Vorbehalt zur Beurteilbarkeit von A8 ist in chapter_5.tex bei
+  sec:requirements_assessment vorgemerkt.
+
+**Eigene Folgeanpassungen**, nicht einzeln freigegeben, vom Verfasser zu pruefen.
+Nach D3 beginnt der zweite Satz zu A2 mit Ohne sie statt Ohne eine Sanktion bei
+Nichterfuellung. Nach D7 beginnt der Nachweis mit Er statt Der Akteur. Bei W1 ist
+das vorgeschlagene ausserdem weggelassen, weil ihm am Absatzanfang der Bezug
+fehlt.
+
+**Nicht umgesetzt.** D6 bleibt, weil der Verfasser die Fassung gewaehlt hat und
+der Vorschlag nur bedingt war. D9 und W3 brauchen seine Begriffswahl.
+
+**Offen.** L1, Abschluss von 3.1.2 mit Tabelle und Basisfallwerten, die noch
+niemand gesetzt hat. L2, die Abweichung der Reaktionszeitklassen von InnoSys 2030.
+L4, der Aufwand vor dem Zuschlag. L6, Energievorhalt je Richtung,
+Ladezustandsband gegen A5, Verteilnetzengpaesse. L7, die Abbildung
+fig:markt_zeitschiene in Kapitel 2 fuehrt pRD1, pRD2 und WAPP ohne Erklaerung und
+ohne Eintrag im Abkuerzungsverzeichnis.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst

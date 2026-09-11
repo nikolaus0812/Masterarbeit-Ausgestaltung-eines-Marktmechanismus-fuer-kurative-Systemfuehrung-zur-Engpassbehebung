@@ -297,7 +297,9 @@ Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stell
 % Saetze standen bis dahin unmittelbar unter der Kapitelueberschrift und
 % leiteten dort nicht das Kapitel, sondern diesen Abschnitt ein.
 
-Aus den vorangehenden Abschnitten ergeben sich Anforderungen, die ein Mechanismus zur Beschaffung kurativer Vorhalteleistung erfüllen muss.
+% SATZ GESTRICHEN, D1 am 11.09.2026, freigegeben vom Verfasser. Er doppelte den ersten Satz von 3.1.1.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Aus den vorangehenden Abschnitten ergeben sich Anforderungen, die ein Mechanismus zur Beschaffung kurativer Vorhalteleistung erfüllen muss.
 % SATZ ERSETZT am 08.09.2026, Fassung A, gewaehlt vom Verfasser. Der alte
 % Satz kuendigte die Pruefung bestehender Marktdesignansaetze an, die mit dem
 % Umbau auf drei Abschnitte entfallen ist. Der neue Satz nennt die drei
@@ -711,9 +713,17 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
     \item[A1 -- Reaktionszeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit vom betroffenen Betriebsmittel vorgegeben wird und keine Wahlgröße des Akteurs ist.
     Der \ac{ÜNB} legt die zulässige Vorauslastung fest, bevor der Fehlerfall eintritt, und muss die Reaktionszeit der zugesagten Maßnahme dafür bereits kennen.
     Hält eine Anlage die zugesagte Zeit nicht ein, so entwertet das nicht allein ihr Gebot, sondern die Vorauslastung, die der \ac{ÜNB} im Vertrauen darauf gefahren hat.
-    Das Produkt unterscheidet deshalb nach Reaktionszeitklassen, und ein Gebot gilt allein für die Klasse, für die der Akteur es abgibt.
-    \item[A2 -- Verbindlichkeit] Die Zusage muss eine Sanktion bei Nichterfüllung tragen, weil eine verspätete Leistungsänderung wertlos ist und eine binäre Anforderung ohne Folgen keine Verbindlichkeit begründet.
-    Ohne eine Sanktion bei Nichterfüllung bleibt die Zusage eine Absichtserklärung, die als Bedingung der Einsatzplanung nicht taugt.
+% SATZ GESTRICHEN, D2 am 11.09.2026, freigegeben vom Verfasser. Er traf eine Produktentscheidung im Katalog, die 3.1.2 genauer traegt, und las sich gegen die Schachtelung der Klassen.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Das Produkt unterscheidet deshalb nach Reaktionszeitklassen, und ein Gebot gilt allein für die Klasse, für die der Akteur es abgibt.
+% KATALOGSATZ GEKUERZT, D3 am 11.09.2026, freigegeben vom Verfasser. Dass eine verspaetete Leistungsaenderung keinen Wert hat, stand dreimal.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item[A2 -- Verbindlichkeit] Die Zusage muss eine Sanktion bei Nichterfüllung tragen, weil eine verspätete Leistungsänderung wertlos ist und eine binäre Anforderung ohne Folgen keine Verbindlichkeit begründet.
+    \item[A2 -- Verbindlichkeit] Die Zusage muss eine Sanktion bei Nichterfüllung tragen.
+% FOLGEANPASSUNG ZU D3 am 11.09.2026, freigegeben vom Verfasser. Nach der Kuerzung stand Sanktion bei Nichterfuellung zweimal hintereinander.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Ohne eine Sanktion bei Nichterfüllung bleibt die Zusage eine Absichtserklärung, die als Bedingung der Einsatzplanung nicht taugt.
+    Ohne sie bleibt die Zusage eine Absichtserklärung, die als Bedingung der Einsatzplanung nicht taugt.
     Die Pönale kann dabei nicht nach dem Grad der Abweichung bemessen werden, denn die Erfüllung ist binär und eine Leistungsänderung nach dem Ende des Überlastintervalls hat keinen verminderten Wert, sondern keinen.
     \item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, weil die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein.
     Die Beschaffung setzt am Netzknoten an und nicht an der Regelzone, denn ein Gebot ist an den Standort der Anlage gebunden.
@@ -1187,7 +1197,10 @@ Der Entwurf führt das Produkt so weit aus, dass sich prüfen lässt, ob eine ku
 %   \item Abgrenzung gegenüber dem marktbasierten Redispatch nach Anforderung A4, nämlich dass die kurative Vorhaltung allein Leistung reserviert, während der Redispatch zugleich eine Energielieferung auslöst \cite{hirth_kosten_2019}
 %   \item Abgrenzung gegenüber dem Netzbooster nach Anforderung A5, der im Verfügungsbereich des \ac{ÜNB} liegt und keine Zusage eines Dritten voraussetzt \cite{consentec_systembooster_2026}
 
-Der Akteur sagt zu, seinen Leistungspunkt im Fehlerfall um die angebotene Leistungsänderung zu verschieben, und reserviert dafür ein Leistungsband und keine Energiemenge.
+% SATZ GEKUERZT, D4 am 11.09.2026, freigegeben vom Verfasser. Der Gegensatz zur Energiemenge steht bereits bei A4.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Der Akteur sagt zu, seinen Leistungspunkt im Fehlerfall um die angebotene Leistungsänderung zu verschieben, und reserviert dafür ein Leistungsband und keine Energiemenge.
+Der Akteur sagt zu, seinen Leistungspunkt im Fehlerfall um die angebotene Leistungsänderung zu verschieben, und reserviert dafür ein Leistungsband.
 Neben dem Leistungsband reserviert die Zusage ein Ladezustandsband, innerhalb dessen die Anlage zu bleiben hat.
 Vorhaltung und Abruf sind zu unterscheiden, denn die Zusage besteht durchgehend, während ein Abruf nur im Fehlerfall erfolgt.
 Vergütet wird allein die Vorhaltung, und der Preis deckt damit sowohl die Bindung als auch die Energie, die ein Abruf kostet.
@@ -1196,11 +1209,17 @@ Eine Anlage kann beide Richtungen anbieten, doch jede bindet einen anderen Teil 
 Gesperrt ist damit allein die zugesagte Leistung, während für das gebundene Zeitfenster kein allgemeines Handelsverbot gilt.
 Der Akteur stellt seinen Fahrplan weiterhin selbst auf.
 
-Ein Gebot nennt neben den beiden Bändern die Reaktionszeitklasse, für die der Akteur einsteht.
+% SATZ BERICHTIGT, W1 am 11.09.2026, freigegeben vom Verfasser. Das Ladezustandsband folgt nach dem Absatz zu Abruf und Erfuellung aus der Leistung und wird nicht geboten. Vorgeschlagen war ausserdem, am Absatzanfang fehlt dafuer aber der Bezug.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Ein Gebot nennt neben den beiden Bändern die Reaktionszeitklasse, für die der Akteur einsteht.
+Ein Gebot nennt die Reaktionszeitklasse, für die der Akteur einsteht.
 Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei, weshalb das Produkt drei Klassen mit zwei, fünf und zehn Minuten führt.
 Wer die kürzeste Klasse erfüllt, erfüllt damit auch die längeren, sodass ein schneller Akteur in jeder Klasse anbieten kann.
 Die Klassen ersparen dem \ac{ÜNB} die Rechnung mit der Reaktionszeit jeder einzelnen Anlage, und drei Stufen halten den Zugang zugleich für viele Technologien offen.
-Hinzu tritt die Bindungsdauer, also der Zeitraum, über den die Zusage nach dem Zuschlag gilt.
+% SATZ UMGESTELLT, D5 am 11.09.2026, freigegeben vom Verfasser. A4 sagt bereits, die Bindungsdauer trete hinzu.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Hinzu tritt die Bindungsdauer, also der Zeitraum, über den die Zusage nach dem Zuschlag gilt.
+Die Bindungsdauer ist der Zeitraum, über den die Zusage nach dem Zuschlag gilt.
 Eine verspätete oder zu geringe Leistungsänderung bringt das Betriebsmittel nicht mehr in einen dauerbelastbaren Zustand, weshalb die Erfüllung binär ist.
 
 % --- Ueberleitung, entfallen ------------------------------------------
@@ -1279,7 +1298,13 @@ Der Akteur erhält dabei keine Anfrage, sondern ein Signal, auf das seine Anlage
 Die Anlage hält die Leistungsänderung, bis der \ac{ÜNB} den Systemzustand neu bewertet und den Engpass mit anderen Mitteln behoben hat.
 Angenommen ist der ungünstigste Fall eines einstündigen Abrufs, weshalb das Ladezustandsband durchgehend eine Megawattstunde je zugesagtem Megawatt enthält.
 Die bilanzielle Verantwortung für die Abweichung vom Fahrplan liegt nicht beim Akteur, sondern beim \ac{ÜNB}, der den Abruf ausgelöst hat.
-Der Akteur weist zweierlei nach, nämlich dass seine Anlage die beiden Bänder über die Bindung eingehalten und im Abruf die Leistungsänderung innerhalb der Klasse erbracht hat.
+% SATZ HIERHER VERSCHOBEN am 11.09.2026, D7, aus dem Absatz zur Praequalifikation,
+% ohne seine zweite Haelfte.
+Die kurative Zusage führt der Akteur in den Planungsdaten mit, die er dem \ac{ÜNB} übermittelt.
+% FOLGEANPASSUNG ZU D7 am 11.09.2026, freigegeben vom Verfasser. Sonst stuende der Akteur in zwei Saetzen hintereinander.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Der Akteur weist zweierlei nach, nämlich dass seine Anlage die beiden Bänder über die Bindung eingehalten und im Abruf die Leistungsänderung innerhalb der Klasse erbracht hat.
+Er weist zweierlei nach, nämlich dass seine Anlage die beiden Bänder über die Bindung eingehalten und im Abruf die Leistungsänderung innerhalb der Klasse erbracht hat.
 Die Pönale knüpft deshalb nicht erst an einen gescheiterten Abruf, sondern schon an die fehlende Handlungsfähigkeit, weil die Vorauslastung auf der Zusage beruht.
 Von der Pönale befreit ihn allein der Nachweis, dass seine Handlungsfähigkeit an einem unvorhersehbaren Ereignis außerhalb seines Betriebs scheiterte.
 Ein solches Ereignis hat er dem \ac{ÜNB} unverzüglich zu melden, damit dieser Gegenmaßnahmen einleiten kann.
@@ -1287,10 +1312,10 @@ Neben der Pönale droht der Entzug der Präqualifikation, mit dem der Akteur den
 
 % NOCH OFFEN aus Stichpunkt 22 und 23, nicht geloescht, sondern hier
 % belassen, bis ihr Ort entschieden ist.
-\begin{itemize}
-    \item Vorbehalt nach Entscheidung 5, dass die Arbeit die Höhe der Pönale nicht bestimmt, weil das Modell die daraus folgende Risikoprämie nicht trägt, vorgesehen für 3.2.5
-    \item Geplante Revision, die der Akteur bei seinem Gebot kennt und die nicht unter die Ausnahme für unvorhersehbare Ereignisse fällt, sowie die Frage einer Ersatzbeschaffung
-\end{itemize}
+% STICHPUNKTE ENTFALLEN am 11.09.2026, freigegeben vom Verfasser. L3. Der Vorbehalt zur Poenalehoehe steht als Vormerkung in 3.2.5. Die geplante Revision erledigt sich durch die taegliche Ausschreibung je Stunde, denn der Akteur bietet fuer diese Stunden nicht, und fuer ungeplante Ausfaelle leistet die Meldepflicht die Gegenmassnahme.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item Vorbehalt nach Entscheidung 5, dass die Arbeit die Höhe der Pönale nicht bestimmt, weil das Modell die daraus folgende Risikoprämie nicht trägt, vorgesehen für 3.2.5
+%   \item Geplante Revision, die der Akteur bei seinem Gebot kennt und die nicht unter die Ausnahme für unvorhersehbare Ereignisse fällt, sowie die Frage einer Ersatzbeschaffung
 
 % --- Ueberleitung, entfallen ------------------------------------------
 % STICHPUNKT ENTFALLEN am 11.09.2026, entschieden vom Verfasser. Die
@@ -1357,9 +1382,14 @@ Neben der Pönale droht der Entzug der Präqualifikation, mit dem der Akteur den
 
 Bieten darf, wer in der Präqualifikation die geforderte Reaktionszeit, die vorhaltbare Leistung und die Einhaltung des Ladezustandsbandes nachweist.
 Diese drei Eigenschaften prüft die Präqualifikation der Regelleistung bereits, nämlich die Leistung, das Folgen eines Sollwerts des \ac{ÜNB} und das Arbeitsvermögen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Die kurative Zusage führt der Akteur in den Planungsdaten mit, die er dem \ac{ÜNB} übermittelt, und weist nach einer Einplanung nach, dass er lieferfähig gewesen wäre.
+% SATZ VERSCHOBEN, D7 am 11.09.2026, freigegeben vom Verfasser. Er betraf den Betrieb nach Zuschlag und nicht den Zugang, und seine zweite Haelfte doppelte den Nachweis im Absatz zu Abruf und Erfuellung. Die erste Haelfte steht jetzt dort.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Die kurative Zusage führt der Akteur in den Planungsdaten mit, die er dem \ac{ÜNB} übermittelt, und weist nach einer Einplanung nach, dass er lieferfähig gewesen wäre.
 Eine für die Regelleistung präqualifizierte Anlage weist die dort geprüften Eigenschaften nicht erneut nach, sodass ihr Aufwand auf das beschränkt bleibt, was die kurative Zusage zusätzlich verlangt.
-Die Sensitivität des Standorts weist der Akteur nicht selbst nach, denn sie folgt aus dem Netzmodell des \ac{ÜNB}, weshalb er allein den Netzknoten angibt, an dem seine Anlage angeschlossen ist.
+% SATZ BERICHTIGT, W2 am 11.09.2026, freigegeben vom Verfasser. Bei einer Zusammenfassung ist der angegebene Knoten der uebergeordnete im 110-kV-Netz und nicht der Anschluss jeder Anlage.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Die Sensitivität des Standorts weist der Akteur nicht selbst nach, denn sie folgt aus dem Netzmodell des \ac{ÜNB}, weshalb er allein den Netzknoten angibt, an dem seine Anlage angeschlossen ist.
+Die Sensitivität des Standorts weist der Akteur nicht selbst nach, denn sie folgt aus dem Netzmodell des \ac{ÜNB}, weshalb er allein den Netzknoten angibt, dem seine Anlage zugeordnet ist.
 % SATZ EINGEFUEGT am 11.09.2026, Fassung A, gewaehlt vom Verfasser. Er nimmt
 % die Verteilnetzbetreiber auf, die die Arbeit bis dahin nicht erwaehnte. Der
 % Satz spricht allgemein vom Netzbetreiber, an dessen Netz die Anlage
@@ -1454,7 +1484,10 @@ Anlagen, die nicht an der Regelleistung teilnehmen, weisen alle drei Eigenschaft
 
 Die deutschen \ac{ÜNB} schreiben das Vorhalteprodukt gemeinsam aus, wie sie es bei der \ac{aFRR} bereits tun, und ein Akteur durchläuft damit nur ein Verfahren.
 Den Bedarf ermitteln sie in den Rechenläufen ihrer Redispatchplanung am Vortag, sodass er vor dem Zuschlag feststeht.
-Ausgeschrieben wird je Zeitscheibe von einer Stunde, und der Energievorhalt von einer Megawattstunde je Megawatt deckt damit einen Abruf über eine volle Zeitscheibe ab.
+% SATZ GEKUERZT, D8 am 11.09.2026, freigegeben vom Verfasser. Die Megawattstunde je Megawatt stand zweimal.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Ausgeschrieben wird je Zeitscheibe von einer Stunde, und der Energievorhalt von einer Megawattstunde je Megawatt deckt damit einen Abruf über eine volle Zeitscheibe ab.
+Ausgeschrieben wird je Zeitscheibe von einer Stunde, die damit der Dauer des ungünstigsten Abrufs entspricht.
 Die Ausschreibung findet täglich statt, und zwar gleichzeitig für alle 24 Zeitscheiben des Folgetages, für die ein Akteur jeweils ein eigenes Gebot abgeben kann.
 Das Gebot nennt für jede Zeitscheibe einen Preis in Euro je Megawatt und Stunde, getrennt für die positive und die negative Richtung.
 Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, und anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt das Vorhalteprodukt die Zusammenfassung nur je Netzknoten.
@@ -1470,10 +1503,10 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % NOCH OFFEN, in der Pruefung auf Dopplungen zu klaeren. Beide sind
 % vermutlich durch A7, den Satz zum Bedarf und den Vergleich mit dem
 % praeventiven Redispatch weitgehend abgedeckt.
-\begin{itemize}
-    \item Verhältnis zum Redispatch, nämlich dass die kurative Zusage die Verfügbarkeit der Anlage für eine Redispatchanweisung nicht aufhebt, nach den Anforderungen A4 und A7
-    \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung nach Anforderung A8, mit dem Vorbehalt, dass sich ihr Aufwand von außen nicht beurteilen lässt, weil er die internen Abläufe des \ac{ÜNB} betrifft
-\end{itemize}
+% STICHPUNKTE ENTFALLEN am 11.09.2026, freigegeben vom Verfasser. L5. Das Verhaeltnis zum Redispatch traegt A7. Die Einfuegung in die Betriebsplanung tragen A8 und der Satz zu den Rechenlaeufen. Der Vorbehalt zur Beurteilbarkeit ist fuer Abschnitt 5.2 vorgemerkt.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item Verhältnis zum Redispatch, nämlich dass die kurative Zusage die Verfügbarkeit der Anlage für eine Redispatchanweisung nicht aufhebt, nach den Anforderungen A4 und A7
+%   \item Einfügung der Beschaffung in die bestehenden Prozesse der Betriebsplanung nach Anforderung A8, mit dem Vorbehalt, dass sich ihr Aufwand von außen nicht beurteilen lässt, weil er die internen Abläufe des \ac{ÜNB} betrifft
 
 % --- Abschluss ----------------------------------------------------------
 \begin{itemize}

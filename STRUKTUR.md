@@ -49,9 +49,9 @@ Zielwert um vier Seiten überschreitet.
 | Einleitung | F, zwei Sätze |
 | Die Zusage | F, zwei Absätze mit acht und sechs Sätzen |
 | Überleitung | entfallen |
-| Abruf und Erfüllung | F, ein Absatz mit zehn Sätzen, zwei Punkte offen |
+| Abruf und Erfüllung | F, ein Absatz mit elf Sätzen |
 | Überleitung | entfallen |
-| Beschaffung | F, Präqualifikation acht Sätze, Ausschreibung und Gebot acht, Zuschlag fünf, Stichpunkt 27, 38 und 39 offen |
+| Beschaffung | F, Präqualifikation sieben Sätze, Ausschreibung und Gebot acht, Zuschlag fünf, Stichpunkt 27 offen |
 | Abschluss | S, vier Punkte mit Tabelle |
 
 ---
@@ -73,11 +73,21 @@ Zielwert um vier Seiten überschreitet.
    die positive Richtung, die negative braucht freien Speicherraum.
 8. **Pönalehöhe nach Entscheidung 5**, in 3.2.5 bei den nicht modellierten
    Bestandteilen des Gebots vorgemerkt.
-9. **Geplante Revision und Ersatzbeschaffung**, als Stichpunkt hinter dem Absatz
-   zu Abruf und Erfüllung.
+9. **Geplante Revision und Ersatzbeschaffung**, erledigt am 11.09.2026 durch die
+   tägliche Ausschreibung je Stunde und die Meldepflicht.
 10. **Entzug der Präqualifikation.** Die PQ-Bedingungen regeln ihn nicht, sie
    verweisen für Vorhaltung und Erbringung auf den Rahmenvertrag, Seite 10. Der
    Rahmenvertrag liegt nicht im Repository.
+11. **Begriffswahl nach Stilregel 5**, offen. Wirksamkeit oder Wirkung, Produkt
+   oder Vorhalteprodukt, Marktprodukt in der Einleitung von 3.1,
+   Aktivierungsgeschwindigkeit oder Reaktionszeit. Dazu die Kürzung der
+   Katalogsätze in A2, A3, A4, A5 und A7.
+12. **Abschluss von 3.1.2** mit Tabelle der Produktparameter. Es fehlen die
+   Basisfallwerte für das Modell, nämlich gebundene Leistung, Richtung, Klasse
+   sowie Zahl und Lage der Zeitscheiben.
+13. **Abweichung der Klassen von InnoSys 2030** ist im Text zu begründen.
+14. **Aufwand vor dem Zuschlag**, Stichpunkt 27, ein Halbsatz im Absatz zur
+   Präqualifikation.
 
 ---
 
