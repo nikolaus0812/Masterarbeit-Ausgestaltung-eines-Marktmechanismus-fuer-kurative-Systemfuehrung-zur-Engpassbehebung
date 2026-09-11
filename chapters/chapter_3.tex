@@ -1707,6 +1707,25 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 %   \section{Modellierungsansatz und Systemgrenzen}
 \section{Optimierung des Speicherbetriebs}
 \label{sec:model_scope}
+% ENTSCHEIDUNG ZU K1 am 11.09.2026, getroffen vom Verfasser. Der kurative
+% Reservierungspreis wird wie im Code bestimmt, also endogen. Die kurative
+% Reservierung ist eine Variable je Viertelstunde und Richtung, der Preis ist
+% Eingang, und eine Bisektion ausserhalb der Optimierung sucht je Stunde und
+% Richtung den kleinsten Preis, bei dem die Stunde voll reserviert ist,
+% Fuellgrad ab 99 Prozent, MODELL.md Abschnitt 11. Das aendert Entscheidung 2
+% in CLAUDE.md Abschnitt 9, die eine exogene Bindung und Tagespaare vorsah.
+% Angeboten und verworfen war eine feste Bindung je Stunde mit zwei Laeufen.
+% Die Stichpunkte dieses Abschnitts folgen noch Entscheidung 2. Die
+% betroffenen tragen den Vermerk ZU AENDERN NACH K1 und sind gemeinsam mit
+% dem Verfasser neu zu fassen.
+% BASISFALL nach Auswahl des Verfassers. Mindestgroesse 25 MW, also der
+% Schalter USE_KUR_BINAER und damit ein gemischt-ganzzahliges Problem, beide
+% Richtungen als zwei Faelle, Reaktionszeitklasse zwei Minuten, die im
+% Viertelstundenmodell den Preis nicht beruehrt. Welche Stunden reserviert
+% werden, bestimmt das Modell selbst.
+% ABRUFDAUER eine Stunde nach Entscheidung des Verfassers. Der Code rechnet
+% bisher mit einer Viertelstunde, weil kur_t_res in MARKET fehlt und in
+% optimizer.py auf dt zurueckfaellt. Anzupassen ist main.py, MARKET.
 % [Ziel: 7 Seiten]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %   frueheres Seitenziel: [Ziel: 2,5 Seiten]
@@ -1843,6 +1862,7 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 \begin{itemize}
 % --- Bewertungsaufgabe
     \item Zu bestimmen ist der kurative Reservierungspreis als Betrag, bei dem der Betreiber gegenüber seiner besten alternativen Vermarktung indifferent ist
+% ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Der Preis entsteht im Code nicht als Unterschied zweier Fahrplaene, sondern als kleinster Preis voller Reservierung. Der ungebundene Fahrplan bleibt als Lauf mit Preis null erhalten.
     \item Er ist eine Opportunitätsgröße, nämlich der entgangene Deckungsbeitrag der besten alternativen Vermarktung, und besteht nur als Unterschied zweier Fahrpläne, weshalb das Modell den ungebundenen Fahrplan mitrechnen muss
     \item Die Pfadabhängigkeit des Ladezustands verlangt eine zeitgekoppelte Formulierung über den ganzen Liefertag, weil eine Bindung in einer Viertelstunde verändert, was in den folgenden möglich ist
     \item Die parallelen Erlösquellen verlangen, dass alle Märkte, die auf dieselbe Leistung und denselben Ladezustand zugreifen, im selben Problem stehen, weil die Kosten der Bindung davon abhängen, was bereits zugesagt ist
@@ -1882,6 +1902,7 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % K1. Formulierung nach Entscheidung 2 und 3. Unter Weg B waere es je
 % Zeitscheibe ein Paar, unter Weg C entfiele der Stichpunkt zugunsten der
 % Suche.
+% ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Ersetzt durch die Bisektion je Stunde und Richtung nach MODELL.md Abschnitt 11. Die Einheit Euro je Megawatt und Stunde bleibt, ihre Herleitung als Differenz geteilt durch Leistung und Dauer entfaellt.
     \item Der kurative Reservierungspreis folgt aus zwei Läufen je Tag, einem mit gesetzter und einem mit gelöschter Bindung, als Differenz der Zielfunktionswerte geteilt durch das Produkt aus gebundener Leistung und Bindungsdauer in Euro je Megawatt und Stunde
 % K2. Solver-Version und Lizenzart aus dem alten Stichpunkt des Blocks
 % sec:lp_gurobi sind beim Ausformulieren nachzutragen.
@@ -2302,6 +2323,7 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % --- Variablen
     \item Entscheidungsvariablen sind die Lade- und die Entladeleistung am \ac{DA} und am \ac{IDC}, die vorgehaltene Leistung der \ac{FCR} und der \ac{aFRR} je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ
 % K1. Unter Weg C waere die Bindung eine Variable mit Preis.
+% ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Im Code ist die kurative Reservierung eine Variable je Viertelstunde und Richtung.
     \item Die kurative Bindung ist keine Variable, sondern eine Vorgabe je Richtung und Zeitscheibe, die im gebundenen Lauf die zugesagte Leistung setzt und im ungebundenen Lauf null ist
 % --- Zielfunktion
     \item Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte abzüglich der Degradationskosten
@@ -2310,6 +2332,7 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
     \item Die \ac{aFRR}-Arbeit trägt ihren Arbeitspreis mal der gelieferten Energie bei, vermindert um den Wert des Ausgleichs am \ac{IDC}, mit dem die Anlage ihren Ladezustand später wiederherstellt
     \item Degradation als linearer Kostensatz auf den physischen Durchsatz, der den Handel und die gelieferte Arbeit belastet und die Vorhaltungen nicht \cite{kumtepeli_energy_2020}
 % K1. Unter Weg C stuende hier der Preis der Vorhaltung mal der Leistung.
+% ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Zu pruefen ist, ob die Zielfunktion im Code einen Erloesterm der Reservierung zum vorgegebenen Preis enthaelt. Nach MODELL.md Abschnitt 11 reagiert der Speicher auf einen vorgegebenen Preis, was einen solchen Term voraussetzt.
     \item Einen Erlösterm für die kurative Vorhaltung enthält die Zielfunktion nicht, sodass die Bindung allein über die Nebenbedingungen auf den Zielfunktionswert wirkt
 % Die Abbildung liegt als modellaufbau.pdf in analysen/10_schrift des
 % Modellrepositorys. Nach MODELL.md nennt sie fuer den kurativen Rueckhalt
@@ -2345,6 +2368,7 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 \begin{itemize}
 % --- Speicher
     \item Ladezustandsbilanz mit Lade- und Entladewirkungsgrad, in der allein der Handel und die gelieferte \ac{aFRR}-Arbeit den Ladezustand bewegen und die Vorhaltungen nicht
+% ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Der Bezug auf gebundenen und ungebundenen Lauf entfaellt. Die gleichen Anfangs- und Endladezustaende bleiben, begruendet mit der Vergleichbarkeit der Tage.
     \item Grenzen des Ladezustands und derselbe Anfangs- und Endladezustand je Tag als Gleichung, damit der gebundene und der ungebundene Lauf mit derselben gespeicherten Energie enden
 % --- Leistung
     \item Leistungsschranke je Seite, auf der sich der Handel, die \ac{aFRR}, die kurative Bindung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung teilen

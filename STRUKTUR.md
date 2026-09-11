@@ -88,6 +88,15 @@ Zielwert um vier Seiten überschreitet.
 13. **Abweichung der Klassen von InnoSys 2030** ist im Text zu begründen.
 14. **Aufwand vor dem Zuschlag**, Stichpunkt 27, ein Halbsatz im Absatz zur
    Präqualifikation.
+15. **K1 entschieden, Reservierungspreis endogen wie im Code.** Fünf Stichpunkte
+   in 3.2 tragen den Vermerk ZU AENDERN NACH K1 und sind gemeinsam neu zu fassen.
+   CLAUDE.md §9 Entscheidung 2 ist überholt, Entscheidung 3 und 4 sind in der
+   Begründung berührt, die Definition in §1 ist abzustimmen.
+16. **Code, Abrufdauer.** In main.py fehlt `"kur_t_res": 1.0` in `MARKET`. Alle
+   bisherigen Ergebnisse beruhen auf einer Viertelstunde.
+17. **Basisfall.** 25 MW Mindestgröße, also MILP, beide Richtungen, Klasse zwei
+   Minuten. Die Stunden wählt das Modell. Das berührt die offenen Punkte zu LP
+   oder MILP und zu den Dualvariablen.
 
 ---
 

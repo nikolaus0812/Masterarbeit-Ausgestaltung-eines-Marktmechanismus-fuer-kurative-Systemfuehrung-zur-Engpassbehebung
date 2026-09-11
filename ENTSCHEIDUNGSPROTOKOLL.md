@@ -498,6 +498,53 @@ Der ausgezogene Text liegt im Arbeitsverzeichnis der Sitzung und nicht im
 Repository.
 
 
+### 11.09.2026, Reservierungspreis endogen, Basisfall und Abrufdauer
+
+Entscheidungen des Verfassers per Auswahl. Sie betreffen CLAUDE.md, chapter_3.tex
+und den Code in bess_dispatch_optimization und stehen deshalb hier.
+
+**Reservierungspreis endogen, wie im Code.** Das loest den Widerspruch K1, den die
+Sitzung zu 3.2 gemeldet hatte. Die kurative Reservierung ist eine Variable je
+Viertelstunde und Richtung, der Preis ist Eingang, und eine Bisektion ausserhalb
+der Optimierung sucht je Stunde und Richtung den kleinsten Preis, bei dem die
+Stunde voll reserviert ist, Fuellgrad ab 99 Prozent, MODELL.md Abschnitt 11.
+Angeboten und verworfen war eine feste Bindung je Stunde mit zwei Laeufen, die
+Entscheidung 2 gehalten haette.
+
+Die Entscheidung aendert **Entscheidung 2** in CLAUDE.md Abschnitt 9, die eine
+exogene Bindung als Flag und 92 Tagespaare vorsah. CLAUDE.md ist nicht geaendert,
+das bleibt dem Verfasser vorbehalten. Mitbetroffen sind die Herleitung in
+Entscheidung 3, deren Einheit Euro je Megawatt und Stunde bleibt, waehrend die
+Rechnung als Differenz geteilt durch Leistung und Dauer entfaellt, und die
+Begruendung von Entscheidung 4, die sich darauf stuetzte, dass das Modell keine
+Verguetung kennt.
+
+**Bedeutung, gemeldet vor der Wahl.** Der Breakeven fuer volle Reservierung ist der
+Preis, bei dem der Speicher auch das letzte Megawatt einer Stunde reserviert, also
+ein Grenzpreis. CLAUDE.md Abschnitt 1 definiert den Reservierungspreis als Betrag,
+bei dem der Betreiber fuer eine gegebene Zusage indifferent ist. Beides faellt nur
+zusammen, wenn die Zusage die volle Leistung umfasst. Dass der Grenzpreis bei
+steigenden Opportunitaetskosten ueber dem Durchschnitt einer kleineren Zusage
+liegt, ist eine eigene Ableitung und vom Verfasser zu pruefen. Die Definition in
+Abschnitt 1 und die Formulierung der Leitfrage sind darauf abzustimmen.
+
+**Basisfall.** Mindestgroesse 25 MW, also der Schalter USE_KUR_BINAER und damit ein
+gemischt-ganzzahliges Problem. Das beruehrt die offenen Punkte 1 und 2 in
+CLAUDE.md, lineares oder gemischt-ganzzahliges Problem und Dualvariablen. Beide
+Richtungen als zwei Faelle. Reaktionszeitklasse zwei Minuten, die im
+Viertelstundenmodell den Preis nicht beruehrt. Welche Stunden reserviert werden,
+bestimmt das Modell selbst.
+
+**Abrufdauer eine Stunde.** Der Text in 3.1.2 bleibt. Der Code rechnet bisher mit
+einer Viertelstunde, weil kur_t_res in MARKET in main.py fehlt und in optimizer.py
+auf dt zurueckfaellt. Die Anpassung ist eine Zeile in MARKET. Alle bisher
+gerechneten Ergebnisse beruhen auf der Viertelstunde.
+
+**In chapter_3.tex** tragen fuenf Stichpunkte von 3.2 den Vermerk ZU AENDERN NACH
+K1, dazu steht ein Kopfvermerk hinter sec:model_scope. Umgeschrieben ist nichts,
+die Stichpunkte sind gemeinsam neu zu fassen.
+
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
