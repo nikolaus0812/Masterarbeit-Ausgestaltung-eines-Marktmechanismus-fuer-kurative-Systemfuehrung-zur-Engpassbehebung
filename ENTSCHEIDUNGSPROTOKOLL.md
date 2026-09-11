@@ -1080,6 +1080,18 @@ und der Maßnahmenraum systematisiert ist, und behauptet keine Höhe.
 - Begriffliche Konstanz nachgezogen. Der Erlösindex bezieht sich jetzt ebenfalls
   auf BESS statt auf Batteriespeicher, nachdem das Akronym eingeführt ist.
 
+### 11.09.2026, Kapitelueberblick nach der Aufloesung von 3.1.3
+
+Zeilen 107 und 108, Fassung C, gewaehlt vom Verfasser. Kapitel 3 leitet die
+Anforderungen ab, ordnet bestehende Marktdesignansaetze daran ein und entwirft
+die kurative Reservierung als Produkt. Danach legt es die Systemgrenzen fest und
+formuliert das Optimierungsproblem. Der Forschungsbedarf faellt aus dem
+Ueberblick heraus, weil der erste Satz von Abschnitt 1.2 das Ziel der Arbeit
+nennt. Nicht wieder aufzunehmen sind die Wendung, das Kapitel gleiche die
+Anforderungen gegen bestehende Marktdesignansaetze ab, und die Bezeichnung
+kuratives Marktprodukt fuer das Produkt.
+
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
@@ -4706,6 +4718,256 @@ Abschnitt 12 hat diese Sitzung nicht in chapter_3.tex geschrieben, bis die ander
 fertig war, und die Aenderung auf den Bereich vor der Ueberschrift von 3.2
 beschraenkt. Das Skript prueft vor dem Schreiben, dass sich die Datei seit dem
 Einlesen nicht veraendert hat.
+
+### 11.09.2026, Sechs Abbildungen in Abschnitt 3.2 eingebunden
+
+Auftrag des Verfassers. Die PDFs stammen aus dem Modellrepository,
+analysen/10_schrift/kapitel_3, und liegen bytegleich unter figures/chapter_3/.
+Eingebunden sind sie ohne Größenangabe, weil sie in Textbreite und in der
+Schrift der Arbeit gesetzt sind. Die Datei hat die zweite Sitzung dafür
+freigegeben. Vor Abschnitt 3.2 ist nichts geändert.
+
+**Zuordnung.** fig:modellkette am Anfang von 3.2, fig:modellaufbau in 3.2.1 am
+Stichpunkt zu den beiden Gruppen der Märkte. Die beiden Iterationen,
+fig:reservierungspreis_bisektion und fig:schleifenebenen stehen in einem neuen
+Unterabschnitt 3.2.5 Bestimmung des kurativen Reservierungspreises mit der Marke
+sec:reservation_price_search. Systemgrenzen und Abgrenzungen rücken damit auf
+3.2.6. Der Unterabschnitt trägt 17 Stichpunkte nach MODELL.md Abschnitt 11 und
+14, ohne Ergebnisse. Den Verweis auf jede Abbildung trägt ein Stichpunkt, weil 3.2
+noch keinen Fließtext hat.
+
+**Bildunterschriften** nach den Vorschlägen des Verfassers, geändert in fünf
+Punkten. Als lineares Programm entfällt, weil der Basisfall mit 25 MW
+Mindestgröße gemischt-ganzzahlig ist. Gepostet ist durch vorgegeben ersetzt,
+Breakeven-Preis umschrieben, das Kurative durch die kurative Reservierung,
+Doppelpunkte und Semikola sind aufgelöst, Einheiten ausgeschrieben.
+
+**Weitere Stichpunkte auf Vorgabe des Verfassers.** In 3.2.1 die obere Schranke
+der Erlösalternative mit hornek_value_2025. Der Kommentar HIER NICHT vom selben
+Tag ist als überholt vermerkt. In 3.2.2 heißt der aFRR-Arbeitspreis jetzt nach
+der offiziellen Definition gebildeter volumengewichteter Mittelwert mit dem
+Sollwert von netztransparenz.de als Ersatz für das Gewicht. Der Stichpunkt zur
+Abbildung des Modellaufbaus in 3.2.3 entfällt und ist als Kommentar erhalten.
+
+**Unstimmigkeiten, an den Verfasser gemeldet, zu korrigieren im
+Modellrepository.** fig:modellkette nennt LP, der Basisfall ist
+gemischt-ganzzahlig. fig:modellaufbau führt aFRR-Energie, Kapazitätspreis,
+Umschlag sowie POS und NEG, die Arbeit aFRR-Arbeit, Leistungspreis, Durchsatz
+sowie positive und negative Richtung. Der Energierückhalt von einer Stunde
+entspricht dem Produkt, der Code rechnet mit einer Viertelstunde.
+fig:reservierungspreis_iteration1 nennt das Ergebnis Breakeven-Preis, die
+Bisektionsabbildung spricht vom geposteten Preis. fig:schleifenebenen nennt das
+Jahr 2025, Sensitivitätstage und Studien, die die Arbeit nicht einführt.
+
+**Eigenständige Ableitung, vom Verfasser zu prüfen.** Die Monotonie des
+Füllgrads ist für den eigenen Preis gesichert, nicht aber für einen
+einheitlichen Preis aller Stunden, weil eine Stunde Leistung und Ladezustand an
+eine Nachbarstunde verlieren kann. Die Bisektion setzt sie voraus.
+
+**Offen.** Welche Größe der ausgewiesene kurative Reservierungspreis ist, der
+Preis der 1. Iteration oder der Vollverdrängungspreis der 2. Iteration. Der
+Auftrag verweist für Hornek auf Abschnitt 2.3.6, den es nicht gibt. Der Umfang
+von Kapitel 3 steigt mit den Abbildungen um rund vier Seiten.
+
+Prüfsuite ohne Befund, Build ohne Fehler mit 78 Seiten.
+
+
+### 11.09.2026, Nachtrag, Abschluss von 3.1.2 aufgeloest und 3.1.3 neu in Stichpunkten
+
+**Drei entschiedene Punkte in 3.1.2.** Der Satz zum Energievorhalt ist
+berichtigt, Fassung A. Er traf nur die positive Richtung, jetzt haelt das Band je
+zugesagtem Megawatt eine Megawattstunde vor, in positiver Richtung als
+gespeicherte Energie und in negativer als freien Speicherraum. Die Begruendung der
+Reaktionszeitklassen gegenueber InnoSys 2030 entfaellt nach Entscheidung des
+Verfassers, die Klassen brauchen keine Ausfuehrung. Verworfen und nicht wieder
+aufzunehmen ist dabei die Begruendung, Massnahmen im Sekundenbereich laegen im
+eigenen Verfuegungsbereich des UENB. Stichpunkt 27 zum Aufwand vor dem Zuschlag
+entfaellt, weil der Satz zur praequalifizierten Anlage den Aufwand bereits nennt.
+
+**Abschluss von 3.1.2 aufgeloest**, entschieden vom Verfasser. 3.1.2 endet mit dem
+Zuschlag. Die Kostenwaelzung entfaellt. Dabei ist ein eigener Fehler berichtigt.
+Der Stichpunkt band sie an Entscheidung 7, die aber die Netzentgelte des Speichers
+betrifft und nicht die Frage, wer die Kosten der Beschaffung traegt. Die Tabelle
+der Produktparameter und der Hinweis nach CLAUDE.md Abschnitt 8, dass jedes
+Ergebnis an den gesetzten Zahlen haengt, stehen jetzt als Stichpunkte in 3.2.3,
+weil der Verfasser die genaue Umsetzung in 3.2 besprechen will. Dort ist der
+Stichpunkt zur Zuordnung der Symbole angepasst, der mit sec:product_parameters
+auf 3.1.2 verwies. Ein Entwurf der Tabelle steht als Kommentar, die Pruefspalte
+ist noch nicht entschieden.
+
+**Definition des Preises**, Klarstellung des Verfassers. Der kurative
+Reservierungspreis ist der Preis, bei dem ein Akteur eine Stunde voll kurativ
+reserviert. Das entspricht dem Breakeven der endogenen Suche in 3.2.5. CLAUDE.md
+Abschnitt 1 spricht noch von der Indifferenz fuer eine gegebene Zusage und ist vom
+Verfasser nachzuziehen.
+
+**3.1.3 neu in Stichpunkten**, vom Verfasser bestaetigt. Der Unterabschnitt
+begruendet, weshalb die Arbeit den Preis bestimmt. Ein grosser Teil des Produkts ist
+Umsetzung in der Systemfuehrung, die Fachleute der Systemfuehrung mit Kenntnis von
+Betriebsplanung und Systembetrieb auszuarbeiten haben, und ob sich das lohnt, zeigt
+erst der Preis. Folge der Stichpunkte, naemlich warum der Preis, die Luecke, die
+Einordnung der Marktdesignansaetze, die Aufgabe der Arbeit und wahlweise eine
+offene Frage als Bruecke nach Kapitel 5. Die acht alten Stichpunkte zur Luecke und
+die vier offenen Fragen stehen als Kommentar.
+
+**Marktdesignansaetze eingeordnet statt diskutiert**, Vorgabe des Verfassers. Erste
+Gruppe, konkurrierende Maerkte und marktliche Anpassungen, naemlich
+Kapazitaetsmarkt mit lokaler Komponente, Redispatchmaerkte, feinere raeumliche
+Preisbildung und zeitlich und regional unterschiedliche Netzentgelte, keiner
+umgesetzt. Zweite Gruppe, Eingriffe ueber Rahmenvorgaben, naemlich flexible
+Netzanschluesse nach Paragraf 17 Abs. 2b EnWG, geltendes Recht. Belege sind das
+Optionenpapier Strommarktdesign der Zukunft des BMWK vom August 2024 und die Studie
+von Consentec fuer die vier UENB. Beide sind im Volltext gelesen. Der Eintrag
+consentec_ausarbeitung_2024 datiert Februar 2024, das PDF im Repository Mai 2024,
+offener Punkt. Ein Halbsatz zu Vorhaltung, Netzbezug und Reaktionszeit loest ein,
+was chapter_2.tex Zeile 345 mit sec:market_design_comparison ankuendigt. Eigene
+Ableitung, vom Verfasser gewaehlt.
+
+**Eigenstaendiges Argument des Verfassers**, zu belegen oder beim Ausformulieren
+einzugrenzen. Eingriffe ueber Rahmenvorgaben begrenzen das marktliche Handeln einer
+Anlage, eine Systemdienstleistung aber nicht, und staerken damit die kurative
+Reservierung. Kapitel 2 traegt nur, dass die kurativen Klauseln flexibler
+Anschluesse allein bei engpassverschaerfendem Verhalten greifen.
+
+**Quellenbefund.** Die regionalen Gebiete fuer den Kurzfristhandel sind nicht
+uebernommen. Der geparkte Satz stuetzte sie auf horsch_role_2017 und
+einsiedler_analysis_2025. Nach Lektuere der Volltexte traegt keine der beiden
+Quellen diese Aussage. Einsiedler ist ein Ueberblick ueber Marktmodelle, Hoersch
+setzt knotenscharfe Preise voraus. Der geparkte Satz traegt einen Vermerk.
+
+
+### 11.09.2026, Nachtrag, 3.1.3 aufgeloest
+
+**Entscheidung des Verfassers.** Anlass war seine Anmerkung zu Satz 4, die
+Luecke koenne in den Untersuchungsrahmen wandern, und er wuerde diesen frueher
+aufmachen. Umgesetzt ist mein Vorschlag, den er bestaetigt hat. 3.1.3 entfaellt
+als Unterabschnitt, und 3.1 endet mit dem Zuschlag. Die Stichpunkte zu Preis,
+Luecke, Aufgabe und offener Frage bilden jetzt die Einleitung von 3.2 und stehen
+vor den beiden Stichpunkten der zweiten Sitzung zu Modell und Abbildung. Die
+Einordnung des Marktdesigns steht hinter dem Anforderungskatalog in 3.1.1.
+Verschoben ist nur, geloescht ist nichts. Die Marken sec:research_gap und
+sec:product_open_questions loesen jetzt auf 3.2 auf, und
+sec:market_design_comparison loest auf 3.1.1 auf, sodass der Verweis aus
+chapter_2.tex Zeile 345 bestehen bleibt.
+
+**Eigenstaendiges Argument, nicht vom Verfasser.** Dass die Einordnung hinter
+den Katalog gehoert, ist mein Argument. Chapter_2.tex kuendigt dort den Abgleich
+mit den Anforderungen an, und weil keiner der Ansaetze Vorhaltung, Netzbezug und
+Reaktionszeit verbindet, fuehrt sie zum Produkt. Die verworfene Alternative war
+3.2.6, bei den Systemgrenzen als nicht abgebildete konkurrierende Maerkte.
+
+**Satz 4, Inhalt des Verfassers.** Weil ein Verguetungsrahmen fehlt, ist der
+Preis aus dem nachgebildeten Betrieb des Speichers zu finden. Drei Fassungen
+sind angeboten, die Wahl steht aus. Die gewaehlten Saetze S1 bis S3 stehen bis
+zum Absatzende als Kommentar in der Einleitung von 3.2.
+
+**Nachzuziehen, vom Verfasser zu waehlen.** Der Einleitungssatz von 3.1 sagt
+noch, der Abschnitt leite den Forschungsbedarf ab. Chapter_1.tex Zeile 107
+nennt Abgleich und Forschungsbedarf vor dem Produktentwurf. An beiden Stellen
+steht ein Kommentar.
+
+**Pruefung.** chapter_3.tex ist ohne Befund. Die vier Befunde der Pruefung 7
+stehen in chapter_1, chapter_2, chapter_4 und chapter_5 und bestanden schon
+vorher. Der Build laeuft mit 79 Seiten und 0 Fehlern.
+
+
+### 11.09.2026, Nachtrag, Einleitung von 3.2, Saetze 1 bis 4
+
+**Geschrieben auf Anweisung des Verfassers**, noch bevor der Absatz mit der
+Aufgabe fertig ist. Alle vier Saetze hat der Verfasser gewaehlt. Satz 1 nennt
+die neuen Ablaeufe fuer den UENB. Satz 2 waegt Nutzen und Kosten ab, mit der
+systemweiten Integration nach Vorgabe des Verfassers. Satz 3 bindet den Preis an
+die entgangene Vermarktung. Satz 4 ist Fassung A und nennt den fehlenden
+Verguetungsrahmen. Die Stichpunkte zu Preis und Luecke stehen als Kommentar.
+
+**Verworfen, nicht wieder aufzunehmen.** Die Aussage, die Umsetzung sei von
+Fachleuten der Systemfuehrung mit Kenntnis von Betriebsplanung und Systembetrieb
+auszuarbeiten. Der Verfasser hat an ihrer Stelle die Abwaegung von Nutzen und
+Kosten gewaehlt.
+
+**Entfallen, nicht verworfen.** Im Stichpunkt zur Luecke standen die drei
+bestehenden Logiken und der Beleg bundesnetzagentur_festlegung_2024. Satz 4
+nennt nur noch den fehlenden Verguetungsrahmen, die Logiken traegt Kapitel 2.
+
+**Angemerkt, vom Verfasser so gewaehlt.** Die Wendung fuer den UENB steht in
+Satz 1 und Satz 2, die Wendung haengt davon ab in Satz 2 und Satz 3.
+
+**Pruefung.** chapter_3.tex ohne Befund, Build mit 79 Seiten und 0 Fehlern.
+
+
+### 11.09.2026, Nachtrag, Einleitung von 3.2 abgeschlossen
+
+**Saetze 5 und 6**, vom Verfasser gewaehlt. Satz 5 ist Fassung B und bestimmt
+den kurativen Reservierungspreis als den kleinsten Preis, bei dem ein BESS eine
+Zeitscheibe voll reserviert. Das folgt der Definition des Verfassers und der
+Suche nach K1. Satz 6 ist Fassung A und nennt den Preis die Kostenseite der
+Abwaegung aus Satz 2. Der Absatz umfasst damit sechs Saetze.
+
+**Eingeschraenkt, nicht wieder aufzunehmen.** Die Aussage, mit dem Preis lasse
+sich beurteilen, ob sich kurative Systemfuehrung mit marktlicher Beschaffung
+lohne, und das sei die Voraussetzung ihrer Umsetzung. Sie stand im Stichpunkt
+und als Fassung B. Nach chapter_1.tex Zeile 100 schaetzt die Arbeit das
+Entlastungspotenzial nicht ab, also liefert der Preis nur die Kostenseite.
+Diese Einschraenkung ist mein eigenstaendiges Argument.
+
+**Angemerkt, vom Verfasser so gewaehlt.** In Satz 6 laesst sich das
+Relativpronomen der zuerst auf Abwaegung lesen. Angeboten war eine Umstellung,
+die den Bezug auf die Kostenseite eindeutig macht. Nach CLAUDE.md Abschnitt 3.2
+ist der Satz woertlich uebernommen, und an der Stelle steht ein Kommentar.
+
+**Bruecke nach Kapitel 5 entfallen**, Fassung C. Die Frage, ab welchem Preis die
+kurative Reservierung auch die Regelleistung verdraengt, bleibt Kapitel 5
+ueberlassen. Verworfen ist auch Fassung B, nach der die Suche die Reihenfolge der
+Verdraengung zeigt. Das war eine eigene Ableitung und ist am Code nicht geprueft.
+
+
+### 11.09.2026, Nachtrag, Einordnung des Marktdesigns in 3.1.1 ausformuliert
+
+**Sieben Saetze**, jeder vom Verfasser gewaehlt, Satz 1 A, Satz 2 A, Satz 3 B,
+Satz 4 A, Satz 5 B, Satz 6 C und Satz 7 A. Satz 7 traegt den Zusatz des
+Verfassers, dass die kurative Reservierung als weiterer Ansatz zur Loesung der
+Engpassprobleme diskutiert werden kann. Er leitet zu 3.1.2 ueber. Vorher hat der
+Verfasser bestaetigt, den Halbsatz zu Vorhaltung, Netzbezug und Reaktionszeit
+aus Stichpunkt 3 zu loesen und als eigenen Schlusspunkt zu setzen.
+
+**Kapazitaetsmechanismus entfernt**, Hinweis des Verfassers, nicht wieder als
+Ansatz gegen Engpaesse aufzunehmen. Er beschafft gesicherte Leistung. Verworfen
+ist auch die Fassung, die ihn als reinen Konkurrenten um die Leistung eines
+Speichers fuehrte, obwohl BMWK 2024 auf Seite 78 Batteriespeicher als Teilnehmer
+nennt. Das Zitat consentec_ausarbeitung_2024 entfaellt in diesem Absatz.
+
+**Stadien belegt**, BMWK 2024 im Volltext, Stand August 2024. Zeitvariable
+Netzentgelte gibt es nach Paragraf 14a EnWG ab 2025 nur in der Niederspannung,
+Seite 88. Das Ministerium haelt Redispatchmaerkte wegen strategischen
+Gebotsverhaltens fuer problematisch, Seite 95, und sieht eine Teilung der
+Gebotszone nicht als Option, Seite 11. Knotenscharfe Preise nennt das Papier
+nicht, sie belegt Kapitel 2 in Zeile 344. Berichtigt ist dabei der Stichpunkt
+keiner davon umgesetzt, der die Niederspannung uebersah. Der Satz sagt jetzt
+oberhalb der Niederspannung. Ob sich der Stand bis 2026 geaendert hat, kann nur
+der Verfasser beurteilen.
+
+**Eigenstaendige Ableitungen, vom Verfasser gewaehlt.** Die Trennung der
+Wirkungswege in Satz 3 und die Begruendung der Staerkung ueber die
+Opportunitaetskosten in Satz 6 stammen von mir. Eigenstaendiges Argument des
+Verfassers ist, dass Eingriffe eine Systemdienstleistung nicht begrenzen. Satz
+6 grenzt es auf den Abruf ein, den die kurativen Klauseln nach chapter_2.tex
+Zeile 311 nicht erfassen. In voller Staerke, wie in Fassung B, bleibt es
+unbelegt.
+
+**Angemerkt, vom Verfasser so gewaehlt.** Satz 1 nennt die erste Gruppe Maerkte.
+Satz 4 wiederholt den Nebensatz von Satz 2. Die Wendung keiner dieser Ansaetze
+steht in Satz 4 und Satz 7.
+
+
+### 11.09.2026, Nachtrag, Einleitungssatz von 3.1
+
+Fassung C mit einer Aenderung des Verfassers, die das Produkt beim Namen nennt.
+Der Satz lautet jetzt, der Abschnitt entwickle aus den Anforderungen mit der
+kurativen Reservierung ein Produkt, das neben die diskutierten Anpassungen des
+Marktdesigns tritt. Der Halbsatz zum Forschungsbedarf ist entfallen, weil die
+Ableitung seit der Aufloesung von 3.1.3 Abschnitt 3.2 eroeffnet. Die Worte ein
+Produkt kurative Reservierung sind zu mit der kurativen Reservierung ein Produkt
+geglaettet, das hat der Verfasser noch zu bestaetigen.
 
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
