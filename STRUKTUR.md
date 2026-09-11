@@ -16,7 +16,7 @@ Gemessen am Build vom 11.09.2026, 0 Fehler.
 |---|---|---|
 | Kapitel 1 | S. 1 bis 5 | 5 Seiten |
 | Kapitel 2 | S. 6 bis 34 | 29 Seiten, Zielwert war 25 |
-| Kapitel 3 | S. 35 bis 43 | 9 Seiten, Zielwert 14 |
+| Kapitel 3 | S. 35 bis 46 | 12 Seiten, Zielwert 14, Stand nach der Einarbeitung von MODELL.md |
 
 Damit die Ergebnisse vor Seite 50 anfangen, darf Kapitel 3 höchstens 14 Seiten
 umfassen. Hochgerechnet landet es bei etwa 15. Der Platz ist in 3.2.1 zu holen,
@@ -32,7 +32,7 @@ Zielwert um vier Seiten überschreitet.
 | | Kapiteleinleitung | 0,3 | F |
 | **3.1** | **Anforderungen und Produkt** | **5,5** | |
 | 3.1.1 | Anforderungskatalog, jeder Eintrag mit Erläuterung | 1,5 | F |
-| 3.1.2 | Das kurative Vorhalteprodukt | 3,5 | T |
+| 3.1.2 | Die kurative Reservierung | 3,5 | T |
 | 3.1.3 | Ableitung des Forschungsbedarfs, mit den offenen Fragen | 1 | S |
 | **3.2** | **Optimierung des Speicherbetriebs** | **7** | |
 | 3.2.1 | Ansatz und Lösungsverfahren | 1 | S, 17 Punkte |

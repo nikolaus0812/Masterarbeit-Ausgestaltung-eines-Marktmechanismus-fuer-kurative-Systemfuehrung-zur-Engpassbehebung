@@ -306,7 +306,10 @@ Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stell
 % Schritte des Abschnitts, naemlich Anforderungen, Produktrahmen und
 % Forschungsbedarf. Alte Fassung, nicht wieder aufnehmen:
 %   Dieser Abschnitt stellt sie zusammen, prüft, ob bestehende Marktdesignansätze sie bereits erfüllen, und leitet daraus den Forschungsbedarf ab.
-Dieser Abschnitt stellt die Anforderungen zusammen, entwickelt daraus den Rahmen eines kurativen Marktprodukts und leitet aus diesem Rahmen den Forschungsbedarf ab.
+% BEGRIFF ERSETZT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Dieser Abschnitt stellt die Anforderungen zusammen, entwickelt daraus den Rahmen eines kurativen Marktprodukts und leitet aus diesem Rahmen den Forschungsbedarf ab.
+Dieser Abschnitt stellt die Anforderungen zusammen, entwickelt daraus den Rahmen einer kurativen Reservierung und leitet aus diesem Rahmen den Forschungsbedarf ab.
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026. Der Unterabschnitt steht jetzt vor
@@ -710,7 +713,10 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %   betrifft. Das ist der Vorbehalt zu A8, den CLAUDE.md Abschnitt 8 fordert.
 %   Ort vorgeschlagen 3.1.5.
 \begin{description}
-    \item[A1 -- Reaktionszeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit vom betroffenen Betriebsmittel vorgegeben wird und keine Wahlgröße des Akteurs ist.
+% KATALOGSATZ ANGEPASST am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers. Reaktionszeit statt Aktivierungsgeschwindigkeit, nach Auswahl des Verfassers. Damit Reaktionszeit nicht zweimal steht, heisst es jetzt diese.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item[A1 -- Reaktionszeit] Das Produkt muss nach der Aktivierungsgeschwindigkeit differenziert sein, weil die zulässige Reaktionszeit vom betroffenen Betriebsmittel vorgegeben wird und keine Wahlgröße des Akteurs ist.
+    \item[A1 -- Reaktionszeit] Die kurative Reservierung muss nach der Reaktionszeit differenziert sein, weil diese vom betroffenen Betriebsmittel vorgegeben wird und keine Wahlgröße des Akteurs ist.
     Der \ac{ÜNB} legt die zulässige Vorauslastung fest, bevor der Fehlerfall eintritt, und muss die Reaktionszeit der zugesagten Maßnahme dafür bereits kennen.
     Hält eine Anlage die zugesagte Zeit nicht ein, so entwertet das nicht allein ihr Gebot, sondern die Vorauslastung, die der \ac{ÜNB} im Vertrauen darauf gefahren hat.
 % SATZ GESTRICHEN, D2 am 11.09.2026, freigegeben vom Verfasser. Er traf eine Produktentscheidung im Katalog, die 3.1.2 genauer traegt, und las sich gegen die Schachtelung der Klassen.
@@ -725,10 +731,18 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %   Ohne eine Sanktion bei Nichterfüllung bleibt die Zusage eine Absichtserklärung, die als Bedingung der Einsatzplanung nicht taugt.
     Ohne sie bleibt die Zusage eine Absichtserklärung, die als Bedingung der Einsatzplanung nicht taugt.
     Die Pönale kann dabei nicht nach dem Grad der Abweichung bemessen werden, denn die Erfüllung ist binär und eine Leistungsänderung nach dem Ende des Überlastintervalls hat keinen verminderten Wert, sondern keinen.
-    \item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, weil die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein.
-    Die Beschaffung setzt am Netzknoten an und nicht an der Regelzone, denn ein Gebot ist an den Standort der Anlage gebunden.
+% KATALOGSATZ GEKUERZT am 11.09.2026, entschieden vom Verfasser. Kuerzung auf die Forderung nach Auswahl des Verfassers, die Begruendung traegt der Erlaeuterungssatz. Mit dem Begruendungsteil entfaellt auch Wirksamkeit, es gilt Wirkung.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, weil die Wirksamkeit einer Maßnahme von der Sensitivität des Standorts gegenüber dem betroffenen Betriebsmittel abhängt und nicht von der bereitgestellten Leistung allein.
+    \item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen.
+% SATZ GESTRICHEN am 11.09.2026, entschieden vom Verfasser. Entdopplung nach Auswahl des Verfassers, er wiederholte die gekuerzte Forderung.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Die Beschaffung setzt am Netzknoten an und nicht an der Regelzone, denn ein Gebot ist an den Standort der Anlage gebunden.
     Dieselbe Leistungsänderung entlastet ein Betriebsmittel je nach Netzknoten unterschiedlich stark, und die \ac{PTDF}- und \ac{LODF}-Sensitivitäten bilden diesen Zusammenhang linearisiert ab.
-    \item[A4 -- Bemessungsgegenstand] Die Vergütung muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, weil die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen.
+% KATALOGSATZ GEKUERZT am 11.09.2026, entschieden vom Verfasser. Kuerzung auf die Forderung nach Auswahl des Verfassers, die Begruendung traegt der Erlaeuterungssatz.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item[A4 -- Bemessungsgegenstand] Die Vergütung muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, weil die Opportunitätskosten in jedem Intervall der Bindung und nicht erst im Abruf entstehen.
+    \item[A4 -- Bemessungsgegenstand] Die Vergütung muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen.
     Die Bindung schränkt den Betrieb über ihre gesamte Dauer ein und nicht allein im Fehlerfall, sodass die Kosten auch dann anfallen, wenn der Abruf ausbleibt.
     Gegenstand der Vergütung ist damit die reservierte Leistung und keine Energielieferung, worin sich die kurative Vorhaltung vom Redispatch unterscheidet, der stets zugleich Arbeit auslöst.
     Neben der vorgehaltenen Leistung tritt die Bindungsdauer als eigene Bemessungsdimension hinzu, weil sie bestimmt, über wie viele Intervalle der Betrieb eingeschränkt bleibt.
@@ -739,7 +753,10 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 % genau dieser Aussage. Der Katalog traegt damit keinen Beleg mehr, seine
 % Grundlage steht vollstaendig in Kapitel 2.
     \item[A5 -- Diskriminierungsfreiheit] Der Mechanismus muss an den geforderten Eigenschaften ansetzen und nicht an der Technologie, damit der Zugang diskriminierungsfrei bleibt.
-    Die Präqualifikation muss die technischen und physikalischen Eigenschaften gewährleisten, die die Maßnahme voraussetzt, und nicht an der Art der Anlage ansetzen.
+% SATZ GEKUERZT am 11.09.2026, entschieden vom Verfasser. Entdopplung nach Auswahl des Verfassers. Der Katalogsatz zu A5 bleibt ganz, weil sein Begruendungsteil die Diskriminierungsfreiheit traegt. Die Fassung vom 09.09.2026 stammte vom Verfasser.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Die Präqualifikation muss die technischen und physikalischen Eigenschaften gewährleisten, die die Maßnahme voraussetzt, und nicht an der Art der Anlage ansetzen.
+    In der Präqualifikation heißt das, technische und physikalische Eigenschaften zu prüfen und nicht die Art der Anlage.
     Je mehr Technologien die geforderten Eigenschaften erfüllen, desto eher steht an einem betroffenen Knoten überhaupt ein Anbieter zur Verfügung.
 % EINTRAG A6 NEU GEFASST am 09.09.2026, Fassung C, gewaehlt vom Verfasser.
 % Der Eintrag richtet sich jetzt darauf aus, dass erst die marktliche
@@ -762,7 +779,10 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %   Über den Zuschlag entscheidet der \ac{ÜNB}, und der Akteur trägt den Aufwand der Teilnahme, bevor feststeht, ob er daraus einen Erlös erzielt.
     \item[A6 -- Teilnahme] Der Mechanismus muss die Teilnahme für den Betreiber lohnend ausgestalten, weil dieser über sein Gebot allein entscheidet und die Maßnahme ohne Gebot nicht verfügbar ist.
     Die marktliche Beschaffung ist damit nicht allein eine Frage der Zugangsform, sondern die Bedingung dafür, dass sich eine kurative Systemführung umsetzen lässt.
-    \item[A7 -- Verträglichkeit] Der Mechanismus muss neben den bestehenden Verpflichtungen bestehen können, weil er denselben Zustand der Anlage bindet, den die übrigen Vermarktungswege und Systemdienstleistungen beanspruchen.
+% KATALOGSATZ GEKUERZT am 11.09.2026, entschieden vom Verfasser. Kuerzung auf die Forderung nach Auswahl des Verfassers, die Begruendung traegt der Erlaeuterungssatz.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \item[A7 -- Verträglichkeit] Der Mechanismus muss neben den bestehenden Verpflichtungen bestehen können, weil er denselben Zustand der Anlage bindet, den die übrigen Vermarktungswege und Systemdienstleistungen beanspruchen.
+    \item[A7 -- Verträglichkeit] Der Mechanismus muss neben den bestehenden Verpflichtungen bestehen können.
     Die kurative Bindung greift auf denselben Betriebszustand zu, den die Anlage für die Regelleistung und für die Vermarktung an den Spotmärkten bereithält.
 % SATZ ERSETZT am 09.09.2026, Fassung A, gewaehlt vom Verfasser. Der alte
 % Satz machte aus der Vertraeglichkeit eine Mengenfrage. Der Verfasser will
@@ -875,7 +895,10 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Gegenstand der Verpflichtung}
-\subsection{Das kurative Vorhalteprodukt}
+% UEBERSCHRIFT GEAENDERT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers. Die Marken bleiben.
+% Alte Fassung, nicht wieder aufnehmen:
+%   \subsection{Das kurative Vorhalteprodukt}
+\subsection{Die kurative Reservierung}
 \label{sec:product_scope}
 \label{sec:product_parameters}
 % [Ziel: 2 Seiten]
@@ -1100,8 +1123,14 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %   \item Der Entwurf bestimmt, was der Akteur zusagt, was bei einem Abruf geschieht und auf welchem Weg der \ac{ÜNB} die Zusage erwirbt
 %   \item Die Antworten sind ein Rahmen und keine fertige Ausgestaltung, weshalb jede Setzung eine Bandbreite und ein Kriterium trägt, an dem sich die Wahl innerhalb dieser Bandbreite entscheidet
 
-Ein kuratives Vorhalteprodukt verbindet den Akteur, der eine Leistungsänderung zusagt, mit dem \ac{ÜNB}, der sie in seine Einsatzplanung aufnimmt und im Fehlerfall abruft.
-Der Entwurf führt das Produkt so weit aus, dass sich prüfen lässt, ob eine kurative Systemführung mit marktlicher Beschaffung umsetzbar ist.
+% BEGRIFF ERSETZT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Ein kuratives Vorhalteprodukt verbindet den Akteur, der eine Leistungsänderung zusagt, mit dem \ac{ÜNB}, der sie in seine Einsatzplanung aufnimmt und im Fehlerfall abruft.
+Eine kurative Reservierung verbindet den Akteur, der eine Leistungsänderung zusagt, mit dem \ac{ÜNB}, der sie in seine Einsatzplanung aufnimmt und im Fehlerfall abruft.
+% BEGRIFF ERSETZT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Der Entwurf führt das Produkt so weit aus, dass sich prüfen lässt, ob eine kurative Systemführung mit marktlicher Beschaffung umsetzbar ist.
+Der Entwurf führt die kurative Reservierung so weit aus, dass sich prüfen lässt, ob eine kurative Systemführung mit marktlicher Beschaffung umsetzbar ist.
 
 % --- 1 Die Zusage -------------------------------------------------------
 % GRUPPE A nach CLAUDE.md Abschnitt 8, also Entscheidung und keine
@@ -1213,7 +1242,10 @@ Der Akteur stellt seinen Fahrplan weiterhin selbst auf.
 % Alte Fassung, nicht wieder aufnehmen:
 %   Ein Gebot nennt neben den beiden Bändern die Reaktionszeitklasse, für die der Akteur einsteht.
 Ein Gebot nennt die Reaktionszeitklasse, für die der Akteur einsteht.
-Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei, weshalb das Produkt drei Klassen mit zwei, fünf und zehn Minuten führt.
+% BEGRIFF ERSETZT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei, weshalb das Produkt drei Klassen mit zwei, fünf und zehn Minuten führt.
+Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei, weshalb die kurative Reservierung drei Klassen mit zwei, fünf und zehn Minuten führt.
 Wer die kürzeste Klasse erfüllt, erfüllt damit auch die längeren, sodass ein schneller Akteur in jeder Klasse anbieten kann.
 Die Klassen ersparen dem \ac{ÜNB} die Rechnung mit der Reaktionszeit jeder einzelnen Anlage, und drei Stufen halten den Zugang zugleich für viele Technologien offen.
 % SATZ UMGESTELLT, D5 am 11.09.2026, freigegeben vom Verfasser. A4 sagt bereits, die Bindungsdauer trete hinzu.
@@ -1482,7 +1514,10 @@ Anlagen, die nicht an der Regelleistung teilnehmen, weisen alle drei Eigenschaft
 %   \item Aggregation mehrerer Anlagen zu einem Gebot, die in der Regelleistung üblich ist und den Wettbewerb nach A5 stärkt, der knotenscharfen Beschaffung nach A3 aber entgegensteht
 %   \item Lokationalität der Beschaffung nach Anforderung A3, wobei die Paarbildung nicht beliebig ist, denn eine Senke an einem anderen Netzknoten entlastet zwar den ersten Engpass, kann aber zugleich einen zweiten verschärfen \cite{blank_determination_2024}
 
-Die deutschen \ac{ÜNB} schreiben das Vorhalteprodukt gemeinsam aus, wie sie es bei der \ac{aFRR} bereits tun, und ein Akteur durchläuft damit nur ein Verfahren.
+% BEGRIFF ERSETZT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Die deutschen \ac{ÜNB} schreiben das Vorhalteprodukt gemeinsam aus, wie sie es bei der \ac{aFRR} bereits tun, und ein Akteur durchläuft damit nur ein Verfahren.
+Die deutschen \ac{ÜNB} schreiben die kurative Reservierung gemeinsam aus, wie sie es bei der \ac{aFRR} bereits tun, und ein Akteur durchläuft damit nur ein Verfahren.
 Den Bedarf ermitteln sie in den Rechenläufen ihrer Redispatchplanung am Vortag, sodass er vor dem Zuschlag feststeht.
 % SATZ GEKUERZT, D8 am 11.09.2026, freigegeben vom Verfasser. Die Megawattstunde je Megawatt stand zweimal.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -1490,7 +1525,10 @@ Den Bedarf ermitteln sie in den Rechenläufen ihrer Redispatchplanung am Vortag,
 Ausgeschrieben wird je Zeitscheibe von einer Stunde, die damit der Dauer des ungünstigsten Abrufs entspricht.
 Die Ausschreibung findet täglich statt, und zwar gleichzeitig für alle 24 Zeitscheiben des Folgetages, für die ein Akteur jeweils ein eigenes Gebot abgeben kann.
 Das Gebot nennt für jede Zeitscheibe einen Preis in Euro je Megawatt und Stunde, getrennt für die positive und die negative Richtung.
-Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, und anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt das Vorhalteprodukt die Zusammenfassung nur je Netzknoten.
+% BEGRIFF ERSETZT am 11.09.2026, entschieden vom Verfasser. Kurative Reservierung ist der Name des Produkts, nach Auswahl des Verfassers.
+% Alte Fassung, nicht wieder aufnehmen:
+%   Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, und anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt das Vorhalteprodukt die Zusammenfassung nur je Netzknoten.
+Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, und anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt die kurative Reservierung die Zusammenfassung nur je Netzknoten.
 Maßgeblich ist dabei allein die Wirkung am angegebenen Knoten, und bei Anlagen, die an vielen Knoten der Mittelspannung angeschlossen sind, zählt etwa nur die Wirkung am übergeordneten Knoten im 110-kV-Netz.
 Neben dem Preis nennt das Gebot eine Höchstleistung, von der die \ac{ÜNB} auch einen Teil bezuschlagen können, solange dieser die Mindestgröße nicht unterschreitet.
 
@@ -1680,6 +1718,86 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % damit mit dem ersten Unterabschnitt. Eine Alternative waere Modellierung des
 % Speicherbetriebs, die Ueberschrift des frueheren Abschnitts 3.3.
 
+% ===============================================================
+% MODELLBESCHREIBUNG EINGEARBEITET am 11.09.2026, Auftrag des Verfassers.
+% Quelle ist MODELL.md im Repository bess_dispatch_optimization, Stand
+% 11.09.2026, die den Code beschreibt, wie er steht. Die Stichpunkte von 3.2
+% und 3.3 sind neu sortiert, ein Stichpunkt entspricht ungefaehr einem Satz.
+% Kein alter Stichpunkt ist geloescht, jeder steht als Kommentar unter der
+% neuen Folge seines Unterabschnitts.
+%
+% NICHT AUFGENOMMEN, weil es Ergebnisse vorwegnaehme. Die Erloese der Laeufe
+% 2025, der Iterationsvergleich, die Ueberschaetzung durch Stundenpreise und
+% das Verhaeltnis von Modell und Erloesindex. Sie gehoeren nach Kapitel 4 und
+% 5. Ebenso nicht aufgenommen sind Rechenzeiten, Schalter und Dateinamen des
+% Codes, die Sensitivitaeten aus MODELL.md Abschnitt 13, der Flat-Handel, die
+% gesperrten Lieferpfade der aFRR-Arbeit und die Prognosemethoden, weil der
+% Basisfall sie nicht verwendet.
+%
+% WIDERSPRUECHE ZWISCHEN CODE UND SCHRIFT, gemeldet und nicht entschieden.
+% K1  BESTIMMUNG DES RESERVIERUNGSPREISES. Entscheidung 2 in CLAUDE.md setzt
+%     die Bindung exogen und nimmt die Differenz der Zielfunktionswerte zweier
+%     Laeufe je Tag, fuer das vierte Quartal 92 Tagespaare. Der Code sucht den
+%     Preis dagegen endogen, mit der Vorhaltung als Variable und einem Preis
+%     in der Zielfunktion, ueber eine Bisektion je Stunde und Richtung und
+%     eine zweite Iteration bis zur Vollverdraengung. Das Vorhalteprodukt in
+%     3.1.2 verlangt zudem einen Preis je Zeitscheibe von einer Stunde, ein
+%     Tagespaar liefert aber einen Mittelwert ueber alle gebundenen Stunden.
+%     Drei Wege, vom Verfasser zu waehlen.
+%       A  Tagespaar nach Entscheidung 2, Preis als Mittel ueber den Tag.
+%       B  Paar je Zeitscheibe, die Bindung nur in Stunde h gesetzt, also je
+%          Tag ein freier und bis zu 48 gebundene Laeufe. Das haelt
+%          Entscheidung 2 und liefert einen Preis je Zeitscheibe und
+%          Richtung. Eigene Ableitung, im Code nicht umgesetzt.
+%       C  Suche des Codes. Kehrt Entscheidung 2 um.
+%     Die Stichpunkte folgen Entscheidung 2, weil sie nicht umzukehren ist.
+%     Jeder Stichpunkt, der daran haengt, traegt den Vermerk K1.
+% K2  LINEARES PROGRAMM. Der Code ist im Basisfall ein lineares Programm ohne
+%     Binaervariable, auch nicht fuer gleichzeitiges Laden und Entladen. Damit
+%     beantwortet er den offenen Punkt 1 aus CLAUDE.md Abschnitt 9. Zu pruefen
+%     bleibt, ob gleichzeitiges Laden und Entladen bei stark negativen Preisen
+%     lohnt. Eigene Rechnung, vom Verfasser zu pruefen. Mit einem Wirkungsgrad
+%     von 0,95 je Richtung und 8 Euro je Megawattstunde Degradation lohnt es
+%     im Day-Ahead erst unter etwa minus 156 Euro je Megawattstunde, naemlich
+%     8 mal 1,9025 geteilt durch 0,0975. Folge fuer den offenen Punkt 2, im
+%     linearen Programm stehen Schattenpreise zur Verfuegung. Folge fuer den
+%     offenen Punkt 3, im gemeinsamen Lauf sind Regelleistung und Handel
+%     Variablen, sodass der gebundene Lauf zulaessig bleibt, solange keine
+%     Menge eines frueheren Marktes festgehalten wird.
+% K3  ABRUFDAUER. 3.1.2 setzt einen Energievorhalt von einer Megawattstunde je
+%     Megawatt. Der Code rechnet mit einer Viertelstunde, weil kur_t_res in
+%     MARKET fehlt. Ohne kur_t_res gleich 1,0 passt kein Ergebnis zum Produkt.
+%     Mit einer Stunde und voller Bindung in beiden Richtungen bleibt ein Band
+%     von 117,8 bis 142,5 Megawattstunden, das den Start bei 125
+%     Megawattstunden enthaelt. Eigene Rechnung, 12,5 plus 100 geteilt durch
+%     0,95 und 237,5 minus 100 mal 0,95.
+% K4  ZEITRAUM UND BEISPIELTAG. Der Code rechnet das Jahr 2025, die Schrift
+%     nach Entscheidung 10 das vierte Quartal. Die Beispieltage des Codes sind
+%     der 11.02., 15.05. und 26.08.2025, der Stichpunkt in 3.2.2 verlangt einen
+%     Werktag im November 2025. Im Code nachzuziehen oder hier zu aendern.
+% K5  MINDESTGROESSE. 3.1.2 setzt 25 MW, der Code fuehrt sie nur unter dem
+%     gemischt-ganzzahligen Schalter. Wirksam wird sie nur bei Teilbindung,
+%     unter den Wegen A und B nach K1 also nicht.
+% K6  DATENQUELLEN. Der Code liest die Day-Ahead- und Intradaypreise von
+%     energy-charts.de, der Stichpunkt zitiert SMARD, das keinen ID1 fuehrt.
+%     Fuer energy-charts, ENTSO-E und netztransparenz.de fehlen Eintraege in
+%     literature.bib, ebenso fuer die ISEA Battery Charts.
+% K7  STAFFELUNG DER MAERKTE. Die Vormerkung aus 3.1.2 verlangt, dass die
+%     Mengen von Day-Ahead, IDA-1 und IDA-2 vor der Bindung feststehen. Der
+%     Code bildet die Staffelung nur ueber die Energieneutralitaet des
+%     Day-Ahead nach und haelt keine Menge zwischen beiden Laeufen fest. Die
+%     Intraday-Auktionen fuehrt er nicht als eigene Maerkte. Offen.
+% K8  FORMELZEICHEN. Der Code fuehrt g fuer die Durchleitung, x fuer den
+%     entkoppelten Lieferpfad, D fuer die Degradation und V fuer das
+%     Flat-Volumen. Nach CLAUDE.md Abschnitt 10 sind g, X, d und V belegt. Der
+%     Verfasser entscheidet die Symbolliste in 3.2.3.
+% ===============================================================
+
+% --- Einleitung des Abschnitts, angelegt am 11.09.2026 ------------------
+\begin{itemize}
+    \item Das Modell bildet den Betrieb eines \ac{BESS} über einen Liefertag ab, das an mehreren Märkten zugleich vermarktet, und bestimmt daraus, was eine kurative Bindung den Betreiber kostet
+\end{itemize}
+
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
 % Aus 3.4.1 wird 3.2.1. Die Systemgrenzen wandern in den letzten Unterabschnitt.
@@ -1708,11 +1826,45 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % den Kapiteln 1 und 2 nicht mehr zitiert und sind fuer dieses Kapitel
 % reserviert.
 
+% NEU GEORDNET am 11.09.2026 nach MODELL.md. Vier Bloecke, naemlich die
+% Bewertungsaufgabe, die Wahl der Maerkte, der Rechenansatz und der
+% Szenariorahmen. Die Bewertungsaufgabe steht vorn, weil sie nach CLAUDE.md
+% Abschnitt 7 die Modellwahl begruendet. Die Systemgrenzen stehen seit dem
+% Vermerk vom 08.09.2026 in 3.2.5, das Loesungsverfahren ist als ein
+% Stichpunkt aus dem frueheren Block sec:lp_gurobi uebernommen.
+% UMFANG. 15 Stichpunkte bei einem Seitenziel von einer Seite. Tragbar nur,
+% wenn die Bewertungsaufgabe knapp bleibt. Kandidat zum Verschieben ist der
+% Szenariorahmen samt Kannibalisierung, Alternative nach dem Kommentar oben
+% Abschnitt 5.3.
+% ZITAT. rystad_energy_renewables__power_analytics_energy_2026 steht im Block
+% der Maerkte und im Szenariorahmen. Nach Stilregel 8 nur tragbar, wenn beide
+% in verschiedenen Absaetzen landen.
+
 \begin{itemize}
-    \item Auswahl der geführten Vermarktungswege und ihre Begründung
+% --- Bewertungsaufgabe
+    \item Zu bestimmen ist der kurative Reservierungspreis als Betrag, bei dem der Betreiber gegenüber seiner besten alternativen Vermarktung indifferent ist
+    \item Er ist eine Opportunitätsgröße, nämlich der entgangene Deckungsbeitrag der besten alternativen Vermarktung, und besteht nur als Unterschied zweier Fahrpläne, weshalb das Modell den ungebundenen Fahrplan mitrechnen muss
+    \item Die Pfadabhängigkeit des Ladezustands verlangt eine zeitgekoppelte Formulierung über den ganzen Liefertag, weil eine Bindung in einer Viertelstunde verändert, was in den folgenden möglich ist
+    \item Die parallelen Erlösquellen verlangen, dass alle Märkte, die auf dieselbe Leistung und denselben Ladezustand zugreifen, im selben Problem stehen, weil die Kosten der Bindung davon abhängen, was bereits zugesagt ist
+% --- Maerkte
+% OFFEN, K7. Eine Begruendung fuer den Verzicht auf IDA-1 bis IDA-3 und auf
+% die mFRR fehlt. Die IDA-1 ist ausserdem die Preisreihe der Strikepreise des
+% Weber-Ansatzes, was ein Pruefer ansprechen koennte.
+% BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
+% des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
+%   \item Geführt werden neben dem Vorhalteprodukt der \ac{DA}, der \ac{IDC}, die \ac{FCR}, die \ac{aFRR}-Leistung und die \ac{aFRR}-Arbeit, also die Märkte des Vergleichsmaßstabs der Validierung ergänzt um den \ac{DA}
+    \item Geführt werden neben der kurativen Reservierung der \ac{DA}, der \ac{IDC}, die \ac{FCR}, die \ac{aFRR}-Leistung und die \ac{aFRR}-Arbeit, also die Märkte des Vergleichsmaßstabs der Validierung ergänzt um den \ac{DA}
     \item Mengenmäßige Begrenzung der Regelleistungsmärkte, deren Bedarf der Systemgröße folgt und nicht mit der Speicherflotte wächst, sodass ein Zubau im Gigawattmaßstab die zusätzliche Leistung überwiegend in die Arbitrage drängt \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
-    \item Kannibalisierung der Preisspreads, aus denen die Arbitrageerlöse stammen, weil Speicher Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}
-    \item Einzelanlagenbetrachtung statt Systemebene, Begründung und Konsequenzen
+% BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
+% des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
+%   \item Die geführten Märkte zerfallen in zwei Gruppen, nämlich solche, die den Ladezustand bewegen, also \ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit, und solche, die Leistung und ein Ladezustandsband binden, ohne ihn zu bewegen, also \ac{FCR}, \ac{aFRR}-Leistung und das Vorhalteprodukt
+    \item Die geführten Märkte zerfallen in zwei Gruppen, nämlich solche, die den Ladezustand bewegen, also \ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit, und solche, die Leistung und ein Ladezustandsband binden, ohne ihn zu bewegen, also \ac{FCR}, \ac{aFRR}-Leistung und die kurative Reservierung
+    \item Aus dieser Aufteilung entstehen die Opportunitätskosten der kurativen Bindung im Modell selbst, weil die Bindung der Anlage Leistung und Ladezustandsband entzieht, die sonst am Markt eingesetzt würden, sodass kein gesonderter Kostenansatz für die Vorhaltung nötig ist
+% --- Rechenansatz
+% HIER NICHT, die Einordnung des unrestringierten Erloeses als obere Schranke.
+% Sie folgt aus der vollstaendigen Preiskenntnis, gehoert aber nach Kapitel 4
+% Abschnitt 4.5 und nach 5.4, siehe den Kommentar in chapter_4.tex.
+    \item Deterministische Optimierung mit vollständiger Preiskenntnis, Abgrenzung gegenüber stochastischen Ansätzen, gestützt darauf, dass eine prognosegestützte Handelsstrategie im deutschen kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses erreicht \cite{hornek_value_2025}
 % VORMERKUNG vom 11.09.2026 aus 3.1.2, offener Punkt fuer die Modellwahl. Die
 % Ausschreibung des Vorhalteprodukts schliesst am Vortag gegen 23 Uhr, die
 % Zuschlaege stehen vor 23.30 Uhr fest. Day-Ahead, IDA-1 und IDA-2 sind dann
@@ -1722,12 +1874,38 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % Entscheidung 2 bleibt unberuehrt, es aendert sich, was beide Laeufe
 % gemeinsam haben. Beruehrt ist auch der offene Punkt zu unzulaessigen
 % Laeufen, wenn der verkaufte Fahrplan das Band bereits belegt.
-    \item Deterministische Optimierung mit vollständiger Preiskenntnis, Abgrenzung gegenüber stochastischen Ansätzen, gestützt darauf, dass eine prognosegestützte Handelsstrategie im deutschen kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses erreicht \cite{hornek_value_2025}
+% STAND 11.09.2026 nach MODELL.md, siehe K7. Der Code bildet die Staffelung
+% allein ueber die Energieneutralitaet des Day-Ahead nach, Stichpunkt in 3.2.4.
+    \item Alle Handelsentscheidungen eines Tages fallen im Modell gemeinsam, obwohl der Akteur sie in der Realität nacheinander trifft, von der \ac{FCR} am Vortag bis zur \ac{aFRR}-Arbeit in der Lieferviertelstunde
     \item Zeitliche Auflösung von 96 Viertelstunden je Tag, konsistent zur Marktzeiteinheit seit dem 01.10.2025 \cite{ffe_saegezahn_2026}
+    \item Jeder Liefertag bildet ein eigenes Problem mit demselben Anfangs- und Endladezustand, sodass kein Ladezustand in den Folgetag übergeht und die Tage untereinander vergleichbar bleiben
+% K1. Formulierung nach Entscheidung 2 und 3. Unter Weg B waere es je
+% Zeitscheibe ein Paar, unter Weg C entfiele der Stichpunkt zugunsten der
+% Suche.
+    \item Der kurative Reservierungspreis folgt aus zwei Läufen je Tag, einem mit gesetzter und einem mit gelöschter Bindung, als Differenz der Zielfunktionswerte geteilt durch das Produkt aus gebundener Leistung und Bindungsdauer in Euro je Megawatt und Stunde
+% K2. Solver-Version und Lizenzart aus dem alten Stichpunkt des Blocks
+% sec:lp_gurobi sind beim Ausformulieren nachzutragen.
+    \item Das Problem ist ein lineares Programm mit stetigen Variablen, das der Solver Gurobi löst \cite{domschke_operations_2015, gurobi_reference_2026}
+% --- Szenariorahmen
     \item Szenariorahmen 2030 als qualitative Einordnung des Untersuchungsrahmens und nicht als Eingangsgröße \cite{bundesnetzagentur_netzentwicklungsplan_2026}
-    \item Nicht abgebildet sind Netzrestriktionen und Poolbildung
-    \item Nicht abgebildet ist ferner die Gegenseite der Maßnahme, obwohl der bilanzielle Ausgleich nach Abschnitt \ref{sec:curative_functionality} mindestens zwei koordinierte Akteure erfordert
+    \item Kannibalisierung der Preisspreads, aus denen die Arbitrageerlöse stammen, weil Speicher Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten. Die Einzelanlagenbetrachtung, die nicht abgebildeten Groessen und
+% die Gegenseite stehen jetzt in 3.2.5.
+%   \begin{itemize}
+%       \item Auswahl der geführten Vermarktungswege und ihre Begründung
+%       \item Mengenmäßige Begrenzung der Regelleistungsmärkte, deren Bedarf der Systemgröße folgt und nicht mit der Speicherflotte wächst, sodass ein Zubau im Gigawattmaßstab die zusätzliche Leistung überwiegend in die Arbitrage drängt \cite{garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
+%       \item Kannibalisierung der Preisspreads, aus denen die Arbitrageerlöse stammen, weil Speicher Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}
+%       \item Einzelanlagenbetrachtung statt Systemebene, Begründung und Konsequenzen
+%   % Vormerkung vom 11.09.2026 hier entfernt, sie steht woertlich am Stichpunkt zur deterministischen Optimierung der neuen Folge
+%       \item Deterministische Optimierung mit vollständiger Preiskenntnis, Abgrenzung gegenüber stochastischen Ansätzen, gestützt darauf, dass eine prognosegestützte Handelsstrategie im deutschen kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses erreicht \cite{hornek_value_2025}
+%       \item Zeitliche Auflösung von 96 Viertelstunden je Tag, konsistent zur Marktzeiteinheit seit dem 01.10.2025 \cite{ffe_saegezahn_2026}
+%       \item Szenariorahmen 2030 als qualitative Einordnung des Untersuchungsrahmens und nicht als Eingangsgröße \cite{bundesnetzagentur_netzentwicklungsplan_2026}
+%       \item Nicht abgebildet sind Netzrestriktionen und Poolbildung
+%       \item Nicht abgebildet ist ferner die Gegenseite der Maßnahme, obwohl der bilanzielle Ausgleich nach Abschnitt \ref{sec:curative_functionality} mindestens zwei koordinierte Akteure erfordert
+%   \end{itemize}
 
 % GESTRICHEN am 06.09.2026, Befund I2. Die Abrufwahrscheinlichkeit stand in
 % der Liste der nicht abgebildeten Groessen, waehrend Abschnitt 4.4 sie als
@@ -1896,12 +2074,15 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % das, was das Modell leisten muss. Die Wiederholung ist damit keine
 % Doppelung, sondern eine Aufloesung.
 
-\begin{itemize}
-    \item Bestimmung des kurativen Reservierungspreises als Betrag, bei dem der Betreiber gegenüber seiner besten alternativen Vermarktung indifferent ist
-    \item Erster Bestandteil, nämlich der entgangene Deckungsbeitrag der besten alternativen Vermarktung als Opportunitätsgröße, woraus folgt, dass das Modell den unrestringierten Fahrplan mitrechnen muss
-    \item Zweiter Bestandteil, nämlich die Pfadabhängigkeit des Ladezustands, woraus die zeitgekoppelte Formulierung folgt
-    \item Dritter Bestandteil, nämlich die parallelen Erlösquellen, woraus folgt, dass die Grenzkosten der Bindung davon abhängen, was bereits zugesagt ist
-\end{itemize}
+% IN DIE NEUE FOLGE VON 3.2.1 UEBERNOMMEN am 11.09.2026 als Stichpunkte 1 bis
+% 4. Die Marke sec:valuation_task bleibt stehen und loest weiter auf 3.2.1
+% auf. Alte Fassung, vollstaendig erhalten:
+%   \begin{itemize}
+%       \item Bestimmung des kurativen Reservierungspreises als Betrag, bei dem der Betreiber gegenüber seiner besten alternativen Vermarktung indifferent ist
+%       \item Erster Bestandteil, nämlich der entgangene Deckungsbeitrag der besten alternativen Vermarktung als Opportunitätsgröße, woraus folgt, dass das Modell den unrestringierten Fahrplan mitrechnen muss
+%       \item Zweiter Bestandteil, nämlich die Pfadabhängigkeit des Ladezustands, woraus die zeitgekoppelte Formulierung folgt
+%       \item Dritter Bestandteil, nämlich die parallelen Erlösquellen, woraus folgt, dass die Grenzkosten der Bindung davon abhängen, was bereits zugesagt ist
+%   \end{itemize}
 
 % VIER STICHPUNKTE ANGELEGT am 08.09.2026, Stufe eins. Sie sind das
 % Geruest aus dem Kommentarblock darueber und keine eigene Setzung. Beim
@@ -1961,12 +2142,19 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % und die Folge benennen, dass ein gemischt-ganzzahliges Problem keine
 % Dualvariablen liefert.
 
-\begin{itemize}
-    \item Grundform des linearen Programms mit Zielfunktion, Nebenbedingungen und Entscheidungsvariablen \cite{domschke_operations_2015}
-    \item Erweiterung um ganzzahlige Variablen und das Lösungsverfahren über Relaxierung und Verzweigung \cite{domschke_operations_2015}
-    \item Folge für die Auswertung, nämlich dass ein gemischt-ganzzahliges Problem keine Dualvariablen liefert
-    \item Verwendete Solver-Version und Lizenzart \cite{gurobi_reference_2026}
-\end{itemize}
+% UEBERHOLT am 11.09.2026. Nach MODELL.md ist das Modell im Basisfall ein
+% lineares Programm, siehe K2. Der Zuschnitt auf das gemischt-ganzzahlige
+% Problem und die Folge fehlender Dualvariablen entfallen damit,
+% vorbehaltlich der Entscheidung des Verfassers zum offenen Punkt 1. Das
+% Loesungsverfahren steht jetzt als ein Stichpunkt in der neuen Folge von
+% 3.2.1. Die Kommentare darueber bleiben als Stand vom 06.09.2026 stehen.
+% Alte Fassung, vollstaendig erhalten:
+%   \begin{itemize}
+%       \item Grundform des linearen Programms mit Zielfunktion, Nebenbedingungen und Entscheidungsvariablen \cite{domschke_operations_2015}
+%       \item Erweiterung um ganzzahlige Variablen und das Lösungsverfahren über Relaxierung und Verzweigung \cite{domschke_operations_2015}
+%       \item Folge für die Auswertung, nämlich dass ein gemischt-ganzzahliges Problem keine Dualvariablen liefert
+%       \item Verwendete Solver-Version und Lizenzart \cite{gurobi_reference_2026}
+%   \end{itemize}
 
 %
 % HIERHER gehören die technischen BESS-Eigenschaften -- SoC-Dynamik,
@@ -2017,13 +2205,60 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % Datensatzbezeichnung, was fuer die Nachvollziehbarkeit der eigenen
 % Auswertung noetig ist.
 
+% NEU GEORDNET am 11.09.2026 nach MODELL.md Abschnitt 4 und 9. Drei Bloecke,
+% naemlich Zeitraum, Preisreihen je Markt und Anlage. Der Stichpunkt zu den
+% Preiszeitreihen ist nach Maerkten geteilt, der zu den Anlagenparametern in
+% Parameter und Kosten.
+% ZUR QUELLENLAGE, K6. Zitiert sind nur Schluessel, die in literature.bib
+% stehen. Fuer energy-charts, ENTSO-E und netztransparenz.de sind Eintraege
+% anzulegen, bevor die Saetze zum Intraday und zur aFRR-Arbeit stehen.
+
 \begin{itemize}
+% --- Zeitraum
     \item Auswertungszeitraum viertes Quartal 2025 als Grundlage des ausgewiesenen kurativen Reservierungspreises, begründet über den Regimebruch am 01.10.2025 \cite{ffe_saegezahn_2026}
+% K4. Die Beispieltage des Codes liegen im Februar, Mai und August 2025.
     \item Auswahl und Begründung des Beispieltages als Werktag im November 2025 mit hoher Windeinspeisung und hohem Redispatch-Volumen, der die Darstellung der Fahrpläne trägt \cite{ffe_saegezahn_2026, bundesnetzagentur_mengen_nodate}
-    \item Preiszeitreihen Day-Ahead und Intraday \cite{smard_marktdaten_2026}
-    \item Regelleistungspreise und Produktschnitte \cite{regelleistung_ausschreibungsdaten_2026}
-    \item Anlagenparameter des \ac{BESS}, nämlich Leistung, Energie und Wirkungsgrad, sowie die Kostenannahmen \cite{juelch_comparison_2016, garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
+% NEU am 11.09.2026. Der 26.10.2025 liegt im Auswertungszeitraum. Der Code
+% ueberspringt ihn in einem Teil der Laeufe und normiert ihn in einem anderen
+% auf 96 Viertelstunden, wobei die doppelte Stunde gesperrt wird. Zu
+% entscheiden, welche Behandlung gilt. Beim Ueberspringen sind es 91 und
+% nicht 92 Tagespaare.
+    \item Behandlung der Zeitumstellung am 26.10.2025, deren Liefertag 100 statt 96 Viertelstunden zählt
+% --- Preisreihen
+% K6. Der Code liest energy-charts.de. SMARD fuehrt keinen ID1.
+    \item Preisreihe des \ac{DA} für die Gebotszone Deutschland und Luxemburg, seit dem 01.10.2025 in Viertelstunden \cite{smard_marktdaten_2026}
+% UNBELEGT. Der Aufschlag von sechs Prozent stammt nach MODELL.md aus dem
+% Battery-Revenue-Index von energy-charts, der die Intraday-Erloese ueber dem
+% ID1 ausweist. Eintrag fehlt.
+    \item Bewertung des \ac{IDC} mit dem \ac{ID1} je Viertelstunde, erweitert um einen Aufschlag, der Verkäufe drei Prozent über und Käufe drei Prozent unter dem Index bewertet
+% Mengengewichteter Durchschnitt statt Grenzpreis ist eine Setzung des Codes.
+% Der FCR-Preis der Zeitscheibe ist durch vier geteilt und damit ein Wert je
+% Megawatt und Stunde.
+    \item Leistungspreise der \ac{FCR} und der \ac{aFRR} je Vier-Stunden-Zeitscheibe als mengengewichteter Durchschnitt der Zuschläge in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}
+% K6. Quellen ENTSO-E fuer die Grenzpreise und netztransparenz.de fuer den
+% Sollwert. Das je Optimierungszyklus aktivierte Volumen ist nicht
+% veroeffentlicht, der Sollwert ist deshalb ein Ersatzgewicht.
+    \item Arbeitspreis der \ac{aFRR} je Viertelstunde und Richtung als volumengewichtetes Mittel der Grenzpreise der Plattform PICASSO, wobei Viertelstunden ohne Abruf einer Richtung für diese Richtung gesperrt sind
+    \item Abgerufene \ac{aFRR}-Menge in Deutschland je Viertelstunde und Richtung, aus der sich der Anteil der Anlage am Abruf ergibt
+% --- Anlage
+    \item Anlagenparameter des \ac{BESS}, nämlich 100\,\si{MW} je Richtung, 250\,\si{MWh} Speicherkapazität, ein Wirkungsgrad von 0,95 je Richtung und ein nutzbarer Ladezustand zwischen 5 und 95 Prozent \cite{juelch_comparison_2016, garttan_battery_2025}
+% UNBELEGT. Der alte Stichpunkt stuetzte Parameter und Kosten gemeinsam auf
+% juelch_comparison_2016, garttan_battery_2025 und
+% rystad_energy_renewables__power_analytics_energy_2026. Ob einer davon die
+% 8 Euro je Megawattstunde traegt, ist ungeprueft. Die Aufteilung der drei
+% Schluessel auf beide Stichpunkte ist vorlaeufig.
+    \item Kostenannahme für die Degradation von 8 Euro je Megawattstunde Durchsatz
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten:
+%   \begin{itemize}
+%       \item Auswertungszeitraum viertes Quartal 2025 als Grundlage des ausgewiesenen kurativen Reservierungspreises, begründet über den Regimebruch am 01.10.2025 \cite{ffe_saegezahn_2026}
+%       \item Auswahl und Begründung des Beispieltages als Werktag im November 2025 mit hoher Windeinspeisung und hohem Redispatch-Volumen, der die Darstellung der Fahrpläne trägt \cite{ffe_saegezahn_2026, bundesnetzagentur_mengen_nodate}
+%       \item Preiszeitreihen Day-Ahead und Intraday \cite{smard_marktdaten_2026}
+%       \item Regelleistungspreise und Produktschnitte \cite{regelleistung_ausschreibungsdaten_2026}
+%       \item Anlagenparameter des \ac{BESS}, nämlich Leistung, Energie und Wirkungsgrad, sowie die Kostenannahmen \cite{juelch_comparison_2016, garttan_battery_2025, rystad_energy_renewables__power_analytics_energy_2026}
+%   \end{itemize}
 
 % Für jede Datenquelle sind Abrufdatum, Zeitraum, Auflösung und
 % Filtereinstellungen zu dokumentieren -- sonst ist die Rechnung nicht
@@ -2042,16 +2277,53 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 %   \subsection{Zielfunktion und Variablen}
 \subsection{Zielfunktion und Variablen}
 \label{sec:objective_variables}
+% MARKE HIERHER VERSCHOBEN am 11.09.2026. sec:storage_model stand hinter dem
+% Archivkommentar vor 3.2.5 und loeste auf 3.2.4 auf. Der Abschluss von 3.1.2
+% meint mit ihr den Unterabschnitt, der die Symbole uebernimmt, also diesen.
+% Befund 4 in STRUKTUR.md.
+\label{sec:storage_model}
 % [Ziel: 1,5 Seiten]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2 Seiten]
 % Nach CLAUDE.md Abschnitt 7 traegt dieser Abschnitt Mengen, Parameter,
 % Variablen und die Zielfunktion, jeweils mit einem Satz zu ihrer Aufgabe.
 
+% NEU GEORDNET am 11.09.2026 nach MODELL.md Abschnitt 5 und 6. Drei Bloecke,
+% naemlich Mengen und Symbole, Variablen, Zielfunktion. Der Stichpunkt zur
+% Degradation ist aus 3.2.4 hierher gezogen, weil sie als Kostenterm in der
+% Zielfunktion steht.
+% UMFANG. 11 Stichpunkte und ein Gleichungsblock bei 1,5 Seiten.
+
 \begin{itemize}
-    \item Zielfunktion, nämlich Erlösmaximierung über die Spotmärkte
+% --- Mengen und Symbole
+    \item Mengen, nämlich die 96 Viertelstunden des Liefertages und die Zeitscheiben der Blockprodukte von einer und von vier Stunden
+% K8. Symbolliste gegen tab:weber_symbole und den Anhang pruefen.
     \item Zuordnung jeder Größe der Produktparametertabelle aus Abschnitt \ref{sec:product_parameters} zu einem Symbol
+% --- Variablen
+    \item Entscheidungsvariablen sind die Lade- und die Entladeleistung am \ac{DA} und am \ac{IDC}, die vorgehaltene Leistung der \ac{FCR} und der \ac{aFRR} je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ
+% K1. Unter Weg C waere die Bindung eine Variable mit Preis.
+    \item Die kurative Bindung ist keine Variable, sondern eine Vorgabe je Richtung und Zeitscheibe, die im gebundenen Lauf die zugesagte Leistung setzt und im ungebundenen Lauf null ist
+% --- Zielfunktion
+    \item Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte abzüglich der Degradationskosten
+    \item Die Erlöse am \ac{DA} und am \ac{IDC} folgen aus Preis und gehandelter Energie, wobei der Aufschlag am \ac{IDC} Verkäufe höher und Käufe niedriger bewertet als den \ac{ID1}
+    \item Die \ac{FCR} und die \ac{aFRR}-Leistung tragen ihren Leistungspreis mal der vorgehaltenen Leistung bei
+    \item Die \ac{aFRR}-Arbeit trägt ihren Arbeitspreis mal der gelieferten Energie bei, vermindert um den Wert des Ausgleichs am \ac{IDC}, mit dem die Anlage ihren Ladezustand später wiederherstellt
+    \item Degradation als linearer Kostensatz auf den physischen Durchsatz, der den Handel und die gelieferte Arbeit belastet und die Vorhaltungen nicht \cite{kumtepeli_energy_2020}
+% K1. Unter Weg C stuende hier der Preis der Vorhaltung mal der Leistung.
+    \item Einen Erlösterm für die kurative Vorhaltung enthält die Zielfunktion nicht, sodass die Bindung allein über die Nebenbedingungen auf den Zielfunktionswert wirkt
+% Die Abbildung liegt als modellaufbau.pdf in analysen/10_schrift des
+% Modellrepositorys. Nach MODELL.md nennt sie fuer den kurativen Rueckhalt
+% eine Stunde, K3. Erst aufnehmen, wenn K1 und K3 entschieden sind, weil sie
+% beides zeigt.
+    \item Abbildung des Modellaufbaus mit Handelskette, Zielfunktion und Speicher
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten:
+%   \begin{itemize}
+%       \item Zielfunktion, nämlich Erlösmaximierung über die Spotmärkte
+%       \item Zuordnung jeder Größe der Produktparametertabelle aus Abschnitt \ref{sec:product_parameters} zu einem Symbol
+%   \end{itemize}
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
@@ -2064,12 +2336,54 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 2,5 Seiten]
 
+% NEU GEORDNET am 11.09.2026 nach MODELL.md Abschnitt 7. Vier Bloecke,
+% naemlich Speicher, Leistung, Vorhaltungen und Maerkte, zuletzt die
+% methodische Referenz. Der Stichpunkt zur Ladezustandsbilanz ist in Bilanz
+% und Grenzen geteilt, der zur Degradation steht jetzt in 3.2.3.
+% UMFANG. 13 Stichpunkte und Gleichungen bei 2 Seiten.
+
 \begin{itemize}
-    \item Ladezustandsbilanz mit Leistungs- und Energiegrenzen sowie Lade- und Entladewirkungsgrad
-    \item Degradation und Zyklenkosten \cite{kumtepeli_energy_2020}
+% --- Speicher
+    \item Ladezustandsbilanz mit Lade- und Entladewirkungsgrad, in der allein der Handel und die gelieferte \ac{aFRR}-Arbeit den Ladezustand bewegen und die Vorhaltungen nicht
+    \item Grenzen des Ladezustands und derselbe Anfangs- und Endladezustand je Tag als Gleichung, damit der gebundene und der ungebundene Lauf mit derselben gespeicherten Energie enden
+% --- Leistung
+    \item Leistungsschranke je Seite, auf der sich der Handel, die \ac{aFRR}, die kurative Bindung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung teilen
+% STRUKTUR.md Vormerkung 2. Das Modell setzt die Ausschliesslichkeit als
+% Regel um, 3.1.2 beschreibt sie nur.
+    \item Daraus folgt die Ausschließlichkeit der kurativen Zusage, denn eine kurativ gebundene Leistung steht keinem anderen Markt zur Verfügung
+% --- Vorhaltungen
     \item Restriktion der kurativen Vorhaltung, nämlich die Bindung des Ladezustandsbands über die Bindungsdauer
+% STRUKTUR.md Vormerkung 7, im Modell richtig umgesetzt. Dauer nach K3.
+    \item In positiver Richtung hält das Band Energie oberhalb der unteren Ladezustandsgrenze vor, in negativer Richtung freien Speicherraum unterhalb der oberen, jeweils für die gebundene Leistung über die Dauer des ungünstigsten Abrufs
+% ZU PRUEFEN. Der Code verlangt das Band der Regelleistung nur am Beginn jeder
+% Vier-Stunden-Zeitscheibe, das kurative in jeder Viertelstunde. Entweder
+% nennt der Text diese Vereinfachung, oder der Code zieht nach.
+    \item Die \ac{FCR} und die \ac{aFRR}-Leistung binden je vorgehaltenem Megawatt ein eigenes Ladezustandsband von einer Viertelstunde beziehungsweise einer Stunde
+% BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
+% des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
+%   \item Die Vorhaltungen bleiben über ihre Zeitscheibe konstant, das Vorhalteprodukt über eine Stunde, die \ac{FCR} und die \ac{aFRR}-Leistung über vier Stunden
+    \item Die Vorhaltungen bleiben über ihre Zeitscheibe konstant, die kurative Reservierung über eine Stunde, die \ac{FCR} und die \ac{aFRR}-Leistung über vier Stunden
+% --- Maerkte
+% K7. Die Energieneutralitaet ist die einzige Stelle, an der das Modell die
+% Staffelung der Maerkte nachbildet.
+    \item Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken, womit das Modell nachbildet, dass das Gebot am \ac{DA} die Bindung noch nicht kennt
+% UNBELEGT. Der Code setzt die ausgeschriebene aFRR-Menge auf 2000 MW, daraus
+% ein Anteil von rund vier Prozent. Die Zahl ist als Eingangsgroesse zu
+% nennen und zu belegen.
+    \item Die Anlage liefert \ac{aFRR}-Arbeit anteilig am deutschen Abruf im Verhältnis ihrer vorgehaltenen Leistung zur ausgeschriebenen Menge und wählt keine einzelnen Viertelstunden aus
+    \item Die gelieferte Arbeit stammt aus dem Speicher und wird am \ac{IDC} in einer späteren Viertelstunde ausgeglichen, wobei der Ausgleich nie vor der Lieferung liegt und sich über den Tag schließt
+% --- Referenz
     \item Zeitgekoppelte Formulierung von Flexibilitätsgeboten als methodische Referenz \cite{schmitt_linear_2020}
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten:
+%   \begin{itemize}
+%       \item Ladezustandsbilanz mit Leistungs- und Energiegrenzen sowie Lade- und Entladewirkungsgrad
+%       \item Degradation und Zyklenkosten \cite{kumtepeli_energy_2020}
+%       \item Restriktion der kurativen Vorhaltung, nämlich die Bindung des Ladezustandsbands über die Bindungsdauer
+%       \item Zeitgekoppelte Formulierung von Flexibilitätsgeboten als methodische Referenz \cite{schmitt_linear_2020}
+%   \end{itemize}
 
 % DIE VIER ENTFALLENEN STICHPUNKTE vom 08.09.2026 standen bis zur Teilung
 % in diesem itemize. Ihr Wortlaut bleibt unveraendert erhalten:
@@ -2194,7 +2508,8 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 %   % DREI UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser.
 %   % Der Methodenteil ist dabei an den Anfang gerueckt, weil er beim Umbau am
 %   % Ende stand und die Reihenfolge sonst nicht traegt.
-\label{sec:storage_model}
+% MARKE VERSCHOBEN am 11.09.2026 nach 3.2.3, siehe dort. Alte Stelle:
+%   \label{sec:storage_model}
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
 % Aus dem frueheren Abschnitt 3.6 wird 3.2.5. Er traegt jetzt zusaetzlich die Systemgrenzen aus 3.2.1. Die Marke sec:weber_exclusion bleibt, chapter_5.tex verweist auf sie.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -2243,14 +2558,58 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % Voraussetzungen das Verfahren braucht und weshalb der gewaehlte
 % Modellansatz sie nicht bereitstellt. Er wertet das Verfahren nicht ab.
 
+% NEU GEORDNET am 11.09.2026. Drei Bloecke, naemlich die Systemgrenzen aus
+% 3.2.1, die Abgrenzung gegenueber dem modifizierten Weber-Ansatz und zuletzt
+% die Bestandteile des Gebots, die das Modell nicht traegt. Damit ist die
+% Vormerkung vom 11.09.2026 oben eingeloest. Der Abschluss sagt nach
+% Entscheidung 5, dass der ermittelte Preis der opportunitaetskostenbasierte
+% Teil des Gebots ist.
+% UMFANG. 16 Stichpunkte bei 1,5 Seiten, knapp.
+
 \begin{itemize}
+% --- Systemgrenzen
+    \item Einzelanlagenbetrachtung statt Systemebene, mit dem Akteur als Preisnehmer, der keinen Marktpreis bewegt
+    \item Nicht abgebildet sind Netzrestriktionen und Poolbildung
+% MODELL.md Abschnitt 16, das Engpassprofil ist am 10.09.2026 entfernt.
+    \item Ohne Netzmodell ist der kurative Bedarf nicht räumlich aufgelöst, sodass die Bindung in jeder Zeitscheibe gleich behandelt wird
+    \item Nicht abgebildet ist ferner die Gegenseite der Maßnahme, obwohl der bilanzielle Ausgleich nach Abschnitt \ref{sec:curative_functionality} mindestens zwei koordinierte Akteure erfordert
+% NEU am 11.09.2026 nach Entscheidung 4, die den Punkt wieder unter die nicht
+% abgebildeten Groessen stellt. Der Kommentar vom 06.09.2026 in 3.2.1 ist
+% damit erledigt, die Streichung in Abschnitt 4.4 steht noch aus.
+    \item Nicht abgebildet ist die Abrufwahrscheinlichkeit, sodass das Modell die Bindung ohne Abruf bewertet
+    \item Der Zuschlag in den Regelleistungsmärkten gilt als sicher
+% --- Abgrenzung gegenueber dem modifizierten Weber-Ansatz
     \item Einordnung, nämlich dass der Ansatz nach Abschnitt \ref{sec:weber_approach} als Stand der Technik dargestellt ist und die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen prägt \cite{weber_gutachten_2015}
     \item Erster Grund, nämlich dass eine einperiodige deterministische Optimierung mit vollständiger Preiskenntnis kein Volatilitätsmaß kennt und den Zeitwert der Option damit konstruktionsbedingt zu null macht \cite{hull_options_2014}
     \item Zweiter Grund, nämlich dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre
     \item Dritter Grund, nämlich dass der Ansatz jedes Zeitintervall unabhängig bewertet, während die Ladezustandsbilanz die Intervalle bindend koppelt und diese Kopplung für kurze Entladedauern nicht vernachlässigbar ist
     \item Folge für die Ergebnisse, nämlich dass der ermittelte kurative Reservierungspreis opportunitätskostenbasiert ist und keinen Optionswert enthält, was in Abschnitt \ref{sec:model_critique} zu würdigen ist
     \item Einordnung dieser Folge, nämlich dass die Vergütungsstruktur der Festlegung den Optionswert ohnehin nur dann trägt, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}
+% --- Bestandteile des Gebots, die das Modell nicht traegt
+% Zitatschluessel fuer Anlage 5 beim Ausformulieren pruefen.
+% BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
+% des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
+%   \item Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter dem Vorhalteprodukt handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann
+    \item Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann
+% BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
+% des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
+%   \item Den Energieanteil eines Abrufs, den der Preis des Vorhalteprodukts mit abdeckt, bildet das Modell nicht ab
+    \item Den Energieanteil eines Abrufs, den der Preis der kurativen Reservierung mit abdeckt, bildet das Modell nicht ab
+    \item Die Höhe der Pönale bestimmt die Arbeit nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt
+    \item Abschluss, nämlich dass der ermittelte kurative Reservierungspreis der opportunitätskostenbasierte Teil des Gebots ist und nicht das Gebot
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten. Die sechs Punkte zum Weber-Ansatz stehen unveraendert im zweiten
+% Block der neuen Folge.
+%   \begin{itemize}
+%       \item Einordnung, nämlich dass der Ansatz nach Abschnitt \ref{sec:weber_approach} als Stand der Technik dargestellt ist und die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen prägt \cite{weber_gutachten_2015}
+%       \item Erster Grund, nämlich dass eine einperiodige deterministische Optimierung mit vollständiger Preiskenntnis kein Volatilitätsmaß kennt und den Zeitwert der Option damit konstruktionsbedingt zu null macht \cite{hull_options_2014}
+%       \item Zweiter Grund, nämlich dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre
+%       \item Dritter Grund, nämlich dass der Ansatz jedes Zeitintervall unabhängig bewertet, während die Ladezustandsbilanz die Intervalle bindend koppelt und diese Kopplung für kurze Entladedauern nicht vernachlässigbar ist
+%       \item Folge für die Ergebnisse, nämlich dass der ermittelte kurative Reservierungspreis opportunitätskostenbasiert ist und keinen Optionswert enthält, was in Abschnitt \ref{sec:model_critique} zu würdigen ist
+%       \item Einordnung dieser Folge, nämlich dass die Vergütungsstruktur der Festlegung den Optionswert ohnehin nur dann trägt, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}
+%   \end{itemize}
 
 % ZU PRUEFEN am 06.09.2026, Befund S7. Der Verweis auf sec:model_critique
 % ist ein Grenzfall nach Attribut 9. Die Wuerdigung ist sachlich noetig,
@@ -2374,10 +2733,31 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 %
 % ZWEI UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser.
 
+% NEU GEORDNET am 11.09.2026 nach MODELL.md und dem Befund zum Erloesindex
+% vom 08.09.2026 aus dem Modellrepository. Keine Zahl aus dem Abgleich, sie
+% gehoert nach Abschnitt 4.1.
+
 \begin{itemize}
+    \item Geprüft wird der Erlös des ungebundenen Fahrplans als Zwischengröße des Modells und nicht der kurative Reservierungspreis
+    \item Die Prüfung betrifft die Plausibilität des Erlösniveaus und nicht, ob die Implementierung das formulierte Problem korrekt löst
+% K6. bib-Eintrag fuer die ISEA Battery Charts fehlt.
     \item Gegenstand und Aufbau des Vergleichsmaßstabs, nämlich ein je Tag ausgewiesener annualisierter Erlös in Tausend Euro je Megawatt und Jahr aus einem marktübergreifenden Modell über \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und kontinuierlichen Intraday-Handel
+% EIGENE BESTIMMUNG des Verfassers vom 08.09.2026, in keiner Dokumentation
+% belegt. Gezeigt durch Rueckrechnung als expandierender Mittelwert und durch
+% den konstanten FCR-Wert vom 04.09. bis 14.11.2025. Als eigene Bestimmung
+% kennzeichnen. Die Rohwerte sind bereits Jahreserloese, nicht mit 365
+% multiplizieren.
+    \item Der Index ist ein gleitender Mittelwert über 365 Tage und nur am 31. Dezember mit einem Kalenderjahr vergleichbar, weshalb die Validierung das Jahr 2025 umfasst und nicht allein das vierte Quartal
     \item Abzugleichende Anlagenparameter des Index, insbesondere das Verhältnis von Energie zu Leistung und der unterstellte Wirkungsgrad
+    \item Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten:
+%   \begin{itemize}
+%       \item Gegenstand und Aufbau des Vergleichsmaßstabs, nämlich ein je Tag ausgewiesener annualisierter Erlös in Tausend Euro je Megawatt und Jahr aus einem marktübergreifenden Modell über \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und kontinuierlichen Intraday-Handel
+%       \item Abzugleichende Anlagenparameter des Index, insbesondere das Verhältnis von Energie zu Leistung und der unterstellte Wirkungsgrad
+%   \end{itemize}
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
@@ -2390,10 +2770,32 @@ Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1,5 Seiten]
 
+% NEU GEORDNET am 11.09.2026. Der Stichpunkt zum Marktumfang ist
+% berichtigt. Er ging davon aus, dass das Modell allein die Spotvermarktung
+% fuehrt. Nach MODELL.md fuehrt es alle Maerkte des Index und zusaetzlich den
+% Day-Ahead.
+
 \begin{itemize}
+% Die erwartete Richtung gilt fuer den marktuebergreifenden Wert. Je Markt
+% ueberlagern sie die Unterschiede im naechsten Stichpunkt.
     \item Unterschied in der Vorausschau, nämlich Rolling Intrinsic gegenüber vollständiger Preiskenntnis, und die daraus folgende Erwartung, dass der eigene Wert über dem Index liegt
-    \item Unterschied im Marktumfang und die daraus folgende Beschränkung des Vergleichs auf die vergleichbare Teilmenge
+    \item Der Index führt keinen \ac{DA}, weshalb der marktübergreifende Vergleich den Erlös des Modells am \ac{DA} gesondert ausweist
+% EIGENE ABLEITUNG aus den Annahmen, ohne Zahl. Die Bezugsanlage des Index hat
+% nach der Bestimmung vom 08.09.2026 eine Stunde Speicherdauer, die
+% Modellanlage zweieinhalb.
+    \item Weitere Unterschiede mit bekannter Richtung, nämlich die längere Speicherdauer der Modellanlage und der sichere Zuschlag, die den Erlös in den Leistungsmärkten erhöhen, sowie die Degradationskosten, die ihn in den Energiemärkten senken
+% OFFEN. Das Kriterium im Abschnittskommentar oben, ein Wert unter dem Index
+% zeige einen Fehler der Implementierung, gilt wegen der Degradationskosten
+% nicht fuer die Energiemaerkte. Vom Verfasser zu entscheiden.
+    \item Prüfkriterium, nämlich dass die Abweichung je Markt die Richtung trägt, die diese Unterschiede erwarten lassen, und dass der Jahresgang übereinstimmt
 \end{itemize}
+
+% ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
+% erhalten:
+%   \begin{itemize}
+%       \item Unterschied in der Vorausschau, nämlich Rolling Intrinsic gegenüber vollständiger Preiskenntnis, und die daraus folgende Erwartung, dass der eigene Wert über dem Index liegt
+%       \item Unterschied im Marktumfang und die daraus folgende Beschränkung des Vergleichs auf die vergleichbare Teilmenge
+%   \end{itemize}
 
 % ===============================================================
 % NACH ABSCHNITT 4.1 ZU UEBERTRAGEN, abgetrennt am 06.09.2026, Befund I4.

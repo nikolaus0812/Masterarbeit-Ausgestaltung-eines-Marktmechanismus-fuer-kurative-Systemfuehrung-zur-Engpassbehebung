@@ -4548,6 +4548,118 @@ Ladezustandsband gegen A5, Verteilnetzengpaesse. L7, die Abbildung
 fig:markt_zeitschiene in Kapitel 2 fuehrt pRD1, pRD2 und WAPP ohne Erklaerung und
 ohne Eintrag im Abkuerzungsverzeichnis.
 
+### 11.09.2026, MODELL.md in Abschnitt 3.2 und 3.3 eingearbeitet
+
+Auftrag des Verfassers, die Modellbeschreibung aus dem Repository
+bess_dispatch_optimization (MODELL.md, Stand 11.09.2026) in den Modellteil
+einzuarbeiten und die Stichpunkte so zu sortieren, dass das Ausformulieren
+beginnen kann. Stufe eins nach CLAUDE.md Abschnitt 3.1, kein Fließtext.
+
+**Umfang.** Die Stichpunkte von 3.2.1 bis 3.2.5, 3.3.1 und 3.3.2 sind neu
+geordnet, ein Stichpunkt entspricht ungefähr einem Satz. Hinzu kommt ein
+Einleitungsstichpunkt für 3.2. Kein alter Stichpunkt ist gelöscht, jeder steht
+als Kommentar unter der neuen Folge seines Unterabschnitts. Die Blöcke
+sec:valuation_task und sec:lp_gurobi sind in die neue Folge von 3.2.1
+übernommen und als Kommentar erhalten. Die Systemgrenzen stehen nach dem
+Vermerk vom 08.09.2026 in 3.2.5, die Degradation als Kostenterm in 3.2.3.
+
+**Stichpunktzahl gegen Seitenziel.** 3.2.1 fünfzehn bei einer Seite, 3.2.2
+zehn bei einer, 3.2.3 elf bei anderthalb, 3.2.4 dreizehn bei zwei, 3.2.5
+sechzehn bei anderthalb, 3.3 elf bei zwei. 3.2.1 und 3.2.5 sind knapp.
+
+**Marke verschoben.** sec:storage_model steht jetzt unter 3.2.3 und löst dort
+auf. Damit ist Befund 4 in STRUKTUR.md erledigt.
+
+**Neu nach Entscheidung 4.** Die Abrufwahrscheinlichkeit steht wieder unter den
+nicht abgebildeten Größen in 3.2.5. Die Streichung der Sensitivität in
+Abschnitt 4.4 steht noch aus.
+
+**Bewusst nicht aufgenommen, weil es Ergebnisse vorwegnähme.** Die Erlöse der
+Läufe 2025, der Iterationsvergleich, die Überschätzung durch Stundenpreise und
+das Verhältnis von Modell und Erlösindex. Ebenso nicht die Rechenzeiten, die
+Schalter des Codes, die Sensitivitäten, der Flat-Handel, die gesperrten
+Lieferpfade der aFRR-Arbeit und die Prognosemethoden.
+
+**Widersprüche zwischen Code und Schrift, gemeldet und nicht entschieden.** Sie
+stehen als K1 bis K8 im Kopfkommentar von Abschnitt 3.2.
+
+1. K1, Bestimmung des Reservierungspreises. Entscheidung 2 nimmt Tagespaare mit
+   exogener Bindung, der Code sucht den Preis endogen über Bisektion und
+   Vollverdrängung, und das Vorhalteprodukt verlangt einen Preis je
+   Zeitscheibe. Die Stichpunkte folgen Entscheidung 2. Als eigenständige
+   Ableitung angeboten ist ein Paar je Zeitscheibe, das Entscheidung 2 hält und
+   einen Preis je Stunde und Richtung liefert.
+2. K2, lineares Programm. Der Code beantwortet den offenen Punkt 1, er ist ohne
+   Binärvariable. Eigene Rechnung, vom Verfasser zu prüfen, gleichzeitiges
+   Laden und Entladen lohnt im Day-Ahead erst unter etwa minus 156 Euro je
+   Megawattstunde.
+3. K3, Abrufdauer. Der Code rechnet mit einer Viertelstunde, das Produkt setzt
+   eine Megawattstunde je Megawatt.
+4. K4, Zeitraum und Beispieltag. Code 2025 und Beispieltage im Februar, Mai und
+   August, Schrift viertes Quartal und November.
+5. K5, Mindestgröße nur im gemischt-ganzzahligen Schalter des Codes.
+6. K6, Datenquellen. Code energy-charts, Schrift SMARD. Einträge für
+   energy-charts, ENTSO-E, netztransparenz.de und die ISEA Battery Charts
+   fehlen in literature.bib.
+7. K7, Staffelung der Märkte. Nur über die Energieneutralität des Day-Ahead
+   nachgebildet, die Intraday-Auktionen fehlen als eigene Märkte.
+8. K8, Formelzeichen g, x, D und V im Code gegen die belegten Zeichen.
+
+**Weitere Befunde, als Kommentar an der Stelle.** Das Ladezustandsband der
+Regelleistung gilt im Code nur am Beginn der Vier-Stunden-Zeitscheibe. Der
+Zeitumstellungstag am 26.10.2025 liegt im Auswertungszeitraum. Die
+ausgeschriebene aFRR-Menge von 2000 MW, der Aufschlag von sechs Prozent am
+Intraday und die Degradationskosten von 8 Euro je Megawattstunde sind unbelegt.
+Das Prüfkriterium der Validierung, ein Wert unter dem Index zeige einen Fehler,
+gilt wegen der Degradationskosten nicht für die Energiemärkte.
+
+**Eigenständige Argumente, vom Verfasser zu prüfen.** Weg B zu K1. Die
+Rechnungen zu K2 und K3. Die erwartete Richtung der Unterschiede zum Erlösindex
+in 3.3.2. Die Aussage, das Modell setze die Ausschließlichkeit der kurativen
+Zusage als Regel um.
+
+Prüfsuite ohne Befund, Build ohne Fehler mit 72 Seiten.
+
+
+### 11.09.2026, Nachtrag, Begriffswahl und Kuerzung der Katalogsaetze in 3.1
+
+Entscheidungen des Verfassers per Auswahl.
+
+**Kurative Reservierung** ist der Name des Produkts. Der Begriff ersetzt in 3.1
+und 3.1.2 Vorhalteprodukt, Marktprodukt und die Kurzform Produkt, auch in der
+Ueberschrift, die jetzt Die kurative Reservierung lautet. Kurative Vorhaltung fuer
+das Vorhalten selbst und Vorhalteleistung bleiben. Der Begriff passt zur gesuchten
+Groesse, dem kurativen Reservierungspreis. Nach Stilregel 5 ist er von hier an
+durchgehend zu fuehren. Vorhalteprodukt ist nicht wieder aufzunehmen. In 3.2 und
+3.3 stehen noch Kommentare mit dem alten Begriff, sie sind beim naechsten Durchgang
+nachzuziehen. Die fuenf aktiven Stichpunkte in 3.2 und 3.3, die die zweite
+Sitzung mit Vorhalteprodukt angelegt hatte, sind nach Stilregel 5 ebenfalls
+umgestellt, jeweils mit der alten Fassung als Kommentar.
+
+**Wirkung** statt Wirksamkeit fuer die Wirkung einer Leistungsaenderung am
+Betriebsmittel. Wirksamkeit stand im Fliesstext nur im Begruendungsteil des
+Katalogsatzes zu A3 und entfaellt mit dessen Kuerzung.
+
+**Reaktionszeit** statt Aktivierungsgeschwindigkeit in A1. Damit Reaktionszeit
+nicht zweimal im Satz steht, heisst es dort jetzt diese.
+
+**Katalogsaetze gekuerzt** auf die Forderung bei A3, A4 und A7, nachdem A2 und A6
+schon so gefasst waren. Die Begruendung traegt jeweils der erste
+Erlaeuterungssatz. Entdopplung bei A3 und A5. Bei A3 entfaellt der erste
+Erlaeuterungssatz, der die gekuerzte Forderung wiederholte. Bei A5 bleibt der
+Katalogsatz ganz, weil sein Begruendungsteil die Diskriminierungsfreiheit traegt,
+und der erste Erlaeuterungssatz lautet jetzt, in der Praequalifikation heisse das,
+technische und physikalische Eigenschaften zu pruefen und nicht die Art der
+Anlage. Die Fassung vom 09.09.2026 stammte vom Verfasser und steht als Kommentar.
+Der Verfasser hat die neue Fassung in der Vorschau gesehen und gewaehlt.
+
+**Abstimmung mit einer zweiten Sitzung.** Waehrend dieser Aenderungen hat eine
+zweite Claude-Sitzung die Stichpunkte in 3.2 und 3.3 neu geordnet. Nach
+Abschnitt 12 hat diese Sitzung nicht in chapter_3.tex geschrieben, bis die andere
+fertig war, und die Aenderung auf den Bereich vor der Ueberschrift von 3.2
+beschraenkt. Das Skript prueft vor dem Schreiben, dass sich die Datei seit dem
+Einlesen nicht veraendert hat.
+
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
