@@ -37,11 +37,11 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 | | danach die Einordnung des Marktdesigns | 0,5 | F, sieben Sätze |
 | 3.1.2 | Die kurative Reservierung | 3 | F |
 | **3.2** | **Optimierung des Speicherbetriebs** | **7** | |
-| | Einleitung mit Preis, Lücke und Aufgabe, aus dem aufgelösten 3.1.3 | 0,5 | F, sechs Sätze |
-| 3.2.1 | Ansatz und Lösungsverfahren | 1 | S |
-| 3.2.2 | Eingangsdaten | 1 | S |
-| 3.2.3 | Zielfunktion und Variablen, mit der Tabelle der Produktparameter | 1,5 | S |
-| 3.2.4 | Nebenbedingungen | 2 | S |
+| | Einleitung mit Preis, Lücke und Aufgabe, aus dem aufgelösten 3.1.3 | 0,5 | F, acht Sätze |
+| 3.2.1 | Ansatz und Lösungsverfahren | 1 | T, erster Absatz mit vier Sätzen |
+| 3.2.2 | Datengrundlage und Anlage | 0,5 | S |
+| 3.2.3 | Speicher und Zielfunktion, mit der Tabelle der Produktparameter | 1,5 | S |
+| 3.2.4 | Abbildung der Märkte, je Markt Preis, Erlös und Nebenbedingung | 2,5 | S |
 | 3.2.5 | Bestimmung des kurativen Reservierungspreises | | S, neu von der zweiten Sitzung |
 | 3.2.6 | Systemgrenzen und Abgrenzungen | 1,5 | S |
 | **3.3** | **Validierung des Modells** | **2** | S |
@@ -90,6 +90,9 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 - **3.1.3 aufgelöst.** Preis, Lücke und Aufgabe öffnen 3.2, die Einordnung des
   Marktdesigns steht hinter dem Katalog. Der Einleitungssatz von 3.1 und der
   Kapitelüberblick in `chapter_1.tex` sind nachgezogen.
+- **Auswertungszeitraum ganzes Jahr 2025** statt viertes Quartal. CLAUDE.md §9
+  Entscheidung 10 ist vom Verfasser nachzuziehen. Dazu λ-Hebel und aFRR-Leiter als
+  Stichpunkte in 3.2, die Sensitivitäten werden in 3.2 schon angesprochen.
 - **Entfallen.** Die Begründung der Klassen gegenüber InnoSys 2030, der Aufwand
   vor dem Zuschlag, die Kostenwälzung und der Schlusssatz von 3.1.2.
 
@@ -116,8 +119,9 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 9. **Verdrängung der Regelleistung.** Offen ist, ab welchem Preis die kurative
    Reservierung nicht mehr nur die Arbitrage, sondern auch die Regelleistung
    verdrängt. In 3.2 entfallen, die Frage bleibt Kapitel 5 überlassen.
-10. **Einleitung von 3.2.** Die beiden Stichpunkte der zweiten Sitzung sagen
-   kurative Bindung, nach Stilregel 5 heißt es kurative Reservierung.
+10. **Einleitung von 3.2**, erledigt am 11.09.2026 mit den Sätzen 7 und 8.
+11. **Bildunterschriften in 3.2** auf ein bis drei Zeilen kürzen, Vorgabe des
+   Verfassers. Fünf Vorschläge liegen vor, die Freigabe steht aus.
 
 ---
 

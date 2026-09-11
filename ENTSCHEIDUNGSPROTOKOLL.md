@@ -545,6 +545,35 @@ K1, dazu steht ein Kopfvermerk hinter sec:model_scope. Umgeschrieben ist nichts,
 die Stichpunkte sind gemeinsam neu zu fassen.
 
 
+### 11.09.2026, Auswertungszeitraum ganzes Jahr 2025, lambda-Hebel und aFRR-Leiter
+
+**Entscheidung des Verfassers.** Die Arbeit rechnet mit dem ganzen Jahr 2025
+und nicht mehr allein mit dem vierten Quartal. Damit ist CLAUDE.md Abschnitt 9
+Entscheidung 10 ueberholt, nachziehen will der Verfasser selbst. Der Stichpunkt
+zum Auswertungszeitraum in 3.2.2 nennt jetzt das Jahr 2025 und den Wechsel des
+Day-Ahead von Stunden auf Viertelstunden am 01.10.2025. Die Validierung in 3.3
+hebt sich nicht mehr von einem Quartal ab. In chapter_5.tex entfaellt der
+Diskussionspunkt zur fehlenden Saisonalitaet. Als Kommentar vorgeschlagen, vom
+Verfasser zu bestaetigen, ist an seiner Stelle der Regimebruch innerhalb des
+Zeitraums. chapter_6.tex traegt einen Kommentar. Nicht wieder aufzunehmen ist
+die Begruendung, der Regimebruch mache das vierte Quartal zum einzigen
+gueltigen Auswertungsfenster. Offen bleibt, wie der Stichpunkt zur Aufloesung
+von 96 Viertelstunden die Monate vor der Umstellung behandelt, ebenso der
+Beispieltag im November gegenueber den drei Beispieltagen des Codes.
+
+**lambda-Hebel**, Erlaeuterung des Verfassers, praezisiert nach MODELL.md. Er
+streckt die Preise des IDC um ihr Tagesmittel mit einem Faktor zwischen 1,0 und
+2,0 und erhoeht so den Spread. Mit dem festen Aufschlag von drei Prozent auf
+den ID1 in 3.2.2 ist er nicht zu verwechseln. Er steht als Stichpunkt bei den
+Schleifen um die Suche.
+
+**aFRR-Modellierungsleiter**, Vorgabe des Verfassers. Sie wird bei der
+Modellierung der aFRR in 3.2.4 erklaert und steht dort als Stichpunkt mit den
+sechs Stufen aus MODELL.md. In der fuenften Stufe steht nach Stilregel 5
+vorgehaltene Leistung statt Reservierung. Welche Stufe der Basisfall ist, ist
+zu pruefen. Meine eigene Ableitung ist die vierte Stufe.
+
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -4968,6 +4997,138 @@ Marktdesigns tritt. Der Halbsatz zum Forschungsbedarf ist entfallen, weil die
 Ableitung seit der Aufloesung von 3.1.3 Abschnitt 3.2 eroeffnet. Die Worte ein
 Produkt kurative Reservierung sind zu mit der kurativen Reservierung ein Produkt
 geglaettet, das hat der Verfasser noch zu bestaetigen.
+
+
+### 11.09.2026, Nachtrag, Abbildung Modellaufbau gestrichen, Sensitivitaeten erst in den Ergebnissen
+
+**Entscheidung des Verfassers.** Die Abbildung fig:modellaufbau entfaellt in
+3.2.1. Wie die Maerkte modelliert sind, beschreibt der Fliesstext. An die
+Stelle des Stichpunkts, der auf die Abbildung verwies, tritt einer zur
+Reihenfolge der Zuschlaege, naemlich FCR, aFRR-Leistung, Day-Ahead, kurative
+Reservierung, Intraday und aFRR-Arbeit, jeder mit eigenem Produktzuschnitt,
+Energievorhalt und Preis. Die Angaben des Bildes stehen als Kommentar am
+Stichpunkt, in die Begriffe der Arbeit uebertragen. Die Datei bleibt im
+Repository.
+
+**Sensitivitaeten erst in den Ergebnissen**, Vorgabe des Verfassers. Im
+Stichpunkt zu den Schleifen um die Suche entfallen die Konfigurationen und
+Studien. Offen und vom Verfasser zu entscheiden ist die Abbildung
+fig:schleifenebenen, die diese Ebenen und die 20 Sensitivitaetstage weiterhin
+zeigt.
+
+
+### 11.09.2026, Nachtrag, Sensitivitaeten doch schon in 3.2
+
+**Entscheidung des Verfassers**, sie hebt die Vorgabe aus dem vorigen Eintrag
+auf. Die Abbildung fig:schleifenebenen bleibt, und die Sensitivitaeten werden
+in 3.2 schon angesprochen. Der Stichpunkt zu den Schleifen um die Suche nennt
+wieder Tage, Konfigurationen und Studien. Die Zwischenfassung ohne sie steht als
+Kommentar. Die Streichung der Abbildung fig:modellaufbau bleibt bestehen.
+Unveraendert offen ist der Kommentar am Stichpunkt, nach dem das Bild drei
+Beispieltage und 363 bis 365 Tage im Jahr nennt, waehrend die Arbeit einen
+Beispieltag im November und nach Entscheidung 10 das vierte Quartal fuehrt.
+
+
+### 11.09.2026, Nachtrag, Basisfall der aFRR-Leiter und Studie Einzelmarkt
+
+Der Verfasser bestaetigt, dass der Basisfall die vierte Stufe der
+aFRR-Modellierungsleiter ist, also Leistung zum Mittelpreis und Arbeit anteilig
+am Abruf. Die Studie Einzelmarkt optimiert nach seiner Erlaeuterung jeden Markt
+fuer sich und dient dem Vergleich je Markt in der Validierung. Beides steht als
+Stichpunkt in 3.2. Unerklaert ist noch die Studie reservierte Leistung mal
+Abrufdauer.
+
+
+### 11.09.2026, Nachtrag, Einleitung von 3.2 mit den Saetzen 7 und 8
+
+Beide Saetze sind Fassung A und vom Verfasser gewaehlt. Sie ersetzen die beiden
+Stichpunkte der zweiten Sitzung zu Modell und Abbildung und setzen den Absatz
+fort, der damit acht Saetze hat. Satz 7 beschreibt das Modell nach K1, es gibt
+fuer die kurative Reservierung einen Preis vor, auf den der Betreiber seine
+Vermarktung einstellt. Satz 8 fuehrt Abbildung fig:modellkette ein und nennt
+nur die Kette von den Marktdaten ueber die Dispatch-Optimierung bis zu den
+Ergebnissen. Nach Stilregel 5 steht Dispatch-Optimierung wie im Bild und nicht
+Tagesmodell, und die kurative Bindung des Stichpunkts heisst kurative
+Reservierung.
+
+
+### 11.09.2026, Nachtrag, Stichpunkte von 3.2.1 neu gefasst
+
+Vom Verfasser bestaetigt. Der erste Stichpunkt leitet jetzt ein, weil die
+Definition des Preises nach K1 in Satz 5 der Einleitung von 3.2 steht. Die
+Opportunitaetsgroesse entsteht nach K1 nicht als Unterschied zweier Fahrplaene,
+der Lauf mit Preis null liefert den Bezug. Die zwei Laeufe je Tag entfallen, die
+Suche beschreibt 3.2.5. Das Problem ist wegen der Mindestgroesse von 25 MW
+gemischt-ganzzahlig. Die Aufloesung von 96 Viertelstunden gilt fuer das ganze
+Jahr, vor dem 01.10.2025 gilt der stuendliche Day-Ahead-Preis fuer alle vier
+Viertelstunden, nach MODELL.md. Kurative Bindung heisst nach Stilregel 5 in
+allen Stichpunkten kurative Reservierung.
+
+**Maerkte, Antworten des Verfassers zu K7.** Den IDC bildet das Modell ueber den
+ID1-Index ab, weil er pay-as-bid ist und Orderbuecher nicht vorliegen. Die mFRR
+ist der aFRR im Produkt aehnlich und erzielt geringere Leistungspreise, das ist
+noch zu belegen. Fuer die Intraday-Auktionen traegt der Grund zum IDC nicht,
+weil sie einen veroeffentlichten Einheitspreis haben. Vorlaeufig steht der
+Vergleichsmassstab der Validierung als Grund, das ist mein Vorschlag und vom
+Verfasser zu bestaetigen.
+
+**Kannibalisierung** nach 3.2.6 verschoben, entschieden vom Verfasser. Beim
+Ausformulieren als Grenze der historischen Preise zu fassen.
+
+
+### 11.09.2026, Nachtrag, 3.2.1 erster Absatz
+
+**Vier Saetze**, vom Verfasser gewaehlt, Satz 1 B, Satz 2 B, Satz 3 B, Satz 4 A.
+Satz 1 nennt die drei Anforderungen an das Modell, naemlich den ungebundenen
+Fahrplan als Bezug, die Kopplung des Ladezustands und die gemeinsame
+Entscheidung aller Maerkte. Die folgenden Saetze begruenden sie einzeln.
+
+**Angemerkt, vom Verfasser so gewaehlt.** Nach K1 braucht der Preis keinen
+Bezug, die Suche findet ihn ueber den Fuellgrad. Satz 2 gibt dem Lauf mit Preis
+null deshalb die Aufgabe, den Vergleich der Fahrplaene zu liefern. Das ist meine
+Ableitung. Verworfen ist die Fassung, die den Preis als Opportunitaetsgroesse aus
+dem Unterschied zweier Fahrplaene erklaerte.
+
+**Eigene Ableitung in Satz 3**, vom Verfasser gewaehlt. Die Reservierung bindet
+ueber das Ladezustandsband auch die Stunden vor der Zeitscheibe.
+
+**Satz 4 nach Vorgabe des Verfassers.** Die Aussage des Stichpunkts, die Kosten
+der Reservierung hingen davon ab, was bereits zugesagt ist, ist verworfen.
+Verworfen ist auch meine Fassung, die uebrige Vermarktung sei eine Kombination
+von Maerkten. An ihre Stelle tritt die Annahme vollstaendiger Preiskenntnis,
+unter der die Anlage Leistung und Ladezustand in einer Entscheidung optimal
+verteilt. Die Begruendung des Verfassers aus der Zielsetzung, naemlich die
+Erloese nach oben abzuschaetzen, weil die Arbeit die Kosten des UENB abschaetzt,
+steht am Stichpunkt zur oberen Schranke.
+
+
+### 11.09.2026, Nachtrag, 3.2 nach Maerkten gegliedert
+
+**Entscheidung des Verfassers.** Die Modellierung der einzelnen Maerkte steht
+jetzt je Markt an einer Stelle, in der Reihenfolge DA, IDC, FCR, aFRR-Leistung,
+aFRR-Arbeit und zuletzt die kurative Reservierung. Bisher stand jeder Markt an
+drei Stellen, sein Preis in den Eingangsdaten, sein Erloes in der Zielfunktion
+und seine Nebenbedingung bei den Nebenbedingungen. Die Unterabschnitte heissen
+jetzt 3.2.2 Datengrundlage und Anlage, 3.2.3 Speicher und Zielfunktion und 3.2.4
+Abbildung der Maerkte. Die Marken bleiben an ihren Unterabschnitten. Der
+Stichpunkt zum IDC ueber den ID1 ist aus 3.2.1 in den Block des IDC gewandert.
+
+**Aufgeteilt** sind die Stichpunkte, die mehrere Maerkte zusammenfassten,
+naemlich Leistungspreise, Erloese am DA und IDC, Erloese der Leistungsmaerkte,
+Ladezustandsbaender und die Konstanz der Vorhaltungen. Die alten Fassungen
+stehen als Kommentar. Aus der gestrichenen Abbildung zum Modellaufbau stammen
+die Angaben, dass die FCR symmetrisch ist und die aFRR-Leistung je Richtung
+vorgehalten wird.
+
+**Nach K1 neu gefasst.** Die kurative Reservierung ist eine Variable je
+Viertelstunde und Richtung und traegt den vorgegebenen Preis mal der
+reservierten Leistung zur Zielfunktion bei. Der Erloesterm stuetzt sich auf die
+Abbildung zum Modellaufbau, die E_kur in der Zielfunktion zeigt, und ist am Code
+zu bestaetigen. Entfallen und nicht wieder aufzunehmen sind die Aussagen, die
+Bindung sei keine Variable, sondern eine Vorgabe, und die Zielfunktion enthalte
+keinen Erloesterm fuer die kurative Vorhaltung. Neu ist ein Stichpunkt zur
+Mindestgroesse von 25 MW als Binaerbedingung, der denselben Grund nennt wie der
+Stichpunkt zum gemischt-ganzzahligen Problem in 3.2.1.
 
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
