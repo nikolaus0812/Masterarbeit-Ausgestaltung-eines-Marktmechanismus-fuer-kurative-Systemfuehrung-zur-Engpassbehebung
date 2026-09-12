@@ -5385,6 +5385,35 @@ Strikepreis aus der IDA-1, der ID1 kommt dort nur als Vergleichswert vor.
 nach Entscheidung des Verfassers allein im Day-Ahead-Block.
 
 
+### 12.09.2026, Nachtrag, Zielfunktion als Formel in 3.2.2
+
+**Neue Anweisung des Verfassers.** Die Erloesterme der Maerkte sollen als Formel
+erscheinen. Auf die Frage, ob die Zielfunktion davor gehoert, hat er mir die
+Entscheidung ueberlassen. Sie steht jetzt in 3.2.2 vor den Maerkten, damit die
+Summanden in 3.2.3 einen Rahmen haben.
+
+**Satz und Formel.** Fassung A, gewaehlt vom Verfasser, naemlich dass die
+Zielfunktion den Nettoerloes eines Liefertages ueber alle gefuehrten Maerkte
+abzueglich der Degradationskosten maximiert. Die abgesetzte Formel traegt die
+Marke eq:zielfunktion und ist die erste Formel in Kapitel 3. Verworfen sind die
+Fassung mit der Ankuendigung der Termstruktur und die Fassung, die den
+vorgegebenen Preis der Reservierung in der Zielfunktion hervorhebt.
+
+**Symbolsatz bestaetigt.** Preise p je Markt, Leistungen P, gehandelte Leistung
+getrennt nach Verkauf und Kauf, Speicherinhalt S, Wirkungsgrade eta,
+Degradationskostensatz c^deg, vorgegebener Reservierungspreis pi, Zeitschritt
+Delta t. Erloese heissen E je Markt, die Degradationskosten K^deg. Praezisiert
+ist dabei der Leistungsteil der aFRR als E^{aFRR,L} gegenueber dem Arbeitsteil
+E^{aFRR,E}. Nach CLAUDE.md Abschnitt 10 bleiben g, X, d und V dem Weber-Ansatz
+vorbehalten. Der Code fuehrt g, x, D und V, die Arbeit weicht davon ab, das ist
+der offene Punkt K8.
+
+**Form.** Die Marktterme folgen nach Anweisung des Verfassers abgesetzt hinter
+der Erklaerung des jeweiligen Marktes. Beim IDC traegt die Formel die
+Spreadbestimmung ueber einen Faktor alpha, dessen Hoehe als Sensitivitaet
+variiert wird und im Text keine Zahl bekommt.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst

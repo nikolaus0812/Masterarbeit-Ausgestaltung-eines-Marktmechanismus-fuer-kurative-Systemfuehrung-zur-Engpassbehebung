@@ -2601,8 +2601,31 @@ Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntn
 % Regel um, 3.1.2 beschreibt sie nur.
 %    \item Daraus folgt die Ausschließlichkeit der kurativen Zusage, denn eine kurativ gebundene Leistung steht keinem anderen Markt zur Verfügung
     \item Leistungsschranke je Seite, auf der sich der Handel, die \ac{aFRR}, die kurative Reservierung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung teilen, woraus die Ausschließlichkeit der kurativen Zusage folgt
-% --- Zielfunktion
-    \item Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte abzüglich der Degradationskosten
+\end{itemize}
+
+% AUSFORMULIERT am 12.09.2026, Fassung A, gewaehlt vom Verfasser, mit
+% abgesetzter Formel nach seiner Anweisung, die Erloesterme der Maerkte als
+% Formel zu fuehren. Die Zielfunktion steht vor den Maerkten, damit die
+% Summanden in 3.2.3 einen Rahmen haben.
+% SYMBOLSATZ vom Verfasser bestaetigt. E je Markt fuer den Erloes, K^deg fuer
+% die Degradationskosten. Der Leistungsteil der aFRR heisst E^{aFRR,L} und
+% der Arbeitsteil E^{aFRR,E}, das praezisiert den bestaetigten Satz. Nach
+% CLAUDE.md Abschnitt 10 sind g, X, d und V durch den Weber-Ansatz belegt und
+% kommen hier nicht vor. Der Code fuehrt g, x, D und V, die Arbeit weicht
+% davon bewusst ab, offener Punkt K8.
+% ERSTE FORMEL IN KAPITEL 3. Umgebung equation mit Marke wie in Kapitel 2.
+% Der Rest von 3.2.2 steht weiterhin in Stichpunkten.
+% STICHPUNKT ERSETZT am 12.09.2026, alte Fassung:
+%    \item Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte abzüglich der Degradationskosten
+Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführten Märkte abzüglich der Degradationskosten.
+
+\begin{equation}
+    \label{eq:zielfunktion}
+    \max \; E^{\mathrm{DA}} + E^{\mathrm{IDC}} + E^{\mathrm{FCR}} + E^{\mathrm{aFRR,L}} + E^{\mathrm{aFRR,E}} + E^{\mathrm{kur}} \; - \; K^{\mathrm{deg}}
+\end{equation}
+
+\begin{itemize}
+% --- Degradation
 % GEKUERZT am 12.09.2026. Den Bezug auf den Durchsatz nennt die Kostenannahme bei der Anlage.
 % Alte Fassung:
 %    \item Degradation als linearer Kostensatz auf den physischen Durchsatz, der den Handel und die gelieferte Arbeit belastet und die Vorhaltungen nicht \cite{kumtepeli_energy_2020}
