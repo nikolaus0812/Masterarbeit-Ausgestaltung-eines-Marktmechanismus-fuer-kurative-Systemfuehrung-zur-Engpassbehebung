@@ -2017,7 +2017,11 @@ Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdat
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_3/modellkette.pdf}
-    \caption{Modellkette eines Liefertages. Die Marktdaten sowie die Anlagen- und Marktparameter werden auf 96 Viertelstunden aufbereitet, und die Dispatch-Optimierung löst den ganzen Tag in einem Lauf. Die Suche nach dem kurativen Reservierungspreis ruft das Tagesmodell wiederholt auf, gibt ihm einen Preis vor und liest den Füllgrad zurück.}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Modellkette eines Liefertages. Die Marktdaten sowie die Anlagen- und Marktparameter werden auf 96 Viertelstunden aufbereitet, und die Dispatch-Optimierung löst den ganzen Tag in einem Lauf. Die Suche nach dem kurativen Reservierungspreis ruft das Tagesmodell wiederholt auf, gibt ihm einen Preis vor und liest den Füllgrad zurück.}
+    \caption{Modellkette eines Liefertages. Die Suche nach dem kurativen Reservierungspreis ruft die Dispatch-Optimierung wiederholt mit einem vorgegebenen Preis auf und liest den Füllgrad zurück.}
     \label{fig:modellkette}
 \end{figure}
 
@@ -2795,22 +2799,64 @@ Auswertungszeitraum ist das Jahr 2025, und weil der \ac{DA} erst seit dem 01.10.
 Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, indem es die fehlende Stunde im Frühjahr durch Platzhalter ersetzt, im Herbst die zweite Ausführung der doppelten Stunde verwirft und die betroffene Stunde in beiden Fällen sperrt.
 
 \subsubsection*{Day-Ahead}
-\begin{itemize}
+% AUSFORMULIERT am 12.09.2026, satzweise, jeder Satz vom Verfasser gewaehlt.
+% Satz 1 A, Satz 2 A, Satz 3 A, Satz 4 neu nach Vorgabe des Verfassers, der
+% die Arbitrage hier genannt haben wollte.
+% SATZ 4 ist eine eigene Ableitung aus dem Stichpunkt zur Energieneutralitaet,
+% vom Verfasser gewaehlt und von ihm zu pruefen. Verworfen ist die Fassung, die
+% die Arbitrage ueber das Kaufen in Niedrigpreisphasen und das Verkaufen in
+% Hochpreisphasen erklaert haette, weil chapter_2.tex Zeile 685 das bereits
+% sagt.
+% BEGRIFF. Satz 3 sagt kurative Reservierung statt Bindung, Stilregel 5.
+% K7. Satz 3 ist die einzige Stelle, an der das Modell die zeitliche Staffelung
+% der Maerkte nachbildet.
+% STICHPUNKTE ERSETZT am 12.09.2026, alte Fassung:
+%\begin{itemize}
 % K6. Der Code liest energy-charts.de. SMARD fuehrt keinen ID1.
 % GEKUERZT am 12.09.2026. Den Produktschnitt nennt der Absatz zur Datenlage.
 % Alte Fassung:
 %    \item Preisreihe des \ac{DA} für die Gebotszone Deutschland und Luxemburg, seit dem 01.10.2025 in Viertelstunden \cite{smard_marktdaten_2026}
-    \item Preisreihe des \ac{DA} für die Gebotszone Deutschland und Luxemburg \cite{smard_marktdaten_2026}
+%    \item Preisreihe des \ac{DA} für die Gebotszone Deutschland und Luxemburg \cite{smard_marktdaten_2026}
 % AUFGETEILT am 11.09.2026 auf die Maerkte, Umbau nach Maerkten. Alte Fassung:
 %    \item Die Erlöse am \ac{DA} und am \ac{IDC} folgen aus Preis und gehandelter Energie, wobei der Aufschlag am \ac{IDC} Verkäufe höher und Käufe niedriger bewertet als den \ac{ID1}
-    \item Der Erlös am \ac{DA} folgt aus Preis und gehandelter Energie
+%    \item Der Erlös am \ac{DA} folgt aus Preis und gehandelter Energie
 % K7. Die Energieneutralitaet ist die einzige Stelle, an der das Modell die
 % Staffelung der Maerkte nachbildet.
-    \item Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken, womit das Modell nachbildet, dass das Gebot am \ac{DA} die Bindung noch nicht kennt
-\end{itemize}
+%    \item Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken, womit das Modell nachbildet, dass das Gebot am \ac{DA} die Bindung noch nicht kennt
+%\end{itemize}
+% QUELLE UMGESTELLT am 12.09.2026, entschieden vom Verfasser. SMARD fuehrt
+% weder den ID1 noch den ID3, die Reihen stammen von energy-charts, das die
+% Preise der EPEX Spot SE ausweist. Alte Fassung:
+%Die Preisreihe des \ac{DA} ist der Auktionspreis der Gebotszone Deutschland und Luxemburg \cite{smard_marktdaten_2026}.
+Die Preisreihe des \ac{DA} ist der Auktionspreis der Gebotszone Deutschland und Luxemburg \cite{energy_charts_strompreise_2026}.
+Der Erlös am \ac{DA} folgt aus Preis und gehandelter Energie.
+Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken, womit das Modell nachbildet, dass das Gebot am \ac{DA} die kurative Reservierung noch nicht kennt.
+Ein Geschäftspaar am \ac{DA} kommt damit nur zustande, wenn die Preisspanne der Arbitrage die Degradationskosten übersteigt.
 
 \subsubsection*{Kontinuierlicher Intraday-Handel}
-\begin{itemize}
+% AUSFORMULIERT am 12.09.2026, satzweise, jeder Satz vom Verfasser gewaehlt, die
+% Folge der Saetze hat er vorgegeben, naemlich Index, Problem des pay-as-bid,
+% Abbildungsversuch und assetgestuetzter Handel.
+% ZU PRUEFEN in Satz 2. Dass der ID1 ein volumengewichteter Durchschnitt der
+% Geschaefte der letzten Stunde ist, entspricht der ueblichen Definition, steht
+% aber weder im Abkuerzungsverzeichnis noch belegt im Text. An der Beschreibung
+% von energy-charts oder EPEX festmachen.
+% SATZ 5 OHNE ZAHL, Vorgabe des Verfassers. Der Aufschlag von drei Prozent nach
+% oben und unten, zusammen sechs Prozent Spread, steht damit nicht mehr im
+% aktiven Text. Er bleibt in der archivierten Fassung unten und in MODELL.md,
+% und die Hoehe ist bei den Sensitivitaeten zu nennen.
+% EIGENE RECHNUNG, nicht in den Text uebernommen. Aus den 35.040 Viertelstunden
+% des Jahres 2025 liegt die mittlere Tagesspanne des ID1 bei 231,08 Euro je
+% Megawattstunde, die des ID3 bei 179,87 und die des Durchschnittspreises bei
+% 182,56, waehrend die Niveaus mit 89,60, 89,09 und 89,52 nahezu gleich sind.
+% Der Verfasser hat Fassung A gewaehlt, die ohne diese Zahlen auskommt. Damit
+% ruht die Wahl des ID1 allein auf der Annahme des sehr kurzfristigen Handels.
+% ERLOESSATZ ENTFALLEN. Satz 1 sagt bereits, dass die Anlage auch am IDC Energie
+% handelt, der eigene Stichpunkt zum Erloes ist damit ueberfluessig.
+% AUSGEGLICHENHEIT bleibt nach Entscheidung des Verfassers beim Day-Ahead, wo
+% sie als Regel steht, und wird hier nicht wiederholt.
+% STICHPUNKTE ERSETZT am 12.09.2026, alte Fassung:
+%\begin{itemize}
 % HIERHER VERSCHOBEN am 11.09.2026 aus 3.2.1, Umbau nach Maerkten.
 % K7 BEANTWORTET am 11.09.2026 vom Verfasser. Der IDC ist pay-as-bid, fuer
 % eine genauere Abbildung braeuchte man die Orderbuecher, die nicht
@@ -2822,12 +2868,19 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 % Battery-Revenue-Index von energy-charts, der die Intraday-Erloese ueber dem
 % ID1 ausweist. Eintrag fehlt.
 %    \item Bewertung des \ac{IDC} mit dem \ac{ID1} je Viertelstunde, erweitert um einen Aufschlag, der Verkäufe drei Prozent über und Käufe drei Prozent unter dem Index bewertet
-    \item Den \ac{IDC} bildet das Modell je Viertelstunde über den \ac{ID1}-Index ab, weil er nach pay-as-bid abgerechnet wird und die Orderbücher für eine genauere Abbildung nicht vorliegen, erweitert um einen Aufschlag, der Verkäufe drei Prozent über und Käufe drei Prozent unter dem Index bewertet
+%    \item Den \ac{IDC} bildet das Modell je Viertelstunde über den \ac{ID1}-Index ab, weil er nach pay-as-bid abgerechnet wird und die Orderbücher für eine genauere Abbildung nicht vorliegen, erweitert um einen Aufschlag, der Verkäufe drei Prozent über und Käufe drei Prozent unter dem Index bewertet
 % GEKUERZT am 12.09.2026, entschieden vom Verfasser. Den Aufschlag nennt der
 % Stichpunkt zum Preis, hier stand er ein zweites Mal. Alte Fassung:
 %    \item Der Erlös am \ac{IDC} folgt aus Preis und gehandelter Energie, wobei der Aufschlag Verkäufe höher und Käufe niedriger bewertet als den \ac{ID1}
-    \item Der Erlös am \ac{IDC} folgt aus Preis und gehandelter Energie
-\end{itemize}
+%    \item Der Erlös am \ac{IDC} folgt aus Preis und gehandelter Energie
+%\end{itemize}
+Auch am \ac{IDC} handelt die Anlage Energie, bewertet wird dieser Handel aber je Viertelstunde mit dem \ac{ID1}, dem Preisindex der letzten Stunde vor Lieferbeginn \cite{energy_charts_strompreise_2026}.
+Im kontinuierlichen Handel kommt jedes Geschäft zu seinem eigenen Preis zustande, sodass es für eine Viertelstunde keinen einheitlichen Preis gibt und eine viertelstundenübergreifende Arbitrage auf volumengewichtete Durchschnittspreise zurückgreifen muss.
+Das Modell lässt deshalb nur Arbitrage zwischen Viertelstunden zu, während ein Betreiber dieselbe Viertelstunde mehrfach handeln und eine frühere Position innerhalb desselben Lieferzeitpunktes wieder glattstellen kann.
+Was er damit zusätzlich verdient, ließe sich nur aus den Orderbüchern ablesen, und ohne sie bleibt ein rollierender Handel mit laufender Neubewertung eine Schätzung.
+Das Modell bildet diesen Vorteil über einen Aufschlag ab, der Verkäufe über und Käufe unter dem Index bewertet, den Spread damit weitet und dessen Höhe als Sensitivität variiert wird.
+Neben dem \ac{IDC} führt das Modell den \ac{DA}, sodass sich Arbitrage zu unterschiedlichen Zeitpunkten ergibt und beide Märkte zusammen abbilden, was eine Anlage am Spotmarkt erreichen kann.
+Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
 
 \subsubsection*{\acs{FCR}}
 \begin{itemize}
@@ -3165,7 +3218,11 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 \begin{figure}[tbp]
     \centering
     \includegraphics{figures/chapter_3/reservierungspreis_iteration1.pdf}
-    \caption{Flussdiagramm der 1.~Iteration mit Symbolen nach DIN 66001. Jede Dispatch-Optimierung löst als vordefinierter Prozess den ganzen Tag mit allen Stunden bei einem einheitlichen Preis. Aus jedem Lauf wird der Füllgrad aller Stunden abgelesen, und jede Stunde halbiert ihr Suchintervall, bis es schmaler als 0,05 Euro je Megawatt und Stunde ist. Ergebnis ist je Stunde und Richtung der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist.}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Flussdiagramm der 1.~Iteration mit Symbolen nach DIN 66001. Jede Dispatch-Optimierung löst als vordefinierter Prozess den ganzen Tag mit allen Stunden bei einem einheitlichen Preis. Aus jedem Lauf wird der Füllgrad aller Stunden abgelesen, und jede Stunde halbiert ihr Suchintervall, bis es schmaler als 0,05 Euro je Megawatt und Stunde ist. Ergebnis ist je Stunde und Richtung der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist.}
+    \caption{Ablauf der 1.~Iteration. Je Stunde und Richtung halbiert die Suche ihr Preisintervall, bis der kleinste einheitliche Preis feststeht, bei dem die Stunde voll reserviert ist.}
     \label{fig:reservierungspreis_iteration1}
 \end{figure}
 
@@ -3180,7 +3237,11 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_3/reservierungspreis_bisektion.pdf}
-    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
+    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
     \label{fig:reservierungspreis_bisektion}
 \end{figure}
 
@@ -3206,7 +3267,11 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 \begin{figure}[tbp]
     \centering
     \includegraphics{figures/chapter_3/reservierungspreis_iteration2.pdf}
-    \caption{Flussdiagramm der 2.~Iteration. Der Preisvektor der 1.~Iteration wird vorgegeben, und Stunden, die dabei nicht voll reserviert sind, werden angehoben, zuerst in drei Bandrunden Stunde für Stunde bei festgehaltenen übrigen Preisen, danach einmalig um 20 Prozent und zuletzt in Schritten von 5 Prozent, bis alle Stunden zugleich voll reserviert sind.}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Flussdiagramm der 2.~Iteration. Der Preisvektor der 1.~Iteration wird vorgegeben, und Stunden, die dabei nicht voll reserviert sind, werden angehoben, zuerst in drei Bandrunden Stunde für Stunde bei festgehaltenen übrigen Preisen, danach einmalig um 20 Prozent und zuletzt in Schritten von 5 Prozent, bis alle Stunden zugleich voll reserviert sind.}
+    \caption{Ablauf der 2.~Iteration. Stunden, die unter den Preisen der 1.~Iteration nicht voll reserviert sind, werden angehoben, bis alle Stunden zugleich voll reserviert sind.}
     \label{fig:reservierungspreis_iteration2}
 \end{figure}
 
@@ -3259,7 +3324,11 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 \begin{figure}[htbp]
     \centering
     \includegraphics{figures/chapter_3/schleifenebenen.pdf}
-    \caption{Schleifen um das Tagesmodell. Studien, Konfigurationen und Tage liegen ineinander. Innerhalb eines Tages stehen der Preis-Sweep über zehn vorgegebene Preise und die Suche nach dem kurativen Reservierungspreis nebeneinander und rufen jeweils für sich die Dispatch-Optimierung auf.}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Schleifen um das Tagesmodell. Studien, Konfigurationen und Tage liegen ineinander. Innerhalb eines Tages stehen der Preis-Sweep über zehn vorgegebene Preise und die Suche nach dem kurativen Reservierungspreis nebeneinander und rufen jeweils für sich die Dispatch-Optimierung auf.}
+    \caption{Schleifen um das Tagesmodell. Je Tag rufen die Suche und der Preis-Sweep die Dispatch-Optimierung auf, darüber liegen Konfigurationen und Studien.}
     \label{fig:schleifenebenen}
 \end{figure}
 

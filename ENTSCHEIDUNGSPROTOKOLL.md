@@ -5311,6 +5311,80 @@ der Abschluss zum opportunitaetskostenbasierten Teil des Gebots, die beim
 Ausformulieren zusammenzuziehen sind.
 
 
+### 12.09.2026, Nachtrag, Day-Ahead-Block in 3.2.3 ausformuliert
+
+**Vier Saetze.** Satz 1 nennt die Preisreihe als Auktionspreis der Gebotszone
+Deutschland und Luxemburg, Satz 2 den Erloes aus Preis und gehandelter Energie,
+Satz 3 die Energieneutralitaet ueber den Tag samt der Deckung der eigenen
+Degradationskosten und der Begruendung, dass das Gebot am Day-Ahead die kurative
+Reservierung noch nicht kennt. Nach dem Vermerk zu K7 ist das die einzige Stelle,
+an der das Modell die zeitliche Staffelung der Maerkte nachbildet.
+
+**Satz 4 auf Vorgabe des Verfassers.** Er wollte die Arbitrage hier genannt
+haben. Der Satz sagt, dass ein Geschaeftspaar am Day-Ahead nur zustande kommt,
+wenn die Preisspanne der Arbitrage die Degradationskosten uebersteigt. Das ist
+meine Ableitung aus dem Stichpunkt zur Energieneutralitaet und vom Verfasser zu
+pruefen. Verworfen ist die Fassung, die die Arbitrage ueber das Kaufen in
+Niedrigpreisphasen und das Verkaufen in Hochpreisphasen erklaert haette, weil
+chapter_2.tex Zeile 685 das bereits sagt. Der Begriff selbst ist in Kapitel 2
+eingefuehrt und wird hier nur verwendet.
+
+**Nicht uebernommen.** Die angebotene Fassung, die Arbitrage schon im Erloessatz
+zu nennen und damit Day-Ahead und IDC zusammenzufassen. Der IDC-Block traegt
+deshalb weiterhin einen eigenen Satz zum Erloes, beim Ausformulieren ist dort die
+Doppelung des Satzbaus zu vermeiden.
+
+
+### 12.09.2026, Nachtrag, Bildunterschriften gekuerzt und Preisquelle umgestellt
+
+**Fuenf Unterschriften gekuerzt**, Vorgabe des Verfassers, ein bis drei Zeilen
+statt drei bis fuenf. Betroffen sind die Modellkette, die beiden Flussdiagramme
+der Iterationen, die Bisektion und die Schleifen um das Tagesmodell. Jede alte
+Fassung steht als Kommentar. Bei der Bisektion entfaellt dabei die Aussage, der
+Fuellgrad steige monoton mit dem Preis. Sie ist nicht belegt, der Kommentar am
+zugehoerigen Stichpunkt haelt das fest. Die uebrigen Angaben, naemlich DIN 66001,
+die drei Bandrunden, die 20 und die 5 Prozent, stehen weiterhin in den
+Stichpunkten des Abschnitts.
+
+**Preisquelle umgestellt.** Der Day-Ahead-Satz zitiert nicht mehr
+smard_marktdaten_2026, sondern energy_charts_strompreise_2026. SMARD fuehrt
+weder den ID1 noch den ID3, und die ausgewerteten Reihen stammen aus dem Export
+von energy-charts, das die Preise der EPEX Spot SE ausweist. Damit ist der
+offene Punkt K6 zur Quelle der Preisreihen fuer den Day-Ahead erledigt.
+
+
+### 12.09.2026, Nachtrag, IDC-Block in 3.2.3 ausformuliert
+
+**Sieben Saetze**, die Folge hat der Verfasser vorgegeben, jeden Satz hat er
+gewaehlt. Satz 1 nennt den ID1 als Bewertungsreihe, Satz 2 das Problem des
+pay-as-bid und die Notwendigkeit volumengewichteter Durchschnittspreise, Satz 3
+die Beschraenkung des Modells auf Arbitrage zwischen Viertelstunden gegenueber
+dem mehrfachen Handel desselben Lieferzeitpunktes, Satz 4 die fehlenden
+Orderbuecher und den rollierenden Handel, Satz 5 den Aufschlag ohne Zahl, Satz 6
+den Day-Ahead als zweiten Markt und Satz 7 den Verzicht auf Hoechst- und
+Niedrigstpreis, weil sie keine Menge fuehren.
+
+**Ohne Zahl beim Aufschlag**, Vorgabe des Verfassers. Die drei Prozent nach oben
+und unten stehen nicht mehr im aktiven Text, sondern nur noch im archivierten
+Stichpunkt und in MODELL.md. Die Hoehe ist bei den Sensitivitaeten zu nennen.
+
+**Eigene Rechnung, nicht uebernommen.** Aus den 35.040 Viertelstunden des Jahres
+2025 liegt die mittlere Tagesspanne des ID1 bei 231,08 Euro je Megawattstunde
+gegen 179,87 beim ID3 und 182,56 beim Durchschnittspreis, waehrend die Niveaus
+mit 89,60, 89,09 und 89,52 nahezu gleich sind. Der Verfasser hat die Fassung
+ohne diese Zahlen gewaehlt und das Niveauargument ausdruecklich verworfen. Die
+Wahl des ID1 ruht damit auf der Annahme des sehr kurzfristigen Handels. Die
+Zahlen stehen als Kommentar an der Stelle.
+
+**Nicht wieder aufzunehmen.** Die Begruendung, auch der Weber-Ansatz nutze den
+ID1. Nach extras/attachment.tex stammen das erwartete Preisniveau und der
+Strikepreis aus der IDA-1, der ID1 kommt dort nur als Vergleichswert vor.
+
+**Angemerkt.** Dass der ID1 ein volumengewichteter Durchschnitt ist, traegt Satz
+2, ist aber noch zu belegen. Die Ausgeglichenheit des Day-Ahead-Handels bleibt
+nach Entscheidung des Verfassers allein im Day-Ahead-Block.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
@@ -6428,6 +6502,35 @@ einschließlich hull_options_2014, der als Eintrag vorliegt. Über alle sechs
 Kapiteldateien und den Anhang sind es 57 Schlüssel gegen 76 Einträge, ebenfalls
 ohne Befund. Der Hinweis im Kommentarblock, ohne den Abgleich breche biber ab,
 trifft für diese Fassung nicht mehr zu.
+
+### 12.09.2026, Eintraege fuer alle Datenquellen
+
+Auftrag des Verfassers. Angelegt sind fuenf Eintraege, das Abrufdatum ist nach
+seiner Angabe Ende Mai 2026, gesetzt auf den 31.05.2026.
+
+- **energy_charts_strompreise_2026**, Fraunhofer ISE, energy-charts.info. Daraus
+  stammen die Preisreihen des Day-Ahead, der Intraday-Auktionen und des
+  kontinuierlichen Intraday-Handels mit ID1, ID3, Durchschnitts-, Hoechst- und
+  Niedrigstpreis. Die Anmerkung nennt die EPEX Spot SE als Urheberin der Preise.
+- **epex_spot_marktdaten_2026**, EPEX Spot SE, als eigener Eintrag fuer den Fall,
+  dass die Arbeit die Urheberin zitieren soll.
+- **entsoe_transparency_2026**, ENTSO-E, RESTful Transparency API. Daraus stammen
+  die Grenzpreise der Plattform PICASSO im Vier-Sekunden-Raster, Dokumententyp A84.
+- **netztransparenz_regelenergie_2026**, die vier UENB. Daraus stammen der
+  Sollwert und die aktivierte Regelarbeit der aFRR sowie die
+  Redispatch-Massnahmen.
+- **isea_batterycharts_2026**, ISEA der RWTH Aachen. Das ist der Erloesindex, der
+  Vergleichsmassstab der Validierung. Damit ist der offene Punkt zur fehlenden
+  Quelle der Battery Charts erledigt.
+
+Bei **smard_marktdaten_2026** und **regelleistung_ausschreibungsdaten_2026** ist
+das Abrufdatum nachgetragen.
+
+**Noch nicht erledigt.** Die Fundstellen in Kapitel 3 zitieren fuer die
+Preisreihen weiterhin SMARD, das keinen ID1 und keinen ID3 fuehrt. Sie sind auf
+energy_charts_strompreise_2026 umzustellen, sobald der Verfasser entscheidet, ob
+die Arbeit energy-charts, die EPEX Spot SE oder beide zitiert.
+
 
 ## Offene Punkte, Stand 08.09.2026
 

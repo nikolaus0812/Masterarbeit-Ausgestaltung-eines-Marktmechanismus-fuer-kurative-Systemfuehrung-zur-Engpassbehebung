@@ -40,7 +40,7 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 | | Einleitung mit Preis, Lücke und Aufgabe, aus dem aufgelösten 3.1.3 | 0,5 | F, acht Sätze |
 | 3.2.1 | Ansatz und Lösungsverfahren, ohne die Märkte, mit den Systemgrenzen am Schluss | 1,5 | T, erster Absatz mit vier Sätzen |
 | 3.2.2 | Anlage, Speicher und Zielfunktion, mit der Tabelle der Produktparameter | 2 | S |
-| 3.2.3 | Abbildung der Märkte, je Markt eine unnummerierte Überschrift | 3 | T, Einstieg und Datenlage ausformuliert |
+| 3.2.3 | Abbildung der Märkte, je Markt eine unnummerierte Überschrift | 3 | T, bis einschließlich IDC ausformuliert |
 | 3.2.4 | Bestimmung des Preises, mit Weber-Abgrenzung und Gebotsbestandteilen | 2,5 | S |
 | **3.3** | **Validierung des Modells** | **2** | S |
 
