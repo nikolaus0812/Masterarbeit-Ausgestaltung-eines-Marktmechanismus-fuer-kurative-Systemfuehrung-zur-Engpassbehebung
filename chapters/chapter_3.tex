@@ -2855,9 +2855,24 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 % Preise der EPEX Spot SE ausweist. Alte Fassung:
 %Die Preisreihe des \ac{DA} ist der Auktionspreis der Gebotszone Deutschland und Luxemburg \cite{smard_marktdaten_2026}.
 Die Preisreihe des \ac{DA} ist der Auktionspreis der Gebotszone Deutschland und Luxemburg \cite{energy_charts_strompreise_2026}.
-Der Erlös am \ac{DA} folgt aus Preis und gehandelter Energie.
+% SATZ ENTFALLEN am 12.09.2026. Der Einleitungssatz der Formel sagt dasselbe,
+% und die Formel zeigt es. Alte Fassung:
+%Der Erlös am \ac{DA} folgt aus Preis und gehandelter Energie.
 Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken, womit das Modell nachbildet, dass das Gebot am \ac{DA} die kurative Reservierung noch nicht kennt.
 Ein Geschäftspaar am \ac{DA} kommt damit nur zustande, wenn die Preisspanne der Arbitrage die Degradationskosten übersteigt.
+% FORMEL AUFGENOMMEN am 12.09.2026 nach Anweisung des Verfassers, die Erloesterme
+% der Maerkte abgesetzt hinter der Erklaerung des jeweiligen Marktes zu fuehren.
+% Einleitungssatz in Fassung A, gewaehlt vom Verfasser.
+% SYMBOLE nach dem bestaetigten Satz. Verkauf und Kauf sind getrennte,
+% nichtnegative Leistungen, der Term rechnet mit Leistung mal Zeitschritt.
+% Der Summand traegt denselben Namen wie in der Zielfunktion, Gleichung
+% eq:zielfunktion.
+Der Erlös am \ac{DA} ist damit die über den Tag summierte Differenz aus Verkauf und Kauf, jeweils zum Auktionspreis der Viertelstunde.
+
+\begin{equation}
+    \label{eq:erloes_da}
+    E^{\mathrm{DA}} = \Delta t \sum_{t \in \mathcal{T}} p^{\mathrm{DA}}_t \left( P^{\mathrm{DA,aus}}_t - P^{\mathrm{DA,ein}}_t \right)
+\end{equation}
 
 \subsubsection*{Kontinuierlicher Intraday-Handel}
 % AUSFORMULIERT am 12.09.2026, satzweise, jeder Satz vom Verfasser gewaehlt, die
@@ -2867,6 +2882,9 @@ Ein Geschäftspaar am \ac{DA} kommt damit nur zustande, wenn die Preisspanne der
 % Geschaefte der letzten Stunde ist, entspricht der ueblichen Definition, steht
 % aber weder im Abkuerzungsverzeichnis noch belegt im Text. An der Beschreibung
 % von energy-charts oder EPEX festmachen.
+% ENTSCHIEDEN am 12.09.2026 vom Verfasser. Ein Beleg ist dafuer nicht noetig,
+% ebenso wenig fuer das Zuschlagsverfahren der Regelleistung und fuer die
+% Hoehe des Aufschlags am IDC.
 % SATZ 5 OHNE ZAHL, Vorgabe des Verfassers. Der Aufschlag von drei Prozent nach
 % oben und unten, zusammen sechs Prozent Spread, steht damit nicht mehr im
 % aktiven Text. Er bleibt in der archivierten Fassung unten und in MODELL.md,
@@ -2909,13 +2927,26 @@ Neben dem \ac{IDC} führt das Modell den \ac{DA}, sodass sich Arbitrage zu unter
 Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
 
 \subsubsection*{\acs{FCR}}
-\begin{itemize}
+% AUSFORMULIERT am 12.09.2026, Fassung A, gewaehlt vom Verfasser.
+% BERICHTIGT nach seinem Hinweis. Die FCR wird zu einem Einheitspreis
+% bezuschlagt, jedes bezuschlagte Gebot erhaelt denselben Preis. Der
+% Stichpunkt sprach von einem mengengewichteten Durchschnitt der Zuschlaege,
+% das trifft die aFRR und nicht die FCR. MODELL.md fuehrt fuer die FCR den
+% Settlement Capacity Price je Vier-Stunden-Block, geteilt durch vier, und
+% fuer die aFRR den mengengewichteten Durchschnitt der Zuschlaege.
+% BELEG nicht noetig, entschieden vom Verfasser am 12.09.2026. Der
+% Monitoringbericht beschreibt das Zuschlagsverfahren nicht, die Quelle weist
+% allein die Marktdaten nach.
+% STICHPUNKT ERSETZT am 12.09.2026, alte Fassung samt Kommentaren:
 % AUFGETEILT am 11.09.2026 auf die Maerkte, Umbau nach Maerkten. Alte Fassung:
 % Mengengewichteter Durchschnitt statt Grenzpreis ist eine Setzung des Codes.
 % Der FCR-Preis der Zeitscheibe ist durch vier geteilt und damit ein Wert je
 % Megawatt und Stunde.
 %    \item Leistungspreise der \ac{FCR} und der \ac{aFRR} je Vier-Stunden-Zeitscheibe als mengengewichteter Durchschnitt der Zuschläge in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}
-    \item Leistungspreis der \ac{FCR} je Vier-Stunden-Zeitscheibe als mengengewichteter Durchschnitt der Zuschläge in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}
+%    \item Leistungspreis der \ac{FCR} je Vier-Stunden-Zeitscheibe als mengengewichteter Durchschnitt der Zuschläge in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}
+Die \ac{FCR} wird zu einem Einheitspreis bezuschlagt, und das Modell übernimmt diesen Preis je Vier-Stunden-Zeitscheibe in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}.
+
+\begin{itemize}
 % AUFGETEILT am 11.09.2026 auf die Maerkte, Umbau nach Maerkten. Alte Fassung:
 %    \item Die \ac{FCR} und die \ac{aFRR}-Leistung tragen ihren Leistungspreis mal der vorgehaltenen Leistung bei
     \item Die \ac{FCR} trägt ihren Leistungspreis mal der vorgehaltenen Leistung bei

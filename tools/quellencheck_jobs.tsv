@@ -1,0 +1,45 @@
+# Auftragsdatei fuer quellencheck.py
+# Spalten, tabgetrennt: Kennung, bib-Schluessel (mehrere mit Komma),
+# Suchbegriffe (mehrere mit Semikolon).
+# Aufruf:
+#   python tools/quellencheck.py --jobs tools/quellencheck_jobs.tsv --out quellencheck_bericht.md
+#
+# ---- Kapitel 1 ----
+K1-OFFEN04	bundesnetzagentur_smard_engpassmanagement_2026	30.31;Gesamtvolumen;Maßnahmenvolumen;Probestart;Testfahrt;Reservekraftwerk;Countertrading
+K1-OFFEN07	bundesnetzagentur_netzentwicklungsplan_2026	Engpassmanagementbedarf;Redispatchbedarf;Zieljahr 2032;Zieljahr 2037;Minimalkostenkombination
+#
+# ---- Kapitel 2, Abschnitt 2.1 ----
+K2-OFFEN29	europaische_kommission_verordnung_2017	Artikel 25;dauerhaft zulässige;vorübergehend zulässige;Grenzwert für die Betriebssicherheit
+K2-OFFEN21	bundesnetzagentur_festlegung_2024,bundesnetzagentur_anlage1_2024	Technologie;technologiespezifisch;Erzeugungsart;Anlagenart
+K2-OFFEN23	innosys_2030_gesamtverbund_innovationen_2021	kurativer Redispatch;kurative Höherauslastung;Höherauslastung;kurative Maßnahme
+K2-OFFEN02	innosys_2030_gesamtverbund_innovationen_2021	Zeitbereich;Zeitfenster;Sekunden;Minuten;Fehlerklärung
+K2-OFFEN34	cigre_thermal_2014	heat balance;Joule;convective;radiative;steady state
+K2-FREILEITUNG	dena_hoeherauslastung_2022	Freileitungsmonitoring;witterungsabhängig;Betriebsmittelgrenzwert;Übertragungskapazität
+K2-OFFEN43	innosys_2030_gesamtverbund_innovationen_2021	maximal zulässige Temperatur;Stromobergrenze;temporär;Zeit bis
+K2-OFFEN42	leeuwen_integration_2020	PTDF;LODF;Sensitivität;Betriebsplanung
+K2-IMPULS	innosys_2030_gesamtverbund_innovationen_2021,dena_hoeherauslastung_2022	einheitliche Vorgabe;Form und Inhalt;TATL-Angaben;standortspezifisch
+K2-BOOSTER	consentec_systembooster_2026,tennet_tso_gmbh_pilotbetrieb_2025	Inbetriebnahme;Netzbooster;Pilot;in Betrieb
+K2-SOGL25	europaische_kommission_verordnung_2017	Artikel 25;darf;kann;zulässig;kurativ
+#
+# ---- Kapitel 2, Abschnitt 2.2 ----
+K2-OFFEN03	europaische_kommission_verordnung_2017_ebgl,europaisches_parlament_und_rat_der_eu_verordnung_2019	Selbstdispatch;self-dispatch;scheduling agent;Fahrplanverantwortliche;Zentraldispatch;central dispatch
+K2-DACF	innosys_2030_gesamtverbund_innovationen_2021,leeuwen_integration_2020	DACF;IDCF;Lastflussberechnung;Netzsicherheitsrechnung;Prognoserechnung
+K2-042	ffe_saegezahn_2026,mahgoub_wie_2025	0,42;November;Dezember;GWh
+K2-GATECLOSURE	ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024	Gate Closure;PICASSO;MARI;Regelarbeitsmarkt;Ausschreibungsschluss
+K2-FCRMENGE	ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024,bundesnetzagentur_beschluss_2019,bundesnetzagentur_beschluss_2026	564;3000;Referenzstörfall;Verteilschlüssel;probabilistisch;3450;584
+K2-KOSTENBASIS	hirth_kosten_2019	marktbasiert;kostenbasiert;Wettbewerb;Netzknoten;Inc-Dec
+K2-VO2015	europaische_kommission_verordnung_2015	Engpassmanagement;Gebotszone;Kapazitätsvergabe;Redispatch
+K2-SDL4	bundesnetzagentur_systemstabilitatsbericht_2025,vde_etg_flexibilisierung_2023	Systemdienstleistung;Frequenzhaltung;Spannungshaltung;Betriebsführung;Versorgungswiederaufbau
+#
+# ---- Kapitel 2, Abschnitt 2.3 ----
+K2-OFFEN06	bundesnetzagentur_festlegung_2024,bundesnetzagentur_anlage1_2024,bundesnetzagentur_berechnungsbeispiel_2024	BK8-22;Aktenzeichen;Anlage 1;Anlage 5
+K2-13AGELTUNG	bundesministerium_der_justiz_energiewirtschaftsgesetz_2025,bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025	13a;anzuwenden;Übergangsvorschrift;tritt in Kraft;ab dem
+K2-REVISION	bundesnetzagentur_anlage1_2024	Revision;Anfahren;Nummer 4;geplante
+K2-EEGEINNAHMEN	bundesnetzagentur_anlage1_2024	entgangene Einnahmen;Nummer 5;gefördert;Marktprämie
+K2-MARKTBREITE	porst_betriebskonzepte_2025,lindner_operation_2023,anselm_eicke_systemdienlichkeit_2026	Mehrfachvermarktung;parallel;Vermarktungsweg;Pumpspeicher
+K2-POENALE	ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024	Pönale;Nichterbringung;Ausgleichsenergie;Sanktion;Nichtverfügbarkeit
+K2-AFRRVERFAHREN	ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024,bundesnetzagentur_beschluss_2019	Gebotspreisverfahren;Einheitspreisverfahren;pay-as-bid;pay-as-cleared;Zuschlag
+K2-PICASSO4S	ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024,bundesnetzagentur_beschluss_2026	vier Sekunden;Aktivierungsintervall;Grenzpreis;Optimierungszyklus
+K2-IDAEP	bundesnetzagentur_beschluss_2019,bundesnetzagentur_beschluss_2021,bundesnetzagentur_beschluss_2026	Intraday-Preisindex;ID AEP;BK6-19-552;Preisindex
+K2-PQWERTE	ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024	Ladezustand;Arbeitsbereich;15 Minuten;30 Minuten;Mindestenergie
+K2-BEZUGSJAHR	celi_cortes_m5use_2024	2023;2024;Bezugsjahr;eingereicht

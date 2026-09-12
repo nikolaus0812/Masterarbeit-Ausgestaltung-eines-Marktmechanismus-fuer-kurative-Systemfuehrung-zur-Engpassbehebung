@@ -1,0 +1,98 @@
+# Zuordnung bib-Schluessel zu Datei in literature/PDFs
+# Die aktiven Zeilen sind maschinell gegen den Text der ersten drei
+# Seiten geprueft. Die auskommentierten Zeilen sind Vorschlaege, die
+# diese Pruefung NICHT bestanden haben, sie sind von Hand zu klaeren.
+#
+agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024	240703_ACER_Capacities for cross-zonal electricity trade and congestion management.pdf
+anselm_eicke_systemdienlichkeit_2026	251201_Consentec_Neon_Systemdienlichkeit von Grossbatterien.pdf
+bdew_branchenleitfaden_2018	180418_BDEW_Branchenleitfaden Verguetung von Redispatch Massnahmen.pdf
+blank_determination_2024	250610_A.Blank_Determination of Locational Marginal Redispatch Prices of a Mixed-Integer Congestion Management Problem.pdf
+brown_pypsa_2018	180116_T.Brown_PyPSA_Python for Power System Analysis.pdf
+bukhsh_balancing_2024	240901_W.Bukhsh_Balancing the great British electrcity system.pdf
+bundesministerium_der_justiz_energiewirtschaftsgesetz_2025	251208_BDEW_EnWG.pdf
+bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024	240801_BMWK_Strommarktdesign der Zukunft.pdf
+bundesnetzagentur_anlage1_2024	240605_BNetzA_BK8-22-0001-A Festlegung_Anlage 1.pdf
+bundesnetzagentur_berechnungsbeispiel_2024	240605_BNetzA_BK8-22-0001-A Festlegung_Anlage 5.pdf
+bundesnetzagentur_diskussionspapier_nodate	250901_BNetzA_Diskussionspapier_Entgelte für Industrie und Gewerbe.pdf
+bundesnetzagentur_festlegung_2024	240605_BNetzA_BK8-22-0001-A Festlegung.pdf
+bundesnetzagentur_netzentwicklungsplan_2026	260313_BNetzA_NEP_2037_2045_V2025_2_Enwurf.pdf
+bundesumweltministerium_bundes-klimaschutzgesetz_2019	191118_Bundesumweltministerium_Bundes_Klimaschutzgesetz.pdf
+bundesverband_der_energie-_und_wasserwirtschaft_energierechtsnovelle_2025	260317_BDEW_Energierechtsnovelle_2025_Strom.pdf
+celi_cortes_m5use_2024	250211_Cortes_M5Use.pdf
+cigre_thermal_2014	141201_CIGRE_Guide For Thermal Rating Calculations of Overhead Lines.pdf
+consentec_ausarbeitung_2024	240515_Consentec_4ÜNB_Studie zum zentralen Kapazitätsmarkt.pdf
+consentec_systembooster_2026	260630_Consentec_Systembooster Kurzgutachten.pdf
+dr_casimir_lorenz_studie_2026	260413_Aurora_Studie zur Auswirkung dynamischer Netzentgelte auf das Stromsystem.pdf
+ehrhart_analysis_2025	250506_K.Ehrhart_Analysis of a capacity-based redispatch mechanism.pdf
+einsiedler_analysis_2025	250521_J.Einsiedler_Analysis of Electricity Market Models for Future Power Systems.pdf
+entsoe_operation_2009	090319_EU_Handbook Operational Security.pdf
+europaische_kommission_verordnung_2015	150724_EU_Verordnung zur Festlegung einer Leitlinie für die Kapazitätsvergabe und das Engpassmanagement.pdf
+europaische_kommission_verordnung_2017	170902_EU_Festlegung einer Leitlinie für den Übertragungsnetzbetrieb.pdf
+europaische_kommission_verordnung_2017_ebgl	171128_EU_Electricity Balancing Guideline.pdf
+europaisches_parlament_und_rat_der_eu_verordnung_2019	190605_EU Parlament_Verodnung über den Elektrizitätsbinnenmarkt.pdf
+garrett_fitzgerald_economics_2025	151001_RMI_The Economics of Battery Energy Storage.pdf
+gurobi_reference_2026	260101_Gurobi_Optimization Guide.pdf
+hirth_netzentgelte_2025	250624_Consentec_Netzentgelte für Großbatteriespeicher.pdf
+hornek_value_2025	250609_T.Hornek_The Value of Battery Energy Storage in the Continuous Intraday Market.pdf
+innosys_2030_gesamtverbund_innovationen_2021	211231_UENB_Innovationen in der Systemführung bis 2030.pdf
+juelch_comparison_2016	161007_V.Juelch_Comparison of electricity storage options using levelized cost of storage (LCOS) method - Kopie.pdf
+kumtepeli_energy_2020	200927_Kumtepeli_Energy Arbitrage Optimization With BatteryStorage.pdf
+leeuwen_integration_2020	200214_T.v.Leeuwen_Integration kurativer Maßnahmen in das Engpassmanagment im deuutschen Übertragungsnetz.pdf
+lindner_operation_2023	221111_M.Lindner_Operation strategies of battery energy storage systems for preventive and.pdf
+mahgoub_wie_2025	250226_N.Mahgoub_Wie die aktuellen Marktdesignänderungen der EPEX SPOT die Erlöspotenziale von Batteriespeichern beei.pdf
+meeus_evolution_2020	201101_L.Meeus_The Evolution of Electricity Markets in Europe.pdf
+mende_optimised_2024	240430_D.Mende_Optimised Congestion Management Using Curative Measures in Combined ACDC Systems.pdf
+neef_kurzfristige_2026	260417_A.Neef_Kurzfrisitge Netzengpässe.pdf
+newbery_market_2018	180801_D.Newbery_Market design for high-renewables European electricty system.pdf
+oggioni_market_2013	111213_G.Oggioni_Market failures of Market Coupling and counter-trading in Europe_An illustrative model based discussion.pdf
+porst_betriebskonzepte_2025	241127_J.Porst_Betriebskonzepte für Batteriespeichersysteme in hochausgelasteten Übertragungsnetzen.pdf
+rystad_energy_renewables__power_analytics_energy_2026	260201_RystadEnergy_Energy Storage Whitepaper.pdf
+schmitt_linear_2020	200904_C.Schmitt_A Linear Programing Formulation of Time-Coupled Flexibility Market Bids by Storage Systems.pdf
+shinde_optimal_2021	210301_P.Shinde_Optimal Dispatch in a Balancing Market With Intermittent Renewable Generation.pdf
+sous_comparison_2025	251106_Sous_Comparison of concepts to ensure redundancy for curative congestion management in transmission grids.pdf
+vde_etg_flexibilisierung_2023	231010_VDE_Flexibilisierung des Energiesystems.pdf
+#
+# --- ungeklaert ---
+# bundesnetzagentur_monitoringbericht_2026	20260316_NEP-2025_Zweiter-Entwurf.pdf	Titelwoerter 0 von 1, Autor nein
+# bundesnetzagentur_smard_engpassmanagement_2026	260116_SMARD_Netzengpassmanagement in Q3_2025-Volumen und Kosten gestiegen.pdf	Titelwoerter 0 von 4, Autor nein
+# bundesnetzagentur_systemstabilitatsbericht_2025	20260316_NEP-2025_Zweiter-Entwurf.pdf	Titelwoerter 0 von 1, Autor nein
+# frauenhofer_iee_forschungsprojekt_2024	240501_Frauenhofer_IEE_Forschungsprojekt kurSyV.pdf	Titelwoerter 0 von 5, Autor nein
+garttan_battery_2025	250906_G.Garttan_Battery Energy Strorage Systems_Energy Market Review, challanges, an Opportunities in Frequency Control Ancillary Services.pdf
+horsch_role_2017	170609_J.Hoersch_The role of spatial scale in joint optimisations of generation and transmission for European highly renewable scenarios.pdf
+sous_untersuchung_2022	220216_Sous_Untersuchung des Einfluss einer Redundanzanforderung für kurative Maßnahmen auf das Potenzial der kurativen Netzbetriebsführung.pdf
+# tennet_tso_gmbh_pilotbetrieb_2025	251022_TenneT_Pilotbetrieb gestratet_Amprion, TenneT und RWE erproben kurativen redispatch im realen Betrieb.pdf	kein Text, vermutlich Scan
+# bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025		kein Vorschlag
+# bundesnetzagentur_beschluss_2019		kein Vorschlag
+# bundesnetzagentur_beschluss_2021		kein Vorschlag
+# bundesnetzagentur_beschluss_2026		kein Vorschlag
+# bundesnetzagentur_faq_2025		kein Vorschlag
+# bundesnetzagentur_mengen_nodate		kein Vorschlag
+# cigre_weather_2006		kein Vorschlag
+# dena_hoeherauslastung_2022		kein Vorschlag
+# domschke_operations_2015		kein Vorschlag
+# ffe_saegezahn_2026		kein Vorschlag
+# hirth_kosten_2019		kein Vorschlag
+# iaew_abschlussbericht_2023		kein Vorschlag
+# iaew_folgestudie_2024		kein Vorschlag
+# iec_60076_7_2018		kein Vorschlag
+# regelleistung_ausschreibungsdaten_2026		kein Vorschlag
+# smard_marktdaten_2026		kein Vorschlag
+# ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024		kein Vorschlag
+weber_gutachten_2015	240605_BNetzA_BK8-22-0001-A Festlegung_Anlage 2.pdf
+#
+# --- nachgetragen, Praefixe vom Verfasser vorgegeben ---
+bundesnetzagentur_monitoringbericht_2026	260126_BNetzA_Monitoringbericht.pdf
+ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024	240705_ÜNB_PQ-Bedingungen.pdf
+bundesnetzagentur_beschluss_2019	190502_BNetzA_BK6-17-234.pdf
+bundesnetzagentur_beschluss_2021	210519_BNetzA_BK8-18-0007-A.pdf
+bundesnetzagentur_beschluss_2026	260330_BNetzA_BK6-25-325.pdf
+bundesnetzagentur_faq_2025	260317_BNetzA_FAQ Stromspeicher.pdf
+bundesnetzagentur_systemstabilitatsbericht_2025	250601_BNetzA_Bericht Systemstabilität.pdf
+dena_hoeherauslastung_2022	220201_dena_Hoeherauslastung der Stromnetze.pdf
+ffe_saegezahn_2026	260121_FFE_Saegezahn am DA-Markt.pdf
+hirth_kosten_2019	191009_Consentec_Kosten- oder Marktbasiert Zukünftige Redispatch Beschaffung in Deutschland
+tennet_tso_gmbh_pilotbetrieb_2025	251022_TenneT_Pilotbetrieb gestratet_Amprion, TenneT und RWE erproben kurativen redispatch im realen Betrieb.pdf
+bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025	251218_BDEW_NABEG.pdf
+frauenhofer_iee_forschungsprojekt_2024	240501_Frauenhofer_IEE_Forschungsprojekt kurSyV.pdf
+# Auswahl unter drei SMARD-Dateien, bestaetigt ueber Untertitel und Datum
+bundesnetzagentur_smard_engpassmanagement_2026	260330_SMARD_Netzengpassmanagment im Q4 und Gesamtjahr 2025.pdf

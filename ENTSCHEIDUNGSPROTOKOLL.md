@@ -573,6 +573,27 @@ sechs Stufen aus MODELL.md. In der fuenften Stufe steht nach Stilregel 5
 vorgehaltene Leistung statt Reservierung. Welche Stufe der Basisfall ist, ist
 zu pruefen. Meine eigene Ableitung ist die vierte Stufe.
 
+### 12.09.2026, Nachtrag, Groessenangabe fuer die Abbildungen in Kapitel 1 und 2
+
+Die Anweisung vom 12.09.2026 verlangt fuer alle Abbildungen der Schriftfassung
+die Einbindung mit width=	extwidth. Kapitel 3 war damit bereits versorgt, die
+sieben Einbindungen in Kapitel 1 und 2 sind jetzt nachgezogen, zwei in
+chapter_1.tex und fuenf in chapter_2.tex.
+
+Am Satz aendert das nichts. Die PDFs messen 453,543 PostScript-Punkte, das sind
+455,244 TeX-Punkte und damit genau 	extwidth, und main.log weist die Bilder
+schon vor der Aenderung in dieser Breite aus. Die Angabe schuetzt kuenftig
+davor, dass eine Abbildung mit abweichender Breite unbemerkt skaliert gesetzt
+wird.
+
+Zwei vorbestehende Befunde der Pruefsuite bleiben unberuehrt, weil sie dem
+Verfasser gehoeren. In chapter_1.tex Zeile 67 steht Batteriespeicher
+ausgeschrieben, dort allerdings als Einfuehrung des Akronyms, die sich mit dem
+Vermerk pruefen ok von der Pruefung ausnehmen liesse. In chapter_2.tex Zeile 623
+steht Batteriespeichern in der Wiedergabe eines Einwands aus dem
+Konsultationsverfahren.
+
+Build ohne Fehler mit 76 Seiten, elf Abbildungen in Textbreite.
 
 ## chapter_1.tex
 
@@ -5482,6 +5503,51 @@ Zeile steht unverändert seit 21b27f5 und gehört dem Verfasser.
 Prüfsuite für chapter_3.tex ohne Befund, Build ohne Fehler mit 76 Seiten.
 
 
+### 12.09.2026, Nachtrag, Erloesterm des Day-Ahead und Belegentscheidung
+
+**Formel aufgenommen.** Der Day-Ahead-Block schliesst jetzt mit dem
+Einleitungssatz in Fassung A, gewaehlt vom Verfasser, und der abgesetzten Formel
+mit der Marke eq:erloes_da. Der Summand traegt denselben Namen wie in der
+Zielfunktion. Verkauf und Kauf sind getrennte, nichtnegative Leistungen, und der
+Term rechnet mit Leistung mal Zeitschritt.
+
+**Satz entfallen.** Der bisherige zweite Satz des Blocks, der Erloes am
+Day-Ahead folge aus Preis und gehandelter Energie, sagt dasselbe wie der
+Einleitungssatz und steht als Kommentar.
+
+**Belege nicht noetig**, entschieden vom Verfasser. Das betrifft drei Stellen,
+naemlich die Volumengewichtung des ID1, das Zuschlagsverfahren der Regelleistung,
+das der Monitoringbericht nicht beschreibt, und die Hoehe des Aufschlags am IDC.
+Die Vermerke an diesen Stellen sind entsprechend gekennzeichnet.
+
+**Offen, vom Verfasser zu entscheiden.** Die zweite Sitzung meldet einen
+Begriffskonflikt aus der Anweisung vom 12.09.2026. Der Wert der 1. Iteration
+soll Schwellenpreis heissen, CLAUDE.md Abschnitt 5 sperrt dieses Wort im
+Fliesstext und verlangt Grenzpreis, der jedoch durch den Weber-Ansatz belegt
+ist. Bis zur Entscheidung bleibt die Umschreibung der zweiten Sitzung stehen.
+
+
+### 12.09.2026, Nachtrag, FCR-Preis berichtigt und Begriff der 1. Iteration
+
+**FCR, Satz 1**, Fassung A, gewaehlt vom Verfasser. Nach seinem Hinweis wird die
+FCR zu einem Einheitspreis bezuschlagt, jedes bezuschlagte Gebot erhaelt also
+denselben Preis. Der bisherige Stichpunkt sprach von einem mengengewichteten
+Durchschnitt der Zuschlaege. Das trifft die aFRR, deren Gebote nach pay-as-bid
+verguetet werden, und nicht die FCR. MODELL.md bestaetigt die Unterscheidung,
+naemlich Settlement Capacity Price fuer die FCR und mengengewichteter
+Durchschnitt fuer die aFRR. Ein Beleg fuer das Verfahren ist nach Entscheidung
+des Verfassers nicht noetig, der Monitoringbericht beschreibt es nicht.
+
+**Begriff der 1. Iteration**, Entscheidung des Verfassers. Die Sache wird
+umschrieben, und wo ein Substantiv noetig ist, soll es Vollreservierungspreis
+heissen. Beim Umsetzen faellt auf, dass die 2. Iteration bereits den
+Vollverdraengungspreis fuehrt. Zwei derart aehnliche Namen nebeneinander sind
+schwer zu unterscheiden. Vorgeschlagen ist deshalb Startpreis, weil der Wert der
+2. Iteration als Startvektor dient. Bis zur Entscheidung bleibt die
+Umschreibung, die bereits im Text steht. Schwellenpreis bleibt nach CLAUDE.md
+Abschnitt 5 gesperrt, Grenzpreis ist durch den Weber-Ansatz belegt.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
@@ -6627,7 +6693,6 @@ das Abrufdatum nachgetragen.
 Preisreihen weiterhin SMARD, das keinen ID1 und keinen ID3 fuehrt. Sie sind auf
 energy_charts_strompreise_2026 umzustellen, sobald der Verfasser entscheidet, ob
 die Arbeit energy-charts, die EPEX Spot SE oder beide zitiert.
-
 
 ## Offene Punkte, Stand 08.09.2026
 
