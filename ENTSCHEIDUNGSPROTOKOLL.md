@@ -5131,6 +5131,186 @@ Mindestgroesse von 25 MW als Binaerbedingung, der denselben Grund nennt wie der
 Stichpunkt zum gemischt-ganzzahligen Problem in 3.2.1.
 
 
+### 12.09.2026, 3.2 auf vier Unterabschnitte, Ueberschriften je Markt
+
+**Entscheidung des Verfassers**, Variante V2 mit B. Abschnitt 3.2 hat jetzt
+3.2.1 Ansatz und Loesungsverfahren, 3.2.2 Anlage, Speicher und Zielfunktion,
+3.2.3 Abbildung der Maerkte und 3.2.4 Bestimmung des kurativen
+Reservierungspreises.
+
+**Aufgeloest sind zwei Unterabschnitte.** Datengrundlage und Anlage entfaellt.
+Zeitraum, Beispieltag und Zeitumstellung eroeffnen die Maerkte, weil sie die
+Preisreihen betreffen, die Anlagenparameter und die Degradationskosten stehen
+beim Speicher. Systemgrenzen und Abgrenzungen entfaellt ebenfalls. Die
+Systemgrenzen schliessen 3.2.1 ab, die Abgrenzung gegenueber dem modifizierten
+Weber-Ansatz und die Bestandteile des Gebots schliessen 3.2.4 ab. Kein
+Stichpunkt ist geloescht. Entscheidung 1 in CLAUDE.md Abschnitt 9 bleibt
+gewahrt, der Weber-Ansatz bleibt Referenz in Kapitel 3 und wandert nicht nach
+Kapitel 5.
+
+**Ueberschriften je Markt**, Vorgabe des Verfassers. In 3.2.3 tragen Day-Ahead,
+kontinuierlicher Intraday-Handel, FCR, aFRR-Leistung, aFRR-Arbeit und die
+kurative Reservierung je eine Ueberschrift in der Sternform von
+subsubsection. Sie bleibt unnummeriert und steht nicht im Inhaltsverzeichnis,
+unabhaengig von secnumdepth. Die Klasse scrbook nummeriert ohnehin nur bis zur
+Ebene subsection.
+
+**Marken.** sec:input_data liegt jetzt auf 3.2.3, sec:weber_exclusion auf 3.2.4.
+sec:storage_model bleibt beim Speicher, darauf verweist 3.1.2 dreimal.
+
+
+### 12.09.2026, Nachtrag, vier Bereinigungen in 3.2
+
+Alle vom Verfasser entschieden. Erstens nennt den Aufschlag am IDC nur noch der
+Stichpunkt zum Preis, der Erloessatz ist gekuerzt. Zweitens tragen weder die
+Weber-Abgrenzung noch die Bestandteile des Gebots eine eigene Ueberschrift, die
+Ueberschrift der Weber-Abgrenzung ist entfallen und beide Bloecke stehen in
+einer Liste. Drittens nennen die Entscheidungsvariablen jetzt auch die kurativ
+reservierte Leistung je Richtung und die Binaervariable der Mindestgroesse, wie
+es K1 verlangt. Viertens steht die Begruendung ueber die Mindestgroesse nur noch
+bei der kurativen Reservierung in 3.2.3, der Stichpunkt zum Rechenansatz nennt
+allein das gemischt-ganzzahlige lineare Programm und den Solver. Auf Vorgabe des
+Verfassers sagt der Stichpunkt zur Mindestgroesse zusaetzlich, dass sich die
+Bedingung herausnehmen laesst, womit die Reservierung stetig und das Problem
+linear wird. Im Code entspricht das dem Schalter fuer die binaere Reservierung.
+
+
+### 12.09.2026, Nachtrag, nicht gefuehrte Maerkte nach 3.2.3 verschoben
+
+Entschieden vom Verfasser. Die beiden Stichpunkte zu den Intraday-Auktionen und
+zur mFRR stehen nicht mehr in der Marktauswahl in 3.2.1, sondern in 3.2.3 bei
+der Erklaerung der Modellierung, und zwar im Einstieg vor dem ersten Markt,
+zusammen mit Zeitraum und Datenlage. Dort brauchen sie keine eigene
+Ueberschrift. Angeboten und nicht gewaehlt war ein eigener Block mit
+Ueberschrift am Ende von 3.2.3. Die Marktauswahl in 3.2.1 traegt damit noch die
+Auswahl selbst, die Mengenbegrenzung der Regelleistungsmaerkte, die zwei Gruppen,
+die Reihenfolge der Zuschlaege und die Opportunitaetskosten.
+
+
+### 12.09.2026, Nachtrag, alles Marktbezogene nach 3.2.3
+
+Entschieden vom Verfasser. Aus der Marktauswahl in 3.2.1 wandern die Auswahl der
+gefuehrten Maerkte, die Mengenbegrenzung der Regelleistungsmaerkte, die zwei
+Gruppen und die Reihenfolge der Zuschlaege in den Einstieg von 3.2.3, wo schon
+die nicht gefuehrten Maerkte und die Datenlage stehen. Die Folge im Einstieg
+lautet jetzt gefuehrte Maerkte, nicht gefuehrte Maerkte, Gruppen und Reihenfolge,
+Zeitraum und Datenlage, danach die sechs Maerkte mit ihren Ueberschriften.
+
+In 3.2.1 bleibt von diesem Block allein der Stichpunkt zu den
+Opportunitaetskosten, weil er eine Modellentscheidung begruendet, naemlich dass
+es keinen gesonderten Kostenansatz fuer die Vorhaltung braucht. Sein Einstieg
+Aus dieser Aufteilung ist entfallen, weil die Aufteilung jetzt in 3.2.3 steht.
+Die alte Fassung steht als Kommentar. Der gewaehlte Satz 1 des Marktabsatzes,
+Fassung B vom 11.09.2026, ist damit nicht mehr in 3.2.1 zu schreiben, sondern in
+3.2.3.
+
+
+### 12.09.2026, Nachtrag, Abgrenzung der Maerkte zu den Systemgrenzen
+
+Entschieden vom Verfasser. Der Einstieg von 3.2.3 nennt nur noch, welche Maerkte
+das Modell fuehrt, dazu die zwei Gruppen, die Reihenfolge der Zuschlaege sowie
+Zeitraum und Datenlage. Die beiden Stichpunkte zu den nicht gefuehrten Maerkten
+und der Stichpunkt zur mengenmaessigen Begrenzung der Regelleistungsmaerkte
+stehen jetzt bei den Systemgrenzen am Schluss von 3.2.1. Die Mengenbegrenzung
+folgt dort dem Stichpunkt, dass der Zuschlag in den Regelleistungsmaerkten als
+sicher gilt, weil beide dieselbe Annahme betreffen. Begruendung des Verfassers,
+die Maerkte sind an dieser Stelle noch nicht abzugrenzen, erwaehnt werden muessen
+nur die gefuehrten. Damit entfaellt vorerst auch die Wahl zwischen den drei
+Fassungen zur Mengenbegrenzung, sie wird bei den Systemgrenzen getroffen.
+
+
+### 12.09.2026, Nachtrag, Einstieg von 3.2.3 ausformuliert
+
+**Drei Saetze**, jeder vom Verfasser gewaehlt, alle Fassung B. Satz 1 nennt die
+gefuehrten Maerkte als die, an denen ein BESS heute seine Erloese erzielt, und
+steht ohne Zitat, weil chapter_2.tex Zeile 681 das traegt. Satz 2 trennt die
+Maerkte nach ihrer Wirkung auf den Speicher, also Ladezustand bewegen gegen
+Leistung und Band binden. Satz 3 sagt, dass das Modell alle Maerkte eines
+Liefertages gleichzeitig setzt und jeder Markt eigenen Produktzuschnitt,
+Energievorhalt und Preis traegt.
+
+**Berichtigt, Hinweis des Verfassers.** Der Stichpunkt, die Maerkte folgten im
+Modell der Reihenfolge ihrer Zuschlaege, ist falsch und entfaellt. Im Modell
+werden alle Maerkte eines Liefertages gleichzeitig gesetzt. Die Staffelung der
+Zuschlaege bleibt an den beiden Stellen, an denen sie etwas bewirkt, naemlich in
+3.2.1 beim Rechenansatz und im Day-Ahead-Block bei der Energieneutralitaet.
+Nicht wieder aufzunehmen ist die verworfene Fassung mit der Reihenfolge im
+Modell.
+
+
+### 12.09.2026, Nachtrag, Beispieltag entfaellt
+
+Hinweis des Verfassers, die Darstellung der Fahrplaene gibt es nicht mehr. Damit
+traegt der Beispieltag nichts mehr, und der Stichpunkt in 3.2.3 entfaellt. Er
+steht als Kommentar. Gegenstandslos ist damit auch der offene Punkt K4, soweit
+er den Widerspruch zwischen dem Werktag im November und den drei Beispieltagen
+des Codes betraf, ebenso der Hinweis an der Abbildung zu den Schleifen, die drei
+Beispieltage nennt. Die Kommentare an beiden Stellen sind nachgezogen, ebenso
+der Kopfkommentar, der den Beispieltag den Abschnitten 4.1 und 4.2 zuordnete.
+
+Offen und vom Verfasser zu entscheiden ist der Stichpunkt in chapter_4.tex Zeile
+36, der einen marktoptimalen Fahrplan des Batteriespeichers am Beispieltag
+vorsieht. Kapitel 4 ist nicht angefasst.
+
+
+### 12.09.2026, Nachtrag, Zeitraum und Datenlage in 3.2.3 ausformuliert
+
+**Zwei Saetze**, beide Fassung C, gewaehlt vom Verfasser. Satz 1 nennt das Jahr
+2025 als Auswertungszeitraum und sagt, dass vor dem 01.10.2025 der stuendliche
+Day-Ahead-Preis fuer alle vier Viertelstunden gilt. Satz 2 beschreibt die
+Behandlung der Zeitumstellung.
+
+**Berichtigt nach Hinweis des Verfassers.** Der Stichpunkt nannte allein den
+26.10.2025 und stellte die Behandlung als offene Wahl zwischen Ueberspringen und
+Normieren dar. Nach MODELL.md Abschnitt 12.3 und helpers/zeitumstellung.py sind
+zwei Tage betroffen, der 30.03.2025 mit 92 und der 26.10.2025 mit 100
+Viertelstunden, und der Helfer nimmt die betroffene Stunde aus der Optimierung,
+im Fruehjahr ueber vier gesperrte Platzhalter, im Herbst durch Verwerfen der
+zweiten Ausfuehrung und Sperren der ersten. Gesperrt heisst nach Abschnitt 7.10,
+dass jede Leistung auf null gezwungen wird, waehrend der Speicherinhalt
+durchlaeuft. Meine frueher angebotene Fassung mit 364 Liefertagen war falsch.
+
+**Offen.** Der Code kennt beide Verhalten nebeneinander. Jahreslauf und
+Iterationsvergleich ueberspringen die zwei Tage und kommen auf 363 Tage, die
+Jahres-Heatmaps und sensi5_jahr normieren und sperren und kommen auf 365. Die
+Schrift beschreibt jetzt das Normieren, der Code ist zu vereinheitlichen oder
+die Abweichung ist zu nennen. Ein Kommentar steht an der Stelle.
+
+
+### 12.09.2026, Entdopplung und Neuzuordnung der Stichpunkte in 3.2
+
+Auftrag des Verfassers, nachdem die Durchsicht aller 88 Stichpunkte Doppelungen
+gezeigt hat. Keine Aussage ist geloescht, jede ersetzte Fassung steht als
+Kommentar.
+
+**Gegen den bereits geschriebenen Fliesstext gestrichen oder gekuerzt.** Die
+zeitliche Aufloesung von 96 Viertelstunden entfaellt, sie steht im Absatz zur
+Datenlage. Der Stichpunkt zur gemeinsamen Entscheidung nennt nur noch den
+Vorbehalt, dass der Akteur in Wirklichkeit nacheinander entscheidet. Die
+DA-Preisreihe nennt den Produktschnitt nicht mehr. Die Ladezustandsbilanz sagt
+nicht mehr, dass die Vorhaltungen den Ladezustand nicht bewegen.
+
+**Zusammengelegt.** Deterministische Optimierung und obere Schranke, weil
+hornek_value_2025 nach Stilregel 8 nur einmal je Absatz stehen darf.
+Leistungsschranke und Ausschliesslichkeit. Die zwei Stichpunkte zum IDC ueber den
+ID1. Gekuerzt sind ferner die abgerufene aFRR-Menge, der Erloesterm der
+aFRR-Arbeit, das Abbruchkriterium der Bisektion, der Liefertag, die Grenzen des
+Ladezustands und die Degradation, jeweils weil die entfallene Haelfte an anderer
+Stelle steht.
+
+**Verschoben.** Der Szenariorahmen steht jetzt bei den Systemgrenzen vor der
+Kannibalisierung, beide betreffen die Preiszukunft. Die methodische Referenz
+schmitt_linear_2020 steht bei der Ladezustandsbilanz statt in einem eigenen
+Block. Die Tabelle der Produktparameter und der Hinweis, dass jedes Ergebnis an
+den gesetzten Zahlen haengt, stehen jetzt im Block der kurativen Reservierung,
+weil sie das Produkt und nicht den Speicher beschreiben.
+
+**Nicht angetastet.** Die vier Baender von FCR, aFRR und kurativer Reservierung,
+weil sie verschiedene Groessen nennen, sowie die Folge fuer die Ergebnisse und
+der Abschluss zum opportunitaetskostenbasierten Teil des Gebots, die beim
+Ausformulieren zusammenzuziehen sind.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
