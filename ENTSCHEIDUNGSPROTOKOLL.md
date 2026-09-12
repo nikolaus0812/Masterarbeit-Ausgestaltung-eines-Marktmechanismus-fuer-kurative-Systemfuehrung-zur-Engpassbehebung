@@ -5413,6 +5413,74 @@ der Erklaerung des jeweiligen Marktes. Beim IDC traegt die Formel die
 Spreadbestimmung ueber einen Faktor alpha, dessen Hoehe als Sensitivitaet
 variiert wird und im Text keine Zahl bekommt.
 
+### 12.09.2026, Abbildungen von Kapitel 3 auf die Anweisung vom 12.09.2026 gebracht
+
+Grundlage ist die Anweisung des Verfassers vom 12.09.2026, die alle früheren
+Abbildungsanweisungen ersetzt. Die zweite Sitzung hat chapter_3.tex dafür
+freigegeben, Stand 21b27f5. Vor Abschnitt 3.2 ist nichts geändert.
+
+**Eine Abbildung statt zweier.** Die Flussdiagramme der 1. und der 2. Iteration
+sind im Modellrepository gelöscht und durch reservierungspreis_ablauf_a4.pdf
+ersetzt, die beide Iterationen auf einer Seite zeigt. Die Marken
+fig:reservierungspreis_iteration1 und fig:reservierungspreis_iteration2
+entfallen, neu ist fig:reservierungspreis_ablauf mit der Platzierung [p], weil
+die Abbildung 14,7 cm hoch ist. Beide alten Blöcke stehen vollständig als
+Kommentar. Kapitel 3 führt damit vier Abbildungen statt fünf und reicht von
+Seite 35 bis 50, der Gesamtumfang sinkt von 78 auf 76 Seiten.
+
+**modellaufbau.pdf** war bereits am 12.09.2026 von der zweiten Sitzung
+auskommentiert worden. Die Datei ist jetzt auch aus figures/chapter_3 entfernt,
+zusammen mit den beiden Iterationsdiagrammen.
+
+**Größenangabe.** Alle vier Einbindungen tragen jetzt width=\textwidth nach der
+Anweisung. Am Satz ändert das nichts. Die PDFs messen 453,543 PostScript-Punkte,
+das sind 455,244 TeX-Punkte und damit genau \textwidth, und main.log zeigt, dass
+pdfTeX sie schon vorher in dieser Breite gesetzt hat. Die frühere Anweisung ohne
+Größenangabe und die neue führen zum selben Bild.
+
+**Verfahren nachgezogen.** Die 2. Iteration ist im Modellrepository am
+12.09.2026 umgebaut worden. An die Stelle von drei Bandrunden, dem pauschalen
+Aufschlag von 20 Prozent, den 5-Prozent-Schritten und der Notbremse treten ein
+gemeinsamer Aufstieg um ein Viertel und ein Abstieg, der jede Stunde einzeln um
+die Toleranz senkt und dabei die Vollverdrängung aller Stunden prüft. Die
+Stichpunkte in 3.2.4 sind entsprechend neu gefasst, die alten stehen als
+Kommentar. Ebenfalls nachgezogen ist die Füllgradschwelle, die seit dem
+12.09.2026 bei höchstens 0,01 MW von 100 MW liegt und nicht mehr bei 99 Prozent.
+
+**Neu in Kapitel 5.** Abschnitt 5.4 trägt als F11 die Einschränkung, dass der
+ausgewiesene Preisvektor ein koordinatenweises und kein globales Minimum ist und
+seine Lage von der Reihenfolge des Abstiegs abhängt. Die gemessenen Werte von
+5,5 und 17,7 Prozent stehen im Kommentar, der Stichpunkt trägt keine Zahl.
+
+**Begriffskonflikt, gemeldet und nicht entschieden.** Die Anweisung nennt den
+Wert der 1. Iteration Schwellenpreis je Stunde und Richtung. CLAUDE.md
+Abschnitt 5 sperrt Schwellenpreis im Fließtext und verlangt Grenzpreis, und
+Grenzpreis ist zugleich durch den Weber-Ansatz für g_T und g_P belegt. Der
+Stichpunkt umschreibt die Sache deshalb vorerst als kleinsten einheitlichen
+Preis, bei dem die Stunde voll reserviert ist. Der Wortlaut der Anweisung steht
+als Kommentar darüber. Zu entscheiden ist, ob die Sperre für diesen Wert
+aufgehoben wird oder ein dritter Begriff gilt.
+
+**Bildunterschriften.** Die beiden in der Anweisung vorgegebenen Unterschriften
+sind inhaltlich übernommen, aber auf drei Zeilen gekürzt, weil der Verfasser am
+12.09.2026 für alle Unterschriften ein bis drei Zeilen gesetzt hat. Der
+vollständige Wortlaut der Anweisung steht als Kommentar darüber. Die unbelegte
+Aussage zur Monotonie ist dabei nicht wieder in die Unterschrift der Bisektion
+aufgenommen worden.
+
+**Offen für das Modellrepository.** Die Achse der Bisektionsabbildung sagt
+weiterhin geposteter Reservierungspreis, während der Text vorgegeben führt.
+
+**Nicht eingebunden**, wie die Anweisung verlangt, sind die drei Abbildungen für
+Kapitel 4. Geprüft ist, dass keine von ihnen referenziert wird und keine Zahl
+daraus im Text steht.
+
+**Vorbestehender Befund, nicht behoben.** Die Prüfsuite meldet für
+chapter_5.tex Zeile 91 Batteriespeicher ausgeschrieben statt als Akronym. Die
+Zeile steht unverändert seit 21b27f5 und gehört dem Verfasser.
+
+Prüfsuite für chapter_3.tex ohne Befund, Build ohne Fehler mit 76 Seiten.
+
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 

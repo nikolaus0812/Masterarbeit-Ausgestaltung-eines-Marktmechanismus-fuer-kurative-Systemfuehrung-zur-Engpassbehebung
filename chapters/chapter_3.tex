@@ -2007,8 +2007,11 @@ Dazu bildet das Modell ab, wie ein \ac{BESS} über einen Liefertag an mehreren M
 Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
-% Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
-% sie in Textbreite und in der Schrift der Arbeit gesetzt ist.
+% Modellrepository, analysen/10_schrift/kapitel_3.
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht. Die Dateien messen 453,543 PostScript-Punkte,
+% das sind 455,244 TeX-Punkte und damit genau \textwidth. Ohne Angabe hat
+% pdfTeX dieselbe Breite gesetzt, siehe main.log.
 % BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Als lineares
 % Programm entfaellt, weil der Basisfall mit 25 MW Mindestgroesse
 % gemischt-ganzzahlig ist. Das Bild nennt weiterhin LP, zu berichtigen im
@@ -2016,7 +2019,7 @@ Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdat
 % CLAUDE.md Abschnitt 5.
 \begin{figure}[htbp]
     \centering
-    \includegraphics{figures/chapter_3/modellkette.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/modellkette.pdf}
 % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
 % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
 % Fassung:
@@ -3205,9 +3208,15 @@ Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht,
 % --- Grundsatz
     \item Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf abliest, wie viel Leistung die Anlage kurativ reserviert
     \item Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen, sodass die Schleifen über die Stunden allein in der Suche liegen
-    \item Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde ab einem Füllgrad von 99 Prozent
+% SCHWELLE BERICHTIGT am 12.09.2026 nach MODELL.md Abschnitt 11.1. Seit dem
+% 12.09.2026 gilt eine Stunde als voll, wenn hoechstens 0,01 MW von 100 MW
+% fehlen, also ab 99,99 Prozent. Die Schwelle ist in MW gesetzt, weil sie so
+% das Hundertfache der Zulaessigkeitstoleranz des Solvers betraegt. Alte
+% Fassung, nicht wieder aufnehmen:
+%    \item Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde ab einem Füllgrad von 99 Prozent
+    \item Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens 0,01\,\si{MW} von 100\,\si{MW} fehlen
 % --- 1. Iteration
-    \item Die 1.~Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem Ablauf in Abbildung~\ref{fig:reservierungspreis_iteration1}
+    \item Die 1.~Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem oberen Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}
 % Stunden, die auch beim hoechsten Deckel nicht voll werden, gelten im Code
 % als strukturell gesperrt. Ob der Text das nennt, entscheidet der Verfasser.
     \item Ein Lauf mit einem Startdeckel von 800 Euro je Megawatt und Stunde prüft zunächst, ob jede Stunde voll ist, und der Deckel verdoppelt sich, bis das zutrifft, höchstens bis 51.200 Euro je Megawatt und Stunde
@@ -3224,42 +3233,89 @@ Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht,
 % GEKUERZT am 12.09.2026. Dass die 1. Iteration den kleinsten Preis voller Reservierung sucht, steht in ihrem ersten Stichpunkt.
 % Alte Fassung:
 %    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und Ergebnis ist die obere Grenze, also der kleinste Preis, der die Stunde nachweislich voll reserviert
-    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und Ergebnis ist die obere Grenze des Intervalls
+% BEGRIFF GESETZT am 12.09.2026 nach der Anweisung des Verfassers. Der Wert
+% der 1. Iteration heisst Schwellenpreis und nicht Breakeven-Preis, weil er
+% aus Laeufen mit einheitlichem Preis stammt und der 2. Iteration als
+% Startvektor dient. Alte Fassung:
+%    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und Ergebnis ist die obere Grenze des Intervalls
+% BEGRIFFSKONFLIKT, gemeldet am 12.09.2026 und nicht entschieden. Die
+% Anweisung des Verfassers vom 12.09.2026 nennt den Wert der 1. Iteration
+% Schwellenpreis je Stunde und Richtung. CLAUDE.md Abschnitt 5 sperrt
+% Schwellenpreis im Fliesstext und verlangt Grenzpreis. Grenzpreis ist
+% jedoch durch den Weber-Ansatz fuer g_T und g_P belegt, CLAUDE.md
+% Abschnitt 10, und scheidet damit aus. Der Stichpunkt umschreibt die Sache
+% deshalb vorerst. Zu entscheiden ist, ob die Sperre fuer diesen Wert
+% aufgehoben wird oder ein dritter Begriff gilt. Fassung nach der Anweisung:
+%    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der Schwellenpreis der Stunde, mit dem die 2.~Iteration beginnt
+    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist und mit dem die 2.~Iteration beginnt
 % Laufzahl nach README 09 aus den Schwellen der 20 Sensitivitaetstage
 % nachgerechnet und nicht aus dem vierten Quartal. Beim Ausformulieren den
 % Bezug nennen oder fuer das Quartal nachrechnen.
     \item Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennter Rechnung genügen 84 bis 167, im Mittel rund 130, weil sich die Stunden eines Intervalls einen Lauf teilen
 \end{itemize}
 
-% ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
-% Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
-% sie in Textbreite und in der Schrift der Arbeit gesetzt ist.
-% BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Klammern in
-% den Satz aufgeloest, Einheit ausgeschrieben wie im Fliesstext. Das Bild
-% nennt das Ergebnis Breakeven-Preis, ein Begriff, den die Arbeit nicht
-% einfuehrt.
-\begin{figure}[tbp]
+% ABBILDUNG ERSETZT am 12.09.2026 nach der Anweisung des Verfassers. Die
+% beiden Flussdiagramme der 1. und der 2. Iteration sind im Modellrepository
+% geloescht. An ihre Stelle tritt reservierungspreis_ablauf_a4.pdf, die beide
+% Iterationen auf einer Seite zeigt, 16,0 mal 14,7 cm. Die Marken
+% fig:reservierungspreis_iteration1 und fig:reservierungspreis_iteration2
+% entfallen, neu ist fig:reservierungspreis_ablauf.
+% GROESSENANGABE nach der Anweisung. Sie aendert den Satz nicht, die Datei ist
+% 453,543 PostScript-Punkte und damit 455,244 TeX-Punkte breit, also genau
+% \textwidth.
+% BILDUNTERSCHRIFT nach der Vorgabe vom 12.09.2026, gekuerzt auf drei Zeilen
+% nach der Vorgabe vom selben Tag, ein bis drei Zeilen. Der Wortlaut der
+% Anweisung, vollstaendig:
+%   Bestimmung des kurativen Reservierungspreises (Symbole nach DIN 66001).
+%   Jede Dispatch-Optimierung loest den ganzen Tag mit allen 24 Stunden und
+%   beiden Richtungen; die Schleifen ueber die Stunden liegen ausserhalb der
+%   Optimierung. Oben die 1. Iteration: Bei einheitlichem Preis halbiert jede
+%   Stunde h ihr Suchintervall, bis es schmaler als 0,05 Euro je Megawatt und
+%   Stunde ist. Unten die 2. Iteration: Der Preisvektor wird gepostet, offene
+%   Stunden werden gemeinsam angehoben, bis alle voll reserviert sind;
+%   anschliessend senkt der Abstieg jede Stunde einzeln auf den kleinsten
+%   Preis, der die Vollverdraengung aller Stunden noch traegt.
+% GEPOSTET steht in der Anweisung und im Bild, im Text der Arbeit steht
+% vorgegeben, Stilregel 4. Das Bild waere im Modellrepository nachzuziehen.
+% ALTE FASSUNG DIESES BLOCKS, vollstaendig erhalten, nicht wieder aufnehmen:
+%   % BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Klammern in
+%   % den Satz aufgeloest, Einheit ausgeschrieben wie im Fliesstext. Das Bild
+%   % nennt das Ergebnis Breakeven-Preis, ein Begriff, den die Arbeit nicht
+%   % einfuehrt.
+%   \begin{figure}[tbp]
+%       \centering
+%       \includegraphics{figures/chapter_3/reservierungspreis_iteration1.pdf}
+%   % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+%   % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+%   % Fassung:
+%   %    \caption{Flussdiagramm der 1.~Iteration mit Symbolen nach DIN 66001. Jede Dispatch-Optimierung löst als vordefinierter Prozess den ganzen Tag mit allen Stunden bei einem einheitlichen Preis. Aus jedem Lauf wird der Füllgrad aller Stunden abgelesen, und jede Stunde halbiert ihr Suchintervall, bis es schmaler als 0,05 Euro je Megawatt und Stunde ist. Ergebnis ist je Stunde und Richtung der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist.}
+%       \caption{Ablauf der 1.~Iteration. Je Stunde und Richtung halbiert die Suche ihr Preisintervall, bis der kleinste einheitliche Preis feststeht, bei dem die Stunde voll reserviert ist.}
+%       \label{fig:reservierungspreis_iteration1}
+%   \end{figure}
+\begin{figure}[p]
     \centering
-    \includegraphics{figures/chapter_3/reservierungspreis_iteration1.pdf}
-% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
-% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
-% Fassung:
-%    \caption{Flussdiagramm der 1.~Iteration mit Symbolen nach DIN 66001. Jede Dispatch-Optimierung löst als vordefinierter Prozess den ganzen Tag mit allen Stunden bei einem einheitlichen Preis. Aus jedem Lauf wird der Füllgrad aller Stunden abgelesen, und jede Stunde halbiert ihr Suchintervall, bis es schmaler als 0,05 Euro je Megawatt und Stunde ist. Ergebnis ist je Stunde und Richtung der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist.}
-    \caption{Ablauf der 1.~Iteration. Je Stunde und Richtung halbiert die Suche ihr Preisintervall, bis der kleinste einheitliche Preis feststeht, bei dem die Stunde voll reserviert ist.}
-    \label{fig:reservierungspreis_iteration1}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
+    \label{fig:reservierungspreis_ablauf}
 \end{figure}
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
-% Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
-% sie in Textbreite und in der Schrift der Arbeit gesetzt ist.
+% Modellrepository, analysen/10_schrift/kapitel_3.
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht. Die Dateien messen 453,543 PostScript-Punkte,
+% das sind 455,244 TeX-Punkte und damit genau \textwidth. Ohne Angabe hat
+% pdfTeX dieselbe Breite gesetzt, siehe main.log.
 % BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Gepostet durch
-% vorgegeben ersetzt, Breakeven-Preis umschrieben, Doppelpunkt aufgeloest.
+% vorgegeben ersetzt, Doppelpunkt aufgeloest. Der Wortlaut der Anweisung vom
+% 12.09.2026 nennt das Ergebnis Schwellenpreis der Stunde, was der Stichpunkt
+% zur 1. Iteration traegt. Alte Zeile dieses Kommentars:
+%   % vorgegeben ersetzt, Breakeven-Preis umschrieben, Doppelpunkt aufgeloest.
 % Die Monotonie ist uebernommen, aber nicht belegt, siehe den Kommentar am
 % Stichpunkt zur Bisektion. Die Achse im Bild sagt geposteter
 % Reservierungspreis.
 \begin{figure}[htbp]
     \centering
-    \includegraphics{figures/chapter_3/reservierungspreis_bisektion.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
 % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
 % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
 % Fassung:
@@ -3271,36 +3327,67 @@ Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht,
 \begin{itemize}
 % --- 2. Iteration
     \item Werden die Preise der 1.~Iteration als Vektor gleichzeitig vorgegeben, sind nicht alle Stunden voll reserviert, weil jede Stunde ihre Schwelle unter einem einheitlichen Preis und damit gegen eine andere Konkurrenz um Leistung und Ladezustand gefunden hat
-    \item Die 2.~Iteration gibt diesen Vektor vor und behandelt die offenen Stunden nacheinander, aufsteigend und die positive vor der negativen Richtung, jeweils mit einer Bisektion bis zum 1,25-Fachen ihres Preises bei festgehaltenen übrigen Preisen, nach dem Ablauf in Abbildung~\ref{fig:reservierungspreis_iteration2}
-    \item Nach drei solchen Runden hebt sie die noch offenen Stunden einmalig um 20 Prozent und danach in Schritten von 5 Prozent an, bis alle Stunden zugleich voll reserviert sind, und nach 200 Durchgängen markiert sie verbliebene Stunden als untere Schranke
-    \item Die Reihenfolge gehört zum Verfahren, denn eine früh behandelte Stunde erhält den günstigeren Preis, und fällt sie später wieder heraus, fängt die nächste Runde sie auf
+% VERFAHREN NEU GEFASST am 12.09.2026 nach dem Umbau im Modellrepository,
+% MODELL.md Abschnitt 11.3. Die 2. Iteration hatte bis dahin drei Bandrunden,
+% einen pauschalen Aufschlag von 20 Prozent, eine Schleife in 5-Prozent-
+% Schritten und eine Notbremse nach 200 Durchgaengen. Diese vier Zahlen waren
+% gesetzt und verschoben einzelne Stundenpreise um bis zu 29 Prozent. An ihre
+% Stelle treten ein gemeinsamer Aufstieg und ein Abstieg je Stunde.
+% ALTE FASSUNG, vollstaendig erhalten, nicht wieder aufnehmen:
+%    \item Die 2.~Iteration gibt diesen Vektor vor und behandelt die offenen Stunden nacheinander, aufsteigend und die positive vor der negativen Richtung, jeweils mit einer Bisektion bis zum 1,25-Fachen ihres Preises bei festgehaltenen übrigen Preisen, nach dem Ablauf in Abbildung~\ref{fig:reservierungspreis_iteration2}
+%    \item Nach drei solchen Runden hebt sie die noch offenen Stunden einmalig um 20 Prozent und danach in Schritten von 5 Prozent an, bis alle Stunden zugleich voll reserviert sind, und nach 200 Durchgängen markiert sie verbliebene Stunden als untere Schranke
+%    \item Die Reihenfolge gehört zum Verfahren, denn eine früh behandelte Stunde erhält den günstigeren Preis, und fällt sie später wieder heraus, fängt die nächste Runde sie auf
+    \item Die 2.~Iteration gibt diesen Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}
+% BEGRUENDUNG des gemeinsamen Aufstiegs nach MODELL.md Abschnitt 11.3. Eine
+% Suche je Stunde konvergiert nicht, gemessen blieben zwei bis drei
+% Stunden-Richtungen ueber 30 Durchlaeufe offen.
+    \item Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen und eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste steigt
+% DER FAKTOR ist nach MODELL.md gemessen und nicht gesetzt, naemlich 1,10,
+% 1,25, 1,50 und 2,00 im Vergleich. Das gehoert in die Ergebnisse und steht
+% deshalb hier nicht.
+    \item Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die Vollverdrängung aller Stunden, und er endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt
 % OFFEN, vom Verfasser zu entscheiden. Welche der beiden Groessen der
 % ausgewiesene kurative Reservierungspreis ist, der Preis der 1. Iteration
 % oder der Vollverdraengungspreis der 2. Iteration. Die Abbildung der 1.
 % Iteration nennt ihren Preis Breakeven-Preis, ein Begriff, den die Arbeit
 % nicht einfuehrt.
-    \item Ergebnis der 2.~Iteration ist je Stunde und Richtung der Vollverdrängungspreis, bei dem alle Stunden zugleich voll reserviert sind, wobei positive und negative Richtung als zwei Produkte getrennt bleiben
+% ERGEBNIS PRAEZISIERT am 12.09.2026 nach der Anweisung des Verfassers. Der
+% Vektor ist ein koordinatenweises und kein globales Minimum. Die Abhaengigkeit
+% von der Reihenfolge des Abstiegs gehoert nach der Anweisung als Einschraenkung
+% nach Kapitel 5 und steht dort als eigener Punkt in Abschnitt 5.4. Alte
+% Fassung:
+%    \item Ergebnis der 2.~Iteration ist je Stunde und Richtung der Vollverdrängungspreis, bei dem alle Stunden zugleich voll reserviert sind, wobei positive und negative Richtung als zwei Produkte getrennt bleiben
+    \item Ergebnis der 2.~Iteration ist je Stunde und Richtung der Vollverdrängungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt, wobei positive und negative Richtung als zwei Produkte getrennt bleiben
 \end{itemize}
 
-% ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
-% Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
-% sie in Textbreite und in der Schrift der Arbeit gesetzt ist.
-% BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Gepostet durch
-% vorgegeben ersetzt, Doppelpunkt aufgeloest, Prozent ausgeschrieben.
-\begin{figure}[tbp]
-    \centering
-    \includegraphics{figures/chapter_3/reservierungspreis_iteration2.pdf}
-% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
-% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
-% Fassung:
-%    \caption{Flussdiagramm der 2.~Iteration. Der Preisvektor der 1.~Iteration wird vorgegeben, und Stunden, die dabei nicht voll reserviert sind, werden angehoben, zuerst in drei Bandrunden Stunde für Stunde bei festgehaltenen übrigen Preisen, danach einmalig um 20 Prozent und zuletzt in Schritten von 5 Prozent, bis alle Stunden zugleich voll reserviert sind.}
-    \caption{Ablauf der 2.~Iteration. Stunden, die unter den Preisen der 1.~Iteration nicht voll reserviert sind, werden angehoben, bis alle Stunden zugleich voll reserviert sind.}
-    \label{fig:reservierungspreis_iteration2}
-\end{figure}
+% ABBILDUNG ENTFALLEN am 12.09.2026 nach der Anweisung des Verfassers. Beide
+% Iterationen stehen jetzt in fig:reservierungspreis_ablauf oben in diesem
+% Unterabschnitt. Die Datei reservierungspreis_iteration2.pdf ist im
+% Modellrepository geloescht. Alte Fassung, vollstaendig erhalten:
+%   % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
+%   % Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
+%   % sie in Textbreite und in der Schrift der Arbeit gesetzt ist.
+%   % BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Gepostet durch
+%   % vorgegeben ersetzt, Doppelpunkt aufgeloest, Prozent ausgeschrieben.
+%   \begin{figure}[tbp]
+%       \centering
+%       \includegraphics{figures/chapter_3/reservierungspreis_iteration2.pdf}
+%   % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+%   % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+%   % Fassung:
+%   %    \caption{Flussdiagramm der 2.~Iteration. Der Preisvektor der 1.~Iteration wird vorgegeben, und Stunden, die dabei nicht voll reserviert sind, werden angehoben, zuerst in drei Bandrunden Stunde für Stunde bei festgehaltenen übrigen Preisen, danach einmalig um 20 Prozent und zuletzt in Schritten von 5 Prozent, bis alle Stunden zugleich voll reserviert sind.}
+%       \caption{Ablauf der 2.~Iteration. Stunden, die unter den Preisen der 1.~Iteration nicht voll reserviert sind, werden angehoben, bis alle Stunden zugleich voll reserviert sind.}
+%       \label{fig:reservierungspreis_iteration2}
+%   \end{figure}
 
 \begin{itemize}
 % --- Rechenaufwand und Schleifen
-    \item Ein einzelner Lauf dauert rund 0,2 Sekunden und ein Tag mit beiden Iterationen 17 bis 44 Sekunden
+% ZU PRUEFEN am 12.09.2026. Die Angabe von 17 bis 44 Sekunden je Tag stammt aus
+% der Zeit vor dem Umbau der 2. Iteration. Der Abstieg kostet zusaetzlich 48
+% Laeufe je Durchgang und rund zehn Laeufe je gesenkter Stunde, die Dauer ist
+% deshalb nachzumessen. Alte Fassung:
+%    \item Ein einzelner Lauf dauert rund 0,2 Sekunden und ein Tag mit beiden Iterationen 17 bis 44 Sekunden
+    \item Ein einzelner Lauf dauert rund 0,2 Sekunden, und beide Iterationen zusammen verlangen je Tag einige hundert Läufe
 % ZU PRUEFEN. Die Abbildung nennt 3 Beispieltage, 20 Sensitivitaetstage und
 % 363 bis 365 Tage im Jahr sowie Studien wie den lambda-Hebel, die die Arbeit
 % nicht einfuehrt. Das widerspricht dem vierten Quartal nach Entscheidung 10
@@ -3340,13 +3427,16 @@ Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht,
 \end{itemize}
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
-% Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
-% sie in Textbreite und in der Schrift der Arbeit gesetzt ist.
+% Modellrepository, analysen/10_schrift/kapitel_3.
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht. Die Dateien messen 453,543 PostScript-Punkte,
+% das sind 455,244 TeX-Punkte und damit genau \textwidth. Ohne Angabe hat
+% pdfTeX dieselbe Breite gesetzt, siehe main.log.
 % BILDUNTERSCHRIFT nach Vorschlag des Verfassers, allein kurativer
 % Reservierungspreis statt Reservierungspreis.
 \begin{figure}[htbp]
     \centering
-    \includegraphics{figures/chapter_3/schleifenebenen.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/schleifenebenen.pdf}
 % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
 % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
 % Fassung:
