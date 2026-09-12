@@ -5548,6 +5548,154 @@ Umschreibung, die bereits im Text steht. Schwellenpreis bleibt nach CLAUDE.md
 Abschnitt 5 gesperrt, Grenzpreis ist durch den Weber-Ansatz belegt.
 
 
+### 12.09.2026, 3.2.1 und 3.2.2 ausformuliert
+
+**Auftrag des Verfassers**, beide Unterabschnitte am Stueck auszuformulieren und
+ihm gesetzt vorzulegen. 3.2.1 traegt jetzt drei weitere Absaetze, naemlich den
+Rechenansatz, die Grenzen des Modells und das Marktumfeld. 3.2.2 traegt vier
+Absaetze vor der Zielfunktion, naemlich Anlage, Mengen und Variablen, Speicher
+und Leistung, dazu den Degradationssatz hinter der Formel.
+
+**Rechenansatz nach seinen Korrekturen.** Das Wort stochastisch entfaellt. Die
+nacheinander fallenden Handelsentscheidungen stehen als Abgrenzung im ersten
+Satz. Der zweite Satz sagt, dass ein BESS dem berechneten Betrieb mit heutigen
+Handelsstrategien nahe kommt, belegt ueber die rund neunzig Prozent bei
+hornek_value_2025. Neu ist die Begruendung, weshalb das Problem als lineares und
+als gemischt-ganzzahliges Programm loesbar ist, naemlich durchweg lineare
+Zielfunktion und Nebenbedingungen und die Mindestgroesse, die die Reservierung
+halbstetig macht.
+
+**Solversatz nach dem Muster des Verfassers.** Gurobi 13.0.2, die Version stammt
+aus dem Feld version des Eintrags gurobi_reference_2026. Abbruchkriterium ist
+eine relative Optimalitaetsluecke von 0,01 Prozent zwischen bester zulaessiger
+Loesung und bester relaxierter Schranke, dazu 60 Sekunden je Lauf, beides nach
+MODELL.md. Die im Beispiel des Verfassers genannte Version 12.0.0 stammt aus
+einer fremden Arbeit und ist nicht uebernommen, ebenso wenig die dortige Luecke
+von einem Prozent und die Bayessche Optimierung, die es hier nicht gibt.
+
+**Nicht aufgenommen.** Der Satz, dass ein gemischt-ganzzahliges Problem keine
+Dualvariablen liefert und die Arbeit deshalb keine Schattenpreise ausweist. Er
+gehoert zu den offenen Punkten 1 und 2 in CLAUDE.md Abschnitt 9.
+
+**Entfallen.** Der Stichpunkt zur Zuordnung jeder Groesse zu einem Symbol. Er
+zeigte auf die Tabelle der Produktparameter, die im Block der kurativen
+Reservierung steht. Die Symbole werden dort eingefuehrt, wo sie zuerst
+auftreten.
+
+**Zitate.** rystad steht nur noch bei der Kannibalisierung, die Mengenbegrenzung
+traegt garttan allein, Stilregel 8.
+
+
+### 12.09.2026, Nachtrag, Doppelung in 3.2.1 aufgeloest
+
+Fassung A, gewaehlt vom Verfasser. Der erste Satz des zweiten Absatzes trug die
+gemeinsame Entscheidung mit vollstaendiger Preiskenntnis ein zweites Mal, direkt
+hinter dem letzten Satz des ersten Absatzes, der dasselbe als dritte Anforderung
+sagt. Er traegt jetzt allein die Abgrenzung, naemlich dass der Akteur in
+Wirklichkeit nacheinander entscheidet. Die alte Fassung steht als Kommentar. Die
+Wendung vollstaendige Preiskenntnis steht damit noch zweimal in 3.2.1, einmal
+als Annahme und einmal im Beleg zu den neunzig Prozent.
+
+
+### 12.09.2026, Nachtrag, FCR-Block ausformuliert
+
+**Vier Saetze und der Erloesterm.** Satz 1 nennt den Einheitspreis, Satz 2 in
+Fassung C den Erloes aus Leistungspreis mal vorgehaltener Leistung mit der
+Begruendung, dass die FCR allein die Bereitschaft verguetet, Satz 3 in Fassung C
+das Ladezustandsband von einer Viertelstunde, Satz 4 in Fassung A die
+symmetrische und ueber vier Stunden konstante Vorhaltung. Der Erloesterm steht
+abgesetzt mit der Marke eq:erloes_fcr, wobei s(t) jeder Viertelstunde ihre
+Vier-Stunden-Zeitscheibe zuordnet.
+
+**Angemerkt, vom Verfasser so gewaehlt.** Satz 2 wiederholt aus Kapitel 2, dass
+die FCR keinen Arbeitspreis kennt. Satz 3 wiederholt aus 3.2.2, dass gebundene
+Leistung dem Handel fehlt, dort steht es fuer alle Vorhaltungen zusammen.
+
+**Nicht uebernommen.** Die Fassung, die das symmetrische Band erklaert und ueber
+den Monitoringbericht Seite 124 belegt haette.
+
+
+### 12.09.2026, Nachtrag, aFRR-Leistung ausformuliert
+
+**Zehn Saetze und der Erloesterm.** Satz 1 in Fassung B stellt den Gegensatz zur
+FCR heraus, naemlich pay-as-bid gegen Einheitspreis. Die Saetze 2 bis 5
+begruenden auf Vorgabe des Verfassers, warum das Modell den mengengewichteten
+Durchschnitt und nicht den hoechsten Zuschlag ansetzt. Satz 3 fuehrt dafuer den
+Begriff Merit-Order ein, den die Schriftfassung bisher nicht kennt. Es folgen
+Erloes, Ladezustandsband, Richtung und Konstanz, die Modellierungsleiter und der
+Basisfall, danach der Term mit der Marke eq:erloes_afrr_l.
+
+**Zahlen im Text**, entschieden vom Verfasser. Eigene Rechnung aus der
+Ergebnisuebersicht 2025 mit 4380 Ausschreibungen. Der Grenzpreis liegt im Median
+16,0 Prozent ueber dem Durchschnitt in der positiven und 22,1 Prozent in der
+negativen Richtung, und zwar in allen Ausschreibungen darueber. Die Mittelwerte
+von 29,4 und 41,4 Prozent haengen an wenigen Knappheitsstunden mit einem Maximum
+von 3326,90 Euro je Megawatt und Stunde und stehen deshalb nicht im Text. Die
+Rechnung stammt aus der zweiten Sitzung, die Sitzung im Modellrepository prueft
+sie nach.
+
+**Nicht aufgenommen.** Dass auf jedes bezuschlagte Megawatt rund zwei angebotene
+kommen, Median 2,04 in POS und 1,92 in NEG fuer 2025. Die Sitzung im
+Modellrepository hat das auf den Daten von 2026 unabhaengig reproduziert, dort
+2,07 und 1,97. Die Spalte GERMANY_ALLOCATED_VOLUME wird erst seit dem 03.09.2025
+veroeffentlicht, in der Datei von 2024 fehlt sie ganz, in der von 2026 ist sie
+vollstaendig. Das ist eine Formatumstellung und kein Datenausfall, der Satz waere
+also tragfaehig. Der Verfasser hat ihn nicht verlangt.
+
+**Geprueft.** Die Sitzung im Modellrepository hat alle Zahlen reproduziert,
+Blatt 001 der Datei mit Dateidatum 10.06.2026, 4380 Zeilen. Der Abstand ist als
+Grenzpreis minus Durchschnitt geteilt durch den Durchschnitt gerechnet, Median
+und Mittel ueber die Einzelwerte. Der hoechste Abstand stammt vom 16.09.2025,
+POS_08_12, mit 456,66 gegen 3783,56 bei 3012 MW Angebot. Bestaetigt ist auch der
+Einheitenbefund, die Division durch vier steht allein in load_fcr_data.
+
+**Offener Punkt zum Abrufdatum.** Der Eintrag
+regelleistung_ausschreibungsdaten_2026 traegt das Abrufdatum 31.05.2026, die
+Dateien tragen das Dateidatum 10.06.2026, und die Jahresdatei 2025 ist nach
+Jahresende nachbefuellt worden. Ob die Mengenspalten zum 31.05.2026 schon so
+befuellt waren, ist ungeprueft. Fuer die im Text stehenden Preiszahlen spielt das
+keine Rolle.
+
+**Einheitenbefund.** Die aFRR-Spalten der Ergebnisuebersicht sind bereits Euro je
+Megawatt und Stunde. Die Division durch vier im data_loader betrifft allein die
+FCR, deren Spalte je Vier-Stunden-Block ausgewiesen ist. Der FCR-Satz in 3.2.3
+bleibt damit richtig.
+
+**Offen.** Die Abbildung der Merit-Order fuer den Anhang. Aus der
+Ergebnisuebersicht laesst sie sich nicht bilden, dafuer braucht es die anonyme
+Ergebnisliste der Leistungsausschreibung, die nicht im Repository liegt. Ein
+Download ist vom Verfasser freizugeben.
+
+
+### 12.09.2026, Nachtrag, aFRR-Arbeit ausformuliert
+
+**Sechs Saetze und der Erloesterm.** Satz 1 nennt das volumengewichtete Mittel
+der Grenzpreise der Plattform PICASSO ueber die 225 Vier-Sekunden-Zyklen, Satz 2
+den Sollwert als Ersatzgewicht und die gesperrten Viertelstunden ohne Abruf,
+Satz 3 die anteilige Lieferung ohne Auswahl einzelner Viertelstunden, Satz 4 die
+Sensitivitaet zum Lieferumfang, Satz 5 den Ausgleich am IDC und Satz 6 den
+Erloes. Der Term traegt die Marke eq:erloes_afrr_e.
+
+**Berichtigt vor dem Schreiben.** Der Verfasser wollte einen Folgesatz, der die
+ausgeschriebene Menge als Sensitivitaet ausweist. Sie ist keine. MODELL.md fuehrt
+sie als festen Parameter afrr_vorhalt_de mit 2000 MW. Variiert wird in
+sensi3_preis_mode der Modus der Lieferung, also der anteilige Abruf gegen eine
+freie Lieferung bis zur eigenen Reservierung, bis zu einem Anteil des deutschen
+Abrufs und bis zur Anlagenleistung. Der Satz sagt das jetzt, und der Verfasser
+hat diese Fassung gewaehlt.
+
+**Nicht im Text.** Die 2000 MW und der daraus folgende Anteil von rund vier
+Prozent. Die Zahl ist eine Setzung des Codes und gehoert in die Tabelle der
+Eingangsgroessen.
+
+**Zur Formel.** Das Vorzeichen des Ausgleichs unterscheidet sich je Richtung,
+weil die Anlage bei positiver Lieferung Energie zurueckkauft und bei negativer
+die aufgenommene Energie verkauft. Der Ausgleich ist mit dem ID1 bewertet, ohne
+den Aufschlag des physischen Handels. Die Aufspaltung des Lieferpfads aus
+MODELL.md, naemlich Durchleitung, Netting und entkoppelter Pfad, fuehrt die
+Arbeit nicht.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst
