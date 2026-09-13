@@ -49,7 +49,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Reihenfolge wie in main.tex, sie bestimmt die Erstnennung der Akronyme.
 KONTEXT = ([ROOT / "chapters" / "chapter_{}.tex".format(i) for i in range(1, 7)]
-           + [ROOT / "extras" / "attachment.tex"])
+           + [ROOT / "extras" / "attachment.tex",
+              ROOT / "extras" / "attachment_modell.tex"])
 SUCHORTE = (ROOT / "chapters", ROOT / "extras", ROOT)
 STANDARD_BIB = ROOT / "literature" / "literature.bib"
 ABKUERZUNGEN = ROOT / "extras" / "abbreviations.tex"

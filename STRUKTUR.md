@@ -40,7 +40,7 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 | | Einleitung mit Preis, Lücke und Aufgabe, aus dem aufgelösten 3.1.3 | 0,5 | F, acht Sätze |
 | 3.2.1 | Ansatz und Lösungsverfahren, ohne die Märkte, mit den Systemgrenzen am Schluss | 1,5 | F |
 | 3.2.2 | Anlage, Speicher und Zielfunktion | 1,5 | F |
-| 3.2.3 | Abbildung der Märkte, je Markt eine unnummerierte Überschrift | 3 | T, es fehlt nur die kurative Reservierung |
+| 3.2.3 | Abbildung der Märkte, je Markt eine unnummerierte Überschrift | 3 | F |
 | 3.2.4 | Bestimmung des Preises, mit Weber-Abgrenzung und Gebotsbestandteilen | 2,5 | S |
 | **3.3** | **Validierung des Modells** | **2** | S |
 
@@ -95,6 +95,29 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
   vor dem Zuschlag, die Kostenwälzung und der Schlusssatz von 3.1.2.
 
 ---
+
+## Umfang von Kapitel 3, Stand 13.09.2026
+
+Das Kapitel läuft im Build von Seite 35 bis Seite 50, also 16 Seiten bei einem
+Ziel von 14. Hinzugekommen sind am 13.09.2026 der Block der kurativen
+Reservierung mit Erlösterm und Produktparametertabelle sowie der zu einem Absatz
+zusammengezogene Abschnitt 3.2.2. Entlastung ist von 3.2.4 zu erwarten, weil die
+Nebenbedingungen jetzt in Anhang~B stehen und der Text auf sie verweist, statt
+sie zu wiederholen.
+
+## Entschieden am 13.09.2026
+
+Das vollstaendige Optimierungsproblem steht als eigener Anhang in
+`extras/attachment_modell.tex`, eingebunden in `main.tex` hinter
+`attachment.tex`. Er traegt Mengen, Parameter und Variablen in zwei Tabellen,
+die Zielfunktion mit ihren sechs Erloestermen und acht Gruppen von
+Nebenbedingungen, jede mit eigener Marke unter `eq:anh:modell:`. Damit verweist
+3.2.3 auf die Gleichungen, statt sie zu wiederholen, was den Umfang von
+Kapitel 3 senkt. Die Symbole weichen bewusst vom Code ab, weil dieser g, b, x
+und V fuehrt, die der Weber-Ansatz belegt.
+
+Offen bleibt, ob die beiden Anhangstabellen die Zahlenwerte fuehren oder nur
+die Zeichen, denn derzeit wiederholen sie die Werte aus 3.2.2.
 
 ## Vorgemerkt, noch nicht im Text
 

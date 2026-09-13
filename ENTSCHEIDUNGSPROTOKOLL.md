@@ -5696,6 +5696,115 @@ MODELL.md, naemlich Durchleitung, Netting und entkoppelter Pfad, fuehrt die
 Arbeit nicht.
 
 
+### 13.09.2026, 3.2.2 zu einem Absatz und 3.2.3 abgeschlossen
+
+**3.2.2 traegt jetzt einen Absatz.** Vorgabe des Verfassers, nachdem jeder
+Parameter seine Begruendung erhalten hat. Satz 1 nennt den Energieinhalt je
+Leistung von 2,5 Stunden, Fassung A, also mit Einheit und ohne den Begriff
+C-Wert. Angemerkt und vom Verfasser so entschieden: main.py Zeile 357 fuehrt
+die C-Rate mit 0,4, der Wert 2,5 ist ihr Kehrwert. Satz 3 nennt den
+Umlaufwirkungsgrad von 0,9025, Satz 4 die nutzbaren 225 MWh, beides eigene
+Rechnungen und vom Verfasser zu pruefen. Die Randbedingung steht in Fassung A
+mit der Vergleichbarkeit der Tage als Grund.
+
+**Degradation zu den Kosten gezogen.** Der Satz stand hinter der Zielfunktion
+und steht jetzt bei den Anlagenparametern, zusammen mit den 8 Euro je
+Megawattstunde.
+
+**Zielfunktion umgestellt.** Links steht die benannte Groesse E^{BESS,ges}.
+
+**Herkunft der 8 Euro geklaert.** main.py Zeile 401, bat_degsatz = 8.0, ohne
+Quelle. Der Kommentar dort nennt die Bildung aus Ersatzkosten mal
+Kapazitaetsverlust und die Spannen 5 bis 20 Euro je MWh fuer NMC sowie 3 bis 10
+fuer LFP. Keiner der fuenf Literatureintraege traegt die Zahl erkennbar,
+kumtepeli_energy_2020 waere der naechstliegende Kandidat, geprueft ist das
+nicht. Die Zahl bleibt eine Setzung, gestuetzt allein durch sensi2_deg von 0 bis
+18 Euro je MWh. Dasselbe gilt fuer die Mindestgroesse von 25 MW, zu der der Code
+typische UENB-Mindestgebotsgroessen von 10 bis 25 MW notiert, ebenfalls ohne
+Quelle.
+
+**Zitate am Anlagensatz stehen geblieben.** Der Verfasser prueft selbst, ob
+juelch_comparison_2016 und garttan_battery_2025 den Wirkungsgrad und das
+Ladezustandsband tragen. Mir war das nicht moeglich, weil die PDF nur unter
+einem fremden Zotero-Pfad liegen. Eine LCOS-Vergleichsrechnung und ein Review zu
+Regelleistungsmaerkten tragen diese Parameter nach meiner Einschaetzung nicht.
+
+**3.2.3 abgeschlossen, Block kurative Reservierung.** Satz 1 Fassung B, Satz 2
+Fassung C mit dem Zusatz des Verfassers, dass die Zeitscheibe zwischen vollen
+Stunden liegt, Satz 3 Fassung C, Satz 4 auf Vorgabe auf die getrennte
+Betrachtung beider Richtungen gekuerzt, Satz 5 Fassung C. Die Mindestgroesse
+steht in zwei Saetzen, Fassung C geteilt. Der Erloesterm traegt die Marke
+eq:erloes_kur, Preis und Leistung mit dem Index der Zeitscheibe, Fassung A.
+
+**Nicht vorgelegt.** Eine dritte Fassung zu Satz 4, die gesagt haette, ob beide
+Richtungen denselben vorgegebenen Preis tragen. Im Modell sucht K1 je Stunde und
+Richtung, als Aussage ueber das Produkt ist das nicht gesetzt.
+
+**Produktparametertabelle.** tab:kur_produkt, drei Spalten, so entschieden. Die
+Pruefspalte ist nur teilweise belegt. Energievorhalt aus sensi6_vorhaltedauer
+und die Anteile der reservierten Leistung aus dem Reservierungspreis-Gitter
+stehen in MODELL.md. Fuer die Zeitscheibe finde ich keine Sensitivitaet, dort
+steht offen. Die Mindestgroesse ist ueber USE_KUR_BINAER schaltbar, als
+Sensitivitaet nicht gefuehrt, die Zeile weist eine Absicht aus. Die
+Reaktionszeitklasse von 2 Minuten stammt aus dem Tabellenentwurf vom 11.09.2026
+und nicht aus dem Modell. Der Schlusssatz steht in Fassung B ohne die Aussage,
+dass jedes Ergebnis an den Zahlen haengt, so vom Verfasser verlangt.
+
+**Anhangsverweis.** Fassung A am Ende von 3.2.2, damit anh:modell angebunden ist.
+
+**Stand.** Pruefsuite ohne Befund fuer chapter_3.tex und
+attachment_modell.tex. Build fehlerfrei, 82 Seiten. Kapitel 3 laeuft von Seite
+35 bis 50, also 16 Seiten bei einem Ziel von 14.
+
+
+## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
+
+### 13.09.2026, Anhang angelegt
+
+**Auftrag des Verfassers.** Das ganze Optimierungsproblem in wissenschaftlicher
+Form, damit der Hauptteil bei den Nebenbedingungen nur noch darauf verweist.
+Die Datei liegt als extras/attachment_modell.tex und ist in main.tex hinter
+attachment.tex eingebunden. Aufbau: Mengen, Parameter und Variablen in zwei
+Tabellen, dann die Zielfunktion mit ihren sechs Erloestermen und den
+Degradationskosten, dann die Nebenbedingungen in acht Gruppen, jede mit einem
+Satz zu ihrer Aufgabe und einer eigenen Marke.
+
+**Symbolwahl, eigenstaendige Entscheidung, vom Verfasser zu pruefen.** Der Code
+fuehrt fuer die aFRR-Lieferpfade g, b und x sowie V fuer den Flat-Trade. Nach
+CLAUDE.md Abschnitt 10 sind g, X, d und V durch den Weber-Ansatz belegt, siehe
+tab:weber_symbole. Der Anhang verwendet deshalb einen eigenen Satz, naemlich
+P^aus fuer den Ausgleich der gelieferten Arbeit am IDC, B fuer die belegte
+Leistung der aFRR, u fuer die Binaervariable der Mindestgroesse, beta fuer den
+Schalter am Beginn einer Regelleistungszeitscheibe, epsilon fuer das Vorzeichen
+des Ausgleichs, tau fuer die Vorhaltedauern und alpha fuer den Anteil am
+deutschen Abruf. Der Ladezustand heisst S, weil E fuer die Erloese belegt ist.
+
+**Abweichung von Gleichung 3.5.** Der Hauptteil bewertet den Ausgleich der
+aFRR-Arbeit in derselben Viertelstunde wie die Lieferung. Der Anhang fuehrt
+dafuer die eigene Variable P^aus mit Tagesbilanz und Kausalitaet, weil der
+Ausgleich im Modell in einer spaeteren Viertelstunde liegt. Gleichung 3.5 ist
+die zusammengefasste Form, der Anhang die genaue.
+
+**Nicht uebernommen.** Die drei Lieferpfade der aFRR-Arbeit aus MODELL.md
+Abschnitt 7.8, also Durchleitung, Netting und entkoppelter Pfad. Im Standard
+sind die ersten beiden gesperrt, und die Arbeit fuehrt die Aufspaltung nicht.
+Ebenso der IDC-Flat-Trade, der im Standard aus ist.
+
+**Zwei Fehler vor dem Build behoben.** Der Verweis auf 3.2.3 lautete
+sec:markets, die Marke heisst sec:constraints. Und die Indikatorfunktion stand
+als mathbb{1}, das amssymb nicht definiert, sie ist jetzt der Parameter beta.
+
+**Pruefsuite erweitert.** tools/pruefen.py fuehrte in KONTEXT nur chapter_1 bis
+chapter_6 und attachment.tex, die neue Datei wurde deshalb nicht geprueft. Sie
+steht jetzt dahinter, in der Reihenfolge von main.tex. Ergebnis ohne Befund,
+Build fehlerfrei auf 82 Seiten.
+
+**Offen.** Die beiden Tabellen tragen Zahlen, naemlich 100 MW, 250 MWh, die
+Ladezustandsgrenzen, 0,95, 8 Euro je MWh, die Vorhaltedauern und 25 MW. Sie
+wiederholen damit Abschnitt 3.2.2. Zu entscheiden ist, ob der Anhang die Werte
+fuehrt oder nur die Zeichen.
+
+
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
 ### 02.09.2026, Anhang zum Weber-Ansatz neu gefasst

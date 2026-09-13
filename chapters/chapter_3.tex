@@ -2654,18 +2654,6 @@ Dass Speicher Niedrigpreisphasen anheben, Hochpreisphasen absenken und damit die
 %    \item Daraus folgt die Ausschließlichkeit der kurativen Zusage, denn eine kurativ gebundene Leistung steht keinem anderen Markt zur Verfügung
 %    \item Leistungsschranke je Seite, auf der sich der Handel, die \ac{aFRR}, die kurative Reservierung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung teilen, woraus die Ausschließlichkeit der kurativen Zusage folgt
 %\end{itemize}
-Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, einem Wirkungsgrad von 0,95 je Richtung und einem nutzbaren Ladezustand zwischen 5 und 95 Prozent \cite{juelch_comparison_2016, garttan_battery_2025}.
-Ihre Degradation kostet 8 Euro je Megawattstunde Durchsatz.
-
-Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
-Entscheidungsvariablen sind die Lade- und die Entladeleistung am \ac{DA} und am \ac{IDC}, die vorgehaltene Leistung der \ac{FCR} und der \ac{aFRR} je Richtung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ, dazu die Binärvariable der Mindestgröße.
-
-Die Ladezustandsbilanz führt den Speicherinhalt über den Tag fort, wobei allein der Handel und die gelieferte \ac{aFRR}-Arbeit ihn bewegen und die Wirkungsgrade beider Richtungen eingehen.
-Der Ladezustand bleibt zwischen seinen Grenzen, und Anfang und Ende eines Tages tragen denselben Wert.
-Die zeitgekoppelte Formulierung folgt der Darstellung von Flexibilitätsgeboten \cite{schmitt_linear_2020}.
-
-Auf jeder Seite teilen sich der Handel, die \ac{aFRR}, die kurative Reservierung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung, woraus folgt, dass eine kurativ reservierte Leistung keinem anderen Markt zur Verfügung steht.
-
 % AUSFORMULIERT am 12.09.2026, Fassung A, gewaehlt vom Verfasser, mit
 % abgesetzter Formel nach seiner Anweisung, die Erloesterme der Maerkte als
 % Formel zu fuehren. Die Zielfunktion steht vor den Maerkten, damit die
@@ -2680,13 +2668,6 @@ Auf jeder Seite teilen sich der Handel, die \ac{aFRR}, die kurative Reservierung
 % Der Rest von 3.2.2 steht weiterhin in Stichpunkten.
 % STICHPUNKT ERSETZT am 12.09.2026, alte Fassung:
 %    \item Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte abzüglich der Degradationskosten
-Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführten Märkte abzüglich der Degradationskosten.
-
-\begin{equation}
-    \label{eq:zielfunktion}
-    \max \; E^{\mathrm{DA}} + E^{\mathrm{IDC}} + E^{\mathrm{FCR}} + E^{\mathrm{aFRR,L}} + E^{\mathrm{aFRR,E}} + E^{\mathrm{kur}} \; - \; K^{\mathrm{deg}}
-\end{equation}
-
 % STICHPUNKT ERSETZT am 12.09.2026, alte Fassung:
 %\begin{itemize}
 % --- Degradation
@@ -2703,7 +2684,51 @@ Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführt
 % beiden Gruppen, weil sie vor allem die Kette der Maerkte zeigt. Alte Fassung:
 %   \item Abbildung des Modellaufbaus mit Handelskette, Zielfunktion und Speicher
 %\end{itemize}
-Die Degradation belastet als linearer Kostensatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen \cite{kumtepeli_energy_2020}.
+% ZU EINEM ABSATZ ZUSAMMENGEZOGEN am 13.09.2026, Vorgabe des Verfassers.
+% Die vier Absaetze tragen jetzt einen, weil jeder Parameter seine Begruendung
+% erhalten hat und die Trennung damit entfaellt. Die Leerzeilen zwischen den
+% Satzgruppen sind fortgefallen.
+% BEGRUENDUNGEN ERGAENZT. Satz 1 nennt den Energieinhalt je Leistung von
+% 2,5 Stunden statt der C-Rate von 0,4, die main.py Zeile 357 fuehrt. Der
+% Verfasser hat den Kehrwert gewaehlt, Fassung A, mit Einheit und ohne den
+% Begriff C-Wert. Satz 3 nennt den Umlaufwirkungsgrad, Satz 4 die nutzbaren
+% 225 MWh. Beide Zahlen sind eigene Rechnungen und vom Verfasser zu pruefen.
+% DEGRADATION NACH VORN GEZOGEN, Vorgabe des Verfassers. Der Satz stand
+% hinter der Zielfunktion und steht jetzt bei den Kosten. Alte Fassung:
+%Die Degradation belastet als linearer Kostensatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen \cite{kumtepeli_energy_2020}.
+% ALTE FASSUNG von Satz 1 und 2, nicht wieder aufnehmen:
+%Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, einem Wirkungsgrad von 0,95 je Richtung und einem nutzbaren Ladezustand zwischen 5 und 95 Prozent \cite{juelch_comparison_2016, garttan_battery_2025}.
+%Ihre Degradation kostet 8 Euro je Megawattstunde Durchsatz.
+% ALTE FASSUNG der Randbedingung, die Grenzen des Ladezustands stehen jetzt
+% bei den 5 bis 95 Prozent:
+%Der Ladezustand bleibt zwischen seinen Grenzen, und Anfang und Ende eines Tages tragen denselben Wert.
+% ZITATE STEHEN GEBLIEBEN. Der Verfasser prueft selbst, ob
+% juelch_comparison_2016 und garttan_battery_2025 den Wirkungsgrad und das
+% Ladezustandsband tragen. Ich konnte es nicht pruefen, weil die PDF nur unter
+% einem fremden Zotero-Pfad liegen. Bis dahin bleibt der Beleg unveraendert.
+% ZIELFUNKTION UMGESTELLT am 13.09.2026, Vorgabe des Verfassers. Links steht
+% jetzt die benannte Groesse E^{BESS,ges}. Alte Fassung:
+%    \max \; E^{\mathrm{DA}} + E^{\mathrm{IDC}} + E^{\mathrm{FCR}} + E^{\mathrm{aFRR,L}} + E^{\mathrm{aFRR,E}} + E^{\mathrm{kur}} \; - \; K^{\mathrm{deg}}
+% UNBELEGT. Die 8 Euro je Megawattstunde stammen aus main.py Zeile 401 und
+% tragen dort keine Quelle. Der Code nennt die Spanne 3 bis 20 Euro je MWh.
+% Geprueft wird der Satz ueber sensi2_deg von 0 bis 18 Euro je MWh.
+Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, sodass ihr Energieinhalt je Leistung 2,5 Stunden beträgt \cite{juelch_comparison_2016, garttan_battery_2025}.
+Eine kurative Reservierung über die volle Anschlussleistung erschöpft den Speicher damit erst nach dieser Zeit.
+Laden und Entladen laufen mit einem Wirkungsgrad von 0,95 je Richtung, woraus ein Umlaufwirkungsgrad von 0,9025 folgt.
+Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\,\si{MWh} bewegen kann und jede Reservierung ihr Ladezustandsband aus diesem Vorrat nimmt.
+Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen \cite{kumtepeli_energy_2020}.
+Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
+Entscheidungsvariablen sind die Lade- und die Entladeleistung am \ac{DA} und am \ac{IDC}, die vorgehaltene Leistung der \ac{FCR} und der \ac{aFRR} je Richtung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ, dazu die Binärvariable der Mindestgröße.
+Die Ladezustandsbilanz führt den Speicherinhalt über den Tag fort, wobei allein der Handel und die gelieferte \ac{aFRR}-Arbeit ihn bewegen und die Wirkungsgrade beider Richtungen eingehen.
+Anfang und Ende eines Tages tragen denselben Ladezustand, damit kein Tag mit eingelagerter Energie endet und die Tage untereinander vergleichbar bleiben.
+Die zeitgekoppelte Formulierung folgt der Darstellung von Flexibilitätsgeboten \cite{schmitt_linear_2020}.
+Auf jeder Seite teilen sich der Handel, die \ac{aFRR}, die kurative Reservierung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung, woraus folgt, dass eine kurativ reservierte Leistung keinem anderen Markt zur Verfügung steht.
+Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführten Märkte abzüglich der Degradationskosten.
+\begin{equation}
+    \label{eq:zielfunktion}
+    \max \; E^{\mathrm{BESS,ges}} = E^{\mathrm{DA}} + E^{\mathrm{IDC}} + E^{\mathrm{FCR}} + E^{\mathrm{aFRR,L}} + E^{\mathrm{aFRR,E}} + E^{\mathrm{kur}} \; - \; K^{\mathrm{deg}}
+\end{equation}
+Die vollständige Formulierung mit allen Nebenbedingungen steht in Anhang~\ref{anh:modell}.
 
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten:
@@ -3163,23 +3188,47 @@ Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie
 \end{equation}
 
 \subsubsection*{Kurative Reservierung}
-\begin{itemize}
+% AUSFORMULIERT am 13.09.2026. Satz 1 Fassung B, Satz 2 Fassung C mit dem
+% Zusatz des Verfassers, dass die Zeitscheibe zwischen vollen Stunden liegt,
+% Satz 3 Fassung C, Satz 4 auf Vorgabe des Verfassers auf die getrennte
+% Betrachtung beider Richtungen gekuerzt, Fassung B, Satz 5 Fassung C.
+% Die Mindestgroesse steht in zwei Saetzen, Fassung C geteilt auf Wunsch des
+% Verfassers. Der Schlusssatz ist Fassung B ohne die Aussage, dass jedes
+% Ergebnis an den Zahlen haengt, so vom Verfasser verlangt.
+% ZUR FORMEL. Preis und Leistung tragen beide den Index der Zeitscheibe,
+% Fassung A, gewaehlt vom Verfasser, weil Satz 2 die Stunde gerade eingefuehrt
+% hat. Der Anhang schreibt stattdessen P^{kur}_{t,r} und fuehrt die
+% Blockbindung als eigene Nebenbedingung eq:anh:modell:block. Beides meint
+% dasselbe.
+% ZUR TABELLE. Drei Spalten, so vom Verfasser entschieden. Die Pruefspalte ist
+% nur teilweise belegt. Energievorhalt aus sensi6_vorhaltedauer und die
+% Anteile der reservierten Leistung aus dem Reservierungspreis-Gitter stehen
+% in MODELL.md. Fuer die Zeitscheibe finde ich keine Sensitivitaet, deshalb
+% offen. Die Mindestgroesse ist ueber USE_KUR_BINAER schaltbar, als eigene
+% Sensitivitaet aber nicht gefuehrt, die Zeile weist also eine Absicht aus.
+% Die Reaktionszeitklasse von 2 Minuten stammt aus dem Tabellenentwurf vom
+% 11.09.2026 und nicht aus dem Modell, das sie nicht kennt.
+% SPALTENUEBERSCHRIFT. CLAUDE.md Abschnitt 8 nennt sie in Kapitel 5 zu
+% pruefen. Gekuerzt auf Pruefung, weil ein Kapitelverweis in der Ueberschrift
+% den Regeln zu strukturellen Verweisen nahekommt.
+% STICHPUNKTE ERSETZT am 13.09.2026, alte Fassung:
+%\begin{itemize}
 % ENTFALLEN am 11.09.2026 nach K1, die Reservierung ist eine Variable. Alte Fassung:
 % K1. Unter Weg C waere die Bindung eine Variable mit Preis.
 % ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Im Code ist die kurative Reservierung eine Variable je Viertelstunde und Richtung.
 %    \item Die kurative Bindung ist keine Variable, sondern eine Vorgabe je Richtung und Zeitscheibe, die im gebundenen Lauf die zugesagte Leistung setzt und im ungebundenen Lauf null ist
-    \item Die kurative Reservierung ist eine Variable je Viertelstunde und Richtung
-    \item Die kurative Reservierung bleibt über ihre Zeitscheibe von einer Stunde konstant
-    \item Restriktion der kurativen Vorhaltung, nämlich die Bindung des Ladezustandsbands über die Bindungsdauer
+%    \item Die kurative Reservierung ist eine Variable je Viertelstunde und Richtung
+%    \item Die kurative Reservierung bleibt über ihre Zeitscheibe von einer Stunde konstant
+%    \item Restriktion der kurativen Vorhaltung, nämlich die Bindung des Ladezustandsbands über die Bindungsdauer
 % STRUKTUR.md Vormerkung 7, im Modell richtig umgesetzt. Dauer nach K3.
-    \item In positiver Richtung hält das Band Energie oberhalb der unteren Ladezustandsgrenze vor, in negativer Richtung freien Speicherraum unterhalb der oberen, jeweils für die gebundene Leistung über die Dauer des ungünstigsten Abrufs
+%    \item In positiver Richtung hält das Band Energie oberhalb der unteren Ladezustandsgrenze vor, in negativer Richtung freien Speicherraum unterhalb der oberen, jeweils für die gebundene Leistung über die Dauer des ungünstigsten Abrufs
 % ENTFALLEN am 11.09.2026 nach K1. Alte Fassung:
 % K1. Unter Weg C stuende hier der Preis der Vorhaltung mal der Leistung.
 % ZU AENDERN NACH K1, Entscheidung des Verfassers vom 11.09.2026. Zu pruefen ist, ob die Zielfunktion im Code einen Erloesterm der Reservierung zum vorgegebenen Preis enthaelt. Nach MODELL.md Abschnitt 11 reagiert der Speicher auf einen vorgegebenen Preis, was einen solchen Term voraussetzt.
 %    \item Einen Erlösterm für die kurative Vorhaltung enthält die Zielfunktion nicht, sodass die Bindung allein über die Nebenbedingungen auf den Zielfunktionswert wirkt
 % NEU am 11.09.2026 nach K1. Die gestrichene Abbildung zum Modellaufbau zeigt
 % einen Erloes E_kur in der Zielfunktion. Am Code zu bestaetigen.
-    \item Die kurative Reservierung trägt den vorgegebenen Preis mal der reservierten Leistung zur Zielfunktion bei
+%    \item Die kurative Reservierung trägt den vorgegebenen Preis mal der reservierten Leistung zur Zielfunktion bei
 % NEU am 11.09.2026. Denselben Grund nennt der Stichpunkt zum
 % gemischt-ganzzahligen Problem in 3.2.1, beim Ausformulieren nur an einer
 % Stelle ausfuehren.
@@ -3187,7 +3236,7 @@ Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie
 % herausnehmen, im Code ueber den Schalter fuer die binaere Reservierung.
 % Alte Fassung:
 %    \item Die Mindestgröße von 25\,\si{MW} verlangt eine Binärvariable, die die reservierte Leistung entweder null setzt oder auf mindestens 25\,\si{MW} hebt
-    \item Die Mindestgröße von 25\,\si{MW} verlangt eine Binärvariable, die die reservierte Leistung entweder null setzt oder auf mindestens 25\,\si{MW} hebt, und ohne diese Bedingung ist die Reservierung stetig und das Problem linear
+%    \item Die Mindestgröße von 25\,\si{MW} verlangt eine Binärvariable, die die reservierte Leistung entweder null setzt oder auf mindestens 25\,\si{MW} hebt, und ohne diese Bedingung ist die Reservierung stetig und das Problem linear
 % HIERHER VERSCHOBEN am 12.09.2026. Die Tabelle beschreibt das Produkt und nicht den Speicher, sie steht deshalb im Block der kurativen Reservierung.
 % HIERHER VERSCHOBEN am 11.09.2026 aus dem Abschluss von 3.1.2, entschieden
 % vom Verfasser, der die genaue Umsetzung in 3.2 besprechen will.
@@ -3201,10 +3250,49 @@ Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie
 %   Mindestgroesse, 25 MW, pruefen ja, gegen eine stetige Reservierung
 %   Reservierte Leistung und Stunden, vom Modell gewaehlt, Ergebnis
 %   Verguetung, Preis in Euro je MW und Stunde, pay-as-bid, gesuchte Groesse
-    \item Tabelle der Produktparameter mit den Spalten Größe, Basisfall und in Kapitel 5 zu prüfen
+%    \item Tabelle der Produktparameter mit den Spalten Größe, Basisfall und in Kapitel 5 zu prüfen
 % HIERHER VERSCHOBEN am 12.09.2026. Gehoert zur Tabelle der Produktparameter.
-    \item Sobald eine Zahl gesetzt ist, hängt jedes spätere Ergebnis an ihr, und das ist einmal offen zu sagen
-\end{itemize}
+%    \item Sobald eine Zahl gesetzt ist, hängt jedes spätere Ergebnis an ihr, und das ist einmal offen zu sagen
+%\end{itemize}
+Anders als die übrigen Märkte trägt die kurative Reservierung keinen beobachteten Preis, sondern einen vorgegebenen, und sie ist eine Variable je Viertelstunde und Richtung.
+Die kurative Reservierung bleibt über ihre Zeitscheibe konstant, die von einer vollen Stunde zur nächsten läuft, sodass jeweils vier aufeinanderfolgende Viertelstunden dieselbe reservierte Leistung tragen.
+Die Reservierung tritt in dieselbe Leistungsschranke wie die \ac{FCR} und die \ac{aFRR} und bindet darüber hinaus ein Ladezustandsband, das den Abruf über die Bindungsdauer deckt.
+Die positive und die negative Reservierung betrachtet das Modell getrennt, jede mit eigener Leistung und eigenem Ladezustandsband.
+Weil die Zielfunktion den Erlös aus vorgegebenem Preis mal reservierter Leistung trägt, reserviert die Anlage nur dann, wenn dieser Preis die entgangenen Erlöse der übrigen Märkte übersteigt.
+\begin{equation}
+    \label{eq:erloes_kur}
+    E^{\mathrm{kur}} = \Delta t \sum_{t \in \mathcal{T}} \sum_{r} \pi_{s(t),r} \, P^{\mathrm{kur}}_{s(t),r}
+\end{equation}
+Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird.
+Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetiger Reservierung und schaltet die Mindestgröße nur dort zu, wo ihre Wirkung geprüft wird.
+Tabelle~\ref{tab:kur_produkt} fasst die Parameter des kurativen Produkts mit ihren Basisfällen zusammen.
+\begin{table}[htbp]
+    \centering
+    \caption{Parameter des kurativen Produkts mit ihren Basisfällen.}
+    \label{tab:kur_produkt}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.46\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Größe} & \textbf{Basisfall} & \textbf{Prüfung} \\
+        \hline
+        Richtung & positiv und negativ, getrennt gerechnet & keine, beide Richtungen werden durchgehend geführt \\
+        \hline
+        Reaktionszeitklasse & 2 Minuten & keine, im Viertelstundenmodell ohne Wirkung auf den Preis \\
+        \hline
+        Zeitscheibe & eine Stunde & offen \\
+        \hline
+        Energievorhalt & 1\,\si{MWh} je reserviertem \si{MW} & ja, gegen 0,5 und 0,25\,\si{MWh} je \si{MW} \\
+        \hline
+        Mindestgröße & 25\,\si{MW} & ja, gegen eine stetige Reservierung \\
+        \hline
+        Reservierte Leistung & vom Modell gewählt & ja, gegen erzwungene Anteile von 25, 50, 75 und 100 Prozent der Anschlussleistung \\
+        \hline
+        Vergütung & Preis in Euro je \si{MW} und Stunde, pay-as-bid & gesuchte Größe \\
+        \hline
+        \multicolumn{3}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die reservierte Leistung im Abruffall aus dem Speicher zu decken ist. Die reservierte Leistung und die belegten Stunden sind ein Ergebnis des Modells und keine Vorgabe.} \\
+    \end{tabular}
+\end{table}
+Die Werte des Basisfalls sind Setzungen, und die Sensitivitäten tasten ihre Bandbreite ab.
 
 % ARCHIV des aufgeloesten Unterabschnitts Datengrundlage und Anlage,
 % hierher mitgezogen am 12.09.2026:
