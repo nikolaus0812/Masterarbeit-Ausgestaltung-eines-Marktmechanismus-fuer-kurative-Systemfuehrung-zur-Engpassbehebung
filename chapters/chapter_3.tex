@@ -2976,23 +2976,36 @@ Tabelle~\ref{tab:maerkte} fasst die Produktmerkmale der sechs geführten Märkte
     \label{tab:maerkte}
     \small
     \setlength{\tabcolsep}{4pt}
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.14\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.15\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.29\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.19\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.23\textwidth-\tabcolsep\relax}@{}}
+% TABELLE GEKUERZT am 13.09.2026, Vorgabe des Verfassers. Die Spalte Wirkung
+% auf die Anlage entfaellt, die Ueberschrift Verguetungsform heisst jetzt
+% Verguetungsmodellierung. Vier Spalten, Breiten 0,17, 0,22, 0,35 und 0,26.
+% ENTFALLENE SPALTENINHALTE, vollstaendig erhalten:
+%   Bewegt den Ladezustand, in sich bilanziell ausgeglichen
+%   Bewegt den Ladezustand, trägt den Ausgleich der \acs{aFRR}-Arbeit
+%   Bindet beide Seiten, bewegt den Ladezustand nicht
+%   Bindet eine Seite, bewegt den Ladezustand nicht
+%   Bewegt den Ladezustand, anteilig am deutschen Abruf
+%   Bindet eine Seite, bewegt den Ladezustand nicht
+% Der Satz der Fusszeile zur Trennung der beiden Wirkungsarten ist
+% mitentfallen, weil die Spalte fehlt, auf die er sich bezog. Der Einstieg
+% von 3.2.3 sagt dasselbe im zweiten Satz.
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.35\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.26\textwidth-\tabcolsep\relax}@{}}
         \hline
-        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsform} & \textbf{Energievorhalt} & \textbf{Wirkung auf die Anlage} \\
+        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsmodellierung} & \textbf{Energievorhalt} \\
         \hline
-        \acs{DA} & Viertelstunde, Auktion am Vortag & Energiepreis, Einheitspreis & keiner & Bewegt den Ladezustand, in sich bilanziell ausgeglichen \\
+                \acs{DA} & Viertelstunde, Auktion am Vortag & Energiepreis, Einheitspreis & keiner \\
         \hline
-        \acs{IDC} & Viertelstunde, fortlaufend & Energiepreis, pay-as-bid je Geschäft & keiner & Bewegt den Ladezustand, trägt den Ausgleich der \acs{aFRR}-Arbeit \\
+                \acs{IDC} & Viertelstunde, fortlaufend & Energiepreis, pay-as-bid je Geschäft & keiner \\
         \hline
-        \acs{FCR} & Vier Stunden, symmetrisch & Leistungs\-reservierungs\-preis, Einheitspreis & 15 Minuten je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe & Bindet beide Seiten, bewegt den Ladezustand nicht \\
+                \acs{FCR} & Vier Stunden, symmetrisch & Leistungs\-reservierungs\-preis, Einheitspreis & 15 Minuten je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe \\
         \hline
-        \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid & Eine Stunde je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe & Bindet eine Seite, bewegt den Ladezustand nicht \\
+                \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid & Eine Stunde je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe \\
         \hline
-        \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Energiepreis, volumengewichteter Grenzpreis des Abrufs & keiner, sie liefert die Energie selbst & Bewegt den Ladezustand, anteilig am deutschen Abruf \\
+                \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Energiepreis, volumengewichteter Grenzpreis des Abrufs & keiner, sie liefert die Energie selbst \\
         \hline
-        Kurative Reservierung & Eine Stunde, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid, Preis gesucht & Eine Stunde je reserviertem \si{MW}, in jeder Viertelstunde & Bindet eine Seite, bewegt den Ladezustand nicht \\
+                Kurative Reservierung & Eine Stunde, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid, Preis gesucht & Eine Stunde je reserviertem \si{MW}, in jeder Viertelstunde \\
         \hline
-        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die vorgehaltene Leistung im Abruffall aus dem Speicher zu decken ist. Die drei Märkte mit Leistungsreservierungspreis binden die Anlage, ohne ihren Ladezustand zu verändern, und aus dieser Trennung entstehen die Opportunitätskosten der kurativen Reservierung.} \\
+        \multicolumn{4}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die vorgehaltene Leistung im Abruffall aus dem Speicher zu decken ist. Die drei Märkte mit Leistungsreservierungspreis binden die Anlage, ohne ihren Ladezustand zu verändern, und aus dieser Trennung entstehen die Opportunitätskosten der kurativen Reservierung.} \\
     \end{tabular}
 \end{table}
 
@@ -3361,9 +3374,12 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 % an und steht jetzt als Verweis auf die Markttabelle am Anfang des
 % Unterabschnitts. Alte Fassung:
 %Tabelle~\ref{tab:kur_produkt} fasst die Parameter des kurativen Produkts mit ihren Basisfällen zusammen.
-% SCHLUSSSATZ ENTFALLEN. Er bezog sich auf die Spalte Basisfall, die es in
-% der Markttabelle nicht mehr gibt. Die Aussage, dass die kurativen Werte
-% Setzungen sind, ist neu zu fassen und dem Verfasser vorzulegen. Alte
+% SCHLUSSSATZ ENTFAELLT ERSATZLOS, entschieden vom Verfasser am 13.09.2026,
+% Fassung C. Er bezog sich auf die Spalte Basisfall, die es in der
+% Markttabelle nicht mehr gibt. Vorgelegt waren auch eine Fassung, die
+% Zeitscheibe, Energievorhalt und Mindestgroesse als Setzungen benennt, und
+% eine, die das Fehlen eines Vorbildprodukts als Grund nennt. Der Verfasser
+% hat den Verzicht gewaehlt, auch mit Blick auf das Seitenziel. Alte
 % Fassung:
 %Die Werte des Basisfalls sind Setzungen, und die Sensitivitäten tasten ihre Bandbreite ab.
 % ALTE TABELLE, vollstaendig erhalten:
@@ -3575,24 +3591,49 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 \label{sec:reservation_price_search}
 \label{sec:weber_exclusion}
 
-\begin{itemize}
+% AUSFORMULIERT am 13.09.2026, Auftrag des Verfassers, am Stueck und zur
+% Durchsicht. Er geht den Abschnitt danach absatzweise durch.
+% BEGRIFFE, entschieden vom Verfasser am 13.09.2026. Das Ergebnis der zweiten
+% Iteration heisst Vollreservierungspreis. Der Wert der ersten heisst
+% einheitlicher Reservierungspreis der ersten Iteration. Damit ist der
+% Begriffskonflikt vom 12.09.2026 erledigt, denn Schwellenpreis ist nach
+% CLAUDE.md Abschnitt 5 gesperrt und Grenzpreis durch den Weber-Ansatz belegt.
+% AUSGEWIESEN wird der Vollreservierungspreis der zweiten Iteration, ebenfalls
+% entschieden vom Verfasser. Die erste Iteration liefert den Startvektor.
+% UNBELEGT, Satz zur Bisektion. Die Monotonie des Fuellgrads ueber dem Preis
+% ist fuer den eigenen Preis einer Groesse bei festen uebrigen Preisen
+% gesichert. Die erste Iteration hebt aber den einheitlichen Preis aller
+% Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde
+% verlieren kann. Der Satz sagt deshalb setzt voraus und nicht gilt.
+% ZU PRUEFEN, Laufzahlen. Die 84 bis 167 stammen nach MODELL.md aus den
+% Schwellen der 20 Sensitivitaetstage und nicht aus dem Jahr 2025.
+% ZU PRUEFEN, Rechenzeit. Die fruehere Angabe von 17 bis 44 Sekunden je Tag
+% stammt aus der Zeit vor dem Umbau der zweiten Iteration, deshalb steht hier
+% nur einige hundert Laeufe.
+% NICHT AUFGENOMMEN. Der Verweis auf sec:model_critique am Satz zum
+% Optionswert, Stilregel 9 und Befund S7. Ebenso die Reihenfolge des
+% Abstiegs, die nach Anweisung des Verfassers als Einschraenkung nach
+% Kapitel 5 gehoert. Der Satz zum Ergebnis haelt hier nur fest, dass es ein
+% koordinatenweises Minimum ist.
+% STICHPUNKTE ERSETZT am 13.09.2026, alte Fassung:
+%\begin{itemize}
 % --- Grundsatz
-    \item Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf abliest, wie viel Leistung die Anlage kurativ reserviert
-    \item Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen, sodass die Schleifen über die Stunden allein in der Suche liegen
+%    \item Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf abliest, wie viel Leistung die Anlage kurativ reserviert
+%    \item Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen, sodass die Schleifen über die Stunden allein in der Suche liegen
 % SCHWELLE BERICHTIGT am 12.09.2026 nach MODELL.md Abschnitt 11.1. Seit dem
 % 12.09.2026 gilt eine Stunde als voll, wenn hoechstens 0,01 MW von 100 MW
 % fehlen, also ab 99,99 Prozent. Die Schwelle ist in MW gesetzt, weil sie so
 % das Hundertfache der Zulaessigkeitstoleranz des Solvers betraegt. Alte
 % Fassung, nicht wieder aufnehmen:
 %    \item Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde ab einem Füllgrad von 99 Prozent
-    \item Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens 0,01\,\si{MW} von 100\,\si{MW} fehlen
+%    \item Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens 0,01\,\si{MW} von 100\,\si{MW} fehlen
 % --- 1. Iteration
-    \item Die 1.~Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem oberen Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}
+%    \item Die 1.~Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem oberen Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}
 % Stunden, die auch beim hoechsten Deckel nicht voll werden, gelten im Code
 % als strukturell gesperrt. Ob der Text das nennt, entscheidet der Verfasser.
-    \item Ein Lauf mit einem Startdeckel von 800 Euro je Megawatt und Stunde prüft zunächst, ob jede Stunde voll ist, und der Deckel verdoppelt sich, bis das zutrifft, höchstens bis 51.200 Euro je Megawatt und Stunde
-    \item Zu Beginn teilen sich alle 48 Stunden und Richtungen dasselbe Suchintervall, und je offenem Intervall läuft eine Optimierung mit seiner Mitte als Preis
-    \item Jede Stunde des Intervalls liest ihren Füllgrad aus demselben Lauf ab und setzt die obere Grenze ihres Intervalls auf diesen Preis, wenn sie voll ist, und sonst die untere, sodass das Intervall in zwei Gruppen zerfällt
+%    \item Ein Lauf mit einem Startdeckel von 800 Euro je Megawatt und Stunde prüft zunächst, ob jede Stunde voll ist, und der Deckel verdoppelt sich, bis das zutrifft, höchstens bis 51.200 Euro je Megawatt und Stunde
+%    \item Zu Beginn teilen sich alle 48 Stunden und Richtungen dasselbe Suchintervall, und je offenem Intervall läuft eine Optimierung mit seiner Mitte als Preis
+%    \item Jede Stunde des Intervalls liest ihren Füllgrad aus demselben Lauf ab und setzt die obere Grenze ihres Intervalls auf diesen Preis, wenn sie voll ist, und sonst die untere, sodass das Intervall in zwei Gruppen zerfällt
 % EIGENE ABLEITUNG, vom Verfasser zu pruefen. Gesichert ist die Monotonie fuer
 % den eigenen Preis einer Groesse bei festen uebrigen Preisen. Die 1. Iteration
 % hebt aber den einheitlichen Preis aller Stunden zugleich, sodass eine Stunde
@@ -3600,7 +3641,7 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 % die Abbildung setzen die Monotonie voraus, belegt ist sie nicht. Im
 % gemischt-ganzzahligen Basisfall mit 25 MW Mindestgroesse gilt der Vorbehalt
 % erst recht.
-    \item Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat, wie Abbildung~\ref{fig:reservierungspreis_bisektion} für eine Beispielstunde zeigt
+%    \item Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat, wie Abbildung~\ref{fig:reservierungspreis_bisektion} für eine Beispielstunde zeigt
 % GEKUERZT am 12.09.2026. Dass die 1. Iteration den kleinsten Preis voller Reservierung sucht, steht in ihrem ersten Stichpunkt.
 % Alte Fassung:
 %    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und Ergebnis ist die obere Grenze, also der kleinste Preis, der die Stunde nachweislich voll reserviert
@@ -3618,12 +3659,22 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 % deshalb vorerst. Zu entscheiden ist, ob die Sperre fuer diesen Wert
 % aufgehoben wird oder ein dritter Begriff gilt. Fassung nach der Anweisung:
 %    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der Schwellenpreis der Stunde, mit dem die 2.~Iteration beginnt
-    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist und mit dem die 2.~Iteration beginnt
+%    \item Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der kleinste einheitliche Preis, bei dem die Stunde voll reserviert ist und mit dem die 2.~Iteration beginnt
 % Laufzahl nach README 09 aus den Schwellen der 20 Sensitivitaetstage
 % nachgerechnet und nicht aus dem vierten Quartal. Beim Ausformulieren den
 % Bezug nennen oder fuer das Quartal nachrechnen.
-    \item Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennter Rechnung genügen 84 bis 167, im Mittel rund 130, weil sich die Stunden eines Intervalls einen Lauf teilen
-\end{itemize}
+%    \item Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennter Rechnung genügen 84 bis 167, im Mittel rund 130, weil sich die Stunden eines Intervalls einen Lauf teilen
+%\end{itemize}
+Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf abliest, wie viel Leistung die Anlage kurativ reserviert.
+Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen, sodass die Schleifen über die Stunden allein in der Suche liegen.
+Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens 0,01\,\si{MW} von 100\,\si{MW} fehlen.
+Die erste Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem oberen Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
+Ein Lauf mit einem Startdeckel von 800 Euro je Megawatt und Stunde prüft zunächst, ob jede Stunde voll ist, und der Deckel verdoppelt sich, bis das zutrifft, höchstens bis 51.200 Euro je Megawatt und Stunde.
+Zu Beginn teilen sich alle 48 Stunden und Richtungen dasselbe Suchintervall, und je offenem Intervall läuft eine Optimierung mit seiner Mitte als Preis.
+Jede Stunde des Intervalls liest ihren Füllgrad aus demselben Lauf ab und setzt die obere Grenze ihres Intervalls auf diesen Preis, wenn sie voll ist, und sonst die untere, sodass das Intervall in zwei Gruppen zerfällt.
+Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat, wie Abbildung~\ref{fig:reservierungspreis_bisektion} für eine Beispielstunde zeigt.
+Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der einheitliche Reservierungspreis der ersten Iteration, mit dem die zweite beginnt.
+Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennter Rechnung genügen 84 bis 167, im Mittel rund 130, weil sich die Stunden eines Intervalls einen Lauf teilen.
 
 % ABBILDUNG ERSETZT am 12.09.2026 nach der Anweisung des Verfassers. Die
 % beiden Flussdiagramme der 1. und der 2. Iteration sind im Modellrepository
@@ -3663,7 +3714,15 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 %       \caption{Ablauf der 1.~Iteration. Je Stunde und Richtung halbiert die Suche ihr Preisintervall, bis der kleinste einheitliche Preis feststeht, bei dem die Stunde voll reserviert ist.}
 %       \label{fig:reservierungspreis_iteration1}
 %   \end{figure}
-\begin{figure}[p]
+% PLATZIERUNG GEAENDERT am 13.09.2026, Vorgabe des Verfassers, die Abbildungen
+% sollen sich fliessend einfuegen und keine leeren Stellen reissen. Die
+% Option p erzwingt eine eigene Gleitseite. Alte Fassung:
+%\begin{figure}[p]
+% PLATZIERUNG NACHGEZOGEN am 13.09.2026. Mit htbp setzte pdfTeX die kleinere
+% Bisektionsabbildung vor diese hier, sodass Abbildung 3.3 ueber 3.2 stand.
+% Ohne h landet die grosse Abbildung oben auf der Seite. Alte Fassung:
+%\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
     \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
@@ -3695,9 +3754,34 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
     \label{fig:reservierungspreis_bisektion}
 \end{figure}
 
-\begin{itemize}
+% AUSFORMULIERT am 13.09.2026, Auftrag des Verfassers, am Stueck und zur
+% Durchsicht. Er geht den Abschnitt danach absatzweise durch.
+% BEGRIFFE, entschieden vom Verfasser am 13.09.2026. Das Ergebnis der zweiten
+% Iteration heisst Vollreservierungspreis. Der Wert der ersten heisst
+% einheitlicher Reservierungspreis der ersten Iteration. Damit ist der
+% Begriffskonflikt vom 12.09.2026 erledigt, denn Schwellenpreis ist nach
+% CLAUDE.md Abschnitt 5 gesperrt und Grenzpreis durch den Weber-Ansatz belegt.
+% AUSGEWIESEN wird der Vollreservierungspreis der zweiten Iteration, ebenfalls
+% entschieden vom Verfasser. Die erste Iteration liefert den Startvektor.
+% UNBELEGT, Satz zur Bisektion. Die Monotonie des Fuellgrads ueber dem Preis
+% ist fuer den eigenen Preis einer Groesse bei festen uebrigen Preisen
+% gesichert. Die erste Iteration hebt aber den einheitlichen Preis aller
+% Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde
+% verlieren kann. Der Satz sagt deshalb setzt voraus und nicht gilt.
+% ZU PRUEFEN, Laufzahlen. Die 84 bis 167 stammen nach MODELL.md aus den
+% Schwellen der 20 Sensitivitaetstage und nicht aus dem Jahr 2025.
+% ZU PRUEFEN, Rechenzeit. Die fruehere Angabe von 17 bis 44 Sekunden je Tag
+% stammt aus der Zeit vor dem Umbau der zweiten Iteration, deshalb steht hier
+% nur einige hundert Laeufe.
+% NICHT AUFGENOMMEN. Der Verweis auf sec:model_critique am Satz zum
+% Optionswert, Stilregel 9 und Befund S7. Ebenso die Reihenfolge des
+% Abstiegs, die nach Anweisung des Verfassers als Einschraenkung nach
+% Kapitel 5 gehoert. Der Satz zum Ergebnis haelt hier nur fest, dass es ein
+% koordinatenweises Minimum ist.
+% STICHPUNKTE ERSETZT am 13.09.2026, alte Fassung:
+%\begin{itemize}
 % --- 2. Iteration
-    \item Werden die Preise der 1.~Iteration als Vektor gleichzeitig vorgegeben, sind nicht alle Stunden voll reserviert, weil jede Stunde ihre Schwelle unter einem einheitlichen Preis und damit gegen eine andere Konkurrenz um Leistung und Ladezustand gefunden hat
+%    \item Werden die Preise der 1.~Iteration als Vektor gleichzeitig vorgegeben, sind nicht alle Stunden voll reserviert, weil jede Stunde ihre Schwelle unter einem einheitlichen Preis und damit gegen eine andere Konkurrenz um Leistung und Ladezustand gefunden hat
 % VERFAHREN NEU GEFASST am 12.09.2026 nach dem Umbau im Modellrepository,
 % MODELL.md Abschnitt 11.3. Die 2. Iteration hatte bis dahin drei Bandrunden,
 % einen pauschalen Aufschlag von 20 Prozent, eine Schleife in 5-Prozent-
@@ -3708,15 +3792,15 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 %    \item Die 2.~Iteration gibt diesen Vektor vor und behandelt die offenen Stunden nacheinander, aufsteigend und die positive vor der negativen Richtung, jeweils mit einer Bisektion bis zum 1,25-Fachen ihres Preises bei festgehaltenen übrigen Preisen, nach dem Ablauf in Abbildung~\ref{fig:reservierungspreis_iteration2}
 %    \item Nach drei solchen Runden hebt sie die noch offenen Stunden einmalig um 20 Prozent und danach in Schritten von 5 Prozent an, bis alle Stunden zugleich voll reserviert sind, und nach 200 Durchgängen markiert sie verbliebene Stunden als untere Schranke
 %    \item Die Reihenfolge gehört zum Verfahren, denn eine früh behandelte Stunde erhält den günstigeren Preis, und fällt sie später wieder heraus, fängt die nächste Runde sie auf
-    \item Die 2.~Iteration gibt diesen Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}
+%    \item Die 2.~Iteration gibt diesen Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}
 % BEGRUENDUNG des gemeinsamen Aufstiegs nach MODELL.md Abschnitt 11.3. Eine
 % Suche je Stunde konvergiert nicht, gemessen blieben zwei bis drei
 % Stunden-Richtungen ueber 30 Durchlaeufe offen.
-    \item Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen und eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste steigt
+%    \item Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen und eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste steigt
 % DER FAKTOR ist nach MODELL.md gemessen und nicht gesetzt, naemlich 1,10,
 % 1,25, 1,50 und 2,00 im Vergleich. Das gehoert in die Ergebnisse und steht
 % deshalb hier nicht.
-    \item Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die Vollverdrängung aller Stunden, und er endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt
+%    \item Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die Vollverdrängung aller Stunden, und er endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt
 % OFFEN, vom Verfasser zu entscheiden. Welche der beiden Groessen der
 % ausgewiesene kurative Reservierungspreis ist, der Preis der 1. Iteration
 % oder der Vollverdraengungspreis der 2. Iteration. Die Abbildung der 1.
@@ -3728,8 +3812,13 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 % nach Kapitel 5 und steht dort als eigener Punkt in Abschnitt 5.4. Alte
 % Fassung:
 %    \item Ergebnis der 2.~Iteration ist je Stunde und Richtung der Vollverdrängungspreis, bei dem alle Stunden zugleich voll reserviert sind, wobei positive und negative Richtung als zwei Produkte getrennt bleiben
-    \item Ergebnis der 2.~Iteration ist je Stunde und Richtung der Vollverdrängungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt, wobei positive und negative Richtung als zwei Produkte getrennt bleiben
-\end{itemize}
+%    \item Ergebnis der 2.~Iteration ist je Stunde und Richtung der Vollverdrängungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt, wobei positive und negative Richtung als zwei Produkte getrennt bleiben
+%\end{itemize}
+Werden die Preise der ersten Iteration als Vektor gleichzeitig vorgegeben, sind nicht alle Stunden voll reserviert, weil jede Stunde ihre Schwelle unter einem einheitlichen Preis und damit gegen eine andere Konkurrenz um Leistung und Ladezustand gefunden hat.
+Die zweite Iteration gibt diesen Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
+Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen und eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste steigt.
+Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die volle Reservierung aller Stunden, und er endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt.
+Ergebnis der zweiten Iteration ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt, wobei positive und negative Richtung als zwei Produkte getrennt bleiben.
 
 % ABBILDUNG ENTFALLEN am 12.09.2026 nach der Anweisung des Verfassers. Beide
 % Iterationen stehen jetzt in fig:reservierungspreis_ablauf oben in diesem
@@ -3751,14 +3840,39 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 %       \label{fig:reservierungspreis_iteration2}
 %   \end{figure}
 
-\begin{itemize}
+% AUSFORMULIERT am 13.09.2026, Auftrag des Verfassers, am Stueck und zur
+% Durchsicht. Er geht den Abschnitt danach absatzweise durch.
+% BEGRIFFE, entschieden vom Verfasser am 13.09.2026. Das Ergebnis der zweiten
+% Iteration heisst Vollreservierungspreis. Der Wert der ersten heisst
+% einheitlicher Reservierungspreis der ersten Iteration. Damit ist der
+% Begriffskonflikt vom 12.09.2026 erledigt, denn Schwellenpreis ist nach
+% CLAUDE.md Abschnitt 5 gesperrt und Grenzpreis durch den Weber-Ansatz belegt.
+% AUSGEWIESEN wird der Vollreservierungspreis der zweiten Iteration, ebenfalls
+% entschieden vom Verfasser. Die erste Iteration liefert den Startvektor.
+% UNBELEGT, Satz zur Bisektion. Die Monotonie des Fuellgrads ueber dem Preis
+% ist fuer den eigenen Preis einer Groesse bei festen uebrigen Preisen
+% gesichert. Die erste Iteration hebt aber den einheitlichen Preis aller
+% Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde
+% verlieren kann. Der Satz sagt deshalb setzt voraus und nicht gilt.
+% ZU PRUEFEN, Laufzahlen. Die 84 bis 167 stammen nach MODELL.md aus den
+% Schwellen der 20 Sensitivitaetstage und nicht aus dem Jahr 2025.
+% ZU PRUEFEN, Rechenzeit. Die fruehere Angabe von 17 bis 44 Sekunden je Tag
+% stammt aus der Zeit vor dem Umbau der zweiten Iteration, deshalb steht hier
+% nur einige hundert Laeufe.
+% NICHT AUFGENOMMEN. Der Verweis auf sec:model_critique am Satz zum
+% Optionswert, Stilregel 9 und Befund S7. Ebenso die Reihenfolge des
+% Abstiegs, die nach Anweisung des Verfassers als Einschraenkung nach
+% Kapitel 5 gehoert. Der Satz zum Ergebnis haelt hier nur fest, dass es ein
+% koordinatenweises Minimum ist.
+% STICHPUNKTE ERSETZT am 13.09.2026, alte Fassung:
+%\begin{itemize}
 % --- Rechenaufwand und Schleifen
 % ZU PRUEFEN am 12.09.2026. Die Angabe von 17 bis 44 Sekunden je Tag stammt aus
 % der Zeit vor dem Umbau der 2. Iteration. Der Abstieg kostet zusaetzlich 48
 % Laeufe je Durchgang und rund zehn Laeufe je gesenkter Stunde, die Dauer ist
 % deshalb nachzumessen. Alte Fassung:
 %    \item Ein einzelner Lauf dauert rund 0,2 Sekunden und ein Tag mit beiden Iterationen 17 bis 44 Sekunden
-    \item Ein einzelner Lauf dauert rund 0,2 Sekunden, und beide Iterationen zusammen verlangen je Tag einige hundert Läufe
+%    \item Ein einzelner Lauf dauert rund 0,2 Sekunden, und beide Iterationen zusammen verlangen je Tag einige hundert Läufe
 % ZU PRUEFEN. Die Abbildung nennt 3 Beispieltage, 20 Sensitivitaetstage und
 % 363 bis 365 Tage im Jahr sowie Studien wie den lambda-Hebel, die die Arbeit
 % nicht einfuehrt. Das widerspricht dem vierten Quartal nach Entscheidung 10
@@ -3782,20 +3896,24 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 % zurueckgenommen, der Stichpunkt steht wieder in der alten Fassung.
 % Verworfene Zwischenfassung:
 %    \item Um die Suche liegt die Schleife über die Tage, und innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise, wie Abbildung~\ref{fig:schleifenebenen} zeigt
-    \item Um die Suche liegen die Schleifen über Tage, Konfigurationen und Studien, und innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise, wie Abbildung~\ref{fig:schleifenebenen} zeigt
+%    \item Um die Suche liegen die Schleifen über Tage, Konfigurationen und Studien, und innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise, wie Abbildung~\ref{fig:schleifenebenen} zeigt
 % NEU am 11.09.2026 nach Erlaeuterung des Verfassers. Der lambda-Hebel streckt
 % nach MODELL.md Abschnitt 13 die Preise des IDC um ihr Tagesmittel und
 % erhoeht so den Spread. Er ist nicht der feste Aufschlag von drei Prozent auf
 % den ID1 aus 3.2.2. Die aFRR-Modellierungsleiter steht am Stichpunkt zur
 % aFRR in 3.2.4. Die Studien Einzelmarkt sowie reservierte Leistung mal
 % Abrufdauer sind beim Ausformulieren noch zu erklaeren.
-    \item Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, eine andere die Leiter der \ac{aFRR}-Modellierung
+%    \item Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, eine andere die Leiter der \ac{aFRR}-Modellierung
 % EINZELMARKT erlaeutert vom Verfasser am 11.09.2026. Die Studie optimiert
 % jeden Markt fuer sich und liefert die zweite Stufe des Vergleichs in 3.3,
 % bei der alle uebrigen Maerkte abgeschaltet sind. Offen bleibt die Studie
 % reservierte Leistung mal Abrufdauer.
-    \item Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung
-\end{itemize}
+%    \item Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung
+%\end{itemize}
+Ein einzelner Lauf dauert rund 0,2 Sekunden, und beide Iterationen zusammen verlangen je Tag einige hundert Läufe.
+Um die Suche liegen die Schleifen über Tage, Konfigurationen und Studien, und innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise, wie Abbildung~\ref{fig:schleifenebenen} zeigt.
+Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, eine andere die Leiter der \ac{aFRR}-Modellierung.
+Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
 % Modellrepository, analysen/10_schrift/kapitel_3.
@@ -3879,27 +3997,62 @@ Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetige
 % Weber-Abgrenzung noch die Bestandteile des Gebots tragen eine eigene
 % Ueberschrift, beide stehen in einer Liste. Alte Fassung:
 %   \subsubsection*{Abgrenzung gegenüber dem modifizierten Weber-Ansatz}
-\begin{itemize}
+% AUSFORMULIERT am 13.09.2026, Auftrag des Verfassers, am Stueck und zur
+% Durchsicht. Er geht den Abschnitt danach absatzweise durch.
+% BEGRIFFE, entschieden vom Verfasser am 13.09.2026. Das Ergebnis der zweiten
+% Iteration heisst Vollreservierungspreis. Der Wert der ersten heisst
+% einheitlicher Reservierungspreis der ersten Iteration. Damit ist der
+% Begriffskonflikt vom 12.09.2026 erledigt, denn Schwellenpreis ist nach
+% CLAUDE.md Abschnitt 5 gesperrt und Grenzpreis durch den Weber-Ansatz belegt.
+% AUSGEWIESEN wird der Vollreservierungspreis der zweiten Iteration, ebenfalls
+% entschieden vom Verfasser. Die erste Iteration liefert den Startvektor.
+% UNBELEGT, Satz zur Bisektion. Die Monotonie des Fuellgrads ueber dem Preis
+% ist fuer den eigenen Preis einer Groesse bei festen uebrigen Preisen
+% gesichert. Die erste Iteration hebt aber den einheitlichen Preis aller
+% Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde
+% verlieren kann. Der Satz sagt deshalb setzt voraus und nicht gilt.
+% ZU PRUEFEN, Laufzahlen. Die 84 bis 167 stammen nach MODELL.md aus den
+% Schwellen der 20 Sensitivitaetstage und nicht aus dem Jahr 2025.
+% ZU PRUEFEN, Rechenzeit. Die fruehere Angabe von 17 bis 44 Sekunden je Tag
+% stammt aus der Zeit vor dem Umbau der zweiten Iteration, deshalb steht hier
+% nur einige hundert Laeufe.
+% NICHT AUFGENOMMEN. Der Verweis auf sec:model_critique am Satz zum
+% Optionswert, Stilregel 9 und Befund S7. Ebenso die Reihenfolge des
+% Abstiegs, die nach Anweisung des Verfassers als Einschraenkung nach
+% Kapitel 5 gehoert. Der Satz zum Ergebnis haelt hier nur fest, dass es ein
+% koordinatenweises Minimum ist.
+% STICHPUNKTE ERSETZT am 13.09.2026, alte Fassung:
+%\begin{itemize}
 % --- Abgrenzung gegenueber dem modifizierten Weber-Ansatz
-    \item Einordnung, nämlich dass der Ansatz nach Abschnitt \ref{sec:weber_approach} als Stand der Technik dargestellt ist und die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen prägt \cite{weber_gutachten_2015}
-    \item Erster Grund, nämlich dass eine einperiodige deterministische Optimierung mit vollständiger Preiskenntnis kein Volatilitätsmaß kennt und den Zeitwert der Option damit konstruktionsbedingt zu null macht \cite{hull_options_2014}
-    \item Zweiter Grund, nämlich dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre
-    \item Dritter Grund, nämlich dass der Ansatz jedes Zeitintervall unabhängig bewertet, während die Ladezustandsbilanz die Intervalle bindend koppelt und diese Kopplung für kurze Entladedauern nicht vernachlässigbar ist
-    \item Folge für die Ergebnisse, nämlich dass der ermittelte kurative Reservierungspreis opportunitätskostenbasiert ist und keinen Optionswert enthält, was in Abschnitt \ref{sec:model_critique} zu würdigen ist
-    \item Einordnung dieser Folge, nämlich dass die Vergütungsstruktur der Festlegung den Optionswert ohnehin nur dann trägt, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}
+%    \item Einordnung, nämlich dass der Ansatz nach Abschnitt \ref{sec:weber_approach} als Stand der Technik dargestellt ist und die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen prägt \cite{weber_gutachten_2015}
+%    \item Erster Grund, nämlich dass eine einperiodige deterministische Optimierung mit vollständiger Preiskenntnis kein Volatilitätsmaß kennt und den Zeitwert der Option damit konstruktionsbedingt zu null macht \cite{hull_options_2014}
+%    \item Zweiter Grund, nämlich dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre
+%    \item Dritter Grund, nämlich dass der Ansatz jedes Zeitintervall unabhängig bewertet, während die Ladezustandsbilanz die Intervalle bindend koppelt und diese Kopplung für kurze Entladedauern nicht vernachlässigbar ist
+%    \item Folge für die Ergebnisse, nämlich dass der ermittelte kurative Reservierungspreis opportunitätskostenbasiert ist und keinen Optionswert enthält, was in Abschnitt \ref{sec:model_critique} zu würdigen ist
+%    \item Einordnung dieser Folge, nämlich dass die Vergütungsstruktur der Festlegung den Optionswert ohnehin nur dann trägt, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}
 % --- Bestandteile des Gebots, die das Modell nicht traegt
 % Zitatschluessel fuer Anlage 5 beim Ausformulieren pruefen.
 % BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
 % des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
 %   \item Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter dem Vorhalteprodukt handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann
-    \item Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann
+%    \item Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann
 % BEGRIFF ERSETZT am 11.09.2026, kurative Reservierung nach der Begriffswahl
 % des Verfassers, Stilregel 5. Alte Fassung, nicht wieder aufnehmen:
 %   \item Den Energieanteil eines Abrufs, den der Preis des Vorhalteprodukts mit abdeckt, bildet das Modell nicht ab
-    \item Den Energieanteil eines Abrufs, den der Preis der kurativen Reservierung mit abdeckt, bildet das Modell nicht ab
-    \item Die Höhe der Pönale bestimmt die Arbeit nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt
-    \item Abschluss, nämlich dass der ermittelte kurative Reservierungspreis der opportunitätskostenbasierte Teil des Gebots ist und nicht das Gebot
-\end{itemize}
+%    \item Den Energieanteil eines Abrufs, den der Preis der kurativen Reservierung mit abdeckt, bildet das Modell nicht ab
+%    \item Die Höhe der Pönale bestimmt die Arbeit nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt
+%    \item Abschluss, nämlich dass der ermittelte kurative Reservierungspreis der opportunitätskostenbasierte Teil des Gebots ist und nicht das Gebot
+%\end{itemize}
+Der Ansatz nach Abschnitt~\ref{sec:weber_approach} ist als Stand der Technik dargestellt und prägt die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen \cite{weber_gutachten_2015}.
+Eine einperiodige deterministische Optimierung mit vollständiger Preiskenntnis kennt jedoch kein Volatilitätsmaß und macht den Zeitwert der Option damit konstruktionsbedingt zu null \cite{hull_options_2014}.
+Hinzu kommt, dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre.
+Der Ansatz bewertet außerdem jedes Zeitintervall unabhängig, während die Ladezustandsbilanz die Intervalle bindend koppelt und diese Kopplung für kurze Entladedauern nicht vernachlässigbar ist.
+Der ermittelte kurative Reservierungspreis ist deshalb opportunitätskostenbasiert und enthält keinen Optionswert.
+Die Vergütungsstruktur der Festlegung trägt den Optionswert ohnehin nur dann, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}.
+Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann.
+Den Energieanteil eines Abrufs, den der Preis der kurativen Reservierung mit abdeckt, bildet das Modell nicht ab.
+Die Höhe der Pönale bestimmt die Arbeit nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt.
+Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
 
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten. Die sechs Punkte zum Weber-Ansatz stehen unveraendert im zweiten

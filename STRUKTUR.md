@@ -41,7 +41,7 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 | 3.2.1 | Ansatz und Lösungsverfahren, ohne die Märkte, mit den Systemgrenzen am Schluss | 1,5 | F |
 | 3.2.2 | Anlage, Speicher und Zielfunktion | 1,5 | F |
 | 3.2.3 | Abbildung der Märkte, je Markt eine unnummerierte Überschrift | 3 | F |
-| 3.2.4 | Bestimmung des Preises, mit Weber-Abgrenzung und Gebotsbestandteilen | 2,5 | S |
+| 3.2.4 | Bestimmung des Preises, mit Weber-Abgrenzung und Gebotsbestandteilen | 2,5 | T, ausformuliert, vom Verfasser durchzusehen |
 | **3.3** | **Validierung des Modells** | **2** | S |
 
 ### 3.1.2 im Einzelnen
@@ -96,13 +96,22 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 
 ---
 
+## Anhang B, Stand 13.09.2026
+
+`extras/attachment_modell.tex` ist genau ein Kapitel ohne Abschnitte. Es trägt
+einen Einleitungsabsatz, drei Zeichentabellen und danach nur Gleichungen. Die
+Zahlenwerte sind heraus, die Parametertabelle führt statt dessen die Einheiten.
+Die Blockprodukte tragen den Index s(t) wie im Hauptteil, die frühere
+Blockbedingung ist dadurch entfallen. Ab Seite 70, ohne Eintrag von
+Unterabschnitten im Inhaltsverzeichnis.
+
 ## Tabellen in Kapitel 3, Stand 13.09.2026
 
 Tabelle 3.1 `tab:maerkte` vergleicht die sechs geführten Märkte nach
 Produktschnitt, Vergütungsform, Energievorhalt und Wirkung auf die Anlage. Sie
 hat die frühere Produktparametertabelle des kurativen Blocks ersetzt, die
-vollständig als Kommentar erhalten ist. Offen ist der Schlusssatz jenes Blocks,
-der sich auf die entfallene Spalte Basisfall bezog.
+vollständig als Kommentar erhalten ist. Der Schlusssatz jenes Blocks, der sich
+auf die entfallene Spalte Basisfall bezog, entfällt ersatzlos.
 
 ## Umfang von Kapitel 3, Stand 13.09.2026
 

@@ -1,74 +1,90 @@
 \chapter{Vollständige Formulierung des Optimierungsproblems}
 \label{anh:modell}
 
-Dieser Anhang führt das Optimierungsproblem, das Abschnitt~\ref{sec:model_assumptions} bis Abschnitt~\ref{sec:constraints} beschreibt, in geschlossener Form auf. Er nennt zuerst die Mengen, die Parameter und die Variablen, danach die Zielfunktion und zuletzt jede Nebenbedingung einzeln mit einem Satz zu ihrer Aufgabe. Der Hauptteil verweist auf die Gleichungen dieses Anhangs und wiederholt sie nicht.
+Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~\ref{tab:anh:modell:mengen} erklärt die Mengen und Indizes, Tabelle~\ref{tab:anh:modell:parameter} die Parameter und Tabelle~\ref{tab:anh:modell:variablen} die Variablen, danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen in der Reihenfolge Ladezustand, Leistung am Netzanschlusspunkt, Energieband der Vorhaltungen, Day-Ahead, \ac{aFRR}-Arbeit mit ihrem Ausgleich, kurative Reservierung und gesperrte Viertelstunden.
 
-\section{Mengen, Parameter und Variablen}
-\label{anh:modell:symbole}
-
-Der Liefertag besteht aus der Menge $\mathcal{T} = \{1, \ldots, 96\}$ der Viertelstunden mit der Schrittweite $\Delta t = 0{,}25\,\si{h}$ und der Menge $\mathcal{R} = \{\mathrm{pos}, \mathrm{neg}\}$ der beiden Richtungen. Die Abbildung $s(t)$ ordnet jeder Viertelstunde die Zeitscheibe ihres Blockprodukts zu, für die kurative Reservierung eine Stunde und für die \ac{FCR} sowie die \ac{aFRR}-Leistung vier Stunden. Tabelle~\ref{tab:anh:modell:parameter} nennt die Parameter des Problems und Tabelle~\ref{tab:anh:modell:variablen} seine Variablen.
+\begin{table}[htbp]
+    \centering
+    \caption{Mengen, Indizes und Abbildungen.}
+    \label{tab:anh:modell:mengen}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.82\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Zeichen} & \textbf{Bedeutung} \\
+        \hline
+        $t$, $\mathcal{T}$ & Viertelstunde des Liefertages und Menge aller 96 Viertelstunden \\
+        \hline
+        $\mathcal{T}^{\mathrm{sp}}$ & Teilmenge der gesperrten Viertelstunden an den beiden Tagen der Zeitumstellung \\
+        \hline
+        $r$, $\mathcal{R}$ & Richtung und Menge der beiden Richtungen, positiv und negativ \\
+        \hline
+        $s(t)$ & Zeitscheibe des Blockprodukts, der die Viertelstunde $t$ angehört \\
+        \hline
+        $\Delta t$ & Länge einer Viertelstunde \\
+        \hline
+        $\vartheta$ & Laufindex über die Viertelstunden bis einschließlich $t$ \\
+        \hline
+        ein, aus & Hochgestellte Indizes der Einspeicher- und der Ausspeicherrichtung \\
+        \hline
+        \acs{DA}, \acs{IDC}, \acs{FCR}, \acs{aFRR}, kur & Hochgestellte Indizes der geführten Märkte, für die \acs{aFRR} getrennt nach Leistung und Arbeit \\
+        \hline
+    \end{tabular}
+\end{table}
 
 \begin{table}[htbp]
     \centering
     \caption{Parameter des Optimierungsproblems.}
     \label{tab:anh:modell:parameter}
     \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.16\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.54\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-\tabcolsep\relax}@{}}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}@{}}
         \hline
-        \textbf{Zeichen} & \textbf{Größe} & \textbf{Wert} \\
+        \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
         \hline
-        $p^{\mathrm{DA}}_t$ & Auktionspreis des \acs{DA} & Marktdatum \\
+        $p^{\mathrm{DA}}_t$ & Auktionspreis des \acs{DA} & \si{\text{\euro}\per MWh} \\
         \hline
-        $p^{\mathrm{ID1}}_t$ & Index der letzten Handelsstunde am \acs{IDC} & Marktdatum \\
+        $p^{\mathrm{ID1}}_t$ & Index der letzten Handelsstunde am \acs{IDC} & \si{\text{\euro}\per MWh} \\
         \hline
-        $p^{\mathrm{FCR}}_{s}$ & Einheitspreis der \acs{FCR} je Zeitscheibe & Marktdatum \\
+        $p^{\mathrm{IDC,ein}}_t$, $p^{\mathrm{IDC,aus}}_t$ & Preise des physischen Handels am \acs{IDC} nach Gleichung~\eqref{eq:anh:modell:idc_preise} & \si{\text{\euro}\per MWh} \\
         \hline
-        $p^{\mathrm{aFRR}}_{s,r}$ & Leistungspreis der \acs{aFRR} je Zeitscheibe und Richtung & Marktdatum \\
+        $p^{\mathrm{FCR}}_{s}$ & Einheitspreis der \acs{FCR} je Zeitscheibe & Euro je \si{MW} und Stunde \\
         \hline
-        $p^{\mathrm{aFRR,E}}_{t,r}$ & Arbeitspreis der \acs{aFRR} je Viertelstunde und Richtung & Marktdatum \\
+        $p^{\mathrm{aFRR}}_{s,r}$ & Leistungspreis der \acs{aFRR} je Zeitscheibe und Richtung & Euro je \si{MW} und Stunde \\
         \hline
-        $\pi_{s,r}$ & kurativer Reservierungspreis je Zeitscheibe und Richtung & gesucht \\
+        $p^{\mathrm{aFRR,E}}_{t,r}$ & Arbeitspreis der \acs{aFRR} je Viertelstunde und Richtung & \si{\text{\euro}\per MWh} \\
         \hline
-        $a$ & Spreadaufschlag des physischen Handels am \acs{IDC} & 0,06 \\
+        $\pi_{s,r}$ & Kurativer Reservierungspreis je Zeitscheibe und Richtung, die gesuchte Größe & Euro je \si{MW} und Stunde \\
         \hline
-        $P^{\max}$ & Anschlussleistung je Richtung & 100\,\si{MW} \\
+        $a$ & Spreadaufschlag des physischen Handels am \acs{IDC} & -- \\
         \hline
-        $S^{\min}$, $S^{\max}$ & Grenzen des Ladezustands & 12,5 und 237,5\,\si{MWh} \\
+        $P^{\max}$ & Anschlussleistung je Richtung & \si{MW} \\
         \hline
-        $S^{0}$ & Ladezustand zu Tagesbeginn & 125\,\si{MWh} \\
+        $S^{\min}$, $S^{\max}$ & Grenzen des nutzbaren Ladezustands & \si{MWh} \\
         \hline
-        $\eta^{\mathrm{ein}}$, $\eta^{\mathrm{aus}}$ & Wirkungsgrad je Richtung & 0,95 \\
+        $S^{0}$ & Ladezustand zu Tagesbeginn & \si{MWh} \\
         \hline
-        $c^{\mathrm{deg}}$ & Degradationskostensatz je Megawattstunde Durchsatz & 8 Euro \\
+        $\eta^{\mathrm{ein}}$, $\eta^{\mathrm{aus}}$ & Wirkungsgrad je Richtung & -- \\
         \hline
-        $\tau^{\mathrm{kur}}$ & Vorhaltedauer der kurativen Reservierung & 1\,\si{h} \\
+        $c^{\mathrm{deg}}$ & Degradationskostensatz je Megawattstunde Durchsatz & \si{\text{\euro}\per MWh} \\
         \hline
-        $\tau^{\mathrm{aFRR}}$, $\tau^{\mathrm{FCR}}$ & Vorhaltedauer der Regelleistung & 1 und 0,25\,\si{h} \\
+        $\tau^{\mathrm{kur}}$, $\tau^{\mathrm{aFRR}}$, $\tau^{\mathrm{FCR}}$ & Vorhaltedauer der kurativen Reservierung und der beiden Regelleistungsprodukte & \si{h} \\
         \hline
-        $\alpha_t$ & Anteil der Anlage am deutschen \acs{aFRR}-Abruf & Marktdatum \\
+        $\alpha_t$ & Anteil der Anlage am deutschen \acs{aFRR}-Abruf & -- \\
         \hline
-        $P^{\mathrm{kur,min}}$ & Mindestgröße der kurativen Reservierung & 25\,\si{MW} \\
+        $P^{\mathrm{kur,min}}$ & Mindestgröße der kurativen Reservierung & \si{MW} \\
         \hline
-        $\beta_t$ & Schalter, eins zu Beginn einer Zeitscheibe der Regelleistung und sonst null & 0 oder 1 \\
+        $\beta_t$ & Eins zu Beginn einer Zeitscheibe der Regelleistung und sonst null & -- \\
         \hline
-        $\varepsilon_r$ & Vorzeichen des Ausgleichs, $-1$ für die positive und $+1$ für die negative Richtung & $\pm 1$ \\
+        $\varepsilon_r$ & Vorzeichen des Ausgleichs, minus eins in positiver und plus eins in negativer Richtung & -- \\
         \hline
     \end{tabular}
 \end{table}
-
-Die Preise des physischen Handels am \ac{IDC} folgen aus dem Index der letzten Handelsstunde, symmetrisch um ihn aufgeweitet, sodass die Anlage beim Verkauf einen Aufschlag und beim Kauf einen Abschlag trägt.
-
-\begin{equation}
-    \label{eq:anh:modell:idc_preise}
-    p^{\mathrm{IDC,aus}}_t = p^{\mathrm{ID1}}_t \left( 1 + \frac{a}{2} \right), \qquad p^{\mathrm{IDC,ein}}_t = p^{\mathrm{ID1}}_t \left( 1 - \frac{a}{2} \right)
-\end{equation}
 
 \begin{table}[htbp]
     \centering
     \caption{Variablen des Optimierungsproblems, alle stetig und nichtnegativ mit Ausnahme der Binärvariablen.}
     \label{tab:anh:modell:variablen}
     \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}@{}}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.60\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}@{}}
         \hline
         \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
         \hline
@@ -76,164 +92,88 @@ Die Preise des physischen Handels am \ac{IDC} folgen aus dem Index der letzten H
         \hline
         $P^{\mathrm{IDC,ein}}_t$, $P^{\mathrm{IDC,aus}}_t$ & Leistung am \acs{IDC} in beiden Richtungen & \si{MW} \\
         \hline
-        $P^{\mathrm{FCR}}_t$ & vorgehaltene Leistung der \acs{FCR}, symmetrisch & \si{MW} \\
+        $P^{\mathrm{FCR}}_{s(t)}$ & Vorgehaltene Leistung der \acs{FCR}, symmetrisch & \si{MW} \\
         \hline
-        $P^{\mathrm{aFRR}}_{t,r}$ & vorgehaltene Leistung der \acs{aFRR} je Richtung & \si{MW} \\
+        $P^{\mathrm{aFRR}}_{s(t),r}$ & Vorgehaltene Leistung der \acs{aFRR} je Richtung & \si{MW} \\
         \hline
-        $P^{\mathrm{aFRR,E}}_{t,r}$ & gelieferte \acs{aFRR}-Arbeit je Richtung & \si{MW} \\
+        $P^{\mathrm{aFRR,E}}_{t,r}$ & Gelieferte \acs{aFRR}-Arbeit je Richtung & \si{MW} \\
         \hline
         $P^{\mathrm{aus}}_{t,r}$ & Ausgleich der gelieferten Arbeit am \acs{IDC} & \si{MW} \\
         \hline
-        $B_{t,r}$ & belegte Leistung der \acs{aFRR} aus Vorhaltung und Lieferung & \si{MW} \\
+        $B_{t,r}$ & Belegte Leistung der \acs{aFRR} aus Vorhaltung und Lieferung & \si{MW} \\
         \hline
-        $P^{\mathrm{kur}}_{t,r}$ & kurativ reservierte Leistung je Richtung & \si{MW} \\
+        $P^{\mathrm{kur}}_{s(t),r}$ & Kurativ reservierte Leistung je Richtung & \si{MW} \\
         \hline
         $S_t$ & Ladezustand am Ende der Viertelstunde, $t = 0 \ldots 96$ & \si{MWh} \\
         \hline
         $u_{s,r}$ & Binärvariable der Mindestgröße je Zeitscheibe und Richtung & -- \\
         \hline
+        $E^{\mathrm{BESS,ges}}$ & Nettoerlös des Liefertages & Euro \\
+        \hline
+        $E^{\mathrm{DA}}$, $E^{\mathrm{IDC}}$, $E^{\mathrm{FCR}}$, $E^{\mathrm{aFRR,L}}$, $E^{\mathrm{aFRR,E}}$, $E^{\mathrm{kur}}$ & Erlös je geführtem Markt & Euro \\
+        \hline
+        $K^{\mathrm{deg}}$ & Degradationskosten des Liefertages & Euro \\
+        \hline
     \end{tabular}
 \end{table}
-
-\section{Zielfunktion}
-\label{anh:modell:ziel}
-
-Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführten Märkte abzüglich der Degradationskosten.
 
 \begin{equation}
     \label{eq:anh:modell:ziel}
     \max \; E^{\mathrm{BESS,ges}} = E^{\mathrm{DA}} + E^{\mathrm{IDC}} + E^{\mathrm{FCR}} + E^{\mathrm{aFRR,L}} + E^{\mathrm{aFRR,E}} + E^{\mathrm{kur}} \; - \; K^{\mathrm{deg}}
 \end{equation}
 
-Die Summanden stehen für die sechs geführten Märkte und für die Kosten der Degradation.
-
 \begin{align}
     E^{\mathrm{DA}} &= \Delta t \sum_{t \in \mathcal{T}} p^{\mathrm{DA}}_t \left( P^{\mathrm{DA,aus}}_t - P^{\mathrm{DA,ein}}_t \right) \label{eq:anh:modell:e_da}\\
     E^{\mathrm{IDC}} &= \Delta t \sum_{t \in \mathcal{T}} \left( p^{\mathrm{IDC,aus}}_t P^{\mathrm{IDC,aus}}_t - p^{\mathrm{IDC,ein}}_t P^{\mathrm{IDC,ein}}_t \right) \label{eq:anh:modell:e_idc}\\
-    E^{\mathrm{FCR}} &= \Delta t \sum_{t \in \mathcal{T}} p^{\mathrm{FCR}}_{s(t)} \, P^{\mathrm{FCR}}_t \label{eq:anh:modell:e_fcr}\\
-    E^{\mathrm{aFRR,L}} &= \Delta t \sum_{t \in \mathcal{T}} \sum_{r \in \mathcal{R}} p^{\mathrm{aFRR}}_{s(t),r} \, P^{\mathrm{aFRR}}_{t,r} \label{eq:anh:modell:e_afrr_l}\\
+    E^{\mathrm{FCR}} &= \Delta t \sum_{t \in \mathcal{T}} p^{\mathrm{FCR}}_{s(t)} \, P^{\mathrm{FCR}}_{s(t)} \label{eq:anh:modell:e_fcr}\\
+    E^{\mathrm{aFRR,L}} &= \Delta t \sum_{t \in \mathcal{T}} \sum_{r \in \mathcal{R}} p^{\mathrm{aFRR}}_{s(t),r} \, P^{\mathrm{aFRR}}_{s(t),r} \label{eq:anh:modell:e_afrr_l}\\
     E^{\mathrm{aFRR,E}} &= \Delta t \sum_{t \in \mathcal{T}} \sum_{r \in \mathcal{R}} \left( p^{\mathrm{aFRR,E}}_{t,r} P^{\mathrm{aFRR,E}}_{t,r} + \varepsilon_r \, p^{\mathrm{ID1}}_t P^{\mathrm{aus}}_{t,r} \right) \label{eq:anh:modell:e_afrr_e}\\
-    E^{\mathrm{kur}} &= \Delta t \sum_{t \in \mathcal{T}} \sum_{r \in \mathcal{R}} \pi_{s(t),r} \, P^{\mathrm{kur}}_{t,r} \label{eq:anh:modell:e_kur}
+    E^{\mathrm{kur}} &= \Delta t \sum_{t \in \mathcal{T}} \sum_{r \in \mathcal{R}} \pi_{s(t),r} \, P^{\mathrm{kur}}_{s(t),r} \label{eq:anh:modell:e_kur}\\
+    K^{\mathrm{deg}} &= c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left[ P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{IDC,aus}}_t + \sum_{r \in \mathcal{R}} \left( P^{\mathrm{aFRR,E}}_{t,r} + P^{\mathrm{aus}}_{t,r} \right) \right] \label{eq:anh:modell:k_deg}
 \end{align}
 
-Die Degradation belastet allein den physischen Durchsatz, also den Handel an beiden Energiemärkten, die gelieferte \ac{aFRR}-Arbeit und ihren Ausgleich. Die Vorhaltungen bewegen keine Energie und tragen deshalb keine Degradationskosten.
-
 \begin{equation}
-    \label{eq:anh:modell:k_deg}
-    K^{\mathrm{deg}} = c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left[ P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{IDC,aus}}_t + \sum_{r \in \mathcal{R}} \left( P^{\mathrm{aFRR,E}}_{t,r} + P^{\mathrm{aus}}_{t,r} \right) \right]
+    \label{eq:anh:modell:idc_preise}
+    p^{\mathrm{IDC,aus}}_t = p^{\mathrm{ID1}}_t \left( 1 + \frac{a}{2} \right), \qquad p^{\mathrm{IDC,ein}}_t = p^{\mathrm{ID1}}_t \left( 1 - \frac{a}{2} \right)
 \end{equation}
-
-\section{Nebenbedingungen}
-\label{anh:modell:nebenbedingungen}
-
-\subsection{Ladezustand}
-\label{anh:modell:speicher}
-
-Die Ladezustandsbilanz führt den Speicherinhalt über den Tag fort. Nur der Handel, die gelieferte \ac{aFRR}-Arbeit und ihr Ausgleich bewegen ihn, und beide Wirkungsgrade gehen ein.
-
-\begin{equation}
-    \label{eq:anh:modell:bilanz}
-    S_t = S_{t-1} + \Delta t \left[ \eta^{\mathrm{ein}} \Big( P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} \Big) - \frac{1}{\eta^{\mathrm{aus}}} \Big( P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} \Big) \right]
-\end{equation}
-
-Der Ladezustand bleibt zwischen seinen Grenzen, und Anfang und Ende eines Tages tragen denselben Wert, damit kein Tag mit eingelagerter Energie endet und die Tage untereinander vergleichbar bleiben.
 
 \begin{align}
+    S_t &= S_{t-1} + \Delta t \left[ \eta^{\mathrm{ein}} \Big( P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} \Big) \right. \nonumber\\
+    &\qquad\qquad \left. - \; \frac{1}{\eta^{\mathrm{aus}}} \Big( P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} \Big) \right] && \forall\, t \in \mathcal{T} \label{eq:anh:modell:bilanz}\\
     S^{\min} &\le S_t \le S^{\max} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:grenzen}\\
     S_0 &= S_{96} = S^{0} && \label{eq:anh:modell:rand}
 \end{align}
 
-\subsection{Leistung am Netzanschlusspunkt}
-\label{anh:modell:leistung}
-
-Auf jeder Seite teilen sich der Handel, die \ac{aFRR}, die kurative Reservierung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung. Der Ausgleich der gelieferten Arbeit steht dabei auf der Gegenseite seiner Lieferung.
-
 \begin{align}
-    P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{kur}}_{t,\mathrm{pos}} + P^{\mathrm{FCR}}_t + B_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} &\le P^{\max} \label{eq:anh:modell:leistung_aus}\\
-    P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{kur}}_{t,\mathrm{neg}} + P^{\mathrm{FCR}}_t + B_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} &\le P^{\max} \label{eq:anh:modell:leistung_ein}
+    P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{kur}}_{s(t),\mathrm{pos}} + P^{\mathrm{FCR}}_{s(t)} + B_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} &\le P^{\max} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:leistung_aus}\\
+    P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{kur}}_{s(t),\mathrm{neg}} + P^{\mathrm{FCR}}_{s(t)} + B_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} &\le P^{\max} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:leistung_ein}
 \end{align}
 
-Aus den Gleichungen~\eqref{eq:anh:modell:leistung_aus} und \eqref{eq:anh:modell:leistung_ein} folgt die Ausschließlichkeit der kurativen Zusage, denn eine kurativ reservierte Leistung steht keinem anderen Markt zur Verfügung.
-
-\subsection{Energieband der Vorhaltungen}
-\label{anh:modell:band}
-
-Jede Vorhaltung muss im Abruffall aus dem Speicher zu bedienen sein und schneidet deshalb ein Band aus dem zulässigen Ladezustand. Die kurative Reservierung bindet ihr Band in jeder Viertelstunde, die Regelleistung nur zu Beginn ihrer Zeitscheibe.
-
 \begin{align}
-    S_t &\ge S^{\min} + \frac{P^{\mathrm{kur}}_{t,\mathrm{pos}} \, \tau^{\mathrm{kur}}}{\eta^{\mathrm{aus}}} + \frac{\beta_t \left( P^{\mathrm{aFRR}}_{t,\mathrm{pos}} \, \tau^{\mathrm{aFRR}} + P^{\mathrm{FCR}}_t \, \tau^{\mathrm{FCR}} \right)}{\eta^{\mathrm{aus}}} \label{eq:anh:modell:band_unten}\\
-    S_t &\le S^{\max} - P^{\mathrm{kur}}_{t,\mathrm{neg}} \, \tau^{\mathrm{kur}} \, \eta^{\mathrm{ein}} - \beta_t \left( P^{\mathrm{aFRR}}_{t,\mathrm{neg}} \, \tau^{\mathrm{aFRR}} + P^{\mathrm{FCR}}_t \, \tau^{\mathrm{FCR}} \right) \eta^{\mathrm{ein}} \label{eq:anh:modell:band_oben}
+    S_t &\ge S^{\min} + \frac{P^{\mathrm{kur}}_{s(t),\mathrm{pos}} \, \tau^{\mathrm{kur}} + \beta_t \left( P^{\mathrm{aFRR}}_{s(t),\mathrm{pos}} \, \tau^{\mathrm{aFRR}} + P^{\mathrm{FCR}}_{s(t)} \, \tau^{\mathrm{FCR}} \right)}{\eta^{\mathrm{aus}}} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:band_unten}\\
+    S_t &\le S^{\max} - \left[ P^{\mathrm{kur}}_{s(t),\mathrm{neg}} \, \tau^{\mathrm{kur}} + \beta_t \left( P^{\mathrm{aFRR}}_{s(t),\mathrm{neg}} \, \tau^{\mathrm{aFRR}} + P^{\mathrm{FCR}}_{s(t)} \, \tau^{\mathrm{FCR}} \right) \right] \eta^{\mathrm{ein}} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:band_oben}
 \end{align}
 
-Darin ist $\beta_t$ eins zu Beginn einer Zeitscheibe der Regelleistung und sonst null.
-
-\subsection{Blockprodukte}
-\label{anh:modell:bloecke}
-
-Die vorgehaltene Leistung bleibt über ihre Zeitscheibe konstant, für die kurative Reservierung über eine Stunde und für die \ac{FCR} sowie die \ac{aFRR}-Leistung über vier Stunden.
-
-\begin{equation}
-    \label{eq:anh:modell:block}
-    P^{\mathrm{kur}}_{t,r} = P^{\mathrm{kur}}_{t',r}, \quad P^{\mathrm{aFRR}}_{t,r} = P^{\mathrm{aFRR}}_{t',r}, \quad P^{\mathrm{FCR}}_{t} = P^{\mathrm{FCR}}_{t'} \qquad \forall\, t, t' \text{ mit } s(t) = s(t')
-\end{equation}
-
-\subsection{Day-Ahead}
-\label{anh:modell:da}
-
-Der Handel am \ac{DA} ist in sich bilanziell ausgeglichen, weil das Gebot am Vortag den kurativen Preis noch nicht kennt und die Anlage ihre Position für eine kurative Zusage erst am \ac{IDC} aufbaut.
-
-\begin{equation}
-    \label{eq:anh:modell:da_neutral}
-    \eta^{\mathrm{ein}} \sum_{t \in \mathcal{T}} P^{\mathrm{DA,ein}}_t = \frac{1}{\eta^{\mathrm{aus}}} \sum_{t \in \mathcal{T}} P^{\mathrm{DA,aus}}_t
-\end{equation}
-
-Zusätzlich muss der Handel am \ac{DA} für sich profitabel sein, also mindestens die Degradation seiner eigenen Mengen decken. Ein Verzicht auf den \ac{DA} erfüllt diese Bedingung stets, sodass das Problem zulässig bleibt.
-
-\begin{equation}
-    \label{eq:anh:modell:da_deckung}
-    E^{\mathrm{DA}} \ge c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left( P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t \right)
-\end{equation}
-
-\subsection{\texorpdfstring{\acs{aFRR}}{aFRR}-Arbeit und ihr Ausgleich}
-\label{anh:modell:afrr}
-
-Die Anlage liefert \ac{aFRR}-Arbeit anteilig am deutschen Abruf und wählt keine einzelnen Viertelstunden aus. Der Anteil folgt aus dem Verhältnis ihrer vorgehaltenen Leistung zur ausgeschriebenen Menge.
-
-\begin{equation}
-    \label{eq:anh:modell:afrr_menge}
-    P^{\mathrm{aFRR,E}}_{t,r} = \alpha_t \, P^{\mathrm{aFRR}}_{t,r}
-\end{equation}
-
-Die belegte Leistung einer Richtung ist das Größere aus Vorhaltung und Lieferung, denn beide beanspruchen dieselbe Seite der Anlage.
-
-\begin{equation}
-    \label{eq:anh:modell:afrr_band}
-    B_{t,r} \ge P^{\mathrm{aFRR}}_{t,r}, \qquad B_{t,r} \ge P^{\mathrm{aFRR,E}}_{t,r}
-\end{equation}
-
-Die gelieferte Arbeit stammt aus dem Speicher und wird am \ac{IDC} in einer späteren Viertelstunde ausgeglichen. Der Ausgleich schließt sich über den Tag und liegt nie vor der Lieferung.
-
 \begin{align}
-    \sum_{t \in \mathcal{T}} P^{\mathrm{aus}}_{t,r} &= \sum_{t \in \mathcal{T}} P^{\mathrm{aFRR,E}}_{t,r} \label{eq:anh:modell:aus_bilanz}\\
-    \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta \le t} P^{\mathrm{aFRR,E}}_{\vartheta,r} \qquad \forall\, t \in \mathcal{T} \label{eq:anh:modell:aus_kausal}
+    \eta^{\mathrm{ein}} \sum_{t \in \mathcal{T}} P^{\mathrm{DA,ein}}_t &= \frac{1}{\eta^{\mathrm{aus}}} \sum_{t \in \mathcal{T}} P^{\mathrm{DA,aus}}_t \label{eq:anh:modell:da_neutral}\\
+    E^{\mathrm{DA}} &\ge c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left( P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t \right) \label{eq:anh:modell:da_deckung}
 \end{align}
 
-Bleibt eine Richtung in einer Viertelstunde ohne Abruf, sind dort die gelieferte Arbeit und ihr Ausgleich null.
-
-\subsection{Kurative Reservierung}
-\label{anh:modell:kurativ}
-
-Die kurativ reservierte Leistung ist nach oben durch die Anschlussleistung begrenzt. Verlangt das Produkt eine Mindestgröße, so ist die Reservierung einer Zeitscheibe entweder null oder mindestens so groß wie diese Mindestgröße, was eine Binärvariable je Zeitscheibe und Richtung erfordert.
+\begin{align}
+    P^{\mathrm{aFRR,E}}_{t,r} &= \alpha_t \, P^{\mathrm{aFRR}}_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_menge}\\
+    B_{t,r} &\ge P^{\mathrm{aFRR}}_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_band_res}\\
+    B_{t,r} &\ge P^{\mathrm{aFRR,E}}_{t,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_band_lief}\\
+    \sum_{t \in \mathcal{T}} P^{\mathrm{aus}}_{t,r} &= \sum_{t \in \mathcal{T}} P^{\mathrm{aFRR,E}}_{t,r} && \forall\, r \in \mathcal{R} \label{eq:anh:modell:aus_bilanz}\\
+    \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta \le t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
+\end{align}
 
 \begin{align}
-    P^{\mathrm{kur}}_{t,r} &\le P^{\max} \, u_{s(t),r} \label{eq:anh:modell:kur_oben}\\
-    P^{\mathrm{kur}}_{t,r} &\ge P^{\mathrm{kur,min}} \, u_{s(t),r} \label{eq:anh:modell:kur_min}\\
+    P^{\mathrm{kur}}_{s(t),r} &\le P^{\max} \, u_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:kur_oben}\\
+    P^{\mathrm{kur}}_{s(t),r} &\ge P^{\mathrm{kur,min}} \, u_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:kur_min}\\
     u_{s,r} &\in \{0, 1\} \label{eq:anh:modell:kur_binaer}
 \end{align}
 
-Ohne die Mindestgröße entfallen die Gleichungen~\eqref{eq:anh:modell:kur_min} und \eqref{eq:anh:modell:kur_binaer}, und an die Stelle von Gleichung~\eqref{eq:anh:modell:kur_oben} tritt die Schranke $P^{\mathrm{kur}}_{t,r} \le P^{\max}$. Das Problem ist dann ein lineares Programm, dessen Lösung die Relaxierung des gemischt-ganzzahligen Problems ist.
-
-\subsection{Gesperrte Viertelstunden}
-\label{anh:modell:gesperrt}
-
-An den beiden Tagen der Zeitumstellung fehlt eine Stunde oder fällt eine doppelt an. Das Modell nimmt die betroffenen Viertelstunden aus der Optimierung, indem es dort jede Leistung auf null zwingt, während der Ladezustand unverändert durchläuft.
+\begin{equation}
+    \label{eq:anh:modell:gesperrt}
+    P^{\mathrm{DA,ein}}_t = P^{\mathrm{DA,aus}}_t = P^{\mathrm{IDC,ein}}_t = P^{\mathrm{IDC,aus}}_t = P^{\mathrm{FCR}}_{s(t)} = P^{\mathrm{aFRR}}_{s(t),r} = P^{\mathrm{aFRR,E}}_{t,r} = P^{\mathrm{aus}}_{t,r} = P^{\mathrm{kur}}_{s(t),r} = 0 \qquad \forall\, t \in \mathcal{T}^{\mathrm{sp}}, \; r \in \mathcal{R}
+\end{equation}

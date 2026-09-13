@@ -5884,6 +5884,101 @@ Textbreite verbreitert, Produktschnitt und Wirkung geben ab, die Summe bleibt
 und dreimal 1,11 Punkt, was im Bereich der uebrigen Tabellen der Arbeit liegt.
 
 
+### 13.09.2026, Nachtrag, Schlusssatz des kurativen Blocks entfaellt
+
+Fassung C, gewaehlt vom Verfasser. Der Satz Die Werte des Basisfalls sind
+Setzungen, und die Sensitivitaeten tasten ihre Bandbreite ab entfaellt
+ersatzlos, weil die Spalte Basisfall mit der Markttabelle fortgefallen ist und
+die Sensitivitaeten ohnehin erst in den Ergebnissen zur Sprache kommen. Damit
+steht im Text nicht mehr, dass Zeitscheibe, Energievorhalt und Mindestgroesse
+gesetzt und nicht gemessen sind. Verworfen wurden eine Fassung, die diese drei
+Groessen einzeln als Setzungen benennt, und eine, die das Fehlen eines
+Vorbildprodukts als Grund nennt.
+
+
+### 13.09.2026, 3.2.4 ausformuliert
+
+**Am Stueck geschrieben, Auftrag des Verfassers.** 29 Saetze in vier Bloecken,
+naemlich Grundsatz der Suche, erste Iteration, zweite Iteration mit Aufstieg
+und Abstieg, Rechenaufwand und Schleifen, danach die Abgrenzung gegenueber dem
+modifizierten Weber-Ansatz und die Bestandteile des Gebots. Der Verfasser geht
+den Abschnitt anschliessend absatzweise durch.
+
+**Begriffe, entschieden vom Verfasser.** Das Ergebnis der zweiten Iteration
+heisst Vollreservierungspreis. Der Wert der ersten Iteration heisst
+einheitlicher Reservierungspreis der ersten Iteration. Damit ist der
+Begriffskonflikt vom 12.09.2026 erledigt, denn Schwellenpreis ist nach
+CLAUDE.md Abschnitt 5 gesperrt und Grenzpreis durch g_T und g_P des
+Weber-Ansatzes belegt. Ausgewiesen wird der Vollreservierungspreis, die erste
+Iteration liefert den Startvektor.
+
+**Unbelegt, als solches gekennzeichnet.** Die Monotonie des Fuellgrads ueber
+dem Preis. Sie ist fuer den eigenen Preis einer Groesse bei festen uebrigen
+Preisen gesichert, die erste Iteration hebt aber den einheitlichen Preis aller
+Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde verlieren
+kann. Der Satz sagt deshalb setzt voraus und nicht gilt.
+
+**Zu pruefen.** Die Laufzahlen 84 bis 167 stammen nach MODELL.md aus den
+Schwellen der 20 Sensitivitaetstage und nicht aus dem Jahr 2025. Die Rechenzeit
+steht nur als einige hundert Laeufe, weil die fruehere Angabe von 17 bis 44
+Sekunden je Tag aus der Zeit vor dem Umbau der zweiten Iteration stammt.
+
+**Nicht aufgenommen.** Der Verweis auf sec:model_critique am Satz zum
+Optionswert, Stilregel 9 und Befund S7. Ebenso die Reihenfolge des Abstiegs,
+die nach Anweisung des Verfassers als Einschraenkung nach Kapitel 5 gehoert.
+Der Satz zum Ergebnis haelt hier nur fest, dass es ein koordinatenweises
+Minimum ist.
+
+**Markttabelle gekuerzt, Vorgabe des Verfassers.** Die Spalte Wirkung auf die
+Anlage entfaellt, die Ueberschrift Verguetungsform heisst jetzt
+Verguetungsmodellierung. Vier Spalten mit 0,17, 0,22, 0,35 und 0,26 der
+Textbreite. Die entfallenen Spalteninhalte stehen vollstaendig als Kommentar.
+Der Satz der Fusszeile zur Trennung der beiden Wirkungsarten ist mitentfallen,
+weil die Spalte fehlt, auf die er sich bezog. Der Einstieg von 3.2.3 sagt
+dasselbe im zweiten Satz.
+
+**Floats, Vorgabe des Verfassers, keine leeren Stellen.** Die grosse
+Ablaufabbildung stand auf p und erzwang damit eine eigene Gleitseite. Mit htbp
+zog die kleinere Bisektionsabbildung an ihr vorbei, sodass Abbildung 3.3 ueber
+3.2 stand. Mit tbp steht sie oben auf der Seite und die Reihenfolge stimmt.
+Stand jetzt: Abbildung 3.1 auf Seite 40, 3.2 auf 47, 3.3 und 3.4 auf 48,
+Tabelle 3.1 auf 43. Keine Float-Warnungen im Log.
+
+**Stand.** Pruefsuite ohne Befund. Build fehlerfrei, 81 Seiten statt 83. Die
+offenen Verweise sind von sieben auf sechs gesunken, weil der Verweis auf
+sec:model_critique entfaellt. Overfull hbox von 13 auf 9. Kapitel 3 laeuft von
+Seite 35 bis 50, also weiterhin 16 Seiten bei einem Ziel von 14.
+
+
+### 13.09.2026, Eintrag kumtepeli_energy_2020 vervollstaendigt
+
+**Befund.** Der Eintrag fuehrte einen Autor statt sechs, kein Journal, keinen
+Band, keine Seiten und keine DOI. Er traegt in Kapitel 3 einen Satz, naemlich
+den zur Vereinfachung des Degradationsterms.
+
+**Berichtigt, entschieden vom Verfasser.** Jetzt Kumtepeli, Hesse, Schimpe,
+Tripathi, Wang und Jossen, IEEE Access 8, Seiten 204325 bis 204341, DOI
+10.1109/ACCESS.2020.3035504, dazu der Titelzusatz 3D-MILP for Electro-Thermal
+Performance and Semi-Empirical Aging Models und der bisherige Kurztitel als
+shorttitle. Der Pfad im Feld file bleibt unveraendert.
+
+**Herkunft der Angaben.** Recherche ueber Crossref und das Publikationsportal
+der TU Muenchen, nicht aus der PDF selbst, denn diese ist passwortgeschuetzt.
+Die DOI ist ueber Crossref bestaetigt.
+
+**Offen, Altbestand.** biber meldet fuer meeus_evolution_2020 eine ungueltige
+ISBN, weil dort zwei Nummern in einem Feld stehen. Das ist nicht von dieser
+Aenderung beruehrt und bleibt zu berichtigen.
+
+**Nicht aufgenommen, entschieden vom Verfasser.** seydenschwanz_linear_2019
+zur linearen Approximation zyklischer Alterungskosten, weil die Vereinfachung
+im Text ueber die Rechenzeit begruendet ist und keinen eigenen Beleg braucht.
+Ebenso jacque_analyse_2024, die Dissertation am ISEA zum Batteriegrossspeicher
+M5BAT. Sie traegt die 8 Euro ohnehin nicht, denn ihr Alterungskostenmodell ist
+ausdruecklich kalendarisch und mengenunabhaengig und damit das Gegenmodell zu
+einem durchsatzproportionalen Term.
+
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
@@ -5930,6 +6025,43 @@ Build fehlerfrei auf 82 Seiten.
 Ladezustandsgrenzen, 0,95, 8 Euro je MWh, die Vorhaltedauern und 25 MW. Sie
 wiederholen damit Abschnitt 3.2.2. Zu entscheiden ist, ob der Anhang die Werte
 fuehrt oder nur die Zeichen.
+
+
+### 13.09.2026, Anhang B auf Formeln reduziert
+
+**Vorgabe des Verfassers, zweistufig.** Zuerst nur Formeln und keinen Text,
+einzige Ausnahme eine Erklaerung aller Zeichen und Indizes, die mit dem
+Hauptteil konsistent ist. Danach praezisiert, genau ein Kapitel mit den Formeln
+des Optimierungsproblems und keine Schrift ausser der Einleitung.
+
+**Was entfallen ist.** Saemtliche erlaeuternden Saetze vor und zwischen den
+Gleichungen, die Gliederung in Abschnitte und Unterabschnitte samt ihren neun
+Marken, und die Spalte Wert der Parametertabelle. Der Anhang traegt jetzt einen
+Einleitungsabsatz, drei Zeichentabellen und danach nur Gleichungen.
+
+**Zahlen sind raus.** Die Parametertabelle fuehrt statt der Werte die Einheit
+je Groesse, nach CLAUDE.md Abschnitt 10. Damit wiederholt der Anhang die Werte
+aus 3.2.2 nicht mehr, was der offene Punkt vom selben Tag verlangt hatte.
+
+**Notation auf den Hauptteil umgestellt.** Die Blockprodukte tragen jetzt wie
+in 3.2.3 den Index s(t), also P^FCR_{s(t)}, P^aFRR_{s(t),r} und
+P^kur_{s(t),r}. Vorher stand dort t mit einer eigenen Blockbedingung
+eq:anh:modell:block. Die Schreibweise sagt die Blockbindung selbst, die
+Gleichung ist deshalb entfallen.
+
+**Neu aufgenommen.** Die gesperrten Viertelstunden der Zeitumstellung standen
+bisher nur als Satz und tragen jetzt eine Gleichung, eq:anh:modell:gesperrt,
+mit der Menge T^sp. Die Bandbedingung fuehrt beide Vorhaltungen in einem Bruch
+statt in zweien. Die aFRR-Bandbedingung ist in zwei Marken geteilt,
+eq:anh:modell:afrr_band_res und eq:anh:modell:afrr_band_lief.
+
+**Zur Einleitung.** Sie nennt die drei Tabellen einzeln, weil Pruefung 10 sonst
+meldet, dass die Parametertabelle nirgends referenziert wird, und zaehlt die
+Reihenfolge der Nebenbedingungen auf, die ohne Ueberschriften sonst nicht
+erkennbar waere.
+
+**Stand.** Pruefsuite ohne Befund. Build fehlerfrei, 82 Seiten, Anhang B ab
+Seite 70. Im Inhaltsverzeichnis traegt er anders als Anhang A keine Abschnitte.
 
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
