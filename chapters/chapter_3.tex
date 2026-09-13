@@ -2712,11 +2712,58 @@ Dass Speicher Niedrigpreisphasen anheben, Hochpreisphasen absenken und damit die
 % UNBELEGT. Die 8 Euro je Megawattstunde stammen aus main.py Zeile 401 und
 % tragen dort keine Quelle. Der Code nennt die Spanne 3 bis 20 Euro je MWh.
 % Geprueft wird der Satz ueber sensi2_deg von 0 bis 18 Euro je MWh.
-Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, sodass ihr Energieinhalt je Leistung 2,5 Stunden beträgt \cite{juelch_comparison_2016, garttan_battery_2025}.
+% ZITATE ENTFALLEN am 13.09.2026, Anweisung des Verfassers. Er hat Leistung und
+% Kapazitaet an bestehenden Batterieanschluessen im Hoch- und
+% Hoechstspannungsnetz orientiert, das braucht nach seiner Vorgabe keinen
+% Nachweis. Die Zahlen sind damit eine Setzung wie die uebrigen
+% Produktparameter.
+% BELEGLAGE, geprueft am 13.09.2026 an der PDF. juelch_comparison_2016 traegt
+% die 100 MW woertlich auf Seite 1594, aber nicht die 250 MWh, denn dort
+% stehen durchgehend 400 MWh und vier Stunden. garttan_battery_2025 traegt
+% weder das eine noch das andere, es ist ein Marktreview ohne Auslegung in MW
+% und MWh. Beide Schluessel sind deshalb hier gestrichen.
+% garttan_battery_2025 bleibt in 3.2.1 bei der Mengenbegrenzung der
+% Regelleistungsmaerkte in Gebrauch. juelch_comparison_2016 wird nach dieser
+% Streichung nirgends mehr zitiert, der bib-Eintrag bleibt bestehen.
+% ANGEMERKT, vom Verfasser so gewaehlt, Fassung B. Der Nachsatz behauptet
+% etwas ueber den Anlagenbestand im Netz und nicht ueber die Modellwahl. Ohne
+% Beleg ist das angreifbar, anders als eine offene Setzung. Der Verfasser hat
+% ausdruecklich entschieden, dass es keinen Nachweis braucht. Als Quelle kaeme
+% das Anlagenregister der Bundesnetzagentur in Betracht oder
+% bundesnetzagentur_netzentwicklungsplan_2026, das in 3.2.1 bereits zitiert
+% wird.
+% ALTE FASSUNG, nicht wieder aufnehmen:
+%Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, sodass ihr Energieinhalt je Leistung 2,5 Stunden beträgt \cite{juelch_comparison_2016, garttan_battery_2025}.
+Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, sodass ihr Energieinhalt je Leistung 2,5 Stunden beträgt und die Auslegung der Größenordnung bestehender Anschlüsse im Hoch- und Höchstspannungsnetz entspricht.
 Eine kurative Reservierung über die volle Anschlussleistung erschöpft den Speicher damit erst nach dieser Zeit.
 Laden und Entladen laufen mit einem Wirkungsgrad von 0,95 je Richtung, woraus ein Umlaufwirkungsgrad von 0,9025 folgt.
 Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\,\si{MWh} bewegen kann und jede Reservierung ihr Ladezustandsband aus diesem Vorrat nimmt.
-Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen \cite{kumtepeli_energy_2020}.
+% BELEG GEPRUEFT am 13.09.2026 an der PDF unter literature/PDFs. Ergebnis in
+% Kurzform, ausfuehrlich im Protokoll.
+% kumtepeli_energy_2020 traegt den linearen Kostensatz je Megawattstunde
+% Durchsatz NICHT. Sein Alterungsterm haengt von Temperatur, Ladezustand und
+% Zellstrom ab, ist ueber t_EOL zeitbezogen und wird erst durch stueckweise
+% affine Approximation mit Binaervariablen MILP-faehig. Die Arbeit kritisiert
+% konstante Wirkungsgrade ausdruecklich. Der Beleg steht deshalb jetzt am
+% zweiten Satz, wo er die Vereinfachung traegt, und nicht mehr am Kostensatz.
+% NICHT DOPPELT ZITIERT. Dieselbe Quelle traegt in Tabelle A1 auf PDF-Seite 13
+% woertlich SOC_min, SOC_max 0.05, 0.95 und damit den Satz zum nutzbaren
+% Ladezustand zwischen 5 und 95 Prozent. Stilregel 8 laesst eine Quelle je
+% Absatz nur einmal zu, und 3.2.2 ist seit dem 13.09.2026 ein Absatz. Der Beleg
+% steht deshalb hier und nicht dort.
+% VERWORFEN. Aus Kumtepeli einen Kostensatz zu mitteln. Seine Anlage misst
+% 192 kWh und 345 kW, also rund eine halbe Stunde Energieinhalt je Leistung,
+% gegen 250 MWh und 100 MW mit 2,5 Stunden hier. Ein Mittelwert aus einem
+% zeitbezogenen dreidimensionalen Modell verliert zudem gerade den
+% Durchsatzbezug, um den es geht. Die Zahl saehe belegt aus und waere es nicht.
+% OFFEN. Fuer den Kostensatz von 8 Euro je Megawattstunde fehlt weiterhin ein
+% Beleg. Kandidaten nennt Kumtepeli selbst, naemlich Seydenschwanz et al. zur
+% linearen Approximation zyklischer Alterungskosten fuer MILP-Dispatch und die
+% dort als Referenz 8 gefuehrte Arbeit zu Zyklenalterungskosten im Strommarkt.
+% ALTE FASSUNG, nicht wieder aufnehmen:
+%Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen \cite{kumtepeli_energy_2020}.
+Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen.
+Dass der Verschleiß tatsächlich von Temperatur, Ladezustand und Strom abhängt und sich erst mit zusätzlichen Binärvariablen abbilden ließe, nimmt das Modell in Kauf, weil die Preissuche das Tagesmodell einige hundert Mal je Tag löst \cite{kumtepeli_energy_2020}.
 Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
 Entscheidungsvariablen sind die Lade- und die Entladeleistung am \ac{DA} und am \ac{IDC}, die vorgehaltene Leistung der \ac{FCR} und der \ac{aFRR} je Richtung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ, dazu die Binärvariable der Mindestgröße.
 Die Ladezustandsbilanz führt den Speicherinhalt über den Tag fort, wobei allein der Handel und die gelieferte \ac{aFRR}-Arbeit ihn bewegen und die Wirkungsgrade beider Richtungen eingehen.
@@ -2910,6 +2957,44 @@ Das Modell setzt alle Märkte eines Liefertages gleichzeitig, und jeder trägt d
 %\end{itemize}
 Auswertungszeitraum ist das Jahr 2025, und weil der \ac{DA} erst seit dem 01.10.2025 in Viertelstunden gehandelt wird, gilt davor sein Stundenpreis für alle vier Viertelstunden \cite{ffe_saegezahn_2026}.
 Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, indem es die fehlende Stunde im Frühjahr durch Platzhalter ersetzt, im Herbst die zweite Ausführung der doppelten Stunde verwirft und die betroffene Stunde in beiden Fällen sperrt.
+Tabelle~\ref{tab:maerkte} fasst die Produktmerkmale der sechs geführten Märkte zusammen.
+% TABELLE NEU am 13.09.2026, entschieden vom Verfasser. Sie ersetzt die
+% Produktparametertabelle des kurativen Blocks und vergleicht alle sechs
+% Maerkte. Sie steht hier, weil der Einstieg dieses Unterabschnitts bereits
+% die beiden Wirkungsarten sowie Produktzuschnitt, Energievorhalt und Preis
+% nennt, die Tabelle fuehrt genau das je Markt aus.
+% ZUR SPALTE VERGUETUNGSFORM. Sie trennt nach der Vorgabe des Verfassers
+% Leistungsreservierungspreis und Energiepreis. Der Preis der aFRR-Arbeit
+% heisst nach seiner Vorgabe volumengewichteter Grenzpreis des Abrufs.
+% ANGEMERKT. Grenzpreis ist nach CLAUDE.md Abschnitt 5 fuer die gesuchte
+% Groesse vorgesehen und durch g_T und g_P des Weber-Ansatzes belegt. Der
+% Verfasser hat den Begriff hier gleichwohl gewaehlt, weil er der Fachbegriff
+% der Plattform ist.
+\begin{table}[htbp]
+    \centering
+    \caption{Produktmerkmale der sechs geführten Märkte.}
+    \label{tab:maerkte}
+    \small
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.14\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.15\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.29\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.19\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.23\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsform} & \textbf{Energievorhalt} & \textbf{Wirkung auf die Anlage} \\
+        \hline
+        \acs{DA} & Viertelstunde, Auktion am Vortag & Energiepreis, Einheitspreis & keiner & Bewegt den Ladezustand, in sich bilanziell ausgeglichen \\
+        \hline
+        \acs{IDC} & Viertelstunde, fortlaufend & Energiepreis, pay-as-bid je Geschäft & keiner & Bewegt den Ladezustand, trägt den Ausgleich der \acs{aFRR}-Arbeit \\
+        \hline
+        \acs{FCR} & Vier Stunden, symmetrisch & Leistungs\-reservierungs\-preis, Einheitspreis & 15 Minuten je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe & Bindet beide Seiten, bewegt den Ladezustand nicht \\
+        \hline
+        \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid & Eine Stunde je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe & Bindet eine Seite, bewegt den Ladezustand nicht \\
+        \hline
+        \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Energiepreis, volumengewichteter Grenzpreis des Abrufs & keiner, sie liefert die Energie selbst & Bewegt den Ladezustand, anteilig am deutschen Abruf \\
+        \hline
+        Kurative Reservierung & Eine Stunde, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid, Preis gesucht & Eine Stunde je reserviertem \si{MW}, in jeder Viertelstunde & Bindet eine Seite, bewegt den Ladezustand nicht \\
+        \hline
+        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die vorgehaltene Leistung im Abruffall aus dem Speicher zu decken ist. Die drei Märkte mit Leistungsreservierungspreis binden die Anlage, ohne ihren Ladezustand zu verändern, und aus dieser Trennung entstehen die Opportunitätskosten der kurativen Reservierung.} \\
+    \end{tabular}
+\end{table}
 
 \subsubsection*{Day-Ahead}
 % AUSFORMULIERT am 12.09.2026, satzweise, jeder Satz vom Verfasser gewaehlt.
@@ -3265,34 +3350,49 @@ Weil die Zielfunktion den Erlös aus vorgegebenem Preis mal reservierter Leistun
 \end{equation}
 Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird.
 Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetiger Reservierung und schaltet die Mindestgröße nur dort zu, wo ihre Wirkung geprüft wird.
-Tabelle~\ref{tab:kur_produkt} fasst die Parameter des kurativen Produkts mit ihren Basisfällen zusammen.
-\begin{table}[htbp]
-    \centering
-    \caption{Parameter des kurativen Produkts mit ihren Basisfällen.}
-    \label{tab:kur_produkt}
-    \small
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.46\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Größe} & \textbf{Basisfall} & \textbf{Prüfung} \\
-        \hline
-        Richtung & positiv und negativ, getrennt gerechnet & keine, beide Richtungen werden durchgehend geführt \\
-        \hline
-        Reaktionszeitklasse & 2 Minuten & keine, im Viertelstundenmodell ohne Wirkung auf den Preis \\
-        \hline
-        Zeitscheibe & eine Stunde & offen \\
-        \hline
-        Energievorhalt & 1\,\si{MWh} je reserviertem \si{MW} & ja, gegen 0,5 und 0,25\,\si{MWh} je \si{MW} \\
-        \hline
-        Mindestgröße & 25\,\si{MW} & ja, gegen eine stetige Reservierung \\
-        \hline
-        Reservierte Leistung & vom Modell gewählt & ja, gegen erzwungene Anteile von 25, 50, 75 und 100 Prozent der Anschlussleistung \\
-        \hline
-        Vergütung & Preis in Euro je \si{MW} und Stunde, pay-as-bid & gesuchte Größe \\
-        \hline
-        \multicolumn{3}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die reservierte Leistung im Abruffall aus dem Speicher zu decken ist. Die reservierte Leistung und die belegten Stunden sind ein Ergebnis des Modells und keine Vorgabe.} \\
-    \end{tabular}
-\end{table}
-Die Werte des Basisfalls sind Setzungen, und die Sensitivitäten tasten ihre Bandbreite ab.
+% TABELLE ERSETZT am 13.09.2026, entschieden vom Verfasser. An ihre Stelle
+% tritt tab:maerkte am Anfang von 3.2.3, die alle sechs Maerkte vergleicht.
+% Energievorhalt und Verguetungsform sind dort eigene Spalten, die
+% Verguetungsform trennt Leistungsreservierungspreis und Energiepreis. Die
+% Reaktionszeitklasse, die Mindestgroesse und die reservierte Leistung
+% entfallen aus der Tabelle, Mindestgroesse und Zeitscheibe stehen im
+% Fliesstext dieses Blocks.
+% VERWEISSATZ ANGEPASST. Er kuendigte die Parameter des kurativen Produkts
+% an und steht jetzt als Verweis auf die Markttabelle am Anfang des
+% Unterabschnitts. Alte Fassung:
+%Tabelle~\ref{tab:kur_produkt} fasst die Parameter des kurativen Produkts mit ihren Basisfällen zusammen.
+% SCHLUSSSATZ ENTFALLEN. Er bezog sich auf die Spalte Basisfall, die es in
+% der Markttabelle nicht mehr gibt. Die Aussage, dass die kurativen Werte
+% Setzungen sind, ist neu zu fassen und dem Verfasser vorzulegen. Alte
+% Fassung:
+%Die Werte des Basisfalls sind Setzungen, und die Sensitivitäten tasten ihre Bandbreite ab.
+% ALTE TABELLE, vollstaendig erhalten:
+%\begin{table}[htbp]
+%    \centering
+%    \caption{Parameter des kurativen Produkts mit ihren Basisfällen.}
+%    \label{tab:kur_produkt}
+%    \small
+%    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.30\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.46\textwidth-\tabcolsep\relax}@{}}
+%        \hline
+%        \textbf{Größe} & \textbf{Basisfall} & \textbf{Prüfung} \\
+%        \hline
+%        Richtung & positiv und negativ, getrennt gerechnet & keine, beide Richtungen werden durchgehend geführt \\
+%        \hline
+%        Reaktionszeitklasse & 2 Minuten & keine, im Viertelstundenmodell ohne Wirkung auf den Preis \\
+%        \hline
+%        Zeitscheibe & eine Stunde & offen \\
+%        \hline
+%        Energievorhalt & 1\,\si{MWh} je reserviertem \si{MW} & ja, gegen 0,5 und 0,25\,\si{MWh} je \si{MW} \\
+%        \hline
+%        Mindestgröße & 25\,\si{MW} & ja, gegen eine stetige Reservierung \\
+%        \hline
+%        Reservierte Leistung & vom Modell gewählt & ja, gegen erzwungene Anteile von 25, 50, 75 und 100 Prozent der Anschlussleistung \\
+%        \hline
+%        Vergütung & Preis in Euro je \si{MW} und Stunde, pay-as-bid & gesuchte Größe \\
+%        \hline
+%        \multicolumn{3}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die reservierte Leistung im Abruffall aus dem Speicher zu decken ist. Die reservierte Leistung und die belegten Stunden sind ein Ergebnis des Modells und keine Vorgabe.} \\
+%    \end{tabular}
+%\end{table}
 
 % ARCHIV des aufgeloesten Unterabschnitts Datengrundlage und Anlage,
 % hierher mitgezogen am 12.09.2026:

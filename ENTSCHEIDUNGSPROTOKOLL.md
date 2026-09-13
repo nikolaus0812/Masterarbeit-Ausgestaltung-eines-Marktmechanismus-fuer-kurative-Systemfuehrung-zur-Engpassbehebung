@@ -5757,6 +5757,133 @@ attachment_modell.tex. Build fehlerfrei, 82 Seiten. Kapitel 3 laeuft von Seite
 35 bis 50, also 16 Seiten bei einem Ziel von 14.
 
 
+### 13.09.2026, Belege der Anlagenparameter geprueft
+
+**Die PDF lagen im Repository.** Ich hatte am selben Tag gemeldet, die Belege
+seien nicht pruefbar, weil das Feld file in literature.bib auf einen fremden
+Zotero-Pfad zeigt. Das war falsch. Die Dateien liegen unter literature/PDFs im
+Repository selbst. Geprueft wurden juelch_comparison_2016,
+garttan_battery_2025 und kumtepeli_energy_2020.
+
+**Befunde je Aussage.**
+
+- 100 MW Leistung. BELEGT durch Juelch 2016, Seite 1594, woertlich a short-term
+  storage system (100 MW power and 400 MWh capacity), bestaetigt Seite 1599.
+- 250 MWh und damit 2,5 Stunden Energieinhalt je Leistung. NICHT BELEGT. Juelch
+  legt durchgehend 400 MWh und vier Stunden zugrunde, Seite 1597. Die 250 MWh
+  sind eine Setzung des Codes, bat_kapazitaet in main.py.
+- Wirkungsgrad 0,95 je Richtung. NICHT BELEGT. Juelch nennt auf Seite 1598
+  System efficiency (round trip) 95 Prozent, also 0,95 im UMLAUF. Unser Satz
+  macht daraus 0,9025 im Umlauf und widerspricht ihm damit. Eine Aufteilung auf
+  Lade- und Entladeseite nimmt Juelch nicht vor. Kumtepeli lehnt konstante
+  Wirkungsgrade methodisch ab, Garttan nennt keinen.
+- Ladezustand 5 bis 95 Prozent. BELEGT durch Kumtepeli 2020, Tabelle A1 auf
+  PDF-Seite 13, woertlich SOC_min, SOC_max 0.05, 0.95. Gegenlaeufig setzen
+  Juelch 80 Prozent Entladetiefe und Garttan Zyklenlebensdauer bei 80 Prozent.
+- Degradation als linearer Kostensatz je Megawattstunde Durchsatz. NICHT
+  BELEGT. Kumtepeli fuehrt das Gegenteil, naemlich einen zeitbezogenen
+  Alterungsterm aus einem dreidimensionalen Modell in Temperatur, Ladezustand
+  und Zellstrom, MILP-faehig erst durch stueckweise affine Approximation mit
+  Binaervariablen.
+- garttan_battery_2025 traegt KEINE dieser Aussagen. Reines Marktreview,
+  technisch nur auf Zellchemie-Ebene, ohne Umlaufwirkungsgrad, ohne Ladeband,
+  ohne Auslegung in MW und MWh.
+
+**Folge im Text, entschieden vom Verfasser.** Der Degradationssatz steht in
+Fassung A als zwei Saetze. Der erste nennt Hoehe und Wirkung ohne Beleg, der
+zweite nennt die Vereinfachung und ihren Grund, naemlich dass die Preissuche
+das Tagesmodell einige hundert Mal je Tag loest, und traegt dort
+kumtepeli_energy_2020. Damit belegt die Quelle, was sie wirklich sagt.
+
+**Nicht doppelt zitiert.** Dieselbe Quelle traegt auch das Band von 5 bis 95
+Prozent. Stilregel 8 laesst eine Quelle je Absatz nur einmal zu, und 3.2.2 ist
+seit dem 13.09.2026 ein Absatz. Der Beleg steht deshalb am Degradationssatz,
+der Fundort des Bandes als Kommentar daneben.
+
+**Verworfen, Vorschlag des Verfassers.** Aus Kumtepeli einen Kostensatz zu
+mitteln. Seine Anlage misst 192 kWh und 345 kW, also rund eine halbe Stunde
+Energieinhalt je Leistung, gegen 250 MWh und 100 MW mit 2,5 Stunden hier. Ein
+Mittelwert aus einem zeitbezogenen Modell verliert zudem gerade den
+Durchsatzbezug. Eine so gewonnene Zahl saehe belegt aus und waere es nicht.
+Eine Probe ergab 5,8 bis 7,6 Euro je Megawattstunde Gesamtdurchsatz und haette
+die 8 Euro eingeklammert, sie stuetzt sich aber auf Tabelle 2, deren Zellen im
+PDF als Bild vorliegen und deshalb nicht auslesbar sind.
+
+**Offen.** Fuer die 8 Euro fehlt ein Beleg. Kandidaten nennt Kumtepeli selbst,
+naemlich Seydenschwanz et al. zur linearen Approximation zyklischer
+Alterungskosten fuer MILP-Dispatch und die dort als Referenz 8 gefuehrte Arbeit
+zu Zyklenalterungskosten im Strommarkt. Ebenso offen ist, ob
+garttan_battery_2025 am Anlagensatz bleibt, obwohl es dort nichts traegt.
+
+**Fund fuer spaeter.** Garttan beschreibt auf Seite 12 f., dass Speicher im
+australischen Markt Verschleiss, Wirkungsgradverluste und ausdruecklich
+Opportunitaetskosten einpreisen duerfen, und auf Seite 14 f., dass diese
+Zusatzkosten in den meisten grossen Strommaerkten nicht verguetet werden. Das
+ist eine Vorlage fuer das Indifferenzprinzip und gehoert nach Kapitel 2.
+
+
+### 13.09.2026, Nachtrag, Anlagensatz ohne Beleg
+
+**Fassung B, gewaehlt vom Verfasser.** Der Satz nennt jetzt als Nachsatz, dass
+die Auslegung der Groessenordnung bestehender Anschluesse im Hoch- und
+Hoechstspannungsnetz entspricht. Akronyme gibt es dafuer nicht, das
+Abkuerzungsverzeichnis fuehrt allein HGUE, der Satz bleibt also ausgeschrieben.
+
+**Beide Zitate entfallen, Anweisung des Verfassers.** Er hat Leistung und
+Kapazitaet an bestehenden Batterieanschluessen orientiert und entschieden, dass
+das keinen Nachweis braucht. Die Zahlen sind damit eine Setzung wie die
+uebrigen Produktparameter.
+
+**Angemerkt, einmal.** Der Nachsatz behauptet etwas ueber den Anlagenbestand im
+Netz und nicht ueber die Modellwahl. Ohne Beleg ist das angreifbar, anders als
+eine offene Setzung. In Betracht kaemen das Anlagenregister der
+Bundesnetzagentur oder bundesnetzagentur_netzentwicklungsplan_2026, das in
+3.2.1 bereits zitiert wird. Der Verfasser hat anders entschieden, der Satz
+steht so.
+
+**Folge fuer die Literaturdatei.** garttan_battery_2025 bleibt in 3.2.1 bei der
+Mengenbegrenzung der Regelleistungsmaerkte in Gebrauch.
+juelch_comparison_2016 wird nach dieser Streichung nirgends mehr zitiert und
+erscheint damit nicht mehr im Literaturverzeichnis. Der bib-Eintrag bleibt
+bestehen.
+
+
+### 13.09.2026, Nachtrag, Markttabelle ersetzt die Produktparametertabelle
+
+**Entschieden vom Verfasser.** Tabelle 3.1 traegt jetzt die Produktmerkmale
+aller sechs gefuehrten Maerkte und nicht mehr allein die Parameter des
+kurativen Produkts. Marke tab:maerkte, Seite 43. Sie steht am Anfang von 3.2.3
+vor den Marktbloecken, weil der Einstieg dort bereits die beiden Wirkungsarten
+sowie Produktzuschnitt, Energievorhalt und Preis nennt.
+
+**Spalten.** Markt, Produktschnitt, Verguetungsform, Energievorhalt und Wirkung
+auf die Anlage. Die Verguetungsform trennt nach Vorgabe des Verfassers
+Leistungsreservierungspreis und Energiepreis. Der Preis der aFRR-Arbeit heisst
+nach seiner Vorgabe volumengewichteter Grenzpreis des Abrufs.
+
+**Angemerkt, einmal.** Grenzpreis ist nach CLAUDE.md Abschnitt 5 fuer die
+gesuchte Groesse vorgesehen und durch g_T und g_P des Weber-Ansatzes belegt,
+CLAUDE.md Abschnitt 10. Der Verfasser hat den Begriff hier gleichwohl gewaehlt,
+weil er der Fachbegriff der Plattform ist.
+
+**Entfallen.** Reaktionszeitklasse, Mindestgroesse und reservierte Leistung
+stehen nicht mehr in der Tabelle. Mindestgroesse und Zeitscheibe traegt der
+Fliesstext des kurativen Blocks. Die alte Tabelle steht vollstaendig als
+Kommentar.
+
+**Offen, dem Verfasser vorzulegen.** Der Schlusssatz des kurativen Blocks lautete
+Die Werte des Basisfalls sind Setzungen, und die Sensitivitaeten tasten ihre
+Bandbreite ab. Er bezog sich auf die Spalte Basisfall, die es in der
+Markttabelle nicht mehr gibt, und ist deshalb auskommentiert. Die Aussage, dass
+die kurativen Werte Setzungen sind, fehlt damit vorerst und ist neu zu fassen.
+
+**Satzspiegel.** Das Wort Leistungsreservierungspreis lief in drei Zellen um
+26,9 Punkt ueber die Spalte. Die Verguetungsspalte ist von 0,24 auf 0,29 der
+Textbreite verbreitert, Produktschnitt und Wirkung geben ab, die Summe bleibt
+1,00. Dazu drei Trennstellen im Wort. Es bleiben 9,98 Punkt in der Kopfzeile
+und dreimal 1,11 Punkt, was im Bereich der uebrigen Tabellen der Arbeit liegt.
+
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

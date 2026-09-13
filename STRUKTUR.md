@@ -96,6 +96,14 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 
 ---
 
+## Tabellen in Kapitel 3, Stand 13.09.2026
+
+Tabelle 3.1 `tab:maerkte` vergleicht die sechs geführten Märkte nach
+Produktschnitt, Vergütungsform, Energievorhalt und Wirkung auf die Anlage. Sie
+hat die frühere Produktparametertabelle des kurativen Blocks ersetzt, die
+vollständig als Kommentar erhalten ist. Offen ist der Schlusssatz jenes Blocks,
+der sich auf die entfallene Spalte Basisfall bezog.
+
 ## Umfang von Kapitel 3, Stand 13.09.2026
 
 Das Kapitel läuft im Build von Seite 35 bis Seite 50, also 16 Seiten bei einem
