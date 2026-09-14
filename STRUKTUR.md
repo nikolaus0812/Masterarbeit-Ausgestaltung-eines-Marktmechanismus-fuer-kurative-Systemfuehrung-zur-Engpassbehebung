@@ -96,6 +96,12 @@ Die Kapitel 4 bis 6 sind in `main.tex` auskommentiert.
 
 ---
 
+## Anhang C, Stand 14.09.2026
+
+`extras/attachment_validierung.tex` trägt die zweite Stufe der Validierung, also
+den Vergleich je Markt bei Einzeloptimierung. Ein einleitender Satz und
+Abbildung C.1. Eigener Anhang, weil Anhang B nur Formeln führt.
+
 ## Anhang B, Stand 13.09.2026
 
 `extras/attachment_modell.tex` ist genau ein Kapitel ohne Abschnitte. Es trägt

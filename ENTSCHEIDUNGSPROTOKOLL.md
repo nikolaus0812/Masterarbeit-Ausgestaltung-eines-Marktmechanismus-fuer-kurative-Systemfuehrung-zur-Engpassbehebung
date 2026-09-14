@@ -635,6 +635,48 @@ Seite, die im Umbruch verpufft, weil die Gleitobjekte nachruecken.
 Altbestand mit ausgeschriebenen Batteriespeichern in den Kapiteln 1, 2, 4 und 5.
 Build fehlerfrei, sechs offene Verweise auf ungeschriebene Kapitel.
 
+
+### 14.09.2026, Anhang C, IDC-Satz und Hornek berichtigt
+
+**Anhang C angelegt**, entschieden vom Verfasser. `extras/attachment_validierung.tex`
+mit der Ueberschrift Validierung je Markt, einem einleitenden Satz und der
+Abbildung validierung_einzelmarkt aus analysen/12_schrift/kapitel_anhang des
+Modellrepositoriums. Er steht als Kapitel C ab Seite 76, die Abbildung ist C.1.
+Ein eigener Anhang war noetig, weil Anhang A den Weber-Rechenweg traegt und
+Anhang B nach Vorgabe des Verfassers nur Formeln enthaelt, sodass eine Abbildung
+dort die Vorgabe gebrochen haette. main.tex und die Kontextliste von
+tools/pruefen.py sind nachgezogen.
+
+**IDC-Block ergaenzt**, Fassung A, gewaehlt vom Verfasser. Der Satz begruendet
+den Aufschlag ueber die Summe der Handelsmoeglichkeiten, die den IDC als
+Handelsoption verbessern.
+
+**Angemerkt.** Dass ein Betreiber dieselbe Viertelstunde mehrfach handeln kann,
+steht zwei Saetze davor bereits. Der Verfasser hat diese Fassung gleichwohl
+gewaehlt. Die entdoppelte Variante steht als Kommentar an der Stelle.
+
+**Befund zurueckgenommen.** Ich hatte am 14.09.2026 gemeldet, der
+Spreadaufschlag stehe nach der Kuerzung der Markttabelle im Fliesstext nirgends
+mehr. Das war zu scharf. Der IDC-Block sagt seit dem 12.09.2026, dass das Modell
+den Vorteil ueber einen Aufschlag abbildet, der Verkaeufe ueber und Kaeufe unter
+dem Index bewertet. Allein das Wort Spreadaufschlag fehlte dort, und es steht
+weiterhin nur in Anhang B als Parameter a.
+
+**hornek_value_2025 vervollstaendigt**, entschieden vom Verfasser. Der Eintrag
+fuehrte einen Autor statt vier, keinen Untertitel, kein Venue und keine
+Kennung. Jetzt Hornek, Lee, Potenciano Menci und Pavic, Untertitel Forecast vs.
+Perfect Foresight Strategies, arXiv 2501.07121 in Version 2 vom 09.06.2025, SnT
+der Universitaet Luxemburg. Die Angaben stammen aus der PDF im Repository. Der
+Eintragstyp ist von article auf online geaendert, weil es ein Preprint ist.
+
+**Hinfaellig.** Das dritte Vorkommen von zu fassen in 3.1.2 sollte mitgezogen
+werden. Es stand in dem am selben Tag gestrichenen Marktdesignblock und ist
+damit schon fort. Im ganzen Kapitel gibt es kein aktives Vorkommen mehr.
+
+**Stand.** Pruefsuite ohne neue Befunde, neun geprueften Dateien, die vier
+Befunde sind der Altbestand. Build fehlerfrei, 84 Seiten. Anhang A ab 61,
+Anhang B ab 71, Anhang C ab 76.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
