@@ -6028,6 +6028,141 @@ Untertitel steht im PDF nirgends, die Kopfzeile lautet nur Energy Storage
 Outlook February 2026. Beides ist nicht berichtigt.
 
 
+### 14.09.2026, Markttabelle auf die Modellierungssicht umgestellt
+
+**Vorgabe des Verfassers.** Die Tabelle soll wiedergeben, wie Produktschnitt,
+Verguetungsmodellierung und Besonderheiten IM MODELL sind, und nicht die
+Produktmerkmale der Maerkte im Allgemeinen.
+
+**Spalte geaendert.** Aus Energievorhalt wird Besonderheiten, damit die
+Begrenzung der Energielieferung bei der aFRR-Arbeit dort Platz findet. Die
+Vorhaltedauern stehen weiterhin in dieser Spalte, wo es sie gibt, naemlich 15
+Minuten bei der FCR und je eine Stunde bei aFRR-Leistung und kurativer
+Reservierung.
+
+**Einheitspreis entfaellt in der Tabelle.** Der Verfasser haelt das Wort fuer
+unverstaendlich. Die Preisbildung ist jetzt je Markt ausgeschrieben, naemlich
+Auktionspreis fuer den DA, volumengewichteter Index der letzten Handelsstunde
+fuer den IDC, hoechster Zuschlagspreis an alle bezuschlagten Gebote fuer die
+FCR, volumengewichteter Durchschnitt der Zuschlagspreise fuer die
+aFRR-Leistung, volumengewichteter Abrufpreis gegen den IDC verrechnet fuer die
+aFRR-Arbeit und Leistungspreis als Gebotspreis fuer die kurative Reservierung.
+
+**Im Fliesstext bleibt der Einheitspreis stehen**, am FCR-Block, ausdruecklich
+so entschieden vom Verfasser am 14.09.2026. Angemerkt war, dass die Arbeit
+damit zwei Ausdruecke fuer dieselbe Sache fuehrt, einmal den Fachbegriff im
+Text und einmal die ausgeschriebene Form in der Tabelle.
+
+**Fusszeile entfallen**, Vorgabe des Verfassers. Sie erklaerte den
+Energievorhalt und die Trennung der beiden Wirkungsarten. Den zweiten Teil sagt
+der Einstieg von 3.2.3 im zweiten Satz.
+
+**Doppelung, angemerkt.** Die Begrenzung der Lieferung auf den Anteil am
+deutschen Abruf steht jetzt in der Tabelle und im Fliesstext des Blocks zur
+aFRR-Arbeit, dort in zwei Saetzen.
+
+**Spaltenbreiten.** 0,17, 0,22, 0,32 und 0,29 der Textbreite. Die alte Tabelle
+steht vollstaendig als Kommentar.
+
+**Stand.** Pruefsuite ohne Befund, Build fehlerfrei, 81 Seiten, Tabelle 3.1 auf
+Seite 43. Neun Overfull hbox unveraendert, keiner davon aus dieser Tabelle.
+
+
+### 14.09.2026, Nachtrag, drei Kuerzungen in der Markttabelle
+
+**Vorgaben des Verfassers, nacheinander.** Erstens entfaellt in der Zeile zum
+IDC der Zusatz zum Spreadaufschlag, dort steht jetzt allein der
+volumengewichtete Index der letzten Handelsstunde. Zweitens nennen FCR und
+aFRR-Leistung in der Spalte Besonderheiten nur noch den Energievorhalt von 15
+Minuten beziehungsweise einer Stunde, ohne den Zusatz zu Beginn der
+Zeitscheibe. Drittens lautet die Besonderheit der aFRR-Arbeit jetzt schlicht,
+dass die Lieferung im Volumen begrenzt wird.
+
+**Folge, gemeldet.** Der Ausdruck Spreadaufschlag kam im ganzen Kapitel 3 nur
+in dieser einen Tabellenzelle vor. Seit sie gekuerzt ist, steht er allein in
+Anhang B als Parameter a und in eq:anh:modell:idc_preise. Der Fliesstext
+erklaert den Aufschlag damit nirgends mehr, obwohl das Modell mit ihm rechnet.
+Zu entscheiden ist, ob der IDC-Block einen Satz dazu erhaelt.
+
+**Folge, angemerkt.** Ohne den Zusatz zu Beginn der Zeitscheibe sagt die
+Tabelle nicht mehr, dass die Regelleistung ihr Band nur am Blockstart bindet,
+waehrend die kurative Reservierung es in jeder Viertelstunde bindet. Der
+Unterschied bleibt allein daran erkennbar, dass bei der kurativen Zeile in
+jeder Viertelstunde steht. Im Fliesstext und in eq:anh:modell:band_unten steht
+er vollstaendig.
+
+
+### 14.09.2026, Nachtrag, Reihenfolge der Abbildungen in 3.2.4
+
+**Vorgabe des Verfassers.** Zuerst das Bisektionsverfahren, dann das
+Flussdiagramm, zuletzt die Schleifen. Die beiden ersten Bloecke sind samt ihrer
+Kommentare im Quelltext vertauscht, der Text dazwischen bleibt an seiner
+Stelle. Stand jetzt Abbildung 3.2 Bisektion auf Seite 46, 3.3 Flussdiagramm auf
+Seite 47, 3.4 Schleifen auf Seite 48. Das Dokument ist dabei von 81 auf 80
+Seiten gesunken.
+
+**Angemerkt, nicht behoben.** Der Text nennt das Flussdiagramm zuerst, naemlich
+im Satz zur ersten Iteration, und die Bisektion erst vier Saetze spaeter. Der
+fruehere Verweis zeigt damit auf die spaetere Abbildung. Sachlich ist das
+zulaessig, sauber waere es nicht. Zwei Wege stehen offen, entweder der Satz zur
+ersten Iteration verliert seinen Verweis, den der Satz zur zweiten Iteration
+ohnehin traegt, oder die Saetze werden so umgestellt, dass die Bisektion zuerst
+erklaert wird. Dem Verfasser vorgelegt.
+
+
+### 14.09.2026, 3.3 Validierung ausformuliert
+
+**Am Stueck geschrieben, Auftrag des Verfassers.** Acht Saetze je
+Unterabschnitt. 3.3.1 nennt den Maszstab, also was der Index ist, welche
+Maerkte er fuehrt, dass er sie nacheinander mit festen Anteilen bedient, dass
+er keinen Day-Ahead kennt und dass seine Bezugsanlage eine Stunde Speicherdauer
+haelt. 3.3.2 nennt die Unterschiede, die erwartete Richtung je Markt und das
+Pruefkriterium.
+
+**Methodik geprueft.** Die Dokumentation des Index ist am 14.09.2026
+ausgewertet, neuer Eintrag isea_methodik_2026. Belegt sind dort die
+sequenzielle Bedienung in vier Stufen, die festen Anteile fuer Leistung,
+Speicherinhalt und Zyklen, das Fehlen des Day-Ahead in der marktuebergreifenden
+Kette und die Aussage des Index selbst, er bilde nicht den hoechsten
+erzielbaren Erloes ab.
+
+**Zwei neue Belege.** semmelmann_algorithm_2024 traegt die Bauart des
+rollierenden Verfahrens, die Arbeit spricht selbst von vollstaendiger
+Unkenntnis kuenftiger Preise. hornek_value_2025 traegt die Groessenordnung,
+dort liegt eine prognosegestuetzte Strategie elf Prozent unter vollstaendiger
+Preiskenntnis. Der Satz sagt rund zehn Prozent, weil die elf Prozent an einer
+Anlage mit einer Stunde Speicherdauer gemessen sind.
+
+**Pruefkriterium neu gefasst.** Der Abschnittskommentar verlangte, ein Wert
+unter dem Index zeige einen Fehler der Umsetzung. Das gilt nicht. Nach den
+Laeufen im Modellrepository liegt das Modell in den Leistungsmaerkten ueber dem
+Index, naemlich FCR 1,24 und aFRR 1,52, und in den Energiemaerkten darunter,
+naemlich Day-Ahead 0,86 und Intraday 0,89, weil es Degradationskosten
+verrechnet und der Index in seiner Kette keinen Kostenterm fuehrt, sondern nur
+eine Zyklengrenze. Das Kriterium nennt deshalb je Markt eine Richtung.
+
+**Nicht aufgenommen.** Die Capture Rate, mit der der Index jeden Tageserloes
+multipliziert. Sie senkt den Index und erklaert damit einen Teil des Abstands,
+ihr Zahlenwert ist in der Dokumentation jedoch nirgends genannt.
+
+**Keine Zahlen im Text.** Das marktuebergreifende Verhaeltnis von 1,34 im
+Jahr 2025, die Spanne von 1,06 bis 1,54 und die Korrelation von 0,97 gehoeren
+nach 4.1.
+
+**Abbildung.** validierung_cross.pdf aus analysen/12_schrift/kapitel_3 des
+Modellrepositoriums, eingehaengt als fig:validierung_cross, Abbildung 3.5 auf
+Seite 50. Die Einzelmarktabbildung liegt als figures/anhang/
+validierung_einzelmarkt.pdf bereit und ist noch nicht eingebunden, weil der
+Verfasser ueber den Anhang nicht entschieden hat.
+
+**Berichtigt.** Pruefung 7 meldete Batteriespeicher ausgeschrieben im ersten
+Satz, jetzt steht dort das Akronym.
+
+**Offen.** hornek_value_2025 fuehrt einen Autor statt vier, keinen Untertitel,
+kein Venue und keine arXiv-Nummer 2501.07121v2. Der Eintrag traegt jetzt Saetze
+in 3.2.1 und in 3.3. Eine Freigabe zur Berichtigung liegt nicht vor.
+
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

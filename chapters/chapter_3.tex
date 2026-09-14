@@ -2991,42 +2991,83 @@ Tabelle~\ref{tab:maerkte} fasst die Produktmerkmale der sechs geführten Märkte
 % Groesse vorgesehen und durch g_T und g_P des Weber-Ansatzes belegt. Der
 % Verfasser hat den Begriff hier gleichwohl gewaehlt, weil er der Fachbegriff
 % der Plattform ist.
+% TABELLE NEU GEFASST am 14.09.2026, Vorgabe des Verfassers. Sie gibt jetzt
+% wieder, wie Produktschnitt, Verguetungsmodellierung und Besonderheiten IM
+% MODELL sind, und nicht die Produktmerkmale der Maerkte im Allgemeinen.
+% SPALTE GEAENDERT. Aus Energievorhalt wird Besonderheiten, damit die
+% Begrenzung der Energielieferung bei der aFRR-Arbeit dort Platz findet. Die
+% Vorhaltedauern stehen weiterhin dort, wo es sie gibt.
+% EINHEITSPREIS ENTFAELLT in der Tabelle, der Verfasser haelt das Wort fuer
+% unverstaendlich. Die Preisbildung ist jetzt je Markt ausgeschrieben, naemlich
+% Auktionspreis, volumengewichteter Index, hoechster Zuschlagspreis,
+% volumengewichteter Durchschnitt der Zuschlagspreise, volumengewichteter
+% Abrufpreis und Leistungspreis als Gebotspreis.
+% IM FLIESSTEXT BLEIBT der Einheitspreis am FCR-Block stehen, ausdruecklich so
+% entschieden vom Verfasser am 14.09.2026.
+% FUSSZEILE ENTFALLEN, Vorgabe des Verfassers. Sie erklaerte den
+% Energievorhalt und die Trennung der beiden Wirkungsarten. Den zweiten Teil
+% sagt der Einstieg von 3.2.3 im zweiten Satz.
+% ALTE TABELLE, vollstaendig erhalten:
+%\begin{table}[htbp]
+%    \centering
+%    \caption{Produktmerkmale der sechs geführten Märkte.}
+%    \label{tab:maerkte}
+%    \small
+%    \setlength{\tabcolsep}{4pt}
+%% TABELLE GEKUERZT am 13.09.2026, Vorgabe des Verfassers. Die Spalte Wirkung
+%% auf die Anlage entfaellt, die Ueberschrift Verguetungsform heisst jetzt
+%% Verguetungsmodellierung. Vier Spalten, Breiten 0,17, 0,22, 0,35 und 0,26.
+%% ENTFALLENE SPALTENINHALTE, vollstaendig erhalten:
+%%   Bewegt den Ladezustand, in sich bilanziell ausgeglichen
+%%   Bewegt den Ladezustand, trägt den Ausgleich der \acs{aFRR}-Arbeit
+%%   Bindet beide Seiten, bewegt den Ladezustand nicht
+%%   Bindet eine Seite, bewegt den Ladezustand nicht
+%%   Bewegt den Ladezustand, anteilig am deutschen Abruf
+%%   Bindet eine Seite, bewegt den Ladezustand nicht
+%% Der Satz der Fusszeile zur Trennung der beiden Wirkungsarten ist
+%% mitentfallen, weil die Spalte fehlt, auf die er sich bezog. Der Einstieg
+%% von 3.2.3 sagt dasselbe im zweiten Satz.
+%    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.35\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.26\textwidth-\tabcolsep\relax}@{}}
+%        \hline
+%        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsmodellierung} & \textbf{Energievorhalt} \\
+%        \hline
+%                \acs{DA} & Viertelstunde, Auktion am Vortag & Energiepreis, Einheitspreis & keiner \\
+%        \hline
+%                \acs{IDC} & Viertelstunde, fortlaufend & Energiepreis, pay-as-bid je Geschäft & keiner \\
+%        \hline
+%                \acs{FCR} & Vier Stunden, symmetrisch & Leistungs\-reservierungs\-preis, Einheitspreis & 15 Minuten je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe \\
+%        \hline
+%                \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid & Eine Stunde je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe \\
+%        \hline
+%                \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Energiepreis, volumengewichteter Grenzpreis des Abrufs & keiner, sie liefert die Energie selbst \\
+%        \hline
+%                Kurative Reservierung & Eine Stunde, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid, Preis gesucht & Eine Stunde je reserviertem \si{MW}, in jeder Viertelstunde \\
+%        \hline
+%        \multicolumn{4}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die vorgehaltene Leistung im Abruffall aus dem Speicher zu decken ist. Die drei Märkte mit Leistungsreservierungspreis binden die Anlage, ohne ihren Ladezustand zu verändern, und aus dieser Trennung entstehen die Opportunitätskosten der kurativen Reservierung.} \\
+%    \end{tabular}
+%\end{table}
 \begin{table}[htbp]
     \centering
     \caption{Produktmerkmale der sechs geführten Märkte.}
     \label{tab:maerkte}
     \small
     \setlength{\tabcolsep}{4pt}
-% TABELLE GEKUERZT am 13.09.2026, Vorgabe des Verfassers. Die Spalte Wirkung
-% auf die Anlage entfaellt, die Ueberschrift Verguetungsform heisst jetzt
-% Verguetungsmodellierung. Vier Spalten, Breiten 0,17, 0,22, 0,35 und 0,26.
-% ENTFALLENE SPALTENINHALTE, vollstaendig erhalten:
-%   Bewegt den Ladezustand, in sich bilanziell ausgeglichen
-%   Bewegt den Ladezustand, trägt den Ausgleich der \acs{aFRR}-Arbeit
-%   Bindet beide Seiten, bewegt den Ladezustand nicht
-%   Bindet eine Seite, bewegt den Ladezustand nicht
-%   Bewegt den Ladezustand, anteilig am deutschen Abruf
-%   Bindet eine Seite, bewegt den Ladezustand nicht
-% Der Satz der Fusszeile zur Trennung der beiden Wirkungsarten ist
-% mitentfallen, weil die Spalte fehlt, auf die er sich bezog. Der Einstieg
-% von 3.2.3 sagt dasselbe im zweiten Satz.
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.35\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.26\textwidth-\tabcolsep\relax}@{}}
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.32\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.29\textwidth-\tabcolsep\relax}@{}}
         \hline
-        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsmodellierung} & \textbf{Energievorhalt} \\
+        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsmodellierung} & \textbf{Besonderheiten} \\
         \hline
-                \acs{DA} & Viertelstunde, Auktion am Vortag & Energiepreis, Einheitspreis & keiner \\
+        \acs{DA} & Viertelstunde, Auktion am Vortag & Auktionspreis & Der Handel ist in sich bilanziell ausgeglichen \\
         \hline
-                \acs{IDC} & Viertelstunde, fortlaufend & Energiepreis, pay-as-bid je Geschäft & keiner \\
+        \acs{IDC} & Viertelstunde, fortlaufend & Volumengewichteter Index der letzten Handelsstunde & Trägt den Ausgleich der \acs{aFRR}-Arbeit \\
         \hline
-                \acs{FCR} & Vier Stunden, symmetrisch & Leistungs\-reservierungs\-preis, Einheitspreis & 15 Minuten je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe \\
+        \acs{FCR} & Vier Stunden, symmetrisch & Höchster Zuschlagspreis, gezahlt an alle bezuschlagten Gebote & Energievorhalt von 15 Minuten \\
         \hline
-                \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid & Eine Stunde je vorgehaltenem \si{MW}, zu Beginn der Zeitscheibe \\
+        \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Volumengewichteter Durchschnitt der Zuschlagspreise & Energievorhalt von einer Stunde \\
         \hline
-                \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Energiepreis, volumengewichteter Grenzpreis des Abrufs & keiner, sie liefert die Energie selbst \\
+        \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Volumengewichteter Abrufpreis, gegen den \acs{IDC} verrechnet & Die Lieferung wird im Volumen begrenzt \\
         \hline
-                Kurative Reservierung & Eine Stunde, je Richtung & Leistungs\-reservierungs\-preis, pay-as-bid, Preis gesucht & Eine Stunde je reserviertem \si{MW}, in jeder Viertelstunde \\
+        Kurative Reservierung & Eine Stunde, je Richtung & Leistungspreis, als Gebotspreis betrachtet & Energievorhalt von einer Stunde in jeder Viertelstunde \\
         \hline
-        \multicolumn{4}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die vorgehaltene Leistung im Abruffall aus dem Speicher zu decken ist. Die drei Märkte mit Leistungsreservierungspreis binden die Anlage, ohne ihren Ladezustand zu verändern, und aus dieser Trennung entstehen die Opportunitätskosten der kurativen Reservierung.} \\
     \end{tabular}
 \end{table}
 
@@ -3697,6 +3738,35 @@ Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und 
 Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist, und die obere Grenze ist der einheitliche Reservierungspreis der ersten Iteration, mit dem die zweite beginnt.
 Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennter Rechnung genügen 84 bis 167, im Mittel rund 130, weil sich die Stunden eines Intervalls einen Lauf teilen.
 
+% REIHENFOLGE GETAUSCHT am 14.09.2026, Vorgabe des Verfassers. Zuerst das
+% Bisektionsverfahren, dann das Flussdiagramm, zuletzt die Schleifen. Die
+% beiden Bloecke sind samt ihrer Kommentare vertauscht, der Text dazwischen
+% bleibt an seiner Stelle.
+% ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
+% Modellrepository, analysen/10_schrift/kapitel_3.
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht. Die Dateien messen 453,543 PostScript-Punkte,
+% das sind 455,244 TeX-Punkte und damit genau \textwidth. Ohne Angabe hat
+% pdfTeX dieselbe Breite gesetzt, siehe main.log.
+% BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Gepostet durch
+% vorgegeben ersetzt, Doppelpunkt aufgeloest. Der Wortlaut der Anweisung vom
+% 12.09.2026 nennt das Ergebnis Schwellenpreis der Stunde, was der Stichpunkt
+% zur 1. Iteration traegt. Alte Zeile dieses Kommentars:
+%   % vorgegeben ersetzt, Breakeven-Preis umschrieben, Doppelpunkt aufgeloest.
+% Die Monotonie ist uebernommen, aber nicht belegt, siehe den Kommentar am
+% Stichpunkt zur Bisektion. Die Achse im Bild sagt geposteter
+% Reservierungspreis.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
+    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
+    \label{fig:reservierungspreis_bisektion}
+\end{figure}
+
 % ABBILDUNG ERSETZT am 12.09.2026 nach der Anweisung des Verfassers. Die
 % beiden Flussdiagramme der 1. und der 2. Iteration sind im Modellrepository
 % geloescht. An ihre Stelle tritt reservierungspreis_ablauf_a4.pdf, die beide
@@ -3748,31 +3818,6 @@ Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennt
     \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
     \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
     \label{fig:reservierungspreis_ablauf}
-\end{figure}
-
-% ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
-% Modellrepository, analysen/10_schrift/kapitel_3.
-% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
-% Sie aendert den Satz nicht. Die Dateien messen 453,543 PostScript-Punkte,
-% das sind 455,244 TeX-Punkte und damit genau \textwidth. Ohne Angabe hat
-% pdfTeX dieselbe Breite gesetzt, siehe main.log.
-% BILDUNTERSCHRIFT nach Vorschlag des Verfassers, geaendert. Gepostet durch
-% vorgegeben ersetzt, Doppelpunkt aufgeloest. Der Wortlaut der Anweisung vom
-% 12.09.2026 nennt das Ergebnis Schwellenpreis der Stunde, was der Stichpunkt
-% zur 1. Iteration traegt. Alte Zeile dieses Kommentars:
-%   % vorgegeben ersetzt, Breakeven-Preis umschrieben, Doppelpunkt aufgeloest.
-% Die Monotonie ist uebernommen, aber nicht belegt, siehe den Kommentar am
-% Stichpunkt zur Bisektion. Die Achse im Bild sagt geposteter
-% Reservierungspreis.
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
-% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
-% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
-% Fassung:
-%    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
-    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
-    \label{fig:reservierungspreis_bisektion}
 \end{figure}
 
 % AUSFORMULIERT am 13.09.2026, Auftrag des Verfassers, am Stueck und zur
@@ -4216,11 +4261,24 @@ Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbas
 % vom 08.09.2026 aus dem Modellrepository. Keine Zahl aus dem Abgleich, sie
 % gehoert nach Abschnitt 4.1.
 
-\begin{itemize}
-    \item Geprüft wird der Erlös des ungebundenen Fahrplans als Zwischengröße des Modells und nicht der kurative Reservierungspreis
-    \item Die Prüfung betrifft die Plausibilität des Erlösniveaus und nicht, ob die Implementierung das formulierte Problem korrekt löst
+% AUSFORMULIERT am 14.09.2026, Auftrag des Verfassers, am Stueck und zur
+% Durchsicht.
+% GRUNDLAGE. Die Methodik des Index ist am 14.09.2026 an seiner Dokumentation
+% geprueft, isea_methodik_2026. Belegt sind dort die sequenzielle Bedienung,
+% die festen Anteile fuer Leistung, Speicherinhalt und Zyklen sowie das Fehlen
+% des Day-Ahead in der marktuebergreifenden Kette.
+% EIGENE BESTIMMUNG, vom Verfasser zu pruefen. Dass der Index ein gleitender
+% Mittelwert ueber 365 Tage ist und seine Bezugsanlage eine Stunde
+% Speicherdauer hat, steht in keiner Dokumentation. Beides ist am 08.09.2026
+% zurueckgerechnet und im Modellrepository auf zwei Prozent genau bestaetigt.
+% ZAHLEN. Keine in diesem Abschnitt, sie gehoeren nach 4.1. Genannt ist allein
+% das Verhaeltnis der Speicherdauern, weil es eine Modellsetzung ist.
+% STICHPUNKTE ERSETZT am 14.09.2026, alte Fassung:
+%\begin{itemize}
+%    \item Geprüft wird der Erlös des ungebundenen Fahrplans als Zwischengröße des Modells und nicht der kurative Reservierungspreis
+%    \item Die Prüfung betrifft die Plausibilität des Erlösniveaus und nicht, ob die Implementierung das formulierte Problem korrekt löst
 % K6. bib-Eintrag fuer die ISEA Battery Charts fehlt.
-    \item Gegenstand und Aufbau des Vergleichsmaßstabs, nämlich ein je Tag ausgewiesener annualisierter Erlös in Tausend Euro je Megawatt und Jahr aus einem marktübergreifenden Modell über \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und kontinuierlichen Intraday-Handel
+%    \item Gegenstand und Aufbau des Vergleichsmaßstabs, nämlich ein je Tag ausgewiesener annualisierter Erlös in Tausend Euro je Megawatt und Jahr aus einem marktübergreifenden Modell über \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und kontinuierlichen Intraday-Handel
 % EIGENE BESTIMMUNG des Verfassers vom 08.09.2026, in keiner Dokumentation
 % belegt. Gezeigt durch Rueckrechnung als expandierender Mittelwert und durch
 % den konstanten FCR-Wert vom 04.09. bis 14.11.2025. Als eigene Bestimmung
@@ -4229,10 +4287,18 @@ Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbas
 % GEKUERZT am 11.09.2026. Seit der Entscheidung fuer das ganze Jahr 2025 gibt
 % es kein Quartal mehr, von dem sich die Validierung abhebt. Alte Fassung:
 %    \item Der Index ist ein gleitender Mittelwert über 365 Tage und nur am 31. Dezember mit einem Kalenderjahr vergleichbar, weshalb die Validierung das Jahr 2025 umfasst und nicht allein das vierte Quartal
-    \item Der Index ist ein gleitender Mittelwert über 365 Tage und nur am 31. Dezember mit einem Kalenderjahr vergleichbar, weshalb die Validierung das Jahr 2025 umfasst
-    \item Abzugleichende Anlagenparameter des Index, insbesondere das Verhältnis von Energie zu Leistung und der unterstellte Wirkungsgrad
-    \item Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind
-\end{itemize}
+%    \item Der Index ist ein gleitender Mittelwert über 365 Tage und nur am 31. Dezember mit einem Kalenderjahr vergleichbar, weshalb die Validierung das Jahr 2025 umfasst
+%    \item Abzugleichende Anlagenparameter des Index, insbesondere das Verhältnis von Energie zu Leistung und der unterstellte Wirkungsgrad
+%    \item Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind
+%\end{itemize}
+Als Vergleichsmaßstab dient der Erlösindex der Battery Charts, der für ein \ac{BESS} am deutschen Markt einen marktübergreifenden Erlös ausweist \cite{isea_batterycharts_2026}.
+Geprüft wird damit der Erlös des ungebundenen Fahrplans als Zwischengröße des Modells und nicht der kurative Reservierungspreis.
+Die Prüfung betrifft die Plausibilität des Erlösniveaus und nicht, ob die Implementierung das formulierte Problem korrekt löst.
+Der Index führt \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, er kennt jedoch keinen \ac{DA}, weshalb ihm der Erlös des Modells aus beiden Energiemärkten zusammen gegenübersteht.
+Er bedient diese Märkte nacheinander und teilt Leistung, Speicherinhalt und Zyklen nach fest gesetzten Anteilen zu, während das Modell alle Märkte eines Liefertages gemeinsam entscheidet \cite{isea_methodik_2026}.
+Seine Bezugsanlage hält eine Megawattstunde je Megawatt und damit eine Stunde Speicherdauer, die Modellanlage zweieinhalb.
+Weil der Index als gleitender Mittelwert über 365 Tage veröffentlicht wird, ist er nur am Jahresende mit einem Kalenderjahr vergleichbar, weshalb die Validierung das Jahr 2025 umfasst.
+Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind.
 
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten:
@@ -4257,20 +4323,52 @@ Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbas
 % fuehrt. Nach MODELL.md fuehrt es alle Maerkte des Index und zusaetzlich den
 % Day-Ahead.
 
-\begin{itemize}
+% AUSFORMULIERT am 14.09.2026, Auftrag des Verfassers.
+% PRUEFKRITERIUM NEU GEFASST. Der Abschnittskommentar oben verlangte, ein Wert
+% unter dem Index zeige einen Fehler der Umsetzung. Das gilt nach den
+% Ergebnissen des Modellrepositoriums nicht, denn in den Energiemaerkten liegt
+% das Modell zu Recht darunter, weil es Degradationskosten verrechnet und der
+% Index in seiner Kette keinen Kostenterm fuehrt, sondern nur eine
+% Zyklengrenze. Das Kriterium nennt deshalb je Markt eine Richtung.
+% BELEGE. semmelmann_algorithm_2024 traegt die Bauart des rollierenden
+% Verfahrens, die Arbeit spricht selbst von vollstaendiger Unkenntnis
+% kuenftiger Preise. hornek_value_2025 traegt die Groessenordnung, dort liegt
+% eine prognosegestuetzte Strategie elf Prozent unter vollstaendiger
+% Preiskenntnis. Der Satz sagt rund zehn Prozent, weil die elf Prozent an einer
+% Anlage mit einer Stunde Speicherdauer gemessen sind.
+% NICHT AUFGENOMMEN. Die Capture Rate, mit der der Index jeden Tageserloes
+% multipliziert. Sie senkt den Index und erklaert damit einen Teil des
+% Abstands, ihr Zahlenwert ist in der Dokumentation jedoch nirgends genannt.
+% STICHPUNKTE ERSETZT am 14.09.2026, alte Fassung:
+%\begin{itemize}
 % Die erwartete Richtung gilt fuer den marktuebergreifenden Wert. Je Markt
 % ueberlagern sie die Unterschiede im naechsten Stichpunkt.
-    \item Unterschied in der Vorausschau, nämlich Rolling Intrinsic gegenüber vollständiger Preiskenntnis, und die daraus folgende Erwartung, dass der eigene Wert über dem Index liegt
-    \item Der Index führt keinen \ac{DA}, weshalb der marktübergreifende Vergleich den Erlös des Modells am \ac{DA} gesondert ausweist
+%    \item Unterschied in der Vorausschau, nämlich Rolling Intrinsic gegenüber vollständiger Preiskenntnis, und die daraus folgende Erwartung, dass der eigene Wert über dem Index liegt
+%    \item Der Index führt keinen \ac{DA}, weshalb der marktübergreifende Vergleich den Erlös des Modells am \ac{DA} gesondert ausweist
 % EIGENE ABLEITUNG aus den Annahmen, ohne Zahl. Die Bezugsanlage des Index hat
 % nach der Bestimmung vom 08.09.2026 eine Stunde Speicherdauer, die
 % Modellanlage zweieinhalb.
-    \item Weitere Unterschiede mit bekannter Richtung, nämlich die längere Speicherdauer der Modellanlage und der sichere Zuschlag, die den Erlös in den Leistungsmärkten erhöhen, sowie die Degradationskosten, die ihn in den Energiemärkten senken
+%    \item Weitere Unterschiede mit bekannter Richtung, nämlich die längere Speicherdauer der Modellanlage und der sichere Zuschlag, die den Erlös in den Leistungsmärkten erhöhen, sowie die Degradationskosten, die ihn in den Energiemärkten senken
 % OFFEN. Das Kriterium im Abschnittskommentar oben, ein Wert unter dem Index
 % zeige einen Fehler der Implementierung, gilt wegen der Degradationskosten
 % nicht fuer die Energiemaerkte. Vom Verfasser zu entscheiden.
-    \item Prüfkriterium, nämlich dass die Abweichung je Markt die Richtung trägt, die diese Unterschiede erwarten lassen, und dass der Jahresgang übereinstimmt
-\end{itemize}
+%    \item Prüfkriterium, nämlich dass die Abweichung je Markt die Richtung trägt, die diese Unterschiede erwarten lassen, und dass der Jahresgang übereinstimmt
+%\end{itemize}
+Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
+Sein Intraday-Handel folgt einem rollierenden Verfahren, das in jedem Schritt gegen die bis dahin bekannten Preise optimiert und über künftige Preise nichts voraussetzt \cite{semmelmann_algorithm_2024}.
+Das Modell kennt dagegen alle Preise des Liefertages, und dieser Unterschied allein trägt eine Größenordnung von rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel \cite{hornek_value_2025}.
+Hinzu kommen die längere Speicherdauer der Modellanlage und der sichere Zuschlag, die den Erlös in den Leistungsmärkten erhöhen, sowie die Degradationskosten, die ihn in den Energiemärkten senken.
+Erwartet wird deshalb keine Übereinstimmung, sondern eine Abweichung, deren Richtung je Markt aus diesen Unterschieden folgt.
+Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 gegenüber.
+Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
+Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_3/validierung_cross.pdf}
+    \caption{Marktübergreifender Vergleich für das Jahr 2025. Links der Erlös je Monat, annualisiert in Tausend Euro je Megawatt und Jahr, rechts der Abstand zwischen Modell und Index.}
+    \label{fig:validierung_cross}
+\end{figure}
 
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten:
