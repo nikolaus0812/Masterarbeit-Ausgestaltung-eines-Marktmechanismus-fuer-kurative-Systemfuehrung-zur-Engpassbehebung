@@ -891,6 +891,20 @@ Freigabe des Stromkreises durch den UeNB, ohne die TATL gleich PATL gilt.
 Die Zusammenfassung der Inhalte stammt aus einer Zusammenstellung des
 Verfassers und ist vor dem Schreiben an den Fundstellen zu pruefen.
 
+### 14.09.2026, Aenderungsliste fuer Kapitel 3 angelegt
+
+`AENDERUNGEN_KAP3.md` prueft den Fliesstext von Kapitel 3 gegen die neuen
+Stilregeln und die uebergreifenden Aenderungen U1 bis U10, weil der Betreuer
+dieses Kapitel nicht kommentiert hat. 73 Befunde K01 bis K73 und sieben
+Vorfragen W1 bis W7. Zwei Befunde sind sachlich und nicht stilistisch. W1,
+Zeile 3573 sagt, das Modell rechne im Standard mit stetiger Reservierung,
+waehrend der Basisfall vom 11.09.2026 die Mindestgroesse von 25 MW und damit
+ein gemischt-ganzzahliges Programm vorsieht, das die Zeilen 2398 bis 2400
+beschreiben. W5, Abschnitt 3.3.2 nennt das Pruefkriterium, sagt aber nicht, ob
+es erfuellt ist. Das Kapitel laeuft im Build vom 14.09.2026 von Seite 35 bis
+50, das Seitenziel von 14 ist nach der Liste nur mit der Verlagerung des
+Ablaufdiagramms und der Schleifenabbildung in Anhang B erreichbar (W2).
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

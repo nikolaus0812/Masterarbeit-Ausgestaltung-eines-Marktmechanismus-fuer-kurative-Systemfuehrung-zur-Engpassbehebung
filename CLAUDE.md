@@ -38,6 +38,7 @@ tools/quellencheck.py             Volltextsuche in den Quellen
 ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen
 STRUKTUR.md                       Gliederung und Stand von Kapitel 3
 AENDERUNGEN_KAP1_2.md             Betreuerkommentare und Kuerzungen als Aenderungsliste
+AENDERUNGEN_KAP3.md               Aenderungsliste Kapitel 3 nach den Stilregeln
 KUERZUNGEN_KAP1_2.md              Fundstellen der Kuerzungen, Zeilen der Fassung 74a9d8d
 WORKFLOW.md                       Vorgehen fuer Korrektur und Neufassung
 ```
@@ -86,7 +87,7 @@ die Zettel, die du mit jedem Absatz lieferst.
 
 Für die Korrektur der Kapitel 1 und 2 ist `AENDERUNGEN_KAP1_2.md` die Vorlage.
 Sie führt je Absatz die Befunde des Betreuers und die Kürzungen zusammen.
-Für Kapitel 3 gilt `STRUKTUR.md`.
+Für Kapitel 3 gilt `AENDERUNGEN_KAP3.md` zusammen mit `STRUKTUR.md`.
 
 ---
 
