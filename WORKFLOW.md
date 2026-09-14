@@ -1,212 +1,213 @@
-# Workflow für das Ausformulieren der Kapitel
+# Workflow für Korrektur und Neufassung
 
-Stand 07.09.2026. Gilt für die Kapitel 3 bis 6 und für den Anhang. Er löst die
-bisherige Regelung aus dem Übergabepapier nicht ab, sondern setzt sie um.
-
----
-
-## 1 Die Arbeitseinheit ist ein Unterabschnitt
-
-Nicht ein Kapitel, nicht ein Absatz, nicht eine Stichpunktliste. Ein
-Unterabschnitt umfasst nach der jetzigen Planung zwischen einer halben und fünf
-Seiten und trägt genau eine Aufgabe, die sich in einem Satz benennen lässt.
-
-Drei Gründe. Erstens entspricht der Zuschnitt den vorhandenen Stichpunktlisten,
-sodass beim Ausformulieren nichts neu sortiert werden muss. Zweitens bleibt der
-Prüfaufwand je Runde bei einer Seite Lesen und nicht bei zwanzig. Drittens
-bleibt bei einem Rückbau nur eine Einheit betroffen.
-
-Ausnahmen sind die Einleitungen zu Abschnitten mit zwei bis vier Sätzen. Sie
-werden zusammen mit dem ersten Unterabschnitt geliefert, weil sie allein zu
-klein sind.
+Stand 14.09.2026. Er ersetzt die Fassung vom 07.09.2026 und das satzweise
+Verfahren aus der alten `CLAUDE.md`. Er gilt für die Korrektur der Kapitel 1
+und 2 nach den Betreuerkommentaren und für das Schreiben der Kapitel 3 bis 6.
 
 ---
 
-## 2 Der Zyklus, sechs Schritte
+## 1 Warum der Absatz und nicht der Satz
 
-**Schritt 1, Freigabe.** Der Verfasser benennt den Unterabschnitt und übergibt
-den Freigabezettel aus Abschnitt 4. Ohne Freigabe entsteht kein Fließtext.
+Das satzweise Verfahren hat drei Fassungen je Satz erzeugt und den Verfasser
+wählen lassen. Es hat Sätze geliefert, die einzeln tragen, aber zusammen nicht.
+Genau das bemängelt der Betreuer, nämlich Thesen ohne angebundene Begründung,
+fehlende Übergänge, Pronomen ohne Bezug und Absätze ohne Konsequenz. Diese
+Mängel entstehen zwischen den Sätzen und lassen sich nur beheben, wenn der
+Absatz als Ganzes geplant und geschrieben wird.
 
-**Schritt 2, Vorlage prüfen.** Claude liest die Stichpunkte, prüft die Belege
-gegen das vorhandene Material, meldet Lücken, Widersprüche zu den Kapiteln 1 und
-2 und offene Entscheidungen. Ergibt sich dabei, dass eine Vorentscheidung fehlt,
-endet der Zyklus hier und geht mit der Entscheidungsfrage zurück.
+Deshalb gilt seit dem 14.09.2026: Die Arbeitseinheit ist der Absatz. Ein Absatz
+trägt eine Kernaussage, hat vier bis acht Sätze und entsteht in einem Zug aus
+einem Absatzplan. Fassungen zur Wahl gibt es nur noch für den Aufbau eines
+Absatzes, nicht für den Wortlaut einzelner Sätze. Wortlautvarianten liefert
+Claude nur auf ausdrückliche Anfrage zu einem benannten Satz.
 
-**Schritt 3, Rohtext.** Claude schreibt den Fließtext für genau diesen
-Unterabschnitt, setzt ihn in die Datei, lässt alle Kommentare und Marken
-unberührt und liefert die vollständige Datei zurück. Dazu kommen die beiden
-Zettel aus Abschnitt 5.
-
-**Schritt 4, Prüfung.** `pruefen.py` läuft über die geänderte Datei. Befunde
-werden vor der Übergabe behoben, nicht danach.
-
-**Schritt 5, Durchsicht.** Der Verfasser liest das gerenderte PDF, nicht den
-Quelltext. Rückmeldungen erfolgen satzweise oder absatzweise, in der bekannten
-knappen Form. Eine Runde Korrektur gehört zum Zyklus, mehr als zwei Runden sind
-ein Zeichen dafür, dass die Vorlage in Schritt 1 zu dünn war.
-
-**Schritt 6, Protokoll.** Claude schreibt den Nachtrag für
-`ENTSCHEIDUNGSPROTOKOLL.md`, mit den getroffenen Entscheidungen, den
-eigenständigen Argumenten und den offen gebliebenen Punkten. Erst danach gilt
-der Unterabschnitt als abgeschlossen und der nächste beginnt.
+Die Stichpunktphase aus dem Vorgehen vom 09.09.2026 bleibt für neue Abschnitte
+erhalten und geht dem Absatzplan voraus.
 
 ---
 
-## 3 Dateihoheit, die wichtigste Regel
+## 2 Der Absatzplan
 
-Zu jedem Zeitpunkt hat genau eine Seite die Datei. Entweder der Verfasser
-arbeitet in Overleaf, oder Claude arbeitet an der hochgeladenen Fassung. Beides
-gleichzeitig führt dazu, dass eine der beiden Fassungen verloren geht, und der
-Verlust fällt erst zwei Sitzungen später auf.
-
-Praktisch heißt das:
-
-- Vor jeder Sitzung lädt der Verfasser die **aktuelle** Datei hoch, auch wenn er
-  seit der letzten Lieferung nur eine Zeile geändert hat.
-- Claude liefert immer die **vollständige** Datei zurück, nie ein Fragment, es
-  sei denn, der Verfasser verlangt ausdrücklich einen Ausschnitt zum Einfügen.
-- Während Claude arbeitet, ändert der Verfasser die Datei nicht.
-- Nach der Übernahme in Overleaf ist die Overleaf-Fassung die gültige.
-
-Für den Fall, dass es doch einmal auseinanderläuft, liefert Claude auf Zuruf
-eine Liste der geänderten Stellen, sodass sich der Unterschied von Hand
-zusammenführen lässt.
-
----
-
-## 4 Freigabezettel, was der Verfasser liefert
-
-Kurz halten, fünf Zeilen genügen. Vorlage:
+Der Absatzplan ist die Freigabeeinheit. Ohne freigegebenen Plan entsteht kein
+Fließtext. Er hat sechs Zeilen und passt auf einen Bildschirm.
 
 ```
-Abschnitt:      3.2, Entwurf des kurativen Marktprodukts
-Umfang:         5 Seiten
-Stichpunkte:    alle, außer dem zur Pönale
-Entscheidungen: E1 endogen, E3 Streichung
-Nicht sagen:    keine Zahl zur Pönalehöhe, keine Obergrenze des Preises
+Absatz:        2.1.1 Absatz 3, G 64 bis 72
+Kernaussage:   Der praeventive Ansatz kostet aus drei Gruenden, naemlich ...
+Aufbau:        These (Satz 1) -> Merkmal 1 mit Beleg -> Merkmal 2 mit Zeiten
+               -> Merkmal 3 mit Beleg -> Konsequenz (Satz 7)
+Anschluss:     knuepft an ... des Vorabsatzes an, fuehrt zu ... des Folgeabsatzes
+Begriffe:      Planungshorizont, erstmals hier, Definition im Satz 3
+Belege:        S2 sous_comparison_2025 (zu pruefen), S4 Mechanismus,
+               S6 eigene Ableitung, vom Verfasser zu pruefen
+Nicht sagen:   keine Behauptung, das Netz sei ohne kurativ nicht N-1-sicher
 ```
 
-Die Zeile *Nicht sagen* ist die wirksamste. Sie verhindert genau die
-Grenzüberschreitungen, die in den Kapiteln 1 und 2 mehrfach zurückgenommen
-werden mussten, nämlich vorweggenommene Ergebnisse, überdehnte Behauptungen und
-Aussagen ohne Beleg.
+Bei der Korrektur eines bestehenden Absatzes kommen zwei Zeilen hinzu, nämlich
+die **Befunde** mit den Kennungen aus `AENDERUNGEN_KAP1_2.md` und die
+**Maßnahme**, also umbauen, kürzen, streichen oder verschieben.
 
-Wenn der Verfasser eigene Formulierungen vorgibt, kennzeichnet er sie als
-wörtlich zu übernehmen. Alles andere behandelt Claude als Inhaltsvorgabe.
-
----
-
-## 5 Lieferung, was Claude zurückgibt
-
-**Die Datei.** Vollständig, mit unverändertem Zeilenende und unveränderter
-Kodierung, alle Kommentare erhalten. Ersetzte Formulierungen werden nicht
-gelöscht, sondern als zurückgenommen im Kommentar vermerkt, damit eine spätere
-Sitzung sie nicht wieder einführt.
-
-**Der Belegzettel.** Für jeden geschriebenen Absatz eine Zeile mit der Quelle
-oder mit dem Vermerk, dass die Aussage Mechanismus, eigene Ableitung oder
-unbelegt ist. Unbelegte Aussagen stehen nicht im Text, ohne dass der Verfasser
-sie gesehen hat.
-
-**Der Argumentzettel.** Jedes Argument, das nicht aus den Stichpunkten des
-Verfassers stammt, wird einzeln aufgeführt und als eigenständiges Argument
-gekennzeichnet. Der Verfasser prüft es, bevor es stehen bleibt. Diese Regel gilt
-seit dem 02.09.2026 und hat sich bewährt, sie wird hier nur festgeschrieben.
+Gibt es für den Aufbau zwei Wege, die sich in der Sache unterscheiden, etwa in
+der Reihenfolge der Merkmale oder darin, ob eine Nebenaussage mitläuft, legt
+Claude beide vor und sagt, woran sich die Wahl festmacht. Mehr als zwei Wege
+gibt es selten. Wortlaut steht im Plan keiner.
 
 ---
 
-## 6 Was ohne Rückfrage geschieht und was nicht
+## 3 Der Zyklus, je Abschnitt
 
-Ohne Rückfrage: Belege prüfen, Rechnungen nachvollziehen, Widersprüche melden,
-Terminologie und Einheiten kontrollieren, Stichpunkte strukturieren, Lücken
-benennen, die Prüfsuite laufen lassen, Kommentare aktualisieren.
+Die Einheit des Zyklus ist ein Unterabschnitt, weil die Absätze eines
+Unterabschnitts aneinander hängen und die Übergänge nur im Zusammenhang stimmen
+können.
 
-Nur auf Aufforderung: Absätze schreiben, Formulierungen vorschlagen, Gliederung
-ändern, Text in eine Kapiteldatei einfügen.
+**Schritt 1, Vorlage.** Claude legt für jeden Absatz des Unterabschnitts den
+Absatzplan vor, in der Reihenfolge des Textes, mit einem Satz zum Anschluss
+zwischen den Absätzen. Bei einer Korrektur stammt der Ausgangspunkt aus
+`AENDERUNGEN_KAP1_2.md`, bei einem neuen Abschnitt aus den gemeinsam
+erarbeiteten Stichpunkten. Claude nennt dabei, welche Begriffe der Abschnitt
+voraussetzt und wo sie definiert sind, welche Belege fehlen und welche
+Entscheidung offen ist. Fehlt eine Entscheidung, endet der Zyklus hier.
 
-Nie: Kommentare oder TODO-Marken stillschweigend löschen, eine getroffene
-Vorentscheidung umkehren, eine Zahl setzen, die nicht aus dem Material oder aus
-einer eigenen Rechnung stammt.
+**Schritt 2, Freigabe.** Der Verfasser gibt die Pläne frei, ändert sie oder
+streicht Absätze. Änderungen am Plan schreibt er als Anmerkung, nicht als
+Wortlaut. Will er einen Wortlaut vorgeben, kennzeichnet er ihn als wörtlich.
+
+**Schritt 3, Text.** Claude schreibt die Absätze des Unterabschnitts als Ganzes
+in die Datei. Ersetzter Fließtext bleibt als Kommentar über der neuen Fassung
+erhalten, mit Datum, Grund und den Kennungen der Befunde. Marken und
+Kommentare bleiben unberührt. Dazu liefert Claude den Belegzettel und den
+Argumentzettel aus Abschnitt 5.
+
+**Schritt 4, Prüfung.** Die Prüfsuite läuft, dann die Fremdleser-Prüfung aus
+Abschnitt 4. Claude behebt die Befunde, bevor es übergibt, und berichtet, was
+die Fremdleser-Prüfung nicht verstanden hat und wie es darauf reagiert hat.
+
+**Schritt 5, Durchsicht.** Der Verfasser liest das gebaute PDF. Rückmeldungen
+erfolgen satzweise, etwa *Absatz 3, Satz 4, Bezug unklar*. Eine
+Korrekturrunde gehört zum Zyklus. Braucht ein Absatz eine zweite, war der Plan
+zu dünn, und der Absatz geht zurück zu Schritt 1.
+
+**Schritt 6, Protokoll.** Claude schreibt den Eintrag für
+`ENTSCHEIDUNGSPROTOKOLL.md`, ein Eintrag je Unterabschnitt, mit den
+Entscheidungen, den zurückgenommenen Formulierungen und den eigenständigen
+Ableitungen. Danach gilt der Unterabschnitt als abgeschlossen.
+
+Für neue Abschnitte steht vor Schritt 1 die Stichpunktphase, nämlich erst
+gemeinsam die Fragen sammeln, die der Abschnitt beantworten muss, dann die
+Stichpunkte in Blöcken anlegen, ein Stichpunkt je späterem Satz, und die Zahl
+der Stichpunkte gegen das Seitenziel halten. Erst daraus entstehen die
+Absatzpläne.
 
 ---
 
-## 7 Prüfung
+## 4 Die Fremdleser-Prüfung
 
-`pruefen.py` läuft über eine oder mehrere Dateien und prüft Zeilenenden, Stil im
-Fließtext, Klammer- und Dollarbilanz, Umgebungen, doppelte Leerzeilen, gesperrte
-Begriffe, Akronympflicht, doppelte Marken, Zitatschlüssel gegen `literature.bib`
-und Verweise ohne Marke.
+Der Betreuer hat empfohlen, einen Absatz jemandem zu geben, der die kurative
+Systemführung nicht kennt, und danach zu fragen, ob er verstanden wurde. Bis
+ein Mensch liest, übernimmt das ein Subagent ohne Zugang zum übrigen Text.
 
-```
-python pruefen.py chapter_3.tex
-python pruefen.py --bib literature.bib "chapter_*.tex" attachment.tex
-```
+Claude gibt dem Subagenten allein den neuen Unterabschnitt als gerenderten
+Fließtext, ohne Kommentare, ohne Kapitelkontext, ohne diese Anleitung, und
+stellt vier Fragen.
 
-Der Rückgabewert ist ungleich null, sobald ein Befund vorliegt, sodass sich das
-Skript in einen Commit-Hook hängen lässt. Die Stilprüfung überspringt
-Kommentare, Listenpunkte, Tabellenzeilen und Bildunterschriften, weil dort
-Doppelpunkte und Gedankenstriche zulässig sind.
+1. Was ist die Kernaussage jedes Absatzes, in einem Satz?
+2. Welche Wörter, Abkürzungen oder Bezüge sind nicht erklärt oder nicht
+   auflösbar?
+3. Wo folgt auf eine Behauptung keine Begründung, oder auf eine Begründung
+   keine Konsequenz?
+4. Welcher Absatz lässt sich mit dem vorigen nicht verbinden?
 
-Was das Skript nicht kann und weiterhin von Hand geschieht, ist die inhaltliche
-Belegprüfung, die Kontrolle der Behauptungsstärke und die Frage, ob ein Absatz
-ein Ergebnis vorwegnimmt.
+Weicht die genannte Kernaussage vom Absatzplan ab, ist der Absatz nicht
+gelungen. Was der Subagent nicht auflösen kann, wird im Text aufgelöst, auch
+wenn der Begriff in einem früheren Kapitel definiert ist, denn der Betreuer
+liest genauso.
 
 ---
 
-## 8 Reihenfolge und Zeit
+## 5 Was Claude mit jedem Abschnitt liefert
 
-Bis zur Abgabe am 15.10.2026 bleiben fünf Wochen und drei Tage. Zwei Dinge
-liegen auf dem kritischen Pfad und sollten diese Woche fallen.
+**Die Datei.** Vollständig, Zeilenenden und UTF-8 unverändert, alle Kommentare
+erhalten, alter Wortlaut als Kommentar.
 
-**E1 blockiert alles.** Die Entscheidung über die exogene oder endogene Bindung
-bestimmt die Gleichungen in 3.3.3, den Umfang von 3.3.2, die
-Sensitivitätsliste in 4.4 und die Begründung für den Verzicht auf Dualvariablen.
-Solange sie offen ist, lässt sich weder 3.3 schreiben noch das Modell fertig
-rechnen.
+**Der Belegzettel.** Je Absatz eine Zeile je Aussage mit Quelle oder mit dem
+Vermerk Mechanismus, eigene Ableitung oder unbelegt. Unbelegte Aussagen stehen
+nicht im Text, ohne dass der Verfasser sie gesehen hat.
 
-**Die Rechenläufe blockieren Kapitel 4.** Kapitel 4 lässt sich nicht
-ausformulieren, bevor Ergebnisse vorliegen, und die Ergebnisse hängen an E1 bis
-E3. Der Modelllauf sollte deshalb parallel zum Ausformulieren von 3.2 starten
-und nicht danach.
+**Der Argumentzettel.** Jedes Argument, das nicht aus den Stichpunkten oder aus
+`AENDERUNGEN_KAP1_2.md` stammt, einzeln, als eigenständiges Argument
+gekennzeichnet. Dazu zählen auch Hinweise des Betreuers, für die kein Beleg
+vorliegt, etwa die Begrenzung des KuPilot-Einsatzes auf eine Stunde.
 
-Vorschlag für die Staffelung:
+**Der Prüfbericht.** Ergebnis der Prüfsuite und der Fremdleser-Prüfung, mit
+dem, was behoben ist und was offen bleibt.
+
+---
+
+## 6 Korrektur der Kapitel 1 und 2
+
+Die Reihenfolge steht in `AENDERUNGEN_KAP1_2.md` Abschnitt 5. Drei Regeln
+kommen bei der Korrektur hinzu.
+
+- **Erst die Entscheidungen.** V1 bis V13 aus der Änderungsliste binden mehrere
+  Absätze. Die Rückfragen an den Betreuer laufen parallel, die übrigen
+  entscheidet der Verfasser vor dem ersten Zyklus.
+- **Kürzung und Kommentar zusammen.** Ein Absatz wird nur einmal angefasst. Die
+  Kürzungen aus `KUERZUNGEN_KAP1_2.md` und die Betreuerkommentare gehen in
+  denselben Absatzplan.
+- **Definitionen wandern nach vorn.** Wird ein Begriff nach Abschnitt 5 der
+  `CLAUDE.md` an seinem Ort definiert, prüft Claude alle späteren Fundstellen
+  auf abweichende Erklärungen und meldet sie.
+
+Nach jedem Kapitel wird gebaut und der Seitenstand gegen die Ziele in
+`STRUKTUR.md` gehalten, nämlich fünf Seiten für Kapitel 1, 25 für Kapitel 2
+und 14 für Kapitel 3.
+
+---
+
+## 7 Neue Kapitel
+
+Kapitel 4 bis 6 entstehen nach demselben Zyklus. Zwei Dinge sind anders.
+
+- Vor dem ersten Absatzplan steht die Stichpunktphase aus Abschnitt 3.
+- Die Zeile *Nicht sagen* im Absatzplan ist Pflicht, weil die Kapitel 1 und 2
+  mehrfach Ergebnisse vorweggenommen haben, die erst Kapitel 4 trägt.
+
+Kapitel 4 wartet auf die Rechenläufe für das Jahr 2025. Kapitel 5 trägt die
+beiden Aussagen, die aus 3.1.1 dorthin verschoben sind, siehe `STRUKTUR.md`.
+
+---
+
+## 8 Zeit
+
+Bis zur Abgabe am 15.10.2026 bleiben vier Wochen und drei Tage.
 
 | Zeitraum | Schreiben | Parallel |
 |---|---|---|
-| 08.09. bis 14.09. | E1 bis E3 entscheiden, 3.1 abschließen, 3.2 | Modell nach E1 umbauen |
-| 15.09. bis 21.09. | 3.3 und 3.4 | Rechenläufe Q4 2025 |
-| 22.09. bis 28.09. | Kapitel 4 | Abbildungen erzeugen |
-| 29.09. bis 05.10. | Kapitel 5 | Folgeänderungen aus dem Protokoll |
-| 06.10. bis 12.10. | Kapitel 6, Verzeichnisse, Gesamtdurchsicht | Literaturdatei bereinigen |
+| 14.09. bis 18.09. | Entscheidungen V1 bis V13, Kapitel 1, Abschnitt 2.1 | Rückfragen an den Betreuer |
+| 19.09. bis 23.09. | Abschnitte 2.2 bis 2.4 mit A1 und A3, Kapitel 3 auf 14 Seiten | Rechenläufe Jahr 2025 |
+| 24.09. bis 30.09. | Kapitel 4 | Abbildungen erzeugen |
+| 01.10. bis 06.10. | Kapitel 5 | Folgeänderungen aus dem Protokoll |
+| 07.10. bis 11.10. | Kapitel 6, Kurzfassung, Verzeichnisse, Gesamtdurchsicht | Literaturdatei bereinigen |
+| 12.10. | Kolloquium | |
 | 13.10. bis 15.10. | Puffer und Abgabe | |
 
-Die Woche für Kapitel 5 ist knapp bemessen, weil dort die Diskussion, die
-adverse Selektion, der Gaming-Block D1 bis D5 und die kritische Würdigung der
-Modellannahmen zusammenkommen. Wenn Zeit fehlt, wird sie dort fehlen, nicht in
-Kapitel 3.
+Die Woche für Kapitel 5 ist knapp. Wenn Zeit fehlt, fehlt sie dort.
 
 ---
 
 ## 9 Wiederkehrende Fehlerbilder
 
-Die Durchsichten der Kapitel 1 und 2 haben fünf Muster hervorgebracht. Der
-Zyklus fängt sie an bestimmten Stellen ab.
+Die Betreuerkommentare haben zu den fünf Mustern vom 07.09.2026 vier weitere
+ergeben. Der Zyklus fängt sie an bestimmten Stellen ab.
 
-**Ergebnisse werden vorweggenommen.** Abgefangen durch die Zeile *Nicht sagen*
-im Freigabezettel und durch die Frage in Schritt 5, ob der Absatz eine Aussage
-trifft, die erst ein späteres Kapitel belegt.
-
-**Eine Quelle trägt weniger, als der Satz behauptet.** Abgefangen durch den
-Belegzettel, der jede Zuordnung sichtbar macht, statt sie im Fließtext zu
-verstecken.
-
-**Ein Begriff wird eingeführt, nachdem er zum ersten Mal verwendet wurde.**
-Abgefangen durch die Terminologieprüfung in Schritt 2, die die erste Verwendung
-über alle Kapitel sucht.
-
-**Eine Formulierung kehrt zurück, die schon einmal zurückgenommen war.**
-Abgefangen dadurch, dass Rücknahmen als Kommentar in der Datei stehen und nicht
-nur im Protokoll.
-
-**Zwei Stellen sagen dasselbe.** Abgefangen in Schritt 2, weil die Prüfung der
-Vorlage die Nachbarabschnitte mitliest.
+| Muster | Abgefangen durch |
+|---|---|
+| Ergebnisse werden vorweggenommen | Zeile *Nicht sagen* im Absatzplan, Frage in Schritt 5 |
+| Eine Quelle trägt weniger als der Satz | Belegzettel |
+| Ein Begriff wird vor seiner Definition verwendet | Zeile *Begriffe* im Absatzplan, Liste in `CLAUDE.md` Abschnitt 5 |
+| Eine zurückgenommene Formulierung kehrt zurück | alter Wortlaut als Kommentar in der Datei |
+| Zwei Stellen sagen dasselbe | Schritt 1 liest die Nachbarabschnitte mit |
+| These ohne angebundene Begründung | Zeile *Aufbau* im Absatzplan, Frage 3 der Fremdleser-Prüfung |
+| Absatz ohne Konsequenz | Zeile *Aufbau* endet mit der Konsequenz, Frage 3 der Fremdleser-Prüfung |
+| Pronomen und unbestimmte Nominalphrasen ohne Bezug | Frage 2 der Fremdleser-Prüfung, Suchmuster U3 und U4 |
+| Fachliche Pauschalisierung | Zeile *Nicht sagen*, Stilregel 9 |

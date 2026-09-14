@@ -677,6 +677,220 @@ damit schon fort. Im ganzen Kapitel gibt es kein aktives Vorkommen mehr.
 Befunde sind der Altbestand. Build fehlerfrei, 84 Seiten. Anhang A ab 61,
 Anhang B ab 71, Anhang C ab 76.
 
+
+### 14.09.2026, Kopfzeile berichtigt und vier Saetze aus der Durchsicht
+
+**Kopfzeile, entschieden vom Verfasser.** In extras/header.tex stand in Zeile
+185 pagestyle{headings}, der KOMA-eigene Seitenstil. Er hob die Konfiguration
+von scrlayer-scrpage in den vier Zeilen darueber auf, sodass die Kopfzeile nur
+noch von Inhalts-, Literatur- und Tabellenverzeichnis gesetzt wurde und danach
+stehen blieb. In den Kapiteln 2 und 3 stand deshalb Inhaltsverzeichnis, in den
+Anhaengen Tabellenverzeichnis, und zwar seit Beginn der Arbeit. Jetzt
+scrheadings und automark[chapter]{chapter}. Der Fehler lag in der Vorlage und
+nicht in einer Aenderung des Verfassers. Gefunden hat ihn der Verfasser selbst,
+weil beim Kopieren aus dem PDF die Kopfzeile mitten im Satz stand.
+
+**A2 neu gefasst, Wortlaut des Verfassers.** Die Forderung lautet jetzt, die
+Zusage muss binden und damit bei Nichterfuellung wirksame Sanktionen enthalten.
+Der Folgesatz steht in Fassung C und begruendet, weshalb die Sanktion nicht auf
+die entgangene Verguetung beschraenkt bleiben darf. Angemerkt ist zweierlei.
+A1 traegt bereits, dass Nichterfuellung die Vorauslastung entwertet, der neue
+Satz nennt deshalb eine andere Folge. Und CLAUDE.md Abschnitt 9 haelt fest, dass
+die Arbeit die Hoehe der Poenale nicht bestimmt, waehrend dieser Satz eine
+Untergrenze fordert. Der Verfasser hat das so gewaehlt.
+
+**A3 neu gefasst, Wortlaut des Verfassers.** Die PTDF- und LODF-Sensitivitaeten
+entfallen dort, an ihre Stelle tritt die Pruefung in den Vorschau- und
+Netzsicherheitsrechnungen des UENB. Beide Akronyme bleiben im Verzeichnis, denn
+chapter_2.tex Zeile 125 fuehrt sie ein und nutzt sie.
+
+**Einleitungssatz von 3.1.2, Fassung A.** Er leitet jetzt allgemein ein, wie das
+Produkt gebildet wird, und behauptet nicht mehr, der Entwurf trage die Pruefung
+der Umsetzbarkeit.
+
+**Befund des Verfassers, bestaetigt.** Er hat gefragt, ob die Arbeit die
+Bandbreite ueberhaupt nennt. Sie tut es nicht. Bandbreite, Kriterium und
+Kriterien kommen im aktiven Text kein einziges Mal vor. CLAUDE.md Abschnitt 8
+verlangt fuer jede Rahmenantwort den Vierschritt aus Setzung, Begruendung,
+Bandbreite und Kriterium und nennt den vierten Teil den tragenden. Beim
+Ausformulieren von 3.1.2 sind nur Setzung und Begruendung uebrig geblieben. Das
+ist kein Fehler im Text, aber eine Abweichung von der Vorgabe. In STRUKTUR.md
+vorgemerkt.
+
+**Vier Tippfehler beim Uebernehmen berichtigt**, naemlich Betreib,
+verwantowrten, die der UENB und Netzsicherheitsrechnugnen, dazu Vorschau gross
+und der Bindestrich bei Vorschau- und. Alle vier sind an der Stelle vermerkt.
+
+**Stand.** Pruefsuite ohne Befund, Build fehlerfrei, 84 Seiten. Die Kopfzeilen
+tragen jetzt durchgehend das richtige Kapitel.
+
+
+### 14.09.2026, Abruf um Dauer, Freistellung und Nachlaufpflicht ergaenzt
+
+**Fassung A, gewaehlt vom Verfasser.** Vier Saetze im Abrufblock von 3.1.2. Die
+Anlage haelt die Leistungsaenderung hoechstens eine Stunde, wobei diese Stunde
+ueber zwei Zeitscheiben reichen kann, und endet frueher, sobald der UENB den
+Engpass mit anderen Mitteln behoben hat. Nach einem Abruf ist der Akteur fuer
+den restlichen Liefertag von der Vorhaltung freigestellt. An die Stelle der
+Lieferpflicht tritt eine Nachlaufpflicht, nach der er seinen Leistungspunkt
+nicht wieder in die den Engpass verschaerfende Richtung verschieben darf. Auch
+diese Pflicht endet nach einer festgelegten Frist.
+
+**Der erste Satz fasst zusammen.** Die alte Fassung liess das Ende offen,
+naemlich bis der UENB den Engpass anders behoben hat. Der Verfasser hat am
+14.09.2026 eine Hoechstdauer von einer Stunde vorgegeben. Beides steht jetzt in
+einem Satz, die Stunde als Grenze und das fruehere Ende als Bedingung.
+
+**Die Nachlaufpflicht ist neu.** Sie ist ein eigener Produktbestandteil, den die
+Arbeit bisher nicht kennt. Der Verfasser hat sie vorgegeben, naemlich dass der
+Akteur nach einem Abruf keine Energie mehr liefern muss, seinen Leistungspunkt
+aber nicht wieder verschaerfend einstellen darf.
+
+**Nicht uebernommen.** Der Ausdruck neutrales Gebot aus der Vorgabe. Er ist in
+der Arbeit nicht eingefuehrt und wuerde einen neuen Begriff schaffen, der zu
+erklaeren waere. Die Sache steht als Pflicht.
+
+**Offen.** Die Frist, nach der die Nachlaufpflicht endet, ist unbestimmt. Der
+Verfasser hat keine Zahl genannt, der Satz sagt deshalb festgelegte Frist. In
+STRUKTUR.md vorgemerkt.
+
+**Binaritaetssatz verschoben, Fassung A.** Der Satz, wonach eine verspaetete
+oder zu geringe Leistungsaenderung das Betriebsmittel nicht mehr in einen
+dauerbelastbaren Zustand bringt, stand bei der Bindungsdauer und handelt von der
+Erfuellung. Er steht jetzt im Poenalenblock und begruendet dort, weshalb die
+Poenale nicht abgestuft werden kann. Angemerkt und vom Verfasser in Kauf
+genommen ist, dass A2 im Katalog dieselbe Aussage bereits traegt, dort aus dem
+Ueberlastintervall begruendet.
+
+**Zwei weitere Saetze aus derselben Durchsicht.** Der Satz, wonach der Akteur
+seinen Fahrplan weiterhin selbst aufstellt, ist gestrichen. Er wiederholte den
+Satz davor, und Kapitel 2 traegt die Fahrplanhoheit an zwei Stellen. Und die
+Abgrenzung gegen eine Anfrage beim Abrufsignal ist entfallen, der Satz nennt nur
+noch das Signal.
+
+**Stand.** Pruefsuite ohne Befund, Build fehlerfrei, 84 Seiten.
+
+
+### 14.09.2026, Vierschritt aus CLAUDE.md Abschnitt 8 eingeschraenkt
+
+**Entschieden vom Verfasser.** Der Vierschritt aus Setzung, Begruendung,
+Bandbreite und Kriterium gilt nicht fuer jede Rahmenantwort in 3.1.2. Gesetzt
+wird allein, was fuer die Optimierung von Belang ist. Der Verfasser haelt den
+Ausdruck Bandbreite zudem fuer ungeeignet und will ihn nicht im Text.
+
+**Folge.** Der am selben Tag festgestellte Befund, wonach 3.1.2 nur Setzung und
+Begruendung traegt und die Woerter Bandbreite, Kriterium und Kriterien im
+aktiven Text nicht vorkommen, ist damit kein offener Punkt mehr, sondern eine
+bewusste Abweichung von CLAUDE.md Abschnitt 8.
+
+**Was weiterhin gilt.** Produktparameter, die als Eingangsgroesse in das Modell
+gehen, tragen eine Setzung und eine Begruendung. Das sind nach CLAUDE.md
+Abschnitt 8 Gruppe B die vorgehaltene Leistung, das gebundene Ladezustandsband,
+die Bindungsdauer, die Reaktionszeit und die Verguetungsform. Sie stehen in
+Tabelle 3.1 mit ihrem Basisfall.
+
+**Nicht zu setzen sind Groessen, die der Betrieb vorgibt.** Dazu zaehlt nach der
+Entscheidung vom 14.09.2026 die Dauer der Nachlaufpflicht. Der Verfasser kann
+sie weder pruefen noch untersuchen, weil sie aus dem Betrieb folgt und nicht aus
+dem Modell.
+
+### 14.09.2026, Betreuerkommentare aufgenommen, CLAUDE.md und WORKFLOW.md neu gefasst
+
+Der Betreuer hat die PDF-Fassung bis Abschnitt 2.1.5 mit 106 Kommentaren
+versehen. Sie sind in `AENDERUNGEN_KAP1_2.md` als B01 bis B106 aufgenommen,
+absatzweise den Kapiteldateien zugeordnet und mit der Kuerzungsliste vom
+11.09.2026 zusammengefuehrt. Nichts davon ist in den Kapiteldateien umgesetzt.
+
+Drei Entscheidungen des Verfassers, geaeussert am 14.09.2026.
+
+1. `CLAUDE.md` vom 08.09.2026 ist vollstaendig ersetzt. Die alte Fassung steht
+   in der Historie unter 38739f0. Die neue Fassung traegt die aus den
+   Kommentaren abgeleiteten Stilregeln 1 bis 10, die Liste der vor der ersten
+   Verwendung zu definierenden Begriffe mit ihrem Ort und die seit dem
+   11.09.2026 geltenden Entscheidungen, naemlich endogener Reservierungspreis,
+   Basisfall, ganzes Jahr 2025 und Produktname kurative Reservierung.
+2. Die Arbeitseinheit wechselt vom Satz auf den Absatz. Das satzweise Verfahren
+   mit drei Fassungen je Satz ist abgeloest, weil es den Zusammenhang zwischen
+   den Saetzen verloren und Logikfehler eingebaut hat. `WORKFLOW.md` regelt den
+   Absatzplan als Freigabeeinheit, den Zyklus je Unterabschnitt und die
+   Fremdleser-Pruefung durch einen Subagenten ohne Kontext.
+3. Zwei Stilregeln sind aufgehoben. Der Doppelpunkt ist fuer These mit
+   folgender Erklaerung zulaessig, weil der Betreuer ihn vorschlaegt (B06), und
+   Absaetze werden kuerzer statt seltener umbrochen, weil der Betreuer in 2.1.4
+   selbst einen Umbruch eingefuegt hat (B98). `tools/pruefen.py` meldet den
+   Doppelpunkt deshalb nicht mehr, Gedankenstrich und Semikolon weiterhin.
+
+Offen und nicht stellvertretend entschieden sind die Punkte V1 bis V13 in
+`AENDERUNGEN_KAP1_2.md` Abschnitt 0, darunter die Erklaerung zur KI-Nutzung
+in der Eidesstattlichen Versicherung, die Trennung von kurativer Vorhaltung und
+kurativer Reservierung, der Ersatz fuer das Wort Reichweite, der Ausdruck fuer
+die Leistungsaenderung des Akteurs statt aktivieren und die Quelle fuer das
+Grenzwertkonzept der deutschen UeNB.
+
+Eigenstaendige Argumente, die in der Aenderungsliste als solche gekennzeichnet
+sind und vom Verfasser zu pruefen bleiben: der Schlusssatz zu 1.1 Absatz 5, dass
+ein Instrument fuer den beschriebenen Bedarf nur im Ereignisfall wirken und an
+wechselnden Orten verfuegbar sein muss, und die Ergaenzung zu 2.1.4, dass die
+Einplanung mit der Zahl kurativer Massnahmen zur kombinatorischen Aufgabe wird,
+die auf einen Hinweis des Betreuers zurueckgeht und keinen Beleg hat.
+
+Zwei Belege sind bei der Aufnahme geprueft. Die TenneT-Mitteilung zum
+Pilotbetrieb ist ein Scan ohne Textebene und laesst sich mit
+`tools/quellencheck.py` nicht durchsuchen, der Wortlaut zu aktiviert und fuenf
+Minuten ist vom Verfasser am PDF zu pruefen (V9). Sous 2025 definiert die
+Sicherheitsmarge des praeventiven Betriebs, ob die Quelle den Satz G 66 zur
+Wirkung der Marge auf Volumen und Kosten traegt, ist offen.
+
+### 14.09.2026, Entscheidungen V1 bis V13 zur Aenderungsliste
+
+Der Verfasser hat die dreizehn Vorfragen aus `AENDERUNGEN_KAP1_2.md`
+Abschnitt 0 ohne Rueckfrage an den Betreuer entschieden. Angenommen wie
+vorgeschlagen sind V2 (kurative Vorhaltung als Taetigkeit, kurative
+Reservierung als Produkt, beide in 1.2 definiert), V3 (Doppelpunkt fuer These
+mit Erklaerung), V5 (Reichweite gestrichen, Planungshorizont), V6 (A2, Thermik
+in einen Anhang), V7 (A1, Weber-Ansatz in Anhang A), V10 (Tabelle 2.1 hinter
+den Verweissatz), V11 (Engpass, Ausfallvariante, Befund in der Einleitung von
+2.1) und V12 (Redispatch als Halbsatz in 1.1, Definition in 2.1, E 91
+entfaellt).
+
+Abweichend oder ergaenzend entschieden: V1, keine Erklaerung zur KI-Nutzung,
+die Vorlage der Eidesstattlichen Versicherung bleibt unveraendert. V4, der
+Akteur setzt die Leistungsaenderung um, das Leitsystem loest die Massnahme aus,
+Aktivierung nur in Zitaten. V9, die TenneT-Mitteilung traegt nach Auskunft des
+Verfassers sowohl die Begrenzung des PSKW-Einsatzes auf eine Stunde als auch
+die Umsetzung innerhalb von fuenf Minuten, beide Stellen werden damit belegt.
+V13, der UeNB erkennt spaet entstehende Netzzustaende in der laufenden
+Netzsicherheitsrechnung und beherrscht sie mit Schaltmassnahmen,
+Phasenschiebern und kurzfristigem Redispatch der noch reagierenden Anlagen,
+das Netz bleibt sicher, der Eingriff wird teurer und der Anlagenkreis kleiner.
+Diese Aussage ist Setzung des Verfassers und im Belegzettel so zu fuehren,
+bis eine Quelle sie traegt, in Betracht kommt leeuwen_integration_2020.
+
+Offen bleibt V8, die Quelle fuer das Grenzwertkonzept der deutschen UeNB. Der
+Verfasser liefert Titel oder Link, danach wird der Bibeintrag angelegt.
+
+### 14.09.2026, V8 geschlossen, Deutsches Grenzwertkonzept als Quelle
+
+Der Betreuer meint mit dem Grenzwertkonzept das Dokument der vier deutschen
+UeNB Deutsches Grenzwertkonzept, Regeln zur Ermittlung und Ueberwachung von
+Grenzwerten fuer die Systemfuehrung des deutschen Uebertragungsnetzes, Stand
+November 2021, veroeffentlicht auf netztransparenz.de. Es ist die nationale
+Konkretisierung der SOGL fuer die Netzleitsysteme. Der Eintrag
+`uenb_grenzwertkonzept_2021` ist in `literature.bib` angelegt, die Datei liegt
+als 211100_UeNB_Deutsches Grenzwertkonzept.pdf in literature/PDFs mit Textfassung
+in literature/txt und Zeile in tools/quellen_map.tsv.
+
+Folgen fuer den Text, vermerkt in `AENDERUNGEN_KAP1_2.md`. Satz G 183 macht
+die Hoeherauslastung allein vom Ueberlastintervall abhaengig, nach dem Konzept
+ist die TATL das Minimum aus externen, systemischen, schutztechnischen und
+thermischen Grenzen, und die Anwendungsdauer mindestens gleich der
+Umsetzungszeit ist eine Bedingung unter mehreren. G 261 bis 266 in 2.1.4
+bekommen damit ihren Beleg (B94), mit dem Vorbehalt, dass das Konzept die
+Kurzschlussfestigkeit nicht behandelt. Neu fuer den Mechanismus ist die
+Freigabe des Stromkreises durch den UeNB, ohne die TATL gleich PATL gilt.
+Die Zusammenfassung der Inhalte stammt aus einer Zusammenstellung des
+Verfassers und ist vor dem Schreiben an den Fundstellen zu pruefen.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

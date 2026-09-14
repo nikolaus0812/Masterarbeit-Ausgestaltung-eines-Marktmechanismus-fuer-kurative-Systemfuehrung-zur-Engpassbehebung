@@ -157,6 +157,20 @@ Ort. Sie gehören in die Einschränkungen in Kapitel 5.
 Der vollständige Wortlaut der sieben gestrichenen Sätze steht als Kommentar in
 `chapter_3.tex`.
 
+## Erledigt, Vierschritt in 3.1.2, entschieden am 14.09.2026
+
+CLAUDE.md Abschnitt 8 verlangt für jede Rahmenantwort vier Teile, nämlich
+Setzung, Begründung, Bandbreite und Kriterium. Der Verfasser hat am 14.09.2026
+entschieden, dass das nicht durchgängig gilt. Gesetzt wird allein, was für die
+Optimierung von Belang ist, und der Ausdruck Bandbreite kommt im Text nicht vor.
+Damit ist der Befund keine Lücke mehr, sondern eine bewusste Abweichung.
+
+## Nachlaufpflicht, Stand 14.09.2026
+
+Die Nachlaufpflicht wird nur benannt. Wie lange sie gilt, folgt aus dem Betrieb
+und lässt sich mit dem Modell weder prüfen noch untersuchen, entschieden vom
+Verfasser am 14.09.2026. Sie erscheint deshalb nicht als Zeile in Tabelle 3.1.
+
 ## Vorgemerkt, noch nicht im Text
 
 1. **Ausschließlichkeit als Regel.** Steht in der Zusage nur als Beschreibung. 3.2

@@ -4,7 +4,8 @@ Umgesetzt sind die zehn Pruefungen aus Abschnitt 3 des Uebergabepapiers und aus
 Abschnitt 7 von WORKFLOW.md, naemlich
 
    1  Zeilenenden und Kodierung, CRLF und UTF-8
-   2  Stil im Fliesstext, keine Doppelpunkte, Gedankenstriche, Semikola
+   2  Stil im Fliesstext, keine Gedankenstriche und Semikola. Der Doppelpunkt
+      wird seit dem 14.09.2026 nicht mehr gemeldet, CLAUDE.md Stilregel 16.
    3  Klammerbilanz und Dollarparitaet
    4  Umgebungen, jedes \\begin hat sein \\end
    5  doppelte Leerzeilen
@@ -97,8 +98,9 @@ _ZITAT = re.compile(r"\\(?:cite|parencite|textcite|footcite|citeauthor|citeyear"
 _AC = re.compile(r"\\(ac|acs|acl|acf|acp)\*?\{([^}]*)\}")
 _BIB_EINTRAG = re.compile(r"@\w+\s*\{\s*([^,\s]+)\s*,")
 
-STIL = ((re.compile(r":"), "Doppelpunkt"),
-        (re.compile(r";"), "Semikolon"),
+# Doppelpunkt seit dem 14.09.2026 zulaessig fuer These mit folgender
+# Erklaerung, Betreuerkommentar B06, deshalb nicht mehr in der Liste.
+STIL = ((re.compile(r";"), "Semikolon"),
         (re.compile(r"-{2,3}|–|—"), "Gedankenstrich"))
 
 

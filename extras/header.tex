@@ -182,7 +182,15 @@ afterskip=.25\baselineskip]{subsubsection}
 \renewcommand*{\chaptermarkformat}{} % No Numbering of chapters in headline
 \renewcommand{\headfont}{\normalfont} % Normal font in headline
 \raggedbottom % No vertical balancing of line spaces
-\pagestyle{headings} % Set the standard page style
+% BERICHTIGT am 14.09.2026, entschieden vom Verfasser. Hier stand
+% pagestyle{headings}, der KOMA-eigene Seitenstil. Er hob die Konfiguration
+% von scrlayer-scrpage in den Zeilen darueber auf, sodass die Kopfzeile nur
+% noch von Inhalts-, Literatur- und Tabellenverzeichnis gesetzt wurde und
+% danach stehen blieb. In Kapitel 2 und 3 stand deshalb Inhaltsverzeichnis,
+% in den Anhaengen Tabellenverzeichnis. Alte Fassung:
+%\pagestyle{headings} % Set the standard page style
+\pagestyle{scrheadings} % Set the standard page style
+\automark[chapter]{chapter} % Jedes Kapitel setzt seine eigene Marke
 
 \renewcommand*\chapterpagestyle{empty}
 
