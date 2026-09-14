@@ -136,6 +136,21 @@ und V fuehrt, die der Weber-Ansatz belegt.
 Offen bleibt, ob die beiden Anhangstabellen die Zahlenwerte fuehren oder nur
 die Zeichen, denn derzeit wiederholen sie die Werte aus 3.2.2.
 
+## Nach Kapitel 5 zu uebertragen, vorgemerkt am 14.09.2026
+
+Mit der Streichung der Marktdesignansaetze aus 3.1.1 sind zwei Aussagen ohne
+Ort. Sie gehören in die Einschränkungen in Kapitel 5.
+
+1. Die kurative Reservierung geht vom geltenden Marktdesign aus und wäre bei
+   Einführung knotenscharfer Preise oder eines Redispatchmarkts neu
+   auszugestalten. Ein Teil davon steht jetzt in `chapter_2.tex` Zeile 351.
+2. Die flexiblen Netzanschlüsse nach § 17 Abs. 2b EnWG stärken die kurative
+   Reservierung, weil sie das marktliche Handeln begrenzen, eine
+   Systemdienstleistung aber nicht.
+
+Der vollständige Wortlaut der sieben gestrichenen Sätze steht als Kommentar in
+`chapter_3.tex`.
+
 ## Vorgemerkt, noch nicht im Text
 
 1. **Ausschließlichkeit als Regel.** Steht in der Zusage nur als Beschreibung. 3.2

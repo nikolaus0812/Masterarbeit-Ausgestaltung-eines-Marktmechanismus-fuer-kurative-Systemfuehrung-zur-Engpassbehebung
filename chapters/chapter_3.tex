@@ -83,9 +83,18 @@
 Die kurative Systemführung hält für den Fehlerfall eine nachgelagerte Handlungsmöglichkeit bereit und erlaubt es dem \ac{ÜNB}, das Netz im Normalbetrieb höher auszulasten.
 Sie kommt damit als zusätzliche Systemdienstleistung für das Engpassmanagement in Betracht, deren Gegenstand nicht ein Eingriff, sondern die Bereitschaft zu einem Eingriff ist.
 Speicher sind damit die Schlüsseltechnologie der kurativen Systemführung, wobei ein \ac{BESS} durch die freie Standortwahl und den wachsenden Bestand hervortritt.
-Die Bemessung ihrer Vergütung im Engpassmanagement ist nicht abschließend geklärt, sodass sich eine kurative Vorhaltung nicht in den bestehenden Rahmen einfügt, sondern neu zu fassen ist.
-Dazu ist die kurative Vorhaltung zuerst als Produkt zu fassen und dieses Produkt anschließend aus der Sicht des Anlagenbetreibers zu bewerten.
-Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stellt ein Optimierungsmodell auf, dessen Ergebnis es gegen einen veröffentlichten Erlösvergleich für Speicher prüft.
+Die Bemessung ihrer Vergütung im Engpassmanagement ist nicht abschließend geklärt, sodass sich eine kurative Vorhaltung nicht in den bestehenden Rahmen einfügt, sondern eigens auszugestalten ist.
+Dazu ist die kurative Vorhaltung zuerst als Produkt zu entwerfen und dieses Produkt anschließend aus der Sicht des Anlagenbetreibers zu bewerten.
+% ERWEITERT am 14.09.2026, Fassung C, gewaehlt vom Verfasser. Der Satz nennt
+% jetzt, wozu das Modell dient, naemlich zur Preisfindung und damit zum
+% Verguetungsrahmen. Die Preisbestimmung steht als dritte Taetigkeit des
+% Kapitels neben Anforderungen und Produktrahmen, das Modell ist das Werkzeug.
+% BEGRIFF GEPRUEFT. Verguetungsrahmen steht nicht auf der Sperrliste von
+% CLAUDE.md Abschnitt 5, dort stehen Mindestverguetung, Verguetungsbereich und
+% Untergrenze der Verguetung. Das Wort ist in 3.2 bereits eingefuehrt.
+% ALTE FASSUNG:
+%Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stellt ein Optimierungsmodell auf, dessen Ergebnis es gegen einen veröffentlichten Erlösvergleich für Speicher prüft.
+Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und bestimmt den kurativen Reservierungspreis mit einem Optimierungsmodell, das den fehlenden Vergütungsrahmen ausfüllt und dessen Ergebnis es gegen einen veröffentlichten Erlösvergleich für Speicher prüft.
 
 % AUSFORMULIERT am 08.09.2026, satzweise nach CLAUDE.md Abschnitt 3.2. Sechs
 % Saetze, jeder vom Verfasser aus drei Fassungen gewaehlt.
@@ -316,7 +325,12 @@ Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stell
 % SATZ ERSETZT am 11.09.2026, Fassung C mit der Aenderung des Verfassers, das
 % Produkt kurative Reservierung zu nennen. Alte Fassung, nicht wieder aufnehmen:
 %   Dieser Abschnitt stellt die Anforderungen zusammen, entwickelt daraus den Rahmen einer kurativen Reservierung und leitet aus diesem Rahmen den Forschungsbedarf ab.
-Dieser Abschnitt stellt die Anforderungen zusammen und entwickelt aus ihnen mit der kurativen Reservierung ein Produkt, das neben die diskutierten Anpassungen des Marktdesigns tritt.
+% NEU GEFASST am 14.09.2026, nach der Streichung der Marktdesignansaetze. Der
+% Satz nannte sie, jetzt nennt er das Ziel des Produkts. Die Nichtkonkurrenz
+% zum praeventiven Redispatch ist Vorgabe des Verfassers vom 14.09.2026 und
+% stuende sonst nirgends mehr. Alte Fassung:
+%Dieser Abschnitt stellt die Anforderungen zusammen und entwickelt aus ihnen mit der kurativen Reservierung ein Produkt, das neben die diskutierten Anpassungen des Marktdesigns tritt.
+Dieser Abschnitt stellt die Anforderungen zusammen und entwickelt aus ihnen mit der kurativen Reservierung ein Produkt, das das Engpassmanagement um eine Komponente erweitert, die nicht mit dem präventiven Redispatch um dieselbe Leistung konkurriert.
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026. Der Unterabschnitt steht jetzt vor
@@ -923,13 +937,33 @@ Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung m
 %    \item Solche Eingriffe begrenzen das marktliche Handeln einer Anlage, eine Systemdienstleistung aber nicht, und stärken damit die kurative Reservierung gegenüber ihrer Alternative
 % --- Ueberleitung zu 3.1.2, NEU am 11.09.2026, vom Verfasser bestaetigt
 %    \item Keiner der Ansätze verbindet Vorhaltung, Netzbezug und Reaktionszeit, weshalb die kurative Reservierung als eigenes Produkt zu fassen ist
-Die derzeit diskutierten Anpassungen des Marktdesigns lassen sich in zwei Gruppen ordnen, nämlich Märkte, die um dieselbe Leistung konkurrieren, und Eingriffe über Rahmenvorgaben.
-Zur ersten Gruppe zählen zeitlich und regional differenzierte Netzentgelte, Redispatchmärkte und eine feinere räumliche Preisbildung bis hin zu knotenscharfen Preisen, von denen oberhalb der Niederspannung bislang keiner umgesetzt ist \cite{bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
-Würden sie eingeführt, konkurrierten Redispatchmärkte unmittelbar um dieselbe Leistung, während Netzentgelte und räumliche Preise die Erlöse der übrigen Vermarktung verschöben, und beides ginge in die Opportunitätskosten der kurativen Reservierung ein.
-Da keiner dieser Ansätze umgesetzt ist, geht die kurative Reservierung vom geltenden Marktdesign aus und wäre mit ihrer Einführung neu auszugestalten.
-Zur zweiten Gruppe gehören die flexiblen Netzanschlüsse nach §\,17 Abs.\,2b \ac{EnWG}, die bereits gelten und dem Netzbetreiber erlauben, die Leistung einer Anlage zu begrenzen.
-Wo sie greifen, mindern sie den Wert der übrigen Vermarktung, während ein kurativer Abruf den Engpass entlastet und von der Begrenzung nicht erfasst wird, sodass sie die kurative Reservierung gegenüber ihrer Alternative stärken.
-Keiner dieser Ansätze verbindet Vorhaltung, Netzbezug und Reaktionszeit, weshalb die kurative Reservierung als eigenes Produkt zu fassen ist und als weiterer Ansatz zur Lösung der Engpassprobleme diskutiert werden kann.
+% GESTRICHEN am 14.09.2026, entschieden vom Verfasser. Die Einordnung der
+% Marktdesignansaetze hat mit den Anforderungen nichts zu tun. A1 bis A8 sagen,
+% was der Mechanismus leisten muss, dieser Block sagt, was es sonst gibt. Das
+% ist eine Abgrenzung und keine Bedingung, und sie laesst sich deshalb auch
+% nicht in den Katalog ueberfuehren.
+% DOPPELUNG ZU KAPITEL 2. Die Substanz steht dort bereits, naemlich die
+% flexiblen Netzanschluesse nach Paragraf 17 Abs. 2b EnWG in Zeile 315 und die
+% Alternativen zur einheitlichen Gebotszone in den Zeilen 348 bis 350.
+% CLAUDE.md Abschnitt 9, offener Punkt 4, hatte die Streichung vorgeschlagen.
+% NACH KAPITEL 5 ZU UEBERTRAGEN, in STRUKTUR.md vorgemerkt:
+%   1  Die kurative Reservierung geht vom geltenden Marktdesign aus und waere
+%      bei Einfuehrung knotenscharfer Preise oder eines Redispatchmarkts neu
+%      auszugestalten. Ein Teil davon steht jetzt in chapter_2.tex Zeile 351.
+%   2  Die flexiblen Netzanschluesse staerken die kurative Reservierung, weil
+%      sie das marktliche Handeln begrenzen, eine Systemdienstleistung aber
+%      nicht.
+% DIE MARKE sec:market_design_comparison BLEIBT STEHEN und loest auf 3.1.1
+% auf. Der einzige aktive Verweis stand in chapter_2.tex Zeile 351 und ist
+% dort entfallen.
+% ALTE FASSUNG, vollstaendig erhalten, nicht wieder aufnehmen:
+%Die derzeit diskutierten Anpassungen des Marktdesigns lassen sich in zwei Gruppen ordnen, nämlich Märkte, die um dieselbe Leistung konkurrieren, und Eingriffe über Rahmenvorgaben.
+%Zur ersten Gruppe zählen zeitlich und regional differenzierte Netzentgelte, Redispatchmärkte und eine feinere räumliche Preisbildung bis hin zu knotenscharfen Preisen, von denen oberhalb der Niederspannung bislang keiner umgesetzt ist \cite{bundesministerium_fur_wirtschaft_und_klimaschutz_strommarktdesign_2024}.
+%Würden sie eingeführt, konkurrierten Redispatchmärkte unmittelbar um dieselbe Leistung, während Netzentgelte und räumliche Preise die Erlöse der übrigen Vermarktung verschöben, und beides ginge in die Opportunitätskosten der kurativen Reservierung ein.
+%Da keiner dieser Ansätze umgesetzt ist, geht die kurative Reservierung vom geltenden Marktdesign aus und wäre mit ihrer Einführung neu auszugestalten.
+%Zur zweiten Gruppe gehören die flexiblen Netzanschlüsse nach §\,17 Abs.\,2b \ac{EnWG}, die bereits gelten und dem Netzbetreiber erlauben, die Leistung einer Anlage zu begrenzen.
+%Wo sie greifen, mindern sie den Wert der übrigen Vermarktung, während ein kurativer Abruf den Engpass entlastet und von der Begrenzung nicht erfasst wird, sodass sie die kurative Reservierung gegenüber ihrer Alternative stärken.
+%Keiner dieser Ansätze verbindet Vorhaltung, Netzbezug und Reaktionszeit, weshalb die kurative Reservierung als eigenes Produkt zu fassen ist und als weiterer Ansatz zur Lösung der Engpassprobleme diskutiert werden kann.
 
 % ---------------------------------------------------------------
 % ARCHIV am 08.09.2026. Der fruehere Abschnitt 3.3 Rahmen des kurativen

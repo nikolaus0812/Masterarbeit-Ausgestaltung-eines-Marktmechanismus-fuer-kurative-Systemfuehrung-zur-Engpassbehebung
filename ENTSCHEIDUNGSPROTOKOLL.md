@@ -595,6 +595,46 @@ Konsultationsverfahren.
 
 Build ohne Fehler mit 76 Seiten, elf Abbildungen in Textbreite.
 
+
+### 14.09.2026, Einordnung der Marktdesignansaetze gestrichen
+
+**Entschieden vom Verfasser.** Die sieben Saetze in 3.1.1, die die diskutierten
+Anpassungen des Marktdesigns in zwei Gruppen ordneten, entfallen. Grund ist die
+Frage des Verfassers, was sie mit den Anforderungen zu tun haetten. Die Antwort
+ist, nichts. A1 bis A8 sagen, was der Mechanismus leisten muss, der Block sagte,
+was es sonst gibt. Das ist eine Abgrenzung und keine Bedingung, und sie laesst
+sich deshalb auch nicht in den Katalog ueberfuehren.
+
+**Doppelung zu Kapitel 2.** Die Substanz steht dort bereits, naemlich die
+flexiblen Netzanschluesse nach Paragraf 17 Abs. 2b EnWG in Zeile 315 und die
+Alternativen zur einheitlichen Gebotszone in den Zeilen 348 bis 350. CLAUDE.md
+Abschnitt 9, offener Punkt 4, hatte die Streichung bereits vorgeschlagen.
+
+**Drei Stellen nachgezogen.** chapter_2.tex Zeile 351 kuendigte den Abgleich in
+Abschnitt 3.1 an und war der einzige aktive Verweis auf die Marke. Der Satz
+traegt jetzt nach Wahl des Verfassers die Einschraenkung, dass die Arbeit an der
+bestehenden Zonenaufteilung ansetzt und ein anderes Marktdesign eine neue
+Ausgestaltung erforderte. chapter_1.tex Zeile 124 kuendigte im Kapitelueberblick
+die Einordnung an und nennt sie nicht mehr. Der Einleitungssatz von 3.1 nannte
+die Anpassungen und nennt jetzt das Ziel des Produkts.
+
+**Nichtkonkurrenz aufgenommen.** Der Einleitungssatz von 3.1 sagt jetzt, dass
+das Produkt das Engpassmanagement um eine Komponente erweitert, die nicht mit
+dem praeventiven Redispatch um dieselbe Leistung konkurriert. Das ist eine
+Vorgabe des Verfassers vom 14.09.2026 und stuende nach der Streichung sonst
+nirgends mehr.
+
+**Die Marke bleibt.** sec:market_design_comparison ist nicht geloescht und loest
+auf 3.1.1 auf.
+
+**Kein Seitengewinn.** Das Dokument steht weiter bei 82 Seiten, Kapitel 3
+weiterhin bei Seite 35 bis 50. Die sieben Saetze entsprechen etwa einer halben
+Seite, die im Umbruch verpufft, weil die Gleitobjekte nachruecken.
+
+**Stand.** Pruefsuite ohne neue Befunde, die vier verbliebenen sind der
+Altbestand mit ausgeschriebenen Batteriespeichern in den Kapiteln 1, 2, 4 und 5.
+Build fehlerfrei, sechs offene Verweise auf ungeschriebene Kapitel.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
