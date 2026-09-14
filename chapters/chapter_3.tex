@@ -2763,6 +2763,27 @@ Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\
 % ALTE FASSUNG, nicht wieder aufnehmen:
 %Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen \cite{kumtepeli_energy_2020}.
 Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen.
+% ERGAENZT am 13.09.2026, Fassung A, gewaehlt vom Verfasser. Der Satz legt die
+% Herkunft der Groessenordnung offen, ohne die gesetzte Zahl anzutasten.
+% GRUNDLAGE. Rystad Energy Seite 9, schluesselfertiges Vierstundensystem im
+% europaeischen Mittel 2025 mit 215 US-Dollar je Kilowattstunde, und Seite 2
+% mit mehr als 10.000 Vollzyklen.
+% EIGENE RECHNUNG, vom Verfasser zu pruefen. 215 US-Dollar bei einem Kurs von
+% 1,16 sind rund 185 Euro je Kilowattstunde, also 185.000 Euro je
+% Megawattstunde Kapazitaet. Geteilt durch 10.000 Vollzyklen ergibt das 18,5
+% Euro je Megawattstunde entladener Energie. Weil K^deg Laden und Entladen
+% beide zaehlt, erzeugt ein Vollzyklus zwei Megawattstunden Durchsatz je
+% Megawattstunde Kapazitaet, der Satz halbiert sich also auf 9,3 Euro. Mit den
+% 200 US-Dollar, die die Studie auf Seite 17 selbst ansetzt, sind es 8,6 Euro.
+% NICHT IM TEXT, entschieden vom Verfasser. Die Zahlen der Herleitung und das
+% Ergebnis von rund neun Euro. Vorgelegt waren eine Fassung mit den beiden
+% Eingangsgroessen und eine, die bis zum Ergebnis durchrechnet. Der Verfasser
+% hat die Fassung ohne Zahlen gewaehlt, damit die Differenz zur gesetzten Zahl
+% nicht im Text steht. Sie steht im Protokoll.
+% RYSTAD steht auch in 3.2.1 am Satz zu den verzehrten Spreads. Stilregel 8
+% laesst eine Quelle je ABSATZ einmal zu, und das sind zwei Absaetze in zwei
+% Unterabschnitten.
+Der Satz entspricht der Größenordnung, die sich aus den Investitionskosten eines schlüsselfertigen Speichersystems und seinem Lebensdauerdurchsatz ergibt \cite{rystad_energy_renewables__power_analytics_energy_2026}.
 Dass der Verschleiß tatsächlich von Temperatur, Ladezustand und Strom abhängt und sich erst mit zusätzlichen Binärvariablen abbilden ließe, nimmt das Modell in Kauf, weil die Preissuche das Tagesmodell einige hundert Mal je Tag löst \cite{kumtepeli_energy_2020}.
 Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
 Entscheidungsvariablen sind die Lade- und die Entladeleistung am \ac{DA} und am \ac{IDC}, die vorgehaltene Leistung der \ac{FCR} und der \ac{aFRR} je Richtung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ, dazu die Binärvariable der Mindestgröße.

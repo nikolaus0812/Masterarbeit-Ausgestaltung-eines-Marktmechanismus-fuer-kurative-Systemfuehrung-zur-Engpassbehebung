@@ -5979,6 +5979,55 @@ ausdruecklich kalendarisch und mengenunabhaengig und damit das Gegenmodell zu
 einem durchsatzproportionalen Term.
 
 
+### 13.09.2026, Groessenordnung des Degradationskostensatzes belegt
+
+**Rystad geprueft, Auftrag des Verfassers.** Die Studie liegt unter
+literature/PDFs und traegt auf Seite 9 die schluesselfertigen
+Investitionskosten eines Vierstundensystems, im europaeischen Mittel 215
+US-Dollar je Kilowattstunde fuer 2025 gegenueber 240 fuer 2024. Auf Seite 2
+steht eine Lebensdauer von mehr als 10.000 Zyklen. Einen Kostensatz je
+Megawattstunde Durchsatz nennt sie nicht.
+
+**Eigene Rechnung, vom Verfasser zu pruefen.** 215 US-Dollar bei einem Kurs von
+1,16 sind rund 185 Euro je Kilowattstunde, also 185.000 Euro je Megawattstunde
+Kapazitaet. Geteilt durch 10.000 Vollzyklen ergibt das 18,5 Euro je
+Megawattstunde entladener Energie. Weil K^deg in eq:zielfunktion Laden und
+Entladen beide zaehlt, erzeugt ein Vollzyklus zwei Megawattstunden Durchsatz je
+Megawattstunde Kapazitaet, der Satz halbiert sich also auf 9,3 Euro. Mit den
+200 US-Dollar, die die Studie auf Seite 17 selbst fuer ihre Rechnungen
+ansetzt, sind es 8,6 Euro. Die gesetzten 8 Euro liegen damit im Rahmen, folgen
+aber nicht exakt aus dieser Rechnung.
+
+**Entschieden vom Verfasser, Weg B und Fassung A.** Der Wert bleibt bei 8 Euro
+und bleibt eine Setzung. Ein Satz legt die Herkunft der Groessenordnung offen,
+ohne Zahlen zu nennen, und traegt den Beleg auf Rystad. Verworfen wurden eine
+Fassung mit den beiden Eingangsgroessen und eine, die bis zum Ergebnis von rund
+neun Euro durchrechnet. Damit steht die Differenz zur gesetzten Zahl im
+Protokoll und nicht im Text.
+
+**Nicht zu zitieren.** Die Umrechnung des rumaenischen Projekts auf Seite 9
+geht nicht auf. 75 Millionen Euro auf 400 Megawattstunden sind 187,50 Euro je
+Kilowattstunde, was rund 215 und nicht die dort genannten 170 US-Dollar
+ergibt. Die Studie rechnet an dieser Stelle offenbar mit einem invertierten
+Kurs.
+
+**Widerspruch in der Studie.** Sie fuehrt zwei Lebensdauerangaben, naemlich
+mehr als 10.000 Zyklen als Technologieaussage auf Seite 2 und 7.300 Zyklen als
+Wirtschaftlichkeitsannahme auf Seite 17, also einen Zyklus je Tag ueber 20
+Jahre. Eine Kapazitaetsschwelle fuer das Lebensdauerende nennt sie nicht. Die
+Rechnung oben nutzt die erste Angabe.
+
+**Stilregel 8.** Rystad steht jetzt zweimal im aktiven Text, einmal in 3.2.1 am
+Satz zu den verzehrten Spreads und einmal hier. Das sind zwei Absaetze in zwei
+Unterabschnitten, die Regel laesst eine Quelle je Absatz einmal zu.
+
+**Offen, Literaturdatei.** Der Eintrag
+rystad_energy_renewables__power_analytics_energy_2026 zeigt im Feld file auf
+einen fremden Zotero-Pfad statt auf die PDF im Repository. Der dort gefuehrte
+Untertitel steht im PDF nirgends, die Kopfzeile lautet nur Energy Storage
+Outlook February 2026. Beides ist nicht berichtigt.
+
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
