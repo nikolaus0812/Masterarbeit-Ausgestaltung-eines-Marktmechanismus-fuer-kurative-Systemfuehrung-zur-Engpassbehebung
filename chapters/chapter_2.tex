@@ -422,12 +422,16 @@ Tabelle~\ref{tab:akteursvergleich} stellt die in Betracht kommenden Technologien
         \hline
 % ZELLE GEAENDERT am 15.09.2026, Befund B86, Bezugsgroesse statt gross und gering. Alte Fassung:
 %        \ac{PSKW} & schnell & ja, großer Energieinhalt & 9,9\,\si{GW}, Anstieg auf 12,0\,\si{GW} & §\,13a \ac{EnWG}, Bemessung geregelt \\
-        \ac{PSKW} & schnell & ja, 4 bis 8\,\si{h} & 9,9\,\si{GW}, Anstieg auf 12,0\,\si{GW} & §\,13a \ac{EnWG}, Bemessung geregelt \\
+% GEAENDERT am 15.09.2026, Energieinhalt je Leistung aus dem Marktstammdatenregister, analysen/mastr_speicher. Alte Fassung:
+%        \ac{PSKW} & schnell & ja, 4 bis 8\,\si{h} & 9,9\,\si{GW}, Anstieg auf 12,0\,\si{GW} & §\,13a \ac{EnWG}, Bemessung geregelt \\
+        \ac{PSKW} & schnell & ja, 3 bis 9\,\si{h} & 9,9\,\si{GW}, Anstieg auf 12,0\,\si{GW} & §\,13a \ac{EnWG}, Bemessung geregelt \\
         \hline
 %        \ac{BESS} & sehr schnell & ja, geringer Energieinhalt & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
         \ac{BESS} & sehr schnell & ja, 1 bis 2\,\si{h}, steigend & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
         \hline
-        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung der Großspeicher folgt den Battery Charts, die einen Anstieg von einer auf zwei Stunden und darüber ausweisen \cite{isea_batterycharts_2026}, der Bereich der \acs{PSKW} ist eine Einschätzung des Verfassers ohne Beleg.} \\
+% GEAENDERT am 15.09.2026, Beleg aus dem Marktstammdatenregister statt Einschaetzung. Alte Fassung:
+%        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung der Großspeicher folgt den Battery Charts, die einen Anstieg von einer auf zwei Stunden und darüber ausweisen \cite{isea_batterycharts_2026}, der Bereich der \acs{PSKW} ist eine Einschätzung des Verfassers ohne Beleg.} \\
+        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung folgt einer eigenen Auswertung des Marktstammdatenregisters mit Stand vom 15.09.2026 \cite{bundesnetzagentur_mastr_2026}: Die 18 deutschen \acs{PSKW} mit Tages- oder Wochenspeicher liegen zwischen 3 und 9 Stunden, leistungsgewichtet bei 5,7 Stunden. Die 520 \acs{BESS} ab einem Megawatt in Betrieb liegen zur Hälfte zwischen 1,1 und 2,2 Stunden, die seit 2025 in Betrieb genommenen Anlagen im Median bei 2 Stunden, und die Battery Charts weisen denselben Anstieg aus \cite{isea_batterycharts_2026}.} \\
     \end{tabular}
 \end{table}
 
@@ -458,7 +462,9 @@ Ob eine Anlage den Engpass entlastet, hängt davon ab, ob ihre eigene Einspeisun
 Windenergie im Norden verschärft einen Nord-Süd-Engpass, Photovoltaik im Süden dagegen nicht \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
 Soweit die Maßnahme, wie in Abschnitt~\ref{sec:curative_functionality} beschrieben, bilanziell ausgeglichen wird, braucht die Rücknahme der Einspeisung zudem eine Erhöhung an anderer Stelle, sodass Wind- und Photovoltaikanlagen nur eine Hälfte eines Verbunds stellen können.
 
-Anders als Wind- und Photovoltaikanlagen wirkt ein \ac{PSKW} in beide Richtungen, reagiert schnell und hat einen Energieinhalt je Leistung von vier bis acht Stunden, sodass auch eine über Stunden reichende Bindung nur einen Teil der Kapazität beansprucht.
+% GEAENDERT am 15.09.2026, Spanne aus dem Marktstammdatenregister. Alte Fassung:
+%Anders als Wind- und Photovoltaikanlagen wirkt ein \ac{PSKW} in beide Richtungen, reagiert schnell und hat einen Energieinhalt je Leistung von vier bis acht Stunden, sodass auch eine über Stunden reichende Bindung nur einen Teil der Kapazität beansprucht.
+Anders als Wind- und Photovoltaikanlagen wirkt ein \ac{PSKW} in beide Richtungen, reagiert schnell und hat einen Energieinhalt je Leistung von drei bis neun Stunden, sodass auch eine über Stunden reichende Bindung nur einen Teil der Kapazität beansprucht.
 Im Pilotbetrieb von KuPilot ist ein \ac{PSKW} bereits eingesetzt worden, allerdings auf eine Stunde begrenzt, weil das Oberbecken zugleich die Vermarktung der übrigen Turbinen bedient, sodass die kurativ nutzbare Bindungsdauer eines \ac{PSKW} von der übrigen Vermarktung des Beckens abhängt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
 Die Zahl der \ac{PSKW} ist jedoch begrenzt, weil geeignete Standorte eine passende Topografie voraussetzen und das Potenzial in Deutschland weitgehend ausgeschöpft ist, sodass \ac{PSKW} nur an wenigen Netzknoten wirksam sind.
 
@@ -828,33 +834,38 @@ Die beschaffte Menge folgt zwei verschiedenen Regeln.
 Der Bedarf an \ac{FCR} wird auf europäischer Ebene festgelegt und geht vom Ausfall einer Erzeugungsleistung von 3000\,\si{MW} als Referenzstörfall aus.
 Ein jährlich neu berechneter Schlüssel verteilt diesen Bedarf auf die Regelzonen, woraus für Deutschland im Jahr 2024 eine Ausschreibung von 564\,\si{MW} folgte \cite{bundesnetzagentur_monitoringbericht_2026}.
 Den Bedarf an \ac{aFRR} und \ac{mFRR} ermitteln die deutschen \ac{ÜNB} gemeinsam und schreiben ihn je Vier-Stunden-Zeitscheibe aus, sodass sich die Menge über den Tag ändert.
-Tabelle~\ref{tab:regelleistung} stellt die Produktmerkmale und die Bemessung der Vergütung gegenüber.
+% GEAENDERT am 15.09.2026, Tabelle 2.2 auf Vorgabe des Verfassers gestrichen, Inhalt in drei Saetzen. Alte Fassung:
+%Tabelle~\ref{tab:regelleistung} stellt die Produktmerkmale und die Bemessung der Vergütung gegenüber.
+Die \ac{FCR} wird symmetrisch beschafft, die \ac{aFRR} und die \ac{mFRR} getrennt nach positiver und negativer Richtung.
+Der Leistungspreis je Zeitscheibe steht mit dem Zuschlag fest, während der Arbeitspreis der \ac{aFRR} und der \ac{mFRR} je Viertelstunde und nur bei Abruf anfällt.
+Den Abruf löst bei der \ac{FCR} die örtliche Frequenzmessung aus, bei der \ac{aFRR} die europäische Plattform PICASSO und bei der \ac{mFRR} der \ac{ÜNB} von Hand über die Plattform MARI.
 
-\begin{table}[htbp]
-    \centering
+% TABELLE 2.2 GESTRICHEN am 15.09.2026 auf Vorgabe des Verfassers, Inhalt in drei Saetzen im Text. Alte Fassung, nicht wieder aufnehmen:
+%\begin{table}[htbp]
+%    \centering
 % TABELLE ERWEITERT am 15.09.2026 um die Spalte Bemessung, Kuerzung A3, damit die Tabelle der Verguetungsbestandteile in 2.3.4 entfallen kann. Alte Fassung der Zeilen als Kommentar.
-    \caption{Produktmerkmale und Bemessung der drei Regelleistungsprodukte.}
-    \label{tab:regelleistung}
-    \small
+%    \caption{Produktmerkmale und Bemessung der drei Regelleistungsprodukte.}
+%    \label{tab:regelleistung}
+%    \small
 %    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.09\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.28\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.26\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}@{}}
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.08\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.13\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.21\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.14\textwidth-\tabcolsep\relax}@{}}
-        \hline
+%    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.08\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.13\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.21\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.24\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.14\textwidth-\tabcolsep\relax}@{}}
+%        \hline
 %        \textbf{Produkt} & \textbf{Richtung} & \textbf{Produktschnitt} & \textbf{Aktivierung} & \textbf{Handelsschluss} \\
-        \textbf{Produkt} & \textbf{Richtung} & \textbf{Produktschnitt} & \textbf{Bemessung} & \textbf{Abruf} & \textbf{Handelsschluss} \\
-        \hline
+%        \textbf{Produkt} & \textbf{Richtung} & \textbf{Produktschnitt} & \textbf{Bemessung} & \textbf{Abruf} & \textbf{Handelsschluss} \\
+%        \hline
 %        \acs{FCR} & symmetrisch & Vier Stunden, nur Leistung & Automatisch, örtliche Frequenzmessung & 8 Uhr des Vortages \\
-        \acs{FCR} & symmetrisch & Vier Stunden, nur Leistung & Leistungspreis je Zeitscheibe, sicher & Automatisch, örtliche Frequenzmessung & 8 Uhr des Vortages \\
-        \hline
+%        \acs{FCR} & symmetrisch & Vier Stunden, nur Leistung & Leistungspreis je Zeitscheibe, sicher & Automatisch, örtliche Frequenzmessung & 8 Uhr des Vortages \\
+%        \hline
 %        \acs{aFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Automatisch, Plattform PICASSO & 9 Uhr des Vortages \\
-        \acs{aFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Leistungspreis je Zeitscheibe, sicher, Arbeitspreis je Viertelstunde nur bei Abruf & Automatisch, Plattform PICASSO & 9 Uhr des Vortages \\
-        \hline
+%        \acs{aFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Leistungspreis je Zeitscheibe, sicher, Arbeitspreis je Viertelstunde nur bei Abruf & Automatisch, Plattform PICASSO & 9 Uhr des Vortages \\
+%        \hline
 %        \acs{mFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Manuell, Plattform MARI & 10 Uhr des Vortages \\
-        \acs{mFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Leistungspreis je Zeitscheibe, sicher, Arbeitspreis je Viertelstunde nur bei Abruf & Manuell, Plattform MARI & 10 Uhr des Vortages \\
-        \hline
+%        \acs{mFRR} & positiv und negativ & Vier Stunden, Leistung und Arbeit getrennt & Leistungspreis je Zeitscheibe, sicher, Arbeitspreis je Viertelstunde nur bei Abruf & Manuell, Plattform MARI & 10 Uhr des Vortages \\
+%        \hline
 %        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Der Handelsschluss bezieht sich auf die Ausschreibung der Leistung. Je Liefertag werden sechs Zeitscheiben ausgeschrieben.} \\
-        \multicolumn{6}{@{}p{\textwidth}@{}}{\footnotesize Der Handelsschluss bezieht sich auf die Ausschreibung der Leistung. Je Liefertag werden sechs Zeitscheiben ausgeschrieben. Der Arbeitspreis der \acs{aFRR} entsteht am Regelarbeitsmarkt mit Zuschlag 25 Minuten vor Beginn der Viertelstunde.} \\
-    \end{tabular}
-\end{table}
+%        \multicolumn{6}{@{}p{\textwidth}@{}}{\footnotesize Der Handelsschluss bezieht sich auf die Ausschreibung der Leistung. Je Liefertag werden sechs Zeitscheiben ausgeschrieben. Der Arbeitspreis der \acs{aFRR} entsteht am Regelarbeitsmarkt mit Zuschlag 25 Minuten vor Beginn der Viertelstunde.} \\
+%    \end{tabular}
+%\end{table}
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G33, Q8. Fuenf Saetze auf zwei, der Schlusssatz steht in 2.4.

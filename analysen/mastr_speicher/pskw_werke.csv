@@ -1,0 +1,31 @@
+Bundesland,Werk,Einheiten,P_MW,E_MWh,E_je_P_h,aufgenommen
+Thüringen,PSW Goldisthal,4,1052.0,9470.0,9.0,1
+Sachsen,PSW Markersbach,6,1045.2,4578.0,4.38,1
+Baden-Württemberg,KW Wehr,4,910.0,3282.0,3.61,1
+,Vianden M10; Vianden M5; Vianden M6; Vianden M7; Vianden M8; Vianden M9,6,696.0,2775.0,3.99,0
+,Vianden M1; Vianden M11; Vianden M2; Vianden M3; Vianden M4,5,598.0,2209.0,3.69,0
+,illwerke vkw Kopswerk II M1; illwerke vkw Kopswerk II M2; illwerke vkw Kopswerk II M3,3,525.0,77517.0,147.65,0
+Baden-Württemberg,KW Häusern; KW Waldshut; KW Witznau,12,516.0,45414.5,88.01,0
+,KW Silz -,2,500.0,4461.0,8.92,0
+Hessen,Waldeck 2 F1; Waldeck 2 F2,2,480.0,3786.0,7.89,1
+,Obervermuntwerk II,2,380.0,27198.0,71.57,0
+Baden-Württemberg,KW Säckingen A7; KW Säckingen A8; KW Säckingen B7; KW Säckingen B8,4,360.0,1083.5,3.01,1
+,illwerke vkw Rodundwerk I M2; illwerke vkw Rodundwerk II M1,2,345.0,145625.0,422.1,0
+Thüringen,PSW Hohenwarte 2,8,317.6,2308.0,7.27,1
+,illwerke vkw Lünerseewerk M1; illwerke vkw Lünerseewerk M2; illwerke vkw Lünerseewerk M3; illwerke vkw Lünerseewerk M4; illwerke vkw Lünerseewerk M5; illwerke vkw Rellswerk M1,6,292.0,157252.0,538.53,0
+,KW Kühtai -,2,289.0,115580.5,399.93,0
+Niedersachsen,Pumpspeicherkraftwerk Erzhausen,1,200.0,1102.0,5.51,1
+Bayern,Langenprozelten E F1; Langenprozelten E F2,2,164.0,950.0,5.79,1
+Nordrhein-Westfalen,Koepchenwerk,1,162.0,634.0,3.91,1
+Bayern,Happurg F1; Happurg F2; Happurg F3; Happurg F4,4,160.0,850.0,5.31,1
+Hessen,Bringhausen M3 F1; Bringhausen M4 F1; Waldeck 1 Pumpspeicher,3,145.0,550.0,3.79,1
+Nordrhein-Westfalen,Pumpspeicherwerk Rönkhausen PSW1; Pumpspeicherwerk Rönkhausen PSW2,2,138.0,720.0,5.22,1
+Bayern,Pfreimd R1; Pfreimd R2; Pfreimd R3; Pfreimd T1,4,128.0,604.0,4.72,1
+Schleswig-Holstein,PSW Geesthacht,3,119.1,534.0,4.48,1
+Bayern,SWM Leitzach 1 M11; SWM Leitzach 2 M21; SWM Leitzach 2 M22,3,92.0,620.0,6.74,1
+Baden-Württemberg,PSW Glems 1; PSW Glems 2,2,90.0,593.7,6.6,1
+Thüringen,PSW Bleiloch,2,79.8,8682.0,108.8,0
+Sachsen-Anhalt,PSW Wendefurth,2,79.8,531.0,6.65,1
+Baden-Württemberg,WKW Rudolf-Fettweis-Werk,1,21.5,10500.0,488.37,0
+,illwerke vkw Rifawerk M1; illwerke vkw Rifawerk M2,2,8.0,7762.0,970.25,0
+Bayern,Oberberg1; Oberberg2; Oberberg2a,4,7.3,42.0,5.75,1

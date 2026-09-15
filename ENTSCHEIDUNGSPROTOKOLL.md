@@ -3900,6 +3900,47 @@ Marktdesigns in 2.2.1 (Q4), die Erklaerung von pay-as-bid (G30), der
 Schlusssatz zur Bepreisung ueber Gebote in 2.2.3 (Q8), die 564 MW in 2.3.5
 (Q18) und die fuenf Saetze zum Zeitwert im Zwischenfazit (Q9).
 
+### 15.09.2026, chapter_2.tex, Energieinhalt je Leistung belegt, Tabelle 2.2 gestrichen
+
+**Belegzettel Energieinhalt je Leistung.** Die Kraftwerksliste der BNetzA
+fuehrt fuer Pumpspeicher nur die Leistung und kein Speichervolumen, daraus
+liess sich der Energieinhalt je Leistung nicht ableiten. Das
+Marktstammdatenregister fuehrt je Speichereinheit die nutzbare
+Speicherkapazitaet in kWh. Am 15.09.2026 wurden ueber den JSON-Endpunkt der
+oeffentlichen Einheitenuebersicht alle Speichereinheiten absteigend nach
+Nettonennleistung abgerufen, 2000 Zeilen bis 184 kW, also alle Einheiten ab
+1 MW. Auszug, Skripte und Ergebnis liegen in `analysen/mastr_speicher`, der
+Eintrag `bundesnetzagentur_mastr_2026` ist neu in der Literaturdatei.
+
+PSKW: Das Register fuehrt je Maschinensatz eine Einheit und wiederholt bei
+jeder Einheit die Speicherkapazitaet des ganzen Werks. Zusammengefasst ueber
+Bundesland und Speicherkapazitaet, Leistungen summiert. Aufgenommen sind die
+18 deutschen Werke mit Tages- oder Wochenspeicher, 5,7 GW. Ausgeschlossen
+sind die oesterreichischen und luxemburgischen Werke ohne Bundesland und die
+Werke an Jahresspeichern (Schluchseegruppe, Bleiloch, Schwarzenbach), weil
+deren Verhaeltnis von 88 bis ueber 500 Stunden nichts ueber die Bindung eines
+Tagesspeichers sagt. Ergebnis 3,0 bis 9,0 Stunden, Median 5,4,
+leistungsgewichtet 5,7, Quartile 4,4 und 6,7. Die Tabelle nennt jetzt 3 bis
+9 Stunden statt der Einschaetzung 4 bis 8, ebenso der Satz in 2.1.3.
+
+BESS ab 1 MW in Betrieb: 520 Einheiten, 4,2 GW, Median 2,0 Stunden, Quartile
+1,1 und 2,2, leistungsgewichtet 1,8. Nach Jahr der Inbetriebnahme steigt der
+Median von 1,0 Stunde (2022) auf 2,0 bis 2,1 Stunden (2024 bis 2026). In
+Planung 685 Einheiten, 11,6 GW, Median 2,0, leistungsgewichtet 3,0 wegen
+weniger Vorhaben mit vier Stunden. Die Zelle 1 bis 2 Stunden, steigend,
+bleibt. Die Battery Charts bleiben als zweiter Beleg in der Fussnote, weil
+sie denselben Anstieg aus demselben Register ausweisen. Der Artikel von
+Heimerl, Kohler und Akpinar 2025 ist damit fuer die Tabelle nicht mehr
+noetig.
+
+**Tabelle 2.2 gestrichen**, Vorgabe des Verfassers vom 15.09.2026. Die
+Produktmerkmale der Regelleistung stehen in drei Saetzen in 2.2.3, naemlich
+Richtung, Leistungspreis mit dem Zuschlag und Arbeitspreis nur bei Abruf,
+Abruf ueber Frequenzmessung, PICASSO und MARI. Entfallen sind die
+Handelsschluesse 8, 9 und 10 Uhr, die sechs Zeitscheiben je Liefertag und
+der Zuschlag am Regelarbeitsmarkt 25 Minuten vor der Viertelstunde. Die
+Tabelle steht als Kommentar in der Datei.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3

@@ -174,8 +174,10 @@ keine Pluralform mit `\acp`. *IDA-1* für die Preisreihe der Strikepreise.
 *Topologieschaltmaßnahmen* einheitlich. *Der PATL* und *der TATL*, maskulin, nach
 InnoSys 2030 und dem Grenzwertkonzept, entschieden am 15.09.2026. *Energieinhalt je Leistung* in Stunden für das Verhältnis von
 Speicherkapazität zu Nennleistung, nicht C-Wert oder C-Rate, denn die C-Rate ist der
-Kehrwert. Definiert in 2.1.3, Wertebereiche in Tabelle 2.1 als Einschätzung des
-Verfassers ohne Beleg, entschieden am 15.09.2026.
+Kehrwert. Definiert in 2.1.3, Wertebereiche in Tabelle 2.1 aus einer eigenen
+Auswertung des Marktstammdatenregisters vom 15.09.2026 in
+`analysen/mastr_speicher`, Eintrag `bundesnetzagentur_mastr_2026`. PSKW 3 bis
+9 Stunden, BESS 1 bis 2 Stunden mit steigender Tendenz.
 
 **Vor der ersten Verwendung zu definieren.** Die Spalte Ort nennt die Stelle,
 an der die Definition nach `AENDERUNGEN_KAP1_2.md` stehen soll. Bis sie dort
