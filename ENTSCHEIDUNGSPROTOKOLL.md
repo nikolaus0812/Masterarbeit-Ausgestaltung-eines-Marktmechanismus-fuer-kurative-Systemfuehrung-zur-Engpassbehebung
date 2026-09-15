@@ -3957,6 +3957,14 @@ auf 2.2.3 und sagt "im Produktschnitt gleicht" statt "im Produkt aehnelt".
 Der Verweis auf den Erloesindex traegt isea_methodik_2026, weil die Methodik
 die gefuehrten Maerkte nennt.
 
+**Berichtigt am selben Tag.** Der Verfasser hat die Abgrenzung in 2.2.3
+nicht uebernommen, sondern die Aufnahme in 2.3.4 gewaehlt. Die vier Saetze
+stehen jetzt als erster Absatz von 2.3.4, in 2.2.3 als Kommentar mit dem
+Vermerk VERSCHOBEN. 2.3.4 heisst jetzt "Verguetung der Regelleistung" statt
+"Verguetung von FCR und aFRR", die Marke sec:balancing_procurement bleibt.
+Der Verweis in 3.2.1 zeigt auf 2.3.4. Der Vorschlag, in 2.2.3 abzugrenzen,
+war ein eigenstaendiges Argument und ist nicht wieder aufzunehmen.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
