@@ -1479,7 +1479,9 @@ Der Preis deckt damit sowohl die Bindung als auch die Energie, die ein Abruf kos
 Den Energieanteil eines Abrufs bildet das Modell in Abschnitt~\ref{sec:model_scope} nicht ab.
 
 Der Akteur nimmt die kurativ gebundene Leistung aus seiner übrigen Vermarktung heraus.
-Daraus entstehen die Opportunitätskosten, die er über den Preis ersetzt verlangt.
+% STILREGEL 5 am 15.09.2026, Pronomen ueber die Satzgrenze. Alte Fassung:
+%Daraus entstehen die Opportunitätskosten, die er über den Preis ersetzt verlangt.
+Daraus entstehen die Opportunitätskosten, die der Akteur über den Preis ersetzt verlangt.
 Eine Anlage kann beide Richtungen anbieten, aber jede Richtung bindet einen anderen Teil des Ladezustandsbandes und ist deshalb ein eigenes Gebot.
 Gesperrt ist damit allein die zugesagte Leistung, während für das gebundene Zeitfenster kein allgemeines Handelsverbot gilt.
 % GESTRICHEN am 14.09.2026, entschieden vom Verfasser. Die Fahrplanhoheit
@@ -2602,7 +2604,9 @@ Ein gesonderter Kostenansatz für die Vorhaltung ist deshalb nicht nötig.
 Zielfunktion und Nebenbedingungen sind durchweg linear, sodass das Problem im Basisfall ein lineares Programm ist und die kurative Reservierung jeden Wert zwischen null und der Anschlussleistung annehmen darf.
 % W1, entschieden vom Verfasser am 15.09.2026, LP als Basisfall wie im Code.
 Erst die Mindestgröße von 25\,\si{MW} macht die Reservierung halbstetig, denn die reservierte Leistung beträgt dann entweder null oder mindestens 25\,\si{MW}.
-Dafür ist je Stunde und Richtung eine Binärvariable nötig, und das Problem wird zu einem gemischt-ganzzahligen linearen Programm.
+% STILREGEL 5 am 15.09.2026, Pronomen ueber die Satzgrenze. Alte Fassung:
+%Dafür ist je Stunde und Richtung eine Binärvariable nötig, und das Problem wird zu einem gemischt-ganzzahligen linearen Programm.
+Für die Mindestgröße ist je Stunde und Richtung eine Binärvariable nötig, und das Problem wird zu einem gemischt-ganzzahligen linearen Programm.
 Die Mindestgröße wird als Sensitivität geführt, wie in Abschnitt~\ref{sec:input_data} beschrieben.
 Die numerische Lösung erfolgt in beiden Fällen mit Gurobi 13.0.2 \cite{gurobi_reference_2026}.
 Als Abbruchkriterium des gemischt-ganzzahligen Programms dient eine relative Optimalitätslücke von 0,01 Prozent zwischen der besten gefundenen zulässigen Lösung und der besten relaxierten Schranke, dazu ein Zeitlimit von 60 Sekunden je Lauf.
@@ -3171,7 +3175,9 @@ Die Auslegung liegt am oberen Rand des Bereichs der Großspeicher am Netz, wie i
 Eine kurative Reservierung über die volle Anschlussleistung erschöpft den Speicher damit erst nach 2,5 Stunden.
 Laden und Entladen laufen mit einem Wirkungsgrad von 0,95 je Richtung, woraus ein Umlaufwirkungsgrad von 0,9025 folgt.
 Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\,\si{MWh} bewegen kann.
-Jede Reservierung nimmt ihr Ladezustandsband aus diesem Vorrat.
+% STILREGEL 5 am 15.09.2026, Pronomen ueber die Satzgrenze. Alte Fassung:
+%Jede Reservierung nimmt ihr Ladezustandsband aus diesem Vorrat.
+Jede Reservierung nimmt ihr Ladezustandsband aus dem nutzbaren Ladezustand.
 
 Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen.
 Der Satz entspricht der Größenordnung, die sich aus den Investitionskosten eines schlüsselfertigen Speichersystems und seinem Lebensdauerdurchsatz ergibt \cite{rystad_energy_renewables__power_analytics_energy_2026}.
