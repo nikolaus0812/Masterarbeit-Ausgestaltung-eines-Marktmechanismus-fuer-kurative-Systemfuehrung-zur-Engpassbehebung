@@ -3941,6 +3941,22 @@ Handelsschluesse 8, 9 und 10 Uhr, die sechs Zeitscheiben je Liefertag und
 der Zuschlag am Regelarbeitsmarkt 25 Minuten vor der Viertelstunde. Die
 Tabelle steht als Kommentar in der Datei.
 
+**Abgrenzung der mFRR in 2.2.3**, Vorgabe des Verfassers vom 15.09.2026,
+Wahl zwischen einer Abgrenzung in 2.2.3 und einer Aufnahme in 2.3.4. Gewaehlt
+ist die Abgrenzung in 2.2.3, damit die Ueberschrift von 2.3.4 ohne
+Erklaerung traegt. Vier Saetze vor dem Absatz zum Handelsschluss: FCR und
+aFRR sind fuer ein BESS von Belang, die mFRR bietet bei gleichem
+Produktschnitt den geringeren Leistungspreis, der Erloesindex fuehrt sie
+nicht, sie bleibt ausser Betracht. Belegzettel: Ergebnisuebersicht des
+Leistungsmarkts von regelleistung.net, mFRR als 365 Tagesdateien 2025 am
+15.09.2026 abgerufen, aFRR aus der Jahresdatei des Modellrepositorys,
+Auswertung in `analysen/mfrr_leistungspreise`. Mittel des mengengewichteten
+Durchschnittspreises 2025 in Euro je Megawatt und Stunde: mFRR 5,17 positiv
+und 11,28 negativ, aFRR 17,96 und 15,65. Der Satz in 3.2.1 verweist jetzt
+auf 2.2.3 und sagt "im Produktschnitt gleicht" statt "im Produkt aehnelt".
+Der Verweis auf den Erloesindex traegt isea_methodik_2026, weil die Methodik
+die gefuehrten Maerkte nennt.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
