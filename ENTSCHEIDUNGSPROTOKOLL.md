@@ -3964,6 +3964,9 @@ Vermerk VERSCHOBEN. 2.3.4 heisst jetzt "Verguetung der Regelleistung" statt
 "Verguetung von FCR und aFRR", die Marke sec:balancing_procurement bleibt.
 Der Verweis in 3.2.1 zeigt auf 2.3.4. Der Vorschlag, in 2.2.3 abzugrenzen,
 war ein eigenstaendiges Argument und ist nicht wieder aufzunehmen.
+Der Satz zum Erloesindex ist auf Vorgabe des Verfassers gestrichen, weil der
+Index erst in 3.3.1 eingefuehrt wird. Die Abgrenzung traegt jetzt allein der
+gleiche Produktschnitt und der geringere Leistungspreis.
 
 ## chapter_3.tex
 
