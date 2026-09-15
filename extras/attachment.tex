@@ -3,6 +3,50 @@
 
 Die Darstellung folgt dem Rechenweg der Festlegung BK8-22-001-A und führt ihn anhand des veröffentlichten Beispiels für Tagesspeicher 1 durch \cite{bundesnetzagentur_berechnungsbeispiel_2024}. Die Anlage verfügt über \SI{200}{\mega\watt} Turbinen- und \SI{180}{\mega\watt} Pumpleistung, einen Wirkungsgrad von $\eta = 0{,}87$, ein Netznutzungsentgelt von $c_{NNE} = 0{,}50\,\si{\text{\euro}\per MWh}$ und vier Turbinenvolllaststunden. Datengrundlage sind die 96 Viertelstundenpreise der \ac{IDA-1} vom 01.02.2024. Preise der Eröffnungsauktion und Volatilitätsmaße entstammen dem Berechnungsbeispiel, Day-Ahead-Preise außer dem der Stunde 13 und alle Werte des \ac{ID1} des Liefertages veröffentlichten Marktdaten der Bundesnetzagentur \cite{bundesnetzagentur_berechnungsbeispiel_2024, smard_marktdaten_2026}.
 
+% ANGELEGT am 15.09.2026, Kuerzung A1. Herkunft, Volatilitaetsmass und Symboltabelle aus Abschnitt 2.3.2 hierher verschoben.
+\section{Herkunft und Formelzeichen}
+\label{anh:weber:herkunft}
+
+Bereits das Gutachten unterstellt anstelle der in der Finanzmathematik üblichen lognormalen Annahme absolut normalverteilte Preisänderungen, weil Strompreise negative Werte annehmen können \cite{weber_gutachten_2015}.
+Als modifiziert bezeichnet die Festlegung den Ansatz, weil sie ihn in der Fassung des Branchenleitfadens des Bundesverbandes der Energie- und Wasserwirtschaft übernimmt \cite{bdew_branchenleitfaden_2018}.
+Der Leitfaden benennt als Unterschied zum Gutachten ausdrücklich die rollierende Bestimmung des Volatilitätsmaßes und wählt den \ac{ID1} als Datengrundlage.
+Die Festlegung übernimmt das Kapitel unverändert und legt lediglich den Preisindex neu fest \cite{bundesnetzagentur_anlage1_2024}.
+Für den Day-Ahead-Preis ist das das Single Day-ahead Coupling, also die gekoppelte europäische Auktion, in der die Preise der Gebotszonen und die grenzüberschreitenden Flüsse gemeinsam bestimmt werden \cite{europaische_kommission_verordnung_2015}.
+Für den Intraday-Index ist es die Börse mit dem höchsten Handelsvolumen.
+Weber sieht für das Volatilitätsmaß eine Bestimmung einmal im Monat aus den vorangegangenen zwölf Monaten und auf Grundlage des \ac{ID3} vor.
+Die Festlegung weicht in beiden Punkten davon ab.
+Das rollierende Fenster begründet sie damit, systematische Effekte aus im Zeitverlauf steigenden oder sinkenden Standardabweichungen weitgehend zu vermeiden.
+Den Wechsel vom Dreistundenmittel auf den \ac{ID1} begründet sie nicht, der Leitfaden hält den Index für geeignet, die kurzfristigen Volatilitäten des Intraday-Marktes abzubilden.
+Die Zuordnung der Optionsart über den Day-Ahead-Preis bezeichnet die Festlegung als Vereinfachung, denn andernfalls wäre bei jeder Änderung des Lastpunktes neu über die Optionsart zu entscheiden.
+Über diesen Vergleich erfasst das Verfahren zugleich den inneren Wert, der aus den systematischen Differenzen zwischen Stunden- und Viertelstundenprodukten entsteht.
+Tabelle~\ref{tab:weber_symbole} fasst die Größen mit ihren Formelzeichen zusammen, und die Bewertungsgleichungen stehen in Abschnitt~\ref{anh:weber:option}.
+
+\begin{table}[htbp]
+    \centering
+    \caption{Formelzeichen der Optionsbewertung nach dem modifizierten Weber-Ansatz. Nach \cite{bundesnetzagentur_anlage1_2024}.}
+    \label{tab:weber_symbole}
+    \small
+    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.12\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.26\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-\tabcolsep\relax}@{}}
+        \hline
+        \textbf{Zeichen} & \textbf{Größe} & \textbf{Bestimmung} \\
+        \hline
+        $g_T$, $g_P$ & Grenzpreis & Grenzpreis für Turbinen- und für Pumpeinsatz, iterativ aus der Preisdauerlinie des Tages \\
+        \hline
+        $X$ & Basispreis & Grenzpreis der bewerteten Seite, $g_T$ für die Ausspeicher- und $g_P$ für die Einspeicherseite \\
+        \hline
+        $\mu$ & Erwartetes Preisniveau & Preis des Produkts in der \acs{IDA-1} \\
+        \hline
+        $\sigma$ & Volatilitätsmaß & Standardabweichung der Differenz aus \acs{ID1} und \acs{IDA-1} über 30 Tage \\
+        \hline
+        $d_T$, $d_P$ & Standardisierter Abstand & Abstand zwischen $\mu$ und dem Basispreis der jeweiligen Seite in Vielfachen von $\sigma$ \\
+        \hline
+        $\Phi$, $\varphi$ & Verteilungs- und Dichtefunktion & Standardnormalverteilung \\
+        \hline
+        $V_C$, $V_P$ & Wert der Call- und der Put-Option & Bezogen auf Leistung und Stunde, Optionsart je Seite nach dem Vergleich des Day-Ahead-Preises mit dem Basispreis \\
+        \hline
+    \end{tabular}
+\end{table}
+
 \section{Grenzpreise}
 \label{anh:weber:grenzpreis}
 
@@ -92,7 +136,7 @@ Im Beispiel bindet bei beiden Minderungsfällen die jeweils gegenüberliegende S
 \section{Optionswert und Aggregation}
 \label{anh:weber:option}
 
-Bewertet wird eine Maßnahme in der Viertelstunde von 13:00 bis 13:15 Uhr, bei der dem Betreiber die Flexibilität der gesamten Anlagenleistung verloren geht. Der Day-Ahead-Preis beträgt $57{,}26\,\si{\text{\euro}\per MWh}$, der Preis der \ac{IDA-1} $\mu = 75{,}93\,\si{\text{\euro}\per MWh}$ und das Volatilitätsmaß $\sigma = 21{,}75\,\si{\text{\euro}\per MWh}$. Da der Day-Ahead-Preis unter $g_T$ und über $g_P$ liegt, wird die Turbinenseite als Call und die Pumpenseite als Put bewertet. Der Optionswert folgt aus dem standardisierten Abstand nach Gleichung~\eqref{eq:anh:weber:d} und den beiden Bewertungsformeln~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put}. Darin bezeichnen $\Phi$ und $\varphi$ die Verteilungs- und die Dichtefunktion der Standardnormalverteilung und $\Delta t = \SI{0,25}{h}$ die Produktdauer, die hier abweichend von den Gleichungen~\eqref{eq:weber_call} und~\eqref{eq:weber_put} des Grundlagenkapitels bereits in die Formel einbezogen ist, sodass $V_C$ und $V_P$ den Optionswert je Megawatt und Viertelstunde in \si{\text{\euro}\per MW} bezeichnen. Für die Turbinenseite ist $X = g_T$, für die Pumpenseite $X = g_P$.
+Bewertet wird eine Maßnahme in der Viertelstunde von 13:00 bis 13:15 Uhr, bei der dem Betreiber die Flexibilität der gesamten Anlagenleistung verloren geht. Der Day-Ahead-Preis beträgt $57{,}26\,\si{\text{\euro}\per MWh}$, der Preis der \ac{IDA-1} $\mu = 75{,}93\,\si{\text{\euro}\per MWh}$ und das Volatilitätsmaß $\sigma = 21{,}75\,\si{\text{\euro}\per MWh}$. Da der Day-Ahead-Preis unter $g_T$ und über $g_P$ liegt, wird die Turbinenseite als Call und die Pumpenseite als Put bewertet. Der Optionswert folgt aus dem standardisierten Abstand nach Gleichung~\eqref{eq:anh:weber:d} und den beiden Bewertungsformeln~\eqref{eq:anh:weber:call} und~\eqref{eq:anh:weber:put}. Darin bezeichnen $\Phi$ und $\varphi$ die Verteilungs- und die Dichtefunktion der Standardnormalverteilung und $\Delta t = \SI{0,25}{h}$ die Produktdauer, die hier bereits in die Formel einbezogen ist, sodass $V_C$ und $V_P$ den Optionswert je Megawatt und Viertelstunde in \si{\text{\euro}\per MW} bezeichnen. Für die Turbinenseite ist $X = g_T$, für die Pumpenseite $X = g_P$.
 
 \begin{align}
   d &= \frac{\mu - X}{\sigma} \label{eq:anh:weber:d}\\
@@ -183,6 +227,19 @@ Im bewerteten Fall liegt $\mu$ zwischen den Grenzpreisen, beide Optionen sind au
 \end{table}
 
 Im zweiten Fall trägt der innere Wert nahezu den gesamten Optionswert der Ausspeicherseite, während der Zeitwert auf einen kleinen Rest schrumpft und die Einspeicheroption ihren Wert fast vollständig verliert. Die Entschädigung steigt dadurch um den Faktor $12{,}7$. Ein solcher Fall entsteht, wenn die \ac{IDA-1} die Viertelstunde über den Turbinengrenzpreis hebt, während der Day-Ahead-Preis darunter bleibt. In der Viertelstunde um 13:00 Uhr liegt dagegen auch der \ac{ID1} mit $74{,}95\,\si{\text{\euro}\per MWh}$ unter dem Turbinengrenzpreis, sodass eine Ausspeisung dort nicht lohnend gewesen wäre. Die zweite Spalte ist dabei eine eigene Anwendung des Verfahrens. Erwartetes Preisniveau und Volatilitätsmaß der Viertelstunde von 19:00 Uhr entstammen den Datenreihen des Berechnungsbeispiels, das für sie jedoch keine Optionswerte ausweist, der Day-Ahead-Preis und die Werte des \ac{ID1} beider Viertelstunden stammen aus veröffentlichten Marktdaten für den 01.02.2024 \cite{bundesnetzagentur_berechnungsbeispiel_2024, smard_marktdaten_2026}. Der ermittelte Wert ist stets auf denjenigen Leistungsbereich anzuwenden, der ohne die Anweisung flexibel einsetzbar gewesen wäre, bei beidseitiger Fixierung also auf die gesamte Anlagenleistung und bei einseitiger nur auf den gesperrten Bereich. Wird durch die Maßnahme zugleich Arbeit bewegt, ist diese zum jeweiligen Abrechnungspreis zu vergüten. Da der Strikepreis bereits in der Optionsformel abgezogen ist, tritt der Optionswert allein gegen den anteiligen Werteverbrauch an und wird nur einbezogen, wenn er diesen übersteigt \cite{bundesnetzagentur_anlage1_2024}.
+
+Abbildung~\ref{fig:weber_optionswert} zeigt den Wert beider Optionen über dem erwarteten Preisniveau für die Viertelstunde von 13:00 bis 13:15 Uhr.
+Liegen der Day-Ahead-Preis und der erwartete Preis zwischen den Grenzpreisen, ist der innere Wert beider Optionen null und der gesamte Optionswert besteht aus Zeitwert.
+Die Kurven gelten allein für diese Viertelstunde, denn das Volatilitätsmaß wird je Viertelstundenprodukt bestimmt und jedes andere Produkt liegt daher auf einer anderen Kurve.
+
+\begin{figure}[htbp]
+    \centering
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht, die Datei ist genau textbreit.
+    \includegraphics[width=\textwidth]{figures/chapter_2/weber_optionswert.pdf}
+    \caption{Wert der Aus- und der Einspeicheroption je \si{MW} und Viertelstunde über dem erwarteten Preisniveau für die Viertelstunde von 13:00 bis 13:15 Uhr des 01.02.2024, in der sich 0,369\,\si{\text{\euro}\per MW} und 0,573\,\si{\text{\euro}\per MW} ergeben. Nach \cite{bundesnetzagentur_berechnungsbeispiel_2024}.}
+    \label{fig:weber_optionswert}
+\end{figure}
 
 \section{Anreizwirkung}
 \label{anh:weber:anreiz}

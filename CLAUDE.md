@@ -146,6 +146,11 @@ weniger Absatzumbrüche.
     folgender Erklärung. Gedankenstriche und Semikola nicht. Listeneinleitungen
     mit *nämlich* oder *folgende*. Kein alleinstehendes `\\`. Tabellen und
     Abbildungen stehen unmittelbar bei der Stelle, die auf sie verweist.
+17. **Satzlänge.** Ein Satz besteht aus einem Hauptsatz und höchstens einem
+    Nebensatz. Zwei Hauptsätze sind die Ausnahme und tragen dann keinen
+    Nebensatz mehr. Aufzählungen mit *nämlich* zählen nicht als Nebensatz.
+    Vorgabe des Verfassers vom 15.09.2026, gilt für alle neu geschriebenen
+    Absätze und rückwirkend für Kapitel 1 bis 3.
 
 ---
 
@@ -155,7 +160,12 @@ weniger Absatzumbrüche.
 der Vergütung, Erlösdifferenz, Schwellenpreis, Aktor, Reichweite.
 
 **Verbindlich.** *Kurativer Reservierungspreis* für die gesuchte Größe.
-*Kurative Reservierung* für das Produkt, seit dem 11.09.2026. *Grenzpreis* und
+*Kurative Reservierung* für das Produkt, seit dem 11.09.2026. *Kurativer
+Marktmechanismus* für das Verfahren, mit dem der ÜNB die Vorhaltung marktlich
+beschafft, einmal in 1.2 erklärt, danach immer mit dem Adjektiv und nie *der
+Mechanismus* allein. Der Mechanismus dient der Erkenntnis über Einflüsse auf den
+Preis und ist kein Marktdesign mit prognostizierten Preisen, Vorgabe des
+Verfassers vom 15.09.2026. *Grenzpreis* und
 nicht Schwellenpreis. *Kurative Systemführung* als Oberbegriff für die kurative
 Höherauslastung und den kurativen Redispatch. *BESS* und *PSKW* als Akronyme,
 keine Pluralform mit `\acp`. *IDA-1* für die Preisreihe der Strikepreise.
@@ -173,7 +183,7 @@ steht, gilt der Begriff als undefiniert.
 | Begriff | Ort |
 |---|---|
 | Redispatch, Kurzform | 1.1 Absatz 2 |
-| Kurative Vorhaltung, kurative Reservierung | 1.2 Absatz 1 |
+| Kurative Vorhaltung, kurativer Marktmechanismus, kurative Reservierung | 1.2 Absatz 1 |
 | Bindung, Bindungsdauer, Reaktionszeit, kurativer Reservierungspreis | 1.2 Absatz 2 |
 | Engpassmanagement, Redispatch, Ausfallvariante, Ausfallvariantenliste, Befund, Engpass | Einleitung 2.1 |
 | N-1-Kriterium, präventive und kurative Systemführung | Einleitung 2.1 |

@@ -3845,6 +3845,61 @@ echtzeitnahen Aktivierung als Vorzug fuer schlecht vorhersehbare Zustaende
 Entfallen sind die Belege sous_comparison_2025 an der Kostenwirkung der Marge
 und blank_determination_2024 mit dem PTDF-Satz.
 
+### 15.09.2026, chapter_2.tex, Abschnitte 2.2 bis 2.4 im Sammelmodus, Kuerzungen A1 und A3
+
+Die Abschnitte 2.2 bis 2.4 tragen keine Betreuerkommentare und sind nach der
+Kuerzungsliste vom 11.09.2026 neu gefasst, mit den Kuerzungen G25 bis G40,
+Q2, Q4, Q8, Q9, Q14, Q18, A1, A3, A4 und P4, P9. Je Abschnitt eine
+Fremdleser-Pruefung, deren Befunde eingearbeitet sind. Kapitel 2 umfasst nach
+dem Build 24 Seiten, Kapitel 3 beginnt auf Seite 31.
+
+Entscheidungen des Verfassers waehrend der Durchsicht.
+
+1. Der kurative Marktmechanismus ist der Begriff fuer das Verfahren, mit dem
+   der UeNB die Vorhaltung marktlich beschafft, einmal in 1.2 erklaert, mit dem
+   Zweck, Einfluesse auf den Preis zu erkennen, nicht ein Marktdesign mit
+   prognostizierten Preisen festzulegen. In Kapitel 2 an sechs Stellen
+   vereinheitlicht.
+2. Stilregel 17, Satzlaenge. Ein Hauptsatz und hoechstens ein Nebensatz, zwei
+   Hauptsaetze nur ausnahmsweise und dann ohne Nebensatz. Ab 2.2.3 angewandt,
+   die vorher geschriebenen Absaetze in Kapitel 1, 2.1, 2.2.1 und 2.2.2 sind
+   in einem eigenen Durchgang nachzuziehen.
+3. Die Netzsicherheitsrechnung prueft kontinuierlich, an einen abgeschlossenen
+   Lauf schliesst sich der naechste an, nicht je folgende Viertelstunde.
+4. Terminmarkt und OTC sind die erste Vermarktungsmoeglichkeit, nicht der Anfang.
+5. Energieinhalt je Leistung in Tabelle 2.1 fuer BESS mit 1 bis 2 Stunden,
+   steigend, belegt mit den Battery Charts, fuer PSKW 4 bis 8 Stunden als
+   Einschaetzung ohne Beleg. Die Kraftwerksliste der BNetzA mit Datenstand
+   26.06.2026 traegt 9.900 MW Pumpspeicher in Betrieb, aber kein
+   Speichervolumen. Als Quelle fuer das Volumen kommt Heimerl, Kohler und
+   Akpinar, Stand der Pumpspeicher in Deutschland 2025, WasserWirtschaft 115,
+   S. 10 bis 16, in Betracht, DOI 10.1007/s35147-025-2601-3, vom Verfasser
+   zu beschaffen.
+
+A1 umgesetzt. 2.3.2 traegt den Kern in fuenf Absaetzen, die Optionsarten als
+Saetze statt Tabelle tab:optionsarten. Nach Anhang A verschoben sind die
+Symboltabelle tab:weber_symbole als neuer erster Abschnitt Herkunft und
+Formelzeichen zusammen mit Normalverteilung, BDEW-Leitfaden, SDAC und den
+Abweichungen beim Volatilitaetsmass, die Abbildung fig:weber_optionswert in
+den Abschnitt Vergleich beider Preislagen, und das Berechnungsbeispiel
+entfaellt im Hauptteil, weil Anhang A es rechnet. Die Gleichungen eq:weber_d
+bis eq:weber_put entfallen, Anhang A fuehrt sie mit Produktdauer als
+eq:anh:weber:d bis eq:anh:weber:put, der Satz im Anhang, der auf die
+Gleichungen des Grundlagenkapitels verwies, ist angepasst.
+
+A3 umgesetzt. tab:regelleistung in 2.2.3 traegt die Spalte Bemessung, die
+Tabelle tab:balancing_remuneration in 2.3.4 ist entfallen, 2.3.4 traegt nur
+noch Verguetung, Regelarbeitsmarkt, Anreizkomponente, Ladezustandsfolge und
+die drei Befunde.
+
+Eigene Deutung, im Text so benannt und als Kommentar markiert: der
+Umschlagpunkt zwischen vier und sechs Volllaststunden (P4). Zurueckgenommen
+und nicht wieder aufzunehmen: der Satz zur verschobenen statt entfallenen
+Einspeisung in 2.3.3 (G36), der Satz zum Volumen als Funktion des
+Marktdesigns in 2.2.1 (Q4), die Erklaerung von pay-as-bid (G30), der
+Schlusssatz zur Bepreisung ueber Gebote in 2.2.3 (Q8), die 564 MW in 2.3.5
+(Q18) und die fuenf Saetze zum Zeitwert im Zwischenfazit (Q9).
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
