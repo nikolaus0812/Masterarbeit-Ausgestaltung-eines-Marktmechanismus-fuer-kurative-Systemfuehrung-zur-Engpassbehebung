@@ -9,7 +9,10 @@
 %Mit diesem Anteil verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
 Der Anteil erneuerbarer Energien an der Nettostromerzeugung lag im Jahr 2025 bei 58{,}8\,\% \cite{bundesnetzagentur_strommarktdaten_2026}.
 Mit diesem Anteil verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
-Die vorliegende Arbeit befasst sich mit einer Antwort auf diese Aufgabe, nämlich der kurativen Systemführung, die das bestehende Netz höher auslastet, und mit \ac{BESS} als dem Akteur, der die dafür nötige Reaktionsfähigkeit bereitstellt.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Die vorliegende Arbeit befasst sich mit einer Antwort auf diese Aufgabe, nämlich der kurativen Systemführung, die das bestehende Netz höher auslastet, und mit \ac{BESS} als dem Akteur, der die dafür nötige Reaktionsfähigkeit bereitstellt.
+Die vorliegende Arbeit befasst sich mit einer Antwort auf diese Aufgabe, nämlich der kurativen Systemführung, die das bestehende Netz höher auslastet.
+Als Akteur dafür kommen \ac{BESS} in Betracht, die die nötige Reaktionsfähigkeit bereitstellen.
 
 \section{Motivation und Problemstellung}
 \label{sec:motivation}
@@ -37,7 +40,10 @@ Die vorliegende Arbeit befasst sich mit einer Antwort auf diese Aufgabe, nämlic
 %Die monatlichen Gesamtkosten variierten seit Juli 2022 zwischen rund 123\,Mio.\,Euro im Juni 2023 und rund 485\,Mio.\,Euro im Dezember 2024.
 %Auf diesen Monat entfielen rund 16\,\% der Jahresgesamtkosten 2024 \cite{bundesnetzagentur_mengen_nodate}.
 %Ausschlaggebend für diesen Ausreißer war eine Windfront im Dezember 2024 \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missverhältnis geprägt, denn die Windkraft speist vor allem im Norden und Osten Deutschlands ein, die Lastzentren liegen im Süden und Westen, und in deren Nähe scheiden steuerbare konventionelle Kraftwerke aus dem Betrieb aus.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missverhältnis geprägt, denn die Windkraft speist vor allem im Norden und Osten Deutschlands ein, die Lastzentren liegen im Süden und Westen, und in deren Nähe scheiden steuerbare konventionelle Kraftwerke aus dem Betrieb aus.
+Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missverhältnis geprägt: Die Windkraft speist vor allem im Norden und Osten Deutschlands ein, die Lastzentren liegen im Süden und Westen.
+In der Nähe der Lastzentren scheiden zudem steuerbare konventionelle Kraftwerke aus dem Betrieb aus.
 Während der Netzausbau an dieser Achse von Nordosten nach Südwesten ansetzt, wird das Engpassmuster mit dem Zubau der Photovoltaik zugleich vielfältiger, denn eine hohe Einspeisung aus Photovoltaikanlagen führte in den Sommermonaten des Jahres 2025 vermehrt zu Ost-West-Lastflüssen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Die Transportaufgabe ist damit nicht auf eine Richtung festgelegt.
 
@@ -132,10 +138,17 @@ Fahrplanänderungen nach der letzten Vorschaurechnung gehen in keine Rechnung me
 % SETZUNG nach V13, entschieden vom Verfasser am 14.09.2026. Beleg in
 % leeuwen_integration_2020 zu suchen, bis dahin ohne Zitat.
 Entsteht durch solche späten Änderungen ein Zustand, der nicht mehr (N-1)-sicher ist, erkennt ihn der \ac{ÜNB} in der laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation.
-Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können, sodass das Netz sicher bleibt, der Eingriff aber teurer wird und der Kreis geeigneter Anlagen kleiner ist als in der Vorplanung.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können, sodass das Netz sicher bleibt, der Eingriff aber teurer wird und der Kreis geeigneter Anlagen kleiner ist als in der Vorplanung.
+Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können.
+Das Netz bleibt damit sicher.
+Der Eingriff wird aber teurer als in der Vorplanung, weil der Kreis geeigneter Anlagen kleiner ist.
 
 Die kurative Systemführung vermeidet Engpässe nicht im Voraus, sondern behebt sie nach ihrem Eintreten durch gezielte Gegenmaßnahmen und nutzt dafür die kurzzeitige Überlastbarkeit der Betriebsmittel \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Damit wird eine Vorauslastung zulässig, die bisher durch eine präventive Maßnahme begrenzt werden musste, sodass ein Teil des Redispatch entfällt, der heute allein dazu dient, die Marge freizuhalten.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Damit wird eine Vorauslastung zulässig, die bisher durch eine präventive Maßnahme begrenzt werden musste, sodass ein Teil des Redispatch entfällt, der heute allein dazu dient, die Marge freizuhalten.
+Damit wird eine Vorauslastung zulässig, die bisher durch eine präventive Maßnahme begrenzt werden musste.
+Ein Teil des Redispatch entfällt deshalb, nämlich der Teil, der heute allein dazu dient, die Marge freizuhalten.
 Der Redispatch selbst entfällt damit nicht, denn nach einem Abruf stellt ein Redispatch den (N-1)-sicheren Zustand wieder her.
 Weil ein Abruf nur im Fehlerfall erfolgt, fällt zudem weniger Maßnahmenvolumen an als bei einer Vorsorge, die für jeden möglichen Ausfall im Voraus getroffen wird.
 Die zeitliche Lücke zwischen der letzten Vorschaurechnung und dem Lieferbeginn besteht auch für die kurative Systemführung, denn die kurative Maßnahme wird ebenfalls vorab eingeplant, und ob sie sich in dieser Lücke noch anpassen lässt, hängt vom jeweiligen Konzept ab.
@@ -204,26 +217,47 @@ Der kurative Marktmechanismus ist das Verfahren, mit dem der \ac{ÜNB} diese Vor
 Der Mechanismus wird entworfen, um die Einflüsse zu erkennen, die am Markt auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign mit prognostizierten Preisen festzulegen.
 % VERSCHOBEN am 15.09.2026 nach 1.1 Absatz 8, entschieden vom Verfasser, der Satz wirkte hier fehl am Platz. Alte Fassung:
 %Die kurative Systemführung verringert den präventiven Redispatch, ersetzt ihn aber nicht, denn nach einem Abruf stellt ein Redispatch den (N-1)-sicheren Zustand wieder her.
-Ein Marktmechanismus ist nötig, weil sich die Bereitschaft der Akteure, die Abschnitt~\ref{sec:motivation} als Voraussetzung nennt, im Selbst\-dispatch-Modell nicht anordnen lässt: Der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst, und kurative Verfügbarkeit entsteht deshalb nur über eine Vergütung.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Ein Marktmechanismus ist nötig, weil sich die Bereitschaft der Akteure, die Abschnitt~\ref{sec:motivation} als Voraussetzung nennt, im Selbst\-dispatch-Modell nicht anordnen lässt: Der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst, und kurative Verfügbarkeit entsteht deshalb nur über eine Vergütung.
+Abschnitt~\ref{sec:motivation} nennt die Bereitschaft der Akteure als Voraussetzung.
+Ein Marktmechanismus ist nötig, weil sich die Bereitschaft der Akteure im Selbst\-dispatch-Modell nicht anordnen lässt: Der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst.
+Kurative Verfügbarkeit entsteht deshalb nur über eine Vergütung.
 Für Systemdienstleistungen bestehen dafür zwei Logiken: Die Regelleistungsmärkte, auf denen die \ac{ÜNB} Leistung für die Frequenzhaltung beschaffen, vergüten die Bereitstellung vorgehaltener Leistung \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}, das Engpassmanagement vergütet nach §\,13a \ac{EnWG} allein den durchgeführten Eingriff \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
 Ob die Vergütung der Bereitstellung oder die Vergütung des Eingriffs den erforderlichen Anreiz für die kurative Vorhaltung setzt, ist damit zu klären.
 
 Zur Beantwortung versetzt sich ein Optimierungsmodell in die Position des Speicherbetreibers: Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber auf eine kurative Reservierung reagiert.
-Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt, während eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
-Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt, denn der Anteil erneuerbarer Energien soll bis 2030 mindestens 80 Prozent erreichen, der Speicherbestand wächst in allen Szenarien des \ac{NEP}, und der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt, während eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
+Gerechnet wird mit den beobachteten Preisen des Jahres 2025.
+Beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt.
+Eine Preisprognose fügte dem Ergebnis dagegen eine weitere Annahme hinzu, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt, denn der Anteil erneuerbarer Energien soll bis 2030 mindestens 80 Prozent erreichen, der Speicherbestand wächst in allen Szenarien des \ac{NEP}, und der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt.
+Bis 2030 soll der Anteil erneuerbarer Energien mindestens 80 Prozent erreichen, und der Speicherbestand wächst in allen Szenarien des \ac{NEP}.
+Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 
 Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Reservierung mindestens verlangen muss, damit er mit ihr genauso viel verdient wie ohne sie.
 Die Reservierung bindet die Anlage, denn sie verpflichtet den Betreiber, Leistung und Ladezustand über die Bindungsdauer vorzuhalten, also über den Zeitraum, für den die Zusage gilt.
 Der kurative Reservierungspreis misst damit die Opportunitätskosten der Bindung, also die Erlöse, die der Betreiber an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
 Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
 Wie hoch der Preis ausfällt, folgt aus der Ausgestaltung des Produkts, nämlich aus der Bindungsdauer, der vorzuhaltenden Leistung und der geforderten Reaktionszeit, also der Zeit vom Abrufsignal bis zur vollständig umgesetzten Leistungsänderung.
-Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten, die das Modell nicht abbildet, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten, die das Modell nicht abbildet, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
+Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten.
+Das Modell bildet Präqualifikation, Pönale und Anbieterzahl nicht ab, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
 Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Reservierung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
 
 Die drei Teilfragen geben den Aufbau vor.
-In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt, und daraus folgt die Wahl der \ac{BESS} als kurativer Akteur.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt, und daraus folgt die Wahl der \ac{BESS} als kurativer Akteur.
+In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt.
+Daraus folgt die Wahl der \ac{BESS} als kurativer Akteur.
 In Kapitel~\ref{ch:design_model} werden die Anforderungen an einen kurativen Marktmechanismus abgeleitet und die kurative Reservierung als Produkt entworfen.
-Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit seinen Systemgrenzen, den geführten Märkten und dem Suchverfahren für den Reservierungspreis, und den Abschluss des Kapitels bildet die Prüfung des ungebundenen Erlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit seinen Systemgrenzen, den geführten Märkten und dem Suchverfahren für den Reservierungspreis, und den Abschluss des Kapitels bildet die Prüfung des ungebundenen Erlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
+Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit seinen Systemgrenzen, den geführten Märkten und dem Suchverfahren für den Reservierungspreis.
+Den Abschluss des Kapitels bildet die Prüfung des ungebundenen Erlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
 In Kapitel~\ref{ch:results} werden Fahrplan, Ladezustand und Erlöse unter der Reservierung dargestellt, die Produkt- und Anlagenparameter variiert und daraus der kurative Reservierungspreis bestimmt.
 In Kapitel~\ref{ch:discussion} wird der Preis in die bestehenden Vergütungslogiken eingeordnet, das Produkt gegen die Anforderungen geprüft und die Modellannahmen werden kritisch gewürdigt.
 In Kapitel~\ref{ch:conc} werden die Ergebnisse entlang der drei Teilfragen zusammengefasst und weiterer Forschungsbedarf benannt.
