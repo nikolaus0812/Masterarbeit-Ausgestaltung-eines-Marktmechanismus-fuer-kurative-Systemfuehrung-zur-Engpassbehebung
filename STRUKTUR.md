@@ -1,7 +1,25 @@
 # Struktur und Zuordnung
 
-Stand 11.09.2026, nach der Auflösung von 3.1.3.
+Stand 15.09.2026, nach der Neufassung von Kapitel 3 nach AENDERUNGEN_KAP3.md.
 Arbeitsdokument. Es ersetzt weder CLAUDE.md noch das Entscheidungsprotokoll.
+
+## Nachtrag 15.09.2026
+
+- **Kapitel 3 ist vollständig ausformuliert (F)** in allen Unterabschnitten
+  3.1.1 bis 3.3.2. Die Kürzungen und Umformulierungen stehen in
+  AENDERUNGEN_KAP3.md, Befunde K01 bis K73 und Entscheidungen W1 bis W7.
+- **Basisfall geändert (W1).** Lineares Programm mit stetiger Reservierung, wie
+  im Code mit `USE_KUR_BINAER = False`. Die Mindestgröße von 25 MW ist eine
+  Sensitivität und kein Bestandteil des Basisfalls. Der Eintrag unter
+  *Entschieden am 11.09.2026* ist insoweit überholt.
+- **Reaktionszeitklassen (W3)** nach InnoSys: unter zehn Sekunden, etwa zwei
+  Minuten, bis 15 Minuten. Basisfall ist die Klasse von etwa zwei Minuten.
+- **Ergebnisabsatz in 3.3.2 (W5).** Die Zahlen des marktübergreifenden
+  Vergleichs stehen jetzt in 3.3.2 hinter Abbildung fig:validierung_cross und
+  nicht erst in 4.1.
+- **Umfang.** Kapitel 3 umfasst die Seiten 31 bis 47. Das Seitenziel 14 ist
+  nicht erreicht, weil beide Abbildungen zum Suchverfahren nach W2 im Text
+  bleiben.
 
 **F** heißt ausformulierter Fließtext, **S** heißt Stichpunktgerüst, **T** heißt
 teilweise.

@@ -6648,6 +6648,93 @@ kein Venue und keine arXiv-Nummer 2501.07121v2. Der Eintrag traegt jetzt Saetze
 in 3.2.1 und in 3.3. Eine Freigabe zur Berichtigung liegt nicht vor.
 
 
+### 15.09.2026, chapter_3.tex, Kapitel 3 nach AENDERUNGEN_KAP3.md im Sammelmodus
+
+**Vorlage und Umfang.** AENDERUNGEN_KAP3.md mit den Befunden K01 bis K73 und
+den Entscheidungen W1 bis W7, die der Verfasser am 15.09.2026 getroffen hat.
+Umgesetzt in zwei Skripten, Teil 1 mit Kapiteleinleitung und 3.1, Teil 2 mit
+3.2, 3.3 und den Bildunterschriften, danach ein drittes Skript mit den
+Befunden der Fremdleser-Pruefung. Jede alte Fassung steht als Kommentar mit
+dem Vermerk NEU GEFASST beziehungsweise FREMDLESER-PRUEFUNG ueber der neuen.
+
+**W1, Basisfall.** Lineares Programm mit stetiger Reservierung, wie im Code
+mit `USE_KUR_BINAER = False`. Die Mindestgroesse von 25 MW macht das Modell
+gemischt-ganzzahlig und ist eine Sensitivitaet. Der Eintrag vom 11.09.2026
+zum Basisfall ist insoweit ueberholt, CLAUDE.md Abschnitt 7 Nummer 3 und
+STRUKTUR.md sind nachgezogen. Im Produktentwurf in 3.1.2 bleibt die
+Mindestgroesse von 25 MW als Merkmal der Ausschreibung bestehen.
+
+**W2, Abbildungen.** Beide Abbildungen zum Suchverfahren bleiben im Text.
+Das Seitenziel von 14 Seiten ist deshalb nicht erreicht, Kapitel 3 umfasst
+die Seiten 31 bis 47.
+
+**W3, Reaktionszeitklassen.** An InnoSys 2030 angeglichen, naemlich unter
+zehn Sekunden, etwa zwei Minuten und bis 15 Minuten. Basisfall ist die Klasse
+von etwa zwei Minuten.
+
+**W4, aFRR-Leistung.** Der hoechste Zuschlag heisst so und nicht Grenzpreis,
+weil Grenzpreis fuer die Weber-Groessen belegt ist.
+
+**W5, Ergebnisabsatz in 3.3.2.** Hinter fig:validierung_cross stehen jetzt
+die Zahlen des Vergleichs. Der Eintrag vom 14.09.2026 mit der Aussage, die
+Zahlen gehoerten nach 4.1, ist damit ueberholt. Zahlen aus
+analysen/02_validierung des Modellrepositorys, Lauf vom 12. und 13.09.2026,
+am 15.09.2026 nachgerechnet: Index 259,7 und Modell 348,3 Tausend Euro je
+Megawatt und Jahr im Jahresmittel, Median des Monatsverhaeltnisses 1,33 aus
+der Spalte faktor in validierung_cross.csv, Spanne 1,06 bis 1,54,
+Korrelation 0,97, je Markt FCR 1,24, aFRR 1,52, DA 0,86, IDC 0,89,
+aFRR-Vorhaltung im Jahresmittel 81 MW positiv und 72 MW negativ von 100 MW.
+Der Eintrag vom 14.09.2026 nannte 1,34, das ist das Verhaeltnis der
+Jahresmittel, der Text nennt den Median 1,33.
+
+**W6.** Schluesseltechnologie in der Kapiteleinleitung zurueckgenommen, nicht
+wieder aufzunehmen.
+
+**W7.** Fuenf Bildunterschriften auf ein bis drei Zeilen gekuerzt, die
+Erlaeuterung steht im Fliesstext.
+
+**Zurueckgenommene Formulierungen**, im Wortlaut als Kommentar in der Datei,
+nicht wieder aufzunehmen: Schluesseltechnologie, Grenzpreis fuer den
+aFRR-Zuschlag, Speicherdauer statt Energieinhalt je Leistung, Leistungspunkt,
+Poolbildung ohne Erklaerung, "Dieser Abschnitt darf deshalb Zahlen tragen",
+"Um die Suche liegen die Schleifen", "Jede dieser Auslassungen wirkt in eine
+benennbare Richtung", weil nur fuer zwei der Vereinfachungen eine Richtung
+genannt ist.
+
+**Eigene Ableitungen.** Die Zuordnung der Praequalifikation in 3.1.2, wonach
+die Klasse bis 15 Minuten durch die Praequalifikation der aFRR und der mFRR
+abgedeckt ist und die schnelleren Klassen eigens nachzuweisen sind. Der
+Anschluss der Mindestgroesse an die Zusammenfassung je Netzknoten, wonach
+mehrere Anlagen am selben Knoten die 25 MW gemeinsam erreichen. Die
+Begruendung, dass ein hoeherer Zuschlag auf dem Bietverhalten beruht, weil
+alle bezuschlagten Gebote dieselbe Leistung erbringen. Die Erklaerung des
+sicheren Zuschlags in 3.3.2 aus der Preisuebernahme des Modells.
+
+**Fremdleser-Pruefung.** Drei Sonnet-Subagenten je Abschnitt, nur der
+gerenderte Fliesstext ohne Kommentare. Uebernommen sind die Befunde zu
+Pronomen ueber die Satzgrenze in 3.1.2, 3.2.1, 3.2.3, 3.2.4 und 3.3.2, drei
+fehlende Ueberleitungen in 3.1.2, zwei in 3.2 und eine in 3.3.2, die
+Erklaerung von Zeitscheibe, pay-as-bid, Poolbildung und dem Index s(t) bei
+der ersten Verwendung, die Rechnung der Laufzahlen in 3.2.4 und die
+Aufteilung der Faktoren je Markt in 3.3.2 auf drei Saetze. Nicht uebernommen
+sind die Befunde zu Akronymen und Begriffen, die in Kapitel 2 oder frueher in
+Kapitel 3 definiert sind, naemlich UeNB, BESS, FCR, aFRR, mFRR, DA, IDC,
+InnoSys 2030, PICASSO, Fehlerfall, Ueberlastintervall, Festlegung,
+Erzeugungsauslagen und Werteverbrauch.
+
+**Satzlaenge.** Nach Stilregel 17 durchgesehen. Ein Befund bleibt, die
+Aufzaehlung der Entscheidungsvariablen in 3.2.2, weil sie eine Aufzaehlung
+ohne Nebensaetze ist.
+
+**Pruefungen.** tools/pruefen.py ohne Befund in chapter_3.tex, attachment.tex
+und attachment_validierung.tex. Build ohne Fehler, undefinierte Verweise nur
+auf die auskommentierten Kapitel 4 bis 6.
+
+**Offen.** Der Kapitelueberblick in 1.2 deckt die Gliederung von Kapitel 3,
+dort ist nichts nachzuziehen. Die Anhangbuchstaben haben sich durch den
+neuen Anhang B verschoben, CLAUDE.md Abschnitt 1 nennt noch die alte
+Zaehlung.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

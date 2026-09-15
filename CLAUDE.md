@@ -27,8 +27,9 @@ mindestens fordern muss, um mit ihr genauso viel zu verdienen wie ohne sie.
 main.tex                          Rahmen, Kapitel 4 bis 6 auskommentiert
 chapters/chapter_1.tex bis chapters/chapter_6.tex
 extras/attachment.tex             Anhang A, modifizierter Weber-Ansatz
-extras/attachment_modell.tex      Anhang B, vollstaendiges Optimierungsproblem
-extras/attachment_validierung.tex Anhang C, Validierung je Markt
+extras/attachment_thermik.tex     Anhang B, zulaessige Ueberlastdauer, seit 15.09.2026
+extras/attachment_modell.tex      Anhang C, vollstaendiges Optimierungsproblem
+extras/attachment_validierung.tex Anhang D, Validierung je Markt
 extras/abbreviations.tex          Abkuerzungsverzeichnis
 literature/literature.bib         Literaturdatei
 literature/PDFs, literature/txt   Volltexte, nicht versioniert
@@ -258,10 +259,14 @@ Wortlaut und Begründung stehen im Protokoll, die Gliederung von Kapitel 3 in
    vom 11.09.2026. Gemeint ist der Preis, bei dem ein Akteur eine Stunde voll
    reserviert. Die frühere Entscheidung zur exogenen Bindung mit zwei Läufen je
    Tag ist damit überholt.
-3. **Basisfall.** 25 MW Mindestgröße, gemischt-ganzzahlig, beide Richtungen,
-   Reaktionszeitklasse zwei Minuten, Zeitscheibe eine Stunde, eine
-   Megawattstunde je Megawatt, Abrufdauer eine Stunde. Die Stunden wählt das
-   Modell.
+3. **Basisfall.** Lineares Programm mit stetiger Reservierung, beide
+   Richtungen, Reaktionszeitklasse etwa zwei Minuten, Zeitscheibe eine Stunde,
+   eine Megawattstunde je Megawatt, Abrufdauer eine Stunde. Die Stunden wählt
+   das Modell. Die Mindestgröße von 25 MW macht das Modell gemischt-ganzzahlig
+   und ist eine Sensitivität, wie im Code mit USE_KUR_BINAER = False.
+   Berichtigt am 15.09.2026, W1. Die Reaktionszeitklassen folgen InnoSys 2030,
+   nämlich unter zehn Sekunden, etwa zwei Minuten und bis 15 Minuten,
+   entschieden am 15.09.2026, W3.
 4. **Auswertungszeitraum ist das ganze Jahr 2025.** Das Jahr 2030 ist ein
    qualitativer Rahmen, gerechnet wird mit beobachteten Preisen.
 5. **Nicht modelliert** sind die Abrufwahrscheinlichkeit und die Pönale. Beide
@@ -277,8 +282,9 @@ Wortlaut und Begründung stehen im Protokoll, die Gliederung von Kapitel 3 in
 10. Die Vergütungsstruktur der Festlegung lautet nach Anlage 1 Seite 14
     Erzeugungsauslagen zuzüglich des Maximums aus anteiligem Werteverbrauch und
     Opportunität.
-11. Das vollständige Optimierungsproblem steht in Anhang B, Kapitel 3 verweist
-    auf die Gleichungen, statt sie zu wiederholen. Entschieden am 13.09.2026.
+11. Das vollständige Optimierungsproblem steht in Anhang C, seit dem neuen
+    Anhang B vom 15.09.2026 nicht mehr in Anhang B. Kapitel 3 verweist auf
+    die Gleichungen, statt sie zu wiederholen. Entschieden am 13.09.2026.
 12. Der Vierschritt für Rahmenantworten gilt nicht durchgängig. Gesetzt wird
     allein, was für die Optimierung von Belang ist, der Ausdruck Bandbreite
     kommt im Text nicht vor. Entschieden am 14.09.2026.
@@ -309,7 +315,7 @@ sich das ausgewiesene Ergebnis reproduzieren lässt.
 **Belegte Formelzeichen.** g_T, g_P, X, d_T, d_P, V_C und V_P sind durch die
 Darstellung des Weber-Ansatzes belegt. Im Speichermodell sind damit V, X und d
 gesperrt, ebenso g für eine andere Größe als einen Grenzpreis. Prüfe jede neue
-Symbolliste gegen `tab:weber_symbole` und gegen Anhang A und B.
+Symbolliste gegen `tab:weber_symbole` und gegen Anhang A und C.
 
 ---
 
