@@ -3798,6 +3798,53 @@ nämlich die Zwischenwerte mit mehr Stellen zu drucken oder in einem Satz
 offenzulegen, dass die Beträge aus der Quelle stammen und die gedruckte Kette sie
 nur näherungsweise trägt. Nicht geändert, weil beides eine Entscheidung ist.
 
+### 15.09.2026, chapter_2.tex, Kapiteleinleitung und Abschnitt 2.1 im Sammelmodus
+
+Kapiteleinleitung, Einleitung von 2.1 und die Unterabschnitte 2.1.1 bis 2.1.5
+nach AENDERUNGEN_KAP1_2.md neu gefasst, alte Fassungen als Kommentar erhalten,
+je Unterabschnitt eine Fremdleser-Pruefung, deren Befunde eingearbeitet sind.
+Umgesetzt sind B40 bis B106, die Kuerzungen G1 bis G24, Q1, Q2, Q10 bis Q15
+und A2, A5, A6 sowie die Entscheidungen V4 bis V6 und V8 bis V13.
+
+Entscheidungen des Verfassers waehrend der Durchsicht.
+
+1. Der Satz zur kurativen Systemfuehrung in der Einleitung von 2.1 nennt
+   vordefinierte Gegenmassnahmen, nicht Systemautomatiken, weil
+   Systemautomatiken heute schon bestehen und im Sprachgebrauch keine
+   kurativen Massnahmen sind.
+2. Der PATL und der TATL sind maskulin. Die Fussnote nennt InnoSys 2030 und
+   das Grenzwertkonzept als Herkunft der Bezeichnungen.
+3. Energieinhalt je Leistung in Stunden ist der Begriff fuer das Verhaeltnis
+   von Speicherkapazitaet zu Nennleistung, definiert in 2.1.3, nicht C-Wert,
+   weil die C-Rate der Kehrwert ist. Tabelle 2.1 fuehrt 4 bis 8 Stunden fuer
+   PSKW und 1 bis 4 Stunden fuer BESS als Einschaetzung des Verfassers ohne
+   Beleg, so in der Fussnote der Tabelle vermerkt.
+4. A2 umgesetzt. Die Thermik steht als Anhang B in
+   extras/attachment_thermik.tex mit Waermebilanz, Joule-Gleichung, Abbildung
+   und Transformatorabsatz, in dem B67 mit IEC 60076-7 belegt und B68 so
+   gefasst ist, dass die Temperatur bei beiden Betriebsmitteln fuer eine
+   Wirkung steht. Im Hauptteil bleiben fuenf Saetze. Kapitel 2 sinkt dadurch
+   von 29 auf 28 Seiten.
+
+Zurueckgenommene Formulierungen, nicht wieder aufzunehmen: Reichweite (jetzt
+Planungshorizont), die Behauptung, der kurative Redispatch verzichte auf eine
+Vorplanung (B55), die Behauptung, praeventiv lasse sich auf spaete
+Netzzustaende nicht mehr reagieren (B58), der Satz zu den Gasturbinen ohne
+Zahl (B79), die Aussage, die Verfuegbarkeit von Wind und PV haenge am selben
+Dargebot, das den Engpass verursacht (B80), positiver Befund fuer das
+Pruefergebnis, weil Befund jetzt die Grenzwertverletzung meint.
+
+Setzungen und eigenstaendige Argumente, im Text als Kommentar markiert: die
+Marge folgt aus der unguenstigsten Ausfallvariante (B49), die Definition des
+Engpasses ueber den Befund (V11), die Reaktion des UeNB auf spaete Zustaende
+(V13), die thermische Traegheit nach Ausfall der Wirkungskette (B97), die
+kombinatorische Einplanung (B99, Hinweis des Betreuers), die Deutung der
+echtzeitnahen Aktivierung als Vorzug fuer schlecht vorhersehbare Zustaende
+(B106), die Trennung heutiger und geplanter Mittel des UeNB (B64).
+
+Entfallen sind die Belege sous_comparison_2025 an der Kostenwirkung der Marge
+und blank_determination_2024 mit dem PTDF-Satz.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3

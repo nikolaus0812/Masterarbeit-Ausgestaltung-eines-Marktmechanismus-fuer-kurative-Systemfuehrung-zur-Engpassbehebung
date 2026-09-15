@@ -160,7 +160,11 @@ nicht Schwellenpreis. *Kurative Systemführung* als Oberbegriff für die kurativ
 Höherauslastung und den kurativen Redispatch. *BESS* und *PSKW* als Akronyme,
 keine Pluralform mit `\acp`. *IDA-1* für die Preisreihe der Strikepreise.
 *Akteur* für den Marktteilnehmer, *Technologie* für die Anlage.
-*Topologieschaltmaßnahmen* einheitlich.
+*Topologieschaltmaßnahmen* einheitlich. *Der PATL* und *der TATL*, maskulin, nach
+InnoSys 2030 und dem Grenzwertkonzept, entschieden am 15.09.2026. *Energieinhalt je Leistung* in Stunden für das Verhältnis von
+Speicherkapazität zu Nennleistung, nicht C-Wert oder C-Rate, denn die C-Rate ist der
+Kehrwert. Definiert in 2.1.3, Wertebereiche in Tabelle 2.1 als Einschätzung des
+Verfassers ohne Beleg, entschieden am 15.09.2026.
 
 **Vor der ersten Verwendung zu definieren.** Die Spalte Ort nennt die Stelle,
 an der die Definition nach `AENDERUNGEN_KAP1_2.md` stehen soll. Bis sie dort
