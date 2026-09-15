@@ -1452,6 +1452,79 @@ Anforderungen gegen bestehende Marktdesignansaetze ab, und die Bezeichnung
 kuratives Marktprodukt fuer das Produkt.
 
 
+### 15.09.2026, chapter_1.tex, Vorspann und Abschnitt 1.1 nach den Betreuerkommentaren
+
+Erster Zyklus nach WORKFLOW.md. Acht Absatzplaene vorgelegt, vom Verfasser
+freigegeben, der Abschnitt als Ganzes geschrieben, alte Fassung als Kommentar
+erhalten. Umgesetzt sind B03 bis B23, E1 bis E10 und V12 sowie die Befunde der
+Fremdleser-Pruefung (sieben unerklaerte Ausdruecke, ein fehlender Uebergang,
+drei fehlende Schlusssaetze).
+
+Entscheidungen des Verfassers bei der Durchsicht.
+
+1. Keine Pronominalisierung ueber die Satzgrenze, jetzt Stilregel 5. Die
+   Wendungen die vorliegende Arbeit und diese Arbeit nur in 1.2 und in den
+   Kapiteleinleitungen.
+2. Der UeNB bestimmt die Fahrplaene nicht ist zu grob. Richtig ist, dass der
+   UeNB aus den gemeldeten Fahrplaenen der Akteure die Leistungsfluesse
+   vorhersagt und eine drohende Ueberlastung durch Redispatch behebt.
+3. Voraussetzung eines kurativen Eingriffs sind Akteure in Bereitschaft,
+   allgemein gehalten. Die Fassung mit dem Akteurpaar, dessen eine Anlage die
+   Einspeisung erhoeht und dessen andere sie senkt, ist zurueckgenommen und
+   nicht wieder aufzunehmen, sie gehoert nach 2.1.2.
+4. Die Aussage, die kurative Massnahme sei von der zeitlichen Luecke weniger
+   betroffen als die praeventive Planung, ist zurueckgenommen, weil das je
+   nach Konzept nicht zutrifft. Jetzt steht, dass die Luecke auch fuer die
+   kurative Systemfuehrung besteht, die kurative Massnahme ebenfalls vorab
+   eingeplant wird und die Anpassbarkeit vom Konzept abhaengt.
+5. Der Satz, die kurative Systemfuehrung setze an demselben Eingriffsbedarf
+   an, den die vorangehenden Absaetze beziffert haben, ist zurueckgenommen,
+   weil der Bezug unklar war. Jetzt steht, dass ein Teil des Redispatch
+   entfaellt, der allein dazu dient, die Marge freizuhalten.
+
+Eigenstaendige Ableitung, im Text als Kommentar markiert: der Schlusssatz von
+Absatz 5, dass ein Instrument fuer den Engpassmanagementbedarf im Ereignisfall
+wirken und an wechselnden Orten verfuegbar sein muss. Setzung nach V13, im
+Text als Kommentar markiert: die Reaktion des UeNB auf spaete Fahrplanaenderungen
+mit Schaltmassnahmen, Phasenschiebern und kurzfristigem Redispatch, Beleg bei
+leeuwen_integration_2020 zu suchen. Ohne Beleg steht die Richtungsangabe
+Nordosten nach Suedwesten, sie stammt vom Betreuer (B04).
+
+Kapitel 1 umfasst nach dem Build fuenf Seiten, Kapitel 2 beginnt auf Seite 6.
+
+### 15.09.2026, chapter_1.tex, Abschnitt 1.2 im Sammelmodus
+
+Plan und Text in einer Lieferung, vom Verfasser am Text korrigiert. Umgesetzt
+sind B24 bis B39, E11 bis E14, P1, P6, P8, V2 und V12 sowie fuenf Befunde der
+Fremdleser-Pruefung. 1.2 traegt jetzt die Definitionen von kurativer Vorhaltung,
+kurativer Reservierung, Bindung, Bindungsdauer und Reaktionszeit, der
+Kapitelueberblick hat handelnde Subjekte und je Kapitel ein bis zwei Saetze.
+
+Entscheidungen des Verfassers bei der Durchsicht.
+
+1. Der Satz, die kurative Systemfuehrung verringere den praeventiven
+   Redispatch und ersetze ihn nicht, wirkte in 1.2 fehl am Platz und steht
+   jetzt in 1.1 Absatz 8 hinter dem Redispatch, der die Marge freihaelt.
+2. Der Anreiz ist an die Bereitschaft der Akteure aus 1.1 angebunden, weil
+   1.2 das Problem begruenden und daraus das Vorgehen ableiten soll.
+3. Das Jahr 2030 ist kein Rahmen der Rechnung, sondern der Rahmen fuer die
+   Frage, ob sich die kurative Systemfuehrung mit BESS bis dahin umsetzen
+   laesst. Die Rechnung laeuft mit den Preisen von 2025. Die alte Fassung
+   Der Betrachtungsrahmen ist ein 2030-Szenario mit hohem Anteil erneuerbarer
+   Energien ist zurueckgenommen und nicht wieder aufzunehmen.
+4. Das Modell liefert nicht die Antwort, sondern versetzt sich in die
+   Position des Speicherbetreibers, damit sich sein Marktverhalten
+   nachvollziehen laesst. Zurueckhaltende Behauptungsstaerke.
+5. Der Satz zu den Entwicklungen bis 2030 ist mit dem NEP belegt, geprueft
+   am Volltext: 80 Prozent bis 2030 stehen dort als Referenzwert des EEG,
+   das Speicherwachstum in allen Szenarien, und der Zielzustand des
+   Netzausbaus liegt mit 2037 und 2045 nach 2030. Die fruehere Formulierung
+   fortbestehende Netzausbaurueckstaende traegt die Quelle nicht und ist
+   entfallen.
+
+Ohne Beleg und als Mechanismus formuliert: die Definitionen nach V2 und V4
+und der Satz zur Volatilitaet als Grund fuer die Preise von 2025.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare

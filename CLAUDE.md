@@ -109,10 +109,13 @@ weniger Absatzumbrüche.
    bekommt einen eigenen Überleitungssatz.
 4. **Aussagen zu Ende führen.** Nach Befund und Erklärung steht, was daraus für
    Maßnahme, Mechanismus oder Netzbetrieb folgt.
-5. **Bezüge ausschreiben.** Pronomen und Demonstrativa wie *sie*, *er*, *diese*,
-   *dabei* stehen nur, wenn der Bezug im selben Satz steht. Unbestimmte
-   Nominalphrasen wie *die Arbeit*, *der Bedarf*, *das Netz*, *der Mechanismus*
-   tragen ihr Attribut.
+5. **Bezüge ausschreiben.** Keine Pronominalisierung über die Satzgrenze.
+   Pronomen und Demonstrativa wie *sie*, *er*, *es*, *diese*, *dieser*,
+   *dafür* stehen nur, wenn der Bezug im selben Satz steht, sonst wird das
+   Nomen wiederholt. Unbestimmte Nominalphrasen wie *der Bedarf*, *das Netz*,
+   *der Mechanismus* tragen ihr Attribut. Die Wendungen *die vorliegende
+   Arbeit* und *diese Arbeit* stehen nur in Abschnitt 1.2 und in den
+   Kapiteleinleitungen, sonst nirgends. Vorgabe des Verfassers vom 15.09.2026.
 6. **Begriffe vor der ersten Verwendung definieren**, einmal, und danach
    unverändert verwenden. Die Liste steht in Abschnitt 5.
 7. **Relative Angaben beziffern.** *Groß*, *klein*, *eng*, *spät*, *schnell*
