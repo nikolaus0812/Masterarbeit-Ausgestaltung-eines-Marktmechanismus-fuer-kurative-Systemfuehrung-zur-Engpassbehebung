@@ -40,6 +40,7 @@ ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen, nur anhaengen, 
 WORKFLOW.md                       Vorgehen fuer Korrektur, Neufassung und Kommentardurchgang
 DURCHSICHT_KAP1_3.md              Offene Vorschlaege der Durchsicht vom 15.09.2026, Liste F
 KOMMENTARE_KAP3.md                Kommentardatei des Verfassers zu Kapitel 3, seit 16.09.2026
+ANWEISUNG_KOMMENTARE.md           Anweisung fuer die Sitzung, die die Kommentare niederschreibt
 analysen/                         Eigene Auswertungen mit Daten und Skripten als Belege
 archiv/                           Umgesetzte Arbeitsdokumente, nur zum Nachschlagen:
                                   AENDERUNGEN_KAP1_2.md, AENDERUNGEN_KAP3.md,
@@ -98,7 +99,13 @@ abgeschlossen, die Listen liegen in `archiv/`. Seit dem 16.09.2026 gilt der
 Kommentardurchgang nach `WORKFLOW.md` Abschnitt 7: Der Verfasser kommentiert
 den Text in `KOMMENTARE_KAP3.md`, Claude arbeitet die Kommentare ein, und
 die Kommentare haben Vorrang vor den offenen Vorschlägen in
-`DURCHSICHT_KAP1_3.md`. In diesem Schritt keine Subagenten.
+`DURCHSICHT_KAP1_3.md`. Die Anweisung für die Sitzung, in der der Verfasser
+seine Kommentare diktiert, steht in `ANWEISUNG_KOMMENTARE.md`.
+
+**Subagenten nur nach Rückfrage.** Prüfagenten wie die Fremdleser-Prüfung
+sind erwünscht, kosten aber Tokens, die der Verfasser steuern will. Vor jedem
+Start eines Subagenten fragst du, ob er laufen soll, und nennst Zweck und
+Zahl der Agenten. Vorgabe des Verfassers vom 16.09.2026.
 
 ---
 
