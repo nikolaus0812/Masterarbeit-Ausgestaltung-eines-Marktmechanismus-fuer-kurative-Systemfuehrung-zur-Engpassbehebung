@@ -39,12 +39,11 @@ tools/quellencheck.py             Volltextsuche in den Quellen
 ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen, nur anhaengen, nie ganz lesen
 WORKFLOW.md                       Vorgehen fuer Korrektur, Neufassung und Kommentardurchgang
 DURCHSICHT_KAP1_3.md              Offene Vorschlaege der Durchsicht vom 15.09.2026, Liste F
-KOMMENTARE_KAP3.md                Kommentardatei des Verfassers zu Kapitel 3, seit 16.09.2026
-ANWEISUNG_KOMMENTARE.md           Anweisung fuer die Sitzung, die die Kommentare niederschreibt
+KOMMENTARE_KAP3.md                Kommentardatei, nicht genutzt, der Verfasser kommentiert im Chat
 analysen/                         Eigene Auswertungen mit Daten und Skripten als Belege
 archiv/                           Umgesetzte Arbeitsdokumente, nur zum Nachschlagen:
                                   AENDERUNGEN_KAP1_2.md, AENDERUNGEN_KAP3.md,
-                                  KUERZUNGEN_KAP1_2.md, STRUKTUR.md
+                                  KUERZUNGEN_KAP1_2.md, STRUKTUR.md, ANWEISUNG_KOMMENTARE.md
 ```
 
 Am 16.09.2026 aufgeraeumt. Die vier Arbeitsdokumente in `archiv/` sind
@@ -178,7 +177,10 @@ weniger Absatzumbrüche.
 der Vergütung, Erlösdifferenz, Schwellenpreis, Aktor, Reichweite.
 
 **Verbindlich.** *Kurativer Reservierungspreis* für die gesuchte Größe.
-*Kurative Reservierung* für das Produkt, seit dem 11.09.2026. *Kurativer
+*Kurative Reservierung* für das Produkt, seit dem 11.09.2026. *Kurative Bindung* für die
+Reservierung eines Leistungsbandes und, bei Speichern, eines Ladezustandsbandes,
+definiert in 2.1.2, entschieden am 16.09.2026. *Bindung* ohne Adjektiv nur im
+allgemeinen Sinn. *Kurativer
 Marktmechanismus* für das Verfahren, mit dem der ÜNB die Vorhaltung marktlich
 beschafft, einmal in 1.2 erklärt, danach immer mit dem Adjektiv und nie *der
 Mechanismus* allein. Der Mechanismus dient der Erkenntnis über Einflüsse auf den
