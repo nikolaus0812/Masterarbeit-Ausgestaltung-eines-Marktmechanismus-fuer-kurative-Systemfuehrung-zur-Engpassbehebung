@@ -81,7 +81,9 @@ Der Unterschied beider Konzepte liegt damit im Zeitpunkt des Eingriffs: Der prä
 
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel, die kurzfristig höhere Ströme tolerieren, als im Dauerbetrieb zulässig sind, und damit ein Zeitfenster für kurative Gegenmaßnahmen eröffnen.
-Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel.
+% DURCHSICHT 16.09.2026, C1, Ueberleitung. Alte Fassung:
+%Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel.
+Dass der kurative Ansatz den Engpass erst nach dem Fehler beheben kann, hat eine physikalische Grundlage, nämlich die thermische Trägheit der Betriebsmittel.
 Betriebsmittel tolerieren kurzfristig höhere Ströme, als im Dauerbetrieb zulässig sind, und eröffnen damit ein Zeitfenster für kurative Gegenmaßnahmen.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Die \ac{SOGL} konkretisiert dieses Zeitfenster über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat: Der \ac{PATL} ist die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann, der \ac{TATL} eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist, wobei zu jeder Höhe der Überlast eine zulässige Dauer gehört\footnote{Die Bezeichnungen \acs{PATL} und \acs{TATL} stammen aus InnoSys~2030 und dem Grenzwertkonzept der deutschen \acs{ÜNB} \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}. Die Leitlinie selbst spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.}.
@@ -90,17 +92,10 @@ Der \ac{PATL} ist die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche 
 Der \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist\footnote{Die Bezeichnungen \acs{PATL} und \acs{TATL} stammen aus InnoSys~2030 und dem Grenzwertkonzept der deutschen \acs{ÜNB} \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}. Die Leitlinie selbst spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.}.
 Zu jeder Höhe der Überlast gehört dabei eine zulässige Dauer.
 Der Abstand zwischen beiden Grenzwerten und die zugehörige Dauer bestimmen damit, wie viel Zeit für eine kurative Gegenmaßnahme zur Verfügung steht.
-Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den Unterschied beider Konzepte anhand der Betriebsmittelbelastung im Fehlerfall.
-Im präventiven Betrieb wird die Vorauslastung so weit begrenzt, dass die Belastung auch nach dem Ausfall unterhalb des \ac{PATL} bleibt, die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL}, nutzt nach Eintreten des Fehlerfalles das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
+% VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall: Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den Unterschied beider Konzepte anhand der Betriebsmittelbelastung im Fehlerfall.
+% VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall: Im präventiven Betrieb wird die Vorauslastung so weit begrenzt, dass die Belastung auch nach dem Ausfall unterhalb des \ac{PATL} bleibt, die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL}, nutzt nach Eintreten des Fehlerfalles das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
 
-\begin{figure}[htbp]
-    \centering
-% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
-% Sie aendert den Satz nicht, die Datei ist genau textbreit.
-    \includegraphics[width=\textwidth]{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
-    \caption{Vergleich der zeitlichen Betriebsmittelbelastung bei präventiver und kurativer Systemführung im Fehlerfall.}
-    \label{fig:preventiv_kurativ}
-\end{figure}
+% ABBILDUNG VERSCHOBEN 16.09.2026, C2.1, steht jetzt hinter dem Absatz, der sie nennt.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde B45, G10, G11, Q1, Q14. Praeventiver Redispatch als Regelfall genannt, Stufung gekuerzt, Vorteil und Optimalfall verbunden.
@@ -118,6 +113,18 @@ Die deutschen Redispatchprozesse lehnen sich an diese Stufung an, indem jede Pla
 %Der Vorteil liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt, und im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass im Fehlerfall kein reaktiver Eingriff mehr nötig ist.
 Der Vorteil liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt.
 Im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass im Fehlerfall kein reaktiver Eingriff mehr nötig ist.
+% HIERHER VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall.
+Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den Unterschied beider Konzepte anhand der Betriebsmittelbelastung im Fehlerfall.
+Im präventiven Betrieb wird die Vorauslastung so weit begrenzt, dass die Belastung auch nach dem Ausfall unterhalb des \ac{PATL} bleibt, die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL}, nutzt nach Eintreten des Fehlerfalles das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
+
+\begin{figure}[htbp]
+    \centering
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht, die Datei ist genau textbreit.
+    \includegraphics[width=\textwidth]{figures/chapter_2/preventiv_vs_curative_redispatch.pdf}
+    \caption{Vergleich der zeitlichen Betriebsmittelbelastung bei präventiver und kurativer Systemführung im Fehlerfall.}
+    \label{fig:preventiv_kurativ}
+\end{figure}
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde B47 bis B52, Q1, Q3, V5, V13. Marge als Vorgabe des Netzes, Hoehe statt Breite, Planungshorizont statt Reichweite mit Zeiten, Beleg sous fuer die Kostenwirkung entfallen, weil die Quelle nur die Marge definiert.
@@ -142,11 +149,13 @@ Der Handel innerhalb einer Regelzone bleibt dagegen bis fünf Minuten vor Liefer
 Fahrplanänderungen aus diesem Zeitraum enthält keine Vorschaurechnung mehr, sodass der \ac{ÜNB} die daraus entstehenden Netzzustände nur noch mit den Mitteln beheben kann, die ohne Vorlauf verfügbar sind.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}, sodass bereits ein moderates Eingriffsvolumen hohe Kosten verursachen kann, wenn nur wenige geeignete Anlagen zur Verfügung stehen.
+
+% NEUER ABSATZ 16.09.2026, C2.2.
 Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
 Stehen nur wenige geeignete Anlagen zur Verfügung, kann bereits ein moderates Eingriffsvolumen hohe Kosten verursachen.
 Der Kreis geeigneter Anlagen verkleinert sich zugleich, denn der Kohle- und Kernenergieausstieg reduziert die steuerbare konventionelle Kapazität, während die Opportunitätskosten und Revisionsaufwände der verbleibenden Anlagen steigen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.2.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde B53, G12, Q2, V5. Fuenf Saetze auf drei, Beleg mahgoub steht in Kapitel 1.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -160,7 +169,9 @@ Der begrenzte Planungshorizont und die Abhängigkeit der Kosten von der Anlagena
 %Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen, und mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der Technologien Vorlaufzeiten von mehreren Stunden aufweist.
 Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen.
 Mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können.
-Ein Teil der Technologien weist Vorlaufzeiten von mehreren Stunden auf.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Ein Teil der Technologien weist Vorlaufzeiten von mehreren Stunden auf.
+Ein Teil der Technologien weist nämlich Vorlaufzeiten von mehreren Stunden auf.
 Ein kleinerer Kreis geeigneter Anlagen schlägt sich unmittelbar in den Kosten nieder.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
@@ -182,9 +193,13 @@ Die kurative Systemführung setzt an der Marge und am Planungshorizont an und tr
 Die kurative Höherauslastung begreift die thermische Reserve zwischen \ac{PATL} und \ac{TATL} als nutzbares Betriebsfenster und erlaubt eine höhere Vorauslastung im Normalbetrieb, wodurch der präventive Eingriffsbedarf sinkt.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Der kurative Redispatch wird ebenfalls vorab eingeplant und scharfgeschaltet, der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert, denn die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist, und behebt die Überlastung innerhalb der zulässigen Überlastdauer.
-Der kurative Redispatch wird ebenfalls vorab eingeplant und scharfgeschaltet.
-Der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert: Die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist.
-Die Maßnahme behebt die Überlastung dann innerhalb der zulässigen Überlastdauer.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Der kurative Redispatch wird ebenfalls vorab eingeplant und scharfgeschaltet.
+Auch der kurative Redispatch wird vorab eingeplant und scharfgeschaltet.
+% DURCHSICHT 16.09.2026, C1, These und Erklaerung. Alte Fassung:
+%Der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert: Die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist.
+Der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert und im Zeitpunkt: Die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist, und behebt sie innerhalb der zulässigen Überlastdauer.
+% DURCHSICHT 16.09.2026, C1, im Vorsatz aufgegangen: Die Maßnahme behebt die Überlastung dann innerhalb der zulässigen Überlastdauer.
 Weil auch der kurative Redispatch vorab eingeplant wird, hängt es von der Einplanung für die betroffene Ausfallvariante ab, ob eine kurative Maßnahme einen Netzzustand abdeckt, der erst nach der letzten Vorschaurechnung entsteht.
 
 Der kurativen Höherauslastung und dem kurativen Redispatch ist gemeinsam, dass die Maßnahme erst nach dem Fehlereintritt wirkt und deshalb keinen vorherigen Eingriff in den Fahrplan erfordert.
@@ -195,6 +210,8 @@ Die kurative Maßnahme wird dagegen lediglich vorgehalten und allein im Fehlerfa
 Für den Anlagenbetreiber entfällt der Aufwand damit nicht, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Jahressimulationen belegen für den kurativen Betrieb ein Einsparpotenzial gegenüber dem rein präventiven Ansatz, dessen Höhe davon abhängt, welche Anlagen kurativ einsetzbar sind: Auf einem synthetischen Netzmodell mit Zieljahr 2037 sinken die Kosten des Engpassmanagements auf rund 42\,\% des rein präventiven Betriebs, solange allein Phasenschieber und \ac{HGÜ} zur Verfügung stehen, und auf rund 2\,\%, sobald zusätzlich die Abregelung erneuerbarer Erzeugung sowie \ac{PSKW} und \ac{BESS} einbezogen werden \cite{sous_comparison_2025}.
+
+% NEUER ABSATZ 16.09.2026, C2.3.
 Jahressimulationen belegen für den kurativen Betrieb ein Einsparpotenzial gegenüber dem rein präventiven Ansatz \cite{sous_comparison_2025}.
 Die Höhe des Potenzials hängt davon ab, welche Anlagen kurativ einsetzbar sind: Auf einem synthetischen Netzmodell mit Zieljahr 2037 sinken die Kosten des Engpassmanagements auf rund 42\,\% des rein präventiven Betriebs, solange allein Phasenschieber und \ac{HGÜ} zur Verfügung stehen.
 Werden zusätzlich die Abregelung erneuerbarer Erzeugung sowie \ac{PSKW} und \ac{BESS} einbezogen, sinken die Kosten auf rund 2\,\%.
@@ -210,9 +227,12 @@ Für diese Kostenart kennt der finanzielle Ausgleich nach §\,13a \ac{EnWG} kein
 %Die vorliegende Arbeit betrachtet deshalb die Vorhaltung als solche und behandelt die Bindungsdauer als Produktmerkmal, dessen Wirkung Abschnitt \ref{sec:sensitivities} untersucht.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Beide Ausprägungen greifen auf dieselbe thermische Reserve zu, denn die Höherauslastung belegt die Reserve in der Betriebsplanung vorab, und was dort belegt ist, steht dem kurativen Redispatch für Netzzustände, die erst nach der letzten Vorschaurechnung entstehen, nicht mehr zur Verfügung.
+% VERSCHOBEN 16.09.2026, C1, Reihenfolge in Absatz 12: Beide Ausprägungen greifen auf dieselbe thermische Reserve zu, denn die Höherauslastung belegt die Reserve in der Betriebsplanung vorab.
+% VERSCHOBEN 16.09.2026, C1, Reihenfolge in Absatz 12: Was dort belegt ist, steht dem kurativen Redispatch für Netzzustände nach der letzten Vorschaurechnung nicht mehr zur Verfügung.
+Die Literatur fasst die kurative Systemführung überwiegend als Höherauslastung und misst ihren Nutzen an der Senkung des präventiven Eingriffsbedarfs \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+% HIERHER VERSCHOBEN 16.09.2026, C1, Reihenfolge in Absatz 12.
 Beide Ausprägungen greifen auf dieselbe thermische Reserve zu, denn die Höherauslastung belegt die Reserve in der Betriebsplanung vorab.
 Was dort belegt ist, steht dem kurativen Redispatch für Netzzustände nach der letzten Vorschaurechnung nicht mehr zur Verfügung.
-Die Literatur fasst die kurative Systemführung überwiegend als Höherauslastung und misst ihren Nutzen an der Senkung des präventiven Eingriffsbedarfs \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Für den Akteur, der die Reaktionsfähigkeit bereitstellt, ist der Vorgang in beiden Fällen derselbe, denn er hält Leistung und Ladezustandsbereich für einen ungewissen Abruf frei.
 Die folgende Betrachtung richtet sich deshalb auf die Vorhaltung als solche und behandelt die Bindungsdauer als Produktmerkmal.
 
@@ -258,7 +278,10 @@ In der Betriebsplanung identifiziert der \ac{ÜNB} auf Basis von Netzprognosen m
 Im Normalbetrieb prüft der \ac{ÜNB} in der Netzsicherheitsrechnung fortlaufend, ob die geplanten kurativen Maßnahmen bei Eintreten einer Ausfallvariante den Befund beseitigen.
 Beseitigen die Maßnahmen den Befund, schaltet der \ac{ÜNB} sie scharf.
 Der Akteur bleibt dann in Bereitschaft.
-Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus, und im Pilotbetrieb des Projekts KuPilot, in dem Amprion, TenneT und RWE den kurativen Redispatch im realen Betrieb erproben, wird die Leistungsänderung nach dem tatsächlichen Eintritt einer Überlastung innerhalb von fünf Minuten vollständig umgesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
+% DURCHSICHT 16.09.2026, C1, Einschub als eigener Satz, Stilregel 17. Alte Fassung:
+%Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus, und im Pilotbetrieb des Projekts KuPilot, in dem Amprion, TenneT und RWE den kurativen Redispatch im realen Betrieb erproben, wird die Leistungsänderung nach dem tatsächlichen Eintritt einer Überlastung innerhalb von fünf Minuten vollständig umgesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
+Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus.
+Im Pilotbetrieb des Projekts KuPilot, in dem Amprion, TenneT und RWE den kurativen Redispatch im realen Betrieb erproben, wird die Leistungsänderung nach dem tatsächlichen Eintritt einer Überlastung innerhalb von fünf Minuten vollständig umgesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
 Die Akteure setzen ihre Leistungsänderung innerhalb der vorgegebenen Reaktionszeit um, und der \ac{ÜNB} bewertet den Systemzustand anschließend neu, um die Wirksamkeit der Maßnahme zu prüfen.
 In der Rückführung veranlasst der \ac{ÜNB} einen Redispatch zur Wiederherstellung des (N-1)-sicheren Zustands, und der Akteur wird aus der kurativen Bindung entlassen und kehrt in den freien Betrieb zurück.
 
@@ -284,12 +307,18 @@ Maßnahmen mit eigenen Betriebsmitteln erfordern keine Zusage eines Dritten, wä
 Nur bei Eingriffen in Erzeugung, Last und Speicherung stellt sich die Frage nach Vorhaltung und Vergütung, weshalb die weitere Betrachtung auf sie beschränkt bleibt.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann, und bei energiebegrenzten Technologien wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht, was eine gezielte Vorhaltung des Ladezustands im Vorfeld verlangt.
-Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
+
+% NEUER ABSATZ 16.09.2026, C2.5.
+% DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
+%Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
+Für eine solche Zusage meldet der Akteur dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
 Bei energiebegrenzten Technologien wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
 Die Sicherstellung verlangt eine gezielte Vorhaltung des Ladezustands im Vorfeld.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Eine marktbezogene kurative Maßnahme wird in der Regel bilanziell ausgeglichen, sodass die Summe der Einspeisung unverändert bleibt, wobei die Anlage, die ihre Einspeisung erhöht, als Quelle und die Anlage, die ihre Einspeisung senkt, als Senke wirkt, sodass an einem Netzknoten nicht eine einzelne Zusage, sondern ein Verbund von Zusagen erforderlich ist.
-Eine marktbezogene kurative Maßnahme wird in der Regel bilanziell ausgeglichen, sodass die Summe der Einspeisung unverändert bleibt.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Eine marktbezogene kurative Maßnahme wird in der Regel bilanziell ausgeglichen, sodass die Summe der Einspeisung unverändert bleibt.
+Die Zusage steht zudem nicht allein, denn eine marktbezogene kurative Maßnahme wird in der Regel bilanziell ausgeglichen, sodass die Summe der Einspeisung unverändert bleibt.
 Die Anlage mit erhöhter Einspeisung wirkt dabei als Quelle, die Anlage mit gesenkter Einspeisung als Senke.
 An einem Netzknoten ist deshalb nicht eine einzelne Zusage, sondern ein Verbund von Zusagen erforderlich.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
@@ -340,7 +369,9 @@ An einem Netzknoten ist deshalb nicht eine einzelne Zusage, sondern ein Verbund 
 %Für eine Übertragungsstrecke ist folglich das Minimum der zulässigen Dauern über alle betroffenen Betriebsmittel maßgeblich, weshalb zwischen dem thermisch bestimmten Grenzwert eines einzelnen Betriebsmittels und dem für die Betriebsführung nutzbaren Grenzwert zu unterscheiden ist \cite{dena_hoeherauslastung_2022}.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Die Anforderungen an die Reaktionszeit ergeben sich aus dem \ac{TATL}-Zeitfenster des betroffenen Betriebsmittels, dessen Dauer keine Konstante des Betriebsmittels ist, sondern aus dessen Wärmebilanz folgt: Bei einer Überlast überwiegt der Wärmeeintrag die Kühlung, die Temperatur steigt von dem Ausgangswert an, den die Belastung vor dem Ausfall bestimmt, und die Überlast ist zulässig, bis die Grenztemperatur erreicht ist.
-Die Anforderungen an die Reaktionszeit ergeben sich aus dem \ac{TATL}-Zeitfenster des betroffenen Betriebsmittels.
+% DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
+%Die Anforderungen an die Reaktionszeit ergeben sich aus dem \ac{TATL}-Zeitfenster des betroffenen Betriebsmittels.
+Wie schnell ein solcher Verbund wirken muss, ergibt sich aus dem \ac{TATL}-Zeitfenster des betroffenen Betriebsmittels.
 Die Dauer des Zeitfensters ist keine Konstante des Betriebsmittels, sondern folgt aus der Wärmebilanz.
 Bei einer Überlast überwiegt der Wärmeeintrag die Kühlung.
 Die Temperatur steigt dann von dem Ausgangswert an, den die Belastung vor dem Ausfall bestimmt.
@@ -365,7 +396,9 @@ Anhang~\ref{anh:thermik} stellt die Wärmebilanz der Freileitung, die Berechnung
 Aus der Wärmebilanz folgt eine wechselseitige Bindung zwischen dem gewählten Betriebspunkt und der Technologie des Akteurs: Eine weitergehende Höherauslastung erschließt ein größeres Entlastungspotenzial und verkürzt zugleich das Zeitfenster für die Gegenmaßnahme, und die zulässige Dauer fällt für dasselbe Betriebsmittel je nach Vorbelastung und Wetterlage unterschiedlich aus \cite{sous_comparison_2025}.
 Der Akteur kann die ihm verbleibende Reaktionszeit deshalb nicht selbst bestimmen, denn sie ergibt sich aus dem Betriebsmittel und der Situation, und damit der \ac{ÜNB} den Betriebspunkt planen kann, muss der Akteur auf eine feste Reaktionszeit festgelegt sein.
 Die Höherauslastung ist umgekehrt nur zulässig, soweit der \ac{ÜNB} den Stromkreis dafür freigegeben hat, die zulässige Überlastdauer die Reaktionszeit des Akteurs deckt und die weiteren Grenzwerte des Grenzwertkonzepts der deutschen \ac{ÜNB}, nämlich Schutz, Spannung, Stabilität und Genehmigungen etwa zum Immissionsschutz, eingehalten sind \cite{uenb_grenzwertkonzept_2021}.
-InnoSys~2030 systematisiert die kurativen Maßnahmen entlang dieser Spanne nach der Zeit bis zur vollen Entlastungswirkung in drei Klassen, nämlich sehr schnelle Maßnahmen mit einer Wirksamkeit von unter zehn Sekunden, schnelle Maßnahmen mit einer Wirksamkeit von etwa zwei Minuten und langsame Maßnahmen mit einer Wirksamkeit von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+% DURCHSICHT 16.09.2026, C1, Bezug. Alte Fassung:
+%InnoSys~2030 systematisiert die kurativen Maßnahmen entlang dieser Spanne nach der Zeit bis zur vollen Entlastungswirkung in drei Klassen, nämlich sehr schnelle Maßnahmen mit einer Wirksamkeit von unter zehn Sekunden, schnelle Maßnahmen mit einer Wirksamkeit von etwa zwei Minuten und langsame Maßnahmen mit einer Wirksamkeit von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+InnoSys~2030 systematisiert die kurativen Maßnahmen nach der Zeit bis zur vollen Entlastungswirkung in drei Klassen, nämlich sehr schnelle Maßnahmen mit einer Wirksamkeit von unter zehn Sekunden, schnelle Maßnahmen mit einer Wirksamkeit von etwa zwei Minuten und langsame Maßnahmen mit einer Wirksamkeit von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Die Klassen bilden die erreichbare Zeit bis zur Wirkung ab, während die im Einzelfall maßgebliche Dauer der \ac{ÜNB} nach Art.\,25 \ac{SOGL} festlegt.
 Die zugesagte Reaktionszeit geht deshalb als Bedingung in die Einsatzplanung ein, denn eine verspätete Maßnahme entlastet das Betriebsmittel nicht mehr rechtzeitig \cite{lindner_operation_2023}.
 
@@ -391,10 +424,14 @@ Wird eine kurative Maßnahme über eine Anlage erbracht, die nicht dem \ac{ÜNB}
 Damit stellt sich die Frage, welche Technologie eine solche Zusage einlösen kann.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Der kurative Marktmechanismus soll die Anlagen erreichen, die eine kurative Zusage am verlässlichsten einlösen, ohne einzelne Technologien vom Zugang auszuschließen, und beides zugleich ist nur zu erreichen, wenn der kurative Marktmechanismus nicht an der Technologie ansetzt, sondern an den Eigenschaften, auf die es ankommt.
-Der kurative Marktmechanismus soll die Anlagen erreichen, die eine kurative Zusage am verlässlichsten einlösen, ohne einzelne Technologien vom Zugang auszuschließen.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Der kurative Marktmechanismus soll die Anlagen erreichen, die eine kurative Zusage am verlässlichsten einlösen, ohne einzelne Technologien vom Zugang auszuschließen.
+Der kurative Marktmechanismus soll dafür die Anlagen erreichen, die eine kurative Zusage am verlässlichsten einlösen, ohne einzelne Technologien vom Zugang auszuschließen.
 Beides zugleich ist nur zu erreichen, wenn der kurative Marktmechanismus nicht an der Technologie ansetzt, sondern an den maßgeblichen Eigenschaften.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Der folgende Vergleich stützt sich deshalb auf vier Merkmale, nämlich die erreichbare Reaktionszeit, die Frage, ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, gemessen am Energieinhalt je Leistung, also der Zeit in Stunden, über die eine Anlage ihre Nennleistung liefern kann, den Anlagenbestand mit seiner Entwicklung, weil davon abhängt, wie viele geeignete Anbieter an einem Netzknoten zu erwarten sind, und den Vergütungspfad, über den ein Eingriff im geltenden Regulierungsrahmen abgerechnet würde.
+
+% NEUER ABSATZ 16.09.2026, C2.6.
 Der folgende Vergleich stützt sich deshalb auf vier Merkmale.
 Das erste Merkmal ist die erreichbare Reaktionszeit.
 Das zweite Merkmal ist die Energiebindung, also ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, gemessen am Energieinhalt je Leistung.
@@ -461,9 +498,11 @@ Steht die Anlage still, schließt die Anfahrzeit den Einsatz aus, wenn die Leist
 Wind- und Photovoltaikanlagen reagieren schnell und binden ebenfalls keine Energie, stellen aber allein ein Abregelpotenzial bereit und wirken damit nur dort, wo die Entlastung durch eine Rücknahme von Einspeisung zu erreichen ist.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Die Verfügbarkeit von Wind- und Photovoltaikanlagen hängt am Dargebot, also an Wind und Sonne, und ob eine Anlage den Engpass entlastet, hängt davon ab, ob ihre eigene Einspeisung ihn verschärft, was für Windenergie im Norden bei einem Nord-Süd-Engpass zutrifft, für Photovoltaik im Süden dagegen nicht \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
-Die Verfügbarkeit von Wind- und Photovoltaikanlagen hängt am Dargebot, also an Wind und Sonne.
+% VERSCHOBEN 16.09.2026, C1, Reihenfolge in Absatz 21: Die Verfügbarkeit von Wind- und Photovoltaikanlagen hängt am Dargebot, also an Wind und Sonne.
 Ob eine Anlage den Engpass entlastet, hängt davon ab, ob ihre eigene Einspeisung ihn verschärft.
 Windenergie im Norden verschärft einen Nord-Süd-Engpass, Photovoltaik im Süden dagegen nicht \cite{lindner_operation_2023, vde_etg_flexibilisierung_2023}.
+% HIERHER VERSCHOBEN 16.09.2026, C1, Reihenfolge in Absatz 21.
+Die Verfügbarkeit von Wind- und Photovoltaikanlagen hängt am Dargebot, also an Wind und Sonne.
 Soweit die Maßnahme, wie in Abschnitt~\ref{sec:curative_functionality} beschrieben, bilanziell ausgeglichen wird, braucht die Rücknahme der Einspeisung zudem eine Erhöhung an anderer Stelle, sodass Wind- und Photovoltaikanlagen nur eine Hälfte eines Verbunds stellen können.
 
 % GEAENDERT am 15.09.2026, Spanne aus dem Marktstammdatenregister. Alte Fassung:
@@ -471,9 +510,9 @@ Soweit die Maßnahme, wie in Abschnitt~\ref{sec:curative_functionality} beschrie
 Anders als Wind- und Photovoltaikanlagen wirkt ein \ac{PSKW} in beide Richtungen, reagiert schnell und hat einen Energieinhalt je Leistung von drei bis neun Stunden, sodass auch eine über Stunden reichende Bindung nur einen Teil der Kapazität beansprucht.
 Im Pilotbetrieb von KuPilot ist ein \ac{PSKW} bereits eingesetzt worden, allerdings auf eine Stunde begrenzt, weil das Oberbecken zugleich die Vermarktung der übrigen Turbinen bedient, sodass die kurativ nutzbare Bindungsdauer eines \ac{PSKW} von der übrigen Vermarktung des Beckens abhängt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
 Die Zahl der \ac{PSKW} ist jedoch begrenzt, weil geeignete Standorte eine passende Topografie voraussetzen und das Potenzial in Deutschland weitgehend ausgeschöpft ist, sodass \ac{PSKW} nur an wenigen Netzknoten wirksam sind.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.7.
 % TABELLE VERSCHOBEN am 15.09.2026 an die Verweisstelle hinter dem ersten Absatz, Befund B85, Entscheidung V10.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.7.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde B87 bis B93, G24. Satz zur Leistungselektronik entfallen, Wachstum sichert den Knoten nicht, Grenze in der Dauer der Reservierung, Abschluss mit den vier Merkmalen, zwei Absaetze.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -496,6 +535,8 @@ Die Stellfähigkeit eines \ac{BESS} setzt keinen laufenden Betrieb voraus, denn 
 Wie viel Leistung in welcher Richtung verfügbar ist, hängt allerdings vom aktuellen Betriebspunkt und vom Ladezustand ab.
 Eine Anlage, die bereits mit voller Leistung ein- oder ausspeist, kann in dieser Richtung nicht weiter stellen.
 Die zusagbare Leistung eines \ac{BESS} schwankt deshalb mit seinem Fahrplan.
+
+% NEUER ABSATZ 16.09.2026, C2.7.
 Anders als \ac{PSKW} sind \ac{BESS} in der Standortwahl nicht an die Topografie gebunden, und anders als konventionelle Kraftwerke wächst ihr Bestand.
 % ERGAENZT am 15.09.2026 auf Vorgabe des Verfassers, Pool der Grossspeicher, Stilregel 17. Alte Fassung:
 %Für eine knotenscharfe Beschaffung zählt, ob am betroffenen Knoten ein Anbieter steht, und Standortfreiheit und wachsender Bestand machen das wahrscheinlicher, ohne es zu sichern.
@@ -511,7 +552,9 @@ Der dafür nötige Ladezustandsbereich muss jedoch über die gesamte Bindungsdau
 %Von den vier Merkmalen erfüllt ein \ac{BESS} damit die Reaktionszeit uneingeschränkt, die Energiebindung mit einer Einschränkung in der Dauer und den Bestand mit einer Erwartung an das Wachstum, während der Vergütungspfad nach §\,13a \ac{EnWG} zwar besteht, die Bemessung für \ac{BESS} aber offen ist.
 Von den vier Merkmalen erfüllt ein \ac{BESS} damit die Reaktionszeit uneingeschränkt, die Energiebindung mit einer Einschränkung in der Dauer und den Bestand mit einer Erwartung an das Wachstum.
 Der Vergütungspfad nach §\,13a \ac{EnWG} besteht zwar, die Bemessung für \ac{BESS} ist aber offen.
-Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, und die folgende Betrachtung richtet sich auf die Vergütung.
+% DURCHSICHT 16.09.2026, C1, Ueberleitung an die Gliederung angepasst. Alte Fassung:
+%Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, und die folgende Betrachtung richtet sich auf die Vergütung.
+Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, offen sind die Umsetzung und die Vergütung.
 
 \subsection{Herausforderungen der Umsetzung}
 \label{sec:challenges}
@@ -569,15 +612,21 @@ Die Menge der vorzusehenden Maßnahmen ist damit nicht anhand eines einzelnen er
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Mit der Zahl kurativer Maßnahmen im Netz wird die Auswahl zudem zu einer kombinatorischen Aufgabe, während KuPilot je Maßnahme nur entscheidet, ob sie eingeplant wird, und die Menge fest ist, sodass die Einplanung mit jedem weiteren Akteur aufwendiger wird.
 Mit der Zahl kurativer Maßnahmen im Netz wird die Auswahl zudem zu einer kombinatorischen Aufgabe, sodass die Einplanung mit jedem weiteren Akteur aufwendiger wird.
-KuPilot entscheidet dagegen je Maßnahme nur über die Einplanung, und die Menge ist fest.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%KuPilot entscheidet dagegen je Maßnahme nur über die Einplanung, und die Menge ist fest.
+Im Pilotbetrieb stellt sich die Aufgabe noch nicht, denn KuPilot entscheidet je Maßnahme nur über die Einplanung, und die Menge ist fest.
 
-Der Umsetzungsstand im deutschen Übertragungsnetz ist entsprechend heterogen.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Der Umsetzungsstand im deutschen Übertragungsnetz ist entsprechend heterogen.
+Der Umsetzungsstand im deutschen Übertragungsnetz ist heterogen.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Echtbetrieb vor \cite{tennet_tso_gmbh_pilotbetrieb_2025}, und mit den Netzboostern befindet sich ein Instrument in der Umsetzung, das speicherbasierte Leistung für den Fehlerfall vorhalten soll, dessen Betriebserprobung aber noch aussteht \cite{consentec_systembooster_2026}.
 Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Echtbetrieb vor \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
 Mit den Netzboostern befindet sich zudem ein Instrument in der Umsetzung, das speicherbasierte Leistung für den Fehlerfall vorhalten soll \cite{consentec_systembooster_2026}.
 Die Betriebserprobung der Netzbooster steht aber noch aus.
-Damit bleibt die Frage offen, wie das Stellpotenzial eines kurativen Akteurs allgemein gesichert wird.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Damit bleibt die Frage offen, wie das Stellpotenzial eines kurativen Akteurs allgemein gesichert wird.
+Offen bleibt in beiden Vorhaben, wie das Stellpotenzial eines kurativen Akteurs allgemein gesichert wird.
 Im KuPilot-Pilot\-betrieb hält der Akteur sein Stellpotenzial zwar vor, die Bereitstellung beruht dort jedoch auf einer Vereinbarung zwischen den beteiligten Unternehmen, deren Konditionen nicht öffentlich sind.
 Zu welchem Preis ein Anlagenbetreiber eine kurative Bindung allgemein eingehen würde, lässt sich daraus nicht ableiten, und ob eine marktliche Beschaffung überhaupt zulässig wäre, entscheidet der rechtliche Rahmen.
 
@@ -614,12 +663,14 @@ Auf europäischer Ebene konkretisiert die \ac{SOGL} die Anforderungen an Planung
 Erstens verpflichtet die Leitlinie die \ac{ÜNB}, die Leistungsflüsse nach einem Ausfall aus der Ausfallvariantenliste innerhalb der vorübergehend zulässigen Überlast zu halten, nachdem sie dafür Entlastungsmaßnahmen vorbereitet haben.
 Zweitens rechnet die Leitlinie die Wirkung vorbereiteter Entlastungsmaßnahmen dem Netzzustand zu, wie in Abschnitt~\ref{sec:prev_vs_cur} beschrieben.
 Drittens knüpft die Leitlinie an den Zeitpunkt des Einsatzes keine Bedingung und verlangt für die Auswahl der Entlastungsmaßnahmen sogar, sie \glqq{}möglichst echtzeitnah zu aktivieren\grqq{}.
+% HIERHER VERSCHOBEN 16.09.2026, C1, Nachtrag vor die Konsequenz.
+Für Netzzustände, die sich der Vorausschau entziehen, zieht die Leitlinie einen Eingriff nach dem Fehler sogar vor.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Das Netz bleibt deshalb auch dann im Normalzustand, wenn die Maßnahme erst nach dem Fehler und innerhalb der zulässigen Überlastdauer wirkt, sodass der kurative Betrieb europarechtlich zulässig ist, und für Netzzustände, die sich der Vorausschau entziehen, zieht die Leitlinie einen Eingriff nach dem Fehler sogar vor \cite{europaische_kommission_verordnung_2017}.
 Das Netz bleibt deshalb auch dann im Normalzustand, wenn die Maßnahme erst nach dem Fehler und innerhalb der zulässigen Überlastdauer wirkt.
 Der kurative Betrieb ist damit europarechtlich zulässig \cite{europaische_kommission_verordnung_2017}.
-Für Netzzustände, die sich der Vorausschau entziehen, zieht die Leitlinie einen Eingriff nach dem Fehler sogar vor.
-Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} einen diskriminierungsfreien Zugang für alle Technologien einschließlich der Speicher, sodass der kurative Marktmechanismus \ac{BESS} nicht ausschließen darf \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+% VERSCHOBEN 16.09.2026, C1, Nachtrag vor die Konsequenz: Für Netzzustände, die sich der Vorausschau entziehen, zieht die Leitlinie einen Eingriff nach dem Fehler sogar vor.
+% VERSCHOBEN 16.09.2026, C2, Binnenmarktverordnung zum Absatz, der sie aufgreift: Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} einen diskriminierungsfreien Zugang für alle Technologien einschließlich der Speicher, sodass der kurative Marktmechanismus \ac{BESS} nicht ausschließen darf \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befund A5. § 13c auf zwei Saetze, § 13a Abs. 2 und 4 in einem Satz.
@@ -634,6 +685,8 @@ Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmark
 %Vergütet werden dort die einmaligen Kosten für die Herstellung der Betriebsbereitschaft und ein fortlaufender Leistungspreis für die Bereithaltung, der als pauschaler Betrag je Megawatt festgelegt werden kann.
 %Macht der Betreiber diese Auslagen geltend, darf er die Anlage nach §\,13c Abs.\,2 jedoch nur noch nach Anforderung des \ac{ÜNB} betreiben und verliert damit den Zugang zu den Strommärkten.
 %Für eine Anlage, die am Markt bleibt und allein eine Reaktionsfähigkeit reserviert, besteht damit keine Vergütung der Vorhaltung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+% HIERHER VERSCHOBEN 16.09.2026, C2, Binnenmarktverordnung zum Absatz, der sie aufgreift.
+Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} einen diskriminierungsfreien Zugang für alle Technologien einschließlich der Speicher, sodass der kurative Marktmechanismus \ac{BESS} nicht ausschließen darf \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 Gegenstand des \ac{EnWG}, der \ac{SOGL} und der Binnenmarktverordnung ist jedoch der durchgeführte Eingriff und nicht die vorgehaltene Reaktionsfähigkeit, sodass keine von ihnen die marktliche Beschaffung kurativer Vorhaltung regelt.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auch die Vergütung folgt dieser Logik, denn der finanzielle Ausgleich nach §\,13a Abs.\,2 \ac{EnWG} knüpft an die vorgenommene Anpassung an und umfasst nur Bestandteile, die durch diese Anpassung verursacht sind, und Absatz\,4 schließt Kosten, die dem Anlagenbetreiber auch ohne die Anforderung entstehen, ausdrücklich aus und nennt dabei die Betriebsbereitschaftsauslagen.
@@ -662,8 +715,10 @@ Für eine Anlage, die am Markt bleibt und allein eine Reaktionsfähigkeit reserv
 %Die Bereitstellung bleibt an eine Zusage des Anlagenbetreibers gebunden, für die keine Vergütung vorgesehen ist.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Weil das \ac{EnWG} die Vorhaltung nicht vergütet, bleibt zu prüfen, ob zwei neuere Vorschriften, die auf eine bessere Nutzung der bestehenden Netzkapazität zielen, als Instrumente in Betracht kommen.
-Zwei neuere Vorschriften des \ac{EnWG} zielen auf eine bessere Nutzung der bestehenden Netzkapazität.
+% HIERHER VERSCHOBEN 16.09.2026, C1, anknuepfender Satz zuerst.
 Weil das \ac{EnWG} die Vorhaltung nicht vergütet, bleibt zu prüfen, ob die beiden Vorschriften als Instrumente in Betracht kommen.
+Zwei neuere Vorschriften des \ac{EnWG} zielen auf eine bessere Nutzung der bestehenden Netzkapazität.
+% VERSCHOBEN 16.09.2026, C1, anknuepfender Satz zuerst: Weil das \ac{EnWG} die Vorhaltung nicht vergütet, bleibt zu prüfen, ob die beiden Vorschriften als Instrumente in Betracht kommen.
 §\,17 Abs.\,2b \ac{EnWG} erlaubt flexible Netzanschlussvereinbarungen, in denen der Netzbetreiber eine statische oder dynamische Begrenzung der Entnahme- oder Einspeiseleistung verlangen kann, was für Speicher deshalb bedeutsam ist, weil nur diese Norm beide Richtungen erfasst, ohne dass ein Anspruch auf Abschluss oder auf Entschädigung besteht \cite{bundesnetzagentur_faq_2025}.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %In der Praxis enthalten solche Vereinbarungen kurative Klauseln, die dem Netzbetreiber für eine festgelegte Zahl von Stunden im Jahr ein unentgeltliches Eingriffsrecht einräumen, ausgelöst allein dann, wenn die Anlage im betreffenden Moment engpassverschärfend wirkt, sodass ein Duldungsrecht vereinbart ist und keine Zusage, im Fehlerfall eine bestimmte Leistungsänderung zu erbringen.
@@ -742,7 +797,7 @@ Die folgende Betrachtung setzt an der bestehenden Zonenaufteilung an, sodass ein
 %Innerhalb dieses Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf.
 %Abbildung~\ref{fig:markt_zeitschiene} stellt diese Staffelung gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer gemeinsamen Zeitachse dar.
 Innerhalb des Selbst\-dispatch-Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf, die Abbildung~\ref{fig:markt_zeitschiene} gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer Zeitachse zeigt.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.8.
 % DURCHSICHT 16.09.2026, A1, Option h erzeugte eine halbleere Seite 20. Alte Fassung:
 %\begin{figure}[htbp]
 \begin{figure}[tbp]
@@ -753,13 +808,13 @@ Innerhalb des Selbst\-dispatch-Modells bildet sich der Fahrplan einer Anlage üb
     \caption{Zeitliche Staffelung der Handelsgelegenheiten, der Beschaffung von Systemdienstleistungen und der Rechenläufe des \ac{ÜNB} bis zum Erfüllungszeitpunkt.}
     \label{fig:markt_zeitschiene}
 \end{figure}
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.8.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G29, G30, Stilregel 5. Terminmarkt und OTC in einem Satz, pay-as-cleared gekuerzt, pay-as-bid-Satz entfallen, ein Absatz.
 % Alte Fassung, nicht wieder aufnehmen:
 %Am Anfang stehen der Terminmarkt und der \ac{OTC}-Handel.
 %Beide bleiben im Folgenden unberücksichtigt, denn der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei, während der \ac{OTC}-Handel bilateral abgeschlossen wird und sich damit einer Nachvollziehbarkeit entzieht.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.8.
 %Den Ausgangspunkt der betrachteten Fahrplanbildung bildet daher der \ac{DA}.
 %Seine Auktion schließt um 12 Uhr des Vortages und preist alle Lieferzeitpunkte des Folgetages in einem einzigen Auktionsdurchgang, sodass ihr Handelsfenster den gesamten Liefertag umfasst.
 %Der Zuschlag erfolgt nach dem Verfahren pay-as-cleared, sodass alle bezuschlagten Gebote unabhängig von ihrer Höhe den einheitlichen Markträumungspreis erhalten.
@@ -776,6 +831,8 @@ Innerhalb des Selbst\-dispatch-Modells bildet sich der Fahrplan einer Anlage üb
 Die erste Vermarktungsmöglichkeit bilden der Terminmarkt und der \ac{OTC}-Handel, die im Folgenden unberücksichtigt bleiben.
 Der Terminmarkt bildet Preiserwartungen über Monate bis Jahre ab und trägt zur kurzfristigen Fahrplanbildung nichts bei.
 Der \ac{OTC}-Handel wird bilateral abgeschlossen und entzieht sich damit einer Nachvollziehbarkeit.
+
+% NEUER ABSATZ 16.09.2026, C2.8.
 Den Ausgangspunkt der betrachteten Fahrplanbildung bildet daher der \ac{DA}, dessen Auktion um 12 Uhr des Vortages schließt und alle Lieferzeitpunkte des Folgetages in einem Auktionsdurchgang zum einheitlichen Markträumungspreis preist, seit dem 1.\,Oktober 2025 in Viertelstundenprodukten.
 Daran schließen die seit Juni 2024 etablierten Intraday-Auktionen an, die den Fahrplan zu definierten Zeitpunkten gegen aktualisierte Prognosen neu bewerten \cite{mahgoub_wie_2025}: Die \ac{IDA-1} schließt um 15 Uhr und die \ac{IDA-2} um 22 Uhr des Vortages, beide mit dem gesamten Folgetag als Handelsfenster, während die \ac{IDA-3} um 10 Uhr des Liefertages schließt und nur noch dessen zweite Hälfte umfasst.
 Mit der Umstellung des Produktschnitts hat sich ein Teil des kurzfristigen Ausgleichs aus diesen Auktionen in die Auktion des \ac{DA} verlagert, weil die Viertelstundenprodukte dort nun selbst gehandelt werden \cite{ffe_saegezahn_2026}.
@@ -795,7 +852,9 @@ Das Preisniveau des \ac{IDC} bilden der \ac{ID3} und der \ac{ID1} ab, die beide 
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf, und die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt, denn an einen abgeschlossenen Rechenlauf schließt sich unmittelbar der nächste an.
 Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf.
-Die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt.
+Die Netzsicherheitsrechnung prüft darüber hinaus kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt.
 An einen abgeschlossenen Rechenlauf schließt sich dabei unmittelbar der nächste an.
 Zwischen dem letzten vorausschauenden Rechenlauf und dem Lieferbeginn bleibt gleichwohl das Handelsfenster offen, in dem der Fahrplan noch verändert werden darf, ohne dass die Änderung in einen der genannten Rechenläufe eingeht, sodass der \ac{ÜNB} solche Änderungen erst in der laufenden Netzsicherheitsrechnung sieht.
 
@@ -826,8 +885,10 @@ Die Systemdienstleistungen gliedern sich üblicherweise in Frequenzhaltung, Span
 Die Spannungshaltung wird über Blindleistung erbracht, und der Versorgungswiederaufbau beruht auf der Schwarzstartfähigkeit einzelner Anlagen.
 Beide konkurrieren deshalb nicht mit der Vermarktung von Wirkleistung an den Energiemärkten.
 In der Frequenzhaltung wird demgegenüber ein Band an Wirkleistung über einen Zeitraum reserviert, und die Bereitstellung selbst wird vergütet \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Die Frequenzhaltung ist damit das einzige Regime, in dem eine Vorhaltung bereits einen Preis hat.
+% HIERHER VERSCHOBEN 16.09.2026, C1, vor die Konsequenz.
 Auch die Betriebsführung greift auf die Wirkleistung zu, und zu ihr zählen das Engpassmanagement und die kurative Vorhaltung.
+Die Frequenzhaltung ist damit das einzige Regime, in dem eine Vorhaltung bereits einen Preis hat.
+% VERSCHOBEN 16.09.2026, C1, vor die Konsequenz: Auch die Betriebsführung greift auf die Wirkleistung zu, und zu ihr zählen das Engpassmanagement und die kurative Vorhaltung.
 
 Die Frequenzhaltung wird in Deutschland über drei Regelleistungsprodukte beschafft, nämlich die \ac{FCR}, die \ac{aFRR} und die \ac{mFRR}.
 Die Beschaffung folgt einer ähnlichen, aber nicht in allen Punkten gleichen Logik.
@@ -835,6 +896,10 @@ Die \ac{ÜNB} schreiben eine Leistungsmenge aus, und die Anbieter geben Leistung
 Der Zuschlag verpflichtet den Anbieter, die zugesagte Leistung über die gesamte Erbringungsperiode bereitzuhalten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Voraussetzung für die Teilnahme ist ein Präqualifikationsverfahren, in dem die technische Eignung der Anlage nachgewiesen und ein zulässiger Arbeitsbereich festgelegt wird.
 Bei der \ac{aFRR} und der \ac{mFRR} werden Leistung und Arbeit in zwei getrennten Ausschreibungen beschafft, während bei der \ac{FCR} allein Leistung beschafft wird.
+% HIERHER VERSCHOBEN 16.09.2026, C2, Produktmerkmale zur Beschaffungslogik.
+Die \ac{FCR} wird symmetrisch beschafft, die \ac{aFRR} und die \ac{mFRR} getrennt nach positiver und negativer Richtung.
+Der Leistungspreis je Zeitscheibe steht mit dem Zuschlag fest, während der Arbeitspreis der \ac{aFRR} und der \ac{mFRR} je Viertelstunde und nur bei Abruf anfällt.
+Den Abruf löst bei der \ac{FCR} die örtliche Frequenzmessung aus, bei der \ac{aFRR} die europäische Plattform PICASSO und bei der \ac{mFRR} der \ac{ÜNB} von Hand über die Plattform MARI.
 
 Die beschaffte Menge folgt zwei verschiedenen Regeln.
 Der Bedarf an \ac{FCR} wird auf europäischer Ebene festgelegt und geht vom Ausfall einer Erzeugungsleistung von 3000\,\si{MW} als Referenzstörfall aus.
@@ -842,9 +907,9 @@ Ein jährlich neu berechneter Schlüssel verteilt diesen Bedarf auf die Regelzon
 Den Bedarf an \ac{aFRR} und \ac{mFRR} ermitteln die deutschen \ac{ÜNB} gemeinsam und schreiben ihn je Vier-Stunden-Zeitscheibe aus, sodass sich die Menge über den Tag ändert.
 % GEAENDERT am 15.09.2026, Tabelle 2.2 auf Vorgabe des Verfassers gestrichen, Inhalt in drei Saetzen. Alte Fassung:
 %Tabelle~\ref{tab:regelleistung} stellt die Produktmerkmale und die Bemessung der Vergütung gegenüber.
-Die \ac{FCR} wird symmetrisch beschafft, die \ac{aFRR} und die \ac{mFRR} getrennt nach positiver und negativer Richtung.
-Der Leistungspreis je Zeitscheibe steht mit dem Zuschlag fest, während der Arbeitspreis der \ac{aFRR} und der \ac{mFRR} je Viertelstunde und nur bei Abruf anfällt.
-Den Abruf löst bei der \ac{FCR} die örtliche Frequenzmessung aus, bei der \ac{aFRR} die europäische Plattform PICASSO und bei der \ac{mFRR} der \ac{ÜNB} von Hand über die Plattform MARI.
+% VERSCHOBEN 16.09.2026, C2, Produktmerkmale zur Beschaffungslogik: Die \ac{FCR} wird symmetrisch beschafft, die \ac{aFRR} und die \ac{mFRR} getrennt nach positiver und negativer Richtung.
+% VERSCHOBEN 16.09.2026, C2, Produktmerkmale zur Beschaffungslogik: Der Leistungspreis je Zeitscheibe steht mit dem Zuschlag fest, während der Arbeitspreis der \ac{aFRR} und der \ac{mFRR} je Viertelstunde und nur bei Abruf anfällt.
+% VERSCHOBEN 16.09.2026, C2, Produktmerkmale zur Beschaffungslogik: Den Abruf löst bei der \ac{FCR} die örtliche Frequenzmessung aus, bei der \ac{aFRR} die europäische Plattform PICASSO und bei der \ac{mFRR} der \ac{ÜNB} von Hand über die Plattform MARI.
 
 % TABELLE 2.2 GESTRICHEN am 15.09.2026 auf Vorgabe des Verfassers, Inhalt in drei Saetzen im Text. Alte Fassung, nicht wieder aufnehmen:
 %\begin{table}[htbp]
@@ -891,7 +956,9 @@ Den Abruf löst bei der \ac{FCR} die örtliche Frequenzmessung aus, bei der \ac{
 %Die \ac{mFRR} bleibt deshalb im Weiteren außer Betracht.
 Alle drei Ausschreibungen schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag und damit vor der Auktion des \ac{DA} ab.
 Ein Anbieter plant seine Vermarktung an den Energiemärkten deshalb bereits unter Berücksichtigung einer erteilten Zuschlagsverpflichtung.
-Wo eine Anlage im Netz steht, spielt für den Zuschlag keine Rolle, denn die Produkte dienen dem Frequenzausgleich in der gesamten Regelzone.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Wo eine Anlage im Netz steht, spielt für den Zuschlag keine Rolle, denn die Produkte dienen dem Frequenzausgleich in der gesamten Regelzone.
+Wo eine Anlage im Netz steht, spielt für den Zuschlag zudem keine Rolle, denn die Produkte dienen dem Frequenzausgleich in der gesamten Regelzone.
 Das Engpassmanagement als zweite Systemdienstleistung mit Zugriff auf die Wirkleistung wird dagegen nicht marktlich beschafft, sondern angeordnet und auf Kostenbasis ausgeglichen.
 Die europäischen Vorgaben stellen dafür die Preise der Strommärkte oder die transparent ermittelten Kosten der eingesetzten Ressourcen zur Wahl \cite{europaische_kommission_verordnung_2015, bdew_branchenleitfaden_2018}.
 Der deutsche Gesetzgeber hat sich für die Kosten entschieden, weil die zulässigen Ausnahmetatbestände bei einer marktlichen Beschaffung überhöhte Preise erwarten lassen, nämlich strategisches Bietverhalten und ein Mangel an Wettbewerb \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019, hirth_kosten_2019}.
@@ -919,8 +986,10 @@ Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären
 %Maßstab ist dabei ein Indifferenzgebot, denn angemessen ist der Ausgleich dann, wenn er den Anlagenbetreiber wirtschaftlich weder besser noch schlechter stellt, als er ohne die Maßnahme stünde.
 %Die Norm führt diesen Maßstab in fünf Bestandteile aus, die nur insoweit zu erstatten sind, als die angeforderte Anpassung sie verursacht hat, und verpflichtet den Anlagenbetreiber zugleich, ersparte Aufwendungen zu berücksichtigen.
 %Tabelle~\ref{tab:ausgleich_bestandteile} stellt die Bestandteile mit ihrem jeweiligen Bemessungsgegenstand zusammen.
-Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0 \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025}.
-Die Fassung des Redispatch~2.0 ist seit dem 1.\,Oktober 2021 anzuwenden.
+% DURCHSICHT 16.09.2026, C1, Erlaeuterungssatz eingebunden. Alte Fassung:
+%Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0 \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025}.
+Wird eine Anlage im Rahmen des Engpassmanagements in ihrem Betrieb angepasst, richtet sich der Ausgleich nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0, die seit dem 1.\,Oktober 2021 anzuwenden ist \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025}.
+% DURCHSICHT 16.09.2026, C1, im Vorsatz aufgegangen: Die Fassung des Redispatch~2.0 ist seit dem 1.\,Oktober 2021 anzuwenden.
 Die Anpassung erfolgt nicht auf Grundlage eines Gebots, sondern als Anordnung des Netzbetreibers, die der Anlagenbetreiber zu dulden hat.
 Der Eingriff wird bilanziell ausgeglichen, sodass die beteiligten Bilanzkreise, also die Energiekonten der Marktteilnehmer, unberührt bleiben.
 Der finanzielle Ausgleich ersetzt die Kosten, die durch die Anpassung entstehen.
@@ -978,14 +1047,20 @@ Tabelle~\ref{tab:ausgleich_bestandteile} stellt die Bestandteile mit ihrem jewei
 %Beide stehen dabei nicht nebeneinander, denn die entgangenen Erlösmöglichkeiten werden nur ersetzt, wenn und soweit sie die Summe aus Erzeugungsauslagen und Werteverbrauch übersteigen.
 %Zur Auszahlung kommt damit der höhere der beiden Beträge, nämlich entweder die Summe der tatsächlich entstandenen Kosten oder der nachgewiesene entgangene Erlös.
 %Die Bemessung dieses Erlöses hat die Festlegung am \ac{PSKW} entwickelt und bewertet dabei jede Viertelstunde für sich.
-Bei einem thermischen Kraftwerk bilden die Brennstoff- und Emissionskosten der zusätzlich erzeugten Arbeit die Erzeugungsauslagen nach Nummer~1.
-Bei einem Speicher tritt an die Stelle der Erzeugungsauslagen ein Einsatzpreis, der nicht die tatsächlichen Beschaffungskosten abbildet, sondern den Wert der gespeicherten Energie in einer künftigen Vermarktung.
-Die Festlegung bestimmt den Einsatzpreis als Grenzpreis, also als den Preis, ab dem sich die Ein- oder Ausspeicherung lohnt, unter Berücksichtigung des Wirkungsgrades und des Netznutzungsentgelts \cite{bundesnetzagentur_anlage1_2024}.
+% HIERHER VERSCHOBEN 16.09.2026, C1, Uebersicht vor dem Einsatzpreis.
 Welche Positionen einschlägig sind, hängt von der Technologie ab.
 Konventionelle Kraftwerke fallen unter die Nummern~1 bis 4.
 Windenergie- und Photovoltaikanlagen fallen unter Nummer~5, weil ihre Erlöse nicht allein aus dem Markt folgen.
 \ac{PSKW} und \ac{BESS} fallen unter die Nummern~1 bis 3, denn sie vermarkten Arbeit und Leistung am Markt und sind aus dem Stillstand ohne Anfahrkosten verfügbar.
 Das Regime führt damit zwei Bemessungslogiken nebeneinander, eine für geförderte und eine für marktvermarktete Anlagen.
+Bei einem thermischen Kraftwerk bilden die Brennstoff- und Emissionskosten der zusätzlich erzeugten Arbeit die Erzeugungsauslagen nach Nummer~1.
+Bei einem Speicher tritt an die Stelle der Erzeugungsauslagen ein Einsatzpreis, der nicht die tatsächlichen Beschaffungskosten abbildet, sondern den Wert der gespeicherten Energie in einer künftigen Vermarktung.
+Die Festlegung bestimmt den Einsatzpreis als Grenzpreis, also als den Preis, ab dem sich die Ein- oder Ausspeicherung lohnt, unter Berücksichtigung des Wirkungsgrades und des Netznutzungsentgelts \cite{bundesnetzagentur_anlage1_2024}.
+% VERSCHOBEN 16.09.2026, C1, Uebersicht vor dem Einsatzpreis: Welche Positionen einschlägig sind, hängt von der Technologie ab.
+% VERSCHOBEN 16.09.2026, C1, Uebersicht vor dem Einsatzpreis: Konventionelle Kraftwerke fallen unter die Nummern~1 bis 4.
+% VERSCHOBEN 16.09.2026, C1, Uebersicht vor dem Einsatzpreis: Windenergie- und Photovoltaikanlagen fallen unter Nummer~5, weil ihre Erlöse nicht allein aus dem Markt folgen.
+% VERSCHOBEN 16.09.2026, C1, Uebersicht vor dem Einsatzpreis: \ac{PSKW} und \ac{BESS} fallen unter die Nummern~1 bis 3, denn sie vermarkten Arbeit und Leistung am Markt und sind aus dem Stillstand ohne Anfahrkosten verfügbar.
+% VERSCHOBEN 16.09.2026, C1, Uebersicht vor dem Einsatzpreis: Das Regime führt damit zwei Bemessungslogiken nebeneinander, eine für geförderte und eine für marktvermarktete Anlagen.
 
 Für ein \ac{BESS} fällt die Bedeutung der drei Positionen unterschiedlich aus.
 Der anteilige Werteverbrauch nach Nummer~2 bleibt anwendbar, seine Bemessung über die Betriebsstunden ist jedoch nicht auf die Beanspruchung eines \ac{BESS} zugeschnitten.
@@ -1141,10 +1216,14 @@ Als erwartetes Preisniveau dient der Preis derselben Auktion.
 Das Volatilitätsmaß ist die Standardabweichung der Differenz zwischen dem \ac{ID1} und dieser Auktion, rollierend über die jeweils letzten 30 Tage.
 Anders als in der Optionsbewertung üblich wird das Volatilitätsmaß nicht auf die verbleibende Zeit bis zur Lieferung skaliert, denn es misst bereits die Abweichung über das feste Intervall vom Preis der \ac{IDA-1} bis zum \ac{ID1} \cite{hull_options_2014}.
 
-Der Optionswert setzt sich aus dem inneren Wert und dem Zeitwert zusammen.
+% DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
+%Der Optionswert setzt sich aus dem inneren Wert und dem Zeitwert zusammen.
+Aus den drei Eingangsgrößen ergibt sich der Optionswert, der sich aus dem inneren Wert und dem Zeitwert zusammensetzt.
 Der innere Wert erfasst die bei sofortiger Ausübung anfallende Differenz zwischen erwartetem Preis und Basispreis, der Zeitwert die verbleibende Chance auf eine günstigere Preisentwicklung.
-Der Zeitwert ist der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt.
-Eine Vergütung allein der Preisdifferenz zahlte für eine Viertelstunde mit einem erwarteten Preis zwischen den Grenzpreisen nichts.
+% DURCHSICHT 16.09.2026, C1, Begruendung angebunden. Alte Fassung:
+%Der Zeitwert ist der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt.
+Der Zeitwert ist der Grund, weshalb die Festlegung überhaupt einen Optionsansatz verlangt, denn eine Vergütung allein der Preisdifferenz zahlte für eine Viertelstunde mit einem erwarteten Preis zwischen den Grenzpreisen nichts.
+% DURCHSICHT 16.09.2026, C1, im Vorsatz aufgegangen: Eine Vergütung allein der Preisdifferenz zahlte für eine Viertelstunde mit einem erwarteten Preis zwischen den Grenzpreisen nichts.
 Dem Betreiber wird mit der Anweisung aber auch dort die Chance auf eine günstigere Preisentwicklung genommen.
 
 Welche Optionsart eine Viertelstunde trägt, folgt aus dem Vergleich des stündlichen Day-Ahead-Preises mit dem Basispreis.
@@ -1216,16 +1295,26 @@ Ein thermisches Kraftwerk ist in seiner Fahrweise durch Mindestlast, Anfahrkoste
 Ein Speicher setzt seinen Fahrplan dagegen innerhalb seines Energieinhalts frei und kann einen Betriebspunkt hinter dem Engpass ohne zusätzlichen Aufwand einnehmen.
 Die kostenbasierte Bemessung soll ein solches Verhalten gerade verhindern, für Speicher setzt sie jedoch selbst einen Anreiz dazu.
 
-Konsequenterweise hat die Beschlusskammer die Behandlung von \ac{BESS} in der Festlegung nicht abschließend geregelt, sondern ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Konsequenterweise hat die Beschlusskammer die Behandlung von \ac{BESS} in der Festlegung nicht abschließend geregelt, sondern ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+Die Beschlusskammer hat die Behandlung von \ac{BESS} in der Festlegung nicht abschließend geregelt, sondern ausdrücklich einer späteren Mitteilung vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
 Damit ist die Bemessung bei \ac{BESS} bereits für den angeordneten Redispatch nicht eindeutig geklärt.
 Die Bemessung bietet deshalb keinen Anhalt dafür, wie eine kurative Vorhaltung dieser Anlagen zu vergüten wäre.
-Die Einwände betreffen dabei nicht die Wahl der Verteilungsannahme oder die Parametrisierung, sondern die Zerlegung in unabhängige Intervalle.
+% DURCHSICHT 16.09.2026, C1, Stilregel 5. Alte Fassung:
+%Die Einwände betreffen dabei nicht die Wahl der Verteilungsannahme oder die Parametrisierung, sondern die Zerlegung in unabhängige Intervalle.
+Die genannten Einwände betreffen nicht die Wahl der Verteilungsannahme oder die Parametrisierung, sondern die Zerlegung in unabhängige Intervalle.
 Eine Option bewertet die Unsicherheit eines einzelnen Lieferintervalls, während der Wert eines Speichers daraus entsteht, dass er Arbeit zwischen Intervallen und zwischen Märkten verschiebt.
 Eine Anpassung der Formel griffe deshalb zu kurz.
-Hirth und andere beschreiben für den marktbasierten Redispatch strukturelle Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
+
+% NEUER ABSATZ 16.09.2026, C2.9.
+% DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
+%Hirth und andere beschreiben für den marktbasierten Redispatch strukturelle Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
+Ein weiterer Einwand stammt aus der Debatte um den marktbasierten Redispatch: Hirth und andere beschreiben dort strukturelle Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
 Der Einwand trifft die Vergütung eines Eingriffs, und eine marktbasierte kurative Vorhaltung reserviert dagegen allein Leistung.
 Der Redispatch löst stets zugleich eine Energielieferung aus, weshalb der Einwand nicht ohne Weiteres übertragbar ist.
-Zu bestimmen ist zunächst, wie ein \ac{BESS} seine Flexibilität über den Tag einsetzt und welchen Beitrag die einzelnen Vermarktungswege tragen.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Zu bestimmen ist zunächst, wie ein \ac{BESS} seine Flexibilität über den Tag einsetzt und welchen Beitrag die einzelnen Vermarktungswege tragen.
+Für die kurative Vorhaltung ist deshalb zunächst zu bestimmen, wie ein \ac{BESS} seine Flexibilität über den Tag einsetzt und welchen Beitrag die einzelnen Vermarktungswege tragen.
 Erst daraus folgt, was eine Bindung dieser Flexibilität kostet.
 
 % UMBENANNT am 15.09.2026 auf Vorgabe des Verfassers, weil der Abschnitt die mFRR abgrenzt. Alte Fassung:
@@ -1261,7 +1350,7 @@ Im Jahr 2025 lag der mittlere Leistungspreis der \ac{mFRR} nach eigener Auswertu
 % GESTRICHEN am 15.09.2026 auf Vorgabe des Verfassers, der Erloesindex ist erst in 3.3.1 eingefuehrt. Nicht wieder aufnehmen:
 %Der Erlösindex, der die Erlöse von \ac{BESS} am deutschen Markt ausweist, führt die \ac{mFRR} ebenfalls nicht \cite{isea_methodik_2026}.
 Die \ac{mFRR} bleibt deshalb im Weiteren außer Betracht.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.11.
 Anders als das Engpassmanagement vergütet die Regelleistung die Vorhaltung selbst, und zwar über den Leistungspreis für die zugesagte Leistung.
 Bei der \ac{aFRR} tritt für die tatsächlich abgerufene Arbeit ein Arbeitspreis hinzu, während die \ac{FCR} ohne gesonderte Arbeitsvergütung auskommt.
 Der Arbeitspreis der \ac{aFRR} entsteht nicht in einer Auktion des Vortages, sondern über die europäische Plattform PICASSO, auf der seit dem Jahr 2022 \ac{aFRR}-Regelarbeit ausgetauscht wird \cite{bundesnetzagentur_monitoringbericht_2026}.
@@ -1270,7 +1359,9 @@ Wer einen Zuschlag für \ac{aFRR}-Leistung erhalten hat, ist für die reserviert
 Die übrigen Anbieter wählen Menge und Preis frei, und der Zuschlag erfolgt 25 Minuten vor Beginn der Produktzeitscheibe.
 Damit ist die benötigte Energie gesichert, ohne den Zugang zum Abruf zu verengen.
 
-Hält der Anbieter die zugesagte Leistung nicht vor, rechnet der \ac{ÜNB} eine Anreizkomponente ab.
+% DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
+%Hält der Anbieter die zugesagte Leistung nicht vor, rechnet der \ac{ÜNB} eine Anreizkomponente ab.
+Der Leistungspreis ist an die Vorhaltung gebunden: Hält der Anbieter die zugesagte Leistung nicht vor, rechnet der \ac{ÜNB} eine Anreizkomponente ab.
 Die Anreizkomponente fällt bereits an, wenn die Leistung für einen Abruf nicht zur Verfügung gestanden hätte.
 Der Leistungspreis vergütet damit die Übernahme des Verfügbarkeitsrisikos und nicht den Abruf, der überwiegend ausbleibt.
 Für einen Speicher hat die Vorhaltepflicht eine Folge, die andere Technologien nicht kennen.
@@ -1285,7 +1376,9 @@ Zweitens zeigt die \ac{aFRR}, dass sich Vorhaltung und Abruf getrennt bepreisen 
 Eine kurative Zusage hat dieselbe Struktur, denn sie besteht über die gesamte Bindungsdauer und ein Abruf erfolgt nur im Fehlerfall.
 Die \ac{aFRR} zeigt zudem, dass sich die Gebotspflicht auf die bezuschlagte Leistung beschränken lässt, ohne den Zugang zum Abruf zu verengen.
 Drittens ist die Bindung eines Ladezustandsbereichs über eine feste Erbringungsperiode bereits Bestandteil eines bestehenden Produkts und keine Besonderheit des kurativen Marktmechanismus.
-Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung nicht unmittelbar anwendbar, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
+% DURCHSICHT 16.09.2026, C1, Grund im Absatz. Alte Fassung:
+%Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung nicht unmittelbar anwendbar, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
+Die Beschaffungslogik der Regelleistung ist auf die kurative Vorhaltung nicht unmittelbar anwendbar, weil sie keinen Bezug zum Netzknoten kennt, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
 
 % TABELLE ENTFALLEN am 15.09.2026, Kuerzung A3. Die Bemessung steht als Spalte in tab:regelleistung. Alte Fassung:
 %\begin{table}[htbp]
@@ -1316,13 +1409,15 @@ Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung ni
 % GEKUERZT am 15.09.2026, Q18, die 564 MW stehen in 2.2.3. Alte Fassung:
 %Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren, während der gesamte deutsche Bedarf bei 564\,\si{MW} lag \cite{celi_cortes_m5use_2024}.
 Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.12.
 Die parallelen Vermarktungswege greifen dabei nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage. Der Umfang der parallel vermarktbaren Leistung ist deshalb begrenzt, und die Präqualifikationsbedingungen der Regelleistung bemessen die dort anrechenbare Leistung nach dem Arbeitsvermögen und den vorgesehenen Speichermanagementmaßnahmen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}. Die am Regelleistungsmarkt bereitgestellte Leistungsscheibe wird dabei nicht für Redispatch-Maßnahmen herangezogen \cite{bundesnetzagentur_anlage1_2024}. Wie eng die Wege zusammenhängen, zeigt eine Optimierungsrechnung für einen Speicher am deutschen Markt, in der der Handel im \ac{IDC} teilweise dazu dient, den Ladezustand in dem für die Regelleistung erforderlichen Bereich zu halten \cite{celi_cortes_m5use_2024}. Leistung und Speicherkapazität sind damit die knappen Ressourcen, um die alle Vermarktungswege konkurrieren, und eine kurative Vorhaltung erhebt darauf einen weiteren Anspruch.
 
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Innerhalb des Ladezustandsbereichs, der nicht durch eine Vorhaltung gebunden ist, führt der marktoptimale Fahrplan den Ladezustand systematisch an dessen Ränder, weil Arbitrage gerade darin besteht, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu leeren. Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}. Wie sich Leistung und Energieinhalt auf die einzelnen Märkte verteilen, ist dabei keine feste Größe. Der Betreiber entscheidet im Selbst\-dispatch-Modell allein erlösorientiert und verschiebt die Anteile, sobald sich die relativen Preise zwischen Arbitrage und Regelleistung ändern. Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft er jede dieser Entscheidungen zudem unter Unsicherheit über die folgenden. Was eine kurative Bindung den Betreiber kostet, hängt damit davon ab, welche Vermarktung er andernfalls gewählt hätte, und diese Alternative wechselt mit den relativen Preisen.
 Innerhalb des Ladezustandsbereichs, der nicht durch eine Vorhaltung gebunden ist, führt der marktoptimale Fahrplan den Ladezustand systematisch an dessen Ränder.
-Arbitrage besteht gerade darin, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu leeren.
+% DURCHSICHT 16.09.2026, C1, Begruendung angebunden. Alte Fassung:
+%Arbitrage besteht gerade darin, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu leeren.
+Der Grund liegt in der Arbitrage, die den Speicher in Niedrigpreisphasen füllt und in Hochpreisphasen leert.
 Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}.
 Wie sich Leistung und Energieinhalt auf die einzelnen Märkte verteilen, ist dabei keine feste Größe.
 Der Betreiber entscheidet im Selbst\-dispatch-Modell allein erlösorientiert und verschiebt die Anteile, sobald sich die relativen Preise zwischen Arbitrage und Regelleistung ändern.
@@ -1334,7 +1429,7 @@ Diese Alternative wechselt mit den relativen Preisen.
 \label{sec:interim_conclusion}
 
 Die kurative Verfügbarkeit lässt sich im Selbst\-dispatch-Modell nur über einen Preis und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim Anlagenbetreiber, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
-
+% ABSATZ VERBUNDEN 16.09.2026, C2.13.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G40, Q9, Stilregel 17. Fuenf Saetze zum Zeitwert auf drei.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -1343,6 +1438,8 @@ Das geltende Vergütungsregime des Engpassmanagements bemisst den Ausgleich am d
 
 % STILREGEL 5 am 15.09.2026, Pronomen aufgeloest. Alte Fassung:
 %Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Er legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
-Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
-
+% DURCHSICHT 16.09.2026, C1, Ueberleitung. Alte Fassung:
+%Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
+Aus der kurzfristigen Fahrweise folgt die Anforderung an die Vorhaltung: Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
+% ABSATZ VERBUNDEN 16.09.2026, C2.13.
 Für eine solche Bindung kennt das Engpassmanagement keinen Bemessungsgegenstand. Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, während ein Abruf mit hoher Wahrscheinlichkeit ausbleibt und eine Zahlung deshalb nur in den wenigen Intervallen eines Eingriffs anfällt. Die Vorhaltung ist für ihn damit nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar. Ein Zugriff, der ohne diesen Anreiz auskommt, steht dem \ac{ÜNB} nicht zur Verfügung, denn die Anlagenbetreiber übermitteln zwar ihre Einsatzplanung als Planungsdaten, doch diese Kenntnis begründet keine Verfügung über den Betriebspunkt. Sie erlaubt ihm auch keine schnellere Reaktion als die Redispatch-Prozesse, sodass die vorübergehend zulässige Überlastung als Handlungsraum ungenutzt bleibt.

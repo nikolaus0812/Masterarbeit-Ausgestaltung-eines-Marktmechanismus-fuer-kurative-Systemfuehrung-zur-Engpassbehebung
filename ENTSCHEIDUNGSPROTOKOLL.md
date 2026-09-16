@@ -905,6 +905,88 @@ es erfuellt ist. Das Kapitel laeuft im Build vom 14.09.2026 von Seite 35 bis
 50, das Seitenziel von 14 ist nach der Liste nur mit der Verlagerung des
 Ablaufdiagramms und der Schleifenabbildung in Anhang B erreichbar (W2).
 
+### 16.09.2026, Durchsicht der Kapitel 1 bis 3 auf Anbindung, Absatzzahl, Dopplungen und Platzierung
+
+**Auftrag des Verfassers vom 15.09.2026.** Alle Absaetze auf die Anbindung
+der Saetze pruefen, Absaetze verbinden, wo sie dieselbe Kernaussage tragen,
+besonders in Kapitel 3, Dopplungen aufspueren und die Platzierung der
+Gleitumgebungen im PDF pruefen. Die Befunde stammen aus drei Subagenten je
+Kapitel und der Sichtung des PDF, aufbereitet in `DURCHSICHT_KAP1_3.md` mit
+nummerierten Optionen A bis F.
+
+**Vorgabe des Verfassers.** Das Vorgehen ist freigegeben, Dopplungen werden
+aber nicht stillschweigend geloest, sondern einzeln mit Wortlaut vorgelegt.
+Umgesetzt sind deshalb nur Platzierung (A), Zusammenlegungen und Teilungen
+(B2, C2, D2) und die mechanische Anbindung (B1, C1, D1). Die Dopplungen
+stehen als Liste B3, C3, D3 und fuer Kapitel 3 mit Wortlaut als F zur
+Entscheidung.
+
+**Platzierung.** Tabelle 2.1 und Abbildung 2.3 auf tbp, weil die Option h
+jeweils eine halbleere Seite erzeugte (Seite 14 und 20). Abbildung 3.3 auf
+62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Abbildung 2.1
+hinter den Absatz verschoben, der sie nennt (C2.1). Seitenzahlen unveraendert,
+Kapitel 3 beginnt auf Seite 31, das Literaturverzeichnis auf Seite 48.
+
+**Sachfehler berichtigt.** Die sechste Stufe der aFRR-Leiter heisst im Code
+(erloesaufteilung.py, SATZ_AFRR) frei bis zehn Prozent des deutschen Abrufs,
+der Satz bei der aFRR-Arbeit sagte voller Abruf. Die Auslegung der Modellanlage
+mit 2,5 Stunden lag nach 3.2.2 am oberen Rand des Bereichs aus 2.1.3, dort
+stehen 1 bis 2 Stunden; jetzt liegt sie ueber dem Bestand und im Bereich der
+geplanten Anlagen, die Fussnote von Tabelle 2.1 nennt die geplanten Anlagen
+mit leistungsgewichtet 3 Stunden.
+
+**Kapitel 3.** 45 Textabsaetze auf 44 (die Dopplungen in F bringen weitere
+Zusammenlegungen). 3.1.2 von 9 auf 7 Absaetze (Einleitung mit Zusage,
+Opportunitaetskosten mit Gebot und Klasse). 3.2.1 neu geschnitten in Bezug und
+Opportunitaetskosten, Kopplung und obere Schranke, lineares Programm (D2.7).
+3.2.2 Variablen mit Zielfunktion verbunden, Bilanz und Leistungsschranke als
+eigener Absatz. 3.2.3: nicht gefuehrte Maerkte und der Satz zu DA und IDC in
+den Absatz der gefuehrten Maerkte, IDC mit dem Aufschlag verbunden, der
+Absatz der Maerkte und der Absatz zum Auswertungszeitraum bleiben getrennt,
+weil der verbundene Absatz elf Saetze truege. 3.2.4 Weber und Festlegung
+verbunden. Anforderungskatalog: A2, A3, A4, A7 haengen die Begruendung mit
+denn an, A8 These und Erlaeuterung in einem Satz. Reihenfolge in den
+Absaetzen Abruf, Praequalifikation und Zuschlag geschlossen.
+
+**Kapitel 2.** Abbildung 2.1 und ihr Vergleichssatz hinter den Absatz zum
+praeventiven Regelfall. Absatz zu den drei Merkmalen des praeventiven
+Vorgehens geteilt, Drittens mit dem Absatz zur Verlagerung verbunden. Absatz
+zu den Vorteilen des kurativen Betriebs geteilt. Literatursatz an den Anfang
+des Absatzes zu den zwei Auspraegungen. KuPilot-Einschub als eigener Satz.
+Maßnahmenraum und Meldung des Potenzials getrennt. Merkmalsabsatz in 2.1.3
+geteilt, PSKW mit BESS verbunden, Standort und Bestand als eigener Absatz.
+Binnenmarktverordnung in den Absatz, der sie aufgreift. 2.2.2 Einleitung mit
+Terminmarkt und OTC verbunden, DA bis IDC als eigener Absatz. 2.2.3
+Produktmerkmale (Richtung, Preis, Abruf) in den Absatz der Beschaffungslogik,
+Betriebsfuehrung vor die Konsequenz. 2.3.1 Uebersicht der Positionen vor den
+Einsatzpreis. 2.3.3 Hirth-Einwand als eigener Absatz. 2.3.4 mFRR-Abgrenzung
+mit dem Verguetungsabsatz verbunden. 2.3.5 die beiden ersten Absaetze
+verbunden. 2.4 von vier auf zwei Absaetze. Dazu 30 Bindewoerter und
+Ueberleitungen ohne Inhaltsaenderung, jede als Kommentar DURCHSICHT in der
+Datei vermerkt.
+
+**Kapitel 1.** Netzausbau und Photovoltaik als zwei Saetze. Ueberleitung vom
+heutigen Stand zum NEP 2045. Die zeitliche Luecke und der Ansatzpunkt der
+kurativen Systemfuehrung stehen jetzt am Ende des Absatzes zur praeventiven
+Planung, sodass der Absatz zur kurativen Systemfuehrung unmittelbar
+anschliesst. 1.2 erster Absatz geteilt in Ziel und Begriffe sowie Grund fuer
+einen Marktmechanismus (B2.3). Satz zur Einsparung hinter das Modell (B2.4).
+2030 mit Konsequenz. Kapitel 1 endet weiter mit elf Zeilen auf Seite 6, das
+Ziel von fuenf Seiten haengt an den Dopplungen B3.
+
+**Eigenstaendige Argumente.** Die Konsequenz zu 2030 in 1.2 (Engpassbedarf
+besteht 2030 fort, wachsender Speicherbestand steht zur Verfuegung) ist aus den
+beiden Vorsaetzen abgeleitet. Der Grund in 2.3.4, dass die Beschaffungslogik
+der Regelleistung keinen Bezug zum Netzknoten kennt, stuetzt sich auf den
+Satz in 2.2.3, wonach der Standort fuer den Zuschlag keine Rolle spielt.
+
+**Ohne Rueckfrage geloest**, weil zwei Saetze desselben Absatzes dasselbe
+sagten: Praequalifikation in 3.1.2, A7 und A8 im Katalog, Redispatch 2.0 mit
+Datum in 2.3.1, Zeitwert mit Begruendung in 2.3.2, Volatilitaet in 1.2.
+
+**Pruefungen.** tools/pruefen.py ohne Befund in allen drei Kapiteldateien,
+Build ohne Fehler.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
