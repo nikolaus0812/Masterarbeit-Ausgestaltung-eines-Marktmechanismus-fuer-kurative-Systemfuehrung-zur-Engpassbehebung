@@ -6977,6 +6977,56 @@ Transparenzplattform der ENTSO-E und netztransparenz.de.
 
 **Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler.
 
+### 16.09.2026, chapter_3.tex und attachment_modell.tex, Kommentardurchgang 3.2.1 bis 3.2.4 und Anhang C
+
+**3.2 Einleitung, Modellkette.** Absatz nach Abbildung 3.1 als Ablauf mit
+Eingangs- und Ausgangsdaten, Erloes maximiert, Reservierungspreis je
+Zeitscheibe minimiert, Suche als Schleife aus Optimierungen, Ausgangsdaten
+alle Groessen der Optimierung mit dem Erloes je Markt als wichtigster
+Tageskennzahl, Anlagen- und Marktparameter im Modell festgelegt.
+
+**3.2.1.** Erste zwei Saetze verbunden, Referenzfahrplan aus einem Lauf ohne
+kurative Reservierung statt Preis null. Sequenz der Entscheidungen bis zum
+regelzoneninternen Handel fuenf Minuten vor Lieferbeginn. Begruendung der
+Optimierung in einem Lauf mit vollstaendiger Preiskenntnis (Prognose fuegte
+eine nicht trennbare Annahme hinzu), prognosegestuetzte Modelle als Mass des
+Abstands. Mindestgroesse als Option zur Untersuchung einzelner Preise, in der
+Sensitivitaet 25 MW (nicht im Basisfall). Zuschlag gilt zu den
+beruecksichtigten Preisen als sicher. Der Satz, ohne Abruf sei der Preis der
+opportunitaetskostenbasierte Teil des Gebots, ist zurueckgenommen und nicht
+wieder aufzunehmen; jetzt: Abruf gesondert verguetet und deshalb nicht im
+Preis, sichere Zuschlaege loesen die Regelleistungserloese vom Bietverhalten.
+Zitat des NEP am Satz zum Szenariorahmen 2030 entfernt, weil die Aussage das
+eigene Vorgehen beschreibt.
+
+**3.2.2.** Anlage, Degradation und Variablen mit Zielfunktion ein Absatz.
+Datenquellen je Markt in 3.2.3 benannt.
+
+**3.2.4.** Neu in drei Absaetzen nach der Vorgabe des Verfassers: erst das
+Bisektionsverfahren, dann sein Problem, dann die Loesung entlang des
+Flussdiagramms. Alle Aussagen gegen curative_breakeven.py geprueft
+(Startdeckel 800, Verdopplung bis 51.200, Toleranz 0,05, Fuellschwelle
+0,01 MW von 100 MW, Aufstieg mal 1,25, Zertifikat und Abstieg um die
+Toleranz, Reihenfolge aufsteigend und positiv vor negativ, koordinatenweises
+Minimum). Neue Zahlen mit Tag: am 11.02.2025 fallen 8 von 24 Stunden positiv
+und 9 von 24 negativ aus der vollen Reservierung, wenn der Vektor der ersten
+Iteration gepostet wird (Docstring _vollverdraengung). Laufzahlen 84 bis 167
+nach README des Verfahrensordners im Modellrepository. Abbildung
+reservierungspreis_bisektion.pdf aus dem Modellrepository vom 16.09.2026 neu
+uebernommen, jetzt mit Teil (a) feste Schwelle und Teil (b) wandernde
+Schwelle, Bildunterschrift angepasst. Gesperrter Begriff Schwellenpreis aus
+der ersten Fassung entfernt. Kapitel 3 dadurch eine Seite laenger,
+Literaturverzeichnis ab Seite 49.
+
+**Anhang C.** Tabellen als longtable in Fussnotengroesse mit arraystretch
+1,15, damit sie an Ort und Stelle stehen und umbrechen; ein Satz vor jeder
+der neun Gleichungsgruppen; die Gleichung der gesperrten Viertelstunden in
+zwei Zeilen (C.27, C.28), weil sie in den Rand ragte. Anhang C von fuenf auf
+vier Seiten.
+
+**Pruefungen.** pruefen.py ohne Befund in chapter_3.tex und
+attachment_modell.tex, Build ohne Fehler.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

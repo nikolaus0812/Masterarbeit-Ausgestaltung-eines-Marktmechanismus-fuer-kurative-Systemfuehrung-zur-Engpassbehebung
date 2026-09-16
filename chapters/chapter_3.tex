@@ -4511,36 +4511,37 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
 %Je Stunde sind 14 Halbierungen nötig, und statt 672 Läufen je Tag bei getrennter Rechnung genügen 84 bis 167, im Mittel rund 130, weil sich die Stunden eines Intervalls einen Lauf teilen.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 17.
 %Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf abliest, wie viel Leistung die Anlage kurativ reserviert.
-Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung.
-Die Suche ruft das Tagesmodell wiederholt mit einem vorgegebenen Preis auf und liest aus jedem Lauf ab, wie viel Leistung die Anlage kurativ reserviert.
-Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
-Die Schleifen über die Stunden liegen deshalb allein in der Suche.
-Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung.
-Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026: erst das Bisektionsverfahren, dann sein Problem, dann die Loesung entlang des Flussdiagramms; Aussagen gegen curative_breakeven.py und reservierungspreis_bisektion.py geprueft. Alte Fassung, nicht wieder aufnehmen:
+%Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung.
+%Die Suche ruft das Tagesmodell wiederholt mit einem vorgegebenen Preis auf und liest aus jedem Lauf ab, wie viel Leistung die Anlage kurativ reserviert.
+%Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
+%Die Schleifen über die Stunden liegen deshalb allein in der Suche.
+%Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung.
+%Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt.
 % HIERHER VERSCHOBEN 15.09.2026, D1, Monotonie zum Fuellgrad.
-Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat, wie Abbildung~\ref{fig:reservierungspreis_bisektion} für eine Beispielstunde zeigt.
-
-Die erste Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem oberen Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
-Ein Lauf mit einem Startdeckel von 800 Euro je Megawatt und Stunde prüft zunächst, ob jede Stunde voll ist.
-Der Deckel verdoppelt sich, bis alle Stunden voll sind, höchstens bis 51.200 Euro je Megawatt und Stunde.
+%Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat, wie Abbildung~\ref{fig:reservierungspreis_bisektion} für eine Beispielstunde zeigt.
+%
+%Die erste Iteration sucht je Stunde und Richtung den kleinsten für den ganzen Tag einheitlichen Preis, bei dem die Stunde voll reserviert ist, nach dem oberen Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
+%Ein Lauf mit einem Startdeckel von 800 Euro je Megawatt und Stunde prüft zunächst, ob jede Stunde voll ist.
+%Der Deckel verdoppelt sich, bis alle Stunden voll sind, höchstens bis 51.200 Euro je Megawatt und Stunde.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: 48 erklaert.
 %Zu Beginn teilen sich alle 48 Stunden und Richtungen dasselbe Suchintervall, und je offenem Intervall läuft eine Optimierung mit seiner Mitte als Preis.
-Zu Beginn teilen sich alle 48 Paare aus Stunde und Richtung dasselbe Suchintervall, und je offenem Intervall läuft eine Optimierung mit seiner Mitte als Preis.
-Jede Stunde des Intervalls liest ihren Füllgrad aus demselben Lauf ab.
-Ist die Stunde voll, setzt sie die obere Grenze ihres Intervalls auf diesen Preis, sonst die untere.
-Das Intervall zerfällt damit in zwei Gruppen.
+%Zu Beginn teilen sich alle 48 Paare aus Stunde und Richtung dasselbe Suchintervall, und je offenem Intervall läuft eine Optimierung mit seiner Mitte als Preis.
+%Jede Stunde des Intervalls liest ihren Füllgrad aus demselben Lauf ab.
+%Ist die Stunde voll, setzt sie die obere Grenze ihres Intervalls auf diesen Preis, sonst die untere.
+%Das Intervall zerfällt damit in zwei Gruppen.
 % VERSCHOBEN 15.09.2026, D1, Monotonie zum Fuellgrad: Die Bisektion setzt voraus, dass der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat, wie Abbildung~\ref{fig:reservierungspreis_bisektion} für eine Beispielstunde zeigt.
-Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist.
-Die obere Grenze ist dann der einheitliche Reservierungspreis der ersten Iteration, mit dem die zweite beginnt.
+%Die Suche bricht ab, sobald kein Intervall breiter als 0,05 Euro je Megawatt und Stunde ist.
+%Die obere Grenze ist dann der einheitliche Reservierungspreis der ersten Iteration, mit dem die zweite beginnt.
 % HIERHER VERSCHOBEN 15.09.2026, D2.16, Rechenaufwand bleibt bei der ersten Iteration.
-Je Paar aus Stunde und Richtung sind 14 Halbierungen nötig, also 672 Läufe je Tag, wenn jedes Paar allein liefe.
-Weil sich die Paare eines Intervalls einen Lauf teilen, genügen 84 bis 167 Läufe je Tag, im Mittel rund 130.
+%Je Paar aus Stunde und Richtung sind 14 Halbierungen nötig, also 672 Läufe je Tag, wenn jedes Paar allein liefe.
+%Weil sich die Paare eines Intervalls einen Lauf teilen, genügen 84 bis 167 Läufe je Tag, im Mittel rund 130.
 % EIGENE RECHNUNG, Belegzettel.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Rechnung nachvollziehbar, Stilregel 17.
 %Je Stunde sind 14 Halbierungen nötig, und weil sich die Stunden eines Intervalls einen Lauf teilen, genügen statt 672 Läufen je Tag 84 bis 167, im Mittel rund 130.
 % VERSCHOBEN 15.09.2026, D2.16, Rechenaufwand bleibt bei der ersten Iteration: Je Paar aus Stunde und Richtung sind 14 Halbierungen nötig, also 672 Läufe je Tag, wenn jedes Paar allein liefe.
 % VERSCHOBEN 15.09.2026, D2.16, Rechenaufwand bleibt bei der ersten Iteration: Weil sich die Paare eines Intervalls einen Lauf teilen, genügen 84 bis 167 Läufe je Tag, im Mittel rund 130.
-
+%
 % REIHENFOLGE GETAUSCHT am 14.09.2026, Vorgabe des Verfassers. Zuerst das
 % Bisektionsverfahren, dann das Flussdiagramm, zuletzt die Schleifen. Die
 % beiden Bloecke sind samt ihrer Kommentare vertauscht, der Text dazwischen
@@ -4559,19 +4560,19 @@ Weil sich die Paare eines Intervalls einen Lauf teilen, genügen 84 bis 167 Läu
 % Die Monotonie ist uebernommen, aber nicht belegt, siehe den Kommentar am
 % Stichpunkt zur Bisektion. Die Achse im Bild sagt geposteter
 % Reservierungspreis.
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
 % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
 % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
 % Fassung:
 %    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
 % BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
 %    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
-    \caption{Bisektion für eine Beispielstunde, links der Füllgrad über dem Preis, rechts das Suchintervall je Schritt.}
-    \label{fig:reservierungspreis_bisektion}
-\end{figure}
-
+%    \caption{Bisektion für eine Beispielstunde, links der Füllgrad über dem Preis, rechts das Suchintervall je Schritt.}
+%    \label{fig:reservierungspreis_bisektion}
+%\end{figure}
+%
 % ABBILDUNG ERSETZT am 12.09.2026 nach der Anweisung des Verfassers. Die
 % beiden Flussdiagramme der 1. und der 2. Iteration sind im Modellrepository
 % geloescht. An ihre Stelle tritt reservierungspreis_ablauf_a4.pdf, die beide
@@ -4618,17 +4619,17 @@ Weil sich die Paare eines Intervalls einen Lauf teilen, genügen 84 bis 167 Läu
 % Bisektionsabbildung vor diese hier, sodass Abbildung 3.3 ueber 3.2 stand.
 % Ohne h landet die grosse Abbildung oben auf der Seite. Alte Fassung:
 %\begin{figure}[htbp]
-\begin{figure}[tbp]
-    \centering
+%\begin{figure}[tbp]
+%    \centering
 % DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
 %    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-    \includegraphics[height=0.62\textheight,width=\textwidth,keepaspectratio]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+%    \includegraphics[height=0.62\textheight,width=\textwidth,keepaspectratio]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
 % BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
 %    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
-    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
-    \label{fig:reservierungspreis_ablauf}
-\end{figure}
-
+%    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
+%    \label{fig:reservierungspreis_ablauf}
+%\end{figure}
+%
 % AUSFORMULIERT am 13.09.2026, Auftrag des Verfassers, am Stueck und zur
 % Durchsicht. Er geht den Abschnitt danach absatzweise durch.
 % BEGRIFFE, entschieden vom Verfasser am 13.09.2026. Das Ergebnis der zweiten
@@ -4697,24 +4698,72 @@ Weil sich die Paare eines Intervalls einen Lauf teilen, genügen 84 bis 167 Läu
 %Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen und eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste steigt.
 %Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die volle Reservierung aller Stunden, und er endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt.
 %Ergebnis der zweiten Iteration ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt, wobei positive und negative Richtung als zwei Produkte getrennt bleiben.
-Werden die Preise der ersten Iteration als Vektor gleichzeitig vorgegeben, sind nicht alle Stunden voll reserviert.
-Jede Stunde hat ihre Schwelle unter einem einheitlichen Preis gefunden, also gegen eine andere Konkurrenz um Leistung und Ladezustand.
+%Werden die Preise der ersten Iteration als Vektor gleichzeitig vorgegeben, sind nicht alle Stunden voll reserviert.
+%Jede Stunde hat ihre Schwelle unter einem einheitlichen Preis gefunden, also gegen eine andere Konkurrenz um Leistung und Ladezustand.
 % HIERHER VERSCHOBEN 15.09.2026, D1, Grund vor dem Aufstieg.
-Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen.
+%Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 5.
 %Die zweite Iteration gibt diesen Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
-Die zweite Iteration gibt den Preisvektor der ersten Iteration vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
+%Die zweite Iteration gibt den Preisvektor der ersten Iteration vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert, nach dem unteren Teil von Abbildung~\ref{fig:reservierungspreis_ablauf}.
 % VERSCHOBEN 15.09.2026, D1, Grund vor dem Aufstieg: Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 5.
 %Eine gerade gefüllte Stunde fällt wieder heraus, sobald die nächste steigt.
-Eine gerade gefüllte Stunde fällt wieder heraus, sobald die nächste Stunde steigt.
-Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die volle Reservierung aller Stunden.
-Der Abstieg endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt.
-Ergebnis der zweiten Iteration ist je Stunde und Richtung der Vollreservierungspreis.
+%Eine gerade gefüllte Stunde fällt wieder heraus, sobald die nächste Stunde steigt.
+%Weil ein grober Aufstieg über das Ziel hinausschießt, senkt ein Abstieg danach jede Stunde einzeln um die Toleranz und prüft dabei die volle Reservierung aller Stunden.
+%Der Abstieg endet erst, wenn ein ganzer Durchgang ohne Senkung bleibt.
+%Ergebnis der zweiten Iteration ist je Stunde und Richtung der Vollreservierungspreis.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 5.
 %Bei diesem Preis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt.
-Beim Vollreservierungspreis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt.
-Die positive und die negative Richtung bleiben dabei als zwei Produkte getrennt.
+%Beim Vollreservierungspreis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt.
+%Die positive und die negative Richtung bleiben dabei als zwei Produkte getrennt.
+Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf die reservierte Leistung abliest.
+Ein Lauf löst stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
+Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt.
+Gesucht ist je Stunde und Richtung der kleinste Preis, bei dem die Stunde voll reserviert ist, und dafür eignet sich die Bisektion, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
+Die Bisektion prüft die Mitte eines Preisintervalls mit einem Lauf: Ist die Stunde dort voll, entfällt die obere Hälfte des Intervalls, sonst die untere.
+Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) zeigt.
+Das Startintervall reicht bis zu einem Deckel von 800 Euro je Megawatt und Stunde, der sich verdoppelt, bis jede Stunde voll ist, höchstens bis 51.200 Euro je Megawatt und Stunde.
+Von 800 Euro je Megawatt und Stunde bis zur Toleranz sind 14 Halbierungen nötig, und weil sich alle 48 Paare aus Stunde und Richtung mit derselben Intervallmitte einen Lauf teilen, genügen 84 bis 167 Läufe je Tag statt 672, im Mittel rund 130.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
+% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
+%    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
+    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt.}
+    \label{fig:reservierungspreis_bisektion}
+\end{figure}
+
+Die Bisektion allein reicht nicht aus, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom ganzen Preisvektor.
+Die Stunden konkurrieren um dieselbe Leistung und denselben Ladezustand, sodass eine Stunde, deren Preis steigt, eine andere verdrängen kann.
+Die erste Iteration findet die Schwelle jeder Stunde deshalb nur unter einem für den ganzen Tag einheitlichen Preis.
+Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, am 11.02.2025 zum Beispiel 8 von 24 Stunden in positiver und 9 von 24 in negativer Richtung.
+Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt den Grund: Steigt die Schwelle während der Suche, kann die obere Grenze des Intervalls ihr nicht mehr folgen, denn die Bisektion senkt die obere Grenze nur.
+Eine Bisektion je Stunde gegen den Vektor führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
+
+Das Verfahren löst das Problem in zwei Iterationen, die Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+Die erste Iteration ist die beschriebene Bisektion und liefert je Stunde und Richtung den unter einheitlichem Preis gefundenen Wert als Startvektor.
+Die zweite Iteration gibt den Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert.
+Der Aufstieg schießt über das Ziel hinaus, weshalb ein Abstieg jede Stunde einzeln um die Toleranz senkt und dabei prüft, ob alle Stunden voll bleiben.
+Bleibt der Vektor voll, war der Preis nicht minimal, und die Stunde wird gegen die gemeinsame Bedingung nach unten bisektiert.
+Der Abstieg endet, wenn ein ganzer Durchgang ohne Senkung bleibt, und das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
+Beim Vollreservierungspreis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt, ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert.
+Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung, und die positive und die negative Richtung bleiben als zwei Produkte getrennt.
+
+\begin{figure}[tbp]
+    \centering
+% DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
+%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+    \includegraphics[height=0.62\textheight,width=\textwidth,keepaspectratio]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
+%    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
+    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
+    \label{fig:reservierungspreis_ablauf}
+\end{figure}
 
 % ABBILDUNG ENTFALLEN am 12.09.2026 nach der Anweisung des Verfassers. Beide
 % Iterationen stehen jetzt in fig:reservierungspreis_ablauf oben in diesem
