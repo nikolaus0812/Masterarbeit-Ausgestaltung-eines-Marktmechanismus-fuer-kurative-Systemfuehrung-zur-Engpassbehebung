@@ -211,6 +211,7 @@ steht, gilt der Begriff als undefiniert.
 | Planungshorizont, Ersatz für Reichweite | 2.1.1 Absatz 3 |
 | Kurative Höherauslastung, kurativer Redispatch | 2.1.1 Absatz 5 |
 | Kurativer Akteur | 2.1.2 Absatz 1 |
+| Einplanung, Scharfschaltung, Auslösung, Abruf, Umsetzung, Reaktionszeit, Bindungsdauer | 2.1.2 Absatz 2, seit 16.09.2026 nach InnoSys 2030 |
 | Quelle und Senke | 2.1.2 Absatz 3 |
 | Bemessungsgrundlage | 2.1.3 Absatz 1 |
 

@@ -98,17 +98,23 @@
 % ALTE FASSUNG:
 %Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und stellt ein Optimierungsmodell auf, dessen Ergebnis es gegen einen veröffentlichten Erlösvergleich für Speicher prüft.
 %Dieses Kapitel leitet die Anforderungen ab, entwirft den Produktrahmen und bestimmt den kurativen Reservierungspreis mit einem Optimierungsmodell, das den fehlenden Vergütungsrahmen ausfüllt und dessen Ergebnis es gegen einen veröffentlichten Erlösvergleich für Speicher prüft.
-Die kurative Systemführung hält für den Fehlerfall eine nachgelagerte Handlungsmöglichkeit bereit und erlaubt es dem \ac{ÜNB}, das Netz im Normalbetrieb höher auszulasten.
-Die kurative Systemführung kommt damit als zusätzliche Systemdienstleistung für das Engpassmanagement in Betracht, deren Gegenstand nicht ein Eingriff, sondern die Bereitschaft zu einem Eingriff ist.
+% NEU GEFASST am 16.09.2026 nach Kommentar des Verfassers zur Kapiteleinleitung: Beginn mit der Ergaenzung des Engpassmanagements um eine Systemdienstleistung, deren Gegenstand die Bereitschaft zur Leistungsanpassung ist; Satz zur kurativen Systemfuehrung und Satz zu BESS an vielen Netzknoten entfallen (Einzelanlage); Bemessung aus dem Redispatch nicht anwendbar, Marktmechanismus als Untersuchungsweg; kuerzer. Alte Fassung, nicht wieder aufnehmen:
+%Die kurative Systemführung hält für den Fehlerfall eine nachgelagerte Handlungsmöglichkeit bereit und erlaubt es dem \ac{ÜNB}, das Netz im Normalbetrieb höher auszulasten.
+%Die kurative Systemführung kommt damit als zusätzliche Systemdienstleistung für das Engpassmanagement in Betracht, deren Gegenstand nicht ein Eingriff, sondern die Bereitschaft zu einem Eingriff ist.
 % DURCHSICHT 15.09.2026, D1, Anbindung. Alte Fassung:
 %\ac{BESS} vereinen die Eigenschaften, die ein kurativer Akteur braucht, und kommen an vielen Netzknoten in Betracht, wie in Abschnitt~\ref{sec:actor_comparison} dargestellt.
-Als kurativer Akteur kommen \ac{BESS} in Betracht, denn sie vereinen die Eigenschaften, die ein kurativer Akteur braucht, und stehen an vielen Netzknoten, wie in Abschnitt~\ref{sec:actor_comparison} dargestellt.
+%Als kurativer Akteur kommen \ac{BESS} in Betracht, denn sie vereinen die Eigenschaften, die ein kurativer Akteur braucht, und stehen an vielen Netzknoten, wie in Abschnitt~\ref{sec:actor_comparison} dargestellt.
 % DURCHSICHT 15.09.2026, D1, Anbindung. Alte Fassung:
 %Die Bemessung der Vergütung im Engpassmanagement ist für \ac{BESS} nicht abschließend geklärt.
-Für \ac{BESS} ist die Bemessung der Vergütung im Engpassmanagement jedoch nicht abschließend geklärt.
-Eine kurative Reservierung fügt sich deshalb nicht in den bestehenden Rahmen ein, sondern ist eigens auszugestalten.
-Dazu ist die kurative Reservierung zuerst als Produkt zu entwerfen und dieses Produkt anschließend aus der Sicht des Anlagenbetreibers zu bewerten.
-In diesem Kapitel werden die Anforderungen abgeleitet, der Produktrahmen entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell bestimmt, das den fehlenden Vergütungsrahmen ausfüllt.
+%Für \ac{BESS} ist die Bemessung der Vergütung im Engpassmanagement jedoch nicht abschließend geklärt.
+%Eine kurative Reservierung fügt sich deshalb nicht in den bestehenden Rahmen ein, sondern ist eigens auszugestalten.
+%Dazu ist die kurative Reservierung zuerst als Produkt zu entwerfen und dieses Produkt anschließend aus der Sicht des Anlagenbetreibers zu bewerten.
+%In diesem Kapitel werden die Anforderungen abgeleitet, der Produktrahmen entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell bestimmt, das den fehlenden Vergütungsrahmen ausfüllt.
+%Zum Abschluss wird der ungebundene Erlös des Modells gegen einen veröffentlichten Erlösindex für \ac{BESS} auf Plausibilität geprüft.
+Das Engpassmanagement wird um eine Systemdienstleistung ergänzt, deren Gegenstand nicht die Leistungsanpassung selbst ist, sondern die Bereitschaft dazu im Fehlerfall.
+Die Bemessung des finanziellen Ausgleichs aus dem Redispatch ist auf diese Bereitschaft nicht anwendbar, weil sie an die durchgeführte Anpassung anknüpft, wie in Abschnitt~\ref{sec:interim_conclusion} dargestellt.
+Die Vergütung der Bereitschaft ist deshalb neu zu untersuchen, und dafür eignet sich ein kurativer Marktmechanismus, weil sich der Preis der Reservierung gegen die Erlöse der übrigen Vermarktung messen lässt.
+In diesem Kapitel werden die Anforderungen an einen solchen Mechanismus abgeleitet, die kurative Reservierung als Produkt entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell aus der Sicht des Anlagenbetreibers bestimmt.
 Zum Abschluss wird der ungebundene Erlös des Modells gegen einen veröffentlichten Erlösindex für \ac{BESS} auf Plausibilität geprüft.
 
 % AUSFORMULIERT am 08.09.2026, satzweise nach CLAUDE.md Abschnitt 3.2. Sechs
@@ -349,7 +355,10 @@ Zum Abschluss wird der ungebundene Erlös des Modells gegen einen veröffentlich
 % Befunde K07 bis K09. Ueberleitungssatz ohne Konkurrenzaussage, Stilregel 10.
 % Alte Fassung, nicht wieder aufnehmen:
 %Dieser Abschnitt stellt die Anforderungen zusammen und entwickelt aus ihnen mit der kurativen Reservierung ein Produkt, das das Engpassmanagement um eine Komponente erweitert, die nicht mit dem präventiven Redispatch um dieselbe Leistung konkurriert.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026, 3.1 bekommt die Einleitung, 3.1.1 besteht nur aus den Anforderungen. Alte Fassung:
+%Aus den Befunden des Kapitels~\ref{ch:state_of_the_art} folgen Anforderungen, aus denen die kurative Reservierung als Produkt entwickelt wird.
 Aus den Befunden des Kapitels~\ref{ch:state_of_the_art} folgen Anforderungen, aus denen die kurative Reservierung als Produkt entwickelt wird.
+Der folgende Katalog überführt die Befunde in Bedingungen, die sich an einem Mechanismus prüfen lassen, und gilt für die Umsetzung einer kurativen Systemführung, deren Vorhaltung marktlich beschafft wird.
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026. Der Unterabschnitt steht jetzt vor
@@ -610,8 +619,8 @@ Aus den Befunden des Kapitels~\ref{ch:state_of_the_art} folgen Anforderungen, au
 % ALTE FASSUNG, nicht wieder aufnehmen:
 %   Er benennt geforderte Eigenschaften und keine Technologie, sodass er für jede Anlage gilt, die diese Eigenschaften erfüllt.
 %Sie gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung marktlich beschafft wird.
-Der Katalog überführt die Befunde des vorangehenden Kapitels in Bedingungen, die sich an einem Mechanismus prüfen lassen.
-Die Anforderungen gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung marktlich beschafft wird.
+% VERSCHOBEN am 16.09.2026 in die Einleitung von 3.1, Kommentar des Verfassers vom 16.09.2026, 3.1 bekommt die Einleitung, 3.1.1 besteht nur aus den Anforderungen: Der Katalog überführt die Befunde des vorangehenden Kapitels in Bedingungen, die sich an einem Mechanismus prüfen lassen.
+% VERSCHOBEN am 16.09.2026 in die Einleitung von 3.1, Kommentar des Verfassers vom 16.09.2026, 3.1 bekommt die Einleitung, 3.1.1 besteht nur aus den Anforderungen: Die Anforderungen gelten für die Umsetzung einer kurativen Systemführung, deren Vorhaltung marktlich beschafft wird.
 
 % KATALOG NEU GEFASST am 08.09.2026, satzweise mit dem Verfasser. Aus sechs
 % Anforderungen sind acht geworden. A1 trug frueher drei Aussagen, naemlich
@@ -906,11 +915,16 @@ Die Anforderungen gelten für die Umsetzung einer kurativen Systemführung, dere
 \begin{description}
     \item[A1 -- Reaktionszeit] Die kurative Reservierung muss nach der Reaktionszeit differenziert sein, weil das betroffene Betriebsmittel die Reaktionszeit vorgibt und der Akteur sie nicht wählen kann.
     Der \ac{ÜNB} legt die zulässige Vorauslastung vor dem Fehlerfall fest und muss die Reaktionszeit der zugesagten Maßnahme dafür bereits kennen.
-    Hält eine Anlage die zugesagte Zeit nicht ein, entwertet das nicht allein ihr Gebot, sondern auch die Vorauslastung, die der \ac{ÜNB} im Vertrauen darauf gefahren hat.
+% DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, A1 fordert die konstante Erbringung, die Nichterfuellung gehoert zu den Poenalen. Alte Fassung:
+%    Hält eine Anlage die zugesagte Zeit nicht ein, entwertet das nicht allein ihr Gebot, sondern auch die Vorauslastung, die der \ac{ÜNB} im Vertrauen darauf gefahren hat.
+    Die zugesagte Reaktionszeit muss die Anlage deshalb bei jedem Abruf gleichbleibend erbringen, denn der \ac{ÜNB} plant die Vorauslastung im Vertrauen auf sie.
     \item[A2 -- Verbindlichkeit] Die Zusage muss binden und damit bei Nichterfüllung wirksame Sanktionen enthalten.
 % DURCHSICHT 15.09.2026, D1, Begruendung angebunden. Alte Fassung:
 %    Durch Nichterfüllung entsteht dem \ac{ÜNB} ein Schaden, der die Vergütung der Vorhaltung um ein Vielfaches übersteigen kann.
-    Die Sanktion ist nötig, denn durch Nichterfüllung entsteht dem \ac{ÜNB} ein Schaden, der die Vergütung der Vorhaltung um ein Vielfaches übersteigen kann.
+% DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, Nichterfuellung schon bei Verspaetung, Schaeden am Betriebsmittel. Alte Fassung:
+%    Die Sanktion ist nötig, denn durch Nichterfüllung entsteht dem \ac{ÜNB} ein Schaden, der die Vergütung der Vorhaltung um ein Vielfaches übersteigen kann.
+    Die Sanktion ist nötig, denn eine Nichterfüllung liegt bereits bei einer verspäteten Leistungsänderung vor.
+    Aus einer verspäteten Leistungsänderung können Schäden am Betriebsmittel entstehen, die die Vergütung der Vorhaltung um ein Vielfaches übersteigen.
     Die Sanktion darf deshalb nicht auf die entgangene Vergütung beschränkt bleiben.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Ellipse aufgeloest.
 %    Eine Bemessung nach dem Grad der Abweichung scheidet aus, denn eine Leistungsänderung nach dem Ende des Überlastintervalls hat keinen verminderten Wert, sondern keinen.
@@ -927,25 +941,47 @@ Die Anforderungen gelten für die Umsetzung einer kurativen Systemführung, dere
 % DURCHSICHT 15.09.2026, D1, Begruendung angebunden. Alte Fassung:
 %    Die Bindung schränkt den Betrieb über ihre gesamte Dauer ein und nicht allein im Fehlerfall, und die Kosten fallen deshalb auch ohne Abruf an.
     Die Kosten fallen deshalb auch ohne Abruf an.
-    Gegenstand der Vergütung ist damit die reservierte Leistung und keine Energielieferung.
-    Die kurative Vorhaltung unterscheidet sich damit vom Redispatch, der stets zugleich Arbeit auslöst.
-    \item[A5 -- Diskriminierungsfreiheit] Der kurative Marktmechanismus muss an den geforderten Eigenschaften ansetzen und nicht an der Technologie, damit der Zugang diskriminierungsfrei bleibt.
-    In der Präqualifikation heißt das, technische und physikalische Eigenschaften zu prüfen und nicht die Art der Anlage.
+% DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, A4 nicht absolut, Energielieferung kann vergütet werden, massgeblich ist die Erbringbarkeit der Leistungsaenderung je Technologie. Alte Fassung:
+%    Gegenstand der Vergütung ist damit die reservierte Leistung und keine Energielieferung.
+    Gegenstand der Vergütung ist in erster Linie die reservierte Leistung, eine im Abruf gelieferte Energie kann daneben vergütet werden.
+    Maßgeblich ist, dass die Leistungsänderung im Abruf erbracht werden kann.
+% DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, keine Technologien benennen. Alte Fassung:
+%    Die Erbringung fällt den Technologien unterschiedlich schwer: Eine Windenergieanlage an Land oder auf See kann ihre Einspeisung jederzeit absenken, soweit die Prognose trägt, während ein Speicher dafür Leistung und Ladezustand freihalten muss.
+    Die Erbringung fällt den Technologien unterschiedlich schwer, je nachdem, ob die Leistungsänderung einen bestimmten Betriebspunkt oder einen Energievorrat voraussetzt.
+% GESTRICHEN am 16.09.2026, Kommentar des Verfassers vom 16.09.2026, A4 nicht absolut, Energielieferung kann vergütet werden, massgeblich ist die Erbringbarkeit der Leistungsaenderung je Technologie:     Die kurative Vorhaltung unterscheidet sich damit vom Redispatch, der stets zugleich Arbeit auslöst.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026, A5 in Variante 3 mit rechtlicher Vorgabe voran. Alte Fassung:
+%    \item[A5 -- Diskriminierungsfreiheit] Der kurative Marktmechanismus muss an den geforderten Eigenschaften ansetzen und nicht an der Technologie, damit der Zugang diskriminierungsfrei bleibt.
+%    In der Präqualifikation heißt das, technische und physikalische Eigenschaften zu prüfen und nicht die Art der Anlage.
 % DURCHSICHT 15.09.2026, D1, Bezug zur Anforderung ausgesprochen. Alte Fassung:
 %    Je mehr Technologien die geforderten Eigenschaften erfüllen, desto eher steht an einem betroffenen Knoten ein Anbieter zur Verfügung.
-    Der offene Zugang dient zugleich der Verfügbarkeit, denn je mehr Technologien die geforderten Eigenschaften erfüllen, desto eher steht an einem betroffenen Knoten ein Anbieter zur Verfügung.
+% DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, A5 zielt auf die Annahme der guenstigsten Gebote, abhaengig von der Liquiditaet am Netzknoten. Alte Fassung:
+%    Der offene Zugang dient zugleich der Verfügbarkeit, denn je mehr Technologien die geforderten Eigenschaften erfüllen, desto eher steht an einem betroffenen Knoten ein Anbieter zur Verfügung.
+%    Der offene Zugang dient zugleich den Kosten, denn je mehr Technologien die geforderten Eigenschaften erfüllen, desto mehr Gebote stehen an einem betroffenen Knoten zur Wahl.
+%    Der \ac{ÜNB} kann dann das günstigste Angebot annehmen, das der Markt am Knoten bereitstellt, und die Liquidität am Knoten bestimmt, wie günstig es ausfällt.
+    \item[A5 -- Diskriminierungsfreiheit] Die Binnenmarktverordnung verlangt einen diskriminierungsfreien Zugang aller Technologien, wie in Abschnitt~\ref{sec:legal_framework} dargestellt, und der kurative Marktmechanismus setzt deshalb an den geforderten Eigenschaften an und nicht an der Technologie.
+    In der Präqualifikation heißt das, technische und physikalische Eigenschaften zu prüfen und nicht die Art der Anlage.
+    Der offene Zugang ist zugleich die Voraussetzung dafür, dass der \ac{ÜNB} am betroffenen Knoten unter mehreren Geboten das günstigste annehmen kann.
+    Die Liquidität am Knoten folgt aus der Zahl der zugelassenen Anbieter und begrenzt, wie günstig das Gebot ausfällt.
     \item[A6 -- Teilnahme] Der kurative Marktmechanismus muss die Teilnahme für den Betreiber lohnend ausgestalten, weil der Betreiber über sein Gebot allein entscheidet und die Maßnahme ohne Gebot nicht verfügbar ist.
     Die marktliche Beschaffung ist damit nicht allein eine Frage der Zugangsform, sondern die Bedingung dafür, dass sich eine kurative Systemführung umsetzen lässt.
 % DURCHSICHT 15.09.2026, D1, Begruendung angebunden. Alte Fassung:
 %    \item[A7 -- Verträglichkeit] Der kurative Marktmechanismus muss neben den bestehenden Verpflichtungen bestehen können.
-    \item[A7 -- Verträglichkeit] Der kurative Marktmechanismus muss neben den bestehenden Verpflichtungen bestehen können, denn die Bindung durch die Reservierung greift auf denselben Betriebszustand zu, den die Anlage für die Regelleistung und für die Vermarktung an den Spotmärkten bereithält.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026, A7 verstaendlicher: der Markt darf keinen anderen Markt obsolet machen oder ihm die Teilnehmer entziehen, ohne Nennung eines Marktes. Alte Fassung:
+%    \item[A7 -- Verträglichkeit] Der kurative Marktmechanismus muss neben den bestehenden Verpflichtungen bestehen können, denn die Bindung durch die Reservierung greift auf denselben Betriebszustand zu, den die Anlage für die Regelleistung und für die Vermarktung an den Spotmärkten bereithält.
 % DURCHSICHT 15.09.2026, D1, in A7 Satz 1 aufgegangen:     Die Bindung durch die Reservierung greift auf denselben Betriebszustand zu, den die Anlage für die Regelleistung und für die Vermarktung an den Spotmärkten bereithält.
-    Die kurative Zusage und die Vermarktung an den übrigen Märkten dürfen sich nicht gegenseitig ausschließen, und die Verfügbarkeit der Anlage für den Redispatch muss erhalten bleiben.
+%    Die kurative Zusage und die Vermarktung an den übrigen Märkten dürfen sich nicht gegenseitig ausschließen, und die Verfügbarkeit der Anlage für den Redispatch muss erhalten bleiben.
+    \item[A7 -- Verträglichkeit] Der kurative Marktmechanismus muss neben den bestehenden Märkten bestehen können, ohne einen von ihnen zu verdrängen.
+    Die kurative Reservierung greift auf dieselbe Leistung und denselben Ladezustand zu, die eine Anlage auch für die Regelleistung und für die Spotmärkte einsetzt.
+    Ein kurativer Markt, der diese Ressourcen dauerhaft bindet oder höher vergütet als ein bestehender Markt mit gleichem Produktschnitt, zöge dessen Anbieter ab und ließe eine Systemdienstleistung ohne Teilnehmer zurück.
+    Die Teilnahme ist deshalb so auszugestalten, dass die Anlage für die übrigen Märkte und für den Redispatch verfügbar bleibt.
 % DURCHSICHT 15.09.2026, D1, These und Erlaeuterung verbunden. Alte Fassung:
 %    \item[A8 -- Umsetzbarkeit] Der kurative Marktmechanismus muss in bestehende Betriebsprozesse integrierbar sein.
-    \item[A8 -- Umsetzbarkeit] Der kurative Marktmechanismus muss in bestehende Betriebsprozesse integrierbar sein, nämlich in die Beschaffung, den Abruf und den Nachweis, die der \ac{ÜNB} für das Engpassmanagement bereits führt.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026, A8 ohne Nachweis (kommt erst im Produkt), Gebote zu einem kurativen Massnahmenset, F9 damit erledigt. Alte Fassung:
+%    \item[A8 -- Umsetzbarkeit] Der kurative Marktmechanismus muss in bestehende Betriebsprozesse integrierbar sein, nämlich in die Beschaffung, den Abruf und den Nachweis, die der \ac{ÜNB} für das Engpassmanagement bereits führt.
 % DURCHSICHT 15.09.2026, D1, in A8 Satz 1 aufgegangen:     Die Beschaffung, der Abruf und der Nachweis müssen sich in die Prozesse einfügen, die der \ac{ÜNB} für das Engpassmanagement bereits führt.
-    Gegenstand der Beschaffung ist nicht das einzelne Gebot, sondern ein Verbund von Geboten, der den Engpass entlastet und bilanziell ausgeglichen ist.
+%    Gegenstand der Beschaffung ist nicht das einzelne Gebot, sondern ein Verbund von Geboten, der den Engpass entlastet und bilanziell ausgeglichen ist.
+    \item[A8 -- Umsetzbarkeit] Der kurative Marktmechanismus muss in die Betriebsprozesse integrierbar sein, die der \ac{ÜNB} für das Engpassmanagement bereits führt, nämlich in die Betriebsplanung, die Scharfschaltung und den Abruf.
+    Die bezuschlagten Gebote müssen sich dafür zu einem kurativen Maßnahmenset zusammenfassen lassen, das der \ac{ÜNB} wie eine eigene kurative Maßnahme einplant und scharfschaltet.
 \end{description}
 % GESTRICHEN am 06.09.2026, Befund S7. Hier stand der Satz, diese
 % Zusammenhaenge wuerden in Kapitel 5 aufgegriffen. Das ist ein
@@ -1537,7 +1573,9 @@ Wer die kürzeste Klasse erfüllt, erfüllt damit auch die längeren, sodass ein
 Die Klassen ersparen dem \ac{ÜNB} die Rechnung mit der Reaktionszeit jeder einzelnen Anlage, und drei Stufen halten den Zugang zugleich für viele Technologien offen.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Zeitscheibe bei der ersten Verwendung erklaert.
 %Die Bindungsdauer ist der Zeitraum, über den die Zusage nach dem Zuschlag gilt, und beträgt eine Stunde je Zeitscheibe.
-Die Bindungsdauer ist der Zeitraum, über den die Zusage nach dem Zuschlag gilt, und beträgt eine Zeitscheibe, also eine Stunde des Liefertages.
+% DURCHSICHT 15.09.2026, F20, Definition der Bindungsdauer steht seit 16.09.2026 in 2.1.2. Alte Fassung:
+%Die Bindungsdauer ist der Zeitraum, über den die Zusage nach dem Zuschlag gilt, und beträgt eine Zeitscheibe, also eine Stunde des Liefertages.
+Die Bindungsdauer beträgt eine Zeitscheibe, also eine Stunde des Liefertages.
 % SATZ VERSCHOBEN am 14.09.2026, Fassung A, entschieden vom Verfasser. Er stand
 % hier bei der Bindungsdauer und handelt von der Erfuellung, nicht von der
 % Dauer. Er steht jetzt im Poenalenblock dieses Unterabschnitts.

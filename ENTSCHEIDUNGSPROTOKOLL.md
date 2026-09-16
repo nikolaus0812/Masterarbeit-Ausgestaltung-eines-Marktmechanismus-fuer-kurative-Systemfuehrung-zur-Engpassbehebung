@@ -6885,6 +6885,53 @@ dort ist nichts nachzuziehen. Die Anhangbuchstaben haben sich durch den
 neuen Anhang B verschoben, CLAUDE.md Abschnitt 1 nennt noch die alte
 Zaehlung.
 
+### 16.09.2026, chapter_3.tex, Kommentardurchgang des Verfassers, Kapiteleinleitung und 3.1
+
+**Vorgehen.** Der Verfasser liest Kapitel 3 und gibt seine Kommentare im
+Chat. Claude arbeitet sie sofort ein, Wortlaut des Verfassers unveraendert,
+inhaltliche Hinweise nach den Stilregeln formuliert und zum Lesen ausgegeben.
+Kommentare haben Vorrang vor der Durchsicht vom 15.09.2026.
+
+**Kapiteleinleitung.** Neu in fuenf Saetzen: Ergaenzung des Engpassmanagements
+um eine Systemdienstleistung, deren Gegenstand die Bereitschaft zur
+Leistungsanpassung ist (nicht Bereitschaft zum Eingriff), Bemessung aus dem
+Redispatch nicht anwendbar mit Verweis auf 2.4, Marktmechanismus als Weg der
+Untersuchung, Inhalt des Kapitels, Validierung. Gestrichen: der Satz zur
+kurativen Systemfuehrung als nachgelagerte Handlungsmoeglichkeit und der Satz
+zu BESS an vielen Netzknoten, weil eine Einzelanlage modelliert wird.
+
+**3.1 und 3.1.1.** 3.1 traegt die Einleitung (zwei Saetze), 3.1.1 besteht
+nur aus A1 bis A8. F1 damit erledigt.
+
+**Anforderungskatalog.** A1: der Satz zur Nichteinhaltung ist ersetzt durch
+die Forderung, die Reaktionszeit bei jedem Abruf gleichbleibend zu erbringen,
+Nichterfuellung gehoert zur Poenale. A2: Nichterfuellung liegt bereits bei
+verspaeteter Leistungsaenderung vor, daraus koennen Schaeden am
+Betriebsmittel entstehen. A4: Energielieferung kann daneben verguetet werden,
+massgeblich ist die Erbringbarkeit der Leistungsaenderung, die den
+Technologien unterschiedlich schwer faellt, je nachdem, ob sie einen
+Betriebspunkt oder einen Energievorrat voraussetzt, ohne Nennung von
+Technologien; Satz zum Redispatch gestrichen. A5: Variante 3 von drei
+vorgelegten, rechtliche Vorgabe der Binnenmarktverordnung voran, offener
+Zugang als Voraussetzung fuer das guenstigste Gebot, Liquiditaet am Knoten.
+A7: der Markt darf keinen bestehenden Markt verdraengen oder ihm die
+Teilnehmer entziehen, der Markt mit gleichem Produktschnitt bleibt
+ungenannt. A8: ohne Nachweis, weil er erst im Produkt eingefuehrt wird,
+Gebote zu einem kurativen Massnahmenset, F9 damit erledigt. A3 und A6
+unveraendert.
+
+**Begriffe nach InnoSys.** Auf Frage des Verfassers ist der Abschlussbericht
+InnoSys 2030 geprueft: Aktivierung ist dort gleich Scharfschaltung (S. 51),
+Ausloesung das Signal nach der Fehleridentifikation, Abruf nicht definiert,
+aber als Anforderung der bereitgestellten Flexibilitaet verwendet (S. 139,
+164). Ein Begriffsabsatz mit Einplanung, Scharfschaltung, Ausloesung, Abruf,
+Umsetzung, Reaktionszeit und Bindungsdauer steht seit heute in 2.1.2, die
+Begriffstabelle in CLAUDE.md ist nachgezogen, die Definition der
+Bindungsdauer in 3.1.2 auf die Zeitscheibe gekuerzt (F20).
+
+**Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler, Kapitel 3 ab
+Seite 31, Literaturverzeichnis ab Seite 48.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
