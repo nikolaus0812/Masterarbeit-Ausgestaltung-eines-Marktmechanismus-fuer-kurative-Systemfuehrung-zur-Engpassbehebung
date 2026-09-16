@@ -4800,6 +4800,18 @@ Die obere Grenze prüft die Bisektion nie erneut, sodass sie bei einem Preis end
 %Eine Bisektion je Stunde gegen den Vektor führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 Eine Bisektion je Stunde bei festen Preisen der übrigen Stunden führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 
+% ABBILDUNG VERSCHOBEN am 16.09.2026 auf Vorgabe des Verfassers, vor den Absatz, der sie nennt, damit sie auf Seite 43 steht.
+\begin{figure}[tbp]
+    \centering
+% DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
+%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
+%    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
+    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
+    \label{fig:reservierungspreis_ablauf}
+\end{figure}
+
 % NEU GEFASST am 16.09.2026, Kommentar des Verfassers: drei Saetze zu einem. Alte Fassung:
 %Das Verfahren löst das Problem in zwei Iterationen, die Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
 %Die erste Iteration ist die beschriebene Bisektion und liefert je Stunde und Richtung den unter einheitlichem Preis gefundenen Wert als Startvektor.
@@ -4819,17 +4831,6 @@ Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung ble
 Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt.
 Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, und die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung.
 Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
-
-\begin{figure}[tbp]
-    \centering
-% DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
-%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
-%    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
-    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
-    \label{fig:reservierungspreis_ablauf}
-\end{figure}
 
 % ABBILDUNG ENTFALLEN am 12.09.2026 nach der Anweisung des Verfassers. Beide
 % Iterationen stehen jetzt in fig:reservierungspreis_ablauf oben in diesem
