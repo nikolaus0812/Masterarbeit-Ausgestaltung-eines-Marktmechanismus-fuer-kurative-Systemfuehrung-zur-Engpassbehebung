@@ -53,6 +53,11 @@
 
 % Defining figures and tables as floats
 \usepackage{float}
+% Gleitparameter, 16.09.2026: Abbildungen bis 85 Prozent der Seite teilen sich die Seite mit Text, statt eine eigene Gleitseite zu belegen.
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.9}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.85}
 
 % Including special characters
 \usepackage[utf8]{inputenc}
