@@ -7092,6 +7092,53 @@ stehen; Abbildungen 3.2 und 3.3 in Textbreite.
 **Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler, Kapitel 3 ab
 Seite 31, Literaturverzeichnis ab Seite 48.
 
+### 16.09.2026, chapter_3.tex, Abschnitt 3.3 neu gegliedert
+
+**Vorgabe des Verfassers.** Zwei Pruefungen, naemlich die Erloeshoehe gegen
+den Index und die Funktionsweise an einem Tag mit festem Reservierungspreis.
+Einleitungsabsatz fuer 3.3, 3.3.1 allein die Battery Charts mit Methodik und
+Zahlen, 3.3.2 der Vergleich der Erloeshoehe (bisher 3.3.2 Unterschiede in
+Vorausschau und Marktumfang, Marke sec:validation_differences bleibt), 3.3.3
+neu die Validierung der Funktionsweise.
+
+**Recherche zur Methodik der Battery Charts.** Das GitLab-Repository
+battery_revenue_index ist fuer den Abruf gesperrt (Anubis). Ausgewertet ist
+die Dokumentationsseite des Battery Revenue Index (Eintrag isea_methodik_2026,
+Seiten methodology/cross_market, single_markets/fcr, afrr, wholesale und
+code/markets/idc, abgerufen am 16.09.2026). Belegt sind dort: Bezugsanlage
+1 MW / 1 MWh; Cross-Market bedient die Maerkte nacheinander, Schritt 1
+Vergleich FCR gegen aFRR-Leistung je Vierstundenblock mit Wahl des hoeheren
+Erloeses (FCR mit 50 Prozent der Leistung und Viertelstunde Energievorhalt,
+aFRR-Leistung mit 25 Prozent der Leistung und einer Stunde je Richtung),
+Schritt 2 aFRR-Arbeit mit der Haelfte der verbleibenden Leistung und des
+Speicherinhalts, Gebote zum IDA1-Preis plus/minus 50 Prozent Marge, Ausgleich
+zum ID1, Schritt 3 IDC mit dem Rest und der Haelfte der Zyklen, rollierende
+MILP-Optimierung alle 15 Minuten gegen den volumengewichteten Preis der bis
+dahin ausgefuehrten Geschaefte; je Markt eine Capture Rate, deren Wert nicht
+genannt wird; FCR mit GERMANY_SETTLEMENTCAPACITY_PRICE und vermarktbarer
+Leistung 0,8 P nach Praequalifikation, aFRR mit GERMANY_AVERAGE_CAPACITY_PRICE.
+Der gleitende 365-Tage-Mittelwert ist nicht dokumentiert, sondern aus den
+Daten bestimmt (README data/Erloesindex_batterycharts.de im Modellrepository,
+08.09.2026). Die Einzelmarktwerte 2025 stammen aus dem Validierungsmodul des
+Modellrepositorys (README 15_validierung): FCR 107,4, aFRR 221,3, DA 89,2,
+IDC 134,1 Tausend Euro je Megawatt und Jahr.
+
+**3.3.3 Validierung der Funktionsweise.** Neue Abbildung
+dispatch_festpreis_2025-02-11_p5.pdf, erzeugt mit dem neuen Skript
+analysen/code/schrift/16_dispatch_festpreis/dispatch_festpreis.py im
+Modellrepository aus der Zeitreihe des Basislaufs (sensi0_basis, pres5), in
+Textbreite mit beschrifteten Achsen. Der 11.02.2025 ist nach dem Vermerk in
+erloesaufteilung.py der Tag mit dem hoechsten Redispatch 2025 (466 GWh),
+Beleg netztransparenz_regelenergie_2026. Der Text beschreibt qualitativ, dass
+die Reservierung die Stunden mit geringem Angebot der uebrigen Maerkte
+belegt, die Baender einhaelt und Anfang und Ende bei 125 MWh liegen.
+
+**Akronym ISEA** in abbreviations.tex aufgenommen. Abbildungen 3.4 und 3.6
+mit Platzierung H, damit keine Seite allein einer Abbildung gehoert.
+Kapitel 3 endet auf Seite 48, Literaturverzeichnis ab Seite 49.
+
+**Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

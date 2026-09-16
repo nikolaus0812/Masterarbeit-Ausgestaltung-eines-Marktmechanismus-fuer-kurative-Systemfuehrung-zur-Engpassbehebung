@@ -4970,7 +4970,9 @@ Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Pr
 % pdfTeX dieselbe Breite gesetzt, siehe main.log.
 % BILDUNTERSCHRIFT nach Vorschlag des Verfassers, allein kurativer
 % Reservierungspreis statt Reservierungspreis.
-\begin{figure}[htbp]
+% DURCHSICHT 16.09.2026, Platzierung H, damit die Abbildung oben auf der Folgeseite steht und der Text darunter weiterlaeuft. Alte Fassung:
+%\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/schleifenebenen.pdf}
 % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
@@ -5208,8 +5210,9 @@ Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Pr
 % entschieden vom Verfasser. Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Systemgrenzen und Abgrenzungen}
 
-\section{Validierung des Modells}
-\label{sec:model_verification}
+% NEU GEGLIEDERT am 16.09.2026 auf Vorgabe des Verfassers: Einleitung zu 3.3, 3.3.1 allein die Battery Charts mit Methodik und Zahlen, 3.3.2 Vergleich der Erloeshoehe, 3.3.3 Validierung der Funktionsweise an einem Tag mit festem Preis. Methodik nach der Dokumentation des Battery Revenue Index (Seiten methodology/cross_market, single_markets/fcr, afrr, wholesale, code/markets/idc, abgerufen am 16.09.2026). Alte Fassung vollstaendig als Kommentar:
+%\section{Validierung des Modells}
+%\label{sec:model_verification}
 % [Ziel: 2 Seiten]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 %   frueheres Seitenziel: [Ziel: 1 Seite]
@@ -5263,24 +5266,24 @@ Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Pr
 % Modell aufgenommen werden, also Wirkungsgrad eins, Vorhalteleistung null
 % und konstanter Preis, deren Ergebnis sich analytisch vorhersagen laesst.
 % Dafuer spricht, dass erst sie eine Verifikation im engeren Sinn sind.
-
+%
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
 % Aus 3.7.1 wird 3.3.1.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Vergleichsmaßstab}
-\subsection{Vergleichsmaßstab}
-\label{sec:validation_benchmark}
+%\subsection{Vergleichsmaßstab}
+%\label{sec:validation_benchmark}
 % [Ziel: 1 Seite]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1 Seite]
 %
 % ZWEI UNTERABSCHNITTE ANGELEGT am 08.09.2026, entschieden vom Verfasser.
-
+%
 % NEU GEORDNET am 11.09.2026 nach MODELL.md und dem Befund zum Erloesindex
 % vom 08.09.2026 aus dem Modellrepository. Keine Zahl aus dem Abgleich, sie
 % gehoert nach Abschnitt 4.1.
-
+%
 % AUSFORMULIERT am 14.09.2026, Auftrag des Verfassers, am Stueck und zur
 % Durchsicht.
 % GRUNDLAGE. Die Methodik des Index ist am 14.09.2026 an seiner Dokumentation
@@ -5324,52 +5327,52 @@ Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Pr
 %Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Herausgeber benannt.
 %Als Vergleichsmaßstab dient der Erlösindex der Battery Charts, der für ein \ac{BESS} am deutschen Markt einen marktübergreifenden Erlös ausweist \cite{isea_batterycharts_2026}.
-Als Vergleichsmaßstab dient der Erlösindex der Battery Charts der RWTH Aachen, der für ein \ac{BESS} am deutschen Markt einen marktübergreifenden Erlös ausweist \cite{isea_batterycharts_2026}.
+%Als Vergleichsmaßstab dient der Erlösindex der Battery Charts der RWTH Aachen, der für ein \ac{BESS} am deutschen Markt einen marktübergreifenden Erlös ausweist \cite{isea_batterycharts_2026}.
 % DURCHSICHT 15.09.2026, D1. Alte Fassung:
 %Alle übrigen Prüfungen vergleichen das Modell mit sich selbst, diese eine vergleicht es mit einer Referenz von außen.
-Anders als die Prüfungen der Umsetzung, die das Modell mit sich selbst vergleichen, misst die Validierung an einer Referenz von außen.
+%Anders als die Prüfungen der Umsetzung, die das Modell mit sich selbst vergleichen, misst die Validierung an einer Referenz von außen.
 % BEGRIFF am 16.09.2026, Kommentar des Verfassers: ungebundener Fahrplan missverstaendlich, jetzt Referenzfahrplan und Referenzerloes. Alte Fassung:
 %Geprüft wird die Plausibilität des Erlösniveaus des ungebundenen Fahrplans, also einer Zwischengröße des Modells.
-Geprüft wird die Plausibilität des Erlösniveaus des Referenzfahrplans, also einer Zwischengröße des Modells.
-Nicht geprüft werden der kurative Reservierungspreis und die Frage, ob die Implementierung das formulierte Problem korrekt löst.
+%Geprüft wird die Plausibilität des Erlösniveaus des Referenzfahrplans, also einer Zwischengröße des Modells.
+%Nicht geprüft werden der kurative Reservierungspreis und die Frage, ob die Implementierung das formulierte Problem korrekt löst.
 % BEGRIFF am 16.09.2026, Kommentar des Verfassers: ungebundener Fahrplan missverstaendlich, jetzt Referenzfahrplan und Referenzerloes. Alte Fassung:
 %Der ungebundene Erlös ist eine Zwischengröße und kein Ergebnis der Arbeit.
-Der Referenzerlös ist eine Zwischengröße und kein Ergebnis der Arbeit.
+%Der Referenzerlös ist eine Zwischengröße und kein Ergebnis der Arbeit.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 10.
 %Dieser Abschnitt darf deshalb Zahlen tragen, obwohl er vor den Ergebnissen steht.
-Die Validierung nennt ihre Zahlen deshalb schon hier und nimmt kein Ergebnis vorweg.
-
-Der Index führt \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, kennt jedoch keinen \ac{DA}.
-Dem Index steht deshalb der Erlös des Modells aus beiden Energiemärkten zusammen gegenüber.
-Der Index bedient die Märkte nacheinander und teilt Leistung, Speicherinhalt und Zyklen nach fest gesetzten Anteilen zu, während das Modell alle Märkte eines Liefertages gemeinsam entscheidet \cite{isea_methodik_2026}.
-Die Bezugsanlage des Index hält eine Megawattstunde je Megawatt, also einen Energieinhalt je Leistung von einer Stunde, die Modellanlage 2,5 Stunden.
-Der Index wird als gleitender Mittelwert über 365 Tage veröffentlicht und ist deshalb nur am Jahresende mit einem Kalenderjahr vergleichbar.
-Die Validierung umfasst darum das Jahr 2025.
-Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind.
-
+%Die Validierung nennt ihre Zahlen deshalb schon hier und nimmt kein Ergebnis vorweg.
+%
+%Der Index führt \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, kennt jedoch keinen \ac{DA}.
+%Dem Index steht deshalb der Erlös des Modells aus beiden Energiemärkten zusammen gegenüber.
+%Der Index bedient die Märkte nacheinander und teilt Leistung, Speicherinhalt und Zyklen nach fest gesetzten Anteilen zu, während das Modell alle Märkte eines Liefertages gemeinsam entscheidet \cite{isea_methodik_2026}.
+%Die Bezugsanlage des Index hält eine Megawattstunde je Megawatt, also einen Energieinhalt je Leistung von einer Stunde, die Modellanlage 2,5 Stunden.
+%Der Index wird als gleitender Mittelwert über 365 Tage veröffentlicht und ist deshalb nur am Jahresende mit einem Kalenderjahr vergleichbar.
+%Die Validierung umfasst darum das Jahr 2025.
+%Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, wobei im zweiten Fall alle übrigen Märkte im Modell abgeschaltet sind.
+%
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten:
 %   \begin{itemize}
 %       \item Gegenstand und Aufbau des Vergleichsmaßstabs, nämlich ein je Tag ausgewiesener annualisierter Erlös in Tausend Euro je Megawatt und Jahr aus einem marktübergreifenden Modell über \ac{FCR}, \ac{aFRR}-Leistung, \ac{aFRR}-Arbeit und kontinuierlichen Intraday-Handel
 %       \item Abzugleichende Anlagenparameter des Index, insbesondere das Verhältnis von Energie zu Leistung und der unterstellte Wirkungsgrad
 %   \end{itemize}
-
+%
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
 % Aus 3.7.2 wird 3.3.2.
 % Alte Fassung, nicht wieder aufnehmen:
 %   \subsection{Unterschiede in Vorausschau und Marktumfang}
-\subsection{Unterschiede in Vorausschau und Marktumfang}
-\label{sec:validation_differences}
+%\subsection{Unterschiede in Vorausschau und Marktumfang}
+%\label{sec:validation_differences}
 % [Ziel: 1 Seite]
 % SEITENZIEL NEU GESETZT am 08.09.2026, der Block trug keines.
 % [Ziel: 1,5 Seiten]
-
+%
 % NEU GEORDNET am 11.09.2026. Der Stichpunkt zum Marktumfang ist
 % berichtigt. Er ging davon aus, dass das Modell allein die Spotvermarktung
 % fuehrt. Nach MODELL.md fuehrt es alle Maerkte des Index und zusaetzlich den
 % Day-Ahead.
-
+%
 % AUSFORMULIERT am 14.09.2026, Auftrag des Verfassers.
 % PRUEFKRITERIUM NEU GEFASST. Der Abschnittskommentar oben verlangte, ein Wert
 % unter dem Index zeige einen Fehler der Umsetzung. Das gilt nach den
@@ -5413,23 +5416,89 @@ Verglichen wird in zwei Stufen, marktübergreifend und für jeden Markt allein, 
 %Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
 %Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
 % ERGAENZT am 15.09.2026 nach Fremdleser-Pruefung, Ueberleitung, Stilregel 3.
-Vor dem Vergleich der Zahlen ist zu klären, welche Abweichung zwischen Index und Modell zu erwarten ist, denn beide rechnen nach verschiedenen Regeln.
-Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
-Der Intraday-Handel des Index folgt einem rollierenden Verfahren, das in jedem Schritt gegen die bis dahin bekannten Preise optimiert und über künftige Preise nichts voraussetzt \cite{semmelmann_algorithm_2024}.
+%Vor dem Vergleich der Zahlen ist zu klären, welche Abweichung zwischen Index und Modell zu erwarten ist, denn beide rechnen nach verschiedenen Regeln.
+%Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
+%Der Intraday-Handel des Index folgt einem rollierenden Verfahren, das in jedem Schritt gegen die bis dahin bekannten Preise optimiert und über künftige Preise nichts voraussetzt \cite{semmelmann_algorithm_2024}.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Formulierung.
 %Das Modell kennt dagegen alle Preise des Liefertages, und dieser Unterschied allein trägt eine Größenordnung von rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel \cite{hornek_value_2025}.
-Das Modell kennt dagegen alle Preise des Liefertages, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus \cite{hornek_value_2025}.
+%Das Modell kennt dagegen alle Preise des Liefertages, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus \cite{hornek_value_2025}.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Begruendung, Stilregel 2.
 %Hinzu kommen der größere Energieinhalt je Leistung der Modellanlage und der sichere Zuschlag, die den Erlös in den Leistungsmärkten erhöhen.
-Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
-Auch der sichere Zuschlag erhöht den Erlös dort, denn das Modell übernimmt die veröffentlichten Preise und setzt jede angebotene Leistung als bezuschlagt.
+%Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
+%Auch der sichere Zuschlag erhöht den Erlös dort, denn das Modell übernimmt die veröffentlichten Preise und setzt jede angebotene Leistung als bezuschlagt.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Begruendung, Stilregel 2.
 %Die Degradationskosten senken den Erlös dagegen in den Energiemärkten.
-Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
+%Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
 % DURCHSICHT 15.09.2026, D1. Alte Fassung:
 %Das Modell soll den Index deshalb nicht treffen, denn es ist als Obergrenze gebaut.
+%Das Modell soll den Index nicht treffen, denn es ist als Obergrenze gebaut.
+%Erwartet wird eine Abweichung, deren Richtung je Markt aus den genannten Unterschieden folgt.
+%Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
+%Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
+%Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 gegenüber.
+%
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=\textwidth]{figures/chapter_3/validierung_cross.pdf}
+% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
+%    \caption{Marktübergreifender Vergleich für das Jahr 2025. Links der Erlös je Monat, annualisiert in Tausend Euro je Megawatt und Jahr, rechts der Abstand zwischen Modell und Index.}
+%    \caption{Erlös je Monat 2025 nach Modell und Index in Tausend Euro je Megawatt und Jahr, rechts der Abstand beider Reihen.}
+%    \label{fig:validierung_cross}
+%\end{figure}
+%
+% ERGEBNISABSATZ angelegt am 15.09.2026, W5. Zahlen aus analysen/02_validierung/validierung_cross.csv und validierung_einzelmarkt.csv des Modellrepositorys, Lauf vom 12. und 13.09.2026, eigene Auswertung.
+%Über das Jahr 2025 liegt der Index im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Modell bei 348,3 Tausend Euro je Megawatt und Jahr.
+%Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Modell liegt in allen zwölf Monaten über dem Index.
+%Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Modell den Jahresgang des Index abbildet und gleichmäßig darüber liegt.
+% FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 17, Zuordnung der Zahlen.
+%Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung} zeigt: In der \ac{FCR} liegt das Modell um den Faktor 1,24 und in der \ac{aFRR} um den Faktor 1,52 über dem Index, am \ac{DA} um den Faktor 0,86 und im \ac{IDC} um den Faktor 0,89 darunter.
+%Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung} zeigt.
+%In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index und in der \ac{aFRR} das 1,52-Fache.
+%Am \ac{DA} erreicht das Modell das 0,86-Fache des Index und im \ac{IDC} das 0,89-Fache.
+%Das Modell ist damit nicht durchgängig überhöht, denn wo es Degradationskosten verrechnet, bleibt es hinter der Referenz zurück.
+%Der Aufschlag entsteht in den Leistungsmärkten, wo der größere Energieinhalt je Leistung und der sichere Zuschlag wirken.
+% FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Bezug, Stilregel 5.
+%Den größten Teil des Faktors bei der \ac{aFRR} erklärt die Menge, denn der Index reserviert nach seiner Methodik nur ein Viertel der Leistung für \ac{aFRR}-Leistung.
+%Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur ein Viertel der Anschlussleistung für die \ac{aFRR}-Leistung.
+%Das Modell hält dagegen im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
+%Alle drei Teile des Prüfkriteriums sind damit erfüllt.
+\section{Validierung des Modells}
+\label{sec:model_verification}
+
+Die Validierung prüft das Modell in zwei Hinsichten, nämlich die Höhe der Erlöse, die es für ein \ac{BESS} am deutschen Markt ausweist, und seine Funktionsweise, also ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
+Für die Erlöshöhe dient der Erlösindex der Battery Charts als Referenz von außen, für die Funktionsweise ein Liefertag bei einem festen Reservierungspreis.
+Geprüft wird die Plausibilität des Referenzerlöses, also einer Zwischengröße des Modells, und nicht der kurative Reservierungspreis, sodass die Validierung ihre Zahlen schon hier nennt und kein Ergebnis vorwegnimmt.
+
+\subsection{Vergleichsmaßstab}
+\label{sec:validation_benchmark}
+
+Der Erlösindex der Battery Charts wird vom \ac{ISEA} der RWTH Aachen gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
+Bezugsanlage ist ein Speicher mit einer Megawattstunde je Megawatt, also einem Energieinhalt je Leistung von einer Stunde.
+Marktübergreifend führt der Index die \ac{FCR}, die \ac{aFRR}-Leistung, die \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, je Markt allein daneben auch den \ac{DA} und die Intraday-Auktion \cite{isea_methodik_2026}.
+Veröffentlicht wird ein gleitender Mittelwert der Tageserlöse über 365 Tage, sodass der Wert am Jahresende genau das Kalenderjahr abbildet und die Validierung darum das Jahr 2025 umfasst.
+
+Marktübergreifend bedient der Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
+Zuerst vergleicht er je Vier-Stunden-Block den Erlös der \ac{FCR} mit dem der \ac{aFRR}-Leistung und wählt den höheren, wobei die \ac{FCR} die Hälfte der Leistung mit einem Energievorhalt von einer Viertelstunde und die \ac{aFRR}-Leistung ein Viertel der Leistung mit einem Energievorhalt von einer Stunde je Richtung belegt.
+Danach liefert die \ac{aFRR}-Arbeit mit der Hälfte der verbleibenden Leistung und des verbleibenden Speicherinhalts, bewertet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent, und gleicht den Ladezustand zum \ac{ID1} aus.
+Zuletzt handelt der Intraday-Handel mit dem Rest der Leistung und der Hälfte der zulässigen Zyklen rollierend: Alle 15 Minuten optimiert er neu gegen den volumengewichteten Preis der bis dahin ausgeführten Geschäfte, ohne künftige Preise vorauszusetzen \cite{semmelmann_algorithm_2024}.
+Die \ac{FCR} geht mit dem Einheitspreis des Zuschlags ein, die \ac{aFRR}-Leistung mit dem mengengewichteten Durchschnittspreis, beide aus den Ausschreibungsergebnissen auf regelleistung.net.
+Jeden Erlös mindert der Index mit einer Erfassungsrate, die den Abstand zum idealen Handel abbilden soll und deren Höhe die Dokumentation nicht nennt.
+
+Für das Jahr 2025 weist der Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
+Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
+Dem marktübergreifenden Wert steht im Modell der Referenzerlös aus allen Märkten gegenüber, den Werten je Markt je ein Jahreslauf, in dem die übrigen Märkte abgeschaltet sind.
+Weil der Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dort der Erlös des Modells aus beiden Energiemärkten zusammen gegenüber.
+
+\subsection{Vergleich der Erlöshöhe}
+\label{sec:validation_differences}
+
+Index und Modell rechnen nach verschiedenen Regeln, sodass vor dem Vergleich zu klären ist, welche Abweichung zu erwarten ist.
+Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
+Sein Intraday-Handel kennt nur die bis dahin bekannten Preise, während das Modell alle Preise des Liefertages kennt, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus, wie in Abschnitt~\ref{sec:model_assumptions} dargestellt.
+Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
+Auch der sichere Zuschlag erhöht den Erlös dort, denn das Modell übernimmt die veröffentlichten Preise und setzt jede angebotene Leistung als bezuschlagt.
+Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
 Das Modell soll den Index nicht treffen, denn es ist als Obergrenze gebaut.
-Erwartet wird eine Abweichung, deren Richtung je Markt aus den genannten Unterschieden folgt.
 Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
 Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
 Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 gegenüber.
@@ -5437,28 +5506,40 @@ Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 ge
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/validierung_cross.pdf}
-% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
-%    \caption{Marktübergreifender Vergleich für das Jahr 2025. Links der Erlös je Monat, annualisiert in Tausend Euro je Megawatt und Jahr, rechts der Abstand zwischen Modell und Index.}
     \caption{Erlös je Monat 2025 nach Modell und Index in Tausend Euro je Megawatt und Jahr, rechts der Abstand beider Reihen.}
     \label{fig:validierung_cross}
 \end{figure}
 
-% ERGEBNISABSATZ angelegt am 15.09.2026, W5. Zahlen aus analysen/02_validierung/validierung_cross.csv und validierung_einzelmarkt.csv des Modellrepositorys, Lauf vom 12. und 13.09.2026, eigene Auswertung.
 Über das Jahr 2025 liegt der Index im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Modell bei 348,3 Tausend Euro je Megawatt und Jahr.
 Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Modell liegt in allen zwölf Monaten über dem Index.
 Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Modell den Jahresgang des Index abbildet und gleichmäßig darüber liegt.
-% FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 17, Zuordnung der Zahlen.
-%Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung} zeigt: In der \ac{FCR} liegt das Modell um den Faktor 1,24 und in der \ac{aFRR} um den Faktor 1,52 über dem Index, am \ac{DA} um den Faktor 0,86 und im \ac{IDC} um den Faktor 0,89 darunter.
 Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung} zeigt.
 In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index und in der \ac{aFRR} das 1,52-Fache.
 Am \ac{DA} erreicht das Modell das 0,86-Fache des Index und im \ac{IDC} das 0,89-Fache.
 Das Modell ist damit nicht durchgängig überhöht, denn wo es Degradationskosten verrechnet, bleibt es hinter der Referenz zurück.
 Der Aufschlag entsteht in den Leistungsmärkten, wo der größere Energieinhalt je Leistung und der sichere Zuschlag wirken.
-% FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Bezug, Stilregel 5.
-%Den größten Teil des Faktors bei der \ac{aFRR} erklärt die Menge, denn der Index reserviert nach seiner Methodik nur ein Viertel der Leistung für \ac{aFRR}-Leistung.
 Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur ein Viertel der Anschlussleistung für die \ac{aFRR}-Leistung.
 Das Modell hält dagegen im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
 Alle drei Teile des Prüfkriteriums sind damit erfüllt.
+
+\subsection{Validierung der Funktionsweise}
+\label{sec:validation_function}
+
+Die zweite Prüfung gilt der Funktionsweise, also der Frage, ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
+Dafür eignet sich ein Liefertag bei einem festen Reservierungspreis, weil sich dort Fahrplan, Ladezustand und die verdrängten Handelsaktionen unmittelbar ablesen lassen.
+Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem Reservierungspreis von 5 Euro je Megawatt und Stunde in beiden Richtungen.
+Die Reservierung belegt die Stunden, in denen die übrigen Märkte wenig bieten, in positiver Richtung etwa die Nachtstunden bis vier Uhr und den späten Abend, während die Stunden mit hohem Leistungspreis bei der \ac{aFRR} bleiben und die Vormittags- und Abendstunden dem \ac{DA} und dem \ac{IDC}.
+In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherraum für einen Abruf von einer Megawattstunde je Megawatt frei, und Anfang und Ende des Tages liegen bei 125 Megawattstunden.
+Die Optimierung reserviert damit nur dort, wo der Preis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was das Verfahren für die Suche nach dem kleinsten Preis bestätigt.
+
+% DURCHSICHT 16.09.2026, Platzierung H, damit die Abbildung oben auf der Folgeseite steht und der Text darunter weiterlaeuft. Alte Fassung:
+%\begin{figure}[htbp]
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_3/dispatch_festpreis_2025-02-11_p5.pdf}
+    \caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungspreis von 5 Euro je Megawatt und Stunde, positive Richtung oben, negative Richtung unten.}
+    \label{fig:dispatch_festpreis}
+\end{figure}
 
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten:
