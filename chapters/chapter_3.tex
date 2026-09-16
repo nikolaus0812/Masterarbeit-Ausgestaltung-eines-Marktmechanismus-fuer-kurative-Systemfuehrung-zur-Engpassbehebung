@@ -4753,7 +4753,9 @@ Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine 
 % NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Bisektion als erste Iteration zur Eingrenzung des Preises. Alte Fassung:
 %Gesucht ist je Stunde und Richtung der kleinste Preis, bei dem die Stunde voll reserviert ist, und dafür eignet sich die Bisektion, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
 Gesucht ist je Stunde und Richtung der kleinste Preis, bei dem die Stunde voll reserviert ist.
-Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, das sich eignet, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers: Fuellgrad nur als Abfrage, nicht als Begruendung der Bisektion. Alte Fassung:
+%Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, das sich eignet, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
+Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, und der Füllgrad dient dabei allein als Abfrage, ob die Stunde bei einem geprüften Preis voll reserviert ist.
 Die Bisektion prüft die Mitte eines Preisintervalls mit einem Lauf: Ist die Stunde dort voll, entfällt die obere Hälfte des Intervalls, sonst die untere.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers, logarithmische Preisachse im Text genannt. Alte Fassung:
 %Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) zeigt.
@@ -4786,7 +4788,9 @@ Die Bisektion allein reicht nicht aus, denn nach der ersten Iteration können St
 %Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom Preisvektor, also den 48 Preisen aller Stunden und beider Richtungen des Tages zusammen.
 Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern von den Preisen aller 48 Stunden und Richtungen des Tages zusammen.
 Die Zeitkopplung der kurativen Reservierung über den Ladezustand verschiebt den Lösungsraum, sobald der Preis einer anderen Stunde steigt.
-Die erste Iteration findet die Schwelle jeder Stunde deshalb nur unter einem für den ganzen Tag einheitlichen Preis.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers: erste Iteration liefert eine grobe Preisspanne. Alte Fassung:
+%Die erste Iteration findet die Schwelle jeder Stunde deshalb nur unter einem für den ganzen Tag einheitlichen Preis.
+Die erste Iteration liefert deshalb nur eine grobe Preisspanne je Stunde, gefunden unter einem für den ganzen Tag einheitlichen Preis.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers, ohne Zahlen, dafuer der Grund. Alte Fassung:
 %Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, am 11.02.2025 zum Beispiel 8 von 24 Stunden in positiver und 9 von 24 in negativer Richtung.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers vom 16.09.2026: Loesungsabsatz stringenter, ohne das Wort Vektor. Alte Fassung:
@@ -4826,7 +4830,9 @@ Eine Bisektion je Stunde bei festen Preisen der übrigen Stunden führt ebenfall
 Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die alle 48 Preise gemeinsam vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
 Dieser Aufstieg in groben Schritten schießt über das Ziel hinaus, sodass die Preise zwar ausreichen, aber nicht mehr minimal sind.
 Ein Abstieg senkt deshalb jede Stunde einzeln um die Toleranz und prüft nach jeder Senkung, ob alle Stunden voll bleiben.
-Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und die Stunde wird unter dieser gemeinsamen Bedingung weiter nach unten bisektiert.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers: halbieren statt bisektieren, Variante 1. Alte Fassung:
+%Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und die Stunde wird unter dieser gemeinsamen Bedingung weiter nach unten bisektiert.
+Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
 Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung bleibt.
 Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt.
 Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, und die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung.
@@ -4929,16 +4935,22 @@ Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
 %Um die Suche liegen die Schleifen über Tage, Konfigurationen und Studien, und innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise, wie Abbildung~\ref{fig:schleifenebenen} zeigt.
 %Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, eine andere die Leiter der \ac{aFRR}-Modellierung.
 %Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung.
-Beide Iterationen zusammen verlangen je Tag einige hundert Läufe.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Benennung an Abbildung 3.4 angeglichen (Studien, Konfigurationen, Tage, Festpreis-Reservierung, Suche). Alte Fassung:
+%Beide Iterationen zusammen verlangen je Tag einige hundert Läufe.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Metapher aufgeloest, Stilregel 17.
 %Um die Suche liegen die Schleifen über Tage, Konfigurationen und Studien, und innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise, wie Abbildung~\ref{fig:schleifenebenen} zeigt.
-Die Suche ist die innerste von mehreren Schleifen, nämlich über Tage, Konfigurationen und Studien, wie Abbildung~\ref{fig:schleifenebenen} zeigt.
-Innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise.
-Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht.
+%Die Suche ist die innerste von mehreren Schleifen, nämlich über Tage, Konfigurationen und Studien, wie Abbildung~\ref{fig:schleifenebenen} zeigt.
+%Innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise.
+%Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht.
 % DURCHSICHT 16.09.2026, Leiter nicht mehr im Text. Alte Fassung:
 %Eine andere Studie ist die Leiter der \ac{aFRR}-Modellierung.
-Eine andere Studie sind die Sensitivitäten der Regelleistungsmodellierung.
-Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung.
+%Eine andere Studie sind die Sensitivitäten der Regelleistungsmodellierung.
+%Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung.
+Beide Iterationen zusammen verlangen je Tag einige hundert Dispatch-Optimierungen.
+Die Suche nach dem Reservierungspreis ist die innerste von vier Schleifen, wie Abbildung~\ref{fig:schleifenebenen} zeigt: Über ihr liegen die Tage, darüber die Konfigurationen als Parameterwerte und Varianten einer Sensitivität und zuoberst die Studien.
+Neben der Suche steht je Tag die Festpreis-Reservierung mit zehn vorgegebenen Preisen.
+Die Tage umfassen alle Tage des Jahres 2025, einzeln oder als Jahressimulation.
+Die drei Studien sind die \ac{IDC}-Sensitivität, die die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, die Sensitivität der \ac{aFRR}-Modellierung und die Einzelmarktvalidierung, die jeden Markt für sich optimiert und den Vergleich je Markt in der Validierung trägt.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
 % Modellrepository, analysen/10_schrift/kapitel_3.
