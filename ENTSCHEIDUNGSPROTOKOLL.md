@@ -6932,6 +6932,51 @@ Bindungsdauer in 3.1.2 auf die Zeitscheibe gekuerzt (F20).
 **Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler, Kapitel 3 ab
 Seite 31, Literaturverzeichnis ab Seite 48.
 
+### 16.09.2026, chapter_3.tex, Kommentardurchgang 3.1.2, 3.2 Einleitung und 3.2.1
+
+**Begriffe.** Kurative Bindung als Reservierung von Leistungsband und
+Ladezustandsband, definiert in 2.1.2 vor der Bindungsdauer, Vorschlag von
+Claude auf Frage des Verfassers, vom Verfasser angenommen. Referenzfahrplan
+und Referenzerloes statt ungebundener Fahrplan und Erloes, weil der Verfasser
+den alten Ausdruck missverstaendlich fand, sieben Stellen in Kapitel 1 und 3,
+Definition in 3.2.1.
+
+**Entscheidung 14.** Ein Abruf wird gesondert verguetet, naemlich die
+gelieferte Energie und die Nachlaufpflicht je Megawatt. Der kurative
+Reservierungspreis verguetet allein die Vorhaltung, die Hoehe der
+Abrufverguetung wird nicht festgelegt, sondern als eigens zu betrachten
+benannt. Die fruehere Aussage, der Preis decke die Energie eines Abrufs mit
+ab, ist zurueckgenommen und nicht wieder aufzunehmen. Der Zusage-Absatz nennt
+die Sonderverguetung nur, der Abruf-Absatz fuehrt sie hinter der
+Nachlaufpflicht aus, weil die Nachlaufpflicht erst dort eingefuehrt wird
+(Befund des Verfassers). 3.2.4 sagt, dass die Abrufverguetung nicht Teil des
+Modells ist. CLAUDE.md Abschnitt 7 Nummer 14.
+
+**3.1.2.** Zusage-Absatz von acht auf vier Saetze, F2 und F3 erledigt. Im
+Abruf-Absatz gilt das Ladezustandsband fuer Speicher, andere Technologien
+muessen ueber die Bindungsdauer gegenueber dem gemeldeten Fahrplan abregelbar
+sein, die zugesagte Leistung einer Wind- oder Photovoltaikanlage laesst sich
+aehnlich der gesicherten Leistung bewerten (Ueberlegung des Verfassers ohne
+Beleg, eigenstaendige Ableitung), Kraftwerke halten das Leistungsband im
+Fahrplan frei. Nachlaufpflicht bezieht sich auf die zugesagte Leistung.
+Sensitivitaet in einem Satz (F10 erledigt). Ausschreibungsabsatz ohne Verweis
+auf die aFRR, Preis je Stunde und Richtung fuer alle 24 Stunden, von neun auf
+sieben Saetze. Netzknoten zunaechst allein im 380-kV-Netz, Erweiterung um
+110-kV-Knoten mit Direktkuppler zum 380-kV-Netz und spaeter um das gesamte
+110-kV-Netz, Vorgabe des Verfassers. Verbund in einem Satz.
+
+**3.2 Einleitung.** "der hoeheren Vorauslastung" an beiden Stellen
+gestrichen. Nach Abbildung 3.1 ein Absatz, der den Ablauf mit Eingangs- und
+Ausgangsdaten beschreibt, die Anlagen- und Marktparameter sind im Modell
+festgelegt.
+
+**3.2.1.** Von 32 auf 21 Saetze in drei Absaetzen, Inhalt unveraendert, F6,
+F8 und F16 damit erledigt. Datenquellen je Markt in 3.2.3 im Satz benannt,
+naemlich Energy-Charts des Fraunhofer ISE, regelleistung.net,
+Transparenzplattform der ENTSO-E und netztransparenz.de.
+
+**Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

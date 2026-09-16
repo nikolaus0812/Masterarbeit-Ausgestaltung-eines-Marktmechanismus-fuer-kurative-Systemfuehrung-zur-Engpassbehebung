@@ -180,7 +180,9 @@ der Vergütung, Erlösdifferenz, Schwellenpreis, Aktor, Reichweite.
 *Kurative Reservierung* für das Produkt, seit dem 11.09.2026. *Kurative Bindung* für die
 Reservierung eines Leistungsbandes und, bei Speichern, eines Ladezustandsbandes,
 definiert in 2.1.2, entschieden am 16.09.2026. *Bindung* ohne Adjektiv nur im
-allgemeinen Sinn. *Kurativer
+allgemeinen Sinn. *Referenzfahrplan* und *Referenzerlös* für den Fahrplan und den
+Erlös ohne kurative Bindung, Lauf mit Preis null, statt *ungebundener
+Fahrplan*, entschieden am 16.09.2026. *Kurativer
 Marktmechanismus* für das Verfahren, mit dem der ÜNB die Vorhaltung marktlich
 beschafft, einmal in 1.2 erklärt, danach immer mit dem Adjektiv und nie *der
 Mechanismus* allein. Der Mechanismus dient der Erkenntnis über Einflüsse auf den
@@ -312,6 +314,12 @@ Wortlaut und Begründung stehen im Protokoll, die Gliederung von Kapitel 3 in
     kommt im Text nicht vor. Entschieden am 14.09.2026.
 13. Die Nachlaufpflicht wird nur benannt und nicht modelliert. Entschieden am
     14.09.2026.
+14. **Ein Abruf wird gesondert vergütet**, nämlich die gelieferte Energie und
+    die Nachlaufpflicht je Megawatt. Der kurative Reservierungspreis vergütet
+    allein die Vorhaltung. Die Preise der Abrufvergütung werden nicht
+    festgelegt, der Text sagt nur, dass sie eigens zu betrachten sind.
+    Entschieden am 16.09.2026, ersetzt die Aussage, der Preis decke die
+    Energie eines Abrufs mit ab.
 
 ### Offen, nicht stellvertretend entscheiden
 
