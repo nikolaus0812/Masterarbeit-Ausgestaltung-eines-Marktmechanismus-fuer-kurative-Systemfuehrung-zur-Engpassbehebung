@@ -278,8 +278,10 @@ Wortlaut und Begründung stehen im Protokoll, die Gliederung von Kapitel 3 in
 
 ### Getroffen, nicht umkehren
 
-1. Der modifizierte Weber-Ansatz ist kein Bestandteil des Optimierungsmodells
-   und bleibt Referenz für die Abgrenzung in 3.2.4.
+1. Der modifizierte Weber-Ansatz ist kein Bestandteil des Optimierungsmodells.
+   Die Abgrenzung in 3.2.4 ist am 16.09.2026 vom Verfasser gestrichen, weil
+   2.3.3 den Ansatz bereits als nicht übertragbar befindet; der Vergleich mit
+   der Festlegung gehört nach Kapitel 5.
 2. **Der kurative Reservierungspreis ist endogen** wie im Code, Entscheidung K1
    vom 11.09.2026. Gemeint ist der Preis, bei dem ein Akteur eine Stunde voll
    reserviert. Die frühere Entscheidung zur exogenen Bindung mit zwei Läufen je

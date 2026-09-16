@@ -7027,6 +7027,71 @@ vier Seiten.
 **Pruefungen.** pruefen.py ohne Befund in chapter_3.tex und
 attachment_modell.tex, Build ohne Fehler.
 
+### 16.09.2026, chapter_3.tex, Kommentardurchgang 3.2.2 bis 3.2.4, zweiter Teil
+
+**3.2.2.** Anfangs- und Endzustand: im Basisfall 50 Prozent, alternativ
+Anfang frei und Ende gleich Anfang, beides wie im Code (soc_start_frei).
+Satz mit dem Beleg Schmitt und andere 2020 auf Vorgabe des Verfassers
+gestrichen, der Eintrag bleibt in der Literaturdatei, wird aber nicht mehr
+zitiert.
+
+**3.2.3.** Absatz zu den gefuehrten Maerkten von sechs auf vier Saetze, F17
+und F22 erledigt. Tabelle 3.1 auf Vorgabe des Verfassers gestrichen, weil die
+Marktabschnitte Produktschnitt, Preisquelle und Energievorhalt tragen; Kapitel
+3 dadurch eine Seite kuerzer. Arbitrage in 2.3.5 bei der ersten Verwendung
+erklaert (Befund des Verfassers), Begriffstabelle in CLAUDE.md ergaenzt. Der
+IDC hatte als einziger Markt keinen Erloesterm im Kapitel (Versaeumnis vom
+13.09.2026), Gleichung eq:erloes_idc wie Anhang C ergaenzt. Satz zu Hoechst-
+und Niedrigstpreis hinter die Modellierung des Aufschlags als Alternative.
+aFRR-Leiter durch die drei Sensitivitaeten der aFRR-Leistung ersetzt (ohne
+aFRR, Mittelpreis, hoechster Zuschlag), die Stufen kommen im Text nicht mehr
+vor. Reservierung: verdraengt werden Handelsaktionen, nicht Erloese; Variable
+in einem Satz; F14 und F15 erledigt.
+
+**3.2.4.** Satz zum Ganztageslauf gestrichen (Dopplung). Fuellgrad und
+Toleranz getrennt, Toleranz begruendet mit der Zulaessigkeitstoleranz des
+Solvers (Kommentar in curative_breakeven.py). Fuellgrad nur als Abfrage,
+Bisektion als erste Iteration zur Eingrenzung. Erste Iteration liefert eine
+grobe Preisspanne. Problem neu begruendet: nach der ersten Iteration koennen
+begrenzte Stunden wieder fuer die Arbitrage genutzt werden, Fehler des
+Verfahrens aus der Verschiebung des Loesungsraums durch die Zeitkopplung; die
+Zahlen vom 11.02.2025 wieder entfernt, dafuer der Grund. Teil (b) der
+Abbildung mit dem Grund, dass die Bisektion die obere Grenze nie erneut
+prueft (Frage des Verfassers). Preisachse logarithmisch im Text und in der
+Bildunterschrift. Das Wort Vektor aus der ganzen Erklaerung entfernt.
+Loesungsabsatz stringenter, halbieren statt bisektieren (Variante 1 von drei
+vorgelegten). Flussdiagramm im Modellrepository angepasst und neu erzeugt:
+Intervall halbieren, Preise vorgeben statt Vektor posten, einheitlicher
+Preis statt Schwellenpreis, Vollreservierungspreis statt
+Vollverdraengungspreis; dort committet als 4ed25cc. Abbildung 3.3 vor den
+Loesungsabsatz gesetzt, damit sie auf Seite 43 steht. Schleifenabsatz kurz:
+Jahreslauf als Hauptuntersuchung, Sensitivitaeten aFRR und IDC-Spread, ohne
+Lambda-Hebel, Festpreis-Reservierung zur Untersuchung einzelner Tage.
+
+**Entscheidung 1 aufgehoben.** Die Abgrenzung zum Weber-Ansatz und der
+Vergleich mit der Festlegung in 3.2.4 sind auf Entscheidung des Verfassers
+gestrichen, weil 2.3.3 den Ansatz bereits als nicht uebertragbar befindet und
+der Vergleich mit der Festlegung in Kapitel 5 gehoert. CLAUDE.md Abschnitt 7
+Nummer 1 nachgezogen. Zwei Saetze sind in den Absatz zu den Grenzen des
+Modells in 3.2.1 gewandert: Abrufverguetung und Poenale nicht Teil des
+Modells, Preis ist der opportunitaetskostenbasierte Teil des Gebots. Die
+Marke sec:weber_exclusion bleibt an 3.2.4, weil ein Stichpunkt in
+chapter_5.tex sie nennt.
+
+**Offener Punkt fuer Kapitel 5.** Der Vergleich mit der Festlegung: Der
+Optionswert wird nur gezahlt, wenn er den anteiligen Werteverbrauch
+uebersteigt (Anlage 1), und Anlage 5 geht von gesperrter Leistung aus,
+waehrend die Anlage unter der kurativen Reservierung handlungsfaehig bleibt,
+sodass der ermittelte Preis unter dem Ausgleich nach der Festlegung liegen
+kann. Wortlaut steht als Kommentar in 3.2.4.
+
+**Layout.** Gleitparameter im Header (topfraction 0,9, floatpagefraction
+0,85), damit Abbildungen bis 85 Prozent der Seite mit Text auf der Seite
+stehen; Abbildungen 3.2 und 3.3 in Textbreite.
+
+**Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler, Kapitel 3 ab
+Seite 31, Literaturverzeichnis ab Seite 48.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

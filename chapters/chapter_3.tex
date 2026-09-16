@@ -2872,6 +2872,9 @@ Die Abrufwahrscheinlichkeit bleibt außer Betracht, und der Zuschlag in den Rege
 % NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Abruf wird gesondert verguetet und fliesst nicht in den Reservierungspreis ein, sichere Zuschlaege loesen die Regelleistungserloese vom Bietverhalten. Alte Fassung, nicht wieder aufnehmen:
 %Beide Vereinfachungen wirken in eine benennbare Richtung: Ohne Abruf ist der Preis der opportunitätskostenbasierte Teil des Gebots, und die sicheren Zuschläge heben die entgangenen Erlöse an.
 Beide Vereinfachungen sind mit dem Produkt vereinbar: Weil ein Abruf gesondert vergütet wird, fließt er nicht in den kurativen Reservierungspreis ein, und die sicheren Zuschläge lösen die Erlöse am Regelleistungsmarkt vom Bietverhalten.
+% HIERHER aus 3.2.4 am 16.09.2026, Entscheidung des Verfassers vom 16.09.2026: Abgrenzung zum Weber-Ansatz und Vergleich mit der Festlegung in 3.2.4 gestrichen, Weber ist in 2.3.3 abgehandelt, die Festlegung gehoert nach Kapitel 5.
+Nicht Teil des Modells sind die gesonderte Vergütung eines Abrufs, nämlich der gelieferten Energie und der Nachlaufpflicht, und die Pönale mit der Risikoprämie, die aus ihr folgt.
+Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
 Die Rückwirkung der Speicher auf die Preise bleibt ebenfalls außer Betracht, sodass die Preise des Jahres 2025 als gegeben gelten.
 Ein Zubau im Gigawattmaßstab drängt die zusätzliche Leistung überwiegend in die Arbitrage, weil die Regelleistungsmärkte mengenmäßig begrenzt sind \cite{garttan_battery_2025}.
 Dort verzehren Speicher die Spreads, indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}.
@@ -4946,11 +4949,18 @@ Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
 %Eine andere Studie ist die Leiter der \ac{aFRR}-Modellierung.
 %Eine andere Studie sind die Sensitivitäten der Regelleistungsmodellierung.
 %Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung.
-Beide Iterationen zusammen verlangen je Tag einige hundert Dispatch-Optimierungen.
-Die Suche nach dem Reservierungspreis ist die innerste von vier Schleifen, wie Abbildung~\ref{fig:schleifenebenen} zeigt: Über ihr liegen die Tage, darüber die Konfigurationen als Parameterwerte und Varianten einer Sensitivität und zuoberst die Studien.
-Neben der Suche steht je Tag die Festpreis-Reservierung mit zehn vorgegebenen Preisen.
-Die Tage umfassen alle Tage des Jahres 2025, einzeln oder als Jahressimulation.
-Die drei Studien sind die \ac{IDC}-Sensitivität, die die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, die Sensitivität der \ac{aFRR}-Modellierung und die Einzelmarktvalidierung, die jeden Markt für sich optimiert und den Vergleich je Markt in der Validierung trägt.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: kuerzer, Jahreslauf als Hauptuntersuchung, Sensitivitaeten aFRR und IDC-Spread, ohne Lambda-Hebel. Alte Fassung:
+%Beide Iterationen zusammen verlangen je Tag einige hundert Dispatch-Optimierungen.
+%Die Suche nach dem Reservierungspreis ist die innerste von vier Schleifen, wie Abbildung~\ref{fig:schleifenebenen} zeigt: Über ihr liegen die Tage, darüber die Konfigurationen als Parameterwerte und Varianten einer Sensitivität und zuoberst die Studien.
+%Neben der Suche steht je Tag die Festpreis-Reservierung mit zehn vorgegebenen Preisen.
+%Die Tage umfassen alle Tage des Jahres 2025, einzeln oder als Jahressimulation.
+%Die drei Studien sind die \ac{IDC}-Sensitivität, die die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht, die Sensitivität der \ac{aFRR}-Modellierung und die Einzelmarktvalidierung, die jeden Markt für sich optimiert und den Vergleich je Markt in der Validierung trägt.
+Um die Suche legen sich die Schleifen über Tage, Konfigurationen und Studien, wie Abbildung~\ref{fig:schleifenebenen} zeigt, sodass mehrere Varianten mit demselben Tagesmodell gerechnet werden.
+Die Hauptuntersuchung ist der Jahreslauf über alle Tage des Jahres 2025.
+Daneben prüfen zwei Sensitivitäten den Einfluss der \ac{aFRR}-Modellierung und des Spreads am \ac{IDC}, und die Einzelmarktvalidierung optimiert jeden Markt für sich.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, Zweck der Festpreis-Reservierung. Alte Fassung:
+%Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Preisen.
+Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Preisen, mit der sich einzelne Tage genauer untersuchen lassen, nämlich wie sich die Anlage bei einem festen Preis verhält und welche Handelsaktionen die Reservierung verdrängt.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
 % Modellrepository, analysen/10_schrift/kapitel_3.
@@ -5096,25 +5106,39 @@ Die drei Studien sind die \ac{IDC}-Sensitivität, die die Preise des \ac{IDC} mi
 %Die Höhe der Pönale bestimmt die Arbeit nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt.
 %Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
 % ERGAENZT am 15.09.2026 nach Fremdleser-Pruefung, Ueberleitung, Stilregel 3.
-Der so bestimmte Preis ist gegen die Bewertung abzugrenzen, die der geltende Rahmen für entgangene Erlöse vorsieht.
-Der in Abschnitt~\ref{sec:weber_approach} beschriebene Weber-Ansatz ist Stand der Technik und prägt die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen \cite{weber_gutachten_2015}.
-Eine deterministische Optimierung mit vollständiger Preiskenntnis kennt jedoch kein Volatilitätsmaß und macht den Zeitwert der Option damit konstruktionsbedingt zu null \cite{hull_options_2014}.
-Hinzu kommt, dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre.
-Der Ansatz bewertet außerdem jedes Zeitintervall unabhängig, während die Ladezustandsbilanz die Intervalle bindend koppelt.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Abgrenzung zum Weber-Ansatz einfacher und mit Grund, zwei Absaetze. Alte Fassung, nicht wieder aufnehmen:
+%Der so bestimmte Preis ist gegen die Bewertung abzugrenzen, die der geltende Rahmen für entgangene Erlöse vorsieht.
+%Der in Abschnitt~\ref{sec:weber_approach} beschriebene Weber-Ansatz ist Stand der Technik und prägt die Bemessung entgangener Erlösmöglichkeiten im geltenden Rahmen \cite{weber_gutachten_2015}.
+%Eine deterministische Optimierung mit vollständiger Preiskenntnis kennt jedoch kein Volatilitätsmaß und macht den Zeitwert der Option damit konstruktionsbedingt zu null \cite{hull_options_2014}.
+%Hinzu kommt, dass Fahrplanbildung und erwarteter Preis aus derselben Preiszeitreihe stammen und eine Bewertung des entgangenen Erlöses gegen diese Reihe zirkulär wäre.
+%Der Ansatz bewertet außerdem jedes Zeitintervall unabhängig, während die Ladezustandsbilanz die Intervalle bindend koppelt.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Bezug und Begruendung, Stilregel 5 und 7.
 %Diese Kopplung ist für kurze Entladedauern nicht vernachlässigbar.
-Die Kopplung über den Ladezustand wiegt bei einem Energieinhalt je Leistung von 2,5 Stunden schwer, denn eine Reservierung von einer Megawattstunde je Megawatt bindet einen erheblichen Teil des Speichers.
-Der ermittelte kurative Reservierungspreis ist deshalb opportunitätskostenbasiert und enthält keinen Optionswert.
+%Die Kopplung über den Ladezustand wiegt bei einem Energieinhalt je Leistung von 2,5 Stunden schwer, denn eine Reservierung von einer Megawattstunde je Megawatt bindet einen erheblichen Teil des Speichers.
+%Der ermittelte kurative Reservierungspreis ist deshalb opportunitätskostenbasiert und enthält keinen Optionswert.
 % ABSATZ VERBUNDEN 15.09.2026, D2.15.
-Die Vergütungsstruktur der Festlegung trägt den Optionswert ohnehin nur dann, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}.
+%Die Vergütungsstruktur der Festlegung trägt den Optionswert ohnehin nur dann, wenn er den anteiligen Werteverbrauch übersteigt, weil sie sich aus den Erzeugungsauslagen und dem höheren der beiden übrigen Bestandteile zusammensetzt \cite{bundesnetzagentur_anlage1_2024}.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Stilregel 5.
 %Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem dortigen Ausgleich liegen kann.
-Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem Ausgleich nach der Festlegung liegen kann.
+%Anders als Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, bleibt die Anlage unter der kurativen Reservierung handlungsfähig, weshalb der ermittelte Preis unter dem Ausgleich nach der Festlegung liegen kann.
 % DURCHSICHT 15.09.2026, Entscheidung des Verfassers vom 16.09.2026, ein Abruf wird gesondert verguetet (Energie und Nachlaufpflicht je MW), Preise dafuer nicht festgelegt. Alte Fassung:
 %Den Energieanteil eines Abrufs, den der Preis der kurativen Reservierung mit abdeckt, bildet das Modell nicht ab.
-Die gesonderte Vergütung eines Abrufs, nämlich der gelieferten Energie und der Nachlaufpflicht, ist nicht Teil des Modells.
-Die Höhe der Pönale bestimmt die Untersuchung nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt.
-Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
+%Die gesonderte Vergütung eines Abrufs, nämlich der gelieferten Energie und der Nachlaufpflicht, ist nicht Teil des Modells.
+%Die Höhe der Pönale bestimmt die Untersuchung nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt.
+%Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
+% GESTRICHEN am 16.09.2026, Entscheidung des Verfassers vom 16.09.2026: Abgrenzung zum Weber-Ansatz und Vergleich mit der Festlegung in 3.2.4 gestrichen, Weber ist in 2.3.3 abgehandelt, die Festlegung gehoert nach Kapitel 5. Nicht wieder aufnehmen:
+%Der geltende Rahmen bewertet entgangene Erlöse eines Speichers nach dem Weber-Ansatz, wie in Abschnitt~\ref{sec:weber_approach} dargestellt, und der hier bestimmte Preis ist davon abzugrenzen, weil beide dieselbe Frage verschieden beantworten \cite{weber_gutachten_2015}.
+%Der Weber-Ansatz schätzt den entgangenen Erlös als Wert einer Option und rechnet mit einem Volatilitätsmaß einen Zeitwert für die unsichere Preisentwicklung ein \cite{hull_options_2014}.
+%Das Modell kennt die Preise des Tages vollständig und misst den entgangenen Erlös unmittelbar als Differenz zweier Fahrpläne, sodass es weder ein Volatilitätsmaß braucht noch einen Zeitwert enthält.
+%Eine Optionsbewertung gegen dieselbe Preisreihe, aus der der Fahrplan stammt, wäre zudem zirkulär.
+%Der Weber-Ansatz bewertet außerdem jede Viertelstunde für sich, während das Modell die Viertelstunden über den Ladezustand koppelt, was bei einem Energieinhalt je Leistung von 2,5 Stunden ins Gewicht fällt.
+%Der kurative Reservierungspreis ist damit rein opportunitätskostenbasiert und enthält keinen Optionswert.
+%
+%Für den Vergleich mit der Festlegung sind zwei Punkte festzuhalten.
+%Die Festlegung zahlt den Optionswert nur, wenn er den anteiligen Werteverbrauch übersteigt \cite{bundesnetzagentur_anlage1_2024}.
+%Ihre Anlage 5 geht zudem von gesperrter Leistung aus, während die Anlage unter der kurativen Reservierung handlungsfähig bleibt, sodass der ermittelte Preis unter dem Ausgleich nach der Festlegung liegen kann.
+%Nicht Teil des Modells sind die gesonderte Vergütung eines Abrufs, nämlich der gelieferten Energie und der Nachlaufpflicht, und die Pönale mit der Risikoprämie, die aus ihr folgt.
+%Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
 
 % ALTE STICHPUNKTE DIESES UNTERABSCHNITTS, Stand bis 11.09.2026, vollstaendig
 % erhalten. Die sechs Punkte zum Weber-Ansatz stehen unveraendert im zweiten
