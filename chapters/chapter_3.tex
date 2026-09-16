@@ -4782,26 +4782,43 @@ Von 800 Euro je Megawatt und Stunde bis zur Toleranz sind 14 Halbierungen nötig
 Die Bisektion allein reicht nicht aus, denn nach der ersten Iteration können Stunden, deren obere Grenze schon feststeht, wieder für die Arbitrage genutzt werden.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers, Preisvektor erklaert. Alte Fassung:
 %Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom ganzen Preisvektor.
-Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom Preisvektor, also den 48 Preisen aller Stunden und beider Richtungen des Tages zusammen.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers vom 16.09.2026: Loesungsabsatz stringenter, ohne das Wort Vektor. Alte Fassung:
+%Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom Preisvektor, also den 48 Preisen aller Stunden und beider Richtungen des Tages zusammen.
+Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern von den Preisen aller 48 Stunden und Richtungen des Tages zusammen.
 Die Zeitkopplung der kurativen Reservierung über den Ladezustand verschiebt den Lösungsraum, sobald der Preis einer anderen Stunde steigt.
 Die erste Iteration findet die Schwelle jeder Stunde deshalb nur unter einem für den ganzen Tag einheitlichen Preis.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers, ohne Zahlen, dafuer der Grund. Alte Fassung:
 %Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, am 11.02.2025 zum Beispiel 8 von 24 Stunden in positiver und 9 von 24 in negativer Richtung.
-Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, weil jede Stunde ihre Schwelle in einem Lauf gefunden hat, in dem die übrigen Stunden denselben Preis trugen und deshalb anders um Leistung und Ladezustand konkurrierten.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers vom 16.09.2026: Loesungsabsatz stringenter, ohne das Wort Vektor. Alte Fassung:
+%Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, weil jede Stunde ihre Schwelle in einem Lauf gefunden hat, in dem die übrigen Stunden denselben Preis trugen und deshalb anders um Leistung und Ladezustand konkurrierten.
+Werden die so gefundenen Preise alle zugleich vorgegeben, ist ein Teil der Stunden nicht mehr voll, weil jede Stunde ihre Schwelle in einem Lauf gefunden hat, in dem die übrigen Stunden denselben Preis trugen und deshalb anders um Leistung und Ladezustand konkurrierten.
 % NEU GEFASST am 16.09.2026, Frage des Verfassers: warum die Bisektion die untere Grenze weiter anhebt. Alte Fassung:
 %Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt den Grund: Steigt die Schwelle während der Suche, kann die obere Grenze des Intervalls ihr nicht mehr folgen, denn die Bisektion senkt die obere Grenze nur.
 Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt schematisch, was dann geschieht: Steigt die Schwelle über die schon gesetzte obere Grenze, ist jede weitere Mitte nicht voll, und die Bisektion hebt nach ihrer Regel nur die untere Grenze an, bis das Intervall sich schließt.
 Die obere Grenze prüft die Bisektion nie erneut, sodass sie bei einem Preis endet, bei dem die Stunde nicht mehr voll ist, ohne es zu bemerken.
-Eine Bisektion je Stunde gegen den Vektor führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
+% DURCHSICHT 16.09.2026, ohne das Wort Vektor. Alte Fassung:
+%Eine Bisektion je Stunde gegen den Vektor führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
+Eine Bisektion je Stunde bei festen Preisen der übrigen Stunden führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 
-Das Verfahren löst das Problem in zwei Iterationen, die Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
-Die erste Iteration ist die beschriebene Bisektion und liefert je Stunde und Richtung den unter einheitlichem Preis gefundenen Wert als Startvektor.
-Die zweite Iteration gibt den Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert.
-Der Aufstieg schießt über das Ziel hinaus, weshalb ein Abstieg jede Stunde einzeln um die Toleranz senkt und dabei prüft, ob alle Stunden voll bleiben.
-Bleibt der Vektor voll, war der Preis nicht minimal, und die Stunde wird gegen die gemeinsame Bedingung nach unten bisektiert.
-Der Abstieg endet, wenn ein ganzer Durchgang ohne Senkung bleibt, und das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
-Beim Vollreservierungspreis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt, ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert.
-Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung, und die positive und die negative Richtung bleiben als zwei Produkte getrennt.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: drei Saetze zu einem. Alte Fassung:
+%Das Verfahren löst das Problem in zwei Iterationen, die Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+%Die erste Iteration ist die beschriebene Bisektion und liefert je Stunde und Richtung den unter einheitlichem Preis gefundenen Wert als Startvektor.
+%Die zweite Iteration gibt den Vektor vor und hebt alle noch offenen Stunden zugleich um ein Viertel an, bis der Speicher alle Stunden zusammen voll reserviert.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026: Loesungsabsatz stringenter, ohne das Wort Vektor. Alte Fassung:
+%Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die den gefundenen Preisvektor vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+%Der Aufstieg schießt über das Ziel hinaus, weshalb ein Abstieg jede Stunde einzeln um die Toleranz senkt und dabei prüft, ob alle Stunden voll bleiben.
+%Bleibt der Vektor voll, war der Preis nicht minimal, und die Stunde wird gegen die gemeinsame Bedingung nach unten bisektiert.
+%Der Abstieg endet, wenn ein ganzer Durchgang ohne Senkung bleibt, und das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
+%Beim Vollreservierungspreis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt, ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert.
+%Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung, und die positive und die negative Richtung bleiben als zwei Produkte getrennt.
+Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die alle 48 Preise gemeinsam vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+Dieser Aufstieg in groben Schritten schießt über das Ziel hinaus, sodass die Preise zwar ausreichen, aber nicht mehr minimal sind.
+Ein Abstieg senkt deshalb jede Stunde einzeln um die Toleranz und prüft nach jeder Senkung, ob alle Stunden voll bleiben.
+Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und die Stunde wird unter dieser gemeinsamen Bedingung weiter nach unten bisektiert.
+Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung bleibt.
+Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt.
+Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, und die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung.
+Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
 
 \begin{figure}[tbp]
     \centering
