@@ -3434,8 +3434,12 @@ Die vollständige Formulierung mit allen Nebenbedingungen steht in Anhang~\ref{a
 
 % HIERHER VERSCHOBEN 15.09.2026, D2.9, Ladezustandsbilanz und Leistungsschranke als eigener Absatz.
 Die Ladezustandsbilanz führt den Speicherinhalt über den Tag fort, wobei allein der Handel und die gelieferte \ac{aFRR}-Arbeit ihn bewegen und die Wirkungsgrade beider Richtungen eingehen.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Start- und Endzustand fest 50 Prozent oder frei mit Ende gleich Anfang, Zitat Schmitt verstaendlich gemacht. Alte Fassung:
+%Anfang und Ende eines Tages tragen denselben Ladezustand, damit kein Tag mit eingelagerter Energie endet und die Tage untereinander vergleichbar bleiben.
+%Die zeitgekoppelte Formulierung folgt der Darstellung von Flexibilitätsgeboten \cite{schmitt_linear_2020}.
 Anfang und Ende eines Tages tragen denselben Ladezustand, damit kein Tag mit eingelagerter Energie endet und die Tage untereinander vergleichbar bleiben.
-Die zeitgekoppelte Formulierung folgt der Darstellung von Flexibilitätsgeboten \cite{schmitt_linear_2020}.
+Der gemeinsame Wert ist im Basisfall auf 50 Prozent der Speicherkapazität gesetzt, alternativ wählt das Modell den Anfangszustand frei, und der Endzustand folgt ihm.
+% GESTRICHEN am 16.09.2026, Kommentar des Verfassers: Die Ladezustandsbilanz mit Wirkungsgraden und gleichem Anfangs- und Endzustand folgt der linearen Formulierung zeitgekoppelter Flexibilitätsgebote von Schmitt und anderen \cite{schmitt_linear_2020}.
 Auf jeder Seite teilen sich der Handel, die \ac{aFRR}, die kurative Reservierung und die auf beiden Seiten stehende \ac{FCR} die Anschlussleistung.
 Eine kurativ reservierte Leistung steht deshalb keinem anderen Markt zur Verfügung.
 
@@ -3578,22 +3582,27 @@ Eine kurativ reservierte Leistung steht deshalb keinem anderen Markt zur Verfüg
 % Stichpunkts, nicht wieder aufnehmen:
 %    \item Abbildung~\ref{fig:modellaufbau} zeigt beide Gruppen in der Reihenfolge, in der die Zuschläge fallen, dazu Zielfunktion und Speicher des Optimierungsproblems
 %    \item Die Märkte folgen im Modell der Reihenfolge ihrer Zuschläge, nämlich \ac{FCR}, \ac{aFRR}-Leistung, \ac{DA}, kurative Reservierung, \ac{IDC} und \ac{aFRR}-Arbeit, und jeder trägt seinen eigenen Produktzuschnitt, Energievorhalt und Preis
-Das Modell führt neben der kurativen Reservierung die Märkte, an denen ein \ac{BESS} heute seine Erlöse erzielt, nämlich den \ac{DA}, den \ac{IDC}, die \ac{FCR} und die \ac{aFRR} mit Leistung und Arbeit.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Dopplungen im Absatz zu den gefuehrten Maerkten entfernt, F17 und F22 erledigt. Alte Fassung:
+%Das Modell führt neben der kurativen Reservierung die Märkte, an denen ein \ac{BESS} heute seine Erlöse erzielt, nämlich den \ac{DA}, den \ac{IDC}, die \ac{FCR} und die \ac{aFRR} mit Leistung und Arbeit.
 % HIERHER VERSCHOBEN 15.09.2026, D2.12, Reihenfolge.
-Der \ac{DA} und der \ac{IDC} zusammen bilden ab, was eine Anlage am Spotmarkt erreichen kann, weil sich Arbitrage zu unterschiedlichen Zeitpunkten ergibt.
+%Der \ac{DA} und der \ac{IDC} zusammen bilden ab, was eine Anlage am Spotmarkt erreichen kann, weil sich Arbitrage zu unterschiedlichen Zeitpunkten ergibt.
 % HIERHER VERSCHOBEN 15.09.2026, D2.8, nicht gefuehrte Maerkte zu den gefuehrten.
-Die Intraday-Auktionen führt das Modell nicht, weil auch der Vergleichsmaßstab der Validierung sie nicht enthält.
-Die \ac{mFRR} führt das Modell nicht, weil sie der \ac{aFRR} im Produktschnitt gleicht und im Jahr 2025 den geringeren Leistungspreis erzielte, wie in Abschnitt~\ref{sec:balancing_procurement} dargestellt.
+%Die Intraday-Auktionen führt das Modell nicht, weil auch der Vergleichsmaßstab der Validierung sie nicht enthält.
+%Die \ac{mFRR} führt das Modell nicht, weil sie der \ac{aFRR} im Produktschnitt gleicht und im Jahr 2025 den geringeren Leistungspreis erzielte, wie in Abschnitt~\ref{sec:balancing_procurement} dargestellt.
 % NEU GEFASST am 15.09.2026 nach AENDERUNGEN_KAP3.md im Sammelmodus.
 % Befund K46, Stilregel 5.
 % Alte Fassung, nicht wieder aufnehmen:
 %Sie wirken auf zwei Arten auf den Speicher, denn \ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit bewegen den Ladezustand, während \ac{FCR}, \ac{aFRR}-Leistung und die kurative Reservierung Leistung und ein Ladezustandsband binden, ohne Energie umzuschlagen.
-Die Märkte wirken auf zwei Arten auf den Speicher: \ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit bewegen den Ladezustand, während \ac{FCR}, \ac{aFRR}-Leistung und die kurative Reservierung Leistung und ein Ladezustandsband binden, ohne Energie umzuschlagen.
+%Die Märkte wirken auf zwei Arten auf den Speicher: \ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit bewegen den Ladezustand, während \ac{FCR}, \ac{aFRR}-Leistung und die kurative Reservierung Leistung und ein Ladezustandsband binden, ohne Energie umzuschlagen.
 % HIERHER VERSCHOBEN 15.09.2026, D2.12, Satz zu den gefuehrten Maerkten.
 % DURCHSICHT 15.09.2026, D2.12, Satz an den Absatzanfang angepasst. Alte Fassung:
 %Neben dem \ac{IDC} führt das Modell den \ac{DA}, sodass sich Arbitrage zu unterschiedlichen Zeitpunkten ergibt und beide Märkte zusammen abbilden, was eine Anlage am Spotmarkt erreichen kann.
 % VERSCHOBEN 15.09.2026, D2.12, Reihenfolge: Der \ac{DA} und der \ac{IDC} zusammen bilden ab, was eine Anlage am Spotmarkt erreichen kann, weil sich Arbitrage zu unterschiedlichen Zeitpunkten ergibt.
-Das Modell setzt alle Märkte eines Liefertages gleichzeitig, und jeder trägt dabei seinen eigenen Produktzuschnitt, seinen Energievorhalt und seinen Preis.
+%Das Modell setzt alle Märkte eines Liefertages gleichzeitig, und jeder trägt dabei seinen eigenen Produktzuschnitt, seinen Energievorhalt und seinen Preis.
+Das Modell führt neben der kurativen Reservierung die Märkte, an denen ein \ac{BESS} heute seine Erlöse erzielt, nämlich den \ac{DA}, den \ac{IDC}, die \ac{FCR} und die \ac{aFRR} mit Leistung und Arbeit.
+Nicht geführt werden die Intraday-Auktionen, weil der Vergleichsmaßstab der Validierung sie nicht enthält, und die \ac{mFRR}, wie in Abschnitt~\ref{sec:balancing_procurement} begründet.
+\ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit bewegen den Ladezustand, während \ac{FCR}, \ac{aFRR}-Leistung und die kurative Reservierung Leistung und ein Ladezustandsband binden, ohne Energie umzuschlagen.
+Jeder Markt trägt seinen eigenen Produktzuschnitt, seinen Energievorhalt und seinen Preis.
 
 % AUSFORMULIERT am 12.09.2026, satzweise, beide Saetze Fassung C, gewaehlt vom
 % Verfasser.
@@ -3637,7 +3646,7 @@ Das Modell setzt alle Märkte eines Liefertages gleichzeitig, und jeder trägt d
 Auswertungszeitraum ist das Jahr 2025.
 Weil der \ac{DA} erst seit dem 01.10.2025 in Viertelstunden gehandelt wird, gilt davor sein Stundenpreis für alle vier Viertelstunden \cite{ffe_saegezahn_2026}.
 Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, indem es die fehlende Stunde im Frühjahr durch Platzhalter ersetzt, im Herbst die zweite Ausführung der doppelten Stunde verwirft und die betroffene Stunde in beiden Fällen sperrt.
-Tabelle~\ref{tab:maerkte} fasst die Produktmerkmale der sechs geführten Märkte zusammen.
+% GESTRICHEN am 16.09.2026, Tabelle 3.1 auf Vorgabe des Verfassers entfernt: Tabelle~\ref{tab:maerkte} fasst die Produktmerkmale der sechs geführten Märkte zusammen.
 % TABELLE NEU am 13.09.2026, entschieden vom Verfasser. Sie ersetzt die
 % Produktparametertabelle des kurativen Blocks und vergleicht alle sechs
 % Maerkte. Sie steht hier, weil der Einstieg dieses Unterabschnitts bereits
@@ -3705,30 +3714,31 @@ Tabelle~\ref{tab:maerkte} fasst die Produktmerkmale der sechs geführten Märkte
 %        \multicolumn{4}{@{}p{\textwidth}@{}}{\footnotesize Der Energievorhalt gibt an, wie lange die vorgehaltene Leistung im Abruffall aus dem Speicher zu decken ist. Die drei Märkte mit Leistungsreservierungspreis binden die Anlage, ohne ihren Ladezustand zu verändern, und aus dieser Trennung entstehen die Opportunitätskosten der kurativen Reservierung.} \\
 %    \end{tabular}
 %\end{table}
-\begin{table}[htbp]
-    \centering
-    \caption{Produktmerkmale der sechs geführten Märkte.}
-    \label{tab:maerkte}
-    \small
-    \setlength{\tabcolsep}{4pt}
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.32\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.29\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsmodellierung} & \textbf{Besonderheiten} \\
-        \hline
-        \acs{DA} & Viertelstunde, Auktion am Vortag & Auktionspreis & Der Handel ist in sich bilanziell ausgeglichen \\
-        \hline
-        \acs{IDC} & Viertelstunde, fortlaufend & Volumengewichteter Index der letzten Handelsstunde & Trägt den Ausgleich der \acs{aFRR}-Arbeit \\
-        \hline
-        \acs{FCR} & Vier Stunden, symmetrisch & Höchster Zuschlagspreis, gezahlt an alle bezuschlagten Gebote & Energievorhalt von 15 Minuten \\
-        \hline
-        \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Volumengewichteter Durchschnitt der Zuschlagspreise & Energievorhalt von einer Stunde \\
-        \hline
-        \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Volumengewichteter Abrufpreis, gegen den \acs{IDC} verrechnet & Die Lieferung wird im Volumen begrenzt \\
-        \hline
-        Kurative Reservierung & Eine Stunde, je Richtung & Leistungspreis, als Gebotspreis betrachtet & Energievorhalt von einer Stunde in jeder Viertelstunde \\
-        \hline
-    \end{tabular}
-\end{table}
+% TABELLE 3.1 GESTRICHEN am 16.09.2026 auf Vorgabe des Verfassers, die Marktabschnitte tragen Produktschnitt, Preisquelle und Energievorhalt. Alte Fassung, nicht wieder aufnehmen:
+%\begin{table}[htbp]
+%    \centering
+%    \caption{Produktmerkmale der sechs geführten Märkte.}
+%    \label{tab:maerkte}
+%    \small
+%    \setlength{\tabcolsep}{4pt}
+%    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.17\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.32\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.29\textwidth-\tabcolsep\relax}@{}}
+%        \hline
+%        \textbf{Markt} & \textbf{Produktschnitt} & \textbf{Vergütungsmodellierung} & \textbf{Besonderheiten} \\
+%        \hline
+%        \acs{DA} & Viertelstunde, Auktion am Vortag & Auktionspreis & Der Handel ist in sich bilanziell ausgeglichen \\
+%        \hline
+%        \acs{IDC} & Viertelstunde, fortlaufend & Volumengewichteter Index der letzten Handelsstunde & Trägt den Ausgleich der \acs{aFRR}-Arbeit \\
+%        \hline
+%        \acs{FCR} & Vier Stunden, symmetrisch & Höchster Zuschlagspreis, gezahlt an alle bezuschlagten Gebote & Energievorhalt von 15 Minuten \\
+%        \hline
+%        \acs{aFRR}-Leistung & Vier Stunden, je Richtung & Volumengewichteter Durchschnitt der Zuschlagspreise & Energievorhalt von einer Stunde \\
+%        \hline
+%        \acs{aFRR}-Arbeit & Viertelstunde, nur bei Abruf & Volumengewichteter Abrufpreis, gegen den \acs{IDC} verrechnet & Die Lieferung wird im Volumen begrenzt \\
+%        \hline
+%        Kurative Reservierung & Eine Stunde, je Richtung & Leistungspreis, als Gebotspreis betrachtet & Energievorhalt von einer Stunde in jeder Viertelstunde \\
+%        \hline
+%    \end{tabular}
+%\end{table}
 
 \subsubsection*{Day-Ahead}
 % AUSFORMULIERT am 12.09.2026, satzweise, jeder Satz vom Verfasser gewaehlt.
