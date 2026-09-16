@@ -7,15 +7,18 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf.
 Tabelle~\ref{tab:anh:modell:mengen} erklärt die Mengen und Indizes, Tabelle~\ref{tab:anh:modell:parameter} die Parameter und Tabelle~\ref{tab:anh:modell:variablen} die Variablen.
 Danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen in neun Gruppen, jede mit einem Satz benannt.
 
-\begin{table}[H]
-    \centering
-    \caption{Mengen, Indizes und Abbildungen.}
-    \label{tab:anh:modell:mengen}
-    \footnotesize\renewcommand{\arraystretch}{1.15}
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.82\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Zeichen} & \textbf{Bedeutung} \\
-        \hline
+% LONGTABLE seit 16.09.2026 statt table, damit die Tabelle umbrechen kann und keine halbleere Seite entsteht.
+{\footnotesize\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.82\textwidth-\tabcolsep\relax}@{}}
+    \caption{Mengen, Indizes und Abbildungen.}\label{tab:anh:modell:mengen}\\
+    \hline
+    \textbf{Zeichen} & \textbf{Bedeutung} \\
+    \hline
+    \endfirsthead
+    \hline
+    \textbf{Zeichen} & \textbf{Bedeutung} \\
+    \hline
+    \endhead
         $t$, $\mathcal{T}$ & Viertelstunde des Liefertages und Menge aller 96 Viertelstunden \\
         \hline
         $\mathcal{T}^{\mathrm{sp}}$ & Teilmenge der gesperrten Viertelstunden an den beiden Tagen der Zeitumstellung \\
@@ -32,18 +35,20 @@ Danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen i
         \hline
         \acs{DA}, \acs{IDC}, \acs{FCR}, \acs{aFRR}, kur & Hochgestellte Indizes der geführten Märkte, für die \acs{aFRR} getrennt nach Leistung und Arbeit \\
         \hline
-    \end{tabular}
-\end{table}
+\end{longtable}}
 
-\begin{table}[H]
-    \centering
-    \caption{Parameter des Optimierungsproblems.}
-    \label{tab:anh:modell:parameter}
-    \footnotesize\renewcommand{\arraystretch}{1.15}
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
-        \hline
+% LONGTABLE seit 16.09.2026 statt table, damit die Tabelle umbrechen kann und keine halbleere Seite entsteht.
+{\footnotesize\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}@{}}
+    \caption{Parameter des Optimierungsproblems.}\label{tab:anh:modell:parameter}\\
+    \hline
+    \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
+    \hline
+    \endfirsthead
+    \hline
+    \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
+    \hline
+    \endhead
         $p^{\mathrm{DA}}_t$ & Auktionspreis des \acs{DA} & \si{\text{\euro}\per MWh} \\
         \hline
         $p^{\mathrm{ID1}}_t$ & Index der letzten Handelsstunde am \acs{IDC} & \si{\text{\euro}\per MWh} \\
@@ -80,18 +85,20 @@ Danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen i
         \hline
         $\varepsilon_r$ & Vorzeichen des Ausgleichs, minus eins in positiver und plus eins in negativer Richtung & -- \\
         \hline
-    \end{tabular}
-\end{table}
+\end{longtable}}
 
-\begin{table}[H]
-    \centering
-    \caption{Variablen des Optimierungsproblems, alle stetig und nichtnegativ mit Ausnahme der Binärvariablen.}
-    \label{tab:anh:modell:variablen}
-    \footnotesize\renewcommand{\arraystretch}{1.15}
-    \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.60\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}@{}}
-        \hline
-        \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
-        \hline
+% LONGTABLE seit 16.09.2026 statt table, damit die Tabelle umbrechen kann und keine halbleere Seite entsteht.
+{\footnotesize\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.60\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}@{}}
+    \caption{Variablen des Optimierungsproblems, alle stetig und nichtnegativ mit Ausnahme der Binärvariablen.}\label{tab:anh:modell:variablen}\\
+    \hline
+    \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
+    \hline
+    \endfirsthead
+    \hline
+    \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
+    \hline
+    \endhead
         $P^{\mathrm{DA,ein}}_t$, $P^{\mathrm{DA,aus}}_t$ & Leistung am \acs{DA} in beiden Richtungen & \si{MW} \\
         \hline
         $P^{\mathrm{IDC,ein}}_t$, $P^{\mathrm{IDC,aus}}_t$ & Leistung am \acs{IDC} in beiden Richtungen & \si{MW} \\
@@ -118,8 +125,7 @@ Danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen i
         \hline
         $K^{\mathrm{deg}}$ & Degradationskosten des Liefertages & Euro \\
         \hline
-    \end{tabular}
-\end{table}
+\end{longtable}}
 
 Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte.
 \begin{equation}
