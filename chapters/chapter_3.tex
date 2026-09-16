@@ -2495,11 +2495,18 @@ Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdat
 %Alle Ergebnisse werden als CSV- und Parquet-Dateien abgelegt und daraus ausgewertet.
 % DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, Parameter legt das Modell fest, Datenquellen je Markt benannt. Alte Fassung:
 %Eingangsdaten sind die Marktdaten, nämlich die Preise und Abrufmengen des Jahres 2025, und die Anlagen- und Marktparameter.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Erloes maximiert, Reservierungspreis je Zeitscheibe minimiert, Suche als Schleife aus Optimierungen, Ausgangsdaten sind alle Groessen der Optimierung. Alte Fassung:
+%Eingangsdaten sind die Marktdaten, nämlich die Preise und Abrufmengen des Jahres 2025, während die Anlagen- und Marktparameter im Modell festgelegt sind.
+%Die Tagesaufbereitung schneidet die Eingangsdaten je Liefertag in 96 Viertelstunden.
+%Die Dispatch-Optimierung löst den ganzen Tag und liefert je Markt den Erlös als Tageskennzahl.
+%Die Suche nach dem Reservierungspreis gibt der Optimierung einen Preis vor und liest die reservierte Leistung zurück, bis der kurative Reservierungspreis gefunden ist.
+%Ausgangsdaten sind die Tageskennzahlen und die Reservierungspreise, die als CSV- und Parquet-Dateien abgelegt und daraus ausgewertet werden.
 Eingangsdaten sind die Marktdaten, nämlich die Preise und Abrufmengen des Jahres 2025, während die Anlagen- und Marktparameter im Modell festgelegt sind.
 Die Tagesaufbereitung schneidet die Eingangsdaten je Liefertag in 96 Viertelstunden.
-Die Dispatch-Optimierung löst den ganzen Tag und liefert je Markt den Erlös als Tageskennzahl.
-Die Suche nach dem Reservierungspreis gibt der Optimierung einen Preis vor und liest die reservierte Leistung zurück, bis der kurative Reservierungspreis gefunden ist.
-Ausgangsdaten sind die Tageskennzahlen und die Reservierungspreise, die als CSV- und Parquet-Dateien abgelegt und daraus ausgewertet werden.
+Die Dispatch-Optimierung maximiert den Erlös der Anlage über den ganzen Tag bei einem vorgegebenen Preis für die kurative Reservierung.
+Die Suche nach dem Reservierungspreis ist eine Schleife aus solchen Optimierungen: Sie gibt den Preis vor, liest die reservierte Leistung je Zeitscheibe zurück und senkt den Preis, bis je Zeitscheibe der kleinste Preis gefunden ist, bei dem die Anlage voll reserviert.
+Ausgangsdaten sind alle Größen der Optimierung, nämlich der Erlös je Markt als wichtigste Tageskennzahl, die Verteilung der Leistung auf die Märkte, die Reservierung je Zeitscheibe und der Ladezustand.
+Die Ausgangsdaten werden als CSV- und Parquet-Dateien abgelegt und daraus ausgewertet.
 
 % ---------------------------------------------------------------
 % UEBERSCHRIFT GEAENDERT am 08.09.2026, Umbau auf drei Abschnitte.
@@ -2828,32 +2835,49 @@ Ausgangsdaten sind die Tageskennzahlen und die Reservierungspreise, die als CSV-
 %Die Rückwirkung der Speicher auf die Preise bildet das Modell ebenfalls nicht ab, sodass die Preise des Jahres 2025 als gegeben gelten.
 % BEGRIFF am 16.09.2026, Kommentar des Verfassers: ungebundener Fahrplan missverstaendlich, jetzt Referenzfahrplan und Referenzerloes. Alte Fassung:
 %Das Modell führt den ungebundenen Fahrplan als Bezug mit, koppelt den Ladezustand über den Tag und entscheidet alle Märkte gemeinsam.
-Das Modell führt den Referenzfahrplan als Bezug mit, koppelt den Ladezustand über den Tag und entscheidet alle Märkte gemeinsam.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, zwei Saetze verbunden. Alte Fassung:
+%Das Modell führt den Referenzfahrplan als Bezug mit, koppelt den Ladezustand über den Tag und entscheidet alle Märkte gemeinsam.
+Das Modell führt als Bezug den Referenzfahrplan mit, also den Fahrplan ohne kurative Bindung aus einem Lauf ohne kurative Reservierung, koppelt den Ladezustand über den Tag und entscheidet alle Märkte gemeinsam.
 % BEGRIFF am 16.09.2026, Kommentar des Verfassers: ungebundener Fahrplan missverstaendlich, jetzt Referenzfahrplan und Referenzerloes. Alte Fassung:
 %Der ungebundene Fahrplan entsteht in einem Lauf mit Preis null und zeigt, wie die Anlage ohne kurative Reservierung vermarktet würde und was die Reservierung verdrängt.
-Der Referenzfahrplan ist der Fahrplan ohne kurative Bindung und entsteht in einem Lauf mit Preis null.
-Der Referenzfahrplan zeigt, wie die Anlage ohne kurative Reservierung vermarktet würde und was die Reservierung verdrängt.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, im Vorsatz aufgegangen: Der Referenzfahrplan ist der Fahrplan ohne kurative Bindung und entsteht in einem Lauf mit Preis null.
+Der Referenzfahrplan zeigt damit, was die Reservierung verdrängt.
 Die Opportunitätskosten der Reservierung entstehen damit im Modell selbst, sodass kein gesonderter Kostenansatz für die Vorhaltung nötig ist.
 Die Kopplung des Ladezustands bindet auch die Stunden vor einer Zeitscheibe, weil das Ladezustandsband die Energie oder den Speicherraum schon vorher bereithalten lässt.
-Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zur \ac{aFRR}-Arbeit in der Lieferviertelstunde.
-Eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses \cite{hornek_value_2025}.
-Der Erlös des Modells bleibt gleichwohl eine obere Schranke, sodass der kurative Reservierungspreis eher zu hoch als zu niedrig ausfällt.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, Ende der Sequenz ist der regelzoneninterne Handel bis fuenf Minuten vor Lieferung. Alte Fassung:
+%Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zur \ac{aFRR}-Arbeit in der Lieferviertelstunde.
+Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zum regelzoneninternen Handel fünf Minuten vor Lieferbeginn.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Begruendung der Optimierung in einem Lauf mit vollstaendiger Preiskenntnis, Abgrenzung zu prognosegestuetzten Modellen. Alte Fassung:
+%Eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses \cite{hornek_value_2025}.
+%Der Erlös des Modells bleibt gleichwohl eine obere Schranke, sodass der kurative Reservierungspreis eher zu hoch als zu niedrig ausfällt.
+Die Optimierung in einem Lauf mit vollständiger Preiskenntnis ist gewählt, weil eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
+Der Abstand zum Betrieb eines Akteurs ist dabei bekannt und begrenzt, denn eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses \cite{hornek_value_2025}.
+Der Erlös des Modells ist damit eine obere Schranke der übrigen Vermarktung, sodass der kurative Reservierungspreis eher zu hoch als zu niedrig ausfällt.
 
 Gelöst wird je Liefertag ein eigenes Problem, sodass kein Ladezustand in den Folgetag übergeht und die Tage untereinander vergleichbar bleiben.
 Zielfunktion und Nebenbedingungen sind linear, sodass das Problem im Basisfall ein lineares Programm ist und die kurative Reservierung jeden Wert zwischen null und der Anschlussleistung annehmen darf.
-Die Mindestgröße von 25\,\si{MW} macht die Reservierung halbstetig und verlangt je Stunde und Richtung eine Binärvariable, sodass das Problem gemischt-ganzzahlig wird.
-Die Mindestgröße wird als Sensitivität geführt, wie in Abschnitt~\ref{sec:input_data} beschrieben.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Mindestgroesse als Option zur Untersuchung einzelner Preise. Alte Fassung:
+%Die Mindestgröße von 25\,\si{MW} macht die Reservierung halbstetig und verlangt je Stunde und Richtung eine Binärvariable, sodass das Problem gemischt-ganzzahlig wird.
+%Die Mindestgröße wird als Sensitivität geführt, wie in Abschnitt~\ref{sec:input_data} beschrieben.
+Zur Untersuchung einzelner Preise kann für die kurative Reservierung eine Mindestgröße festgelegt werden, in der Sensitivität 25\,\si{MW}.
+Die Mindestgröße macht die Reservierung halbstetig und verlangt je Stunde und Richtung eine Binärvariable, sodass das Problem gemischt-ganzzahlig wird, wie in Abschnitt~\ref{sec:input_data} beschrieben.
 Gelöst wird in beiden Fällen mit Gurobi 13.0.2, für das gemischt-ganzzahlige Programm mit einer relativen Optimalitätslücke von 0,01 Prozent und einem Zeitlimit von 60 Sekunden je Lauf als Abbruchkriterium \cite{gurobi_reference_2026}.
 
 Das Modell betrachtet eine einzelne Anlage als Preisnehmer, denn gesucht ist der Preis aus der Sicht eines Betreibers.
 Netzrestriktionen, die Zusammenfassung mehrerer Anlagen zu einem Pool und die Gegenseite der Maßnahme bildet das Modell nicht ab.
 Ohne Netzmodell ist der kurative Bedarf nicht räumlich aufgelöst, sodass jede Zeitscheibe gleich behandelt wird.
-Die Abrufwahrscheinlichkeit bleibt außer Betracht, und der Zuschlag in den Regelleistungsmärkten gilt als sicher.
-Beide Vereinfachungen wirken in eine benennbare Richtung: Ohne Abruf ist der Preis der opportunitätskostenbasierte Teil des Gebots, und die sicheren Zuschläge heben die entgangenen Erlöse an.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, Zuschlag zu den beruecksichtigten Preisen. Alte Fassung:
+%Die Abrufwahrscheinlichkeit bleibt außer Betracht, und der Zuschlag in den Regelleistungsmärkten gilt als sicher.
+Die Abrufwahrscheinlichkeit bleibt außer Betracht, und der Zuschlag in den Regelleistungsmärkten gilt zu den berücksichtigten Preisen als sicher.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Abruf wird gesondert verguetet und fliesst nicht in den Reservierungspreis ein, sichere Zuschlaege loesen die Regelleistungserloese vom Bietverhalten. Alte Fassung, nicht wieder aufnehmen:
+%Beide Vereinfachungen wirken in eine benennbare Richtung: Ohne Abruf ist der Preis der opportunitätskostenbasierte Teil des Gebots, und die sicheren Zuschläge heben die entgangenen Erlöse an.
+Beide Vereinfachungen sind mit dem Produkt vereinbar: Weil ein Abruf gesondert vergütet wird, fließt er nicht in den kurativen Reservierungspreis ein, und die sicheren Zuschläge lösen die Erlöse am Regelleistungsmarkt vom Bietverhalten.
 Die Rückwirkung der Speicher auf die Preise bleibt ebenfalls außer Betracht, sodass die Preise des Jahres 2025 als gegeben gelten.
 Ein Zubau im Gigawattmaßstab drängt die zusätzliche Leistung überwiegend in die Arbitrage, weil die Regelleistungsmärkte mengenmäßig begrenzt sind \cite{garttan_battery_2025}.
 Dort verzehren Speicher die Spreads, indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}.
-Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht als Eingangsgröße in das Modell \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, Zitat ohne Beleg fuer die Aussage entfernt. Alte Fassung:
+%Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht als Eingangsgröße in das Modell \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht als Eingangsgröße in das Modell.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
 % Modellrepository, analysen/10_schrift/kapitel_3, ohne Groessenangabe, weil
@@ -3386,12 +3410,12 @@ Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\
 % STILREGEL 5 am 15.09.2026, Pronomen ueber die Satzgrenze. Alte Fassung:
 %Jede Reservierung nimmt ihr Ladezustandsband aus diesem Vorrat.
 Jede Reservierung nimmt ihr Ladezustandsband aus dem nutzbaren Ladezustand.
-
+% ABSATZ VERBUNDEN 16.09.2026, Kommentar des Verfassers, 3.2.2 ein Absatz.
 Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen.
 Der Satz entspricht der Größenordnung, die sich aus den Investitionskosten eines schlüsselfertigen Speichersystems und seinem Lebensdauerdurchsatz ergibt \cite{rystad_energy_renewables__power_analytics_energy_2026}.
 Der Verschleiß hängt tatsächlich von Temperatur, Ladezustand und Strom ab und ließe sich erst mit zusätzlichen Binärvariablen abbilden \cite{kumtepeli_energy_2020}.
 Das Modell nimmt die Vereinfachung in Kauf, weil die Preissuche das Tagesmodell einige hundert Mal je Tag löst.
-
+% ABSATZ VERBUNDEN 16.09.2026, Kommentar des Verfassers, 3.2.2 ein Absatz.
 Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
 Entscheidungsvariablen sind die Leistungen an den Energiemärkten, die vorgehaltenen Leistungen der Regelleistung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ.
 Anhang~\ref{anh:modell} führt die Variablen vollständig auf.

@@ -1,13 +1,17 @@
 \chapter{Vollständige Formulierung des Optimierungsproblems}
 \label{anh:modell}
 
-Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~\ref{tab:anh:modell:mengen} erklärt die Mengen und Indizes, Tabelle~\ref{tab:anh:modell:parameter} die Parameter und Tabelle~\ref{tab:anh:modell:variablen} die Variablen, danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen in der Reihenfolge Ladezustand, Leistung am Netzanschlusspunkt, Energieband der Vorhaltungen, Day-Ahead, \ac{aFRR}-Arbeit mit ihrem Ausgleich, kurative Reservierung und gesperrte Viertelstunden.
+% NEU GEFASST am 16.09.2026 auf Vorgabe des Verfassers, Anhang C sortiert, Nebenbedingungen benannt, Tabellen kompakt. Alte Fassung:
+%Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~\ref{tab:anh:modell:mengen} erklärt die Mengen und Indizes, Tabelle~\ref{tab:anh:modell:parameter} die Parameter und Tabelle~\ref{tab:anh:modell:variablen} die Variablen, danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen in der Reihenfolge Ladezustand, Leistung am Netzanschlusspunkt, Energieband der Vorhaltungen, Day-Ahead, \ac{aFRR}-Arbeit mit ihrem Ausgleich, kurative Reservierung und gesperrte Viertelstunden.
+Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf.
+Tabelle~\ref{tab:anh:modell:mengen} erklärt die Mengen und Indizes, Tabelle~\ref{tab:anh:modell:parameter} die Parameter und Tabelle~\ref{tab:anh:modell:variablen} die Variablen.
+Danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen in neun Gruppen, jede mit einem Satz benannt.
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Mengen, Indizes und Abbildungen.}
     \label{tab:anh:modell:mengen}
-    \small
+    \footnotesize\renewcommand{\arraystretch}{1.15}
     \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.82\textwidth-\tabcolsep\relax}@{}}
         \hline
         \textbf{Zeichen} & \textbf{Bedeutung} \\
@@ -31,11 +35,11 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~
     \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Parameter des Optimierungsproblems.}
     \label{tab:anh:modell:parameter}
-    \small
+    \footnotesize\renewcommand{\arraystretch}{1.15}
     \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.62\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.20\textwidth-\tabcolsep\relax}@{}}
         \hline
         \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
@@ -79,11 +83,11 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~
     \end{tabular}
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \caption{Variablen des Optimierungsproblems, alle stetig und nichtnegativ mit Ausnahme der Binärvariablen.}
     \label{tab:anh:modell:variablen}
-    \small
+    \footnotesize\renewcommand{\arraystretch}{1.15}
     \begin{tabular}{@{}>{\raggedright\arraybackslash}p{\dimexpr0.22\textwidth-\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.60\textwidth-2\tabcolsep\relax}>{\raggedright\arraybackslash}p{\dimexpr0.18\textwidth-\tabcolsep\relax}@{}}
         \hline
         \textbf{Zeichen} & \textbf{Größe} & \textbf{Einheit} \\
@@ -117,11 +121,13 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~
     \end{tabular}
 \end{table}
 
+Die Zielfunktion maximiert den Nettoerlös des Liefertages über alle geführten Märkte.
 \begin{equation}
     \label{eq:anh:modell:ziel}
     \max \; E^{\mathrm{BESS,ges}} = E^{\mathrm{DA}} + E^{\mathrm{IDC}} + E^{\mathrm{FCR}} + E^{\mathrm{aFRR,L}} + E^{\mathrm{aFRR,E}} + E^{\mathrm{kur}} \; - \; K^{\mathrm{deg}}
 \end{equation}
 
+Die Erlöse je Markt und die Degradationskosten lauten:
 \begin{align}
     E^{\mathrm{DA}} &= \Delta t \sum_{t \in \mathcal{T}} p^{\mathrm{DA}}_t \left( P^{\mathrm{DA,aus}}_t - P^{\mathrm{DA,ein}}_t \right) \label{eq:anh:modell:e_da}\\
     E^{\mathrm{IDC}} &= \Delta t \sum_{t \in \mathcal{T}} \left( p^{\mathrm{IDC,aus}}_t P^{\mathrm{IDC,aus}}_t - p^{\mathrm{IDC,ein}}_t P^{\mathrm{IDC,ein}}_t \right) \label{eq:anh:modell:e_idc}\\
@@ -132,11 +138,13 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~
     K^{\mathrm{deg}} &= c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left[ P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{IDC,aus}}_t + \sum_{r \in \mathcal{R}} \left( P^{\mathrm{aFRR,E}}_{t,r} + P^{\mathrm{aus}}_{t,r} \right) \right] \label{eq:anh:modell:k_deg}
 \end{align}
 
+Die Preise des physischen Handels am \acs{IDC} folgen aus dem \acs{ID1} und dem Spreadaufschlag:
 \begin{equation}
     \label{eq:anh:modell:idc_preise}
     p^{\mathrm{IDC,aus}}_t = p^{\mathrm{ID1}}_t \left( 1 + \frac{a}{2} \right), \qquad p^{\mathrm{IDC,ein}}_t = p^{\mathrm{ID1}}_t \left( 1 - \frac{a}{2} \right)
 \end{equation}
 
+Ladezustandsbilanz, Grenzen des Ladezustands und Randbedingung zu Tagesbeginn und Tagesende:
 \begin{align}
     S_t &= S_{t-1} + \Delta t \left[ \eta^{\mathrm{ein}} \Big( P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} \Big) \right. \nonumber\\
     &\qquad\qquad \left. - \; \frac{1}{\eta^{\mathrm{aus}}} \Big( P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} \Big) \right] && \forall\, t \in \mathcal{T} \label{eq:anh:modell:bilanz}\\
@@ -144,21 +152,25 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~
     S_0 &= S_{96} = S^{0} && \label{eq:anh:modell:rand}
 \end{align}
 
+Leistungsschranke je Richtung, alle Märkte teilen sich die Anschlussleistung:
 \begin{align}
     P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{kur}}_{s(t),\mathrm{pos}} + P^{\mathrm{FCR}}_{s(t)} + B_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} &\le P^{\max} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:leistung_aus}\\
     P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{kur}}_{s(t),\mathrm{neg}} + P^{\mathrm{FCR}}_{s(t)} + B_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} &\le P^{\max} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:leistung_ein}
 \end{align}
 
+Ladezustandsband der Vorhaltungen, in positiver Richtung als gespeicherte Energie und in negativer Richtung als freier Speicherraum:
 \begin{align}
     S_t &\ge S^{\min} + \frac{P^{\mathrm{kur}}_{s(t),\mathrm{pos}} \, \tau^{\mathrm{kur}} + \beta_t \left( P^{\mathrm{aFRR}}_{s(t),\mathrm{pos}} \, \tau^{\mathrm{aFRR}} + P^{\mathrm{FCR}}_{s(t)} \, \tau^{\mathrm{FCR}} \right)}{\eta^{\mathrm{aus}}} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:band_unten}\\
     S_t &\le S^{\max} - \left[ P^{\mathrm{kur}}_{s(t),\mathrm{neg}} \, \tau^{\mathrm{kur}} + \beta_t \left( P^{\mathrm{aFRR}}_{s(t),\mathrm{neg}} \, \tau^{\mathrm{aFRR}} + P^{\mathrm{FCR}}_{s(t)} \, \tau^{\mathrm{FCR}} \right) \right] \eta^{\mathrm{ein}} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:band_oben}
 \end{align}
 
+Energetische Neutralität und Deckung der Degradationskosten am \acs{DA}:
 \begin{align}
     \eta^{\mathrm{ein}} \sum_{t \in \mathcal{T}} P^{\mathrm{DA,ein}}_t &= \frac{1}{\eta^{\mathrm{aus}}} \sum_{t \in \mathcal{T}} P^{\mathrm{DA,aus}}_t \label{eq:anh:modell:da_neutral}\\
     E^{\mathrm{DA}} &\ge c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left( P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t \right) \label{eq:anh:modell:da_deckung}
 \end{align}
 
+Lieferung der \acs{aFRR}-Arbeit anteilig am Abruf, belegte Leistung und Ausgleich am \acs{IDC} nach der Lieferung:
 \begin{align}
     P^{\mathrm{aFRR,E}}_{t,r} &= \alpha_t \, P^{\mathrm{aFRR}}_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_menge}\\
     B_{t,r} &\ge P^{\mathrm{aFRR}}_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_band_res}\\
@@ -167,13 +179,15 @@ Dieser Anhang führt das Optimierungsproblem in geschlossener Form auf. Tabelle~
     \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta \le t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
 \end{align}
 
+Mindestgröße der kurativen Reservierung, nur in der Sensitivität mit Binärvariable:
 \begin{align}
     P^{\mathrm{kur}}_{s(t),r} &\le P^{\max} \, u_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:kur_oben}\\
     P^{\mathrm{kur}}_{s(t),r} &\ge P^{\mathrm{kur,min}} \, u_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:kur_min}\\
     u_{s,r} &\in \{0, 1\} \label{eq:anh:modell:kur_binaer}
 \end{align}
 
-\begin{equation}
-    \label{eq:anh:modell:gesperrt}
-    P^{\mathrm{DA,ein}}_t = P^{\mathrm{DA,aus}}_t = P^{\mathrm{IDC,ein}}_t = P^{\mathrm{IDC,aus}}_t = P^{\mathrm{FCR}}_{s(t)} = P^{\mathrm{aFRR}}_{s(t),r} = P^{\mathrm{aFRR,E}}_{t,r} = P^{\mathrm{aus}}_{t,r} = P^{\mathrm{kur}}_{s(t),r} = 0 \qquad \forall\, t \in \mathcal{T}^{\mathrm{sp}}, \; r \in \mathcal{R}
-\end{equation}
+Gesperrte Viertelstunden an den beiden Tagen der Zeitumstellung:
+\begin{align}
+    P^{\mathrm{DA,ein}}_t = P^{\mathrm{DA,aus}}_t = P^{\mathrm{IDC,ein}}_t = P^{\mathrm{IDC,aus}}_t &= 0 && \forall\, t \in \mathcal{T}^{\mathrm{sp}} \label{eq:anh:modell:gesperrt}\\
+    P^{\mathrm{FCR}}_{s(t)} = P^{\mathrm{aFRR}}_{s(t),r} = P^{\mathrm{aFRR,E}}_{t,r} = P^{\mathrm{aus}}_{t,r} = P^{\mathrm{kur}}_{s(t),r} &= 0 && \forall\, t \in \mathcal{T}^{\mathrm{sp}}, \; r \in \mathcal{R} \label{eq:anh:modell:gesperrt_b}
+\end{align}
