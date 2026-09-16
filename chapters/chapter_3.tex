@@ -3873,7 +3873,7 @@ Auch am \ac{IDC} handelt die Anlage Energie, bewertet wird dieser Handel aber je
 Im kontinuierlichen Handel kommt jedes Geschäft zu seinem eigenen Preis zustande, sodass es für eine Viertelstunde keinen einheitlichen Preis gibt.
 Eine viertelstundenübergreifende Arbitrage greift deshalb auf volumengewichtete Durchschnittspreise zurück.
 % HIERHER VERSCHOBEN 15.09.2026, D1, zur Preisbasis.
-Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
+% VERSCHOBEN am 16.09.2026, Kommentar des Verfassers, hinter die Modellierung des Aufschlags: Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
 % DURCHSICHT 15.09.2026, D1, doppeltes deshalb. Alte Fassung:
 %Das Modell lässt deshalb nur Arbitrage zwischen Viertelstunden zu, während ein Betreiber dieselbe Viertelstunde mehrfach handeln und eine frühere Position innerhalb desselben Lieferzeitpunktes wieder glattstellen kann.
 Das Modell lässt nur Arbitrage zwischen Viertelstunden zu, während ein Betreiber dieselbe Viertelstunde mehrfach handeln und eine frühere Position innerhalb desselben Lieferzeitpunktes wieder glattstellen kann.
@@ -3885,6 +3885,15 @@ Weil ein Betreiber dieselbe Viertelstunde mehrfach handeln kann, verbessert jede
 %Das Modell bildet diesen Vorteil über einen Aufschlag ab, der Verkäufe über und Käufe unter dem Index bewertet und den Spread damit weitet.
 Das Modell bildet den Vorteil des mehrfachen Handels über einen Aufschlag ab, der Verkäufe über und Käufe unter dem Index bewertet und den Spread damit weitet.
 Die Höhe des Aufschlags wird als Sensitivität variiert.
+% HIERHER VERSCHOBEN am 16.09.2026, Kommentar des Verfassers, als Alternative zum Aufschlag genannt.
+Der Höchst- und der Niedrigstpreis einer Viertelstunde wären ein anderes Maß für den Vorteil des mehrfachen Handels, bleiben aber außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
+% ERGAENZT am 16.09.2026, Befund des Verfassers: der IDC hatte als einziger Markt keinen Erloesterm im Kapitel. Gleichung wie Anhang C, eq:anh:modell:e_idc mit eq:anh:modell:idc_preise.
+Der Erlös am \ac{IDC} ist die über den Tag summierte Differenz aus Verkäufen zum um den halben Aufschlag $a$ erhöhten und Käufen zum um den halben Aufschlag gesenkten \ac{ID1}.
+
+\begin{equation}
+    \label{eq:erloes_idc}
+    E^{\mathrm{IDC}} = \Delta t \sum_{t \in \mathcal{T}} p^{\mathrm{ID1}}_t \left[ \left( 1 + \frac{a}{2} \right) P^{\mathrm{IDC,aus}}_t - \left( 1 - \frac{a}{2} \right) P^{\mathrm{IDC,ein}}_t \right]
+\end{equation}
 % VERSCHOBEN 15.09.2026, D2.12, Satz zu den gefuehrten Maerkten: Neben dem \ac{IDC} führt das Modell den \ac{DA}, sodass sich Arbitrage zu unterschiedlichen Zeitpunkten ergibt und beide Märkte zusammen abbilden, was eine Anlage am Spotmarkt erreichen kann.
 % VERSCHOBEN 15.09.2026, D1, zur Preisbasis: Der Höchst- und der Niedrigstpreis einer Viertelstunde bleiben außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
 
@@ -4028,10 +4037,12 @@ Der höchste Zuschlag wird deshalb allein als Sensitivität geführt.
 Der Erlös der \ac{aFRR}-Leistung ist ihr Leistungspreis mal der vorgehaltenen Leistung.
 Je vorgehaltenem Megawatt bindet sie ein Ladezustandsband von einer Stunde.
 Vorgehalten wird je Richtung, und die Vorhaltung bleibt über die Vier-Stunden-Zeitscheibe konstant.
-Die Modellierung der \ac{aFRR} ist eine Stufe einer Leiter aus sechs Stufen.
-Die ersten drei Stufen lauten ohne \ac{aFRR}, nur Leistung zum Mittelpreis und nur Leistung zum höchsten Zuschlag.
-Die drei weiteren Stufen fügen die Arbeit hinzu, nämlich anteilig am Abruf, bis zur vorgehaltenen Leistung oder bis zu zehn Prozent des deutschen Abrufs.
-Der Basisfall nutzt die vierte Stufe, also die Leistung zum Mittelpreis und die Arbeit anteilig am Abruf.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: keine Stufenleiter, nur die Sensitivitaeten der aFRR-Leistung. Alte Fassung:
+%Die Modellierung der \ac{aFRR} ist eine Stufe einer Leiter aus sechs Stufen.
+%Die ersten drei Stufen lauten ohne \ac{aFRR}, nur Leistung zum Mittelpreis und nur Leistung zum höchsten Zuschlag.
+%Die drei weiteren Stufen fügen die Arbeit hinzu, nämlich anteilig am Abruf, bis zur vorgehaltenen Leistung oder bis zu zehn Prozent des deutschen Abrufs.
+%Der Basisfall nutzt die vierte Stufe, also die Leistung zum Mittelpreis und die Arbeit anteilig am Abruf.
+Für die \ac{aFRR}-Leistung führt das Modell drei Sensitivitäten, nämlich ohne \ac{aFRR}, mit dem mengengewichteten Mittelpreis und mit dem höchsten Zuschlag, und der Basisfall rechnet mit dem Mittelpreis.
 
 \begin{equation}
     \label{eq:erloes_afrr_l}
@@ -4189,11 +4200,17 @@ Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie
 %Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird.
 %Weil jeder Tag viele Läufe verlangt, rechnet das Modell im Standard mit stetiger Reservierung und schaltet die Mindestgröße nur dort zu, wo ihre Wirkung geprüft wird.
 Die Zielfunktion trägt für die kurative Reservierung den Erlös aus vorgegebenem Preis mal reservierter Leistung.
-Die Anlage reserviert deshalb nur dann, wenn der vorgegebene Preis die entgangenen Erlöse der übrigen Märkte übersteigt.
-Anders als die übrigen Märkte trägt die kurative Reservierung keinen beobachteten Preis, sondern einen vorgegebenen, und sie ist eine Variable je Viertelstunde und Richtung.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers: entgangen ist der kombinierte Erloes der uebrigen Maerkte. Alte Fassung:
+%Die Anlage reserviert deshalb nur dann, wenn der vorgegebene Preis die entgangenen Erlöse der übrigen Märkte übersteigt.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers vom 16.09.2026: verdraengt werden Handelsaktionen, nicht Erloese; Variable in einem Satz. Alte Fassung:
+%Die Anlage reserviert deshalb nur dann, wenn der vorgegebene Preis den Erlös übersteigt, den die übrigen Märkte zusammen in derselben Stunde erbringen würden.
+Die Anlage reserviert deshalb nur dann, wenn der vorgegebene Preis den Wert der Handelsaktionen übersteigt, die die Reservierung in derselben Stunde an den übrigen Märkten verdrängt.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers vom 16.09.2026: verdraengt werden Handelsaktionen, nicht Erloese; Variable in einem Satz. Alte Fassung:
+%Anders als die übrigen Märkte trägt die kurative Reservierung keinen beobachteten Preis, sondern einen vorgegebenen, und sie ist eine Variable je Viertelstunde und Richtung.
 % DURCHSICHT 15.09.2026, D1. Alte Fassung:
 %Die kurative Reservierung bleibt über ihre Zeitscheibe konstant, die von einer vollen Stunde zur nächsten läuft, sodass jeweils vier aufeinanderfolgende Viertelstunden dieselbe reservierte Leistung tragen.
-Die Variable bleibt über ihre Zeitscheibe konstant, die von einer vollen Stunde zur nächsten läuft, sodass jeweils vier aufeinanderfolgende Viertelstunden dieselbe reservierte Leistung tragen.
+%Die Variable bleibt über ihre Zeitscheibe konstant, die von einer vollen Stunde zur nächsten läuft, sodass jeweils vier aufeinanderfolgende Viertelstunden dieselbe reservierte Leistung tragen.
+Die reservierte Leistung ist eine Variable je Richtung mit vorgegebenem Preis, die über eine Zeitscheibe von einer vollen Stunde zur nächsten konstant bleibt, also für vier aufeinanderfolgende Viertelstunden.
 Die Reservierung tritt in dieselbe Leistungsschranke wie die \ac{FCR} und die \ac{aFRR} und bindet darüber hinaus ein Ladezustandsband, das den Abruf über die Bindungsdauer deckt.
 Die positive und die negative Reservierung betrachtet das Modell getrennt, jede mit eigener Leistung und eigenem Ladezustandsband.
 \begin{equation}
@@ -4727,32 +4744,54 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
 %Beim Vollreservierungspreis lässt sich keine einzelne Stunde mehr um die Toleranz senken, ohne dass eine Stunde aus der vollen Reservierung fällt.
 %Die positive und die negative Richtung bleiben dabei als zwei Produkte getrennt.
 Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf die reservierte Leistung abliest.
-Ein Lauf löst stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
-Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt.
-Gesucht ist je Stunde und Richtung der kleinste Preis, bei dem die Stunde voll reserviert ist, und dafür eignet sich die Bisektion, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
+% GESTRICHEN am 16.09.2026, Kommentar des Verfassers, Dopplung: Ein Lauf löst stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: geteilt und Toleranz begruendet (Gurobi FeasibilityTol 1e-6 mal 100 MW, Kommentar in curative_breakeven.py). Alte Fassung:
+%Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt.
+Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung.
+Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt, also 0,01\,\si{MW} von 100\,\si{MW}.
+Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz einhält, und sie liegt mit dem Hundertfachen dieser Toleranz sicher außerhalb des numerischen Rauschens.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: Bisektion als erste Iteration zur Eingrenzung des Preises. Alte Fassung:
+%Gesucht ist je Stunde und Richtung der kleinste Preis, bei dem die Stunde voll reserviert ist, und dafür eignet sich die Bisektion, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
+Gesucht ist je Stunde und Richtung der kleinste Preis, bei dem die Stunde voll reserviert ist.
+Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, das sich eignet, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
 Die Bisektion prüft die Mitte eines Preisintervalls mit einem Lauf: Ist die Stunde dort voll, entfällt die obere Hälfte des Intervalls, sonst die untere.
-Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) zeigt.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, logarithmische Preisachse im Text genannt. Alte Fassung:
+%Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) zeigt.
+Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) auf einer logarithmischen Preisachse zeigt.
 Das Startintervall reicht bis zu einem Deckel von 800 Euro je Megawatt und Stunde, der sich verdoppelt, bis jede Stunde voll ist, höchstens bis 51.200 Euro je Megawatt und Stunde.
 Von 800 Euro je Megawatt und Stunde bis zur Toleranz sind 14 Halbierungen nötig, und weil sich alle 48 Paare aus Stunde und Richtung mit derselben Intervallmitte einen Lauf teilen, genügen 84 bis 167 Läufe je Tag statt 672, im Mittel rund 130.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
 % UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
 % Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
 % Fassung:
 %    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
 % BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
 %    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
-    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt.}
+% BILDUNTERSCHRIFT ergaenzt am 16.09.2026, Frage des Verfassers: Preisachse logarithmisch, geprueft wird stets die Intervallmitte. Alte Fassung:
+%    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt.}
+    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
     \label{fig:reservierungspreis_bisektion}
 \end{figure}
 
-Die Bisektion allein reicht nicht aus, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom ganzen Preisvektor.
-Die Stunden konkurrieren um dieselbe Leistung und denselben Ladezustand, sodass eine Stunde, deren Preis steigt, eine andere verdrängen kann.
+% NEU GEFASST am 16.09.2026, Kommentar des Verfassers: nach der ersten Iteration koennen begrenzte Stunden wieder fuer die Arbitrage genutzt werden, Fehler des Verfahrens aus der Verschiebung des Loesungsraums durch die Zeitkopplung. Alte Fassung:
+%Die Bisektion allein reicht nicht aus, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom ganzen Preisvektor.
+%Die Stunden konkurrieren um dieselbe Leistung und denselben Ladezustand, sodass eine Stunde, deren Preis steigt, eine andere verdrängen kann.
+Die Bisektion allein reicht nicht aus, denn nach der ersten Iteration können Stunden, deren obere Grenze schon feststeht, wieder für die Arbitrage genutzt werden.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, Preisvektor erklaert. Alte Fassung:
+%Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom ganzen Preisvektor.
+Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom Preisvektor, also den 48 Preisen aller Stunden und beider Richtungen des Tages zusammen.
+Die Zeitkopplung der kurativen Reservierung über den Ladezustand verschiebt den Lösungsraum, sobald der Preis einer anderen Stunde steigt.
 Die erste Iteration findet die Schwelle jeder Stunde deshalb nur unter einem für den ganzen Tag einheitlichen Preis.
-Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, am 11.02.2025 zum Beispiel 8 von 24 Stunden in positiver und 9 von 24 in negativer Richtung.
-Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt den Grund: Steigt die Schwelle während der Suche, kann die obere Grenze des Intervalls ihr nicht mehr folgen, denn die Bisektion senkt die obere Grenze nur.
+% DURCHSICHT 16.09.2026, Kommentar des Verfassers, ohne Zahlen, dafuer der Grund. Alte Fassung:
+%Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, am 11.02.2025 zum Beispiel 8 von 24 Stunden in positiver und 9 von 24 in negativer Richtung.
+Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, weil jede Stunde ihre Schwelle in einem Lauf gefunden hat, in dem die übrigen Stunden denselben Preis trugen und deshalb anders um Leistung und Ladezustand konkurrierten.
+% NEU GEFASST am 16.09.2026, Frage des Verfassers: warum die Bisektion die untere Grenze weiter anhebt. Alte Fassung:
+%Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt den Grund: Steigt die Schwelle während der Suche, kann die obere Grenze des Intervalls ihr nicht mehr folgen, denn die Bisektion senkt die obere Grenze nur.
+Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt schematisch, was dann geschieht: Steigt die Schwelle über die schon gesetzte obere Grenze, ist jede weitere Mitte nicht voll, und die Bisektion hebt nach ihrer Regel nur die untere Grenze an, bis das Intervall sich schließt.
+Die obere Grenze prüft die Bisektion nie erneut, sodass sie bei einem Preis endet, bei dem die Stunde nicht mehr voll ist, ohne es zu bemerken.
 Eine Bisektion je Stunde gegen den Vektor führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 
 Das Verfahren löst das Problem in zwei Iterationen, die Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
@@ -4768,7 +4807,7 @@ Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der n
     \centering
 % DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
 %    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-    \includegraphics[height=0.55\textheight,width=\textwidth,keepaspectratio]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
 % BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
 %    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
     \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
@@ -4878,7 +4917,9 @@ Beide Iterationen zusammen verlangen je Tag einige hundert Läufe.
 Die Suche ist die innerste von mehreren Schleifen, nämlich über Tage, Konfigurationen und Studien, wie Abbildung~\ref{fig:schleifenebenen} zeigt.
 Innerhalb eines Tages steht die Suche neben einem Preis-Sweep über zehn vorgegebene Preise.
 Eine der Studien ist der $\lambda$-Hebel, der die Preise des \ac{IDC} mit einem Faktor $\lambda$ zwischen 1,0 und 2,0 um ihr Tagesmittel streckt und damit den Spread erhöht.
-Eine andere Studie ist die Leiter der \ac{aFRR}-Modellierung.
+% DURCHSICHT 16.09.2026, Leiter nicht mehr im Text. Alte Fassung:
+%Eine andere Studie ist die Leiter der \ac{aFRR}-Modellierung.
+Eine andere Studie sind die Sensitivitäten der Regelleistungsmodellierung.
 Die Studie Einzelmarkt optimiert jeden Markt für sich und trägt den Vergleich je Markt in der Validierung.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem

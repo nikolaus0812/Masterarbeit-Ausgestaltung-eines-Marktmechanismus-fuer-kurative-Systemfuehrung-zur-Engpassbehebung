@@ -218,6 +218,7 @@ steht, gilt der Begriff als undefiniert.
 | Einplanung, Scharfschaltung, Auslösung, Abruf, Umsetzung, Reaktionszeit, Bindungsdauer | 2.1.2 Absatz 2, seit 16.09.2026 nach InnoSys 2030 |
 | Quelle und Senke | 2.1.2 Absatz 3 |
 | Bemessungsgrundlage | 2.1.3 Absatz 1 |
+| Arbitrage | 2.3.5 Absatz 1, seit 16.09.2026 |
 
 **Handlung des Akteurs.** Der Akteur *setzt* die Leistungsänderung *um*, das
 Leitsystem des ÜNB *löst* die Maßnahme *aus*. *Aktivieren* und *Aktivierung*
