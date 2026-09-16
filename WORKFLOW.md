@@ -211,3 +211,34 @@ ergeben. Der Zyklus fängt sie an bestimmten Stellen ab.
 | Absatz ohne Konsequenz | Zeile *Aufbau* endet mit der Konsequenz, Frage 3 der Fremdleser-Prüfung |
 | Pronomen und unbestimmte Nominalphrasen ohne Bezug | Frage 2 der Fremdleser-Prüfung, Suchmuster U3 und U4 |
 | Fachliche Pauschalisierung | Zeile *Nicht sagen*, Stilregel 9 |
+
+---
+
+## 7 Kommentardurchgang des Verfassers, seit 16.09.2026
+
+Nach der Neufassung eines Kapitels liest der Verfasser den Text selbst und
+kommentiert ihn. Dafuer erzeugt Claude eine Kommentardatei je Kapitel, fuer
+Kapitel 3 `KOMMENTARE_KAP3.md`, mit dem gerenderten Text als nummerierte
+Absaetze und Saetze und einem Feld *Kommentar* unter jedem Absatz. Die Datei
+ersetzt die Aenderungslisten aus `archiv/` als Vorlage.
+
+Ablauf:
+
+1. Der Verfasser traegt seine Kommentare in die Felder ein, in freier Form:
+   Streichungen, neue Saetze, Verbindungen, inhaltliche Hinweise und die
+   Entscheidungen zu den offenen Vorschlaegen aus `DURCHSICHT_KAP1_3.md`
+   (Kennung und ja oder nein). Absaetze ohne Aenderung bleiben leer.
+2. Claude liest allein die Kommentardatei und arbeitet Absatz fuer Absatz
+   ein. Kommentare des Verfassers haben Vorrang vor den Vorschlaegen der
+   Durchsicht. Trifft ein Kommentar einen Absatz, zu dem ein offener
+   Vorschlag steht, gilt der Kommentar, und der Vorschlag entfaellt, sofern
+   der Verfasser ihn nicht ausdruecklich annimmt.
+3. Inhaltliche Hinweise ohne Wortlaut formuliert Claude nach den Stilregeln
+   und legt den neuen Absatz im Sammelmodus vor, bevor er in die Datei geht.
+   Wortlaut des Verfassers geht unveraendert in die Datei, nur gegen die
+   Pruefsuite geprueft.
+4. Nach jedem Unterabschnitt Pruefsuite, Build und Protokolleintrag, Commit
+   je Kapitel. Keine Subagenten in diesem Schritt, die Fremdleser-Pruefung
+   entfaellt, weil der Verfasser selbst liest.
+5. Die Kommentardatei wird nach der Einarbeitung nach `archiv/` verschoben,
+   die Kommentare stehen dann im Protokoll.

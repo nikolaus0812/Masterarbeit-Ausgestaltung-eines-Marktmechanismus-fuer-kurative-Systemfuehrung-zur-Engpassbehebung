@@ -36,13 +36,20 @@ literature/PDFs, literature/txt   Volltexte, nicht versioniert
 figures/                          Abbildungen, PDF
 tools/pruefen.py                  Pruefsuite
 tools/quellencheck.py             Volltextsuche in den Quellen
-ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen
-STRUKTUR.md                       Gliederung und Stand von Kapitel 3
-AENDERUNGEN_KAP1_2.md             Betreuerkommentare und Kuerzungen als Aenderungsliste
-AENDERUNGEN_KAP3.md               Aenderungsliste Kapitel 3 nach den Stilregeln
-KUERZUNGEN_KAP1_2.md              Fundstellen der Kuerzungen, Zeilen der Fassung 74a9d8d
-WORKFLOW.md                       Vorgehen fuer Korrektur und Neufassung
+ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen, nur anhaengen, nie ganz lesen
+WORKFLOW.md                       Vorgehen fuer Korrektur, Neufassung und Kommentardurchgang
+DURCHSICHT_KAP1_3.md              Offene Vorschlaege der Durchsicht vom 15.09.2026, Liste F
+KOMMENTARE_KAP3.md                Kommentardatei des Verfassers zu Kapitel 3, seit 16.09.2026
+analysen/                         Eigene Auswertungen mit Daten und Skripten als Belege
+archiv/                           Umgesetzte Arbeitsdokumente, nur zum Nachschlagen:
+                                  AENDERUNGEN_KAP1_2.md, AENDERUNGEN_KAP3.md,
+                                  KUERZUNGEN_KAP1_2.md, STRUKTUR.md
 ```
+
+Am 16.09.2026 aufgeraeumt. Die vier Arbeitsdokumente in `archiv/` sind
+vollstaendig umgesetzt, ihre Entscheidungen stehen im Protokoll. Verweise
+auf sie in dieser Datei und in `WORKFLOW.md` gelten als Verweise auf das
+Archiv. Aktiv sind allein `DURCHSICHT_KAP1_3.md` und `KOMMENTARE_KAP3.md`.
 
 Build in dieser Reihenfolge, biber und nicht bibtex. Vor jeder Durchsicht am
 PDF neu bauen.
@@ -86,9 +93,12 @@ abgelöst, weil es den Zusammenhang zwischen den Sätzen verloren hat. Der Ablau
 steht in `WORKFLOW.md`, dort auch der Absatzplan, die Fremdleser-Prüfung und
 die Zettel, die du mit jedem Absatz lieferst.
 
-Für die Korrektur der Kapitel 1 und 2 ist `AENDERUNGEN_KAP1_2.md` die Vorlage.
-Sie führt je Absatz die Befunde des Betreuers und die Kürzungen zusammen.
-Für Kapitel 3 gilt `AENDERUNGEN_KAP3.md` zusammen mit `STRUKTUR.md`.
+Die Korrektur der Kapitel 1 bis 3 nach den Änderungslisten ist am 15.09.2026
+abgeschlossen, die Listen liegen in `archiv/`. Seit dem 16.09.2026 gilt der
+Kommentardurchgang nach `WORKFLOW.md` Abschnitt 7: Der Verfasser kommentiert
+den Text in `KOMMENTARE_KAP3.md`, Claude arbeitet die Kommentare ein, und
+die Kommentare haben Vorrang vor den offenen Vorschlägen in
+`DURCHSICHT_KAP1_3.md`. In diesem Schritt keine Subagenten.
 
 ---
 
