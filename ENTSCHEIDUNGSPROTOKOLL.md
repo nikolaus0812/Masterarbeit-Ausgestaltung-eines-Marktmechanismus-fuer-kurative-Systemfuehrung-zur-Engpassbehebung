@@ -1078,6 +1078,92 @@ und das Ergebnis der 1. Iteration steht rechts.
 unterschieden sich allein im Kriterium, gilt nur fuer die Bisektion und ist
 darauf eingegrenzt.
 
+### 17.09.2026, Einheit Euro je Megawatt und Stunde als Symbol
+
+Kommentar des Verfassers: "und Euro je Megawatt je Stunde bitte als Einheiten."
+
+Betrifft extras/macros.tex, chapters/chapter_2.tex und chapters/chapter_3.tex.
+Neues Makro:
+
+    \newcommand{\EurMWh}{\si[inter-unit-product=\ensuremath{\mathord{\cdot}}]
+                          {\euro/(MW.h)}}
+
+Im Text steht \EurMWh{} mit Klammern, damit das Leerzeichen dahinter nicht
+verschluckt wird. Gesetzt wird Euro je Megawatt und Stunde, nicht Euro je
+Megawattstunde; die beiden Groessen bleiben nach Abschnitt 8 von CLAUDE.md
+getrennt. Ersetzt sind die ausgeschriebenen Stellen im Fliesstext und in
+Bildunterschriften, nicht die Stellen in Kommentaren.
+
+**Offen, nicht stellvertretend entschieden.** Ob Euro je Megawattstunde und
+Tausend Euro je Megawatt und Jahr ebenfalls als Symbol gesetzt werden. Bis zur
+Entscheidung des Verfassers bleiben sie ausgeschrieben.
+
+### 17.09.2026, Grenzpreisverfahren der Regelarbeit nach Kapitel 2
+
+Frage des Verfassers zur Verguetung der aFRR-Arbeit im Erloesindex: "also ist
+das auch eine teilweise Ueberschaetzung, da er ja eigentlich von einer
+Verguetung vom IDA1 plus 50 Prozent ausgeht?" Danach: "ok, sollten wir das
+nicht noch in Kapitel 2 ergaenzen?"
+
+**Befund.** Keine Ueberschaetzung. Die Regelarbeit wird nach dem
+Grenzpreisverfahren verguetet und nicht zum Gebotspreis. Beleg: Verordnung (EU)
+2017/2195, Seite 28, Artikel 30 Absatz 1 Buchstabe a, die Methode "muss auf dem
+Grenzpreisverfahren ('pay as cleared') beruhen", gefunden mit
+tools/quellencheck.py. Der Gebotspreis des Index, also IDA-1 plus
+beziehungsweise minus 50 Prozent, entscheidet damit nur ueber den Abruf.
+
+**Entscheidung.** Die Regel steht in 2.3.4 bei der Verguetung der
+Regelleistung, weil sie dort hingehoert und Kapitel 3 sie sonst zweimal sagt.
+In 3.3.1 bleibt ein Verweis auf den Abschnitt.
+
+**Begriff.** Grenzpreis ist nach Abschnitt 5 von CLAUDE.md fuer den Preis
+belegt, ab dem sich Ein- oder Ausspeicherung lohnt. Der Grenzpreis der
+Regelarbeit ist etwas anderes und traegt deshalb im Text immer das Attribut
+"der Regelarbeit".
+
+### 17.09.2026, Fahrplan mit und ohne die Mindestgroesse, neuer Anhang F
+
+Auftrag des Verfassers: "fuer den letzten Teil der Validierung wuerde ich
+gerne diesen Dispatch einmal mit und ohne Mindestgebot zeigen. In diesem
+Dokument ist ohne das 25-MW-Mindestgebot und im Optimierungsprojekt liegt er
+noch mit ab. Bitte packe ohne in den Anhang und mit in das Dokument. Verweise
+dann einmal auf den Anhang."
+
+Betrifft chapters/chapter_3.tex Abschnitt 3.3.3, den neuen Anhang
+extras/attachment_dispatch.tex, main.tex, tools/pruefen.py und die beiden
+Abbildungen figures/chapter_3/dispatch_festpreis_2025-02-11_p5.pdf sowie
+figures/anhang/dispatch_festpreis_2025-02-11_p5_ohne_mindestgebot.pdf.
+
+**Entscheidung.** Im Text steht der Fahrplan mit der Mindestgroesse von
+25 MW, im Anhang F derselbe Tag ohne sie, und 3.3.3 verweist mit einem Satz
+auf den Anhang. Weil die Mindestgroesse nach Abschnitt 7 Nummer 3 von CLAUDE.md
+eine Sensitivitaet und nicht der Basisfall ist, nennen die Bildunterschrift und
+ein eigener Satz sie ausdruecklich, und der Anhang sagt im ersten Satz, dass
+der Basisfall keine Mindestgroesse kennt.
+
+**Eigenstaendige Ableitung.** Der Kopf von dispatch_festpreis.py zaehlt "12
+Slots mit Ladereservierung unter 25 MW". Eine eigene Auswertung der
+LP-Zeitreihe zeigt, dass die kurative Reservierung innerhalb einer Stunde
+konstant ist, sodass die zwoelf Viertelstunden drei Stunden sind, naemlich
+18,329 MW in Stunde 3, 0,385 MW in Stunde 6 und 0,853 MW in Stunde 8, alle in
+negativer Richtung. Der Text nennt deshalb drei Stunden und nicht zwoelf
+Viertelstunden. Beleg:
+results/einzellauf/run_20260914_110947/2025-02-11/timeseries/
+2025-02-11_pres5.csv im Modellrepository, gleiche Werte in run_20260911_165418
+und run_20260912_105213.
+
+**Zahlen.** Kurativer Erloes des Tages 7.140 Euro ohne und 7.042 Euro mit der
+Mindestgroesse, also 1,4 Prozent Unterschied. Der Zielfunktionswert sinkt von
+4.443.596 auf 4.439.941 Euro, also um 0,08 Prozent; diese Zahl steht nicht im
+Text.
+
+**Vorbehalt.** results/sensitivitaet/sensi0_basis fuehrt denselben Tag
+inzwischen mit 7.118 Euro und ohne Stunde unter 25 MW, weil der laufende
+Jahreslauf mit der neuen Einstellung rechnet. Die LP-Belege stehen deshalb in
+den drei genannten Einzellaeufen. Dass der Unterschied zwischen beiden
+Abbildungen ausschliesslich die Mindestbindung ist, steht als geprueft im Kopf
+von dispatch_festpreis.py und ist nicht eigens nachgerechnet.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -7809,6 +7895,94 @@ doppelten Bedeutung von Toleranz erledigt.
 
 **Seitenstand.** Abbildung 3.2 auf Seite 42, Abbildung 3.3 auf Seite 43,
 Kapitel 3 endet vor Seite 50, Anhang D auf den Seiten 77 und 78.
+
+### 17.09.2026, Fuellgrad der ersten Iteration und offene Maerkte
+
+Kommentar des Verfassers zur Zeitkopplung in 3.2.4: "hier koennen wir noch
+eine Zahl ergaenzen, welchen Fuellgrad wir im Schnitt erhalten und welche
+Maerkte noch offen bleiben ueber das Jahr gesehen." Danach die Frage: "warum
+nutzt er noch aFRR? Ist aFRR Energie oder was ist das? Ansonsten ergibt das
+keinen Sinn, da die aFRR-Vier-Stunden-Reservierungsfenster eigentlich relativ
+gut verdraengt werden koennen."
+
+**Eigene Auswertung.** analysen/vollreservierung_pruefung/
+fuellgrad_erste_iteration.py und afrr_block_offene_stunden.py. Nach der ersten
+Iteration sind in positiver Richtung 91,7 Prozent und in negativer Richtung
+89,6 Prozent der Leistung reserviert, 18 beziehungsweise 23 Prozent der Stunden
+bleiben nicht voll. In den offenen Stunden steht in 16 Faellen noch aFRR-
+Leistung.
+
+**Befund zur aFRR.** Die zunaechst vermutete Blockkopplung erklaert es nicht:
+in keiner der 16 offenen Stunden liegt im selben Vier-Stunden-Block eine
+guenstigere Stunde. Ursache sind der Indifferenzpunkt, bei dem die Optimierung
+zwischen aFRR und kurativer Reservierung gleich gut steht, und die Zeitkopplung
+des Ladezustands. Die eigene Hypothese ist damit widerlegt und nicht wieder
+aufzunehmen.
+
+### 17.09.2026, 3.2.4 zweite Iteration praeziser, Wort Kriterium heraus
+
+Kommentare des Verfassers: "das Kriterium der Bisektion lautet in der zweiten
+Iteration, dass alle Stunden voll reserviert bleiben. Was fuer ein Kriterium?
+Erklaere einfacher." Danach: "probiere bei der 2. Iteration nicht alles von der
+Bisektion zu wiederholen, aber praezise auszudruecken, was gemacht wird." Und:
+"Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis. Beim
+Vollreservierungspreis faellt eine Stunde aus der vollen Reservierung, sobald
+eine einzelne Stunde noch weiter sinkt. Verstehe die Aussage nicht."
+
+**Entscheidungen.** Das Wort Kriterium kommt in 3.2.4 nicht mehr vor, an seiner
+Stelle steht, was geprueft wird. Die zweite Iteration wiederholt die Regel der
+Bisektion nicht, sondern nennt nur, welche Grenzen sie setzt und welche Stunden
+der Preis in der Mitte voll reservieren muss. Der Satz zum
+Vollreservierungspreis ist ersetzt, weil er die Aussage verdreht hat.
+
+**Zurueckgenommen, nicht wieder aufnehmen.** "Beim Vollreservierungspreis
+faellt eine Stunde aus der vollen Reservierung, sobald eine einzelne Stunde
+noch weiter sinkt." "Das Kriterium der Bisektion lautet in der zweiten
+Iteration, dass alle Stunden voll reserviert bleiben."
+
+### 17.09.2026, 3.3 Begriffe Optimierungsmodell und Revenue-Index
+
+Kommentar des Verfassers: "bitte Modell zu Optimierungsmodell und Index zu
+Revenue-Index, damit man auch immer weiss, wovon gesprochen wird."
+
+**Entscheidung.** In Abschnitt 3.3 heisst die eigene Rechnung
+Optimierungsmodell und die Vergleichsgroesse Revenue-Index. Beide Begriffe
+stehen ausgeschrieben, auch wenn ein Absatz sie mehrfach nennt, weil der
+Vergleich sonst nicht lesbar ist. Ausserhalb von 3.3 bleibt die bisherige
+Benennung, bis der Verfasser darueber entscheidet.
+
+### 17.09.2026, 3.3.2 Einzelmaerkte in einem Absatz, Anteile und aFRR
+
+Kommentare des Verfassers: "daraus einen Absatz." Danach: "ist dieser Anteil so
+fest, er ergibt sich einfach aus der regelbasierten Logik oder? Ich wuerde in
+dem Absatz auch noch ergaenzen, dass besonders die aFRR-Maerkte den Ausschlag
+geben, warum gewisse Monate vom Optimierungsmodell so hoeher bewertet werden."
+
+**Entscheidungen.** Die drei Absaetze zu FCR, aFRR und den Energiemaerkten sind
+ein Absatz; die Saetze sind unveraendert, es entfallen nur die Leerzeilen. Zu
+den Anteilen sagt der Text jetzt, dass der Revenue-Index die Maerkte in fester
+Abfolge mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen
+bedient, und dass er allein entscheidet, ob eine Vier-Stunden-Zeitscheibe der
+FCR oder der aFRR-Leistung zufaellt. Beleg im Quelltext:
+calculation_config.py mit power_share, capacity_share und cycle_share als
+Konstanten.
+
+**Begrenzung der Aussage.** Der Text sagt, dass der groesste Abstand je Markt
+in der aFRR liegt, naemlich Faktor 1,51 gegen 1,24 in der FCR und 0,85
+beziehungsweise 0,89 in den Energiemaerkten nach
+analysen/02_validierung/validierung_einzelmarkt.csv. Er sagt nicht, welcher
+Markt welchen Monat treibt, denn eine Aufteilung des marktuebergreifenden
+Abstands je Monat liegt nicht vor; validierung_cross.csv fuehrt nur die Summe.
+Die monatliche Zuordnung bleibt als Angebot an den Verfasser offen.
+
+### 17.09.2026, 3.3.3 Fahrplan mit der Mindestgroesse, Anhang F ohne sie
+
+Der Eintrag steht unter den uebergreifenden Entscheidungen, weil er 3.3.3, den
+neuen Anhang F, main.tex, tools/pruefen.py und zwei Abbildungen betrifft. Fuer
+3.3.3 gilt daraus, dass die Abbildung jetzt die Mindestgroesse von 25 MW
+enthaelt, dass ein Satz die Mindestgroesse benennt, dass ein zweiter Satz den
+Unterschied mit drei Stunden unter 25 MW Ladeleistung und 1,4 Prozent
+kurativem Erloes nennt und dass ein dritter Satz auf Anhang F verweist.
 
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 

@@ -2041,7 +2041,9 @@ Wie in der Regelleistung bestätigt der Netzbetreiber, an dessen Netz die Anlage
 %Das Gebot nennt für jede Zeitscheibe einen Preis in Euro je Megawatt und Stunde, getrennt für die positive und die negative Richtung.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Präqualifizierte Akteure bieten in einer gemeinsamen, täglichen Ausschreibung der deutschen \ac{ÜNB} für alle 24 Stunden des Folgetages, je Stunde und Richtung mit einem eigenen Preis in Euro je Megawatt und Stunde.
-Präqualifizierte Akteure bieten in einer gemeinsamen, täglichen Ausschreibung der deutschen \ac{ÜNB} für alle 24 Stunden des Folgetages, je Stunde und Richtung mit einem eigenen Gebotspreis in Euro je Megawatt und Stunde.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Präqualifizierte Akteure bieten in einer gemeinsamen, täglichen Ausschreibung der deutschen \ac{ÜNB} für alle 24 Stunden des Folgetages, je Stunde und Richtung mit einem eigenen Gebotspreis in Euro je Megawatt und Stunde.
+Präqualifizierte Akteure bieten in einer gemeinsamen, täglichen Ausschreibung der deutschen \ac{ÜNB} für alle 24 Stunden des Folgetages, je Stunde und Richtung mit einem eigenen Gebotspreis in \EurMWh{}.
 Die Zeitscheibe von einer Stunde entspricht der Dauer des ungünstigsten Abrufs.
 Den Bedarf ermitteln die \ac{ÜNB} in den Rechenläufen ihrer Redispatchplanung am Vortag, sodass er vor dem Zuschlag feststeht.
 % FREMDLESER-PRUEFUNG am 15.09.2026, WORKFLOW.md Abschnitt 4. Alte Fassung: Anschluss an die Zusammenfassung je Knoten, eigene Ableitung.
@@ -2475,7 +2477,9 @@ Der kurative Reservierungspreis liefert die Kostenseite der Abwägung, der der \
 Für die Bestimmung wird ein Optimierungsmodell aufgebaut, das abbildet, wie ein \ac{BESS} über einen Liefertag an mehreren Märkten zugleich vermarktet wird.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Für die kurative Reservierung gibt das Modell einen Preis vor, auf den der Betreiber seine Vermarktung einstellt.
-Für die kurative Reservierung gibt das Modell je Stunde und Richtung einen Preis in Euro je Megawatt und Stunde vor, im Folgenden vorgegebener Reservierungspreis genannt, auf den der Betreiber seine Vermarktung einstellt.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Für die kurative Reservierung gibt das Modell je Stunde und Richtung einen Preis in Euro je Megawatt und Stunde vor, im Folgenden vorgegebener Reservierungspreis genannt, auf den der Betreiber seine Vermarktung einstellt.
+Für die kurative Reservierung gibt das Modell je Stunde und Richtung einen Preis in \EurMWh{} vor, im Folgenden vorgegebener Reservierungspreis genannt, auf den der Betreiber seine Vermarktung einstellt.
 Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen.
 
 % ABBILDUNG EINGEBUNDEN am 11.09.2026, Auftrag des Verfassers. PDF aus dem
@@ -3944,7 +3948,9 @@ Der Erlös am \ac{IDC} ist die über den Tag summierte Differenz aus Verkäufen 
 %    \item Leistungspreis der \ac{FCR} je Vier-Stunden-Zeitscheibe als mengengewichteter Durchschnitt der Zuschläge in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}
 % DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, Parameter legt das Modell fest, Datenquellen je Markt benannt. Alte Fassung:
 %Die \ac{FCR} wird zu einem Einheitspreis bezuschlagt, und das Modell übernimmt diesen Preis je Vier-Stunden-Zeitscheibe in Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}.
-Die \ac{FCR} wird zu einem Einheitspreis bezuschlagt, und das Modell übernimmt diesen Preis je Vier-Stunden-Zeitscheibe in Euro je Megawatt und Stunde aus den Ausschreibungsergebnissen auf regelleistung.net \cite{regelleistung_ausschreibungsdaten_2026}.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Die \ac{FCR} wird zu einem Einheitspreis bezuschlagt, und das Modell übernimmt diesen Preis je Vier-Stunden-Zeitscheibe in Euro je Megawatt und Stunde aus den Ausschreibungsergebnissen auf regelleistung.net \cite{regelleistung_ausschreibungsdaten_2026}.
+Die \ac{FCR} wird zu einem Einheitspreis bezuschlagt, und das Modell übernimmt diesen Preis je Vier-Stunden-Zeitscheibe in \EurMWh{} aus den Ausschreibungsergebnissen auf regelleistung.net \cite{regelleistung_ausschreibungsdaten_2026}.
 % AUSFORMULIERT am 12.09.2026, Satz 2 Fassung C, Satz 3 Fassung C, Satz 4
 % Fassung A, alle vom Verfasser gewaehlt.
 % VOM VERFASSER SO GEWAEHLT, zweimal angemerkt. Satz 2 begruendet ueber das
@@ -4120,6 +4126,10 @@ Für die \ac{aFRR}-Leistung führt das Modell drei Sensitivitäten, nämlich ohn
 %\end{itemize}
 % DURCHSICHT 15.09.2026, Kommentar des Verfassers vom 16.09.2026, Parameter legt das Modell fest, Datenquellen je Markt benannt. Alte Fassung:
 %Die \ac{aFRR}-Arbeit bewertet das Modell je Viertelstunde und Richtung mit dem volumengewichteten Mittel der Grenzpreise der Plattform PICASSO, gebildet über die 225 Vier-Sekunden-Zyklen einer Viertelstunde \cite{entsoe_transparency_2026}.
+% ERGAENZT am 17.09.2026, Frage des Verfassers, ob der Grenzpreis eine Ueberschaetzung ist. Die Verguetungsregel der Regelarbeit stand nirgends. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: die Verguetungsregel der Regelarbeit gehoert nach Kapitel 2. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
+%Die \ac{aFRR}-Arbeit wird anders als die \ac{aFRR}-Leistung nach dem Grenzpreisverfahren vergütet, also zum Preis des teuersten abgerufenen Gebots \cite{europaische_kommission_verordnung_2017_ebgl}.
+Die \ac{aFRR}-Arbeit vergütet der \ac{ÜNB} nach dem Grenzpreisverfahren, wie in Abschnitt~\ref{sec:balancing_procurement} beschrieben.
 Die \ac{aFRR}-Arbeit bewertet das Modell je Viertelstunde und Richtung mit dem volumengewichteten Mittel der Grenzpreise der Plattform PICASSO, gebildet über die 225 Vier-Sekunden-Zyklen einer Viertelstunde aus der Transparenzplattform der ENTSO-E \cite{entsoe_transparency_2026}.
 % NEU GEFASST am 15.09.2026 nach AENDERUNGEN_KAP3.md im Sammelmodus.
 % Stilregel 17.
@@ -4780,6 +4790,20 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
 %Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf die reservierte Leistung abliest.
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung:
 %Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Reservierungspreis für die kurative Reservierung aufruft und aus jedem Lauf die reservierte Leistung abliest.
+% ABBILDUNGEN 3.2 UND 3.3 VERSCHOBEN am 17.09.2026, Kommentar des Verfassers: Abbildung 3.2 hinter den ersten Absatz. Abbildung 3.3 wandert mit, damit die Nummerierung erhalten bleibt.
+
+% ABBILDUNGEN 3.2 UND 3.3 VERSCHOBEN am 17.09.2026, Kommentar des Verfassers: Abbildung 3.2 hinter den ersten Absatz. Abbildung 3.3 wandert mit, damit die Nummerierung erhalten bleibt.
+
+% NACH DEM ABLAUFDIAGRAMM NEU GEORDNET am 17.09.2026, Auftrag des Verfassers: Stichpunkte aus dem Diagramm im Anhang, Text danach gegliedert. Die bisherige Fassung steht unter dem letzten Absatz als Kommentar.
+
+Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt aufruft und aus jedem Lauf die reservierte Leistung abliest.
+Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung.
+Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt, also 0,01\,\si{MW} von 100\,\si{MW}.
+Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz einhält, und sie liegt mit dem Hundertfachen dieser Toleranz sicher außerhalb des numerischen Rauschens.
+Gesucht ist je Stunde und Richtung der kleinste vorgegebene Reservierungspreis, bei dem die Stunde voll reserviert ist.
+Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und Anhang~\ref{anh:ablauf} mit allen Schritten darstellt.
+Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
@@ -4815,28 +4839,33 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
     \label{fig:reservierungspreis_ablauf}
 \end{figure}
 
-% NACH DEM ABLAUFDIAGRAMM NEU GEORDNET am 17.09.2026, Auftrag des Verfassers: Stichpunkte aus dem Diagramm im Anhang, Text danach gegliedert. Die bisherige Fassung steht unter dem letzten Absatz als Kommentar.
-
-Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt aufruft und aus jedem Lauf die reservierte Leistung abliest.
-Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung.
-Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt, also 0,01\,\si{MW} von 100\,\si{MW}.
-Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz einhält, und sie liegt mit dem Hundertfachen dieser Toleranz sicher außerhalb des numerischen Rauschens.
-Gesucht ist je Stunde und Richtung der kleinste vorgegebene Reservierungspreis, bei dem die Stunde voll reserviert ist.
-Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und Anhang~\ref{anh:ablauf} mit allen Schritten darstellt.
-Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
-
 Die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
-Erfüllt die Stunde bei dieser Mitte das Kriterium der Iteration, wird die Mitte zur oberen Grenze, sonst zur unteren.
-Die Bisektion endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist.
-Das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste vorgegebene Reservierungspreis, der das Kriterium nachweislich erfüllt.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%Erfüllt die Stunde bei dieser Mitte das Kriterium der Iteration, wird die Mitte zur oberen Grenze, sonst zur unteren.
+Reicht der Preis in der Mitte für die volle Reservierung, wird die Mitte zur oberen Grenze, sonst zur unteren.
+Der Preis muss in der ersten Iteration die betrachtete Stunde voll reservieren, in der zweiten alle Stunden des Tages.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Die Bisektion endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist.
+Die Bisektion endet, sobald das Intervall nicht breiter als 0,05\,\EurMWh{} ist.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%Das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste vorgegebene Reservierungspreis, der das Kriterium nachweislich erfüllt.
+Das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste vorgegebene Reservierungspreis, der nachweislich für die volle Reservierung reicht.
 Teil (a) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt den Weg der Intervalle auf einer logarithmischen Preisachse.
 
 Die erste Iteration gibt in jedem Lauf allen Stunden denselben Reservierungspreis vor.
-Die obere Grenze der ersten Iteration ist ein Deckel von 800 Euro je Megawatt und Stunde.
-Der Deckel verdoppelt sich, bis alle Stunden voll reserviert sind, höchstens bis 51.200 Euro je Megawatt und Stunde.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Die obere Grenze der ersten Iteration ist ein Deckel von 800 Euro je Megawatt und Stunde.
+Die obere Grenze der ersten Iteration ist ein Deckel von 800\,\EurMWh{}.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Der Deckel verdoppelt sich, bis alle Stunden voll reserviert sind, höchstens bis 51.200 Euro je Megawatt und Stunde.
+Der Deckel verdoppelt sich, bis alle Stunden voll reserviert sind, höchstens bis 51.200\,\EurMWh{}.
 Bleibt eine Stunde auch beim höchsten Deckel nicht voll reserviert, gibt es für sie keinen Preis, denn dann verhindert eine Restriktion des Modells die Reservierung und nicht der Preis.
-Je Stunde halbiert die Bisektion dann das Intervall von null bis zum Deckel mit dem Kriterium, dass diese Stunde voll reserviert ist.
-Bis zu einer Breite von 0,05 Euro je Megawatt und Stunde sind 14 Halbierungen nötig.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%Je Stunde halbiert die Bisektion dann das Intervall von null bis zum Deckel mit dem Kriterium, dass diese Stunde voll reserviert ist.
+Je Stunde halbiert die Bisektion dann das Intervall von null bis zum Deckel.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Bis zu einer Breite von 0,05 Euro je Megawatt und Stunde sind 14 Halbierungen nötig.
+Bis zu einer Breite von 0,05\,\EurMWh{} sind 14 Halbierungen nötig.
 Würde jedes der 48 Paare aus Stunde und Richtung für sich halbiert, wären je Tag 48 mal 14, also 672 Läufe nötig.
 Alle Paare mit derselben Intervallmitte teilen sich jedoch einen Lauf, weil das Tagesmodell alle Stunden bei einem einheitlichen vorgegebenen Reservierungspreis zugleich löst.
 Darum genügen in den ausgewerteten Tagen 84 bis 167 Läufe je Tag, im Mittel rund 130.
@@ -4845,19 +4874,36 @@ Die erste Iteration allein reicht nicht aus, denn nach ihr können Stunden, dere
 Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem vorgegebenen Reservierungspreis allein ab, sondern von den vorgegebenen Reservierungspreisen aller 48 Stunden und Richtungen des Tages zusammen.
 Die Zeitkopplung der kurativen Reservierung über den Ladezustand verschiebt den Lösungsraum, sobald der vorgegebene Reservierungspreis einer anderen Stunde steigt.
 Die erste Iteration liefert deshalb je Stunde nur einen Startwert, gefunden unter einem für den ganzen Tag einheitlichen vorgegebenen Reservierungspreis.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: Zahl zur vollen Reservierung unter den Preisen der ersten Iteration. Beleg: analysen/vollreservierung_pruefung/fuellgrad_erste_iteration.py.
+Werden die Preise der ersten Iteration gemeinsam vorgegeben, bleiben in den ausgewerteten Tagen 18 Prozent der Stunden in positiver und 23 Prozent in negativer Richtung unter der vollen Reservierung.
 Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt schematisch, was geschieht, sobald die Schwelle einer Stunde während der Suche steigt: Liegt sie über der schon gesetzten oberen Grenze, ist jede weitere Mitte nicht voll, und die Bisektion hebt nach ihrer Regel nur die untere Grenze an, bis das Intervall sich schließt.
 Die obere Grenze prüft die Bisektion nie erneut, sodass sie bei einem vorgegebenen Reservierungspreis endet, bei dem die Stunde nicht mehr voll ist, ohne es zu bemerken.
 Einzelne Stunden nacheinander anzuheben führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 
-Die zweite Iteration gibt deshalb in jedem Lauf 48 verschiedene Reservierungspreise vor, einen je Stunde und Richtung.
-Zuerst hebt die zweite Iteration alle offenen Stunden zugleich um ein Viertel an, bis alle Stunden voll reserviert sind.
-Die vorgegebenen Reservierungspreise reichen dann aus, sind wegen der groben Schritte aber nicht mehr minimal.
-Je Stunde senkt die zweite Iteration deshalb den Preis um 0,05 Euro je Megawatt und Stunde und prüft mit einem Lauf, ob alle Stunden voll reserviert bleiben.
-Bleiben alle Stunden voll, halbiert die Bisektion das Intervall von null bis zum gesenkten Preis, andernfalls bleibt der Preis der Stunde stehen.
-Das Kriterium der Bisektion lautet in der zweiten Iteration, dass alle Stunden voll reserviert bleiben.
-Die zweite Iteration geht die Stunden in Durchgängen durch, bis ein Durchgang ohne Senkung bleibt.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: bei der zweiten Iteration nicht die Bisektion wiederholen, sondern praezise sagen, was gemacht wird. Die bisherige Fassung steht darunter als Kommentar.
+Die zweite Iteration gibt deshalb in jedem Lauf je Stunde und Richtung einen eigenen Reservierungspreis vor und startet mit den Preisen der ersten Iteration.
+Solange eine Stunde nicht voll reserviert ist, hebt die zweite Iteration alle offenen Stunden zugleich um ein Viertel an.
+Die so erreichten Preise reichen für die volle Reservierung, können wegen der groben Schritte aber zu hoch sein.
+Stunde für Stunde prüft die zweite Iteration deshalb mit einem Lauf, ob alle Stunden bei einem um 0,05\,\EurMWh{} niedrigeren Preis dieser Stunde voll reserviert bleiben.
+Bleiben alle Stunden voll, sucht die Bisektion zwischen null und dem gesenkten Preis den kleinsten noch ausreichenden Preis der Stunde.
+Die übrigen Stunden behalten in den Läufen der Bisektion ihren Preis.
+Die zweite Iteration wiederholt die Prüfung in Durchgängen über alle Stunden, bis ein Durchgang keinen Preis mehr senkt.
 Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
-Beim Vollreservierungspreis fällt eine Stunde aus der vollen Reservierung, sobald eine einzelne Stunde noch weiter sinkt.
+Wird ein einzelner Vollreservierungspreis um weitere 0,05\,\EurMWh{} gesenkt, ist mindestens eine Stunde nicht mehr voll reserviert.
+%Die zweite Iteration gibt deshalb in jedem Lauf 48 verschiedene Reservierungspreise vor, einen je Stunde und Richtung.
+%Zuerst hebt die zweite Iteration alle offenen Stunden zugleich um ein Viertel an, bis alle Stunden voll reserviert sind.
+%Die vorgegebenen Reservierungspreise reichen dann aus, sind wegen der groben Schritte aber nicht mehr minimal.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Je Stunde senkt die zweite Iteration deshalb den Preis um 0,05 Euro je Megawatt und Stunde und prüft mit einem Lauf, ob alle Stunden voll reserviert bleiben.
+%Je Stunde senkt die zweite Iteration deshalb den Preis um 0,05\,\EurMWh{} und prüft mit einem Lauf, ob alle Stunden voll reserviert bleiben.
+%Bleiben alle Stunden voll, halbiert die Bisektion das Intervall von null bis zum gesenkten Preis, andernfalls bleibt der Preis der Stunde stehen.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%Das Kriterium der Bisektion lautet in der zweiten Iteration, dass alle Stunden voll reserviert bleiben.
+%Die zweite Iteration geht die Stunden in Durchgängen durch, bis ein Durchgang ohne Senkung bleibt.
+%Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%Beim Vollreservierungspreis fällt eine Stunde aus der vollen Reservierung, sobald eine einzelne Stunde noch weiter sinkt.
+%Wird ein einzelner Vollreservierungspreis um weitere 0,05\,\EurMWh{} gesenkt, ist mindestens eine Stunde nicht mehr voll reserviert.
 
 % BISHERIGE FASSUNG von 3.2.4 vor der Neuordnung nach dem Diagramm:
 
@@ -5683,48 +5729,68 @@ Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Re
 %Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur ein Viertel der Anschlussleistung für die \ac{aFRR}-Leistung.
 %Das Modell hält dagegen im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
 %Alle drei Teile des Prüfkriteriums sind damit erfüllt.
-\section{Validierung des Modells}
+% BEGRIFFE UMBENANNT am 17.09.2026, Kommentar des Verfassers: damit immer klar ist, wovon die Rede ist, heisst das eigene Modell in diesem Abschnitt Optimierungsmodell und der Erloesindex der Battery Charts Revenue-Index.
+% Die Umbenennung betrifft Abschnitt 3.3 mit allen Unterabschnitten. In 3.1 und 3.2 bleibt es beim Modell, dort kommt der Revenue-Index nicht vor. Die alten Wortlaute stehen in der Git-Historie.
+\section{Validierung des Optimierungsmodells}
 \label{sec:model_verification}
 
-Die Validierung prüft das Modell in zwei Hinsichten, nämlich die Höhe der Erlöse, die es für ein \ac{BESS} am deutschen Markt ausweist, und seine Funktionsweise, also ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
-Für die Erlöshöhe dient der Erlösindex der Battery Charts als Referenz von außen, für die Funktionsweise ein Liefertag bei einem festen Reservierungspreis.
-Geprüft wird die Plausibilität des Referenzerlöses, also einer Zwischengröße des Modells, und nicht der kurative Reservierungspreis, sodass die Validierung ihre Zahlen schon hier nennt und kein Ergebnis vorwegnimmt.
+Die Validierung prüft das Optimierungsmodell in zwei Hinsichten, nämlich die Höhe der Erlöse, die es für ein \ac{BESS} am deutschen Markt ausweist, und seine Funktionsweise, also ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: statt der Plausibilitaet des Referenzerloeses einfach sagen, dass eine Beispieloptimierung die Aufteilung auf die Maerkte an einem Beispieltag nachvollzieht. Alte Fassung:
+%Für die Erlöshöhe dient der Erlösindex der Battery Charts als Referenz von außen, für die Funktionsweise ein Liefertag bei einem festen Reservierungspreis.
+Für die Erlöshöhe dient der Revenue-Index der Battery Charts als Referenz von außen.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: statt der Plausibilitaet des Referenzerloeses einfach sagen, dass eine Beispieloptimierung die Aufteilung auf die Maerkte an einem Beispieltag nachvollzieht. Alte Fassung:
+%Geprüft wird die Plausibilität des Referenzerlöses, also einer Zwischengröße des Modells, und nicht der kurative Reservierungspreis, sodass die Validierung ihre Zahlen schon hier nennt und kein Ergebnis vorwegnimmt.
+Für die Funktionsweise wird anhand einer Beispieloptimierung nachvollzogen, wie sich die Leistung an einem Beispieltag auf die Märkte verteilt.
 
 \subsection{Vergleichsmaßstab}
 \label{sec:validation_benchmark}
 
 % KNAPP NEU GEFASST am 17.09.2026, Kommentar des Verfassers: so knapp wie moeglich, jeder Satz mit Aussage, notwendig und im Anschluss an den vorigen. Berichtigt nach dem Quelltext des Index, siehe Protokoll. Die bisherige Fassung steht unter diesem Unterabschnitt als Kommentar.
 
-Der Erlösindex der Battery Charts wird vom \ac{ISEA} gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
-Der Index rechnet marktübergreifend, in den Battery Charts \emph{cross-market} genannt, mit der \ac{FCR}, der \ac{aFRR}-Leistung, der \ac{aFRR}-Arbeit und dem kontinuierlichen Intraday-Handel.
+Der Revenue-Index der Battery Charts wird vom \ac{ISEA} gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
+Der Revenue-Index rechnet marktübergreifend, in den Battery Charts \emph{cross-market} genannt, mit der \ac{FCR}, der \ac{aFRR}-Leistung, der \ac{aFRR}-Arbeit und dem kontinuierlichen Intraday-Handel.
 Je Markt allein kommen der \ac{DA}, die erste Intraday-Auktion und der \ac{ID1} hinzu \cite{isea_methodik_2026}.
 Verwendet ist die Reihe für eine Bezugsanlage mit einem Energieinhalt je Leistung von zwei Stunden, zwei Zyklen je Tag und einem Wirkungsgrad von 95 Prozent je Richtung.
 Veröffentlicht wird ein gleitender Mittelwert der Tageserlöse über 365 Tage, sodass der Wert am Jahresende das Kalenderjahr 2025 abbildet.
 
-Marktübergreifend bedient der Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
-Zuerst wählt der Index je Vier-Stunden-Block zwischen der \ac{FCR} und der \ac{aFRR}-Leistung den Markt mit dem höheren Erlös.
-Die \ac{FCR} reserviert die Hälfte der Leistung und vermarktet davon vier Fünftel, die \ac{aFRR}-Leistung so viel, wie der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
-Danach bietet der Index die \ac{aFRR}-Arbeit zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent an.
+Marktübergreifend bedient der Revenue-Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
+Zuerst wählt der Revenue-Index je Vier-Stunden-Block zwischen der \ac{FCR} und der \ac{aFRR}-Leistung den Markt mit dem höheren Erlös.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: reservieren und vermarkten war unverstaendlich, FCR-Energie wird nicht verguetet. Beleg fuer den Faktor 1,25: PQ-Bedingungen 2024, Seite 69, Formel (3.9). Alte Fassung:
+%Die \ac{FCR} reserviert die Hälfte der Leistung und vermarktet davon vier Fünftel, die \ac{aFRR}-Leistung so viel, wie der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
+Die \ac{FCR} bietet 40 Prozent der Leistung an, die \ac{aFRR}-Leistung so viel, wie der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
+Die 40 Prozent ergeben sich, weil der Revenue-Index die Hälfte der Leistung für die \ac{FCR} freihält und die maximale Leistung eines Speichers die angebotene Leistung nach den Präqualifikationsbedingungen um mindestens ein Viertel übersteigen muss \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Der Revenue-Index vergütet in der \ac{FCR} allein die angebotene Leistung und nicht die abgerufene Energie.
+Danach bietet der Revenue-Index die \ac{aFRR}-Arbeit zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent an.
 Abgerufen wird der Speicher, sobald der Sollwert des \ac{ÜNB} die Leistung aller günstigeren Gebote übersteigt.
-Vergütet wird der Abruf zum Grenzpreis.
-Den Ladezustand hält der Index über Geschäfte zum \ac{ID1} im zulässigen Band und führt ihn in den letzten zwei Stunden des Tages auf die Hälfte zurück.
-Zuletzt handelt der Index im kontinuierlichen Intraday-Handel mit der übrigen Leistung, dem übrigen Speicherinhalt und den übrigen Zyklen, mindestens aber mit der Hälfte der Zyklengrenze, und schließt den Tag mit dem Anfangsladezustand ab.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: die Verguetungsregel der Regelarbeit gehoert nach Kapitel 2. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
+%Vergütet wird der Abruf zum Grenzpreis.
+Vergütet wird der Abruf zum Grenzpreis der Regelarbeit und nicht zum Gebotspreis.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: Grenzpreis erklaeren, gelieferte Menge nennen und die Datenquellen dazuschreiben.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: die Verguetungsregel der Regelarbeit gehoert nach Kapitel 2. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
+%Der Grenzpreis ist der Preis des teuersten abgerufenen Gebots, den alle abgerufenen Gebote erhalten.
+% ERGAENZT am 17.09.2026, Frage des Verfassers, ob der Grenzpreis eine Ueberschaetzung ist. Die Verguetungsregel der Regelarbeit stand nirgends. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: die Verguetungsregel der Regelarbeit gehoert nach Kapitel 2. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
+%Das Gebot entscheidet damit nur über den Abruf und nicht über die Vergütung.
+Geliefert wird der Sollwert, begrenzt auf die vorgehaltene Leistung des Speichers.
+Als Daten nutzt der Revenue-Index den sekündlichen Sollwert der deutschen \ac{ÜNB} \cite{netztransparenz_regelenergie_2026} und die anonymisierte Gebotsliste der \ac{aFRR}-Arbeit \cite{regelleistung_ausschreibungsdaten_2026}.
+Den Ladezustand hält der Revenue-Index über Geschäfte zum \ac{ID1} im zulässigen Band und führt ihn in den letzten zwei Stunden des Tages auf die Hälfte zurück.
+Zuletzt handelt der Revenue-Index im kontinuierlichen Intraday-Handel mit der übrigen Leistung, dem übrigen Speicherinhalt und den übrigen Zyklen, mindestens aber mit der Hälfte der Zyklengrenze, und schließt den Tag mit dem Anfangsladezustand ab.
 
 Der kontinuierliche Intraday-Handel läuft rollierend vom Vortag um 16 Uhr bis zum Ende des Liefertages.
-Alle 15 Minuten bildet der Index aus den Geschäften dieses Zeitfensters je Viertelstundenprodukt den volumengewichteten Preis und optimiert damit ohne Prognose den ganzen Tag neu \cite{semmelmann_algorithm_2024}.
-Frühere Geschäfte bleiben bestehen, lassen sich aber glattstellen, sodass der Index eine gekaufte Viertelstunde bei gestiegenem Preis zurückverkauft und die Spanne sichert.
-Als Preisnehmer handelt der Index beliebige Mengen zum volumengewichteten Preis, und Produkte ohne Geschäfte im Zeitfenster bleiben ungehandelt.
-Weil ein Handel ohne Marktwirkung den Erlös überschätzt, setzt der Index allein den Erlös des Intraday-Handels mit einer Erfassungsrate von 80 Prozent an.
+Alle 15 Minuten bildet der Revenue-Index aus den Geschäften dieses Zeitfensters je Viertelstundenprodukt den volumengewichteten Preis und optimiert damit ohne Prognose den ganzen Tag neu \cite{semmelmann_algorithm_2024}.
+Frühere Geschäfte bleiben bestehen, lassen sich aber glattstellen, sodass der Revenue-Index eine gekaufte Viertelstunde bei gestiegenem Preis zurückverkauft und die Spanne sichert.
+Als Preisnehmer handelt der Revenue-Index beliebige Mengen zum volumengewichteten Preis, und Produkte ohne Geschäfte im Zeitfenster bleiben ungehandelt.
+Weil ein Handel ohne Marktwirkung den Erlös überschätzt, setzt der Revenue-Index allein den Erlös des Intraday-Handels mit einer Erfassungsrate von 80 Prozent an.
 
-Je Markt allein optimiert der Index den Speicher am \ac{DA}, in der ersten Intraday-Auktion und am \ac{ID1} dagegen gegen die bekannte Preisreihe des ganzen Tages.
+Je Markt allein optimiert der Revenue-Index den Speicher am \ac{DA}, in der ersten Intraday-Auktion und am \ac{ID1} dagegen gegen die bekannte Preisreihe des ganzen Tages.
 Gegen die bekannte Preisreihe lädt der Speicher in den günstigsten und entlädt in den teuersten Zeitscheiben, sodass bei zwei Stunden Energieinhalt je Leistung zwei Zyklen die vier günstigsten und die vier teuersten Stunden belegen.
 Die Spanne des zweiten Zyklus fällt kleiner aus als die des ersten, weil die Zeitscheiben nach dem Preis geordnet zum Einsatz kommen.
 
-Für das Jahr 2025 weist der Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
+Für das Jahr 2025 weist der Revenue-Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
 Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
-Den Werten je Markt allein stehen Jahresläufe des Modells gegenüber, in denen die übrigen Märkte abgeschaltet sind.
-Dem marktübergreifenden Wert steht der Referenzerlös aus allen Märkten gegenüber, weil das Modell diese Märkte ebenfalls gemeinsam bedient.
-Weil der Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dort der Erlös des Modells aus beiden Energiemärkten zusammen gegenüber.
+Den Werten je Markt allein stehen Jahresläufe des Optimierungsmodells gegenüber, in denen die übrigen Märkte abgeschaltet sind.
+Dem marktübergreifenden Wert steht der Referenzerlös aus allen Märkten gegenüber, weil das Optimierungsmodell diese Märkte ebenfalls gemeinsam bedient.
+Weil der Revenue-Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dort der Erlös des Optimierungsmodells aus beiden Energiemärkten zusammen gegenüber.
 
 % BISHERIGE FASSUNG von 3.3.1:
 
@@ -5789,39 +5855,49 @@ Weil der Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dor
 
 % KNAPP NEU GEFASST am 17.09.2026, Kommentar des Verfassers: so knapp wie moeglich, jeder Satz mit Aussage, notwendig und im Anschluss an den vorigen. Berichtigt nach dem Quelltext des Index, siehe Protokoll. Die bisherige Fassung steht unter diesem Unterabschnitt als Kommentar.
 
-Index und Modell rechnen nach verschiedenen Regeln, sodass vor dem Vergleich die erwartete Abweichung zu klären ist.
-Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
-Das Modell kennt dagegen alle Preise des Liefertages und setzt jede angebotene Leistung als bezuschlagt.
-Die Degradationskosten senken den Erlös des Modells in den Energiemärkten, weil das Modell jeden Zyklus mit Kosten belegt und der Index nur eine Zyklengrenze führt.
+Revenue-Index und Optimierungsmodell rechnen nach verschiedenen Regeln, sodass vor dem Vergleich die erwartete Abweichung zu klären ist.
+Der Revenue-Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
+Das Optimierungsmodell kennt dagegen alle Preise des Liefertages und setzt jede angebotene Leistung als bezuschlagt.
+Die Degradationskosten senken den Erlös des Optimierungsmodells in den Energiemärkten, weil das Optimierungsmodell jeden Zyklus mit Kosten belegt und der Revenue-Index nur eine Zyklengrenze führt.
 Der Vergleich soll deshalb allein ausschließen, dass die Modellierung die Erlösmöglichkeiten eines \ac{BESS} unterschätzt.
-Erwartet wird, dass das Modell in den Leistungsmärkten über dem Index liegt, in den Energiemärkten darunter bleibt und den Jahresgang abbildet.
+Erwartet wird, dass das Optimierungsmodell in den Leistungsmärkten über dem Revenue-Index liegt, in den Energiemärkten darunter bleibt und den Jahresgang abbildet.
 
+% ZU EINEM ABSATZ am 17.09.2026, Kommentar des Verfassers: die drei Absaetze zu den Einzelmaerkten werden einer. Die Saetze sind unveraendert, es entfallen nur die Leerzeilen.
 Der Vergleich beginnt mit den Einzelmärkten, die Anhang~\ref{anh:validierung} im Einzelnen darstellt.
-In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index, weil der Index die vermarktete Leistung durch 1,25 teilt und das Modell die volle Leistung anbietet.
-In der \ac{aFRR} erreicht das Modell das 1,52-Fache des Index, was vor allem an der Bemessung der Leistung liegt.
-Der Index bietet nur die Leistung an, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
-Das Modell ist allein durch ein Ladezustandsband von einer Stunde je Richtung begrenzt und hält im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
-
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: 1,24 und 1,25 standen sich gegenueber. Der Faktor folgt aus 81 Prozent gegen 100 Prozent des ganzjaehrig erzielbaren Erloeses, die 1,25 aus der Praequalifikation ist der Grund der 81 Prozent. Beleg: analysen/02_validierung/validierung_einzelmarkt.csv im Modellrepository. Alte Fassung:
+%In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index, weil der Index die vermarktete Leistung durch 1,25 teilt und das Modell die volle Leistung anbietet.
+In der \ac{FCR} erreicht das Optimierungsmodell das 1,24-Fache des Revenue-Index, weil der Revenue-Index nur vier Fünftel der Leistung anbietet und das Optimierungsmodell die volle Leistung.
+Ein Megawatt, das ganzjährig zum \ac{FCR}-Preis anbietet, erzielt 133,0 Tausend Euro je Megawatt und Jahr, wovon der Revenue-Index 81 Prozent und das Optimierungsmodell 100 Prozent erreichen.
+In der \ac{aFRR} erreicht das Optimierungsmodell das 1,52-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
+Der Revenue-Index bietet nur die Leistung an, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
+Das Optimierungsmodell ist allein durch ein Ladezustandsband von einer Stunde je Richtung begrenzt und hält im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
 Auch die Liefermenge der \ac{aFRR}-Arbeit hängt auf beiden Seiten an der vorgehaltenen Leistung, folgt aber verschiedenen Regeln.
-Der Index liefert nur, wenn sein Gebot im Geld ist, dann aber den realen Abruf bis zu seiner vollen Vorhaltung.
-Das Modell liefert dagegen in jeder Viertelstunde mit Abruf einen festen Anteil seiner Vorhaltung, der dem Verhältnis des deutschlandweiten Abrufs zur gesamten Vorhaltung entspricht.
-
-In den Energiemärkten bleibt das Modell unter dem Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
-Die Abweichung folgt den Degradationskosten, die das Modell je Zyklus verrechnet.
+Der Revenue-Index liefert nur, wenn sein Gebot im Geld ist, dann aber den realen Abruf bis zu seiner vollen Vorhaltung.
+Das Optimierungsmodell liefert dagegen in jeder Viertelstunde mit Abruf einen festen Anteil seiner Vorhaltung, der dem Verhältnis des deutschlandweiten Abrufs zur gesamten Vorhaltung entspricht.
+% ERGAENZT am 17.09.2026, Kommentar des Verfassers: Grenzpreis erklaeren, gelieferte Menge nennen und die Datenquellen dazuschreiben.
+Denselben Sollwert nutzen beide Seiten, der Revenue-Index als abgerufene Leistung und das Optimierungsmodell als Gewicht bei der Mittelung der Grenzpreise.
+In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
+Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklus verrechnet.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/validierung_cross.pdf}
-    \caption{Erlös je Monat 2025 nach Modell und Index in Tausend Euro je Megawatt und Jahr, rechts der Abstand beider Reihen.}
+    \caption{Erlös je Monat 2025 nach Optimierungsmodell und Revenue-Index in Tausend Euro je Megawatt und Jahr, rechts der Abstand beider Reihen.}
     \label{fig:validierung_cross}
 \end{figure}
 
-Abbildung~\ref{fig:validierung_cross} stellt marktübergreifend den Index dem Referenzerlös des Modells über das Jahr 2025 gegenüber.
-Der Index liegt im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Modell bei 348,3 Tausend Euro je Megawatt und Jahr.
-Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Modell liegt in allen zwölf Monaten über dem Index.
-Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Modell den Jahresgang des Index abbildet.
-Zum Abstand trägt marktübergreifend auch die Aufteilung der Leistung bei.
-Der Index belegt jeden Markt mit einem festen Anteil, während das Modell die Leistung frei auf die Märkte verteilt.
+Abbildung~\ref{fig:validierung_cross} stellt marktübergreifend den Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenüber.
+Der Revenue-Index liegt im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Optimierungsmodell bei 348,3 Tausend Euro je Megawatt und Jahr.
+Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
+Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: die Anteile sind regelbasiert und fest gesetzt, und die aFRR gibt den Ausschlag. Alte Fassung:
+%Zum Abstand trägt marktübergreifend auch die Aufteilung der Leistung bei.
+Zum Abstand trägt marktübergreifend die Aufteilung der Leistung bei.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: die Anteile sind regelbasiert und fest gesetzt, und die aFRR gibt den Ausschlag. Alte Fassung:
+%Der Revenue-Index belegt jeden Markt mit einem festen Anteil, während das Optimierungsmodell die Leistung frei auf die Märkte verteilt.
+Der Revenue-Index bedient die Märkte in fester Abfolge mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen, während das Optimierungsmodell alle Märkte gemeinsam optimiert.
+Frei entschieden wird im Revenue-Index allein, ob eine Vier-Stunden-Zeitscheibe der \ac{FCR} oder der \ac{aFRR}-Leistung zufällt.
+Den größten Abstand tragen dabei die \ac{aFRR}-Märkte, weil das Optimierungsmodell dort mehr Leistung vorhält und deshalb auch mehr Arbeit liefert.
 Eine Unterschätzung der Erlösmöglichkeiten durch die Modellierung zeigt der Vergleich damit weder je Markt noch marktübergreifend.
 
 % BISHERIGE FASSUNG von 3.3.2:
@@ -5911,19 +5987,32 @@ Eine Unterschätzung der Erlösmöglichkeiten durch die Modellierung zeigt der V
 
 Die zweite Prüfung gilt der Funktionsweise, also der Frage, ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
 Dafür eignet sich ein Liefertag bei einem festen Reservierungspreis, weil sich dort Fahrplan, Ladezustand und die verdrängten Handelsaktionen unmittelbar ablesen lassen.
-Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem Reservierungspreis von 5 Euro je Megawatt und Stunde in beiden Richtungen.
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem Reservierungspreis von 5 Euro je Megawatt und Stunde in beiden Richtungen.
+Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem Reservierungspreis von 5\,\EurMWh{} in beiden Richtungen.
 Die Reservierung belegt die Stunden, in denen die übrigen Märkte wenig bieten, in positiver Richtung etwa die Nachtstunden bis vier Uhr und den späten Abend, während die Stunden mit hohem Leistungspreis bei der \ac{aFRR} bleiben und die Vormittags- und Abendstunden dem \ac{DA} und dem \ac{IDC}.
 In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherraum für einen Abruf von einer Megawattstunde je Megawatt frei, und Anfang und Ende des Tages liegen bei 125 Megawattstunden.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Die Optimierung reserviert damit nur dort, wo der Preis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was das Verfahren für die Suche nach dem kleinsten Preis bestätigt.
+% ERGAENZT am 17.09.2026, Auftrag des Verfassers: der Fahrplan im Text steht mit der Mindestgroesse von 25 MW, der Fahrplan ohne sie steht im Anhang.
+Der gezeigte Fahrplan enthält die Mindestgröße von 25\,\si{MW} je Zeitscheibe und Richtung, die das Optimierungsmodell gemischt-ganzzahlig macht.
 Die Optimierung reserviert damit nur dort, wo der vorgegebene Reservierungspreis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was das Verfahren für die Suche nach dem kleinsten vorgegebenen Reservierungspreis bestätigt.
+% ERGAENZT am 17.09.2026, Auftrag des Verfassers: der Fahrplan im Text steht mit der Mindestgroesse von 25 MW, der Fahrplan ohne sie steht im Anhang.
+% BERICHTIGT am 17.09.2026: die kurative Reservierung ist innerhalb der Stunde konstant, die zwoelf Slots der Zeitreihe sind drei Stunden. Beleg: eigene Auswertung von run_20260914_110947. Alte Fassung:
+%Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in zwölf Viertelstunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
+Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
+Anhang~\ref{anh:dispatch_ohne} zeigt diesen Fahrplan ohne die Mindestgröße.
 
 % DURCHSICHT 16.09.2026, Platzierung H, damit die Abbildung oben auf der Folgeseite steht und der Text darunter weiterlaeuft. Alte Fassung:
 %\begin{figure}[htbp]
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/dispatch_festpreis_2025-02-11_p5.pdf}
-    \caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungspreis von 5 Euro je Megawatt und Stunde, positive Richtung oben, negative Richtung unten.}
+% EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%    \caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungspreis von 5 Euro je Megawatt und Stunde, positive Richtung oben, negative Richtung unten.}
+% ERGAENZT am 17.09.2026, Auftrag des Verfassers: der Fahrplan im Text steht mit der Mindestgroesse von 25 MW, der Fahrplan ohne sie steht im Anhang.
+%\caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungspreis von 5\,\EurMWh{}, positive Richtung oben, negative Richtung unten.}
+    \caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungspreis von 5\,\EurMWh{} und der Mindestgröße von 25\,\si{MW}, positive Richtung oben, negative Richtung unten.}
     \label{fig:dispatch_festpreis}
 \end{figure}
 

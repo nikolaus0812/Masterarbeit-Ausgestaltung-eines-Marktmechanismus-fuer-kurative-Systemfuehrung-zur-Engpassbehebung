@@ -18,3 +18,9 @@
       {\textbf{[PLATZHALTER ABBILDUNG]}\par\vspace{0.6em}\small #1};
   \end{tikzpicture}%
 }
+
+% Einheit Euro je Megawatt und Stunde, angelegt am 17.09.2026 auf Wunsch des
+% Verfassers (Einheiten als Symbol statt ausgeschrieben). Enger Malpunkt wie
+% in den Abbildungen. Im Fliesstext als \EurMWh{} schreiben, sonst
+% verschluckt TeX das folgende Leerzeichen.
+\newcommand{\EurMWh}{\si[inter-unit-product=\ensuremath{\mathord{\cdot}}]{\euro/(MW.h)}}

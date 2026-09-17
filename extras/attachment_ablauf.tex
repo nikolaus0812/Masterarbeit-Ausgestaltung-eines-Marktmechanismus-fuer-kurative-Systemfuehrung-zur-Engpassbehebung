@@ -16,8 +16,11 @@ Beide Iterationen folgen demselben Aufbau, denn links bestimmt jede Iteration di
 Die gestrichelte Box umfasst diese Bisektion, die in beiden Iterationen nach derselben Regel abläuft.
 % NEU GEFASST am 17.09.2026: die Iterationen unterscheiden sich auch im Senken vor der Bisektion und in den Durchgaengen, allein im Kriterium nur innerhalb der Bisektion. Alte Fassung:
 %Die Iterationen unterscheiden sich allein im Kriterium, nach dem die Halbierung entscheidet, welche Hälfte des Intervalls entfällt.
-In der Bisektion unterscheiden sich die Iterationen allein im Kriterium, nach dem die Halbierung entscheidet, welche Hälfte des Intervalls entfällt.
-In der ersten Iteration lautet das Kriterium, ob die betrachtete Stunde voll reserviert ist, in der zweiten, ob alle Stunden des Tages voll reserviert bleiben.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%In der Bisektion unterscheiden sich die Iterationen allein im Kriterium, nach dem die Halbierung entscheidet, welche Hälfte des Intervalls entfällt.
+In der Bisektion unterscheiden sich die Iterationen allein darin, welche Stunden der Preis in der Mitte voll reservieren muss, nämlich in der ersten Iteration die betrachtete Stunde und in der zweiten alle Stunden des Tages.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
+%In der ersten Iteration lautet das Kriterium, ob die betrachtete Stunde voll reserviert ist, in der zweiten, ob alle Stunden des Tages voll reserviert bleiben.
 % NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Bisektion in beiden Iterationen gleich und gestrichelt umrandet. Alte Fassung:
 %Die Stundenschleife und die Durchgangsschleife treten allein in der zweiten Iteration auf, weil dort je Lauf nur der Preis einer Stunde wechselt.
 Allein die zweite Iteration prüft vor der Bisektion, ob die Stunde bei einem um die Toleranz gesenkten Preis voll reserviert bleibt, und wiederholt den Durchgang über alle Stunden, bis keine Stunde mehr sinkt.
