@@ -7984,6 +7984,44 @@ enthaelt, dass ein Satz die Mindestgroesse benennt, dass ein zweiter Satz den
 Unterschied mit drei Stunden unter 25 MW Ladeleistung und 1,4 Prozent
 kurativem Erloes nennt und dass ein dritter Satz auf Anhang F verweist.
 
+### 17.09.2026, chapter_3.tex von Kommentaren befreit
+
+Auftrag des Verfassers: "du sollst davor aber nochmal chapter 3 durchgehen und
+es komplett von Kommentaren befreien und sie in die jeweiligen md files
+einbauen."
+
+**Stand vorher.** 6087 Zeilen, davon 5485 Kommentarzeilen in 276 Bloecken und
+434 lebende Zeilen. Kein Inline-Kommentar, also kein Prozentzeichen am
+Zeilenende, das ein Leerzeichen unterdrueckt. Die Bloecke tragen dreierlei,
+naemlich Aenderungsvermerke mit der alten Fassung, ausformulierte Vorfassungen
+und Stichpunktlisten aus der Zeit vor dem Ausformulieren sowie Pruefvermerke.
+
+**Ort des Bestands.** archiv/KOMMENTARBESTAND_KAP3.md traegt alle 276 Bloecke
+im Wortlaut, je Block die Zeilennummer der bisherigen Fassung, den Abschnitt
+und die erste lebende Zeile darunter als Anker. Das Format folgt den beiden
+Anhaengen zu chapter_1.tex und chapter_2.tex am Ende dieser Datei. Damit ist
+jede alte Fassung weiter auffindbar, ohne die Kapiteldatei zu belasten.
+
+**Offene Punkte.** Die Pruefvermerke sind nicht mit dem Bestand ins Archiv
+gewandert, sondern stehen als Liste G in DURCHSICHT_KAP1_3.md, 14 Punkte von
+den ungepruefen Belegen ueber die Degradationskosten und die ausgeschriebene
+aFRR-Menge bis zur Monotonie des Fuellgrads. Zwei Punkte des Blocks am
+Dateiende sind erledigt und nicht uebernommen, naemlich die Begruendung der
+Bewertungen in Tabelle 3.1, weil die Tabelle am 16.09.2026 gestrichen ist, und
+der Abgleich der Zitatschluessel, der am 08.09.2026 ohne Befund lief.
+
+**Regel ab jetzt.** chapter_3.tex bleibt kommentarfrei. Ersetzte Formulierungen
+gehen in den Protokolleintrag der Sitzung, nicht in die Datei.
+
+**Vorbehalt.** CLAUDE.md Abschnitt 10 verlangt, ersetzten Fliesstext als
+Kommentar mit Datum und Grund in der Datei zu erhalten. Dieser Auftrag loest
+die Regel fuer chapter_3.tex ab. Ob sie auch fuer die uebrigen Kapitel- und
+Anhangsdateien entfaellt und wie CLAUDE.md Abschnitt 10 neu lautet, entscheidet
+der Verfasser.
+
+**Geprueft.** Der Text des gebauten PDF ist vor und nach dem Entfernen
+zeichengleich, geprueft ueber pdftotext ueber alle 88 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

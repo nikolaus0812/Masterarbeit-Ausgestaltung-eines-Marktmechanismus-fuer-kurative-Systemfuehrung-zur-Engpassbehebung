@@ -259,3 +259,28 @@ zu einem Satz).
 5. Kapitel 1: B2.1, B3.1, B3.4, B3.12, dann B1, Ziel 5 Seiten (A2).
 6. Kapitelübergreifende Abgleiche B3.6 bis B3.11, C4.
 7. Fremdleser-Prüfung je geändertem Abschnitt, Protokoll, Commit je Kapitel.
+
+---
+
+## G Offene Punkte aus den Kommentaren von chapter_3.tex
+
+Aufgenommen am 17.09.2026, als die Kapiteldatei von Kommentaren befreit wurde.
+Die Spalte Quelle nennt die Zeile im Stand vom 17.09.2026, der vollstaendig in
+`archiv/KOMMENTARBESTAND_KAP3.md` steht. Nichts davon ist umgesetzt.
+
+| Nr. | Befund | Quelle | Stand |
+|---|---|---|---|
+| G1 | Der Unterabschnitt Abgleich bestehender Marktdesignansätze ist am 08.09.2026 geparkt, sein Ort ist nicht entschieden. In Betracht kommen 3.1.2, 3.3.1 und Kapitel 5. Der vom Verfasser bestätigte Gedanke, der kapazitätsbasierte Redispatch beschaffe im Kern dieselbe Größe wie eine kurative Vorhaltung und unterscheide sich nur in Auslöser und Reaktionszeit, steht bis heute in keinem Absatz. | Z367 bis Z551 | offen, Ort zu entscheiden |
+| G2 | Die Belege ehrhart_analysis_2025, horsch_role_2017 und einsiedler_analysis_2025 sind ungeprüft, die Volltexte ließen sich nicht öffnen. Die Aussage, der Mechanismus bemesse die bereitgehaltene Kapazität statt des Eingriffs, stammt aus einem eigenen Kommentar und nicht aus der Quelle. | Z529 | vor Abgabe bestätigen oder zurücknehmen |
+| G3 | Vormerkung des Verfassers vom 09.09.2026: Der Bestand an BESS wächst, während sich der Bedarf an Regelleistung aus der Dimensionierung des Systems ergibt und nicht mitwächst, sodass die Ausschließlichkeit der kurativen Zusage die Regelleistung weniger verdrängt. Das Argument ist nicht geschrieben. | Z1477 | offen, Ort zu entscheiden |
+| G4 | Vormerkung vom 11.09.2026: der Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, während das Produkt allein die zugesagte Leistung sperrt. Nach Entscheidung 1 gehört der Vergleich nach Kapitel 5. | Z5264 | offen für Kapitel 5 |
+| G5 | Die Degradationskosten von 8 Euro je Megawattstunde Durchsatz stammen aus main.py Zeile 401 und tragen dort keine Quelle. Der Code nennt die Spanne 3 bis 20 Euro je Megawattstunde, die Sensitivität sensi2_deg fährt 0 bis 18. Ob juelch_comparison_2016, garttan_battery_2025 oder rystad_energy_renewables__power_analytics_energy_2026 die 8 Euro trägt, ist ungeprüft. | Z3247, Z3347 | offen |
+| G6 | Der Aufschlag am IDC von drei Prozent im Verkauf und im Kauf stammt nach MODELL.md aus dem Battery-Revenue-Index von energy-charts, ein Eintrag dafür fehlt. Der Verfasser hat am 12.09.2026 entschieden, dass ein Beleg nicht nötig ist. | Z3873 | entschieden, Eintrag fehlt nur für den Fall eines Zitats |
+| G7 | Der Code setzt die ausgeschriebene aFRR-Menge auf 2000 MW, woraus der Anteil von rund vier Prozent folgt. Die Zahl ist als Eingangsgröße zu nennen und zu belegen. | Z4121 | offen |
+| G8 | Der Code verlangt das Ladezustandsband der Regelleistung nur am Beginn jeder Vier-Stunden-Zeitscheibe, das kurative Band in jeder Viertelstunde. Entweder nennt der Text diese Vereinfachung, oder der Code zieht nach. | Z3970 | offen |
+| G9 | Die Monotonie des Füllgrads über dem Preis ist nur für den Preis einer Stunde bei festen übrigen Preisen gesichert. Die erste Iteration hebt den einheitlichen Preis aller Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde verlieren kann. Der Text sagt deshalb setzt voraus und nicht gilt. Die Einschränkung gehört mit der Reihenfolge des Abstiegs und dem koordinatenweisen Minimum nach Kapitel 5. | Z4504 | offen für Kapitel 5 |
+| G10 | Die Laufzahlen 84 bis 167 stammen nach MODELL.md aus den Schwellen der 20 Sensitivitätstage und nicht aus dem Jahr 2025. Die Rechenzeit von früher 17 bis 44 Sekunden je Tag ist nach dem Umbau der zweiten Iteration nicht nachgemessen, deshalb steht im Text nur die Laufzahl. | Z4509, Z5155 | offen, Nachmessung möglich |
+| G11 | Die Überschrift von 3.2 lautet nach CLAUDE.md Modellierungsansatz und Systemgrenzen und überschneidet sich mit dem ersten Unterabschnitt. Alternative ist Modellierung des Speicherbetriebs. | Z2290 | offen |
+| G12 | Die Methodikveröffentlichung der ISEA Battery Charts fehlt als Eintrag. Ohne sie stützt sich die Beschreibung des Rolling-Intrinsic-Verfahrens allein auf semmelmann_algorithm_2024 und den Quelltext. Offen ist außerdem, ob ergänzend Grenzfallprüfungen am eigenen Modell aufgenommen werden, nämlich Wirkungsgrad eins, Vorhalteleistung null und konstanter Preis. | Z5529 | offen |
+| G13 | Vor Abgabe ist zu prüfen, ob eine Mitteilung der Beschlusskammer zu Batteriespeichern ergangen ist, denn dieser Punkt trägt die Forschungslücke. Recherchestand August 2026 ist, dass keine vorliegt. | Z6072 | offen, vor Abgabe |
+| G14 | Der Verweis auf sec:model_critique am Satz zum Optionswert ist nach Stilregel 15 ein Grenzfall, Befund S7. Zu prüfen, ob sich die Folge ohne Abschnittsnummer sagen lässt. | Z5423 | offen |
