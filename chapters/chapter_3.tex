@@ -4899,10 +4899,17 @@ Eine Bisektion je Stunde bei festen vorgegebenen Reservierungspreisen der übrig
     \centering
 % DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
 %    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+% AUSGETAUSCHT am 17.09.2026, Auftrag des Verfassers: die ausfuehrliche
+% Abbildung gehoert in den Anhang, im Text steht eine kompakte, die beide
+% Iterationen gleich behandelt. Alte Fassung:
+%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_kompakt.pdf}
 % BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
 %    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
-    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
+% BILDUNTERSCHRIFT NEU am 17.09.2026, weil die Abbildung ausgetauscht ist.
+% Alte Fassung:
+%    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
+    \caption{Bestimmung des kurativen Reservierungspreises, beide Iterationen im selben Aufbau, nämlich Grenzen bestimmen und dasselbe Intervall halbieren. Den ausführlichen Ablauf zeigt Anhang~\ref{anh:ablauf}.}
     \label{fig:reservierungspreis_ablauf}
 \end{figure}
 
@@ -4927,6 +4934,9 @@ In der ersten Iteration lautet die Frage, ab welchem einheitlichen Reservierungs
 In der zweiten Iteration lautet die Frage, ob unter allen 48 Reservierungspreisen zugleich jede Stunde und Richtung voll reserviert bleibt.
 Eine Preisachse, auf der sich ein Intervall halbieren ließe, gibt es damit nicht mehr.
 Die zweite Iteration steigt deshalb zuerst grob auf und danach genau ab, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+% ERGAENZT am 17.09.2026: Verweis auf den neuen Anhang mit der
+% ausfuehrlichen Abbildung.
+In Anhang~\ref{anh:ablauf} sind beide Iterationen mit allen Schritten dargestellt.
 Der Aufstieg hebt alle noch offenen Stunden zugleich um ein Viertel an, bis keine Stunde mehr offen ist.
 % ZAHLEN ERGAENZT am 17.09.2026, gemessen vom Verfasser ueber die ausgewerteten Tage. Die Zahl der Tage wird nach seiner Vorgabe nicht genannt.
 % GESTRICHEN am 17.09.2026, Kommentar des Verfassers: nur die erwartete Laufzahl aufnehmen, nicht so viele Angaben. Nicht wieder aufnehmen. Alte Fassung:

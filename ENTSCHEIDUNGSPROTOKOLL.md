@@ -7463,6 +7463,68 @@ Groessen, naemlich die Fuelltoleranz von 0,01 MW und die Preisaufloesung von
 nennen, ist nicht entschieden. Zweitens nennt die Bildunterschrift von
 Abbildung 3.3 die gemeinsame Halbierung nicht.
 
+### 17.09.2026, 3.2.4 zwei Ablaufabbildungen, neuer Anhang D
+
+Auftrag des Verfassers: "das ausfuehrliche Bild in den Anhang und noch ein
+komprimiertes, in dem wir aber beide Iterationen gleich behandeln, in den Text.
+Das grosse soll eine DIN-A4-Seite ausfuellen und das kleine ungefaehr die
+Haelfte. Das grosse soll bitte sehr organisiert aussehen, sowohl die
+Vorbestimmung der Grenzen als auch das Bisektionsverfahren von beiden
+Iterationen sollen gleich strukturiert sein, sowohl fuer das kompakte als auch
+das grosse Bild." Vorausgegangen war der Befund des Verfassers, die bisherige
+Abbildung sei schief.
+
+**Entscheidungen des Verfassers.** Zwei Abbildungen statt einer. Die
+ausfuehrliche geht in den Anhang, die kompakte in den Text. Beide Iterationen
+werden in beiden Abbildungen gleich behandelt. Verworfen ist die zuvor von ihm
+erwogene Loesung mit Verbindern und Buchstaben; nach DIN 66001 ist der
+Verbinder die Uebergangsstelle eines Ablaufs, waehrend fuer einen von zwei
+Stellen aufgerufenen Ablauf der vordefinierte Prozess vorgesehen ist.
+
+**Eigenstaendige Ableitung, die den Aufbau traegt.** Beide Iterationen tun
+dasselbe in zwei Schritten. Erstens bestimmen sie die Grenzen: die untere
+Grenze ist null, die obere waechst um einen festen Faktor, bis alle Stunden
+voll reserviert sind, naemlich der Deckel um den Faktor zwei und die offenen
+Stunden um den Faktor 1,25. Zweitens halbieren sie dasselbe Intervall nach
+derselben Regel bis auf 0,05 Euro je Megawatt und Stunde. Diese Symmetrie war
+in der Vorgaengerabbildung nicht zu sehen, weil dort die 1. Iteration als
+Vorbereitung links und Bisektion rechts stand und die 2. Iteration als Aufstieg
+links und alles Uebrige rechts. Erzwungen ist die Gleichheit jetzt dadurch,
+dass beide Iterationen ihre Spalten aus denselben Funktionen `grenzen_spalte`
+und `bisektion_spalte` zeichnen und die kompakten Saeulen aus
+`kompakt_saeule`.
+
+**Der Unterschied wird nicht verschwiegen.** Das Kriterium der Halbierung
+lautet in der 1. Iteration "Stunde h voll" und in der 2. Iteration "alle
+Stunden voll". Es steht in beiden Abbildungen an derselben Stelle im Kasten
+beziehungsweise in der Raute. Ohne diese Angabe behauptete die gemeinsame
+Darstellung eine Gleichheit, die nicht besteht. Ebenso treten die
+Stundenschleife des Zertifikats und die Durchgangsschleife allein in der
+2. Iteration auf, weil dort je Lauf nur der Preis einer Stunde wechselt,
+waehrend ein Lauf mit einheitlichem Preis alle 48 Paare zugleich einordnet.
+
+**Struktur.** Der neue Anhang steht hinter dem Optimierungsproblem und ist
+damit Anhang D; die Validierung je Markt rueckt auf E. Alle Verweise laufen
+ueber Marken, es war nichts nachzuziehen. Die Datei `tools/pruefen.py` fuehrte
+die Anhangsdateien als feste Liste; `attachment_ablauf.tex` ist dort
+nachgetragen, sonst haette die Markenpruefung den Verweis auf anh:ablauf nicht
+aufloesen koennen.
+
+**Masse.** Die ausfuehrliche Abbildung ist 20,7 cm hoch bei erlaubten 21,7 cm
+und fuellt damit die Textseite. Die kompakte ist 9,5 cm hoch, also rund die
+halbe Textseite. Kapitel 3 schrumpft dadurch von 19 auf 18 Seiten.
+
+**Nicht uebernommen.** In der kompakten Abbildung wird die Wachstumsschleife
+nicht als Pfeil gezeichnet, sondern steht im Kasten ("solange eine Stunde nicht
+voll ist"). Als Pfeil lief sie in der linken Saeule ueber den Rand der
+Zeichenflaeche hinaus, und zwei zusaetzliche Bahnen haetten die kompakte
+Abbildung ueberladen.
+
+**Offen.** Die abgeloeste Abbildung reservierungspreis_ablauf_a4.pdf liegt noch
+in figures/chapter_3 und wird nicht mehr eingebunden; ebenso liegen im
+Modellrepository das alte Skript reservierungspreis_ablauf_a4.py und dessen
+Sicherung .alt. Beides bleibt auf Wunsch des Verfassers vorerst liegen.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
