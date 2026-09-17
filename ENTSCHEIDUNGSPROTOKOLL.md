@@ -987,6 +987,53 @@ Datum in 2.3.1, Zeitwert mit Begruendung in 2.3.2, Volatilitaet in 1.2.
 **Pruefungen.** tools/pruefen.py ohne Befund in allen drei Kapiteldateien,
 Build ohne Fehler.
 
+### 17.09.2026, Anhang B auf eine Seite gekuerzt
+
+Betrifft extras/attachment_thermik.tex und chapters/chapter_2.tex.
+
+Auftrag des Verfassers: "versuche Anhang B auf eine DIN-A4-Seite zu kuerzen,
+aber Gleichungen und Diagramm sollen drin bleiben. Pruefe dazu nochmal die
+Aussagen und Saetze auf Relevanz und Aussage und streiche den Vergleich von
+Trafos zu Leitungen. Sag einfach, Trafos und Leitungen ueberlasten ab gewissen
+Temperaturen. Diese Ueberlastung aeussert sich bei Freileitung primaer durch
+Durchhang und Festigkeit und bei Trafos durch Alterung der Isolation."
+
+**Ergebnis.** Anhang B steht auf genau einer Seite, Anhang C beginnt auf der
+Folgeseite. Beide Gleichungen und die Abbildung sind erhalten.
+
+**Zurueckgenommene Aussagen, nicht wieder aufnehmen, ohne den Umfang zu
+pruefen.** Der Geltungsbereich der Waermebilanz (magnetische Erwaermung,
+Verdunstungskuehlung, konstante Waermekapazitaet). Das Freileitungsmonitoring
+und die Gegenueberstellung "setzt demgegenueber auf der Erwaermungsseite an".
+Die Vernachlaessigung von Skineffekt und Nichtlinearitaet des Widerstands. Das
+Zahlenbeispiel "Eine Erhoehung des Stroms um zehn Prozent steigert den
+Waermeeintrag nach Gleichung B.2 damit um rund ein Fuenftel." Der Satz zur
+Windgeschwindigkeit "Die Kuehlung haengt von den Wetterbedingungen ab und
+waechst unterproportional mit der Windgeschwindigkeit, weshalb windschwache
+Stunden die kuerzeste zulaessige Dauer ergeben." Der ganze Vergleich mit dem
+Transformator, naemlich Heisspunkttemperatur, innerer Transportweg ueber das
+Oel, groessere Waermekapazitaet und summierte Alterung ueber die Einsaetze.
+Die alte Fassung steht vollstaendig am Ende der Datei als Kommentar.
+
+**Neu nach Vorgabe des Verfassers.** "Leiterseile und Transformatoren tragen
+eine Ueberlast nur bis zu einer Grenztemperatur. Die Ueberlastung aeussert sich
+am Leiterseil durch Durchhang und Festigkeit und am Transformator durch die
+Alterung der Isolation."
+
+**Nichts geht verloren.** Die Aussage zur groesseren Waermekapazitaet und zur
+Haeufigkeit der Ueberlastung beim Transformator steht unveraendert im
+Fliesstext von Abschnitt 2.1.2.
+
+**Folgeaenderung in chapter_2.tex.** Der Verweis kuendigte "die Unterschiede
+beim Transformator" an, die der Anhang nicht mehr darstellt. Neu: "Anhang B
+stellt die Waermebilanz der Freileitung und die Berechnung der zulaessigen
+Dauer dar."
+
+**Vorbehalt.** Die Abbildung steht auf 72 Prozent der Textbreite, sonst passte
+die Seite nicht. Die Beschriftungen schrumpfen damit auf rund sieben Punkt.
+Ist das zu klein, muss die Abbildung im Modellrepository fuer diese Groesse
+neu gesetzt werden.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -7524,6 +7571,125 @@ Abbildung ueberladen.
 in figures/chapter_3 und wird nicht mehr eingebunden; ebenso liegen im
 Modellrepository das alte Skript reservierungspreis_ablauf_a4.py und dessen
 Sicherung .alt. Beides bleibt auf Wunsch des Verfassers vorerst liegen.
+
+### 17.09.2026, 3.2.4 Text gestrafft, Abbildungen vorgezogen
+
+Kommentare des Verfassers in dieser Reihenfolge: "Damit wechselt die Frage, die
+ein Lauf beantwortet. Fuellsatz kann raus"; "Abbildung 3.2 und Abbildung 3.3
+eine Seite nach vorne"; zu fuenf Saetzen "die ganzen Saetze haben Sinn fuer
+einen, maximal zwei Saetze, bitte formuliere kompakt"; "Ein Zertifikat, was ist
+ein Zertifikat, bitte jetzt keine neuen Begriffe einfuehren"; zum
+Abstiegsabsatz "dieser Absatz ist wieder sehr wirr, versuche die Saetze
+aneinander anzuhaengen inhaltlich, es geht rein darum, den Prozess zu erklaeren
+und nicht irgendwas abzugrenzen."
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.** "Damit wechselt
+die Frage, die ein Lauf beantwortet." "Eine Preisachse, auf der sich ein
+Intervall halbieren liesse, gibt es damit nicht mehr." "Ein Zertifikat senkt
+deshalb jede der 48 Stunden einzeln um die Toleranz ..." Der Begriff Zertifikat
+insgesamt. "Ein Minimum der Summe aller Stundenpreise ist damit nicht
+gesichert, denn der Abstieg senkt stets nur eine Stunde." "Zwei Stunden lassen
+sich unter Umstaenden gemeinsam senken, waehrend jede fuer sich die volle
+Reservierung bricht." "Die Reihenfolge der Senkung, aufsteigend nach Stunden
+und die positive vor der negativen Richtung, ist deshalb eine Festlegung."
+
+**Entscheidung.** Die Einschraenkung zum koordinatenweisen Minimum und zur
+Reihenfolge des Abstiegs steht nicht mehr in 3.2.4. Nach der Entscheidung des
+Verfassers vom 15.09.2026 gehoert sie als Einschraenkung nach Kapitel 5. Sie
+steht damit derzeit nirgends in der Arbeit und ist dort nachzutragen.
+
+**Abstiegsabsatz.** Als reine Prozessbeschreibung neu gefasst, in der
+Reihenfolge des Ablaufs: senken, pruefen, Folgerung, halbieren, naechste
+Stunde, Ende, Ergebnis. Handelnder Akteur ist durchgaengig der Abstieg.
+
+**Abbildungen.** Abbildung 3.2 steht auf Seite 42, Abbildung 3.3 auf Seite 43.
+Beide stehen dafuer im Quelltext vor dem ersten Absatz des Unterabschnitts,
+denn eine Gleitumgebung kann nur an den Kopf einer Seite, die beim Erreichen
+ihrer Stelle im Quelltext noch nicht gesetzt ist. Abbildung 3.2 mit H,
+Abbildung 3.3 mit t.
+
+### 17.09.2026, 3.3.1 Bezugsanlage, Betriebsarten und IDC erklaert
+
+Kommentare des Verfassers: "ein Satz reicht, welche Daten wir genommen haben,
+dass es auch 1 h und 1 Zyklus gibt, ist uninteressant. Wichtiger ist, wie das
+einfliesst. Die Leistungsreservierung, die mit cross market passiert, ist auch
+nicht drin. Und wie die Zyklen sich auf den Erloes auswirken, Stichwort
+TB-Spread"; "hier kannst du erklaeren, wie die Top-Bottom-Spreads gerankt
+werden und wie viel der Speicher nutzen kann"; zur Aufzaehlung der Maerkte die
+Unterscheidung von cross-market und Einzelmarkt, die Abgrenzung des IDC von
+IDA1 und ID1 und die Begruendung des marktuebergreifenden Vergleichs; "gehe
+auch mehr auf diesen Prozess ein beim Erklaeren des IDC" mit dem Ablaufplan
+der Battery Charts.
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.** "Der Index rechnet
+fuer vier Bezugsanlagen, naemlich einen Energieinhalt je Leistung von einer
+oder zwei Stunden und eine Zyklengrenze von einem oder zwei Zyklen je Tag,
+jeweils mit einem Wirkungsgrad von 95 Prozent je Richtung." "Die hier
+verwendeten Reihen gelten fuer zwei Stunden und zwei Zyklen je Tag."
+
+**Belegt am Quelltext des Index** (C:/GIT-HUB/battery_revenue_index-main).
+calculation_config.py fuehrt fuer den Einzelmarkt FCR, aFRR, DA, IDA1, ID1 und
+IDC, marktuebergreifend FCR, aFRR und IDC. DA, IDA1 und ID1 laufen ueber
+wholesale_market.py gegen je eine Preisreihe, der IDC ueber
+id_rolling_intrinsic.py rollierend. Der IDC erhaelt nach
+cross_market_analysis.py die von der aFRR-Arbeit nicht reservierte Leistung,
+die von ihr uebrig gelassenen Zyklen mit einer Untergrenze von der Haelfte der
+Zyklengrenze, ein Ladezustandsband um den Anfangswert und den Auftrag, den vom
+aFRR-Abruf verschobenen Ladezustand bis zum Tagesende auszugleichen.
+
+**Eigenstaendige Ableitung.** Die Rangfolge der Tagesspannen: gegen eine
+bekannte Preisreihe nutzt der erste Zyklus die groesste Spanne, zwei Zyklen
+bei zwei Stunden Energieinhalt je Leistung belegen die vier guenstigsten und
+die vier teuersten Stunden, und die Spanne des zweiten Zyklus faellt kleiner
+aus. Ausdruecklich im Text steht der Vorbehalt, dass der rollierende
+Intraday-Handel diese Ordnung nur naeherungsweise erreicht, weil ihm die Preise
+des restlichen Tages nicht bekannt sind.
+
+### 17.09.2026, 3.3.2 nach Einzelmaerkten und marktuebergreifend geordnet
+
+Kommentar des Verfassers: den Satz zu rund zehn Prozent Erloes im
+Intraday-Handel wuerde er so nicht treffen; erst die allgemeinen Unterschiede,
+dann die groben Abweichungen, beginnend mit den Einzelmaerkten, dann
+marktuebergreifend gegen die Gesamtoptimierung; der Vergleich soll
+ausschliessen, dass die Modellierung die Erloesmoeglichkeiten eines BESS
+unterschaetzt. Pruefauftrag: wie Index und Modell die aFRR-Arbeit bewerten,
+wie viel der Index liefert und ob die halbe Leistung auch im Einzelmarkt gilt.
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.** "Sein
+Intraday-Handel kennt nur die bis dahin bekannten Preise, waehrend das Modell
+alle Preise des Liefertages kennt, und dieser Unterschied allein macht rund
+zehn Prozent des Erloeses im kontinuierlichen Intraday-Handel aus." "Den
+groessten Teil des Faktors bei der aFRR erklaert die vorgehaltene Leistung,
+denn der Index reserviert nach seiner Methodik nur die Haelfte der
+Anschlussleistung fuer die aFRR-Leistung." Dieser Satz war im Ergebnis
+richtig, aber falsch begruendet.
+
+**Befunde der Pruefung.** Erstens gilt die halbe Leistung im Index nur
+marktuebergreifend; im Einzelmarkt stehen alle power_share auf eins. Zweitens
+ist die aFRR-Leistung aber in beiden Betriebsarten auf min(1, energy / (power
+* 4)) begrenzt, also auf eine Lieferdauer von vier Stunden. Bei zwei Stunden
+Energieinhalt je Leistung ergibt das die Haelfte der Leistung. Das Modell
+bindet je Megawatt eine Stunde. Das ist der Grund fuer den Faktor 1,52 und gilt
+auch im Einzelmarkt. Drittens bietet der Index die aFRR-Arbeit zum Preis der
+ersten Intraday-Auktion plus beziehungsweise minus 50 Prozent und liefert nur,
+wenn dieses Gebot am realen Abruf im Geld ist, dann aber den realen Abruf bis
+zur vollen eigenen Vorhaltung. Das Modell liefert im Standardmodus prorata in
+jeder abgerufenen Viertelstunde einen festen Anteil seiner Vorhaltung. Die
+Annahme des Verfassers, beide nutzten fast dieselben Preise und Liefermengen,
+trifft damit nicht zu; beide haengen die Menge aber an die Reservierung.
+Viertens ist die DA-Abweichung nicht auf einen geringeren Speicherinhalt
+zurueckzufuehren, denn die Modellanlage hat mit 2,5 Stunden mehr Energieinhalt
+je Leistung als die Bezugsanlage; der Verfasser hat dem zugestimmt.
+
+**Eigenstaendiges Argument.** Die Deutung der Energiemaerkte ueber die
+Degradationskosten, die das Modell je Zyklus verrechnet.
+
+**Offene Punkte.** Erstens bleibt die Ursache des Faktors 1,24 in der FCR
+offen, weil der Index dort im Einzelmarkt die volle Leistung anbietet; der Text
+sagt das ausdruecklich. Zweitens will der Verfasser den Intraday-Handel des
+Modells gegen den ID1-Wert des Index stellen und nicht gegen die rollierende
+IDC-Bewertung. Dafuer fehlt der ID1-Wert des Index fuer 2025, den der Verfasser
+beisteuert. Bis dahin steht der Vergleich gegen den IDC im Text.
 
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 

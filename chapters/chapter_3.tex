@@ -4780,6 +4780,39 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
 %Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf die reservierte Leistung abliest.
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung:
 %Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Reservierungspreis für die kurative Reservierung aufruft und aus jedem Lauf die reservierte Leistung abliest.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
+% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
+% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
+% Fassung:
+%    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
+% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
+%    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
+% BILDUNTERSCHRIFT ergaenzt am 16.09.2026, Frage des Verfassers: Preisachse logarithmisch, geprueft wird stets die Intervallmitte. Alte Fassung:
+%    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt.}
+    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
+    \label{fig:reservierungspreis_bisektion}
+\end{figure}
+
+\begin{figure}[t]
+    \centering
+% DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
+%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+% AUSGETAUSCHT am 17.09.2026, Auftrag des Verfassers: die ausfuehrliche
+% Abbildung gehoert in den Anhang, im Text steht eine kompakte, die beide
+% Iterationen gleich behandelt. Alte Fassung:
+%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
+    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_kompakt.pdf}
+% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
+%    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
+% BILDUNTERSCHRIFT NEU am 17.09.2026, weil die Abbildung ausgetauscht ist.
+% Alte Fassung:
+%    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
+    \caption{Bestimmung des kurativen Reservierungspreises, beide Iterationen im selben Aufbau, nämlich Grenzen bestimmen und dasselbe Intervall halbieren. Den ausführlichen Ablauf zeigt Anhang~\ref{anh:ablauf}.}
+    \label{fig:reservierungspreis_ablauf}
+\end{figure}
+
 Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt aufruft und aus jedem Lauf die reservierte Leistung abliest.
 Jeder Lauf trägt einen vorgegebenen Reservierungspreis je Stunde und Richtung, in der ersten Iteration für alle Stunden des Tages denselben.
 % GESTRICHEN am 16.09.2026, Kommentar des Verfassers, Dopplung: Ein Lauf löst stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
@@ -4836,20 +4869,9 @@ Bleibt eine Stunde auch beim höchsten Deckel nicht voll reserviert, gibt es fü
 % GESTRICHEN am 17.09.2026, Kommentar des Verfassers: nur die erwartete Laufzahl aufnehmen, nicht so viele Angaben. Nicht wieder aufnehmen. Alte Fassung:
 %In den ausgewerteten Tagen tritt dieser Fall nicht ein.
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
-% UNTERSCHRIFT GEKUERZT am 12.09.2026, Vorgabe des Verfassers, ein bis drei
-% Zeilen. Was entfaellt, steht in den Stichpunkten des Abschnitts. Alte
-% Fassung:
-%    \caption{Bisektion für eine Beispielstunde. (a) Der Füllgrad steigt monoton mit dem vorgegebenen Preis, sodass die Schwelle eindeutig ist. (b) Intervall je Halbierungsschritt. Nach 14 Schritten ist es schmaler als 0,05 Euro je Megawatt und Stunde, und seine obere Grenze ist der Preis, ab dem die Stunde voll reserviert ist.}
-% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
-%    \caption{Bisektion für eine Beispielstunde. (a) Füllgrad über dem vorgegebenen Preis. (b) Suchintervall je Halbierungsschritt bis zu einer Breite von 0,05 Euro je Megawatt und Stunde.}
-% BILDUNTERSCHRIFT ergaenzt am 16.09.2026, Frage des Verfassers: Preisachse logarithmisch, geprueft wird stets die Intervallmitte. Alte Fassung:
-%    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt.}
-    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
-    \label{fig:reservierungspreis_bisektion}
-\end{figure}
+% PLATZIERUNG 17.09.2026, Kommentar des Verfassers: eine Seite nach vorn, an die Stelle, die auf die Abbildung verweist. Alte Fassung:
+%\begin{figure}[htbp]
+% ABBILDUNG VERSCHOBEN am 17.09.2026, Kommentar des Verfassers: eine Seite nach vorn. Sie steht jetzt VOR dem ersten Absatz dieses Unterabschnitts, weil der Absatz die Seite allein fuellt und die Abbildung sonst auf die Folgeseite rutscht.
 
 % NEU GEFASST am 16.09.2026, Kommentar des Verfassers: nach der ersten Iteration koennen begrenzte Stunden wieder fuer die Arbitrage genutzt werden, Fehler des Verfahrens aus der Verschiebung des Loesungsraums durch die Zeitkopplung. Alte Fassung:
 %Die Bisektion allein reicht nicht aus, denn die Schwelle einer Stunde hängt nicht von ihrem Preis allein ab, sondern vom ganzen Preisvektor.
@@ -4895,23 +4917,14 @@ Die obere Grenze prüft die Bisektion nie erneut, sodass sie bei einem vorgegebe
 Eine Bisektion je Stunde bei festen vorgegebenen Reservierungspreisen der übrigen Stunden führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 
 % ABBILDUNG VERSCHOBEN am 16.09.2026 auf Vorgabe des Verfassers, vor den Absatz, der sie nennt, damit sie auf Seite 43 steht.
-\begin{figure}[tbp]
-    \centering
-% DURCHSICHT 15.09.2026, A4, Abbildung auf 62 Prozent der Seitenhoehe, damit Text auf die Seite passt. Alte Fassung:
-%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-% AUSGETAUSCHT am 17.09.2026, Auftrag des Verfassers: die ausfuehrliche
-% Abbildung gehoert in den Anhang, im Text steht eine kompakte, die beide
-% Iterationen gleich behandelt. Alte Fassung:
-%    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_a4.pdf}
-    \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_kompakt.pdf}
-% BILDUNTERSCHRIFT GEKUERZT am 15.09.2026, W7. Alte Fassung:
-%    \caption{Bestimmung des kurativen Reservierungspreises mit Symbolen nach DIN 66001. Oben halbiert die 1.~Iteration bei einheitlichem Preis das Suchintervall jeder Stunde, unten hebt die 2.~Iteration die offenen Stunden gemeinsam an und senkt sie anschließend einzeln, soweit die Vollverdrängung aller Stunden das trägt.}
-% BILDUNTERSCHRIFT NEU am 17.09.2026, weil die Abbildung ausgetauscht ist.
-% Alte Fassung:
-%    \caption{Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001.}
-    \caption{Bestimmung des kurativen Reservierungspreises, beide Iterationen im selben Aufbau, nämlich Grenzen bestimmen und dasselbe Intervall halbieren. Den ausführlichen Ablauf zeigt Anhang~\ref{anh:ablauf}.}
-    \label{fig:reservierungspreis_ablauf}
-\end{figure}
+% PLATZIERUNG 17.09.2026, Kommentar des Verfassers: eine Seite nach vorn, an die Stelle, die auf die Abbildung verweist. Alte Fassung:
+%\begin{figure}[tbp]
+% PLATZIERUNG 17.09.2026, Kommentar des Verfassers: eine Seite nach vorn.
+% H haelt die Abbildung an der Stelle im Quelltext, dort sind aber nur rund
+% fuenf der noetigen elf Zentimeter frei. Mit t geht sie an den Kopf der
+% Seite, auf der der verweisende Absatz steht. Alte Fassung:
+%\begin{figure}[H]
+% ABBILDUNG VORGEZOGEN am 17.09.2026, Kommentar des Verfassers: eine Seite nach vorn. Sie steht jetzt im Quelltext hinter Abbildung 3.2 vor dem ersten Absatz, weil eine Gleitumgebung nur an den Kopf einer noch nicht gesetzten Seite kann.
 
 % NEU GEFASST am 16.09.2026, Kommentar des Verfassers: drei Saetze zu einem. Alte Fassung:
 %Das Verfahren löst das Problem in zwei Iterationen, die Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
@@ -4929,14 +4942,22 @@ Eine Bisektion je Stunde bei festen vorgegebenen Reservierungspreisen der übrig
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Der Wechsel von einem Preis je Lauf auf 48 Preise je Lauf stand nur als Nebensatz, traegt aber das ganze Verfahren. Alte Fassung:
 %Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die alle 48 Reservierungspreise gemeinsam vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
 Deshalb folgt auf die erste Iteration eine zweite, in der jeder Lauf 48 verschiedene vorgegebene Reservierungspreise trägt, einen je Stunde und Richtung.
-Damit wechselt die Frage, die ein Lauf beantwortet.
-In der ersten Iteration lautet die Frage, ab welchem einheitlichen Reservierungspreis eine einzelne Stunde voll reserviert ist.
-In der zweiten Iteration lautet die Frage, ob unter allen 48 Reservierungspreisen zugleich jede Stunde und Richtung voll reserviert bleibt.
-Eine Preisachse, auf der sich ein Intervall halbieren ließe, gibt es damit nicht mehr.
-Die zweite Iteration steigt deshalb zuerst grob auf und danach genau ab, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+% GESTRICHEN am 17.09.2026, Kommentar des Verfassers: Fuellsatz. Die beiden Folgesaetze stellen den Wechsel selbst gegenueber, der Satz kuendigte ihn nur an. Nicht wieder aufnehmen. Alte Fassung:
+%Damit wechselt die Frage, die ein Lauf beantwortet.
+% GEKUERZT am 17.09.2026, Kommentar des Verfassers: fuenf Saetze tragen den Sinn von hoechstens zweien. Alte Fassung:
+%In der ersten Iteration lautet die Frage, ab welchem einheitlichen Reservierungspreis eine einzelne Stunde voll reserviert ist.
+Gefragt wird damit nicht mehr nach einer einzelnen Stunde unter einem einheitlichen Reservierungspreis, sondern nach allen 48 Stunden und Richtungen zugleich.
+% GEKUERZT am 17.09.2026, Kommentar des Verfassers: fuenf Saetze tragen den Sinn von hoechstens zweien. Alte Fassung:
+%In der zweiten Iteration lautet die Frage, ob unter allen 48 Reservierungspreisen zugleich jede Stunde und Richtung voll reserviert bleibt.
+% GEKUERZT am 17.09.2026, Kommentar des Verfassers: fuenf Saetze tragen den Sinn von hoechstens zweien. Alte Fassung:
+%Eine Preisachse, auf der sich ein Intervall halbieren ließe, gibt es damit nicht mehr.
+% GEKUERZT am 17.09.2026, Kommentar des Verfassers: fuenf Saetze tragen den Sinn von hoechstens zweien. Alte Fassung:
+%Die zweite Iteration steigt deshalb zuerst grob auf und danach genau ab, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+Die zweite Iteration steigt deshalb zuerst grob auf und danach genau ab, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und Anhang~\ref{anh:ablauf} mit allen Schritten darstellt.
 % ERGAENZT am 17.09.2026: Verweis auf den neuen Anhang mit der
 % ausfuehrlichen Abbildung.
-In Anhang~\ref{anh:ablauf} sind beide Iterationen mit allen Schritten dargestellt.
+% GEKUERZT am 17.09.2026, Kommentar des Verfassers: fuenf Saetze tragen den Sinn von hoechstens zweien. Alte Fassung:
+%In Anhang~\ref{anh:ablauf} sind beide Iterationen mit allen Schritten dargestellt.
 Der Aufstieg hebt alle noch offenen Stunden zugleich um ein Viertel an, bis keine Stunde mehr offen ist.
 % ZAHLEN ERGAENZT am 17.09.2026, gemessen vom Verfasser ueber die ausgewerteten Tage. Die Zahl der Tage wird nach seiner Vorgabe nicht genannt.
 % GESTRICHEN am 17.09.2026, Kommentar des Verfassers: nur die erwartete Laufzahl aufnehmen, nicht so viele Angaben. Nicht wieder aufnehmen. Alte Fassung:
@@ -4946,28 +4967,47 @@ Der Aufstieg hebt alle noch offenen Stunden zugleich um ein Viertel an, bis kein
 Dieser Aufstieg in groben Schritten schießt über das Ziel hinaus, sodass die vorgegebenen Reservierungspreise zwar ausreichen, aber nicht mehr minimal sind.
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Zertifikat und Abstieg waren zu einem Schritt verschmolzen, darum kam das Intervall im Folgesatz ohne Vorbereitung. Alte Fassung:
 %Ein Abstieg senkt deshalb jede Stunde einzeln um die Toleranz und prüft nach jeder Senkung, ob alle Stunden voll bleiben.
-Ein Zertifikat senkt deshalb jede der 48 Stunden einzeln um die Toleranz und prüft mit je einem Lauf, ob alle Stunden voll reserviert bleiben.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: keinen neuen Begriff einfuehren. Der Schritt heisst nicht mehr Zertifikat, handelnder Akteur ist der Abstieg. Alte Fassung:
+%Ein Zertifikat senkt deshalb jede der 48 Stunden einzeln um die Toleranz und prüft mit je einem Lauf, ob alle Stunden voll reserviert bleiben.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: der Absatz war wirr, die Saetze sollen inhaltlich aneinanderhaengen und rein den Prozess erklaeren. Alte Fassung:
+%Der Abstieg senkt deshalb jede der 48 Stunden einzeln um die Toleranz und prüft mit je einem Lauf, ob alle Stunden voll reserviert bleiben.
+Der Abstieg senkt deshalb den Preis einer einzelnen Stunde um die Toleranz und prüft mit einem Lauf die volle Reservierung aller 48 Stunden.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers: halbieren statt bisektieren, Variante 1. Alte Fassung:
 %Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und die Stunde wird unter dieser gemeinsamen Bedingung weiter nach unten bisektiert.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Welches Intervall halbiert wird, stand nicht da. Alte Fassung:
 %Bleiben alle Stunden voll, war der vorgegebene Reservierungspreis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
-Bleiben alle Stunden voll reserviert, war der vorgegebene Reservierungspreis dieser Stunde nicht minimal.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: der Absatz war wirr, die Saetze sollen inhaltlich aneinanderhaengen und rein den Prozess erklaeren. Alte Fassung:
+%Bleiben alle Stunden voll reserviert, war der vorgegebene Reservierungspreis dieser Stunde nicht minimal.
+Hält die volle Reservierung, war der Preis dieser Stunde zu hoch.
 % NEU GEFASST am 17.09.2026, Kommentar des Verfassers: warum wird p - 0,05 geprueft und dann nochmal halbiert, und in welchen Schritten sinkt der Preis. Der Text liess offen, dass die Probe zugleich die obere Grenze liefert und dass die Halbierung dieselbe ist wie in der ersten Iteration. Das Flussdiagramm sagt es seit demselben Tag, der Text muss es auch sagen. Alte Fassung:
 %Der Abstieg halbiert dann das Intervall von null bis zum Preis abzüglich der Toleranz, wieder unter der Bedingung, dass alle Stunden voll reserviert bleiben.
-Der um die Toleranz gesenkte Preis hält dann die volle Reservierung nachweislich und ist damit die obere Grenze des Intervalls, das der Abstieg von null an halbiert.
-Der Abstieg folgt derselben Regel wie die erste Iteration, jetzt aber unter der Bedingung, dass alle Stunden voll reserviert bleiben.
-Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung bleibt.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: der Absatz war wirr, die Saetze sollen inhaltlich aneinanderhaengen und rein den Prozess erklaeren. Alte Fassung:
+%Der um die Toleranz gesenkte Preis hält dann die volle Reservierung nachweislich und ist damit die obere Grenze des Intervalls, das der Abstieg von null an halbiert.
+Der um die Toleranz gesenkte Preis ist dann eine nachweislich tragfähige obere Grenze.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: der Absatz war wirr, die Saetze sollen inhaltlich aneinanderhaengen und rein den Prozess erklaeren. Alte Fassung:
+%Der Abstieg folgt derselben Regel wie die erste Iteration, jetzt aber unter der Bedingung, dass alle Stunden voll reserviert bleiben.
+Zwischen null und dem gesenkten Preis halbiert der Abstieg weiter, nach derselben Regel wie die erste Iteration und mit der vollen Reservierung aller Stunden als Kriterium.
+Hält die volle Reservierung dagegen nicht, bleibt der Preis der Stunde stehen.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: der Absatz war wirr, die Saetze sollen inhaltlich aneinanderhaengen und rein den Prozess erklaeren. Alte Fassung:
+%Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung bleibt.
+Der Abstieg geht so alle 48 Stunden durch und wiederholt den Durchgang, bis eine Runde ohne Senkung bleibt.
 % ZAHLEN ERGAENZT am 17.09.2026, gemessen vom Verfasser ueber die ausgewerteten Tage. Die Zahl der Tage wird nach seiner Vorgabe nicht genannt.
 % GESTRICHEN am 17.09.2026, Kommentar des Verfassers: nur die erwartete Laufzahl aufnehmen, nicht so viele Angaben. Nicht wieder aufnehmen. Alte Fassung:
 %In den ausgewerteten Tagen senkt der Abstieg je Tag 22 bis 42 der 48 Stunden und Richtungen, im Median 32.
-Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: der Absatz war wirr, die Saetze sollen inhaltlich aneinanderhaengen und rein den Prozess erklaeren. Alte Fassung:
+%Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt.
+Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
+Beim Vollreservierungspreis fällt eine Stunde aus der vollen Reservierung, sobald eine einzelne Stunde noch weiter sinkt.
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Warum das Minimum der Summe nicht gesichert ist, stand nicht da. Alte Fassung:
 %Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, und die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung.
-Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, denn der Abstieg senkt stets nur eine Stunde.
-Zwei Stunden lassen sich unter Umständen gemeinsam senken, während jede für sich die volle Reservierung bricht.
-Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist deshalb eine Festlegung.
+% GESTRICHEN am 17.09.2026, Kommentar des Verfassers: der Absatz erklaert den Prozess und grenzt nichts ab. Die Einschraenkung gehoert nach der Entscheidung vom 15.09.2026 nach Kapitel 5. Nicht wieder aufnehmen. Alte Fassung:
+%Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, denn der Abstieg senkt stets nur eine Stunde.
+% GESTRICHEN am 17.09.2026, Kommentar des Verfassers: der Absatz erklaert den Prozess und grenzt nichts ab. Die Einschraenkung gehoert nach der Entscheidung vom 15.09.2026 nach Kapitel 5. Nicht wieder aufnehmen. Alte Fassung:
+%Zwei Stunden lassen sich unter Umständen gemeinsam senken, während jede für sich die volle Reservierung bricht.
+% GESTRICHEN am 17.09.2026, Kommentar des Verfassers: der Absatz erklaert den Prozess und grenzt nichts ab. Die Einschraenkung gehoert nach der Entscheidung vom 15.09.2026 nach Kapitel 5. Nicht wieder aufnehmen. Alte Fassung:
+%Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist deshalb eine Festlegung.
 % GESTRICHEN am 17.09.2026, Kommentar des Verfassers: der Satz passt nicht in den Kontext. Er wiederholt 3.1, wo steht, dass jede Richtung einen anderen Teil des Ladezustandsbandes bindet und deshalb ein eigenes Gebot ist, und er haengt am Abstieg ohne Anschluss. Alte Fassung:
 %Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
 
@@ -5609,9 +5649,24 @@ Geprüft wird die Plausibilität des Referenzerlöses, also einer Zwischengröß
 Der Erlösindex der Battery Charts wird vom \ac{ISEA} gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
 % QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
 %Bezugsanlage ist ein Speicher mit einer Megawattstunde je Megawatt, also einem Energieinhalt je Leistung von einer Stunde.
-Der Index rechnet für vier Bezugsanlagen, nämlich einen Energieinhalt je Leistung von einer oder zwei Stunden und eine Zyklengrenze von einem oder zwei Zyklen je Tag, jeweils mit einem Wirkungsgrad von 95 Prozent je Richtung.
-Die hier verwendeten Reihen gelten für zwei Stunden und zwei Zyklen je Tag.
-Marktübergreifend führt der Index die \ac{FCR}, die \ac{aFRR}-Leistung, die \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, je Markt allein daneben auch den \ac{DA} und die Intraday-Auktion \cite{isea_methodik_2026}.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Der Index rechnet für vier Bezugsanlagen, nämlich einen Energieinhalt je Leistung von einer oder zwei Stunden und eine Zyklengrenze von einem oder zwei Zyklen je Tag, jeweils mit einem Wirkungsgrad von 95 Prozent je Richtung.
+%Die hier verwendeten Reihen gelten für zwei Stunden und zwei Zyklen je Tag.
+Verwendet ist hier die Reihe für eine Bezugsanlage mit einem Energieinhalt je Leistung von zwei Stunden, einer Zyklengrenze von zwei Zyklen je Tag und einem Wirkungsgrad von 95 Prozent je Richtung.
+Der Energieinhalt je Leistung entscheidet, wie viel Leistung ein Markt mit seinem Energievorhalt belegen kann.
+Die Zyklengrenze teilt der Index wie die Leistung und den Speicherinhalt als festen Anteil auf die Märkte auf.
+Gegen eine bekannte Preisreihe lädt der Speicher in den günstigsten und entlädt in den teuersten Zeitscheiben, sodass der erste Zyklus die größte Spanne des Tages nutzt.
+Bei einem Energieinhalt je Leistung von zwei Stunden belegt ein Zyklus zwei Stunden zum Laden und zwei zum Entladen, sodass zwei Zyklen die vier günstigsten und die vier teuersten Stunden belegen.
+Die Spanne des zweiten Zyklus fällt kleiner aus als die des ersten, weil die Zeitscheiben nach dem Preis geordnet zum Einsatz kommen.
+Im rollierenden Intraday-Handel erreicht der Index diese Ordnung nur näherungsweise, denn dort sind die Preise des restlichen Tages nicht bekannt.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Marktübergreifend führt der Index die \ac{FCR}, die \ac{aFRR}-Leistung, die \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, je Markt allein daneben auch den \ac{DA} und die Intraday-Auktion \cite{isea_methodik_2026}.
+Der Index rechnet in zwei Betriebsarten.
+Marktübergreifend, in den Battery Charts \emph{cross-market} genannt, verteilt der Index den Erlös eines Tages auf die \ac{FCR}, die \ac{aFRR}-Leistung, die \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel.
+Je Markt allein bestimmt ein einzelner Markt den ganzen Tageserlös des Speichers, und dafür stehen neben diesen Märkten auch der \ac{DA}, die erste Intraday-Auktion und der \ac{ID1} zur Verfügung \cite{isea_methodik_2026}.
+Die Bemessungen unterscheiden sich darin, welchen Preis der Speicher sieht.
+Der \ac{DA}, die erste Intraday-Auktion und der \ac{ID1} geben je Zeitscheibe einen Preis vor, gegen den der Speicher den ganzen Tag im Voraus optimiert.
+Der kontinuierliche Intraday-Handel kennt dagegen zu jedem Zeitpunkt nur die bis dahin ausgeführten Geschäfte und plant alle 15 Minuten neu.
 Veröffentlicht wird ein gleitender Mittelwert der Tageserlöse über 365 Tage, sodass der Wert am Jahresende genau das Kalenderjahr abbildet und die Validierung darum das Jahr 2025 umfasst.
 
 Marktübergreifend bedient der Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
@@ -5623,7 +5678,14 @@ Die \ac{aFRR}-Leistung belegt die Leistung, die der Speicher vier Stunden lang l
 % QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
 %Danach liefert die \ac{aFRR}-Arbeit mit der Hälfte der verbleibenden Leistung und des verbleibenden Speicherinhalts, bewertet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent, und gleicht den Ladezustand zum \ac{ID1} aus.
 Danach liefert die \ac{aFRR}-Arbeit mit der Hälfte der verbleibenden Leistung, des verbleibenden Speicherinhalts und der Zyklen, bewertet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent, und gleicht den Ladezustand zum \ac{ID1} aus.
-Zuletzt handelt der Intraday-Handel mit dem Rest der Leistung und der Hälfte der zulässigen Zyklen rollierend: Alle 15 Minuten optimiert er neu gegen den volumengewichteten Preis der bis dahin ausgeführten Geschäfte, ohne künftige Preise vorauszusetzen \cite{semmelmann_algorithm_2024}.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: mehr auf den Prozess des IDC eingehen. Die vier Uebergaben stehen in analysismodes/cross_market_analysis.py, naemlich c_rate aus der nicht reservierten Leistung, max_cycles als Rest mit Untergrenze, min_soc und max_soc als Band und soc_diff_afrr als Ausgleichsauftrag. Alte Fassung:
+%Zuletzt handelt der Intraday-Handel mit dem Rest der Leistung und der Hälfte der zulässigen Zyklen rollierend: Alle 15 Minuten optimiert er neu gegen den volumengewichteten Preis der bis dahin ausgeführten Geschäfte, ohne künftige Preise vorauszusetzen \cite{semmelmann_algorithm_2024}.
+Zuletzt handelt der kontinuierliche Intraday-Handel mit der Leistung, die die \ac{aFRR}-Arbeit nicht reserviert hat.
+An Zyklen bleibt dem kontinuierlichen Intraday-Handel, was die \ac{aFRR}-Arbeit übrig lässt, mindestens aber die Hälfte der Zyklengrenze.
+Der Ladezustand darf sich nur in einem Band um den Anfangswert bewegen.
+Der kontinuierliche Intraday-Handel gleicht außerdem den Ladezustand aus, den der Abruf der \ac{aFRR}-Arbeit bis zum Tagesende verschoben hat.
+Der Tag endet damit mit demselben Ladezustand, mit dem er begonnen hat.
+Gehandelt wird rollierend: Alle 15 Minuten optimiert der Index neu gegen den volumengewichteten Preis der bis dahin ausgeführten Geschäfte, ohne künftige Preise vorauszusetzen \cite{semmelmann_algorithm_2024}.
 Die \ac{FCR} geht mit dem Einheitspreis des Zuschlags ein, die \ac{aFRR}-Leistung mit dem mengengewichteten Durchschnittspreis, beide aus den Ausschreibungsergebnissen auf regelleistung.net.
 % QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
 %Jeden Erlös mindert der Index mit einer Erfassungsrate, die den Abstand zum idealen Handel abbilden soll und deren Höhe die Dokumentation nicht nennt.
@@ -5631,27 +5693,40 @@ Eine Erfassungsrate, die den Abstand zum idealen Handel abbilden soll, setzt der
 
 Für das Jahr 2025 weist der Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
 Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Dem marktübergreifenden Wert steht im Modell der Referenzerlös aus allen Märkten gegenüber, den Werten je Markt je ein Jahreslauf, in dem die übrigen Märkte abgeschaltet sind.
+Für den Vergleich mit dem Modell dient der marktübergreifende Wert, denn das Modell optimiert ebenfalls alle Märkte eines Tages gemeinsam.
+Ein Wert je Markt allein bildet die Aufteilung von Leistung, Speicherinhalt und Zyklen zwischen den Märkten nicht ab.
 Dem marktübergreifenden Wert steht im Modell der Referenzerlös aus allen Märkten gegenüber, den Werten je Markt je ein Jahreslauf, in dem die übrigen Märkte abgeschaltet sind.
 Weil der Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dort der Erlös des Modells aus beiden Energiemärkten zusammen gegenüber.
 
 \subsection{Vergleich der Erlöshöhe}
 \label{sec:validation_differences}
+% NEU AUFGEBAUT am 17.09.2026, Kommentar des Verfassers: erst die allgemeinen Unterschiede, dann die Einzelmaerkte, dann marktuebergreifend gegen die Gesamtoptimierung. Der Satz zu rund zehn Prozent Erloes im Intraday-Handel entfaellt, der Verfasser traegt die Aussage nicht. Die Begruendung der aFRR-Leistung ist berichtigt: die Haelfte der Leistung folgt aus der Lieferdauer von vier Stunden und gilt auch im Einzelmarkt. Die alte Fassung steht unter diesem Unterabschnitt als Kommentar.
 
 Index und Modell rechnen nach verschiedenen Regeln, sodass vor dem Vergleich zu klären ist, welche Abweichung zu erwarten ist.
 Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
-Sein Intraday-Handel kennt nur die bis dahin bekannten Preise, während das Modell alle Preise des Liefertages kennt, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus, wie in Abschnitt~\ref{sec:model_assumptions} dargestellt.
-% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
-%Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
-Die freie Aufteilung der Leistung erhöht den Erlös des Modells in den Leistungsmärkten, denn das Modell wählt die vorgehaltene Leistung je Stunde bis zur vollen Anschlussleistung, während der Index feste Anteile belegt.
-Der Energieinhalt je Leistung der Modellanlage von 2,5 Stunden übersteigt zudem die zwei Stunden der Bezugsanlage.
-Auch der sichere Zuschlag erhöht den Erlös dort, denn das Modell übernimmt die veröffentlichten Preise und setzt jede angebotene Leistung als bezuschlagt.
-% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
-%Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
-Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze von zwei Zyklen je Tag führt.
-Das Modell soll den Index nicht treffen, denn es ist als Obergrenze gebaut.
-Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
-Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
-Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 gegenüber.
+Das Modell kennt dagegen alle Preise des Liefertages und setzt jede angebotene Leistung als bezuschlagt.
+Die Degradationskosten senken den Erlös des Modells in den Energiemärkten, denn das Modell verrechnet jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
+Der Vergleich soll deshalb nicht zeigen, dass das Modell den Index trifft, sondern ausschließen, dass die Modellierung die Erlösmöglichkeiten eines \ac{BESS} unterschätzt.
+Erwartet wird, dass das Modell in den Leistungsmärkten über dem Index liegt, in den Energiemärkten darunter bleibt und den Jahresgang abbildet.
+
+Der Vergleich beginnt mit den Einzelmärkten, in denen Index und Modell jeden Markt allein bedienen, wie Anhang~\ref{anh:validierung} zeigt.
+In der \ac{aFRR} erreicht das Modell das 1,52-Fache des Index.
+Den größten Teil dieses Faktors erklärt die Bemessung der anbietbaren Leistung.
+Der Index bindet je vorgehaltenem Megawatt eine Lieferdauer von vier Stunden, sodass die Bezugsanlage nur die Hälfte ihrer Leistung anbieten kann.
+Das Modell bindet je Megawatt dagegen ein Ladezustandsband von einer Stunde und hält im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
+In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index, obwohl beide dort die volle Leistung anbieten, sodass die Ursache dieses Faktors offen bleibt.
+
+Bei der \ac{aFRR}-Arbeit hängt die Liefermenge auf beiden Seiten an der vorgehaltenen Leistung, folgt aber verschiedenen Regeln.
+Der Index bietet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent und liefert nur, wenn dieses Gebot am realen Abruf im Geld ist.
+In diesem Fall liefert der Index den realen Abruf bis zu seiner vollen vorgehaltenen Leistung.
+Das Modell liefert dagegen in jeder Viertelstunde mit Abruf einen festen Anteil seiner Vorhaltung.
+Dieser Anteil entspricht dem Verhältnis des deutschlandweiten Abrufs zur gesamten Vorhaltung.
+Der Index liefert damit seltener, dann aber mit der vollen Vorhaltung, während das Modell stetig, aber in kleinem Umfang liefert.
+
+In den Energiemärkten bleibt das Modell unter dem Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
+Diese Abweichung folgt den Degradationskosten, die das Modell dort je Zyklus verrechnet.
 
 \begin{figure}[htbp]
     \centering
@@ -5660,21 +5735,53 @@ Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 ge
     \label{fig:validierung_cross}
 \end{figure}
 
-Über das Jahr 2025 liegt der Index im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Modell bei 348,3 Tausend Euro je Megawatt und Jahr.
+Marktübergreifend steht dem Index der Referenzerlös des Modells aus allen Märkten gegenüber, und Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 gegenüber.
+Der Index liegt im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Modell bei 348,3 Tausend Euro je Megawatt und Jahr.
 Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Modell liegt in allen zwölf Monaten über dem Index.
-Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Modell den Jahresgang des Index abbildet und gleichmäßig darüber liegt.
-Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung} zeigt.
-In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index und in der \ac{aFRR} das 1,52-Fache.
-Am \ac{DA} erreicht das Modell das 0,86-Fache des Index und im \ac{IDC} das 0,89-Fache.
-Das Modell ist damit nicht durchgängig überhöht, denn wo es Degradationskosten verrechnet, bleibt es hinter der Referenz zurück.
+Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Modell den Jahresgang des Index abbildet.
+Marktübergreifend stehen sich zudem zwei Aufteilungen gegenüber, denn der Index belegt jeden Markt mit einem festen Anteil der Leistung, während das Modell die Leistung frei auf die Märkte verteilt.
+Eine Unterschätzung der Erlösmöglichkeiten durch die Modellierung zeigt der Vergleich damit weder je Markt noch marktübergreifend.
+
+% ALTE FASSUNG von 3.3.2 vor dem Umbau vom 17.09.2026:
+
+%Index und Modell rechnen nach verschiedenen Regeln, sodass vor dem Vergleich zu klären ist, welche Abweichung zu erwarten ist.
+%Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
+%Sein Intraday-Handel kennt nur die bis dahin bekannten Preise, während das Modell alle Preise des Liefertages kennt, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus, wie in Abschnitt~\ref{sec:model_assumptions} dargestellt.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
+%Die freie Aufteilung der Leistung erhöht den Erlös des Modells in den Leistungsmärkten, denn das Modell wählt die vorgehaltene Leistung je Stunde bis zur vollen Anschlussleistung, während der Index feste Anteile belegt.
+%Der Energieinhalt je Leistung der Modellanlage von 2,5 Stunden übersteigt zudem die zwei Stunden der Bezugsanlage.
+%Auch der sichere Zuschlag erhöht den Erlös dort, denn das Modell übernimmt die veröffentlichten Preise und setzt jede angebotene Leistung als bezuschlagt.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
+%Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze von zwei Zyklen je Tag führt.
+%Das Modell soll den Index nicht treffen, denn es ist als Obergrenze gebaut.
+%Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
+%Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
+%Abbildung~\ref{fig:validierung_cross} stellt beide Reihen über das Jahr 2025 gegenüber.
+
+%\begin{figure}[htbp]
+%    \centering
+%    \includegraphics[width=\textwidth]{figures/chapter_3/validierung_cross.pdf}
+%    \caption{Erlös je Monat 2025 nach Modell und Index in Tausend Euro je Megawatt und Jahr, rechts der Abstand beider Reihen.}
+%    \label{fig:validierung_cross}
+%\end{figure}
+
+%Über das Jahr 2025 liegt der Index im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Modell bei 348,3 Tausend Euro je Megawatt und Jahr.
+%Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Modell liegt in allen zwölf Monaten über dem Index.
+%Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Modell den Jahresgang des Index abbildet und gleichmäßig darüber liegt.
+%Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung} zeigt.
+%In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index und in der \ac{aFRR} das 1,52-Fache.
+%Am \ac{DA} erreicht das Modell das 0,86-Fache des Index und im \ac{IDC} das 0,89-Fache.
+%Das Modell ist damit nicht durchgängig überhöht, denn wo es Degradationskosten verrechnet, bleibt es hinter der Referenz zurück.
 % QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
 %Der Aufschlag entsteht in den Leistungsmärkten, wo der größere Energieinhalt je Leistung und der sichere Zuschlag wirken.
-Der Aufschlag entsteht in den Leistungsmärkten, wo die freie Aufteilung der Leistung und der sichere Zuschlag wirken.
+%Der Aufschlag entsteht in den Leistungsmärkten, wo die freie Aufteilung der Leistung und der sichere Zuschlag wirken.
 % QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
 %Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur ein Viertel der Anschlussleistung für die \ac{aFRR}-Leistung.
-Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur die Hälfte der Anschlussleistung für die \ac{aFRR}-Leistung.
-Das Modell hält dagegen im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
-Alle drei Teile des Prüfkriteriums sind damit erfüllt.
+%Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur die Hälfte der Anschlussleistung für die \ac{aFRR}-Leistung.
+%Das Modell hält dagegen im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
+%Alle drei Teile des Prüfkriteriums sind damit erfüllt.
 
 \subsection{Validierung der Funktionsweise}
 \label{sec:validation_function}
