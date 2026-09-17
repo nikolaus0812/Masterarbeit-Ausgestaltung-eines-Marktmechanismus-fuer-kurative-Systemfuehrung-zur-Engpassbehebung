@@ -7177,6 +7177,14 @@ Haelfte" berichtigt, die Zyklengrenze mit zwei Zyklen je Tag beziffert.
 Eigenstaendige Ableitung: die Zahlen 259,7 und die Einzelmarktwerte bleiben
 unveraendert, denn sie stammen aus den Exporten und nicht aus dem Quelltext.
 
+### 17.09.2026, Bezugsanlage des Erloesindex bestaetigt
+
+Der Verfasser hat am 17.09.2026 bestaetigt, dass die Exporte der Battery
+Charts vom 08.09.2026 mit dem Systemtyp 2 h Energieinhalt je Leistung und
+2 Zyklen je Tag erstellt wurden. Die Annahme aus dem Eintrag zu 3.3.1 vom
+selben Tag ist damit keine Annahme mehr, die Saetze in 3.3.1 und 3.3.2 und
+die Notiz in isea_batterycharts_2026 bleiben wie geschrieben.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
