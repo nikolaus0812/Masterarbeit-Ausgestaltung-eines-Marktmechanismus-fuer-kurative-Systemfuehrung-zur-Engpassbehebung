@@ -40,6 +40,9 @@ ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen, nur anhaengen, 
 WORKFLOW.md                       Vorgehen fuer Korrektur, Neufassung und Kommentardurchgang
 DURCHSICHT_KAP1_3.md              Offene Vorschlaege der Durchsicht vom 15.09.2026, Liste F
 KOMMENTARE_KAP3.md                Kommentardatei, nicht genutzt, der Verfasser kommentiert im Chat
+HANDOFF.md                        Uebergabe der Sitzung vom 17.09.2026 an den naechsten Chat, zuerst lesen
+tools/kap3_durchsicht_lib.py      Hilfsklasse fuer Satz- und Absatzaenderungen mit Kommentarerhalt
+tools/extract_alle.py             Kapitel 1 bis 3 als Text mit nummerierten Absaetzen
 analysen/                         Eigene Auswertungen mit Daten und Skripten als Belege
 archiv/                           Umgesetzte Arbeitsdokumente, nur zum Nachschlagen:
                                   AENDERUNGEN_KAP1_2.md, AENDERUNGEN_KAP3.md,
