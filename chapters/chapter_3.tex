@@ -6,7 +6,7 @@ Das Engpassmanagement wird um eine Systemdienstleistung ergänzt, deren Gegensta
 Die Bemessung des finanziellen Ausgleichs aus dem Redispatch ist auf diese Bereitschaft nicht anwendbar, weil sie an die durchgeführte Anpassung anknüpft, wie in Abschnitt~\ref{sec:interim_conclusion} dargestellt.
 Die Vergütung der Bereitschaft ist deshalb neu zu untersuchen, und dafür eignet sich ein kurativer Marktmechanismus, weil sich der kurative Reservierungspreis gegen die Erlöse der übrigen Vermarktung messen lässt.
 In diesem Kapitel werden die Anforderungen an einen solchen Mechanismus abgeleitet, die kurative Reservierung als Produkt entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell aus der Sicht des Anlagenbetreibers bestimmt.
-Zum Abschluss wird der Referenzerlös des Modells gegen einen veröffentlichten Erlösindex für \ac{BESS} auf Plausibilität geprüft.
+Zum Abschluss wird der Referenzerlös des Modells gegen einen veröffentlichten Revenue-Index für \ac{BESS} auf Plausibilität geprüft.
 
 \section{Anforderungen und Produkt}
 \label{sec:market_requirements}
@@ -122,6 +122,7 @@ Für den Zuschlag vergleichen die \ac{ÜNB} jedes Gebot nach seiner Wirkung, als
 Bezuschlagt wird kein einzelnes Gebot, sondern ein Verbund aus Geboten beider Richtungen, denn die Maßnahme muss sich bilanziell ausgleichen.
 Im Verbund entlastet die eine Richtung an einem wirksamen Knoten den Engpass, während die Gegenrichtung an einem anderen Knoten den bilanziellen Ausgleich stellt.
 Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, damit der Akteur für die erste Stunde des Liefertages noch vor dem Handelsschluss zwischen den Regelzonen umplanen kann.
+Weil der Zuschlag am Vortag feststeht und über die ganze Zeitscheibe bindet, heben Fahrplanänderungen nach der letzten Vorschaurechnung die Vorhaltung nicht mehr auf.
 
 \section{Optimierung des Speicherbetriebs}
 \label{sec:model_scope}
@@ -158,6 +159,7 @@ Die Ausgangsdaten werden als CSV- und Parquet-Dateien abgelegt und daraus ausgew
 
 Das Modell führt als Bezug den Referenzfahrplan mit, also den Fahrplan ohne kurative Bindung aus einem Lauf ohne kurative Reservierung, koppelt den Ladezustand über den Tag und entscheidet alle Märkte gemeinsam.
 Der Referenzfahrplan zeigt damit, was die Reservierung verdrängt.
+Der Erlös des Referenzfahrplans ist der Referenzerlös.
 Die Opportunitätskosten der Reservierung entstehen damit im Modell selbst, sodass kein gesonderter Kostenansatz für die Vorhaltung nötig ist.
 Die Kopplung des Ladezustands bindet auch die Stunden vor einer Zeitscheibe, weil das Ladezustandsband die Energie oder den Speicherraum schon vorher bereithalten lässt.
 Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zum regelzoneninternen Handel fünf Minuten vor Lieferbeginn.
@@ -196,9 +198,9 @@ Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht al
 Innerhalb dieser Grenzen wird eine einzelne Anlage abgebildet.
 Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, also einem Energieinhalt je Leistung von 2,5 Stunden.
 Die Auslegung liegt über dem Bereich von ein bis zwei Stunden, den die Großspeicher in Betrieb erreichen, und im Bereich der geplanten Anlagen, wie in Abschnitt~\ref{sec:actor_comparison} dargestellt.
-Eine kurative Reservierung über die volle Anschlussleistung erschöpft den Speicher damit erst nach 2,5 Stunden.
 Laden und Entladen laufen mit einem Wirkungsgrad von 0,95 je Richtung, woraus ein Umlaufwirkungsgrad von 0,9025 folgt.
 Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\,\si{MWh} bewegen kann.
+Bei voller Anschlussleistung reicht dieser nutzbare Ladezustand für gut zwei Stunden Lieferung.
 Jede Reservierung nimmt ihr Ladezustandsband aus dem nutzbaren Ladezustand.
 Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und die gelieferte Arbeit, nicht aber die Vorhaltungen.
 Der Satz entspricht der Größenordnung, die sich aus den Investitionskosten eines schlüsselfertigen Speichersystems und seinem Lebensdauerdurchsatz ergibt \cite{rystad_energy_renewables__power_analytics_energy_2026}.
@@ -225,7 +227,8 @@ Eine kurativ reservierte Leistung steht deshalb keinem anderen Markt zur Verfüg
 \label{sec:constraints}
 
 Das Modell führt neben der kurativen Reservierung die Märkte, an denen ein \ac{BESS} heute seine Erlöse erzielt, nämlich den \ac{DA}, den \ac{IDC}, die \ac{FCR} und die \ac{aFRR} mit Leistung und Arbeit.
-Nicht geführt werden die Intraday-Auktionen, weil der Vergleichsmaßstab der Validierung sie nicht enthält, und die \ac{mFRR}, wie in Abschnitt~\ref{sec:balancing_procurement} begründet.
+Nicht geführt werden die Intraday-Auktionen, weil das Optimierungsmodell den Fahrplan sonst zu jeder weiteren Handelsgelegenheit neu bewerten müsste, und die \ac{mFRR}, wie in Abschnitt~\ref{sec:balancing_procurement} begründet.
+Der Ausschluss der Intraday-Auktionen ist damit eine Vereinfachung des Optimierungsmodells.
 \ac{DA}, \ac{IDC} und \ac{aFRR}-Arbeit bewegen den Ladezustand, während \ac{FCR}, \ac{aFRR}-Leistung und die kurative Reservierung Leistung und ein Ladezustandsband binden, ohne Energie umzuschlagen.
 Jeder Markt trägt seinen eigenen Produktzuschnitt, seinen Energievorhalt und seinen Preis.
 
@@ -301,12 +304,13 @@ Als Gewicht dient in der Mittelung der Sollwert von netztransparenz.de, weil das
 Viertelstunden ohne Abruf einer Richtung bleiben für diese Richtung gesperrt.
 Die Anlage liefert \ac{aFRR}-Arbeit anteilig am deutschen Abruf, im Verhältnis ihrer vorgehaltenen Leistung zur ausgeschriebenen Menge, und wählt keine einzelnen Viertelstunden aus.
 Wie viel Arbeit die Anlage liefern darf, prüft eine Sensitivität, die den anteiligen Abruf gegen eine freie Lieferung bis zur eigenen Reservierung und bis zu zehn Prozent des deutschen Abrufs stellt.
-Die gelieferte Arbeit stammt aus dem Speicher und wird am \ac{IDC} in einer späteren Viertelstunde ausgeglichen, wobei der Ausgleich nie vor der Lieferung liegt und sich über den Tag schließt.
-Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie, vermindert um den Wert des Ausgleichs am \ac{IDC}.
+Die gelieferte Arbeit stammt aus dem Speicher und wird am \ac{IDC} erst in einer späteren Viertelstunde ausgeglichen und nie in derselben, denn der Abruf steht erst nach der Viertelstunde fest.
+Der Ausgleich ist eine eigene Größe je Viertelstunde und Richtung, und seine Menge schließt sich über den Tag gegen die gelieferte Arbeit.
+Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie, vermindert beziehungsweise erhöht um den Wert des Ausgleichs in der Viertelstunde, in der er stattfindet.
 
 \begin{equation}
     \label{eq:erloes_afrr_e}
-    E^{\mathrm{aFRR,E}} = \Delta t \sum_{t \in \mathcal{T}} \left[ \left( p^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} - p^{\mathrm{ID1}}_t \right) P^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} + \left( p^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} + p^{\mathrm{ID1}}_t \right) P^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} \right]
+    E^{\mathrm{aFRR,E}} = \Delta t \sum_{t \in \mathcal{T}} \left[ p^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} P^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} + p^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} P^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} - p^{\mathrm{ID1}}_t P^{\mathrm{aus}}_{t,\mathrm{pos}} + p^{\mathrm{ID1}}_t P^{\mathrm{aus}}_{t,\mathrm{neg}} \right]
 \end{equation}
 
 \subsubsection*{Kurative Reservierung}
@@ -340,7 +344,7 @@ Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert die
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
-    \caption{Bisektion für eine Beispielstunde, (a) bei fester Schwelle, (b) wenn die Schwelle während der Suche steigt und die obere Grenze ihr nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
+    \caption{Bisektion für eine Beispielstunde, (a) bei festem Preis der vollen Reservierung, (b) wenn dieser Preis während der Suche steigt und die obere Grenze ihm nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
     \label{fig:reservierungspreis_bisektion}
 \end{figure}
 
@@ -369,11 +373,11 @@ Alle Paare mit derselben Intervallmitte teilen sich jedoch einen Lauf, weil das 
 Darum genügen in den ausgewerteten Tagen 84 bis 167 Läufe je Tag, im Mittel rund 130.
 
 Die erste Iteration allein reicht nicht aus, denn nach ihr können Stunden, deren obere Grenze schon feststeht, wieder für die Arbitrage genutzt werden.
-Der Fehler liegt im Verfahren, denn die Schwelle einer Stunde hängt nicht von ihrem vorgegebenen Reservierungspreis allein ab, sondern von den vorgegebenen Reservierungspreisen aller 48 Stunden und Richtungen des Tages zusammen.
+Der Fehler liegt im Verfahren, denn der Preis, bei dem eine Stunde voll reserviert, hängt nicht von ihrem eigenen vorgegebenen Reservierungspreis allein ab, sondern von den vorgegebenen Reservierungspreisen aller 48 Stunden und Richtungen des Tages zusammen.
 Die Zeitkopplung der kurativen Reservierung über den Ladezustand verschiebt den Lösungsraum, sobald der vorgegebene Reservierungspreis einer anderen Stunde steigt.
 Die erste Iteration liefert deshalb je Stunde nur einen Startwert, gefunden unter einem für den ganzen Tag einheitlichen vorgegebenen Reservierungspreis.
 Werden die Preise der ersten Iteration gemeinsam vorgegeben, bleiben in den ausgewerteten Tagen 18 Prozent der Stunden in positiver und 23 Prozent in negativer Richtung unter der vollen Reservierung.
-Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt schematisch, was geschieht, sobald die Schwelle einer Stunde während der Suche steigt: Liegt sie über der schon gesetzten oberen Grenze, ist jede weitere Mitte nicht voll, und die Bisektion hebt nach ihrer Regel nur die untere Grenze an, bis das Intervall sich schließt.
+Teil (b) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt schematisch, was geschieht, sobald dieser Preis während der Suche steigt: Liegt er über der schon gesetzten oberen Grenze, ist jede weitere Mitte nicht voll, und die Bisektion hebt nach ihrer Regel nur die untere Grenze an, bis das Intervall sich schließt.
 Die obere Grenze prüft die Bisektion nie erneut, sodass sie bei einem vorgegebenen Reservierungspreis endet, bei dem die Stunde nicht mehr voll ist, ohne es zu bemerken.
 Einzelne Stunden nacheinander anzuheben führt ebenfalls nicht zum Ziel, weil eine gerade gefüllte Stunde wieder herausfällt, sobald die nächste Stunde steigt.
 
@@ -386,6 +390,7 @@ Die übrigen Stunden behalten in den Läufen der Bisektion ihren Preis.
 Die zweite Iteration wiederholt die Prüfung in Durchgängen über alle Stunden, bis ein Durchgang keinen Preis mehr senkt.
 Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
 Wird ein einzelner Vollreservierungspreis um weitere 0,05\,\EurMWh{} gesenkt, ist mindestens eine Stunde nicht mehr voll reserviert.
+Der Preis einer Stunde stellt damit die zuletzt reservierte Leistung gerade indifferent, während die übrige reservierte Leistung mehr als ihre Opportunitätskosten trägt.
 
 Um die Suche legen sich die Schleifen über Tage, Konfigurationen und Studien, wie Abbildung~\ref{fig:schleifenebenen} zeigt, sodass mehrere Varianten mit demselben Tagesmodell gerechnet werden.
 Die Hauptuntersuchung ist der Jahreslauf über alle Tage des Jahres 2025.
@@ -414,6 +419,7 @@ Der Revenue-Index rechnet marktübergreifend, in den Battery Charts \emph{cross-
 Je Markt allein kommen der \ac{DA}, die erste Intraday-Auktion und der \ac{ID1} hinzu \cite{isea_methodik_2026}.
 Verwendet ist die Reihe für eine Bezugsanlage mit einem Energieinhalt je Leistung von zwei Stunden, zwei Zyklen je Tag und einem Wirkungsgrad von 95 Prozent je Richtung.
 Veröffentlicht wird ein gleitender Mittelwert der Tageserlöse über 365 Tage, sodass der Wert am Jahresende das Kalenderjahr 2025 abbildet.
+Die Monatswerte des Vergleichs sind aus diesem Mittelwert zurückgerechnet und treffen ihn für das Jahr 2025 auf ein Prozent.
 
 Marktübergreifend bedient der Revenue-Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
 Zuerst wählt der Revenue-Index je Vier-Stunden-Block zwischen der \ac{FCR} und der \ac{aFRR}-Leistung den Markt mit dem höheren Erlös.
@@ -452,10 +458,11 @@ Der Revenue-Index bildet erreichbaren Handel ab und erhebt nach eigener Darstell
 Das Optimierungsmodell kennt dagegen alle Preise des Liefertages und setzt jede angebotene Leistung als bezuschlagt.
 Die Degradationskosten senken den Erlös des Optimierungsmodells in den Energiemärkten, weil das Optimierungsmodell jeden Zyklus mit Kosten belegt und der Revenue-Index nur eine Zyklengrenze führt.
 Der Vergleich soll deshalb allein ausschließen, dass die Modellierung die Erlösmöglichkeiten eines \ac{BESS} unterschätzt.
+Der größere Energieinhalt je Leistung des Optimierungsmodells und die fehlende Zyklengrenze wirken in dieselbe Richtung, denn sie erlauben mehr Arbitrage und mehr Vorhaltung je Megawatt.
 Erwartet wird, dass das Optimierungsmodell in den Leistungsmärkten über dem Revenue-Index liegt, in den Energiemärkten darunter bleibt und den Jahresgang abbildet.
 
 Der Vergleich beginnt mit den Einzelmärkten, die Anhang~\ref{anh:validierung} im Einzelnen darstellt.
-In der \ac{FCR} erreicht das Optimierungsmodell das 1,24-Fache des Revenue-Index, weil der Revenue-Index nur vier Fünftel der Leistung anbietet und das Optimierungsmodell die volle Leistung.
+In der \ac{FCR} erreicht das Optimierungsmodell das 1,24-Fache des Revenue-Index, weil der Revenue-Index die angebotene Leistung durch 1,25 teilt und das Optimierungsmodell die volle Leistung anbietet.
 Ein Megawatt, das ganzjährig zum \ac{FCR}-Preis anbietet, erzielt 133,0 Tausend Euro je Megawatt und Jahr, wovon der Revenue-Index 81 Prozent und das Optimierungsmodell 100 Prozent erreichen.
 In der \ac{aFRR} erreicht das Optimierungsmodell das 1,52-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
 Der Revenue-Index bietet nur die Leistung an, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
@@ -482,7 +489,7 @@ Zum Abstand trägt marktübergreifend die Aufteilung der Leistung bei.
 Der Revenue-Index bedient die Märkte in fester Abfolge mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen, während das Optimierungsmodell alle Märkte gemeinsam optimiert.
 Frei entschieden wird im Revenue-Index allein, ob eine Vier-Stunden-Zeitscheibe der \ac{FCR} oder der \ac{aFRR}-Leistung zufällt.
 Den größten Abstand tragen dabei die \ac{aFRR}-Märkte, weil das Optimierungsmodell dort mehr Leistung vorhält und deshalb auch mehr Arbeit liefert.
-Eine Unterschätzung der Erlösmöglichkeiten durch die Modellierung zeigt der Vergleich damit weder je Markt noch marktübergreifend.
+Marktübergreifend zeigt der Vergleich damit keine Unterschätzung der Erlösmöglichkeiten durch die Modellierung.
 
 \subsection{Validierung der Funktionsweise}
 \label{sec:validation_function}

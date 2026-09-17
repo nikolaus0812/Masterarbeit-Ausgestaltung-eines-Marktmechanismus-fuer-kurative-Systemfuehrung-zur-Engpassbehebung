@@ -176,13 +176,19 @@ Energetische Neutralität und Deckung der Degradationskosten am \acs{DA}:
     E^{\mathrm{DA}} &\ge c^{\mathrm{deg}} \, \Delta t \sum_{t \in \mathcal{T}} \left( P^{\mathrm{DA,ein}}_t + P^{\mathrm{DA,aus}}_t \right) \label{eq:anh:modell:da_deckung}
 \end{align}
 
-Lieferung der \acs{aFRR}-Arbeit anteilig am Abruf, belegte Leistung und Ausgleich am \acs{IDC} nach der Lieferung:
+% I-02 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Ausgleich liegt seit dem 17.09.2026 im Modell in einer echt spaeteren Viertelstunde. Alte Fassung:
+%Lieferung der \acs{aFRR}-Arbeit anteilig am Abruf, belegte Leistung und Ausgleich am \acs{IDC} nach der Lieferung:
+% SPRACHE am 17.09.2026: echt spaeter ist Mathematikjargon, Stilregel 13. Alte Fassung:
+%Lieferung der \acs{aFRR}-Arbeit anteilig am Abruf, belegte Leistung und Ausgleich am \acs{IDC} in einer echt späteren Viertelstunde:
+Lieferung der \acs{aFRR}-Arbeit anteilig am Abruf, belegte Leistung und Ausgleich am \acs{IDC} erst in einer späteren Viertelstunde:
 \begin{align}
     P^{\mathrm{aFRR,E}}_{t,r} &= \alpha_t \, P^{\mathrm{aFRR}}_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_menge}\\
     B_{t,r} &\ge P^{\mathrm{aFRR}}_{s(t),r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_band_res}\\
     B_{t,r} &\ge P^{\mathrm{aFRR,E}}_{t,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:afrr_band_lief}\\
     \sum_{t \in \mathcal{T}} P^{\mathrm{aus}}_{t,r} &= \sum_{t \in \mathcal{T}} P^{\mathrm{aFRR,E}}_{t,r} && \forall\, r \in \mathcal{R} \label{eq:anh:modell:aus_bilanz}\\
-    \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta \le t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
+% I-02 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: strikte Kausalitaet, Summe bis t-1 der Lieferung gegen Summe bis t des Ausgleichs, nach optimizer.py afrr_x_pos_causal. Alte Fassung:
+%    \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta \le t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
+    \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta < t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
 \end{align}
 
 Mindestgröße der kurativen Reservierung, nur in der Sensitivität mit Binärvariable:

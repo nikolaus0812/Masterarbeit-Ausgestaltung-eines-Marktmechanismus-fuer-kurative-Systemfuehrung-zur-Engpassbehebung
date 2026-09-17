@@ -134,7 +134,9 @@ Wie ein Instrument im Ereignisfall wirken kann, hängt davon ab, wie der \ac{ÜN
 % DURCHSICHT 16.09.2026, B1. Alte Fassung:
 %Jedes Betriebsmittel hat eine Belastung, die es dauerhaft führen kann.
 Grundlage ist die Belastung, die jedes Betriebsmittel dauerhaft führen kann.
-Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes über die Dauergrenze belastet wird, was als (N-1)-Kriterium bezeichnet wird.
+% I-24 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: das (N-1)-Kriterium bezieht sich auf die betrieblichen Sicherheitsgrenzwerte einschliesslich der zulaessigen Ueberlast, nicht auf die Dauergrenze. Die Dauergrenze bleibt im Folgesatz als heutige Praxis. Alte Fassung:
+%Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes über die Dauergrenze belastet wird, was als (N-1)-Kriterium bezeichnet wird.
+Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen betrieblichen Sicherheitsgrenzwert überschreitet, was als (N-1)-Kriterium bezeichnet wird.
 Die präventive Systemführung hält die Belastung deshalb im Normalbetrieb um eine Marge unter der Dauergrenze, und das Freihalten dieser Marge ist der Eingriff, der als Redispatch anfällt.
 Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine physikalische Reserve ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 % VERSCHOBEN 16.09.2026, B1, Ansatzpunkt unmittelbar vor Absatz 11: Die ungenutzte Reserve ist der Ansatzpunkt der kurativen Systemführung.
@@ -229,7 +231,9 @@ Die vorliegende Arbeit verfolgt das Ziel, einen kurativen Marktmechanismus zu en
 Kurative Vorhaltung bezeichnet das Bereithalten von Leistung und, bei Speichern, von Ladezustand für einen Abruf nach dem Fehler.
 Der kurative Marktmechanismus ist das Verfahren, mit dem der \ac{ÜNB} diese Vorhaltung marktlich beschafft, und die kurative Reservierung ist das Produkt, das er dabei ausschreibt, bezuschlagt und vergütet.
 % VORGABE DES VERFASSERS am 15.09.2026, Zweck des Mechanismus.
-Der Mechanismus wird entworfen, um die Einflüsse zu erkennen, die am Markt auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign mit prognostizierten Preisen festzulegen.
+% I-25 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Mechanismus allein ist nach CLAUDE.md Abschnitt 5 nicht zulaessig. Alte Fassung:
+%Der Mechanismus wird entworfen, um die Einflüsse zu erkennen, die am Markt auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign mit prognostizierten Preisen festzulegen.
+Der kurative Marktmechanismus wird entworfen, um die Einflüsse zu erkennen, die am Markt auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign mit prognostizierten Preisen festzulegen.
 % VERSCHOBEN am 15.09.2026 nach 1.1 Absatz 8, entschieden vom Verfasser, der Satz wirkte hier fehl am Platz. Alte Fassung:
 %Die kurative Systemführung verringert den präventiven Redispatch, ersetzt ihn aber nicht, denn nach einem Abruf stellt ein Redispatch den (N-1)-sicheren Zustand wieder her.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
@@ -264,9 +268,13 @@ Bis 2030 soll der Anteil erneuerbarer Energien mindestens 80 Prozent erreichen, 
 %Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach, sodass im Jahr 2030 ein Engpassmanagementbedarf fortbesteht und ein wachsender Speicherbestand für die kurative Systemführung zur Verfügung steht \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 
-Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Reservierung mindestens verlangen muss, damit er mit ihr genauso viel verdient wie ohne sie.
+% I-01 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Definition des kurativen Reservierungspreises folgt der Entscheidung K1, also der kleinste Preis mit voller Reservierung statt Indifferenz ueber den ganzen Erloes. Alte Fassung:
+%Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Reservierung mindestens verlangen muss, damit er mit ihr genauso viel verdient wie ohne sie.
+Bestimmt wird daraus der kurative Reservierungspreis, also der kleinste Preis, bei dem ein Anlagenbetreiber die Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
 Die Reservierung bindet die Anlage, denn sie verpflichtet den Betreiber, Leistung und Ladezustand über die Bindungsdauer vorzuhalten, also über den Zeitraum, für den die Zusage gilt.
-Der kurative Reservierungspreis misst damit die Opportunitätskosten der Bindung, also die Erlöse, die der Betreiber an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
+% I-01 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Opportunitaetskosten beziehen sich auf die zuletzt reservierte Leistung. Alte Fassung:
+%Der kurative Reservierungspreis misst damit die Opportunitätskosten der Bindung, also die Erlöse, die der Betreiber an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
+Der kurative Reservierungspreis misst damit die Opportunitätskosten der zuletzt reservierten Leistung, also die Erlöse, die der Betreiber für sie an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
 % VERSCHOBEN 16.09.2026, B2.4: Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
 Wie hoch der Preis ausfällt, folgt aus der Ausgestaltung des Produkts, nämlich aus der Bindungsdauer, der vorzuhaltenden Leistung und der geforderten Reaktionszeit, also der Zeit vom Abrufsignal bis zur vollständig umgesetzten Leistungsänderung.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:

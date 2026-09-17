@@ -1164,6 +1164,137 @@ den drei genannten Einzellaeufen. Dass der Unterschied zwischen beiden
 Abbildungen ausschliesslich die Mindestbindung ist, steht als geprueft im Kopf
 von dispatch_festpreis.py und ist nicht eigens nachgerechnet.
 
+### 17.09.2026, Kontrolle durch Fable, schwere und mittlere Befunde
+
+Auftrag des Verfassers, festgelegt in KONTROLLAUFTRAG_FABLE.md. Der Bericht
+steht in KONTROLLE_FABLE.md und nennt 46 inhaltliche Befunde (5 hoch, 21
+mittel, 20 gering), 75 Absatzbefunde zum roten Faden, 22 Streichkandidaten mit
+rund 38 Zeilen Ersparnis und 11 nicht klaerbare Stellen. Der Verfasser ist die
+Befunde in Fuenferschritten durchgegangen und hat jeden einzeln entschieden.
+Betroffen sind chapter_1.tex, chapter_2.tex, chapter_3.tex, attachment.tex,
+attachment_modell.tex und attachment_validierung.tex, deshalb steht der
+Eintrag hier und nicht je Datei.
+
+**I-01, Definition des kurativen Reservierungspreises.** Entscheidung: an K1
+angleichen. In 1.2 steht jetzt der kleinste Preis, bei dem der Betreiber die
+Leistung ueber die Bindungsdauer vollstaendig reserviert. Zurueckgenommen,
+nicht wieder aufnehmen: "also der Betrag, den ein Anlagenbetreiber fuer die
+Reservierung mindestens verlangen muss, damit er mit ihr genauso viel verdient
+wie ohne sie." Ebenso "misst damit die Opportunitaetskosten der Bindung", jetzt
+der zuletzt reservierten Leistung. In 3.2.4 sagt ein Satz, dass der Preis die
+zuletzt reservierte Leistung gerade indifferent stellt, waehrend die uebrige
+reservierte Leistung mehr als ihre Opportunitaetskosten traegt. Eigene
+Ableitung: im linearen Programm traegt das letzte reservierte Megawatt die
+hoechsten Opportunitaetskosten, sodass der Erloes mit Reservierung beim
+Vollreservierungspreis ueber dem Referenzerloes liegt.
+
+**I-02, aFRR-Arbeit in zwei Fassungen.** Der Verfasser hat den Ausgleich in
+derselben Viertelstunde am 17.09.2026 im Modell ausgeschlossen (optimizer.py,
+afrr_x_pos_causal: Summe der Lieferung bis t-1 gegen Summe des Gegenhandels bis
+t, zusammen mit der Tagesbilanz liegt der Gegenhandel damit stets spaeter; nach
+dem Kommentar im Code liefen vorher 27,8 Prozent des Gegenhandels im selben
+Slot). Die Gleichung in 3.2.3 rechnete den Ausgleich mit derselben Leistung und
+demselben ID1 gegen und ist durch die Fassung aus Anhang C ersetzt, mit der
+eigenen Groesse P^aus. Anhang C fuehrt die Kausalitaetsbedingung jetzt strikt
+mit theta < t. Nicht im Text: die Nebenwirkung, dass ueber diesen Pfad in der
+letzten Viertelstunde des Tages nicht mehr geliefert werden kann.
+
+**I-03, Fazit der Erloeshoehe.** Entscheidung: nur noch marktuebergreifend
+ansprechen, weil die Abweichungen je Markt in den Absaetzen davor erklaert
+sind. Zurueckgenommen: "Eine Unterschaetzung der Erloesmoeglichkeiten durch die
+Modellierung zeigt der Vergleich damit weder je Markt noch
+marktuebergreifend."
+
+**I-04, Tabelle 2.2 gegen Anlage 1.** Die Tabelle gibt § 13a Abs. 2 Nr. 3 EnWG
+wieder, also das Maximum aus Nr. 3 und der Summe aus Nr. 1 und Nr. 2, der Satz
+daneben die Anlage 1, also Nr. 1 plus das Maximum aus Nr. 2 und Nr. 3. Ein
+ergaenzter Satz nennt den Grund, naemlich den netto vom Strikepreis gebildeten
+Optionswert, mit Verweis auf Anhang A.
+
+**I-05, Wind und Photovoltaik.** Entbehrlich ist die Energiereserve und nicht
+die Bindung. Damit ist der scheinbare Widerspruch zu 3.1.2 aufgeloest, wo beide
+Technologien ihre Einspeisung ueber die Bindungsdauer absenken koennen muessen.
+
+**I-06 bis I-08, Quellen.** Art. 3 Nr. 36 \ac{SOGL} zaehlt fuenf Netzzustaende
+auf und Art. 18 Abs. 5 definiert den Netzwiederaufbau-Zustand, der Text sprach
+von vier. Das Zitat in 2.1.5 lautet im Wortlaut "moeglichst echtzeitnahe
+Aktivierung von Entlastungsmassnahmen" und nicht "moeglichst echtzeitnah zu
+aktivieren". Gestrichen, nicht wieder aufnehmen: "Fuer Netzzustaende, die sich
+der Vorausschau entziehen, zieht die Leitlinie einen Eingriff nach dem Fehler
+sogar vor." Art. 21 Abs. 2 traegt den Satz nicht. § 13 Abs. 1 Satz 2 EnWG
+verlangt abweichend von Satz 1 eine Kostenauswahl unter den Massnahmen nach
+Nr. 2 und 3 und keine Ausschoepfungsreihenfolge; zurueckgenommen: "Das Gesetz
+laesst marktbezogene Massnahmen bei strom- und spannungsbedingten Anpassungen
+erst nach Ausschoepfung kostenguenstigerer Alternativen zu." Der Volltext des
+EnWG liegt jetzt als literature/txt/251208_BDEW_EnWG.txt, damit
+tools/quellencheck.py ihn erfasst.
+
+**I-09, Intraday-Auktionen.** Entscheidung des Verfassers: zwischen Index und
+Optimierungsmodell unterscheiden. Der Ausschluss ist eine Vereinfachung des
+Optimierungsmodells, weil sonst jede weitere Handelsgelegenheit eine erneute
+Bewertung des Fahrplans verlangte. Zurueckgenommen: die Begruendung mit dem
+Vergleichsmassstab der Validierung.
+
+**I-10 und I-19, zwei Vereinfachungen bleiben unbenannt.** Das
+Ladezustandsband der Regelleistung prueft der Code nur zu Beginn jeder
+Vier-Stunden-Zeitscheibe (optimizer.py, t % 16 == 0), das kurative Band in
+jeder Viertelstunde; Anhang C gibt das mit beta_t wieder. Ebenso deckt das
+Modell den Abruf, der in die folgende Zeitscheibe reicht, dort nicht. Der
+Verfasser will beides nicht aendern und nicht ansprechen. Offener Punkt: wer
+Text und Anhang C nebeneinanderlegt, kann die erste Vereinfachung erkennen.
+
+**I-11 bis I-18, Zahlen und Begriffe in Kapitel 3.** Die Lieferdauer bei voller
+Anschlussleistung betraegt gut zwei Stunden und nicht 2,5, denn 225 MWh
+nutzbarer Ladezustand mal dem Entladewirkungsgrad 0,95 ergeben 214 MWh (eigene
+Rechnung); die 2,5 Stunden bleiben als Energieinhalt je Leistung. Das Wort
+Schwelle ist heraus, an seiner Stelle steht der Preis, bei dem die Stunde voll
+reserviert. Der Vollreservierungspreis bleibt, der Verfasser bestaetigt seine
+Entscheidung vom 13.09.2026. Der Referenzerloes ist jetzt in 3.2.1 als Erloes
+des Referenzfahrplans definiert. Der Vergleichsmassstab heisst durchgehend
+Revenue-Index, auch in der Kapiteleinleitung und in Anhang E. Statt "vier
+Fuenftel" steht der Teiler 1,25, weil der Verfasser eine Zahl wollte und 81
+Prozent nicht genau vier Fuenftel sind. Der groessere Energieinhalt je Leistung
+und die fehlende Zyklengrenze stehen als weitere erwartete Abweichung. Die
+Monatswerte sind aus dem veroeffentlichten gleitenden Mittel zurueckgerechnet,
+Genauigkeit fuer 2025 ein Prozent (analysen/code/validierung/validierung.py,
+Funktion tageswerte).
+
+**I-20 bis I-25, Kapitel 1, 2 und Anhang A.** Der Umschlagpunkt ist gekuerzt;
+zurueckgenommen: "Nach eigener Deutung des Berechnungsbeispiels liegt der
+Umschlagpunkt zwischen vier und sechs Volllaststunden." Anhang A rechnet allein
+mit den vier Volllaststunden des Beispiels. Die Begrenzung des
+KuPilot-Einsatzes auf eine Stunde steht jetzt ohne die Pressemitteilung als
+Quelle, weil sie nach WORKFLOW.md Abschnitt 5 ein Hinweis des Betreuers ohne
+Beleg ist und die Pressemitteilung ein Scan ohne Textebene; die Begruendung
+ueber das Oberbecken ist eine eigene Ableitung und deshalb zurueckhaltend
+formuliert. In Tabelle A.1 tragen V_C und V_P die Einheit je Megawatt und
+Viertelstunde. "Dieser betraegt hier 39,36 Euro" heisst jetzt "Der Zeitwert
+betraegt hier 39,36 Euro", nachgerechnet als 0,19680 Euro je MW mal 200 MW. Das
+(N-1)-Kriterium stellt in der Einleitung auf den betrieblichen
+Sicherheitsgrenzwert ab und nicht mehr auf die Dauergrenze, die als heutige
+Praxis im Folgesatz bleibt. "Der Mechanismus" heisst "Der kurative
+Marktmechanismus".
+
+**I-26, dritte Eigenschaft des Bedarfs.** Kapitel 1 leitet Volumen, Ort und den
+Zeitpunkt der Erkennbarkeit her, der Katalog A1 bis A8 beantwortet den
+Zeitpunkt nicht. Keine neunte Anforderung, weil der Katalog in mehreren
+Kapiteln durchgezaehlt referenziert wird. Stattdessen schliesst ein Satz am
+Ende des Zuschlagsabsatzes von 3.1.2 die Luecke, naemlich dass der am Vortag
+feststehende Zuschlag ueber die ganze Zeitscheibe bindet und
+Fahrplanaenderungen nach der letzten Vorschaurechnung die Vorhaltung nicht mehr
+aufheben.
+
+**Kommentarregel.** chapter_3.tex bleibt nach dem Auftrag vom 17.09.2026
+kommentarfrei, dort steht keine alte Fassung. In chapter_1.tex, chapter_2.tex
+und den Anhaengen bleibt sie nach CLAUDE.md Abschnitt 10 als Kommentar. In
+attachment.tex steht bei I-23 nur der geaenderte Satzanfang als Kommentar, weil
+die Zeile einen ganzen Absatz traegt.
+
+**Stand.** Pruefsuite ohne neuen Befund, zwei bekannte Altbefunde in den
+auskommentierten Kapiteln 4 und 5. Das PDF traegt 89 Seiten, eine mehr als vor
+der Kontrolle. Offen sind die 20 geringen Befunde, die 75 Absatzbefunde und die
+22 Streichkandidaten, die die Seite wieder einsparen koennen.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
