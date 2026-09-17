@@ -7401,6 +7401,68 @@ vom selben Tag und bleiben dort als Nachweis erhalten. Der Text von 3.2.4
 beschreibt damit den Ablauf und nennt als einzige Aufwandsangabe die Laufzahl
 der ersten Iteration.
 
+### 17.09.2026, 3.2.4 Abstieg im Text und im Flussdiagramm ausgeschrieben
+
+Kommentare des Verfassers, der Reihe nach: "aber in welchen Schritten wird
+dann der Preis reduziert? warum prueft man p-0,05 und halbiert dann nochmal";
+dann der Einwand, bei einer Halbierung sei die Wahrscheinlichkeit hoch, danach
+wieder keine Reservierung zu haben, "und nach der Logik wuerde dann ja eine
+Endlosschleife eintreten oder welches Intervall wird halbiert"; dann "so ist
+es verwirrend im Flussdiagramm"; zuletzt "versuche die zweite Iteration
+verstaendlicher zu machen aehnlich wie bei der 1. Iteration, man muss den
+Prozess nachvollziehen koennen".
+
+**Befund.** Der Text nannte das Intervall des Abstiegs nicht und sagte nicht,
+dass die Probe mit p_h minus der Toleranz zugleich die obere Grenze liefert.
+Das Flussdiagramm zeigte den ganzen Abstieg als EINEN Kasten "Intervall von
+p_h halbieren", der auf das Zertifikat zurueckfuehrte; das las sich als
+Kreislauf aus Pruefen und Halbieren mit immer weiter fallendem Preis. Eine
+Endlosschleife kann nicht entstehen, weil nicht der Preis, sondern das
+Intervall halbiert wird und die obere Grenze stets ein Preis ist, bei dem die
+volle Reservierung haelt. Bricht die Reservierung bei der Mitte, steigt die
+UNTERE Grenze. Die aeussere Schleife endet, weil jede angenommene Senkung
+einen Stundenpreis um mindestens die Toleranz verkleinert und die Preise nach
+unten durch null beschraenkt sind.
+
+**Im Text ergaenzt.** Zurueckgenommen ist "Der Abstieg halbiert dann das
+Intervall von null bis zum Preis abzueglich der Toleranz, wieder unter der
+Bedingung, dass alle Stunden voll reserviert bleiben." An die Stelle treten
+zwei Saetze, die die Probe als Lieferantin der oberen Grenze benennen und die
+Halbierung ausdruecklich als dieselbe Regel wie in der ersten Iteration
+ausweisen.
+
+**Im Flussdiagramm umgebaut**, Datei reservierungspreis_ablauf_a4.py im
+Modellrepository, die zweite Iteration auf die Aufloesung der ersten gebracht:
+Stundenschleife des Zertifikats mit dem Zaehler h ueber 48 Stunden-Richtungen,
+Halbierung mit benanntem Intervall (0; p_h - 0,05], Durchgangsschleife, deren
+Durchgang ohne Senkung den Abstieg beendet, und ein Vorbeilauf fuer die schon
+minimale Stunde. Die Halbierung steht als vordefinierter Prozess mit
+doppeltem Rand, weil sie derselbe Ablauf ist wie in der ersten Iteration.
+
+**Eigenstaendige Ableitung, im Bild festgehalten.** Die beiden Halbierungen
+sind NICHT dasselbe, sondern unterscheiden sich im Kriterium: erste Iteration
+"Stunde h voll", Abstieg "alle Stunden voll". Der Kasten nennt das Kriterium
+deshalb ausdruecklich. Ohne diese Zeile behauptete das Bild eine Gleichheit,
+die nicht besteht. Aus demselben Grund tragen die Ausgaenge der
+Zertifikatsraute die Marken "ja, nicht minimal" und "nein, minimal": ein "ja"
+allein waere irrefuehrend, denn es heisst dort, dass der Preis zu hoch war.
+
+**Verworfen.** Die vom Verfasser zuerst erwogene Loesung mit Verbindern und
+Buchstaben, ueber die beide Iterationen auf eine einmal gezeichnete Bisektion
+zugreifen. Nach DIN 66001 ist der Verbinder die Uebergangsstelle eines
+Ablaufs, waehrend fuer einen von zwei Stellen aufgerufenen Ablauf der
+vordefinierte Prozess vorgesehen ist. Der Verfasser hat dem zugestimmt.
+
+**Umfang.** Die Abbildung waechst von 14,7 auf 20,4 cm Hoehe bei erlaubten
+21,7 cm und fuellt damit fast eine ganze Textseite. Kapitel 3 bleibt bei 19
+Seiten, Abbildung 3.3 bleibt auf Seite 44.
+
+**Offen.** Erstens steht das Wort Toleranz in 3.2.4 weiterhin fuer zwei
+Groessen, naemlich die Fuelltoleranz von 0,01 MW und die Preisaufloesung von
+0,05 Euro je Megawatt und Stunde; der Vorschlag, die zweite Aufloesung zu
+nennen, ist nicht entschieden. Zweitens nennt die Bildunterschrift von
+Abbildung 3.3 die gemeinsame Halbierung nicht.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

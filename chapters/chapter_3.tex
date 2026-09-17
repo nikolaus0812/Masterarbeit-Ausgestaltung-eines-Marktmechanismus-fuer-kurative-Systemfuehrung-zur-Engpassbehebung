@@ -4944,7 +4944,10 @@ Ein Zertifikat senkt deshalb jede der 48 Stunden einzeln um die Toleranz und pr�
 % KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Welches Intervall halbiert wird, stand nicht da. Alte Fassung:
 %Bleiben alle Stunden voll, war der vorgegebene Reservierungspreis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
 Bleiben alle Stunden voll reserviert, war der vorgegebene Reservierungspreis dieser Stunde nicht minimal.
-Der Abstieg halbiert dann das Intervall von null bis zum Preis abzüglich der Toleranz, wieder unter der Bedingung, dass alle Stunden voll reserviert bleiben.
+% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: warum wird p - 0,05 geprueft und dann nochmal halbiert, und in welchen Schritten sinkt der Preis. Der Text liess offen, dass die Probe zugleich die obere Grenze liefert und dass die Halbierung dieselbe ist wie in der ersten Iteration. Das Flussdiagramm sagt es seit demselben Tag, der Text muss es auch sagen. Alte Fassung:
+%Der Abstieg halbiert dann das Intervall von null bis zum Preis abzüglich der Toleranz, wieder unter der Bedingung, dass alle Stunden voll reserviert bleiben.
+Der um die Toleranz gesenkte Preis hält dann die volle Reservierung nachweislich und ist damit die obere Grenze des Intervalls, das der Abstieg von null an halbiert.
+Der Abstieg folgt derselben Regel wie die erste Iteration, jetzt aber unter der Bedingung, dass alle Stunden voll reserviert bleiben.
 Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung bleibt.
 % ZAHLEN ERGAENZT am 17.09.2026, gemessen vom Verfasser ueber die ausgewerteten Tage. Die Zahl der Tage wird nach seiner Vorgabe nicht genannt.
 % GESTRICHEN am 17.09.2026, Kommentar des Verfassers: nur die erwartete Laufzahl aufnehmen, nicht so viele Angaben. Nicht wieder aufnehmen. Alte Fassung:
