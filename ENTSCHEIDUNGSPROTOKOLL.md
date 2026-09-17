@@ -7185,6 +7185,54 @@ Charts vom 08.09.2026 mit dem Systemtyp 2 h Energieinhalt je Leistung und
 selben Tag ist damit keine Annahme mehr, die Saetze in 3.3.1 und 3.3.2 und
 die Notiz in isea_batterycharts_2026 bleiben wie geschrieben.
 
+### 17.09.2026, Preisbezug in Kapitel 3
+
+Kommentar des Verfassers zu 3.2.4: "vorgegebenen Reservierungspreis fuer
+kurative Leistungsreservierung aufruft. pruefe bitte nochmal ueberall ob der
+Preisbezug klar ist, bzw. bitte schreibe nicht einfach nur Preis sondern
+definiere klar was im Modell gemeint ist."
+
+Festgelegt: Der Preis, den die Suche dem Tagesmodell je Stunde und Richtung
+vorgibt, heisst *vorgegebener Reservierungspreis*, eingefuehrt in der
+Einleitung von 3.2 vor der Modellkette. Die gesuchte Groesse bleibt der
+*kurative Reservierungspreis* nach 1.2, naemlich der kleinste vorgegebene
+Reservierungspreis, bei dem die Stunde voll reserviert ist. Der Preis eines
+Gebots in der Ausschreibung (3.1.2) heisst *Gebotspreis*. Alle 30 Saetze
+in Kapitel 3, die bisher nur "Preis" trugen, sind entsprechend umgestellt,
+darunter die Kapiteleinleitung, 3.1.2, die Einleitung von 3.2, 3.2.1, der
+Absatz zur kurativen Reservierung in 3.2.3, 3.2.4 mit den beiden
+Bildunterschriften und 3.3.3. Preise anderer Maerkte (Einheitspreis der FCR,
+Preis der Intraday-Auktion, Preise des Jahres 2025) sind unveraendert, weil
+ihr Bezug im Satz steht. Alte Fassungen als Kommentar in chapter_3.tex.
+Der Satz "Der kurative Reservierungspreis wird dafuer als der kleinste Preis
+bestimmt, bei dem ein BESS eine Zeitscheibe voll reserviert" in der
+Einleitung von 3.2 bleibt, weil der Relativsatz den Bezug traegt und der
+vorgegebene Reservierungspreis erst zwei Absaetze spaeter eingefuehrt wird.
+
+Kommentar des Verfassers zu den Laufzahlen in 3.2.4: "teile hier den Satz
+auf und erklaere warum 672 das Maximum ist." Der Satz ist in vier Saetze
+geteilt: 14 Halbierungen von 800 Euro je Megawatt und Stunde bis zur
+Toleranz (800/2^14 = 0,049 < 0,05), 48 Paare mal 14 Halbierungen = 672
+Laeufe bei getrennter Rechnung, gemeinsamer Lauf aller Paare mit derselben
+Intervallmitte, darum 84 bis 167 Laeufe je Tag. Eigenstaendige Ableitung:
+Die 672 gelten fuer den Startdeckel von 800 Euro je Megawatt und Stunde,
+bei verdoppeltem Deckel steigt die Zahl der Halbierungen je Verdopplung um
+eins. Der Text nennt darum den Deckel im Satz davor und nicht ein absolutes
+Maximum.
+
+### 17.09.2026, 3.2.4 Problemabsatz, ein Satz gestrichen
+
+Kommentar des Verfassers: "ist der Satz notwendig?" zu "Werden die so
+gefundenen Reservierungspreise alle zugleich vorgegeben, ist ein Teil der
+Stunden nicht mehr voll, weil jede Stunde ihre Schwelle in einem Lauf
+gefunden hat, in dem die uebrigen Stunden denselben vorgegebenen
+Reservierungspreis trugen und deshalb anders um Leistung und Ladezustand
+konkurrierten." Befund: wiederholt den ersten Satz des Absatzes und die
+Begruendung der Saetze 2 bis 4. Vom Verfasser zur Streichung freigegeben,
+nicht wieder aufnehmen. Der Folgesatz zu Teil (b) der Abbildung nennt die
+Situation jetzt selbst ("sobald die Schwelle einer Stunde waehrend der Suche
+steigt"), weil sein "dann" auf den gestrichenen Satz zeigte.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
