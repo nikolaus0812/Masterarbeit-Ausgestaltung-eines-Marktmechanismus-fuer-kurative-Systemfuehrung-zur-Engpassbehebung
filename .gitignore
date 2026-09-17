@@ -21,3 +21,9 @@ literature/PDFs/
 
 # Python-Bytecode der Hilfsskripte
 tools/__pycache__/
+
+# Bericht der Volltextsuche, wird bei jedem Lauf neu erzeugt
+quellencheck_bericht.md
+
+# Rohabzuege aus den PDF, nur lokal (die handgemachten .md-Auszuege bleiben versioniert)
+literature/txt/*.txt
