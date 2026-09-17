@@ -7332,6 +7332,75 @@ behauptet deshalb nicht, das Verfahren fuelle immer alles.
 aus `STRUKTUR.md`. Die Aenderung dieses Eintrags hat etwa eine halbe Seite
 hinzugefuegt.
 
+### 17.09.2026, 3.2.4 gemessene Iterationszahlen ergaenzt
+
+Der Verfasser liefert die gemessenen Iterationszahlen aus einem Lauf ueber
+Stichtage, naemlich erste Iteration konstant 15 in beiden Richtungen,
+Aufstieg im Mittel 0,79 (POS) und 0,76 (NEG) Anhebungen je Stunde bei
+54 Prozent (POS) und 60 Prozent (NEG) nie angehobener Stunden und hoechstens
+13 Anhebungen, sowie 22 bis 42 Senkungen des Abstiegs je Tag bei einem Median
+von 32.
+
+**Entscheidung des Verfassers.** Die Zahl der ausgewerteten Tage wird nicht
+genannt. Im Text steht einheitlich "in den ausgewerteten Tagen", weil ein
+Jahreslauf mit derselben Pruefung noch laeuft und die Aussagen allgemein
+gelten sollen. Der Vermerk "nach den bisher ausgewerteten Tagen" bei den 84
+bis 167 Laeufen ist entsprechend angeglichen. Die Zahl 84 bis 167 selbst
+stammt weiterhin aus dem frueheren Satz von Tagen und wird ersetzt, sobald
+der laufende Jahreslauf sie liefert.
+
+**Eigenstaendige Ableitung, fuer den Text massgeblich.** Der gemessene Wert 15
+der ersten Iteration sind keine 15 Halbierungen. Der Zaehler `it[h]` in
+`_bisect` wird beim Herausnehmen eines Intervalls erhoeht, also auch beim
+letzten, das die Toleranz schon erfuellt und nicht mehr halbiert wird.
+Startintervall plus 14 Halbierungen ergibt 15 durchlaufene Intervalle, und nur
+die 14 Halbierungen kosten je einen Lauf. Die 14 im Text bleiben deshalb
+stehen, ebenso die 672 als 48 mal 14; mit 15 waeren es 720 und die Herleitung
+truege nicht mehr. Dass der Wert ueber alle Tage und beide Richtungen konstant
+ist, ist zugleich der Beleg dafuer, dass der Deckel nie steigen musste.
+
+**Daraus ergaenzt.** Weil der Deckel nie gestiegen ist, war jede Stunde schon
+bei 800 Euro je Megawatt und Stunde fuellbar. Der am selben Tag ergaenzte
+Ausgang ohne Preis am hoechsten Deckel ist in den ausgewerteten Tagen also
+nicht eingetreten, und der Text sagt das jetzt.
+
+**Nicht aufgenommen.** Der Befund des Verfassers, dass Zertifikatsverletzungen
+und Senkungen in dieser Fassung dieselbe Zahl ergeben, also jede Verletzung zu
+einer Senkung fuehrt. Er sagt etwas ueber die Konsistenz der beiden Zaehler im
+Code und nichts ueber das Verfahren.
+
+### 17.09.2026, 3.2.4 Satz zum Deckel gestrichen
+
+Kommentar des Verfassers: "streichen". Zurueckgenommene Formulierung, nicht
+wieder aufnehmen: "In den ausgewerteten Tagen steigt der Deckel nie, sodass
+jede Stunde und Richtung dieselben 14 Halbierungen durchlaeuft." Damit steht
+der Befund, dass der Deckel nie steigen musste, nur noch im Protokoll und
+nicht im Text. Die Herleitung der 14 Halbierungen und der 672 Laeufe bleibt
+unberuehrt, ebenso der Satz, dass der Ausgang ohne Preis in den ausgewerteten
+Tagen nicht eintritt.
+
+### 17.09.2026, 3.2.4 nur die Laufzahl bleibt
+
+Kommentar des Verfassers: "bitte integriere nur die erwartete Laufzahl ein.
+so viele Infos muessen nicht rein." Von den vier heute ergaenzten Messangaben
+bleibt allein "Darum genuegen in den ausgewerteten Tagen 84 bis 167 Laeufe je
+Tag, im Mittel rund 130."
+
+Zurueckgenommene Formulierungen, nicht wieder aufnehmen:
+
+- "In den ausgewerteten Tagen tritt dieser Fall nicht ein." (zum Ausgang ohne
+  Preis am hoechsten Deckel)
+- "In den ausgewerteten Tagen bleiben 54 Prozent der Stunden in positiver und
+  60 Prozent in negativer Richtung ohne jede Anhebung, waehrend einzelne
+  Stunden bis zu 13 Anhebungen brauchen."
+- "In den ausgewerteten Tagen senkt der Abstieg je Tag 22 bis 42 der 48
+  Stunden und Richtungen, im Median 32."
+
+Die Messwerte selbst stehen im Eintrag "gemessene Iterationszahlen ergaenzt"
+vom selben Tag und bleiben dort als Nachweis erhalten. Der Text von 3.2.4
+beschreibt damit den Ablauf und nennt als einzige Aufwandsangabe die Laufzahl
+der ersten Iteration.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
