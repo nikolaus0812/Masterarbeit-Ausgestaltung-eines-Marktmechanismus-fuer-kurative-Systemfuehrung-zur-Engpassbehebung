@@ -1034,6 +1034,50 @@ die Seite nicht. Die Beschriftungen schrumpfen damit auf rund sieben Punkt.
 Ist das zu klein, muss die Abbildung im Modellrepository fuer diese Groesse
 neu gesetzt werden.
 
+### 17.09.2026, Ablaufabbildungen mit gestrichelter Bisektion
+
+Betrifft figures/chapter_3/reservierungspreis_ablauf_gross.pdf und
+reservierungspreis_ablauf_kompakt.pdf, extras/attachment_ablauf.tex und die
+Bildunterschrift in chapters/chapter_3.tex. Quelle im Modellrepository:
+analysen/code/schrift/09_reservierungspreis_verfahren/reservierungspreis_ablauf.py.
+
+Kommentare des Verfassers: im grossen Diagramm fehlte ein Pfeil von "alle
+Stunden voll?" nach "h := erste Stunde", das Ende war abgeschnitten, das
+Kriterium war uneinheitlich ("f_h >= 99,99 %?" gegen "alle Stunden voll?"), und
+der Kasten "untere Grenze" beruehrte die Bahn der Stundenschleife. Danach:
+"versuche die Bisektion selber gleich zu formatieren und packe sie in so eine
+gestrichelte Box. Ich will, dass die beiden Flussdiagramme erkennbar aehnlich
+sind und nur das Zusammengefasste in einer gestrichelten Box ist." Zuletzt:
+"ich will diese minimal raus haben."
+
+**Entscheidungen.** Beide Abbildungen entstehen aus derselben Zeichenfunktion,
+der einzige Unterschied ist ein Schalter. Im grossen Bild steht die Bisektion
+ausgeschrieben in einer gestrichelten Box, im kompakten Bild ist dieselbe Box
+ein einzelner gestrichelter Kasten. Die Bisektion ist in beiden Iterationen
+gleich gezeichnet; es unterscheiden sich allein das Kriterium ("Stunde h voll?"
+gegen "alle Stunden voll?") und die Preise, die der Lauf mit der Mitte vorgibt.
+Die Raute vor dem Intervall der 2. Iteration fragt jetzt "alle Stunden voll bei
+p_h - 0,05?", damit "ja" und "nein" ohne Zusatz verstaendlich sind.
+
+**Zurueckgenommen, nicht wieder aufnehmen.** Die Marken "ja, nicht minimal" und
+"nein, minimal". Die Stundenschleife innerhalb der Bisektion der 1. Iteration.
+Das Kriterium "f_h >= 99,99 %?".
+
+**Eigenstaendige Ableitung und Vorbehalt.** Damit die Bisektion in beiden
+Iterationen gleich aussieht, fuehrt die 1. Iteration die Stunden im Diagramm
+nacheinander durch die Bisektion. Im Code teilen sich Stunden mit derselben
+Intervallmitte einen Lauf. Das ist eine Einsparung an Laeufen und keine andere
+Logik; der Anhang sagt es in einem Satz, 3.2.4 im Text zur Laufzahl.
+
+**Masse.** Grosses Bild 21,4 cm bei erlaubten 21,7 cm. Kompaktes Bild 12,6 cm;
+dafuer entfallen dort Start und Liefertag, die Laufkaesten haben zwei Zeilen,
+und das Ergebnis der 1. Iteration steht rechts.
+
+**Anhang D.** Der Satz, Stunden- und Durchgangsschleife gebe es allein in der
+2. Iteration, ist falsch geworden und ersetzt. Der Satz, die Iterationen
+unterschieden sich allein im Kriterium, gilt nur fuer die Bisektion und ist
+darauf eingegrenzt.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -7690,6 +7734,81 @@ sagt das ausdruecklich. Zweitens will der Verfasser den Intraday-Handel des
 Modells gegen den ID1-Wert des Index stellen und nicht gegen die rollierende
 IDC-Bewertung. Dafuer fehlt der ID1-Wert des Index fuer 2025, den der Verfasser
 beisteuert. Bis dahin steht der Vergleich gegen den IDC im Text.
+
+### 17.09.2026, 3.3.1 und 3.3.2 knapp gefasst und berichtigt
+
+Kommentar des Verfassers: "korrigiere, aber halt es so knapp wie moeglich.
+Hinterfrage, ob jeder Satz eine Aussage hat und notwendig ist und, ganz
+wichtig, in die Erzaehlung des vorigen Satzes passt."
+
+**Berichtigt nach dem Quelltext des Index.** Erstens ist der Preis der ersten
+Intraday-Auktion plus beziehungsweise minus 50 Prozent der Gebotspreis der
+aFRR-Arbeit, verguetet wird zum Grenzpreis; der Text sagte "bewertet zum
+Preis". Zweitens reserviert die FCR marktuebergreifend die Haelfte der Leistung
+und vermarktet P * 0,5 / 1,25, also vier Fuenftel davon; der Text sagte "belegt
+die Haelfte". Drittens bildet der Intraday-Handel den volumengewichteten Preis
+aus den Geschaeften des jeweiligen 15-Minuten-Fensters, nicht aus allen bis
+dahin ausgefuehrten. Viertens ist der FCR-Faktor 1,24 erklaert: der Index
+teilt die vermarktete Leistung auch im Einzelmarkt durch 1,25, das Modell
+bietet die volle Leistung an, und 100 / 80 = 1,25. Der offene Punkt vom selben
+Tag entfaellt damit. Fuenftens liegt der Unterschied in der aFRR-Leistung in der
+Bemessung ueber vier Stunden Lieferdauer und nicht im Ladezustandsband, das
+beide Seiten mit einer Stunde je Richtung fuehren.
+
+**Ergaenzt.** Glattstellen frueherer Geschaefte im rollierenden Handel,
+Handelsfenster vom Vortag um 16 Uhr, Preisnehmer und nicht handelbare Produkte
+als Grund der Erfassungsrate, Abruf ueber die Merit-Order-Schwelle,
+Rueckfuehrung des Ladezustands in den letzten zwei Stunden.
+
+**Doku gegen Code.** Die Dokumentation der Battery Charts nennt 15 Uhr als
+Handelsbeginn, der Code rechnet ab current_day minus acht Stunden, also 16 Uhr
+(id_rolling_intrinsic.py, Zeile 667). Der Text folgt dem Code.
+
+**Nur hier festgehalten, nicht im Text.** Binaervariable gegen gleichzeitiges
+Laden und Entladen, Abschlag von 0,01 Euro im Verkauf, threshold und
+discount_rate auf null, Gesamt-Ladezustand als Summe beider Anteile minus 0,5.
+
+**Gestrichen, weil ein anderer Satz es traegt oder die Aussage nicht traegt.**
+Die Saetze zur Wirkung des Energieinhalts und zur Aufteilung der Zyklen, der
+Vorbehalt zur Ordnung im rollierenden Handel, "Die Bemessungen unterscheiden
+sich darin, welchen Preis der Speicher sieht", die Preisherkunft von FCR und
+aFRR-Leistung und "Der Index liefert damit seltener, dann aber mit der vollen
+Vorhaltung, waehrend das Modell stetig, aber in kleinem Umfang liefert."
+
+### 17.09.2026, 3.2.4 nach dem Ablaufdiagramm neu geordnet
+
+Auftrag des Verfassers: "pruefe vorher den Text, ob er passend ist. Leite dazu
+aus dem Diagramm im Anhang Stichpunkte fuer den Haupttext ab und strukturiere
+den Text danach neu, sodass man den Text lesen kann und im Anhang nachvollziehen
+kann, was ich gemacht habe."
+
+**Stichpunkte aus dem Diagramm, zugleich die Absatzfolge.** Suche mit
+Fuellgrad, voller Reservierung, gesuchter Groesse und zwei gleich aufgebauten
+Iterationen; die Bisektion als gemeinsamer Schritt; die erste Iteration mit
+Deckel, Intervall, Kriterium und Laufzahl; die Begruendung einer zweiten
+Iteration; die zweite Iteration mit Anheben, Senken, Intervall, Kriterium und
+Durchgaengen.
+
+**Befunde am bisherigen Text.** Die Bisektion stand in der ersten Iteration,
+die zweite verwies auf dieselbe Regel. Der Satz "Eine Bisektion je Stunde bei
+festen vorgegebenen Reservierungspreisen der uebrigen Stunden fuehrt ebenfalls
+nicht zum Ziel" widersprach dem Diagramm, denn genau das tut die zweite
+Iteration; gemeint war das Anheben einzelner Stunden nacheinander. Aufstieg,
+Abstieg und Toleranz als Preisschritt kamen im Diagramm nicht vor.
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.** "Jeder Lauf
+traegt einen vorgegebenen Reservierungspreis je Stunde und Richtung, in der
+ersten Iteration fuer alle Stunden des Tages denselben." "Der Fuellgrad dient
+dabei allein als Abfrage, ob die Stunde bei einem geprueften
+Reservierungspreis voll reserviert ist." "Eine Bisektion je Stunde bei festen
+vorgegebenen Reservierungspreisen der uebrigen Stunden fuehrt ebenfalls nicht
+zum Ziel ..." Die Begriffe Aufstieg und Abstieg im Fliesstext. "Toleranz" fuer
+0,05 Euro je Megawatt und Stunde; die Preisschritte stehen jetzt als Zahl, und
+Toleranz meint im Text nur noch die 0,01 MW. Damit ist der offene Punkt zur
+doppelten Bedeutung von Toleranz erledigt.
+
+**Seitenstand.** Abbildung 3.2 auf Seite 42, Abbildung 3.3 auf Seite 43,
+Kapitel 3 endet vor Seite 50, Anhang D auf den Seiten 77 und 78.
 
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
