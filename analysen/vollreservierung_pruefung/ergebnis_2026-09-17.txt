@@ -1,0 +1,132 @@
+
+run_20260727_135224  2025-01-23
+  be_full_pos    min      5.00  max     52.50  Summe     803.75  NaN 0  gleich null 0
+  be_full_neg    min      2.50  max     65.62  Summe     773.75  NaN 0  gleich null 0
+
+run_20260727_135224  2025-02-11
+  be_full_pos    min      2.50  max     70.00  Summe     731.33  NaN 0  gleich null 0
+  be_full_neg    min      7.50  max     87.50  Summe    1157.73  NaN 0  gleich null 0
+
+run_20260727_135224  2025-10-15
+  be_full_pos    min      6.25  max    161.13  Summe    1406.29  NaN 0  gleich null 0
+  be_full_neg    min      5.00  max     80.00  Summe     584.41  NaN 0  gleich null 0
+
+run_20260910_100252  2025-02-11
+  be_full_pos    min      2.72  max     43.89  Summe     390.34  NaN 0  gleich null 0
+  be_full_neg    min      1.03  max     41.80  Summe     331.26  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS   0.0000 MW, min NEG   0.0000 MW, nicht voll: 12 POS / 11 NEG von je 24
+             POS-Stunden [(0, 8.4316), (1, 8.4316), (2, 8.4316), (3, 8.4316), (4, 11.8154), (5, 11.8154), (6, 0.0), (7, 11.8154), (8, 0.0), (14, 0.0), (19, 0.0), (20, 84.8257)]
+             NEG-Stunden [(1, 77.8047), (2, 0.0), (3, 98.1996), (4, 92.6122), (5, 90.9821), (6, 88.6193), (12, 0.0), (13, 76.2066), (14, 52.4132), (21, 0.0), (23, 0.0)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260910_100252  2025-05-15
+  be_full_pos    min      6.47  max    404.15  Summe    1714.49  NaN 0  gleich null 0
+  be_full_neg    min      5.32  max    450.92  Summe    3112.31  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  64.3590 MW, min NEG   0.0000 MW, nicht voll: 2 POS / 5 NEG von je 24
+             POS-Stunden [(20, 81.8967), (23, 64.359)]
+             NEG-Stunden [(5, 63.1579), (12, 0.0), (13, 0.0), (14, 0.0), (15, 0.0)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260910_100252  2025-08-26
+  be_full_pos    min      0.05  max    696.90  Summe    1866.92  NaN 0  gleich null 0
+  be_full_neg    min      1.06  max    423.05  Summe    1523.38  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS   0.0000 MW, min NEG   0.0000 MW, nicht voll: 8 POS / 9 NEG von je 24
+             POS-Stunden [(7, 90.0534), (12, 0.0), (13, 0.0), (14, 0.0), (15, 0.0), (19, 0.0), (20, 0.0), (21, 64.75)]
+             NEG-Stunden [(2, 0.0), (4, 0.0), (5, 57.5849), (6, 57.5849), (7, 57.5849), (14, 97.7701), (17, 84.5569), (21, 80.4709), (22, 0.0)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260911_165418  2025-02-11
+  be_full_pos    min      3.81  max     46.08  Summe     421.32  NaN 0  gleich null 0
+  be_full_neg    min      1.03  max     41.80  Summe     372.98  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  40.5000 MW, min NEG   0.0000 MW, nicht voll: 3 POS / 7 NEG von je 24
+             POS-Stunden [(6, 40.5), (8, 76.5), (19, 53.9375)]
+             NEG-Stunden [(2, 81.5789), (4, 83.0471), (5, 77.3961), (6, 71.7452), (12, 73.9612), (19, 0.0), (23, 69.5291)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260911_165418  2025-05-15
+  be_full_pos    min      8.64  max    404.15  Summe    2454.98  NaN 0  gleich null 0
+  be_full_neg    min      5.27  max    429.33  Summe    3524.61  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  73.6772 MW, min NEG   0.0000 MW, nicht voll: 5 POS / 13 NEG von je 24
+             POS-Stunden [(3, 96.8515), (6, 94.2393), (8, 88.9971), (9, 99.0226), (22, 73.6772)]
+             NEG-Stunden [(0, 80.8453), (1, 80.8453), (2, 80.8453), (3, 80.8453), (8, 1.0103), (9, 1.0103), (10, 1.0103), (11, 0.0), (12, 76.9463), (13, 76.9463), (14, 76.9463), (15, 76.9463), (22, 89.2545)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260911_165418  2025-08-26
+  be_full_pos    min      0.05  max    704.96  Summe    2081.55  NaN 0  gleich null 0
+  be_full_neg    min      4.69  max    423.05  Summe    2945.73  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS   0.0000 MW, min NEG   7.6177 MW, nicht voll: 4 POS / 2 NEG von je 24
+             POS-Stunden [(19, 0.0), (20, 0.0), (21, 23.5), (22, 23.5)]
+             NEG-Stunden [(2, 75.4386), (22, 7.6177)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260912_105213  2025-02-11
+  be_full_pos    min      0.03  max     45.39  Summe     380.92  NaN 0  gleich null 0
+  be_full_neg    min      1.00  max     38.53  Summe     267.12  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  40.5000 MW, min NEG   0.0000 MW, nicht voll: 3 POS / 7 NEG von je 24
+             POS-Stunden [(6, 40.5), (8, 76.5), (19, 53.9375)]
+             NEG-Stunden [(2, 81.5789), (4, 83.0471), (5, 77.3961), (6, 71.7452), (12, 73.9612), (19, 0.0), (23, 69.5291)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260912_105213  2025-05-15
+  be_full_pos    min      0.03  max    365.92  Summe    1528.03  NaN 0  gleich null 0
+  be_full_neg    min      1.97  max    505.19  Summe    3069.06  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  73.6772 MW, min NEG   0.0000 MW, nicht voll: 5 POS / 13 NEG von je 24
+             POS-Stunden [(3, 96.8515), (6, 94.2393), (8, 88.9971), (9, 99.0226), (22, 73.6772)]
+             NEG-Stunden [(0, 80.8453), (1, 80.8453), (2, 80.8453), (3, 80.8453), (8, 1.0103), (9, 1.0103), (10, 1.0103), (11, 0.0), (12, 76.9463), (13, 76.9463), (14, 76.9463), (15, 76.9463), (22, 89.2545)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260912_105213  2025-08-26
+  be_full_pos    min      0.05  max    689.15  Summe    1743.60  NaN 0  gleich null 0
+  be_full_neg    min      1.01  max    204.30  Summe    1429.07  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS   0.0000 MW, min NEG   7.6177 MW, nicht voll: 4 POS / 2 NEG von je 24
+             POS-Stunden [(19, 0.0), (20, 0.0), (21, 23.5), (22, 23.5)]
+             NEG-Stunden [(2, 75.4386), (22, 7.6177)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260914_110947  2025-02-11
+  be_full_pos    min      0.03  max     45.39  Summe     380.92  NaN 0  gleich null 0
+  be_full_neg    min      1.00  max     38.53  Summe     267.12  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  40.5000 MW, min NEG   0.0000 MW, nicht voll: 3 POS / 7 NEG von je 24
+             POS-Stunden [(6, 40.5), (8, 76.5), (19, 53.9375)]
+             NEG-Stunden [(2, 81.5789), (4, 83.0471), (5, 77.3961), (6, 71.7452), (12, 73.9612), (19, 0.0), (23, 69.5291)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260914_110947  2025-05-15
+  be_full_pos    min      0.03  max    365.92  Summe    1528.03  NaN 0  gleich null 0
+  be_full_neg    min      1.97  max    505.19  Summe    3069.06  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS  73.6772 MW, min NEG   0.0000 MW, nicht voll: 5 POS / 13 NEG von je 24
+             POS-Stunden [(3, 96.8515), (6, 94.2393), (8, 88.9971), (9, 99.0226), (22, 73.6772)]
+             NEG-Stunden [(0, 80.8453), (1, 80.8453), (2, 80.8453), (3, 80.8453), (8, 1.0103), (9, 1.0103), (10, 1.0103), (11, 0.0), (12, 76.9463), (13, 76.9463), (14, 76.9463), (15, 76.9463), (22, 89.2545)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24
+
+run_20260914_110947  2025-08-26
+  be_full_pos    min      0.05  max    689.15  Summe    1743.60  NaN 0  gleich null 0
+  be_full_neg    min      1.01  max    204.30  Summe    1429.07  NaN 0  gleich null 0
+  be_full_pos_offen wahr in 0 Stunden
+  be_full_neg_offen wahr in 0 Stunden
+  breakeven  min POS   0.0000 MW, min NEG   7.6177 MW, nicht voll: 4 POS / 2 NEG von je 24
+             POS-Stunden [(19, 0.0), (20, 0.0), (21, 23.5), (22, 23.5)]
+             NEG-Stunden [(2, 75.4386), (22, 7.6177)]
+  vollverdr  min POS 100.0000 MW, min NEG 100.0000 MW, nicht voll: 0 POS / 0 NEG von je 24

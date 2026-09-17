@@ -7233,6 +7233,105 @@ nicht wieder aufnehmen. Der Folgesatz zu Teil (b) der Abbildung nennt die
 Situation jetzt selbst ("sobald die Schwelle einer Stunde waehrend der Suche
 steigt"), weil sein "dann" auf den gestrichenen Satz zeigte.
 
+### 17.09.2026, 3.2.4 Verfahren verstaendlich gemacht, Variante A
+
+Kommentar des Verfassers zu den beiden Schlusssaetzen des Verfahrensabsatzes:
+"warum nicht, was soll der satz aussagen", dann "ich finde es passt einfach
+nicht in den kontext. ich finde allgemein das verfahren zu verstehen etwas
+schwierig. welche laeufe werden gerechnet und wie sind die preisintervalle.
+pruefe den ganzen absatz nochmal."
+
+**Befund der Pruefung gegen den Quelltext** (`curative_breakeven.py`,
+`MODELL.md` Abschnitt 11.2 und 11.3). Der Text liess die Angabe aus, an der
+das ganze Verfahren haengt: In der ersten Iteration traegt jeder Lauf EINEN
+Preis, der fuer alle 24 Stunden gilt, in der zweiten Iteration traegt jeder
+Lauf 48 verschiedene Preise. Deshalb gibt es in der ersten Iteration eine
+Preisachse und geteilte Laeufe, in der zweiten keine mehr. Dieser Wechsel
+stand nur als Nebensatz.
+
+**Entscheidungen des Verfassers.** Variante A, also Prosa in den bestehenden
+Absatzgrenzen. Die zuerst erwogene Tabelle mit Schritt, vorgegebenem Preis,
+Pruefung und Laufzahl ist verworfen. Die Absatzgrenzen von 3.2.4 bleiben bei
+drei Absaetzen, eine Aufteilung in fuenf ist zurueckgenommen mit der
+Begruendung, die Absaetze wuerden dadurch zu kurz. Die Zahlen zur Zahl der
+noetigen Durchlaeufe traegt der Verfasser spaeter nach, wenn der Jahreslauf
+mit der neuen Bestimmungslogik durch ist.
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.**
+
+- "Die positive und die negative Richtung bleiben als zwei Produkte
+  getrennt." Gestrichen, weil der Satz 3.1.2 wiederholt, wo steht, dass jede
+  Richtung einen anderen Teil des Ladezustandsbandes bindet und deshalb ein
+  eigenes Gebot ist, und weil er am Abstieg ohne Anschluss haengt.
+- "Die erste Iteration liefert deshalb nur eine grobe Preisspanne je Stunde."
+  Sachlich falsch, die erste Iteration liefert je Stunde einen auf 0,05 Euro
+  je Megawatt und Stunde aufgeloesten Wert und keine Spanne. Jetzt
+  "Startwert".
+- "Das Startintervall reicht bis zu einem Deckel von 800 Euro je Megawatt und
+  Stunde, der sich verdoppelt, bis jede Stunde voll ist." Der Satz liess
+  offen, dass das Intervall bei null beginnt, und las sich, als verdopple der
+  Deckel waehrend der Halbierung. Der Deckel steht vor der ersten Halbierung
+  fest.
+- "Ein Abstieg senkt deshalb jede Stunde einzeln um die Toleranz und prueft
+  nach jeder Senkung, ob alle Stunden voll bleiben." Verschmolz Zertifikat und
+  Abstieg zu einem Schritt, weshalb "das Intervall unter ihm" im Folgesatz
+  ohne Vorbereitung kam. Das Zertifikat laeuft ueber alle 48 Stunden, der
+  Abstieg nur ueber die nicht minimalen.
+
+**Eigenstaendige Ableitungen.**
+
+- Das Minimum der Summe ist nicht gesichert, weil der Abstieg stets nur eine
+  Stunde senkt. Ueber die Zeitkopplung kann es sein, dass zwei Stunden
+  gemeinsam senkbar sind, waehrend jede fuer sich die volle Reservierung
+  bricht. Diese Begruendung steht jetzt im Text, die Aussage stand vorher ohne
+  Begruendung da.
+- Der Ausgang ohne Preis ist neu im Text: Bleibt eine Stunde auch beim
+  hoechsten Deckel von 51.200 Euro je Megawatt und Stunde nicht voll,
+  bekommt sie im Code keinen Preis (NaN), weil dann eine Restriktion die
+  Reservierung verhindert und nicht der Preis. Der Fall kam im ganzen
+  Kapitel 3 nicht vor, obwohl der Code ihn ausdruecklich behandelt.
+- Die Randbedingung der Laufzahl 84 bis 167 ist ergaenzt ("nach den bisher
+  ausgewerteten Tagen"), weil die Zahl nach MODELL.md nicht aus dem Jahr 2025
+  stammt. Das war der offene Punkt aus dem Eintrag zu 3.2.4 vom 16.09.2026.
+
+**Pruefung der Vollreservierung, auf Verlangen des Verfassers.** Gefragt war,
+ob das Verfahren wirklich alles reserviert. Ausgewertet sind die gespeicherten
+Validierungslaeufe der drei nach dem Umbau vom 12.09.2026 gerechneten Tage,
+gemessen am Kriterium des Verfahrens selbst, also hoechstens 0,01 MW Schlupf
+je Stunde und Richtung, und nicht an der 99-Prozent-Marke von
+`validate_breakeven`. Ergebnis am 11.02., 15.05. und 26.08.2025: alle 48 Paare
+stehen auf genau 100,0000 MW, kein Paar ohne Preis, keine Offen-Marke gesetzt.
+Die erste Iteration allein laesst an denselben Tagen 10, 18 und 6 der 48 Paare
+unter der vollen Reservierung. Skript und Ausgabe in
+`analysen/vollreservierung_pruefung`. Eigenstaendige Ableitung: Garantiert ist
+die Vollreservierung dadurch nicht, denn der Code hat zwei Ausgaenge fuer den
+Misserfolg, naemlich die Stunde ohne Preis am hoechsten Deckel und den
+uebersprungenen Abstieg, wenn der Aufstieg mit offenen Stunden endet. Der Text
+behauptet deshalb nicht, das Verfahren fuelle immer alles.
+
+**Offene Punkte.**
+
+- Wie oft die beiden Misserfolgsausgaenge im Jahr 2025 eintreten, zaehlt
+  Kapitel 4 aus dem Jahreslauf aus.
+- Die Wirkung der Senkungsreihenfolge auf die Summe ist nicht gemessen. Der
+  Code haelt dafuer `reihenfolge="absteigend"` bereit. Solange keine Zahl
+  vorliegt, steht die Reihenfolge im Text als Festlegung ohne Bezifferung,
+  was Stilregel 7 nur deshalb nicht verletzt, weil keine relative Angabe
+  gemacht wird.
+- `MODELL.md` und die Docstrings in `curative_breakeven.py` widersprechen sich
+  in den Messwerten zum Abstieg, naemlich 39 bzw. 27 von 48 nicht minimalen
+  Stunden-Richtungen und 44 bzw. 91 Prozent Ueberschuss gegen 37 bzw. 26 und
+  25 bzw. 89 Prozent. Keine der Zahlen steht im Text. Vor einer Verwendung ist
+  zu klaeren, welche gilt.
+- `validate_breakeven` setzt fehlende Preise ueber `nan_to_num` auf null und
+  misst mit `margin = 1.0`, also genau am ermittelten Preis, wo der Betreiber
+  indifferent ist und der Solver den Gleichstand zugunsten der Reservierung
+  bricht. Beides ist bei der Auswertung des Jahreslaufs zu beachten.
+
+**Umfang.** Kapitel 3 steht nach dem Build bei 19 Seiten gegen das Ziel von 14
+aus `STRUKTUR.md`. Die Aenderung dieses Eintrags hat etwa eine halbe Seite
+hinzugefuegt.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

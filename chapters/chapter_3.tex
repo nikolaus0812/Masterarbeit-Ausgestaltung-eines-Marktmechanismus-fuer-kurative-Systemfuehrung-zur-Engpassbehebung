@@ -4778,7 +4778,10 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
 %Die positive und die negative Richtung bleiben dabei als zwei Produkte getrennt.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Preis aufruft und aus jedem Lauf die reservierte Leistung abliest.
-Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Reservierungspreis für die kurative Reservierung aufruft und aus jedem Lauf die reservierte Leistung abliest.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung:
+%Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt mit einem vorgegebenen Reservierungspreis für die kurative Reservierung aufruft und aus jedem Lauf die reservierte Leistung abliest.
+Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt aufruft und aus jedem Lauf die reservierte Leistung abliest.
+Jeder Lauf trägt einen vorgegebenen Reservierungspreis je Stunde und Richtung, in der ersten Iteration für alle Stunden des Tages denselben.
 % GESTRICHEN am 16.09.2026, Kommentar des Verfassers, Dopplung: Ein Lauf löst stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.
 % NEU GEFASST am 16.09.2026, Kommentar des Verfassers: geteilt und Toleranz begruendet (Gurobi FeasibilityTol 1e-6 mal 100 MW, Kommentar in curative_breakeven.py). Alte Fassung:
 %Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung, und als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt.
@@ -4794,20 +4797,36 @@ Gesucht ist je Stunde und Richtung der kleinste vorgegebene Reservierungspreis, 
 %Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, das sich eignet, weil der Füllgrad mit dem Preis monoton steigt und jede Stunde damit genau eine Schwelle hat.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, und der Füllgrad dient dabei allein als Abfrage, ob die Stunde bei einem geprüften Preis voll reserviert ist.
-Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, und der Füllgrad dient dabei allein als Abfrage, ob die Stunde bei einem geprüften Reservierungspreis voll reserviert ist.
-Die Bisektion prüft die Mitte eines Preisintervalls mit einem Lauf: Ist die Stunde dort voll, entfällt die obere Hälfte des Intervalls, sonst die untere.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung:
+%Zur Eingrenzung dieses Preises wendet die erste Iteration das Bisektionsverfahren an, und der Füllgrad dient dabei allein als Abfrage, ob die Stunde bei einem geprüften Reservierungspreis voll reserviert ist.
+Die erste Iteration grenzt diesen Preis ein, indem sie ein Intervall von null bis zu einem Deckel wiederholt halbiert.
+Den Deckel legt die Suche vor der ersten Halbierung fest.
+Der Deckel beginnt bei 800 Euro je Megawatt und Stunde und verdoppelt sich, solange eine Stunde nicht voll reserviert ist, höchstens bis 51.200 Euro je Megawatt und Stunde.
+Der Füllgrad dient dabei allein als Abfrage, ob die Stunde bei einem geprüften Reservierungspreis voll reserviert ist.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung:
+%Die Bisektion prüft die Mitte eines Preisintervalls mit einem Lauf: Ist die Stunde dort voll, entfällt die obere Hälfte des Intervalls, sonst die untere.
+Die Halbierung prüft die Mitte des Intervalls mit einem Lauf.
+Ist die Stunde bei dieser Mitte voll reserviert, entfällt die obere Hälfte des Intervalls, sonst die untere.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers, logarithmische Preisachse im Text genannt. Alte Fassung:
 %Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) zeigt.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste Preis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) auf einer logarithmischen Preisachse zeigt.
-Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste vorgegebene Reservierungspreis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) auf einer logarithmischen Preisachse zeigt.
-Das Startintervall reicht bis zu einem Deckel von 800 Euro je Megawatt und Stunde, der sich verdoppelt, bis jede Stunde voll ist, höchstens bis 51.200 Euro je Megawatt und Stunde.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Drei Nebensaetze und ein Pronomen ueber die Satzgrenze.
+%Sie endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist, und das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste vorgegebene Reservierungspreis, der die Stunde nachweislich füllt, wie Abbildung~\ref{fig:reservierungspreis_bisektion} in Teil (a) auf einer logarithmischen Preisachse zeigt.
+Die Halbierung endet, sobald das Intervall nicht breiter als 0,05 Euro je Megawatt und Stunde ist.
+Das Ergebnis ist die obere Grenze des letzten Intervalls, also der kleinste vorgegebene Reservierungspreis, der die Stunde nachweislich voll reserviert.
+Teil (a) von Abbildung~\ref{fig:reservierungspreis_bisektion} zeigt den Weg der Intervalle auf einer logarithmischen Preisachse.
+% GESTRICHEN am 17.09.2026, Kommentar des Verfassers. Der Satz liess offen, dass das Intervall bei null beginnt und dass der Deckel VOR der ersten Halbierung feststeht. Beides steht jetzt weiter oben. Alte Fassung:
+%Das Startintervall reicht bis zu einem Deckel von 800 Euro je Megawatt und Stunde, der sich verdoppelt, bis jede Stunde voll ist, höchstens bis 51.200 Euro je Megawatt und Stunde.
 % KOMMENTAR 17.09.2026, Verfasser: Satz aufteilen und erklaeren, warum 672 das Maximum ist (48 Paare mal 14 Halbierungen). Alte Fassung:
 %Von 800 Euro je Megawatt und Stunde bis zur Toleranz sind 14 Halbierungen nötig, und weil sich alle 48 Paare aus Stunde und Richtung mit derselben Intervallmitte einen Lauf teilen, genügen 84 bis 167 Läufe je Tag statt 672, im Mittel rund 130.
 Von 800 Euro je Megawatt und Stunde bis zur Toleranz sind 14 Halbierungen nötig.
 Würde jedes der 48 Paare aus Stunde und Richtung für sich halbiert, wären je Tag 48 mal 14, also 672 Läufe nötig.
 Alle Paare mit derselben Intervallmitte teilen sich jedoch einen Lauf, weil das Tagesmodell alle Stunden bei einem einheitlichen vorgegebenen Reservierungspreis zugleich löst.
-Darum genügen 84 bis 167 Läufe je Tag, im Mittel rund 130.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Randbedingung der Laufzahl fehlte, und der Ausgang ohne Preis kam im ganzen Kapitel nicht vor. Alte Fassung:
+%Darum genügen 84 bis 167 Läufe je Tag, im Mittel rund 130.
+Darum genügen nach den bisher ausgewerteten Tagen 84 bis 167 Läufe je Tag, im Mittel rund 130.
+Bleibt eine Stunde auch beim höchsten Deckel nicht voll reserviert, gibt es für sie keinen Preis, denn dann verhindert eine Restriktion des Modells die Reservierung und nicht der Preis.
 
 \begin{figure}[htbp]
     \centering
@@ -4842,7 +4861,9 @@ Die Zeitkopplung der kurativen Reservierung über den Ladezustand verschiebt den
 %Die erste Iteration findet die Schwelle jeder Stunde deshalb nur unter einem für den ganzen Tag einheitlichen Preis.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Die erste Iteration liefert deshalb nur eine grobe Preisspanne je Stunde, gefunden unter einem für den ganzen Tag einheitlichen Preis.
-Die erste Iteration liefert deshalb nur eine grobe Preisspanne je Stunde, gefunden unter einem für den ganzen Tag einheitlichen vorgegebenen Reservierungspreis.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Die erste Iteration liefert keine Spanne, sondern einen auf 0,05 Euro je Megawatt und Stunde aufgeloesten Wert. Alte Fassung:
+%Die erste Iteration liefert deshalb nur eine grobe Preisspanne je Stunde, gefunden unter einem für den ganzen Tag einheitlichen vorgegebenen Reservierungspreis.
+Die erste Iteration liefert deshalb je Stunde nur einen Startwert, gefunden unter einem für den ganzen Tag einheitlichen vorgegebenen Reservierungspreis.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers, ohne Zahlen, dafuer der Grund. Alte Fassung:
 %Werden die so gefundenen Preise als Vektor gleichzeitig vorgegeben, ist ein Teil der Stunden nicht mehr voll, am 11.02.2025 zum Beispiel 8 von 24 Stunden in positiver und 9 von 24 in negativer Richtung.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers vom 16.09.2026: Loesungsabsatz stringenter, ohne das Wort Vektor. Alte Fassung:
@@ -4890,20 +4911,38 @@ Eine Bisektion je Stunde bei festen vorgegebenen Reservierungspreisen der übrig
 %Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung, und die positive und die negative Richtung bleiben als zwei Produkte getrennt.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die alle 48 Preise gemeinsam vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
-Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die alle 48 Reservierungspreise gemeinsam vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Der Wechsel von einem Preis je Lauf auf 48 Preise je Lauf stand nur als Nebensatz, traegt aber das ganze Verfahren. Alte Fassung:
+%Deshalb folgt auf die erste Iteration mit der Bisektion eine zweite, die alle 48 Reservierungspreise gemeinsam vorgibt und alle noch offenen Stunden zugleich um ein Viertel anhebt, bis der Speicher alle Stunden zusammen voll reserviert, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+Deshalb folgt auf die erste Iteration eine zweite, in der jeder Lauf 48 verschiedene vorgegebene Reservierungspreise trägt, einen je Stunde und Richtung.
+Damit wechselt die Frage, die ein Lauf beantwortet.
+In der ersten Iteration lautet die Frage, ab welchem einheitlichen Reservierungspreis eine einzelne Stunde voll reserviert ist.
+In der zweiten Iteration lautet die Frage, ob unter allen 48 Reservierungspreisen zugleich jede Stunde und Richtung voll reserviert bleibt.
+Eine Preisachse, auf der sich ein Intervall halbieren ließe, gibt es damit nicht mehr.
+Die zweite Iteration steigt deshalb zuerst grob auf und danach genau ab, wie Abbildung~\ref{fig:reservierungspreis_ablauf} als Flussdiagramm zeigt.
+Der Aufstieg hebt alle noch offenen Stunden zugleich um ein Viertel an, bis keine Stunde mehr offen ist.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Dieser Aufstieg in groben Schritten schießt über das Ziel hinaus, sodass die Preise zwar ausreichen, aber nicht mehr minimal sind.
 Dieser Aufstieg in groben Schritten schießt über das Ziel hinaus, sodass die vorgegebenen Reservierungspreise zwar ausreichen, aber nicht mehr minimal sind.
-Ein Abstieg senkt deshalb jede Stunde einzeln um die Toleranz und prüft nach jeder Senkung, ob alle Stunden voll bleiben.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Zertifikat und Abstieg waren zu einem Schritt verschmolzen, darum kam das Intervall im Folgesatz ohne Vorbereitung. Alte Fassung:
+%Ein Abstieg senkt deshalb jede Stunde einzeln um die Toleranz und prüft nach jeder Senkung, ob alle Stunden voll bleiben.
+Ein Zertifikat senkt deshalb jede der 48 Stunden einzeln um die Toleranz und prüft mit je einem Lauf, ob alle Stunden voll reserviert bleiben.
 % DURCHSICHT 16.09.2026, Kommentar des Verfassers: halbieren statt bisektieren, Variante 1. Alte Fassung:
 %Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und die Stunde wird unter dieser gemeinsamen Bedingung weiter nach unten bisektiert.
 % KOMMENTAR 17.09.2026, Verfasser: Preisbezug klar machen, nicht nur Preis schreiben, sondern vorgegebener Reservierungspreis (Eingang des Tagesmodells) gegen kurativer Reservierungspreis (gesuchte Groesse). Alte Fassung:
 %Bleiben alle Stunden voll, war der Preis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
-Bleiben alle Stunden voll, war der vorgegebene Reservierungspreis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Welches Intervall halbiert wird, stand nicht da. Alte Fassung:
+%Bleiben alle Stunden voll, war der vorgegebene Reservierungspreis der Stunde nicht minimal, und das Intervall unter ihm wird unter derselben gemeinsamen Bedingung weiter halbiert.
+Bleiben alle Stunden voll reserviert, war der vorgegebene Reservierungspreis dieser Stunde nicht minimal.
+Der Abstieg halbiert dann das Intervall von null bis zum Preis abzüglich der Toleranz, wieder unter der Bedingung, dass alle Stunden voll reserviert bleiben.
 Der Abstieg endet, wenn ein ganzer Durchgang über alle Stunden ohne Senkung bleibt.
 Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis, bei dem sich keine einzelne Stunde mehr um die Toleranz senken lässt, ohne dass eine Stunde aus der vollen Reservierung fällt.
-Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, und die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung.
-Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
+% KOMMENTAR 17.09.2026, Verfasser: Verfahren schwer verstaendlich, welche Laeufe und welche Preisintervalle. Alte Fassung: Warum das Minimum der Summe nicht gesichert ist, stand nicht da. Alte Fassung:
+%Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, und die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist eine Festlegung.
+Ein Minimum der Summe aller Stundenpreise ist damit nicht gesichert, denn der Abstieg senkt stets nur eine Stunde.
+Zwei Stunden lassen sich unter Umständen gemeinsam senken, während jede für sich die volle Reservierung bricht.
+Die Reihenfolge der Senkung, aufsteigend nach Stunden und die positive vor der negativen Richtung, ist deshalb eine Festlegung.
+% GESTRICHEN am 17.09.2026, Kommentar des Verfassers: der Satz passt nicht in den Kontext. Er wiederholt 3.1, wo steht, dass jede Richtung einen anderen Teil des Ladezustandsbandes bindet und deshalb ein eigenes Gebot ist, und er haengt am Abstieg ohne Anschluss. Alte Fassung:
+%Die positive und die negative Richtung bleiben als zwei Produkte getrennt.
 
 % ABBILDUNG ENTFALLEN am 12.09.2026 nach der Anweisung des Verfassers. Beide
 % Iterationen stehen jetzt in fig:reservierungspreis_ablauf oben in diesem
