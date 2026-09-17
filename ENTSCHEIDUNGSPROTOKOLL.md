@@ -7139,6 +7139,44 @@ Kapitel 3 endet auf Seite 48, Literaturverzeichnis ab Seite 49.
 
 **Pruefungen.** pruefen.py ohne Befund, Build ohne Fehler.
 
+### 17.09.2026, 3.3.1 und 3.3.2 nach dem Quelltext des Erlösindex
+
+Der Verfasser hat den Quelltext des Erlösindex lokal abgelegt
+(C:/GIT-HUB/battery_revenue_index-main, Kopie von
+git.rwth-aachen.de/jonas.brucksch/battery_revenue_index). Aus
+calculation_config.py, Zweig Cross-Market, und den Marktmodulen folgt:
+Standardkonfigurationen 1 h/1 Zyklus, 1 h/2 Zyklen, 2 h/1 Zyklus, 2 h/2
+Zyklen bei 1 MW, Wirkungsgrad 0,95 je Richtung, Start-SoC 50 Prozent;
+FCR power_share 0,5, vermarktbar 0,5/1,25 = 0,4 P, SoC-Vorhalt eine
+Viertelstunde; aFRR-Leistung power_share = E/(4 P), bei 2 h also 0,5 P
+symmetrisch, SoC-Vorhalt eine Stunde je Richtung; aFRR-Arbeit power_share
+0,5, capacity_share 0,5, cycle_share 0,5, Gebot IDA1 plus/minus 50 Prozent,
+Ausgleich zum ID1; IDC power_share 0,5, capacity_share 0,5, cycle_share 0,5,
+capture_rate 0,8, threshold und discount_rate 0; capture_rate der
+Regelleistung 1. Die Datei tools/mkt_config.json nennt fuer den Intraday-Handel
+0,9, das Laufskript calculation_config.py 0,8, uebernommen ist der Wert des
+Laufskripts. Die Erfassungsrate ist damit nicht mehr unbekannt, der Satz
+"deren Hoehe die Dokumentation nicht nennt" ist zurueckgenommen.
+
+Der Verfasser hat am 16.09.2026 mitgeteilt, dass die Website den Systemtyp
+(Energieinhalt je Leistung 2 h) und die Zyklenzahl (auf 2 gestellt)
+einstellen laesst. Die Exporte vom 08.09.2026 werden darum als Reihe fuer
+2 h und 2 Zyklen je Tag gefuehrt. **Annahme, vom Verfasser zu bestaetigen**,
+denn die CSV-Dateien tragen die Einstellung nicht.
+
+Zurueckgenommen in 3.3.1: "Bezugsanlage ist ein Speicher mit einer
+Megawattstunde je Megawatt, also einem Energieinhalt je Leistung von einer
+Stunde." und "die aFRR-Leistung ein Viertel der Leistung". Zurueckgenommen in
+3.3.2: "Der groessere Energieinhalt je Leistung der Modellanlage erhoeht den
+Erloes in den Leistungsmaerkten, denn er laesst mehr Leistung mit dem
+geforderten Energievorhalt zu." Der Abstand in den Leistungsmaerkten wird jetzt
+mit der freien Aufteilung der Leistung im Modell gegen die festen Anteile des
+Index begruendet, der Energieinhalt (2,5 h gegen 2 h) ist nur noch Zusatz.
+"ein Viertel der Anschlussleistung" fuer die aFRR-Leistung ist auf "die
+Haelfte" berichtigt, die Zyklengrenze mit zwei Zyklen je Tag beziffert.
+Eigenstaendige Ableitung: die Zahlen 259,7 und die Einzelmarktwerte bleiben
+unveraendert, denn sie stammen aus den Exporten und nicht aus dem Quelltext.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
@@ -8369,6 +8407,15 @@ das Abrufdatum nachgetragen.
 Preisreihen weiterhin SMARD, das keinen ID1 und keinen ID3 fuehrt. Sie sind auf
 energy_charts_strompreise_2026 umzustellen, sobald der Verfasser entscheidet, ob
 die Arbeit energy-charts, die EPEX Spot SE oder beide zitiert.
+
+### 17.09.2026, Battery-Charts-Eintraege nach dem Quelltext
+
+**isea_batterycharts_2026**: note von "Bezugsanlage ein Megawatt und eine
+Megawattstunde" auf "Bezugsanlage einstellbar, verwendete Reihen fuer zwei
+Megawattstunden je Megawatt und zwei Zyklen je Tag" geaendert, siehe den
+Eintrag zu 3.3.1 unter chapter_3.tex. **isea_methodik_2026**: note um den
+Ort des Quelltexts und die vier Standardkonfigurationen ergaenzt. Das
+Abrufdatum bleibt, denn die Exporte stammen vom 08.09.2026.
 
 ## Offene Punkte, Stand 08.09.2026
 

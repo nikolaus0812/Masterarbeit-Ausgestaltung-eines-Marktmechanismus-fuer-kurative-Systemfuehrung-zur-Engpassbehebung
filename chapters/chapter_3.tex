@@ -5472,17 +5472,30 @@ Geprüft wird die Plausibilität des Referenzerlöses, also einer Zwischengröß
 \subsection{Vergleichsmaßstab}
 \label{sec:validation_benchmark}
 
-Der Erlösindex der Battery Charts wird vom \ac{ISEA} der RWTH Aachen gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
-Bezugsanlage ist ein Speicher mit einer Megawattstunde je Megawatt, also einem Energieinhalt je Leistung von einer Stunde.
+% DURCHSICHT 17.09.2026, die Langform des Akronyms nennt die RWTH Aachen bereits, doppelte Nennung entfernt. Alte Fassung:
+%Der Erlösindex der Battery Charts wird vom \ac{ISEA} der RWTH Aachen gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
+Der Erlösindex der Battery Charts wird vom \ac{ISEA} gemeinsam mit der enspired GmbH entwickelt und weist für ein \ac{BESS} am deutschen Markt den Erlös aus, der mit Regelleistung und Spotmarkthandel erreichbar ist \cite{isea_batterycharts_2026}.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Bezugsanlage ist ein Speicher mit einer Megawattstunde je Megawatt, also einem Energieinhalt je Leistung von einer Stunde.
+Der Index rechnet für vier Bezugsanlagen, nämlich einen Energieinhalt je Leistung von einer oder zwei Stunden und eine Zyklengrenze von einem oder zwei Zyklen je Tag, jeweils mit einem Wirkungsgrad von 95 Prozent je Richtung.
+Die hier verwendeten Reihen gelten für zwei Stunden und zwei Zyklen je Tag.
 Marktübergreifend führt der Index die \ac{FCR}, die \ac{aFRR}-Leistung, die \ac{aFRR}-Arbeit und den kontinuierlichen Intraday-Handel, je Markt allein daneben auch den \ac{DA} und die Intraday-Auktion \cite{isea_methodik_2026}.
 Veröffentlicht wird ein gleitender Mittelwert der Tageserlöse über 365 Tage, sodass der Wert am Jahresende genau das Kalenderjahr abbildet und die Validierung darum das Jahr 2025 umfasst.
 
 Marktübergreifend bedient der Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
-Zuerst vergleicht er je Vier-Stunden-Block den Erlös der \ac{FCR} mit dem der \ac{aFRR}-Leistung und wählt den höheren, wobei die \ac{FCR} die Hälfte der Leistung mit einem Energievorhalt von einer Viertelstunde und die \ac{aFRR}-Leistung ein Viertel der Leistung mit einem Energievorhalt von einer Stunde je Richtung belegt.
-Danach liefert die \ac{aFRR}-Arbeit mit der Hälfte der verbleibenden Leistung und des verbleibenden Speicherinhalts, bewertet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent, und gleicht den Ladezustand zum \ac{ID1} aus.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Zuerst vergleicht er je Vier-Stunden-Block den Erlös der \ac{FCR} mit dem der \ac{aFRR}-Leistung und wählt den höheren, wobei die \ac{FCR} die Hälfte der Leistung mit einem Energievorhalt von einer Viertelstunde und die \ac{aFRR}-Leistung ein Viertel der Leistung mit einem Energievorhalt von einer Stunde je Richtung belegt.
+Zuerst vergleicht er je Vier-Stunden-Block den Erlös der \ac{FCR} mit dem der \ac{aFRR}-Leistung und wählt den höheren.
+Die \ac{FCR} belegt dabei die Hälfte der Leistung mit einem Energievorhalt von einer Viertelstunde.
+Die \ac{aFRR}-Leistung belegt die Leistung, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte der Leistung, mit einem Energievorhalt von einer Stunde je Richtung.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Danach liefert die \ac{aFRR}-Arbeit mit der Hälfte der verbleibenden Leistung und des verbleibenden Speicherinhalts, bewertet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent, und gleicht den Ladezustand zum \ac{ID1} aus.
+Danach liefert die \ac{aFRR}-Arbeit mit der Hälfte der verbleibenden Leistung, des verbleibenden Speicherinhalts und der Zyklen, bewertet zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent, und gleicht den Ladezustand zum \ac{ID1} aus.
 Zuletzt handelt der Intraday-Handel mit dem Rest der Leistung und der Hälfte der zulässigen Zyklen rollierend: Alle 15 Minuten optimiert er neu gegen den volumengewichteten Preis der bis dahin ausgeführten Geschäfte, ohne künftige Preise vorauszusetzen \cite{semmelmann_algorithm_2024}.
 Die \ac{FCR} geht mit dem Einheitspreis des Zuschlags ein, die \ac{aFRR}-Leistung mit dem mengengewichteten Durchschnittspreis, beide aus den Ausschreibungsergebnissen auf regelleistung.net.
-Jeden Erlös mindert der Index mit einer Erfassungsrate, die den Abstand zum idealen Handel abbilden soll und deren Höhe die Dokumentation nicht nennt.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Jeden Erlös mindert der Index mit einer Erfassungsrate, die den Abstand zum idealen Handel abbilden soll und deren Höhe die Dokumentation nicht nennt.
+Eine Erfassungsrate, die den Abstand zum idealen Handel abbilden soll, setzt der Quelltext nur im Intraday-Handel mit 80 Prozent an, die Regelleistung geht ungekürzt ein.
 
 Für das Jahr 2025 weist der Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
 Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
@@ -5495,9 +5508,14 @@ Weil der Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dor
 Index und Modell rechnen nach verschiedenen Regeln, sodass vor dem Vergleich zu klären ist, welche Abweichung zu erwarten ist.
 Der Index bildet erreichbaren Handel ab und erhebt nach eigener Darstellung nicht den Anspruch, den höchsten erzielbaren Erlös zu treffen \cite{isea_methodik_2026}.
 Sein Intraday-Handel kennt nur die bis dahin bekannten Preise, während das Modell alle Preise des Liefertages kennt, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus, wie in Abschnitt~\ref{sec:model_assumptions} dargestellt.
-Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Der größere Energieinhalt je Leistung der Modellanlage erhöht den Erlös in den Leistungsmärkten, denn er lässt mehr Leistung mit dem geforderten Energievorhalt zu.
+Die freie Aufteilung der Leistung erhöht den Erlös des Modells in den Leistungsmärkten, denn das Modell wählt die vorgehaltene Leistung je Stunde bis zur vollen Anschlussleistung, während der Index feste Anteile belegt.
+Der Energieinhalt je Leistung der Modellanlage von 2,5 Stunden übersteigt zudem die zwei Stunden der Bezugsanlage.
 Auch der sichere Zuschlag erhöht den Erlös dort, denn das Modell übernimmt die veröffentlichten Preise und setzt jede angebotene Leistung als bezuschlagt.
-Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze führt.
+Die Degradationskosten senken den Erlös dagegen in den Energiemärkten, denn das Modell verrechnet dort jeden Zyklus mit Kosten, während der Index nur eine Zyklengrenze von zwei Zyklen je Tag führt.
 Das Modell soll den Index nicht treffen, denn es ist als Obergrenze gebaut.
 Das Prüfkriterium lautet, dass der Jahresgang übereinstimmt, dass das Modell in den Leistungsmärkten über dem Index liegt und dass es in den Energiemärkten darunter bleibt.
 Trägt eine Abweichung die entgegengesetzte Richtung, liegt ein Fehler der Umsetzung nahe und nicht eine Eigenschaft des Modells.
@@ -5517,8 +5535,12 @@ Je Markt allein ist das Bild nicht einheitlich, wie Anhang~\ref{anh:validierung}
 In der \ac{FCR} erreicht das Modell das 1,24-Fache des Index und in der \ac{aFRR} das 1,52-Fache.
 Am \ac{DA} erreicht das Modell das 0,86-Fache des Index und im \ac{IDC} das 0,89-Fache.
 Das Modell ist damit nicht durchgängig überhöht, denn wo es Degradationskosten verrechnet, bleibt es hinter der Referenz zurück.
-Der Aufschlag entsteht in den Leistungsmärkten, wo der größere Energieinhalt je Leistung und der sichere Zuschlag wirken.
-Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur ein Viertel der Anschlussleistung für die \ac{aFRR}-Leistung.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Der Aufschlag entsteht in den Leistungsmärkten, wo der größere Energieinhalt je Leistung und der sichere Zuschlag wirken.
+Der Aufschlag entsteht in den Leistungsmärkten, wo die freie Aufteilung der Leistung und der sichere Zuschlag wirken.
+% QUELLTEXT 17.09.2026, Erloesindex nach dem lokalen Quelltext battery_revenue_index (calculation_config.py, Cross-Market) und der Einstellung der Exporte auf zwei Stunden und zwei Zyklen je Tag. Alte Fassung:
+%Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur ein Viertel der Anschlussleistung für die \ac{aFRR}-Leistung.
+Den größten Teil des Faktors bei der \ac{aFRR} erklärt die vorgehaltene Leistung, denn der Index reserviert nach seiner Methodik nur die Hälfte der Anschlussleistung für die \ac{aFRR}-Leistung.
 Das Modell hält dagegen im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
 Alle drei Teile des Prüfkriteriums sind damit erfüllt.
 
