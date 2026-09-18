@@ -388,6 +388,8 @@ Stunde für Stunde prüft die zweite Iteration deshalb mit einem Lauf, ob alle S
 Bleiben alle Stunden voll, sucht die Bisektion zwischen null und dem gesenkten Preis den kleinsten noch ausreichenden Preis der Stunde.
 Die übrigen Stunden behalten in den Läufen der Bisektion ihren Preis.
 Die zweite Iteration wiederholt die Prüfung in Durchgängen über alle Stunden, bis ein Durchgang keinen Preis mehr senkt.
+In den ausgewerteten Tagen senkt die zweite Iteration im Median 33 Preise, im günstigsten Fall keinen und im ungünstigsten 152.
+Jeder Durchgang kostet 48 Läufe und jede Senkung rund zehn weitere, sodass die zweite Iteration mit einigen hundert Läufen je Tag ein Mehrfaches der ersten Iteration mit 84 bis 167 Läufen verlangt.
 Das Ergebnis ist je Stunde und Richtung der Vollreservierungspreis.
 Wird ein einzelner Vollreservierungspreis um weitere 0,05\,\EurMWh{} gesenkt, ist mindestens eine Stunde nicht mehr voll reserviert.
 Der Preis einer Stunde stellt damit die zuletzt reservierte Leistung gerade indifferent, während die übrige reservierte Leistung mehr als ihre Opportunitätskosten trägt.
@@ -423,6 +425,7 @@ Die Monatswerte des Vergleichs sind aus diesem Mittelwert zurückgerechnet und t
 
 Marktübergreifend bedient der Revenue-Index die Märkte nacheinander mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen.
 Zuerst wählt der Revenue-Index je Vier-Stunden-Block zwischen der \ac{FCR} und der \ac{aFRR}-Leistung den Markt mit dem höheren Erlös.
+Welcher Markt den Block erhält, entscheidet der Revenue-Index anhand der später bekannten Preise beider Märkte.
 Die \ac{FCR} bietet 40 Prozent der Leistung an, die \ac{aFRR}-Leistung so viel, wie der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
 Die 40 Prozent ergeben sich, weil der Revenue-Index die Hälfte der Leistung für die \ac{FCR} freihält und die maximale Leistung eines Speichers die angebotene Leistung nach den Präqualifikationsbedingungen um mindestens ein Viertel übersteigen muss \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Der Revenue-Index vergütet in der \ac{FCR} allein die angebotene Leistung und nicht die abgerufene Energie.
@@ -433,6 +436,9 @@ Geliefert wird der Sollwert, begrenzt auf die vorgehaltene Leistung des Speicher
 Als Daten nutzt der Revenue-Index den sekündlichen Sollwert der deutschen \ac{ÜNB} \cite{netztransparenz_regelenergie_2026} und die anonymisierte Gebotsliste der \ac{aFRR}-Arbeit \cite{regelleistung_ausschreibungsdaten_2026}.
 Den Ladezustand hält der Revenue-Index über Geschäfte zum \ac{ID1} im zulässigen Band und führt ihn in den letzten zwei Stunden des Tages auf die Hälfte zurück.
 Zuletzt handelt der Revenue-Index im kontinuierlichen Intraday-Handel mit der übrigen Leistung, dem übrigen Speicherinhalt und den übrigen Zyklen, mindestens aber mit der Hälfte der Zyklengrenze, und schließt den Tag mit dem Anfangsladezustand ab.
+Als übrige Leistung zieht der Revenue-Index allein die für die \ac{aFRR}-Arbeit vorgehaltene Leistung ab und nicht die Reservierung der \ac{FCR}.
+In einem Block mit \ac{FCR}-Zuschlag teilt er deshalb bis zum Anderthalbfachen der Nennleistung zu, nämlich die Hälfte für die \ac{FCR}, ein Viertel für die \ac{aFRR}-Arbeit und drei Viertel für den Intraday-Handel.
+Die Aufteilung der Leistung im Revenue-Index taugt damit nicht als Maßstab für die Aufteilung im Optimierungsmodell, während die Höhe des Erlöses als Referenz von außen brauchbar bleibt.
 
 Der kontinuierliche Intraday-Handel läuft rollierend vom Vortag um 16 Uhr bis zum Ende des Liefertages.
 Alle 15 Minuten bildet der Revenue-Index aus den Geschäften dieses Zeitfensters je Viertelstundenprodukt den volumengewichteten Preis und optimiert damit ohne Prognose den ganzen Tag neu \cite{semmelmann_algorithm_2024}.
