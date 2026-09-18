@@ -2296,6 +2296,42 @@ Stauchung nicht mehr auf die Achse passte.
 lauten 17,2 / 21,1 / 29,1 / 34,3 / 30,3 / 30,4 TWh fuer 2020 bis 2025, der
 Hoechstwert liegt 2023.
 
+### 18.09.2026, 1.2 Verguetungslogiken neu gefasst
+
+Kritik des Verfassers: Der Absatz sagte pauschal, die Bereitschaft lasse sich
+nicht anordnen. Im Engpassmanagement ist der Eingriff sehr wohl anordenbar,
+nicht anordenbar ist die Vorhaltung. Die beiden Verguetungslogiken sollten
+danach als Logiken erkennbar sein, und die Regelleistung ist die naehere
+Logik, dient aber einem anderen Zweck.
+
+**Umgesetzt.** Der Absatz beginnt jetzt mit der Luecke, stellt den anordenbaren
+Eingriff der nicht anordenbaren Vorhaltung gegenueber, begruendet die
+Verguetung mit der vorab eingeschraenkten Fahrplanbildung und nennt danach die
+beiden Logiken. Der Schluss lautet nach Vorgabe des Verfassers, dass ein
+funktionierender kurativer Marktmechanismus beide Logiken verbinden muss,
+naemlich die Verguetung der Vorhaltung mit der Verguetung des Abrufs. Das ist
+mit Entscheidung 14 vom 16.09.2026 vereinbar.
+
+**Zurueckgenommen, nicht wieder aufnehmen.** "Die Bereitschaft der Akteure, die
+nach Abschnitt 1.1 Voraussetzung der kurativen Systemfuehrung ist, laesst sich
+im Selbstdispatch-Modell nicht anordnen." "Ein Marktmechanismus ist deshalb
+noetig." "Kurative Verfuegbarkeit entsteht deshalb nur ueber eine Verguetung."
+"Ob die Verguetung der Bereitstellung oder die Verguetung des Eingriffs den
+erforderlichen Anreiz fuer die kurative Vorhaltung setzt, ist damit zu
+klaeren."
+
+**Begriff.** Der Absatz sagt durchgehend kurative Vorhaltung. Der Ausdruck
+kurative Verfuegbarkeit faellt damit in 1.2 weg; er war ein dritter Name fuer
+dieselbe Sache und steht nicht unter den verbindlichen Begriffen in CLAUDE.md
+Abschnitt 5. In 2.4 steht er noch, dort ist er beim naechsten Durchgang zu
+pruefen.
+
+**Zweite Perspektive.** Der Verfasser wollte fuer diesen Absatz und fuer den
+Zielabsatz je einen Gegenvorschlag von Fable. Fuer den Zielabsatz ist er
+eingeholt und in der Fassung A uebernommen. Fuer diesen Absatz war das
+Kontingent von Fable erschoepft (Fehler rate_limit), die beiden Fassungen
+stammen deshalb aus derselben Sitzung.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
