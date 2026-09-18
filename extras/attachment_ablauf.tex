@@ -13,7 +13,10 @@ Abbildung~\ref{fig:reservierungspreis_ablauf_gross} zeigt beide Iterationen nebe
 % NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Bisektion in beiden Iterationen gleich und gestrichelt umrandet. Alte Fassung:
 %Beide Iterationen folgen demselben Aufbau, denn links bestimmt jede Iteration die Grenzen des Suchintervalls, und rechts halbiert jede Iteration dieses Intervall nach derselben Regel.
 Beide Iterationen folgen demselben Aufbau, denn links bestimmt jede Iteration die Grenzen des Suchintervalls, und rechts durchläuft sie die Stunden und halbiert je Stunde das Intervall.
+% ERGAENZT am 18.09.2026, Auftrag des Verfassers: die Genauigkeit der Iteration gehoert in die Erklaerung des Flussdiagramms. Der Satz davor ist unveraendert.
 Die gestrichelte Box umfasst diese Bisektion, die in beiden Iterationen nach derselben Regel abläuft.
+Die Bisektion endet, sobald das Intervall nicht breiter als 0,05\,\EurMWh{} ist, und der ausgewiesene Preis ist damit auf diesen Betrag genau.
+Als voll reserviert gilt eine Stunde, wenn höchstens 0,01\,\si{MW} der Anschlussleistung fehlen.
 % NEU GEFASST am 17.09.2026: die Iterationen unterscheiden sich auch im Senken vor der Bisektion und in den Durchgaengen, allein im Kriterium nur innerhalb der Bisektion. Alte Fassung:
 %Die Iterationen unterscheiden sich allein im Kriterium, nach dem die Halbierung entscheidet, welche Hälfte des Intervalls entfällt.
 % NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:

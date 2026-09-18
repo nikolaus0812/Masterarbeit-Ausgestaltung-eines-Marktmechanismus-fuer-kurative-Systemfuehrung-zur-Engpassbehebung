@@ -8481,6 +8481,42 @@ stehen im Literaturverzeichnis und zwei im Anhang zum Weber-Ansatz.
 ungesicherte Saetze des Verfassers zum Aufwand der zweiten Iteration. Die Datei
 ist nicht angefasst.
 
+### 18.09.2026, Abbildungen vorgezogen, Bisektion begruendet, Genauigkeit ergaenzt
+
+Auftrag des Verfassers: "Abbildung 3.2 und 3.4 muessen noch eine Seite nach
+vorne wandern. Kann man die Genauigkeit der Iteration noch in die Erklaerung
+des Flussdiagramms und am Anfang erklaeren, warum das Bisektionsverfahren zur
+Preisfindung genutzt wird, also Grundfunktion."
+
+**Platzierung.** Beide Gleitumgebungen stehen jetzt auf `[t]` statt `[H]`.
+Damit wandert Abbildung 3.4 von Seite 46 auf 45. Fuer Abbildung 3.2 genuegte
+das nicht, denn Seite 42 beginnt mit dem letzten Absatz von 3.2.3, und eine
+Gleitumgebung kann den oberen Rand einer Seite nur belegen, wenn sie im
+Quelltext vor deren Text steht. Die Abbildung ist deshalb vor diesen Absatz
+gezogen und auf 82 Prozent der Textbreite verkleinert, damit unter ihr noch
+Text steht. Stand danach: 3.2 auf Seite 42, 3.3 auf 43, 3.4 auf 45, 3.5 auf 48,
+3.6 auf 50.
+
+**Vorbehalt, dem Verfasser genannt.** Der Satz mit dem Verweis auf Teil (a)
+steht jetzt auf Seite 43, also eine Seite nach der Abbildung; vorher stand die
+Abbildung eine Seite nach dem Verweis. Beides auf einer Seite ist nicht
+moeglich, weil der vorangehende Abschnitt die Seite fuellt. Der Verfasser kann
+die Reihenfolge zurueckdrehen.
+
+**Grundfunktion der Bisektion.** Zwei Saetze am Anfang von 3.2.4 sagen, warum
+die Suche die Bisektion nutzt, naemlich weil der Fuellgrad mit dem
+vorgegebenen Reservierungspreis steigt und ein Lauf in der Mitte des
+Intervalls die Seite bestimmt, auf der der gesuchte Preis liegt. Formuliert
+als Voraussetzung und nicht als Satz, weil die Monotonie nach MODELL.md
+Abschnitt 11.2 fuer den eigenen Preis einer Stunde bei festen uebrigen Preisen
+gesichert ist, die erste Iteration aber den einheitlichen Preis aller Stunden
+zugleich hebt. Eigenstaendige Ableitung, im Text als Voraussetzung
+gekennzeichnet.
+
+**Genauigkeit.** Die Erklaerung des Flussdiagramms in Anhang D nennt jetzt die
+Intervallbreite von 0,05 Euro je MW und Stunde als Genauigkeit des
+ausgewiesenen Preises und die Fuellgradtoleranz von 0,01 MW.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
