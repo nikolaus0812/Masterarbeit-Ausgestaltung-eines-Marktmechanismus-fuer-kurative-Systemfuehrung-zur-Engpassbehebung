@@ -1295,6 +1295,127 @@ auskommentierten Kapiteln 4 und 5. Das PDF traegt 89 Seiten, eine mehr als vor
 der Kontrolle. Offen sind die 20 geringen Befunde, die 75 Absatzbefunde und die
 22 Streichkandidaten, die die Seite wieder einsparen koennen.
 
+### 18.09.2026, Einheitenmakro EurMWh, Malpunkt fehlte im gesetzten Text
+
+Das Makro `\EurMWh` vom 17.09.2026 hat im Fliesstext nicht Euro je Megawatt und
+Stunde gesetzt, sondern Euro je Megawattstunde. Der Malpunkt fiel aus,
+weil `\sisetup{mode=math,detect-all}` in `extras/header.tex` Zeile 118 siunitx
+in den Mathematikmodus zwingt und `\textperiodcentered` dort unzulaessig ist.
+Je Verwendung entstanden drei Meldungen im Log, naemlich zwei zu
+`\textperiodcentered` und eine zum fehlenden Zeichen in cmr10. Betroffen waren
+chapter_2.tex mit 8, chapter_3.tex mit 24, chapter_4.tex mit 34 und
+attachment_dispatch.tex mit 6 Meldungen.
+
+Der Befund ist erheblich, weil CLAUDE.md Abschnitt 8 die beiden Einheiten
+ausdruecklich trennt und das Makro genau diese Trennung aufhob. Gedruckt stand
+an jeder Stelle die Form, die die Arbeit vermeiden will.
+
+**Berichtigt** in `extras/macros.tex`, geprueft an einem Minimalbeispiel mit dem
+Fontsatz und der siunitx-Einstellung der Arbeit. Alte Fassung, nicht wieder
+aufzunehmen:
+
+    \newcommand{\EurMWh}{\si[inter-unit-product=\ensuremath{\mathord{\cdot}}]{\euro/(MW.h)}}
+
+Neue Fassung:
+
+    \newcommand{\EurMWh}{\si[inter-unit-product=\text{\textperiodcentered}]{\euro/(MW.h)}}
+
+Geprueft ist die Wirkung am gebauten PDF, das an den Fundstellen in Kapitel 3
+jetzt 0,05 Euro je Megawatt und Stunde mit Malpunkt setzt. Das Log ist ohne
+diese Meldungen. Eigenstaendige Ableitung, naemlich die Zuordnung der Ursache zu
+`mode=math`, gemessen an vier Varianten des Makros.
+
+**Offener Punkt.** Ob `\sisetup{mode=math,detect-all}` selbst zu aendern ist,
+bleibt offen. Die Einstellung stammt aus der Vorlage des IAEW und wirkt auf jede
+Verwendung von `\si` in der Arbeit. Die Berichtigung des Makros umgeht sie und
+ruehrt sie nicht an.
+
+### 18.09.2026, Kontrolle durch Fable, geringe Befunde und zwei Ergaenzungen
+
+Fortsetzung des Eintrags vom 17.09.2026. Der Verfasser ist die 20 geringen
+Befunde in Fuenferschritten durchgegangen. Betroffen sind chapter_2.tex,
+chapter_3.tex, attachment.tex, attachment_modell.tex, attachment_thermik.tex,
+attachment_ablauf.tex, attachment_validierung.tex, attachment_dispatch.tex und
+literature.bib.
+
+**Zwei Ergaenzungen vorab, auf eigenen Wunsch des Verfassers.** In 3.2.4 steht
+die Laufzahl der zweiten Iteration: im Median 33 Senkungen je Tag, im
+guenstigsten Fall keine und im unguenstigsten 152, dazu 48 Laeufe je Durchgang
+und rund zehn je Senkung nach MODELL.md Abschnitt 11.3, also einige hundert
+Laeufe je Tag gegen 84 bis 167 in der ersten Iteration. Grundlage sind die
+Iterationszaehler des Verfassers ueber alle 8760 Stunden. Die Laufzahl selbst
+ist nicht gemessen, sondern aus den Kosten je Schritt umgerechnet, denn der
+Zaehler n_solve steht allein im Log von curative_breakeven.py. In 3.3.1 steht
+die Abgrenzung der Leistungsaufteilung des Revenue-Index: der Block geht an den
+Markt mit dem spaeter bekannten hoeheren Preis, als uebrige Leistung zieht der
+Revenue-Index allein die fuer die aFRR-Arbeit vorgehaltene Leistung ab und
+nicht die FCR-Reservierung, sodass in einem Block mit FCR-Zuschlag 0,5 P plus
+0,25 P plus 0,75 P und damit das Anderthalbfache der Nennleistung zugeteilt
+wird. Belege im Quelltext: calculation_config.py (Anteile), aFRR_market.py
+(set_marketable_power_afrr_energy), cross_market_analysis.py (c_rate =
+(P - prereserved_power)/E) und id_rolling_intrinsic.py (net_buy <= cap *
+c_rate). Der Text sagt das als Eigenschaft der Methodik und nicht als
+Ueberschaetzung, denn der Revenue-Index buendelt Annahmen in beide Richtungen.
+
+**Berichtigte Zahlen.** Die Zulaessigkeitstoleranz des Solvers ist 10^-6
+(optimizer.py Zeile 791), nicht ein Hundertstel der Fuellgradtoleranz; der Satz
+nennt jetzt beide Werte und verzichtet auf das Verhaeltnis, so der Verfasser.
+Die 14 Halbierungen gelten fuer den Deckel von 800 Euro je MW und Stunde.
+
+**Zeitumstellung.** Zwei Saetze in 3.2.4 halten fest, dass der Fall ohne Preis
+allein an den beiden Tagen der Zeitumstellung eintritt und der Deckel nur dort
+bis 51.200 Euro je MW und Stunde steigt. Grundlage sind die Iterationszaehler
+des Verfassers.
+
+**Begriffe und Bezuege.** Anhang B verspricht keine Berechnung mehr, sondern
+Waermebilanz und Temperaturverlauf. Anhang E heisst der Vergleich der
+Einzelmaerkte und nicht die zweite Stufe. Anhang D schreibt die 0,05 Euro je MW
+und Stunde aus, damit Toleranz nicht zwei Groessen meint. Anhang A sagt
+Anweisung statt Abruf, weil Abruf nach 2.1.2 der kurativen Massnahme gehoert,
+und schreibt die Begruendung zum inneren Wert der Festlegung zu. Inc-Dec steht
+einheitlich. Der vorgegebene Reservierungspreis traegt sein Attribut auch in
+3.3.3 und in Anhang F. Die erste Nennung der Festlegung in Kapitel 2 nennt
+jetzt ihren Gegenstand, naemlich den angemessenen finanziellen Ausgleich nach
+§ 13a Abs. 2 EnWG; das Aktenzeichen bleibt nach CLAUDE.md Abschnitt 5 offen.
+
+**Belege.** Die Handelsschlusszeiten des kontinuierlichen Intraday-Handels
+tragen jetzt eine Quelle. Der Verfasser wollte EPEX. Die Seiten von
+epexspot.com antworten auf den Abruf mit 403 und liessen sich nicht im Wortlaut
+pruefen, und die auffindbaren EPEX-Mitteilungen nennen nur die 30 und die 60
+Minuten. Der Wiki-Artikel Grosshandelspreise auf SMARD traegt alle drei Zeiten
+woertlich, gepruft am 18.09.2026, und steht deshalb als Beleg; neuer Eintrag
+bundesnetzagentur_smard_grosshandelspreise_2026. Die Anreizkomponente der
+Regelleistung traegt die Praequalifikationsbedingungen. Das ausgeschoepfte
+PSKW-Potenzial ist durch die eigene Tabelle 2.1 ersetzt, nach der der Bestand
+bis 2037 um rund ein Fuenftel waechst.
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.** "Das Potenzial in
+Deutschland weitgehend ausgeschoepft ist." "Der Erloes des Modells ist damit
+eine obere Schranke der uebrigen Vermarktung, sodass der kurative
+Reservierungspreis eher zu hoch als zu niedrig ausfaellt" (der zweite Teil; die
+Folgerung gehoert zu den Einschraenkungen in Kapitel 5). "die die Verguetung
+der Vorhaltung um ein Vielfaches uebersteigen." "weil deren Zahl bei
+Batteriespeichern deutlich geringer sei." Die Prueffmarke % pruefen: ok an
+dieser Stelle.
+
+**Abgelehnter Befund.** I-44 behauptete, die 177,00 Euro im Anhang A seien
+nicht reproduzierbar. Eigene Nachrechnung: mit sigma = 21,74848 ergeben sich
+V_C = 0,36915 und V_P = 0,57296 Euro je MW, mal 200 und 180 MW also 73,83 und
+103,13 Euro, zusammen 176,96 Euro; mit dem gerundeten sigma = 21,75 sind es
+0,36923 und 0,57306 Euro je MW, also 73,85 und 103,15 Euro, zusammen 177,00
+Euro. Beide Zahlen stehen richtig im Text.
+
+**Nicht umgesetzt, Entscheidung des Verfassers.** I-10 und I-19, naemlich dass
+das Modell das Ladezustandsband der Regelleistung nur zu Beginn der
+Vier-Stunden-Zeitscheibe prueft und den in die Folgezeitscheibe reichenden
+Abruf dort nicht deckt. Beides bleibt unveraendert und unerwaehnt.
+
+**Offen.** Die 75 Absatzbefunde zum roten Faden mit 22 Streichkandidaten und
+rund 38 Zeilen Ersparnis, die 14 Punkte der Liste G in DURCHSICHT_KAP1_3.md und
+die Einschraenkungen fuer Kapitel 5, naemlich das koordinatenweise Minimum, die
+Reihenfolge des Abstiegs und die Richtung des Fehlers aus der vollstaendigen
+Preiskenntnis.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -8152,6 +8273,117 @@ der Verfasser.
 
 **Geprueft.** Der Text des gebauten PDF ist vor und nach dem Entfernen
 zeichengleich, geprueft ueber pdftotext ueber alle 88 Seiten.
+
+## chapter_4.tex
+
+### 18.09.2026, neue Sortierung des Kapitels, Geruest mit Stichpunkten
+
+Die Gliederung vom 18.08.2026 ist ersetzt. Die Aufnahme des Ist-Zustands, die
+Befunde K1 bis K10 und die neue Sortierung stehen in `KAPITEL_4_AUFBAU.md` im
+Wurzelverzeichnis. Die alte Gliederung steht vollstaendig als Kommentar am Ende
+von `chapters/chapter_4.tex` und ist nicht wieder aufzunehmen.
+
+**Tragende Befunde am Ist-Zustand.**
+
+- Die alten Abschnitte 4.1 und 4.2 zu Referenzfall und gebundenem Fahrplan
+  stehen inzwischen in Abschnitt 3.3 und in den Anhaengen zur
+  Einzelmarktvalidierung und zum Fahrplan ohne die Mindestgroesse. Als eigene
+  Abschnitte wiederholten sie Kapitel 3.
+- Die gesuchte Groesse stand auf der letzten der 16 Seiten. Sie steht jetzt im
+  ersten Abschnitt.
+- Die Sensitivitaetsliste fuehrte Abrufhaeufigkeit, Verguetungsniveau und Hoehe
+  der Poenale, obwohl die Entscheidungen 5, 6 und 13 sie streichen. Damit ist
+  der offene Punkt 21 erledigt.
+- Die Zerlegung in entgangene Arbitrage und zusaetzlichen Werteverbrauch folgt
+  der Verguetungsstruktur der Festlegung und gehoert nach Abschnitt 5.1.
+
+**Entscheidung zur ausgewiesenen Groesse.** Kapitel 4 weist den
+Vollreservierungspreis aus der zweiten Iteration aus. Das ist keine neue
+Entscheidung, sondern die Folge des Wortlauts von Abschnitt 3.2.4, der das
+Ergebnis der zweiten Iteration so benennt und die erste Iteration einen
+Startwert nennt. Die in `PLANUNG_KAPITEL_4.md` als offen gefuehrte Entscheidung
+6.1 ist damit beantwortet. Die erste Iteration erscheint allein in den
+Abschnitten 4.4 und 4.5.2, wo der Unterschied zwischen den Iterationen selbst
+die Aussage traegt.
+
+**Eigenstaendige Ableitung, vom Verfasser zu pruefen.** Vier Stuecke stammen aus
+dieser Durchsicht und nicht aus einer Vorgabe.
+
+1. Die Reihenfolge der drei Sensitivitaeten ist als Argument begruendet und
+   nicht als Liste gesetzt. Sie beantworten dieselbe Frage, naemlich welche
+   Vermarktung die Reservierung verdraengt, und der Bogen schliesst sich, weil
+   die Sensitivitaet zum Spread am IDC auf die zur aFRR zurueckfuehrt.
+2. Die Granularitaet des Produkts bestimmt die Zahlung. Weil jede Stunde ihren
+   eigenen Grenzpreis fuer die volle Leistung erhaelt, uebersteigt die Summe der
+   Stundenpreise die Opportunitaet des ganzen Tages strukturell. Der Punkt
+   gehoert als Folge nach Kapitel 5 und ist dort noch nicht angelegt.
+3. Der kurative Reservierungspreis folgt dem Redispatchbedarf nicht. Gemessen am
+   17.09.2026 bleibt die Rangkorrelation zwischen dem Tagesmedian und dem
+   Redispatchvolumen des Tages unter 0,25, und der niedrigste Monatsmedian im
+   Dezember trifft auf den zweithoechsten Bedarf. Die Aggregation des Redispatch
+   ist gegen das Skript `jahreslauf_redispatch.py` zu pruefen, bevor eine Zahl
+   in den Text geht.
+4. Die Sensitivitaet `sensi6` variiert nicht die Bindungsdauer, sondern die
+   Abrufdauer. Der Quelltext bezeichnet `kur_t_res` als Abrufdauer der
+   Energiebindung, und die Groesse setzt die Breite des reservierten
+   Ladezustandsbandes. Die Bindungsdauer bleibt in allen Varianten eine Stunde.
+   Das Modellrepository nennt die Sensitivitaet Vorhaltedauer, die alte Fassung
+   dieses Kapitels nannte sie Bindungsdauer, und beide Bezeichnungen treffen den
+   gerechneten Fall nicht.
+
+**Auszaehlung der Misserfolgsausgaenge.** Das Protokoll hatte diese Zaehlung
+Kapitel 4 aufgegeben, und sie liegt vor. Gezaehlt aus
+`jahr_stunden_2025.parquet`, Lauf vom 15.09.2026: Der erste Ausgang, also die
+Stunde ohne Preis am hoechsten Deckel, tritt je Richtung genau einmal ein, beide
+Faelle am 22.02.2025. Der zweite Ausgang, also der uebersprungene Abstieg, tritt
+an drei Tagen ein, naemlich am 22.02., am 30.03. und am 26.10.2025, wobei die
+beiden letzten die Zeitumstellungstage sind. Das Minimalitaetszertifikat
+scheitert an jedem Tag des Jahres an mindestens 18 und im Median an 32 der 48
+Paare aus Stunde und Richtung. Die Zaehlung ist auf dem Gesamtlauf vom
+17.09.2026 zu wiederholen.
+
+**Zahlen im Geruest.** Alle Zahlen stammen aus dem Jahreslauf vom 15.09.2026 und
+aus eigener Rechnung vom 17.09.2026. Der Gesamtlauf vom 17.09.2026 war bei
+Anlage dieser Fassung nicht beendet. Der Kopf der Datei fuehrt den Vorbehalt
+mit, und jede Zahl ist vor der Ausformulierung neu zu lesen.
+
+**Marken.** Die Marken `sec:reference_case`, `sec:bound_case`,
+`sec:revenue_impact` und `sec:reservation_price` sind mit der alten Gliederung
+entfallen. Geprueft ist, dass kein aktiver Verweis auf sie zeigt.
+`sec:sensitivities` bleibt, weil ein Kommentar in chapter_2.tex Zeile 229 auf sie
+zeigt, und `ch:results` bleibt, weil Abschnitt 1.2 und Kapitel 6 auf sie
+verweisen. Neu sind `sec:price_level`, `sec:price_pattern`,
+`sec:price_vs_redispatch`, `sec:full_binding_cost`, `sec:sensi_afrr`,
+`sec:sensi_abrufdauer`, `sec:sensi_idc` und `sec:results_summary`.
+
+**Abbildungen und Tabelle.** Sechs Gleitumgebungen, naemlich Tabelle 4.1 mit den
+Kennzahlen, Abbildung 4.1 als Heatmap, Abbildung 4.2 als Jahreslauf neben dem
+Redispatch, Abbildung 4.3 als Erloesvergleich, Abbildung 4.4 zur Modellierung
+der aFRR, Abbildung 4.5 zur Abrufdauer und Abbildung 4.6 zum Spread am IDC. Vier
+davon stehen als `\platzhalterabb`, weil sie auf die zweite Iteration
+umzustellen und in Textbreite zu setzen sind. Allein der Erloesvergleich liegt
+als Schriftfassung vor, und seine Achse ist noch auf die Schreibweise Groesse in
+Einheit zu bringen.
+
+**Offene Entscheidungen.** Fuenf Punkte stehen im Kopf der Datei als N1 bis N5,
+naemlich die Einheit nach dem offenen Punkt 9, der Kapiteltitel, der Name der
+Sensitivitaet zur Abrufdauer, die Zahl der gerechneten Tage und eine moegliche
+siebte Abbildung. Ohne N1 und N3 ist kein Absatzplan zu schreiben.
+
+**Aufnahme in main.tex.** `chapter_4.tex` ist am 18.09.2026 in `main.tex`
+aufgenommen. Die Kapitel 5 und 6 bleiben auskommentiert. Das PDF traegt 97
+Seiten, davon sieben fuer das Geruest von Kapitel 4 gegen ein Ziel von 16 Seiten
+im ausformulierten Zustand. Die Warnung zu `ch:results` ist damit entfallen, die
+Warnungen zu `ch:discussion` und `ch:conc` bleiben.
+
+**Stand.** Pruefsuite ohne Befund in chapter_4.tex. Der Altbefund zum
+ausgeschriebenen Batteriespeicher in chapter_5.tex Zeile 91 besteht fort. Von
+den zehn Meldungen zu ueberlangen Zeilen stammt keine mehr aus Kapitel 4, sieben
+stehen im Literaturverzeichnis und zwei im Anhang zum Weber-Ansatz.
+
+**Fremde Aenderung.** Beim Bauen lagen in chapters/chapter_3.tex zwei
+ungesicherte Saetze des Verfassers zum Aufwand der zweiten Iteration. Die Datei
+ist nicht angefasst.
 
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 

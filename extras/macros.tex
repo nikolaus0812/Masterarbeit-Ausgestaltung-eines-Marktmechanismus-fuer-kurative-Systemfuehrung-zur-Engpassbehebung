@@ -23,4 +23,13 @@
 % Verfassers (Einheiten als Symbol statt ausgeschrieben). Enger Malpunkt wie
 % in den Abbildungen. Im Fliesstext als \EurMWh{} schreiben, sonst
 % verschluckt TeX das folgende Leerzeichen.
-\newcommand{\EurMWh}{\si[inter-unit-product=\ensuremath{\mathord{\cdot}}]{\euro/(MW.h)}}
+% BERICHTIGT am 18.09.2026. Die Fassung vom 17.09.2026 lautete
+%   \newcommand{\EurMWh}{\si[inter-unit-product=\ensuremath{\mathord{\cdot}}]{\euro/(MW.h)}}
+% und verlor den Malpunkt, weil \sisetup{mode=math,detect-all} in
+% extras/header.tex Zeile 118 siunitx in den Mathematikmodus zwingt und
+% \textperiodcentered dort unzulaessig ist. Das Makro setzte deshalb im
+% Fliesstext Euro je Megawattstunde, also die Form, die CLAUDE.md
+% Abschnitt 8 ausdruecklich abgrenzt, und erzeugte je Verwendung drei
+% Warnungen im Log. Betroffen waren chapter_2.tex, chapter_3.tex,
+% chapter_4.tex und attachment_dispatch.tex.
+\newcommand{\EurMWh}{\si[inter-unit-product=\text{\textperiodcentered}]{\euro/(MW.h)}}

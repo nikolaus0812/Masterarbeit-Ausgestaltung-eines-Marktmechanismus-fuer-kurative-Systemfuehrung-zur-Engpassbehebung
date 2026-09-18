@@ -150,12 +150,17 @@ Die Preise des physischen Handels am \acs{IDC} folgen aus dem \acs{ID1} und dem 
     p^{\mathrm{IDC,aus}}_t = p^{\mathrm{ID1}}_t \left( 1 + \frac{a}{2} \right), \qquad p^{\mathrm{IDC,ein}}_t = p^{\mathrm{ID1}}_t \left( 1 - \frac{a}{2} \right)
 \end{equation}
 
-Ladezustandsbilanz, Grenzen des Ladezustands und Randbedingung zu Tagesbeginn und Tagesende:
+% I-33 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der frei gewaehlte Anfangszustand steht in 3.2.2 als Alternative und fehlte hier. Alte Fassung:
+%Ladezustandsbilanz, Grenzen des Ladezustands und Randbedingung zu Tagesbeginn und Tagesende:
+Ladezustandsbilanz, Grenzen des Ladezustands und Randbedingung zu Tagesbeginn und Tagesende, entweder auf den vorgegebenen Anfangszustand oder auf einen frei gewählten:
 \begin{align}
     S_t &= S_{t-1} + \Delta t \left[ \eta^{\mathrm{ein}} \Big( P^{\mathrm{DA,ein}}_t + P^{\mathrm{IDC,ein}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{neg}} + P^{\mathrm{aus}}_{t,\mathrm{pos}} \Big) \right. \nonumber\\
     &\qquad\qquad \left. - \; \frac{1}{\eta^{\mathrm{aus}}} \Big( P^{\mathrm{DA,aus}}_t + P^{\mathrm{IDC,aus}}_t + P^{\mathrm{aFRR,E}}_{t,\mathrm{pos}} + P^{\mathrm{aus}}_{t,\mathrm{neg}} \Big) \right] && \forall\, t \in \mathcal{T} \label{eq:anh:modell:bilanz}\\
     S^{\min} &\le S_t \le S^{\max} && \forall\, t \in \mathcal{T} \label{eq:anh:modell:grenzen}\\
-    S_0 &= S_{96} = S^{0} && \label{eq:anh:modell:rand}
+% I-33 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Alternative des frei gewaehlten Anfangszustands steht jetzt als zweite Gleichung daneben, wie im Code (optimizer.py, soc_start_frei). Alte Fassung:
+%    S_0 &= S_{96} = S^{0} && \label{eq:anh:modell:rand}
+    S_0 &= S_{96} = S^{0} && \label{eq:anh:modell:rand}\\
+    S_0 &= S_{96} && \label{eq:anh:modell:rand_frei}
 \end{align}
 
 Leistungsschranke je Richtung, alle Märkte teilen sich die Anschlussleistung:

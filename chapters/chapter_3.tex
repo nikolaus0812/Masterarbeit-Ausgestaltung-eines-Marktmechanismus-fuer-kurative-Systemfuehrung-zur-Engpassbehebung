@@ -23,7 +23,7 @@ Der folgende Katalog überführt die Befunde in Bedingungen, die sich an einem M
     Die zugesagte Reaktionszeit muss die Anlage deshalb bei jedem Abruf gleichbleibend erbringen, denn der \ac{ÜNB} plant die Vorauslastung im Vertrauen auf sie.
     \item[A2 -- Verbindlichkeit] Die Zusage muss binden und damit bei Nichterfüllung wirksame Sanktionen enthalten.
     Die Sanktion ist nötig, denn eine Nichterfüllung liegt bereits bei einer verspäteten Leistungsänderung vor.
-    Aus einer verspäteten Leistungsänderung können Schäden am Betriebsmittel entstehen, die die Vergütung der Vorhaltung um ein Vielfaches übersteigen.
+    Aus einer verspäteten Leistungsänderung können Schäden am Betriebsmittel entstehen, die die Vergütung der Vorhaltung übersteigen.
     Die Sanktion darf deshalb nicht auf die entgangene Vergütung beschränkt bleiben.
     Eine Bemessung nach dem Grad der Abweichung scheidet aus, denn eine Leistungsänderung nach dem Ende des Überlastintervalls hat nicht einen verminderten, sondern gar keinen Wert.
     \item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, denn dieselbe Leistungsänderung entlastet ein Betriebsmittel je nach Netzknoten unterschiedlich stark.
@@ -165,7 +165,7 @@ Die Kopplung des Ladezustands bindet auch die Stunden vor einer Zeitscheibe, wei
 Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zum regelzoneninternen Handel fünf Minuten vor Lieferbeginn.
 Die Optimierung in einem Lauf mit vollständiger Preiskenntnis ist gewählt, weil eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
 Der Abstand zum Betrieb eines Akteurs ist dabei bekannt und begrenzt, denn eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses \cite{hornek_value_2025}.
-Der Erlös des Modells ist damit eine obere Schranke der übrigen Vermarktung, sodass der kurative Reservierungspreis eher zu hoch als zu niedrig ausfällt.
+Der Erlös des Modells ist damit eine obere Schranke der übrigen Vermarktung.
 
 Gelöst wird je Liefertag ein eigenes Problem, sodass kein Ladezustand in den Folgetag übergeht und die Tage untereinander vergleichbar bleiben.
 Zielfunktion und Nebenbedingungen sind linear, sodass das Problem im Basisfall ein lineares Programm ist und die kurative Reservierung jeden Wert zwischen null und der Anschlussleistung annehmen darf.
@@ -240,7 +240,7 @@ Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, inde
 Die Preisreihe des \ac{DA} ist der Auktionspreis der Gebotszone Deutschland und Luxemburg, bezogen aus den Energy-Charts des Fraunhofer ISE \cite{energy_charts_strompreise_2026}.
 Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken.
 So bildet das Modell nach, dass der Betreiber am \ac{DA} bietet, bevor der Zuschlag der kurativen Reservierung feststeht, und die Reservierung den Handel dort nicht mitfinanziert.
-Ein Geschäftspaar am \ac{DA} kommt deshalb nur zustande, wenn die Preisspanne der Arbitrage die Degradationskosten übersteigt.
+Ein Geschäftspaar am \ac{DA} kommt deshalb nur zustande, wenn die Preisspanne der Arbitrage die Degradationskosten in der Summe des Tages übersteigt.
 Der Erlös am \ac{DA} ist die über den Tag summierte Differenz aus Verkauf und Kauf, jeweils zum Auktionspreis der Viertelstunde.
 
 \begin{equation}
@@ -336,7 +336,7 @@ Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüf
 Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt aufruft und aus jedem Lauf die reservierte Leistung abliest.
 Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung.
 Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt, also 0,01\,\si{MW} von 100\,\si{MW}.
-Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz einhält, und sie liegt mit dem Hundertfachen dieser Toleranz sicher außerhalb des numerischen Rauschens.
+Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz von $10^{-6}$ einhält, und sie liegt mit 0,01\,\si{MW} über dem numerischen Rauschen.
 Gesucht ist je Stunde und Richtung der kleinste vorgegebene Reservierungspreis, bei dem die Stunde voll reserviert ist.
 Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und Anhang~\ref{anh:ablauf} mit allen Schritten darstellt.
 Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
@@ -366,8 +366,10 @@ Die erste Iteration gibt in jedem Lauf allen Stunden denselben Reservierungsprei
 Die obere Grenze der ersten Iteration ist ein Deckel von 800\,\EurMWh{}.
 Der Deckel verdoppelt sich, bis alle Stunden voll reserviert sind, höchstens bis 51.200\,\EurMWh{}.
 Bleibt eine Stunde auch beim höchsten Deckel nicht voll reserviert, gibt es für sie keinen Preis, denn dann verhindert eine Restriktion des Modells die Reservierung und nicht der Preis.
+Das tritt allein an den beiden Tagen der Zeitumstellung ein, an denen eine Stunde gesperrt ist.
+Nur dort steigt der Deckel bis 51.200\,\EurMWh{}, während er an allen übrigen Tagen bei 800\,\EurMWh{} bleibt.
 Je Stunde halbiert die Bisektion dann das Intervall von null bis zum Deckel.
-Bis zu einer Breite von 0,05\,\EurMWh{} sind 14 Halbierungen nötig.
+Bei einem Deckel von 800\,\EurMWh{} sind bis zu einer Breite von 0,05\,\EurMWh{} 14 Halbierungen nötig.
 Würde jedes der 48 Paare aus Stunde und Richtung für sich halbiert, wären je Tag 48 mal 14, also 672 Läufe nötig.
 Alle Paare mit derselben Intervallmitte teilen sich jedoch einen Lauf, weil das Tagesmodell alle Stunden bei einem einheitlichen vorgegebenen Reservierungspreis zugleich löst.
 Darum genügen in den ausgewerteten Tagen 84 bis 167 Läufe je Tag, im Mittel rund 130.
@@ -502,17 +504,17 @@ Marktübergreifend zeigt der Vergleich damit keine Unterschätzung der Erlösmö
 
 Die zweite Prüfung gilt der Funktionsweise, also der Frage, ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
 Dafür eignet sich ein Liefertag bei einem festen Reservierungspreis, weil sich dort Fahrplan, Ladezustand und die verdrängten Handelsaktionen unmittelbar ablesen lassen.
-Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem Reservierungspreis von 5\,\EurMWh{} in beiden Richtungen.
+Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem vorgegebenen Reservierungspreis von 5\,\EurMWh{} in beiden Richtungen.
 Die Reservierung belegt die Stunden, in denen die übrigen Märkte wenig bieten, in positiver Richtung etwa die Nachtstunden bis vier Uhr und den späten Abend, während die Stunden mit hohem Leistungspreis bei der \ac{aFRR} bleiben und die Vormittags- und Abendstunden dem \ac{DA} und dem \ac{IDC}.
 In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherraum für einen Abruf von einer Megawattstunde je Megawatt frei, und Anfang und Ende des Tages liegen bei 125 Megawattstunden.
 Der gezeigte Fahrplan enthält die Mindestgröße von 25\,\si{MW} je Zeitscheibe und Richtung, die das Optimierungsmodell gemischt-ganzzahlig macht.
-Die Optimierung reserviert damit nur dort, wo der vorgegebene Reservierungspreis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was das Verfahren für die Suche nach dem kleinsten vorgegebenen Reservierungspreis bestätigt.
+Die Optimierung reserviert damit nur dort, wo der vorgegebene Reservierungspreis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was die Grundlage der Suche nach dem kleinsten vorgegebenen Reservierungspreis bestätigt.
 Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
 Anhang~\ref{anh:dispatch_ohne} zeigt diesen Fahrplan ohne die Mindestgröße.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/dispatch_festpreis_2025-02-11_p5.pdf}
-    \caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungspreis von 5\,\EurMWh{} und der Mindestgröße von 25\,\si{MW}, positive Richtung oben, negative Richtung unten.}
+    \caption{Fahrplan und Ladezustand am 11.02.2025 bei einem vorgegebenen Reservierungspreis von 5\,\EurMWh{} und der Mindestgröße von 25\,\si{MW}, positive Richtung oben, negative Richtung unten.}
     \label{fig:dispatch_festpreis}
 \end{figure}

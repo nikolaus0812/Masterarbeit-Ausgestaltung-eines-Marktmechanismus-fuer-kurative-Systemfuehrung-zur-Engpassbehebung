@@ -23,7 +23,9 @@ In der Bisektion unterscheiden sich die Iterationen allein darin, welche Stunden
 %In der ersten Iteration lautet das Kriterium, ob die betrachtete Stunde voll reserviert ist, in der zweiten, ob alle Stunden des Tages voll reserviert bleiben.
 % NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Bisektion in beiden Iterationen gleich und gestrichelt umrandet. Alte Fassung:
 %Die Stundenschleife und die Durchgangsschleife treten allein in der zweiten Iteration auf, weil dort je Lauf nur der Preis einer Stunde wechselt.
-Allein die zweite Iteration prüft vor der Bisektion, ob die Stunde bei einem um die Toleranz gesenkten Preis voll reserviert bleibt, und wiederholt den Durchgang über alle Stunden, bis keine Stunde mehr sinkt.
+% I-29 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Toleranz stand hier fuer die Preisbreite und in 3.2.4 fuer den Fuellgrad. Alte Fassung:
+%Allein die zweite Iteration prüft vor der Bisektion, ob die Stunde bei einem um die Toleranz gesenkten Preis voll reserviert bleibt, und wiederholt den Durchgang über alle Stunden, bis keine Stunde mehr sinkt.
+Allein die zweite Iteration prüft vor der Bisektion, ob die Stunde bei einem um 0,05\,\EurMWh{} gesenkten Preis voll reserviert bleibt, und wiederholt den Durchgang über alle Stunden, bis keine Stunde mehr sinkt.
 In der ersten Iteration teilen sich Stunden mit derselben Intervallmitte einen Lauf, was die Abbildung nicht eigens zeigt.
 
 \begin{figure}[H]
