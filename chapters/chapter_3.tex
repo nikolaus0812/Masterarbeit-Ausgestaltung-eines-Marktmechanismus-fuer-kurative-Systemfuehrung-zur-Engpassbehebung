@@ -339,7 +339,10 @@ Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent de
 Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz von $10^{-6}$ einhält, und sie liegt mit 0,01\,\si{MW} über dem numerischen Rauschen.
 Gesucht ist je Stunde und Richtung der kleinste vorgegebene Reservierungspreis, bei dem die Stunde voll reserviert ist.
 Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und Anhang~\ref{anh:ablauf} mit allen Schritten darstellt.
-Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
+% VERSCHOBEN 18.09.2026, Kommentar des Verfassers: Der Satz stand hier auf
+% Seite 42, waehrend die Bisektion erst nach den beiden Abbildungen auf Seite 43
+% erklaert wird. Er eroeffnet jetzt den Absatz zur Bisektion.
+%Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
 
 \begin{figure}[H]
     \centering
@@ -355,7 +358,15 @@ Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert die
     \label{fig:reservierungspreis_ablauf}
 \end{figure}
 
-Die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
+% HIERHER VERSCHOBEN 18.09.2026, Kommentar des Verfassers. Der Satz traegt
+% jetzt die These des Absatzes.
+Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
+% NEU 18.09.2026, Kommentar des Verfassers: einleiten, wie die Bisektion den
+% Preis findet. Bis dahin war nicht gesagt, was die beiden Grenzen bedeuten und
+% warum der gesuchte Preis zwischen ihnen liegt. Alte Fassung des Absatzanfangs:
+%Die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
+Die untere Grenze des Suchintervalls reicht für die volle Reservierung nicht aus, während die obere Grenze dafür ausreicht.
+Der gesuchte Preis liegt damit zwischen beiden Grenzen, und die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
 Reicht der Preis in der Mitte für die volle Reservierung, wird die Mitte zur oberen Grenze, sonst zur unteren.
 Der Preis muss in der ersten Iteration die betrachtete Stunde voll reservieren, in der zweiten alle Stunden des Tages.
 Die Bisektion endet, sobald das Intervall nicht breiter als 0,05\,\EurMWh{} ist.

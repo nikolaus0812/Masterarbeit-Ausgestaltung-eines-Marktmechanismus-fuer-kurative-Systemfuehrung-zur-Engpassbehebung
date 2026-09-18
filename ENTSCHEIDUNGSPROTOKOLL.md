@@ -1416,6 +1416,65 @@ die Einschraenkungen fuer Kapitel 5, naemlich das koordinatenweise Minimum, die
 Reihenfolge des Abstiegs und die Richtung des Fehlers aus der vollstaendigen
 Preiskenntnis.
 
+### 18.09.2026, Abbildungen, Ablageregel und Abgleich beider Ordner
+
+**Ablageregel, vom Verfasser vorgegeben.** Jede Abbildung der Schriftfassung
+entsteht zuerst unter `analysen/12_schrift/kapitel_N/` im Modellrepository und
+wird von dort nach `figures/chapter_N/` kopiert. Das Original liegt im
+Modellrepository, die Schriftfassung fuehrt allein die Kopie. Kein Skript
+schreibt unmittelbar in das Repository der Schriftfassung. Der Auftrag dazu
+liegt als `analysen/code/schrift/AUFTRAG_KAPITEL_4_ABBILDUNGEN.md` im
+Modellrepository und regelt zugleich die sechs vorlaeufigen Abbildungen fuer
+Kapitel 4.
+
+**Abgleich beider Ordner.** Von den 17 im Text zitierten Abbildungen liegen alle
+17 in `figures/` und 15 auch unter `analysen/12_schrift/`. Verglichen wurde
+byteweise, dann ohne die Felder `CreationDate`, `ModDate` und `ID` des PDF und
+zuletzt ueber den extrahierten Text. Der Vergleich ueber die Bytes allein genuegt
+nicht, weil das Erzeugungsdatum im PDF steht und jede Neuerzeugung die Datei
+verschieden macht, ohne dass sich etwas zeigt.
+
+Ergebnis, naemlich vier Gruppen.
+
+1. **Nur Metadaten, nichts zu tun.** Neun Abbildungen unterscheiden sich allein
+   im Erzeugungsdatum, naemlich `engpassmanagement_nep`,
+   `redispatch_jahresbedarf_2020_2025`, `curative_process`, `markt_zeitschiene`,
+   `preventiv_vs_curative_redispatch`, `tatl_berechnung`, `weber_optionswert`,
+   `modellkette` und `reservierungspreis_bisektion`.
+2. **Inhaltlich veraltet, nachgezogen.** Vier zitierte Abbildungen waren in der
+   Schriftfassung aelter als ihr Original, naemlich `schleifenebenen.pdf` vom
+   12.09. gegen das Original vom 16.09., `validierung_cross.pdf` vom 14.09.
+   gegen den 17.09., `validierung_einzelmarkt.pdf` vom 14.09. gegen den 17.09.
+   und `erloesvergleich_vollverdraengung_2025.pdf` vom 11.09. gegen den 16.09.
+   Alle vier sind aus dem Original nachgezogen.
+3. **Altbestand ohne Original und ohne Verweis, geloescht.** In
+   `figures/chapter_4/` lagen `fuellgrad_iterationen_2025.pdf` und
+   `maximalpreis_iterationen_2025.pdf`. Beide sind im Modellrepository am
+   17.09.2026 geloescht, in der Schriftfassung aber liegen geblieben. Geprueft
+   ist, dass chapter_4.tex sie nicht referenziert. Beide sind ueber die
+   Versionsverwaltung wiederherstellbar.
+4. **Ohne Verweis, zur Entscheidung des Verfassers.** In beiden Ordnern liegt
+   `reservierungspreis_ablauf_a4.pdf`, weil Abschnitt 3.2.4 die kompakte und der
+   Anhang die grosse Fassung verwendet. In `figures/anhang/` liegt
+   `dispatch_preisgitter_2025-02-11.pdf` ohne Verweis, und vier weitere
+   Preisgitter fuer den 15.05., 26.08., 25.09. und 15.10.2025 liegen allein im
+   Modellrepository.
+
+**Geprueft vor dem Nachziehen.** Die Kennzahlen der neuen `validierung_cross`
+stimmen mit dem Text von Abschnitt 3.3.2 ueberein, naemlich 259,7 Tausend Euro je
+Megawatt und Jahr fuer den Revenue-Index, 348,2 fuer das Optimierungsmodell als
+tagesgewichtetes Mittel der Monatswerte, ein Faktor von 1,33 im Median bei einer
+Spanne von 1,06 bis 1,54, ein Korrelationskoeffizient von 0,97 und zwoelf von
+zwoelf Monaten ueber dem Revenue-Index. Das Nachziehen erzeugt damit keinen
+Widerspruch zwischen Text und Bild. Eigenstaendige Ableitung: Der im Text
+genannte Wert von 348,3 ist das tagesgewichtete und nicht das arithmetische
+Mittel der zwoelf Monatswerte, das bei 347,8 liegt. Welche Mittelung gilt, ist
+in Abschnitt 3.3.2 nicht gesagt und sollte einmal benannt werden.
+
+**Stand.** Build ohne Fehler, 97 Seiten, keine fehlende Abbildung. Nach dem
+Nachziehen unterscheiden sich allein die neun Abbildungen der Gruppe 1 und das
+nicht zitierte Preisgitter, jeweils im Erzeugungsdatum.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -8273,6 +8332,43 @@ der Verfasser.
 
 **Geprueft.** Der Text des gebauten PDF ist vor und nach dem Entfernen
 zeichengleich, geprueft ueber pdftotext ueber alle 88 Seiten.
+
+### 18.09.2026, 3.2.4, Bisektion eingeleitet und Satz verschoben
+
+**Kommentar des Verfassers.** Der Satz zur Bestimmung der Intervallgrenzen stand
+am Ende des Absatzes auf Seite 42, waehrend die Bisektion erst im Absatz nach den
+beiden Abbildungen auf Seite 43 erklaert wird. Der Satz gehoert in den
+Folgeabsatz, und der Absatz soll einleiten, wie damit ein Preis gefunden wird.
+
+**Umgesetzt.** Der Satz eroeffnet jetzt den Absatz zur Bisektion und traegt dort
+seine These. Der Absatz auf Seite 42 endet mit dem Verweis auf die beiden
+Iterationen, auf Abbildung 3.3 und auf Anhang D.
+
+**Zwei neue Saetze**, weil bis dahin nicht gesagt war, was die beiden Grenzen
+bedeuten und warum der gesuchte Preis zwischen ihnen liegt. Ohne diese Angabe
+begann der Absatz unvermittelt mit der Pruefung der Intervallmitte.
+
+    Die untere Grenze des Suchintervalls reicht fuer die volle Reservierung
+    nicht aus, waehrend die obere Grenze dafuer ausreicht.
+    Der gesuchte Preis liegt damit zwischen beiden Grenzen, und die Bisektion
+    prueft die Mitte des Intervalls mit einem Lauf.
+
+Der zweite Satz nimmt den frueheren Satz *Die Bisektion prueft die Mitte des
+Intervalls mit einem Lauf* auf, sodass der Absatz bei acht Saetzen bleibt. Beide
+alten Fassungen stehen als Kommentar in der Datei.
+
+**Geprueft am gebauten PDF.** Der Verweis auf Abbildung 3.2 und die Abbildung
+selbst stehen jetzt beide auf Seite 43, womit Stilregel 16 fuer diese Abbildung
+erfuellt ist. Pruefsuite ohne Befund, Build ohne Fehler.
+
+**Offener Punkt, Abbildung 3.3.** Der Verweis auf Abbildung 3.3 steht auf Seite
+42, die Abbildung selbst auf Seite 44. Die Ursache ist die Reihenfolge im
+Quelltext, naemlich die Bisektionsabbildung mit der Platzierung H vor der
+Ablaufabbildung mit der Platzierung t, obwohl der Text die Ablaufabbildung
+zuerst nennt. Eine Umstellung taeuscht beide Abbildungen um, also wird die
+Ablaufabbildung zu 3.2 und die Bisektionsabbildung zu 3.3. Ob umgestellt wird,
+entscheidet der Verfasser, denn die Umstellung kann den gerade behobenen Abstand
+bei der Bisektionsabbildung wieder aufreissen.
 
 ## chapter_4.tex
 
