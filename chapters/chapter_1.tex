@@ -349,12 +349,19 @@ Ziel der vorliegenden Arbeit ist es, einen kurativen Marktmechanismus auszuarbei
 %Der \ac{ÜNB} gibt die Randbedingungen vor, die er für den Einsatz braucht, und beschafft die Vorhaltung dann marktlich.
 %Der kurative Marktmechanismus ist das Verfahren dieser Beschaffung, und die kurative Reservierung ist das Produkt, das der \ac{ÜNB} dabei ausschreibt, bezuschlagt und vergütet.
 % NEU GEFASST am 18.09.2026 nach dem Vorschlag von Fable, Fassung A, vom Verfasser gewaehlt. Grund: Demonstrativa ueber die Satzgrenze und ein Satz mit zwei Hauptsaetzen. Alte Fassung:
-Ein kurativer Akteur muss vor allem bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern.
+% "VOR ALLEM" am 18.09.2026, Kommentar des Verfassers. Alte Fassung:
+%Ein kurativer Akteur muss vor allem bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern.
+% DEFINITION EINGEFUEGT am 18.09.2026, Vorgabe des Verfassers: die Begriffe als Nebensatz statt als eigener Absatz. Alte Fassung:
+%Ein kurativer Akteur muss bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern.
+Ein kurativer Akteur muss bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern, also in der Zeit zwischen dem Abrufsignal und der vollständig umgesetzten Leistungsänderung.
 Die Bereitschaft zur Leistungsänderung heißt kurative Vorhaltung und schließt bei Speichern den Ladezustand ein.
 Der \ac{ÜNB} gibt die Randbedingungen vor, die er für den Einsatz braucht, und beschafft die kurative Vorhaltung in einem marktlichen Verfahren, dem kurativen Marktmechanismus.
 Die kurative Reservierung ist das Produkt, das der \ac{ÜNB} im kurativen Marktmechanismus ausschreibt, bezuschlagt und vergütet.
 Auszugestalten sind neben dem Produkt die Art der Ausschreibung, die Bezuschlagung, die Zeitschiene und die Vergütung.
-Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, auf den vor allem die Erlöse der übrigen Energiemärkte wirken.
+% DEFINITION EINGEFUEGT am 18.09.2026, Vorgabe des Verfassers: Reservierungspreis, Bindungsdauer und Opportunitaetskosten stehen jetzt hier statt in einem eigenen Absatz. Alte Fassung:
+%Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, auf den vor allem die Erlöse der übrigen Energiemärkte wirken.
+Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, also der kleinste Preis, zu dem ein Betreiber seine Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
+Über die Bindungsdauer, also den Zeitraum der Zusage, gibt der Betreiber Erlöse an den übrigen Energiemärkten auf, sodass der kurative Reservierungspreis diese entgangenen Erlöse als Opportunitätskosten abbilden muss.
 % NEU GEFASST am 18.09.2026, dritter Durchgang, Vorgabe des Verfassers: die Vorhaltung folgt aus der Reaktionszeit, und der Vergleich mit dem Redispatch kommt hinzu. Alte Fassung:
 %An diesem Preis entscheidet sich, ob die kurative Systemführung das Engpassmanagement insgesamt kosteneffizienter macht.
 Zu prüfen ist, ob die marktlich beschaffte Vorhaltung mit dem präventiven Redispatch mithält, und zwar nicht allein in der Höhe des Preises, sondern auch in seiner zeitlichen Zusammensetzung und seiner künftigen Entwicklung.
@@ -384,18 +391,40 @@ Zu prüfen ist, ob die marktlich beschaffte Vorhaltung mit dem präventiven Redi
 %Das Engpassmanagement vergütet nach §\,13a \ac{EnWG} allein den durchgeführten Eingriff \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
 %Ob die Vergütung der Bereitstellung oder die Vergütung des Eingriffs den erforderlichen Anreiz für die kurative Vorhaltung setzt, ist damit zu klären.
 % NEU GEFASST am 18.09.2026, Kommentar des Verfassers: der Eingriff ist anordenbar, die Vorhaltung nicht, und beide Verguetungslogiken sind zu verbinden. Alte Fassung:
-Für die kurative Vorhaltung besteht keine Vergütung, obwohl der Eingriff selbst geregelt ist.
-Den Eingriff kann der \ac{ÜNB} nach §\,13a \ac{EnWG} anordnen, die Vorhaltung dagegen nicht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Der Betreiber entscheidet im Selbst\-dispatch-Modell über den Einsatz seiner Anlage selbst.
-Wer Leistung für den Fehlerfall freihält, schränkt seinen Fahrplan vorab ein und tut das nur gegen eine Vergütung.
-Für Systemdienstleistungen bestehen dafür zwei Logiken.
-Die Regelleistungsmärkte vergüten die vorgehaltene Leistung selbst \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}, das Engpassmanagement allein den durchgeführten Eingriff \cite{bundesnetzagentur_festlegung_2024}.
-Die Regelleistung ist damit die nähere Logik, dient aber der Frequenzhaltung und nicht der Engpassbehebung.
-Ein funktionierender kurativer Marktmechanismus muss beide Logiken verbinden, also die Vergütung der Vorhaltung mit der Vergütung des Abrufs.
-
-Zur Beantwortung versetzt sich ein Optimierungsmodell in die Position des Speicherbetreibers: Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber auf eine kurative Reservierung reagiert.
+% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: die Vorhaltung von
+% Leistung im Engpassmanagement gegen den klar geregelten Eingriff. Alte
+% Fassung:
+%Für die kurative Vorhaltung besteht keine Vergütung, obwohl der Eingriff selbst geregelt ist.
+%Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, der Eingriff selbst ist dagegen im \ac{EnWG} klar geregelt.
+%Den Eingriff kann der \ac{ÜNB} nach §\,13a \ac{EnWG} anordnen, die Vorhaltung dagegen nicht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+%Der Betreiber entscheidet im Selbst\-dispatch-Modell über den Einsatz seiner Anlage selbst.
+% VERBUNDEN am 18.09.2026, Kommentar des Verfassers: drei Saetze werden zwei. Alte Fassung:
+% PRAEZISIERT am 18.09.2026, Kommentar des Verfassers: anordenbar ist die
+% Anpassung der Leistung, nicht ein Eingriff im Allgemeinen. Alte Fassung:
+%Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, während der \ac{ÜNB} den Eingriff selbst nach §\,13a \ac{EnWG} anordnen kann \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, während der \ac{ÜNB} eine Anpassung der Einspeisung oder des Bezugs nach §\,13a \ac{EnWG} anordnen kann \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Die Vorhaltung kann er dagegen nicht anordnen, denn der Betreiber entscheidet im Selbst\-dispatch-Modell über den Einsatz seiner Anlage selbst.
+%Wer Leistung für den Fehlerfall freihält, schränkt seinen Fahrplan vorab ein und tut das nur gegen eine Vergütung.
+%Für Systemdienstleistungen bestehen dafür zwei Logiken.
+%Die Regelleistungsmärkte vergüten die vorgehaltene Leistung selbst \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}, das Engpassmanagement allein den durchgeführten Eingriff \cite{bundesnetzagentur_festlegung_2024}.
+%Die Regelleistung ist damit die nähere Logik, dient aber der Frequenzhaltung und nicht der Engpassbehebung.
+%Ein funktionierender kurativer Marktmechanismus muss beide Logiken verbinden, also die Vergütung der Vorhaltung mit der Vergütung des Abrufs.
+% NEU GEFASST am 18.09.2026, Vorgabe des Verfassers: Opportunitaeten, Gebot als Signal, Regelleistung, Abruf. Alte Fassung:
+Hält der Betreiber ein Leistungsband vorab frei, verliert er Vermarktungsmöglichkeiten an den übrigen Märkten.
+Ein Produkt, das diese Leistung reserviert, lässt ihn im Gebot nennen, was ihn die entgangenen Erlöse kosten, sodass er sich durch die Vorhaltung nicht schlechter stellt.
+Genau das leisten unter den Systemdienstleistungen die Regelleistungsmärkte, die die vorgehaltene Leistung selbst vergüten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+Sie dienen allerdings der Frequenzhaltung und nicht der Engpassbehebung.
+Für den Abruf greift dagegen die Vergütungslogik des Engpassmanagements, denn dort liefert die Anlage Energie und kommt damit einer Anweisung im Redispatch nahe \cite{bundesnetzagentur_festlegung_2024}.
+Ein kurativer Marktmechanismus verbindet damit beide Logiken.
+% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: "Zur Beantwortung"
+% verwies auf eine Frage, die mit der Neufassung des vorigen Absatzes
+% entfallen ist. Der Satz nennt die Frage jetzt selbst. Alte Fassung:
+%Zur Beantwortung versetzt sich ein Optimierungsmodell in die Position des Speicherbetreibers: Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber auf eine kurative Reservierung reagiert.
+Was die Vorhaltung den Betreiber kostet, beantwortet ein Optimierungsmodell aus seiner Position.
+Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber auf eine kurative Reservierung reagiert.
 % HIERHER VERSCHOBEN 16.09.2026, B2.4.
-Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
+% GESTRICHEN am 18.09.2026, Kommentar des Verfassers. Die Aussage steht danach nirgends mehr, sie trug auch die Streichung in 3.2 (S-11). Gestrichener Satz:
+%Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt, während eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
 % DURCHSICHT 16.09.2026, B1, Begruendung angebunden. Alte Fassung:
@@ -409,31 +438,42 @@ Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Pr
 % DURCHSICHT 16.09.2026, B1, Anknuepfung. Alte Fassung:
 %Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt.
 % R-10 am 18.09.2026, Kontrolle durch Fable: der Absatz traegt zwei Thesen, hier beginnt die zweite.
-
-Den zeitlichen Rahmen bildet das Jahr 2030: Es dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt.
-Bis 2030 soll der Anteil erneuerbarer Energien mindestens 80 Prozent erreichen, und der Speicherbestand wächst in allen Szenarien des \ac{NEP}.
+% NEU EINGEORDNET am 18.09.2026, Kommentar des Verfassers: bewertet wird fuer eine Einfuehrung ab 2030. Alte Fassung:
+%Den zeitlichen Rahmen bildet das Jahr 2030: Es dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt.
+%Bewertet und eingeordnet wird der kurative Marktmechanismus für eine Einführung ab dem Jahr 2030.
+%Das Jahr 2030 geht dabei nicht als Eingangsgröße in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung.
+%Bis 2030 soll der Anteil erneuerbarer Energien mindestens 80 Prozent erreichen, und der Speicherbestand wächst in allen Szenarien des \ac{NEP}.
 % DURCHSICHT 16.09.2026, B1, Konsequenz. Alte Fassung:
 %Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach, sodass im Jahr 2030 ein Engpassmanagementbedarf fortbesteht und ein wachsender Speicherbestand für die kurative Systemführung zur Verfügung steht \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+%Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach, sodass im Jahr 2030 ein Engpassmanagementbedarf fortbesteht und ein wachsender Speicherbestand für die kurative Systemführung zur Verfügung steht \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+% RAHMEN AUF 2032 am 18.09.2026, Kommentar des Verfassers: die Aussagen zu 2030 waren schwer zu tragen, der NEP beschreibt das Trendjahr 2032. Alte Fassung:
+Bewertet und eingeordnet wird der kurative Marktmechanismus für eine Einführung im Trendjahr 2032 des \ac{NEP}.
+% MIT ZAHLEN BELEGT am 18.09.2026, Vorgabe des Verfassers: der NEP beschreibt in Kapitel 2.8 einen eigenen Ausbauzustand fuer das Trendszenario 2032. Alte Fassung:
+%Für dieses Jahr weist der \ac{NEP} nach Abbildung~\ref{fig:engpassmanagement_nep} einen Engpassmanagementbedarf von 14,8\,\si{TWh} aus, und der Speicherbestand wächst in allen Szenarien \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+Für dieses Jahr rechnet der \ac{NEP} mit 260\,\si{GW} Photovoltaik und 115\,\si{GW} Windenergie an Land, sodass etwa 90\,\% der Stromnachfrage aus erneuerbaren Energien stammen, und weist 41{,}1\,\si{GW} Großbatteriespeicher aus \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
+Der Engpassmanagementbedarf liegt dabei nach Abbildung~\ref{fig:engpassmanagement_nep} bei 14{,}8\,\si{TWh}.
+Das Trendjahr geht nicht als Eingangsgröße in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung.
 
 % I-01 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Definition des kurativen Reservierungspreises folgt der Entscheidung K1, also der kleinste Preis mit voller Reservierung statt Indifferenz ueber den ganzen Erloes. Alte Fassung:
 %Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Reservierung mindestens verlangen muss, damit er mit ihr genauso viel verdient wie ohne sie.
-Bestimmt wird daraus der kurative Reservierungspreis, also der kleinste Preis, bei dem ein Anlagenbetreiber die Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
-Die Reservierung bindet die Anlage, denn sie verpflichtet den Betreiber, Leistung und Ladezustand über die Bindungsdauer vorzuhalten, also über den Zeitraum, für den die Zusage gilt.
+% ABSATZ AUFGELOEST am 18.09.2026, Kommentar des Verfassers: der Absatz nahm zu viel vorweg und stand aus dem Zusammenhang. Die Definitionen stehen jetzt als Nebensatz im Zielabsatz, die Abgrenzung zum Gebot in 3.2. Gestrichene Saetze:
+%Bestimmt wird daraus der kurative Reservierungspreis, also der kleinste Preis, bei dem ein Anlagenbetreiber die Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
+%Die Reservierung bindet die Anlage, denn sie verpflichtet den Betreiber, Leistung und Ladezustand über die Bindungsdauer vorzuhalten, also über den Zeitraum, für den die Zusage gilt.
 % I-01 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Opportunitaetskosten beziehen sich auf die zuletzt reservierte Leistung. Alte Fassung:
 %Der kurative Reservierungspreis misst damit die Opportunitätskosten der Bindung, also die Erlöse, die der Betreiber an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
-Der kurative Reservierungspreis misst damit die Opportunitätskosten der zuletzt reservierten Leistung, also die Erlöse, die der Betreiber für sie an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
+%Der kurative Reservierungspreis misst damit die Opportunitätskosten der zuletzt reservierten Leistung, also die Erlöse, die der Betreiber für sie an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
 % VERSCHOBEN 16.09.2026, B2.4: Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
-Wie hoch der Preis ausfällt, folgt aus der Ausgestaltung des Produkts, nämlich aus der Bindungsdauer, der vorzuhaltenden Leistung und der geforderten Reaktionszeit, also der Zeit vom Abrufsignal bis zur vollständig umgesetzten Leistungsänderung.
+%Wie hoch der Preis ausfällt, folgt aus der Ausgestaltung des Produkts, nämlich aus der Bindungsdauer, der vorzuhaltenden Leistung und der geforderten Reaktionszeit, also der Zeit vom Abrufsignal bis zur vollständig umgesetzten Leistungsänderung.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten, die das Modell nicht abbildet, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
-Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten.
-Das Modell bildet Präqualifikation, Pönale und Anbieterzahl nicht ab, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
+%Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten.
+%Das Modell bildet Präqualifikation, Pönale und Anbieterzahl nicht ab, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
 % DURCHSICHT 16.09.2026, B1, Stilregel 5. Alte Fassung:
 %Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Reservierung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
 Für die Bestimmung des Preises sind drei Teilfragen zu klären, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Reservierung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
-
 Die drei Teilfragen geben den Aufbau vor.
+% ANKUENDIGUNG am 18.09.2026, Wortlaut des Verfassers, Ueberleitung in die Kapitelfolge:
+Die Arbeit ist deswegen wie folgt aufgebaut:
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt, und daraus folgt die Wahl der \ac{BESS} als kurativer Akteur.
 In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt.
@@ -445,6 +485,13 @@ Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit sei
 % BEGRIFF am 16.09.2026, Kommentar des Verfassers: ungebundener Fahrplan missverstaendlich, jetzt Referenzfahrplan und Referenzerloes. Alte Fassung:
 %Den Abschluss des Kapitels bildet die Prüfung des ungebundenen Erlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
 Den Abschluss des Kapitels bildet die Prüfung des Referenzerlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
-In Kapitel~\ref{ch:results} werden Fahrplan, Ladezustand und Erlöse unter der Reservierung dargestellt, die Produkt- und Anlagenparameter variiert und daraus der kurative Reservierungspreis bestimmt.
-In Kapitel~\ref{ch:discussion} wird der Preis in die bestehenden Vergütungslogiken eingeordnet, das Produkt gegen die Anforderungen geprüft und die Modellannahmen werden kritisch gewürdigt.
+% GENAUER GEFASST am 18.09.2026, Vorgabe des Verfassers, nach der Sortierung in KAPITEL_4_AUFBAU.md Abschnitt 4. Alte Fassung:
+%In Kapitel~\ref{ch:results} werden Fahrplan, Ladezustand und Erlöse unter der Reservierung dargestellt, die Produkt- und Anlagenparameter variiert und daraus der kurative Reservierungspreis bestimmt.
+In Kapitel~\ref{ch:results} wird das Verfahren über alle Tage des Jahres 2025 ausgewertet, nämlich nach Höhe und Streuung des kurativen Reservierungspreises, nach seinem Muster über Tag und Jahr und nach seinem Verhältnis zum Engpassmanagementbedarf.
+Die Zahlung bei durchgehender Reservierung wird gegen den Referenzerlös gehalten.
+Die Variation der Produkt- und Anlagenparameter zeigt, welcher Markt die Opportunität setzt.
+% NEU GEFASST am 18.09.2026, Vorgabe des Verfassers: Kapitel 5 diskutiert Mechanismus, Preis mit Sensitivitaeten und in Teilen die kurative Systemfuehrung im Engpassmanagement. Alte Fassung:
+%In Kapitel~\ref{ch:discussion} wird der Preis in die bestehenden Vergütungslogiken eingeordnet, das Produkt gegen die Anforderungen geprüft und die Modellannahmen werden kritisch gewürdigt.
+In Kapitel~\ref{ch:discussion} werden der kurative Marktmechanismus, der kurative Reservierungspreis mit seinen Sensitivitäten und in Teilen die kurative Systemführung im Engpassmanagement diskutiert.
+Die kurative Reservierung wird dazu gegen die Anforderungen geprüft, und die Annahmen des Modells werden gewürdigt.
 In Kapitel~\ref{ch:conc} werden die Ergebnisse entlang der drei Teilfragen zusammengefasst und weiterer Forschungsbedarf benannt.

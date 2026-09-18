@@ -2332,6 +2332,137 @@ eingeholt und in der Fassung A uebernommen. Fuer diesen Absatz war das
 Kontingent von Fable erschoepft (Fehler rate_limit), die beiden Fassungen
 stammen deshalb aus derselben Sitzung.
 
+### 18.09.2026, Kapitel 1, dritte Runde: Trendjahr 2032, Definitionsabsatz aufgeloest, Aufbau neu
+
+Betrifft allein Abschnitt 1.2. Grundlage sind acht Kommentare des Verfassers
+aus derselben Sitzung.
+
+**Anordenbarkeit nach dem EnWG.** Der Verfasser: "fuer vorhaltung von leistung
+im engpassmanagment, jedoch ist der eingriff nach enwg klar geregelt." Der
+Absatz stellt jetzt die fehlende Verguetung der Vorhaltung der anordenbaren
+Anpassung gegenueber. Anordenbar ist nach dem Wortlaut des § 13a EnWG die
+Anpassung der Einspeisung oder des Bezugs und nicht ein Eingriff im
+Allgemeinen; der Text sagt das seit dem zweiten Kommentar des Verfassers
+wortgetreu. Drei Saetze sind dabei zu zwei geworden.
+
+**Frage vor der Antwort.** Der Verfasser: "Zur Beantwortung versetzt sich ein
+Optimierungsmodell in die Position des Speicherbetreibers: zur beantwortung
+welcher frage?" Der Bezug war mit der Neufassung des vorigen Absatzes
+entfallen. Der Satz nennt die Frage jetzt selbst, naemlich was die Vorhaltung
+den Betreiber kostet.
+
+**Trendjahr 2032 statt Jahr 2030.** Der Verfasser: "ansonsten sind die
+aussagen schwer zu tragen". Gestrichen sind der Anteil erneuerbarer Energien
+von 80 Prozent bis 2030, der ohne Quelle stand, und der Satz zum Zielzustand
+des Netzausbaus. Der zeitliche Rahmen ist jetzt das Trendjahr 2032, das der
+NEP selbst beschreibt.
+
+**Eigene Recherche, Zahlen des Trendszenarios 2032.** Der zweite Entwurf des
+NEP 2037/2045, Version 2025, beschreibt das Trendszenario 2032 in Kapitel 2.8.
+Tabelle 12 weist 260 GW Photovoltaik, 115 GW Windenergie an Land und
+36,8 GW Windenergie auf See aus, der Text dazu nennt einen Anteil von etwa
+90 Prozent der Stromnachfrage aus erneuerbaren Energien. Tabelle 13 weist
+41,1 GW Grossbatteriespeicher und 30,0 GW Kleinbatteriespeicher aus. Der Text
+in 1.2 nennt die Photovoltaik, die Windenergie an Land, die 90 Prozent und die
+Grossbatteriespeicher, alles unter dem vorhandenen Eintrag
+`bundesnetzagentur_netzentwicklungsplan_2026`. Der Engpassmanagementbedarf von
+14,8 TWh steht unveraendert in einem eigenen Satz mit Verweis auf
+Abbildung 1.2.
+
+**Achtung, CLAUDE.md.** Abschnitt 7, Entscheidung 4 nennt das Jahr 2030 als
+qualitativen Rahmen. Der Verfasser hat den Rahmen an diesem Tag auf das
+Trendjahr 2032 umgestellt, CLAUDE.md ist von ihm nachzuziehen.
+
+**Definitionsabsatz aufgeloest.** Der Verfasser: "den absatz verstehe ich
+nicht, da er schon so viel vorweg nimmt. wir erklaeren doch bereits was die
+optimierung macht. die definition der begriffe wuerde ich lieber dann in den
+text oben noch in nebensaetzen einfuegen als nen ganzen absatz dem zu widmen,
+der irgendwie voellig aus dem kontext steht." Der Absatz mit sechs Saetzen ist
+entfallen. Die Begriffe stehen jetzt als Apposition im Zielabsatz, naemlich
+die Reaktionszeit als Zeit zwischen Abrufsignal und vollstaendig umgesetzter
+Leistungsaenderung, der kurative Reservierungspreis als kleinster Preis fuer
+die vollstaendige Reservierung ueber die Bindungsdauer und die Bindungsdauer
+als Zeitraum der Zusage. Ein neuer Satz traegt die Opportunitaetskosten, und
+zwar als entgangene Erloese an den uebrigen Energiemaerkten, womit Stilregel 13
+erfuellt ist. Der Zielabsatz hat damit neun statt acht Saetze, also einen mehr
+als Stilregel 1 vorsieht.
+
+**Eigenstaendige Ableitung, zwei Aussagen nicht uebernommen.** Die Abhaengigkeit
+des Preises von der Ausgestaltung des Produkts steht bereits im Satz zu den
+auszugestaltenden Groessen. Praequalifikation, Poenale und Anbieterzahl mit der
+Abgrenzung, dass der ermittelte Preis nur der opportunitaetskostenbasierte Teil
+eines Gebots ist, stehen wortgleich in 3.2 und sind nach Entscheidung 5 dort
+gefuehrt. In der Einleitung waren sie genau die Vorwegnahme, die der Verfasser
+beanstandet hat.
+
+**Teilfragen erhalten.** Der Satz mit den drei Teilfragen ist aus dem
+aufgeloesten Absatz uebernommen und bildet jetzt den Kopf des Aufbauabsatzes.
+Eigenstaendige Ableitung: ohne ihn haette der folgende Satz "Die drei
+Teilfragen geben den Aufbau vor." keinen Bezug mehr.
+
+**Ueberleitung in die Kapitelfolge.** Wortlaut des Verfassers: "Die Arbeit ist
+deswegen wie folgt aufgebaut:".
+
+**Ankuendigung von Kapitel 4.** Der Verfasser: "kapitel 4 kannst du ja jetzt
+genauer beschreiben". Die Ankuendigung folgt der Sortierung in
+KAPITEL_4_AUFBAU.md Abschnitt 4, naemlich Hoehe und Streuung, Muster ueber Tag
+und Jahr, Verhaeltnis zum Engpassmanagementbedarf, Zahlung bei durchgehender
+Reservierung gegen den Referenzerloes und die Frage, welcher Markt die
+Opportunitaet setzt. Offener Punkt: `chapter_4.tex` hat noch keine Abschnitte
+und wird von der parallelen Sitzung geschrieben. Verschiebt sich dort die
+Reihenfolge, ist der Satz nachzuziehen.
+
+**Ankuendigung von Kapitel 5.** Der Verfasser: "kapitel 5 wuerde ich gerne den
+marktmechanismus, den kurativen reservierungspreis und seine sensitivitaeten
+sowie teilweise kurative systemfuehrung im engpassmanagement diskutieren." So
+steht es im Text. Die Pruefung gegen den Anforderungskatalog und die Wuerdigung
+der Modellannahmen stehen in einem zweiten Satz, damit sie aus der alten
+Fassung nicht verloren gehen. Die Einordnung in die Verguetungslogiken ist in
+der Ankuendigung von Kapitel 5 nicht mehr genannt, weil sie zwei Saetze vorher
+als dritte Teilfrage steht.
+
+**Zurueckgenommen, nicht wieder aufnehmen.**
+"Bestimmt wird daraus der kurative Reservierungspreis, also der kleinste Preis,
+bei dem ein Anlagenbetreiber die Leistung ueber die Bindungsdauer vollstaendig
+reserviert, statt sie anderweitig zu vermarkten."
+"Die Reservierung bindet die Anlage, denn sie verpflichtet den Betreiber,
+Leistung und Ladezustand ueber die Bindungsdauer vorzuhalten, also ueber den
+Zeitraum, fuer den die Zusage gilt."
+"Der kurative Reservierungspreis misst damit die Opportunitaetskosten der
+zuletzt reservierten Leistung, also die Erloese, die der Betreiber fuer sie an
+den uebrigen Maerkten aufgibt, und haengt von Leistung, Energieinhalt und den
+Preisen dieser Maerkte ab."
+"Wie hoch der Preis ausfaellt, folgt aus der Ausgestaltung des Produkts,
+naemlich aus der Bindungsdauer, der vorzuhaltenden Leistung und der geforderten
+Reaktionszeit, also der Zeit vom Abrufsignal bis zur vollstaendig umgesetzten
+Leistungsaenderung."
+"Auf den Preis, der sich am Markt einstellt, wirken zusaetzlich die
+Praequalifikation, also die Eignungspruefung vor der Teilnahme, die Poenale bei
+Nichterfuellung und die Zahl der Anbieter am betroffenen Netzknoten."
+"Das Modell bildet Praequalifikation, Poenale und Anbieterzahl nicht ab, sodass
+der ermittelte Preis der opportunitaetskostenbasierte Teil eines Gebots ist und
+nicht das Gebot selbst."
+"Bis 2030 soll der Anteil erneuerbarer Energien mindestens 80 Prozent
+erreichen, und der Speicherbestand waechst in allen Szenarien des NEP."
+"Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach, sodass
+im Jahr 2030 ein Engpassmanagementbedarf fortbesteht und ein wachsender
+Speicherbestand fuer die kurative Systemfuehrung zur Verfuegung steht."
+"Wie viel Engpassmanagement die kurative Systemfuehrung einspart, ist nicht
+Gegenstand der Untersuchung, denn dafuer waere ein Netzmodell erforderlich,
+Gegenstand ist allein der Preis der Vorhaltung."
+
+**Offene Punkte aus dieser Runde.**
+1. Der gestrichene Satz zum Netzmodell war die Begruendung, mit der am selben
+   Tag die beiden Saetze zum Nutzen-Kosten-Vergleich in 3.2 entfallen sind
+   (Streichkandidat S-11 der Fable-Kontrolle). Die Abgrenzung, dass die
+   Einsparung im Engpassmanagement nicht Gegenstand ist, steht seither
+   nirgends. Vorschlag: 3.2.1 oder Kapitel 5.
+2. Der Absatz zu den Verguetungslogiken hat nach den Zusammenfuehrungen rund
+   vierzehn Saetze. Vorschlag fuer einen Umbruch: vor "Was die Vorhaltung den
+   Betreiber kostet".
+3. Der Zielabsatz hat neun Saetze.
+4. CLAUDE.md Abschnitt 7, Entscheidung 4 nennt weiterhin das Jahr 2030.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
