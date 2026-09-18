@@ -323,14 +323,6 @@ Die positive und die negative Reservierung betrachtet das Modell getrennt, jede 
     \label{eq:erloes_kur}
     E^{\mathrm{kur}} = \Delta t \sum_{t \in \mathcal{T}} \sum_{r} \pi_{s(t),r} \, P^{\mathrm{kur}}_{s(t),r}
 \end{equation}
-% VORGEZOGEN am 18.09.2026, Auftrag des Verfassers: Abbildung 3.2 soll eine Seite frueher stehen. Die Gleitumgebung steht dafuer vor dem letzten Absatz von 3.2.3, damit sie den oberen Rand der Seite belegen kann, auf der der Verweis steht.
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.82\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
-    \caption{Bisektion für eine Beispielstunde, (a) bei festem Preis der vollen Reservierung, (b) wenn dieser Preis während der Suche steigt und die obere Grenze ihm nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
-    \label{fig:reservierungspreis_bisektion}
-\end{figure}
-
 Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird.
 Im Basisfall rechnet das Modell mit stetiger Reservierung, weil jeder Tag viele Läufe verlangt.
 Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüfen.
@@ -353,6 +345,13 @@ Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:
 % Seite 42, waehrend die Bisektion erst nach den beiden Abbildungen auf Seite 43
 % erklaert wird. Er eroeffnet jetzt den Absatz zur Bisektion.
 %Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.82\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
+    \caption{Bisektion für eine Beispielstunde, (a) bei festem Preis der vollen Reservierung, (b) wenn dieser Preis während der Suche steigt und die obere Grenze ihm nicht mehr folgt. Die Preisachse ist logarithmisch, geprüft wird stets die Mitte des Intervalls.}
+    \label{fig:reservierungspreis_bisektion}
+\end{figure}
 
 \begin{figure}[t]
     \centering

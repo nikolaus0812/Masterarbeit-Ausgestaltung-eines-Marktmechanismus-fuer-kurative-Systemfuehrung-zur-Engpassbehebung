@@ -1475,6 +1475,37 @@ in Abschnitt 3.3.2 nicht gesagt und sollte einmal benannt werden.
 Nachziehen unterscheiden sich allein die neun Abbildungen der Gruppe 1 und das
 nicht zitierte Preisgitter, jeweils im Erzeugungsdatum.
 
+### 18.09.2026, Abbildung 3.2 in ihrem Abschnitt, Breite im Skript gesetzt
+
+Zwei Rueckfragen des Verfassers zur Platzierung von heute.
+
+**"Jetzt steht Abbildung 3.2 im falschen Kapitel."** Zutreffend. Um die
+Abbildung eine Seite nach vorn zu bekommen, lag die Gleitumgebung vor der
+Ueberschrift von 3.2.4 und damit im Abschnitt 3.2.3. Sie steht jetzt wieder
+hinter dem ersten Absatz von 3.2.4 und auf [H]. Dass sie trotzdem auf Seite 42
+bleibt, liegt allein an ihrer geringeren Hoehe.
+
+**"Hast du die Breite auch angepasst, die Schriftgroesse ist naemlich auf A4
+eingestellt."** Zutreffend und vorher falsch gemacht. Eine Verkleinerung ueber
+\includegraphics skaliert die Schrift der Abbildung mit und macht sie kleiner
+als den Fliesstext. Die Breite steht deshalb jetzt im Zeichenskript
+analysen/code/schrift/09_reservierungspreis_verfahren/
+reservierungspreis_bisektion.py als BREITE = 0,82 und geht an ts.subplots. Die
+Abbildung entsteht nativ mit 13,1 cm Breite (gemeldet als 82,00 Prozent der
+Textbreite) und wird unskaliert eingebunden, die Schriftgroesse stimmt damit
+wieder mit dem Text ueberein.
+
+**Begriffe in der Abbildung nachgezogen.** Die Preisachse hiess "geposteter
+Reservierungspreis" und heisst jetzt "vorgegebener Reservierungspreis". Die
+Legende hiess "Schwelle der Stunde" und "obere Grenze steht schon, Schwelle
+liegt darueber"; sie heisst jetzt "Preis der vollen Reservierung" und "obere
+Grenze steht schon, der Preis liegt darueber". Damit traegt die Abbildung
+dieselben Begriffe wie der Text nach dem Befund I-12, der das Wort Schwelle aus
+3.2.4 genommen hat.
+
+**Stand der Abbildungen in Kapitel 3.** 3.2 auf Seite 42, 3.3 auf 43, 3.4 auf
+45, 3.5 auf 48, 3.6 auf 50.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
