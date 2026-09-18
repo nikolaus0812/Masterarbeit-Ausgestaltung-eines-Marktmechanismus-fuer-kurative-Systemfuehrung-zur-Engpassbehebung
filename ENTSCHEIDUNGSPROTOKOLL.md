@@ -2177,6 +2177,51 @@ Entscheidungen des Verfassers bei der Durchsicht.
 Ohne Beleg und als Mechanismus formuliert: die Definitionen nach V2 und V4
 und der Satz zur Volatilitaet als Grund fuer die Preise von 2025.
 
+### 18.09.2026, Vorspann von Kapitel 1 als Catcher
+
+Kommentare des Verfassers in dieser Reihenfolge: "die vorliegende Arbeit aus
+den ersten einleitenden Saetzen streichen", "provokanter sagen, sodass ein
+Leser sich direkt fragt, was die Probleme von kurativer Systemfuehrung und was
+die Probleme von BESS sind", "vielleicht das Wort Effizienz in den Mund
+nehmen und das Mengenproblem in den ersten Satz aufnehmen", "den Absatz neu
+strukturieren und ein bisschen reissender formulieren, ohne weniger
+wissenschaftlich und ohne Fakten zu schreiben", dazu die drei Saetze zum
+Handel der BESS, zur offenen Einbindung in das Redispatchregime und zur
+fehlenden systemweiten Integration.
+
+**Aufbau des Vorspanns.** Acht Saetze in einer Kette: Anteil erneuerbarer
+Energien und Transportaufgabe, Engpassmanagement auf anhaltend hohem Niveau und
+im Wandel, BESS praegen den kurzfristigen Handel, ihre Einbindung in das
+Redispatchregime ist offen, das heutige Engpassmanagement stoesst an Grenzen,
+die kurative Systemfuehrung gilt als Loesung, ihre Anforderungen lassen eine
+systemweite Integration noch nicht zu, und fuer die Bereitschaft besteht kein
+Preis.
+
+**Zurueckgenommen, nicht wieder aufnehmen.** "Die vorliegende Arbeit befasst
+sich mit einer Antwort auf diese Aufgabe, naemlich der kurativen
+Systemfuehrung, die das bestehende Netz hoeher auslastet." Ebenso "Als Akteur
+dafuer kommen BESS in Betracht, die die noetige Reaktionsfaehigkeit
+bereitstellen." Die Wendung "die vorliegende Arbeit" steht in Kapitel 1 nur
+noch in 1.2, wo CLAUDE.md Abschnitt 4 sie zulaesst.
+
+**Berichtigt gegenueber der Vorgabe des Verfassers.** Erstens kein Allzeithoch
+des Engpassmanagements. Die Jahresmengen betragen nach eigener Auswertung
+(analysen/code/helpers/praesentation_plots.py, _redispatch_jahresmengen) 17,2
+/ 21,1 / 29,1 / 34,3 / 30,3 / 30,4 TWh fuer 2020 bis 2025, der Hoechstwert
+liegt also 2023 und nicht 2025. Der Text sagt "auf anhaltend hohem Niveau".
+Zweitens keine Kausalitaet zwischen dem Einstieg der BESS und den Grenzen des
+Engpassmanagements. Der Einstieg steht als eigene Tatsache, die Grenze folgt
+aus dem kleineren Anlagenkreis und der kuerzeren Vorlaufzeit, wie 1.1 es
+belegt. Drittens steht das Wort revolutioniert nicht im Text, Stilregel 15
+laesst die Verstaerkung nicht zu; die Aussage traegt stattdessen der Beleg
+garttan_battery_2025.
+
+**Belege im Vorspann.** 58,8 Prozent aus bundesnetzagentur_strommarktdaten_2026,
+der kurzfristige Handel aus garttan_battery_2025, die Anforderungen und der
+Umsetzungsstand aus innosys_2030_gesamtverbund_innovationen_2021. Ohne Beleg
+bleibt allein der Satz zu den Grenzen des Engpassmanagements, den Abschnitt 1.1
+unmittelbar danach mit Quellen entfaltet.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
