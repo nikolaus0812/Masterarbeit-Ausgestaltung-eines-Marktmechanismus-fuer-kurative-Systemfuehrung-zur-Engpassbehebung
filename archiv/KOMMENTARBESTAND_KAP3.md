@@ -7216,3 +7216,42 @@ Anker: `\caption{Fahrplan und Ladezustand am 11.02.2025 bei einem Reservierungsp
 %      Vor dem naechsten Build nachholen, sonst bricht biber ab.
 % ===============================================================
 ```
+
+
+# Nachtrag, Kommentare vom 18.09.2026
+
+Die parallele Sitzung hat am 18.09.2026 drei Bloecke in chapter_3.tex geschrieben.
+Der Verfasser hat am selben Tag entschieden, dass die Kapiteldatei kommentarfrei
+bleibt. Der Wortlaut steht deshalb hier, die Zeilennummern sind die des Standes
+vom 18.09.2026 vor dem Entfernen.
+
+## Zeile 344 bis 347
+
+Anker: `\begin{figure}[H]`
+
+```
+% VERSCHOBEN 18.09.2026, Kommentar des Verfassers: Der Satz stand hier auf
+% Seite 42, waehrend die Bisektion erst nach den beiden Abbildungen auf Seite 43
+% erklaert wird. Er eroeffnet jetzt den Absatz zur Bisektion.
+%Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
+```
+
+## Zeile 363 bis 364
+
+Anker: `Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.`
+
+```
+% HIERHER VERSCHOBEN 18.09.2026, Kommentar des Verfassers. Der Satz traegt
+% jetzt die These des Absatzes.
+```
+
+## Zeile 366 bis 369
+
+Anker: `Die untere Grenze des Suchintervalls reicht für die volle Reservierung nicht aus, während die obere Grenze dafür ausreicht.`
+
+```
+% NEU 18.09.2026, Kommentar des Verfassers: einleiten, wie die Bisektion den
+% Preis findet. Bis dahin war nicht gesagt, was die beiden Grenzen bedeuten und
+% warum der gesuchte Preis zwischen ihnen liegt. Alte Fassung des Absatzanfangs:
+%Die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
+```

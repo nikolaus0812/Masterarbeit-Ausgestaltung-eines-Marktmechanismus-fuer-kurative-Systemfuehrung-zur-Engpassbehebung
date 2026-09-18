@@ -2,7 +2,7 @@
 \label{ch:design_model}
 \label{ch:requirements}
 
-Das Engpassmanagement wird um eine Systemdienstleistung ergänzt, deren Gegenstand nicht die Leistungsanpassung selbst ist, sondern die Bereitschaft dazu im Fehlerfall.
+Die vorliegende Arbeit ergänzt das Engpassmanagement um eine Systemdienstleistung, deren Gegenstand nicht die Leistungsanpassung selbst ist, sondern die Bereitschaft dazu im Fehlerfall.
 Die Bemessung des finanziellen Ausgleichs aus dem Redispatch ist auf diese Bereitschaft nicht anwendbar, weil sie an die durchgeführte Anpassung anknüpft, wie in Abschnitt~\ref{sec:interim_conclusion} dargestellt.
 Die Vergütung der Bereitschaft ist deshalb neu zu untersuchen, und dafür eignet sich ein kurativer Marktmechanismus, weil sich der kurative Reservierungspreis gegen die Erlöse der übrigen Vermarktung messen lässt.
 In diesem Kapitel werden die Anforderungen an einen solchen Mechanismus abgeleitet, die kurative Reservierung als Produkt entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell aus der Sicht des Anlagenbetreibers bestimmt.
@@ -31,8 +31,6 @@ Der folgende Katalog überführt die Befunde in Bedingungen, die sich an einem M
     \item[A4 -- Bemessungsgegenstand] Die Vergütung muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, denn die kurative Bindung schränkt den Betrieb über ihre gesamte Dauer ein und nicht allein im Fehlerfall.
     Die Kosten fallen deshalb auch ohne Abruf an.
     Gegenstand der Vergütung ist die reservierte Leistung, ein Abruf wird daneben gesondert vergütet.
-    Maßgeblich ist, dass die Leistungsänderung im Abruf erbracht werden kann.
-    Die Erbringung fällt den Technologien unterschiedlich schwer, je nachdem, ob die Leistungsänderung einen bestimmten Betriebspunkt oder einen Energievorrat voraussetzt.
     \item[A5 -- Diskriminierungsfreiheit] Die Binnenmarktverordnung verlangt einen diskriminierungsfreien Zugang aller Technologien, wie in Abschnitt~\ref{sec:legal_framework} dargestellt, und der kurative Marktmechanismus setzt deshalb an den geforderten Eigenschaften an und nicht an der Technologie.
     In der Präqualifikation heißt das, technische und physikalische Eigenschaften zu prüfen und nicht die Art der Anlage.
     Der offene Zugang ist zugleich die Voraussetzung dafür, dass der \ac{ÜNB} am betroffenen Knoten unter mehreren Geboten das günstigste annehmen kann.
@@ -65,21 +63,22 @@ Der Akteur nimmt die kurativ gebundene Leistung aus seiner übrigen Vermarktung 
 Daraus entstehen die Opportunitätskosten, die der Akteur über den kurativen Reservierungspreis ersetzt verlangt.
 Eine Anlage kann beide Richtungen anbieten, aber jede Richtung bindet einen anderen Teil des Ladezustandsbandes und ist deshalb ein eigenes Gebot.
 Gesperrt ist damit allein die zugesagte Leistung, während für das gebundene Zeitfenster kein allgemeines Handelsverbot gilt.
+
 Neben Richtung und Leistung nennt ein Gebot die Reaktionszeitklasse, für die der Akteur einsteht.
 Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei.
 Die kurative Reservierung übernimmt deshalb die drei Klassen aus InnoSys~2030, nämlich unter zehn Sekunden, etwa zwei Minuten und bis 15 Minuten, wie in Abschnitt~\ref{sec:curative_functionality} beschrieben.
 Wer die kürzeste Klasse erfüllt, erfüllt damit auch die längeren, sodass ein schneller Akteur in jeder Klasse anbieten kann.
 Die Klassen ersparen dem \ac{ÜNB} die Rechnung mit der Reaktionszeit jeder einzelnen Anlage, und drei Stufen halten den Zugang zugleich für viele Technologien offen.
-Die Bindungsdauer beträgt eine Zeitscheibe, also eine Stunde des Liefertages.
 
 Den Abruf löst der \ac{ÜNB} aus, sobald nach einem Ausfall die Überlastung tatsächlich eintritt.
 Der Akteur erhält zum Abruf ein Signal, auf das seine Anlage innerhalb der zugesagten Klasse reagiert.
-Die Anlage hält die Leistungsänderung höchstens eine Stunde, und diese Stunde kann über zwei Zeitscheiben reichen.
-Angenommen ist der ungünstigste Fall eines einstündigen Abrufs.
+Angenommen ist der ungünstigste Fall eines einstündigen Abrufs, der über zwei Zeitscheiben reichen kann.
 Bei einem Speicher hält das Ladezustandsband deshalb je zugesagtem Megawatt eine Megawattstunde vor, in positiver Richtung als gespeicherte Energie und in negativer Richtung als freien Speicherraum.
+
 Andere Technologien wie Wind- und Photovoltaikanlagen müssen ebenso über die Bindungsdauer sicherstellen, dass sie ihre Einspeisung gegenüber dem gemeldeten Fahrplan um die zugesagte Leistung absenken können.
-Die zugesagte Leistung einer solchen Anlage lässt sich dabei ähnlich wie die gesicherte Leistung bewerten, also als der Anteil der installierten Leistung, der über die Bindungsdauer mit hoher Wahrscheinlichkeit verfügbar ist.
+Die zugesagte Leistung einer solchen Anlage ist dabei der Anteil der installierten Leistung, der über die Bindungsdauer mit hoher Wahrscheinlichkeit verfügbar ist.
 Kraftwerke halten das Leistungsband entsprechend in ihrer Fahrplanbildung frei, was für sie weniger kritisch ist, weil ihre Einspeisung nicht von einer Wind- oder Solarprognose abhängt.
+
 Der Abruf endet früher, sobald der \ac{ÜNB} den Engpass mit anderen Mitteln behoben hat.
 Nach einem Abruf ist der Akteur für den restlichen Liefertag von der Vorhaltung freigestellt.
 An die Stelle der Lieferpflicht tritt jedoch eine Nachlaufpflicht, nach der der Akteur seine Leistung nicht um die zugesagte Leistung in die den Engpass verschärfende Richtung zurückverschieben darf.
@@ -106,13 +105,12 @@ Der Akteur gibt allein den Netzknoten seiner Anlage an, denn die Sensitivität d
 Wie in der Regelleistung bestätigt der Netzbetreiber, an dessen Netz die Anlage angeschlossen ist, dass Vorhaltung und Abruf an diesem Anschluss möglich sind.
 
 Präqualifizierte Akteure bieten in einer gemeinsamen, täglichen Ausschreibung der deutschen \ac{ÜNB} für alle 24 Stunden des Folgetages, je Stunde und Richtung mit einem eigenen Gebotspreis in \EurMWh{}.
-Die Zeitscheibe von einer Stunde entspricht der Dauer des ungünstigsten Abrufs.
+Die Zeitscheibe von einer Stunde ist zugleich die Bindungsdauer und entspricht der Dauer des ungünstigsten Abrufs.
 Den Bedarf ermitteln die \ac{ÜNB} in den Rechenläufen ihrer Redispatchplanung am Vortag, sodass er vor dem Zuschlag feststeht.
 Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, die eine Anlage allein oder mehrere Anlagen am selben Netzknoten zusammen erreichen.
 Anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt die kurative Reservierung die Zusammenfassung nur je Netzknoten.
 Maßgeblich für die Zusammenfassung ist allein die Wirkung am angegebenen Knoten.
-Als Netzknoten sind zunächst allein die Knoten des 380-kV-Netzes relevant.
-Der Kreis lässt sich später um die 110-kV-Knoten mit einem Direktkuppler zum 380-kV-Netz und danach um das gesamte 110-kV-Netz erweitern.
+Als Netzknoten kommen zunächst die Knoten des 380-kV-Netzes in Betracht, später auch die 110-kV-Knoten.
 
 Einen Anspruch auf Zuschlag hat der Akteur nicht.
 Die \ac{ÜNB} nehmen Gebote nach pay-as-bid, also zum jeweils gebotenen Preis, nur für die Zeitscheiben an, die sie benötigen.
@@ -129,13 +127,10 @@ Weil der Zuschlag am Vortag feststeht und über die ganze Zeitscheibe bindet, he
 
 \label{sec:research_gap}
 \label{sec:product_open_questions}
-Für den \ac{ÜNB} bedeutet die kurative Reservierung vor allem neue Abläufe in der Systemführung, von der Ermittlung des Bedarfs über den Verbund der Gebote bis zum Nachweis der Erfüllung.
-Ob sich eine systemweite Integration der kurativen Systemführung lohnt, hängt für den \ac{ÜNB} davon ab, ob der Nutzen die Kosten der Reservierung und ihrer Umsetzung übersteigt.
+Der kurative Reservierungspreis ist aus dem Betrieb des Speichers selbst zu bestimmen.
 Welchen kurativen Reservierungspreis ein Akteur fordert, hängt davon ab, was ihm die Reservierung unter den bestehenden Nebenbedingungen an anderer Vermarktung nimmt.
 Für die kurative Reservierung besteht kein Vergütungsrahmen, an dem sich ein Akteur ausrichten könnte.
-Der kurative Reservierungspreis ist deshalb aus dem Betrieb des Speichers selbst zu bestimmen.
 Der kurative Reservierungspreis wird dafür als der kleinste Preis bestimmt, bei dem ein \ac{BESS} eine Zeitscheibe voll reserviert, statt die Leistung anderweitig zu vermarkten.
-Der kurative Reservierungspreis liefert die Kostenseite der Abwägung, der der \ac{ÜNB} den Nutzen gegenüberstellen kann.
 Für die Bestimmung wird ein Optimierungsmodell aufgebaut, das abbildet, wie ein \ac{BESS} über einen Liefertag an mehreren Märkten zugleich vermarktet wird.
 Für die kurative Reservierung gibt das Modell je Stunde und Richtung einen Preis in \EurMWh{} vor, im Folgenden vorgegebener Reservierungspreis genannt, auf den der Betreiber seine Vermarktung einstellt.
 Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen.
@@ -152,7 +147,6 @@ Die Tagesaufbereitung schneidet die Eingangsdaten je Liefertag in 96 Viertelstun
 Die Dispatch-Optimierung maximiert den Erlös der Anlage über den ganzen Tag bei einem vorgegebenen Reservierungspreis je Stunde und Richtung.
 Die Suche nach dem kurativen Reservierungspreis ist eine Schleife aus solchen Optimierungen: Sie setzt den vorgegebenen Reservierungspreis, liest die reservierte Leistung je Zeitscheibe zurück und ändert den vorgegebenen Reservierungspreis, bis je Zeitscheibe der kleinste Wert gefunden ist, bei dem die Anlage voll reserviert.
 Ausgangsdaten sind alle Größen der Optimierung, nämlich der Erlös je Markt als wichtigste Tageskennzahl, die Verteilung der Leistung auf die Märkte, die Reservierung je Zeitscheibe und der Ladezustand.
-Die Ausgangsdaten werden als CSV- und Parquet-Dateien abgelegt und daraus ausgewertet.
 
 \subsection{Ansatz und Lösungsverfahren}
 \label{sec:model_assumptions}
@@ -162,6 +156,7 @@ Der Referenzfahrplan zeigt damit, was die Reservierung verdrängt.
 Der Erlös des Referenzfahrplans ist der Referenzerlös.
 Die Opportunitätskosten der Reservierung entstehen damit im Modell selbst, sodass kein gesonderter Kostenansatz für die Vorhaltung nötig ist.
 Die Kopplung des Ladezustands bindet auch die Stunden vor einer Zeitscheibe, weil das Ladezustandsband die Energie oder den Speicherraum schon vorher bereithalten lässt.
+
 Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zum regelzoneninternen Handel fünf Minuten vor Lieferbeginn.
 Die Optimierung in einem Lauf mit vollständiger Preiskenntnis ist gewählt, weil eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
 Der Abstand zum Betrieb eines Akteurs ist dabei bekannt und begrenzt, denn eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses \cite{hornek_value_2025}.
@@ -178,12 +173,13 @@ Netzrestriktionen, die Zusammenfassung mehrerer Anlagen zu einem Pool und die Ge
 Ohne Netzmodell ist der kurative Bedarf nicht räumlich aufgelöst, sodass jede Zeitscheibe gleich behandelt wird.
 Die Abrufwahrscheinlichkeit bleibt außer Betracht, und der Zuschlag in den Regelleistungsmärkten gilt zu den berücksichtigten Preisen als sicher.
 Beide Vereinfachungen sind mit dem Produkt vereinbar: Weil ein Abruf gesondert vergütet wird, fließt er nicht in den kurativen Reservierungspreis ein, und die sicheren Zuschläge lösen die Erlöse am Regelleistungsmarkt vom Bietverhalten.
+
 Nicht Teil des Modells sind die gesonderte Vergütung eines Abrufs, nämlich der gelieferten Energie und der Nachlaufpflicht, und die Pönale mit der Risikoprämie, die aus ihr folgt.
 Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
+
 Die Rückwirkung der Speicher auf die Preise bleibt ebenfalls außer Betracht, sodass die Preise des Jahres 2025 als gegeben gelten.
 Ein Zubau im Gigawattmaßstab drängt die zusätzliche Leistung überwiegend in die Arbitrage, weil die Regelleistungsmärkte mengenmäßig begrenzt sind \cite{garttan_battery_2025}.
 Dort verzehren Speicher die Spreads, indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}.
-Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht als Eingangsgröße in das Modell.
 
 \label{sec:storage_modelling}
 
@@ -198,6 +194,7 @@ Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht al
 Innerhalb dieser Grenzen wird eine einzelne Anlage abgebildet.
 Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, also einem Energieinhalt je Leistung von 2,5 Stunden.
 Die Auslegung liegt über dem Bereich von ein bis zwei Stunden, den die Großspeicher in Betrieb erreichen, und im Bereich der geplanten Anlagen, wie in Abschnitt~\ref{sec:actor_comparison} dargestellt.
+
 Laden und Entladen laufen mit einem Wirkungsgrad von 0,95 je Richtung, woraus ein Umlaufwirkungsgrad von 0,9025 folgt.
 Der nutzbare Ladezustand liegt zwischen 5 und 95 Prozent, sodass die Anlage 225\,\si{MWh} bewegen kann.
 Bei voller Anschlussleistung reicht dieser nutzbare Ladezustand für gut zwei Stunden Lieferung.
@@ -206,9 +203,10 @@ Die Degradation belastet mit 8 Euro je Megawattstunde Durchsatz den Handel und d
 Der Satz entspricht der Größenordnung, die sich aus den Investitionskosten eines schlüsselfertigen Speichersystems und seinem Lebensdauerdurchsatz ergibt \cite{rystad_energy_renewables__power_analytics_energy_2026}.
 Der Verschleiß hängt tatsächlich von Temperatur, Ladezustand und Strom ab und ließe sich erst mit zusätzlichen Binärvariablen abbilden \cite{kumtepeli_energy_2020}.
 Das Modell nimmt die Vereinfachung in Kauf, weil die Preissuche das Tagesmodell einige hundert Mal je Tag löst.
+
 Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
 Entscheidungsvariablen sind die Leistungen an den Energiemärkten, die vorgehaltenen Leistungen der Regelleistung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ.
-Anhang~\ref{anh:modell} führt die Variablen vollständig auf.
+Die Variablen stehen vollständig in Anhang~\ref{anh:modell}.
 Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführten Märkte abzüglich der Degradationskosten.
 \begin{equation}
     \label{eq:zielfunktion}
@@ -253,9 +251,8 @@ Auch am \ac{IDC} handelt die Anlage Energie, bewertet wird dieser Handel aber je
 Im kontinuierlichen Handel kommt jedes Geschäft zu seinem eigenen Preis zustande, sodass es für eine Viertelstunde keinen einheitlichen Preis gibt.
 Eine viertelstundenübergreifende Arbitrage greift deshalb auf volumengewichtete Durchschnittspreise zurück.
 Das Modell lässt nur Arbitrage zwischen Viertelstunden zu, während ein Betreiber dieselbe Viertelstunde mehrfach handeln und eine frühere Position innerhalb desselben Lieferzeitpunktes wieder glattstellen kann.
-Was der Betreiber damit zusätzlich verdient, ließe sich nur aus den Orderbüchern ablesen.
-Ohne Orderbücher bleibt ein rollierender Handel mit laufender Neubewertung eine Schätzung.
-Weil ein Betreiber dieselbe Viertelstunde mehrfach handeln kann, verbessert jede zusätzliche Handelsmöglichkeit den erzielbaren Preis, sodass der \ac{IDC} insgesamt mehr trägt als ein einzelnes Geschäft zum Index.
+Was der Betreiber damit zusätzlich verdient, ließe sich nur aus den Orderbüchern ablesen und bleibt ohne sie eine Schätzung.
+Jede zusätzliche Handelsmöglichkeit verbessert den erzielbaren Preis, sodass der \ac{IDC} insgesamt mehr trägt als ein einzelnes Geschäft zum Index.
 Das Modell bildet den Vorteil des mehrfachen Handels über einen Aufschlag ab, der Verkäufe über und Käufe unter dem Index bewertet und den Spread damit weitet.
 Die Höhe des Aufschlags wird als Sensitivität variiert.
 Der Höchst- und der Niedrigstpreis einer Viertelstunde wären ein anderes Maß für den Vorteil des mehrfachen Handels, bleiben aber außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
@@ -303,7 +300,8 @@ Die \ac{aFRR}-Arbeit bewertet das Modell je Viertelstunde und Richtung mit dem v
 Als Gewicht dient in der Mittelung der Sollwert von netztransparenz.de, weil das je Zyklus aktivierte Volumen nicht veröffentlicht wird \cite{netztransparenz_regelenergie_2026}.
 Viertelstunden ohne Abruf einer Richtung bleiben für diese Richtung gesperrt.
 Die Anlage liefert \ac{aFRR}-Arbeit anteilig am deutschen Abruf, im Verhältnis ihrer vorgehaltenen Leistung zur ausgeschriebenen Menge, und wählt keine einzelnen Viertelstunden aus.
-Wie viel Arbeit die Anlage liefern darf, prüft eine Sensitivität, die den anteiligen Abruf gegen eine freie Lieferung bis zur eigenen Reservierung und bis zu zehn Prozent des deutschen Abrufs stellt.
+Wie viel Arbeit die Anlage liefern darf, prüft eine Sensitivität.
+Sie stellt den anteiligen Abruf gegen eine freie Lieferung bis zur eigenen Reservierung und bis zu zehn Prozent des deutschen Abrufs.
 Die gelieferte Arbeit stammt aus dem Speicher und wird am \ac{IDC} erst in einer späteren Viertelstunde ausgeglichen und nie in derselben, denn der Abruf steht erst nach der Viertelstunde fest.
 Der Ausgleich ist eine eigene Größe je Viertelstunde und Richtung, und seine Menge schließt sich über den Tag gegen die gelieferte Arbeit.
 Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie, vermindert beziehungsweise erhöht um den Wert des Ausgleichs in der Viertelstunde, in der er stattfindet.
@@ -323,9 +321,7 @@ Die positive und die negative Reservierung betrachtet das Modell getrennt, jede 
     \label{eq:erloes_kur}
     E^{\mathrm{kur}} = \Delta t \sum_{t \in \mathcal{T}} \sum_{r} \pi_{s(t),r} \, P^{\mathrm{kur}}_{s(t),r}
 \end{equation}
-Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird.
-Im Basisfall rechnet das Modell mit stetiger Reservierung, weil jeder Tag viele Läufe verlangt.
-Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüfen.
+Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird, wie in Abschnitt~\ref{sec:model_scope} beschrieben.
 
 \label{sec:model_scope_verification}
 
@@ -340,11 +336,7 @@ Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine 
 Gesucht ist je Stunde und Richtung der kleinste vorgegebene Reservierungspreis, bei dem die Stunde voll reserviert ist.
 Die Suche setzt dabei voraus, dass der Füllgrad einer Stunde mit ihrem vorgegebenen Reservierungspreis steigt, sodass es je Stunde genau einen solchen Preis gibt.
 Ein Lauf in der Mitte eines Preisintervalls sagt deshalb, ob der gesuchte Preis darüber oder darunter liegt, und halbiert das Intervall, was mit wenigen Läufen auskommt und kein feines Preisgitter braucht.
-Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und Anhang~\ref{anh:ablauf} mit allen Schritten darstellt.
-% VERSCHOBEN 18.09.2026, Kommentar des Verfassers: Der Satz stand hier auf
-% Seite 42, waehrend die Bisektion erst nach den beiden Abbildungen auf Seite 43
-% erklaert wird. Er eroeffnet jetzt den Absatz zur Bisektion.
-%Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
+Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:reservierungspreis_ablauf} zeigt und wie Anhang~\ref{anh:ablauf} mit allen Schritten dargestellt ist.
 
 \begin{figure}[H]
     \centering
@@ -360,13 +352,7 @@ Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:
     \label{fig:reservierungspreis_ablauf}
 \end{figure}
 
-% HIERHER VERSCHOBEN 18.09.2026, Kommentar des Verfassers. Der Satz traegt
-% jetzt die These des Absatzes.
 Jede Iteration bestimmt zuerst die Grenzen eines Suchintervalls und halbiert dieses Intervall danach für jede Stunde in derselben Bisektion.
-% NEU 18.09.2026, Kommentar des Verfassers: einleiten, wie die Bisektion den
-% Preis findet. Bis dahin war nicht gesagt, was die beiden Grenzen bedeuten und
-% warum der gesuchte Preis zwischen ihnen liegt. Alte Fassung des Absatzanfangs:
-%Die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
 Die untere Grenze des Suchintervalls reicht für die volle Reservierung nicht aus, während die obere Grenze dafür ausreicht.
 Der gesuchte Preis liegt damit zwischen beiden Grenzen, und die Bisektion prüft die Mitte des Intervalls mit einem Lauf.
 Reicht der Preis in der Mitte für die volle Reservierung, wird die Mitte zur oberen Grenze, sonst zur unteren.
@@ -445,9 +431,8 @@ Die \ac{FCR} bietet 40 Prozent der Leistung an, die \ac{aFRR}-Leistung so viel, 
 Die 40 Prozent ergeben sich, weil der Revenue-Index die Hälfte der Leistung für die \ac{FCR} freihält und die maximale Leistung eines Speichers die angebotene Leistung nach den Präqualifikationsbedingungen um mindestens ein Viertel übersteigen muss \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Der Revenue-Index vergütet in der \ac{FCR} allein die angebotene Leistung und nicht die abgerufene Energie.
 Danach bietet der Revenue-Index die \ac{aFRR}-Arbeit zum Preis der ersten Intraday-Auktion mit einem Aufschlag von 50 Prozent an.
-Abgerufen wird der Speicher, sobald der Sollwert des \ac{ÜNB} die Leistung aller günstigeren Gebote übersteigt.
+Abgerufen wird der Speicher, sobald der Sollwert des \ac{ÜNB} die Leistung aller günstigeren Gebote übersteigt, geliefert wird der Sollwert bis zur vorgehaltenen Leistung.
 Vergütet wird der Abruf zum Grenzpreis der Regelarbeit und nicht zum Gebotspreis.
-Geliefert wird der Sollwert, begrenzt auf die vorgehaltene Leistung des Speichers.
 Als Daten nutzt der Revenue-Index den sekündlichen Sollwert der deutschen \ac{ÜNB} \cite{netztransparenz_regelenergie_2026} und die anonymisierte Gebotsliste der \ac{aFRR}-Arbeit \cite{regelleistung_ausschreibungsdaten_2026}.
 Den Ladezustand hält der Revenue-Index über Geschäfte zum \ac{ID1} im zulässigen Band und führt ihn in den letzten zwei Stunden des Tages auf die Hälfte zurück.
 Zuletzt handelt der Revenue-Index im kontinuierlichen Intraday-Handel mit der übrigen Leistung, dem übrigen Speicherinhalt und den übrigen Zyklen, mindestens aber mit der Hälfte der Zyklengrenze, und schließt den Tag mit dem Anfangsladezustand ab.
@@ -482,16 +467,15 @@ Der Vergleich soll deshalb allein ausschließen, dass die Modellierung die Erlö
 Der größere Energieinhalt je Leistung des Optimierungsmodells und die fehlende Zyklengrenze wirken in dieselbe Richtung, denn sie erlauben mehr Arbitrage und mehr Vorhaltung je Megawatt.
 Erwartet wird, dass das Optimierungsmodell in den Leistungsmärkten über dem Revenue-Index liegt, in den Energiemärkten darunter bleibt und den Jahresgang abbildet.
 
-Der Vergleich beginnt mit den Einzelmärkten, die Anhang~\ref{anh:validierung} im Einzelnen darstellt.
+Der Vergleich beginnt mit den Einzelmärkten, die im Einzelnen in Anhang~\ref{anh:validierung} dargestellt sind.
 In der \ac{FCR} erreicht das Optimierungsmodell das 1,24-Fache des Revenue-Index, weil der Revenue-Index die angebotene Leistung durch 1,25 teilt und das Optimierungsmodell die volle Leistung anbietet.
 Ein Megawatt, das ganzjährig zum \ac{FCR}-Preis anbietet, erzielt 133,0 Tausend Euro je Megawatt und Jahr, wovon der Revenue-Index 81 Prozent und das Optimierungsmodell 100 Prozent erreichen.
 In der \ac{aFRR} erreicht das Optimierungsmodell das 1,52-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
 Der Revenue-Index bietet nur die Leistung an, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
 Das Optimierungsmodell ist allein durch ein Ladezustandsband von einer Stunde je Richtung begrenzt und hält im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
-Auch die Liefermenge der \ac{aFRR}-Arbeit hängt auf beiden Seiten an der vorgehaltenen Leistung, folgt aber verschiedenen Regeln.
-Der Revenue-Index liefert nur, wenn sein Gebot im Geld ist, dann aber den realen Abruf bis zu seiner vollen Vorhaltung.
-Das Optimierungsmodell liefert dagegen in jeder Viertelstunde mit Abruf einen festen Anteil seiner Vorhaltung, der dem Verhältnis des deutschlandweiten Abrufs zur gesamten Vorhaltung entspricht.
+Auch die Liefermenge der \ac{aFRR}-Arbeit hängt auf beiden Seiten an der vorgehaltenen Leistung, folgt aber den Regeln, die Abschnitt~\ref{sec:validation_benchmark} und Abschnitt~\ref{sec:input_data} je Seite nennen.
 Denselben Sollwert nutzen beide Seiten, der Revenue-Index als abgerufene Leistung und das Optimierungsmodell als Gewicht bei der Mittelung der Grenzpreise.
+
 In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
 Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklus verrechnet.
 
@@ -503,7 +487,7 @@ Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklu
 \end{figure}
 
 Abbildung~\ref{fig:validierung_cross} stellt marktübergreifend den Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenüber.
-Der Revenue-Index liegt im Mittel bei 259,7 Tausend Euro je Megawatt und Jahr, das Optimierungsmodell bei 348,3 Tausend Euro je Megawatt und Jahr.
+Das Optimierungsmodell liegt im Mittel bei 348,3 Tausend Euro je Megawatt und Jahr.
 Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
 Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
 Zum Abstand trägt marktübergreifend die Aufteilung der Leistung bei.
@@ -523,7 +507,7 @@ In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherr
 Der gezeigte Fahrplan enthält die Mindestgröße von 25\,\si{MW} je Zeitscheibe und Richtung, die das Optimierungsmodell gemischt-ganzzahlig macht.
 Die Optimierung reserviert damit nur dort, wo der vorgegebene Reservierungspreis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was die Grundlage der Suche nach dem kleinsten vorgegebenen Reservierungspreis bestätigt.
 Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
-Anhang~\ref{anh:dispatch_ohne} zeigt diesen Fahrplan ohne die Mindestgröße.
+Dieser Fahrplan ohne die Mindestgröße steht in Anhang~\ref{anh:dispatch_ohne}.
 
 \begin{figure}[H]
     \centering

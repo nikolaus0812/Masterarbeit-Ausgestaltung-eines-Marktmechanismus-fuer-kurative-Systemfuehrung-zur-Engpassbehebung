@@ -1506,6 +1506,57 @@ dieselben Begriffe wie der Text nach dem Befund I-12, der das Wort Schwelle aus
 **Stand der Abbildungen in Kapitel 3.** 3.2 auf Seite 42, 3.3 auf 43, 3.4 auf
 45, 3.5 auf 48, 3.6 auf 50.
 
+### 18.09.2026, Kontrolle durch Fable, Absatzbefunde und Streichkandidaten
+
+Auftrag des Verfassers: "setze die alle um." Gemeint sind die 75 Absatzbefunde
+zum roten Faden und die 22 Streichkandidaten aus KONTROLLE_FABLE.md. Betroffen
+sind chapter_1.tex, chapter_2.tex, chapter_3.tex und attachment.tex.
+
+**Umfang.** Kapitel 1 19 Stellen und ein Absatzumbruch, Kapitel 2 54 Stellen
+und vier Umbrueche, Kapitel 3 30 Stellen und acht Umbrueche, Anhang A vier
+geteilte Absaetze und zwei Umbrueche, dazu sieben Verweise auf Anhaenge nach
+R-75. Das PDF traegt danach 96 statt 97 Seiten.
+
+**Art der Aenderungen.** Erstens Saetze geteilt, wo ein Satz mehr als einen
+Hauptsatz und einen Nebensatz trug (Stilregel 17). Zweitens Absaetze geteilt,
+wo sie mehr als eine These trugen (Stilregel 1). Drittens Saetze gestrichen,
+die eine Aussage wiederholten, die an anderer Stelle mit Beleg steht
+(Streichkandidaten S-01 bis S-22). Viertens Passiv ohne Akteur und handelnde
+Abschnitte oder Anhaenge ersetzt (Stilregeln 10 und 12). Fuenftens relative
+Angaben beziffert, naemlich "reagieren schnell" zu "reagieren innerhalb
+weniger Minuten" (Stilregel 7).
+
+**Zurueckgenommene Formulierungen, nicht wieder aufnehmen.** Die
+Streichkandidaten stehen im Wortlaut in KONTROLLE_FABLE.md Abschnitt 4. In
+chapter_1.tex, chapter_2.tex und attachment.tex stehen sie zusaetzlich als
+Kommentar an ihrer alten Stelle. In chapter_3.tex stehen sie nicht in der
+Datei, weil die Datei nach der Entscheidung vom 17.09.2026 kommentarfrei
+bleibt; dort sind es der Netzausbausatz in 3.1.1 A4, die beiden Saetze zum
+Nutzen-Kosten-Vergleich des UENB in 3.2, der Satz zu den CSV- und
+Parquet-Dateien, der Satz zum Szenariorahmen 2030 in 3.2.1, die beiden Saetze
+zur Mindestgroesse in 3.2.3, der Satz zu den Orderbuechern, die beiden Saetze
+zu den Lieferregeln der aFRR-Arbeit in 3.3.2 und der Indexwert 259,7 in
+Absatz 47.
+
+**Nicht umgesetzt und warum.** R-06, R-27, R-62, R-63 und R-68 verweisen auf
+inhaltliche Befunde, die am 17.09.2026 erledigt sind. R-43 verlangt keine
+Aenderung. R-16 ist entfallen, weil der dort genannte Satz seine Dopplung mit
+1.1 Absatz 10 verloren hat, nachdem S-03 diesen Satz gestrichen hat. R-28
+betrifft den Folgesatz zur SOGL, den I-07 bereits gestrichen hat. R-40, R-42,
+R-45, R-46, R-48 und R-70 liessen sich nicht anwenden, weil die zitierten
+Saetze so nicht mehr im Text stehen; die Absaetze sind seit dem Bericht
+mehrfach gefasst worden.
+
+**Abweichungen von der Empfehlung.** In 2.1.2 steht der Absatzumbruch vor den
+Klassen von InnoSys 2030 und nicht vor dem folgenden Satz, weil der Absatz
+sonst zwei Saetze behielte. In 2.3.3 ersetzt der Hinweis, dass die Verguetung
+der Vorhaltung unabhaengig vom Abruf anfaellt, die Begruendung ueber die
+Energielieferung, weil auch der kurative Abruf Energie liefert.
+
+**Geprueft.** tools/pruefen.py ohne neuen Befund, ein bekannter Altbefund in
+chapter_4.tex. Build mit den beiden bekannten Referenzwarnungen fuer die
+auskommentierten Kapitel 5 und 6.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
