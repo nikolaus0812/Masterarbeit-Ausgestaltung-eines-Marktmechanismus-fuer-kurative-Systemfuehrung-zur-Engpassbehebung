@@ -2222,6 +2222,80 @@ Umsetzungsstand aus innosys_2030_gesamtverbund_innovationen_2021. Ohne Beleg
 bleibt allein der Satz zu den Grenzen des Engpassmanagements, den Abschnitt 1.1
 unmittelbar danach mit Quellen entfaltet.
 
+### 18.09.2026, Kapitel 1 nach Kommentaren des Verfassers, zweite Runde
+
+Betrifft 1.1 und 1.2 sowie die beiden Abbildungen des Kapitels.
+
+**Begriffe.** Redispatchbedarf heisst Engpassmanagementbedarf und
+Redispatchvolumen heisst Massnahmenvolumen, weil Abbildung 1.1 nach ihrer
+Bildunterschrift das Massnahmenvolumen des Netzengpassmanagements zeigt. In
+3.3.3 bleibt der Redispatch stehen, weil der Satz dort die Redispatch-
+Massnahmen von netztransparenz zitiert. In chapter_4.tex stehen vier weitere
+Stellen, die Datei bearbeitet die parallele Sitzung.
+
+**1.1, Anordnung des Redispatch.** Der Text sagt jetzt, dass der \ac{ÜNB} den
+Redispatch auf der Vorhersage anordnet und im laufenden Betrieb bei drohender
+Ueberlastung auch kurzfristig.
+
+**1.1, Windfront.** Aus "wenige Tage" sind "wenige Wetterlagen" geworden, und
+ein Satz nennt den Vorgang, naemlich die Abregelung des nicht
+abtransportierbaren Windstroms und das Hochfahren teurerer Erzeugung an
+anderer Stelle.
+
+**1.1, kurative Systemfuehrung.** Zwei Saetze zum Entfallen des Redispatch sind
+einer geworden und sagen jetzt, dass sich Redispatch nicht nur vermeiden,
+sondern dass sich kurative Massnahmen auch dort einsetzen lassen, wo sie
+zusammen mit dem praeventiven Redispatch das Engpassmanagement insgesamt
+kosteneffizienter machen. Zurueckgenommen: "Ein Teil des Redispatch entfaellt
+deshalb, naemlich der Teil, der heute allein dazu dient, die Marge
+freizuhalten." und "Der Redispatch selbst entfaellt damit nicht, denn nach
+einem Abruf stellt ein Redispatch den (N-1)-sicheren Zustand wieder her." Die
+Wiederherstellung steht in 2.1.4.
+
+**1.1, Eignung der BESS.** Der Verweis sagt jetzt, dass der Technologievergleich
+in 2.1.3 die Eignung anhand von Reaktionszeit, Energiebindung, Anlagenbestand
+und Verguetungspfad begruendet. Nicht uebernommen wurde die Formulierung
+"optimale technische Voraussetzungen", weil der Vergleich einen absoluten
+Superlativ nicht traegt; der Text sagt "die guenstigsten technischen
+Voraussetzungen".
+
+**1.2, Zielabsatz.** Vier Fassungen an einem Tag. Die letzte folgt dem
+Vorschlag von Fable in der Fassung A, die der Verfasser gewaehlt hat. Fable hat
+an der vorigen Fassung drei Maengel gefunden, naemlich die Demonstrativa "diese
+Bereitschaft" und "dieser Beschaffung" ueber die Satzgrenze, einen Satz mit
+zwei Hauptsaetzen und einem Relativsatz sowie sechs Kopula- oder
+Passivkonstruktionen in acht Saetzen. Der Absatz traegt jetzt die Kette Ziel,
+Eigenschaft des Akteurs, Begriff der kurativen Vorhaltung, Randbedingungen und
+Beschaffung durch den \ac{ÜNB}, Produkt, Bausteine der Ausgestaltung,
+kurativer Reservierungspreis und zuletzt die Pruefung gegen den praeventiven
+Redispatch.
+
+**Zurueckgenommene Vorgabe des Verfassers.** Die Abgrenzung "Der kurative
+Marktmechanismus wird entworfen, um die Einfluesse zu erkennen, die am Markt
+auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign
+mit prognostizierten Preisen festzulegen" steht nicht mehr im Text. Sie war
+eine Vorgabe des Verfassers vom 15.09.2026 und steht weiter in CLAUDE.md
+Abschnitt 5; die Datei ist vom Verfasser nachzuziehen.
+
+**Offener Punkt.** Der letzte Satz des Zielabsatzes kuendigt eine Pruefung an,
+ob die marktlich beschaffte Vorhaltung mit dem praeventiven Redispatch
+mithaelt, und zwar in Hoehe, zeitlicher Zusammensetzung und kuenftiger
+Entwicklung des Preises. Weder KAPITEL_4_AUFBAU.md noch chapter_5.tex sehen
+bisher einen Abschnitt vor, der die Preise gegen die Redispatchkosten stellt.
+Entweder liefert Kapitel 4 oder 5 das nach, oder der Satz ist zurueckzunehmen.
+
+**Abbildungen 1.1 und 1.2.** Beide sind auf Auftrag des Verfassers um rund 30
+Prozent in der Hoehe gestaucht, naemlich von Seitenverhaeltnis 0,50 auf 0,35
+und von 0,58 auf 0,41, bei voller Textbreite. Die Stauchung steht im
+Zeichenskript kapitel1_abbildungen.py und nicht in \includegraphics, damit die
+Schriftgroesse der Abbildungen die des Textes bleibt. Die Achsenbeschriftung
+heisst jetzt "Volumen in TWh", weil "Engpassmanagementbedarf in TWh" nach der
+Stauchung nicht mehr auf die Achse passte.
+
+**Berichtigt.** Kein Allzeithoch des Engpassmanagements: die Jahresmengen
+lauten 17,2 / 21,1 / 29,1 / 34,3 / 30,3 / 30,4 TWh fuer 2020 bis 2025, der
+Hoechstwert liegt 2023.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
