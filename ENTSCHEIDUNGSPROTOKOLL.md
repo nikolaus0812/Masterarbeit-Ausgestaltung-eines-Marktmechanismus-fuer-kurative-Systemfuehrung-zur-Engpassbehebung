@@ -2463,6 +2463,66 @@ Gegenstand ist allein der Preis der Vorhaltung."
 3. Der Zielabsatz hat neun Saetze.
 4. CLAUDE.md Abschnitt 7, Entscheidung 4 nennt weiterhin das Jahr 2030.
 
+### 18.09.2026, Kapitel 1 auf fuenf Seiten gekuerzt, Teilfragen gestrichen
+
+Anlass: Die Einleitung lief mit sechs Zeilen auf eine sechste Seite. Vorgabe
+des Verfassers: "versuch eher kompakter zu formulieren anstatt zu streichen."
+Vorgelegt wurden zehn Vorschlaege mit gemessener Ersparnis, umgesetzt sind
+drei.
+
+**Vorschlag 1, NEP-Absatz zusammengezogen.** Zwei Saetze werden zwei kuerzere.
+Der Verfasser: "der investitionsbedarf sollte schon drinstehen, der rest ist
+gleich." Der Investitionsbedarf von rund 392 Mrd. Euro steht deshalb weiter im
+Text. Weggefallen sind die Nennung des Szenarios B und die Wendung "einem von
+drei Szenarien". Aus "rund 13 TWh" ist die Spanne 11,1 bis 13,0 TWh geworden,
+die den Wert enthaelt und zuvor im zweiten Satz stand.
+
+**Vorschlag 2, Minimalkostenkombination eingefaltet.** Der Ausdruck
+Minimalkostenkombination und die Aufzaehlung der beiden Kostenbestandteile
+entfallen, der Nebensatz traegt die Sache allein.
+
+**Vorschlag 3, Ankuendigung des Aufbaus gestrichen.** Der Verfasser: "du kannst
+eigentlich den kompletten Satz streichen sowie den Satz davor und 'die Arbeit
+ist wie folgt aufgebaut'." Gestrichen sind damit der Satz mit den drei
+Teilfragen, der Satz "Die drei Teilfragen geben den Aufbau vor." und der erst
+an diesem Tag aufgenommene Satz "Die Arbeit ist deswegen wie folgt aufgebaut:".
+Der Aufbauabsatz beginnt jetzt unmittelbar mit Kapitel 2.
+
+**Folgeaenderung.** Der Satz zu Kapitel 6 lautete "die Ergebnisse entlang der
+drei Teilfragen zusammengefasst". Der Bezug haengt an dem gestrichenen Satz und
+ist entfernt.
+
+**Die drei Teilfragen entfallen im ganzen Dokument.** Vorgabe des Verfassers:
+"die drei teilfragen sollen auch nirgendwo mehr stehen." Im gesetzten Text
+stehen sie nach der Streichung nirgends mehr; in chapter_1.tex bleiben sie als
+auskommentierte Altfassungen erhalten, wie es CLAUDE.md Abschnitt 10 verlangt.
+In chapter_6.tex stand die Gliederung der Zusammenfassung als Plan "entlang der
+Leitfrage und der drei Teilfragen aus Abschnitt 1.2". Der Kommentar ist um
+einen Hinweis ergaenzt, dass diese Gliederung neu zu fassen ist. Die drei
+Sachpunkte bleiben brauchbar, sie sind aber nicht mehr als Teilfragen zu
+benennen.
+
+**Offener Punkt.** KAPITEL_4_AUFBAU.md stuetzt sich in Abschnitt 1.1 auf die
+drei Teilfragen aus 1.2 und ordnet Kapitel 4 die zweite zu. Die Datei gehoert
+der parallelen Sitzung und ist nicht angefasst.
+
+**Eigenstaendige Anmerkung.** Die Arbeit nennt ihre Forschungsfragen damit
+nicht mehr als Liste. Die Leitfrage traegt allein der Satz "Zu pruefen ist, ob
+die marktlich beschaffte Vorhaltung mit dem praeventiven Redispatch mithaelt,
+und zwar nicht allein in der Hoehe des Preises, sondern auch in seiner
+zeitlichen Zusammensetzung und seiner kuenftigen Entwicklung."
+
+**Ergebnis.** Kapitel 1 endet auf Seite 5, das Dokument hat 95 statt 96 Seiten.
+Die letzte Seite der Einleitung ist mit 40 Zeilen voll, jeder weitere Satz
+kippt sie wieder auf eine sechste Seite. Sieben der zehn Vorschlaege sind nicht
+umgesetzt und stehen als Reserve von rund fuenf Zeilen bereit.
+
+**Nicht umgesetzt, als Reserve.** Geografisches Missverhaeltnis kuerzen,
+monatliche Gesamtkosten ohne Vorspann, Massnahmenvolumen ohne die in der
+Bildunterschrift stehende Erlaeuterung, spaetes Handelsfenster, zwei
+Eigenschaften des Bedarfs in zwei statt drei Saetzen, Marktdesign, Satz zur
+Kosteneffizienz.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
