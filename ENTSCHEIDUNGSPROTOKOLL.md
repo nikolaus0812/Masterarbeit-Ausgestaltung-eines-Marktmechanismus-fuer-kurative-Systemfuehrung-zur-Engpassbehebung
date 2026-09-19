@@ -1620,6 +1620,34 @@ kurze Absaetze. Die Nacharbeit steht aus.
 beiden bekannten Referenzwarnungen fuer die auskommentierten Kapitel 5 und 6,
 95 Seiten wie vor dem Verbinden.
 
+### 19.09.2026, neue Vorgabe: Abbildung und Verweis auf derselben Seite
+
+**Vorgabe des Verfassers.** "als neue vorgabe bitte ueberpruefen ob abbildung
+auch in unmittelbarer naehe also auf derselben seite sind wie ihre verweise."
+Anlass war ein Verweis in 2.1.1 auf Abbildung 2.3, die elf Seiten spaeter steht.
+Stilregel 16 verlangt bereits, dass Tabellen und Abbildungen unmittelbar bei der
+Stelle stehen, die auf sie verweist; die Vorgabe macht daraus eine Pruefung am
+gesetzten PDF.
+
+**Pruefverfahren.** Das Skript liest das gesetzte PDF mit pdftotext, loest
+Trennstriche am Zeilenende auf, sucht je Nummer die Bildunterschrift und jeden
+Verweis im Fliesstext und meldet den Seitenabstand. Ohne das Aufloesen der
+Trennstriche bleiben Verweise unentdeckt, die als "Abbil-dung" umbrochen sind.
+Das Skript liegt bisher nur im Sitzungsverzeichnis und ist noch nicht in
+tools/pruefen.py aufgenommen.
+
+**Befund vom 19.09.2026 vor der Aenderung.** 15 Abbildungen und 2 Tabellen,
+davon ein grober Fall, naemlich der Verweis auf Abbildung 2.3 aus elf Seiten
+Entfernung. Drei Faelle mit zwei Seiten Abstand, naemlich Abbildung 1.2 von
+Seite 13 aus, Abbildung 2.3 von Seite 29 aus und Abbildung 3.2 von Seite 51 aus.
+Elf Faelle mit einer Seite Abstand, das ist der uebliche Gleitsatz und kein
+Befund im engeren Sinn. Nach der Aenderung in 2.1.1 bleibt fuer Abbildung 2.3
+nur noch ein Abstand von einer und von zwei Seiten.
+
+**Offen.** Die drei Faelle mit zwei Seiten Abstand sind nicht bearbeitet. Ob die
+Pruefung als elfte Pruefung in tools/pruefen.py aufgenommen wird, hat der
+Verfasser noch nicht entschieden.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -5339,6 +5367,106 @@ Kernaussagen zusammenziehen und unterbleibt deshalb.
 
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
 beiden bekannten Referenzwarnungen, 95 Seiten unveraendert.
+
+### 19.09.2026, 2.1.1 Absatz 4, Aufzaehlung aufgeloest und Kostenkette berichtigt
+
+Dieser Eintrag fasst mehrere Kommentare des Verfassers zu demselben Absatz
+zusammen. Mehrere Zwischenfassungen desselben Tages sind dabei wieder
+zurueckgenommen worden, ihr Wortlaut steht als Kommentar in der Kapiteldatei.
+
+**Wortwiederholung.** Kommentar: "das kann verbunden werden um nicht immer so
+viel marge zu schreiben." Das Wort Marge stand in drei aufeinanderfolgenden
+Saetzen. Zurueckgenommene Fassung: "Das Freihalten dieser Marge ist der Eingriff
+in die Fahrplaene. Die Hoehe der Marge bestimmt damit Volumen und Kosten des
+praeventiven Redispatch."
+
+**Kausalitaet.** Kommentar: "da steht die kausalitaet nicht richtig, um die
+sicherheitsmarge zu gewaehrleisten muss in die fahrplaene eingegriffen werden."
+Die Gleichsetzung von Marge und Eingriff ist damit aufgehoben. Zurueckgenommene
+Zwischenfassung: "Der UeNB haelt diese Marge durch einen Eingriff in die
+Fahrplaene frei, und ihre Hoehe bestimmt Volumen und Kosten des praeventiven
+Redispatch."
+
+**Kostenursache.** Kommentar: "generell ist nicht die marge die kosten erzeugt,
+da sie auch bei kurativ insofern eingehalten werden muss. der redispatch erzeugt
+die kosten." Eigenstaendige Folgerung, als solche gekennzeichnet: auch die
+kurative Systemfuehrung haelt einen Abstand ein, naemlich zum TATL statt zum
+PATL, deshalb ist die Marge eine Vorgabe des Netzes und keine Kostenquelle.
+Diese Aussage steht bisher an keiner Stelle im Text, der Absatz zu den
+Auspraegungen spricht nur von einer hoeheren Vorauslastung. Der Verfasser hat
+die Frage, ob sie dort zu ergaenzen ist, noch nicht entschieden. Zurueckgenommene
+Zwischenfassung: "Die Kosten verursacht nicht die Marge, sondern der praeventive
+Redispatch, mit dem der UeNB sie freihaelt. Der UeNB gleicht jede angeordnete
+Fahrplanaenderung finanziell aus, sodass die Kosten mit dem Volumen des
+Redispatch steigen."
+
+**Begriff praeventive Sicherheitsmarge.** Kommentar: "die praeventive
+sicherheitsmarge beschreibt es vielleicht besser, die mehr redispatch erfordert,
+welches dann mehr kosten erzeugt." Der Begriff ist eingefuehrt und in 2.1.1
+durchgezogen, auch im Absatz zu den Auspraegungen. Nicht nachgezogen sind
+chapter_2.tex in 2.1.5, wo "eine vorab eingehaltene Marge unter dem PATL" steht,
+und chapter_1.tex Absatz mit "um eine Marge unter der Dauergrenze, und das
+Freihalten dieser Marge ist der Eingriff, der als Redispatch anfaellt". Die
+zweite Stelle traegt dieselbe falsche Kausalitaet, die hier berichtigt worden
+ist. Der Verfasser hat beide Stellen zur Kenntnis genommen und noch nicht
+entschieden.
+
+**Ergaenzt und am selben Tag wieder gestrichen.** "Der praeventive Redispatch
+wird durch die Verlagerung in die Kurzfrist teurer, auch wenn sein Volumen
+gleich bleibt." Kommentar des Verfassers: "das beschreiben wir schon durch die
+kurzfristigen eingriffe." Nicht wieder aufnehmen.
+
+**Aufzaehlung aufgeloest.** Kommentar: "danach wuerde ich aber direkt ueberleiten
+dazu dass das ein kleiner kreis an anlagen ist, was dann auch wieder mit drittens
+zusammenhaengt, weswegen allgemein diese erstens zweitens drittens aufteilung
+keinen sinn ergibt." Der Absatz hatte selbst gesagt, dass das zweite und das
+dritte Merkmal dieselbe Ursache haben. Die Ordnungszahlen sind entfallen, der
+Absatz laeuft als Kette: Sicherheitsmarge, Redispatch, Kosten, Ende des
+Planungshorizonts, kleiner Kreis an Anlagen, Kostenwirkung der Anlagenart,
+Verlagerung in die Kurzfrist, fehlende Proportionalitaet. Der Schlusssatz zur
+fehlenden Proportionalitaet ist aus der Mitte ans Absatzende gezogen.
+
+**Verweise auf ferne Abbildungen gestrichen.** Kommentar: "ich wuerde hier nicht
+verweisen sondern einfach schreiben auf abbildungen die viel spaeter kommen ...
+den satz wuerde ich einfach aendern zu einem kompakten satz." Vier Saetze sind zu
+drei geworden. Gestrichene Saetze:
+"Die letzte Vorschaurechnung ist die Vortagesrechnung oder eine der untertaegigen
+Rechnungen, die Abbildung 2.3 auf der Zeitachse zeigt."
+"Der Handel bleibt dagegen bis kurz vor Lieferung offen, wie in Abschnitt 2.2.2
+dargestellt."
+"Fahrplanaenderungen aus diesem Zeitraum enthaelt keine Vorschaurechnung mehr,
+sodass der UeNB die daraus entstehenden Netzzustaende nur noch mit den Mitteln
+beheben kann, die ohne Vorlauf verfuegbar sind."
+Die Begruendung ueber den offenen Handel ist ohne Verweis erhalten geblieben,
+weil der Absatz sonst unbelegt behauptet, dass es Fahrplanaenderungen nach der
+letzten Vorschaurechnung gibt. Der Begriff Planungshorizont wird weiter erklaert,
+naemlich als das, was die Vorschaurechnungen abdecken, CLAUDE.md Abschnitt 5.
+
+**Teilsatz zur Umstellung des Day-Ahead-Marktes gestrichen.** Kommentar: "da bin
+ich mir noch nicht sicher ob das einen einfluss hat. eher doch auf die id
+auktionen da diese ja dann viertelstundenprodukte gefuehrt haben. ich glaube
+diese info wuerde ich erst diskutieren in kapitel 5." Gestrichener Teilsatz:
+"und die Umstellung der Auktion des DA auf Viertelstundenprodukte hat die
+Volumenverteilung zwischen den Handelszeitpunkten zusaetzlich veraendert."
+Eigenstaendige Pruefung: ffe_saegezahn_2026 traegt allein diesen Teilsatz, der
+Titel der Quelle lautet "Saegezahnmuster am Day-Ahead-Markt: Entwicklung der
+Day-Ahead- und Intraday-Maerkte durch die Umstellung des Day-Ahead-Handels auf
+15-Minuten-Produkte". Die Quelle bleibt in 2.2.2, 2.3.5 und 3.1 in Gebrauch und
+steht in chapter_5.tex Zeile 106 bereits als Punkt fuer die dortige Diskussion.
+Der verbleibende Satz traegt jetzt mahgoub_wie_2025, den Beleg der Fassung vom
+15.09.2026 fuer genau diese Aussage.
+
+**Offener Punkt fuer Kapitel 5.** Ob die Umstellung des Day-Ahead-Marktes auf
+Viertelstundenprodukte die Verteilung zwischen den Handelszeitpunkten veraendert
+und ob die Wirkung eher die Intraday-Auktionen trifft, ist in Kapitel 5 zu
+diskutieren. Der Verfasser hat noch nicht entschieden, ob dazu ein eigener
+Stichpunkt in chapter_5.tex aufgenommen wird.
+
+**Absatzlaenge.** Elf Textzeilen sind durch neun ersetzt, der Absatz hat 14
+Saetze. Das Dokument hat wieder 94 statt 95 Seiten.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit biber,
+weil sich Zitate geaendert haben, mit den beiden bekannten Referenzwarnungen.
 
 ## chapter_3.tex
 
