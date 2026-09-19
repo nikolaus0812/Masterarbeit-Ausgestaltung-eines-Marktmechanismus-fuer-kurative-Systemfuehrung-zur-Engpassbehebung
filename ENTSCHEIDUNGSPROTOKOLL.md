@@ -5766,6 +5766,86 @@ entschluesselt worden. Anlage 1 der Festlegung liegt doppelt in literature/PDFs.
 Altbefund in chapter_5.tex Zeile 91, der zum auskommentierten Kapitel gehoert.
 Build mit biber und den beiden bekannten Referenzwarnungen, 94 Seiten.
 
+### 19.09.2026, 2.1.1 und 2.1.2 nach weiteren Kommentaren des Verfassers
+
+**Dopplung in 2.1.1 gestrichen.** Kommentar: "pruefe diese aussage auf dopplung.
+eigentlich sollte sie nicht in diesen absatz gehoeren oder?" Eigenstaendige
+Pruefung des ganzen Kapitels: die Aussage, dass die Vorhaltung keine
+Verguetungsregel kennt, steht an sechs Stellen, naemlich in 2.1.1, dreimal in
+2.1.5 (Gegenstand ist der durchgefuehrte Eingriff und nicht die vorgehaltene
+Reaktionsfaehigkeit; keine Verguetung der Vorhaltung fuer eine am Markt
+bleibende Anlage; weil das EnWG die Vorhaltung nicht verguetet), in 2.3.5 (die
+Bemessung bietet keinen Anhalt) und in 2.4 (fuer eine kurative Bindung kennt das
+Engpassmanagement keinen Bemessungsgegenstand). Die Kette ist gewollt und
+muendet in 2.4. Die Stelle in 2.1.1 war die Vorwegnahme, denn sie behauptet
+dort, was erst 2.1.5 mit Paragraf 13a Abs. 2, Abs. 4 und Paragraf 13c traegt.
+Gestrichen, nicht wieder aufnehmen: "Fuer diese Kostenart kennt der finanzielle
+Ausgleich nach Paragraf 13a EnWG keine Regel, nach der sie zu vergueten waere,
+denn er knuepft an die durchgefuehrte Anpassung an." Der Absatz behaelt die
+Aussage ueber die Art der Kosten und den Erkenntnisbedarf.
+
+**Offen dazu.** Dass die Aussage in 2.1.5 dreimal steht, naemlich als Rahmung,
+als Schluss der Analyse und als Ueberleitung zu den flexiblen
+Netzanschluessen, ist dem Verfasser gemeldet und noch nicht entschieden. Ebenso
+offen ist, ob Kapitel 1 dieselbe Vorwegnahme traegt.
+
+**Abbildung 2.2 vorgezogen.** Vorgabe des Verfassers: "abbildung 2.2 auf seite 10
+nach der einleitung wo auch drauf verwiesen wird". Die Gleitumgebung stand in
+der Quelldatei hinter dem Absatz mit den Begriffsbestimmungen und damit zwei
+Absaetze nach ihrem Verweis, weshalb LaTeX sie auf die Folgeseite schob. Sie
+steht jetzt unmittelbar hinter dem Einleitungsabsatz von 2.1.2 und liegt im
+Satz auf derselben Seite wie der Verweis. Die Naehepruefung meldet damit 14
+statt 15 Befunde.
+
+**Ende der kurativen Bindung bedingt.** Vorgabe des Verfassers: "und sobald
+weitere ueberlastungen ausgeschlossen sind". Alte Fassung: "In der Rueckfuehrung
+veranlasst der UeNB einen Redispatch zur Wiederherstellung des (N-1)-sicheren
+Zustands, und der Akteur wird aus der kurativen Bindung entlassen und kehrt in
+den freien Betrieb zurueck." Neue Fassung in drei Saetzen, weil der Satz schon
+drei Hauptsaetze trug und die Bedingung einen Nebensatz hinzufuegt, Stilregel 17;
+zugleich steht der UeNB jetzt im Subjekt statt im Passiv, Stilregeln 10 und 12.
+Die Ergaenzung schaerft die Bindungsdauer: die Bindung endet weder mit dem Abruf
+noch mit dem Redispatch, sondern erst, wenn keine weitere Ueberlastung mehr
+droht.
+
+**State Estimation richtig zugeordnet, Sachfehler.** Kommentar des Verfassers:
+"nein die state estimation wird in der netzsicherheitsrechnung gemacht und
+daraus wird ja aktiviert. in der betriebsplanung wird mittels eines
+synthetischen netzes und prognostizierten einspeise und last situation eine
+lastflussberechnung mit ausfallapproximation gemacht. daraus werden engpaesse
+identifiziert die dann mit einem pRD Tool effizient geloest werden."
+Eigenstaendige Pruefung an leeuwen_integration_2020: der alte Satz war woertlich
+der Satz der Quelle zur Netzsicherheitsrechnung, im Text aber der Betriebsplanung
+zugeschrieben, also Echtzeitrechnung und Planungsrechnung verwechselt. Quelle zur
+Netzsicherheitsrechnung: "Ausfallvarianten der Netzbetriebsmittel kontinuierlich
+in der aktuellen Netzsituation, die bereits umgesetzte praeventive Massnahmen
+einschliesst, durch Leistungsflussrechnungen auf Basis der State Estimation
+ueberprueft." Quelle zur Betriebsplanung: "Innerhalb dieser Prozesse werden
+Optimierungsalgorithmen genutzt, die auf Basis von Prognosen der Netznutzung
+potentielle Engpaesse sowie moegliche Entlastungsmassnahmen ermitteln", und
+"Alle Betriebsplanungsprozesse basieren auf Prognosen (fuer EE-Einspeisung,
+Last, Netztopologie, Kraftwerkseinspeisung, etc.), die laufend aktualisiert
+werden."
+
+Gestrichen aus dem Absatz zur Betriebsplanung, nicht wieder aufnehmen: "Die
+Pruefung beruht auf Leistungsflussrechnungen mit der State Estimation, also der
+aus Messwerten geschaetzten Netzsituation." Ebenfalls zurueckgenommen ist das
+Wort fortlaufend im Eingangssatz, das die Echtzeitrechnung beschrieb. Der Satz
+zur State Estimation steht jetzt im Absatz zu den vier Phasen bei der
+Netzsicherheitsrechnung des Normalbetriebs.
+
+**Nicht uebernommen, mit Begruendung.** Die vom Verfasser genannten Begriffe
+synthetisches Netz und Ausfallapproximation kommen in leeuwen_integration_2020
+nicht vor, die Suche ergab null Treffer. Der Satz traegt einen Beleg, deshalb
+bleibt der Text beim Wortlaut der Quelle. Die Quelle nennt als
+Betriebsplanungsprozesse WAPP, pRD1, pRD2/DACF und IDCF und in Fussnote 10 den
+AC-SCOPF als Verfahren; das entspricht dem vom Verfasser genannten pRD-Werkzeug.
+Ob die Prozessnamen oder die Ausfallapproximation mit einem anderen Beleg in den
+Text sollen, hat der Verfasser noch nicht entschieden.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
+beiden bekannten Referenzwarnungen, 94 Seiten.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
