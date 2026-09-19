@@ -5020,6 +5020,47 @@ Grenzwertkonzept der deutschen UENB. Die Leitlinie selbst spricht von den
 Grenzwerten fuer den Strom hinsichtlich der thermischen Belastbarkeit
 einschliesslich voruebergehend zulaessiger Ueberlastungen."
 
+### 19.09.2026, 2.1 Einleitung an den Gegenstand gebunden, Zustandsabsatz gestrafft
+
+**Erster Absatz von 2.1.** Der Verfasser: "das Kapitel heisst kurative
+Systemfuehrung und wir erwaehnen es kein einziges Mal am Anfang? Was soll mir
+die Redispatch-Aussage vermitteln?" Der Absatz war eine reine Definitionskette
+und nannte seinen Gegenstand nicht. Er beginnt jetzt mit der Einordnung, naemlich
+dass die kurative Systemfuehrung eine Form des Engpassmanagements ist. Das
+Engpassmanagement ist in der Apposition definiert und nicht mehr in einem
+eigenen Thesensatz.
+
+**Redispatch mit Aufgabe.** Der Verfasser: "es ist momentan die praesenteste Art
+und Weise, Engpaesse zu bewirtschaften." Der Satz lautet jetzt, dass sich das
+Engpassmanagement heute ueberwiegend auf den Redispatch stuetzt. Eigenstaendige
+Pruefung: Eine bezifferte Vorrangaussage waere nicht gedeckt, denn die Daten der
+Bundesnetzagentur weisen das Massnahmenvolumen des gesamten
+Netzengpassmanagements aus und nicht den Anteil des Redispatch daran. Deshalb
+steht die zurueckhaltende Formulierung nach Stilregel 8. Falls der Anteil spaeter
+belegt wird, ist der Satz zu beziffern.
+
+**Zustandsabsatz mit der Folgerung voran.** Der Verfasser: "die Folgerung ist
+richtig, aber einleitend zu der Folgerung kann alles kompakter formuliert werden
+und nicht so ausgeholt werden. Vielleicht stellt man auch die Folgerung an den
+Anfang und begruendet sie dann." Der Absatz hatte zehn Saetze, also zwei mehr,
+als Stilregel 1 zulaesst. Er hat jetzt acht und beginnt mit der Folgerung, dass
+die Nutzung der voruebergehend zulaessigen Ueberlast fuer sich genommen nicht aus
+dem Normalzustand des Netzes hinausfuehrt. Die Begruendung folgt danach.
+
+**Gestrichen, weil nur ausgeholt.**
+"Zur Einordnung der praeventiven und der kurativen Systemfuehrung eignet sich das
+in Art. 18 SOGL verankerte Fuenf-Zustands-Modell des Netzes mit Normal-,
+Gefaehrdungs-, Not-, Blackout- und Netzwiederaufbau-Zustand."
+"Die letzten drei Zustaende bezeichnen eine eingetretene Grenzwertverletzung, den
+Zusammenbruch der Versorgung und die Wiederherstellung danach und spielen fuer
+die Einordnung keine Rolle."
+Eigenstaendige Pruefung: Gefaehrdungs-, Not-, Blackout- und
+Netzwiederaufbau-Zustand kommen an keiner anderen Stelle der Kapitel und Anhaenge
+vor, die Aufzaehlung wird also nirgends gebraucht. Der Gefaehrdungszustand wird
+weiter benannt, weil der Absatz ihn fuer die Abgrenzung braucht.
+
+**Ergebnis.** Das Dokument hat 94 statt 95 Seiten.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
