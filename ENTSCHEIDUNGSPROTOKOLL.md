@@ -5561,6 +5561,46 @@ hingewiesen worden.
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
 beiden bekannten Referenzwarnungen, 95 Seiten.
 
+### 19.09.2026, 2.1.1 Absatz 6, Ueberleitung zum Erkenntnisbedarf
+
+**Anlass.** Kommentar des Verfassers: "ich wuerde eher ueberleiten dass diese
+wirksamkeit unweigerlich mit den kosten zusammenhaengt und deswegen eine
+detailliertere untersuchung moeglicher kosten auch einen besseren ueberblick
+fuer eine erneute bewertung geben wuerde."
+
+**Zurueckgenommen, nicht wieder aufnehmen.** "Bleibt die Vorhaltung guenstig,
+laesst sie sich fuer beide Auspraegungen einsetzen, naemlich fuer die
+Hoeherauslastung und fuer die kurzfristige Absicherung der Systemgrenzen."
+Dieser Satz war am selben Tag aus einem frueheren Kommentar des Verfassers
+gesetzt worden und stuetzte sich auf keine Quelle. Er ist durch die Ueberleitung
+ersetzt.
+
+**Neue Fassung.** Zwei Saetze, an zwei Stellen des Absatzes. Nach der
+Einschraenkung zur Uebertragbarkeit steht "Die Wirksamkeit der kurativen
+Systemfuehrung haengt an den Kosten der Vorhaltung." Am Absatzende steht "Eine
+naehere Untersuchung dieser Kosten gaebe deshalb einen besseren Ueberblick fuer
+eine erneute Bewertung des Einsparpotenzials."
+
+**Begruendung der Verteilung auf zwei Stellen, eigenstaendige Entscheidung.** Der
+Verfasser hat beide Haelften in einem Zug diktiert. Zwischen ihnen stehen im
+Text die beiden Saetze, die erklaeren, warum die Kosten ueberhaupt offen sind,
+naemlich dass an die Stelle der Erzeugungsauslagen die Vorhaltekosten treten und
+dass der finanzielle Ausgleich nach Paragraf 13a EnWG fuer diese Kostenart keine
+Regel kennt. Die Kette lautet damit: Wirksamkeit haengt an den Kosten, die
+Kostenart ist eine andere als bisher, fuer sie gibt es keine Verguetungsregel,
+deshalb waere eine naehere Untersuchung noetig. Der Schlusssatz kommt ohne
+strukturellen Vorverweis aus, Stilregel 15, er benennt den Bedarf und zeigt auf
+kein Kapitel.
+
+**Anschluss angepasst.** Alte Fassung: "Zugleich aendert sich die Art der
+entstehenden Kosten, da an die Stelle der Erzeugungsauslagen einer
+durchgefuehrten Massnahme die Vorhaltekosten einer bereitgestellten
+Reaktionsfaehigkeit treten." Das Wort zugleich bezog sich auf den ersetzten
+Satz. Neue Fassung mit "Die Art der entstehenden Kosten aendert sich dabei".
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
+beiden bekannten Referenzwarnungen, 95 Seiten.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
