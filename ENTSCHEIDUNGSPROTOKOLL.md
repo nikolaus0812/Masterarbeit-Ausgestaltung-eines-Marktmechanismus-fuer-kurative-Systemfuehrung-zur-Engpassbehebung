@@ -1557,6 +1557,69 @@ Energielieferung, weil auch der kurative Abruf Energie liefert.
 chapter_4.tex. Build mit den beiden bekannten Referenzwarnungen fuer die
 auskommentierten Kapitel 5 und 6.
 
+### 19.09.2026, Absatzlaenge neu bestimmt, Stilregel 1 geaendert
+
+**Anlass.** Der Verfasser am gesetzten PDF von 2.1.1: "erklaere mir nochmal stil
+17. mir werden hier viel zu viel absaetze gemacht. warum werden erstens zweitens
+in einem absatz und drittens dann in einem neuen absatz gemacht. ein absatz
+sollte eigentlich mal mindestens eine halbe seite lang sein."
+
+**Klaerung der beiden Regeln.** Stilregel 17 betrifft allein den Satz, naemlich
+einen Hauptsatz und hoechstens einen Nebensatz. Sie erzeugt keine
+Absatzumbrueche, erhoeht aber die Satzzahl je Absatz, weil aus einem langen Satz
+zwei oder drei kurze werden. Die Umbrueche kommen aus Stilregel 1, die bis zum
+19.09.2026 vier bis acht Saetze je Absatz vorsah und einen Umbruch bei jedem
+Teilgedanken verlangte.
+
+**Neue Fassung von Stilregel 1.** Ein Absatz traegt mindestens eine halbe Seite.
+Ein Umbruch steht nur bei einem Wechsel der Kernaussage und nie innerhalb einer
+Aufzaehlung. Die Obergrenze von acht Saetzen entfaellt. Die uebrigen Teile der
+Regel bleiben, naemlich eine Kernaussage je Absatz, Beginn mit der These und
+Ende mit der Konsequenz. Der Verfasser zieht CLAUDE.md Abschnitt 4 selbst nach.
+
+**Eigenstaendige Messung als Grundlage.** Eine Textseite traegt in diesem Satz
+rund 40 Zeilen. Gemessen an 2.1.1 braucht ein Satz nach Stilregel 17 im Schnitt
+1,9 gesetzte Zeilen. Eine halbe Seite sind damit rund 20 Zeilen oder zehn bis
+zwoelf Saetze. Die bisherige Obergrenze von acht Saetzen lag also unterhalb der
+neuen Untergrenze, die beiden Vorgaben waren nicht miteinander vereinbar. Vor
+der Aenderung erreichte in 2.1.1 kein Absatz eine halbe Seite, der laengste kam
+auf 15 Zeilen bei acht Saetzen.
+
+**Widerspruch zur Kritik des Betreuers, ausdruecklich vermerkt.** Stilregel 1 in
+der alten Fassung ist aus den 106 Kommentaren des Betreuers vom 14.09.2026
+abgeleitet. Bei derselben Gelegenheit ist die aeltere Vorgabe weniger
+Absatzumbrueche aufgehoben worden, der Betreuer wollte also mehr Umbrueche. Die
+neue Fassung geht davon teilweise zurueck. Der Verfasser ist darauf hingewiesen
+worden und hat die Aenderung angeordnet. Eigenstaendige Einschaetzung, als
+solche gekennzeichnet: die Kommentare des Betreuers beanstanden Absaetze, die
+zwei Themen zusammenziehen, und nicht Absaetze, die lang sind; die Vorgabe
+Umbruch nur bei Wechsel der Kernaussage traegt beides. Diese Einschaetzung ist
+nicht belegt und vor der Abgabe am Kommentarbestand zu pruefen.
+
+**Umsetzung in 2.1.1.** Elf Absaetze sind zu sechs verbunden worden, ohne dass
+ein Satz geaendert wurde. Verbunden sind erstens, zweitens und drittens mit der
+Verstaerkung durch die kurzfristigen Maerkte zu einem Absatz von 16 Saetzen und
+27 Zeilen, die Ueberleitung mit dem Netzzustand zu 11 Saetzen und 19 Zeilen, die
+Grenzwerte mit der Beschreibung von Abbildung 2.1 zu 12 Saetzen und 24 Zeilen,
+das Einsparpotenzial mit der Einordnung durch InnoSys 2030 zu 10 Saetzen. Die
+trennende Leerzeile ist an jeder Stelle durch einen Kommentar ersetzt, der den
+Grund festhaelt. Der Fehler, der den Anlass gab, ist damit behoben: die
+Aufzaehlung erstens, zweitens, drittens lief seit dem 16.09.2026, Punkt C2.2 der
+Durchsicht, ueber zwei Absatzgrenzen.
+
+**Zwei Absaetze bleiben unter der halben Seite.** Der praeventive Regelfall hat
+11 Zeilen, die beiden kurativen Auspraegungen haben 12 Zeilen. Beide liessen
+sich nur verlaengern, indem zwei Kernaussagen zusammengezogen wuerden. Der
+Verfasser hat die Folge mit diesen beiden Ausnahmen freigegeben.
+
+**Offen.** Kapitel 1 und die uebrigen Abschnitte von Kapitel 2 und 3 sind nach
+der alten Fassung von Stilregel 1 geschrieben und enthalten entsprechend viele
+kurze Absaetze. Die Nacharbeit steht aus.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
+beiden bekannten Referenzwarnungen fuer die auskommentierten Kapitel 5 und 6,
+95 Seiten wie vor dem Verbinden.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -5173,6 +5236,59 @@ Build sauber, die beiden Warnungen zu ch:discussion und ch:conc gehoeren zu den
 auskommentierten Kapiteln 5 und 6. Das Dokument hat 95 statt 94 Seiten, die
 zusaetzliche Seite entsteht durch fuenf Saetze mehr und zwei zusaetzliche
 Absatzumbrueche in 2.1.1.
+
+### 19.09.2026, 2.1.1 zweite Umstellung: Kosten und Grenze ans Ende des praeventiven Teils
+
+**Anlass.** Der Verfasser zum Absatz Kosten und Grenze: "den ganzen absatz find
+ich ja ansich gut aber wuerde das nicht besser ans ende passen, wenn man
+erklaert hat was kurativ und was praeventiv ist und die probleme von praeventiv
+anspricht und kurativ dann dort einordnet?"
+
+**Neue Absatzfolge.** Praeventiver Regelfall, Unterschied im Zeitpunkt mit dem
+Netzzustand, thermische Traegheit mit PATL und TATL und der Beschreibung von
+Abbildung 2.1, Kosten und Grenze des praeventiven Vorgehens, kurative
+Auspraegungen, Einsparpotenzial und InnoSys 2030. Der Abschnitt erklaert damit
+zuerst beide Ansaetze, benennt dann die Kosten und die Grenze des praeventiven
+Vorgehens und ordnet die kurative Systemfuehrung unmittelbar daran ein. Der
+Absatz zu den Auspraegungen beginnt mit dem Satz, dass die kurative
+Systemfuehrung an der Marge und am Planungshorizont ansetzt; beide sind jetzt im
+Absatz davor eingefuehrt und nicht mehr drei Absaetze frueher.
+
+**Drei Saetze geaendert, sonst nur umgestellt.** Der Zeilenvergleich der
+Fliesstextzeilen vor und nach der Umstellung weist drei ersetzte gegen drei neue
+Zeilen aus, die Gesamtzahl bleibt bei 68.
+
+**Ueberleitung neu.** Zurueckgenommene Fassung: "Kosten und Grenze des
+praeventiven Vorgehens folgen aus drei Merkmalen." Neue Fassung: "Den Anlass
+fuer kurative Massnahmen geben die Kosten und die Grenze des praeventiven
+Vorgehens, die aus drei Merkmalen folgen." Der Absatz folgt jetzt auf den
+kurativen Teil und braucht nach Stilregel 3 einen Anschluss, der sagt, warum der
+Text zum praeventiven Vorgehen zurueckkehrt.
+
+**PATL wieder als Akronym.** Die Umschreibung "der dauerhaft zulaessigen
+Strombelastbarkeit", die am selben Tag noetig war, weil PATL erst spaeter
+definiert wurde, ist gegenstandslos: der Grenzwert steht jetzt im Absatz davor.
+Zurueckgenommene Fassung: "Erstens beruht die Sicherheit auf einer Marge
+zwischen der Vorauslastung und der dauerhaft zulaessigen Strombelastbarkeit."
+Wieder in Kraft: "... und dem PATL". Die Stelle in CLAUDE.md Abschnitt 5, die
+als Ort der Definition von PATL und TATL "2.1.1 Absatz 1" nennt, ist weiterhin
+zu berichtigen, richtig ist jetzt Absatz 3.
+
+**Bezug ausgeschrieben, Stilregel 5.** Zurueckgenommene Fassung: "Zweitens
+reicht der Planungshorizont des Ansatzes, also der Zeitraum, den die
+Vorschaurechnungen abdecken, nur bis zur letzten Vorschaurechnung." Neue
+Fassung mit "des praeventiven Ansatzes". Der vorangehende Absatz handelt seit
+der Umstellung vom kurativen Ansatz, der Ansatz ohne Attribut waere nicht mehr
+eindeutig.
+
+**Gemessene Absatzlaengen nach der Umstellung.** Praeventiver Regelfall 11
+Zeilen, Unterschied und Netzzustand 19, Grenzwerte mit Abbildungsbeschreibung
+22, Kosten und Grenze 28, kurative Auspraegungen 12, Einsparpotenzial und
+InnoSys 2030 20. Vier der sechs Absaetze tragen eine halbe Seite oder mehr, die
+beiden Ausnahmen sind dieselben wie zuvor.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
+beiden bekannten Referenzwarnungen, 95 Seiten unveraendert.
 
 ## chapter_3.tex
 
