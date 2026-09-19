@@ -4966,6 +4966,60 @@ Der Satz zum Erloesindex ist auf Vorgabe des Verfassers gestrichen, weil der
 Index erst in 3.3.1 eingefuehrt wird. Die Abgrenzung traegt jetzt allein der
 gleiche Produktschnitt und der geringere Leistungspreis.
 
+### 19.09.2026, 2.1.1 Fussnote aufgeloest und InnoSys-Auftakt gestrichen
+
+**Fussnote zu PATL und TATL aufgeloest.** Vorgabe des Verfassers: "streichen
+und einfach im Text die Zitate setzen." Die Fussnote erklaerte, dass die
+Bezeichnungen PATL und TATL aus InnoSys 2030 und dem Grenzwertkonzept der
+deutschen UENB stammen und dass die Leitlinie selbst von den Grenzwerten fuer
+den Strom hinsichtlich der thermischen Belastbarkeit spricht. Sie ist
+gestrichen, die drei Quellen stehen jetzt im Fliesstext, und zwar getrennt nach
+der Aussage, die sie tragen. Die SOGL steht beim Satz ueber die betrieblichen
+Sicherheitsgrenzwerte, InnoSys 2030 und das Grenzwertkonzept stehen beim Satz
+zum TATL, in dem die beiden Kuerzel erklaert werden. Kapitel 2 hat danach keine
+Fussnote mehr im Fliesstext.
+
+**Auftakt von 2.1.1 gestrichen.** Der Verfasser: "das steht voellig aus dem
+Kontext und folgt nicht der Erzaehlung bzw. Anbindung aus dem vorigen Absatz",
+und weiter: "es kann wenn dann ganz ans Ende, wo wir erzaehlen, was in InnoSys
+schon alles gemacht wurde, [...] aber damit zu starten ist holprig." Der
+Unterabschnitt begann mit einem Absatz aus zwei Saetzen, naemlich einem
+Literaturanker zu InnoSys 2030 und Leeuwen und einem Vorverweis auf die drei
+Klassen der Umsetzungszeit. Der Absatz ist gestrichen. 2.1.1 beginnt jetzt mit
+der Einordnung kurativer Massnahmen als Entlastungsmassnahmen im Sinne der
+SOGL, die an den letzten Satz vor der Ueberschrift anschliesst, der die
+kurative Systemfuehrung ueber vordefinierte Gegenmassnahmen nach Eintreten des
+Fehlerfalles bestimmt.
+
+**InnoSys am Ende von 2.1.1.** Der letzte Absatz des Unterabschnitts begann
+bereits mit InnoSys 2030. Der Satz nennt jetzt zusaetzlich, was das Projekt
+erarbeitet hat, naemlich die Systematisierung des Massnahmenraums und der
+Anforderungen an die Umsetzungszeiten.
+
+**Nicht uebernommen, mit Begruendung.**
+"Die drei Klassen der Umsetzungszeit aus InnoSys 2030 bilden im Folgenden die
+Grundlage fuer die Anforderungen an den kurativen Akteur." Struktureller
+Vorverweis nach Stilregel 15. Die drei Klassen werden in 2.1.2 an der Stelle
+eingefuehrt, an der sie gebraucht werden.
+"und daran anschliessende Arbeiten behandeln die Integration kurativer
+Massnahmen in die Betriebsplanung [leeuwen_integration_2020]." Eigenstaendige
+Pruefung: Leeuwen traegt im Text noch drei weitere Stellen, naemlich die
+Stufung der Redispatchprozesse in 2.1.2, die fortlaufende
+Netzsicherheitsrechnung in 2.1.3 und die Vorschauprozesse DACF und IDCF in
+2.2.2. Die Aussage geht damit nicht verloren. Der Verfasser kann den Satz als
+zweiten Satz in den InnoSys-Absatz am Ende von 2.1.1 aufnehmen, wenn er ihn als
+Stand-der-Technik-Aussage behalten will.
+
+**Zurueckgenommen, nicht wieder aufnehmen.**
+"Das Verbundprojekt InnoSys 2030 hat den Massnahmenraum kurativer Eingriffe und
+die Anforderungen an ihre Umsetzungszeiten systematisiert, und daran
+anschliessende Arbeiten behandeln die Integration kurativer Massnahmen in die
+Betriebsplanung."
+"Die Bezeichnungen PATL und TATL stammen aus InnoSys 2030 und dem
+Grenzwertkonzept der deutschen UENB. Die Leitlinie selbst spricht von den
+Grenzwerten fuer den Strom hinsichtlich der thermischen Belastbarkeit
+einschliesslich voruebergehend zulaessiger Ueberlastungen."
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
