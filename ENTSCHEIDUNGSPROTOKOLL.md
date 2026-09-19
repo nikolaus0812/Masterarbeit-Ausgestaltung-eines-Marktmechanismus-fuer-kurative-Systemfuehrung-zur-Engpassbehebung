@@ -5601,6 +5601,171 @@ Satz. Neue Fassung mit "Die Art der entstehenden Kosten aendert sich dabei".
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
 beiden bekannten Referenzwarnungen, 95 Seiten.
 
+### 19.09.2026, Zahlenpruefung des ganzen Kapitels 2
+
+**Anlass.** Bei der Ueberarbeitung von 2.1.1 war aufgefallen, dass eine aus
+sous_comparison_2025 uebernommene Zahl aus der falschen Zeile derselben Tabelle
+stammte. Der Verfasser hat daraufhin eine Pruefung aller Zahlenangaben des
+Kapitels angeordnet.
+
+**Vorgehen.** 52 Fliesstextzeilen mit Ziffern wurden maschinell gesammelt,
+davon betreffen rund die Haelfte Paragraphen-, Artikel- und Tabellennummern.
+Die verbleibenden 17 Angaben hat der Verfasser durch fuenf Subagenten pruefen
+lassen, je einen fuer die Zeitklassen, die Kapazitaeten, die Marktzeiten, die
+Regelleistung und das Verguetungsrecht. Die Agenten haben allein gelesen und
+berichtet, keine Datei im Repository geaendert. 14 der 17 Angaben sind
+bestaetigt.
+
+**Bestaetigt.** Die drei Zeitwerte aus InnoSys 2030 (unter zehn Sekunden, zwei
+Minuten, 15 Minuten) woertlich; alle neun Kapazitaetswerte der Tabelle zu den
+Technologien aus Tabelle 1 des NEP 2037/2045 V2025, 2. Entwurf, S. 28, jeweils
+aus der richtigen Spalte, naemlich Referenz 2024 und Szenario B 2037; saemtliche
+Marktzeiten, naemlich Day-Ahead-Schluss 12 Uhr, Viertelstundenprodukte seit dem
+01.10.2025, IDA-1 15 Uhr, IDA-2 22 Uhr, IDA-3 10 Uhr des Liefertages mit der
+zweiten Tageshaelfte, und die Staffelung 60, 30 und 5 Minuten; der
+FCR-Referenzstoerfall von 3000 MW, die 564 MW fuer Deutschland, PICASSO seit
+2022, die 60 Minuten Arbeitsvermoegen bei der aFRR und die 810 MW
+praequalifizierter BESS; die Geltung des Paragrafen 13a EnWG in der Fassung des
+Redispatch 2.0 seit dem 01.10.2021, die Nummern 1 bis 5, der Grenzpreis, die
+30-Tage-Standardabweichung und das Weber-Gutachten als Anlage 2.
+
+**Eigene Auswertung nachgerechnet.** Die vier mittleren Leistungspreise des
+Jahres 2025 sind aus analysen/mfrr_leistungspreise reproduzierbar, naemlich
+mFRR 5,171 und 11,280 sowie aFRR 17,958 und 15,647. Die aFRR-Werte wurden
+zusaetzlich aus der Primaerdatei im Modellrepository nachgerechnet und stimmen
+ueberein. Der Mittelwertbegriff ist ein Mittel von Mitteln, naemlich das
+ungewichtete arithmetische Mittel ueber 2190 Vier-Stunden-Zeitscheiben, deren
+Einzelwerte mengengewichtet sind; ueber die Zeitscheiben wird nicht gewichtet.
+Die Einheit ist richtig: der Spaltenkopf der Quelldatei lautet
+GERMANY_AVERAGE_CAPACITY_PRICE_[(EUR/MW)/h], und das Makro EurMWh setzt nach
+extras/macros.tex Euro je Megawatt und Stunde. Die mFRR-Rohdateien liegen nicht
+im Repository, dort war nur die abgeleitete CSV pruefbar.
+
+**Sachfehler 1, Regelarbeitsmarkt.** Zurueckgenommen, nicht wieder aufnehmen:
+"Die uebrigen Anbieter waehlen Menge und Preis frei, und der Zuschlag erfolgt
+25 Minuten vor Beginn der Produktzeitscheibe." Die 25 Minuten sind der
+Gebotsabgabeschluss. Monitoringbericht 2025, S. 123: "Der RAM oeffnet nach
+Verkuendung der RLM-Auktionsergebnisse und schliesst 25 Minuten vor Beginn der
+jeweiligen Produktzeitscheibe." Neue Fassung mit "und der Regelarbeitsmarkt
+schliesst 25 Minuten vor Beginn der Produktzeitscheibe". Dieselbe Verwechslung
+steht noch in drei auskommentierten Zeilen und darf von dort nicht wieder
+aufgenommen werden; ein Kommentar im Kapitel weist darauf hin.
+
+**Sachfehler 2 und 3, Zuordnung der Verguetungspositionen.** Zurueckgenommen,
+nicht wieder aufnehmen: "Welche Positionen einschlaegig sind, haengt von der
+Technologie ab. Konventionelle Kraftwerke fallen unter die Nummern 1 bis 4.
+Windenergie- und Photovoltaikanlagen fallen unter Nummer 5, weil ihre Erloese
+nicht allein aus dem Markt folgen. PSKW und BESS fallen unter die Nummern 1 bis
+3, denn sie vermarkten Arbeit und Leistung am Markt und sind aus dem Stillstand
+ohne Anfahrkosten verfuegbar." Anlage 1 der Festlegung, Kap. 2 Einleitung,
+S. 13 f., weicht in drei Punkten ab: Nummer 5 greift nur bei einer Verminderung,
+denn Anlage 1 fuehrt getrennte Tabellen fuer Erhoehung und Verminderung; Nummer
+5 erfasst neben EEG-Anlagen auch vorrangberechtigte KWK-Anlagen, die
+konventionell sein koennen; und Speicher tragen in beiden Tabellen ein x auch
+bei Nummer 4. Die neue Fassung bildet das ab. Die Aussage zu den Anfahrkosten
+ist nicht gestrichen, sondern als eigene Ableitung kenntlich gemacht: "Die
+Betriebsbereitschaft nach Nummer 4 setzt ein Anfahren voraus und laeuft bei
+einem Speicher deshalb weitgehend leer, sodass die Nummern 1 bis 3 den Preis
+bestimmen." Damit bleibt der spaetere Satz "die Bedeutung der drei Positionen"
+gueltig.
+
+**Sachfehler 4, Zeitklassen.** Zurueckgenommen, nicht wieder aufnehmen:
+"InnoSys 2030 systematisiert die kurativen Massnahmen nach der Zeit bis zur
+vollen Entlastungswirkung in drei Klassen ..." InnoSys 2030, S. 34: "Im Projekt
+wurden drei TATL Zeitfenster definiert, welche sich an den Moeglichkeiten der
+Betriebsmittel hinsichtlich Schnelligkeit der Aktivierung orientieren." Die
+Klassen gehoeren dem Netz und nicht den Massnahmen, die alte Fassung drehte die
+Richtung um. Nebenbefund ohne Textfolge: in der Potenzialanalyse von InnoSys
+(S. 83) werden nur zwei Reaktionszeiten simuliert, naemlich bis 2 min und bis
+15 min; die Klasse unter 10 s ist definiert, aber nicht variiert. Das beruehrt
+Entscheidung W3.
+
+**Belege berichtigt.** Erstens trug der Termin 01.10.2025 kein Zitat, und der
+naechste Beleg im Absatz ist mahgoub_wie_2025, der noch den geplanten Termin
+Juni 2025 nennt; jetzt steht ffe_saegezahn_2026 am Satz, bewusst als zweite
+Nennung derselben Quelle im Absatz, Stilregel 15. Zweitens trug der
+FCR-Referenzstoerfall keinen Beleg; jetzt steht die SO GL, Art. 153 Abs. 2
+lit. b. Drittens trug bundesnetzagentur_beschluss_2019 die 15 Minuten nur
+mittelbar, denn BK6-17-234 lehnt allein einen Antrag auf 30 Minuten ab; jetzt
+steht die SO GL, auf deren Art. 156 Abs. 9 die PQ-Bedingungen selbst verweisen.
+Viertens war Art. 25 SO GL fuer die zulaessige Dauer angefuehrt; er traegt die
+Grenzwerte einschliesslich voruebergehend zulaessiger Ueberlastungen, die Dauer
+benennt erst Art. 35 Abs. 2 mit Rueckverweis. Fuenftens nennt die
+Tabellenunterschrift jetzt Abs. 2 Satz 3 und fuer Nummer 2 zusaetzlich Abs. 3,
+denn die Bemessung ueber anrechenbare Betriebsstunden steht in Absatz 3.
+
+**NABEG gestrichen, Entscheidung des Verfassers.** Der Satz zu Redispatch 2.0
+zitierte EnWG und NABEG. Die konsolidierte NABEG-Fassung enthaelt null Treffer
+fuer "13a", "Redispatch", "Engpass" und "1. Oktober 2021". Den Stichtag traegt
+allein Paragraf 118 Abs. 25a Satz 1 EnWG. Das aendernde Gesetz vom 13.05.2019,
+BGBl. I S. 706, ist auf Entscheidung des Verfassers nicht als eigener Beleg
+aufgenommen worden.
+
+**Bezugsgroessen praezisiert.** Die Zahl der PSKW wurde mit dem Wachstum des
+Bestands belegt, der in GW ausgewiesen ist; jetzt steht "Die installierte
+Leistung der PSKW waechst ... nur um rund ein Fuenftel", 9,9 auf 12,0 GW sind
+21,2 Prozent. "Zubau auf 67,6 GW" ist durch "Bestand von 67,6 GW" ersetzt, denn
+der Zubau gegenueber 2024 betraegt 65,9 GW. "Eine Ausschreibung von 564 MW" ist
+durch "eine im Jahresdurchschnitt ausgeschriebene Leistung von 564 MW" ersetzt.
+"Die seit Juni 2024 etablierten Intraday-Auktionen" ist getrennt in den Satz zu
+den Auktionen und den Satz "Seit dem 13. Juni 2024 finden drei Intraday-Auktionen
+statt, zuvor war es eine einzige", denn die IDA-1 bestand vorher. Die
+Handelsschlussstaffelung nennt jetzt die EPEX SPOT fuer die 30 und die 5 Minuten,
+denn der Monitoringbericht nennt auf S. 141 fuer die Nord Pool 20 Minuten
+beziehungsweise den Handel bis zum Lieferzeitpunkt; die 60 Minuten sind dagegen
+der Schluss des gebotszonenuebergreifenden Intraday-Marktes im SIDC und gelten
+allgemein. Das mehrdeutige "davor" ist entfallen, alle drei Fristen beziehen
+sich auf den Lieferbeginn.
+
+**Betriebsbereitschaft, eigenstaendige Ableitung.** Paragraf 13a Abs. 2 Satz 3
+Nr. 4 erstattet die notwendigen Auslagen fuer die Herstellung der
+Betriebsbereitschaft, Abs. 4 schliesst insbesondere Betriebsbereitschaftsauslagen
+aus. Beides stand im Kapitel unverbunden nebeneinander und las sich als
+Widerspruch. Ergaenzt sind deshalb zwei Saetze im rechtlichen Rahmen:
+"Erstattungsfaehig bleiben nach Absatz 2 allein die Auslagen fuer die Herstellung
+der Betriebsbereitschaft, also die einmaligen Kosten des Anfahrens fuer die
+angeforderte Anpassung. Die Grenze verlaeuft damit zwischen der laufenden
+Bereitschaft und dem einzelnen Anfahren." Die Abgrenzung steht in keiner Quelle
+so und ist als eigene Ableitung aus dem Wortlaut beider Absaetze gekennzeichnet.
+Sie traegt den Schluss desselben Absatzes, dass fuer eine am Markt bleibende
+Anlage keine Verguetung der Vorhaltung besteht.
+
+**Zwei Quellen verwaist.** bundesnetzagentur_beschluss_2019 und
+bundesministerium_der_justiz_netzausbaubeschleunigungsgesetz_2025 werden im Text
+nirgends mehr zitiert. Die Eintraege in literature.bib bleiben vorerst stehen,
+der Verfasser hat ueber ihre Entfernung noch nicht entschieden.
+
+**Nebenbefunde ohne Textfolge in Kapitel 2.** Die 64,2 GW sind der
+Genehmigungswert einschliesslich Reservekraftwerken; der NEP setzt auf S. 30 in
+seiner eigenen Modellierung rund 2 bis 3 GW weniger an. Die Windwerte 72,7 und
+214,2 GW sind eigene Summen aus Onshore und Offshore, der NEP weist keine
+Wind-Summenzeile aus. Die Ausgangswerte der Tabelle stammen saemtlich aus dem
+NEP und nicht aus dem Marktstammdatenregister; analysen/mastr_speicher liefert
+bei anderer Abgrenzung und anderem Stichtag andere Groessen, beide Zahlenwelten
+duerfen nicht vermischt werden. Der NEP hat bei den Batteriespeichern eine
+interne Spannung, naemlich 1,7 GW in Tabelle 1 gegen "rund 1,3 GW" im Fliesstext
+auf S. 50; die Arbeit folgt der Tabelle.
+
+**Fuer Kapitel 3 vorzumerken.** Anlage 1 der Festlegung, S. 13: "Jedenfalls
+erachtet die Beschlusskammer eine Anwendung der Vorgaben zur Verguetung von
+Pumpspeicherwerke auf Batteriespeicher (auch ohne weitere Anpassungen) als
+zulaessig." Das ist der Quellenbeleg dafuer, dass die am PSKW entwickelte
+Bemessung auf BESS uebertragen werden darf. Ebenda: "Paragraf 13a Abs. 2 EnWG
+gibt ausdruecklich einen kostenbasierten Redispatch vor und die Einfuehrung
+eines marktbasierten Redispatches ist schon aufgrund des gesetzlichen Rahmens
+nicht moeglich." Ferner ist die 30-Tage-Standardabweichung nicht mit den
+90 Tagen zu verwechseln, die Anlage 1 in den Fussnoten 15 und 25 fuer die
+Schaetzung des IDA-Ergebnisses vor 14:30 Uhr nennt.
+
+**Technische Hinweise.** Die PDF von ffe_saegezahn_2026 und die FAQ Stromspeicher
+tragen Type-3-Subsetfonts ohne ToUnicode-Tabelle und sind mit pdftotext nicht
+auslesbar; fuer die FfE-Quelle ist die Substitution der ersten Seite
+entschluesselt worden. Anlage 1 der Festlegung liegt doppelt in literature/PDFs.
+
+**Geprueft.** tools/pruefen.py --alle mit einem Befund, naemlich dem bekannten
+Altbefund in chapter_5.tex Zeile 91, der zum auskommentierten Kapitel gehoert.
+Build mit biber und den beiden bekannten Referenzwarnungen, 94 Seiten.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
@@ -10819,6 +10984,35 @@ Megawattstunden je Megawatt und zwei Zyklen je Tag" geaendert, siehe den
 Eintrag zu 3.3.1 unter chapter_3.tex. **isea_methodik_2026**: note um den
 Ort des Quelltexts und die vier Standardkonfigurationen ergaenzt. Das
 Abrufdatum bleibt, denn die Exporte stammen vom 08.09.2026.
+
+### 19.09.2026, Aktenzeichen der Festlegung vereinheitlicht
+
+**Entscheidung des Verfassers.** Das Aktenzeichen lautet BK8-22-001-A mit drei
+Ziffern. Der offene Punkt aus CLAUDE.md Abschnitt 5 ist damit entschieden.
+
+**Grundlage, Befund der Zahlenpruefung.** Das PDF der Festlegung schreibt
+durchgehend drei Ziffern, naemlich "Aktenzeichen: BK8-22-001-A" in der Kopfzeile
+des Beschlusses und zweimal "Festlegung BK8-22/001-A" im Fliesstext der
+Anlage 1, S. 4 und S. 27. Fuer die Schreibweise BK8-22-0001 gibt es in Beschluss
+und Anlagen null Treffer. Die vierstellige Form stammt allein aus der
+BNetzA-URL und aus den Dateinamen in literature/PDFs. Die Bundesnetzagentur ist
+bei aelteren Festlegungen in sich uneinheitlich, sie schreibt in derselben
+Anlage BK8-18/0007-A und BK8-18/007-A; das Dokument selbst ist es nicht.
+
+**Geaendert.** Drei Stellen in literature.bib, naemlich die Titel der Anlagen 1
+und 5 und das Feld type des Festlegungseintrags. Nicht geaendert sind die URL
+und die Dateipfade, weil sie echte Adressen und Dateinamen sind und dort
+vierstellig geschrieben werden. extras/attachment.tex schrieb bereits drei
+Ziffern, das Dokument ist damit in sich einheitlich.
+
+**Weber-Gutachten, Auftraggeber bleibt offen.** Die Quellen widersprechen sich:
+das Deckblatt der Anlage 2 sagt "Gutachten im Auftrag der EnBW", die Festlegung
+sagt in Fn. 1 auf S. 4 "Das von Prof. Dr. Christoph Weber im Auftrag des BDEW
+erstellte Gutachten vom 11.08.2015". Der Eintrag weber_gutachten_2015 folgt mit
+type = {Gutachten im Auftrag der EnBW} dem Deckblatt und bleibt unveraendert,
+denn das Deckblatt des Gutachtens ist fuer die Frage, wer es beauftragt hat, die
+naehere Quelle. Kapitel 2 nennt den Auftraggeber nicht, die Frage hat dort also
+keine Folge. Fuer Kapitel 5 ist sie vorzumerken.
 
 ## Offene Punkte, Stand 08.09.2026
 
