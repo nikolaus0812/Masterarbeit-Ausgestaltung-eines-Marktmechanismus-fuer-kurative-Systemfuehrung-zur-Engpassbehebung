@@ -413,14 +413,42 @@ Die kurative Höherauslastung begreift die thermische Reserve zwischen \ac{PATL}
 %Der kurative Redispatch wird ebenfalls vorab eingeplant und scharfgeschaltet, der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert, denn die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist, und behebt die Überlastung innerhalb der zulässigen Überlastdauer.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
 %Der kurative Redispatch wird ebenfalls vorab eingeplant und scharfgeschaltet.
-Auch der kurative Redispatch wird vorab eingeplant und scharfgeschaltet.
+% NEU GEFASST am 19.09.2026, Kommentar des Verfassers: "kurativer redispatch koennte man einfach
+% die kurative massnahme nicht als hoeherauslastungpotential begreifen sondern als vorgeplante
+% zusaetzliche sicherung der n-1 grenzen". Der Satz sagte bisher nur, dass auch der kurative
+% Redispatch vorab eingeplant wird, und nannte den Zweck nicht. Jetzt steht die Abgrenzung zur
+% Hoeherauslastung im Satz. Alte Fassung:
+%Auch der kurative Redispatch wird vorab eingeplant und scharfgeschaltet.
+Der kurative Redispatch nutzt dieselbe Reserve dagegen nicht für eine höhere Vorauslastung, sondern sichert mit ihr das \mbox{(N-1)-Kriterium} durch eine vorab eingeplante Maßnahme ab.
+% ZWECK ERGAENZT am 19.09.2026, Kommentar des Verfassers: "ohne den fahrplan zu aendern kannst du
+% streichen. es wird ja dann dafuer eingesetzt, dass wenn kurzfristig engpassmanagement gemacht
+% werden muss die kurative massnahme nur die systemsicherheit gewaehrleistet statt noch teurer
+% kurzfristige massnahmen zu ergreifen". Der Absatz schliesst damit an den Absatz davor an, der
+% den kleinen Kreis kurzfristig verfuegbarer Anlagen und seine Kostenwirkung entwickelt. Die
+% Aussage des ersten Satzes, die kurative Systemfuehrung setze auch am Planungshorizont an, ist
+% damit wieder getragen, und zwar als Kostenargument und nicht als Behauptung ueber die Abdeckung
+% spaet entstehender Netzzustaende, die am 15.09.2026 zurueckgenommen worden ist. Alte Fassung:
+%Der \ac{ÜNB} plant die Maßnahme für eine Ausfallvariante ein und schaltet sie scharf, ohne den Fahrplan vorher zu ändern.
+Der \ac{ÜNB} plant die Maßnahme für eine Ausfallvariante ein und schaltet sie scharf.
+Wird der Eingriff erst kurzfristig erforderlich, wahrt die kurative Maßnahme die Systemsicherheit.
+Ein kurzfristiger präventiver Redispatch mit dem kleinen Kreis verfügbarer Anlagen wird dann nicht nötig.
 % DURCHSICHT 16.09.2026, C1, These und Erklaerung. Alte Fassung:
 %Der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert: Die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist.
 Der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert und im Zeitpunkt: Die Maßnahme wird erst ausgeführt, nachdem der Fehler eingetreten und die Überlastung tatsächlich vorhanden ist, und behebt sie innerhalb der zulässigen Überlastdauer.
 % DURCHSICHT 16.09.2026, C1, im Vorsatz aufgegangen: Die Maßnahme behebt die Überlastung dann innerhalb der zulässigen Überlastdauer.
-Weil auch der kurative Redispatch vorab eingeplant wird, hängt es von der Einplanung für die betroffene Ausfallvariante ab, ob eine kurative Maßnahme einen Netzzustand abdeckt, der erst nach der letzten Vorschaurechnung entsteht.
+% GESTRICHEN am 19.09.2026, Kommentar des Verfassers: "das verstehe ich nicht". Der Satz war die
+% abgeschwaechte Fassung der am 15.09.2026 zurueckgenommenen Behauptung, der kurative Redispatch
+% decke Netzzustaende ab, fuer die sich praeventiv keine Massnahme mehr disponieren laesst. Uebrig
+% blieb eine Aussage ohne Inhalt, naemlich dass die Abdeckung von der Einplanung abhaengt. Die
+% Einplanung fuer eine Ausfallvariante steht jetzt im Satz zum kurativen Redispatch selbst.
+% Gestrichener Satz, nicht wieder aufnehmen:
+%Weil auch der kurative Redispatch vorab eingeplant wird, hängt es von der Einplanung für die betroffene Ausfallvariante ab, ob eine kurative Maßnahme einen Netzzustand abdeckt, der erst nach der letzten Vorschaurechnung entsteht.
 % R-17 am 18.09.2026, Kontrolle durch Fable: von Absatz 11 bleibt allein dieser Satz, er haengt jetzt an Absatz 10.
-Für den Anlagenbetreiber entfällt der Aufwand damit nicht, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
+% BEZUG AUSGESCHRIEBEN am 19.09.2026: das Wort damit verwies auf den gestrichenen Satz davor und
+% ist durch den gemeinten Fall ersetzt, naemlich die Vorhaltung ohne Abruf, Stilregel 5. Alte
+% Fassung:
+%Für den Anlagenbetreiber entfällt der Aufwand damit nicht, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
+Auch ohne Abruf entsteht dem Anlagenbetreiber Aufwand, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
 
 % S-01 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt Absatz 10 Satz 4 und 1.1 Absatz 11. Gestrichener Satz: Alte Fassung:
 %Der kurativen Höherauslastung und dem kurativen Redispatch ist gemeinsam, dass die Maßnahme erst nach dem Fehlereintritt wirkt und deshalb keinen vorherigen Eingriff in den Fahrplan erfordert.
@@ -435,8 +463,32 @@ Für den Anlagenbetreiber entfällt der Aufwand damit nicht, weil er das Stellpo
 
 % NEUER ABSATZ 16.09.2026, C2.3.
 Jahressimulationen belegen für den kurativen Betrieb ein Einsparpotenzial gegenüber dem rein präventiven Ansatz \cite{sous_comparison_2025}.
-Die Höhe des Potenzials hängt davon ab, welche Anlagen kurativ einsetzbar sind: Auf einem synthetischen Netzmodell mit Zieljahr 2037 sinken die Kosten des Engpassmanagements auf rund 42\,\% des rein präventiven Betriebs, solange allein Phasenschieber und \ac{HGÜ} zur Verfügung stehen.
-Werden zusätzlich die Abregelung erneuerbarer Erzeugung sowie \ac{PSKW} und \ac{BESS} einbezogen, sinken die Kosten auf rund 2\,\%.
+% RANDBEDINGUNG ERGAENZT und ZAHL BERICHTIGT am 19.09.2026, Kommentar des Verfassers:
+% "synthetisches netzmodell mit vereinfachten kostenannahmen". Nachgelesen in der Quelle, Abschnitt
+% zu den Kostenannahmen: "The costs assumed for preventive CM represent the order for deployment of
+% RAs (grid-related before market-related) and should roughly reflect the cost distribution of
+% preventive CM", mit Kostenparametern wie HGUE 1 Euro je MW, PST 5 Euro je Grad, Speicher 80 und
+% 237 Euro je MW, Kraftwerke 54 bis 160 Euro je MW, Erneuerbare 2170 Euro je MW und
+% grenzueberschreitender Redispatch 10000 Euro je MW. Die Annahmen bilden also eine Reihenfolge ab
+% und keine Marktpreise, die Randbedingung ist damit belegt.
+% ZAHL BERICHTIGT: Tabelle 2 der Quelle weist fuer die Variante Reference Curative die Werte
+% 42,07 Prozent (Cons.) und 1,57 Prozent (Amb.) des rein praeventiven Betriebs aus. Die bisherige
+% Angabe "rund 2 Prozent" trifft keinen Wert der Tabelle, 2,45 Prozent gehoert zur Variante
+% Redundanzkonzept 3. Richtig ist rund 1,6 Prozent. Alte Fassung:
+%Die Höhe des Potenzials hängt davon ab, welche Anlagen kurativ einsetzbar sind: Auf einem synthetischen Netzmodell mit Zieljahr 2037 sinken die Kosten des Engpassmanagements auf rund 42\,\% des rein präventiven Betriebs, solange allein Phasenschieber und \ac{HGÜ} zur Verfügung stehen.
+%Werden zusätzlich die Abregelung erneuerbarer Erzeugung sowie \ac{PSKW} und \ac{BESS} einbezogen, sinken die Kosten auf rund 2\,\%.
+Die Höhe des Potenzials hängt davon ab, welche Anlagen kurativ einsetzbar sind: Auf einem synthetischen Netzmodell mit Zieljahr 2037 und vereinfachten Kostenannahmen sinken die Kosten des Engpassmanagements auf rund 42\,\% des rein präventiven Betriebs, solange allein Phasenschieber und \ac{HGÜ} zur Verfügung stehen.
+Werden zusätzlich die Abregelung erneuerbarer Erzeugung sowie \ac{PSKW} und \ac{BESS} einbezogen, sinken die Kosten auf rund 1{,}6\,\%.
+% ERGAENZT am 19.09.2026, Stilregel 8: die Quelle schliesst die Uebertragung ausdruecklich aus,
+% "not all statements that apply to the grid model and scenario used in this work can be
+% transferred to a real-scale scenario (e.g., the German transmission grid)".
+Die Verfasser der Studie übertragen ihre Ergebnisse ausdrücklich nicht auf ein reales Netz wie das deutsche Übertragungsnetz.
+% ERGAENZT am 19.09.2026, Kommentar des Verfassers: "danach kommen wir ja dazu was kurativ kostet
+% und wenn kurativ guenstig ist kann man es sowohl fuer hoeherauslastung als auch fuer kurzfristige
+% absicherung der systemgrenzen einsetzen". Der Satz zieht die Folge aus den beiden Auspraegungen
+% und den Kosten und leitet zu der Frage ueber, fuer welche Kostenart die Verguetungssystematik
+% keine Regel kennt.
+Bleibt die Vorhaltung günstig, lässt sie sich für beide Ausprägungen einsetzen, nämlich für die Höherauslastung und für die kurzfristige Absicherung der Systemgrenzen.
 Zugleich ändert sich die Art der entstehenden Kosten, da an die Stelle der Erzeugungsauslagen einer durchgeführten Maßnahme die Vorhaltekosten einer bereitgestellten Reaktionsfähigkeit treten.
 Für diese Kostenart kennt der finanzielle Ausgleich nach §\,13a \ac{EnWG} keine Regel, nach der sie zu vergüten wäre, denn er knüpft an die durchgeführte Anpassung an \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 % ABSAETZE VERBUNDEN am 19.09.2026, Vorgabe des Verfassers: "mir werden hier viel zu viel absaetze gemacht ... ein absatz sollte eigentlich mal mindestens eine halbe seite lang sein". Die Leerzeile stand hier bis zum 19.09.2026. Das Einsparpotenzial und seine Einordnung durch InnoSys 2030 tragen eine Kernaussage.

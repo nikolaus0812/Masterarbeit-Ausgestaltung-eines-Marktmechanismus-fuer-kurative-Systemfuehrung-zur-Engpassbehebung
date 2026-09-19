@@ -5468,6 +5468,99 @@ Saetze. Das Dokument hat wieder 94 statt 95 Seiten.
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit biber,
 weil sich Zitate geaendert haben, mit den beiden bekannten Referenzwarnungen.
 
+### 19.09.2026, 2.1.1 Absaetze 5 und 6, kurativer Redispatch und Einsparpotenzial
+
+**Kurativer Redispatch neu gefasst.** Kommentar des Verfassers zu den beiden
+Schlusssaetzen von Absatz 5: "das verstehe ich nicht. kurativer redispatch
+koennte man einfach die kurative massnahme nicht als hoeherauslastungpotential
+begreifen sondern als vorgeplante zusaetzliche sicherung der n-1 grenzen." Der
+Absatz stellt die beiden Auspraegungen jetzt als Gegensatz dar: die
+Hoeherauslastung nutzt die Reserve zwischen PATL und TATL als Betriebsfenster,
+der kurative Redispatch nutzt dieselbe Reserve nicht fuer eine hoehere
+Vorauslastung, sondern sichert mit ihr das (N-1)-Kriterium durch eine vorab
+eingeplante Massnahme ab.
+
+**Gestrichen, nicht wieder aufnehmen.** "Weil auch der kurative Redispatch vorab
+eingeplant wird, haengt es von der Einplanung fuer die betroffene
+Ausfallvariante ab, ob eine kurative Massnahme einen Netzzustand abdeckt, der
+erst nach der letzten Vorschaurechnung entsteht." Befund: der Satz war die
+abgeschwaechte Fassung der am 15.09.2026 zurueckgenommenen Behauptung, der
+kurative Redispatch decke Netzzustaende ab, fuer die sich praeventiv keine
+Massnahme mehr disponieren laesst. Uebrig blieb eine Aussage ohne Inhalt.
+Ebenfalls zurueckgenommen: "Auch der kurative Redispatch wird vorab eingeplant
+und scharfgeschaltet", weil der Satz den Zweck nicht nannte.
+
+**Zweck des kurativen Redispatch, Vorgabe des Verfassers.** "ohne den fahrplan zu
+aendern kannst du streichen. es wird ja dann dafuer eingesetzt, dass wenn
+kurzfristig engpassmanagement gemacht werden muss die kurative massnahme nur die
+systemsicherheit gewaehrleistet statt noch teurer kurzfristige massnahmen zu
+ergreifen." Im Text stehen dafuer zwei Saetze: "Wird der Eingriff erst
+kurzfristig erforderlich, wahrt die kurative Massnahme die Systemsicherheit. Ein
+kurzfristiger praeventiver Redispatch mit dem kleinen Kreis verfuegbarer Anlagen
+wird dann nicht noetig." Zurueckgenommene Zwischenfassung desselben Tages: "Der
+UeNB plant die Massnahme fuer eine Ausfallvariante ein und schaltet sie scharf,
+ohne den Fahrplan vorher zu aendern."
+
+**Damit ist eine offene Frage desselben Tages erledigt.** Der Eingangssatz von
+Absatz 5 sagt, die kurative Systemfuehrung setze an der praeventiven
+Sicherheitsmarge und am Planungshorizont an. Der Bezug zum Planungshorizont war
+seit der Ruecknahme vom 15.09.2026 ungedeckt. Er ist jetzt wieder getragen, und
+zwar als Kostenargument, naemlich dass der teure kurzfristige praeventive
+Redispatch mit wenigen verfuegbaren Anlagen entfaellt, und nicht als Behauptung
+ueber die Abdeckung spaet entstehender Netzzustaende.
+
+**Bogen zum Kostenabsatz, Vorgabe des Verfassers.** "danach kommen wir ja dazu
+was kurativ kostet und wenn kurativ guenstig ist kann man es sowohl fuer
+hoeherauslastung als auch fuer kurzfristige absicherung der systemgrenzen
+einsetzen." Neuer Satz in Absatz 6: "Bleibt die Vorhaltung guenstig, laesst sie
+sich fuer beide Auspraegungen einsetzen, naemlich fuer die Hoeherauslastung und
+fuer die kurzfristige Absicherung der Systemgrenzen." Der Satz ist aus dem
+Kommentar des Verfassers gesetzt und stuetzt sich nicht auf eine Quelle.
+
+**Bezug ausgeschrieben.** Alte Fassung: "Fuer den Anlagenbetreiber entfaellt der
+Aufwand damit nicht, weil er das Stellpotenzial ueber die gesamte Bindungsdauer
+bereithalten muss." Das Wort damit verwies auf den gestrichenen Satz. Neue
+Fassung: "Auch ohne Abruf entsteht dem Anlagenbetreiber Aufwand, weil er das
+Stellpotenzial ueber die gesamte Bindungsdauer bereithalten muss."
+
+**Randbedingung der Jahressimulationen, Vorgabe des Verfassers.** "synthetisches
+netzmodell mit vereinfachten kostenannahmen." In sous_comparison_2025
+nachgelesen und bestaetigt: "The costs assumed for preventive CM represent the
+order for deployment of RAs (grid-related before market-related) and should
+roughly reflect the cost distribution of preventive CM." Die Kostenparameter
+lauten HGUE 1 Euro je MW, PST 5 Euro je Grad, Power-to-Gas 44 Euro je MW,
+Pump- und Batteriespeicher 80 Euro je MW abwaerts und 237 Euro je MW aufwaerts,
+Kraftwerke 54 bis 160 Euro je MW, Erneuerbare 2170 Euro je MW und
+grenzueberschreitender Redispatch 10000 Euro je MW. Die Annahmen bilden eine
+Einsatzreihenfolge ab und keine Marktpreise. Im Text steht jetzt "mit Zieljahr
+2037 und vereinfachten Kostenannahmen". Das Zieljahr 2037 ist ebenfalls
+bestaetigt, die Studie skaliert ihr Szenario nach dem Netzentwicklungsplan 2023.
+
+**ZAHL BERICHTIGT, eigenstaendiger Befund.** Bisher stand im Text, die Kosten
+sinken auf rund 2 Prozent, sobald neben Phasenschiebern und HGUE auch die
+Abregelung erneuerbarer Erzeugung sowie PSKW und BESS einbezogen werden.
+Tabelle 2 der Quelle weist fuer die Variante Reference Curative die Werte
+42,07 Prozent im konservativen und 1,57 Prozent im ambitionierten Fall aus,
+jeweils bezogen auf den rein praeventiven Betrieb. Die Angabe von rund
+2 Prozent trifft keinen Wert dieser Zeile; 2,45 Prozent gehoert zur Variante
+Redundanzkonzept 3 im ambitionierten Fall, also zu einem anderen Konzept.
+Richtig ist rund 1,6 Prozent. Der Wert von 42 Prozent ist bestaetigt. Der
+Befund stammt aus der Nachlese anlaesslich des Kommentars zur Randbedingung und
+nicht vom Verfasser.
+
+**Einschraenkung der Uebertragbarkeit ergaenzt, Stilregel 8.** Die Quelle
+schliesst die Uebertragung selbst aus: "It should be noted that not all
+statements that apply to the grid model and scenario used in this work can be
+transferred to a real-scale scenario (e.g., the German transmission grid)."
+Neuer Satz im Text: "Die Verfasser der Studie uebertragen ihre Ergebnisse
+ausdruecklich nicht auf ein reales Netz wie das deutsche Uebertragungsnetz."
+Eigenstaendige Ergaenzung, als solche gekennzeichnet; ohne sie wird die Zahl von
+1,6 Prozent als Aussage ueber Deutschland gelesen. Der Verfasser ist darauf
+hingewiesen worden.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
+beiden bekannten Referenzwarnungen, 95 Seiten.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
