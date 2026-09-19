@@ -5061,6 +5061,119 @@ weiter benannt, weil der Absatz ihn fuer die Abgrenzung braucht.
 
 **Ergebnis.** Das Dokument hat 94 statt 95 Seiten.
 
+
+### 19.09.2026, 2.1.1 umgestellt: erst praeventiv, dann kurativ
+
+**Anlass.** Kommentar des Verfassers am PDF: "2.1.1 der aufbau gefaellt mir noch
+nicht ganz. ich wuerde gerne erst mit praeventiv anfangen das erklaeren, dann
+kurativ wie folgt", gefolgt von einem Textblock, der den kurativen Teil im
+Wortlaut vorgab. Der Verfasser hat die vorgelegte Absatzfolge freigegeben und
+verlangt, seine Formulierungen moeglichst beizubehalten.
+
+**Herkunft des Textblocks.** Der Block ist die Fassung von 2.1.1 vor dem
+15.09.2026, erkennbar an den Trennzeichen eines aelteren PDF und an Wendungen,
+die seither nach Stilregel 17 geteilt worden sind. Uebernommen ist deshalb die
+Reihenfolge und der Wortlaut, nicht die Satzlaenge. Lange Ketten sind geteilt,
+das ist im Kapitel jeweils als Kommentar vermerkt.
+
+**Neue Absatzfolge.** Vorher: kurativer Teil mit Entlastungsmassnahme und
+Netzzustand (Absatz 1), thermische Traegheit mit PATL und TATL (Absatz 2),
+praeventiver Regelfall mit der Abbildung (Absatz 3), Kosten und Grenze
+(Absaetze 4 bis 6), kurative Auspraegungen (Absaetze 7 bis 9). Nachher elf
+Absaetze in der Folge: praeventiver Regelfall, Kosten und Grenze in drei
+Absaetzen, Ueberleitung mit dem Unterschied im Zeitpunkt, Netzzustand,
+thermische Traegheit mit PATL und TATL, Abbildung, kurative Auspraegungen,
+Jahressimulationen, InnoSys 2030 und Zwischenergebnis. Kein Satz ist gestrichen,
+zehn Zeilen sind durch fuenfzehn ersetzt.
+
+**Begruendung der Reihenfolge.** Die Einleitung von 2.1 endet mit dem Satz, dass
+die praeventive Systemfuehrung das Kriterium vor dem Fehlerfall sicherstellt und
+die kurative danach. Der praeventive Regelfall schliesst daran unmittelbar an,
+Stilregel 3. Der kurative Teil folgt dann als Antwort auf die Marge und den
+Planungshorizont, die der praeventive Teil als Kosten und Grenze ausweist.
+
+**S-05 zurueckgenommen.** Der Satz "Der Unterschied beider Konzepte liegt damit
+im Zeitpunkt des Eingriffs: Der praeventive Ansatz bewirtschaftet den Engpass im
+Voraus, indem er ihn durch Anpassung der Fahrplaene gar nicht erst entstehen
+laesst, waehrend der kurative Ansatz den bereits eingetretenen Engpass innerhalb
+des zulaessigen Ueberlastintervalls behebt" ist am 18.09.2026 als S-05
+gestrichen worden mit der Begruendung, die Aussage trage 2.1 Absatz 3. Der
+Verfasser hat ihn am 19.09.2026 in seinen Textblock aufgenommen. Die Streichung
+ist damit zurueckgenommen, denn nach der Umstellung traegt der Satz das
+Scharnier zwischen dem praeventiven und dem kurativen Teil. Er steht nach
+Stilregel 17 in drei Saetzen und eroeffnet den Absatz, statt in seiner Mitte zu
+stehen.
+
+**Ueberlastintervall.** Der Ausdruck "zulaessiges Ueberlastintervall" aus dem
+Textblock ist durch den verbindlichen Begriff "zulaessige Ueberlastdauer"
+ersetzt, CLAUDE.md Abschnitt 5 und Stilregel 14. Der Ausdruck ist an keiner
+anderen Stelle im Text.
+
+**Aktivierung.** Der Textblock schreibt "an den Zeitpunkt ihrer Aktivierung".
+Nach Entscheidung V4 vom 14.09.2026 steht Aktivierung nur in Zitaten aus SOGL
+und InnoSys. Im Text steht deshalb weiter "An den Zeitpunkt ihres Einsatzes
+knuepft die Leitlinie keine Bedingung". Der Verfasser ist darauf hingewiesen
+worden und hat nicht widersprochen.
+
+**Transiente Stromtragfaehigkeit.** Der Textblock schliesst den Abbildungsabsatz
+mit "bevor die transiente Stromtragfaehigkeit ueberschritten wird". Die Wendung
+ist nicht uebernommen, weil damit ein anderer Grenzwert als der TATL bezeichnet
+ist. Es bleibt bei der Fassung aus R-13 vom 18.09.2026, "bevor die zulaessige
+Dauer ueberschritten ist". Der Verfasser ist darauf hingewiesen worden und hat
+nicht widersprochen.
+
+**Zwei Zusaetze des Verfassers uebernommen.**
+Erstens beim TATL: "Zu jeder Hoehe der Ueberlast ist eine zugehoerige zulaessige
+Dauer festzulegen, die von der jeweiligen thermischen Traegheit abhaengt." Der
+Relativsatz ist neu, er deckt sich mit der Herleitung in Anhang B.
+Zweitens der Satz zur Bezeichnung in der Leitlinie: "Die Leitlinie selbst
+verwendet diese beiden Bezeichnungen nicht, sondern spricht von den Grenzwerten
+fuer den Strom hinsichtlich der thermischen Belastbarkeit einschliesslich
+voruebergehend zulaessiger Ueberlastungen." Der Satz stand bis zum 19.09.2026 in
+der Fussnote zu PATL und TATL und ist bei deren Aufloesung am selben Tag
+verlorengegangen. Der Verfasser hat den Verlust am PDF bemerkt.
+
+**PATL wandert nach hinten, eigenstaendige Ableitung.** Nach der Umstellung
+werden PATL und TATL erst im siebten Absatz eingefuehrt, der Absatz zu Kosten
+und Grenze braucht den Grenzwert aber schon im zweiten. Eigenstaendige Pruefung:
+der PATL kommt in den vorgezogenen praeventiven Absaetzen genau einmal vor,
+naemlich im Satz zur Marge. Dort steht jetzt die deutsche Bezeichnung aus dem
+Abkuerzungsverzeichnis, das Akronym wird erst bei seiner Definition eingefuehrt.
+Zurueckgenommene Fassung: "Erstens beruht die Sicherheit auf einer Marge
+zwischen der Vorauslastung und dem PATL, die nicht gewaehlt wird, sondern aus der
+unguenstigsten Ausfallvariante folgt." Neue Fassung mit "und der dauerhaft
+zulaessigen Strombelastbarkeit". Der Verfasser hat diese Loesung ausdruecklich
+freigegeben. Folge fuer CLAUDE.md Abschnitt 5: dort steht als Ort der Definition
+von PATL und TATL noch "2.1.1 Absatz 1", richtig ist jetzt Absatz 7. Der
+Verfasser zieht CLAUDE.md selbst nach.
+
+**Zitatbuendelung, eigenstaendige Ableitung.** Im Absatz zu PATL und TATL stand
+die Leitlinie zweimal als Beleg, einmal beim Satz zu den Sicherheitsgrenzwerten
+und einmal beim neu aufgenommenen Satz zur Bezeichnung. Nach Stilregel 15 steht
+eine Quelle je Absatz nur einmal. Der Beleg steht deshalb allein am Satz zur
+Bezeichnung, der ihren Wortlaut wiedergibt, und traegt beide Aussagen.
+
+**Ueberleitungssatz zurueckgenommen.** "Dass der kurative Ansatz den Engpass erst
+nach dem Fehler beheben kann, hat eine physikalische Grundlage, naemlich die
+thermische Traegheit der Betriebsmittel." Diese Fassung vom 16.09.2026 ist durch
+die kuerzere Fassung des Verfassers ersetzt, "Physikalische Grundlage des
+kurativen Ansatzes ist die thermische Traegheit der Betriebsmittel", weil der
+Absatz nach der Umstellung auf den Netzzustand folgt und der Bezug ohne den
+langen Vorsatz klar ist. Nicht wieder aufzunehmen.
+
+**Fehler bei der Umstellung und seine Behebung.** Das Umstellungsskript hat eine
+Fliesstextzeile mit in einen Kommentarblock genommen, sodass der alte und der
+neue erste Satz des Abbildungsabsatzes beide im Satz standen. Der Fehler ist am
+gesetzten PDF aufgefallen und behoben. Lehre fuer kuenftige Umstellungen: der
+Zeilenvergleich der Fliesstextzeilen vor und nach der Umstellung ist zu
+protokollieren, eine reine Zaehlung genuegt nicht.
+
+**Pruefung und Ergebnis.** `python tools/pruefen.py chapter_2.tex` ohne Befund.
+Build sauber, die beiden Warnungen zu ch:discussion und ch:conc gehoeren zu den
+auskommentierten Kapiteln 5 und 6. Das Dokument hat 95 statt 94 Seiten, die
+zusaetzliche Seite entsteht durch fuenf Saetze mehr und zwei zusaetzliche
+Absatzumbrueche in 2.1.1.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3

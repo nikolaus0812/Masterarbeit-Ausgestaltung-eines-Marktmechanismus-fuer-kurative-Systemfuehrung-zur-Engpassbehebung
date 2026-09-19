@@ -52,6 +52,110 @@ Wie die \ac{ÜNB} das Kriterium erfüllen, unterscheidet sich nach dem Systemfü
 \subsection{Präventive und kurative Systemführung im Engpassmanagement}
 \label{sec:prev_vs_cur}
 
+% UMSTELLUNG DES ABSCHNITTS am 19.09.2026, Kommentar des Verfassers: "der aufbau gefaellt mir
+% noch nicht ganz. ich wuerde gerne erst mit praeventiv anfangen das erklaeren, dann kurativ".
+% Die Absatzfolge lautet jetzt: praeventiver Regelfall, Kosten und Grenze des praeventiven
+% Vorgehens in drei Absaetzen, Ueberleitung zum kurativen Ansatz, Netzzustand, thermische
+% Traegheit mit PATL und TATL, Abbildung, kurative Auspraegungen, Jahressimulationen, InnoSys.
+% Vorher standen der kurative Teil und die Grenzwerte in den Absaetzen 1 und 2 vor dem
+% praeventiven Teil. Kein Satz ist gestrichen, die Absatzgrenzen sind neu gesetzt. Die
+% Formulierungen folgen dem Textblock des Verfassers vom 19.09.2026, soweit Stilregel 17 sie
+% traegt, lange Satzketten sind geteilt.
+
+% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
+% Befunde B45, G10, G11, Q1, Q14. Praeventiver Redispatch als Regelfall genannt, Stufung gekuerzt, Vorteil und Optimalfall verbunden.
+% Alte Fassung, nicht wieder aufnehmen:
+%Der präventive Ansatz stellt (N-1)-Sicherheit her, indem er die zulässige Vorauslastung der Betriebsmittel unterhalb der \ac{PATL} begrenzt und die dafür erforderlichen Anpassungen bereits in der Einsatzplanung anordnet.
+%Grundlage dafür ist eine gestufte Betriebsplanung, die den Netzzustand mit abnehmendem zeitlichen Vorlauf zunehmend genau abbildet.
+%Die \ac{SOGL} verpflichtet die \ac{ÜNB}, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen, sie untereinander auszutauschen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
+%Die deutschen Redispatchprozesse lehnen sich an diese Stufung an und führen den erforderlichen Eingriff sukzessive durch, indem jede Planungsstufe den zu ihrem Zeitpunkt erkennbaren Engpass adressiert und die folgende Stufe die verbleibende Abweichung übernimmt \cite{leeuwen_integration_2020}.
+%Der Vorteil dieses Vorgehens liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt und im Fehlerfall sind keine reaktiven Eingriffe erforderlich.
+%Im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass bis zum Lieferzeitpunkt kein weiterer Eingriff mehr erforderlich ist.
+Der präventive Ansatz bildet heute den Regelfall und ordnet die erforderlichen Anpassungen, in der Regel präventiven Redispatch, bereits in der Einsatzplanung an.
+Grundlage dafür ist eine gestufte Betriebsplanung, in der die \ac{SOGL} die \ac{ÜNB} verpflichtet, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
+Die deutschen Redispatchprozesse lehnen sich an diese Stufung an, indem jede Planungsstufe den zu ihrem Zeitpunkt erkennbaren Engpass behebt und die folgende Stufe die verbleibende Abweichung übernimmt \cite{leeuwen_integration_2020}.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Der Vorteil liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt, und im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass im Fehlerfall kein reaktiver Eingriff mehr nötig ist.
+Der Vorteil liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt.
+Im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass im Fehlerfall kein reaktiver Eingriff mehr nötig ist.
+
+% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
+% Befunde B47 bis B52, Q1, Q3, V5, V13. Marge als Vorgabe des Netzes, Hoehe statt Breite, Planungshorizont statt Reichweite mit Zeiten, Beleg sous fuer die Kostenwirkung entfallen, weil die Quelle nur die Marge definiert.
+% Alte Fassung, nicht wieder aufnehmen:
+%Kosten und Grenze dieses präventiven Vorgehens folgen aus drei Merkmalen.
+%Erstens beruht die Robustheit auf einer Sicherheitsmarge, die die Vorauslastung so weit begrenzt, dass die Belastung auch nach einem Ausfall unterhalb der \ac{PATL} bleibt, und die den dafür erforderlichen Eingriff in die Fahrpläne verursacht.
+%Die Breite dieser Marge wirkt damit unmittelbar auf Volumen und Kosten des Redispatch \cite{sous_comparison_2025}.
+%Zweitens endet die Reichweite des Ansatzes mit der letzten Prognoserechnung, die vor dem Erfüllungszeitpunkt liegt.
+%Fahrplanänderungen aus dem danach verbleibenden Handelsfenster sind in ihr nicht mehr enthalten, und auf die daraus entstehenden Netzzustände lässt sich präventiv nicht mehr reagieren.
+%Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
+%Stehen für einen Engpass nur wenige geeignete Anlagen zur Verfügung, kann bereits ein moderates Eingriffsvolumen hohe Kosten verursachen.
+%Der Kreis geeigneter Anlagen verkleinert sich dabei, denn der Kohle- und Kernenergieausstieg reduziert die verfügbare steuerbare konventionelle Kapazität, während die Opportunitätskosten und Revisionsaufwände der verbleibenden Anlagen steigen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+%Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
+Kosten und Grenze des präventiven Vorgehens folgen aus drei Merkmalen.
+% R-14 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
+%Erstens beruht die Sicherheit auf einer Marge zwischen der Vorauslastung und dem \ac{PATL}, die nicht gewählt wird, sondern aus der ungünstigsten Ausfallvariante folgt, und das Freihalten dieser Marge ist der Eingriff in die Fahrpläne.
+% UMSTELLUNG am 19.09.2026: der PATL wird erst im kurativen Teil eingefuehrt, hier steht deshalb
+% die deutsche Bezeichnung aus dem Abkuerzungsverzeichnis. Alte Fassung:
+%Erstens beruht die Sicherheit auf einer Marge zwischen der Vorauslastung und dem \ac{PATL}, die nicht gewählt wird, sondern aus der ungünstigsten Ausfallvariante folgt.
+Erstens beruht die Sicherheit auf einer Marge zwischen der Vorauslastung und der dauerhaft zulässigen Strombelastbarkeit, die nicht gewählt wird, sondern aus der ungünstigsten Ausfallvariante folgt.
+Das Freihalten dieser Marge ist der Eingriff in die Fahrpläne.
+Die Höhe der Marge bestimmt damit Volumen und Kosten des präventiven Redispatch.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Zweitens reicht der Planungshorizont des Ansatzes, also der Zeitraum, den die Vorschaurechnungen abdecken, nur bis zur letzten Vorschaurechnung, nämlich der Vortagesrechnung und den untertägigen Rechnungen, die Abbildung~\ref{fig:markt_zeitschiene} auf der Zeitachse zeigt, während der Handel innerhalb einer Regelzone bis fünf Minuten vor Lieferung offen bleibt.
+Zweitens reicht der Planungshorizont des Ansatzes, also der Zeitraum, den die Vorschaurechnungen abdecken, nur bis zur letzten Vorschaurechnung.
+Die letzte Vorschaurechnung ist die Vortagesrechnung oder eine der untertägigen Rechnungen, die Abbildung~\ref{fig:markt_zeitschiene} auf der Zeitachse zeigt.
+% R-14 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Handelsschlusszeiten stehen in 2.2.2, hier genuegt der Verweis. Alte Fassung:
+%Der Handel innerhalb einer Regelzone bleibt dagegen bis fünf Minuten vor Lieferung offen.
+Der Handel bleibt dagegen bis kurz vor Lieferung offen, wie in Abschnitt~\ref{sec:market_horizons} dargestellt.
+Fahrplanänderungen aus diesem Zeitraum enthält keine Vorschaurechnung mehr, sodass der \ac{ÜNB} die daraus entstehenden Netzzustände nur noch mit den Mitteln beheben kann, die ohne Vorlauf verfügbar sind.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}, sodass bereits ein moderates Eingriffsvolumen hohe Kosten verursachen kann, wenn nur wenige geeignete Anlagen zur Verfügung stehen.
+
+% NEUER ABSATZ 16.09.2026, C2.2.
+Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
+Stehen nur wenige geeignete Anlagen zur Verfügung, kann bereits ein moderates Eingriffsvolumen hohe Kosten verursachen.
+Der Kreis geeigneter Anlagen verkleinert sich zugleich, denn der Kohle- und Kernenergieausstieg reduziert die steuerbare konventionelle Kapazität, während die Opportunitätskosten und Revisionsaufwände der verbleibenden Anlagen steigen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
+
+% ABSATZ VERBUNDEN 16.09.2026, C2.2.
+% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
+% Befunde B53, G12, Q2, V5. Fuenf Saetze auf drei, Beleg mahgoub steht in Kapitel 1.
+% Alte Fassung, nicht wieder aufnehmen:
+%Die begrenzte Reichweite und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
+%Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt \cite{mahgoub_wie_2025}, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
+%Je später sich der maßgebliche Netzzustand einstellt, desto später ist auch der erforderliche Eingriff zu bestimmen.
+%Mit der verbleibenden Vorlaufzeit sinkt jedoch die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der in Betracht kommenden Technologien Vorlaufzeiten von mehreren Stunden aufweist.
+%Ein kleinerer Kreis geeigneter Anlagen schlägt sich unmittelbar in den Kosten nieder.
+% R-15 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
+%Der begrenzte Planungshorizont und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert: Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
+Der begrenzte Planungshorizont und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
+Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
+% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
+%Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen, und mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der Technologien Vorlaufzeiten von mehreren Stunden aufweist.
+Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen.
+Mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können.
+% DURCHSICHT 16.09.2026, C1. Alte Fassung:
+%Ein Teil der Technologien weist Vorlaufzeiten von mehreren Stunden auf.
+% R-15 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt keine Quelle. Gestrichener Satz: Alte Fassung:
+%Ein Teil der Technologien weist nämlich Vorlaufzeiten von mehreren Stunden auf.
+% S-16 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt Satz 2 desselben Absatzes. Gestrichener Satz: Alte Fassung:
+%Ein kleinerer Kreis geeigneter Anlagen schlägt sich unmittelbar in den Kosten nieder.
+
+% NEUER ABSATZ am 19.09.2026, Umstellung: die Ueberleitung vom praeventiven zum kurativen Teil.
+% Der Verfasser hat den am 18.09.2026 als S-05 gestrichenen Satz in seinem Textblock wieder
+% aufgenommen, weil er als Scharnier zwischen beiden Teilen traegt. Die Streichung ist damit
+% zurueckgenommen. Der Satz ist nach Stilregel 17 in drei Saetze geteilt. Der Ausdruck
+% Ueberlastintervall aus dem Textblock ist durch den verbindlichen Begriff zulaessige
+% Ueberlastdauer ersetzt, CLAUDE.md Abschnitt 5. Der Vermerk der Streichung:
+% S-05 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt 2.1 Absatz 3. Gestrichener Satz: Alte Fassung:
+%Der Unterschied beider Konzepte liegt damit im Zeitpunkt des Eingriffs: Der präventive Ansatz bewirtschaftet den Engpass im Voraus, indem er ihn durch Anpassung der Fahrpläne gar nicht erst entstehen lässt, während der kurative Ansatz den bereits eingetretenen Engpass innerhalb des zulässigen Überlastintervalls behebt.
+% Die beiden Saetze zur Entlastungsmassnahme standen bis zum 19.09.2026 am Anfang des Abschnitts.
+Der Unterschied beider Ansätze liegt damit im Zeitpunkt des Eingriffs.
+Der präventive Ansatz bewirtschaftet den Engpass im Voraus, indem er ihn durch Anpassung der Fahrpläne gar nicht erst entstehen lässt.
+Der kurative Ansatz behebt dagegen den bereits eingetretenen Engpass innerhalb der zulässigen Überlastdauer.
+Kurative Maßnahmen sind Entlastungsmaßnahmen im Sinne der \ac{SOGL}, also Maßnahmen zur Behebung einer Grenzwertverletzung, denn die Leitlinie nennt als deren Arten unter anderem den Redispatch, Topologieschaltmaßnahmen und die Anpassung der Wirkleistungsflüsse von \ac{HGÜ}-Systemen.
+An den Zeitpunkt ihres Einsatzes knüpft die Leitlinie keine Bedingung.
+
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde B42, B43, B44, G7, G8, G9, Q13, V4. Konzepte beim Namen genannt, Not- und Blackoutzustand entfallen, Fussnote fuer die Bezeichnungen, zwei Absaetze.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -101,59 +205,61 @@ Wie die \ac{ÜNB} das Kriterium erfüllen, unterscheidet sich nach dem Systemfü
 % R-12 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Satz traegt die Kernaussage und steht jetzt am Anfang des Absatzes. Alte Fassung:
 %Kurative Maßnahmen sind Entlastungsmaßnahmen in diesem Sinne, denn die Leitlinie nennt als deren Arten unter anderem den Redispatch, Topologieschaltmaßnahmen und die Anpassung der Wirkleistungsflüsse von \ac{HGÜ}-Systemen und knüpft an den Zeitpunkt ihres Einsatzes keine Bedingung.
 %Die Nutzung der vorübergehend zulässigen Überlast führt damit für sich genommen nicht aus dem Normalzustand heraus, weil sie innerhalb der Grenzwerte liegt, während die Ausfallfestigkeit gegenüber dem nächsten Ausfall im Einzelfall zu prüfen ist.
-Die kurative Systemführung nutzt eine vorübergehend zulässige Überlast, und diese Nutzung führt für sich genommen nicht aus dem Normalzustand des Netzes heraus.
-Kurative Maßnahmen sind Entlastungsmaßnahmen im Sinne der \ac{SOGL}, also Maßnahmen zur Behebung einer Grenzwertverletzung, denn die Leitlinie nennt als deren Arten unter anderem den Redispatch, Topologieschaltmaßnahmen und die Anpassung der Wirkleistungsflüsse von \ac{HGÜ}-Systemen.
-An den Zeitpunkt ihres Einsatzes knüpft die Leitlinie keine Bedingung.
+% ABSATZ GETEILT am 19.09.2026, Umstellung: die beiden Saetze zur Entlastungsmassnahme stehen
+% jetzt in der Ueberleitung davor, hier bleibt allein der Netzzustand. Der erste und der letzte
+% Satz nehmen den Wortlaut des Verfassers vom 19.09.2026 auf, sein Satz ist nach Stilregel 17
+% geteilt. Alte Fassung der beiden Saetze:
+%Die kurative Systemführung nutzt eine vorübergehend zulässige Überlast, und diese Nutzung führt für sich genommen nicht aus dem Normalzustand des Netzes heraus.
+%Ob die Ausfallfestigkeit gegenüber dem nächsten Ausfall gewahrt bleibt, ist im Einzelfall zu prüfen.
+Die Nutzung der vorübergehend zulässigen Überlast führt für sich genommen nicht aus dem Normalzustand des Netzes heraus, weil sie innerhalb der Grenzwerte liegt.
 Den Zustand des Netzes bestimmt Art.\,18 \ac{SOGL} über ein Fünf-Zustands-Modell, in dessen Normalzustand alle Betriebsmittel innerhalb ihrer Grenzwerte belastet sind und das System (N-1)-sicher ist \cite{europaische_kommission_verordnung_2017}.
 In den Gefährdungszustand wechselt das Netz, sobald ein Ausfall aus der Ausfallvariantenliste zu einer Überschreitung führen würde.
 Maßgeblich ist dabei nicht der bereits eingetretene Ausfall, sondern die verbleibende Ausfallfestigkeit, denn die Leitlinie rechnet die Wirkung der verfügbaren Entlastungsmaßnahmen dem Netzzustand zu.
 Das Netz bleibt deshalb im Normalzustand, solange jeder weitere Ausfall der Ausfallvariantenliste mit Entlastungsmaßnahmen ohne Grenzwertüberschreitung beherrscht wird.
-Ob die Ausfallfestigkeit gegenüber dem nächsten Ausfall gewahrt bleibt, ist im Einzelfall zu prüfen.
-% S-05 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt 2.1 Absatz 3. Gestrichener Satz: Alte Fassung:
-%Der Unterschied beider Konzepte liegt damit im Zeitpunkt des Eingriffs: Der präventive Ansatz bewirtschaftet den Engpass im Voraus, indem er ihn durch Anpassung der Fahrpläne gar nicht erst entstehen lässt, während der kurative Ansatz den bereits eingetretenen Engpass innerhalb des zulässigen Überlastintervalls behebt.
+Die Ausfallfestigkeit gegenüber dem nächsten Ausfall ist dagegen im Einzelfall zu prüfen.
 
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel, die kurzfristig höhere Ströme tolerieren, als im Dauerbetrieb zulässig sind, und damit ein Zeitfenster für kurative Gegenmaßnahmen eröffnen.
 % DURCHSICHT 16.09.2026, C1, Ueberleitung. Alte Fassung:
 %Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel.
-Dass der kurative Ansatz den Engpass erst nach dem Fehler beheben kann, hat eine physikalische Grundlage, nämlich die thermische Trägheit der Betriebsmittel.
-Betriebsmittel tolerieren kurzfristig höhere Ströme, als im Dauerbetrieb zulässig sind, und eröffnen damit ein Zeitfenster für kurative Gegenmaßnahmen.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Die \ac{SOGL} konkretisiert dieses Zeitfenster über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat: Der \ac{PATL} ist die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann, der \ac{TATL} eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist, wobei zu jeder Höhe der Überlast eine zulässige Dauer gehört\footnote{Die Bezeichnungen \acs{PATL} und \acs{TATL} stammen aus InnoSys~2030 und dem Grenzwertkonzept der deutschen \acs{ÜNB} \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}. Die Leitlinie selbst spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.}.
 % FUSSNOTE AUFGELOEST am 19.09.2026, Vorgabe des Verfassers: die Zitate stehen im Text. Alte Fassung des TATL-Satzes:
 %Der \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist\footnote{Die Bezeichnungen \acs{PATL} und \acs{TATL} stammen aus InnoSys~2030 und dem Grenzwertkonzept der deutschen \acs{ÜNB} \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}. Die Leitlinie selbst spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.}.
-Die \ac{SOGL} konkretisiert dieses Zeitfenster über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat \cite{europaische_kommission_verordnung_2017}.
-Der \ac{PATL} ist die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann.
+% WORTLAUT DES VERFASSERS am 19.09.2026: die Saetze folgen seinem Textblock. Der Ueberleitungs-
+% satz vom 16.09.2026 ist zurueckgenommen, weil der Absatz jetzt auf den Netzzustand folgt und
+% der Verfasser die kuerzere Fassung vorgegeben hat. Das Zitat der Leitlinie ist nach Stilregel 15
+% auf den Satz gebuendelt, der ihren Wortlaut wiedergibt. Alte Fassung:
+%Dass der kurative Ansatz den Engpass erst nach dem Fehler beheben kann, hat eine physikalische Grundlage, nämlich die thermische Trägheit der Betriebsmittel.
+%Betriebsmittel tolerieren kurzfristig höhere Ströme, als im Dauerbetrieb zulässig sind, und eröffnen damit ein Zeitfenster für kurative Gegenmaßnahmen.
+%Die \ac{SOGL} konkretisiert dieses Zeitfenster über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat \cite{europaische_kommission_verordnung_2017}.
+%Der \ac{PATL} ist die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann.
+%Zu jeder Höhe der Überlast gehört dabei eine zulässige Dauer.
+% WIEDER AUFGENOMMEN am 19.09.2026, Vorgabe des Verfassers: der Satz zur Bezeichnung in der
+% Leitlinie stand bis zum 19.09.2026 in der Fussnote und ist bei deren Aufloesung verlorengegangen.
+Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel.
+Betriebsmittel tolerieren kurzfristig höhere Strombelastungen, als im Dauerbetrieb zulässig sind, und eröffnen damit ein Zeitfenster für kurative Gegenmaßnahmen.
+Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SOGL} über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat.
+Der \ac{PATL} ist dabei die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann.
 Der \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}.
-Zu jeder Höhe der Überlast gehört dabei eine zulässige Dauer.
+Zu jeder Höhe der Überlast ist eine zugehörige zulässige Dauer festzulegen, die von der jeweiligen thermischen Trägheit abhängt.
+Die Leitlinie selbst verwendet diese beiden Bezeichnungen nicht, sondern spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.
 Der Abstand zwischen beiden Grenzwerten und die zugehörige Dauer bestimmen damit, wie viel Zeit für eine kurative Gegenmaßnahme zur Verfügung steht.
-% VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall: Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den Unterschied beider Konzepte anhand der Betriebsmittelbelastung im Fehlerfall.
-% VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall: Im präventiven Betrieb wird die Vorauslastung so weit begrenzt, dass die Belastung auch nach dem Ausfall unterhalb des \ac{PATL} bleibt, die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL}, nutzt nach Eintreten des Fehlerfalles das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
 
-% ABBILDUNG VERSCHOBEN 16.09.2026, C2.1, steht jetzt hinter dem Absatz, der sie nennt.
-
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
-% Befunde B45, G10, G11, Q1, Q14. Praeventiver Redispatch als Regelfall genannt, Stufung gekuerzt, Vorteil und Optimalfall verbunden.
-% Alte Fassung, nicht wieder aufnehmen:
-%Der präventive Ansatz stellt (N-1)-Sicherheit her, indem er die zulässige Vorauslastung der Betriebsmittel unterhalb der \ac{PATL} begrenzt und die dafür erforderlichen Anpassungen bereits in der Einsatzplanung anordnet.
-%Grundlage dafür ist eine gestufte Betriebsplanung, die den Netzzustand mit abnehmendem zeitlichen Vorlauf zunehmend genau abbildet.
-%Die \ac{SOGL} verpflichtet die \ac{ÜNB}, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen, sie untereinander auszutauschen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
-%Die deutschen Redispatchprozesse lehnen sich an diese Stufung an und führen den erforderlichen Eingriff sukzessive durch, indem jede Planungsstufe den zu ihrem Zeitpunkt erkennbaren Engpass adressiert und die folgende Stufe die verbleibende Abweichung übernimmt \cite{leeuwen_integration_2020}.
-%Der Vorteil dieses Vorgehens liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt und im Fehlerfall sind keine reaktiven Eingriffe erforderlich.
-%Im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass bis zum Lieferzeitpunkt kein weiterer Eingriff mehr erforderlich ist.
-Der präventive Ansatz bildet heute den Regelfall und ordnet die erforderlichen Anpassungen, in der Regel präventiven Redispatch, bereits in der Einsatzplanung an.
-Grundlage dafür ist eine gestufte Betriebsplanung, in der die \ac{SOGL} die \ac{ÜNB} verpflichtet, abgestimmte Netzmodelle für den Jahres-, den Vortages- und den untertägigen Horizont zu erstellen und darauf Betriebssicherheitsanalysen durchzuführen \cite{europaische_kommission_verordnung_2017}.
-Die deutschen Redispatchprozesse lehnen sich an diese Stufung an, indem jede Planungsstufe den zu ihrem Zeitpunkt erkennbaren Engpass behebt und die folgende Stufe die verbleibende Abweichung übernimmt \cite{leeuwen_integration_2020}.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Der Vorteil liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt, und im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass im Fehlerfall kein reaktiver Eingriff mehr nötig ist.
-Der Vorteil liegt in der Planungssicherheit, denn Engpässe werden so früh wie möglich erkannt.
-Im Optimalfall hat die letzte Planungsstufe den Engpass vollständig aufgelöst, sodass im Fehlerfall kein reaktiver Eingriff mehr nötig ist.
 % HIERHER VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall.
-Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den Unterschied beider Konzepte anhand der Betriebsmittelbelastung im Fehlerfall.
 % R-13 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
 %Im präventiven Betrieb wird die Vorauslastung so weit begrenzt, dass die Belastung auch nach dem Ausfall unterhalb des \ac{PATL} bleibt, die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL}, nutzt nach Eintreten des Fehlerfalles das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
+% WORTLAUT DES VERFASSERS am 19.09.2026: der Absatz folgt seinem Textblock und steht jetzt am
+% Ende des kurativen Teils, weil er beide Ansaetze vergleicht. Die aktive Fassung des zweiten
+% Satzes aus R-13 vom 18.09.2026 bleibt, Stilregel 12. Der dritte Satz ist nach Stilregel 17
+% geteilt. Seine Wendung transiente Stromtragfaehigkeit ist nicht uebernommen, weil damit ein
+% anderer Grenzwert bezeichnet ist. Alte Fassung:
+%Abbildung \ref{fig:preventiv_kurativ} veranschaulicht den Unterschied beider Konzepte anhand der Betriebsmittelbelastung im Fehlerfall.
+%Die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL} und behebt den Engpass nach Eintreten des Fehlerfalles innerhalb der durch den \ac{TATL} zulässigen Dauer.
+Abbildung~\ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall.
 Im präventiven Betrieb bleibt die Belastung auch nach dem Ausfall unterhalb des \ac{PATL}, weil der \ac{ÜNB} die Vorauslastung so weit begrenzt.
-Die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL} und behebt den Engpass nach Eintreten des Fehlerfalles innerhalb der durch den \ac{TATL} zulässigen Dauer.
+Die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL} im Normalbetrieb.
+Nach Eintreten des Fehlerfalles nutzt die kurative Systemführung das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine gezielte Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
 
 \begin{figure}[htbp]
     \centering
@@ -163,64 +269,6 @@ Die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL
     \caption{Vergleich der zeitlichen Betriebsmittelbelastung bei präventiver und kurativer Systemführung im Fehlerfall.}
     \label{fig:preventiv_kurativ}
 \end{figure}
-
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
-% Befunde B47 bis B52, Q1, Q3, V5, V13. Marge als Vorgabe des Netzes, Hoehe statt Breite, Planungshorizont statt Reichweite mit Zeiten, Beleg sous fuer die Kostenwirkung entfallen, weil die Quelle nur die Marge definiert.
-% Alte Fassung, nicht wieder aufnehmen:
-%Kosten und Grenze dieses präventiven Vorgehens folgen aus drei Merkmalen.
-%Erstens beruht die Robustheit auf einer Sicherheitsmarge, die die Vorauslastung so weit begrenzt, dass die Belastung auch nach einem Ausfall unterhalb der \ac{PATL} bleibt, und die den dafür erforderlichen Eingriff in die Fahrpläne verursacht.
-%Die Breite dieser Marge wirkt damit unmittelbar auf Volumen und Kosten des Redispatch \cite{sous_comparison_2025}.
-%Zweitens endet die Reichweite des Ansatzes mit der letzten Prognoserechnung, die vor dem Erfüllungszeitpunkt liegt.
-%Fahrplanänderungen aus dem danach verbleibenden Handelsfenster sind in ihr nicht mehr enthalten, und auf die daraus entstehenden Netzzustände lässt sich präventiv nicht mehr reagieren.
-%Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
-%Stehen für einen Engpass nur wenige geeignete Anlagen zur Verfügung, kann bereits ein moderates Eingriffsvolumen hohe Kosten verursachen.
-%Der Kreis geeigneter Anlagen verkleinert sich dabei, denn der Kohle- und Kernenergieausstieg reduziert die verfügbare steuerbare konventionelle Kapazität, während die Opportunitätskosten und Revisionsaufwände der verbleibenden Anlagen steigen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-%Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
-Kosten und Grenze des präventiven Vorgehens folgen aus drei Merkmalen.
-% R-14 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Erstens beruht die Sicherheit auf einer Marge zwischen der Vorauslastung und dem \ac{PATL}, die nicht gewählt wird, sondern aus der ungünstigsten Ausfallvariante folgt, und das Freihalten dieser Marge ist der Eingriff in die Fahrpläne.
-Erstens beruht die Sicherheit auf einer Marge zwischen der Vorauslastung und dem \ac{PATL}, die nicht gewählt wird, sondern aus der ungünstigsten Ausfallvariante folgt.
-Das Freihalten dieser Marge ist der Eingriff in die Fahrpläne.
-Die Höhe der Marge bestimmt damit Volumen und Kosten des präventiven Redispatch.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Zweitens reicht der Planungshorizont des Ansatzes, also der Zeitraum, den die Vorschaurechnungen abdecken, nur bis zur letzten Vorschaurechnung, nämlich der Vortagesrechnung und den untertägigen Rechnungen, die Abbildung~\ref{fig:markt_zeitschiene} auf der Zeitachse zeigt, während der Handel innerhalb einer Regelzone bis fünf Minuten vor Lieferung offen bleibt.
-Zweitens reicht der Planungshorizont des Ansatzes, also der Zeitraum, den die Vorschaurechnungen abdecken, nur bis zur letzten Vorschaurechnung.
-Die letzte Vorschaurechnung ist die Vortagesrechnung oder eine der untertägigen Rechnungen, die Abbildung~\ref{fig:markt_zeitschiene} auf der Zeitachse zeigt.
-% R-14 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Handelsschlusszeiten stehen in 2.2.2, hier genuegt der Verweis. Alte Fassung:
-%Der Handel innerhalb einer Regelzone bleibt dagegen bis fünf Minuten vor Lieferung offen.
-Der Handel bleibt dagegen bis kurz vor Lieferung offen, wie in Abschnitt~\ref{sec:market_horizons} dargestellt.
-Fahrplanänderungen aus diesem Zeitraum enthält keine Vorschaurechnung mehr, sodass der \ac{ÜNB} die daraus entstehenden Netzzustände nur noch mit den Mitteln beheben kann, die ohne Vorlauf verfügbar sind.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}, sodass bereits ein moderates Eingriffsvolumen hohe Kosten verursachen kann, wenn nur wenige geeignete Anlagen zur Verfügung stehen.
-
-% NEUER ABSATZ 16.09.2026, C2.2.
-Drittens hängen die Kosten einer Maßnahme nicht allein vom Eingriffsvolumen ab, sondern von der Art der herangezogenen Anlagen, weil sich der finanzielle Ausgleich je nach Anlagenklasse unterschiedlich bemisst \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
-Stehen nur wenige geeignete Anlagen zur Verfügung, kann bereits ein moderates Eingriffsvolumen hohe Kosten verursachen.
-Der Kreis geeigneter Anlagen verkleinert sich zugleich, denn der Kohle- und Kernenergieausstieg reduziert die steuerbare konventionelle Kapazität, während die Opportunitätskosten und Revisionsaufwände der verbleibenden Anlagen steigen \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
-% ABSATZ VERBUNDEN 16.09.2026, C2.2.
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
-% Befunde B53, G12, Q2, V5. Fuenf Saetze auf drei, Beleg mahgoub steht in Kapitel 1.
-% Alte Fassung, nicht wieder aufnehmen:
-%Die begrenzte Reichweite und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
-%Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt \cite{mahgoub_wie_2025}, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
-%Je später sich der maßgebliche Netzzustand einstellt, desto später ist auch der erforderliche Eingriff zu bestimmen.
-%Mit der verbleibenden Vorlaufzeit sinkt jedoch die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der in Betracht kommenden Technologien Vorlaufzeiten von mehreren Stunden aufweist.
-%Ein kleinerer Kreis geeigneter Anlagen schlägt sich unmittelbar in den Kosten nieder.
-% R-15 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Der begrenzte Planungshorizont und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert: Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
-Der begrenzte Planungshorizont und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
-Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen, und mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der Technologien Vorlaufzeiten von mehreren Stunden aufweist.
-Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen.
-Mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können.
-% DURCHSICHT 16.09.2026, C1. Alte Fassung:
-%Ein Teil der Technologien weist Vorlaufzeiten von mehreren Stunden auf.
-% R-15 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt keine Quelle. Gestrichener Satz: Alte Fassung:
-%Ein Teil der Technologien weist nämlich Vorlaufzeiten von mehreren Stunden auf.
-% S-16 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt Satz 2 desselben Absatzes. Gestrichener Satz: Alte Fassung:
-%Ein kleinerer Kreis geeigneter Anlagen schlägt sich unmittelbar in den Kosten nieder.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde B54 bis B61, G13, G14, V5, V13. Auspraegungen beim Namen genannt, kurativer Redispatch wird ebenfalls vorgeplant, Behauptung zur Abdeckung spaeter Zustaende zurueckgenommen, Beleg fuer die Jahressimulation, Vorverweise gestrichen, zwei Absaetze.
