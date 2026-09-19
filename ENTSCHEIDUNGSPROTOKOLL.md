@@ -5290,6 +5290,56 @@ beiden Ausnahmen sind dieselben wie zuvor.
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
 beiden bekannten Referenzwarnungen, 95 Seiten unveraendert.
 
+### 19.09.2026, 2.1.1 Absatz 2, die beiden Saetze zur Entlastungsmassnahme gestrichen
+
+**Anlass.** Der Verfasser zu den beiden Saetzen: "was bringt mir die info? also
+wenn ich einfach nur sagen will das kurativ im engpassmanagement eingesetzt wird
+habe ich das ja schon mehrfach getan."
+
+**Befund, eigenstaendige Pruefung.** Die beiden Saetze fuehren nicht die
+Aussage, dass kurative Massnahmen im Engpassmanagement eingesetzt werden,
+sondern den Nachweis, dass der kurative Betrieb der Leitlinie entspricht. Diesen
+Nachweis fuehrt 2.1.5 Rechtlicher Rahmen vollstaendig und in drei Schritten,
+naemlich der Pflicht zum Halten der Fluesse innerhalb der voruebergehend
+zulaessigen Ueberlast, der Zurechnung vorbereiteter Entlastungsmassnahmen zum
+Netzzustand und dem fehlenden Zeitpunktvorbehalt, dort mit dem woertlichen Zitat
+"moeglichst echtzeitnahe Aktivierung von Entlastungsmassnahmen" und mit dem
+Schluss, dass der kurative Betrieb europarechtlich zulaessig ist. Die Aufzaehlung
+der Massnahmenarten steht in 2.1.5 ebenfalls und hat dort einen eigenen Zweck,
+naemlich die Unterscheidung netzbezogener und marktbezogener Massnahmen nach
+Paragraf 13 Abs. 1 EnWG. In 2.1.1 traegt die Aufzaehlung keinen eigenen Zweck.
+
+**Arbeitsteilung bleibt.** 2.1.5 verweist fuer die Zurechnung zum Netzzustand
+ausdruecklich auf 2.1.1 zurueck. Die Systematik des Netzzustands bleibt deshalb
+in 2.1.1, allein der rechtliche Schluss steht in 2.1.5. Die Streichung
+verschiebt nichts von 2.1.1 nach 2.1.5, sie beseitigt eine Verdopplung.
+
+**Gestrichene Saetze, nicht wieder aufzunehmen.**
+"Kurative Massnahmen sind Entlastungsmassnahmen im Sinne der SO GL, also
+Massnahmen zur Behebung einer Grenzwertverletzung, denn die Leitlinie nennt als
+deren Arten unter anderem den Redispatch, Topologieschaltmassnahmen und die
+Anpassung der Wirkleistungsfluesse von HGUE-Systemen."
+"An den Zeitpunkt ihres Einsatzes knuepft die Leitlinie keine Bedingung."
+
+**Definition mitgenommen.** Der Begriff Entlastungsmassnahme wird im Absatz
+weiter gebraucht. Seine Erklaerung steht jetzt als Apposition in dem Satz, der
+ihn braucht. Alte Fassung: "denn die Leitlinie rechnet die Wirkung der
+verfuegbaren Entlastungsmassnahmen dem Netzzustand zu". Neue Fassung: "denn die
+Leitlinie rechnet die Wirkung der verfuegbaren Entlastungsmassnahmen, also der
+Massnahmen zur Behebung einer Grenzwertverletzung, dem Netzzustand zu".
+
+**Folge fuer das Akronym HGUE.** Die Erstnennung stand in dem gestrichenen Satz
+und steht jetzt im Absatz zu den Jahressimulationen desselben Abschnitts, also
+weiterhin vor der Nennung in 2.1.5. Pruefung 7 der Pruefsuite ohne Befund.
+
+**Absatzlaenge.** Der Absatz hat statt elf Saetzen neun und statt 19 Zeilen
+rund 16. Er bleibt damit knapp unter der halben Seite, die seit dem 19.09.2026
+als Untergrenze gilt. Ein Verbinden mit dem Absatz davor oder danach wuerde zwei
+Kernaussagen zusammenziehen und unterbleibt deshalb.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
+beiden bekannten Referenzwarnungen, 95 Seiten unveraendert.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
