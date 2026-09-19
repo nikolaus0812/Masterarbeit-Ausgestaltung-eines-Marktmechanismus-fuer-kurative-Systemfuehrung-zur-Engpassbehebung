@@ -677,8 +677,13 @@ Nur bei Eingriffen in Erzeugung, Last und Speicherung stellt sich die Frage nach
 % DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
 %Der Akteur meldet dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
 Für eine solche Zusage meldet der Akteur dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
-Bei energiebegrenzten Technologien wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
-Die Sicherstellung verlangt eine gezielte Vorhaltung des Ladezustands im Vorfeld.
+% GESTRICHEN am 19.09.2026, Kommentar des Verfassers zur Dopplung. Die Aussage steht bereits
+% acht Zeilen vorher als Begriffsbestimmung ("Die kurative Bindung ist die Reservierung eines
+% Leistungsbandes und, bei Speichern, eines Ladezustandsbandes"), in 2.1.1 ("er haelt Leistung
+% und Ladezustandsbereich fuer einen ungewissen Abruf frei") und systematisch in 2.1.3, wo die
+% Energiebindung eines von vier Vergleichsmerkmalen ist. Gestrichene Saetze:
+%Bei energiebegrenzten Technologien wie Speichern ist darüber hinaus sicherzustellen, dass zum Zeitpunkt eines möglichen Abrufs ausreichend gespeicherte Energie zur Verfügung steht.
+%Die Sicherstellung verlangt eine gezielte Vorhaltung des Ladezustands im Vorfeld.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Eine marktbezogene kurative Maßnahme wird in der Regel bilanziell ausgeglichen, sodass die Summe der Einspeisung unverändert bleibt, wobei die Anlage, die ihre Einspeisung erhöht, als Quelle und die Anlage, die ihre Einspeisung senkt, als Senke wirkt, sodass an einem Netzknoten nicht eine einzelne Zusage, sondern ein Verbund von Zusagen erforderlich ist.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
@@ -740,13 +745,29 @@ Wie schnell ein solcher Verbund wirken muss, ergibt sich aus dem \ac{TATL}-Zeitf
 Die Dauer des Zeitfensters ist keine Konstante des Betriebsmittels, sondern folgt aus der Wärmebilanz.
 % R-21 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: drei Saetze zu einem verbunden, S-06. Alte Fassung:
 %Bei einer Überlast überwiegt der Wärmeeintrag die Kühlung.
-Bei einer Überlast überwiegt der Wärmeeintrag die Kühlung, und die Temperatur steigt vom Ausgangswert der Vorbelastung bis zur Grenztemperatur, bis zu der die Überlast zulässig ist.
+% GESTRICHEN am 19.09.2026, Kommentar des Verfassers: "die infos wuerde ich fast streichen, da
+% sie auch in dieser arbeit eher nebensaechlich sind. zu dem davor." Der Temperaturverlauf steht
+% nahezu woertlich in Anhang B, extras/attachment_thermik.tex: "Bei einer Ueberlast ueberwiegt
+% der Waermeeintrag, und die Leitertemperatur steigt vom Ausgangswert der Vorbelastung an." Der
+% Absatz verweist selbst auf den Anhang. Gestrichener Satz:
+%Bei einer Überlast überwiegt der Wärmeeintrag die Kühlung, und die Temperatur steigt vom Ausgangswert der Vorbelastung bis zur Grenztemperatur, bis zu der die Überlast zulässig ist.
 % S-06 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: in den vorigen Satz aufgenommen. Alter Satz: Alte Fassung:
 %Die Temperatur steigt dann von dem Ausgangswert an, den die Belastung vor dem Ausfall bestimmt.
 % S-06 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: in den vorigen Satz aufgenommen. Alter Satz: Alte Fassung:
 %Die Überlast ist zulässig, bis die Grenztemperatur erreicht ist.
-Die zulässige Dauer hängt deshalb von der Vorbelastung und von der Witterung ab und ist in windschwachen Stunden am kürzesten, weil die Kühlung mit der Windgeschwindigkeit wächst \cite{cigre_thermal_2014}.
-Bei Transformatoren ist die zulässige Dauer wegen der größeren Wärmekapazität länger, zugleich beschleunigt die Überlast dort die Alterung der Isolation, sodass neben Höhe und Dauer auch die Häufigkeit der Überlastung zu begrenzen ist \cite{iec_60076_7_2018}.
+% GESTRICHEN am 19.09.2026, derselbe Kommentar. Die Abhaengigkeit von Vorbelastung und Witterung
+% bleibt im Text erhalten, naemlich im Absatz zur wechselseitigen Bindung ("je nach Vorbelastung
+% und Wetterlage unterschiedlich") und in 2.1.4 ("neben der Strecke bestimmen Vorbelastung und
+% Witterung die zulaessige Dauer"). Der Beleg cigre_thermal_2014 bleibt in Anhang B in Gebrauch.
+% Gestrichener Satz:
+%Die zulässige Dauer hängt deshalb von der Vorbelastung und von der Witterung ab und ist in windschwachen Stunden am kürzesten, weil die Kühlung mit der Windgeschwindigkeit wächst \cite{cigre_thermal_2014}.
+% GESTRICHEN am 19.09.2026, derselbe Kommentar. Die Alterung der Isolation steht in Anhang B:
+% "Die Ueberlastung aeussert sich am Leiterseil durch Durchhang und Festigkeit und am
+% Transformator durch die Alterung der Isolation." Der Beleg iec_60076_7_2018 bleibt dort in
+% Gebrauch. Die Begrenzung der Haeufigkeit entfaellt damit aus dem Kapitel; sie ist fuer die
+% Fragestellung ohne Folge, weil die Arbeit die Haeufigkeit des Abrufs nicht modelliert.
+% Gestrichener Satz:
+%Bei Transformatoren ist die zulässige Dauer wegen der größeren Wärmekapazität länger, zugleich beschleunigt die Überlast dort die Alterung der Isolation, sodass neben Höhe und Dauer auch die Häufigkeit der Überlastung zu begrenzen ist \cite{iec_60076_7_2018}.
 Für eine Übertragungsstrecke ist das Minimum der zulässigen Dauern über alle betroffenen Betriebsmittel maßgeblich, weshalb der für die Betriebsführung nutzbare Grenzwert unter dem thermischen Grenzwert des einzelnen Betriebsmittels liegen kann \cite{dena_hoeherauslastung_2022}.
 % NEU GEFASST am 17.09.2026: der Anhang stellt den Vergleich mit dem Transformator nicht mehr dar, der Verweis darf ihn nicht ankuendigen. Alte Fassung:
 %Anhang~\ref{anh:thermik} stellt die Wärmebilanz der Freileitung, die Berechnung der zulässigen Dauer und die Unterschiede beim Transformator dar.
@@ -865,13 +886,30 @@ Die Systematisierung folgt der Flexibilitätstypologie nach Erzeugung, Verbrauch
         \ac{PSKW} & schnell & ja, 3 bis 9\,\si{h} & 9,9\,\si{GW}, Anstieg auf 12,0\,\si{GW} & §\,13a \ac{EnWG}, Bemessung geregelt \\
         \hline
 %        \ac{BESS} & sehr schnell & ja, geringer Energieinhalt & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
-        \ac{BESS} & sehr schnell & ja, 1 bis 2\,\si{h}, steigend & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
+% EINSTUFUNG BERICHTIGT am 19.09.2026, Kommentar des Verfassers: "dann koennen wir aber nicht
+% bess als sehr schnell bezeichnen, denn unter 10sec ist moeglich aber noch nicht geprueft". Die
+% Fussnote misst die Spalte an den drei Klassen, sehr schnell hiesse also unter zehn Sekunden.
+% Eigenstaendige Pruefung: der Fliesstext behauptet das an keiner Stelle, allein die Tabellenzelle
+% tat es. InnoSys 2030 definiert die Klasse zwar, untersucht das Potenzial aber nur fuer die
+% schnelle und die langsame Klasse (Abschlussbericht S. 83). Der Basisfall der Arbeit rechnet nach
+% CLAUDE.md Abschnitt 7 ohnehin mit der Klasse etwa zwei Minuten. Alte Fassung:
+%        \ac{BESS} & sehr schnell & ja, 1 bis 2\,\si{h}, steigend & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
+% EINSTUFUNG NACHGESCHAERFT am 19.09.2026, Vorgabe des Verfassers: "lass uns bess als schnell
+% einordnen mit zu pruefender Faehigkeit fuer die sehr schnelle Klasse." Die Fassung "unter
+% 10 s moeglich" vom selben Tag las sich als Zusicherung der Faehigkeit. Alte Fassung der Zelle:
+%        \ac{BESS} & schnell, unter 10\,\si{s} möglich & ja, 1 bis 2\,\si{h}, steigend & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
+        \ac{BESS} & schnell, sehr schnelle Klasse zu prüfen & ja, 1 bis 2\,\si{h}, steigend & 1,7\,\si{GW}, Anstieg auf 67,6\,\si{GW} & §\,13a \ac{EnWG}, Bemessung offen \\
         \hline
 % GEAENDERT am 15.09.2026, Beleg aus dem Marktstammdatenregister statt Einschaetzung. Alte Fassung:
 %        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung der Großspeicher folgt den Battery Charts, die einen Anstieg von einer auf zwei Stunden und darüber ausweisen \cite{isea_batterycharts_2026}, der Bereich der \acs{PSKW} ist eine Einschätzung des Verfassers ohne Beleg.} \\
 % DURCHSICHT 15.09.2026, C3.15, geplante Anlagen ergaenzt. Alte Fassung:
 %        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung folgt einer eigenen Auswertung des Marktstammdatenregisters mit Stand vom 15.09.2026 \cite{bundesnetzagentur_mastr_2026}: Die 18 deutschen \acs{PSKW} mit Tages- oder Wochenspeicher liegen zwischen 3 und 9 Stunden, leistungsgewichtet bei 5,7 Stunden. Die 520 \acs{BESS} ab einem Megawatt in Betrieb liegen zur Hälfte zwischen 1,1 und 2,2 Stunden, die seit 2025 in Betrieb genommenen Anlagen im Median bei 2 Stunden, und die Battery Charts weisen denselben Anstieg aus \cite{isea_batterycharts_2026}.} \\
-        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung folgt einer eigenen Auswertung des Marktstammdatenregisters mit Stand vom 15.09.2026 \cite{bundesnetzagentur_mastr_2026}: Die 18 deutschen \acs{PSKW} mit Tages- oder Wochenspeicher liegen zwischen 3 und 9 Stunden, leistungsgewichtet bei 5,7 Stunden. Die 520 \acs{BESS} ab einem Megawatt in Betrieb liegen zur Hälfte zwischen 1,1 und 2,2 Stunden, die seit 2025 in Betrieb genommenen Anlagen im Median bei 2 Stunden und die geplanten Anlagen leistungsgewichtet bei 3 Stunden, und die Battery Charts weisen denselben Anstieg aus \cite{isea_batterycharts_2026}.} \\
+% FUSSNOTE ERGAENZT am 19.09.2026, derselbe Kommentar: die Einschraenkung gehoert zur Spalte.
+% Alte Fassung des ersten Satzes der Fussnote:
+%        Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen.
+% FUSSNOTE NACHGESCHAERFT am 19.09.2026, dieselbe Vorgabe. Alte Fassung des zweiten Satzes:
+%        Die sehr schnelle Klasse kommt für \acs{BESS} technisch in Betracht, InnoSys~2030 untersucht das kurative Potenzial jedoch nur für die schnelle und die langsame Klasse \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+        \multicolumn{5}{@{}p{\textwidth}@{}}{\footnotesize Die Reaktionszeit ist an den drei Klassen aus Abschnitt \ref{sec:curative_functionality} gemessen. Ob \acs{BESS} auch die sehr schnelle Klasse erfüllen, ist noch zu prüfen, denn InnoSys~2030 untersucht das kurative Potenzial nur für die schnelle und die langsame Klasse \cite{innosys_2030_gesamtverbund_innovationen_2021}. Die Leistungsangaben nennen den Referenzwert des Jahres 2024 und den Wert des Szenarios~B für das Zieljahr 2037 \cite{bundesnetzagentur_netzentwicklungsplan_2026}. Die Windenergie umfasst die Anlagen an Land und auf See, die Angabe zu \acs{BESS} bezieht sich auf Großbatteriespeicher. Der Energieinhalt je Leistung folgt einer eigenen Auswertung des Marktstammdatenregisters mit Stand vom 15.09.2026 \cite{bundesnetzagentur_mastr_2026}: Die 18 deutschen \acs{PSKW} mit Tages- oder Wochenspeicher liegen zwischen 3 und 9 Stunden, leistungsgewichtet bei 5,7 Stunden. Die 520 \acs{BESS} ab einem Megawatt in Betrieb liegen zur Hälfte zwischen 1,1 und 2,2 Stunden, die seit 2025 in Betrieb genommenen Anlagen im Median bei 2 Stunden und die geplanten Anlagen leistungsgewichtet bei 3 Stunden, und die Battery Charts weisen denselben Anstieg aus \cite{isea_batterycharts_2026}.} \\
     \end{tabular}
 \end{table}
 
@@ -971,13 +1009,24 @@ Die Großspeicher in Betrieb und in Planung verteilen sich nach dem Marktstammda
 %Nicht jeder Netzknoten wird einen Speicher erhalten, aber mit dem Zubau auf 67,6\,\si{GW} im Szenario~B 2037 entsteht ein Pool von Anlagen, aus dem der \ac{ÜNB} an vielen Knoten wählen kann \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Nicht jeder Netzknoten wird einen Speicher erhalten, aber mit einem Bestand von 67,6\,\si{GW} im Szenario~B 2037 entsteht ein Pool von Anlagen, aus dem der \ac{ÜNB} an vielen Knoten wählen kann \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 
-Neben Standort und Bestand entscheidet der Energieinhalt über die Eignung, und dort liegt die Grenze eines \ac{BESS}, nicht in der Leistung.
-Für den präventiven Redispatch wirkt sich das als Nachteil aus, weil dort die Leistungsänderung bis zur Auflösung des Engpasses zu halten ist und der Energieinhalt die erreichbare Dauer begrenzt.
+% ZWEI SAETZE AUF EINEN am 19.09.2026, Kommentar des Verfassers: "saetze verbinden und
+% wissenschaftlicher formulieren". Die alte Fassung gebrauchte das Wort dort zweimal mit
+% verschiedenem Bezug, setzte das Demonstrativum das ueber die Satzgrenze, Stilregel 5, und
+% bewertete den Befund als Nachteil, Stilregel 11. Die neue Fassung benennt die begrenzende
+% Groesse und ihre Begruendung in einem Satz, Hauptsatz und denn-Hauptsatz ohne Nebensatz,
+% Stilregel 17. Der Folgesatz "Die kurative Systemfuehrung stellt diese Anforderung nicht" behaelt
+% seinen Bezug. Alte Fassung:
+%Neben Standort und Bestand entscheidet der Energieinhalt über die Eignung, und dort liegt die Grenze eines \ac{BESS}, nicht in der Leistung.
+%Für den präventiven Redispatch wirkt sich das als Nachteil aus, weil dort die Leistungsänderung bis zur Auflösung des Engpasses zu halten ist und der Energieinhalt die erreichbare Dauer begrenzt.
+Neben Standort und Bestand begrenzt der Energieinhalt und nicht die Leistung die Eignung eines \ac{BESS} für den präventiven Redispatch, denn dieser verlangt die Leistungsänderung bis zur Auflösung des Engpasses.
 Die kurative Systemführung stellt diese Anforderung nicht, denn die Maßnahme überbrückt allein das Überlastintervall, bis der \ac{ÜNB} den (N-1)-sicheren Zustand über einen Redispatch wiederherstellt, sodass die abgerufene Energiemenge vergleichsweise klein bleiben kann.
 Der dafür nötige Ladezustandsbereich muss jedoch über die gesamte Bindungsdauer frei bleiben, sodass die Grenze nicht in der abgerufenen Energiemenge liegt, sondern in der Dauer der Reservierung.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Von den vier Merkmalen erfüllt ein \ac{BESS} damit die Reaktionszeit uneingeschränkt, die Energiebindung mit einer Einschränkung in der Dauer und den Bestand mit einer Erwartung an das Wachstum, während der Vergütungspfad nach §\,13a \ac{EnWG} zwar besteht, die Bemessung für \ac{BESS} aber offen ist.
-Von den vier Merkmalen erfüllt ein \ac{BESS} damit die Reaktionszeit uneingeschränkt, die Energiebindung mit einer Einschränkung in der Dauer und den Bestand mit einer Erwartung an das Wachstum.
+% FOLGE DER EINSTUFUNG am 19.09.2026: der Satz stuetzte sich auf die Einstufung sehr schnell und
+% sagte die Reaktionszeit uneingeschraenkt zu. Er nennt jetzt die Klasse. Alte Fassung:
+%Von den vier Merkmalen erfüllt ein \ac{BESS} damit die Reaktionszeit uneingeschränkt, die Energiebindung mit einer Einschränkung in der Dauer und den Bestand mit einer Erwartung an das Wachstum.
+Von den vier Merkmalen erfüllt ein \ac{BESS} damit die Reaktionszeit der schnellen Klasse uneingeschränkt, die Energiebindung mit einer Einschränkung in der Dauer und den Bestand mit einer Erwartung an das Wachstum.
 Der Vergütungspfad nach §\,13a \ac{EnWG} besteht zwar, die Bemessung für \ac{BESS} ist aber offen.
 % DURCHSICHT 16.09.2026, C1, Ueberleitung an die Gliederung angepasst. Alte Fassung:
 %Die technischen Voraussetzungen für einen kurativen Einsatz liegen damit vor, und die folgende Betrachtung richtet sich auf die Vergütung.
@@ -1055,11 +1104,41 @@ Mit dem KuPilot-Projekt liegt erstmals eine Erprobung kurativer Maßnahmen im Ec
 Mit den Netzboostern befindet sich zudem ein Instrument in der Umsetzung, das speicherbasierte Leistung für den Fehlerfall vorhalten soll \cite{consentec_systembooster_2026}.
 Die Betriebserprobung der Netzbooster steht aber noch aus.
 % R-19 am 18.09.2026, Kontrolle durch Fable: der Satz stand in 2.1.2 mitten in der Prozessbeschreibung.
-Im Pilotbetrieb des Projekts KuPilot, in dem Amprion, TenneT und RWE den kurativen Redispatch im realen Betrieb erproben, wird die Leistungsänderung nach dem tatsächlichen Eintritt einer Überlastung innerhalb von fünf Minuten vollständig umgesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
+% EINORDNUNG NACH VORGABE DES VERFASSERS am 19.09.2026: "schreib eine kurative Hoeherauslastung
+% auch wenn von redispatch gesprochen wird. es ist hoeherauslastung." Die Einordnung weicht von
+% beiden greifbaren Quellen ab und ist deshalb ausdruecklich als Vorgabe des Verfassers vermerkt.
+% Der Titel der TenneT-Mitteilung lautet "Pilotbetrieb gestartet: Amprion, TenneT und RWE erproben
+% kurativen Redispatch im realen Betrieb"; die Datei ist eine reine Bilddatei ohne Textlayer und
+% mit pdftotext nicht auslesbar, pdffonts meldet keine Schrift. Das Consentec-Kurzgutachten zum
+% Systembooster schreibt im Exkurs: "Im Projekt 'KuPilot' erfolgt die Pilotierung eines kurativen
+% Redispatchs mit Hilfe eines Pumpspeicherkraftwerks (PSKW Vianden) als bilanzielle
+% Redispatch-Quelle, sowie eines Offshore-Windparks (OWP Diele) als engpasssensitive
+% Redispatch-Senke fuer den Netzabschnitt der Uebertragungsnetzregion Emsland."
+% Sachlich traegt die Einordnung des Verfassers: nach der Abgrenzung in 2.1.1 ist der Redispatch
+% das Mittel und die Hoeherauslastung der Zweck. Damit die Quelle keine Aussage belegt, die sie
+% nicht traegt, nennt der Folgesatz die Bezeichnung der Quellen ausdruecklich, CLAUDE.md
+% Abschnitt 2. Alte Fassung:
+%Im Pilotbetrieb des Projekts KuPilot, in dem Amprion, TenneT und RWE den kurativen Redispatch im realen Betrieb erproben, wird die Leistungsänderung nach dem tatsächlichen Eintritt einer Überlastung innerhalb von fünf Minuten vollständig umgesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
+Im Pilotbetrieb des Projekts KuPilot erproben Amprion, TenneT und RWE die kurative Höherauslastung im realen Betrieb, und die Leistungsänderung wird nach dem tatsächlichen Eintritt einer Überlastung innerhalb von fünf Minuten vollständig umgesetzt \cite{tennet_tso_gmbh_pilotbetrieb_2025}.
+Die Mitteilungen zum Projekt bezeichnen die dort eingesetzte Maßnahme als kurativen Redispatch, der dem Zweck nach eine Höherauslastung des betroffenen Netzabschnitts ermöglicht.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
 %Damit bleibt die Frage offen, wie das Stellpotenzial eines kurativen Akteurs allgemein gesichert wird.
 Offen bleibt in beiden Vorhaben, wie das Stellpotenzial eines kurativen Akteurs allgemein gesichert wird.
-Im KuPilot-Pilot\-betrieb hält der Akteur sein Stellpotenzial zwar vor, die Bereitstellung beruht dort jedoch auf einer Vereinbarung zwischen den beteiligten Unternehmen, deren Konditionen nicht öffentlich sind.
+% TEILAUSSAGE BERICHTIGT am 19.09.2026, Befund aus der Pruefung der KuPilot-Quellen. Der Zusatz,
+% die Konditionen seien nicht oeffentlich, trifft nicht mehr zu: das Consentec-Kurzgutachten zum
+% Systembooster legt die Verguetungsstruktur der freiwilligen Selbstverpflichtung KuPilot offen,
+% naemlich Opportunitaetskosten fuer entgangene aFRR-Erloese sowie Fixkosten aus einer pauschalen
+% Verguetung fuer die technische Ertuechtigung und einer laufzeitabhaengigen Verguetung. Es haelt
+% ferner fest, die vorgesehene Verguetungslogik sei "teilweise nicht vollstaendig in der aktuell
+% regulatorisch geltenden Kostenerstattungssystematik im Redispatch abbildbar". Entscheidung des
+% Verfassers: "ich weiss wie die verguetung funktioniert aber wir gehen darauf einfach nicht ein.
+% wir bleiben dabei das bilateral geklaert ist und fuer dieses projekt speziell ist." Die
+% Verguetungsstruktur wird deshalb nicht aufgenommen, allein die unzutreffende Teilaussage
+% entfaellt. Der Folgesatz traegt dadurch nicht weniger, denn dass sich aus einer
+% projektspezifischen bilateralen Vereinbarung kein allgemeiner Preis ableiten laesst, haengt
+% nicht daran, ob ihre Konditionen veroeffentlicht sind. Alte Fassung:
+%Im KuPilot-Pilot\-betrieb hält der Akteur sein Stellpotenzial zwar vor, die Bereitstellung beruht dort jedoch auf einer Vereinbarung zwischen den beteiligten Unternehmen, deren Konditionen nicht öffentlich sind.
+Im KuPilot-Pilot\-betrieb hält der Akteur sein Stellpotenzial zwar vor, die Bereitstellung beruht dort jedoch auf einer bilateralen Vereinbarung für dieses Projekt.
 Zu welchem Preis ein Anlagenbetreiber eine kurative Bindung allgemein eingehen würde, lässt sich daraus nicht ableiten, und ob eine marktliche Beschaffung überhaupt zulässig wäre, entscheidet der rechtliche Rahmen.
 
 \subsection{Rechtlicher Rahmen}
@@ -1095,7 +1174,15 @@ Die folgende Betrachtung gilt allein dem Fall, dass ein Akteur am Markt die kura
 
 Auf europäischer Ebene konkretisiert die \ac{SOGL} die Anforderungen an Planung und Einsatz kurativer Maßnahmen, und aus drei Vorgaben folgt die Zulässigkeit des kurativen Betriebs.
 Erstens verpflichtet die Leitlinie die \ac{ÜNB}, die Leistungsflüsse nach einem Ausfall aus der Ausfallvariantenliste innerhalb der vorübergehend zulässigen Überlast zu halten, nachdem sie dafür Entlastungsmaßnahmen vorbereitet haben.
-Zweitens rechnet die Leitlinie die Wirkung vorbereiteter Entlastungsmaßnahmen dem Netzzustand zu, wie in Abschnitt~\ref{sec:prev_vs_cur} beschrieben.
+% AUSSAGE AUSGESCHRIEBEN am 19.09.2026, Rueckfrage des Verfassers: "was heisst das?" Die Wendung
+% "rechnet die Wirkung dem Netzzustand zu" verbarg den Angelpunkt des Dreischritts, naemlich dass
+% der UeNB die Wirkung der vorbereiteten Massnahmen bei der Bestimmung des Netzzustands mitrechnen
+% darf. Ohne diese Zurechnung waere der kurative Betrieb unzulaessig, weil das Netz im
+% Gefaehrdungszustand laege. Der Rueckverweis auf 2.1.1 entfaellt, weil die Aussage jetzt hier
+% steht und Stilregel 15 strukturelle Rueckverweise ausschliesst. Alte Fassung:
+%Zweitens rechnet die Leitlinie die Wirkung vorbereiteter Entlastungsmaßnahmen dem Netzzustand zu, wie in Abschnitt~\ref{sec:prev_vs_cur} beschrieben.
+Zweitens bewertet die Leitlinie den Netzzustand einschließlich der Wirkung vorbereiteter Entlastungsmaßnahmen.
+Ein Netz gilt damit auch dann als \mbox{(N-1)-sicher}, wenn es die Grenzwerte erst mit diesen Maßnahmen einhält.
 % I-07 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: das Zitat war eine Umschreibung, jetzt steht der Wortlaut aus Art. 21 Abs. 2 Buchstabe b. Alte Fassung:
 %Drittens knüpft die Leitlinie an den Zeitpunkt des Einsatzes keine Bedingung und verlangt für die Auswahl der Entlastungsmaßnahmen sogar, sie \glqq{}möglichst echtzeitnah zu aktivieren\grqq{}.
 Drittens knüpft die Leitlinie an den Zeitpunkt des Einsatzes keine Bedingung und nennt als Kriterium der Auswahl sogar die \glqq{}möglichst echtzeitnahe Aktivierung von Entlastungsmaßnahmen\grqq{}.
@@ -1123,7 +1210,16 @@ Der kurative Betrieb ist damit europarechtlich zulässig \cite{europaische_kommi
 %Macht der Betreiber diese Auslagen geltend, darf er die Anlage nach §\,13c Abs.\,2 jedoch nur noch nach Anforderung des \ac{ÜNB} betreiben und verliert damit den Zugang zu den Strommärkten.
 %Für eine Anlage, die am Markt bleibt und allein eine Reaktionsfähigkeit reserviert, besteht damit keine Vergütung der Vorhaltung \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 % HIERHER VERSCHOBEN 16.09.2026, C2, Binnenmarktverordnung zum Absatz, der sie aufgreift.
-Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} einen diskriminierungsfreien Zugang für alle Technologien einschließlich der Speicher, sodass der kurative Marktmechanismus \ac{BESS} nicht ausschließen darf \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+% FOLGERUNG UMGEDREHT am 19.09.2026, Kommentar des Verfassers: "das sehe ich als geringstes
+% problem, eher dass andere technologien nicht ausgeschlossen werden. dieses argument koennte man
+% nur anfuehren wenn redispatch marktlich organisiert waere und da speicher nicht richtig liefern
+% koennten, aber darum geht es ja gar nicht." Die alte Fassung las die Vorschrift als Schutz der
+% BESS vor einem Ausschluss. Bindend ist fuer die Arbeit die andere Richtung: der Mechanismus darf
+% nicht auf eine Technologie zugeschnitten werden und muss allen geeigneten Technologien offen
+% stehen. Alte Fassung:
+%Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} einen diskriminierungsfreien Zugang für alle Technologien einschließlich der Speicher, sodass der kurative Marktmechanismus \ac{BESS} nicht ausschließen darf \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+Auf Marktebene verlangt die \glqq{}Verordnung über den Elektrizitätsbinnenmarkt\grqq{} einen diskriminierungsfreien Zugang für alle Technologien einschließlich der Speicher \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+Der kurative Marktmechanismus ist deshalb technologieoffen auszugestalten und darf keine geeignete Technologie ausschließen.
 Gegenstand des \ac{EnWG}, der \ac{SOGL} und der Binnenmarktverordnung ist jedoch der durchgeführte Eingriff und nicht die vorgehaltene Reaktionsfähigkeit, sodass keine von ihnen die marktliche Beschaffung kurativer Vorhaltung regelt.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auch die Vergütung folgt dieser Logik, denn der finanzielle Ausgleich nach §\,13a Abs.\,2 \ac{EnWG} knüpft an die vorgenommene Anpassung an und umfasst nur Bestandteile, die durch diese Anpassung verursacht sind, und Absatz\,4 schließt Kosten, die dem Anlagenbetreiber auch ohne die Anforderung entstehen, ausdrücklich aus und nennt dabei die Betriebsbereitschaftsauslagen.
@@ -1176,7 +1272,16 @@ Weil das \ac{EnWG} die Vorhaltung nicht vergütet, bleibt zu prüfen, ob zwei ne
 % R-30 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
 %§\,17 Abs.\,2b \ac{EnWG} erlaubt flexible Netzanschlussvereinbarungen, in denen der Netzbetreiber eine statische oder dynamische Begrenzung der Entnahme- oder Einspeiseleistung verlangen kann, was für Speicher deshalb bedeutsam ist, weil nur diese Norm beide Richtungen erfasst, ohne dass ein Anspruch auf Abschluss oder auf Entschädigung besteht \cite{bundesnetzagentur_faq_2025}.
 §\,17 Abs.\,2b \ac{EnWG} erlaubt flexible Netzanschlussvereinbarungen, in denen der Netzbetreiber eine statische oder dynamische Begrenzung der Entnahme- oder Einspeiseleistung verlangen kann \cite{bundesnetzagentur_faq_2025}.
-Für Speicher ist die Norm bedeutsam, weil nur sie beide Richtungen erfasst, und ein Anspruch auf Abschluss oder auf Entschädigung besteht dabei nicht.
+% AUFGETEILT UND BEZUG GEKLAERT am 19.09.2026, Rueckfrage des Verfassers: "den satz verstehe ich
+% auch nicht". Der Satz verband zwei Aussagen ohne Zusammenhang mit und, naemlich die Bedeutung der
+% Vorschrift fuer Speicher und das Fehlen eines Anspruchs. Zudem bezog sich "nur sie" grammatisch
+% auf die Norm, gemeint war der Speicher, der in beiden Richtungen am Netz wirkt. Die zweite
+% Aussage folgt aus dem Wortlaut ex silentio, denn Paragraf 17 Abs. 2b EnWG laesst den
+% Netzbetreiber eine flexible Vereinbarung anbieten und kennt keine Entschaedigungsregel; sie ist
+% deshalb zurueckhaltender formuliert. Alte Fassung:
+%Für Speicher ist die Norm bedeutsam, weil nur sie beide Richtungen erfasst, und ein Anspruch auf Abschluss oder auf Entschädigung besteht dabei nicht.
+Für einen Speicher ist die Vorschrift bedeutsam, weil er in beiden Richtungen am Netz wirkt und die Begrenzung deshalb die Einspeicherung wie die Ausspeicherung treffen kann.
+Einen Anspruch auf Abschluss einer solchen Vereinbarung oder auf Entschädigung für die Begrenzung sieht die Vorschrift nicht vor.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %In der Praxis enthalten solche Vereinbarungen kurative Klauseln, die dem Netzbetreiber für eine festgelegte Zahl von Stunden im Jahr ein unentgeltliches Eingriffsrecht einräumen, ausgelöst allein dann, wenn die Anlage im betreffenden Moment engpassverschärfend wirkt, sodass ein Duldungsrecht vereinbart ist und keine Zusage, im Fehlerfall eine bestimmte Leistungsänderung zu erbringen.
 In der Praxis enthalten solche Vereinbarungen kurative Klauseln, die dem Netzbetreiber für eine festgelegte Zahl von Stunden im Jahr ein unentgeltliches Eingriffsrecht einräumen.
@@ -1190,11 +1295,40 @@ Weil jede Anlage ihre eigene Vereinbarung aushandelt, entsteht zudem weder ein d
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %§\,13k \ac{EnWG} verfolgt mit dem Grundsatz \glqq{}Nutzen statt Abregeln\grqq{} einen anderen Ansatz: Die \ac{ÜNB} schreiben die voraussichtlich abzuregelnden Strommengen täglich vor der Auktion des \ac{DA} aus, und die bezuschlagten Teilnehmer nehmen die Mengen in zusätzlichen zuschaltbaren Lasten ab, wobei eine Pönale anfällt, wenn die zugeteilte Menge nicht verbraucht wird \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 §\,13k \ac{EnWG} verfolgt mit dem Grundsatz \glqq{}Nutzen statt Abregeln\grqq{} einen anderen Ansatz.
-Die \ac{ÜNB} schreiben die voraussichtlich abzuregelnden Strommengen täglich vor der Auktion des \ac{DA} aus, und die bezuschlagten Teilnehmer nehmen die Mengen in zusätzlichen zuschaltbaren Lasten ab \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+% ENTGELT SICHTBAR GEMACHT am 19.09.2026, Rueckfrage des Verfassers: "heisst man bekommt kostenlos
+% energie?" Der Satz las sich so, als werde die Menge uebergeben. Die Zahlungsrichtung stand erst
+% fuenf Zeilen spaeter im Absatz. Paragraf 13k Abs. 5 EnWG belegt die Gegenrichtung woertlich:
+% "Soweit ein berechtigter Teilnehmer Abregelungsstrommengen nach Absatz 2 oder Absatz 4 bezieht
+% und diese nicht verbraucht, muss dieser ... eine Poenale entrichten, die auch unter
+% Beruecksichtigung der GEGENLEISTUNG FUER DIE NUTZUNG der Abregelungsstrommengen effektiv sein
+% muss." Die Hoehe bestimmt nach Abs. 2 die taegliche wettbewerbliche Ausschreibung. Alte Fassung:
+%Die \ac{ÜNB} schreiben die voraussichtlich abzuregelnden Strommengen täglich vor der Auktion des \ac{DA} aus, und die bezuschlagten Teilnehmer nehmen die Mengen in zusätzlichen zuschaltbaren Lasten ab \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+% ERGAENZT am 19.09.2026, Rueckfrage des Verfassers nach der Grundlage der Mengenbestimmung und
+% nach dem Ort der Lasten: "ja dann schreib das kompakt so. das sind wichtige infos". Die Angaben
+% stammen aus Paragraf 13k EnWG. Abs. 2 Satz 1: die UeNB "bestimmen ... die stuendlichen
+% Strommengen aus Anlagen nach Paragraf 3 Nummer 1 des Erneuerbare-Energien-Gesetzes, die am Tag
+% der Erfuellung der Handelsgeschaefte der vortaegigen Auktion voraussichtlich wegen strombedingter
+% Engpaesse im Uebertragungsnetz reduziert werden muessten (Abregelungsstrommengen)". Abs. 6 Nr. 5
+% verlangt im Konzept der UeNB die Angabe der Prognosen und der Methode "einschliesslich der
+% Angabe eines hinreichenden Abschlags, um sicherzustellen, dass nicht mehr Abregelungsstrommengen
+% zugeteilt werden, als abgeregelt werden muessten". Abs. 3: berechtigte Teilnehmer sind
+% ausschliesslich Betreiber "von registrierten zusaetzlich zuschaltbaren Lasten in
+% Entlastungsregionen"; Abs. 6 Nr. 1 bestimmt diese als "geographisch eindeutig abgegrenzte
+% Gebiete". Eine knotenscharfe Zuordnung verlangt das Gesetz allein in Abs. 4 fuer
+% Eigenverbrauchsentlastungsanlagen am selben Netzverknuepfungspunkt. Alte Fassung:
+%Die \ac{ÜNB} schreiben die voraussichtlich abzuregelnden Strommengen täglich vor der Auktion des \ac{DA} aus, und die bezuschlagten Teilnehmer nehmen die Mengen gegen Entgelt in zusätzlichen zuschaltbaren Lasten ab \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Die \ac{ÜNB} bestimmen aus Prognosen die stündlichen Strommengen, die am Liefertag wegen strombedingter Engpässe abzuregeln wären, und schreiben sie vor der Auktion des \ac{DA} aus \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Ein Abschlag auf die prognostizierte Menge stellt sicher, dass nicht mehr zugeteilt wird, als tatsächlich abzuregeln wäre.
+Die bezuschlagten Teilnehmer nehmen die Mengen gegen Entgelt in zusätzlichen zuschaltbaren Lasten ab.
+Die Lasten müssen dafür in einer Entlastungsregion stehen, also in einem geographisch abgegrenzten Gebiet und nicht an einem bestimmten Netzknoten.
 Eine Pönale fällt an, wenn die zugeteilte Menge nicht verbraucht wird.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Geschuldet ist damit die Abnahme einer bekannten Menge in einem bekannten Zeitfenster und nicht die Fähigkeit, auf ein Ereignis zu reagieren, das möglicherweise nicht eintritt, und die Zahlung verläuft in die andere Richtung, denn der Teilnehmer zahlt für die Menge, statt für seine Bereitschaft vergütet zu werden.
+% ERGAENZT am 19.09.2026, dieselbe Vorgabe: die regionale Zuordnung ist das schaerfere
+% Abgrenzungsargument gegenueber der kurativen Vorhaltung, die an einem bestimmten Stromkreis
+% wirken muss.
 Geschuldet ist damit die Abnahme einer bekannten Menge in einem bekannten Zeitfenster und nicht die Fähigkeit, auf ein Ereignis zu reagieren, das möglicherweise nicht eintritt.
+Die regionale Zuordnung genügt für eine kurative Maßnahme zudem nicht, weil die Entlastung an einem bestimmten Stromkreis wirken muss.
 Die Zahlung verläuft zudem in die andere Richtung, denn der Teilnehmer zahlt für die Menge, statt für seine Bereitschaft vergütet zu werden.
 % R-31 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
 %Zulässig ist die kurative Systemführung damit, geregelt ist ihre Beschaffung nicht, denn die vorhandenen Instrumente greifen auf dasselbe Stellpotenzial zu, ohne dafür einen Preis zu bilden, und die Bereitstellung bleibt an eine Zusage des Anlagenbetreibers gebunden, für die keine Vergütung vorgesehen ist.
@@ -1210,9 +1344,26 @@ Die vorhandenen Instrumente greifen auf dasselbe Stellpotenzial zu, ohne dafür 
 %Dieser Abschnitt erklärt dazu die einzelnen Märkte und ihre zeitliche Einordnung.
 Kosteneffizient und diskriminierungsfrei lässt sich eine Zusage zur kurativen Vorhaltung erlangen, indem ein kuratives Produkt in die bestehenden Strommärkte eingefügt wird, statt es daneben zu stellen, und dafür sind die Märkte und ihre zeitliche Einordnung zu kennen.
 
-\subsection{Selbstdispatch und Zentraldispatch}
-\label{sec:dispatch_models}
-
+% UNTERABSCHNITT AUFGELOEST am 19.09.2026, Vorgabe des Verfassers: "ich finde 2.2.1 fast
+% ueberfluessig. ich wuerde es kurzhalten und nur das central dispatch modell erwaehnen und alles
+% einfach in das oberkapitel schreiben. einen eigenes kapitel ist dafuer zu viel." Das
+% Selbstdispatch-Modell ist bereits in 1.1 erklaert ("Im Selbstdispatch-Modell bestimmen die
+% Fahrplanverantwortlichen die Erzeugungs- und Verbrauchsfahrplaene sowie den Einsatz ihrer
+% Anlagen selbst") und wird im Zwischenfazit 2.5 erneut gebraucht. Einzig traegt der
+% Unterabschnitt das Gegenmodell, naemlich dass eine kurative Reaktionsfaehigkeit im zentralen
+% Dispatch eine Nebenbedingung der Optimierung des UeNB waere, die er verguetet, aber nicht
+% beschafft. Das ist die Begruendung dafuer, dass es ueberhaupt einen Marktmechanismus braucht und
+% keine Anweisung, und steht nirgends sonst. Aus 13 Saetzen in zwei Absaetzen werden sieben in
+% einem. Gestrichen sind die Definition des Selbstdispatch, die Terminologiezeile zu den
+% Fahrplanverantwortlichen, die Feststellung zur Verbreitung in Europa und das Detail, dass der
+% Fahrplan im Zentraldispatch die Grenzwerte von vornherein einhaelt. Auf Rueckfrage des
+% Verfassers ("es muss mehr hin zu der fahrplanplanung aus sicht des akteurs gelenkt werden")
+% endet der Absatz jetzt mit der Ueberleitung auf die Fahrplanbildung des Akteurs, an die 2.2.2
+% unmittelbar anschliesst. Die Marke sec:dispatch_models wird nirgends referenziert und entfaellt.
+% Nachfolgend der aufgeloeste Unterabschnitt im Wortlaut, nicht wieder aufzunehmen:
+%\subsection{Selbstdispatch und Zentraldispatch}
+%\label{sec:dispatch_models}
+%
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G26, G27, G28, Q4, Stilregel 5. Terminologie im Halbsatz, Volumensatz entfallen, weil 1.1 ihn traegt, die vorliegende Arbeit ersetzt.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -1222,7 +1373,7 @@ Kosteneffizient und diskriminierungsfrei lässt sich eine Zusage zur kurativen V
 %Netzrestriktionen sind dort Nebenbedingung der Einsatzoptimierung und damit Teil der Fahrplanbildung selbst, weshalb der Fahrplan die Grenzwerte von vornherein einhält und eine nachgelagerte Korrektur weitgehend entfällt.
 %Eine kurative Reaktionsfähigkeit wäre in diesem Modell eine weitere Nebenbedingung derselben Optimierung.
 %Der \ac{ÜNB} müsste sie vergüten, aber nicht beschaffen, denn er bestimmt den Betriebspunkt der Anlage ohnehin und kann den erforderlichen Leistungs- und Energievorrat unmittelbar freihalten.
-
+%
 %Im Selbst\-dispatch-Modell werden die Fahrpläne und der Einsatz der Erzeugungs- und Verbrauchsanlagen demgegenüber durch die Fahrplanverantwortlichen dieser Anlagen selbst bestimmt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 %Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf dieses Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}, weshalb ihm in Europa der überwiegende Teil der Systeme einschließlich Deutschlands folgt \cite{meeus_evolution_2020}.
 %Die Einsatzentscheidung bleibt damit bei demjenigen, der die Kosten seiner Anlage kennt, und der \ac{ÜNB} benötigt weder diese Kenntnis noch einen Zugriff auf den Betriebspunkt.
@@ -1239,24 +1390,44 @@ Kosteneffizient und diskriminierungsfrei lässt sich eine Zusage zur kurativen V
 %Die vorliegende Arbeit setzt an der bestehenden Zonenaufteilung an, sodass ein anderes Marktdesign eine neue Ausgestaltung des hier entworfenen Mechanismus erforderte.
 % R-32 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
 %Die Märkte setzen auf einem Dispatchmodell auf, und die europäische Regulierung unterscheidet zwei Modelle, nach denen Erzeugungs- und Verbrauchsfahrpläne zustande kommen, nämlich das zentrale Dispatch-Modell und das Self-Dispatch-Modell, für das im Folgenden die deutsche Form Selbstdispatch steht, ebenso wie Fahrplanverantwortliche für die dort genannten Scheduling Agents.
-Die Märkte setzen auf einem Dispatchmodell auf, und die europäische Regulierung unterscheidet dafür das zentrale Dispatch-Modell und das Self-Dispatch-Modell.
-Im Folgenden steht dafür die deutsche Form Selbstdispatch, ebenso wie Fahrplanverantwortliche für die dort genannten Scheduling Agents.
-Im zentralen Dispatch-Modell bestimmt der \ac{ÜNB} die Fahrpläne und den Einsatz der dispatchfähigen Anlagen in einem integrierten Fahrplanerstellungsprozess, der technische Anlagendaten, Anfahrcharakteristika und die Ergebnisse der Betriebssicherheitsanalyse gemeinsam berücksichtigt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-Netzrestriktionen sind dort Nebenbedingung der Einsatzoptimierung und damit Teil der Fahrplanbildung selbst, weshalb der Fahrplan die Grenzwerte von vornherein einhält und eine nachgelagerte Korrektur weitgehend entfällt.
-Eine kurative Reaktionsfähigkeit wäre in diesem Modell eine weitere Nebenbedingung derselben Optimierung, die der \ac{ÜNB} vergüten, aber nicht beschaffen müsste, denn er bestimmt den Betriebspunkt der Anlage ohnehin und kann den erforderlichen Leistungs- und Energievorrat unmittelbar freihalten.
-
+%Die Märkte setzen auf einem Dispatchmodell auf, und die europäische Regulierung unterscheidet dafür das zentrale Dispatch-Modell und das Self-Dispatch-Modell.
+%Im Folgenden steht dafür die deutsche Form Selbstdispatch, ebenso wie Fahrplanverantwortliche für die dort genannten Scheduling Agents.
+%Im zentralen Dispatch-Modell bestimmt der \ac{ÜNB} die Fahrpläne und den Einsatz der dispatchfähigen Anlagen in einem integrierten Fahrplanerstellungsprozess, der technische Anlagendaten, Anfahrcharakteristika und die Ergebnisse der Betriebssicherheitsanalyse gemeinsam berücksichtigt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+%Netzrestriktionen sind dort Nebenbedingung der Einsatzoptimierung und damit Teil der Fahrplanbildung selbst, weshalb der Fahrplan die Grenzwerte von vornherein einhält und eine nachgelagerte Korrektur weitgehend entfällt.
+%Eine kurative Reaktionsfähigkeit wäre in diesem Modell eine weitere Nebenbedingung derselben Optimierung, die der \ac{ÜNB} vergüten, aber nicht beschaffen müsste, denn er bestimmt den Betriebspunkt der Anlage ohnehin und kann den erforderlichen Leistungs- und Energievorrat unmittelbar freihalten.
+%
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Im Selbst\-dispatch-Modell bestimmen demgegenüber die Fahrplanverantwortlichen die Fahrpläne und den Einsatz ihrer Anlagen selbst, und Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf dieses Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}, weshalb ihm in Europa der überwiegende Teil der Systeme einschließlich Deutschlands folgt \cite{meeus_evolution_2020}.
-Im Selbst\-dispatch-Modell bestimmen demgegenüber die Fahrplanverantwortlichen die Fahrpläne und den Einsatz ihrer Anlagen selbst.
-Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf dieses Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}.
-In Europa folgt dem Selbstdispatch deshalb der überwiegende Teil der Systeme einschließlich Deutschlands \cite{meeus_evolution_2020}.
-Die Einsatzentscheidung bleibt damit bei demjenigen, der die Kosten seiner Anlage kennt, und der \ac{ÜNB} benötigt weder diese Kenntnis noch einen Zugriff auf den Betriebspunkt.
+%Im Selbst\-dispatch-Modell bestimmen demgegenüber die Fahrplanverantwortlichen die Fahrpläne und den Einsatz ihrer Anlagen selbst.
+%Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf dieses Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}.
+%In Europa folgt dem Selbstdispatch deshalb der überwiegende Teil der Systeme einschließlich Deutschlands \cite{meeus_evolution_2020}.
+%Die Einsatzentscheidung bleibt damit bei demjenigen, der die Kosten seiner Anlage kennt, und der \ac{ÜNB} benötigt weder diese Kenntnis noch einen Zugriff auf den Betriebspunkt.
 % R-33 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz gekuerzt, Stilregel 17. Alte Fassung:
 %Weil die Marktteilnehmer gegen einen zonalen Preis optimieren, der keine Information über die Belastung einzelner Betriebsmittel enthält, ist der Redispatch in dieser Lesart keine Störung des Marktergebnisses, sondern der systematisch vorgesehene Korrekturmechanismus eines Marktdesigns, das physikalische Restriktionen bewusst aus der Preisbildung ausklammert \cite{oggioni_market_2013, newbery_market_2018}.
-Der Redispatch ist im zonalen Marktdesign der vorgesehene Korrekturmechanismus, weil der zonale Preis keine Information über die Belastung einzelner Betriebsmittel enthält \cite{oggioni_market_2013, newbery_market_2018}.
+%Der Redispatch ist im zonalen Marktdesign der vorgesehene Korrekturmechanismus, weil der zonale Preis keine Information über die Belastung einzelner Betriebsmittel enthält \cite{oggioni_market_2013, newbery_market_2018}.
+%Der Redispatch ist im zonalen Marktdesign der vorgesehene Korrekturmechanismus, weil der zonale Preis keine Information über die Belastung einzelner Betriebsmittel enthält \cite{oggioni_market_2013, newbery_market_2018}.
+% ERGAENZT am 19.09.2026, Kommentar des Verfassers: "wir sind ja gerade in einem absatz zu kurativ,
+% deswegen passen die kwep daten hier nicht rein. passen sie nicht eher zum selfdispatch modell und
+% wir erklaeren dort warum sie noetig sind?" Der Meldeweg gehoert an diese Stelle, weil der Absatz
+% zwei Saetze vorher feststellt, dass der UeNB im Selbstdispatch weder die Kostenkenntnis noch den
+% Zugriff auf den Betriebspunkt hat. bdew_branchenleitfaden_2018: "In dem Standard-Redispatch-Fall
+% greifen die UeNB ausschliesslich auf die im Rahmen des automatisierten KWEP-Prozesses
+% (Kraftwerkseinsatzplanungsdaten) gemeldeten Redispatch-Potenziale und die dazu gemeldeten
+% Kostenansaetze zu, um damit die Merit Order usw. zu bestimmen." Das Akronym KWEP ist nicht
+% eingefuehrt, weil es nur einmal vorkaeme und einen Eintrag im Abkuerzungsverzeichnis braeuchte.
+% Randbedingung: die Quelle ist von 2018 und damit vor der Fassung des Redispatch 2.0.
+%Der \ac{ÜNB} ist dafür auf gemeldete Angaben angewiesen.
+%Im Standardfall greift er auf die Potenziale und Kostenansätze zurück, die die Anlagenbetreiber im automatisierten Prozess der Kraftwerkseinsatzplanung melden \cite{bdew_branchenleitfaden_2018}.
 % S-07 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, der Folgesatz traegt die Aussage fuer die Arbeit. Gestrichener Satz: Alte Fassung:
 %Als Alternativen zur einheitlichen Gebotszone werden deren Teilung in mehrere kleinere Zonen und eine knotenscharfe Preisbildung diskutiert, die die Netzrestriktionen bereits in die Preisbildung aufnehmen und damit einen Teil des heutigen Redispatchbedarfs in die Fahrplanbildung internalisieren würden \cite{horsch_role_2017, agency_for_the_cooperation_of_energy_regulators_acer_transmission_2024}.
+%Die folgende Betrachtung setzt an der bestehenden Zonenaufteilung an, sodass ein anderes Marktdesign eine neue Ausgestaltung des kurativen Marktmechanismus erforderte.
+Die europäische Regulierung unterscheidet zwei Dispatchmodelle, und im zentralen Dispatch-Modell bestimmt der \ac{ÜNB} die Fahrpläne und den Einsatz der Anlagen.
+Eine kurative Reaktionsfähigkeit wäre in diesem Modell eine Nebenbedingung seiner Einsatzoptimierung, die der \ac{ÜNB} vergüten, aber nicht beschaffen müsste.
+Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} jedoch grundsätzlich auf das Selbst\-dispatch-Modell und lässt ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei Inkrafttreten der Verordnung bereits anwandten \cite{europaische_kommission_verordnung_2017_ebgl}.
+Der \ac{ÜNB} benötigt deshalb weder die Kostenkenntnis noch einen Zugriff auf den Betriebspunkt, und der Redispatch ist im zonalen Marktdesign der vorgesehene Korrekturmechanismus \cite{oggioni_market_2013, newbery_market_2018}.
+Für den Redispatch ist er auf gemeldete Angaben angewiesen und greift im Standardfall auf die Potenziale und Kostenansätze zurück, die die Anlagenbetreiber im automatisierten Prozess der Kraftwerkseinsatzplanung melden \cite{bdew_branchenleitfaden_2018}.
 Die folgende Betrachtung setzt an der bestehenden Zonenaufteilung an, sodass ein anderes Marktdesign eine neue Ausgestaltung des kurativen Marktmechanismus erforderte.
+Aus Sicht des Anlagenbetreibers entscheidet sich an der Bildung seines Fahrplans, ob und zu welchem Preis er Leistung für eine kurative Bindung frei hält.
 
 \subsection{Marktzeithorizonte und Handelsgelegenheiten}
 \label{sec:market_horizons}

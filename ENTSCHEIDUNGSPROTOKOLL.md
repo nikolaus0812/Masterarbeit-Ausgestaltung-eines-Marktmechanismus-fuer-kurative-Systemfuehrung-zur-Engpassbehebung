@@ -5846,6 +5846,178 @@ Text sollen, hat der Verfasser noch nicht entschieden.
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit den
 beiden bekannten Referenzwarnungen, 94 Seiten.
 
+### 19.09.2026, Kommentardurchgang 2.1.2 bis 2.2
+
+Ein Eintrag fuer eine Folge von Kommentaren des Verfassers am gesetzten PDF.
+
+**Thermische Einzelheiten gestrichen.** Kommentar: "die infos wuerde ich fast
+streichen, da sie auch in dieser arbeit eher nebensaechlich sind. zu dem
+davor." Gestrichen sind drei Saetze, naemlich der Temperaturverlauf bei
+Ueberlast, die Abhaengigkeit von Vorbelastung und Witterung mit der Windkuehlung
+und der Satz zu Transformatoren mit der Alterung der Isolation und der
+Begrenzung der Haeufigkeit. Anhang B traegt die Waermebilanz, den
+Temperaturverlauf und die Isolationsalterung bereits, der Absatz verweist selbst
+darauf. Die Abhaengigkeit von Vorbelastung und Witterung bleibt im Absatz zur
+wechselseitigen Bindung und in 2.1.4 erhalten. Die Begrenzung der Haeufigkeit
+entfaellt ersatzlos; sie ist ohne Folge, weil die Arbeit die Abrufhaeufigkeit
+nicht modelliert. cigre_thermal_2014 und iec_60076_7_2018 bleiben in Anhang B in
+Gebrauch.
+
+**Dopplung im Zusageabsatz gestrichen.** Gestrichen sind "Bei energiebegrenzten
+Technologien wie Speichern ist darueber hinaus sicherzustellen, dass zum
+Zeitpunkt eines moeglichen Abrufs ausreichend gespeicherte Energie zur Verfuegung
+steht" und "Die Sicherstellung verlangt eine gezielte Vorhaltung des
+Ladezustands im Vorfeld". Die Aussage steht acht Zeilen vorher als
+Begriffsbestimmung der kurativen Bindung, in 2.1.1 und systematisch in 2.1.3.
+Geprueft und behalten sind dagegen der bilanzielle Ausgleich, weil 2.1.3
+ausdruecklich hierher zurueckverweist, die Bestimmung von Quelle und Senke, weil
+CLAUDE.md sie fuer diese Stelle vorschreibt, und der Verbund von Zusagen, weil
+der uebernaechste Absatz ihn aufgreift.
+
+**Meldeweg der Potenziale in den Abschnitt zum Dispatchmodell.** Kommentar: "wir
+sind ja gerade in einem absatz zu kurativ, deswegen passen die kwep daten hier
+nicht rein. passen sie nicht eher zum selfdispatch modell und wir erklaeren dort
+warum sie noetig sind?" Der Meldeweg steht jetzt dort, wo der Text feststellt,
+dass der UeNB im Selbstdispatch weder die Kostenkenntnis noch den Zugriff auf
+den Betriebspunkt hat. Beleg bdew_branchenleitfaden_2018: "In dem
+Standard-Redispatch-Fall greifen die UeNB ausschliesslich auf die im Rahmen des
+automatisierten KWEP-Prozesses (Kraftwerkseinsatzplanungsdaten) gemeldeten
+Redispatch-Potenziale und die dazu gemeldeten Kostenansaetze zu." Das Akronym
+KWEP ist nicht eingefuehrt, weil es nur einmal vorkaeme. Randbedingung: die
+Quelle ist von 2018 und damit vor der Fassung des Redispatch 2.0.
+
+**BESS nicht mehr sehr schnell.** Kommentar: "dann koennen wir aber nicht bess
+als sehr schnell bezeichnen, denn unter 10sec ist moeglich aber noch nicht
+geprueft", nachgeschaerft zu "lass uns bess als schnell einordnen mit zu
+pruefender Faehigkeit fuer die sehr schnelle klasse". Die Tabellenzelle lautet
+jetzt "schnell, sehr schnelle Klasse zu pruefen". Die Fussnote traegt die
+Begruendung mit Beleg: InnoSys 2030 definiert die Klasse unter zehn Sekunden,
+untersucht das kurative Potenzial aber nur fuer die schnelle und die langsame
+Klasse. Zurueckgenommene Zwischenfassung desselben Tages: "schnell, unter 10 s
+moeglich". Folgestelle angepasst: der BESS-Absatz sagte, die Reaktionszeit sei
+uneingeschraenkt erfuellt, und nennt jetzt die schnelle Klasse. Damit passen
+Tabelle und Basisfall zusammen, der nach CLAUDE.md Abschnitt 7 mit der Klasse
+etwa zwei Minuten rechnet.
+
+**Zwei Saetze verbunden und entwertet.** Kommentar: "saetze verbinden und
+wissenschaftlicher formulieren". Zurueckgenommen: "Neben Standort und Bestand
+entscheidet der Energieinhalt ueber die Eignung, und dort liegt die Grenze eines
+BESS, nicht in der Leistung. Fuer den praeventiven Redispatch wirkt sich das als
+Nachteil aus, weil dort die Leistungsaenderung bis zur Aufloesung des Engpasses
+zu halten ist und der Energieinhalt die erreichbare Dauer begrenzt." Die alte
+Fassung gebrauchte dort zweimal mit verschiedenem Bezug, setzte das
+Demonstrativum das ueber die Satzgrenze und bewertete den Befund als Nachteil.
+
+**KuPilot als kurative Hoeherauslastung, Vorgabe des Verfassers gegen den
+Wortlaut der Quellen.** Vorgabe: "schreib eine kurative hoeherauslastung auch
+wenn von redispatch gesprochen wird. es ist hoeherauslastung." Beide greifbaren
+Quellen sagen kurativer Redispatch. Der Titel der TenneT-Mitteilung lautet
+"Pilotbetrieb gestartet: Amprion, TenneT und RWE erproben kurativen Redispatch im
+realen Betrieb"; die Datei ist eine reine Bilddatei ohne Textlayer und mit
+pdftotext nicht auslesbar. Das Consentec-Kurzgutachten zum Systembooster
+schreibt: "Im Projekt 'KuPilot' erfolgt die Pilotierung eines kurativen
+Redispatchs mit Hilfe eines Pumpspeicherkraftwerks (PSKW Vianden) als bilanzielle
+Redispatch-Quelle, sowie eines Offshore-Windparks (OWP Diele) als
+engpasssensitive Redispatch-Senke fuer den Netzabschnitt der
+Uebertragungsnetzregion Emsland." Der Verfasser ist auf den Widerspruch
+hingewiesen worden und hat die Einordnung angeordnet. Sachlich traegt sie, denn
+nach der Abgrenzung in 2.1.1 ist der Redispatch das Mittel und die
+Hoeherauslastung der Zweck. Damit die Quelle keine Aussage belegt, die sie nicht
+traegt, nennt ein Folgesatz die Bezeichnung der Quellen ausdruecklich.
+
+**Konditionen von KuPilot, unzutreffende Teilaussage gestrichen.** Der Zusatz
+"deren Konditionen nicht oeffentlich sind" trifft nicht zu, denn das
+Consentec-Kurzgutachten legt die Verguetungsstruktur der freiwilligen
+Selbstverpflichtung offen, naemlich Opportunitaetskosten fuer entgangene
+aFRR-Erloese sowie Fixkosten aus einer pauschalen Verguetung fuer die technische
+Ertuechtigung und einer laufzeitabhaengigen Verguetung; es haelt ferner fest, die
+Verguetungslogik sei "teilweise nicht vollstaendig in der aktuell regulatorisch
+geltenden Kostenerstattungssystematik im Redispatch abbildbar". Entscheidung des
+Verfassers: "ich weiss wie die verguetung funktioniert aber wir gehen darauf
+einfach nicht ein. wir bleiben dabei das bilateral geklaert ist und fuer dieses
+projekt speziell ist." Die Struktur wird deshalb nicht aufgenommen, allein die
+unzutreffende Teilaussage entfaellt. Der belegte Satz zur fehlenden
+Abbildbarkeit bleibt fuer eine spaetere Verwendung vorgemerkt.
+
+**Zurechnung zum Netzzustand ausgeschrieben.** Rueckfrage: "was heisst das?" Die
+Wendung "rechnet die Wirkung vorbereiteter Entlastungsmassnahmen dem Netzzustand
+zu" verbarg den Angelpunkt des Dreischritts. Neue Fassung: "Zweitens bewertet
+die Leitlinie den Netzzustand einschliesslich der Wirkung vorbereiteter
+Entlastungsmassnahmen. Ein Netz gilt damit auch dann als (N-1)-sicher, wenn es
+die Grenzwerte erst mit diesen Massnahmen einhaelt." Der Rueckverweis auf 2.1.1
+entfaellt, Stilregel 15.
+
+**Folgerung aus der Binnenmarktverordnung umgedreht.** Kommentar: "das sehe ich
+als geringstes problem, eher dass andere technologien nicht ausgeschlossen
+werden." Zurueckgenommen: "sodass der kurative Marktmechanismus BESS nicht
+ausschliessen darf". Neue Fassung: "Der kurative Marktmechanismus ist deshalb
+technologieoffen auszugestalten und darf keine geeignete Technologie
+ausschliessen."
+
+**Paragraf 17 Abs. 2b aufgeteilt.** Rueckfrage: "den satz verstehe ich auch
+nicht". Zurueckgenommen: "Fuer Speicher ist die Norm bedeutsam, weil nur sie
+beide Richtungen erfasst, und ein Anspruch auf Abschluss oder auf Entschaedigung
+besteht dabei nicht." Der Satz verband zwei Aussagen ohne Zusammenhang, und das
+Pronomen sie bezog sich grammatisch auf die Norm statt auf den Speicher. Die
+zweite Aussage folgt ex silentio und ist deshalb zurueckhaltender gefasst. Der
+Beleg bundesnetzagentur_faq_2025 ist maschinell nicht auslesbar, die Aussage ist
+am Gesetzestext geprueft.
+
+**Paragraf 13k kompakt gefasst.** Rueckfragen: "heisst man bekommt kostenlos
+energie?" und "das abzuregelnde potenzial wird auf welcher grundlage bestimmt,
+dann muessen ja lasten an denselben knoten zugeschaltet werden." Ergaenzt sind
+die Prognosegrundlage nach Abs. 2 Satz 1, der Abschlag nach Abs. 6 Nr. 5 und die
+Entlastungsregion nach Abs. 3 und Abs. 6 Nr. 1, ferner das Wort Entgelt, das die
+Zahlungsrichtung sofort klarstellt; Abs. 5 spricht von der "Gegenleistung fuer
+die Nutzung der Abregelungsstrommengen". Eigenstaendige Ableitung, als solche
+gekennzeichnet: die regionale Zuordnung ist das schaerfere Abgrenzungsargument
+gegenueber der kurativen Vorhaltung, die an einem bestimmten Stromkreis wirken
+muss. Eine knotenscharfe Zuordnung verlangt das Gesetz allein in Abs. 4 fuer
+Eigenverbrauchsentlastungsanlagen.
+
+**Unterabschnitt Selbstdispatch und Zentraldispatch aufgeloest.** Vorgabe: "ich
+finde 2.2.1 fast ueberfluessig. ich wuerde es kurzhalten und nur das central
+dispatch modell erwaehnen und alles einfach in das oberkapitel schreiben."
+Eigenstaendige Pruefung: das Selbstdispatch-Modell ist in 1.1 erklaert und wird
+im Zwischenfazit erneut gebraucht; einzig traegt der Unterabschnitt das
+Gegenmodell, naemlich dass eine kurative Reaktionsfaehigkeit im zentralen
+Dispatch eine Nebenbedingung der Optimierung des UeNB waere, die er verguetet,
+aber nicht beschafft. Das ist die Begruendung dafuer, dass es ueberhaupt einen
+Marktmechanismus braucht und keine Anweisung. Aus 13 Saetzen in zwei Absaetzen
+werden sieben in einem Absatz der Einleitung von 2.2. Gestrichen sind die
+Definition des Selbstdispatch, die Terminologiezeile zu den
+Fahrplanverantwortlichen, die Verbreitung in Europa, das Detail zu den
+Netzrestriktionen als Nebenbedingung und der Rahmensatz zu den Dispatchmodellen.
+Auf Rueckfrage des Verfassers ("es muss mehr hin zu der fahrplanplanung aus
+sicht des akteurs gelenkt werden") endet der Absatz mit der Ueberleitung "Aus
+Sicht des Anlagenbetreibers entscheidet sich an der Bildung seines Fahrplans, ob
+und zu welchem Preis er Leistung fuer eine kurative Bindung frei haelt". Die
+Marke sec:dispatch_models wird nirgends referenziert und entfaellt,
+sec:market_horizons bleibt, weil Anhang A sie braucht. Die Nummerierung
+verschiebt sich, aus 2.2.2 wird 2.2.1 und aus 2.2.3 wird 2.2.2.
+
+**Abbildung 2.2 und Abbildung 2.3.** Abbildung 2.2 ist auf Vorgabe des
+Verfassers unmittelbar hinter den Einleitungsabsatz von 2.1.2 gezogen worden und
+steht jetzt im Satz auf derselben Seite wie ihr Verweis. Abbildung 2.3 stand in
+der Quelldatei bereits im richtigen Unterabschnitt und landet nach der Aufloesung
+von 2.2.1 zusammen mit der Ueberschrift und ihrem ersten Verweis auf einer Seite.
+Die Naehepruefung meldet damit 14 statt 15 Befunde.
+
+**Ende der kurativen Bindung bedingt.** Vorgabe: "und sobald weitere
+ueberlastungen ausgeschlossen sind". Der Satz ist dafuer in drei Saetze geteilt,
+und der UeNB steht statt des Passivs im Subjekt.
+
+**Offen.** Ob der Satz zur fehlenden Abbildbarkeit der KuPilot-Verguetungslogik
+spaeter aufgenommen wird. Ob die Prozessnamen WAPP, pRD1, pRD2/DACF und IDCF oder
+die Ausfallapproximation mit einem anderen Beleg in den Text sollen. Ob ein Satz
+ergaenzt wird, wonach die Arbeit mit dem BESS den Preis eines Anbieters bestimmt
+und nicht den Zuschnitt des Produkts. Ob die Aussage zur fehlenden
+Verguetungsregel, die in 2.1.5 dreimal steht, dort gekuerzt wird, und ob
+Kapitel 1 dieselbe Vorwegnahme traegt.
+
+**Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit biber
+und den beiden bekannten Referenzwarnungen, 94 Seiten.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
