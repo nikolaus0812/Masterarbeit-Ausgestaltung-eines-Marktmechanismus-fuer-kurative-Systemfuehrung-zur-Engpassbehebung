@@ -6322,6 +6322,79 @@ Wettbewerb um das Leistungsband ist dort mit Belegen dargestellt. Das
 Satzfragment "Ich wuerde noch ein." aus dem Kommentar zum Dispatch-Absatz ist
 auf Anweisung des Verfassers fallen gelassen.
 
+**2.2.2, Mengen der Regelleistung.** Kommentar des Verfassers: "da kann etwas
+kompakter geschrieben werden. Ich finde, die Leistungszahlen sind nicht sehr
+relevant, wenn wir sie nirgendwo anders als weder aFRR noch mFRR anfuehren.
+Deswegen streichen oder Zahlen ergaenzen." Eigenstaendige Entscheidung fuer das
+Ergaenzen, weil der Monitoringbericht 2025 alle Mengen als Jahresdurchschnitt
+2024 traegt: FCR 564 MW, aFRR 1941 MW positiv und 1817 MW negativ, mFRR 603 MW
+positiv und 364 MW negativ. Drei Saetze statt drei, aber ein Satz weniger zur
+FCR: "Der Bedarf an FCR wird auf europaeischer Ebene aus dem Referenzstoerfall
+von 3000 MW abgeleitet und ueber einen jaehrlich neu berechneten Schluessel auf
+die Regelzonen verteilt [SO GL]." Neu: "Im Jahresdurchschnitt 2024 waren in
+Deutschland 564 MW FCR ausgeschrieben, 1941 MW positive und 1817 MW negative
+aFRR sowie 603 MW positive und 364 MW negative mFRR [Monitoringbericht]."
+Zurueckgenommen: "Ein jaehrlich neu berechneter Schluessel verteilt diesen
+Bedarf auf die Regelzonen, woraus fuer Deutschland im Jahr 2024 eine im
+Jahresdurchschnitt ausgeschriebene Leistung von 564 MW folgte." Die Mengen
+geben Kapitel 3 eine belegte Bezugsgroesse fuer den Anteil eines BESS am
+Regelleistungsmarkt, offener Punkt G7.
+
+**2.2.2, Zuschlag mit Akteur.** Kommentar des Verfassers: "Zuschlagsverpflichtung
+des UeNB." Umgesetzt als "unter Beruecksichtigung eines vom UeNB erteilten
+Zuschlags", weil der UeNB den Zuschlag erteilt und der Anbieter die
+Verpflichtung traegt, wie der Satz davor sagt; eigenstaendige Abweichung vom
+Wortlaut des Kommentars, Stilregel 12. Alte Fassung: "unter Beruecksichtigung
+einer erteilten Zuschlagsverpflichtung".
+
+**2.2.2, Engpassmanagement auf die Zeitschiene, Verguetung nach 2.3.** Kommentar
+des Verfassers: "ich wuerde hier noch irgendwo das Wort Redispatch 2.0
+anfuehren, und da wir uns gerade mit der Zeitschiene beschaeftigen, muessen wir
+auch noch was zum Zeitpunkt sagen. Wir sagen zwar schon ueberall vorher, dass er
+angewiesen wird und ein Duldungsregime ist, aber wie es zeitlich aussieht,
+verlieren wir nirgendwo ein Wort und gehen mehr auf Verguetung ein, die erst
+folgen soll. Vielleicht kann man da einiges in 2.3 schieben." Der Absatz in
+2.2.2 traegt jetzt acht Saetze zur Anordnung: Paragraph 13a EnWG in der Fassung
+des Redispatch 2.0 mit der Anlagengrenze 100 kW und der Pflicht, anzupassen
+oder zu dulden (EnWG Paragraph 13a Abs. 1 im Wortlaut geprueft), die Zeitpunkte
+der praeventiven Redispatchprozesse nach van Leeuwen, Abbildung 2-3 (pRD1 ca.
+16:30 Uhr, pRD2/DACF ca. 18:00 Uhr, IDCF rollierend), die Folge, dass die
+Aufforderung einen am DA und in der IDA-1 bereits vermarkteten Fahrplan trifft,
+die kurzfristige Aufforderung aus der Netzsicherheitsrechnung und der Verweis
+auf 2.3 fuer den Ausgleich. Damit ist der offene Punkt vom 19.09.2026, ob die
+Prozessnamen pRD1, pRD2/DACF und IDCF in den Text sollen, fuer pRD1 und pRD2
+entschieden; WAPP bleibt allein in der Abbildung. Die Saetze zwei bis neun der
+Fassung vom Vormittag (Kostenbasis gewachsen, Binnenmarktverordnung, Dispatch in
+zwei Stufen, Sicherheit des Netzes, Boersenpreis, Vorbehalte) stehen jetzt
+unveraendert als Einleitungsabsatz von 2.3 hinter dem Satz zu den zwei Fragen,
+mit dem neuen Anschluss "Der Zugriff im Engpassmanagement erfolgt auf
+Kostenbasis, und die Kostenbasis ist in Deutschland nicht das Ergebnis einer
+Wahl zwischen zwei Verfahren, sondern die gewachsene Form des Redispatch."
+Zurueckgenommen: "Das Engpassmanagement als zweite Systemdienstleistung mit
+Zugriff auf die Wirkleistung wird dagegen nicht marktlich beschafft, sondern
+angeordnet und auf Kostenbasis ausgeglichen." (jetzt ohne "und auf Kostenbasis
+ausgeglichen"). Eigenstaendige Anmerkung: 2.3.1 nennt den Redispatch 2.0 und
+den 1. Oktober 2021 weiterhin, die Nennung in 2.2.2 ist die Erstnennung.
+
+**Dopplungen nach dem Umbau des Engpassmanagement-Absatzes.** Rueckfrage des
+Verfassers: "und Dopplungen haben wir deswegen nicht, oder? Ausserdem laeuft der
+erste DACF doch schon nach dem DA, also nach 12 Uhr irgendwann, oder?" Zwei
+Dopplungen gefunden und beseitigt. Erstens stand in 2.3.1 "Die Anpassung
+erfolgt nicht auf Grundlage eines Gebots, sondern als Anordnung des
+Netzbetreibers, die der Anlagenbetreiber zu dulden hat." Gestrichen, nicht
+wieder aufnehmen, weil 2.2.2 Aufforderung, Duldung und das fehlende Gebot
+traegt. Der Stichtag 1. Oktober 2021 ist aus 2.3.1 in die Erstnennung des
+Redispatch 2.0 in 2.2.2 gezogen, 2.3.1 sagt nur noch "richtet sich der
+Ausgleich nach Paragraph 13a EnWG". Zweitens wiederholte "Zeichnet sich eine
+Ueberlastung erst in der Netzsicherheitsrechnung ab, fordert der UeNB auch
+kurzfristig zur Anpassung auf" den Satz aus 1.1; er ist in den IDC-Satz
+eingezogen ("untertaegig oder aus der Netzsicherheitsrechnung heraus"). Zum
+DACF: van Leeuwen setzt pRD1 auf ca. 16:30 Uhr und pRD2/DACF auf ca. 18:00 Uhr,
+beide nach dem DA um 12 Uhr und nach der IDA-1 um 15 Uhr; einen frueheren
+DACF-Lauf traegt keine Quelle im Repository, der Text bleibt bei "am DA und in
+der IDA-1 bereits vermarktet". Offen, falls der Verfasser einen frueheren Lauf
+belegen kann.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
 Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
 Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
