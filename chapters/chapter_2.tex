@@ -2714,8 +2714,16 @@ Unmittelbar anwendbar ist die Beschaffungslogik der Regelleistung gleichwohl nic
 % DURCHSICHT 16.09.2026, Erklaerung steht jetzt bei der ersten Verwendung. Alte Fassung:
 %Der Grund liegt in der Arbitrage, die den Speicher in Niedrigpreisphasen füllt und in Hochpreisphasen leert.
 Ein \ac{BESS} erwirtschaftet seine Erlöse aus mehreren Vermarktungswegen zugleich, vor allem aus der Arbitrage an den Spotmärkten und aus der Vorhaltung von Regelleistung.
-Jeder dieser Wege kann für sich lukrativ sein: Die Arbitrage lebt von der Preisspanne innerhalb des Tages \cite{mahgoub_wie_2025}, und die Regelleistung vergütet die Vorhaltung, ohne dass ein Abruf eintreten muss.
-Lukrativ bleibt ein Weg aber nur, solange der Zulauf begrenzt ist, und für die \ac{FCR} waren im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert, mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+% GEAENDERT am 20.09.2026, Kommentar des Verfassers: "schreib eher, dass momentan die Preisspanne hoch ist
+% und aFRR durch hohe Reservierungs- und Arbeitspreise erloesreich sind, ohne Zahlen zu nennen ... nicht der
+% Zulauf ist das Problem, sondern die Akteure, die die Erloesquellen bedienen koennen." Mahgoub:
+% "Preisvolatilitaeten auf den Spotmaerkten eroeffnen vielversprechende Geschaeftsmodelle fuer
+% Batteriespeicher"; aFRR nach den Ausschreibungsdaten (eigene Auswertung analysen/mfrr_leistungspreise,
+% Leistungspreise 2025), Arbeitspreise dort ohne eigene Auswertung, zurueckhaltend als "derzeit". Alte Fassung:
+%Jeder dieser Wege kann für sich lukrativ sein: Die Arbitrage lebt von der Preisspanne innerhalb des Tages \cite{mahgoub_wie_2025}, und die Regelleistung vergütet die Vorhaltung, ohne dass ein Abruf eintreten muss.
+%Lukrativ bleibt ein Weg aber nur, solange der Zulauf begrenzt ist, und für die \ac{FCR} waren im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert, mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+Jeder dieser Wege kann für sich lukrativ sein: Die Preisspanne innerhalb des Tages fällt derzeit hoch aus \cite{mahgoub_wie_2025}, und die \ac{aFRR} ist über ihre Leistungs- und Arbeitspreise derzeit erlösstark \cite{regelleistung_ausschreibungsdaten_2026}.
+Lukrativ bleibt ein Weg aber nur, solange wenige Akteure ihn bedienen können, und für die \ac{FCR} waren im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert, mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
 Die Regelleistungsmärkte sind mengenmäßig begrenzt, sodass ein weiterer Zubau überwiegend in die Arbitrage drängt \cite{garttan_battery_2025}.
 Ein wirtschaftlich robuster Betrieb setzt deshalb die Mehrfachvermarktung voraus, in der Literatur als Multi-Use geführt.
 Der Betreiber vermarktet Leistung und Energieinhalt anteilig auf den Wegen, die zum jeweiligen Zeitpunkt am meisten einbringen, und verschiebt die Anteile mit den relativen Preisen.
@@ -2723,14 +2731,67 @@ Die Wege greifen dabei auf dieselbe Leistung und denselben Energieinhalt derselb
 Die kurative Vorhaltung fügt sich in diese Mehrfachvermarktung als weiterer Weg ein: Sie eröffnet eine zusätzliche Erlösmöglichkeit, muss sich aber gegen alle anderen Wege um dieselbe Leistung und denselben Ladezustand durchsetzen.
 Welchen Anteil der Anlage ein Betreiber ihr widmet, hängt von den relativen Preisen ab und ist zu bestimmen.
 
-Innerhalb des ungebundenen Ladezustandsbereichs führt der marktoptimale Fahrplan den Ladezustand an dessen Ränder, denn die Arbitrage füllt den Speicher bei niedrigem Preis und leert ihn bei hohem.
-Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}.
-Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede Vermarktungsentscheidung zudem unter Unsicherheit über die folgenden.
-Die Kosten einer kurativen Bindung hängen damit von der andernfalls gewählten Vermarktung ab, und diese Alternative wechselt mit den relativen Preisen.
+% NEU GEFASST am 20.09.2026, Rueckfrage des Verfassers: "ich bin mir unsicher, was die Aussage dieses Absatzes
+% ist, was wollen wir mit Netzdienlichkeit und so sagen." These voran: die kurative Vorhaltung entsteht bei
+% einem BESS nur durch Einplanung, weil die Arbitrage den Ladezustand an die Raender treibt; ihre Kosten sind
+% die verdraengte Vermarktung. "Netzdienlicher Beitrag" ersetzt durch das zugesagte Leistungs- und
+% Ladezustandsband, den Begriff der kurativen Bindung aus 2.1.2. Alte Fassung, nicht wieder aufnehmen:
+%Innerhalb des ungebundenen Ladezustandsbereichs führt der marktoptimale Fahrplan den Ladezustand an dessen Ränder, denn die Arbitrage füllt den Speicher bei niedrigem Preis und leert ihn bei hohem.
+%Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}.
+%Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede Vermarktungsentscheidung zudem unter Unsicherheit über die folgenden.
+%Die Kosten einer kurativen Bindung hängen damit von der andernfalls gewählten Vermarktung ab, und diese Alternative wechselt mit den relativen Preisen.
+% NEU GEFASST am 20.09.2026, Kommentar des Verfassers: "diese Aussage doppelt sich gefuehlt mehrfach. Kann man
+% das mehr auf den Ladezustand beziehen: nicht nur die Leistung ist das Problem, der Ladezustand muss auch
+% fuer alle Maerkte gemanagt werden, hier auch eine Aussage zur Regelleistungslieferung, die wiederbeschafft
+% wird." Kernaussage jetzt der Ladezustand als zweite Ressource; die Kostenaussage steht allein im ersten
+% Absatz. Cortes (celi_cortes_m5use_2024) zum IDC-Handel, der den Ladezustand fuer die Regelleistung haelt,
+% hier wieder aufgenommen. Alte Fassung, nicht wieder aufnehmen:
+%Die kurative Vorhaltung entsteht bei einem \ac{BESS} nicht nebenbei, sondern nur durch Einplanung.
+%Der marktoptimale Fahrplan führt den Ladezustand innerhalb des ungebundenen Bereichs an dessen Ränder, denn die Arbitrage füllt den Speicher bei niedrigem Preis und leert ihn bei hohem.
+%Ein zugesagtes Leistungs- und Ladezustandsband lässt sich deshalb nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff herstellen \cite{lindner_operation_2023, sous_untersuchung_2022}.
+%Die Kosten dieser Einplanung sind die verdrängte Vermarktung, und sie wechseln mit den relativen Preisen.
+%Weil die Handelsgelegenheiten zeitlich versetzt liegen, kennt der Betreiber diese Preise bei jeder Entscheidung nur zum Teil.
+Neben der Leistung ist bei einem \ac{BESS} der Ladezustand die zweite Ressource, um die die Vermarktungswege konkurrieren.
+Der marktoptimale Fahrplan führt den Ladezustand an die Ränder des ungebundenen Bereichs, denn die Arbitrage füllt den Speicher bei niedrigem Preis und leert ihn bei hohem.
+Die Regelleistung verlangt dagegen einen Ladezustand innerhalb des präqualifizierten Bandes über die gesamte Erbringungsperiode, und ein Abruf verschiebt ihn.
+Die abgerufene Energie muss der Betreiber anschließend am \ac{IDC} wiederbeschaffen, sodass ein Teil des Handels dort allein dem Halten des Ladezustands dient \cite{celi_cortes_m5use_2024}.
+% NEU GEFASST am 20.09.2026, Kommentar des Verfassers: "die Aussage ist nicht richtig treffend. Es ist eher,
+% dass der Ladezustand deswegen ebenfalls sehr umkaempft ist und je nachdem, wie viel Energie man vorhaelt,
+% andere Maerkte verdraengt. Ich will das in den Ergebnissen mit der Sensitivitaet der Vorhaltelaengen
+% erklaeren." Ohne Beleg, die Sensitivitaet in Kapitel 4 traegt es. Lindner und Sous bleiben an anderen
+% Stellen zitiert. Alte Fassung, nicht wieder aufnehmen:
+%Ein zugesagtes Ladezustandsband für die kurative Vorhaltung tritt zu diesen Anforderungen hinzu und lässt sich nur über die Einsatzplanung und nicht als nachgelagerter Eingriff herstellen \cite{lindner_operation_2023, sous_untersuchung_2022}.
+%Der Ladezustand ist damit über alle Wege hinweg zu bewirtschaften.
+%Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber diese Entscheidungen zudem unter Unsicherheit über die folgenden Preise.
+Ein Ladezustandsband für die kurative Vorhaltung tritt zu diesen Anforderungen hinzu, sodass der Ladezustand ebenso umkämpft ist wie die Leistung.
+% AUSGEFUEHRT am 20.09.2026, Kommentar des Verfassers: "den letzten Satz ausfuehren: durch mehr Zurueckhaltung
+% wird das Management des SOC schwieriger und dadurch die Vermarktung anderer Wege verdraengt." Alte Fassung:
+%Je mehr Energie ein Betreiber für die kurative Vorhaltung zurückhält, desto mehr Vermarktung verdrängt sie an den übrigen Wegen.
+% NEU GEFASST am 20.09.2026, Wahl des Verfassers aus drei Fassungen (B) mit der Aenderung "nicht den
+% Ladezustand gebraucht haette, sondern das Band an Energie". Alte Fassung:
+%Je mehr Energie ein Betreiber für die kurative Vorhaltung zurückhält, desto enger wird der Bereich, in dem er den Ladezustand für die übrigen Wege bewirtschaften kann.
+%Die Zurückhaltung verdrängt damit nicht nur die Vermarktung der gebundenen Leistung, sondern auch Vermarktung an den übrigen Wegen, die den Ladezustand gebraucht hätte.
+Jede für die kurative Vorhaltung zurückgehaltene Energie fehlt dem Ladezustand an den übrigen Wegen.
+% GEAENDERT am 20.09.2026, Wortlaut des Verfassers: "der das Band an Energie mehr Flexibilitaet und Freiheit
+% gegeben haette". Alte Fassung:
+%Die Vorhaltung verdrängt damit über die gebundene Leistung hinaus auch die Vermarktung, die dieses Band an Energie gebraucht hätte.
+Die Vorhaltung verdrängt damit über die gebundene Leistung hinaus auch die Vermarktung, der dieses Band an Energie mehr Flexibilität und Freiheit gegeben hätte.
 
 \section{Zwischenfazit}
 \label{sec:interim_conclusion}
 
+% NEU GEFASST am 20.09.2026, Vorgabe des Verfassers: "Ziel ist es, alle wichtigen Infos zusammenzufassen, die das
+% Design des Produkts und dann noch die zu untersuchenden Aspekte betreffen, so wuerde ich das auch einleiten",
+% und: "sortieren, dass man gut ueberleiten kann, inhaltlich nach aehnlichen Kapiteln." Aufbau: Einleitungssatz,
+% Absatz Design in der Reihenfolge 2.1 (Gegenstand), 2.2 (Selbstdispatch, Zeitschiene), 2.2.2 und 2.3.4
+% (Kategorie und Form), 2.3.3 (Netzsicherheit); Absatz Untersuchung in der Reihenfolge 2.1.5 und 2.3.1
+% (kein Bemessungsgegenstand, kein Zugriff), 2.3.2 und 2.3.3 (Zeitwert, Indifferenz), 2.3.5 (Anteil,
+% Vorhaltedauer), Abrufverguetung nach Entscheidung 14. Die Dopplungen der alten Absaetze 1 und 4 sind
+% zusammengefuehrt. Alte Fassung, nicht wieder aufnehmen:
+%Die kurative Vorhaltung lässt sich im Selbst\-dispatch-Modell nur über eine Einplanung mit Vergütung und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim \ac{EIV}, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
+%Das geltende Vergütungsregime des Engpassmanagements bemisst den Ausgleich am durchgeführten Eingriff, denn Erzeugungsauslagen, anteiliger Werteverbrauch und entgangene Erlösmöglichkeiten knüpfen sämtlich an die angeordnete Anpassung an. Bereits für den angeordneten Redispatch verfehlt es bei einem Speicher seinen eigenen Maßstab der Indifferenz. Der angesetzte Optionswert enthält einen Zeitwert, der vom Anweisungszeitpunkt unabhängig ist. Der gleichbleibende Zeitwert trifft einen kurzfristig handelnden Speicher stärker als eine Anlage mit früh feststehendem Fahrplan.
+%Aus der kurzfristigen Fahrweise folgt die Anforderung an die Vorhaltung: Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist eine Energiereserve entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
+%Für eine solche kurative Bindung kennt das Engpassmanagement keinen Bemessungsgegenstand. Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, während ein Abruf mit hoher Wahrscheinlichkeit ausbleibt und eine Zahlung deshalb nur in den wenigen Intervallen eines Eingriffs anfällt. Die Vorhaltung ist für ihn damit nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar. Ein Zugriff, der ohne diesen Anreiz auskommt, steht dem \ac{ÜNB} nicht zur Verfügung, denn die Anlagenbetreiber übermitteln zwar ihre Einsatzplanung als Planungsdaten, doch diese Kenntnis begründet keine Verfügung über den Betriebspunkt. Sie erlaubt ihm auch keine schnellere Reaktion als die Redispatch-Prozesse, sodass die vorübergehend zulässige Überlastung als Handlungsraum ungenutzt bleibt.
 % BEGRIFF am 20.09.2026, Vorgabe des Verfassers: EIV statt Anlagenbetreiber, weil hier die Rolle gemeint ist,
 % die den Fahrplan bestimmt und die Zusage gibt. Alte Fassung:
 %Die kurative Verfügbarkeit lässt sich im Selbst\-dispatch-Modell nur über einen Preis und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim Anlagenbetreiber, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
@@ -2738,22 +2799,38 @@ Die Kosten einer kurativen Bindung hängen damit von der andernfalls gewählten 
 % Verguetung". Zugleich "kurative Verfuegbarkeit" durch "kurative Vorhaltung" ersetzt, offener Punkt der
 % Uebergabe vom 19.09.2026, Begriff nach CLAUDE.md Abschnitt 5. Alte Fassung:
 %Die kurative Verfügbarkeit lässt sich im Selbst\-dispatch-Modell nur über einen Preis und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim \ac{EIV}, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
-Die kurative Vorhaltung lässt sich im Selbst\-dispatch-Modell nur über eine Einplanung mit Vergütung und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim \ac{EIV}, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
 % ABSATZ VERBUNDEN 16.09.2026, C2.13.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G40, Q9, Stilregel 17. Fuenf Saetze zum Zeitwert auf drei.
 % Alte Fassung, nicht wieder aufnehmen:
 %Das geltende Vergütungsregime des Engpassmanagements bemisst den Ausgleich am durchgeführten Eingriff, denn Erzeugungsauslagen, anteiliger Werteverbrauch und entgangene Erlösmöglichkeiten knüpfen sämtlich an die angeordnete Anpassung an. Bereits für den angeordneten Redispatch verfehlt es bei einem Speicher seinen eigenen Maßstab, ihn weder besser noch schlechter zu stellen, als er ohne die Anweisung stünde. Der angesetzte Optionswert enthält stets einen Zeitwert, und dieser ist vom Zeitpunkt der Anweisung unabhängig, weil das Volatilitätsmaß nicht auf die verbleibende Zeit umgerechnet wird. Eine kurz vor der Lieferung ergehende Anweisung wird deshalb so vergütet wie eine lange zuvor angekündigte, obwohl die verbleibende Unsicherheit geringer ist. Da ein Speicher kurzfristig handelt und deshalb eher kurzfristig angewiesen wird, trifft ihn dieser Effekt stärker als eine Anlage, deren Fahrplan früh feststeht.
-Das geltende Vergütungsregime des Engpassmanagements bemisst den Ausgleich am durchgeführten Eingriff, denn Erzeugungsauslagen, anteiliger Werteverbrauch und entgangene Erlösmöglichkeiten knüpfen sämtlich an die angeordnete Anpassung an. Bereits für den angeordneten Redispatch verfehlt es bei einem Speicher seinen eigenen Maßstab der Indifferenz. Der angesetzte Optionswert enthält einen Zeitwert, der vom Anweisungszeitpunkt unabhängig ist. Der gleichbleibende Zeitwert trifft einen kurzfristig handelnden Speicher stärker als eine Anlage mit früh feststehendem Fahrplan.
-
 % STILREGEL 5 am 15.09.2026, Pronomen aufgeloest. Alte Fassung:
 %Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Er legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
 % DURCHSICHT 16.09.2026, C1, Ueberleitung. Alte Fassung:
 %Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
 % I-05 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: entbehrlich ist bei Wind und Photovoltaik die Energiereserve und nicht die Bindung. Alte Fassung:
 %Aus der kurzfristigen Fahrweise folgt die Anforderung an die Vorhaltung: Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist sie entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
-Aus der kurzfristigen Fahrweise folgt die Anforderung an die Vorhaltung: Eine kurative Zusage setzt bei einem Speicher eine Reservierung von Leistung samt der zugehörigen Energiereserve voraus, und zwar über mehrere Handelsgelegenheiten hinweg. Der Speicher legt seinen Betriebspunkt erst im kurzfristigen Handel fest und kann ihn in beide Richtungen verändern, sodass erst diese Bindung die Handlungsfähigkeit im Fehlerfall sichert. Bei Windenergie- und Photovoltaikanlagen ist eine Energiereserve entbehrlich, denn sie vermarkten früh, und soweit sie einspeisen, lässt sich diese Einspeisung in der einzigen möglichen Richtung absenken.
 % ABSATZ VERBUNDEN 16.09.2026, C2.13.
 % DURCHSICHT 16.09.2026, Begriff kurative Bindung, Vorgabe des Verfassers vom 16.09.2026. Alte Fassung:
 %Für eine solche Bindung kennt das Engpassmanagement keinen Bemessungsgegenstand. Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, während ein Abruf mit hoher Wahrscheinlichkeit ausbleibt und eine Zahlung deshalb nur in den wenigen Intervallen eines Eingriffs anfällt. Die Vorhaltung ist für ihn damit nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar. Ein Zugriff, der ohne diesen Anreiz auskommt, steht dem \ac{ÜNB} nicht zur Verfügung, denn die Anlagenbetreiber übermitteln zwar ihre Einsatzplanung als Planungsdaten, doch diese Kenntnis begründet keine Verfügung über den Betriebspunkt. Sie erlaubt ihm auch keine schnellere Reaktion als die Redispatch-Prozesse, sodass die vorübergehend zulässige Überlastung als Handlungsraum ungenutzt bleibt.
-Für eine solche kurative Bindung kennt das Engpassmanagement keinen Bemessungsgegenstand. Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, während ein Abruf mit hoher Wahrscheinlichkeit ausbleibt und eine Zahlung deshalb nur in den wenigen Intervallen eines Eingriffs anfällt. Die Vorhaltung ist für ihn damit nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar. Ein Zugriff, der ohne diesen Anreiz auskommt, steht dem \ac{ÜNB} nicht zur Verfügung, denn die Anlagenbetreiber übermitteln zwar ihre Einsatzplanung als Planungsdaten, doch diese Kenntnis begründet keine Verfügung über den Betriebspunkt. Sie erlaubt ihm auch keine schnellere Reaktion als die Redispatch-Prozesse, sodass die vorübergehend zulässige Überlastung als Handlungsraum ungenutzt bleibt.
+Die Grundlagen legen fest, was das Design einer kurativen Reservierung berücksichtigen muss, und sie benennen die Aspekte, die zu untersuchen bleiben.
+
+Der Gegenstand der Reservierung ist bei einem Speicher ein Leistungsband samt der zugehörigen Energiereserve über die Bindungsdauer und in beide Richtungen, denn der Speicher legt seinen Betriebspunkt erst kurzfristig fest und kann ihn in beide Richtungen verändern.
+Bei Windenergie- und Photovoltaikanlagen ist eine Energiereserve entbehrlich, denn sie vermarkten früh und können ihre Einspeisung nur absenken.
+Im Selbst\-dispatch-Modell entsteht die Reservierung nur über eine Einplanung mit Vergütung und nicht über eine Anweisung, denn die Fahrplanhoheit liegt beim \ac{EIV}.
+Die Staffelung der kurzfristigen Märkte macht den Zeitpunkt der Einplanung zu einem eigenen Produktmerkmal: Die Regelleistung schließt vor dem \ac{DA}, eine Redispatch-Anordnung trifft dagegen Fahrpläne, die an allen Kurzfristmärkten bereits vermarktet sind.
+Der Kategorie nach gehört die Reservierung zum Engpassmanagement, das knotenscharf ist, aber allein den durchgeführten Eingriff bemisst.
+Der Form nach gleicht sie der Regelleistung, die die Vorhaltung mit einem Leistungspreis vergütet, Vorhaltung und Abruf getrennt bepreist und bei Speichern ein Ladezustandsband über die Erbringungsperiode bindet.
+Kein bestehendes Regime verbindet beide Eigenschaften.
+Ein kurativer Marktmechanismus darf die Netzsicherheit nicht tragen, sondern ergänzt den präventiven Redispatch, und sein Zuschnitt muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv machen.
+
+Zu untersuchen bleibt zuerst der Preis der Reservierung, denn das Engpassmanagement kennt für eine kurative Bindung keinen Bemessungsgegenstand.
+Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, eine Zahlung fällt aber nur in den wenigen Intervallen eines Eingriffs an.
+Ohne Vergütung ist die Vorhaltung deshalb nicht rational, und die Maßnahme ist im Bedarfsfall nicht verfügbar.
+Einen Zugriff ohne diesen Anreiz hat der \ac{ÜNB} nicht, denn die gemeldeten Planungsdaten begründen weder eine Verfügung über den Betriebspunkt noch eine schnellere Reaktion als die Redispatch-Prozesse.
+Die Bemessung der Festlegung liefert den Preis nicht, denn sie verfehlt bei Speichern schon im angeordneten Redispatch den Maßstab der Indifferenz.
+Ihr Zeitwert ist vom Anweisungszeitpunkt unabhängig und trifft einen kurzfristig handelnden Speicher stärker als eine Anlage mit früh feststehendem Fahrplan.
+Der Preis ist deshalb aus der Fahrplanoptimierung des Akteurs zu bestimmen, als der Erlös, den die Reservierung an den übrigen Vermarktungswegen verdrängt.
+Welchen Anteil seiner Leistung und seines Ladezustands ein \ac{BESS} der Reservierung widmet, hängt von den relativen Preisen der Mehrfachvermarktung ab und wechselt mit ihnen.
+Die Vorhaltedauer bestimmt dabei das Band an Energie, das der Reservierung zufällt und den übrigen Wegen fehlt, und ist deshalb eigens zu untersuchen.
+Die Vergütung eines Abrufs ist davon getrennt und eigens zu betrachten.

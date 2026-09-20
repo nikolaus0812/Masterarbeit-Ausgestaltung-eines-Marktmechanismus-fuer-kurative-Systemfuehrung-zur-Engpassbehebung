@@ -6806,6 +6806,129 @@ Nachtrag 2.3.5: Entscheidung des Verfassers, keine Arbitragezahlen in 2.3.5
 offene Punkt zur Groesse der Arbitrage ist damit geschlossen, die Erstnennung
 des Erloesindex bleibt in 3.3.1.
 
+Nachtrag 2.3.5: Kommentar des Verfassers: "schreib eher, dass momentan die
+Preisspanne hoch ist und aFRR durch hohe Reservierungs- und Arbeitspreise
+erloesreich sind, ohne Zahlen zu nennen ... nicht der Zulauf ist das Problem,
+sondern die Akteure, die die Erloesquellen bedienen koennen." Saetze zwei und
+drei lauten jetzt: "Jeder dieser Wege kann fuer sich lukrativ sein: Die
+Preisspanne innerhalb des Tages faellt derzeit hoch aus [Mahgoub], und die aFRR
+ist ueber ihre Leistungs- und Arbeitspreise derzeit erloesstark
+[regelleistung.net]. Lukrativ bleibt ein Weg aber nur, solange wenige Akteure
+ihn bedienen koennen, und fuer die FCR ..." Belege: Mahgoub
+"Preisvolatilitaeten auf den Spotmaerkten eroeffnen vielversprechende
+Geschaeftsmodelle fuer Batteriespeicher"; die aFRR-Leistungspreise 2025 sind
+in analysen/mfrr_leistungspreise ausgewertet, die Arbeitspreise nicht, das
+"derzeit" ist die Abschwaechung nach Stilregel 8. Zurueckgenommen: "Die
+Arbitrage lebt von der Preisspanne innerhalb des Tages, und die Regelleistung
+verguetet die Vorhaltung, ohne dass ein Abruf eintreten muss." und "solange
+der Zulauf begrenzt ist".
+
+**2.3.5, zweiter Absatz mit These voran.** Rueckfrage des Verfassers: "ich bin
+mir unsicher, was die Aussage dieses Absatzes ist, was wollen wir mit
+Netzdienlichkeit und so sagen." Aussage: die kurative Vorhaltung entsteht bei
+einem BESS nur durch Einplanung, weil die Arbitrage den Ladezustand an die
+Raender treibt, und ihre Kosten sind die verdraengte Vermarktung; das
+begruendet, dass Kapitel 3 die Reservierung in das Optimierungsmodell des
+Fahrplans einbaut. Fuenf Saetze: "Die kurative Vorhaltung entsteht bei einem
+BESS nicht nebenbei, sondern nur durch Einplanung. Der marktoptimale Fahrplan
+fuehrt den Ladezustand innerhalb des ungebundenen Bereichs an dessen Raender,
+denn ... Ein zugesagtes Leistungs- und Ladezustandsband laesst sich deshalb
+nur ueber eine Anpassung der Einsatzplanung und nicht als nachgelagerter
+Eingriff herstellen [Lindner, Sous]. Die Kosten dieser Einplanung sind die
+verdraengte Vermarktung, und sie wechseln mit den relativen Preisen. Weil die
+Handelsgelegenheiten zeitlich versetzt liegen, kennt der Betreiber diese Preise
+bei jeder Entscheidung nur zum Teil." Zurueckgenommen: "Ein netzdienlicher
+Beitrag laesst sich folglich nur ueber eine Anpassung der Einsatzplanung ..."
+(Netzdienlichkeit als Begriff entfaellt) und "Die Kosten einer kurativen
+Bindung haengen damit von der andernfalls gewaehlten Vermarktung ab".
+
+**2.3.5, zweiter Absatz auf den Ladezustand.** Kommentar des Verfassers: "diese
+Aussage doppelt sich gefuehlt mehrfach. Kann man das mehr auf den Ladezustand
+beziehen: nicht nur die Leistung ist das Problem, der Ladezustand muss auch
+fuer alle Maerkte gemanagt werden, hier auch eine Aussage zur
+Regelleistungslieferung, die wiederbeschafft wird." Sieben Saetze: Ladezustand
+als zweite Ressource, Arbitrage an die Raender, Regelleistung verlangt das
+praequalifizierte Band und ein Abruf verschiebt den Ladezustand, "Die
+abgerufene Energie muss der Betreiber anschliessend am IDC wiederbeschaffen,
+sodass ein Teil des Handels dort allein dem Halten des Ladezustands dient
+[Cortes]" (die heute frueh gestrichene Beobachtung, hier passend), das
+kurative Ladezustandsband als weitere Anforderung nur ueber die Einsatzplanung
+[Lindner, Sous], Bewirtschaftung ueber alle Wege, Unsicherheit. Die
+Kostenaussage (verdraengte Vermarktung) steht allein im ersten Absatz.
+Zurueckgenommen: "Die kurative Vorhaltung entsteht bei einem BESS nicht
+nebenbei, sondern nur durch Einplanung." und "Die Kosten dieser Einplanung
+sind die verdraengte Vermarktung, und sie wechseln mit den relativen Preisen."
+
+Nachtrag 2.3.5, Schluss des zweiten Absatzes: Kommentar des Verfassers: "die
+Aussage ist nicht richtig treffend. Es ist eher, dass der Ladezustand deswegen
+ebenfalls sehr umkaempft ist und je nachdem, wie viel Energie man vorhaelt,
+andere Maerkte verdraengt. Ich will das in den Ergebnissen mit der
+Sensitivitaet der Vorhaltelaengen erklaeren." Jetzt: "Ein Ladezustandsband
+fuer die kurative Vorhaltung tritt zu diesen Anforderungen hinzu, sodass der
+Ladezustand ebenso umkaempft ist wie die Leistung. Je mehr Energie ein
+Betreiber fuer die kurative Vorhaltung zurueckhaelt, desto mehr Vermarktung
+verdraengt sie an den uebrigen Wegen." Zurueckgenommen: "... laesst sich nur
+ueber die Einsatzplanung und nicht als nachgelagerter Eingriff herstellen
+[Lindner, Sous]", "Der Ladezustand ist damit ueber alle Wege hinweg zu
+bewirtschaften." und der Satz zur Unsicherheit ueber die folgenden Preise.
+Lindner und Sous bleiben an anderen Stellen zitiert. Sechs Saetze.
+
+Nachtrag 2.3.5, Schlusssatz ausgefuehrt auf Kommentar des Verfassers ("durch
+mehr Zurueckhaltung wird das Management des SOC schwieriger und dadurch die
+Vermarktung anderer Wege verdraengt"): "Je mehr Energie ein Betreiber fuer die
+kurative Vorhaltung zurueckhaelt, desto enger wird der Bereich, in dem er den
+Ladezustand fuer die uebrigen Wege bewirtschaften kann. Die Zurueckhaltung
+verdraengt damit nicht nur die Vermarktung der gebundenen Leistung, sondern
+auch Vermarktung an den uebrigen Wegen, die den Ladezustand gebraucht haette."
+Zurueckgenommen: "Je mehr Energie ein Betreiber fuer die kurative Vorhaltung
+zurueckhaelt, desto mehr Vermarktung verdraengt sie an den uebrigen Wegen."
+
+Nachtrag 2.3.5, Schluss endgueltig: Wahl des Verfassers aus drei Fassungen,
+B mit der Aenderung "das Band an Energie" statt "den Ladezustand": "Jede fuer
+die kurative Vorhaltung zurueckgehaltene Energie fehlt dem Ladezustand an den
+uebrigen Wegen. Die Vorhaltung verdraengt damit ueber die gebundene Leistung
+hinaus auch die Vermarktung, die dieses Band an Energie gebraucht haette."
+Zurueckgenommen: die Fassung mit "desto enger wird der Bereich, in dem er den
+Ladezustand fuer die uebrigen Wege bewirtschaften kann".
+
+Nachtrag 2.3.5, Schlusssatz im Wortlaut des Verfassers: "... auch die
+Vermarktung, der dieses Band an Energie mehr Flexibilitaet und Freiheit gegeben
+haette." statt "die dieses Band an Energie gebraucht haette".
+
+**2.4 Zwischenfazit neu gefasst.** Vorgabe des Verfassers: "Ziel ist es, alle
+wichtigen Infos zusammenzufassen, die das Design des Produkts und dann noch die
+zu untersuchenden Aspekte betreffen, so wuerde ich das auch einleiten", nach
+Vorlage der Extraktion: "ok passt, sortieren, dass man gut ueberleiten kann,
+inhaltlich nach aehnlichen Kapiteln." Aufbau: Einleitungssatz allein ("Die
+Grundlagen legen fest, was das Design einer kurativen Reservierung
+beruecksichtigen muss, und sie benennen die Aspekte, die zu untersuchen
+bleiben."), Absatz Design mit acht Saetzen in der Reihenfolge 2.1
+(Leistungsband samt Energiereserve, beide Richtungen; Wind und PV ohne
+Energiereserve), 2.2 (Einplanung mit Verguetung beim EIV; Zeitpunkt der
+Einplanung als Produktmerkmal mit Regelleistung vor dem DA und Redispatch auf
+vermarktete Fahrplaene), 2.2.2 und 2.3.4 (Kategorie Engpassmanagement, Form
+Regelleistung mit Leistungspreis, getrennter Bepreisung und Ladezustandsband,
+kein Regime verbindet beides), 2.3.3 (Netzsicherheit nicht tragen, Zuschnitt
+gegen Vorwegnahme); Absatz Untersuchung mit zehn Saetzen in der Reihenfolge
+2.1.5 und 2.3.1 (kein Bemessungsgegenstand, Opportunitaetskosten je Intervall,
+kein Zugriff ohne Anreiz), 2.3.2 und 2.3.3 (Zeitwert, Indifferenz verfehlt),
+Konsequenz "Der Preis ist deshalb aus der Fahrplanoptimierung des Akteurs zu
+bestimmen, als der Erloes, den die Reservierung an den uebrigen
+Vermarktungswegen verdraengt.", 2.3.5 (Anteil nach relativen Preisen,
+Vorhaltedauer als Band an Energie), Entscheidung 14 (Abrufverguetung getrennt
+und eigens zu betrachten). Zurueckgenommen, nicht wieder aufnehmen: die vier
+Absaetze der Fassung vom 16.09.2026 mit den Dopplungen zwischen Absatz 1 und 4
+("Die Vorhaltung ist fuer ihn damit nicht rational, und die kurative
+Massnahme ist im Bedarfsfall nicht verfuegbar" stand neben "nur ueber eine
+Einplanung mit Verguetung"), Wortlaut im Quelltext als Kommentar. Der
+Einleitungssatz steht allein und liegt unter der halben Seite der Stilregel 1,
+so vom Verfasser gewollt. Eigenstaendige Anmerkung: der Satz zur
+Fahrplanoptimierung nimmt den Ansatz von Kapitel 3 vorweg.
+
+**Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund. Build sauber, 95
+Seiten, Kapitel 2 laeuft mit sieben Zeilen auf Seite 38, Kapitel 3 beginnt auf
+Seite 39; Ausgleich offen.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 Build mit biber, zwei bekannte Referenzwarnungen, 94 Seiten. Abbildung 2.3
 weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
