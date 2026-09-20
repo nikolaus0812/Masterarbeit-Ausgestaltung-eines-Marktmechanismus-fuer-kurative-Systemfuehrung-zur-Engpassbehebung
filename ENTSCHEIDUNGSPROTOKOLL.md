@@ -6632,6 +6632,51 @@ kurative Vorhaltung, Indifferenzprinzip, Reservierungspreis, Regelleistung,
 beide Regime). Die Praemisse "ergaenzt den praeventiven Redispatch und ersetzt
 ihn nicht" ist im Text neu und vom Verfasser zu lesen.
 
+Nachtrag WAPP: auf Kommentar des Verfassers ("da im Diagramm D-2 steht, wuerde
+ich den Zeitraum bis zwei Tage vor Liefertag angeben") lautet der Satz jetzt
+"der bis zwei Tage vor dem Liefertag Redispatchpotenziale durch
+Kraftwerksanfahrten sichert" statt "bis zu sieben Tage im Voraus". Der Tag D-2
+stammt aus der eigenen Abbildung 2.3, van Leeuwen nennt ca. 8:30 Uhr ohne Tag.
+
+**2.3, Einleitung dritte Fassung, vom Marktmechanismus her.** Kommentar des
+Verfassers: "ich finde den Absatz immer noch sehr wirr und man kann nicht
+folgen, warum es jetzt dieses Kapitel benoetigt", und auf den Vorschlag, vom
+kurativen Reservierungspreis auszugehen: "ich wuerde nicht nach kurativem
+Reservierungspreis gehen, sondern eher nach Ausgestaltung des
+Marktmechanismus, wo Verguetung jeweils ein wichtiger Faktor ist. Wir arbeiten
+spaeter erst aus, dass der kurative Reservierungspreis untersucht werden muss,
+aber wir legen mit dem Kapitel nur die Grundlagen." Zwoelf Saetze: Zweck aus
+der Ausgestaltung, die Regime als Rahmen, zwei Regime, Engpassmanagement (der
+Sache nach, Anordnung, Kostenbasis, Indifferenzprinzip, entgangene
+Erloesmoeglichkeiten, Massstab und Grenzen), Regelleistung (der Form nach,
+Wettbewerb, Leistungspreis, Konkurrenz um Leistung und Ladezustand),
+Konsequenz "Beide Regime liefern damit die Grundlagen fuer die Verguetung im
+kurativen Marktmechanismus, das Engpassmanagement als Massstab der Bemessung
+und die Regelleistung als Form der Beschaffung und als Alternative der
+Vermarktung." Der kurative Reservierungspreis kommt nicht mehr vor.
+Zurueckgenommen, nicht wieder aufnehmen: die acht Saetze der zweiten Fassung
+vom Vormittag, darunter "Fuer die Einordnung einer kurativen Vorhaltung sind
+daher zwei Fragen zu klaeren ...", "Die Kostenbasis ist in Deutschland nicht
+das Ergebnis einer Wahl zwischen zwei Verfahren, sondern die gewachsene Form
+des Redispatch." und "Dieselbe Frage stellt der kurative Reservierungspreis,
+sodass ...". Ohne Belege, weil 2.3.1 bis 2.3.5 sie tragen.
+
+Nachtrag zur Einleitung 2.3: Rueckfrage "welche Regime?" Die Saetze zwei bis
+vier lauten jetzt "Den Rahmen dafuer geben die beiden bestehenden Regime fuer
+Wirkleistung vor, naemlich das Engpassmanagement und die Regelleistung.
+Engpassmanagement und Regelleistung legen fest, wie der UeNB heute fuer
+Wirkleistung zahlt und womit eine kurative Vorhaltung bei einem BESS
+konkurriert." Elf Saetze.
+
+Nachtrag zur Einleitung 2.3: Kommentar "Wirkleistung finde ich auch kritisch zu
+benennen, da kurativ ja gerade kaum Wirkleistungsfluss hat." Saetze zwei und
+drei lauten jetzt "Den Rahmen dafuer geben die beiden bestehenden Regime vor, in
+denen der UeNB auf die Leistung von Anlagen zugreift, naemlich das
+Engpassmanagement und die Regelleistung. Engpassmanagement und Regelleistung
+legen fest, wie der UeNB den Zugriff heute verguetet und womit eine kurative
+Vorhaltung bei einem BESS konkurriert." Zurueckgenommen: "Regime fuer
+Wirkleistung" und "fuer Wirkleistung zahlt".
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 Build mit biber, zwei bekannte Referenzwarnungen, 94 Seiten. Abbildung 2.3
 weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.

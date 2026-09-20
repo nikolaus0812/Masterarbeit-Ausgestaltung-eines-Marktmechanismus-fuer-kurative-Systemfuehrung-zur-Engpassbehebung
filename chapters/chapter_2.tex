@@ -1616,7 +1616,11 @@ Die Rechenläufe sind europäisch koordiniert, weil die \ac{ÜNB} ihre Fahrplan-
 % Vorschauzeit von bis zu sieben Tagen", "Fokus im WAPP- und pRD1-Prozess auf der Sicherung von
 % Redispatchpotentialen, welche durch Anfahrten von Kraftwerksleistung vorgehalten werden koennen". Der
 % Beleg steht im folgenden Satz.
-Den Anfang macht der \ac{WAPP}, der bis zu sieben Tage im Voraus Redispatchpotenziale durch Kraftwerksanfahrten sichert.
+% GEAENDERT am 20.09.2026, Kommentar des Verfassers: "da im Diagramm D-2 steht, wuerde ich den Zeitraum bis
+% zwei Tage vor Liefertag angeben." Abbildung 2.3 setzt den WAPP auf D-2; van Leeuwen nennt ca. 8:30 Uhr ohne
+% Tag und eine Vorschau der Betriebsplanung bis zu sieben Tage. Alte Fassung:
+%Den Anfang macht der \ac{WAPP}, der bis zu sieben Tage im Voraus Redispatchpotenziale durch Kraftwerksanfahrten sichert.
+Den Anfang macht der \ac{WAPP}, der bis zwei Tage vor dem Liefertag Redispatchpotenziale durch Kraftwerksanfahrten sichert.
 Am Vortag rechnen die \ac{ÜNB} den \ac{DACF} für den gesamten Folgetag, am Liefertag folgt untertägig der \ac{IDCF} \cite{leeuwen_integration_2020}.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf, und die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt, denn an einen abgeschlossenen Rechenlauf schließt sich unmittelbar der nächste an.
@@ -1988,13 +1992,26 @@ Der Ausgleich für diesen Eingriff wird in Abschnitt~\ref{sec:market_limits} dar
 % Alte Fassung, nicht wieder aufnehmen:
 %Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären, nämlich auf welchem Weg der \ac{ÜNB} auf eine Anlage zugreift und woran sich die Zahlung bemisst.
 %Dieser Abschnitt erklärt dazu das geltende Regime des Engpassmanagements, stellt ihm die Beschaffung von Regelleistung gegenüber und zeigt zuletzt, mit welchen Opportunitäten eine kurative Vorhaltung konkurrieren würde.
-Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären, nämlich auf welchem Weg der \ac{ÜNB} auf eine Anlage zugreift und woran sich die Zahlung bemisst.
+% NEU GEFASST am 20.09.2026, Kommentar des Verfassers: "ich finde den Absatz immer noch sehr wirr und man kann
+% nicht folgen, warum es jetzt dieses Kapitel benoetigt" und auf den Vorschlag: "ich wuerde nicht nach
+% kurativem Reservierungspreis gehen, sondern eher nach Ausgestaltung des Marktmechanismus, wo Verguetung
+% jeweils ein wichtiger Faktor ist. Wir arbeiten spaeter erst aus, dass der kurative Reservierungspreis
+% untersucht werden muss, aber wir legen mit dem Kapitel nur die Grundlagen." Aufbau: Zweck aus der
+% Ausgestaltung, die zwei Regime, Engpassmanagement als Massstab der Bemessung, Regelleistung als Form der
+% Beschaffung und Alternative der Vermarktung, Konsequenz. Ohne Belege, weil 2.3.1 bis 2.3.5 sie tragen.
+% Alte Fassung, nicht wieder aufnehmen:
+%Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären, nämlich auf welchem Weg der \ac{ÜNB} auf eine Anlage zugreift und woran sich die Zahlung bemisst.
+%Der Zugriff im Engpassmanagement erfolgt auf Kostenbasis, und die Kostenbasis ist in Deutschland nicht das Ergebnis einer Wahl zwischen zwei Verfahren, sondern die gewachsene Form des Redispatch.
+%Der \ac{ÜNB} weist die Anlage an, und der Anlagenbetreiber wird für seine Kosten und entgangenen Erlöse entschädigt.
+%Für die kurative Vorhaltung ist die Kostenbasis gleichwohl der Maßstab, denn sie gehört als Teil des Engpassmanagements in dasselbe Regime.
+%Das Engpassmanagement bewertet mit dem Indifferenzprinzip und den entgangenen Erlösmöglichkeiten bereits, was ein Speicher durch den Verzicht auf seine Vermarktung verliert.
+%Dieselbe Frage stellt der kurative Reservierungspreis, sodass die Bemessung der Festlegung und ihre Grenzen bei einem \ac{BESS} zu prüfen sind.
+%Die Regelleistung beschafft der \ac{ÜNB} demgegenüber im Wettbewerb, und ihr Leistungspreis vergütet die Vorhaltung selbst.
+%Beide Regime greifen bei einem \ac{BESS} auf dieselbe Leistung zu, sodass sich der Preis einer kurativen Vorhaltung an beiden messen lassen muss.
 % HIERHER VERSCHOBEN am 20.09.2026 aus dem Engpassmanagement-Absatz von 2.2.2, Vorgabe des Verfassers,
 % siehe Vermerk dort. Der erste Satz ist als Anschluss an die Frage nach dem Zugriffsweg neu, die
 % uebrigen sind unveraendert. Alte Fassung des ersten Satzes in 2.2.2:
 %Das Engpassmanagement als zweite Systemdienstleistung mit Zugriff auf die Wirkleistung wird dagegen nicht marktlich beschafft, sondern angeordnet und auf Kostenbasis ausgeglichen.
-Der Zugriff im Engpassmanagement erfolgt auf Kostenbasis, und die Kostenbasis ist in Deutschland nicht das Ergebnis einer Wahl zwischen zwei Verfahren, sondern die gewachsene Form des Redispatch.
-Der \ac{ÜNB} weist die Anlage an, und der Anlagenbetreiber wird für seine Kosten und entgangenen Erlöse entschädigt.
 % VERSCHOBEN am 20.09.2026 nach 2.3.3, Kommentar des Verfassers: "das muss irgendwo stehen, wo wir diskutieren, warum Redispatch in der Art und Weise fuer BESS nicht funktioniert, also 2.3.3. Vorangegangen muesste die Argumentation sein, dass ihre Verguetung im kostenbasierten Redispatch ueber die Bewertung nach Weber nicht gut ist und deswegen marktlich eigentlich gut waere, und dann kommt dieser Abschnitt, und wir leiten ueber, dass ein kurativer Markt nicht sicherheitsrelevant sein darf und nur den praeventiven Redispatch ergaenzt. Somit waere eine marktliche Beschaffung hier nicht gefaehrdend fuer den Systemzustand, und man kann den Markt so designen, dass dieses Verhalten nicht attraktiv oder moeglich ist."
 % Die sechs Saetze stehen jetzt in 2.3.3, hier als Kommentar erhalten:
 %Die Binnenmarktverordnung sieht demgegenüber die marktbasierte Beschaffung als Regelfall vor und lässt die Kostenbasis nur bei strategischem Bietverhalten oder fehlendem Wettbewerb zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
@@ -2016,11 +2033,26 @@ Der \ac{ÜNB} weist die Anlage an, und der Anlagenbetreiber wird für seine Kost
 % Argument ist das Indifferenzprinzip: die Definition des kurativen Reservierungspreises in 1.2 (genauso viel
 % verdienen wie ohne Reservierung) stellt dieselbe Frage wie die Bemessung der entgangenen
 % Erloesmoeglichkeiten. Ohne Beleg, weil 2.3.1 und 2.3.2 die Aussagen belegt tragen.
-Für die kurative Vorhaltung ist die Kostenbasis gleichwohl der Maßstab, denn sie gehört als Teil des Engpassmanagements in dasselbe Regime.
-Das Engpassmanagement bewertet mit dem Indifferenzprinzip und den entgangenen Erlösmöglichkeiten bereits, was ein Speicher durch den Verzicht auf seine Vermarktung verliert.
-Dieselbe Frage stellt der kurative Reservierungspreis, sodass die Bemessung der Festlegung und ihre Grenzen bei einem \ac{BESS} zu prüfen sind.
-Die Regelleistung beschafft der \ac{ÜNB} demgegenüber im Wettbewerb, und ihr Leistungspreis vergütet die Vorhaltung selbst.
-Beide Regime greifen bei einem \ac{BESS} auf dieselbe Leistung zu, sodass sich der Preis einer kurativen Vorhaltung an beiden messen lassen muss.
+Zur Ausgestaltung eines kurativen Marktmechanismus gehört die Frage, wie die kurative Vorhaltung vergütet wird.
+% PRAEZISIERT am 20.09.2026, Rueckfrage des Verfassers: "welche Regime?" Die beiden Regime stehen jetzt im
+% Satz selbst, der dritte Satz entfaellt. Alte Fassung:
+%Die bestehenden Regime geben dafür den Rahmen vor.
+%Die Regime legen fest, wie der \ac{ÜNB} heute für Wirkleistung zahlt und womit eine kurative Vorhaltung bei einem \ac{BESS} konkurriert.
+%Zwei Regime kommen in Betracht, nämlich das Engpassmanagement und die Regelleistung.
+% GEAENDERT am 20.09.2026, Kommentar des Verfassers: "Wirkleistung finde ich auch kritisch zu benennen, da
+% kurativ ja gerade kaum Wirkleistungsfluss hat." Jetzt Zugriff auf die Leistung einer Anlage. Alte Fassung:
+%Den Rahmen dafür geben die beiden bestehenden Regime für Wirkleistung vor, nämlich das Engpassmanagement und die Regelleistung.
+%Engpassmanagement und Regelleistung legen fest, wie der \ac{ÜNB} heute für Wirkleistung zahlt und womit eine kurative Vorhaltung bei einem \ac{BESS} konkurriert.
+Den Rahmen dafür geben die beiden bestehenden Regime vor, in denen der \ac{ÜNB} auf die Leistung von Anlagen zugreift, nämlich das Engpassmanagement und die Regelleistung.
+Engpassmanagement und Regelleistung legen fest, wie der \ac{ÜNB} den Zugriff heute vergütet und womit eine kurative Vorhaltung bei einem \ac{BESS} konkurriert.
+Das Engpassmanagement ist das Regime, zu dem die kurative Vorhaltung der Sache nach gehört.
+Der \ac{ÜNB} ordnet dort den Redispatch an und gleicht ihn auf Kostenbasis nach dem Indifferenzprinzip aus, das den Anlagenbetreiber weder besser noch schlechter stellen soll als ohne die Maßnahme.
+Für Speicher bemisst die Festlegung dabei die entgangenen Erlösmöglichkeiten, also den Wert der genommenen Vermarktung.
+Eine kurative Vorhaltung nimmt einem \ac{BESS} ebenfalls Vermarktung, sodass die Bemessung der Festlegung der erste Maßstab ist und ihre Grenzen bei einem \ac{BESS} zu prüfen sind.
+Die Regelleistung gleicht der kurativen Vorhaltung dagegen der Form nach.
+Der \ac{ÜNB} beschafft sie im Wettbewerb und vergütet die Vorhaltung selbst über einen Leistungspreis.
+Zugleich konkurriert die Regelleistung bei einem \ac{BESS} um dieselbe Leistung und denselben Ladezustand wie eine kurative Vorhaltung, sodass ihre Vergütung den Verzicht eines \ac{BESS} bemisst.
+Beide Regime liefern damit die Grundlagen für die Vergütung im kurativen Marktmechanismus, das Engpassmanagement als Maßstab der Bemessung und die Regelleistung als Form der Beschaffung und als Alternative der Vermarktung.
 
 \subsection{Vergütung von Redispatch-Maßnahmen}
 \label{sec:redispatch_compensation}
