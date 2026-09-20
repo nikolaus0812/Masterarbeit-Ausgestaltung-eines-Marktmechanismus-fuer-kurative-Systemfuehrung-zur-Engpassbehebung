@@ -1786,7 +1786,17 @@ Im Jahresdurchschnitt 2024 waren in Deutschland 564\,\si{MW} \ac{FCR} ausgeschri
 %Im Jahr 2025 lag der mittlere Leistungspreis der \ac{mFRR} nach eigener Auswertung der Ausschreibungsergebnisse bei 5 Euro je Megawatt und Stunde in positiver und 11 Euro je Megawatt und Stunde in negativer Richtung, der der \ac{aFRR} bei 18 Euro je Megawatt und Stunde und 16 Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}.
 %Der Erlösindex, der die Erlöse von \ac{BESS} am deutschen Markt ausweist, führt die \ac{mFRR} ebenfalls nicht \cite{isea_methodik_2026}.
 %Die \ac{mFRR} bleibt deshalb im Weiteren außer Betracht.
-Alle drei Ausschreibungen schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag und damit vor der Auktion des \ac{DA} ab.
+% ZEITSCHIENE ERGAENZT am 20.09.2026, Kommentar des Verfassers: "im Abschnitt davor gehen wir bei
+% Regelleistung auch kaum auf die Zeitschiene ein." Handelsschluss 8, 9 und 10 Uhr des Vortages wie in
+% Abbildung 2.3 und in der am 15.09.2026 gestrichenen Tabelle 2.2; lokal traegt Consentec 2026 nur die
+% FCR ("Gate Closure um 08:00 Uhr"), die drei Zeiten stehen auf regelleistung.net, Eintrag
+% regelleistung_ausschreibungsdaten_2026, im Netz von Fable nicht pruefbar. Regelarbeitsmarkt nach dem
+% Monitoringbericht 2025: "Der RAM oeffnet nach Verkuendung der RLM-Auktionsergebnisse und schliesst 25
+% Minuten vor Beginn der jeweiligen Produktzeitscheibe." Der Monitoringbericht ist damit im Absatz zweimal
+% zitiert, in Kauf genommen wie am 19.09.2026, weil beide Zahlen sonst ohne Beleg stuenden. Alte Fassung:
+%Alle drei Ausschreibungen schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag und damit vor der Auktion des \ac{DA} ab.
+Die Ausschreibungen der Leistung schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag um 8 Uhr für die \ac{FCR}, um 9 Uhr für die \ac{aFRR} und um 10 Uhr für die \ac{mFRR} und damit vor der Auktion des \ac{DA} \cite{regelleistung_ausschreibungsdaten_2026}.
+Der Regelarbeitsmarkt für die \ac{aFRR} und die \ac{mFRR} öffnet nach der Verkündung der Zuschläge und schließt 25 Minuten vor Beginn der jeweiligen Viertelstunde \cite{bundesnetzagentur_monitoringbericht_2026}.
 % AKTEUR ERGAENZT am 20.09.2026, Kommentar des Verfassers: "Zuschlagsverpflichtung des UeNB." Der UeNB
 % erteilt den Zuschlag, die Verpflichtung traegt der Anbieter (Satz davor), deshalb "eines vom UeNB
 % erteilten Zuschlags" statt "Zuschlagsverpflichtung des UeNB", Stilregel 12. Alte Fassung:
@@ -1845,8 +1855,41 @@ Das Engpassmanagement als zweite Systemdienstleistung mit Zugriff auf die Wirkle
 % Der Stichtag steht jetzt bei der Erstnennung des Redispatch 2.0 und nicht mehr in 2.3.1. Alte Fassung:
 %Nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0 sind Betreiber von Erzeugungs- und Speicheranlagen ab 100\,\si{kW} verpflichtet, auf Aufforderung des \ac{ÜNB} ihre Wirkleistung anzupassen oder die Anpassung zu dulden \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 Nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0, die seit dem 1.\,Oktober 2021 gilt, sind Betreiber von Erzeugungs- und Speicheranlagen ab 100\,\si{kW} verpflichtet, auf Aufforderung des \ac{ÜNB} ihre Wirkleistung anzupassen oder die Anpassung zu dulden \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Zeitlich setzt die Aufforderung auf den Vorschaurechnungen auf, die Abbildung~\ref{fig:markt_zeitschiene} zeigt.
-Am Vortag laufen die präventiven Redispatchprozesse pRD1 gegen 16:30 Uhr und pRD2 zusammen mit dem \ac{DACF} gegen 18 Uhr, am Liefertag folgt der \ac{IDCF} rollierend \cite{leeuwen_integration_2020}.
+% GETRENNT am 20.09.2026, Vorgabe des Verfassers: "dann trenne pRD und die Lastflussberechnung DACF und
+% IDCF. Unter dem Tag werden ja auch nochmal pRD 3-5 irgendwann durchgefuehrt." Die Lastflussrechnungen
+% stehen jetzt als Grundlage, die Redispatchprozesse als Massnahmenbestimmung darauf. Die untertaegigen
+% Laeufe stehen ohne Nummer, weil van Leeuwen nur pRD1, pRD2/DACF und den IDCF-Prozess nennt ("der
+% untertaegige IDCF-Prozess fokussiert auf die Arbeitspunktanpassung"); die Nummerierung pRD3 bis pRD5
+% traegt keine Quelle im Repository. Alte Fassung:
+%Zeitlich setzt die Aufforderung auf den Vorschaurechnungen auf, die Abbildung~\ref{fig:markt_zeitschiene} zeigt.
+%Am Vortag sichert der Prozess pRD1 gegen 16:30 Uhr auf Basis eigener Lastflussprognosen die Anfahrten von Kraftwerken, deren Vorlauf sonst nicht reichte.
+%Gegen 18 Uhr bestimmt pRD2 auf dem \ac{DACF} die Arbeitspunktanpassungen, und am Liefertag folgt der \ac{IDCF} rollierend \cite{leeuwen_integration_2020}.
+% PRAEZISIERT am 20.09.2026, Einwand des Verfassers: "es macht gar keinen Sinn, einen pRD allein zu rechnen,
+% da er die Ergebnisse der Lastflussberechnung braucht." leeuwen_integration_2020: alle Prozesse nutzen
+% "Optimierungsalgorithmen, die auf Basis von Prognosen der Netznutzung potentielle Engpaesse sowie
+% moegliche Entlastungsmassnahmen ermitteln"; "So liegt der Fokus im WAPP- und pRD1-Prozess auf der
+% Sicherung von Redispatchpotentialen, welche durch Anfahrten von Kraftwerksleistung vorgehalten werden
+% koennen. Die nachfolgenden Prozesse pRD2/DACF sowie der untertaegige IDCF-Prozess fokussieren auf die
+% Arbeitspunktanpassung am Netz befindlicher Kraftwerke". Der pRD1 rechnet also auf eigenen Prognosen und
+% nicht auf dem DACF. Alte Fassung:
+%Am Vortag laufen die präventiven Redispatchprozesse pRD1 gegen 16:30 Uhr und pRD2 zusammen mit dem \ac{DACF} gegen 18 Uhr, am Liefertag folgt der \ac{IDCF} rollierend \cite{leeuwen_integration_2020}.
+Zeitlich folgt die Aufforderung den präventiven Redispatchprozessen, die Abbildung~\ref{fig:markt_zeitschiene} über den Lastflussrechnungen \ac{DACF} und \ac{IDCF} zeigt.
+% ERGAENZT am 20.09.2026, Einwand des Verfassers: "pRD muss halt auf irgendwelchen Lastflussberechnungen
+% aufbauen." leeuwen_integration_2020: "Innerhalb dieser Prozesse werden Optimierungsalgorithmen genutzt,
+% die auf Basis von Prognosen der Netznutzung potentielle Engpaesse sowie moegliche Entlastungsmassnahmen
+% ermitteln", "Redispatch-Ermittlungs-Server (RES). In diesem sind die zugehoerigen Optimierungsprobleme
+% als AC-SCOPF formuliert". Der Beleg steht einmal am Ende des Blocks, Stilregel 15.
+Jeder dieser Prozesse rechnet den prognostizierten Netzzustand mit einem Lastflussmodell durch und bestimmt daraus Engpässe und Maßnahmen.
+% AUF DEN QUELLENWORTLAUT ZURUECKGESETZT am 20.09.2026, Rueckfrage des Verfassers: "und das ist wirklich
+% verifiziert?" Nicht belegt waren "eigene Lastflussprognosen" (Schluss aus der gemeinsamen Nennung von
+% pRD2 und DACF) und "deren Vorlauf sonst nicht reichte". Belegt, leeuwen_integration_2020: "Fokus im
+% WAPP- und pRD1-Prozess auf der Sicherung von Redispatchpotentialen, welche durch Anfahrten von
+% Kraftwerksleistung vorgehalten werden koennen", "teils langen Vorlaufzeiten, insbesondere bei
+% Kraftwerksanfahrten", pRD1 ca. 16:30 Uhr. Alte Fassung, nicht wieder aufnehmen:
+%Am Vortag sichert der Prozess pRD1 gegen 16:30 Uhr auf Basis eigener Lastflussprognosen die Anfahrten von Kraftwerken, deren Vorlauf sonst nicht reichte.
+Am Vortag dient der Prozess pRD1 gegen 16:30 Uhr der Sicherung von Redispatchpotenzialen durch Kraftwerksanfahrten, die einen langen Vorlauf brauchen.
+Gegen 18 Uhr bestimmt pRD2 auf dem \ac{DACF} die Arbeitspunktanpassungen für den Liefertag.
+Am Liefertag folgen auf dem rollierenden \ac{IDCF} weitere präventive Redispatchläufe \cite{leeuwen_integration_2020}.
 % DOPPLUNG am 20.09.2026, Rueckfrage des Verfassers ("und Dopplungen haben wir deswegen nicht, oder?").
 % Der Folgesatz zur kurzfristigen Aufforderung wiederholte 1.1 ("Zeichnet sich im laufenden Betrieb eine
 % Ueberlastung ab, ordnet er den Redispatch auch kurzfristig an") und ist in diesen Satz eingezogen. Alte Fassung:

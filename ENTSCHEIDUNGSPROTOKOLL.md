@@ -6395,6 +6395,82 @@ DACF-Lauf traegt keine Quelle im Repository, der Text bleibt bei "am DA und in
 der IDA-1 bereits vermarktet". Offen, falls der Verfasser einen frueheren Lauf
 belegen kann.
 
+**2.2.2, pRD1 praezisiert und Regelleistung auf der Zeitschiene.** Einwand des
+Verfassers: "es macht gar keinen Sinn, einen pRD allein zu rechnen, da er die
+Ergebnisse der Lastflussberechnung braucht. Noch eine Sache: im Abschnitt davor
+gehen wir bei Regelleistung auch kaum auf die Zeitschiene ein." Zum pRD1: van
+Leeuwen ordnet WAPP und pRD1 der "Sicherung von Redispatchpotentialen, welche
+durch Anfahrten von Kraftwerksleistung vorgehalten werden koennen" zu, pRD2/DACF
+und IDCF der "Arbeitspunktanpassung am Netz befindlicher Kraftwerke", und alle
+Prozesse rechnen "auf Basis von Prognosen der Netznutzung". Der pRD1 rechnet
+also auf eigenen Prognosen und nicht auf dem koordinierten DACF um 18 Uhr.
+Neue Fassung: "Am Vortag sichert der Prozess pRD1 gegen 16:30 Uhr auf Basis
+eigener Lastflussprognosen die Anfahrten von Kraftwerken, deren Vorlauf sonst
+nicht reichte. Gegen 18 Uhr bestimmt pRD2 auf dem DACF die
+Arbeitspunktanpassungen, und am Liefertag folgt der IDCF rollierend [LEE20]."
+Zurueckgenommen: "Am Vortag laufen die praeventiven Redispatchprozesse pRD1
+gegen 16:30 Uhr und pRD2 zusammen mit dem DACF gegen 18 Uhr, am Liefertag folgt
+der IDCF rollierend." Zur Regelleistung zwei Saetze statt einem: "Die
+Ausschreibungen der Leistung schliessen nach Abbildung 2.3 am Vortag um 8 Uhr
+fuer die FCR, um 9 Uhr fuer die aFRR und um 10 Uhr fuer die mFRR und damit vor
+der Auktion des DA [regelleistung.net]." und "Der Regelarbeitsmarkt fuer die
+aFRR und die mFRR oeffnet nach der Verkuendung der Zuschlaege und schliesst 25
+Minuten vor Beginn der jeweiligen Viertelstunde [Monitoringbericht]." Belege:
+Monitoringbericht 2025 im Wortlaut ("Der RAM oeffnet nach Verkuendung der
+RLM-Auktionsergebnisse und schliesst 25 Minuten vor Beginn der jeweiligen
+Produktzeitscheibe"); Consentec Systembooster 2026 traegt die FCR mit "Gate
+Closure um 08:00 Uhr". **Offen:** die 9 und 10 Uhr fuer aFRR und mFRR stehen in
+keiner lokalen Quelle, sie sind mit regelleistung_ausschreibungsdaten_2026
+belegt, das Fable im Netz nicht pruefen kann; die Zeiten stimmen mit Abbildung
+2.3 und der am 15.09.2026 gestrichenen Tabelle 2.2 ueberein. Der
+Monitoringbericht ist im Absatz zweimal zitiert, in Kauf genommen wie am
+19.09.2026.
+
+**2.2.2, Lastflussrechnungen und Redispatchprozesse getrennt.** Vorgabe des
+Verfassers: "dann trenne pRD und die Lastflussberechnung DACF und IDCF. Unter
+dem Tag werden ja auch nochmal pRD 3-5 irgendwann durchgefuehrt." Vier Saetze:
+"Zeitlich folgt die Aufforderung den praeventiven Redispatchprozessen, die
+Abbildung 2.3 ueber den Lastflussrechnungen DACF und IDCF zeigt. Am Vortag
+sichert der Prozess pRD1 gegen 16:30 Uhr auf Basis eigener Lastflussprognosen
+die Anfahrten von Kraftwerken, deren Vorlauf sonst nicht reichte. Gegen 18 Uhr
+bestimmt pRD2 auf dem DACF die Arbeitspunktanpassungen fuer den Liefertag. Am
+Liefertag folgen auf dem rollierenden IDCF weitere praeventive
+Redispatchlaeufe [LEE20]." **Offen:** die Nummerierung pRD3 bis pRD5 der
+untertaegigen Laeufe traegt keine Quelle im Repository, van Leeuwen nennt nur
+pRD1, pRD2/DACF und den IDCF-Prozess; der Text sagt deshalb "weitere
+praeventive Redispatchlaeufe". Zurueckgenommen: "Zeitlich setzt die
+Aufforderung auf den Vorschaurechnungen auf, die Abbildung 2.3 zeigt." und
+"Gegen 18 Uhr bestimmt pRD2 auf dem DACF die Arbeitspunktanpassungen, und am
+Liefertag folgt der IDCF rollierend."
+
+**2.2.2, pRD1 auf den Quellenwortlaut zurueckgesetzt.** Rueckfrage des
+Verfassers: "und das ist wirklich verifiziert?" Befund: nur zum Teil. Belegt
+sind die Uhrzeit, der Zweck (Sicherung von Redispatchpotenzialen durch
+Kraftwerksanfahrten) und die langen Vorlaufzeiten der Anfahrten. Nicht belegt
+waren "auf Basis eigener Lastflussprognosen" (eigenstaendiger Schluss von Fable
+aus der gemeinsamen Nennung von pRD2 und DACF) und "deren Vorlauf sonst nicht
+reichte" (Zuspitzung). Neue Fassung: "Am Vortag dient der Prozess pRD1 gegen
+16:30 Uhr der Sicherung von Redispatchpotenzialen durch Kraftwerksanfahrten,
+die einen langen Vorlauf brauchen." Zurueckgenommen, nicht wieder aufnehmen:
+"Am Vortag sichert der Prozess pRD1 gegen 16:30 Uhr auf Basis eigener
+Lastflussprognosen die Anfahrten von Kraftwerken, deren Vorlauf sonst nicht
+reichte." Der Protokolleintrag von zuvor, wonach der pRD1 "auf eigenen
+Prognosen und nicht auf dem koordinierten DACF" rechne, ist damit als
+ueberholter Befund zu lesen; die Quelle sagt nur, dass alle Prozesse auf
+Prognosen beruhen.
+
+**2.2.2, Lastflussgrundlage der Redispatchprozesse.** Einwand des Verfassers:
+"pRD muss halt auf irgendwelchen Lastflussberechnungen aufbauen." Belegt bei
+van Leeuwen: "Innerhalb dieser Prozesse werden Optimierungsalgorithmen genutzt,
+die auf Basis von Prognosen der Netznutzung potentielle Engpaesse sowie
+moegliche Entlastungsmassnahmen ermitteln" und "Redispatch-Ermittlungs-Server
+(RES). In diesem sind die zugehoerigen Optimierungsprobleme als AC-SCOPF
+formuliert." Neuer Satz vor pRD1: "Jeder dieser Prozesse rechnet den
+prognostizierten Netzzustand mit einem Lastflussmodell durch und bestimmt
+daraus Engpaesse und Massnahmen." Das Akronym AC-SCOPF ist nicht eingefuehrt,
+weil es nur hier vorkaeme. Woher pRD1 seine Prognose bezieht, sagt die Quelle
+nicht, offen.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
 Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
 Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
