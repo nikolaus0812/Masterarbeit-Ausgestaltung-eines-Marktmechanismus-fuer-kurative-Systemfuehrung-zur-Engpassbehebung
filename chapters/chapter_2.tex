@@ -1526,10 +1526,21 @@ Der \ac{OTC}-Handel wird bilateral abgeschlossen und entzieht sich damit einer N
     \label{fig:markt_zeitschiene}
 \end{figure}
 
+% NEUER ABSATZ am 20.09.2026. UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Die drei Saetze standen bis heute in 2.2.2. Handelsschluss nach regelleistung.net (lokal nur die FCR bei
+% Consentec 2026 belegt), Regelarbeitsmarkt nach dem Monitoringbericht 2025. Die Akronyme FCR, aFRR und mFRR
+% werden hier erstmals aufgeloest, einen Absatz vor ihrer Erklaerung in 2.2.2, Preis der Reihenfolge.
+Vor den Energiemärkten schließen am Vortag die Ausschreibungen der Regelleistung, nämlich um 8 Uhr für die \ac{FCR}, um 9 Uhr für die \ac{aFRR} und um 10 Uhr für die \ac{mFRR} \cite{regelleistung_ausschreibungsdaten_2026}.
+Der Regelarbeitsmarkt für die \ac{aFRR} und die \ac{mFRR} öffnet nach der Verkündung der Zuschläge und schließt 25 Minuten vor Beginn der jeweiligen Viertelstunde \cite{bundesnetzagentur_monitoringbericht_2026}.
+Ein Anbieter plant seine Vermarktung an den Energiemärkten deshalb bereits unter Berücksichtigung eines vom \ac{ÜNB} erteilten Zuschlags.
+
 % NEUER ABSATZ 16.09.2026, C2.8.
 % R-34 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
 %Den Ausgangspunkt der betrachteten Fahrplanbildung bildet daher der \ac{DA}, dessen Auktion um 12 Uhr des Vortages schließt und alle Lieferzeitpunkte des Folgetages in einem Auktionsdurchgang zum einheitlichen Markträumungspreis preist, seit dem 1.\,Oktober 2025 in Viertelstundenprodukten.
-Den Ausgangspunkt der betrachteten Fahrplanbildung bildet daher der \ac{DA}, dessen Auktion um 12 Uhr des Vortages schließt.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Das daher bezog sich auf Terminmarkt und OTC, dazwischen steht jetzt die Regelleistung. Alte Fassung:
+%Den Ausgangspunkt der betrachteten Fahrplanbildung bildet daher der \ac{DA}, dessen Auktion um 12 Uhr des Vortages schließt.
+Den Ausgangspunkt der betrachteten Fahrplanbildung an den Energiemärkten bildet der \ac{DA}, dessen Auktion um 12 Uhr des Vortages schließt.
 % BELEG ERGAENZT am 19.09.2026, Befund der Zahlenpruefung: der Termin stand ohne Zitat, und der
 % naechste Beleg im Absatz ist mahgoub_wie_2025, dem er dadurch faelschlich zugerechnet wuerde.
 % mahgoub_wie_2025 stammt von Februar 2025 und nennt noch den damals geplanten Termin: "Im Juni
@@ -1604,6 +1615,14 @@ Am Vortag rechnen die \ac{ÜNB} den \ac{DACF} für den gesamten Folgetag, am Lie
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf, und die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt, denn an einen abgeschlossenen Rechenlauf schließt sich unmittelbar der nächste an.
 Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf.
+% HIERHER VERSCHOBEN am 20.09.2026 aus 2.2.2. UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Leeuwen ist im Absatz bereits beim DACF-Satz zitiert, deshalb ohne zweiten Beleg, Stilregel 15. Aufforderung
+% zu Anordnung, weil Paragraph 13a erst in 2.2.2 eingefuehrt wird.
+Jeder dieser Prozesse rechnet den prognostizierten Netzzustand mit einem Lastflussmodell durch und bestimmt daraus Engpässe und Maßnahmen.
+Am Vortag dient der Prozess pRD1 gegen 16:30 Uhr der Sicherung von Redispatchpotenzialen durch Kraftwerksanfahrten, die einen langen Vorlauf brauchen.
+Gegen 18 Uhr bestimmt pRD2 auf dem \ac{DACF} die Arbeitspunktanpassungen für den Liefertag.
+Am Liefertag folgen auf dem rollierenden \ac{IDCF} weitere präventive Redispatchläufe.
+Eine Anordnung zum Redispatch trifft damit einen Fahrplan, der am \ac{DA} und in der \ac{IDA-1} bereits vermarktet ist, und untertägig oder aus der Netzsicherheitsrechnung heraus einen Fahrplan im laufenden \ac{IDC}.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
 %Die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt.
 % ATTRIBUT am 20.09.2026, Kommentar des Verfassers: "Netzsicherheitsrechnung anhand von Messdaten und State
@@ -1705,10 +1724,21 @@ Die Frequenzhaltung wird in Deutschland über drei Regelleistungsprodukte bescha
 Die \ac{ÜNB} schreiben eine Leistungsmenge aus, und die Anbieter geben Leistungspreise ab.
 Der Zuschlag verpflichtet den Anbieter, die zugesagte Leistung über die gesamte Erbringungsperiode bereitzuhalten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Voraussetzung für die Teilnahme ist ein Präqualifikationsverfahren, in dem die technische Eignung der Anlage nachgewiesen und ein zulässiger Arbeitsbereich festgelegt wird.
+% ERGAENZT am 20.09.2026. UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% PQ-Bedingungen 2024: "Die PQ-Leistung bzw. Vermarktbare Leistung eines Pools wird vom Anbieter als Aggregation
+% der RE- und RG-Werte ... ", der Beleg steht im Satz davor, Stilregel 15.
+Teilnehmen können präqualifizierte Anlagen jeder Technologie, einzeln oder als Pool.
 Bei der \ac{aFRR} und der \ac{mFRR} werden Leistung und Arbeit in zwei getrennten Ausschreibungen beschafft, während bei der \ac{FCR} allein Leistung beschafft wird.
 % HIERHER VERSCHOBEN 16.09.2026, C2, Produktmerkmale zur Beschaffungslogik.
 Die \ac{FCR} wird symmetrisch beschafft, die \ac{aFRR} und die \ac{mFRR} getrennt nach positiver und negativer Richtung.
-Der Leistungspreis je Zeitscheibe steht mit dem Zuschlag fest, während der Arbeitspreis der \ac{aFRR} und der \ac{mFRR} je Viertelstunde und nur bei Abruf anfällt.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Verguetung, steht in 2.3.4 (Leistungspreis fuer die Vorhaltung, Arbeitspreis bei Abruf). Nicht wieder aufnehmen:
+%Der Leistungspreis je Zeitscheibe steht mit dem Zuschlag fest, während der Arbeitspreis der \ac{aFRR} und der \ac{mFRR} je Viertelstunde und nur bei Abruf anfällt.
+% HIERHER aus 2.3.4 am 20.09.2026. UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Monitoringbericht 2025: "Jeder Anbieter ist im Falle einer Bezuschlagung seines Gebotes auf dem RLM zu einer
+% Angebotsabgabe verpflichtet". Der Monitoringbericht ist im Absatz damit zweimal zitiert (Mengen), in Kauf
+% genommen wie am 19.09.2026.
+Am Regelarbeitsmarkt kann jede präqualifizierte Einheit für jede Viertelstunde ein Arbeitsgebot abgeben, und wer einen Zuschlag für Leistung erhalten hat, ist dazu verpflichtet \cite{bundesnetzagentur_monitoringbericht_2026}.
 Den Abruf löst bei der \ac{FCR} die örtliche Frequenzmessung aus, bei der \ac{aFRR} die europäische Plattform PICASSO und bei der \ac{mFRR} der \ac{ÜNB} von Hand über die Plattform MARI.
 % ABSATZ VERBUNDEN am 20.09.2026, Vorgabe des Verfassers: Produkte, Mengen und Fristen der Regelleistung in einem Absatz.
 Die beschaffte Menge folgt zwei verschiedenen Regeln.
@@ -1795,13 +1825,19 @@ Im Jahresdurchschnitt 2024 waren in Deutschland 564\,\si{MW} \ac{FCR} ausgeschri
 % Minuten vor Beginn der jeweiligen Produktzeitscheibe." Der Monitoringbericht ist damit im Absatz zweimal
 % zitiert, in Kauf genommen wie am 19.09.2026, weil beide Zahlen sonst ohne Beleg stuenden. Alte Fassung:
 %Alle drei Ausschreibungen schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag und damit vor der Auktion des \ac{DA} ab.
-Die Ausschreibungen der Leistung schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag um 8 Uhr für die \ac{FCR}, um 9 Uhr für die \ac{aFRR} und um 10 Uhr für die \ac{mFRR} und damit vor der Auktion des \ac{DA} \cite{regelleistung_ausschreibungsdaten_2026}.
-Der Regelarbeitsmarkt für die \ac{aFRR} und die \ac{mFRR} öffnet nach der Verkündung der Zuschläge und schließt 25 Minuten vor Beginn der jeweiligen Viertelstunde \cite{bundesnetzagentur_monitoringbericht_2026}.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Die Ausschreibungen der Leistung schließen nach Abbildung~\ref{fig:markt_zeitschiene} am Vortag um 8 Uhr für die \ac{FCR}, um 9 Uhr für die \ac{aFRR} und um 10 Uhr für die \ac{mFRR} und damit vor der Auktion des \ac{DA} \cite{regelleistung_ausschreibungsdaten_2026}.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Der Regelarbeitsmarkt für die \ac{aFRR} und die \ac{mFRR} öffnet nach der Verkündung der Zuschläge und schließt 25 Minuten vor Beginn der jeweiligen Viertelstunde \cite{bundesnetzagentur_monitoringbericht_2026}.
 % AKTEUR ERGAENZT am 20.09.2026, Kommentar des Verfassers: "Zuschlagsverpflichtung des UeNB." Der UeNB
 % erteilt den Zuschlag, die Verpflichtung traegt der Anbieter (Satz davor), deshalb "eines vom UeNB
 % erteilten Zuschlags" statt "Zuschlagsverpflichtung des UeNB", Stilregel 12. Alte Fassung:
 %Ein Anbieter plant seine Vermarktung an den Energiemärkten deshalb bereits unter Berücksichtigung einer erteilten Zuschlagsverpflichtung.
-Ein Anbieter plant seine Vermarktung an den Energiemärkten deshalb bereits unter Berücksichtigung eines vom \ac{ÜNB} erteilten Zuschlags.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Ein Anbieter plant seine Vermarktung an den Energiemärkten deshalb bereits unter Berücksichtigung eines vom \ac{ÜNB} erteilten Zuschlags.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
 %Wo eine Anlage im Netz steht, spielt für den Zuschlag keine Rolle, denn die Produkte dienen dem Frequenzausgleich in der gesamten Regelzone.
 Wo eine Anlage im Netz steht, spielt für den Zuschlag zudem keine Rolle, denn die Produkte dienen dem Frequenzausgleich in der gesamten Regelzone.
@@ -1855,6 +1891,12 @@ Das Engpassmanagement als zweite Systemdienstleistung mit Zugriff auf die Wirkle
 % Der Stichtag steht jetzt bei der Erstnennung des Redispatch 2.0 und nicht mehr in 2.3.1. Alte Fassung:
 %Nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0 sind Betreiber von Erzeugungs- und Speicheranlagen ab 100\,\si{kW} verpflichtet, auf Aufforderung des \ac{ÜNB} ihre Wirkleistung anzupassen oder die Anpassung zu dulden \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 Nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0, die seit dem 1.\,Oktober 2021 gilt, sind Betreiber von Erzeugungs- und Speicheranlagen ab 100\,\si{kW} verpflichtet, auf Aufforderung des \ac{ÜNB} ihre Wirkleistung anzupassen oder die Anpassung zu dulden \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+% WIEDER AUFGENOMMEN am 20.09.2026, Wahl durch Fable im Rahmen der Vorgabe "wer daran teilnimmt", dem Verfasser
+% im Plan vorgelegt und mit "ok" freigegeben. Der Satz stand bis heute frueh in 2.2 und war dort als
+% Ausschweifung gestrichen. bdew_branchenleitfaden_2018: "greifen die UeNB ausschliesslich auf die im Rahmen des
+% automatisierten KWEP-Prozesses (Kraftwerkseinsatzplanungsdaten) gemeldeten Redispatch-Potenziale und die dazu
+% gemeldeten Kostenansaetze zu". Quelle von 2018, vor dem Redispatch 2.0.
+Für die Auswahl der Anlagen greift der \ac{ÜNB} auf die Potenziale und Kostenansätze zurück, die die \ac{EIV} im automatisierten Prozess der Kraftwerkseinsatzplanung melden \cite{bdew_branchenleitfaden_2018}.
 % GETRENNT am 20.09.2026, Vorgabe des Verfassers: "dann trenne pRD und die Lastflussberechnung DACF und
 % IDCF. Unter dem Tag werden ja auch nochmal pRD 3-5 irgendwann durchgefuehrt." Die Lastflussrechnungen
 % stehen jetzt als Grundlage, die Redispatchprozesse als Massnahmenbestimmung darauf. Die untertaegigen
@@ -1873,13 +1915,17 @@ Nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0, die seit dem 1.\,Oktob
 % Arbeitspunktanpassung am Netz befindlicher Kraftwerke". Der pRD1 rechnet also auf eigenen Prognosen und
 % nicht auf dem DACF. Alte Fassung:
 %Am Vortag laufen die präventiven Redispatchprozesse pRD1 gegen 16:30 Uhr und pRD2 zusammen mit dem \ac{DACF} gegen 18 Uhr, am Liefertag folgt der \ac{IDCF} rollierend \cite{leeuwen_integration_2020}.
-Zeitlich folgt die Aufforderung den präventiven Redispatchprozessen, die Abbildung~\ref{fig:markt_zeitschiene} über den Lastflussrechnungen \ac{DACF} und \ac{IDCF} zeigt.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Gestrichen, 2.2.1 sagt bereits, dass die Redispatchprozesse auf den Rechenlaeufen aufsetzen:
+%Zeitlich folgt die Aufforderung den präventiven Redispatchprozessen, die Abbildung~\ref{fig:markt_zeitschiene} über den Lastflussrechnungen \ac{DACF} und \ac{IDCF} zeigt.
 % ERGAENZT am 20.09.2026, Einwand des Verfassers: "pRD muss halt auf irgendwelchen Lastflussberechnungen
 % aufbauen." leeuwen_integration_2020: "Innerhalb dieser Prozesse werden Optimierungsalgorithmen genutzt,
 % die auf Basis von Prognosen der Netznutzung potentielle Engpaesse sowie moegliche Entlastungsmassnahmen
 % ermitteln", "Redispatch-Ermittlungs-Server (RES). In diesem sind die zugehoerigen Optimierungsprobleme
 % als AC-SCOPF formuliert". Der Beleg steht einmal am Ende des Blocks, Stilregel 15.
-Jeder dieser Prozesse rechnet den prognostizierten Netzzustand mit einem Lastflussmodell durch und bestimmt daraus Engpässe und Maßnahmen.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Jeder dieser Prozesse rechnet den prognostizierten Netzzustand mit einem Lastflussmodell durch und bestimmt daraus Engpässe und Maßnahmen.
 % AUF DEN QUELLENWORTLAUT ZURUECKGESETZT am 20.09.2026, Rueckfrage des Verfassers: "und das ist wirklich
 % verifiziert?" Nicht belegt waren "eigene Lastflussprognosen" (Schluss aus der gemeinsamen Nennung von
 % pRD2 und DACF) und "deren Vorlauf sonst nicht reichte". Belegt, leeuwen_integration_2020: "Fokus im
@@ -1887,18 +1933,29 @@ Jeder dieser Prozesse rechnet den prognostizierten Netzzustand mit einem Lastflu
 % Kraftwerksleistung vorgehalten werden koennen", "teils langen Vorlaufzeiten, insbesondere bei
 % Kraftwerksanfahrten", pRD1 ca. 16:30 Uhr. Alte Fassung, nicht wieder aufnehmen:
 %Am Vortag sichert der Prozess pRD1 gegen 16:30 Uhr auf Basis eigener Lastflussprognosen die Anfahrten von Kraftwerken, deren Vorlauf sonst nicht reichte.
-Am Vortag dient der Prozess pRD1 gegen 16:30 Uhr der Sicherung von Redispatchpotenzialen durch Kraftwerksanfahrten, die einen langen Vorlauf brauchen.
-Gegen 18 Uhr bestimmt pRD2 auf dem \ac{DACF} die Arbeitspunktanpassungen für den Liefertag.
-Am Liefertag folgen auf dem rollierenden \ac{IDCF} weitere präventive Redispatchläufe \cite{leeuwen_integration_2020}.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Am Vortag dient der Prozess pRD1 gegen 16:30 Uhr der Sicherung von Redispatchpotenzialen durch Kraftwerksanfahrten, die einen langen Vorlauf brauchen.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Gegen 18 Uhr bestimmt pRD2 auf dem \ac{DACF} die Arbeitspunktanpassungen für den Liefertag.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Am Liefertag folgen auf dem rollierenden \ac{IDCF} weitere präventive Redispatchläufe \cite{leeuwen_integration_2020}.
 % DOPPLUNG am 20.09.2026, Rueckfrage des Verfassers ("und Dopplungen haben wir deswegen nicht, oder?").
 % Der Folgesatz zur kurzfristigen Aufforderung wiederholte 1.1 ("Zeichnet sich im laufenden Betrieb eine
 % Ueberlastung ab, ordnet er den Redispatch auch kurzfristig an") und ist in diesen Satz eingezogen. Alte Fassung:
 %Die Aufforderung trifft damit einen Fahrplan, der am \ac{DA} und in der \ac{IDA-1} bereits vermarktet ist, und untertägig einen Fahrplan im laufenden \ac{IDC}.
-Die Aufforderung trifft damit einen Fahrplan, der am \ac{DA} und in der \ac{IDA-1} bereits vermarktet ist, und untertägig oder aus der Netzsicherheitsrechnung heraus einen Fahrplan im laufenden \ac{IDC}.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Nach 2.2.1 verschoben:
+%Die Aufforderung trifft damit einen Fahrplan, der am \ac{DA} und in der \ac{IDA-1} bereits vermarktet ist, und untertägig oder aus der Netzsicherheitsrechnung heraus einen Fahrplan im laufenden \ac{IDC}.
 % DOPPLUNG am 20.09.2026, Rueckfrage des Verfassers ("und Dopplungen haben wir deswegen nicht, oder?").
 % Gestrichen, in den vorigen Satz eingezogen:
 %Zeichnet sich eine Überlastung erst in der Netzsicherheitsrechnung ab, fordert der \ac{ÜNB} auch kurzfristig zur Anpassung auf.
-Für den \ac{EIV} ist die Aufforderung damit ein Eingriff in einen bereits vermarkteten Fahrplan, für den er kein Gebot abgegeben hat.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Das damit bezog sich auf den Zeitblock, der jetzt in 2.2.1 steht. Alte Fassung:
+%Für den \ac{EIV} ist die Aufforderung damit ein Eingriff in einen bereits vermarkteten Fahrplan, für den er kein Gebot abgegeben hat.
+Für den \ac{EIV} ist die Aufforderung ein Eingriff in einen bereits vermarkteten Fahrplan, für den er kein Gebot abgegeben hat.
 Der Ausgleich für diesen Eingriff wird in Abschnitt~\ref{sec:market_limits} dargestellt.
 
 \section{Vergütungslogiken für Systemdienstleistungen}
@@ -2401,9 +2458,15 @@ Die \ac{mFRR} bleibt deshalb im Weiteren außer Betracht.
 % ABSATZ VERBUNDEN 16.09.2026, C2.11.
 Anders als das Engpassmanagement vergütet die Regelleistung die Vorhaltung selbst, und zwar über den Leistungspreis für die zugesagte Leistung.
 Bei der \ac{aFRR} tritt für die tatsächlich abgerufene Arbeit ein Arbeitspreis hinzu, während die \ac{FCR} ohne gesonderte Arbeitsvergütung auskommt.
-Der Arbeitspreis der \ac{aFRR} entsteht nicht in einer Auktion des Vortages, sondern über die europäische Plattform PICASSO, auf der seit dem Jahr 2022 \ac{aFRR}-Regelarbeit ausgetauscht wird \cite{bundesnetzagentur_monitoringbericht_2026}.
-Am Regelarbeitsmarkt kann jede präqualifizierte Einheit für jedes Viertelstundenfenster ein Energiegebot abgeben.
-Wer einen Zuschlag für \ac{aFRR}-Leistung erhalten hat, ist für die reservierte Leistung zur Abgabe eines Arbeitspreisgebotes verpflichtet.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Rahmenaussage, Plattform PICASSO steht in 2.2.2 beim Abruf. Nicht wieder aufnehmen:
+%Der Arbeitspreis der \ac{aFRR} entsteht nicht in einer Auktion des Vortages, sondern über die europäische Plattform PICASSO, auf der seit dem Jahr 2022 \ac{aFRR}-Regelarbeit ausgetauscht wird \cite{bundesnetzagentur_monitoringbericht_2026}.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Rahmenaussage, jetzt in 2.2.2. Nicht wieder aufnehmen:
+%Am Regelarbeitsmarkt kann jede präqualifizierte Einheit für jedes Viertelstundenfenster ein Energiegebot abgeben.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Rahmenaussage, jetzt in 2.2.2. Nicht wieder aufnehmen:
+%Wer einen Zuschlag für \ac{aFRR}-Leistung erhalten hat, ist für die reservierte Leistung zur Abgabe eines Arbeitspreisgebotes verpflichtet.
 % SACHFEHLER BEHOBEN am 19.09.2026, Befund der Zahlenpruefung: die 25 Minuten sind nicht der
 % Zuschlag, sondern der Gebotsabgabeschluss des Regelarbeitsmarkts. Monitoringbericht 2025, S. 123:
 % "Der RAM oeffnet nach Verkuendung der RLM-Auktionsergebnisse und schliesst 25 Minuten vor Beginn
@@ -2413,7 +2476,9 @@ Wer einen Zuschlag für \ac{aFRR}-Leistung erhalten hat, ist für die reserviert
 % noch in den auskommentierten Zeilen mit der Tabellenfussnote und der Beschaffungszeile, sie darf
 % von dort nicht wieder aufgenommen werden. Alte Fassung, nicht wieder aufnehmen:
 %Die übrigen Anbieter wählen Menge und Preis frei, und der Zuschlag erfolgt 25 Minuten vor Beginn der Produktzeitscheibe.
-Die übrigen Anbieter wählen Menge und Preis frei, und der Regelarbeitsmarkt schließt 25 Minuten vor Beginn der Produktzeitscheibe.
+% UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
+% Rahmenaussage, Handelsschluss jetzt in 2.2.1. Nicht wieder aufnehmen:
+%Die übrigen Anbieter wählen Menge und Preis frei, und der Regelarbeitsmarkt schließt 25 Minuten vor Beginn der Produktzeitscheibe.
 % ERGAENZT am 17.09.2026, Kommentar des Verfassers: die Verguetungsregel der Regelarbeit gehoert nach Kapitel 2. Beleg: Verordnung (EU) 2017/2195, Seite 28, Grenzpreisverfahren.
 Abgerufene Arbeitsgebote vergütet der \ac{ÜNB} nach dem Grenzpreisverfahren, also alle zum Preis des teuersten abgerufenen Gebots \cite{europaische_kommission_verordnung_2017_ebgl}.
 Das Arbeitspreisgebot entscheidet damit über den Abruf und nicht über die Höhe der Vergütung.

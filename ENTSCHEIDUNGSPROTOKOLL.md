@@ -6471,6 +6471,71 @@ daraus Engpaesse und Massnahmen." Das Akronym AC-SCOPF ist nicht eingefuehrt,
 weil es nur hier vorkaeme. Woher pRD1 seine Prognose bezieht, sagt die Quelle
 nicht, offen.
 
+**Umbau 2.2.1, 2.2.2 und 2.3.4: Zeitschienen nach 2.2.1, Rahmen nach 2.2.2,
+Verguetung bleibt in 2.3.** Vorgabe des Verfassers: "ich wollte im Kapitel
+2.2.1 die Zeitschienen haben. Die sind jetzt in Kapitel 2.2.2 sehr ausfuehrlich
+und es doppelt sich ein wenig. Fuege die Zeitschienen fuer Regelleistung und
+Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2
+einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen
+ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung.
+Verguetung kommt ja im Folgenden. Durchsuche auch nochmal die Verguetung nach
+Aussagen, die eigentlich in 2.2.2 kommen." Plan A bis C vorgelegt, mit "ok"
+freigegeben.
+
+A, 2.2.1: Neuer Absatz nach Abbildung 2.3 mit drei Saetzen, Handelsschluss der
+Regelleistung (8, 9, 10 Uhr, regelleistung.net), Regelarbeitsmarkt (25 Minuten,
+Monitoringbericht) und Planung unter erteiltem Zuschlag. Der DA-Satz verliert
+sein "daher" und sagt "an den Energiemaerkten". Der Rechenlaeufe-Absatz nimmt
+hinter "Auf diesen Berechnungen setzen die praeventiven Redispatch-Prozesse
+auf" den pRD-Block aus 2.2.2 auf, ohne zweiten Leeuwen-Beleg, und schliesst
+mit "Eine Anordnung zum Redispatch trifft damit einen Fahrplan, der am DA und in
+der IDA-1 bereits vermarktet ist, und untertaegig oder aus der
+Netzsicherheitsrechnung heraus einen Fahrplan im laufenden IDC." Anordnung
+statt Aufforderung, weil Paragraph 13a erst in 2.2.2 folgt. Die Akronyme FCR,
+aFRR und mFRR werden damit in 2.2.1 aufgeloest, einen Absatz vor ihrer
+Erklaerung, eigenstaendige Anmerkung.
+
+B, 2.2.2: Absatz 2 verliert Handelsschluss, Regelarbeitsmarkt-Schluss, "Ein
+Anbieter plant" (alle nach 2.2.1) und "Der Leistungspreis je Zeitscheibe steht
+mit dem Zuschlag fest, waehrend der Arbeitspreis der aFRR und der mFRR je
+Viertelstunde und nur bei Abruf anfaellt" (Verguetung, in 2.3.4 enthalten,
+nicht wieder aufnehmen). Neu: "Teilnehmen koennen praequalifizierte Anlagen
+jeder Technologie, einzeln oder als Pool." (PQ-Bedingungen, Pool-Aggregation)
+und "Am Regelarbeitsmarkt kann jede praequalifizierte Einheit fuer jede
+Viertelstunde ein Arbeitsgebot abgeben, und wer einen Zuschlag fuer Leistung
+erhalten hat, ist dazu verpflichtet [Monitoringbericht]." (Monitoringbericht
+2025: "Jeder Anbieter ist im Falle einer Bezuschlagung seines Gebotes auf dem
+RLM zu einer Angebotsabgabe verpflichtet"; der Bericht ist im Absatz zweimal
+zitiert, in Kauf genommen). Absatz 3 verliert den Zeitblock (sechs Saetze nach
+2.2.1, "Zeitlich folgt die Aufforderung ..." gestrichen, weil 2.2.1 den
+Aufsatz auf die Rechenlaeufe bereits sagt) und gewinnt den KWEP-Satz: "Fuer die
+Auswahl der Anlagen greift der UeNB auf die Potenziale und Kostenansaetze
+zurueck, die die EIV im automatisierten Prozess der Kraftwerkseinsatzplanung
+melden [BDEW 2018]." Wahl durch Fable im Rahmen der Vorgabe "wer daran
+teilnimmt", im Plan vorgelegt, der Verfasser hat sich nicht ausdruecklich
+dagegen entschieden; der Satz war heute frueh aus 2.2 gestrichen worden, weil
+er dort nicht zur Frage nach dem Marktmechanismus passte. "Fuer den EIV ist die
+Aufforderung ein Eingriff ..." ohne "damit".
+
+C, 2.3.4: vier Rahmenaussagen gestrichen, nicht wieder aufnehmen: "Der
+Arbeitspreis der aFRR entsteht nicht in einer Auktion des Vortages, sondern
+ueber die europaeische Plattform PICASSO, auf der seit dem Jahr 2022
+aFRR-Regelarbeit ausgetauscht wird", "Am Regelarbeitsmarkt kann jede
+praequalifizierte Einheit fuer jedes Viertelstundenfenster ein Energiegebot
+abgeben", "Wer einen Zuschlag fuer aFRR-Leistung erhalten hat, ist fuer die
+reservierte Leistung zur Abgabe eines Arbeitspreisgebotes verpflichtet", "Die
+uebrigen Anbieter wählen Menge und Preis frei, und der Regelarbeitsmarkt
+schliesst 25 Minuten vor Beginn der Produktzeitscheibe". Der Hinweis auf 2022
+ist damit aus dem Text, eigenstaendige Entscheidung, weil 2.2.2 die Plattform
+beim Abruf nennt und die Jahreszahl nichts traegt. Die
+Praequalifikationswerte 15 und 60 Minuten bleiben in 2.3.4, weil sie das
+Argument "Drittens" tragen. 2.3 Einleitung, 2.3.1, 2.3.2, 2.3.3 und 2.3.5 ohne
+Befund.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
+Build mit biber, zwei bekannte Referenzwarnungen, 94 Seiten. Abbildung 2.3
+weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
 Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
 Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
