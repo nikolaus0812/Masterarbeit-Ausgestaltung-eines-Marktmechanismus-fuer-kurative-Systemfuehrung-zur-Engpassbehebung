@@ -6207,6 +6207,121 @@ damit eine Vorhaltung, die aber keine Wirkleistung bindet [Monitoringbericht]."
 Zurueckgenommen: "beschafft wird aber eine Faehigkeit der Anlage und keine
 Wirkleistung".
 
+**2.2.2, Regelleistung in einem Absatz.** Vorgabe: "mach daraus einen Absatz".
+Die drei Absaetze zu Produkten und Beschaffungslogik, zu den Mengen und zu
+Handelsschluss und Standort sind ohne Wortaenderung zu einem Absatz von 15
+Saetzen verbunden, Stilregel 1 in der Fassung vom 19.09.2026.
+
+**2.2.2, Engpassmanagement neu gefasst.** Vorgabe: "schreib nicht, dass man
+sich zum kostenbasierten Redispatch entschieden hat, sondern dass es seit jeher
+so ist, man koennte fast sagen historisch gewachsen, aber einem Uebergang zu
+einer marktlichen Beschaffung stehen noch diese Vorbehalte gegenueber. Dazu
+erwaehnen, dass Redispatch, wie der Name schon sagt, den Dispatch korrigieren
+soll, eine marktliche Beschaffung den Dispatch aber zweiteilt und die
+marktlichen Akteure so die Moeglichkeit bekommen, das marktlich auszunutzen, wo
+eigentlich die Sicherheit des Netzes dahintersteht. Hier ist wieder die
+fehlende Netzsensitivitaet des Marktes." Neun Saetze statt drei, keine
+zusaetzliche Seite. Belege aus hirth_kosten_2019: "Das heutige System des
+Redispatch laesst sich als administrativer/regulatorischer Redispatch mit
+Kostenerstattung beschreiben", "Das Management von Netzengpaessen liegt
+ausserhalb der Marktsphaere ... Einher geht damit allerdings, dass der Markt
+keinerlei Anreize zur lokalen Steuerung setzt", "Die Koexistenz eines zonalen
+Strommarkts mit einem notwendigerweise lokalen Redispatch-Markt bietet
+Marktteilnehmern Anreize fuer strategisches Verhalten. In Knappheitsregionen
+antizipieren Erzeuger ... Sie bieten deshalb auf dem Strommarkt zu hoeheren
+Preisen an und preisen sich so aus dem zonalen Markt", "Engpassverstaerkendes
+Verhalten". Binnenmarktverordnung Art. 13 Abs. 2 und 3: marktbasierte
+Beschaffung als Regel, nicht marktbasiert nur unter den Ausnahmen, darunter
+fehlender Wettbewerb und strategisches Bietverhalten. Eigenstaendige
+Abschwaechung: "seit jeher" steht als "die gewachsene Form des Redispatch",
+weil Hirth nur das heutige System beschreibt und keine Quelle die Geschichte
+traegt, Stilregel 8. Der Ausdruck Netzsensitivitaet ist nicht eingefuehrt und
+steht deshalb als "dass der einheitliche Boersenpreis die Belastung des Netzes
+nicht abbildet", im Wortlaut von 1.1. Die Entschaedigung geht an den
+Anlagenbetreiber, nicht an den EIV, weil Paragraph 13a EnWG sie dem Betreiber
+zuordnet, siehe die uebergreifende Entscheidung vom 20.09.2026.
+
+Zurueckgenommen, nicht wieder aufnehmen: "Die europaeischen Vorgaben stellen
+dafuer die Preise der Strommaerkte oder die transparent ermittelten Kosten der
+eingesetzten Ressourcen zur Wahl [CACM 2015, BDEW 2018]." und "Der deutsche
+Gesetzgeber hat sich fuer die Kosten entschieden, weil die zulaessigen
+Ausnahmetatbestaende bei einer marktlichen Beschaffung ueberhoehte Preise
+erwarten lassen, naemlich strategisches Bietverhalten und ein Mangel an
+Wettbewerb [Binnenmarktverordnung, Hirth]." Die beiden entfallenen Belege
+bleiben in Anhang A zitiert.
+
+**Offen.** Der Absatzplan fuer den ersten Absatz von 2.2.2 (Einordnung der
+Systemdienstleistungen, Frequenzhaltung als das der kurativen Vorhaltung in der
+Form naechste Regime, Blindleistung und Schwarzstartfaehigkeit mit Ladezustand
+vorsichtig eingeordnet) liegt dem Verfasser vor und ist nicht freigegeben.
+
+**2.3.1, zwei Saetze aus dem Kontext.** Kommentar des Verfassers: "die beiden
+Saetze stehen aus dem Kontext. Ich wuerde den ersten erst bei BESS und PSKW
+schreiben, und den zweiten kann man streichen oder als Nebensatz in der
+Einleitung, wo das erstmals auf Kosten eingeht." Der Satz zur
+Betriebsbereitschaft nach Nummer 4 steht jetzt als zweiter Satz des Absatzes
+"Fuer ein BESS faellt die Bedeutung der Positionen unterschiedlich aus", ohne
+das "deshalb", und dort heisst es nicht mehr "der drei Positionen", weil die
+Einschraenkung auf drei erst mit dem verschobenen Satz folgt. Gestrichen, nicht
+wieder aufnehmen: "Das Regime fuehrt zwei Bemessungslogiken nebeneinander, eine
+fuer gefoerderte und eine fuer marktvermarktete Anlagen." Eigenstaendige
+Entscheidung fuer das Streichen statt des Nebensatzes, weil der Satz zu Nummer 5
+("weil deren Erloese nicht allein aus dem Markt folgen") die Unterscheidung
+bereits traegt.
+
+**2.3.1, Bemessung beim Speicher in einem Absatz.** Kommentar des Verfassers:
+"den roten Faden aus den beiden Absaetzen verstehe ich nicht. Wir gehen doch
+spaeter noch explizit auf die entgangenen Erloese ein. Mache daraus einen
+Absatz." Befund: der erste Absatz blieb bei Nummer 1 stehen, der zweite
+arbeitete die Positionen in der Reihenfolge 2, 1, 3 ab und nahm drei Details
+der Bewertung vorweg. Jetzt ein Absatz von zwoelf Saetzen in der Reihenfolge
+Nummer 1 (Einsatzpreis, Grenzpreis, je Megawattstunde), Nummer 4 entfaellt,
+Nummer 2 (Betriebsstunden, Selbstauskunft), Nummer 3 (Leistungsbereich,
+Viertelstunden), Auszahlungsregel, Konsequenz mit Verweis auf 2.3.2. Neue
+Saetze: "Die uebrigen Positionen fallen fuer ein BESS unterschiedlich ins
+Gewicht." und "Den Preis eines BESS bestimmen damit die Erzeugungsauslagen nach
+Nummer 1 und die entgangenen Erloesmoeglichkeiten nach Nummer 3, deren Bewertung
+in Abschnitt 2.3.2 dargestellt wird." Der Beleg der Anlage 1 steht im Absatz
+nur noch beim Grenzpreis, die Auszahlungsregel sagt "nach der Festlegung",
+Stilregel 15. Verschoben nach 2.3.2 hinter die Gegenueberstellung der
+Optionswerte mit dem Werteverbrauch: "Die Optionswerte sind dabei netto vom
+Strikepreis gebildet, sodass sie allein gegen den anteiligen Werteverbrauch
+antreten und nicht gegen die Summe aus Werteverbrauch und Erzeugungsauslagen."
+Gestrichen, nicht wieder aufnehmen, weil 2.3.2 und 2.3.3 beides tragen: "Die
+Bemessung der entgangenen Erloesmoeglichkeiten hat die Festlegung am PSKW
+entwickelt und bewertet dabei jede Viertelstunde fuer sich." Zurueckgenommen:
+"Fuer ein BESS faellt die Bedeutung der Positionen unterschiedlich aus." und
+"Den Preis bestimmen deshalb die Erzeugungsauslagen nach Nummer 1 und die
+entgangenen Erloesmoeglichkeiten nach Nummer 3."
+
+**2.2.2, erster Absatz neu gefasst.** Freigabe des Absatzplans durch den
+Verfasser ("alle drei abhaken"). Kommentar zuvor: "Schwarzstartfaehigkeit und
+Blindleistung sind fuer Speicher schon relevant, da sie fuer
+Schwarzstartfaehigkeit auch einen Energieinhalt benoetigen bzw. fuer
+Blindleistung Energie aus dem SOC. Ich wuerde deswegen vorsichtiger formulieren
+und eher in die Richtung, dass Frequenzhaltung schon marktlich aehnlich
+ausgestaltet ist ... der Fokus sollte klar auf den Regelleistungsmaerkten sein,
+da die ja auch nachweislich sehr konkurrieren." Neun Saetze: Gliederung der
+Systemdienstleistungen, These "Fuer die Fahrplanbildung eines BESS ist davon die
+Frequenzhaltung massgeblich, weil sie dasselbe Wirkleistungsband beansprucht wie
+die Vermarktung an den Energiemaerkten", Betriebsfuehrung, Blindleistung und
+Schwarzstart marktgestuetzt nach Paragraph 12h EnWG, "Fuer ein BESS koennen
+Blindleistung und Schwarzstartfaehigkeit einen Teil des Ladezustands
+beanspruchen", "bleiben im Weiteren dennoch ausser Betracht, weil ihre
+marktgestuetzte Beschaffung erst anlaeuft und das Leistungsband des BESS nicht
+bindet", Frequenzhaltung reserviert ein Wirkleistungsband, "das Regime, dessen
+Beschaffung der kurativen Vorhaltung in der Form am naechsten kommt".
+Zurueckgenommen, nicht wieder aufnehmen: "Die Frequenzhaltung ist das einzige
+Regime mit einem Preis fuer die Vorhaltung von Wirkleistung, die sonst an den
+Energiemaerkten vermarktet wuerde." und "... vergueten damit eine Vorhaltung,
+die aber keine Wirkleistung bindet" sowie "Spannungshaltung und
+Versorgungswiederaufbau konkurrieren deshalb nicht mit der Vermarktung von
+Wirkleistung an den Energiemaerkten." Eigenstaendige Entscheidung: kein
+Verweis auf 2.3.5 im Thesensatz, weil der Satz sonst zwei "wie" truege; der
+Wettbewerb um das Leistungsband ist dort mit Belegen dargestellt. Das
+Satzfragment "Ich wuerde noch ein." aus dem Kommentar zum Dispatch-Absatz ist
+auf Anweisung des Verfassers fallen gelassen.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
 Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
 Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
