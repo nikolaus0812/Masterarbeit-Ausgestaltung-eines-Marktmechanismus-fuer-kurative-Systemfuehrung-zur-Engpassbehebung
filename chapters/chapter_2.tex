@@ -1611,6 +1611,12 @@ Das Preisniveau des \ac{IDC} bilden der \ac{ID3} und der \ac{ID1} ab, die beide 
 %Über den Handelsgelegenheiten liegen die Rechenläufe des \ac{ÜNB}, die den Netzzustand aus den gemeldeten Fahrplänen ableiten und europäisch koordiniert sind, weil die \ac{ÜNB} ihre Fahrplan- und Netzdaten dafür austauschen: Am Vortag wird der \ac{DACF} für den gesamten Folgetag gerechnet, am Liefertag folgt untertägig der \ac{IDCF} \cite{leeuwen_integration_2020}.
 Über den Handelsgelegenheiten liegen die Rechenläufe des \ac{ÜNB}, die den Netzzustand aus den gemeldeten Fahrplänen ableiten.
 Die Rechenläufe sind europäisch koordiniert, weil die \ac{ÜNB} ihre Fahrplan- und Netzdaten dafür austauschen.
+% ERGAENZT am 20.09.2026, Kommentar des Verfassers: "wir haben den WAPP vergessen, der muss kurz erwaehnt
+% werden." leeuwen_integration_2020: "Week-Ahead-Planning-Process (WAPP)", "die Betriebsplanung eine
+% Vorschauzeit von bis zu sieben Tagen", "Fokus im WAPP- und pRD1-Prozess auf der Sicherung von
+% Redispatchpotentialen, welche durch Anfahrten von Kraftwerksleistung vorgehalten werden koennen". Der
+% Beleg steht im folgenden Satz.
+Den Anfang macht der \ac{WAPP}, der bis zu sieben Tage im Voraus Redispatchpotenziale durch Kraftwerksanfahrten sichert.
 Am Vortag rechnen die \ac{ÜNB} den \ac{DACF} für den gesamten Folgetag, am Liefertag folgt untertägig der \ac{IDCF} \cite{leeuwen_integration_2020}.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Auf diesen Berechnungen setzen die präventiven Redispatch-Prozesse auf, und die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt, denn an einen abgeschlossenen Rechenlauf schließt sich unmittelbar der nächste an.
@@ -1622,7 +1628,18 @@ Jeder dieser Prozesse rechnet den prognostizierten Netzzustand mit einem Lastflu
 Am Vortag dient der Prozess pRD1 gegen 16:30 Uhr der Sicherung von Redispatchpotenzialen durch Kraftwerksanfahrten, die einen langen Vorlauf brauchen.
 Gegen 18 Uhr bestimmt pRD2 auf dem \ac{DACF} die Arbeitspunktanpassungen für den Liefertag.
 Am Liefertag folgen auf dem rollierenden \ac{IDCF} weitere präventive Redispatchläufe.
-Eine Anordnung zum Redispatch trifft damit einen Fahrplan, der am \ac{DA} und in der \ac{IDA-1} bereits vermarktet ist, und untertägig oder aus der Netzsicherheitsrechnung heraus einen Fahrplan im laufenden \ac{IDC}.
+% NEU GEFASST am 20.09.2026, Kommentar des Verfassers: "es kann nicht nur am DA und in der IDA-1 vermarktete
+% Anlagen treffen, sondern an allen Kurzfristmaerkten. Hier wuerde ich auch spezifizieren, dass nach dem pRD1
+% nur noch kurzfristige Anlagen zum Redispatch aufgefordert werden koennen." leeuwen_integration_2020: "Die
+% nachfolgenden Prozesse pRD2/DACF sowie der untertaegige IDCF-Prozess fokussieren auf die
+% Arbeitspunktanpassung am Netz befindlicher Kraftwerke". Alte Fassung:
+%Eine Anordnung zum Redispatch trifft damit einen Fahrplan, der am \ac{DA} und in der \ac{IDA-1} bereits vermarktet ist, und untertägig oder aus der Netzsicherheitsrechnung heraus einen Fahrplan im laufenden \ac{IDC}.
+Eine Anordnung zum Redispatch trifft damit Fahrpläne, die an allen kurzfristigen Märkten vom \ac{DA} bis zum laufenden \ac{IDC} bereits vermarktet sind.
+% GESTRICHEN am 20.09.2026, Kommentar des Verfassers: "kann man streichen, oder?" Der Folgesatz traegt die
+% Aussage und nimmt "nach dem pRD1" auf. Nicht wieder aufnehmen:
+%Nach dem pRD1 passen die späteren Prozesse allein Arbeitspunkte an.
+%Der \ac{ÜNB} zieht dann nur noch Anlagen heran, die bereits am Netz sind oder ohne langen Vorlauf reagieren.
+Nach dem pRD1 zieht der \ac{ÜNB} nur noch Anlagen heran, die bereits am Netz sind oder ohne langen Vorlauf reagieren.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
 %Die Netzsicherheitsrechnung prüft kontinuierlich, ob der \mbox{(N-1)-sichere} Zustand gewahrt bleibt.
 % ATTRIBUT am 20.09.2026, Kommentar des Verfassers: "Netzsicherheitsrechnung anhand von Messdaten und State
@@ -1710,8 +1727,13 @@ Für die Fahrplanbildung eines \ac{BESS} ist davon die Frequenzhaltung maßgebli
 Auch die Betriebsführung greift auf die Wirkleistung zu, und zu ihr zählen das Engpassmanagement und die kurative Vorhaltung.
 Die Spannungshaltung wird über Blindleistung erbracht, und der Versorgungswiederaufbau beruht auf der Schwarzstartfähigkeit einzelner Anlagen.
 Die \ac{ÜNB} beschaffen Blindleistung und Schwarzstartfähigkeit nach §\,12h \ac{EnWG} marktgestützt und vergüten damit ebenfalls eine Vorhaltung \cite{bundesnetzagentur_monitoringbericht_2026}.
-Für ein \ac{BESS} können Blindleistung und Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
-Beide Dienstleistungen bleiben im Weiteren dennoch außer Betracht, weil ihre marktgestützte Beschaffung erst anläuft und das Leistungsband des \ac{BESS} nicht bindet.
+% BERICHTIGT am 20.09.2026, Einwand des Verfassers: "das stimmt nicht, Blindleistung kann schon das
+% Leistungsband binden, oder?" Ja, ueber die Scheinleistung des Umrichters. Die zweite Begruendung ist
+% gestrichen, die Zuordnung im Satz davor berichtigt. Alte Fassung, nicht wieder aufnehmen:
+%Für ein \ac{BESS} können Blindleistung und Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
+%Beide Dienstleistungen bleiben im Weiteren dennoch außer Betracht, weil ihre marktgestützte Beschaffung erst anläuft und das Leistungsband des \ac{BESS} nicht bindet.
+Für ein \ac{BESS} kann die Blindleistung einen Teil der Umrichterleistung und die Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
+Beide Dienstleistungen bleiben im Weiteren dennoch außer Betracht, weil ihre marktgestützte Beschaffung erst anläuft.
 In der Frequenzhaltung wird dagegen ein Band an Wirkleistung über einen Zeitraum reserviert, und die Bereitstellung selbst wird vergütet \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Die Frequenzhaltung ist damit das Regime, dessen Beschaffung der kurativen Vorhaltung in der Form am nächsten kommt.
 % R-36 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Satz traegt die Kernaussage und steht jetzt am Anfang des Absatzes. Alte Fassung:
@@ -1973,12 +1995,32 @@ Für die Einordnung einer kurativen Vorhaltung sind daher zwei Fragen zu klären
 %Das Engpassmanagement als zweite Systemdienstleistung mit Zugriff auf die Wirkleistung wird dagegen nicht marktlich beschafft, sondern angeordnet und auf Kostenbasis ausgeglichen.
 Der Zugriff im Engpassmanagement erfolgt auf Kostenbasis, und die Kostenbasis ist in Deutschland nicht das Ergebnis einer Wahl zwischen zwei Verfahren, sondern die gewachsene Form des Redispatch.
 Der \ac{ÜNB} weist die Anlage an, und der Anlagenbetreiber wird für seine Kosten und entgangenen Erlöse entschädigt.
-Die Binnenmarktverordnung sieht demgegenüber die marktbasierte Beschaffung als Regelfall vor und lässt die Kostenbasis nur bei strategischem Bietverhalten oder fehlendem Wettbewerb zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-Der Redispatch korrigiert, wie sein Name sagt, den Dispatch der Energiemärkte.
-Eine marktliche Beschaffung teilte den Dispatch in zwei Stufen, und die Akteure könnten die zweite Stufe schon in ihren Geboten der ersten vorwegnehmen \cite{hirth_kosten_2019}.
-Hinter dem Redispatch steht aber die Sicherheit des Netzes und kein Handelsgeschäft, sodass ein solches Verhalten den Engpass verschärft, statt ihn zu beheben.
-Darin zeigt sich erneut, dass der einheitliche Börsenpreis die Belastung des Netzes nicht abbildet.
-Die Vorbehalte der Verordnung treffen damit auf die deutsche Gebotszone zu, und ein Übergang zur marktlichen Beschaffung steht bislang aus.
+% VERSCHOBEN am 20.09.2026 nach 2.3.3, Kommentar des Verfassers: "das muss irgendwo stehen, wo wir diskutieren, warum Redispatch in der Art und Weise fuer BESS nicht funktioniert, also 2.3.3. Vorangegangen muesste die Argumentation sein, dass ihre Verguetung im kostenbasierten Redispatch ueber die Bewertung nach Weber nicht gut ist und deswegen marktlich eigentlich gut waere, und dann kommt dieser Abschnitt, und wir leiten ueber, dass ein kurativer Markt nicht sicherheitsrelevant sein darf und nur den praeventiven Redispatch ergaenzt. Somit waere eine marktliche Beschaffung hier nicht gefaehrdend fuer den Systemzustand, und man kann den Markt so designen, dass dieses Verhalten nicht attraktiv oder moeglich ist."
+% Die sechs Saetze stehen jetzt in 2.3.3, hier als Kommentar erhalten:
+%Die Binnenmarktverordnung sieht demgegenüber die marktbasierte Beschaffung als Regelfall vor und lässt die Kostenbasis nur bei strategischem Bietverhalten oder fehlendem Wettbewerb zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+%Der Redispatch korrigiert, wie sein Name sagt, den Dispatch der Energiemärkte.
+%Eine marktliche Beschaffung teilte den Dispatch in zwei Stufen, und die Akteure könnten die zweite Stufe schon in ihren Geboten der ersten vorwegnehmen \cite{hirth_kosten_2019}.
+%Hinter dem Redispatch steht aber die Sicherheit des Netzes und kein Handelsgeschäft, sodass ein solches Verhalten den Engpass verschärft, statt ihn zu beheben.
+%Darin zeigt sich erneut, dass der einheitliche Börsenpreis die Belastung des Netzes nicht abbildet.
+%Die Vorbehalte der Verordnung treffen damit auf die deutsche Gebotszone zu, und ein Übergang zur marktlichen Beschaffung steht bislang aus.
+% ERGAENZT am 20.09.2026, Kommentar des Verfassers: "da das hier die Einleitung in das Kapitel ist, muss
+% hier auch noch irgendwo ueber Regelleistung gesprochen werden." Zwei Saetze, die die Regelleistung
+% gegenueberstellen und auf den gemeinsamen Zugriff auf das BESS schliessen; die Belege stehen in 2.2.2
+% und 2.3.4.
+% ABSATZ VERBUNDEN am 20.09.2026: nach dem Auszug der sechs Saetze traegt die Einleitung einen Absatz mit neun Saetzen.
+% UEBERLEITUNG am 20.09.2026, Kommentar des Verfassers: "mir fehlt die Ueberleitung dazu, warum ich mir die
+% entgangenen Erloesmoeglichkeiten angeguckt habe. Wir schliessen in der Einleitung aus, dass die
+% Redispatch-Logik anwendbar ist, widmen dem aber noch viel Platz, was richtig ist, aber wir muessen besser
+% verkaufen, dass es notwendig ist, um kurative Systemfuehrung zu diskutieren." Neuer Absatz, weil die
+% Kernaussage von der Kostenbasis zur Bedeutung beider Regime fuer die kurative Vorhaltung wechselt. Das
+% Argument ist das Indifferenzprinzip: die Definition des kurativen Reservierungspreises in 1.2 (genauso viel
+% verdienen wie ohne Reservierung) stellt dieselbe Frage wie die Bemessung der entgangenen
+% Erloesmoeglichkeiten. Ohne Beleg, weil 2.3.1 und 2.3.2 die Aussagen belegt tragen.
+Für die kurative Vorhaltung ist die Kostenbasis gleichwohl der Maßstab, denn sie gehört als Teil des Engpassmanagements in dasselbe Regime.
+Das Engpassmanagement bewertet mit dem Indifferenzprinzip und den entgangenen Erlösmöglichkeiten bereits, was ein Speicher durch den Verzicht auf seine Vermarktung verliert.
+Dieselbe Frage stellt der kurative Reservierungspreis, sodass die Bemessung der Festlegung und ihre Grenzen bei einem \ac{BESS} zu prüfen sind.
+Die Regelleistung beschafft der \ac{ÜNB} demgegenüber im Wettbewerb, und ihr Leistungspreis vergütet die Vorhaltung selbst.
+Beide Regime greifen bei einem \ac{BESS} auf dieselbe Leistung zu, sodass sich der Preis einer kurativen Vorhaltung an beiden messen lassen muss.
 
 \subsection{Vergütung von Redispatch-Maßnahmen}
 \label{sec:redispatch_compensation}
@@ -2408,12 +2450,29 @@ Eine Anpassung der Formel griffe deshalb zu kurz.
 % NEUER ABSATZ 16.09.2026, C2.9.
 % DURCHSICHT 16.09.2026, C1, Anknuepfung. Alte Fassung:
 %Hirth und andere beschreiben für den marktbasierten Redispatch strukturelle Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
-Ein weiterer Einwand stammt aus der Debatte um den marktbasierten Redispatch: Hirth und andere beschreiben dort strukturelle Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
+% NEU GEFASST am 20.09.2026. VERSCHOBEN am 20.09.2026 nach 2.3.3, Kommentar des Verfassers: "das muss irgendwo stehen, wo wir diskutieren, warum Redispatch in der Art und Weise fuer BESS nicht funktioniert, also 2.3.3. Vorangegangen muesste die Argumentation sein, dass ihre Verguetung im kostenbasierten Redispatch ueber die Bewertung nach Weber nicht gut ist und deswegen marktlich eigentlich gut waere, und dann kommt dieser Abschnitt, und wir leiten ueber, dass ein kurativer Markt nicht sicherheitsrelevant sein darf und nur den praeventiven Redispatch ergaenzt. Somit waere eine marktliche Beschaffung hier nicht gefaehrdend fuer den Systemzustand, und man kann den Markt so designen, dass dieses Verhalten nicht attraktiv oder moeglich ist."
+% Die Saetze zwei bis sieben stammen aus der Einleitung von 2.3 (heute frueh dort neu gefasst, Belege Binnenmarkt-
+% verordnung Art. 13 Abs. 2 und 3 sowie Hirth 2019 im Protokoll). Die Saetze acht bis zehn sind die Ueberleitung
+% nach dem Kommentar des Verfassers, als Anforderung an den kurativen Marktmechanismus formuliert und nicht als
+% bewiesene Eigenschaft, Stilregel 8. Alte Fassung:
+%Ein weiterer Einwand stammt aus der Debatte um den marktbasierten Redispatch: Hirth und andere beschreiben dort strukturelle Anreize für ein engpassverstärkendes Bietverhalten \cite{hirth_kosten_2019}.
+%Der Einwand trifft die Vergütung eines Eingriffs, während die Vergütung der kurativen Vorhaltung unabhängig vom Abruf anfällt.
+%Ob von der Vergütung eines Abrufs ein eigener Anreiz ausgeht, ist gesondert zu prüfen.
 % R-44 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Begruendung steht auf dem belastbaren Kern. Alte Fassung:
 %Der Einwand trifft die Vergütung eines Eingriffs, und eine marktbasierte kurative Vorhaltung reserviert dagegen allein Leistung.
-Der Einwand trifft die Vergütung eines Eingriffs, während die Vergütung der kurativen Vorhaltung unabhängig vom Abruf anfällt.
 % R-44 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Begruendung ueber die Energielieferung traegt nicht, denn auch der kurative Abruf liefert Energie. Alte Fassung:
 %Der Redispatch löst stets zugleich eine Energielieferung aus, weshalb der Einwand nicht ohne Weiteres übertragbar ist.
+Damit läge eine marktliche Bewertung nahe, bei der der Betreiber den Preis seiner Anpassung selbst nennt.
+Die Binnenmarktverordnung sieht die marktbasierte Beschaffung des Redispatch als Regelfall vor und lässt die Kostenbasis nur bei strategischem Bietverhalten oder fehlendem Wettbewerb zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+Der Redispatch korrigiert, wie sein Name sagt, den Dispatch der Energiemärkte.
+Eine marktliche Beschaffung teilte den Dispatch in zwei Stufen, und die Akteure könnten die zweite Stufe schon in ihren Geboten der ersten vorwegnehmen \cite{hirth_kosten_2019}.
+Hinter dem Redispatch steht aber die Sicherheit des Netzes und kein Handelsgeschäft, sodass ein solches Verhalten den Engpass verschärft, statt ihn zu beheben.
+Darin zeigt sich erneut, dass der einheitliche Börsenpreis die Belastung des Netzes nicht abbildet.
+Diese Vorbehalte treffen auf die deutsche Gebotszone zu, und ein Übergang zur marktlichen Beschaffung des Redispatch steht bislang aus.
+Ein kurativer Marktmechanismus darf die Netzsicherheit deshalb nicht tragen.
+Die kurative Vorhaltung ergänzt den präventiven Redispatch und ersetzt ihn nicht, sodass der \ac{ÜNB} bei ausbleibenden Geboten auf den präventiven Redispatch zurückgreift.
+Eine marktliche Beschaffung der Vorhaltung gefährdet den Systemzustand damit nicht, und der Zuschnitt des Produkts muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv oder unmöglich machen.
+Der Einwand trifft zudem die Vergütung eines Eingriffs, während die Vergütung der kurativen Vorhaltung unabhängig vom Abruf anfällt.
 Ob von der Vergütung eines Abrufs ein eigener Anreiz ausgeht, ist gesondert zu prüfen.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
 %Zu bestimmen ist zunächst, wie ein \ac{BESS} seine Flexibilität über den Tag einsetzt und welchen Beitrag die einzelnen Vermarktungswege tragen.

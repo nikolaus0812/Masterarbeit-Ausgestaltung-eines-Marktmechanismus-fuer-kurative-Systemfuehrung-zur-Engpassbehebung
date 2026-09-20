@@ -6532,6 +6532,106 @@ Praequalifikationswerte 15 und 60 Minuten bleiben in 2.3.4, weil sie das
 Argument "Drittens" tragen. 2.3 Einleitung, 2.3.1, 2.3.2, 2.3.3 und 2.3.5 ohne
 Befund.
 
+**2.2.2, Blindleistung bindet das Leistungsband.** Einwand des Verfassers: "das
+stimmt nicht. Blindleistung kann schon das Leistungsband binden, oder?" Ja,
+ueber die Scheinleistung des Umrichters. Neue Fassung: "Fuer ein BESS kann die
+Blindleistung einen Teil der Umrichterleistung und die Schwarzstartfaehigkeit
+einen Teil des Ladezustands beanspruchen. Beide Dienstleistungen bleiben im
+Weiteren dennoch ausser Betracht, weil ihre marktgestuetzte Beschaffung erst
+anlaeuft." Zurueckgenommen, nicht wieder aufnehmen: "... und das Leistungsband
+des BESS nicht bindet" sowie "Fuer ein BESS koennen Blindleistung und
+Schwarzstartfaehigkeit einen Teil des Ladezustands beanspruchen."
+
+**2.2.1, WAPP ergaenzt.** Kommentar des Verfassers: "wir haben den WAPP vergessen,
+der muss kurz erwaehnt werden." Neuer Satz vor dem DACF-Satz: "Den Anfang macht
+der WAPP, der bis zu sieben Tage im Voraus Redispatchpotenziale durch
+Kraftwerksanfahrten sichert." Nach van Leeuwen ("Week-Ahead-Planning-Process",
+Vorschauzeit der Betriebsplanung bis zu sieben Tage, Fokus von WAPP und pRD1
+auf der Sicherung von Redispatchpotenzialen durch Anfahrten). Eintrag
+`\acro{WAPP}{Week-Ahead Planning Process (Deutsch: Betriebsplanung im
+Wochenvorlauf)}` in extras/abbreviations.tex, deutsche Beschreibung als
+eigenstaendige Uebersetzung. Damit sind alle Prozesse aus Abbildung 2.3 im
+Text benannt.
+
+**2.2.1, Anordnung trifft alle Kurzfristmaerkte, nach pRD1 nur noch Anlagen ohne
+Vorlauf.** Kommentar des Verfassers: "es kann nicht nur am DA und in der IDA-1
+vermarktete Anlagen treffen, sondern an allen Kurzfristmaerkten. Hier wuerde
+ich auch spezifizieren, dass nach dem pRD1 nur noch kurzfristige Anlagen zum
+Redispatch aufgefordert werden koennen." Drei Saetze: "Eine Anordnung zum
+Redispatch trifft damit Fahrplaene, die an allen kurzfristigen Maerkten vom DA
+bis zum laufenden IDC bereits vermarktet sind. Nach dem pRD1 passen die
+spaeteren Prozesse allein Arbeitspunkte an. Der UeNB zieht dann nur noch
+Anlagen heran, die bereits am Netz sind oder ohne langen Vorlauf reagieren."
+Beleg van Leeuwen: "Die nachfolgenden Prozesse pRD2/DACF sowie der untertaegige
+IDCF-Prozess fokussieren auf die Arbeitspunktanpassung am Netz befindlicher
+Kraftwerke", der Beleg steht im Absatz beim DACF-Satz. "Herangezogen" statt
+"aufgefordert", weil die Aufforderung nach Paragraph 13a erst in 2.2.2
+eingefuehrt wird. Zurueckgenommen: "Eine Anordnung zum Redispatch trifft damit
+einen Fahrplan, der am DA und in der IDA-1 bereits vermarktet ist, und
+untertaegig oder aus der Netzsicherheitsrechnung heraus einen Fahrplan im
+laufenden IDC."
+
+Nachtrag: "Nach dem pRD1 passen die spaeteren Prozesse allein Arbeitspunkte
+an." auf Nachfrage des Verfassers gestrichen, der Folgesatz lautet "Nach dem
+pRD1 zieht der UeNB nur noch Anlagen heran, die bereits am Netz sind oder ohne
+langen Vorlauf reagieren."
+
+**2.3, Einleitung nennt die Regelleistung.** Kommentar des Verfassers: "da das
+hier die Einleitung in das Kapitel ist, muss hier auch noch irgendwo ueber
+Regelleistung gesprochen werden." Zwei Saetze am Ende des Einleitungsabsatzes:
+"Die Regelleistung beschafft der UeNB demgegenueber im Wettbewerb, und ihr
+Leistungspreis verguetet die Vorhaltung selbst. Beide Regime greifen bei einem
+BESS auf dieselbe Leistung zu, sodass sich der Preis einer kurativen
+Vorhaltung an beiden messen lassen muss." Ohne Beleg, weil 2.2.2 und 2.3.4 die
+Aussagen belegt tragen. Eigenstaendige Formulierung von Fable, dem Verfasser
+im Chat gezeigt.
+
+**2.3, Ueberleitung zur Bemessung der entgangenen Erloesmoeglichkeiten.**
+Kommentar des Verfassers: "mir fehlt die Ueberleitung dazu, warum ich mir die
+entgangenen Erloesmoeglichkeiten angeguckt habe. Wir schliessen in der
+Einleitung aus, dass die Redispatch-Logik anwendbar ist, widmen dem aber noch
+viel Platz, was richtig ist, aber wir muessen besser verkaufen, dass es
+notwendig ist, um kurative Systemfuehrung zu diskutieren." Die Einleitung von
+2.3 hat jetzt zwei Absaetze. Der zweite beginnt: "Fuer die kurative Vorhaltung
+ist die Kostenbasis gleichwohl der Massstab, denn sie gehoert als Teil des
+Engpassmanagements in dasselbe Regime. Das Engpassmanagement bewertet mit dem
+Indifferenzprinzip und den entgangenen Erloesmoeglichkeiten bereits, was ein
+Speicher durch den Verzicht auf seine Vermarktung verliert. Dieselbe Frage
+stellt der kurative Reservierungspreis, sodass die Bemessung der Festlegung und
+ihre Grenzen bei einem BESS zu pruefen sind." Danach die beiden
+Regelleistungssaetze. Eigenstaendige Formulierung von Fable auf Grundlage der
+Definition des kurativen Reservierungspreises in 1.2 (Indifferenz) und der
+Entscheidung 8 (Verguetung folgt dem Indifferenzprinzip). Der zweite Absatz
+traegt fuenf Saetze und liegt unter der halben Seite der Stilregel 1; der
+Umbruch steht, weil die Kernaussage wechselt, der Verfasser kann ihn
+aufheben.
+
+**Vorbehalte gegen den marktbasierten Redispatch von der Einleitung 2.3 nach
+2.3.3.** Kommentar des Verfassers: "das muss irgendwo stehen, wo wir diskutieren, warum Redispatch in der Art und Weise fuer BESS nicht funktioniert, also 2.3.3. Vorangegangen muesste die Argumentation sein, dass ihre Verguetung im kostenbasierten Redispatch ueber die Bewertung nach Weber nicht gut ist und deswegen marktlich eigentlich gut waere, und dann kommt dieser Abschnitt, und wir leiten ueber, dass ein kurativer Markt nicht sicherheitsrelevant sein darf und nur den praeventiven Redispatch ergaenzt. Somit waere eine marktliche Beschaffung hier nicht gefaehrdend fuer den Systemzustand, und man kann den Markt so designen, dass dieses Verhalten nicht attraktiv oder moeglich ist."
+Umsetzung: Die sechs Saetze (Binnenmarktverordnung, Redispatch korrigiert den
+Dispatch, zwei Stufen, Sicherheit des Netzes, Boersenpreis, Vorbehalte treffen
+zu) sind aus der Einleitung von 2.3 in den vorletzten Absatz von 2.3.3 gezogen,
+der Hirths Einwand bereits nannte. Der Absatz beginnt jetzt mit "Damit laege
+eine marktliche Bewertung nahe, bei der der Betreiber den Preis seiner
+Anpassung selbst nennt." und leitet nach den Vorbehalten ueber: "Ein kurativer
+Marktmechanismus darf die Netzsicherheit deshalb nicht tragen. Die kurative
+Vorhaltung ergaenzt den praeventiven Redispatch und ersetzt ihn nicht, sodass
+der UeNB bei ausbleibenden Geboten auf den praeventiven Redispatch
+zurueckgreift. Eine marktliche Beschaffung der Vorhaltung gefaehrdet den
+Systemzustand damit nicht, und der Zuschnitt des Produkts muss ein Vorwegnehmen
+in den Geboten der Energiemaerkte unattraktiv oder unmoeglich machen." Die
+Ueberleitung ist als Anforderung formuliert, nicht als bewiesene Eigenschaft
+("man kann den Markt so designen" ist nicht uebernommen), Stilregel 8, und
+setzt die Praemisse des Verfassers, dass der praeventive Redispatch die
+Rueckfallebene bleibt. Zurueckgenommen: "Ein weiterer Einwand stammt aus der
+Debatte um den marktbasierten Redispatch: Hirth und andere beschreiben dort
+strukturelle Anreize fuer ein engpassverstaerkendes Bietverhalten." Die
+Einleitung von 2.3 ist wieder ein Absatz mit neun Saetzen (zwei Fragen,
+Kostenbasis gewachsen, Anweisung und Entschaedigung, Massstab fuer die
+kurative Vorhaltung, Indifferenzprinzip, Reservierungspreis, Regelleistung,
+beide Regime). Die Praemisse "ergaenzt den praeventiven Redispatch und ersetzt
+ihn nicht" ist im Text neu und vom Verfasser zu lesen.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 Build mit biber, zwei bekannte Referenzwarnungen, 94 Seiten. Abbildung 2.3
 weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
