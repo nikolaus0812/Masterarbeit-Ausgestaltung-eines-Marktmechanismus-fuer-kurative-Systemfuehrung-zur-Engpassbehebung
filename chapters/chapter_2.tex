@@ -671,6 +671,12 @@ Der Akteur kehrt dann in den freien Betrieb zurück.
 Grundlage der Betriebsplanung ist die Erkennung gefährdeter Zustände, für die der \ac{ÜNB} die Ausfallvarianten der Netzbetriebsmittel prüft \cite{leeuwen_integration_2020}.
 Die Prüfung beruht auf Prognosen der Netznutzung, nämlich für die Einspeisung aus erneuerbaren Energien, die Last, die Netztopologie und die Einspeisung der Kraftwerke.
 Optimierungsalgorithmen ermitteln daraus die potenziellen Engpässe und die möglichen Entlastungsmaßnahmen.
+% ERGAENZT am 20.09.2026, Rueckfrage des Verfassers, ob die Aussagen des Zwischenfazits auch dort stehen, wo sie ausgearbeitet werden.
+% leeuwen_integration_2020: "Alle Betriebsplanungsprozesse basieren auf Prognosen ..., die laufend aktualisiert
+% werden" und "die mit der Zeit abnehmende Unsicherheit gegenueber der sich tatsaechlich ergebenden
+% Netzsituation". Der Beleg steht im Absatz beim ersten Satz.
+Die Prognosen werden laufend aktualisiert, sodass die Unsicherheit über die Netzsituation von Rechenlauf zu Rechenlauf abnimmt.
+Die Einplanung wird deshalb umso verlässlicher, je näher der Rechenlauf am Lieferzeitpunkt liegt.
 % GESTRICHEN am 19.09.2026, siehe den Kommentar zum Absatz davor: der Satz beschreibt die
 % Netzsicherheitsrechnung und steht jetzt dort. Gestrichener Satz:
 %Die Prüfung beruht auf Leistungsflussrechnungen mit der State Estimation, also der aus Messwerten geschätzten Netzsituation.
@@ -1993,6 +1999,10 @@ Die für die Regelleistung bezuschlagte Leistung ist von der Aufforderung ausgen
 % Das damit bezog sich auf den Zeitblock, der jetzt in 2.2.1 steht. Alte Fassung:
 %Für den \ac{EIV} ist die Aufforderung damit ein Eingriff in einen bereits vermarkteten Fahrplan, für den er kein Gebot abgegeben hat.
 Für den \ac{EIV} ist die Aufforderung ein Eingriff in einen bereits vermarkteten Fahrplan, für den er kein Gebot abgegeben hat.
+% ERGAENZT am 20.09.2026, Rueckfrage des Verfassers, ob die Aussagen des Zwischenfazits auch dort stehen, wo sie ausgearbeitet werden.
+% Folgerung aus Paragraph 13a (Aufforderung, Duldung) und dem Selbstdispatch-Absatz in 2.2, ohne Beleg.
+Am Engpassmanagement nimmt der \ac{EIV} damit allein als Adressat einer Anordnung teil.
+Ein kurativer Marktmechanismus gäbe ihm die Möglichkeit, mit seinem Fahrplan zur Behebung eines Engpasses beizutragen und dafür vergütet zu werden.
 Der Ausgleich für diesen Eingriff wird in Abschnitt~\ref{sec:market_limits} dargestellt.
 
 \section{Vergütungslogiken für Systemdienstleistungen}
@@ -2520,7 +2530,9 @@ Darin zeigt sich erneut, dass der einheitliche Börsenpreis die Belastung des Ne
 Diese Vorbehalte treffen auf die deutsche Gebotszone zu, und ein Übergang zur marktlichen Beschaffung des Redispatch steht bislang aus.
 Ein kurativer Marktmechanismus darf die Netzsicherheit deshalb nicht tragen.
 Die kurative Vorhaltung ergänzt den präventiven Redispatch und ersetzt ihn nicht, sodass der \ac{ÜNB} bei ausbleibenden Geboten auf den präventiven Redispatch zurückgreift.
-Eine marktliche Beschaffung der Vorhaltung gefährdet den Systemzustand damit nicht, und der Zuschnitt des Produkts muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv oder unmöglich machen.
+% AUSGESCHRIEBEN am 20.09.2026, Rueckfrage des Verfassers: "Vorwegnehmen in den Geboten der Energiemaerkte unattraktiv machen, was heisst das?" Gemeint ist das Inc-Dec-Verhalten. Alte Fassung:
+%Eine marktliche Beschaffung der Vorhaltung gefährdet den Systemzustand damit nicht, und der Zuschnitt des Produkts muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv oder unmöglich machen.
+Eine marktliche Beschaffung der Vorhaltung gefährdet den Systemzustand damit nicht, und der Zuschnitt des Produkts darf es nicht lohnend machen, den Fahrplan an den Energiemärkten allein im Hinblick auf die kurative Vergütung zu verändern.
 Der Einwand trifft zudem die Vergütung eines Eingriffs, während die Vergütung der kurativen Vorhaltung unabhängig vom Abruf anfällt.
 Ob von der Vergütung eines Abrufs ein eigener Anreiz ausgeht, ist gesondert zu prüfen.
 % DURCHSICHT 16.09.2026, C1. Alte Fassung:
@@ -2813,24 +2825,86 @@ Die Vorhaltung verdrängt damit über die gebundene Leistung hinaus auch die Ver
 % ABSATZ VERBUNDEN 16.09.2026, C2.13.
 % DURCHSICHT 16.09.2026, Begriff kurative Bindung, Vorgabe des Verfassers vom 16.09.2026. Alte Fassung:
 %Für eine solche Bindung kennt das Engpassmanagement keinen Bemessungsgegenstand. Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, während ein Abruf mit hoher Wahrscheinlichkeit ausbleibt und eine Zahlung deshalb nur in den wenigen Intervallen eines Eingriffs anfällt. Die Vorhaltung ist für ihn damit nicht rational, und die kurative Maßnahme ist im Bedarfsfall nicht verfügbar. Ein Zugriff, der ohne diesen Anreiz auskommt, steht dem \ac{ÜNB} nicht zur Verfügung, denn die Anlagenbetreiber übermitteln zwar ihre Einsatzplanung als Planungsdaten, doch diese Kenntnis begründet keine Verfügung über den Betriebspunkt. Sie erlaubt ihm auch keine schnellere Reaktion als die Redispatch-Prozesse, sodass die vorübergehend zulässige Überlastung als Handlungsraum ungenutzt bleibt.
-Die Grundlagen legen fest, was das Design einer kurativen Reservierung berücksichtigen muss, und sie benennen die Aspekte, die zu untersuchen bleiben.
+% NEU SORTIERT am 20.09.2026, Vorgabe des Verfassers: "erst sollen alle Infos genannt werden, die zum kurativen
+% Marktmechanismus relevant sind, und fuer das Produkt von Betriebsplanung bis Umsetzung, dann ueber die
+% Verguetung zu BESS und den Besonderheiten. Der Einleitungssatz soll enthalten: zur Ausgestaltung eines
+% kurativen Marktmechanismus ..." Vier Absaetze: Einleitungssatz, Mechanismus und Produkt entlang des
+% Prozesses aus 2.1.2 (Betriebsplanung, Einplanung, Scharfschaltung, Ausloesung, Umsetzung, Rueckfuehrung),
+% Verguetung, BESS. Alte Fassung vom selben Tag, nicht wieder aufnehmen:
+%Die Grundlagen legen fest, was das Design einer kurativen Reservierung berücksichtigen muss, und sie benennen die Aspekte, die zu untersuchen bleiben.
+%Der Gegenstand der Reservierung ist bei einem Speicher ein Leistungsband samt der zugehörigen Energiereserve über die Bindungsdauer und in beide Richtungen, denn der Speicher legt seinen Betriebspunkt erst kurzfristig fest und kann ihn in beide Richtungen verändern.
+%Bei Windenergie- und Photovoltaikanlagen ist eine Energiereserve entbehrlich, denn sie vermarkten früh und können ihre Einspeisung nur absenken.
+%Im Selbst\-dispatch-Modell entsteht die Reservierung nur über eine Einplanung mit Vergütung und nicht über eine Anweisung, denn die Fahrplanhoheit liegt beim \ac{EIV}.
+%Die Staffelung der kurzfristigen Märkte macht den Zeitpunkt der Einplanung zu einem eigenen Produktmerkmal: Die Regelleistung schließt vor dem \ac{DA}, eine Redispatch-Anordnung trifft dagegen Fahrpläne, die an allen Kurzfristmärkten bereits vermarktet sind.
+%Der Kategorie nach gehört die Reservierung zum Engpassmanagement, das knotenscharf ist, aber allein den durchgeführten Eingriff bemisst.
+%Der Form nach gleicht sie der Regelleistung, die die Vorhaltung mit einem Leistungspreis vergütet, Vorhaltung und Abruf getrennt bepreist und bei Speichern ein Ladezustandsband über die Erbringungsperiode bindet.
+%Kein bestehendes Regime verbindet beide Eigenschaften.
+%Ein kurativer Marktmechanismus darf die Netzsicherheit nicht tragen, sondern ergänzt den präventiven Redispatch, und sein Zuschnitt muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv machen.
+%Zu untersuchen bleibt zuerst der Preis der Reservierung, denn das Engpassmanagement kennt für eine kurative Bindung keinen Bemessungsgegenstand.
+%Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, eine Zahlung fällt aber nur in den wenigen Intervallen eines Eingriffs an.
+%Ohne Vergütung ist die Vorhaltung deshalb nicht rational, und die Maßnahme ist im Bedarfsfall nicht verfügbar.
+%Einen Zugriff ohne diesen Anreiz hat der \ac{ÜNB} nicht, denn die gemeldeten Planungsdaten begründen weder eine Verfügung über den Betriebspunkt noch eine schnellere Reaktion als die Redispatch-Prozesse.
+%Die Bemessung der Festlegung liefert den Preis nicht, denn sie verfehlt bei Speichern schon im angeordneten Redispatch den Maßstab der Indifferenz.
+%Ihr Zeitwert ist vom Anweisungszeitpunkt unabhängig und trifft einen kurzfristig handelnden Speicher stärker als eine Anlage mit früh feststehendem Fahrplan.
+%Der Preis ist deshalb aus der Fahrplanoptimierung des Akteurs zu bestimmen, als der Erlös, den die Reservierung an den übrigen Vermarktungswegen verdrängt.
+%Welchen Anteil seiner Leistung und seines Ladezustands ein \ac{BESS} der Reservierung widmet, hängt von den relativen Preisen der Mehrfachvermarktung ab und wechselt mit ihnen.
+%Die Vorhaltedauer bestimmt dabei das Band an Energie, das der Reservierung zufällt und den übrigen Wegen fehlt, und ist deshalb eigens zu untersuchen.
+%Die Vergütung eines Abrufs ist davon getrennt und eigens zu betrachten.
+Zur Ausgestaltung eines kurativen Marktmechanismus ist aus den Grundlagen festzuhalten, was das Produkt von der Betriebsplanung bis zur Umsetzung berücksichtigen muss, wie die Vorhaltung vergütet werden kann und welche Besonderheiten ein \ac{BESS} mitbringt.
 
-Der Gegenstand der Reservierung ist bei einem Speicher ein Leistungsband samt der zugehörigen Energiereserve über die Bindungsdauer und in beide Richtungen, denn der Speicher legt seinen Betriebspunkt erst kurzfristig fest und kann ihn in beide Richtungen verändern.
-Bei Windenergie- und Photovoltaikanlagen ist eine Energiereserve entbehrlich, denn sie vermarkten früh und können ihre Einspeisung nur absenken.
-Im Selbst\-dispatch-Modell entsteht die Reservierung nur über eine Einplanung mit Vergütung und nicht über eine Anweisung, denn die Fahrplanhoheit liegt beim \ac{EIV}.
-Die Staffelung der kurzfristigen Märkte macht den Zeitpunkt der Einplanung zu einem eigenen Produktmerkmal: Die Regelleistung schließt vor dem \ac{DA}, eine Redispatch-Anordnung trifft dagegen Fahrpläne, die an allen Kurzfristmärkten bereits vermarktet sind.
+% AUSGESCHRIEBEN am 20.09.2026, Rueckfrage des Verfassers: "Vorwegnehmen in den Geboten der Energiemaerkte unattraktiv machen, was heisst das?" Gemeint ist das Inc-Dec-Verhalten. Alte Fassung:
+%Ein kurativer Marktmechanismus darf die Netzsicherheit nicht tragen, sondern ergänzt den präventiven Redispatch, und sein Zuschnitt muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv machen.
+Ein kurativer Marktmechanismus darf die Netzsicherheit nicht tragen, sondern ergänzt den präventiven Redispatch, und sein Zuschnitt darf es nicht lohnend machen, den Fahrplan an den Energiemärkten allein im Hinblick auf die kurative Vergütung zu verändern.
+In der Betriebsplanung bestimmen die Redispatchprozesse auf den Lastflussrechnungen die Maßnahmen, und nach dem pRD1 kommen nur noch Anlagen ohne langen Vorlauf in Betracht.
+% NEU GEFASST am 20.09.2026, Kommentar des Verfassers: "zu spezifisch ... wichtigste Aussage ist einfach, dass
+% wir durch Vorschauprozesse, die am naechsten am Lieferzeitpunkt liegen, die bestmoegliche Einplanung
+% durchfuehren koennen. Redispatch-Anordnungen koennen jederzeit passieren. Was das Selbstdispatch so wichtig
+% macht, ist nicht allein, dass der EIV einplanen muss, sondern dass wir mit kurativ ein Engpassmanagement in
+% den Markt geben, was vorher durch kostenbasierten Redispatch nicht moeglich war: der Betreiber kann nur
+% angeordnet werden, jetzt kann der EIV durch Einplanung einer kurativen Massnahme sich netzdienlich
+% verhalten." Grundlage: 2.2.1 nach van Leeuwen ("mit der Zeit abnehmende Unsicherheit gegenueber der sich
+% tatsaechlich ergebenden Netzsituation"), 2.2.2 (Aufforderung nach Paragraph 13a). Alte Fassung, nicht
+% wieder aufnehmen:
+%Die Staffelung der kurzfristigen Märkte macht den Zeitpunkt der Einplanung zu einem eigenen Produktmerkmal: Die Regelleistung schließt vor dem \ac{DA}, eine Redispatch-Anordnung trifft dagegen Fahrpläne, die an allen Kurzfristmärkten bereits vermarktet sind.
+%Im Selbst\-dispatch-Modell entsteht die Reservierung nur über eine Einplanung mit Vergütung und nicht über eine Anweisung, denn die Fahrplanhoheit liegt beim \ac{EIV}.
+Die Einplanung gelingt umso besser, je näher die Vorschaurechnung am Lieferzeitpunkt liegt, denn die Unsicherheit über die Netzsituation nimmt bis dahin ab.
+Eine Redispatch-Anordnung kann den \ac{EIV} dagegen jederzeit treffen.
+Im Selbst\-dispatch-Modell nimmt der \ac{EIV} am Engpassmanagement bislang allein als Adressat einer solchen Anordnung teil.
+Ein kurativer Marktmechanismus gibt ihm mit der Einplanung einer kurativen Maßnahme erstmals die Möglichkeit, mit seinem Fahrplan zur Behebung eines Engpasses beizutragen und dafür vergütet zu werden.
+Gegenstand der Reservierung ist ein Leistungsband über die Bindungsdauer und in beide Richtungen.
+Der \ac{ÜNB} schaltet die eingeplante Maßnahme nach der Netzsicherheitsrechnung scharf und löst sie im Fehlerfall aus dem Leitsystem aus.
+Der Akteur setzt die Leistungsänderung innerhalb der Reaktionszeit um, die das \ac{TATL}-Zeitfenster des Betriebsmittels vorgibt, und der \ac{ÜNB} stellt den \mbox{(N-1)-sicheren} Zustand anschließend durch Redispatch wieder her.
 Der Kategorie nach gehört die Reservierung zum Engpassmanagement, das knotenscharf ist, aber allein den durchgeführten Eingriff bemisst.
 Der Form nach gleicht sie der Regelleistung, die die Vorhaltung mit einem Leistungspreis vergütet, Vorhaltung und Abruf getrennt bepreist und bei Speichern ein Ladezustandsband über die Erbringungsperiode bindet.
 Kein bestehendes Regime verbindet beide Eigenschaften.
-Ein kurativer Marktmechanismus darf die Netzsicherheit nicht tragen, sondern ergänzt den präventiven Redispatch, und sein Zuschnitt muss ein Vorwegnehmen in den Geboten der Energiemärkte unattraktiv machen.
 
-Zu untersuchen bleibt zuerst der Preis der Reservierung, denn das Engpassmanagement kennt für eine kurative Bindung keinen Bemessungsgegenstand.
-Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, eine Zahlung fällt aber nur in den wenigen Intervallen eines Eingriffs an.
-Ohne Vergütung ist die Vorhaltung deshalb nicht rational, und die Maßnahme ist im Bedarfsfall nicht verfügbar.
-Einen Zugriff ohne diesen Anreiz hat der \ac{ÜNB} nicht, denn die gemeldeten Planungsdaten begründen weder eine Verfügung über den Betriebspunkt noch eine schnellere Reaktion als die Redispatch-Prozesse.
-Die Bemessung der Festlegung liefert den Preis nicht, denn sie verfehlt bei Speichern schon im angeordneten Redispatch den Maßstab der Indifferenz.
-Ihr Zeitwert ist vom Anweisungszeitpunkt unabhängig und trifft einen kurzfristig handelnden Speicher stärker als eine Anlage mit früh feststehendem Fahrplan.
-Der Preis ist deshalb aus der Fahrplanoptimierung des Akteurs zu bestimmen, als der Erlös, den die Reservierung an den übrigen Vermarktungswegen verdrängt.
+% NEU GEFASST am 20.09.2026 nach der Erzaehlung des Verfassers: "kostenbasierter Redispatch kennt nur die
+% Anordnung zur Leistungsaenderung, nicht den Vorhalt. Damit hat ein marktlicher Akteur keine Anreize
+% vorzuhalten, um im Fehlerfall den noetigen Zustand zu haben, deswegen muss eine Bereitschaft durch
+% Vorhaltung verguetet werden, sofern sie dafuer andere Opportunitaeten nicht wahrnehmen koennen. Fuer Speicher
+% gibt es schon einen Versuch durch die Bewertung einer entgangenen Erloesmoeglichkeit im Redispatch durch
+% Anweisen vor Lieferzeitpunkt, verguetet aber nicht indifferent die zeitliche Option. Diese Vorhaltung kann
+% deswegen nur durch den Anlagenbetreiber selber bestimmt werden, und das in einem Markt. Die Verguetung ist
+% deswegen der Preis, der andere Opportunitaeten am Markt schlaegt. Ein Abruf ist getrennt zu betrachten."
+% Der Satz zum fehlenden Zugriff ueber die Planungsdaten ist entfallen. Alte Fassung, nicht wieder aufnehmen:
+%Für die Vergütung der Vorhaltung kennt das Engpassmanagement keinen Bemessungsgegenstand.
+%Der Betreiber trägt die Opportunitätskosten in jedem Intervall der Bindung, eine Zahlung fällt aber nur in den wenigen Intervallen eines Eingriffs an.
+%Ohne Vergütung ist die Vorhaltung deshalb nicht rational, und die Maßnahme ist im Bedarfsfall nicht verfügbar.
+%Einen Zugriff ohne diesen Anreiz hat der \ac{ÜNB} nicht, denn die gemeldeten Planungsdaten begründen weder eine Verfügung über den Betriebspunkt noch eine schnellere Reaktion als die Redispatch-Prozesse.
+%Die Bemessung der Festlegung liefert den Preis nicht, denn sie verfehlt bei Speichern schon im angeordneten Redispatch den Maßstab der Indifferenz.
+%Ihr Zeitwert ist vom Anweisungszeitpunkt unabhängig und trifft einen kurzfristig handelnden Speicher stärker als eine Anlage mit früh feststehendem Fahrplan.
+%Der Preis ist deshalb aus der Fahrplanoptimierung des Akteurs zu bestimmen, als der Erlös, den die Reservierung an den übrigen Vermarktungswegen verdrängt.
+%Die Vergütung eines Abrufs ist davon getrennt und eigens zu betrachten.
+Das Engpassmanagement kennt allein die Anordnung einer Leistungsänderung und keine Vorhaltung.
+Ein marktlicher Akteur hat deshalb keinen Anreiz, Leistung und Energie für den Fehlerfall zurückzuhalten, denn eine Zahlung fällt nur in den wenigen Intervallen eines Eingriffs an.
+Die Bereitschaft muss daher als Vorhaltung vergütet werden, soweit der Akteur dafür auf andere Vermarktung verzichtet.
+Für Speicher unternimmt die Festlegung einen Versuch: Bei einer Anweisung vor dem Lieferzeitpunkt bewertet sie die entgangenen Erlösmöglichkeiten.
+Die zeitliche Option vergütet sie dabei nicht indifferent, denn ihr Zeitwert ist vom Anweisungszeitpunkt unabhängig.
+Den Wert seiner Vorhaltung kann deshalb nur der \ac{EIV} selbst bestimmen, und zwar in einem Markt.
+Die Vergütung ist damit der Preis, der die übrigen Opportunitäten des Akteurs am Markt schlägt.
+Die Vergütung eines Abrufs ist davon getrennt zu betrachten.
+
+Bei einem \ac{BESS} umfasst die Reservierung neben dem Leistungsband die zugehörige Energiereserve, denn der Speicher legt seinen Betriebspunkt erst kurzfristig fest und kann ihn in beide Richtungen verändern.
+Bei Windenergie- und Photovoltaikanlagen ist eine Energiereserve entbehrlich, denn sie vermarkten früh und können ihre Einspeisung nur absenken.
 Welchen Anteil seiner Leistung und seines Ladezustands ein \ac{BESS} der Reservierung widmet, hängt von den relativen Preisen der Mehrfachvermarktung ab und wechselt mit ihnen.
 Die Vorhaltedauer bestimmt dabei das Band an Energie, das der Reservierung zufällt und den übrigen Wegen fehlt, und ist deshalb eigens zu untersuchen.
-Die Vergütung eines Abrufs ist davon getrennt und eigens zu betrachten.

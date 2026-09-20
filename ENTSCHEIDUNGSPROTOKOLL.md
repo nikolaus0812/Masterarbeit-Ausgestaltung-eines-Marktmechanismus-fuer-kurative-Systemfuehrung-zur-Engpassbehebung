@@ -6925,6 +6925,96 @@ Einleitungssatz steht allein und liegt unter der halben Seite der Stilregel 1,
 so vom Verfasser gewollt. Eigenstaendige Anmerkung: der Satz zur
 Fahrplanoptimierung nimmt den Ansatz von Kapitel 3 vorweg.
 
+**2.4 neu sortiert, Prozessfolge.** Vorgabe des Verfassers: "erst sollen alle
+Infos genannt werden, die zum kurativen Marktmechanismus relevant sind, und
+fuer das Produkt von Betriebsplanung bis Umsetzung, dann ueber die Verguetung
+zu BESS und den Besonderheiten. Der Einleitungssatz soll enthalten: zur
+Ausgestaltung eines kurativen Marktmechanismus ..." Vier Absaetze:
+Einleitungssatz "Zur Ausgestaltung eines kurativen Marktmechanismus ist aus
+den Grundlagen festzuhalten, was das Produkt von der Betriebsplanung bis zur
+Umsetzung beruecksichtigen muss, wie die Vorhaltung verguetet werden kann und
+welche Besonderheiten ein BESS mitbringt."; Absatz Mechanismus und Produkt in
+der Prozessfolge aus 2.1.2 (Netzsicherheit nicht tragen, Betriebsplanung mit
+pRD1, Zeitpunkt der Einplanung, Einplanung mit Verguetung beim EIV,
+Leistungsband ueber die Bindungsdauer in beide Richtungen, Scharfschaltung und
+Ausloesung, Umsetzung in der Reaktionszeit nach dem TATL-Zeitfenster und
+Rueckfuehrung, Kategorie und Form, kein Regime verbindet beides), zehn Saetze;
+Absatz Verguetung (kein Bemessungsgegenstand, Opportunitaetskosten je
+Intervall, kein Zugriff ohne Anreiz, Indifferenz verfehlt, Zeitwert,
+Fahrplanoptimierung, Abrufverguetung), acht Saetze; Absatz BESS
+(Energiereserve, Wind und PV, Anteil nach relativen Preisen, Vorhaltedauer),
+vier Saetze. Neu sind die zwei Saetze zu Scharfschaltung, Ausloesung,
+Umsetzung und Rueckfuehrung, aus 2.1.2 und 2.1.3 zusammengezogen, ohne Beleg.
+Die Fassung vom selben Tag mit den Absaetzen Design und Untersuchung ist im
+Quelltext als Kommentar erhalten.
+
+Nachtrag 2.3.3 und 2.4: Rueckfrage des Verfassers "Vorwegnehmen in den Geboten
+der Energiemaerkte unattraktiv machen, was heisst das?" An beiden Stellen
+ausgeschrieben: "... und sein Zuschnitt darf es nicht lohnend machen, den
+Fahrplan an den Energiemaerkten allein im Hinblick auf die kurative Verguetung
+zu veraendern." Zurueckgenommen: "muss ein Vorwegnehmen in den Geboten der
+Energiemaerkte unattraktiv (oder unmoeglich) machen".
+
+Nachtrag 2.4, Saetze zur Einplanung und zum Selbstdispatch: Kommentar des
+Verfassers: "zu spezifisch ... wichtigste Aussage ist, dass wir durch
+Vorschauprozesse, die am naechsten am Lieferzeitpunkt liegen, die
+bestmoegliche Einplanung durchfuehren koennen. Redispatch-Anordnungen koennen
+jederzeit passieren. Was das Selbstdispatch so wichtig macht, ist nicht allein,
+dass der EIV einplanen muss, sondern dass wir mit kurativ ein Engpassmanagement
+in den Markt geben, was vorher durch kostenbasierten Redispatch nicht moeglich
+war: der Betreiber kann nur angeordnet werden, jetzt kann der EIV durch
+Einplanung einer kurativen Massnahme sich netzdienlich verhalten. Die Logik
+aus diesen Saetzen ist voellig am Ziel vorbei." Herkunft der alten Saetze: das
+Zwischenfazit vom 15.09.2026 ("macht die zeitliche Bindung zu einem
+eigenstaendigen Produktmerkmal", "Fahrplanhoheit liegt beim Anlagenbetreiber"),
+heute mit der Zeitschiene und der Einplanung mit Verguetung erweitert. Vier
+neue Saetze: "Die Einplanung gelingt umso besser, je naeher die
+Vorschaurechnung am Lieferzeitpunkt liegt, denn die Unsicherheit ueber die
+Netzsituation nimmt bis dahin ab. Eine Redispatch-Anordnung kann den EIV
+dagegen jederzeit treffen. Im Selbstdispatch-Modell nimmt der EIV am
+Engpassmanagement bislang allein als Adressat einer solchen Anordnung teil.
+Ein kurativer Marktmechanismus gibt ihm mit der Einplanung einer kurativen
+Massnahme erstmals die Moeglichkeit, mit seinem Fahrplan zur Behebung eines
+Engpasses beizutragen und dafuer verguetet zu werden." Belegt in 2.2.1 (van
+Leeuwen, abnehmende Unsicherheit) und 2.2.2 (Aufforderung). "Netzdienlich" ist
+als "zur Behebung eines Engpasses beizutragen" ausgeschrieben. Zurueckgenommen,
+nicht wieder aufnehmen: "Die Staffelung der kurzfristigen Maerkte macht den
+Zeitpunkt der Einplanung zu einem eigenen Produktmerkmal: ..." und "Im
+Selbstdispatch-Modell entsteht die Reservierung nur ueber eine Einplanung mit
+Verguetung und nicht ueber eine Anweisung, denn die Fahrplanhoheit liegt beim
+EIV."
+
+**2.1.2 und 2.2.2, Aussagen des Zwischenfazits im Koerper nachgezogen.**
+Rueckfrage des Verfassers: "kommt das im Text auch so rueber, also nicht hier,
+sondern da, wo es ausgearbeitet wird?" Befund: nein, beides stand nur halb.
+Ergaenzt in 2.1.2 (Einplanung): "Die Prognosen werden laufend aktualisiert,
+sodass die Unsicherheit ueber die Netzsituation von Rechenlauf zu Rechenlauf
+abnimmt. Die Einplanung wird deshalb umso verlaesslicher, je naeher der
+Rechenlauf am Lieferzeitpunkt liegt." nach van Leeuwen ("laufend aktualisiert",
+"mit der Zeit abnehmende Unsicherheit"), Beleg im Absatz vorhanden. Ergaenzt in
+2.2.2 (Engpassmanagement) nach dem Satz zum Eingriff ohne Gebot: "Am
+Engpassmanagement nimmt der EIV damit allein als Adressat einer Anordnung
+teil. Ein kurativer Marktmechanismus gaebe ihm die Moeglichkeit, mit seinem
+Fahrplan zur Behebung eines Engpasses beizutragen und dafuer verguetet zu
+werden." Folgerung ohne Beleg.
+
+Nachtrag 2.4, Verguetungsabsatz nach der Erzaehlung des Verfassers: "Engpassmanagement
+bzw. kostenbasierter Redispatch kennt nur die Anordnung zur Leistungsaenderung,
+nicht den Vorhalt. Damit hat ein marktlicher Akteur keine Anreize vorzuhalten,
+um im Fehlerfall den noetigen Zustand zu haben, deswegen muss eine
+Bereitschaft durch Vorhaltung verguetet werden, sofern sie dafuer andere
+Opportunitaeten nicht wahrnehmen koennen. Fuer Speicher gibt es schon einen
+Versuch durch die Bewertung einer entgangenen Erloesmoeglichkeit im Redispatch
+durch Anweisen vor Lieferzeitpunkt, verguetet aber nicht indifferent die
+zeitliche Option. Diese Vorhaltung kann deswegen nur durch den Anlagenbetreiber
+selber bestimmt werden, und das in einem Markt. Die Verguetung ist deswegen der
+Preis, der andere Opportunitaeten am Markt schlaegt. Ein Abruf ist getrennt zu
+betrachten." Acht Saetze in dieser Reihenfolge, "Anlagenbetreiber" als EIV,
+weil die Rolle den Fahrplan und das Gebot traegt. Zurueckgenommen, nicht
+wieder aufnehmen: die acht Saetze der Fassung vom selben Tag, darunter der Satz
+zum fehlenden Zugriff ueber die Planungsdaten und "Der Preis ist deshalb aus
+der Fahrplanoptimierung des Akteurs zu bestimmen".
+
 **Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund. Build sauber, 95
 Seiten, Kapitel 2 laeuft mit sieben Zeilen auf Seite 38, Kapitel 3 beginnt auf
 Seite 39; Ausgleich offen.
