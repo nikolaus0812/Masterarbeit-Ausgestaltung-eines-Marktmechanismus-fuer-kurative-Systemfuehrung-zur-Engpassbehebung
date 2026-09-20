@@ -1648,6 +1648,50 @@ nur noch ein Abstand von einer und von zwei Seiten.
 Pruefung als elfte Pruefung in tools/pruefen.py aufgenommen wird, hat der
 Verfasser noch nicht entschieden.
 
+### 20.09.2026, Einsatzverantwortlicher (EIV) als Marktrolle des kurativen Akteurs
+
+**Vorgabe des Verfassers.** "ich wuerde gerne den EIV einfuehren.
+Einsatzverantwortlichen statt Fahrplanverantwortlichen oder Anlagenbetreiber,
+gerne auch als Akronym hinzufuegen und auch beim ersten Mal erklaeren." Auf
+Rueckfrage zum Beleg und zur Abgrenzung: "einfach ohne Beleg einfuehren.
+Anlagenbetreiber ist letztendlich der, der den marktlichen Akteur betreibt, und
+der EIV der, der die Vermarktung in Echtzeit plant und den Fahrplan dadurch
+bestimmt, sich quasi nur um die Steuerung kuemmert."
+
+**Umsetzung.** Eintrag `\acro{EIV}{Einsatzverantwortlicher}` in
+extras/abbreviations.tex. Erstnennung in 1.1 im Absatz zum Marktdesign mit der
+Apposition "also die Marktrollen, die die Vermarktung einer Anlage planen und
+ihren Einsatz steuern". Die Erstnennung ist von Hand mit `\acs{EIV}` und
+`\acused{EIV}` gesetzt, weil die gebeugte Form "die Einsatzverantwortlichen"
+mit der Langform des Pakets nicht darstellbar ist; danach steht `\ac{EIV}`.
+Ersetzt sind "Fahrplanverantwortliche" in 1.1 und "Anlagenbetreiber" an neun
+Stellen, an denen die Rolle den Fahrplan, den Einsatz, die Zusage oder das Gebot
+traegt: 2.1.1 (Aufwand ohne Abruf), 2.1.2 (Abbildung der vier Phasen, Definition
+des kurativen Akteurs, Zusage eines Dritten), 2.1.3 (Zusage fuer eine fremde
+Anlage), 2.1.4 (Preis einer kurativen Bindung), 2.1.5 (Zusage ohne Verguetung),
+2.2 (Fahrplanbildung, Produkt, Sicht des EIV), 2.4 (Fahrplanhoheit) und die
+Einleitung von Kapitel 3 (Sicht des EIV).
+
+**Anlagenbetreiber bleibt** in 2.1.5 (Absatz 4 des Paragraphen 13a EnWG,
+Betriebsbereitschaftsauslagen) und in 2.3.1 (Duldung der Anordnung,
+Indifferenzgebot, ersparte Aufwendungen), weil Paragraph 13a EnWG und die
+Festlegung den Anspruch auf den finanziellen Ausgleich dem Betreiber der Anlage
+zuordnen. Eigenstaendige Abgrenzung durch Fable, dem Verfasser vorgelegt und
+angenommen. Die Anlage 1 der Festlegung unterscheidet beide Rollen selbst,
+naemlich "durch den Einsatzverantwortlichen uebermittelte KWEP-Meldung" und
+"durch den Anlagenbetreiber genutzte Leistung".
+
+**Offen.** Keine Quelle im Repository definiert den EIV, die Anlage 1 der
+Festlegung verwendet den Begriff nur. Die Definition stammt aus der Festlegung
+BK6-20-059 zum Redispatch 2.0, die nicht in literature.bib steht. Der Verfasser
+hat entschieden, den Begriff ohne Beleg einzufuehren. CLAUDE.md Abschnitt 5
+nennt "Akteur fuer den Marktteilnehmer" und muss den EIV noch aufnehmen; der
+Verfasser zieht CLAUDE.md selbst nach.
+
+**Geprueft.** Kapitel 1 endet weiterhin auf Seite 5, das Dokument hat 94
+Seiten. tools/pruefen.py --alle meldet allein den Altbefund in chapter_5.tex
+Zeile 91.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -6017,6 +6061,143 @@ Kapitel 1 dieselbe Vorwegnahme traegt.
 
 **Geprueft.** tools/pruefen.py fuer chapter_2.tex ohne Befund. Build mit biber
 und den beiden bekannten Referenzwarnungen, 94 Seiten.
+
+### 20.09.2026, 2.2 und 2.2.1 nach Kommentaren: Dispatch-Absatz kompakt, Abbildung 2.3, Intraday-Auktionen, Netzsicherheitsrechnung
+
+**Abbildung 2.3.** Vorgabe: "Abbildung 2.3 soll in Kapitel 2.2.1 nach dem
+Einleitungsabschnitt stehen." Im PDF stand sie als Top-Float ueber der
+Ueberschrift 2.2.1. Die Umgebung ist im Quelltext hinter den Einleitungsabsatz
+gezogen und traegt jetzt die Option H des Pakets float statt tbp. Nach allen
+Aenderungen dieser Sitzung beginnt der Einleitungsabsatz unten auf Seite 18 und
+endet oben auf Seite 19, die Abbildung folgt dort unmittelbar. Der Vermerk vom
+16.09.2026, wonach die Option h eine halbleere Seite erzeugte, ist durch den
+seither geaenderten Umbruch ueberholt.
+
+**Dispatch-Absatz neu gefasst.** Vorgaben: "das kann viel kompakter stehen mit
+weniger Ausschweifungen, einfach nur kurz erwaehnt, was was ist und was im
+jetzigen Rahmen warum gilt", "hier muss noch erwaehnt werden, wie sich die
+Systemdienstleistungen einfuegen: im Selbstdispatch-Modell wird versucht, so
+wenig wie moeglich Einfluss auf den Dispatch zu nehmen, im Zentraldispatch wird
+alles auf einmal gesetzt, dadurch waere es viel einfacher, SDL und kurative
+Massnahmen direkt einzuplanen", "das daneben stellen aus dem ersten Satz
+streichen", "nicht beim EIV beschaffen, sondern als Produkt dem EIV anbieten".
+Der Einleitungssatz von 2.2 und der Dispatch-Absatz bilden jetzt einen Absatz
+mit neun Saetzen, weil beide dieselbe Kernaussage tragen. Ein Satzanfang des
+Verfassers, "Ich wuerde noch ein.", ist unvollstaendig geblieben und nicht
+umgesetzt.
+
+**Zurueckgenommen, nicht wieder aufnehmen.**
+- "statt es daneben zu stellen" im Einleitungssatz, weil der Absatz danach
+  sagt, dass der UeNB die Systemdienstleistungen neben den Energiemaerkten
+  beschafft.
+- "Der UeNB benoetigt deshalb weder die Kostenkenntnis noch einen Zugriff auf
+  den Betriebspunkt, und der Redispatch ist im zonalen Marktdesign der
+  vorgesehene Korrekturmechanismus [oggioni_market_2013, newbery_market_2018]."
+- "Fuer den Redispatch ist er auf gemeldete Angaben angewiesen und greift im
+  Standardfall auf die Potenziale und Kostenansaetze zurueck, die die
+  Anlagenbetreiber im automatisierten Prozess der Kraftwerkseinsatzplanung
+  melden [bdew_branchenleitfaden_2018]." Ergaenzt am 19.09.2026, jetzt
+  gestrichen, weil die Meldung zum Redispatch gehoert und nicht zur Frage, warum
+  die kurative Vorhaltung beschafft werden muss.
+- "Die folgende Betrachtung setzt an der bestehenden Zonenaufteilung an, sodass
+  ein anderes Marktdesign eine neue Ausgestaltung des kurativen
+  Marktmechanismus erforderte." Entscheidung vom 14.09.2026 als Ersatz fuer den
+  gestrichenen Verweis auf 3.1, vom Verfasser am 20.09.2026 aufgehoben. Die
+  Einschraenkung auf die bestehende Zonenaufteilung steht damit nirgends mehr,
+  offener Punkt fuer Kapitel 5.
+- "und laesst ein zentrales Dispatch nur denjenigen Mitgliedstaaten, die es bei
+  Inkrafttreten der Verordnung bereits anwandten", gekuerzt auf "und nur wenige
+  Mitgliedstaaten haben ein zentrales Dispatch beibehalten".
+
+**Belege, an der Quelle geprueft.** EBGL Art. 2 Nr. 19: "integriertes
+Fahrplanerstellungsverfahren bezeichnet ein iteratives Verfahren, bei dem
+zumindest Gebote fuer das integrierte Fahrplanerstellungsverfahren
+beruecksichtigt werden, die gewerbliche Daten und komplexe technische Daten
+einzelner Gesamteinrichtungen zur Stromerzeugung oder Verbrauchsanlagen
+enthalten, wobei die Anfahreigenschaften, die neueste Leistungsbilanzanalyse
+fuer die Regelzone sowie die betrieblichen Sicherheitsgrenzwerte explizit als
+Eingabewerte verwendet werden". Das traegt "alles auf einmal". Die EBGL ist im
+Absatz einmal zitiert, Art. 14 Abs. 2 ist im Satz benannt, Stilregel 15. Die
+Binnenmarktverordnung steht am Satz mit den zwei Modellen, weil Art. 2 Nr. 29
+und 30 beide definieren. Meeus: "The self-dispatch model is more in line with
+the European target model and seen as the default in the EB GL", "A few
+countries still have a more centralized market model, which is often combined
+with central dispatch". Deutschland nennt Meeus nicht. Eigenstaendiger Befund:
+die fruehere Fassung "in Europa folgt dem Selbstdispatch der ueberwiegende Teil
+der Systeme einschliesslich Deutschlands [meeus]" war insoweit nicht gedeckt;
+jetzt "nur wenige Mitgliedstaaten", und dass Deutschland dem Selbstdispatch
+folgt, traegt 1.1. Fuer "so wenig Einfluss wie moeglich" gibt es keine Quelle
+im Wortlaut. Eigenstaendige Ableitung: formuliert als "greift in den Dispatch
+erst nachtraeglich ein, um Gefaehrdungen der Netzsicherheit zu beseitigen" nach
+Paragraph 13 Abs. 1 EnWG, der die Massnahmen des UeNB an die Beseitigung von
+Gefaehrdungen oder Stoerungen bindet.
+
+**Day-Ahead-Produktschnitt.** Wortlaut des Verfassers: "bis zum 1. Oktober als
+Stundenprodukt und seitdem als Viertelstundenprodukt". ffe_saegezahn_2026
+traegt beides ("von Stunden- auf Viertelstundenprodukte").
+
+**Intraday-Auktionen.** Vorgabe: "kurz erklaeren, dass auch durch 15-min-
+Handelsfenster viel dort gehandelt wurde, deswegen konnte dieser Shift zurueck
+durch die DA-Aenderung ueberhaupt passieren." Zwei neue Saetze nach dem
+IDA-3-Satz: "Die Intraday-Auktionen handeln Viertelstundenprodukte. Solange der
+DA nur Stundenprodukte kannte, glichen die EIV dort die Abweichung ihres
+Viertelstundenprofils vom Stundenwert aus [mahgoub_wie_2025]." Quelle: "Waehrend
+auf dem DA-Markt aktuell noch Produkte mit einer minimalen zeitlichen
+Granularitaet von einer Stunde gehandelt werden, koennen auf den
+Intraday-Maerkten Viertelstundenprodukte gehandelt werden. Dementsprechend
+werden auf dem Intraday-Markt auch Abweichungen des erwarteten Preisniveaus fuer
+jede Viertelstunde im Vergleich zum Stundenwert ausgeglichen." Das Mengenwort
+"viel" ist nicht uebernommen, weil Mahgoub die drei Auktionen auf rund 3 Prozent
+des Spotvolumens beziffert, Stilregel 8. Der Mahgoub-Beleg ist vom ersten
+Intraday-Satz zum neuen Satz verschoben, damit die Quelle im Absatz nur einmal
+steht. Der Folgesatz lautet jetzt "hat sich dieser Ausgleich zum Teil aus den
+Intraday-Auktionen in die Auktion des DA verlagert" statt "ein Teil des
+kurzfristigen Ausgleichs aus diesen Auktionen", Stilregel 5.
+
+**Netzsicherheitsrechnung.** Vorgabe: "Netzsicherheitsrechnung anhand von
+Messdaten und State Estimation aus den realen Fluessen aus dem Netz (pruefe auf
+Dopplung), und im Worst Case sieht er auch in laufenden
+Netzsicherheitsrechnungen Aenderungen des Fahrplans nicht mehr, was zu einer
+N-1-Verletzung fuehren kann. Weiss aber nicht, ob wir die Aussage hier
+platzieren wollen." Dopplungspruefung: die State Estimation ist in 2.1.2
+definiert ("also der aus Messwerten geschaetzten Netzsituation"), die Folge
+steht in 2.1.1 ("Netzzustaende aus Fahrplanaenderungen nach der letzten
+Vorschaurechnung kann der UeNB nur noch mit Mitteln ohne Vorlauf beheben").
+Eigenstaendige Entscheidung ueber die Platzierung, dem Verfasser zur Kenntnis:
+in 2.2.1 steht nur das Attribut "anhand der aus Messwerten geschaetzten
+Netzsituation" und ein Folgesatz mit Verweis auf 2.1.1, "Fuer eine Massnahme mit
+Vorlauf bleibt dann keine Zeit mehr, wie in Abschnitt 2.1.1 beschrieben". Der
+Ausdruck N-1-Verletzung ist nicht uebernommen, Stilregel 9. Alte Fassung, nicht
+wieder aufnehmen: "Aenderungen des Fahrplans nach dem letzten vorausschauenden
+Rechenlauf sieht der UeNB deshalb erst in der laufenden Netzsicherheitsrechnung."
+
+**2.2.2, Frequenzhaltung nicht das einzige Regime mit Verguetung einer
+Vorhaltung.** Kommentar des Verfassers: "das stimmt nicht. Schwarzstartfaehigkeit
+wird auch marktlich beschafft, jedoch sind die Regelleistungsmaerkte durch
+Wirkleistungslieferungen auch mit den Spotmaerkten verbunden,
+Schwarzstartfaehigkeit beschafft ja eine reine Faehigkeit. Ich will das aber
+nicht zu gross aufmachen." Quelle: Monitoringbericht 2025, S. 118,
+"Schwarzstartfaehigkeit bezeichnet die Faehigkeit eines Kraftwerks, nach einem
+vollstaendigen Stromausfall eigenstaendig wieder hochzufahren", "marktgestuetzte
+Beschaffung dieser nichtfrequenzgebundenen Systemdienstleistung", "Basierend auf
+Paragraph 12h Abs. 1 Nr. 5 EnWG verpflichtet die Festlegung [BK6-21-023] die
+Uebertragungsnetzbetreiber, die Schwarzstartfaehigkeit ... zu beschaffen".
+Erster Satz jetzt "Die Frequenzhaltung ist das einzige Regime mit einem Preis
+fuer die Vorhaltung von Wirkleistung, die sonst an den Energiemaerkten
+vermarktet wuerde." Neuer Satz nach der Schwarzstartfaehigkeit: "Die UeNB
+beschaffen die Schwarzstartfaehigkeit nach Paragraph 12h EnWG zwar
+marktgestuetzt und verguetigen damit ebenfalls eine Vorhaltung, beschafft wird
+aber eine Faehigkeit der Anlage und keine Wirkleistung [Monitoringbericht]."
+"Beide konkurrieren" ist zu "Spannungshaltung und Versorgungswiederaufbau
+konkurrieren" ausgeschrieben, weil der neue Satz dazwischen steht. Alte
+Fassung, nicht wieder aufnehmen: "Die Frequenzhaltung ist das einzige Regime,
+in dem eine Vorhaltung bereits einen Preis hat." Eigenstaendige Anmerkung: der
+Satz in 2.4 "Eine Verguetung vorgehaltener Leistung ist in der Regelleistung
+etabliert" bleibt richtig, weil er auf Leistung abstellt.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
+Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
+Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
 
 ## chapter_3.tex
 
