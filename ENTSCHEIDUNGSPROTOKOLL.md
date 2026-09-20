@@ -6195,6 +6195,18 @@ in dem eine Vorhaltung bereits einen Preis hat." Eigenstaendige Anmerkung: der
 Satz in 2.4 "Eine Verguetung vorgehaltener Leistung ist in der Regelleistung
 etabliert" bleibt richtig, weil er auf Leistung abstellt.
 
+**Nachtrag Blindleistung.** Rueckfrage des Verfassers: "wird
+Blindleistungserbringung nicht auch marktgestuetzt beschafft?" Ja. Paragraph 12h
+Abs. 1 Nr. 1 EnWG nennt "Dienstleistungen zur Spannungsregelung", der
+Monitoringbericht 2025 berichtet die Festlegung der BNetzA vom 25. Juni 2024
+"zur marktbasierten Beschaffung von Blindleistung" mit Standardprodukten,
+Anbieterauswahl und Verguetung. Der Satz zur Schwarzstartfaehigkeit war deshalb
+zu eng und lautet jetzt "Die UeNB beschaffen auch Blindleistung und
+Schwarzstartfaehigkeit nach Paragraph 12h EnWG marktgestuetzt und verguetigen
+damit eine Vorhaltung, die aber keine Wirkleistung bindet [Monitoringbericht]."
+Zurueckgenommen: "beschafft wird aber eine Faehigkeit der Anlage und keine
+Wirkleistung".
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
 Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
 Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
