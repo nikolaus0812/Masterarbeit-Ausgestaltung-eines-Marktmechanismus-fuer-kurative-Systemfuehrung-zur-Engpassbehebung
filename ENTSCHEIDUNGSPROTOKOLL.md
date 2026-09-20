@@ -6767,6 +6767,45 @@ Einplanung mit Verguetung und nicht ueber eine Anweisung herstellen, denn ...".
 Zugleich ist "kurative Verfuegbarkeit" durch "kurative Vorhaltung" ersetzt,
 offener Punkt aus der Uebergabe vom 19.09.2026, damit erledigt.
 
+**2.3.5 neu gefasst, Erzaehlung des Verfassers.** Kommentar: "2.3.5 kann noch
+kompakter formuliert werden, Aussagen extrahieren und praegnant formulieren",
+dann: "erst herausstellen, dass alle Maerkte lukrativ sein koennen, dann: es
+ist nicht immer so, Beispiel FCR und PQ, dann dazu uebergehen, dass Multi-Use
+der beste Weg ist, der Speicher sich anteilig zu den jeweiligen Zeitpunkten
+vermarktet und das hin- und herschiebt, wie lukrativ die Maerkte sind, und
+immer alle Maerkte braucht. Kurativ muss sich dort einfuegen, erstmal eine
+weitere Erloesmoeglichkeit im Multi-Use, muss sich aber gegen alle anderen
+Maerkte durchsetzen." Auf Rueckfrage ("sind diese Infos notwendig?")
+gestrichen: "Die Praequalifikationsbedingungen bemessen die anrechenbare
+Leistung nach dem Arbeitsvermoegen und den vorgesehenen
+Speichermanagementmassnahmen" (2.3.4 traegt es ueber die 15 und 60 Minuten)
+und die Optimierungsrechnung mit dem IDC-Handel zum Halten des Ladezustands
+(Illustration). Nach 2.2.2 verschoben als "Die fuer die Regelleistung
+bezuschlagte Leistung ist von der Aufforderung ausgenommen [Anlage 1]."
+Neun und vier Saetze statt acht und acht. Neue Saetze u. a.: "Jeder dieser
+Wege kann fuer sich lukrativ sein: Die Arbitrage lebt von der Preisspanne
+innerhalb des Tages [Mahgoub], und die Regelleistung verguetet die
+Vorhaltung, ohne dass ein Abruf eintreten muss.", "Lukrativ bleibt ein Weg
+aber nur, solange der Zulauf begrenzt ist, und fuer die FCR waren im Jahr 2024
+bereits 810 MW an BESS praequalifiziert, mehr als der gesamte deutsche Bedarf
+[Cortes].", "Die Regelleistungsmaerkte sind mengenmaessig begrenzt, sodass ein
+weiterer Zubau ueberwiegend in die Arbitrage draengt [Garttan]" (Satz wie in
+Kapitel 3), "Die kurative Vorhaltung fuegt sich in diese Mehrfachvermarktung
+als weiterer Weg ein: Sie eroeffnet eine zusaetzliche Erloesmoeglichkeit, muss
+sich aber gegen alle anderen Wege um dieselbe Leistung und denselben
+Ladezustand durchsetzen." Mahgoub: "profitieren BESS von einer hohen
+innertaegigen Preisvolatilitaet und hohen taeglichen Preisspreads". Entfallen
+sind der Verweis "deren Verguetung Abschnitt 2.3.4 darstellt" (Abschnitt als
+Subjekt) und die Dopplung der Arbitrage-Erklaerung. **Offen:** der Verfasser
+wuenscht einen Satz dazu, "wie gross die Moeglichkeit an Arbitrage tatsaechlich
+war"; keine lokale Quelle beziffert sie, der ISEA-Erloesindex (Erstnennung
+3.3.1, Quelltext lokal) koennte sie liefern, Entscheidung des Verfassers.
+
+Nachtrag 2.3.5: Entscheidung des Verfassers, keine Arbitragezahlen in 2.3.5
+("wir machen in Kapitel 3 ja noch den Abgleich mit dem Erloesindex"). Der
+offene Punkt zur Groesse der Arbitrage ist damit geschlossen, die Erstnennung
+des Erloesindex bleibt in 3.3.1.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 Build mit biber, zwei bekannte Referenzwarnungen, 94 Seiten. Abbildung 2.3
 weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.

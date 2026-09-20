@@ -1931,6 +1931,9 @@ Nach §\,13a \ac{EnWG} in der Fassung des Redispatch~2.0, die seit dem 1.\,Oktob
 % automatisierten KWEP-Prozesses (Kraftwerkseinsatzplanungsdaten) gemeldeten Redispatch-Potenziale und die dazu
 % gemeldeten Kostenansaetze zu". Quelle von 2018, vor dem Redispatch 2.0.
 Für die Auswahl der Anlagen greift der \ac{ÜNB} auf die Potenziale und Kostenansätze zurück, die die \ac{EIV} im automatisierten Prozess der Kraftwerkseinsatzplanung melden \cite{bdew_branchenleitfaden_2018}.
+% HIERHER aus 2.3.5 am 20.09.2026, Rahmenaussage zur Teilnahme am Redispatch. Alte Fassung in 2.3.5: "Die am
+% Regelleistungsmarkt bereitgestellte Leistungsscheibe wird dabei nicht fuer Redispatch-Massnahmen herangezogen."
+Die für die Regelleistung bezuschlagte Leistung ist von der Aufforderung ausgenommen \cite{bundesnetzagentur_anlage1_2024}.
 % GETRENNT am 20.09.2026, Vorgabe des Verfassers: "dann trenne pRD und die Lastflussberechnung DACF und
 % IDCF. Unter dem Tag werden ja auch nochmal pRD 3-5 irgendwann durchgefuehrt." Die Lastflussrechnungen
 % stehen jetzt als Grundlage, die Redispatchprozesse als Massnahmenbestimmung darauf. Die untertaegigen
@@ -2682,24 +2685,48 @@ Unmittelbar anwendbar ist die Beschaffungslogik der Regelleistung gleichwohl nic
 %Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
 % DEFINITION NACH 2.2.1 am 20.09.2026, siehe dort. Alte Fassung:
 %Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten, also das Einspeichern in Niedrigpreisphasen und das Ausspeichern in Hochpreisphasen, und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
-Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+% NEU GEFASST am 20.09.2026, Kommentar des Verfassers: "2.3.5 kann noch kompakter formuliert werden, Aussagen
+% extrahieren und praegnant formulieren" und zur Erzaehlung: "erst herausstellen, dass alle Maerkte lukrativ
+% sein koennen, dann: es ist nicht immer so, Beispiel FCR und PQ, dann dazu uebergehen, dass Multi-Use der
+% beste Weg ist, der Speicher sich anteilig zu den jeweiligen Zeitpunkten vermarktet und das hin- und
+% herschiebt, wie lukrativ die Maerkte sind, und immer alle Maerkte braucht. Kurativ muss sich dort einfuegen,
+% erstmal eine weitere Erloesmoeglichkeit im Multi-Use, muss sich aber gegen alle anderen Maerkte
+% durchsetzen." Auf Rueckfrage gestrichen: die Bemessung der anrechenbaren Leistung nach den PQ-Bedingungen
+% (steht in 2.3.4 ueber die 15 und 60 Minuten) und die Optimierungsrechnung mit dem IDC (Illustration). Die
+% Ausnahme der bezuschlagten Regelleistung vom Redispatch steht jetzt in 2.2.2. Eine Zahl zur Groesse der
+% Arbitrage fehlt, keine lokale Quelle traegt sie, der Erloesindex (Erstnennung 3.3.1) koennte sie liefern,
+% offen. Garttan-Satz wie in Kapitel 3. Cortes im ersten Absatz einmal. Alte Fassung, nicht wieder aufnehmen:
+%Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+%Die parallelen Vermarktungswege greifen dabei nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage. Der Umfang der parallel vermarktbaren Leistung ist deshalb begrenzt, und die Präqualifikationsbedingungen der Regelleistung bemessen die dort anrechenbare Leistung nach dem Arbeitsvermögen und den vorgesehenen Speichermanagementmaßnahmen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}. Die am Regelleistungsmarkt bereitgestellte Leistungsscheibe wird dabei nicht für Redispatch-Maßnahmen herangezogen \cite{bundesnetzagentur_anlage1_2024}. Wie eng die Wege zusammenhängen, zeigt eine Optimierungsrechnung für einen Speicher am deutschen Markt, in der der Handel im \ac{IDC} teilweise dazu dient, den Ladezustand in dem für die Regelleistung erforderlichen Bereich zu halten \cite{celi_cortes_m5use_2024}. Leistung und Speicherkapazität sind damit die knappen Ressourcen, um die alle Vermarktungswege konkurrieren, und eine kurative Vorhaltung erhebt darauf einen weiteren Anspruch.
+%Innerhalb des Ladezustandsbereichs, der nicht durch eine Vorhaltung gebunden ist, führt der marktoptimale Fahrplan den Ladezustand systematisch an dessen Ränder.
+%Der Grund liegt in der Arbitrage selbst, denn sie füllt den Speicher, wenn der Preis niedrig ist, und leert ihn, wenn der Preis hoch ist.
+%Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}.
+%Wie sich Leistung und Energieinhalt auf die einzelnen Märkte verteilen, ist dabei keine feste Größe.
+%Der Betreiber entscheidet im Selbst\-dispatch-Modell allein erlösorientiert und verschiebt die Anteile, sobald sich die relativen Preise zwischen Arbitrage und Regelleistung ändern.
+%Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede dieser Entscheidungen zudem unter Unsicherheit über die folgenden.
+%Was eine kurative Bindung den Betreiber kostet, hängt damit davon ab, welche Vermarktung er andernfalls gewählt hätte.
+%Diese Alternative wechselt mit den relativen Preisen.
 % ABSATZ VERBUNDEN 16.09.2026, C2.12.
-Die parallelen Vermarktungswege greifen dabei nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage. Der Umfang der parallel vermarktbaren Leistung ist deshalb begrenzt, und die Präqualifikationsbedingungen der Regelleistung bemessen die dort anrechenbare Leistung nach dem Arbeitsvermögen und den vorgesehenen Speichermanagementmaßnahmen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}. Die am Regelleistungsmarkt bereitgestellte Leistungsscheibe wird dabei nicht für Redispatch-Maßnahmen herangezogen \cite{bundesnetzagentur_anlage1_2024}. Wie eng die Wege zusammenhängen, zeigt eine Optimierungsrechnung für einen Speicher am deutschen Markt, in der der Handel im \ac{IDC} teilweise dazu dient, den Ladezustand in dem für die Regelleistung erforderlichen Bereich zu halten \cite{celi_cortes_m5use_2024}. Leistung und Speicherkapazität sind damit die knappen Ressourcen, um die alle Vermarktungswege konkurrieren, und eine kurative Vorhaltung erhebt darauf einen weiteren Anspruch.
-
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Innerhalb des Ladezustandsbereichs, der nicht durch eine Vorhaltung gebunden ist, führt der marktoptimale Fahrplan den Ladezustand systematisch an dessen Ränder, weil Arbitrage gerade darin besteht, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu leeren. Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}. Wie sich Leistung und Energieinhalt auf die einzelnen Märkte verteilen, ist dabei keine feste Größe. Der Betreiber entscheidet im Selbst\-dispatch-Modell allein erlösorientiert und verschiebt die Anteile, sobald sich die relativen Preise zwischen Arbitrage und Regelleistung ändern. Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft er jede dieser Entscheidungen zudem unter Unsicherheit über die folgenden. Was eine kurative Bindung den Betreiber kostet, hängt damit davon ab, welche Vermarktung er andernfalls gewählt hätte, und diese Alternative wechselt mit den relativen Preisen.
-Innerhalb des Ladezustandsbereichs, der nicht durch eine Vorhaltung gebunden ist, führt der marktoptimale Fahrplan den Ladezustand systematisch an dessen Ränder.
 % DURCHSICHT 16.09.2026, C1, Begruendung angebunden. Alte Fassung:
 %Arbitrage besteht gerade darin, den Speicher in Niedrigpreisphasen zu füllen und in Hochpreisphasen zu leeren.
 % DURCHSICHT 16.09.2026, Erklaerung steht jetzt bei der ersten Verwendung. Alte Fassung:
 %Der Grund liegt in der Arbitrage, die den Speicher in Niedrigpreisphasen füllt und in Hochpreisphasen leert.
-Der Grund liegt in der Arbitrage selbst, denn sie füllt den Speicher, wenn der Preis niedrig ist, und leert ihn, wenn der Preis hoch ist.
+Ein \ac{BESS} erwirtschaftet seine Erlöse aus mehreren Vermarktungswegen zugleich, vor allem aus der Arbitrage an den Spotmärkten und aus der Vorhaltung von Regelleistung.
+Jeder dieser Wege kann für sich lukrativ sein: Die Arbitrage lebt von der Preisspanne innerhalb des Tages \cite{mahgoub_wie_2025}, und die Regelleistung vergütet die Vorhaltung, ohne dass ein Abruf eintreten muss.
+Lukrativ bleibt ein Weg aber nur, solange der Zulauf begrenzt ist, und für die \ac{FCR} waren im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert, mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+Die Regelleistungsmärkte sind mengenmäßig begrenzt, sodass ein weiterer Zubau überwiegend in die Arbitrage drängt \cite{garttan_battery_2025}.
+Ein wirtschaftlich robuster Betrieb setzt deshalb die Mehrfachvermarktung voraus, in der Literatur als Multi-Use geführt.
+Der Betreiber vermarktet Leistung und Energieinhalt anteilig auf den Wegen, die zum jeweiligen Zeitpunkt am meisten einbringen, und verschiebt die Anteile mit den relativen Preisen.
+Die Wege greifen dabei auf dieselbe Leistung und denselben Energieinhalt derselben Anlage zu, sodass die parallel vermarktbare Leistung begrenzt ist.
+Die kurative Vorhaltung fügt sich in diese Mehrfachvermarktung als weiterer Weg ein: Sie eröffnet eine zusätzliche Erlösmöglichkeit, muss sich aber gegen alle anderen Wege um dieselbe Leistung und denselben Ladezustand durchsetzen.
+Welchen Anteil der Anlage ein Betreiber ihr widmet, hängt von den relativen Preisen ab und ist zu bestimmen.
+
+Innerhalb des ungebundenen Ladezustandsbereichs führt der marktoptimale Fahrplan den Ladezustand an dessen Ränder, denn die Arbitrage füllt den Speicher bei niedrigem Preis und leert ihn bei hohem.
 Ein netzdienlicher Beitrag lässt sich folglich nur über eine Anpassung der Einsatzplanung und nicht als nachgelagerter Eingriff erreichen \cite{lindner_operation_2023, sous_untersuchung_2022}.
-Wie sich Leistung und Energieinhalt auf die einzelnen Märkte verteilen, ist dabei keine feste Größe.
-Der Betreiber entscheidet im Selbst\-dispatch-Modell allein erlösorientiert und verschiebt die Anteile, sobald sich die relativen Preise zwischen Arbitrage und Regelleistung ändern.
-Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede dieser Entscheidungen zudem unter Unsicherheit über die folgenden.
-Was eine kurative Bindung den Betreiber kostet, hängt damit davon ab, welche Vermarktung er andernfalls gewählt hätte.
-Diese Alternative wechselt mit den relativen Preisen.
+Weil die Handelsgelegenheiten zeitlich versetzt liegen, trifft der Betreiber jede Vermarktungsentscheidung zudem unter Unsicherheit über die folgenden.
+Die Kosten einer kurativen Bindung hängen damit von der andernfalls gewählten Vermarktung ab, und diese Alternative wechselt mit den relativen Preisen.
 
 \section{Zwischenfazit}
 \label{sec:interim_conclusion}
