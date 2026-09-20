@@ -6677,6 +6677,96 @@ legen fest, wie der UeNB den Zugriff heute verguetet und womit eine kurative
 Vorhaltung bei einem BESS konkurriert." Zurueckgenommen: "Regime fuer
 Wirkleistung" und "fuer Wirkleistung zahlt".
 
+Nachtrag zur Einleitung 2.3: auf Kommentar des Verfassers ("das kommt doch erst
+in folgenden Abschnitten") sind die Saetze "Fuer Speicher bemisst die
+Festlegung dabei die entgangenen Erloesmoeglichkeiten, also den Wert der
+genommenen Vermarktung." und "Eine kurative Vorhaltung nimmt einem BESS
+ebenfalls Vermarktung, sodass die Bemessung der Festlegung der erste Massstab
+ist und ihre Grenzen bei einem BESS zu pruefen sind." gestrichen, nicht wieder
+aufnehmen. Neun Saetze.
+
+Nachtrag zur Einleitung 2.3: "Zugleich konkurriert die Regelleistung bei einem
+BESS um dieselbe Leistung und denselben Ladezustand wie eine kurative
+Vorhaltung, sodass ihre Verguetung den Verzicht eines BESS bemisst." auf
+Kommentar des Verfassers ("der Satz ist zwar richtig, aber gehoert nicht
+hierhin") gestrichen, Gegenstand von 2.3.5. Acht Saetze. Der Schlusssatz
+behaelt "als Alternative der Vermarktung" als Hinweis auf 2.3.5.
+
+**2.3.4, keine Auswahl unter den Produkten.** Kommentar des Verfassers: "schreibe
+nicht, dass die Preise niedriger waren, sondern dass mFRR und aFRR sich gleich
+verhalten. Ich will hier noch nicht unterscheiden, nur erklaeren, wie die
+Verguetungen funktionieren." Gestrichen, nicht wieder aufnehmen: "Fuer ein
+BESS sind von den drei Produkten die FCR und die aFRR von Belang, denn die mFRR
+bietet bei gleichem Produktschnitt den geringeren Leistungspreis.", der Satz
+mit den Leistungspreisen 2025 (mFRR 5 und 11, aFRR 18 und 16 Euro je Megawatt
+und Stunde, analysen/mfrr_leistungspreise) und "Die mFRR bleibt deshalb im
+Weiteren ausser Betracht." Der Absatz beginnt jetzt mit "Anders als das
+Engpassmanagement verguetet die Regelleistung die Vorhaltung selbst", nennt
+den Arbeitspreis fuer aFRR und mFRR und stellt fest: "Die aFRR und die mFRR
+folgen dabei derselben Verguetungslogik, sodass die Darstellung der aFRR im
+Folgenden fuer beide gilt." Die 60 Minuten Arbeitsvermoegen gelten nach den
+PQ-Bedingungen "im Falle der FRR", also fuer aFRR und mFRR, der Satz nennt jetzt
+beide. **Offen:** Die Beschraenkung des Modells auf FCR und aFRR und die
+Leistungspreise 2025 als Begruendung stehen damit nirgends mehr im Text und
+sind fuer Kapitel 3 vorzumerken; die Entscheidung vom 15.09.2026, die Abgrenzung
+der mFRR nach 2.3.4 zu verschieben, ist damit ueberholt.
+
+**2.3.4, Zuschlagsverfahren der Leistungspreise.** Kommentar des Verfassers: "wir
+sagen jetzt zwar, wie Arbeit verguetet wird, aber nicht, wie Leistung verguetet
+wird, was ja auch unterschiedlich ist. Das wuerde ich zu Anfang direkt machen,
+dass es dort nach dem pay-as-bid-Verfahren geht." Neuer zweiter Satz: "Den
+Leistungspreis erhaelt der Anbieter bei der aFRR und der mFRR nach dem
+Gebotspreisverfahren, also in Hoehe seines eigenen Gebots, bei der FCR nach dem
+Grenzpreisverfahren zum Preis des teuersten bezuschlagten Gebots
+[regelleistung.net]." Eigenstaendige Abweichung vom Kommentar: pay-as-bid gilt
+nach Kenntnis von Fable nur fuer aFRR und mFRR, die FCR wird seit 2019 zum
+Grenzpreis verguetet; die Jahreszahl steht nicht im Text. **Offen und vom
+Verfasser zu pruefen:** keine lokale Quelle traegt das Verfahren, der
+Monitoringbericht sagt nur "Bezuschlagung und Verguetung erfolgen auf Basis
+des Leistungspreises"; der Beleg regelleistung_ausschreibungsdaten_2026 ist im
+Netz von Fable nicht pruefbar. Begriffe nach dem Monitoringbericht
+(Gebotspreisverfahren = pay as bid) und der EBGL (Grenzpreisverfahren = pay as
+cleared).
+
+**2.3.4, Schlussabsatz ohne Aufzaehlung.** Kommentar des Verfassers: "ich finde,
+man muss das gar nicht aufzaehlen, sondern kann die Zusammenfassung eher
+kompakt schreiben." Vier Saetze statt sieben: "Fuer den kurativen
+Marktmechanismus liefert die Regelleistung damit die Form: Sie verguetet
+vorgehaltene und ueberwiegend nicht abgerufene Leistung in einem
+wettbewerblichen Verfahren, bepreist Vorhaltung und Abruf getrennt und bindet
+bei Speichern einen Ladezustandsbereich ueber eine feste Erbringungsperiode.
+Eine kurative Zusage hat dieselbe Struktur, denn sie besteht ueber die gesamte
+Bindungsdauer bei einem Abruf allein im Fehlerfall. Die Bindung eines
+Ladezustandsbereichs ist damit keine Besonderheit des kurativen
+Marktmechanismus, sondern Bestandteil eines bestehenden Produkts. Unmittelbar
+anwendbar ist die Beschaffungslogik der Regelleistung gleichwohl nicht, weil
+sie keinen Bezug zum Netzknoten kennt." Zurueckgenommen: die Fassung mit
+erstens, zweitens, drittens, darunter "Die aFRR zeigt zudem, dass sich die
+Gebotspflicht auf die bezuschlagte Leistung beschraenken laesst, ohne den
+Zugang zum Abruf zu verengen." (2.2.2 traegt die Gebotspflicht).
+
+**Arbitrage nach 2.2.1, BESS erst ab 2.3.5.** Kommentar des Verfassers: "ich wuerde gerne in 2.3.5 den Bezug zu den BESS herstellen und gucken, dass es davor nicht passiert. Arbitrage wuerde ich aber schon bei den Handelsgelegenheiten sehen, wuesste es aber auch nicht einzuordnen."
+Die Definition der Arbitrage steht jetzt am Ende des IDC-Absatzes in 2.2.1:
+"Ein Speicher nutzt die Preisunterschiede zwischen diesen Handelsgelegenheiten
+fuer die Arbitrage, also das Einspeichern in Niedrigpreisphasen und das
+Ausspeichern in Hochpreisphasen." In 2.3.5 heisst es nur noch "die Arbitrage
+auf den Spotmaerkten und die Vorhaltung von Regelleistung", die Erklaerung
+"also das Einspeichern ..." ist dort entfallen. Damit ist der Ort der
+Definition in CLAUDE.md Abschnitt 5 (2.3.5 Absatz 1) ueberholt, der Verfasser
+zieht CLAUDE.md nach. Vor 2.3.5 sind die drei BESS-Nennungen von heute
+verallgemeinert: 2.2.2 "Fuer die Fahrplanbildung eines kurativen Akteurs" statt
+"eines BESS", "Bei einem Speicher kann die Blindleistung ..." statt "Fuer ein
+BESS", Einleitung 2.3 "bei einem Akteur konkurriert" statt "bei einem BESS".
+Die Speicher- und BESS-Nennungen in 2.3.1, 2.3.3 und 2.3.4 bleiben, weil sie
+den Gegenstand der Festlegung und der Praequalifikation betreffen.
+
+**2.4, Einplanung mit Verguetung.** Kommentar des Verfassers: "Selbstdispatch-Modell
+nur ueber einen Preis zu: eine Einplanung mit Verguetung". Der Satz lautet jetzt
+"Die kurative Vorhaltung laesst sich im Selbstdispatch-Modell nur ueber eine
+Einplanung mit Verguetung und nicht ueber eine Anweisung herstellen, denn ...".
+Zugleich ist "kurative Verfuegbarkeit" durch "kurative Vorhaltung" ersetzt,
+offener Punkt aus der Uebergabe vom 19.09.2026, damit erledigt.
+
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 Build mit biber, zwei bekannte Referenzwarnungen, 94 Seiten. Abbildung 2.3
 weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.

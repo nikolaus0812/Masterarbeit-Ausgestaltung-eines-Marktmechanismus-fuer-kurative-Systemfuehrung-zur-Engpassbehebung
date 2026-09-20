@@ -1597,6 +1597,10 @@ Mit der Umstellung des Produktschnitts hat sich dieser Ausgleich zum Teil aus de
 Den Abschluss bildet der \ac{IDC}, der mit der ersten Intraday-Auktion einsetzt, jedes Geschäft zum zwischen den Parteien vereinbarten Preis abrechnet und die Anpassung bis zum Handelsschluss offenhält.
 Der Handelsschluss tritt gestaffelt ein, nämlich 60 Minuten vor Lieferbeginn für den grenzüberschreitenden Handel und an der EPEX SPOT 30 Minuten für den Handel zwischen den Regelzonen und 5 Minuten für den regelzoneninternen Handel \cite{bundesnetzagentur_smard_grosshandelspreise_2026}.
 Das Preisniveau des \ac{IDC} bilden der \ac{ID3} und der \ac{ID1} ab, die beide volumengewichtet sind.
+% ERGAENZT am 20.09.2026. Kommentar des Verfassers: "ich wuerde gerne in 2.3.5 den Bezug zu den BESS herstellen und gucken, dass es davor nicht passiert. Arbitrage wuerde ich aber schon bei den Handelsgelegenheiten sehen, wuesste es aber auch nicht einzuordnen."
+% Definition der Arbitrage hierher aus 2.3.5 gezogen, Erstnennung am Ende der Handelsgelegenheiten, Subjekt
+% Speicher statt BESS, weil das BESS erst in 2.3.5 eingefuehrt werden soll.
+Ein Speicher nutzt die Preisunterschiede zwischen diesen Handelsgelegenheiten für die Arbitrage, also das Einspeichern in Niedrigpreisphasen und das Ausspeichern in Hochpreisphasen.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G31, Q2, Q14. Sechs Saetze auf drei.
@@ -1727,7 +1731,9 @@ Für eine Maßnahme mit Vorlauf bleibt dann keine Zeit mehr, wie in Abschnitt~\r
 %Beide konkurrieren deshalb nicht mit der Vermarktung von Wirkleistung an den Energiemärkten.
 % HIERHER VERSCHOBEN 16.09.2026, C1, vor die Konsequenz.
 Neben den Energiemärkten beschaffen die \ac{ÜNB} Systemdienstleistungen, die sich üblicherweise in Frequenzhaltung, Spannungshaltung, Betriebsführung und Versorgungswiederaufbau gliedern.
-Für die Fahrplanbildung eines \ac{BESS} ist davon die Frequenzhaltung maßgeblich, weil sie dasselbe Wirkleistungsband beansprucht wie die Vermarktung an den Energiemärkten.
+% VERALLGEMEINERT am 20.09.2026, BESS erst in 2.3.5. Kommentar des Verfassers: "ich wuerde gerne in 2.3.5 den Bezug zu den BESS herstellen und gucken, dass es davor nicht passiert. Arbitrage wuerde ich aber schon bei den Handelsgelegenheiten sehen, wuesste es aber auch nicht einzuordnen." Alte Fassung:
+%Für die Fahrplanbildung eines \ac{BESS} ist davon die Frequenzhaltung maßgeblich, weil sie dasselbe Wirkleistungsband beansprucht wie die Vermarktung an den Energiemärkten.
+Für die Fahrplanbildung eines kurativen Akteurs ist davon die Frequenzhaltung maßgeblich, weil sie dasselbe Wirkleistungsband beansprucht wie die Vermarktung an den Energiemärkten.
 Auch die Betriebsführung greift auf die Wirkleistung zu, und zu ihr zählen das Engpassmanagement und die kurative Vorhaltung.
 Die Spannungshaltung wird über Blindleistung erbracht, und der Versorgungswiederaufbau beruht auf der Schwarzstartfähigkeit einzelner Anlagen.
 Die \ac{ÜNB} beschaffen Blindleistung und Schwarzstartfähigkeit nach §\,12h \ac{EnWG} marktgestützt und vergüten damit ebenfalls eine Vorhaltung \cite{bundesnetzagentur_monitoringbericht_2026}.
@@ -1736,7 +1742,9 @@ Die \ac{ÜNB} beschaffen Blindleistung und Schwarzstartfähigkeit nach §\,12h \
 % gestrichen, die Zuordnung im Satz davor berichtigt. Alte Fassung, nicht wieder aufnehmen:
 %Für ein \ac{BESS} können Blindleistung und Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
 %Beide Dienstleistungen bleiben im Weiteren dennoch außer Betracht, weil ihre marktgestützte Beschaffung erst anläuft und das Leistungsband des \ac{BESS} nicht bindet.
-Für ein \ac{BESS} kann die Blindleistung einen Teil der Umrichterleistung und die Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
+% VERALLGEMEINERT am 20.09.2026, BESS erst in 2.3.5. Alte Fassung:
+%Für ein \ac{BESS} kann die Blindleistung einen Teil der Umrichterleistung und die Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
+Bei einem Speicher kann die Blindleistung einen Teil der Umrichterleistung und die Schwarzstartfähigkeit einen Teil des Ladezustands beanspruchen.
 Beide Dienstleistungen bleiben im Weiteren dennoch außer Betracht, weil ihre marktgestützte Beschaffung erst anläuft.
 In der Frequenzhaltung wird dagegen ein Band an Wirkleistung über einen Zeitraum reserviert, und die Bereitstellung selbst wird vergütet \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Die Frequenzhaltung ist damit das Regime, dessen Beschaffung der kurativen Vorhaltung in der Form am nächsten kommt.
@@ -2044,14 +2052,20 @@ Zur Ausgestaltung eines kurativen Marktmechanismus gehört die Frage, wie die ku
 %Den Rahmen dafür geben die beiden bestehenden Regime für Wirkleistung vor, nämlich das Engpassmanagement und die Regelleistung.
 %Engpassmanagement und Regelleistung legen fest, wie der \ac{ÜNB} heute für Wirkleistung zahlt und womit eine kurative Vorhaltung bei einem \ac{BESS} konkurriert.
 Den Rahmen dafür geben die beiden bestehenden Regime vor, in denen der \ac{ÜNB} auf die Leistung von Anlagen zugreift, nämlich das Engpassmanagement und die Regelleistung.
-Engpassmanagement und Regelleistung legen fest, wie der \ac{ÜNB} den Zugriff heute vergütet und womit eine kurative Vorhaltung bei einem \ac{BESS} konkurriert.
+% VERALLGEMEINERT am 20.09.2026, BESS erst in 2.3.5. Alte Fassung:
+%Engpassmanagement und Regelleistung legen fest, wie der \ac{ÜNB} den Zugriff heute vergütet und womit eine kurative Vorhaltung bei einem \ac{BESS} konkurriert.
+Engpassmanagement und Regelleistung legen fest, wie der \ac{ÜNB} den Zugriff heute vergütet und womit eine kurative Vorhaltung bei einem Akteur konkurriert.
 Das Engpassmanagement ist das Regime, zu dem die kurative Vorhaltung der Sache nach gehört.
 Der \ac{ÜNB} ordnet dort den Redispatch an und gleicht ihn auf Kostenbasis nach dem Indifferenzprinzip aus, das den Anlagenbetreiber weder besser noch schlechter stellen soll als ohne die Maßnahme.
-Für Speicher bemisst die Festlegung dabei die entgangenen Erlösmöglichkeiten, also den Wert der genommenen Vermarktung.
-Eine kurative Vorhaltung nimmt einem \ac{BESS} ebenfalls Vermarktung, sodass die Bemessung der Festlegung der erste Maßstab ist und ihre Grenzen bei einem \ac{BESS} zu prüfen sind.
+% GESTRICHEN am 20.09.2026, Kommentar des Verfassers: "das kommt doch erst in folgenden Abschnitten."
+% Vorwegnahme von 2.3.1 bis 2.3.3. Nicht wieder aufnehmen:
+%Für Speicher bemisst die Festlegung dabei die entgangenen Erlösmöglichkeiten, also den Wert der genommenen Vermarktung.
+%Eine kurative Vorhaltung nimmt einem \ac{BESS} ebenfalls Vermarktung, sodass die Bemessung der Festlegung der erste Maßstab ist und ihre Grenzen bei einem \ac{BESS} zu prüfen sind.
 Die Regelleistung gleicht der kurativen Vorhaltung dagegen der Form nach.
 Der \ac{ÜNB} beschafft sie im Wettbewerb und vergütet die Vorhaltung selbst über einen Leistungspreis.
-Zugleich konkurriert die Regelleistung bei einem \ac{BESS} um dieselbe Leistung und denselben Ladezustand wie eine kurative Vorhaltung, sodass ihre Vergütung den Verzicht eines \ac{BESS} bemisst.
+% GESTRICHEN am 20.09.2026, Kommentar des Verfassers: "der Satz ist zwar richtig, aber gehoert nicht hierhin."
+% Der Wettbewerb um Leistung und Ladezustand ist Gegenstand von 2.3.5. Nicht wieder aufnehmen:
+%Zugleich konkurriert die Regelleistung bei einem \ac{BESS} um dieselbe Leistung und denselben Ladezustand wie eine kurative Vorhaltung, sodass ihre Vergütung den Verzicht eines \ac{BESS} bemisst.
 Beide Regime liefern damit die Grundlagen für die Vergütung im kurativen Marktmechanismus, das Engpassmanagement als Maßstab der Bemessung und die Regelleistung als Form der Beschaffung und als Alternative der Vermarktung.
 
 \subsection{Vergütung von Redispatch-Maßnahmen}
@@ -2539,16 +2553,30 @@ Erst daraus folgt, was eine Bindung dieser Flexibilität kostet.
 %Drittens ist die Bindung eines Ladezustandsbereichs über eine feste Erbringungsperiode bereits Bestandteil eines bestehenden Produkts und keine Besonderheit des kurativen Marktmechanismus.
 %Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung nicht unmittelbar anwendbar, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
 % ERGAENZT am 15.09.2026 auf Vorgabe des Verfassers, Abgrenzung der mFRR aus 2.2.3 hierher verschoben. Zahlen aus analysen/mfrr_leistungspreise, eigene Auswertung der Ausschreibungsergebnisse 2025.
-Für ein \ac{BESS} sind von den drei Produkten die \ac{FCR} und die \ac{aFRR} von Belang, denn die \ac{mFRR} bietet bei gleichem Produktschnitt den geringeren Leistungspreis.
+% NEU GEORDNET am 20.09.2026, Kommentar des Verfassers: "schreibe nicht, dass die Preise niedriger waren,
+% sondern dass mFRR und aFRR sich gleich verhalten. Ich will hier noch nicht unterscheiden, nur erklaeren,
+% wie die Verguetungen funktionieren." Die Auswahl FCR und aFRR fuer das BESS und die Leistungspreise 2025
+% (analysen/mfrr_leistungspreise: mFRR 5 und 11, aFRR 18 und 16 Euro je Megawatt und Stunde) sind hier
+% gestrichen und fuer Kapitel 3 vorgemerkt, offener Punkt. Alte Fassung, nicht wieder aufnehmen:
+%Für ein \ac{BESS} sind von den drei Produkten die \ac{FCR} und die \ac{aFRR} von Belang, denn die \ac{mFRR} bietet bei gleichem Produktschnitt den geringeren Leistungspreis.
+%Im Jahr 2025 lag der mittlere Leistungspreis der \ac{mFRR} nach eigener Auswertung der Ausschreibungsergebnisse bei 5\,\EurMWh{} in positiver und 11\,\EurMWh{} in negativer Richtung, der der \ac{aFRR} bei 18\,\EurMWh{} und 16\,\EurMWh{} \cite{regelleistung_ausschreibungsdaten_2026}.
+%Die \ac{mFRR} bleibt deshalb im Weiteren außer Betracht.
 % EINHEIT ALS SYMBOL am 17.09.2026, Kommentar des Verfassers. Alte Fassung:
 %Im Jahr 2025 lag der mittlere Leistungspreis der \ac{mFRR} nach eigener Auswertung der Ausschreibungsergebnisse bei 5 Euro je Megawatt und Stunde in positiver und 11 Euro je Megawatt und Stunde in negativer Richtung, der der \ac{aFRR} bei 18 Euro je Megawatt und Stunde und 16 Euro je Megawatt und Stunde \cite{regelleistung_ausschreibungsdaten_2026}.
-Im Jahr 2025 lag der mittlere Leistungspreis der \ac{mFRR} nach eigener Auswertung der Ausschreibungsergebnisse bei 5\,\EurMWh{} in positiver und 11\,\EurMWh{} in negativer Richtung, der der \ac{aFRR} bei 18\,\EurMWh{} und 16\,\EurMWh{} \cite{regelleistung_ausschreibungsdaten_2026}.
 % GESTRICHEN am 15.09.2026 auf Vorgabe des Verfassers, der Erloesindex ist erst in 3.3.1 eingefuehrt. Nicht wieder aufnehmen:
 %Der Erlösindex, der die Erlöse von \ac{BESS} am deutschen Markt ausweist, führt die \ac{mFRR} ebenfalls nicht \cite{isea_methodik_2026}.
-Die \ac{mFRR} bleibt deshalb im Weiteren außer Betracht.
 % ABSATZ VERBUNDEN 16.09.2026, C2.11.
 Anders als das Engpassmanagement vergütet die Regelleistung die Vorhaltung selbst, und zwar über den Leistungspreis für die zugesagte Leistung.
-Bei der \ac{aFRR} tritt für die tatsächlich abgerufene Arbeit ein Arbeitspreis hinzu, während die \ac{FCR} ohne gesonderte Arbeitsvergütung auskommt.
+% ERGAENZT am 20.09.2026, Kommentar des Verfassers: "wir sagen jetzt zwar, wie Arbeit verguetet wird, aber
+% nicht, wie Leistung verguetet wird, was ja auch unterschiedlich ist. Das wuerde ich zu Anfang direkt machen,
+% dass es dort nach dem pay-as-bid-Verfahren geht." Differenziert, weil die FCR nach Kenntnis von Fable seit
+% 2019 zum Grenzpreis der Auktion verguetet wird und nur aFRR und mFRR nach Gebotspreis. Keine lokale Quelle
+% traegt das Verfahren, der Monitoringbericht sagt nur "Bezuschlagung und Verguetung erfolgen auf Basis des
+% Leistungspreises". Beleg regelleistung.net wie bei den Handelsschlusszeiten, vom Verfasser zu pruefen.
+% Begriffe wie im Monitoringbericht: Gebotspreisverfahren (pay as bid), Grenzpreisverfahren (pay as cleared).
+Den Leistungspreis erhält der Anbieter bei der \ac{aFRR} und der \ac{mFRR} nach dem Gebotspreisverfahren, also in Höhe seines eigenen Gebots, bei der \ac{FCR} nach dem Grenzpreisverfahren zum Preis des teuersten bezuschlagten Gebots \cite{regelleistung_ausschreibungsdaten_2026}.
+Bei der \ac{aFRR} und der \ac{mFRR} tritt für die tatsächlich abgerufene Arbeit ein Arbeitspreis hinzu, während die \ac{FCR} ohne gesonderte Arbeitsvergütung auskommt.
+Die \ac{aFRR} und die \ac{mFRR} folgen dabei derselben Vergütungslogik, sodass die Darstellung der \ac{aFRR} im Folgenden für beide gilt.
 % UMBAU am 20.09.2026, Vorgabe des Verfassers: "ich wollte im Kapitel 2.2.1 die Zeitschienen haben ... fuege die Zeitschienen fuer Regelleistung und Redispatch in 2.2.1 ein und versuche, so wenig wie moeglich darauf in 2.2.2 einzugehen. 2.2.2 soll eher erklaeren, was dort gemacht wird, wie der Rahmen ist, wofuer und wer daran teilnimmt, aber so wenig wie moeglich Verguetung."
 % Rahmenaussage, Plattform PICASSO steht in 2.2.2 beim Abruf. Nicht wieder aufnehmen:
 %Der Arbeitspreis der \ac{aFRR} entsteht nicht in einer Auktion des Vortages, sondern über die europäische Plattform PICASSO, auf der seit dem Jahr 2022 \ac{aFRR}-Regelarbeit ausgetauscht wird \cite{bundesnetzagentur_monitoringbericht_2026}.
@@ -2598,18 +2626,29 @@ Der Speicher muss seinen Ladezustand deshalb über die gesamte Erbringungsperiod
 % belegt, Stilregel 15. HINWEIS: bundesnetzagentur_beschluss_2019 wird damit nirgends mehr
 % zitiert, der Eintrag in literature.bib bleibt vorerst stehen. Alte Fassung:
 %Bei der \ac{FCR} muss der Speicher die zugesagte Leistung mindestens 15 Minuten durchgehend vollständig erbringen können \cite{bundesnetzagentur_beschluss_2019}, bei der \ac{aFRR} 60 Minuten bezogen auf die vermarktete Leistung.
-Bei der \ac{FCR} muss der Speicher ein Arbeitsvermögen von mindestens 15 Minuten bezogen auf die präqualifizierte Leistung vorhalten \cite{europaische_kommission_verordnung_2017}, bei der \ac{aFRR} von 60 Minuten bezogen auf die vermarktete Leistung.
+% ERGAENZT am 20.09.2026 um die mFRR, PQ-Bedingungen 2024: "Im Falle der FRR betraegt das minimale
+% Arbeitsvermoegen des Energiespeichers relativ zur Vermarktbaren Leistung 60 Minuten." Alte Fassung:
+%Bei der \ac{FCR} muss der Speicher ein Arbeitsvermögen von mindestens 15 Minuten bezogen auf die präqualifizierte Leistung vorhalten \cite{europaische_kommission_verordnung_2017}, bei der \ac{aFRR} von 60 Minuten bezogen auf die vermarktete Leistung.
+Bei der \ac{FCR} muss der Speicher ein Arbeitsvermögen von mindestens 15 Minuten bezogen auf die präqualifizierte Leistung vorhalten \cite{europaische_kommission_verordnung_2017}, bei der \ac{aFRR} und der \ac{mFRR} von 60 Minuten bezogen auf die vermarktete Leistung.
 Ein Speicher mit einem Energieinhalt je Leistung von einer Stunde bindet damit bei der \ac{aFRR} seinen gesamten Energieinhalt für die zugesagte Leistung.
 
-Für den kurativen Marktmechanismus ist daran dreierlei bedeutsam.
-Erstens belegt die \ac{FCR}, dass die Vergütung vorgehaltener und überwiegend nicht abgerufener Leistung regulatorisch etabliert und wettbewerblich organisierbar ist.
-Zweitens zeigt die \ac{aFRR}, dass sich Vorhaltung und Abruf getrennt bepreisen lassen.
-Eine kurative Zusage hat dieselbe Struktur, denn sie besteht über die gesamte Bindungsdauer und ein Abruf erfolgt nur im Fehlerfall.
-Die \ac{aFRR} zeigt zudem, dass sich die Gebotspflicht auf die bezuschlagte Leistung beschränken lässt, ohne den Zugang zum Abruf zu verengen.
-Drittens ist die Bindung eines Ladezustandsbereichs über eine feste Erbringungsperiode bereits Bestandteil eines bestehenden Produkts und keine Besonderheit des kurativen Marktmechanismus.
+% KOMPAKT am 20.09.2026, Kommentar des Verfassers: "ich finde, man muss das gar nicht aufzaehlen, sondern kann
+% die Zusammenfassung eher kompakt schreiben." Aufzaehlung erstens bis drittens aufgeloest, vier Saetze statt
+% sieben. Entfallen ist das Detail zur Gebotspflicht am Regelarbeitsmarkt, das 2.2.2 traegt. Alte Fassung,
+% nicht wieder aufnehmen:
+%Für den kurativen Marktmechanismus ist daran dreierlei bedeutsam.
+%Erstens belegt die \ac{FCR}, dass die Vergütung vorgehaltener und überwiegend nicht abgerufener Leistung regulatorisch etabliert und wettbewerblich organisierbar ist.
+%Zweitens zeigt die \ac{aFRR}, dass sich Vorhaltung und Abruf getrennt bepreisen lassen.
+%Eine kurative Zusage hat dieselbe Struktur, denn sie besteht über die gesamte Bindungsdauer und ein Abruf erfolgt nur im Fehlerfall.
+%Die \ac{aFRR} zeigt zudem, dass sich die Gebotspflicht auf die bezuschlagte Leistung beschränken lässt, ohne den Zugang zum Abruf zu verengen.
+%Drittens ist die Bindung eines Ladezustandsbereichs über eine feste Erbringungsperiode bereits Bestandteil eines bestehenden Produkts und keine Besonderheit des kurativen Marktmechanismus.
+%Die Beschaffungslogik der Regelleistung ist auf die kurative Vorhaltung nicht unmittelbar anwendbar, weil sie keinen Bezug zum Netzknoten kennt, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
 % DURCHSICHT 16.09.2026, C1, Grund im Absatz. Alte Fassung:
 %Die Beschaffungslogik der Regelleistung ist damit auf die kurative Vorhaltung nicht unmittelbar anwendbar, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
-Die Beschaffungslogik der Regelleistung ist auf die kurative Vorhaltung nicht unmittelbar anwendbar, weil sie keinen Bezug zum Netzknoten kennt, liefert aber die Form, an der sich der kurative Marktmechanismus orientieren kann.
+Für den kurativen Marktmechanismus liefert die Regelleistung damit die Form: Sie vergütet vorgehaltene und überwiegend nicht abgerufene Leistung in einem wettbewerblichen Verfahren, bepreist Vorhaltung und Abruf getrennt und bindet bei Speichern einen Ladezustandsbereich über eine feste Erbringungsperiode.
+Eine kurative Zusage hat dieselbe Struktur, denn sie besteht über die gesamte Bindungsdauer bei einem Abruf allein im Fehlerfall.
+Die Bindung eines Ladezustandsbereichs ist damit keine Besonderheit des kurativen Marktmechanismus, sondern Bestandteil eines bestehenden Produkts.
+Unmittelbar anwendbar ist die Beschaffungslogik der Regelleistung gleichwohl nicht, weil sie keinen Bezug zum Netzknoten kennt.
 
 % TABELLE ENTFALLEN am 15.09.2026, Kuerzung A3. Die Bemessung steht als Spalte in tab:regelleistung. Alte Fassung:
 %\begin{table}[htbp]
@@ -2641,7 +2680,9 @@ Die Beschaffungslogik der Regelleistung ist auf die kurative Vorhaltung nicht un
 %Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren, während der gesamte deutsche Bedarf bei 564\,\si{MW} lag \cite{celi_cortes_m5use_2024}.
 % DURCHSICHT 16.09.2026, Befund des Verfassers: Arbitrage bei der ersten Verwendung erklaert. Alte Fassung:
 %Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
-Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten, also das Einspeichern in Niedrigpreisphasen und das Ausspeichern in Hochpreisphasen, und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+% DEFINITION NACH 2.2.1 am 20.09.2026, siehe dort. Alte Fassung:
+%Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten, also das Einspeichern in Niedrigpreisphasen und das Ausspeichern in Hochpreisphasen, und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
+Ein \ac{BESS} erwirtschaftet seine Erlöse nicht aus einer einzelnen Anwendung, sondern aus mehreren parallelen Vermarktungswegen. Die beiden Hauptquellen sind die Arbitrage auf den Spotmärkten und die Vorhaltung von Regelleistung, deren Vergütung Abschnitt~\ref{sec:balancing_procurement} darstellt. Die gleichzeitige Nutzung mehrerer Wege, im Folgenden als Mehrfachvermarktung bezeichnet und in der Literatur als Multi-Use geführt, gilt als Voraussetzung eines wirtschaftlich robusten Betriebs \cite{celi_cortes_m5use_2024}. Wie stark der Wettbewerb um diese Erlösquellen inzwischen ist, zeigt die \ac{FCR}, für die im Jahr 2024 bereits 810\,\si{MW} an \ac{BESS} präqualifiziert waren und damit mehr als der gesamte deutsche Bedarf \cite{celi_cortes_m5use_2024}.
 % ABSATZ VERBUNDEN 16.09.2026, C2.12.
 Die parallelen Vermarktungswege greifen dabei nicht auf getrennte Ressourcen zu, sondern auf dieselbe Leistung und denselben Energieinhalt derselben Anlage. Der Umfang der parallel vermarktbaren Leistung ist deshalb begrenzt, und die Präqualifikationsbedingungen der Regelleistung bemessen die dort anrechenbare Leistung nach dem Arbeitsvermögen und den vorgesehenen Speichermanagementmaßnahmen \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}. Die am Regelleistungsmarkt bereitgestellte Leistungsscheibe wird dabei nicht für Redispatch-Maßnahmen herangezogen \cite{bundesnetzagentur_anlage1_2024}. Wie eng die Wege zusammenhängen, zeigt eine Optimierungsrechnung für einen Speicher am deutschen Markt, in der der Handel im \ac{IDC} teilweise dazu dient, den Ladezustand in dem für die Regelleistung erforderlichen Bereich zu halten \cite{celi_cortes_m5use_2024}. Leistung und Speicherkapazität sind damit die knappen Ressourcen, um die alle Vermarktungswege konkurrieren, und eine kurative Vorhaltung erhebt darauf einen weiteren Anspruch.
 
@@ -2666,7 +2707,11 @@ Diese Alternative wechselt mit den relativen Preisen.
 % BEGRIFF am 20.09.2026, Vorgabe des Verfassers: EIV statt Anlagenbetreiber, weil hier die Rolle gemeint ist,
 % die den Fahrplan bestimmt und die Zusage gibt. Alte Fassung:
 %Die kurative Verfügbarkeit lässt sich im Selbst\-dispatch-Modell nur über einen Preis und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim Anlagenbetreiber, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
-Die kurative Verfügbarkeit lässt sich im Selbst\-dispatch-Modell nur über einen Preis und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim \ac{EIV}, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
+% GEAENDERT am 20.09.2026, Kommentar des Verfassers: "nur ueber einen Preis zu: eine Einplanung mit
+% Verguetung". Zugleich "kurative Verfuegbarkeit" durch "kurative Vorhaltung" ersetzt, offener Punkt der
+% Uebergabe vom 19.09.2026, Begriff nach CLAUDE.md Abschnitt 5. Alte Fassung:
+%Die kurative Verfügbarkeit lässt sich im Selbst\-dispatch-Modell nur über einen Preis und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim \ac{EIV}, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
+Die kurative Vorhaltung lässt sich im Selbst\-dispatch-Modell nur über eine Einplanung mit Vergütung und nicht über eine Anweisung herstellen, denn die Fahrplanhoheit liegt beim \ac{EIV}, und die Staffelung der kurzfristigen Märkte macht die zeitliche Bindung zu einem eigenständigen Produktmerkmal. Eine Vergütung vorgehaltener Leistung ist in der Regelleistung etabliert und wettbewerblich organisiert, jedoch ohne Bezug zum Netzknoten, während das Engpassmanagement knotenscharf ist, aber ausschließlich den durchgeführten Eingriff bemisst. Der Kategorie nach gehört die kurative Vorhaltung damit zum Engpassmanagement und der Beschaffungsform nach zur Frequenzhaltung, und kein bestehendes Regime verbindet beide Eigenschaften.
 % ABSATZ VERBUNDEN 16.09.2026, C2.13.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
 % Befunde G40, Q9, Stilregel 17. Fuenf Saetze zum Zeitwert auf drei.
