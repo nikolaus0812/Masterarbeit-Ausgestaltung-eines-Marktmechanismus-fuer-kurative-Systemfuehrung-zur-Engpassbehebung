@@ -2835,6 +2835,22 @@ dagegen offen." und "Das heutige Engpassmanagement stoesst dabei an Grenzen,
 denn der Kreis geeigneter Anlagen wird kleiner und der Eingriff ist immer
 kurzfristiger zu bestimmen."
 
+Nachtrag 1.1, Instrument dritte Fassung: Kommentar des Verfassers, davor "das
+zeigt, dass Redispatch fuer strukturelle, stationaere Engpaesse das geeignete
+Mittel ist", dann "um ein Instrument zu erweitern, das moeglichst viele
+Anlagen an den Netzknoten der HoeS und HS einbezieht, um lokale
+Ueberlastungen flexibel zu loesen". Jetzt: "Das zeigt, dass der Redispatch
+fuer strukturelle und stationaere Engpaesse das geeignete Mittel ist. Der
+Redispatch ist deshalb um ein Instrument zu erweitern, das moeglichst viele
+Anlagen an den Netzknoten der Hoechst- und Hochspannungsebene einbezieht, um
+oertliche Ueberlastungen flexibel zu beheben." ("loesen" als "beheben",
+Stilregel 14.) Zurueckgenommen: "... das im Ereignisfall wirkt und im besten
+Fall an jedem Knoten ... die verfuegbaren Einheiten einbezieht ...".
+
+Nachtrag: Schluss des Instrument-Satzes im Wortlaut des Verfassers "um oertliche
+Engpaesse zu beheben oder zu vermeiden" statt "um oertliche Ueberlastungen
+flexibel zu beheben".
+
 **Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
 weiterhin auf Seite 5.
 
