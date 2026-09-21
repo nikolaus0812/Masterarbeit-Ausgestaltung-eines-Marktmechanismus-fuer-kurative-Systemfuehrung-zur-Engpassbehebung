@@ -7559,6 +7559,61 @@ Pflicht und ihr Beleg jetzt im Absatz davor stehen (Vorschlag von Fable).
 
 **Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
 
+### 21.09.2026, 2.3.3 Konsultationsbefund nach Anhang A verschoben
+
+**Kommentar des Verfassers.** "Ist das relevant? Theoretisch kann man das doch
+auch streichen, da es wenig Relevanz fuer kurative Systemfuehrung hat, evtl.
+einfach zum Anhang schieben und den Absatz an den Absatz davor anbinden."
+Einschaetzung von Fable, umgesetzt: Der Block ist ein Befund zum Verfahren, was
+2.3.3 braucht, traegt der Folgeabsatz (Behandlung von BESS einer spaeteren
+Mitteilung vorbehalten).
+
+**Umsetzung.** Die vier Saetze "Im Konsultationsverfahren ist die Kopplung
+ueber die Volllaststunden vorgetragen worden ... und der Einwand ist
+unbeantwortet geblieben." stehen jetzt als letzter Absatz von Anhang A, der
+erste Satz mit dem Bezug "Die Kopplung der Viertelstunden ueber den
+Ladezustand ist im Konsultationsverfahren zur Festlegung ueber die
+Volllaststunden vorgetragen worden". In 2.3.3 haengen die drei Saetze zum
+Zeitwert am Absatz zur Kopplung, Ueberleitung jetzt "Neben der Kopplung tritt
+eine Ueberlegung zum Zeitwert." statt "Ueber die im Verfahren erhobenen Punkte
+hinaus tritt eine Ueberlegung zum Zeitwert." Der Folgeabsatz zur
+Anreizwirkung schliesst weiter an den Zeitwert an.
+
+**Beschlusskammer.** Kommentar des Verfassers: "das muss jetzt erklaert werden,
+also das Konsultationsverfahren allgemein muss schon eingefuehrt werden, oder
+wir kuerzen den Satz bzw. fuellen ihn mit Infos, dass klar ist, fuer was die
+Beschlusskammer ist". Umgesetzt als Kuerzung: "Die BNetzA hat die Behandlung
+von BESS in der Festlegung nicht abschliessend geregelt ..." statt "Die
+Beschlusskammer hat ...". Nebenbefund: die Bundesnetzagentur stand in 2.3.1
+ausgeschrieben und das Akronym BNetzA erschien erst in 2.3.2; die Erstnennung
+in 2.3.1 ist auf \ac{BNetzA} gesetzt. In Anhang A heisst es jetzt "Die
+Beschlusskammer 8 der BNetzA hat darauf ...".
+
+**Inc-Dec-Abgrenzung am Ende von 2.3.3.** Kommentar des Verfassers: "verstehe
+ich nicht, was das noch aussagen soll" und "der Eingriff wird ja auch beim
+Redispatch verguetet und hat deswegen ja nicht mit Inc-Dec zu tun". Befund:
+Inc-Dec haengt nicht an der Verguetung des Eingriffs, sondern daran, dass der
+Akteur den Eingriff mit seinem Fahrplan herbeifuehren kann; die kurative
+Vorhaltung entgeht dem Einwand nur durch den Produktzuschnitt, den der Satz
+davor fordert. Gestrichen, nicht wieder aufzunehmen: "Der Einwand trifft zudem
+die Verguetung eines Eingriffs, waehrend die Verguetung der kurativen
+Vorhaltung unabhaengig vom Abruf anfaellt. Ob von der Verguetung eines Abrufs
+ein eigener Anreiz ausgeht, ist gesondert zu pruefen." Anbindung des
+Schlusses an die marktliche Bewertung vom Absatzanfang: "Was der Betreiber
+fuer die kurative Vorhaltung fordert, folgt aus seinen uebrigen
+Vermarktungsmoeglichkeiten. Dafuer ist zunaechst zu bestimmen, wie ein BESS
+seine Flexibilitaet ueber den Tag einsetzt ..." statt "Fuer die kurative
+Vorhaltung ist deshalb zunaechst zu bestimmen ...". Die Abrufverguetung bleibt
+nach Entscheidung 14 in 2.4 als getrennt zu betrachten genannt.
+
+**Abbildung 2.3, Layout.** Vorgabe des Verfassers: "in 2.2.1 kann Abbildung 2.3
+noch Platz rausholen, den folgenden Absatz nach vorne schieben vor die
+Abbildung". Der Absatz zur Regelleistungs-Zeitschiene steht jetzt vor der
+Abbildung mit Option H, Seite 18 ist damit voll (37 statt 29 Zeilen). Kapitel 2
+endet auf Seite 29, Kapitel 3 beginnt auf PDF-Seite 38, 94 Seiten gesamt.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
