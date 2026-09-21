@@ -8,8 +8,12 @@
 %Dieses Kapitel legt zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dar und begründet dabei, welche Technologie als kurativer Akteur in Betracht kommt.
 %Anschließend stellt es den Marktrahmen mit seinen Dispatchmodellen, Marktzeithorizonten und Systemdienstleistungen dar.
 %Zuletzt untersucht es, ob sich eine der bestehenden Vergütungslogiken auf die kurative Vorhaltung anwenden lässt und gegen welche Vermarktungswege eine solche Vorhaltung anträte.
-In diesem Kapitel werden zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dargelegt, und daraus wird begründet, welche Technologie als kurativer Akteur in Betracht kommt.
-Anschließend wird der Marktrahmen mit seinen Dispatchmodellen, Marktzeithorizonten und Systemdienstleistungen dargestellt.
+% PLURAL am 21.09.2026, Kommentar des Verfassers: "Technologien". Alte Fassung:
+%In diesem Kapitel werden zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dargelegt, und daraus wird begründet, welche Technologie als kurativer Akteur in Betracht kommt.
+In diesem Kapitel werden zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dargelegt, und daraus wird begründet, welche Technologien als kurativer Akteur in Betracht kommen.
+% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
+%Anschließend wird der Marktrahmen mit seinen Dispatchmodellen, Marktzeithorizonten und Systemdienstleistungen dargestellt.
+Anschließend wird der Marktrahmen mit seinen Dispatch-Modellen, Marktzeithorizonten und Systemdienstleistungen dargestellt.
 Zuletzt wird geprüft, ob sich eine der bestehenden Vergütungslogiken auf die kurative Vorhaltung anwenden lässt und gegen welche Vermarktungswege eine solche Vorhaltung anträte.
 
 \section{Kurative Systemführung}
@@ -202,11 +206,14 @@ Die Ausfallfestigkeit gegenüber dem nächsten Ausfall ist dagegen im Einzelfall
 % Leitlinie stand bis zum 19.09.2026 in der Fussnote und ist bei deren Aufloesung verlorengegangen.
 Physikalische Grundlage des kurativen Ansatzes ist die thermische Trägheit der Betriebsmittel.
 Betriebsmittel tolerieren kurzfristig höhere Strombelastungen, als im Dauerbetrieb zulässig sind, und eröffnen damit ein Zeitfenster für kurative Gegenmaßnahmen.
-Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SOGL} über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat.
+% BELEG am 21.09.2026, Vorschlag von Fable: Zitat der SOGL hierher, nachdem der Satz zur Bezeichnung in der Leitlinie gestrichen ist. Alte Fassung:
+%Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SOGL} über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat.
+Die physikalische Ausprägung dieses Zeitfensters konkretisiert die \ac{SOGL} über die betrieblichen Sicherheitsgrenzwerte, die jeder \ac{ÜNB} für jedes Betriebsmittel festzulegen hat \cite{europaische_kommission_verordnung_2017}.
 Der \ac{PATL} ist dabei die Strombelastbarkeit, die ein Betriebsmittel ohne zeitliche Begrenzung führen kann.
 Der \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}.
 Zu jeder Höhe der Überlast ist eine zugehörige zulässige Dauer festzulegen, die von der jeweiligen thermischen Trägheit abhängt.
-Die Leitlinie selbst verwendet diese beiden Bezeichnungen nicht, sondern spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.
+% GESTRICHEN am 21.09.2026, Vorgabe des Verfassers: "streichen". Der Beleg der SOGL ist an den Satz zu den Sicherheitsgrenzwerten gewandert. Alte Fassung:
+%Die Leitlinie selbst verwendet diese beiden Bezeichnungen nicht, sondern spricht von den Grenzwerten für den Strom hinsichtlich der thermischen Belastbarkeit einschließlich vorübergehend zulässiger Überlastungen \cite{europaische_kommission_verordnung_2017}.
 Der Abstand zwischen beiden Grenzwerten und die zugehörige Dauer bestimmen damit, wie viel Zeit für eine kurative Gegenmaßnahme zur Verfügung steht.
 % ABSAETZE VERBUNDEN am 19.09.2026, Vorgabe des Verfassers: "mir werden hier viel zu viel absaetze gemacht ... ein absatz sollte eigentlich mal mindestens eine halbe seite lang sein". Die Leerzeile stand hier bis zum 19.09.2026. Die Grenzwerte und ihre Darstellung in Abbildung 2.1 tragen eine Kernaussage.
 % HIERHER VERSCHOBEN 16.09.2026, C2.1, Abbildungsvergleich zum praeventiven Regelfall.
@@ -323,6 +330,7 @@ Für den angeordneten Redispatch leistet der \ac{ÜNB} einen finanziellen Ausgle
 % Alte Fassung des Eingangssatzes:
 %Zweitens reicht der Planungshorizont des präventiven Ansatzes, also der Zeitraum, den die Vorschaurechnungen abdecken, nur bis zur letzten Vorschaurechnung.
 Die Vorschaurechnungen decken den Planungshorizont des präventiven Ansatzes ab, der Handel bleibt dagegen bis kurz vor Lieferung offen.
+Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel rückt zudem ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn \cite{mahgoub_wie_2025}.
 Netzzustände aus Fahrplanänderungen nach der letzten Vorschaurechnung kann der \ac{ÜNB} nur noch mit Mitteln ohne Vorlauf beheben.
 Ohne Vorlauf kommt nur ein kleiner Kreis von Anlagen in Betracht.
 %Die letzte Vorschaurechnung ist die Vortagesrechnung oder eine der untertägigen Rechnungen, die Abbildung~\ref{fig:markt_zeitschiene} auf der Zeitachse zeigt.
@@ -357,7 +365,8 @@ Der Kreis geeigneter Anlagen verkleinert sich zugleich, denn der Kohle- und Kern
 % GEKUERZT am 19.09.2026: die beiden Ursachen sind im Absatz jetzt der Reihe nach entwickelt und
 % muessen nicht wiederholt werden. Alte Fassung:
 %Der begrenzte Planungshorizont und die Abhängigkeit der Kosten von der Anlagenart verstärken sich gegenseitig, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
-Beide Ursachen verstärken sich, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
+% DOPPLUNG am 21.09.2026, Kommentar des Verfassers: "hier steht an zwei Stellen kurzfristiger Handel und deswegen spaeter Netzzustand bekannt und teurerer Redispatch durch kurzfristige Anweisung". Die Verlagerung in die kurzfristigen Maerkte steht jetzt einmal, naemlich beim offenen Handel nach der letzten Vorschaurechnung. Gestrichen:
+%Beide Ursachen verstärken sich, weil sich die Fahrplanbildung zunehmend in die kurzfristigen Märkte verlagert.
 % TEILSATZ GESTRICHEN am 19.09.2026, Kommentar des Verfassers: "da bin ich mir noch nicht sicher
 % ob das einen einfluss hat. eher doch auf die id auktionen da diese ja dann viertelstundenprodukte
 % gefuehrt haben. ich glaube diese info wuerde ich erst diskutieren in kapitel 5". Der Beleg
@@ -365,7 +374,8 @@ Beide Ursachen verstärken sich, weil sich die Fahrplanbildung zunehmend in die 
 % und als Punkt in chapter_5.tex. Der verbleibende Satz traegt jetzt mahgoub_wie_2025, den Beleg
 % der Fassung vom 15.09.2026 fuer genau diese Aussage. Alte Fassung:
 %Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt, und die Umstellung der Auktion des \ac{DA} auf Viertelstundenprodukte hat die Volumenverteilung zwischen den Handelszeitpunkten zusätzlich verändert \cite{ffe_saegezahn_2026}.
-Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt \cite{mahgoub_wie_2025}.
+% NACH VORN GEZOGEN am 21.09.2026, siehe DOPPLUNG: der Satz steht jetzt hinter dem offenen Handel. Alte Fassung:
+%Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn gerückt \cite{mahgoub_wie_2025}.
 % SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
 %Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen, und mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können, weil ein Teil der Technologien Vorlaufzeiten von mehreren Stunden aufweist.
 % ZWEI SAETZE AUF EINEN am 19.09.2026: der spaetere Eingriffszeitpunkt und der kleinere Kreis an
@@ -374,7 +384,8 @@ Mit den Intraday-Auktionen und dem kontinuierlichen Intraday-Handel ist ein wach
 %Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen.
 %Mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können.
 %Je später sich der maßgebliche Netzzustand einstellt, desto später ist der erforderliche Eingriff zu bestimmen.
-Der maßgebliche Netzzustand steht deshalb immer später fest, sodass noch weniger Anlagen die geforderte Leistungsänderung erbringen können.
+% DOPPLUNG am 21.09.2026, Kommentar des Verfassers: "hier steht an zwei Stellen kurzfristiger Handel und deswegen spaeter Netzzustand bekannt und teurerer Redispatch durch kurzfristige Anweisung". Die Verlagerung in die kurzfristigen Maerkte steht jetzt einmal, naemlich beim offenen Handel nach der letzten Vorschaurechnung. Gestrichen:
+%Der maßgebliche Netzzustand steht deshalb immer später fest, sodass noch weniger Anlagen die geforderte Leistungsänderung erbringen können.
 Volumen und Kosten des präventiven Engpassmanagements entwickeln sich daher nicht proportional zueinander.
 %Mit der verbleibenden Vorlaufzeit sinkt die Zahl der Anlagen, die die geforderte Leistungsänderung noch erbringen können.
 % ERGAENZT am 19.09.2026, dritter Kommentar des Verfassers: "diese kosten werden durch verlagerung
@@ -457,7 +468,8 @@ Der Unterschied zur präventiven Planung liegt im angesetzten Grenzwert und im Z
 %Auch ohne Abruf entsteht dem Anlagenbetreiber Aufwand, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
 % ROLLE am 21.09.2026, Vorgabe des Verfassers: Betreiber ist der wirtschaftliche Entscheider, der EIV die Rolle im operativen Betrieb. Alte Fassung:
 %Auch ohne Abruf entsteht dem \ac{EIV} Aufwand, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
-Auch ohne Abruf entsteht dem Betreiber Aufwand, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
+% GESTRICHEN am 21.09.2026, Kommentar des Verfassers: "willst du das da schon adressieren, es kommt ja spaeter noch haeufiger". Vorschlag von Fable: streichen, der Satz nutzt Bindungsdauer und Stellpotenzial vor der Definition in 2.1.2 und der Aufwand der Vorhaltung wird in 2.1.5, 2.3 und 2.4 behandelt. Gestrichener Satz:
+%Auch ohne Abruf entsteht dem Betreiber Aufwand, weil er das Stellpotenzial über die gesamte Bindungsdauer bereithalten muss.
 
 % S-01 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt Absatz 10 Satz 4 und 1.1 Absatz 11. Gestrichener Satz: Alte Fassung:
 %Der kurativen Höherauslastung und dem kurativen Redispatch ist gemeinsam, dass die Maßnahme erst nach dem Fehlereintritt wirkt und deshalb keinen vorherigen Eingriff in den Fahrplan erfordert.
@@ -1482,12 +1494,20 @@ Kosteneffizient und diskriminierungsfrei lässt sich eine Zusage zur kurativen V
 %Für den Redispatch ist er auf gemeldete Angaben angewiesen und greift im Standardfall auf die Potenziale und Kostenansätze zurück, die die Anlagenbetreiber im automatisierten Prozess der Kraftwerkseinsatzplanung melden \cite{bdew_branchenleitfaden_2018}.
 %Die folgende Betrachtung setzt an der bestehenden Zonenaufteilung an, sodass ein anderes Marktdesign eine neue Ausgestaltung des kurativen Marktmechanismus erforderte.
 %Aus Sicht des Anlagenbetreibers entscheidet sich an der Bildung seines Fahrplans, ob und zu welchem Preis er Leistung für eine kurative Bindung frei hält.
-Die europäische Regulierung unterscheidet dafür zwei Dispatchmodelle \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
+%Die europäische Regulierung unterscheidet dafür zwei Dispatchmodelle \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+Die europäische Regulierung unterscheidet dafür zwei Dispatch-Modelle \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 Im zentralen Dispatch-Modell bestimmt der \ac{ÜNB} die Fahrpläne und den Einsatz der Anlagen in einem integrierten Fahrplanerstellungsverfahren, das die Gebote, die technischen Anlagendaten und die betrieblichen Sicherheitsgrenzwerte in einem Schritt verarbeitet \cite{europaische_kommission_verordnung_2017_ebgl}.
 Regelreserve und kurative Maßnahmen ließen sich dort unmittelbar einplanen, weil der \ac{ÜNB} den Betriebspunkt jeder Anlage selbst setzt und den nötigen Leistungs- und Energievorrat freihalten kann.
-Im Selbst\-dispatch-Modell liegt die Fahrplanbildung dagegen beim \ac{EIV}.
+% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
+%Im Selbst\-dispatch-Modell liegt die Fahrplanbildung dagegen beim \ac{EIV}.
+Im dezentralen Dispatch-Modell liegt die Fahrplanbildung dagegen beim \ac{EIV}.
 Der \ac{ÜNB} beschafft Systemdienstleistungen dort als eigene Produkte neben den Energiemärkten und greift in den Dispatch erst nachträglich ein, um Gefährdungen der Netzsicherheit zu beseitigen \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf das Selbst\-dispatch-Modell, und nur wenige Mitgliedstaaten haben ein zentrales Dispatch beibehalten \cite{meeus_evolution_2020}.
+% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
+%Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf das Selbst\-dispatch-Modell, und nur wenige Mitgliedstaaten haben ein zentrales Dispatch beibehalten \cite{meeus_evolution_2020}.
+% BEGRIFF am 21.09.2026, Vorschlag von Fable: einheitlich Dispatch-Modell statt Dispatch. Alte Fassung:
+%Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf das dezentrale Dispatch-Modell, und nur wenige Mitgliedstaaten haben ein zentrales Dispatch beibehalten \cite{meeus_evolution_2020}.
+Art.\,14 Abs.\,2 \ac{EBGL} verpflichtet die \ac{ÜNB} grundsätzlich auf das dezentrale Dispatch-Modell, und nur wenige Mitgliedstaaten haben ein zentrales Dispatch-Modell beibehalten \cite{meeus_evolution_2020}.
 % ROLLE am 21.09.2026, Vorgabe des Verfassers: Betreiber ist der wirtschaftliche Entscheider, der EIV die Rolle im operativen Betrieb. Alte Fassung:
 %Eine kurative Vorhaltung kann der \ac{ÜNB} in Deutschland deshalb nicht selbst einplanen, sondern muss sie dem \ac{EIV} als Produkt anbieten.
 Eine kurative Vorhaltung kann der \ac{ÜNB} in Deutschland deshalb nicht selbst einplanen, sondern muss sie dem Betreiber als Produkt anbieten.
@@ -1502,7 +1522,9 @@ Aus Sicht des Betreibers entscheidet sich an der Bildung seines Fahrplans, ob un
 % Alte Fassung, nicht wieder aufnehmen:
 %Innerhalb dieses Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf.
 %Abbildung~\ref{fig:markt_zeitschiene} stellt diese Staffelung gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer gemeinsamen Zeitachse dar.
-Innerhalb des Selbst\-dispatch-Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf, die Abbildung~\ref{fig:markt_zeitschiene} gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer Zeitachse zeigt.
+% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
+%Innerhalb des Selbst\-dispatch-Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf, die Abbildung~\ref{fig:markt_zeitschiene} gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer Zeitachse zeigt.
+Innerhalb des dezentralen Dispatch-Modells bildet sich der Fahrplan einer Anlage über eine Sequenz von Handelsgelegenheiten mit abnehmendem zeitlichen Vorlauf, die Abbildung~\ref{fig:markt_zeitschiene} gemeinsam mit der Beschaffung von Systemdienstleistungen und den Rechenläufen des \ac{ÜNB} auf einer Zeitachse zeigt.
 % ABSATZ VERBUNDEN 16.09.2026, C2.8.
 % ABSATZ VERBUNDEN 16.09.2026, C2.8.
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus.
@@ -2883,7 +2905,9 @@ In der Betriebsplanung bestimmen die Redispatchprozesse auf den Lastflussrechnun
 %Im Selbst\-dispatch-Modell entsteht die Reservierung nur über eine Einplanung mit Vergütung und nicht über eine Anweisung, denn die Fahrplanhoheit liegt beim \ac{EIV}.
 Die Einplanung gelingt umso besser, je näher die Vorschaurechnung am Lieferzeitpunkt liegt, denn die Unsicherheit über die Netzsituation nimmt bis dahin ab.
 Eine Redispatch-Anordnung kann den \ac{EIV} dagegen jederzeit treffen.
-Im Selbst\-dispatch-Modell nimmt der \ac{EIV} am Engpassmanagement bislang allein als Adressat einer solchen Anordnung teil.
+% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
+%Im Selbst\-dispatch-Modell nimmt der \ac{EIV} am Engpassmanagement bislang allein als Adressat einer solchen Anordnung teil.
+Im dezentralen Dispatch-Modell nimmt der \ac{EIV} am Engpassmanagement bislang allein als Adressat einer solchen Anordnung teil.
 Ein kurativer Marktmechanismus gibt ihm mit der Einplanung einer kurativen Maßnahme erstmals die Möglichkeit, mit seinem Fahrplan zur Behebung eines Engpasses beizutragen und dafür vergütet zu werden.
 Gegenstand der Reservierung ist ein Leistungsband über die Bindungsdauer und in beide Richtungen.
 Der \ac{ÜNB} schaltet die eingeplante Maßnahme nach der Netzsicherheitsrechnung scharf und löst sie im Fehlerfall aus dem Leitsystem aus.

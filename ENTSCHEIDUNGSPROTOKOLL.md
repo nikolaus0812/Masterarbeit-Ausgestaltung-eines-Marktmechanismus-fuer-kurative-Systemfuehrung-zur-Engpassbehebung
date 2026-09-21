@@ -1729,6 +1729,30 @@ Vorschlag von Fable, vom Verfasser pauschal freigegeben.
 
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 
+### 21.09.2026, Dispatch-Modelle nach der EBGL benannt
+
+**Vorgabe des Verfassers.** "Dispatchmodellen ist so halb englisch, wir sprechen
+auch vom Selbstdispatch, gibt es da nicht eine elegantere Methode?" Auf den
+Vorschlag, die Bezeichnungen der deutschen EBGL-Fassung zu uebernehmen: "ja,
+uebernehme aus dem EBGL und ziehe nach."
+
+**Umsetzung.** EBGL Art. 2 Nr. 17 "dezentrales Dispatch-Modell" und Nr. 18
+"zentrales Dispatch-Modell". Ersetzt sind "Selbstdispatch-Modell" an zwei
+Stellen in Kapitel 1 (Definition des EIV, 1.2) und an fuenf Stellen in
+Kapitel 2 (2.2, 2.2.1, 2.4) durch "dezentrales Dispatch-Modell" sowie
+"Dispatchmodell(e/n)" in der Kapiteleinleitung 2 und in 2.2 durch
+"Dispatch-Modell(e/n)". Die Binnenmarktverordnung Art. 2 Nr. 30 nennt das
+Modell "Self-Dispatch-Modell"; die Aussage traegt sie, den deutschen Begriff
+nicht. In 1.1 ist die EBGL deshalb als zweite Quelle an den Satz gesetzt,
+in 2.2 zitiert der Folgesatz die EBGL bereits. Die Alternative
+"dezentrale Einsatzplanung" ist
+verworfen, weil sie den Bezug zum Redispatch verliert. CLAUDE.md Abschnitt 5
+und die Kommentare mit dem alten Wortlaut bleiben unveraendert, der Verfasser
+zieht CLAUDE.md nach. Zusaetzlich in 2.2 "ein zentrales Dispatch-Modell beibehalten"
+statt "ein zentrales Dispatch beibehalten", Vorschlag von Fable nach Stilregel 14.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -7328,6 +7352,50 @@ sobald die Netzsicherheitsrechnung einen Befund liefert." Zurueckgenommen:
 "..., liegt ein Befund vor, und ein Engpass ist ein Netzzustand, in dem ein
 solcher Befund besteht. Ein Eingriff ist damit erforderlich, sobald die
 Netzsicherheitsrechnung einen Befund liefert."
+
+**Kapiteleinleitung 2, Plural.** Kommentar des Verfassers: "Technologien". Jetzt
+"welche Technologien als kurativer Akteur in Betracht kommen".
+
+**Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
+
+### 21.09.2026, 2.1.1 Satz zur Bezeichnung in der Leitlinie gestrichen
+
+**Vorgabe des Verfassers.** "streichen" zu "Die Leitlinie selbst verwendet diese
+beiden Bezeichnungen nicht, sondern spricht von den Grenzwerten fuer den Strom
+hinsichtlich der thermischen Belastbarkeit einschliesslich voruebergehend
+zulaessiger Ueberlastungen". Der Satz war am 19.09.2026 aus der aufgeloesten
+Fussnote wieder aufgenommen worden und ist nicht wieder aufzunehmen.
+
+**Beleg verschoben.** Mit dem Satz waere das einzige Zitat der SOGL im Absatz
+entfallen. Das Zitat steht jetzt am Satz "Die physikalische Auspraegung dieses
+Zeitfensters konkretisiert die SOGL ueber die betrieblichen
+Sicherheitsgrenzwerte, die jeder UeNB fuer jedes Betriebsmittel festzulegen
+hat", Vorschlag von Fable nach Stilregel 8.
+
+**2.1.1 Kosten und Grenze, Dopplung.** Kommentar des Verfassers: "hier steht an
+zwei Stellen kurzfristiger Handel und deswegen spaeter Netzzustand bekannt und
+teurerer Redispatch durch kurzfristige Anweisung". Gestrichen, nicht wieder
+aufzunehmen: "Beide Ursachen verstaerken sich, weil sich die Fahrplanbildung
+zunehmend in die kurzfristigen Maerkte verlagert." und "Der massgebliche
+Netzzustand steht deshalb immer spaeter fest, sodass noch weniger Anlagen die
+geforderte Leistungsaenderung erbringen koennen." Der Satz mit dem Beleg
+mahgoub_wie_2025 steht jetzt hinter dem offenen Handel: "Mit den
+Intraday-Auktionen und dem kontinuierlichen Intraday-Handel rueckt zudem ein
+wachsender Teil der Fahrplanbildung in die Stunden vor Lieferbeginn." Die
+Kette lautet damit einmal: Vorschaurechnungen, offener Handel, Verlagerung in
+die Kurzfrist, Mittel ohne Vorlauf, kleiner Kreis, Kosten nach Anlagenart,
+schrumpfender Kreis, nicht proportional. Zuordnung der Saetze ist der Vorschlag
+von Fable.
+
+**2.1.1 Aufwand ohne Abruf.** Kommentar des Verfassers: "willst du das da schon
+adressieren, es kommt ja spaeter noch haeufiger". Vorschlag von Fable, umgesetzt:
+gestrichen. "Auch ohne Abruf entsteht dem Betreiber Aufwand, weil er das
+Stellpotenzial ueber die gesamte Bindungsdauer bereithalten muss." Der Satz
+stand allein hinter dem Absatz zur kurativen Massnahme, nutzte Bindungsdauer
+und Stellpotenzial vor der Definition in 2.1.2 (Stilregel 6), und der Aufwand
+der Vorhaltung wird in 2.1.5, 2.3 und 2.4 behandelt. Offen: auch der
+Ueberleitungssatz am Ende von 2.1.1 ("behandelt die Bindungsdauer als
+Produktmerkmal") nennt die Bindungsdauer vor 2.1.2.
 
 **Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
 
