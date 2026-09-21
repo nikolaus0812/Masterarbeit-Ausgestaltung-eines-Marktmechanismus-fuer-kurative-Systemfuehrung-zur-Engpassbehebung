@@ -2815,6 +2815,26 @@ Verweisabsatz, der auf Seite 2 endet. Sichtbar naeher an den Anfang kaeme sie
 nur mit rund zehn Zeilen weniger auf Seite 2. Kapitel 1 endet auf Seite 5 mit
 einer Zeile Reserve, 95 Seiten.
 
+Nachtrag Vorspann: Kommentar des Verfassers "Mit Battery Energy Storage Systems
+(Deutsch: Batteriespeichersystem) (BESS): Plural". Die Langform im
+Abkuerzungsverzeichnis lautet jetzt "Battery Energy Storage Systems (Deutsch:
+Batteriespeichersysteme)", weil allein die Erstnennung im Vorspann sie
+ausgibt und dort BESS im Plural steht. Kein \acp, CLAUDE.md Abschnitt 5.
+
+Nachtrag Vorspann, Saetze vier und fuenf: Kommentar des Verfassers "BESS praegen
+den kurzfristigen Handel und erzeugen damit eher kurzfristig Engpaesse, sind
+aber selber noch nicht Teil des Engpassmanagements. Im bestehenden
+Redispatch-Regime gibt es jedoch wenige Anlagen, die kurzfristig agieren
+koennen, und damit stoesst das Engpassmanagement an seine Grenzen." Jetzt:
+"Damit entstehen Engpaesse zunehmend erst kurz vor der Lieferung, waehrend die
+BESS selbst noch nicht Teil des Engpassmanagements sind. Im bestehenden Regime
+des Redispatch koennen nur wenige Anlagen so kurzfristig reagieren, sodass das
+Engpassmanagement an seine Grenzen stoesst." Zurueckgenommen: "Wie sich diese
+Flexibilitaet in das bestehende Regime des Redispatch einbinden laesst, ist
+dagegen offen." und "Das heutige Engpassmanagement stoesst dabei an Grenzen,
+denn der Kreis geeigneter Anlagen wird kleiner und der Eingriff ist immer
+kurzfristiger zu bestimmen."
+
 **Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
 weiterhin auf Seite 5.
 
