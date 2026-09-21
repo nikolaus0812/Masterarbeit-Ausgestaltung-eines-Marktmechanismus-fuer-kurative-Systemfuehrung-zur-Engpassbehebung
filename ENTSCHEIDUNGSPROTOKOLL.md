@@ -7492,6 +7492,49 @@ gegenueber Kapitel 2 doppeln, Vorgabe des Verfassers vom 21.09.2026.
 
 **Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
 
+### 21.09.2026, 2.3.4 Verguetung der Regelleistung: Anreizkomponente und Merit-Order
+
+**Rueckfrage des Verfassers.** "Erklaere mir die Anreizkomponente, die du meinst."
+Befund: Der Begriff kommt in keiner lokalen Quelle vor, weder in den zitierten
+PQ-Bedingungen noch in einer anderen PDF. Die Zuordnung zu den PQ-Bedingungen am
+18.09.2026 (I-40) war falsch. Die PQ-Bedingungen tragen in Abschnitt 2.6.1 die
+Pflicht, die Verfuegbarkeit ueber den gesamten Produktzeitraum kontinuierlich
+sicherzustellen und bei Stoerungen unverzueglich eine Besicherung zu
+aktivieren. Die Sanktion bei Nichtvorhaltung steht in den Modalitaeten fuer
+Regelreserveanbieter (MfRRA nach Art. 18 EBGL), die nicht vorliegen.
+
+**Neu.** "Der Leistungspreis ist an die Vorhaltung gebunden: Der Anbieter muss
+die Verfuegbarkeit der zugesagten Leistung ueber den gesamten Produktzeitraum
+sicherstellen und eine stoerungsbedingte Nichtverfuegbarkeit unverzueglich
+besichern [PQ-Bedingungen]. Der Leistungspreis verguetet damit die Uebernahme
+des Verfuegbarkeitsrisikos. Mit dem Zuschlag fuer Leistung ist der Anbieter
+zugleich verpflichtet, die bezuschlagte Leistung am Regelarbeitsmarkt
+anzubieten, sodass die Reservierung der Leistung auch zur Teilnahme an der
+Energielieferung verpflichtet [Monitoringbericht 2025]." Gestrichen, nicht
+wieder aufzunehmen: "Haelt der Anbieter die zugesagte Leistung nicht vor,
+rechnet der UeNB eine Anreizkomponente ab.", "Die Anreizkomponente faellt
+bereits an, wenn die Leistung fuer einen Abruf nicht zur Verfuegung gestanden
+haette." und der Teilsatz "und nicht den Abruf, der ueberwiegend ausbleibt"
+(Vorgabe des Verfassers: stattdessen die Pflicht zur Teilnahme an der
+Energielieferung). Die Gebotspflicht steht auch in 2.2.2 mit demselben Beleg,
+dort als Rahmen, hier als Folge fuer die Verguetung.
+
+**Merit-Order.** Kommentar des Verfassers: "hier fehlt auch noch die Info der
+Auswahl der Zuschlaege nach Merit Order List". Ergaenzt vor dem
+Grenzpreisverfahren: "Fuer den Abruf ordnet der UeNB die Arbeitsgebote nach
+ihrem Preis in einer Merit-Order-Liste und aktiviert sie in aufsteigender
+Reihenfolge, bis der Bedarf gedeckt ist." Beleg EBGL Art. 2 Nr. 37 (gemeinsame
+Merit-Order-Liste als nach Gebotspreisen geordnete Liste von
+Regelarbeitsgeboten) und Art. 29 Abs. 1, das Zitat steht am Folgesatz. Die
+Sortierregel fuer die Leistungsseite (Zuschlag in der Reihenfolge der
+Leistungspreise) steht in den MfRRA und ist nicht ergaenzt, die EBGL sagt in
+Art. 32 Abs. 2 nur "marktbasiert".
+
+**Offener Punkt.** MfRRA als Quelle beschaffen, falls die Sanktion bei
+Nichtvorhaltung oder die Leistungs-Merit-Order in den Text sollen.
+
+**Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
