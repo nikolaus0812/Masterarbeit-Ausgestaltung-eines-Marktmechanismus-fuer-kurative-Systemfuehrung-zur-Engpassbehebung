@@ -7399,6 +7399,99 @@ Produktmerkmal") nennt die Bindungsdauer vor 2.1.2.
 
 **Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
 
+### 21.09.2026, Dopplungen in Kapitel 2, Durchgang mit dem Verfasser
+
+**Anlass.** Verfasser: "gehe fuer die Kernaussagen zu kurativer Systemfuehrung
+nochmal alles durch und ob irgendwas erstaunlich haeufig vom Sinn her gleich
+erwaehnt wird", eingegrenzt auf Kapitel 2: "kritisch wird es, wenn diese
+Aussagen in Absaetzen stehen, wo sie selber eigentlich gar nicht zur Erklaerung
+benoetigt werden". Kapitel 1 darf sich als Motivation doppeln. Befund von Fable:
+fuenf kritische Stellen (2.1.1 Abs. 5 S. 4-9, 2.1.1 Abs. 9 S. 7, 2.2.1 Abs. 41
+S. 13-14, 2.3 Abs. 45 S. 5 Relativsatz, 2.2.2 Abs. 42 S. 9) und vier kleinere
+(2.1.4 Abs. 27 S. 3, 2.1.3 Abs. 20 S. 1, 2.2.1 Abs. 41 S. 12, 2.1.2 Abs. 19
+S. 2), Absatzzaehlung nach tools/extract_alle.py. Die Stellen werden einzeln
+durchgegangen.
+
+**1 und 2, Fuenf-Zustands-Modell.** Verfasser: "ich finde das
+5-Zustands-Modell auch ein wenig ueberfluessig, jedoch ist schon der
+Unterschied da, dass praeventiv nur den PATL als Grenzwert sieht und kurativ
+auch den TATL und beide trotzdem per Definition mit den geeigneten Massnahmen
+im Normalzustand sind. Die ganze Erklaerung ist trotzdem ueberfluessig."
+Gestrichen, nicht wieder aufzunehmen, die Saetze 4 bis 9 des Absatzes zum
+Zeitpunkt des Eingriffs: "Die Nutzung der voruebergehend zulaessigen Ueberlast
+fuehrt fuer sich genommen nicht aus dem Normalzustand des Netzes heraus ...",
+"Den Zustand des Netzes bestimmt Art. 18 SOGL ueber ein
+Fuenf-Zustands-Modell ...", "In den Gefaehrdungszustand wechselt das Netz
+...", "Massgeblich ist dabei nicht der bereits eingetretene Ausfall ...",
+"Das Netz bleibt deshalb im Normalzustand, solange ...", "Die
+Ausfallfestigkeit gegenueber dem naechsten Ausfall ist dagegen im Einzelfall
+zu pruefen." Die drei verbliebenen Saetze zum Zeitpunkt des Eingriffs haengen
+jetzt am Absatz zum praeventiven Regelfall. Neu am Ende des Absatzes zu
+Abbildung 2.1, wo PATL und TATL definiert sind: "Beide Ansaetze
+unterscheiden sich damit auch im angesetzten Grenzwert: Die praeventive
+Systemfuehrung haelt nach dem Ausfall den PATL ein, die kurative
+Systemfuehrung den TATL. In beiden Faellen bleibt das Netz im Normalzustand
+im Sinne der SOGL, denn die Leitlinie rechnet die vorbereiteten
+Entlastungsmassnahmen, also die Massnahmen zur Behebung einer
+Grenzwertverletzung, dem Netzzustand zu." Die Definition der
+Entlastungsmassnahme ist damit erhalten, der Gefaehrdungszustand kommt nicht
+mehr vor, die vollstaendige Ableitung mit den drei Vorgaben steht allein in
+2.1.5. Damit auch gestrichen 2.1.1 Abs. 9 S. 7 "Der Unterschied zur
+praeventiven Planung liegt im angesetzten Grenzwert und im Zeitpunkt: Die
+Massnahme wird erst ausgefuehrt, nachdem der Fehler eingetreten und die
+Ueberlastung tatsaechlich vorhanden ist, und behebt sie innerhalb der
+zulaessigen Ueberlastdauer." Wortlaut der neuen Saetze von Fable, vom
+Verfasser mit "umsetzen" freigegeben.
+
+**3 und 8, Ende des Absatzes zu den Rechenlaeufen in 2.2.1.** Verfasser:
+"einverstanden". Gestrichen, nicht wieder aufzunehmen: "Fuer eine Massnahme
+mit Vorlauf bleibt dann keine Zeit mehr, wie in Abschnitt 2.1.1 beschrieben."
+Die Folge fuer den Anlagenkreis steht in 2.1.1 Abs. 8, und der Satz war ein
+struktureller Rueckverweis nach Stilregel 15. Behalten: "Aenderungen des
+Fahrplans nach dem letzten vorausschauenden Rechenlauf sieht der UeNB deshalb
+erst, wenn sie sich in den Messwerten zeigen", er fuehrt die Zeitschiene zu
+Ende. Gekuerzt: "Die Netzsicherheitsrechnung prueft darueber hinaus
+kontinuierlich, ob der (N-1)-sichere Zustand gewahrt bleibt" statt "...
+kontinuierlich anhand der aus Messwerten geschaetzten Netzsituation, ob ...",
+weil die State Estimation in 2.1.2 erklaert ist.
+
+**4, Einleitung 2.3.** Verfasser: "ok". Der Relativsatz "das den
+Anlagenbetreiber weder besser noch schlechter stellen soll als ohne die
+Massnahme" ist gestrichen, der Satz lautet "Der UeNB ordnet dort den
+Redispatch an und gleicht ihn auf Kostenbasis aus." Die Definition steht in
+2.3.1, dort jetzt "Massstab ist dabei das Indifferenzprinzip" statt "ein
+Indifferenzgebot", Stilregel 14 und CLAUDE.md Abschnitt 7 Nr. 8.
+
+**5, Systemdienstleistungen 2.2.2.** Verfasser: "ok". Gestrichen, nicht
+wieder aufzunehmen: "Die Frequenzhaltung ist damit das Regime, dessen
+Beschaffung der kurativen Vorhaltung in der Form am naechsten kommt." Die
+Einordnung der Form nach steht in der Einleitung von 2.3 und am Ende von
+2.3.4. Der Absatz endet jetzt mit der reservierten und verguetesten
+Bereitstellung in der Frequenzhaltung.
+
+**6, 7 und 9, kleinere Dopplungen.** Verfasser: "alle drei umsetzen". 2.1.4:
+"Wie weit eine Hoeherauslastung moeglich ist, ist deshalb je Stromkreis und
+Situation zu bestimmen." statt "... standort- und situationsabhaengig zu
+bestimmen, denn neben der Strecke bestimmen Vorbelastung und Witterung die
+zulaessige Dauer, und nicht jede Leitung laesst sich im gleichen Mass hoeher
+auslasten." (Vorbelastung und Witterung stehen in 2.1.2, Stilregel 17). 2.1.3
+Auftakt: "Fuer Eingriffe in Erzeugung, Last und Speicherung braucht der UeNB
+die Zusage eines EIV, und damit stellt sich die Frage, welche Technologie eine
+solche Zusage einloesen kann." statt der zwei Saetze "Wird eine kurative
+Massnahme ueber eine Anlage erbracht, die nicht dem UeNB gehoert, braucht der
+UeNB dafuer die Zusage des EIV. Damit stellt sich die Frage ...". 2.1.2
+gestrichen, nicht wieder aufzunehmen: "Die Zeitfenster geben vor, wie schnell
+eine Massnahme wirken muss."
+
+**Nicht angefasst nach dem Massstab des Verfassers.** 2.3.4 Abs. 61 S. 1, 2.3.5
+Abs. 65 S. 3, 2.1.4 Abs. 28 S. 2 und 5, 2.1.1 Abs. 9 S. 5-6, der
+Netzknotenbezug der Regelleistung in 2.2.2 und 2.3.4, sowie das Zwischenfazit
+2.4 mit den fast woertlichen Uebernahmen aus 2.2.2, 2.3.3 und 2.3.4 (Abs. 67
+S. 1, S. 5-6, S. 11 und Abs. 69 S. 3). Kapitel 1 darf sich als Motivation
+gegenueber Kapitel 2 doppeln, Vorgabe des Verfassers vom 21.09.2026.
+
+**Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
+
 ## chapter_3.tex
 
 ### 06.09.2026, Strukturdurchsicht von Kapitel 3
