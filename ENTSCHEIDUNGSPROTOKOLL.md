@@ -2851,6 +2851,63 @@ Nachtrag: Schluss des Instrument-Satzes im Wortlaut des Verfassers "um oertliche
 Engpaesse zu beheben oder zu vermeiden" statt "um oertliche Ueberlastungen
 flexibel zu beheben".
 
+Nachtrag im Wortlaut des Verfassers: "206 Einheiten mit mindestens 100 MW
+angewiesener Leistungsaenderung" und "Das Engpassmanagement ist deshalb um ein
+Instrument zu erweitern, ..., um oertliche Engpaesse auf einzelnen
+Betriebsmitteln zu beheben oder zu vermeiden."
+
+Nachtrag: die zwei Woerter des Verfassers kippten Kapitel 1 erneut um eine
+Zeile. Vier Straffungen im selben Absatz, eigenstaendig, ohne Aussageverlust:
+"Zugleich wandert das Engpassmuster, denn es verschiebt sich mit der
+vorherrschenden Erzeugungssituation." (ohne "raeumlich" und "jeweils"), "Der
+Redispatch ist damit das geeignete Mittel fuer strukturelle und stationaere
+Engpaesse." (statt "Das zeigt, dass ..."), "praegen die Kosten eines Jahres"
+(statt "den Kostenverlauf"), "die die UeNB 2025 in beiden Richtungen anwiesen,
+entfielen 98 % auf 206 Einheiten ab 100 MW angewiesener Leistungsaenderung"
+(statt "im Jahr 2025" und "mit mindestens 100 MW"). Kapitel 1 wieder auf fuenf
+Seiten ohne Reserve; jeder weitere Satz in 1.1 oder 1.2 braucht eine Kuerzung
+hinter Abbildung 1.2, denn Kuerzungen davor fuellen nur den Weissraum vor der
+Abbildung.
+
+**1.2, Abrufverguetung abgeschwaecht.** Kommentar des Verfassers: "so hart
+wuerde ich es nicht formulieren, sondern eher, dass es da wieder aehnlich ist
+und deswegen eine Logik aehnlich des Redispatch anwendbar waere". Jetzt: "Beim
+Abruf liefert die Anlage dagegen Energie und kommt damit einer Anweisung im
+Redispatch nahe, sodass dort eine Verguetungslogik aehnlich der des
+Engpassmanagements anwendbar waere [Festlegung]." Zurueckgenommen: "Fuer den
+Abruf greift dagegen die Verguetungslogik des Engpassmanagements, denn dort
+liefert die Anlage Energie und kommt damit einer Anweisung im Redispatch nahe."
+
+Nachtrag: Ausgleich der Zeile aus dem laengeren Abrufsatz: "Das Trendjahr geht
+nicht in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung."
+(ohne "als Eingangsgroesse"), eigenstaendig.
+
+Nachtrag 1.2 im Wortlaut des Verfassers: "..., wie ein Betreiber die kurative
+Reservierung in seine Fahrplanbildung einbezieht." statt "auf eine kurative
+Reservierung reagiert".
+
+Nachtrag: "Verguetungslogik aehnlich der des Redispatch" statt "des
+Engpassmanagements", Kommentar des Verfassers: "da wollen wir ja gerade ein
+kuratives Engpassmanagement einfuegen". Dieselbe Unterscheidung ist bei den
+naechsten Lesungen in Kapitel 2 zu pruefen, wo "Verguetungslogik des
+Engpassmanagements" mehrfach steht (2.3 Einleitung, 2.4).
+
+**1.2 Aufbau, Sensitivitaeten.** Kommentar des Verfassers: "mehr darauf
+eingehen, dass wir Sensitivitaeten machen, um verschiedene Einfluesse auf den
+Preis zu identifizieren, sowohl modelltechnischer Natur als auch
+Marktentwicklung". Jetzt: "Sensitivitaeten zeigen, welche Einfluesse den Preis
+bestimmen, naemlich Produkt- und Anlagenparameter des Modells und die
+Entwicklung der Maerkte." Zurueckgenommen: "Die Variation der Produkt- und
+Anlagenparameter zeigt, welcher Markt die Opportunitaet setzt."
+
+Nachtrag Aufbau: gestrichen auf Vorgabe des Verfassers, nicht wieder aufnehmen:
+"Die kurative Reservierung wird dazu gegen die Anforderungen geprueft, und die
+Annahmen des Modells werden gewuerdigt."
+
+Nachtrag Aufbau: gestrichen auf Vorgabe des Verfassers, nicht wieder aufnehmen:
+"Die Zahlung bei durchgehender Reservierung wird gegen den Referenzerloes
+gehalten."
+
 **Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
 weiterhin auf Seite 5.
 
