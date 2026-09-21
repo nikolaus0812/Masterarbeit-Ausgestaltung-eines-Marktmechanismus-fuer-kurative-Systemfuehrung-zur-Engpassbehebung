@@ -1753,6 +1753,80 @@ statt "ein zentrales Dispatch beibehalten", Vorschlag von Fable nach Stilregel 1
 
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
 
+### 21.09.2026, Abbildungslieferung aus bess_dispatch_optimization
+
+**Anweisung.** analysen/code/schrift/ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md im
+Analyse-Repository, Stand 21.09.2026 16:14 (Commit 29df8b4 dort). Die vom
+Verfasser in den Chat kopierte Fassung war der Stand davor (f770b17); nach dem
+neueren Stand liegen die Preisgitterseiten in Kapitel 4 statt im Anhang, der
+Anhang traegt allein validierung_einzelmarkt.pdf. Umgesetzt ist der neuere Stand.
+Vergleich der PDF-Dateien ueber den Inhalt ohne CreationDate, ModDate, ID und
+xref (Skript im Scratchpad, abb_vergleich.py).
+
+**Geholt.** figures/chapter_3: validierung_cross.pdf, dispatch_festpreis_2025-02-11_p5.pdf
+(jetzt aus sensi0_basis), reservierungspreis_bisektion.pdf (Inhalt unveraendert,
+Sichtpruefung), neu fuellgrad_iterationen_2025.pdf und
+maximalpreis_iterationen_2025.pdf (aus Kapitel 4 hierher, noch in keiner
+figure-Umgebung eingebunden). modellkette.pdf, schleifenebenen.pdf und
+reservierungspreis_ablauf_a4.pdf waren inhaltsgleich und sind nicht ersetzt.
+figures/chapter_4: heatmap_reservierungspreis_2025.pdf,
+jahreslauf_reservierungspreis_redispatch_2025.pdf,
+erloesvergleich_vollverdraengung_2025.pdf (Legende unter dem Diagramm),
+sensi_afrr_modellierung_2025.pdf, sensi_abrufdauer_2025.pdf,
+sensi_abrufdauer_2025_iterationen.pdf, sensi_idc_spread.pdf und die vier
+Preisgitterseiten 2025-02-11, -02-22, -05-15, -08-26 (noch nicht eingebunden).
+figures/anhang: validierung_einzelmarkt.pdf.
+
+**Entfernt.** figures/anhang/dispatch_festpreis_2025-02-11_p5_ohne_mindestgebot.pdf
+ersatzlos: Nach der Korrektur der Kausalitaetsbedingung des aFRR-Rueckkaufs bindet
+die Mindestgroesse am 11.02.2025 bei 5 Euro je Megawatt und Stunde nicht (kleinste
+Reservierung 45,08 MW), beide Fassungen zeigen dasselbe Bild. Der Anhang
+"Fahrplan ohne die Mindestgroesse" (extras/attachment_dispatch.tex) ist in
+main.tex nicht mehr eingebunden, die Datei ist vollstaendig auskommentiert.
+In 3.3.3 gestrichen, nicht wieder aufzunehmen: "Ohne die Mindestgroesse
+reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25 MW
+Ladeleistung, sodass der kurative Erloes des Tages um 1,4 Prozent hoeher liegt.
+Dieser Fahrplan ohne die Mindestgroesse steht in Anhang F." Die
+Bildunterschrift von Abbildung 3.6 nennt die Mindestgroesse weiter. Ebenfalls
+entfernt figures/anhang/dispatch_preisgitter_2025-02-11.pdf (nach Kapitel 4
+umgezogen); die Tage 25.09. und 15.10.2025 lagen in der Schriftfassung nicht vor
+und sind nirgends referenziert.
+
+**Kapitel 4, Geruest.** Die Platzhalter der Abbildungen 4.1, 4.2, 4.4, 4.5 und
+4.6 sind durch die gelieferten Dateien ersetzt. 4.4 traegt
+sensi_afrr_modellierung_2025.pdf (sieben Jahreslaeufe statt vier gepoolter
+Analysetage; die alten Dateien sensi_afrr_modellierung.pdf und _alle.pdf sind
+nicht geholt). 4.5: Vorschlag von Fable ist die Fassung mit beiden Iterationen
+(sensi_abrufdauer_2025_iterationen.pdf), weil sie den Befund traegt (1. Iteration
+minus 18,8 und 35,1 Prozent, 2. Iteration minus 4,0 und 12,7 Prozent), die
+Zweifeldfassung liegt daneben; Entscheidung des Verfassers offen.
+Bildunterschriften nach Abschnitt 7 der Anweisung angepasst: 4.2
+"Redispatchleistung im Tagesmittel" statt "Redispatchvolumen" (die Abbildung
+zeigt Leistung in MW) und der Hinweis auf den Arbeitspreis; 4.4 "ueber alle
+Stunden des Jahres 2025, zweite Iteration" statt "ueber die Analysetage"; 4.5
+Anordnung der vier Felder; 4.6 "an fuenf Beispieltagen ... erste Iteration".
+Die uebrigen Angaben aus Abschnitt 7 (Mediane, Korrelationen, Erloese) sind
+fuer das Schreiben von Kapitel 4 in der Anweisung nachzulesen; die Stichpunkte
+in chapter_4.tex, die noch von Analysetagen sprechen, sind nicht angepasst.
+
+**3.3.2, Zahlen.** Nach Abschnitt 8: Revenue-Index 260,0 statt 259,7;
+Optimierungsmodell 340,7 statt 348,3 (die Anweisung nennt 348,2 als alten
+Wert, im Text stand 348,3); Median 1,31 statt 1,33; Spanne 1,04 bis 1,50 statt
+1,06 bis 1,54; Korrelation 0,974 statt 0,97; aFRR 1,51-Fache statt 1,52; DA
+0,85-Fache statt 0,86; FCR 1,24 und Intraday 0,89 unveraendert. Nicht in der
+Anweisung und deshalb ungeprueft: die Erloese je Markt des Revenue-Index
+(107,4; 221,3; 89,2; 134,1), die 133,0 fuer ein Megawatt zum FCR-Preis mit 81
+und 100 Prozent sowie die 81 und 72 MW mittlere aFRR-Vorhaltung.
+
+**Befund an das Analyse-Repository.** In
+jahreslauf_reservierungspreis_redispatch_2025.pdf ist der Legendeneintrag
+"praeventiver Redispatch, 101 Euro/MWh (Arbeitspreis ...)" am rechten Rand der
+Seite abgeschnitten. Rueckfrage dort, nicht hier.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
+Build ohne Fehler, 95 Seiten mit den neuen Abbildungen in Kapitel 4, Kapitel 1
+auf den Seiten 9 bis 13, Kapitel 3 ab PDF-Seite 38. Anhaenge jetzt A bis E.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

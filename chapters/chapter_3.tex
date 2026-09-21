@@ -452,7 +452,9 @@ Je Markt allein optimiert der Revenue-Index den Speicher am \ac{DA}, in der erst
 Gegen die bekannte Preisreihe lädt der Speicher in den günstigsten und entlädt in den teuersten Zeitscheiben, sodass bei zwei Stunden Energieinhalt je Leistung zwei Zyklen die vier günstigsten und die vier teuersten Stunden belegen.
 Die Spanne des zweiten Zyklus fällt kleiner aus als die des ersten, weil die Zeitscheiben nach dem Preis geordnet zum Einsatz kommen.
 
-Für das Jahr 2025 weist der Revenue-Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
+%Für das Jahr 2025 weist der Revenue-Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
+Für das Jahr 2025 weist der Revenue-Index marktübergreifend 260,0 Tausend Euro je Megawatt und Jahr aus.
 Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
 Den Werten je Markt allein stehen Jahresläufe des Optimierungsmodells gegenüber, in denen die übrigen Märkte abgeschaltet sind.
 Dem marktübergreifenden Wert steht der Referenzerlös aus allen Märkten gegenüber, weil das Optimierungsmodell diese Märkte ebenfalls gemeinsam bedient.
@@ -472,13 +474,17 @@ Erwartet wird, dass das Optimierungsmodell in den Leistungsmärkten über dem Re
 Der Vergleich beginnt mit den Einzelmärkten, die im Einzelnen in Anhang~\ref{anh:validierung} dargestellt sind.
 In der \ac{FCR} erreicht das Optimierungsmodell das 1,24-Fache des Revenue-Index, weil der Revenue-Index die angebotene Leistung durch 1,25 teilt und das Optimierungsmodell die volle Leistung anbietet.
 Ein Megawatt, das ganzjährig zum \ac{FCR}-Preis anbietet, erzielt 133,0 Tausend Euro je Megawatt und Jahr, wovon der Revenue-Index 81 Prozent und das Optimierungsmodell 100 Prozent erreichen.
-In der \ac{aFRR} erreicht das Optimierungsmodell das 1,52-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
+%In der \ac{aFRR} erreicht das Optimierungsmodell das 1,52-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
+In der \ac{aFRR} erreicht das Optimierungsmodell das 1,51-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
 Der Revenue-Index bietet nur die Leistung an, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
 Das Optimierungsmodell ist allein durch ein Ladezustandsband von einer Stunde je Richtung begrenzt und hält im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
 Auch die Liefermenge der \ac{aFRR}-Arbeit hängt auf beiden Seiten an der vorgehaltenen Leistung, folgt aber den Regeln, die Abschnitt~\ref{sec:validation_benchmark} und Abschnitt~\ref{sec:input_data} je Seite nennen.
 Denselben Sollwert nutzen beide Seiten, der Revenue-Index als abgerufene Leistung und das Optimierungsmodell als Gewicht bei der Mittelung der Grenzpreise.
 
-In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
+%In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
+In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,85-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
 Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklus verrechnet.
 
 \begin{figure}[htbp]
@@ -489,9 +495,15 @@ Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklu
 \end{figure}
 
 Abbildung~\ref{fig:validierung_cross} stellt marktübergreifend den Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenüber.
-Das Optimierungsmodell liegt im Mittel bei 348,3 Tausend Euro je Megawatt und Jahr.
-Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
-Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
+%Das Optimierungsmodell liegt im Mittel bei 348,3 Tausend Euro je Megawatt und Jahr.
+Das Optimierungsmodell liegt im Mittel bei 340,7 Tausend Euro je Megawatt und Jahr.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
+%Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
+Das Verhältnis beider Reihen beträgt im Median 1,31 bei einer Spanne von 1,04 bis 1,50, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
+%Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
+Die beiden Reihen korrelieren mit einem Koeffizienten von 0,974, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
 Zum Abstand trägt marktübergreifend die Aufteilung der Leistung bei.
 Der Revenue-Index bedient die Märkte in fester Abfolge mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen, während das Optimierungsmodell alle Märkte gemeinsam optimiert.
 Frei entschieden wird im Revenue-Index allein, ob eine Vier-Stunden-Zeitscheibe der \ac{FCR} oder der \ac{aFRR}-Leistung zufällt.
@@ -508,8 +520,9 @@ Die Reservierung belegt die Stunden, in denen die übrigen Märkte wenig bieten,
 In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherraum für einen Abruf von einer Megawattstunde je Megawatt frei, und Anfang und Ende des Tages liegen bei 125 Megawattstunden.
 Der gezeigte Fahrplan enthält die Mindestgröße von 25\,\si{MW} je Zeitscheibe und Richtung, die das Optimierungsmodell gemischt-ganzzahlig macht.
 Die Optimierung reserviert damit nur dort, wo der vorgegebene Reservierungspreis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was die Grundlage der Suche nach dem kleinsten vorgegebenen Reservierungspreis bestätigt.
-Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
-Dieser Fahrplan ohne die Mindestgröße steht in Anhang~\ref{anh:dispatch_ohne}.
+% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 2: die Abbildung ohne Mindestgroesse entfaellt ersatzlos, weil die Schranke am 11.02.2025 bei 5 Euro je Megawatt und Stunde nach der Korrektur der Kausalitaetsbedingung nicht bindet (kleinste Reservierung 45,08 MW). Der Satz und der Verweis auf den gestrichenen Anhang sind gestrichen, nicht wieder aufzunehmen:
+%Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
+%Dieser Fahrplan ohne die Mindestgröße steht in Anhang~\ref{anh:dispatch_ohne}.
 
 \begin{figure}[H]
     \centering
