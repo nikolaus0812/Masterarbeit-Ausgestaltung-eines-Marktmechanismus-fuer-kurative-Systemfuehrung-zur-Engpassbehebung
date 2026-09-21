@@ -1692,6 +1692,43 @@ Verfasser zieht CLAUDE.md selbst nach.
 Seiten. tools/pruefen.py --alle meldet allein den Altbefund in chapter_5.tex
 Zeile 91.
 
+### 21.09.2026, Betreiber und EIV unterschieden
+
+**Vorgabe des Verfassers.** "Wir muessen bei Betreiber und EIV schon
+unterscheiden. Der Betreiber will den maximalen Erloes erwirtschaften, der EIV
+ist einfach der Verantwortliche im operativen Betrieb." Zuvor, am 20.09.2026,
+war der EIV an neun Stellen fuer den Anlagenbetreiber eingesetzt worden, wo
+die Rolle Fahrplan, Einsatz, Zusage oder Gebot traegt; das Gebot und der
+Preis gehoeren nach der neuen Vorgabe zum Betreiber.
+
+**Kriterium.** Betreiber, wo Preis, Erloes, Gebot, Aufwand, Vermarktung oder
+Ausgleich gemeint sind; EIV, wo Fahrplan, Einsatz, Meldung, Zusage der
+Leistungsaenderung, Umsetzung oder Adressat einer Anordnung gemeint sind;
+Anlagenbetreiber, wo Paragraph 13a EnWG oder die Festlegung ihn nennen.
+
+**Geaendert zu Betreiber.** 2.1.1 "entsteht dem Betreiber Aufwand"; 2.1.4 "zu
+welchem Preis ein Betreiber"; 2.2 "muss sie dem Betreiber als Produkt
+anbieten" und "Aus Sicht des Betreibers entscheidet sich an der Bildung seines
+Fahrplans"; 2.2.2 "gaebe dem Betreiber die Moeglichkeit, mit seinem Fahrplan
+... beizutragen und dafuer verguetet zu werden"; 2.4 "kann nur der Betreiber
+selbst bestimmen, und zwar in einem Markt"; Kapitel 3 Einleitung "aus der
+Sicht des Betreibers". Definition in 1.1 angepasst: "also die Marktrollen, die
+den Einsatz einer Anlage im Betrieb verantworten und ihren Fahrplan melden"
+statt "die die Vermarktung einer Anlage planen und ihren Einsatz steuern".
+
+**Belassen als EIV.** 2.1.2 (Massnahme erbringen, kurativer Akteur, Zusage der
+Leistungsaenderung), 2.1.3 (Zusage), 2.1.5 (Zusage ohne Verguetung), 2.2
+(Fahrplanbildung), 2.2.1 (Viertelstundenausgleich am Fahrplan), 2.2.2
+(KWEP-Meldung, Eingriff in den Fahrplan, Adressat), 2.4 (Anordnung trifft den
+EIV, Adressat). **Belassen als Betreiber**, vom Verfasser als unsicher
+vorgelegt und mit "aendere" entschieden: 1.2 "entscheidet im
+Selbstdispatch-Modell ueber den Einsatz seiner Anlage selbst" und "die
+kurative Reservierung in seine Fahrplanbildung einbezieht", 2.3.5
+"wiederbeschaffen". Die Zuordnung der sechs unsicheren Stellen ist der
+Vorschlag von Fable, vom Verfasser pauschal freigegeben.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
