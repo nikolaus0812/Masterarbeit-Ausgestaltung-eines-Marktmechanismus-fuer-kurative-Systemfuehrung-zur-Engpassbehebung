@@ -2694,6 +2694,97 @@ Erzeugung und Lasten sowie von der Wettersituation ab." ("nicht stationaer"
 statt "instationaer", Stilregel 13). Zurueckgenommen: "Die Transportaufgabe ist
 damit nicht auf eine Richtung festgelegt."
 
+**1.1, Instrument im Ereignisfall.** Rueckfrage des Verfassers: "warum darf es
+keine dauerhaften Eingriffe verursachen?" Die Folgerung aus der
+Ereignisabhaengigkeit steht jetzt im Satz: "Ein Instrument fuer den
+Engpassmanagementbedarf muss deshalb erst im Ereignisfall eingreifen, damit es
+in den Stunden ohne Ereignis keine Kosten verursacht, und an wechselnden Orten
+verfuegbar sein." Zurueckgenommen: "... im Ereignisfall wirken, ohne dauerhaft
+Eingriffe zu verursachen, ...".
+
+Nachtrag 1.1, Instrument: Rueckfrage des Verfassers "aber das tut Redispatch
+doch auch, was willst du damit abgrenzen?" Befund: der Satz grenzt gegen den
+Netzausbau ab (ortsfest, wirkt in jeder Stunde), der Redispatch erfuellt beide
+Eigenschaften, und der folgende Absatz setzt beim praeventiven Redispatch an.
+Jetzt: "Ein Instrument fuer diesen Bedarf muss deshalb im Ereignisfall wirken
+und an wechselnden Orten verfuegbar sein, was ein Netzausbau an festem Ort
+nicht leisten kann." Zurueckgenommen: die Fassung von zuvor mit "damit es in
+den Stunden ohne Ereignis keine Kosten verursacht" (traf auch den Redispatch).
+
+**1.1, Redispatch mit wenigen grossen Anlagen.** Kommentar des Verfassers: "Da
+Redispatch bisher mit wenigen grossen Erzeugern wie Kraftwerken oder
+Winderzeugung mit grossen Anschlussleistungen gemacht wurde (Redispatch-Zahlen
+nach Erzeugern zitieren), muss dieser um ein flexibles Instrument, das nicht
+ortsgebunden ist und Kleinanlagen kosteneffizient einbezieht, erweitert
+werden." Zwei Saetze anstelle des Instrument-Satzes: "Der Redispatch stuetzt
+sich bisher auf wenige grosse Anlagen: Von rund 15,6 TWh reduzierter
+Einspeisung entfielen im Jahr 2025 6,2 TWh auf konventionelle Kraftwerke und
+6,6 TWh auf Windenergieanlagen [SMARD Gesamtjahr 2025]. Der Redispatch ist
+deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt, nicht an
+einen Ort gebunden ist und auch kleine Anlagen kosteneffizient einbezieht."
+Quelle: negativer Redispatch konventionelle Kraftwerke 6.170 GWh, Offshore-Wind
+3.351 GWh, Onshore-Wind 3.225 GWh, Photovoltaik 2.704 GWh, EE gesamt 9.389 GWh;
+Summe 15.559 GWh. Zurueckgenommen: "Ein Instrument fuer diesen Bedarf muss
+deshalb im Ereignisfall wirken und an wechselnden Orten verfuegbar sein, was
+ein Netzausbau an festem Ort nicht leisten kann."
+
+**Abbildungen 1.1 und 1.2 je einen Absatz nach vorn.** Vorgabe des Verfassers.
+Abbildung 1.1 steht im Quelltext jetzt vor dem Absatz "Der
+Engpassmanagementbedarf ist hoch ...", Abbildung 1.2 vor dem Absatz "Der
+Engpassmanagementbedarf ist ereignisabhaengig ...", jeweils hinter dem Absatz,
+der auf sie verweist. Abbildung 1.2 traegt die Option H, weil mit htbp zwei
+Zeilen des Folgeabsatzes vor die Abbildung rutschten. Die Verschiebung und der
+neue Redispatch-Satz kippten Kapitel 1 auf eine sechste Seite; drei
+Reservekandidaten aus der Uebergabe vom 18.09.2026 sind deshalb gestrichen,
+nicht wieder aufnehmen: "also der reduzierten und der zu ihrem Ausgleich
+erhoehten Einspeisung" (steht in der Bildunterschrift), "Die dargestellten
+Zahlen zeigen zwei Eigenschaften des Engpassmanagementbedarfs, die fuer die
+Wahl eines solchen Instruments bedeutsam sind." (der Folgesatz nennt den
+Engpassmanagementbedarf jetzt beim Namen) und "Damit laesst sich Redispatch
+nicht nur vermeiden, sondern es lassen sich kurative Massnahmen auch dort
+einsetzen, wo sie zusammen mit dem praeventiven Redispatch das
+Engpassmanagement insgesamt kosteneffizienter machen." (die Ergaenzung des
+praeventiven Redispatch traegt 2.4). Eigenstaendige Wahl der Kandidaten durch
+Fable. Kapitel 1 endet wieder auf Seite 5 mit einer Zeile Reserve auf Seite
+13. Beim Testen der Float-Optionen hat ein Bash-Heredoc die Datei einmal
+verstuemmelt; sie ist aus einer Sicherung wiederhergestellt, die
+Warnung in der Uebergabe gilt.
+
+Nachtrag 1.1, Redispatch nach Anlagenart mit beiden Richtungen: Kommentar des
+Verfassers "und der Rest, Countertrading oder wie? Und was ist mit Hochfahren?
+Beide Seiten nennen, aber nicht zu viele Zahlen, einfach Anteil an Redispatch
+mit Anlagen groesser 500 MW Anschlussleistung." Ein Anteil nach
+Anschlussleistung ist mit keiner Quelle im Repository belegbar; er brauchte
+eine eigene Auswertung der anlagenscharfen Redispatch-Daten von
+Netztransparenz, **offen**. Jetzt nach Anlagenart: "Der Redispatch stuetzt
+sich bisher auf konventionelle Kraftwerke und Windenergieanlagen: Von rund
+25 TWh angewiesener Einspeiseaenderung im Jahr 2025 entfielen rund 22 TWh auf
+das Absenken und Hochfahren dieser Anlagen, hinzu kamen 5,2 TWh Countertrading
+[SMARD]." Rechnung: reduziert 15.549 GWh (konventionell 6.170, Offshore 3.351,
+Onshore 3.225, Photovoltaik 2.704), erhoeht Marktkraftwerke 7.732,
+Reservekraftwerke 1.302, Probestarts 523, Countertrading 5.211 GWh; Redispatch
+ohne Countertrading 25.106 GWh, davon Kraftwerke und Wind 21.780 GWh, der Rest
+sind Photovoltaik und Probestarts. Zurueckgenommen: die Fassung mit 15,6, 6,2
+und 6,6 TWh allein fuer die reduzierte Einspeisung.
+
+Nachtrag 1.1, Redispatch je Einheit aus den Netztransparenz-Daten: Hinweis des
+Verfassers auf die anlagenscharfe Liste im Modellrepository
+(data/processed/Redispatch_netztransparnez.net/2025_Redispatchmassnahmen.parquet),
+Auswertung in analysen/redispatch_einheiten (auswertung.py, README.md,
+redispatch_einheiten_2025.csv, ergebnis.txt). 19.369 Massnahmen, 381
+Einheiten; nur Redispatch ohne Countertrading und Probefahrten 16.893
+Massnahmen, 16,5 TWh, 356 Einheiten; 206 Einheiten mit hoechstens angewiesener
+Leistung von mindestens 100 MW tragen 98,0 % der Arbeit, 54 Einheiten ab
+500 MW 64,5 %, die 20 groessten die Haelfte. Entscheidung des Verfassers: "die
+Zahl mit groesser 100 MW nehmen, einfach nur auf die Netztransparenz-Daten
+verweisen." Satz jetzt: "Der Redispatch stuetzt sich bisher auf wenige grosse
+Anlagen: Von den 16,5 TWh, die die UeNB im Jahr 2025 in beiden Richtungen
+anwiesen, entfielen 98 % auf 206 Einheiten mit mindestens 100 MW angewiesener
+Leistung [netztransparenz_regelenergie_2026]." Vorbehalte im README: nur
+UeNB-Massnahmen, maximale angewiesene Leistung statt Anschlussleistung,
+Sammelpositionen der Offshore-Netzverknuepfungspunkte. Zurueckgenommen: die
+SMARD-Fassung mit 25 und 22 TWh und dem Countertrading.
+
 **Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
 weiterhin auf Seite 5.
 

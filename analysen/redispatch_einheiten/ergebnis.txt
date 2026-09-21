@@ -1,0 +1,10 @@
+Massnahmen gesamt: 19369, Einheiten gesamt: 381
+Nur Redispatch: 16893 Massnahmen, 16517.2 GWh, 356 Einheiten
+Richtung GWh: Wirkleistungseinspeisung erhöhen: 8113.8, Wirkleistungseinspeisung reduzieren: 8403.3
+Primaerenergie GWh: Erneuerbar: 5570.1, Konventionell: 10433.7, Sonstiges: 513.3
+Einheiten mit Pmax >= 100 MW: 206, Anteil an der Arbeit 98.0 %
+Einheiten mit Pmax >= 300 MW: 117, Anteil an der Arbeit 91.2 %
+Einheiten mit Pmax >= 500 MW: 54, Anteil an der Arbeit 64.5 %
+50 % der Arbeit: groesste 20 Einheiten
+80 % der Arbeit: groesste 58 Einheiten
+90 % der Arbeit: groesste 83 Einheiten

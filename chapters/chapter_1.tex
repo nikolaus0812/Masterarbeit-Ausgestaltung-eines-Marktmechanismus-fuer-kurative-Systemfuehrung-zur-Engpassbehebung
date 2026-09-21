@@ -124,11 +124,23 @@ Zeichnet sich im laufenden Betrieb eine Überlastung ab, ordnet er den Redispatc
 %Der Redispatchbedarf ist damit nicht allein eine Folge des Netzzustands, sondern auch eine Folge des Marktdesigns.
 Der Engpassmanagementbedarf ist damit nicht allein eine Folge des Netzzustands, sondern auch eine Folge des Marktdesigns.
 
+% VERSCHOBEN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.1 und 1.2 muessen jeweils einen Absatz nach vorne."
+\begin{figure}[htbp]
+    \centering
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht, die Datei ist genau textbreit.
+    \includegraphics[width=\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
+    \caption{Jährliches Maßnahmenvolumen des Netzengpassmanagements der Jahre 2020 bis 2025, aufgeteilt nach hoch- und heruntergeregelter Energie. Alle Maßnahmen sind einer der beiden Richtungen zugeordnet. Auf Basis von \cite{bundesnetzagentur_mengen_nodate}.}
+    \label{fig:redispatch_jahresbedarf}
+\end{figure}
+
 % R-04 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die These steht jetzt im ersten Satz. Alte Fassung:
 %Wie hoch dieser Bedarf ausfällt, zeigt Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Redispatchvolumen, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
 % BEGRIFF am 18.09.2026, Kommentar des Verfassers: Abbildung 1.1 zeigt das Massnahmenvolumen des Netzengpassmanagements, nicht allein den Redispatch. Alte Fassung:
 %Der Redispatchbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Redispatchvolumen zeigt, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
-Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
+% GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
+%Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
+Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt.
 % BEGRIFF am 18.09.2026, Kommentar des Verfassers: Abbildung 1.1 zeigt das Massnahmenvolumen des Netzengpassmanagements, nicht allein den Redispatch. Alte Fassung:
 %Mit 30{,}4\,\si{TWh} lag das Redispatchvolumen im Jahr 2025 nahezu auf dem Wert des Vorjahres, während die vorläufigen Gesamtkosten um knapp vier Prozent auf rund 3{,}1\,Mrd.\,Euro stiegen.
 Mit 30{,}4\,\si{TWh} lag das Maßnahmenvolumen im Jahr 2025 nahezu auf dem Wert des Vorjahres, während die vorläufigen Gesamtkosten um knapp vier Prozent auf rund 3{,}1\,Mrd.\,Euro stiegen.
@@ -140,15 +152,6 @@ Auf den Dezember 2024, geprägt von einer Windfront, entfielen rund 16\,\% der J
 % PRAEZISIERT am 18.09.2026, Kommentar des Verfassers: keine einzelnen Tage, sondern Wetterlagen, und der Vorgang beim Redispatch benannt. Alte Fassung:
 %An solchen Tagen lässt sich die abgeregelte Einspeisung aus erneuerbaren Energien nicht nutzen, und ihr Ausgleich verlangt zusätzliche Erzeugung an anderer Stelle.
 In einer solchen Wetterlage regelt der Redispatch Windstrom ab, der sich nicht abtransportieren lässt, und fährt dafür teurere Erzeugung an anderer Stelle hoch.
-
-\begin{figure}[htbp]
-    \centering
-% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
-% Sie aendert den Satz nicht, die Datei ist genau textbreit.
-    \includegraphics[width=\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
-    \caption{Jährliches Maßnahmenvolumen des Netzengpassmanagements der Jahre 2020 bis 2025, aufgeteilt nach hoch- und heruntergeregelter Energie. Alle Maßnahmen sind einer der beiden Richtungen zugeordnet. Auf Basis von \cite{bundesnetzagentur_mengen_nodate}.}
-    \label{fig:redispatch_jahresbedarf}
-\end{figure}
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
 % Befunde B13 bis B17, E7, E8. These und Begruendung verbunden, 13 TWh einmal, Konsequenz fuer das Instrument ergaenzt.
@@ -182,13 +185,11 @@ Nach Abbildung~\ref{fig:engpassmanagement_nep} sinkt der Bedarf bis zum Zieljahr
 Der Restbedarf folgt aus der Zielsetzung des Verfahrens, denn der \ac{NEP} führt den Netzausbau nur so weit, wie die eingesparten Engpassmanagementkosten die Ausbaukosten übersteigen \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Ein verbleibender Engpassmanagementbedarf gehört damit zum ermittelten Zielzustand und fällt Instrumenten jenseits des Netzausbaus zu.
 
-Die dargestellten Zahlen zeigen zwei Eigenschaften des Engpassmanagementbedarfs, die für die Wahl eines solchen Instruments bedeutsam sind.
-Der Bedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
-Zugleich wandert das Engpassmuster räumlich, denn es verschiebt sich mit der jeweils vorherrschenden Erzeugungssituation.
-% EIGENE ABLEITUNG, vom Verfasser zu pruefen, Absatzplan 1.1 Absatz 5 vom 15.09.2026.
-Ein Instrument für den Engpassmanagementbedarf muss deshalb im Ereignisfall wirken, ohne dauerhaft Eingriffe zu verursachen, und an wechselnden Orten verfügbar sein.
-
-\begin{figure}[htbp]
+% VERSCHOBEN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.1 und 1.2 muessen jeweils einen Absatz nach vorne."
+% OPTION H am 21.09.2026: mit htbp rutschten zwei Zeilen des Folgeabsatzes vor die Abbildung auf die Vorseite;
+% mit H steht sie unmittelbar hinter dem verweisenden Absatz, Kapitel 1 bleibt bei fuenf Seiten. Alte Zeile:
+%\begin{figure}[htbp]
+\begin{figure}[H]
     \centering
 % GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
 % Sie aendert den Satz nicht, die Datei ist genau textbreit.
@@ -196,6 +197,43 @@ Ein Instrument für den Engpassmanagementbedarf muss deshalb im Ereignisfall wir
     \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
     \label{fig:engpassmanagement_nep}
 \end{figure}
+
+% GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
+%Die dargestellten Zahlen zeigen zwei Eigenschaften des Engpassmanagementbedarfs, die für die Wahl eines solchen Instruments bedeutsam sind.
+% GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
+%Der Bedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
+Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
+Zugleich wandert das Engpassmuster räumlich, denn es verschiebt sich mit der jeweils vorherrschenden Erzeugungssituation.
+% EIGENE ABLEITUNG, vom Verfasser zu pruefen, Absatzplan 1.1 Absatz 5 vom 15.09.2026.
+% BEGRUENDET am 21.09.2026, Rueckfrage des Verfassers: "warum darf es keine dauerhaften Eingriffe verursachen?"
+% Die Folgerung aus der Ereignisabhaengigkeit steht jetzt im Satz. Alte Fassung:
+%Ein Instrument für den Engpassmanagementbedarf muss deshalb im Ereignisfall wirken, ohne dauerhaft Eingriffe zu verursachen, und an wechselnden Orten verfügbar sein.
+% ABGEGRENZT am 21.09.2026, Rueckfrage des Verfassers: "aber das tut Redispatch doch auch, was willst du damit
+% abgrenzen?" Der Satz grenzt gegen den Netzausbau ab, der ortsfest und dauerhaft wirkt; der Redispatch erfuellt
+% beide Eigenschaften, und der folgende Absatz setzt bei ihm an. Alte Fassung:
+%Ein Instrument für den Engpassmanagementbedarf muss deshalb erst im Ereignisfall eingreifen, damit es in den Stunden ohne Ereignis keine Kosten verursacht, und an wechselnden Orten verfügbar sein.
+% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "Da Redispatch bisher mit wenigen grossen Erzeugern wie
+% Kraftwerken oder Winderzeugung mit grossen Anschlussleistungen gemacht wurde (Redispatch-Zahlen nach Erzeugern
+% zitieren), muss dieser um ein flexibles Instrument, das nicht ortsgebunden ist und Kleinanlagen
+% kosteneffizient einbezieht, erweitert werden." SMARD Gesamtjahr 2025: negativer Redispatch konventionelle
+% Kraftwerke 6.170 GWh, Offshore-Wind 3.351 GWh, Onshore-Wind 3.225 GWh, Photovoltaik 2.704 GWh, EE gesamt
+% 9.389 GWh; Summe 15.559 GWh, davon Kraftwerke und Wind 12.746 GWh. Alte Fassung:
+%Ein Instrument für diesen Bedarf muss deshalb im Ereignisfall wirken und an wechselnden Orten verfügbar sein, was ein Netzausbau an festem Ort nicht leisten kann.
+% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "und der Rest, Countertrading oder wie? Und was ist mit
+% Hochfahren? Beide Seiten nennen, aber nicht zu viele Zahlen, einfach Anteil an Redispatch mit Anlagen
+% groesser 500 MW Anschlussleistung." Ein Anteil nach Anschlussleistung ist mit keiner lokalen Quelle belegbar,
+% deshalb nach Anlagenart. SMARD Gesamtjahr 2025: reduziert 15.549 GWh (konventionell 6.170, Offshore 3.351,
+% Onshore 3.225, PV 2.704), erhoeht Marktkraftwerke 7.732, Reservekraftwerke 1.302, Probestarts 523,
+% Countertrading 5.211; Redispatch ohne Countertrading 25.106 GWh, davon Kraftwerke und Wind 21.780 GWh.
+% Alte Fassung:
+%Der Redispatch stützt sich bisher auf wenige große Anlagen: Von rund 15{,}6\,\si{TWh} reduzierter Einspeisung entfielen im Jahr 2025 6{,}2\,\si{TWh} auf konventionelle Kraftwerke und 6{,}6\,\si{TWh} auf Windenergieanlagen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+% NEU GEFASST am 21.09.2026, Entscheidung des Verfassers: die Zahl mit mindestens 100 MW, Verweis auf die
+% Netztransparenz-Daten. Eigene Auswertung in analysen/redispatch_einheiten: 16.893 Redispatch-Massnahmen
+% ohne Countertrading und Probefahrten, 16.517 GWh, 356 Einheiten, 206 mit Pmax >= 100 MW und 98,0 % der
+% Arbeit. Alte Fassung:
+%Der Redispatch stützt sich bisher auf konventionelle Kraftwerke und Windenergieanlagen: Von rund 25\,\si{TWh} angewiesener Einspeiseänderung im Jahr 2025 entfielen rund 22\,\si{TWh} auf das Absenken und Hochfahren dieser Anlagen, hinzu kamen 5{,}2\,\si{TWh} Countertrading \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Der Redispatch stützt sich bisher auf wenige große Anlagen: Von den 16{,}5\,\si{TWh}, die die \ac{ÜNB} im Jahr 2025 in beiden Richtungen anwiesen, entfielen 98\,\% auf 206 Einheiten mit mindestens 100\,\si{MW} angewiesener Leistung \cite{netztransparenz_regelenergie_2026}.
+Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt, nicht an einen Ort gebunden ist und auch kleine Anlagen kosteneffizient einbezieht.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
 % Befunde B18 bis B23, E9, E10, V13. Reihenfolge neu, praeventiv vor der zeitlichen Luecke, Reaktion des UENB auf spaete Zustaende ergaenzt, kurativ nicht als einzige Antwort.
@@ -270,7 +308,10 @@ Der \ac{ÜNB} lässt damit eine Vorauslastung zu, die er bisher präventiv begre
 % praeventiven Redispatch. Dass ein Redispatch nach einem Abruf den
 % (N-1)-sicheren Zustand wiederherstellt, steht in 2.1.4. Alte Fassung:
 %Damit entfällt der Teil des Redispatch, der heute allein die Marge freihält, nicht aber der Redispatch, der nach einem Abruf den \mbox{(N-1)-sicheren} Zustand wiederherstellt.
-Damit lässt sich Redispatch nicht nur vermeiden, sondern es lassen sich kurative Maßnahmen auch dort einsetzen, wo sie zusammen mit dem präventiven Redispatch das Engpassmanagement insgesamt kosteneffizienter machen.
+% GESTRICHEN am 21.09.2026, Reservekandidat "Satz zur Kosteneffizienz" aus der Uebergabe vom 18.09.2026, weil
+% Kapitel 1 nach der Verschiebung der Abbildungen und dem neuen Redispatch-Satz auf eine sechste Seite kippte.
+% Die Ergaenzung des praeventiven Redispatch traegt das Zwischenfazit 2.4. Nicht wieder aufnehmen:
+%Damit lässt sich Redispatch nicht nur vermeiden, sondern es lassen sich kurative Maßnahmen auch dort einsetzen, wo sie zusammen mit dem präventiven Redispatch das Engpassmanagement insgesamt kosteneffizienter machen.
 Weil ein Abruf nur im Fehlerfall erfolgt, fällt zudem weniger Maßnahmenvolumen an als bei einer Vorsorge, die für jeden möglichen Ausfall im Voraus getroffen wird.
 % VERSCHOBEN 16.09.2026, B1, Luecke zu Absatz 10: Die zeitliche Lücke zwischen der letzten Vorschaurechnung und dem Lieferbeginn besteht auch für die kurative Systemführung, denn die kurative Maßnahme wird ebenfalls vorab eingeplant, und ob sie sich in dieser Lücke noch anpassen lässt, hängt vom jeweiligen Konzept ab.
 % DURCHSICHT 16.09.2026, B1. Alte Fassung:
