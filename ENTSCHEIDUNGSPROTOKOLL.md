@@ -7533,6 +7533,30 @@ Art. 32 Abs. 2 nur "marktbasiert".
 **Offener Punkt.** MfRRA als Quelle beschaffen, falls die Sanktion bei
 Nichtvorhaltung oder die Leistungs-Merit-Order in den Text sollen.
 
+**Nachtrag.** Kommentar des Verfassers: "Aussage ist unnoetig, streichen" zu
+"Die aFRR und die mFRR folgen dabei derselben Verguetungslogik, sodass die
+Darstellung der aFRR im Folgenden fuer beide gilt." Gestrichen, nicht wieder
+aufzunehmen. Der Merit-Order-Satz nennt jetzt beide Produkte: "Fuer den Abruf
+von aFRR und mFRR ordnet der UeNB die Arbeitsgebote ...".
+
+**Staffelung.** Kommentar des Verfassers: "es kommt mir auch noch nicht wirklich
+die Staffelung raus. Erst wird Leistung bezuschlagt, alle Bezuschlagten der
+Leistung muessen ein Arbeitsgebot abgeben, aber auch alle Praequalifizierten
+koennen dann Energie zum Abruf anbieten. Durch das Grenzpreisverfahren wird
+hier auch angereizt teilzunehmen, da man ja ueber sein Gebot hinaus verguetet
+werden kann bei Abruf. Versuch die Struktur nochmal neu aufzubauen." Absatz
+in 2.3.4 jetzt in der Folge Leistungspreis, Arbeitspreis, Staffelung
+(Zuschlag Leistung, dann Regelarbeitsmarkt), Gebotspflicht und offener Zugang
+fuer jede praequalifizierte Anlage [Monitoringbericht 2025], Merit-Order,
+Grenzpreis [EBGL], Anreiz durch Verguetung ueber dem Gebot, Energie gesichert
+ohne Verengung des Zugangs. Gestrichen: "Das Arbeitspreisgebot entscheidet
+damit ueber den Abruf und nicht ueber die Hoehe der Verguetung. Damit ist die
+benoetigte Energie gesichert, ohne den Zugang zum Abruf zu verengen." (in
+erweiterter Form wieder aufgenommen). Im Folgeabsatz ist der Satz zur
+Gebotspflicht auf die Folge gekuerzt: "Die Reservierung der Leistung
+verpflichtet zugleich zur Teilnahme an der Energielieferung.", weil die
+Pflicht und ihr Beleg jetzt im Absatz davor stehen (Vorschlag von Fable).
+
 **Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
 
 ## chapter_3.tex
