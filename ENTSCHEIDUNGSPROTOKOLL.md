@@ -2658,6 +2658,45 @@ Bildunterschrift stehende Erlaeuterung, spaetes Handelsfenster, zwei
 Eigenschaften des Bedarfs in zwei statt drei Saetzen, Marktdesign, Satz zur
 Kosteneffizienz.
 
+### 21.09.2026, Vorspann: Engpassmanagement erklaert, Loesung vorsichtiger, Verguetung als Anforderung
+
+**Kommentare des Verfassers.** "hier Engpassmanagement in einem Nebensatz
+erklaeren"; "Loesung koennte sein, das Engpassmanagement um die Komponenten
+der kurativen Systemfuehrung zu erweitern, die das Netz effizienter nutzt und
+die technologische Flexibilitaet von EE und Speicher optimal einsetzt"; "und
+auch Verguetung"; letzter Satz "streichen".
+
+**Umsetzung.** "Das Engpassmanagement, also die Gesamtheit der Massnahmen, mit
+denen der Netzbetreiber Ueberlastungen von Leitungen und Transformatoren
+beseitigt, bewegt seither ..." (Apposition wie die Definition in 2.1). "Eine
+Loesung koennte darin liegen, das Engpassmanagement um die kurative
+Systemfuehrung zu erweitern, die das Netz effizienter nutzt und die
+technologische Flexibilitaet erneuerbarer Energien und Speicher gezielt
+einsetzt." ("optimal" als "gezielt", Stilregel 15, eigenstaendig). "Ihre
+neuartigen Anforderungen an Planung, Scharfschaltung, Abruf und Verguetung
+lassen eine systemweite Integration bisher jedoch nicht zu [InnoSys]." InnoSys
+2030 traegt die Verguetung: "Neben dem heute geltenden regulatorischen
+Redispatch-Regime waere eine marktliche Umsetzung denkbar, durch die ein
+zusaetzlicher Anreiz fuer die Bereitstellung kurativer Stellpotentiale
+geschaffen wuerde."
+
+**Zurueckgenommen, nicht wieder aufnehmen.** "Als Loesung gilt die kurative
+Systemfuehrung, die das Netz effizienter nutzt und Flexibilitaet aus
+erneuerbaren Energien und Speichern in das Engpassmanagement einbindet." und
+"Fuer die Bereitschaft, die sie von einem BESS verlangt, besteht bisher kein
+Preis."
+
+**1.1, Transportaufgabe.** Kommentar des Verfassers: "die Transportaufgabe und
+auch Engpassmuster sind deswegen instationaer und abhaengig von Zubau von
+Erzeugung und Lasten sowie Wettersituation". Jetzt: "Transportaufgabe und
+Engpassmuster sind damit nicht stationaer, sondern haengen vom Zubau von
+Erzeugung und Lasten sowie von der Wettersituation ab." ("nicht stationaer"
+statt "instationaer", Stilregel 13). Zurueckgenommen: "Die Transportaufgabe ist
+damit nicht auf eine Richtung festgelegt."
+
+**Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
+weiterhin auf Seite 5.
+
 ## chapter_2.tex
 
 ### 28.08.2026, Kopfkommentare
