@@ -2785,6 +2785,36 @@ UeNB-Massnahmen, maximale angewiesene Leistung statt Anschlussleistung,
 Sammelpositionen der Offshore-Netzverknuepfungspunkte. Zurueckgenommen: die
 SMARD-Fassung mit 25 und 22 TWh und dem Countertrading.
 
+Nachtrag 1.1, Instrument: Kommentar des Verfassers "dass im besten Fall an jedem
+Knoten die verfuegbaren Einheiten integriert werden, um flexibel auf lokale
+Ueberlastungen zu wirken". Jetzt: "Der Redispatch ist deshalb um ein Instrument
+zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Netzknoten
+die verfuegbaren Einheiten einbezieht, um auf oertliche Ueberlastungen flexibel
+zu reagieren." Zurueckgenommen: "..., nicht an einen Ort gebunden ist und auch
+kleine Anlagen kosteneffizient einbezieht."
+
+Nachtrag: auf Kommentar "und auf HoeS und HS beschraenken" lautet der Satz "...
+an jedem Netzknoten der Hoechst- und Hochspannungsebene die verfuegbaren
+Einheiten einbezieht ...", ausgeschrieben statt als Akronym.
+
+Nachtrag: der erweiterte Instrument-Satz kippte Kapitel 1 erneut um eine Zeile.
+Eine Kuerzung vor Abbildung 1.2 (Vorspann der monatlichen Gesamtkosten) griff
+nicht, weil sie nur den Weissraum vor der Abbildung mit Option H vergroesserte;
+sie ist zurueckgenommen, der Vorspann steht wieder. Stattdessen der
+Instrument-Satz gestrafft: "... an jedem Knoten der Hoechst- und
+Hochspannungsebene die verfuegbaren Einheiten einbezieht, um oertliche
+Ueberlastungen flexibel zu beheben." statt "Netzknoten" und "um auf oertliche
+Ueberlastungen flexibel zu reagieren".
+
+Nachtrag Abbildung 1.2: Vorgabe des Verfassers "Abbildung 1.2 kann auch noch
+einen Absatz nach vorne rutschen". Im Quelltext steht sie jetzt vor dem Absatz
+"Ueber den heutigen Stand hinaus ...", der auf sie verweist. Mit Option H
+passte sie dort nicht mehr auf Seite 2 (elf Zeilen Weissraum, sechste Seite),
+deshalb wieder htbp: die Abbildung steht oben auf Seite 3, hinter dem
+Verweisabsatz, der auf Seite 2 endet. Sichtbar naeher an den Anfang kaeme sie
+nur mit rund zehn Zeilen weniger auf Seite 2. Kapitel 1 endet auf Seite 5 mit
+einer Zeile Reserve, 95 Seiten.
+
 **Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
 weiterhin auf Seite 5.
 
@@ -7156,6 +7186,20 @@ weiter auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex
 Zeile 91. Build mit biber und den beiden bekannten Referenzwarnungen, 94
 Seiten. Abbildung 2.3 auf Seite 19 unter dem Einleitungsabsatz von 2.2.1.
+
+### 21.09.2026, Einleitung 2.1: Engpass und Eingriff verbunden
+
+**Kommentar des Verfassers.** "verbinde die beiden Saetze und loese vom
+Vorsatz." Jetzt: "Ueberschreitet die Belastung eines Betriebsmittels bei
+Verfuegbarkeit aller Betriebsmittel oder in einer Ausfallvariante den
+betrieblichen Sicherheitsgrenzwert, liegt ein Befund vor. Ein Engpass ist ein
+Netzzustand mit einem solchen Befund, und ein Eingriff ist erforderlich,
+sobald die Netzsicherheitsrechnung einen Befund liefert." Zurueckgenommen:
+"..., liegt ein Befund vor, und ein Engpass ist ein Netzzustand, in dem ein
+solcher Befund besteht. Ein Eingriff ist damit erforderlich, sobald die
+Netzsicherheitsrechnung einen Befund liefert."
+
+**Geprueft.** tools/pruefen.py chapter_2.tex ohne Befund.
 
 ## chapter_3.tex
 

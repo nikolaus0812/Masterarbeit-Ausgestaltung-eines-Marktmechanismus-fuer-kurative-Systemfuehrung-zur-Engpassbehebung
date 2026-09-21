@@ -153,6 +153,20 @@ Auf den Dezember 2024, geprägt von einer Windfront, entfielen rund 16\,\% der J
 %An solchen Tagen lässt sich die abgeregelte Einspeisung aus erneuerbaren Energien nicht nutzen, und ihr Ausgleich verlangt zusätzliche Erzeugung an anderer Stelle.
 In einer solchen Wetterlage regelt der Redispatch Windstrom ab, der sich nicht abtransportieren lässt, und fährt dafür teurere Erzeugung an anderer Stelle hoch.
 
+% NOCH EINEN ABSATZ NACH VORN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.2 kann auch noch einen
+% Absatz nach vorne rutschen", jetzt vor dem Absatz, der auf sie verweist.
+% VERSCHOBEN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.1 und 1.2 muessen jeweils einen Absatz nach vorne."
+% OPTION H am 21.09.2026 versucht und wieder auf htbp zurueck: an der Stelle vor dem Verweisabsatz passt
+% die Abbildung nicht mehr auf Seite 2, mit H entstuenden elf Zeilen Weissraum und eine sechste Seite.
+\begin{figure}[htbp]
+    \centering
+% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
+% Sie aendert den Satz nicht, die Datei ist genau textbreit.
+    \includegraphics[width=\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
+    \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
+    \label{fig:engpassmanagement_nep}
+\end{figure}
+
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
 % Befunde B13 bis B17, E7, E8. These und Begruendung verbunden, 13 TWh einmal, Konsequenz fuer das Instrument ergaenzt.
 % Alte Fassung, nicht wieder aufnehmen:
@@ -184,19 +198,6 @@ Nach Abbildung~\ref{fig:engpassmanagement_nep} sinkt der Bedarf bis zum Zieljahr
 %Der Restbedarf für das Jahr 2045 folgt aus der Zielsetzung des Verfahrens, denn der \ac{NEP} bestimmt den Netzausbau als Minimalkostenkombination aus Ausbauinvestitionen und verbleibenden Engpassmanagementkosten und führt den Ausbau nur so weit, wie die eingesparten Engpassmanagementkosten die Ausbaukosten übersteigen \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Der Restbedarf folgt aus der Zielsetzung des Verfahrens, denn der \ac{NEP} führt den Netzausbau nur so weit, wie die eingesparten Engpassmanagementkosten die Ausbaukosten übersteigen \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Ein verbleibender Engpassmanagementbedarf gehört damit zum ermittelten Zielzustand und fällt Instrumenten jenseits des Netzausbaus zu.
-
-% VERSCHOBEN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.1 und 1.2 muessen jeweils einen Absatz nach vorne."
-% OPTION H am 21.09.2026: mit htbp rutschten zwei Zeilen des Folgeabsatzes vor die Abbildung auf die Vorseite;
-% mit H steht sie unmittelbar hinter dem verweisenden Absatz, Kapitel 1 bleibt bei fuenf Seiten. Alte Zeile:
-%\begin{figure}[htbp]
-\begin{figure}[H]
-    \centering
-% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
-% Sie aendert den Satz nicht, die Datei ist genau textbreit.
-    \includegraphics[width=\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
-    \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
-    \label{fig:engpassmanagement_nep}
-\end{figure}
 
 % GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
 %Die dargestellten Zahlen zeigen zwei Eigenschaften des Engpassmanagementbedarfs, die für die Wahl eines solchen Instruments bedeutsam sind.
@@ -233,7 +234,15 @@ Zugleich wandert das Engpassmuster räumlich, denn es verschiebt sich mit der je
 % Arbeit. Alte Fassung:
 %Der Redispatch stützt sich bisher auf konventionelle Kraftwerke und Windenergieanlagen: Von rund 25\,\si{TWh} angewiesener Einspeiseänderung im Jahr 2025 entfielen rund 22\,\si{TWh} auf das Absenken und Hochfahren dieser Anlagen, hinzu kamen 5{,}2\,\si{TWh} Countertrading \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Der Redispatch stützt sich bisher auf wenige große Anlagen: Von den 16{,}5\,\si{TWh}, die die \ac{ÜNB} im Jahr 2025 in beiden Richtungen anwiesen, entfielen 98\,\% auf 206 Einheiten mit mindestens 100\,\si{MW} angewiesener Leistung \cite{netztransparenz_regelenergie_2026}.
-Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt, nicht an einen Ort gebunden ist und auch kleine Anlagen kosteneffizient einbezieht.
+% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "dass im besten Fall an jedem Knoten die verfuegbaren
+% Einheiten integriert werden, um flexibel auf lokale Ueberlastungen zu wirken". Alte Fassung:
+%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt, nicht an einen Ort gebunden ist und auch kleine Anlagen kosteneffizient einbezieht.
+% ERGAENZT am 21.09.2026, Kommentar des Verfassers: "und auf HoeS und HS beschraenken". Alte Fassung:
+%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Netzknoten die verfügbaren Einheiten einbezieht, um auf örtliche Überlastungen flexibel zu reagieren.
+% GESTRAFFT am 21.09.2026, damit Kapitel 1 bei fuenf Seiten bleibt; eine Kuerzung vor Abbildung 1.2 (Option H)
+% greift nicht, weil sie nur den Weissraum vor der Abbildung vergroessert. Alte Fassung:
+%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Netzknoten der Höchst- und Hochspannungsebene die verfügbaren Einheiten einbezieht, um auf örtliche Überlastungen flexibel zu reagieren.
+Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Knoten der Höchst- und Hochspannungsebene die verfügbaren Einheiten einbezieht, um örtliche Überlastungen flexibel zu beheben.
 
 % NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
 % Befunde B18 bis B23, E9, E10, V13. Reihenfolge neu, praeventiv vor der zeitlichen Luecke, Reaktion des UENB auf spaete Zustaende ergaenzt, kurativ nicht als einzige Antwort.
