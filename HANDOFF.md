@@ -12,7 +12,7 @@ durchsucht.
 
 ## 1 Stand des Dokuments
 
-Build sauber, Biber ohne Warnung, **106 Seiten**. `python tools/pruefen.py
+Build sauber, Biber ohne Warnung, **105 Seiten**. `python tools/pruefen.py
 --alle` meldet allein den Altbefund in `chapters/chapter_5.tex` Zeile 91.
 `main.tex` bindet die Kapitel 1 bis 4 ein, 5 und 6 sind auskommentiert; die
 beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.

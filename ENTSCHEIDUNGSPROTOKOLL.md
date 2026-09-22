@@ -2686,6 +2686,40 @@ ueberlaufen. Die Ersparnis liegt damit in Kapitel 4 und nicht im Gesamtumfang.
 **Ein Fehler, der beim Sichtpruefen auffiel.** Die fuenf Beschreibungen liefen
 zunaechst zu einem einzigen Absatz zusammen, weil zwischen ihnen die Leerzeile
 fehlte. Berichtigt.
+### 22.09.2026, Anhang F gekuerzt, Beschreibungsblock auf eine Seite
+
+**Vorgabe des Verfassers.** Der Block soll auf eine Seite passen, dafuer sind
+die einleitenden Saetze zu kuerzen.
+
+**Umgesetzt.** Die Einleitung steht jetzt in zwei Saetzen statt in vier. Die
+Aufzaehlung der fuenf Abbildungsverweise ist entfallen; die Verweise stehen
+stattdessen im jeweils ersten Satz der Tagesbeschreibung, also dort, wo der
+Leser sie braucht. Damit ist auch die Pruefung 10 weiter erfuellt, nach der
+jede Marke im Fliesstext referenziert sein muss. Zurueckgenommen, nicht wieder
+aufzunehmen: "Jede Kachel einer Seite traegt einen dieser Preise, sodass die
+Folge der Kacheln erkennen laesst, welche Vermarktung die kurative
+Reservierung mit steigendem Preis zuerst verdraengt." und "Ausgewertet sind
+fuenf Tage des Jahres 2025, naemlich der 20.01. in Abbildung F.1, der 11.02.
+in Abbildung F.2, der 06.05. in Abbildung F.3, der 15.05. in Abbildung F.4 und
+der 26.08. in Abbildung F.5."
+
+**Stand.** Anhang F umfasst sechs Seiten, naemlich eine mit der Einleitung und
+den fuenf Tagesbeschreibungen und fuenf mit den Abbildungen. Anhang G steht
+auf einer Seite. Das Dokument umfasst 105 Seiten.
+
+**Hinweis zur Vorgabe.** Der Verfasser hat von Anhang G gesprochen. Anhang G
+stand bereits auf einer Seite; ueber zwei Seiten lief der Beschreibungsblock
+in Anhang F. Die Kuerzung ist deshalb dort vorgenommen und dem Verfasser
+gemeldet.
+
+**Dreimal beschaedigte Zwischenfassung, berichtigt.** Beim Kuerzen sind die
+LaTeX-Backslashes zweimal verstuemmelt worden, weil das Aenderungsskript
+Zeichenketten ohne Raw-Praefix verwendete: aus ef wurde ein Wagenruecklauf
+und aus \, ein doppelter Backslash. Die Datei ist danach mit durchgehenden
+Raw-Strings neu erzeugt und auf streunende Wagenruecklaeufe und doppelte
+Backslashes geprueft, beides null. Das bestaetigt die Regel aus HANDOFF.md
+Abschnitt 4, Skripte nur ueber das Write-Werkzeug anzulegen und nicht ueber
+eingebettete Heredocs zu veraendern.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
