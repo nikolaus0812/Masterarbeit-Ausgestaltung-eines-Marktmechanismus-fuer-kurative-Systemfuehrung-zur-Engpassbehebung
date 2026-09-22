@@ -2770,6 +2770,41 @@ melden.
 
 **Stand.** Anhang F umfasst sechs Seiten, die drei Absaetze stehen gemeinsam
 auf der ersten. Das Dokument umfasst 105 Seiten, Kapitel 4 endet auf Seite 68.
+### 22.09.2026, Abschnitt 4.1 auf zwei Befundabsaetze gebracht
+
+**Vorgabe des Verfassers.** Die Informationen seien richtig, aber in der
+falschen Reihenfolge. Gewuenscht sind zwei Absaetze: einer, der die Tage
+nacheinander durchgeht und dabei vergleichend bleibt statt jede Zahl stumpf
+zu nennen, und einer mit den Aussagen, die fuer alle oder mehrere Abbildungen
+gelten.
+
+**Umgesetzt.** Die fuenf Befundabsaetze sind zu zwei zusammengezogen, der
+einleitende Absatz zu Aufbau und Tagesauswahl bleibt davor stehen. Der erste
+Befundabsatz fuehrt die Tage entlang zweier Vergleichsachsen: welcher Markt
+zuerst weicht und wie weit die Verdraengung reicht. Er beginnt mit dem 20.01.
+(aFRR zuerst, Day-Ahead zuletzt, dazu die Umschichtung mit 106 Prozent),
+stellt den 26.08. als Umkehrung daneben, nennt den 06.05. als einzigen Tag mit
+FCR und schliesst mit den beiden Randfaellen, naemlich dem 11.02. als Tag mit
+der weitesten und dem 15.05. als Tag mit der geringsten Verdraengung.
+
+**Der zweite Befundabsatz** traegt vier Aussagen ueber alle fuenf Tage,
+naemlich dass die Reihenfolge der Preisstruktur des Tages folgt, dass sich
+keine feste Preismarke angeben laesst, dass die aFRR-Leistung an jedem Tag der
+groesste Posten ist und in der Regel den Preis setzt, und dass der IDC laenger
+ueberlebt, als sein Anteil erwarten laesst. Der Schlusssatz nennt die Grenze,
+naemlich dass fuenf Tage die moeglichen Reihenfolgen belegen und nicht ihre
+Haeufigkeit.
+
+**Keine Aussage und keine Zahl geaendert.** Allein die Reihenfolge ist neu.
+Der Befund zur Umschichtung steht im ersten Absatz, weil er auf einem Tag und
+einem Preispunkt beruht; sein Vorbehalt ist mitgenommen. Die alte Reihenfolge
+steht vollstaendig als Kommentar in chapter_4.tex.
+
+**Zwei eigene Fehler beim Umbau, berichtigt.** Der Kommentarblock war dem
+Aenderungsskript als eine einzige Listenzeile uebergeben worden, sodass fuenf
+einsame LF in die CRLF-Datei gelangten; Pruefung 1 hat das gemeldet. Die Datei
+ist aus dem letzten Commit wiederhergestellt und mit zeilenweise uebergebenem
+Kommentarblock neu erzeugt worden, danach null einsame LF.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
