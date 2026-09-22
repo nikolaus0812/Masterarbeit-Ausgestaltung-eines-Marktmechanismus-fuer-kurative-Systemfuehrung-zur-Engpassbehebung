@@ -261,31 +261,30 @@ Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Ab
 % 3071 Mio. Euro als vorlaeufige Gesamtkosten; der Text folgt der Quelle,
 % der Quotient von 101 Euro je Megawattstunde ist derselbe.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{figures/chapter_4/jahreslauf_reservierungspreis_redispatch_2025_median.pdf}
-    \caption{Median des kurativen Reservierungspreises je Tag des Jahres 2025 neben der Redispatchleistung im Tagesmittel, oben die Entlade- und unten die Ladereservierung; die waagerechte Linie ist der Arbeitspreis des präventiven Redispatch 2025 von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.}
-    \label{fig:jahreslauf_median}
-\end{figure}
-
+% VERSCHOBEN am 22.09.2026 nach Anhang G, Vorgabe des Verfassers: der
+% Median liegt dauerhaft unter der Bezugslinie, seine Erwaehnung im Text
+% reicht, und das arithmetische Mittel ist die aussagekraeftigere Groesse.
+% Die figure-Umgebung stand hier und liegt jetzt in
+% extras/attachment_jahreslauf.tex unter der Marke anh:jahreslauf_median.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/jahreslauf_reservierungspreis_redispatch_2025_mittel.pdf}
-    \caption{Arithmetisches Mittel des kurativen Reservierungspreises je Tag des Jahres 2025 neben der Redispatchleistung im Tagesmittel, in der Skalierung der Abbildung~\ref{fig:jahreslauf_median}; der Abstand beider Abbildungen zeigt die Rechtsschiefe der Verteilung.}
+    \caption{Arithmetisches Mittel des kurativen Reservierungspreises je Tag des Jahres 2025 neben der Redispatchleistung im Tagesmittel, oben die Entlade- und unten die Ladereservierung; die waagerechte Linie ist der Arbeitspreis des präventiven Redispatch 2025 von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.}
     \label{fig:jahreslauf_mittel}
 \end{figure}
 
 Das Muster aus Abschnitt~\ref{sec:price_pattern} sagt, wann die Vorhaltung teuer ist, und lässt offen, ob diese Zeiten mit dem Engpassmanagementbedarf zusammenfallen.
-In den Abbildungen~\ref{fig:jahreslauf_median} und~\ref{fig:jahreslauf_mittel} steht der kurative Reservierungspreis je Tag neben der Redispatchleistung desselben Tages, in der ersten Abbildung als Tagesmedian und in der zweiten als Tagesmittel.
-Beide Abbildungen tragen dieselbe Skalierung, sodass ihr Abstand die Rechtsschiefe der Verteilung zeigt.
+In Abbildung~\ref{fig:jahreslauf_mittel} steht das arithmetische Mittel des kurativen Reservierungspreises je Tag neben der Redispatchleistung desselben Tages.
+Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel sich mit der beschafften Menge multipliziert und damit die Kosten des \ac{ÜNB} trägt.
 Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,\EurMWh{} in der Laderichtung, der Median der Tagesmittel dagegen 18,18 und 21,78\,\EurMWh{}.
+Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellung im Median steht in Anhang~\ref{anh:jahreslauf_median}.
 
 % NACHTRAG am 22.09.2026, Vorgabe des Verfassers. Die bewegte Menge ist
 % jetzt nach Richtungen aufgeschluesselt, der Nenner ausdruecklich nicht
 % halbiert, und die Begruendung dafuer steht im folgenden Absatz. Alte
 % Fassung, nicht wieder aufzunehmen:
 %Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}, woraus sich bezogen auf die bewegte Menge von 30,44\,\si{TWh} ein Arbeitspreis von 101 Euro je Megawattstunde ergibt.
-Die waagerechte Linie beider Abbildungen bezeichnet den Arbeitspreis des heutigen präventiven Redispatch.
+Die waagerechte Linie der Abbildung bezeichnet den Arbeitspreis des heutigen präventiven Redispatch.
 % GEAENDERT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 1.2:
 % Kosten UND Menge stammen jetzt aus derselben Mitteilung. Vorher stand die
 % Menge aus einer zweiten Quelle daneben, was eine Schriftfassung nicht
@@ -294,7 +293,7 @@ Die waagerechte Linie beider Abbildungen bezeichnet den Arbeitspreis des heutige
 Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro und ein Maßnahmenvolumen von 30\,319\,\si{GWh} aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.
 Dieser Vergleichswert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
-Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildungen sie nebeneinanderstellen und nicht gegeneinander aufrechnen.
+Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
 
 % GEAENDERT am 22.09.2026, Vorgabe des Verfassers: die Bezugslinie wird
 % nicht nach Richtung getrennt, sondern ueber das gesamte
@@ -324,7 +323,7 @@ Der Wert wird deshalb über das gesamte Maßnahmenvolumen gemittelt und weder na
 Er gibt damit eine Größenordnung an, gegen die sich die kurative Vorhaltung einordnen lässt, und nicht den Betrag, den der \ac{ÜNB} je bewegter Megawattstunde zahlt.
 
 Gemessen am Tagesmedian bleibt der kurative Reservierungspreis in beiden Richtungen an allen 365 Tagen unter dieser Linie.
-Auch das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
+Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
 % ERGAENZT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4,
 % Rueckfrage 1: die Stundenzahl ist die schaerfere Aussage, weil die
 % Tagesebene praktisch jeden Tag unter die Linie bringt.

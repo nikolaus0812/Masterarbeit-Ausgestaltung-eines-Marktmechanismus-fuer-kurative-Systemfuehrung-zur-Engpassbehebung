@@ -2643,6 +2643,49 @@ aFRR-Liefermodus, steht weiter auf den alten vier Tagen einschliesslich des
 22.02. und ist dort als historische Auswertung gekennzeichnet. Die
 Schriftfassung zitiert sie in 4.6.1 nur mit den Varianzanteilen von 6,7 und
 4,3 Prozent, die die Aufgabe der Tagesfassung begruenden; das bleibt gueltig.
+### 22.09.2026, Jahreslauf im Median nach Anhang G, Preisgitter beschrieben
+
+**Vorgabe des Verfassers, erstens.** Die Abbildung des Jahreslaufs im Median
+wandert aus Abschnitt 4.5 in den Anhang, um Platz zu sparen. Begruendung des
+Verfassers: der Median liegt dauerhaft unter der Bezugslinie, seine Erwaehnung
+im Text reicht, und das arithmetische Mittel ist die aussagekraeftigere
+Groesse.
+
+**Umgesetzt.** Angelegt ist extras/attachment_jahreslauf.tex als Anhang G, mit
+drei einleitenden Saetzen und der Abbildung. Abschnitt 4.5 zeigt jetzt allein
+das arithmetische Mittel und nennt den Median als Zahl, naemlich 12,70 und
+9,88 Euro je Megawatt und Stunde gegen 18,18 und 21,78 im Mittel. Der Verweis
+auf die Medianfassung steht als Sachverweis auf den Anhang. Die
+Bildunterschrift der Mittelfassung verwies bisher auf die Skalierung der
+Medianfassung und traegt jetzt die Angaben selbst.
+
+**Vorgabe des Verfassers, zweitens.** Anhang F beschreibt je Tag, wann welcher
+Markt weicht, je Markt ein bis zwei Saetze, fuer alle Tage gleich aufgebaut
+und rein beschreibend.
+
+**Umgesetzt.** Je Tag ein Absatz aus vier Saetzen nach demselben Muster:
+Ausgangsbelegung der drei Maerkte bei Preis null, dann je Markt der Preis der
+Halbierung und des Unterschreitens von einem Zehntel, zuletzt der
+Bindungsgrad an einem markanten Preis. Die Zahlen stammen aus
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 2, 2.1 und 2.2. Am 06.05.2025
+ist die FCR als vierter Markt genannt, weil sie nur dort auftritt.
+
+**Anordnung, eigenstaendige Entscheidung.** Die fuenf Beschreibungen stehen
+gesammelt vor den fuenf Abbildungen und nicht jeweils vor der eigenen.
+Grund: eine Beschreibung und eine ganzseitige Abbildung von 615 pt passen bei
+einem Satzspiegel von 665 pt nicht gemeinsam auf eine Seite. Mit der
+Beschreibung vor der jeweiligen Abbildung waere Anhang F von fuenf auf zehn
+Seiten gewachsen, gesammelt sind es sechs. Das laeuft der Platzersparnis nicht
+zuwider, die der Verfasser mit der Verschiebung der Abbildung bezweckt hat.
+
+**Seitenbilanz.** Kapitel 4 endet jetzt auf PDF-Seite 68 statt 69, ist also
+eine Seite kuerzer. Das Dokument waechst von 105 auf 106 Seiten, weil Anhang G
+eine Seite kostet und die Beschreibungen in Anhang F auf die zweite Seite
+ueberlaufen. Die Ersparnis liegt damit in Kapitel 4 und nicht im Gesamtumfang.
+
+**Ein Fehler, der beim Sichtpruefen auffiel.** Die fuenf Beschreibungen liefen
+zunaechst zu einem einzigen Absatz zusammen, weil zwischen ihnen die Leerzeile
+fehlte. Berichtigt.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

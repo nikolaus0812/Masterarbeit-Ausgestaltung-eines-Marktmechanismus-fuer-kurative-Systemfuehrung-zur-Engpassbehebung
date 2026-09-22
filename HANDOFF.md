@@ -12,7 +12,7 @@ durchsucht.
 
 ## 1 Stand des Dokuments
 
-Build sauber, Biber ohne Warnung, **104 Seiten**. `python tools/pruefen.py
+Build sauber, Biber ohne Warnung, **106 Seiten**. `python tools/pruefen.py
 --alle` meldet allein den Altbefund in `chapters/chapter_5.tex` Zeile 91.
 `main.tex` bindet die Kapitel 1 bis 4 ein, 5 und 6 sind auskommentiert; die
 beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.
@@ -22,8 +22,8 @@ beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.
 | Kapitel 1 Einleitung | PDF-Seite 9 bis 13, fünf Seiten, **keine Reserve** |
 | Kapitel 2 Grundlagen und Stand der Technik | PDF-Seite 14 bis 37 |
 | Kapitel 3 Marktmechanismus und Modellierung | PDF-Seite 38 bis 56 |
-| Kapitel 4 Ergebnisse | PDF-Seite 57 bis 69 |
-| Anhänge A bis F | A Weber, B Überlastdauer, C Optimierungsproblem, D Ablauf, E Validierung je Markt, F Preisgitter |
+| Kapitel 4 Ergebnisse | PDF-Seite 57 bis 68 |
+| Anhänge A bis G | A Weber, B Überlastdauer, C Optimierungsproblem, D Ablauf, E Validierung je Markt, F Preisgitter, G Jahreslauf im Median |
 
 Logische Seitenzahl ist PDF-Seite minus acht.
 
