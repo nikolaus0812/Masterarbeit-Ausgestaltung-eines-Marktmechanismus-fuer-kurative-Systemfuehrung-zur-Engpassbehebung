@@ -2321,6 +2321,40 @@ unmittelbar auftrug. Der Verfasser hat am selben Tag angemerkt, dass er den
 Wortlaut mitentwickeln will. Der vorliegende Text gilt deshalb als erste
 Fassung und wird abschnittsweise gemeinsam durchgegangen, nicht als
 abgeschlossen.
+### 22.09.2026, vier offene Punkte entschieden
+
+**G1, Abgleich bestehender Marktdesignansaetze.** Entscheidung des
+Verfassers: der Gedanke, der kapazitaetsbasierte Redispatch beschaffe im Kern
+dieselbe Groesse wie eine kurative Vorhaltung und unterscheide sich nur in
+Ausloeser und Reaktionszeit, gehoert in die Diskussion in Kapitel 5 und nicht
+nach 3.1.2 oder 3.3.1. In HANDOFF.md Abschnitt 7 vorgemerkt. Folge: die beiden
+Marken sec:market_design_comparison und sec:product_design standen seit dem
+Parken des Unterabschnitts ohne zugehoerige Ueberschrift in chapter_3.tex und
+sind entfernt. Der einzige Verweis auf sec:market_design_comparison steht
+auskommentiert in chapter_2.tex Zeile 1451 und bleibt auskommentiert.
+
+**G3, wachsender BESS-Bestand.** Entscheidung des Verfassers: das Argument,
+der Bestand an BESS wachse, waehrend der Bedarf an Regelleistung aus der
+Dimensionierung des Systems folge und nicht mitwachse, dient der Begruendung
+der niedrigeren aFRR-Preise in der Zukunftssensitivitaet 4.6.4. Hilfsweise
+gehoert es in die Diskussion. In HANDOFF.md Abschnitt 6 beim Vermerk zu 4.6.4
+festgehalten, der Abschnitt wartet ohnehin auf sensi8.
+
+**Zielabsatz in 1.2.** Der letzte Satz beschrieb noch die Sortierung von
+Kapitel 4 vom 18.09.2026. Zurueckgenommen, nicht wieder aufzunehmen: "In
+Kapitel 4 wird das Verfahren ueber alle Tage des Jahres 2025 ausgewertet,
+naemlich nach Hoehe und Streuung des kurativen Reservierungspreises, nach
+seinem Muster ueber Tag und Jahr und nach seinem Verhaeltnis zum
+Engpassmanagementbedarf." Neu genannt sind die verdraengte Vermarktung und
+die Kosten der vollstaendigen Verdraengung, also die Abschnitte 4.1 und 4.2.
+Kapitel 1 bleibt auf fuenf Seiten, es endet weiter auf PDF-Seite 13.
+
+**Revenue-Index in 3.3.1 und 3.3.2.** Entscheidung des Verfassers: die
+Nennung von 260,0 Tausend Euro je Megawatt und Jahr bleibt an beiden Stellen.
+Abschnitt 3.3.1 fuehrt den Massstab ein, Abschnitt 3.3.2 braucht ihn fuer das
+Verhaeltnis von 1,31. Die Wiederholung steht damit in einem Absatz, der sie
+fuer seine eigene Rechnung braucht, und ist nach dem Dopplungsmassstab vom
+20.09.2026 zulaessig.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

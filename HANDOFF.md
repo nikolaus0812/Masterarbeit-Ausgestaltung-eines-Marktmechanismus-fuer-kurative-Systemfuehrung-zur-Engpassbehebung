@@ -212,6 +212,11 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 - **4.6.3 und 4.6.4 sind leer** und warten auf `sensi8_spanne_und_niveau` aus
   dem Analyse-Repository. Nicht mit den Einzeltagsfassungen füllen.
+- **Für 4.6.4 vorgemerkt (G3), Entscheidung des Verfassers vom 22.09.2026:**
+  Die niedrigeren \ac{aFRR}-Preise der Zukunftsvariante lassen sich damit
+  begründen, dass der Bestand an \ac{BESS} wächst, während der Bedarf an
+  Regelleistung aus der Dimensionierung des Systems folgt und nicht mitwächst.
+  Hilfsweise gehört das Argument in die Diskussion.
 - **4.7 Diskussion ist leer** und folgt nach den beiden Sensitivitäten.
 - `ERGEBNISSE…md` Abschnitt 7.4 liefert die **Tage** unter 101 Euro je
   Megawattstunde, nicht aber die **Stunden** und nicht die Aufteilung je
@@ -231,16 +236,18 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   ebenso, die Zahlen unterscheiden sich aber, weil die Abgrenzungen andere
   sind. **Zu entscheiden:** entweder einen Eintrag für energy-charts anlegen
   oder den Absatz auf die Zahlen der Bundesnetzagentur umstellen.
-- **Abschnitt 1.2** beschreibt im letzten Satz des Zielabsatzes noch die alte
-  Sortierung von Kapitel 4 und nennt die neuen Abschnitte 4.1 und 4.2 nicht.
+- ~~Abschnitt 1.2 beschreibt noch die alte Sortierung von Kapitel 4.~~
+  **Erledigt am 22.09.2026**, der Zielabsatz nennt jetzt die verdrängte
+  Vermarktung und die Kosten der vollständigen Verdrängung.
 - `fuellgrad_iterationen_2025.pdf` und `maximalpreis_iterationen_2025.pdf`
   liegen in `figures/chapter_3/`, stehen aber in keiner `figure`-Umgebung. Das
   deckt sich mit der Anweisung, wonach der Füllgradvergleich im Ergebnisteil
   nicht erscheint. Falls einer als Anhangbeleg gewünscht ist, ist er
   einzubinden.
-- Der Revenue-Index mit 260,0 steht jetzt in 3.3.1 und in 3.3.2. Die
-  Wiederholung macht das Verhältnis 1,31 nachrechenbar, lässt sich aber
-  streichen.
+- ~~Revenue-Index 260,0 in 3.3.1 und 3.3.2.~~ **Entschieden am 22.09.2026:
+  bleibt.** Abschnitt 3.3.1 führt den Maßstab ein, Abschnitt 3.3.2 braucht ihn
+  für das Verhältnis von 1,31; die Wiederholung steht in einem Absatz, der sie
+  für seine eigene Rechnung braucht.
 
 **Ältere Punkte, unverändert**
 
@@ -252,14 +259,8 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   im laufenden Text). G5 und G7 betreffen den Text nicht, denn weder die 8 Euro
   je Megawattstunde Degradationskosten noch die 2000 MW ausgeschriebene
   aFRR-Menge stehen in Kapitel 3. Offen bleiben:
-    - **G1**, der Gedanke, der kapazitätsbasierte Redispatch beschaffe im Kern
-      dieselbe Größe wie eine kurative Vorhaltung und unterscheide sich nur in
-      Auslöser und Reaktionszeit. Er steht in keinem Absatz, sein Ort ist nicht
-      entschieden (3.1.2, 3.3.1 oder Kapitel 5).
-    - **G3**, das Argument, der Bestand an \ac{BESS} wachse, während der Bedarf
-      an Regelleistung aus der Dimensionierung des Systems folge und nicht
-      mitwachse, sodass die Ausschließlichkeit der kurativen Zusage die
-      Regelleistung weniger verdränge. Nicht geschrieben.
+    - ~~G1~~ und ~~G3~~ sind am 22.09.2026 vom Verfasser verortet, siehe
+      Abschnitt 7 und den Vermerk zu 4.6.4 weiter oben.
     - **G13**, vor Abgabe zu prüfen, ob eine Mitteilung der Beschlusskammer zu
       Batteriespeichern ergangen ist. Recherchestand August 2026: keine.
     - **G4 und G9** gehören nach Kapitel 5, siehe Abschnitt 7.
@@ -308,6 +309,11 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 - **Aus Kapitel 4:** der Preis ist ein Preis gegen die Regelleistung; die
   Granularität des Produkts bestimmt die Zahlung; günstig genau dann, wenn viel
   gebraucht wird (Winter); die teuren Stunden liegen im Abendmaximum.
+- **G1, Entscheidung des Verfassers vom 22.09.2026:** Der kapazitätsbasierte
+  Redispatch beschafft im Kern dieselbe Größe wie eine kurative Vorhaltung und
+  unterscheidet sich nur in Auslöser und Reaktionszeit. Das Argument gehört in
+  die Diskussion. Die beiden verwaisten Marken in `chapter_3.tex` sind deshalb
+  am selben Tag entfernt worden.
 
 ---
 
