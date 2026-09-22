@@ -2282,6 +2282,45 @@ genannten Staende 11:17 und 11:28 entsprechen den dort liegenden Dateien.
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in
 chapter_5.tex. Build ohne Fehler, 104 Seiten, Kapitel 4 von PDF-Seite 57 bis
 69, Kapitelanfaenge unveraendert.
+### 22.09.2026, Bezugslinie ueber das Gesamtvolumen, Massnahmenvolumen in Kapitel 1
+
+**Vorgabe des Verfassers.** Die Bezugslinie des praeventiven Redispatch wird
+nicht nach Richtung getrennt, sondern ueber das gesamte Massnahmenvolumen
+gemittelt. Begruendung des Verfassers: die Kostenstruktur des
+Netzengpassmanagements ist ohnehin nicht je Megawattstunde uebertragbar, der
+Wert ist also eine vereinfachte Zahl.
+
+**Umgesetzt in 4.5.** Der Quotient steht mit 3071 Millionen Euro auf 30319
+Gigawattstunden aus einer einzigen Mitteilung. Die Einschraenkung steht als
+eigener Absatz und ist belegt: allein 952 Millionen Euro entfallen auf die
+vorhalte- und einsatzunabhaengigen Kosten der Reservekraftwerke, haengen also
+nicht an der bewegten Energie; dazu fasst das Massnahmenvolumen Instrumente
+mit verschiedener Kostenstruktur zusammen.
+
+**Entfallen.** Die beiden Absaetze zur Asymmetrie der Richtungen sind
+ersatzlos gestrichen, ihr Wortlaut steht als Kommentar in chapter_4.tex. Damit
+entfallen auch die Richtungsmengen von 12,15 gegen 18,30 TWh, die vier
+Vergleichsnenner (101, 168, 202, 253), die Zuordnung des Fehlbetrags von
+6,15 TWh und die Vermutung zum Einspeisemanagement. Der Vorteil: der Beleg des
+Quotienten haengt jetzt an einer einzigen Quelle, und die Mengenreihe aus
+energy-charts ohne Eintrag in literature.bib wird nicht mehr gebraucht. Der
+offene Punkt zum Beleg der Richtungsmengen ist damit erledigt.
+
+**Massnahmenvolumen in Kapitel 1, entschieden.** Abschnitt 1.1 nennt 30,4 TWh
+und stuetzt sich auf die Datenreihe Mengen und Kosten des
+Netzengpassmanagements, Abschnitt 4.5 nennt 30319 Gigawattstunden aus der
+Mitteilung zum Netzengpassmanagement 2025. Der Unterschied von 0,1 TWh bleibt
+stehen. Begruendung des Verfassers: die Abbildung in Kapitel 1 zeigt ebenfalls
+30,4, die jeweils gesetzten Quellen tragen die Zahl, und der Unterschied ist
+gering. Nicht zu aendern.
+
+**Vermerk zum Vorgehen.** Kapitel 4 ist am 22.09.2026 in einem Zug
+ausformuliert worden, ohne den Absatzplan nach WORKFLOW.md Abschnitt 3. Grund
+war die Anweisung des Analyse-Repositorys, die das Schreiben des Fliesstextes
+unmittelbar auftrug. Der Verfasser hat am selben Tag angemerkt, dass er den
+Wortlaut mitentwickeln will. Der vorliegende Text gilt deshalb als erste
+Fassung und wird abschnittsweise gemeinsam durchgegangen, nicht als
+abgeschlossen.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

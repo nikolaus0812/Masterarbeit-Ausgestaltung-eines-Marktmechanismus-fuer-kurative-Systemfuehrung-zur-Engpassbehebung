@@ -220,7 +220,7 @@ Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Ab
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/jahreslauf_reservierungspreis_redispatch_2025_median.pdf}
-    \caption{Median des kurativen Reservierungspreises je Tag des Jahres 2025 neben der Redispatchleistung im Tagesmittel, oben die Entlade- und unten die Ladereservierung; die waagerechte Linie ist der Arbeitspreis des präventiven Redispatch 2025 von 101 Euro je bewegter Megawattstunde, gemittelt über beide Richtungen.}
+    \caption{Median des kurativen Reservierungspreises je Tag des Jahres 2025 neben der Redispatchleistung im Tagesmittel, oben die Entlade- und unten die Ladereservierung; die waagerechte Linie ist der Arbeitspreis des präventiven Redispatch 2025 von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.}
     \label{fig:jahreslauf_median}
 \end{figure}
 
@@ -248,31 +248,36 @@ Die waagerechte Linie beider Abbildungen bezeichnet den Arbeitspreis des heutige
 % belegen kann. Alte Fassung, nicht wieder aufzunehmen:
 %Diesen Kosten steht eine bewegte Menge von 12,15\,\si{TWh} Erhöhung und 18,30\,\si{TWh} Absenkung gegenüber, woraus sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde ergibt, gemittelt über beide Richtungen.
 Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro und ein Maßnahmenvolumen von 30\,319\,\si{GWh} aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über beide Richtungen.
+Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.
 Dieser Vergleichswert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
 Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildungen sie nebeneinanderstellen und nicht gegeneinander aufrechnen.
 
-% NACHTRAG am 22.09.2026, Vorgabe des Verfassers: Begruendung, warum der
-% Nenner beide Richtungen enthaelt und nicht halbiert wird. Die vier
-% denkbaren Nenner und die Bilanz sind im Analyse-Repository geprueft.
-Der Nenner enthält beide Richtungen und wird nicht halbiert.
-Eine Halbierung setzte voraus, dass jede Absenkung ein gleich großes Hochfahren trägt.
-Diese Symmetrie liegt im Jahr 2025 nicht vor, denn der Erhöhung von 12,15\,\si{TWh} steht eine Absenkung von 18,30\,\si{TWh} gegenüber.
-Je nach gewähltem Nenner ergäben sich 101 Euro je Megawattstunde für die Summe beider Richtungen, 168 für die Absenkung allein, 202 für die halbe Summe und 253 für die Erhöhung allein.
-Allein der Wert von 101 Euro je Megawattstunde kommt ohne eine Annahme über die Symmetrie aus und wird deshalb ausgewiesen.
-Eine Aufteilung dieses Arbeitspreises nach Richtung ist nicht möglich, denn die Mengen liegen je Richtung vor und die Kosten allein als eine Summe.
-
-% NACHTRAG am 22.09.2026, Vorgabe des Verfassers: Herkunft des Unterschieds
-% zwischen den Richtungen. Belegt sind die Bilanz und die Richtung des
-% Countertradings; die Zuordnung des Restes ist ausdruecklich als Vermutung
-% gekennzeichnet.
-Der Unterschied zwischen beiden Richtungen beträgt 6,15\,\si{TWh} und lässt sich zum Teil zuordnen.
-Anlagen für erneuerbare Energien stehen mit 9,50\,\si{TWh} nahezu allein auf der Seite der Absenkung, während konventionelle Anlagen und Speicher netto 3,35\,\si{TWh} hochfahren und damit einen Teil der abgeregelten Einspeisung ersetzen.
-Das Countertrading scheidet als Erklärung aus, denn es erhöht die deutsche Einspeisung und vergrößert den Unterschied.
-An der Grenze zu Dänemark stehen 2,50\,\si{TWh} Erhöhung null Absenkung gegenüber.
-Der Redispatch im engeren Sinn ist mit einem Überhang von 1,17\,\si{TWh} bei rund 12\,\si{TWh} Umsatz nahezu ausgeglichen.
-Der verbleibende Teil dürfte auf das Einspeisemanagement entfallen, das die Maßnahmenliste nicht führt.
-Diese Zuordnung ist nicht belegt und bleibt eine Vermutung.
+% GEAENDERT am 22.09.2026, Vorgabe des Verfassers: die Bezugslinie wird
+% nicht nach Richtung getrennt, sondern ueber das gesamte
+% Massnahmenvolumen gemittelt, weil die Kostenstruktur des
+% Netzengpassmanagements nicht je Megawattstunde uebertragbar ist. Damit
+% entfallen die beiden Absaetze zur Asymmetrie der Richtungen. Sie stuetzten
+% sich auf eine Mengenreihe aus einer zweiten Quelle ohne Eintrag in
+% literature.bib; der Beleg des Quotienten haengt jetzt an einer einzigen
+% Mitteilung. ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
+%Der Nenner enthält beide Richtungen und wird nicht halbiert.
+%Eine Halbierung setzte voraus, dass jede Absenkung ein gleich großes Hochfahren trägt.
+%Diese Symmetrie liegt im Jahr 2025 nicht vor, denn der Erhöhung von 12,15 TWh steht eine Absenkung von 18,30 TWh gegenüber.
+%Je nach gewähltem Nenner ergäben sich 101 Euro je Megawattstunde für die Summe beider Richtungen, 168 für die Absenkung allein, 202 für die halbe Summe und 253 für die Erhöhung allein.
+%Allein der Wert von 101 Euro je Megawattstunde kommt ohne eine Annahme über die Symmetrie aus und wird deshalb ausgewiesen.
+%Eine Aufteilung dieses Arbeitspreises nach Richtung ist nicht möglich, denn die Mengen liegen je Richtung vor und die Kosten allein als eine Summe.
+%Der Unterschied zwischen beiden Richtungen beträgt 6,15 TWh und lässt sich zum Teil zuordnen.
+%Anlagen für erneuerbare Energien stehen mit 9,50 TWh nahezu allein auf der Seite der Absenkung, während konventionelle Anlagen und Speicher netto 3,35 TWh hochfahren und damit einen Teil der abgeregelten Einspeisung ersetzen.
+%Das Countertrading scheidet als Erklärung aus, denn es erhöht die deutsche Einspeisung und vergrößert den Unterschied.
+%An der Grenze zu Dänemark stehen 2,50 TWh Erhöhung null Absenkung gegenüber.
+%Der Redispatch im engeren Sinn ist mit einem Überhang von 1,17 TWh bei rund 12 TWh Umsatz nahezu ausgeglichen.
+%Der verbleibende Teil dürfte auf das Einspeisemanagement entfallen, das die Maßnahmenliste nicht führt.
+%Diese Zuordnung ist nicht belegt und bleibt eine Vermutung.
+Der so gebildete Arbeitspreis ist ein vereinfachter Vergleichswert und keine Kostenkennzahl je Megawattstunde.
+Die Kosten des Netzengpassmanagements hängen nicht durchgehend an der bewegten Energie, denn allein 952 Millionen Euro entfallen im Jahr 2025 auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Das Maßnahmenvolumen fasst zudem Instrumente mit verschiedener Kostenstruktur zusammen, nämlich den Redispatch mit Markt- und Reservekraftwerken, die Entschädigung abgeregelter Anlagen und das Countertrading.
+Der Wert wird deshalb über das gesamte Maßnahmenvolumen gemittelt und weder nach Richtung aufgeteilt noch halbiert.
+Er gibt damit eine Größenordnung an, gegen die sich die kurative Vorhaltung einordnen lässt, und nicht den Betrag, den der \ac{ÜNB} je bewegter Megawattstunde zahlt.
 
 Gemessen am Tagesmedian bleibt der kurative Reservierungspreis in beiden Richtungen an allen 365 Tagen unter dieser Linie.
 Auch das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
