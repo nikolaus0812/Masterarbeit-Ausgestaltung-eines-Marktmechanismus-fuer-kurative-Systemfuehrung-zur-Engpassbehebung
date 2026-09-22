@@ -223,6 +223,10 @@ afterskip=.25\baselineskip]{subsubsection}
 		]{biblatex}}
 
 \urlstyle{same} % Set URL font style to text font style
+% URL-UMBRUCH am 21.09.2026: lange URLs ohne Trennzeichen liefen in den Rand, Umbruch auch nach Ziffern und Buchstaben erlaubt.
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburllcpenalty}{9000}
 % Set the abstract field to null to prevent errors caused by invalid symbols in the abstract
 \DeclareSourcemap{
 	\maps[datatype=bibtex]{

@@ -12936,6 +12936,54 @@ denn das Deckblatt des Gutachtens ist fuer die Frage, wer es beauftragt hat, die
 naehere Quelle. Kapitel 2 nennt den Auftraggeber nicht, die Frage hat dort also
 keine Folge. Fuer Kapitel 5 ist sie vorzumerken.
 
+### 21.09.2026, Literaturverzeichnis bereinigt
+
+**Anlass.** Verfasser: "kannst du das Literaturverzeichnis nochmal pruefen, es
+sieht ein wenig wirr aus." Befund und Vorschlag von Fable, mit "umsetzen"
+freigegeben. Der Satz war in Ordnung, die Unruhe kam aus den Eintraegen.
+
+**Kuerzel.** label-Feld gesetzt: BDEW (Branchenleitfaden 2018), BMWK
+(Strommarktdesign 2024), EnWG (konsolidierte Fassung 2025). Das Praefix BUN
+steht damit allein fuer die Bundesnetzagentur. Grenzwertkonzept und NEP
+2037/2045 (2. Entwurf) tragen jetzt den Urheber Uebertragungsnetzbetreiber
+Deutschland (die vier UeNB in institution), Kuerzel UEBE21 und UEBE26c; die
+Bundesnetzagentur war beim NEP-Entwurf falscher Urheber. van Leeuwen richtig
+als Namenszusatz.
+
+**Vollstaendigkeit.** Strommarktdesign der Zukunft von article auf report mit
+institution. van Leeuwen 2020: inproceedings, 16. Symposium Energieinnovation,
+Graz, Februar 2020 (aus der PDF). Mahgoub 2025: inproceedings, 14.
+Internationale Energiewirtschaftstagung (IEWT 2025), Wien, Februar 2025 (aus
+der PDF). Monitoringbericht 2025: Datum 26.01.2026 (Stand laut PDF) statt
+Januar 2025, Zotero-Feld year+duplicate-1 entfernt. SOGL: Erlassdatum
+02.08.2017. Meeus 2020: doppelte ISBN auf die Druckausgabe reduziert (Biber
+meldete die ungueltige Angabe).
+
+**Titel und Zusaetze.** Zotero-Title-Case in deutschen Titeln zurueckgesetzt
+(Binnenmarktverordnung, CACM-Leitlinie, SOGL-Titel mit Tippfehlern, TenneT
+Pilotbetrieb, InnoSys 2030, PQ-Bedingungen). Halbgeviertstriche in Titeln
+entfernt (EnWG, SMARD Strommarktdaten), "Grosshandelspreise" berichtigt.
+note-Felder auf die Identifikation gekuerzt: Energy-Charts (Preisdaten der
+EPEX Spot SE), ENTSO-E (Dokumententyp A84), Battery Revenue Index
+(Dokumentation des Verfahrens, Stand April 2025), MaStR (Auszug ab 1 MW, Stand
+15.09.2026); die Notizen zu Battery Charts (gleitender Mittelwert, Reihen) und
+zum SMARD-Wiki (Vorlaufzeiten) sind entfallen, der Wiki-Artikel steht im Titel.
+Die gestrichenen Notizinhalte gehoeren in den Text, soweit er sie braucht;
+Kapitel 3 beschreibt den Revenue-Index in 3.3.1 selbst.
+
+**Satz.** extras/header.tex: biburlnumpenalty, biburlucpenalty und
+biburllcpenalty auf 9000, damit lange URLs ohne Trennzeichen umbrechen; die URL
+des Grenzwertkonzepts lief in den rechten Rand.
+
+**Offen.** Sous 2022 (Untersuchung des Einflusses einer Redundanzanforderung)
+ohne Tagung, die PDF liess sich wegen des Dateinamens nicht auslesen,
+vermutlich 17. Symposium Energieinnovation 2022. FAQ Stromspeicher der
+Bundesnetzagentur ohne URL. Aktenzeichen BK8-22-001-A gegen BK8-22-0001-A
+bleibt nach CLAUDE.md Abschnitt 5 unveraendert.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex,
+Biber ohne Warnung, Build ohne Fehler, 95 Seiten.
+
 ## Offene Punkte, Stand 08.09.2026
 
 1. Einträge der Quellenprüfung vom 07.09.2026. Diese Fassung enthält sie nicht.

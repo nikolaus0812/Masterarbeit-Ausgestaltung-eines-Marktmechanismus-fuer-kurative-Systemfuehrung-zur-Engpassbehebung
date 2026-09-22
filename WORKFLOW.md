@@ -242,3 +242,86 @@ Ablauf:
    entfaellt, weil der Verfasser selbst liest.
 5. Die Kommentardatei wird nach der Einarbeitung nach `archiv/` verschoben,
    die Kommentare stehen dann im Protokoll.
+
+---
+
+## 10 Arbeitsweise am Absatz, aus dem Durchgang vom 20. bis 22.09.2026
+
+Diese Regeln sind aus dem Durchgang durch die Kapitel 1 bis 3 mit dem
+Verfasser abgeleitet und gelten für jede Sitzung, unabhängig vom Modell. Sie
+sollen zwei Schwächen abfangen, die der Verfasser bei früheren Sitzungen
+beobachtet hat: schwammige, wenig präzise Formulierungen und das Verharren an
+einer Stelle über mehrere Iterationen, ohne den Absatz als Ganzes neu zu
+denken.
+
+### 10.1 Bevor ein Satz geändert wird
+
+1. **Den Absatz als Ganzes lesen, mit Vor- und Folgeabsatz.** Der schnellste
+   Weg ist `python tools/extract_alle.py`, das die Kapitel 1 bis 3 als
+   nummerierte Absätze nach `%TEMP%\kap{n}_text.txt` schreibt. Vor der
+   Änderung in einem Satz benennen, welche Kernaussage der Absatz trägt und
+   welche Sätze er dafür braucht. Was er nicht braucht, ist ein
+   Streichkandidat, auch wenn der Verfasser nur einen einzelnen Satz
+   beanstandet hat.
+2. **Jede Behauptung an der Quelle prüfen, bevor sie steht oder bleibt.**
+   `pdftotext` auf die PDF in `literature/PDFs`, dann `grep` nach dem
+   Begriff. Steht der Begriff oder die Zahl in keiner Quelle, wird das gesagt
+   und der Satz auf das gestützt, was die Quelle trägt. Am 21.09.2026 stand
+   eine "Anreizkomponente" mit Zitat im Text, die in keiner Quelle vorkam.
+3. **Begriffe auf ihre erste Verwendung prüfen** (`grep -n` über die
+   Kapiteldatei ohne Kommentarzeilen). Ein Begriff vor seiner Definition ist
+   ein Befund, auch wenn er nicht Gegenstand der Anweisung war.
+4. **Anweisungen aus dem Modellrepository an der Datei dort lesen**, nicht an
+   der Kopie im Chat; die Datei kann zwischen Kopie und Umsetzung geändert
+   worden sein.
+
+### 10.2 Wie geantwortet wird
+
+5. **Befund, dann Wortlaut, dann Empfehlung.** Auf "verstehe ich nicht" oder
+   "was heißt das" folgt die Sache in zwei bis drei Sätzen und sofort der neue
+   Wortlaut des Absatzes oder Satzes. Höchstens zwei Fassungen, die empfohlene
+   zuerst, mit dem Grund in einem Satz. Nie drei Varianten, nie eine Frage
+   ohne Vorschlag.
+6. **Präzise statt vorsichtig.** Kein *in gewisser Weise*, *unter Umständen*,
+   *kann dazu beitragen*, *tendenziell*. Wo eine Aussage abgeschwächt werden
+   muss, wird gesagt, warum (fehlende Quelle, Randbedingung), und die
+   Abschwächung steht in einem Wort (*dürfte*, *nach Angabe von*), nicht in
+   einer Wolke. Zahlen tragen Bezugsgröße und Einheit. Ein Satz hat einen
+   Hauptsatz und höchstens einen Nebensatz.
+7. **Die Vorgabe des Verfassers in Tippschreibweise wird in einem Satz
+   wiederholt**, wenn sie mehrdeutig ist, und im selben Zug umgesetzt.
+   Rückfragen nur, wenn die Entscheidung tatsächlich seine ist (Streichen
+   oder Umformulieren, Wahl zwischen zwei Abbildungen). Alles andere nach
+   seiner Vorgabe vom 21.09.2026: "Unsichere immer mit deinem Vorschlag."
+8. **Widerspricht seine Vorgabe der Quelle, zuerst die Quelle zeigen**, mit
+   Fundstelle, und dann umsetzen, was er entscheidet. Die Einordnung steht im
+   Protokoll.
+
+### 10.3 Wenn eine Stelle nicht besser wird
+
+9. **Nach der zweiten Iteration am selben Satz die Ebene wechseln.** Der
+   Fehler liegt dann fast nie im Satz, sondern im Aufbau: Der Satz gehört in
+   einen anderen Absatz, die Definition steht am falschen Ort, der Absatz
+   erzählt in der falschen Reihenfolge, oder die Aussage gehört in den Anhang.
+   Beispiele vom 21.09.2026: Das Fünf-Zustands-Modell in 2.1.1 ließ sich nicht
+   kürzen, bis der Punkt (präventiv hält den PATL, kurativ den TATL, beide im
+   Normalzustand) als zwei Sätze an die Abbildung 2.1 wanderte, wo beide
+   Grenzwerte definiert sind. Die Regelleistungsvergütung in 2.3.4 wurde erst
+   klar, als der Absatz entlang der Staffelung (Zuschlag der Leistung, dann
+   Regelarbeitsmarkt, Merit-Order, Grenzpreis) neu aufgebaut wurde. Der
+   Konsultationsbefund in 2.3.3 war nicht zu retten und ging nach Anhang A.
+10. **Eine Dopplung wird an der Stelle aufgelöst, die sie für ihre Erklärung
+    nicht braucht**, nicht an der ersten Fundstelle. Kapitel 1 darf als
+    Motivation wiederholen, ein Zwischenfazit darf zusammenfassen; kritisch ist
+    die Wiederholung in einem Absatz, der sie nicht braucht.
+11. **Ein Satz, der zwei Dinge sagen soll, wird geteilt oder gestrichen.**
+    Am 21.09.2026 fielen zwei Sätze zur Inc-Dec-Abgrenzung, weil ihr Gegensatz
+    (Eingriff gegen Vorhaltung) das Argument nicht trug; der Satz davor trug
+    die Anforderung bereits.
+
+### 10.4 Nach der Änderung
+
+12. Differenz der Fließtextzeilen vor und nach der Änderung ausgeben,
+    Prüfsuite, Build, Seitenlage (`pdfinfo`, Anfang von Kapitel 1, 2 und 3),
+    die neue Passage im Chat zeigen, Protokolleintrag mit dem gestrichenen
+    Wortlaut. Committen nur auf "commite".
