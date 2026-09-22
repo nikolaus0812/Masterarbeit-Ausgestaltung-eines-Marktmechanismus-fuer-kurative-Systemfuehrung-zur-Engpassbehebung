@@ -2457,6 +2457,65 @@ fuer die Indizes des Formelsatzes. Nichts zu aendern.
 **Auftragsdatei archiviert.** Der Verfasser hat AUFTRAG_ABBILDUNGSSTIL.md nach
 dem Absenden nach archiv/ verschoben. Die Rueckmeldung zu Update 3 steht
 deshalb nicht in einer neuen Datei, sondern in diesem Eintrag und im Chat.
+### 22.09.2026, Kapiteleinleitung von Kapitel 4 neu gefasst
+
+**Vorgabe des Verfassers.** Die Einleitung beginnt mit dem Zweck der
+Untersuchung und nicht mit dem Rechenaufbau. Sie besteht aus einem Absatz.
+Alles, was die Modellierung betrifft, entfaellt, weil es in Kapitel 3 steht;
+geblieben sind die Einheiten.
+
+**Gegengeprueft, wo der gestrichene Inhalt steht.** Der gleiche Anfangs- und
+Endladezustand steht in 3.2.2 ("Anfang und Ende eines Tages tragen denselben
+Ladezustand"), die tageweise Loesung ebenfalls in 3.2.1 ("Geloest wird je
+Liefertag ein eigenes Problem"), die Behandlung der Zeitumstellung in 3.2.3,
+die Bezugsanlage mit 100 MW in 3.2.2 und der Vollreservierungspreis der
+zweiten Iteration in 3.2.4. Die beiden gestrichenen Absaetze waren damit
+durchgehend Wiederholung.
+
+**Umfang der Auswertung verschoben.** Die 8758 von 8760 Stunden je Richtung
+standen bisher in der Einleitung von Kapitel 4. Sie stehen jetzt in 3.2.3
+unmittelbar hinter der Sperrung der Zeitumstellungsstunde, wo auch der
+Auswertungszeitraum genannt ist. Vorgabe des Verfassers.
+
+**Neues Makro.** extras/macros.tex traegt jetzt \TsdEurMWa fuer Tausend Euro
+je Megawatt und Jahr, nach demselben Muster wie \EurMWh und mit engem
+Malpunkt. Die Einleitung nennt beide Einheiten ausgeschrieben und einmal in
+der Kurzschreibweise in Klammern, weil die Abbildungen die Kurzform tragen.
+
+**Eigenstaendige Abweichung von der Vorgabe, dem Verfasser genannt.** Der
+Verfasser wollte sagen, Volumen und Preis des Engpassmanagements seien auf
+Korrelation zu untersuchen. Im Text steht stattdessen "gegen dessen Volumen
+und gegen dessen Kosten", ohne das Wort Korrelation. Grund: Abschnitt 4.5
+rechnet die Korrelation allein gegen das Volumen (r = minus 0,03 und plus
+0,11 gegen die Redispatchleistung); gegen den Arbeitspreis steht ein
+Niveauvergleich, naemlich der Anteil der Stunden unter 101 Euro je
+Megawattstunde. Eine Preiskorrelation waere mit den vorliegenden Daten auch
+nicht zu rechnen, weil die 101 Euro ein Jahresmittel aus einer einzigen
+Kostensumme sind und keine Tagesreihe der Redispatchkosten vorliegt. Sollte
+sie gewuenscht sein, waere das ein eigener Auftrag an das Analyse-Repository.
+
+**Verschoben.** Der Satz zur eigenen Referenzrechnung der Sensitivitaeten
+(Abweichung 0,01 Euro je Megawatt und Stunde vom Jahreslauf) steht jetzt in
+der Einleitung von Abschnitt 4.6, weil er die Vergleichbarkeit der
+Sensitivitaeten betrifft und nicht den Jahreslauf.
+
+**Zurueckgenommen, nicht wieder aufzunehmen.** Die drei Absaetze der alten
+Einleitung stehen vollstaendig als Kommentar in chapter_4.tex. Der dritte war
+ein struktureller Vorverweis ("Die folgenden Abschnitte gehen in fuenf
+Schritten vor") und damit nach Stilregel 15 unzulaessig; ausserdem nannte die
+Aufzaehlung keine fuenf Schritte, weil sie 4.4 und 4.5 zusammenfasste.
+
+**Offener Hinweis.** Der letzte Satz vor den Einheiten kuendigt die
+Zukunftsvariante an, und Abschnitt 4.6.4 ist noch leer, weil sensi8 rechnet.
+Bleibt die Lieferung aus, muss der Satz wieder entfallen.
+
+**Entfallen ohne Ersatz.** Der Hinweis, dass die zweite Iteration ausgewiesen
+wird und die erste nur im Erloesvergleich vorkommt, stand im zweiten Absatz
+und ist mit ihm gestrichen. Abschnitt 3.2.4 nennt den Vollreservierungspreis
+als Ergebnis der zweiten Iteration, und die Bildunterschriften von Kapitel 4
+sagen durchgehend "zweite Iteration". Der Leser trifft in 4.2 aber ohne
+Vorbereitung auf die erste Iteration; falls das stoert, waere ein Halbsatz
+dort die Stelle.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

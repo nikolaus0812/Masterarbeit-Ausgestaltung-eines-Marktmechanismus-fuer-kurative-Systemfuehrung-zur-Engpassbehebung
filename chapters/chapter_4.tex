@@ -45,22 +45,37 @@
 % werden nicht mit den Einzeltagsfassungen gefuellt.
 % ===============================================================
 
-In Abschnitt~\ref{sec:validation_function} ist die Funktionsweise des Verfahrens am 11.02.2025 geprüft, und offen bleibt die Höhe des kurativen Reservierungspreises über ein ganzes Jahr.
-Das Optimierungsmodell rechnet deshalb jeden Tag des Jahres 2025 für sich, mit gleichem Anfangs- und Endladezustand, sodass die Tage untereinander vergleichbar bleiben.
-Ausgewertet werden 365 Tage und damit 8758 Stunden je Richtung, denn an den beiden Tagen der Zeitumstellung ist je eine Stunde gesperrt.
-Bezugsanlage ist das \ac{BESS} nach Abschnitt~\ref{sec:storage_model} mit einer Nennleistung von 100\,\si{MW}.
-Alle Erlöse dieses Kapitels sind auf diese Nennleistung bezogen und in Tausend Euro je Megawatt und Jahr angegeben, alle Preise in \EurMWh{}.
-
-Der ausgewiesene kurative Reservierungspreis stammt aus der zweiten Iteration des Verfahrens nach Abschnitt~\ref{sec:reservation_price_search}, weil allein der Preisvektor der zweiten Iteration alle Stunden eines Tages zugleich voll reserviert.
-Die erste Iteration erscheint in diesem Kapitel nur im Erlösvergleich des Abschnitts~\ref{sec:iteration_prices}, wo der Unterschied zwischen beiden Iterationen die Aussage trägt.
-Das Verfahren liefert in allen 8758 Stunden beider Richtungen einen endlichen Preis, sodass keine Stunde als untere Schranke in die Auswertung eingeht.
-Die Sensitivitäten des Abschnitts~\ref{sec:sensitivities} nutzen eine eigene Referenzrechnung, die im Median um 0,01\,\EurMWh{} vom Jahreslauf abweicht und damit mit den übrigen Ergebnissen vergleichbar ist.
-
-Die folgenden Abschnitte gehen in fünf Schritten vor.
-In Abschnitt~\ref{sec:dispatch_displacement} wird gezeigt, welche Märkte die kurative Reservierung mit steigendem Preis verdrängt.
-Abschnitt~\ref{sec:iteration_prices} beziffert, was die vollständige Verdrängung den \ac{ÜNB} kostet, und Abschnitt~\ref{sec:price_distribution} stellt die Verteilung der Preise über das Jahr dar.
-In den Abschnitten~\ref{sec:price_pattern} und~\ref{sec:price_vs_redispatch} wird der kurative Reservierungspreis nach Tages- und Jahreszeit eingeordnet und gegen den Engpassmanagementbedarf gehalten.
-Abschnitt~\ref{sec:sensitivities} prüft zuletzt, wie stark die Annahmen des Optimierungsmodells das Ergebnis tragen.
+% NEU GEFASST am 22.09.2026, Vorgabe des Verfassers. Die Einleitung beginnt
+% jetzt mit dem Zweck der Untersuchung statt mit dem Rechenaufbau. Alles zur
+% Modellierung ist gestrichen, weil es in Kapitel 3 steht: der gleiche
+% Anfangs- und Endladezustand in 3.2.2, die Behandlung der Zeitumstellung in
+% 3.2.3, die Bezugsanlage mit 100 MW in 3.2.2 und der Vollreservierungspreis
+% der zweiten Iteration in 3.2.4. Geblieben sind die Einheiten und der Umfang
+% der Auswertung. Der dritte Absatz war ein struktureller Vorverweis nach
+% Stilregel 15 und entfaellt; der Satz zur Referenzrechnung der
+% Sensitivitaeten steht jetzt in der Einleitung von Abschnitt 4.6.
+% ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
+%In Abschnitt~\ref{sec:validation_function} ist die Funktionsweise des Verfahrens am 11.02.2025 geprüft, und offen bleibt die Höhe des kurativen Reservierungspreises über ein ganzes Jahr.
+%Das Optimierungsmodell rechnet deshalb jeden Tag des Jahres 2025 für sich, mit gleichem Anfangs- und Endladezustand, sodass die Tage untereinander vergleichbar bleiben.
+%Ausgewertet werden 365 Tage und damit 8758 Stunden je Richtung, denn an den beiden Tagen der Zeitumstellung ist je eine Stunde gesperrt.
+%Bezugsanlage ist das \ac{BESS} nach Abschnitt~\ref{sec:storage_model} mit einer Nennleistung von 100\,\si{MW}.
+%Alle Erlöse dieses Kapitels sind auf diese Nennleistung bezogen und in Tausend Euro je Megawatt und Jahr angegeben, alle Preise in \EurMWh{}.
+%Der ausgewiesene kurative Reservierungspreis stammt aus der zweiten Iteration des Verfahrens nach Abschnitt~\ref{sec:reservation_price_search}, weil allein der Preisvektor der zweiten Iteration alle Stunden eines Tages zugleich voll reserviert.
+%Die erste Iteration erscheint in diesem Kapitel nur im Erlösvergleich des Abschnitts~\ref{sec:iteration_prices}, wo der Unterschied zwischen beiden Iterationen die Aussage trägt.
+%Das Verfahren liefert in allen 8758 Stunden beider Richtungen einen endlichen Preis, sodass keine Stunde als untere Schranke in die Auswertung eingeht.
+%Die folgenden Abschnitte gehen in fünf Schritten vor.
+%In Abschnitt~\ref{sec:dispatch_displacement} wird gezeigt, welche Märkte die kurative Reservierung mit steigendem Preis verdrängt.
+%Abschnitt~\ref{sec:iteration_prices} beziffert, was die vollständige Verdrängung den \ac{ÜNB} kostet, und Abschnitt~\ref{sec:price_distribution} stellt die Verteilung der Preise über das Jahr dar.
+%In den Abschnitten~\ref{sec:price_pattern} und~\ref{sec:price_vs_redispatch} wird der kurative Reservierungspreis nach Tages- und Jahreszeit eingeordnet und gegen den Engpassmanagementbedarf gehalten.
+%Abschnitt~\ref{sec:sensitivities} prüft zuletzt, wie stark die Annahmen des Optimierungsmodells das Ergebnis tragen.
+Gesucht ist der kurative Reservierungspreis, also der Betrag, den ein Betreiber für die Vorhaltung mindestens fordern muss, um durch die Reservierung nicht schlechter zu stehen als ohne sie.
+Maßgeblich ist dafür die Sicht des Betreibers, denn der Preis folgt aus seinem Betrieb, aus seinen einzelnen Erlösmöglichkeiten und aus der Verteilung des Erlöses auf diese Quellen.
+Zu Anfang ist deshalb zu verstehen, wie ein höherer vorgegebener Reservierungspreis auf den Dispatch wirkt.
+Darauf folgen Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025.
+Anschließend ist der kurative Reservierungspreis zeitlich gegen das Engpassmanagement zu halten, nämlich gegen dessen Volumen und gegen dessen Kosten.
+Zuletzt prüfen drei Sensitivitäten, wie stark die Annahmen über die einzelnen Märkte den Preis tragen.
+Eine Zukunftsvariante zeigt darüber hinaus, wie sich der kurative Reservierungspreis unter der Annahme einer günstigeren Preisentwicklung verhält.
+Alle Preise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), alle Erlöse in Tausend Euro je Megawatt und Jahr (\TsdEurMWa{}).
 
 % ---------------------------------------------------------------
 \section{Verlauf des Dispatch und Verdrängung der Märkte}
@@ -310,6 +325,9 @@ Der kurative Reservierungspreis misst die Opportunitätskosten der verdrängten 
 In den folgenden Abschnitten werden drei Größen geprüft.
 Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Referenzerlöses trägt.
 Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die ein Betreiber zu hoch ansetzen kann.
+% VERSCHOBEN am 22.09.2026 aus der Kapiteleinleitung hierher, weil der Satz
+% die Vergleichbarkeit der Sensitivitaeten betrifft und nicht den Jahreslauf.
+Die Sensitivitäten nutzen eine eigene Referenzrechnung, die im Median um 0,01\,\EurMWh{} vom Jahreslauf abweicht und damit mit den übrigen Ergebnissen vergleichbar ist.
 
 \subsection{Modellierung der \acs{aFRR}}
 \label{sec:sensi_afrr}
