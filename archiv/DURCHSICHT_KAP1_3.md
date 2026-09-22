@@ -1,5 +1,12 @@
 # Durchsicht der Kapitel 1 bis 3, Stand 15.09.2026
 
+> **ABGESCHLOSSEN am 22.09.2026, archiviert.** Die Listen A bis F sind im
+> Durchgang durch die Kapitel 1 bis 3 mit dem Verfasser umgesetzt oder bewusst
+> verworfen. Von Liste G sind G2, G6, G11, G12 und G14 erledigt; G5 und G7
+> betreffen den Text nicht, weil die beiden Zahlen dort nicht stehen. Die
+> Reste G1, G3, G13 sowie G4, G8, G9 und G10 stehen in `HANDOFF.md`
+> Abschnitt 6 und 7. Diese Datei wird nicht weitergeführt.
+
 Prüfung auf Anbindung der Sätze, Zusammenlegung von Absätzen, Dopplungen und
 Platzierung der Gleitumgebungen. Befunde aus drei Subagenten je Kapitel und
 der Sichtung des PDF. Nichts davon ist umgesetzt. Jede Option trägt eine

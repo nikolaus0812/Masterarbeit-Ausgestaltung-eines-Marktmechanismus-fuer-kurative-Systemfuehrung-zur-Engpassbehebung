@@ -77,7 +77,7 @@ Mittel mit einem Band dazwischen.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, sieben Dateien
+### Wurzelverzeichnis, sechs Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -85,11 +85,10 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `HANDOFF.md` | diese Datei, Einstiegspunkt jeder Sitzung |
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
-| `DURCHSICHT_KAP1_3.md` | **offen**: Liste G, vierzehn Punkte aus Kapitel 3, nichts umgesetzt |
 | `RUECKMELDUNG_AN_ANALYSE.md` | **offen**: Antwort an das Analyse-Repository, noch nicht abgesendet |
 | `README.md` | Beschreibung des Repositorys |
 
-### `archiv/`, elf Dateien, nur zum Nachschlagen
+### `archiv/`, zwölf Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -102,6 +101,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `KONTROLLAUFTRAG_FABLE.md`, `KONTROLLE_FABLE.md` | Kontrolldurchgang 17.09. | eingearbeitet |
 | `KAPITEL_4_AUFBAU.md` | eigene Sortierung von Kapitel 4 vom 18.09. | **`AUFBAU_KAPITEL_4.md` im Analyse-Repository**, 22.09. |
 | `quellencheck_bericht.md` | erzeugter Bericht vom 19.09. | nicht versioniert, kein Steuerdokument |
+| `DURCHSICHT_KAP1_3.md` | Durchsicht Kapitel 1 bis 3 vom 15.09. | Listen A bis F umgesetzt, Reste der Liste G stehen unten in Abschnitt 6 |
 
 ### Im Analyse-Repository, nur lesend
 
@@ -228,10 +228,32 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 **Ältere Punkte, unverändert**
 
-- `DURCHSICHT_KAP1_3.md` Liste G, vierzehn Punkte aus Kapitel 3, nichts
-  umgesetzt (G5 Degradationskosten 8 Euro je Megawattstunde ohne Quelle, G7
-  aFRR-Menge 2000 MW ohne Beleg, G13 Mitteilung der Beschlusskammer zu
-  Batteriespeichern vor Abgabe prüfen).
+- **Reste der Liste G aus `archiv/DURCHSICHT_KAP1_3.md`**, am 22.09.2026
+  gegen den Text geprüft. Erledigt sind G2 (die drei ungeprüften Belege stehen
+  nicht mehr in Kapitel 3), G6 (vom Verfasser entschieden), G11 (3.2 heißt
+  *Optimierung des Speicherbetriebs*), G12 (`isea_methodik_2026` ist
+  eingetragen und zitiert) und G14 (kein Verweis auf `sec:model_critique` mehr
+  im laufenden Text). G5 und G7 betreffen den Text nicht, denn weder die 8 Euro
+  je Megawattstunde Degradationskosten noch die 2000 MW ausgeschriebene
+  aFRR-Menge stehen in Kapitel 3. Offen bleiben:
+    - **G1**, der Gedanke, der kapazitätsbasierte Redispatch beschaffe im Kern
+      dieselbe Größe wie eine kurative Vorhaltung und unterscheide sich nur in
+      Auslöser und Reaktionszeit. Er steht in keinem Absatz, sein Ort ist nicht
+      entschieden (3.1.2, 3.3.1 oder Kapitel 5).
+    - **G3**, das Argument, der Bestand an \ac{BESS} wachse, während der Bedarf
+      an Regelleistung aus der Dimensionierung des Systems folge und nicht
+      mitwachse, sodass die Ausschließlichkeit der kurativen Zusage die
+      Regelleistung weniger verdränge. Nicht geschrieben.
+    - **G13**, vor Abgabe zu prüfen, ob eine Mitteilung der Beschlusskammer zu
+      Batteriespeichern ergangen ist. Recherchestand August 2026: keine.
+    - **G4 und G9** gehören nach Kapitel 5, siehe Abschnitt 7.
+    - **G8 und G10** sind modellseitig, nämlich das Ladezustandsband der
+      Regelleistung je Vier-Stunden-Zeitscheibe gegen das kurative Band je
+      Viertelstunde sowie die nicht nachgemessene Rechenzeit.
+- In `chapters/chapter_3.tex` stehen zwei verwaiste Marken ohne zugehörige
+  Überschrift, nämlich `sec:market_design_comparison` und `sec:product_design`.
+  Sie sind Reste des geparkten Unterabschnitts aus G1. Die Prüfsuite meldet sie
+  nicht, weil Prüfung 8 nur `fig:` und `tab:` gegen Verweise hält.
 - Gate-Closure-Zeiten 9 und 10 Uhr sowie Gebots- und Grenzpreisverfahren
   tragen allein regelleistung.net, das lokal nicht vorliegt; pRD3 bis pRD5
   sind als Nummern unbelegt; die Sanktion bei Nichtvorhaltung fehlt als Quelle.

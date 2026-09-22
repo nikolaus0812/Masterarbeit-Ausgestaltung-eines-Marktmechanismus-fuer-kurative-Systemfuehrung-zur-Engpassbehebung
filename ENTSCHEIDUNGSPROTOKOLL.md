@@ -2164,6 +2164,55 @@ des Aufraeumens zuwiderliefe.
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in
 chapter_5.tex Zeile 91. Build ohne Fehler, 104 Seiten, Kapitelanfaenge
 unveraendert bei PDF-Seite 9, 14, 38 und 57, Kapitel 4 endet auf Seite 69.
+### 22.09.2026, DURCHSICHT_KAP1_3.md geprueft und archiviert
+
+**Anlass.** Beim Aufraeumen der Markdown-Dateien am selben Tag war die Datei
+im Wurzelverzeichnis belassen worden, weil HANDOFF.md sie als offen fuehrte
+("Liste G, vierzehn Punkte aus Kapitel 3, nichts umgesetzt"). Der Verfasser
+hat widersprochen. Die Pruefung gibt ihm recht: die Notiz stammt vom
+17.09.2026 und ist seit dem Durchgang durch die Kapitel 1 bis 3 ueberholt.
+Der Befund war ungeprueft uebernommen worden, statt die Datei selbst gegen
+den Text zu halten.
+
+**Listen A bis F.** Platzierung im PDF, Anbindung, Zusammenlegung und
+Dopplungen fuer die Kapitel 1 bis 3. Sie waren der Gegenstand des Durchgangs
+vom 20. bis 22.09.2026, nach dem HANDOFF.md festhaelt, die Kapitel 1 bis 3
+seien mit dem Verfasser am PDF durchgegangen und stuenden. Umgesetzt oder
+bewusst verworfen.
+
+**Liste G, am 22.09.2026 gegen den Text geprueft.** Erledigt sind fuenf
+Punkte: G2, denn ehrhart_analysis_2025, horsch_role_2017 und
+einsiedler_analysis_2025 stehen nicht mehr in chapter_3.tex; G6, vom
+Verfasser am 12.09.2026 entschieden; G11, denn 3.2 heisst jetzt
+"Optimierung des Speicherbetriebs" und damit weder wie in CLAUDE.md noch wie
+die dort genannte Alternative; G12, denn isea_methodik_2026 ist in
+literature.bib eingetragen und in 3.3.2 zweimal zitiert; G14, denn im
+laufenden Text steht kein Verweis mehr auf sec:model_critique, die Marke
+liegt allein im auskommentierten chapter_5.tex.
+
+**Zwei Punkte betreffen den Text nicht.** G5 verlangt einen Beleg fuer die
+Degradationskosten von 8 Euro je Megawattstunde und G7 einen Beleg fuer die
+ausgeschriebene aFRR-Menge von 2000 MW. Beide Zahlen stehen in chapter_3.tex
+nirgends, sind also keine unbelegten Aussagen der Arbeit, sondern
+Modellparameter. Sie werden nicht weiter als Textbefund gefuehrt.
+
+**Offen geblieben und nach HANDOFF.md Abschnitt 6 uebernommen.** G1, der
+Gedanke zum kapazitaetsbasierten Redispatch, steht in keinem Absatz und sein
+Ort ist nicht entschieden. G3, das Argument zum wachsenden BESS-Bestand gegen
+den nicht mitwachsenden Regelleistungsbedarf, ist nicht geschrieben. G13, die
+Pruefung auf eine Mitteilung der Beschlusskammer zu Batteriespeichern, ist
+vor Abgabe zu wiederholen. G4 und G9 gehoeren nach Kapitel 5 und stehen in
+Abschnitt 7 der Uebergabe. G8 und G10 sind modellseitig.
+
+**Nebenbefund.** In chapter_3.tex stehen zwei verwaiste Marken ohne
+zugehoerige Ueberschrift, naemlich sec:market_design_comparison und
+sec:product_design. Sie sind Reste des zu G1 geparkten Unterabschnitts. Die
+Pruefsuite meldet sie nicht, weil Pruefung 8 nur fig: und tab: gegen Verweise
+haelt. Nicht entfernt, weil der Ort des geparkten Unterabschnitts offen ist.
+
+**Umgesetzt.** Die Datei traegt einen Abschlussvermerk im Kopf und liegt in
+archiv/. Das Wurzelverzeichnis fuehrt damit sechs Markdown-Dateien, archiv/
+zwoelf.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
