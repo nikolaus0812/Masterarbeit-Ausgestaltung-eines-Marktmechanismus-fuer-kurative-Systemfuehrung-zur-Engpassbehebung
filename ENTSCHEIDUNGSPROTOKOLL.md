@@ -2805,6 +2805,59 @@ Aenderungsskript als eine einzige Listenzeile uebergeben worden, sodass fuenf
 einsame LF in die CRLF-Datei gelangten; Pruefung 1 hat das gemeldet. Die Datei
 ist aus dem letzten Commit wiederhergestellt und mit zeilenweise uebergebenem
 Kommentarblock neu erzeugt worden, danach null einsame LF.
+### 22.09.2026, Schlussfolgerungen je Abschnitt eingefuehrt, 4.1 tagesweise gestrafft
+
+**Vorgabe des Verfassers, erstens.** Jeder Abschnitt soll am Ende drei bis
+fuenf Saetze Schlussfolgerungen tragen, die fuer die spaetere Diskussion von
+Belang sind, ohne sie vorwegzunehmen.
+
+**Form, vorgeschlagen und angenommen.** Ein eigener Absatz ohne Ueberschrift
+und ohne Verweis auf Kapitel 5, weil Stilregel 15 strukturelle Vorverweise
+ausschliesst. Erkennbar wird die Stelle an der gleichbleibenden
+Eroeffnungsformel "Aus dieser Untersuchung laesst sich Folgendes mitnehmen."
+Der erste Vorschlag arbeitete mit erstens, zweitens, drittens; der Verfasser
+hat das verworfen. Die Alternative einer unnummerierten Zwischenueberschrift
+ist nicht gewaehlt worden, weil Kapitel 4 diese Gliederungsebene sonst nicht
+fuehrt.
+
+**Inhalt in 4.1, nach Vorgabe des Verfassers geaendert.** Der erste Entwurf
+nannte die Verfuegbarkeit der Vorhaltung als zweiten Punkt; der Verfasser hat
+ihn gestrichen, weil der Preis spaeter eigens behandelt wird. Aufgenommen ist
+stattdessen, dass die FCR fuer die Bezugsanlage kaum eine Rolle spielt. Der
+Punkt zur Umschichtung ist erweitert: aFRR-Leistung und IDC binden an jedem
+Tag den groessten Teil der Leistung, der Day-Ahead kann an einzelnen Tagen
+arbitragereich sein, und daraus folgt, dass es keinen Markt und keinen
+Zeitpunkt gibt, der an jedem Tag den groessten Erloes traegt.
+
+**Vorgabe des Verfassers, zweitens.** Der tagesspezifische Absatz wiederholte
+den Schwellenlauf des Anhangs, also welcher Markt bei welchem Preis haelt. Das
+soll er nicht. Er zeigt jetzt je Tag den Markt, fuer den der Tag ausgewaehlt
+ist, und hoechstens eine auffaellige Gegenueberstellung.
+
+**Umgesetzt.** Am 20.01. der Day-Ahead, der trotz des groessten Spreads als
+letzter weicht und bei 15 Euro je Megawatt und Stunde ueber seinem
+Ausgangswert steht. Am 11.02. die Handelsmaerkte, weil sie fuer den Redispatch
+die naheliegenden sind: zwei Zyklen im Ladezustand, und Day-Ahead und IDC
+halten laenger als die aFRR-Leistung. Am 06.05. die FCR als einziger Tag, an
+dem sie auftritt. Am 15.05. die aFRR-Leistung, die sich kaum loesen laesst. Am
+26.08. der IDC, der bis zum hoechsten Preis haelt. Die alte Fassung steht als
+Kommentar.
+
+**Dopplung aufgeloest.** Der Satz im allgemeinen Absatz, die aFRR-Leistung sei
+an jedem Tag der groesste belegte Posten, ist dort gestrichen, weil der
+Schlussabsatz ihn traegt. Der allgemeine Absatz nennt jetzt allein, dass sie
+an vier der fuenf Tage zuletzt oder vorletzt weicht und damit in der Regel den
+Preis setzt.
+
+**Offen.** Ob die Schlussfolgerungen je Abschnitt oder einmal am Kapitelende
+stehen sollen, war die Rueckfrage. Mit der Umsetzung in 4.1 ist die Form je
+Abschnitt gewaehlt; eine Buendelung am Kapitelende bleibt moeglich.
+
+**Ein eigener Fehler beim Umbau.** Der Anker fuer den Schlusssatz griff
+zweimal, weil derselbe Satz auch in der auskommentierten alten Fassung steht.
+Die Anker werden seither mit fuehrendem Zeilenumbruch gesucht, damit sie nicht
+in Kommentarzeilen greifen. Das Skript war vor dem Schreiben abgebrochen, die
+Datei blieb unveraendert.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
