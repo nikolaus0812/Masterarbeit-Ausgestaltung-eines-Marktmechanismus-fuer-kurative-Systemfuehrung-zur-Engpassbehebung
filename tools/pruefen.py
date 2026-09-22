@@ -55,6 +55,7 @@ KONTEXT = ([ROOT / "chapters" / "chapter_{}.tex".format(i) for i in range(1, 7)]
               ROOT / "extras" / "attachment_modell.tex",
               ROOT / "extras" / "attachment_ablauf.tex",
               ROOT / "extras" / "attachment_validierung.tex",
+              ROOT / "extras" / "attachment_preisgitter.tex",
               ROOT / "extras" / "attachment_dispatch.tex"])
 SUCHORTE = (ROOT / "chapters", ROOT / "extras", ROOT)
 STANDARD_BIB = ROOT / "literature" / "literature.bib"

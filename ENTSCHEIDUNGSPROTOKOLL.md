@@ -1827,6 +1827,343 @@ Seite abgeschnitten. Rueckfrage dort, nicht hier.
 Build ohne Fehler, 95 Seiten mit den neuen Abbildungen in Kapitel 4, Kapitel 1
 auf den Seiten 9 bis 13, Kapitel 3 ab PDF-Seite 38. Anhaenge jetzt A bis E.
 
+### 22.09.2026, Kapitel 4 auf den Gesamtlauf gesetzt, drei Entscheidungen des Verfassers
+
+**Anlass.** Die Stichpunkte in chapter_4.tex stammten vom 17./18.09.2026 und
+trugen Zahlen aus dem Lauf vom 15.09.2026. HANDOFF.md Abschnitt 1.2 deckte nur
+einen Teil davon ab, die Verteilung der Tabelle 4.1 gar nicht. Diese Sitzung
+hat alle Zahlen des Kapitels auf den Gesamtlauf vom 17.-19.09.2026 gesetzt.
+
+**Die Anweisung des Analyse-Repositorys war ueberholt.** HANDOFF.md stuetzt
+sich auf ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:15. Das
+Analyse-Repository hat danach zweimal committet (21.09. 18:06 und 22.09. 08:36)
+und traegt eine nicht committete Ergebnisdatei
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md vom 21.09.2026 18:21. Daraus drei
+Abweichungen: die Preisgitterseiten liegen seit dem 21.09.2026 17:57 in
+kapitel_anhang und nicht mehr in kapitel_4; die Abbildungen 4.3 und 4.4 sind
+neu erzeugt (Maerkte einzeln im Erloesbalken, Whisker und beschriftete Maxima
+bei der aFRR) und am 22.09.2026 geholt; die Legende der Abbildung 4.2 ist
+unveraendert und weiter abgeschnitten. Bestaetigt die Regel aus WORKFLOW.md
+Abschnitt 10.1 Punkt 4, die Anweisung am Repository zu lesen.
+
+**Entscheidung des Verfassers, Abbildung 4.5.** Die Zweifeldfassung
+sensi_abrufdauer_2025.pdf, also allein die zweite Iteration. Claude hatte die
+Vierfeldfassung empfohlen, weil sie den Unterschied zwischen den Iterationen
+zeigt, der die Kernaussage von 4.5.2 traegt. Folge des Beschlusses: der Text
+beziffert die erste Iteration (minus 18,8 und 35,1 Prozent), weil die
+Abbildung sie nicht mehr zeigt. Die Bildunterschrift ist umgeschrieben, die
+alte Fassung steht als Kommentar in der Datei.
+
+**Entscheidung des Verfassers, Preisgitterseiten.** Die vier Seiten stehen im
+Anhang, und Kapitel 4 verweist an genau einer Stelle darauf, naemlich in 4.1.
+Das folgt dem Analyse-Repository und ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md
+Abschnitt 6 und nicht HANDOFF.md Abschnitt 1.1, der sie nach Kapitel 4 stellte.
+Angelegt ist dafuer extras/attachment_preisgitter.tex als Anhang F,
+eingebunden in main.tex hinter der Validierung und aufgenommen in die Liste
+--alle von tools/pruefen.py. Die vier PDF sind mit git mv von
+figures/chapter_4 nach figures/anhang gewandert. Die drei einleitenden Saetze
+des Anhangs sind ein VORSCHLAG und noch nicht ueber einen Absatzplan
+freigegeben; sie beschreiben allein den Aufbau der Seiten.
+
+**Befund, beide Misserfolgsausgaenge entfallen.** Das Protokoll gibt Kapitel 4
+auf, die beiden Misserfolgsausgaenge des Suchverfahrens auszuzaehlen, und
+KAPITEL_4_AUFBAU.md Abschnitt 8 verlangt die Wiederholung auf dem neuen Lauf.
+Die Zaehlung ist am 22.09.2026 auf jahr_stunden_2025.parquet vom 19.09.2026
+wiederholt. Ergebnis: Der erste Ausgang, die Stunde ohne endlichen Preis,
+tritt in 17516 Paaren aus Stunde und Richtung kein einziges Mal ein. Der
+zweite Ausgang, der uebersprungene Abstieg, tritt an keinem der 365 Tage ein.
+Am 22.02.2025 laeuft der Abstieg jetzt mit 32 Senkungen, und die beiden
+frueher offenen Stunden tragen 19,30 und 22,01 Euro je Megawatt und Stunde.
+Ohne Wert bleiben allein die beiden gesperrten Stunden der Zeitumstellung,
+also 8758 von 8760 Stunden mit bestimmbarem Preis.
+
+**Zurueckgenommen, nicht wieder aufzunehmen** (Stand des Laufs vom
+15.09.2026): "Von 8758 Paaren aus Stunde und Richtung bleibt die volle
+Reservierung genau einmal je Richtung unerreicht, naemlich am 22.02.2025, und
+dort ist der ausgewiesene Preis eine untere Schranke"; "Folge fuer die
+Belastbarkeit der Kennzahlen, naemlich dass Median und Quantile keine
+Schranken mit ermittelten Preisen mischen"; "Der Abstieg der zweiten Iteration
+bleibt an drei der 365 Tage aus, davon an den beiden Tagen der Zeitumstellung,
+sodass der Preisvektor dieser Tage ueber dem koordinatenweisen Minimum liegt";
+"Die volle Reservierung ist in nahezu jeder Stunde des Jahres 2025
+erreichbar". Das Minimalitaetszertifikat scheitert nicht mehr an mindestens
+18, sondern an mindestens 7 der 48 Paare; der Median von 32 gilt unveraendert.
+
+**Tabelle 4.1 neu.** Ueber die 8758 Stunden mit bestimmbarem Preis, zweite
+Iteration, je Entlade- und Laderichtung in Euro je Megawatt und Stunde:
+unteres Quartil 4,3 / 2,3; Median 12,2 / 9,8; arithmetisches Mittel
+23,6 / 24,3; oberes Quartil 27,5 / 30,7; 95-Prozent-Quantil 75,7 / 90,4;
+Maximum 1008,0 / 510,5. Zurueckgenommen, nicht wieder aufzunehmen, die Werte
+vom 15.09.2026: 5,0 / 2,0; 13,5 / 9,2; 24,9 / 23,6; 29,7 / 30,0; 78,5 / 88,6;
+1002,6 / 505,2. Das Minimum bleibt aus der Tabelle, weil es mit 0,00 und 1,00
+eine Eigenschaft des Modells ist und die Verteilungen nicht unterscheidet; die
+1,00 ist die Gewinnschwelle kur_schwelle_lad.
+
+**Weitere berichtigte Zahlen.** 4.1 Anteil unter 10 Euro je Megawatt und
+Stunde 43,8 statt 41 Prozent, unter 101 Euro 96,9 statt 97 Prozent; der Satz
+zum oberen Rand der Laderichtung ist auf das 95-Prozent-Quantil festgelegt,
+weil das Maximum sich umgekehrt verhaelt (510 gegen 1008). 4.2 Tagesgang 43,8
+statt 47 um 19 Uhr und 2,2 statt 2,8 um 4 Uhr entladend, 58,6 statt 57 um
+13 Uhr und 2,2 statt 1,0 um 20 Uhr ladend; der Jahresgang steht jetzt je
+Richtung statt ueber beide gepoolt. 4.3 Redispatch hoch 2682 MW im Januar und
+507 MW im August. 4.4 Referenzerloes 33,91 statt 34,67 Millionen Euro, zweite
+Iteration 41,84 kurativ und null am Markt statt 42,02 und 0,25, Aufschlag 23,4
+statt 21,9 Prozent; erste Iteration 8,86 statt 9,31 Millionen Euro und 46,5
+statt 45,1 Prozent. 4.6 ebenso 23,4 statt 21,9 Prozent.
+
+**4.5.1 vollstaendig ersetzt.** Die beiden Analysetage 15.05. und 26.08.2025
+sind aus den Stichpunkten entfernt, weil die Sensitivitaet seit dem
+21.09.2026 sieben Jahreslaeufe rechnet. Zurueckgenommen, nicht wieder
+aufzunehmen: "Ergebnis am 15.05.2025 in der Laderichtung, naemlich 37,9 ohne
+aFRR, 111,7 mit dem mengengewichteten Mittelpreis und 265,1 mit dem hoechsten
+Zuschlag" und "Ergebnis am 26.08.2025 in derselben Richtung, naemlich 19,5,
+59,9 und 77,8". Grund nach ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 5:
+ueber 93 Prozent der frueher sichtbaren Streuung waren Tagesunterschiede.
+
+**Eigenstaendige Ableitung, vom Verfasser zu pruefen.** Erstens die Auszaehlung
+der Misserfolgsausgaenge, der Schwellenanteile, der Stunden- und
+Monatsmediane und der Umrechnung je Megawatt und Jahr aus
+jahr_stunden_2025.parquet, Skripte im Sitzungsverzeichnis, nicht Teil eines
+Repositorys. Gegenprobe: Die Summe der Stundenpreise beider Richtungen ueber
+363 Tage und 100 MW ergibt 41,843 Millionen Euro und trifft damit den Wert der
+Abbildung 4.3 auf drei Nachkommastellen, was Datengrundlage und Rechnung
+bestaetigt. Zweitens der Wechsel des Zusammenhangsmasses in 4.3: Die alte
+Angabe nannte die Rangkorrelation nach Spearman (plus 0,07 entladend und plus
+0,25 ladend), die Abbildung 4.2 weist den Koeffizienten nach Pearson aus
+(minus 0,03 und plus 0,11). Text und Bild muessen dasselbe Mass tragen,
+deshalb steht jetzt Pearson im Text. Die Redispatch-Aggregation ist dabei aus
+dem Abbildungsskript jahreslauf_redispatch.py uebernommen, also Tagesmittel
+ueber 24 Stunden und dann Monatsmittel.
+
+**Zur Einheit, offener Punkt N1.** Der Text folgt weiter Euro je Megawatt und
+Stunde. Die Umrechnung ist jetzt in 4.1 beziffert, naemlich 106,9 und 86,2
+Tausend Euro je Megawatt und Jahr im Median sowie 207,0 und 213,2 im
+arithmetischen Mittel, damit der Vergleich mit dem Revenue-Index aus 3.3.1
+moeglich bleibt. Der Punkt bleibt formal offen.
+
+**Offen, Befund an das Analyse-Repository.** Die abgeschnittene Legende der
+Abbildung 4.2 ist am 22.09.2026 erneut geprueft und unveraendert. Die Datei
+muss dort neu erzeugt werden; aus dem Analyse-Repository heraus wird nichts in
+die Schriftfassung geschrieben.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in
+chapter_5.tex Zeile 91. Build ohne Fehler, nur die beiden bekannten Warnungen
+zu ch:discussion und ch:conc. 101 Seiten statt 95, davon fuenf fuer den neuen
+Anhang F und eine fuer die sechs zusaetzlichen Stichpunktzeilen in Kapitel 4.
+Kapitel 1 ab PDF-Seite 9, Kapitel 2 ab 14, Kapitel 3 ab 38, Kapitel 4 ab 57,
+alle unveraendert. Anhaenge jetzt A bis F. Die Stichpunkte sind weiterhin
+Stichpunkte; Fliesstext entsteht erst nach einem freigegebenen Absatzplan.
+### 22.09.2026, Umbau von Kapitel 4 nach der Anweisung des Analyse-Repositorys
+
+**Anlass.** Am 22.09.2026 hat das Analyse-Repository drei Dateien neu
+geschrieben, naemlich ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md (10:46),
+AUFBAU_KAPITEL_4.md (10:45) und ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md (10:44).
+Die Anweisung ersetzt die Fassung vom 21.09.2026 vollstaendig: Kapitel 4 ist
+neu gegliedert, mehrere Abbildungen sind neu, andere entfallen. Damit ist der
+erste Eintrag dieses Tages (Kapitel 4 auf den Gesamtlauf gesetzt) in seinen
+Zahlen ueberholt; die dort berichtigten Werte sind in die neue Fassung
+uebernommen, soweit die Anweisung sie fuehrt.
+
+**Neue Gliederung.** Der rote Faden lautet nach Abschnitt 1 der Anweisung:
+erst was verdraengt wird, dann was es kostet, dann die Verteilung, dann wann,
+dann wofuer, zuletzt wie belastbar. Umgesetzt als 4.1 Verlauf des Dispatch und
+Verdraengung der Maerkte, 4.2 Preise beider Iterationen und Erloeswirkung, 4.3
+Verteilung der Verdraengungspreise, 4.4 Zeitliches Muster, 4.5 Kurativer
+Reservierungspreis und Engpassbedarf, 4.6 Sensitivitaeten mit vier
+Unterabschnitten und 4.7 Diskussion der Ergebnisse.
+
+**Abschnittsnummern, eigenstaendige Entscheidung.** Die Anweisung nennt die
+Sensitivitaeten 4.7 und die Diskussion 4.8, streicht aber zugleich den
+frueheren Abschnitt 4.6 (Zahlung bei vollstaendiger Bindung). Beides zugleich
+ginge nur mit einer Luecke in der Nummerierung, die in einer Schriftfassung wie
+ein Fehler aussaehe. Hier zaehlt LaTeX fortlaufend, die Sensitivitaeten sind
+also 4.6 und die Diskussion 4.7. Die Marken tragen die Sache und nicht die
+Nummer (sec:sensitivities, sec:results_discussion), sodass Verweise stabil
+bleiben. Dem Verfasser gemeldet.
+
+**Fliesstext geschrieben.** Abschnitt 4 der Anweisung gibt ausdruecklich auf,
+den Fliesstext mit den dort belegten Zahlen zu schreiben. Das Stichpunktgeruest
+ist damit vollstaendig durch Fliesstext ersetzt. Geschrieben sind die
+Kapiteleinleitung und die Abschnitte 4.1 bis 4.6.2; 4.6.3, 4.6.4 und 4.7
+bleiben nach Abschnitt 5 der Anweisung leer, weil die Jahreslaeufe sensi8 noch
+rechnen. Die drei leeren Abschnitte stehen im PDF als blosse Ueberschriften.
+Der Absatzplan nach WORKFLOW.md Abschnitt 3 ist dabei uebersprungen, weil die
+Anweisung des Verfassers das Schreiben unmittelbar auftraegt.
+
+**Keine Zahl aus einer Abbildung abgelesen.** Jede Zahl des Kapitels stammt aus
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7 oder aus Abschnitt 4 der
+Anweisung. Nachgerechnet wurde in der Schriftfassung nichts.
+
+**Abbildungen geholt.** Neun Dateien nach figures/chapter_4/
+(erloesvergleich_vollverdraengung_2025, verteilung_reservierungspreis_2025,
+heatmap_reservierungspreis_2025, reservierungspreis_zeitmuster_2025,
+jahreslauf_reservierungspreis_redispatch_2025_median und _mittel,
+sensi_afrr_leistung_2025, sensi_afrr_energie_2025,
+sensi_abrufdauer_2025_iteration2), fuenf nach figures/chapter_3/ und fuenf nach
+figures/anhang/. Die Abbildungen des Kapitels 3 und des Anhangs waren inhaltlich
+bereits aktuell und sind unveraendert ueberschrieben.
+
+**Abbildungen geloescht.** Aus figures/chapter_4/ entfernt sind
+sensi_afrr_modellierung_2025.pdf (ersetzt durch die beiden Diagramme der
+Leistungs- und der Energieseite), sensi_idc_spread.pdf (Einzeltagsfassung,
+nach Abschnitt 3b der Anweisung ersatzlos), sensi_abrufdauer_2025.pdf und
+sensi_abrufdauer_2025_iterationen.pdf (ersetzt durch _iteration2.pdf) sowie
+jahreslauf_reservierungspreis_redispatch_2025.pdf (einteilige Fassung, ersetzt
+durch _median und _mittel). Verwaiste Verweise auf diese Dateien gibt es
+nicht; die drei verbliebenen Fundstellen stehen in Kommentaren.
+
+**Abweichungen zwischen Anweisung und Bestand, dem Verfasser gemeldet.**
+Erstens nennt Abschnitt 3b die Vier-Tage-Fassungen sensi_afrr_modellierung.pdf
+und sensi_afrr_modellierung_alle.pdf zur Loeschung; beide lagen in der
+Schriftfassung nie. Zweitens verlangt Abschnitt 3d, fuellgrad_iterationen_2025
+und maximalpreis_iterationen_2025 aus figures/chapter_4/ nach
+figures/chapter_3/ zu verschieben; das ist am 21.09.2026 bereits geschehen.
+Drittens nennt Abschnitt 3c die Datei
+dispatch_festpreis_2025-02-11_p5_ohne_mindestgebot.pdf zur Loeschung; sie liegt
+nicht vor, und der zugehoerige Anhang ist am 21.09.2026 stillgelegt. Viertens
+nennt Abschnitt 3b die einteilige Jahreslauffassung nicht ausdruecklich,
+Abschnitt 2 weist sie aber als ersetzt aus; sie ist deshalb entfernt.
+
+**Beleg des Arbeitspreises, Abweichung zur Anweisung.** Die Anweisung nennt
+fuer den praeventiven Redispatch 2025 Kosten von 3,08 Milliarden Euro auf
+30,44 Terawattstunden. Die Quelle, die die Arbeit dafuer fuehrt
+(bundesnetzagentur_smard_engpassmanagement_2026), weist vorlaeufige
+Gesamtkosten von 3071 Millionen Euro aus, also 3,07 Milliarden. Der Text folgt
+der Quelle und nennt 3071 Millionen Euro; der Quotient von 101 Euro je
+Megawattstunde ist in beiden Lesarten derselbe. Die bewegte Menge von 30,44
+Terawattstunden stammt aus energy-charts und nicht aus der zitierten Quelle,
+die 30.319 Gigawattstunden ausweist. Der Unterschied ist ohne Folge fuer den
+ausgewiesenen Arbeitspreis. Offener Punkt: ob die Menge eigens zu belegen ist.
+
+**Eigenstaendige Ableitung.** Die Formulierung der Ergebnisse folgt der
+Trennlinie zwischen Beschreiben und Bewerten. Die Anweisung formuliert den
+Saisonbefund als "dort liegt das Einsparpotenzial"; im Text steht dafuer die
+beschreibende Fassung, naemlich dass die Jahreszeit mit dem groessten
+Engpassmanagementbedarf zugleich die mit der guenstigsten Reservierung ist. Die
+Bewertung gehoert nach Kapitel 5.
+
+**Abschnitt 3.3.2 nachgezogen.** Nach Abschnitt 7 der Anweisung. Die Werte vom
+21.09.2026 (340,7; Faktor 1,31; Spanne 1,04 bis 1,50; Korrelation 0,974; alle
+zwoelf Monate; FCR 1,24; aFRR 1,51; DA 0,85) gelten unveraendert. Neu ist die
+Aufteilung des Intraday-Handels in den ID1 mit dem 0,97-Fachen und den IDC mit
+dem 0,89-Fachen; bisher stand dort ein einzelner Wert von 0,89. Ergaenzt ist
+der Revenue-Index mit 260,0 Tausend Euro je Megawatt und Jahr, damit sich das
+Verhaeltnis von 1,31 nachrechnen laesst. Zurueckgenommen, nicht wieder
+aufzunehmen: "In den Energiemaerkten bleibt das Optimierungsmodell unter dem
+Revenue-Index, am DA mit dem 0,85-Fachen und im Intraday-Handel mit dem
+0,89-Fachen."
+
+**Weitere Abweichung, nicht geaendert.** Der Kapiteltitel lautet weiter
+"Exemplarische Anwendung und Ergebnisse". Die Anweisung aeussert sich dazu
+nicht, und gerechnet ist inzwischen das ganze Jahr statt eines Beispieltages.
+Ebenso beschreibt der letzte Satz des Zielabsatzes in Abschnitt 1.2 noch die
+alte Sortierung (Hoehe und Streuung, Muster ueber Tag und Jahr, Verhaeltnis zum
+Engpassmanagementbedarf) und nennt die neuen Abschnitte 4.1 und 4.2 nicht. Beides
+ist dem Verfasser gemeldet und nicht stellvertretend entschieden.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in
+chapter_5.tex Zeile 91. Build ohne Fehler, nur die beiden bekannten Warnungen
+zu ch:discussion und ch:conc. 104 Seiten. Kapitel 1 ab PDF-Seite 9, Kapitel 2
+ab 14, Kapitel 3 ab 38, Kapitel 4 ab 57 und bis 69, alle Kapitelanfaenge
+unveraendert. Alle neun includegraphics des Kapitels loesen auf.
+### 22.09.2026, Nachtrag zur Bezugslinie des praeventiven Redispatch in 4.5
+
+**Vorgabe des Verfassers.** Der Nachtrag betrifft allein Abschnitt 4.5. Die
+Abbildungen aendern sich in der Sache nicht; nachgeholt sind die Fassungen
+Jahreslauf Median und Mittel vom 22.09.2026 12:05 und Zeitmuster vom
+22.09.2026 11:14.
+
+**Der Nenner enthaelt beide Richtungen und wird nicht halbiert.** Die Kosten
+von 3071 Millionen Euro stehen einer bewegten Menge von 12,15 TWh Erhoehung
+und 18,30 TWh Absenkung gegenueber, woraus sich 101 Euro je bewegter
+Megawattstunde ergeben. Beide Richtungen stehen damit bereits im Nenner, der
+Wert ist also schon der Preis je bewegter Megawattstunde in einer Richtung und
+nicht der einer ganzen Massnahme. Der tragende Grund gegen eine Halbierung ist
+aber ein anderer: die Reihe ist nicht symmetrisch. Eine Halbierung
+unterstellte, dass jede Absenkung ein gleich grosses Hochfahren traegt, und
+das trifft fuer 2025 nicht zu. Die denkbaren Nenner spreizen von 101 Euro je
+Megawattstunde (Summe beider Richtungen) ueber 168 (Absenkung allein) und 202
+(halbe Summe) bis 253 (Erhoehung allein). Allein die 101 kommen ohne eine
+Annahme ueber die Symmetrie aus und werden deshalb ausgewiesen.
+
+**Formulierung, ausdrueckliche Vorgabe.** Im Text steht nicht "je Richtung",
+sondern "je bewegter Megawattstunde, gemittelt ueber beide Richtungen". Die
+Bildunterschrift des Jahreslaufs ist entsprechend ergaenzt.
+
+**Herkunft des Unterschieds, geprueft und nicht vermutet.** Den 12146 GWh
+Erhoehung stehen 18297 GWh Absenkung gegenueber, also ein Unterschied von
+6151 GWh. Anlagen fuer erneuerbare Energien stehen mit 9502 GWh nahezu allein
+auf der Seite der Absenkung; konventionelle Anlagen und Speicher fahren netto
+3349 GWh hoch und ersetzen damit einen Teil der abgeregelten Einspeisung. Das
+Countertrading scheidet als Erklaerung aus, denn es ist deutsches Hochfahren:
+an der Grenze zu Daenemark stehen 2497 GWh Erhoehung null Absenkung
+gegenueber, bei einem Engpass dort faehrt Deutschland hoch und Daenemark
+herunter. Das Countertrading vergroessert den Unterschied also, statt ihn zu
+schliessen. Der Redispatch im engeren Sinn ist mit einem Ueberhang von 1174
+GWh auf rund 12 TWh Umsatz nahezu ausgeglichen.
+
+**Als Vermutung gekennzeichnet.** Belegt sind die Bilanz und die Richtung des
+Countertradings. Nicht belegt ist, wie sich die 6,15 TWh auf bilanziellen
+Ausgleich, verringerten Export und Meldesystematik verteilen. Der Text
+schreibt den verbleibenden Teil dem Einspeisemanagement zu, das die
+Massnahmenliste nicht fuehrt, und kennzeichnet diese Zuordnung mit "duerfte"
+und dem Satz, dass sie nicht belegt ist und eine Vermutung bleibt.
+
+**Offene Einschraenkung, im Text benannt.** Eine Aufteilung des Arbeitspreises
+nach Richtung ist nicht moeglich, denn die Mengen liegen je Richtung vor und
+die Kosten allein als eine Summe.
+
+**Korrektur aus dem Nachtrag, ohne Folge fuer die Arbeit.** Der Verfasser
+berichtigt die Aussage, der Ueberhang sei die EE-Abregelung von 9,4 TWh;
+richtig ist ein Ueberhang von 6,15 TWh bei einer EE-Abregelung von 9,5 TWh,
+deren Differenz konventionell ersetzt wird. Geprueft am 22.09.2026: diese
+Aussage ist nie in die Schriftfassung gelangt, weder in chapter_4.tex noch in
+dieses Protokoll noch in RUECKMELDUNG_AN_ANALYSE.md. Es ist dort nichts
+zurueckzunehmen.
+
+**Zeitmuster, Folgeaenderung.** Die Fassung vom 22.09.2026 11:14 zeigt neben
+dem Median auch das arithmetische Mittel und das Band zwischen beiden Massen.
+Die Bildunterschrift ist neu gefasst. Zurueckgenommen, nicht wieder
+aufzunehmen: "Median des kurativen Reservierungspreises im Jahr 2025 ueber der
+Stunde des Tages und ueber dem Monat, je Richtung und als Summe beider
+Richtungen, zweite Iteration." Ebenso berichtigt ist der Satz "Die dritte
+Kurve der Abbildung ist die Summe beider Richtungen.", weil die Abbildung
+jetzt mehr als drei Kurven fuehrt. Der Fliesstext arbeitet weiter allein mit
+den Medianen, denn ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7.2 fuehrt
+keine Mittelwerte je Stunde und je Monat.
+
+### 22.09.2026, Markdown-Dateien aufgeraeumt
+
+**Anlass.** Der Verfasser verliert die Uebersicht ueber die Arbeitsdokumente
+im Wurzelverzeichnis. Dort lagen neun Markdown-Dateien.
+
+**Nach archiv/ verschoben.** KAPITEL_4_AUFBAU.md, weil die dortige Sortierung
+von Kapitel 4 vom 18.09.2026 durch AUFBAU_KAPITEL_4.md und
+ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md aus dem Analyse-Repository vollstaendig
+ersetzt ist. quellencheck_bericht.md, weil es ein erzeugter Bericht vom
+19.09.2026 und kein Steuerdokument ist; die Datei ist ohnehin nicht
+versioniert (.gitignore Zeile 26).
+
+**Geblieben sind sieben Dateien**, naemlich CLAUDE.md, HANDOFF.md,
+WORKFLOW.md, ENTSCHEIDUNGSPROTOKOLL.md, README.md sowie die beiden offenen
+Arbeitsdokumente DURCHSICHT_KAP1_3.md (Liste G, vierzehn Punkte aus Kapitel 3,
+nichts umgesetzt) und RUECKMELDUNG_AN_ANALYSE.md (noch nicht abgesendet).
+DURCHSICHT_KAP1_3.md ist bewusst nicht archiviert, weil Liste G offen ist.
+
+**HANDOFF.md neu geschrieben.** Die Fassung vom Morgen war ueberholt, denn sie
+gibt der naechsten Sitzung auf, Kapitel 4 zu schreiben. Die neue Fassung
+traegt den Stand nach dem Umbau und enthaelt als Abschnitt 2 eine
+**Dateiuebersicht** ueber Wurzelverzeichnis, archiv/ und die Dokumente im
+Analyse-Repository, je eine Zeile mit Rolle beziehungsweise Ablloesung. Damit
+steht die Uebersicht an einer Stelle und nicht in einer weiteren Datei.
+
+**Keine neue Datei angelegt.** Der Index steht in HANDOFF.md und nicht in
+einer eigenen archiv/README.md, weil eine weitere Markdown-Datei dem Anlass
+des Aufraeumens zuwiderliefe.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in
+chapter_5.tex Zeile 91. Build ohne Fehler, 104 Seiten, Kapitelanfaenge
+unveraendert bei PDF-Seite 9, 14, 38 und 57, Kapitel 4 endet auf Seite 69.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
