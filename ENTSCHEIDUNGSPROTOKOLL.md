@@ -2410,6 +2410,53 @@ ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md.
 Einbindungen bleiben stehen, bis die flacheren Fassungen vorliegen, weil ein
 blosses Hochsetzen auf die volle Textbreite die Seitenlage verschoebe, ohne
 das Problem zu loesen.
+### 22.09.2026, Abbildungsstil vereinheitlicht, Update 3 eingearbeitet
+
+**Grundlage.** UPDATE_03 des Analyse-Repositorys, Antwort auf den Auftrag vom
+selben Tag. Alle neun Befunde sind dort behoben.
+
+**Ursache der falschen Schriftfamilie, vom Analyse-Repository ermittelt.**
+Ueber zwanzig Analysemodule rufen beim Import matplotlib.use(Agg) auf. Wer
+eines davon laedt, nachdem der Stil gesetzt wurde, schaltet den LaTeX-Weg
+wieder ab; die Abbildung entsteht dann in DejaVuSans, ohne dass etwas
+fehlschlaegt. Behoben ist es an der Wurzel durch zwei Waechter im Stilmodul
+und ein Pruefskript abbildungen_pruefen.py, nicht durch Nachbessern der vier
+Dateien.
+
+**Elf Dateien geholt.** validierung_cross, validierung_einzelmarkt, beide
+jahreslauf-Fassungen, dispatch_festpreis_2025-02-11_p5, tatl_berechnung,
+reservierungspreis_bisektion und die vier Preisgitterseiten. Inhaltlich hat
+sich an keiner etwas geaendert, nur Schrift, Breite und Hoehe; die Zahlen in
+ERGEBNISSE gelten unveraendert.
+
+**Zwei Einbindungen umgestellt.** reservierungspreis_bisektion.pdf in
+chapter_3.tex und tatl_berechnung.pdf in attachment_thermik.tex stehen jetzt
+auf voller Textbreite statt auf 0,82 und 0,72. Der alte Wortlaut bleibt als
+Kommentar. Beide Dateien werden dafuer flacher geliefert, naemlich 453,5 mal
+226,8 statt 371,9 mal 275,2 pt sowie 453,5 mal 149,7 statt 453,5 mal 208,6 pt.
+
+**Nachgemessen.** Alle 28 eingebundenen Abbildungen tragen jetzt NimbusSanL
+mit 8,00 pt Grundbeschriftung und 9,00 pt fuer Achsen- und Feldtitel, volle
+Breite, Skalierungsfaktor 1,000. Keine Abweichung mehr.
+
+**Seitenlage geprueft.** 104 Seiten unveraendert, Kapitelanfaenge auf den
+PDF-Seiten 9, 14, 38 und 57 unveraendert, kein Overfull vbox. Die
+Preisgitterseiten sind mit 615 pt hoeher als zuvor (537 pt) und passen mit
+Bildunterschrift unter den Satzspiegel von 665,4 pt; ein Rueckgang auf 7 pt
+ist nicht noetig. Abbildung 3.2 steht buendig mit Text darueber und darunter,
+Abbildung B.1 ebenso.
+
+**Rueckfrage des Analyse-Repositorys beantwortet.** Die Stellen unter 8 pt in
+weber_optionswert.pdf, tatl_berechnung.pdf und den Ablaufdiagrammen liegen
+ausnahmslos in Computer-Modern-Schnitten der Groesse 6, naemlich CMR6 und
+CMMI6. Das ist die Skriptgroesse des Formelsatzes, also Tief- und
+Hochstellungen, und kein Beschriftungsproblem. Der Auftrag haette das genauer
+fassen muessen: die Vorgabe von 8 und 9 pt gilt fuer Beschriftungen und nicht
+fuer die Indizes des Formelsatzes. Nichts zu aendern.
+
+**Auftragsdatei archiviert.** Der Verfasser hat AUFTRAG_ABBILDUNGSSTIL.md nach
+dem Absenden nach archiv/ verschoben. Die Rueckmeldung zu Update 3 steht
+deshalb nicht in einer neuen Datei, sondern in diesem Eintrag und im Chat.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

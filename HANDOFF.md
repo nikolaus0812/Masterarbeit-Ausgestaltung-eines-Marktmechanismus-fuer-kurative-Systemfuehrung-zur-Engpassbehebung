@@ -80,7 +80,7 @@ Verfassers über das Analyse-Repository.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, sechs Dateien
+### Wurzelverzeichnis, fünf Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -88,10 +88,9 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `HANDOFF.md` | diese Datei, Einstiegspunkt jeder Sitzung |
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
-| `AUFTRAG_ABBILDUNGSSTIL.md` | **offen**: Auftrag an das Analyse-Repository, Schrift und Breite der Abbildungen |
 | `README.md` | Beschreibung des Repositorys |
 
-### `archiv/`, dreizehn Dateien, nur zum Nachschlagen
+### `archiv/`, vierzehn Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -106,6 +105,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `quellencheck_bericht.md` | erzeugter Bericht vom 19.09. | nicht versioniert, kein Steuerdokument |
 | `DURCHSICHT_KAP1_3.md` | Durchsicht Kapitel 1 bis 3 vom 15.09. | Listen A bis F umgesetzt, Reste der Liste G stehen unten in Abschnitt 6 |
 | `RUECKMELDUNG_AN_ANALYSE.md` | Rückmeldung an das Analyse-Repository | abgesendet, beantwortet in `ANTWORT_AN_SCHRIFTFASSUNG.md` |
+| `AUFTRAG_ABBILDUNGSSTIL.md` | Auftrag zum Abbildungsstil vom 22.09. | mit Update 3 des Analyse-Repositorys erledigt |
 
 ### Im Analyse-Repository, nur lesend
 
@@ -211,15 +211,13 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 **Aus Kapitel 4**
 
-- **Abbildungsstil, Auftrag vom 22.09.2026** in `AUFTRAG_ABBILDUNGSSTIL.md`.
-  Vier Abbildungen tragen DejaVuSans statt NimbusSanL; `tatl_berechnung.pdf`
-  wird auf 0,72 gestaucht und fällt dadurch auf 5,8 pt; `dispatch_festpreis`
-  und die vier Preisgitterseiten liegen eine Stufe zu klein; und
-  `reservierungspreis_bisektion.pdf` (Abbildung 3.2) wird schmal geliefert und
-  läuft deshalb nicht über die Textbreite, ihre Schrift ist aber korrekt. Die
-  beiden verkleinerten Einbindungen bleiben stehen, bis flachere Fassungen in
-  voller Breite vorliegen; dann auf die volle Textbreite umstellen und die
-  Seitenlage prüfen.
+- ~~Abbildungsstil~~ **erledigt am 22.09.2026.** Alle 28 Abbildungen tragen
+  NimbusSanL mit 8,00 und 9,00 pt in voller Breite, keine Stauchung. Das
+  Analyse-Repository hat die Ursache an der Wurzel behoben, nämlich ein
+  `matplotlib.use` beim Import, das den LaTeX-Weg lautlos zurücksetzte, und
+  führt jetzt `abbildungen_pruefen.py` als Wächter. Stellen unter 8 pt sind
+  ausnahmslos Computer Modern in Skriptgröße, also Indizes des Formelsatzes,
+  und bleiben.
 - **4.6.3 und 4.6.4 sind leer** und warten auf `sensi8_spanne_und_niveau` aus
   dem Analyse-Repository. Nicht mit den Einzeltagsfassungen füllen.
 - **Für 4.6.4 vorgemerkt (G3), Entscheidung des Verfassers vom 22.09.2026:**
