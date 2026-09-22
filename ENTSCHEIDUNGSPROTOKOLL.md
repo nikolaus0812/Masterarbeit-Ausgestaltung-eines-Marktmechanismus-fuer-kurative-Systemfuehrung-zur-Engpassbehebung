@@ -2577,6 +2577,72 @@ Abschnitte 2, 2.1, 2.2, 2.3 und 5 von ERGEBNISSE.
 **In der Schriftfassung vorerst nichts geaendert.** Anhang F fuehrt weiter die
 vier alten Seiten, die Tagesliste in 4.1 bleibt stehen, bis die neuen
 Preisgitter vorliegen. Danach waechst Anhang F auf fuenf Seiten.
+### 22.09.2026, Analysetage geliefert, Abschnitt 4.1 neu geschrieben
+
+**Grundlage.** UPDATE_04 des Analyse-Repositorys, Antwort auf den Auftrag zu
+den Analysetagen. Der neue Satz umfasst fuenf Tage, der 22.02.2025 ist
+zurueckgezogen.
+
+**Die beiden neuen Tage haben zwei belegte Aussagen widerlegt.** Das ist der
+wichtigste Befund dieses Durchgangs, und er rechtfertigt den Auftrag.
+
+**Erstens, die FCR wird verdraengt.** Bis zum 22.09.2026 stand in 4.1, die FCR
+trete an keinem Tag und bei keinem Preis auf. Am 06.05.2025 bietet die
+Bezugsanlage FCR in 16 der 96 Zeitscheiben an, im Mittel 1,95 MW je Richtung,
+und bei 10 Euro je Megawatt und Stunde ist die FCR vollstaendig verdraengt.
+Sie ist damit der billigste Verdraengungskandidat aller gefuehrten Maerkte.
+Die alte Aussage war nicht falsch gemessen, sondern falsch verallgemeinert:
+sichtbar wird die FCR nur an einem Tag mit hohen FCR- und zugleich niedrigen
+aFRR-Preisen.
+
+**Zweitens, der Day-Ahead weicht nicht immer zuerst.** Am 20.01.2025, dem Tag
+mit dem groessten Day-Ahead-Spread des Jahres, kehrt sich die Reihenfolge um.
+Die aFRR-Leistung faellt schon bei 5 Euro je Megawatt und Stunde auf die
+Haelfte und ist bei 30 verschwunden; der Day-Ahead haelt bis 50 mehr als die
+Haelfte und faellt erst bei 100 unter ein Zehntel. Zurueckgenommen, nicht
+wieder aufzunehmen: "Der DA weicht als erster Markt, denn an drei der vier
+Tage faellt die dort gebundene Leistung schon zwischen 10 und 15 Euro je
+Megawatt und Stunde unter ein Zehntel ihres Ausgangswertes."
+
+**Was stattdessen im Text steht.** Die Reihenfolge, in der die Maerkte weichen,
+folgt der Preisstruktur des Tages und nicht einer festen Rangordnung.
+Verdraengt wird zuerst, was an diesem Tag am wenigsten einbringt, naemlich am
+11.02. der Day-Ahead, am 06.05. die FCR und am 20.01. die aFRR-Leistung.
+
+**Neuer Befund zur Umschichtung.** Am 20.01.2025 steht der Day-Ahead bei
+15 Euro je Megawatt und Stunde mit 106 Prozent ueber seinem Ausgangswert, weil
+die Bezugsanlage einen Teil der von der aFRR frei werdenden Leistung dorthin
+verschiebt. Verdraengung ist also nicht nur Abbau, sondern Umschichtung. Der
+Befund beruht auf einem Tag und einem Preispunkt und ist im Text so
+gekennzeichnet.
+
+**Was unveraendert haelt.** Der IDC ueberlebt laenger, als sein Anteil am
+Referenzerloes erwarten laesst, und die aFRR-Leistung weicht an vier der fuenf
+Tage zuletzt oder vorletzt und setzt damit in der Regel den Preis. Die
+Verdraengbarkeit haengt weiterhin staerker am Tag als am Preis.
+
+**Abweichung, die sich aufklaert.** Das Analyse-Repository weist darauf hin,
+dass die ID1-Spanne des 26.08. nur auf der Viertelstundenreihe Rang 1 ist; auf
+der Stundenreihe liegt sie auf Rang 2 hinter dem 08.09. Massgeblich ist die
+Viertelstunde, weil der Dispatch in 96 Viertelstunden optimiert. Die
+Bildunterschrift in Anhang F nennt deshalb die Tagesspanne des ID1 ohne
+Aufloesungsangabe.
+
+**Anhang F.** Fuenf Seiten statt vier. Jede Bildunterschrift traegt jetzt die
+Begruendung, warum der Tag gewaehlt ist. Die drei alten Seiten sind zugleich im
+neuen Satzstandard mit 8 pt neu erzeugt.
+
+**Offen und im Text gekennzeichnet.** Dass die FCR an den uebrigen Tagen bei
+null bleibt, steht auf fuenf Tagen und ist ueber das Jahr nicht geprueft. Wie
+haeufig welche Verdraengungsreihenfolge eintritt, ist nicht geprueft. Der
+letzte Satz von 4.1 sagt deshalb, dass die Befunde die moeglichen
+Reihenfolgen belegen und nicht ihre Haeufigkeit.
+
+**Nicht nachgerechnet.** ERGEBNISSE Abschnitt 5, die gepaarte Tagestabelle zum
+aFRR-Liefermodus, steht weiter auf den alten vier Tagen einschliesslich des
+22.02. und ist dort als historische Auswertung gekennzeichnet. Die
+Schriftfassung zitiert sie in 4.6.1 nur mit den Varianzanteilen von 6,7 und
+4,3 Prozent, die die Aufgabe der Tagesfassung begruenden; das bleibt gueltig.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

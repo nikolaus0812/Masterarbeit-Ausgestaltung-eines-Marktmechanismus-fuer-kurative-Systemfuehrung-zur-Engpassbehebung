@@ -80,7 +80,7 @@ Verfassers über das Analyse-Repository.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, sechs Dateien
+### Wurzelverzeichnis, fünf Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -88,10 +88,9 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `HANDOFF.md` | diese Datei, Einstiegspunkt jeder Sitzung |
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
-| `AUFTRAG_ANALYSETAGE.md` | **offen**: Auftrag an das Analyse-Repository, neuer Satz der Analysetage |
 | `README.md` | Beschreibung des Repositorys |
 
-### `archiv/`, vierzehn Dateien, nur zum Nachschlagen
+### `archiv/`, fünfzehn Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -107,6 +106,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `DURCHSICHT_KAP1_3.md` | Durchsicht Kapitel 1 bis 3 vom 15.09. | Listen A bis F umgesetzt, Reste der Liste G stehen unten in Abschnitt 6 |
 | `RUECKMELDUNG_AN_ANALYSE.md` | Rückmeldung an das Analyse-Repository | abgesendet, beantwortet in `ANTWORT_AN_SCHRIFTFASSUNG.md` |
 | `AUFTRAG_ABBILDUNGSSTIL.md` | Auftrag zum Abbildungsstil vom 22.09. | mit Update 3 des Analyse-Repositorys erledigt |
+| `AUFTRAG_ANALYSETAGE.md` | Auftrag zu den Analysetagen vom 22.09. | mit Update 4 des Analyse-Repositorys erledigt |
 
 ### Im Analyse-Repository, nur lesend
 
@@ -212,13 +212,17 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 **Aus Kapitel 4**
 
-- **Analysetage, Auftrag vom 22.09.2026** in `AUFTRAG_ANALYSETAGE.md`. Das
-  Kriterium des 22.02.2025 gilt im Gesamtlauf nicht mehr. Der Verfasser hat
-  den Satz auf fünf Tage geändert: 20.01. (größter Day-Ahead-Spread), 11.02.
-  (größter Redispatchbedarf), 06.05. (FCR hoch bei niedriger aFRR-Leistung),
-  15.05. (FCR und aFRR zugleich am höchsten) und 26.08. (größte ID1-Spanne).
-  Bis die beiden neuen Preisgitter geliefert sind, bleiben Anhang F und die
-  Tagesliste in 4.1 unverändert.
+- ~~Analysetage~~ **erledigt am 22.09.2026.** Fünf Tage, Anhang F hat fünf
+  Seiten, Abschnitt 4.1 ist neu geschrieben. **Zwei der vier bisher belegten
+  Aussagen sind dabei widerlegt worden:** die FCR wird am 06.05.2025 sehr wohl
+  verdrängt (16 von 96 Zeitscheiben, weg bei 10 Euro je Megawatt und Stunde),
+  und am 20.01.2025 weicht der Day-Ahead als letzter Markt statt als erster.
+  Die tragfähige Aussage lautet jetzt, dass die Reihenfolge der Preisstruktur
+  des Tages folgt und nicht einer festen Rangordnung der Märkte.
+- **Offen und im Text gekennzeichnet:** dass die FCR an den übrigen Tagen bei
+  null bleibt, steht auf fünf Tagen; wie häufig welche Verdrängungsreihenfolge
+  über das Jahr eintritt, ist nicht geprüft; und die Umschichtung in den
+  Day-Ahead ist an einem Tag und einem Preispunkt beobachtet.
 - ~~Abbildungsstil~~ **erledigt am 22.09.2026.** Alle 28 Abbildungen tragen
   NimbusSanL mit 8,00 und 9,00 pt in voller Breite, keine Stauchung. Das
   Analyse-Repository hat die Ursache an der Wurzel behoben, nämlich ein

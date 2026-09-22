@@ -84,25 +84,54 @@ Alle Preise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), a
 % Abbildung, Verweis auf die Preisgitterseiten in Anhang F.
 % Zahlen aus ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 2, 2.1 und 2.2.
 
-Der kurative Reservierungspreis misst die Opportunitätskosten der zuletzt reservierten Leistung, sodass seine Höhe davon abhängt, welche Vermarktung die Reservierung verdrängt.
-Um diese Reihenfolge sichtbar zu machen, ist der Fahrplan an vier Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200\,\EurMWh{} gerechnet.
-Die vier Tage sind der 11.02., der 22.02., der 15.05. und der 26.08.2025, und die zugehörigen Kachelfolgen stehen in Anhang~\ref{anh:preisgitter}.
+% NEU GESCHRIEBEN am 22.09.2026 nach Update 4 des Analyse-Repositorys. Der
+% Satz der Analysetage ist von vier auf fuenf gewachsen, und zwei der vier
+% bisher belegten Aussagen sind an den neuen Tagen widerlegt: die FCR wird am
+% 06.05.2025 sehr wohl verdraengt, und am 20.01.2025 weicht der DA als
+% letzter Markt statt als erster. Die alte Fassung beruhte auf vier Tagen
+% ohne DA-Spread-Extrem und ohne Tag mit teurer FCR bei billiger aFRR.
+% ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
+%Der kurative Reservierungspreis misst die Opportunitätskosten der zuletzt reservierten Leistung, sodass seine Höhe davon abhängt, welche Vermarktung die Reservierung verdrängt.
+%Um diese Reihenfolge sichtbar zu machen, ist der Fahrplan an vier Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200 EurMWh gerechnet.
+%Die vier Tage sind der 11.02., der 22.02., der 15.05. und der 26.08.2025, und die zugehörigen Kachelfolgen stehen in Anhang F.
+%Die FCR tritt an keinem der vier Tage und bei keinem der zehn Preise auf, sodass sie an diesen Tagen als verdrängte Vermarktung ausfällt.
+%Der DA weicht als erster Markt, denn an drei der vier Tage fällt die dort gebundene Leistung schon zwischen 10 und 15 EurMWh unter ein Zehntel ihres Ausgangswertes.
+%Der DA ist mit 7,3 Prozent zugleich der kleinste Posten des Referenzerlöses, sodass sein Rückzug den Erlös des Betreibers wenig kostet.
+%Die aFRR-Leistung weicht dagegen zuletzt und setzt damit den kurativen Reservierungspreis.
+%Am 11.02.2025 hält die aFRR-Leistung bis 20 EurMWh, am 26.08.2025 bis 150 EurMWh und am 15.05.2025 bis zum höchsten gerechneten Preis.
+%Die Reihenfolge der Verdrängung ist an allen vier Tagen dieselbe, die Preise ihres Eintretens unterscheiden sich jedoch um den Faktor zehn, sodass die Reihenfolge und nicht die Schwelle den übertragbaren Teil des Befundes bildet.
+Welche Vermarktung die kurative Reservierung verdrängt, zeigt der Fahrplan unter vorgegebenen Preisen.
+Dafür ist der Speicherbetrieb an fünf Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200\,\EurMWh{} gerechnet, und die zugehörigen Kachelfolgen stehen in Anhang~\ref{anh:preisgitter}.
+Die fünf Tage decken je ein Extrem der geführten Märkte ab, nämlich der 20.01.2025 den größten Spread am \ac{DA}, der 11.02.2025 den größten Redispatchbedarf, der 15.05.2025 die höchsten Preise der \ac{FCR} und der \ac{aFRR}-Leistung und der 26.08.2025 die größte Tagesspanne des \ac{ID1}.
+Der 06.05.2025 tritt daneben, weil dort hohe Preise der \ac{FCR} auf niedrige Preise der \ac{aFRR}-Leistung treffen und sich die Wirkung beider Märkte deshalb trennen lässt.
 Ein steigender vorgegebener Preis macht die kurative Reservierung für den Betreiber lohnender, sodass die Reservierung nacheinander die Leistung übernimmt, die zuvor an den übrigen Märkten gebunden war.
 
-Die \ac{FCR} tritt an keinem der vier Tage und bei keinem der zehn Preise auf, sodass sie an diesen Tagen als verdrängte Vermarktung ausfällt.
-Dieser Befund trägt allerdings nur die vier gerechneten Tage, denn im Referenzfall erzielt die Bezugsanlage 2,0 Prozent ihres Bruttoerlöses in der \ac{FCR} und bietet dort an anderen Tagen also Leistung an.
-Der \ac{DA} weicht als erster Markt, denn an drei der vier Tage fällt die dort gebundene Leistung schon zwischen 10 und 15\,\EurMWh{} unter ein Zehntel ihres Ausgangswertes.
-Der \ac{DA} ist mit 7,3 Prozent zugleich der kleinste Posten des Referenzerlöses, sodass sein Rückzug den Erlös des Betreibers wenig kostet.
+Die Reihenfolge, in der die Märkte weichen, folgt der Preisstruktur des Tages und nicht einer festen Rangordnung.
+Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, und das ist am 11.02.2025 der \ac{DA}, am 06.05.2025 die \ac{FCR} und am 20.01.2025 die \ac{aFRR}-Leistung.
+Am 20.01.2025 fällt die \ac{aFRR}-Leistung schon bei 5\,\EurMWh{} auf die Hälfte ihres Ausgangswertes und ist bei 30\,\EurMWh{} verschwunden.
+Der \ac{DA} hält dort bis 50\,\EurMWh{} mehr als die Hälfte und fällt erst bei 100\,\EurMWh{} unter ein Zehntel, weicht an diesem Tag also als letzter Markt.
+Eine Aussage der Art, ein bestimmter Markt weiche zuerst, beschreibt damit den gewählten Tag und nicht den Mechanismus.
 
-Der \ac{IDC} hält länger, als sein Anteil am Referenzerlös erwarten lässt, denn am 26.08.2025 bleiben dort auch bei 200\,\EurMWh{} noch 8,8\,\si{MW} gebunden.
-Die Ursache liegt in der Handelsform, denn der kontinuierliche Handel braucht keinen zusammenhängenden Block und nutzt die Leistung, die die kurative Reservierung in einzelnen Viertelstunden übrig lässt.
-Die \ac{aFRR}-Leistung weicht dagegen zuletzt und setzt damit den kurativen Reservierungspreis.
-Am 11.02.2025 hält die \ac{aFRR}-Leistung bis 20\,\EurMWh{}, am 26.08.2025 bis 150\,\EurMWh{} und am 15.05.2025 bis zum höchsten gerechneten Preis.
+Die Verdrängung ist dabei nicht allein ein Abbau.
+Am 20.01.2025 steht der \ac{DA} bei 15\,\EurMWh{} mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage einen Teil der von der \ac{aFRR} frei werdenden Leistung dorthin verschiebt.
+Zwischen den Märkten wird also umgeschichtet und nicht nur abgebaut.
+Dieser Befund beruht allerdings auf einem Tag und einem Preispunkt.
 
-Wie vollständig sich die Bezugsanlage binden lässt, hängt dabei stärker vom Tag ab als vom vorgegebenen Preis.
-Am 11.02.2025 ist die Bezugsanlage bei 20\,\EurMWh{} zu 98 Prozent gebunden, am 15.05.2025 dagegen erst bei 200\,\EurMWh{} zu 89 Prozent und damit beim Zehnfachen des Preises.
-An Tagen mit hohen \ac{aFRR}-Preisen ist die vollständige Verdrängung somit nicht allein teurer, sondern bleibt auch unvollständig.
-Die Reihenfolge der Verdrängung ist an allen vier Tagen dieselbe, die Preise ihres Eintretens unterscheiden sich jedoch um den Faktor zehn, sodass die Reihenfolge und nicht die Schwelle den übertragbaren Teil des Befundes bildet.
+Die \ac{FCR} tritt an vier der fünf Tage überhaupt nicht auf, am 06.05.2025 dagegen in 16 der 96 Zeitscheiben mit im Mittel 1,95\,\si{MW} je Richtung.
+Schon bei 10\,\EurMWh{} ist sie dort vollständig verdrängt und damit der billigste Verdrängungskandidat aller geführten Märkte.
+Dass die \ac{FCR} im Referenzfall nur 2,0 Prozent des Bruttoerlöses trägt, passt dazu, denn sie lohnt sich für die Bezugsanlage nur an wenigen Tagen des Jahres.
+Sichtbar wird sie erst an einem Tag mit hohen Preisen der \ac{FCR} und zugleich niedrigen Preisen der \ac{aFRR}-Leistung.
+
+Zwei Befunde halten dagegen an allen fünf Tagen.
+Der \ac{IDC} überlebt länger, als sein Anteil am Referenzerlös erwarten lässt, denn am 26.08.2025 bleiben dort auch bei 200\,\EurMWh{} noch 8,8\,\si{MW} gebunden.
+Die Ursache liegt in der Handelsform, denn der kontinuierliche Handel braucht keinen zusammenhängenden Block und nutzt die Leistung, die die Reservierung in einzelnen Viertelstunden übrig lässt.
+Die \ac{aFRR}-Leistung weicht an vier der fünf Tage zuletzt oder vorletzt und setzt damit in der Regel den kurativen Reservierungspreis.
+Am 15.05.2025 hält sie selbst beim höchsten gerechneten Preis noch 16,7\,\si{MW}.
+
+Wie vollständig sich die Bezugsanlage binden lässt, hängt stärker vom Tag ab als vom vorgegebenen Preis.
+Am 11.02.2025 ist sie bei 20\,\EurMWh{} zu 98 Prozent gebunden und am 06.05.2025 bei 50\,\EurMWh{} zu 97 Prozent, am 15.05.2025 dagegen erst bei 200\,\EurMWh{} zu 89 Prozent.
+An Tagen mit hohen Preisen der \ac{aFRR}-Leistung ist die vollständige Verdrängung somit nicht allein teurer, sondern bleibt auch unvollständig.
+Alle Befunde dieses Abschnitts beruhen auf fünf Tagen und belegen damit die möglichen Reihenfolgen, nicht ihre Häufigkeit über das Jahr.
 
 % ---------------------------------------------------------------
 \section{Preise beider Iterationen und Erlöswirkung}

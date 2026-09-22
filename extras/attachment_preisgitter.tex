@@ -1,44 +1,52 @@
 \chapter{Verdrängung der Vermarktung über das Preisgitter}
 \label{anh:preisgitter}
 
-% ANGELEGT am 22.09.2026. Die vier Seiten lagen seit dem 21.09.2026 in
-% figures/chapter_4/, ohne in einer figure-Umgebung zu stehen. Der Verfasser
-% hat am 22.09.2026 entschieden, sie in den Anhang zu stellen und aus
-% Abschnitt 4.1 genau einmal auf sie zu verweisen. Das folgt dem Analyse-
-% Repository, das die Seiten am 21.09.2026 um 17:57 nach kapitel_anhang
-% zurueckgelegt hat, und ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 6.
+% ANGELEGT am 22.09.2026, UMGESTELLT am selben Tag nach Update 4 des
+% Analyse-Repositorys. Der Satz der Analysetage ist von vier auf fuenf
+% gewachsen: der 22.02.2025 ist zurueckgezogen, weil sein Kriterium im
+% Gesamtlauf nicht mehr gilt, und der 20.01. sowie der 06.05. sind
+% hinzugekommen. Jeder Tag steht fuer ein Extrem eines der gefuehrten Maerkte,
+% der 06.05. trennt zusaetzlich die FCR von der aFRR-Leistung. Die
+% Begruendungen sind in AUFTRAG_ANALYSETAGE.md gegen die Rohdaten nachgerechnet
+% und stehen jetzt in den Bildunterschriften.
 %
 % VORSCHLAG. Die drei Saetze dieser Einleitung sind noch nicht ueber einen
 % Absatzplan freigegeben. Sie beschreiben allein den Aufbau der Seiten; die
-% Aussagen zur Reihenfolge der Verdraengung gehoeren nach ERGEBNISSE Abschnitt 6
-% in den Text von Kapitel 4 und nicht hierher.
+% Aussagen zur Reihenfolge der Verdraengung stehen im Text von Abschnitt 4.1.
 
-Die vier Seiten dieses Anhangs zeigen den Fahrplan des Speichers über zehn vorgegebene kurative Reservierungspreise hinweg. Jede Kachel einer Seite trägt einen dieser Preise, sodass die Folge der Kacheln erkennen lässt, welche Vermarktung die kurative Reservierung mit steigendem Preis zuerst verdrängt. Ausgewertet sind vier Tage des Jahres 2025, nämlich der 11.02. in Abbildung~\ref{fig:preisgitter_2025_02_11}, der 22.02. in Abbildung~\ref{fig:preisgitter_2025_02_22}, der 15.05. in Abbildung~\ref{fig:preisgitter_2025_05_15} und der 26.08. in Abbildung~\ref{fig:preisgitter_2025_08_26}.
+Die fünf Seiten dieses Anhangs zeigen den Fahrplan des Speichers über zehn vorgegebene kurative Reservierungspreise hinweg. Jede Kachel einer Seite trägt einen dieser Preise, sodass die Folge der Kacheln erkennen lässt, welche Vermarktung die kurative Reservierung mit steigendem Preis zuerst verdrängt. Ausgewertet sind fünf Tage des Jahres 2025, nämlich der 20.01. in Abbildung~\ref{fig:preisgitter_2025_01_20}, der 11.02. in Abbildung~\ref{fig:preisgitter_2025_02_11}, der 06.05. in Abbildung~\ref{fig:preisgitter_2025_05_06}, der 15.05. in Abbildung~\ref{fig:preisgitter_2025_05_15} und der 26.08. in Abbildung~\ref{fig:preisgitter_2025_08_26}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/anhang/dispatch_preisgitter_2025-01-20.pdf}
+    \caption{Fahrplan und Ladezustand am 20.01.2025, dem Tag mit dem größten Spread am \acs{DA} des Jahres 2025, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
+    \label{fig:preisgitter_2025_01_20}
+\end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/anhang/dispatch_preisgitter_2025-02-11.pdf}
-    \caption{Fahrplan und Ladezustand am 11.02.2025, dem Tag mit der größten Redispatchleistung des Jahres 2025, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
+    \caption{Fahrplan und Ladezustand am 11.02.2025, dem Tag mit dem größten Redispatchbedarf des Jahres 2025, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
     \label{fig:preisgitter_2025_02_11}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{figures/anhang/dispatch_preisgitter_2025-02-22.pdf}
-    \caption{Fahrplan und Ladezustand am 22.02.2025, einem weiteren Tag des Winterhalbjahres, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
-    \label{fig:preisgitter_2025_02_22}
+    \includegraphics[width=\textwidth]{figures/anhang/dispatch_preisgitter_2025-05-06.pdf}
+    \caption{Fahrplan und Ladezustand am 06.05.2025, einem Tag mit hohen Preisen der \acs{FCR} und niedrigen Preisen der \acs{aFRR}-Leistung, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
+    \label{fig:preisgitter_2025_05_06}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/anhang/dispatch_preisgitter_2025-05-15.pdf}
-    \caption{Fahrplan und Ladezustand am 15.05.2025, dem teuersten der vier Tage, gemessen am Erlös ohne kurative Bindung, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
+    \caption{Fahrplan und Ladezustand am 15.05.2025, dem Tag mit den höchsten Preisen der \acs{FCR} und der \acs{aFRR}-Leistung des Jahres 2025, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
     \label{fig:preisgitter_2025_05_15}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/anhang/dispatch_preisgitter_2025-08-26.pdf}
-    \caption{Fahrplan und Ladezustand am 26.08.2025, einem Tag des Sommerhalbjahres, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
+    \caption{Fahrplan und Ladezustand am 26.08.2025, dem Tag mit der größten Tagesspanne des \acs{ID1} des Jahres 2025, über zehn vorgegebene kurative Reservierungspreise von null bis 200\,\EurMWh{}.}
     \label{fig:preisgitter_2025_08_26}
 \end{figure}
