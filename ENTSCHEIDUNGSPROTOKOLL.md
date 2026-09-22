@@ -2720,6 +2720,56 @@ Raw-Strings neu erzeugt und auf streunende Wagenruecklaeufe und doppelte
 Backslashes geprueft, beides null. Das bestaetigt die Regel aus HANDOFF.md
 Abschnitt 4, Skripte nur ueber das Write-Werkzeug anzulegen und nicht ueber
 eingebettete Heredocs zu veraendern.
+### 22.09.2026, Anhang F neu gefasst, Fehler in 4.1 berichtigt
+
+**Vorgabe des Verfassers.** Die Einleitung soll sagen, was die Abbildungen
+zeigen, naemlich den Dispatch ueber die 96 Zeitscheiben mit der Aufteilung auf
+die Maerkte und dem Ladezustand; das Wort Kachelfolge entfaellt. Die
+Beschreibung geht die Tage einzeln durch, nennt je Tag den Referenzerloes mit
+Einordnung und das, wofuer der Tag gewaehlt ist, und laesst die Aufzaehlung
+jedes einzelnen Marktes weg. Alles in einem Absatz. Ein eigener Absatz traegt,
+was ueber alle Tage gilt.
+
+**Umgesetzt in drei Absaetzen.** Der erste erklaert den Aufbau der
+Abbildungen. Der zweite nennt je Tag den Referenzerloes gegen ein Jahresmittel
+von rund 93 Tausend Euro je Tag, naemlich 163,3 am 20.01., 54,1 am 11.02.,
+94,2 am 06.05., 414,8 am 15.05. und 251,0 am 26.08., jeweils mit dem
+Auswahlgrund. Der dritte traegt fuenf uebergreifende Aussagen.
+
+**Die uebergreifenden Aussagen.** Die aFRR-Leistung ist an jedem Tag der
+groesste belegte Posten mit 49 bis 93 Prozent der belegten Leistung. Eine
+erste kurative Reservierung kommt an allen fuenf Tagen schon bei 5 Euro je
+Megawatt und Stunde zustande, am 15.05. allerdings nur mit 6,6 MW, und waechst
+mit steigendem Preis stetig. Eine feste Preismarke, ab der ein bestimmter
+Markt weicht, laesst sich nicht angeben, weil die Schwellen zwischen den Tagen
+um den Faktor zehn auseinanderliegen. An den beiden Tagen mit den lukrativsten
+Maerkten bleibt die Verdraengung im betrachteten Bereich unvollstaendig, am
+15.05. mit 16,7 MW aFRR-Leistung und am 26.08. mit 8,8 MW IDC bei 200 Euro je
+Megawatt und Stunde. Am 11.02. halten Day-Ahead und IDC laenger als die
+aFRR-Leistung.
+
+**Zwei Zyklen am 11.02., vom Verfasser beobachtet und geprueft.** Die
+vergroesserte Kachel bei vorgegebenem Preis null zeigt zwei volle Zyklen des
+Ladezustands. Der Tag traegt mit 54,1 Tausend Euro den geringsten
+Referenzerloes der fuenf Tage, obwohl der Redispatchbedarf sein Jahresmaximum
+erreicht; der Erloes stammt dort ueberwiegend aus dem Handel. Beides steht
+jetzt im Text.
+
+**Fehler in Abschnitt 4.1 berichtigt.** Der Satz nannte den 11.02.2025 als
+Tag, an dem der Day-Ahead zuerst weicht. Das widerspricht
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 2.1, wonach sich am 11.02. die
+aFRR-Leistung bei 10 und der Day-Ahead erst bei 15 Euro je Megawatt und Stunde
+halbiert. Uebernommen war die Aussage aus Abschnitt 2.3 derselben Datei, der
+damit seiner eigenen Tabelle widerspricht. Belegt ist der Day-Ahead als Erster
+am 26.08.2025, wo er sich bei 10 halbiert und bei 15 unter ein Zehntel faellt,
+waehrend die aFRR-Leistung erst bei 30 halbiert. Zurueckgenommen, nicht wieder
+aufzunehmen: "Verdraengt wird zuerst, was an diesem Tag am wenigsten
+einbringt, und das ist am 11.02.2025 der DA, am 06.05.2025 die FCR und am
+20.01.2025 die aFRR-Leistung." Der Widerspruch ist dem Analyse-Repository zu
+melden.
+
+**Stand.** Anhang F umfasst sechs Seiten, die drei Absaetze stehen gemeinsam
+auf der ersten. Das Dokument umfasst 105 Seiten, Kapitel 4 endet auf Seite 68.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
