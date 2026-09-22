@@ -2213,6 +2213,75 @@ haelt. Nicht entfernt, weil der Ort des geparkten Unterabschnitts offen ist.
 **Umgesetzt.** Die Datei traegt einen Abschlussvermerk im Kopf und liegt in
 archiv/. Das Wurzelverzeichnis fuehrt damit sechs Markdown-Dateien, archiv/
 zwoelf.
+### 22.09.2026, Antwort des Analyse-Repositorys eingearbeitet
+
+**Grundlage.** ANTWORT_AN_SCHRIFTFASSUNG.md vom 22.09.2026 12:04, die Antwort
+auf RUECKMELDUNG_AN_ANALYSE.md. Fuenf der sechs abweichenden Entscheidungen
+sind bestaetigt (Nummerierung 4.6 und 4.7, Beleg des Arbeitspreises,
+beschreibende statt wertende Fassung des Saisonbefunds, Loeschung der
+einteiligen Jahreslauffassung, Wegfall der Tabelle 4.1). Die sechste, der
+Kapiteltitel, ist vom Verfasser entschieden.
+
+**Kapiteltitel.** Kapitel 4 heisst jetzt "Ergebnisse". Zurueckgenommen, nicht
+wieder aufzunehmen: "Exemplarische Anwendung und Ergebnisse". Der eigene
+Vorschlag "Der kurative Reservierungspreis" ist nicht gewaehlt worden.
+
+**Bezugslinie, Belegfehler behoben.** Bisher stand die Kostenangabe der
+Bundesnetzagentur ueber einer Menge aus energy-charts, also eine Mischung
+zweier Quellen. Kosten und Menge stammen jetzt aus derselben Mitteilung,
+naemlich 3071 Millionen Euro auf 30319 Gigawattstunden. Zurueckgenommen, nicht
+wieder aufzunehmen: "Diesen Kosten steht eine bewegte Menge von 12,15 TWh
+Erhoehung und 18,30 TWh Absenkung gegenueber, woraus sich ein Arbeitspreis von
+101 Euro je bewegter Megawattstunde ergibt, gemittelt ueber beide Richtungen."
+Der Arbeitspreis bleibt 101 Euro je Megawattstunde; er liegt in jeder
+Kombination beider Quellen zwischen 100,9 und 101,3.
+
+**Offener Punkt, dem Verfasser gemeldet.** Der Absatz zur Asymmetrie nennt
+weiterhin 12,15 gegen 18,30 TWh je Richtung. Diese Aufteilung stammt aus
+energy-charts und traegt keinen Eintrag in literature.bib. Die zitierte
+Mitteilung der Bundesnetzagentur fuehrt eigene Richtungszahlen, naemlich
+15549 GWh Absenkung gegen 7732 GWh Erhoehung am Markt und 1302 GWh aus
+Reservekraftwerken. Die Asymmetrie zeigt sich dort ebenso, die Zahlen
+unterscheiden sich aber, weil die Abgrenzungen andere sind. Zu entscheiden ist,
+ob ein Eintrag fuer energy-charts angelegt oder der Absatz auf die Zahlen der
+Bundesnetzagentur umgestellt wird. Nicht stellvertretend entschieden.
+
+**Stunden unter der Bezugslinie, nachgeliefert.** ERGEBNISSE Abschnitt 7.4
+fuehrt sie seit dem 22.09.2026. Im Text stehen jetzt 8485 von 8758 Stunden in
+der Entlade- und 8477 in der Laderichtung, also 96,9 und 96,8 Prozent, sowie
+7833 von 8758 fuer die Summe beider Richtungen, also 89,4 Prozent. Die
+Tagesebene bleibt daneben stehen, weil sie den Vergleich zur Abbildung traegt.
+Je Jahreszeit ist der Befund ergaenzt: im Winter liegen 97,5 Prozent der
+Stunden unter der Linie, im Herbst 86,1 Prozent.
+
+**Zeitmuster, neuer Befund.** Die Abbildung zeigt seit dem 22.09.2026 Median
+und arithmetisches Mittel mit der Flaeche dazwischen. Neu im Text: der Abstand
+beider Masse ist in den billigen Stunden gross und in den teuren klein. In der
+Ladereservierung betraegt das Mittel um 19 Uhr das 3,7-Fache des Medians
+(15,4 gegen 4,1) und um 13 Uhr das 1,04-Fache (61,0 gegen 58,6 Euro je
+Megawatt und Stunde). Die Rechtsschiefe sitzt damit in den Stunden, in denen
+die Reservierung im Regelfall wenig kostet, und nicht in der Mittagsspitze. Im
+Jahresgang verschiebt das Mittel die Monatsaussage, denn der Median der
+Ladereservierung hat sein Maximum im September mit 25,5 und das Mittel im Juni
+mit 43,2. Die Bildunterschrift folgt dem Vorschlag des Analyse-Repositorys, an
+den Stil der Arbeit angepasst.
+
+**Fuellgrad und Maximalpreis.** Das Analyse-Repository bestaetigt, dass beide
+Abbildungen in figures/chapter_3/ liegen bleiben und nirgends gezeigt werden,
+auch nicht im Anhang. Sie sind der Beleg fuer den Fall einer Rueckfrage in der
+Pruefung. Kein Handlungsbedarf.
+
+**Update 2 war bereits umgesetzt.** UPDATE_02_AN_SCHRIFTFASSUNG.md vom
+22.09.2026 12:27 entspricht dem, was der Verfasser zuvor in den Chat kopiert
+hatte; der Nachtrag zur Bezugslinie stand also schon im Text.
+
+**Abbildungen.** Am 22.09.2026 abends geprueft: alle neun Abbildungen des
+Kapitels sind deckungsgleich mit dem Lieferordner. Die in der Antwort
+genannten Staende 11:17 und 11:28 entsprechen den dort liegenden Dateien.
+
+**Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in
+chapter_5.tex. Build ohne Fehler, 104 Seiten, Kapitel 4 von PDF-Seite 57 bis
+69, Kapitelanfaenge unveraendert.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

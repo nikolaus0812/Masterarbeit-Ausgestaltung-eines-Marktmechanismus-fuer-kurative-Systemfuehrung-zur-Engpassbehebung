@@ -22,7 +22,7 @@ beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.
 | Kapitel 1 Einleitung | PDF-Seite 9 bis 13, fünf Seiten, **keine Reserve** |
 | Kapitel 2 Grundlagen und Stand der Technik | PDF-Seite 14 bis 37 |
 | Kapitel 3 Marktmechanismus und Modellierung | PDF-Seite 38 bis 56 |
-| Kapitel 4 Exemplarische Anwendung | PDF-Seite 57 bis 69 |
+| Kapitel 4 Ergebnisse | PDF-Seite 57 bis 69 |
 | Anhänge A bis F | A Weber, B Überlastdauer, C Optimierungsproblem, D Ablauf, E Validierung je Markt, F Preisgitter |
 
 Logische Seitenzahl ist PDF-Seite minus acht.
@@ -65,10 +65,13 @@ Schriftfassung nachgerechnet. Quelle ist
 `analysen/code/schrift/ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 7 und
 Abschnitt 4 der Anweisung. **Rückfragen dorthin, nicht nachrechnen.**
 
-Neun Abbildungen liegen in `figures/chapter_4/`. Stand der drei zuletzt
-geholten: Jahreslauf Median und Mittel vom 22.09. 12:05, Zeitmuster vom
-22.09. 11:14. Das Zeitmuster zeigt seither Median **und** arithmetisches
-Mittel mit einem Band dazwischen.
+Neun Abbildungen liegen in `figures/chapter_4/`. Stand am 22.09.2026 abends
+geprüft: alle neun sind deckungsgleich mit dem Lieferordner. Das Zeitmuster
+zeigt die Summe als Hauptkurve, dazu Median und arithmetisches Mittel mit der
+grauen Fläche dazwischen.
+
+**Der Kapiteltitel lautet seit dem 22.09.2026 `Ergebnisse`**, Entscheidung des
+Verfassers über das Analyse-Repository.
 
 ---
 
@@ -77,7 +80,7 @@ Mittel mit einem Band dazwischen.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, sechs Dateien
+### Wurzelverzeichnis, fünf Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -85,10 +88,9 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `HANDOFF.md` | diese Datei, Einstiegspunkt jeder Sitzung |
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
-| `RUECKMELDUNG_AN_ANALYSE.md` | **offen**: Antwort an das Analyse-Repository, noch nicht abgesendet |
 | `README.md` | Beschreibung des Repositorys |
 
-### `archiv/`, zwölf Dateien, nur zum Nachschlagen
+### `archiv/`, dreizehn Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -102,14 +104,18 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `KAPITEL_4_AUFBAU.md` | eigene Sortierung von Kapitel 4 vom 18.09. | **`AUFBAU_KAPITEL_4.md` im Analyse-Repository**, 22.09. |
 | `quellencheck_bericht.md` | erzeugter Bericht vom 19.09. | nicht versioniert, kein Steuerdokument |
 | `DURCHSICHT_KAP1_3.md` | Durchsicht Kapitel 1 bis 3 vom 15.09. | Listen A bis F umgesetzt, Reste der Liste G stehen unten in Abschnitt 6 |
+| `RUECKMELDUNG_AN_ANALYSE.md` | Rückmeldung an das Analyse-Repository | abgesendet, beantwortet in `ANTWORT_AN_SCHRIFTFASSUNG.md` |
 
 ### Im Analyse-Repository, nur lesend
 
 `analysen/code/schrift/` trägt `ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md` (das
 Arbeitsdokument), `AUFBAU_KAPITEL_4.md` (roter Faden je Abschnitt),
-`ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` (Herleitung, Abschnitt 7 alle Zahlen)
-und `UEBERGABE_AN_SCHRIFTFASSUNG.md`. **Diese Dateien am Repository lesen und
-nicht in einer Kopie**, sie ändern sich mehrmals täglich.
+`ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` (Herleitung, Abschnitt 7 alle Zahlen),
+`UEBERGABE_AN_SCHRIFTFASSUNG.md`, `ANTWORT_AN_SCHRIFTFASSUNG.md` (Antwort auf
+die Rückmeldung, 22.09. 12:04) und `UPDATE_02_AN_SCHRIFTFASSUNG.md` (Nachtrag
+zur Bezugslinie, 22.09. 12:27). **Diese Dateien am Repository lesen und nicht
+in einer Kopie**, sie ändern sich mehrmals täglich. Alles aus der Antwort und
+aus Update 2 ist am 22.09.2026 eingearbeitet.
 
 ---
 
@@ -140,9 +146,12 @@ Ausführlich im Protokoll. Kurz:
 - **Redispatch heute:** 16,5 TWh in beiden Richtungen 2025, 98 Prozent auf 206
   Einheiten ab 100 MW.
 - **Bezugslinie des präventiven Redispatch**, entschieden am 22.09.2026: 101
-  Euro je bewegter Megawattstunde, gemittelt über beide Richtungen. Der Nenner
-  enthält beide Richtungen und **wird nicht halbiert**, weil die Reihe nicht
-  symmetrisch ist. Näheres in 4.5 und im Protokoll.
+  Euro je bewegter Megawattstunde, gemittelt über beide Richtungen. Kosten und
+  Menge stammen aus derselben Mitteilung der Bundesnetzagentur, nämlich
+  3071 Millionen Euro auf 30 319 GWh. Der Nenner enthält beide Richtungen und
+  **wird nicht halbiert**, weil die Reihe nicht symmetrisch ist. Näheres in 4.5
+  und im Protokoll.
+- **Kapiteltitel `Ergebnisse`**, entschieden am 22.09.2026.
 - Die Entscheidungen vom 18. und 19.09.2026 gelten unverändert: Stilregel 1
   mit mindestens einer halben Seite je Absatz, Trendjahr 2032, Aktenzeichen
   `BK8-22-001-A`, KuPilot erprobt die Höherauslastung, technologieoffener
@@ -212,9 +221,16 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   ist in 4.5 zum Teil zugeordnet. Der verbleibende Anteil ist dem
   Einspeisemanagement zugeschrieben und **ausdrücklich als Vermutung
   gekennzeichnet**.
-- **Kapiteltitel.** *Exemplarische Anwendung und Ergebnisse* trifft nicht mehr,
-  weil das ganze Jahr gerechnet ist. Vorschlag: *Der kurative
-  Reservierungspreis*. Entscheidung des Verfassers.
+- **Beleg der Richtungsmengen in 4.5.** Der Quotient von 101 Euro je
+  Megawattstunde ist belegt, denn Kosten und Menge stehen in derselben
+  Mitteilung der Bundesnetzagentur. Die Aufteilung nach Richtung im Absatz zur
+  Asymmetrie, nämlich 12,15 gegen 18,30 TWh, stammt dagegen aus energy-charts
+  und trägt keinen Eintrag in `literature.bib`. Die zitierte Mitteilung führt
+  eigene Richtungszahlen, nämlich 15 549 GWh Absenkung gegen 7732 GWh Erhöhung
+  am Markt und 1302 GWh aus Reservekraftwerken; die Asymmetrie zeigt sich dort
+  ebenso, die Zahlen unterscheiden sich aber, weil die Abgrenzungen andere
+  sind. **Zu entscheiden:** entweder einen Eintrag für energy-charts anlegen
+  oder den Absatz auf die Zahlen der Bundesnetzagentur umstellen.
 - **Abschnitt 1.2** beschreibt im letzten Satz des Zielabsatzes noch die alte
   Sortierung von Kapitel 4 und nennt die neuen Abschnitte 4.1 und 4.2 nicht.
 - `fuellgrad_iterationen_2025.pdf` und `maximalpreis_iterationen_2025.pdf`

@@ -2,7 +2,12 @@
 %%                       IAEW LaTeX Template                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Exemplarische Anwendung und Ergebnisse}
+% TITEL GEAENDERT am 22.09.2026, Entscheidung des Verfassers nach
+% ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 1.6. "Exemplarisch" trifft nicht
+% mehr, weil das ganze Jahr 2025 gerechnet ist und das Exemplarische in
+% Kapitel 3 steht. Alte Fassung, nicht wieder aufzunehmen:
+%\chapter{Exemplarische Anwendung und Ergebnisse}
+\chapter{Ergebnisse}
 \label{ch:results}
 % ===============================================================
 % UMBAU am 22.09.2026 nach ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md (Stand
@@ -169,7 +174,7 @@ Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entl
     % dem Median auch das arithmetische Mittel und das Band zwischen beiden
     % Massen. Alte Fassung:
     %    \caption{Median des kurativen Reservierungspreises im Jahr 2025 über der Stunde des Tages und über dem Monat, je Richtung und als Summe beider Richtungen, zweite Iteration.}
-    \caption{Kurativer Reservierungspreis im Jahr 2025 über der Stunde des Tages und über dem Monat, je Richtung und als Summe beider Richtungen, als Median und als arithmetisches Mittel, zweite Iteration; das graue Band ist der Abstand beider Maße für die Summe.}
+    \caption{Tagesgang und Jahresgang des kurativen Reservierungspreises im Jahr 2025 über 8758 Stunden je Richtung, zweite Iteration; durchgezogen der Median, gestrichelt das arithmetische Mittel, die graue Fläche ist der Abstand beider Maße für die Summe. Die Summe beider Richtungen ist kein Mittelwert, sondern der Preis eines Produkts in beiden Richtungen.}
     \label{fig:zeitmuster_reservierungspreis}
 \end{figure}
 
@@ -187,9 +192,18 @@ Wer jedoch ein Produkt in beiden Richtungen beschafft, zahlt beide Richtungen zu
 Die Summe erreicht ihren größten Median mit 79,3\,\EurMWh{} um 14 Uhr, weil dort beide Richtungen erhöht sind, und ihren kleinsten mit 9,6\,\EurMWh{} um Mitternacht.
 Über den Tag schwankt die Summe damit um den Faktor 8,3.
 
+% ERGAENZT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4,
+% Rueckfrage 3: der Abstand zwischen Median und Mittel ist der neue Befund
+% der ueberarbeiteten Abbildung.
+Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
+In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians, nämlich 15,4 gegen 4,1\,\EurMWh{}, und um 13 Uhr nur das 1,04-Fache, nämlich 61,0 gegen 58,6\,\EurMWh{}.
+Die Rechtsschiefe sitzt damit in den Stunden, in denen die Reservierung im Regelfall wenig kostet, und nicht in der Mittagsspitze.
+
 Über das Jahr verschiebt sich das Muster von der Tages- auf die Jahreszeit.
 Die Summe beider Richtungen erreicht ihren größten Monatsmedian im September mit 56,9\,\EurMWh{} und ihren kleinsten im Dezember mit 13,5\,\EurMWh{}.
 Im Winter von November bis Februar liegt die Summe bei 23,2 und im Sommer von Mai bis August bei 38,6\,\EurMWh{}, sodass die Reservierung im Winter rund 40 Prozent weniger kostet als im Sommer.
+% ERGAENZT am 22.09.2026: das Mittel verschiebt die Monatsaussage.
+Das arithmetische Mittel verschiebt diese Aussage über die Monate, denn der Median der Ladereservierung erreicht sein Maximum im September mit 25,5 und das arithmetische Mittel im Juni mit 43,2\,\EurMWh{}.
 Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Abschnitt~\ref{sec:price_vs_redispatch} geprüft.
 
 % ---------------------------------------------------------------
@@ -228,8 +242,13 @@ Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,
 % Fassung, nicht wieder aufzunehmen:
 %Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}, woraus sich bezogen auf die bewegte Menge von 30,44\,\si{TWh} ein Arbeitspreis von 101 Euro je Megawattstunde ergibt.
 Die waagerechte Linie beider Abbildungen bezeichnet den Arbeitspreis des heutigen präventiven Redispatch.
-Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Diesen Kosten steht eine bewegte Menge von 12,15\,\si{TWh} Erhöhung und 18,30\,\si{TWh} Absenkung gegenüber, woraus sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde ergibt, gemittelt über beide Richtungen.
+% GEAENDERT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 1.2:
+% Kosten UND Menge stammen jetzt aus derselben Mitteilung. Vorher stand die
+% Menge aus einer zweiten Quelle daneben, was eine Schriftfassung nicht
+% belegen kann. Alte Fassung, nicht wieder aufzunehmen:
+%Diesen Kosten steht eine bewegte Menge von 12,15\,\si{TWh} Erhöhung und 18,30\,\si{TWh} Absenkung gegenüber, woraus sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde ergibt, gemittelt über beide Richtungen.
+Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro und ein Maßnahmenvolumen von 30\,319\,\si{GWh} aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über beide Richtungen.
 Dieser Vergleichswert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
 Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildungen sie nebeneinanderstellen und nicht gegeneinander aufrechnen.
 
@@ -238,7 +257,7 @@ Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abb
 % denkbaren Nenner und die Bilanz sind im Analyse-Repository geprueft.
 Der Nenner enthält beide Richtungen und wird nicht halbiert.
 Eine Halbierung setzte voraus, dass jede Absenkung ein gleich großes Hochfahren trägt.
-Diese Symmetrie liegt im Jahr 2025 nicht vor, denn den 12,15\,\si{TWh} Erhöhung stehen 18,30\,\si{TWh} Absenkung gegenüber.
+Diese Symmetrie liegt im Jahr 2025 nicht vor, denn der Erhöhung von 12,15\,\si{TWh} steht eine Absenkung von 18,30\,\si{TWh} gegenüber.
 Je nach gewähltem Nenner ergäben sich 101 Euro je Megawattstunde für die Summe beider Richtungen, 168 für die Absenkung allein, 202 für die halbe Summe und 253 für die Erhöhung allein.
 Allein der Wert von 101 Euro je Megawattstunde kommt ohne eine Annahme über die Symmetrie aus und wird deshalb ausgewiesen.
 Eine Aufteilung dieses Arbeitspreises nach Richtung ist nicht möglich, denn die Mengen liegen je Richtung vor und die Kosten allein als eine Summe.
@@ -257,6 +276,11 @@ Diese Zuordnung ist nicht belegt und bleibt eine Vermutung.
 
 Gemessen am Tagesmedian bleibt der kurative Reservierungspreis in beiden Richtungen an allen 365 Tagen unter dieser Linie.
 Auch das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
+% ERGAENZT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4,
+% Rueckfrage 1: die Stundenzahl ist die schaerfere Aussage, weil die
+% Tagesebene praktisch jeden Tag unter die Linie bringt.
+Die Stundenebene trägt die schärfere Aussage, denn dort liegen 8485 von 8758 Stunden in der Entlade- und 8477 in der Laderichtung unter der Linie, also 96,9 und 96,8 Prozent.
+Rund jede dreißigste Stunde je Richtung liegt damit darüber, und für die Summe beider Richtungen sind es mit 7833 von 8758 Stunden nur 89,4 Prozent und damit rund jede zehnte Stunde.
 Die Redispatchleistung beträgt im Tagesmittel 1523\,\si{MW} nach oben und 1226\,\si{MW} nach unten.
 Der Korrelationskoeffizient zwischen dem Tagesmedian des kurativen Reservierungspreises und der Redispatchleistung des Tages beträgt minus 0,03 in der Entlade- und plus 0,11 in der Laderichtung, sodass Preis und Bedarf innerhalb des Jahres nicht zusammenlaufen.
 
@@ -264,6 +288,9 @@ Zwischen den Jahreszeiten besteht dagegen ein Zusammenhang.
 Im Winter von Dezember bis Februar kostet die Entladereservierung im Median 9,83 und die Ladereservierung 4,71\,\EurMWh{}, zusammen also 14,55\,\EurMWh{}, während die Redispatchleistung nach oben mit 2314\,\si{MW} ihren größten Wert erreicht.
 Im Herbst von September bis November stehen 18,93 und 14,77\,\EurMWh{} und damit zusammen 33,70\,\EurMWh{} einer Redispatchleistung von 1767\,\si{MW} gegenüber.
 Frühjahr und Sommer liegen mit 23,92 und 23,30\,\EurMWh{} dazwischen, bei 1034 und 996\,\si{MW}.
+% ERGAENZT am 22.09.2026: derselbe Befund auf Stundenebene, nach
+% ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4.
+Auf Stundenebene bestätigt sich dieser Verlauf, denn im Winter liegen 97,5 Prozent der Stunden unter der Bezugslinie und im Herbst nur 86,1 Prozent.
 Die Jahreszeit mit dem größten Engpassmanagementbedarf ist damit zugleich die Jahreszeit mit der günstigsten Reservierung.
 
 % ---------------------------------------------------------------
