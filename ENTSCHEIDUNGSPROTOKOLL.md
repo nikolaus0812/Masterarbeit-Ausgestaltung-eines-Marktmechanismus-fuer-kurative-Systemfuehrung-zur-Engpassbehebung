@@ -2355,6 +2355,61 @@ Abschnitt 3.3.1 fuehrt den Massstab ein, Abschnitt 3.3.2 braucht ihn fuer das
 Verhaeltnis von 1,31. Die Wiederholung steht damit in einem Absatz, der sie
 fuer seine eigene Rechnung braucht, und ist nach dem Dopplungsmassstab vom
 20.09.2026 zulaessig.
+### 22.09.2026, Abbildungsstil geprueft, Auftrag an das Analyse-Repository
+
+**Anlass.** Der Verfasser hat bemerkt, dass die Diagramme untereinander und
+gegenueber dem Satzbild nicht einheitlich wirken und dass Abbildung 3.2 nicht
+buendig mit dem Text steht.
+
+**Vorgehen.** Alle 28 eingebundenen Abbildungen mit pdffonts auf die
+eingebetteten Schriften und mit pdfinfo auf die Seitengroesse gelesen, die
+Schriftgroessen aus den Tf-Operatoren der Inhaltsstroeme gezaehlt und mit dem
+Verhaeltnis aus gesetzter Breite und Dateibreite verrechnet. Die Textbreite
+von 455,244 pt stammt aus einem eigenen LaTeX-Lauf gegen extras/header.tex.
+
+**Die Breiten stimmen.** Die Dateien sind 453,5 pt breit, was exakt der
+Textbreite entspricht: matplotlib rechnet mit 72, TeX mit 72,27 Punkt je Zoll.
+Beim Einbinden mit voller Textbreite passt es physisch 1 zu 1. Das war
+zunaechst als Abweichung vermutet und ist keine.
+
+**Referenz sind 17 Abbildungen** mit NimbusSanL, 8,00 pt Grundbeschriftung und
+9,00 pt fuer Achsen- und Feldtitel.
+
+**Vier Abbildungen tragen DejaVuSans**, also matplotlibs Voreinstellung:
+validierung_cross.pdf, jahreslauf_reservierungspreis_redispatch_2025_median.pdf
+und _mittel.pdf sowie validierung_einzelmarkt.pdf. Bei den ersten drei stimmen
+die Groessen, bei der letzten liegt die Grundbeschriftung zusaetzlich mit
+7,03 pt eine Stufe zu klein.
+
+**Eine Abbildung wird gestaucht.** tatl_berechnung.pdf wird in voller Breite
+geliefert und auf 0,72 der Textbreite eingebunden; die Schrift faellt dadurch
+auf 5,76 und 6,48 pt.
+
+**Abbildung 3.2 ist ein anderer Fall, Erstbefund berichtigt.** Zunaechst war
+angenommen, reservierungspreis_bisektion.pdf werde ebenfalls gestaucht und
+verliere dadurch Schriftgroesse. Die Nachrechnung zeigt das Gegenteil: die
+Datei wird mit 371,9 pt schmal geliefert und auf 0,82 der Textbreite und damit
+1 zu 1 eingebunden, die Schrift ist mit 8,00 pt korrekt. Der Befund ist rein
+optisch, naemlich dass die Abbildung als einzige im laufenden Text nicht
+buendig mit dem Satzspiegel steht. Der erste, falsche Befund ist nicht in den
+Auftrag gelangt.
+
+**Fuenf Abbildungen liegen eine Stufe zu klein**, naemlich
+dispatch_festpreis_2025-02-11_p5.pdf mit 7,00 pt und die vier
+Preisgitterseiten mit 6,00 pt. Bei den Preisgitterseiten mit je zehn Kacheln
+ist das nachvollziehbar und dem Analyse-Repository ueberlassen.
+
+**Auftrag gestellt.** AUFTRAG_ABBILDUNGSSTIL.md im Wurzelverzeichnis, mit
+einem Abschnitt zum Hineinkopieren. Er verlangt die Umstellung der vier
+DejaVuSans-Abbildungen, flachere Fassungen in voller Breite fuer
+tatl_berechnung.pdf und reservierungspreis_bisektion.pdf, die Anhebung der zu
+kleinen Schriften und die dauerhafte Aufnahme der Sollvorgabe in
+ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md.
+
+**In der Schriftfassung vorerst nichts geaendert.** Die beiden verkleinerten
+Einbindungen bleiben stehen, bis die flacheren Fassungen vorliegen, weil ein
+blosses Hochsetzen auf die volle Textbreite die Seitenlage verschoebe, ohne
+das Problem zu loesen.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

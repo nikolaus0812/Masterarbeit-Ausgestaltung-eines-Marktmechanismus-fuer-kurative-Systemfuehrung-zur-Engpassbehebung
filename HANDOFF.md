@@ -80,7 +80,7 @@ Verfassers über das Analyse-Repository.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, fünf Dateien
+### Wurzelverzeichnis, sechs Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -88,6 +88,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `HANDOFF.md` | diese Datei, Einstiegspunkt jeder Sitzung |
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
+| `AUFTRAG_ABBILDUNGSSTIL.md` | **offen**: Auftrag an das Analyse-Repository, Schrift und Breite der Abbildungen |
 | `README.md` | Beschreibung des Repositorys |
 
 ### `archiv/`, dreizehn Dateien, nur zum Nachschlagen
@@ -210,6 +211,15 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 **Aus Kapitel 4**
 
+- **Abbildungsstil, Auftrag vom 22.09.2026** in `AUFTRAG_ABBILDUNGSSTIL.md`.
+  Vier Abbildungen tragen DejaVuSans statt NimbusSanL; `tatl_berechnung.pdf`
+  wird auf 0,72 gestaucht und fällt dadurch auf 5,8 pt; `dispatch_festpreis`
+  und die vier Preisgitterseiten liegen eine Stufe zu klein; und
+  `reservierungspreis_bisektion.pdf` (Abbildung 3.2) wird schmal geliefert und
+  läuft deshalb nicht über die Textbreite, ihre Schrift ist aber korrekt. Die
+  beiden verkleinerten Einbindungen bleiben stehen, bis flachere Fassungen in
+  voller Breite vorliegen; dann auf die volle Textbreite umstellen und die
+  Seitenlage prüfen.
 - **4.6.3 und 4.6.4 sind leer** und warten auf `sensi8_spanne_und_niveau` aus
   dem Analyse-Repository. Nicht mit den Einzeltagsfassungen füllen.
 - **Für 4.6.4 vorgemerkt (G3), Entscheidung des Verfassers vom 22.09.2026:**
