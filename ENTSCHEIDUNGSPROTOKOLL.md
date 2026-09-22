@@ -2516,6 +2516,67 @@ als Ergebnis der zweiten Iteration, und die Bildunterschriften von Kapitel 4
 sagen durchgehend "zweite Iteration". Der Leser trifft in 4.2 aber ohne
 Vorbereitung auf die erste Iteration; falls das stoert, waere ein Halbsatz
 dort die Stelle.
+### 22.09.2026, Analysetage geprueft und neu gewaehlt
+
+**Anlass.** Abschnitt 4.1 muss begruenden, warum gerade diese Tage gerechnet
+sind. Der Verfasser hat die Begruendung verlangt und aus dem Gedaechtnis vier
+Kriterien genannt. Die Pruefung gegen main.py des Analyse-Repositorys und
+gegen die Rohdaten hat drei bestaetigt und eines widerlegt.
+
+**Bestaetigt, jeweils Rang 1 des Jahres 2025.** Der 11.02. traegt mit 20457 MW
+im Tagesmittel beider Richtungen den groessten Redispatchbedarf, der 15.05.
+mit 66,87 Euro je Megawatt und Stunde die hoechsten aFRR-Kapazitaetspreise
+und der 26.08. mit 1603,7 Euro je Megawattstunde die groesste Tagesspanne des
+ID1. Die Werte sind gegen die Rohdaten nachgerechnet.
+
+**Widerlegt.** Der 22.02. trug das Kriterium "einzige Stunden ohne endlichen
+Verdraengungspreis 2025", eingetragen am 17.09.2026. Im Gesamtlauf vom
+17.-19.09.2026 gibt es diese Stunden nicht mehr; die beiden fraglichen
+Stunden tragen 19,30 und 22,01 Euro je Megawatt und Stunde, und das ganze
+Jahr hat keine offene Stunde. Der Tag sticht auch sonst nirgends heraus:
+Redispatch Rang 99, aFRR-Energiepreise Rang 164 und 117, ID1-Spanne Rang 120,
+FCR Rang 322.
+
+**Vermutung des Verfassers nicht bestaetigt.** Der Verfasser hatte den 22.02.
+als Tag mit den hoechsten aFRR-Energiepreisen in Erinnerung. Die Pruefung
+zeigt Rang 164 von 365 in positiver und Rang 117 in negativer Richtung.
+
+**Befund zur FCR, der die Auswahl umgelenkt hat.** Der Verfasser wollte den
+22.02. gegen den Tag mit dem hoechsten FCR-Preis tauschen. Dieser Tag ist
+aber der 15.05. und damit bereits im Satz: FCR und aFRR-Kapazitaet spitzen am
+selben Tag, beide Rang 1. Ein Tausch haette also keinen neuen Tag ergeben.
+
+**Entscheidung des Verfassers: fuenf Tage statt vier.** Der 22.02. entfaellt,
+neu kommen der 20.01. und der 06.05. hinzu. Der 20.01. traegt mit 469,0 Euro
+je Megawattstunde den groessten Day-Ahead-Spread des Jahres und prueft damit
+die Ordnungsaussage, der Day-Ahead weiche zuerst, an ihrer schwaechsten
+Stelle; die bisherigen Tage lagen dort auf den Raengen 64 bis 236. Der 06.05.
+trennt die beiden Regelleistungsmaerkte, denn dort liegt die FCR mit 113,5
+Euro je Megawatt auf Rang 16 und die aFRR-Leistung mit 15,6 Euro je Megawatt
+und Stunde auf Rang 163; am 15.05. sind beide Rang 1, dort laesst sich der
+Treiber nicht trennen.
+
+**Nebeneffekt.** ERGEBNISSE Abschnitt 8 fuehrt als nicht belegt, dass die FCR
+nie verdraengt werde. Mit dem 15.05. steht der Tag mit den hoechsten
+FCR-Preisen im Satz und mit dem 06.05. einer ohne teure aFRR daneben. Bleibt
+die FCR auch dort bei null, traegt die Aussage deutlich weiter.
+
+**Vorbehalt zum Day-Ahead-Spread, im Auftrag benannt.** Die Stundenreihe
+reicht nur bis zum 30.09.2025, weil der Day-Ahead ab dem 01.10.2025 in
+Viertelstunden gehandelt wird; der Rang 1 bezieht sich auf 273 Tage. Fuer
+Oktober bis Dezember liegt die groesste Viertelstundenspanne bei 422,2 Euro
+je Megawattstunde und damit unter den 469,0 des 20.01. Da eine
+Viertelstundenspanne nie kleiner ist als die Stundenspanne desselben Tages,
+bleibt der 20.01. auch im vollen Jahr vorn.
+
+**Auftrag gestellt.** AUFTRAG_ANALYSETAGE.md im Wurzelverzeichnis, mit einem
+Abschnitt zum Hineinkopieren. Er verlangt zwei neue Preisgitter, den Rueckzug
+des 22.02., die Berichtigung der Liste DAYS in main.py und die Ergaenzung der
+Abschnitte 2, 2.1, 2.2, 2.3 und 5 von ERGEBNISSE.
+
+**In der Schriftfassung vorerst nichts geaendert.** Anhang F fuehrt weiter die
+vier alten Seiten, die Tagesliste in 4.1 bleibt stehen, bis die neuen
+Preisgitter vorliegen. Danach waechst Anhang F auf fuenf Seiten.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2

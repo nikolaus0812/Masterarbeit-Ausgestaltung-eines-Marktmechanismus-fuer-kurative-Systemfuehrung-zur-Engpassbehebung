@@ -80,7 +80,7 @@ Verfassers über das Analyse-Repository.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, fünf Dateien
+### Wurzelverzeichnis, sechs Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -88,6 +88,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `HANDOFF.md` | diese Datei, Einstiegspunkt jeder Sitzung |
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
+| `AUFTRAG_ANALYSETAGE.md` | **offen**: Auftrag an das Analyse-Repository, neuer Satz der Analysetage |
 | `README.md` | Beschreibung des Repositorys |
 
 ### `archiv/`, vierzehn Dateien, nur zum Nachschlagen
@@ -211,6 +212,13 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 **Aus Kapitel 4**
 
+- **Analysetage, Auftrag vom 22.09.2026** in `AUFTRAG_ANALYSETAGE.md`. Das
+  Kriterium des 22.02.2025 gilt im Gesamtlauf nicht mehr. Der Verfasser hat
+  den Satz auf fünf Tage geändert: 20.01. (größter Day-Ahead-Spread), 11.02.
+  (größter Redispatchbedarf), 06.05. (FCR hoch bei niedriger aFRR-Leistung),
+  15.05. (FCR und aFRR zugleich am höchsten) und 26.08. (größte ID1-Spanne).
+  Bis die beiden neuen Preisgitter geliefert sind, bleiben Anhang F und die
+  Tagesliste in 4.1 unverändert.
 - ~~Abbildungsstil~~ **erledigt am 22.09.2026.** Alle 28 Abbildungen tragen
   NimbusSanL mit 8,00 und 9,00 pt in voller Breite, keine Stauchung. Das
   Analyse-Repository hat die Ursache an der Wurzel behoben, nämlich ein
