@@ -12991,6 +12991,312 @@ hineinpasst. Bestaetigt ist zugleich die Aussage von 3.2.4, wonach die
 zweite Iteration ein Mehrfaches der ersten verlangt. Ueber die Spanne 84
 bis 167 entscheidet erst die ausstehende Messung. **Bis dahin bleibt
 Abschnitt 3.2.4 unveraendert.**
+### 23.09.2026, zwei Stilvorgaben, alle Bildunterschriften gekuerzt
+
+**Erste Vorgabe des Verfassers.** Eine Bildunterschrift hat zwei gesetzte
+Zeilen, drei sind die oberste Grenze. Gemessen wird am gebauten PDF ueber
+`pdftotext -layout`, nicht an der Zeichenzahl der Quelle, denn \cite, \ac
+und \si setzen deutlich kuerzer, als sie im Quelltext stehen.
+
+**Stand vor der Aenderung.** Von 34 Unterschriften standen sechs auf vier
+oder fuenf Zeilen und elf auf drei. Die laengste war die zur
+Fuellgradabbildung mit fuenf Zeilen.
+
+**Stand danach.** Drei Unterschriften stehen auf einer Zeile, 29 auf zwei
+und zwei auf drei, naemlich die Preisgitterseiten F.3 und F.4. Beide
+bleiben damit innerhalb der obersten Grenze. Weiter zu kuerzen hiesse, die
+Kennzeichnung des jeweiligen Tages aufzugeben, und genau dafuer stehen die
+Seiten im Anhang.
+
+**Was aus den Unterschriften gefallen ist**, steht ganz ueberwiegend schon
+im Fliesstext. Der Knick der Farbskala bei 10 Euro je Megawatt und Stunde
+und die Obergrenze beim 99-Prozent-Quantil stehen in 4.4, die graue Flaeche
+zwischen Median und Mittel in 4.4, die waagerechte Linie des praeventiven
+Redispatch in 4.5, der Liefermodus "bis 100 MW" in 4.6.1. Ersatzlos
+entfallen sind allein die Marken beim 5- und beim 95-Prozent-Quantil im
+Whisker der Abbildung 4.3 und die beiden Zahlenwerte im Beispiel der
+Abbildung A.1. **Beides ist vor der Abgabe zu pruefen.**
+
+**Die Arbeit ist dadurch von 106 auf 104 Seiten gefallen.**
+
+**Zweite Vorgabe des Verfassers.** Kein Satz nach dem Muster "zeigt A und
+NICHT B". Anlass war der Satz "Die fuenf Tage zeigen die moeglichen
+Reihenfolgen der Verdraengung und nicht das Gewicht der Maerkte ueber das
+ganze Jahr." Er lautet jetzt "Aus den fuenf Tagen folgt die Reihenfolge
+der Verdraengung, aus dem Jahreslauf das Gewicht der einzelnen Maerkte."
+
+**Vier weitere Stellen sind ebenso umgestellt**, alle in den bereits
+durchgegangenen Abschnitten. Zurueckgenommene Formulierungen, nicht wieder
+aufzunehmen:
+
+- "Die Reihenfolge, in der die Maerkte weichen, folgt der Preisstruktur des
+  Tages und nicht einer festen Rangordnung" wird zu "Verdraengt wird zuerst,
+  was an diesem Tag am wenigsten einbringt, sodass die Reihenfolge der
+  Maerkte der Preisstruktur des Tages folgt."
+- "beschreibt den gewaehlten Tag und nicht den Mechanismus" wird zu "gilt
+  jeweils nur fuer den gewaehlten Tag".
+- "trifft alle Maerkte anteilig und nicht zuerst die kleinen" wird zu
+  "trifft alle Maerkte im Verhaeltnis ihres Erloesanteils".
+- "beschreiben einzelne Stunden und keinen Preisbereich" wird zu "stehen
+  fuer einzelne Stunden".
+
+**In den Abschnitten 4.4 bis 4.6 stehen acht weitere Stellen dieses
+Musters.** Sie sind bewusst stehen geblieben, weil diese Abschnitte den
+Durchgang mit dem Verfasser noch vor sich haben und dort ohnehin Satz fuer
+Satz gelesen wird.
+### 23.09.2026, Rechenaufwand als Verhaeltnis
+
+**Vorgabe des Verfassers.** Der Rechenaufwand steht nur noch als
+Verhaeltnis der beiden Iterationen im Text, ohne punktgenaue Zahlen.
+Tragend ist, dass die zweite Iteration rund das Vierfache der ersten
+verlangt und dass ihr Aufwand an einzelnen Tagen nochmals stark steigt.
+
+**Zurueckgenommene Formulierungen**, nicht wieder aufzunehmen: "Die zweite
+Iteration verlangt fuer sich genommen im Median 432 Laeufe des
+Optimierungsmodells je Tag, gemessen an einer Stichprobe von 16 Tagen des
+Jahres 2025." und "Das Minimum liegt bei 341 und das Maximum bei 2284
+Laeufen, denn einzelne Tage brauchen viele Durchgaenge, bis kein Preis mehr
+sinkt."
+
+**Vorbehalt gegen das Vierfache, dem Verfasser genannt.** Der Faktor laesst
+sich derzeit nur aus dem Median von 432 Laeufen der zweiten Iteration gegen
+die Spanne von 84 bis 167 Laeufen aus Abschnitt 3.2.4 bilden, also zu 2,6
+bis 5,1. Jene Spanne gilt fuer die ausgewerteten Tage und ist fuer die
+Jahreslaeufe nicht bestaetigt. Der Faktor ist damit eine plausible
+Groessenordnung und keine Messung. Sobald das Analyse-Repository die erste
+Iteration gezaehlt hat, ist der Satz dagegen zu halten. Vom Verfasser am
+23.09.2026 so entschieden, nachdem der Vorbehalt genannt war.
+
+**Der Satz steht jetzt am Ende des Absatzes** statt in seiner Mitte, weil
+der Rechenaufwand eine Angabe zum Verfahren ist und den Gedankengang von
+der unvollstaendigen zur vollstaendigen Bindung sonst unterbricht.
+### 23.09.2026, die beiden Schlussbloecke des Abschnitts 4.1 zusammengelegt
+
+**Befund des Verfassers.** Abschnitt 4.1 endete mit zwei Bloecken, naemlich
+"Aus dem Vergleich folgen vier Aussagen, die alle fuenf Tage tragen" und
+der Schlussfolgerungsformel "Aus dieser Untersuchung laesst sich Folgendes
+mitnehmen". Beide sagten dasselbe zweimal, besonders zur aFRR-Leistung und
+zum IDC.
+
+**Umsetzung.** Ein Absatz mit der gleichbleibenden Eroeffnungsformel und
+fuenf Saetzen. Der erste Satz gibt die Regel der Verdraengung, der zweite
+ihre Grenze, der dritte die aFRR-Leistung als preissetzenden Markt, der
+vierte den IDC mit seiner Ursache und der fuenfte die FCR mit dem Schluss,
+dass alle Maerkte bis auf die FCR den Preis bestimmen.
+
+**Zwei Aussagen sind entfallen.** Der Day-Ahead als an einzelnen Tagen
+arbitragereicher Markt steht bereits im tagesvergleichenden Absatz, naemlich
+am 20.01.2025 mit 106 Prozent des Ausgangswerts. Dass der IDC seinen Wert
+aus grossen Preisspannen in wenigen Stunden zieht, steht in den
+Schlussfolgerungen des Abschnitts 4.2 und ist hier durch die Handelsform
+erklaert.
+
+**Abschnitt 4.1 traegt damit drei Absaetze** statt vier, naemlich Aufbau und
+Mechanik, den tagesvergleichenden Absatz und die Schlussfolgerungen.
+### 23.09.2026, Fuellgradabsatz gekuerzt
+
+**Zwei Vorgaben des Verfassers.** Erstens tritt an die Stelle der 99,98
+Prozent die Aussage, dass die zweite Iteration bis auf die Stunde der
+Zeitumstellung voll reserviert. Das deckt sich mit der Ergebnisdatei, die
+die vier offenen Stunden der zweiten Iteration als die beiden Stunden der
+Zeitumstellung je Richtung ausweist, also als strukturellen Fall und nicht
+als Suchergebnis. Zweitens faellt der Korrelationskoeffizient ersatzlos weg.
+
+**Zurueckgenommene Formulierungen**, nicht wieder aufzunehmen: "waehrend
+die zweite Iteration in beiden Richtungen 99,98 Prozent erreicht" und "Der
+Korrelationskoeffizient betraegt -0,853 in der Entlade- und -0,608 in der
+Laderichtung."
+
+**Die Aussage bleibt erhalten**, denn der Satz "Diese Stunden verteilen
+sich nicht gleichmaessig ueber den Tag, denn der Fuellgrad einer Tagesstunde
+faellt mit ihrem Preis" traegt den Befund ohne die Masszahl. Der Wert
+selbst steht in ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7.9.
+### 23.09.2026, Ursache des niedrigen Fuellgrads ausgeschrieben
+
+**Vorgabe des Verfassers.** Der Satz zum niedrigsten Fuellgrad beginnt
+jetzt mit der Groesse und nicht mit der Wertung, also "Den niedrigsten
+Fuellgrad erreicht die Entladereservierung ..." statt "Am leersten steht
+die Entladereservierung ...". Zurueckgenommene Formulierung, nicht wieder
+aufzunehmen: "Am leersten steht die Entladereservierung um 8, 18 und 19 Uhr
+mit 74,9 bis 75,9 Prozent ..."
+
+**Die Ursache steht jetzt im Text** und nicht mehr als blosse Feststellung.
+Der Verfasser hat sie diktiert: die Handelszeitpunkte werden verschoben,
+der Reservierungspreis einer Stunde steigt durch die Vollreservierung der
+uebrigen Stunden, und das tritt bei hohen Reservierungspreisen haeufig auf
+und fuehrt dort zur Nichtreservierung. Der Absatz gibt das in fuenf Saetzen
+wieder und schliesst mit der Entscheidung fuer die zweite Iteration.
+
+**Deckung mit Kapitel 3.** Die Darstellung deckt sich mit Teil (b) der
+Abbildung zur Bisektion in Abschnitt 3.2.4, wonach die Bisektion bei einem
+waehrend der Suche steigenden Preis endet, ohne die Stunde noch voll zu
+reservieren. Kapitel 4 wiederholt das Verfahren nicht, sondern nennt allein
+die wirtschaftliche Ursache, naemlich die Verschiebung der Geschaefte in
+die verbleibenden Stunden.
+
+**Der Abschnitt 4.2 traegt damit fuenf Absaetze**, naemlich die Aufteilung
+des Referenzerloeses, die erste Iteration, den Befund zum Fuellgrad, die
+Ursache und die Aufteilung des Marktrests, dazu die Schlussfolgerungen.
+Zwischen den beiden Abbildungen des Abschnitts stehen zwei Absaetze.
+### 23.09.2026, Marktrest in den Iterationsabsatz integriert
+
+**Vorgabe des Verfassers.** Die Aufteilung des Marktrests stand als eigener
+Absatz hinter der Fuellgradabbildung. Sie gehoert in den Absatz zur ersten
+Iteration, unmittelbar hinter die Zahl, die sie aufschluesselt, naemlich die
+88,6 Tsd. Euro je Megawatt und Jahr.
+
+**Zwei Saetze zu einem verbunden**, ebenfalls auf Vorgabe. Zurueckgenommene
+Fassung, nicht wieder aufzunehmen: "Die aFRR-Leistung bleibt damit auch
+unter unvollstaendiger Bindung der groesste Posten." und "Die
+unvollstaendige Reservierung trifft alle Maerkte im Verhaeltnis ihres
+Erloesanteils." Der neue Satz verbindet beide mit sodass. Ebenfalls
+zusammengezogen sind die Aufteilung und der Abzug von 3,8 fuer die
+Degradation.
+
+**Der Rechenaufwand wandert in den Ursachenabsatz**, weil der
+Iterationsabsatz sonst zehn Saetze traegt. Dort steht er vor dem Schlusssatz
+zur Wahl der zweiten Iteration und begruendet ihn mit, denn das Kapitel
+nimmt den hoeheren Aufwand fuer die vollstaendige Bindung in Kauf.
+
+**Abschnitt 4.2 traegt damit fuenf Absaetze**, naemlich die Aufteilung des
+Referenzerloeses, die erste Iteration mit dem Marktrest, den Befund zum
+Fuellgrad, die Ursache mit dem Rechenaufwand und die Schlussfolgerungen.
+### 23.09.2026, Maxima, Rechenaufwand gemessen, ein Satz gestrichen
+
+**Gestrichen auf Vorgabe des Verfassers**, als uninteressant. Nicht wieder
+aufzunehmen: "Die aFRR-Leistung bleibt damit auch unter unvollstaendiger
+Bindung der groesste Posten, sodass die Reservierung alle Maerkte im
+Verhaeltnis ihres Erloesanteils trifft." Die Aufteilung des Marktrests
+bleibt im Text, allein ihre Deutung faellt weg.
+
+**Die Maxima sind als Erscheinung einzelner Stunden gefasst.** Vorgabe des
+Verfassers: die Maxima sind Phaenomene einzelner Stunden und treten in
+dieser Hoehe kaum auf. Der Text sagt jetzt, dass ein Preis dieser Hoehe in
+weniger als einem Prozent der Stunden auftritt. **Eigenstaendige
+Ableitung:** die Angabe stuetzt sich auf das 99-Prozent-Quantil von 173 und
+161 Euro je Megawatt und Stunde aus ERGEBNISSE Abschnitt 7.3, das weit
+unter den Maxima von 1008 und 510 liegt. Der Begriff Abruf ist bewusst
+vermieden, denn er bezeichnet in dieser Arbeit die Ausloesung der Massnahme
+und nicht das Erreichen eines Preises.
+
+**Der Rechenaufwand ist gemessen, das Vierfache wird zum Dreifachen.**
+Update 5 des Analyse-Repositorys vom 23.09.2026 nennt je Tag und Iteration
+die Laeufe des Optimierungsmodells, gemessen ueber dieselbe Stichprobe von
+16 Tagen:
+
+| | Minimum | Median | Maximum |
+|---|---|---|---|
+| 1. Iteration | 83 | 136 | 194 |
+| 2. Iteration | 341 | 432 | 2284 |
+| gesamt | 446 | 566 | 2479 |
+
+Das Verhaeltnis der Mediane betraegt 432 zu 136, also gut das Dreifache.
+Zurueckgenommene Formulierung, nicht wieder aufzunehmen: "Der Rechenaufwand
+der zweiten Iteration betraegt demgegenueber rund das Vierfache des
+Aufwands der ersten." Der Verfasser hatte das Vierfache am selben Tag
+vorgegeben, damals ohne Messung; die Messung tritt an ihre Stelle.
+
+**Abschnitt 3.2.4 bleibt richtig.** Die dort genannten 84 bis 167 Laeufe der
+ersten Iteration liegen innerhalb der gemessenen 83 bis 194, und "einige
+hundert" trifft die zweite Iteration im Median von 432. Der frueher
+vermerkte Vorbehalt gegen beide Angaben ist damit erledigt. Allein das
+Maximum von 2284 Laeufen liegt ausserhalb der Wendung "einige hundert";
+der Ausreisser ist der 15.01.2025.
+### 23.09.2026, Maxima gegen das 99-Prozent-Quantil
+
+**Vorgabe des Verfassers.** Der Vergleich laeuft gegen das
+99-Prozent-Quantil statt gegen das 95er, weil die Aussage damit staerker
+wird. Zurueckgenommene Fassung, nicht wieder aufzunehmen: "Zwischen dem
+95-Prozent-Quantil und dem Maximum liegt nochmals der Faktor 13,3
+beziehungsweise 5,6 ..." und "Ein Preis in dieser Hoehe tritt in weniger
+als einem Prozent der Stunden auf."
+
+**Eigenstaendige Ableitung, vom Verfasser zu pruefen.** Die beiden Faktoren
+sind selbst gerechnet, naemlich 1008 zu 173 gleich 5,8 und 510 zu 161 gleich
+3,2. Die Quantile 173 und 161 Euro je Megawatt und Stunde und die Zahl der
+Stunden darueber, naemlich 88 und 87, stammen aus
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7.3.
+
+**Bewusste Dopplung.** Dieselben Quantile nennt Abschnitt 4.4 als Deckel
+der Farbskala der Heatmap. Beide Stellen brauchen sie fuer ihre eigene
+Aussage, in 4.3 als Mass fuer den Abstand zum Maximum und in 4.4 als
+Obergrenze der Darstellung. Der Massstab entspricht der Entscheidung vom
+22.09.2026 zum Revenue-Index in 3.3.1 und 3.3.2.
+
+**Das 95-Prozent-Quantil bleibt im Text**, naemlich im ersten Absatz des
+Abschnitts mit 90,40 und 76,01 Euro je Megawatt und Stunde. Beide Quantile
+stehen damit nebeneinander, das 95er als oberer Rand des Hauptfeldes und das
+99er als Beginn des Schwanzes.
+
+**Eine Begruendung ist gestrichen, weil sie nicht trennt.** Der Verfasser
+hat bemerkt, dass sich beide Masse mit der beschafften Menge
+multiplizieren, der Zusatz das arithmetische Mittel also nicht vom Median
+unterscheidet. Zurueckgenommene Fassung, nicht wieder aufzunehmen: "denn es
+bezieht die teuren Stunden mit ihrem Gewicht ein und multipliziert sich mit
+der beschafften Menge". Tragend bleibt allein, dass das Mittel die teuren
+Stunden mit ihrem Gewicht einbezieht.
+
+**Offener Punkt in Abschnitt 4.5.** Dort steht derselbe Fehlschluss,
+naemlich "Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel
+sich mit der beschafften Menge multipliziert und damit die Kosten des UENB
+traegt." Der Satz traegt zugleich das Muster "A und nicht B". Beides ist
+beim Durchgang durch 4.5 zu beheben und bis dahin nicht angetastet.
+### 23.09.2026, Lage des Mittels zum oberen Quartil gestrichen
+
+**Vorgabe des Verfassers.** Der Abstand zwischen dem arithmetischen Mittel
+und dem oberen Quartil ist knapp, naemlich 23,64 gegen 27,47 entladend und
+24,33 gegen 30,64 ladend. Aus der Lage unterhalb des Quartils folgt nichts.
+Zurueckgenommene Fassung, nicht wieder aufzunehmen: "Das arithmetische
+Mittel von 23,64 und 24,33 Euro je Megawatt und Stunde liegt damit in beiden
+Richtungen noch unterhalb des oberen Quartils."
+
+**Folge, dem Verfasser genannt.** Die absoluten Werte des arithmetischen
+Mittels stehen damit nirgends mehr in Abschnitt 4.3. Der Abschnitt nennt das
+Mittel nur noch als Verhaeltnis zum Median, naemlich das 1,93- und das
+2,47-Fache, und weist es als das Mass fuer die Kosten des UENB aus. Soll der
+absolute Wert stehen, gehoerte er in die Kennzahlenliste des ersten Absatzes
+neben Median, Quartile und 95-Prozent-Quantil. Offen, vom Verfasser zu
+entscheiden.
+### 23.09.2026, Gewinnschwelle der Ladereservierung nach Anhang C
+
+**Frage des Verfassers.** Warum steht die Gewinnschwelle beim Laden, sie sei
+ein Relikt und eigentlich nicht gewollt, und ob sich das ohne Neurechnung
+umschiffen lasse.
+
+**Befund.** Die Schwelle ist eine Restriktion des Optimierungsmodells. Nach
+optimizer.py Zeile 503 f. setzt der Lauf die obere Schranke der
+Ladereservierung auf null, sobald der kurative Preis der Viertelstunde unter
+kur_schwelle_lad liegt; der Wert steht in main.py Zeile 641 auf
+1,0 Euro je Megawatt und Stunde. Die Ladereservierung kann deshalb keinen
+Preis unterhalb von 1,00 annehmen.
+
+**Sie stand bisher an keiner Stelle der Arbeit** ausser in einem Satz des
+Abschnitts 4.3. Weder Kapitel 3 noch Anhang C nannten sie, obwohl sie eine
+Nebenbedingung des Modells ist.
+
+**Umgesetzt, ohne neu zu rechnen.** Die Schwelle ist aus dem Ergebnisteil
+genommen und steht jetzt in Anhang C, naemlich als Parameter pi^min in der
+Parametertabelle und als eigene Nebenbedingung mit zwei erlaeuternden
+Saetzen. Damit ist sie dort dokumentiert, wo Modellannahmen stehen, und
+traegt im Ergebnisteil keine Aussage mehr. Zurueckgenommene Formulierung,
+nicht wieder aufzunehmen: "In der Laderichtung liegt das Minimum bei 1,00
+Euro je Megawatt und Stunde, weil das Optimierungsmodell eine
+Ladereservierung unterhalb dieser Gewinnschwelle nicht zulaesst."
+
+**Die Reichweite der Schwelle ist klein.** Das untere Quartil der
+Ladereservierung betraegt 2,34 Euro je Megawatt und Stunde, das
+5-Prozent-Quantil 1,01. Betroffen sind damit hoechstens fuenf Prozent der
+Stunden, und Median, Quartile und arithmetisches Mittel bleiben unberuehrt.
+Anhang C sagt das in einem Satz. **Die genaue Zahl der Stunden an der
+Schwelle ist nicht bekannt und beim Analyse-Repository zu erfragen, falls
+sie gebraucht wird.**
+
+**Der Absatz zum unteren Ende der Verteilung fuehrt jetzt zu einer
+Aussage.** Vorgabe des Verfassers: die Quartile sollen zeigen, dass sich ein
+grosser Teil der Stunden guenstig reservieren laesst. Der Absatz schliesst
+deshalb mit dem Satz, dass die Haelfte aller Stunden zum Median von
+hoechstens 12,22 beziehungsweise 9,85 Euro je Megawatt und Stunde zu
+reservieren ist und allein die Spitze der Verteilung teuer wird.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

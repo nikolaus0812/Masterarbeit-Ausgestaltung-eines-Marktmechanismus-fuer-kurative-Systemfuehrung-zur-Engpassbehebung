@@ -81,6 +81,8 @@ Danach folgen die Zielfunktion mit ihren Erlöstermen und die Nebenbedingungen i
         \hline
         $P^{\mathrm{kur,min}}$ & Mindestgröße der kurativen Reservierung & \si{MW} \\
         \hline
+        $\pi^{\min}$ & Gewinnschwelle der Ladereservierung & \si[inter-unit-product=\text{\textperiodcentered}]{\text{\euro}/(MW.h)} \\
+        \hline
         $\beta_t$ & Eins zu Beginn einer Zeitscheibe der Regelleistung und sonst null & -- \\
         \hline
         $\varepsilon_r$ & Vorzeichen des Ausgleichs, minus eins in positiver und plus eins in negativer Richtung & -- \\
@@ -195,6 +197,18 @@ Lieferung der \acs{aFRR}-Arbeit anteilig am Abruf, belegte Leistung und Ausgleic
 %    \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta \le t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
     \sum_{\vartheta \le t} P^{\mathrm{aus}}_{\vartheta,r} &\le \sum_{\vartheta < t} P^{\mathrm{aFRR,E}}_{\vartheta,r} && \forall\, t \in \mathcal{T}, \; r \in \mathcal{R} \label{eq:anh:modell:aus_kausal}
 \end{align}
+
+% ANGEFUEGT am 23.09.2026. Die Gewinnschwelle der Ladereservierung stand bis
+% dahin in keinem Teil der Arbeit, sondern allein als Satz im Abschnitt 4.3.
+% Sie ist eine Restriktion des Optimierungsmodells nach optimizer.py Zeile
+% 503 f. und gehoert damit in die Modellbeschreibung.
+Gewinnschwelle der Ladereservierung:
+\begin{align}
+    P^{\mathrm{kur}}_{s(t),\mathrm{neg}} &= 0 && \forall\, t \in \mathcal{T} \;\text{mit}\; \pi_{s(t),\mathrm{neg}} < \pi^{\min} \label{eq:anh:modell:kur_schwelle}
+\end{align}
+
+Die Schwelle beträgt 1,00\,\EurMWh{} und schließt eine Ladereservierung aus, deren Preis darunter liegt.
+Sie wirkt allein am unteren Rand der Verteilung, denn das untere Quartil der Ladereservierung beträgt 2,34\,\EurMWh{}.
 
 Mindestgröße der kurativen Reservierung, nur in der Sensitivität mit Binärvariable:
 \begin{align}

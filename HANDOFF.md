@@ -23,7 +23,7 @@ durchsucht.
 
 ## 1 Stand des Dokuments
 
-Build sauber, Biber ohne Warnung, **105 Seiten**. `python tools/pruefen.py
+Build sauber, Biber ohne Warnung, **104 Seiten**, Stand 23.09.2026. `python tools/pruefen.py
 --alle` meldet allein den Altbefund in `chapters/chapter_5.tex` Zeile 91.
 `main.tex` bindet die Kapitel 1 bis 4 ein, 5 und 6 sind auskommentiert; die
 beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.
@@ -134,9 +134,9 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
-| `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` | Auftrag an das Analyse-Repository vom 23.09.2026. Abschnitt 2 und Rückfrage 3.1 sind erledigt, offen bleiben Rückfrage 3.2 und die beiden Nebenpunkte. Erst danach ins Archiv. |
+| `AUFTRAG_MAXIMASTUNDEN.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Herkunft der Maxima in 4.3, dazu die Antwort auf Update 5. Nach Erledigung ins Archiv. |
 
-### `archiv/`, fünfzehn Dateien, nur zum Nachschlagen
+### `archiv/`, sechzehn Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -153,6 +153,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `RUECKMELDUNG_AN_ANALYSE.md` | Rückmeldung an das Analyse-Repository | abgesendet, beantwortet in `ANTWORT_AN_SCHRIFTFASSUNG.md` |
 | `AUFTRAG_ABBILDUNGSSTIL.md` | Auftrag zum Abbildungsstil vom 22.09. | mit Update 3 des Analyse-Repositorys erledigt |
 | `AUFTRAG_ANALYSETAGE.md` | Auftrag zu den Analysetagen vom 22.09. | mit Update 4 des Analyse-Repositorys erledigt |
+| `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` | Auftrag zum Füllgrad vom 23.09., vom Verfasser am selben Tag ins Archiv gelegt | Abschnitt 2 und Rückfrage 3.1 geliefert, Rückfrage 3.2 und die beiden Nebenpunkte laufen weiter, siehe Abschnitt 6 |
 
 ### Im Analyse-Repository, nur lesend
 
@@ -200,6 +201,17 @@ Ausführlich im Protokoll. Kurz:
   **wird nicht halbiert**, weil die Reihe nicht symmetrisch ist. Näheres in 4.5
   und im Protokoll.
 - **Kapiteltitel `Ergebnisse`**, entschieden am 22.09.2026.
+- **Eine Bildunterschrift hat zwei gesetzte Zeilen**, drei sind die oberste
+  Grenze. Vorgabe des Verfassers vom 23.09.2026, an diesem Tag für alle 34
+  Unterschriften der Arbeit umgesetzt. Gemessen wird am gebauten PDF über
+  `pdftotext -layout`, denn `\cite`, `\ac` und `\si` setzen kürzer, als sie
+  im Quelltext stehen. Was die Unterschrift nicht mehr trägt, gehört in den
+  Fließtext. Bei neuen Abbildungen mitführen.
+- **Kein Satz nach dem Muster „zeigt A und nicht B“**, Vorgabe des Verfassers
+  vom 23.09.2026. Statt der Verneinung wird die Aussage positiv gewendet,
+  etwa „Aus den fünf Tagen folgt die Reihenfolge der Verdrängung, aus dem
+  Jahreslauf das Gewicht der einzelnen Märkte.“ In 4.4 bis 4.6 stehen acht
+  Stellen dieses Musters noch offen, sie gehören in den Durchgang dort.
 - **Das Wort Preisvektor kommt nicht vor**, Vorgabe des Verfassers vom
   23.09.2026. Kapitel 4 sagt stattdessen *die Preise der ersten* und *der
   zweiten Iteration*. In `chapters/chapter_5.tex` steht das Wort noch einmal,
@@ -330,16 +342,21 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   energie wäre noch interessanter und aussagekräftiger"*. Diese Größe steht
   **nicht** in `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md`. Erforderlich wäre ein
   Auftrag an das Analyse-Repository, die Energie je Markt, Tag und Preisstufe
-  auszuweisen. **Am 23.09.2026 in Abschnitt 4.2 des Auftrags angefordert**,
-  mit der Bitte, den Aufwand vor einem neuen Lauf zu melden. Bis dahin
-  stehen die MW-Werte im Text, mit dem erklärenden Satz zur Einheit.
+  auszuweisen. **Update 5 vom 23.09.2026: kein neuer Lauf nötig**, die Größe
+  steckt in den vorhandenen Zeitreihen. Das Analyse-Repository hat drei Wege
+  zur Wahl gestellt, und **Weg 1 ist gewählt**, nämlich getrennte Blöcke für
+  gehandelte Arbeit und vorgehaltene Leistung. Begründung in
+  `AUFTRAG_MAXIMASTUNDEN.md` Abschnitt 4. Bis zur Lieferung stehen die
+  MW-Werte im Text, mit dem erklärenden Satz zur Einheit.
 - **Widerspruch im Analyse-Repository noch nicht gemeldet.**
   `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 2.3 nennt den 11.02.2025 als
   Tag, an dem der Day-Ahead zuerst weicht. Abschnitt 2.1 derselben Datei zeigt
   das Gegenteil, nämlich die Halbierung der aFRR bei 10 und die von Day-Ahead
   und IDC erst bei 15 Euro je Megawatt und Stunde. Die Schriftfassung folgt
-  der Tabelle und nennt den 26.08.2025. **Am 23.09.2026 in Abschnitt 4.1 des
-  Auftrags gemeldet**, die Antwort steht aus.
+  der Tabelle und nennt den 26.08.2025. ~~Gemeldet.~~ **Erledigt mit Update 5
+  vom 23.09.2026**, der Fehler lag im Analyse-Repository und ist dort
+  berichtigt. Der Day-Ahead weicht an genau einem der fünf Tage zuerst,
+  nämlich am 26.08.2025, sodass die Stelle im Text richtig steht.
 - ~~Einheit uneinheitlich.~~ **Erledigt am 23.09.2026**, das Makro steht an
   allen acht Stellen, ausgeschrieben allein in der Kapiteleinleitung.
 - ~~Füllgrad über die Tagesstunden.~~ **Geliefert und eingebaut am 23.09.2026.**
@@ -350,23 +367,21 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   84,5 und 89,0 sowie 99,04 und 99,78 Prozent sind **überholt**; gültig sind
   85,94 und 89,60 für die erste und zweimal 99,98 Prozent für die zweite
   Iteration.
-- **Laufzahlen, Stand 23.09.2026 abends.** Gesichert ist allein die **zweite**
-  Iteration mit 341 bis 2284 Läufen je Tag, Median 432, über eine Stichprobe
-  von 16 Tagen. Die zunächst gemeldete Lesart *beide Iterationen zusammen*
-  ist am selben Tag zurückgenommen worden, weil der Zähler an einer Hülle
-  hing, an der die Bisektion vorbeiläuft. Abschnitt 4.2 nennt jetzt die
-  zweite Iteration für sich genommen.
-- **Die Läufe der ersten Iteration stehen aus.** Der Zähler sitzt jetzt an
-  `optimize_day`, der Lauf rechnet. Erst mit dieser Zahl lässt sich sagen,
-  dass die erste Iteration schon für geringen Aufwand einen großen Teil der
-  Stunden reserviert. Diese Aussage des Verfassers steht bis dahin **nicht**
-  im Text.
-- **Abschnitt 3.2.4 bleibt vorerst unverändert.** Dort stehen 84 bis 167
-  Läufe für die **erste** und *einige hundert* für die zweite Iteration.
-  Gemessen ist bisher nur die zweite, also ist die Spanne 84 bis 167 weder
-  bestätigt noch widerlegt. Widerlegt ist die Wendung *einige hundert*, die
-  das Maximum von 2284 nicht deckt. Nach der ausstehenden Messung beide
-  Stellen nachziehen.
+- ~~Laufzahlen unter Vorbehalt.~~ **Erledigt mit Update 5 vom 23.09.2026.**
+  Gemessen über eine Stichprobe von 16 Tagen, Läufe des Optimierungsmodells
+  je Tag: erste Iteration 83 / 136 / 194, zweite Iteration 341 / 432 / 2284,
+  zusammen 446 / 566 / 2479 als Minimum, Median und Maximum. Im Text steht
+  auf Vorgabe des Verfassers allein das Verhältnis, nämlich **gut das
+  Dreifache** aus 432 zu 136. Die zuvor vorgegebene Angabe *rund das
+  Vierfache* ist damit überholt.
+- **Abschnitt 3.2.4 bleibt richtig und unverändert.** Die dortigen 84 bis 167
+  Läufe der ersten Iteration liegen innerhalb der gemessenen 83 bis 194, und
+  *einige hundert* trifft die zweite Iteration im Median. Allein das Maximum
+  von 2284 Läufen am 15.01.2025 liegt außerhalb dieser Wendung.
+- **Woher die Maxima kommen, ist nicht geklärt.** Abschnitt 4.3 nennt 1008
+  und 510\,€/(MW·h) als Einzelwerte, ohne sie zurückzuführen. Beauftragt am
+  23.09.2026 in `AUFTRAG_MAXIMASTUNDEN.md`, nämlich welcher Markt in diesen
+  Stunden zuletzt weicht und woran die Höhe liegt.
 - **Die exakte Jahresverteilung der Läufe ist nicht bestellt.** Sie hätte
   eine Wiederholung des Jahreslaufs von rund zweieinhalb Stunden verlangt.
   Empfehlung an den Verfasser: dabei bleiben, denn der Rechenaufwand ist
@@ -478,6 +493,11 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   Reservierung gibt dem Speicher eine Möglichkeit, seinen Erlös allein durch
   eine klügere Verteilung auf die Märkte zu steigern, sofern er die richtigen
   Preise setzt.
+- **Aus 4.3, Vorgabe des Verfassers vom 23.09.2026:** die teuersten Stunden
+  sind schwer zu prognostizieren, und ein Preis dieser Höhe wird selten
+  erreicht. Die Wahrscheinlichkeit, dass solche Stunden eintreten, schlägt
+  sich gleichwohl im Preis nieder. Das gehört in die Diskussion der
+  Verteilung.
 - **Aus 4.3, Vorgabe des Verfassers vom 23.09.2026:** der ermittelte Preis
   ist mit Unsicherheit behaftet, und der Betreiber würde auf ihn einen
   Aufschlag für den eigenen Aufwand des Anbietens nehmen. Das fügt sich an
