@@ -105,6 +105,17 @@ unerwähnt.
 
 ## 4a Eine vierte Frage, neu am 23.09.2026
 
+> **ERLEDIGT am 23.09.2026, diese Frage bitte nicht mehr bearbeiten.**
+> Die Schriftfassung hat das Tagesmuster des Redispatch selbst gerechnet,
+> naemlich aus den 19.369 Einzelmassnahmen des Jahres 2025 von
+> netztransparenz.net. Jede Massnahme ist mit ihrer mittleren Leistung
+> anteilig auf die beruehrten Stunden verteilt und nach Richtung getrennt.
+> Das Ergebnis steht als **Anhang H** in der Arbeit: ueber den Tag schwankt
+> die Summe beider Richtungen zwischen 2029 und 3440 MW, also um den Faktor
+> 1,7, gegenueber 8,3 beim Preis. Die Auswertung liegt in
+> `analysen/redispatch_tagesmuster`.
+
+
 **Veröffentlicht SMARD den Redispatch stundenscharf, und zeigt er ein
 Tagesmuster?**
 

@@ -3,13 +3,15 @@
 Diese Datei ersetzt die Fassung vom 22.09.2026 nachts vollständig, fortgeschrieben
 am 23.09.2026 abends. Die alten Fassungen stehen in der Git-Historie.
 
-> **Das Arbeitsverzeichnis ist sauber.** Der letzte Commit ist `887fb5d`
-> vom 23.09.2026 abends. `origin/main` steht auf `1c51db2` und ist damit
-> **einen Commit zurück** — gepusht wird nur auf ausdrückliche Anweisung,
-> committet nur auf das Wort „commite".
+> **Das Arbeitsverzeichnis ist sauber.** Der letzte Commit ist `b1b26e1`
+> vom 23.09.2026 spät abends. `origin/main` steht auf `1c51db2` und ist
+> damit **drei Commits zurück** — gepusht wird nur auf ausdrückliche
+> Anweisung, committet nur auf das Wort „commite".
 >
-> **Der Verfasser macht am 24.09.2026 weiter.** Der Durchgang steht bei
-> **Abschnitt 4.6.2**, siehe die Tabelle in Abschnitt 1.3.
+> **Am 24.09.2026 schreibt ein neuer Chat Kapitel 5.** Sein Auftrag steht in
+> **`AUFTRAG_KAPITEL_5.md`** und ist die Lesekarte für die Diskussion.
+> Der Durchgang durch Kapitel 4 steht bei **Abschnitt 4.6.3**, siehe die
+> Tabelle in Abschnitt 1.3.
 
 **Lesereihenfolge zu Beginn der Sitzung.** `CLAUDE.md`, dann diese Datei, dann
 `WORKFLOW.md` Abschnitte 3, 7 und 10. `ENTSCHEIDUNGSPROTOKOLL.md` hat über
@@ -101,8 +103,9 @@ gerne mit dir formulieren"*.
 | 4.5 Preis und Engpassbedarf | **durch** am 23.09. abends, drei Absätze, Anhang H angelegt |
 | 4.6 Einleitung | **durch** am 23.09. abends, sieben Sätze, zählt jetzt vier Abschnitte |
 | 4.6.1 Modellierung der aFRR | **durch** am 23.09. abends, sieben Absätze, vollständig neu sortiert |
-| 4.6.2 Abrufdauer | geschrieben, noch nicht durchgegangen, **als nächstes** |
-| 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert, noch nicht durchgegangen |
+| 4.6.1 Modellierung der aFRR | **zweimal durch** am 23.09. abends, sechs Absätze, je einer pro Abbildung |
+| 4.6.2 Abrufdauer | **durch** am 23.09. spät abends, der Befund zur halben Stunde ist ergänzt |
+| 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert, noch nicht durchgegangen, **als nächstes** |
 | ~~4.7 Diskussion~~ | **gestrichen**, die Diskussion ist Kapitel 5 |
 
 **4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
@@ -173,6 +176,60 @@ Rosinenpicken (konservativ/realistisch)", und Zeile 312 sagt zu
 allein bedient". Das ist genau das Argument des Verfassers, unabhängig
 aufgeschrieben.
 
+### 1.5 Was am 23.09.2026 spät abends dazugekommen ist
+
+**Abschnitt 4.6.1 ist zweimal umgebaut worden** und trägt jetzt sechs
+Absätze: den verschmolzenen Einleitungsabsatz, je einen Absatz zu Abbildung
+4.7 und 4.8 mit Niveau, Quantilen und Schieflage, die Ungewissheit des
+Abrufs, die Abgrenzung der Jahresrechnung und einen Schlussfolgerungsabsatz.
+Beide Abbildungen sind einen Absatz nach hinten gerückt, zwischen ihnen
+steht genau ein Absatz.
+
+**Zwei Befunde des Verfassers aus den Abbildungen, nachgerechnet.** Der
+Grenzpreis hebt das obere Ende der mittleren 50 Prozent nur um 4,6 und
+4,9 €/(MW·h), das Maximum dagegen auf das 4,6- und das 3,8-Fache; die
+Schieflage steigt vom 1,9- auf das 2,3-Fache. Die freie Lieferung wirkt
+umgekehrt und **senkt** die Schieflage auf das 1,6-Fache. Die Stufe *ohne
+Lieferung* zeigt, dass die aFRR-Arbeit in der Laderichtung schwerer wiegt,
+denn sie senkt den Median der Ladereservierung um 44 Prozent und lässt den
+der Entladereservierung nahezu unverändert.
+
+**Abschnitt 4.6.2 trägt einen neuen Befund zum Produktzuschnitt.** Die halbe
+Stunde Abrufdauer liegt fast auf dem Preis der Viertelstunde (11,91 gegen
+11,72 €/(MW·h) entladend, 8,56 gegen 8,59 ladend) und verschafft dem ÜNB die
+doppelte Zeit für eine Ablösung der Maßnahme. Der Schritt auf die volle
+Stunde kostet 0,30 €/(MW·h) entladend und 1,28 €/(MW·h) ladend. **Die
+Schätzung des Verfassers, die volle Stunde sei „ein paar Euro je MWh"
+teurer, ist damit berichtigt.**
+
+**Die sechs gleichlautenden Schlusssätze sind variiert.** „Aus dieser
+Untersuchung lässt sich Folgendes mitnehmen." stand sechsmal im Kapitel und
+ist **nicht wieder aufzunehmen**. Jeder Abschnitt hat jetzt seinen eigenen
+Satz, drei davon mit der Zahl der folgenden Sätze. **Diese drei Zahlen sind
+beim Umbau eines Schlussblocks mitzuführen.**
+
+**Weitere Vorgaben umgesetzt.** Die FCR ist aus der Sättigungsaussage
+genommen, weil dieser Markt bereits als gesättigt gilt; der Abschlag von
+zehn Prozent auf die FCR-Preise bleibt in der Rechnung. Der Satz zur eigenen
+Referenzrechnung mit der Abweichung von 0,01 €/(MW·h) und der
+Bindungsdauersatz in der Einleitung 4.6 sind gestrichen.
+
+**Dreizehn Stellen im Kapitel tragen jetzt ihre Einheit.** Vorgabe des
+Verfassers: *jede Zahl hat eine Einheit*. Betroffen waren 4.2, 4.3, 4.6.1,
+4.6.2, 4.6.3 und 4.6.4, jeweils die **erste** Zahl eines Paares.
+
+**Zwei eigene Fehler, aus denen Regeln geworden sind.** Beide stehen in
+`AUFTRAG_KAPITEL_5.md` Abschnitt 9, damit der nächste Chat sie nicht
+wiederholt.
+
+1. Ein `git checkout chapters/chapter_4.tex` hat die ungesicherten
+   Änderungen der Kapiteldatei verworfen. Sie sind aus den Skripten im
+   Scratchpad vollständig wiederhergestellt und gegen das PDF geprüft.
+   **Kein `git checkout` auf eine Datei mit ungesicherten Änderungen.**
+2. Ein Anker mit `str.index` hat die **auskommentierte** Fassung getroffen
+   und dabei einen lebenden Absatz mit in den Kommentarblock gezogen.
+   **Anker an den Zeilenanfang binden oder Kommentarzeilen überspringen.**
+
 ---
 
 ## 2 Dateiübersicht
@@ -189,11 +246,11 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
-| `AUFTRAG_REDISPATCH_ZEITMUSTER.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Zeitmuster des Redispatch im Format der Abbildung 4.5, voraussichtlich für den Anhang. Nachrangig. |
+| `AUFTRAG_KAPITEL_5.md` | **Auftrag an den neuen Chat, der am 24.09.2026 Kapitel 5 schreibt.** Lesekarte mit jeder Fundstelle, dem Material für die Diskussion, einem Strukturvorschlag und den vier Fragen an den Verfasser. Angelegt am 23.09.2026. |
 | `AUFTRAG_REFERENZAUFTEILUNG.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Aufteilung des Referenzerlöses in der Zukunftsvariante. Nachrangig, 4.6.4 steht auch ohne sie. |
-| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 an einen getrennten Chat mit Zugriff auf SMARD und die öffentlichen Quellen der Bundesnetzagentur. Warum verdoppelt sich der \ac{aFRR}-Leistungspreis im Herbst 2025, und welche Quelle trägt den Zusammenhang von Solareinspeisung und negativer Regelleistung. |
+| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 an einen getrennten Chat mit Zugriff auf SMARD und die öffentlichen Quellen der Bundesnetzagentur. Warum verdoppelt sich der aFRR-Leistungspreis im Herbst 2025, und welche Quelle trägt den Zusammenhang von Solareinspeisung und negativer Regelleistung. **Unbeantwortet. Frage 4a ist am 23.09.2026 als erledigt gekennzeichnet**, denn das Tagesmuster des Redispatch ist selbst gerechnet und steht in Anhang H. |
 
-### `archiv/`, siebzehn Dateien, nur zum Nachschlagen
+### `archiv/`, achtzehn Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -211,6 +268,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `AUFTRAG_ABBILDUNGSSTIL.md` | Auftrag zum Abbildungsstil vom 22.09. | mit Update 3 des Analyse-Repositorys erledigt |
 | `AUFTRAG_ANALYSETAGE.md` | Auftrag zu den Analysetagen vom 22.09. | mit Update 4 des Analyse-Repositorys erledigt |
 | `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` | Auftrag zum Füllgrad vom 23.09. | vollständig erledigt, alle Rückfragen beantwortet |
+| `AUFTRAG_REDISPATCH_ZEITMUSTER.md` | Auftrag zum Zeitmuster des Redispatch vom 23.09. | geliefert, **Anhang H** trägt die Abbildung |
 | `AUFTRAG_MAXIMASTUNDEN.md` | Auftrag zur Herkunft der Maxima vom 23.09. | erledigt, Befund in 4.3 eingearbeitet, gehandelte Energie geliefert |
 
 ### Im Analyse-Repository, nur lesend

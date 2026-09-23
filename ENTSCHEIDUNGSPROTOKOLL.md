@@ -14502,6 +14502,61 @@ Ungewissheit des Abrufs hierher gezogen, damit er nicht zweimal steht.
 **Abschnitt 4.6.1 traegt jetzt sechs Absaetze**, naemlich Einleitung,
 Abbildung 4.7, Abbildung 4.8, Ungewissheit des Abrufs, Abgrenzung der
 Jahresrechnung und Schlussfolgerungen. Saetze je Absatz: 8, 7, 7, 5, 4, 4.
+### 23.09.2026, Auftrag fuer Kapitel 5 und Aufraeumen der Arbeitsdokumente
+
+**Entscheidung des Verfassers.** Kapitel 5 schreibt ab dem 24.09.2026 ein
+**neuer Chat**. Er soll sich mit der Arbeit dieser Sitzung vertraut machen,
+alle Aussagen der Ergebnisse **selbst nachvollziehen**, dann einen eigenen
+Strukturvorschlag ausarbeiten und den Verfasser gezielt nach der Struktur
+fragen. Wichtig ist dem Verfasser, dass der Chat sich Zeit nimmt und dabei
+**moeglichst wenig Tokens verbraucht**.
+
+**`AUFTRAG_KAPITEL_5.md` ist deshalb als Lesekarte angelegt**, nicht als
+Anweisungsliste. Sie nennt jede Fundstelle, damit der neue Chat nicht sucht:
+die Lesereihenfolge mit Aufwandsschaetzung, den Befehl, mit dem sich der
+Fliesstext von Kapitel 4 ohne die auskommentierten Fassungen extrahieren
+laesst, eine Tabelle der Abschnitte mit ihren Abbildungen, die tragenden
+Zahlen des Basisfalls, den einheitlichen Erklaerungsmechanismus des Kapitels,
+die Anhangtabelle, die Fundstellen im Analyse-Repository, den Zustand des
+Geruests in `chapter_5.tex` und das gesammelte Material fuer die Diskussion.
+
+**Fuenf Pflichtbestandteile nach der Vorgabe des Verfassers**, im Auftrag
+woertlich zitiert: alle Ergebnisse diskutieren; Folgen fuer die
+Betriebsfuehrung; Entwicklungen im Engpassmanagement und am Markt; ein
+eigener Abschnitt zur Zukunft der Batteriespeicher im Engpassmanagement; am
+Ende die kurative Systemfuehrung im Allgemeinen mit abgeleitetem
+Forschungsbedarf und Erkenntnisbedarf aus Projekten.
+
+**Eigenstaendiger Beitrag: ein Strukturvorschlag mit sieben Abschnitten**
+steht im Auftrag, ausdruecklich als Ausgangspunkt und nicht als Beschluss.
+Dazu vier Fragen, die der neue Chat dem Verfasser stellen soll. **Die
+wichtigste davon ist, ob der Anforderungskatalog des alten Geruests bleibt**,
+denn das alte Geruest prueft den Mechanismus gegen einen Katalog, waehrend
+die neue Vorgabe die Ergebnisse diskutiert. Beides zusammen waere doppelt.
+
+**Abschnitt 9 des Auftrags fuehrt die beiden eigenen Fehler dieser Sitzung**,
+damit der naechste Chat sie nicht wiederholt: kein `git checkout` auf eine
+Datei mit ungesicherten Aenderungen, und Anker beim Ersetzen an den
+Zeilenanfang binden, weil die Kapiteldateien die zurueckgenommenen Fassungen
+als Kommentar tragen.
+
+**Aufgeraeumt.** `AUFTRAG_REDISPATCH_ZEITMUSTER.md` ist nach `archiv/`
+verschoben, denn die Abbildung ist geliefert und traegt als Anhang H ihre
+Aussage. **Frage 4a der `ANFRAGE_AFRR_HERBST_2025.md` ist als erledigt
+gekennzeichnet**, denn das Tagesmuster des Redispatch ist selbst gerechnet;
+die Frage bleibt mit Vermerk stehen, damit der Adressat keine Arbeit doppelt
+macht. Im Wurzelverzeichnis liegen damit acht Dateien.
+
+**Offen bleibt `AUFTRAG_REFERENZAUFTEILUNG.md`**, weil die Aufteilung des
+Referenzerloeses der Zukunftsvariante in `ERGEBNISSE...md` Abschnitt 7.13
+noch nicht als Zahl steht.
+
+**Angemerkt, nicht geaendert:** `README.md` liegt mit CRLF vor, obwohl die
+Konvention fuer Markdown ausser Protokoll und Handoff LF vorsieht. Die Datei
+ist in dieser Sitzung nicht angefasst worden, und Abschnitt 10 der
+Auftragsdatei verlangt, eine Datei mit den Zeilenenden zurueckzugeben, mit
+denen sie gelesen wurde. `.gitattributes` normiert ohnehin auf LF im
+Repository.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
