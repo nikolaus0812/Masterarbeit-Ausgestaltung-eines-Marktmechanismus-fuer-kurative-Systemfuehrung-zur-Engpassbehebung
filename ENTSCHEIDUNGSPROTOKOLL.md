@@ -12917,6 +12917,80 @@ Nebenpunkte, also der Widerspruch zwischen Abschnitt 2.1 und 2.3 der
 Ergebnisdatei und die gehandelte Energie je Markt und Tag. Der Markterloes
 der offenen Stunden laesst sich aus dem vorhandenen Lauf nicht ziehen, weil
 die Erloesdatei je Tag und nicht je Stunde gefuehrt ist.
+### 23.09.2026, Rechenaufwand in 4.2 berichtigt
+
+**Rueckfrage 3.2 des Auftrags ist im Kern beantwortet.** Die Spanne von 84
+bis 167 Laeufen je Tag, die Abschnitt 3.2.4 fuer die erste Iteration nennt,
+gilt fuer die Jahreslaeufe nicht. Eine Zaehlung des Analyse-Repositorys
+ueber eine Stichprobe von 16 Tagen ergibt fuer **beide Iterationen
+zusammen** 341 bis 2284 Laeufe je Tag bei einem Median von 432. Die
+Stichprobe ist ein Tag je Monat zuzueglich der fuenf Analysetage.
+
+**Der Satz in 4.2 ist sofort ersetzt**, weil er eine Zahl trug, die fuer
+den Gegenstand des Abschnitts nicht gilt. Zurueckgenommene Formulierungen,
+nicht wieder aufzunehmen: "Guenstig ist die erste Iteration allein im
+Rechenaufwand, denn sie kommt mit 84 bis 167 Laeufen des
+Optimierungsmodells je Tag aus" und "Die zweite Iteration verlangt dafuer
+einige hundert Laeufe je Tag".
+
+**Der Text nennt nur die Summe beider Iterationen**, weil die Aufteilung
+auf die beiden Iterationen nicht gemessen ist. Die Zaehlung nach Phasen,
+also Bisektion gegen Aufstieg und Abstieg, laeuft im Analyse-Repository.
+Erst mit ihr laesst sich die Aussage des Verfassers vom 23.09.2026 belegen,
+wonach die erste Iteration schon fuer geringen Aufwand einen grossen Teil
+der Stunden reserviert. Bis dahin steht sie nicht im Text.
+
+**Der Schwanz der Verteilung steht im Text.** Das Maximum von 2284 Laeufen
+am 15.01.2025 ist mehr als das Fuenffache des Medians. Der Text sagt
+deshalb, dass der Abstand zwischen Median und Maximum auf einzelne Tage
+zurueckgeht, an denen die zweite Iteration viele Durchgaenge braucht. Der
+Median beschreibt den Aufwand, das Maximum die Laufzeitplanung.
+
+**Die Stichprobe ist als solche benannt.** Der Text nennt die 16 Tage und
+ihre Auswahl, denn die exakte Jahresverteilung liesse sich nur durch eine
+Wiederholung des ganzen Jahreslaufs gewinnen, also fuer rund zweieinhalb
+Stunden Rechenzeit. **Eigenstaendige Empfehlung, vom Verfasser zu
+bestaetigen:** das lohnt nicht, denn der Rechenaufwand ist kein Ergebnis
+der Arbeit, sondern eine Angabe zum Verfahren.
+
+**Offener Punkt fuer Kapitel 3.** Abschnitt 3.2.4 nennt die Spanne von 84
+bis 167 Laeufen und "einige hundert" fuer die zweite Iteration, belegt an
+den ausgewerteten Tagen. Widerlegt ist das nicht, denn gemessen ist die
+Summe beider Iterationen an anderen Laeufen. Sobald die Zaehlung nach
+Phasen vorliegt, ist 3.2.4 dagegen zu halten; der Ausreisser mit 2284
+Laeufen laesst die Wendung "einige hundert" jedenfalls zu eng erscheinen.
+### 23.09.2026, Laufzahlen ein zweites Mal berichtigt
+
+**Das Analyse-Repository hat die Zahl am selben Tag zurueckgenommen.** Die
+341 bis 2284 Laeufe je Tag mit einem Median von 432 sind nicht beide
+Iterationen zusammen, sondern die **zweite Iteration allein**. Der Zaehler
+hing an einer Huelle, an der die Bisektion vorbeilaeuft, weil sie den Solver
+unmittelbar aufruft. Aufgefallen ist der Fehlgriff, weil die Aufteilung
+nach Phasen fuer die erste Iteration null ergab.
+
+**Zurueckgenommene Formulierung**, nicht wieder aufzunehmen: "Beide
+Iterationen zusammen verlangen im Median 432 Laeufe des
+Optimierungsmodells je Tag, bei einem Minimum von 341 und einem Maximum
+von 2284 Laeufen." Sie stand am 23.09.2026 fuer wenige Stunden im Text.
+
+**Gesichert ist allein die zweite Iteration.** Der Text sagt jetzt, dass
+die zweite Iteration fuer sich genommen im Median 432 Laeufe je Tag
+verlangt, mit 341 als Minimum und 2284 als Maximum, gemessen an einer
+Stichprobe von 16 Tagen. Die Zusammensetzung der Stichprobe, naemlich ein
+Tag je Monat und die fuenf Analysetage, steht nicht mehr im Text, weil der
+Absatz sonst ueber acht Saetze hinausginge; sie steht hier.
+
+**Widerspruch zur Wertung des Analyse-Repositorys, der Quelle nach.** Dort
+heisst es, die Spanne von 84 bis 167 Laeufen aus Abschnitt 3.2.4 sei schon
+von der zweiten Iteration allein um ein Vielfaches ueberschritten. Das
+trifft die Stelle nicht, denn 3.2.4 nennt 84 bis 167 Laeufe fuer die
+**erste** Iteration und *einige hundert* fuer die zweite. Gemessen ist
+bisher nur die zweite. Widerlegt ist damit die Wendung *einige hundert*,
+die das Maximum von 2284 nicht deckt, waehrend der Median von 432 noch
+hineinpasst. Bestaetigt ist zugleich die Aussage von 3.2.4, wonach die
+zweite Iteration ein Mehrfaches der ersten verlangt. Ueber die Spanne 84
+bis 167 entscheidet erst die ausstehende Messung. **Bis dahin bleibt
+Abschnitt 3.2.4 unveraendert.**
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

@@ -248,9 +248,26 @@ Die erste Iteration der Preissuche bindet die Leistung nicht vollständig, und d
 Unter den Preisen der ersten Iteration zahlt der \ac{ÜNB} 409,8\,\TsdEurMWa{} für die Vorhaltung und damit 97,6 Prozent der Zahlung unter vollständiger Bindung.
 Die Bezugsanlage verdient daneben noch 88,6\,\TsdEurMWa{} an den übrigen Märkten, sodass ihr Gesamterlös mit 498,4\,\TsdEurMWa{} um 46,3 Prozent über dem Referenzerlös liegt.
 Ursache ist der für den ganzen Tag einheitliche vorgegebene Reservierungspreis, der die teuren Stunden des Tages frei lässt.
-Günstig ist die erste Iteration allein im Rechenaufwand, denn sie kommt mit 84 bis 167 Läufen des Optimierungsmodells je Tag aus.
-Die zweite Iteration verlangt dafür einige hundert Läufe je Tag und hebt die Zahlung des \ac{ÜNB} um 10,2 auf 420,0\,\TsdEurMWa{}.
-Die übrige Vermarktung entfällt dabei ganz, sodass der Gesamterlös der Bezugsanlage auf 420,0\,\TsdEurMWa{} und damit auf 23,3 Prozent über dem Referenzerlös sinkt.
+% BERICHTIGT am 23.09.2026. Die Spanne von 84 bis 167 Laeufen aus Abschnitt
+% 3.2.4 gilt fuer die ausgewerteten Tage und nicht fuer die Jahreslaeufe.
+% Eine Zaehlung des Analyse-Repositorys vom 23.09.2026 ueber 16 Tage, naemlich
+% einen je Monat und die fuenf Analysetage, ergibt fuer beide Iterationen
+% zusammen 341 bis 2284 Laeufe je Tag bei einem Median von 432. Die
+% Aufteilung auf die beiden Iterationen wird gerade gemessen und steht noch
+% aus; bis dahin nennt der Text nur die Summe. Zurueckgenommene Fassung:
+%Günstig ist die erste Iteration allein im Rechenaufwand, denn sie kommt mit 84 bis 167 Läufen des Optimierungsmodells je Tag aus.
+%Die zweite Iteration verlangt dafür einige hundert Läufe je Tag und hebt die Zahlung des \ac{ÜNB} um 10,2 auf 420,0\,\TsdEurMWa{}.
+% BERICHTIGT am 23.09.2026, zweite Fassung desselben Tages. Die gemessenen
+% 341 bis 2284 Laeufe entfallen auf die zweite Iteration allein und nicht
+% auf beide zusammen; der Zaehler des Analyse-Repositorys hing an einer
+% Huelle, an der die Bisektion vorbeilaeuft. Die Laeufe der ersten Iteration
+% kommen hinzu und werden gerade gemessen. Zurueckgenommene Fassung:
+%Beide Iterationen zusammen verlangen im Median 432 Läufe des Optimierungsmodells je Tag, bei einem Minimum von 341 und einem Maximum von 2284 Läufen.
+%Der weite Abstand zwischen Median und Maximum geht auf einzelne Tage zurück, an denen die zweite Iteration viele Durchgänge braucht, bis kein Preis mehr sinkt.
+Die zweite Iteration verlangt für sich genommen im Median 432 Läufe des Optimierungsmodells je Tag, gemessen an einer Stichprobe von 16 Tagen des Jahres 2025.
+Das Minimum liegt bei 341 und das Maximum bei 2284 Läufen, denn einzelne Tage brauchen viele Durchgänge, bis kein Preis mehr sinkt.
+Die zweite Iteration hebt die Zahlung des \ac{ÜNB} um 10,2 auf 420,0\,\TsdEurMWa{}.
+Die übrige Vermarktung entfällt dabei ganz, sodass der Gesamterlös der Bezugsanlage nur noch 23,3 Prozent über dem Referenzerlös liegt.
 
 % ANGEFUEGT am 23.09.2026, Lieferung des Analyse-Repositorys vom selben Tag
 % nach AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md. Zahlen aus ERGEBNISSE Abschnitt

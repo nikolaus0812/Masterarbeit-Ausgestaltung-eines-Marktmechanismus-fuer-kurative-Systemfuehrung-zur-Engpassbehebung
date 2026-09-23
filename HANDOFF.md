@@ -350,12 +350,27 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   84,5 und 89,0 sowie 99,04 und 99,78 Prozent sind **überholt**; gültig sind
   85,94 und 89,60 für die erste und zweimal 99,98 Prozent für die zweite
   Iteration.
-- **Laufzahlen 84 bis 167 unter Vorbehalt.** Abschnitt 4.2 nennt sie als
-  Rechenaufwand der ersten Iteration. Belegt sind sie in 3.2.4 an den
-  ausgewerteten Tagen, nicht an den Jahresläufen. Die Rückfrage steht als
-  Abschnitt 3.2 im Auftrag und ist mit der Lieferung vom 23.09.2026 **nicht**
-  beantwortet worden; fällt die Antwort anders aus, ist der Satz zu
-  berichtigen.
+- **Laufzahlen, Stand 23.09.2026 abends.** Gesichert ist allein die **zweite**
+  Iteration mit 341 bis 2284 Läufen je Tag, Median 432, über eine Stichprobe
+  von 16 Tagen. Die zunächst gemeldete Lesart *beide Iterationen zusammen*
+  ist am selben Tag zurückgenommen worden, weil der Zähler an einer Hülle
+  hing, an der die Bisektion vorbeiläuft. Abschnitt 4.2 nennt jetzt die
+  zweite Iteration für sich genommen.
+- **Die Läufe der ersten Iteration stehen aus.** Der Zähler sitzt jetzt an
+  `optimize_day`, der Lauf rechnet. Erst mit dieser Zahl lässt sich sagen,
+  dass die erste Iteration schon für geringen Aufwand einen großen Teil der
+  Stunden reserviert. Diese Aussage des Verfassers steht bis dahin **nicht**
+  im Text.
+- **Abschnitt 3.2.4 bleibt vorerst unverändert.** Dort stehen 84 bis 167
+  Läufe für die **erste** und *einige hundert* für die zweite Iteration.
+  Gemessen ist bisher nur die zweite, also ist die Spanne 84 bis 167 weder
+  bestätigt noch widerlegt. Widerlegt ist die Wendung *einige hundert*, die
+  das Maximum von 2284 nicht deckt. Nach der ausstehenden Messung beide
+  Stellen nachziehen.
+- **Die exakte Jahresverteilung der Läufe ist nicht bestellt.** Sie hätte
+  eine Wiederholung des Jahreslaufs von rund zweieinhalb Stunden verlangt.
+  Empfehlung an den Verfasser: dabei bleiben, denn der Rechenaufwand ist
+  eine Angabe zum Verfahren und kein Ergebnis der Arbeit.
 - **Markterlös der offenen Stunden nicht verfügbar.** Der Anteil der
   offenen Tagesstunden an den 88,6\,Tsd.\,€/(MW·a) lässt sich aus dem
   vorhandenen Lauf nicht ziehen, weil die Erlösdatei je Tag und nicht je
