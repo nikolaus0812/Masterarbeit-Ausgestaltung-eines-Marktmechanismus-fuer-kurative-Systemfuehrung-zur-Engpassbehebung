@@ -1,18 +1,15 @@
 # Übergabe an die nächste Sitzung, Stand 23.09.2026
 
-Diese Datei ersetzt die Fassung vom 22.09.2026 nachts vollständig. Die alte
-Fassung steht in der Git-Historie.
+Diese Datei ersetzt die Fassung vom 22.09.2026 nachts vollständig, fortgeschrieben
+am 23.09.2026 abends. Die alten Fassungen stehen in der Git-Historie.
 
-> **Zuerst lesen: es liegen ungesicherte Änderungen im Arbeitsverzeichnis.**
-> Geändert und **nicht committet** sind `chapters/chapter_4.tex`, diese Datei
-> und `ENTSCHEIDUNGSPROTOKOLL.md`, dazu liegt
-> `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` als neue und noch nicht versionierte
-> Datei im Wurzelverzeichnis. Der Stand ist gebaut und geprüft, er ist nur
-> nicht festgeschrieben. Committet wird allein auf das Wort „commite".
-> Vor der ersten eigenen Änderung `git diff` lesen und den Verfasser fragen,
-> ob der Stand zuerst committet werden soll.
-> Der letzte Commit ist `13fdbef` vom 23.09.2026, `origin/main` steht auf
-> `b2c5792` und ist damit einen Commit zurück.
+> **Das Arbeitsverzeichnis ist sauber.** Der letzte Commit ist `887fb5d`
+> vom 23.09.2026 abends. `origin/main` steht auf `1c51db2` und ist damit
+> **einen Commit zurück** — gepusht wird nur auf ausdrückliche Anweisung,
+> committet nur auf das Wort „commite".
+>
+> **Der Verfasser macht am 24.09.2026 weiter.** Der Durchgang steht bei
+> **Abschnitt 4.6.2**, siehe die Tabelle in Abschnitt 1.3.
 
 **Lesereihenfolge zu Beginn der Sitzung.** `CLAUDE.md`, dann diese Datei, dann
 `WORKFLOW.md` Abschnitte 3, 7 und 10. `ENTSCHEIDUNGSPROTOKOLL.md` hat über
@@ -23,7 +20,7 @@ durchsucht.
 
 ## 1 Stand des Dokuments
 
-Build sauber, Biber ohne Warnung, **104 Seiten**, Stand 23.09.2026. `python tools/pruefen.py
+Build sauber, Biber ohne Warnung, **111 Seiten**, Stand 23.09.2026 abends. `python tools/pruefen.py
 --alle` meldet allein den Altbefund in `chapters/chapter_5.tex` Zeile 91.
 `main.tex` bindet die Kapitel 1 bis 4 ein, 5 und 6 sind auskommentiert; die
 beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.
@@ -101,8 +98,11 @@ gerne mit dir formulieren"*.
 | 4.2 Preise beider Iterationen | **durch** am 23.09., drei Absätze, Füllgradabbildung eingebaut |
 | 4.3 Verteilung der Verdrängungspreise | **durch** am 23.09., drei Absätze und Schlussfolgerungen |
 | 4.4 Zeitliches Muster | **durch** am 23.09., acht Absätze, dazu die Beschreibung der Heatmap zwischen den beiden Abbildungen |
-| 4.5 bis 4.6.2 | geschrieben, noch nicht durchgegangen, **als nächstes 4.5** |
-| 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert |
+| 4.5 Preis und Engpassbedarf | **durch** am 23.09. abends, drei Absätze, Anhang H angelegt |
+| 4.6 Einleitung | **durch** am 23.09. abends, sieben Sätze, zählt jetzt vier Abschnitte |
+| 4.6.1 Modellierung der aFRR | **durch** am 23.09. abends, sieben Absätze, vollständig neu sortiert |
+| 4.6.2 Abrufdauer | geschrieben, noch nicht durchgegangen, **als nächstes** |
+| 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert, noch nicht durchgegangen |
 | ~~4.7 Diskussion~~ | **gestrichen**, die Diskussion ist Kapitel 5 |
 
 **4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
@@ -121,6 +121,57 @@ Erlösaufteilung des Abschnitts 4.2 aus; der Satz über die fünf Tage als
 Grundlage ist gestrichen; die aFRR bindet die Leistung, der IDC zieht seinen
 Wert aus wenigen spreadstarken Stunden; und der Schlusssatz lautet, dass der
 Preis bis auf die FCR von allen Märkten bestimmt wird.
+
+### 1.4 Was am 23.09.2026 abends dazugekommen ist
+
+**Anhang H, Zeitmuster des Redispatch.** `extras/attachment_redispatch.tex`,
+eingebunden in `main.tex` nach dem Jahreslauf. Der Anhang trägt die
+Zuordnung der Richtungen und den Befund; **was die Abbildung zeigt und wie
+der Redispatch aggregiert ist, steht in Abschnitt 4.5**, wo der Leser es
+zuerst braucht. So steht nichts doppelt. Zitiert wird
+`netztransparenz_regelenergie_2026`.
+
+**Abschnitt 4.5 steht in drei Absätzen.** Der erste erklärt Anhang H vor dem
+Verweis und hält den Tagesgang von Bedarf und Preis gegeneinander (Faktor
+1,7 gegen 8,3). Der zweite beschreibt Abbildung 4.6. Der dritte trägt die
+Schlussfolgerungen. Vier Vorgaben des Verfassers sind darin umgesetzt:
+
+- Die Begründung des arithmetischen Mittels ist **gestrichen**.
+- Die Bezugslinie von 101 Euro je bewegter Megawattstunde steht jetzt unter
+  ihrer Annahme, nämlich dass die Kosten linear mit dem Maßnahmenvolumen
+  steigen.
+- Der Satz zu den 952 Millionen Euro Reservekraftwerkskosten ist
+  **gestrichen**.
+- Der Jahresgang hängt jetzt am günstigsten **Monat** und nennt **beide**
+  Richtungen, und der Redispatch wird über die bedarfsreichsten Tage
+  beschrieben statt über Mittelwerte je Jahreszeit.
+
+**Abschnitt 4.6.1 ist vollständig neu sortiert**, sieben Absätze in der vom
+Verfasser vorgegebenen Reihenfolge: Basisfall und Prüfumfang, Verteidigung
+der Annahmen gegen das Rosinenpicken, Leistungsdiagramm, Arbeitsdiagramm,
+Schieflage und ihre Verlagerung, Ungewissheit des Abrufs, Abgrenzung der
+Jahresrechnung. Die Stufen heißen jetzt wie im Bild; die Stufe *ohne
+Lieferung* kam im Text bisher gar nicht vor und trägt jetzt den Befund, dass
+die aFRR-Arbeit in der Laderichtung einen größeren Teil des Preises trägt
+als in der Entladerichtung.
+
+**Ein falscher Satz ist zurückgenommen.** „Zwei Annahmen, die sich im Median
+ähnlich auswirken…" — der Grenzpreis hebt den Median um 16 Prozent, die
+freie Lieferung um 69. **Nicht wieder aufnehmen.**
+
+**Zwei neue eigene Auswertungen im Schriftrepository.**
+
+| Verzeichnis | was es trägt |
+|---|---|
+| `analysen/afrr_abruf/` | `abruf.py` und `BEFUND.md`. In Deutschland wurden 2025 im Mittel **51 MW positive und 53 MW negative aFRR-Arbeit** abgerufen, gegen bezuschlagte 2010 und 1820 MW also **2,5 und 2,9 Prozent**; in 92 Prozent der Viertelstunden bleibt der Abruf unter einem Zehntel der Vorhaltung. Die Bezugsanlage hat **100 MW**, sodass die Sensitivitätsstufe *bis zum Abruf* ihr den gesamten deutschen Abruf allein zuschreibt. |
+| `analysen/zeitmuster_ursachen/monate_tagesebene.py` | `BEFUND_MONATE_TAG.md`, je Monat der Median der Tagesmittel und die mittlere Redispatchleistung, dazu wie viele der bedarfsreichsten Tage in welche Jahreszeit fallen. Dieselbe Kenngröße wie `BEFUND_JAHRESZEITEN_TAG.md`, damit beide Befunde zusammenpassen. |
+
+**Der Code des Modellrepositorys stützt die Verteidigung in 4.6.1.**
+`optimizer.py` Zeile 292 führt `prorata` als „pro-rata-Abruf, kein
+Rosinenpicken (konservativ/realistisch)", und Zeile 312 sagt zu
+`afrr_ene_qde_anteil` = 1,0: „der volle Abruf unterstellt, dass sie ihn
+allein bedient". Das ist genau das Argument des Verfassers, unabhängig
+aufgeschrieben.
 
 ---
 
@@ -335,6 +386,23 @@ schreiben**, sonst entsteht doppelte Arbeit.
   Referenzbalken, `ERGEBNISSE…md` Abschnitt 7.13 führt sie nicht. Bis dahin
   steht sie nicht in 4.6.4, denn keine Zahl wird aus einer Abbildung
   abgelesen.
+
+**Eine Entscheidung, die der Verfasser treffen muss**
+
+- **Heißt die Größe in 4.6.2 *Abrufdauer* oder *Vorhaltdauer*?** Der
+  Verfasser hat am 23.09.2026 die Vorhaltdauer in der Aufzählung des
+  Abschnitts 4.6 vermisst. **Eine eigene Vorhaltdauer-Sensitivität gibt es
+  nicht**: die Konfiguration `sensi6_vorhaltedauer` mit `kur_t_res` in
+  {0,25; 0,5; 1,0} **ist** der Abschnitt 4.6.2. Das Analyse-Repository hat
+  den Namen selbst festgelegt, in `ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md`
+  Zeile 419: „Die Größe heißt in der Schriftfassung **Abrufdauer** — nicht
+  Vorhaltedauer, nicht Bindungsdauer." Der Code nennt sie Vorhaltedauer, die
+  Arbeit nennt sie Abrufdauer. In der Einleitung steht deshalb seit dem
+  23.09. die Abgrenzung, dass die **Bindungsdauer** in allen Varianten eine
+  Stunde bleibt. **Soll die Größe doch Vorhaltdauer heißen, ist das eine
+  Umbenennung in 4.6.2, in der Bildunterschrift und in der Abbildung
+  selbst** — und ein Auftrag an das Analyse-Repository, denn die
+  Achsenbeschriftung steckt im PDF.
 
 **Eine Vorkehrung, die mitzuführen ist**
 
