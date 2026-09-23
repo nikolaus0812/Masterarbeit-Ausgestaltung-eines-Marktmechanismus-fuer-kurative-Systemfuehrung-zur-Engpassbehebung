@@ -506,10 +506,20 @@ In einem Teil der Stunden bietet die Bezugsanlage die Entladereservierung zum Pr
 % Abbildungshinweis: Knick der Farbskala seit dem 22.09.2026 bei 10 statt
 % 15 Euro je Megawatt und Stunde, Farbskala nur mit ganzen Zahlen.
 
-Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
+% NEU GEFASST am 23.09.2026, Vorgabe des Verfassers. Der Einstieg knuepft
+% jetzt an beide vorangegangenen Abschnitte an, statt mit einer Verneinung
+% zu beginnen. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
+Neben der Aufteilung des Referenzerlöses und der Zahlung bei vollständiger Verdrängung ist die zeitliche Lage des kurativen Reservierungspreises von Belang.
 Abbildung~\ref{fig:heatmap_reservierungspreis} trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf.
 Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
-Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entlade- und 161\,\EurMWh{} in der Laderichtung, sodass 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
+% GEKUERZT am 23.09.2026. Abschnitt 4.3 nennt das 99-Prozent-Quantil seit
+% demselben Tag mit denselben vier Zahlen, naemlich 173 und 161 Euro je
+% Megawatt und Stunde sowie 88 und 87 Stunden. Hier braucht der Absatz sie
+% nicht, denn er erklaert allein den Deckel der Farbskala. Zurueckgenommene
+% Fassung:
+%Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entlade- und 161\,\EurMWh{} in der Laderichtung, sodass 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
+Die Obergrenze je Feld ist das 99-Prozent-Quantil, sodass die teuersten 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
 
 \begin{figure}[H]
     \centering
@@ -517,6 +527,18 @@ Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entl
     \caption{Kurativer Reservierungspreis je Stunde und Kalendertag 2025, oben entladend und unten ladend, zweite Iteration. Die Zeitumstellung steht schwarz.}
     \label{fig:heatmap_reservierungspreis}
 \end{figure}
+
+% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: die Heatmap wird
+% beschrieben, bevor die naechste Abbildung folgt. Zahlen aus der eigenen
+% Auswertung analysen/zeitmuster_ursachen/heatmap_struktur.py, betrachtet
+% sind die je 876 Stunden oberhalb des 90-Prozent-Quantils, also 56,7 und
+% 70,7 Euro je Megawatt und Stunde.
+Die teuren Stunden beider Richtungen liegen jahreszeitlich beieinander.
+Von den je 876 Stunden oberhalb des 90-Prozent-Quantils fallen 91 Prozent der Entlade- und 92 Prozent der Ladereservierung in die Monate März bis Oktober.
+Innerhalb des Tages liegen sie verschieden, denn die sechs stärksten Tagesstunden tragen bei der Ladereservierung 62 und bei der Entladereservierung 50 Prozent.
+Die teuren Ladestunden liegen mittags beieinander, die teuren Entladestunden dagegen in zwei Fenstern am Morgen und am Abend.
+Die Ladereservierung häuft ihre teuren Stunden zudem an 166 Kalendertagen, die Entladereservierung an 217.
+Die Ladereservierung bildet damit ein zusammenhängendes Band über die Mitte des Tages, während die Entladereservierung über mehr Tage und zwei Tageszeiten streut.
 
 In Abbildung~\ref{fig:zeitmuster_reservierungspreis} sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst.
 Die Entladereservierung erreicht ihren größten Median mit 43,8\,\EurMWh{} in der Stunde um 19 Uhr und ihren kleinsten mit 2,2\,\EurMWh{} in der Stunde um 4 Uhr.

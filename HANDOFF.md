@@ -50,7 +50,7 @@ Fließtext ersetzt. Gliederung:
 | 4.1 Verlauf des Dispatch und Verdrängung der Märkte | Verweis auf Anhang F | geschrieben |
 | 4.2 Preise beider Iterationen und Erlöswirkung | Erlösvergleich | geschrieben |
 | 4.3 Verteilung der Verdrängungspreise | Boxplot | geschrieben |
-| 4.4 Zeitliches Muster | Heatmap, Zeitmuster | geschrieben |
+| 4.4 Zeitliches Muster | Heatmap, Zeitmuster | geschrieben und durchgegangen |
 | 4.5 Kurativer Reservierungspreis und Engpassbedarf | Jahreslauf Median und Mittel | geschrieben |
 | 4.6 Sensitivitäten | | |
 | 4.6.1 Modellierung der aFRR | aFRR Leistung, aFRR Energie | geschrieben |
@@ -100,7 +100,7 @@ gerne mit dir formulieren"*.
 | 4.1 Verlauf des Dispatch | **durch**, drei Umbauten |
 | 4.2 Preise beider Iterationen | **durch** am 23.09., drei Absätze, Füllgradabbildung eingebaut |
 | 4.3 Verteilung der Verdrängungspreise | **durch** am 23.09., drei Absätze und Schlussfolgerungen |
-| 4.4 Zeitliches Muster | **durch** am 23.09., sieben Absätze, Summe neu gefasst, Ursachenabsatz und Schlussfolgerungen neu |
+| 4.4 Zeitliches Muster | **durch** am 23.09., acht Absätze, dazu die Beschreibung der Heatmap zwischen den beiden Abbildungen |
 | 4.5 bis 4.6.2 | geschrieben, noch nicht durchgegangen, **als nächstes 4.5** |
 | 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert |
 | ~~4.7 Diskussion~~ | **gestrichen**, die Diskussion ist Kapitel 5 |
@@ -129,7 +129,7 @@ Preis bis auf die FCR von allen Märkten bestimmt wird.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, sechs Dateien
+### Wurzelverzeichnis, sieben Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -138,6 +138,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
+| `AUFTRAG_REFERENZAUFTEILUNG.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Aufteilung des Referenzerlöses in der Zukunftsvariante. Nachrangig, 4.6.4 steht auch ohne sie. |
 | `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 an einen getrennten Chat mit Zugriff auf SMARD und die öffentlichen Quellen der Bundesnetzagentur. Warum verdoppelt sich der \ac{aFRR}-Leistungspreis im Herbst 2025, und welche Quelle trägt den Zusammenhang von Solareinspeisung und negativer Regelleistung. |
 
 ### `archiv/`, siebzehn Dateien, nur zum Nachschlagen
@@ -456,6 +457,22 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   für das Verhältnis von 1,31; die Wiederholung steht in einem Absatz, der sie
   für seine eigene Rechnung braucht.
 
+- **Die Antwort des SMARD-Chats steht aus.** `ANFRAGE_AFRR_HERBST_2025.md` ist
+  am 23.09.2026 hinausgegangen. Zwei Begründungen warten darauf und stehen
+  bis zur Antwort **nicht im Text**, so im Protokoll festgehalten: warum der
+  Leistungspreis der positiven \ac{aFRR} im September und Oktober 2025 mit
+  32,7 gegen 15,0 Euro je Megawatt und Stunde beim 2,2-Fachen liegt, und
+  welche zitierfähige Quelle den Zusammenhang zwischen hoher
+  Solareinspeisung und dem Preis negativer Regelleistung trägt. Der Einbruch
+  des Juli ist nachrangig mitgefragt und bleibt ohne Beleg unerwähnt.
+  **Kommt keine Quelle**, ist der Jahresgang in 4.3 beschrieben und
+  unbegründet; dann ist im Text zu kennzeichnen, dass die Ursache offen ist.
+- **Abschnitt 5 der Anfrage verlangt zugleich einen Abgleich der eigenen
+  Monatswerte gegen regelleistung.net.** Ein Widerspruch dort träfe nicht
+  Kapitel 4 allein, sondern die Eingangsdaten des Modells, nämlich die
+  Spalte `GERMANY_AVERAGE_CAPACITY_PRICE`. Die Antwort ist deshalb zuerst
+  auf diesen Punkt zu lesen und nicht auf die Erklärung.
+
 **Ältere Punkte, unverändert**
 
 - **Reste der Liste G aus `archiv/DURCHSICHT_KAP1_3.md`**, am 22.09.2026
@@ -560,7 +577,9 @@ Fertige Abbildungen liegen unter `analysen/12_schrift/kapitel_N/` in Satzbreite
 nach `figures/anhang`. Beim Abgleich die PDF-Felder `CreationDate`, `ModDate`
 und `ID` ausnehmen.
 
-Eigene Auswertungen der Schriftfassung: `analysen/zeitmuster_ursachen`,
+Eigene Auswertungen der Schriftfassung: `analysen/zeitmuster_ursachen` mit
+sieben Skripten und einer eigenen `README.md`, die sagt, welches Skript
+welche Frage beantwortet und welcher Befund überholt ist,
 `analysen/mastr_speicher`,
 `analysen/mfrr_leistungspreise`, `analysen/vollreservierung_pruefung`,
 `analysen/redispatch_einheiten`. Der Quelltext des Erlösindex der ISEA Battery

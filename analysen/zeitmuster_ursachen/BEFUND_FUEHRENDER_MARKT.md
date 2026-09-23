@@ -1,5 +1,13 @@
 # Welcher Markt stellt die Opportunitaet
 
+> **Abschnitt 2 ist ueberholt.** Fuer die Entladerichtung setzt dieses
+> Skript den Preis der Stunde selbst als Opportunitaet an und ueberschaetzt
+> damit die Energiemaerkte, denn wer entladen will, muss die Energie vorher
+> kaufen. Massgeblich ist `BEFUND_ENTLADEN_SPANNE.md`, das mit der Spanne
+> zum guenstigsten Bezug desselben Tages rechnet. Abschnitt 1 und 3 sind
+> davon nicht betroffen, weil eine Ladung zu einem negativen Preis
+> unmittelbar Geld einbringt.
+
 Eigene Auswertung vom 23.09.2026. Je Viertelstunde wird bestimmt,
 welcher Markt der Bezugsanlage am meisten einbraechte. Alles in Euro
 je Megawatt und Stunde. Das Verfahren folgt ERGEBNISSE Abschnitt 7.11.

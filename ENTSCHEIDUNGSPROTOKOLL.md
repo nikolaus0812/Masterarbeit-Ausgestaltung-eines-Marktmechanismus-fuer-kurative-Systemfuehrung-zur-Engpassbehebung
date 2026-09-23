@@ -13843,6 +13843,59 @@ den fuenf Tagen folgt die Reihenfolge der Verdraengung, aus dem Jahreslauf
 das Gewicht der einzelnen Maerkte." An ihre Stelle tritt "Aus einem
 Jahreslauf ueber alle Tage laesst sich das Gewicht der einzelnen Maerkte
 bestimmen."
+### 23.09.2026, Einstieg in 4.4 neu gefasst
+
+**Vorgabe des Verfassers.** Der Abschnitt soll an beide vorangegangenen
+Abschnitte anknuepfen, naemlich an die Aufteilung des Referenzerloeses und
+an die Zahlung bei vollstaendiger Verdraengung, und von dort zur zeitlichen
+Lage ueberleiten. Zurueckgenommene Fassung, nicht wieder aufzunehmen: "Die
+Kennzahlen des Abschnitts 4.3 geben die Hoehe des kurativen
+Reservierungspreises, nicht aber die Lage der teuren Stunden." Sie trug
+zugleich das Muster "A und nicht B", das seit dem 23.09.2026 nicht mehr
+verwendet wird.
+
+**Zwei Begriffe berichtigt.** Die Vorgabe nannte die Aufteilung der
+*Erloesmaerkte* und die Verdraengung durch den *kurativen Markt*. Beides
+sind keine Begriffe der Arbeit. Im Text steht die Aufteilung des
+Referenzerloeses und die Zahlung bei vollstaendiger Verdraengung, wie in
+Abschnitt 4.2.
+
+**Eine woertliche Dopplung ist aufgeloest.** Seit der Neufassung des
+Abschnitts 4.3 am 23.09.2026 stehen dort dieselben vier Zahlen wie in 4.4,
+naemlich das 99-Prozent-Quantil von 173 und 161 Euro je Megawatt und Stunde
+und die 88 beziehungsweise 87 Stunden darueber. Abschnitt 4.3 braucht sie
+fuer den Abstand zum Maximum, Abschnitt 4.4 allein fuer den Deckel der
+Farbskala. Der Satz in 4.4 nennt deshalb nur noch die Zahl der Stunden.
+### 23.09.2026, Beschreibung der Heatmap angefuegt
+
+**Vorgabe des Verfassers.** Abbildung 4.4 soll beschrieben werden, bevor
+Abbildung 4.5 folgt. Bis dahin fuehrte der Absatz hinter der Heatmap
+unmittelbar die naechste Abbildung ein, sodass die Heatmap selbst keinen
+Satz trug.
+
+**Eigene Auswertung** in `analysen/zeitmuster_ursachen/heatmap_struktur.py`,
+betrachtet sind die je 876 Stunden oberhalb des 90-Prozent-Quantils,
+naemlich 56,7 Euro je Megawatt und Stunde entladend und 70,7 ladend.
+
+**Der erste Eindruck war nur zur Haelfte richtig.** Beim Sichten der
+Abbildung hatte ich notiert, die Ladereservierung bilde ein
+zusammenhaengendes saisonales Band und die Entladereservierung sei
+gesprenkelt. Die Messung zeigt, dass die jahreszeitliche Haeufung in
+**beiden** Richtungen gleich stark ist, naemlich 91 und 92 Prozent der
+teuren Stunden zwischen Maerz und Oktober. Der Unterschied liegt allein in
+der Tageslage und in der Zahl der betroffenen Tage.
+
+**Was die Heatmap zeigt und die Kurven des Abschnitts 4.5 nicht.** Die
+Entladereservierung traegt ihre teuren Stunden in **zwei** Fenstern, am
+Morgen und am Abend, und verteilt sie auf 217 Kalendertage; die
+Ladereservierung haeuft sie mittags auf 166 Tage. Die sechs staerksten
+Tagesstunden tragen ladend 62 und entladend 50 Prozent. Das Morgenfenster
+der Entladereservierung passt zum Befund des Abschnitts 4.4 ueber den
+Abstand von Median und Mittel, denn der Median ist dort maessig und das
+Mittel hoch.
+
+**Damit steht zwischen den Abbildungen 4.4 und 4.5 ein Absatz, der die
+erste beschreibt**, und der folgende Absatz fuehrt die zweite ein.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
