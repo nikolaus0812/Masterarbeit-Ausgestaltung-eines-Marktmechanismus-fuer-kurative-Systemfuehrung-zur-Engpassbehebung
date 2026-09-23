@@ -1,16 +1,18 @@
-# Übergabe an die nächste Sitzung, Stand 22.09.2026, nachts
+# Übergabe an die nächste Sitzung, Stand 23.09.2026
 
-Diese Datei ersetzt die Fassung vom 22.09.2026 morgens vollständig. Die alte
+Diese Datei ersetzt die Fassung vom 22.09.2026 nachts vollständig. Die alte
 Fassung steht in der Git-Historie.
 
 > **Zuerst lesen: es liegen ungesicherte Änderungen im Arbeitsverzeichnis.**
 > Geändert und **nicht committet** sind `chapters/chapter_4.tex`, diese Datei
-> und `ENTSCHEIDUNGSPROTOKOLL.md`, weil der Verfasser die Sitzung ohne
-> „commite" beendet hat. `git status` zeigt alle drei. Der Stand ist gebaut
-> und geprüft, er ist nur nicht festgeschrieben. Vor der ersten eigenen
-> Änderung `git diff` lesen und den Verfasser fragen, ob der Stand zuerst
-> committet werden soll.
-> Gepusht ist bis einschließlich `5015eac`, `origin/main` ist eingeholt.
+> und `ENTSCHEIDUNGSPROTOKOLL.md`, dazu liegt
+> `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` als neue und noch nicht versionierte
+> Datei im Wurzelverzeichnis. Der Stand ist gebaut und geprüft, er ist nur
+> nicht festgeschrieben. Committet wird allein auf das Wort „commite".
+> Vor der ersten eigenen Änderung `git diff` lesen und den Verfasser fragen,
+> ob der Stand zuerst committet werden soll.
+> Der letzte Commit ist `13fdbef` vom 23.09.2026, `origin/main` steht auf
+> `b2c5792` und ist damit einen Commit zurück.
 
 **Lesereihenfolge zu Beginn der Sitzung.** `CLAUDE.md`, dann diese Datei, dann
 `WORKFLOW.md` Abschnitte 3, 7 und 10. `ENTSCHEIDUNGSPROTOKOLL.md` hat über
@@ -74,7 +76,8 @@ Schriftfassung nachgerechnet. Quelle ist
 `analysen/code/schrift/ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 7 und
 Abschnitt 4 der Anweisung. **Rückfragen dorthin, nicht nachrechnen.**
 
-Neun Abbildungen liegen in `figures/chapter_4/`. Stand am 22.09.2026 abends
+Zehn Abbildungen liegen in `figures/chapter_4/`, die zehnte seit dem
+23.09.2026. Stand am 22.09.2026 abends
 geprüft: alle neun sind deckungsgleich mit dem Lieferordner. Das Zeitmuster
 zeigt die Summe als Hauptkurve, dazu Median und arithmetisches Mittel mit der
 grauen Fläche dazwischen.
@@ -92,9 +95,10 @@ gerne mit dir formulieren"*.
 | Abschnitt | Durchgang |
 |---|---|
 | Kapiteleinleitung | **durch**, in der Nacht vom 22.09. neu gefasst |
-| 4.1 Verlauf des Dispatch | **durch**, drei Umbauten, Stand siehe unten |
-| 4.2 Preise beider Iterationen | **als nächstes** |
-| 4.3 bis 4.6.2 | geschrieben, noch nicht durchgegangen |
+| 4.1 Verlauf des Dispatch | **durch**, drei Umbauten |
+| 4.2 Preise beider Iterationen | **durch** am 23.09., drei Absätze, Füllgradabbildung eingebaut |
+| 4.3 Verteilung der Verdrängungspreise | **durch** am 23.09., drei Absätze und Schlussfolgerungen |
+| 4.4 bis 4.6.2 | geschrieben, noch nicht durchgegangen, **als nächstes 4.4** |
 | 4.6.3, 4.6.4, 4.7 | leer, warten auf `sensi8` |
 
 **4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
@@ -121,7 +125,7 @@ Preis bis auf die FCR von allen Märkten bestimmt wird.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, fünf Dateien
+### Wurzelverzeichnis, sechs Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -130,6 +134,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
+| `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` | Auftrag an das Analyse-Repository vom 23.09.2026. Abschnitt 2 und Rückfrage 3.1 sind erledigt, offen bleiben Rückfrage 3.2 und die beiden Nebenpunkte. Erst danach ins Archiv. |
 
 ### `archiv/`, fünfzehn Dateien, nur zum Nachschlagen
 
@@ -195,6 +200,17 @@ Ausführlich im Protokoll. Kurz:
   **wird nicht halbiert**, weil die Reihe nicht symmetrisch ist. Näheres in 4.5
   und im Protokoll.
 - **Kapiteltitel `Ergebnisse`**, entschieden am 22.09.2026.
+- **Das Wort Preisvektor kommt nicht vor**, Vorgabe des Verfassers vom
+  23.09.2026. Kapitel 4 sagt stattdessen *die Preise der ersten* und *der
+  zweiten Iteration*. In `chapters/chapter_5.tex` steht das Wort noch einmal,
+  die Datei ist auskommentiert und beim Schreiben von Kapitel 5 nachzuziehen.
+- **Die Einheit der Erlöse steht als Makro `\TsdEurMWa`**, seit dem
+  23.09.2026 an allen Stellen des Kapitels. Ausgeschrieben steht sie allein
+  bei ihrer Einführung in der Kapiteleinleitung.
+- **Die kurative Reservierung wird je Stunde bestimmt**, nicht je
+  Viertelstunde. Zeitscheibe und Bindungsdauer betragen im Basisfall eine
+  Stunde, das Jahr 2025 trägt deshalb 8758 Preise je Richtung. Am 23.09.2026
+  gegenüber der Vorgabe des Verfassers berichtigt, die 96 mal 365 nannte.
 - **Kein Abschnitt beginnt mit einem Bild**, Vorgabe des Verfassers vom
   22.09.2026. In Kapitel 4 steht seither **jede Abbildung hinter dem Absatz,
   der sie einführt**. Das gilt auch für die beiden Abbildungen im Inneren von
@@ -208,8 +224,8 @@ Ausführlich im Protokoll. Kurz:
   **„Aus dieser Untersuchung lässt sich Folgendes mitnehmen."** und bleibt
   über alle Abschnitte gleich, damit die Stelle erkennbar ist. **Kein
   erstens, zweitens, drittens**, ausdrückliche Vorgabe. Kein Verweis auf
-  Kapitel 5, weil Stilregel 15 strukturelle Vorverweise ausschließt. In 4.1
-  steht der Absatz, für 4.2 bis 4.6 fehlt er noch.
+  Kapitel 5, weil Stilregel 15 strukturelle Vorverweise ausschließt. In 4.1,
+  4.2 und 4.3 steht der Absatz, für 4.4 bis 4.6 fehlt er noch.
 - **Der Fließtext wiederholt nicht den Anhang.** Der tagesbezogene Absatz in
   4.1 beschrieb anfangs denselben Schwellenlauf wie Anhang F. Er zeigt jetzt
   je Tag den Markt, für den der Tag ausgewählt ist, und höchstens eine
@@ -314,19 +330,36 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   energie wäre noch interessanter und aussagekräftiger"*. Diese Größe steht
   **nicht** in `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md`. Erforderlich wäre ein
   Auftrag an das Analyse-Repository, die Energie je Markt, Tag und Preisstufe
-  auszuweisen. Bis dahin stehen die MW-Werte im Text, mit dem erklärenden
-  Satz zur Einheit.
+  auszuweisen. **Am 23.09.2026 in Abschnitt 4.2 des Auftrags angefordert**,
+  mit der Bitte, den Aufwand vor einem neuen Lauf zu melden. Bis dahin
+  stehen die MW-Werte im Text, mit dem erklärenden Satz zur Einheit.
 - **Widerspruch im Analyse-Repository noch nicht gemeldet.**
   `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 2.3 nennt den 11.02.2025 als
   Tag, an dem der Day-Ahead zuerst weicht. Abschnitt 2.1 derselben Datei zeigt
   das Gegenteil, nämlich die Halbierung der aFRR bei 10 und die von Day-Ahead
   und IDC erst bei 15 Euro je Megawatt und Stunde. Die Schriftfassung folgt
-  der Tabelle und nennt den 26.08.2025. **Die Meldung an den Analyse-Chat
-  steht aus.**
-- **Einheit uneinheitlich.** Das Makro `\TsdEurMWa` aus `extras/macros.tex`
-  wird in Kapitel 4 genau einmal verwendet, neunmal steht *Tausend Euro je
-  Megawatt und Jahr* ausgeschrieben. Vor dem Durchgang durch 4.2 zu
-  vereinheitlichen, weil 4.2 die meisten dieser Stellen trägt.
+  der Tabelle und nennt den 26.08.2025. **Am 23.09.2026 in Abschnitt 4.1 des
+  Auftrags gemeldet**, die Antwort steht aus.
+- ~~Einheit uneinheitlich.~~ **Erledigt am 23.09.2026**, das Makro steht an
+  allen acht Stellen, ausgeschrieben allein in der Kapiteleinleitung.
+- ~~Füllgrad über die Tagesstunden.~~ **Geliefert und eingebaut am 23.09.2026.**
+  Abschnitt 4.2 trägt dafür einen dritten Absatz und Abbildung 4.2. Der
+  Befund ist stärker als erwartet: die erste Iteration lässt gerade die
+  **teuren** Stunden offen, der Füllgrad einer Tagesstunde fällt mit ihrem
+  Preis ($r=-0{,}853$ entladend, $-0{,}608$ ladend). Die alten Füllgrade von
+  84,5 und 89,0 sowie 99,04 und 99,78 Prozent sind **überholt**; gültig sind
+  85,94 und 89,60 für die erste und zweimal 99,98 Prozent für die zweite
+  Iteration.
+- **Laufzahlen 84 bis 167 unter Vorbehalt.** Abschnitt 4.2 nennt sie als
+  Rechenaufwand der ersten Iteration. Belegt sind sie in 3.2.4 an den
+  ausgewerteten Tagen, nicht an den Jahresläufen. Die Rückfrage steht als
+  Abschnitt 3.2 im Auftrag und ist mit der Lieferung vom 23.09.2026 **nicht**
+  beantwortet worden; fällt die Antwort anders aus, ist der Satz zu
+  berichtigen.
+- **Markterlös der offenen Stunden nicht verfügbar.** Der Anteil der
+  offenen Tagesstunden an den 88,6\,Tsd.\,€/(MW·a) lässt sich aus dem
+  vorhandenen Lauf nicht ziehen, weil die Erlösdatei je Tag und nicht je
+  Stunde geführt ist. Dafür müsste der Iterationsvergleich neu laufen.
 - **4.6.3 und 4.6.4 sind leer** und warten auf `sensi8_spanne_und_niveau` aus
   dem Analyse-Repository. Nicht mit den Einzeltagsfassungen füllen.
 - **Für 4.6.4 vorgemerkt (G3), Entscheidung des Verfassers vom 22.09.2026:**
@@ -423,6 +456,18 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 - Auftraggeber des Weber-Gutachtens in den Quellen widersprüchlich (EnBW gegen
   BDEW), bib folgt dem Deckblatt.
 - Consentec-Befund zu KuPilot vorgemerkt, nicht verwendet.
+- **Aus 4.2, Vorgabe des Verfassers vom 23.09.2026:** die erste Iteration ist
+  ineffizient, weil sie allen Stunden eines Tages denselben Preis vorgibt. An
+  dieser Stelle ist das Zeitscheibenproblem noch einmal aufzunehmen.
+- **Aus 4.2, Vorgabe des Verfassers vom 23.09.2026:** die kurative
+  Reservierung gibt dem Speicher eine Möglichkeit, seinen Erlös allein durch
+  eine klügere Verteilung auf die Märkte zu steigern, sofern er die richtigen
+  Preise setzt.
+- **Aus 4.3, Vorgabe des Verfassers vom 23.09.2026:** der ermittelte Preis
+  ist mit Unsicherheit behaftet, und der Betreiber würde auf ihn einen
+  Aufschlag für den eigenen Aufwand des Anbietens nehmen. Das fügt sich an
+  die Entscheidung, dass der Preis nur den opportunitätskostenbasierten Teil
+  des Gebots bildet.
 - **Aus Kapitel 4:** der Preis ist ein Preis gegen die Regelleistung; die
   Granularität des Produkts bestimmt die Zahlung; günstig genau dann, wenn viel
   gebraucht wird (Winter); die teuren Stunden liegen im Abendmaximum.

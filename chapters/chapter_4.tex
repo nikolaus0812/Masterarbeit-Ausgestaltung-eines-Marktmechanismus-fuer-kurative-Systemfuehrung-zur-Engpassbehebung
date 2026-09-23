@@ -206,27 +206,96 @@ Der kurative Reservierungspreis wird damit nicht von einem einzelnen Markt besti
 % Zahl am Balkenende ist der Gesamterloes nach Degradation, die
 % gestrichelte Linie markiert den Referenzwert.
 
-Woher der Erlös ohne kurative Bindung stammt, entscheidet darüber, was die Reservierung kostet.
-Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös nach Märkten auf: die \ac{aFRR}-Leistung trägt 235,1, der \ac{IDC} 50,2, die \ac{aFRR}-Arbeit 40,1, der \ac{DA} 26,1 und die \ac{FCR} 7,1 Tausend Euro je Megawatt und Jahr.
-Von dem Bruttoerlös von 358,6 Tausend Euro je Megawatt und Jahr zieht das Optimierungsmodell 18,0 für die Degradation ab, sodass der Referenzerlös 340,6 Tausend Euro je Megawatt und Jahr beträgt.
-Leistung und Arbeit der \ac{aFRR} tragen zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
+% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: Abschnitt 4.2 leitet
+% von der tageweisen Betrachtung des Abschnitts 4.1 in die Jahresbetrachtung
+% ein. Der Absatz traegt deshalb zuerst den Uebergang und danach die
+% Aufteilung des Referenzerloeses. Die Einheit steht seit demselben Tag
+% durchgehend als Makro \TsdEurMWa, ausgeschrieben allein bei ihrer
+% Einfuehrung in der Kapiteleinleitung. Zurueckgenommene Fassung:
+%Woher der Erlös ohne kurative Bindung stammt, entscheidet darüber, was die Reservierung kostet.
+%Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös nach Märkten auf: die \ac{aFRR}-Leistung trägt 235,1, der \ac{IDC} 50,2, die \ac{aFRR}-Arbeit 40,1, der \ac{DA} 26,1 und die \ac{FCR} 7,1 Tausend Euro je Megawatt und Jahr.
+%Von dem Bruttoerlös von 358,6 Tausend Euro je Megawatt und Jahr zieht das Optimierungsmodell 18,0 für die Degradation ab, sodass der Referenzerlös 340,6 Tausend Euro je Megawatt und Jahr beträgt.
+%Leistung und Arbeit der \ac{aFRR} tragen zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
+Die fünf Tage zeigen die möglichen Reihenfolgen der Verdrängung und nicht das Gewicht der Märkte über das ganze Jahr.
+Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös des Jahres 2025 nach Märkten auf.
+Die \ac{aFRR}-Leistung trägt 235,1\,\TsdEurMWa{} und damit 65,6 Prozent des Bruttoerlöses von 358,6\,\TsdEurMWa{}.
+Der \ac{IDC} ist mit 50,2\,\TsdEurMWa{} und 14,0 Prozent auch über das Jahr der zweitgrößte Posten.
+Die \ac{aFRR}-Arbeit mit 40,1 und der \ac{DA} mit 26,1\,\TsdEurMWa{} ergänzen die beiden großen Posten, denn die \ac{aFRR}-Arbeit fällt nur bei vorgehaltener \ac{aFRR}-Leistung an.
+Die \ac{FCR} trägt mit 7,1\,\TsdEurMWa{} und 2,0 Prozent kaum zum Erlös bei.
+Von dem Bruttoerlös zieht das Optimierungsmodell 18,0\,\TsdEurMWa{} für die Degradation ab, sodass der Referenzerlös 340,6\,\TsdEurMWa{} beträgt.
+Leistung und Arbeit der \ac{aFRR} ergeben zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/erloesvergleich_vollverdraengung_2025.pdf}
-    \caption{Erlös der Bezugsanlage im Jahr 2025 ohne kurative Bindung und unter den Preisvektoren beider Iterationen, in Tausend Euro je Megawatt und Jahr, netto nach Degradation; der Abzug für die Degradation steht links der Nulllinie, die gestrichelte Linie markiert den Referenzerlös.}
+    \caption{Erlös der Bezugsanlage im Jahr 2025 ohne kurative Bindung und unter den Preisen beider Iterationen, in \TsdEurMWa{}, netto nach Degradation; der Abzug für die Degradation steht links der Nulllinie, die gestrichelte Linie markiert den Referenzerlös.}
     \label{fig:erloesvergleich}
 \end{figure}
 
-Unter dem Preisvektor der ersten Iteration zahlt der \ac{ÜNB} 409,8 Tausend Euro je Megawatt und Jahr für die Vorhaltung, und die Bezugsanlage verdient daneben noch 88,6 an den übrigen Märkten.
-Der Preisvektor der ersten Iteration bindet die Leistung damit nicht vollständig, denn ein einheitlicher Preis je Tag lässt die teuren Stunden des Tages frei.
-Die Summe aus Zahlung und Markterlös liegt mit 498,4 Tausend Euro je Megawatt und Jahr um 46,3 Prozent über dem Referenzerlös.
-Unter dem Preisvektor der zweiten Iteration zahlt der \ac{ÜNB} 420,0 Tausend Euro je Megawatt und Jahr, und die Bezugsanlage verdient an den übrigen Märkten nichts mehr.
+% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Absatz stellt die
+% erste Iteration als das teurere Verfahren dar, nennt ihren Rechenaufwand
+% und schliesst mit der vollstaendigen Bindung. Das Wort Preisvektor ist
+% auf Vorgabe des Verfassers vom 23.09.2026 gestrichen und kommt in der
+% Arbeit nicht mehr vor. Der Anteil von 97,6 Prozent ist eine eigene
+% Ableitung aus 409,8 zu 420,0. Zurueckgenommene Fassung:
+%Unter dem Preisvektor der ersten Iteration zahlt der \ac{ÜNB} 409,8 Tausend Euro je Megawatt und Jahr für die Vorhaltung, und die Bezugsanlage verdient daneben noch 88,6 an den übrigen Märkten.
+%Der Preisvektor der ersten Iteration bindet die Leistung damit nicht vollständig, denn ein einheitlicher Preis je Tag lässt die teuren Stunden des Tages frei.
+%Die Summe aus Zahlung und Markterlös liegt mit 498,4 Tausend Euro je Megawatt und Jahr um 46,3 Prozent über dem Referenzerlös.
+%Unter dem Preisvektor der zweiten Iteration zahlt der \ac{ÜNB} 420,0 Tausend Euro je Megawatt und Jahr, und die Bezugsanlage verdient an den übrigen Märkten nichts mehr.
+%Die zweite Iteration verdrängt die übrige Vermarktung also vollständig und kostet dabei 23,3 Prozent mehr als der Referenzerlös, während die unvollständige Bindung der ersten Iteration mit 46,3 Prozent teurer ausfällt.
+%Aus diesem Grund wird in diesem Kapitel der Preisvektor der zweiten Iteration ausgewiesen.
+Die erste Iteration der Preissuche bindet die Leistung nicht vollständig, und der \ac{ÜNB} zahlt dafür dennoch beinahe den vollen Preis.
+Unter den Preisen der ersten Iteration zahlt der \ac{ÜNB} 409,8\,\TsdEurMWa{} für die Vorhaltung und damit 97,6 Prozent der Zahlung unter vollständiger Bindung.
+Die Bezugsanlage verdient daneben noch 88,6\,\TsdEurMWa{} an den übrigen Märkten, sodass ihr Gesamterlös mit 498,4\,\TsdEurMWa{} um 46,3 Prozent über dem Referenzerlös liegt.
+Ursache ist der für den ganzen Tag einheitliche vorgegebene Reservierungspreis, der die teuren Stunden des Tages frei lässt.
+Günstig ist die erste Iteration allein im Rechenaufwand, denn sie kommt mit 84 bis 167 Läufen des Optimierungsmodells je Tag aus.
+Die zweite Iteration verlangt dafür einige hundert Läufe je Tag und hebt die Zahlung des \ac{ÜNB} um 10,2 auf 420,0\,\TsdEurMWa{}.
+Die übrige Vermarktung entfällt dabei ganz, sodass der Gesamterlös der Bezugsanlage auf 420,0\,\TsdEurMWa{} und damit auf 23,3 Prozent über dem Referenzerlös sinkt.
 
-Die zweite Iteration verdrängt die übrige Vermarktung also vollständig und kostet dabei 23,3 Prozent mehr als der Referenzerlös, während die unvollständige Bindung der ersten Iteration mit 46,3 Prozent teurer ausfällt.
-Aus diesem Grund wird in diesem Kapitel der Preisvektor der zweiten Iteration ausgewiesen.
-Der verbliebene Markterlös der ersten Iteration verteilt sich auf die \ac{aFRR}-Leistung mit 60,0, den \ac{IDC} mit 16,4, die \ac{aFRR}-Arbeit mit 8,7 und den \ac{DA} mit 7,3 Tausend Euro je Megawatt und Jahr.
-Die \ac{aFRR}-Leistung bleibt damit auch unter unvollständiger Bindung der größte Posten, sodass die Reservierung alle Märkte anteilig trifft und nicht zuerst die kleinen.
+% ANGEFUEGT am 23.09.2026, Lieferung des Analyse-Repositorys vom selben Tag
+% nach AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md. Zahlen aus ERGEBNISSE Abschnitt
+% 7.9. Der Fuellgrad bezieht die reservierte Leistung auf die in der
+% jeweiligen Stunde reservierbare und nicht auf die Nennleistung, weil die
+% Ladereservierung unterhalb der Gewinnschwelle gar nicht zulaessig ist.
+% Die Anteile 25,9 und 23,1 Prozent stehen statt der absoluten Stundenzahlen
+% im Text, weil der Fuellgrad ueber 8760 und die Preisverteilung in 4.3 ueber
+% 8758 Stunden laeuft; die Abweichung sind die beiden Stunden der
+% Zeitumstellung. Der Schlusssatz zur Wahl der zweiten Iteration stand bis
+% zum 23.09.2026 am Ende des vorigen Absatzes.
+Welche Stunden die erste Iteration offen lässt, zeigt der Füllgrad je Tagesstunde.
+Abbildung~\ref{fig:fuellgrad_tagesstunden} trägt den mittleren Füllgrad unter den Preisen der ersten Iteration über die 24 Stunden des Tages auf.
+Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration in beiden Richtungen 99,98 Prozent erreicht.
+Nicht voll reserviert bleiben unter der ersten Iteration 25,9 Prozent der Stunden in der Entlade- und 23,1 Prozent in der Laderichtung.
+Diese Stunden verteilen sich nicht gleichmäßig über den Tag, denn der Füllgrad einer Tagesstunde fällt mit ihrem Preis.
+Der Korrelationskoeffizient beträgt $-0{,}853$ in der Entlade- und $-0{,}608$ in der Laderichtung.
+Am leersten steht die Entladereservierung um 8, 18 und 19 Uhr mit 74,9 bis 75,9 Prozent und die Ladereservierung von 12 bis 14 Uhr mit rund 81 Prozent.
+Die erste Iteration lässt damit gerade die teuren Stunden frei, und in diesem Kapitel stehen deshalb die Preise der zweiten Iteration.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_4/fuellgrad_tagesstunden_2025.pdf}
+    \caption{Mittlerer Füllgrad der kurativen Reservierung unter den Preisen der ersten Iteration über die 24 Tagesstunden des Jahres 2025 je Richtung. Der Füllgrad bezieht die reservierte Leistung auf die in der jeweiligen Stunde reservierbare Leistung. Die Linie bei 100 Prozent ist die vollständige Reservierung, die die zweite Iteration im Mittel mit 99,98 Prozent erreicht. Die Ordinate beginnt bei 50 Prozent.}
+    \label{fig:fuellgrad_tagesstunden}
+\end{figure}
+
+Der verbliebene Markterlös der ersten Iteration verteilt sich auf die \ac{aFRR}-Leistung mit 60,0, den \ac{IDC} mit 16,4, die \ac{aFRR}-Arbeit mit 8,7 und den \ac{DA} mit 7,3\,\TsdEurMWa{}.
+Von dieser Summe zieht das Optimierungsmodell 3,8\,\TsdEurMWa{} für die Degradation ab.
+Die \ac{aFRR}-Leistung bleibt damit auch unter unvollständiger Bindung der größte Posten.
+Die unvollständige Reservierung trifft alle Märkte anteilig und nicht zuerst die kleinen.
+
+% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers vom 22.09.2026: drei bis
+% fuenf Saetze Schlussfolgerungen je Abschnitt mit gleichbleibender
+% Eroeffnungsformel, kein erstens zweitens drittens, kein Vorverweis auf
+% Kapitel 5.
+Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
+Der kurative Reservierungspreis richtet sich über das Jahr vor allem gegen die \ac{aFRR}-Leistung, denn sie trägt mit 235,1\,\TsdEurMWa{} zwei Drittel des Bruttoerlöses.
+% GEAENDERT am 23.09.2026 nach der Lieferung zum Fuellgrad. Der Satz zur
+% Vollstaendigkeit der Bindung ist durch den schaerferen Befund ersetzt,
+% dass gerade die teuren Stunden offen bleiben. Zurueckgenommene Fassung:
+%Die Vollständigkeit der Bindung entscheidet weniger über die Zahlung des \ac{ÜNB} als darüber, was er für diese Zahlung erhält.
+Die unvollständige Bindung der ersten Iteration lässt der Bezugsanlage 88,6\,\TsdEurMWa{} an den übrigen Märkten und kostet den \ac{ÜNB} dabei nur 10,2\,\TsdEurMWa{} weniger.
+Offen bleiben dabei gerade die teuren Stunden, sodass der \ac{ÜNB} beinahe den vollen Preis zahlt und die wertvollsten Stunden nicht bindet.
+Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös.
 
 % ---------------------------------------------------------------
 \section{Verteilung der Verdrängungspreise}
@@ -235,10 +304,17 @@ Die \ac{aFRR}-Leistung bleibt damit auch unter unvollständiger Bindung der grö
 % Abbildungshinweis: Whisker laeuft seit dem 22.09.2026 von Minimum bis
 % Maximum, p5 und p95 stehen als feine Marken darauf.
 
-Der kurative Reservierungspreis ist keine einzelne Zahl, sondern eine Verteilung über die Stunden des Jahres.
-Abbildung~\ref{fig:verteilung_reservierungspreis} zeigt diese Verteilung je Richtung.
+% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: der Absatz sagt zuerst,
+% wie der Preis je Zeitscheibe aus den Opportunitaeten dieser Stunde
+% entsteht, und nennt danach die Kennzahlen. Zurueckgenommene Fassung:
+%Der kurative Reservierungspreis ist keine einzelne Zahl, sondern eine Verteilung über die Stunden des Jahres.
+Der kurative Reservierungspreis entsteht für jede Stunde des Jahres neu, denn er misst die Opportunität genau dieser Stunde.
+Für jede Richtung ergeben sich daraus 8758 Preise, deren Höhe sich von Stunde zu Stunde unterscheidet.
+Abbildung~\ref{fig:verteilung_reservierungspreis} zeigt die Verteilung dieser Preise je Richtung.
 Die Entladereservierung kostet im Median 12,22\,\EurMWh{}, bei einem unteren Quartil von 4,33 und einem oberen von 27,47\,\EurMWh{}.
-Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach oben aber weiter, denn ihr oberes Quartil beträgt 30,64 und ihr 95-Prozent-Quantil 90,40 gegenüber 76,01\,\EurMWh{} in der Entladerichtung.
+Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach oben aber weiter, denn ihr oberes Quartil beträgt 30,64\,\EurMWh{}.
+Das 95-Prozent-Quantil beträgt 90,40\,\EurMWh{} in der Lade- und 76,01\,\EurMWh{} in der Entladerichtung.
+Eine einzelne Zahl gibt den kurativen Reservierungspreis damit nicht wieder.
 
 \begin{figure}[H]
     \centering
@@ -247,15 +323,39 @@ Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach 
     \label{fig:verteilung_reservierungspreis}
 \end{figure}
 
+% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Absatz sagt jetzt,
+% welches Mass die Arbeit wofuer verwendet, statt den Leser vor die Wahl zu
+% stellen. Zurueckgenommene Fassung des Schlusssatzes:
+%Wer den kurativen Reservierungspreis in einer Zahl angibt, muss deshalb sagen, welche Zahl gemeint ist: für die Kosten des \ac{ÜNB} ist das arithmetische Mittel die richtige Größe, weil es sich mit der beschafften Menge multipliziert, und für den Preis einer beliebigen Stunde der Median.
 Die Verteilung ist in beiden Richtungen rechtsschief, denn das arithmetische Mittel übersteigt den Median um das 1,93-Fache in der Entlade- und um das 2,47-Fache in der Laderichtung.
 Wenige Stunden mit knapper Leistung tragen den Durchschnitt, während die typische Stunde günstig ist.
 Zwischen dem 95-Prozent-Quantil und dem Maximum liegt nochmals der Faktor 13,3 beziehungsweise 5,6, sodass die Maxima von 1008 und 510\,\EurMWh{} einzelne Stunden und keinen Preisbereich beschreiben.
-Wer den kurativen Reservierungspreis in einer Zahl angibt, muss deshalb sagen, welche Zahl gemeint ist: für die Kosten des \ac{ÜNB} ist das arithmetische Mittel die richtige Größe, weil es sich mit der beschafften Menge multipliziert, und für den Preis einer beliebigen Stunde der Median.
+Die folgenden Abschnitte weisen deshalb beide Maße aus.
+Das arithmetische Mittel schätzt die Kosten des \ac{ÜNB} ab, denn es bezieht die teuren Stunden mit ihrem Gewicht ein und multipliziert sich mit der beschafften Menge.
+Der Median lässt diese Extreme außer Betracht und zeigt, wie viele Stunden eines Tages in welche Preisspanne fallen.
 
-Das untere Ende der Verteilung beschreibt das Optimierungsmodell und nicht den Markt.
-In der Entladerichtung fallen Minimum und 5-Prozent-Quantil auf 0,00\,\EurMWh{} zusammen, sodass die Entladereservierung in mindestens jeder zwanzigsten Stunde nichts kostet.
-In der Laderichtung liegen Minimum und 5-Prozent-Quantil bei 1,00 beziehungsweise 1,01\,\EurMWh{} und damit auf der Gewinnschwelle, unterhalb derer das Optimierungsmodell eine Ladereservierung nicht zulässt.
-Der untere Whisker der Abbildung trägt deshalb keine Aussage über den Markt, der obere dagegen sehr wohl.
+% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: das 5-Prozent-Quantil
+% traegt nichts, das obere Quartil dagegen sehr wohl, denn dort liegen drei
+% Viertel der Stunden. Die Nullstunden bleiben als Befund erhalten, nicht
+% mehr als Eigenschaft des Whiskers. Zurueckgenommene Fassung:
+%Das untere Ende der Verteilung beschreibt das Optimierungsmodell und nicht den Markt.
+%In der Entladerichtung fallen Minimum und 5-Prozent-Quantil auf 0,00\,\EurMWh{} zusammen, sodass die Entladereservierung in mindestens jeder zwanzigsten Stunde nichts kostet.
+%In der Laderichtung liegen Minimum und 5-Prozent-Quantil bei 1,00 beziehungsweise 1,01\,\EurMWh{} und damit auf der Gewinnschwelle, unterhalb derer das Optimierungsmodell eine Ladereservierung nicht zulässt.
+%Der untere Whisker der Abbildung trägt deshalb keine Aussage über den Markt, der obere dagegen sehr wohl.
+Der größte Teil der Stunden liegt weit unter diesen Spitzen.
+Drei Viertel der Stunden kosten in der Entladerichtung höchstens 27,47 und in der Laderichtung höchstens 30,64\,\EurMWh{}.
+Das arithmetische Mittel von 23,64 und 24,33\,\EurMWh{} liegt damit in beiden Richtungen noch unterhalb des oberen Quartils.
+Am unteren Ende steht ein Viertel der Stunden bei höchstens 4,33 beziehungsweise 2,34\,\EurMWh{}.
+In einem Teil der Stunden kostet die Entladereservierung nichts, denn die Bezugsanlage hat für diese Stunden keine Verwendung an den übrigen Märkten.
+In der Laderichtung liegt das Minimum bei 1,00\,\EurMWh{}, weil das Optimierungsmodell eine Ladereservierung unterhalb dieser Gewinnschwelle nicht zulässt.
+
+% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: als Schlussfolgerung
+% traegt die Schieflage der Verteilung.
+Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
+Die Verteilung des kurativen Reservierungspreises ist schief, denn einzelne Stunden treiben ihn weit über das Niveau der übrigen.
+Der Abstand zwischen Median und arithmetischem Mittel misst diese Schieflage, nämlich das 1,93-Fache in der Entlade- und das 2,47-Fache in der Laderichtung.
+Drei Viertel der Stunden bleiben dagegen unter 27,47 beziehungsweise 30,64\,\EurMWh{}, sodass der größte Teil der Vorhaltung unterhalb dieser Werte zu beschaffen ist.
+In einem Teil der Stunden bietet die Bezugsanlage die Entladereservierung zum Preis null an, weil sie für diese Stunden keine andere Verwendung hat.
 
 % ---------------------------------------------------------------
 \section{Zeitliches Muster}

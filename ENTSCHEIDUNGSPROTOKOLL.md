@@ -12761,6 +12761,162 @@ aussagekraeftiger als die Leistungs-Tagesmittel. Diese Groesse steht nicht
 in ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md und waere beim Analyse-Repository
 anzufordern. Bis dahin stehen die Leistungswerte im Text.
 
+### 23.09.2026, Abschnitt 4.2 auf die Jahresbetrachtung umgestellt, 4.3 neu gefasst
+
+**Auftrag des Verfassers.** Abschnitt 4.2 soll von der tageweisen
+Betrachtung des Abschnitts 4.1 in die Jahresbetrachtung einleiten, denn
+nachdem die fuenf Tage sich als verschieden erwiesen haben, tragen erst die
+Jahreszahlen eine allgemeine Aussage ueber die Maerkte. Zuerst die
+Marktverteilung ohne kurative Bindung, danach die Preissuche.
+
+**Absatz 1 von 4.2, neu.** Uebergang von den fuenf Tagen auf das Jahr, dann
+die Aufteilung des Referenzerloeses, naemlich aFRR-Leistung 235,1 mit
+65,6 Prozent, IDC 50,2 mit 14,0 Prozent, aFRR-Arbeit 40,1, Day-Ahead 26,1 und
+FCR 7,1 Tsd. Euro je Megawatt und Jahr. Die aFRR-Arbeit ist als Posten
+gekennzeichnet, der nur bei vorgehaltener aFRR-Leistung anfaellt. Alle Zahlen
+aus ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 1 und 7.8.
+
+**Absatz 2 von 4.2, neu.** Die erste Iteration bindet die Leistung nicht
+vollstaendig, der UENB zahlt dafuer aber 409,8 gegen 420,0 Tsd. Euro je
+Megawatt und Jahr. **Eigenstaendige Ableitung:** der Anteil von 97,6 Prozent
+ist als Quotient 409,8 zu 420,0 gerechnet und steht so in keiner
+Ergebnisdatei. Der Rechenaufwand mit 84 bis 167 Laeufen je Tag stammt aus
+Abschnitt 3.2.4 der Arbeit und ist dort an den ausgewerteten Tagen belegt;
+ob die Spanne auch fuer die Jahreslaeufe gilt, ist beim Analyse-Repository
+angefragt und bis zur Antwort ein offener Punkt.
+
+**Das Wort Preisvektor ist gestrichen**, Vorgabe des Verfassers vom
+23.09.2026. In Kapitel 4 steht stattdessen "die Preise der ersten
+beziehungsweise zweiten Iteration", auch in der Bildunterschrift zu
+fig:erloesvergleich. In chapters/chapter_5.tex steht das Wort noch einmal,
+die Datei ist aber auskommentiert und wird beim Schreiben von Kapitel 5
+nachgezogen. Zurueckgenommene Formulierungen, nicht wieder aufzunehmen:
+"Unter dem Preisvektor der ersten Iteration zahlt der UENB 409,8 Tausend
+Euro je Megawatt und Jahr fuer die Vorhaltung" und "Aus diesem Grund wird
+in diesem Kapitel der Preisvektor der zweiten Iteration ausgewiesen".
+
+**Einheit vereinheitlicht.** Das Makro \TsdEurMWa stand einmal, die
+ausgeschriebene Form neunmal. Ausgeschrieben steht die Einheit jetzt allein
+bei ihrer Einfuehrung in der Kapiteleinleitung, an allen uebrigen acht
+Stellen steht das Makro. Damit ist der offene Punkt aus der Uebergabe vom
+22.09.2026 erledigt.
+
+**Schlussfolgerungen fuer 4.2 angefuegt**, nach der Vorgabe vom 22.09.2026
+mit der gleichbleibenden Eroeffnungsformel. Kern ist, dass die
+Vollstaendigkeit der Bindung weniger ueber die Zahlung des UENB entscheidet
+als darueber, was er fuer die Zahlung erhaelt.
+
+**Berichtigung einer Angabe des Verfassers.** Seine Vorgabe nannte "96 mal
+365" Preise je Richtung. Die kurative Reservierung wird je Stunde bestimmt
+und nicht je Viertelstunde, denn Zeitscheibe und Bindungsdauer betragen im
+Basisfall eine Stunde. Es sind daher 8758 Preise je Richtung, wie die
+Bildunterschrift zu fig:verteilung_reservierungspreis und
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7.1 uebereinstimmend angeben.
+Der Text nennt 8758.
+
+**Abschnitt 4.3 neu gefasst.** Absatz 1 sagt jetzt zuerst, dass der Preis
+fuer jede Stunde neu aus der Opportunitaet dieser Stunde entsteht, und nennt
+danach Median, Quartile und das 95-Prozent-Quantil. Absatz 2 stellt den
+Leser nicht mehr vor die Wahl des Masses, sondern sagt, welches Mass die
+Arbeit wofuer verwendet. Zurueckgenommene Formulierung, nicht wieder
+aufzunehmen: "Wer den kurativen Reservierungspreis in einer Zahl angibt,
+muss deshalb sagen, welche Zahl gemeint ist". An ihre Stelle tritt, dass
+die folgenden Abschnitte beide Masse ausweisen, das arithmetische Mittel
+zur Abschaetzung der Kosten des UENB und der Median fuer die Frage, wie
+viele Stunden eines Tages in welche Preisspanne fallen.
+
+**Das 5-Prozent-Quantil ist aus dem Text genommen**, das obere Quartil
+aufgenommen. Vorgabe des Verfassers: unterhalb des 5-Prozent-Quantils
+traegt die Verteilung nichts, waehrend das obere Quartil zeigt, dass drei
+Viertel der Stunden hoechstens 27,47 entladend und 30,64 Euro je Megawatt
+und Stunde ladend kosten. Neu ist ausserdem der Befund, dass das
+arithmetische Mittel von 23,64 und 24,33 in beiden Richtungen noch unter dem
+oberen Quartil liegt. Zurueckgenommen ist der Absatz "Das untere Ende der
+Verteilung beschreibt das Optimierungsmodell und nicht den Markt" samt
+seinem Schlusssatz zum unteren Whisker.
+
+**Auslegung des Verfassers, uebernommen.** Die Stunden mit einem
+Entladereservierungspreis von null sind als Stunden gedeutet, in denen die
+Bezugsanlage keine Verwendung an den uebrigen Maerkten hat. Die
+Ergebnisdatei stellt in Abschnitt 4.1 nur fest, dass es solche Stunden gibt.
+Die wirtschaftliche Deutung stammt vom Verfasser und ist als Befund in 4.3
+und in dessen Schlussfolgerungen aufgenommen. Die Gewinnschwelle von 1,00
+Euro je Megawatt und Stunde in der Laderichtung bleibt als Eigenschaft des
+Optimierungsmodells benannt.
+
+**Schlussfolgerungen fuer 4.3.** Vorgabe des Verfassers ist die Schieflage
+der Verteilung, gemessen am Abstand zwischen Median und arithmetischem
+Mittel, dazu das obere Quartil und die Nullstunden.
+
+**Zwei Vormerkungen fuer Kapitel 5**, beide vom Verfasser am 23.09.2026:
+erstens das Zeitscheibenproblem, auf das die Ineffizienz der ersten
+Iteration zurueckfuehrt; zweitens, dass der Speicher durch die kurative
+Reservierung allein durch eine kluegere Verteilung an den Maerkten seinen
+Erloes steigern kann, sofern er die richtigen Preise setzt. Dazu tritt
+drittens, dass der ermittelte Preis den opportunitaetskostenbasierten Teil
+des Gebots bildet und der Betreiber auf ihn einen Aufschlag fuer die
+Unsicherheit und fuer den eigenen Aufwand des Anbietens nehmen wuerde.
+
+**Auftrag an das Analyse-Repository angelegt**, naemlich
+`AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` im Wurzelverzeichnis. Verlangt ist eine
+Abbildung des Fuellgrads ueber die 24 Tagesstunden je Richtung und
+Iteration, damit 4.2 sagen kann, welche Stunden die erste Iteration offen
+laesst. Dazu zwei Rueckfragen zu vorhandenen Zahlen und die beiden
+Nebenpunkte, die seit dem 22.09.2026 offen waren, naemlich der Widerspruch
+zwischen Abschnitt 2.1 und 2.3 der Ergebnisdatei und die gehandelte Energie
+je Markt und Tag.
+### 23.09.2026, Fuellgrad je Tagesstunde in 4.2 aufgenommen
+
+**Lieferung des Analyse-Repositorys** vom selben Tag auf
+`AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md`. Die Abbildung
+`fuellgrad_tagesstunden_2025.pdf` liegt in `figures/chapter_4/`, die Zahlen
+stehen in ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7.9.
+
+**Tragender Befund, neu.** Die erste Iteration laesst nicht beliebige
+Stunden offen, sondern gerade die teuren. Der Fuellgrad einer Tagesstunde
+faellt mit ihrem Preis, mit einem Korrelationskoeffizienten von -0,853 in
+der Entlade- und -0,608 in der Laderichtung. Am leersten steht die
+Entladereservierung um 8, 18 und 19 Uhr mit 74,9 bis 75,9 Prozent, die
+Ladereservierung von 12 bis 14 Uhr mit rund 81 Prozent. Der Befund traegt
+die Aussage des vorigen Absatzes, wonach der einheitliche Tagespreis die
+teuren Stunden frei laesst, und ist deshalb hinter ihn gestellt.
+
+**Rueckfrage 3.1 des Auftrags ist beantwortet.** Die Fuellgrade von 84,5
+und 89,0 Prozent sind ueberholt, denn sie stammen aus dem Lauf ueber 363
+Tage. Gueltig sind 85,94 Prozent entladend und 89,60 Prozent ladend fuer
+die erste Iteration sowie zweimal 99,98 Prozent fuer die zweite. Die
+frueher genannten 99,04 und 99,78 Prozent sind ebenfalls ueberholt und
+nicht wieder aufzunehmen.
+
+**Zwei Bezugsgroessen auseinandergehalten.** Der Fuellgrad bezieht die
+reservierte Leistung auf die in der jeweiligen Stunde reservierbare und
+nicht auf die Nennleistung, weil die Ladereservierung unterhalb der
+Gewinnschwelle gar nicht zulaessig ist. Die Bildunterschrift sagt das.
+
+**Anteile statt absoluter Stundenzahlen.** Die Ergebnisdatei nennt 2272
+von 8760 Stunden entladend und 2024 ladend. Im Text stehen 25,9 und
+23,1 Prozent, weil der Fuellgrad ueber 8760 Stunden laeuft, die
+Preisverteilung in 4.3 dagegen ueber 8758. Die Abweichung sind die beiden
+Stunden der Zeitumstellung. Mit den absoluten Zahlen stuenden in zwei
+aufeinanderfolgenden Abschnitten zwei verschiedene Jahreslaengen.
+
+**Die abgeschnittene Ordinate ist benannt.** Das Analyse-Repository weist
+darauf hin, dass die Achse bei 50 Prozent beginnt und ein Abstand dadurch
+doppelt so gross erscheint wie auf einer vollen Achse. Die
+Bildunterschrift sagt es, und der Text stuetzt sich allein auf die Zahlen.
+
+**Zurueckgenommene Formulierung**, nicht wieder aufzunehmen: "Die
+Vollstaendigkeit der Bindung entscheidet weniger ueber die Zahlung des
+UENB als darueber, was er fuer diese Zahlung erhaelt." An ihre Stelle
+tritt in den Schlussfolgerungen der schaerfere Befund, dass gerade die
+teuren Stunden offen bleiben.
+
+**Zwei Punkte des Auftrags sind offen geblieben**, naemlich die Rueckfrage
+zu den Laufzahlen 84 bis 167 fuer die Jahreslaeufe und die beiden
+Nebenpunkte, also der Widerspruch zwischen Abschnitt 2.1 und 2.3 der
+Ergebnisdatei und die gehandelte Energie je Markt und Tag. Der Markterloes
+der offenen Stunden laesst sich aus dem vorhandenen Lauf nicht ziehen, weil
+die Erloesdatei je Tag und nicht je Stunde gefuehrt ist.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
