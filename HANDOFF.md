@@ -77,7 +77,9 @@ Schriftfassung nachgerechnet. Quelle ist
 Abschnitt 4 der Anweisung. **Rückfragen dorthin, nicht nachrechnen.**
 
 Zehn Abbildungen liegen in `figures/chapter_4/`, die zehnte seit dem
-23.09.2026. Stand am 22.09.2026 abends
+23.09.2026. Die drei Sensitivitätsabbildungen sind am 23.09.2026 neu
+geholt worden; sie tragen dieselben Zahlen und allein eine klarere
+Beschriftung mit den Maxima als Zahl am Whisker. Stand am 22.09.2026 abends
 geprüft: alle neun sind deckungsgleich mit dem Lieferordner. Das Zeitmuster
 zeigt die Summe als Hauptkurve, dazu Median und arithmetisches Mittel mit der
 grauen Fläche dazwischen.
@@ -98,7 +100,8 @@ gerne mit dir formulieren"*.
 | 4.1 Verlauf des Dispatch | **durch**, drei Umbauten |
 | 4.2 Preise beider Iterationen | **durch** am 23.09., drei Absätze, Füllgradabbildung eingebaut |
 | 4.3 Verteilung der Verdrängungspreise | **durch** am 23.09., drei Absätze und Schlussfolgerungen |
-| 4.4 bis 4.6.2 | geschrieben, noch nicht durchgegangen, **als nächstes 4.4** |
+| 4.4 Zeitliches Muster | **durch** am 23.09., sieben Absätze, Summe neu gefasst, Ursachenabsatz und Schlussfolgerungen neu |
+| 4.5 bis 4.6.2 | geschrieben, noch nicht durchgegangen, **als nächstes 4.5** |
 | 4.6.3, 4.6.4, 4.7 | leer, warten auf `sensi8` |
 
 **4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
@@ -134,9 +137,9 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
-| `AUFTRAG_MAXIMASTUNDEN.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Herkunft der Maxima in 4.3, dazu die Antwort auf Update 5. Nach Erledigung ins Archiv. |
+| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 an einen getrennten Chat mit Zugriff auf SMARD und die öffentlichen Quellen der Bundesnetzagentur. Warum verdoppelt sich der \ac{aFRR}-Leistungspreis im Herbst 2025, und welche Quelle trägt den Zusammenhang von Solareinspeisung und negativer Regelleistung. |
 
-### `archiv/`, sechzehn Dateien, nur zum Nachschlagen
+### `archiv/`, siebzehn Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
@@ -153,7 +156,8 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `RUECKMELDUNG_AN_ANALYSE.md` | Rückmeldung an das Analyse-Repository | abgesendet, beantwortet in `ANTWORT_AN_SCHRIFTFASSUNG.md` |
 | `AUFTRAG_ABBILDUNGSSTIL.md` | Auftrag zum Abbildungsstil vom 22.09. | mit Update 3 des Analyse-Repositorys erledigt |
 | `AUFTRAG_ANALYSETAGE.md` | Auftrag zu den Analysetagen vom 22.09. | mit Update 4 des Analyse-Repositorys erledigt |
-| `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` | Auftrag zum Füllgrad vom 23.09., vom Verfasser am selben Tag ins Archiv gelegt | Abschnitt 2 und Rückfrage 3.1 geliefert, Rückfrage 3.2 und die beiden Nebenpunkte laufen weiter, siehe Abschnitt 6 |
+| `AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md` | Auftrag zum Füllgrad vom 23.09. | vollständig erledigt, alle Rückfragen beantwortet |
+| `AUFTRAG_MAXIMASTUNDEN.md` | Auftrag zur Herkunft der Maxima vom 23.09. | erledigt, Befund in 4.3 eingearbeitet, gehandelte Energie geliefert |
 
 ### Im Analyse-Repository, nur lesend
 
@@ -201,6 +205,10 @@ Ausführlich im Protokoll. Kurz:
   **wird nicht halbiert**, weil die Reihe nicht symmetrisch ist. Näheres in 4.5
   und im Protokoll.
 - **Kapiteltitel `Ergebnisse`**, entschieden am 22.09.2026.
+- **Auffällige Perioden werden begründet, nicht nur beschrieben**, Vorgabe
+  des Verfassers vom 23.09.2026. Die Ursache ist aus den Daten zu belegen,
+  damit Kapitel 5 sie deuten kann. Was die Daten nicht hergeben, wird als
+  offen benannt und nicht vermutet.
 - **Eine Bildunterschrift hat zwei gesetzte Zeilen**, drei sind die oberste
   Grenze. Vorgabe des Verfassers vom 23.09.2026, an diesem Tag für alle 34
   Unterschriften der Arbeit umgesetzt. Gemessen wird am gebauten PDF über
@@ -342,12 +350,17 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   energie wäre noch interessanter und aussagekräftiger"*. Diese Größe steht
   **nicht** in `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md`. Erforderlich wäre ein
   Auftrag an das Analyse-Repository, die Energie je Markt, Tag und Preisstufe
-  auszuweisen. **Update 5 vom 23.09.2026: kein neuer Lauf nötig**, die Größe
-  steckt in den vorhandenen Zeitreihen. Das Analyse-Repository hat drei Wege
-  zur Wahl gestellt, und **Weg 1 ist gewählt**, nämlich getrennte Blöcke für
-  gehandelte Arbeit und vorgehaltene Leistung. Begründung in
-  `AUFTRAG_MAXIMASTUNDEN.md` Abschnitt 4. Bis zur Lieferung stehen die
-  MW-Werte im Text, mit dem erklärenden Satz zur Einheit.
+  auszuweisen. ~~Angefordert.~~ **Geliefert am 23.09.2026** nach Weg 1, also
+  in getrennten Blöcken für gehandelte Arbeit und vorgehaltene Leistung, für
+  alle fünf Tage und zehn Preisstufen, in `ERGEBNISSE…md` Abschnitt 2.4.
+  **Noch nicht in den Text übernommen.** Die Energie zeigt zweierlei, das die
+  Leistungsmittel verdecken: die kurative Vorhaltung bindet das Band überall
+  nahezu vollständig, auch am 15.05., wo die Leistung nur 89 Prozent
+  ausweist; und die gehandelte Arbeit fällt sehr ungleich, an drei Tagen auf
+  null bis 2 Prozent, am 26.08. nur auf 46 Prozent. **Zu entscheiden:** ob
+  4.1 und Anhang F auf Energie umgestellt werden oder ob die Energie neben
+  den MW-Werten tritt. Beide Stellen sind bereits durchgegangen, eine
+  Umstellung rührt sie erneut an.
 - **Widerspruch im Analyse-Repository noch nicht gemeldet.**
   `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 2.3 nennt den 11.02.2025 als
   Tag, an dem der Day-Ahead zuerst weicht. Abschnitt 2.1 derselben Datei zeigt
@@ -378,10 +391,22 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   Läufe der ersten Iteration liegen innerhalb der gemessenen 83 bis 194, und
   *einige hundert* trifft die zweite Iteration im Median. Allein das Maximum
   von 2284 Läufen am 15.01.2025 liegt außerhalb dieser Wendung.
-- **Woher die Maxima kommen, ist nicht geklärt.** Abschnitt 4.3 nennt 1008
-  und 510\,€/(MW·h) als Einzelwerte, ohne sie zurückzuführen. Beauftragt am
-  23.09.2026 in `AUFTRAG_MAXIMASTUNDEN.md`, nämlich welcher Markt in diesen
-  Stunden zuletzt weicht und woran die Höhe liegt.
+- ~~Woher die Maxima kommen.~~ **Geliefert und eingearbeitet am 23.09.2026**,
+  ohne neuen Lauf, aus `jahr_slots_2025.parquet`. Zahlen in `ERGEBNISSE…md`
+  Abschnitt 7.11, Text als eigener Absatz in 4.3. Der Befund ist stärker als
+  erwartet: **in der Spitze der Verteilung setzt nicht die \ac{aFRR} den
+  Preis.** Entladend hält der \ac{IDC} 70,2\,MW gegen 4,9 im Jahresmittel,
+  ladend tragen ein hoher \ac{aFRR}-Leistungspreis und negative Preise am
+  \ac{IDC}.
+- **Welcher Markt in den Maximastunden zuletzt weicht, bleibt offen.**
+  Geliefert ist, welcher Markt die Leistung im Referenzfall **hält**. Die
+  Frage nach dem Weichen verlangt ein Preisgitter je Stunde für die
+  betroffenen Tage. Der Text sagt deshalb *hält* und nicht *weicht*.
+- **Kopplung über das Ladezustandsband in der Laderichtung ist offen.**
+  7 der 20 teuersten Ladestunden liegen um mehr als die Hälfte über der
+  Opportunität der eigenen Stunde, bis zum Faktor 10,6. Der Text nennt das
+  als *mit einer Kopplung vereinbar*, nicht als belegt. Entscheiden ließe es
+  sich mit einem Preisgitter je Stunde.
 - **Die exakte Jahresverteilung der Läufe ist nicht bestellt.** Sie hätte
   eine Wiederholung des Jahreslaufs von rund zweieinhalb Stunden verlangt.
   Empfehlung an den Verfasser: dabei bleiben, denn der Rechenaufwand ist
@@ -486,6 +511,12 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 - Auftraggeber des Weber-Gutachtens in den Quellen widersprüchlich (EnBW gegen
   BDEW), bib folgt dem Deckblatt.
 - Consentec-Befund zu KuPilot vorgemerkt, nicht verwendet.
+- **Aus 4.4, Vorgabe des Verfassers vom 23.09.2026:** ein \ac{BESS} wird eher
+  zum Entladen als bilanzieller Ausgleich für erneuerbare Erzeugung
+  eingeplant. Im Tagesmuster lohnen deshalb die Mittagsstunden am meisten,
+  wenn er mit regelbarer Photovoltaik gekoppelt wird; saisonal eher der
+  Winter, in dem die Winderzeugung dominiert. Die Abendstunden sind dagegen
+  oft teuer.
 - **Aus 4.2, Vorgabe des Verfassers vom 23.09.2026:** die erste Iteration ist
   ineffizient, weil sie allen Stunden eines Tages denselben Preis vorgibt. An
   dieser Stelle ist das Zeitscheibenproblem noch einmal aufzunehmen.
@@ -527,7 +558,8 @@ Fertige Abbildungen liegen unter `analysen/12_schrift/kapitel_N/` in Satzbreite
 nach `figures/anhang`. Beim Abgleich die PDF-Felder `CreationDate`, `ModDate`
 und `ID` ausnehmen.
 
-Eigene Auswertungen der Schriftfassung: `analysen/mastr_speicher`,
+Eigene Auswertungen der Schriftfassung: `analysen/zeitmuster_ursachen`,
+`analysen/mastr_speicher`,
 `analysen/mfrr_leistungspreise`, `analysen/vollreservierung_pruefung`,
 `analysen/redispatch_einheiten`. Der Quelltext des Erlösindex der ISEA Battery
 Charts liegt lokal unter `C:/GIT-HUB/battery_revenue_index-main`.

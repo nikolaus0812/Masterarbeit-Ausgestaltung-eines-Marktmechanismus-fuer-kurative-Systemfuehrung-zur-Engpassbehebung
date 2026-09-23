@@ -2858,6 +2858,66 @@ zweimal, weil derselbe Satz auch in der auskommentierten alten Fassung steht.
 Die Anker werden seither mit fuehrendem Zeilenumbruch gesucht, damit sie nicht
 in Kommentarzeilen greifen. Das Skript war vor dem Schreiben abgebrochen, die
 Datei blieb unveraendert.
+### 23.09.2026, Preisbasis der aFRR-Leistung nachgewiesen
+
+**Anlass.** Die Anfrage `ANFRAGE_AFRR_HERBST_2025.md` nannte die eigene
+Aggregation ueber die Viertelstunden ein "mengengewichtetes Mittel". Das
+ist falsch, `analysen/zeitmuster_ursachen/ergaenzung.py` bildet ein
+ungewichtetes arithmetisches Mittel. Die Anfrage ist am selben Tag
+berichtigt worden.
+
+**Die Arbeit ist davon nicht betroffen.** Der Fehler lag in der
+Beschreibung der eigenen Auswertung und nicht in der Beschreibung der
+Preisreihe. Beide Mittelungen bestehen nebeneinander und sind
+verschiedene Dinge:
+
+1. Die **Preisreihe selbst** ist ein mengengewichteter Durchschnitt der
+   Zuschlaege je Vier-Stunden-Produkt. Das Modell liest die Spalte
+   `GERMANY_AVERAGE_CAPACITY_PRICE` aus
+   `RESULT_OVERVIEW_CAPACITY_MARKET_aFRR_2025-01-01_2025-12-31.xlsx` von
+   regelleistung.net. Nachweis: `main.py` Zeile 268 mit
+   `AFRR_CAP_PREISBASIS = "average"` und dem Kommentar "Mengengewichteter
+   Durchschnitt der Zuschlaege", dazu `data_loader.py` Zeile 572 bis 576
+   mit der Zuordnung der drei Spalten min, average und marginal.
+2. Die **eigene Auswertung** mittelt diese Reihe ungewichtet ueber die
+   Viertelstunden, um Monatswerte zu bilden.
+
+**Vier Stellen der Arbeit sind daraufhin geprueft und bleiben richtig:**
+
+- `chapter_2.tex` Zeile 2658: die aFRR-Leistung wird nach dem
+  Gebotspreisverfahren verguetet, die FCR nach dem Grenzpreisverfahren.
+- `chapter_3.tex` Zeile 290: das Modell setzt den mengengewichteten
+  Durchschnitt der Zuschlaege einer Vier-Stunden-Zeitscheibe an, zitiert
+  nach `regelleistung_ausschreibungsdaten_2026`.
+- `chapter_3.tex` Zeile 301: drei Sensitivitaeten, naemlich ohne aFRR, mit
+  dem mengengewichteten Mittelpreis und mit dem hoechsten Zuschlag; der
+  Basisfall rechnet mit dem Mittelpreis.
+- `chapter_4.tex` Zeile 655: die Sensitivitaet bewertet mit dem Grenzpreis
+  statt mit dem mengengewichteten Mittel der Zuschlaege.
+
+**Keine dieser Stellen ist zu aendern.** Der Vermerk steht hier, damit die
+Berichtigung der Anfrage nicht spaeter als Anlass genommen wird, Kapitel 3
+umzuschreiben.
+
+**Was neu festgehalten ist**, ist die Spalte. Die Arbeit sagt bisher
+"mengengewichteter Durchschnitt der Zuschlaege" und nennt die Quelle,
+nicht aber, dass regelleistung.net daneben den minimalen und den
+Grenzleistungspreis veroeffentlicht und welche der drei Spalten gelesen
+wird. Fuer einen Abgleich gegen die Veroeffentlichung ist das
+entscheidend, denn ein Abgleich gegen die falsche Spalte ergaebe einen
+Scheinwiderspruch. **Zu pruefen, ob der Spaltenname in Abschnitt 3.2 oder
+in Anhang C genannt werden soll**; bisher steht er allein hier und im
+Arbeitsdokument.
+
+**Eigenstaendige Einordnung, vom Verfasser zu pruefen.** Die aFRR-Leistung
+wird nach dem Gebotspreisverfahren verguetet, also erhaelt jeder Anbieter
+seinen eigenen Gebotspreis. Der mengengewichtete Durchschnitt ist damit
+nicht der Erloes eines bestimmten Anbieters, sondern der mittlere Erloes
+aller bezuschlagten. Abschnitt 3.2 sagt das mit dem Satz, der
+mengengewichtete Durchschnitt treffe den Wert, den ein Anbieter im Mittel
+erziele. Die Sensitivitaet mit dem Grenzpreis in 4.6.1 misst, wie weit die
+Annahme traegt, naemlich 16 Prozent im Median und das Viereinhalbfache im
+Maximum.
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -13297,6 +13357,355 @@ grosser Teil der Stunden guenstig reservieren laesst. Der Absatz schliesst
 deshalb mit dem Satz, dass die Haelfte aller Stunden zum Median von
 hoechstens 12,22 beziehungsweise 9,85 Euro je Megawatt und Stunde zu
 reservieren ist und allein die Spitze der Verteilung teuer wird.
+### 23.09.2026, Referenzerloes in Anteilen statt in Betraegen
+
+**Vorgabe des Verfassers.** Der Absatz nannte fuer jeden Markt Betrag und
+Anteil. Genannt wird jetzt einmal die Summe, danach folgt die Aufteilung in
+Anteilen. Der Absatz faellt damit von acht auf sechs Saetze.
+
+**Was jetzt im Text steht.** Der Bruttoerloes von 358,6 und der
+Referenzerloes von 340,6 Tsd. Euro je Megawatt und Jahr als absolute Werte,
+der Abzug von 18,0 fuer die Degradation, danach die Anteile am Bruttoerloes
+mit 65,6 Prozent fuer die aFRR-Leistung, 14,0 fuer den IDC, 11,2 fuer die
+aFRR-Arbeit, 7,3 fuer den Day-Ahead und 2,0 fuer die FCR. Alle Anteile
+stehen so in ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 1.
+
+**Zurueckgenommen sind die Betraege je Markt**, naemlich 235,1 fuer die
+aFRR-Leistung, 50,2 fuer den IDC, 40,1 fuer die aFRR-Arbeit, 26,1 fuer den
+Day-Ahead und 7,1 fuer die FCR. Sie stehen weiterhin in Abbildung 4.1.
+
+**Die Schlussfolgerungen ziehen mit.** Dort stand die aFRR-Leistung mit
+235,1 Tsd. Euro je Megawatt und Jahr als einziger absoluter Wert je Markt.
+Der Satz nennt jetzt allein die zwei Drittel des Bruttoerloeses.
+
+**Offen, vom Verfasser zu entscheiden.** Die Aufteilung des Marktrests der
+ersten Iteration steht weiter in Betraegen, naemlich 60,0 fuer die
+aFRR-Leistung, 16,4 fuer den IDC, 8,7 fuer die aFRR-Arbeit und 7,3 fuer den
+Day-Ahead, abzueglich 3,8 fuer die Degradation. Dieselbe Regel angewandt
+hiesse, auch dort nur die Summe von 88,6 zu nennen und in Anteilen
+aufzuteilen. Nicht stellvertretend geaendert.
+### 23.09.2026, Verteilungsabsaetze in 4.3 zusammengelegt
+
+**Vorgabe des Verfassers.** Der Absatz zur Schiefe und der Absatz zum
+unteren Teil der Verteilung werden zu einem verbunden, und die Saetze zur
+Wahl des Masses stehen an seinem Ende statt in seiner Mitte. Die Reihenfolge
+lautet Schiefe, Maxima als Erscheinung einzelner Stunden, Hauptfeld der
+Verteilung, dann die Wahl des Masses.
+
+**Zwei Satzpaare sind verbunden**, damit der Absatz nicht auf zwoelf Saetze
+laeuft. Erstens traegt "Der groesste Teil der Stunden liegt weit unter
+diesen Spitzen" die drei Viertel jetzt als denn-Satz. Zweitens traegt "Die
+folgenden Abschnitte weisen deshalb beide Masse aus" die Begruendung zum
+arithmetischen Mittel als denn-Satz.
+
+**Der Absatz hat damit zehn Saetze** und liegt ueber der Stilregel 1, die
+vier bis acht vorsieht. Weiter zu kuerzen hiesse, eine Kennzahl der
+Verteilung aufzugeben. Dem Verfasser genannt, von ihm zu entscheiden.
+
+**Abschnitt 4.3 traegt damit drei Absaetze**, naemlich die Kennzahlen vor
+der Abbildung, die Verteilung danach und die Schlussfolgerungen.
+
+**Zur Arbeitsweise.** Die Aenderung ist zeilenweise ausgefuehrt und nicht
+als Blockersetzung, weil zwischen den Saetzen des Absatzes mehrere
+Kommentarbloecke mit zurueckgenommenen Fassungen stehen. Die Kommentare
+bleiben dadurch an ihrer Stelle. Gegenprobe war die unveraenderte Zahl der
+Zeilen, naemlich 720 vor und nach der Aenderung, und die Bildlagepruefung.
+### 23.09.2026, Herkunft der Maxima in 4.3 aufgenommen
+
+**Lieferung des Analyse-Repositorys** auf AUFTRAG_MAXIMASTUNDEN.md, ohne
+neuen Lauf, aus jahr_slots_2025.parquet. Alle Zahlen stehen in
+ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7.11, betrachtet sind die 20
+teuersten Stunden je Richtung unter der zweiten Iteration.
+
+**Tragender Befund.** Die Maxima haben je Richtung einen anderen Urheber,
+und in beiden Faellen ist es nicht die aFRR-Leistung, die ueber das Jahr den
+Preis setzt. Entladend haelt der IDC in diesen Stunden 70,2 MW gegen 4,9 im
+Jahresmittel, waehrend die aFRR-Leistung auf ein Fuenftel faellt und in den
+zehn teuersten Stunden durchweg null haelt. Ladend tragen der
+aFRR-Leistungspreis mit 162 gegen 16 Euro je Megawatt und Stunde sowie
+negative Preise am IDC mit minus 55 gegen plus 90 Euro je Megawattstunde.
+
+**Der Absatz steht als eigener Absatz** hinter der Verteilung und vor den
+Schlussfolgerungen, weil der Absatz zur Verteilung bereits zehn Saetze
+traegt.
+
+**Sorgfaeltig unterschieden.** Der Text sagt, welcher Markt die Leistung im
+Referenzfall **haelt**, und nicht, welcher Markt zuletzt **weicht**. Die
+zweite Frage war gestellt, verlangt aber ein Preisgitter je Stunde fuer die
+betroffenen Tage und ist nicht beantwortet. Das Analyse-Repository haelt
+fest, dass beides fuer die Ausreisserstunden sehr wahrscheinlich zusammen
+faellt, weil der IDC entladend 70 von rund 94 belegten MW haelt, und dass
+es damit nicht bewiesen ist.
+
+**Zurueckhaltend formuliert, wo der Beleg fehlt.** Zur Frage Einzelpreis
+oder Kopplung ueber das Ladezustandsband ist die Entladerichtung eindeutig,
+denn der Reservierungspreis liegt bei 89 Prozent der Opportunitaet derselben
+Stunde und in keinem Fall mehr als 24 Prozent darueber. Fuer die
+Laderichtung sagt der Text nur, dass 7 der 20 Stunden den Rahmen um mehr als
+die Haelfte uebersteigen und das **mit einer Kopplung vereinbar** ist. Das
+Analyse-Repository fuehrt den Punkt in seinem Abschnitt 8 als offen.
+
+**Einheiten auseinandergehalten.** Der aFRR-Leistungspreis steht in Euro je
+Megawatt und Stunde, die Preise von IDC und Day-Ahead in Euro je
+Megawattstunde. Die zweite Form ist ausgeschrieben, weil das Makro EurMWh
+die erste bezeichnet.
+### 23.09.2026, Ursachen der teuren Perioden im Zeitmuster
+
+**Vorgabe des Verfassers.** Die auffaelligen Perioden im Zeitmuster sollen
+nicht nur beschrieben, sondern aus den Daten begruendet werden, damit die
+Diskussion sie spaeter deuten kann. Beobachtet hatte er teure Ladepreise
+mittags Anfang und Ende April, Anfang und Mitte Mai sowie Ende Juni und
+teure Entladepreise im September und Oktober.
+
+**Eigene Auswertung angelegt**, naemlich `analysen/zeitmuster_ursachen` mit
+den Skripten `ursachen.py` und `ergaenzung.py` sowie den Berichten
+`BEFUND.md` und `BEFUND_ERGAENZUNG.md`. Quelle ist
+`jahr_slots_2025.parquet` aus dem Analyse-Repository, das je Viertelstunde
+die Reservierungspreise beider Richtungen, die belegte Leistung je Markt
+und alle Marktpreise fuehrt. Es wurde ausschliesslich gelesen.
+
+**Tragender Befund: der Preis folgt in beiden Richtungen dem
+aFRR-Leistungspreis.** Die Rangkorrelation nach Spearman ueber alle 365
+Tage betraegt +0,90 fuer die Ladereservierung mittags und +0,74 fuer die
+Entladereservierung abends. Damit verbinden sich Tages- und Jahresgang zu
+einer Erklaerung statt zweier Beschreibungen.
+
+**Die Mittagsspitzen der Ladereservierung** tragen zwei Treiber mit
+derselben Wurzel. Erstens der Leistungspreis der negativen aFRR, der von
+3,0 Euro je Megawatt und Stunde im Februar auf 32,2 im Mai steigt.
+Zweitens negative Energiepreise, deren Anteil an den Viertelstunden von 0
+bis 2 Prozent im Winter auf 17 bis 22 Prozent im Mai und Juni steigt, im
+Mittagsfenster sogar auf 53 bis 61 Prozent. Beides geht auf die
+Photovoltaik zurueck. Mitte Mai ist fast reines aFRR, naemlich 137,5
+Reservierung bei 136,8 aFRR-Leistungspreis; der 22.03.2025 ist dagegen ein
+reiner Negativpreistag mit 182,7 bei nur 55,4 aFRR und 100 Prozent
+negativer Viertelstunden.
+
+**Der September und der Oktober sind ein Ereignis des
+Regelleistungsmarktes.** Der Leistungspreis der positiven aFRR betraegt
+dort 32,7 gegen 15,0 Euro je Megawatt und Stunde in den uebrigen zehn
+Monaten, also das 2,2-Fache, und zwar ueber alle Stunden des Tages. Jeder
+andere Monat liegt zwischen 10,6 und 20,6. Der teuerste Abend des Jahres,
+der 08.09.2025, zeigt das Muster in Reinform: um 18 Uhr springt der
+Intradaypreis auf 639,7 Euro je Megawattstunde, die Bezugsanlage haelt dort
+50 MW, die aFRR steht auf null, und die Reservierung kostet 241,5 Euro je
+Megawatt und Stunde.
+
+**Nebenbefund Juli.** Der Leistungspreis der negativen aFRR faellt von 29,8
+im Mai und Juni auf 15,8, der Anteil negativer Viertelstunden von 20 auf
+6 Prozent, und die Energiepreise steigen von 69,8 auf 89,1 Euro je
+Megawattstunde. Der Einbruch im Juli ist damit ein Marktbefund und kein
+Modelleffekt.
+
+**Offen und ausgelagert.** Warum der Leistungspreis der positiven aFRR im
+Herbst 2025 auf das Doppelte springt, geben die Daten der Arbeit nicht her.
+Die Frage ist als `ANFRAGE_AFRR_HERBST_2025.md` an einen getrennten Chat
+gestellt, der auf SMARD und die oeffentlichen Quellen der Bundesnetzagentur
+zugreift. Ebenfalls dort gestellt ist die Bitte um eine zitierfaehige
+Quelle fuer den Zusammenhang zwischen hoher Solareinspeisung und dem Preis
+negativer Regelleistung, denn diese Deutung stammt bisher aus eigener
+Ableitung. **Bis zur Antwort steht keine der beiden Begruendungen im
+Text.**
+### 23.09.2026, Ursachenanalyse nachgeprueft und berichtigt
+
+**Rueckfrage des Verfassers.** Wie die Korrelationen gerechnet sind und
+warum nicht der Intradaypreis die Ursache sein koenne, die Minuspreise
+seien doch heftig gewesen.
+
+**Die erste Rechnung trug die Schlussfolgerung nicht.** `ursachen.py`
+bildet die Rangkorrelation nach Spearman zwischen dem Tagesmittel des
+Reservierungspreises im Fenster und dem Tagesmittel jedes Treibers. Das
+hat zwei Schwaechen. Erstens ist der mittlere Intradaypreis ein schlechtes
+Mass fuer Negativpreise, denn ein Tag mit dem Mittel null kann grosse
+Ausschlaege tragen. Zweitens sind die Treiber kollinear, weil hohe
+Solareinspeisung zugleich negative Preise und einen teuren Preis negativer
+Regelleistung erzeugt. Eine bivariate Korrelation kann daraus keine
+Rangfolge der Ursachen ableiten.
+
+**Nachgerechnet mit dem Verfahren des Analyse-Repositorys**, also je
+Viertelstunde, welcher Markt die groesste Opportunitaet stellt. Skript
+`analysen/zeitmuster_ursachen/fuehrender_markt.py`.
+
+**Ergebnis fuer die Laderichtung mittags.** Der Leistungspreis der
+negativen aFRR fuehrt in 95 Prozent der Viertelstunden, negative
+Energiepreise nur in ein bis zwei Prozent. Der Grund liegt in der Hoehe:
+negative Intradaypreise treten zwar in 8,3 Prozent aller Viertelstunden
+des Jahres auf, ihr Median betraegt aber nur minus 7,8 und ihr Mittel
+minus 16,5 Euro je Megawattstunde. In nur 9 Prozent dieser Viertelstunden
+uebersteigt ihr Betrag den Leistungspreis der negativen aFRR derselben
+Viertelstunde, der dort im Median 48,6 Euro je Megawatt und Stunde
+betraegt. Das Minimum von minus 803,3 Euro je Megawattstunde ist ein
+Einzelwert.
+
+**Berichtigung der Darstellung vom selben Tag.** Die Formulierung "zwei
+Treiber mit derselben Wurzel" war zu unbestimmt. Richtig ist: der
+Leistungspreis der negativen aFRR traegt das **Niveau**, die negativen
+Energiepreise tragen die **Ausreisser**. Das deckt sich mit ERGEBNISSE
+Abschnitt 7.11, wo die zehn teuersten Ladestunden in aFRR-Spitzen und
+Negativpreisstunden zerfallen.
+
+**Ein Fehler in der eigenen Rechnung, gefunden und behoben.** Fuer die
+Entladerichtung setzte `fuehrender_markt.py` den Preis der Stunde selbst
+als Opportunitaet an. Das ueberschaetzt den Energiemarkt, denn wer
+entladen will, muss die Energie vorher kaufen. `entladen_spread.py`
+rechnet stattdessen die Spanne zwischen dem Preis der Stunde und dem
+guenstigsten Bezug desselben Tages.
+
+**Ergebnis fuer die Entladerichtung abends.** Die Arbitragespanne fuehrt
+in 98 Prozent der Viertelstunden und stellt mit 132,2 Euro je Megawatt und
+Stunde die groesste Opportunitaet. Sie erklaert aber nicht den September
+und den Oktober: dort liegt der Reservierungspreis beim 1,75-Fachen des
+uebrigen Jahres, die Arbitragespanne jedoch nur beim 1,12-Fachen und der
+Leistungspreis der positiven aFRR beim 2,27-Fachen. Der Anteil der
+Viertelstunden, in denen die aFRR fuehrt, erreicht im September 6 und im
+Oktober 11 Prozent gegen null bis ein Prozent in den uebrigen Monaten.
+
+**Die tragende Erklaerung, eigenstaendige Ableitung.** Die Arbitrage ist
+zwischen den Stunden eines Tages verschiebbar, die Bezugsanlage weicht der
+Reservierung also aus. Der Leistungspreis der aFRR faellt dagegen mit der
+reservierten Stunde ganz weg, weil das Produkt eine Zeitscheibe bindet.
+Deshalb folgt der kurative Reservierungspreis dem Leistungspreis der aFRR
+und nicht dem Niveau der Energiepreise, und deshalb setzt der
+Energiemarkt den Preis nur dort, wo eine Preisspitze so hoch ist, dass
+kein Ausweichen mehr hilft. Das verbindet den Befund des Abschnitts 4.2
+zur Verschiebung der Geschaefte mit dem Befund des Abschnitts 4.3 zu den
+Maxima. **Vom Verfasser zu pruefen.**
+### 23.09.2026, Arbitragepaare und die Deutung des Zeitmusters
+
+**Vorgabe des Verfassers.** Die zehn ertragreichsten Bezugs- und
+Absatzpaare je Tag auswerten. Liegen sie in denselben Stunden, in denen
+auch die Reservierung teuer ist, so treibt das den Preis, besonders fuer
+die zuletzt verdraengten Stunden.
+
+**Auswertung** in `analysen/zeitmuster_ursachen/arbitragepaare.py`. Ein
+Paar verbindet eine Bezugs- mit einer Absatzviertelstunde desselben Tages,
+Paar 1 die guenstigste mit der teuersten und so fort bis Paar 10. Als
+Bezugspreis gilt das Kleinere aus Day-Ahead und Intraday, als Absatzpreis
+das Groessere. **Einschraenkung der Methode:** eine zeitliche Reihenfolge
+von Bezug und Absatz wird nicht erzwungen, die Kennzahl misst die Tiefe des
+Spannenangebots und keinen fahrbaren Fahrplan.
+
+**Die Vermutung des Verfassers bestaetigt sich.** In den Stunden, die zu
+den zehn Paaren gehoeren, kostet die Entladereservierung im Mittel 34,8
+gegen 20,6 Euro je Megawatt und Stunde in den uebrigen Stunden desselben
+Tages, die Ladereservierung 40,3 gegen 24,4. Das ist in beiden Richtungen
+das 1,7-Fache. Die Haelfte der sechs teuersten Reservierungsstunden eines
+Tages gehoert zu den zehn Paaren.
+
+**Entscheidend ist die Steilheit der Staffel.** Im Median traegt das
+zehnte Paar noch 62 Prozent der Spanne des ersten, an gewoehnlichen Tagen
+kann die Bezugsanlage also ausweichen. Die Rangkorrelation zwischen diesem
+Verhaeltnis und dem Tagespreis betraegt in beiden Richtungen minus 0,32:
+je steiler die Staffel, desto teurer die Reservierung.
+
+**Der Kreis zu Abschnitt 4.1 schliesst sich.** Die beiden Tage mit der
+steilsten Staffel sind der 26.08.2025 mit 1603,7 zu 165,0 Euro je
+Megawattstunde, also 10 Prozent, und der 15.05.2025 mit 1330,6 zu 148,1,
+also 11 Prozent. Genau an diesen beiden Tagen bleibt die Verdraengung nach
+Abschnitt 4.1 auch bei 200 Euro je Megawatt und Stunde unvollstaendig, dort
+haelt der IDC noch 8,8 und hier die aFRR-Leistung noch 16,7 MW. Zum
+Vergleich der 12.07.2025 mit einem Abfall von 92 Prozent und
+Reservierungspreisen von 20,6 und 22,0.
+
+**Die Deutung, vom Verfasser am 23.09.2026 bestaetigt.** Der
+Leistungspreis der aFRR hebt das allgemeine Niveau des kurativen
+Reservierungspreises, denn er faellt mit der reservierten Stunde ganz weg;
+das Produkt bindet eine Zeitscheibe, und ein Ausweichen gibt es nicht.
+Besonders hohe Spannen am Intraday oder am Day-Ahead tragen dagegen die
+Extrema, denn solange der Tag eine tiefe Staffel an Spannen traegt, weicht
+die Bezugsanlage aus; bricht die Staffel ein, kann sie es nicht mehr.
+**Dieselbe Erklaerung traegt drei Befunde**, naemlich die tageweise
+wechselnde Verdraengungsreihenfolge des Abschnitts 4.1, die offenen
+Stunden der ersten Iteration des Abschnitts 4.2 und die Maxima des
+Abschnitts 4.3.
+
+**Nachpruefung zur Heatmap.** Der Verfasser hat gefragt, ob die Heatmap
+arithmetische Mittel traegt. Sie traegt keine. Die Reservierungspreise sind
+innerhalb jeder Stunde ueber alle vier Viertelstunden identisch, geprueft
+ueber alle 8758 Stunden mit einer groessten Abweichung von 0,000000 Euro je
+Megawatt und Stunde. Jedes Feld der Heatmap ist damit der Preis genau
+dieser einen Stunde. Gemittelt wird allein in der Abbildung zum Zeitmuster,
+wo die Stunden ueber das Jahr zusammengefasst sind; dort ist die
+durchgezogene Linie der Median und die gestrichelte das arithmetische
+Mittel. Die einzige Verdichtung der Heatmap ist der Deckel der Farbskala
+beim 99-Prozent-Quantil.
+### 23.09.2026, Summenabsatz in 4.4 neu gefasst
+
+**Vorgabe des Verfassers.** Der Absatz soll mit dem Gedankenspiel
+beginnen, dass ein UENB, der je eine Anlage fuer das Entladen und fuer das
+Laden braeuchte, zwei Preise zahlt. Die Bildung der Summe wird einmal
+erklaert und danach nicht wiederholt. Ueber den Tag sind Morgen, Mittag
+und Abend am teuersten, und es wechselt, welche Richtung die Summe traegt.
+Ueber das Jahr liegen beide Richtungen nahe beieinander, mit etwas mehr
+Gewicht der Ladereservierung im Fruehjahr und Fruehsommer.
+
+**Berichtigung einer Angabe des Verfassers.** Seine Vorgabe lautete,
+morgens sei der Entladepreis bestimmend und mittags der Ladepreis. Das
+trifft nur den fruehen Morgen: um 7 Uhr traegt die Entladereservierung
+20,6 von 29,0 Euro je Megawatt und Stunde, ab 10 Uhr traegt dagegen schon
+die Ladereservierung mit 29,1 gegen 20,5. Der Text belegt deshalb mit
+7 Uhr und nicht mit dem Vormittag.
+
+**Zurueckgenommene Formulierungen**, nicht wieder aufzunehmen: "Neben den
+beiden Richtungen traegt die Abbildung deren Summe.", "Entlade- und
+Ladereservierung werden an keiner Stelle gemittelt", "Wer jedoch ein
+Produkt in beiden Richtungen beschafft, zahlt beide Richtungen zugleich,
+sodass die Summe den Preis des Beschafften angibt." und "Die Summe
+erreicht ihren groessten Median mit 79,3 um 14 Uhr, weil dort beide
+Richtungen erhoeht sind, und ihren kleinsten mit 9,6 um Mitternacht."
+
+**Die Ferienzeit traegt den Sommerrueckgang nicht.** Der Verfasser hat
+vermutet, der Preisrueckgang im Juli und August folge aus der deutschen
+Ferienzeit. Die Vermutung ist pruefbar, denn geringere Last bei
+unveraenderter Solareinspeisung muesste die Mittagsdelle vertiefen und
+mehr negative Viertelstunden erzeugen. Beobachtet ist das Gegenteil: die
+Mittagsdelle betraegt im Juni minus 67,3 und im Juli nur minus 43,6 Euro
+je Megawattstunde, der Anteil negativer Viertelstunden faellt von 22 auf
+6 Prozent, und der Day-Ahead-Tagesmittelpreis steigt von 64,0 auf 87,8.
+Auswertung in `analysen/zeitmuster_ursachen/sommerloch.py`. **Die
+Erklaerung steht deshalb nicht im Text**, und die Frage ist in
+`ANFRAGE_AFRR_HERBST_2025.md` Abschnitt 4 gestellt.
+### 23.09.2026, Ursachenabsatz und Schlussfolgerungen fuer 4.4
+
+**Vorgabe des Verfassers.** Der Ursachenabsatz soll mit zwei bis drei
+aussagekraeftigen Zahlen hinterlegt werden, naemlich dem mittleren
+aFRR-Leistungspreis der Mittagsviertelstunden im Mai und den groessten
+Spannen am Intraday, die der kurative Preis verdraengen muss. Die
+Schlussfolgerungen fassen die wichtigsten Aussagen des Abschnitts.
+
+**Die drei gesetzten Zahlen und ihre Herkunft:**
+
+- 82,2 gegen 37,5 Euro je Megawatt und Stunde: mittlerer Leistungspreis der
+  negativen aFRR in den Viertelstunden von 10 bis 15 Uhr, im Mai gegen das
+  Jahresmittel derselben Stunden, aus
+  `analysen/zeitmuster_ursachen/BEFUND.md` Abschnitt 1 und 6.
+- 179,0 gegen 112,8 Euro je Megawattstunde: Median der groessten Spanne
+  eines Tages gegen den Median der Spanne des zehnten Bezugs- und
+  Absatzpaares, aus `BEFUND_ARBITRAGEPAARE.md` Abschnitt 1.
+- 1603,7 auf 165,0 Euro je Megawattstunde am 26.08.2025: der Tag mit der
+  steilsten Staffel des Jahres, aus `BEFUND_ARBITRAGEPAARE.md` Abschnitt 5.
+
+**Warum gerade diese Zahlen.** Sie belegen die beiden Haelften der
+Erklaerung. Der Leistungspreis der aFRR zeigt, wie stark das Niveau
+jahreszeitlich schwankt, und das Paar 179,0 gegen 112,8 zeigt, dass die
+Arbitrage an gewoehnlichen Tagen tief gestaffelt und damit ausweichbar
+ist. Der 26.08.2025 zeigt den Gegenfall, und an eben diesem Tag bleibt die
+Verdraengung nach Abschnitt 4.1 auch bei 200 Euro je Megawatt und Stunde
+unvollstaendig.
+
+**Die Schlussfolgerungen bleiben beschreibend und erklaerend.** Vorgabe des
+Verfassers vom 23.09.2026: die Folgerungen zum Entladepreis gehoeren in die
+Diskussion. Kein Satz des Absatzes sagt deshalb, was ein Betreiber oder der
+UENB daraus machen sollte. Die vier Vormerkungen dazu stehen in HANDOFF.md
+Abschnitt 7.
+
+**Eigenstaendige Ableitung.** Der Faktor 4,2 des Jahresgangs ist selbst
+gerechnet, naemlich 56,9 im September gegen 13,5 im Dezember aus ERGEBNISSE
+Abschnitt 7.2. Der Faktor 8,3 des Tagesgangs steht dort bereits.
+
+**Abschnitt 4.4 traegt damit sieben Absaetze**, naemlich Uebergang und
+Heatmap, Tagesgang je Richtung, Summe, Abstand von Median und Mittel,
+Jahresgang, Ursache und Schlussfolgerungen.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
