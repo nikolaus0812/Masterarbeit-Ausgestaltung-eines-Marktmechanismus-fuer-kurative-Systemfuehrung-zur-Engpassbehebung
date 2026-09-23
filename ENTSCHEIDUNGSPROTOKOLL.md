@@ -14353,6 +14353,155 @@ bleiben davon unberuehrt.
 Jahres 2025 vorhanden), die bezuschlagte Leistung aus
 `regelleistung_ausschreibungsdaten_2026` (2190 Vierstundenprodukte je
 Richtung). Die Preise aus ERGEBNISSE Abschnitt 4, Jahr 2025, 2. Iteration.
+### 23.09.2026, sechs gleichlautende Schlusssaetze variiert
+
+**Vorgabe des Verfassers.** "Aus dieser Untersuchung laesst sich Folgendes
+mitnehmen." stand sechsmal gleichlautend im Kapitel, naemlich am Ende der
+Abschnitte 4.1 bis 4.6. **Nicht wieder aufzunehmen.**
+
+**Jeder Satz nennt jetzt den Gegenstand seines Abschnitts:**
+
+| Abschnitt | neuer Satz |
+|---|---|
+| 4.1 | Die Verdraengung der Maerkte laesst sich damit in vier Punkten fassen. |
+| 4.2 | Aus dem Jahreslauf und dem Erloesvergleich bleibt Folgendes festzuhalten. |
+| 4.3 | Fuer die Verteilung des kurativen Reservierungspreises ergibt sich damit folgendes Bild. |
+| 4.4 | Ueber das zeitliche Muster sind damit vier Aussagen belegt. |
+| 4.5 | Daraus folgt fuer die Beschaffung der kurativen Vorhaltung dreierlei. |
+| 4.6 | Fuer die Belastbarkeit des kurativen Reservierungspreises gegenueber den Annahmen bleibt Folgendes. |
+
+**Eigenstaendige Abwaegung zur Zahlenangabe.** Drei der sechs Saetze nennen
+die Zahl der folgenden Saetze, naemlich vier, vier und dreierlei. Das macht
+den Absatz fuer den Leser nachvollziehbar, **ist aber beim Umbau eines
+Schlussblocks mitzufuehren**. Die drei anderen Saetze kommen ohne Zahl aus,
+damit die Konstruktion nicht selbst zur Wiederholung wird.
+
+**Das Wort Folgendes steht noch zweimal**, in 4.2 und 4.6, und einmal in der
+Einleitung des tagesvergleichenden Absatzes von 4.1 ("Im Vergleich der fuenf
+Tage faellt Folgendes auf."). Der Schlusssatz von 4.1 vermeidet das Wort
+deshalb, sonst stuende es zweimal im selben Abschnitt.
+### 23.09.2026, FCR aus der Saettigungsaussage, Referenzrechnungssatz gestrichen
+
+**Zwei Vorgaben des Verfassers.**
+
+1. **Die Zukunftsvariante prueft keine Saettigung des FCR-Marktes.** Der
+   Verfasser: dieser Markt gilt in der Arbeit bereits als gesaettigt, die
+   FCR bleibt insoweit konstant. Die Einleitung des Abschnitts 4.6 und der
+   erste Satz des Abschnitts 4.6.4 nennen deshalb allein die Saettigung des
+   Marktes fuer aFRR-Leistung. **Der Abschlag von zehn Prozent auf die
+   FCR-Preise bleibt in der Rechnung und im naechsten Satz stehen**, er wird
+   nur nicht mehr als gepruefte Saettigung ausgegeben.
+   **Zurueckgenommen:** "... wie eine Saettigung der Maerkte fuer aFRR- und
+   FCR-Leistung ..." und "Die Zukunftsvariante setzt die Saettigung der
+   Regelleistungsmaerkte ... um."
+2. **Der Satz zur eigenen Referenzrechnung ist gestrichen.** Er lautete "Die
+   Sensitivitaeten nutzen eine eigene Referenzrechnung, die im Median um 0,01
+   Euro je Megawatt und Stunde vom Jahreslauf abweicht und damit mit den
+   uebrigen Ergebnissen vergleichbar ist." **Nicht wieder aufzunehmen.** Der
+   Satz war am 22.09.2026 aus der Kapiteleinleitung hierher verschoben
+   worden. Die Einleitung des Abschnitts 4.6 traegt damit sechs Saetze.
+
+**Offener Punkt, vom Verfasser zu klaeren.** Die Aussage, der FCR-Markt sei
+gesaettigt, **steht in den Kapiteln 1 bis 4 nirgends im Fliesstext**. Eine
+Suche nach "gesaettigt" und "Saettigung" in allen Kapiteldateien findet
+allein die beiden Stellen des Abschnitts 4.6. Solange die Aussage nicht
+belegt irgendwo steht, kann Kapitel 5 sich nicht darauf stuetzen.
+### 23.09.2026, 4.6.1 verschmolzen, beide Abbildungen nach hinten
+
+**Drei Vorgaben des Verfassers.**
+
+1. **Die beiden ersten Absaetze aehnelten sich sehr und sind einer
+   geworden.** Beide fuehrten in die Annahmen ein, der erste sachlich, der
+   zweite rechtfertigend. Der verschmolzene Absatz traegt acht Saetze in
+   dieser Folge: Annahme des Basisfalls, die drei Groessen, von denen die
+   Ausschoepfung des aFRR-Marktes abhaengt, ihre Unbeobachtbarkeit, was die
+   anteilige Lieferung festlegt, die vier Stufen der Leistungsseite, die
+   Stufen der Arbeitsseite, wozu die Trennung dient, und der Verweis auf die
+   Abbildung.
+   **Zwei Saetze sind dabei entfallen**, weil sie doppelt standen: "Der
+   Basisfall setzt deshalb die anteilige Lieferung, die die gelieferte Menge
+   je Zeitscheibe festlegt ..." (steht jetzt ohne die Wiederholung des
+   Basisfalls) und "Die anteilige Lieferung verhindert somit, dass der
+   kurative Reservierungspreis aus einer Vermarktung folgt, die eine reale
+   Anlage nicht erreicht." Der zweite Gedanke steht am Ende des Abschnitts
+   im Absatz zur Ungewissheit des Abrufs, dort mit den Zahlen belegt.
+2. **Beide Abbildungen sind einen Absatz nach hinten gerueckt.** Abbildung
+   4.7 steht jetzt hinter dem Absatz zur Leistungsseite, Abbildung 4.8
+   hinter dem Absatz zur Arbeitsseite. Zwischen beiden Abbildungen steht
+   damit genau ein Absatz, wie es die stehende Vorgabe verlangt. Der Verweis
+   auf Abbildung 4.8 ist dazu vom Ende des Leistungsabsatzes an den Anfang
+   des Arbeitsabsatzes gewandert, sonst haette er zwei Bloecke vor der
+   Abbildung gestanden.
+3. **Der Bindungsdauersatz in der Einleitung des Abschnitts 4.6 ist
+   gestrichen.** Er lautete "Die Bindungsdauer bleibt in allen Varianten eine
+   Stunde und gehoert deshalb nicht zu den gepruefften Groessen." und war
+   erst an diesem Tag auf Wunsch des Verfassers eingefuegt worden. **In der
+   Einleitung nicht wieder aufnehmen.** Die Abgrenzung steht weiter im
+   Abschnitt 4.6.2 selbst, naemlich "Die Bindungsdauer bleibt davon
+   unberuehrt und betraegt in allen Varianten eine Stunde." Die Einleitung
+   traegt damit fuenf Saetze.
+
+**Abschnitt 4.6.1 traegt jetzt sechs Absaetze**, naemlich den verschmolzenen
+Einleitungsabsatz, die Leistungsseite, die Arbeitsseite, die Schieflage, die
+Ungewissheit des Abrufs und die Abgrenzung der Jahresrechnung.
+
+**Zwei weitere Vorgaben im selben Durchgang.**
+
+4. **Der Befund zur aFRR wird an den Erloesvergleich gebunden.** Vorgabe des
+   Verfassers: dass die aFRR den groessten Teil traegt, hat der
+   Erloesvergleich bereits gezeigt. Der Satz lautet jetzt "... was sich mit
+   ihrem Anteil von drei Vierteln am Referenzerloes deckt." Genannt ist der
+   Anteil am **Referenzerloes** und nicht die zwei Drittel des Bruttoerloeses
+   aus dem Schlussabsatz des Abschnitts 4.2, denn die Stufe ohne aFRR
+   entfernt Leistung **und** Arbeit, und drei Viertel ist der Anteil beider
+   zusammen. Der Vorbehalt zur Trennung steht als eigener kurzer Satz
+   dahinter, weil zwei Nebensaetze in einem Satz die Stilregel 17 verletzen
+   wuerden.
+5. **Der Satz zum Einzelwert ist gestrichen.** Er lautete "Der Wert von 4687
+   Euro je Megawatt und Stunde ist ein Einzelwert, dessen Ursache nicht
+   untersucht ist." **Nicht wieder aufnehmen.** Der Absatz zur Leistungsseite
+   traegt damit sechs Saetze.
+### 23.09.2026, 4.6.1 je ein Absatz zu jeder Abbildung
+
+**Vorgabe des Verfassers.** Die Sortierung gefiel nicht: der Absatz nach der
+Einleitung soll sich allein um Abbildung 4.7 drehen und dort auch die
+Schieflage und die Entwicklung der Quantile beschreiben. Danach dasselbe fuer
+Abbildung 4.8, je ein Absatz, und am Ende ein Schlussfolgerungsabsatz.
+
+**Der bisherige eigene Absatz zur Schieflage ist aufgeloest** und auf die
+beiden Abbildungsabsaetze verteilt. Jeder Absatz traegt jetzt Niveau,
+Quantile und Schieflage seiner eigenen Abbildung.
+
+**Zwei Befunde des Verfassers sind aus der Abbildung aufgenommen und
+nachgerechnet.**
+
+1. *Der Grenzpreis hebt den oberen Rand und kaum das Hauptfeld.* Das obere
+   Ende der mittleren 50 Prozent steigt nur um 4,6 entladend und 4,9 ladend
+   (27,47 auf 32,05 und 30,64 auf 35,58), das Maximum dagegen auf das 4,6-
+   und das 3,8-Fache. Die Schieflage, gemessen als Mittel je Median, steigt
+   vom 1,9- auf das 2,3-Fache.
+2. *Die Lieferung der Arbeit wirkt in der Laderichtung staerker.* Die Stufe
+   ohne Lieferung senkt den Median der Ladereservierung um 44 Prozent und
+   laesst den der Entladereservierung mit 12,62 gegen 12,22 nahezu
+   unveraendert. Dieser Befund stand bisher im Absatz zu Abbildung 4.8,
+   gehoert aber zu Abbildung 4.7, denn die Stufe ohne Lieferung steht dort.
+
+**Der Absatz zu Abbildung 4.8 traegt den Gegenbefund.** Die freie Lieferung
+hebt das Hauptfeld statt des Randes: unteres Quartil plus 76, oberes Ende der
+mittleren 50 Prozent plus 49, 95-Prozent-Quantil nur plus 22 Prozent. Die
+Schieflage **sinkt** dabei vom 1,9- auf das 1,6-Fache. Die beiden Annahmen
+bewegen die Verteilung damit gegenlaeufig.
+
+**Neuer Schlussfolgerungsabsatz mit vier Saetzen.** Der Abrechnungspreis der
+Kapazitaetsauktion bestimmt die teuren Stunden, der Liefermodus die typische;
+fuer die Beschaffung wiegt der Liefermodus schwerer, denn der UENB trifft in
+den meisten Stunden auf das Hauptfeld. Der Satz "sodass der Basisfall mit der
+anteiligen Lieferung die belastbare Annahme bleibt" ist aus dem Absatz zur
+Ungewissheit des Abrufs hierher gezogen, damit er nicht zweimal steht.
+
+**Abschnitt 4.6.1 traegt jetzt sechs Absaetze**, naemlich Einleitung,
+Abbildung 4.7, Abbildung 4.8, Ungewissheit des Abrufs, Abgrenzung der
+Jahresrechnung und Schlussfolgerungen. Saetze je Absatz: 8, 7, 7, 5, 4, 4.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
