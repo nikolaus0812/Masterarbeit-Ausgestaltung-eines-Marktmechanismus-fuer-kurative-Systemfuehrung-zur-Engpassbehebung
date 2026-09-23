@@ -55,16 +55,16 @@ Fließtext ersetzt. Gliederung:
 | 4.6 Sensitivitäten | | |
 | 4.6.1 Modellierung der aFRR | aFRR Leistung, aFRR Energie | geschrieben |
 | 4.6.2 Abrufdauer | Abrufdauer, 2. Iteration | geschrieben |
-| 4.6.3 Handelsspanne am IDC | folgt | **leer, wartet auf `sensi8`** |
-| 4.6.4 Zukünftig niedrigere Preise | folgt | **leer, wartet auf `sensi8`** |
-| 4.7 Diskussion der Ergebnisse | keine | **leer, anschließend** |
+| 4.6.3 Handelsspanne am IDC | Faktor auf die Handelsspanne | geschrieben |
+| 4.6.4 Zukünftig niedrigere Preise | Erlösvergleich beider Welten | geschrieben |
 
-Die drei leeren Abschnitte stehen im PDF als bloße Überschriften. Der frühere
+Seit dem 23.09.2026 steht kein Abschnitt mehr leer, und die Diskussion der
+Ergebnisse ist als Abschnitt gestrichen, weil sie Kapitel 5 ist. Der frühere
 Abschnitt *Zahlung bei vollständiger Bindung* ist gestrichen, sein Inhalt
 steckt in 4.2. **Tabelle 4.1 ist ersatzlos entfallen**, die Verteilung trägt
 jetzt der Boxplot. Kapitel 4 hat keine Tabelle mehr.
 
-**Die Anweisung nennt die Sensitivitäten 4.7 und die Diskussion 4.8, streicht
+**Die Anweisung nannte die Sensitivitäten 4.7 und die Diskussion 4.8, strich
 aber zugleich 4.6.** Beides zugleich ginge nur mit einer Lücke in der
 Nummerierung, deshalb zählt LaTeX hier fortlaufend. Die Marken tragen die
 Sache und nicht die Nummer.
@@ -76,8 +76,8 @@ Schriftfassung nachgerechnet. Quelle ist
 `analysen/code/schrift/ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 7 und
 Abschnitt 4 der Anweisung. **Rückfragen dorthin, nicht nachrechnen.**
 
-Zehn Abbildungen liegen in `figures/chapter_4/`, die zehnte seit dem
-23.09.2026. Die drei Sensitivitätsabbildungen sind am 23.09.2026 neu
+Zwölf Abbildungen liegen in `figures/chapter_4/`, die beiden letzten seit
+der Lieferung `sensi8` vom 23.09.2026. Die drei Sensitivitätsabbildungen sind am 23.09.2026 neu
 geholt worden; sie tragen dieselben Zahlen und allein eine klarere
 Beschriftung mit den Maxima als Zahl am Whisker. Stand am 22.09.2026 abends
 geprüft: alle neun sind deckungsgleich mit dem Lieferordner. Das Zeitmuster
@@ -102,7 +102,8 @@ gerne mit dir formulieren"*.
 | 4.3 Verteilung der Verdrängungspreise | **durch** am 23.09., drei Absätze und Schlussfolgerungen |
 | 4.4 Zeitliches Muster | **durch** am 23.09., sieben Absätze, Summe neu gefasst, Ursachenabsatz und Schlussfolgerungen neu |
 | 4.5 bis 4.6.2 | geschrieben, noch nicht durchgegangen, **als nächstes 4.5** |
-| 4.6.3, 4.6.4, 4.7 | leer, warten auf `sensi8` |
+| 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert |
+| ~~4.7 Diskussion~~ | **gestrichen**, die Diskussion ist Kapitel 5 |
 
 **4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
 tagesvergleichenden, einen allgemeinen und die Schlussfolgerungen. Der
@@ -415,7 +416,8 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   offenen Tagesstunden an den 88,6\,Tsd.\,€/(MW·a) lässt sich aus dem
   vorhandenen Lauf nicht ziehen, weil die Erlösdatei je Tag und nicht je
   Stunde geführt ist. Dafür müsste der Iterationsvergleich neu laufen.
-- **4.6.3 und 4.6.4 sind leer** und warten auf `sensi8_spanne_und_niveau` aus
+- ~~4.6.3 und 4.6.4 sind leer.~~ **Am 23.09.2026 geschrieben**, `sensi8` ist
+  geliefert. Frueher stand hier, sie warteten auf `sensi8_spanne_und_niveau` aus
   dem Analyse-Repository. Nicht mit den Einzeltagsfassungen füllen.
 - **Für 4.6.4 vorgemerkt (G3), Entscheidung des Verfassers vom 22.09.2026:**
   Die niedrigeren \ac{aFRR}-Preise der Zukunftsvariante lassen sich damit

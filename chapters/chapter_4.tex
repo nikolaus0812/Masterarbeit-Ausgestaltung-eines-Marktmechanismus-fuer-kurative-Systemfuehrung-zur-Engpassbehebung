@@ -176,9 +176,15 @@ Am 11.02.2025 tragen die Handelsmärkte den Betrieb, denn der Ladezustand zeigt 
 Der \ac{DA} und der \ac{IDC} halten dort länger als die \ac{aFRR}-Leistung.
 Ab 50\,\EurMWh{} ist an diesem Tag die volle Leistung von 200\,\si{MW} über alle 24 Stunden kurativ reserviert.
 Am 06.05.2025 tritt als einzigem der fünf Tage die \ac{FCR} auf, nämlich in 16 der 96 Zeitscheiben, und sie ist schon bei 10\,\EurMWh{} verdrängt.
-Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum lösen, denn sie hält auch beim höchsten gerechneten Preis noch 16,7\,\si{MW}.
+% GESTRICHEN am 23.09.2026, Vorgabe des Verfassers: die MW-Angabe ist ein
+% Tagesmittel ueber beide Richtungen und sagt nicht, ob der Markt in wenigen
+% Slots mit viel oder in allen mit wenig Leistung gehalten wird. Die Aussage
+% traegt der folgende Satz mit den 11 Prozent. Zurueckgenommene Fassung:
+%Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum lösen, denn sie hält auch beim höchsten gerechneten Preis noch 16,7\,\si{MW}.
+Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum lösen, denn sie bleibt auch beim höchsten gerechneten Preis belegt.
 Die Bezugsanlage bleibt dort zu 11 Prozent ungebunden.
-Am 26.08.2025 hält der \ac{IDC} bis zum höchsten gerechneten Preis 8,8\,\si{MW}, während der \ac{DA} dort als erster Markt weicht.
+%Am 26.08.2025 hält der \ac{IDC} bis zum höchsten gerechneten Preis 8,8\,\si{MW}, während der \ac{DA} dort als erster Markt weicht.
+Am 26.08.2025 bleibt der \ac{IDC} bis zum höchsten gerechneten Preis belegt, während der \ac{DA} dort als erster Markt weicht.
 
 % ZUSAMMENGELEGT am 23.09.2026, Vorgabe des Verfassers. Der Abschnitt trug
 % zwei Schlussbloecke, naemlich vier Aussagen aus dem Vergleich und drei
@@ -197,11 +203,32 @@ Am 26.08.2025 hält der \ac{IDC} bis zum höchsten gerechneten Preis 8,8\,\si{MW
 %Der \ac{DA} kann daneben an einzelnen Tagen arbitragereich sein, und die Bezugsanlage verschiebt dann Leistung dorthin, statt sie abzubauen.
 %Der kurative Reservierungspreis wird damit nicht von einem einzelnen Markt bestimmt, sondern bis auf die \ac{FCR} von allen.
 Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
-Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, sodass die Reihenfolge der Märkte der Preisstruktur des jeweiligen Tages folgt.
-Eine Preismarke, ab der ein bestimmter Markt weicht, lässt sich deshalb nur für den einzelnen Tag angeben.
-Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung und weicht an vier der fünf Tage zuletzt oder vorletzt, sodass sie in der Regel den kurativen Reservierungspreis setzt.
-Der \ac{IDC} bindet weniger Leistung als die \ac{aFRR}, hält sich aber an mehreren Tagen länger als der \ac{DA}, weil der kontinuierliche Handel keinen zusammenhängenden Block braucht.
-Die \ac{FCR} tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}, sodass der kurative Reservierungspreis von allen Märkten bis auf die \ac{FCR} bestimmt wird.
+% GEKUERZT UND BERICHTIGT am 23.09.2026, Vorgabe des Verfassers.
+% Erstens sind die beiden ersten Saetze zu einem verbunden, denn dass eine
+% erloesmaximierende Optimierung zuerst den schwaechsten Markt verdraengt,
+% ist erwartbar und braucht keinen eigenen Satz.
+% Zweitens ist die Angabe, die aFRR-Leistung weiche an vier der fuenf Tage
+% zuletzt oder vorletzt, NICHT BELEGT und deshalb gestrichen. Nach ERGEBNISSE
+% Abschnitt 2.1 faellt die aFRR-Leistung am 20.01. und am 11.02. als erste
+% auf die Haelfte, naemlich schon bei 10 Euro je Megawatt und Stunde; die am
+% 23.09.2026 berichtigte Tabelle in Abschnitt 2.3 sagt dasselbe. Die Aussage,
+% dass die aFRR-Leistung den Preis setzt, steht jetzt auf der
+% Jahresauswertung in analysen/zeitmuster_ursachen mit einer Rangkorrelation
+% von 0,90 ladend und 0,74 entladend.
+% Drittens traegt der IDC-Satz die Begruendung des Verfassers, naemlich
+% wenige Viertelstunden mit hohen Arbitragegewinnen. Die Reichweite ist an
+% Abschnitt 2.1 geprueft: der IDC faellt am 06.05. und am 26.08. spaeter auf
+% die Haelfte als aFRR-Leistung und Day-Ahead, also an zwei der fuenf Tage.
+% Zurueckgenommene Fassungen, nicht wieder aufzunehmen:
+%Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, sodass die Reihenfolge der Märkte der Preisstruktur des jeweiligen Tages folgt.
+%Eine Preismarke, ab der ein bestimmter Markt weicht, lässt sich deshalb nur für den einzelnen Tag angeben.
+%Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung und weicht an vier der fünf Tage zuletzt oder vorletzt, sodass sie in der Regel den kurativen Reservierungspreis setzt.
+%Der \ac{IDC} bindet weniger Leistung als die \ac{aFRR}, hält sich aber an mehreren Tagen länger als der \ac{DA}, weil der kontinuierliche Handel keinen zusammenhängenden Block braucht.
+%Die \ac{FCR} tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}, sodass der kurative Reservierungspreis von allen Märkten bis auf die \ac{FCR} bestimmt wird.
+Die Märkte sind an verschiedenen Tagen verschieden erlösreich, sodass sich für keinen von ihnen ein einheitlicher Verdrängungspreis angeben lässt.
+Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung und setzt über das Jahr den kurativen Reservierungspreis.
+Der \ac{IDC} bindet weniger Leistung, hält sich an zwei der fünf Tage aber länger als die \ac{aFRR}-Leistung und der \ac{DA}, weil dort wenige Viertelstunden hohe Arbitragegewinne tragen.
+Die \ac{FCR} tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}, sodass sie für den kurativen Reservierungspreis kaum ins Gewicht fällt.
 
 % ---------------------------------------------------------------
 \section{Preise beider Iterationen und Erlöswirkung}
@@ -222,7 +249,8 @@ Die \ac{FCR} tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\
 %Von dem Bruttoerlös von 358,6 Tausend Euro je Megawatt und Jahr zieht das Optimierungsmodell 18,0 für die Degradation ab, sodass der Referenzerlös 340,6 Tausend Euro je Megawatt und Jahr beträgt.
 %Leistung und Arbeit der \ac{aFRR} tragen zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
 %Die fünf Tage zeigen die möglichen Reihenfolgen der Verdrängung und nicht das Gewicht der Märkte über das ganze Jahr.
-Aus den fünf Tagen folgt die Reihenfolge der Verdrängung, aus dem Jahreslauf das Gewicht der einzelnen Märkte.
+%Aus den fünf Tagen folgt die Reihenfolge der Verdrängung, aus dem Jahreslauf das Gewicht der einzelnen Märkte.
+Aus einem Jahreslauf über alle Tage lässt sich das Gewicht der einzelnen Märkte bestimmen.
 % GEKUERZT am 23.09.2026, Vorgabe des Verfassers: nicht Preis und Anteil je
 % Markt, sondern einmal die Summe und danach die Aufteilung in Anteilen.
 % Der Absatz faellt damit von acht auf sechs Saetze, und die absoluten Werte
@@ -747,26 +775,77 @@ Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der 
 
 \subsection{Handelsspanne am \acs{IDC}}
 \label{sec:sensi_idc}
-% OFFEN nach Abschnitt 5 der Anweisung vom 22.09.2026. Vorgesehen ist ein
-% Boxplot ueber das Jahr fuer die Streckungen 1,5 und 2,0 gegen den
-% Basisfall, mit Whiskern von Minimum bis Maximum. Die Jahreslaeufe
-% (sensi8_spanne_und_niveau) rechnen seit dem 22.09.2026 08:36. Die
-% Einzeltagsfassung sensi_idc_spread.pdf ist am 22.09.2026 aus der
-% Schriftfassung entfernt und wird ausdruecklich nicht aufgenommen.
-% Dieser Abschnitt bleibt bis zur Lieferung leer.
+% GEFUELLT am 23.09.2026 nach der Lieferung sensi8. Zahlen aus ERGEBNISSE
+% Abschnitt 7.12. Die Groesse heisst im Quelltext IDC_LAMBDA; die Arbeit
+% fuehrt kein Lambda ein und schreibt deshalb durchgehend Faktor, Vorgabe
+% des Analyse-Repositorys vom 23.09.2026.
+
+Die Handelsspanne am \ac{IDC} beruht im Optimierungsmodell auf dem \ac{ID1} und einem Aufschlag, sodass ihre Breite eine Annahme ist.
+Abbildung~\ref{fig:sensi_idc_spanne} zeigt den kurativen Reservierungspreis unter drei Annahmen über diese Spanne.
+Der Faktor streckt jede Abweichung des Intradaypreises von seinem Tagesmittel, sodass das Niveau der Preise unverändert bleibt und allein die Spanne wächst.
+Faktor 1 ist der Basisfall, und Faktor 2 verdoppelt jeden Abstand zum Tagesmittel.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_idc_spanne_2025.pdf}
+    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter drei Faktoren auf die Handelsspanne am \acs{IDC}, zweite Iteration. Der Faktor streckt den Abstand zum Tagesmittel.}
+    \label{fig:sensi_idc_spanne}
+\end{figure}
+
+Eine verdoppelte Handelsspanne hebt den Median von 12,22 auf 16,70 in der Entlade- und von 9,85 auf 13,57\,\EurMWh{} in der Laderichtung, also um 36,7 und 37,7 Prozent.
+Die Reaktion fällt damit unterproportional aus, denn der \ac{IDC} ist nicht der einzige verdrängte Markt.
+Die Maxima steigen dagegen fast proportional, nämlich von 1008 auf 1997 und von 510 auf 1017\,\EurMWh{}.
+Das deckt sich mit dem Befund des Abschnitts~\ref{sec:price_distribution}, wonach der \ac{IDC} in den teuersten Stunden die Leistung hält.
+Das untere Quartil der Ladereservierung sinkt zugleich von 2,34 über 1,80 auf 1,25\,\EurMWh{}, weil die Streckung die Täler ebenso vertieft, wie sie die Spitzen hebt.
 
 \subsection{Zukünftig niedrigere Preise}
 \label{sec:sensi_zukunft}
-% OFFEN nach Abschnitt 5 der Anweisung vom 22.09.2026. Vorgesehen ist ein
-% Erloesvergleich im Format der Abbildung 4.1 fuer die Variante
-% Handelsspanne mal 0,8, aFRR-Leistung und aFRR-Arbeit je mal 0,8 und FCR
-% mal 0,9. Zu beziffern sind die veraenderte Erloesaufteilung und der
-% Gesamterloesvergleich. Der Jahreslauf sensi8/zukunft rechnet noch.
-% Dieser Abschnitt bleibt bis zur Lieferung leer.
+% GEFUELLT am 23.09.2026 nach der Lieferung sensi8. Zahlen aus ERGEBNISSE
+% Abschnitt 7.13. Die Begruendung der niedrigeren aFRR-Preise ist die
+% Vormerkung G3 des Verfassers vom 22.09.2026.
 
-% ---------------------------------------------------------------
-\section{Diskussion der Ergebnisse}
-\label{sec:results_discussion}
-% OFFEN. AUFBAU_KAPITEL_4.md fuehrt diesen Abschnitt als 4.8 und vermerkt
-% dazu allein "Anschliessend", also nach den beiden ausstehenden
-% Sensitivitaeten. Dieser Abschnitt bleibt bis dahin leer.
+Die bisherigen Sensitivitäten prüfen die Belastbarkeit des Optimierungsmodells, während die letzte eine Annahme über die künftige Marktlage trifft.
+Die Zukunftsvariante senkt die Handelsspanne am \ac{IDC} und die Preise der \ac{aFRR} auf 80 Prozent und die Preise der \ac{FCR} auf 90 Prozent.
+Die Richtung folgt der Erwartung, dass der Bestand an \ac{BESS} wächst, während der Bedarf an Regelleistung aus der Dimensionierung des Systems folgt und nicht mitwächst.
+Abbildung~\ref{fig:sensi_zukunft} stellt den Erlös der Bezugsanlage in beiden Welten gegenüber.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_zukunft_erloes_2025.pdf}
+    \caption{Erlös der Bezugsanlage ohne kurative Bindung und unter vollständiger Verdrängung, im Jahr 2025 und in der Zukunftsvariante, in \TsdEurMWa{}.}
+    \label{fig:sensi_zukunft}
+\end{figure}
+
+Der Markterlös ohne kurative Bindung sinkt von 340,6 auf 281,4\,\TsdEurMWa{} und damit um 17,4 Prozent.
+Die Zahlung bei vollständiger Verdrängung sinkt von 420,0 auf 352,0\,\TsdEurMWa{} und damit um 16,2 Prozent.
+Der Aufschlag gegenüber dem Markterlös bleibt mit 25,1 gegen 23,3 Prozent nahezu gleich, denn der kurative Reservierungspreis ist die entgangene Marktopportunität und sinkt mit ihr.
+Die vollständige Verdrängung der Zukunftsvariante kostet mit 352,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}.
+Niedrigere Marktpreise machen die kurative Bindung damit nicht günstiger als der heutige Stand.
+% ABGESCHWAECHT am 23.09.2026, Vorgabe des Verfassers: der Anstieg des
+% Day-Ahead ist eine Rechenfolge und war erwartbar, denn er steigt, weil die
+% uebrigen Maerkte gesenkt sind. Die Fassung des Analyse-Repositorys, "der
+% Day-Ahead gewinnt, obwohl er gar nicht veraendert wurde", verkauft das als
+% Befund und ist nicht uebernommen. Der Absatz ist zugleich in den vorigen
+% gezogen, weil er fuer sich nur drei Saetze traegt. Zurueckgenommene
+% Fassung, nicht wieder aufzunehmen:
+%Die Aufteilung des verbliebenen Markterlöses der ersten Iteration verschiebt sich dabei.
+%Der \ac{DA} steigt dagegen von 7,3 auf 11,5\,\TsdEurMWa{}, obwohl seine Preise in der Zukunftsvariante unverändert bleiben.
+%Die kurative Reservierung verdrängt, was am wenigsten einbringt, und der \ac{DA} ist gegenüber den gesenkten Märkten relativ teurer geworden.
+Die Aufteilung des verbliebenen Markterlöses der ersten Iteration verschiebt sich erwartungsgemäß.
+Die \ac{aFRR}-Leistung fällt von 60,0 auf 45,7 und der \ac{IDC} von 16,4 auf 10,3\,\TsdEurMWa{}, während der \ac{DA} von 7,3 auf 11,5\,\TsdEurMWa{} steigt.
+Der \ac{DA} bleibt in der Zukunftsvariante unverändert und wird damit gegenüber den gesenkten Märkten relativ stärker, sodass die Reservierung ihn später verdrängt.
+
+% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers vom 22.09.2026: drei bis
+% fuenf Saetze Schlussfolgerungen je Abschnitt. Der Absatz steht am Ende des
+% Abschnitts 4.6 und fasst alle vier Sensitivitaeten.
+Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
+Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn ohne sie fällt der Median auf gut ein Viertel und unter freier Lieferung steigt er um zwei Drittel.
+Die Abrufdauer und die Handelsspanne am \ac{IDC} wirken schwächer, denn eine Verkürzung auf eine Viertelstunde senkt den Median um 4,0 und 12,7 Prozent und eine verdoppelte Handelsspanne hebt ihn um gut ein Drittel.
+Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld.
+Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis im selben Maß wie der Markterlös, sodass das Verhältnis beider bestehen bleibt.
+
+% GESTRICHEN am 23.09.2026, Klarstellung des Verfassers: die Diskussion der
+% Ergebnisse ist Kapitel 5 und kein Abschnitt des Kapitels 4. Der leere
+% Abschnitt mit der Marke sec:results_discussion entfaellt deshalb; die
+% Marke war nirgends referenziert. Kapitel 1 verweist mit ch:discussion
+% bereits auf Kapitel 5.

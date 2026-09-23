@@ -13706,6 +13706,143 @@ Abschnitt 7.2. Der Faktor 8,3 des Tagesgangs steht dort bereits.
 **Abschnitt 4.4 traegt damit sieben Absaetze**, naemlich Uebergang und
 Heatmap, Tagesgang je Richtung, Summe, Abstand von Median und Mittel,
 Jahresgang, Ursache und Schlussfolgerungen.
+### 23.09.2026, 4.6.3 und 4.6.4 gefuellt, 4.7 gestrichen
+
+**Klarstellung des Verfassers.** Die Diskussion der Ergebnisse ist
+Kapitel 5 und kein Abschnitt des Kapitels 4. Der leere Abschnitt mit der
+Marke `sec:results_discussion` ist deshalb gestrichen. Die Marke war
+nirgends referenziert, und Kapitel 1 verweist mit `ch:discussion` bereits
+auf Kapitel 5. Kapitel 4 endet damit mit den Sensitivitaeten.
+
+**Abschnitt 4.6.3, Handelsspanne am IDC.** Zahlen aus ERGEBNISSE
+Abschnitt 7.12, drei Jahreslaeufe. Der Faktor streckt jede Abweichung des
+Intradaypreises von seinem Tagesmittel, das Niveau bleibt also unveraendert
+und allein die Spanne waechst. Eine Verdopplung hebt den Median von 12,22
+auf 16,70 und von 9,85 auf 13,57 Euro je Megawatt und Stunde, also um 36,7
+und 37,7 Prozent, die Maxima dagegen von 1008 auf 1997 und von 510 auf
+1017, also fast proportional. Das untere Quartil der Ladereservierung
+sinkt von 2,34 ueber 1,80 auf 1,25, weil die Streckung die Taeler ebenso
+vertieft, wie sie die Spitzen hebt.
+
+**Kein griechischer Buchstabe.** Die Groesse heisst im Quelltext
+IDC_LAMBDA. Die Arbeit fuehrt Lambda an keiner Stelle ein, deshalb steht
+im Text und in der Bildunterschrift durchgehend *Faktor*. Vorgabe des
+Analyse-Repositorys vom 23.09.2026, uebernommen.
+
+**Abschnitt 4.6.4, zukuenftig niedrigere Preise.** Zahlen aus ERGEBNISSE
+Abschnitt 7.13, zwei vollstaendige Jahreslaeufe. Der Markterloes ohne
+kurative Bindung sinkt von 340,6 auf 281,4 und die Zahlung bei
+vollstaendiger Verdraengung von 420,0 auf 352,0 Tsd. Euro je Megawatt und
+Jahr. Der Aufschlag gegenueber dem Markt bleibt mit 25,1 gegen 23,3 Prozent
+nahezu gleich. Die Vollverdraengung der Zukunftsvariante kostet mit 352,0
+weiterhin mehr als der heutige Markterloes von 340,6.
+
+**Der Day-Ahead gewinnt, obwohl er nicht veraendert wurde.** Im Marktrest
+der ersten Iteration faellt die aFRR-Leistung von 60,0 auf 45,7 und der IDC
+von 16,4 auf 10,3, waehrend der Day-Ahead von 7,3 auf 11,5 Tsd. Euro je
+Megawatt und Jahr steigt. Die kurative Reservierung verdraengt, was am
+wenigsten einbringt, und der Day-Ahead ist gegenueber den gesenkten
+Maerkten relativ teurer geworden. Dieselbe Mechanik traegt den Befund des
+Abschnitts 4.1 zur tageweise wechselnden Verdraengungsreihenfolge.
+
+**Die Begruendung der niedrigeren aFRR-Preise** ist die Vormerkung G3 des
+Verfassers vom 22.09.2026 und steht jetzt im Text, naemlich dass der
+Bestand an BESS waechst, waehrend der Bedarf an Regelleistung aus der
+Dimensionierung des Systems folgt und nicht mitwaechst.
+
+**Schlussfolgerungen fuer 4.6** am Ende des Abschnitts, also nach 4.6.4 und
+nicht je Unterabschnitt, weil die vier Sensitivitaeten zusammen zu wuerdigen
+sind.
+
+**Formatbefund.** Die beiden neuen Unterabschnitte trugen zunaechst keine
+Leerzeile zwischen dem Kommentarblock unter der Ueberschrift und dem ersten
+Satz, anders als 4.6.1 und 4.6.2. Die Pruefung der Bildlage hat es
+gemeldet, weil die Abbildung dadurch unmittelbar auf einen Block mit der
+Ueberschrift folgte. Behoben.
+### 23.09.2026, Day-Ahead-Befund in 4.6.4 abgeschwaecht
+
+**Vorgabe des Verfassers.** Der Anstieg des Day-Ahead in der
+Zukunftsvariante ist eine Rechenfolge und war erwartbar: er steigt, weil
+die uebrigen Maerkte gesenkt sind und er dadurch relativ staerker wird.
+
+**Nicht uebernommen** ist deshalb die Fassung des Analyse-Repositorys in
+ERGEBNISSE Abschnitt 7.13, die den Punkt als Befund fuehrt: "Der Day-Ahead
+gewinnt, obwohl er gar nicht veraendert wurde." Zurueckgenommene
+Formulierung im Text, nicht wieder aufzunehmen: "Der DA steigt dagegen von
+7,3 auf 11,5 Tsd. Euro je Megawatt und Jahr, obwohl seine Preise in der
+Zukunftsvariante unveraendert bleiben."
+
+**Die Zahlen bleiben, die Wertung faellt weg.** Der Absatz sagt jetzt, die
+Aufteilung verschiebe sich erwartungsgemaess, und nennt die drei Werte in
+einem Satz. Er ist zugleich in den vorigen Absatz gezogen, weil er fuer
+sich nur drei Saetze traegt; der Absatz hat damit acht Saetze.
+### 23.09.2026, zwei MW-Angaben in 4.1 gestrichen
+
+**Vorgabe des Verfassers.** Die Angaben 16,7 MW am 15.05.2025 und 8,8 MW am
+26.08.2025 sagen nichts, weil es Tagesmittel ueber beide Richtungen sind
+und in der Regel mehrere Slots vorgehalten werden. Aus dem Mittel laesst
+sich nicht ablesen, ob der Markt in wenigen Slots mit viel oder in allen
+mit wenig Leistung gehalten wird.
+
+**Zurueckgenommene Formulierungen**, nicht wieder aufzunehmen: "denn sie
+haelt auch beim hoechsten gerechneten Preis noch 16,7 MW" und "Am
+26.08.2025 haelt der IDC bis zum hoechsten gerechneten Preis 8,8 MW". An
+ihre Stelle tritt *belegt bleiben*, der Begriff aus Anhang F.
+
+**Die Aussage bleibt quantifiziert.** Fuer den 15.05.2025 traegt der
+folgende Satz die Groesse, naemlich dass die Bezugsanlage dort zu
+11 Prozent ungebunden bleibt. Fuer den 26.08.2025 traegt sie der Vergleich
+mit dem Day-Ahead, der an demselben Tag als erster weicht.
+
+**Zwei MW-Angaben bleiben in 4.1**, naemlich der erklaerende Satz zur
+Einheit und die volle Leistung von 200 MW am 11.02.2025. Beide bezeichnen
+die Obergrenze und nicht einen Teilbetrag, und genau daran haengt die
+Aussagekraft.
+
+**Nicht betroffen ist Abschnitt 4.3.** Die dortigen 70,2 gegen 4,9 MW sind
+Stundenmittel derselben Groesse im Referenzfall und dienen dem Vergleich
+der teuersten Stunden mit dem Jahresmittel, nicht der Beschreibung eines
+einzelnen Tages.
+### 23.09.2026, Schlussfolgerungen 4.1 gekuerzt und berichtigt
+
+**Eine unbelegte Aussage ist gestrichen.** Der Satz "Die aFRR-Leistung
+bindet an jedem Tag den groessten Teil der Leistung und weicht an vier der
+fuenf Tage zuletzt oder vorletzt" traegt den zweiten Teil nicht. Nach
+ERGEBNISSE Abschnitt 2.1 faellt die aFRR-Leistung am 20.01. und am 11.02.
+als **erste** auf die Haelfte, naemlich schon bei 10 Euro je Megawatt und
+Stunde. Die am 23.09.2026 berichtigte Tabelle in Abschnitt 2.3 sagt
+dasselbe. Zutreffend waeren drei der fuenf Tage, und an zweien gilt das
+Gegenteil. Die Angabe stammt aus der Fassung vom 22.09.2026.
+
+**Die Aussage bleibt, ihr Beleg wechselt.** Dass die aFRR-Leistung den
+kurativen Reservierungspreis setzt, steht jetzt auf der Jahresauswertung in
+`analysen/zeitmuster_ursachen` mit einer Rangkorrelation von 0,90 in der
+Lade- und 0,74 in der Entladerichtung, nicht mehr auf der
+Verdraengungsreihenfolge der fuenf Tage.
+
+**Vorgabe des Verfassers zur Kuerzung.** Dass eine erloesmaximierende
+Optimierung zuerst den schwaechsten Markt verdraengt, ist erwartbar und
+braucht keinen eigenen Satz. Die beiden ersten Saetze sind deshalb zu einem
+verbunden: die Maerkte sind an verschiedenen Tagen verschieden erloesreich,
+sodass sich fuer keinen ein einheitlicher Verdraengungspreis angeben laesst.
+
+**Vorgabe des Verfassers zum IDC.** Der IDC haelt sich laenger, weil wenige
+Viertelstunden hohe Arbitragegewinne tragen, und nicht, weil der
+kontinuierliche Handel keinen zusammenhaengenden Block braucht. Die
+Reichweite ist an Abschnitt 2.1 geprueft: der IDC faellt am 06.05. und am
+26.08. spaeter auf die Haelfte als aFRR-Leistung und Day-Ahead, also an
+**zwei** der fuenf Tage. Der Text sagt zwei und nicht mehrere.
+
+**Der FCR-Satz endet nicht mehr mit der Aussage**, der Preis werde von
+allen Maerkten bis auf die FCR bestimmt. Sie stand in Spannung zu dem Satz
+davor, wonach die aFRR-Leistung den Preis setzt. Der Satz sagt jetzt allein,
+dass die FCR kaum ins Gewicht faellt.
+
+**Einstieg in 4.2 nach Vorgabe des Verfassers.** Zurueckgenommen ist "Aus
+den fuenf Tagen folgt die Reihenfolge der Verdraengung, aus dem Jahreslauf
+das Gewicht der einzelnen Maerkte." An ihre Stelle tritt "Aus einem
+Jahreslauf ueber alle Tage laesst sich das Gewicht der einzelnen Maerkte
+bestimmen."
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
