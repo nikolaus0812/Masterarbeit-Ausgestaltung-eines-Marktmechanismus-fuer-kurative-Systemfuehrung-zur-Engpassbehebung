@@ -12698,6 +12698,69 @@ gekennzeichnet.
 Intervallbreite von 0,05 Euro je MW und Stunde als Genauigkeit des
 ausgewiesenen Preises und die Fuellgradtoleranz von 0,01 MW.
 
+### 22.09.2026 nachts, Durchgang Absatz fuer Absatz durch 4.1 und Lage der Abbildungen
+
+**Arbeitsweise geaendert.** Der Verfasser geht das geschriebene Kapitel 4
+seit diesem Abend Absatz fuer Absatz durch und formuliert mit. Vorgabe:
+"lass erstmal alles stehen" und "ich will gerne mit dir formulieren".
+Claude schreibt keinen Abschnitt mehr einseitig fort.
+
+**Kein Abschnitt beginnt mit einem Bild.** Vorgabe des Verfassers:
+"4.2 bitte Abbildung 4.1 nach dem ersten Absatz. insgesamt keine kapitel
+mit einem bild starten." Alle acht Gleitumgebungen von Kapitel 4 standen
+vor dem Absatz, der sie einfuehrt, sechs davon unmittelbar hinter einer
+Ueberschrift. Jede steht jetzt hinter ihrem einfuehrenden Absatz.
+Eigenstaendige Erweiterung: auch die beiden Abbildungen im Inneren von 4.4
+und 4.6.1 sind mitgezogen, obwohl die Vorgabe sie nicht trifft. Grund ist,
+dass sonst in 4.4 zwei Abbildungen unmittelbar aufeinander gefolgt waeren
+und das Kapitel zwei verschiedene Reihenfolgen getragen haette. Stilregel
+16 bleibt gewahrt, denn der einfuehrende Absatz traegt den Verweis. Der
+Fliesstext ist dabei Wort fuer Wort unveraendert geblieben.
+
+**Schlussfolgerungen je Abschnitt.** Vorgabe des Verfassers: drei bis fuenf
+Saetze am Ende jedes Abschnitts, die fuer die spaetere Diskussion von
+Belang sind, ohne sie vorwegzunehmen. Die Eroeffnungsformel lautet "Aus
+dieser Untersuchung laesst sich Folgendes mitnehmen." und bleibt ueber alle
+Abschnitte gleich. Ausdrueckliche Vorgabe: kein erstens, zweitens,
+drittens. Eigenstaendige Ableitung: kein Verweis auf Kapitel 5, weil
+Stilregel 15 strukturelle Vorverweise ausschliesst; erkennbar wird die
+Stelle allein an der gleichbleibenden Formel. In 4.1 steht der Absatz, fuer
+4.2 bis 4.6 fehlt er noch.
+
+**Der Fliesstext wiederholt nicht den Anhang.** Der tagesbezogene Absatz in
+4.1 beschrieb denselben Schwellenlauf wie Anhang F. Befund des Verfassers:
+"dass du dort schon wie im anhang beschrieben hast was wann passiert. das
+finde ich bloed." Der Absatz zeigt jetzt je Tag den Markt, fuer den der Tag
+ausgewaehlt ist, und hoechstens eine auffaellige Gegenueberstellung. Am
+Redispatchtag stehen die Handelsmaerkte im Vordergrund, weil viel
+Preisspanne dort viel Handel bedeutet. Zurueckgenommene Fassungen stehen
+auskommentiert im Text und sind nicht wieder aufzunehmen.
+
+**Einheit der Leistungsangaben.** Rueckfrage des Verfassers: "was heissen
+hier die mw? meinst du mwh?" Die Spaltenueberschrift der Quelle lautet
+"Mittlere belegte Leistung je Markt in MW", es sind also Megawatt. Der
+Text sagt das jetzt einmal in 4.1 und einmal in Anhang F, naemlich dass die
+genannten Leistungen Tagesmittel ueber beide Richtungen sind, deren Summe
+hoechstens 200 MW betraegt.
+
+**Zwei Zahlen vor dem Setzen gegen die Daten geprueft.** Am 20.01.2025 ist
+der IDC bei 100 Euro je MW und Stunde auf 0,0 MW, waehrend der Day-Ahead
+bei 200 noch 1,5 MW haelt. Am 11.02.2025 erreicht die kurative Spalte bei
+50 Euro je MW und Stunde 200,0 MW, also die volle Leistung ueber alle
+24 Stunden. Beide Zahlen stammen aus der Ergebnisdatei des
+Analyse-Repositorys und nicht aus einer Abbildung.
+
+**Offen, nicht stellvertretend entschieden.** Die Vorgabe "afrr bindet den
+groessten teil der leistung und afrr hat durch viel spread in wenigen
+stunden auch einen hohen wert" ist als IDC umgesetzt, weil der Wert aus
+wenigen spreadstarken Stunden den kontinuierlichen Intraday-Handel
+beschreibt. Eigenstaendige Auslegung, vom Verfasser zu bestaetigen.
+
+**Offener Punkt.** Der Verfasser haelt die gehandelte Energie je Markt fuer
+aussagekraeftiger als die Leistungs-Tagesmittel. Diese Groesse steht nicht
+in ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md und waere beim Analyse-Repository
+anzufordern. Bis dahin stehen die Leistungswerte im Text.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

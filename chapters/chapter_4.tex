@@ -9,6 +9,14 @@
 %\chapter{Exemplarische Anwendung und Ergebnisse}
 \chapter{Ergebnisse}
 \label{ch:results}
+% ABBILDUNGSLAGE am 22.09.2026, Vorgabe des Verfassers: kein Abschnitt
+% beginnt mit einem Bild. Alle acht Gleitumgebungen dieses Kapitels
+% standen vor dem Absatz, der sie einfuehrt, sechs davon unmittelbar
+% hinter einer Ueberschrift. Jede Abbildung steht jetzt hinter ihrem
+% einfuehrenden Absatz. Einheitlich auch fuer die beiden Abbildungen
+% im Inneren von 4.4 und 4.6.1, damit das Kapitel eine Reihenfolge
+% traegt. Der Fliesstext ist dabei Wort fuer Wort unveraendert
+% geblieben, allein die Stellung der figure-Umgebungen ist neu.
 % ===============================================================
 % UMBAU am 22.09.2026 nach ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md (Stand
 % 22.09.2026) aus dem Analyse-Repository bess_dispatch_optimization. Diese
@@ -101,10 +109,11 @@ Alle Preise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), a
 %Am 11.02.2025 hält die aFRR-Leistung bis 20 EurMWh, am 26.08.2025 bis 150 EurMWh und am 15.05.2025 bis zum höchsten gerechneten Preis.
 %Die Reihenfolge der Verdrängung ist an allen vier Tagen dieselbe, die Preise ihres Eintretens unterscheiden sich jedoch um den Faktor zehn, sodass die Reihenfolge und nicht die Schwelle den übertragbaren Teil des Befundes bildet.
 Welche Vermarktung die kurative Reservierung verdrängt, zeigt der Fahrplan unter vorgegebenen Preisen.
-Dafür ist der Speicherbetrieb an fünf Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200\,\EurMWh{} gerechnet, und die zugehörigen Kachelfolgen stehen in Anhang~\ref{anh:preisgitter}.
+Dafür ist der Speicherbetrieb an fünf Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200\,\EurMWh{} gerechnet, und die zugehörigen Fahrpläne stehen in Anhang~\ref{anh:preisgitter}.
 Die fünf Tage decken je ein Extrem der geführten Märkte ab, nämlich der 20.01.2025 den größten Spread am \ac{DA}, der 11.02.2025 den größten Redispatchbedarf, der 15.05.2025 die höchsten Preise der \ac{FCR} und der \ac{aFRR}-Leistung und der 26.08.2025 die größte Tagesspanne des \ac{ID1}.
 Der 06.05.2025 tritt daneben, weil dort hohe Preise der \ac{FCR} auf niedrige Preise der \ac{aFRR}-Leistung treffen und sich die Wirkung beider Märkte deshalb trennen lässt.
 Ein steigender vorgegebener Preis macht die kurative Reservierung für den Betreiber lohnender, sodass die Reservierung nacheinander die Leistung übernimmt, die zuvor an den übrigen Märkten gebunden war.
+Die im Folgenden genannten Leistungen sind Tagesmittel über beide Richtungen, deren Summe höchstens 200\,\si{MW} beträgt.
 
 % UMGESTELLT am 22.09.2026, Vorgabe des Verfassers: die Befunde stehen jetzt
 % in zwei Absaetzen statt in fuenf. Der erste geht die Tage vergleichend
@@ -159,11 +168,13 @@ Ein steigender vorgegebener Preis macht die kurative Reservierung für den Betre
 %Sie ist schon bei 10\,\EurMWh{} vollständig verdrängt und damit der billigste Verdrängungskandidat aller geführten Märkte.
 %Am weitesten kommt die Verdrängung am 11.02.2025, wo die Bezugsanlage bereits bei 20\,\EurMWh{} zu 98 Prozent gebunden ist.
 %Am wenigsten weit kommt sie am 15.05.2025, wo sie selbst bei 200\,\EurMWh{} erst 89 Prozent erreicht und die \ac{aFRR}-Leistung noch 16,7\,\si{MW} hält.
-Jeder der fünf Tage zeigt vor allem den Markt, für den er ausgewählt ist.
-Am 20.01.2025 weicht der \ac{DA} trotz des größten Spreads des Jahres als letzter Markt.
+Im Vergleich der fünf Tage fällt Folgendes auf.
+Am 20.01.2025 weicht der \ac{DA} erwartungsgemäß als letzter Markt, denn er trägt dort den größten Spread des Jahres.
+Der \ac{IDC} ist an diesem Tag bei 100\,\EurMWh{} verschwunden, während der \ac{DA} bis zum höchsten gerechneten Preis belegt bleibt.
 Bei 15\,\EurMWh{} steht er dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
 Am 11.02.2025 tragen die Handelsmärkte den Betrieb, denn der Ladezustand zeigt zwei Zyklen.
 Der \ac{DA} und der \ac{IDC} halten dort länger als die \ac{aFRR}-Leistung.
+Ab 50\,\EurMWh{} ist an diesem Tag die volle Leistung von 200\,\si{MW} über alle 24 Stunden kurativ reserviert.
 Am 06.05.2025 tritt als einzigem der fünf Tage die \ac{FCR} auf, nämlich in 16 der 96 Zeitscheiben, und sie ist schon bei 10\,\EurMWh{} verdrängt.
 Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum lösen, denn sie hält auch beim höchsten gerechneten Preis noch 16,7\,\si{MW}.
 Die Bezugsanlage bleibt dort zu 11 Prozent ungebunden.
@@ -173,8 +184,8 @@ Aus dem Vergleich folgen vier Aussagen, die alle fünf Tage tragen.
 Die Reihenfolge, in der die Märkte weichen, folgt der Preisstruktur des Tages und nicht einer festen Rangordnung, denn verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt.
 Eine feste Preismarke, ab der ein bestimmter Markt weicht, lässt sich deshalb nicht angeben, und eine Aussage der Art, ein bestimmter Markt weiche zuerst, beschreibt den gewählten Tag und nicht den Mechanismus.
 Die \ac{aFRR}-Leistung weicht an vier der fünf Tage zuletzt oder vorletzt, sodass sie in der Regel den kurativen Reservierungspreis setzt.
-Der \ac{IDC} überlebt länger, als sein Anteil am Referenzerlös erwarten lässt, weil der kontinuierliche Handel keinen zusammenhängenden Block braucht und die Leistung nutzt, die die Reservierung in einzelnen Viertelstunden übrig lässt.
-Alle Befunde dieses Abschnitts beruhen auf fünf Tagen und belegen damit die möglichen Reihenfolgen, nicht ihre Häufigkeit über das Jahr.
+Der \ac{IDC} bindet zwar deutlich weniger Leistung als die \ac{aFRR}, hält sich aber an mehreren Tagen länger als der \ac{DA}.
+Die Ursache liegt in der Handelsform, denn der kontinuierliche Handel braucht keinen zusammenhängenden Block und nutzt die Leistung, die die Reservierung in einzelnen Viertelstunden übrig lässt.
 
 % ANGEFUEGT am 22.09.2026, Vorgabe des Verfassers: drei bis fuenf Saetze
 % Schlussfolgerungen je Abschnitt, die fuer die Diskussion von Belang
@@ -183,9 +194,9 @@ Alle Befunde dieses Abschnitts beruhen auf fünf Tagen und belegen damit die mö
 % Stelle an der gleichbleibenden Eroeffnungsformel.
 Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
 Die \ac{FCR} spielt für die Bezugsanlage kaum eine Rolle, denn sie tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}.
-Die Vermarktung hängt an der \ac{aFRR}-Leistung und am \ac{IDC}, die an jedem Tag den größten Teil der Leistung binden.
+Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung, während der \ac{IDC} seinen Wert aus großen Preisspannen in wenigen Stunden zieht.
 Der \ac{DA} kann daneben an einzelnen Tagen arbitragereich sein, und die Bezugsanlage verschiebt dann Leistung dorthin, statt sie abzubauen.
-Einen Markt oder einen Zeitpunkt, der an jedem Tag den größten Erlös trägt, gibt es damit nicht.
+Der kurative Reservierungspreis wird damit nicht von einem einzelnen Markt bestimmt, sondern bis auf die \ac{FCR} von allen.
 
 % ---------------------------------------------------------------
 \section{Preise beider Iterationen und Erlöswirkung}
@@ -195,17 +206,17 @@ Einen Markt oder einen Zeitpunkt, der an jedem Tag den größten Erlös trägt, 
 % Zahl am Balkenende ist der Gesamterloes nach Degradation, die
 % gestrichelte Linie markiert den Referenzwert.
 
+Woher der Erlös ohne kurative Bindung stammt, entscheidet darüber, was die Reservierung kostet.
+Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös nach Märkten auf: die \ac{aFRR}-Leistung trägt 235,1, der \ac{IDC} 50,2, die \ac{aFRR}-Arbeit 40,1, der \ac{DA} 26,1 und die \ac{FCR} 7,1 Tausend Euro je Megawatt und Jahr.
+Von dem Bruttoerlös von 358,6 Tausend Euro je Megawatt und Jahr zieht das Optimierungsmodell 18,0 für die Degradation ab, sodass der Referenzerlös 340,6 Tausend Euro je Megawatt und Jahr beträgt.
+Leistung und Arbeit der \ac{aFRR} tragen zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/erloesvergleich_vollverdraengung_2025.pdf}
     \caption{Erlös der Bezugsanlage im Jahr 2025 ohne kurative Bindung und unter den Preisvektoren beider Iterationen, in Tausend Euro je Megawatt und Jahr, netto nach Degradation; der Abzug für die Degradation steht links der Nulllinie, die gestrichelte Linie markiert den Referenzerlös.}
     \label{fig:erloesvergleich}
 \end{figure}
-
-Woher der Erlös ohne kurative Bindung stammt, entscheidet darüber, was die Reservierung kostet.
-Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös nach Märkten auf: die \ac{aFRR}-Leistung trägt 235,1, der \ac{IDC} 50,2, die \ac{aFRR}-Arbeit 40,1, der \ac{DA} 26,1 und die \ac{FCR} 7,1 Tausend Euro je Megawatt und Jahr.
-Von dem Bruttoerlös von 358,6 Tausend Euro je Megawatt und Jahr zieht das Optimierungsmodell 18,0 für die Degradation ab, sodass der Referenzerlös 340,6 Tausend Euro je Megawatt und Jahr beträgt.
-Leistung und Arbeit der \ac{aFRR} tragen zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
 
 Unter dem Preisvektor der ersten Iteration zahlt der \ac{ÜNB} 409,8 Tausend Euro je Megawatt und Jahr für die Vorhaltung, und die Bezugsanlage verdient daneben noch 88,6 an den übrigen Märkten.
 Der Preisvektor der ersten Iteration bindet die Leistung damit nicht vollständig, denn ein einheitlicher Preis je Tag lässt die teuren Stunden des Tages frei.
@@ -224,17 +235,17 @@ Die \ac{aFRR}-Leistung bleibt damit auch unter unvollständiger Bindung der grö
 % Abbildungshinweis: Whisker laeuft seit dem 22.09.2026 von Minimum bis
 % Maximum, p5 und p95 stehen als feine Marken darauf.
 
+Der kurative Reservierungspreis ist keine einzelne Zahl, sondern eine Verteilung über die Stunden des Jahres.
+Abbildung~\ref{fig:verteilung_reservierungspreis} zeigt diese Verteilung je Richtung.
+Die Entladereservierung kostet im Median 12,22\,\EurMWh{}, bei einem unteren Quartil von 4,33 und einem oberen von 27,47\,\EurMWh{}.
+Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach oben aber weiter, denn ihr oberes Quartil beträgt 30,64 und ihr 95-Prozent-Quantil 90,40 gegenüber 76,01\,\EurMWh{} in der Entladerichtung.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/verteilung_reservierungspreis_2025.pdf}
     \caption{Verteilung des kurativen Reservierungspreises über die 8758 Stunden des Jahres 2025 je Richtung, zweite Iteration; die Box umfasst das untere bis obere Quartil, der Whisker reicht von Minimum bis Maximum und trägt Marken beim 5- und beim 95-Prozent-Quantil.}
     \label{fig:verteilung_reservierungspreis}
 \end{figure}
-
-Der kurative Reservierungspreis ist keine einzelne Zahl, sondern eine Verteilung über die Stunden des Jahres.
-Abbildung~\ref{fig:verteilung_reservierungspreis} zeigt diese Verteilung je Richtung.
-Die Entladereservierung kostet im Median 12,22\,\EurMWh{}, bei einem unteren Quartil von 4,33 und einem oberen von 27,47\,\EurMWh{}.
-Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach oben aber weiter, denn ihr oberes Quartil beträgt 30,64 und ihr 95-Prozent-Quantil 90,40 gegenüber 76,01\,\EurMWh{} in der Entladerichtung.
 
 Die Verteilung ist in beiden Richtungen rechtsschief, denn das arithmetische Mittel übersteigt den Median um das 1,93-Fache in der Entlade- und um das 2,47-Fache in der Laderichtung.
 Wenige Stunden mit knapper Leistung tragen den Durchschnitt, während die typische Stunde günstig ist.
@@ -253,6 +264,11 @@ Der untere Whisker der Abbildung trägt deshalb keine Aussage über den Markt, d
 % Abbildungshinweis: Knick der Farbskala seit dem 22.09.2026 bei 10 statt
 % 15 Euro je Megawatt und Stunde, Farbskala nur mit ganzen Zahlen.
 
+Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
+Abbildung~\ref{fig:heatmap_reservierungspreis} trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf.
+Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
+Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entlade- und 161\,\EurMWh{} in der Laderichtung, sodass 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/heatmap_reservierungspreis_2025.pdf}
@@ -260,10 +276,10 @@ Der untere Whisker der Abbildung trägt deshalb keine Aussage über den Markt, d
     \label{fig:heatmap_reservierungspreis}
 \end{figure}
 
-Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
-Abbildung~\ref{fig:heatmap_reservierungspreis} trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf.
-Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
-Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entlade- und 161\,\EurMWh{} in der Laderichtung, sodass 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
+In Abbildung~\ref{fig:zeitmuster_reservierungspreis} sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst.
+Die Entladereservierung erreicht ihren größten Median mit 43,8\,\EurMWh{} in der Stunde um 19 Uhr und ihren kleinsten mit 2,2\,\EurMWh{} in der Stunde um 4 Uhr.
+Die Ladereservierung liegt umgekehrt, denn ihr größter Median beträgt 58,6\,\EurMWh{} um 13 Uhr und ihr kleinster 2,2\,\EurMWh{} um 20 Uhr.
+Die Spitzen beider Richtungen fallen damit auseinander, weil die Einspeisung aus Photovoltaik mittags den Wert des Ladens und abends den Wert des Entladens setzt.
 
 \begin{figure}[H]
     \centering
@@ -275,11 +291,6 @@ Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entl
     \caption{Tagesgang und Jahresgang des kurativen Reservierungspreises im Jahr 2025 über 8758 Stunden je Richtung, zweite Iteration; durchgezogen der Median, gestrichelt das arithmetische Mittel, die graue Fläche ist der Abstand beider Maße für die Summe. Die Summe beider Richtungen ist kein Mittelwert, sondern der Preis eines Produkts in beiden Richtungen.}
     \label{fig:zeitmuster_reservierungspreis}
 \end{figure}
-
-In Abbildung~\ref{fig:zeitmuster_reservierungspreis} sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst.
-Die Entladereservierung erreicht ihren größten Median mit 43,8\,\EurMWh{} in der Stunde um 19 Uhr und ihren kleinsten mit 2,2\,\EurMWh{} in der Stunde um 4 Uhr.
-Die Ladereservierung liegt umgekehrt, denn ihr größter Median beträgt 58,6\,\EurMWh{} um 13 Uhr und ihr kleinster 2,2\,\EurMWh{} um 20 Uhr.
-Die Spitzen beider Richtungen fallen damit auseinander, weil die Einspeisung aus Photovoltaik mittags den Wert des Ladens und abends den Wert des Entladens setzt.
 
 % NACHTRAG am 22.09.2026: die Abbildung fuehrt seit dem 22.09.2026 auch
 % das arithmetische Mittel, sodass die Summe nicht mehr die dritte Kurve ist.
@@ -320,18 +331,18 @@ Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Ab
 % reicht, und das arithmetische Mittel ist die aussagekraeftigere Groesse.
 % Die figure-Umgebung stand hier und liegt jetzt in
 % extras/attachment_jahreslauf.tex unter der Marke anh:jahreslauf_median.
+Das Muster aus Abschnitt~\ref{sec:price_pattern} sagt, wann die Vorhaltung teuer ist, und lässt offen, ob diese Zeiten mit dem Engpassmanagementbedarf zusammenfallen.
+In Abbildung~\ref{fig:jahreslauf_mittel} steht das arithmetische Mittel des kurativen Reservierungspreises je Tag neben der Redispatchleistung desselben Tages.
+Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel sich mit der beschafften Menge multipliziert und damit die Kosten des \ac{ÜNB} trägt.
+Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,\EurMWh{} in der Laderichtung, der Median der Tagesmittel dagegen 18,18 und 21,78\,\EurMWh{}.
+Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellung im Median steht in Anhang~\ref{anh:jahreslauf_median}.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/jahreslauf_reservierungspreis_redispatch_2025_mittel.pdf}
     \caption{Arithmetisches Mittel des kurativen Reservierungspreises je Tag des Jahres 2025 neben der Redispatchleistung im Tagesmittel, oben die Entlade- und unten die Ladereservierung; die waagerechte Linie ist der Arbeitspreis des präventiven Redispatch 2025 von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.}
     \label{fig:jahreslauf_mittel}
 \end{figure}
-
-Das Muster aus Abschnitt~\ref{sec:price_pattern} sagt, wann die Vorhaltung teuer ist, und lässt offen, ob diese Zeiten mit dem Engpassmanagementbedarf zusammenfallen.
-In Abbildung~\ref{fig:jahreslauf_mittel} steht das arithmetische Mittel des kurativen Reservierungspreises je Tag neben der Redispatchleistung desselben Tages.
-Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel sich mit der beschafften Menge multipliziert und damit die Kosten des \ac{ÜNB} trägt.
-Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,\EurMWh{} in der Laderichtung, der Median der Tagesmittel dagegen 18,18 und 21,78\,\EurMWh{}.
-Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellung im Median steht in Anhang~\ref{anh:jahreslauf_median}.
 
 % NACHTRAG am 22.09.2026, Vorgabe des Verfassers. Die bewegte Menge ist
 % jetzt nach Richtungen aufgeschluesselt, der Nenner ausdruecklich nicht
@@ -415,6 +426,11 @@ Die Sensitivitäten nutzen eine eigene Referenzrechnung, die im Median um 0,01\,
 \label{sec:sensi_afrr}
 % Zahlen aus ERGEBNISSE Abschnitt 7.5 und 7.6, gepaarte Differenzen aus 3.1.
 
+In Abbildung~\ref{fig:sensi_afrr_leistung} sind vier Annahmen über die \ac{aFRR}-Leistung gestaffelt, von der Variante ohne \ac{aFRR} bis zur Bewertung der vorgehaltenen Leistung zum Grenzpreis.
+Ohne \ac{aFRR} fällt der Median auf 3,47\,\EurMWh{} in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
+Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises.
+Diese Variante trennt Leistung und Arbeit allerdings nicht, denn unter anteiliger Lieferung hängt die Menge der gelieferten Arbeit an der vorgehaltenen Leistung und entfällt mit ihr.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_leistung_2025.pdf}
@@ -422,15 +438,15 @@ Die Sensitivitäten nutzen eine eigene Referenzrechnung, die im Median um 0,01\,
     \label{fig:sensi_afrr_leistung}
 \end{figure}
 
-In Abbildung~\ref{fig:sensi_afrr_leistung} sind vier Annahmen über die \ac{aFRR}-Leistung gestaffelt, von der Variante ohne \ac{aFRR} bis zur Bewertung der vorgehaltenen Leistung zum Grenzpreis.
-Ohne \ac{aFRR} fällt der Median auf 3,47\,\EurMWh{} in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
-Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises.
-Diese Variante trennt Leistung und Arbeit allerdings nicht, denn unter anteiliger Lieferung hängt die Menge der gelieferten Arbeit an der vorgehaltenen Leistung und entfällt mit ihr.
-
 Bewertet das Optimierungsmodell die vorgehaltene Leistung mit dem Grenzpreis statt mit dem mengengewichteten Mittel der Zuschläge, steigt der Median auf 14,19 und 11,47\,\EurMWh{} und damit um rund 16 Prozent.
 Das Maximum der Entladereservierung steigt dagegen von 1008 auf 4687\,\EurMWh{} und damit auf das Viereinhalbfache.
 Die Annahme über den Zuschlagspreis verschiebt somit nicht das Niveau des kurativen Reservierungspreises, sondern seinen oberen Rand.
 Der Wert von 4687\,\EurMWh{} ist ein Einzelwert, dessen Ursache nicht untersucht ist.
+
+In Abbildung~\ref{fig:sensi_afrr_energie} ist die Lieferung der \ac{aFRR}-Arbeit bei gleichbleibendem Leistungspreis variiert.
+Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median von 12,22 auf 18,85\,\EurMWh{} in der Entlade- und von 9,85 auf 20,69\,\EurMWh{} in der Laderichtung.
+Die Lieferung bis zum realen Abruf und die Lieferung bis zur vollen Speicherleistung ergeben mit 20,60 und 20,61\,\EurMWh{} entladend sowie 20,88 und 21,33\,\EurMWh{} ladend nahezu dieselben Werte.
+Der Sprung liegt damit zwischen anteiliger und freier Lieferung und nicht zwischen den drei freien Liefermodi, sodass allein die Zulassung freier Lieferung zu begründen ist.
 
 \begin{figure}[H]
     \centering
@@ -438,11 +454,6 @@ Der Wert von 4687\,\EurMWh{} ist ein Einzelwert, dessen Ursache nicht untersucht
     \caption{Kurativer Reservierungspreis über alle Stunden des Jahres 2025 unter vier Liefermodi der \acs{aFRR}-Arbeit bei gleichem Leistungspreis, zweite Iteration; \enquote{bis 100\,\si{MW}} bezeichnet die Lieferung bis zur Speicherleistung in abgerufenen Zeitscheiben.}
     \label{fig:sensi_afrr_energie}
 \end{figure}
-
-In Abbildung~\ref{fig:sensi_afrr_energie} ist die Lieferung der \ac{aFRR}-Arbeit bei gleichbleibendem Leistungspreis variiert.
-Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median von 12,22 auf 18,85\,\EurMWh{} in der Entlade- und von 9,85 auf 20,69\,\EurMWh{} in der Laderichtung.
-Die Lieferung bis zum realen Abruf und die Lieferung bis zur vollen Speicherleistung ergeben mit 20,60 und 20,61\,\EurMWh{} entladend sowie 20,88 und 21,33\,\EurMWh{} ladend nahezu dieselben Werte.
-Der Sprung liegt damit zwischen anteiliger und freier Lieferung und nicht zwischen den drei freien Liefermodi, sodass allein die Zulassung freier Lieferung zu begründen ist.
 
 Die beiden Annahmen wirken an verschiedenen Stellen der Verteilung.
 Die freie Lieferung hebt das untere Quartil von 4,33 auf 7,64\,\EurMWh{} und den Median von 12,22 auf 20,61\,\EurMWh{}, das 95-Prozent-Quantil dagegen nur von 76 auf 92\,\EurMWh{}.
@@ -460,17 +471,17 @@ Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, so
 % 22.09.2026 nur die zweite Iteration; die Werte der ersten Iteration
 % stehen deshalb als Zahl im Text und tragen keine eigene Abbildung.
 
+Die Abrufdauer ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet, denn sie folgt aus der Zeit, über die eine kurative Maßnahme wirken muss.
+Die Abrufdauer setzt im Optimierungsmodell die Breite des reservierten Ladezustandsbandes, also eine Megawattstunde je Megawatt bei einer Stunde.
+Die Bindungsdauer bleibt davon unberührt und beträgt in allen Varianten eine Stunde.
+Abbildung~\ref{fig:sensi_abrufdauer} zeigt die Abrufdauern von einer Stunde, einer halben Stunde und einer Viertelstunde je Richtung.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/sensi_abrufdauer_2025_iteration2.pdf}
     \caption{Kurativer Reservierungspreis über alle Stunden des Jahres 2025 bei drei Abrufdauern je Richtung, zweite Iteration; die Spanne zwischen Minimum und Maximum bewegt sich zwischen den drei Stufen kaum, während Median und mittlere 50 Prozent sinken.}
     \label{fig:sensi_abrufdauer}
 \end{figure}
-
-Die Abrufdauer ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet, denn sie folgt aus der Zeit, über die eine kurative Maßnahme wirken muss.
-Die Abrufdauer setzt im Optimierungsmodell die Breite des reservierten Ladezustandsbandes, also eine Megawattstunde je Megawatt bei einer Stunde.
-Die Bindungsdauer bleibt davon unberührt und beträgt in allen Varianten eine Stunde.
-Abbildung~\ref{fig:sensi_abrufdauer} zeigt die Abrufdauern von einer Stunde, einer halben Stunde und einer Viertelstunde je Richtung.
 
 Von einer Stunde auf eine Viertelstunde sinkt der Median der zweiten Iteration von 12,21 auf 11,72\,\EurMWh{} in der Entlade- und von 9,84 auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
 In der ersten Iteration fällt dieselbe Verkürzung mit 18,8 und 35,1 Prozent stärker aus.

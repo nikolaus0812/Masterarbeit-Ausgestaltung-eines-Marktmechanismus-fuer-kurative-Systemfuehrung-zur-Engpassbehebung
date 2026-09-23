@@ -1,7 +1,16 @@
-# Übergabe an die nächste Sitzung, Stand 22.09.2026, abends
+# Übergabe an die nächste Sitzung, Stand 22.09.2026, nachts
 
 Diese Datei ersetzt die Fassung vom 22.09.2026 morgens vollständig. Die alte
 Fassung steht in der Git-Historie.
+
+> **Zuerst lesen: es liegen ungesicherte Änderungen im Arbeitsverzeichnis.**
+> Geändert und **nicht committet** sind `chapters/chapter_4.tex`, diese Datei
+> und `ENTSCHEIDUNGSPROTOKOLL.md`, weil der Verfasser die Sitzung ohne
+> „commite" beendet hat. `git status` zeigt alle drei. Der Stand ist gebaut
+> und geprüft, er ist nur nicht festgeschrieben. Vor der ersten eigenen
+> Änderung `git diff` lesen und den Verfasser fragen, ob der Stand zuerst
+> committet werden soll.
+> Gepusht ist bis einschließlich `5015eac`, `origin/main` ist eingeholt.
 
 **Lesereihenfolge zu Beginn der Sitzung.** `CLAUDE.md`, dann diese Datei, dann
 `WORKFLOW.md` Abschnitte 3, 7 und 10. `ENTSCHEIDUNGSPROTOKOLL.md` hat über
@@ -22,7 +31,7 @@ beiden Warnungen zu `ch:discussion` und `ch:conc` sind deshalb normal.
 | Kapitel 1 Einleitung | PDF-Seite 9 bis 13, fünf Seiten, **keine Reserve** |
 | Kapitel 2 Grundlagen und Stand der Technik | PDF-Seite 14 bis 37 |
 | Kapitel 3 Marktmechanismus und Modellierung | PDF-Seite 38 bis 56 |
-| Kapitel 4 Ergebnisse | PDF-Seite 57 bis 68 |
+| Kapitel 4 Ergebnisse | PDF-Seite 57 bis 68, logisch 49 bis 60 |
 | Anhänge A bis G | A Weber, B Überlastdauer, C Optimierungsproblem, D Ablauf, E Validierung je Markt, F Preisgitter, G Jahreslauf im Median |
 
 Logische Seitenzahl ist PDF-Seite minus acht.
@@ -72,6 +81,38 @@ grauen Fläche dazwischen.
 
 **Der Kapiteltitel lautet seit dem 22.09.2026 `Ergebnisse`**, Entscheidung des
 Verfassers über das Analyse-Repository.
+
+### 1.3 Der Durchgang Absatz für Absatz läuft, 4.1 ist fertig
+
+Seit dem 22.09.2026 abends geht der Verfasser das geschriebene Kapitel 4
+**Absatz für Absatz mit Claude durch**. Der Text wird nicht mehr einseitig
+verfasst, sondern gemeinsam formuliert. Vorgabe des Verfassers: *„ich will
+gerne mit dir formulieren"*.
+
+| Abschnitt | Durchgang |
+|---|---|
+| Kapiteleinleitung | **durch**, in der Nacht vom 22.09. neu gefasst |
+| 4.1 Verlauf des Dispatch | **durch**, drei Umbauten, Stand siehe unten |
+| 4.2 Preise beider Iterationen | **als nächstes** |
+| 4.3 bis 4.6.2 | geschrieben, noch nicht durchgegangen |
+| 4.6.3, 4.6.4, 4.7 | leer, warten auf `sensi8` |
+
+**4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
+tagesvergleichenden, einen allgemeinen und die Schlussfolgerungen. Der
+tagesvergleichende Absatz beginnt mit *„Im Vergleich der fünf Tage fällt
+Folgendes auf."* Die Zwischenstände sind im Text als Kommentar mit Datum und
+Grund erhalten, die zurückgenommenen Fassungen stehen auskommentiert darüber.
+
+**In der Nacht vom 22.09. sind neun Änderungen an 4.1 eingearbeitet**, alle
+vom Verfasser diktiert: *Kachelfolgen* heißt jetzt *Fahrpläne*; die Einheit
+der genannten Leistungen ist einmal erklärt; der 20.01. weicht
+*erwartungsgemäß* als letzter und trägt den Abstand zum IDC; am 11.02. ist ab
+50 Euro je Megawatt und Stunde die volle Leistung von 200 MW über alle
+24 Stunden reserviert; der IDC-Satz kommt ohne Vorgriff auf die
+Erlösaufteilung des Abschnitts 4.2 aus; der Satz über die fünf Tage als
+Grundlage ist gestrichen; die aFRR bindet die Leistung, der IDC zieht seinen
+Wert aus wenigen spreadstarken Stunden; und der Schlusssatz lautet, dass der
+Preis bis auf die FCR von allen Märkten bestimmt wird.
 
 ---
 
@@ -154,6 +195,31 @@ Ausführlich im Protokoll. Kurz:
   **wird nicht halbiert**, weil die Reihe nicht symmetrisch ist. Näheres in 4.5
   und im Protokoll.
 - **Kapiteltitel `Ergebnisse`**, entschieden am 22.09.2026.
+- **Kein Abschnitt beginnt mit einem Bild**, Vorgabe des Verfassers vom
+  22.09.2026. In Kapitel 4 steht seither **jede Abbildung hinter dem Absatz,
+  der sie einführt**. Das gilt auch für die beiden Abbildungen im Inneren von
+  4.4 und 4.6.1, damit das Kapitel eine Reihenfolge trägt. Stilregel 16
+  bleibt gewahrt, denn der einführende Absatz trägt den Verweis. Beim
+  Einfügen neuer Abbildungen in 4.6.3, 4.6.4 und in Kapitel 5 ist die Regel
+  mitzuführen.
+- **Jeder Abschnitt endet mit drei bis fünf Sätzen Schlussfolgerungen**,
+  Vorgabe des Verfassers vom 22.09.2026. Sie sind für die spätere Diskussion
+  von Belang, nehmen sie aber nicht vorweg. Die Eröffnungsformel lautet
+  **„Aus dieser Untersuchung lässt sich Folgendes mitnehmen."** und bleibt
+  über alle Abschnitte gleich, damit die Stelle erkennbar ist. **Kein
+  erstens, zweitens, drittens**, ausdrückliche Vorgabe. Kein Verweis auf
+  Kapitel 5, weil Stilregel 15 strukturelle Vorverweise ausschließt. In 4.1
+  steht der Absatz, für 4.2 bis 4.6 fehlt er noch.
+- **Der Fließtext wiederholt nicht den Anhang.** Der tagesbezogene Absatz in
+  4.1 beschrieb anfangs denselben Schwellenlauf wie Anhang F. Er zeigt jetzt
+  je Tag den Markt, für den der Tag ausgewählt ist, und höchstens eine
+  auffällige Gegenüberstellung. Am Redispatchtag stehen die Handelsmärkte im
+  Vordergrund, weil viel Preisspanne dort viel Handel bedeutet.
+- **Leistungsangaben in 4.1 und Anhang F sind Tagesmittel über beide
+  Richtungen**, deren Summe höchstens 200 MW beträgt. Der Satz steht einmal
+  in 4.1 und einmal in Anhang F. Die Spaltenüberschrift der Quelle lautet
+  *Mittlere belegte Leistung je Markt in MW*, es sind also Megawatt und nicht
+  Megawattstunden.
 - Die Entscheidungen vom 18. und 19.09.2026 gelten unverändert: Stilregel 1
   mit mindestens einer halben Seite je Absatz, Trendjahr 2032, Aktenzeichen
   `BK8-22-001-A`, KuPilot erprobt die Höherauslastung, technologieoffener
@@ -181,6 +247,12 @@ Ausführlich im Protokoll. Kurz:
   `\includegraphics[width=\textwidth]` ohne weitere Skalierung. Sichtprüfung
   mit `pdftoppm -png -r 70` und dem Read-Werkzeug. Vor dem Holen die
   Zeitstempel vergleichen, das Analyse-Repository liefert mehrmals täglich neu.
+- **Gleitumgebungen verschieben, nicht neu schreiben.** Beim Umstellen der
+  Abbildungslage hat ein Skript die `figure`-Blöcke zeilenweise umgehängt und
+  den Fließtext unangetastet gelassen; die Kommentarzeilen sind an der
+  Überschrift geblieben, weil sie die Entscheidungen zur Überschrift
+  dokumentieren. Gegenprobe war, dass der Absatz hinter der Umgebung deren
+  Marke auch nennt.
 - **Subagenten nur nach Rückfrage**, mit Zweck und Anzahl.
 - Nicht jede Quelle ist maschinell lesbar. `pdffonts` prüfen, bevor man einem
   leeren `pdftotext` traut.
@@ -230,6 +302,31 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   führt jetzt `abbildungen_pruefen.py` als Wächter. Stellen unter 8 pt sind
   ausnahmslos Computer Modern in Skriptgröße, also Indizes des Formelsatzes,
   und bleiben.
+- **Rückfrage an den Verfasser, ungeklärt.** Seine Vorgabe lautete
+  *„afrr bindet den größten teil der leistung und afrr hat durch viel spread
+  in wenigen stunden auch einen hohen wert"*. Das zweite *aFRR* ist als
+  **IDC** umgesetzt, weil der Wert aus wenigen spreadstarken Stunden den
+  kontinuierlichen Intraday-Handel beschreibt und nicht die
+  Kapazitätsvorhaltung. Der Satz steht so in 4.1. **Vor dem nächsten Commit
+  bestätigen lassen.**
+- **Gehandelte Energie je Markt und Tag fehlt.** Der Verfasser hält sie für
+  aussagekräftiger als die Leistungs-Tagesmittel in MW: *„die gehandelte
+  energie wäre noch interessanter und aussagekräftiger"*. Diese Größe steht
+  **nicht** in `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md`. Erforderlich wäre ein
+  Auftrag an das Analyse-Repository, die Energie je Markt, Tag und Preisstufe
+  auszuweisen. Bis dahin stehen die MW-Werte im Text, mit dem erklärenden
+  Satz zur Einheit.
+- **Widerspruch im Analyse-Repository noch nicht gemeldet.**
+  `ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Abschnitt 2.3 nennt den 11.02.2025 als
+  Tag, an dem der Day-Ahead zuerst weicht. Abschnitt 2.1 derselben Datei zeigt
+  das Gegenteil, nämlich die Halbierung der aFRR bei 10 und die von Day-Ahead
+  und IDC erst bei 15 Euro je Megawatt und Stunde. Die Schriftfassung folgt
+  der Tabelle und nennt den 26.08.2025. **Die Meldung an den Analyse-Chat
+  steht aus.**
+- **Einheit uneinheitlich.** Das Makro `\TsdEurMWa` aus `extras/macros.tex`
+  wird in Kapitel 4 genau einmal verwendet, neunmal steht *Tausend Euro je
+  Megawatt und Jahr* ausgeschrieben. Vor dem Durchgang durch 4.2 zu
+  vereinheitlichen, weil 4.2 die meisten dieser Stellen trägt.
 - **4.6.3 und 4.6.4 sind leer** und warten auf `sensi8_spanne_und_niveau` aus
   dem Analyse-Repository. Nicht mit den Einzeltagsfassungen füllen.
 - **Für 4.6.4 vorgemerkt (G3), Entscheidung des Verfassers vom 22.09.2026:**
