@@ -103,6 +103,35 @@ unerwähnt.
 
 ---
 
+## 4a Eine vierte Frage, neu am 23.09.2026
+
+**Veröffentlicht SMARD den Redispatch stundenscharf, und zeigt er ein
+Tagesmuster?**
+
+Abschnitt 4.5 der Arbeit hält den kurativen Reservierungspreis gegen den
+Engpassmanagementbedarf. Der Preis hat ein ausgeprägtes Tagesmuster: der
+Median der Summe beider Richtungen schwankt über den Tag um den Faktor 8,3
+und über die Monate nur um 4,2.
+
+Die Redispatchleistung liegt uns dagegen nur als Tageswert vor, sodass der
+Vergleich auf der Jahreszeit stattfinden muss. **Wir wollen nicht
+behaupten, der Redispatch sei von der Tageszeit unabhängig**, denn dafür
+haben wir keinen Beleg.
+
+Gesucht ist deshalb:
+
+1. Ob SMARD oder die Übertragungsnetzbetreiber den Redispatch in
+   stündlicher oder viertelstündlicher Auflösung für das Jahr 2025
+   veröffentlichen, und unter welcher Auswertung.
+2. Falls ja, ob sich ein Tagesmuster zeigt, etwa eine Häufung in den
+   Nachtstunden bei hoher Windeinspeisung oder in den Abendstunden bei
+   hoher Last.
+3. Falls sich kein Tagesmuster zeigt, wäre auch das ein Ergebnis und für
+   die Arbeit sogar das nützlichere, denn dann lässt sich die Beschränkung
+   auf die Jahreszeit begründen statt nur mit der Datenlage erklären.
+
+---
+
 ## 5 Was die Antwort tragen muss
 
 Die Arbeit zitiert mit biblatex. Für jede Aussage, die in den Text soll, wird

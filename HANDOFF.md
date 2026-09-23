@@ -129,7 +129,7 @@ Preis bis auf die FCR von allen Märkten bestimmt wird.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
-### Wurzelverzeichnis, sieben Dateien
+### Wurzelverzeichnis, acht Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -138,6 +138,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
+| `AUFTRAG_REDISPATCH_ZEITMUSTER.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Zeitmuster des Redispatch im Format der Abbildung 4.5, voraussichtlich für den Anhang. Nachrangig. |
 | `AUFTRAG_REFERENZAUFTEILUNG.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Aufteilung des Referenzerlöses in der Zukunftsvariante. Nachrangig, 4.6.4 steht auch ohne sie. |
 | `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 an einen getrennten Chat mit Zugriff auf SMARD und die öffentlichen Quellen der Bundesnetzagentur. Warum verdoppelt sich der \ac{aFRR}-Leistungspreis im Herbst 2025, und welche Quelle trägt den Zusammenhang von Solareinspeisung und negativer Regelleistung. |
 
@@ -319,6 +320,48 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 ---
 
 ## 6 Offene Punkte
+
+**Für den Durchgang durch 4.5 vorgemerkt**, Stand 23.09.2026
+
+- **Die Aussage zur Tageszeit gegen die Jahreszeit** ist aus den
+  Schlussfolgerungen von 4.4 herausgenommen und gehört nach 4.5. Der Median
+  der Summe schwankt über den Tag um den Faktor 8,3 und über die Monate nur
+  um 4,2. Beide Zahlen stehen in 4.4, die Wertung nicht.
+- **Das Tagesmuster des Redispatch ist gerechnet**, aus den 19\,369
+  Einzelmaßnahmen des Jahres 2025 in
+  `data/processed/Redispatch_netztransparnez.net`. Auswertung in
+  `analysen/redispatch_tagesmuster`. Die Zahlen für 4.5:
+
+  | Größe | Wert |
+  |---|---|
+  | Redispatch reduzieren | 1701 MW um 12 Uhr gegen 793 MW um 0 Uhr, Faktor 2,14 |
+  | Redispatch erhöhen | 1788 MW um 10 Uhr gegen 1236 MW um 0 Uhr, Faktor 1,45 |
+  | Redispatch gesamt | 3440 MW um 11 Uhr gegen 2029 MW um 0 Uhr, Faktor 1,70 |
+  | Reservierungspreis über den Tag | Faktor 8,28 |
+  | Winter Nov bis Feb | 4016 MW bei 21,2\,€/(MW·h) |
+  | Sommer Mai bis Aug | 1783 MW bei 39,8\,€/(MW·h) |
+  | Rangkorrelation über die Monate | $-0{,}48$ |
+  | Rangkorrelation reduzieren gegen Ladereservierung, über den Tag | $+0{,}59$ |
+  | Anteil des Reduzierungsbedarfs in den sechs teuersten Ladestunden | 33 gegen 25 Prozent |
+  | Anteil des Erhöhungsbedarfs in den sechs teuersten Entladestunden | 26 gegen 25 Prozent |
+
+  **Der tragende Befund:** über den Tag schwankt der Bedarf um 1,70 und der
+  Preis um 8,28, die Tageszeit ist für den Bedarf also zweitrangig. Die
+  Mittagsspitze fällt jedoch zusammen, denn der Reduzierungsbedarf hat sein
+  Maximum um 12 Uhr und die Ladereservierung ist von 10 bis 15 Uhr am
+  teuersten. In der Entladerichtung trifft der teure Abend dagegen keinen
+  erhöhten Bedarf. Über das Jahr laufen beide gegenläufig.
+- ~~Abzugrenzen ist, warum 4.5 kein Tagesmuster des Redispatch zeigt.~~
+  **Mit den obigen Zahlen begründbar.** Frueherer Vermerk:
+  Vorgabe des Verfassers vom 23.09.2026: das Tagesmuster soll dort nicht
+  betrachtet werden, die Saisonalität schon. **Nicht zu behaupten ist, der
+  Redispatch sei von der Tageszeit unabhängig** — dafür gibt es keinen
+  Beleg, und die Windeinspeisung in der Nacht spricht eher dagegen.
+  Tragfähig ist die Datenlage: die Redispatchleistung liegt in der
+  zitierten Mitteilung der Bundesnetzagentur als Tageswert vor, sodass der
+  Vergleich auf der Jahreszeit stattfindet. Ob SMARD den Redispatch
+  stundenscharf veröffentlicht, ist als dritte Frage in
+  `ANFRAGE_AFRR_HERBST_2025.md` gestellt.
 
 **Aus Kapitel 4**
 
@@ -577,7 +620,9 @@ Fertige Abbildungen liegen unter `analysen/12_schrift/kapitel_N/` in Satzbreite
 nach `figures/anhang`. Beim Abgleich die PDF-Felder `CreationDate`, `ModDate`
 und `ID` ausnehmen.
 
-Eigene Auswertungen der Schriftfassung: `analysen/zeitmuster_ursachen` mit
+Eigene Auswertungen der Schriftfassung: `analysen/redispatch_tagesmuster`
+mit dem Tagesmuster des Redispatch aus den Einzelmaßnahmen,
+`analysen/zeitmuster_ursachen` mit
 sieben Skripten und einer eigenen `README.md`, die sagt, welches Skript
 welche Frage beantwortet und welcher Befund überholt ist,
 `analysen/mastr_speicher`,

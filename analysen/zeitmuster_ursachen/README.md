@@ -47,6 +47,26 @@ Aufruf mit dem Interpreter des Modellrepositorys:
   Sie sind häufig, aber flach, nämlich im Median minus 7,8 Euro je
   Megawattstunde. Siehe `BEFUND_FUEHRENDER_MARKT.md` Abschnitt 3.
 
+## Der Fehler, der alle Berichte dieses Ordners betrifft
+
+> **Alle Berichte ausser `BEFUND_NEUBERECHNUNG.md` nehmen `be_pos` und
+> `be_neg` als kurativen Reservierungspreis. Das ist die ERSTE Iteration**
+> mit einem Median von 15,87 und 16,70 Euro je Megawatt und Stunde und
+> einem Maximum von 488,48, naemlich dem Deckel der Bisektion. Die Arbeit
+> weist die **zweite** Iteration aus, die als `be_full_pos` und
+> `be_full_neg` in `heatmap_stunden_2025.parquet` steht.
+>
+> **Betroffen sind allein die Spalten mit dem Reservierungspreis.** Alle
+> Aussagen ueber Marktpreise — der aFRR-Leistungspreis, die negativen
+> Energiepreise, die Staffel der Arbitragepaare, der Juli — stehen in
+> eigenen Spalten und bleiben richtig.
+>
+> **Massgeblich ist `BEFUND_NEUBERECHNUNG.md`**, das die Zahlen des Kapitels
+> mit der zweiten Iteration neu rechnet und gegen ERGEBNISSE Abschnitt 7.1
+> gegenprueft. `laden.py` fuehrt beide Quellen zusammen und liefert den
+> Preis unter den Namen `res_ent` und `res_lad`; jede weitere Auswertung
+> benutzt sie.
+
 ## Ein Fehler in der eigenen Rechnung
 
 `fuehrender_markt.py` setzt für die **Entladerichtung** den Preis der Stunde

@@ -13896,6 +13896,168 @@ Mittel hoch.
 
 **Damit steht zwischen den Abbildungen 4.4 und 4.5 ein Absatz, der die
 erste beschreibt**, und der folgende Absatz fuehrt die zweite ein.
+### 23.09.2026, Abschnitt 4.4 umgebaut
+
+**Sieben Vorgaben des Verfassers**, alle umgesetzt.
+
+1. *Zeitliche Staffelung* statt *zeitliche Lage* im Einstieg.
+2. Die Heatmap wird nach Richtungen getrennt beschrieben, weil beide sich
+   in der Abbildung grundlegend anders verhalten, und die Zahlen stehen in
+   erlaeuternden Nebensaetzen statt als Aufzaehlung.
+3. Der Tagesgangabsatz mit der Photovoltaik-Erklaerung ist gestrichen. Die
+   Beobachtung, dass die Spitzen auseinanderfallen, folgt schon aus der
+   Heatmap, und die Erklaerung gehoert in die Diskussion.
+4. Der Ursachenabsatz steht kompakt hinter der Heatmap und vor der
+   Abbildung zum Zeitmuster, weil er dort am wichtigsten ist. Er fuehrt
+   zugleich die Abbildung ein.
+5. Die Summe ist als Preis einer **bilanziell ausgeglichenen** kurativen
+   Massnahme erklaert, denn vorgehalten wird fuer das Herunterfahren wie
+   fuer das Hochfahren.
+6. Jede Zahl traegt ihre Einheit, und Preise stehen nicht mehr
+   aneinandergereiht, sondern als Verhaeltnis.
+7. Der Abstand von Median und arithmetischem Mittel ist zu einem eigenen,
+   deutenden Absatz hinter dem Jahresgang ausgebaut.
+
+**Berichtigung vor dem Setzen: Median der Summe statt Summe der Mediane.**
+Die erste Fassung schrieb "die Summe der Mediane" und bildete daraus
+Anteile der Richtungen. Beides ist falsch. Die Zeile "Summe" in ERGEBNISSE
+Abschnitt 7.2 ist der Median der je Stunde gebildeten Summe; im Juni stehen
+56,1 gegen 38,6 Euro je Megawatt und Stunde, also Median der Summe gegen
+Summe der Mediane. Aus demselben Grund laesst sich kein Anteil einer
+Richtung an der Summe angeben. Der Text vergleicht deshalb die beiden
+Richtungen untereinander, naemlich das 4,6-Fache um 7 Uhr, das 3,7-Fache
+um 14 Uhr und das 10,7-Fache um 19 Uhr.
+
+**Die Deutung des Abstands stammt vom Verfasser**, naemlich dass ein weiter
+Abstand auf grosse Preisspannen mit einzelnen Extremwertstunden hinweist
+und ein enger auf ein gleichmaessig hohes Niveau. Der Absatz sagt das in
+zwei Saetzen und verzichtet auf die frueher genannten Betragspaare.
+
+**Die Schlussfolgerungen sind weicher gefasst.** Zurueckgenommen ist der
+Satz "Ueber den Tag schwankt die Summe um den Faktor 8,3, ueber die Monate
+nur um 4,2, sodass die Tageszeit den Preis staerker treibt als die
+Jahreszeit." Beide Faktoren stehen weiter im Text, die Wertung aber nicht.
+Die Aussage ist fuer Abschnitt 4.5 vorgemerkt, wo die Saisonalitaet allein
+betrachtet wird.
+
+**Abschnitt 4.4 traegt damit sieben Absaetze**, naemlich Einstieg mit der
+Heatmap, ihre Beschreibung, die Ursache, die Summe, den Jahresgang, den
+Abstand beider Masse und die Schlussfolgerungen.
+### 23.09.2026, Spaltenverwechslung in den eigenen Auswertungen
+
+**Der Fehler.** Alle eigenen Auswertungen des 23.09.2026 haben `be_pos`
+und `be_neg` aus `jahr_slots_2025.parquet` als kurativen
+Reservierungspreis genommen. Das ist die **erste** Iteration: ihr Median
+betraegt 15,87 und 16,70 Euro je Megawatt und Stunde, ihr Maximum 488,48,
+naemlich der Deckel der Bisektion. Die Arbeit weist durchgehend die
+**zweite** Iteration aus. Sie steht als `be_full_pos` und `be_full_neg` in
+`heatmap_stunden_2025.parquet` mit Median 12,22 und 9,85, Mittel 23,64 und
+24,33 sowie Maximum 1008,00 und 510,48, also genau den Werten aus
+ERGEBNISSE Abschnitt 7.1.
+
+**Wie er aufgefallen ist.** Beim Vergleich des Redispatchprofils mit dem
+Preisprofil ergab die eigene Rechnung fuer den Tagesgang das Verhaeltnis
+6,32, waehrend ERGEBNISSE Abschnitt 7.2 den Faktor 8,3 nennt. Die
+Abweichung war zu gross fuer eine Rundung.
+
+**Was nicht betroffen war.** Alle Zahlen, die aus ERGEBNISSE uebernommen
+sind, bleiben richtig, also der Faktor 8,3 des Tagesgangs, der Faktor 4,2
+des Jahresgangs und die Verhaeltnisse der beiden Richtungen je Tagesstunde.
+Ebenso unberuehrt sind alle Aussagen ueber **Marktpreise**, denn diese
+stehen in eigenen Spalten: der aFRR-Leistungspreis von 82,2 gegen 37,5, die
+Staffel der Arbitragepaare mit 63 und 10 Prozent, die Hoehe der negativen
+Energiepreise und der Befund zum Juli.
+
+**Was betroffen war und berichtigt ist**, sind die sechs Zahlen des
+Heatmapabsatzes in 4.4. Die Berichtigung macht den Befund deutlicher:
+
+| Groesse | alt, 1. Iteration | neu, 2. Iteration |
+|---|---|---|
+| Laden, Maerz bis Oktober | 92 Prozent | **99 Prozent** |
+| Laden, sechs staerkste Tagesstunden | 62 Prozent | **80 Prozent** |
+| Laden, Kalendertage | 166 | 176 |
+| Entladen, Maerz bis Oktober | 91 Prozent | **79 Prozent** |
+| Entladen, sechs staerkste Tagesstunden | 50 Prozent | **58 Prozent** |
+| Entladen, Kalendertage | 217 | 223 |
+
+**Eine Aussage ist dadurch hinfaellig geworden.** Zurueckgenommen, nicht
+wieder aufzunehmen: "Jahreszeitlich gleichen sich beide Richtungen, denn
+auch entladend liegen 91 Prozent der teuren Stunden zwischen Maerz und
+Oktober." Richtig ist das Gegenteil: 99 Prozent ladend gegen 79 Prozent
+entladend. Die Ladereservierung ist damit fast ausschliesslich ein
+Phaenomen der Mittagsstunden zwischen Maerz und Oktober, die
+Entladereservierung verteilt sich ueber Jahr und Tag.
+
+**Vorkehrung gegen eine Wiederholung.** Der Ordner
+`analysen/zeitmuster_ursachen` traegt seit dem 23.09.2026 die Datei
+`laden.py`, die beide Quellen zusammenfuehrt und den Preis der zweiten
+Iteration unter den Namen `res_ent` und `res_lad` liefert. Sie erklaert im
+Kopf, warum es sie gibt. Die Gegenprobe gegen ERGEBNISSE Abschnitt 7.1
+steht als Abschnitt 0 in `BEFUND_NEUBERECHNUNG.md` und ist bei jeder
+weiteren Auswertung zu wiederholen.
+### 23.09.2026, Tagesmuster des Redispatch aus den Einzelmassnahmen
+
+**Anlass.** Fuer Abschnitt 4.5 war offen, ob sich die Beschraenkung auf die
+Jahreszeit begruenden laesst. Der Verfasser hat auf
+`2025_Redispatchmassnahmen.parquet` im Analyse-Repository hingewiesen, das
+alle 19.369 Massnahmen des Jahres 2025 mit Beginn, Ende, Richtung und
+mittlerer Leistung fuehrt.
+
+**Verfahren.** Jede Massnahme ist mit ihrer mittleren Leistung anteilig auf
+die beruehrten Stunden verteilt. Alle 19.369 Eintraege tragen vollstaendige
+Angaben. Auswertung in `analysen/redispatch_tagesmuster`, nur lesend.
+
+**Zuordnung der Richtungen.** Soll die Einspeisung reduziert werden, so
+kann ein Speicher statt einer Abregelung laden; das entspricht der
+Ladereservierung. Soll sie erhoeht werden, so kann er entladen; das
+entspricht der Entladereservierung.
+
+**Der Redispatch hat ein Tagesmuster, aber ein schwaches:**
+
+| Richtung | Maximum | Minimum | Verhaeltnis |
+|---|---|---|---|
+| Reduzieren | 1701 MW um 12 Uhr | 793 MW um 0 Uhr | 2,14 |
+| Erhoehen | 1788 MW um 10 Uhr | 1236 MW um 0 Uhr | 1,45 |
+| beide zusammen | 3440 MW um 11 Uhr | 2029 MW um 0 Uhr | 1,70 |
+
+Der Median der Summe des Reservierungspreises schwankt ueber denselben Tag
+um den Faktor 8,28. **Die Tageszeit ist damit die Dimension des Preises und
+nicht die des Bedarfs.**
+
+**Die Mittagsspitze faellt zusammen.** Der Bedarf an Reduzierung hat sein
+Maximum um 12 Uhr, die Ladereservierung ist von 10 bis 15 Uhr am teuersten.
+In diesen sechs Stunden faellt 33 Prozent des Reduzierungsbedarfs an, gegen
+25 Prozent bei gleichmaessiger Verteilung. Die Rangkorrelation ueber die 24
+Tagesstunden betraegt +0,59.
+
+**In der Entladerichtung trifft der teure Abend keinen erhoehten Bedarf.**
+In den sechs teuersten Stunden der Entladereservierung faellt 26 Prozent
+des Erhoehungsbedarfs an, also so viel wie bei gleichmaessiger Verteilung.
+Die Rangkorrelation betraegt +0,46, und der Bedarf selbst schwankt mit dem
+Faktor 1,45 kaum.
+
+**Ueber das Jahr laufen Bedarf und Preis gegenlaeufig**, Rangkorrelation
+-0,48:
+
+| Zeitraum | Redispatch | Reservierungspreis |
+|---|---|---|
+| Winter, November bis Februar | 4016 MW | 21,2 Euro je MW und h |
+| Sommer, Mai bis August | 1783 MW | 39,8 Euro je MW und h |
+
+Der Bedarf ist im Winter mehr als doppelt so gross und der Preis rund halb
+so hoch. Beide schwanken ueber das Jahr aehnlich stark, naemlich mit dem
+Faktor 4,83 und 4,23.
+
+**Was daraus fuer Abschnitt 4.5 folgt.** Die Beschraenkung auf die
+Jahreszeit laesst sich jetzt begruenden und nicht nur mit der Datenlage
+erklaeren: ueber den Tag schwankt der Bedarf um 1,70 und der Preis um 8,28,
+also ist die Tageszeit fuer den Bedarf zweitrangig. **Die Behauptung, der
+Redispatch sei von der Tageszeit unabhaengig, waere dagegen falsch** und
+steht nicht im Text.
+
+**Die vierte Frage an den SMARD-Chat ist damit erledigt**, bevor sie
+beantwortet wurde. Sie bleibt in `ANFRAGE_AFRR_HERBST_2025.md` stehen, ist
+dort aber als erledigt gekennzeichnet.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

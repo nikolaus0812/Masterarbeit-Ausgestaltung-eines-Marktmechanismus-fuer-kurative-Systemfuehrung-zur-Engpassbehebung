@@ -510,7 +510,7 @@ In einem Teil der Stunden bietet die Bezugsanlage die Entladereservierung zum Pr
 % jetzt an beide vorangegangenen Abschnitte an, statt mit einer Verneinung
 % zu beginnen. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
-Neben der Aufteilung des Referenzerlöses und der Zahlung bei vollständiger Verdrängung ist die zeitliche Lage des kurativen Reservierungspreises von Belang.
+Neben der Aufteilung des Referenzerlöses und der Zahlung bei vollständiger Verdrängung ist die zeitliche Staffelung des kurativen Reservierungspreises von Belang.
 Abbildung~\ref{fig:heatmap_reservierungspreis} trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf.
 Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
 % GEKUERZT am 23.09.2026. Abschnitt 4.3 nennt das 99-Prozent-Quantil seit
@@ -533,17 +533,51 @@ Die Obergrenze je Feld ist das 99-Prozent-Quantil, sodass die teuersten 88 bezie
 % Auswertung analysen/zeitmuster_ursachen/heatmap_struktur.py, betrachtet
 % sind die je 876 Stunden oberhalb des 90-Prozent-Quantils, also 56,7 und
 % 70,7 Euro je Megawatt und Stunde.
-Die teuren Stunden beider Richtungen liegen jahreszeitlich beieinander.
-Von den je 876 Stunden oberhalb des 90-Prozent-Quantils fallen 91 Prozent der Entlade- und 92 Prozent der Ladereservierung in die Monate März bis Oktober.
-Innerhalb des Tages liegen sie verschieden, denn die sechs stärksten Tagesstunden tragen bei der Ladereservierung 62 und bei der Entladereservierung 50 Prozent.
-Die teuren Ladestunden liegen mittags beieinander, die teuren Entladestunden dagegen in zwei Fenstern am Morgen und am Abend.
-Die Ladereservierung häuft ihre teuren Stunden zudem an 166 Kalendertagen, die Entladereservierung an 217.
-Die Ladereservierung bildet damit ein zusammenhängendes Band über die Mitte des Tages, während die Entladereservierung über mehr Tage und zwei Tageszeiten streut.
+% UMGEBAUT am 23.09.2026, Vorgabe des Verfassers. Die Heatmap wird jetzt
+% nach Richtungen getrennt beschrieben, weil beide sich in der Abbildung
+% grundlegend anders verhalten. Der Tagesgangabsatz mit der
+% Photovoltaik-Erklaerung ist gestrichen: die Beobachtung, dass die Spitzen
+% auseinanderfallen, folgt schon aus der Heatmap, und die Erklaerung gehoert
+% in die Diskussion. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die teuren Stunden beider Richtungen liegen jahreszeitlich beieinander.
+%Innerhalb des Tages liegen sie verschieden, denn die sechs stärksten Tagesstunden tragen bei der Ladereservierung 62 und bei der Entladereservierung 50 Prozent.
+%Die teuren Ladestunden liegen mittags beieinander, die teuren Entladestunden dagegen in zwei Fenstern am Morgen und am Abend.
+%Die Ladereservierung häuft ihre teuren Stunden zudem an 166 Kalendertagen, die Entladereservierung an 217.
+%Die Ladereservierung bildet damit ein zusammenhängendes Band über die Mitte des Tages, während die Entladereservierung über mehr Tage und zwei Tageszeiten streut.
+%In Abbildung~\ref{fig:zeitmuster_reservierungspreis} sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst.
+%Die Entladereservierung erreicht ihren größten Median mit 43,8\,\EurMWh{} in der Stunde um 19 Uhr und ihren kleinsten mit 2,2\,\EurMWh{} in der Stunde um 4 Uhr.
+%Die Ladereservierung liegt umgekehrt, denn ihr größter Median beträgt 58,6\,\EurMWh{} um 13 Uhr und ihr kleinster 2,2\,\EurMWh{} um 20 Uhr.
+%Die Spitzen beider Richtungen fallen damit auseinander, weil die Einspeisung aus Photovoltaik mittags den Wert des Ladens und abends den Wert des Entladens setzt.
+% BERICHTIGT am 23.09.2026. Die Zahlen der ersten Fassung stammten aus einer
+% Auswertung, die be_pos und be_neg als Reservierungspreis genommen hat, also
+% die ERSTE Iteration. Die Arbeit weist die zweite aus, die in be_full_pos
+% und be_full_neg steht. Neu gerechnet in
+% analysen/zeitmuster_ursachen/neuberechnung.py, gegengeprueft gegen
+% ERGEBNISSE Abschnitt 7.1 mit Median 12,22 und 9,85. Der Befund wird durch
+% die Berichtigung deutlicher, und die Aussage, beide Richtungen glichen sich
+% jahreszeitlich, faellt weg: es sind 99 gegen 79 Prozent.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Von den 876 Stunden oberhalb ihres 90-Prozent-Quantils entfallen 92 Prozent auf diese Monate und 62 Prozent auf sechs Tagesstunden, sodass die teuren Stunden dicht beieinander liegen.
+%Sie verteilen sich auf 166 Kalendertage, treten an einem betroffenen Tag also in mehr als fünf Stunden auf.
+%Die Entladereservierung streut dagegen, denn ihre teuren Stunden liegen in zwei Fenstern am Morgen und am Abend und verteilen sich auf 217 Kalendertage.
+%Auf ihre sechs stärksten Tagesstunden entfallen nur 50 Prozent, sodass einzelne teure Tage das Bild bestimmen und kein Band entsteht.
+%Jahreszeitlich gleichen sich beide Richtungen, denn auch entladend liegen 91 Prozent der teuren Stunden zwischen März und Oktober.
+Die Ladereservierung bildet ein zusammenhängendes Band über die Mitte des Tages, das von März bis Oktober reicht.
+Von den 876 Stunden oberhalb ihres 90-Prozent-Quantils entfallen 99 Prozent auf diese Monate und 80 Prozent auf die sechs Stunden von 11 bis 16 Uhr.
+Sie verteilen sich auf 176 Kalendertage, treten an einem betroffenen Tag also in durchschnittlich fünf Stunden auf.
+Die Entladereservierung streut dagegen über das Jahr, denn nur 79 Prozent ihrer teuren Stunden liegen zwischen März und Oktober.
+Auch über den Tag liegt sie weiter auseinander, denn auf ihre sechs stärksten Tagesstunden entfallen 58 Prozent, und diese verteilen sich auf den Vormittag und den Abend.
+Ihre teuren Stunden treten an 223 Kalendertagen auf, sodass einzelne teure Tage das Bild bestimmen und kein Band entsteht.
 
-In Abbildung~\ref{fig:zeitmuster_reservierungspreis} sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst.
-Die Entladereservierung erreicht ihren größten Median mit 43,8\,\EurMWh{} in der Stunde um 19 Uhr und ihren kleinsten mit 2,2\,\EurMWh{} in der Stunde um 4 Uhr.
-Die Ladereservierung liegt umgekehrt, denn ihr größter Median beträgt 58,6\,\EurMWh{} um 13 Uhr und ihr kleinster 2,2\,\EurMWh{} um 20 Uhr.
-Die Spitzen beider Richtungen fallen damit auseinander, weil die Einspeisung aus Photovoltaik mittags den Wert des Ladens und abends den Wert des Entladens setzt.
+% VORGEZOGEN am 23.09.2026, Vorgabe des Verfassers: die Ursache steht dort,
+% wo sie am wichtigsten ist, naemlich hinter der Heatmap und vor der
+% Abbildung zum Zeitmuster. Kompakter als zuvor, die Spannen stehen als
+% Anteil statt als Betragspaar.
+Hinter beiden Mustern steht der Leistungspreis der \ac{aFRR}, der das Niveau des kurativen Reservierungspreises bestimmt, denn er entfällt mit der reservierten Stunde vollständig.
+Im Mai erreicht er in den Mittagsstunden mit 82,2\,\EurMWh{} das 2,2-Fache des Jahresmittels derselben Stunden.
+Die Arbitrage an den Energiemärkten kann die Bezugsanlage dagegen zwischen den Stunden eines Tages verschieben, denn das zehnte Bezugs- und Absatzpaar eines Tages trägt im Median noch 63 Prozent der größten Spanne.
+Bricht diese Staffel ein, wie am 26.08.2025 auf 10 Prozent, so setzt der Energiemarkt den Reservierungspreis, und die Verdrängung bleibt nach Abschnitt~\ref{sec:dispatch_displacement} auch beim höchsten gerechneten Preis unvollständig.
+Abbildung~\ref{fig:zeitmuster_reservierungspreis} fasst dieselben Stundenwerte zum Tages- und zum Jahresgang zusammen.
 
 \begin{figure}[H]
     \centering
@@ -571,26 +605,55 @@ Die Spitzen beider Richtungen fallen damit auseinander, weil die Einspeisung aus
 %Wer jedoch ein Produkt in beiden Richtungen beschafft, zahlt beide Richtungen zugleich, sodass die Summe den Preis des Beschafften angibt.
 %Die Summe erreicht ihren größten Median mit 79,3\,\EurMWh{} um 14 Uhr, weil dort beide Richtungen erhöht sind, und ihren kleinsten mit 9,6\,\EurMWh{} um Mitternacht.
 %Über den Tag schwankt die Summe damit um den Faktor 8,3.
-Ein \ac{ÜNB}, der die Reservierung in beiden Richtungen beschafft, zahlt zwei Preise.
-Die Abbildung trägt deshalb neben den beiden Richtungen deren Summe, und diese Summe ist die Addition beider Preise und kein Mittelwert, denn Entlade- und Ladereservierung sind eigene Produkte mit eigener Opportunität und eigenem Ladezustandsband.
-Über den Tag ist die Summe am Morgen, am Mittag und am Abend am teuersten und schwankt zwischen 9,6 um Mitternacht und 79,3\,\EurMWh{} um 14 Uhr, also um den Faktor 8,3.
-Welche Richtung die Summe trägt, wechselt dabei über den Tag: um 7 Uhr stammen 20,6 von 29,0\,\EurMWh{} aus der Entladereservierung, um 14 Uhr dagegen 56,9 von 79,3\,\EurMWh{} aus der Ladereservierung.
-Am Abend bestimmt wieder die Entladereservierung, die um 19 Uhr 43,8 von 55,4\,\EurMWh{} trägt.
-Über das Jahr liegen beide Richtungen nahe beieinander, und allein im Frühjahr und im Frühsommer trägt die Ladereservierung mehr, im Juni etwa 22,2 gegen 16,4\,\EurMWh{}.
+% NEU GEFASST am 23.09.2026, Vorgabe des Verfassers. Die Summe ist der
+% Preis einer bilanziell ausgeglichenen kurativen Massnahme, denn vorgehalten
+% wird sowohl fuer das Herunter- als auch fuer das Hochfahren. Die Anteile
+% stehen als Prozentzahl statt als Betragspaar. Zurueckgenommene Fassung:
+%Über den Tag ist die Summe am Morgen, am Mittag und am Abend am teuersten und schwankt zwischen 9,6 um Mitternacht und 79,3\,\EurMWh{} um 14 Uhr, also um den Faktor 8,3.
+%Welche Richtung die Summe trägt, wechselt dabei über den Tag: um 7 Uhr stammen 20,6 von 29,0\,\EurMWh{} aus der Entladereservierung, um 14 Uhr dagegen 56,9 von 79,3\,\EurMWh{} aus der Ladereservierung.
+%Am Abend bestimmt wieder die Entladereservierung, die um 19 Uhr 43,8 von 55,4\,\EurMWh{} trägt.
+%Über das Jahr liegen beide Richtungen nahe beieinander, und allein im Frühjahr und im Frühsommer trägt die Ladereservierung mehr, im Juni etwa 22,2 gegen 16,4\,\EurMWh{}.
+Eine kurative Maßnahme, die bilanziell ausgeglichen sein soll, verlangt die Vorhaltung in beiden Richtungen, denn der \ac{ÜNB} braucht sie für das Herunterfahren wie für das Hochfahren.
+Die Summe beider Richtungen gibt deren Preis an, und sie ist die Addition beider Preise und kein Mittelwert, denn Entlade- und Ladereservierung sind eigene Produkte mit eigener Opportunität und eigenem Ladezustandsband.
+% BERICHTIGT am 23.09.2026 vor dem Setzen. Die Zeile "Summe" in ERGEBNISSE
+% Abschnitt 7.2 ist der Median der je Stunde gebildeten Summe und nicht die
+% Summe der beiden Mediane; im Juni stehen 56,1 gegen 38,6 Euro je Megawatt
+% und Stunde. Aus demselben Grund laesst sich kein Anteil einer Richtung an
+% der Summe angeben. Der Vergleich laeuft deshalb zwischen den beiden
+% Richtungen. Nicht gesetzte Fassung:
+%Über den Tag schwankt die Summe der Mediane um den Faktor 8,3 ...
+%Welche Richtung sie trägt, wechselt dabei: um 7 Uhr stammen 71 Prozent aus der Entladereservierung ...
+Über den Tag schwankt der Median der Summe um den Faktor 8,3, nämlich von 9,6\,\EurMWh{} um Mitternacht auf 79,3\,\EurMWh{} um 14 Uhr.
+Welche Richtung ihn trägt, wechselt dabei über den Tag, denn um 7 Uhr liegt der Median der Entladereservierung beim 4,6-Fachen der Ladereservierung.
+Um 14 Uhr kehrt sich das Verhältnis auf das 3,7-Fache zugunsten der Ladereservierung um, und um 19 Uhr liegt die Entladereservierung beim 10,7-Fachen.
+Über das Jahr liegen beide Richtungen nahe beieinander, und allein im Frühjahr und im Frühsommer trägt die Ladereservierung mehr, im Juni um ein Drittel.
 
 % ERGAENZT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4,
 % Rueckfrage 3: der Abstand zwischen Median und Mittel ist der neue Befund
 % der ueberarbeiteten Abbildung.
-Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
-In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians, nämlich 15,4 gegen 4,1\,\EurMWh{}, und um 13 Uhr nur das 1,04-Fache, nämlich 61,0 gegen 58,6\,\EurMWh{}.
-Die Rechtsschiefe sitzt damit in den Stunden, in denen die Reservierung im Regelfall wenig kostet, und nicht in der Mittagsspitze.
-
+% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: der Jahresgang steht
+% jetzt vor dem Abstand der beiden Masse, und dieser Abstand ist zu einem
+% eigenen, deutenden Absatz ausgebaut. Zurueckgenommene Fassung:
+%Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
+%In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians, nämlich 15,4 gegen 4,1\,\EurMWh{}, und um 13 Uhr nur das 1,04-Fache, nämlich 61,0 gegen 58,6\,\EurMWh{}.
+%Die Rechtsschiefe sitzt damit in den Stunden, in denen die Reservierung im Regelfall wenig kostet, und nicht in der Mittagsspitze.
+%Die Summe beider Richtungen erreicht ihren größten Monatsmedian im September mit 56,9\,\EurMWh{} und ihren kleinsten im Dezember mit 13,5\,\EurMWh{}.
+%Das arithmetische Mittel verschiebt diese Aussage über die Monate, denn der Median der Ladereservierung erreicht sein Maximum im September mit 25,5 und das arithmetische Mittel im Juni mit 43,2\,\EurMWh{}.
 Über das Jahr verschiebt sich das Muster von der Tages- auf die Jahreszeit.
-Die Summe beider Richtungen erreicht ihren größten Monatsmedian im September mit 56,9\,\EurMWh{} und ihren kleinsten im Dezember mit 13,5\,\EurMWh{}.
-Im Winter von November bis Februar liegt die Summe bei 23,2 und im Sommer von Mai bis August bei 38,6\,\EurMWh{}, sodass die Reservierung im Winter rund 40 Prozent weniger kostet als im Sommer.
-% ERGAENZT am 22.09.2026: das Mittel verschiebt die Monatsaussage.
-Das arithmetische Mittel verschiebt diese Aussage über die Monate, denn der Median der Ladereservierung erreicht sein Maximum im September mit 25,5 und das arithmetische Mittel im Juni mit 43,2\,\EurMWh{}.
+Der Median der Summe schwankt über die Monate um den Faktor 4,2, nämlich von 13,5\,\EurMWh{} im Dezember auf 56,9\,\EurMWh{} im September.
+Im Winter von November bis Februar liegt sie bei 23,2\,\EurMWh{} und im Sommer von Mai bis August bei 38,6\,\EurMWh{}, sodass die Reservierung im Winter rund 40 Prozent weniger kostet.
 Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Abschnitt~\ref{sec:price_vs_redispatch} geprüft.
+
+% AUSGEBAUT am 23.09.2026, Vorgabe des Verfassers: der Abstand beider Masse
+% wird gedeutet und nicht nur beziffert. Die Deutung stammt vom Verfasser,
+% naemlich dass ein weiter Abstand auf groessere Preisspannen mit einzelnen
+% Extremwertstunden hinweist und ein enger auf ein gleichmaessig hohes
+% Niveau.
+Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag und über das Jahr nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
+In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians und um 13 Uhr nur das 1,04-Fache.
+Über die Monate zeigt sich dasselbe, denn der Median der Ladereservierung erreicht sein Maximum im September und das arithmetische Mittel im Juni.
+Ein weiter Abstand beider Maße weist auf große Preisspannen mit einzelnen Extremwertstunden hin, ein enger auf ein gleichmäßig hohes Niveau.
+Wo der Preis im Regelfall niedrig ist, treiben deshalb einzelne Stunden das Mittel, und wo er ohnehin hoch ist, liegen beide Maße nahe beieinander.
 
 % ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: das Muster soll nicht nur
 % beschrieben, sondern begruendet werden, damit die Diskussion es deuten
@@ -598,47 +661,88 @@ Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Ab
 % naemlich BEFUND.md fuer den Leistungspreis der Mittagsstunden und
 % BEFUND_ARBITRAGEPAARE.md fuer die Spannen. Die Deutung stammt vom
 % Verfasser und ist am 23.09.2026 bestaetigt.
-Hinter beiden Mustern steht dieselbe Ursache.
-Der Leistungspreis der \ac{aFRR} bestimmt das Niveau des kurativen Reservierungspreises, denn er entfällt mit der reservierten Stunde vollständig.
-Das Produkt bindet eine Zeitscheibe, und die Bezugsanlage kann ihm nicht ausweichen.
-Im Mai erreicht der Leistungspreis der negativen \ac{aFRR} in den Mittagsstunden 82,2 gegen 37,5\,\EurMWh{} im Jahresmittel derselben Stunden.
-Die Arbitrage an den Energiemärkten kann die Bezugsanlage dagegen zwischen den Stunden eines Tages verschieben, solange der Tag genügend gleichwertige Preisspannen trägt.
-Die größte Spanne eines Tages beträgt im Median 179,0 Euro je Megawattstunde, und das zehnte Bezugs- und Absatzpaar trägt davon noch 112,8.
-An einzelnen Tagen bricht diese Staffel ein, etwa am 26.08.2025 von 1603,7 auf 165,0 Euro je Megawattstunde.
-An diesen Tagen setzt der Energiemarkt den Reservierungspreis, und dort bleibt die Verdrängung nach Abschnitt~\ref{sec:dispatch_displacement} auch beim höchsten gerechneten Preis unvollständig.
+% VERSCHOBEN am 23.09.2026 hinter die Heatmap, Vorgabe des Verfassers.
+% Zurueckgenommene Fassung an dieser Stelle:
+%Hinter beiden Mustern steht dieselbe Ursache.
+%Das Produkt bindet eine Zeitscheibe, und die Bezugsanlage kann ihm nicht ausweichen.
+%Die größte Spanne eines Tages beträgt im Median 179,0 Euro je Megawattstunde, und das zehnte Bezugs- und Absatzpaar trägt davon noch 112,8.
 
 % ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers vom 22.09.2026: drei bis
 % fuenf Saetze Schlussfolgerungen je Abschnitt. Der Faktor 4,2 des
 % Jahresgangs ist eine eigene Ableitung aus 56,9 im September gegen 13,5 im
 % Dezember. Was ein Betreiber oder der UENB daraus machen sollte, bleibt
 % Kapitel 5 vorbehalten; die Vormerkungen stehen in HANDOFF.md Abschnitt 7.
+% WEICHER GEFASST am 23.09.2026, Vorgabe des Verfassers. Die Aussage, die
+% Tageszeit treibe den Preis staerker als die Jahreszeit, ist herausgenommen
+% und fuer Abschnitt 4.5 vorgemerkt, wo die Saisonalitaet allein betrachtet
+% wird. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die beiden Richtungen sind gegenläufig, denn die Photovoltaik setzt mittags den Wert des Ladens und abends den des Entladens.
+%Die Summe beider Richtungen ist deshalb mittags am teuersten, obwohl die Entladereservierung dann günstig ist.
+%Über den Tag schwankt die Summe um den Faktor 8,3, über die Monate nur um 4,2, sodass die Tageszeit den Preis stärker treibt als die Jahreszeit.
+%Der Leistungspreis der \ac{aFRR} trägt dabei das Niveau, während einzelne hohe Preisspannen an den Energiemärkten die Extrema tragen.
 Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
-Die beiden Richtungen sind gegenläufig, denn die Photovoltaik setzt mittags den Wert des Ladens und abends den des Entladens.
-Die Summe beider Richtungen ist deshalb mittags am teuersten, obwohl die Entladereservierung dann günstig ist.
-Über den Tag schwankt die Summe um den Faktor 8,3, über die Monate nur um 4,2, sodass die Tageszeit den Preis stärker treibt als die Jahreszeit.
+Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band, während die Entladereservierung über zwei Tageszeiten und mehr Tage streut.
+Die Summe beider Richtungen, also der Preis einer bilanziell ausgeglichenen Vorhaltung, erreicht ihr Maximum mittags.
 Der Leistungspreis der \ac{aFRR} trägt dabei das Niveau, während einzelne hohe Preisspannen an den Energiemärkten die Extrema tragen.
+Der Abstand zwischen Median und arithmetischem Mittel zeigt an, ob ein hoher Preis auf einem gleichmäßigen Niveau oder auf einzelnen Stunden beruht.
 
 % ---------------------------------------------------------------
 \section{Kurativer Reservierungspreis und Engpassbedarf}
 \label{sec:price_vs_redispatch}
-% Anweisung Abschnitt 4.5, Zahlen aus ERGEBNISSE Abschnitt 7.4.
-% Abbildungshinweis: zwei Abbildungen mit gleicher Skalierung, der
-% Unterschied zwischen ihnen ist die Rechtsschiefe. Das Min-Max-Band ist
-% am 22.09.2026 entfallen.
-% BELEG: Die Anweisung nennt 3,08 Mrd. Euro. Die zitierte Quelle nennt
-% 3071 Mio. Euro als vorlaeufige Gesamtkosten; der Text folgt der Quelle,
-% der Quotient von 101 Euro je Megawattstunde ist derselbe.
+% NEU GESCHRIEBEN am 23.09.2026, Vorgabe des Verfassers: drei Absaetze,
+% naemlich das Gleichzeitigkeitsproblem, die Jahresebene mit Abbildung 4.6
+% und die Schlussfolgerungen. Alle Zahlen stehen auf der Ebene, die die
+% jeweilige Abbildung zeigt, damit der Leser sie nachvollziehen kann; fuer
+% Abbildung 4.6 ist das die Tagesebene. Keine Korrelationszahlen, wenige
+% Preise, Vergleiche in Prozent.
+% Die Zahlen des Tagesmusters stammen aus analysen/redispatch_tagesmuster,
+% die der Jahreszeiten aus analysen/zeitmuster_ursachen/BEFUND_JAHRESZEITEN_TAG.md.
+% Beide sind vom Analyse-Repository unabhaengig nachgerechnet und bestaetigt.
+% ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
+%Das Muster aus Abschnitt~\ref{sec:price_pattern} sagt, wann die Vorhaltung teuer ist, und lässt offen, ob diese Zeiten mit dem Engpassmanagementbedarf zusammenfallen.
+%In Abbildung~\ref{fig:jahreslauf_mittel} steht das arithmetische Mittel des kurativen Reservierungspreises je Tag neben der Redispatchleistung desselben Tages.
+%Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel sich mit der beschafften Menge multipliziert und damit die Kosten des \ac{ÜNB} trägt.
+%Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,\EurMWh{} in der Laderichtung, der Median der Tagesmittel dagegen 18,18 und 21,78\,\EurMWh{}.
+%Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellung im Median steht in Anhang~\ref{anh:jahreslauf_median}.
+%Die waagerechte Linie der Abbildung bezeichnet den Arbeitspreis des heutigen präventiven Redispatch.
+%Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro und ein Maßnahmenvolumen von 30\,319\,\si{GWh} aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+%Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.
+%Dieser Vergleichswert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
+%Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
+%Der so gebildete Arbeitspreis ist ein vereinfachter Vergleichswert und keine Kostenkennzahl je Megawattstunde.
+%Die Kosten des Netzengpassmanagements hängen nicht durchgehend an der bewegten Energie, denn allein 952 Millionen Euro entfallen im Jahr 2025 auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+%Das Maßnahmenvolumen fasst zudem Instrumente mit verschiedener Kostenstruktur zusammen, nämlich den Redispatch mit Markt- und Reservekraftwerken, die Entschädigung abgeregelter Anlagen und das Countertrading.
+%Der Wert wird deshalb über das gesamte Maßnahmenvolumen gemittelt und weder nach Richtung aufgeteilt noch halbiert.
+%Er gibt damit eine Größenordnung an, gegen die sich die kurative Vorhaltung einordnen lässt, und nicht den Betrag, den der \ac{ÜNB} je bewegter Megawattstunde zahlt.
+%Gemessen am Tagesmedian bleibt der kurative Reservierungspreis in beiden Richtungen an allen 365 Tagen unter dieser Linie.
+%Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
+%Die Stundenebene trägt die schärfere Aussage, denn dort liegen 8485 von 8758 Stunden in der Entlade- und 8477 in der Laderichtung unter der Linie, also 96,9 und 96,8 Prozent.
+%Rund jede dreißigste Stunde je Richtung liegt damit darüber, und für die Summe beider Richtungen sind es mit 7833 von 8758 Stunden nur 89,4 Prozent und damit rund jede zehnte Stunde.
+%Die Redispatchleistung beträgt im Tagesmittel 1523\,\si{MW} nach oben und 1226\,\si{MW} nach unten.
+%Der Korrelationskoeffizient zwischen dem Tagesmedian des kurativen Reservierungspreises und der Redispatchleistung des Tages beträgt minus 0,03 in der Entlade- und plus 0,11 in der Laderichtung, sodass Preis und Bedarf innerhalb des Jahres nicht zusammenlaufen.
+%Zwischen den Jahreszeiten besteht dagegen ein Zusammenhang.
+%Im Winter von Dezember bis Februar kostet die Entladereservierung im Median 9,83 und die Ladereservierung 4,71\,\EurMWh{}, zusammen also 14,55\,\EurMWh{}, während die Redispatchleistung nach oben mit 2314\,\si{MW} ihren größten Wert erreicht.
+%Im Herbst von September bis November stehen 18,93 und 14,77\,\EurMWh{} und damit zusammen 33,70\,\EurMWh{} einer Redispatchleistung von 1767\,\si{MW} gegenüber.
+%Frühjahr und Sommer liegen mit 23,92 und 23,30\,\EurMWh{} dazwischen, bei 1034 und 996\,\si{MW}.
+%Auf Stundenebene bestätigt sich dieser Verlauf, denn im Winter liegen 97,5 Prozent der Stunden unter der Bezugslinie und im Herbst nur 86,1 Prozent.
+%Die Jahreszeit mit dem größten Engpassmanagementbedarf ist damit zugleich die Jahreszeit mit der günstigsten Reservierung.
 
-% VERSCHOBEN am 22.09.2026 nach Anhang G, Vorgabe des Verfassers: der
-% Median liegt dauerhaft unter der Bezugslinie, seine Erwaehnung im Text
-% reicht, und das arithmetische Mittel ist die aussagekraeftigere Groesse.
-% Die figure-Umgebung stand hier und liegt jetzt in
-% extras/attachment_jahreslauf.tex unter der Marke anh:jahreslauf_median.
-Das Muster aus Abschnitt~\ref{sec:price_pattern} sagt, wann die Vorhaltung teuer ist, und lässt offen, ob diese Zeiten mit dem Engpassmanagementbedarf zusammenfallen.
-In Abbildung~\ref{fig:jahreslauf_mittel} steht das arithmetische Mittel des kurativen Reservierungspreises je Tag neben der Redispatchleistung desselben Tages.
-Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel sich mit der beschafften Menge multipliziert und damit die Kosten des \ac{ÜNB} trägt.
-Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,\EurMWh{} in der Laderichtung, der Median der Tagesmittel dagegen 18,18 und 21,78\,\EurMWh{}.
-Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellung im Median steht in Anhang~\ref{anh:jahreslauf_median}.
+Ob die kurative Vorhaltung günstig zu beschaffen ist, entscheidet sich daran, ob die teuren Stunden mit dem Engpassmanagementbedarf zusammenfallen.
+Über den Tag schwankt die Redispatchleistung zwischen 2029 und 3440\,\si{MW} und damit um den Faktor 1,7, während der Median der Summe beider Reservierungsrichtungen um den Faktor 8,3 schwankt.
+Die Tageszeit bestimmt damit vor allem den Preis und kaum den Bedarf.
+Eine Ausnahme bildet der Mittag, denn der Bedarf an Reduzierung der Einspeisung erreicht dort mit 1701\,\si{MW} seinen größten Wert, und die Ladereservierung ist zur selben Zeit am teuersten.
+In den sechs teuersten Stunden der Ladereservierung fällt ein Drittel dieses Bedarfs an, gegenüber einem Viertel bei gleichmäßiger Verteilung.
+In der Entladerichtung trifft der teure Abend dagegen keinen erhöhten Bedarf.
+Der Vergleich von Preis und Bedarf läuft deshalb über die Jahreszeit.
+
+Abbildung~\ref{fig:jahreslauf_mittel} stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel, denn das Mittel bezieht die teuren Stunden mit ihrem Gewicht ein.
+Die waagerechte Linie bezeichnet den Arbeitspreis des präventiven Redispatch von 101 Euro je bewegter Megawattstunde, den die Bundesnetzagentur aus Gesamtkosten von 3071 Millionen Euro und einem Maßnahmenvolumen von 30\,319\,\si{GWh} ausweist \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Dieser Wert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
+Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
+Hinzu kommt, dass allein 952 Millionen Euro auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke entfallen, sodass die Linie eine Größenordnung angibt und keine Kostenkennzahl \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Im Winter kostet die Ladereservierung im Tagesmittel 7,9\,\EurMWh{}, in den übrigen Jahreszeiten zwischen 175 und 265 Prozent mehr.
+Zugleich erreicht die Redispatchleistung nach oben im Winter 2312\,\si{MW} und liegt in den übrigen Jahreszeiten 24 bis 57 Prozent darunter.
+Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung unter der Bezugslinie, im Winter an allen Tagen beider Richtungen.
 
 \begin{figure}[H]
     \centering
@@ -647,69 +751,11 @@ Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellu
     \label{fig:jahreslauf_mittel}
 \end{figure}
 
-% NACHTRAG am 22.09.2026, Vorgabe des Verfassers. Die bewegte Menge ist
-% jetzt nach Richtungen aufgeschluesselt, der Nenner ausdruecklich nicht
-% halbiert, und die Begruendung dafuer steht im folgenden Absatz. Alte
-% Fassung, nicht wieder aufzunehmen:
-%Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}, woraus sich bezogen auf die bewegte Menge von 30,44\,\si{TWh} ein Arbeitspreis von 101 Euro je Megawattstunde ergibt.
-Die waagerechte Linie der Abbildung bezeichnet den Arbeitspreis des heutigen präventiven Redispatch.
-% GEAENDERT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 1.2:
-% Kosten UND Menge stammen jetzt aus derselben Mitteilung. Vorher stand die
-% Menge aus einer zweiten Quelle daneben, was eine Schriftfassung nicht
-% belegen kann. Alte Fassung, nicht wieder aufzunehmen:
-%Diesen Kosten steht eine bewegte Menge von 12,15\,\si{TWh} Erhöhung und 18,30\,\si{TWh} Absenkung gegenüber, woraus sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde ergibt, gemittelt über beide Richtungen.
-Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro und ein Maßnahmenvolumen von 30\,319\,\si{GWh} aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.
-Dieser Vergleichswert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
-Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
+Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
+Die kurative Vorhaltung bleibt das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
+Das größte Potenzial liegt im Winter, denn dort trifft der größte Engpassmanagementbedarf auf die günstigste Reservierung.
+Die Mittagsstunden bilden die Ausnahme, denn dort fällt der größte Bedarf an Reduzierung der Einspeisung mit der teuersten Ladereservierung zusammen.
 
-% GEAENDERT am 22.09.2026, Vorgabe des Verfassers: die Bezugslinie wird
-% nicht nach Richtung getrennt, sondern ueber das gesamte
-% Massnahmenvolumen gemittelt, weil die Kostenstruktur des
-% Netzengpassmanagements nicht je Megawattstunde uebertragbar ist. Damit
-% entfallen die beiden Absaetze zur Asymmetrie der Richtungen. Sie stuetzten
-% sich auf eine Mengenreihe aus einer zweiten Quelle ohne Eintrag in
-% literature.bib; der Beleg des Quotienten haengt jetzt an einer einzigen
-% Mitteilung. ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
-%Der Nenner enthält beide Richtungen und wird nicht halbiert.
-%Eine Halbierung setzte voraus, dass jede Absenkung ein gleich großes Hochfahren trägt.
-%Diese Symmetrie liegt im Jahr 2025 nicht vor, denn der Erhöhung von 12,15 TWh steht eine Absenkung von 18,30 TWh gegenüber.
-%Je nach gewähltem Nenner ergäben sich 101 Euro je Megawattstunde für die Summe beider Richtungen, 168 für die Absenkung allein, 202 für die halbe Summe und 253 für die Erhöhung allein.
-%Allein der Wert von 101 Euro je Megawattstunde kommt ohne eine Annahme über die Symmetrie aus und wird deshalb ausgewiesen.
-%Eine Aufteilung dieses Arbeitspreises nach Richtung ist nicht möglich, denn die Mengen liegen je Richtung vor und die Kosten allein als eine Summe.
-%Der Unterschied zwischen beiden Richtungen beträgt 6,15 TWh und lässt sich zum Teil zuordnen.
-%Anlagen für erneuerbare Energien stehen mit 9,50 TWh nahezu allein auf der Seite der Absenkung, während konventionelle Anlagen und Speicher netto 3,35 TWh hochfahren und damit einen Teil der abgeregelten Einspeisung ersetzen.
-%Das Countertrading scheidet als Erklärung aus, denn es erhöht die deutsche Einspeisung und vergrößert den Unterschied.
-%An der Grenze zu Dänemark stehen 2,50 TWh Erhöhung null Absenkung gegenüber.
-%Der Redispatch im engeren Sinn ist mit einem Überhang von 1,17 TWh bei rund 12 TWh Umsatz nahezu ausgeglichen.
-%Der verbleibende Teil dürfte auf das Einspeisemanagement entfallen, das die Maßnahmenliste nicht führt.
-%Diese Zuordnung ist nicht belegt und bleibt eine Vermutung.
-Der so gebildete Arbeitspreis ist ein vereinfachter Vergleichswert und keine Kostenkennzahl je Megawattstunde.
-Die Kosten des Netzengpassmanagements hängen nicht durchgehend an der bewegten Energie, denn allein 952 Millionen Euro entfallen im Jahr 2025 auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Das Maßnahmenvolumen fasst zudem Instrumente mit verschiedener Kostenstruktur zusammen, nämlich den Redispatch mit Markt- und Reservekraftwerken, die Entschädigung abgeregelter Anlagen und das Countertrading.
-Der Wert wird deshalb über das gesamte Maßnahmenvolumen gemittelt und weder nach Richtung aufgeteilt noch halbiert.
-Er gibt damit eine Größenordnung an, gegen die sich die kurative Vorhaltung einordnen lässt, und nicht den Betrag, den der \ac{ÜNB} je bewegter Megawattstunde zahlt.
-
-Gemessen am Tagesmedian bleibt der kurative Reservierungspreis in beiden Richtungen an allen 365 Tagen unter dieser Linie.
-Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
-% ERGAENZT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4,
-% Rueckfrage 1: die Stundenzahl ist die schaerfere Aussage, weil die
-% Tagesebene praktisch jeden Tag unter die Linie bringt.
-Die Stundenebene trägt die schärfere Aussage, denn dort liegen 8485 von 8758 Stunden in der Entlade- und 8477 in der Laderichtung unter der Linie, also 96,9 und 96,8 Prozent.
-Rund jede dreißigste Stunde je Richtung liegt damit darüber, und für die Summe beider Richtungen sind es mit 7833 von 8758 Stunden nur 89,4 Prozent und damit rund jede zehnte Stunde.
-Die Redispatchleistung beträgt im Tagesmittel 1523\,\si{MW} nach oben und 1226\,\si{MW} nach unten.
-Der Korrelationskoeffizient zwischen dem Tagesmedian des kurativen Reservierungspreises und der Redispatchleistung des Tages beträgt minus 0,03 in der Entlade- und plus 0,11 in der Laderichtung, sodass Preis und Bedarf innerhalb des Jahres nicht zusammenlaufen.
-
-Zwischen den Jahreszeiten besteht dagegen ein Zusammenhang.
-Im Winter von Dezember bis Februar kostet die Entladereservierung im Median 9,83 und die Ladereservierung 4,71\,\EurMWh{}, zusammen also 14,55\,\EurMWh{}, während die Redispatchleistung nach oben mit 2314\,\si{MW} ihren größten Wert erreicht.
-Im Herbst von September bis November stehen 18,93 und 14,77\,\EurMWh{} und damit zusammen 33,70\,\EurMWh{} einer Redispatchleistung von 1767\,\si{MW} gegenüber.
-Frühjahr und Sommer liegen mit 23,92 und 23,30\,\EurMWh{} dazwischen, bei 1034 und 996\,\si{MW}.
-% ERGAENZT am 22.09.2026: derselbe Befund auf Stundenebene, nach
-% ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4.
-Auf Stundenebene bestätigt sich dieser Verlauf, denn im Winter liegen 97,5 Prozent der Stunden unter der Bezugslinie und im Herbst nur 86,1 Prozent.
-Die Jahreszeit mit dem größten Engpassmanagementbedarf ist damit zugleich die Jahreszeit mit der günstigsten Reservierung.
-
-% ---------------------------------------------------------------
 \section{Sensitivitäten}
 \label{sec:sensitivities}
 % Anweisung Abschnitt 4.7 und AUFBAU_KAPITEL_4.md 4.7. Alle Varianten als
