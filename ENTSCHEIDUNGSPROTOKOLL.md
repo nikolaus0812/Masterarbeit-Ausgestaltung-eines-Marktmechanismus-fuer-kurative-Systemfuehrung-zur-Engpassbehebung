@@ -14167,6 +14167,192 @@ weiteren Anhang ist die Liste zu ergaenzen.**
 **Zeilenenden.** Die neue Anhangdatei war zunaechst mit LF geschrieben. Die
 Kapitel- und Anhangdateien liegen mit CRLF vor, Pruefung 1 hat es gemeldet,
 behoben.
+### 23.09.2026, Abschnitt 4.5, Anhang H erklaert und Bezugslinie bereinigt
+
+**Vier Vorgaben des Verfassers, alle in Abschnitt 4.5.**
+
+1. **Vor dem Verweis auf Anhang H steht, was der Anhang zeigt und wie der
+   Redispatch aggregiert ist.** Zwei Saetze sind eingefuegt, naemlich dass
+   der Anhang den Bedarf ueber die Stunde des Tages und ueber den Monat
+   zeigt, im selben Format wie Abbildung 4.5 den Preis, und dass Grundlage
+   die 19.369 Redispatchmassnahmen des Jahres 2025 sind, deren mittlere
+   Leistung anteilig auf die Stunden ihrer Dauer verteilt ist. Ein Verweis
+   auf eine Zahl, deren Herkunft der Leser nicht kennt, traegt nichts.
+   **Dieselben zwei Saetze standen bisher im Anhang** und sind dort
+   gestrichen. Der Anhang traegt jetzt allein die Zuordnung der Richtungen
+   und den Befund, sodass nichts doppelt steht.
+2. **Die Begruendung des arithmetischen Mittels ist gestrichen.** Der Satz
+   lautete zuvor "denn das Mittel bezieht die teuren Stunden mit ihrem
+   Gewicht ein". **Nicht wieder aufnehmen.**
+3. **Die Bezugslinie steht jetzt unter ihrer Annahme.** Der Arbeitspreis von
+   101 Euro je bewegter Megawattstunde ist der Quotient aus Gesamtkosten und
+   Massnahmenvolumen und setzt damit voraus, dass die Kosten des
+   Netzengpassmanagements linear mit dem Massnahmenvolumen steigen. Der Satz
+   sagt das aus, statt die Annahme stillschweigend zu treffen.
+4. **Der Satz zu den 952 Millionen Euro ist gestrichen.** Er lautete "Allein
+   952 Millionen Euro entfallen zudem auf die vorhalte- und
+   einsatzunabhaengigen Kosten der Reservekraftwerke, sodass die Linie eine
+   Groessenordnung angibt und keine Kostenkennzahl". **Nicht wieder
+   aufnehmen.** Die Einschraenkung liegt jetzt in der Annahme der Linearitaet
+   nach Punkt 3, und die Zahl gehoert nicht in die Ergebnisdarstellung.
+   Der Abgrenzungssatz nennt deshalb nur noch den Reservierungspreis als
+   Leistungspreis, ohne die Einheit der Linie zu wiederholen.
+
+**Saetze je Absatz.** Der erste Absatz traegt sieben Saetze, der zweite
+sieben. Beide liegen innerhalb der Stilregel 1.
+### 23.09.2026, Abschnitt 4.5, Jahresgang auf Monate und Spitzentage umgestellt
+
+**Drei weitere Vorgaben des Verfassers, alle im zweiten und dritten Absatz
+des Abschnitts 4.5.**
+
+1. **Der Jahresgang haengt jetzt am guenstigsten Monat und nennt beide
+   Richtungen.** Die Entladereservierung fehlte im Absatz vollstaendig. Neue
+   Grundlage ist `analysen/zeitmuster_ursachen/BEFUND_MONATE_TAG.md`, eine
+   eigene Auswertung vom 23.09.2026, die je Monat den Median der Tagesmittel
+   ausweist, also dieselbe Kenngroesse wie der Jahreszeitenbefund. Beide
+   Richtungen sind im Dezember am guenstigsten, naemlich 5,8 ladend und 9,9
+   entladend; das Maximum liegt ladend im Juni beim 6,4-Fachen und entladend
+   im Oktober beim 3,7-Fachen.
+   **Zurueckgenommen:** "Im Winter kostet die Ladereservierung im Tagesmittel
+   7,9, in den uebrigen Jahreszeiten zwischen 175 und 265 Prozent mehr."
+2. **Der Redispatch wird ueber die bedarfsreichsten Tage beschrieben.**
+   Vorgabe des Verfassers: im Diagramm sind nur wenige Sommerspitzen zu
+   sehen, und das soll der Satz sagen, statt Mittelwerte je Jahreszeit zu
+   nennen. Von den zehn Tagen mit dem groessten Tagesmittel fallen sieben in
+   der Erhoehungs- und neun in der Reduzierungsrichtung auf den Winter
+   (Dezember bis Februar) und hoechstens einer auf den Sommer.
+   **Zurueckgenommen:** "Zugleich erreicht die Redispatchleistung nach oben
+   im Winter 2312 MW und liegt in den uebrigen Jahreszeiten 24 bis 57 Prozent
+   darunter."
+3. **Das arithmetische Mittel ist eingeordnet.** Ein Satz sagt jetzt, dass
+   das Tagesmittel teure Einzelstunden nicht ausschliesst, und stellt den
+   Median der Tagesmittel des Sommers daneben, naemlich 16,7 entladend und
+   26,0 ladend. Die Schlussfolgerung im dritten Absatz traegt dazu den
+   Zusatz "im Tagesmittel".
+
+**Eigenstaendige Abwaegung.** Der Sommerwert steht in Euro je Megawatt und
+Stunde und nicht als Anteil der Bezugslinie. Ein Prozentsatz der Bezugslinie
+waere genau die Verrechnung zweier dimensionsgleicher, aber verschiedener
+Groessen, die der Absatz zwei Saetze vorher ausschliesst. Der Leser zieht den
+Vergleich selbst.
+
+**Saetze je Absatz.** Absatz 1 sieben, Absatz 2 acht, Absatz 3 vier Saetze.
+Alle innerhalb der Stilregel 1.
+### 23.09.2026, Einleitung des Abschnitts 4.6 vervollstaendigt
+
+**Vorgabe des Verfassers.** In der Aufzaehlung der Einleitung fehlen die
+Vorhaltdauer und die Zukunftssensitivitaet, mit der eine moegliche Saettigung
+im Markt fuer aFRR-Leistung und mehr Liquiditaet im Kurzfristhandel am IDC
+pauschal untersucht werden.
+
+**Zur Vorhaltdauer, eigenstaendige Feststellung.** Eine eigene
+Vorhaltdauer-Sensitivitaet gibt es nicht. Das Analyse-Repository hat den
+Namen selbst festgelegt, naemlich in
+`analysen/code/schrift/ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md` Zeile 419: "Die
+Groesse heisst in der Schriftfassung **Abrufdauer** -- nicht Vorhaltedauer,
+nicht Bindungsdauer." Die Konfiguration `sensi6_vorhaltedauer` mit
+`kur_t_res` in {0,25; 0,5; 1,0} ist also genau der Abschnitt 4.6.2. Der
+Code nennt die Groesse Vorhaltedauer, die Arbeit nennt sie Abrufdauer.
+**Die Einleitung traegt deshalb keine vierte Modellgroesse, sondern die
+Abgrenzung**, dass die Bindungsdauer in allen Varianten eine Stunde bleibt
+und nicht zu den gepruefften Groessen gehoert. Damit steht die Unterscheidung
+der beiden Dauern an der Stelle, an der der Leser die Liste zuerst sieht.
+
+**Die Zukunftsvariante steht jetzt in der Aufzaehlung**, und zwar mit der
+Deutung des Verfassers: sie prueft pauschal eine Saettigung der Maerkte fuer
+aFRR- und FCR-Leistung und eine groessere Liquiditaet im Kurzfristhandel am
+IDC. Die Deutung passt zur Umsetzung, denn eine groessere Liquiditaet
+verengt die Handelsspanne, und die Variante senkt genau diese Spanne auf 80
+Prozent. Der Satz zaehlt zudem die Abschnitte richtig, naemlich drei
+Annahmen des Optimierungsmodells und eine Annahme ueber die kuenftige
+Marktlage.
+   **Zurueckgenommen:** "In den folgenden Abschnitten werden drei Groessen
+   geprueft."
+
+**Abschnitt 4.6.4 ist entsprechend angepasst.** Sein erster Satz grenzte die
+Zukunftsvariante gegen die uebrigen Sensitivitaeten ab, was die Einleitung
+jetzt tut. Stattdessen steht dort, wie die beiden Erwartungen umgesetzt sind,
+naemlich als pauschale Abschlaege auf die Preise. Der Absatz behaelt vier
+Saetze.
+   **Zurueckgenommen:** "Die bisherigen Sensitivitaeten pruefen die
+   Belastbarkeit des Optimierungsmodells, waehrend die letzte eine Annahme
+   ueber die kuenftige Marktlage trifft."
+
+**Saetze je Absatz.** Die Einleitung traegt sieben Saetze, innerhalb der
+Stilregel 1.
+### 23.09.2026, Abschnitt 4.6.1 neu sortiert
+
+**Vorgabe des Verfassers**, sechs Punkte in dieser Reihenfolge: zuerst die
+Annahme des Basisfalls, dann was auf der Leistungsseite geprueft wurde, dann
+die Annahmen auf der Arbeitsseite; danach die Erklaerung, dass die
+Ausschoepfung des aFRR-Marktes vom abgerufenen Energievolumen, von der
+Handelsstrategie und vom Bietverhalten abhaengt, samt Verteidigung der
+eigenen Annahmen gegen den Vorwurf des Rosinenpickens; dann die Beschreibung
+der beiden Diagramme mit Gewicht auf der Schieflage, ihrer Verlagerung und
+den Maximalwerten; zuletzt bei der Arbeitsseite die Einordnung, dass die
+freie Lieferung stark wirkt, der Abruf aber ungewiss ist.
+
+**Der Abschnitt traegt jetzt sieben Absaetze**, naemlich Basisfall und
+Pruefumfang, Verteidigung der Annahmen, Leistungsdiagramm, Arbeitsdiagramm,
+Schieflage, Ungewissheit des Abrufs und die Abgrenzung der Jahresrechnung.
+Die vollstaendige alte Fassung steht als Kommentar ueber der neuen.
+
+**Die Stufen heissen jetzt wie im Bild.** Die vier Stufen der Leistungsseite
+sind ohne aFRR, gemittelter Preis ohne Lieferung, gemittelter Preis pro rata
+(der Basisfall) und Grenzpreis pro rata; die vier der Arbeitsseite sind pro
+rata, bis zur Reservierung, bis zum Abruf und bis 100 MW. Die Bezeichnungen
+stammen aus `sensi_afrr_jahr.py`, VARIANTEN_A und VARIANTEN_B. Die Stufe
+"ohne Lieferung" kam im Text bisher nicht vor, obwohl das Bild sie zeigt;
+sie traegt jetzt den Befund, dass die aFRR-Arbeit in der Laderichtung einen
+groesseren Teil des Preises traegt als in der Entladerichtung (Median ladend
+minus 44 Prozent, entladend 12,62 statt 12,22).
+
+**Die Verteidigung der Annahme ruht auf zwei Saeulen.**
+
+1. *Die Wahl der Stunden.* Die anteilige Lieferung legt die gelieferte Menge
+   je Zeitscheibe fest und nimmt dem Optimierungsmodell damit die Wahl der
+   Lieferstunden. Ein freier Modus gibt ihm diese Wahl zurueck. Der Code
+   sagt dasselbe: `optimizer.py` Zeile 292 fuehrt prorata als "pro-rata-
+   Abruf, kein Rosinenpicken (konservativ/realistisch)".
+2. *Die Groesse des Abrufs.* Eigene Auswertung vom 23.09.2026 in
+   `analysen/afrr_abruf`. In Deutschland wurden 2025 im Mittel 51 MW positive
+   und 53 MW negative aFRR-Arbeit abgerufen, gegen bezuschlagte 2010 und
+   1820 MW also 2,5 und 2,9 Prozent; in 92 Prozent der Viertelstunden bleibt
+   der Abruf unter einem Zehntel der Vorhaltung. Die Bezugsanlage hat 100 MW.
+   Die Stufe "bis zum Abruf" unterstellt ihr damit, dass sie den gesamten
+   deutschen Abruf allein bedient. Auch das steht so im Code:
+   `optimizer.py` Zeile 312 zu `afrr_ene_qde_anteil` = 1,0 -- "der volle
+   Abruf unterstellt, dass sie ihn allein bedient".
+
+**Zur Schieflage, eigenstaendige Ableitung.** Gemessen ist sie als Verhaeltnis
+von arithmetischem Mittel zu Median, also mit derselben Kenngroesse wie in
+4.3 und 4.4. Entladereservierung: Basisfall 1,9-Faches, Grenzpreis
+2,3-Faches, Lieferung bis 100 MW 1,6-Faches. Der Grenzpreis hebt die Spitze
+(95-Prozent-Quantil plus 39 Prozent, Maximum auf das Viereinhalbfache), die
+freie Lieferung hebt den Sockel (unteres Quartil plus 76, Median plus 69,
+95-Prozent-Quantil nur plus 22 Prozent).
+
+**Zurueckgenommen, nicht wieder aufzunehmen:** "Zwei Annahmen, die sich im
+Median aehnlich auswirken, veraendern das Ergebnis somit an verschiedenen
+Stellen der Verteilung." Der Satz war falsch: der Grenzpreis hebt den Median
+um 16 Prozent, die freie Lieferung um 69 Prozent. Aehnlich sind die beiden
+Annahmen im Median gerade nicht.
+
+**Zurueckgenommen:** "Diese Variante trennt Leistung und Arbeit allerdings
+nicht, denn unter anteiliger Lieferung haengt die Menge der gelieferten
+Arbeit an der vorgehaltenen Leistung und entfaellt mit ihr." Der Gedanke
+bleibt, steht jetzt aber kuerzer als Nebensatz an der Stufe ohne aFRR, und
+die Trennung selbst leistet die Stufe ohne Lieferung.
+
+**Begriff.** Durchgehend *Basisfall* und nicht Referenzfall, nach der
+Entscheidung 3 der Auftragsdatei. *Referenzerloes* und *Referenzfahrplan*
+bleiben davon unberuehrt.
+
+**Belege.** Die abgerufene Arbeit aus `netztransparenz_regelenergie_2026`
+(viertelstuendliche Reihe Aktivierte aFRR, alle 35.040 Viertelstunden des
+Jahres 2025 vorhanden), die bezuschlagte Leistung aus
+`regelleistung_ausschreibungsdaten_2026` (2190 Vierstundenprodukte je
+Richtung). Die Preise aus ERGEBNISSE Abschnitt 4, Jahr 2025, 2. Iteration.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

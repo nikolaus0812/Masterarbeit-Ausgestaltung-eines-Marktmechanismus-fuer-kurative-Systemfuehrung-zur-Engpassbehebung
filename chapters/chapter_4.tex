@@ -762,24 +762,47 @@ Der Abstand zwischen Median und arithmetischem Mittel zeigt an, ob ein hoher Pre
 %Eine Ausnahme bildet der Mittag, denn der Bedarf an Reduzierung der Einspeisung erreicht dort mit 1701\,\si{MW} seinen größten Wert, und die Ladereservierung ist zur selben Zeit am teuersten.
 %In den sechs teuersten Stunden der Ladereservierung fällt ein Drittel dieses Bedarfs an, gegenüber einem Viertel bei gleichmäßiger Verteilung.
 %In der Entladerichtung trifft der teure Abend dagegen keinen erhöhten Bedarf.
+% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: vor dem Verweis steht, was
+% Anhang H zeigt und wie der Redispatch aggregiert ist. Die beiden Saetze
+% standen zuvor im Anhang selbst und sind dort gestrichen, damit sie nicht
+% doppelt erscheinen. Zurueckgenommene Fassung:
+%Über den Tag schwankt der Bedarf nach Anhang~\ref{anh:redispatch_zeitmuster} um den Faktor 1,7, der Preis dagegen um 8,3, sodass die Tageszeit vor allem den Preis bestimmt.
 Ob die kurative Vorhaltung günstig zu beschaffen ist, entscheidet sich daran, ob die teuren Stunden mit dem Engpassmanagementbedarf zusammenfallen.
-Über den Tag schwankt der Bedarf nach Anhang~\ref{anh:redispatch_zeitmuster} um den Faktor 1,7, der Preis dagegen um 8,3, sodass die Tageszeit vor allem den Preis bestimmt.
+Anhang~\ref{anh:redispatch_zeitmuster} zeigt den Engpassmanagementbedarf über die Stunde des Tages und über den Monat, im selben Format wie Abbildung~\ref{fig:zeitmuster_reservierungspreis} den Preis.
+Grundlage sind die 19\,369 Redispatchmaßnahmen des Jahres 2025, deren mittlere Leistung anteilig auf die Stunden ihrer Dauer verteilt ist \cite{netztransparenz_regelenergie_2026}.
+Über den Tag schwankt der Bedarf damit um den Faktor 1,7, der Preis dagegen um 8,3, sodass die Tageszeit vor allem den Preis bestimmt.
 Eine Ausnahme bildet der Mittag, denn dort trifft der größte Bedarf an Reduzierung der Einspeisung auf die teuerste Ladereservierung, und ein Drittel dieses Bedarfs fällt in deren sechs teuerste Stunden.
 In der Entladerichtung trifft der teure Abend dagegen keinen erhöhten Bedarf.
 Der Vergleich von Preis und Bedarf läuft deshalb über die Jahreszeit.
 
-Abbildung~\ref{fig:jahreslauf_mittel} stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel, denn das Mittel bezieht die teuren Stunden mit ihrem Gewicht ein.
+% GEAENDERT am 23.09.2026, drei Vorgaben des Verfassers: die Begruendung des
+% Mittels streichen, die Bezugslinie unter der Annahme linearer Kosten
+% schreiben, den Satz zu den 952 Millionen Euro streichen.
+% Zurueckgenommene Fassung:
+%Abbildung~\ref{fig:jahreslauf_mittel} stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel, denn das Mittel bezieht die teuren Stunden mit ihrem Gewicht ein.
+Abbildung~\ref{fig:jahreslauf_mittel} stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel.
 Die waagerechte Linie bezeichnet den Arbeitspreis des präventiven Redispatch von 101 Euro je bewegter Megawattstunde, den die Bundesnetzagentur aus Gesamtkosten von 3071 Millionen Euro und einem Maßnahmenvolumen von 30\,319\,\si{GWh} ausweist \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Die Zahl ist der Quotient beider Werte und setzt damit voraus, dass die Kosten des Netzengpassmanagements linear mit dem Maßnahmenvolumen steigen.
 % GESTRAFFT am 23.09.2026: die Abgrenzung der Bezugslinie steht in zwei
 % Saetzen statt in dreien. Zurueckgenommene Fassung:
 %Dieser Wert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
 %Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
 %Hinzu kommt, dass allein 952 Millionen Euro auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke entfallen, sodass die Linie eine Größenordnung angibt und keine Kostenkennzahl \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, denn die Linie ist ein Arbeitspreis je bewegter Megawattstunde und der Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit.
-Allein 952 Millionen Euro entfallen zudem auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke, sodass die Linie eine Größenordnung angibt und keine Kostenkennzahl \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Im Winter kostet die Ladereservierung im Tagesmittel 7,9\,\EurMWh{}, in den übrigen Jahreszeiten zwischen 175 und 265 Prozent mehr.
-Zugleich erreicht die Redispatchleistung nach oben im Winter 2312\,\si{MW} und liegt in den übrigen Jahreszeiten 24 bis 57 Prozent darunter.
+%Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, denn die Linie ist ein Arbeitspreis je bewegter Megawattstunde und der Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit.
+%Allein 952 Millionen Euro entfallen zudem auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke, sodass die Linie eine Größenordnung angibt und keine Kostenkennzahl \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, denn der kurative Reservierungspreis ist ein Leistungspreis je vorgehaltener Leistung und Zeit.
+% GEAENDERT am 23.09.2026, zwei Vorgaben des Verfassers: den Jahresgang am
+% guenstigsten Monat aufhaengen und die Entladereservierung mitnehmen; beim
+% Redispatch die bedarfsreichsten Tage zaehlen statt Mittelwerte je
+% Jahreszeit zu nennen. Zurueckgenommene Fassung:
+%Im Winter kostet die Ladereservierung im Tagesmittel 7,9\,\EurMWh{}, in den übrigen Jahreszeiten zwischen 175 und 265 Prozent mehr.
+%Zugleich erreicht die Redispatchleistung nach oben im Winter 2312\,\si{MW} und liegt in den übrigen Jahreszeiten 24 bis 57 Prozent darunter.
+Beide Reservierungsrichtungen sind im Dezember am günstigsten, nämlich 5,8\,\EurMWh{} in der Lade- und 9,9\,\EurMWh{} in der Entladerichtung, und steigen bis zum Juni auf das 6,4-Fache beziehungsweise bis zum Oktober auf das 3,7-Fache.
+Der Engpassmanagementbedarf verläuft umgekehrt, denn von den zehn Tagen mit dem größten Bedarf fallen sieben in der Erhöhungs- und neun in der Reduzierungsrichtung auf den Winter und höchstens einer auf den Sommer.
 Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung unter der Bezugslinie, im Winter an allen Tagen beider Richtungen.
+% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: einordnen, dass das
+% arithmetische Mittel teure Einzelstunden nicht ausschliesst.
+Das arithmetische Mittel eines Tages schließt teure Einzelstunden nicht aus, doch sein Median liegt selbst im Sommer bei 16,7\,\EurMWh{} in der Entlade- und 26,0\,\EurMWh{} in der Laderichtung.
 
 \begin{figure}[H]
     \centering
@@ -789,7 +812,9 @@ Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 T
 \end{figure}
 
 Aus dieser Untersuchung lässt sich Folgendes mitnehmen.
-Die kurative Vorhaltung bleibt das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
+% PRAEZISIERT am 23.09.2026: die Aussage gilt fuer das Tagesmittel.
+%Die kurative Vorhaltung bleibt das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
+Die kurative Vorhaltung bleibt im Tagesmittel das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
 Das größte Potenzial liegt im Winter, denn dort trifft der größte Engpassmanagementbedarf auf die günstigste Reservierung.
 Die Mittagsstunden bilden die Ausnahme, denn dort fällt der größte Bedarf an Reduzierung der Einspeisung mit der teuersten Ladereservierung zusammen.
 
@@ -801,9 +826,20 @@ Die Mittagsstunden bilden die Ausnahme, denn dort fällt der größte Bedarf an 
 % entfernt worden, weil sie mit der Maximumzahl konkurrierte.
 
 Der kurative Reservierungspreis misst die Opportunitätskosten der verdrängten Vermarktung, sodass er von den Annahmen abhängt, mit denen das Optimierungsmodell diese Vermarktung abbildet.
-In den folgenden Abschnitten werden drei Größen geprüft.
+% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: die Aufzaehlung nannte drei
+% Groessen, der Abschnitt traegt aber vier Unterabschnitte. Die
+% Zukunftsvariante fehlte, und die Bindungsdauer war als feste Annahme nicht
+% abgegrenzt. Der Verfasser nennt die Zukunftsvariante eine pauschale
+% Untersuchung der Saettigung im Markt fuer aFRR-Leistung und der groesseren
+% Liquiditaet im Kurzfristhandel am IDC; diese Deutung steht jetzt hier,
+% waehrend 4.6.4 die Umsetzung als Abschlaege traegt.
+% Zurueckgenommene Fassung:
+%In den folgenden Abschnitten werden drei Größen geprüft.
+Drei der folgenden Abschnitte prüfen je eine Annahme des Optimierungsmodells, der vierte eine Annahme über die künftige Marktlage.
 Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Referenzerlöses trägt.
 Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die ein Betreiber zu hoch ansetzen kann.
+Die Bindungsdauer bleibt in allen Varianten eine Stunde und gehört deshalb nicht zu den geprüften Größen.
+Die Zukunftsvariante prüft zuletzt pauschal, wie eine Sättigung der Märkte für \ac{aFRR}- und \ac{FCR}-Leistung und eine größere Liquidität im Kurzfristhandel am \ac{IDC} auf den kurativen Reservierungspreis wirken.
 % VERSCHOBEN am 22.09.2026 aus der Kapiteleinleitung hierher, weil der Satz
 % die Vergleichbarkeit der Sensitivitaeten betrifft und nicht den Jahreslauf.
 Die Sensitivitäten nutzen eine eigene Referenzrechnung, die im Median um 0,01\,\EurMWh{} vom Jahreslauf abweicht und damit mit den übrigen Ergebnissen vergleichbar ist.
@@ -812,10 +848,55 @@ Die Sensitivitäten nutzen eine eigene Referenzrechnung, die im Median um 0,01\,
 \label{sec:sensi_afrr}
 % Zahlen aus ERGEBNISSE Abschnitt 7.5 und 7.6, gepaarte Differenzen aus 3.1.
 
-In Abbildung~\ref{fig:sensi_afrr_leistung} sind vier Annahmen über die \ac{aFRR}-Leistung gestaffelt, von der Variante ohne \ac{aFRR} bis zur Bewertung der vorgehaltenen Leistung zum Grenzpreis.
-Ohne \ac{aFRR} fällt der Median auf 3,47\,\EurMWh{} in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
-Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises.
-Diese Variante trennt Leistung und Arbeit allerdings nicht, denn unter anteiliger Lieferung hängt die Menge der gelieferten Arbeit an der vorgehaltenen Leistung und entfällt mit ihr.
+% NEU SORTIERT am 23.09.2026 nach sechs Vorgaben des Verfassers, siehe
+% Entscheidungsprotokoll. Die Reihenfolge lautet jetzt Basisfall, Pruefumfang,
+% Verteidigung der Annahmen, Leistungsdiagramm, Arbeitsdiagramm, Schieflage,
+% Ungewissheit des Abrufs, Abgrenzung der Jahresrechnung.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%In Abbildung~\ref{fig:sensi_afrr_leistung} sind vier Annahmen über die \ac{aFRR}-Leistung gestaffelt, von der Variante ohne \ac{aFRR} bis zur Bewertung der vorgehaltenen Leistung zum Grenzpreis.
+%Ohne \ac{aFRR} fällt der Median auf 3,47\,\EurMWh{} in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
+%Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises.
+%Diese Variante trennt Leistung und Arbeit allerdings nicht, denn unter anteiliger Lieferung hängt die Menge der gelieferten Arbeit an der vorgehaltenen Leistung und entfällt mit ihr.
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_leistung_2025.pdf}
+%    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter vier Annahmen über die \acs{aFRR}-Leistung, zweite Iteration. Der Whisker trägt am oberen Ende seinen Wert.}
+%    \label{fig:sensi_afrr_leistung}
+%\end{figure}
+%Bewertet das Optimierungsmodell die vorgehaltene Leistung mit dem Grenzpreis statt mit dem mengengewichteten Mittel der Zuschläge, steigt der Median auf 14,19 und 11,47\,\EurMWh{} und damit um rund 16 Prozent.
+%Das Maximum der Entladereservierung steigt dagegen von 1008 auf 4687\,\EurMWh{} und damit auf das Viereinhalbfache.
+%Die Annahme über den Zuschlagspreis verschiebt somit nicht das Niveau des kurativen Reservierungspreises, sondern seinen oberen Rand.
+%Der Wert von 4687\,\EurMWh{} ist ein Einzelwert, dessen Ursache nicht untersucht ist.
+%In Abbildung~\ref{fig:sensi_afrr_energie} ist die Lieferung der \ac{aFRR}-Arbeit bei gleichbleibendem Leistungspreis variiert.
+%Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median von 12,22 auf 18,85\,\EurMWh{} in der Entlade- und von 9,85 auf 20,69\,\EurMWh{} in der Laderichtung.
+%Die Lieferung bis zum realen Abruf und die Lieferung bis zur vollen Speicherleistung ergeben mit 20,60 und 20,61\,\EurMWh{} entladend sowie 20,88 und 21,33\,\EurMWh{} ladend nahezu dieselben Werte.
+%Der Sprung liegt damit zwischen anteiliger und freier Lieferung und nicht zwischen den drei freien Liefermodi, sodass allein die Zulassung freier Lieferung zu begründen ist.
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_energie_2025.pdf}
+%    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter vier Liefermodi der \acs{aFRR}-Arbeit bei gleichem Leistungspreis, zweite Iteration.}
+%    \label{fig:sensi_afrr_energie}
+%\end{figure}
+%Die beiden Annahmen wirken an verschiedenen Stellen der Verteilung.
+%Die freie Lieferung hebt das untere Quartil von 4,33 auf 7,64\,\EurMWh{} und den Median von 12,22 auf 20,61\,\EurMWh{}, das 95-Prozent-Quantil dagegen nur von 76 auf 92\,\EurMWh{}.
+%Die freie Lieferung hebt also den Sockel der Verteilung, während der Grenzpreis ihre Spitze hebt.
+%Zwei Annahmen, die sich im Median ähnlich auswirken, verändern das Ergebnis somit an verschiedenen Stellen der Verteilung.
+%Alle Varianten sind über das ganze Jahr gerechnet und nicht über einzelne Analysetage.
+%Eine frühere Fassung dieser Sensitivität fasste vier Tage zu einer Verteilung zusammen, und von deren Streuung entfielen nur 6,7 Prozent in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
+%Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, sodass die frühere Abbildung vor allem zeigte, welcher der vier Tage teuer war.
+%Über das Jahr entfällt dieser Einwand.
+
+Im Basisfall bewertet das Optimierungsmodell die vorgehaltene \ac{aFRR}-Leistung mit dem mengengewichteten Mittelwert der Zuschläge und die gelieferte Arbeit anteilig, nämlich mit dem Anteil der eigenen Vorhaltung am deutschlandweiten Abruf.
+Auf der Leistungsseite ist diese Annahme in vier Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit, im Basisfall und mit dem Grenzpreis des letzten Zuschlags.
+Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
+Die Trennung beider Seiten zeigt, ob der Abrechnungspreis der Kapazitätsauktion oder die Liefermenge den kurativen Reservierungspreis trägt.
+
+Wie weit eine Anlage den \ac{aFRR}-Markt ausschöpfen kann, hängt von drei Größen ab, nämlich vom abgerufenen Energievolumen, von der Handelsstrategie und vom Bietverhalten.
+Keine dieser Größen ist für eine einzelne Anlage beobachtbar, denn die Ergebnislisten der Auktionen sind anonymisiert \cite{regelleistung_ausschreibungsdaten_2026}.
+Der Basisfall setzt deshalb die anteilige Lieferung, die die gelieferte Menge je Zeitscheibe festlegt und dem Optimierungsmodell damit die Wahl der Lieferstunden nimmt.
+Ein freier Liefermodus gibt dem Optimierungsmodell diese Wahl zurück, sodass es die Arbeit in die Stunden mit dem größten Erlös legt.
+Die anteilige Lieferung verhindert somit, dass der kurative Reservierungspreis aus einer Vermarktung folgt, die eine reale Anlage nicht erreicht.
+Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die vier Stufen der Leistungsseite.
 
 \begin{figure}[H]
     \centering
@@ -824,15 +905,13 @@ Diese Variante trennt Leistung und Arbeit allerdings nicht, denn unter anteilige
     \label{fig:sensi_afrr_leistung}
 \end{figure}
 
-Bewertet das Optimierungsmodell die vorgehaltene Leistung mit dem Grenzpreis statt mit dem mengengewichteten Mittel der Zuschläge, steigt der Median auf 14,19 und 11,47\,\EurMWh{} und damit um rund 16 Prozent.
-Das Maximum der Entladereservierung steigt dagegen von 1008 auf 4687\,\EurMWh{} und damit auf das Viereinhalbfache.
-Die Annahme über den Zuschlagspreis verschiebt somit nicht das Niveau des kurativen Reservierungspreises, sondern seinen oberen Rand.
+Ohne \ac{aFRR} fällt der Median auf 3,47 in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
+Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises, wobei diese Stufe Leistung und Arbeit gemeinsam entfernt.
+Bewertet das Optimierungsmodell die vorgehaltene Leistung mit dem Grenzpreis des letzten Zuschlags, steigt der Median in beiden Richtungen um 16 Prozent.
+Das Maximum der Entladereservierung steigt dagegen von 1008 auf 4687\,\EurMWh{} und damit auf das Viereinhalbfache, das Maximum der Ladereservierung von 510 auf 1920\,\EurMWh{}.
+Der Abrechnungspreis der Kapazitätsauktion verschiebt somit nicht das Niveau des kurativen Reservierungspreises, sondern seinen oberen Rand.
 Der Wert von 4687\,\EurMWh{} ist ein Einzelwert, dessen Ursache nicht untersucht ist.
-
-In Abbildung~\ref{fig:sensi_afrr_energie} ist die Lieferung der \ac{aFRR}-Arbeit bei gleichbleibendem Leistungspreis variiert.
-Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median von 12,22 auf 18,85\,\EurMWh{} in der Entlade- und von 9,85 auf 20,69\,\EurMWh{} in der Laderichtung.
-Die Lieferung bis zum realen Abruf und die Lieferung bis zur vollen Speicherleistung ergeben mit 20,60 und 20,61\,\EurMWh{} entladend sowie 20,88 und 21,33\,\EurMWh{} ladend nahezu dieselben Werte.
-Der Sprung liegt damit zwischen anteiliger und freier Lieferung und nicht zwischen den drei freien Liefermodi, sodass allein die Zulassung freier Lieferung zu begründen ist.
+Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung.
 
 \begin{figure}[H]
     \centering
@@ -841,12 +920,25 @@ Der Sprung liegt damit zwischen anteiliger und freier Lieferung und nicht zwisch
     \label{fig:sensi_afrr_energie}
 \end{figure}
 
-Die beiden Annahmen wirken an verschiedenen Stellen der Verteilung.
-Die freie Lieferung hebt das untere Quartil von 4,33 auf 7,64\,\EurMWh{} und den Median von 12,22 auf 20,61\,\EurMWh{}, das 95-Prozent-Quantil dagegen nur von 76 auf 92\,\EurMWh{}.
-Die freie Lieferung hebt also den Sockel der Verteilung, während der Grenzpreis ihre Spitze hebt.
-Zwei Annahmen, die sich im Median ähnlich auswirken, verändern das Ergebnis somit an verschiedenen Stellen der Verteilung.
+Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median um 54 Prozent in der Entlade- und um 110 Prozent in der Laderichtung, ausgehend von 12,22 und 9,85\,\EurMWh{}.
+Die Lieferung bis zum deutschlandweiten Abruf und die Lieferung bis zur Nennleistung heben den Median um höchstens weitere 9 Prozent.
+Der Sprung liegt damit zwischen der anteiligen und der freien Lieferung und nicht zwischen den drei freien Stufen, sodass allein die Zulassung freier Lieferung zu begründen ist.
+Die Stufe ohne Lieferung von Arbeit trennt beide Erlösteile umgekehrt, denn sie senkt den Median der Ladereservierung um 44 Prozent und lässt den der Entladereservierung mit 12,62\,\EurMWh{} nahezu unverändert.
+Die \ac{aFRR}-Arbeit trägt in der Laderichtung somit einen größeren Teil des kurativen Reservierungspreises als in der Entladerichtung.
 
-Alle Varianten sind über das ganze Jahr gerechnet und nicht über einzelne Analysetage.
+Beide Annahmen verschieben die Schieflage der Verteilung in verschiedene Richtungen.
+Das arithmetische Mittel der Entladereservierung liegt im Basisfall beim 1,9-Fachen des Medians, unter dem Grenzpreis beim 2,3-Fachen und unter der Lieferung bis zur Nennleistung nur noch beim 1,6-Fachen.
+Der Grenzpreis hebt die Spitze der Verteilung, denn er hebt das 95-Prozent-Quantil der Entladereservierung um 39 Prozent und das Maximum auf das Viereinhalbfache.
+Die freie Lieferung hebt dagegen den Sockel, denn sie hebt das untere Quartil um 76 und den Median um 69 Prozent, das 95-Prozent-Quantil aber nur um 22 Prozent.
+Der Abrechnungspreis der Kapazitätsauktion bestimmt somit die teuren Stunden und der Liefermodus die typische Stunde.
+
+Die freie Lieferung hat damit einen großen Einfluss auf den typischen Preis, doch der Abruf selbst ist ungewiss.
+In Deutschland wurden im Jahr 2025 im Mittel 51\,\si{MW} positive und 53\,\si{MW} negative \ac{aFRR}-Arbeit abgerufen, gemessen an den bezuschlagten 2010 und 1820\,\si{MW} also 2,5 und 2,9 Prozent \cite{netztransparenz_regelenergie_2026,regelleistung_ausschreibungsdaten_2026}.
+In 92 Prozent der Viertelstunden bleibt der Abruf unter einem Zehntel der vorgehaltenen Leistung.
+Die Stufe bis zum Abruf unterstellt der Bezugsanlage, dass sie diesen Abruf allein bedient, und die Stufe bis zur Nennleistung hebt auch diese Grenze auf.
+Eine solche Lieferung ist für eine einzelne Anlage von 100\,\si{MW} nicht zu erwarten, sodass der Basisfall mit der anteiligen Lieferung die belastbare Annahme bleibt.
+
+Alle Stufen sind über das ganze Jahr gerechnet und nicht über einzelne Analysetage.
 Eine frühere Fassung dieser Sensitivität fasste vier Tage zu einer Verteilung zusammen, und von deren Streuung entfielen nur 6,7 Prozent in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
 Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, sodass die frühere Abbildung vor allem zeigte, welcher der vier Tage teuer war.
 Über das Jahr entfällt dieser Einwand.
@@ -909,8 +1001,14 @@ Das untere Quartil der Ladereservierung sinkt zugleich von 2,34 über 1,80 auf 1
 % Abschnitt 7.13. Die Begruendung der niedrigeren aFRR-Preise ist die
 % Vormerkung G3 des Verfassers vom 22.09.2026.
 
-Die bisherigen Sensitivitäten prüfen die Belastbarkeit des Optimierungsmodells, während die letzte eine Annahme über die künftige Marktlage trifft.
-Die Zukunftsvariante senkt die Handelsspanne am \ac{IDC} und die Preise der \ac{aFRR} auf 80 Prozent und die Preise der \ac{FCR} auf 90 Prozent.
+% GEAENDERT am 23.09.2026: die Einleitung des Abschnitts 4.6 traegt seither
+% die Abgrenzung gegen die uebrigen Sensitivitaeten, sodass der erste Satz
+% sie nicht wiederholt. Stattdessen steht hier, wie die beiden Erwartungen
+% umgesetzt sind. Zurueckgenommene Fassung:
+%Die bisherigen Sensitivitäten prüfen die Belastbarkeit des Optimierungsmodells, während die letzte eine Annahme über die künftige Marktlage trifft.
+%Die Zukunftsvariante senkt die Handelsspanne am \ac{IDC} und die Preise der \ac{aFRR} auf 80 Prozent und die Preise der \ac{FCR} auf 90 Prozent.
+Die Zukunftsvariante setzt die Sättigung der Regelleistungsmärkte und die größere Liquidität am \ac{IDC} als pauschale Abschläge auf die Preise um.
+Die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} sinken auf 80 Prozent, die Preise der \ac{FCR} auf 90 Prozent.
 Die Richtung folgt der Erwartung, dass der Bestand an \ac{BESS} wächst, während der Bedarf an Regelleistung aus der Dimensionierung des Systems folgt und nicht mitwächst.
 Abbildung~\ref{fig:sensi_zukunft} stellt den Erlös der Bezugsanlage in beiden Welten gegenüber.
 
