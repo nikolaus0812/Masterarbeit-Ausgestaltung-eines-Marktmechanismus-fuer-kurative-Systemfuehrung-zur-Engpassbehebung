@@ -14058,6 +14058,115 @@ steht nicht im Text.
 **Die vierte Frage an den SMARD-Chat ist damit erledigt**, bevor sie
 beantwortet wurde. Sie bleibt in `ANFRAGE_AFRR_HERBST_2025.md` stehen, ist
 dort aber als erledigt gekennzeichnet.
+### 23.09.2026, Richtung beim aFRR-Leistungspreis ergaenzt
+
+**Vorgabe des Verfassers.** Der Satz nannte die Richtung nicht. Die 82,2
+Euro je Megawatt und Stunde sind der Leistungspreis der aFRR in der
+**Laderichtung**, in den Daten die Spalte `afrr_cap_neg`. Ohne die Angabe
+liesse sich der Wert fuer beide Richtungen lesen, und der Absatz handelt an
+dieser Stelle vom Mittagsband der Ladereservierung.
+
+**Zugleich ist ein Pronomen ersetzt.** Der Satz begann mit "Im Mai erreicht
+er ...", wobei sich das Pronomen auf den Leistungspreis des vorigen Satzes
+bezog. Stilregel 5 laesst Pronomen nur zu, wenn der Bezug im selben Satz
+steht.
+
+**Die Benennung folgt Abschnitt 4.3**, wo es heisst "In der Laderichtung
+tragen zwei Ursachen, naemlich ein hoher Leistungspreis der aFRR ...". Die
+Arbeit benennt die Richtung damit durchgehend ueber die Reservierung und
+nicht ueber das Vorzeichen der Regelleistung.
+### 23.09.2026, Arbitragespanne in 4.4 verstaendlich gemacht
+
+**Befund des Verfassers.** Die Zahlen waren nicht nachvollziehbar. Der Satz
+sprach vom "zehnten Bezugs- und Absatzpaar", ohne zu sagen, was ein Paar
+ist, und nannte 63 und 10 Prozent ohne Bezugsgroesse.
+
+**Was gemeint ist.** Je Tag werden die 96 Viertelstunden sortiert und
+paarweise verbunden: die guenstigste mit der teuersten, die
+zweitguenstigste mit der zweitteuersten und so fort bis zum zehnten Paar.
+Jedes Paar ergibt eine Spanne, also den Abstand zwischen einem guenstigen
+Bezug und einem teuren Absatz desselben Tages. Gemessen wird, wie schnell
+diese Spannen abfallen, denn davon haengt ab, ob die Bezugsanlage einer
+Reservierung ausweichen kann.
+
+**Die Zahlen.** Im Median betraegt die groesste Spanne eines Tages 179,0
+und die zehntgroesste 112,8 Euro je Megawattstunde, also 63 Prozent. Am
+26.08.2025 stehen 1603,7 gegen 165,0, also 10 Prozent. Belege in
+`analysen/zeitmuster_ursachen/BEFUND_ARBITRAGEPAARE.md`.
+
+**Umsetzung.** Der Begriff der Spanne wird jetzt im Satz erklaert, und
+statt vom Paar ist von der zehntgroessten Spanne die Rede. Genannt wird
+ein Preis und danach ein Prozentsatz, nach der Vorgabe des Verfassers vom
+23.09.2026. Aus zwei Saetzen werden vier, der Absatz traegt damit sieben.
+### 23.09.2026, Einzeltag aus 4.4 entfernt
+
+**Einwand des Verfassers.** Ein Rueckgriff auf einen der fuenf Analysetage
+mitten in einem Abschnitt, der ueber das Jahr rechnet, mischt die Ebenen.
+Fuenf Tage tragen die Aussage zudem schwaecher als 365.
+
+**Umsetzung.** Der Satz nennt jetzt die Verteilung ueber das Jahr: an 19
+von 365 Tagen, also an jedem zwanzigsten, faellt die zehntgroesste Spanne
+unter 30 Prozent der groessten. Zur Einordnung die Quantile des Anteils
+ueber alle Tage: 5 Prozent der Tage liegen unter 29 Prozent, 10 Prozent
+unter 35, der Median bei 62 und das obere Quartil bei 72 Prozent.
+
+**Zurueckgenommene Formulierungen**, nicht wieder aufzunehmen: "Am
+26.08.2025 sind es dagegen nur 10 Prozent, und der Energiemarkt setzt dort
+den Reservierungspreis." und "An diesem Tag bleibt die Verdraengung nach
+Abschnitt 4.1 auch beim hoechsten gerechneten Preis unvollstaendig."
+
+**Was dabei verloren geht, ist fuer Kapitel 5 vorgemerkt.** Die beiden Tage
+mit der steilsten Staffel, naemlich der 26.08.2025 mit 10 und der
+15.05.2025 mit 11 Prozent, sind genau die beiden Tage, an denen die
+Verdraengung nach Abschnitt 4.1 auch bei 200 Euro je Megawatt und Stunde
+unvollstaendig bleibt. Dieser Zusammenhang erklaert einen Befund des
+Abschnitts 4.1 und gehoert in die Diskussion, nicht in den Ergebnisteil.
+### 23.09.2026, Anhang H angelegt, 4.5 gestrafft, drei Abbildungen geholt
+
+**Anhang H, Zeitmuster des Redispatch.** Entscheidung des Verfassers: die
+Abbildung gehoert in den Anhang, damit Abschnitt 4.5 seine Aussagen
+belegen kann, ohne eine dreizehnte Abbildung ins Kapitel zu nehmen. Die
+Datei ist `extras/attachment_redispatch.tex`, eingebunden in main.tex nach
+dem Jahreslauf. Der Anhang traegt zwei erlaeuternde Absaetze und die
+Abbildung; die Zuordnung der Richtungen ist dort erklaert, naemlich dass
+ein Speicher statt einer Abregelung laden und statt eines Hochfahrens
+entladen kann.
+
+**Zitiert wird `netztransparenz_regelenergie_2026`**, denn dieser Eintrag
+traegt bereits den Titel "Aktivierte Regelleistung und Sollwert der aFRR
+sowie Redispatch-Massnahmen". Ein neuer Eintrag war nicht noetig.
+
+**Abschnitt 4.5 gestrafft**, Vorgabe des Verfassers. Der erste Absatz faellt
+von sieben auf fuenf Saetze, der zweite von acht auf sieben. Die Zahlen des
+Tagesmusters stehen jetzt als Verweis auf Anhang H statt als Aufzaehlung,
+und die Abgrenzung der Bezugslinie steht in zwei Saetzen statt in dreien.
+
+**Drei Abbildungen neu geholt.** Der Erloesvergleich und die
+Zukunftsvariante tragen jetzt die Aufteilung nach Maerkten in den Balken,
+die Zukunftsvariante in **beiden** Referenzbalken wie beauftragt.
+
+**Zwei Befunde an den Lieferungen**, vom Verfasser unmittelbar im
+Analyse-Repository gemeldet, deshalb kein eigener Auftrag:
+
+1. `erloesvergleich_vollverdraengung_2025.pdf` beschriftet die Balken mit
+   "Preisvektor der 1. Iteration" und "Preisvektor der 2. Iteration". Das
+   Wort ist seit dem 23.09.2026 aus der Arbeit gestrichen und darf auch in
+   einer Abbildung nicht stehen. **Die Abbildung liegt mit dieser
+   Beschriftung im Repository und ist vor der Abgabe zu ersetzen.**
+2. Die Aufteilung des Referenzerloeses der Zukunftsvariante ist in der
+   Abbildung sichtbar, steht aber nicht in ERGEBNISSE Abschnitt 7.13.
+   Solange laesst sie sich nicht in 4.6.4 schreiben, denn keine Zahl der
+   Arbeit wird aus einer Abbildung abgelesen.
+
+**Ein blinder Fleck der Pruefsuite ist behoben.** Die Dateiliste in
+`tools/pruefen.py` war fest verdrahtet und kannte den neuen Anhang nicht.
+Pruefung 8 meldete deshalb einen Verweis ins Leere, obwohl die Marke
+existierte. Die Suite prueft jetzt 15 statt 14 Dateien. **Bei jedem
+weiteren Anhang ist die Liste zu ergaenzen.**
+
+**Zeilenenden.** Die neue Anhangdatei war zunaechst mit LF geschrieben. Die
+Kapitel- und Anhangdateien liegen mit CRLF vor, Pruefung 1 hat es gemeldet,
+behoben.
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

@@ -321,6 +321,28 @@ Claude ändert `CLAUDE.md` nicht. Offen:
 
 ## 6 Offene Punkte
 
+**Zwei Mängel an gelieferten Abbildungen**, vom Verfasser am 23.09.2026
+unmittelbar im Analyse-Repository gemeldet. **Keinen eigenen Auftrag dazu
+schreiben**, sonst entsteht doppelte Arbeit.
+
+- **Der Erlösvergleich trägt das gestrichene Wort.**
+  `erloesvergleich_vollverdraengung_2025.pdf` beschriftet die Balken mit
+  *Preisvektor der 1.* und *der 2. Iteration*. Die Abbildung liegt mit
+  dieser Beschriftung im Repository und **ist vor der Abgabe zu ersetzen**.
+  Ihre Aufteilung nach Märkten ist dagegen ein Gewinn und soll bleiben.
+- **Die Referenzaufteilung der Zukunftsvariante fehlt als Zahl.** Die
+  Abbildung `sensi_zukunft_erloes_2025.pdf` zeigt sie in beiden
+  Referenzbalken, `ERGEBNISSE…md` Abschnitt 7.13 führt sie nicht. Bis dahin
+  steht sie nicht in 4.6.4, denn keine Zahl wird aus einer Abbildung
+  abgelesen.
+
+**Eine Vorkehrung, die mitzuführen ist**
+
+- **Die Dateiliste in `tools/pruefen.py` ist fest verdrahtet.** Ein neuer
+  Anhang wird sonst nicht geprüft, und Marken darin gelten als nicht
+  auflösbar. Am 23.09.2026 um `attachment_redispatch.tex` ergänzt, die Suite
+  prüft jetzt 15 Dateien. Bei jedem weiteren Anhang nachziehen.
+
 **Für den Durchgang durch 4.5 vorgemerkt**, Stand 23.09.2026
 
 - **Die Aussage zur Tageszeit gegen die Jahreszeit** ist aus den
@@ -579,6 +601,12 @@ Claude ändert `CLAUDE.md` nicht. Offen:
   wenn er mit regelbarer Photovoltaik gekoppelt wird; saisonal eher der
   Winter, in dem die Winderzeugung dominiert. Die Abendstunden sind dagegen
   oft teuer.
+- **Aus 4.4, Befund vom 23.09.2026:** die beiden Tage mit der steilsten
+  Staffel der Arbitragespannen, nämlich der 26.08.2025 mit 10 und der
+  15.05.2025 mit 11 Prozent, sind genau die beiden Tage, an denen die
+  Verdrängung nach Abschnitt 4.1 auch bei 200\,€/(MW·h) unvollständig
+  bleibt. Der Zusammenhang erklärt einen Befund des Abschnitts 4.1 und stand
+  bis zum 23.09.2026 in 4.4; er gehört in die Diskussion.
 - **Aus 4.2, Vorgabe des Verfassers vom 23.09.2026:** die erste Iteration ist
   ineffizient, weil sie allen Stunden eines Tages denselben Preis vorgibt. An
   dieser Stelle ist das Zeitscheibenproblem noch einmal aufzunehmen.
