@@ -1,5 +1,22 @@
 # Auftrag: Kapitel 5, Bewertung und Diskussion
 
+> **Teilweise erledigt am 24.09.2026.** Abschnitt 8 ist abgearbeitet:
+> die vier Fragen sind dem Verfasser gestellt und beantwortet, die
+> Gliederung steht in Fassung A mit acht Abschnitten, und die
+> Stichpunkte aller 31 Absaetze stehen in `chapters/chapter_5.tex`.
+> **Der dort vorgeschlagene Strukturvorschlag ist damit ueberholt.**
+> Die Abschnitte 1 bis 7 bleiben die Lesekarte fuer die
+> Ausformulierung, ebenso Abschnitt 9 mit den Dingen, die nicht zu
+> tun sind. Der Stand steht im Protokoll unter `## chapter_5.tex`
+> und in `HANDOFF.md` Abschnitt 7a.
+>
+> Zwei Annahmen dieser Datei haben sich als falsch erwiesen. Der
+> Anforderungskatalog ist **keine** Dopplung zur Ergebnisdiskussion,
+> denn Anforderung A7 liefert den schaerfsten Befund. Und die
+> Saettigung des Marktes fuer FCR ist **belegt**, naemlich mit 810 MW
+> praequalifizierter BESS-Leistung in Abschnitt 2.3 gegen 564 MW
+> deutschem Bedarf in Abschnitt 2.2.3.
+
 Angelegt am 23.09.2026 abends von der Sitzung, die Kapitel 4 geschrieben hat.
 Adressat ist ein **neuer Chat**, der am 24.09.2026 mit dem Verfasser Kapitel 5
 schreibt. Diese Datei ist die Lesekarte. Sie nennt jede Fundstelle, damit du

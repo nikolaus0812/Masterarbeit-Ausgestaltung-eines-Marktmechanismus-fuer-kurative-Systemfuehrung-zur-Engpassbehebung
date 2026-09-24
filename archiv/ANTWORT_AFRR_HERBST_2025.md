@@ -1,5 +1,10 @@
 # Antwort auf `ANFRAGE_AFRR_HERBST_2025.md`
 
+> **Ins Archiv verschoben am 24.09.2026.** Die Anfrage ist erledigt.
+> Offen bleibt allein der Einbau des Belegs `ffe_regelreserve_2025` in
+> Abschnitt 4.4, siehe `HANDOFF.md` Abschnitt 6. Die fertigen
+> Bibliographieeintraege stehen unten in Abschnitt 6 dieser Datei.
+
 **Stand 24.09.2026.** Die Anfrage vom 23.09.2026 ist nicht von einem getrennten
 Chat beantwortet worden, sondern in der Schriftfassung selbst, nämlich aus den
 Jahresdateien von regelleistung.net für 2024, 2025 und 2026 und aus zwei

@@ -250,7 +250,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 > Fassung der Schriftfassung die richtige, weil sie den gesperrten
 > Begriff *Schwellenpreise* durch *Preisvektor der 1. Iteration* ersetzt.
 
-### Wurzelverzeichnis, acht Dateien
+### Wurzelverzeichnis, sechs Dateien
 
 | Datei | Rolle |
 |---|---|
@@ -259,15 +259,15 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
-| `AUFTRAG_KAPITEL_5.md` | **Auftrag an den neuen Chat, der am 24.09.2026 Kapitel 5 schreibt.** Lesekarte mit jeder Fundstelle, dem Material für die Diskussion, einem Strukturvorschlag und den vier Fragen an den Verfasser. Angelegt am 23.09.2026. |
+| `AUFTRAG_KAPITEL_5.md` | Lesekarte für Kapitel 5 mit jeder Fundstelle und dem Material für die Diskussion. **Abschnitt 8 ist am 24.09.2026 erledigt**, die Gliederung steht, der dortige Strukturvorschlag ist überholt. Die Abschnitte 1 bis 7 und 9 gelten weiter. |
 | ~~`AUFTRAG_REFERENZAUFTEILUNG.md`~~ | **Am 24.09.2026 erledigt und nach `archiv/` verschoben.** Die Lieferung beantwortet ihn in ERGEBNISSE Abschnitt 7.14, und Abschnitt 4.6.4 steht jetzt auf dieser Aufteilung. |
-| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026, warum sich der aFRR-Leistungspreis im Herbst 2025 verdoppelt und welche Quelle den Zusammenhang von Solareinspeisung und negativer Regelleistung trägt. **Am 24.09.2026 in der Schriftfassung selbst beantwortet**, ohne getrennten Chat. |
-| `ANTWORT_AFRR_HERBST_2025.md` | **Antwort vom 24.09.2026.** Die Verdopplung ist ein Angebotsereignis, die Nebenfrage ist mit Ganz und Kern 2025 belegt, ein Teil der Hauptfrage bleibt offen. Auswertung in `analysen/afrr_herbst_2025/`. |
 
-### `archiv/`, achtzehn Dateien, nur zum Nachschlagen
+### `archiv/`, einundzwanzig Dateien, nur zum Nachschlagen
 
 | Datei | war | abgelöst durch |
 |---|---|---|
+| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 zum aFRR-Leistungspreis | am 24.09.2026 selbst beantwortet |
+| `ANTWORT_AFRR_HERBST_2025.md` | die Antwort vom 24.09.2026, Auswertung in `analysen/afrr_herbst_2025/` | **trägt die beiden fertigen Bibliographieeinträge**, siehe Abschnitt 6 |
 | `AENDERUNGEN_KAP1_2.md` | Änderungsliste Kapitel 1 und 2 | umgesetzt 15.09. |
 | `AENDERUNGEN_KAP3.md` | Änderungsliste Kapitel 3 | umgesetzt 15.09. |
 | `KUERZUNGEN_KAP1_2.md` | Kürzungsliste | umgesetzt 15.09. |
@@ -523,7 +523,7 @@ schreiben**, sonst entsteht doppelte Arbeit.
   zitierten Mitteilung der Bundesnetzagentur als Tageswert vor, sodass der
   Vergleich auf der Jahreszeit stattfindet. Ob SMARD den Redispatch
   stundenscharf veröffentlicht, ist als dritte Frage in
-  `ANFRAGE_AFRR_HERBST_2025.md` gestellt.
+  `archiv/ANFRAGE_AFRR_HERBST_2025.md` gestellt.
 
 **Aus Kapitel 4**
 
@@ -664,7 +664,7 @@ schreiben**, sonst entsteht doppelte Arbeit.
 
 - ~~Die Antwort des SMARD-Chats steht aus.~~ **Erledigt am 24.09.2026**, die
   Schriftfassung hat die Anfrage selbst beantwortet, siehe
-  `ANTWORT_AFRR_HERBST_2025.md`. Vier Ergebnisse binden den Text:
+  `archiv/ANTWORT_AFRR_HERBST_2025.md`. Vier Ergebnisse binden den Text:
     - **Der Abgleich der Eingangsdaten ist bestanden.** Die Monatswerte der
       Spalte `GERMANY_AVERAGE_CAPACITY_PRICE` sind aus der Quelldatei
       reproduziert, die einzige Abweichung ist der März mit 12,1 statt 12,2
@@ -681,9 +681,10 @@ schreiben**, sonst entsteht doppelte Arbeit.
       thermischer Kraftwerke und dem Preis negativer Sekundärreserve in den
       Mittagsstunden. Die eigenen Daten stützen ihn, denn der Anstieg liegt
       vollständig in den Scheiben 08 bis 12 und 12 bis 16 Uhr. Der
-      Bibliographieeintrag steht in `ANTWORT_AFRR_HERBST_2025.md` Abschnitt 6
+      Bibliographieeintrag steht in `archiv/ANTWORT_AFRR_HERBST_2025.md` Abschnitt 6
       und ist erst mit dem zugehörigen Satz einzutragen.
     - Der Julieinbruch bleibt ohne Beleg und damit unerwähnt.
+    - **Offen und noch einzubauen:** Abschnitt 4.4 beschreibt den Mittagsgipfel des \ac{aFRR}-Leistungspreises in der Laderichtung mit 82,2 Euro je Megawatt und Stunde im Mai, nennt aber keine Ursache. Die stehende Vorgabe des Verfassers vom 23.09.2026 lautet, auffällige Perioden zu begründen. Ganz und Kern 2025 tragen die Begründung über die PV-Einspeisung, der Eintrag `ffe_regelreserve_2025` steht fertig in `archiv/ANTWORT_AFRR_HERBST_2025.md` Abschnitt 6. **Ein Satz in 4.4 und ein Eintrag in `literature.bib` fehlen noch.**
 
 **Ältere Punkte, unverändert**
 
