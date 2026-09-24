@@ -14950,6 +14950,103 @@ Durchgangs vom selben Tag ist damit gegenstandslos. **Mit dem Absatz faellt
 zugleich der einzige Doppelpunkt des Kapitels**, und der dreizehnte Befund
 des Durchgangs, der gegen Stilregel 17 verstiess, ist damit erledigt.
 
+**11, die Einleitung sagt, warum die Handelsspanne eine Schaetzung ist.**
+Vorgabe des Verfassers: *Optimierungsmodell schaetzt* ist unpraezise, denn
+eine genaue Modellierung war ebenfalls schwierig und der Erloes haengt von
+weiteren Faktoren ab. Zurueckgenommen: *die Handelsspanne am IDC, die das
+Optimierungsmodell schaetzt*. Neu: *deren erzielbare Breite ohne die
+Orderbuecher eine Schaetzung bleibt*, im Wortlaut an Abschnitt 3.2
+angelehnt.
+
+**12, die Zukunftsvariante steht im Konjunktiv und nennt den Wettbewerb.**
+Vorgabe des Verfassers. Zurueckgenommen: *wie eine Saettigung des Marktes
+fuer aFRR-Leistung und eine groessere Liquiditaet im Kurzfristhandel am IDC
+auf den kurativen Reservierungspreis wirken*. Neu: *wie eine kuenftige
+Saettigung des Marktes fuer aFRR-Leistung und mehr Wettbewerb am IDC auf den
+kurativen Reservierungspreis wirken wuerden*. Der erste Satz von 4.6.4 ist
+nach Stilregel 14 mitgezogen. **Das Wort Liquiditaet kommt in Kapitel 4
+damit nicht mehr vor**; in Abschnitt 3.1 steht es weiter fuer die Liquiditaet
+am Netzknoten und meint dort etwas anderes.
+
+**13, pro rata ist einmal erklaert.** Vorgabe des Verfassers. Der Ausdruck
+steht allein auf den Achsen der beiden Abbildungen zur aFRR und kam im
+ganzen Dokument in keinem Satz vor. Angefuegt ist in Abschnitt 4.6.1 der
+Satz *Die Abbildungen dieses Abschnitts bezeichnen diese anteilige Lieferung
+als pro rata*, unmittelbar hinter der Definition der anteiligen Lieferung,
+Stilregel 13. In die Bildunterschriften passt er nicht, weil beide bereits
+an der Grenze von zwei gesetzten Zeilen stehen.
+
+**14, der gleichbleibende Zuschlagspreis ist der gemittelte.** Vorgabe des
+Verfassers. Der Satz zur zweiten Abbildung nannte nur den
+"gleichbleibenden Zuschlagspreis der Leistung" und liess offen, ob der
+gemittelte oder der Grenzpreis des letzten Zuschlags gemeint ist, den die
+vorige Abbildung als dritte Stufe fuehrt. Angefuegt ist *naemlich dem
+gemittelten*.
+
+**15, das Subjekt des Schlusssatzes von 4.6.2.** Vorgabe des Verfassers:
+variiert wurde die Anpassung der Handelsspanne und nicht der Markt selbst.
+Zurueckgenommen: *Der IDC bewegt damit die typische Stunde ebenso wie die
+Spitze der Verteilung.* Neu: *Die Anpassung der Handelsspanne bewegt damit
+die typische Stunde ebenso wie die Spitze der Verteilung.*
+
+**16, die Zukunftsvariante nennt ihre Annahme als solche.** Zwei Vorgaben
+des Verfassers. Der erste Satz folgt jetzt der Einleitung und spricht von
+einer kuenftigen Saettigung; das Wort Wettbewerb stand dort seit Punkt 12.
+Angefuegt ist ausserdem *Der Abschlag ist eine vereinfachende Annahme und
+keine Prognose, denn die Zukunftsvariante soll allein den Einfluss
+niedrigerer Marktpreise auf den kurativen Reservierungspreis beziffern.*
+Das deckt sich mit der Vorgabe vom 15.09.2026, wonach der kurative
+Marktmechanismus der Erkenntnis ueber Einfluesse auf den Preis dient und
+kein Marktdesign mit prognostizierten Preisen ist.
+
+**17, Abschnitt 4.6.4 neu sortiert.** Vier Vorgaben des Verfassers.
+
+- **Die Einleitung sagt jetzt, wie die 80 Prozent umgesetzt sind**, naemlich
+  Leistungspreis und Arbeitspreis der aFRR auf 80 Prozent ihres Wertes und
+  am IDC der Faktor 0,8 aus Abschnitt 4.6.2, der jede Abweichung vom
+  Tagesmittel auf 80 Prozent schrumpfen laesst. Der Unterschied ist von
+  Belang, denn am IDC ist die Spanne gesenkt und nicht das Preisniveau.
+- **Der letzte Satz des Ergebnisabsatzes ist gestrichen**, Vorgabe des
+  Verfassers: schwierige und uninteressante Aussage. Zurueckgenommen und
+  nicht wieder aufzunehmen: *Die vollstaendige Verdraengung der
+  Zukunftsvariante kostet mit 353,0 Tsd. Euro je Megawatt und Jahr weiterhin
+  mehr als der heutige Markterloes von 340,6, sodass niedrigere Marktpreise
+  die kurative Bindung nicht guenstiger machen als der heutige Stand.*
+- **Die Senkung steht jetzt in Relation.** Der Abschlag betraegt 20 Prozent,
+  der Markterloes gibt nur 17,0 Prozent nach, und die Differenz von drei
+  Punkten ist der Erloes, den die Bezugsanlage in die unveraenderten Maerkte
+  verschiebt. **Eigenstaendige Ableitung**, vom Verfasser angestossen.
+- **Der Aufschlag steht mit beiden Massen.** Relativ steigt er von 23,3 auf
+  24,8 Prozent, absolut faellt er von 79,4 auf 70,3 Tsd. Euro je Megawatt
+  und Jahr, also um 11,5 Prozent. **Eigene Rechnung**: 420,0 minus 340,6
+  ergibt 79,4, und 353,0 minus 282,7 ergibt 70,3. Damit gibt der Aufschlag
+  von den drei Groessen am wenigsten nach.
+
+**Nicht gesetzt ist die Deutung des Verfassers**, aus dem Anstieg um 1,5
+Punkte folge, dass es schwerer werde, mit den Iterationen nah am Markterloes
+zu bleiben. Die absolute Zahl traegt sie nicht, denn der Aufschlag faellt mit
+11,5 Prozent staerker, als der relative Anstieg vermuten laesst. **Vom
+Verfasser zu entscheiden, ob die Deutung dennoch in den Text soll.**
+
+**Zwei Anschlussfehler aus der Neusortierung behoben.** Der Satz *Die Preise
+der gesenkten Maerkte geben 20 Prozent nach* ist ersetzt, weil am IDC die
+Spanne und nicht der Preis gesenkt ist. Und der Schlussabsatz von 4.6 sagte
+*sinkt der kurative Reservierungspreis im selben Mass wie der Markterloes,
+sodass das Verhaeltnis beider bestehen bleibt*; das widersprach den neuen
+Zahlen und heisst jetzt *mit 16,0 Prozent etwas weniger als der Markterloes
+mit 17,0 Prozent*.
+
+**18, Kapitel 5 hat eine Kapiteleinleitung bekommen.** Vorgabe des
+Verfassers: die abschliessende Zusammenfassung von 4.6 gehoert eher in die
+Einleitung der Diskussion und dort ausfuehrlicher. Angelegt sind vier
+Absaetze als Stichpunkte, naemlich was Kapitel 4 geliefert hat, woran das
+Ergebnis haengt, wie es auf eine veraenderte Marktlage reagiert und was das
+Kapitel damit tut. **Der Schlussabsatz in 4.6 bleibt vorerst stehen**, weil
+jeder Abschnitt des Kapitels 4 nach der Vorgabe vom 22.09.2026 mit drei bis
+fuenf Saetzen Schlussfolgerungen endet. **Vom Verfasser zu bestaetigen, ob er
+dafuer entfaellt.** Kapitel 4 traegt ebenfalls eine Kapiteleinleitung,
+Kapitel 5 hatte bisher keine.
+
 **Stand nach dem Umbau.** Abschnitt 4.6 traegt 16 Absaetze in der Folge
 Einleitung mit einem Absatz, Modellierung der aFRR mit sechs, Handelsspanne
 am IDC mit zwei, Vorgehaltene Energie je Abruf mit drei und Zukuenftig

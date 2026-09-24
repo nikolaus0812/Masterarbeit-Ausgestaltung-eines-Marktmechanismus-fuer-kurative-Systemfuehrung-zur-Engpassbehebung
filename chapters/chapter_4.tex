@@ -907,12 +907,25 @@ Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\r
 % verdoppelte Handelsspanne den Median um 36,7 Prozent gegen 4,0 und 12,7
 % Prozent bei der vorgehaltenen Energie. Zurueckgenommene Fassung:
 %Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt.
-Es folgen die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt, und die vorgehaltene Energie je Abruf, über die der \ac{ÜNB} entscheidet.
+% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: "das
+% Optimierungsmodell schaetzt" ist unpraezise und sagt nicht, warum
+% geschaetzt wird. Der Grund steht in Abschnitt 3.2 im Wortlaut: was der
+% Betreiber durch mehrfachen Handel zusaetzlich verdient, liesse sich nur
+% aus den Orderbuechern ablesen und bleibt ohne sie eine Schaetzung.
+% Zurueckgenommene Fassung:
+%Es folgen die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt, und die vorgehaltene Energie je Abruf, über die der \ac{ÜNB} entscheidet.
+Es folgen die Handelsspanne am \ac{IDC}, deren erzielbare Breite ohne die Orderbücher eine Schätzung bleibt, und die vorgehaltene Energie je Abruf, über die der \ac{ÜNB} entscheidet.
 % GESTRICHEN am 23.09.2026, Vorgabe des Verfassers. Die Abgrenzung der
 % Bindungsdauer steht weiter im Abschnitt 4.6.2 selbst. Zurueckgenommene
 % Fassung, in der Einleitung nicht wieder aufzunehmen:
 %Die Bindungsdauer bleibt in allen Varianten eine Stunde und gehört deshalb nicht zu den geprüften Größen.
-Die Zukunftsvariante prüft zuletzt pauschal, wie eine Sättigung des Marktes für \ac{aFRR}-Leistung und eine größere Liquidität im Kurzfristhandel am \ac{IDC} auf den kurativen Reservierungspreis wirken.
+% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: die Variante trifft
+% eine Annahme ueber die Zukunft und steht deshalb im Konjunktiv. Statt
+% der groesseren Liquiditaet steht mehr Wettbewerb, weil das die
+% schmalere Handelsspanne unmittelbar traegt. Der erste Satz von 4.6.4
+% ist mitgezogen, Stilregel 14. Zurueckgenommene Fassung:
+%Die Zukunftsvariante prüft zuletzt pauschal, wie eine Sättigung des Marktes für \ac{aFRR}-Leistung und eine größere Liquidität im Kurzfristhandel am \ac{IDC} auf den kurativen Reservierungspreis wirken.
+Die Zukunftsvariante prüft zuletzt pauschal, wie eine künftige Sättigung des Marktes für \ac{aFRR}-Leistung und mehr Wettbewerb am \ac{IDC} auf den kurativen Reservierungspreis wirken würden.
 % VERSCHOBEN am 22.09.2026 aus der Kapiteleinleitung hierher, weil der Satz
 % die Vergleichbarkeit der Sensitivitaeten betrifft und nicht den Jahreslauf.
 % GESTRICHEN am 23.09.2026, Vorgabe des Verfassers. Der Satz war am
@@ -1019,6 +1032,13 @@ Die Zukunftsvariante prüft zuletzt pauschal, wie eine Sättigung des Marktes f�
 %Über das Jahr entfällt dieser Einwand.
 
 Im Basisfall bewertet das Optimierungsmodell die vorgehaltene \ac{aFRR}-Leistung mit dem mengengewichteten Mittelwert der Zuschläge und die gelieferte Arbeit anteilig, nämlich mit dem Anteil der eigenen Vorhaltung am deutschlandweiten Abruf.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: pro rata muss einmal
+% erklaert werden. Der Ausdruck steht allein auf den Achsen der beiden
+% Abbildungen dieses Abschnitts und kommt sonst im ganzen Dokument nicht
+% vor. Der Satz bindet ihn an die Definition der anteiligen Lieferung,
+% Stilregel 13. In der Bildunterschrift hat er keinen Platz, weil beide
+% Unterschriften bereits an der Grenze von zwei gesetzten Zeilen stehen.
+Die Abbildungen dieses Abschnitts bezeichnen diese anteilige Lieferung als pro rata.
 Wie weit eine Anlage den \ac{aFRR}-Markt ausschöpfen kann, hängt vom abgerufenen Energievolumen, von der Handelsstrategie und vom Bietverhalten ab.
 Keine dieser drei Größen ist für eine einzelne Anlage beobachtbar, denn die Ergebnislisten der Auktionen sind anonymisiert \cite{regelleistung_ausschreibungsdaten_2026}.
 Die anteilige Lieferung legt die gelieferte Menge je Zeitscheibe fest und nimmt dem Optimierungsmodell damit die Wahl der Lieferstunden, die ein freier Liefermodus zurückgibt.
@@ -1089,7 +1109,12 @@ Der Grenzpreis des letzten Zuschlags hebt den Median in beiden Richtungen um 16 
 Das Maximum steigt dagegen von 1008\,\EurMWh{} auf 4687\,\EurMWh{} und von 510\,\EurMWh{} auf 1920\,\EurMWh{}, also auf das 4,6- und das 3,8-Fache.
 Der Grenzpreis verschiebt somit allein den oberen Rand der Verteilung und vergrößert ihre Schieflage, denn das arithmetische Mittel der Entladereservierung steigt vom 1,9- auf das 2,3-Fache des Medians.
 
-Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung.
+% PRAEZISIERT am 24.09.2026, Vorgabe des Verfassers: der gleichbleibende
+% Zuschlagspreis ist der gemittelte und nicht der Grenzpreis des letzten
+% Zuschlags, den die vorige Abbildung als dritte Stufe fuehrt.
+% Zurueckgenommene Fassung:
+%Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung.
+Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung, nämlich dem gemittelten.
 Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median um 54 Prozent in der Entlade- und um 110 Prozent in der Laderichtung, ausgehend von 12,22\,\EurMWh{} und 9,85\,\EurMWh{}.
 Die Lieferung bis zum deutschlandweiten Abruf und die Lieferung bis zur Nennleistung heben den Median um höchstens weitere 9 Prozent.
 % POSITIV GEWENDET am 24.09.2026, Befund St1 des Durchgangs durch 4.6,
@@ -1218,7 +1243,11 @@ Das untere Quartil der Ladereservierung sinkt zugleich von 2,34\,\EurMWh{} über
 % Kontrolllesung. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Eine zu breit angesetzte Handelsspanne hebt damit vor allem die Spitze der Verteilung, während das Hauptfeld der Stunden weniger reagiert.
 Aufschlussreich ist dagegen der Median, der mit 36,7 und 37,7 Prozent mitsteigt, obwohl der \ac{IDC} im Jahresmittel 14,0 Prozent des Bruttoerlöses trägt.
-Der \ac{IDC} bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
+% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: Subjekt des Satzes
+% ist die Groesse, die variiert wurde, naemlich die Anpassung der
+% Handelsspanne, und nicht der Markt selbst. Zurueckgenommene Fassung:
+%Der \ac{IDC} bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
+Die Anpassung der Handelsspanne bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
 
 % UMBENANNT am 24.09.2026, Vorgabe des Verfassers: geprueft ist
 % die Vorhaltung von Energie fuer einen Abruf, und die Energie
@@ -1310,7 +1339,16 @@ Für den Zuschnitt des Produkts folgt daraus, dass die vorgehaltene Energie je A
 % umgesetzt sind. Zurueckgenommene Fassung:
 %Die bisherigen Sensitivitäten prüfen die Belastbarkeit des Optimierungsmodells, während die letzte eine Annahme über die künftige Marktlage trifft.
 %Die Zukunftsvariante senkt die Handelsspanne am \ac{IDC} und die Preise der \ac{aFRR} auf 80 Prozent und die Preise der \ac{FCR} auf 90 Prozent.
-Die Zukunftsvariante setzt die Sättigung des Marktes für \ac{aFRR}-Leistung und die größere Liquidität am \ac{IDC} als pauschale Abschläge auf die Preise um.
+% NACHGEZOGEN am 24.09.2026, Stilregel 14: die Einleitung zu 4.6 spricht
+% seit heute von mehr Wettbewerb statt von groesserer Liquiditaet.
+% Zurueckgenommene Fassung:
+%Die Zukunftsvariante setzt die Sättigung des Marktes für \ac{aFRR}-Leistung und die größere Liquidität am \ac{IDC} als pauschale Abschläge auf die Preise um.
+% ANGEGLICHEN am 24.09.2026, Vorgabe des Verfassers: der Satz folgt der
+% Einleitung zu 4.6, die seit heute von einer kuenftigen Saettigung und
+% von mehr Wettbewerb spricht. Der Wettbewerb stand hier bereits.
+% Zurueckgenommene Fassung:
+%Die Zukunftsvariante setzt die Sättigung des Marktes für \ac{aFRR}-Leistung und mehr Wettbewerb am \ac{IDC} als pauschale Abschläge auf die Preise um.
+Die Zukunftsvariante setzt eine künftige Sättigung des Marktes für \ac{aFRR}-Leistung und mehr Wettbewerb am \ac{IDC} als pauschale Abschläge auf die Preise um.
 % BERICHTIGT am 24.09.2026, Befund A1 der Kontrolllesung: das
 % Analyse-Repository hat die Senkung der FCR am 23.09.2026 aus der
 % Zukunftsvariante genommen, siehe ERGEBNISSE Abschnitt 7.13 und 7.14.
@@ -1319,7 +1357,22 @@ Die Zukunftsvariante setzt die Sättigung des Marktes für \ac{aFRR}-Leistung un
 % Annahmen aus. Die Schriftfassung trug bis heute die alte Fassung in
 % Text und Abbildung. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} sinken auf 80 Prozent, die Preise der \ac{FCR} auf 90 Prozent.
-Die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} sinken auf 80 Prozent, während die Preise der \ac{FCR} und des \ac{DA} unverändert bleiben.
+% AUFGETEILT am 24.09.2026, Vorgabe des Verfassers: die Einleitung soll
+% kurz sagen, wie die 80 Prozent bei der aFRR-Leistung, der aFRR-Arbeit
+% und am IDC umgesetzt sind. Am IDC wirkt der Faktor aus 4.6.2 und nicht
+% ein Abschlag auf das Preisniveau, das ist der Unterschied.
+% Zurueckgenommene Fassung:
+%Die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} sinken auf 80 Prozent, während die Preise der \ac{FCR} und des \ac{DA} unverändert bleiben.
+Der Leistungspreis und der Arbeitspreis der \ac{aFRR} sinken dafür auf 80 Prozent ihres Wertes.
+Am \ac{IDC} wirkt der Faktor aus Abschnitt~\ref{sec:sensi_idc} mit 0,8, sodass jede Abweichung des Intradaypreises von seinem Tagesmittel auf 80 Prozent schrumpft.
+Die Preise der \ac{FCR} und des \ac{DA} bleiben unverändert.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Abschlag ist als
+% vereinfachende Annahme darzustellen und damit zu begruenden, dass die
+% Variante allein den Einfluss beziffern soll. Das deckt sich mit der
+% Vorgabe vom 15.09.2026, wonach der kurative Marktmechanismus der
+% Erkenntnis ueber Einfluesse auf den Preis dient und kein Marktdesign
+% mit prognostizierten Preisen ist.
+Der Abschlag ist eine vereinfachende Annahme und keine Prognose, denn die Zukunftsvariante soll allein den Einfluss niedrigerer Marktpreise auf den kurativen Reservierungspreis beziffern.
 Die Richtung folgt der Erwartung, dass der Bestand an \ac{BESS} wächst, während der Bedarf an Regelleistung aus der Dimensionierung des Systems folgt und nicht mitwächst.
 Abbildung~\ref{fig:sensi_zukunft} stellt den Erlös der Bezugsanlage in beiden Welten gegenüber.
 
@@ -1338,11 +1391,26 @@ Abbildung~\ref{fig:sensi_zukunft} stellt den Erlös der Bezugsanlage in beiden W
 %Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 352,0\,\TsdEurMWa{} und damit um 16,2 Prozent.
 %Der Aufschlag gegenüber dem Markterlös bleibt mit 25,1 gegen 23,3 Prozent nahezu gleich, denn der kurative Reservierungspreis ist die entgangene Marktopportunität und sinkt mit ihr.
 %Die vollständige Verdrängung der Zukunftsvariante kostet mit 352,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}.
+% NEU SORTIERT am 24.09.2026, Vorgabe des Verfassers. Der Absatz stellt
+% die Senkung von 17,0 Prozent jetzt der Senkung der Preise um 20 Prozent
+% gegenueber und benennt die Differenz von drei Punkten als den Erloes,
+% den die Anlage in die unveraenderten Maerkte verschiebt. Der Aufschlag
+% steht mit beiden Massen, relativ und absolut.
+% Der letzte Satz ist auf Vorgabe GESTRICHEN, naemlich als schwierige und
+% uninteressante Aussage. Zurueckgenommen und nicht wieder aufzunehmen:
+%Die vollständige Verdrängung der Zukunftsvariante kostet mit 353,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}, sodass niedrigere Marktpreise die kurative Bindung nicht günstiger machen als der heutige Stand.
+% Ebenfalls zurueckgenommen, weil die Reihenfolge neu ist:
+%Der Aufschlag gegenüber dem Markterlös bleibt damit nahezu gleich, nämlich 24,8 Prozent in der Zukunftsvariante gegen 23,3 Prozent im Jahr 2025.
 Der Markterlös ohne kurative Bindung sinkt von 340,6\,\TsdEurMWa{} auf 282,7\,\TsdEurMWa{} und damit um 17,0 Prozent.
-Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 353,0\,\TsdEurMWa{} und damit um 16,0 Prozent.
-Der Aufschlag gegenüber dem Markterlös bleibt damit nahezu gleich, nämlich 24,8 Prozent in der Zukunftsvariante gegen 23,3 Prozent im Jahr 2025.
-Der kurative Reservierungspreis ist die entgangene Marktopportunität und sinkt mit ihr.
-Die vollständige Verdrängung der Zukunftsvariante kostet mit 353,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}, sodass niedrigere Marktpreise die kurative Bindung nicht günstiger machen als der heutige Stand.
+% PRAEZISIERT am 24.09.2026: am IDC ist die Spanne gesenkt und nicht das
+% Preisniveau, deshalb steht hier der Abschlag und nicht der Preis.
+% Zurueckgenommene Fassung:
+%Die Preise der gesenkten Märkte geben 20 Prozent nach, der Markterlös dagegen nur 17,0 Prozent.
+Der Abschlag beträgt 20 Prozent, der Markterlös gibt dagegen nur 17,0 Prozent nach.
+Die Differenz von drei Punkten ist der Erlös, den die Bezugsanlage in die unveränderten Märkte verschiebt.
+Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 353,0\,\TsdEurMWa{} und damit um 16,0 Prozent, denn der kurative Reservierungspreis ist die entgangene Marktopportunität.
+Der Aufschlag gegenüber dem Markterlös steigt dabei von 23,3 auf 24,8 Prozent und fällt absolut von 79,4\,\TsdEurMWa{} auf 70,3\,\TsdEurMWa{}.
+Der Aufschlag gibt damit mit 11,5 Prozent am wenigsten nach, sodass der kurative Reservierungspreis eine Senkung der Marktpreise besser übersteht als der Markterlös.
 % ABGESCHWAECHT am 23.09.2026, Vorgabe des Verfassers: der Anstieg des
 % Day-Ahead ist eine Rechenfolge und war erwartbar, denn er steigt, weil die
 % uebrigen Maerkte gesenkt sind. Die Fassung des Analyse-Repositorys, "der
@@ -1398,7 +1466,12 @@ Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn ohne si
 %Die Abrufdauer und die Handelsspanne am \ac{IDC} wirken schwächer, denn eine Verkürzung auf eine Viertelstunde senkt den Median um 4,0 und 12,7 Prozent und eine verdoppelte Handelsspanne hebt ihn um gut ein Drittel.
 Die Handelsspanne am \ac{IDC} und die vorgehaltene Energie je Abruf wirken schwächer, denn eine verdoppelte Handelsspanne hebt den Median um gut ein Drittel und eine Verringerung der vorgehaltenen Energie auf ein Viertel senkt ihn um 4,0 und 12,7 Prozent.
 Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld.
-Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis im selben Maß wie der Markterlös, sodass das Verhältnis beider bestehen bleibt.
+% BERICHTIGT am 24.09.2026: der Satz stand im Widerspruch zum neu
+% sortierten Abschnitt 4.6.4, der 16,0 gegen 17,0 Prozent ausweist und
+% den Aufschlag mit 11,5 Prozent am wenigsten nachgeben sieht.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis im selben Maß wie der Markterlös, sodass das Verhältnis beider bestehen bleibt.
+Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis mit 16,0 Prozent etwas weniger als der Markterlös mit 17,0 Prozent.
 
 % GESTRICHEN am 23.09.2026, Klarstellung des Verfassers: die Diskussion der
 % Ergebnisse ist Kapitel 5 und kein Abschnitt des Kapitels 4. Der leere
