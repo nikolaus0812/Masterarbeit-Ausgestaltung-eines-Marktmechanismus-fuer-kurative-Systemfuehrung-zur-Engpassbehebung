@@ -14744,6 +14744,85 @@ denn *Schwellenpreis* ist ein gesperrter Begriff nach `CLAUDE.md` Abschnitt 5.
 mit biber ohne neue Warnung, 111 Seiten wie vorher. Abschnitt 4.6.4 traegt
 jetzt vier Absaetze mit vier, fuenf, fuenf und fuenf Saetzen.
 
+### 24.09.2026, Durchgang durch Abschnitt 4.6
+
+Der Verfasser hat den Abschnitt nach der Kontrolllesung noch einmal Absatz
+fuer Absatz durchgehen lassen. Zwoelf Befunde, alle freigegeben und
+umgesetzt. Der Abschnitt traegt danach 18 Absaetze statt 16.
+
+**Vier sachliche Befunde.**
+
+- **S1 und S2, der Schlussabsatz trug zwei falsche Zahlen.** Zurueckgenommene
+  Fassung, nicht wieder aufzunehmen: *Die Annahmen ueber die aFRR tragen das
+  Ergebnis am staerksten, denn ohne sie faellt der Median auf gut ein Viertel
+  und unter freier Lieferung steigt er um zwei Drittel.* Zwei Drittel steht
+  nirgends, denn Abschnitt 4.6.1 nennt 54 Prozent entladend und 110 Prozent
+  ladend. Und gut ein Viertel gilt nur entladend, naemlich 3,47 zu 12,22 gleich
+  28 Prozent gegen 4,25 zu 9,85 gleich 43 Prozent. Eigenstaendige Rechnung.
+- **S3, eine zu absolute Behauptung.** Zurueckgenommen: *dass die Abrufdauer
+  den Preis der vollstaendigen Bindung nicht bestimmt.* Der Satz stand drei
+  Saetze hinter der Aussage, dass die Abrufdauer den Median um 4,0 und 12,7
+  Prozent bewegt. Neu: *nur schwach bewegt, naemlich um hoechstens 12,7
+  Prozent.*
+- **S4, ein falscher Akteur.** Zurueckgenommen: *die Handelsspanne am IDC, die
+  ein Betreiber zu hoch ansetzen kann.* Abschnitt 4.6.3 sagt, die Handelsspanne
+  beruhe im Optimierungsmodell auf dem ID1 und einem Aufschlag und ihre Breite
+  sei eine Annahme. Ein Betreiber setzt sie nicht an. Neu: *die das
+  Optimierungsmodell schaetzt.*
+
+**Drei Befunde zum Aufbau.**
+
+- **A1**, der zweite Absatz von 4.6.1 trug acht Saetze und zwei Teilgedanken.
+  Umbruch nach Satz 4, jetzt vier und vier Saetze.
+- **A2**, der zweite Absatz von 4.6.2 trug acht Saetze und zwei Teilgedanken.
+  Umbruch nach Satz 5, jetzt fuenf und drei Saetze.
+- **A3**, die Abbildung zur aFRR-Leistung stand hinter dem Absatz, der sie
+  beschreibt, und damit einen Absatz hinter dem, der sie einfuehrt. Sie ist
+  vorgezogen. **Damit steht in 4.6 jede der vier Abbildungen unmittelbar
+  hinter dem Absatz, der sie einfuehrt**, wie am 22.09.2026 vorgegeben. Die
+  Beschreibung folgt auf die Abbildung, wie in 4.4 bei der Heatmap.
+
+**Fuenf Befunde zum Stil.**
+
+- **St1**, drei Saetze standen im Muster *A und nicht B*, das der Verfasser am
+  23.09.2026 ausgeschlossen hat. Zurueckgenommen sind: *Der Sprung liegt damit
+  zwischen der anteiligen und der freien Lieferung und nicht zwischen den drei
+  freien Stufen*, *Alle Stufen sind ueber das ganze Jahr gerechnet und nicht
+  ueber einzelne Analysetage* und *Eine kuerzere Abrufdauer entlastet damit den
+  typischen Preis und nicht die teuren Stunden.* Alle drei sind positiv
+  gewendet. **Damit ist der Vermerk in HANDOFF.md Abschnitt 3 erledigt**, der
+  noch acht offene Stellen in 4.4 bis 4.6 nannte; in 4.4 und 4.5 steht keine
+  mehr.
+- **St2**, zwei Namen fuer dieselbe Groesse. Abschnitt 4.6.1 schrieb zweimal
+  *das obere Ende der mittleren 50 Prozent der Stunden*, Abschnitt 4.3 schreibt
+  *oberes Quartil*. Beide Stellen tragen jetzt *oberes Quartil*, Stilregel 14.
+- **St3**, eine relative Angabe ohne Bezugsgroesse. Zurueckgenommen: *Die freie
+  Lieferung hat damit einen grossen Einfluss auf den typischen Preis.* Neu:
+  *hebt den typischen Preis damit um mindestens die Haelfte*, Stilregel 7.
+- **St4**, eine Arbeitsnotiz im Fliesstext. Der Absatz erzaehlte von einer
+  frueheren Fassung der Abbildung. Zurueckgenommen, nicht wieder aufzunehmen:
+  *Eine fruehere Fassung dieser Sensitivitaet fasste vier Tage zu einer
+  Verteilung zusammen* und *sodass die fruehere Abbildung vor allem zeigte,
+  welcher der vier Tage teuer war* und *Ueber das Jahr entfaellt dieser
+  Einwand.* Der Befund dahinter bleibt, naemlich dass der Unterschied zwischen
+  den Kalendertagen groesser ist als der zwischen den Liefermodi.
+
+**Bewusst nicht geaendert.** Abschnitt 4.6.2 nennt als Basisfall 12,21 und
+9,84, Abschnitt 4.3 nennt 12,22 und 9,85. Beides ist quellentreu, siehe den
+Eintrag zur Kontrolllesung, Befund B5.
+
+**Offen geblieben, dem Verfasser gemeldet.** Der zweite Satz des elften
+Absatzes traegt einen Hauptsatz und zwei Nebensaetze und verstoesst damit
+gegen Stilregel 17: *Der Grund liegt im Grad der Bindung: ist der Tag
+vollstaendig gebunden, steht ohnehin keine Leistung fuer andere Maerkte frei,
+sodass die Breite des Ladezustandsbandes keine weitere Vermarktung
+verdraengt.* Der Satz stammt vom Verfasser und ist deshalb nicht von selbst
+geaendert.
+
+**Stand nach dem Durchgang.** `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` mit dem einen zulaessigen Doppelpunkt, vier Durchgaenge
+mit biber, 124 Seiten, allein die Warnung zu `ch:conc`.
+
 ## chapter_5.tex
 
 ### 24.09.2026, Struktur beschlossen und Stichpunktgeruest neu gesetzt

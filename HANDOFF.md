@@ -344,8 +344,9 @@ Ausführlich im Protokoll. Kurz:
 - **Kein Satz nach dem Muster „zeigt A und nicht B“**, Vorgabe des Verfassers
   vom 23.09.2026. Statt der Verneinung wird die Aussage positiv gewendet,
   etwa „Aus den fünf Tagen folgt die Reihenfolge der Verdrängung, aus dem
-  Jahreslauf das Gewicht der einzelnen Märkte.“ In 4.4 bis 4.6 stehen acht
-  Stellen dieses Musters noch offen, sie gehören in den Durchgang dort.
+  Jahreslauf das Gewicht der einzelnen Märkte.“ **Erledigt am 24.09.2026.**
+  Im Durchgang durch 4.6 sind die letzten drei Stellen positiv gewendet,
+  in 4.4 und 4.5 stand keine mehr.
 - **Das Wort Preisvektor kommt nicht vor**, Vorgabe des Verfassers vom
   23.09.2026. Kapitel 4 sagt stattdessen *die Preise der ersten* und *der
   zweiten Iteration*. In `chapters/chapter_5.tex` steht das Wort noch einmal,
