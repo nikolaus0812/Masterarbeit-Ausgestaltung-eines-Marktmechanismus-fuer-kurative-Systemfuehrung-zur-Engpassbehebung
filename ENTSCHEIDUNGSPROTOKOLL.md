@@ -15047,6 +15047,146 @@ fuenf Saetzen Schlussfolgerungen endet. **Vom Verfasser zu bestaetigen, ob er
 dafuer entfaellt.** Kapitel 4 traegt ebenfalls eine Kapiteleinleitung,
 Kapitel 5 hatte bisher keine.
 
+**19, der Ergebnisabsatz von 4.6.2 traegt Verhaeltnisse und ist geteilt.**
+Vorgabe des Verfassers: zu viele Preise, lieber Verhaeltnisse, und die
+Richtungen in je einen eigenen Absatz statt in jedem Satz beide zu nennen.
+Der Absatz nennt jetzt keinen einzigen Preis mehr, sondern plus 36,7 Prozent
+im Median, plus 53 im oberen Quartil, plus 60 im 95-Prozent-Quantil und plus
+98 im Maximum der Entladereservierung, dazu plus 37,7 und plus 99 Prozent
+ladend. **Dabei tritt ein Unterschied hervor, der vorher unterging:** das
+untere Quartil der Ladereservierung sinkt um 47 Prozent, das der
+Entladereservierung nur um 7 Prozent, sodass die Streckung die Verteilung
+der Ladereservierung in beide Richtungen spreizt. Eigene
+Verhaeltnisrechnung aus der Tabelle in ERGEBNISSE Abschnitt 7.12.
+
+**20, die Differenz von drei Punkten ist erklaert statt behauptet.** Vorgabe
+des Verfassers: schwer verstaendlich. Zurueckgenommen und nicht wieder
+aufzunehmen: *Der Abschlag betraegt 20 Prozent, der Markterloes gibt dagegen
+nur 17,0 Prozent nach. Die Differenz von drei Punkten ist der Erloes, den die
+Bezugsanlage in die unveraenderten Maerkte verschiebt.* Der Weg steht jetzt
+in drei Schritten, naemlich wen der Abschlag trifft, was die Anlage
+daraufhin tut und was daraus fuer den Markterloes folgt. **Die frueherre
+Fassung schrieb die ganze Differenz der Verschiebung zu**, was zu weit ging,
+denn ein Teil folgt schon daraus, dass der Day-Ahead und die FCR gar nicht
+gesenkt sind. Die neue Fassung behauptet keine Zerlegung.
+
+**21, ein Begruendungssatz ist gestrichen.** Vorgabe des Verfassers.
+Zurueckgenommen: *, denn der kurative Reservierungspreis ist die entgangene
+Marktopportunitaet.* Der Gedanke steht im selben Abschnitt bereits im
+Schlusssatz.
+
+**22, der Schlusssatz von 4.6.4 nennt keine Prozentzahl mehr.** Vorgabe des
+Verfassers: eine Prozentzahl zwischen Prozentzahlen liest sich schlecht.
+Zurueckgenommen: *Der Aufschlag gibt damit mit 11,5 Prozent am wenigsten
+nach, sodass der kurative Reservierungspreis eine Senkung der Marktpreise
+besser uebersteht als der Markterloes.* Neu: *Die vollstaendige Verdraengung
+gelingt damit unter niedrigeren Marktpreisen aehnlich wie unter den heutigen,
+denn der Mehrerloes der kurativen Bindung gibt weniger nach als der
+Markterloes.*
+
+**Nicht gesetzt ist die weitergehende Deutung des Verfassers**, der
+Mehrerloes der kurativen Bindung sei vom Erloesniveau unabhaengig, weil sich
+absoluter und relativer Aufschlag gegenlaeufig bewegen. **Die Zahl traegt das
+nicht.** Waere der Mehrerloes erloesunabhaengig, bliebe er absolut konstant;
+waere er streng proportional, fiele er um 17,0 Prozent wie der Markterloes.
+Er faellt um 11,5 Prozent und liegt damit bei rund zwei Dritteln des Weges
+zum proportionalen Fall. Der Satz sagt deshalb nur, dass er weniger nachgibt.
+**Vom Verfasser zu entscheiden, ob die staerkere Aussage dennoch in den Text
+soll.** Eigene Rechnung.
+
+**23, wer was auffaengt.** Vorgabe des Verfassers: der Day-Ahead faengt
+durch die verengte Handelsspanne etwas vom IDC auf und die FCR etwas von der
+aFRR, weil die Produkte einander nahe stehen; beide zusammen halten den
+Gesamterloes ueber das Jahr gleichwohl nicht. Zwei Saetze sind in 4.6.4
+angefuegt. **Eigenstaendige Zuordnung**, gestuetzt darauf, dass der
+Day-Ahead und der IDC beide Arbitrage tragen und die FCR und die
+aFRR-Leistung beide Vorhaltung.
+
+**24, der Schlussabsatz von 4.6 kommt ohne Zahlen aus.** Vorgabe des
+Verfassers. Er trug sechs Prozentzahlen aus drei Abschnitten und las sich
+als Liste. Zurueckgenommen und nicht wieder aufzunehmen sind die beiden
+Saetze mit den Zahlen 28, 43, 54, 110, 4,0 und 12,7 Prozent sowie der Satz
+*Unter durchweg niedrigeren Marktpreisen sinkt der kurative
+Reservierungspreis mit 16,0 Prozent etwas weniger als der Markterloes mit
+17,0 Prozent.* Der Absatz traegt jetzt fuenf Saetze und nennt die Rangfolge
+statt der Werte.
+
+**Neu in diesem Absatz ist eine Folgerung des Verfassers**, naemlich dass ein
+gesaettigter Markt fuer aFRR-Leistung staerker auf den kurativen
+Reservierungspreis wirkt als mehr Wettbewerb am IDC. Sie ist gestuetzt: der
+Anteil der aFRR-Leistung am Bruttoerloes gibt von 65,6 auf 59,1 Prozent
+relativ um 10 Prozent nach, der des IDC von 14,0 auf 10,2 Prozent um 27
+Prozent, und die aFRR-Leistung bleibt mit Abstand der groesste Posten.
+
+**Nicht uebernommen** ist die Formulierung der Vorgabe, der Erloesanteil des
+IDC habe sich *fast halbiert*. Der Rueckgang betraegt 27 Prozent des
+Anteils. Der Text sagt deshalb nur, dass die aFRR-Leistung den Preis
+weiterhin traegt.
+
+**25, der Schlussabsatz benennt den Wechsel der Messgroesse.**
+Rueckmeldung des Verfassers: *verstehe ich nicht, warum auf einmal Median
+und Maxima, wir haben doch den Gesamterloes.* Der Befund trifft zu. Die
+Abschnitte 4.6.1 bis 4.6.3 messen die **Verteilung der Stundenpreise** mit
+Median, Quartilen und Maxima, Abschnitt 4.6.4 misst den **Erloes des ganzen
+Jahres** in Tsd. Euro je Megawatt und Jahr. Der Schlussabsatz sprang
+zwischen beiden Ebenen, ohne den Wechsel zu benennen. Angefuegt ist deshalb
+der Satz *Die ersten drei Sensitivitaeten wirken auf die Verteilung der
+Stundenpreise, die Zukunftsvariante auf den Erloes des ganzen Jahres*, und
+die drei folgenden Saetze tragen ihre Ebene jetzt im ersten Wort, naemlich
+*In der Verteilung*, *Die Spitze der Verteilung* und *Im Jahreserloes*.
+
+**Der Absatz traegt damit sechs Saetze statt fuenf** und weicht von der
+Vorgabe vom 22.09.2026 ab, wonach ein Schlussabsatz drei bis fuenf Saetze
+traegt. Stilregel 1 laesst bis zu acht zu, und der Wechsel der Messgroesse
+liess sich nicht kuerzer benennen.
+
+**26, der Schlussabsatz zieht nur noch die Erkenntnis aus 4.6.4.** Vorgabe
+des Verfassers: *muss das ueberhaupt sein, dass auf davor verwiesen wird.*
+Der Absatz fasste bis dahin alle vier Sensitivitaeten zusammen und ist jetzt
+der Schlussabsatz von 4.6.4 und nicht mehr der von 4.6. Er traegt vier
+Saetze und bleibt beim Jahreserloes, womit der Sprung zwischen den beiden
+Messgroessen aus Punkt 25 von selbst entfaellt. Zurueckgenommen und nicht
+wieder aufzunehmen sind die sechs Saetze der Fassung vom selben Tag, die mit
+*Fuer die Belastbarkeit des kurativen Reservierungspreises gegenueber den
+Annahmen bleibt Folgendes* begann.
+
+**Die Zusammenfassung ueber alle vier Sensitivitaeten geht nicht verloren.**
+Sie steht seit dem 24.09.2026 in der Kapiteleinleitung von Kapitel 5 als
+Absatz 4 und dort mit Zahlen. **Abschnitt 4.6 hat damit als einziger
+Abschnitt des Kapitels 4 keinen eigenen Schlussabsatz mehr**, was von der
+Vorgabe vom 22.09.2026 abweicht. Der Verfasser hat das am 24.09.2026 so
+entschieden, nachdem er die Zusammenfassung in die Einleitung der Diskussion
+verlagert hatte.
+
+**27, der Schlussabsatz von 4.6.4 traegt jetzt alle Aussagen des
+Abschnitts.** Vorgabe des Verfassers: die Fassung vom selben Tag war zu kurz
+und traf den Kern nicht. Eine Durchsicht der drei Absaetze ergibt fuenf
+Aussagen.
+
+| Nr | Aussage | Fundstelle |
+|---|---|---|
+| 1 | Der Preis sinkt mit dem Markterloes, aber etwas weniger, sodass die Bindung gegenueber dem Markt nicht guenstiger wird | Absatz 2 |
+| 2 | Die Anlage weicht in die unangetasteten Maerkte aus, was den Rueckgang daempft | Absatz 2 und 3 |
+| 3 | Die Ausweichmaerkte halten den Gesamterloes gleichwohl nicht | Absatz 3 |
+| 4 | Der Charakter der Anlage kippt nicht, die aFRR traegt weiterhin drei Viertel | Absatz 3 |
+| 5 | Welcher Markt sich veraendert, ist von Belang | Folgerung |
+
+**Die zurueckgenommene Fassung trug allein die Aussagen 1 und 5.** Gefehlt
+haben die Ausweichung, ihre Grenze und vor allem Aussage 4, naemlich dass
+der kurative Reservierungspreis auch unter niedrigeren Marktpreisen ein
+Preis gegen die Regelleistung bleibt. Der Absatz traegt jetzt fuenf Saetze,
+einen je Aussage. Zurueckgenommen und nicht wieder aufzunehmen: *Der Preis
+folgt dem Markterloes und gibt dabei etwas weniger nach als dieser. Welcher
+Markt sich veraendert, ist von Belang, denn die aFRR-Leistung traegt den
+groessten Teil des Erloeses und damit den Preis.*
+
+**Aussage 1 ist zugleich die tragfaehige Fassung des am selben Tag
+gestrichenen Satzes**, wonach die Vollverdraengung weiterhin mehr koste als
+der heutige Markterloes. Der Verfasser hatte ihn als schwierig und
+uninteressant verworfen. Relativ formuliert traegt die Aussage: der
+Aufschlag steigt von 23,3 auf 24,8 Prozent, die Bindung wird gegenueber dem
+Markt also nicht guenstiger.
+
 **Stand nach dem Umbau.** Abschnitt 4.6 traegt 16 Absaetze in der Folge
 Einleitung mit einem Absatz, Modellierung der aFRR mit sechs, Handelsspanne
 am IDC mit zwei, Vorgehaltene Energie je Abruf mit drei und Zukuenftig
