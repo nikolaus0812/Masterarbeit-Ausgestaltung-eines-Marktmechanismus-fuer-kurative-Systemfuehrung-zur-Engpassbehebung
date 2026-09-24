@@ -15329,6 +15329,51 @@ Abschnitts 5.1, naemlich Median, arithmetisches Mittel, Quartile und Maxima.
 sie nicht noch einmal aufzaehlen darf. Der Vermerk steht als Kommentar ueber
 der Kapiteleinleitung.
 
+### 24.09.2026, Kapiteleinleitung ausformuliert
+
+Die erste ausformulierte Stelle des Kapitels 5. Sechs Absaetze mit sechs,
+fuenf, fuenf, sechs, fuenf und fuenf Saetzen. Das Stichpunktgeruest steht
+darunter auskommentiert.
+
+**Vier Befunde am Geruest, vor dem Ausformulieren behoben.**
+
+1. Der Stichpunkt *folgt der Preisstruktur des Tages und keiner festen
+   Rangordnung der Maerkte* stand im Muster *A und nicht B* und ist positiv
+   gewendet.
+2. Die Einleitung trug ueber dreissig Zahlen, allein der zweite Absatz
+   dreizehn. Quartile, Maxima und die beiden Fuellgrade sind entfallen, denn
+   sie stehen in den Abschnitten 4.2 und 4.3, die sie herleiten. Die
+   Rechtsschiefe steht jetzt als Verhaeltnis, naemlich als Zwei- bis
+   Zweieinhalbfaches des Medians, statt als Wertepaar. Im dritten Absatz
+   ersetzt *mindestens 362 von 365 Tagen* die vier Zahlen der Vorfassung.
+3. Der Stichpunkt *der Aufschlag absolut um 11,5 Prozent* ist entfallen, wie
+   am selben Tag in Abschnitt 4.6.4, denn eine Prozentzahl zwischen
+   Prozentzahlen liest sich schlecht.
+4. Der Stichpunkt *Das Ergebnis ist damit gegenueber einer allgemeinen Senkung
+   der Marktpreise belastbar* war zu pauschal, denn das Niveau sinkt um 16,0
+   Prozent. Neu: *Das Niveau sinkt mit dem Markt, waehrend das Verhaeltnis
+   beider bleibt.*
+
+**Zum Wegweiser im sechsten Absatz.** Stilregel 10 verbietet, dass Abschnitte
+handeln. Der Absatz nennt deshalb die Reihenfolge der Gegenstaende und keine
+Abschnittsnummern, wie es die Kapiteleinleitung von Kapitel 4 ebenfalls haelt.
+Der einzige Verweis geht zurueck auf den Anforderungskatalog in Abschnitt
+3.1.1 und ist ein Sachverweis.
+
+**Belegzettel.** Keine neue Quelle und kein Zitat. Alle Zahlen stammen aus
+Kapitel 4, naemlich 76,7 Prozent aus 4.2, Median und Zahlung aus 4.2 und 4.3,
+die Faktoren 8,3 und 4,2 sowie das Band von Maerz bis Oktober aus 4.4, die 40
+Prozent und die 362 von 365 Tagen aus 4.5 und alle Prozentwerte der
+Sensitivitaeten aus 4.6.
+
+**Argumentzettel.** Keine eigenstaendige Ableitung. Die Kapiteleinleitung
+gibt allein wieder, was Kapitel 4 belegt, und trifft keine Bewertung; die
+Bewertung beginnt mit Abschnitt 5.1.
+
+**Umfang.** Die Einleitung nimmt rund zwei Seiten. Der Verfasser ist am
+24.09.2026 darauf hingewiesen worden, dass das ein Siebtel des Zielumfangs
+von 14 Seiten ist.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
