@@ -1,5 +1,10 @@
 # Anfrage: warum steigt der aFRR-Leistungspreis im Herbst 2025
 
+> **BEANTWORTET am 24.09.2026 in der Schriftfassung selbst.** Die Antwort
+> steht in `ANTWORT_AFRR_HERBST_2025.md`, die Auswertung mit allen Zahlen in
+> `analysen/afrr_herbst_2025/`. Diese Anfrage ist damit erledigt und geht an
+> keinen getrennten Chat mehr hinaus.
+
 **Stand 23.09.2026.** Absender ist die Schriftfassung der Masterarbeit
 *Ausgestaltung eines Marktmechanismus für kurative Systemführung zur
 Engpassbehebung* am IAEW der RWTH Aachen.

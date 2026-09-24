@@ -8,9 +8,9 @@ am 23.09.2026 abends. Die alten Fassungen stehen in der Git-Historie.
 > damit **drei Commits zurück** — gepusht wird nur auf ausdrückliche
 > Anweisung, committet nur auf das Wort „commite".
 >
-> **Am 24.09.2026 schreibt ein neuer Chat Kapitel 5.** Sein Auftrag steht in
+> **Kapitel 5 ist am 24.09.2026 begonnen.** Die Stichpunkte aller acht Abschnitte stehen in `chapters/chapter_5.tex`, das Kapitel ist in `main.tex` eingebunden, und der Verfasser geht die Stichpunkte durch. Danach folgt die Ausformulierung Absatz fuer Absatz. Der urspruengliche Auftrag steht in
 > **`AUFTRAG_KAPITEL_5.md`** und ist die Lesekarte für die Diskussion.
-> Der Durchgang durch Kapitel 4 steht bei **Abschnitt 4.6.3**, siehe die
+> Kapitel 4 ist am 24.09.2026 vollstaendig kontrollgelesen, siehe die
 > Tabelle in Abschnitt 1.3.
 
 **Lesereihenfolge zu Beginn der Sitzung.** `CLAUDE.md`, dann diese Datei, dann
@@ -105,7 +105,9 @@ gerne mit dir formulieren"*.
 | 4.6.1 Modellierung der aFRR | **durch** am 23.09. abends, sieben Absätze, vollständig neu sortiert |
 | 4.6.1 Modellierung der aFRR | **zweimal durch** am 23.09. abends, sechs Absätze, je einer pro Abbildung |
 | 4.6.2 Abrufdauer | **durch** am 23.09. spät abends, der Befund zur halben Stunde ist ergänzt |
-| 4.6.3, 4.6.4 | am 23.09. geschrieben, `sensi8` ist geliefert, noch nicht durchgegangen, **als nächstes** |
+| 4.6.3 Handelsspanne | **durch** am 24.09. in der Kontrolllesung, Faktor 1,5 benannt, Schlusssatz angefügt |
+| 4.6.4 Zukunftsvariante | **neu gefasst** am 24.09., vier Absätze, Abbildung und Zahlen auf die Variante ohne FCR-Senkung gezogen, Erlösaufteilung über den Bruttoerlös |
+| ganzes Kapitel | **Kontrolllesung am 24.09.**, zwölf Befunde A1 bis A6 und B1 bis B6, elf umgesetzt, B5 bewusst belassen |
 | ~~4.7 Diskussion~~ | **gestrichen**, die Diskussion ist Kapitel 5 |
 
 **4.1 trägt jetzt vier Absätze**, nämlich Aufbau und Mechanik, einen
@@ -237,6 +239,17 @@ wiederholt.
 Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 **Im Wurzelverzeichnis liegen nur noch Dateien, die gelten.**
 
+> **Aus der Kontrolllesung vom 24.09.2026, fuer jede weitere Sitzung.**
+> Die eingebundene Abbildung `sensi_zukunft_erloes_2025.pdf` war dreizehn
+> Minuten aelter als die des Lieferordners und trug eine ueberholte
+> Variante, und der Text trug deren Zahlen. **Vor jeder Durchsicht sind
+> die Abbildungen gegen `analysen/12_schrift/kapitel_4/` des
+> Analyse-Repositorys zu pruefen**, naemlich mit `md5sum`, und bei
+> Abweichung ist zuerst zu klaeren, welche Fassung die neuere ist. Eine
+> Ausnahme ist `erloesvergleich_vollverdraengung_2025.pdf`: dort ist die
+> Fassung der Schriftfassung die richtige, weil sie den gesperrten
+> Begriff *Schwellenpreise* durch *Preisvektor der 1. Iteration* ersetzt.
+
 ### Wurzelverzeichnis, acht Dateien
 
 | Datei | Rolle |
@@ -247,8 +260,9 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
 | `AUFTRAG_KAPITEL_5.md` | **Auftrag an den neuen Chat, der am 24.09.2026 Kapitel 5 schreibt.** Lesekarte mit jeder Fundstelle, dem Material für die Diskussion, einem Strukturvorschlag und den vier Fragen an den Verfasser. Angelegt am 23.09.2026. |
-| `AUFTRAG_REFERENZAUFTEILUNG.md` | Auftrag an das Analyse-Repository vom 23.09.2026, Aufteilung des Referenzerlöses in der Zukunftsvariante. Nachrangig, 4.6.4 steht auch ohne sie. |
-| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026 an einen getrennten Chat mit Zugriff auf SMARD und die öffentlichen Quellen der Bundesnetzagentur. Warum verdoppelt sich der aFRR-Leistungspreis im Herbst 2025, und welche Quelle trägt den Zusammenhang von Solareinspeisung und negativer Regelleistung. **Unbeantwortet. Frage 4a ist am 23.09.2026 als erledigt gekennzeichnet**, denn das Tagesmuster des Redispatch ist selbst gerechnet und steht in Anhang H. |
+| ~~`AUFTRAG_REFERENZAUFTEILUNG.md`~~ | **Am 24.09.2026 erledigt und nach `archiv/` verschoben.** Die Lieferung beantwortet ihn in ERGEBNISSE Abschnitt 7.14, und Abschnitt 4.6.4 steht jetzt auf dieser Aufteilung. |
+| `ANFRAGE_AFRR_HERBST_2025.md` | Anfrage vom 23.09.2026, warum sich der aFRR-Leistungspreis im Herbst 2025 verdoppelt und welche Quelle den Zusammenhang von Solareinspeisung und negativer Regelleistung trägt. **Am 24.09.2026 in der Schriftfassung selbst beantwortet**, ohne getrennten Chat. |
+| `ANTWORT_AFRR_HERBST_2025.md` | **Antwort vom 24.09.2026.** Die Verdopplung ist ein Angebotsereignis, die Nebenfrage ist mit Ganz und Kern 2025 belegt, ein Teil der Hauptfrage bleibt offen. Auswertung in `analysen/afrr_herbst_2025/`. |
 
 ### `archiv/`, achtzehn Dateien, nur zum Nachschlagen
 
@@ -648,21 +662,28 @@ schreiben**, sonst entsteht doppelte Arbeit.
   für das Verhältnis von 1,31; die Wiederholung steht in einem Absatz, der sie
   für seine eigene Rechnung braucht.
 
-- **Die Antwort des SMARD-Chats steht aus.** `ANFRAGE_AFRR_HERBST_2025.md` ist
-  am 23.09.2026 hinausgegangen. Zwei Begründungen warten darauf und stehen
-  bis zur Antwort **nicht im Text**, so im Protokoll festgehalten: warum der
-  Leistungspreis der positiven \ac{aFRR} im September und Oktober 2025 mit
-  32,7 gegen 15,0 Euro je Megawatt und Stunde beim 2,2-Fachen liegt, und
-  welche zitierfähige Quelle den Zusammenhang zwischen hoher
-  Solareinspeisung und dem Preis negativer Regelleistung trägt. Der Einbruch
-  des Juli ist nachrangig mitgefragt und bleibt ohne Beleg unerwähnt.
-  **Kommt keine Quelle**, ist der Jahresgang in 4.3 beschrieben und
-  unbegründet; dann ist im Text zu kennzeichnen, dass die Ursache offen ist.
-- **Abschnitt 5 der Anfrage verlangt zugleich einen Abgleich der eigenen
-  Monatswerte gegen regelleistung.net.** Ein Widerspruch dort träfe nicht
-  Kapitel 4 allein, sondern die Eingangsdaten des Modells, nämlich die
-  Spalte `GERMANY_AVERAGE_CAPACITY_PRICE`. Die Antwort ist deshalb zuerst
-  auf diesen Punkt zu lesen und nicht auf die Erklärung.
+- ~~Die Antwort des SMARD-Chats steht aus.~~ **Erledigt am 24.09.2026**, die
+  Schriftfassung hat die Anfrage selbst beantwortet, siehe
+  `ANTWORT_AFRR_HERBST_2025.md`. Vier Ergebnisse binden den Text:
+    - **Der Abgleich der Eingangsdaten ist bestanden.** Die Monatswerte der
+      Spalte `GERMANY_AVERAGE_CAPACITY_PRICE` sind aus der Quelldatei
+      reproduziert, die einzige Abweichung ist der März mit 12,1 statt 12,2
+      und folgt aus der Mittelung über Zeitscheiben statt Viertelstunden.
+    - **Die Verdopplung im September und Oktober ist ein Angebotsereignis.**
+      Das Angebot fällt auf sein Jahresminimum von 3849 gegen 4337 Megawatt,
+      die beschaffte Menge bleibt bei rund 2000 Megawatt, und der Preis folgt
+      2025 der Angebotsmenge mit −0,61 statt dem Energiepreis mit +0,18.
+      Revisionen und Schwachwind sind verworfen. **Offen bleibt die Hälfte
+      der Verdopplung**, nämlich das höhere Gebotsniveau bei gleicher Menge;
+      das ist im Text als offen zu kennzeichnen.
+    - **Die Nebenfrage ist belegt.** Ganz und Kern 2025 von der FfE tragen den
+      Zusammenhang zwischen PV-Einspeisung, verringerter Verfügbarkeit
+      thermischer Kraftwerke und dem Preis negativer Sekundärreserve in den
+      Mittagsstunden. Die eigenen Daten stützen ihn, denn der Anstieg liegt
+      vollständig in den Scheiben 08 bis 12 und 12 bis 16 Uhr. Der
+      Bibliographieeintrag steht in `ANTWORT_AFRR_HERBST_2025.md` Abschnitt 6
+      und ist erst mit dem zugehörigen Satz einzutragen.
+    - Der Julieinbruch bleibt ohne Beleg und damit unerwähnt.
 
 **Ältere Punkte, unverändert**
 
@@ -758,6 +779,30 @@ schreiben**, sonst entsteht doppelte Arbeit.
   unterscheidet sich nur in Auslöser und Reaktionszeit. Das Argument gehört in
   die Diskussion. Die beiden verwaisten Marken in `chapter_3.tex` sind deshalb
   am selben Tag entfernt worden.
+
+---
+
+## 7a Stand von Kapitel 5, 24.09.2026
+
+Die Struktur ist beschlossen (Fassung A, acht Abschnitte, rund 14 Seiten), die Stichpunkte stehen, die Ausformulierung steht aus. Einzelheiten im Protokoll unter `## chapter_5.tex`.
+
+| Abschnitt | Absaetze | Stand |
+|---|---|---|
+| 5.1 Einordnung des Ergebnisses | 4 | Stichpunkte |
+| 5.2 Einordnung in den regulatorischen Rahmen | 5 | Stichpunkte |
+| 5.3 Bewertung anhand des Anforderungskatalogs | 4 | Stichpunkte |
+| 5.4 Folgen fuer die Betriebsfuehrung und den Produktzuschnitt | 4 | Stichpunkte |
+| 5.5 Belastbarkeit und Grenzen | 5 | Stichpunkte |
+| 5.6 Entwicklungen im Engpassmanagement und am Markt | 3 | Stichpunkte |
+| 5.7 Zukunft der BESS im Engpassmanagement | 3 | Stichpunkte |
+| 5.8 Kurative Systemfuehrung im Allgemeinen | 3 | Stichpunkte |
+
+**Was beim Ausformulieren mitzufuehren ist.**
+
+- Die fett gesetzten Absatzkoepfe (`\noindent\textbf{Absatz n, ...}`) und die `itemize`-Umgebungen sind Geruest und fallen mit dem Fliesstext weg.
+- **Der Begriff *kapazitaetsbasierter Redispatch* in 5.2 Absatz 5 ist in den Kapiteln 1 bis 4 nicht eingefuehrt** und braucht dort einen Definitionssatz und einen Beleg. In Betracht kommt `consentec_ausarbeitung_2024`.
+- **Die Erklaerung in 5.3 Absatz 2 ist vom Verfasser zu bestaetigen**, naemlich dass die Summe der stuendlichen Indifferenzpreise die entgangene Vermarktung uebersteigt, weil jede Stunde gegen ihre eigene beste Verwendung bepreist wird.
+- Das alte Geruest steht auskommentiert am Ende der Datei und traegt den Belegstand jedes Punktes. **Nicht wieder aktivieren.**
 
 ---
 

@@ -14557,6 +14557,299 @@ ist in dieser Sitzung nicht angefasst worden, und Abschnitt 10 der
 Auftragsdatei verlangt, eine Datei mit den Zeilenenden zurueckzugeben, mit
 denen sie gelesen wurde. `.gitattributes` normiert ohnehin auf LF im
 Repository.
+### 24.09.2026, Antwort auf die aFRR-Anfrage, eigene Auswertung
+
+Die Anfrage `ANFRAGE_AFRR_HERBST_2025.md` vom 23.09.2026 ist nicht von einem
+getrennten Chat beantwortet worden, sondern in der Schriftfassung selbst. Die
+Auswertung liegt in `analysen/afrr_herbst_2025/` mit `README.md`, `BEFUND.md`,
+`auswertung.py`, `marktlage.py` und `ergebnis.txt`. Die Antwort steht in
+`ANTWORT_AFRR_HERBST_2025.md`. Quellen sind die Jahresdateien des
+aFRR-Leistungs- und Arbeitsmarkts von regelleistung.net fuer 2024, 2025 und
+2026 sowie die Viertelstundenreihen von energy-charts, beide aus dem
+Datenbestand des Optimierungsmodells.
+
+**Eigenstaendige Ableitungen, nicht vom Verfasser.** Alle folgenden Zahlen sind
+in dieser Sitzung gerechnet und nicht aus dem Analyse-Repository uebernommen.
+
+1. **Abgleich der Eingangsdaten, bestanden.** Die Monatswerte der Spalte
+   `GERMANY_AVERAGE_CAPACITY_PRICE` sind aus der Quelldatei reproduziert. Die
+   einzige Abweichung ist der Maerz mit 12,1 statt 12,2 Euro je Megawatt und
+   Stunde und folgt aus der Mittelung ueber Zeitscheiben statt ueber
+   Viertelstunden. Kein Befund von Kapitel 4 ist beruehrt.
+2. **Die Verdopplung im September und Oktober 2025 ist ein Angebotsereignis.**
+   Die angebotene Menge faellt auf 3849 gegen 4337 Megawatt in den uebrigen
+   zehn Monaten, also um elf Prozent, und erreicht damit ihr Jahresminimum. Die
+   beschaffte Menge bleibt bei rund 2000 Megawatt. Die Tageskorrelation des
+   Preises betraegt 2025 −0,61 zur Angebotsmenge, +0,18 zum Intradaypreis,
+   +0,26 zur Tagesspanne und +0,12 zur Residuallast. Im Jahr 2024 ist es
+   umgekehrt, naemlich +0,00 zur Angebotsmenge und +0,48 zum Intradaypreis.
+3. **Die Angebotskurve ist 2025 steil und war 2024 flach.** Je Zeitscheibe
+   steigt der Preis 2025 von 11,1 bei ueber 4600 Megawatt auf 57,1 bei unter
+   3400 Megawatt, waehrend er 2024 ueber alle Mengenklassen zwischen 12,3 und
+   13,9 liegt.
+4. **Die Verdopplung zerfaellt in zwei etwa gleich grosse Teile**, naemlich die
+   geringere Angebotsmenge und ein hoeheres Gebotsniveau bei gleicher Menge.
+   September und Oktober liegen in jeder Mengenklasse ueber den uebrigen
+   Monaten, etwa 27,3 gegen 21,9 bei 3700 bis 4000 Megawatt. **Der zweite Teil
+   bleibt unerklaert und ist im Text als offen zu kennzeichnen.**
+5. **Drei der vier Vermutungen der Anfrage sind verworfen.** Kraftwerks-
+   revisionen sind nicht bestaetigt, denn das 95-Prozent-Quantil und das
+   Maximum der nicht erneuerbaren Erzeugung liegen im Herbst 2025 auf oder ueber
+   dem Niveau von 2024. Eine Schwachwindphase liegt nicht vor, denn die
+   Residuallast lag mit 19,8 und 20,9 Gigawatt unter dem Jahresmittel von 23,7.
+   Eine Aenderung des Bedarfs liegt nicht vor, denn die Zuschlagsmenge bleibt
+   von September bis Dezember zwischen 1986 und 2024 Megawatt. Ein Ereignis im
+   Netzbetrieb traegt nur einzelne Tage, denn das Niveau ist an allen
+   Wochentagen erhoeht.
+6. **Die Erweiterung von ALPACA um den tschechischen UeNB CEPS seit September
+   2025 erklaert den Anstieg nicht.** Die Erhoehung setzt schon am 25.08.2025
+   ein, und Deutschland ist in beiden Monaten Nettoimporteur von
+   aFRR-Leistung. Die Kooperation wird im Text nicht erwaehnt.
+7. **Die Nebenfrage ist belegt.** Ganz und Kern 2025 von der FfE tragen den
+   Zusammenhang zwischen PV-Einspeisung, verringerter Verfuegbarkeit
+   thermischer Kraftwerke und dem Preis negativer Sekundaerreserve in den
+   Mittagsstunden. Die eigenen Daten stuetzen ihn, denn der Anstieg der
+   negativen aFRR von 3,0 im Februar auf 32,2 im Mai findet vollstaendig in
+   den Scheiben 08 bis 12 und 12 bis 16 Uhr statt, waehrend die Nachtscheiben
+   das ganze Jahr zwischen 1 und 11 bleiben. Dasselbe Muster zeigen 2024 und
+   2026.
+8. **Der Julieinbruch bleibt ohne Beleg und damit unerwaehnt**, wie in der
+   Anfrage vorgesehen. Er tritt 2024 und 2025 auf, 2025 staerker.
+
+**Offener Punkt.** Welche praequalifizierten Einheiten im September und Oktober
+2025 nicht am Markt waren, sagt keine oeffentliche Quelle. Beide Richtungen
+verlieren gleichzeitig rund elf Prozent ihres Angebots, was gegen einen
+Opportunitaetskosteneffekt und fuer fehlende Einheiten spricht. In Betracht
+kaeme die Gebotsliste ANONYMOUS_LIST_OF_BIDS von regelleistung.net, die nicht
+im Datenbestand liegt.
+
+**Bibliographieeintraege.** `ffe_regelreserve_2025` und gegebenenfalls
+`regelleistung_alpaca_2026` stehen als fertige Eintraege in
+`ANTWORT_AFRR_HERBST_2025.md` Abschnitt 6. Sie sind erst einzutragen, wenn der
+zugehoerige Satz im Text steht, damit keine verwaisten Eintraege entstehen.
+
+**Nebenbefund.** Die Stundendatei der Strompreise fuehrt ab dem 01.10.2025
+keinen Day-Ahead-Preis mehr, weil der Day-Ahead-Markt an diesem Tag auf
+Viertelstundenprodukte umgestellt wurde, belegt in `ffe_saegezahn_2026`.
+Jahresauswertungen fuer 2025 sind auf die Viertelstundendatei zu stuetzen. Das
+Optimierungsmodell rechnet viertelstuendlich und ist nicht betroffen.
+
+### 24.09.2026, Kontrolllesung von Kapitel 4
+
+Der Verfasser hat am 24.09.2026 eine Kontrolllesung des ganzen Kapitels
+angeordnet. Die Pruefsuite und `tools/pruefe_stil.py` waren vor der Lesung
+ohne Befund, der einzige gemeldete Doppelpunkt ist seit dem 14.09.2026
+zulaessig. Gefunden sind sechs sachliche und sechs darstellerische Befunde,
+gekennzeichnet als A1 bis A6 und B1 bis B6. Alle sind umgesetzt, B5 durch
+ausdrueckliche Entscheidung nicht.
+
+**A1, Abschnitt 4.6.4 stand auf einer ueberholten Variante.** Das
+Analyse-Repository hat die Senkung der FCR am 23.09.2026 aus der
+Zukunftsvariante genommen, siehe ERGEBNISSE Abschnitt 7.13 und 7.14. Die
+Schriftfassung trug die alte Fassung in Text und Abbildung. Die eingebundene
+Abbildung `sensi_zukunft_erloes_2025.pdf` vom 23.09.2026 um 21:48 Uhr wies
+281,4 und 352,0 aus, die Lieferung von 22:01 Uhr weist 282,7 und 353,0 aus.
+Die Abbildung ist ersetzt, die Zahlen sind nachgezogen, naemlich Markterloes
+282,7 statt 281,4 und minus 17,0 statt minus 17,4 Prozent, Vollverdraengung
+353,0 statt 352,0 und minus 16,0 statt minus 16,2 Prozent, Aufschlag 24,8
+statt 25,1 Prozent. **Der Satz, die Preise der FCR sinken auf 90 Prozent, ist
+zurueckgenommen und nicht wieder aufzunehmen.**
+
+**A2, die Erloesaufteilung in 4.6.4 stuetzte sich auf die falsche Groesse.**
+Der Absatz teilte den Marktrest der ersten Iteration auf. Das Lieferdokument
+sagt in Abschnitt 7.13 ausdruecklich, dass dieser dafuer nicht taugt, weil er
+das ist, was eine Suche uebrig laesst, von der Abschnitt 7.9 belegt, dass sie
+gerade die teuren Stunden offen laesst. Abschnitt 7.14 der Lieferung enthaelt
+die Aufteilung ueber den Bruttoerloes ohne kurative Bindung, im Format des
+Abschnitts 4.2. **Damit ist `AUFTRAG_REFERENZAUFTEILUNG.md` beantwortet.** Der
+Absatz traegt jetzt fuenf Saetze mit den Anteilen 59,1 statt 65,6 Prozent fuer
+die aFRR-Leistung, 10,2 statt 14,0 fuer den IDC, 12,3 statt 11,2 fuer die
+aFRR-Arbeit, 12,8 statt 7,3 fuer den Day-Ahead und 5,6 statt 2,0 fuer die FCR.
+Die aFRR traegt mit 71,4 statt 76,7 Prozent weiterhin rund drei Viertel.
+Zurueckgenommene Fassung, nicht wieder aufzunehmen: *Die Aufteilung des
+verbliebenen Markterloeses der ersten Iteration verschiebt sich
+erwartungsgemaess.* Der Absatz ist zugleich vom vorigen getrennt, weil beide
+zusammen zehn Saetze traegen.
+
+**A3, ein Widerspruch im selben Absatz.** Der Satz *Der DA bleibt in der
+Zukunftsvariante unveraendert* stand unmittelbar hinter dem Satz, dass der DA
+von 7,3 auf 11,5 steigt. Gemeint waren die Preise. Der Satz ist in der
+Neufassung von A2 aufgegangen.
+
+**A4, eine Rundung, die nicht aufgeht.** Abschnitt 4.2 nannte 76,6 Prozent fuer
+den Anteil der aFRR am Bruttoerloes. Aus 65,6 und 11,2 folgt 76,8, der genaue
+Wert aus 235,1 und 40,1 zu 358,6 betraegt 76,7. **Das Lieferdokument
+widerspricht sich hier selbst**, naemlich 76,6 in Abschnitt 1 und 76,7 in
+Abschnitt 7.14. Die Schriftfassung folgt der genauen Rechnung mit 76,7
+Prozent. Eigenstaendige Ableitung, nicht vom Verfasser.
+
+**A5, Bruttoerloes gegen Referenzerloes.** Die Einleitung zu 4.6 und der
+Abschnitt 4.6.1 nannten *drei Viertel des Referenzerloeses*. Der Anteil ist am
+Bruttoerloes gemessen, der Referenzerloes ist der Betrag nach Abzug der
+Degradation. Beide Stellen sind berichtigt.
+
+**A6, ein Faktor fehlte.** Abschnitt 4.6.3 sprach von drei Annahmen und drei
+Faktoren, benannte aber nur Faktor 1 und Faktor 2, waehrend der letzte Satz
+des Abschnitts drei Werte nennt. Der mittlere Faktor ist 1,5, belegt in
+`sensi.py` und in ERGEBNISSE Abschnitt 7.12. Der Satz nennt ihn jetzt.
+
+**B1, der teuerste Monat lag ausserhalb beider Jahreszeiten.** Abschnitt 4.4
+setzt den Winter auf November bis Februar und den Sommer auf Mai bis August,
+waehrend das Maximum der Summe im September liegt. Angefuegt ist der Satz
+*Ihr Maximum erreicht die Summe im September und damit ausserhalb beider
+Jahreszeiten.* **Ohne Ursachenaussage**, nach der Entscheidung des Verfassers
+vom 24.09.2026, siehe den Eintrag zur aFRR-Anfrage.
+
+**B2, ein Abschnitt endete ohne Folgerung.** Abschnitt 4.6.3 endete auf dem
+unteren Quartil der Ladereservierung. Angefuegt ist der Satz *Eine zu breit
+angesetzte Handelsspanne hebt damit vor allem die Spitze der Verteilung,
+waehrend das Hauptfeld der Stunden weniger reagiert.*
+
+**B3, zwei Pronomen ueber die Satzgrenze**, Stilregel 5. *Sie verteilen sich*
+heisst jetzt *Die teuren Stunden der Ladereservierung verteilen sich*, und
+*Ihre teuren Stunden* heisst *Die teuren Stunden der Entladereservierung*.
+
+**B4, eine Wolke.** Der Halbsatz *was mit einer Kopplung ueber das
+Ladezustandsband vereinbar ist* behauptet nichts und schliesst nichts aus. Der
+Satz ist geteilt, und der Stand der Pruefung steht jetzt ausdruecklich:
+*Die Ursache ist nicht geprueft, in Betracht kommt die Kopplung benachbarter
+Stunden ueber das Ladezustandsband.* **Offener Punkt**, zu pruefen waere die
+Kopplung an den 20 teuersten Ladestunden.
+
+**B5, zwei Zahlen fuer denselben Basisfall, bewusst belassen.** Abschnitt 4.6.2
+nennt als Basisfall 12,21 und 9,84, Abschnitt 4.3 nennt 12,22 und 9,85. Beides
+ist quellentreu, denn die Sensitivitaet der Abrufdauer ist ein eigener
+Jahreslauf, siehe ERGEBNISSE Zeile 918. **Entscheidung des Verfassers vom
+24.09.2026: unveraendert lassen.**
+
+**B6, Prozentwerte ohne ihre Welt.** Der Satz *Der Aufschlag bleibt mit 25,1
+gegen 23,3 Prozent nahezu gleich* sagte nicht, welche Zahl zu welcher Welt
+gehoert. Die Neufassung nennt beide, naemlich 24,8 Prozent in der
+Zukunftsvariante gegen 23,3 Prozent im Jahr 2025.
+
+**Ohne Befund geblieben.** Die Zahlen der Abschnitte 4.1 bis 4.5 sind
+stichprobenweise nachgerechnet und gehen auf, naemlich 358,6 minus 18,0 zu
+340,6, 409,8 plus 88,6 zu 498,4 und 46,3 Prozent, 409,8 plus 10,2 zu 420,0 und
+23,3 Prozent, 60,0 plus 16,4 plus 8,7 plus 7,3 minus 3,8 zu 88,6, 3071
+Millionen Euro zu 30\,319 GWh zu 101 Euro je Megawattstunde, 51 zu 2010 und 53
+zu 1820 Megawatt zu 2,5 und 2,9 Prozent sowie 173 mal 5,8 und 161 mal 3,2 zu
+den Maxima 1008 und 510. Elf der zwoelf Abbildungen sind deckungsgleich mit
+dem Lieferordner; `erloesvergleich_vollverdraengung_2025.pdf` weicht ab, weil
+die Schriftfassung die Achsenbeschriftung *Schwellenpreise* durch *Preisvektor
+der 1. Iteration* ersetzt hat. **Diese Abbildung ist nicht zurueckzuholen**,
+denn *Schwellenpreis* ist ein gesperrter Begriff nach `CLAUDE.md` Abschnitt 5.
+
+**Build nach der Lesung.** `python tools/pruefen.py chapter_4.tex` ohne Befund,
+`tools/pruefe_stil.py` mit dem einen zulaessigen Doppelpunkt, vier Durchgaenge
+mit biber ohne neue Warnung, 111 Seiten wie vorher. Abschnitt 4.6.4 traegt
+jetzt vier Absaetze mit vier, fuenf, fuenf und fuenf Saetzen.
+
+## chapter_5.tex
+
+### 24.09.2026, Struktur beschlossen und Stichpunktgeruest neu gesetzt
+
+Der Verfasser hat Kapitel 5 am 24.09.2026 begonnen. Vorgehen nach seiner
+Vorgabe: **erst die Stichpunkte fuer alle acht Abschnitte in die Datei, dann
+der Durchgang durch die Stichpunkte, danach die Ausformulierung Absatz fuer
+Absatz.** Das Kapitel ist in `main.tex` am selben Tag eingebunden worden,
+damit sich die Stichpunkte im gebauten PDF lesen lassen; ein Prozentzeichen
+nimmt das zurueck.
+
+**Vier Entscheidungen des Verfassers vom 24.09.2026.**
+
+1. **Die Gliederung folgt Fassung A mit acht Abschnitten**, naemlich 5.1
+   Einordnung des Ergebnisses, 5.2 Einordnung in den regulatorischen Rahmen,
+   5.3 Bewertung anhand des Anforderungskatalogs, 5.4 Folgen fuer die
+   Betriebsfuehrung und den Produktzuschnitt, 5.5 Belastbarkeit und Grenzen,
+   5.6 Entwicklungen im Engpassmanagement und am Markt, 5.7 Zukunft der BESS
+   im Engpassmanagement und 5.8 Kurative Systemfuehrung im Allgemeinen. Die
+   alte Gliederung mit fuenf Abschnitten ist damit ersetzt.
+2. **Der Anforderungskatalog A1 bis A8 bleibt ein eigener Abschnitt.** Die
+   Alternative, ihn in 5.4 und 5.5 aufzuloesen, ist verworfen. Begruendung:
+   Kapitel 3 leitet acht Anforderungen ab, und eine Arbeit, die sie ableitet
+   und nie prueft, bleibt unvollstaendig. Der Auftrag in
+   `AUFTRAG_KAPITEL_5.md` hielt den Katalog fuer eine Dopplung zur
+   Ergebnisdiskussion; das trifft nicht zu, siehe die eigenstaendige
+   Ableitung unten.
+3. **Zielumfang rund 14 Seiten**, statt der frueheren zwoelf.
+4. **Die Handlungsempfehlungen G1 bis G4 bekommen keinen eigenen Abschnitt**,
+   sondern stehen bei dem Befund, aus dem sie folgen, naemlich in 5.4. Der
+   frueher vorgesehene Abschnitt *Handlungsempfehlungen* entfaellt.
+
+**Eigenstaendige Ableitungen, nicht vom Verfasser, im Geruest gekennzeichnet.**
+
+- **A7 Vertraeglichkeit ist der tragende Befund von 5.3.** Anforderung A7 aus
+  Abschnitt 3.1.1 verlangt, dass der kurative Marktmechanismus neben den
+  bestehenden Maerkten besteht, ohne einen von ihnen zu verdraengen. Kapitel 4
+  zeigt, dass die kurative Reservierung unter den Preisen der zweiten
+  Iteration die gesamte uebrige Vermarktung verdraengt, und dass 65,6 Prozent
+  des Bruttoerloeses auf die aFRR-Leistung entfallen. **A7 ist damit nicht
+  ueber den Produktzuschnitt zu erfuellen, sondern allein ueber eine
+  Begrenzung der beschafften Menge.** Der Katalog ist deshalb keine Dopplung
+  zur Ergebnisdiskussion, sondern der Rahmen, in dem die Ergebnisse zu einer
+  Bewertung des Mechanismus werden.
+- **Der ermittelte Preis ist die Untergrenze eines Gebots und nicht das
+  Gebot** (5.1, Absatz 1). Folgt aus der Entscheidung, Abrufwahrscheinlichkeit
+  und Sanktion nicht zu modellieren, und aus der Vorgabe des Verfassers vom
+  23.09.2026 zum Aufschlag des Betreibers.
+- **Wer den kurativen Reservierungspreis senken will, muss an der
+  Regelleistung ansetzen** (5.1, Absatz 3). Folgt aus dem Anteil der aFRR von
+  76,7 Prozent am Bruttoerloes und aus dem Blockcharakter des
+  aFRR-Leistungspreises.
+- **Die Summe der stuendlichen Indifferenzpreise uebersteigt die entgangene
+  Vermarktung** (5.3, Absatz 2). Beobachtung: die Zahlung bei vollstaendiger
+  Bindung betraegt 420,0 gegen einen Referenzerloes von 340,6 Tsd. Euro je
+  Megawatt und Jahr, also 23,3 Prozent mehr, obwohl die uebrige Vermarktung
+  ganz entfaellt. Vorgeschlagene Erklaerung: jede Stunde wird gegen ihre
+  eigene beste Verwendung bepreist, waehrend die Verwendungen um dieselbe
+  Leistung konkurrieren. **Die Erklaerung ist vom Verfasser zu bestaetigen**
+  und im Geruest als solche gekennzeichnet.
+
+**Das alte Stichpunktgeruest vom 18.08.2026 ist nicht geloescht**, sondern
+vollstaendig auskommentiert am Ende von `chapters/chapter_5.tex` erhalten,
+weil es den Belegstand jedes Punktes traegt, naemlich die Kennungen B1 bis
+B7, C1, C2, D3 bis D5, E1, E2, F1 bis F11 und G1 bis G4 mit [belegt],
+[eigen] und [daten]. **Nicht wieder aktivieren.**
+
+**Wohin die Punkte des alten Geruests gewandert sind.** B1, B3 nach 5.2
+Absatz 1; B2 nach 5.2 Absatz 2; F7 und F8 nach 5.2 Absatz 3, weil beide das
+Referenzverfahren und nicht das eigene Modell kritisieren; B4 und B7 nach 5.2
+Absatz 4; G1 nach 5.2 Absatz 5; C1 und D5 nach 5.3 Absatz 4; D3 und D4 nach
+5.4 Absatz 4; F1, F2 nach 5.5 Absatz 2; F11 nach 5.5 Absatz 3; E1, E2, F3 und
+A5 nach 5.5 Absatz 4; F10 nach 5.5 Absatz 5; B5 und B6 nach 5.6 Absatz 1; F4
+nach 5.8 Absatz 2 als Forschungsbedarf. G1 bis G4 der
+Handlungsempfehlungen loesen sich in 5.4 auf.
+
+**Zwei Punkte des alten Geruests sind ueberholt.** F8 nannte eine
+Entladedauer von rund 2,25 Stunden; die Bezugsanlage hat nach Abschnitt 3.2
+100 MW je Richtung und 250 MWh, also 2,5 Stunden Energieinhalt je Leistung.
+Und das Wort *Preisvektor* aus F11 kommt nach der Vorgabe des Verfassers vom
+23.09.2026 im Text nicht vor; das neue Geruest schreibt *die Preise der
+zweiten Iteration*.
+
+**Belege, die noch zu klaeren sind.** Der Begriff *kapazitaetsbasierter
+Redispatch* in 5.2 Absatz 5 ist in den Kapiteln 1 bis 4 nicht eingefuehrt,
+weil der vergleichende Unterabschnitt am 22.09.2026 geparkt wurde. Er ist in
+5.2 mit einem Satz zu definieren, und der Beleg ist noch zu pruefen; in
+Betracht kommt `consentec_ausarbeitung_2024`.
+
+**Die Saettigung des Marktes fuer FCR ist belegt.** Der Auftrag fuehrte sie
+als unbelegt. Der Verfasser hat am 24.09.2026 darauf hingewiesen, dass
+Abschnitt 2.3 mit 810 MW praequalifizierter BESS-Leistung im Jahr 2024
+(`celi_cortes_m5use_2024`) und Abschnitt 2.2.3 mit 564 MW deutschem Bedarf im
+Jahresmittel (`bundesnetzagentur_monitoringbericht_2026`) beide Zahlen bereits
+im Text fuehren. Kapitel 5 stuetzt sich in 5.6 Absatz 3 und 5.7 Absatz 1
+darauf.
+
+**Stand nach dem Setzen.** `python tools/pruefen.py --alle` ist **erstmals
+vollstaendig ohne Befund**, denn der Altbefund in Zeile 91 ist mit dem alten
+Geruest entfallen. Vier weitere Befunde sind beim Setzen behoben worden,
+naemlich dreimal *Batteriespeicher* ausgeschrieben statt als Akronym und
+einmal die Marke `sec:compensation_regime`, die es nicht gibt; die Definition
+des Indifferenzprinzips steht in `sec:redispatch_compensation`. Vier
+Durchgaenge mit biber, **124 Seiten**, Kapitel 5 von Seite 65 bis 76. Es
+bleibt allein die Warnung zu `ch:conc`, weil Kapitel 6 auskommentiert ist.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
