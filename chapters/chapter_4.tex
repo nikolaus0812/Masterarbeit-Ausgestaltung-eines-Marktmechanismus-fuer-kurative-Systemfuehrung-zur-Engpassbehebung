@@ -887,14 +887,27 @@ Drei der folgenden Abschnitte prüfen je eine Annahme des Optimierungsmodells, d
 % 358,6 Tsd. Euro je Megawatt und Jahr. Der Referenzerloes ist der Betrag
 % nach Abzug der Degradation. Zurueckgenommene Fassung:
 %Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Referenzerlöses trägt.
-Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Bruttoerlöses trägt.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Satz soll sagen,
+% warum der Anteil am Erloes fuer die Preisbildung von Belang ist. Das
+% Wort "erheblich" der Vorgabe steht nach Stilregel 15 auf der
+% Verbotsliste und ist durch die vergleichende Aussage ersetzt, die
+% Abschnitt 4.6.1 mit Zahlen traegt. Zurueckgenommene Fassung:
+%Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Bruttoerlöses trägt.
+Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Bruttoerlöses trägt und den kurativen Reservierungspreis damit am stärksten bewegt.
 % BERICHTIGT am 24.09.2026, Befund S4 des Durchgangs durch 4.6: die
 % Handelsspanne ist eine Annahme des Optimierungsmodells und nicht der
 % Ansatz eines Betreibers. Abschnitt 4.6.3 sagt, sie beruhe auf dem ID1
 % und einem Aufschlag und ihre Breite sei eine Annahme.
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die ein Betreiber zu hoch ansetzen kann.
-Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt.
+% UMGESTELLT am 24.09.2026, Vorgabe des Verfassers: die Abschnitte folgen
+% dem Einfluss auf den Preis, und der IDC steht nach beiden Massstaeben
+% vor der vorgehaltenen Energie. Nach dem Erloesanteil traegt er 14,0
+% gegen 76,7 Prozent der aFRR, nach der gemessenen Wirkung hebt eine
+% verdoppelte Handelsspanne den Median um 36,7 Prozent gegen 4,0 und 12,7
+% Prozent bei der vorgehaltenen Energie. Zurueckgenommene Fassung:
+%Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt.
+Es folgen die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt, und die vorgehaltene Energie je Abruf, über die der \ac{ÜNB} entscheidet.
 % GESTRICHEN am 23.09.2026, Vorgabe des Verfassers. Die Abgrenzung der
 % Bindungsdauer steht weiter im Abschnitt 4.6.2 selbst. Zurueckgenommene
 % Fassung, in der Einleitung nicht wieder aufzunehmen:
@@ -1009,15 +1022,44 @@ Im Basisfall bewertet das Optimierungsmodell die vorgehaltene \ac{aFRR}-Leistung
 Wie weit eine Anlage den \ac{aFRR}-Markt ausschöpfen kann, hängt vom abgerufenen Energievolumen, von der Handelsstrategie und vom Bietverhalten ab.
 Keine dieser drei Größen ist für eine einzelne Anlage beobachtbar, denn die Ergebnislisten der Auktionen sind anonymisiert \cite{regelleistung_ausschreibungsdaten_2026}.
 Die anteilige Lieferung legt die gelieferte Menge je Zeitscheibe fest und nimmt dem Optimierungsmodell damit die Wahl der Lieferstunden, die ein freier Liefermodus zurückgibt.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die anteilige Lieferung
+% verhindert zugleich, dass das Optimierungsmodell allein die
+% ertragreichsten Abrufstunden waehlt. Der Gedanke des Verfassers, dass
+% der Betreiber stets das Risiko traegt, nicht abgerufen zu werden, ist
+% auf seine ausdrueckliche Vorgabe NICHT gesetzt.
+Ein freier Liefermodus ließe das Optimierungsmodell zudem allein in den Stunden mit dem höchsten Preis für \ac{aFRR}-Arbeit liefern.
+Diese Wahl hat ein Betreiber nicht, denn der Abruf ist nicht vorhersehbar.
 
 % UMBRUCH GESETZT am 24.09.2026, Befund A1 des Durchgangs durch 4.6,
 % Stilregel 1: der Absatz trug acht Saetze und zwei Teilgedanken, naemlich
 % die Annahme des Basisfalls samt ihrer Unbeobachtbarkeit und die
 % geprueften Stufen. Jetzt vier und vier Saetze.
-Auf der Leistungsseite ist diese Annahme in vier Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit, im Basisfall und mit dem Grenzpreis des letzten Zuschlags.
-Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
-Die Trennung beider Seiten zeigt, ob der Abrechnungspreis der Kapazitätsauktion oder die Liefermenge den kurativen Reservierungspreis trägt.
-Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die vier Stufen der Leistungsseite.
+% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: geprueft sind drei
+% Stufen. Der dritte Balken der Abbildung, in der Lieferung beschriftet
+% als "gemittelter Preis, pro rata", ist der Basisfall und steht dort
+% allein als Bezug. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Auf der Leistungsseite ist diese Annahme in vier Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit, im Basisfall und mit dem Grenzpreis des letzten Zuschlags.
+Auf der Leistungsseite ist diese Annahme in drei Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit und mit dem Grenzpreis des letzten Zuschlags.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: auf der Arbeitsseite ist
+% zu erinnern, woher der Preis stammt, und festzustellen, dass nicht er
+% die Begrenzung ist, sondern die Liefermenge. Belegt in Abschnitt 3.2:
+% die aFRR-Arbeit wird nach dem Grenzpreisverfahren verguetet, und das
+% Modell setzt das volumengewichtete Mittel der Grenzpreise der Plattform
+% PICASSO aus der Transparenzplattform an. Zurueckgenommene Fassung:
+%Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
+Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis der Leistung stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
+Der Preis der Arbeit selbst ist dabei kein Modellwert, denn er ist nach Abschnitt~\ref{sec:input_data} das volumengewichtete Mittel der Grenzpreise der Plattform PICASSO.
+Nicht der Preis begrenzt den Erlös der Arbeitsseite, denn die \ac{aFRR}-Arbeit wird stets zum Grenzpreis vergütet.
+Ausschlaggebend ist allein die gelieferte Menge.
+% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Satz leitet
+% jetzt auf die beiden Groessen ueber, deren Wirkung die Abbildungen
+% zeigen, naemlich die Ueberschaetzung des Leistungspreises und die freie
+% Wahl der Lieferstunden. Zurueckgenommene Fassung:
+%Die Trennung beider Seiten zeigt, ob der Abrechnungspreis der Kapazitätsauktion oder die Liefermenge den kurativen Reservierungspreis trägt.
+Die Trennung beider Seiten zeigt damit, wie stark eine Überschätzung des Leistungspreises und wie stark eine freie Wahl der Lieferstunden auf den kurativen Reservierungspreis wirken.
+% NACHGEZOGEN am 24.09.2026, wie oben. Zurueckgenommene Fassung:
+%Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die vier Stufen der Leistungsseite.
+Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die drei Stufen der Leistungsseite und stellt ihnen den Basisfall als Bezug zur Seite.
 
 % VORGEZOGEN am 24.09.2026, Befund A3 des Durchgangs durch 4.6: die
 % Abbildung stand hinter dem Absatz, der sie beschreibt, und damit einen
@@ -1090,64 +1132,35 @@ Eine solche Lieferung ist für eine einzelne Anlage von 100\,\si{MW} nicht zu er
 %Eine frühere Fassung dieser Sensitivität fasste vier Tage zu einer Verteilung zusammen, und von deren Streuung entfielen nur 6,7 Prozent in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
 %Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, sodass die frühere Abbildung vor allem zeigte, welcher der vier Tage teuer war.
 %Über das Jahr entfällt dieser Einwand.
-Alle Stufen sind über das ganze Jahr gerechnet.
-Über vier einzelne Tage entfielen nur 6,7 Prozent der Streuung in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
-Der übrige Teil entfiel auf den Unterschied zwischen den Kalendertagen.
-Erst der Jahreslauf trennt beide Einflüsse.
+% GESTRICHEN am 24.09.2026, Vorgabe des Verfassers. Der Absatz war am
+% selben Tag aus einer Arbeitsnotiz neu gefasst worden und ist jetzt ganz
+% entfallen. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Alle Stufen sind über das ganze Jahr gerechnet.
+%Über vier einzelne Tage entfielen nur 6,7 Prozent der Streuung in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
+%Der übrige Teil entfiel auf den Unterschied zwischen den Kalendertagen.
+%Erst der Jahreslauf trennt beide Einflüsse.
 
 Beide Annahmen wirken an verschiedenen Stellen der Verteilung.
 Der Abrechnungspreis der Kapazitätsauktion bestimmt die teuren Stunden, der Liefermodus die typische Stunde.
 Für die Beschaffung wiegt der Liefermodus deshalb schwerer, denn er verschiebt das Hauptfeld der Verteilung, auf das der \ac{ÜNB} in den meisten Stunden trifft.
 Die anteilige Lieferung des Basisfalls ist dabei die belastbare Annahme, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die uebrigen Liefermodi
+% fuehren zu einer Ueberschaetzung des Preises, und sicher entscheiden
+% laesst sich die Frage nur an den Gebotslisten. Das Wort "immens" der
+% Vorgabe ist nach Stilregel 7 durch die Zahlen ersetzt, die Abschnitt
+% 4.6.1 selbst nennt.
+Die freien Liefermodi heben den Median dagegen um mindestens 54 Prozent entladend und 110 Prozent ladend und überschätzen den kurativen Reservierungspreis damit.
+Sicher entscheiden ließe sich die Frage allein an den Gebotslisten der Auktionen, die jedoch anonymisiert sind.
 
-\subsection{Abrufdauer}
-\label{sec:sensi_abrufdauer}
-% Zahlen aus ERGEBNISSE Abschnitt 7.7. Die Abbildung zeigt seit dem
-% 22.09.2026 nur die zweite Iteration; die Werte der ersten Iteration
-% stehen deshalb als Zahl im Text und tragen keine eigene Abbildung.
-
-Die Abrufdauer ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet, denn sie folgt aus der Zeit, über die eine kurative Maßnahme wirken muss.
-Die Abrufdauer setzt im Optimierungsmodell die Breite des reservierten Ladezustandsbandes, also eine Megawattstunde je Megawatt bei einer Stunde.
-Die Bindungsdauer bleibt davon unberührt und beträgt in allen Varianten eine Stunde.
-Abbildung~\ref{fig:sensi_abrufdauer} zeigt die Abrufdauern von einer Stunde, einer halben Stunde und einer Viertelstunde je Richtung.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_abrufdauer_2025_iteration2.pdf}
-    \caption{Kurativer Reservierungspreis über das Jahr 2025 bei drei Abrufdauern je Richtung, zweite Iteration.}
-    \label{fig:sensi_abrufdauer}
-\end{figure}
-
-Von einer Stunde auf eine Viertelstunde sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
-% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: die halbe Stunde ist kaum
-% teurer als die Viertelstunde, die volle Stunde dagegen messbar, und die
-% Wirkung ist in der Laderichtung groesser. Zahlen aus ERGEBNISSE Abschnitt
-% 7.7: Median 1 h 12,21/9,84, 0,5 h 11,91/8,56, 0,25 h 11,72/8,59.
-Die Verkürzung wirkt in der Laderichtung damit stärker als in der Entladerichtung.
-Die halbe Stunde liegt dabei fast auf dem Preis der Viertelstunde, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
-Der Schritt von der halben auf die volle Stunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
-Eine halbe Stunde Abrufdauer ist damit fast zum Preis einer Viertelstunde zu haben und verschafft dem \ac{ÜNB} die doppelte Zeit, die kurative Maßnahme durch eine andere abzulösen.
-
-% UMBRUCH GESETZT am 24.09.2026, Befund A2 des Durchgangs durch 4.6,
-% Stilregel 1: der Absatz trug acht Saetze und zwei Teilgedanken, naemlich
-% den Befund der zweiten Iteration und die Erklaerung, warum die erste
-% anders reagiert. Jetzt fuenf und drei Saetze.
-In der ersten Iteration fällt dieselbe Verkürzung mit 18,8 und 35,1 Prozent stärker aus.
-Der Grund liegt im Grad der Bindung: ist der Tag vollständig gebunden, steht ohnehin keine Leistung für andere Märkte frei, sodass die Breite des Ladezustandsbandes keine weitere Vermarktung verdrängt.
-Ein Befund aus der ersten Iteration lässt sich deshalb nicht auf die zweite übertragen.
-
-Die Spanne der Verteilung bewegt sich zwischen den drei Abrufdauern kaum, denn das Maximum der Entladereservierung beträgt 1008\,\EurMWh{}, 986\,\EurMWh{} und 981\,\EurMWh{}.
-% POSITIV GEWENDET am 24.09.2026, Befund St1, wie oben.
-% Zurueckgenommene Fassung:
-%Eine kürzere Abrufdauer entlastet damit den typischen Preis und nicht die teuren Stunden.
-Eine kürzere Abrufdauer entlastet damit den typischen Preis, während die teuren Stunden bleiben.
-% ABGESCHWAECHT am 24.09.2026, Befund S3 des Durchgangs durch 4.6: der
-% Satz stand drei Saetze hinter der Aussage, dass die Abrufdauer den
-% Median um 4,0 und 12,7 Prozent bewegt, und behauptete damit zu viel.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der vollständigen Bindung nicht bestimmt.
-Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der vollständigen Bindung nur schwach bewegt, nämlich um höchstens 12,7 Prozent.
-
+% GETAUSCHT am 24.09.2026, Vorgabe des Verfassers: die Handelsspanne am
+% IDC steht jetzt vor der vorgehaltenen Energie je Abruf, weil sie den
+% Preis nach beiden Massstaeben staerker bewegt. Nach dem Erloesanteil
+% traegt der IDC 14,0 Prozent des Bruttoerloeses gegen 76,7 Prozent der
+% aFRR, nach der gemessenen Wirkung hebt eine verdoppelte Handelsspanne
+% den Median um 36,7 Prozent, waehrend eine Viertelung der vorgehaltenen
+% Energie ihn um 4,0 und 12,7 Prozent senkt. Die Marken sec:sensi_idc und
+% sec:sensi_abrufdauer bleiben, denn sie tragen die Sache und nicht die
+% Nummer.
 \subsection{Handelsspanne am \acs{IDC}}
 \label{sec:sensi_idc}
 % GEFUELLT am 23.09.2026 nach der Lieferung sensi8. Zahlen aus ERGEBNISSE
@@ -1156,6 +1169,16 @@ Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der 
 % des Analyse-Repositorys vom 23.09.2026.
 
 Die Handelsspanne am \ac{IDC} beruht im Optimierungsmodell auf dem \ac{ID1} und einem Aufschlag, sodass ihre Breite eine Annahme ist.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Abschnitt soll
+% sagen, warum die Sensitivitaet gerechnet wird. Begruendung nach seiner
+% Vorgabe: der ID1 ist ein Index je Viertelstunde und unterschaetzt den
+% Handel eines Betreibers mit eigener Anlage, der dieselbe Viertelstunde
+% mehrfach handeln kann. Die Sensitivitaet hebt deshalb den Erloes am IDC
+% und misst die Wirkung auf den Preis. Die Herleitung steht in Abschnitt
+% 3.2 und wird hier nur aufgerufen.
+Der \ac{ID1} ist ein Index je Viertelstunde und bildet den mehrfachen Handel derselben Viertelstunde nicht ab.
+Der Aufschlag des Optimierungsmodells bildet diesen Vorteil nach Abschnitt~\ref{sec:input_data} ab, seine Höhe lässt sich ohne die Orderbücher aber nicht bestimmen.
+Die Sensitivität weitet die Handelsspanne deshalb und prüft, wie stark der kurative Reservierungspreis auf einen höheren Erlös am \ac{IDC} reagiert.
 Abbildung~\ref{fig:sensi_idc_spanne} zeigt den kurativen Reservierungspreis unter drei Annahmen über diese Spanne.
 Der Faktor streckt jede Abweichung des Intradaypreises von seinem Tagesmittel, sodass das Niveau der Preise unverändert bleibt und allein die Spanne wächst.
 % ERGAENZT am 24.09.2026, Befund A6 der Kontrolllesung: der Abschnitt
@@ -1176,13 +1199,104 @@ Faktor 1 ist der Basisfall, Faktor 1,5 streckt jeden Abstand zum Tagesmittel um 
 Eine verdoppelte Handelsspanne hebt den Median von 12,22\,\EurMWh{} auf 16,70\,\EurMWh{} in der Entlade- und von 9,85\,\EurMWh{} auf 13,57\,\EurMWh{} in der Laderichtung, also um 36,7 und 37,7 Prozent.
 Die Reaktion fällt damit unterproportional aus, denn der \ac{IDC} ist nicht der einzige verdrängte Markt.
 Die Maxima steigen dagegen fast proportional, nämlich von 1008\,\EurMWh{} auf 1997\,\EurMWh{} und von 510\,\EurMWh{} auf 1017\,\EurMWh{}.
-Das deckt sich mit dem Befund des Abschnitts~\ref{sec:price_distribution}, wonach der \ac{IDC} in den teuersten Stunden die Leistung hält.
+% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Anstieg der
+% Maxima war durch Abschnitt 4.3 vorhergesagt und ist deshalb als
+% erwartbar zu kennzeichnen. Zurueckgenommene Fassung:
+%Das deckt sich mit dem Befund des Abschnitts~\ref{sec:price_distribution}, wonach der \ac{IDC} in den teuersten Stunden die Leistung hält.
+Dieser Anstieg war zu erwarten, denn nach Abschnitt~\ref{sec:price_distribution} hält der \ac{IDC} in den teuersten Stunden die Leistung.
 Das untere Quartil der Ladereservierung sinkt zugleich von 2,34\,\EurMWh{} über 1,80\,\EurMWh{} auf 1,25\,\EurMWh{}, weil die Streckung die Täler ebenso vertieft, wie sie die Spitzen hebt.
 % ANGEFUEGT am 24.09.2026, Befund B2 der Kontrolllesung: der Abschnitt
 % endete auf einem technischen Detail statt auf einer Folgerung,
-% Stilregel 4. Die Abschnitte 4.6.1 und 4.6.2 tragen je einen solchen
+% Stilregel 4. Die Abschnitte zur aFRR und zur vorgehaltenen Energie tragen
 % Schlusssatz.
-Eine zu breit angesetzte Handelsspanne hebt damit vor allem die Spitze der Verteilung, während das Hauptfeld der Stunden weniger reagiert.
+% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Befund an der
+% Spitze war erwartbar, der eigentliche Befund ist der Median. Ein Markt
+% mit 14,0 Prozent des Bruttoerloeses hebt ihn um 37 Prozent. Das Wort
+% "erheblich" der Vorgabe steht nach Stilregel 15 auf der Verbotsliste
+% und ist durch die beiden Anteile ersetzt. Der Satz ersetzt zugleich
+% den am selben Tag angefuegten Schlusssatz aus Befund B2 der
+% Kontrolllesung. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine zu breit angesetzte Handelsspanne hebt damit vor allem die Spitze der Verteilung, während das Hauptfeld der Stunden weniger reagiert.
+Aufschlussreich ist dagegen der Median, der mit 36,7 und 37,7 Prozent mitsteigt, obwohl der \ac{IDC} im Jahresmittel 14,0 Prozent des Bruttoerlöses trägt.
+Der \ac{IDC} bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
+
+% UMBENANNT am 24.09.2026, Vorgabe des Verfassers: geprueft ist
+% die Vorhaltung von Energie fuer einen Abruf, und die Energie
+% fuehrt deshalb. Die Abrufdauer steht nur noch dort, wo der UENB
+% ueber sie entscheidet. Der Begriff Abrufdauer war am 14.09.2026
+% entschieden und kam allein in Kapitel 4 und im Geruest von
+% Kapitel 5 vor, nicht in den Kapiteln 2 und 3 und in keinem
+% Anhang. Zurueckgenommene Ueberschrift: Abrufdauer
+\subsection{Vorgehaltene Energie je Abruf}
+\label{sec:sensi_abrufdauer}
+% Zahlen aus ERGEBNISSE Abschnitt 7.7. Die Abbildung zeigt seit dem
+% 22.09.2026 nur die zweite Iteration; die Werte der ersten Iteration
+% stehen deshalb als Zahl im Text und tragen keine eigene Abbildung.
+
+% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers, siehe die
+% Ueberschrift. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die Abrufdauer ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet, denn sie folgt aus der Zeit, über die eine kurative Maßnahme wirken muss.
+%Die Abrufdauer setzt im Optimierungsmodell die Breite des reservierten Ladezustandsbandes, also eine Megawattstunde je Megawatt bei einer Stunde.
+%Abbildung~\ref{fig:sensi_abrufdauer} zeigt die Abrufdauern von einer Stunde, einer halben Stunde und einer Viertelstunde je Richtung.
+Die vorgehaltene Energie je Abruf ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet.
+Die vorgehaltene Energie folgt aus der Abrufdauer, also aus der Zeit, über die eine kurative Maßnahme wirken muss.
+Im Optimierungsmodell setzt die vorgehaltene Energie die Breite des reservierten Ladezustandsbandes und beträgt im Basisfall eine Megawattstunde je Megawatt.
+Die Bindungsdauer bleibt davon unberührt und beträgt in allen Varianten eine Stunde.
+Abbildung~\ref{fig:sensi_abrufdauer} zeigt eine, eine halbe und eine viertel Megawattstunde je Megawatt und beschriftet sie als zugehörige Abrufdauer in Stunden.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_abrufdauer_2025_iteration2.pdf}
+% BILDUNTERSCHRIFT NACHGEZOGEN am 24.09.2026. Zurueckgenommene Fassung:
+%\caption{Kurativer Reservierungspreis über das Jahr 2025 bei drei Abrufdauern je Richtung, zweite Iteration.}
+    \caption{Kurativer Reservierungspreis über das Jahr 2025 bei drei Stufen der vorgehaltenen Energie je Richtung, zweite Iteration.}
+    \label{fig:sensi_abrufdauer}
+\end{figure}
+
+% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
+%Von einer Stunde auf eine Viertelstunde sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
+Von einer auf eine viertel Megawattstunde je Megawatt sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
+% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: die halbe Stunde ist kaum
+% teurer als die Viertelstunde, die volle Stunde dagegen messbar, und die
+% Wirkung ist in der Laderichtung groesser. Zahlen aus ERGEBNISSE Abschnitt
+% 7.7: Median 1 h 12,21/9,84, 0,5 h 11,91/8,56, 0,25 h 11,72/8,59.
+Die Verringerung wirkt in der Laderichtung damit stärker als in der Entladerichtung.
+% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
+%Die halbe Stunde liegt dabei fast auf dem Preis der Viertelstunde, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
+Die halbe Megawattstunde liegt dabei fast auf dem Preis der viertel, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
+% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
+%Der Schritt von der halben auf die volle Stunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
+Der Schritt von der halben auf die ganze Megawattstunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
+% NEU GEFASST am 24.09.2026, die Energie fuehrt, die Empfehlung haengt
+% weiterhin an der Zeit. Zurueckgenommene Fassung:
+%Eine halbe Stunde Abrufdauer ist damit fast zum Preis einer Viertelstunde zu haben und verschafft dem \ac{ÜNB} die doppelte Zeit, die kurative Maßnahme durch eine andere abzulösen.
+Eine halbe Megawattstunde je Megawatt ist damit fast zum Preis einer viertel zu haben und verdoppelt die Abrufdauer, über die der \ac{ÜNB} die kurative Maßnahme durch eine andere ablösen kann.
+
+% GESTRICHEN am 24.09.2026, Vorgabe des Verfassers: der Absatz zur ersten
+% Iteration ist uninteressant. Der Umbruch aus Befund A2 des Durchgangs
+% vom selben Tag ist damit gegenstandslos, denn der zweite Teilgedanke
+% ist entfallen. Mit dem Absatz faellt zugleich der einzige Doppelpunkt
+% des Kapitels. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%In der ersten Iteration fällt dieselbe Verringerung mit 18,8 und 35,1 Prozent stärker aus.
+%Der Grund liegt im Grad der Bindung: ist der Tag vollständig gebunden, steht ohnehin keine Leistung für andere Märkte frei, sodass die Breite des Ladezustandsbandes keine weitere Vermarktung verdrängt.
+%Ein Befund aus der ersten Iteration lässt sich deshalb nicht auf die zweite übertragen.
+% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
+%Die Spanne der Verteilung bewegt sich zwischen den drei Abrufdauern kaum, denn das Maximum der Entladereservierung beträgt 1008\,\EurMWh{}, 986\,\EurMWh{} und 981\,\EurMWh{}.
+Die Spanne der Verteilung bewegt sich zwischen den drei Stufen kaum, denn das Maximum der Entladereservierung beträgt 1008\,\EurMWh{}, 986\,\EurMWh{} und 981\,\EurMWh{}.
+% POSITIV GEWENDET am 24.09.2026, Befund St1, wie oben.
+% Zurueckgenommene Fassung:
+%Eine kürzere Abrufdauer entlastet damit den typischen Preis und nicht die teuren Stunden.
+% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
+%Eine kürzere Abrufdauer entlastet damit den typischen Preis, während die teuren Stunden bleiben.
+Eine geringere vorgehaltene Energie entlastet damit den typischen Preis, während die teuren Stunden bleiben.
+% ABGESCHWAECHT am 24.09.2026, Befund S3 des Durchgangs durch 4.6: der
+% Satz stand drei Saetze hinter der Aussage, dass die Abrufdauer den
+% Median um 4,0 und 12,7 Prozent bewegt, und behauptete damit zu viel.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der vollständigen Bindung nicht bestimmt.
+% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
+%Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der vollständigen Bindung nur schwach bewegt, nämlich um höchstens 12,7 Prozent.
+Für den Zuschnitt des Produkts folgt daraus, dass die vorgehaltene Energie je Abruf den Preis der vollständigen Bindung nur schwach bewegt, nämlich um höchstens 12,7 Prozent.
 
 \subsection{Zukünftig niedrigere Preise}
 \label{sec:sensi_zukunft}
@@ -1279,7 +1393,10 @@ Für die Belastbarkeit des kurativen Reservierungspreises gegenüber den Annahme
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn ohne sie fällt der Median auf gut ein Viertel und unter freier Lieferung steigt er um zwei Drittel.
 Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn ohne sie fällt der Median auf 28 Prozent entladend und 43 Prozent ladend, und unter freier Lieferung steigt er um 54 und 110 Prozent.
-Die Abrufdauer und die Handelsspanne am \ac{IDC} wirken schwächer, denn eine Verkürzung auf eine Viertelstunde senkt den Median um 4,0 und 12,7 Prozent und eine verdoppelte Handelsspanne hebt ihn um gut ein Drittel.
+% UMGESTELLT am 24.09.2026, Vorgabe des Verfassers: die Reihenfolge folgt
+% der neuen Abschnittsfolge. Zurueckgenommene Fassung:
+%Die Abrufdauer und die Handelsspanne am \ac{IDC} wirken schwächer, denn eine Verkürzung auf eine Viertelstunde senkt den Median um 4,0 und 12,7 Prozent und eine verdoppelte Handelsspanne hebt ihn um gut ein Drittel.
+Die Handelsspanne am \ac{IDC} und die vorgehaltene Energie je Abruf wirken schwächer, denn eine verdoppelte Handelsspanne hebt den Median um gut ein Drittel und eine Verringerung der vorgehaltenen Energie auf ein Viertel senkt ihn um 4,0 und 12,7 Prozent.
 Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld.
 Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis im selben Maß wie der Markterlös, sodass das Verhältnis beider bestehen bleibt.
 

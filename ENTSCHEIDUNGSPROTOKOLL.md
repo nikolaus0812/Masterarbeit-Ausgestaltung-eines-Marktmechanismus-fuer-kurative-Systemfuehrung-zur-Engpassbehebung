@@ -14823,6 +14823,140 @@ geaendert.
 `tools/pruefe_stil.py` mit dem einen zulaessigen Doppelpunkt, vier Durchgaenge
 mit biber, 124 Seiten, allein die Warnung zu `ch:conc`.
 
+### 24.09.2026, Umbau von 4.6 nach sieben Vorgaben des Verfassers
+
+Nach dem Durchgang hat der Verfasser am selben Tag sieben weitere Vorgaben
+diktiert. Alle sind umgesetzt.
+
+**1, die Reihenfolge der Sensitivitaeten.** Der Abschnitt zur Handelsspanne am
+\ac{IDC} steht jetzt vor dem zur vorgehaltenen Energie. Begruendung des
+Verfassers: der \ac{IDC} hat nach der \ac{aFRR} den zweitgroessten Einfluss.
+Beide Massstaebe stuetzen das, naemlich der Erloesanteil mit 14,0 gegen 76,7
+Prozent und die gemessene Wirkung mit 36,7 Prozent gegen 4,0 und 12,7 Prozent.
+Die Einleitung und der Schlussabsatz sind mitgezogen. **Die Marken
+`sec:sensi_idc` und `sec:sensi_abrufdauer` bleiben unveraendert**, denn sie
+tragen die Sache und nicht die Nummer.
+
+**2, der Begriff Abrufdauer ist ersetzt.** Vorgabe des Verfassers: *Abrufdauer
+ist das falsche Wort, weil wir hier eine Vorhaltung an Energie fuer einen Abruf
+untersucht haben.* Der Abschnitt heisst jetzt **Vorgehaltene Energie je
+Abruf**, und die Energie fuehrt durchgehend, naemlich eine, eine halbe und eine
+viertel Megawattstunde je Megawatt. **Die Abrufdauer steht nur noch dort, wo
+der UENB ueber sie entscheidet**, also im zweiten Satz des Abschnitts und in
+der Empfehlung, die an der Zeit haengt. Die Entscheidung vom 14.09.2026, den
+Begriff Abrufdauer zu fuehren, ist damit fuer die Ueberschrift und den Fliesstext
+aufgehoben; sie war dem Verfasser vor der Entscheidung gezeigt worden. Der
+Begriff kam allein in Kapitel 4 und im Geruest von Kapitel 5 vor, nicht in den
+Kapiteln 2 und 3 und in keinem Anhang. **`CLAUDE.md` Abschnitt 5 und
+`HANDOFF.md` Abschnitt 3 fuehren den alten Stand und sind vom Verfasser
+nachzuziehen.**
+
+> **Offener Punkt an das Analyse-Repository.** Die Abbildung
+> `sensi_abrufdauer_2025_iteration2.pdf` beschriftet ihre Achse mit *Abrufdauer
+> der Energiebindung* und die Stufen mit 1 h, 0,5 h und 0,25 h. Der Text nennt
+> sie jetzt in Megawattstunden je Megawatt und sagt in einem Halbsatz, dass die
+> Abbildung sie als zugehoerige Abrufdauer in Stunden beschriftet. **Sauberer
+> waere eine Abbildung, die beide Groessen traegt.**
+
+**3, die Einleitung sagt, warum der Erloesanteil zaehlt.** Angefuegt ist *und
+den kurativen Reservierungspreis damit am staerksten bewegt*. Das Wort
+*erheblich* der Vorgabe steht nach Stilregel 15 auf der Verbotsliste und ist
+durch die vergleichende Aussage ersetzt, die Abschnitt 4.6.1 mit Zahlen traegt.
+
+**4, auf der Leistungsseite sind drei Stufen geprueft, nicht vier.** Vorgabe
+des Verfassers, an der Abbildung bestaetigt: der dritte Balken, beschriftet als
+*gemittelter Preis, pro rata*, ist der Basisfall und steht dort allein als
+Bezug. Zurueckgenommene Fassung, nicht wieder aufzunehmen: *Auf der
+Leistungsseite ist diese Annahme in vier Stufen geprueft, naemlich ohne aFRR,
+mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit, im Basisfall und
+mit dem Grenzpreis des letzten Zuschlags.* Die Bildunterschrift nennt
+weiterhin vier Annahmen, was richtig bleibt, denn die Abbildung zeigt vier
+Balken.
+
+**5, das Cherry-Picking der Lieferstunden.** Vorgabe des Verfassers: die
+anteilige Lieferung verhindert zugleich, dass das Optimierungsmodell allein die
+ertragreichsten Abrufstunden waehlt. Angefuegt sind zwei Saetze: *Ein freier
+Liefermodus liesse das Optimierungsmodell zudem allein in den Stunden mit dem
+hoechsten Preis fuer aFRR-Arbeit liefern. Diese Wahl hat ein Betreiber nicht,
+denn der Abruf ist nicht vorhersehbar.* **Der Gedanke des Verfassers, dass der
+Betreiber stets das Risiko traegt, nicht abgerufen zu werden, ist auf seine
+ausdrueckliche Vorgabe nicht gesetzt.**
+
+**6, die Arbeitsseite.** Vorgabe des Verfassers: erinnern, woher der Preis
+stammt, und feststellen, dass nicht der Preis die Begrenzung ist, sondern die
+Liefermenge. Drei Saetze sind angefuegt, belegt in Abschnitt 3.2: *Der Preis
+der Arbeit selbst ist dabei kein Modellwert, denn er ist nach Abschnitt 3.2 das
+volumengewichtete Mittel der Grenzpreise der Plattform PICASSO. Nicht der Preis
+begrenzt den Erloes der Arbeitsseite, denn die aFRR-Arbeit wird stets zum
+Grenzpreis verguetet. Ausschlaggebend ist allein die gelieferte Menge.* Der
+Satz zur Trennung beider Seiten leitet jetzt auf die beiden Groessen ueber,
+deren Wirkung die Abbildungen zeigen. Zurueckgenommene Fassung: *Die Trennung
+beider Seiten zeigt, ob der Abrechnungspreis der Kapazitaetsauktion oder die
+Liefermenge den kurativen Reservierungspreis traegt.*
+
+**7, zwei Aenderungen am Schluss von 4.6.1.** Der Absatz ueber die Streuung der
+vier Analysetage ist auf Vorgabe des Verfassers **ganz gestrichen**;
+zurueckgenommen und nicht wieder aufzunehmen sind die vier Saetze *Alle Stufen
+sind ueber das ganze Jahr gerechnet* bis *Erst der Jahreslauf trennt beide
+Einfluesse*. Dafuer traegt der Schlussabsatz zwei neue Saetze: *Die freien
+Liefermodi heben den Median dagegen um mindestens 54 Prozent entladend und 110
+Prozent ladend und ueberschaetzen den kurativen Reservierungspreis damit.
+Sicher entscheiden liesse sich die Frage allein an den Gebotslisten der
+Auktionen, die jedoch anonymisiert sind.* Das Wort *immens* der Vorgabe ist
+nach Stilregel 7 durch die Zahlen ersetzt.
+
+**8, die Handelsspanne am IDC braucht ihre Begruendung.** Vorgabe des
+Verfassers: der ID1 ist ein Index je Viertelstunde und unterschaetzt den
+Handel eines Betreibers mit eigener Anlage, der dieselbe Viertelstunde
+mehrfach handeln und eine Position innerhalb desselben Lieferzeitpunkts
+glattstellen kann. Die Sensitivitaet hebt deshalb den Erloes am IDC und
+misst die Wirkung auf den Preis. Drei Saetze sind angefuegt. Die Herleitung
+steht bereits in Abschnitt 3.2, naemlich in den Saetzen ueber den
+mehrfachen Handel und den Aufschlag, und wird hier nur aufgerufen statt
+wiederholt.
+
+**9, der Befund von 4.6.2 ist umgekehrt.** Vorgabe des Verfassers: dass die
+Streckung auf die Spitze wirkt, war klar, denn die teuren Maxima haben den
+Verdraengungspreis ohnehin gesetzt. Der eigentliche Befund ist der Median,
+der mit 36,7 und 37,7 Prozent mitsteigt, obwohl der IDC im Jahresmittel nur
+14,0 Prozent des Bruttoerloeses traegt. Der Anstieg der Maxima ist jetzt als
+erwartbar gekennzeichnet, und der Schlusssatz lautet, dass der IDC die
+typische Stunde ebenso bewegt wie die Spitze. Zurueckgenommen und nicht
+wieder aufzunehmen ist der am selben Tag aus Befund B2 angefuegte Satz *Eine
+zu breit angesetzte Handelsspanne hebt damit vor allem die Spitze der
+Verteilung, waehrend das Hauptfeld der Stunden weniger reagiert.* Das Wort
+*erheblich* der Vorgabe ist nach Stilregel 15 durch die beiden Anteile
+ersetzt.
+
+**Fuer Kapitel 5 vorgemerkt, Vorgabe des Verfassers vom 24.09.2026.** Zur
+Wahrheit gehoert, dass die Sensitivitaet zur Handelsspanne nicht misst, was
+sie messen soll. Der Faktor streckt jede Abweichung vom Tagesmittel und hebt
+damit die Stunden, die ohnehin weit davon liegen. Der Vorteil des mehrfachen
+Handels derselben Viertelstunde entsteht dagegen in Viertelstunden mit
+grosser Preisbewegung innerhalb desselben Lieferzeitpunkts. Beide Mengen von
+Stunden fallen nicht zusammen. **Das gehoert nach Kapitel 5 und nicht nach
+Kapitel 4**, ausdrueckliche Vorgabe. Als Absatz 6 in den Stichpunkten zu 5.5
+gesetzt und in HANDOFF.md Abschnitt 7 vermerkt.
+
+**10, der Absatz zur ersten Iteration ist gestrichen.** Vorgabe des
+Verfassers: uninteressant. Zurueckgenommen und nicht wieder aufzunehmen sind
+die drei Saetze *In der ersten Iteration faellt dieselbe Verringerung mit
+18,8 und 35,1 Prozent staerker aus*, *Der Grund liegt im Grad der Bindung:
+ist der Tag vollstaendig gebunden, steht ohnehin keine Leistung fuer andere
+Maerkte frei, sodass die Breite des Ladezustandsbandes keine weitere
+Vermarktung verdraengt* und *Ein Befund aus der ersten Iteration laesst sich
+deshalb nicht auf die zweite uebertragen.* Der Umbruch aus Befund A2 des
+Durchgangs vom selben Tag ist damit gegenstandslos. **Mit dem Absatz faellt
+zugleich der einzige Doppelpunkt des Kapitels**, und der dreizehnte Befund
+des Durchgangs, der gegen Stilregel 17 verstiess, ist damit erledigt.
+
+**Stand nach dem Umbau.** Abschnitt 4.6 traegt 16 Absaetze in der Folge
+Einleitung mit einem Absatz, Modellierung der aFRR mit sechs, Handelsspanne
+am IDC mit zwei, Vorgehaltene Energie je Abruf mit drei und Zukuenftig
+niedrigere Preise mit vier. `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` erstmals ohne jeden Verstoss, vier Durchgaenge mit
+biber, 125 Seiten, allein die Warnung zu `ch:conc`.
+
 ## chapter_5.tex
 
 ### 24.09.2026, Struktur beschlossen und Stichpunktgeruest neu gesetzt

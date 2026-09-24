@@ -784,6 +784,16 @@ schreiben**, sonst entsteht doppelte Arbeit.
 
 ---
 
+- **Aus 4.6.2, Vorgabe des Verfassers vom 24.09.2026:** die Sensitivität
+  zur Handelsspanne misst nicht, was sie messen soll. Der Faktor streckt
+  um das Tagesmittel und hebt damit die Stunden, die ohnehin weit davon
+  liegen. Der Vorteil des mehrfachen Handels derselben Viertelstunde
+  entsteht dagegen in Viertelstunden mit großer Preisbewegung innerhalb
+  desselben Lieferzeitpunkts. Beide fallen nicht zusammen. Steht als
+  Absatz 6 in den Stichpunkten zu 5.5.
+
+---
+
 ## 7a Stand von Kapitel 5, 24.09.2026
 
 Die Struktur ist beschlossen (Fassung A, acht Abschnitte, rund 14 Seiten), die Stichpunkte stehen, die Ausformulierung steht aus. Einzelheiten im Protokoll unter `## chapter_5.tex`.
