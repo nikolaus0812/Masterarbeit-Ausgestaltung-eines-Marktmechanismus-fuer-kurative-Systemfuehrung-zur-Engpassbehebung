@@ -297,6 +297,14 @@ denken.
    Fundstelle, und dann umsetzen, was er entscheidet. Die Einordnung steht im
    Protokoll.
 
+8a. **Nach jeder Anpassung den ganzen Absatz zeigen**, nicht nur den
+    geaenderten Satz. Vorgabe des Verfassers vom 24.09.2026. Er beurteilt
+    eine Formulierung am Zusammenhang, und ein einzeln gezeigter Satz laesst
+    nicht erkennen, ob der Uebergang zum Vorsatz noch stimmt, ob eine
+    Dopplung entsteht oder ob der Absatz seine Kernaussage noch traegt. Gilt
+    auch fuer eine einzelne Wortaenderung. Bei mehreren geaenderten
+    Absaetzen jeden einzeln.
+
 ### 10.3 Wenn eine Stelle nicht besser wird
 
 9. **Nach der zweiten Iteration am selben Satz die Ebene wechseln.** Der

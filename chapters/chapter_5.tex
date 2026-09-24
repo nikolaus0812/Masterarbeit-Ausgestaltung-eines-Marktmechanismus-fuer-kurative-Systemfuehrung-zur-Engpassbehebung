@@ -57,33 +57,203 @@ Zuletzt werden der Aufwand der Umsetzung und eine systemweite Ausrollung der kur
 \section{Anforderungen und ihre Umsetzung im Produkt}
 \label{sec:requirements_assessment}
 
-In Abschnitt~\ref{sec:requirements_catalogue} werden acht Anforderungen an einen kurativen Marktmechanismus abgeleitet, an denen die kurative Reservierung zu messen ist.
-Über vier dieser Anforderungen entscheidet allein der Zuschnitt des Produkts.
-Die Reaktionszeitklassen differenzieren die kurative Reservierung nach dem betroffenen Betriebsmittel, womit die Anforderung A1 eingelöst ist.
-Die Vergütung setzt an der vorgehaltenen Leistung und an der Bindungsdauer an, und ein Abruf wird gesondert vergütet, womit A4 eingelöst ist.
-Die Präqualifikation prüft die technischen Eigenschaften einer Anlage, sodass der Zugang nach A5 technologieoffen bleibt.
-Die Beschaffung ist netzknotenscharf entworfen, womit A3 im Produkt eingelöst und im Ergebnis nicht geprüft ist.
+% NEU GEFASST am 24.09.2026, zwei Vorgaben des Verfassers.
+% ERSTENS werden die Anforderungen nicht mehr mit A1 bis A8 abgehakt,
+% sondern mit ihrem Namen benannt und durchgegangen. Die Namen stehen in
+% Abschnitt 3.1.1, naemlich Reaktionszeit, Verbindlichkeit,
+% Lokationalitaet, Bemessungsgegenstand, Diskriminierungsfreiheit,
+% Teilnahme, Vertraeglichkeit und Umsetzbarkeit.
+% ZWEITENS ist die Reaktionszeit zu diskutieren statt nur festzustellen.
+% Die Vorgabe des Verfassers nannte die Klassen mit 10 Sekunden, 2 und 10
+% Minuten; die dritte Klasse reicht nach InnoSys 2030 bis 15 Minuten,
+% siehe Abschnitt 2.1.2 und 3.1.2. Der Text nennt 15 Minuten.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%In Abschnitt~\ref{sec:requirements_catalogue} werden acht Anforderungen an einen kurativen Marktmechanismus abgeleitet, an denen die kurative Reservierung zu messen ist.
+%Über vier dieser Anforderungen entscheidet allein der Zuschnitt des Produkts.
+%Die Reaktionszeitklassen differenzieren die kurative Reservierung nach dem betroffenen Betriebsmittel, womit die Anforderung A1 eingelöst ist.
+%Die Vergütung setzt an der vorgehaltenen Leistung und an der Bindungsdauer an, und ein Abruf wird gesondert vergütet, womit A4 eingelöst ist.
+%Die Präqualifikation prüft die technischen Eigenschaften einer Anlage, sodass der Zugang nach A5 technologieoffen bleibt.
+%Die Beschaffung ist netzknotenscharf entworfen, womit A3 im Produkt eingelöst und im Ergebnis nicht geprüft ist.
+%Ob der kurative Marktmechanismus Anbieter findet, entscheidet die Anforderung A6.
+%Unter den Preisen der vollständigen Bindung steht der Betreiber besser als ohne die kurative Reservierung.
+%Die Teilnahme lohnt sich damit, sofern der \ac{ÜNB} den geforderten Preis zahlt.
+%Der Grund liegt darin, dass jede Stunde gegen ihre eigene beste Verwendung bepreist wird, während die Verwendungen um dieselbe Leistung konkurrieren.
+%Der Befund gilt für die Bezugsanlage, denn der kurative Reservierungspreis folgt ihren Erlösmöglichkeiten.
+%Für andere Technologien und andere Netzknoten ist die Teilnahme gesondert zu prüfen.
+%Die schärfste der acht Anforderungen ist A7.
+%A7 verlangt, dass der kurative Marktmechanismus neben den bestehenden Märkten besteht, ohne einen von ihnen zu verdrängen.
+%Unter vollständiger Bindung verdrängt die kurative Reservierung jedoch die gesamte übrige Vermarktung der Bezugsanlage.
+%Am stärksten trifft das die Vorhaltung von \ac{aFRR}-Leistung, auf die der größte Teil des Erlöses entfällt.
+%Würde eine große Zahl geeigneter Anlagen kurativ gebunden, so verlöre der Markt für \ac{aFRR}-Leistung seine Anbieter.
+%A7 ist damit nicht über den Zuschnitt des Produkts zu erfüllen, sondern allein über eine Begrenzung der beschafften Menge.
+%Zwei Anforderungen lassen sich aus dem Entwurf nicht beantworten.
+%A2 verlangt eine Sanktion, die das Produkt benennt, deren Höhe es aber nicht bemisst.
+%A8 betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen.
+%Hinzu tritt eine Konkurrenz, die der Anforderungskatalog nicht führt, denn die Präqualifikation der Regelleistung reserviert bereits ein Ladezustandsband \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+%A5 sichert zudem allein den Zugang, denn an einem Netzknoten mit wenigen wirksamen Anlagen liegt das Gebot über dem ermittelten kurativen Reservierungspreis.
+%Die Zahl der Anbieter je Netzknoten entscheidet damit über die Lage des Preises.
 
-Ob der kurative Marktmechanismus Anbieter findet, entscheidet die Anforderung A6.
-Unter den Preisen der vollständigen Bindung steht der Betreiber besser als ohne die kurative Reservierung.
-Die Teilnahme lohnt sich damit, sofern der \ac{ÜNB} den geforderten Preis zahlt.
-Der Grund liegt darin, dass jede Stunde gegen ihre eigene beste Verwendung bepreist wird, während die Verwendungen um dieselbe Leistung konkurrieren.
+In Abschnitt~\ref{sec:requirements_catalogue} werden acht Anforderungen an einen kurativen Marktmechanismus abgeleitet, die hier der Reihe nach gegen den Entwurf zu halten sind.
+Die erste Anforderung betrifft die Reaktionszeit, und die kurative Reservierung übernimmt dafür erstmals die drei Klassen aus InnoSys~2030 \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Ob die Klassen von unter zehn Sekunden, etwa zwei Minuten und bis 15 Minuten den richtigen Zuschnitt treffen, bleibt zu diskutieren.
+Gegeneinander abzuwägen sind dabei die Fähigkeit einer Technologie zu einer gesicherten Reaktionszeit und der Spielraum des \ac{TATL}, aus dem die mögliche Höherauslastung folgt.
+Je näher die Reaktionszeit einer Technologie an der ihrer Klasse liegt, desto mehr Höherauslastung lässt sich gewinnen.
+Zwischen beiden bleibt gleichwohl eine Sicherheitsmarge nötig, damit der Akteur die zugesagte Klasse bei jedem Abruf einhält.
+Ob über die drei Klassen hinaus weitere nötig sind, hängt am Kreis der Technologien, die teilnehmen sollen.
+Speicher und Anlagen zur Erzeugung aus erneuerbaren Energien speisen über einen Umrichter ein und erreichen deshalb kurze Reaktionszeiten, sodass für diesen Kreis wenige Klassen genügen und das Produkt einfach bleibt.
+
+% ERWEITERT am 24.09.2026, Vorgabe des Verfassers: die Verguetung des
+% Abrufs ist auszugestalten und bekommt deshalb einen eigenen Absatz.
+% Der Verweis auf Abschnitt 5.3 ist NICHT gesetzt, denn Stilregel 15
+% schliesst strukturelle Vorverweise aus; der Absatz sagt stattdessen
+% die Sache, naemlich dass ueber die Verguetung der Vorhaltung der Markt
+% entscheidet. Das Wort Indifferenzgebot der Vorgabe heisst nach
+% CLAUDE.md Abschnitt 5 Indifferenzprinzip. Zurueckgenommene Fassung:
+%Über drei weitere Anforderungen entscheidet ebenfalls der Zuschnitt des Produkts.
+%Der Bemessungsgegenstand muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, weil die kurative Bindung den Betrieb über ihre ganze Dauer einschränkt.
+%Die kurative Reservierung setzt genau dort an, und ein Abruf wird gesondert vergütet.
+% NEU GEORDNET am 24.09.2026, Vorgabe des Verfassers. Der
+% Bemessungsgegenstand steht jetzt bei der Verguetung des Abrufs, weil
+% beide die Verguetung betreffen. Diskriminierungsfreiheit und
+% Lokationalitaet stehen zusammen in einem Absatz, weil die
+% Praequalifikationsbedingungen unmittelbar an die knotenscharfen Gebote
+% anknuepfen. Der Begriff engpasssensitiv aus der Vorgabe ist durch die
+% in Abschnitt 3.1.2 gefuehrte Wirksamkeit am Netzknoten ersetzt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Über drei weitere Anforderungen entscheidet ebenfalls der Zuschnitt des Produkts.
+%Der Bemessungsgegenstand muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, weil die kurative Bindung den Betrieb über ihre ganze Dauer einschränkt.
+%Die kurative Reservierung setzt genau dort an, und über die Vergütung der Vorhaltung entscheidet der Markt.
+%Die Diskriminierungsfreiheit verlangt einen offenen Zugang aller Technologien, weshalb die Präqualifikation die technischen Eigenschaften einer Anlage prüft.
+%Die Lokationalität verlangt eine netzknotenscharfe Beschaffung, weil dieselbe Leistungsänderung je Netzknoten unterschiedlich entlastet.
+%Der Entwurf sieht eine solche Beschaffung vor, das Optimierungsmodell bildet das Netz jedoch nicht ab, sodass die Wirksamkeit je Netzknoten ungeprüft bleibt.
+%Ein Abruf wird neben der Vorhaltung gesondert vergütet, und diese Vergütung ist noch auszugestalten.
+%Denkbar wäre, den Abruf bereits in den kurativen Reservierungspreis einzupreisen.
+%Ein Betreiber schlüge dafür einen Risikoaufschlag auf, den er nach oben abschätzte.
+%Ein Abruf tritt jedoch selten ein, denn er bemisst sich nach der Ausfallwahrscheinlichkeit der Betriebsmittel.
+%Die gesonderte Vergütung des Abrufs hält den kurativen Reservierungspreis deshalb frei von dieser Unsicherheit.
+%Für die Höhe dieser Vergütung bietet sich das Regime des Redispatch an, denn auch beim Abruf gilt das Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation}.
+%Eine einheitliche Regelung mit den Anlagen zur Erzeugung aus erneuerbaren Energien und den Speichern liegt deshalb nahe.
+Der Bemessungsgegenstand muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, und die kurative Reservierung setzt genau dort an.
+Über die Vergütung der Vorhaltung entscheidet damit der Markt.
+Ein Abruf wird daneben gesondert vergütet, und diese Vergütung ist noch auszugestalten.
+Denkbar wäre, den Abruf bereits in den kurativen Reservierungspreis einzupreisen.
+Ein Betreiber schlüge dafür einen Risikoaufschlag auf, den er nach oben abschätzte.
+Ein Abruf tritt jedoch selten ein, denn er bemisst sich nach der Ausfallwahrscheinlichkeit der Betriebsmittel.
+Die gesonderte Vergütung des Abrufs hält den kurativen Reservierungspreis deshalb frei von dieser Unsicherheit.
+Für die Höhe dieser Vergütung bietet sich das Regime des Redispatch an, denn auch beim Abruf gilt das Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation}.
+Eine einheitliche Regelung mit den Anlagen zur Erzeugung aus erneuerbaren Energien und den Speichern liegt deshalb nahe.
+
+Die Diskriminierungsfreiheit verlangt einen offenen Zugang aller Technologien, weshalb die Präqualifikation die technischen Eigenschaften einer Anlage prüft.
+Die Präqualifikation sollte sich dabei auf die Eigenschaften beschränken, die für die Sicherheit des Netzbetriebs und für den Ablauf der Maßnahme nötig sind.
+Jede weitere Bedingung hebt die Hürde für den Einstieg und hält Anbieter fern.
+Der kurative Marktmechanismus braucht jedoch viele Gebote, damit an einem Netzknoten genügend wirksame Anlagen anbieten.
+Daran knüpft die Lokationalität unmittelbar an.
+Knotenscharfe Gebote und die Wirksamkeit am Netzknoten sind die Grundvoraussetzung dafür, dass der \ac{ÜNB} eine kurative Maßnahme überhaupt einplanen kann.
+Der Entwurf sieht eine netzknotenscharfe Beschaffung vor, das Optimierungsmodell bildet das Netz jedoch nicht ab, sodass die Wirksamkeit je Netzknoten ungeprüft bleibt.
+Aus genügend Geboten mit denselben Eigenschaften folgt am Ende ein Markt, der mit wenig Regulierung auskommt.
+
+% ERWEITERT am 24.09.2026, Vorgabe des Verfassers: die Teilnahme ist
+% nicht ueber die Summe der stuendlichen Indifferenzpreise zu erklaeren,
+% sondern darueber, dass der Akteur seinen Preis in Kenntnis seiner
+% uebrigen Erloesmoeglichkeiten selbst setzt. Dazu kommen die zeitliche
+% Lage der Ausschreibung und die zusaetzliche Flexibilitaet bei schon
+% vermarkteter Leistung. Drei Absaetze statt einem.
+% NICHT GESETZT ist der Gebotsschluss um 23 Uhr aus der Vorgabe, denn
+% Abschnitt 3.1.2 nennt allein die Bekanntgabe der Zuschlaege vor 23.30
+% Uhr des Vortages. Ebenfalls nicht gesetzt ist ein Rueckverweis auf
+% Kapitel 4, weil Stilregel 15 strukturelle Rueckverweise ausschliesst.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ob der kurative Marktmechanismus Anbieter findet, entscheidet die Anforderung an die Teilnahme.
+%Diese Anforderung verlangt, dass sich die Teilnahme für den Betreiber lohnt, weil der Betreiber über sein Gebot allein entscheidet.
+%Unter den Preisen der vollständigen Bindung steht der Betreiber besser als ohne die kurative Reservierung.
+%Der Grund liegt darin, dass jede Stunde gegen ihre eigene beste Verwendung bepreist wird, während die Verwendungen um dieselbe Leistung konkurrieren.
+%Der Befund gilt für die Bezugsanlage, denn der kurative Reservierungspreis folgt ihren Erlösmöglichkeiten.
+%Für andere Technologien und andere Netzknoten ist die Teilnahme gesondert zu prüfen.
+% AUF ZWEI ABSAETZE GEKUERZT am 24.09.2026, Vorgabe des Verfassers: die
+% Teilnahme soll einen, hoechstens zwei Absaetze tragen. Der erste sagt,
+% warum sich die Teilnahme lohnt, der zweite, was sie begrenzt. Die
+% Marktmacht am Netzknoten ist aus dem frueheren Schlussabsatz hierher
+% gewandert, weil sie eine Grenze der Teilnahme ist.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ob der kurative Marktmechanismus Anbieter findet, entscheidet die Anforderung an die Teilnahme.
+%Der Akteur bestimmt über seinen eigenen Gebotspreis, ob sich die Teilnahme für ihn lohnt.
+%Diesen Preis setzt der Akteur in Kenntnis seiner übrigen Erlösmöglichkeiten.
+%Die Teilnahme lohnt sich damit für jeden Akteur, sofern der \ac{ÜNB} den geforderten Preis zahlt.
+%Einen Anspruch auf Zuschlag hat der Akteur jedoch nicht, denn der \ac{ÜNB} beschafft allein den Bedarf seiner Redispatchplanung.
+%Die kurative Reservierung schreibt zudem keine Mindestmenge aus, sodass ein Zuschlag ganz ausbleiben kann.
+%Wie lohnend die Teilnahme ist, hängt an der zeitlichen Lage der Ausschreibung.
+%Die Ausschreibungen der \ac{FCR}, der \ac{aFRR} und der \ac{mFRR} schließen am Vormittag des Vortages, und die kurative Ausschreibung liegt dahinter.
+%Ein Speicher vermarktet sich deshalb zuerst in den Regelleistungsmärkten, um mit gesicherten Erlösen in den Spothandel zu gehen.
+%Wer dort keinen Zuschlag erhalten hat, findet in der kurativen Reservierung eine zweite Gelegenheit, Leistung gegen ein Entgelt vorzuhalten.
+%Anbieten kann ein Akteur dabei die Stunden, die er in den Intraday-Auktionen und am \ac{IDC} noch nicht vermarktet hat.
+%Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, sodass der Handel am \ac{IDC} danach offen bleibt.
+%Ein Akteur kann darüber hinaus Stunden anbieten, in denen er seine Leistung bereits vermarktet hat.
+%Bei einem Zuschlag beschafft der Akteur die vermarktete Leistung am \ac{IDC} zurück und passt seinen Ladezustand an.
+%Lohnend ist das, sobald der kurative Reservierungspreis die Kosten dieser Rückbeschaffung übersteigt.
+%Die kurative Reservierung erweitert damit den Spielraum des Akteurs.
+%Die Verdrängung der übrigen Märkte folgt genau dieser Abwägung.
+%Der Befund gilt für die Bezugsanlage, denn der kurative Reservierungspreis folgt ihren Erlösmöglichkeiten.
+%Für andere Technologien und andere Netzknoten ist die Teilnahme gesondert zu prüfen.
+Ob der kurative Marktmechanismus Anbieter findet, entscheidet die Anforderung an die Teilnahme.
+Der Akteur bestimmt über seinen eigenen Gebotspreis, ob sich die Teilnahme für ihn lohnt, und setzt diesen Preis in Kenntnis seiner übrigen Erlösmöglichkeiten.
+Die Ausschreibungen der \ac{FCR}, der \ac{aFRR} und der \ac{mFRR} schließen am Vormittag des Vortages, und die kurative Ausschreibung liegt dahinter.
+Ein Speicher vermarktet sich deshalb zuerst in den Regelleistungsmärkten, um mit gesicherten Erlösen in den Spothandel zu gehen.
+Wer dort keinen Zuschlag erhalten hat, findet in der kurativen Reservierung eine zweite Gelegenheit, Leistung gegen ein Entgelt vorzuhalten.
+Anbieten kann ein Akteur die noch nicht vermarkteten Stunden und darüber hinaus Stunden, deren Leistung er bei einem Zuschlag am \ac{IDC} zurückbeschafft.
+Die \ac{ÜNB} geben die Zuschläge vor 23.30 Uhr des Vortages bekannt, sodass der Handel am \ac{IDC} danach offen bleibt.
+Die kurative Reservierung erweitert damit den Spielraum des Akteurs, und die Verdrängung der übrigen Märkte folgt genau dieser Abwägung.
+
+Einen Anspruch auf Zuschlag hat der Akteur jedoch nicht, denn der \ac{ÜNB} beschafft allein den Bedarf seiner Redispatchplanung.
+Die kurative Reservierung schreibt zudem keine Mindestmenge aus, sodass ein Zuschlag ganz ausbleiben kann.
+Die kurative Reservierung bleibt damit die nachrangige Erlösquelle eines Speichers.
+An einem Netzknoten mit wenigen wirksamen Anlagen liegt das Gebot zudem über dem ermittelten kurativen Reservierungspreis, denn dieser Preis ist eine Untergrenze und kein Marktergebnis.
+Die Zahl der Anbieter je Netzknoten entscheidet damit über die Lage des Preises.
 Der Befund gilt für die Bezugsanlage, denn der kurative Reservierungspreis folgt ihren Erlösmöglichkeiten.
 Für andere Technologien und andere Netzknoten ist die Teilnahme gesondert zu prüfen.
 
-Die schärfste der acht Anforderungen ist A7.
-A7 verlangt, dass der kurative Marktmechanismus neben den bestehenden Märkten besteht, ohne einen von ihnen zu verdrängen.
+Die schärfste der acht Anforderungen ist die Verträglichkeit mit den bestehenden Märkten.
+Diese Anforderung verlangt, dass der kurative Marktmechanismus neben den bestehenden Märkten besteht, ohne einen von ihnen zu verdrängen.
 Unter vollständiger Bindung verdrängt die kurative Reservierung jedoch die gesamte übrige Vermarktung der Bezugsanlage.
 Am stärksten trifft das die Vorhaltung von \ac{aFRR}-Leistung, auf die der größte Teil des Erlöses entfällt.
 Würde eine große Zahl geeigneter Anlagen kurativ gebunden, so verlöre der Markt für \ac{aFRR}-Leistung seine Anbieter.
-A7 ist damit nicht über den Zuschnitt des Produkts zu erfüllen, sondern allein über eine Begrenzung der beschafften Menge.
+Die Verträglichkeit ist damit nicht über den Zuschnitt des Produkts zu erfüllen, sondern allein über eine Begrenzung der beschafften Menge.
 
-Zwei Anforderungen lassen sich aus dem Entwurf nicht beantworten.
-A2 verlangt eine Sanktion, die das Produkt benennt, deren Höhe es aber nicht bemisst.
-A8 betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen.
-Hinzu tritt eine Konkurrenz, die der Anforderungskatalog nicht führt, denn die Präqualifikation der Regelleistung reserviert bereits ein Ladezustandsband \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-A5 sichert zudem allein den Zugang, denn an einem Netzknoten mit wenigen wirksamen Anlagen liegt das Gebot über dem ermittelten kurativen Reservierungspreis.
-Die Zahl der Anbieter je Netzknoten entscheidet damit über die Lage des Preises.
+% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers. Der Absatz traegt
+% jetzt allein die Verbindlichkeit und die Poenale. Die Umsetzbarkeit
+% ist nach Abschnitt 5.5 gewandert, wo der Aufwand der Umsetzung ohnehin
+% steht. Die Konkurrenz um das Ladezustandsband steht bereits in
+% Abschnitt 5.4 als zweite Grenze der Eignung. Die Marktmacht am
+% Netzknoten steht jetzt bei den Grenzen der Teilnahme.
+% ACHTUNG: Abschnitt 3.1.1 schliesst eine Bemessung nach dem GRAD DER
+% ABWEICHUNG aus. Die vom Verfasser vorgeschlagene Abstufung richtet sich
+% nach der Schwere des Falls und widerspricht dem nicht; der Text sagt
+% den Unterschied ausdruecklich.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Zwei Anforderungen lassen sich aus dem Entwurf nicht beantworten.
+%Die Verbindlichkeit verlangt eine Sanktion, die das Produkt benennt, deren Höhe es aber nicht bemisst.
+%Die Umsetzbarkeit betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen.
+%Hinzu tritt eine Konkurrenz, die der Anforderungskatalog nicht führt, denn die Präqualifikation der Regelleistung reserviert bereits ein Ladezustandsband \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
+%Die Diskriminierungsfreiheit sichert zudem allein den Zugang, denn an einem Netzknoten mit wenigen wirksamen Anlagen liegt das Gebot über dem ermittelten kurativen Reservierungspreis.
+%Die Zahl der Anbieter je Netzknoten entscheidet damit über die Lage des Preises.
+Die Verbindlichkeit der Zusage verlangt eine Pönale, deren Höhe der Entwurf nicht bemisst.
+Die Pönale sichert die Lieferfähigkeit im Fehlerfall, denn ohne den Abruf bleibt das Betriebsmittel überlastet.
+Eine solche Überlastung kann das Betriebsmittel beschädigen, weshalb die Pönale die entgangene Vergütung übersteigen muss.
+Ein Maßstab für ihre Höhe fehlt, denn sie richtet sich nach dem Schaden und nach den Kosten, die aus der fehlenden Lieferfähigkeit entstehen.
+Der Akteur weist deshalb nach, dass er zum Zeitpunkt der Einplanung lieferfähig war, und schon ein fehlender Nachweis rechtfertigt den Ausschluss vom Markt.
+Eine Abstufung nach dem Grad der Abweichung scheidet nach Abschnitt~\ref{sec:requirements_catalogue} aus, während eine Abstufung nach der Schwere des Falls möglich bleibt.
+In Betracht käme eine Verwarnung mit einer Ausgleichszahlung, bevor der Ausschluss greift.
+Eine Haftung für Schäden am Betriebsmittel wäre daneben einzuführen, soweit das Recht sie zulässt.
+
+% ANGEFUEGT am 24.09.2026, Vorgabe des Verfassers: ein zusammenfassender
+% Absatz am Ende von 5.1. Der Gedanke ist, dass die Anforderungen das
+% Produkt bestimmen und damit auf den Preis zurueckwirken, sodass sie so
+% hoch wie noetig und so niedrig wie moeglich zu setzen sind.
+Die acht Anforderungen bestimmen den Zuschnitt des Produkts.
+Die Anforderungen sind damit nicht unabhängig vom kurativen Reservierungspreis.
+Je schärfer das Produkt die Anbieter auswählt, desto kleiner wird der Kreis der Gebote an einem Netzknoten.
+Je stärker die technischen Bedingungen in den Betrieb einer Anlage eingreifen, desto höher setzt ein Akteur zudem seinen Gebotspreis.
+Die Anforderungen sind deshalb so hoch wie nötig und so niedrig wie möglich zu setzen.
+Nur so bleibt die kurative Vorhaltung wirtschaftlich zu beschaffen.
 
 % ---------------------------------------------------------------
 \section{Modellierung und ihre Annahmen}
@@ -200,7 +370,12 @@ Der entworfene kurative Marktmechanismus setzt deshalb eine Änderung des §\,13
 Der kapazitätsbasierte Redispatch beschafft im Kern dieselbe Größe und unterscheidet sich allein in Auslöser und Reaktionszeit, sodass der kurative Marktmechanismus an eine bestehende Beschaffungsform anschließen kann.
 
 Neben dem Rahmen steht der Aufwand beim \ac{ÜNB} und beim Betreiber.
+% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die
+% Umsetzbarkeit der UENB-internen Prozesse gehoert hierher und
+% nicht in den Anforderungsabschnitt, weil der Mechanismus hier
+% ohnehin in die bestehenden Ablaeufe eingeordnet wird.
 Der \ac{ÜNB} muss die bezuschlagten Gebote zu einem kurativen Maßnahmenset zusammenfassen und in Betriebsplanung, Scharfschaltung und Auslösung führen.
+Wie groß dieser Aufwand ausfällt, betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen.
 Die Vergütung der Vorhaltung nimmt dem Betreiber den Anreiz, das Volumen eines Eingriffs zu vergrößern.
 An die Stelle dieses Anreizes tritt der Anreiz, Leistung anzubieten, die nicht wirklich frei ist.
 Aus einer Frage der Menge wird damit eine Frage des Nachweises, sodass ein Verfahren zum Nachweis der Verfügbarkeit konstitutiver Bestandteil des Mechanismus ist.

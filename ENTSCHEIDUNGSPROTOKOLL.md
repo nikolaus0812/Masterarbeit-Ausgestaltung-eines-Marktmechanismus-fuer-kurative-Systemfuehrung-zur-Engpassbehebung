@@ -15520,6 +15520,82 @@ Produkt- oder Rechtsgroessen und kein Ergebnis.
 `tools/pruefe_stil.py` ohne Verstoss, vier Durchgaenge mit biber, 118 Seiten,
 Kapitel 5 von Seite 65 bis 70.
 
+### 24.09.2026, Abschnitt 5.1 im Durchgang mit dem Verfasser
+
+Der Verfasser ist den Abschnitt Satz fuer Satz durchgegangen. Aus vier
+Absaetzen sind acht geworden.
+
+**Die Anforderungen tragen ihren Namen statt ihrer Kennung.** Vorgabe des
+Verfassers: nicht A1 bis A8 abhaken, sondern benennen und durchgehen. Die
+Namen stehen in Abschnitt 3.1.1.
+
+**Neu diskutiert sind fuenf Gegenstaende.**
+
+1. **Die Reaktionszeitklassen.** Abzuwaegen sind die Faehigkeit einer
+   Technologie zu einer gesicherten Reaktionszeit und der Spielraum des TATL,
+   aus dem die Hoeherauslastung folgt. Eine Sicherheitsmarge bleibt noetig.
+   Fuer umrichtergefuehrte Anlagen genuegen wenige Klassen. **Die Vorgabe des
+   Verfassers nannte die dritte Klasse mit zehn Minuten; sie reicht nach
+   InnoSys 2030 bis 15 Minuten**, siehe Abschnitt 2.1.2 und 3.1.2.
+2. **Die Verguetung des Abrufs.** Ein Einpreisen des Abrufs in den kurativen
+   Reservierungspreis fuehrte zu einem Risikoaufschlag, den ein Betreiber nach
+   oben abschaetzte. Der Abruf tritt selten ein, denn er bemisst sich nach der
+   Ausfallwahrscheinlichkeit der Betriebsmittel. Die gesonderte Verguetung
+   haelt den Preis frei von dieser Unsicherheit, und fuer ihre Hoehe bietet
+   sich das Regime des Redispatch an, weil auch dort das Indifferenzprinzip
+   gilt.
+3. **Die Praequalifikationsbedingungen.** Sie sollen sich auf die
+   Eigenschaften beschraenken, die fuer die Sicherheit des Netzbetriebs und
+   den Ablauf der Massnahme noetig sind, weil jede weitere Bedingung die
+   Einstiegshuerde hebt und der Markt viele Gebote braucht. Daran knuepft die
+   Lokationalitaet unmittelbar an.
+4. **Die zeitliche Lage der Ausschreibung.** Die Regelleistungsmaerkte
+   schliessen am Vormittag des Vortages, die kurative Ausschreibung liegt
+   dahinter. Ein Speicher vermarktet sich deshalb zuerst dort. Ein Akteur
+   kann auch bereits vermarktete Stunden anbieten und die Leistung bei einem
+   Zuschlag am IDC zurueckbeschaffen. **Der Gebotsschluss um 23 Uhr aus der
+   Vorgabe ist nicht gesetzt**, denn Abschnitt 3.1.2 nennt allein die
+   Bekanntgabe der Zuschlaege vor 23.30 Uhr.
+5. **Die Poenale.** Sie sichert die Lieferfaehigkeit im Fehlerfall und muss
+   die entgangene Verguetung uebersteigen, weil eine Ueberlastung das
+   Betriebsmittel beschaedigen kann. Ein Massstab fuer ihre Hoehe fehlt.
+   **Achtung:** Abschnitt 3.1.1 schliesst eine Bemessung nach dem Grad der
+   Abweichung aus. Die vom Verfasser vorgeschlagene Abstufung richtet sich
+   nach der Schwere des Falls und widerspricht dem nicht; der Text sagt den
+   Unterschied ausdruecklich. Eine Haftung fuer Schaeden am Betriebsmittel
+   waere einzufuehren, soweit das Recht sie zulaesst.
+
+**Drei Verschiebungen.** Die Umsetzbarkeit der UENB-internen Prozesse steht
+jetzt in Abschnitt 5.5, wo der Aufwand der Umsetzung ohnehin behandelt wird.
+Die Marktmacht am Netzknoten steht bei den Grenzen der Teilnahme. Die
+Konkurrenz um das Ladezustandsband ist hier gestrichen, weil sie in Abschnitt
+5.4 als zweite Grenze der Eignung steht.
+
+**Gestrichen ist die Erklaerung ueber die Summe der stuendlichen
+Indifferenzpreise.** Vorgabe des Verfassers: nicht so im Detail beschreiben,
+wichtig ist, dass der Akteur ueber seinen eigenen Gebotspreis entscheidet.
+**Damit entfaellt eine der drei eigenstaendigen Ableitungen**, die noch auf
+Bestaetigung warteten.
+
+**Ein Schlussabsatz ist angefuegt.** Die Anforderungen bestimmen den Zuschnitt
+des Produkts und sind damit nicht unabhaengig vom Preis, denn eine schaerfere
+Auswahl verkleinert den Anbieterkreis und ein staerkerer Eingriff in den
+Betrieb hebt den Gebotspreis. Sie sind deshalb so hoch wie noetig und so
+niedrig wie moeglich zu setzen.
+
+**Ersetzte Begriffe.** *Engpasssensitiv* heisst *Wirksamkeit am Netzknoten*,
+wie in Abschnitt 3.1.2 gefuehrt. *Indifferenzgebot* heisst
+*Indifferenzprinzip* nach CLAUDE.md Abschnitt 5. *Sanktion* heisst *Poenale*,
+wie in Abschnitt 3.1.2.
+
+**Offen.** Der zweite Absatz traegt neun Saetze und liegt damit einen ueber
+der Grenze von Stilregel 1. Zum Glattziehen waere der Bemessungsgegenstand
+von der Abrufverguetung zu trennen.
+
+**Stand.** Abschnitt 5.1 traegt acht Absaetze mit 8, 9, 8, 8, 7, 6, 8 und 6
+Saetzen. `python tools/pruefen.py --alle` ohne Befund, `tools/pruefe_stil.py`
+ohne Verstoss, 119 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
