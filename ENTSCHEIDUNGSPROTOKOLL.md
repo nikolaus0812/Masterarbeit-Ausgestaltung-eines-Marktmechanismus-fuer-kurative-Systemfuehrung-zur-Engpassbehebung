@@ -15451,6 +15451,66 @@ Wort und lautet `Die Rolle der \acs{BESS} im Engpassmanagement und am Markt`.
 `tools/pruefe_stil.py` ohne Verstoss, vier Durchgaenge mit biber, 121 Seiten.
 Kapitel 5 steht wieder vollstaendig als Stichpunkte, 23 Absaetze.
 
+### 24.09.2026, Kapitel 5 ausformuliert
+
+Die Einleitung ist auf einen Absatz verdichtet, und das ganze Kapitel ist
+ausformuliert. 23 Absaetze mit 134 Fliesstextzeilen.
+
+**Die Einleitung traegt einen Absatz mit acht Saetzen.** Vorgabe des
+Verfassers: der erste Absatz nahm Ergebnisaussagen vorweg, die in die
+Unterkapitel gehoeren, und ein Absatz reicht. Er traegt jetzt Einordnung,
+Ziel und Vorgehen und nimmt die Ausgestaltung des Marktmechanismus auf.
+**Alle vier vorweggenommenen Aussagen stehen in Abschnitt 5.3**, naemlich die
+Streuung und die Untergrenze des Gebots in Absatz 1, der Preis gegen die
+Regelleistung in Absatz 2 und der guenstige Winter in Absatz 3.
+
+**Drei Stilbefunde im eigenen Text, vor der Uebergabe behoben.** Das Wort
+*besonders geeignet* stand ohne Massstab, Stilregel 7; der Satz lautet jetzt
+*Das BESS eignet sich fuer die kurative Vorhaltung aus vier Gruenden* und
+kuendigt damit an, was folgt. Zweimal stand ein Possessivpronomen ueber der
+Satzgrenze, Stilregel 5. Und ein Satz trug zwei Hauptsaetze mit je einem
+Nebensatz, Stilregel 17; er ist geteilt.
+
+**Der Umfang liegt bei rund sechs Seiten und damit unter dem Zielumfang von
+14 Seiten.** Ursache ist, dass die Stichpunkte einen Satz je Punkt vorgaben
+und die Absaetze deshalb fuenf bis sechs kurze Saetze tragen. **Der Verfasser
+ist darauf hingewiesen.** Zum Fuellen kaemen in Betracht, die Argumente in
+5.1 und 5.5 zu entfalten, die in Kapitel 3 benannten Annahmen einzeln
+abzuhandeln statt sie in einem Satz zu buendeln, und die Folgerungen fuer den
+UENB und den Betreiber je Abschnitt auszufuehren.
+
+**Belegzettel.** Zehn Zitate, alle auf bereits gefuehrte Eintraege:
+`ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024`,
+`regelleistung_ausschreibungsdaten_2026`, `weber_gutachten_2015`,
+`mahgoub_wie_2025`, `bundesnetzagentur_smard_engpassmanagement_2026`,
+`bundesnetzagentur_festlegung_2024`,
+`innosys_2030_gesamtverbund_innovationen_2021`, `celi_cortes_m5use_2024`,
+`bundesnetzagentur_monitoringbericht_2026`,
+`bundesministerium_der_justiz_energiewirtschaftsgesetz_2025` und
+`tennet_tso_gmbh_pilotbetrieb_2025`. **Kein neuer Eintrag noetig.** Der
+Eintrag `ffe_regelreserve_2025` aus der aFRR-Antwort bleibt weiterhin offen,
+denn er gehoert nach Abschnitt 4.4.
+
+**Argumentzettel.** Drei eigenstaendige Ableitungen, alle vom Verfasser zu
+bestaetigen. Erstens die Begruendung in 5.1, warum der Betreiber unter
+vollstaendiger Bindung besser steht, naemlich weil jede Stunde gegen ihre
+eigene beste Verwendung bepreist wird, waehrend die Verwendungen um dieselbe
+Leistung konkurrieren. Zweitens der Befund in 5.1, dass A7 nicht ueber den
+Zuschnitt des Produkts zu erfuellen ist, sondern allein ueber eine
+Begrenzung der beschafften Menge. Drittens die Aussage in 5.2, dass die
+Sensitivitaet zur Handelsspanne allein deren Breite misst und nicht den
+Vorteil des mehrfachen Handels.
+
+**Zahlen.** Das Kapitel nennt nach der Vorgabe des Verfassers nur vier
+Groessen, naemlich die Reaktionszeitklasse von etwa zwei Minuten, die
+Zeitscheibe der aFRR von vier Stunden, die Abrufdauer von einer halben
+Stunde gegen eine Viertelstunde und den Paragrafen 13a EnWG. Alle vier sind
+Produkt- oder Rechtsgroessen und kein Ergebnis.
+
+**Stand.** `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss, vier Durchgaenge mit biber, 118 Seiten,
+Kapitel 5 von Seite 65 bis 70.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

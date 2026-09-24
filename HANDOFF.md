@@ -802,12 +802,18 @@ nach der Logik des Gesamtkonzepts. Einzelheiten im Protokoll.
 
 | Abschnitt | Absaetze | Stand |
 |---|---|---|
-| Einleitung | 2 | Stichpunkte, beschreibt den Aufbau genau einmal |
-| 5.1 Anforderungen und ihre Umsetzung im Produkt | 4 | Stichpunkte |
-| 5.2 Modellierung und ihre Annahmen | 5 | Stichpunkte |
-| 5.3 Wirtschaftlichkeit und Wirksamkeit | 4 | Stichpunkte |
-| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 | Stichpunkte |
-| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 | Stichpunkte |
+| Einleitung | 1 | **ausformuliert**, acht Saetze, beschreibt den Aufbau genau einmal |
+| 5.1 Anforderungen und ihre Umsetzung im Produkt | 4 | **ausformuliert** |
+| 5.2 Modellierung und ihre Annahmen | 5 | **ausformuliert** |
+| 5.3 Wirtschaftlichkeit und Wirksamkeit | 4 | **ausformuliert** |
+| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 | **ausformuliert** |
+| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 | **ausformuliert** |
+
+**Der Umfang liegt bei rund sechs Seiten gegen einen Zielumfang von 14.**
+Ursache ist, dass die Stichpunkte einen Satz je Punkt vorgaben. Zum Fuellen
+kaemen in Betracht, die Argumente in 5.1 und 5.5 zu entfalten, die in
+Kapitel 3 benannten Annahmen einzeln abzuhandeln statt gebuendelt, und die
+Folgerungen fuer den UENB und den Betreiber je Abschnitt auszufuehren.
 
 **Was beim Ausformulieren bindet.**
 
