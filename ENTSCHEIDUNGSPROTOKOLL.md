@@ -15479,6 +15479,15 @@ ist darauf hingewiesen.** Zum Fuellen kaemen in Betracht, die Argumente in
 abzuhandeln statt sie in einem Satz zu buendeln, und die Folgerungen fuer den
 UENB und den Betreiber je Abschnitt auszufuehren.
 
+**Die Einleitung ist am selben Tag noch einmal gefasst.** Vorgabe des
+Verfassers: die Formulierung mit den zwei Bausteinen gefaellt nicht, und
+die ersten beiden Saetze sind zu verbinden. Zurueckgenommen und nicht
+wieder aufzunehmen: *Die vorangegangenen Kapitel liefern dafuer zwei
+Bausteine* und *Beide Bausteine sind nun in das Gesamtkonzept eines
+kurativen Marktmechanismus einzuordnen*. Der erste Satz traegt jetzt beide
+Gegenstaende, und der zweite greift sie als *Produkt und Preis* auf. Der
+Absatz traegt damit sieben Saetze.
+
 **Belegzettel.** Zehn Zitate, alle auf bereits gefuehrte Eintraege:
 `ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024`,
 `regelleistung_ausschreibungsdaten_2026`, `weber_gutachten_2015`,
