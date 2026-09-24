@@ -15374,6 +15374,83 @@ Bewertung beginnt mit Abschnitt 5.1.
 24.09.2026 darauf hingewiesen worden, dass das ein Siebtel des Zielumfangs
 von 14 Seiten ist.
 
+### 24.09.2026, Kapitel 5 nach der Logik des Gesamtkonzepts neu gegliedert
+
+Der Verfasser hat die Gliederung mit acht Abschnitten am selben Tag wieder
+verworfen und eine Gliederung nach der Logik des Gesamtkonzepts vorgegeben.
+Sein Wortlaut ist die Vorlage.
+
+**Der Kapiteltitel lautet jetzt `Diskussion`**, nicht mehr `Bewertung und
+Diskussion`.
+
+**Die neue Gliederung traegt fuenf Abschnitte.**
+
+| Abschnitt | Gegenstand | Absaetze |
+|---|---|---|
+| Einleitung | was vorliegt und wie das Kapitel vorgeht | 2 |
+| 5.1 | Anforderungen und ihre Umsetzung im Produkt | 4 |
+| 5.2 | Modellierung und ihre Annahmen | 5 |
+| 5.3 | Wirtschaftlichkeit und Wirksamkeit | 4 |
+| 5.4 | Die Rolle der BESS im Engpassmanagement und am Markt | 4 |
+| 5.5 | Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 |
+
+**Zwei Vorgaben binden den ganzen Abschnitt.**
+
+1. **Die Diskussion nennt fast keine Zahlen.** Vorgabe des Verfassers: statt
+   der Zahlen stehen die Erkenntnisse, Schluesse und Analyseergebnisse, die
+   aus ihnen folgen. Im Geruest stehen nur noch Produktgroessen wie die
+   Reaktionszeitklasse und Paragrafen. **Jede Zahl, die beim Ausformulieren
+   doch noetig wird, ist einzeln zu begruenden.**
+2. **Die Einleitung beschreibt den Aufbau genau einmal.** Kein weiterer
+   Abschnitt wiederholt ihn. Die Bestandsaufnahme ist auf fuenf Stichpunkte
+   ohne Zahlen verdichtet.
+
+**Wohin die alten Abschnitte gewandert sind.** Die Einordnung des Ergebnisses
+und der regulatorische Rahmen sind aufgeteilt: was der Preis wirtschaftlich
+aussagt und gegen welchen Markt er entsteht, steht in 5.3; die
+Verguetungsstruktur der Festlegung ebenfalls in 5.3, weil sie eine Frage der
+Verguetung ist; Paragraf 13a EnWG, Redispatch 2.0 und der
+kapazitaetsbasierte Redispatch stehen in 5.5, weil sie ueber die Umsetzung
+entscheiden; der offengehaltene Regelungsbedarf fuer Speicher steht in 5.4.
+Die Belastbarkeit und die kritische Wuerdigung der Modellannahmen sind in 5.2
+zusammengefuehrt, die Uebertragbarkeit auf die Systemebene in 5.3.
+
+**Neu aufgenommen aus Kapitel 3**, auf Vorgabe des Verfassers, sind die dort
+benannten und bisher nicht diskutierten Annahmen und offenen Punkte: die
+offene Nachlaufpflicht und die offene Hoehe der Abrufverguetung aus 3.1.2,
+die Mindestgroesse und die Zusammenfassung je Netzknoten, das
+pay-as-bid-Verfahren und der Zuschlag als Verbund beider Richtungen, der
+fehlende Verguetungsrahmen, die tagesweise Loesung ohne Ladezustandsuebergang
+aus 3.2.1, die nicht abgebildeten Netzrestriktionen, Pools und Gegenseiten,
+die ausser Betracht bleibende Rueckwirkung der Speicher auf die Preise, der
+Ausschluss der Intraday-Auktionen aus 3.2.3, der fehlende mehrfache Handel
+derselben Viertelstunde und die Aussage aus 3.3.2, dass die Validierung
+allein eine Unterschaetzung ausschliesst.
+
+**Erhalten geblieben.** Die am selben Tag vormittags ausformulierte
+Kapiteleinleitung der alten Gliederung steht am Ende der Datei als Kommentar,
+weil sie Fliesstext war. Das Stichpunktgeruest vom 18.08.2026 steht
+unveraendert darunter. Die Stichpunkte der Gliederung mit acht Abschnitten
+stehen im Git unter dem Commit `e8c4012` und sind nicht wiederholt, weil sie
+kein Fliesstext waren.
+
+**Ein Fehler beim Umbau, gefunden und behoben.** Ein Skript hat ueber ein
+Bash-Heredoc aus `\ac` das Steuerzeichen BEL gemacht, sodass an drei Stellen
+`\ac{BESS}` und `\acs{BESS}` zerstoert waren. **Die Pruefsuite meldet das
+nicht**, denn Pruefung 1 prueft Zeilenenden und Kodierung und nicht auf
+Steuerzeichen, und LaTeX setzt dafuer klaglos `^^G`. Aufgefallen ist es allein
+am Inhaltsverzeichnis. Alle `.tex`-Dateien sind danach auf Steuerzeichen
+geprueft und sauber. **Vorschlag an den Verfasser: Pruefung 1 um eine Suche
+nach Steuerzeichen ausser CR und LF erweitern.**
+
+**Ein Satzbefund.** Ein `\acs` am Anfang einer Ueberschrift zerlegt den
+Eintrag im Inhaltsverzeichnis. Der Titel von 5.4 beginnt deshalb mit einem
+Wort und lautet `Die Rolle der \acs{BESS} im Engpassmanagement und am Markt`.
+
+**Stand.** `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss, vier Durchgaenge mit biber, 121 Seiten.
+Kapitel 5 steht wieder vollstaendig als Stichpunkte, 23 Absaetze.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

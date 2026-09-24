@@ -796,25 +796,39 @@ schreiben**, sonst entsteht doppelte Arbeit.
 
 ## 7a Stand von Kapitel 5, 24.09.2026
 
-Die Struktur ist beschlossen (Fassung A, acht Abschnitte, rund 14 Seiten), die Stichpunkte stehen, die Ausformulierung steht aus. Einzelheiten im Protokoll unter `## chapter_5.tex`.
+Kapitel 5 heisst seit dem 24.09.2026 nur noch **Diskussion**. Die Gliederung
+mit acht Abschnitten vom selben Tag ist verworfen; es gilt die Gliederung
+nach der Logik des Gesamtkonzepts. Einzelheiten im Protokoll.
 
 | Abschnitt | Absaetze | Stand |
 |---|---|---|
-| 5.1 Einordnung des Ergebnisses | 4 | Stichpunkte |
-| 5.2 Einordnung in den regulatorischen Rahmen | 5 | Stichpunkte |
-| 5.3 Bewertung anhand des Anforderungskatalogs | 4 | Stichpunkte |
-| 5.4 Folgen fuer die Betriebsfuehrung und den Produktzuschnitt | 4 | Stichpunkte |
-| 5.5 Belastbarkeit und Grenzen | 5 | Stichpunkte |
-| 5.6 Entwicklungen im Engpassmanagement und am Markt | 3 | Stichpunkte |
-| 5.7 Zukunft der BESS im Engpassmanagement | 3 | Stichpunkte |
-| 5.8 Kurative Systemfuehrung im Allgemeinen | 3 | Stichpunkte |
+| Einleitung | 2 | Stichpunkte, beschreibt den Aufbau genau einmal |
+| 5.1 Anforderungen und ihre Umsetzung im Produkt | 4 | Stichpunkte |
+| 5.2 Modellierung und ihre Annahmen | 5 | Stichpunkte |
+| 5.3 Wirtschaftlichkeit und Wirksamkeit | 4 | Stichpunkte |
+| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 | Stichpunkte |
+| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 | Stichpunkte |
 
-**Was beim Ausformulieren mitzufuehren ist.**
+**Was beim Ausformulieren bindet.**
 
-- Die fett gesetzten Absatzkoepfe (`\noindent\textbf{Absatz n, ...}`) und die `itemize`-Umgebungen sind Geruest und fallen mit dem Fliesstext weg.
-- **Der Begriff *kapazitaetsbasierter Redispatch* in 5.2 Absatz 5 ist in den Kapiteln 1 bis 4 nicht eingefuehrt** und braucht dort einen Definitionssatz und einen Beleg. In Betracht kommt `consentec_ausarbeitung_2024`.
-- **Die Erklaerung in 5.3 Absatz 2 ist vom Verfasser zu bestaetigen**, naemlich dass die Summe der stuendlichen Indifferenzpreise die entgangene Vermarktung uebersteigt, weil jede Stunde gegen ihre eigene beste Verwendung bepreist wird.
-- Das alte Geruest steht auskommentiert am Ende der Datei und traegt den Belegstand jedes Punktes. **Nicht wieder aktivieren.**
+- **Die Diskussion nennt fast keine Zahlen.** Vorgabe des Verfassers vom
+  24.09.2026: statt der Zahlen stehen die Erkenntnisse und Schluesse. Jede
+  Zahl, die doch noetig wird, ist einzeln zu begruenden.
+- **Die Einleitung beschreibt den Aufbau genau einmal.** Kein weiterer
+  Abschnitt wiederholt ihn.
+- Die fett gesetzten Absatzkoepfe und die `itemize`-Umgebungen sind Geruest
+  und fallen mit dem Fliesstext weg.
+- **Der Begriff *kapazitaetsbasierter Redispatch* in 5.5 ist in den Kapiteln
+  1 bis 4 nicht eingefuehrt** und braucht dort einen Definitionssatz und
+  einen Beleg. In Betracht kommt `consentec_ausarbeitung_2024`.
+- **Die Erklaerung in 5.1 Absatz 2 ist vom Verfasser zu bestaetigen**,
+  naemlich dass die Summe der stuendlichen Indifferenzpreise die entgangene
+  Vermarktung uebersteigt.
+- **Ein `cs` am Anfang einer Ueberschrift zerlegt den Eintrag im
+  Inhaltsverzeichnis.** Der Titel von 5.4 beginnt deshalb mit einem Wort.
+- **Pruefung 1 findet keine Steuerzeichen.** Am 24.09.2026 sind drei
+  zerstoerte `c`-Befehle nur am Inhaltsverzeichnis aufgefallen, nicht an
+  der Pruefsuite. Vorschlag: Pruefung 1 erweitern.
 
 ---
 

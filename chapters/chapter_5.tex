@@ -2,49 +2,55 @@
 %%                       IAEW LaTeX Template                        %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Bewertung und Diskussion}
+\chapter{Diskussion}
 \label{ch:discussion}
 % ===============================================================
-% STAND 24.09.2026. Diese Fassung ersetzt das Stichpunktgeruest vom
-% 18.08.2026 vollstaendig. Das alte Geruest steht am Ende dieser Datei
-% auskommentiert und ist nicht geloescht, weil es den Belegstand jedes
-% Punktes traegt. Die Kennungen B1 bis B7, C1, C2, D3 bis D5, E1, E2,
-% F1 bis F11 und G1 bis G4 sind dort nachzulesen.
+% STAND 24.09.2026, zweite Fassung des Tages. Sie ersetzt die Gliederung
+% mit acht Abschnitten vollstaendig. Anlass ist die Vorgabe des
+% Verfassers, die Diskussion an der Logik des Gesamtkonzepts
+% auszurichten statt an den Abschnitten des Kapitels 4.
 %
-% STRUKTUR, vom Verfasser am 24.09.2026 freigegeben (Fassung A):
-%   5.1 Einordnung des Ergebnisses ........................... 2 S.
-%   5.2 Einordnung in den regulatorischen Rahmen ............. 2,5 S.
-%   5.3 Bewertung anhand des Anforderungskatalogs ............ 2 S.
-%   5.4 Folgen fuer die Betriebsfuehrung und den Produktzuschnitt 2 S.
-%   5.5 Belastbarkeit und Grenzen ........................... 2,5 S.
-%   5.6 Entwicklungen im Engpassmanagement und am Markt ...... 1,5 S.
-%   5.7 Zukunft der Batteriespeicher im Engpassmanagement .... 1,5 S.
-%   5.8 Kurative Systemfuehrung im Allgemeinen ............... 1,5 S.
-% Zielumfang rund 14 Seiten, 31 Absaetze zu je einer halben Seite.
+% KAPITELTITEL: nur noch "Diskussion" statt "Bewertung und Diskussion".
 %
-% DREI WEITERE ENTSCHEIDUNGEN DES VERFASSERS VOM 24.09.2026:
-%   1  Der Anforderungskatalog A1 bis A8 aus Abschnitt 3.1.1 bleibt ein
-%      eigener Abschnitt, naemlich 5.3. Begruendung: Kapitel 3 leitet acht
-%      Anforderungen ab, und eine Arbeit, die sie ableitet und nie prueft,
-%      bleibt unvollstaendig. Der tragende Befund ist A7.
-%   2  Die Handlungsempfehlungen G1 bis G4 bekommen keinen eigenen
-%      Abschnitt, sondern stehen bei dem Befund, aus dem sie folgen,
-%      naemlich in 5.4.
-%   3  Die Saettigung des Marktes fuer FCR ist belegt und verwendbar.
-%      Abschnitt 2.3 nennt 810 MW praequalifizierte BESS-Leistung im Jahr
-%      2024, Abschnitt 2.2.3 einen deutschen Bedarf von 564 MW im
-%      Jahresmittel. Beide Zahlen stehen im Text und sind zitiert.
+% STRUKTUR, Vorgabe des Verfassers im Wortlaut nachgebildet:
+%   5.1 Anforderungen und ihre Umsetzung im Produkt
+%   5.2 Modellierung und ihre Annahmen
+%   5.3 Wirtschaftlichkeit und Wirksamkeit
+%   5.4 Batteriespeicher im Engpassmanagement und am Markt
+%   5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf
 %
-% ZUSTAND DIESER DATEI: Stichpunkte, ein Stichpunkt je spaeterem Satz,
-% gruppiert nach Absaetzen. Die fett gesetzten Absatzkoepfe sind
-% Geruest und fallen mit der Ausformulierung weg. Der Verfasser geht die
-% Stichpunkte durch, danach wird Absatz fuer Absatz ausformuliert.
+% ZAHLEN: Vorgabe des Verfassers vom 24.09.2026. Die Diskussion nennt
+% fast keine Zahlen, sondern die Erkenntnisse, Schluesse und
+% Analyseergebnisse, die aus den Zahlen folgen. Stehen bleiben allein
+% Produktgroessen wie die Reaktionszeitklasse und Paragrafen. Jede Zahl,
+% die doch noetig wird, ist beim Ausformulieren einzeln zu begruenden.
+%
+% EINLEITUNG: beschreibt genau einmal den Aufbau des Kapitels. Die
+% Bestandsaufnahme ist auf die tragenden Erkenntnisse verdichtet und
+% traegt keine Zahlen mehr.
+%
+% WOHER DIE STICHPUNKTE STAMMEN. Die Gliederung mit acht Abschnitten vom
+% 24.09.2026 vormittags steht im Git unter dem Commit e8c4012, ebenso die
+% ausformulierte Kapiteleinleitung jener Fassung. Das Stichpunktgeruest
+% vom 18.08.2026 steht am Ende dieser Datei auskommentiert und traegt den
+% Belegstand jedes Punktes mit den Kennungen B1 bis G4.
+%
+% NEU AUFGENOMMEN aus Kapitel 3, Vorgabe des Verfassers vom 24.09.2026,
+% die Annahmen und offenen Punkte, die dort benannt und bisher nicht
+% diskutiert sind:
+%   Nachlaufpflicht offen (3.1.2), Hoehe der Abrufverguetung offen
+%   (3.1.2), Mindestgroesse und Zusammenfassung je Netzknoten (3.1.2),
+%   pay-as-bid und Zuschlag als Verbund beider Richtungen (3.1.2), kein
+%   Verguetungsrahmen vorhanden (3.1.2), tagesweise Loesung ohne
+%   Ladezustandsuebergang (3.2.1), Netz, Pool und Gegenseite nicht
+%   abgebildet (3.2.1), Rueckwirkung der Speicher auf die Preise ausser
+%   Betracht (3.2.1), Ausschluss der Intraday-Auktionen (3.2.3), kein
+%   mehrfacher Handel derselben Viertelstunde (3.2.3), Validierung
+%   schliesst allein eine Unterschaetzung aus (3.3.2).
 %
 % STILVORGABEN wie im ganzen Dokument, siehe CLAUDE.md Abschnitt 4.
-% Besonders zu beachten beim Ausformulieren: ein Absatz traegt eine
-% Kernaussage und beginnt mit ihr, ein Satz hat einen Hauptsatz und
-% hoechstens einen Nebensatz, keine Pronomen ueber die Satzgrenze, keine
-% Gedankenstriche und keine Semikola, relative Angaben werden beziffert.
+% Die fett gesetzten Absatzkoepfe sind Geruest und fallen mit der
+% Ausformulierung weg.
 %
 % BEGRIFFE, die dieses Kapitel voraussetzt, mit ihrer Definitionsstelle:
 %   kurativer Reservierungspreis .......... 1.2
@@ -53,553 +59,340 @@
 %   Indifferenzprinzip .................... 2.3.1
 %   Arbitrage ............................. 2.2.1
 %   Anforderungskatalog A1 bis A8 ......... 3.1.1
-%   Bezugsanlage, 100 MW je Richtung, 250 MWh, 2,5 h ... 3.2
+%   Bezugsanlage .......................... 3.2.2
 %   Abrufdauer, Bindungsdauer, Reaktionszeit  2.1.2
 % NEU EINZUFUEHREN in diesem Kapitel, mit je einem Satz:
-%   kapazitaetsbasierter Redispatch ....... 5.2, Beleg noch zu pruefen
+%   kapazitaetsbasierter Redispatch ....... 5.5, Beleg noch zu pruefen
 % ===============================================================
 
-% ---------------------------------------------------------------
-% KAPITELEINLEITUNG, angelegt am 24.09.2026. Vorgabe des Verfassers: die
-% abschliessende Zusammenfassung des Abschnitts 4.6 gehoert eher hierher
-% und dort ausfuehrlicher. Der Schlussabsatz in 4.6 bleibt stehen, weil
-% jeder Abschnitt des Kapitels 4 nach der Vorgabe vom 22.09.2026mit drei
-% bis fuenf Saetzen Schlussfolgerungen endet. **Vom Verfasser zu
-% bestaetigen, ob der Schlussabsatz in 4.6 dafuer entfaellt.**
-% Kapitel 4 traegt ebenfalls eine Kapiteleinleitung, Kapitel 5 hatte
-% bisher keine.
-
-% ERWEITERT am 24.09.2026, Vorgabe des Verfassers: die Diskussion soll mit
-% einer Bestandsaufnahme aus den gesamten Ergebnissen beginnen und nicht
-% allein aus Abschnitt 4.6. Die drei Absaetze folgen der Reihenfolge des
-% Kapitels 4, naemlich Verdraengung, Hoehe und Streuung, Zeit und Bedarf.
-% ACHTUNG BEIM AUSFORMULIEREN: Abschnitt 5.1 traegt in seinen Absaetzen 2
-% und 3 dieselben Zahlen. Die Bestandsaufnahme nennt sie, 5.1 ordnet sie
-% ein; 5.1 darf sie deshalb nicht noch einmal aufzaehlen. Vom Verfasser
-% zu entscheiden.
-
-% AUSFORMULIERT am 24.09.2026. Das Stichpunktgeruest der
-% Kapiteleinleitung ist durch Fliesstext ersetzt und darunter
-% auskommentiert erhalten. Sechs Absaetze mit sechs, fuenf, fuenf, sechs,
-% fuenf und fuenf Saetzen.
-% ZUM WEGWEISER: die Vorgabe des Verfassers aus Stilregel 10 verbietet,
-% dass Abschnitte handeln. Der letzte Absatz nennt deshalb die
-% Reihenfolge der Gegenstaende und keine Abschnittsnummern, wie es die
-% Kapiteleinleitung von Kapitel 4 ebenfalls haelt. Der einzige Verweis
-% geht zurueck auf den Anforderungskatalog in Abschnitt 3.1.1.
-% Zurueckgenommenes Geruest:
-%\noindent\textbf{Absatz 1, was die kurative Reservierung verdrängt.}
-%\begin{itemize}
-%    \item Kapitel~\ref{ch:results} liefert für jede Stunde des Jahres 2025 je Richtung einen kurativen Reservierungspreis
-%    \item Ein steigender vorgegebener Preis löst dabei nacheinander die Vermarktung an den übrigen Märkten ab
-%    \item Welcher Markt zuerst weicht, folgt der Preisstruktur des jeweiligen Tages
-%    \item Über das Jahr bindet die \ac{aFRR}-Leistung an jedem Tag den größten Teil der Leistung
-%    \item Auf die \ac{aFRR} entfallen 76,7 Prozent des Bruttoerlöses, sodass die kurative Reservierung vor allem die Vorhaltung von Regelleistung verdrängt
-%\end{itemize}
-%\noindent\textbf{Absatz 2, wie hoch der Preis liegt und wie er streut.}
-%\begin{itemize}
-%    \item Übergang, die Höhe des Preises unterscheidet sich von Stunde zu Stunde
-%% GEKUERZT am 24.09.2026, Vorgabe des Verfassers: die Einleitung trug
-%% ueber dreissig Zahlen, allein dieser Absatz dreizehn. Quartile und
-%% Maxima stehen in Abschnitt 4.3, der sie herleitet, und die
-%% Rechtsschiefe steht hier als Verhaeltnis statt als Wertepaar.
-%    \item Der Median beträgt 12,22\,\EurMWh{} entladend und 9,85\,\EurMWh{} ladend
-%    \item Die Verteilung ist rechtsschief, denn das arithmetische Mittel liegt beim Zwei- bis Zweieinhalbfachen des Medians
-%    \item Die Zahlung des \ac{ÜNB} bei vollständiger Bindung beträgt 420,0\,\TsdEurMWa{} gegen einen Referenzerlös von 340,6\,\TsdEurMWa{}
-%% GEKUERZT am 24.09.2026, wie oben: die beiden Fuellgrade stehen in
-%% Abschnitt 4.2, die tragende Zahl ist der Anteil an der vollen Zahlung.
-%    \item Die Preise der ersten Iteration binden die Stunden unvollständig und kosten dabei bereits 97,6 Prozent der vollen Zahlung
-%\end{itemize}
-%\noindent\textbf{Absatz 3, wann die Vorhaltung günstig zu beschaffen ist.}
-%\begin{itemize}
-%    \item Übergang, für die Beschaffung zählt, wann der Preis niedrig liegt
-%    \item Über den Tag schwankt der Median der Summe beider Richtungen um den Faktor 8,3 und über die Monate um 4,2
-%    \item Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band, während die Entladereservierung über Vormittag und Abend streut
-%    \item Im Winter kostet die Reservierung rund 40 Prozent weniger als im Sommer, und dort liegt zugleich der größte Engpassmanagementbedarf
-%% GEKUERZT am 24.09.2026, wie oben: eine Zahl statt vier, denn 362 ist
-%% der kleinere der beiden Werte und traegt die Aussage fuer beide
-%% Richtungen.
-%    \item Das Tagesmittel bleibt an mindestens 362 von 365 Tagen unter dem Arbeitspreis des präventiven Redispatch von 101 Euro je bewegter Megawattstunde
-%\end{itemize}
-%\noindent\textbf{Absatz 4, woran dieses Ergebnis hängt.}
-%% Die ausfuehrliche Fassung des Schlussabsatzes von 4.6.
-%\begin{itemize}
-%    \item Übergang, vier Sensitivitäten sagen, welche Annahme das Ergebnis trägt
-%    \item Die Annahmen über die \ac{aFRR} tragen es am stärksten, denn ohne die \ac{aFRR} fällt der Median auf 28 Prozent entladend und 43 Prozent ladend
-%    \item Unter freier Lieferung der \ac{aFRR}-Arbeit steigt der Median um 54 und 110 Prozent, was für eine einzelne Anlage von 100\,\si{MW} nicht zu erwarten ist
-%    \item Eine verdoppelte Handelsspanne am \ac{IDC} hebt den Median um gut ein Drittel und die Maxima um das Doppelte
-%    \item Eine Viertelung der vorgehaltenen Energie je Abruf senkt ihn dagegen nur um 4,0 und 12,7 Prozent
-%    \item Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld
-%\end{itemize}
-%\noindent\textbf{Absatz 5, wie das Ergebnis auf eine veränderte Marktlage reagiert.}
-%\begin{itemize}
-%    \item Übergang, die Sensitivitäten prüfen das Modell, die Zukunftsvariante prüft die Welt
-%    \item Sinken die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} auf 80 Prozent, so fällt der Markterlös um 17,0 Prozent
-%% GEKUERZT am 24.09.2026, Vorgabe des Verfassers: die 11,5 Prozent sind
-%% am selben Tag auch aus Abschnitt 4.6.4 genommen worden, weil eine
-%% Prozentzahl zwischen Prozentzahlen schlecht liest.
-%    \item Die Zahlung bei vollständiger Verdrängung fällt um 16,0 Prozent
-%    \item Der kurative Reservierungspreis gibt damit weniger nach als der Markterlös, aus dem er folgt
-%% PRAEZISIERT am 24.09.2026, Vorgabe des Verfassers: belastbar war zu
-%% pauschal, denn das Niveau sinkt um 16,0 Prozent. Belastbar ist das
-%% Verhaeltnis und nicht der Betrag.
-%    \item Das Niveau sinkt damit mit dem Markt, während das Verhältnis beider bleibt
-%\end{itemize}
-%\noindent\textbf{Absatz 6, was dieses Kapitel damit tut.}
-%\begin{itemize}
-%    \item Übergang, diese Ergebnisse sind einzuordnen, zu bewerten und auf ihre Folgen zu prüfen
-%    \item Abschnitt~\ref{sec:result_classification} ordnet das Ergebnis ein, Abschnitt~\ref{sec:regulatory_discussion} hält es an den geltenden Rahmen
-%    \item Abschnitt~\ref{sec:requirements_assessment} prüft den kurativen Marktmechanismus am Anforderungskatalog aus Abschnitt~\ref{sec:requirements_catalogue}
-%    \item Abschnitt~\ref{sec:operational_consequences} zieht die Folgen für die Betriebsführung und den Zuschnitt des Produkts
-%    \item Die Abschnitte~\ref{sec:robustness} bis~\ref{sec:curative_general} behandeln die Belastbarkeit, die Entwicklungen an den Märkten, die Zukunft der \acs{BESS} und die kurative Systemführung im Allgemeinen
-%\end{itemize}
-
-Die Bewertung der Ergebnisse setzt eine Bestandsaufnahme voraus.
-In Kapitel~\ref{ch:results} wird für jede Stunde des Jahres 2025 je Richtung ein kurativer Reservierungspreis bestimmt.
-Ein steigender vorgegebener Preis löst dabei nacheinander die Vermarktung an den übrigen Märkten ab.
-Welcher Markt zuerst weicht, folgt der Preisstruktur des jeweiligen Tages.
-Über das Jahr bindet die \ac{aFRR}-Leistung an jedem der fünf untersuchten Tage den größten Teil der Leistung.
-Auf die \ac{aFRR} entfallen 76,7 Prozent des Bruttoerlöses, sodass die kurative Reservierung vor allem die Vorhaltung von Regelleistung verdrängt.
-
-Die Höhe dieses Preises unterscheidet sich von Stunde zu Stunde.
-Der Median beträgt 12,22\,\EurMWh{} in der Entlade- und 9,85\,\EurMWh{} in der Laderichtung.
-Die Verteilung ist in beiden Richtungen rechtsschief, denn das arithmetische Mittel liegt beim Zwei- bis Zweieinhalbfachen des Medians.
-Die Zahlung des \ac{ÜNB} bei vollständiger Bindung beträgt 420,0\,\TsdEurMWa{} gegen einen Referenzerlös von 340,6\,\TsdEurMWa{}.
-Die Preise der ersten Iteration binden die Stunden unvollständig und kosten dabei bereits 97,6 Prozent der vollen Zahlung.
-
-Für die Beschaffung zählt daneben, wann der kurative Reservierungspreis niedrig liegt.
-Über den Tag schwankt der Median der Summe beider Richtungen um den Faktor 8,3 und über die Monate um 4,2.
-Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band, während die Entladereservierung über den Vormittag und den Abend streut.
-Im Winter kostet die Reservierung rund 40 Prozent weniger als im Sommer, und dort liegt zugleich der größte Engpassmanagementbedarf.
-Das Tagesmittel bleibt an mindestens 362 von 365 Tagen unter dem Arbeitspreis des präventiven Redispatch von 101 Euro je bewegter Megawattstunde.
-
-Woran dieses Ergebnis hängt, beantworten vier Sensitivitäten.
-Die Annahmen über die \ac{aFRR} tragen es am stärksten, denn ohne die \ac{aFRR} fällt der Median auf 28 Prozent in der Entlade- und auf 43 Prozent in der Laderichtung.
-Unter freier Lieferung der \ac{aFRR}-Arbeit steigt der Median um 54 und 110 Prozent, was für eine einzelne Anlage von 100\,\si{MW} nicht zu erwarten ist.
-Eine verdoppelte Handelsspanne am \ac{IDC} hebt den Median um gut ein Drittel und die Maxima um das Doppelte.
-Eine Viertelung der vorgehaltenen Energie je Abruf senkt den Median dagegen nur um 4,0 und 12,7 Prozent.
-Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld.
-
-Die vierte Sensitivität prüft statt des Optimierungsmodells eine Annahme über die künftige Marktlage.
-Sinken die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} auf 80 Prozent, so fällt der Markterlös um 17,0 Prozent.
-Die Zahlung bei vollständiger Verdrängung fällt um 16,0 Prozent.
-Der kurative Reservierungspreis gibt damit weniger nach als der Markterlös, aus dem er folgt.
-Das Niveau sinkt mit dem Markt, während das Verhältnis beider bleibt.
-
-Diese Ergebnisse sind einzuordnen, zu bewerten und auf ihre Folgen zu prüfen.
-Zu Anfang steht deshalb, was der ermittelte Preis aussagt und wie er sich in den geltenden Rahmen fügt.
-Darauf folgt die Bewertung des kurativen Marktmechanismus am Anforderungskatalog aus Abschnitt~\ref{sec:requirements_catalogue}.
-Anschließend werden die Folgen für die Betriebsführung und für den Zuschnitt des Produkts gezogen und die Belastbarkeit des Ergebnisses geprüft.
-Zuletzt stehen die Entwicklungen an den Märkten, die Zukunft der \acs{BESS} im Engpassmanagement und die kurative Systemführung im Allgemeinen, aus der der weitere Forschungsbedarf folgt.
-
-% ---------------------------------------------------------------
-\section{Einordnung des Ergebnisses}
-\label{sec:result_classification}
-% Ziel 2 Seiten, vier Absaetze.
-% Fragen des Abschnitts: Was ist die ermittelte Zahl und was ist sie nicht?
-% Wie hoch liegt sie und wie streut sie? Gegen welchen Markt ist sie ein
-% Preis? Wie verhaelt sie sich zu den Kosten des Engpassmanagements?
-
-\noindent\textbf{Absatz 1, der ermittelte Preis ist die Untergrenze eines Gebots.}
+\noindent\textbf{Absatz 1, was vorliegt und was daraus einzuordnen ist.}
 \begin{itemize}
-    \item Anschluss an Kapitel~\ref{ch:results}, das für jede Stunde des Jahres 2025 je Richtung einen kurativen Reservierungspreis liefert
-    \item Der Preis misst allein die entgangene Marktopportunität derselben Stunde und folgt damit dem Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation}
-    \item Nicht enthalten sind die Wahrscheinlichkeit eines Abrufs und die Sanktion bei Nichterfüllung, denn das Optimierungsmodell bildet beide nicht ab
-    \item Ebenso wenig enthalten ist der Aufwand, den ein Betreiber für das Anbieten selbst trägt
-    \item Ein Betreiber böte deshalb über dem ermittelten Preis, und zwar um einen Aufschlag, den diese Arbeit nicht beziffert
-    % Kernsatz des Absatzes, eigenstaendige Ableitung.
-    \item Der ermittelte kurative Reservierungspreis ist damit die Untergrenze eines Gebots und nicht das Gebot
+    \item Nach der Ableitung der Anforderungen, dem Entwurf der kurativen Reservierung und der Bestimmung des kurativen Reservierungspreises liegen Erkenntnisse vor, die in das Gesamtkonzept eines kurativen Marktmechanismus einzuordnen sind
+    \item Der kurative Reservierungspreis entsteht für jede Stunde neu und streut über das Jahr weit, sodass eine einzelne Zahl ihn nicht wiedergibt
+    \item Er richtet sich vor allem gegen die Vorhaltung von Regelleistung und nur in wenigen Stunden gegen den Handel
+    \item Er ist im Winter am günstigsten, und dort liegt zugleich der größte Engpassmanagementbedarf
+    \item Er ist die Untergrenze eines Gebots, denn die Wahrscheinlichkeit eines Abrufs, die Sanktion und der Aufwand des Anbietens fehlen ihm
 \end{itemize}
 
-\noindent\textbf{Absatz 2, eine einzelne Zahl gibt den Preis nicht wieder.}
+\noindent\textbf{Absatz 2, wie dieses Kapitel vorgeht.}
+% Dieser Absatz beschreibt den Aufbau GENAU EINMAL. Kein weiterer
+% Abschnitt wiederholt ihn.
 \begin{itemize}
-    \item Übergang, wie hoch diese Untergrenze liegt, hängt an der Stunde
-    \item Der Median beträgt 12,22\,\EurMWh{} in der Entlade- und 9,85\,\EurMWh{} in der Laderichtung, das arithmetische Mittel 23,64 und 24,33\,\EurMWh{}
-    \item Der Abstand beider Maße misst die Rechtsschiefe, nämlich das 1,93-Fache entladend und das 2,47-Fache ladend
-    \item Die Hälfte der Stunden ist zum Median oder darunter zu reservieren, während die Maxima bei 1008 und 510\,\EurMWh{} liegen
-    \item Für die Beschaffung folgt daraus, dass der \ac{ÜNB} den größten Teil der Vorhaltung günstig bekommt und allein für die Spitze viel zahlt
-    % Vorgabe des Verfassers vom 23.09.2026, HANDOFF Abschnitt 7.
-    \item Die teuren Stunden sind zugleich die am schlechtesten vorhersagbaren, denn sie hängen an einzelnen Preisspannen des Energiemarkts
-\end{itemize}
-
-\noindent\textbf{Absatz 3, der kurative Reservierungspreis ist ein Preis gegen die Regelleistung.}
-\begin{itemize}
-    \item Übergang, gegen welche Vermarktung der Preis entsteht, zeigt die Aufteilung des Erlöses
-    \item Auf die \ac{aFRR} entfallen mit Leistung und Arbeit 76,7 Prozent des Bruttoerlöses der Bezugsanlage
-    \item Der Leistungspreis der \ac{aFRR} entfällt mit der reservierten Stunde vollständig, weil er an eine Zeitscheibe von vier Stunden gebunden ist
-    \item Die Arbitrage an den Energiemärkten lässt sich dagegen zwischen den Stunden eines Tages verschieben, solange der Tag eine Staffel gleichwertiger Spannen trägt
-    \item Der Energiemarkt setzt den Preis deshalb nur an jedem zwanzigsten Tag des Jahres, an dem diese Staffel einbricht
-    % Kernsatz, eigenstaendige Ableitung aus Kapitel 4.
-    \item Der kurative Reservierungspreis ist damit im Kern ein Preis gegen die Regelleistung, und wer ihn senken will, muss an der Regelleistung ansetzen
-\end{itemize}
-
-\noindent\textbf{Absatz 4, das Verhältnis zu den Kosten des präventiven Redispatch.}
-\begin{itemize}
-    \item Übergang, ob dieser Preis günstig ist, bemisst sich am bestehenden Engpassmanagement
-    \item Die Bundesnetzagentur weist für das Jahr 2025 einen Arbeitspreis von 101 Euro je bewegter Megawattstunde aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}
-    \item Beide Größen tragen dieselbe Dimension und meinen Verschiedenes, denn die eine vergütet Vorhaltung und die andere bewegte Arbeit
-    \item Das Tagesmittel des kurativen Reservierungspreises bleibt an 362 von 365 Tagen entladend und an 364 von 365 Tagen ladend unter dieser Linie
-    \item Die kurative Vorhaltung ist damit über das ganze Jahr einplanbar
-    \item Ob sie im Einzelfall günstiger ist als die Maßnahme, die sie ersetzt, hängt an der Zahl der vorgehaltenen Stunden je Abruf, die diese Arbeit nicht bestimmt
+    \item Zuerst werden die Anforderungen aus Abschnitt~\ref{sec:requirements_catalogue} durchgegangen und mit ihrer jeweiligen Umsetzung im Produkt verglichen
+    \item Anschließend wird geprüft, ob die Annahmen der Modellierung ausreichen und wie einzelne Annahmen auf einen möglichen kurativen Reservierungspreis wirken
+    \item Darauf folgt die Bewertung der Wirtschaftlichkeit anhand des Preises und der Wirksamkeit im Zusammenhang mit der Einsparung von Redispatch
+    \item Anschließend wird der Zusammenhang zwischen \ac{BESS} und den kurzfristigen Märkten behandelt, dazu ihre künftige Rolle im Strommarkt und bei den Systemdienstleistungen
+    \item Zuletzt werden der Aufwand der Umsetzung und eine systemweite Ausrollung der kurativen Systemführung abgewogen, woraus der weitere Forschungsbedarf folgt
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Einordnung in den regulatorischen Rahmen}
-\label{sec:regulatory_discussion}
-% Ziel 2,5 Seiten, fuenf Absaetze. Material B1 bis B7, F7, F8, G1.
-% Fragen des Abschnitts: Kennt der geltende Rahmen die Groesse, die hier
-% bepreist wird? Traegt die Verguetungsstruktur der Festlegung sie? Ist die
-% Luecke fuer Speicher dokumentiert? Gibt es eine bestehende
-% Beschaffungsform, an die der Mechanismus anschliessen kann?
-
-\noindent\textbf{Absatz 1, der geltende Rahmen kennt keine Vergütung der Vorhaltung.}
-\begin{itemize}
-    \item Übergang aus Abschnitt~\ref{sec:result_classification}, der ermittelte Preis vergütet Vorhaltung, und der geltende Rahmen kennt diese Größe nicht
-    \item §\,13a Abs.\,2 \ac{EnWG} entschädigt den durchgeführten Eingriff und schreibt eine kostenbasierte Abrechnung vor \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}
-    \item Eine marktbasierte Beschaffung des Redispatch ist damit im geltenden Recht ausgeschlossen
-    \item Redispatch~2.0 ist ein Duldungs- und Entschädigungsregime, in dem der Anlagenbetreiber die Anweisung hinnimmt und dafür schadlos gestellt wird \cite{bundesnetzagentur_festlegung_2024}
-    \item Die kurative Reservierung setzt dagegen ein Gebot des Betreibers voraus, denn ohne Gebot kommt die Maßnahme nicht zustande
-    \item Der entworfene kurative Marktmechanismus ist innerhalb des geltenden Rahmens deshalb nicht abbildbar und setzt eine Änderung des §\,13a \ac{EnWG} voraus
-\end{itemize}
-
-\noindent\textbf{Absatz 2, die Vergütungsstruktur der Festlegung erfasst den ermittelten Preis nicht.}
-\begin{itemize}
-    \item Übergang, auch dort, wo der Rahmen eine Vergütung vorsieht, trifft ihre Struktur den ermittelten Preis nicht
-    \item Die Festlegung bildet die Vergütung als Erzeugungsauslagen zuzüglich des Maximums aus anteiligem Werteverbrauch und Opportunität \cite{bundesnetzagentur_festlegung_2024}
-    \item Die Struktur ist damit ein Auswahlverhältnis und keine Summe
-    \item Ist der Werteverbrauch die größere der beiden Größen, geht die Opportunität in die Zahlung gar nicht ein
-    \item Der in Kapitel~\ref{ch:results} ermittelte Preis ist gerade die Opportunität und würde unter dieser Struktur nicht zahlungswirksam
-    \item Eine Vergütung der kurativen Vorhaltung verlangt deshalb eine eigene Struktur und nicht die Anwendung der bestehenden
-\end{itemize}
-
-\noindent\textbf{Absatz 3, die Methode der Festlegung passt zum Betrieb eines Speichers nicht.}
-% F7 und F8 des alten Geruests. Beide kritisieren das Referenzverfahren und
-% nicht das eigene Modell, deshalb stehen sie hier und nicht in 5.5.
-\begin{itemize}
-    \item Übergang, neben der Struktur ist die Bemessung selbst zu prüfen
-    \item Das Volatilitätsmaß der Festlegung ist ein Maß der Verteilungsränder, denn 69 Prozent der Jahressumme stammen aus dem größten Prozent der Viertelstunden
-    \item Eine Größe mit dieser Konzentration als Maßstab einer Vergütung zu verwenden, ist begründungsbedürftig
-    \item Das Referenzverfahren bewertet einzelne Zeitscheiben zudem unabhängig voneinander
-    \item Für die Bezugsanlage mit 2,5 Stunden Energieinhalt je Leistung ist die Kopplung über den Ladezustand jedoch bindend
-    \item Beide Eigenschaften zusammen sprechen dafür, den Wert der Bindung aus dem Betrieb der Anlage zu bestimmen statt aus einer Preisreihe
-\end{itemize}
-
-\noindent\textbf{Absatz 4, der Regelungsbedarf für Speicher ist ein dokumentierter offener Punkt.}
-\begin{itemize}
-    \item Übergang, die Behörde hat die Anwendung auf Speicheranlagen selbst offengelassen
-    \item Anlage~1 der Festlegung hält die Vorgaben für \ac{PSKW} auf \ac{BESS} auch ohne weitere Anpassungen für anwendbar \cite{bundesnetzagentur_festlegung_2024}
-    \item Zugleich hat die Beschlusskammer die Behandlung von \ac{BESS} einem späteren Hinweis vorbehalten
-    \item Die Regelungslücke ist damit dokumentiert und keine Behauptung dieser Arbeit
-    \item Für Anlagen zur Erzeugung aus erneuerbaren Energien bestehen eigene Vorgaben, sodass eine technologiespezifische Regelung dem Rahmen nicht fremd ist \cite{iaew_abschlussbericht_2023, iaew_folgestudie_2024}
-    \item Das Ergebnis dieser Arbeit liefert für diesen offenen Punkt eine Größenordnung der Vorhaltekosten eines \ac{BESS}
-\end{itemize}
-
-\noindent\textbf{Absatz 5, die Nähe zum kapazitätsbasierten Redispatch.}
-% NEU EINZUFUEHRENDER BEGRIFF. Der kapazitaetsbasierte Redispatch ist in den
-% Kapiteln 1 bis 4 nicht eingefuehrt, weil der vergleichende Unterabschnitt
-% am 22.09.2026 geparkt wurde. Er ist hier in einem Satz zu definieren.
-% BELEG NOCH ZU PRUEFEN, in Betracht kommt consentec_ausarbeitung_2024.
-\begin{itemize}
-    \item Übergang, eine bestehende Beschaffungsform kommt der kurativen Vorhaltung nahe
-    \item Der kapazitätsbasierte Redispatch beschafft Leistung, die für einen späteren Eingriff bereitgehalten wird, und vergütet diese Bereithaltung
-    \item Er beschafft damit im Kern dieselbe Größe wie die kurative Vorhaltung
-    \item Der Unterschied liegt im Auslöser, denn dort löst die Vorschaurechnung des \ac{ÜNB} aus und hier der Eintritt des Fehlerfalls
-    \item Der zweite Unterschied liegt in der Reaktionszeit, die dort im Bereich von Stunden und hier in der Klasse von etwa zwei Minuten liegt
-    \item Für die Einführung folgt daraus, dass der kurative Marktmechanismus an eine bestehende Beschaffungsform anschließen kann statt eine neue zu begründen
-\end{itemize}
-
-% ---------------------------------------------------------------
-\section{Bewertung anhand des Anforderungskatalogs}
+\section{Anforderungen und ihre Umsetzung im Produkt}
 \label{sec:requirements_assessment}
-% Ziel 2 Seiten, vier Absaetze. Material A1 bis A8 aus 3.1.1, dazu C1 und D5.
-% Fragen des Abschnitts: Welche der acht Anforderungen erfuellt der Entwurf,
-% welche kann das Ergebnis beantworten, und welche bleibt offen?
+% Ziel rund 2,5 Seiten, vier Absaetze.
+% Fragen: Welche der acht Anforderungen loest der Entwurf ein? Welche
+% beantwortet erst das Ergebnis? Welche bleibt offen? Was tritt hinzu,
+% das der Katalog nicht fuehrt?
 % TRAGENDER BEFUND: A7 Vertraeglichkeit.
 
-\noindent\textbf{Absatz 1, vier Anforderungen betreffen den Zuschnitt und sind im Entwurf umgesetzt.}
+\noindent\textbf{Absatz 1, vier Anforderungen entscheidet der Zuschnitt des Produkts.}
 \begin{itemize}
-    \item Übergang, Abschnitt~\ref{sec:requirements_catalogue} leitet acht Anforderungen ab, die hier gegen das Ergebnis zu halten sind
-    \item Die kurative Reservierung ist nach der Reaktionszeit differenziert, und der Basisfall setzt die Klasse von etwa zwei Minuten, womit A1 erfüllt ist
-    \item Die Vergütung setzt an der vorgehaltenen Leistung und an der Bindungsdauer an, und ein Abruf wird gesondert vergütet, womit A4 erfüllt ist
-    \item Die Präqualifikation prüft technische Eigenschaften und nicht die Art der Anlage, sodass der Zugang nach A5 technologieoffen bleibt
-    \item Die Beschaffung ist netzknotenscharf entworfen, das Optimierungsmodell bildet das Netz aber nicht ab, sodass A3 im Entwurf erfüllt und im Ergebnis nicht geprüft ist
-    \item Über diese vier Anforderungen entscheidet damit der Produktzuschnitt und nicht der ermittelte Preis
+    \item Übergang, in Abschnitt~\ref{sec:requirements_catalogue} werden acht Anforderungen abgeleitet, an denen die kurative Reservierung zu messen ist
+    \item Die Reaktionszeitklassen differenzieren das Produkt nach dem betroffenen Betriebsmittel, womit A1 eingelöst ist
+    \item Die Vergütung setzt an der vorgehaltenen Leistung und an der Bindungsdauer an, und ein Abruf wird gesondert vergütet, womit A4 eingelöst ist
+    \item Die Präqualifikation prüft technische Eigenschaften und nicht die Art der Anlage, womit A5 dem Zugang nach eingelöst ist
+    \item Die Beschaffung ist netzknotenscharf entworfen, womit A3 im Produkt eingelöst und im Ergebnis nicht geprüft ist
+    \item Über diese vier Anforderungen entscheidet damit der Zuschnitt des Produkts und nicht der ermittelte Preis
 \end{itemize}
 
-\noindent\textbf{Absatz 2, die Teilnahme nach A6 lohnt sich, und zwar messbar.}
+\noindent\textbf{Absatz 2, die Teilnahme nach A6 lohnt sich.}
 \begin{itemize}
     \item Übergang, ob der kurative Marktmechanismus Anbieter findet, entscheidet A6
-    \item Die Zahlung bei vollständiger Bindung beträgt 420,0\,\TsdEurMWa{} gegen einen Referenzerlös von 340,6\,\TsdEurMWa{}
-    \item Der Gesamterlös der Bezugsanlage liegt damit um 23,3 Prozent über dem Referenzerlös, obwohl die übrige Vermarktung vollständig entfällt
-    % EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu pruefen. Die Summe der
+    \item Unter den Preisen der vollständigen Bindung steht der Betreiber besser als ohne die Reservierung
+    \item Die Teilnahme lohnt sich damit, sofern der \ac{ÜNB} den geforderten Preis zahlt
+    % EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen: die Summe der
     % stuendlichen Indifferenzpreise uebersteigt die entgangene Vermarktung,
     % weil jede Stunde gegen ihre eigene beste Verwendung bepreist wird,
     % waehrend die Verwendungen um dieselbe Leistung konkurrieren.
-    \item Die Summe der stündlichen Indifferenzpreise übersteigt die entgangene Vermarktung, weil jede Stunde gegen ihre eigene beste Verwendung bepreist wird
-    \item Ein Betreiber, der seine Preise richtig setzt, steigert seinen Erlös damit allein durch eine andere Verteilung auf die Märkte
-    \item A6 ist erfüllt, und der Befund gilt für die Bezugsanlage und nicht für jede Anlage, denn der Preis folgt ihren Erlösmöglichkeiten
+    \item Der Grund liegt darin, dass jede Stunde gegen ihre eigene beste Verwendung bepreist wird, während die Verwendungen um dieselbe Leistung konkurrieren
+    \item Der Befund gilt für die Bezugsanlage, denn der Preis folgt ihren Erlösmöglichkeiten
+    \item Für andere Technologien und andere Netzknoten ist die Teilnahme gesondert zu prüfen
 \end{itemize}
 
 \noindent\textbf{Absatz 3, die Verträglichkeit nach A7 ist der kritische Punkt.}
 \begin{itemize}
     \item Übergang, die schärfste der acht Anforderungen ist A7
     \item A7 verlangt, dass der kurative Marktmechanismus neben den bestehenden Märkten besteht, ohne einen von ihnen zu verdrängen
-    \item Unter den Preisen der zweiten Iteration verdrängt die kurative Reservierung die gesamte übrige Vermarktung der Bezugsanlage
-    \item Am stärksten trifft das die \ac{aFRR}-Leistung, auf die 65,6 Prozent des Bruttoerlöses entfallen
+    \item Unter vollständiger Bindung verdrängt die kurative Reservierung die gesamte übrige Vermarktung der Bezugsanlage
+    \item Am stärksten trifft das die Vorhaltung von \ac{aFRR}-Leistung, auf die der größte Teil des Erlöses entfällt
     \item Würde eine große Zahl geeigneter Anlagen kurativ gebunden, verlöre der Markt für \ac{aFRR}-Leistung seine Anbieter
-    \item A7 ist damit nicht über den Produktzuschnitt zu erfüllen, sondern allein über eine Begrenzung der beschafften Menge
+    \item A7 ist damit nicht über den Zuschnitt des Produkts zu erfüllen, sondern allein über eine Begrenzung der beschafften Menge
 \end{itemize}
 
-\noindent\textbf{Absatz 4, drei Anforderungen bleiben offen, und eine Konkurrenz kommt hinzu.}
+\noindent\textbf{Absatz 4, was offen bleibt und was der Katalog nicht führt.}
 \begin{itemize}
-    \item Übergang, drei Anforderungen lassen sich aus dem Ergebnis nicht beantworten
-    \item A2 Verbindlichkeit verlangt eine Sanktion, die das Optimierungsmodell nicht abbildet, sodass ihre Höhe offen bleibt
-    \item A8 Umsetzbarkeit betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen
-    \item Hinzu tritt eine Konkurrenz, die der Katalog nicht führt, denn die Präqualifikation der \ac{FCR} reserviert bereits ein Ladezustandsband \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
-    \item A5 sichert zudem den Zugang und nicht den Wettbewerb, denn an einem Knoten mit wenigen wirksamen Anlagen liegt das Gebot über dem ermittelten kurativen Reservierungspreis
-    \item Für den kurativen Marktmechanismus folgt daraus, dass die Zahl der Anbieter je Netzknoten über die Lage des Preises entscheidet
+    \item Übergang, zwei Anforderungen lassen sich aus dem Entwurf nicht beantworten
+    \item A2 verlangt eine Sanktion, die das Produkt benennt, deren Höhe es aber nicht bemisst
+    \item A8 betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen
+    \item Hinzu tritt eine Konkurrenz, die der Katalog nicht führt, denn die Präqualifikation der Regelleistung reserviert bereits ein Ladezustandsband \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}
+    \item A5 sichert zudem den Zugang und nicht den Wettbewerb, denn an einem Netzknoten mit wenigen wirksamen Anlagen liegt das Gebot über dem ermittelten Preis
+    \item Die Zahl der Anbieter je Netzknoten entscheidet damit über die Lage des Preises
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Folgen für die Betriebsführung und den Produktzuschnitt}
-\label{sec:operational_consequences}
-% Ziel 2 Seiten, vier Absaetze. Hier loesen sich G1 bis G4 auf, dazu D3, D4
-% und die Vormerkungen aus 4.2 und 4.6.2.
-% Fragen des Abschnitts: Was bedeutet das Ergebnis fuer den Betreiber, was
-% fuer den UENB, und welcher Produktzuschnitt folgt daraus?
-
-\noindent\textbf{Absatz 1, was der Betreiber aus dem Ergebnis macht.}
-\begin{itemize}
-    \item Übergang, der ermittelte Preis ist zuerst eine Anweisung an den Betreiber
-    \item Der Betreiber muss je Stunde und Richtung ein Gebot bilden, das die Opportunität derselben Stunde trifft
-    \item Den Leistungspreis der \ac{aFRR} kennt er dabei, denn die Ausschreibung schließt am Vortag um 9 Uhr \cite{regelleistung_ausschreibungsdaten_2026}
-    \item Die Handelsspannen des folgenden Tages kennt er dagegen nicht, und gerade sie tragen die teuren Stunden
-    \item Wer zu niedrig bietet, bindet seine Leistung unter Wert, und wer zu hoch bietet, erhält keinen Zuschlag
-    \item Die kurative Reservierung gibt dem Betreiber damit eine Möglichkeit, seinen Erlös allein durch eine klügere Verteilung auf die Märkte zu steigern
-\end{itemize}
-
-\noindent\textbf{Absatz 2, die Granularität der Zeitscheibe bestimmt die Zahlung des \ac{ÜNB}.}
-\begin{itemize}
-    \item Übergang, für den \ac{ÜNB} entscheidet der Zuschnitt des Produkts über die Zahlung
-    \item Die Preise der ersten Iteration geben allen Stunden eines Tages denselben Wert
-    \item Sie binden damit 85,9 Prozent der Stunden entladend und 89,6 Prozent ladend und lassen gerade die teuren Stunden frei
-    \item Der \ac{ÜNB} zahlt dabei 97,6 Prozent der Zahlung unter vollständiger Bindung
-    \item Ein Produkt mit einer Zeitscheibe von einem Tag ist damit teuer und bindet das Falsche
-    % Handlungsempfehlung, folgt aus 4.2.
-    \item Die kurative Reservierung ist deshalb je Stunde auszuschreiben und nicht je Tag
-\end{itemize}
-
-\noindent\textbf{Absatz 3, die Abrufdauer ist die Stellschraube des \ac{ÜNB}.}
-\begin{itemize}
-    \item Übergang, über die Abrufdauer entscheidet allein der \ac{ÜNB}, denn sie folgt aus der Zeit, über die eine kurative Maßnahme wirken muss
-    \item Die Abrufdauer setzt die Breite des reservierten Ladezustandsbandes
-    \item Von einer Stunde auf eine Viertelstunde sinkt der Median um 4,0 Prozent entladend und um 12,7 Prozent ladend
-    \item Die halbe Stunde liegt dabei fast auf dem Preis der Viertelstunde, nämlich bei 11,91 gegen 11,72\,\EurMWh{} entladend
-    \item Eine halbe Stunde Abrufdauer verschafft dem \ac{ÜNB} die doppelte Zeit, die kurative Maßnahme durch eine andere abzulösen
-    % Handlungsempfehlung, folgt aus 4.6.2.
-    \item Für den Zuschnitt folgt daraus, die Abrufdauer auf eine halbe Stunde zu setzen
-\end{itemize}
-
-\noindent\textbf{Absatz 4, die Vergütung der Vorhaltung verschiebt das Anreizproblem.}
-\begin{itemize}
-    \item Übergang, mit dem Gegenstand der Vergütung verschieben sich die Anreize
-    \item Hängt die Zahlung an der bereitgehaltenen Leistung, so entfällt der Anreiz, das Volumen des Eingriffs zu vergrößern
-    \item Das Anreizproblem verschwindet damit nicht, sondern wandert
-    \item An seine Stelle tritt der Anreiz, Leistung anzubieten, die nicht wirklich frei ist
-    \item Aus der Frage nach der Menge des Eingriffs wird damit eine Frage des Nachweises
-    % Handlungsempfehlung G2, folgt aus D4.
-    \item Ein Verfahren zum Nachweis der Verfügbarkeit ist deshalb konstitutiver Bestandteil des kurativen Marktmechanismus und keine Frage der Ausführung
-\end{itemize}
-
-% ---------------------------------------------------------------
-\section{Belastbarkeit und Grenzen}
-\label{sec:robustness}
-% Ziel 2,5 Seiten, fuenf Absaetze. Material 4.6, dazu F1 bis F4, F10, F11,
-% E1 und E2 des alten Geruests.
-% Fragen des Abschnitts: Welche Annahme traegt das Ergebnis? Wie wirkt die
-% vollstaendige Preiskenntnis? Was laesst das Suchverfahren offen? Wie weit
-% traegt eine Einzelanlagenbetrachtung? Was sagt die Verifikation?
+\section{Modellierung und ihre Annahmen}
+\label{sec:model_discussion}
+% Ziel rund 3 Seiten, fuenf Absaetze.
+% Fragen: Welche Annahme traegt das Ergebnis? Wie wirkt die vollstaendige
+% Preiskenntnis? Was misst die Sensitivitaet zur Handelsspanne nicht?
+% Was laesst das Suchverfahren offen? Wie weit traegt die Perspektive und
+% was belegt die Validierung?
 
 \noindent\textbf{Absatz 1, die Modellierung der \ac{aFRR} trägt das Ergebnis.}
 \begin{itemize}
-    \item Übergang, die vier Sensitivitäten beantworten, woran das Ergebnis hängt
-    \item Ohne die \ac{aFRR} fällt der Median auf 3,47 und 4,25\,\EurMWh{} und damit auf gut ein Viertel
-    \item Unter freier Lieferung der \ac{aFRR}-Arbeit steigt er um 54 Prozent entladend und um 110 Prozent ladend
-    \item Die Abrufdauer und die Handelsspanne am \ac{IDC} wirken demgegenüber schwächer
-    \item Die anteilige Lieferung des Basisfalls ist die belastbare Annahme, denn eine Anlage von 100\,\si{MW} zieht den deutschlandweiten Abruf nicht auf sich
-    \item Jede Aussage dieser Arbeit steht und fällt damit mit der Modellierung der \ac{aFRR}
+    \item Übergang, der kurative Reservierungspreis folgt aus dem Optimierungsmodell, sodass dessen Annahmen zu prüfen sind
+    \item Unter den geprüften Annahmen trägt die Modellierung der \ac{aFRR} das Ergebnis am stärksten
+    \item Der Abrechnungspreis der Kapazitätsauktion bestimmt dabei die teuren Stunden, der Liefermodus die typische Stunde
+    \item Die anteilige Lieferung des Basisfalls ist die belastbare Annahme, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich
+    \item Ein freier Liefermodus ließe das Optimierungsmodell allein die ertragreichsten Abrufstunden wählen, was ein Betreiber ohne Kenntnis des Abrufs nicht kann
+    \item Sicher entscheiden ließe sich die Frage allein an den Gebotslisten der Auktionen, die anonymisiert sind
 \end{itemize}
 
 \noindent\textbf{Absatz 2, die vollständige Preiskenntnis verzerrt in beide Richtungen.}
 \begin{itemize}
     \item Übergang, die stärkste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Preise
     \item Sie überschätzt die Opportunität, weil ein Betreiber die Preise des folgenden Tages nicht kennt
-    \item Weber räumt dieselbe Verzerrung für sein eigenes Verfahren ein \cite{weber_gutachten_2015}
-    \item Der Unterschied zwischen Erlöspotenzial und tatsächlich erzieltem Erlös ist unabhängig davon belegt \cite{mahgoub_wie_2025}
+    \item Weber räumt dieselbe Verzerrung für sein eigenes Verfahren ein, und der Unterschied zwischen Erlöspotenzial und erzieltem Erlös ist unabhängig davon belegt \cite{weber_gutachten_2015, mahgoub_wie_2025}
     \item Zugleich unterschlägt die vollständige Preiskenntnis den Optionswert der Bindung, denn bei bekannter Preisreihe ist er null
-    \item Beide Verzerrungen laufen gegeneinander, sodass der ermittelte Preis als opportunitätskostenbasierter Wert zu lesen ist und nicht als vollständige Bewertung der Bindung
+    \item Die Annahme ist gleichwohl bewusst gewählt, weil eine Preisprognose einen Fehler hinzufügte, der sich von der Wirkung der Reservierung nicht trennen ließe
+    \item Beide Verzerrungen laufen gegeneinander, sodass der ermittelte Preis als opportunitätskostenbasierter Wert zu lesen ist
 \end{itemize}
 
-\noindent\textbf{Absatz 3, das Suchverfahren liefert ein koordinatenweises Minimum.}
-% NICHT ALS FEHLER FORMULIEREN, sondern als Eigenschaft des Verfahrens.
-\begin{itemize}
-    \item Übergang, auch das Verfahren der Preissuche setzt dem Ergebnis eine Grenze
-    \item Die Preise der zweiten Iteration sind ein koordinatenweises und kein globales Minimum
-    \item Keine einzelne Stunde lässt sich um die Toleranz von 0,05\,\EurMWh{} senken, ohne dass die vollständige Bindung bricht
-    \item Die Lage des Minimums hängt gleichwohl an der Reihenfolge des Abstiegs
-    \item In umgekehrter Reihenfolge liegen die Preise am 11.02.2025 um 5,5 Prozent und am 26.08.2025 um 17,7 Prozent darunter, wobei beide Fassungen die Zusage tragen
-    \item Der ausgewiesene Wert ist damit die vorsichtigere Seite einer gemessenen Spanne
-\end{itemize}
-
-\noindent\textbf{Absatz 4, eine einzelne Anlage trägt keine Aussage über das System.}
-\begin{itemize}
-    \item Übergang, die letzte Grenze ist die Perspektive der Untersuchung
-    \item Diese Arbeit rechnet eine einzelne Anlage und bildet das Netz nicht ab
-    \item Eine Hochrechnung auf die Systemebene setzte voraus, dass die Wirksamkeit eines Akteurs eine feste Eigenschaft seines Standorts ist
-    \item Die Wirksamkeit ist keine feste Eigenschaft, denn der Redispatch aus Photovoltaik stieg im Jahr 2025 um 94 Prozent, während der Anteil der Offshore-Windenergie um 27 Prozent fiel \cite{bundesnetzagentur_smard_engpassmanagement_2026}
-    \item Zugleich bildet das Optimierungsmodell weder eine Bietfunktion noch den Wettbewerb mehrerer Anbieter ab
-    \item Die Aussagen über die Lage des Gebots im Wettbewerb bleiben deshalb qualitativ
-\end{itemize}
-
-\noindent\textbf{Absatz 5, was die Verifikation trägt und was nicht.}
-\begin{itemize}
-    \item Übergang, die Güte des Optimierungsmodells ist an einem externen Erlösindex geprüft
-    \item Der Vergleich stellt ein Modell mit vollständiger Preiskenntnis einem Verfahren mit rollierender Vorausschau gegenüber
-    \item Er stellt zudem einen engeren Marktumfang einem weiteren gegenüber
-    \item Beide Unterschiede wirken in dieselbe Richtung und erklären einen Teil der Abweichung
-    \item Die Verifikation belegt damit die Größenordnung der Erlöse und nicht die Höhe einer einzelnen Stunde
-\end{itemize}
-
-\noindent\textbf{Absatz 6, was die Sensitivität zur Handelsspanne nicht misst.}
+\noindent\textbf{Absatz 3, was die Sensitivität zur Handelsspanne nicht misst.}
 % VORGEMERKT am 24.09.2026, Vorgabe des Verfassers: zur Wahrheit gehoert,
-% dass die Sensitivitaet in 4.6.2 nicht misst, was sie messen soll. Der
-% Faktor streckt um das Tagesmittel, der Vorteil des mehrfachen Handels
-% entsteht dagegen innerhalb eines Lieferzeitpunkts. Im Englischen heisst
-% dieser Handel asset-backed trading; die Arbeit schreibt mehrfacher
-% Handel derselben Viertelstunde, wie in Abschnitt 3.2 eingefuehrt.
+% dass die Sensitivitaet in 4.6.2 nicht misst, was sie messen soll.
 \begin{itemize}
     \item Übergang, auch eine Sensitivität kann die Frage verfehlen, die sie beantworten soll
     \item Der Faktor auf die Handelsspanne streckt jede Abweichung des Intradaypreises von seinem Tagesmittel
-    \item Er hebt damit gerade die Stunden, die ohnehin weit vom Tagesmittel liegen, also die schon teuren und die schon günstigen
-    \item Der Vorteil des mehrfachen Handels entsteht dagegen in Viertelstunden mit großer Preisbewegung innerhalb desselben Lieferzeitpunkts
+    \item Er hebt damit gerade die Stunden, die ohnehin weit vom Tagesmittel liegen
+    \item Der Vorteil des mehrfachen Handels entsteht dagegen innerhalb desselben Lieferzeitpunkts
     \item Beide Mengen von Stunden fallen nicht zusammen, sodass die Sensitivität allein die Breite der Handelsspanne misst
     \item Für eine Aussage über den Vorteil des mehrfachen Handels wären die Orderbücher des \ac{IDC} nötig
 \end{itemize}
 
-% ---------------------------------------------------------------
-\section{Entwicklungen im Engpassmanagement und am Markt}
-\label{sec:market_outlook}
-% Ziel 1,5 Seiten, drei Absaetze. Material B5, B6, 4.6.4 und G3.
-% Fragen des Abschnitts: Welcher Regimebruch ist beobachtet? Wie reagiert das
-% Ergebnis auf durchweg niedrigere Preise? In welche Richtung laeuft das
-% Verhaeltnis von Bestand und Bedarf?
-
-\noindent\textbf{Absatz 1, der beobachtete Regimebruch vom 01.10.2025.}
+\noindent\textbf{Absatz 4, was das Suchverfahren offenlässt.}
+% NICHT ALS FEHLER FORMULIEREN, sondern als Eigenschaft des Verfahrens.
 \begin{itemize}
-    \item Übergang, die Märkte, gegen die der Preis entsteht, verändern sich
-    \item Seit dem 01.10.2025 wird die Day-Ahead-Auktion viertelstundenscharf abgewickelt \cite{ffe_saegezahn_2026}
-    \item Damit entfällt die systematische Differenz zwischen Stunden- und Viertelstundenprodukten
-    \item Der modifizierte Weber-Ansatz misst den inneren Wert über gerade diese Differenz und verliert damit seine Bemessungsgrundlage
-    \item Betroffen ist die Bewertungslogik und nicht allein ihre Parametrisierung
-    \item Eine Vergütung, deren Bemessungsgrundlage sich unter ihr verändert, ist damit weniger tragfähig als eine Vergütung der Vorhaltung
+    \item Übergang, auch das Verfahren der Preissuche setzt dem Ergebnis eine Grenze
+    \item Die Preise der zweiten Iteration sind ein koordinatenweises und kein globales Minimum
+    \item Keine einzelne Stunde lässt sich senken, ohne dass die vollständige Bindung bricht
+    \item Die Lage des Minimums hängt gleichwohl an der Reihenfolge des Abstiegs
+    \item Der ausgewiesene Wert ist damit die vorsichtigere Seite einer gemessenen Spanne
 \end{itemize}
 
-\noindent\textbf{Absatz 2, der gerechnete Fall durchweg niedrigerer Preise.}
+\noindent\textbf{Absatz 5, die Grenzen der Perspektive und der Validierung.}
 \begin{itemize}
-    \item Übergang, wie der kurative Reservierungspreis auf niedrigere Marktpreise reagiert, zeigt die Zukunftsvariante
-    \item Sie senkt die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} auf 80 Prozent
-    \item Der Markterlös sinkt dabei um 17,0 Prozent und die Zahlung bei vollständiger Verdrängung um 16,0 Prozent
-    \item Der Aufschlag gegenüber dem Markterlös bleibt mit 24,8 gegen 23,3 Prozent nahezu gleich
-    \item Die vollständige Verdrängung kostet mit 353,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}
-    \item Niedrigere Marktpreise machen die kurative Bindung damit nicht günstiger als der heutige Stand
-\end{itemize}
-
-\noindent\textbf{Absatz 3, der Bestand wächst und der Bedarf wächst nicht mit.}
-\begin{itemize}
-    \item Übergang, die Richtung dieser Entwicklung folgt aus dem Verhältnis von Bestand und Bedarf
-    \item Der Bedarf an Regelleistung folgt der Dimensionierung des Systems und wächst nicht mit dem Bestand an \ac{BESS}
-    \item Für die \ac{FCR} ist dieser Punkt erreicht, denn im Jahr 2024 waren 810\,\si{MW} an \ac{BESS} präqualifiziert gegen einen deutschen Bedarf von 564\,\si{MW} im Jahresmittel \cite{celi_cortes_m5use_2024, bundesnetzagentur_monitoringbericht_2026}
-    \item Die \ac{aFRR}-Leistung trägt heute 65,6 Prozent des Bruttoerlöses der Bezugsanlage und ist der nächste Markt, der diesen Punkt erreicht
-    \item Sinkt der Leistungspreis der \ac{aFRR}, so sinkt der kurative Reservierungspreis mit ihm
-    \item Die kurative Vorhaltung wird damit über die Zeit günstiger zu beschaffen, ohne dass sich ihr Verhältnis zur Marktopportunität ändert
+    \item Übergang, die letzte Grenze ist die Perspektive der Untersuchung
+    \item Das Optimierungsmodell rechnet eine einzelne Anlage und bildet weder das Netz noch die Zusammenfassung mehrerer Anlagen noch die Rückwirkung der Speicher auf die Preise ab
+    \item Es löst jeden Liefertag für sich, sodass kein Ladezustand in den Folgetag übergeht
+    \item Die Wahrscheinlichkeit eines Abrufs und die Sanktion bleiben außer Betracht, sodass der ermittelte Preis allein den opportunitätskostenbasierten Teil eines Gebots bildet
+    \item Die Validierung stellt ein Modell mit vollständiger Preiskenntnis einem Verfahren mit rollierender Vorausschau gegenüber und einen engeren Marktumfang einem weiteren
+    \item Sie schließt damit eine Unterschätzung der Erlösmöglichkeiten aus und belegt nicht die Höhe einer einzelnen Stunde
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Zukunft der \acs{BESS} im Engpassmanagement}
-\label{sec:bess_outlook}
-% Ziel 1,5 Seiten, drei Absaetze. Der Abschnitt, den der Verfasser am
-% 23.09.2026 ausdruecklich verlangt hat.
-% Fragen des Abschnitts: Warum ist ein BESS fuer die kurative Vorhaltung
-% geeignet? Wo liegt seine Grenze? Wie veraendert sich das mit dem Bestand?
+\section{Wirtschaftlichkeit und Wirksamkeit}
+\label{sec:economics_effectiveness}
+% Ziel rund 3 Seiten, vier Absaetze.
+% Fragen: Was sagt der Preis wirtschaftlich aus? Gegen welchen Markt
+% entsteht er? Wie verhaelt er sich zum Engpassmanagement? Welcher
+% Zuschnitt und welcher Verguetungsrahmen folgen daraus?
+
+\noindent\textbf{Absatz 1, was der ermittelte Preis wirtschaftlich aussagt.}
+\begin{itemize}
+    \item Übergang, der ermittelte Preis ist zuerst eine wirtschaftliche Größe
+    \item Er misst die entgangene Marktopportunität derselben Stunde und folgt damit dem Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation}
+    \item Die Wahrscheinlichkeit eines Abrufs, die Sanktion und der Aufwand des Anbietens fehlen ihm
+    \item Ein Betreiber böte deshalb über dem ermittelten Preis, und zwar um einen Aufschlag, den diese Arbeit nicht beziffert
+    \item Die Hälfte der Stunden ist günstig zu reservieren, während einzelne Stunden den Durchschnitt tragen
+    \item Gerade diese teuren Stunden lassen sich am schlechtesten vorhersagen, denn sie hängen an einzelnen Preisspannen des Energiemarkts
+\end{itemize}
+
+\noindent\textbf{Absatz 2, der Preis entsteht gegen die Regelleistung.}
+\begin{itemize}
+    \item Übergang, gegen welche Vermarktung der Preis entsteht, entscheidet über seine Höhe
+    \item Der Leistungspreis der \ac{aFRR} entfällt mit der reservierten Stunde vollständig, weil er an eine Zeitscheibe von vier Stunden gebunden ist
+    \item Die Arbitrage an den Energiemärkten lässt sich dagegen zwischen den Stunden eines Tages verschieben, solange der Tag eine Staffel gleichwertiger Spannen trägt
+    \item Der Energiemarkt setzt den Preis deshalb nur an den wenigen Tagen, an denen diese Staffel einbricht
+    \item Derselbe Mechanismus erklärt die wechselnde Verdrängungsreihenfolge, die offenen Stunden der ersten Iteration und die Maxima der Verteilung
+    \item Wer den kurativen Reservierungspreis senken will, muss deshalb an der Regelleistung ansetzen
+\end{itemize}
+
+\noindent\textbf{Absatz 3, die Wirksamkeit gegenüber dem Engpassmanagement.}
+\begin{itemize}
+    \item Übergang, ob sich die Vorhaltung lohnt, bemisst sich am bestehenden Engpassmanagement
+    \item Das Tagesmittel des kurativen Reservierungspreises bleibt fast das ganze Jahr unter dem Arbeitspreis des präventiven Redispatch \cite{bundesnetzagentur_smard_engpassmanagement_2026}
+    \item Beide Größen tragen dieselbe Dimension und meinen Verschiedenes, denn die eine vergütet Vorhaltung und die andere bewegte Arbeit
+    \item Im Winter trifft der größte Engpassmanagementbedarf auf die günstigste Reservierung, was der stärkste Befund für die Beschaffung ist
+    \item Die Mittagsstunden bilden die Ausnahme, denn dort fällt der größte Bedarf an Reduzierung der Einspeisung mit der teuersten Ladereservierung zusammen
+    \item Ob eine kurative Maßnahme eine Redispatchmaßnahme ersetzt, hängt an der Zahl der vorgehaltenen Stunden je Abruf, die diese Arbeit nicht bestimmt
+\end{itemize}
+
+\noindent\textbf{Absatz 4, der Zuschnitt des Produkts und der Vergütungsrahmen.}
+\begin{itemize}
+    \item Übergang, über die Kosten des \ac{ÜNB} entscheidet neben dem Preis der Zuschnitt des Produkts
+    \item Ein Produkt mit einer Zeitscheibe von einem Tag bindet die Stunden unvollständig und kostet dennoch beinahe den vollen Preis
+    \item Die kurative Reservierung ist deshalb je Stunde auszuschreiben
+    \item Eine Abrufdauer von einer halben Stunde ist fast zum Preis einer Viertelstunde zu haben und verdoppelt die Zeit für eine Ablösung der Maßnahme
+    \item Die Vergütungsstruktur der geltenden Festlegung erfasst den ermittelten Preis nicht, denn sie wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren \cite{bundesnetzagentur_festlegung_2024}
+    \item Eine Vergütung der kurativen Vorhaltung verlangt deshalb eine eigene Struktur, zumal für die kurative Reservierung bislang kein Vergütungsrahmen besteht
+\end{itemize}
+
+% ---------------------------------------------------------------
+% TITEL UMGESTELLT am 24.09.2026: ein acs am Anfang einer Ueberschrift
+% zerlegt den Eintrag im Inhaltsverzeichnis. Der Titel beginnt deshalb
+% mit einem Wort. Zurueckgenommene Fassung: BESS im Engpassmanagement
+% und am Markt
+\section{Die Rolle der \acs{BESS} im Engpassmanagement und am Markt}
+\label{sec:bess_markets}
+% Ziel rund 2,5 Seiten, vier Absaetze. Der Abschnitt, den der Verfasser
+% am 23.09.2026 ausdruecklich verlangt hat, um den Zusammenhang von
+% Batteriespeichern und den kurzfristigen Befunden erweitert.
 
 \noindent\textbf{Absatz 1, warum ein \ac{BESS} für die kurative Vorhaltung geeignet ist.}
 \begin{itemize}
     \item Übergang, unter den Technologien ist das \ac{BESS} für die kurative Vorhaltung besonders geeignet
     \item Es erreicht die Reaktionszeitklasse von etwa zwei Minuten ohne Anfahrvorgang \cite{innosys_2030_gesamtverbund_innovationen_2021}
     \item Es stellt beide Richtungen aus derselben Anlage, sodass eine bilanziell ausgeglichene Vorhaltung an einem Netzknoten möglich ist
-    \item Ein Energieinhalt je Leistung von einer bis zwei Stunden genügt für eine Abrufdauer von einer halben Stunde
-    \item Der Bestand wächst, und die für die \ac{FCR} präqualifizierte Leistung von 810\,\si{MW} im Jahr 2024 zeigt, wie schnell \ac{BESS} einen Regelleistungsmarkt füllen
+    \item Sein Energieinhalt je Leistung genügt für die im Produkt vorgesehene Abrufdauer
+    \item Seine Präqualifikation kann auf der Regelleistung aufsetzen, sodass der zusätzliche Aufwand gering bleibt
     \item Die kurative Vorhaltung trifft damit auf eine Technologie, deren Bestand ohnehin zunimmt
 \end{itemize}
 
-\noindent\textbf{Absatz 2, wo die Grenze der Eignung liegt.}
+\noindent\textbf{Absatz 2, der Preis eines \ac{BESS} hängt an den kurzfristigen Märkten.}
+\begin{itemize}
+    \item Übergang, der kurative Reservierungspreis eines \ac{BESS} folgt aus seinen kurzfristigen Erlösquellen
+    \item Die Vorhaltung von \ac{aFRR}-Leistung trägt den größten Teil seines Erlöses, der kontinuierliche Intraday-Handel den zweitgrößten
+    \item Den Leistungspreis der \ac{aFRR} kennt ein Betreiber bei der Gebotsabgabe, die Handelsspannen des folgenden Tages kennt er nicht
+    \item Gerade die Handelsspannen tragen die teuren Stunden, sodass ein kuratives Gebot unter Unsicherheit entsteht
+    \item Wer zu niedrig bietet, bindet seine Leistung unter Wert, und wer zu hoch bietet, erhält keinen Zuschlag
+    \item Die kurative Reservierung gibt dem Betreiber zugleich eine Möglichkeit, seinen Erlös allein durch eine klügere Verteilung auf die Märkte zu steigern
+\end{itemize}
+
+\noindent\textbf{Absatz 3, wo die Grenze der Eignung liegt.}
 \begin{itemize}
     \item Übergang, die Eignung hat drei Grenzen
     \item Die erste ist der Energieinhalt, denn eine längere Abrufdauer verlangt ein breiteres Ladezustandsband und verteuert die Vorhaltung
     \item Die zweite ist die Doppelbelegung dieses Bandes, das die Vorhaltung von Regelleistung bereits beansprucht
-    \item Die dritte ist die örtliche Wirksamkeit, die nicht an der Technologie hängt, sondern am Netzknoten
+    \item Die dritte ist die örtliche Wirksamkeit, die am Netzknoten hängt und nicht an der Technologie
     \item Ein \ac{BESS} am falschen Netzknoten ist für die Engpassbehebung wertlos, so schnell es auch reagiert
     \item Über den Nutzen entscheidet damit die Standortwahl ebenso wie die technische Eignung
 \end{itemize}
 
-\noindent\textbf{Absatz 3, wie sich der Einsatz mit dem Bestand verschiebt.}
-% Vorgabe des Verfassers vom 23.09.2026, HANDOFF Abschnitt 7.
+\noindent\textbf{Absatz 4, die künftige Rolle im Strommarkt und bei den Systemdienstleistungen.}
 \begin{itemize}
-    \item Übergang, mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingeplant wird
-    \item Ein \ac{BESS} wird eher zum Entladen als bilanzieller Ausgleich für erneuerbare Erzeugung eingeplant
-    \item Gekoppelt mit regelbarer Photovoltaik lohnen deshalb die Mittagsstunden am meisten
-    \item Saisonal liegt der größte Nutzen im Winter, in dem die Winderzeugung überwiegt und der Engpassmanagementbedarf am größten ist
-    \item Die Abendstunden sind dagegen teuer und treffen keinen erhöhten Bedarf
-    \item Für die Beschaffung folgt daraus, die kurative Vorhaltung dort zu beschaffen, wo ein hoher Bedarf auf günstige Stunden trifft
+    \item Übergang, mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingesetzt wird
+    \item Der Bedarf an Regelleistung folgt der Dimensionierung des Systems und wächst nicht mit dem Bestand an \ac{BESS}
+    \item Für die \ac{FCR} ist dieser Punkt erreicht, denn die präqualifizierte Batterieleistung übersteigt den deutschen Bedarf \cite{celi_cortes_m5use_2024, bundesnetzagentur_monitoringbericht_2026}
+    \item Die Vorhaltung von \ac{aFRR}-Leistung ist der nächste Markt, der diesen Punkt erreicht
+    \item Sinkt ihr Preis, so sinkt der kurative Reservierungspreis mit ihm, ohne dass sich sein Verhältnis zur Marktopportunität ändert
+    \item Die Beschlusskammer hat die Behandlung von \ac{BESS} einem späteren Hinweis vorbehalten, sodass die Regelungslücke dokumentiert ist \cite{bundesnetzagentur_festlegung_2024}
 \end{itemize}
 
 % ---------------------------------------------------------------
-\section{Kurative Systemführung im Allgemeinen}
-\label{sec:curative_general}
-% Ziel 1,5 Seiten, drei Absaetze. Der Abschluss, den der Verfasser am
-% 23.09.2026 verlangt hat: erst die Verallgemeinerung, daraus der
-% Forschungsbedarf und der Erkenntnisbedarf aus Projekten.
+\section{Umsetzung, systemweite Ausrollung und Forschungsbedarf}
+\label{sec:implementation_outlook}
+% Ziel rund 3 Seiten, vier Absaetze. Der Abschluss, den der Verfasser am
+% 23.09.2026 verlangt hat: Aufwand der Umsetzung, systemweite Ausrollung,
+% Abwaegung und daraus der Forschungsbedarf.
 
-\noindent\textbf{Absatz 1, was jenseits des Speichers gilt.}
+\noindent\textbf{Absatz 1, was der geltende Rahmen zulässt.}
 \begin{itemize}
-    \item Übergang, die Befunde hängen an der Bezugsanlage, der kurative Marktmechanismus hängt nicht an ihr
-    \item Der kurative Reservierungspreis ist für jede Technologie die entgangene Marktopportunität der gebundenen Stunde
-    \item Für ein Kraftwerk, das ohnehin am Netz ist, ist diese Opportunität eine andere als für einen Speicher
-    \item Der kurative Marktmechanismus bleibt damit technologieoffen, und die Höhe des Gebots unterscheidet die Technologien
-    \item Der Vergleich mehrerer Technologien an einem Netzknoten ist die eigentliche Aufgabe der Beschaffung
-    \item Diese Arbeit liefert dafür den Preis einer Technologie und nicht die Rangfolge
+    \item Übergang, vor der Umsetzung steht der geltende Rahmen
+    \item §\,13a Abs.\,2 \ac{EnWG} entschädigt den durchgeführten Eingriff und schreibt eine kostenbasierte Abrechnung vor \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}
+    \item Eine marktbasierte Beschaffung des Redispatch ist damit im geltenden Recht ausgeschlossen
+    \item Redispatch~2.0 ist ein Duldungs- und Entschädigungsregime, während die kurative Reservierung ein Gebot des Betreibers voraussetzt \cite{bundesnetzagentur_festlegung_2024}
+    \item Der entworfene kurative Marktmechanismus setzt deshalb eine Änderung des §\,13a \ac{EnWG} voraus
+    % NEU EINZUFUEHRENDER BEGRIFF, Beleg noch zu pruefen.
+    \item Der kapazitätsbasierte Redispatch beschafft im Kern dieselbe Größe und unterscheidet sich nur in Auslöser und Reaktionszeit, sodass ein Anschluss an eine bestehende Beschaffungsform möglich ist
 \end{itemize}
 
-\noindent\textbf{Absatz 2, welcher Forschungsbedarf offen bleibt.}
+\noindent\textbf{Absatz 2, der Aufwand der Umsetzung.}
+\begin{itemize}
+    \item Übergang, neben dem Rahmen steht der Aufwand beim \ac{ÜNB} und beim Betreiber
+    \item Der \ac{ÜNB} muss die bezuschlagten Gebote zu einem kurativen Maßnahmenset zusammenfassen und in Betriebsplanung, Scharfschaltung und Auslösung führen
+    \item Die Vergütung der Vorhaltung nimmt dem Betreiber den Anreiz, das Volumen eines Eingriffs zu vergrößern
+    \item An dessen Stelle tritt der Anreiz, Leistung anzubieten, die nicht wirklich frei ist, sodass aus einer Mengenfrage eine Nachweisfrage wird
+    \item Ein Verfahren zum Nachweis der Verfügbarkeit ist deshalb konstitutiver Bestandteil des Mechanismus und keine Frage der Ausführung
+    \item Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass sich der zusätzliche Aufwand auf die kurative Zusage beschränkt
+\end{itemize}
+
+\noindent\textbf{Absatz 3, die systemweite Ausrollung.}
+\begin{itemize}
+    \item Übergang, ob sich der Mechanismus auf das ganze System übertragen lässt, ist eine eigene Frage
+    \item Diese Arbeit rechnet eine einzelne Anlage und trägt deshalb keine systemweite Mengenaussage
+    \item Eine Hochrechnung setzte voraus, dass die Wirksamkeit eines Akteurs eine feste Eigenschaft seines Netzknotens ist
+    \item Die Wirksamkeit ist keine feste Eigenschaft, denn die vorherrschende Erzeugungssituation verschiebt sie über die Jahre \cite{bundesnetzagentur_smard_engpassmanagement_2026}
+    \item Die kurative Systemführung ergänzt das präventive Engpassmanagement und ersetzt es nicht
+    \item Ihr Nutzen liegt darin, dem \ac{ÜNB} neben dem präventiven Eingriff ein zweites Werkzeug zu geben
+\end{itemize}
+
+\noindent\textbf{Absatz 4, was zu untersuchen bleibt.}
 \begin{itemize}
     \item Übergang, aus den Grenzen dieser Arbeit folgt der weitere Forschungsbedarf
     \item Die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung sind zu bestimmen
     \item Eine Hochrechnung auf die Systemebene verlangt ein Modell, das das Netz und die Wirksamkeit je Netzknoten führt
     \item Das Bietverhalten und der Wettbewerb mehrerer Anbieter an einem Netzknoten sind abzubilden
-    \item Die Höhe einer Sanktion, die eine verspätete Leistungsänderung wirksam ahndet, ist zu bestimmen
-    \item Und der Vergleich der Technologien verlangt Opportunitätskosten auch für Kraftwerke und für Lasten
+    \item Aus Projekten im Echtbetrieb ist zu lernen, wie häufig und wie lange eine kurative Maßnahme abgerufen wird und wie sich die Verfügbarkeit im Betrieb nachweisen lässt \cite{innosys_2030_gesamtverbund_innovationen_2021, tennet_tso_gmbh_pilotbetrieb_2025}
+    \item Erst damit bekommt das Engpassmanagement neben dem präventiven Eingriff ein zweites Werkzeug, mit dem sich das Übertragungsnetz sicher betreiben lässt
 \end{itemize}
 
-\noindent\textbf{Absatz 3, welche Erkenntnisse aus Projekten zu gewinnen sind.}
-\begin{itemize}
-    \item Übergang, einen Teil dieser Fragen können allein Projekte im Echtbetrieb beantworten
-    \item InnoSys 2030 hat die kurative Systemführung erprobt und die Reaktionszeitklassen geliefert \cite{innosys_2030_gesamtverbund_innovationen_2021}
-    \item KuPilot erprobt die kurative Höherauslastung im realen Betrieb \cite{tennet_tso_gmbh_pilotbetrieb_2025}
-    \item Offen bleibt, wie häufig und wie lange eine kurative Maßnahme tatsächlich abgerufen wird
-    \item Erst daraus folgt, ob die gesonderte Vergütung des Abrufs neben der Vergütung der Vorhaltung ins Gewicht fällt
-    \item Ebenso offen ist, wie sich die Verfügbarkeit einer zugesagten Leistung im Betrieb nachweisen lässt, und beide Fragen entscheiden über die Umsetzbarkeit des kurativen Marktmechanismus
-\end{itemize}
+% ===============================================================
+% ARCHIV, nur zum Nachschlagen. Nicht wieder aktivieren.
+%
+% ERSTENS die am 24.09.2026 vormittags ausformulierte
+% Kapiteleinleitung der Gliederung mit acht Abschnitten. Sie ist
+% Fliesstext gewesen und bleibt deshalb nach CLAUDE.md Abschnitt 10
+% erhalten. Ersetzt worden ist sie am selben Tag nachmittags, weil der
+% Verfasser die Einleitung ohne Zahlen und auf den neuen Aufbau
+% bezogen verlangt hat.
+% ===============================================================
+%Die Bewertung der Ergebnisse setzt eine Bestandsaufnahme voraus.
+%In Kapitel~\ref{ch:results} wird für jede Stunde des Jahres 2025 je Richtung ein kurativer Reservierungspreis bestimmt.
+%Ein steigender vorgegebener Preis löst dabei nacheinander die Vermarktung an den übrigen Märkten ab.
+%Welcher Markt zuerst weicht, folgt der Preisstruktur des jeweiligen Tages.
+%Über das Jahr bindet die \ac{aFRR}-Leistung an jedem der fünf untersuchten Tage den größten Teil der Leistung.
+%Auf die \ac{aFRR} entfallen 76,7 Prozent des Bruttoerlöses, sodass die kurative Reservierung vor allem die Vorhaltung von Regelleistung verdrängt.
+%Die Höhe dieses Preises unterscheidet sich von Stunde zu Stunde.
+%Der Median beträgt 12,22\,\EurMWh{} in der Entlade- und 9,85\,\EurMWh{} in der Laderichtung.
+%Die Verteilung ist in beiden Richtungen rechtsschief, denn das arithmetische Mittel liegt beim Zwei- bis Zweieinhalbfachen des Medians.
+%Die Zahlung des \ac{ÜNB} bei vollständiger Bindung beträgt 420,0\,\TsdEurMWa{} gegen einen Referenzerlös von 340,6\,\TsdEurMWa{}.
+%Die Preise der ersten Iteration binden die Stunden unvollständig und kosten dabei bereits 97,6 Prozent der vollen Zahlung.
+%Für die Beschaffung zählt daneben, wann der kurative Reservierungspreis niedrig liegt.
+%Über den Tag schwankt der Median der Summe beider Richtungen um den Faktor 8,3 und über die Monate um 4,2.
+%Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band, während die Entladereservierung über den Vormittag und den Abend streut.
+%Im Winter kostet die Reservierung rund 40 Prozent weniger als im Sommer, und dort liegt zugleich der größte Engpassmanagementbedarf.
+%Das Tagesmittel bleibt an mindestens 362 von 365 Tagen unter dem Arbeitspreis des präventiven Redispatch von 101 Euro je bewegter Megawattstunde.
+%Woran dieses Ergebnis hängt, beantworten vier Sensitivitäten.
+%Die Annahmen über die \ac{aFRR} tragen es am stärksten, denn ohne die \ac{aFRR} fällt der Median auf 28 Prozent in der Entlade- und auf 43 Prozent in der Laderichtung.
+%Unter freier Lieferung der \ac{aFRR}-Arbeit steigt der Median um 54 und 110 Prozent, was für eine einzelne Anlage von 100\,\si{MW} nicht zu erwarten ist.
+%Eine verdoppelte Handelsspanne am \ac{IDC} hebt den Median um gut ein Drittel und die Maxima um das Doppelte.
+%Eine Viertelung der vorgehaltenen Energie je Abruf senkt den Median dagegen nur um 4,0 und 12,7 Prozent.
+%Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld.
+%Die vierte Sensitivität prüft statt des Optimierungsmodells eine Annahme über die künftige Marktlage.
+%Sinken die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} auf 80 Prozent, so fällt der Markterlös um 17,0 Prozent.
+%Die Zahlung bei vollständiger Verdrängung fällt um 16,0 Prozent.
+%Der kurative Reservierungspreis gibt damit weniger nach als der Markterlös, aus dem er folgt.
+%Das Niveau sinkt mit dem Markt, während das Verhältnis beider bleibt.
+%Diese Ergebnisse sind einzuordnen, zu bewerten und auf ihre Folgen zu prüfen.
+%Zu Anfang steht deshalb, was der ermittelte Preis aussagt und wie er sich in den geltenden Rahmen fügt.
+%Darauf folgt die Bewertung des kurativen Marktmechanismus am Anforderungskatalog aus Abschnitt~\ref{sec:requirements_catalogue}.
+%Anschließend werden die Folgen für die Betriebsführung und für den Zuschnitt des Produkts gezogen und die Belastbarkeit des Ergebnisses geprüft.
+%Zuletzt stehen die Entwicklungen an den Märkten, die Zukunft der \acs{BESS} im Engpassmanagement und die kurative Systemführung im Allgemeinen, aus der der weitere Forschungsbedarf folgt.
+%% ---------------------------------------------------------------
 
+% Die Stichpunkte der Gliederung mit acht Abschnitten stehen im Git
+% unter dem Commit e8c4012 und sind hier nicht wiederholt, weil sie
+% kein Fliesstext waren.
 % ===============================================================
 % ALTES STICHPUNKTGERUEST vom 18.08.2026, am 24.09.2026 durch die
 % Fassung oben ersetzt. Vollstaendig auskommentiert erhalten, weil es
