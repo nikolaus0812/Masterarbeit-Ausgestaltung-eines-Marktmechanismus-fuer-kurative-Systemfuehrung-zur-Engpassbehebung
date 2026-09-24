@@ -15160,6 +15160,35 @@ des Indifferenzprinzips steht in `sec:redispatch_compensation`. Vier
 Durchgaenge mit biber, **124 Seiten**, Kapitel 5 von Seite 65 bis 76. Es
 bleibt allein die Warnung zu `ch:conc`, weil Kapitel 6 auskommentiert ist.
 
+### 24.09.2026, Kapiteleinleitung als Bestandsaufnahme
+
+Der Verfasser hat am selben Tag zwei Dinge klargestellt.
+
+1. **Der Schlussabsatz von Abschnitt 4.6 bleibt stehen.** Die Frage aus dem
+   Eintrag zum Umbau ist damit entschieden, Kapitel 4 behaelt in jedem
+   Abschnitt seine drei bis fuenf Saetze Schlussfolgerungen.
+2. **Die Diskussion beginnt gleichwohl mit einer Bestandsaufnahme**, und
+   zwar aus den **gesamten** Ergebnissen und nicht allein aus Abschnitt 4.6.
+
+Die Kapiteleinleitung traegt deshalb jetzt sechs Absaetze als Stichpunkte,
+und die ersten drei folgen der Reihenfolge des Kapitels 4.
+
+| Absatz | Kernaussage | Quelle in Kapitel 4 |
+|---|---|---|
+| 1 | was die kurative Reservierung verdraengt | 4.1 und 4.2 |
+| 2 | wie hoch der Preis liegt und wie er streut | 4.2 und 4.3 |
+| 3 | wann die Vorhaltung guenstig zu beschaffen ist | 4.4 und 4.5 |
+| 4 | woran dieses Ergebnis haengt | 4.6.1 bis 4.6.3 |
+| 5 | wie es auf eine veraenderte Marktlage reagiert | 4.6.4 |
+| 6 | was dieses Kapitel damit tut | Wegweiser |
+
+**Offener Punkt, beim Ausformulieren zu entscheiden.** Die Absaetze 2 und 3
+der Bestandsaufnahme nennen dieselben Zahlen wie die Absaetze 2 und 3 des
+Abschnitts 5.1, naemlich Median, arithmetisches Mittel, Quartile und Maxima.
+**Die Bestandsaufnahme nennt sie, Abschnitt 5.1 ordnet sie ein**, sodass 5.1
+sie nicht noch einmal aufzaehlen darf. Der Vermerk steht als Kommentar ueber
+der Kapiteleinleitung.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
