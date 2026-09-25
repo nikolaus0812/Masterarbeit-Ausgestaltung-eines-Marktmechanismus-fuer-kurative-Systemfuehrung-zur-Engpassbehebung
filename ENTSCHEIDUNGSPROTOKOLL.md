@@ -15807,6 +15807,87 @@ acht Saetzen. 5.3 bis 5.5 stehen noch bei fuenf bis sieben Saetzen je Absatz.
 `python tools/pruefen.py --alle` ohne Befund, `tools/pruefe_stil.py` ohne
 Verstoss in Kapitel 5, 121 Seiten.
 
+### 25.09.2026 spaet, Abschnitt 5.2 verdichtet und 5.3 neu aufgebaut
+
+**Weiter zusammengezogen in 5.2.** Der Verfasser hat auch Leistungsseite und
+Energieseite der aFRR sowie die Kopplung zu einem Absatz verlangt. Aus drei
+Absaetzen ist einer geworden. Danach hat er ihn als zu wenig kompakt und
+teilweise doppelt bezeichnet, worauf der Absatz **neu aufgebaut** ist. Der
+kompaktere Bau hat Platz fuer zwei Saetze geschaffen, die zuvor gefallen
+waren, naemlich die spaete Feststellung des Grenzpreises nach dem
+Viertelstundenslot und die Begruendung der anteiligen Lieferung ueber den
+deutschlandweiten Abruf.
+
+**Zwei Praezisierungen des Verfassers.** Die volle Menge erreicht ein Akteur
+allein unter optimalen Bedingungen und damit praktisch nie. Die Kopplung von
+Energie an Leistung macht die Vorhaltung nicht *belohnt*, sondern
+*attraktiver*, und sie ist zudem nicht zwingend.
+
+**Grenze des Verfahrens nach vorn.** Vorgabe des Verfassers: die Fehler des
+Verfahrens gehoeren an den Anfang von 5.2 und in die Einleitung. Der Absatz
+zur Preissuche steht jetzt unmittelbar hinter der Einleitung, und die
+Einleitung nennt das koordinatenweise Minimum als eigene Grenze. Der
+Schlusssatz des Absatzes, wonach das Niveau ueber das Jahr belastbarer ist
+als die Hoehe einer einzelnen Stunde, stand zuvor am Ende des Absatzes zur
+Perspektive.
+
+**Verlorener Beleg.** Mit dem Satz ueber die anonymisierten Gebotslisten ist
+`regelleistung_ausschreibungsdaten_2026` aus Abschnitt 5.2 verschwunden.
+**Offener Punkt**, dem Verfasser vorgelegt.
+
+**Abschnitt 5.3 vollstaendig neu aufgebaut.** Vorgabe des Verfassers, sechs
+Absaetze zu je acht Saetzen:
+
+1. Der Redispatch traegt keinen klaren Preis, weil die Verguetung dem
+   Indifferenzprinzip folgt und je Technologie anders ausfaellt und weil der
+   Anweisungszeitpunkt die Kosten mitbestimmt.
+2. Der kurative Reservierungspreis erweist sich gleichwohl als
+   wettbewerbsfaehig. Das Niveau traegt der Leistungspreis der aFRR, die
+   Extrema tragen grosse Handelsspannen am IDC.
+3. Tagesverlauf. Nachts guenstig, mittags teuer. Mittags liegen Preis und
+   benoetigte Richtung uebereinander, was eine Massnahme aus abgeregelter
+   Photovoltaik und entladendem BESS nahelegt.
+4. Technologien. Ein BESS lohnt sich als Ladereservierung eher nachts.
+   Wind- und Photovoltaikanlagen bieten die Ruecknahme der Einspeisung
+   guenstiger an, stellen aber nur eine Haelfte eines Verbunds und tragen das
+   Risiko der gesicherten Leistung.
+5. Jahreszeit. Im Winter trifft der groesste Bedarf auf den guenstigsten
+   Preis, was die Kombination von BESS und Windenergie nahelegt.
+6. Zuschnitt des Produkts, aus der bisherigen Fassung uebernommen und auf
+   acht Saetze gefuehrt.
+
+**NICHT GESETZT aus der Vorgabe zu 5.3.** Der Verfasser nannte ein Niveau
+*groesstenteils leicht hoeher als die aufgerufenen Regelleistungspreise*. Ein
+solcher Vergleich steht in keinem Kapitel und ist nicht nachgerechnet. Der
+Text sagt statt dessen das Belegte aus Abschnitt 4.4, naemlich dass der
+Leistungspreis der aFRR das Niveau traegt. **Offener Punkt**, falls die
+Aussage stehen soll, waere sie zu belegen.
+
+**EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen.** In 5.3 Absatz 1:
+dass der Zeitpunkt der Anweisung die Kosten einer Redispatchmassnahme
+mitbestimmt. Das folgt aus der Vorgabe und steht in keinem Kapitel.
+
+**Aus 5.3 entfernt.** Die Saetze zum Aufschlag eines Betreibers, weil
+Abschnitt 5.1 die Bestandteile eines Gebots seit dem 25.09.2026 ausfuehrlich
+nennt. Damit faellt der gesperrte Begriff *Sanktion* aus dem Abschnitt. Die
+*Abrufdauer* heisst nach der Vorgabe vom 23.09.2026 *vorgehaltene Energie je
+Abruf*. Der vollstaendige zurueckgenommene Wortlaut steht als Kommentar in
+`chapters/chapter_5.tex` und ist nicht wieder aufzunehmen.
+
+**Belege fuer die neuen Aussagen in 5.3.** Abschnitt 4.4 traegt den Tagesgang
+und den Jahresgang sowie die Feststellung, dass der Leistungspreis der aFRR
+das Niveau bestimmt. Abschnitt 4.5 traegt das Zusammentreffen von Bedarf und
+Preis, die Bezugslinie des Arbeitspreises und die Ausnahme der
+Mittagsstunden. Abschnitt 1.1 traegt die Windfront als Ursache des
+winterlichen Bedarfs. Abschnitt 2.2 traegt, dass Wind- und
+Photovoltaikanlagen nur eine Haelfte eines bilanziell ausgeglichenen
+Verbunds stellen.
+
+**Stand.** Abschnitt 5.1 traegt elf Absaetze, 5.2 sechs und 5.3 sechs, alle
+zu je acht Saetzen. 5.4 und 5.5 stehen noch bei sechs bis sieben Saetzen je
+Absatz. `python tools/pruefen.py --alle` ohne Befund, `tools/pruefe_stil.py`
+ohne Verstoss in Kapitel 5, 121 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

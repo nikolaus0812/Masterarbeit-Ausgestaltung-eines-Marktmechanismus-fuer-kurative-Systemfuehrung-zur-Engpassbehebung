@@ -42,9 +42,9 @@ schreiben.
 
 | Abschnitt | Absaetze | Stand |
 |---|---|---|
-| 5.1 Anforderungen und ihre Umsetzung im Produkt | 11 zu je 8 Saetzen | durchgegangen, Absaetze zusammengezogen |
-| 5.2 Modellierung und ihre Annahmen | 8 zu je 8 Saetzen | durchgegangen |
-| 5.3 Wirtschaftlichkeit und Wirksamkeit | 4 zu 6 Saetzen | offen |
+| 5.1 Anforderungen und ihre Umsetzung im Produkt | 11 zu je 8 Saetzen | durchgegangen |
+| 5.2 Modellierung und ihre Annahmen | 6 zu je 8 Saetzen | durchgegangen, Verfahren steht vorn |
+| 5.3 Wirtschaftlichkeit und Wirksamkeit | 6 zu je 8 Saetzen | am 25.09.2026 vollstaendig neu aufgebaut |
 | 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 zu 6 bis 7 Saetzen | offen |
 | 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 zu 6 bis 7 Saetzen | offen |
 
@@ -59,6 +59,14 @@ schreiben.
   steht. Abschnitt 3.1.2 sagt allein, dass Fahrplanaenderungen die
   Vorhaltung nicht mehr aufheben. Soll die staerkere Aussage stehen,
   waere sie in Kapitel 3 festzulegen.
+- Der Beleg `regelleistung_ausschreibungsdaten_2026` ist aus Abschnitt 5.2
+  verschwunden, weil der Satz ueber die anonymisierten Gebotslisten beim
+  Zusammenziehen gefallen ist.
+- Das Niveau des kurativen Reservierungspreises *leicht hoeher als die
+  Regelleistungspreise* ist **nicht gesetzt**, weil der Vergleich in keinem
+  Kapitel steht und nicht nachgerechnet ist.
+- **Eigenstaendige Ableitung** in 5.3 Absatz 1: der Anweisungszeitpunkt
+  bestimmt die Kosten einer Redispatchmassnahme mit.
 - Der Push des Commits `2fc1be7` vom 24.09.2026 steht beim Verfasser
   noch aus, GitHub hat mit einem Internal Server Error geantwortet.
 
