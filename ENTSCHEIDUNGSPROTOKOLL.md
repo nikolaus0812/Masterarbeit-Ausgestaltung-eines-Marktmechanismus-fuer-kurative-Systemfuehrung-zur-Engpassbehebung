@@ -16065,6 +16065,100 @@ sechs bis sieben Saetzen sind die ersten drei Absaetze von 5.4 und vier
 Absaetze von 5.5. `python tools/pruefen.py --alle` ohne Befund,
 `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 123 Seiten.
 
+### 25.09.2026 spaet, 5.4 durchgegangen und 5.5 um zwei Absaetze ergaenzt
+
+**Abschnitt 5.4 ist durchgegangen**, sechs Absaetze zu je acht Saetzen.
+
+**Sachlicher Fehler berichtigt.** Zurueckgenommener Wortlaut, nicht wieder
+aufzunehmen: *Ein BESS stellt beide Richtungen aus derselben Anlage, sodass
+eine bilanziell ausgeglichene Vorhaltung an einem Netzknoten moeglich ist.*
+An einem Netzknoten hebt sich die Wirkung beider Richtungen auf, sodass die
+Massnahme den Engpass nicht entlastet. Der Text sagt jetzt, dass ein BESS
+jede der beiden Haelften uebernehmen kann und dass zwei BESS ein
+eigenstaendiges, bilanziell ausgeglichenes Set bilden. Die Aussage zu den
+verschiedenen Netzknoten ist auf Vorgabe des Verfassers gestrichen.
+
+**Der Vorsprung gegenueber den Alternativen ist herausgestellt.** Vorgabe des
+Verfassers. Belegt durch Abschnitt 2.2, wonach BESS die Eigenschaften
+vereinen, die bei den uebrigen Technologien einzeln auftreten, anders als
+PSKW nicht an die Topografie gebunden sind und anders als konventionelle
+Kraftwerke im Bestand wachsen. **NICHT GESETZT** ist das Wort *perfekt*, weil
+Stilregel 11 zurueckhaltende Behauptungsstaerke verlangt und der Beleg die
+Aussage ohnehin traegt.
+
+**Dopplungen entfernt.** Der Verfasser fragte, ob das zu hohe oder zu
+niedrige Gebot gedoppelt sei. Gedoppelt war es nicht. Gedoppelt waren der
+Erloesanteil der aFRR, der in 5.1, 5.2 und 5.4 stand, und die Kenntnis des
+aFRR-Leistungspreises bei der Gebotsabgabe, die sich mit dem
+Gebotsschluss-Absatz in 5.2 ueberschnitt. Beide sind gestrichen.
+
+**Ein Absatz ist ganz gestrichen.** Zurueckgenommen und nicht wieder
+aufzunehmen ist der Absatz *Die Eignung eines BESS hat drei Grenzen*. Vorgabe
+des Verfassers: das sind keine Grenzen. Geprueft, dass nichts verloren geht.
+Der Energieinhalt und das Ladezustandsband stehen in Abschnitt 3.1 und 3.2,
+die Doppelbelegung des Bandes in Abschnitt 3.2, die oertliche Wirksamkeit in
+Abschnitt 5.1.
+
+**Der kurzfristige Handel gegenueber der Regelleistung.** Vorgabe des
+Verfassers: der Handel bis kurz vor Lieferbeginn nimmt der Regelleistung den
+Ausgleich der Prognoseabweichungen ab. **NICHT GESETZT** ist, dass die
+Regelleistung teuer ist. Der Verfasser hat das selbst zur Pruefung gestellt,
+und die Kapitel 1 bis 4 tragen keine Aussage zu den Kosten der Regelleistung.
+**Offener Punkt.** Der Satz zur Menge der Regelleistung ist auf seine Vorgabe
+wieder gestrichen, weil er nicht in den Kontext passte.
+
+**Konjunktiv.** Dass ein BESS seine Leistung bis an die Grenzen verschiebt,
+steht auf Vorgabe des Verfassers im Konjunktiv, weil es so sein koennte, aber
+auch anders sein kann. Zugleich heisst es Leistungsaenderungen statt Leistung.
+Ein BESS verschaerft einen Engpass zudem, *ohne es zu wissen*.
+
+**Das Ziel des Mechanismus ist ausgesprochen.** Vorgabe des Verfassers: ein
+BESS soll am IDC handeln, solange es keinen Engpass erzeugt, und sonst einen
+Erloes des UENB erhalten, statt abgeregelt zu werden. Der Schlusssatz *Der
+kurative Marktmechanismus wirkt damit zweifach* ist dafuer zurueckgenommen.
+
+**Neuer Absatz zur Mehrfachnutzung des Leistungsbandes.** Vorgabe des
+Verfassers. Eine kurative Massnahme ist nur eine Verwendung, ueber die der
+UENB frei entscheidet. Er koennte dasselbe Band als gesicherte
+Erzeugungsleistung in einem Kapazitaetsmechanismus fuehren, belegt durch
+`consentec_ausarbeitung_2024`, das bislang nicht zitiert war. Daraus folgt
+eine zweite Begruendung fuer die Trennung von Vorhaltung und Abruf nach
+Entscheidung 14.
+
+**BEGRIFF ENTFERNT: kapazitaetsbasierter Redispatch.** Der Ausdruck stand an
+zwei Stellen in Kapitel 5 und in keinem anderen Kapitel. Der Verfasser konnte
+ihn selbst nicht einordnen und hat festgestellt, dass ein kapazitaetsbasierter
+Redispatch im Kern die kurative Systemfuehrung selbst waere. **Der Satz in
+5.5 war damit zirkulaer und ist inhaltlich umgekehrt.** Zurueckgenommener
+Wortlaut, nicht wieder aufzunehmen: *Der kapazitaetsbasierte Redispatch
+beschafft im Kern dieselbe Groesse und unterscheidet sich allein in Ausloeser
+und Reaktionszeit, sodass der kurative Marktmechanismus an eine bestehende
+Beschaffungsform anschliessen kann.* Der Text sagt jetzt, dass das
+Engpassmanagement eine Verguetung der Bereithaltung mit einem Leistungspreis
+allein fuer systemrelevante Anlagen nach angezeigter Stilllegung kennt und der
+kurative Marktmechanismus deshalb an keine breit angelegte Beschaffungsform
+anschliessen kann. Damit ist der offene Punkt zu diesem Begriff erledigt.
+
+**Neuer Absatz in 5.5 zum Marktrahmen.** Vorgabe des Verfassers: die Wirkung
+von Rahmenvorgaben und eines Gebotszonensplits ist ausfuehrlicher zu
+diskutieren. Grundlage sind Abschnitt 1.1 und Abschnitt 2.3, wonach der
+einheitliche Boersenpreis die Belastung der Uebertragungswege nicht abbildet,
+und die Binnenmarktverordnung, die die marktbasierte Beschaffung des
+Redispatch als Regelfall vorsieht.
+
+**EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser zu bestaetigen.** Erstens, dass
+der UENB die Kosten der Vorhaltung auf mehrere Verwendungen verteilte.
+Zweitens, dass ein Gebotszonensplit den Bedarf an Engpassmanagement senkte.
+Drittens, dass der kurative Reservierungspreis danach am Preisniveau der
+jeweiligen Zone haenge. Alle drei folgen aus Vorgaben des Verfassers und sind
+nicht gerechnet.
+
+**Stand.** Abschnitt 5.1 elf Absaetze, 5.2 sieben, 5.3 sechs, 5.4 sechs, alle
+zu je acht Saetzen. Abschnitt 5.5 traegt sieben Absaetze, davon vier mit sechs
+bis sieben Saetzen. `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
+123 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

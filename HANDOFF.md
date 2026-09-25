@@ -45,8 +45,8 @@ schreiben.
 | 5.1 Anforderungen und ihre Umsetzung im Produkt | 11 zu je 8 Saetzen | durchgegangen |
 | 5.2 Modellierung und ihre Annahmen | 7 zu je 8 Saetzen | durchgegangen, Verfahren und Gebotsschluss stehen hier |
 | 5.3 Wirtschaftlichkeit und Wirksamkeit | 6 zu je 8 Saetzen | am 25.09.2026 neu aufgebaut und durchgegangen |
-| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 6, davon 3 zu je 8 Saetzen | letzter Absatz neu aufgebaut, erste drei offen |
-| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 6, davon 2 zu je 8 Saetzen | Abloesung und Effizienzwende ergaenzt, Rest offen |
+| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 6 zu je 8 Saetzen | durchgegangen |
+| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 7, davon 3 zu je 8 Saetzen | Abloesung, Effizienzwende und Marktrahmen ergaenzt, **vier Absaetze offen** |
 
 **Offen, dem Verfasser vorgelegt.**
 
@@ -73,10 +73,24 @@ schreiben.
 - Aus 5.3 ist der Satz entfernt, eine Verguetung der kurativen Vorhaltung
   verlange eine eigene Struktur. Er gehoert zum geltenden Rahmen in 5.5 und
   ist beim Durchgang dort aufzunehmen.
-- Die eigenstaendigen Ableitungen sind am 25.09.2026 vom Verfasser
-  bestaetigt und mit seinen Begruendungen im Text gesetzt. Offen bleiben
-  allein der Anweisungszeitpunkt als Kostenfaktor in 5.3 und das
-  zusaetzliche Produkt fuer die Abloesung in 5.5.
+- **Offene eigenstaendige Ableitungen**, alle im Quelltext markiert: der
+  Anweisungszeitpunkt als Kostenfaktor (5.3), das guenstigere Gebot fuer
+  anschliessende Stunden (5.3), das zusaetzliche Produkt fuer die
+  Abloesung (5.5), die Verteilung der Vorhaltekosten auf mehrere
+  Verwendungen (5.4) und die Wirkungen eines Gebotszonensplits (5.5).
+- *Regelleistung ist teuer* ist **nicht gesetzt**. Die Kapitel 1 bis 4
+  tragen keine Aussage zu den Kosten der Regelleistung. Belegbar waere sie
+  aus `analysen/afrr_herbst_2025`, das waere dann aber eine Zahl fuer
+  Kapitel 4 und nicht fuer die Diskussion.
+- **Begriff entfernt:** *kapazitaetsbasierter Redispatch*. Er stand nur in
+  Kapitel 5 und waere im Kern die kurative Systemfuehrung selbst gewesen.
+  Der Satz in 5.5 war damit zirkulaer und sagt jetzt das Gegenteil,
+  naemlich dass der kurative Marktmechanismus an keine breit angelegte
+  Beschaffungsform anschliessen kann. Der frueher offene Punkt zu diesem
+  Begriff ist damit erledigt.
+- **Naechster Schritt:** der letzte Absatz von 5.5 ist noch durchzugehen,
+  danach prueft der Verfasser das ganze Kapitel in einem neuen Chat mit
+  Fable.
 - **Widerspruch aufgeloest:** die Aussage, der kurative Marktmechanismus
   werde mit wachsendem Bestand wettbewerbsfaehiger, widersprach Abschnitt
   4.6.4 und ist zurueckgenommen. Dort steht, dass die kurative Bindung

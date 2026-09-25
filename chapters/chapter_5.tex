@@ -689,10 +689,20 @@ Unter den geprüften Annahmen trägt die Modellierung der \ac{aFRR} das Ergebnis
 Auf der Leistungsseite setzt das Optimierungsmodell den gemittelten Zuschlagspreis an, der die Opportunität eher unterschätzt.
 Die Ausschreibung der \ac{aFRR}-Leistung schließt jedoch vor der kurativen, sodass ein Akteur seinen Zuschlag dort bereits kennt.
 Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
-Der Leistungspreis der \ac{aFRR} trägt das Niveau des ermittelten Preises deshalb als Rechengröße und nicht als Opportunität des Bietenden.
-Das Gebot orientiert sich gleichwohl an diesem Leistungspreis, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
-Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und ist damit eine Opportunität.
-Das Optimierungsmodell entscheidet beide Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
+% ERGAENZT am 25.09.2026, Vorgabe des Verfassers: auch der DA bleibt
+% eine Opportunitaet, weil sich eine Position dort am IDC glattstellen
+% laesst. Die Regelleistung ist nach ihrem Gebotsschluss dagegen nicht
+% mehr handelbar. Die beiden Saetze zur Rechengroesse und zur
+% fortbestehenden Orientierung des Gebots sind dafuer zusammengezogen.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der Leistungspreis der \ac{aFRR} trägt das Niveau des ermittelten Preises deshalb als Rechengröße und nicht als Opportunität des Bietenden.
+%Das Gebot orientiert sich gleichwohl an diesem Leistungspreis, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
+%Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und ist damit eine Opportunität.
+%Das Optimierungsmodell entscheidet beide Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
+Der Leistungspreis der \ac{aFRR} trägt das Niveau deshalb als Rechengröße und nicht als Opportunität, prägt das Gebot aber weiterhin, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
+Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen, und eine Position am \ac{DA} lässt sich dort glattstellen.
+Beide Energiemärkte bleiben deshalb eine Opportunität, während eine Vorhaltung von Regelleistung nach ihrem Gebotsschluss nicht mehr handelbar ist.
+Das Optimierungsmodell entscheidet alle Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
 
 Schwerer wiegt die Annahme über die Lieferung von \ac{aFRR}-Arbeit, denn dort entscheidet nicht der Grenzpreis, sondern die gelieferte Menge.
 Der Grenzpreis steht erst nach dem Viertelstundenslot fest, sodass ein Akteur die volle Menge allein unter optimalen Bedingungen erreichte.
@@ -1058,28 +1068,105 @@ Wie erfolgreich der kurative Marktmechanismus wird, hängt damit am \ac{ÜNB} se
 \section{Die Rolle der \acs{BESS} im Engpassmanagement und am Markt}
 \label{sec:bess_markets}
 
+% SACHLICH BERICHTIGT am 25.09.2026, Vorgabe des Verfassers. Die alte
+% Fassung sagte, ein BESS ermoegliche eine bilanziell ausgeglichene
+% Vorhaltung an einem Netzknoten. Das ist falsch, denn an einem
+% Netzknoten hebt sich die Wirkung beider Richtungen auf und die
+% Massnahme entlastet den Engpass nicht. Richtig ist, dass ein BESS
+% jede der beiden Haelften uebernehmen kann, weil es nach Abschnitt 2.2
+% in beide Richtungen wirkt.
+% Zugleich heisst die Abrufdauer nach der Vorgabe vom 23.09.2026
+% vorgehaltene Energie je Abruf.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Das \ac{BESS} eignet sich für die kurative Vorhaltung aus vier Gründen.
+%Ein \ac{BESS} erreicht die Reaktionszeitklasse von etwa zwei Minuten ohne Anfahrvorgang \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+%Ein \ac{BESS} stellt beide Richtungen aus derselben Anlage, sodass eine bilanziell ausgeglichene Vorhaltung an einem Netzknoten möglich ist.
+%Der Energieinhalt je Leistung eines \ac{BESS} genügt für die im Produkt vorgesehene Abrufdauer.
+%Die Präqualifikation eines \ac{BESS} kann auf der Regelleistung aufsetzen, sodass der zusätzliche Aufwand gering bleibt.
+%Die kurative Vorhaltung trifft damit auf eine Technologie, deren Bestand ohnehin zunimmt.
 Das \ac{BESS} eignet sich für die kurative Vorhaltung aus vier Gründen.
 Ein \ac{BESS} erreicht die Reaktionszeitklasse von etwa zwei Minuten ohne Anfahrvorgang \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-Ein \ac{BESS} stellt beide Richtungen aus derselben Anlage, sodass eine bilanziell ausgeglichene Vorhaltung an einem Netzknoten möglich ist.
-Der Energieinhalt je Leistung eines \ac{BESS} genügt für die im Produkt vorgesehene Abrufdauer.
+Ein \ac{BESS} stellt beide Richtungen aus derselben Anlage und kann deshalb jede Hälfte eines Verbunds übernehmen.
+% GEKUERZT am 25.09.2026, Vorgabe des Verfassers: die Aussage zu den
+% Netzknoten faellt, es bleibt das eigenstaendige und bilanziell
+% ausgeglichene Set. An die frei werdende Stelle tritt der Gegensatz zu
+% Wind- und Photovoltaikanlagen aus Abschnitt 2.2, damit der Absatz bei
+% acht Saetzen bleibt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine bilanziell ausgeglichene Maßnahme verlangt ihre beiden Hälften an verschiedenen Netzknoten, denn an einem Netzknoten hebt sich ihre Wirkung auf.
+%Zwei \ac{BESS} an verschiedenen Netzknoten bilden deshalb bereits ein vollständiges kuratives Maßnahmenset.
+Zwei \ac{BESS} bilden deshalb bereits ein eigenständiges Maßnahmenset, das bilanziell ausgeglichen ist.
+% NEU GEFASST am 25.09.2026, Vorgabe des Verfassers: der Schlusssatz
+% verbindet die technischen Eigenschaften mit dem zunehmenden Bestand.
+% NICHT GESETZT ist sein Wort perfekt, weil Stilregel 11
+% zurueckhaltende Behauptungsstaerke verlangt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die kurative Vorhaltung trifft damit auf eine Technologie, deren Bestand ohnehin zunimmt.
+% VERSTAERKT am 25.09.2026, Vorgabe des Verfassers: der Vorsprung
+% gegenueber den Alternativen ist herauszustellen. Die Aussage ist
+% belegt, denn Abschnitt 2.2 stellt fest, dass BESS die Eigenschaften
+% vereinen, die bei den uebrigen Technologien einzeln auftreten, und
+% dass sie anders als PSKW nicht an die Topografie gebunden sind und
+% anders als konventionelle Kraftwerke im Bestand wachsen. Das Wort
+% perfekt ist damit nicht noetig.
+% Der Satz zu Wind- und Photovoltaikanlagen faellt, weil derselbe Befund
+% in Abschnitt 5.3 steht und der neue Schluss den Vergleich allgemein
+% zieht.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine Wind- oder Photovoltaikanlage stellt dagegen nur die Rücknahme der Einspeisung.
+%Der Energieinhalt je Leistung eines \ac{BESS} genügt für die im Produkt vorgesehene vorgehaltene Energie je Abruf.
+%Die Präqualifikation eines \ac{BESS} kann auf der Regelleistung aufsetzen, sodass der zusätzliche Aufwand gering bleibt.
+%Ein \ac{BESS} verbindet damit die technischen Eigenschaften eines kurativen Akteurs mit einem zunehmenden Bestand.
+Der Energieinhalt je Leistung eines \ac{BESS} genügt für die im Produkt vorgesehene vorgehaltene Energie je Abruf.
 Die Präqualifikation eines \ac{BESS} kann auf der Regelleistung aufsetzen, sodass der zusätzliche Aufwand gering bleibt.
-Die kurative Vorhaltung trifft damit auf eine Technologie, deren Bestand ohnehin zunimmt.
+Ein \ac{BESS} vereint damit die Eigenschaften, die bei den übrigen Technologien einzeln auftreten.
+Keine Alternative erreicht denselben Zuschnitt, und der Bestand an \ac{BESS} wächst zugleich.
 
+% DOPPLUNGEN ENTFERNT am 25.09.2026, Vorgabe des Verfassers. Gedoppelt
+% war nicht das zu hohe oder zu niedrige Gebot, sondern der Erloesanteil
+% der aFRR, der in 5.1, 5.2 und hier stand, und die Kenntnis des
+% aFRR-Leistungspreises bei der Gebotsabgabe, die sich mit dem
+% Gebotsschluss-Absatz in 5.2 ueberschneidet. Beide sind gestrichen.
+% Der Absatz traegt jetzt allein das Gebot unter Unsicherheit.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der kurative Reservierungspreis eines \ac{BESS} folgt aus seinen kurzfristigen Erlösquellen.
+%Die Vorhaltung von \ac{aFRR}-Leistung trägt den größten Teil des Erlöses, der kontinuierliche Intraday-Handel den zweitgrößten.
+%Den Leistungspreis der \ac{aFRR} kennt ein Betreiber bei der Gebotsabgabe, die Handelsspannen des folgenden Tages kennt er nicht.
+%Gerade die Handelsspannen tragen die teuren Stunden, sodass ein kuratives Gebot unter Unsicherheit entsteht.
+%Wer zu niedrig bietet, bindet seine Leistung unter Wert.
+%Wer zu hoch bietet, erhält keinen Zuschlag.
+%Die kurative Reservierung gibt dem Betreiber zugleich eine Möglichkeit, seinen Erlös allein durch eine klügere Verteilung auf die Märkte zu steigern.
 Der kurative Reservierungspreis eines \ac{BESS} folgt aus seinen kurzfristigen Erlösquellen.
-Die Vorhaltung von \ac{aFRR}-Leistung trägt den größten Teil des Erlöses, der kontinuierliche Intraday-Handel den zweitgrößten.
-Den Leistungspreis der \ac{aFRR} kennt ein Betreiber bei der Gebotsabgabe, die Handelsspannen des folgenden Tages kennt er nicht.
+Ein Betreiber kennt bei der Gebotsabgabe jedoch nicht, welche Handelsspannen der folgende Tag trägt.
 Gerade die Handelsspannen tragen die teuren Stunden, sodass ein kuratives Gebot unter Unsicherheit entsteht.
 Wer zu niedrig bietet, bindet seine Leistung unter Wert.
 Wer zu hoch bietet, erhält keinen Zuschlag.
+Ein Betreiber trägt damit ein zweiseitiges Risiko, das er allein über seinen Gebotspreis steuert.
 Die kurative Reservierung gibt dem Betreiber zugleich eine Möglichkeit, seinen Erlös allein durch eine klügere Verteilung auf die Märkte zu steigern.
+Wie gut ein Betreiber die Handelsspannen einschätzt, entscheidet damit über seinen Erlös aus der kurativen Reservierung.
 
-Die Eignung eines \ac{BESS} hat drei Grenzen.
-Die erste Grenze ist der Energieinhalt, denn eine längere Abrufdauer verlangt ein breiteres Ladezustandsband und verteuert die Vorhaltung.
-Die zweite Grenze ist die Doppelbelegung dieses Bandes, das die Vorhaltung von Regelleistung bereits beansprucht.
-Die dritte Grenze ist die örtliche Wirksamkeit, die allein am Netzknoten hängt.
-Ein \ac{BESS} am falschen Netzknoten ist für die Engpassbehebung wertlos, so schnell es auch reagiert.
-Über den Nutzen entscheidet damit die Standortwahl ebenso wie die technische Eignung.
-
+% BEGRIFF ERSETZT am 25.09.2026: Abrufdauer heisst nach der Vorgabe vom
+% 23.09.2026 vorgehaltene Energie je Abruf. Dies war das letzte
+% Vorkommen im Fliesstext von Kapitel 5.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die erste Grenze ist der Energieinhalt, denn eine längere Abrufdauer verlangt ein breiteres Ladezustandsband und verteuert die Vorhaltung.
+% GESTRICHEN am 25.09.2026, Vorgabe des Verfassers: das sind keine
+% Grenzen, und der Sinn des Absatzes ist nicht erkennbar.
+% Geprueft, dass nichts verloren geht. Der Energieinhalt und das
+% Ladezustandsband stehen in Abschnitt 3.1 und 3.2, und Abschnitt 5.3
+% sagt, dass eine grosse vorgehaltene Energie die Vorhaltung
+% verteuert. Die Doppelbelegung des Ladezustandsbandes durch die
+% Regelleistung steht in Abschnitt 3.2, wo jede Reservierung ihr Band
+% aus dem nutzbaren Ladezustand nimmt. Die oertliche Wirksamkeit steht
+% in Abschnitt 5.1 bei der Lokationalitaet. Der Absatz war damit reine
+% Dopplung.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die Eignung eines \ac{BESS} hat drei Grenzen.
+%Die erste Grenze ist der Energieinhalt, denn eine größere vorgehaltene Energie je Abruf verlangt ein breiteres Ladezustandsband und verteuert die Vorhaltung.
+%Die zweite Grenze ist die Doppelbelegung dieses Bandes, das die Vorhaltung von Regelleistung bereits beansprucht.
+%Die dritte Grenze ist die örtliche Wirksamkeit, die allein am Netzknoten hängt.
+%Ein \ac{BESS} am falschen Netzknoten ist für die Engpassbehebung wertlos, so schnell es auch reagiert.
+%Über den Nutzen entscheidet damit die Standortwahl ebenso wie die technische Eignung.
 % VOLLSTAENDIG NEU AUFGEBAUT am 25.09.2026, Vorgabe des Verfassers. Drei
 % Absaetze statt einem, naemlich das BESS als neuer Akteur mit
 % kurzfristigem Handel, die fehlende Einbindung in das
@@ -1101,11 +1188,47 @@ Ein \ac{BESS} am falschen Netzknoten ist für die Engpassbehebung wertlos, so sc
 Mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingesetzt wird.
 Ein \ac{BESS} tritt als neuer Akteur in das Übertragungsnetz, das flexible Anlagen mit hoher Leistung und geringem Energieinhalt bislang nicht kennt.
 Das Marktdesign lässt kurzfristige Fahrplanänderungen zu Recht zu, denn eine kurzfristige Prognoseabweichung führte sonst zu einem Ungleichgewicht.
-Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn.
-Ein \ac{BESS} führt seinen begrenzten Energieinhalt an den Grenzen seiner Leistung, um den Erlös zu maximieren.
-Solche Fahrplanänderungen entziehen sich der Betriebsplanung des Engpassmanagements.
-Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
-Mit wachsendem Bestand lässt sich der Redispatch deshalb weniger zuverlässig einplanen.
+% ERGAENZT am 25.09.2026, Vorgabe des Verfassers: der kurzfristige
+% Handel nimmt der Regelleistung den Ausgleich der
+% Prognoseabweichungen ab, die Regelleistung ist nur begrenzt
+% verfuegbar, und ihr Abruf bringt Probleme im Engpassmanagement.
+% NICHT GESETZT ist, dass die Regelleistung teuer ist. Der Verfasser
+% hat das selbst zur Pruefung gestellt, und die Kapitel 1 bis 4 tragen
+% keine Aussage zu den Kosten der Regelleistung. OFFENER PUNKT.
+% Die begrenzte Menge ist belegbar, denn der Bedarf folgt nach
+% Abschnitt 5.4 der Dimensionierung des Systems.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn.
+%Ein \ac{BESS} führt seinen begrenzten Energieinhalt an den Grenzen seiner Leistung, um den Erlös zu maximieren.
+%Solche Fahrplanänderungen entziehen sich der Betriebsplanung des Engpassmanagements.
+%Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
+%Mit wachsendem Bestand lässt sich der Redispatch deshalb weniger zuverlässig einplanen.
+Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn und nimmt der Regelleistung diesen Ausgleich ab.
+% GESTRICHEN UND NEU GEFASST am 25.09.2026, Vorgaben des Verfassers.
+% Der Satz zur Menge der Regelleistung passt nicht in den Kontext, die
+% Aussage davor reicht. Der Satz zum Energieinhalt sagt jetzt, dass ein
+% BESS seine Leistung kurzfristig bis an die Grenzen verschiebt, soweit
+% der Energieinhalt es zulaesst, und dass sich damit viel Leistung der
+% Betriebsplanung entzieht. Der Gedanke steht in zwei Saetzen, weil ein
+% Satz mit zwei Nebensaetzen Stilregel 17 verletzte.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die Menge der Regelleistung folgt der Dimensionierung des Systems, und ihr Abruf verschiebt die Einspeisung gegenüber der Betriebsplanung.
+%Ein \ac{BESS} führt seinen begrenzten Energieinhalt an den Grenzen seiner Leistung, sodass sich seine Fahrplanänderungen der Betriebsplanung entziehen.
+% IN DEN KONJUNKTIV GESETZT am 25.09.2026, Vorgabe des Verfassers: ein
+% BESS koennte so fahren, es kann aber auch anders sein. Zugleich heisst
+% es Leistungsaenderungen statt Leistung.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ein \ac{BESS} verschiebt seine Leistung kurzfristig bis an ihre Grenzen, soweit der Energieinhalt es zulässt.
+%Der Betriebsplanung des Engpassmanagements entzieht sich damit viel Leistung.
+Ein \ac{BESS} könnte seine Leistung kurzfristig bis an ihre Grenzen verschieben, soweit der Energieinhalt es zulässt.
+Der Betriebsplanung des Engpassmanagements entzögen sich damit viele Leistungsänderungen.
+% ERGAENZT am 25.09.2026, Vorgabe des Verfassers: ohne es zu wissen.
+% Die fehlende Kenntnis des Netzzustands steht dafuer am Satzanfang,
+% damit das Wort ohne nicht zweimal im Satz steht.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
+Ein \ac{BESS} kennt den Netzzustand nicht und handelt allein nach Marktsignalen, sodass es einen Engpass verschärfen kann, ohne es zu wissen.
+Der kurzfristige Handel entlastet damit die Regelleistung, lässt den Redispatch aber weniger zuverlässig einplanen.
 
 % BESTAETIGT UND BEGRUENDET am 25.09.2026, Vorgabe des Verfassers: eine
 % Sicherheitsmarge ist immer vergeudetes Potenzial und damit
@@ -1113,14 +1236,73 @@ Mit wachsendem Bestand lässt sich der Redispatch deshalb weniger zuverlässig e
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf.
 %Die Anschlussleistungen der geplanten Anlagen sind jedoch so hoch, dass eine ausreichende Marge die Netzkapazität unwirtschaftlich beschneidet.
-Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, hält dafür aber Übertragungskapazität ungenutzt frei.
-Die Anschlussleistungen der geplanten Anlagen sind so hoch, dass eine ausreichende Marge zu viel Kapazität bindet.
-Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und die Beschlusskammer hat seine Behandlung einem späteren Hinweis vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
-Der \ac{ÜNB} setzt ein \ac{BESS} im Engpassmanagement damit bislang nicht ein.
+% ZUSAMMENGEZOGEN am 25.09.2026, damit der Absatz das Ziel des
+% Mechanismus aufnehmen kann und bei acht Saetzen bleibt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, hält dafür aber Übertragungskapazität ungenutzt frei.
+%Die Anschlussleistungen der geplanten Anlagen sind so hoch, dass eine ausreichende Marge zu viel Kapazität bindet.
+Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, bindet bei den hohen Anschlussleistungen der geplanten Anlagen aber zu viel Übertragungskapazität.
+% VERSTAERKT am 25.09.2026, Vorgabe des Verfassers: der kurative
+% Marktmechanismus setzt ein BESS nicht allein ein, sondern veraendert
+% sein Verhalten am Markt. Das ist die neue Erkenntnis.
+% Dass ein BESS kein Teil des Redispatchregimes ist, hat der Verfasser
+% als bereits erklaert bezeichnet. Die beiden Saetze dazu sind deshalb
+% zu einem zusammengezogen, der Beleg bleibt erhalten.
+% Der Satz zur Auskunft ueber das Netz stand am Vormittag in Abschnitt
+% 5.1 und war dort beim Zusammenziehen gefallen. Er passt hier besser.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und die Beschlusskammer hat seine Behandlung einem späteren Hinweis vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+%Der \ac{ÜNB} setzt ein \ac{BESS} im Engpassmanagement damit bislang nicht ein.
+%Der kurative Marktmechanismus bindet ein \ac{BESS} dagegen in das Engpassmanagement ein.
+%Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
+%Die Reservierung eines Leistungsbandes nimmt ihm daneben die Leistung, mit der er den Engpass verschärfen könnte.
+%Der kurative Marktmechanismus wirkt damit zweifach, nämlich über die Einbindung und über die gebundene Leistung.
+Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und der \ac{ÜNB} setzt es deshalb im Engpassmanagement bislang nicht ein \cite{bundesnetzagentur_festlegung_2024}.
 Der kurative Marktmechanismus bindet ein \ac{BESS} dagegen in das Engpassmanagement ein.
 Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
+Eine solche Auskunft über das Netz erhält ein Akteur aus keinem anderen Markt.
 Die Reservierung eines Leistungsbandes nimmt ihm daneben die Leistung, mit der er den Engpass verschärfen könnte.
-Der kurative Marktmechanismus wirkt damit zweifach, nämlich über die Einbindung und über die gebundene Leistung.
+% NEU GEFASST am 25.09.2026, Vorgabe des Verfassers: das Ziel des
+% Mechanismus ist auszusprechen. Ein BESS soll am IDC handeln, solange
+% es keinen Engpass erzeugt, und sonst einen Erloes des UENB erhalten,
+% statt abgeregelt zu werden.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der kurative Marktmechanismus setzt ein \ac{BESS} damit nicht allein ein, sondern verändert zugleich sein Verhalten am Markt.
+Ein \ac{BESS} handelt damit am \ac{IDC}, solange es keinen Engpass erzeugt.
+Erzeugt es einen Engpass, so erhält es einen Erlös des \ac{ÜNB} statt einer Abregelung.
+
+% ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: die reservierte
+% Leistung laesst sich mehrfach einsetzen. Eine kurative Massnahme ist
+% nur eine Verwendung des gebundenen Leistungsbandes, und die Trennung
+% von Vorhaltung und Abruf nach Entscheidung 14 traegt deshalb ueber
+% die kurative Massnahme hinaus.
+% EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen: dass der UENB
+% die Kosten der Vorhaltung auf mehrere Verwendungen verteilte. Das
+% folgt aus der Vorgabe und ist nicht gerechnet.
+Die reservierte Leistung lässt sich zudem für mehr als eine Maßnahme nutzen.
+% BEGRIFF ENTFERNT am 25.09.2026, Vorgabe des Verfassers: der
+% kapazitaetsbasierte Redispatch ist in keinem Kapitel definiert. Die
+% Aussage kommt ohne den Begriff aus.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der \ac{ÜNB} könnte mit derselben Leistung auch einen kapazitätsbasierten Redispatch decken, den er planmäßig abruft.
+% PRAEZISIERT am 25.09.2026, Vorgabe des Verfassers: gemeint ist
+% Kapazitaet im Sinne eines Kapazitaetsmechanismus, also gesicherte
+% Erzeugungsleistung, und nicht eine Beschaffungsform des
+% Engpassmanagements. Beleg ist die Studie von Consentec und Ecologic
+% fuer die vier UENB, die in der Literaturdatei liegt und bisher nicht
+% zitiert war. Zugleich sagt der Text, dass der UENB ueber die
+% Verwendung frei entscheidet.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine kurative Maßnahme ist nur eine Verwendung des gebundenen Leistungsbandes.
+%Der \ac{ÜNB} könnte dasselbe Leistungsband auch für einen Eingriff nutzen, den er planmäßig und nicht erst im Fehlerfall abruft.
+%Ebenso ließe sich das Leistungsband für weitere Flexibilitäten des \ac{ÜNB} einsetzen.
+Eine kurative Maßnahme ist nur eine Verwendung des gebundenen Leistungsbandes, über die der \ac{ÜNB} frei entscheidet.
+Der \ac{ÜNB} könnte dasselbe Band als gesicherte Erzeugungsleistung in einem Kapazitätsmechanismus führen \cite{consentec_ausarbeitung_2024}.
+Ebenso ließe sich das Band für einen planmäßigen Eingriff oder für weitere Flexibilitäten des \ac{ÜNB} einsetzen.
+Jede dieser Verwendungen verlangt eine eigene Vergütung des Abrufs, denn sie unterscheiden sich in Häufigkeit und Dauer.
+Die Vorhaltung bleibt dagegen dieselbe, weil sie allein die Leistung und die Bindungsdauer betrifft.
+Die Trennung von Vorhaltung und Abruf trägt deshalb über die kurative Maßnahme hinaus.
+Der \ac{ÜNB} verteilte die Kosten der Vorhaltung dann auf mehrere Verwendungen.
 
 Der Ausbau der \ac{BESS} verschärft nicht nur die Kurzfristigkeit, sondern verändert auch die Märkte.
 Der Bedarf an Regelleistung folgt der Dimensionierung des Systems und wächst nicht mit dem Bestand an \ac{BESS}.
@@ -1169,7 +1351,36 @@ Vor der Umsetzung steht der geltende Rahmen.
 Eine marktbasierte Beschaffung des Redispatch ist damit im geltenden Recht ausgeschlossen.
 Redispatch~2.0 ist ein Duldungs- und Entschädigungsregime, während die kurative Reservierung ein Gebot des Betreibers voraussetzt \cite{bundesnetzagentur_festlegung_2024}.
 Der entworfene kurative Marktmechanismus setzt deshalb eine Änderung des §\,13a \ac{EnWG} voraus.
-Der kapazitätsbasierte Redispatch beschafft im Kern dieselbe Größe und unterscheidet sich allein in Auslöser und Reaktionszeit, sodass der kurative Marktmechanismus an eine bestehende Beschaffungsform anschließen kann.
+% BEGRIFF ENTFERNT UND AUSSAGE UMGEKEHRT am 25.09.2026, Vorgabe des
+% Verfassers. Der kapazitaetsbasierte Redispatch ist in keinem Kapitel
+% definiert. Die bisherige Fassung sagte, der kurative Marktmechanismus
+% koenne an eine bestehende Beschaffungsform anschliessen. Das traegt
+% nicht, denn nach Abschnitt 2.1 kennt das Engpassmanagement eine
+% Verguetung der Bereithaltung mit einem Leistungspreis allein in
+% Paragraf 13c EnWG fuer systemrelevante Anlagen nach angezeigter
+% Stilllegung. Der Text sagt jetzt das Gegenteil.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der kapazitätsbasierte Redispatch beschafft im Kern dieselbe Größe und unterscheidet sich allein in Auslöser und Reaktionszeit, sodass der kurative Marktmechanismus an eine bestehende Beschaffungsform anschließen kann.
+Eine Vergütung der Bereithaltung mit einem Leistungspreis kennt das Engpassmanagement allein für systemrelevante Anlagen nach einer angezeigten Stilllegung, sodass der kurative Marktmechanismus an keine breit angelegte Beschaffungsform anschließen kann.
+
+% ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: die Wirkung von
+% Rahmenvorgaben und eines Gebotszonensplits ist ausfuehrlicher zu
+% diskutieren. Grundlage sind Abschnitt 1.1 und Abschnitt 2.3, wonach
+% der einheitliche Boersenpreis die Belastung der Uebertragungswege
+% nicht abbildet, und die Binnenmarktverordnung, die die
+% marktbasierte Beschaffung des Redispatch als Regelfall vorsieht.
+% EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser zu bestaetigen: die
+% Wirkungen eines Gebotszonensplits auf den Bedarf an
+% Engpassmanagement und auf den kurativen Reservierungspreis. Sie
+% folgen aus der Ueberlegung und sind nicht gerechnet.
+Der kurative Marktmechanismus setzt den heutigen Marktrahmen voraus, und eine Änderung dieses Rahmens wirkt auf ihn zurück.
+Die Binnenmarktverordnung sieht die marktbasierte Beschaffung des Redispatch als Regelfall vor und lässt die Kostenbasis nur bei fehlendem Wettbewerb oder strategischem Bietverhalten zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+Ein marktlich beschaffter Redispatch nähme der kurativen Reservierung ihre Sonderstellung, denn beide Beschaffungen folgten dann demselben Grundsatz.
+Der einheitliche Börsenpreis der deutschen Gebotszone bildet zudem die Belastung der Übertragungswege nicht ab.
+Ein Gebotszonensplit trennte den Preis nach Regionen und gäbe dem Handel damit ein örtliches Signal.
+Der Dispatch der Energiemärkte entlastete das Netz dann von sich aus, sodass der Bedarf an Engpassmanagement sänke.
+Wie hoch der kurative Reservierungspreis ausfiele, hinge danach am Preisniveau der jeweiligen Zone.
+Ein Engpass innerhalb einer Zone bliebe gleichwohl bestehen, sodass die kurative Vorhaltung auch mit örtlichen Preisen eine Aufgabe behielte.
 
 Neben dem Rahmen steht der Aufwand beim \ac{ÜNB} und beim Betreiber.
 % ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die
