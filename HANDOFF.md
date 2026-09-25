@@ -22,6 +22,53 @@ durchsucht.
 
 ## 1 Stand des Dokuments
 
+### 1.0 Stand vom 25.09.2026, Kapitel 5 im Durchgang
+
+**121 Seiten**, Build sauber, `python tools/pruefen.py --alle` ohne
+Befund, `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5. `main.tex`
+bindet Kapitel 5 seit dem 24.09.2026 ein.
+
+**Absatzlaenge ist bindend.** Der Verfasser hat am 25.09.2026 zweimal
+verlangt, die Absaetze laenger zu fassen. Abschnitt 5.1 und 5.2 stehen
+jetzt durchgaengig bei acht Saetzen, der Obergrenze nach Stilregel 1.
+Mehr Laenge ist nur ueber mehr Absaetze zu gewinnen, nicht ueber
+laengere. Die Abschnitte 5.3 bis 5.5 liegen noch bei fuenf bis sieben
+Saetzen je Absatz und sind im jeweiligen Durchgang nachzuziehen.
+`tools/pruefen.py` prueft die Absatzlaenge nicht; das Skript zum
+Auszaehlen liegt im Scratchpad der Sitzung und ist bei Bedarf neu zu
+schreiben.
+
+**Stand der Abschnitte.**
+
+| Abschnitt | Absaetze | Stand |
+|---|---|---|
+| 5.1 Anforderungen und ihre Umsetzung im Produkt | 13 zu je 8 Saetzen | durchgegangen |
+| 5.2 Modellierung und ihre Annahmen | 6 zu je 8 Saetzen | durchgegangen |
+| 5.3 Wirtschaftlichkeit und Wirksamkeit | 4 zu 6 Saetzen | offen |
+| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 zu 6 bis 7 Saetzen | offen |
+| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 zu 6 bis 7 Saetzen | offen |
+
+**Offen, dem Verfasser vorgelegt.**
+
+- *Abrechnungspreis der Kapazitaetsauktion* in 5.2 passt nicht zur
+  Beschaffung der aFRR-Leistung nach pay-as-bid. Gemeint ist vermutlich
+  der gemittelte Zuschlagspreis. Noch nicht geaendert.
+- **Eigenstaendige Ableitung** im letzten Absatz von 5.2 zum Handel im
+  Verbund: ein Pool hielte je Anlage weniger Leistung frei, der Preis
+  fiele niedriger aus. Steht in keinem Kapitel.
+- Die Aussage, die kurative Vorhaltung sei von jeglichen Eingriffen
+  ausgeschlossen, ist **nicht gesetzt**, weil sie in keinem Kapitel
+  steht. Abschnitt 3.1.2 sagt allein, dass Fahrplanaenderungen die
+  Vorhaltung nicht mehr aufheben. Soll die staerkere Aussage stehen,
+  waere sie in Kapitel 3 festzulegen.
+- Der Push des Commits `2fc1be7` vom 24.09.2026 steht beim Verfasser
+  noch aus, GitHub hat mit einem Internal Server Error geantwortet.
+
+**Begriff.** *FCA* kommt in der Arbeit nicht vor. Der gefuehrte Begriff
+ist die *flexible Netzanschlussvereinbarung* nach Paragraf 17 Absatz 2b
+EnWG aus Abschnitt 2.1, Beleg `bundesnetzagentur_faq_2025`.
+
+
 Build sauber, Biber ohne Warnung, **111 Seiten**, Stand 23.09.2026 abends. `python tools/pruefen.py
 --alle` meldet allein den Altbefund in `chapters/chapter_5.tex` Zeile 91.
 `main.tex` bindet die Kapitel 1 bis 4 ein, 5 und 6 sind auskommentiert; die
@@ -259,6 +306,7 @@ Am 22.09.2026 aufgeräumt, weil das Wurzelverzeichnis unübersichtlich wurde.
 | `WORKFLOW.md` | Vorgehen: Absatzplan (3), Kommentardurchgang (7), Arbeitsweise am Absatz (10) |
 | `ENTSCHEIDUNGSPROTOKOLL.md` | Nachweis aller Entscheidungen, nur anhängen, nie ganz lesen |
 | `README.md` | Beschreibung des Repositorys |
+| `AUSBLICK.md` | **Sammeldatei für den Ausblick, angelegt am 25.09.2026.** Alles, was der Verfasser für Abschnitt 6.2 bestimmt, wird hier unmittelbar eingetragen, mit Herkunft, zurückgenommenem Wortlaut und Begründung. |
 | `AUFTRAG_KAPITEL_5.md` | Lesekarte für Kapitel 5 mit jeder Fundstelle und dem Material für die Diskussion. **Abschnitt 8 ist am 24.09.2026 erledigt**, die Gliederung steht, der dortige Strukturvorschlag ist überholt. Die Abschnitte 1 bis 7 und 9 gelten weiter. |
 | ~~`AUFTRAG_REFERENZAUFTEILUNG.md`~~ | **Am 24.09.2026 erledigt und nach `archiv/` verschoben.** Die Lieferung beantwortet ihn in ERGEBNISSE Abschnitt 7.14, und Abschnitt 4.6.4 steht jetzt auf dieser Aufteilung. |
 

@@ -15596,6 +15596,119 @@ von der Abrufverguetung zu trennen.
 Saetzen. `python tools/pruefen.py --alle` ohne Befund, `tools/pruefe_stil.py`
 ohne Verstoss, 119 Seiten.
 
+### 25.09.2026, Abschnitt 5.1 und 5.2 im Durchgang mit dem Verfasser
+
+**Teilnahme, Szenario des unentgeltlichen Eingriffsrechts.** Vorgabe des
+Verfassers: ein Akteur kennt seine Sensitivitaet nicht, erfaehrt sie aber
+mit dem Zuschlag, und ein Handel am IDC in der engpassverschaerfenden
+Richtung liefe in eine Abregelung. Grundlage ist Abschnitt 2.1, wonach
+flexible Netzanschlussvereinbarungen nach Paragraf 17 Absatz 2b EnWG dem
+Netzbetreiber ein unentgeltliches Eingriffsrecht einraeumen, ausgeloest
+allein bei engpassverschaerfender Wirkung, Beleg
+`bundesnetzagentur_faq_2025`.
+
+**Der Ausdruck FCA aus der Vorgabe ist nicht gesetzt.** Er kommt in keinem
+Kapitel und nicht im Abkuerzungsverzeichnis vor. Der Text verwendet den
+gefuehrten Begriff *flexible Netzanschlussvereinbarung*.
+
+**Nicht gesetzt ist die Aussage, die kurative Vorhaltung sei von jeglichen
+Eingriffen ausgeschlossen.** Sie steht in keinem Kapitel. Abschnitt 3.1.2
+sagt allein, dass Fahrplanaenderungen nach der letzten Vorschaurechnung die
+Vorhaltung nicht mehr aufheben. Der Text traegt die belegbare Fassung,
+naemlich dass die reservierte Leistung nicht vermarktet ist. **Offener
+Punkt**, falls die staerkere Aussage gewuenscht ist, waere sie in Kapitel 3
+festzulegen.
+
+**Praezisierung gegenueber der Vorgabe.** Ein Handel am IDC loest das
+Eingriffsrecht nur in der engpassverschaerfenden Richtung aus, nicht in der
+entlastenden. Der Text nennt die Richtung deshalb eigens.
+
+**Einplanung und Rueckbeschaffung sind unterschieden.** Vorgabe des
+Verfassers. Eine noch nicht vermarktete Stunde wird freigehalten, eine
+bereits vermarktete zurueckbeschafft, wobei der Akteur eine
+engpassverschaerfende Position aufloest und das Netz entlastet. Die Kosten
+der Rueckbeschaffung gehen als Opportunitaet in den Gebotspreis ein.
+
+**Berichtigt: die Begruendung des Knappheitsaufschlags.** Zurueckgenommener
+Wortlaut, nicht wieder aufzunehmen: *An einem Netzknoten mit wenigen
+wirksamen Anlagen liegt das Gebot zudem ueber dem ermittelten kurativen
+Reservierungspreis, denn dieser Preis ist eine Untergrenze und kein
+Marktergebnis.* Nicht die Eigenschaft des Preises als Untergrenze hebt das
+Gebot, sondern die fehlende Liquiditaet am Netzknoten.
+
+**Gestrichen: die Einschraenkung auf die Bezugsanlage.** Zurueckgenommener
+Wortlaut, nicht wieder aufzunehmen: *Der Befund gilt fuer die Bezugsanlage,
+denn der kurative Reservierungspreis folgt ihren Erloesmoeglichkeiten. Fuer
+andere Technologien und andere Netzknoten ist die Teilnahme gesondert zu
+pruefen.* Der Befund gilt ebenso fuer Erzeugungsanlagen.
+
+**Vertraeglichkeit entschaerft und geteilt.** Vorgabe des Verfassers: zu
+hart formuliert. Der erste Absatz traegt den Befund, der zweite die beiden
+Gegenkraefte, naemlich die vom UENB gesteuerte Menge und die Lage der
+kurativen Ausschreibung hinter den Ausschreibungen der Regelleistung.
+**Damit ist die eigenstaendige Ableitung zurueckgenommen**, die
+Vertraeglichkeit sei allein ueber eine Mengenbegrenzung zu erfuellen. Der
+Schluss nennt jetzt Menge und Lage der Ausschreibung. Der Einstieg *Die
+schaerfste der acht Anforderungen* ist ebenfalls zurueckgenommen.
+
+**Nicht gesetzt ist der Ausdruck deutlich lukrativer aus der Vorgabe**,
+weil *deutlich* nach Stilregel 15 ausgeschlossen ist. Ebenso ist
+*ausgeschlossen* zu *steht dieser Erwartung entgegen* abgeschwaecht, weil
+der ungesicherte Zuschlag den Erwartungswert senkt und einen hoeheren Erloes
+nicht logisch ausschliesst.
+
+**Poenale neu gefasst und geteilt.** Vorgabe des Verfassers: fuer die Hoehe
+gibt es keine Erfahrungswerte, Schaeden entstehen in unterschiedlichen
+Groessenordnungen, und die Haftung gehoert zur Hoehe. Zurueckgenommener
+Wortlaut, nicht wieder aufzunehmen: *Ein Massstab fuer ihre Hoehe fehlt,
+denn sie richtet sich nach dem Schaden und nach den Kosten, die aus der
+fehlenden Lieferfaehigkeit entstehen.* Ebenso zurueckgenommen: *Eine
+Abstufung nach dem Grad der Abweichung scheidet nach Abschnitt 3.1.1 aus,
+waehrend eine Abstufung nach der Schwere des Falls moeglich bleibt.*
+
+**Abschnitt 5.2 neu eingeleitet.** Vorgabe des Verfassers. Die Einleitung
+sagt zuerst, was das Optimierungsmodell geleistet hat, naemlich Erkenntnisse
+ueber Hoehe, zeitliches Muster und Einfluesse, und benennt dann die
+Vereinfachungen, naemlich die zeitliche Betrachtung, die Abbildung von aFRR
+und IDC ueber Preisreihen, den Ausschluss der Intraday-Auktionen und den
+Handel im Verbund. Zurueckgenommener Wortlaut, nicht wieder aufzunehmen:
+*Der kurative Reservierungspreis folgt aus dem Optimierungsmodell, sodass
+dessen Annahmen zu pruefen sind.* Die aFRR hat dadurch einen eigenen Absatz.
+
+**EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen.** Im letzten
+Absatz von 5.2: *Ein Pool mehrerer Anlagen erfuellte eine kurative Zusage
+aus dem Verbund und hielte dafuer je Anlage weniger Leistung frei. Der
+kurative Reservierungspreis fiele in einem solchen Verbund niedriger aus als
+fuer die Bezugsanlage allein.* Das steht in keinem Kapitel und folgt aus der
+Ueberlegung, nicht aus einer Rechnung.
+
+**Berichtigt.** *Sanktion* heisst *Poenale*, im Absatz zur Perspektive in
+5.2 nachgezogen.
+
+**Absatzlaengen.** Vorgabe des Verfassers: die Absaetze sind zu kurz. Alle
+Absaetze in 5.1 und 5.2 stehen jetzt bei acht Saetzen, der Obergrenze nach
+Stilregel 1. Mehr Laenge ist nur ueber mehr Absaetze zu gewinnen. Die neuen
+Saetze stammen aus dem Bestand der Arbeit, naemlich Entscheidung 14 zum
+Gegenstand der Abrufverguetung, Abschnitt 2.1 zur festgelegten Zahl von
+Stunden des Eingriffsrechts, Abschnitt 3.2 zur Zeitscheibe der
+aFRR-Leistung von vier Stunden und Entscheidung 5 zum
+opportunitaetskostenbasierten Teil des Gebots.
+
+**Offener Punkt.** Der Ausdruck *Abrechnungspreis der Kapazitaetsauktion* in
+5.2 passt nicht zur Beschaffung der aFRR-Leistung nach pay-as-bid. Gemeint
+ist vermutlich der gemittelte Zuschlagspreis. Dem Verfasser vorgelegt, noch
+nicht geaendert.
+
+**Ausblick.** `AUSBLICK.md` ist angelegt und sammelt, was in Abschnitt 6.2
+gehoert. Erster Eintrag ist die Wirksamkeit der kurativen Reservierung je
+Netzknoten, am 25.09.2026 aus 5.1 gestrichen.
+
+**Stand.** Abschnitt 5.1 traegt dreizehn Absaetze zu je acht Saetzen,
+Abschnitt 5.2 sechs Absaetze zu je acht Saetzen. 5.3 bis 5.5 stehen noch bei
+fuenf bis sieben Saetzen je Absatz und sind im jeweiligen Durchgang
+nachzuziehen. `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 121 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
