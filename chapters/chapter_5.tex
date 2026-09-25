@@ -1107,8 +1107,14 @@ Solche Fahrplanänderungen entziehen sich der Betriebsplanung des Engpassmanagem
 Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
 Mit wachsendem Bestand lässt sich der Redispatch deshalb weniger zuverlässig einplanen.
 
-Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf.
-Die Anschlussleistungen der geplanten Anlagen sind jedoch so hoch, dass eine ausreichende Marge die Netzkapazität unwirtschaftlich beschneidet.
+% BESTAETIGT UND BEGRUENDET am 25.09.2026, Vorgabe des Verfassers: eine
+% Sicherheitsmarge ist immer vergeudetes Potenzial und damit
+% unwirtschaftlich. Der Grund steht jetzt im Text.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf.
+%Die Anschlussleistungen der geplanten Anlagen sind jedoch so hoch, dass eine ausreichende Marge die Netzkapazität unwirtschaftlich beschneidet.
+Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, hält dafür aber Übertragungskapazität ungenutzt frei.
+Die Anschlussleistungen der geplanten Anlagen sind so hoch, dass eine ausreichende Marge zu viel Kapazität bindet.
 Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und die Beschlusskammer hat seine Behandlung einem späteren Hinweis vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
 Der \ac{ÜNB} setzt ein \ac{BESS} im Engpassmanagement damit bislang nicht ein.
 Der kurative Marktmechanismus bindet ein \ac{BESS} dagegen in das Engpassmanagement ein.
@@ -1134,10 +1140,25 @@ Die Vorhaltung von \ac{aFRR}-Leistung ist der nächste Markt, der diesen Punkt e
 %Ein Betreiber sucht deshalb nach weiteren Erlösquellen.
 % Zahlen sind verbal gesetzt, weil die Diskussion fast keine Zahlen
 % tragen soll.
-Eine Sensitivität mit gesenkten Preisen der \ac{aFRR} und des \ac{IDC} lässt den Markterlös der Bezugsanlage um ein Sechstel nachgeben.
+% BESTAETIGT UND BEGRUENDET am 25.09.2026, Vorgaben des Verfassers.
+% Der Markterloes gibt nach, weil der Wettbewerb im kurzfristigen Handel
+% zunimmt. Die Wettbewerbsfaehigkeit des kurativen Marktmechanismus ist
+% als BEDINGUNG fuer beide Seiten gesetzt, naemlich ein Preis unter dem
+% kostenbasierten Redispatch fuer den UENB und ein Erloes ueber den
+% Opportunitaeten fuer den Akteur. In dieser bedingten Form
+% widerspricht die Aussage Abschnitt 4.6.4 nicht, der allein sagt, dass
+% die kurative Bindung gegenueber dem Markt nicht guenstiger wird.
+% Der Satz zum Anteil der aFRR faellt dafuer, weil derselbe Befund in
+% Abschnitt 5.2 und in Abschnitt 5.3 schon steht.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine Sensitivität mit gesenkten Preisen der \ac{aFRR} und des \ac{IDC} lässt den Markterlös der Bezugsanlage um ein Sechstel nachgeben.
+%Der kurative Reservierungspreis gibt dabei weniger nach als der Markterlös, sodass die kurative Bindung gegenüber dem Markt nicht günstiger wird.
+%Die \ac{aFRR} trägt auch dann rund drei Viertel des Erlöses, sodass der kurative Reservierungspreis ein Preis gegen die Regelleistung bleibt.
+%Ein Betreiber sucht gleichwohl nach weiteren Erlösquellen, denn sein Markterlös fällt absolut.
+Eine Sensitivität mit gesenkten Preisen der \ac{aFRR} und mit mehr Wettbewerb im kurzfristigen Handel lässt den Markterlös der Bezugsanlage um ein Sechstel nachgeben.
 Der kurative Reservierungspreis gibt dabei weniger nach als der Markterlös, sodass die kurative Bindung gegenüber dem Markt nicht günstiger wird.
-Die \ac{aFRR} trägt auch dann rund drei Viertel des Erlöses, sodass der kurative Reservierungspreis ein Preis gegen die Regelleistung bleibt.
 Ein Betreiber sucht gleichwohl nach weiteren Erlösquellen, denn sein Markterlös fällt absolut.
+Lukrativ ist der kurative Marktmechanismus dabei nur für beide Seiten zugleich, denn der \ac{ÜNB} braucht einen Preis unter dem kostenbasierten Redispatch und der Akteur einen Erlös über seinen Opportunitäten.
 
 % ---------------------------------------------------------------
 \section{Umsetzung, systemweite Ausrollung und Forschungsbedarf}
@@ -1197,7 +1218,12 @@ Mit einer systemweiten Ausrollung ändert sich der Zweck der kurativen Systemfü
 Heute dient eine kurative Maßnahme der Systemsicherheit, denn sie hält das N-1-Kriterium bei höherer Auslastung ein.
 Ein Netz mit kurativer Reservierung an vielen Netzknoten nutzt die bestehende Kapazität dagegen planmäßig weiter aus.
 Die kurative Maßnahme wird damit zur Maßnahme der Effizienz.
-Das Volumen des Engpassmanagements sinkt, soweit die höhere Auslastung eine Redispatchmaßnahme erspart.
+% BESTAETIGT UND PRAEZISIERT am 25.09.2026, Vorgabe des Verfassers: es
+% sinkt nicht um eine einzelne Massnahme, sondern das
+% Engpassmanagementvolumen insgesamt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Das Volumen des Engpassmanagements sinkt, soweit die höhere Auslastung eine Redispatchmaßnahme erspart.
+Das Volumen des Engpassmanagements sinkt insgesamt, soweit die höhere Auslastung den Bedarf an Redispatch mindert.
 Voraussetzung ist ein Bestand wirksamer Anlagen je Netzknoten und ein Prozess, der die Maßnahmen verlässlich einplant.
 Beides ist heute nicht gegeben.
 Der Übergang von der Sicherheitsmaßnahme zur Effizienzmaßnahme ist deshalb ein Entwicklungspfad und kein Zustand.

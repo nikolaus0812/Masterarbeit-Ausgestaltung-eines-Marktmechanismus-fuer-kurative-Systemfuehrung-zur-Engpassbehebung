@@ -73,11 +73,10 @@ schreiben.
 - Aus 5.3 ist der Satz entfernt, eine Verguetung der kurativen Vorhaltung
   verlange eine eigene Struktur. Er gehoert zum geltenden Rahmen in 5.5 und
   ist beim Durchgang dort aufzunehmen.
-- **Fuenf eigenstaendige Ableitungen** warten auf Bestaetigung, naemlich der
-  Anweisungszeitpunkt als Kostenfaktor, das guenstigere Gebot fuer
-  anschliessende Stunden, die unwirtschaftliche Sicherheitsmarge, das
-  zusaetzliche Produkt fuer die Abloesung und die Minderung des
-  Engpassmanagementvolumens.
+- Die eigenstaendigen Ableitungen sind am 25.09.2026 vom Verfasser
+  bestaetigt und mit seinen Begruendungen im Text gesetzt. Offen bleiben
+  allein der Anweisungszeitpunkt als Kostenfaktor in 5.3 und das
+  zusaetzliche Produkt fuer die Abloesung in 5.5.
 - **Widerspruch aufgeloest:** die Aussage, der kurative Marktmechanismus
   werde mit wachsendem Bestand wettbewerbsfaehiger, widersprach Abschnitt
   4.6.4 und ist zurueckgenommen. Dort steht, dass die kurative Bindung

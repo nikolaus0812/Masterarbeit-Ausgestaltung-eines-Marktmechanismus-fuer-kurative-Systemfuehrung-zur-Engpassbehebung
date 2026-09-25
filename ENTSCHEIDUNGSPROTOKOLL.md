@@ -16026,6 +16026,45 @@ sechs. Acht Saetze tragen alle Absaetze von 5.1 bis 5.3 sowie die neuen in
 von 5.4 und vier Absaetze von 5.5. `python tools/pruefen.py --alle` ohne
 Befund, `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 123 Seiten.
 
+### 25.09.2026, vier Ableitungen vom Verfasser bestaetigt
+
+Der Verfasser hat die vier eigenstaendigen Ableitungen aus 5.4 und 5.5
+bestaetigt und je eine Begruendung gegeben. Die Begruendungen stehen jetzt im
+Text, damit keine Aussage unbelegt bleibt.
+
+**Sicherheitsmarge.** Bestaetigt. Begruendung des Verfassers: eine
+Sicherheitsmarge ist immer vergeudetes Potenzial und damit unwirtschaftlich.
+Der Text sagt jetzt, dass die Marge Uebertragungskapazitaet ungenutzt frei
+haelt und dass die Anschlussleistungen der geplanten Anlagen zu hoch dafuer
+sind.
+
+**Sinkender Markterloes.** Bestaetigt. Begruendung des Verfassers: mehr
+Wettbewerb im kurzfristigen Handel. Der Satz zur Sensitivitaet nennt diesen
+Grund jetzt.
+
+**Wettbewerbsfaehigkeit des kurativen Marktmechanismus.** Bestaetigt, aber
+allein als BEDINGUNG fuer beide Seiten. Begruendung des Verfassers: fuer den
+UENB wird der Mechanismus lukrativ, je guenstiger er gegenueber dem
+kostenbasierten Redispatch ist, fuer den Akteur, je mehr der Erloes ueber
+seinen Opportunitaeten liegt. In dieser bedingten Form widerspricht die
+Aussage Abschnitt 4.6.4 nicht, der allein sagt, dass die kurative Bindung
+gegenueber dem Markt nicht guenstiger wird. Die frueher zurueckgenommene
+unbedingte Fassung bleibt zurueckgenommen.
+
+**Engpassmanagementvolumen.** Bestaetigt und praezisiert. Es sinkt nicht um
+eine einzelne Massnahme, sondern insgesamt, soweit die hoehere Auslastung den
+Bedarf an Redispatch mindert.
+
+**Gefallen.** Der Satz, die aFRR trage auch in der Zukunftsvariante rund drei
+Viertel des Erloeses, sodass der kurative Reservierungspreis ein Preis gegen
+die Regelleistung bleibe. Derselbe Befund steht in Abschnitt 5.2 und in
+Abschnitt 5.3.
+
+**Stand.** Keine offene eigenstaendige Ableitung mehr in Kapitel 5. Offen bei
+sechs bis sieben Saetzen sind die ersten drei Absaetze von 5.4 und vier
+Absaetze von 5.5. `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 123 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
