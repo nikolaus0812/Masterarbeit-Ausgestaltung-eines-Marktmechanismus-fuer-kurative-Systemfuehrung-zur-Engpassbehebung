@@ -15709,6 +15709,104 @@ fuenf bis sieben Saetzen je Absatz und sind im jeweiligen Durchgang
 nachzuziehen. `python tools/pruefen.py --alle` ohne Befund,
 `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 121 Seiten.
 
+### 25.09.2026 abends, zweiter Durchgang durch 5.1 und 5.2
+
+**Absaetze zusammengezogen.** Der Verfasser hat an drei Stellen verlangt, je
+zwei Absaetze zu einem zu machen. Weil beide Absaetze jeweils acht Saetze
+trugen und acht die Obergrenze nach Stilregel 1 ist, sind jedes Mal acht
+Saetze gefallen. Betroffen sind der Zuschlag mit den beiden Arten von
+Stunden, die Vertraeglichkeit und die Poenale. Die gefallenen Saetze stehen
+im Wortlaut als Kommentar in `chapters/chapter_5.tex` und sind nicht wieder
+aufzunehmen. **Offen**, dem Verfasser vorgelegt: drei davon traegt der Text
+jetzt nicht mehr, naemlich die Bedingung der Rueckbeschaffung, die
+Sicherheit des Reservierungserloeses und der Schlusssatz zur Verbindlichkeit.
+
+**Umbruch neu gesetzt.** Der Risikoaufschlag und die Seltenheit des Abrufs
+stehen auf Vorgabe des Verfassers in einem Absatz. Der Umbruch steht dafuer
+vor dem Satz *Denkbar waere*, und die beiden Saetze zum Regime des
+Redispatch sind in den Absatz zur Verguetung gewandert.
+
+**Das Eingriffsrecht steht nur noch in einem Satz.** Vorgabe des Verfassers:
+in Abschnitt 2.1 bereits erklaert. **Damit ist die eigenstaendige Ableitung
+zurueckgenommen**, der Zuschlag nenne die Stunden des erwarteten Engpasses
+und kein anderer Markt gebe diese Auskunft.
+
+**Bestandteile eines Gebots oberhalb der Opportunitaet.** Vorgabe des
+Verfassers. Der Text nennt jetzt den Aufwand aus Praequalifikation,
+Gebotsabgabe und Nachweis, das Risiko aus Abrufwahrscheinlichkeit und
+Poenale nach Entscheidung 5 und den Knappheitsaufschlag, den der Verfasser
+als den kritischsten Bestandteil bezeichnet. Zurueckgenommener Wortlaut,
+nicht wieder aufzunehmen: *Der ermittelte Preis ist ohnehin der
+opportunitaetskostenbasierte Teil eines Gebots und nicht das Gebot selbst,
+denn Abrufwahrscheinlichkeit und Poenale bleiben ausser Betracht.*
+
+**Begriff ersetzt.** *Redispatchplanung* heisst *Planung des
+Engpassmanagements*, weil der UENB auch kurative Massnahmen plant. Betroffen
+sind drei Stellen, naemlich eine in Abschnitt 3.1.2 und zwei in 5.1. Der
+Ausdruck war eine Setzung des Verfassers aus dem Eintrag zu 3.1.2 und ist
+damit zurueckgenommen. Der doppelte Genitiv ist aufgeloest zu *Rechenlaeufe
+zur Planung des Engpassmanagements*.
+
+**Begriff berichtigt.** *Abrechnungspreis der Kapazitaetsauktion* heisst
+*gemittelter Zuschlagspreis*, denn die aFRR-Leistung wird nach pay-as-bid
+verguetet. Abschnitt 3.2 nennt den mengengewichteten Durchschnitt der
+Zuschlaege. Damit ist der offene Punkt vom Vormittag erledigt.
+
+**Annahmen ueber die aFRR ausgebaut.** Vorgabe des Verfassers, jetzt drei
+Absaetze. Leistungsseite mit dem gemittelten Zuschlagspreis, Energieseite mit
+der Menge zum Grenzpreis als eigentlichem Problem, und die Kopplung der
+gelieferten Energie an die vorgehaltene Leistung mit der Folge, dass die
+Uebertragung auf andere Technologien deren Gebotsstrategie voraussetzt.
+
+**NICHT GESETZT aus der Vorgabe.** Der Verfasser fuehrte an, der
+Revenue-Index rechne ebenfalls mit dem gemittelten Leistungspreis. Abschnitt
+3.3 sagt das nicht. Die Rechtfertigung traegt statt dessen das Argument aus
+Abschnitt 3.2, wonach ein hoeherer Zuschlag auf dem Bietverhalten beruht und
+nicht auf einem technischen Vorteil. Der Revenue-Index stammt zudem vom ISEA
+gemeinsam mit der enspired GmbH und nicht vom IAEW.
+
+**Preiskenntnis neu begruendet.** Vorgabe des Verfassers: die vollstaendige
+Preiskenntnis schliesst fuer die Spotmaerkte eine Unterschaetzung der
+Opportunitaet aus, und gerade das ist wichtig, weil der kurative Markt mit
+den Spotmaerkten um Leistung konkurriert. Der Optionswert nach Weber
+entfaellt deshalb ohne Verlust, weil die Bezugsanlage im Referenzfahrplan
+bereits bestmoeglich vermarktet ist. Zurueckgenommener Wortlaut, nicht wieder
+aufzunehmen: *Beide Verzerrungen laufen gegeneinander, sodass der ermittelte
+kurative Reservierungspreis als opportunitaetskostenbasierter Wert zu lesen
+ist.*
+
+**IDC-Sensitivitaet.** Der Verfasser hat die Fassung vor dieser Sitzung als
+gut bezeichnet und verlangt, die neuen Punkte in sie zu integrieren statt an
+ihre Stelle zu setzen. Der Absatz traegt jetzt den alten Aufbau, ergaenzt um
+den Anlass der Sensitivitaet, ihren Befund, die schwerere Verdraengbarkeit
+der gehobenen Stunden und den Wert des IDC im mehrfachen Handel um den
+mittleren Preis. Die allgemeine Feststellung, eine Sensitivitaet koenne die
+Frage verfehlen, steht auf Vorgabe des Verfassers jetzt in der Einleitung von
+5.2.
+
+**Pool berichtigt, eigenstaendige Ableitung zurueckgenommen.** Die Fassung
+vom Vormittag lautete: *Ein Pool mehrerer Anlagen erfuellte eine kurative
+Zusage aus dem Verbund und hielte dafuer je Anlage weniger Leistung frei. Der
+kurative Reservierungspreis fiele in einem solchen Verbund niedriger aus als
+fuer die Bezugsanlage allein.* Sie ist nicht wieder aufzunehmen. Richtig ist
+nach der Vorgabe des Verfassers, dass es im kurativen Markt keine Pools ueber
+mehrere Netzknoten gibt, sondern allenfalls knotenscharfe zum Erreichen einer
+Mindestgroesse. Pools bestehen in der Regelleistung und im Spothandel, und
+diese Verbundvermarktung veraendert die Erloesmoeglichkeiten und damit das
+kurative Gebot.
+
+**Validierung.** Nur noch genannt, naemlich dass der abgebildete Marktumfang
+die Erloesmoeglichkeiten insgesamt nicht unterschaetzt.
+
+**Ausblick.** Zwei Eintraege in `AUSBLICK.md` ergaenzt, naemlich die
+Rolling-Intrinsic-Bewertung des Intradayhandels und die vollstaendige
+Abbildung der Handelsstrategie am IDC.
+
+**Stand.** Abschnitt 5.1 traegt elf Absaetze, Abschnitt 5.2 acht, alle zu je
+acht Saetzen. 5.3 bis 5.5 stehen noch bei fuenf bis sieben Saetzen je Absatz.
+`python tools/pruefen.py --alle` ohne Befund, `tools/pruefe_stil.py` ohne
+Verstoss in Kapitel 5, 121 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

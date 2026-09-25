@@ -42,20 +42,18 @@ schreiben.
 
 | Abschnitt | Absaetze | Stand |
 |---|---|---|
-| 5.1 Anforderungen und ihre Umsetzung im Produkt | 13 zu je 8 Saetzen | durchgegangen |
-| 5.2 Modellierung und ihre Annahmen | 6 zu je 8 Saetzen | durchgegangen |
+| 5.1 Anforderungen und ihre Umsetzung im Produkt | 11 zu je 8 Saetzen | durchgegangen, Absaetze zusammengezogen |
+| 5.2 Modellierung und ihre Annahmen | 8 zu je 8 Saetzen | durchgegangen |
 | 5.3 Wirtschaftlichkeit und Wirksamkeit | 4 zu 6 Saetzen | offen |
 | 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 zu 6 bis 7 Saetzen | offen |
 | 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 zu 6 bis 7 Saetzen | offen |
 
 **Offen, dem Verfasser vorgelegt.**
 
-- *Abrechnungspreis der Kapazitaetsauktion* in 5.2 passt nicht zur
-  Beschaffung der aFRR-Leistung nach pay-as-bid. Gemeint ist vermutlich
-  der gemittelte Zuschlagspreis. Noch nicht geaendert.
-- **Eigenstaendige Ableitung** im letzten Absatz von 5.2 zum Handel im
-  Verbund: ein Pool hielte je Anlage weniger Leistung frei, der Preis
-  fiele niedriger aus. Steht in keinem Kapitel.
+- Drei Saetze sind beim Zusammenziehen der Absaetze gefallen und
+  stehen dem Verfasser zur Rueckholung offen, naemlich die Bedingung der
+  Rueckbeschaffung, die Sicherheit des Reservierungserloeses und der
+  Schlusssatz zur Verbindlichkeit.
 - Die Aussage, die kurative Vorhaltung sei von jeglichen Eingriffen
   ausgeschlossen, ist **nicht gesetzt**, weil sie in keinem Kapitel
   steht. Abschnitt 3.1.2 sagt allein, dass Fahrplanaenderungen die
