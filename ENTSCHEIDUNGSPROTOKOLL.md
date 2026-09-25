@@ -15936,6 +15936,96 @@ korrigiert.
 zu je acht Saetzen. `python tools/pruefen.py --alle` ohne Befund,
 `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 121 Seiten.
 
+### 25.09.2026 nachts, 5.3 abgeschlossen, 5.4 neu aufgebaut, 5.5 ergaenzt
+
+**Abschnitt 5.3 abgeschlossen.** Vier Vorgaben des Verfassers eingearbeitet.
+Der erste Satz nennt jetzt die wirtschaftliche Sicht. Die kostenbasierte
+Verguetung ist der Grund fuer den fehlenden klaren Preis des Redispatch, der
+Folgesatz ist mitgezogen. Die Dopplung zur maßgeblichen Technologie ist durch
+den Dimensionsunterschied beider Groessen ersetzt, der beim Neuaufbau
+verloren gegangen war. Die Unsicherheit ist als Unsicherheit im
+Vergleichspreis fuer den praeventiven Redispatch benannt. Die Einplanbarkeit
+gilt nicht pauschal, sondern fuer einen grossen Teil der Stunden.
+
+**Das Thema aFRR ist aus 5.3 nach 5.2 gewandert.** Vorgabe des Verfassers:
+der Gebotsschluss ist eine Frage der Modellierung. Der aFRR-Absatz in 5.2
+ist dafuer geteilt, naemlich Leistungsseite mit Gebotsschluss und
+Energieseite mit Kopplung. Abschnitt 5.3 fuehrt jetzt von der
+Einplanbarkeit unmittelbar in den Tagesverlauf.
+
+**Anlagen aus erneuerbaren Energien als eigener Absatz in 5.3.** Vorgabe des
+Verfassers. Neu ist, dass in Stunden mit hohem Anteil erneuerbarer Erzeugung
+die Ruecknahme der Einspeisung ohnehin zur Verfuegung steht.
+**PRAEZISIERUNG gegenueber der Vorgabe:** die Wirksamkeit am Engpass gilt
+nicht fuer beide Technologien gleich. Abschnitt 2.2 sagt, dass Windenergie im
+Norden einen Nord-Sued-Engpass verschaerft, Photovoltaik im Sueden dagegen
+nicht. Der Text nennt den Unterschied deshalb eigens.
+
+**Zuschnitt des Produkts eingeordnet.** Vorgabe des Verfassers: die
+Tages-Zeitscheibe stand als unwirtschaftlich da, obwohl eine Reservierung
+des ganzen Tages nie der Zweck war. Der Absatz nennt jetzt, was tatsaechlich
+beschafft wird, naemlich einige aneinander anschliessende Stunden, und
+bemisst die vorgehaltene Energie daran, dass der Zustand bis zur abloesenden
+Massnahme zu halten ist.
+
+**Schlussabsatz fuer 5.3.** Vorgabe des Verfassers. Der Markt ist der
+kostenguenstige Weg der Beschaffung, dem steht der Nutzen gegenueber, und der
+UENB hat ueber Zuschnitt und Haeufigkeit der Einplanung selbst Einfluss.
+**NICHT GESETZT** ist der ausdrueckliche Vorverweis auf Abschnitt 5.5, weil
+Stilregel 15 strukturelle Vorverweise ausschliesst, und ebenso nicht die
+Gewissheit in erster Person, weil Stilregel 11 zurueckhaltende
+Behauptungsstaerke verlangt.
+
+**Abschnitt 5.4, letzter Absatz vollstaendig neu aufgebaut.** Vorgabe des
+Verfassers, drei Absaetze statt einem:
+
+1. Das BESS als neuer Akteur. Das Marktdesign laesst kurzfristige
+   Fahrplanaenderungen zu Recht zu, doch ein BESS fuehrt seinen begrenzten
+   Energieinhalt an den Grenzen seiner Leistung und entzieht sich damit der
+   Betriebsplanung des Engpassmanagements.
+2. Eine Sicherheitsmarge loest das nicht. Ein BESS ist durch die
+   kostenbasierte Verguetung kein Teil des Redispatchregimes. Der kurative
+   Marktmechanismus bindet es ein und nimmt ihm zugleich die Leistung.
+3. Der Ausbau veraendert die Maerkte.
+
+**WIDERSPRUCH GEMELDET UND AUFGELOEST.** Die Aussage des Verfassers, der
+kurative Marktmechanismus werde mit wachsendem Bestand wettbewerbsfaehiger,
+widerspricht Abschnitt 4.6.4. Die Zukunftsvariante zeigt, dass der Markterloes
+um 17,0 Prozent nachgibt, die Zahlung bei vollstaendiger Verdraengung aber nur
+um 16,0 Prozent, sodass der Aufschlag von 23,3 auf 24,8 Prozent steigt.
+Abschnitt 4.6.4 stellt deshalb fest, die kurative Bindung werde gegenueber dem
+Markt nicht guenstiger. **Zurueckgenommen und nicht wieder aufzunehmen:** *Der
+kurative Marktmechanismus gewinnt damit an Wettbewerbsfaehigkeit, je groesser
+der Bestand an BESS wird.* Belegbar ist allein, dass der Markterloes absolut
+faellt und ein Betreiber deshalb nach weiteren Erloesquellen sucht.
+
+**Abschnitt 5.5 um zwei Absaetze ergaenzt.** Beide nach Einschaetzung des
+Verfassers dort richtig eingeordnet. Der erste behandelt die Abloesung einer
+kurativen Massnahme, naemlich allgemeiner Redispatch oder eine eigens
+beschaffte Abloesemassnahme nach einem Redundanzkonzept, mit der Folge fuer
+die noetige vorgehaltene Energie. Der zweite behandelt den Uebergang von der
+Massnahme der Systemsicherheit zur Massnahme der Effizienz.
+
+**EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser zu bestaetigen.** Erstens, dass
+der Anweisungszeitpunkt die Kosten einer Redispatchmassnahme mitbestimmt.
+Zweitens, dass ein Gebot fuer einige anschliessende Stunden unter dem
+ermittelten Wert liegt. Drittens, dass eine ausreichende Sicherheitsmarge die
+Netzkapazitaet unwirtschaftlich beschneidet. Viertens, dass ein zusaetzliches
+Produkt mit laengerem Zeitfenster die Abloesung uebernehmen koennte.
+Fuenftens, dass das Volumen des Engpassmanagements sinkt, soweit die hoehere
+Auslastung eine Redispatchmassnahme erspart. Alle fuenf folgen aus Vorgaben
+des Verfassers und sind nicht gerechnet.
+
+**OFFENER PUNKT.** Aus 5.3 ist der Satz entfernt, eine Verguetung der
+kurativen Vorhaltung verlange eine eigene Struktur. Er gehoert zum geltenden
+Rahmen in Abschnitt 5.5 und ist beim Durchgang durch 5.5 dort aufzunehmen.
+
+**Stand.** Abschnitt 5.1 elf Absaetze, 5.2 sieben, 5.3 sechs, 5.4 sechs, 5.5
+sechs. Acht Saetze tragen alle Absaetze von 5.1 bis 5.3 sowie die neuen in
+5.4 und 5.5. Offen bei sechs bis sieben Saetzen sind die ersten drei Absaetze
+von 5.4 und vier Absaetze von 5.5. `python tools/pruefen.py --alle` ohne
+Befund, `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 123 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

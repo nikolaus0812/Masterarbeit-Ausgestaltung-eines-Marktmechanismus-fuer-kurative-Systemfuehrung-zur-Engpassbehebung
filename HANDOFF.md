@@ -43,10 +43,10 @@ schreiben.
 | Abschnitt | Absaetze | Stand |
 |---|---|---|
 | 5.1 Anforderungen und ihre Umsetzung im Produkt | 11 zu je 8 Saetzen | durchgegangen |
-| 5.2 Modellierung und ihre Annahmen | 6 zu je 8 Saetzen | durchgegangen, Verfahren steht vorn |
-| 5.3 Wirtschaftlichkeit und Wirksamkeit | 6 zu je 8 Saetzen | am 25.09.2026 neu aufgebaut, Gebotsschluss beruecksichtigt |
-| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 zu 6 bis 7 Saetzen | offen |
-| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 zu 6 bis 7 Saetzen | offen |
+| 5.2 Modellierung und ihre Annahmen | 7 zu je 8 Saetzen | durchgegangen, Verfahren und Gebotsschluss stehen hier |
+| 5.3 Wirtschaftlichkeit und Wirksamkeit | 6 zu je 8 Saetzen | am 25.09.2026 neu aufgebaut und durchgegangen |
+| 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 6, davon 3 zu je 8 Saetzen | letzter Absatz neu aufgebaut, erste drei offen |
+| 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 6, davon 2 zu je 8 Saetzen | Abloesung und Effizienzwende ergaenzt, Rest offen |
 
 **Offen, dem Verfasser vorgelegt.**
 
@@ -70,6 +70,18 @@ schreiben.
 - Der Absatz zum Gebotsschluss in 5.3 ist der Sache nach eine Grenze der
   Modellierung und stuende damit auch in 5.2. Er steht in 5.3, weil er
   dort die wirtschaftliche Aussage unmittelbar korrigiert.
+- Aus 5.3 ist der Satz entfernt, eine Verguetung der kurativen Vorhaltung
+  verlange eine eigene Struktur. Er gehoert zum geltenden Rahmen in 5.5 und
+  ist beim Durchgang dort aufzunehmen.
+- **Fuenf eigenstaendige Ableitungen** warten auf Bestaetigung, naemlich der
+  Anweisungszeitpunkt als Kostenfaktor, das guenstigere Gebot fuer
+  anschliessende Stunden, die unwirtschaftliche Sicherheitsmarge, das
+  zusaetzliche Produkt fuer die Abloesung und die Minderung des
+  Engpassmanagementvolumens.
+- **Widerspruch aufgeloest:** die Aussage, der kurative Marktmechanismus
+  werde mit wachsendem Bestand wettbewerbsfaehiger, widersprach Abschnitt
+  4.6.4 und ist zurueckgenommen. Dort steht, dass die kurative Bindung
+  gegenueber dem Markt nicht guenstiger wird.
 - Der Push des Commits `2fc1be7` vom 24.09.2026 steht beim Verfasser
   noch aus, GitHub hat mit einem Internal Server Error geantwortet.
 

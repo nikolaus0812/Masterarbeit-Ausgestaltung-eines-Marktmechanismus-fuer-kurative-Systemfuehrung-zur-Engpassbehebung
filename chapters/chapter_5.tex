@@ -670,14 +670,38 @@ Belastbarer als die Höhe einer einzelnen Stunde ist deshalb das Niveau über da
 %Die anteilige Lieferung des Basisfalls begrenzt die Menge deshalb, sagt aber wenig darüber, wie viel eine Einheit zum Grenzpreis tatsächlich liefert.
 %Die anteilige Lieferung koppelt zudem die gelieferte Energie an die vorgehaltene Leistung, sodass die Vorhaltung in der \ac{aFRR} die Opportunität über den Leistungspreis hinaus hebt.
 %Der ermittelte kurative Reservierungspreis folgt damit der Gebotsstrategie der Bezugsanlage und lässt sich nicht ohne Weiteres auf andere Technologien übertragen.
+% GETEILT UND ERGAENZT am 25.09.2026, Vorgabe des Verfassers: der
+% Gebotsschluss der aFRR ist eine Frage der Modellierung und gehoert
+% hierher und nicht nach 5.3. Der erste Absatz traegt die Leistungsseite
+% und den Gebotsschluss, der zweite die Energieseite und die Kopplung.
+% Die Zeitpunkte stehen in Abschnitt 5.1, die gemeinsame Entscheidung
+% aller Maerkte im Modell in Abschnitt 3.1.3.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Unter den geprüften Annahmen trägt die Modellierung der \ac{aFRR} das Ergebnis am stärksten, denn auf sie entfällt der größte Teil des Erlöses.
+%Auf der Leistungsseite unterschätzt der gemittelte Zuschlagspreis die Opportunität, doch ein höherer Zuschlag beruht auf dem Bietverhalten und nicht auf einem technischen Vorteil.
+%Schwerer wiegt die Energieseite, auf der nicht der Grenzpreis entscheidet, sondern die gelieferte Menge.
+%Der Grenzpreis steht erst nach dem Viertelstundenslot fest, sodass ein Akteur die volle Menge allein unter optimalen Bedingungen erreichte.
+%Die anteilige Lieferung des Basisfalls begrenzt die Menge deshalb, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
+%Wie viel eine Einheit zum Grenzpreis tatsächlich liefert, sagt die Annahme gleichwohl nicht.
+%Die anteilige Lieferung koppelt die Energie zudem an die vorgehaltene Leistung, obwohl eine solche Kopplung nicht zwingend ist.
+%Die Vorhaltung in der \ac{aFRR} wird dadurch attraktiver, sodass die Opportunität der Bezugsanlage höher ausfällt als bei einer Technologie mit anderer Gebotsstrategie.
 Unter den geprüften Annahmen trägt die Modellierung der \ac{aFRR} das Ergebnis am stärksten, denn auf sie entfällt der größte Teil des Erlöses.
-Auf der Leistungsseite unterschätzt der gemittelte Zuschlagspreis die Opportunität, doch ein höherer Zuschlag beruht auf dem Bietverhalten und nicht auf einem technischen Vorteil.
-Schwerer wiegt die Energieseite, auf der nicht der Grenzpreis entscheidet, sondern die gelieferte Menge.
+Auf der Leistungsseite setzt das Optimierungsmodell den gemittelten Zuschlagspreis an, der die Opportunität eher unterschätzt.
+Die Ausschreibung der \ac{aFRR}-Leistung schließt jedoch vor der kurativen, sodass ein Akteur seinen Zuschlag dort bereits kennt.
+Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
+Der Leistungspreis der \ac{aFRR} trägt das Niveau des ermittelten Preises deshalb als Rechengröße und nicht als Opportunität des Bietenden.
+Das Gebot orientiert sich gleichwohl an diesem Leistungspreis, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
+Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und ist damit eine Opportunität.
+Das Optimierungsmodell entscheidet beide Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
+
+Schwerer wiegt die Annahme über die Lieferung von \ac{aFRR}-Arbeit, denn dort entscheidet nicht der Grenzpreis, sondern die gelieferte Menge.
 Der Grenzpreis steht erst nach dem Viertelstundenslot fest, sodass ein Akteur die volle Menge allein unter optimalen Bedingungen erreichte.
 Die anteilige Lieferung des Basisfalls begrenzt die Menge deshalb, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
 Wie viel eine Einheit zum Grenzpreis tatsächlich liefert, sagt die Annahme gleichwohl nicht.
+Ein Akteur bietet die Arbeit erst zu dem Preis an, ab dem er die Energie gewinnbringend liefert.
 Die anteilige Lieferung koppelt die Energie zudem an die vorgehaltene Leistung, obwohl eine solche Kopplung nicht zwingend ist.
-Die Vorhaltung in der \ac{aFRR} wird dadurch attraktiver, sodass die Opportunität der Bezugsanlage höher ausfällt als bei einer Technologie mit anderer Gebotsstrategie.
+Die Vorhaltung in der \ac{aFRR} wird dadurch attraktiver, sodass die Opportunität der Bezugsanlage höher ausfällt.
+Eine Übertragung des ermittelten Preises auf eine Technologie mit anderer Gebotsstrategie setzt diese Kopplung deshalb ebenfalls voraus.
 
 % ANGEFUEGT am 25.09.2026: der Optionswert wird erklaert, Stilregel 13.
 % ANGEFUEGT am 25.09.2026: zweiter Grund gegen eine Preisprognose.
@@ -838,13 +862,30 @@ Die Validierung belegt, dass der abgebildete Marktumfang die Erlösmöglichkeite
 %Eine Abrufdauer von einer halben Stunde ist fast zum Preis einer Viertelstunde zu haben und verdoppelt die Zeit für eine Ablösung der Maßnahme.
 %Die Vergütungsstruktur der geltenden Festlegung erfasst den ermittelten Preis nicht, denn sie wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren \cite{bundesnetzagentur_festlegung_2024}.
 %Eine Vergütung der kurativen Vorhaltung verlangt deshalb eine eigene Struktur, zumal für die kurative Reservierung bislang kein Vergütungsrahmen besteht.
-Ob sich die kurative Vorhaltung lohnt, bemisst sich am Preis des bestehenden Engpassmanagements.
-Ein klarer Preis für eine Redispatchmaßnahme lässt sich jedoch nicht angeben.
-Die Vergütung folgt dem Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation} und fällt deshalb für jede Technologie anders aus.
+% PRAEZISIERT am 25.09.2026, Vorgabe des Verfassers: die wirtschaftliche
+% Sicht ist eigens genannt, weil der Abschnitt auch die Wirksamkeit
+% behandelt. Zurueckgenommene Fassung:
+%Ob sich die kurative Vorhaltung lohnt, bemisst sich am Preis des bestehenden Engpassmanagements.
+Ob sich die kurative Vorhaltung aus wirtschaftlicher Sicht lohnt, bemisst sich am Preis des bestehenden Engpassmanagements.
+% ERGAENZT am 25.09.2026, Vorgabe des Verfassers: die kostenbasierte
+% Verguetung ist der Grund. Der Folgesatz ist mitgezogen, damit der
+% Begriff nicht unverbunden stehen bleibt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ein klarer Preis für eine Redispatchmaßnahme lässt sich jedoch nicht angeben.
+%Die Vergütung folgt dem Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation} und fällt deshalb für jede Technologie anders aus.
+Ein klarer Preis für eine Redispatchmaßnahme lässt sich jedoch nicht angeben, denn die Vergütung ist kostenbasiert.
+Die kostenbasierte Vergütung folgt dem Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation} und fällt deshalb für jede Technologie anders aus.
 Hinzu kommt der Zeitpunkt der Anweisung, denn eine kurzfristig umplanende Anlage trägt andere Kosten als eine früh angewiesene.
 Der mittlere Arbeitspreis des präventiven Redispatch gibt deshalb allein einen Anhaltspunkt \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Eine pauschale Anwendung dieses Preises überträgt die Kosten einer Technologie auf eine andere.
-Für das Engpassmanagement bleibt die einzelne Technologie damit die maßgebliche Größe, weil die Kosten an ihr hängen.
+% ERSETZT am 25.09.2026, Vorgabe des Verfassers: der Satz doppelte den
+% vorigen, der schon sagt, dass eine pauschale Anwendung die Kosten
+% einer Technologie auf eine andere uebertraegt. An seine Stelle tritt
+% der Dimensionsunterschied beider Groessen aus Abschnitt 4.5, der beim
+% Neuaufbau von 5.3 verloren gegangen war.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Für das Engpassmanagement bleibt die einzelne Technologie damit die maßgebliche Größe, weil die Kosten an ihr hängen.
+Beide Größen tragen zudem dieselbe Dimension und meinen Verschiedenes, denn der Arbeitspreis vergütet bewegte Arbeit und der kurative Reservierungspreis die Vorhaltung.
 Jeder Vergleich des kurativen Reservierungspreises mit diesem Anhaltspunkt trägt deshalb eine Unsicherheit.
 
 % GEAENDERT am 25.09.2026, Vorgabe des Verfassers. Der Satz, wer den
@@ -880,30 +921,79 @@ Jeder Vergleich des kurativen Reservierungspreises mit diesem Anhaltspunkt träg
 %Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und ist damit eine Opportunität.
 %Das Gebot orientiert sich gleichwohl am Leistungspreis der \ac{aFRR}, weil dieser selbst unter Berücksichtigung von Opportunitäten entstanden ist.
 %Eine Senkung des kurativen Reservierungspreises ist deshalb nicht pauschal über die Regelleistung zu erreichen.
-Trotz dieser Unsicherheit erweist sich der kurative Reservierungspreis als wettbewerbsfähig, denn das Tagesmittel bleibt fast das ganze Jahr unter dem Arbeitspreis des präventiven Redispatch.
-Kurative Maßnahmen lassen sich damit wirtschaftlich einplanen.
-Das Niveau des Preises trägt der Leistungspreis der \ac{aFRR}, denn dieser entfällt mit der reservierten Stunde vollständig.
-Die Ausschreibung der \ac{aFRR}-Leistung schließt jedoch vor der kurativen, sodass ein Akteur seinen Zuschlag dort bereits kennt.
-Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
-Der Leistungspreis der \ac{aFRR} trägt das Niveau deshalb als Rechengröße und nicht als Opportunität des Bietenden.
-Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und trägt mit großen Handelsspannen den Bruchteil der Stunden mit extremen Preisen.
-Eine Senkung des kurativen Reservierungspreises ist deshalb nicht pauschal über die Regelleistung zu erreichen, auch wenn sich das Gebot weiter an deren Preis orientiert.
-
-Über den Tag wechselt, welche Richtung den Preis trägt.
-Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band.
-Die Entladereservierung ist dagegen am Vormittag und am Abend teuer.
+% PRAEZISIERT am 25.09.2026, Vorgabe des Verfassers: die Unsicherheit
+% liegt im Vergleichspreis fuer den praeventiven Redispatch. Der
+% praeventive Redispatch steht deshalb nur noch einmal im Satz.
+% Zurueckgenommene Fassung:
+%Trotz dieser Unsicherheit erweist sich der kurative Reservierungspreis als wettbewerbsfähig, denn das Tagesmittel bleibt fast das ganze Jahr unter dem Arbeitspreis des präventiven Redispatch.
+% EINGESCHRAENKT am 25.09.2026, Vorgabe des Verfassers: die Aussage gilt
+% nicht pauschal, sondern fuer einen grossen Teil der Stunden. Die
+% Groessenordnung traegt der vorige Satz mit dem Tagesmittel.
+% Zurueckgenommene Fassung:
+%Kurative Maßnahmen lassen sich damit wirtschaftlich einplanen.
+% ZUSAMMENGEZOGEN am 25.09.2026, Vorgabe des Verfassers: nach der
+% Einplanbarkeit soll unmittelbar die Analyse der Tageszeiten folgen.
+% Die Saetze zur aFRR und zum Gebotsschluss stehen jetzt in Abschnitt
+% 5.2, weil sie die Modellierung betreffen.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Trotz dieser Unsicherheit im Vergleichspreis für den präventiven Redispatch erweist sich der kurative Reservierungspreis als wettbewerbsfähig, denn sein Tagesmittel bleibt fast das ganze Jahr unter dem Arbeitspreis.
+%Kurative Maßnahmen lassen sich damit in einem großen Teil der Stunden wirtschaftlich einplanen.
+%Das Niveau des Preises trägt der Leistungspreis der \ac{aFRR}, denn dieser entfällt mit der reservierten Stunde vollständig.
+%Die Ausschreibung der \ac{aFRR}-Leistung schließt jedoch vor der kurativen, sodass ein Akteur seinen Zuschlag dort bereits kennt.
+%Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
+%Der Leistungspreis der \ac{aFRR} trägt das Niveau deshalb als Rechengröße und nicht als Opportunität des Bietenden.
+%Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und trägt mit großen Handelsspannen den Bruchteil der Stunden mit extremen Preisen.
+%Eine Senkung des kurativen Reservierungspreises ist deshalb nicht pauschal über die Regelleistung zu erreichen, auch wenn sich das Gebot weiter an deren Preis orientiert.
+%Über den Tag wechselt, welche Richtung den Preis trägt.
+%Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band.
+%Die Entladereservierung ist dagegen am Vormittag und am Abend teuer.
+%Der Preis einer bilanziell ausgeglichenen Vorhaltung ist damit nachts am niedrigsten und mittags am höchsten.
+%Mittags fällt der größte Bedarf an Reduzierung der Einspeisung auf die teuerste Ladereservierung.
+%Preis und benötigte Richtung liegen dort übereinander, was die Beschaffung verteuert.
+%Die Entladereservierung ist zur selben Zeit günstig, sodass eine Maßnahme aus abgeregelter Photovoltaik und entladendem \ac{BESS} mittags gut einzuplanen ist.
+%Am Vormittag und am Abend kehrt sich das Verhältnis um, denn dort trägt die Entladereservierung den Preis.
+Trotz dieser Unsicherheit im Vergleichspreis für den präventiven Redispatch erweist sich der kurative Reservierungspreis als wettbewerbsfähig, denn sein Tagesmittel bleibt fast das ganze Jahr unter dem Arbeitspreis.
+Kurative Maßnahmen lassen sich damit in einem großen Teil der Stunden wirtschaftlich einplanen.
+Über den Tag wechselt jedoch, welche Richtung den Preis trägt.
+Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band, während die Entladereservierung am Vormittag und am Abend teuer ist.
 Der Preis einer bilanziell ausgeglichenen Vorhaltung ist damit nachts am niedrigsten und mittags am höchsten.
-Mittags fällt der größte Bedarf an Reduzierung der Einspeisung auf die teuerste Ladereservierung.
-Preis und benötigte Richtung liegen dort übereinander, was die Beschaffung verteuert.
+% GEAENDERT am 25.09.2026, Vorgabe des Verfassers: der Satz zum BESS
+% gehoert in diesen Absatz. Die beiden Saetze zum Mittag und die beiden
+% zum BESS sind dafuer je zu einem zusammengezogen, damit der Absatz bei
+% acht Saetzen bleibt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Mittags fällt der größte Bedarf an Reduzierung der Einspeisung auf die teuerste Ladereservierung.
+%Preis und benötigte Richtung liegen dort übereinander, was die Beschaffung verteuert.
+%Die Entladereservierung ist zur selben Zeit günstig, sodass eine Maßnahme aus abgeregelter Photovoltaik und entladendem \ac{BESS} mittags gut einzuplanen ist.
+%Als Ladereservierung lohnt sich ein \ac{BESS} am Tag wenig, denn gerade dort ist diese Richtung am teuersten.
+%In der Nacht liegt der Preis beider Richtungen am niedrigsten, sodass eine Ladereservierung dort günstig zu beschaffen ist.
+Mittags fällt der größte Bedarf an Reduzierung der Einspeisung auf die teuerste Ladereservierung, sodass Preis und benötigte Richtung übereinanderliegen.
 Die Entladereservierung ist zur selben Zeit günstig, sodass eine Maßnahme aus abgeregelter Photovoltaik und entladendem \ac{BESS} mittags gut einzuplanen ist.
-Am Vormittag und am Abend kehrt sich das Verhältnis um, denn dort trägt die Entladereservierung den Preis.
+Als Ladereservierung lohnt sich ein \ac{BESS} deshalb eher in der Nacht, wenn der Preis beider Richtungen am niedrigsten liegt.
 
-Als Ladereservierung lohnt sich ein \ac{BESS} am Tag wenig, denn gerade dort ist diese Richtung am teuersten.
-In der Nacht liegt der Preis beider Richtungen am niedrigsten, sodass eine Ladereservierung dort günstig zu beschaffen ist.
+% NEU GEFASST am 25.09.2026, Vorgabe des Verfassers: eigener Absatz mit
+% der Aussage, dass sich Anlagen aus erneuerbaren Energien fuer die
+% Ruecknahme der Einspeisung besonders eignen, weil in Stunden mit hohem
+% Anteil erneuerbarer Erzeugung die Ruecknahme ohnehin zur Verfuegung
+% steht.
+% PRAEZISIERUNG gegenueber der Vorgabe: die Wirksamkeit am Engpass gilt
+% nicht fuer beide Technologien gleich. Abschnitt 2.2 sagt, dass
+% Windenergie im Norden einen Nord-Sued-Engpass verschaerft,
+% Photovoltaik im Sueden dagegen nicht. Der Text nennt den Unterschied
+% deshalb eigens, statt eine hohe Wirksamkeit pauschal zu behaupten.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine Wind- oder Photovoltaikanlage bietet die Rücknahme der Einspeisung voraussichtlich günstiger an, weil ihr allein die entgangene Einspeisung entgeht.
+%Eine solche Anlage stellt allerdings nur eine Hälfte eines bilanziell ausgeglichenen Verbunds, denn sie wirkt allein in eine Richtung.
+%Ihre Zusage trägt zudem ein Risiko, denn die Leistung einer wetterabhängigen Anlage steht zum Zeitpunkt der Ausschreibung nicht fest.
+%Ein Wetterumschwung zwischen Zuschlag und Abruf nimmt der Anlage die zugesagte Leistung.
+%Welche Leistung eine solche Anlage gesichert anbieten kann, ist deshalb gesondert zu klären.
+%Gelingt die Zusage, so ist die kurative Reservierung für sie eine zusätzliche Erlösquelle, deren Gebot allein den Aufwand und eine Gewinnmarge deckt.
 Eine Wind- oder Photovoltaikanlage bietet die Rücknahme der Einspeisung voraussichtlich günstiger an, weil ihr allein die entgangene Einspeisung entgeht.
-Eine solche Anlage stellt allerdings nur eine Hälfte eines bilanziell ausgeglichenen Verbunds, denn sie wirkt allein in eine Richtung.
-Ihre Zusage trägt zudem ein Risiko, denn die Leistung einer wetterabhängigen Anlage steht zum Zeitpunkt der Ausschreibung nicht fest.
-Ein Wetterumschwung zwischen Zuschlag und Abruf nimmt der Anlage die zugesagte Leistung.
+In Stunden mit hohem Anteil erneuerbarer Erzeugung steht die Rücknahme der Einspeisung ohnehin zur Verfügung.
+Die Wirksamkeit am Engpass hängt dabei am Standort, denn eine Windenergieanlage im Norden verschärft ein Nord-Süd-Gefälle und eine Photovoltaikanlage im Süden nicht.
+Für die Rücknahme der Einspeisung eignet sich eine solche Anlage damit besonders.
+Eine Wind- oder Photovoltaikanlage stellt allerdings nur eine Hälfte eines bilanziell ausgeglichenen Verbunds, denn sie wirkt allein in eine Richtung.
+Ihre Zusage trägt zudem ein Risiko, denn ein Wetterumschwung zwischen Zuschlag und Abruf nimmt der Anlage die zugesagte Leistung.
 Welche Leistung eine solche Anlage gesichert anbieten kann, ist deshalb gesondert zu klären.
 Gelingt die Zusage, so ist die kurative Reservierung für sie eine zusätzliche Erlösquelle, deren Gebot allein den Aufwand und eine Gewinnmarge deckt.
 
@@ -916,14 +1006,53 @@ Ihr Potenzial liegt jedoch im Winter, wo Bedarf und günstiger Preis zusammenfal
 Die Kombination eines \ac{BESS} mit Anlagen der Windenergie trifft deshalb genau die Lage mit dem größten Bedarf.
 Jede Netzsituation bleibt gleichwohl einzeln zu bewerten.
 
+% NEU GEFASST am 25.09.2026, Vorgabe des Verfassers. Die Tages-
+% Zeitscheibe stand als unwirtschaftlich da, obwohl eine Reservierung
+% des ganzen Tages nie der Zweck war. Der Absatz ordnet sie jetzt ein
+% und nennt, was tatsaechlich beschafft wird, naemlich einige aneinander
+% anschliessende Stunden. Die vorgehaltene Energie ist daran bemessen,
+% dass der Zustand bis zur abloesenden Massnahme zu halten ist.
+% NICHT MEHR HIER steht der Satz, eine Verguetung der kurativen
+% Vorhaltung verlange eine eigene Struktur. Er gehoert zum geltenden
+% Rahmen in Abschnitt 5.5. OFFENER PUNKT, dort aufzunehmen.
+% EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen: dass ein Gebot
+% fuer einige anschliessende Stunden unter dem ermittelten Wert liegt.
+% Das folgt aus der Vorgabe und ist nicht gerechnet.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Über die Kosten des \ac{ÜNB} entscheidet neben dem Preis der Zuschnitt des Produkts.
+%Ein Produkt mit einer Zeitscheibe von einem Tag bindet die Stunden unvollständig und kostet dennoch beinahe den vollen Preis.
+%Die kurative Reservierung ist deshalb je Stunde auszuschreiben.
+%Eine vorgehaltene Energie für eine halbe Stunde ist fast zum Preis einer Viertelstunde zu haben und verdoppelt die Zeit für eine Ablösung der Maßnahme.
+%Ob eine kurative Maßnahme eine Redispatchmaßnahme ersetzt, hängt an der Zahl der vorgehaltenen Stunden je Abruf, die das Optimierungsmodell nicht bestimmt.
+%Die Vergütungsstruktur der geltenden Festlegung erfasst den ermittelten Preis nicht, denn sie wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren \cite{bundesnetzagentur_festlegung_2024}.
+%Eine Vergütung der kurativen Vorhaltung verlangt deshalb eine eigene Struktur, zumal für die kurative Reservierung bislang kein Vergütungsrahmen besteht.
+%Preis und Zuschnitt zusammen entscheiden damit, ob der \ac{ÜNB} eine kurative Maßnahme günstiger einplant als eine Redispatchmaßnahme.
 Über die Kosten des \ac{ÜNB} entscheidet neben dem Preis der Zuschnitt des Produkts.
-Ein Produkt mit einer Zeitscheibe von einem Tag bindet die Stunden unvollständig und kostet dennoch beinahe den vollen Preis.
-Die kurative Reservierung ist deshalb je Stunde auszuschreiben.
-Eine vorgehaltene Energie für eine halbe Stunde ist fast zum Preis einer Viertelstunde zu haben und verdoppelt die Zeit für eine Ablösung der Maßnahme.
-Ob eine kurative Maßnahme eine Redispatchmaßnahme ersetzt, hängt an der Zahl der vorgehaltenen Stunden je Abruf, die das Optimierungsmodell nicht bestimmt.
+Eine Zeitscheibe von einem Tag bindet die Stunden unvollständig und kostet dennoch beinahe den vollen Preis, weshalb die kurative Reservierung je Stunde auszuschreiben ist.
+Der \ac{ÜNB} beschafft damit einige aneinander anschließende Stunden, was einem Speicher weniger Flexibilität nimmt als die vollständige Bindung.
+Der Preis eines solchen Gebots liegt deshalb voraussichtlich unter dem ermittelten Wert.
+Die vorgehaltene Energie ist daran zu bemessen, dass der Zustand im Fehlerfall bis zur ablösenden Maßnahme zu halten ist.
+Eine vorgehaltene Energie für eine halbe Stunde ist fast zum Preis einer Viertelstunde zu haben und verdoppelt die Zeit für eine solche Ablösung.
 Die Vergütungsstruktur der geltenden Festlegung erfasst den ermittelten Preis nicht, denn sie wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren \cite{bundesnetzagentur_festlegung_2024}.
-Eine Vergütung der kurativen Vorhaltung verlangt deshalb eine eigene Struktur, zumal für die kurative Reservierung bislang kein Vergütungsrahmen besteht.
 Preis und Zuschnitt zusammen entscheiden damit, ob der \ac{ÜNB} eine kurative Maßnahme günstiger einplant als eine Redispatchmaßnahme.
+
+% ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: ein Schlussabsatz zur
+% Wirtschaftlichkeit. Der Markt ist der kostenguenstige Weg der
+% Beschaffung, dem steht der Nutzen gegenueber, und der UENB hat ueber
+% Zuschnitt und Haeufigkeit der Einplanung selbst Einfluss.
+% NICHT GESETZT ist der ausdrueckliche Vorverweis auf Abschnitt 5.5,
+% weil Stilregel 15 strukturelle Vorverweise ausschliesst. Der Text
+% nennt statt dessen die Sache, naemlich den Aufwand der Systemfuehrung.
+% Die Gewissheit der Vorgabe steht nach Stilregel 11 als Schluss und
+% nicht als Ueberzeugung.
+Für die Beschaffung selbst ist der Markt damit der kostengünstige Weg.
+Der Preis entsteht aus dem Wettbewerb mehrerer Anbieter und nicht aus einer behördlichen Setzung.
+Ein Markt bildet damit ab, was eine Anlage tatsächlich aufgibt, während eine kostenbasierte Vergütung die Kosten je Technologie schätzen muss.
+Dem Preis steht jedoch der Nutzen gegenüber, und dieser hängt am Aufwand der Systemführung.
+Ob sich die kurative Vorhaltung lohnt, entscheidet sich deshalb erst im Verhältnis von Preis und Aufwand.
+Der \ac{ÜNB} hat auf dieses Verhältnis selbst Einfluss, denn er bestimmt den Zuschnitt des Produkts.
+Über die Häufigkeit der Einplanung bestimmt der \ac{ÜNB} zudem, wie oft sich eine vorgehaltene Stunde auszahlt.
+Wie erfolgreich der kurative Marktmechanismus wird, hängt damit am \ac{ÜNB} selbst.
 
 % ---------------------------------------------------------------
 \section{Die Rolle der \acs{BESS} im Engpassmanagement und am Markt}
@@ -951,12 +1080,64 @@ Die dritte Grenze ist die örtliche Wirksamkeit, die allein am Netzknoten hängt
 Ein \ac{BESS} am falschen Netzknoten ist für die Engpassbehebung wertlos, so schnell es auch reagiert.
 Über den Nutzen entscheidet damit die Standortwahl ebenso wie die technische Eignung.
 
+% VOLLSTAENDIG NEU AUFGEBAUT am 25.09.2026, Vorgabe des Verfassers. Drei
+% Absaetze statt einem, naemlich das BESS als neuer Akteur mit
+% kurzfristigem Handel, die fehlende Einbindung in das
+% Engpassmanagement samt der Wirkung des kurativen Marktmechanismus und
+% die Veraenderung der Maerkte mit wachsendem Bestand.
+% EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser zu bestaetigen: dass eine
+% ausreichende Sicherheitsmarge die Netzkapazitaet unwirtschaftlich
+% beschneidet, dass am Spothandel mit wachsendem Bestand weniger Spanne
+% uebrig bleibt und dass der kurative Marktmechanismus dadurch
+% wettbewerbsfaehiger wird. Alle drei folgen aus der Vorgabe und sind
+% nicht gerechnet.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingesetzt wird.
+%Der Bedarf an Regelleistung folgt der Dimensionierung des Systems und wächst nicht mit dem Bestand an \ac{BESS}.
+%Für die \ac{FCR} ist dieser Punkt erreicht, denn die präqualifizierte Leistung aus \ac{BESS} übersteigt den deutschen Bedarf \cite{celi_cortes_m5use_2024, bundesnetzagentur_monitoringbericht_2026}.
+%Die Vorhaltung von \ac{aFRR}-Leistung ist der nächste Markt, der diesen Punkt erreicht.
+%Sinkt der Preis der \ac{aFRR}-Leistung, so sinkt der kurative Reservierungspreis mit ihm, ohne dass sich sein Verhältnis zur Marktopportunität ändert.
+%Die Beschlusskammer hat die Behandlung von \ac{BESS} einem späteren Hinweis vorbehalten, sodass die Regelungslücke dokumentiert ist \cite{bundesnetzagentur_festlegung_2024}.
 Mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingesetzt wird.
+Ein \ac{BESS} tritt als neuer Akteur in das Übertragungsnetz, das flexible Anlagen mit hoher Leistung und geringem Energieinhalt bislang nicht kennt.
+Das Marktdesign lässt kurzfristige Fahrplanänderungen zu Recht zu, denn eine kurzfristige Prognoseabweichung führte sonst zu einem Ungleichgewicht.
+Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn.
+Ein \ac{BESS} führt seinen begrenzten Energieinhalt an den Grenzen seiner Leistung, um den Erlös zu maximieren.
+Solche Fahrplanänderungen entziehen sich der Betriebsplanung des Engpassmanagements.
+Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
+Mit wachsendem Bestand lässt sich der Redispatch deshalb weniger zuverlässig einplanen.
+
+Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf.
+Die Anschlussleistungen der geplanten Anlagen sind jedoch so hoch, dass eine ausreichende Marge die Netzkapazität unwirtschaftlich beschneidet.
+Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und die Beschlusskammer hat seine Behandlung einem späteren Hinweis vorbehalten \cite{bundesnetzagentur_festlegung_2024}.
+Der \ac{ÜNB} setzt ein \ac{BESS} im Engpassmanagement damit bislang nicht ein.
+Der kurative Marktmechanismus bindet ein \ac{BESS} dagegen in das Engpassmanagement ein.
+Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
+Die Reservierung eines Leistungsbandes nimmt ihm daneben die Leistung, mit der er den Engpass verschärfen könnte.
+Der kurative Marktmechanismus wirkt damit zweifach, nämlich über die Einbindung und über die gebundene Leistung.
+
+Der Ausbau der \ac{BESS} verschärft nicht nur die Kurzfristigkeit, sondern verändert auch die Märkte.
 Der Bedarf an Regelleistung folgt der Dimensionierung des Systems und wächst nicht mit dem Bestand an \ac{BESS}.
 Für die \ac{FCR} ist dieser Punkt erreicht, denn die präqualifizierte Leistung aus \ac{BESS} übersteigt den deutschen Bedarf \cite{celi_cortes_m5use_2024, bundesnetzagentur_monitoringbericht_2026}.
 Die Vorhaltung von \ac{aFRR}-Leistung ist der nächste Markt, der diesen Punkt erreicht.
-Sinkt der Preis der \ac{aFRR}-Leistung, so sinkt der kurative Reservierungspreis mit ihm, ohne dass sich sein Verhältnis zur Marktopportunität ändert.
-Die Beschlusskammer hat die Behandlung von \ac{BESS} einem späteren Hinweis vorbehalten, sodass die Regelungslücke dokumentiert ist \cite{bundesnetzagentur_festlegung_2024}.
+% BELEGT UND BERICHTIGT am 25.09.2026, Vorgabe des Verfassers: mit der
+% Zukunftsvariante aus Abschnitt 4.6.4 belegen. Die Variante belegt die
+% Aussage jedoch nur zur Haelfte. Der Markterloes gibt um 17,0 Prozent
+% nach, die Zahlung bei vollstaendiger Verdraengung nur um 16,0 Prozent,
+% und der Aufschlag steigt von 23,3 auf 24,8 Prozent. Abschnitt 4.6.4
+% sagt deshalb, die kurative Bindung werde gegenueber dem Markt nicht
+% guenstiger.
+% ZURUECKGENOMMEN und nicht wieder aufzunehmen ist deshalb:
+%Der kurative Marktmechanismus gewinnt damit an Wettbewerbsfähigkeit, je größer der Bestand an \ac{BESS} wird.
+%Sinkt der Preis der \ac{aFRR}-Leistung, so sinkt der kurative Reservierungspreis mit ihm, ohne dass sich sein Verhältnis zur Marktopportunität ändert.
+%Am Spothandel bleibt mit wachsendem Bestand ebenso weniger Spanne übrig.
+%Ein Betreiber sucht deshalb nach weiteren Erlösquellen.
+% Zahlen sind verbal gesetzt, weil die Diskussion fast keine Zahlen
+% tragen soll.
+Eine Sensitivität mit gesenkten Preisen der \ac{aFRR} und des \ac{IDC} lässt den Markterlös der Bezugsanlage um ein Sechstel nachgeben.
+Der kurative Reservierungspreis gibt dabei weniger nach als der Markterlös, sodass die kurative Bindung gegenüber dem Markt nicht günstiger wird.
+Die \ac{aFRR} trägt auch dann rund drei Viertel des Erlöses, sodass der kurative Reservierungspreis ein Preis gegen die Regelleistung bleibt.
+Ein Betreiber sucht gleichwohl nach weiteren Erlösquellen, denn sein Markterlös fällt absolut.
 
 % ---------------------------------------------------------------
 \section{Umsetzung, systemweite Ausrollung und Forschungsbedarf}
@@ -981,12 +1162,45 @@ An die Stelle dieses Anreizes tritt der Anreiz, Leistung anzubieten, die nicht w
 Aus einer Frage der Menge wird damit eine Frage des Nachweises, sodass ein Verfahren zum Nachweis der Verfügbarkeit konstitutiver Bestandteil des Mechanismus ist.
 Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass sich der zusätzliche Aufwand auf die kurative Zusage beschränkt.
 
+% ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: die Frage, was eine
+% kurative Massnahme abloest, gehoert hierher und nicht nach 5.3, weil
+% sie das Systemfuehrungskonzept betrifft und nicht den Preis. Der
+% Verfasser hat die Einordnung selbst vorgeschlagen.
+% EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen: dass ein
+% zusaetzliches Produkt mit laengerem Zeitfenster die Abloesung
+% uebernehmen koennte. Das folgt aus der Vorgabe und steht in keinem
+% Kapitel.
+Eine kurative Maßnahme hält den Zustand nur bis zu ihrer Ablösung.
+Welche Maßnahme ablöst, legt der Entwurf nicht fest.
+In Betracht kommen der allgemeine Redispatch, der nach der Auslösung anläuft, und eine eigens beschaffte Ablösemaßnahme nach einem Redundanzkonzept.
+Welche von beiden ablöst, wirkt auf den kurativen Reservierungspreis zurück, denn sie bestimmt die nötige vorgehaltene Energie.
+Eine längere Anlaufzeit der Ablösung verlangt mehr vorgehaltene Energie und hebt damit den Preis.
+Eine eigens beschaffte Ablösung ließe sich im Markt selbst klären.
+Ein zusätzliches Produkt mit einem längeren Zeitfenster übernähme die Ablösung und träte neben die kurative Reservierung.
+Der \ac{ÜNB} bestimmte über die Zahl solcher Produkte, wie lange eine kurative Maßnahme trägt.
+
 Ob sich der kurative Marktmechanismus auf das ganze System übertragen lässt, ist eine eigene Frage.
 Das Optimierungsmodell rechnet eine einzelne Anlage und trägt deshalb keine systemweite Mengenaussage.
 Eine Hochrechnung setzte voraus, dass die Wirksamkeit eines Akteurs eine feste Eigenschaft seines Netzknotens ist.
 Die Wirksamkeit ist keine feste Eigenschaft, denn die vorherrschende Erzeugungssituation verschiebt sie über die Jahre \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Die kurative Systemführung ergänzt das präventive Engpassmanagement und ersetzt es nicht.
 Der Nutzen der kurativen Systemführung liegt darin, dem \ac{ÜNB} neben dem präventiven Eingriff ein zweites Werkzeug zu geben.
+
+% ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: der Uebergang von
+% der Massnahme der Systemsicherheit zur Massnahme der Effizienz. Der
+% Verfasser hat die Einordnung nach 5.5 selbst vorgeschlagen.
+% EIGENSTAENDIGE ABLEITUNG, vom Verfasser zu bestaetigen: dass das
+% Volumen des Engpassmanagements sinkt, soweit die hoehere Auslastung
+% eine Redispatchmassnahme erspart. Das folgt aus der Vorgabe und ist
+% nicht gerechnet.
+Mit einer systemweiten Ausrollung ändert sich der Zweck der kurativen Systemführung.
+Heute dient eine kurative Maßnahme der Systemsicherheit, denn sie hält das N-1-Kriterium bei höherer Auslastung ein.
+Ein Netz mit kurativer Reservierung an vielen Netzknoten nutzt die bestehende Kapazität dagegen planmäßig weiter aus.
+Die kurative Maßnahme wird damit zur Maßnahme der Effizienz.
+Das Volumen des Engpassmanagements sinkt, soweit die höhere Auslastung eine Redispatchmaßnahme erspart.
+Voraussetzung ist ein Bestand wirksamer Anlagen je Netzknoten und ein Prozess, der die Maßnahmen verlässlich einplant.
+Beides ist heute nicht gegeben.
+Der Übergang von der Sicherheitsmaßnahme zur Effizienzmaßnahme ist deshalb ein Entwicklungspfad und kein Zustand.
 
 Aus den Grenzen der Untersuchung folgt der weitere Forschungsbedarf.
 Die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung sind zu bestimmen.
