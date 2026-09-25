@@ -15888,6 +15888,54 @@ zu je acht Saetzen. 5.4 und 5.5 stehen noch bei sechs bis sieben Saetzen je
 Absatz. `python tools/pruefen.py --alle` ohne Befund, `tools/pruefe_stil.py`
 ohne Verstoss in Kapitel 5, 121 Seiten.
 
+### 25.09.2026, der Gebotsschluss unterscheidet die beiden Maerkte
+
+**Wichtige Korrektur des Verfassers zu Abschnitt 5.3.** Der Satz *Wer den
+kurativen Reservierungspreis senken will, muss deshalb an der Regelleistung
+ansetzen* ist **zurueckgenommen** und nicht wieder aufzunehmen. Er stand seit
+der ersten Fassung von 5.3.
+
+**Das Argument des Verfassers.** Die Ausschreibung der aFRR-Leistung schliesst
+vor der kurativen Ausschreibung. Ein Akteur kennt seinen Zuschlag in der aFRR
+deshalb schon, wenn er sein kuratives Gebot setzt. Wer dort keinen Zuschlag
+erhalten hat, traegt den Erloes der aFRR nicht mehr als Opportunitaet, weil
+dieser Erloes bereits entfallen ist. Wer einen Zuschlag erhalten hat, hat die
+Leistung vermarktet und steht dem kurativen Markt nicht mehr zur Verfuegung.
+Der Leistungspreis der aFRR traegt das Niveau des ermittelten Preises damit
+als Rechengroesse und nicht als Opportunitaet des Bietenden. Der Handel am
+IDC bleibt dagegen nach der Bekanntgabe der kurativen Zuschlaege offen und
+ist eine echte Opportunitaet. Das Gebot orientiert sich gleichwohl am
+Leistungspreis der aFRR, weil dieser selbst unter Beruecksichtigung von
+Opportunitaeten entstanden ist.
+
+**Belege, keine eigenstaendige Ableitung.** Die Reihenfolge der
+Gebotsschluesse steht in Abschnitt 5.1, naemlich dass die Ausschreibungen der
+Regelleistung am Vormittag des Vortages schliessen, die kurative dahinter
+liegt und die UENB die Zuschlaege vor 23.30 Uhr bekannt geben, sodass der IDC
+danach offen bleibt. Abschnitt 3.1.3 sagt, dass das Modell alle Maerkte
+gemeinsam und mit vollstaendiger Preiskenntnis entscheidet, waehrend der
+Akteur in Wirklichkeit nacheinander entscheidet.
+
+**Danach zu einem Absatz zusammengezogen.** Vorgabe des Verfassers. Die
+Wettbewerbsfaehigkeit und der Gebotsschluss trugen je acht Saetze, also sind
+acht gefallen. Der Schlusssatz traegt jetzt beide Haelften, naemlich keine
+pauschale Senkung ueber die Regelleistung und die fortbestehende Orientierung
+am Preis der Regelleistung. Zurueckgenommen sind unter anderem *Der UENB
+beschafft die kurative Vorhaltung damit im Regelfall guenstig und zahlt
+allein in wenigen Stunden einen hohen Preis* und *Ob ein Betreiber diese
+Spannen zum Zeitpunkt der Reservierung schon sieht, bleibt offen, doch er
+preist eine solche Erwartung in sein Gebot ein*. Der vollstaendige Wortlaut
+steht als Kommentar in `chapters/chapter_5.tex`.
+
+**Hinweis zur Einordnung, dem Verfasser vorgelegt.** Der Absatz ist der Sache
+nach eine Grenze der Modellierung und stuende damit auch in Abschnitt 5.2.
+Er steht in 5.3, weil er dort die wirtschaftliche Aussage unmittelbar
+korrigiert.
+
+**Stand.** Abschnitt 5.1 traegt elf Absaetze, 5.2 sechs und 5.3 sechs, alle
+zu je acht Saetzen. `python tools/pruefen.py --alle` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, 121 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

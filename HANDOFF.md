@@ -44,7 +44,7 @@ schreiben.
 |---|---|---|
 | 5.1 Anforderungen und ihre Umsetzung im Produkt | 11 zu je 8 Saetzen | durchgegangen |
 | 5.2 Modellierung und ihre Annahmen | 6 zu je 8 Saetzen | durchgegangen, Verfahren steht vorn |
-| 5.3 Wirtschaftlichkeit und Wirksamkeit | 6 zu je 8 Saetzen | am 25.09.2026 vollstaendig neu aufgebaut |
+| 5.3 Wirtschaftlichkeit und Wirksamkeit | 6 zu je 8 Saetzen | am 25.09.2026 neu aufgebaut, Gebotsschluss beruecksichtigt |
 | 5.4 Die Rolle der BESS im Engpassmanagement und am Markt | 4 zu 6 bis 7 Saetzen | offen |
 | 5.5 Umsetzung, systemweite Ausrollung und Forschungsbedarf | 4 zu 6 bis 7 Saetzen | offen |
 
@@ -67,6 +67,9 @@ schreiben.
   Kapitel steht und nicht nachgerechnet ist.
 - **Eigenstaendige Ableitung** in 5.3 Absatz 1: der Anweisungszeitpunkt
   bestimmt die Kosten einer Redispatchmassnahme mit.
+- Der Absatz zum Gebotsschluss in 5.3 ist der Sache nach eine Grenze der
+  Modellierung und stuende damit auch in 5.2. Er steht in 5.3, weil er
+  dort die wirtschaftliche Aussage unmittelbar korrigiert.
 - Der Push des Commits `2fc1be7` vom 24.09.2026 steht beim Verfasser
   noch aus, GitHub hat mit einem Internal Server Error geantwortet.
 
