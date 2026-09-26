@@ -3,8 +3,8 @@
 Diese Datei ersetzt die Fassung vom 25.09.2026 vollständig. Die alte Fassung
 liegt unter `archiv/HANDOFF_2026-09-25.md`, ältere in der Git-Historie.
 
-> **Das Arbeitsverzeichnis ist sauber.** Der letzte Commit ist `d4ea26f`
-> vom 26.09.2026, und `origin/main` steht auf demselben Stand. Gepusht wird
+> **Das Arbeitsverzeichnis ist sauber.** `origin/main` stand zuletzt auf `d4ea26f`
+> vom 26.09.2026, die spaeteren Commits desselben Tages stehen zum Push aus. Gepusht wird
 > nur auf ausdrückliche Anweisung, committet nur auf das Wort „commite".
 >
 > **Kapitel 5 ist am 26.09.2026 abgeschlossen** und vollständig geprüft. Der
@@ -80,6 +80,11 @@ Fließtext steht je Stelle als Kommentar mit Datum und Befund in
   das N-1-Kriterium selbst die Signalwege erfasse, und dass der Netzausbau
   die Begrenzung perspektivisch aufhebe. Der Text sagt *Sicherheitsbetrachtung*
   und *der Ausbau verändert den Charakter der Begrenzung*.
+
+**Kapitel 4 ist am 26.09.2026 auf roten Faden und grobe Schnitzer geprüft**,
+siehe die beiden Einträge unter `## chapter_4.tex` im Protokoll. Vier Befunde
+mit Gewicht und neun Kleinigkeiten sind behoben, nichts ist offen; die
+Absätze von Kapitel 4 liegen alle innerhalb von vier bis acht Sätzen.
 
 **Zwei Zeilen außerhalb von Kapitel 5**, beide am 26.09.2026:
 `chapters/chapter_4.tex` Zeile 863 sagt jetzt *fast das ganze Jahr über*, weil

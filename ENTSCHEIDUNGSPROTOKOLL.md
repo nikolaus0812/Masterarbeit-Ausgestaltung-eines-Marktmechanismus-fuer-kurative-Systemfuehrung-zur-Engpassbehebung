@@ -16534,6 +16534,68 @@ des Absatzes traegt die Entscheidung des UENB ueber den Zuschnitt.
 ohne Befund, `pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
 124 Seiten. Der Verfasser liest Kapitel 5 als naechstes am Stueck.
 
+### 26.09.2026 nachts, Kapiteleinleitung Satz 6 mit Bezug zur kurativen Systemfuehrung
+
+**Vorgabe des Verfassers.** Die Ankuendigung von 5.4, die Rolle der BESS im
+Engpassmanagement und am Markt, muss den Bezug zur kurativen Systemfuehrung
+herstellen: kurativ wird erst mit Speichern richtig funktionieren, und
+umgekehrt beschleunigt kurativ den Ausbau der BESS, weil es ein Problem
+dieses Ausbaus behebt.
+
+**Gesetzt.** Danach wird die Rolle der BESS behandelt, denn beide Seiten
+brauchen einander, naemlich die kurative Systemfuehrung die schnelle Leistung
+der Speicher und der Ausbau der Speicher die kurative Systemfuehrung als
+Ausweg aus der Begrenzung am Netzanschluss. Zwei Hauptsaetze mit einer
+naemlich-Aufzaehlung, Stilregel 17, damit die Einleitung bei acht Saetzen
+bleibt. Beide Richtungen traegt das Kapitel: 5.4 A3, wonach sich die
+kurative Systemfuehrung fuer die Einbindung anbietet, und 5.5 A5, wonach sie
+eine Voraussetzung fuer den Ausbau der Speicher waere. Die Einleitung
+kuendigt damit die These des Abschnitts an und nicht sein Thema.
+
+**Zurueckgenommen, nicht wieder aufzunehmen:** Danach wird die Rolle der
+BESS im Engpassmanagement und am Markt behandelt, heute und mit wachsendem
+Bestand. Der Zusatz heute und mit wachsendem Bestand faellt; 5.4 A5 traegt
+den wachsenden Bestand ohnehin.
+
+**Stand.** `pruefen.py` ohne Befund, `pruefe_stil.py` ohne Verstoss in
+Kapitel 5, alle Absaetze bei acht Saetzen, Biber ohne Warnung, 124 Seiten.
+`HANDOFF.md` im selben Zug nachgezogen: Stand von `origin/main` und die
+Pruefung von Kapitel 4.
+
+### 26.09.2026 nachts, Satz 6 der Kapiteleinleitung berichtigt
+
+**Korrektur des Verfassers zum vorigen Eintrag.** Die kurative
+Systemfuehrung ist nicht auf BESS angewiesen; die Einbindung der Speicher
+erhoeht ihr Potenzial. Die Fassung mit beide Seiten brauchen einander war
+ihm zu erklaerend, eine Zwischenfassung mit ohne die die kurative
+Systemfuehrung nicht traegt zu hart, und vom Netzanschluss befreit nicht
+verstaendlich.
+
+**Gesetzt.** Danach wird die Rolle der BESS behandelt, denn die Speicher
+erweitern das Potenzial der kurativen Systemfuehrung und finden im Gegenzug
+leichter Anschluss an das Netz. Zwei Hauptsaetze, ein Subjekt im denn-Satz,
+Stilregel 17. Das Wort deutlich aus der Vorgabe ist nach Stilregel 15
+gesperrt und nicht gesetzt; das Potenzial steht ohne Verstaerkung.
+
+**Zurueckgenommen, nicht wieder aufzunehmen:** die Fassung mit beide Seiten
+brauchen einander aus dem vorigen Eintrag sowie die im Gespraech
+vorgelegten Varianten mit angewiesen, nicht traegt und befreit.
+
+### 26.09.2026 nachts, Satz 6 der Kapiteleinleitung, dritte Fassung
+
+**Vorgabe des Verfassers.** Der Gegenzug finden im Gegenzug leichter
+Anschluss an das Netz laesst sich so verkuerzt nicht sagen. Gemeint ist
+allgemein die Bedeutung der Speicher im Engpassmanagement.
+
+**Gesetzt.** Danach wird die Rolle der BESS behandelt, denn die Speicher
+erweitern das Potenzial der kurativen Systemfuehrung und gewinnen im
+Gegenzug an Bedeutung im Engpassmanagement. Traegt 5.4 A3: ein BESS ist
+heute kein Teil des Redispatchregimes, der kurative Marktmechanismus bindet
+es ein.
+
+**Zurueckgenommen, nicht wieder aufzunehmen:** die Fassung mit finden im
+Gegenzug leichter Anschluss an das Netz.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
