@@ -15265,6 +15265,44 @@ in 4.6 Leistung und Arbeit, beides steht dabei.
 Kapitel 4, kein Absatz ausserhalb von vier bis acht Saetzen, Biber ohne
 Warnung, 124 Seiten.
 
+### 26.09.2026 nachts, die zwei offenen Stellen aus der Pruefung bereinigt
+
+**Zeile 505, die 89 Prozent, Vorgabe des Verfassers.** Der vorige Eintrag
+liess die Stelle stehen, weil ein erklaerender Halbsatz eine Ursache
+behauptet haette. Das Analyse-Repository erklaert sie,
+`ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` Zeilen 1186 bis 1196: die
+Opportunitaet derselben Stunde ist dort ein Obermass, naemlich das Groesste
+aus aFRR-Leistungspreis, aFRR-Arbeitspreis mal Abrufanteil und Betrag des
+Intradaypreises. Der Test lautet: liegt der Reservierungspreis ungefaehr bei
+diesem Obermass oder darunter, folgt er aus dieser Stunde; liegt er deutlich
+darueber, aus der Kopplung benachbarter Stunden ueber das Ladezustandsband.
+Entladend Median 0,89, Maximum 1,24, null von 20 Stunden ueber 1,5; ladend
+7 von 20 ueber 1,5, bis Faktor 10,6. Der Text nannte weder das Obermass noch
+die Schwelle, sodass 89 Prozent wie ein Raetsel wirkte. Jetzt: der Preis
+erreicht 89 Prozent des hoechsten Marktpreises derselben Stunde und
+uebersteigt ihn in keiner der 20 Stunden um mehr als ein Viertel, sodass die
+Hoehe aus dieser einen Stunde folgt und nicht aus der Kopplung. Satz 511
+schreibt diesen Rahmen als den hoechsten Marktpreis derselben Stunde aus,
+Stilregel 5. Der Begriff hoechster Marktpreis ist die schlichte Benennung
+des Obermasses nach Stilregel 13.
+
+**Zeile 1450, die 24,8 Prozent, Vorgabe des Verfassers.** Aus den gedruckten
+70,3 und 282,7 folgen 24,9; das Repository rechnet 24,8 aus ungerundeten
+Werten. Die ungerundeten Jahreserloese stehen in keiner Datei des
+Repositorys, allein in den Rechenlaeufen; die Ergebnis-CSV
+`results/sensitivitaet/sensi9_zukunft_fcr_voll/sensi5_jahr2025.csv` traegt
+Tageswerte, keine Jahressummen. Statt 24,9 zu drucken und dem Repository und
+der Abbildung zu widersprechen, sagt der Satz jetzt: gerechnet aus
+ungerundeten Erloesen. Damit weiss, wer nachrechnet, warum er 24,9 findet.
+Die Alternative rund 25 Prozent ist verworfen, weil Kapitel 4 die Stelle mit
+einer Nachkommastelle fuehrt und Kapitel 5 den Zehntelpunkt seit dem
+26.09.2026 nicht mehr nennt.
+
+**Stand.** `pruefen.py` ohne Befund, `pruefe_stil.py` ohne Verstoss in
+Kapitel 4, kein Absatz ausserhalb von vier bis acht Saetzen, Biber ohne
+Warnung, 124 Seiten. Aus der Pruefung von Kapitel 4 ist damit nichts mehr
+offen.
+
 ## chapter_5.tex
 
 ### 24.09.2026, Struktur beschlossen und Stichpunktgeruest neu gesetzt

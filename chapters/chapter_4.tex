@@ -524,13 +524,19 @@ In den 20 teuersten Entladestunden hält der \ac{IDC} im Referenzfall 70,2\,\si{
 Der Preis des \ac{IDC} beträgt in diesen Stunden im Mittel 664 gegen 90 Euro je Megawattstunde über das Jahr.
 In der Laderichtung tragen zwei Ursachen, nämlich ein hoher Leistungspreis der \ac{aFRR} mit 162 gegen 16\,\EurMWh{} und negative Preise am \ac{IDC} mit im Mittel minus 55 gegen 90 Euro je Megawattstunde.
 Wer in einer Stunde mit negativem Preis lädt, wird dafür bezahlt, und die Ladereservierung verhindert genau diese Einnahme.
-Der kurative Reservierungspreis entspricht in der Entladerichtung 89 Prozent der Opportunität derselben Stunde, sodass die Höhe dort aus dieser einen Stunde folgt.
+% GEAENDERT am 26.09.2026, Pruefung Kapitel 4: die Opportunitaet derselben Stunde ist nach ERGEBNISSE Zeile 1186 ein Obermass, naemlich das Groesste aus aFRR-Leistungspreis, aFRR-Arbeitspreis mal Abrufanteil und Betrag des Intradaypreises. Der Test lautet: unter dem Obermass folgt der Preis aus dieser Stunde, weit darueber aus der Kopplung. Entladend Median 0,89, Maximum 1,24, null von 20 ueber 1,5. Der Text nannte weder Obermass noch Schwelle
+% Alte Fassung, nicht wieder aufzunehmen:
+%Der kurative Reservierungspreis entspricht in der Entladerichtung 89 Prozent der Opportunität derselben Stunde, sodass die Höhe dort aus dieser einen Stunde folgt.
+Der kurative Reservierungspreis erreicht in der Entladerichtung 89 Prozent des höchsten Marktpreises derselben Stunde und übersteigt ihn in keiner der 20 Stunden um mehr als ein Viertel, sodass die Höhe dort aus dieser einen Stunde folgt und nicht aus der Kopplung benachbarter Stunden.
 % GETEILT am 24.09.2026, Befund B4 der Kontrolllesung: "vereinbar mit"
 % behauptet nichts und schliesst nichts aus. Der Befund und der Stand der
 % Pruefung stehen jetzt getrennt. Zurueckgenommene Fassung, nicht wieder
 % aufzunehmen:
 %In der Laderichtung übersteigen 7 der 20 Stunden diesen Rahmen um mehr als die Hälfte, was mit einer Kopplung über das Ladezustandsband vereinbar ist.
-In der Laderichtung übersteigen 7 der 20 Stunden diesen Rahmen um mehr als die Hälfte.
+% GEAENDERT am 26.09.2026, Pruefung Kapitel 4: diesen Rahmen ausgeschrieben, Stilregel 5
+% Alte Fassung, nicht wieder aufzunehmen:
+%In der Laderichtung übersteigen 7 der 20 Stunden diesen Rahmen um mehr als die Hälfte.
+In der Laderichtung übersteigen 7 der 20 Stunden den höchsten Marktpreis derselben Stunde um mehr als die Hälfte.
 Die Ursache ist nicht geprüft, in Betracht kommt die Kopplung benachbarter Stunden über das Ladezustandsband.
 
 % ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: als Schlussfolgerung
@@ -1484,7 +1490,10 @@ Der Markterlös gibt deshalb weniger nach als der Abschlag.
 % entfaellt. Zurueckgenommene Fassung:
 %Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 353,0\,\TsdEurMWa{} und damit um 16,0 Prozent, denn der kurative Reservierungspreis ist die entgangene Marktopportunität.
 Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 353,0\,\TsdEurMWa{} und damit um 16,0 Prozent.
-Der Aufschlag gegenüber dem Markterlös steigt dabei von 23,3 auf 24,8 Prozent und fällt absolut von 79,4\,\TsdEurMWa{} auf 70,3\,\TsdEurMWa{}.
+% GEAENDERT am 26.09.2026, Pruefung Kapitel 4: aus den gedruckten 70,3 und 282,7 folgen 24,9; das Repository rechnet 24,8 aus ungerundeten Werten, die in keiner Datei stehen. CLAUDE.md Abschnitt 8 verlangt Reproduzierbarkeit, deshalb sagt der Satz die Herkunft. Entscheidung des Verfassers gegen 24,9 und gegen rund 25
+% Alte Fassung, nicht wieder aufzunehmen:
+%Der Aufschlag gegenüber dem Markterlös steigt dabei von 23,3 auf 24,8 Prozent und fällt absolut von 79,4\,\TsdEurMWa{} auf 70,3\,\TsdEurMWa{}.
+Der Aufschlag gegenüber dem Markterlös steigt dabei von 23,3 auf 24,8 Prozent, gerechnet aus ungerundeten Erlösen, und fällt absolut von 79,4\,\TsdEurMWa{} auf 70,3\,\TsdEurMWa{}.
 % NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: eine Prozentzahl
 % zwischen Prozentzahlen liest sich schlecht. Der Satz sagt jetzt, dass
 % die Verdraengung unter niedrigeren Preisen aehnlich gelingt.
