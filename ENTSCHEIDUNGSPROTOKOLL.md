@@ -16380,6 +16380,51 @@ sechs, 5.4 fuenf, 5.5 sechs, alle zu je acht Saetzen. `pruefen.py --alle` ohne
 Befund, `pruefe_stil.py` ohne Verstoss in Kapitel 4 und 5, Biber ohne Warnung,
 124 Seiten. Offen aus der Befundliste: nichts.
 
+### 26.09.2026 spaet, B32 bis B35 gesetzt, Befundregister geschlossen
+
+**B32, Vorgabe des Verfassers ohne Widerspruch zur Empfehlung.** 5.1 A1
+verspricht nicht mehr, die acht Anforderungen der Reihe nach zu halten, und
+das Zwischenfazit A12 sagt, dass sieben den Zuschnitt des Produkts bestimmen
+und die achte, die Umsetzbarkeit, sich am Rahmen und am Betrieb entscheidet.
+Die Reihenfolge von 5.1 bleibt, weil die Uebergaenge auf ihr gebaut sind.
+
+**B33, ebenso.** 5.2 A1 kuendigt jetzt in der Reihenfolge der Absaetze an:
+Verfahren, Maerkte, vollstaendige Preiskenntnis als staerkste Annahme,
+Sensitivitaeten, zuletzt die Perspektive mit Liefertag, Intraday-Auktionen
+und Verbund.
+
+**B34, Vorgabe des Verfassers: alle Vorschlaege umsetzen.** Gestrichen sind
+23.30 Uhr in 5.1 A5, die Uhrzeit traegt Kapitel 3, und Paragraf 17 Abs. 2b in
+5.4 A2, die Norm ist in 5.1 A6 eingefuehrt. Behalten sind die drei
+Reaktionszeitklassen mit ihren Werten in 5.1 A1 als Gegenstand der
+Diskussion, fuenf Minuten vor Lieferbeginn in 5.4 A1 als Bezugsgroesse fuer
+die kurze Frist nach Stilregel 7, und um ein Sechstel in 5.4 A5 als die
+verbale Form, die die Uebergabe selbst als Beispiel nennt. Der Kopfkommentar
+der Kapiteldatei traegt eine datierte Zeile mit den verbliebenen Zahlen, denn
+er nannte die aFRR-Zeitscheibe von vier Stunden, die nicht mehr im Text
+steht.
+
+**B35, Vorgabe des Verfassers: die Erklaerung muss im Text stehen.** Die
+Gleichsetzung einer Zeitscheibe von einem Tag mit der ersten Iteration der
+Preissuche war eine Deutung aus der Pruefung und traf nicht: die erste
+Iteration setzt einen Preis fuer alle Stunden eines Tages und laesst der
+Anlage die Wahl der Stunden, ein Tagesprodukt baende dagegen alle Stunden.
+5.3 A5 sagt jetzt in zwei Saetzen, dass ein einheitlicher Preis je Tag der
+Anlage die Wahl laesst, sie gerade die teuren Stunden frei laesst und der UENB
+dennoch beinahe den vollen Preis zahlt, weshalb je Stunde auszuschreiben ist.
+Grundlage ist Kapitel 4, Abschnitt 4.2, Fuellgrad 85,9 und 89,6 Prozent bei
+97,6 Prozent der Zahlung, und der Satz dort, die erste Iteration lasse gerade
+die teuren Stunden frei. ZURUECKGENOMMEN und nicht wieder aufzunehmen ist der
+Satz Eine Zeitscheibe von einem Tag bindet die Stunden unvollstaendig.
+Gefallen ist zudem der Fuellsatz Ueber die vorgehaltene Energie entscheidet
+allein der UENB, den der Eintrag vom Abend eingesetzt hatte; der Schlusssatz
+des Absatzes traegt die Entscheidung des UENB ueber den Zuschnitt.
+
+**Stand.** Alle Befunde B1 bis B35 erledigt oder hingenommen, das Register in
+`BEFUNDE_KAP5.md` ist geschlossen. Alle Absaetze zu acht Saetzen, `pruefen.py`
+ohne Befund, `pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
+124 Seiten. Der Verfasser liest Kapitel 5 als naechstes am Stueck.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
