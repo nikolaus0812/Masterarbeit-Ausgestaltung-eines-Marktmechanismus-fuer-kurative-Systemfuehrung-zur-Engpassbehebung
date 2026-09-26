@@ -79,11 +79,17 @@
 Gesucht ist der kurative Reservierungspreis, also der Betrag, den ein Betreiber für die Vorhaltung mindestens fordern muss, um durch die Reservierung nicht schlechter zu stehen als ohne sie.
 Maßgeblich ist dafür die Sicht des Betreibers, denn der Preis folgt aus seinem Betrieb, aus seinen einzelnen Erlösmöglichkeiten und aus der Verteilung des Erlöses auf diese Quellen.
 Zu Anfang ist deshalb zu verstehen, wie ein höherer vorgegebener Reservierungspreis auf den Dispatch wirkt.
-Darauf folgen Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025.
+% GEAENDERT am 26.09.2026, Kapiteleinleitung: Abschnitt 4.2 behandelt die Erloeswirkung beider Iterationen, die nicht angekuendigt war
+% Alte Fassung, nicht wieder aufzunehmen:
+%Darauf folgen Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025.
+Darauf folgen die Erlöswirkung der Reservierung sowie Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025.
 Anschließend ist der kurative Reservierungspreis zeitlich gegen das Engpassmanagement zu halten, nämlich gegen dessen Volumen und gegen dessen Kosten.
 Zuletzt prüfen drei Sensitivitäten, wie stark die Annahmen über die einzelnen Märkte den Preis tragen.
 Eine Zukunftsvariante zeigt darüber hinaus, wie sich der kurative Reservierungspreis unter der Annahme einer günstigeren Preisentwicklung verhält.
-Alle Preise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), alle Erlöse in Tausend Euro je Megawatt und Jahr (\TsdEurMWa{}).
+% GEAENDERT am 26.09.2026, Einheiten: das Kapitel nennt daneben Energiepreise in Euro je Megawattstunde, etwa in 4.3 und 4.5; CLAUDE.md Abschnitt 8
+% Alte Fassung, nicht wieder aufzunehmen:
+%Alle Preise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), alle Erlöse in Tausend Euro je Megawatt und Jahr (\TsdEurMWa{}).
+Alle kurativen Reservierungspreise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), alle Erlöse in Tausend Euro je Megawatt und Jahr (\TsdEurMWa{}).
 
 % ---------------------------------------------------------------
 \section{Verlauf des Dispatch und Verdrängung der Märkte}
@@ -171,10 +177,15 @@ Die im Folgenden genannten Leistungen sind Tagesmittel über beide Richtungen, d
 Im Vergleich der fünf Tage fällt Folgendes auf.
 Am 20.01.2025 weicht der \ac{DA} erwartungsgemäß als letzter Markt, denn er trägt dort den größten Spread des Jahres.
 Der \ac{IDC} ist an diesem Tag bei 100\,\EurMWh{} verschwunden, während der \ac{DA} bis zum höchsten gerechneten Preis belegt bleibt.
-Bei 15\,\EurMWh{} steht er dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
+% GEAENDERT am 26.09.2026, Stilregel 5: er konnte IDC oder DA meinen
+% Alte Fassung, nicht wieder aufzunehmen:
+%Bei 15\,\EurMWh{} steht er dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
+Bei 15\,\EurMWh{} steht der \ac{DA} dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
 Am 11.02.2025 tragen die Handelsmärkte den Betrieb, denn der Ladezustand zeigt zwei Zyklen.
 Der \ac{DA} und der \ac{IDC} halten dort länger als die \ac{aFRR}-Leistung.
 Ab 50\,\EurMWh{} ist an diesem Tag die volle Leistung von 200\,\si{MW} über alle 24 Stunden kurativ reserviert.
+
+% ABSATZ GETEILT am 26.09.2026: der Absatz hatte elf Saetze, Stilregel 1. Die ersten beiden Tage tragen den DA, die drei folgenden FCR, aFRR und IDC.
 Am 06.05.2025 tritt als einzigem der fünf Tage die \ac{FCR} auf, nämlich in 16 der 96 Zeitscheiben, und sie ist schon bei 10\,\EurMWh{} verdrängt.
 % GESTRICHEN am 23.09.2026, Vorgabe des Verfassers: die MW-Angabe ist ein
 % Tagesmittel ueber beide Richtungen und sagt nicht, ob der Markt in wenigen
@@ -347,7 +358,10 @@ Abbildung~\ref{fig:fuellgrad_tagesstunden} trägt den mittleren Füllgrad unter 
 % Fassung:
 %Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration in beiden Richtungen 99,98 Prozent erreicht.
 %Der Korrelationskoeffizient beträgt $-0{,}853$ in der Entlade- und $-0{,}608$ in der Laderichtung.
-Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration bis auf die Stunde der Zeitumstellung voll reserviert.
+% GEAENDERT am 26.09.2026, Zeitumstellung: es sind zwei Stunden, je eine an beiden Umstellungstagen, wie Kapitel 3 mit 8758 von 8760 Stunden erklaert
+% Alte Fassung, nicht wieder aufzunehmen:
+%Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration bis auf die Stunde der Zeitumstellung voll reserviert.
+Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration bis auf die beiden Stunden der Zeitumstellung voll reserviert.
 Nicht voll reserviert bleiben unter der ersten Iteration 25,9 Prozent der Stunden in der Entlade- und 23,1 Prozent in der Laderichtung.
 Diese Stunden verteilen sich nicht gleichmäßig über den Tag, denn der Füllgrad einer Tagesstunde fällt mit ihrem Preis.
 % UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Befund zum
@@ -423,7 +437,10 @@ Für jede Richtung ergeben sich daraus 8758 Preise, deren Höhe sich von Stunde 
 Abbildung~\ref{fig:verteilung_reservierungspreis} zeigt die Verteilung dieser Preise je Richtung.
 Die Entladereservierung kostet im Median 12,22\,\EurMWh{}, bei einem unteren Quartil von 4,33 und einem oberen von 27,47\,\EurMWh{}.
 Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach oben aber weiter, denn ihr oberes Quartil beträgt 30,64\,\EurMWh{}.
-Das 95-Prozent-Quantil beträgt 90,40\,\EurMWh{} in der Lade- und 76,01\,\EurMWh{} in der Entladerichtung.
+% GEAENDERT am 26.09.2026, Reihenfolge: ueberall sonst steht die Entladerichtung zuerst
+% Alte Fassung, nicht wieder aufzunehmen:
+%Das 95-Prozent-Quantil beträgt 90,40\,\EurMWh{} in der Lade- und 76,01\,\EurMWh{} in der Entladerichtung.
+Das 95-Prozent-Quantil beträgt 76,01\,\EurMWh{} in der Entlade- und 90,40\,\EurMWh{} in der Laderichtung.
 Eine einzelne Zahl gibt den kurativen Reservierungspreis damit nicht wieder.
 
 \begin{figure}[H]
@@ -471,7 +488,12 @@ Zwischen diesem Quantil und dem Maximum liegt nochmals der Faktor 5,8 beziehungs
 %In der Entladerichtung fallen Minimum und 5-Prozent-Quantil auf 0,00\,\EurMWh{} zusammen, sodass die Entladereservierung in mindestens jeder zwanzigsten Stunde nichts kostet.
 %In der Laderichtung liegen Minimum und 5-Prozent-Quantil bei 1,00 beziehungsweise 1,01\,\EurMWh{} und damit auf der Gewinnschwelle, unterhalb derer das Optimierungsmodell eine Ladereservierung nicht zulässt.
 %Der untere Whisker der Abbildung trägt deshalb keine Aussage über den Markt, der obere dagegen sehr wohl.
-Der größte Teil der Stunden liegt weit unter diesen Spitzen, denn drei Viertel der Stunden kosten in der Entladerichtung höchstens 27,47 und in der Laderichtung höchstens 30,64\,\EurMWh{}.
+% GEAENDERT am 26.09.2026, Stilregel 1 und 5: Absatz geteilt, und diesen Spitzen wies ueber die neue Absatzgrenze zurueck
+% Alte Fassung, nicht wieder aufzunehmen:
+%Der größte Teil der Stunden liegt weit unter diesen Spitzen, denn drei Viertel der Stunden kosten in der Entladerichtung höchstens 27,47 und in der Laderichtung höchstens 30,64\,\EurMWh{}.
+
+% ABSATZ GETEILT am 26.09.2026: der Absatz hatte zehn Saetze, Stilregel 1. Die Spitze der Verteilung und ihr Hauptfeld sind zwei Gedanken.
+Der größte Teil der Stunden liegt weit unter den Maxima, denn drei Viertel der Stunden kosten in der Entladerichtung höchstens 27,47 und in der Laderichtung höchstens 30,64\,\EurMWh{}.
 % GESTRICHEN am 23.09.2026, Vorgabe des Verfassers: der Abstand ist knapp,
 % und die Lage des Mittels unterhalb des oberen Quartils traegt keine
 % Aussage. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
@@ -536,7 +558,10 @@ In einem Teil der Stunden bietet die Bezugsanlage die Entladereservierung zum Pr
 %Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
 Neben der Aufteilung des Referenzerlöses und der Zahlung bei vollständiger Verdrängung ist die zeitliche Staffelung des kurativen Reservierungspreises von Belang.
 Abbildung~\ref{fig:heatmap_reservierungspreis} trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf.
-Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
+% GEAENDERT am 26.09.2026, S1: der Median der Ladereservierung liegt mit 9,85 unter dem Knick, die Aussage war falsch
+% Alte Fassung, nicht wieder aufzunehmen:
+%Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
+Die Farbskala knickt bei 10\,\EurMWh{} und damit nahe beiden Jahresmedianen, sodass etwa die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
 % GEKUERZT am 23.09.2026. Abschnitt 4.3 nennt das 99-Prozent-Quantil seit
 % demselben Tag mit denselben vier Zahlen, naemlich 173 und 161 Euro je
 % Megawatt und Stunde sowie 88 und 87 Stunden. Hier braucht der Absatz sie
@@ -1169,7 +1194,10 @@ Eine solche Lieferung ist für eine einzelne Anlage von 100\,\si{MW} nicht zu er
 %Erst der Jahreslauf trennt beide Einflüsse.
 
 Beide Annahmen wirken an verschiedenen Stellen der Verteilung.
-Der Abrechnungspreis der Kapazitätsauktion bestimmt die teuren Stunden, der Liefermodus die typische Stunde.
+% GEAENDERT am 26.09.2026, Stilregel 14: Kapazitaetsauktion war ein einmaliges Synonym
+% Alte Fassung, nicht wieder aufzunehmen:
+%Der Abrechnungspreis der Kapazitätsauktion bestimmt die teuren Stunden, der Liefermodus die typische Stunde.
+Der Zuschlagspreis der \ac{aFRR}-Leistung bestimmt die teuren Stunden, der Liefermodus die typische Stunde.
 Für die Beschaffung wiegt der Liefermodus deshalb schwerer, denn er verschiebt das Hauptfeld der Verteilung, auf das der \ac{ÜNB} in den meisten Stunden trifft.
 Die anteilige Lieferung des Basisfalls ist dabei die belastbare Annahme, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
 % ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die uebrigen Liefermodi
@@ -1309,6 +1337,10 @@ Abbildung~\ref{fig:sensi_abrufdauer} zeigt eine, eine halbe und eine viertel Meg
 
 % NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
 %Von einer Stunde auf eine Viertelstunde sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
+% GEAENDERT am 26.09.2026, S2: der Basisfall der Sensitivitaet weicht um 0,01 vom Kapitel-Basisfall 12,22 und 9,85 ab; das Analyse-Repository fuehrt ihn als Gesamtlauf ohne Cache. Der Satz davor sagt das, Vorgabe des Verfassers statt eines Auftrags ans Repository
+% Alte Fassung, nicht wieder aufzunehmen:
+%Von einer auf eine viertel Megawattstunde je Megawatt sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
+Die Sensitivität steht auf einem eigenen Jahreslauf, dessen Median im Basisfall um ein Hundertstel unter dem des Abschnitts~\ref{sec:price_distribution} liegt.
 Von einer auf eine viertel Megawattstunde je Megawatt sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
 % ERGAENZT am 23.09.2026, Vorgabe des Verfassers: die halbe Stunde ist kaum
 % teurer als die Viertelstunde, die volle Stunde dagegen messbar, und die
@@ -1317,15 +1349,20 @@ Von einer auf eine viertel Megawattstunde je Megawatt sinkt der Median der zweit
 Die Verringerung wirkt in der Laderichtung damit stärker als in der Entladerichtung.
 % NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
 %Die halbe Stunde liegt dabei fast auf dem Preis der Viertelstunde, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
+% GEAENDERT am 26.09.2026, S3: ladend 8,56 bei einer halben gegen 8,59 bei einer viertel Megawattstunde ist nicht monoton; das Repository bestaetigt die Zahlen, der Text sagte es nicht
+% Alte Fassung, nicht wieder aufzunehmen:
+%Die halbe Megawattstunde liegt dabei fast auf dem Preis der viertel, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
 Die halbe Megawattstunde liegt dabei fast auf dem Preis der viertel, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
+Dass die halbe Megawattstunde ladend um drei Hundertstel unter der viertel liegt, ist keine Ersparnis, sondern die Unschärfe des Abstiegs, der die Stunden nacheinander senkt.
 % NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
 %Der Schritt von der halben auf die volle Stunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
 Der Schritt von der halben auf die ganze Megawattstunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
 % NEU GEFASST am 24.09.2026, die Energie fuehrt, die Empfehlung haengt
 % weiterhin an der Zeit. Zurueckgenommene Fassung:
 %Eine halbe Stunde Abrufdauer ist damit fast zum Preis einer Viertelstunde zu haben und verschafft dem \ac{ÜNB} die doppelte Zeit, die kurative Maßnahme durch eine andere abzulösen.
-Eine halbe Megawattstunde je Megawatt ist damit fast zum Preis einer viertel zu haben und verdoppelt die Abrufdauer, über die der \ac{ÜNB} die kurative Maßnahme durch eine andere ablösen kann.
 
+% UMBRUCH VERSCHOBEN am 26.09.2026: A3 hatte drei Saetze, Stilregel 1. Der Folgerungssatz eroeffnet jetzt A3, A2 traegt die Zahlen.
+Eine halbe Megawattstunde je Megawatt ist damit fast zum Preis einer viertel zu haben und verdoppelt die Abrufdauer, über die der \ac{ÜNB} die kurative Maßnahme durch eine andere ablösen kann.
 % GESTRICHEN am 24.09.2026, Vorgabe des Verfassers: der Absatz zur ersten
 % Iteration ist uninteressant. Der Umbruch aus Befund A2 des Durchgangs
 % vom selben Tag ist damit gegenstandslos, denn der zweite Teilgedanke
@@ -1575,7 +1612,10 @@ Die \ac{aFRR} trägt mit 71,4 statt 76,7 Prozent weiterhin rund drei Viertel, so
 %Welcher Markt sich verändert, ist von Belang, denn die \ac{aFRR}-Leistung trägt den größten Teil des Erlöses und damit den Preis.
 %Ein gesättigter Markt für \ac{aFRR}-Leistung wirkt deshalb stärker auf den kurativen Reservierungspreis als mehr Wettbewerb am \ac{IDC}.
 Für den kurativen Reservierungspreis unter künftigen Marktpreisen bleibt Folgendes.
-Der Preis sinkt mit dem Markterlös und gibt dabei etwas weniger nach als dieser, sodass die kurative Bindung gegenüber dem Markt nicht günstiger wird.
+% GEAENDERT am 26.09.2026, Angleichung an 5.4 A5: die Aussage war einseitig, Zeile 1450 zeigt beides
+% Alte Fassung, nicht wieder aufzunehmen:
+%Der Preis sinkt mit dem Markterlös und gibt dabei etwas weniger nach als dieser, sodass die kurative Bindung gegenüber dem Markt nicht günstiger wird.
+Der Preis sinkt mit dem Markterlös und gibt dabei etwas weniger nach als dieser, sodass der Aufschlag auf den Markterlös relativ steigt und absolut sinkt.
 Die Bezugsanlage weicht in die unangetasteten Märkte aus, was den Rückgang dämpft, ihn aber nicht aufhält.
 Die \ac{aFRR} trägt auch danach rund drei Viertel des Erlöses, sodass der kurative Reservierungspreis ein Preis gegen die Regelleistung bleibt.
 % NEU GEFASST am 24.09.2026, Vorgabe des Verfassers. Der Satz begann mit
@@ -1583,7 +1623,11 @@ Die \ac{aFRR} trägt auch danach rund drei Viertel des Erlöses, sodass der kura
 % zweimal Markt. Er nennt jetzt die Veraenderung als Subjekt und das
 % Senken des Preises als Wirkung. Zurueckgenommene Fassung:
 %Welcher Markt sich verändert, ist damit von Belang, denn eine Sättigung des Marktes für \ac{aFRR}-Leistung wirkt stärker auf den Preis als mehr Wettbewerb am \ac{IDC}.
-Eine Sättigung des Marktes für \ac{aFRR}-Leistung senkt den kurativen Reservierungspreis damit stärker als ein schärferer Wettbewerb am \ac{IDC}.
+% GEAENDERT am 26.09.2026, S4: die Variante senkt beide Preise zugleich, ERGEBNISSE Abschnitt 7.13 kennt keinen Lauf mit nur einem Abschlag; die Aussage folgt allein aus den Erloesanteilen und steht jetzt so
+% Alte Fassung, nicht wieder aufzunehmen:
+%Eine Sättigung des Marktes für \ac{aFRR}-Leistung senkt den kurativen Reservierungspreis damit stärker als ein schärferer Wettbewerb am \ac{IDC}.
+Die Zukunftsvariante trennt die beiden Abschläge nicht.
+Eine Sättigung des Marktes für \ac{aFRR}-Leistung dürfte den kurativen Reservierungspreis stärker senken als ein schärferer Wettbewerb am \ac{IDC}, denn die \ac{aFRR} trägt drei Viertel des Erlöses und der \ac{IDC} ein Siebtel.
 
 % GESTRICHEN am 23.09.2026, Klarstellung des Verfassers: die Diskussion der
 % Ergebnisse ist Kapitel 5 und kein Abschnitt des Kapitels 4. Der leere

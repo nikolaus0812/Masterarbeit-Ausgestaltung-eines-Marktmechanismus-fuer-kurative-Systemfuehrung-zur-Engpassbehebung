@@ -15194,6 +15194,77 @@ niedrigere Preise mit vier. `python tools/pruefen.py --alle` ohne Befund,
 `tools/pruefe_stil.py` erstmals ohne jeden Verstoss, vier Durchgaenge mit
 biber, 125 Seiten, allein die Warnung zu `ch:conc`.
 
+### 26.09.2026 spaet, Pruefung auf roten Faden und grobe Schnitzer
+
+**Anlass.** Der Verfasser hat nach Abschluss von Kapitel 5 eine Pruefung von
+Kapitel 4 auf roten Faden und grobe Schnitzer verlangt. Der ganze Fliesstext
+ist gelesen, jede aus den gedruckten Zahlen nachvollziehbare Rechnung
+nachgerechnet, die Zahlen von 4.6.3 und 4.6.4 gegen
+`analysen/code/schrift/ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md` und
+`AUFBAU_KAPITEL_4.md` des Analyse-Repositorys gehalten. Der rote Faden
+traegt, alle Rechnungen stimmen. Vier Befunde mit Gewicht, neun Kleinigkeiten.
+
+**S1, behoben.** Zeile 539 sagte, die Farbskala knicke bei 10 Euro je Megawatt
+und Stunde unterhalb beider Jahresmediane. Der Median der Ladereservierung
+liegt bei 9,85. Jetzt: nahe beiden Jahresmedianen, etwa die guenstigere
+Haelfte.
+
+**S2, als Satz behoben, Vorgabe des Verfassers.** 4.6.3 nennt als Basisfall
+12,21 und 9,84, das uebrige Kapitel 12,22 und 9,85. `AUFBAU_KAPITEL_4.md`
+Zeile 316 fuehrt 12,21/9,84 als Gesamtlauf ohne Cache, die
+Sensitivitaetstabelle in `ERGEBNISSE` Zeile 918 ebenso. Statt eines Auftrags
+ans Repository sagt der erste Satz von 4.6.3 A2 jetzt, dass die Sensitivitaet
+auf einem eigenen Jahreslauf steht, dessen Median im Basisfall um ein
+Hundertstel unter dem des Abschnitts 4.3 liegt.
+
+**S3, behoben.** Ladend kostet die halbe Megawattstunde je Megawatt 8,56, die
+viertel 8,59; das ist nicht monoton, und `ERGEBNISSE` Zeilen 921 und 923
+bestaetigen beide Zahlen. Der Text sagte fast auf dem Preis der viertel und
+uebergang, dass es darunter liegt. Neuer Satz: das ist keine Ersparnis,
+sondern die Unschaerfe des Abstiegs, der die Stunden nacheinander senkt.
+EIGENSTAENDIGE EINORDNUNG aus der Pruefung, nicht gerechnet: dass drei
+Hundertstel innerhalb der Unschaerfe des koordinatenweisen Minimums liegen,
+folgt aus Abschnitt 5.2 A2 und nicht aus einem Lauf mit anderer Reihenfolge.
+
+**S4, behoben.** Der Schlusssatz von 4.6.4 behauptete, eine Saettigung der
+aFRR senke den Preis staerker als mehr Wettbewerb am IDC. Die Zukunftsvariante
+senkt beide Preise zugleich, `ERGEBNISSE` Abschnitt 7.13 kennt keinen Lauf
+mit nur einem Abschlag. Jetzt in zwei Saetzen: die Variante trennt die
+Abschlaege nicht, und die Saettigung duerfte staerker wirken, denn die aFRR
+traegt drei Viertel des Erloeses und der IDC ein Siebtel.
+
+**Kleinigkeiten, behoben.** Kapiteleinleitung kuendigt jetzt die
+Erloeswirkung an, die 4.2 traegt. Zeile 86: alle kurativen
+Reservierungspreise statt alle Preise, weil das Kapitel Energiepreise in Euro
+je Megawattstunde nennt. Zeile 174: der DA statt er. Zeile 350: die beiden
+Stunden der Zeitumstellung, wie Kapitel 3 mit 8758 von 8760 erklaert.
+Zeile 426: Entladerichtung zuerst wie ueberall. Zeile 1172: Zuschlagspreis
+der aFRR-Leistung statt Kapazitaetsauktion, Stilregel 14. Zeile 1578: der
+Aufschlag steigt relativ und sinkt absolut, gleichlautend mit 5.4 A5.
+Absatzlaengen nach Stilregel 1: 4.1 A2 mit elf Saetzen bei 06.05.2025
+geteilt, 4.3 A2 mit zehn Saetzen vor dem Hauptfeld geteilt und der Rueckbezug
+diesen Spitzen zu den Maxima ausgeschrieben, in 4.6.3 der Folgerungssatz von
+A2 an den Anfang von A3 gezogen, sodass A3 vier Saetze traegt.
+
+**Bewusst nicht geaendert.** Zeile 505, 89 Prozent der Opportunitaet
+derselben Stunde: warum unter 100, ist nicht belegt, ein erklaerender
+Halbsatz haette eine Ursache behauptet. Zeile 1450, Aufschlag 24,8 Prozent:
+aus den gedruckten Werten 70,3 und 282,7 folgen 24,9; das Repository
+rechnet 24,8 aus ungerundeten Werten, `UPDATE_06_AN_SCHRIFTFASSUNG.md`
+Zeile 51. Nach CLAUDE.md Abschnitt 8 waeren die Komponenten mit einer Stelle
+mehr zu drucken; dafuer fehlen die ungerundeten Werte. Offen.
+
+**Geprueft und in Ordnung.** Der Schluessel `netztransparenz_regelenergie_2026`
+deckt die Redispatchmassnahmen, sein Titel nennt sie. Die aFRR-Leistung ist
+nach Anhang F an allen fuenf Tagen der groesste Posten, 49 bis 93 Prozent;
+dass die Handelsmaerkte am 11.02.2025 laenger gegen den Preis halten, ist
+kein Widerspruch. Zwei Drittel in 4.2 meint die aFRR-Leistung, drei Viertel
+in 4.6 Leistung und Arbeit, beides steht dabei.
+
+**Stand.** `pruefen.py --alle` ohne Befund, `pruefe_stil.py` ohne Verstoss in
+Kapitel 4, kein Absatz ausserhalb von vier bis acht Saetzen, Biber ohne
+Warnung, 124 Seiten.
+
 ## chapter_5.tex
 
 ### 24.09.2026, Struktur beschlossen und Stichpunktgeruest neu gesetzt
