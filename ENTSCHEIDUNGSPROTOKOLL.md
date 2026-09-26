@@ -16596,6 +16596,72 @@ es ein.
 **Zurueckgenommen, nicht wieder aufzunehmen:** die Fassung mit finden im
 Gegenzug leichter Anschluss an das Netz.
 
+## chapter_6.tex
+
+### 26.09.2026 nachts, Kapitel 6 geschrieben, zwoelf Absaetze
+
+**Vorgehen, Vorgabe des Verfassers.** Zuerst alle Aussagen der Kapitel 2 bis
+5 gezogen, dann auf Kernpunkte verdichtet, dann ein Absatzplan, den der
+Verfasser in drei Runden freigegeben hat. Zusammenfassend, Ergebnisse und
+Diskussion, Fokus auf der kurativen Systemfuehrung, die Erkenntnisse klar
+benennbar, ein kurzer Ausblick, hoechstens drei Seiten. Die Zusammenfassung
+soll so lesbar sein, dass man ohne die Zahlen weiss, welche Aussagen die
+Arbeit stuetzt.
+
+**Fuenf Kernpunkte, Reihenfolge und Zuschnitt vom Verfasser.** K1 die
+kurative Vorhaltung laesst sich als Marktprodukt ausgestalten. K2 der
+Zuschnitt folgt aus den Anforderungen, jede Anforderung hat ihren Preis;
+auf Vorgabe des Verfassers vor den Preis gestellt und an K1 angeglichen.
+K3 der kurative Reservierungspreis ist ein Preis gegen die Regelleistung
+und bezahlbar. K4 BESS muessen in das Engpassmanagement, und kurativ ist der
+Weg, der zu ihrer Technologie passt; Vorgabe des Verfassers, dass eine
+Aussage sich auf die BESS bezieht und kurativ in zwei Hinsichten wirkt. K5
+kurativ braucht einen eigenen Rahmen, systemweit wird aus der Sicherheits-
+eine Effizienzmassnahme.
+
+**Abgeschwaecht gegenueber der Vorgabe.** Der Verfasser formulierte, der
+praeventive Redispatch lasse sich mit BESS nicht durchfuehren. chapter_2.tex
+Zeile 1068 traegt, dass der Energieinhalt die Eignung fuer den praeventiven
+Redispatch begrenzt, weil dieser die Leistungsaenderung bis zur Aufloesung
+des Engpasses verlangt; 5.4 A3, dass die kostenbasierte Bemessung einen
+Speicher nicht trifft. Gesetzt ist deshalb: der praeventive Redispatch
+verlangt vom Speicher, was der Speicher nicht hat, naemlich Energie ueber
+die Dauer des Engpasses, die kurative Systemfuehrung verlangt, was ein
+Speicher hat, naemlich schnelle Leistung in beide Richtungen fuer ein kurzes
+Intervall. Paragraf 13a erfasst Speicher, deshalb nicht unmoeglich.
+
+**Aufbau.** Ein Einleitungsabsatz, 6.1 Zusammenfassung mit sieben
+Absaetzen (K1, K2, K3 in zwei, K4, K5, Grenzen und Lesart), 6.2 Ausblick
+mit vier Absaetzen (Rahmen, Betrieb und Netz, Forschung am Modell, Schluss).
+Alle zwoelf zu acht Saetzen. Keine Zitate, alles ist in den Kapiteln 2 bis
+5 belegt. Keine Zahlen ausser Jahr, Monaten und Paragraf, Groessenordnungen
+verbal wie in Kapitel 5.
+
+**Aus dem alten Geruest uebernommen** in den Ausblick: Redundanzkonzepte,
+stochastische Erweiterung um den Abruf, Portfolio, Bietwettbewerb und
+Beschaffungsmenge, Bemessung gegen ein Spektrum von Netzzustaenden, dazu aus
+AUSBLICK.md die Wirksamkeit je Netzknoten, die Rolling-Intrinsic-Bewertung
+und die IDC-Handelsstrategie. **Nicht uebernommen, Entscheidung des
+Verfassers:** die laengere Auswertung nach der Umstellung des
+Day-Ahead-Marktes, weil die Arbeit das ganze Jahr 2025 rechnet, und der
+Vergleich mit MACSE und dem Local Constraint Market, weil die
+Primaerquellen ungeprueft sind. Die alte Punkteliste steht als Kommentar am
+Ende der Datei.
+
+**main.tex.** Kapitel 6 ist seit dem 26.09.2026 eingebunden, die Warnung
+zu `ch:conc` ist damit weg; der Build traegt keine LaTeX-Warnung mehr.
+
+**OFFEN: Umfang.** Das Kapitel fuellt rund viereinhalb Seiten, Vorgabe sind
+hoechstens drei. Ein Kuerzungsplan liegt dem Verfasser vor: Rahmen und
+Betrieb im Ausblick zu einem Absatz, der Grenzen-Absatz aufgeloest in den
+Forschungsabsatz, sieben Absaetze um ein bis zwei Saetze gekuerzt, Ergebnis
+zehn Absaetze und rund 66 Saetze. Der Verfasser liest zuerst Kapitel 5 und
+6 am Stueck und entscheidet danach.
+
+**Stand.** `pruefen.py --alle` ohne Befund, `pruefe_stil.py` ohne Verstoss
+in Kapitel 6, alle Absaetze bei acht Saetzen, keine LaTeX-Warnung, Biber
+ohne Warnung, 129 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
