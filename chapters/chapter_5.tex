@@ -92,9 +92,8 @@ Zuletzt werden der Aufwand der Umsetzung und eine systemweite Ausrollung der kur
 %Hinzu tritt eine Konkurrenz, die der Anforderungskatalog nicht führt, denn die Präqualifikation der Regelleistung reserviert bereits ein Ladezustandsband \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 %A5 sichert zudem allein den Zugang, denn an einem Netzknoten mit wenigen wirksamen Anlagen liegt das Gebot über dem ermittelten kurativen Reservierungspreis.
 %Die Zahl der Anbieter je Netzknoten entscheidet damit über die Lage des Preises.
-
 In Abschnitt~\ref{sec:requirements_catalogue} werden acht Anforderungen an einen kurativen Marktmechanismus abgeleitet, die hier der Reihe nach gegen den Entwurf zu halten sind.
-Die erste Anforderung betrifft die Reaktionszeit, und die kurative Reservierung übernimmt dafür erstmals die drei Klassen aus InnoSys~2030 \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Die erste Anforderung betrifft die Reaktionszeit, und die kurative Reservierung übernimmt dafür erstmals die drei Klassen aus InnoSys~2030.
 Ob die Klassen von unter zehn Sekunden, etwa zwei Minuten und bis 15 Minuten den richtigen Zuschnitt treffen, bleibt zu diskutieren.
 Gegeneinander abzuwägen sind dabei die Fähigkeit einer Technologie zu einer gesicherten Reaktionszeit und der Spielraum des \ac{TATL}, aus dem die mögliche Höherauslastung folgt.
 Je näher die Reaktionszeit einer Technologie an der ihrer Klasse liegt, desto mehr Höherauslastung lässt sich gewinnen.
@@ -312,7 +311,7 @@ Die kurative Reservierung erweitert damit den Spielraum des Akteurs, und die Ver
 Anbieten kann ein Akteur die noch nicht vermarkteten Stunden und darüber hinaus Stunden, deren Leistung er bei einem Zuschlag am \ac{IDC} zurückbeschafft.
 Ob seine Anlage am Engpass wirkt, weiß der Akteur dabei nicht, denn die Sensitivität eines Netzknotens folgt aus dem Netzmodell des \ac{ÜNB}.
 Ein Zuschlag zeigt dem Akteur, dass seine Anlage in den bezuschlagten Stunden am Engpass wirkt.
-Unter einer flexiblen Netzanschlussvereinbarung nach §\,17 Abs.\,2b \ac{EnWG} riskiert der Akteur dann eine Begrenzung ohne Entschädigung, sobald er die zugesagte Leistung am \ac{IDC} engpassverschärfend vermarktet \cite{bundesnetzagentur_faq_2025}.
+Unter einer flexiblen Netzanschlussvereinbarung nach §\,17 Abs.\,2b \ac{EnWG} riskiert der Akteur dann eine Begrenzung ohne Entschädigung, sobald er die zugesagte Leistung am \ac{IDC} engpassverschärfend vermarktet.
 Eine noch nicht vermarktete Stunde hält der Akteur mit der Reservierung frei und entgeht damit der Begrenzung.
 Beschafft der Akteur dagegen eine bereits vermarktete Stunde zurück, so löst er eine engpassverschärfende Position auf.
 Die Rückbeschaffung entlastet damit das Netz, und ihre Kosten trägt der Akteur als Opportunität in seinen Gebotspreis ein.
@@ -495,6 +494,27 @@ Der Schaden am Betriebsmittel reicht zudem von einer verkürzten Lebensdauer bis
 Eine Haftung für Schäden am Betriebsmittel wäre deshalb einzuführen, soweit das Recht sie zulässt.
 Ein fehlender Nachweis der Lieferfähigkeit zum Zeitpunkt der Einplanung rechtfertigt daneben den Ausschluss vom Markt.
 Abstufen lässt sich die Pönale nach der Schwere des Falls, etwa als Verwarnung mit einer Ausgleichszahlung vor dem Ausschluss.
+
+% NEU am 26.09.2026, Vorgabe des Verfassers: der Nachweis der Verfuegbarkeit
+% stand bis dahin als Aufwand-Absatz in Abschnitt 5.5 und war dem Verfasser
+% zweimal nicht verstaendlich. Er gehoert zur Anforderung Verbindlichkeit:
+% die Poenale sichert die Zusage nach dem Fehlerfall, der Nachweis davor.
+% Der Absatz traegt eine Kernaussage, naemlich dass der Nachweis Bestandteil
+% des kurativen Marktmechanismus ist und keine Verwaltungsaufgabe. Das
+% Inc-Dec aus der Fassung in 5.5 ist nicht uebernommen, weil es die
+% Verguetungslogik des Redispatch mitschleppte, die 5.5 A1 behandelt.
+% Satz 7 von A10 nennt den Nachweis bereits als Grund fuer den Ausschluss;
+% A11 entfaltet ihn. Die Begriffe Lieferfaehigkeit in 5.1 A7 und A10 und
+% Verfuegbarkeit hier und im Forschungsbedarf sind noch zu vereinheitlichen,
+% Befund B31.
+Die Pönale sichert die Zusage nach dem Fehlerfall, der Nachweis der Verfügbarkeit sichert sie davor.
+Der Betreiber muss nachweisen, dass die angebotene Leistung zum Zeitpunkt der Einplanung frei ist.
+Ein Akteur könnte Leistung anbieten, die er an einem anderen Markt bereits verkauft hat.
+Der \ac{ÜNB} bemerkte das erst im Fehlerfall, wenn die zugesagte Leistung ausbleibt.
+Eine Pönale träfe dann eine Anlage, die nie liefern konnte, und der Engpass bliebe dennoch bestehen.
+Ein Verfahren zum Nachweis der Verfügbarkeit ist deshalb ein Bestandteil des kurativen Marktmechanismus und keine Verwaltungsaufgabe daneben.
+Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass allein der Nachweis der kurativen Verfügbarkeit hinzukommt.
+Wie dieser Nachweis im Betrieb zu führen ist, bleibt offen.
 
 % ANGEFUEGT am 24.09.2026, Vorgabe des Verfassers: ein zusammenfassender
 % Absatz am Ende von 5.1. Der Gedanke ist, dass die Anforderungen das
@@ -886,7 +906,7 @@ Ob sich die kurative Vorhaltung aus wirtschaftlicher Sicht lohnt, bemisst sich a
 Ein klarer Preis für eine Redispatchmaßnahme lässt sich jedoch nicht angeben, denn die Vergütung ist kostenbasiert.
 Die kostenbasierte Vergütung folgt dem Indifferenzprinzip aus Abschnitt~\ref{sec:redispatch_compensation} und fällt deshalb für jede Technologie anders aus.
 Hinzu kommt der Zeitpunkt der Anweisung, denn eine kurzfristig umplanende Anlage trägt andere Kosten als eine früh angewiesene.
-Der mittlere Arbeitspreis des präventiven Redispatch gibt deshalb allein einen Anhaltspunkt \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Der mittlere Arbeitspreis des präventiven Redispatch gibt deshalb allein einen Anhaltspunkt.
 Eine pauschale Anwendung dieses Preises überträgt die Kosten einer Technologie auf eine andere.
 % ERSETZT am 25.09.2026, Vorgabe des Verfassers: der Satz doppelte den
 % vorigen, der schon sagt, dass eine pauschale Anwendung die Kosten
@@ -1043,7 +1063,14 @@ Der \ac{ÜNB} beschafft damit einige aneinander anschließende Stunden, was eine
 Der Preis eines solchen Gebots liegt deshalb voraussichtlich unter dem ermittelten Wert.
 Die vorgehaltene Energie ist daran zu bemessen, dass der Zustand im Fehlerfall bis zur ablösenden Maßnahme zu halten ist.
 Eine vorgehaltene Energie für eine halbe Stunde ist fast zum Preis einer Viertelstunde zu haben und verdoppelt die Zeit für eine solche Ablösung.
-Die Vergütungsstruktur der geltenden Festlegung erfasst den ermittelten Preis nicht, denn sie wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren \cite{bundesnetzagentur_festlegung_2024}.
+% VERSCHOBEN am 26.09.2026, Vorgabe des Verfassers: der Satz zur
+% Verguetungsstruktur der Festlegung ist ein regulatorischer Satz und steht
+% jetzt in Abschnitt 5.5 beim Rechtsrahmen als Beleg. Ersatz hier ist die
+% Aussage aus Abschnitt 4.6.3, dass die vorgehaltene Energie die einzige
+% gepruefte Groesse ist, ueber die der UENB entscheidet.
+% Zurueckgenommene Fassung an dieser Stelle:
+%Die Vergütungsstruktur der geltenden Festlegung erfasst den ermittelten Preis nicht, denn sie wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren.
+Über die vorgehaltene Energie entscheidet allein der \ac{ÜNB}.
 Preis und Zuschnitt zusammen entscheiden damit, ob der \ac{ÜNB} eine kurative Maßnahme günstiger einplant als eine Redispatchmaßnahme.
 
 % ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: ein Schlussabsatz zur
@@ -1134,7 +1161,6 @@ Wie erfolgreich der kurative Marktmechanismus wird, hängt damit am \ac{ÜNB} se
 %Die Präqualifikation eines \ac{BESS} kann auf der Regelleistung aufsetzen, sodass der zusätzliche Aufwand gering bleibt.
 %Ein \ac{BESS} vereint damit die Eigenschaften, die bei den übrigen Technologien einzeln auftreten.
 %Keine Alternative erreicht denselben Zuschnitt, und der Bestand an \ac{BESS} wächst zugleich.
-
 % DOPPLUNGEN ENTFERNT am 25.09.2026, Vorgabe des Verfassers. Gedoppelt
 % war nicht das zu hohe oder zu niedrige Gebot, sondern der Erloesanteil
 % der aFRR, der in 5.1, 5.2 und hier stand, und die Kenntnis des
@@ -1166,7 +1192,6 @@ Wie erfolgreich der kurative Marktmechanismus wird, hängt damit am \ac{ÜNB} se
 %Ein Betreiber trägt damit ein zweiseitiges Risiko, das er allein über seinen Gebotspreis steuert.
 %Die kurative Reservierung gibt dem Betreiber zugleich eine Möglichkeit, seinen Erlös allein durch eine klügere Verteilung auf die Märkte zu steigern.
 %Wie gut ein Betreiber die Handelsspannen einschätzt, entscheidet damit über seinen Erlös aus der kurativen Reservierung.
-
 % BEGRIFF ERSETZT am 25.09.2026: Abrufdauer heisst nach der Vorgabe vom
 % 23.09.2026 vorgehaltene Energie je Abruf. Dies war das letzte
 % Vorkommen im Fliesstext von Kapitel 5.
@@ -1207,9 +1232,29 @@ Wie erfolgreich der kurative Marktmechanismus wird, hängt damit am \ac{ÜNB} se
 %Die Vorhaltung von \ac{aFRR}-Leistung ist der nächste Markt, der diesen Punkt erreicht.
 %Sinkt der Preis der \ac{aFRR}-Leistung, so sinkt der kurative Reservierungspreis mit ihm, ohne dass sich sein Verhältnis zur Marktopportunität ändert.
 %Die Beschlusskammer hat die Behandlung von \ac{BESS} einem späteren Hinweis vorbehalten, sodass die Regelungslücke dokumentiert ist \cite{bundesnetzagentur_festlegung_2024}.
-Mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingesetzt wird.
-Ein \ac{BESS} tritt als neuer Akteur in das Übertragungsnetz, das flexible Anlagen mit hoher Leistung und geringem Energieinhalt bislang nicht kennt.
-Das Marktdesign lässt kurzfristige Fahrplanänderungen zu Recht zu, denn eine kurzfristige Prognoseabweichung führte sonst zu einem Ungleichgewicht.
+% NEU GEFASST am 26.09.2026, Vorgabe des Verfassers. Der Absatz endet jetzt
+% mit der Ueberleitung zur Anschlussleistung, denn nicht die Kurzfristigkeit
+% allein belastet das Netz, sondern die Hoehe der bewegten Leistung.
+% Eingefuegt sind zwei Saetze, naemlich der Anreiz zum Ausgleich der
+% Einspeisung aus erneuerbaren Energien und die Fahrweise an den Grenzen der
+% Leistung. Platz dafuer kommt aus der Dopplung in Satz 4, denn die
+% Entlastung der Regelleistung stand dort und im Schlusssatz. Die alten
+% Saetze 5 und 6 sind zu einem verbunden, wobei der Vorbehalt zum
+% Energieinhalt faellt; Satz 2 nennt den geringen Energieinhalt bereits.
+% Der Handelsschluss traegt jetzt den Zusatz innerhalb der Regelzone, denn
+% nach chapter_2.tex Zeile 1649 gilt die Frist von fuenf Minuten allein
+% regelzonenintern. Behebt Befund B18.
+% Der erste Satz fuehrt den Bestand mit seinem Attribut ein, weil der
+% frueher vorangehende Absatz am 26.09.2026 gestrichen ist.
+% EIGENSTAENDIGE ABLEITUNG, vom Verfasser bestaetigt am 26.09.2026: dass die
+% kurze Frist bis zum Handelsschluss ein BESS anreizt, die Abweichung der
+% Einspeisung aus erneuerbaren Energien auszugleichen. Kapitel 2 sagt allein,
+% dass der IDC die Anpassung bis zum Handelsschluss offenhaelt und dass ein
+% Speicher die Preisunterschiede fuer die Arbitrage nutzt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Mit dem Bestand verschiebt sich, wofür ein \ac{BESS} eingesetzt wird.
+%Ein \ac{BESS} tritt als neuer Akteur in das Übertragungsnetz, das flexible Anlagen mit hoher Leistung und geringem Energieinhalt bislang nicht kennt.
+%Das Marktdesign lässt kurzfristige Fahrplanänderungen zu Recht zu, denn eine kurzfristige Prognoseabweichung führte sonst zu einem Ungleichgewicht.
 % ERGAENZT am 25.09.2026, Vorgabe des Verfassers: der kurzfristige
 % Handel nimmt der Regelleistung den Ausgleich der
 % Prognoseabweichungen ab, die Regelleistung ist nur begrenzt
@@ -1225,7 +1270,7 @@ Das Marktdesign lässt kurzfristige Fahrplanänderungen zu Recht zu, denn eine k
 %Solche Fahrplanänderungen entziehen sich der Betriebsplanung des Engpassmanagements.
 %Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
 %Mit wachsendem Bestand lässt sich der Redispatch deshalb weniger zuverlässig einplanen.
-Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn und nimmt der Regelleistung diesen Ausgleich ab.
+%Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn und nimmt der Regelleistung diesen Ausgleich ab.
 % GESTRICHEN UND NEU GEFASST am 25.09.2026, Vorgaben des Verfassers.
 % Der Satz zur Menge der Regelleistung passt nicht in den Kontext, die
 % Aussage davor reicht. Der Satz zum Energieinhalt sagt jetzt, dass ein
@@ -1242,15 +1287,23 @@ Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn und nim
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Ein \ac{BESS} verschiebt seine Leistung kurzfristig bis an ihre Grenzen, soweit der Energieinhalt es zulässt.
 %Der Betriebsplanung des Engpassmanagements entzieht sich damit viel Leistung.
-Ein \ac{BESS} könnte seine Leistung kurzfristig bis an ihre Grenzen verschieben, soweit der Energieinhalt es zulässt.
-Der Betriebsplanung des Engpassmanagements entzögen sich damit viele Leistungsänderungen.
+%Ein \ac{BESS} könnte seine Leistung kurzfristig bis an ihre Grenzen verschieben, soweit der Energieinhalt es zulässt.
+%Der Betriebsplanung des Engpassmanagements entzögen sich damit viele Leistungsänderungen.
 % ERGAENZT am 25.09.2026, Vorgabe des Verfassers: ohne es zu wissen.
 % Die fehlende Kenntnis des Netzzustands steht dafuer am Satzanfang,
 % damit das Wort ohne nicht zweimal im Satz steht.
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Ein \ac{BESS} handelt zudem allein nach Marktsignalen und ohne Kenntnis des Netzzustands, sodass es einen Engpass verschärfen kann.
+%Ein \ac{BESS} kennt den Netzzustand nicht und handelt allein nach Marktsignalen, sodass es einen Engpass verschärfen kann, ohne es zu wissen.
+%Der kurzfristige Handel entlastet damit die Regelleistung, lässt den Redispatch aber weniger zuverlässig einplanen.
+Mit dem wachsenden Bestand tritt ein \ac{BESS} als neuer Akteur in das Übertragungsnetz, das flexible Anlagen mit hoher Leistung und geringem Energieinhalt bislang nicht kennt.
+Das Marktdesign lässt kurzfristige Fahrplanänderungen zu Recht zu, denn eine kurzfristige Prognoseabweichung führte sonst zu einem Ungleichgewicht.
+Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn innerhalb der Regelzone.
+Die kurze Frist bis zum Handelsschluss reizt ein \ac{BESS} an, die Abweichung der Einspeisung aus erneuerbaren Energien auszugleichen.
+Ein \ac{BESS} bewegt seinen begrenzten Energieinhalt für diesen Ausgleich an den Grenzen seiner Leistung, weil dort sein Erlös am größten ist.
+Der Betriebsplanung des Engpassmanagements entziehen sich damit viele Leistungsänderungen.
 Ein \ac{BESS} kennt den Netzzustand nicht und handelt allein nach Marktsignalen, sodass es einen Engpass verschärfen kann, ohne es zu wissen.
-Der kurzfristige Handel entlastet damit die Regelleistung, lässt den Redispatch aber weniger zuverlässig einplanen.
+Nicht die Kurzfristigkeit allein belastet damit das Netz, sondern die Höhe der Leistung, die ein \ac{BESS} kurzfristig bewegt.
 
 % BESTAETIGT UND BEGRUENDET am 25.09.2026, Vorgabe des Verfassers: eine
 % Sicherheitsmarge ist immer vergeudetes Potenzial und damit
@@ -1263,7 +1316,31 @@ Der kurzfristige Handel entlastet damit die Regelleistung, lässt den Redispatch
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, hält dafür aber Übertragungskapazität ungenutzt frei.
 %Die Anschlussleistungen der geplanten Anlagen sind so hoch, dass eine ausreichende Marge zu viel Kapazität bindet.
-Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, bindet bei den hohen Anschlussleistungen der geplanten Anlagen aber zu viel Übertragungskapazität.
+% AUFGETEILT am 26.09.2026, Vorgabe des Verfassers. Der Absatz trug zwei
+% Kernaussagen, naemlich den Netzanschluss und die Einbindung in das
+% Engpassmanagement. Er wird zu zwei Absaetzen.
+% Der erste Absatz behandelt den Netzanschluss. Die Sicherheitsmarge steht
+% dort als dritter von drei Wegen, die die Anlage begrenzen.
+% Der zweite Absatz traegt die Einbindung und begruendet sie jetzt, statt sie
+% festzustellen. Der Verfasser hat beanstandet, dass der Satz zum
+% Redispatchregime nur eine Information war. Neu sind deshalb die Notwendigkeit
+% des Eintritts, die Schwierigkeit der kostenbasierten Bemessung fuer den
+% praeventiven Redispatch und der Grund, warum sich die kurative
+% Systemfuehrung anbietet.
+% Gestrichen sind die beiden Schlusssaetze zum Handel am IDC und zum Erloes
+% statt einer Abregelung. Der zweite trug Befund B5, naemlich das Pronomen
+% ueber die Satzgrenze. Der Verfasser hat entschieden, die Auskunft ueber das
+% Netz zu halten, weil sie die Bruecke zum Gebotszonensplit in 5.5 ist.
+% EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser bestaetigt am 26.09.2026. Erstens,
+% dass das Anschlussverfahren auf eine Technologie mit dieser Leistung und
+% diesem Energieinhalt nicht zugeschnitten ist. Zweitens, dass ein wachsender
+% Bestand unter den konservativen Annahmen des heutigen Verfahrens die Grenzen
+% der Systemsicherheit erreichen duerfte. Drittens, dass das Verhalten allein
+% in wenigen Stunden des Jahres kritisch wird. Alle drei sind abgeschwaecht
+% gesetzt, weil die BNetzA-FAQ zum Netzanschluss von Stromspeichern sich nicht
+% in Text wandeln laesst und damit nicht zu pruefen ist.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, bindet bei den hohen Anschlussleistungen der geplanten Anlagen aber zu viel Übertragungskapazität.
 % VERSTAERKT am 25.09.2026, Vorgabe des Verfassers: der kurative
 % Marktmechanismus setzt ein BESS nicht allein ein, sondern veraendert
 % sein Verhalten am Markt. Das ist die neue Erkenntnis.
@@ -1279,19 +1356,36 @@ Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten auf, b
 %Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
 %Die Reservierung eines Leistungsbandes nimmt ihm daneben die Leistung, mit der er den Engpass verschärfen könnte.
 %Der kurative Marktmechanismus wirkt damit zweifach, nämlich über die Einbindung und über die gebundene Leistung.
-Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und der \ac{ÜNB} setzt es deshalb im Engpassmanagement bislang nicht ein \cite{bundesnetzagentur_festlegung_2024}.
-Der kurative Marktmechanismus bindet ein \ac{BESS} dagegen in das Engpassmanagement ein.
-Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
-Eine solche Auskunft über das Netz erhält ein Akteur aus keinem anderen Markt.
-Die Reservierung eines Leistungsbandes nimmt ihm daneben die Leistung, mit der er den Engpass verschärfen könnte.
+%Ein \ac{BESS} ist daneben durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und der \ac{ÜNB} setzt es deshalb im Engpassmanagement bislang nicht ein \cite{bundesnetzagentur_festlegung_2024}.
+%Der kurative Marktmechanismus bindet ein \ac{BESS} dagegen in das Engpassmanagement ein.
+%Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
+%Eine solche Auskunft über das Netz erhält ein Akteur aus keinem anderen Markt.
+%Die Reservierung eines Leistungsbandes nimmt ihm daneben die Leistung, mit der er den Engpass verschärfen könnte.
 % NEU GEFASST am 25.09.2026, Vorgabe des Verfassers: das Ziel des
 % Mechanismus ist auszusprechen. Ein BESS soll am IDC handeln, solange
 % es keinen Engpass erzeugt, und sonst einen Erloes des UENB erhalten,
 % statt abgeregelt zu werden.
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Der kurative Marktmechanismus setzt ein \ac{BESS} damit nicht allein ein, sondern verändert zugleich sein Verhalten am Markt.
-Ein \ac{BESS} handelt damit am \ac{IDC}, solange es keinen Engpass erzeugt.
-Erzeugt es einen Engpass, so erhält es einen Erlös des \ac{ÜNB} statt einer Abregelung.
+%Ein \ac{BESS} handelt damit am \ac{IDC}, solange es keinen Engpass erzeugt.
+%Erzeugt es einen Engpass, so erhält es einen Erlös des \ac{ÜNB} statt einer Abregelung.
+Der Netzanschluss eines \ac{BESS} ist damit die nächste Frage.
+Die Anschlussleistungen der geplanten Anlagen sind hoch, und das Anschlussverfahren ist auf eine Technologie mit dieser Leistung und diesem Energieinhalt nicht zugeschnitten.
+Unter den konservativen Annahmen des heutigen Verfahrens dürfte ein wachsender Bestand an \ac{BESS} die Grenzen der Systemsicherheit erreichen.
+Kritisch wird das Verhalten eines \ac{BESS} voraussichtlich allein in wenigen Stunden des Jahres, nämlich beim Bezug von Energie bei geringer und bei der Einspeisung bei hoher Erzeugung aus Wind und Photovoltaik.
+Eine flexible Netzanschlussvereinbarung nach §\,17 Abs.\,2b \ac{EnWG} begrenzt die Leistung in genau diesen Stunden.
+Eine Vorgabe für den Betrieb schlösse solche Stunden von vornherein aus.
+Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten ebenfalls auf, bindet bei den hohen Anschlussleistungen aber zu viel Übertragungskapazität.
+Alle drei Wege begrenzen die Anlage, statt ihre Leistung zu nutzen.
+
+Ein \ac{BESS} muss deshalb in das Engpassmanagement eintreten, statt am Netzanschluss begrenzt zu werden.
+Ein \ac{BESS} ist heute durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und der \ac{ÜNB} setzt es im Engpassmanagement bislang nicht ein.
+Für den präventiven Redispatch ist die Einbindung schwer, denn eine kostenbasierte Vergütung müsste den Werteverbrauch und die Opportunität eines Speichers je Maßnahme bemessen.
+Die kurative Systemführung bietet sich dagegen an, denn sie vergütet die Vorhaltung und nicht den Eingriff.
+Der kurative Marktmechanismus bindet ein \ac{BESS} damit in das Engpassmanagement ein.
+Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
+Eine solche Auskunft über das Netz erhält ein Akteur aus keinem anderen Markt.
+Die Reservierung eines Leistungsbandes nimmt dem Betreiber daneben die Leistung, mit der er den Engpass verschärfen könnte.
 
 % ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: die reservierte
 % Leistung laesst sich mehrfach einsetzen. Eine kurative Massnahme ist
@@ -1328,7 +1422,7 @@ Der \ac{ÜNB} verteilte die Kosten der Vorhaltung dann auf mehrere Verwendungen.
 
 Der Ausbau der \ac{BESS} verschärft nicht nur die Kurzfristigkeit, sondern verändert auch die Märkte.
 Der Bedarf an Regelleistung folgt der Dimensionierung des Systems und wächst nicht mit dem Bestand an \ac{BESS}.
-Für die \ac{FCR} ist dieser Punkt erreicht, denn die präqualifizierte Leistung aus \ac{BESS} übersteigt den deutschen Bedarf \cite{celi_cortes_m5use_2024, bundesnetzagentur_monitoringbericht_2026}.
+Für die \ac{FCR} ist dieser Punkt erreicht, denn die präqualifizierte Leistung aus \ac{BESS} übersteigt den deutschen Bedarf.
 Die Vorhaltung von \ac{aFRR}-Leistung ist der nächste Markt, der diesen Punkt erreicht.
 % BELEGT UND BERICHTIGT am 25.09.2026, Vorgabe des Verfassers: mit der
 % Zukunftsvariante aus Abschnitt 4.6.4 belegen. Die Variante belegt die
@@ -1368,11 +1462,36 @@ Lukrativ ist der kurative Marktmechanismus dabei nur für beide Seiten zugleich,
 \section{Umsetzung, systemweite Ausrollung und Forschungsbedarf}
 \label{sec:implementation_outlook}
 
-Vor der Umsetzung steht der geltende Rahmen.
-§\,13a Abs.\,2 \ac{EnWG} entschädigt den durchgeführten Eingriff und schreibt eine kostenbasierte Abrechnung vor \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Eine marktbasierte Beschaffung des Redispatch ist damit im geltenden Recht ausgeschlossen.
-Redispatch~2.0 ist ein Duldungs- und Entschädigungsregime, während die kurative Reservierung ein Gebot des Betreibers voraussetzt \cite{bundesnetzagentur_festlegung_2024}.
-Der entworfene kurative Marktmechanismus setzt deshalb eine Änderung des §\,13a \ac{EnWG} voraus.
+% VOLLSTAENDIG NEU GEFASST am 26.09.2026, Vorgabe des Verfassers. Die alte
+% Fassung referierte den Rechtsrahmen, den Kapitel 2 bereits traegt, naemlich
+% Paragraf 13a Abs. 2 in Zeile 1280, 2166 und 2187, das Duldungsrecht in
+% Zeile 1343 und 1982 und Paragraf 13c in Zeile 1295. Der Verfasser hat
+% entschieden, den Redispatch hier nicht erneut darzustellen.
+% Der Absatz fragt jetzt, wie sich ein Engpassmanagement mit einer Verguetung
+% der vorgehaltenen Leistung und das heutige mit einer Verguetung der bewegten
+% Arbeit ergaenzen, und woran der kurative Marktmechanismus regulatorisch
+% scheitern kann. Die Antwort liegt im Eingriff in den Fahrplan: der Redispatch
+% aendert einen bestehenden Fahrplan einmalig, die kurative Reservierung
+% schraenkt ihn vorab ueber die ganze Bindungsdauer ein.
+% BEGRIFFE. Die Ausdruecke kapazitaetsbasiert und arbeitsbasiert kommen in der
+% Arbeit nicht vor; kapazitaetsbasierter Redispatch ist am 25.09.2026 entfernt
+% worden. Gesetzt sind deshalb die gefuehrten Formulierungen Verguetung der
+% vorgehaltenen Leistung und Verguetung der bewegten Arbeit, die Abschnitt 5.3
+% und Abschnitt 2.3 tragen. Das Wort Gebot bleibt dem Marktgebot vorbehalten.
+% Paragraf 13a wird nach Vorgabe des Verfassers erweitert und nicht geaendert.
+% Satz 7 nimmt den Satz auf, der am 25.09.2026 aus Abschnitt 5.3 entfernt
+% wurde und zum geltenden Rahmen gehoert. Damit ist Befund B2 erledigt, denn
+% Paragraf 13c wird nicht mehr gebraucht.
+% GESTRICHEN und nicht wieder aufzunehmen ist die Aussage, Redispatch 2.0 sei
+% ein Duldungs- und Entschaedigungsregime, waehrend die kurative Reservierung
+% ein Gebot des Betreibers voraussetze. Die Freiwilligkeit der Teilnahme ist
+% damit nicht mehr ausgesprochen; der Verfasser hat das hingenommen.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Vor der Umsetzung steht der geltende Rahmen.
+%§\,13a Abs.\,2 \ac{EnWG} entschädigt den durchgeführten Eingriff und schreibt eine kostenbasierte Abrechnung vor \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+%Eine marktbasierte Beschaffung des Redispatch ist damit im geltenden Recht ausgeschlossen.
+%Redispatch~2.0 ist ein Duldungs- und Entschädigungsregime, während die kurative Reservierung ein Gebot des Betreibers voraussetzt \cite{bundesnetzagentur_festlegung_2024}.
+%Der entworfene kurative Marktmechanismus setzt deshalb eine Änderung des §\,13a \ac{EnWG} voraus.
 % BEGRIFF ENTFERNT UND AUSSAGE UMGEKEHRT am 25.09.2026, Vorgabe des
 % Verfassers. Der kapazitaetsbasierte Redispatch ist in keinem Kapitel
 % definiert. Die bisherige Fassung sagte, der kurative Marktmechanismus
@@ -1383,7 +1502,22 @@ Der entworfene kurative Marktmechanismus setzt deshalb eine Änderung des §\,13
 % Stilllegung. Der Text sagt jetzt das Gegenteil.
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Der kapazitätsbasierte Redispatch beschafft im Kern dieselbe Größe und unterscheidet sich allein in Auslöser und Reaktionszeit, sodass der kurative Marktmechanismus an eine bestehende Beschaffungsform anschließen kann.
-Eine Vergütung der Bereithaltung mit einem Leistungspreis kennt das Engpassmanagement allein für systemrelevante Anlagen nach einer angezeigten Stilllegung, sodass der kurative Marktmechanismus an keine breit angelegte Beschaffungsform anschließen kann.
+%Eine Vergütung der Bereithaltung mit einem Leistungspreis kennt das Engpassmanagement allein für systemrelevante Anlagen nach einer angezeigten Stilllegung, sodass der kurative Marktmechanismus an keine breit angelegte Beschaffungsform anschließen kann.
+Vor der Umsetzung ist zu klären, wie sich ein Engpassmanagement mit einer Vergütung der vorgehaltenen Leistung und das heutige mit einer Vergütung der bewegten Arbeit ergänzen.
+Ein Nebeneinander beider Formen ist möglich, sofern die Vergütung der bewegten Arbeit den Engpass dauerhaft behebt und die Vergütung der vorgehaltenen Leistung das Überlastintervall überbrückt.
+Anlagen der Windenergie, der Photovoltaik und die Speicher stellen im künftigen Stromsystem den Hauptanteil der Erzeugung und der installierten Leistung, und einen geringen Energieinhalt trägt allein der Speicher.
+Eine Vergütung der vorgehaltenen Leistung greift damit an der prägenden Größe des künftigen Stromsystems an, und die Regelleistungsmärkte beschaffen Leistung bereits auf diese Weise.
+Ausgeschlossen ist dagegen, eine solche Vergütung in das Duldungsregime des Redispatch einzufügen.
+Der Redispatch ändert einen bestehenden Fahrplan einmalig, während die kurative Reservierung den Fahrplan vorab über die ganze Bindungsdauer einschränkt.
+% ERSETZT am 26.09.2026, Vorgabe des Verfassers: der Satz zur
+% Verguetungsstruktur der Festlegung aus Abschnitt 5.3 steht jetzt hier als
+% Beleg dafuer, dass die Bemessung am Eingriff und die Bemessung an der
+% Vorhaltung nicht zu vereinen sind. Er traegt den Schluss auf die eigene
+% Verguetungsstruktur mit.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ein einmaliger Eingriff lässt sich nachträglich bemessen, eine Einschränkung über die Bindungsdauer verlangt dagegen eine eigene Vergütungsstruktur.
+Die geltende Festlegung wählt zwischen Werteverbrauch und Opportunität, statt beide zu addieren, sodass sie den ermittelten Preis nicht erfasst und eine eigene Vergütungsstruktur nötig ist.
+Der entworfene kurative Marktmechanismus setzt deshalb eine Erweiterung des §\,13a \ac{EnWG} voraus.
 
 % ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: die Wirkung von
 % Rahmenvorgaben und eines Gebotszonensplits ist ausfuehrlicher zu
@@ -1395,27 +1529,97 @@ Eine Vergütung der Bereithaltung mit einem Leistungspreis kennt das Engpassmana
 % Wirkungen eines Gebotszonensplits auf den Bedarf an
 % Engpassmanagement und auf den kurativen Reservierungspreis. Sie
 % folgen aus der Ueberlegung und sind nicht gerechnet.
-Der kurative Marktmechanismus setzt den heutigen Marktrahmen voraus, und eine Änderung dieses Rahmens wirkt auf ihn zurück.
-Die Binnenmarktverordnung sieht die marktbasierte Beschaffung des Redispatch als Regelfall vor und lässt die Kostenbasis nur bei fehlendem Wettbewerb oder strategischem Bietverhalten zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-Ein marktlich beschaffter Redispatch nähme der kurativen Reservierung ihre Sonderstellung, denn beide Beschaffungen folgten dann demselben Grundsatz.
-Der einheitliche Börsenpreis der deutschen Gebotszone bildet zudem die Belastung der Übertragungswege nicht ab.
-Ein Gebotszonensplit trennte den Preis nach Regionen und gäbe dem Handel damit ein örtliches Signal.
+% NEU GEFASST am 26.09.2026, Vorgabe des Verfassers. Der Absatz traegt jetzt
+% eine These statt einer Aufzaehlung von Rahmenvorgaben: ohne eine marktliche
+% Abbildung der Uebertragungskapazitaet, wie sie ein Gebotszonensplit leistete,
+% muss eine Systemdienstleistung diese Aufgabe uebernehmen, und genau das tut
+% der kurative Marktmechanismus bei geringem Eingriff in die Marktergebnisse.
+% GESTRICHEN und nicht wieder aufzunehmen sind vier Saetze. Erstens der Satz,
+% der kurative Marktmechanismus setze den heutigen Marktrahmen voraus; er
+% stellte allein fest, ohne zu begruenden. Zweitens die Binnenmarktverordnung,
+% die fast wortgleich in chapter_2.tex Zeile 2587 steht, Befund B30. Drittens
+% der Satz zum marktlich beschafften Redispatch und seiner Sonderstellung, denn
+% der Verfasser hat entschieden, den Redispatch in Abschnitt 5.5 nicht erneut
+% darzustellen. Viertens der Satz, ein Engpass innerhalb einer Zone bliebe
+% gleichwohl bestehen; die Aussage traegt jetzt der neue Satz 5 allgemeiner.
+% Damit entfaellt auch die Spannung zum neuen Schlussabsatz, der einen
+% Gebotszonensplit bei vollstaendiger Einbindung fuer entbehrlich haelt.
+% Satz 6 nennt gering mit seinem Massstab im selben Satz, naemlich der vom
+% UENB gesteuerten beschafften Menge, Stilregel 7.
+% Der Verfasser hat am 26.09.2026 ergaenzt, dass allein das strategische
+% Bietverhalten zu vermeiden ist, weil es die Kosten der Vorhaltung treibt.
+% Das steht als Satz 7 und tritt an die Stelle der Binnenmarktverordnung, die
+% genau diesen Vorbehalt referierte. Der Begriff steht in chapter_2.tex
+% Zeile 2587 und in Abschnitt 5.1 als Knappheitsaufschlag.
+% EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser bestaetigt am 26.09.2026: dass ohne
+% marktliche Abbildung der Uebertragungskapazitaet eine Systemdienstleistung
+% diese Aufgabe uebernehmen muss, dass der kurative Marktmechanismus die
+% Uebertragungskapazitaet eines Netzknotens ueber den Reservierungspreis
+% bewertet und dass der Eingriff in die Marktergebnisse dabei gering bleibt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der kurative Marktmechanismus setzt den heutigen Marktrahmen voraus, und eine Änderung dieses Rahmens wirkt auf ihn zurück.
+%Die Binnenmarktverordnung sieht die marktbasierte Beschaffung des Redispatch als Regelfall vor und lässt die Kostenbasis nur bei fehlendem Wettbewerb oder strategischem Bietverhalten zu \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
+%Ein marktlich beschaffter Redispatch nähme der kurativen Reservierung ihre Sonderstellung, denn beide Beschaffungen folgten dann demselben Grundsatz.
+%Der einheitliche Börsenpreis der deutschen Gebotszone bildet zudem die Belastung der Übertragungswege nicht ab.
+%Ein Gebotszonensplit trennte den Preis nach Regionen und gäbe dem Handel damit ein örtliches Signal.
+%Der Dispatch der Energiemärkte entlastete das Netz dann von sich aus, sodass der Bedarf an Engpassmanagement sänke.
+%Wie hoch der kurative Reservierungspreis ausfiele, hinge danach am Preisniveau der jeweiligen Zone.
+%Ein Engpass innerhalb einer Zone bliebe gleichwohl bestehen, sodass die kurative Vorhaltung auch mit örtlichen Preisen eine Aufgabe behielte.
+Änderungen am Marktrahmen wirken unmittelbar auf den kurativen Reservierungspreis zurück, denn der Preis folgt aus den Erlösmöglichkeiten der übrigen Märkte.
+Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab, und ein Gebotszonensplit gäbe dem Handel ein örtliches Signal.
 Der Dispatch der Energiemärkte entlastete das Netz dann von sich aus, sodass der Bedarf an Engpassmanagement sänke.
-Wie hoch der kurative Reservierungspreis ausfiele, hinge danach am Preisniveau der jeweiligen Zone.
-Ein Engpass innerhalb einer Zone bliebe gleichwohl bestehen, sodass die kurative Vorhaltung auch mit örtlichen Preisen eine Aufgabe behielte.
+Solange der Markt die Übertragungskapazität nicht selbst abbildet, muss eine Systemdienstleistung diese Aufgabe übernehmen.
+Genau das leistet der kurative Marktmechanismus, denn er bewertet die Übertragungskapazität eines Netzknotens über den Preis der Reservierung.
+Der Eingriff in die Marktergebnisse bleibt dabei gering, denn der \ac{ÜNB} steuert die beschaffte Menge.
+Zu vermeiden ist allein ein strategisches Bietverhalten, denn es treibt die Kosten der Vorhaltung.
+% BERICHTIGT am 26.09.2026, Vorgabe des Verfassers: kommt ein
+% Gebotszonensplit, ist das Engpassmanagement ein ganz anderes, und die
+% Lage waere neu zu bewerten. Die Aussage zum Preisniveau der Zone ist damit
+% zu schwach und wird ZURUECKGENOMMEN. Der Text sagt jetzt, dass der
+% ermittelte Preis neu zu bewerten waere. Damit ist die eigenstaendige
+% Ableitung zum Preisniveau der Zone erledigt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Wie hoch der kurative Reservierungspreis ausfiele, hinge nach einem Gebotszonensplit am Preisniveau der jeweiligen Zone.
+Mit einem Gebotszonensplit wäre das Engpassmanagement ein anderes, sodass der ermittelte kurative Reservierungspreis neu zu bewerten wäre.
 
-Neben dem Rahmen steht der Aufwand beim \ac{ÜNB} und beim Betreiber.
+% NEU GEFASST am 26.09.2026, Vorgabe des Verfassers. Der Verfasser hat
+% beanstandet, dass der Absatz die Anbindung an den Vorsatz nicht erkennen
+% laesst und dass der Satz zur Frage des Nachweises nicht verstaendlich ist.
+% Der Absatz setzte das Inc-Dec voraus, ohne es zu nennen, obwohl
+% chapter_2.tex Zeile 2552 den Begriff definiert. Das Inc-Dec steht jetzt im
+% Text, und damit ist die Verschiebung des Anreizes nachvollziehbar: heute
+% wird der Eingriff verguetet und die selbst gewaehlte Menge ist der Hebel,
+% unter einer Verguetung der Vorhaltung faellt dieser Hebel weg und an seine
+% Stelle tritt die Zusage von Leistung, die nicht frei ist.
+% Gestrichen ist der Satz, wie gross der Aufwand ausfalle, sei von aussen
+% nicht zu beurteilen. Er sagt allein, dass sich nichts sagen laesst.
+% Behebt Befund B1, denn des Mechanismus heisst jetzt des kurativen
+% Marktmechanismus.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Neben dem Rahmen steht der Aufwand beim \ac{ÜNB} und beim Betreiber.
 % ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die
 % Umsetzbarkeit der UENB-internen Prozesse gehoert hierher und
 % nicht in den Anforderungsabschnitt, weil der Mechanismus hier
 % ohnehin in die bestehenden Ablaeufe eingeordnet wird.
-Der \ac{ÜNB} muss die bezuschlagten Gebote zu einem kurativen Maßnahmenset zusammenfassen und in Betriebsplanung, Scharfschaltung und Auslösung führen.
-Wie groß dieser Aufwand ausfällt, betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen.
-Die Vergütung der Vorhaltung nimmt dem Betreiber den Anreiz, das Volumen eines Eingriffs zu vergrößern.
-An die Stelle dieses Anreizes tritt der Anreiz, Leistung anzubieten, die nicht wirklich frei ist.
-Aus einer Frage der Menge wird damit eine Frage des Nachweises, sodass ein Verfahren zum Nachweis der Verfügbarkeit konstitutiver Bestandteil des Mechanismus ist.
-Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass sich der zusätzliche Aufwand auf die kurative Zusage beschränkt.
-
+%Der \ac{ÜNB} muss die bezuschlagten Gebote zu einem kurativen Maßnahmenset zusammenfassen und in Betriebsplanung, Scharfschaltung und Auslösung führen.
+%Wie groß dieser Aufwand ausfällt, betrifft die internen Abläufe des \ac{ÜNB} und ist von außen nicht zu beurteilen.
+%Die Vergütung der Vorhaltung nimmt dem Betreiber den Anreiz, das Volumen eines Eingriffs zu vergrößern.
+%An die Stelle dieses Anreizes tritt der Anreiz, Leistung anzubieten, die nicht wirklich frei ist.
+%Aus einer Frage der Menge wird damit eine Frage des Nachweises, sodass ein Verfahren zum Nachweis der Verfügbarkeit konstitutiver Bestandteil des Mechanismus ist.
+%Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass sich der zusätzliche Aufwand auf die kurative Zusage beschränkt.
+% GESTRICHEN am 26.09.2026, Vorgabe des Verfassers. Der Nachweis der
+% Verfuegbarkeit steht jetzt in Abschnitt 5.1 als Absatz A11 bei der
+% Verbindlichkeit. Der Satz zum Massnahmenset des UENB eroeffnet den
+% Betriebs-Absatz in 5.5. Das Inc-Dec ist nicht uebernommen.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Neben dem Rahmen steht der Aufwand beim \ac{ÜNB} und beim Betreiber.
+%Der \ac{ÜNB} muss die bezuschlagten Gebote zu einem kurativen Maßnahmenset zusammenfassen und in Betriebsplanung, Scharfschaltung und Auslösung führen.
+%Beim Betreiber verschiebt sich dagegen der Anreiz, denn die kurative Reservierung vergütet die Vorhaltung und nicht den Eingriff.
+%Unter der kostenbasierten Vergütung des Redispatch lohnt sich das Inc-Dec, also die gezielte Erhöhung der Einspeisung vor einem erwarteten Eingriff.
+%Eine Vergütung der Vorhaltung nimmt dem Inc-Dec seinen Anreiz, denn der Erlös hängt an der vorgehaltenen Leistung und nicht an der bewegten Menge.
+%An die Stelle des Mengenanreizes tritt der Anreiz, Leistung als frei anzubieten, die bereits vermarktet ist.
+%Ein Verfahren zum Nachweis der Verfügbarkeit ist damit ein Bestandteil des kurativen Marktmechanismus und keine Verwaltungsaufgabe daneben.
+%Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass allein der Nachweis der kurativen Verfügbarkeit hinzukommt.
 % ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: die Frage, was eine
 % kurative Massnahme abloest, gehoert hierher und nicht nach 5.3, weil
 % sie das Systemfuehrungskonzept betrifft und nicht den Preis. Der
@@ -1424,22 +1628,98 @@ Die Präqualifikation kann auf der Regelleistung aufsetzen, sodass sich der zus�
 % zusaetzliches Produkt mit laengerem Zeitfenster die Abloesung
 % uebernehmen koennte. Das folgt aus der Vorgabe und steht in keinem
 % Kapitel.
-Eine kurative Maßnahme hält den Zustand nur bis zu ihrer Ablösung.
-Welche Maßnahme ablöst, legt der Entwurf nicht fest.
-In Betracht kommen der allgemeine Redispatch, der nach der Auslösung anläuft, und eine eigens beschaffte Ablösemaßnahme nach einem Redundanzkonzept.
-Welche von beiden ablöst, wirkt auf den kurativen Reservierungspreis zurück, denn sie bestimmt die nötige vorgehaltene Energie.
-Eine längere Anlaufzeit der Ablösung verlangt mehr vorgehaltene Energie und hebt damit den Preis.
-Eine eigens beschaffte Ablösung ließe sich im Markt selbst klären.
-Ein zusätzliches Produkt mit einem längeren Zeitfenster übernähme die Ablösung und träte neben die kurative Reservierung.
-Der \ac{ÜNB} bestimmte über die Zahl solcher Produkte, wie lange eine kurative Maßnahme trägt.
+% ZUSAMMENGEZOGEN am 26.09.2026, Vorgabe des Verfassers: weniger Absaetze und
+% mehr Lesefluss in 5.5. Die Absaetze zur Abloesung und zur Wirkungskette
+% werden ein Betriebs-Absatz in der Reihenfolge des Ablaufs, naemlich
+% Massnahmenset des UENB, Wirkungskette bei der Ausloesung, Abloesung danach.
+% Der Eroeffnungssatz stammt aus dem gestrichenen Aufwand-Absatz.
+% Gefallen sind der Vergleich mit der praeventiven Massnahme, der Satz, die
+% Redundanz erhoehe den Aufwand (steht im Forschungsbedarf), der Satz, die
+% Wirkungskette sei Teil der allgemeinen Entwicklung, der Satz, welche
+% Massnahme abloese, lege der Entwurf nicht fest, die eigens beschaffte
+% Abloesemassnahme nach einem Redundanzkonzept und der Satz, eine eigens
+% beschaffte Abloesung liesse sich im Markt selbst klaeren.
+% EIGENSTAENDIGE ABLEITUNGEN bleiben: der Ausfall eines Gliedes wie der Ausfall
+% eines Betriebsmittels (bestaetigt am 26.09.2026) und das zusaetzliche
+% Produkt fuer die Abloesung (offen, Nummer 4 der Uebergabe).
+% Zurueckgenommene Fassung der Abloesung, nicht wieder aufzunehmen:
+%Eine kurative Maßnahme hält den Zustand nur bis zu ihrer Ablösung.
+%Welche Maßnahme ablöst, legt der Entwurf nicht fest.
+%In Betracht kommen der allgemeine Redispatch, der nach der Auslösung anläuft, und eine eigens beschaffte Ablösemaßnahme nach einem Redundanzkonzept.
+%Welche von beiden ablöst, wirkt auf den kurativen Reservierungspreis zurück, denn sie bestimmt die nötige vorgehaltene Energie.
+%Eine längere Anlaufzeit der Ablösung verlangt mehr vorgehaltene Energie und hebt damit den Preis.
+%Eine eigens beschaffte Ablösung ließe sich im Markt selbst klären.
+%Ein zusätzliches Produkt mit einem längeren Zeitfenster übernähme die Ablösung und träte neben die kurative Reservierung.
+%Der \ac{ÜNB} bestimmte über die Zahl solcher Produkte, wie lange eine kurative Maßnahme trägt.
+Der \ac{ÜNB} muss die bezuschlagten Gebote zu einem kurativen Maßnahmenset zusammenfassen und in Betriebsplanung, Scharfschaltung und Auslösung führen.
+Die Auslösung hängt an der Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, und der Ausfall eines Gliedes wirkt wie der Ausfall eines Betriebsmittels.
+Die Sicherheitsbetrachtung erstreckt sich damit über die Leitungen, Transformatoren und Schaltanlagen hinaus auf die Wege des Auslösesignals, sodass eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf Voraussetzung ist.
+Eine genauere Überwachung des Netzzustands und eine wachsende Steuerbarkeit der Anlagen kommen der kurativen Systemführung dabei von selbst zugute, denn beide folgen aus dem Zuwachs steuerbarer Anlagen.
+Nach der Auslösung hält eine kurative Maßnahme den Zustand nur bis zu ihrer Ablösung.
+In Betracht kommen der allgemeine Redispatch, der nach der Auslösung anläuft, und ein zusätzliches Produkt mit einem längeren Zeitfenster neben der kurativen Reservierung.
+Die Wahl der Ablösung wirkt auf den kurativen Reservierungspreis zurück, denn eine längere Anlaufzeit verlangt mehr vorgehaltene Energie.
+Der \ac{ÜNB} bestimmte über die Zahl der Ablöseprodukte, wie lange eine kurative Maßnahme trägt.
 
-Ob sich der kurative Marktmechanismus auf das ganze System übertragen lässt, ist eine eigene Frage.
-Das Optimierungsmodell rechnet eine einzelne Anlage und trägt deshalb keine systemweite Mengenaussage.
-Eine Hochrechnung setzte voraus, dass die Wirksamkeit eines Akteurs eine feste Eigenschaft seines Netzknotens ist.
-Die Wirksamkeit ist keine feste Eigenschaft, denn die vorherrschende Erzeugungssituation verschiebt sie über die Jahre \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-Die kurative Systemführung ergänzt das präventive Engpassmanagement und ersetzt es nicht.
-Der Nutzen der kurativen Systemführung liegt darin, dem \ac{ÜNB} neben dem präventiven Eingriff ein zweites Werkzeug zu geben.
-
+% NEU am 26.09.2026, Vorgabe des Verfassers: die Systemsicherheit ist mit dem
+% kurativen Ansatz schwerer zu gewaehrleisten, weil die Maszgabe nicht allein
+% an den Betriebsmitteln des Netzes haengt, sondern auch an der Uebertragung
+% des Ausloesesignals. Grundlage sind chapter_2.tex Zeile 1129 zur Wirkungskette
+% aus Fehlererkennung, Signaluebertragung und Anlagenreaktion und Zeile 1133
+% zur Redundanz in Fehlerdetektion, Anlagensteuerung und Massnahmenabruf.
+% NICHT GESETZT ist die Aussage, das N-1-Kriterium selbst erfasse die
+% Kommunikations- und Signalwege. Formal knuepft N-1 am Ausfall eines
+% Betriebsmittels an, und der Ausfall der Sekundaertechnik wird gesondert
+% betrachtet. Der Text sagt deshalb, die Sicherheitsbetrachtung erstrecke sich
+% auf die Wege des Ausloesesignals. Der Verfasser hat das hingenommen.
+% Die Begriffe Sensorik, Messtechnik und Umspannwerk kommen in der Arbeit
+% nicht vor und sind deshalb nicht gesetzt; der Gedanke steht als genauere
+% Ueberwachung des Netzzustands und wachsende Steuerbarkeit der Anlagen.
+% EIGENSTAENDIGE ABLEITUNG, vom Verfasser bestaetigt am 26.09.2026: dass der
+% Ausfall eines Gliedes der Wirkungskette wie der Ausfall eines Betriebsmittels
+% wirkt.
+% AUFGEGANGEN am 26.09.2026 im Betriebs-Absatz davor, Vorgabe des Verfassers.
+% Zurueckgenommene Fassung der Wirkungskette, nicht wieder aufzunehmen:
+%Die Umsetzung einer kurativen Maßnahme hängt daneben an der Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion.
+%Eine präventive Maßnahme steht dagegen bereits vor dem Fehler und braucht diese Wirkungskette nicht.
+%Der Ausfall eines Gliedes der Wirkungskette wirkt deshalb wie der Ausfall eines Betriebsmittels.
+%Die Sicherheitsbetrachtung erstreckt sich damit über die Leitungen, Transformatoren und Schaltanlagen hinaus auf die Wege des Auslösesignals.
+%Eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf ist deshalb Voraussetzung und nicht Verbesserung.
+%Die Redundanz erhöht den Aufwand beim \ac{ÜNB} und beim Betreiber, und ihre Ausgestaltung bleibt offen.
+%Eine genauere Überwachung des Netzzustands und eine wachsende Steuerbarkeit der Anlagen kommen der kurativen Systemführung dabei von selbst zugute, denn beide folgen aus dem Zuwachs steuerbarer Anlagen.
+%Die Wirkungskette einer kurativen Maßnahme ist damit Teil der allgemeinen Entwicklung und keine gesonderte Anforderung.
+% ERGAENZT am 26.09.2026, Vorgabe des Verfassers: die Uebertragbarkeit ist
+% simulativ zu pruefen, und zwar in einem Modell, das die Maerkte mit der
+% Netzberechnung und der Planung des Engpassmanagements verbindet. Voran
+% steht eine wirtschaftliche Bewertung, die den Einfluss auf das
+% Engpassmanagement quantitativ erfasst.
+% BEGRIFFE. Marktsimulation und Lastflusssimulation kommen in der Arbeit nicht
+% vor; gesetzt sind die gefuehrten Begriffe Netzsicherheitsrechnung nach
+% chapter_2.tex Zeile 43 und Planung des Engpassmanagements. Planungsdaten ist
+% nach chapter_3.tex Zeile 97 mit den Betriebsplanungsdaten des Akteurs belegt,
+% deshalb steht hier Datensatz der Netzentwicklungsplanung.
+% ABGESCHWAECHT. Die Aussage zur Wirksamkeit traegt jetzt duerfte, weil ihr
+% Beleg nach Vorgabe des Verfassers entfaellt und das Wort Wirksamkeit in
+% Kapitel 1 und 4 nicht vorkommt.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ob sich der kurative Marktmechanismus auf das ganze System übertragen lässt, ist eine eigene Frage.
+%Das Optimierungsmodell rechnet eine einzelne Anlage und trägt deshalb keine systemweite Mengenaussage.
+%Eine Hochrechnung setzte voraus, dass die Wirksamkeit eines Akteurs eine feste Eigenschaft seines Netzknotens ist.
+%Die Wirksamkeit ist keine feste Eigenschaft, denn die vorherrschende Erzeugungssituation verschiebt sie über die Jahre \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+%Die kurative Systemführung ergänzt das präventive Engpassmanagement und ersetzt es nicht.
+%Der Nutzen der kurativen Systemführung liegt darin, dem \ac{ÜNB} neben dem präventiven Eingriff ein zweites Werkzeug zu geben.
+% AUFGELOEST am 26.09.2026, Vorgabe des Verfassers. Die Saetze 5 und 6 stehen
+% jetzt im Absatz zur Ausrollung, die Saetze 1 bis 4, 7 und 8 eroeffnen den
+% Forschungsbedarf, denn das gekoppelte Modell und die Bewertung sind
+% Forschungsbedarf.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Ob sich der kurative Marktmechanismus auf das ganze System übertragen lässt, ist eine eigene Frage.
+%Das Optimierungsmodell rechnet eine einzelne Anlage und trägt deshalb keine systemweite Mengenaussage.
+%Eine Hochrechnung setzte voraus, dass die Wirksamkeit eines Akteurs eine feste Eigenschaft seines Netzknotens ist.
+%Die Wirksamkeit dürfte keine feste Eigenschaft sein, denn die vorherrschende Erzeugungssituation verschiebt sie über die Jahre.
+%Die kurative Systemführung ergänzt das präventive Engpassmanagement und ersetzt es nicht.
+%Der Nutzen der kurativen Systemführung liegt darin, dem \ac{ÜNB} neben dem präventiven Eingriff ein zweites Werkzeug zu geben.
+%Eine systemweite Aussage verlangt ein Modell, das die Abbildung der Märkte mit der Netzsicherheitsrechnung und der Planung des Engpassmanagements verbindet.
+%Voran steht eine wirtschaftliche Bewertung an einem Datensatz der Netzentwicklungsplanung, die den Einfluss auf das Engpassmanagement quantitativ und nicht allein qualitativ erfasst.
 % ANGEFUEGT am 25.09.2026, Vorgabe des Verfassers: der Uebergang von
 % der Massnahme der Systemsicherheit zur Massnahme der Effizienz. Der
 % Verfasser hat die Einordnung nach 5.5 selbst vorgeschlagen.
@@ -1447,25 +1727,130 @@ Der Nutzen der kurativen Systemführung liegt darin, dem \ac{ÜNB} neben dem pr�
 % Volumen des Engpassmanagements sinkt, soweit die hoehere Auslastung
 % eine Redispatchmassnahme erspart. Das folgt aus der Vorgabe und ist
 % nicht gerechnet.
-Mit einer systemweiten Ausrollung ändert sich der Zweck der kurativen Systemführung.
-Heute dient eine kurative Maßnahme der Systemsicherheit, denn sie hält das N-1-Kriterium bei höherer Auslastung ein.
-Ein Netz mit kurativer Reservierung an vielen Netzknoten nutzt die bestehende Kapazität dagegen planmäßig weiter aus.
-Die kurative Maßnahme wird damit zur Maßnahme der Effizienz.
+% ZUSAMMENGEZOGEN am 26.09.2026, Vorgabe des Verfassers: die Effizienzwende und
+% der Zustand des Netzes werden ein Absatz, denn sie sind ein Argument. Die
+% Saetze zum Ergaenzen und zum zweiten Werkzeug kommen aus dem aufgeloesten
+% Absatz zur Uebertragbarkeit.
+% Gefallen sind der Satz, das Volumen des Engpassmanagements sinke insgesamt,
+% die Wirtschaftlichkeitsgrenze des NEP, der Satz, eine kurative Reservierung
+% an vielen Netzknoten werde erst damit zur planmaessigen Nutzung, und der
+% Satz, bis dahin bleibe die kurative Systemfuehrung ein Werkzeug fuer
+% einzelne Netzsituationen.
+% Zurueckgenommene Fassung der Effizienzwende, nicht wieder aufzunehmen:
+%Mit einer systemweiten Ausrollung ändert sich der Zweck der kurativen Systemführung.
+%Heute dient eine kurative Maßnahme der Systemsicherheit, denn sie hält das N-1-Kriterium bei höherer Auslastung ein.
+%Ein Netz mit kurativer Reservierung an vielen Netzknoten nutzt die bestehende Kapazität dagegen planmäßig weiter aus.
+%Die kurative Maßnahme wird damit zur Maßnahme der Effizienz.
 % BESTAETIGT UND PRAEZISIERT am 25.09.2026, Vorgabe des Verfassers: es
 % sinkt nicht um eine einzelne Massnahme, sondern das
 % Engpassmanagementvolumen insgesamt.
 % Zurueckgenommene Fassung, nicht wieder aufzunehmen:
 %Das Volumen des Engpassmanagements sinkt, soweit die höhere Auslastung eine Redispatchmaßnahme erspart.
-Das Volumen des Engpassmanagements sinkt insgesamt, soweit die höhere Auslastung den Bedarf an Redispatch mindert.
-Voraussetzung ist ein Bestand wirksamer Anlagen je Netzknoten und ein Prozess, der die Maßnahmen verlässlich einplant.
-Beides ist heute nicht gegeben.
-Der Übergang von der Sicherheitsmaßnahme zur Effizienzmaßnahme ist deshalb ein Entwicklungspfad und kein Zustand.
+%Das Volumen des Engpassmanagements sinkt insgesamt, soweit die höhere Auslastung den Bedarf an Redispatch mindert.
+%Voraussetzung ist ein Bestand wirksamer Anlagen je Netzknoten und ein Prozess, der die Maßnahmen verlässlich einplant.
+%Beides ist heute nicht gegeben.
+%Der Übergang von der Sicherheitsmaßnahme zur Effizienzmaßnahme ist deshalb ein Entwicklungspfad und kein Zustand.
+Mit einer systemweiten Ausrollung ändert sich der Zweck der kurativen Systemführung.
+Heute dient eine kurative Maßnahme der Systemsicherheit, denn sie hält das N-1-Kriterium bei höherer Auslastung ein.
+Ein Netz mit kurativer Reservierung an vielen Netzknoten nutzt die bestehende Kapazität dagegen planmäßig weiter aus, und die kurative Maßnahme wird zur Maßnahme der Effizienz.
+Die kurative Systemführung ergänzt dabei das präventive Engpassmanagement und ersetzt es nicht, denn sie gibt dem \ac{ÜNB} ein zweites Werkzeug neben dem präventiven Eingriff.
+Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung, und beides ist heute nicht gegeben.
+Heute begrenzen einzelne Betriebsmittel die Übertragung, sodass die kurative Reservierung an wenigen Netzknoten greift.
+Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, verändert aber den Charakter der Begrenzung, denn ein ausgebauter Übertragungsweg ist über seine Länge einheitlich ausgelegt.
+Die freie Kapazität verteilt sich damit über viele Netzknoten, sodass der Übergang von der Sicherheits- zur Effizienzmaßnahme ein Entwicklungspfad über ein gleichmäßiger belastbares Netz ist und kein Zustand.
 
+% NEU am 26.09.2026, Vorgabe des Verfassers: der Uebergang von der
+% Sicherheits- zur Effizienzmassnahme braucht eine Begruendung. Heute stehen
+% die Systemgrenzen im Vordergrund, weil einzelne Betriebsmittel einen ganzen
+% Uebertragungsweg begrenzen; perspektivisch ist ein ausgebauter Weg
+% einheitlich ausgelegt.
+% WIDERSPRUCH VERMIEDEN. Die Vorgabe des Verfassers lautete, perspektivisch
+% wirke der Netzausbau. So gesetzt widerspraeche der Absatz chapter_1.tex
+% Zeile 201, wonach der Engpassmanagementbedarf kein Uebergangsphaenomen ist,
+% das mit dem Netzausbau verschwindet, und Zeile 209 zur Wirtschaftlichkeits-
+% grenze des NEP. Der Absatz sagt deshalb, der Ausbau nehme den Bedarf nicht
+% ab, sondern veraendere den Charakter der Begrenzung.
+% EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser bestaetigt am 26.09.2026: dass
+% heute einzelne Betriebsmittel die Uebertragung begrenzen, dass ein
+% ausgebauter Uebertragungsweg ueber seine Laenge einheitlich ausgelegt ist,
+% dass sich die freie Kapazitaet dadurch ueber viele Netzknoten verteilt und
+% dass eine flaechige kurative Reservierung erst damit zur planmaessigen
+% Nutzung der Kapazitaet wird.
+% AUFGEGANGEN am 26.09.2026 im Absatz zur Ausrollung davor, Vorgabe des
+% Verfassers. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Der Pfad führt über den Zustand des Netzes selbst.
+%Heute begrenzen einzelne Betriebsmittel die Übertragung, und die kurative Reservierung greift deshalb an wenigen Netzknoten.
+%Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, denn der \ac{NEP} baut nur bis zur Wirtschaftlichkeitsgrenze aus.
+%Der Netzausbau verändert aber den Charakter der Begrenzung, denn ein ausgebauter Übertragungsweg ist über seine Länge einheitlich ausgelegt.
+%Die freie Kapazität verteilt sich damit über viele Netzknoten, statt an wenigen Stellen zu fehlen.
+%Eine kurative Reservierung an vielen Netzknoten wird erst damit zur planmäßigen Nutzung der bestehenden Kapazität.
+%Bis dahin bleibt die kurative Systemführung ein Werkzeug für einzelne Netzsituationen.
+%Der Entwicklungspfad führt deshalb nicht über mehr Netz, sondern über ein gleichmäßiger belastbares Netz.
+% NEU am 26.09.2026, Vorgabe des Verfassers: die einschraenkenden Regeln sind
+% keine langfristige Loesung, und bei vollstaendiger Einbindung der kurativen
+% Systemfuehrung in das Engpassmanagement waeren sie entbehrlich. Sind die
+% Anschlussregeln zudem auf die Technologie abgestimmt, laesst sich mehr
+% Speicherleistung am bestehenden Netz anschliessen.
+% Das Wort perfekt ist nach Stilregel 11 ohne Masstab gesperrt und steht
+% deshalb als vollstaendig eingebunden. Das Wort sehr aus der Vorgabe ist
+% nach Stilregel 7 durch den konkreten Nutzen ersetzt.
+% Satz 2 traegt die Bedingung soweit, weil der Absatz zur Effizienzwende
+% bereits sagt, dass ein Bestand wirksamer Anlagen je Netzknoten
+% Voraussetzung und heute nicht gegeben ist. Ohne die Bedingung waere der
+% Satz eine fachliche Pauschalisierung nach Stilregel 9.
+% EIGENSTAENDIGE ABLEITUNGEN, vom Verfasser bestaetigt am 26.09.2026: dass
+% vollstaendig eingebundene kurative Massnahmen eine Begrenzung der Anlage
+% entbehrlich machten, dass ein abgestimmtes Anschlussverfahren zusammen mit
+% der Einbindung mehr Speicherleistung am bestehenden Netz erlaubte und dass
+% die kurative Systemfuehrung damit eine Voraussetzung fuer den Ausbau der
+% Speicher waere.
+Eine Begrenzung am Netzanschluss, eine Vorgabe für den Betrieb und ein Gebotszonensplit greifen am Verhalten des Akteurs an, statt die Kapazität des Netzes zu nutzen.
+Vollständig in das Engpassmanagement eingebundene kurative Maßnahmen machten eine Begrenzung der Anlage entbehrlich, soweit an jedem Netzknoten genügend wirksame Anlagen anbieten.
+Die drei Wege sind damit Übergangslösungen und keine dauerhaften.
+Ein auf die Technologie abgestimmtes Anschlussverfahren und die Einbindung in das Engpassmanagement erlaubten zusammen den Anschluss von mehr Speicherleistung am bestehenden Netz.
+Der Nutzen für das Stromsystem liegt damit nicht allein in der vermiedenen Redispatchmaßnahme, sondern in der zusätzlich anschließbaren Speicherleistung.
+Mehr Speicherleistung am Netz erhöht zugleich die Flexibilität, die dem System in den kritischen Stunden zur Verfügung steht.
+Wie viel Speicherleistung ein Netz mit kurativer Reservierung zusätzlich aufnimmt, bleibt offen.
+Die kurative Systemführung wäre damit nicht allein ein Werkzeug des Netzbetriebs, sondern eine Voraussetzung für den Ausbau der Speicher.
+
+% NEU GEFASST am 26.09.2026, Vorgabe des Verfassers. Der Absatz sammelt jetzt
+% genau die Fragen, die das Kapitel selbst offen laesst, naemlich den
+% Poenalemasstab aus Abschnitt 5.1, die zusaetzlich anschliessbare
+% Speicherleistung aus dem Schlussabsatz und die Redundanz aus dem Absatz zur
+% Wirkungskette.
+% Gestrichen ist der Satz zum Modell, das das Netz und die Wirksamkeit je
+% Netzknoten fuehrt. Er doppelt den neuen Schlusssatz des Absatzes zur
+% systemweiten Ausrollung, der dasselbe genauer sagt.
+% Aufgenommen ist der Gedanke aus dem am 26.09.2026 gestrichenen Absatz 5.4 A2,
+% naemlich dass ein Gebot unter Unsicherheit ueber die Handelsspannen nach der
+% Prognoseguete auswaehlt und nicht nach der Wirksamkeit am Netzknoten.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Aus den Grenzen der Untersuchung folgt der weitere Forschungsbedarf.
+%Die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung sind zu bestimmen.
+%Eine Hochrechnung auf die Systemebene verlangt ein Modell, das das Netz und die Wirksamkeit je Netzknoten führt.
+%Das Bietverhalten und der Wettbewerb mehrerer Anbieter an einem Netzknoten sind abzubilden.
+%Aus Projekten im Echtbetrieb ist zu lernen, wie häufig und wie lange eine kurative Maßnahme abgerufen wird und wie sich die Verfügbarkeit im Betrieb nachweisen lässt \cite{innosys_2030_gesamtverbund_innovationen_2021, tennet_tso_gmbh_pilotbetrieb_2025}.
+%Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführung das Engpassmanagement dauerhaft entlastet.
+% NEU GEFASST am 26.09.2026, Vorgabe des Verfassers. Der Forschungsbedarf
+% eroeffnet jetzt mit der Uebertragbarkeit aus dem aufgeloesten Absatz, denn
+% das gekoppelte Modell und die Bewertung sind der groesste offene Punkt. Die
+% uebrigen Punkte sind auf zwei Listensaetze verdichtet.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Aus den Grenzen der Untersuchung folgt der weitere Forschungsbedarf.
+%Die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung sind zu bestimmen.
+%Ein Maßstab für die Höhe der Pönale ist aus dem Betrieb zu gewinnen.
+%Das Bietverhalten und der Wettbewerb mehrerer Anbieter an einem Netzknoten sind abzubilden, denn ein Gebot unter Unsicherheit über die Handelsspannen wählt nach der Prognosegüte aus.
+%Wie viel Speicherleistung ein Netz mit kurativer Reservierung zusätzlich aufnimmt, ist zu bestimmen.
+%Die Ausgestaltung der Redundanz in der Wirkungskette einer kurativen Maßnahme ist festzulegen.
+%Aus Projekten im Echtbetrieb ist zu lernen, wie häufig und wie lange eine kurative Maßnahme abgerufen wird und wie sich die Verfügbarkeit im Betrieb nachweisen lässt.
+%Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführung das Engpassmanagement dauerhaft entlastet.
 Aus den Grenzen der Untersuchung folgt der weitere Forschungsbedarf.
-Die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung sind zu bestimmen.
-Eine Hochrechnung auf die Systemebene verlangt ein Modell, das das Netz und die Wirksamkeit je Netzknoten führt.
-Das Bietverhalten und der Wettbewerb mehrerer Anbieter an einem Netzknoten sind abzubilden.
-Aus Projekten im Echtbetrieb ist zu lernen, wie häufig und wie lange eine kurative Maßnahme abgerufen wird und wie sich die Verfügbarkeit im Betrieb nachweisen lässt \cite{innosys_2030_gesamtverbund_innovationen_2021, tennet_tso_gmbh_pilotbetrieb_2025}.
+Das Optimierungsmodell rechnet eine einzelne Anlage und trägt deshalb keine systemweite Mengenaussage.
+Eine Hochrechnung setzte eine feste Wirksamkeit je Netzknoten voraus, doch die vorherrschende Erzeugungssituation dürfte sie über die Jahre verschieben.
+Eine systemweite Aussage verlangt deshalb ein Modell, das die Abbildung der Märkte mit der Netzsicherheitsrechnung und der Planung des Engpassmanagements verbindet, und eine wirtschaftliche Bewertung an einem Datensatz der Netzentwicklungsplanung.
+Die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung sind zu bestimmen, ebenso ein Maßstab für die Höhe der Pönale.
+Das Bietverhalten und der Wettbewerb mehrerer Anbieter an einem Netzknoten sind abzubilden, denn ein Gebot unter Unsicherheit über die Handelsspannen wählt nach der Prognosegüte aus.
+Offen bleiben zudem die Ausgestaltung der Redundanz in der Wirkungskette, der Nachweis der Verfügbarkeit im Betrieb, die zusätzlich anschließbare Speicherleistung und die Häufigkeit und Dauer eines Abrufs im Echtbetrieb.
 Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführung das Engpassmanagement dauerhaft entlastet.
 
 % ===============================================================
@@ -1511,7 +1896,6 @@ Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführun
 %Anschließend werden die Folgen für die Betriebsführung und für den Zuschnitt des Produkts gezogen und die Belastbarkeit des Ergebnisses geprüft.
 %Zuletzt stehen die Entwicklungen an den Märkten, die Zukunft der \acs{BESS} im Engpassmanagement und die kurative Systemführung im Allgemeinen, aus der der weitere Forschungsbedarf folgt.
 %% ---------------------------------------------------------------
-
 % Die Stichpunkte der Gliederung mit acht Abschnitten stehen im Git
 % unter dem Commit e8c4012 und sind hier nicht wiederholt, weil sie
 % kein Fliesstext waren.

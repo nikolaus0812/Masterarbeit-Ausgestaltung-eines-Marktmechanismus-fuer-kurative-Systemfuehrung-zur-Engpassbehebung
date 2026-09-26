@@ -16242,6 +16242,107 @@ die Ergaenzung der Ausrollung, einen neuen Absatz zum Zustand des Netzes, den
 Schlussabsatz zu den Uebergangsloesungen und den neuen Forschungsbedarf. Die
 Fassungen liegen im Gespraech vor und sind noch nicht in die Datei geschrieben.
 
+### 26.09.2026 abends, 5.4 und 5.5 abgeschlossen, Umbau von 5.5 auf sechs Absaetze
+
+**Abschnitt 5.4, fuenf Absaetze.** A1 endet jetzt mit der Ueberleitung zur
+Anschlussleistung, denn nicht die Kurzfristigkeit allein belastet das Netz,
+sondern die Hoehe der bewegten Leistung; neu sind der Anreiz zum Ausgleich der
+Einspeisung aus erneuerbaren Energien und die Fahrweise an den Grenzen der
+Leistung. A2 ist neu und behandelt den Netzanschluss: Anschlussverfahren,
+Grenzen der Systemsicherheit, kritische Stunden, flexible
+Netzanschlussvereinbarung, Vorgabe fuer den Betrieb, Sicherheitsmarge. A3
+begruendet jetzt, warum ein BESS in das Engpassmanagement eintreten muss und
+warum sich die kurative Systemfuehrung dafuer anbietet. A4 und A5 sind
+unveraendert.
+
+**Abschnitt 5.5, sechs Absaetze statt zehn.** Vorgabe des Verfassers: weniger
+Absaetze und mehr Lesefluss. Die Linie lautet Rechtsrahmen, Marktrahmen,
+Betrieb, Ausrollung, Uebergangsloesungen, Forschungsbedarf. Zusammengezogen sind
+Abloesung und Wirkungskette zu einem Betriebs-Absatz in der Reihenfolge des
+Ablaufs, sowie Effizienzwende und Zustand des Netzes zu einem Absatz zur
+Ausrollung. Der Absatz zur Uebertragbarkeit ist aufgeloest: zwei Saetze in die
+Ausrollung, sechs in den Forschungsbedarf, der jetzt mit dem gekoppelten Modell
+eroeffnet. Der Aufwand-Absatz ist gestrichen.
+
+**Zwei Verschiebungen innerhalb des Kapitels.** Der Nachweis der Verfuegbarkeit
+steht jetzt in 5.1 als A11 bei der Verbindlichkeit, weil er mit der Poenale ein
+Paar bildet: die Poenale sichert die Zusage nachher, der Nachweis vorher. Der
+Satz zur Verguetungsstruktur der Festlegung steht jetzt in 5.5 A1 als Beleg
+dafuer, dass die Bemessung am Eingriff und die Bemessung an der Vorhaltung nicht
+zu vereinen sind; in 5.3 A5 ersetzt ihn die aus Abschnitt 4.6.3 belegte Aussage,
+dass ueber die vorgehaltene Energie allein der UENB entscheidet.
+
+**5.5 A1 Rechtsrahmen, neu.** Vorgabe des Verfassers in drei Runden. Der
+Absatz fragt, wie sich ein Engpassmanagement mit Verguetung der vorgehaltenen
+Leistung und das heutige mit Verguetung der bewegten Arbeit ergaenzen, und
+antwortet: ein Nebeneinander ist moeglich, wenn die Arbeit den Engpass dauerhaft
+behebt und die Leistung das Ueberlastintervall ueberbrueckt. Ausgeschlossen ist
+die Einfuegung in das Duldungsregime, weil der Redispatch den Fahrplan einmalig
+aendert und die kurative Reservierung ihn vorab ueber die Bindungsdauer
+einschraenkt. Paragraf 13a wird erweitert, nicht geaendert. Begriffe: die
+Ausdruecke kapazitaetsbasiert und arbeitsbasiert sind nicht gesetzt, weil sie in
+der Arbeit nicht vorkommen; gesetzt sind Verguetung der vorgehaltenen Leistung
+und Verguetung der bewegten Arbeit nach 5.3 und 2.3. Das Wort Gebot bleibt dem
+Marktgebot vorbehalten. Zurueckgenommen und nicht wieder aufzunehmen ist die
+Wiedergabe des Paragrafen 13a, des Duldungsregimes und des Paragrafen 13c, die
+Kapitel 2 traegt.
+
+**5.5 A2 Marktrahmen, neu.** Vorgabe des Verfassers: ohne marktliche Abbildung
+der Uebertragungskapazitaet, wie sie ein Gebotszonensplit leistete, muss eine
+Systemdienstleistung das tun, und genau das tut der kurative Marktmechanismus
+bei geringem Eingriff in die Marktergebnisse; zu vermeiden ist allein das
+strategische Bietverhalten. Zurueckgenommen sind die Binnenmarktverordnung
+(fast wortgleich in chapter_2.tex Zeile 2587, Befund B30), der Satz zur
+Sonderstellung bei marktlich beschafftem Redispatch, der Satz zum Preisniveau
+der Zone und der Satz, ein Engpass innerhalb einer Zone bliebe bestehen. Statt
+des Preisniveaus steht jetzt, dass mit einem Gebotszonensplit das
+Engpassmanagement ein anderes waere und der ermittelte Preis neu zu bewerten
+waere. Damit ist die eigenstaendige Ableitung Nummer 5 der Uebergabe erledigt.
+
+**Zitate aus Kapitel 5 entfernt, Vorgabe des Verfassers.** Begruendung: alles
+sei in den Kapiteln 1 bis 4 belegt. Geprueft je Schluessel; alle entfernten
+Schluessel sind dort weiter zitiert, kein Eintrag faellt aus dem Verzeichnis.
+Drei Ausnahmen bleiben mit Zustimmung des Verfassers: Weber und Mahgoub in 5.2,
+weil der Satz berichtet, was ein namentlich genannter Autor sagt; Consentec in
+5.4, weil die Quelle sonst aus dem ganzen Verzeichnis fiele. Die Aussage zur
+ueber die Jahre verschobenen Wirksamkeit traegt ohne Beleg jetzt duerfte, weil
+das Wort Wirksamkeit in Kapitel 1 und 4 nicht vorkommt.
+
+**Eigenstaendige Ableitungen aus den Vorgaben des Verfassers vom 26.09.2026.**
+Sie stehen im Quelltext mit dem Vermerk bestaetigt am 26.09.2026, weil der
+Verfasser sie selbst diktiert hat. Gerechnet ist keine davon. Naemlich: die
+kurze Frist am IDC reizt ein BESS zum Ausgleich der erneuerbaren Einspeisung an
+(5.4 A1); Anschlussverfahren nicht zugeschnitten, Grenzen der Systemsicherheit,
+kritische Stunden, alle drei abgeschwaecht gesetzt, weil die BNetzA-FAQ nicht
+in Text zu wandeln ist (5.4 A2); Systemdienstleistung muss die
+Uebertragungskapazitaet bewerten, der kurative Marktmechanismus tut das, der
+Eingriff bleibt gering (5.5 A2); Ausfall eines Gliedes der Wirkungskette wie
+Ausfall eines Betriebsmittels (5.5 A3); einzelne Betriebsmittel begrenzen heute,
+ausgebauter Weg einheitlich, Kapazitaet verteilt sich (5.5 A4); vollstaendige
+Einbindung macht Begrenzung entbehrlich, abgestimmtes Anschlussverfahren erlaubt
+mehr Speicherleistung, kurative Systemfuehrung als Voraussetzung des
+Speicherausbaus (5.5 A5). Nicht gesetzt: dass das N-1-Kriterium selbst die
+Signalwege erfasse, weil N-1 formal am Betriebsmittel ansetzt; der Text sagt
+Sicherheitsbetrachtung.
+
+**Widerspruch mit Kapitel 1 vermieden.** Die Vorgabe, perspektivisch wirke der
+Netzausbau, widerspraeche chapter_1.tex Zeile 201 und 209. Der Absatz zur
+Ausrollung sagt deshalb, der Ausbau nehme den Bedarf nicht ab, sondern
+veraendere den Charakter der Begrenzung.
+
+**Offene eigenstaendige Ableitungen der Uebergabe.** Nummer 1 bis 4 stehen
+weiter, Nummer 5 ist erledigt. Nummer 4, das zusaetzliche Produkt fuer die
+Abloesung, steht jetzt im Betriebs-Absatz von 5.5.
+
+**Neue Befunde.** B31: Lieferfaehigkeit in 5.1 A7 und A10 gegen
+Verfuegbarkeit in 5.1 A11 und im Forschungsbedarf, zu vereinheitlichen. Die
+drei ueberholten Marken EIGENSTAENDIGE ABLEITUNG (B26) stehen noch im Quelltext.
+
+**Stand.** 5.1 zwoelf Absaetze, 5.2 sieben, 5.3 sechs, 5.4 fuenf, 5.5 sechs,
+alle zu je acht Saetzen. Die Kapiteleinleitung liegt bei sieben. `pruefen.py`
+ohne Befund, `pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
+124 Seiten.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

@@ -48,9 +48,35 @@ Zeile 2587. Status offen.
 
 ---
 
+## 0b Erledigt am 26.09.2026, zweiter Durchgang
+
+5.4 und 5.5 sind abgeschlossen, 5.5 auf sechs Absätze umgebaut, der Nachweis
+der Verfügbarkeit nach 5.1 verschoben, alle Zitate aus Kapitel 5 entfernt bis
+auf Weber/Mahgoub und Consentec. Damit erledigt:
+
+| Befund | Wie |
+|---|---|
+| B1 | Aufwand-Absatz gestrichen, *des Mechanismus* steht nicht mehr |
+| B2 | 5.5 A1 neu, § 13c wird nicht mehr gebraucht |
+| B5, Zeile 1272 | Satz gestrichen |
+| B18 | *innerhalb der Regelzone* ergänzt |
+| B30 | Binnenmarktverordnung gestrichen |
+| Ableitung 5 der Übergabe | Satz zum Preisniveau der Zone zurückgenommen |
+
+**B31 neu.** *Lieferfähigkeit* in 5.1 A7 und A10 gegen *Verfügbarkeit* in
+5.1 A11 und im Forschungsbedarf. Zu vereinheitlichen. Status offen.
+
+**Zitate.** Alle entfernten Schlüssel sind in Kapitel 1 bis 4 weiter zitiert.
+Die Aussage zur Wirksamkeit in 5.5 A6 trägt ohne Beleg jetzt *dürfte*.
+
+Offen bleiben aus der Liste: B3, B4, B5 (Zeilen 802, 1006, 1008), B7 bis B13,
+B15 bis B17, B19 bis B29, B31.
+
+---
+
 ## 1 Harte Regelverstöße
 
-### B1 „des Mechanismus" allein, Zeile 1394, Status offen
+### B1 „des Mechanismus" allein, Zeile 1394, Status erledigt am 26.09.2026
 
 > Aus einer Frage der Menge wird damit eine Frage des Nachweises, sodass ein
 > Verfahren zum Nachweis der Verfügbarkeit konstitutiver Bestandteil **des
@@ -64,7 +90,7 @@ Vorschlag: *… konstitutiver Bestandteil des kurativen Marktmechanismus ist.*
 
 In 5.5 A3, dem Absatz zum Aufwand, der ohnehin noch abzuschließen ist.
 
-### B2 Absolute Feststellung ohne Beleg, Zeile 1364, Status offen
+### B2 Absolute Feststellung ohne Beleg, Zeile 1364, Status erledigt am 26.09.2026
 
 > Eine Vergütung der Bereithaltung mit einem Leistungspreis kennt das
 > Engpassmanagement **allein** für systemrelevante Anlagen nach einer
@@ -207,7 +233,7 @@ Megawatt ist fast zum Preis einer viertel zu haben.*
 
 In 5.3 A5.
 
-### B18 Handelsschluss verallgemeinert, Zeile 1206, Status offen
+### B18 Handelsschluss verallgemeinert, Zeile 1206, Status erledigt am 26.09.2026
 
 > Der Handel am \ac{IDC} läuft deshalb bis fünf Minuten vor Lieferbeginn und
 > nimmt der Regelleistung diesen Ausgleich ab.
