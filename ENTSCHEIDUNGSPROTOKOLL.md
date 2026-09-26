@@ -16159,6 +16159,89 @@ bis sieben Saetzen. `python tools/pruefen.py --alle` ohne Befund,
 `tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
 123 Seiten.
 
+### 26.09.2026, Kontrollpruefung des Kapitels und Streichung in 5.4
+
+**Kontrollpruefung.** Das Kapitel ist nach `archiv/UEBERGABE_KAP5_PRUEFUNG.md`
+vollstaendig geprueft. Die Befunde stehen in `BEFUNDE_KAP5.md` als B1 bis B29
+mit Zeile, Wortlaut, Regel und Vorschlag. Ergebnis der Skripte zu Beginn der
+Sitzung: `pruefen.py --alle` ohne Befund, `pruefe_stil.py` ohne Verstoss in
+Kapitel 5, 123 Seiten, Biber ohne Warnung, allein `ch:conc` undefiniert, weil
+Kapitel 6 auskommentiert ist.
+
+**Zwei Absaetze in 5.4 gestrichen, Vorgabe des Verfassers.** Der Verfasser hat
+am Absatz zur Eignung eines BESS und am Absatz zum kurativen
+Reservierungspreis eines BESS beanstandet, dass sie keine Diskussion tragen,
+sondern Ergebnisse wiederholen. Die Pruefung bestaetigt das. Der erste Absatz
+wiederholt die Eignung aus Abschnitt 2.3 und den Zuschnitt des Produkts aus
+Abschnitt 3.1, und sein vorletzter Satz war fast wortgleich mit
+`chapters/chapter_2.tex` Zeile 1037. Der zweite Absatz traegt die Herkunft des
+Preises aus Kapitel 3 und das Erloesmuster aus Kapitel 4; sein einziger eigener
+Gedanke, naemlich das zweiseitige Risiko bei der Gebotsabgabe, ist im Absatz
+nicht zu Ende gefuehrt. Beide Absaetze sind nach CLAUDE.md Abschnitt 10 als
+Kommentar mit Datum und Grund erhalten und nicht geloescht. Abschnitt 5.4
+traegt danach vier Absaetze zu je acht Saetzen.
+
+**Zurueckgenommene Fassungen, nicht wieder aufzunehmen.** Die sechzehn Saetze
+beider Absaetze stehen im Quelltext von `chapters/chapter_5.tex` unter den
+beiden Marken GESTRICHEN am 26.09.2026.
+
+**Geprueft, dass nichts verloren geht.** Die Reaktionszeitklasse steht in
+Abschnitt 5.1 bei der ersten Anforderung und in Abschnitt 2.3, die beiden
+Richtungen und das bilanziell ausgeglichene Massnahmenset in Abschnitt 2.3 und
+3.1, der Energieinhalt je Leistung in Abschnitt 2.1.3 und 3.2, die
+Praequalifikation in Abschnitt 5.5 beim Aufwand. Der geretteten Gedanke aus dem
+zweiten Absatz, naemlich dass der Markt nach der Prognoseguete eines Betreibers
+auswaehlt und nicht nach der Wirksamkeit seiner Anlage am Netzknoten, ist in den
+Forschungsbedarf in Abschnitt 5.5 aufzunehmen und steht dort noch nicht.
+
+**Erledigte Befunde.** B6, die Dopplung der Praequalifikation zwischen 5.4 und
+5.5, und B14, die fast wortgleiche Stelle gegen `chapters/chapter_2.tex`
+Zeile 1037, sind mit der Streichung gegenstandslos.
+
+**Eigenstaendige Ableitungen im Quelltext, Stand der Marken.** Lebendig sind
+fuenf, naemlich der Anweisungszeitpunkt als Kostenfaktor in 5.3, das guenstigere
+Gebot fuer anschliessende Stunden in 5.3, die Verteilung der Vorhaltekosten auf
+mehrere Verwendungen in 5.4, das zusaetzliche Produkt fuer die Abloesung in 5.5
+und die Wirkungen eines Gebotszonensplits in 5.5. Drei Marken sind ueberholt und
+stehen noch im Quelltext, naemlich die zurueckgenommene Pool-Ableitung, die am
+25.09.2026 bestaetigten drei Ableitungen zur Sicherheitsmarge und die am
+25.09.2026 bestaetigte Ableitung zum Volumen des Engpassmanagements.
+
+**Argument aus der Pruefung, nicht vom Verfasser.** Die Zuordnung des Satzes
+zur Zeitscheibe von einem Tag in 5.3 auf die erste Iteration der Preissuche in
+Kapitel 4 ist eine Deutung aus der Pruefung und nicht der Wortlaut von
+Kapitel 4. Kapitel 4 sagt, die erste Iteration binde die Leistung nicht
+vollstaendig und der UENB zahle dennoch beinahe den vollen Preis, naemlich
+97,6 Prozent bei einem Fuellgrad von 85,9 Prozent entladend und 89,6 Prozent
+ladend. Die Gleichsetzung mit einer Zeitscheibe von einem Tag ist vom Verfasser
+zu bestaetigen. Steht in `BEFUNDE_KAP5.md` Abschnitt 10.
+
+**Offener Punkt aus der Pruefung.** `chapters/chapter_2.tex` Zeile 1295 gibt
+Paragraf 13c EnWG ohne Beleg wieder. In Betracht kommt
+`bundesministerium_der_justiz_energiewirtschaftsgesetz_2025`. Gefuehrt als B29.
+
+**Erledigter offener Punkt.** Der Beleg
+`regelleistung_ausschreibungsdaten_2026` ist nicht verloren. Der Schluessel
+steht siebenmal in den Kapiteln 2, 3 und 4, und
+`chapters/chapter_4.tex` Zeile 1043 traegt die Anonymisierung der
+Ergebnislisten. Die Aussage in 5.2 zu den Gebotsstrategien braucht ihn nicht.
+Der offene Punkt aus `HANDOFF.md` Abschnitt 1.0 ist damit erledigt.
+
+**Stand.** Abschnitt 5.1 elf Absaetze, 5.2 sieben, 5.3 sechs, 5.4 vier, alle zu
+je acht Saetzen. Abschnitt 5.5 traegt sieben Absaetze, davon vier mit sechs bis
+sieben Saetzen. `python tools/pruefen.py chapter_5.tex` ohne Befund,
+`tools/pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
+123 Seiten.
+
+**Nicht umgesetzt, im Gespraech vorgelegt.** Der Verfasser hat in derselben
+Sitzung zehn weitere Absaetze diktiert, naemlich in 5.4 die Ueberleitung zur
+Anschlussleistung, einen neuen Absatz zum Netzanschluss und die Begruendung des
+Redispatchregimes, und in 5.5 die Zusammenlegung von Rechtsrahmen und
+Marktrahmen, den Aufwand mit dem Inc-Dec, einen neuen Absatz zur Wirkungskette,
+die Ergaenzung der Ausrollung, einen neuen Absatz zum Zustand des Netzes, den
+Schlussabsatz zu den Uebergangsloesungen und den neuen Forschungsbedarf. Die
+Fassungen liegen im Gespraech vor und sind noch nicht in die Datei geschrieben.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
