@@ -4,7 +4,7 @@
 `UEBERGABE_KAP5_PRUEFUNG.md`. Geprüft ist der Stand von `chapters/chapter_5.tex`
 vom 26.09.2026, 123 Seiten.
 
-**Nichts ist geändert.** Jeder Befund wartet auf das Wort des Verfassers.
+**Stand 26.09.2026 nachts: alle Befunde erledigt**, siehe Abschnitte 0a bis 0c. Die Einzelbefunde darunter sind der Nachweis und bleiben stehen.
 
 **Vorbehalt.** Der Verfasser schließt die Abschnitte 5.4 und 5.5 noch ab. Befunde
 in diesen beiden Abschnitten können dadurch überholt sein und sind vor der
@@ -71,6 +71,34 @@ Die Aussage zur Wirksamkeit in 5.5 A6 trägt ohne Beleg jetzt *dürfte*.
 
 Offen bleiben aus der Liste: B3, B4, B5 (Zeilen 802, 1006, 1008), B7 bis B13,
 B15 bis B17, B19 bis B29, B31.
+
+---
+
+## 0c Abgearbeitet am 26.09.2026, dritter Durchgang
+
+Alle verbliebenen Befunde sind auf Vorgabe des Verfassers umgesetzt oder
+hingenommen. Die Liste ist damit **geschlossen**.
+
+| Befund | Erledigung |
+|---|---|
+| B3, B23 | 5.1 A4: netzknotenscharfe Beschaffung mit beschränkter Präqualifikation, beide Anforderungen ziehen in dieselbe Richtung |
+| B4 | Numerus |
+| B5 | drei Stellen mit ausgeschriebenem Bezug |
+| B7, B13, B15 | **hingenommen**, Regel 10 |
+| B8, B11, B12 | Nebensätze in 5.1 gestrichen, Rückgriff statt Wiederholung |
+| B9, B10 | 5.2 A1 kündigt nur an, 5.5 A6 greift zurück |
+| B16 | 5.3 A4 eröffnet mit These statt mit Kapitel 4 |
+| B17 | halbe Megawattstunde je Megawatt |
+| B19 | der vorsichtigere Wert |
+| B20 | relativ steigt, absolut sinkt |
+| B21 | Kapitel 4: fast das ganze Jahr über |
+| B22 | Bemessungsgegenstand und Preis im Gebot |
+| B24, B25 | Kapiteleinleitung neu, acht Sätze |
+| B26, B27 | datierte ERLEDIGT-Zeilen, nichts gelöscht |
+| B28 | *Abrufdauer* bleibt zulässig, Entscheidung des Verfassers |
+| B29 | Kapitel 2: Beleg für § 13c |
+| B31 | Verfügbarkeit bei der Einplanung, Lieferfähigkeit im Fehlerfall |
+| Ableitungen 1 bis 4 | vom Verfasser bestätigt, Marken datiert |
 
 ---
 

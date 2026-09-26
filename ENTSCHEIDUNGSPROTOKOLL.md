@@ -16343,6 +16343,43 @@ alle zu je acht Saetzen. Die Kapiteleinleitung liegt bei sieben. `pruefen.py`
 ohne Befund, `pruefe_stil.py` ohne Verstoss in Kapitel 5, Biber ohne Warnung,
 124 Seiten.
 
+### 26.09.2026 nachts, Befundliste abgearbeitet, Kapiteleinleitung vollstaendig
+
+**Kapiteleinleitung, acht Saetze.** Die Ankuendigung von 5.4 nennt jetzt das
+Engpassmanagement, die von 5.5 den umgebauten Abschnitt, und der neue achte
+Satz gibt die Konsequenz: was der kurative Marktmechanismus heute leistet und
+was fuer seine Umsetzung noch fehlt. Das doppelte Anschliessend ist behoben.
+
+**Befunde umgesetzt, Vorgabe des Verfassers fuer alle Buendel A bis G.** B3,
+B4, B5 (drei Stellen), B8, B9, B10, B11, B12, B16, B17, B19, B20, B22, B23,
+B24, B25, B31 in Kapitel 5; B21 in chapter_4.tex Zeile 863, fast das ganze
+Jahr ueber; B29 in chapter_2.tex Zeile 1295, Beleg fuer Paragraf 13c. Der alte
+Wortlaut steht je Stelle als Kommentar mit Datum und Befund.
+
+**Hingenommen nach WORKFLOW Regel 10, Entscheidung des Verfassers.** B7, der
+Zuschlag als Netzauskunft in 5.1 A6 als Praemisse und in 5.4 A3 als Folge;
+B13, die Abloesung in 5.3 aus Kostensicht und in 5.5 aus Betriebssicht; B15,
+die Verguetung des Abrufs in 5.1 A2 als Nennung der Anforderung.
+
+**Begriffe.** Verfuegbarkeit fuer den Nachweis zum Zeitpunkt der Einplanung,
+Lieferfaehigkeit fuer den Fehlerfall; 5.1 A7 und A10 angepasst. Abrufdauer
+bleibt nach Entscheidung des Verfassers als Name der Zeitdauer zulaessig, denn
+vorgehaltene Energie je Abruf ist die Groesse und Abrufdauer ihre Ursache;
+Kapitel 4 trennt beides. B28 damit erledigt.
+
+**Eigenstaendige Ableitungen der Uebergabe, Nummer 1 bis 4, vom Verfasser
+bestaetigt.** Der Anweisungszeitpunkt als Kostenfaktor, das guenstigere Gebot
+fuer anschliessende Stunden, die Verteilung der Vorhaltekosten auf mehrere
+Verwendungen, das zusaetzliche Produkt fuer die Abloesung. Keine ist gerechnet,
+alle stehen im Konjunktiv oder mit voraussichtlich. Die Marken im Quelltext
+tragen je eine datierte Zeile. Die drei ueberholten Marken (B26) und der
+Kopfkommentar (B27) tragen je eine Zeile ERLEDIGT, nicht geloescht.
+
+**Stand.** Einleitung acht Saetze, 5.1 zwoelf Absaetze, 5.2 sieben, 5.3
+sechs, 5.4 fuenf, 5.5 sechs, alle zu je acht Saetzen. `pruefen.py --alle` ohne
+Befund, `pruefe_stil.py` ohne Verstoss in Kapitel 4 und 5, Biber ohne Warnung,
+124 Seiten. Offen aus der Befundliste: nichts.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt
