@@ -16736,6 +16736,80 @@ ohne Verstoss in Kapitel 5, keine LaTeX-Warnung, Literaturverzeichnis
 weiter ab Seite 82, 129 Seiten; die Kuerzungen in 5.1 summieren sich auf
 rund fuenfzehn Zeilen.
 
+### 27.09.2026, Durchgang des Verfassers durch 5.2
+
+**Reihenfolge.** Einleitung, Preissuche, vollstaendige Preiskenntnis, FCR und
+aFRR-Leistung, aFRR-Arbeit, Sensitivitaet, Perspektive. Der Absatz zur
+Preiskenntnis stand bis heute nach den aFRR-Absaetzen und steht jetzt davor,
+weil die Einordnung der Regelleistung aus der Preiskenntnis folgt, Vorgabe
+des Verfassers. Die Ankuendigung in der Einleitung nennt die neue Reihenfolge.
+
+**Einleitung.** Auf vier Saetze gekuerzt, sie leitet nur noch ein. Die
+fuenf Saetze, die die einzelnen Grenzen vorwegnahmen, sind gestrichen und
+als Kommentar erhalten.
+
+**Preissuche.** Ergaenzt, warum das Verfahren ein koordinatenweises Minimum
+findet: die Suche ist eine Minimierung der Preise ueber der Maximierung des
+Erloeses im Tagesmodell, jede gepruefte Kombination kostet einen Lauf, eine
+gemeinsame Suche ueber 48 Stunden und Richtungen verlangte ein Vielfaches
+der einigen hundert Laeufe je Tag nach chapter_3.tex Zeile 414. Gleichwohl
+zu zudem.
+
+**Vollstaendige Preiskenntnis.** Weber-Satz mit den Zitaten
+weber_gutachten_2015 und mahgoub_wie_2025 gestrichen, Weber ist hier nicht
+mehr von Belang; in Kapitel 5 bleibt im Fliesstext nur noch das
+Consentec-Zitat in 5.4. Prognosesatz neu: eine Optimierung je Spotmarkt mit
+Preisprognosen haette zusaetzlich Fehler hinzugefuegt. Gestrichen: Der
+ermittelte kurative Reservierungspreis ist damit als
+opportunitaetskostenbasierter Wert zu lesen. Neu am Ende: fuer die
+Leistungspreise der FCR und der aFRR ist die Kenntnis keine Annahme, weil
+beide Ausschreibungen vor der kurativen schliessen; ein Akteur ohne Zuschlag
+traegt den Erloes nicht als Opportunitaet, ein Akteur mit Zuschlag steht dem
+kurativen Markt nicht zur Verfuegung; die Kenntnis der Leistungspreise
+ueberschaetzt die Opportunitaet damit eher, die Leistungspreise tragen das
+Niveau als Rechengroesse; IDC bleibt offen; das Modell entscheidet alle
+Maerkte gemeinsam. Die Saetze zum IDC und zum DA sind zu einem verbunden,
+die Position am DA faellt als Detail, eigene Kuerzung. Zwoelf Saetze.
+
+**Absatz zur aFRR-Leistung aufgeloest**, Vorgabe des Verfassers: kein
+Alleinstellungsmerkmal, seine Begruendung gehoert zur Preiskenntnis. Alte
+Fassung als Kommentar. Zurueckgenommen: Auf der Leistungsseite setzt das
+Optimierungsmodell den gemittelten Zuschlagspreis an, der die Opportunitaet
+eher unterschaetzt, denn die Leistungspreise ueberschaetzen sie eher.
+
+**Neuer Absatz FCR und aFRR-Leistung**, sieben Saetze, Vorgabe des
+Verfassers: FCR einfach abzubilden, Einheitspreis fuer alle Bezuschlagten;
+aFRR pay-as-bid mit gemitteltem Zuschlagspreis; ein Akteur schoepft den
+Grenzpreis des letzten Zuschlags mit seiner Gebotsstrategie nicht aus, sein
+Zuschlagspreis liegt darunter, die Lage ist nicht bekannt; die Sensitivitaet
+bestaetigt den Einfluss mit 16 Prozent auf den Median nach chapter_4.tex
+Zeile 1130; der gemittelte Zuschlagspreis unterstellt
+marktdurchschnittliches Bietverhalten und ist die belastbare Annahme.
+
+**aFRR-Arbeit neu aufgebaut** nach dem Diktat des Verfassers: Gebot unter
+der Unsicherheit des Abrufs, Pflicht zum Gebot aus der Vorhaltung,
+Grenzpreis und Abruf erst nach der Viertelstunde bekannt, keine geeignete
+vereinfachende Annahme, Abruf mitmodellieren ohne dass die Modellierung den
+Preis traegt, Kopplung an die vorgehaltene Leistung, Bruchteil als anteilige
+Lieferung. Schluss: der Preis ist mit dieser Kopplung gebildet, andere
+Gebotsstrategien gesondert; die Sensitivitaeten zeigen 54 und 110 Prozent
+fuer die Lieferung bis zur eigenen Reservierung und 16 Prozent fuer den
+Grenzpreis, chapter_4.tex Zeile 1130 und 1153; eine belastbare Abbildung
+waere auf Erfahrungswerten und Daten aus der Speichervermarktung neu
+aufzubauen; fuer eine konservative Aussage unter marktdurchschnittlichem
+Bietverhalten tragen die Annahmen aber. Zurueckgenommen, nicht wieder
+aufzunehmen: Ein Akteur bietet die Arbeit erst zu dem Preis an, ab dem er
+die Energie gewinnbringend liefert; die Vorhaltung in der aFRR wird dadurch
+attraktiver; eine Uebertragung setzt diese Kopplung voraus. Das Wort extrem
+des Verfassers ist durch die Zahlen ersetzt, Stilregel 7 und 15.
+
+**Offen.** Der Verfasser erwaegt, die Sensitivitaeten zur Modellierung von
+aFRR und IDC aus 5.3 nach 5.2 zu ziehen. Noch nicht entschieden, 5.3 wird
+beim Durchgang geprueft.
+
+**Stand.** `pruefen.py` ohne Befund, `pruefe_stil.py` 0 in Kapitel 5,
+keine LaTeX-Warnung, 129 Seiten, Literaturverzeichnis ab Seite 82.
+
 ## chapter_6.tex
 
 ### 26.09.2026 nachts, Kapitel 6 geschrieben, zwoelf Absaetze

@@ -689,7 +689,9 @@ Erst darunter zählt die Wirtschaftlichkeit der kurativen Vorhaltung.
 %Die zeitliche Betrachtung ist eine solche Vereinfachung, denn das Optimierungsmodell löst jeden Liefertag für sich.
 Das Optimierungsmodell liefert einen kurativen Reservierungspreis für jede Stunde des Jahres 2025, aus dem Erkenntnisse über die Höhe des Preises, über sein zeitliches Muster und über die treibenden Größen folgen.
 Der Preis stammt jedoch aus einer Modellrechnung, sodass seine Vereinfachungen und Annahmen einzuordnen sind.
-Das Verfahren der Preissuche setzt dem Ergebnis eine eigene Grenze, denn es findet ein koordinatenweises und kein globales Minimum.
+% GEKUERZT am 27.09.2026, Vorgabe des Verfassers: der Absatz leitet nur ein, die Grenzen stehen in den Folgeabsaetzen.
+% Alte Fassung, nicht wieder aufzunehmen:
+%Das Verfahren der Preissuche setzt dem Ergebnis eine eigene Grenze, denn es findet ein koordinatenweises und kein globales Minimum.
 % GEAENDERT am 26.09.2026, B9: A1 kuendigt an, A7 fuehrt aus
 % Alte Fassung, nicht wieder aufzunehmen:
 %Die zeitliche Betrachtung ist eine weitere Vereinfachung, denn das Optimierungsmodell löst jeden Liefertag für sich.
@@ -716,10 +718,13 @@ Das Verfahren der Preissuche setzt dem Ergebnis eine eigene Grenze, denn es find
 %Jede dieser Vereinfachungen trägt eine Unschärfe in den kurativen Reservierungspreis.
 %Die Intraday-Auktionen und der Handel im Verbund mehrerer Anlagen, wie ihn ein Pool betreibt, bleiben ganz außer Betracht.
 %Auch die geprüften Sensitivitäten tragen eine Grenze, denn eine Sensitivität kann die Frage verfehlen, die sie beantworten soll.
-Die Märkte für \ac{aFRR}-Leistung und der \ac{IDC} sind über Preisreihen mit vereinfachten Annahmen abgebildet.
-Die stärkste Annahme ist die vollständige Kenntnis der Preise.
-Auch die geprüften Sensitivitäten tragen eine Grenze, denn eine Sensitivität kann die Frage verfehlen, die sie beantworten soll.
-Die zeitliche Betrachtung je Liefertag, die Intraday-Auktionen und der Handel im Verbund bleiben zuletzt als Grenzen der Perspektive.
+%Die Märkte für \ac{aFRR}-Leistung und der \ac{IDC} sind über Preisreihen mit vereinfachten Annahmen abgebildet.
+%Die stärkste Annahme ist die vollständige Kenntnis der Preise.
+%Auch die geprüften Sensitivitäten tragen eine Grenze, denn eine Sensitivität kann die Frage verfehlen, die sie beantworten soll.
+%Die zeitliche Betrachtung je Liefertag, die Intraday-Auktionen und der Handel im Verbund bleiben zuletzt als Grenzen der Perspektive.
+% GEAENDERT am 27.09.2026: Reihenfolge nach der Verschiebung.
+%Eingeordnet werden nacheinander das Verfahren der Preissuche, die Abbildung der Märkte über Preisreihen, die Aussagekraft der Sensitivitäten und die Grenzen der Perspektive.
+Eingeordnet werden nacheinander das Verfahren der Preissuche, die vollständige Kenntnis der Preise, die Abbildung der Märkte über Preisreihen, die Aussagekraft der Sensitivitäten und die Grenzen der Perspektive.
 Jede dieser Vereinfachungen trägt eine Unschärfe in den kurativen Reservierungspreis.
 
 % ANGEFUEGT am 25.09.2026: was das Verfahren nicht prueft.
@@ -742,7 +747,14 @@ Jede dieser Vereinfachungen trägt eine Unschärfe in den kurativen Reservierung
 Die Grenze des Verfahrens zeigt sich an den Preisen der zweiten Iteration, die ein koordinatenweises und kein globales Minimum sind.
 Keine einzelne Stunde lässt sich senken, ohne dass die vollständige Bindung bricht.
 Ein Absenken mehrerer Stunden zugleich prüft das Verfahren dagegen nicht.
-Die Lage des Minimums hängt gleichwohl an der Reihenfolge des Abstiegs.
+% ERGAENZT am 27.09.2026, Vorgabe des Verfassers: Grund fuer das koordinatenweise Minimum, Aufbau als Minimierung in einer Maximierung und Rechenaufwand.
+Der Grund liegt im Aufbau der Suche, denn sie ist eine Minimierung der Preise über der Maximierung des Erlöses im Tagesmodell.
+Ob ein Satz von Preisen die vollständige Bindung trägt, zeigt erst ein Lauf des Tagesmodells.
+Jede geprüfte Kombination von Preisen kostet damit einen Lauf.
+Eine gemeinsame Suche über alle 48 Stunden und Richtungen verlangte ein Vielfaches der einigen hundert Läufe, die die zweite Iteration schon je Tag braucht.
+% GEAENDERT am 27.09.2026: Anschluss an die ergaenzten Saetze.
+%Die Lage des Minimums hängt gleichwohl an der Reihenfolge des Abstiegs.
+Die Lage des Minimums hängt zudem an der Reihenfolge des Abstiegs.
 Eine andere Reihenfolge führte zu einem anderen Satz von Preisen, der die vollständige Bindung ebenso trägt.
 Ein globales Minimum läge deshalb nicht über dem ausgewiesenen Preis.
 % GEAENDERT am 26.09.2026, B19: Kapitel 4 weist keine Spanne aus
@@ -750,6 +762,48 @@ Ein globales Minimum läge deshalb nicht über dem ausgewiesenen Preis.
 %Der ausgewiesene kurative Reservierungspreis ist damit die vorsichtigere Seite einer gemessenen Spanne.
 Der ausgewiesene kurative Reservierungspreis ist damit der vorsichtigere Wert.
 Belastbarer als die Höhe einer einzelnen Stunde ist deshalb das Niveau über das Jahr.
+
+% VERSCHOBEN am 27.09.2026, Vorgabe des Verfassers: der Absatz zur vollstaendigen Preiskenntnis steht jetzt vor den beiden aFRR-Absaetzen, weil deren Einordnung aus der Preiskenntnis folgt.
+% ANGEFUEGT am 25.09.2026: der Optionswert wird erklaert, Stilregel 13.
+% ANGEFUEGT am 25.09.2026: zweiter Grund gegen eine Preisprognose.
+% NEU GEFASST am 25.09.2026, Vorgabe des Verfassers. Der Absatz sagt
+% jetzt, wozu die vollstaendige Preiskenntnis dient, naemlich eine
+% Unterschaetzung der Opportunitaet an den Spotmaerkten auszuschliessen,
+% weil der kurative Markt mit ihnen um Leistung konkurriert. Der
+% Optionswert entfaellt deshalb ohne Verlust, weil die Bezugsanlage im
+% Referenzfahrplan bereits bestmoeglich vermarktet ist.
+% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
+%Die stärkste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Preise.
+%Die vollständige Preiskenntnis überschätzt die Opportunität, weil ein Betreiber die Preise des folgenden Tages nicht kennt.
+%Weber räumt dieselbe Verzerrung für sein eigenes Verfahren ein, und der Unterschied zwischen Erlöspotenzial und erzieltem Erlös ist unabhängig davon belegt \cite{weber_gutachten_2015, mahgoub_wie_2025}.
+%Zugleich unterschlägt die vollständige Preiskenntnis den Optionswert der Bindung, denn bei bekannter Preisreihe ist dieser Optionswert null.
+%Ein Betreiber ohne Preiskenntnis hielte Leistung offen, um auf einen hohen Preis zu reagieren, und verlangte für den Verzicht darauf einen Zuschlag.
+%Die Annahme ist gleichwohl bewusst gewählt, weil eine Preisprognose einen Fehler hinzufügte, der sich von der Wirkung der Reservierung nicht trennen ließe.
+%Eine Prognose verschöbe zudem die Frage von der Wirkung der Reservierung auf die Güte der Prognose.
+%Beide Verzerrungen laufen gegeneinander, sodass der ermittelte kurative Reservierungspreis als opportunitätskostenbasierter Wert zu lesen ist.
+Die stärkste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Preise.
+Für die Spotmärkte schließt die vollständige Preiskenntnis eine Unterschätzung der Opportunität aus.
+Der kurative Marktmechanismus konkurriert mit den Spotmärkten um dieselbe Leistung, weshalb gerade diese Unterschätzung zu vermeiden ist.
+Die vollständige Preiskenntnis unterschlägt zugleich den Optionswert der Bindung, denn bei bekannter Preisreihe ist dieser Optionswert null.
+Der Optionswert entfällt dabei ohne Verlust, denn die Bezugsanlage ist im Referenzfahrplan bereits bestmöglich vermarktet.
+% GESTRICHEN am 27.09.2026, Vorgabe des Verfassers: Weber ist hier nicht mehr von Belang.
+%Weber räumt dieselbe Verzerrung für sein eigenes Verfahren ein, und der Unterschied zwischen Erlöspotenzial und erzieltem Erlös ist unabhängig davon belegt \cite{weber_gutachten_2015, mahgoub_wie_2025}.
+% GEAENDERT am 27.09.2026, Vorgabe des Verfassers: Optimierung je Spotmarkt mit Preisprognosen.
+% Alte Fassung, nicht wieder aufzunehmen:
+%Eine Preisprognose fügte dagegen einen Fehler hinzu, der sich von der Wirkung der Reservierung nicht trennen ließe.
+Eine Optimierung je Spotmarkt mit Preisprognosen hätte dagegen zusätzlich Fehler hinzugefügt, die sich von der Wirkung der Reservierung nicht trennen ließen.
+% GESTRICHEN am 27.09.2026, Vorgabe des Verfassers.
+%Der ermittelte kurative Reservierungspreis ist damit als opportunitätskostenbasierter Wert zu lesen.
+% ERGAENZT am 27.09.2026, Vorgabe des Verfassers: Kenntnis der Leistungspreise von FCR und aFRR, Ueberleitung zum aFRR-Absatz.
+% GEAENDERT am 27.09.2026: zweites dagegen in Folge entfernt.
+%Für die Leistungspreise der \ac{FCR} und der \ac{aFRR} ist die vollständige Kenntnis dagegen keine Annahme, denn beide Ausschreibungen schließen vor der kurativen und ein Akteur kennt seinen Zuschlag dort bereits.
+Für die Leistungspreise der \ac{FCR} und der \ac{aFRR} ist die vollständige Kenntnis keine Annahme, denn beide Ausschreibungen schließen vor der kurativen und ein Akteur kennt seinen Zuschlag dort bereits.
+% ERGAENZT am 27.09.2026, Vorgabe des Verfassers: Begruendung aus dem aufgeloesten Absatz zur aFRR-Leistung, die Leistungspreise ueberschaetzen die Opportunitaet eher; die Saetze zum IDC und zum DA sind zu einem verbunden.
+Ein Akteur ohne Zuschlag trägt den Erlös der Regelleistung deshalb nicht als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
+Die Kenntnis der Leistungspreise überschätzt die Opportunität damit eher.
+Die Leistungspreise tragen das Niveau des kurativen Reservierungspreises aber als Rechengröße, denn sie sind selbst unter Berücksichtigung von Opportunitäten entstanden.
+Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen, sodass beide Energiemärkte eine Opportunität bleiben.
+Das Optimierungsmodell entscheidet gleichwohl alle Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
 
 % ANGEFUEGT am 25.09.2026: der Grund fuer das Gewicht der aFRR.
 % ANGEFUEGT am 25.09.2026: die Folge eines freien Liefermodus.
@@ -856,10 +910,14 @@ Belastbarer als die Höhe einer einzelnen Stunde ist deshalb das Niveau über da
 %Wie viel eine Einheit zum Grenzpreis tatsächlich liefert, sagt die Annahme gleichwohl nicht.
 %Die anteilige Lieferung koppelt die Energie zudem an die vorgehaltene Leistung, obwohl eine solche Kopplung nicht zwingend ist.
 %Die Vorhaltung in der \ac{aFRR} wird dadurch attraktiver, sodass die Opportunität der Bezugsanlage höher ausfällt als bei einer Technologie mit anderer Gebotsstrategie.
-Unter den geprüften Annahmen trägt die Modellierung der \ac{aFRR} das Ergebnis am stärksten, denn auf sie entfällt der größte Teil des Erlöses.
-Auf der Leistungsseite setzt das Optimierungsmodell den gemittelten Zuschlagspreis an, der die Opportunität eher unterschätzt.
-Die Ausschreibung der \ac{aFRR}-Leistung schließt jedoch vor der kurativen, sodass ein Akteur seinen Zuschlag dort bereits kennt.
-Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
+% AUFGELOEST am 27.09.2026, Vorgabe des Verfassers: der Absatz hatte kein Alleinstellungsmerkmal mehr. Die Begruendung ueber den bekannten Zuschlag und den Preis als Rechengroesse steht jetzt im Absatz zur vollstaendigen Preiskenntnis, wo die Leistungspreise die Opportunitaet eher ueberschaetzen. An dieser Stelle steht ein Absatz zu FCR und aFRR-Leistung.
+% Alte Fassung, nicht wieder aufzunehmen:
+%Unter den geprüften Annahmen trägt die Modellierung der \ac{aFRR} das Ergebnis am stärksten, denn auf sie entfällt der größte Teil des Erlöses.
+%Auf der Leistungsseite setzt das Optimierungsmodell den gemittelten Zuschlagspreis an, der die Opportunität eher unterschätzt.
+% GESTRICHEN am 27.09.2026: doppelt mit dem neuen Schlusssatz des vorangestellten Absatzes zur Preiskenntnis, das jedoch wandert in den Folgesatz.
+%Die Ausschreibung der \ac{aFRR}-Leistung schließt jedoch vor der kurativen, sodass ein Akteur seinen Zuschlag dort bereits kennt.
+%Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
+%Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} jedoch nicht mehr als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
 % ERGAENZT am 25.09.2026, Vorgabe des Verfassers: auch der DA bleibt
 % eine Opportunitaet, weil sich eine Position dort am IDC glattstellen
 % laesst. Die Regelleistung ist nach ihrem Gebotsschluss dagegen nicht
@@ -870,45 +928,51 @@ Ein Akteur ohne Zuschlag trägt den Erlös der \ac{aFRR} nicht mehr als Opportun
 %Das Gebot orientiert sich gleichwohl an diesem Leistungspreis, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
 %Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen und ist damit eine Opportunität.
 %Das Optimierungsmodell entscheidet beide Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
-Der Leistungspreis der \ac{aFRR} trägt das Niveau deshalb als Rechengröße und nicht als Opportunität, prägt das Gebot aber weiterhin, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
-Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen, und eine Position am \ac{DA} lässt sich dort glattstellen.
-Beide Energiemärkte bleiben deshalb eine Opportunität, während eine Vorhaltung von Regelleistung nach ihrem Gebotsschluss nicht mehr handelbar ist.
-Das Optimierungsmodell entscheidet alle Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
+%Der Leistungspreis der \ac{aFRR} trägt das Niveau deshalb als Rechengröße und nicht als Opportunität, prägt das Gebot aber weiterhin, weil er selbst unter Berücksichtigung von Opportunitäten entstanden ist.
+%Der Handel am \ac{IDC} bleibt dagegen nach der Bekanntgabe der kurativen Zuschläge offen, und eine Position am \ac{DA} lässt sich dort glattstellen.
+%Beide Energiemärkte bleiben deshalb eine Opportunität, während eine Vorhaltung von Regelleistung nach ihrem Gebotsschluss nicht mehr handelbar ist.
+%Das Optimierungsmodell entscheidet alle Märkte gemeinsam, während ein Akteur nacheinander entscheidet.
+Unter den geprüften Annahmen trägt die Abbildung der Regelleistung das Ergebnis am stärksten, denn auf die \ac{aFRR} entfällt der größte Teil des Erlöses.
+Die \ac{FCR} ist dabei einfach abzubilden, denn ihr Einheitspreis gilt für alle bezuschlagten Anbieter einer Zeitscheibe.
+Die \ac{aFRR}-Leistung wird dagegen nach pay-as-bid vergütet, und das Optimierungsmodell setzt den gemittelten Zuschlagspreis an.
+Ein Akteur schöpft den Grenzpreis des letzten Zuschlags mit seiner Gebotsstrategie nicht aus, sodass sein Zuschlagspreis unter diesem Grenzpreis liegt.
+Wo unter dem Grenzpreis der Zuschlagspreis liegt, ist jedoch nicht bekannt.
+Die Sensitivität bestätigt den Einfluss, denn der Grenzpreis des letzten Zuschlags hebt den Median des kurativen Reservierungspreises um 16 Prozent.
+Der gemittelte Zuschlagspreis unterstellt ein marktdurchschnittliches Bietverhalten und ist deshalb die belastbare Annahme.
 
+% NEU AUFGEBAUT am 27.09.2026 nach dem Diktat des Verfassers: Gebot unter Unsicherheit, Pflicht aus der Vorhaltung, keine geeignete Annahme, Abruf mitmodellieren ohne Preiswirkung, Kopplung an die Vorhaltung, Bruchteil als anteilige Lieferung.
+% Alte Fassung, nicht wieder aufzunehmen:
+%Schwerer wiegt die Annahme über die Lieferung von \ac{aFRR}-Arbeit, denn dort entscheidet nicht der Grenzpreis, sondern die gelieferte Menge.
+%Der Grenzpreis steht erst nach dem Viertelstundenslot fest, sodass ein Akteur die volle Menge allein unter optimalen Bedingungen erreichte.
+%Die anteilige Lieferung des Basisfalls begrenzt die Menge deshalb, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
+% GEAENDERT am 27.09.2026, Vorgabe des Verfassers: die Menge laesst sich nicht durch Annahmen vereinfachen, die Opportunitaet ist zu modellieren, ohne zu viel Gewicht zu erhalten.
+% Alte Fassung, nicht wieder aufzunehmen:
+%Wie viel eine Einheit zum Grenzpreis tatsächlich liefert, sagt die Annahme gleichwohl nicht.
+%Wie viel eine Einheit zum Grenzpreis tatsächlich liefert, lässt sich durch keine Annahme vereinfachen, denn die gelieferte Menge hängt am deutschlandweiten Abruf und an den Geboten der übrigen Anbieter.
+%Die Opportunität des Akteurs aus der \ac{aFRR}-Arbeit ist deshalb zu modellieren, darf im kurativen Reservierungspreis aber kein zu hohes Gewicht erhalten.
+%Ein Akteur bietet die Arbeit erst zu dem Preis an, ab dem er die Energie gewinnbringend liefert.
+%Die anteilige Lieferung koppelt die Energie zudem an die vorgehaltene Leistung, obwohl eine solche Kopplung nicht zwingend ist.
+%Die Vorhaltung in der \ac{aFRR} wird dadurch attraktiver, sodass die Opportunität der Bezugsanlage höher ausfällt.
+%Eine Übertragung des ermittelten Preises auf eine Technologie mit anderer Gebotsstrategie setzt diese Kopplung deshalb ebenfalls voraus.
 Schwerer wiegt die Annahme über die Lieferung von \ac{aFRR}-Arbeit, denn dort entscheidet nicht der Grenzpreis, sondern die gelieferte Menge.
-Der Grenzpreis steht erst nach dem Viertelstundenslot fest, sodass ein Akteur die volle Menge allein unter optimalen Bedingungen erreichte.
-Die anteilige Lieferung des Basisfalls begrenzt die Menge deshalb, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
-Wie viel eine Einheit zum Grenzpreis tatsächlich liefert, sagt die Annahme gleichwohl nicht.
-Ein Akteur bietet die Arbeit erst zu dem Preis an, ab dem er die Energie gewinnbringend liefert.
-Die anteilige Lieferung koppelt die Energie zudem an die vorgehaltene Leistung, obwohl eine solche Kopplung nicht zwingend ist.
-Die Vorhaltung in der \ac{aFRR} wird dadurch attraktiver, sodass die Opportunität der Bezugsanlage höher ausfällt.
-Eine Übertragung des ermittelten Preises auf eine Technologie mit anderer Gebotsstrategie setzt diese Kopplung deshalb ebenfalls voraus.
-
-% ANGEFUEGT am 25.09.2026: der Optionswert wird erklaert, Stilregel 13.
-% ANGEFUEGT am 25.09.2026: zweiter Grund gegen eine Preisprognose.
-% NEU GEFASST am 25.09.2026, Vorgabe des Verfassers. Der Absatz sagt
-% jetzt, wozu die vollstaendige Preiskenntnis dient, naemlich eine
-% Unterschaetzung der Opportunitaet an den Spotmaerkten auszuschliessen,
-% weil der kurative Markt mit ihnen um Leistung konkurriert. Der
-% Optionswert entfaellt deshalb ohne Verlust, weil die Bezugsanlage im
-% Referenzfahrplan bereits bestmoeglich vermarktet ist.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die stärkste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Preise.
-%Die vollständige Preiskenntnis überschätzt die Opportunität, weil ein Betreiber die Preise des folgenden Tages nicht kennt.
-%Weber räumt dieselbe Verzerrung für sein eigenes Verfahren ein, und der Unterschied zwischen Erlöspotenzial und erzieltem Erlös ist unabhängig davon belegt \cite{weber_gutachten_2015, mahgoub_wie_2025}.
-%Zugleich unterschlägt die vollständige Preiskenntnis den Optionswert der Bindung, denn bei bekannter Preisreihe ist dieser Optionswert null.
-%Ein Betreiber ohne Preiskenntnis hielte Leistung offen, um auf einen hohen Preis zu reagieren, und verlangte für den Verzicht darauf einen Zuschlag.
-%Die Annahme ist gleichwohl bewusst gewählt, weil eine Preisprognose einen Fehler hinzufügte, der sich von der Wirkung der Reservierung nicht trennen ließe.
-%Eine Prognose verschöbe zudem die Frage von der Wirkung der Reservierung auf die Güte der Prognose.
-%Beide Verzerrungen laufen gegeneinander, sodass der ermittelte kurative Reservierungspreis als opportunitätskostenbasierter Wert zu lesen ist.
-Die stärkste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Preise.
-Für die Spotmärkte schließt die vollständige Preiskenntnis eine Unterschätzung der Opportunität aus.
-Der kurative Marktmechanismus konkurriert mit den Spotmärkten um dieselbe Leistung, weshalb gerade diese Unterschätzung zu vermeiden ist.
-Die vollständige Preiskenntnis unterschlägt zugleich den Optionswert der Bindung, denn bei bekannter Preisreihe ist dieser Optionswert null.
-Der Optionswert entfällt dabei ohne Verlust, denn die Bezugsanlage ist im Referenzfahrplan bereits bestmöglich vermarktet.
-Weber räumt dieselbe Verzerrung für sein eigenes Verfahren ein, und der Unterschied zwischen Erlöspotenzial und erzieltem Erlös ist unabhängig davon belegt \cite{weber_gutachten_2015, mahgoub_wie_2025}.
-Eine Preisprognose fügte dagegen einen Fehler hinzu, der sich von der Wirkung der Reservierung nicht trennen ließe.
-Der ermittelte kurative Reservierungspreis ist damit als opportunitätskostenbasierter Wert zu lesen.
+Ein Akteur bietet seine Arbeit erst zu Preisen an, ab denen sich die Lieferung unter der Unsicherheit des Abrufs lohnt.
+Zugleich hat sich der Akteur mit der Vorhaltung der Leistung verpflichtet, Gebote für die Arbeit abzugeben.
+Der Grenzpreis steht erst nach der Viertelstunde fest und mit ihm der Abruf der Anlage.
+Eine Annahme, die diese Lieferung geeignet vereinfacht, gibt es deshalb nicht.
+Der Abruf ist vielmehr mitzumodellieren, doch die Modellierung darf den kurativen Reservierungspreis nicht tragen.
+Das Optimierungsmodell koppelt die Lieferung deshalb an die vorgehaltene Leistung, denn mit der Vorhaltung ist der Akteur zum Gebot gezwungen und wird bei einem Grenzpreis über seinem Gebot abgerufen.
+Abgerufen wird dann nicht die volle vorgehaltene Leistung, sondern nur ein Bruchteil, den die anteilige Lieferung des Basisfalls am deutschen Abruf abbildet.
+% GEAENDERT am 27.09.2026, Vorgabe des Verfassers: keine Voraussetzung fuer die Uebertragung, sondern der Preis ist mit der Kopplung gebildet, andere Technologien gesondert.
+% Alte Fassung, nicht wieder aufzunehmen:
+%Eine Übertragung des ermittelten Preises auf eine Technologie mit anderer Gebotsstrategie setzt diese Kopplung deshalb ebenfalls voraus.
+Der ermittelte kurative Reservierungspreis ist mit dieser Kopplung gebildet, und für eine Technologie mit anderer Gebotsstrategie ist die Lieferung gesondert zu betrachten.
+% ERGAENZT am 27.09.2026, Vorgabe des Verfassers: Sensitivitaeten zu Leistung und Arbeit der aFRR, Konsequenz Neuaufbau der Abbildung auf Erfahrungswerten und Daten aus der Speichervermarktung.
+Die Sensitivitäten zeigen, wie stark die Modellierung der \ac{aFRR} den kurativen Reservierungspreis bewegt.
+Die Lieferung bis zur eigenen Reservierung hebt den Median um 54 Prozent in der Entlade- und um 110 Prozent in der Laderichtung, der Grenzpreis der Leistung um 16 Prozent.
+Eine belastbare Abbildung der \ac{aFRR} wäre deshalb auf Erfahrungswerten und Daten aus der Vermarktung von Speichern neu aufzubauen.
+% ERGAENZT am 27.09.2026, Vorgabe des Verfassers: fuer eine konservative, marktdurchschnittliche Annahme tragen die Annahmen.
+Für eine konservative Aussage unter marktdurchschnittlichem Bietverhalten tragen die getroffenen Annahmen aber.
+% Bis 27.09.2026 folgte hier der Absatz zur vollstaendigen Preiskenntnis, jetzt vor dem aFRR-Absatz.
 
 % ANGEFUEGT am 25.09.2026: der mehrfache Handel wird erklaert,
 % Stilregel 13.
