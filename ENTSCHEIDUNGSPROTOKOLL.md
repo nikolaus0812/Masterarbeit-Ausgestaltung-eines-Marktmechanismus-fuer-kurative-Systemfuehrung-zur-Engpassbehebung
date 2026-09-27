@@ -2989,6 +2989,58 @@ und der Ordner analysen/wind_monate sind wieder entfernt, ihre Auswertung
 hatte dieselben Werte geliefert. Ein beim Ersetzen uebrig gebliebenes
 Klammerzeichen in der bib ist bereinigt, biber ohne Warnung.
 
+### 27.09.2026, Betreuerkommentare zur PDF-Fassung, zwoelf Kommentare zu Kapitel 1 und 3
+
+Der Betreuer hat die PDF-Fassung mit zwoelf Kommentaren versehen, drei zu
+Kapitel 1 und neun zu Kapitel 3. Alle zwoelf Zitate standen wortgleich im
+Quelltext, der Betreuer hat den aktuellen Stand gelesen. Der Verfasser hat die
+Kommentare im Chat einzeln durchgegangen, Claude hat je Kommentar eine
+Fassung vorgelegt, der Verfasser hat freigegeben oder nachgesteuert. Zehn
+Kommentare fuehrten zu Textaenderungen, zwei nicht. Die Einzelheiten stehen
+in den Abschnitten chapter_1.tex und chapter_3.tex. Hier stehen die drei
+Entscheidungen, die mehrere Dateien betreffen.
+
+**Kommentar 5, Lokationalitaet.** Der Betreuer: "Dieses Wort gibt es so
+vermutlich nicht." Claude hat drei Kandidaten vorgelegt, naemlich Ortsbezug
+(empfohlen), Netzknotenschaerfe und Standortabhaengigkeit. Der Verfasser hat
+*Standortabhaengigkeit* gewaehlt. Ersetzt an allen vier Stellen im
+Fliesstext: chapter_3.tex A3 im Anforderungskatalog, chapter_5.tex einmal,
+chapter_6.tex zweimal. Der Anforderungsname lautet jetzt
+"A3 -- Standortabhaengigkeit". Lokationalitaet ist nicht wieder aufzunehmen.
+
+**Kommentar 10, Doppelpunkt vor Gleichungen.** Der Betreuer wollte vor der
+Zielfunktion in 3.2.2 einen Doppelpunkt statt des Punkts. Claude hat
+festgestellt, dass alle sieben Gleichungen in Kapitel 3 mit einem Satz auf
+Punkt eingeleitet wurden, und die Wahl zwischen der einen Stelle und allen
+sieben vorgelegt, mit Empfehlung fuer alle sieben. Der Verfasser: "alle
+gleichungen". Umgesetzt fuer die sieben Gleichungen in Kapitel 3 und, auf
+Vorschlag von Claude vom Verfasser freigegeben, fuer die Zielfunktion in
+Anhang C (attachment_modell.tex Zeile 133), die dort als einzige von elf
+Gleichungen noch mit Punkt eingeleitet war. Nicht geaendert ist Anhang A,
+dessen 15 Gleichungen alle mit Punkt eingeleitet sind, weil dort viele der
+vorangehenden Saetze die Gleichung nicht einleiten, sondern einen Gedanken
+abschliessen, etwa mit Zitat oder Zahlenergebnis. Eine Einzelpruefung von
+Anhang A ist eine offene Aufgabe ausserhalb der Kommentare. Kapitel 4
+enthaelt keine abgesetzte Gleichung, Anhang B und D ebenfalls nicht.
+Die Regel lautet jetzt: Ein Satz, der eine abgesetzte Gleichung einleitet,
+endet auf einen Doppelpunkt. Das ist durch Stilregel 16 gedeckt.
+tools/pruefe_stil.py meldet jeden Doppelpunkt weiter als Altbefund, die
+Meldung ist seit dem 14.09.2026 gegenstandslos.
+
+**Kommentar 11, Expertenblick auf 3.2.3.** Der Betreuer fragt zur
+Ueberschrift "Abbildung der Maerkte": "Hat ein Experte darueber geschaut? Die
+Punkte unten sind fuer ihn schwer zu bewerten." Keine Textaenderung, die
+Frage beantwortet der Verfasser dem Betreuer. Claude hat fuer die Antwort
+festgehalten: 3.2.3 traegt fuenf Datenquellen (Energy-Charts, ENTSO-E, FfE,
+Netztransparenz, Regelleistung.net), und 3.3 prueft den Referenzerloes gegen
+einen veroeffentlichten Revenue-Index.
+
+**Geprueft.** python tools/pruefen.py --alle ohne Befund in 15 Dateien.
+pruefe_stil.py in Kapitel 1 und 3 allein mit den Altbefunden zum
+Doppelpunkt. Zeilenenden CRLF unveraendert. Ersetzter Fliesstext steht je
+Stelle als Kommentar mit Datum und Kommentarnummer ueber der neuen Fassung.
+Build sauber, 129 Seiten, Biber ohne Warnung.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -4207,6 +4259,50 @@ gehalten."
 
 **Geprueft.** tools/pruefen.py chapter_1.tex ohne Befund. Kapitel 1 endet
 weiterhin auf Seite 5.
+
+### 27.09.2026, Betreuerkommentare 1 bis 3, Abschnitte 1.1 und 1.2
+
+**Kommentar 1, Beleg fuer die Wetterlagen, 1.1.** Der Betreuer zu "denn
+einzelne Wetterlagen praegen die Kosten": "Hast du hierfuer einen Beleg?" Der
+Beleg stand fuenf Absaetze frueher im selben Abschnitt: SMARD schreibt den
+Ausreisser im vierten Quartal 2024 ausdruecklich einer Windfront im Dezember
+2024 zu, Claude hat den Volltext mit tools/quellencheck.py geprueft. Jetzt:
+"Der Engpassmanagementbedarf ist ereignisabhaengig, denn einzelne
+Wetterlagen wie die Windfront im Dezember 2024 praegen die Kosten eines
+Jahres staerker als die Jahresmenge \cite{bundesnetzagentur_smard_engpassmanagement_2026}."
+Der Absatz fuehrt danach zwei verschiedene Quellen je einmal, zulaessig nach
+Stilregel 15. Zurueckgenommen: derselbe Satz ohne Beispiel und ohne Zitat.
+
+**Kommentar 2, physikalische Reserve, 1.1.** Der Betreuer: "Thermische
+Reservierung? Physikalisch ist nicht falsch." Kapitel 2.1.1 fuehrt den
+Begriff *thermische Reserve* zwischen PATL und TATL, Stilregel 14 verlangt
+Konstanz. Jetzt "eine thermische Reserve ungenutzt bleibt" und im Folgesatz
+"Die ungenutzte thermische Reserve ist der Ansatzpunkt der kurativen
+Systemfuehrung." Das Adjektiv im zweiten Satz ist eine eigenstaendige
+Ergaenzung von Claude, damit "die ungenutzte Reserve" nicht als eigener
+Begriff neben der thermischen Reserve steht. Zurueckgenommen: "eine
+physikalische Reserve ungenutzt bleibt" und "Die ungenutzte Reserve ist der
+Ansatzpunkt der kurativen Systemfuehrung."
+
+**Kommentar 3, Mechanismus existiert noch nicht, 1.2.** Der Betreuer zu "Der
+UeNB gibt die Randbedingungen vor": "Unklar, ob der Mechanismus schon
+existiert. Mit Blick nach vorn formulieren." Jetzt: "Einen solchen
+Mechanismus gibt es heute nicht: Die Idee ist, dass der \ac{UeNB} die
+Randbedingungen fuer den Einsatz vorgibt und die kurative Vorhaltung in
+einem marktlichen Verfahren beschafft, dem kurativen Marktmechanismus." und
+"Die kurative Reservierung ist das Produkt, das der \ac{UeNB} im kurativen
+Marktmechanismus ausschreiben, bezuschlagen und verguetet soll."
+Zurueckgenommen: "Der \ac{UeNB} gibt die Randbedingungen vor, die er fuer
+den Einsatz braucht, und beschafft die kurative Vorhaltung in einem
+marktlichen Verfahren, dem kurativen Marktmechanismus." und "..., das der
+\ac{UeNB} im kurativen Marktmechanismus ausschreibt, bezuschlagt und
+verguetet." Die uebrigen Saetze des Absatzes standen bereits im
+Aufgabenmodus (auszugestalten sind, ist zu bestimmen, zu pruefen ist) und
+sind unveraendert. Gemeldet, nicht geaendert: Der Absatz hat neun Saetze, die
+Grenze von acht Saetzen ist seit dem 27.09.2026 aufgehoben.
+
+**Geprueft.** python tools/pruefen.py chapter_1.tex ohne Befund nach jeder
+der drei Aenderungen.
 
 ## chapter_2.tex
 
@@ -12682,6 +12778,99 @@ Ablaufabbildung zu 3.2 und die Bisektionsabbildung zu 3.3. Ob umgestellt wird,
 entscheidet der Verfasser, denn die Umstellung kann den gerade behobenen Abstand
 bei der Bisektionsabbildung wieder aufreissen.
 
+### 27.09.2026, Betreuerkommentare 4 und 6 bis 12, Abschnitte 3.1 und 3.2
+
+**Kommentar 4, Kern der Arbeit, 3.1 Einleitung.** Der Betreuer zu "Aus den
+Befunden des Kapitels 2 folgen Anforderungen": "Klarstellen, dass dies der
+Kern der Arbeit ist und es um eigene, moegliche Anpassungen geht, die so noch
+nicht umgesetzt werden. Ein Satz reicht." Vier Fassungen bis zur Freigabe.
+Der Verfasser hat nachgesteuert: mehr Fokus auf "noch nicht ausgearbeitet
+und in den Projekten noch nicht umgesetzt"; KuPilot nicht nennen, sondern
+allgemein Pilotprojekte; die Anforderungen beziehen sich primaer auf die
+Umsetzung eines Marktes; ohne Doppelpunkt, ein zusammenhaengender Satz.
+Eingefuegt nach dem ersten Satz: "Katalog und Produkt sind der Kern der
+Arbeit, denn sie zielen als eigene Vorschlaege auf die marktliche
+Beschaffung der Vorhaltung, die bisher weder ausgearbeitet noch in den
+Pilotprojekten umgesetzt ist." Der Relativsatz haengt an *Beschaffung*, nicht
+an den Vorschlaegen, denn die kurative Systemfuehrung selbst wird in den
+Pilotprojekten erprobt, die marktliche Beschaffung nicht. Zurueckgenommen,
+nicht wieder aufnehmen: "Katalog und Produkt sind der Kern der Arbeit: Sie
+sind eigene Vorschlaege, die so heute nicht umgesetzt sind."; "..., die
+bisher weder ausgearbeitet noch in InnoSys 2030 oder KuPilot umgesetzt
+sind."; "Katalog und Produkt sind der Kern der Arbeit: Sie zielen auf die
+marktliche Beschaffung der Vorhaltung und sind eigene Vorschlaege, die
+bisher weder ausgearbeitet noch in den Pilotprojekten umgesetzt sind."
+Zur Wendung "der Arbeit": Sie ist keine der beiden nach Stilregel 5
+gesperrten Wendungen (*die vorliegende Arbeit*, *diese Arbeit*), Claude hat
+das dem Verfasser gemeldet, der Verfasser hat die Fassung freigegeben.
+
+**Kommentar 5, Lokationalitaet, 3.1.1 A3.** Siehe uebergreifende
+Entscheidungen vom 27.09.2026. Jetzt "A3 -- Standortabhaengigkeit".
+
+**Kommentar 6, weniger absolut, 3.1.2.** Der Betreuer zu "Die kurative
+Reservierung uebernimmt": "Weniger absolut formulieren. Oder am Anfang des
+Unterkapitels klarstellen, dass es sich um deine Vorschlaege und Annahmen
+handelt." Die Klarstellung am Anfang steht seit Kommentar 4 in 3.1 und gilt
+fuer den ganzen Abschnitt. Zusaetzlich der eine Satz: "Die kurative
+Reservierung soll deshalb die drei Klassen aus InnoSys~2030 uebernehmen,
+..." Zurueckgenommen: "Die kurative Reservierung uebernimmt deshalb die drei
+Klassen aus InnoSys~2030, ..." Entschieden: Die uebrigen Saetze von 3.1.2
+bleiben im Indikativ, weil ein Produktentwurf mit *soll* in jedem Satz
+schwer lesbar ist und der Vorbehalt in 3.1 den Abschnitt traegt.
+
+**Kommentar 7, Abruf endet frueher, 3.1.2.** Der Betreuer: "Umdrehen: Sobald
+der UeNB den Engpass behoben hat, KANN der Abruf frueher beendet werden."
+Jetzt: "Sobald der \ac{UeNB} den Engpass mit anderen Mitteln behoben hat,
+kann der Abruf frueher enden." Zurueckgenommen: "Der Abruf endet frueher,
+sobald der \ac{UeNB} den Engpass mit anderen Mitteln behoben hat."
+Gemeldet, nicht geaendert: Der Absatz beginnt mit dem Ende des Abrufs, der
+vorige Absatz handelt aber von Wind-, Photovoltaikanlagen und Kraftwerken,
+der Abruf selbst steht zwei Absaetze frueher. Eine Anknuepfung ist
+angeboten, nicht beauftragt.
+
+**Kommentar 8, welche Untersuchung, 3.1.2 Poenale.** Der Betreuer zu
+"bestimmt die Untersuchung": "Welches? Das in deiner MA beschriebene?"
+Jetzt: "Hoehe und Form der Sanktion bleiben im Produktentwurf offen, weil
+das Optimierungsmodell die daraus folgende Risikopraemie nicht abbildet."
+Zurueckgenommen: "Hoehe und Form der Sanktion bestimmt die Untersuchung
+nicht, weil das Modell die daraus folgende Risikopraemie nicht traegt."
+*Abbildet* statt *traegt* ist eine eigenstaendige Aenderung von Claude, ein
+Modell bildet eine Groesse ab. *Die Untersuchung* kommt in Kapitel 3 nicht
+mehr vor.
+
+**Kommentar 9, Modell und Modellannahmen, 3.2.2.** Der Betreuer zu
+"Innerhalb dieser Grenzen wird eine einzelne Anlage abgebildet":
+"Ausdruecklich darauf hinweisen, dass es sich um ein Modell und
+Modellannahmen handelt." Jetzt zwei Saetze: "Innerhalb der in
+Abschnitt~\ref{sec:model_assumptions} gesetzten Grenzen bildet das
+Optimierungsmodell eine einzelne Anlage ab. Die Kenngroessen der Anlage sind
+Modellannahmen und keine Daten einer bestehenden Anlage." Zugleich ist das
+Pronomen *dieser Grenzen* ueber die Absatzgrenze aufgeloest (Stilregel 5).
+Der Absatz waechst von drei auf vier Saetze und erreicht das Minimum aus
+Stilregel 1. Zurueckgenommen: "Innerhalb dieser Grenzen wird eine einzelne
+Anlage abgebildet."
+
+**Kommentar 10, Doppelpunkt vor der Zielfunktion, 3.2.2.** Siehe
+uebergreifende Entscheidungen vom 27.09.2026. Alle sieben Gleichungen in
+Kapitel 3 werden mit Doppelpunkt eingeleitet: Zielfunktion, Erloese von DA,
+IDC, FCR, aFRR-Leistung, aFRR-Arbeit und kurativer Reservierung.
+
+**Kommentar 11, Expertenblick, 3.2.3.** Keine Textaenderung, siehe
+uebergreifende Entscheidungen.
+
+**Kommentar 12, Fuellgrad, 3.2.4.** Der Betreuer zu "Der Fuellgrad einer
+Stunde und Richtung": "Passt der Satz? Es klingt, als fehle etwas." Die
+Ellipse "der reservierten an der hoechstmoeglichen Leistung" ist
+ausgeschrieben. Jetzt: "Der Fuellgrad einer Stunde und Richtung ist der
+Anteil der reservierten Leistung an der Leistung, die in dieser Stunde und
+Richtung hoechstens reservierbar ist." Die Bezugsgroesse heisst wie in der
+Bildunterschrift zu Abbildung fig:fuellgrad_tagesstunden in Kapitel 4
+*reservierbare Leistung*. Zurueckgenommen: "Der Fuellgrad einer Stunde und
+Richtung ist der Anteil der reservierten an der hoechstmoeglichen Leistung."
+
+**Geprueft.** python tools/pruefen.py chapter_3.tex ohne Befund nach jeder
+Aenderung, --alle ohne Befund in 15 Dateien am Ende des Durchgangs.
+
 ## chapter_4.tex
 
 ### 18.09.2026, neue Sortierung des Kapitels, Geruest mit Stichpunkten
@@ -16952,6 +17141,14 @@ Netzsicherheitsrechnung als Teil des Modells.
 LaTeX-Warnung, 128 Seiten, Literaturverzeichnis ab Seite 81, Hauptteil 80
 Seiten.
 
+### 27.09.2026, Standortabhaengigkeit statt Lokationalitaet, 5.1
+
+Eine Stelle, Betreuerkommentar 5 zu Kapitel 3, siehe uebergreifende
+Entscheidungen vom 27.09.2026. Jetzt: "Die Standortabhaengigkeit knuepft
+daran an, denn ohne knotenscharfe Gebote und Wirksamkeit am Netzknoten kann
+der \ac{UeNB} keine kurative Massnahme einplanen." Zurueckgenommen nur das
+Wort *Lokationalitaet*. pruefen.py ohne Befund.
+
 ## chapter_6.tex
 
 ### 26.09.2026 nachts, Kapitel 6 geschrieben, zwoelf Absaetze
@@ -17076,6 +17273,14 @@ der Netzausbau wirkt. Die Nachfrage steht als vierte Groesse im ersten Satz.
 Die drei Treiber der Nachfrage sind eine eigene Konkretisierung, dem
 Verfasser gemeldet. Ausblick 22 Saetze, unter einer Seite; 128 Seiten,
 Literaturverzeichnis ab Seite 81.
+
+### 27.09.2026, Standortabhaengigkeit statt Lokationalitaet, 6.1
+
+Zwei Stellen, Betreuerkommentar 5 zu Kapitel 3, siehe uebergreifende
+Entscheidungen vom 27.09.2026: in der Aufzaehlung der acht Anforderungen und
+im Satz zur Praequalifikation ("folgt aus Diskriminierungsfreiheit und
+Standortabhaengigkeit"). Zurueckgenommen nur das Wort *Lokationalitaet*.
+pruefen.py ohne Befund.
 
 ## abstract.tex, Kurzfassung und Abstract
 
@@ -17280,6 +17485,13 @@ erkennbar waere.
 **Stand.** Pruefsuite ohne Befund. Build fehlerfrei, 82 Seiten, Anhang B ab
 Seite 70. Im Inhaltsverzeichnis traegt er anders als Anhang A keine Abschnitte.
 
+
+### 27.09.2026, Doppelpunkt vor der Zielfunktion
+
+Betreuerkommentar 10 zu Kapitel 3, siehe uebergreifende Entscheidungen vom
+27.09.2026. Der Satz vor der Zielfunktion, Zeile 133, endet jetzt auf einen
+Doppelpunkt wie die zehn uebrigen Gleichungen des Anhangs. Auf Vorschlag von
+Claude, vom Verfasser freigegeben. pruefen.py ohne Befund.
 
 ## attachment.tex, Anhang zum modifizierten Weber-Ansatz
 
