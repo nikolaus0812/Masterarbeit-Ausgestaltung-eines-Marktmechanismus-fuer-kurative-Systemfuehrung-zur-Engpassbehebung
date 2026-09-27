@@ -17063,6 +17063,20 @@ dem Ausblick ersetzt, damit erledigt).
 **Stand.** Kapitel 6 ab Seite 77, Literaturverzeichnis ab Seite 81, Hauptteil
 80 Seiten. `pruefen.py` ohne Befund, `pruefe_stil.py` 0.
 
+### 27.09.2026, Ausblick um das Szenario steigender Nachfrage ergaenzt
+
+Vorgabe des Verfassers: auch der Bedarf an Energie steigt, und der Netzausbau
+bleibt erneut zurueck, sodass die kurative Systemfuehrung solche Zeitraeume
+bis zur Wirkung des Ausbaus ueberbrueckt. Drei Saetze nach dem Szenario des
+aufholenden Netzausbaus: Steigt der Bedarf an Energie durch Waermepumpen,
+Elektrofahrzeuge und Elektrolyse, so bleibt der Netzausbau erneut hinter der
+Nachfrage zurueck; die Engpaesse kehren an anderer Stelle wieder; die
+kurative Systemfuehrung ueberbrueckt in jedem dieser Schuebe die Jahre, bis
+der Netzausbau wirkt. Die Nachfrage steht als vierte Groesse im ersten Satz.
+Die drei Treiber der Nachfrage sind eine eigene Konkretisierung, dem
+Verfasser gemeldet. Ausblick 22 Saetze, unter einer Seite; 128 Seiten,
+Literaturverzeichnis ab Seite 81.
+
 ## abstract.tex, Kurzfassung und Abstract
 
 ### 27.09.2026, Kurzfassung und Abstract geschrieben, je eine Seite
