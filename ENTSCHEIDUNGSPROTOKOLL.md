@@ -2960,6 +2960,18 @@ Kurzfassung 407 Woerter auf Seite iii, Abstract 457 auf Seite iv, beide
 Schlusssaetze auf ihrer Seite, `pruefen.py --alle` ohne Befund, keine
 LaTeX-Warnung, 129 Seiten.
 
+### 27.09.2026, die Grenze von acht Saetzen je Absatz ist aufgehoben
+
+**Entscheidung des Verfassers**, Wortlaut: "stoppe erstmal den Stilregel mit
+den 8 Saetzen pro Absatz. das ist Quatsch." Anlass war das Zusammenlegen von
+5.1 A2 und A3, fuer das die Grenze eine Halbierung beider Absaetze verlangt
+haette. Es gilt weiter Stilregel 1, eine Kernaussage je Absatz; die Laenge
+folgt der Kernaussage. Die Angabe vier bis acht Saetze in CLAUDE.md und die
+Vorgabe vom 25.09.2026, acht sei Ziel und Obergrenze, sind ueberholt.
+`tools/absatzlaengen.py` bleibt als Auskunft, seine Meldungen sind kein
+Befund mehr. Die Satzlaenge nach Stilregel 17 ist unberuehrt. CLAUDE.md
+zieht der Verfasser selbst nach.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -16637,6 +16649,92 @@ es ein.
 
 **Zurueckgenommen, nicht wieder aufzunehmen:** die Fassung mit finden im
 Gegenzug leichter Anschluss an das Netz.
+
+### 27.09.2026, Durchgang des Verfassers durch Einleitung und 5.1
+
+**Kapiteleinleitung, vier Saetze auf Vorgabe des Verfassers.** Satz 3: fuer
+jede Anforderung wird geprueft, wie das Produkt sie einloest und woran die
+Ausgestaltung der jeweiligen Produkteigenschaft haengt; Festlegung vermieden,
+weil das Wort die Festlegung der BNetzA meint. Satz 4: gezeigt wird, wo die
+Annahmen der Modellierung das Ergebnis tragen und wie sie sich im Preis
+widerspiegeln; ob die Annahmen ausreichen war dem Verfasser zu schwach, und
+Annahmen stand zweimal. Satz 6 in drei Runden: gesondert behandelt, dann die
+Technologie der BESS eingehend diskutiert, denn mit ihrem Bestand wachsen das
+Potenzial der kurativen Systemfuehrung und ihre Bedeutung im
+Engpassmanagement; eingehend statt tiefgreifender, Stilregel 7. Satz 8:
+leisten kann statt leistet.
+
+**5.1 A1.** Kreis der Technologien, deren Teilnahme ein Potenzial fuer die
+kurative Systemfuehrung traegt, statt die teilnehmen sollen. Schlusssatz
+speziell fuer Speicher und Erzeugungsanlagen mit Umrichter, nicht fuer alle
+erneuerbaren Anlagen.
+
+**5.1 A2.** Das Wort Bemessungsgegenstand faellt im Fliesstext von Kapitel 5
+auf Vorgabe des Verfassers; der Name der Anforderung bleibt in 3.1.1 und in
+Kapitel 6. Satz 1 nennt nur noch die Anforderung, weil sein zweiter Teil dem
+Schluss in Satz 4 vorgriff; der Absatz laeuft Anforderung, Begruendung,
+Antwort. Satz 4: die kurative Reservierung verguetet damit die vorgehaltene
+Leistung, und ihren Preis nennt der Akteur im Gebot.
+
+**5.1 A2 und A3 zusammengelegt, Vorgabe des Verfassers**, nach Aufhebung der
+Acht-Saetze-Grenze ohne Kuerzung: sechzehn Saetze, eine Kernaussage, naemlich
+Verguetung der Vorhaltung und gesonderte Verguetung des Abrufs. Zwei
+Woerter geaendert: Denkbar waere auch, und Risikoaufschlag, den er fuer
+angemessen haelt, statt den er nach oben abschaetzte. Ein vom Verfasser
+verworfener Vorschlag, den Absatz auf acht Saetze zu halbieren, ist nicht
+gesetzt.
+
+**Stand.** 5.1 elf Absaetze. `pruefen.py` ohne Befund, `pruefe_stil.py`
+ohne Verstoss in Kapitel 5, Literaturverzeichnis weiter ab Seite 82, keine
+LaTeX-Warnung, 129 Seiten. Der Durchgang laeuft weiter.
+
+### 27.09.2026, Durchgang des Verfassers durch 5.1, Absaetze A3 bis A9
+
+**5.1 A2, Fortsetzung.** Die Saetze zum Regime des Redispatch und zur
+einheitlichen Regelung sind verbunden, das Indifferenzprinzip faellt hier
+und bleibt in 5.3: die einheitliche Regelung ist die eigentliche Begruendung.
+Der Schlusssatz zum Indifferenzprinzip ist gestrichen, weil er mit dem
+Regime des Redispatch doppelt war. Vierzehn Saetze.
+
+**5.1 A3 Diskriminierungsfreiheit und Lokationalitaet, neu gefasst,
+Vorgabe des Verfassers.** Der Absatz wiederholte die Praequalifikation aus
+Kapitel 3. Die Anforderung ist hier aus einem Grund von Belang: die Arbeit
+bemisst alles an einem BESS, und das Produkt koennte auf Speicher
+geschnitten wirken. Der Absatz sagt jetzt, dass es auf Eigenschaften
+geschnitten ist, naemlich Reaktionszeit, Richtung der Leistungsaenderung und
+Wirksamkeit am Netzknoten. Sechs statt acht Saetze.
+
+**5.1 A4 Teilnahme.** Die Lage der Ausschreibung und ihr Grund in einem
+Satz: der UENB bestimmt den Bedarf erst im pRD2 auf dem DACF am Abend des
+Vortages, Begriffe nach chapter_2.tex Zeile 1682 bis 1691. Die Zuschlaege
+kommen so, dass alle Viertelstunden des Liefertages am IDC noch handelbar
+sind. Gestrichen: die kurative Reservierung erweitere den Spielraum des
+Akteurs, und die Verdraengung folge dieser Abwaegung. Der Satz zum Anbieten
+der Stunden ist angebunden, der Rest des frueheren Folgeabsatzes ab der
+Wirksamkeit am Engpass bleibt ein eigener Absatz A5.
+
+**5.1 A6.** Der Absatz zum Knappheitsaufschlag ist an den Absatz zu Anspruch
+und Aufschlaegen angebunden, sechzehn Saetze.
+
+**5.1 A8 Verbindlichkeit, zusammengezogen und gekuerzt.** Der
+Poenale-Absatz wiederholte Kapitel 3, der Nachweis-Absatz gehoert dazu.
+Neun Saetze statt sechzehn: fehlender Massstab, Spanne des Schadens,
+Haftung, Abstufung, dann der Nachweis vor dem Fehlerfall. Zurueckgenommen:
+die Poenale sichere die Lieferfaehigkeit im Fehlerfall, die Ueberlastung
+koenne das Betriebsmittel beschaedigen, der Betreiber muesse nachweisen,
+keine Verwaltungsaufgabe daneben.
+
+**5.1 A9 Zwischenfazit.** Satz 1 nennt, dass die Umsetzbarkeit in
+Abschnitt 5.5 gesondert diskutiert wird; Satz 2 beginnt mit Insgesamt; die
+beiden Je-desto-Saetze sind verbunden; der Schluss sagt, dass die
+Sicherheit des Netzbetriebs unter allen Abwaegungen den Vorrang behaelt und
+erst darunter die Wirtschaftlichkeit zaehlt, in zwei Saetzen nach einer
+laengeren Zwischenfassung.
+
+**Stand.** 5.1 neun Absaetze. `pruefen.py` ohne Befund, `pruefe_stil.py`
+ohne Verstoss in Kapitel 5, keine LaTeX-Warnung, Literaturverzeichnis
+weiter ab Seite 82, 129 Seiten; die Kuerzungen in 5.1 summieren sich auf
+rund fuenfzehn Zeilen.
 
 ## chapter_6.tex
 
