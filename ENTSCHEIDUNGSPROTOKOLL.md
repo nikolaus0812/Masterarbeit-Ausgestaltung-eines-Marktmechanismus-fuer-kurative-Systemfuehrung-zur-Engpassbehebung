@@ -18725,6 +18725,49 @@ bleibt nach CLAUDE.md Abschnitt 5 unveraendert.
 **Geprueft.** tools/pruefen.py --alle allein mit dem Altbefund in chapter_5.tex,
 Biber ohne Warnung, Build ohne Fehler, 95 Seiten.
 
+### 27.09.2026, Literaturverzeichnis vereinheitlicht
+
+Vorgabe des Verfassers: einheitlich zitieren, alle Angaben fuer alle Quellen,
+die Links sahen wild aus. Massnahmen:
+
+- Darstellung: die gesperrten URL-Zeilen kamen von den dehnbaren Abstaenden,
+  die biblatex an den Umbruchstellen in URLs setzt. In extras/header.tex
+  stehen biburlbigskip, biburlnumskip, biburlucskip und biburllcskip jetzt
+  auf 0mu (Mu-Skips, Zuweisung statt setlength), die Umbruchstrafen von
+  9000 aus dem 21.09.2026 bleiben.
+- 66 Zotero-Dateipfade (file-Felder) aus allen Eintraegen entfernt.
+- sous_untersuchung_2022: war article ohne Zeitschrift, jetzt inproceedings,
+  17. Symposium Energieinnovation, Graz, mit Link auf das Paper bei der
+  TU Graz.
+- bundesnetzagentur_faq_2025: online mit URL der BNetzA-Seite Stromspeicher.
+- ffe_saegezahn_2026: Autoren Wasmeier, Kern, Ganz, Mahgoub, Datum
+  21.01.2026, URL der FfE-Publikationsseite (nur die englische Seite
+  erreichbar, die deutsche liefert 404).
+- consentec_systembooster_2026: Titel aus dem PDF (Beschaffung von
+  Netzbooster-Kapazitaeten als Systemdienstleistung: Machbarkeit eines
+  Systemboosters), Kurzgutachten im Auftrag der Amprion GmbH, URL bei
+  Amprion.
+- Anlage 1, Anlage 5 und Weber-Gutachten mit der URL der Festlegung, Weber
+  mit Note Anlage 2 zur Festlegung.
+- iec_60076_7_2018: doppelte Nummer bereinigt (type Norm, number IEC 60076-7,
+  Edition 2.0), shorttitle entfernt.
+- Abrufdatum 27.09.2026 nachgetragen bei BDEW, Festlegung, InnoSys,
+  Praequalifikationsbedingungen; InnoSys-Institution u.a. zu und weitere.
+- Lange Dateilinks durch Seiten der Herausgeber ersetzt: Consentec/Ecologic
+  (consentec.de, mit type Studie im Auftrag der vier deutschen UENB) und
+  Grenzwertkonzept (netztransparenz.de, Planung und Betrieb des deutschen
+  Uebertragungsnetzes).
+- Rystad-Autor ohne Zusatz, Burger-Note gekuerzt, Hirth-Institution mit
+  Semikolon und Hornek-Organization geklammert, weil biblatex das englische
+  and als Listentrenner las.
+- Alle geaenderten und neuen URLs am 27.09.2026 mit HTTP 200 geprueft.
+
+Ohne URL bleiben die IAEW-Gutachten fuer 50Hertz, CIGRE, Hull, Leeuwen und
+Mahgoub. Build ohne Fehler und Warnung, biber ohne Warnung, pruefen.py --alle
+ohne Befund. Commit nur fuer literature.bib und header.tex; dieser Eintrag
+ist nicht gestaged, weil das Protokoll zugleich ungesicherte Aenderungen einer
+anderen Sitzung traegt, und wird mit deren Commit uebernommen.
+
 ## Offene Punkte, Stand 08.09.2026
 
 1. Einträge der Quellenprüfung vom 07.09.2026. Diese Fassung enthält sie nicht.
