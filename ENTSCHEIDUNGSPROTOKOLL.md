@@ -2972,6 +2972,23 @@ Vorgabe vom 25.09.2026, acht sei Ziel und Obergrenze, sind ueberholt.
 Befund mehr. Die Satzlaenge nach Stilregel 17 ist unberuehrt. CLAUDE.md
 zieht der Verfasser selbst nach.
 
+### 27.09.2026, Windstromerzeugung im Winter in 1.1, neuer Eintrag Burger
+
+Vorgabe des Verfassers: die Aussage, dass die Windstromerzeugung im Winter
+hoeher liegt, an einer weiteren Stelle ohne eigene Auswertung; gewaehlt ist
+1.1 Absatz 3 hinter dem Satz zur Wetterlage, als Antwort auf den
+Betreuerkommentar B12 (welche Ereignisabhaengigkeit, E 27). Neuer Satz:
+"Solche Wetterlagen haeufen sich im Winter, denn die Windstromerzeugung lag im
+Jahr 2025 von November bis Februar bei 52,9 TWh und von Mai bis August bei
+34,8 TWh", Quelle burger_stromerzeugung_2026 (Burger, Fraunhofer ISE,
+Stromerzeugung in Deutschland im Jahr 2025, 28.08.2026, Folie 54 mit den
+Monatswerten in GWh: 15.383, 9.315, 8.455, 6.963, 9.605, 10.377, 7.442,
+7.382, 11.525, 16.528, 12.418, 15.773). Kapitel 1 bleibt bei fuenf Seiten,
+Kapitel 2 beginnt weiter auf Seite 6. Der Eintrag energy_charts_stromerzeugung_2026
+und der Ordner analysen/wind_monate sind wieder entfernt, ihre Auswertung
+hatte dieselben Werte geliefert. Ein beim Ersetzen uebrig gebliebenes
+Klammerzeichen in der bib ist bereinigt, biber ohne Warnung.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -16810,6 +16827,131 @@ beim Durchgang geprueft.
 **Stand.** `pruefen.py` ohne Befund, `pruefe_stil.py` 0 in Kapitel 5,
 keine LaTeX-Warnung, 129 Seiten, Literaturverzeichnis ab Seite 82.
 
+### 27.09.2026, Durchgang des Verfassers durch 5.2 bis 5.5, zweiter Teil
+
+**5.2 Nachtraege.** Grenzpreis: den Grenzpreis des letzten Zuschlags erreicht
+ein Akteur nur mit einer optimalen Gebotsstrategie, sein Zuschlagspreis liegt
+in der Regel darunter (statt: schoepft nicht aus). Die Absaetze zu FCR und
+aFRR-Leistung und zur aFRR-Arbeit sind zu einem Absatz verbunden, die Aussage
+zum marktdurchschnittlichen Bietverhalten steht nur noch am Schluss und nennt
+aFRR-Leistung und aFRR-Arbeit; die 16 Prozent stehen im Absatz nur einmal;
+gestrichen: Der gemittelte Zuschlagspreis unterstellt ein
+marktdurchschnittliches Bietverhalten und ist deshalb die belastbare Annahme.
+Preiskenntnis, Satz 2 vorsichtiger: die Annahme soll eine Unterschaetzung
+durch zusaetzliche Vereinfachungen einer gestaffelten Optimierung verhindern;
+auf den IDC nicht uebertragbar, weil der ID1 ihn eher unterschaetzt.
+Zurueckgenommen: Fuer die Spotmaerkte schliesst die vollstaendige
+Preiskenntnis eine Unterschaetzung der Opportunitaet aus. IDC-Absatz mit der
+Abbildung eingeleitet (ID1 je Viertelstunde, nur Arbitrage zwischen
+Viertelstunden, chapter_3.tex Zeile 266 bis 274), dann der Faktor als
+Sensitivitaet.
+
+**5.3 Vergleichspreis.** Der Absatz zur Unsicherheit des Vergleichs ist neu
+sortiert, die Saetze bauen aufeinander auf, der Satz zum mittleren
+Arbeitspreis steht am Ende und fuehrt den Begriff *praeventiver
+Vergleichspreis* ein. Die beiden spaeteren Stellen (Tagesmittel fast das
+ganze Jahr darunter; auch im Sommer darunter) nennen den praeventiven
+Vergleichspreis statt Arbeitspreis. Kapitel 4 behaelt Arbeitspreis des
+praeventiven Redispatch, der Einfuehrungssatz verbindet beide Bezeichnungen.
+
+**5.3 Wind und Photovoltaik.** Die Ruecknahme der Einspeisung ist eine
+Reservierung in negativer Richtung und entspricht der Ladereservierung eines
+Speichers; bei Abruf entgehen allein die Erloese der fehlenden Einspeisung.
+Ergaenzt nach Vorgabe: das Risiko des Wetterumschwungs begrenzt sich selbst,
+weil die Einspeisung aus Wind und Photovoltaik den Engpass meist erst
+verursacht; liefert die Anlage weniger, faellt auch der Engpass kleiner aus;
+fuer die Planbarkeit nachteilig, ohne Engpass keine Massnahme noetig; der
+eingeplante Speicher im Verbund ist gleichwohl zu verguten. Das "meist" ist
+unbelegt und bleibt zurueckhaltend.
+
+**5.3 Jahresverlauf, Windstrom im Winter.** Vorgabe: die hoehere
+Windstromerzeugung im Winter ist zu belegen. Zuerst als eigene Auswertung der
+Energy-Charts-API (analysen/wind_monate, Eintrag
+energy_charts_stromerzeugung_2026) gesetzt: 2025 gesamt 131,2 TWh, November
+bis Februar 52,9 TWh, Mai bis August 34,8 TWh, Verhaeltnis 1,52. Dann auf
+Vorgabe des Verfassers ohne eigene Auswertung: dieselben Monatswerte stehen
+auf Folie 54 des Berichts Burger, Fraunhofer ISE, Stromerzeugung in
+Deutschland im Jahr 2025 (28.08.2026), neuer Eintrag
+burger_stromerzeugung_2026. Ordner und der erste Eintrag sind wieder
+entfernt. In 5.3 steht jetzt: von November bis Februar um die Haelfte ueber
+Mai bis August, mit dieser Quelle; die Zahlen stehen in 1.1 (siehe
+uebergreifend). SMARD-Jahresrueckblick, BNetzA-Pressemitteilung und
+Monitoringbericht nennen keine Monatswerte.
+
+**5.3 Schluss.** Die beiden letzten Absaetze (Zuschnitt des Produkts; Markt
+als Beschaffungsweg, Preis und Aufwand) zu einem Absatz mit zwoelf, nach
+Kuerzung elf Saetzen. Reihenfolge: Zuschnitt liegt beim UENB, Ausschreibung
+je Stunde mit anschliessenden Stunden (verbunden), Preis darunter, Energie,
+Haeufigkeit der Einplanung, Markt gegen kostenbasierte Verguetung, Nutzen am
+Aufwand, Verhaeltnis, Erfolg beim UENB. Gestrichen als trivial: der Satz zum
+einheitlichen Tagespreis, der die teuren Stunden frei liesse.
+
+**5.4.** Einbindung in den praeventiven Redispatch ueber die Grenzen des
+modifizierten Weber-Ansatzes begruendet (jede Viertelstunde fuer sich,
+Kopplung ueber den Ladezustand bei ein bis zwei Stunden Energieinhalt je
+Leistung, Verweis auf sec:weber_limits). Zurueckgenommen: eine
+kostenbasierte Verguetung muesste den Werteverbrauch und die Opportunitaet je
+Massnahme bemessen. Der Satz zum Leistungsband haengt am Satz zur
+Einbindung, die Rueckmeldung schliesst den Absatz. Zukunftsvariante: der
+Aufschlag faellt absolut und steigt relativ, weil die Bezugsanlage in DA und
+FCR ausweicht, deren Preise der Abschlag nicht trifft; erst mit den Zahlen
+aus Kapitel 4 gesetzt, auf Vorgabe wieder ohne Zahlen. Schluss neu: ein
+Betreiber sucht ohnehin nach jeder Erloesquelle, ein Markt am Engpass
+eroeffnet neue Betriebsstrategien, die dem UENB helfen und Erloese sichern.
+Zurueckgenommen: Lukrativ ist der kurative Marktmechanismus dabei nur fuer
+beide Seiten zugleich.
+
+**5.5 Rahmen.** Nebensatz zum geringen Energieinhalt gestrichen. Kurative
+Massnahmen und damit die Verguetung der vorgehaltenen Leistung setzen gerade
+bei den Technologien des kuenftigen Stromsystems an (statt: greift an der
+praegenden Groesse an; Halbsatz zu den Regelleistungsmaerkten gestrichen).
+Zurueckgenommen als zu hart: Ausgeschlossen ist dagegen, eine solche
+Verguetung in das Duldungsregime des Redispatch einzufuegen; und: Die
+geltende Festlegung waehlt zwischen Werteverbrauch und Opportunitaet, statt
+beide zu addieren. Jetzt: auch der Redispatch laesst sich um eine Komponente
+fuer die vorgehaltene Leistung erweitern und mit dem kurativen
+Marktmechanismus vereinbaren oder sogar vereinen, wie in 5.4 am Beispiel der
+BESS skizziert; eine solche Komponente muesste die Bindungsdauer und nicht
+die einzelne Massnahme verguten, wofuer die Festlegung keine Struktur
+vorsieht.
+
+**5.5 Betrieb.** Absatz mit These neu gefasst: die Voraussetzungen der
+Umsetzung liegen im Betrieb. Ueberwachung und Steuerbarkeit sind Voraussetzung
+und damit Huerde (statt: kommen von selbst zugute). Saetze zur Abloesung
+verbunden, bestimmte zu bestimmt. Mein Vorschlag, die betrieblichen
+Voraussetzungen wogen schwerer als der Rahmen der Verguetung, ist auf
+Vorgabe zurueckgenommen; jetzt: komplex, aber in InnoSys 2030 und im
+Pilotbetrieb von KuPilot bereits erarbeitet, sodass sich die Loesbarkeit
+abzeichnet. Die Nachlaufpflicht stand kurz hier und ist auf Rueckfrage des
+Verfassers nach 5.1 A2 verschoben, hinter den Satz zum Gegenstand der
+Abrufverguetung: sie haelt ein BESS nach dem Abruf davon ab, in die
+verschaerfende Richtung zurueckzukehren, und laesst sich in der Reservierung
+am Vortag beruecksichtigen.
+
+**5.5 Reihenfolge.** Rahmen, Markt, Uebergangsloesungen (Netzanschluss,
+Vorgabe fuer den Betrieb, Gebotszonensplit), Betrieb, Forschungsbedarf,
+Ausrollung. Der Absatz zur systemweiten Ausrollung schliesst den Abschnitt
+und damit Kapitel 5 ab, Vorgabe des Verfassers. Der Abschnittstitel nennt die
+Reihenfolge Umsetzung, Ausrollung, Forschungsbedarf und ist nicht geaendert,
+dem Verfasser gemeldet.
+
+**5.5 Forschungsbedarf.** Neu sortiert nach Markt, Preis, Betrieb, System.
+Gestrichen: die zusaetzlich anschliessbare Speicherleistung als offene Frage
+(hier und im Uebergangsabsatz: Wie viel Speicherleistung ein Netz mit
+kurativer Reservierung zusaetzlich aufnimmt, bleibt offen), fuer die
+kurative Systemfuehrung nicht von Belang. Statt Bietverhalten unter
+Unsicherheit: zu pruefen ist, wie viele Anbieter ein Netzknoten braucht,
+damit der Markt wettbewerblich und liquide ist. Die systemweite Aussage
+verlangt eine Modellkette an einem Datensatz der Netzentwicklungsplanung,
+naemlich Marktsimulation mit Reservierung kurativer Leistung, Lastflussrechnung
+darauf, Redispatchplanung mit den eingeplanten kurativen Massnahmen; am
+Ergebnis wird das Produkt wirtschaftlich bewertet. Zurueckgenommen:
+Netzsicherheitsrechnung als Teil des Modells.
+
+**Stand.** `pruefen.py` ohne Befund, `pruefe_stil.py` 0 in Kapitel 5, keine
+LaTeX-Warnung, 128 Seiten, Literaturverzeichnis ab Seite 81, Hauptteil 80
+Seiten.
+
 ## chapter_6.tex
 
 ### 26.09.2026 nachts, Kapitel 6 geschrieben, zwoelf Absaetze
@@ -16875,6 +17017,51 @@ zehn Absaetze und rund 66 Saetze. Der Verfasser liest zuerst Kapitel 5 und
 **Stand.** `pruefen.py --alle` ohne Befund, `pruefe_stil.py` ohne Verstoss
 in Kapitel 6, alle Absaetze bei acht Saetzen, keine LaTeX-Warnung, Biber
 ohne Warnung, 129 Seiten.
+
+### 27.09.2026, Kapitel 6 ohne Unterabschnitte, Ausblick neu
+
+**Struktur.** Die Ueberschriften 6.1 Zusammenfassung und 6.2 Ausblick sind
+auskommentiert, Vorgabe des Verfassers: ein Kapitel ohne Unterabschnitte. Auf
+die Marken sec:summary und sec:outlook verwies nichts.
+
+**Einstiege.** Kein "Die n-te Erkenntnis lautet" mehr: Zuerst laesst sich
+...; Der Zuschnitt folgt zweitens ...; Der kurative Reservierungspreis ist
+drittens ...; Viertens muessen BESS ...; Die kurative Systemfuehrung braucht
+schliesslich ...
+
+**Grenzen-Absatz gestrichen** ("Diese fuenf Erkenntnisse stehen unter den
+Grenzen der Untersuchung ..."), Vorgabe des Verfassers: die Grenzen stehen in
+5.2, die Erkenntnisse gehen direkt in den Ausblick ueber. Ein Satz aus dem
+Kern haengt am Ende der dritten Erkenntnis: der ermittelte Preis ist der
+opportunitaetskostenbasierte Teil eines Gebots, ueber den ein Gebot um
+Aufwand, Risiko und Knappheit hinausgeht (CLAUDE.md Entscheidung 5).
+
+**Ausblick neu geschrieben**, ein Absatz mit 19 Saetzen statt vier Absaetzen
+(Rahmen, Betrieb, Forschungsbedarf, Schluss), die als zweite Zusammenfassung
+wirkten. Aufbau: der Bedarf haengt an Netzausbau, Marktdesign und
+Anlagenbestand; Szenarien: Netzausbau bleibt zurueck (Ausrollung noetig,
+BESS-Bestand als Potenzial), Netzausbau holt auf (Effizienzmassnahme, Preis
+gegen praeventiven Vergleichspreis), Markt bildet Kapazitaet ab, etwa
+Gebotszonensplit (Teil des Bedarfs entfaellt, Preis neu zu bewerten);
+Anbieter: Saettigung der Regelleistung (Preis sinkt, Angebot waechst),
+Anschlussregeln begrenzen (Potenzial ungenutzt); unabhaengig davon drei
+Dinge: Verguetung der vorgehaltenen Leistung neben Paragraph 13a mit
+getrennter Verguetung und Nachweis, redundante Wirkungskette mit Erfahrung
+aus den Pilotprojekten, Modellkette am NEP-Datensatz; Schluss: Produkt und
+Massstab, ueber die kurative Systemfuehrung entscheidet der Rahmen und der
+Bedarf. Die Szenarien sind eigenstaendige Formulierungen nach der Vorgabe
+"paar Szenarien aufmachen, wann noetig und wann weniger noetig", noch nicht
+vom Verfasser gelesen.
+
+**Offen, dem Verfasser gemeldet.** Fuenf Stellen in den Erkenntnissen stehen
+noch gegen die heutigen Aenderungen in Kapitel 5: Tagespreis-Satz in K2,
+Arbeitspreis statt praeventiver Vergleichspreis in K3, Begruendung der
+Nichteinbindung in K4, Duldungsregime in K5, sowie Netzsicherheitsrechnung,
+Bietverhalten und Speicherleistung im alten Forschungsabsatz (dieser ist mit
+dem Ausblick ersetzt, damit erledigt).
+
+**Stand.** Kapitel 6 ab Seite 77, Literaturverzeichnis ab Seite 81, Hauptteil
+80 Seiten. `pruefen.py` ohne Befund, `pruefe_stil.py` 0.
 
 ## abstract.tex, Kurzfassung und Abstract
 
