@@ -2918,6 +2918,48 @@ mengengewichtete Durchschnitt treffe den Wert, den ein Anbieter im Mittel
 erziele. Die Sensitivitaet mit dem Grenzpreis in 4.6.1 misst, wie weit die
 Annahme traegt, naemlich 16 Prozent im Median und das Viereinhalbfache im
 Maximum.
+### 27.09.2026, Verguetung der vorgehaltenen Leistung neben Paragraf 13a, nicht als dessen Erweiterung
+
+**Anlass, Frage des Verfassers.** Warum speziell Paragraf 13a und nicht das
+Engpassmanagement im Allgemeinen? Die Arbeit verortet die Verguetung des
+Engpassmanagements durchgaengig in Paragraf 13a, der Norm fuer die
+angeordnete Anpassung und ihren Ausgleich; Kapitel 2 zitiert fuer den
+Redispatch allein diesen Paragrafen. 5.5 A1 argumentiert, die Verguetung der
+Vorhaltung passe nicht in dieses Duldungsregime, weil der Ausgleich am
+vorgenommenen Eingriff anknuepft und die kurative Reservierung den Fahrplan
+vorab einschraenkt.
+
+**Befund.** Passt die Verguetung nicht in das Duldungsregime, ist
+Erweiterung des Paragrafen 13a der falsche Schluss, denn er schriebe sie in
+die Norm, deren Regime als unpassend erklaert ist. Die Arbeit traegt: das
+Engpassmanagement braucht eine Verguetung der vorgehaltenen Leistung neben
+dem Ausgleich nach Paragraf 13a. Ob der Gesetzgeber sie als Absatz in
+Paragraf 13a, als eigenen Paragrafen oder in einer Festlegung regelt,
+entscheidet die Arbeit nicht. Der Paragraf bleibt als Anker im Satz.
+
+**Gesetzt, vier Stellen gleichlautend, Vorgabe des Verfassers.** 5.5 A1
+Satz 8: setzt deshalb eine Verguetung der vorgehaltenen Leistung im
+Engpassmanagement voraus, die neben dem Ausgleich nach Paragraf 13a EnWG
+steht. 6.1 K5 Satz 3: sodass sie neben den Ausgleich nach Paragraf 13a EnWG
+treten muss. 6.2 Absatz 1 Satz 2: Das Engpassmanagement ist um eine
+Verguetung der vorgehaltenen Leistung neben dem Ausgleich nach Paragraf 13a
+EnWG zu erweitern. Kurzfassung: Dafuer ist das Engpassmanagement um eine
+Verguetung der vorgehaltenen Leistung neben Paragraf 13a EnWG zu erweitern;
+Abstract: extending congestion management by a remuneration of reserved
+capacity alongside Section 13a. Alter Wortlaut in den Kapiteldateien als
+Kommentar, fuer abstract.tex hier: Dafuer ist Paragraf 13a EnWG um eine
+Verguetung der vorgehaltenen Leistung zu erweitern.
+
+**Zurueckgenommen, nicht wieder aufzunehmen:** Erweiterung des Paragrafen
+13a EnWG als Formulierung des Rahmens, in allen vier Stellen.
+
+**Abstract gestrafft.** Der laengere englische Satz brachte das Abstract um
+17 Woerter ueber die Seite; an acht Stellen Fuellwoerter gestrichen, parallel
+zur deutschen Straffung vom selben Tag, keine Aussage gefallen. Endstand
+Kurzfassung 407 Woerter auf Seite iii, Abstract 457 auf Seite iv, beide
+Schlusssaetze auf ihrer Seite, `pruefen.py --alle` ohne Befund, keine
+LaTeX-Warnung, 129 Seiten.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -16714,6 +16756,72 @@ redispatch, indifference principle.
 
 **Stand.** 129 Seiten, keine LaTeX-Warnung, Biber ohne Warnung,
 `pruefen.py --alle` ohne Befund.
+
+### 27.09.2026, Kurzfassung und Abstract, dritte Fassung nach Durchsicht des Verfassers
+
+**Absatz 2 allgemeiner, Vorgabe des Verfassers.** Das Produkt bindet bei
+jedem Akteur ein Leistungsband und bei Speichern zusaetzlich ein
+Ladezustandsband und arbeitet die Anforderungen eines sicheren Betriebs aus.
+Das Optimierungsmodell bestimmt fuer die Wirtschaftlichkeit den kleinsten
+Preis, zu dem ein Betreiber eine Stunde vollstaendig reserviert, gegen die
+Spotmaerkte Day-Ahead und Intraday und die Regelleistungsmaerkte FCR und
+aFRR. Zurueckgenommen: die Saetze zu Reaktionszeitklassen, getrennter
+Verguetung und Lage der Ausschreibung sowie der eigene Satz zum Rechenlauf.
+
+**Absatz 3.** Der Satz zum knappen Viertel ueber dem Markterloes ist auf
+Vorgabe des Verfassers gestrichen. aFRR und BESS stehen als Kurzform ueber
+\acs, weil \ac die Langform mit dem Zusatz Deutsch in Klammern ausschreibt
+und das auf Seite iii nicht hingehoert.
+
+**Absatz 4 als Kernschluesse, Vorgabe des Verfassers.** Konkurrenzfaehiger
+Preis, Einfluesse von Tages- und Jahreszeit, Einplanung haengt an der Zeit
+ebenso wie am Engpassmuster im Netz; dazu bleiben der Satz zu den BESS und
+die Erweiterung des Paragrafen 13a. Gefallen: sieben von acht Anforderungen
+und die Voraussetzung fuer den Ausbau der Speicher.
+
+**NICHT GESETZT, Widerspruch zur Vorgabe mit Fundstelle.** Der Verfasser
+formulierte einen Preis, der sich ueber dem Preis der Regelleistung
+einsortiere. Die Uebergabe vom 26.09.2026 fuehrt genau diesen Vergleich als
+in keinem Kapitel belegt, und chapter_4.tex Zeile 503 spricht dagegen: der
+mittlere Leistungspreis der aFRR in der Laderichtung liegt bei 16 Euro je
+Megawatt und Stunde, der Median der Ladereservierung bei rund 10. Der
+Speicher haelt nicht in jeder Stunde Regelleistung, deshalb liegt die
+typische Stunde unter dem Regelleistungspreis. Gesetzt ist, was die Arbeit
+traegt: der Preis folgt dem Leistungspreis der Regelleistung und bleibt im
+Tagesmittel unter den Kosten des praeventiven Redispatch. Das Englische sagt
+dasselbe.
+
+**Umfang.** Die dritte Fassung lief zunaechst um 23 Woerter ueber; behoben
+durch die Kurzformen und die Zusammenlegung von Modellsatz und Rechenlauf.
+Endstand 401 Woerter deutsch auf Seite iii, 455 englisch auf Seite iv,
+beide Schlusssaetze auf ihrer Seite, keine LaTeX-Warnung, 129 Seiten.
+
+### 27.09.2026, Schlusssatz der Kurzfassung und des Abstracts
+
+**Vorgabe des Verfassers.** Nach der Erweiterung des Paragrafen 13a soll
+stehen, dass die kurative Systemfuehrung mit BESS und erneuerbaren Anlagen
+das Netz effizienter und sicherer nutzbar macht.
+
+**Gesetzt.** Die kurative Systemfuehrung mit BESS und erneuerbaren Anlagen
+nutzt das bestehende Netz damit effizienter, ohne seine Sicherheit zu
+mindern. Englisch: Curative system operation with BESS and renewable plants
+thus uses the existing grid more efficiently without reducing its security.
+
+**Abgeschwaecht gegenueber der Vorgabe.** Sicherer ist nicht gesetzt, denn
+die Arbeit traegt es nicht: die kurative Systemfuehrung haelt das
+(N-1)-Kriterium bei hoeherer Auslastung ein, Kapitel 2 und 5.5, sie macht
+das Netz nicht sicherer als der praeventive Betrieb. Effizienter traegt
+Kapitel 6, K5, die Effizienzmassnahme.
+
+**Umfang.** Der Satz brachte die Kurzfassung um 15 Woerter ueber die Seite.
+Gestrafft an acht Stellen ohne Verlust einer Aussage, naemlich der
+Betriebsmittel im Grenzwertsatz, marktlicher vor Akteure, des Akteurs bei
+der Reaktionsfaehigkeit, kurative bei der Vorhaltung in der
+Fahrplanbildung, beobachteten bei den Preisen, das Mittel verdoppeln statt
+auf das Doppelte heben, das doppelte im Tagesmittel in Absatz 4, kurativer
+Massnahmen bei der Einplanung. Endstand 404 Woerter deutsch auf Seite iii,
+474 englisch auf Seite iv, beide Schlusssaetze auf ihrer Seite, keine
+LaTeX-Warnung, 129 Seiten.
 
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
