@@ -16662,6 +16662,59 @@ zehn Absaetze und rund 66 Saetze. Der Verfasser liest zuerst Kapitel 5 und
 in Kapitel 6, alle Absaetze bei acht Saetzen, keine LaTeX-Warnung, Biber
 ohne Warnung, 129 Seiten.
 
+## abstract.tex, Kurzfassung und Abstract
+
+### 27.09.2026, Kurzfassung und Abstract geschrieben, je eine Seite
+
+**Vorgabe des Verfassers.** Beide hart auf eine Seite begrenzt, deutsch und
+englisch, nicht zu viel Dopplung mit der Einleitung. Der erste Absatz folgt
+seinem Diktat vom 27.09.2026: das Engpassmanagement haelt das
+(N-1)-Kriterium praeventiv mit einer Sicherheitsmarge unter dem dauerhaft
+zulaessigen Grenzwert ein, kurativ nutzt die voruebergehend zulaessige
+Ueberlast, die Verguetung kurativ eingeplanter Akteure ist nicht
+ausgearbeitet, eine kurative Massnahme braucht Reaktionsfaehigkeit statt
+Energie, erneuerbare Anlagen und Speicher werden im Redispatch gesondert
+oder noch nicht verguetet, eine marktliche Beschaffung laesst die Akteure
+ihre Opportunitaeten selbst beziffern. Drei seiner Woerter sind durch die
+Begriffe der Arbeit ersetzt: Dauerstrombelastbarkeit durch dauerhaft
+zulaessiger Grenzwert, Ausfallvariantenrechnung durch Netzsicherheitsrechnung
+und Ausfallvariante, transiente Ueberlastfaehigkeit durch voruebergehend
+zulaessige Ueberlast; keines der drei kommt in den Kapiteln vor.
+
+**Drei Entscheidungen des Verfassers.** Zahlen ja, vier ohne
+Nachkommastellen, naemlich Median rund zwoelf und zehn Euro je Megawatt und
+Stunde, Arbeitspreis des praeventiven Redispatch rund 100 Euro je
+Megawattstunde, Winter rund zwei Fuenftel guenstiger, Zahlung ein knappes
+Viertel ueber dem Markterloes. Der Titel wird in Absatz 2 gespiegelt: die
+Arbeit gestaltet einen Marktmechanismus fuer die kurative Systemfuehrung aus,
+naemlich die kurative Reservierung als Produkt und den kurativen
+Reservierungspreis als Massstab. aFRR als Akronym ueber \ac, die Langform
+erscheint damit einmal in der Kurzfassung.
+
+**Aufbau.** Vier Absaetze, in beiden Sprachen gleich: Problem und Luecke,
+Entwurf und Methode, Ergebnisse, Schluss mit K1, K4 und K5 aus Kapitel 6.
+Die Einleitung wird nicht nachgeerzaehlt; das geografische Missverhaeltnis
+und der Aufbau der Arbeit fehlen bewusst. Keine Zitate.
+
+**Kuerzung auf eine Seite.** Die erste Fassung lief um 77 beziehungsweise
+55 Woerter ueber. Gefallen sind der Satz zur Abloesung in Absatz 1, das
+Tagesmuster in Absatz 3 zugunsten des Wintervergleichs, der Halbsatz zur
+Zukunftsvariante und mehrere Begruendungsglieder, die die Kapitel tragen.
+Der Wortlaut vor der Kuerzung liegt nicht als Kommentar in der Datei, weil
+die Texte in \newcommand-Makros stehen und ein Kommentar in das Makro fiele;
+er steht in der Git-Historie des Commits nach 74761bc. Endstand 393 und 425
+Woerter, beide Schlusssaetze auf ihrer Seite, das Inhaltsverzeichnis beginnt
+auf der Folgeseite.
+
+**Englische Begriffe, verbindlich fuer weitere englische Texte.** curative
+system operation, curative reservation, curative reservation price, curative
+provision, congestion management, redispatch, commitment period, energy
+reserved per activation, aFRR capacity price, energy price of preventive
+redispatch, indifference principle.
+
+**Stand.** 129 Seiten, keine LaTeX-Warnung, Biber ohne Warnung,
+`pruefen.py --alle` ohne Befund.
+
 ## attachment_modell.tex, Vollstaendige Formulierung des Optimierungsproblems
 
 ### 13.09.2026, Anhang angelegt

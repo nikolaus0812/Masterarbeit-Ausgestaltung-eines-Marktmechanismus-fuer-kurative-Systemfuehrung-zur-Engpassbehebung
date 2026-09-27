@@ -4,13 +4,73 @@
 
 %% This file contains the abstract for your thesis in both versions, german and english. The correct order will be set depending on your language you have choosen in the personal settings file.
 
+% ===============================================================
+% GESCHRIEBEN am 27.09.2026. Beide Fassungen sind hart auf eine Seite
+% begrenzt, gleich gebaut in vier Absaetzen: Problem und Luecke,
+% Entwurf und Methode, Ergebnisse mit vier Zahlen, Schluss. Absatz 1
+% folgt der Vorgabe des Verfassers vom 27.09.2026 in den Woertern der
+% Arbeit: dauerhaft zulaessiger Grenzwert statt Dauerstrombelastbarkeit,
+% Netzsicherheitsrechnung und Ausfallvariante statt
+% Ausfallvariantenrechnung, voruebergehend zulaessige Ueberlast statt
+% transiente Ueberlastfaehigkeit. Entscheidungen des Verfassers: Zahlen
+% ja, ohne Nachkommastellen; der Titel wird in Absatz 2 gespiegelt;
+% aFRR als Akronym. Keine Zitate, keine Dopplung der Einleitung, die
+% das geografische Missverhaeltnis und den Aufbau traegt.
+% Englische Begriffe: curative system operation, curative reservation,
+% curative reservation price, curative provision, congestion management,
+% redispatch, commitment period, energy reserved per activation, aFRR
+% capacity price, energy price of preventive redispatch.
+% ===============================================================
+
 %% English abstact
 \newcommand{\varAbstractEnglish}
 {\chapter*{Abstract}
+Congestion management in the German transmission grid keeps the (N-1) criterion mainly by preventive means, since the security assessment checks every contingency against the permanently admissible limit of each asset and keeps a safety margin below it with preventive redispatch.
+Curative system operation instead uses the temporarily admissible overload of the assets without violating the (N-1) criterion.
+Preventive redispatch activates energy and remunerates it on a cost basis, whereas the remuneration of market participants scheduled curatively has not been worked out yet.
+A curative measure does not always activate energy but requires the responsiveness of the participant, so the foregone revenues are hard to determine.
+Redispatch compensates renewables under its own rules, and for storage the assessment is open.
+Market-based procurement lets the participants price their costs against their own opportunities by scheduling the curative provision into their own dispatch.
+
+This thesis therefore designs a market mechanism for curative system operation, namely the curative reservation as the product and the curative reservation price as its measure.
+The product commits a power band and a state-of-charge band per hour, remunerates provision and activation separately, and is tendered in three response-time classes after the balancing markets.
+The price is the lowest amount at which an operator reserves an hour completely.
+An optimisation model of a battery energy storage system (BESS) operating in balancing and spot markets determines the price for every hour with the observed prices of 2025.
+
+The capacity price of automatic frequency restoration reserve (aFRR) sets the price level.
+The typical hour costs a median of about twelve euros per megawatt and hour for discharging and ten for charging, while a few hours with wide intraday spreads double the mean.
+In winter, reservation costs about two fifths less than in summer.
+On a daily average the price stays below the energy price of preventive redispatch of about 100 euros per megawatt hour for almost the whole year, and the largest demand in winter meets the cheapest reservation.
+Under complete commitment the transmission system operator pays just under a quarter more than the storage would have earned on the markets.
+
+Curative provision can thus be procured as a market product that meets seven of eight requirements.
+BESS belong in congestion management, and curative system operation fits their technology, since it demands fast power for a short interval rather than energy over the duration of the congestion.
+This requires extending Section 13a of the German Energy Industry Act by a remuneration of reserved capacity, and curative system operation becomes a prerequisite for the expansion of storage.
 }
 %% German abstract
 \newcommand{\varAbstractGerman}
 {\chapter*{Kurzfassung}
+Das Engpassmanagement im deutschen Übertragungsnetz hält das \mbox{(N-1)-Kriterium} vor allem präventiv ein, denn die Netzsicherheitsrechnung prüft jede Ausfallvariante gegen den dauerhaft zulässigen Grenzwert der Betriebsmittel und wahrt darunter eine Sicherheitsmarge mit präventivem Redispatch.
+Die kurative Systemführung nutzt dagegen die vorübergehend zulässige Überlast der Betriebsmittel, ohne das \mbox{(N-1)-Kriterium} zu verletzen.
+Der präventive Redispatch ruft Energie ab und vergütet sie kostenbasiert, während die Vergütung kurativ eingeplanter marktlicher Akteure noch nicht ausgearbeitet ist.
+Eine kurative Maßnahme ruft nicht immer Energie ab, sondern braucht die Reaktionsfähigkeit des Akteurs, sodass sich die entgangenen Erlöse schwer bestimmen lassen.
+Erneuerbare Anlagen entschädigt der Redispatch nach eigenen Regeln, und für Speicher ist die Bemessung offen.
+Eine marktliche Beschaffung lässt die Akteure ihre Kosten gegen ihre Opportunitäten selbst beziffern, indem sie die kurative Vorhaltung in ihre Fahrplanbildung einplanen.
+
+Die Arbeit gestaltet dafür einen Marktmechanismus für die kurative Systemführung aus, nämlich die kurative Reservierung als Produkt und den kurativen Reservierungspreis als Maßstab.
+Das Produkt bindet je Stunde ein Leistungs- und ein Ladezustandsband, vergütet Vorhaltung und Abruf getrennt und wird in drei Reaktionszeitklassen hinter der Regelleistung ausgeschrieben.
+Der Preis ist der kleinste Betrag, zu dem ein Betreiber eine Stunde vollständig reserviert.
+Ein Optimierungsmodell des Betriebs eines \ac{BESS} an Regelleistung und Spotmärkten bestimmt den Preis für jede Stunde mit den beobachteten Preisen des Jahres 2025.
+
+Der Leistungspreis der \ac{aFRR} trägt das Preisniveau.
+Die typische Stunde kostet im Median rund zwölf Euro je Megawatt und Stunde entladend und zehn ladend, während wenige Stunden mit hohen Intradayspannen das Mittel auf das Doppelte heben.
+Im Winter kostet die Reservierung rund zwei Fünftel weniger als im Sommer.
+Im Tagesmittel bleibt der Preis fast das ganze Jahr unter dem Arbeitspreis des präventiven Redispatch von rund 100 Euro je Megawattstunde, und der größte Bedarf im Winter trifft die günstigste Reservierung.
+Unter vollständiger Bindung zahlt der Übertragungsnetzbetreiber ein knappes Viertel mehr, als der Speicher am Markt verdient hätte.
+
+Die kurative Vorhaltung lässt sich damit als Marktprodukt beschaffen, das sieben von acht Anforderungen erfüllt.
+\ac{BESS} gehören in das Engpassmanagement, und die kurative Systemführung passt zu ihrer Technologie, denn sie verlangt schnelle Leistung für ein kurzes Intervall statt Energie über die Dauer des Engpasses.
+Dafür ist §\,13a \ac{EnWG} um eine Vergütung der vorgehaltenen Leistung zu erweitern, und die kurative Systemführung wird zu einer Voraussetzung für den Ausbau der Speicher.
 }
 % Include abstracts depending on chosen language
 \ifthenelse{\equal{\varLanguage}{german}}
