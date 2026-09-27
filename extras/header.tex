@@ -227,6 +227,12 @@ afterskip=.25\baselineskip]{subsubsection}
 \setcounter{biburlnumpenalty}{9000}
 \setcounter{biburlucpenalty}{9000}
 \setcounter{biburllcpenalty}{9000}
+% URL-ABSTAENDE am 27.09.2026: die dehnbaren Abstaende an den Umbruchstellen in URLs auf null,
+% damit die Zeilen des Literaturverzeichnisses nicht gesperrt erscheinen; Umbruch bleibt erlaubt.
+\biburlbigskip=0mu\relax
+\biburlnumskip=0mu\relax
+\biburlucskip=0mu\relax
+\biburllcskip=0mu\relax
 % Set the abstract field to null to prevent errors caused by invalid symbols in the abstract
 \DeclareSourcemap{
 	\maps[datatype=bibtex]{
