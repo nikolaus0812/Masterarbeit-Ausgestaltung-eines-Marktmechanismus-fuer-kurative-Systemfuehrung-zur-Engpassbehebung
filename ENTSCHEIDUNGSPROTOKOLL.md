@@ -3041,6 +3041,21 @@ Doppelpunkt. Zeilenenden CRLF unveraendert. Ersetzter Fliesstext steht je
 Stelle als Kommentar mit Datum und Kommentarnummer ueber der neuen Fassung.
 Build sauber, 129 Seiten, Biber ohne Warnung.
 
+### 27.09.2026, Markdown-Dateien aufgeraeumt
+
+Vorgabe des Verfassers: die md-Dateien aufraeumen. HANDOFF.md ist neu
+geschrieben (Stand 27.09.2026: Kapitelseiten, Hauptteil 81 Seiten bei Ziel
+80, Entscheidungen des Tages, Dateiuebersicht, Arbeitstechnik, offene
+Punkte), die Fassung vom 26.09.2026 liegt als archiv/HANDOFF_2026-09-26.md.
+Nach archiv/ verschoben, weil erledigt: AUFTRAG_KAPITEL_5.md (Lesekarte,
+Kapitel 5 geschrieben), AUSBLICK.md (Sammeldatei fuer 6.2, mit
+Abschlussvermerk: Punkt 1 im Forschungsbedarf und in der Modellkette
+aufgegangen, Punkte 2 und 3 nicht aufgenommen, weil der Ausblick auf Vorgabe
+allgemeiner ist) und BEFUNDE_KAP5.md (geschlossenes Register B1 bis B35).
+Im Wurzelverzeichnis bleiben CLAUDE.md, HANDOFF.md, WORKFLOW.md,
+ENTSCHEIDUNGSPROTOKOLL.md und README.md. CLAUDE.md ist nicht geaendert,
+die noetigen Nachzuege stehen in HANDOFF.md Abschnitt 5 Punkt 4.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -17281,6 +17296,84 @@ Entscheidungen vom 27.09.2026: in der Aufzaehlung der acht Anforderungen und
 im Satz zur Praequalifikation ("folgt aus Diskriminierungsfreiheit und
 Standortabhaengigkeit"). Zurueckgenommen nur das Wort *Lokationalitaet*.
 pruefen.py ohne Befund.
+
+### 28.09.2026, Durchgang des Verfassers durch Kapitel 6
+
+**Einleitung.** Satz 2: die kurative Systemfuehrung laesst hoehere Grenzwerte
+fuer die Betriebsmittel zu (statt: laesst das Netz davor hoeher auslasten).
+Vier statt fuenf Erkenntnisse.
+
+**Erste Erkenntnis, mit der frueheren zweiten zusammengefuehrt**, Vorgabe des
+Verfassers: der Zuschnitt folgt aus den Anforderungen und betrifft das
+Produkt. Reihenfolge: Produkt (Leistungs- und Ladezustandsband), Verguetung
+gilt in erster Linie der Vorhaltung (statt: Vorhaltung und nicht der
+Eingriff), Abruf gesondert, Poenale und Nachweis der Verfuegbarkeit machen
+die Zusage bindend, sodass die angebotene Leistung zum Zeitpunkt der
+Einplanung sichergestellt ist (Begriff Verfuegbarkeit nach der Entscheidung
+vom 26.09.2026, der Verfasser hatte Lieferfaehigkeit gesagt, gemeldet);
+Zuschnitt aus den Anforderungen: Reaktionszeitklassen, Ausschreibung je
+Stunde hinter der Regelleistung, Energie beim UENB, schlanke knotenscharfe
+Praequalifikation, je schaerfer desto kleiner der Kreis, so hoch wie noetig;
+dann: die acht Anforderungen sind fuer die Pruefung des Produkts aufgestellt
+und im Entwurf einloesbar, im Detail noch genau zu bestimmen, etwa Hoehe der
+Poenale oder Verfahren des Nachweises (Beispiele eigene Konkretisierung).
+Gestrichen: die Aufzaehlung sieben von acht mit der Umsetzbarkeit als
+achter; der Tagespreis-Satz (in 5.3 als trivial gestrichen); der Halbsatz,
+die Verguetung folge aus dem Bemessungsgegenstand. Fuenfzehn Saetze.
+
+**Zweite Erkenntnis (frueher dritte).** Einstieg um die Spotmaerkte
+erweitert: Preis gegen die Regelleistung im Niveau und gegen die Spotmaerkte
+in der Spitze. Schluss des Redispatch-Absatzes: ob sich die Vorhaltung
+lohnt, entscheidet das Verhaeltnis des Einsparpotenzials zum Aufwand fuer
+Umsetzung und Einbindung in die Systemfuehrung; dieses Verhaeltnis hat der
+UENB zu bewerten, der Nutzen kann auch in der Systemsicherheit liegen.
+Zurueckgenommen: im Verhaeltnis von Preis und Aufwand der Systemfuehrung,
+und beides bestimmt der UENB mit. Offen: dort steht zweimal Arbeitspreis
+statt praeventiver Vergleichspreis.
+
+**Dritte Erkenntnis (frueher vierte).** Einstieg: BESS muessen in das
+Engpassmanagement eintreten, denn ihre kurative Einbindung dient nicht
+allein der Hoeherauslastung, sondern loest ein Sicherheitsproblem. Die
+Begruendung der Nichteinbindung ist an 5.4 angeglichen (modifizierter
+Weber-Ansatz bewertet jede Viertelstunde fuer sich, Kopplung ueber den
+Ladezustand). Die zwei Hinsichten: holt die Leistungsaenderungen des
+Speichers in die Betriebsplanung und macht die Technologie netzdienlich
+nutzbar. Zurueckgenommen: der Weg, der zu ihrer Technologie passt (Satz 6
+sagt es); kostenbasierte Verguetung trifft Werteverbrauch und Opportunitaet
+nicht.
+
+**Vierte Erkenntnis (frueher fuenfte).** Einstieg mit Wertung: abschliessend
+braucht das Netz die kurative Systemfuehrung fuer einen effizienten und
+sicheren Betrieb, dafuer einen eigenen Rahmen. Gestrichen als mehrfach
+gesagt: Verguetung neben der Arbeit, Duldungsregime, einmaliger Fahrplan
+(damit ist die letzte Stelle mit dem Duldungsregime weg). Nach dem Diktat
+des Verfassers erklaert der Absatz den Weg von der Sicherheits- zur
+Effizienzmassnahme: anfangs Reaktionsfaehigkeit als kurzfristiges
+Redispatchpotenzial, keine Grenzwertverletzungen, Sicherheit an wenigen
+Netzknoten; mit Netzausbau sinkende Belastung und weniger Probleme der
+Kurzfristigkeit; ein eingespielter Markt nutzt die Kapazitaet planmaessig,
+die Reservierung ergaenzt den Redispatch als Effizienzmassnahme, profitiert
+von der Etablierung, Effizienz und Preiseinfluss lassen sich genauer
+bestimmen. Zurueckgenommen: wird systemweit aus der Sicherheits- eine
+Effizienzmassnahme (im Einstieg); eine Zwischenfassung mit vier Saetzen
+(einzelne Betriebsmittel, N-1 bei hoeherer Auslastung, Kapazitaet verteilt
+sich, erst dann Effizienz).
+
+**Ausblick, Schluss.** Ueberleitung: in jedem Szenario kann sich die
+Vorhaltung lohnen, doch ueber den Markt hinaus ist noch einiges zu schaffen
+(statt: unabhaengig vom Szenario sind drei Dinge zu schaffen); die drei
+Voraussetzungen bleiben; Schluss: vieles ist zeitnah auszuarbeiten, in
+Projekten und in der Planung der systemweiten Ausrollung, doch Entwurf und
+Preis zeigen, dass Potenzial und Anwendungen fuer das Trendjahr des NEP
+vorhanden sind. Zurueckgenommen, nicht wieder aufzunehmen: Die kurative
+Reservierung ist dafuer das Produkt, und der kurative Reservierungspreis ist
+der Massstab ihrer Beschaffung; Ueber die kurative Systemfuehrung
+entscheidet damit nicht der Preis, sondern der Rahmen und der Bedarf, den
+Netz und Markt in den naechsten Jahren uebrig lassen.
+
+**Stand.** Kapitel 6 Seite 78 bis 81, Literaturverzeichnis ab 82, 130
+Seiten, Hauptteil 81 Seiten. `pruefen.py` ohne Befund, `pruefe_stil.py` 0,
+keine LaTeX-Warnung.
 
 ## abstract.tex, Kurzfassung und Abstract
 

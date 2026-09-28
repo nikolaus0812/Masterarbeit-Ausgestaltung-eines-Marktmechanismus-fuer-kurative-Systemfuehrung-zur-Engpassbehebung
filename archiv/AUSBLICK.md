@@ -1,5 +1,13 @@
 # Für den Ausblick vorgemerkt
 
+> **Abgeschlossen am 27.09.2026.** Kapitel 6 ist geschrieben, der Ausblick steht
+> auf Vorgabe des Verfassers als ein Absatz mit Szenarien und ohne die
+> Einzelpunkte dieser Datei. Punkt 1 (Wirksamkeit je Netzknoten) ist im
+> Forschungsbedarf von 5.5 und in der Modellkette des Ausblicks aufgegangen.
+> Punkt 2 (Rolling-Intrinsic-Bewertung) und Punkt 3 (Handelsstrategie am IDC)
+> sind nicht aufgenommen; 5.2 sagt, dass der Einfluss des mehrfachen Handels
+> ohne Orderbuecher offen bleibt. Datei nach archiv/ verschoben.
+
 **Angelegt am 25.09.2026.** Der Verfasser sammelt hier, was in den Ausblick
 gehört, also in Abschnitt 6.2 von `chapters/chapter_6.tex`. Jeder Eintrag
 nennt, woher er stammt und warum er nicht im laufenden Text steht.
