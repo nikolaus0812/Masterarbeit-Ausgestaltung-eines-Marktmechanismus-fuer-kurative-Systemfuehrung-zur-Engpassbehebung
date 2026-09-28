@@ -3077,6 +3077,72 @@ Kapiteldatei erhalten, sondern allein hier im Protokoll festgehalten.
 CLAUDE.md Abschnitt 10 nennt noch die Kommentarregel, der Verfasser zieht
 selbst nach.
 
+### 28.09.2026, Durchgang Kapitel 4 bis 6: Platzierung, Dopplungen, Zuordenbarkeit
+
+Auftrag des Verfassers vor der Korrekturschleife mit den Betreuern: Satz fuer
+Satz pruefen, ob Aussagen falsch platziert, gedoppelt oder schwer zuzuordnen
+sind, kategorisieren, nach Gewicht sortieren. Befunde A1 bis A6, B1 bis B7,
+C1 bis C10; A1 bis A4 einzeln freigegeben, der Rest auf die Vorgabe "setze
+alles um". Keine Kommentare mehr in den Dateien, alte Fassungen hier:
+
+- A1 Drei Wege vereinheitlicht: 5.5 A3 und Kapitel 6 K4 nennen jetzt wie 5.4
+  A2 flexible Netzanschlussvereinbarung, Vorgabe fuer den Betrieb und
+  Sicherheitsmarge (alt: Begrenzung am Netzanschluss, Vorgabe, Gebotszonensplit).
+- A2 Weg von der Sicherheits- zur Effizienzmassnahme: zwei Saetze nach 5.5 A6
+  gespiegelt (Reaktionsfaehigkeit als kurzfristiges Redispatchpotenzial;
+  eingespielter Markt, Etablierung, Effizienz und Preiseinfluss genauer
+  bestimmbar), Kapitel 6 K4 von sechs auf drei Saetze, im Ausblick der Satz
+  "Die kurative Massnahme sichert dann weniger den Betrieb, sondern nutzt die
+  ausgebaute Kapazitaet planmaessig aus" gestrichen.
+- A3 gestrichen in 5.5 A2: Zu vermeiden ist allein ein strategisches
+  Bietverhalten, denn es treibt die Kosten der Vorhaltung.
+- A4 K4: eigener Rahmen benannt (Verguetung der vorgehaltenen Leistung neben
+  Paragraph 13a); Ausblick: "um diese Verguetung zu erweitern".
+- A5 5.5 A1 Schluss: neben oder innerhalb des Ausgleichs nach Paragraph 13a
+  (alt: die neben dem Ausgleich steht). Kapitel 6 und Kurzfassung sagen
+  weiter "neben".
+- A6 Kapitel 4, 4.2: "Dass gerade die teuren Stunden offen bleiben, erklaert
+  die Verschiebung des Handels" (alt: Die Ursache liegt in der Verschiebung);
+  der Satz zu den Preisen der zweiten Iteration steht vor dem Rechenaufwand,
+  beide Aufwandssaetze zu einem.
+- B1 5.1 A7: spaete Lage der Ausschreibung in einem Satz; gestrichen: Ein
+  Akteur vermarktet seine Leistung zuerst in den Regelleistungsmaerkten,
+  sodass am kurativen Markt die offen gebliebenen Leistungsposten ankommen.
+- B2 5.1 A3: Satz endet nach "hebt die Huerde fuer den Einstieg".
+- B3 5.3 A2: gestrichen "Die Ladereservierung ist mittags teuer und bildet
+  von Maerz bis Oktober ein zusammenhaengendes Band, waehrend die
+  Entladereservierung am Vormittag und am Abend teuer ist" (steht in 4.4 und
+  Kapitel 6); Kapitel 6 K2: "Abgeregelte Photovoltaik mit einem entladenden
+  BESS bleibt dort dennoch guenstig".
+- B4 und C1 Kapitel 6 K2: ein Satz "Gegen den praeventiven Vergleichspreis
+  gehalten, bleibt der kurative Reservierungspreis im Tagesmittel fast das
+  ganze Jahr darunter, auch wenn der Vergleich eine Unsicherheit traegt";
+  gestrichen der Satz zur Dimensionsgleichheit und das Wort Arbeitspreis.
+- B5 5.4 A3 gestrichen: Eine solche Auskunft ueber das Netz erhaelt ein
+  Akteur aus keinem anderen Markt.
+- B7 gestrichen: 4.6.1 "Sicher entscheiden liesse sich die Frage allein an
+  den Gebotslisten der Auktionen, die jedoch anonymisiert sind"; 5.3 A4 "Die
+  kurative Vorhaltung bleibt zwar auch im Sommer im Tagesmittel unter dem
+  praeventiven Vergleichspreis" (Folgesatz mit gleichwohl); 5.5 A6 "Die
+  kurative Systemfuehrung ergaenzt dabei das praeventive Engpassmanagement
+  und ersetzt es nicht ..."; 5.1 erster Satz "In Abschnitt 3.1 werden acht
+  Anforderungen ... abgeleitet, die hier gegen den Entwurf zu halten sind".
+- C2 5.3 A5: Nutzen aus eingespartem Redispatch und Aufwand der
+  Systemfuehrung; Verhaeltnis von Einsparpotenzial und Aufwand (alt: der
+  Nutzen haengt am Aufwand).
+- C3 Kapitel 6 K1: sieben Anforderungen einloesbar, die Umsetzbarkeit
+  entscheidet sich am Rahmen und am Betrieb.
+- C4 5.2: konkurriert nach dem Gebotsschluss der Regelleistung mit den
+  Spotmaerkten.
+- C5 5.2 Regelleistung, Satz 1: "und die Hoehe dieser Rechengroesse ist
+  gesondert zu beurteilen".
+- C6 5.2: Optimierung Markt fuer Markt (alt: gestaffelte Optimierung).
+- C7 5.3 A3: Eignungssatz vor den Standortsatz, "deshalb" statt "damit".
+- C8 5.4 A2: Annahme des Anschlussverfahrens, dass alle Anlagen zugleich mit
+  voller Leistung fahren (alt: konservative Annahmen des heutigen Verfahrens).
+- B6, C9, C10 ohne Aenderung (Begruendungen an beiden Stellen noetig; FCR in
+  2.2 belegt; Strukturverweise sind Vorgaben des Verfassers).
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
