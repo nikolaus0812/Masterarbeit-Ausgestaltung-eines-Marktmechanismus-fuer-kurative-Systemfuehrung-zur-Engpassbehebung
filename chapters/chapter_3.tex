@@ -5,8 +5,6 @@
 Die vorliegende Arbeit ergänzt das Engpassmanagement um eine Systemdienstleistung, deren Gegenstand nicht die Leistungsanpassung selbst ist, sondern die Bereitschaft dazu im Fehlerfall.
 Die Bemessung des finanziellen Ausgleichs aus dem Redispatch ist auf diese Bereitschaft nicht anwendbar, weil sie an die durchgeführte Anpassung anknüpft, wie in Abschnitt~\ref{sec:interim_conclusion} dargestellt.
 Die Vergütung der Bereitschaft ist deshalb neu zu untersuchen, und dafür eignet sich ein kurativer Marktmechanismus, weil sich der kurative Reservierungspreis gegen die Erlöse der übrigen Vermarktung messen lässt.
-% ROLLE am 21.09.2026, Vorgabe des Verfassers: Betreiber ist der wirtschaftliche Entscheider, der EIV die Rolle im operativen Betrieb. Alte Fassung:
-%In diesem Kapitel werden die Anforderungen an einen solchen Mechanismus abgeleitet, die kurative Reservierung als Produkt entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell aus der Sicht des \ac{EIV} bestimmt.
 In diesem Kapitel werden die Anforderungen an einen solchen Mechanismus abgeleitet, die kurative Reservierung als Produkt entworfen und der kurative Reservierungspreis mit einem Optimierungsmodell aus der Sicht des Betreibers bestimmt.
 Zum Abschluss wird der Referenzerlös des Modells gegen einen veröffentlichten Revenue-Index für \ac{BESS} auf Plausibilität geprüft.
 
@@ -14,7 +12,6 @@ Zum Abschluss wird der Referenzerlös des Modells gegen einen veröffentlichten 
 \label{sec:market_requirements}
 
 Aus den Befunden des Kapitels~\ref{ch:state_of_the_art} folgen Anforderungen, aus denen die kurative Reservierung als Produkt entwickelt wird.
-% 27.09.2026, Betreuerkommentar 4 (Kern der Arbeit, eigene und noch nicht umgesetzte Vorschlaege): Satz eingefuegt
 Katalog und Produkt sind der Kern der Arbeit, denn sie zielen als eigene Vorschläge auf die marktliche Beschaffung der Vorhaltung, die bisher weder ausgearbeitet noch in den Pilotprojekten umgesetzt ist.
 Der folgende Katalog überführt die Befunde in Bedingungen, die sich an einem Mechanismus prüfen lassen, und gilt für die Umsetzung einer kurativen Systemführung, deren Vorhaltung marktlich beschafft wird.
 
@@ -30,7 +27,6 @@ Der folgende Katalog überführt die Befunde in Bedingungen, die sich an einem M
     Aus einer verspäteten Leistungsänderung können Schäden am Betriebsmittel entstehen, die die Vergütung der Vorhaltung übersteigen.
     Die Sanktion darf deshalb nicht auf die entgangene Vergütung beschränkt bleiben.
     Eine Bemessung nach dem Grad der Abweichung scheidet aus, denn eine Leistungsänderung nach dem Ende des Überlastintervalls hat nicht einen verminderten, sondern gar keinen Wert.
-% 27.09.2026, Betreuerkommentar 5 (Lokationalitaet ist kein deutsches Wort, Verfasser waehlt Standortabhaengigkeit): ersetzt "\item[A3 -- Lokationalität] Die Beschaffung muss netzknotenscharf erfolgen, denn dieselbe Leistungsänderung entlastet ein Betriebsmittel je nach Netzknoten unterschiedlich stark."
     \item[A3 -- Standortabhängigkeit] Die Beschaffung muss netzknotenscharf erfolgen, denn dieselbe Leistungsänderung entlastet ein Betriebsmittel je nach Netzknoten unterschiedlich stark.
     Die Wirkung je Knoten muss der \ac{ÜNB} in seinen Vorschau- und Netzsicherheitsrechnungen mitprüfen.
     \item[A4 -- Bemessungsgegenstand] Die Vergütung muss an der vorgehaltenen Leistung und an der Bindungsdauer ansetzen, denn die kurative Bindung schränkt den Betrieb über ihre gesamte Dauer ein und nicht allein im Fehlerfall.
@@ -50,15 +46,6 @@ Der folgende Katalog überführt die Befunde in Bedingungen, die sich an einem M
     Die bezuschlagten Gebote müssen sich dafür zu einem kurativen Maßnahmenset zusammenfassen lassen, das der \ac{ÜNB} wie eine eigene kurative Maßnahme einplant und scharfschaltet.
 \end{description}
 
-% ENTFERNT am 22.09.2026, Entscheidung des Verfassers zu G1: der geparkte
-% Unterabschnitt zum Abgleich bestehender Marktdesignansaetze wandert in die
-% Diskussion in Kapitel 5. Damit sind die beiden hier verbliebenen Marken
-% ohne Ueberschrift gegenstandslos. Entfernt wurden:
-%\label{sec:market_design_comparison}
-%\label{sec:product_design}
-% Der einzige Verweis auf sec:market_design_comparison stand auskommentiert
-% in chapter_2.tex Zeile 1451 und bleibt auskommentiert.
-
 \subsection{Die kurative Reservierung}
 \label{sec:product_scope}
 \label{sec:product_parameters}
@@ -76,7 +63,6 @@ Gesperrt ist damit allein die zugesagte Leistung, während für das gebundene Ze
 
 Neben Richtung und Leistung nennt ein Gebot die Reaktionszeitklasse, für die der Akteur einsteht.
 Weil zu jeder Höhe der Überlast eine zulässige Dauer gehört, schaltet jede Reaktionszeit ein anderes Maß an Höherauslastung frei.
-% 27.09.2026, Betreuerkommentar 6 (weniger absolut, Entwurf): ersetzt "Die kurative Reservierung übernimmt deshalb die drei Klassen aus InnoSys~2030, nämlich unter zehn Sekunden, etwa zwei Minuten und bis 15 Minuten, wie in Abschnitt~\ref{sec:curative_functionality} beschrieben."
 Die kurative Reservierung soll deshalb die drei Klassen aus InnoSys~2030 übernehmen, nämlich unter zehn Sekunden, etwa zwei Minuten und bis 15 Minuten, wie in Abschnitt~\ref{sec:curative_functionality} beschrieben.
 Wer die kürzeste Klasse erfüllt, erfüllt damit auch die längeren, sodass ein schneller Akteur in jeder Klasse anbieten kann.
 Die Klassen ersparen dem \ac{ÜNB} die Rechnung mit der Reaktionszeit jeder einzelnen Anlage, und drei Stufen halten den Zugang zugleich für viele Technologien offen.
@@ -90,7 +76,6 @@ Andere Technologien wie Wind- und Photovoltaikanlagen müssen ebenso über die B
 Die zugesagte Leistung einer solchen Anlage ist dabei der Anteil der installierten Leistung, der über die Bindungsdauer mit hoher Wahrscheinlichkeit verfügbar ist.
 Kraftwerke halten das Leistungsband entsprechend in ihrer Fahrplanbildung frei, was für sie weniger kritisch ist, weil ihre Einspeisung nicht von einer Wind- oder Solarprognose abhängt.
 
-% 27.09.2026, Betreuerkommentar 7 (umdrehen, kann statt Automatismus): ersetzt "Der Abruf endet früher, sobald der \ac{ÜNB} den Engpass mit anderen Mitteln behoben hat."
 Sobald der \ac{ÜNB} den Engpass mit anderen Mitteln behoben hat, kann der Abruf früher enden.
 Nach einem Abruf ist der Akteur für den restlichen Liefertag von der Vorhaltung freigestellt.
 An die Stelle der Lieferpflicht tritt jedoch eine Nachlaufpflicht, nach der der Akteur seine Leistung nicht um die zugesagte Leistung in die den Engpass verschärfende Richtung zurückverschieben darf.
@@ -106,7 +91,6 @@ Die Pönale knüpft deshalb nicht erst an einen gescheiterten Abruf, sondern sch
 Von der Pönale befreit den Akteur allein der Nachweis, dass seine Handlungsfähigkeit an einem unvorhersehbaren Ereignis außerhalb seines Betriebs scheiterte.
 Ein solches Ereignis hat der Akteur dem \ac{ÜNB} unverzüglich zu melden, damit der \ac{ÜNB} Gegenmaßnahmen einleiten kann.
 Die Sanktion kann von einer Strafzahlung über den Entzug der Präqualifikation bis zur Übernahme der entstandenen Schäden reichen.
-% 27.09.2026, Betreuerkommentar 8 (welche Untersuchung?): ersetzt "Höhe und Form der Sanktion bestimmt die Untersuchung nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt."
 Höhe und Form der Sanktion bleiben im Produktentwurf offen, weil das Optimierungsmodell die daraus folgende Risikoprämie nicht abbildet.
 
 Ob ein Akteur die zugesagte Klasse erfüllen kann, prüft der \ac{ÜNB} vor dem ersten Gebot in der Präqualifikation, in der der Akteur die geforderte Reaktionszeit, die vorhaltbare Leistung und die Einhaltung des Ladezustandsbandes nachweist.
@@ -119,11 +103,6 @@ Wie in der Regelleistung bestätigt der Netzbetreiber, an dessen Netz die Anlage
 
 Präqualifizierte Akteure bieten in einer gemeinsamen, täglichen Ausschreibung der deutschen \ac{ÜNB} für alle 24 Stunden des Folgetages, je Stunde und Richtung mit einem eigenen Gebotspreis in \EurMWh{}.
 Die Zeitscheibe von einer Stunde ist zugleich die Bindungsdauer und entspricht der Dauer des ungünstigsten Abrufs.
-% BEGRIFF ERSETZT am 25.09.2026, Vorgabe des Verfassers:
-% Redispatchplanung heisst Planung des Engpassmanagements, weil der
-% UENB auch kurative Massnahmen plant und nicht allein Redispatch.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Den Bedarf ermitteln die \ac{ÜNB} in den Rechenläufen ihrer Redispatchplanung am Vortag, sodass er vor dem Zuschlag feststeht.
 Den Bedarf ermitteln die \ac{ÜNB} in ihren Rechenläufen zur Planung des Engpassmanagements am Vortag, sodass er vor dem Zuschlag feststeht.
 Die Mindestgröße eines Gebots beträgt 25\,\si{MW}, die eine Anlage allein oder mehrere Anlagen am selben Netzknoten zusammen erreichen.
 Anders als die Regelleistung, die Anlagen innerhalb einer Regelzone zusammenfasst, erlaubt die kurative Reservierung die Zusammenfassung nur je Netzknoten.
@@ -209,7 +188,6 @@ Dort verzehren Speicher die Spreads, indem sie Niedrigpreisphasen anheben und Ho
 \label{sec:objective_variables}
 \label{sec:storage_model}
 
-% 27.09.2026, Betreuerkommentar 9 (Modell und Modellannahmen benennen, Pronomen ueber Absatzgrenze): ersetzt "Innerhalb dieser Grenzen wird eine einzelne Anlage abgebildet.", zweiter Satz eingefuegt
 Innerhalb der in Abschnitt~\ref{sec:model_assumptions} gesetzten Grenzen bildet das Optimierungsmodell eine einzelne Anlage ab.
 Die Kenngrößen der Anlage sind Modellannahmen und keine Daten einer bestehenden Anlage.
 Die Anlage ist ein \ac{BESS} mit 100\,\si{MW} je Richtung und 250\,\si{MWh} Speicherkapazität, also einem Energieinhalt je Leistung von 2,5 Stunden.
@@ -227,7 +205,6 @@ Das Modell nimmt die Vereinfachung in Kauf, weil die Preissuche das Tagesmodell 
 Der Liefertag zerfällt in 96 Viertelstunden, und die Blockprodukte binden Zeitscheiben von einer und von vier Stunden.
 Entscheidungsvariablen sind die Leistungen an den Energiemärkten, die vorgehaltenen Leistungen der Regelleistung, die kurativ reservierte Leistung je Richtung, die gelieferte \ac{aFRR}-Arbeit mit ihrem Ausgleich am \ac{IDC} und der Ladezustand, alle stetig und nichtnegativ.
 Die Variablen stehen vollständig in Anhang~\ref{anh:modell}.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 Die Zielfunktion maximiert den Nettoerlös eines Liefertages über alle geführten Märkte abzüglich der Degradationskosten:
 \begin{equation}
     \label{eq:zielfunktion}
@@ -254,9 +231,6 @@ Jeder Markt trägt seinen eigenen Produktzuschnitt, seinen Energievorhalt und se
 Auswertungszeitraum ist das Jahr 2025.
 Weil der \ac{DA} erst seit dem 01.10.2025 in Viertelstunden gehandelt wird, gilt davor sein Stundenpreis für alle vier Viertelstunden \cite{ffe_saegezahn_2026}.
 Die beiden Tage der Zeitumstellung führt das Modell mit 96 Viertelstunden, indem es die fehlende Stunde im Frühjahr durch Platzhalter ersetzt, im Herbst die zweite Ausführung der doppelten Stunde verwirft und die betroffene Stunde in beiden Fällen sperrt.
-% ERGAENZT am 22.09.2026, Vorgabe des Verfassers: die Folge der Sperrung fuer
-% den Umfang der Auswertung gehoert hierher und nicht in die Einleitung von
-% Kapitel 4.
 Über das Jahr 2025 bleiben damit 8758 der 8760 Stunden je Richtung, für die das Modell einen Preis bestimmt.
 
 \subsubsection*{Day-Ahead}
@@ -264,7 +238,6 @@ Die Preisreihe des \ac{DA} ist der Auktionspreis der Gebotszone Deutschland und 
 Die Käufe und Verkäufe am \ac{DA} gleichen sich über den Tag energetisch aus und müssen ihre eigenen Degradationskosten decken.
 So bildet das Modell nach, dass der Betreiber am \ac{DA} bietet, bevor der Zuschlag der kurativen Reservierung feststeht, und die Reservierung den Handel dort nicht mitfinanziert.
 Ein Geschäftspaar am \ac{DA} kommt deshalb nur zustande, wenn die Preisspanne der Arbitrage die Degradationskosten in der Summe des Tages übersteigt.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 Der Erlös am \ac{DA} ist die über den Tag summierte Differenz aus Verkauf und Kauf, jeweils zum Auktionspreis der Viertelstunde:
 
 \begin{equation}
@@ -282,7 +255,6 @@ Jede zusätzliche Handelsmöglichkeit verbessert den erzielbaren Preis, sodass d
 Das Modell bildet den Vorteil des mehrfachen Handels über einen Aufschlag ab, der Verkäufe über und Käufe unter dem Index bewertet und den Spread damit weitet.
 Die Höhe des Aufschlags wird als Sensitivität variiert.
 Der Höchst- und der Niedrigstpreis einer Viertelstunde wären ein anderes Maß für den Vorteil des mehrfachen Handels, bleiben aber außer Betracht, weil sie keine Menge führen und damit offen bliebe, wie viel Leistung zu ihnen handelbar gewesen wäre.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 Der Erlös am \ac{IDC} ist die über den Tag summierte Differenz aus Verkäufen zum um den halben Aufschlag $a$ erhöhten und Käufen zum um den halben Aufschlag gesenkten \ac{ID1}:
 
 \begin{equation}
@@ -295,7 +267,6 @@ Die \ac{FCR} wird zu einem Einheitspreis bezuschlagt, und das Modell übernimmt 
 Weil die \ac{FCR} allein die Bereitschaft vergütet und keinen Arbeitspreis kennt, ist ihr Erlös der Leistungspreis mal der vorgehaltenen Leistung.
 Je vorgehaltenem Megawatt bindet die \ac{FCR} ein Ladezustandsband von einer Viertelstunde, das für den Handel nicht mehr zur Verfügung steht.
 Die \ac{FCR} ist symmetrisch und bleibt über ihre Zeitscheibe von vier Stunden konstant.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 In Gleichung~\ref{eq:erloes_fcr} bezeichnet $s(t)$ die Vier-Stunden-Zeitscheibe, in der die Viertelstunde $t$ liegt:
 
 \begin{equation}
@@ -315,7 +286,6 @@ Der höchste Zuschlag wird deshalb allein als Sensitivität geführt.
 Der Erlös der \ac{aFRR}-Leistung ist ihr Leistungspreis mal der vorgehaltenen Leistung.
 Je vorgehaltenem Megawatt bindet sie ein Ladezustandsband von einer Stunde.
 Vorgehalten wird je Richtung, und die Vorhaltung bleibt über die Vier-Stunden-Zeitscheibe konstant.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 Für die \ac{aFRR}-Leistung führt das Modell drei Sensitivitäten, nämlich ohne \ac{aFRR}, mit dem mengengewichteten Mittelpreis und mit dem höchsten Zuschlag, und der Basisfall rechnet mit dem Mittelpreis:
 
 \begin{equation}
@@ -333,7 +303,6 @@ Wie viel Arbeit die Anlage liefern darf, prüft eine Sensitivität.
 Sie stellt den anteiligen Abruf gegen eine freie Lieferung bis zur eigenen Reservierung und bis zu zehn Prozent des deutschen Abrufs.
 Die gelieferte Arbeit stammt aus dem Speicher und wird am \ac{IDC} erst in einer späteren Viertelstunde ausgeglichen und nie in derselben, denn der Abruf steht erst nach der Viertelstunde fest.
 Der Ausgleich ist eine eigene Größe je Viertelstunde und Richtung, und seine Menge schließt sich über den Tag gegen die gelieferte Arbeit.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 Der Erlös der \ac{aFRR}-Arbeit ist ihr Arbeitspreis mal der gelieferten Energie, vermindert beziehungsweise erhöht um den Wert des Ausgleichs in der Viertelstunde, in der er stattfindet:
 
 \begin{equation}
@@ -346,7 +315,6 @@ Die Zielfunktion trägt für die kurative Reservierung den Erlös aus vorgegeben
 Die Anlage reserviert deshalb nur dann, wenn der vorgegebene Reservierungspreis den Wert der Handelsaktionen übersteigt, die die Reservierung in derselben Stunde an den übrigen Märkten verdrängt.
 Die reservierte Leistung ist eine Variable je Richtung mit vorgegebenem Reservierungspreis, die über eine Zeitscheibe von einer vollen Stunde zur nächsten konstant bleibt, also für vier aufeinanderfolgende Viertelstunden.
 Die Reservierung tritt in dieselbe Leistungsschranke wie die \ac{FCR} und die \ac{aFRR} und bindet darüber hinaus ein Ladezustandsband, das den Abruf über die Bindungsdauer deckt.
-% 27.09.2026, Betreuerkommentar 10 (Doppelpunkt vor Gleichung, Verfasser: alle Gleichungen in Kapitel 3): ersetzt Punkt am Satzende
 Die positive und die negative Reservierung betrachtet das Modell getrennt, jede mit eigener Leistung und eigenem Ladezustandsband:
 \begin{equation}
     \label{eq:erloes_kur}
@@ -361,7 +329,6 @@ Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine S
 \label{sec:weber_exclusion}
 
 Den kurativen Reservierungspreis bestimmt eine Suche außerhalb der Optimierung, die das Tagesmodell wiederholt aufruft und aus jedem Lauf die reservierte Leistung abliest.
-% 27.09.2026, Betreuerkommentar 12 (Satz klingt unvollstaendig, Ellipse ausgeschrieben): ersetzt "Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten an der höchstmöglichen Leistung."
 Der Füllgrad einer Stunde und Richtung ist der Anteil der reservierten Leistung an der Leistung, die in dieser Stunde und Richtung höchstens reservierbar ist.
 Als voll reserviert gilt eine Stunde, wenn höchstens ein Hundertstel Prozent der Anschlussleistung fehlt, also 0,01\,\si{MW} von 100\,\si{MW}.
 Die Toleranz ist nötig, weil der Solver die Nebenbedingungen nur bis auf seine Zulässigkeitstoleranz von $10^{-6}$ einhält, und sie liegt mit 0,01\,\si{MW} über dem numerischen Rauschen.
@@ -372,11 +339,6 @@ Die Suche läuft in zwei gleich aufgebauten Iterationen, wie Abbildung~\ref{fig:
 
 \begin{figure}[H]
     \centering
-% UMGESTELLT am 22.09.2026 nach UPDATE_03 des Analyse-Repositorys: die Datei
-    % wird jetzt in voller Breite und flacher geliefert (453,5 mal 226,8 statt
-    % 371,9 mal 275,2 pt). Sie steht damit buendig im Satzspiegel und laesst
-    % weiterhin Text unter sich. Alte Fassung:
-    %    \includegraphics[width=0.82\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
     \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_bisektion.pdf}
     \caption{Bisektion für eine Beispielstunde, (a) bei festem Preis der vollen Reservierung und (b) bei einem Preis, der während der Suche steigt. Die Preisachse ist logarithmisch.}
     \label{fig:reservierungspreis_bisektion}
@@ -487,8 +449,6 @@ Je Markt allein optimiert der Revenue-Index den Speicher am \ac{DA}, in der erst
 Gegen die bekannte Preisreihe lädt der Speicher in den günstigsten und entlädt in den teuersten Zeitscheiben, sodass bei zwei Stunden Energieinhalt je Leistung zwei Zyklen die vier günstigsten und die vier teuersten Stunden belegen.
 Die Spanne des zweiten Zyklus fällt kleiner aus als die des ersten, weil die Zeitscheiben nach dem Preis geordnet zum Einsatz kommen.
 
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
-%Für das Jahr 2025 weist der Revenue-Index marktübergreifend 259,7 Tausend Euro je Megawatt und Jahr aus.
 Für das Jahr 2025 weist der Revenue-Index marktübergreifend 260,0 Tausend Euro je Megawatt und Jahr aus.
 Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
 Den Werten je Markt allein stehen Jahresläufe des Optimierungsmodells gegenüber, in denen die übrigen Märkte abgeschaltet sind.
@@ -509,18 +469,12 @@ Erwartet wird, dass das Optimierungsmodell in den Leistungsmärkten über dem Re
 Der Vergleich beginnt mit den Einzelmärkten, die im Einzelnen in Anhang~\ref{anh:validierung} dargestellt sind.
 In der \ac{FCR} erreicht das Optimierungsmodell das 1,24-Fache des Revenue-Index, weil der Revenue-Index die angebotene Leistung durch 1,25 teilt und das Optimierungsmodell die volle Leistung anbietet.
 Ein Megawatt, das ganzjährig zum \ac{FCR}-Preis anbietet, erzielt 133,0 Tausend Euro je Megawatt und Jahr, wovon der Revenue-Index 81 Prozent und das Optimierungsmodell 100 Prozent erreichen.
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
-%In der \ac{aFRR} erreicht das Optimierungsmodell das 1,52-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
 In der \ac{aFRR} erreicht das Optimierungsmodell das 1,51-Fache des Revenue-Index, was vor allem an der Bemessung der Leistung liegt.
 Der Revenue-Index bietet nur die Leistung an, die der Speicher vier Stunden lang liefern könnte, bei der Bezugsanlage also die Hälfte.
 Das Optimierungsmodell ist allein durch ein Ladezustandsband von einer Stunde je Richtung begrenzt und hält im Jahresmittel 81\,\si{MW} in positiver und 72\,\si{MW} in negativer Richtung von 100\,\si{MW} vor.
 Auch die Liefermenge der \ac{aFRR}-Arbeit hängt auf beiden Seiten an der vorgehaltenen Leistung, folgt aber den Regeln, die Abschnitt~\ref{sec:validation_benchmark} und Abschnitt~\ref{sec:input_data} je Seite nennen.
 Denselben Sollwert nutzen beide Seiten, der Revenue-Index als abgerufene Leistung und das Optimierungsmodell als Gewicht bei der Mittelung der Grenzpreise.
 
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
-%In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,86-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
-% AKTUALISIERT am 22.09.2026 nach ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md Abschnitt 7: der Intraday-Handel ist in den ID1 (0,97-Faches) und den IDC (0,89-Faches) aufgeteilt, bisher stand dort ein einzelner Wert. Alte Fassung, nicht wieder aufzunehmen:
-%In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,85-Fachen und im Intraday-Handel mit dem 0,89-Fachen.
 In den Energiemärkten bleibt das Optimierungsmodell unter dem Revenue-Index, am \ac{DA} mit dem 0,85-Fachen, am \ac{ID1} mit dem 0,97-Fachen und am \ac{IDC} mit dem 0,89-Fachen.
 Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklus verrechnet.
 
@@ -532,16 +486,8 @@ Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklu
 \end{figure}
 
 Abbildung~\ref{fig:validierung_cross} stellt marktübergreifend den Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenüber.
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
-%Das Optimierungsmodell liegt im Mittel bei 348,3 Tausend Euro je Megawatt und Jahr.
-% ERGAENZT am 22.09.2026 nach ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md Abschnitt 7: der Revenue-Index ist mit 260,0 beziffert, damit sich das Verhaeltnis von 1,31 nachrechnen laesst. Alte Fassung:
-%Das Optimierungsmodell liegt im Mittel bei 340,7 Tausend Euro je Megawatt und Jahr.
 Das Optimierungsmodell liegt im Mittel bei 340,7 und der Revenue-Index bei 260,0 Tausend Euro je Megawatt und Jahr.
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
-%Das Verhältnis beider Reihen beträgt im Median 1,33 bei einer Spanne von 1,06 bis 1,54, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
 Das Verhältnis beider Reihen beträgt im Median 1,31 bei einer Spanne von 1,04 bis 1,50, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 8: Kennzahlen des aktuellen Gesamtlaufs vom 17. bis 19.09.2026. Alte Fassung:
-%Die beiden Reihen korrelieren mit einem Koeffizienten von 0,97, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
 Die beiden Reihen korrelieren mit einem Koeffizienten von 0,974, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
 Zum Abstand trägt marktübergreifend die Aufteilung der Leistung bei.
 Der Revenue-Index bedient die Märkte in fester Abfolge mit fest gesetzten Anteilen an Leistung, Speicherinhalt und Zyklen, während das Optimierungsmodell alle Märkte gemeinsam optimiert.
@@ -559,9 +505,6 @@ Die Reservierung belegt die Stunden, in denen die übrigen Märkte wenig bieten,
 In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherraum für einen Abruf von einer Megawattstunde je Megawatt frei, und Anfang und Ende des Tages liegen bei 125 Megawattstunden.
 Der gezeigte Fahrplan enthält die Mindestgröße von 25\,\si{MW} je Zeitscheibe und Richtung, die das Optimierungsmodell gemischt-ganzzahlig macht.
 Die Optimierung reserviert damit nur dort, wo der vorgegebene Reservierungspreis die verdrängten Handelsaktionen aufwiegt, und hält die Bänder des Produkts ein, was die Grundlage der Suche nach dem kleinsten vorgegebenen Reservierungspreis bestätigt.
-% ABBILDUNGSLIEFERUNG am 21.09.2026, Anweisung aus bess_dispatch_optimization (ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md, Stand 21.09.2026 16:14), Abschnitt 2: die Abbildung ohne Mindestgroesse entfaellt ersatzlos, weil die Schranke am 11.02.2025 bei 5 Euro je Megawatt und Stunde nach der Korrektur der Kausalitaetsbedingung nicht bindet (kleinste Reservierung 45,08 MW). Der Satz und der Verweis auf den gestrichenen Anhang sind gestrichen, nicht wieder aufzunehmen:
-%Ohne die Mindestgröße reserviert die Optimierung an diesem Tag in drei Stunden weniger als 25\,\si{MW} Ladeleistung, sodass der kurative Erlös des Tages um 1,4 Prozent höher liegt.
-%Dieser Fahrplan ohne die Mindestgröße steht in Anhang~\ref{anh:dispatch_ohne}.
 
 \begin{figure}[H]
     \centering

@@ -1,633 +1,120 @@
 \chapter{Einleitung}
 \label{ch:intro}
 
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
-% Befunde B03, E1. Bezug zu BESS und kurativ im Vorspann, Klimaschutzsatz entfallen.
-% Alte Fassung, nicht wieder aufnehmen:
-%Der anthropogen verursachte Klimawandel erfordert eine grundlegende Transformation des deutschen Energiesystems, für die das Bundes-Klima\-schutz\-gesetz mit der Netto-Treib\-haus\-gas\-neu\-tra\-li\-tät bis zum Jahr 2045 die Zielvorgabe setzt \cite{bundesumweltministerium_bundes-klimaschutzgesetz_2019}.
-%Der Anteil erneuerbarer Energien an der Nettostromerzeugung lag im Jahr 2025 bei 58{,}8\,\% \cite{bundesnetzagentur_strommarktdaten_2026}.
-%Mit diesem Anteil verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
-% R-01 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Zahl und These stehen jetzt in einem Satz. Alte Fassung:
-%Der Anteil erneuerbarer Energien an der Nettostromerzeugung lag im Jahr 2025 bei 58{,}8\,\% \cite{bundesnetzagentur_strommarktdaten_2026}.
-% R-01 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Zahl und These stehen jetzt in einem Satz. Alte Fassung:
-%Mit diesem Anteil verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
-% MENGENPROBLEM ERGAENZT am 18.09.2026, Kommentar des Verfassers. Alte Fassung:
-%Mit einem Anteil erneuerbarer Energien von 58{,}8\,\% an der Nettostromerzeugung im Jahr 2025 \cite{bundesnetzagentur_strommarktdaten_2026} verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
-%Mit einem Anteil erneuerbarer Energien von 58{,}8\,\% an der Nettostromerzeugung im Jahr 2025 \cite{bundesnetzagentur_strommarktdaten_2026} verändert sich die räumliche Verteilung der Erzeugung und damit die Transportaufgabe des Übertragungsnetzes, für deren Bewältigung das Engpassmanagement im selben Jahr 30{,}4\,\si{TWh} bewegte \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Die vorliegende Arbeit befasst sich mit einer Antwort auf diese Aufgabe, nämlich der kurativen Systemführung, die das bestehende Netz höher auslastet, und mit \ac{BESS} als dem Akteur, der die dafür nötige Reaktionsfähigkeit bereitstellt.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: die vorliegende Arbeit
-% faellt aus den einleitenden Saetzen heraus. Alte Fassung:
-%Die vorliegende Arbeit befasst sich mit einer Antwort auf diese Aufgabe, nämlich der kurativen Systemführung, die das bestehende Netz höher auslastet.
-% EFFIZIENZ ERGAENZT am 18.09.2026, Kommentar des Verfassers. Alte Fassung:
-%Eine Antwort auf diese Aufgabe ist die kurative Systemführung, die das bestehende Netz höher auslastet.
-%Eine Antwort darauf ist die kurative Systemführung, die die vorhandene Netzkapazität effizienter nutzt und das Netz höher auslastet.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: den Satz provokanter
-% fassen, sodass der Leser nach den Problemen der kurativen Systemfuehrung und
-% denen der BESS fragt. Alte Fassung:
-%Als Akteur dafür kommen \ac{BESS} in Betracht, die die nötige Reaktionsfähigkeit bereitstellen.
-%Sie greift dafür auf eine Reaktionsfähigkeit zu, die ein \ac{BESS} zwar bereitstellen kann, an den Strommärkten aber bereits vergeben hat.
-%Für das Bereithalten dieser Leistung im Fehlerfall besteht bisher kein Preis.
-% NEU STRUKTURIERT am 18.09.2026, Kommentar des Verfassers: den Vorspann reissender fassen, ohne Fakten und Belege aufzugeben. Die alten Fassungen stehen darueber.
-%Im Jahr 2025 bewegte das Engpassmanagement im deutschen Übertragungsnetz 30{,}4\,\si{TWh} \cite{bundesnetzagentur_smard_engpassmanagement_2026}, denn die Erzeugung aus erneuerbaren Energien fällt mit 58{,}8\,\% der Nettostromerzeugung räumlich anders an als die Last \cite{bundesnetzagentur_strommarktdaten_2026}.
-%Ungenutzt bleibt dabei eine Sicherheitsmarge, die die präventive Systemführung für den Fehlerfall freihält \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-%Die kurative Systemführung nutzt diese Marge und damit die vorhandene Netzkapazität effizienter, indem sie den Engpass erst nach dem Fehler behebt.
-%Sie verlangt dafür eine Reaktionsfähigkeit, die ein \ac{BESS} bereitstellen kann, an den Strommärkten aber bereits vergeben hat.
-%Für das Bereithalten dieser Leistung im Fehlerfall besteht bisher kein Preis.
-% NEU GEFASST am 18.09.2026, Vorgabe des Verfassers: der Vorspann soll ein Catcher sein, Zahlen ausser der Nettostromerzeugung folgen erst in 1.1. Kein Allzeithoch, denn die Jahresmenge lag 2023 hoeher als 2025.
 Mit einem Anteil erneuerbarer Energien von 58{,}8\,\% an der Nettostromerzeugung im Jahr 2025 \cite{bundesnetzagentur_strommarktdaten_2026} verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
-% BEGRIFF am 21.09.2026, Kommentar des Verfassers: "hier Engpassmanagement in einem Nebensatz erklaeren". Apposition wie
-% die Definition in 2.1. Alte Fassung:
-%Das Engpassmanagement bewegt seither Mengen auf anhaltend hohem Niveau und verändert sich zugleich in seiner Struktur.
 Das Engpassmanagement, also die Gesamtheit der Maßnahmen, mit denen der Netzbetreiber Überlastungen von Leitungen und Transformatoren beseitigt, bewegt seither Mengen auf anhaltend hohem Niveau und verändert sich zugleich in seiner Struktur.
-% NEU GEFASST am 18.09.2026, Vorgabe des Verfassers: BESS haben den kurzfristigen Handel veraendert, ihre Einbindung in das Redispatchregime ist offen. Alte Fassung:
-%Mit \ac{BESS} tritt eine flexible Technologie in das deutsche Stromsystem ein, deren Leistung heute an den Strommärkten gebunden ist und dem Engpassmanagement nicht zur Verfügung steht.
 Mit \ac{BESS} tritt eine flexible Technologie in das deutsche Stromsystem ein, die den kurzfristigen Handel mit wachsenden Volumen prägt \cite{garttan_battery_2025}.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "BESS praegen den kurzfristigen Handel und erzeugen damit
-% eher kurzfristig Engpaesse, sind aber selber noch nicht Teil des Engpassmanagements. Im bestehenden
-% Redispatch-Regime gibt es jedoch wenige Anlagen, die kurzfristig agieren koennen, und damit stoesst das
-% Engpassmanagement an seine Grenzen." Alte Fassung:
-%Wie sich diese Flexibilität in das bestehende Regime des Redispatch einbinden lässt, ist dagegen offen.
-%Das heutige Engpassmanagement stößt dabei an Grenzen, denn der Kreis geeigneter Anlagen wird kleiner und der Eingriff ist immer kurzfristiger zu bestimmen.
 Damit entstehen Engpässe zunehmend erst kurz vor der Lieferung, während die \ac{BESS} selbst noch nicht Teil des Engpassmanagements sind.
 Im bestehenden Regime des Redispatch können nur wenige Anlagen so kurzfristig reagieren, sodass das Engpassmanagement an seine Grenzen stößt.
-% ERGAENZT am 18.09.2026, Vorgabe des Verfassers: die neuartigen Anforderungen lassen eine systemweite Integration noch nicht zu.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "Loesung koennte sein, das Engpassmanagement um die Komponenten
-% der kurativen Systemfuehrung zu erweitern, die das Netz effizienter nutzt und die technologische Flexibilitaet
-% von EE und Speicher optimal einsetzt." "optimal" als "gezielt", Stilregel 15. Alte Fassung:
-%Als Lösung gilt die kurative Systemführung, die das Netz effizienter nutzt und Flexibilität aus erneuerbaren Energien und Speichern in das Engpassmanagement einbindet.
 Eine Lösung könnte darin liegen, das Engpassmanagement um die kurative Systemführung zu erweitern, die das Netz effizienter nutzt und die technologische Flexibilität erneuerbarer Energien und Speicher gezielt einsetzt.
-% ERGAENZT am 21.09.2026, Kommentar des Verfassers: "und auch Verguetung". InnoSys 2030: "Neben dem heute geltenden
-% regulatorischen Redispatch-Regime waere eine marktliche Umsetzung denkbar, durch die ein zusaetzlicher Anreiz
-% fuer die Bereitstellung kurativer Stellpotentiale geschaffen wuerde." Alte Fassung:
-%Ihre neuartigen Anforderungen an Planung, Scharfschaltung und Abruf lassen eine systemweite Integration bisher jedoch nicht zu \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Ihre neuartigen Anforderungen an Planung, Scharfschaltung, Abruf und Vergütung lassen eine systemweite Integration bisher jedoch nicht zu \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-% GESTRICHEN am 21.09.2026, Vorgabe des Verfassers, die Verguetung steht jetzt im Satz davor. Nicht wieder aufnehmen:
-%Für die Bereitschaft, die sie von einem \ac{BESS} verlangt, besteht bisher kein Preis.
 
 \section{Motivation und Problemstellung}
 \label{sec:motivation}
 
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
-% Befunde B04 bis B12, E2 bis E6, V12. Achse Nord-Ost nach Sued-West, These mit Doppelpunkt, Redispatch als Kurzform, Ereignisabhaengigkeit benannt.
-% Alte Fassung, nicht wieder aufnehmen:
-%Die Transportaufgabe des Übertragungsnetzes ist bislang vor allem durch ein geografisches Missverhältnis zwischen den Erzeugungsschwerpunkten der Windkraft im Norden und den industriellen Verbrauchszentren im Süden Deutschlands geprägt, während in der Nähe der Lastzentren steuerbare konventionelle Kraftwerke aus dem Betrieb ausscheiden.
-%Der Netzausbau setzt an dieser Achse an und mindert die dort auftretenden Engpässe.
-%Mit dem Zubau der Photovoltaik wird das Engpassmuster zugleich vielfältiger, denn eine hohe Einspeisung aus Photovoltaikanlagen führte insbesondere in den Sommermonaten des Jahres 2025 vermehrt zu Ost-West-Lastflüssen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-%
-%Die Architektur des europäischen Strommarktes verstärkt dieses Missverhältnis.
-%Im Selbst\-dispatch-Modell bestimmen die Fahrplanverantwortlichen die Erzeugungs- und Verbrauchsfahrpläne sowie den Einsatz ihrer Anlagen selbst \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-%Der deutsche Strommarkt folgt diesem Modell.
-%Maßgeblich für den Einsatz ist damit das Preissignal des Marktes und nicht der Zustand des Netzes.
-%Innerhalb einer einheitlichen Gebotszone bildet der Börsenpreis die physikalische Belastung der Übertragungswege jedoch nicht ab, sodass marktoptimale Fahrpläne systematisch Leistungsflüsse erzeugen können, die das Netz nicht aufnehmen kann.
-%Der \ac{ÜNB} kann auf die Fahrplanbildung nicht einwirken und die entstehende Netzüberlastung deshalb erst nachgelagert korrigieren.
-%Die Höhe des Engpassmanagementbedarfs folgt damit nicht allein aus der Netzsituation, sondern auch aus der Entkopplung von marktlicher Fahrplanbildung und physikalischer Netzrestriktion.
-%
-%Wie hoch der daraus folgende Eingriffsbedarf ausfällt, zeigen die Zahlen des Netzengpassmanagements.
-%Abbildung~\ref{fig:redispatch_jahresbedarf} stellt das jährliche Maßnahmenvolumen des Netzengpassmanagements dar, das die Reduzierung der Einspeisung und die zu deren Ausgleich erforderliche Erhöhung umfasst.
-%Mit 30{,}4\,\si{TWh} lag es im Jahr 2025 nahezu auf dem Wert des Vorjahres.
-%Die vorläufigen Gesamtkosten stiegen dagegen um knapp vier Prozent auf rund 3{,}1\,Mrd.\,Euro.
-%Die Jahressummen verdecken dabei eine ausgeprägte Ereignisabhängigkeit.
-%Die monatlichen Gesamtkosten variierten seit Juli 2022 zwischen rund 123\,Mio.\,Euro im Juni 2023 und rund 485\,Mio.\,Euro im Dezember 2024.
-%Auf diesen Monat entfielen rund 16\,\% der Jahresgesamtkosten 2024 \cite{bundesnetzagentur_mengen_nodate}.
-%Ausschlaggebend für diesen Ausreißer war eine Windfront im Dezember 2024 \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missverhältnis geprägt, denn die Windkraft speist vor allem im Norden und Osten Deutschlands ein, die Lastzentren liegen im Süden und Westen, und in deren Nähe scheiden steuerbare konventionelle Kraftwerke aus dem Betrieb aus.
-% R-02 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz 2 ist in Satz 1 aufgenommen. Alte Fassung:
-%Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missverhältnis geprägt: Die Windkraft speist vor allem im Norden und Osten Deutschlands ein, die Lastzentren liegen im Süden und Westen.
 Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missverhältnis geprägt: Die Windkraft speist vor allem im Norden und Osten Deutschlands ein, während in der Nähe der Lastzentren im Süden und Westen steuerbare konventionelle Kraftwerke aus dem Betrieb ausscheiden.
-% R-02 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Satz haengt jetzt an Satz 1. Alte Fassung:
-%In der Nähe der Lastzentren scheiden zudem steuerbare konventionelle Kraftwerke aus dem Betrieb aus.
-% DURCHSICHT 16.09.2026, B1, zwei Gedanken, Stilregel 17. Alte Fassung:
-%Während der Netzausbau an dieser Achse von Nordosten nach Südwesten ansetzt, wird das Engpassmuster mit dem Zubau der Photovoltaik zugleich vielfältiger, denn eine hohe Einspeisung aus Photovoltaikanlagen führte in den Sommermonaten des Jahres 2025 vermehrt zu Ost-West-Lastflüssen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% S-15 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, der Netzausbau steht mit Beleg in Absatz 6. Gestrichener Satz: Alte Fassung:
-%Der Netzausbau setzt an dieser Achse von Nordosten nach Südwesten an.
 Zugleich wird das Engpassmuster mit dem Zubau der Photovoltaik vielfältiger, denn eine hohe Einspeisung aus Photovoltaikanlagen führte in den Sommermonaten des Jahres 2025 vermehrt zu Ost-West-Lastflüssen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "die Transportaufgabe und auch Engpassmuster sind
-% deswegen instationaer und abhaengig von Zubau von Erzeugung und Lasten sowie Wettersituation". Alte Fassung:
-%Die Transportaufgabe ist damit nicht auf eine Richtung festgelegt.
 Transportaufgabe und Engpassmuster sind damit nicht stationär, sondern hängen vom Zubau von Erzeugung und Lasten sowie von der Wettersituation ab.
 
-% BEGRIFF am 20.09.2026, Vorgabe des Verfassers: Einsatzverantwortlicher (EIV) statt Fahrplanverantwortlicher
-% und statt Anlagenbetreiber, wo die Rolle Fahrplan, Einsatz, Zusage oder Gebot traegt. Erstnennung mit
-% Apposition, ohne Beleg, Entscheidung des Verfassers. Der EIV plant die Vermarktung und bestimmt damit
-% den Fahrplan, der Anlagenbetreiber betreibt die Anlage. Die Langform steht wegen der Beugung von Hand
-% mit acs und acused, damit das Akronym danach kurz erscheint. Alte Fassung:
-%Das Marktdesign des europäischen Binnenmarkts, dem der deutsche Strommarkt folgt, verstärkt dieses Missverhältnis: Im Selbst\-dispatch-Modell bestimmen die Fahrplanverantwortlichen die Erzeugungs- und Verbrauchsfahrpläne sowie den Einsatz ihrer Anlagen selbst \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-% ROLLE am 21.09.2026, Vorgabe des Verfassers: Betreiber ist der wirtschaftliche Entscheider, der EIV die Rolle im operativen Betrieb. Alte Fassung:
-%Das Marktdesign des europäischen Binnenmarkts, dem der deutsche Strommarkt folgt, verstärkt dieses Missverhältnis: Im Selbst\-dispatch-Modell bestimmen die Einsatzverantwortlichen (\acs{EIV})\acused{EIV}, also die Marktrollen, die die Vermarktung einer Anlage planen und ihren Einsatz steuern, die Erzeugungs- und Verbrauchsfahrpläne selbst \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
-%Das Marktdesign des europäischen Binnenmarkts, dem der deutsche Strommarkt folgt, verstärkt dieses Missverhältnis: Im Selbst\-dispatch-Modell bestimmen die Einsatzverantwortlichen (\acs{EIV})\acused{EIV}, also die Marktrollen, die den Einsatz einer Anlage im Betrieb verantworten und ihren Fahrplan melden, die Erzeugungs- und Verbrauchsfahrpläne selbst \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
 Das Marktdesign des europäischen Binnenmarkts, dem der deutsche Strommarkt folgt, verstärkt dieses Missverhältnis: Im dezentralen Dispatch-Modell bestimmen die Einsatzverantwortlichen (\acs{EIV})\acused{EIV}, also die Marktrollen, die den Einsatz einer Anlage im Betrieb verantworten und ihren Fahrplan melden, die Erzeugungs- und Verbrauchsfahrpläne selbst \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019, europaische_kommission_verordnung_2017_ebgl}.
 Maßgeblich für den Einsatz ist damit das Preissignal des Marktes und nicht der Zustand des Netzes.
-% R-03 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz gekuerzt, Stilregel 17. Alte Fassung:
-%Innerhalb der einheitlichen Gebotszone, in der für ganz Deutschland ein Börsenpreis gilt, bildet dieser Preis die Belastung der Übertragungswege nicht ab, sodass marktoptimale Fahrpläne regelmäßig Leistungsflüsse erzeugen, die das Netz nicht aufnehmen kann.
 Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab, sodass marktoptimale Fahrpläne Leistungsflüsse erzeugen, die das Netz nicht aufnehmen kann.
-% R-03 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Der \ac{ÜNB} kann mit den Fahrplänen, die die Akteure ihm melden, die Leistungsflüsse im Netz nur vorhersagen und eine drohende Überlastung anschließend durch Redispatch beheben, also durch die angeordnete Anpassung der Einspeisung einzelner Anlagen.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: es muss klar werden, dass der UENB den Redispatch auf der Vorhersage und im laufenden Betrieb anordnet. Alte Fassung:
-%Der \ac{ÜNB} kann die Leistungsflüsse im Netz aus den gemeldeten Fahrplänen nur vorhersagen.
-%Eine drohende Überlastung behebt er anschließend durch Redispatch, also durch die angeordnete Anpassung der Einspeisung einzelner Anlagen.
 Der \ac{ÜNB} sagt die Leistungsflüsse im Netz aus den gemeldeten Fahrplänen voraus und ordnet auf dieser Vorhersage den Redispatch an, also eine Anpassung der Einspeisung einzelner Anlagen.
 Zeichnet sich im laufenden Betrieb eine Überlastung ab, ordnet er den Redispatch auch kurzfristig an.
-% BEGRIFF am 18.09.2026, Kommentar des Verfassers: Abbildung 1.1 zeigt das Massnahmenvolumen des Netzengpassmanagements, nicht allein den Redispatch. Alte Fassung:
-%Der Redispatchbedarf ist damit nicht allein eine Folge des Netzzustands, sondern auch eine Folge des Marktdesigns.
 Der Engpassmanagementbedarf ist damit nicht allein eine Folge des Netzzustands, sondern auch eine Folge des Marktdesigns.
 
-% VERSCHOBEN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.1 und 1.2 muessen jeweils einen Absatz nach vorne."
 \begin{figure}[htbp]
     \centering
-% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
-% Sie aendert den Satz nicht, die Datei ist genau textbreit.
     \includegraphics[width=\textwidth]{figures/chapter_1/redispatch_jahresbedarf_2020_2025.pdf}
     \caption{Jährliches Maßnahmenvolumen des Netzengpassmanagements der Jahre 2020 bis 2025, aufgeteilt nach hoch- und heruntergeregelter Energie. Nach \cite{bundesnetzagentur_mengen_nodate}.}
     \label{fig:redispatch_jahresbedarf}
 \end{figure}
 
-% R-04 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die These steht jetzt im ersten Satz. Alte Fassung:
-%Wie hoch dieser Bedarf ausfällt, zeigt Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Redispatchvolumen, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
-% BEGRIFF am 18.09.2026, Kommentar des Verfassers: Abbildung 1.1 zeigt das Massnahmenvolumen des Netzengpassmanagements, nicht allein den Redispatch. Alte Fassung:
-%Der Redispatchbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Redispatchvolumen zeigt, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
-% GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
-%Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt, also der reduzierten und der zu ihrem Ausgleich erhöhten Einspeisung.
 Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt.
-% BEGRIFF am 18.09.2026, Kommentar des Verfassers: Abbildung 1.1 zeigt das Massnahmenvolumen des Netzengpassmanagements, nicht allein den Redispatch. Alte Fassung:
-%Mit 30{,}4\,\si{TWh} lag das Redispatchvolumen im Jahr 2025 nahezu auf dem Wert des Vorjahres, während die vorläufigen Gesamtkosten um knapp vier Prozent auf rund 3{,}1\,Mrd.\,Euro stiegen.
 Mit 30{,}4\,\si{TWh} lag das Maßnahmenvolumen im Jahr 2025 nahezu auf dem Wert des Vorjahres, während die vorläufigen Gesamtkosten um knapp vier Prozent auf rund 3{,}1\,Mrd.\,Euro stiegen.
 Die Jahressummen verdecken dabei, wie stark einzelne Wetterlagen die Kosten prägen: Die monatlichen Gesamtkosten schwankten seit Juli 2022 zwischen rund 123\,Mio.\,Euro im Juni 2023 und rund 485\,Mio.\,Euro im Dezember 2024 \cite{bundesnetzagentur_mengen_nodate}.
-% ERGAENZT am 18.09.2026, Kommentar des Verfassers: zu den Kosten tritt der Verlust der abgeregelten Einspeisung.
-% PRAEZISIERT am 18.09.2026, Kommentar des Verfassers: keine einzelnen Tage, sondern Wetterlagen, und der Vorgang beim Redispatch benannt. Alte Fassung:
-%Auf den Dezember 2024, geprägt von einer Windfront, entfielen rund 16\,\% der Jahresgesamtkosten 2024, sodass wenige Tage über die Kosten eines Jahres mitentscheiden \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Auf den Dezember 2024, geprägt von einer Windfront, entfielen rund 16\,\% der Jahresgesamtkosten 2024, sodass wenige Wetterlagen über die Kosten eines Jahres mitentscheiden \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% PRAEZISIERT am 18.09.2026, Kommentar des Verfassers: keine einzelnen Tage, sondern Wetterlagen, und der Vorgang beim Redispatch benannt. Alte Fassung:
-%An solchen Tagen lässt sich die abgeregelte Einspeisung aus erneuerbaren Energien nicht nutzen, und ihr Ausgleich verlangt zusätzliche Erzeugung an anderer Stelle.
 In einer solchen Wetterlage regelt der Redispatch Windstrom ab, der sich nicht abtransportieren lässt, und fährt dafür teurere Erzeugung an anderer Stelle hoch.
-% ERGAENZT am 27.09.2026, Vorgabe des Verfassers, zu Betreuerkommentar B12 (welche Ereignisabhaengigkeit): die Wetterlagen haeufen sich im Winter, Monatswerte nach Burger, Fraunhofer ISE, Folie 54.
 Solche Wetterlagen häufen sich im Winter, denn die Windstromerzeugung lag im Jahr 2025 von November bis Februar bei 52{,}9\,\si{TWh} und von Mai bis August bei 34{,}8\,\si{TWh} \cite{burger_stromerzeugung_2026}.
 
-% NOCH EINEN ABSATZ NACH VORN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.2 kann auch noch einen
-% Absatz nach vorne rutschen", jetzt vor dem Absatz, der auf sie verweist.
-% VERSCHOBEN am 21.09.2026, Vorgabe des Verfassers: "Abbildung 1.1 und 1.2 muessen jeweils einen Absatz nach vorne."
-% OPTION H am 21.09.2026 versucht und wieder auf htbp zurueck: an der Stelle vor dem Verweisabsatz passt
-% die Abbildung nicht mehr auf Seite 2, mit H entstuenden elf Zeilen Weissraum und eine sechste Seite.
 \begin{figure}[htbp]
     \centering
-% GROESSENANGABE ERGAENZT am 12.09.2026 nach der Anweisung des Verfassers.
-% Sie aendert den Satz nicht, die Datei ist genau textbreit.
     \includegraphics[width=\textwidth]{figures/chapter_1/engpassmanagement_nep.pdf}
     \caption{Engpassmanagementbedarf der Zieljahre 2032, 2037 und 2045 nach Netzentwicklungsplan. Auf Basis von \cite{bundesnetzagentur_netzentwicklungsplan_2026}.}
     \label{fig:engpassmanagement_nep}
 \end{figure}
 
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
-% Befunde B13 bis B17, E7, E8. These und Begruendung verbunden, 13 TWh einmal, Konsequenz fuer das Instrument ergaenzt.
-% Alte Fassung, nicht wieder aufnehmen:
-%Für die vorliegende Arbeit ist bedeutsam, dass es sich bei diesem Bedarf nicht um ein Übergangsphänomen handelt, das mit dem Netzausbau vollständig verschwindet.
-%Der aktuelle \ac{NEP} weist im Referenzszenario~B, das sich an den Zielvorgaben des Bundes-Klima\-schutz\-gesetzes orientiert, bei einem ausgewiesenen Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Engpassmanagementbedarf von rund 13\,\si{TWh} aus.
-%Abbildung~\ref{fig:engpassmanagement_nep} stellt diesen Bedarf den Zieljahren 2032, 2037 und 2045 gegenüber.
-%Der Bedarf sinkt bis zum Zieljahr 2037 auf 5{,}4 bis 8{,}6\,\si{TWh} und steigt bis 2045 in allen drei Szenarien wieder auf 11{,}1 bis 13{,}0\,\si{TWh}.
-%Der ausgewiesene Restbedarf folgt aus der Zielsetzung des Verfahrens.
-%Der \ac{NEP} bestimmt den Netzausbau als Minimalkostenkombination aus Netzausbauinvestitionen und verbleibenden Engpassmanagementkosten \cite{bundesnetzagentur_netzentwicklungsplan_2026}, führt den Ausbau also nur so weit, wie er die Engpassmanagementkosten um mehr senkt, als er selbst verursacht.
-%Ein verbleibendes Eingriffsvolumen ist damit Bestandteil des ermittelten Zielzustands und nicht Ausdruck eines unvollständigen Ausbaustands.
-%Seine Deckung fällt damit Instrumenten jenseits des Netzausbaus zu.
-%
-%Die dargestellten Zahlen und das beschriebene Engpassmuster zeigen dabei zwei Eigenschaften des Bedarfs, die für die Wahl des Instruments bedeutsam sind.
-%Zum einen ist der Bedarf ereignisabhängig, denn Volumen und Kosten entwickeln sich nicht proportional zueinander, und einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
-%Zum anderen verschiebt sich das räumliche Engpassmuster mit der jeweils vorherrschenden Erzeugungssituation.
-% DURCHSICHT 16.09.2026, B1, Ueberleitung vom heutigen Stand zur Planung. Alte Fassung:
-%Der Redispatchbedarf ist kein Übergangsphänomen, das mit dem Netzausbau verschwindet, denn der aktuelle \ac{NEP} weist im Szenario~B, einem von drei Szenarien, bei einem Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Engpassmanagementbedarf von rund 13\,\si{TWh} aus.
-% R-05 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Über den heutigen Stand hinaus ist der Redispatchbedarf kein Übergangsphänomen, das mit dem Netzausbau verschwindet, denn der aktuelle \ac{NEP} weist im Szenario~B, einem von drei Szenarien, bei einem Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Engpassmanagementbedarf von rund 13\,\si{TWh} aus.
-% BEGRIFF am 18.09.2026, Kommentar des Verfassers: Abbildung 1.1 zeigt das Massnahmenvolumen des Netzengpassmanagements, nicht allein den Redispatch. Alte Fassung:
-%Über den heutigen Stand hinaus ist der Redispatchbedarf kein Übergangsphänomen, das mit dem Netzausbau verschwindet.
 Über den heutigen Stand hinaus ist der Engpassmanagementbedarf kein Übergangsphänomen, das mit dem Netzausbau verschwindet.
-% GEKUERZT am 18.09.2026, Vorgabe des Verfassers, Vorschlag 1 mit dem Investitionsbedarf. Alte Fassung:
-%Der aktuelle \ac{NEP} weist im Szenario~B, einem von drei Szenarien, bei einem Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Engpassmanagementbedarf von rund 13\,\si{TWh} aus.
-%Abbildung~\ref{fig:engpassmanagement_nep} zeigt den Verlauf: Der Bedarf sinkt bis zum Zieljahr 2037 auf 5{,}4 bis 8{,}6\,\si{TWh} und steigt bis 2045 in allen drei Szenarien wieder auf 11{,}1 bis 13{,}0\,\si{TWh}.
 Der aktuelle \ac{NEP} weist bei einem Investitionsbedarf von rund 392\,Mrd.\,Euro noch für das Zieljahr 2045 einen strukturellen Engpassmanagementbedarf von 11{,}1 bis 13{,}0\,\si{TWh} aus.
 Nach Abbildung~\ref{fig:engpassmanagement_nep} sinkt der Bedarf bis zum Zieljahr 2037 zunächst auf 5{,}4 bis 8{,}6\,\si{TWh}.
-% GEKUERZT am 18.09.2026, Vorgabe des Verfassers, Vorschlag 2. Alte Fassung:
-%Der Restbedarf für das Jahr 2045 folgt aus der Zielsetzung des Verfahrens, denn der \ac{NEP} bestimmt den Netzausbau als Minimalkostenkombination aus Ausbauinvestitionen und verbleibenden Engpassmanagementkosten und führt den Ausbau nur so weit, wie die eingesparten Engpassmanagementkosten die Ausbaukosten übersteigen \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Der Restbedarf folgt aus der Zielsetzung des Verfahrens, denn der \ac{NEP} führt den Netzausbau nur so weit, wie die eingesparten Engpassmanagementkosten die Ausbaukosten übersteigen \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Ein verbleibender Engpassmanagementbedarf gehört damit zum ermittelten Zielzustand und fällt Instrumenten jenseits des Netzausbaus zu.
 
-% GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
-%Die dargestellten Zahlen zeigen zwei Eigenschaften des Engpassmanagementbedarfs, die für die Wahl eines solchen Instruments bedeutsam sind.
-% GEKUERZT am 21.09.2026, weil die Verschiebung der Abbildungen und der neue Satz zum Redispatch Kapitel 1 auf eine sechste Seite kippten; Reservekandidat aus der Uebergabe vom 18.09.2026. Alte Fassung:
-%Der Bedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
-% GESTRAFFT am 21.09.2026, zweiter Schritt, damit Kapitel 1 bei fuenf Seiten bleibt. Alte Fassung:
-%Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen den Kostenverlauf eines Jahres stärker als die Jahresmenge.
-% 27.09.2026, Betreuerkommentar 1 (Beleg fehlt): ersetzt "Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen die Kosten eines Jahres stärker als die Jahresmenge."
 Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen wie die Windfront im Dezember 2024 prägen die Kosten eines Jahres stärker als die Jahresmenge \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% GESTRAFFT am 21.09.2026, damit Kapitel 1 nach dem Wortlaut des Verfassers bei fuenf Seiten bleibt. Alte Fassung:
-%Zugleich wandert das Engpassmuster räumlich, denn es verschiebt sich mit der jeweils vorherrschenden Erzeugungssituation.
 Zugleich wandert das Engpassmuster, denn es verschiebt sich mit der vorherrschenden Erzeugungssituation.
-% EIGENE ABLEITUNG, vom Verfasser zu pruefen, Absatzplan 1.1 Absatz 5 vom 15.09.2026.
-% BEGRUENDET am 21.09.2026, Rueckfrage des Verfassers: "warum darf es keine dauerhaften Eingriffe verursachen?"
-% Die Folgerung aus der Ereignisabhaengigkeit steht jetzt im Satz. Alte Fassung:
-%Ein Instrument für den Engpassmanagementbedarf muss deshalb im Ereignisfall wirken, ohne dauerhaft Eingriffe zu verursachen, und an wechselnden Orten verfügbar sein.
-% ABGEGRENZT am 21.09.2026, Rueckfrage des Verfassers: "aber das tut Redispatch doch auch, was willst du damit
-% abgrenzen?" Der Satz grenzt gegen den Netzausbau ab, der ortsfest und dauerhaft wirkt; der Redispatch erfuellt
-% beide Eigenschaften, und der folgende Absatz setzt bei ihm an. Alte Fassung:
-%Ein Instrument für den Engpassmanagementbedarf muss deshalb erst im Ereignisfall eingreifen, damit es in den Stunden ohne Ereignis keine Kosten verursacht, und an wechselnden Orten verfügbar sein.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "Da Redispatch bisher mit wenigen grossen Erzeugern wie
-% Kraftwerken oder Winderzeugung mit grossen Anschlussleistungen gemacht wurde (Redispatch-Zahlen nach Erzeugern
-% zitieren), muss dieser um ein flexibles Instrument, das nicht ortsgebunden ist und Kleinanlagen
-% kosteneffizient einbezieht, erweitert werden." SMARD Gesamtjahr 2025: negativer Redispatch konventionelle
-% Kraftwerke 6.170 GWh, Offshore-Wind 3.351 GWh, Onshore-Wind 3.225 GWh, Photovoltaik 2.704 GWh, EE gesamt
-% 9.389 GWh; Summe 15.559 GWh, davon Kraftwerke und Wind 12.746 GWh. Alte Fassung:
-%Ein Instrument für diesen Bedarf muss deshalb im Ereignisfall wirken und an wechselnden Orten verfügbar sein, was ein Netzausbau an festem Ort nicht leisten kann.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "und der Rest, Countertrading oder wie? Und was ist mit
-% Hochfahren? Beide Seiten nennen, aber nicht zu viele Zahlen, einfach Anteil an Redispatch mit Anlagen
-% groesser 500 MW Anschlussleistung." Ein Anteil nach Anschlussleistung ist mit keiner lokalen Quelle belegbar,
-% deshalb nach Anlagenart. SMARD Gesamtjahr 2025: reduziert 15.549 GWh (konventionell 6.170, Offshore 3.351,
-% Onshore 3.225, PV 2.704), erhoeht Marktkraftwerke 7.732, Reservekraftwerke 1.302, Probestarts 523,
-% Countertrading 5.211; Redispatch ohne Countertrading 25.106 GWh, davon Kraftwerke und Wind 21.780 GWh.
-% Alte Fassung:
-%Der Redispatch stützt sich bisher auf wenige große Anlagen: Von rund 15{,}6\,\si{TWh} reduzierter Einspeisung entfielen im Jahr 2025 6{,}2\,\si{TWh} auf konventionelle Kraftwerke und 6{,}6\,\si{TWh} auf Windenergieanlagen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% NEU GEFASST am 21.09.2026, Entscheidung des Verfassers: die Zahl mit mindestens 100 MW, Verweis auf die
-% Netztransparenz-Daten. Eigene Auswertung in analysen/redispatch_einheiten: 16.893 Redispatch-Massnahmen
-% ohne Countertrading und Probefahrten, 16.517 GWh, 356 Einheiten, 206 mit Pmax >= 100 MW und 98,0 % der
-% Arbeit. Alte Fassung:
-%Der Redispatch stützt sich bisher auf konventionelle Kraftwerke und Windenergieanlagen: Von rund 25\,\si{TWh} angewiesener Einspeiseänderung im Jahr 2025 entfielen rund 22\,\si{TWh} auf das Absenken und Hochfahren dieser Anlagen, hinzu kamen 5{,}2\,\si{TWh} Countertrading \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-% WORTLAUT DES VERFASSERS am 21.09.2026: "angewiesener Leistungsaenderung". Alte Fassung:
-%Der Redispatch stützt sich bisher auf wenige große Anlagen: Von den 16{,}5\,\si{TWh}, die die \ac{ÜNB} im Jahr 2025 in beiden Richtungen anwiesen, entfielen 98\,\% auf 206 Einheiten mit mindestens 100\,\si{MW} angewiesener Leistung \cite{netztransparenz_regelenergie_2026}.
-% GESTRAFFT am 21.09.2026, zweiter Schritt, damit Kapitel 1 bei fuenf Seiten bleibt. Alte Fassung:
-%Der Redispatch stützt sich bisher auf wenige große Anlagen: Von den 16{,}5\,\si{TWh}, die die \ac{ÜNB} im Jahr 2025 in beiden Richtungen anwiesen, entfielen 98\,\% auf 206 Einheiten mit mindestens 100\,\si{MW} angewiesener Leistungsänderung \cite{netztransparenz_regelenergie_2026}.
 Der Redispatch stützt sich bisher auf wenige große Anlagen: Von den 16{,}5\,\si{TWh}, die die \ac{ÜNB} 2025 in beiden Richtungen anwiesen, entfielen 98\,\% auf 206 Einheiten ab 100\,\si{MW} angewiesener Leistungsänderung \cite{netztransparenz_regelenergie_2026}.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "dass im besten Fall an jedem Knoten die verfuegbaren
-% Einheiten integriert werden, um flexibel auf lokale Ueberlastungen zu wirken". Alte Fassung:
-%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt, nicht an einen Ort gebunden ist und auch kleine Anlagen kosteneffizient einbezieht.
-% ERGAENZT am 21.09.2026, Kommentar des Verfassers: "und auf HoeS und HS beschraenken". Alte Fassung:
-%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Netzknoten die verfügbaren Einheiten einbezieht, um auf örtliche Überlastungen flexibel zu reagieren.
-% GESTRAFFT am 21.09.2026, damit Kapitel 1 bei fuenf Seiten bleibt; eine Kuerzung vor Abbildung 1.2 (Option H)
-% greift nicht, weil sie nur den Weissraum vor der Abbildung vergroessert. Alte Fassung:
-%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Netzknoten der Höchst- und Hochspannungsebene die verfügbaren Einheiten einbezieht, um auf örtliche Überlastungen flexibel zu reagieren.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: davor "das zeigt, dass Redispatch fuer strukturelle,
-% stationaere Engpaesse das geeignete Mittel ist", dann "um ein Instrument zu erweitern, das moeglichst viele
-% Anlagen an den Netzknoten der HoeS und HS einbezieht, um lokale Ueberlastungen flexibel zu loesen".
-% "loesen" als "beheben", Begriff der Engpassdefinition, Stilregel 14. Alte Fassung:
-%Der Redispatch ist deshalb um ein Instrument zu erweitern, das im Ereignisfall wirkt und im besten Fall an jedem Knoten der Höchst- und Hochspannungsebene die verfügbaren Einheiten einbezieht, um örtliche Überlastungen flexibel zu beheben.
-% GESTRAFFT am 21.09.2026, damit Kapitel 1 nach dem Wortlaut des Verfassers bei fuenf Seiten bleibt. Alte Fassung:
-%Das zeigt, dass der Redispatch für strukturelle und stationäre Engpässe das geeignete Mittel ist.
 Der Redispatch ist damit das geeignete Mittel für strukturelle und stationäre Engpässe.
-% WORTLAUT DES VERFASSERS am 21.09.2026: "um lokale Engpaesse zu beheben oder zu vermeiden". Alte Fassung:
-%Der Redispatch ist deshalb um ein Instrument zu erweitern, das möglichst viele Anlagen an den Netzknoten der Höchst- und Hochspannungsebene einbezieht, um örtliche Überlastungen flexibel zu beheben.
-% WORTLAUT DES VERFASSERS am 21.09.2026: "das Engpassmanagement" statt "der Redispatch", "auf einzelnen Betriebsmitteln". Alte Fassung:
-%Der Redispatch ist deshalb um ein Instrument zu erweitern, das möglichst viele Anlagen an den Netzknoten der Höchst- und Hochspannungsebene einbezieht, um örtliche Engpässe zu beheben oder zu vermeiden.
 Das Engpassmanagement ist deshalb um ein Instrument zu erweitern, das möglichst viele Anlagen an den Netzknoten der Höchst- und Hochspannungsebene einbezieht, um örtliche Engpässe auf einzelnen Betriebsmitteln zu beheben oder zu vermeiden.
 
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan, freigegeben vom Verfasser.
-% Befunde B18 bis B23, E9, E10, V13. Reihenfolge neu, praeventiv vor der zeitlichen Luecke, Reaktion des UENB auf spaete Zustaende ergaenzt, kurativ nicht als einzige Antwort.
-% Alte Fassung, nicht wieder aufnehmen:
-%Neben dem Volumen verändert sich die zeitliche Struktur der Engpässe.
-%Die präventive Betriebsplanung setzt voraus, dass die Netzbelastung des Erfüllungszeitpunkts vorab hinreichend genau bekannt ist, denn nur dann lässt sich die (N-1)-Sicherheit rechtzeitig herstellen.
-%Mit der Zunahme kurzfristig agierender Flexibilität wird diese Voraussetzung schwerer einzuhalten.
-%Der kontinuierliche Intraday-Handel hält die Fahrplanbildung bis wenige Minuten vor Lieferbeginn offen, und Anlagen mit kurzen Reaktionszeiten können dieses späte Handelsfenster nutzen \cite{innosys_2030_gesamtverbund_innovationen_2021, mahgoub_wie_2025}.
-%Besonders für Batteriespeicher, im Folgenden als \ac{BESS} bezeichnet, liefert die Nachjustierung in diesem Fenster einen eigenständigen Wertbeitrag \cite{hornek_value_2025}.
-%Der \ac{ÜNB} prüft die Netzbelastung dabei in Vorschauprozessen am Vortag und im Verlauf des Erfüllungstages sowie in einer laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation \cite{leeuwen_integration_2020}.
-%Die Vorschauprozesse enden jedoch vor dem Erfüllungszeitpunkt, sodass Fahrplanänderungen aus dem danach verbleibenden Handelsfenster in ihnen nicht mehr enthalten sind.
-%Dem Marktteilnehmer wiederum zeigt der zonale Preis die Netzbelastung nicht an.
-%Verändern sich die Leistungsflüsse nach der letzten Netzsicherheitsrechnung vor dem Erfüllungszeitpunkt, kann ein Zustand entstehen, der nicht mehr (N-1)-sicher ist, weil sich eine präventive Gegenmaßnahme nicht mehr rechtzeitig disponieren lässt.
-%
-%Die Versorgungssicherheit im operativen Betrieb der \ac{ÜNB} beruht vorrangig auf präventiver Systemführung, bei der Betriebsmittel unterhalb ihrer dauerhaften physikalischen Kapazitätsgrenze betrieben werden.
-%Die so freigehaltene Sicherheitsmarge hält das System im Fehlerfall stabil.
-%Dabei bleibt eine physikalische Reserve systematisch ungenutzt, denn Betriebsmittel lassen sich kurzfristig höher belasten, als im Dauerbetrieb zulässig ist.
-%Die kurative Systemführung vermeidet Engpässe nicht im Voraus, sondern behebt sie nach ihrem Eintreten durch gezielte Gegenmaßnahmen.
-%Sie nutzt dafür diese Reserve und ermöglicht damit eine effizientere Nutzung des bestehenden Netzes.
-%Sie setzt an demselben Eingriffsbedarf an, den die vorangehenden Absätze beziffert haben, denn eine Vorauslastung, die bisher durch eine präventive Maßnahme begrenzt werden musste, wird zulässig.
-%Weil ein Abruf nur im Fehlerfall erfolgt, fällt zudem weniger Maßnahmenvolumen an als bei einer Vorsorge, die für jede Ausfallvariante im Voraus getroffen wird.
-%Sie liegt zugleich hinter der letzten Netzsicherheitsrechnung, sodass ihr die zuvor beschriebene zeitliche Lücke nicht entgegensteht.
-%Voraussetzung dafür ist allerdings ein Akteur, dessen Technologie innerhalb des verbleibenden kurzen Zeitfensters zuverlässig reagiert und dessen Stellpotenzial nicht durch die eigene marktliche Fahrplanbildung aufgebraucht wurde.
-%Als vergleichsweise neuer Akteur im Stromnetz erscheinen \ac{BESS} dafür auf den ersten Blick gut geeignet, was Abschnitt \ref{sec:actor_comparison} eingehender prüft.
 Wie ein Instrument im Ereignisfall wirken kann, hängt davon ab, wie der \ac{ÜNB} Engpässe heute beherrscht: Die Versorgungssicherheit im operativen Betrieb beruht auf präventiver Systemführung.
-% DURCHSICHT 16.09.2026, B1. Alte Fassung:
-%Jedes Betriebsmittel hat eine Belastung, die es dauerhaft führen kann.
 Grundlage ist die Belastung, die jedes Betriebsmittel dauerhaft führen kann.
-% I-24 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: das (N-1)-Kriterium bezieht sich auf die betrieblichen Sicherheitsgrenzwerte einschliesslich der zulaessigen Ueberlast, nicht auf die Dauergrenze. Die Dauergrenze bleibt im Folgesatz als heutige Praxis. Alte Fassung:
-%Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes über die Dauergrenze belastet wird, was als (N-1)-Kriterium bezeichnet wird.
 Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen betrieblichen Sicherheitsgrenzwert überschreitet, was als (N-1)-Kriterium bezeichnet wird.
 Die präventive Systemführung hält die Belastung deshalb im Normalbetrieb um eine Marge unter der Dauergrenze, und das Freihalten dieser Marge ist der Eingriff, der als Redispatch anfällt.
-% R-07 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Satz zur ungenutzten Reserve steht jetzt hier. Alte Fassung:
-%Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine physikalische Reserve ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-% 27.09.2026, Betreuerkommentar 2 (thermische statt physikalische Reserve, Begriff aus 2.1.1): ersetzt "Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine physikalische Reserve ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}."
 Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine thermische Reserve ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-% 27.09.2026, Betreuerkommentar 2 (thermische statt physikalische Reserve, Begriff aus 2.1.1): ersetzt "Die ungenutzte Reserve ist der Ansatzpunkt der kurativen Systemführung."
 Die ungenutzte thermische Reserve ist der Ansatzpunkt der kurativen Systemführung.
-% VERSCHOBEN 16.09.2026, B1, Ansatzpunkt unmittelbar vor Absatz 11: Die ungenutzte Reserve ist der Ansatzpunkt der kurativen Systemführung.
 
 Die präventive Planung setzt zudem voraus, dass die Netzbelastung des Erfüllungszeitpunkts vorab hinreichend genau bekannt ist, und damit tritt zu Volumen und Ort als dritte Eigenschaft der Zeitpunkt, zu dem ein Engpass erkennbar wird.
-% R-07 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Der \ac{ÜNB} prüft die Netzbelastung in Vorschauprozessen am Vortag und im Verlauf des Erfüllungstages \cite{leeuwen_integration_2020}, und zwischen der letzten Vorschaurechnung und dem Lieferbeginn bleibt ein Handelsfenster offen, das für den Handel innerhalb einer Regelzone, also des Netzgebiets eines \ac{ÜNB}, erst fünf Minuten vor Lieferung schließt.
 Der \ac{ÜNB} prüft die Netzbelastung in Vorschauprozessen am Vortag und im Verlauf des Erfüllungstages \cite{leeuwen_integration_2020}.
 Zwischen der letzten Vorschaurechnung und dem Lieferbeginn bleibt ein Handelsfenster offen, das für den Handel innerhalb einer Regelzone, also des Netzgebiets eines \ac{ÜNB}, erst fünf Minuten vor Lieferung schließt.
 Fahrplanänderungen nach der letzten Vorschaurechnung gehen in keine Rechnung mehr ein, und gerade Anlagen mit kurzen Reaktionszeiten wie \ac{BESS} handeln in diesem späten Fenster, weil die Nachjustierung dort einen eigenen Wertbeitrag liefert \cite{mahgoub_wie_2025, hornek_value_2025}.
-% SETZUNG nach V13, entschieden vom Verfasser am 14.09.2026. Beleg in
-% leeuwen_integration_2020 zu suchen, bis dahin ohne Zitat.
 Entsteht durch solche späten Änderungen ein Zustand, der nicht mehr (N-1)-sicher ist, erkennt ihn der \ac{ÜNB} in der laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können, sodass das Netz sicher bleibt, der Eingriff aber teurer wird und der Kreis geeigneter Anlagen kleiner ist als in der Vorplanung.
 Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können.
 Das Netz bleibt damit sicher.
 Der Eingriff wird aber teurer als in der Vorplanung, weil der Kreis geeigneter Anlagen kleiner ist.
-% HIERHER VERSCHOBEN 16.09.2026, B1, Luecke zu Absatz 10.
-% S-03 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Aussage traegt 2.1.1 Absatz 10. Gestrichener Satz: Alte Fassung:
-%Die zeitliche Lücke zwischen der letzten Vorschaurechnung und dem Lieferbeginn besteht auch für die kurative Systemführung, denn die kurative Maßnahme wird ebenfalls vorab eingeplant, und ob sie sich in dieser Lücke noch anpassen lässt, hängt vom jeweiligen Konzept ab.
-% HIERHER VERSCHOBEN 16.09.2026, B1, Ansatzpunkt unmittelbar vor Absatz 11.
-% R-07 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Satz steht jetzt am Ende des Absatzes zur ungenutzten Reserve. Alte Fassung:
-%Die ungenutzte Reserve ist der Ansatzpunkt der kurativen Systemführung.
 
 Die kurative Systemführung vermeidet Engpässe nicht im Voraus, sondern behebt sie nach ihrem Eintreten durch gezielte Gegenmaßnahmen und nutzt dafür die kurzzeitige Überlastbarkeit der Betriebsmittel \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Damit wird eine Vorauslastung zulässig, die bisher durch eine präventive Maßnahme begrenzt werden musste, sodass ein Teil des Redispatch entfällt, der heute allein dazu dient, die Marge freizuhalten.
-% R-08 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: handelndes Subjekt statt Passiv, Stilregel 12. Alte Fassung:
-%Damit wird eine Vorauslastung zulässig, die bisher durch eine präventive Maßnahme begrenzt werden musste.
 Der \ac{ÜNB} lässt damit eine Vorauslastung zu, die er bisher präventiv begrenzen musste.
-% ZUSAMMENGEZOGEN am 18.09.2026, Kommentar des Verfassers: beide Saetze tragen
-% dieselbe Aussage und werden einer. Alte Fassung:
-%Ein Teil des Redispatch entfällt deshalb, nämlich der Teil, der heute allein dazu dient, die Marge freizuhalten.
-%Der Redispatch selbst entfällt damit nicht, denn nach einem Abruf stellt ein Redispatch den (N-1)-sicheren Zustand wieder her.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: nicht das Entfallen
-% betonen, sondern den effizienteren Einsatz im Zusammenspiel mit dem
-% praeventiven Redispatch. Dass ein Redispatch nach einem Abruf den
-% (N-1)-sicheren Zustand wiederherstellt, steht in 2.1.4. Alte Fassung:
-%Damit entfällt der Teil des Redispatch, der heute allein die Marge freihält, nicht aber der Redispatch, der nach einem Abruf den \mbox{(N-1)-sicheren} Zustand wiederherstellt.
-% GESTRICHEN am 21.09.2026, Reservekandidat "Satz zur Kosteneffizienz" aus der Uebergabe vom 18.09.2026, weil
-% Kapitel 1 nach der Verschiebung der Abbildungen und dem neuen Redispatch-Satz auf eine sechste Seite kippte.
-% Die Ergaenzung des praeventiven Redispatch traegt das Zwischenfazit 2.4. Nicht wieder aufnehmen:
-%Damit lässt sich Redispatch nicht nur vermeiden, sondern es lassen sich kurative Maßnahmen auch dort einsetzen, wo sie zusammen mit dem präventiven Redispatch das Engpassmanagement insgesamt kosteneffizienter machen.
 Weil ein Abruf nur im Fehlerfall erfolgt, fällt zudem weniger Maßnahmenvolumen an als bei einer Vorsorge, die für jeden möglichen Ausfall im Voraus getroffen wird.
-% VERSCHOBEN 16.09.2026, B1, Luecke zu Absatz 10: Die zeitliche Lücke zwischen der letzten Vorschaurechnung und dem Lieferbeginn besteht auch für die kurative Systemführung, denn die kurative Maßnahme wird ebenfalls vorab eingeplant, und ob sie sich in dieser Lücke noch anpassen lässt, hängt vom jeweiligen Konzept ab.
-% DURCHSICHT 16.09.2026, B1. Alte Fassung:
-%Voraussetzung eines kurativen Eingriffs sind allerdings Akteure in Bereitschaft, deren Anlagen innerhalb weniger Minuten zuverlässig reagieren und deren Stellpotenzial, also die Leistung, um die sie ihren Betriebspunkt noch verändern können, nicht durch die eigene marktliche Fahrplanbildung aufgebraucht ist.
-% R-08 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Voraussetzung eines kurativen Eingriffs sind Akteure in Bereitschaft, deren Anlagen innerhalb weniger Minuten zuverlässig reagieren und deren Stellpotenzial, also die Leistung, um die sie ihren Betriebspunkt noch verändern können, nicht durch die eigene marktliche Fahrplanbildung aufgebraucht ist.
 Voraussetzung eines kurativen Eingriffs sind Akteure in Bereitschaft, deren Anlagen innerhalb weniger Minuten zuverlässig reagieren.
 Ihr Stellpotenzial, also die Leistung, um die sie ihren Betriebspunkt noch verändern können, darf die eigene marktliche Fahrplanbildung nicht aufgebraucht haben.
-% VERWEIS GESCHAERFT am 18.09.2026, Kommentar des Verfassers: der Verweis soll
-% sagen, dass die Eignung dort begruendet wird. Alte Fassung:
-%\ac{BESS} erscheinen als solche Akteure geeignet, wie in Abschnitt~\ref{sec:actor_comparison} dargestellt.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: BESS bringen die
-% technischen Voraussetzungen fuer den Einsatz als kurativer Akteur mit, und
-% der Verweis nennt, wo das ausgearbeitet ist. Alte Fassung:
-%\ac{BESS} erscheinen als solche Akteure geeignet, wie in Abschnitt~\ref{sec:actor_comparison} anhand von Reaktionszeit, Energiebindung, Anlagenbestand und Vergütungspfad begründet.
 \ac{BESS} bringen für den Einsatz als kurativer Akteur die günstigsten technischen Voraussetzungen mit, wie der Technologievergleich in Abschnitt~\ref{sec:actor_comparison} anhand von Reaktionszeit, Energiebindung, Anlagenbestand und Vergütungspfad begründet.
 
 \section{Zielsetzung und Vorgehensweise}
 \label{sec:research_questions}
 \label{sec:structure}
 
-% NEU GEFASST am 15.09.2026 nach dem Absatzplan im Sammelmodus, Befunde
-% B24 bis B39, E11 bis E14, P1, P6, P8, V2, V12. Definitionen von kurativer
-% Vorhaltung, kurativer Reservierung, Bindung, Bindungsdauer und Reaktionszeit,
-% Kapitelueberblick mit handelnden Subjekten. Alte Fassung, nicht wieder aufnehmen:
-%Die vorliegende Arbeit verfolgt das Ziel, einen Marktmechanismus für die kurative Vorhaltung zu entwerfen und den kurativen Reservierungspreis zu bestimmen.
-%Das Verbundprojekt InnoSys~2030 hat das Potenzial der kurativen Systemführung für den deutschen Übertragungsnetzbetrieb untersucht und die dafür in Betracht kommenden Maßnahmen systematisiert \cite{innosys_2030_gesamtverbund_innovationen_2021}.
-%Die kurative Vorhaltung ist dabei selbst eine Systemdienstleistung und gehört innerhalb der üblichen Einteilung zur Betriebsführung, zu der auch das Engpassmanagement zählt.
-%Den Redispatch, also die vom \ac{ÜNB} angeordnete Anpassung der Einspeisung einzelner Anlagen zur Behebung eines Engpasses, ersetzt sie nicht, sondern ergänzt ihn um einen Eingriff nach dem Eintritt des Fehlerfalles.
-%Für ihre Beschaffung ist die marktliche Form vorrangig, weil sie den kostenoptimalen Betrieb des Systems unterstützt \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019}.
-%Da der Anlagenbetreiber im Selbst\-dispatch-Modell über den Einsatz seiner Anlage entscheidet, lässt sich kurative Verfügbarkeit über einen Anreiz herbeiführen.
-%Dieser Anreiz muss aus einer Vergütung folgen, und innerhalb der Systemdienstleistungen bestehen dafür mehrere Vergütungslogiken.
-%Die Frequenzhaltung wird über die Regelleistungsmärkte beschafft, die vorgehaltene Leistung im Wettbewerb kaufen und damit die Bereitstellung und nicht allein den Abruf vergüten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-%Das Engpassmanagement folgt demgegenüber keiner Vorhaltelogik, denn der Redispatch wird nach §\,13a \ac{EnWG} angeordnet und über einen finanziellen Ausgleich für den durchgeführten Eingriff entschädigt \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
-%Ob eine dieser beiden Logiken den erforderlichen Anreiz für die kurative Vorhaltung setzt, ist damit zu klären.
-
-%Der Betrachtungsrahmen ist ein 2030-Szenario mit hohem Anteil erneuerbarer Energien, fortbestehenden Netzausbaurückständen und gestiegener installierter Speicherkapazität.
-%Die Arbeit rechnet gleichwohl mit den Preiszeitreihen des Jahres 2025.
-%Eine Preisprognose für das Zieljahr wäre nicht überprüfbar und würde das Ergebnis mit einer zweiten Unsicherheit belasten, während beobachtete Preise nachvollziehbar sind und die für das Szenario maßgebliche Volatilität bereits aufweisen.
-%Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Bindung mindestens fordern muss, um gegenüber seinen übrigen Vermarktungswegen indifferent zu sein.
-%Er bemisst die entgangenen Erlösmöglichkeiten und ist damit eine Eigenschaft der Anlage und ihres Umfelds.
-%Das Entlastungspotenzial der kurativen Systemführung schätzt die Arbeit nicht ab, sie bestimmt allein den Preis ihrer Vorhaltung.
-%Wie hoch er ausfällt, folgt aus der Ausgestaltung des Produkts, also aus der Bindungsdauer, der geforderten Reaktionszeit und der vorzuhaltenden Leistung.
-%Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikationsanforderungen, die Pönale bei Nichtlieferung, die Liquidität am jeweiligen Netzknoten und die Zahl der dort geeigneten Anbieter.
-%Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Vorhalteverpflichtung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
-
-%Kapitel~\ref{ch:state_of_the_art} behandelt die kurative Systemführung und die für sie in Betracht kommenden Technologien, stellt den Marktrahmen mit seinen Dispatchmodellen, Marktzeithorizonten und Systemdienstleistungen dar und untersucht die Vergütungslogiken des Engpassmanagements und der Regelleistung.
-%Es begründet die Wahl der \ac{BESS} als kurativen Akteur und prüft, welche der bestehenden Vergütungslogiken auf die kurative Vorhaltung passt.
-% NACHZUZIEHEN nach der Aufloesung von 3.1.3 am 11.09.2026. Kapitel 3 ordnet
-% die Marktdesignansaetze jetzt hinter dem Anforderungskatalog ein, und der
-% Forschungsbedarf steht nach dem Produktentwurf am Anfang von Abschnitt 3.2.
-% Die Reihenfolge dieses und des folgenden Satzes trifft damit nicht mehr zu.
-% Die Neufassung waehlt der Verfasser.
-% SATZPAAR ERSETZT am 11.09.2026, Fassung C, gewaehlt vom Verfasser. Die
-% Reihenfolge folgt jetzt dem Aufbau von Kapitel 3, die Marktdesignansaetze
-% werden eingeordnet statt abgeglichen, das Produkt heisst kurative
-% Reservierung, und der Forschungsbedarf entfaellt im Ueberblick, weil der
-% erste Satz von Abschnitt 1.2 das Ziel der Arbeit nennt. Alte Fassung, nicht
-% wieder aufnehmen:
-%   Kapitel~\ref{ch:design_model} leitet die Anforderungen an einen kurativen Marktmechanismus ab, gleicht sie gegen bestehende Marktdesignansätze ab und benennt den Forschungsbedarf.
-%   Darauf aufbauend entwirft es das kurative Marktprodukt, legt die Systemgrenzen der Untersuchung fest und formuliert die Fahrplanbildung des Speichers als gemischt-ganz\-zahliges lineares Optimierungsproblem.
-% GEKUERZT am 14.09.2026, entschieden vom Verfasser. Die Einordnung der
-% Marktdesignansaetze ist in 3.1.1 gestrichen, der Ueberblick kuendigte sie
-% sonst weiter an. Alte Fassung:
-%Kapitel~\ref{ch:design_model} leitet die Anforderungen an einen kurativen Marktmechanismus ab, ordnet bestehende Marktdesignansätze daran ein und entwirft die kurative Reservierung als Produkt.
-%Kapitel~\ref{ch:design_model} leitet die Anforderungen an einen kurativen Marktmechanismus ab und entwirft aus ihnen die kurative Reservierung als Produkt.
-%Darauf aufbauend legt es die Systemgrenzen der Untersuchung fest und formuliert die Fahrplanbildung des Speichers als gemischt-ganz\-zahliges lineares Optimierungsproblem.
-%Es beschreibt die verwendeten Eingangsdaten, begründet, weshalb sich die geltende Bemessungslogik für entgangene Erlösmöglichkeiten nicht in dieses Modell überführen lässt, und verifiziert die Implementierung gegen einen veröffentlichten Erlösindex für \ac{BESS}.
-%Kapitel~\ref{ch:results} untersucht, wie sich eine kurative Vorhaltepflicht in den Betrieb eines Marktteilnehmers einfügt.
-%Es stellt den Fahrplan, den Ladezustandsverlauf und die Erlöse unter Bindung dar, variiert anschließend die Produkt- und Anlagenparameter und bestimmt daraus den kurativen Reservierungspreis.
-%Kapitel~\ref{ch:discussion} ordnet dieses Ergebnis in die bestehenden Vergütungslogiken für Systemdienstleistungen ein, gleicht das entworfene Produkt gegen die Anforderungen ab und würdigt die Modellannahmen kritisch.
-%Kapitel~\ref{ch:conc} fasst die Ergebnisse entlang der Forschungsfragen zusammen und benennt weiteren Forschungsbedarf.
-% NEU GEORDNET am 18.09.2026, Vorgabe des Verfassers: erst der Zweck des Mechanismus, dann das Produkt, dann die uebrigen Bausteine, zuletzt der Preis. Alte Fassung:
-%Die vorliegende Arbeit verfolgt das Ziel, einen kurativen Marktmechanismus zu entwerfen und den kurativen Reservierungspreis zu bestimmen.
-%Ziel der vorliegenden Arbeit ist es, einen kurativen Marktmechanismus auszuarbeiten, der die Akteure am Markt für die kurative Systemführung nutzbar macht.
-%Ihre Vorhaltung soll er zu einem Preis beschaffen, der das Engpassmanagement insgesamt kosteneffizienter macht.
-% DURCHSICHT 16.09.2026, B1, Stilregel 5. Alte Fassung:
-%Kurative Vorhaltung bezeichnet dabei das Bereithalten von Leistung und, bei Speichern, von Ladezustand für einen Abruf nach dem Fehler.
-%Kurative Vorhaltung bezeichnet das Bereithalten von Leistung und, bei Speichern, von Ladezustand für einen Abruf nach dem Fehler.
-% NEU GEORDNET am 18.09.2026, Vorgabe des Verfassers: erst der Zweck des Mechanismus, dann das Produkt, dann die uebrigen Bausteine, zuletzt der Preis. Alte Fassung:
-%Der kurative Marktmechanismus ist das Verfahren, mit dem der \ac{ÜNB} diese Vorhaltung marktlich beschafft, und die kurative Reservierung ist das Produkt, das er dabei ausschreibt, bezuschlagt und vergütet.
-%Der kurative Marktmechanismus ist das Verfahren, mit dem der \ac{ÜNB} diese Vorhaltung marktlich beschafft, und die kurative Reservierung ist das Produkt, das er dabei ausschreibt, bezuschlagt und vergütet.
-%Auszugestalten sind neben dem Produkt die Art der Ausschreibung, die Bezuschlagung, die Zeitschiene und die Vergütung.
-% VORGABE DES VERFASSERS am 15.09.2026, Zweck des Mechanismus.
-% I-25 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Mechanismus allein ist nach CLAUDE.md Abschnitt 5 nicht zulaessig. Alte Fassung:
-%Der Mechanismus wird entworfen, um die Einflüsse zu erkennen, die am Markt auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign mit prognostizierten Preisen festzulegen.
-% NEU GEORDNET am 18.09.2026, Vorgabe des Verfassers: erst der Zweck des Mechanismus, dann das Produkt, dann die uebrigen Bausteine, zuletzt der Preis. Alte Fassung:
-%Der kurative Marktmechanismus wird entworfen, um die Einflüsse zu erkennen, die am Markt auf den Preis einer solchen Reservierung wirken, und nicht, um ein Marktdesign mit prognostizierten Preisen festzulegen.
-%Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, auf den vor allem die Erlöse der übrigen Energiemärkte wirken.
-% NEU GEORDNET am 18.09.2026, zweiter Durchgang, Kommentar des Verfassers: die Vorhaltung wird jetzt hergeleitet und nicht nur definiert. Alte Fassung:
 Ziel der vorliegenden Arbeit ist es, einen kurativen Marktmechanismus auszuarbeiten, der die Akteure am Markt für die kurative Systemführung nutzbar macht.
-% NEU GEFASST am 18.09.2026, dritter Durchgang, Vorgabe des Verfassers: die Vorhaltung folgt aus der Reaktionszeit, und der Vergleich mit dem Redispatch kommt hinzu. Alte Fassung:
-%Die kurative Maßnahme wirkt erst nach dem Fehler, verlangt aber schon vorher, dass die zugesagte Leistung im Fehlerfall verfügbar ist.
-%Die wichtigste Eigenschaft eines kurativen Akteurs ist die Bereitschaft, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern.
-% NEU GEFASST am 18.09.2026, dritter Durchgang, Vorgabe des Verfassers: die Vorhaltung folgt aus der Reaktionszeit, und der Vergleich mit dem Redispatch kommt hinzu. Alte Fassung:
-%Dieses Bereithalten von Leistung und, bei Speichern, von Ladezustand heißt im Folgenden kurative Vorhaltung und ist der Gegenstand, den der \ac{ÜNB} beschaffen muss.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: die Bereitschaft selbst ist die Vorhaltung, und der UENB gibt erst die Randbedingungen vor. Alte Fassung:
-%Das Bereithalten dieser Bereitschaft, bei Speichern einschließlich des Ladezustands, heißt kurative Vorhaltung.
-%Diese Bereitschaft, bei Speichern einschließlich des Ladezustands, heißt kurative Vorhaltung.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: die Bereitschaft selbst ist die Vorhaltung, und der UENB gibt erst die Randbedingungen vor. Alte Fassung:
-%Der \ac{ÜNB} soll sie unter den weiteren Randbedingungen, die er für den Einsatz braucht, marktlich beschaffen.
-%Der \ac{ÜNB} gibt die Randbedingungen vor, die er für den Einsatz braucht, und beschafft die Vorhaltung dann marktlich.
-%Der kurative Marktmechanismus ist das Verfahren dieser Beschaffung, und die kurative Reservierung ist das Produkt, das der \ac{ÜNB} dabei ausschreibt, bezuschlagt und vergütet.
-% NEU GEFASST am 18.09.2026 nach dem Vorschlag von Fable, Fassung A, vom Verfasser gewaehlt. Grund: Demonstrativa ueber die Satzgrenze und ein Satz mit zwei Hauptsaetzen. Alte Fassung:
-% "VOR ALLEM" am 18.09.2026, Kommentar des Verfassers. Alte Fassung:
-%Ein kurativer Akteur muss vor allem bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern.
-% DEFINITION EINGEFUEGT am 18.09.2026, Vorgabe des Verfassers: die Begriffe als Nebensatz statt als eigener Absatz. Alte Fassung:
-%Ein kurativer Akteur muss bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern.
 Ein kurativer Akteur muss bereit sein, seine Leistung innerhalb einer vorgegebenen Reaktionszeit zu ändern, also in der Zeit zwischen dem Abrufsignal und der vollständig umgesetzten Leistungsänderung.
 Die Bereitschaft zur Leistungsänderung heißt kurative Vorhaltung und schließt bei Speichern den Ladezustand ein.
-% 27.09.2026, Betreuerkommentar 3 (Mechanismus existiert noch nicht, mit Blick nach vorn formulieren): ersetzt "Der \ac{ÜNB} gibt die Randbedingungen vor, die er für den Einsatz braucht, und beschafft die kurative Vorhaltung in einem marktlichen Verfahren, dem kurativen Marktmechanismus."
 Einen solchen Mechanismus gibt es heute nicht: Die Idee ist, dass der \ac{ÜNB} die Randbedingungen für den Einsatz vorgibt und die kurative Vorhaltung in einem marktlichen Verfahren beschafft, dem kurativen Marktmechanismus.
-% 27.09.2026, Betreuerkommentar 3 (Mechanismus existiert noch nicht, mit Blick nach vorn formulieren): ersetzt "Die kurative Reservierung ist das Produkt, das der \ac{ÜNB} im kurativen Marktmechanismus ausschreibt, bezuschlagt und vergütet."
 Die kurative Reservierung ist das Produkt, das der \ac{ÜNB} im kurativen Marktmechanismus ausschreiben, bezuschlagen und vergüten soll.
 Auszugestalten sind neben dem Produkt die Art der Ausschreibung, die Bezuschlagung, die Zeitschiene und die Vergütung.
-% DEFINITION EINGEFUEGT am 18.09.2026, Vorgabe des Verfassers: Reservierungspreis, Bindungsdauer und Opportunitaetskosten stehen jetzt hier statt in einem eigenen Absatz. Alte Fassung:
-%Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, auf den vor allem die Erlöse der übrigen Energiemärkte wirken.
 Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, also der kleinste Preis, zu dem ein Betreiber seine Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
 Über die Bindungsdauer, also den Zeitraum der Zusage, gibt der Betreiber Erlöse an den übrigen Energiemärkten auf, sodass der kurative Reservierungspreis diese entgangenen Erlöse als Opportunitätskosten abbilden muss.
-% NEU GEFASST am 18.09.2026, dritter Durchgang, Vorgabe des Verfassers: die Vorhaltung folgt aus der Reaktionszeit, und der Vergleich mit dem Redispatch kommt hinzu. Alte Fassung:
-%An diesem Preis entscheidet sich, ob die kurative Systemführung das Engpassmanagement insgesamt kosteneffizienter macht.
 Zu prüfen ist, ob die marktlich beschaffte Vorhaltung mit dem präventiven Redispatch mithält, und zwar nicht allein in der Höhe des Preises, sondern auch in seiner zeitlichen Zusammensetzung und seiner künftigen Entwicklung.
-% VERSCHOBEN am 15.09.2026 nach 1.1 Absatz 8, entschieden vom Verfasser, der Satz wirkte hier fehl am Platz. Alte Fassung:
-%Die kurative Systemführung verringert den präventiven Redispatch, ersetzt ihn aber nicht, denn nach einem Abruf stellt ein Redispatch den (N-1)-sicheren Zustand wieder her.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Ein Marktmechanismus ist nötig, weil sich die Bereitschaft der Akteure, die Abschnitt~\ref{sec:motivation} als Voraussetzung nennt, im Selbst\-dispatch-Modell nicht anordnen lässt: Der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst, und kurative Verfügbarkeit entsteht deshalb nur über eine Vergütung.
 
-% NEUER ABSATZ 16.09.2026, B2.3.
-% DURCHSICHT 16.09.2026, B1. Alte Fassung:
-%Abschnitt~\ref{sec:motivation} nennt die Bereitschaft der Akteure als Voraussetzung.
-% R-09 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: der Satz ist in den folgenden aufgenommen. Alte Fassung:
-%Voraussetzung der kurativen Systemführung ist nach Abschnitt~\ref{sec:motivation} die Bereitschaft der Akteure.
-% R-09 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz 1 ist hier aufgenommen. Alte Fassung:
-%Ein Marktmechanismus ist nötig, weil sich die Bereitschaft der Akteure im Selbst\-dispatch-Modell nicht anordnen lässt: Der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst.
-% VERWEIS GESTRICHEN am 18.09.2026, Kommentar des Verfassers. Alte Fassung:
-%Die Bereitschaft der Akteure, die nach Abschnitt~\ref{sec:motivation} Voraussetzung der kurativen Systemführung ist, lässt sich im Selbst\-dispatch-Modell nicht anordnen, denn der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst.
-%Die Bereitschaft der Akteure, die Voraussetzung der kurativen Systemführung ist, lässt sich im Selbst\-dispatch-Modell nicht anordnen, denn der Anlagenbetreiber entscheidet über den Einsatz seiner Anlage selbst.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: der Grund fuer den Marktmechanismus ist die freiwillige Teilnahme. Alte Fassung:
-%Ein Marktmechanismus ist deshalb nötig.
-%Kurative Verfügbarkeit entsteht deshalb nur über eine Vergütung.
-%Der \ac{ÜNB} kann die Akteure deshalb nur freiwillig einbinden, und ihre Bereitschaft entsteht allein über eine Vergütung.
-% R-09 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Satz geteilt, Stilregel 17. Alte Fassung:
-%Für Systemdienstleistungen bestehen dafür zwei Logiken: Die Regelleistungsmärkte, auf denen die \ac{ÜNB} Leistung für die Frequenzhaltung beschaffen, vergüten die Bereitstellung vorgehaltener Leistung \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}, das Engpassmanagement vergütet nach §\,13a \ac{EnWG} allein den durchgeführten Eingriff \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
-%Für Systemdienstleistungen bestehen dafür zwei Logiken.
-%Die Regelleistungsmärkte, auf denen die \ac{ÜNB} Leistung für die Frequenzhaltung beschaffen, vergüten die Bereitstellung vorgehaltener Leistung \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-%Das Engpassmanagement vergütet nach §\,13a \ac{EnWG} allein den durchgeführten Eingriff \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025, bundesnetzagentur_festlegung_2024}.
-%Ob die Vergütung der Bereitstellung oder die Vergütung des Eingriffs den erforderlichen Anreiz für die kurative Vorhaltung setzt, ist damit zu klären.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: der Eingriff ist anordenbar, die Vorhaltung nicht, und beide Verguetungslogiken sind zu verbinden. Alte Fassung:
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: die Vorhaltung von
-% Leistung im Engpassmanagement gegen den klar geregelten Eingriff. Alte
-% Fassung:
-%Für die kurative Vorhaltung besteht keine Vergütung, obwohl der Eingriff selbst geregelt ist.
-%Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, der Eingriff selbst ist dagegen im \ac{EnWG} klar geregelt.
-%Den Eingriff kann der \ac{ÜNB} nach §\,13a \ac{EnWG} anordnen, die Vorhaltung dagegen nicht \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-%Der Betreiber entscheidet im Selbst\-dispatch-Modell über den Einsatz seiner Anlage selbst.
-% VERBUNDEN am 18.09.2026, Kommentar des Verfassers: drei Saetze werden zwei. Alte Fassung:
-% PRAEZISIERT am 18.09.2026, Kommentar des Verfassers: anordenbar ist die
-% Anpassung der Leistung, nicht ein Eingriff im Allgemeinen. Alte Fassung:
-%Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, während der \ac{ÜNB} den Eingriff selbst nach §\,13a \ac{EnWG} anordnen kann \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
 Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, während der \ac{ÜNB} eine Anpassung der Einspeisung oder des Bezugs nach §\,13a \ac{EnWG} anordnen kann \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-% BEGRIFF am 21.09.2026, Vorgabe des Verfassers: Bezeichnungen aus der EBGL, dezentrales und zentrales Dispatch-Modell statt Selbstdispatch-Modell und Dispatchmodell. Alte Fassung:
-%Die Vorhaltung kann er dagegen nicht anordnen, denn der Betreiber entscheidet im Selbst\-dispatch-Modell über den Einsatz seiner Anlage selbst.
 Die Vorhaltung kann er dagegen nicht anordnen, denn der Betreiber entscheidet im dezentralen Dispatch-Modell über den Einsatz seiner Anlage selbst.
-%Wer Leistung für den Fehlerfall freihält, schränkt seinen Fahrplan vorab ein und tut das nur gegen eine Vergütung.
-%Für Systemdienstleistungen bestehen dafür zwei Logiken.
-%Die Regelleistungsmärkte vergüten die vorgehaltene Leistung selbst \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}, das Engpassmanagement allein den durchgeführten Eingriff \cite{bundesnetzagentur_festlegung_2024}.
-%Die Regelleistung ist damit die nähere Logik, dient aber der Frequenzhaltung und nicht der Engpassbehebung.
-%Ein funktionierender kurativer Marktmechanismus muss beide Logiken verbinden, also die Vergütung der Vorhaltung mit der Vergütung des Abrufs.
-% NEU GEFASST am 18.09.2026, Vorgabe des Verfassers: Opportunitaeten, Gebot als Signal, Regelleistung, Abruf. Alte Fassung:
 Hält der Betreiber ein Leistungsband vorab frei, verliert er Vermarktungsmöglichkeiten an den übrigen Märkten.
 Ein Produkt, das diese Leistung reserviert, lässt ihn im Gebot nennen, was ihn die entgangenen Erlöse kosten, sodass er sich durch die Vorhaltung nicht schlechter stellt.
 Genau das leisten unter den Systemdienstleistungen die Regelleistungsmärkte, die die vorgehaltene Leistung selbst vergüten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Sie dienen allerdings der Frequenzhaltung und nicht der Engpassbehebung.
-% ABGESCHWAECHT am 21.09.2026, Kommentar des Verfassers: "so hart wuerde ich es nicht formulieren, sondern eher,
-% dass es da wieder aehnlich ist und deswegen eine Logik aehnlich des Redispatch anwendbar waere". Alte Fassung:
-%Für den Abruf greift dagegen die Vergütungslogik des Engpassmanagements, denn dort liefert die Anlage Energie und kommt damit einer Anweisung im Redispatch nahe \cite{bundesnetzagentur_festlegung_2024}.
-% BEGRIFF am 21.09.2026, Kommentar des Verfassers: "Verguetungslogik des Redispatch und nicht des Engpassmanagements im Allgemeinen, da wollen wir ja gerade ein kuratives Engpassmanagement einfuegen". Alte Fassung:
-%Beim Abruf liefert die Anlage dagegen Energie und kommt damit einer Anweisung im Redispatch nahe, sodass dort eine Vergütungslogik ähnlich der des Engpassmanagements anwendbar wäre \cite{bundesnetzagentur_festlegung_2024}.
 Beim Abruf liefert die Anlage dagegen Energie und kommt damit einer Anweisung im Redispatch nahe, sodass dort eine Vergütungslogik ähnlich der des Redispatch anwendbar wäre \cite{bundesnetzagentur_festlegung_2024}.
 Ein kurativer Marktmechanismus verbindet damit beide Logiken.
-% NEU GEFASST am 18.09.2026, Kommentar des Verfassers: "Zur Beantwortung"
-% verwies auf eine Frage, die mit der Neufassung des vorigen Absatzes
-% entfallen ist. Der Satz nennt die Frage jetzt selbst. Alte Fassung:
-%Zur Beantwortung versetzt sich ein Optimierungsmodell in die Position des Speicherbetreibers: Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber auf eine kurative Reservierung reagiert.
 Was die Vorhaltung den Betreiber kostet, beantwortet ein Optimierungsmodell aus seiner Position.
-% WORTLAUT DES VERFASSERS am 21.09.2026: "die kurative Reservierung in seine Fahrplanbildung einbezieht". Alte Fassung:
-%Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber auf eine kurative Reservierung reagiert.
 Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber die kurative Reservierung in seine Fahrplanbildung einbezieht.
-% HIERHER VERSCHOBEN 16.09.2026, B2.4.
-% GESTRICHEN am 18.09.2026, Kommentar des Verfassers. Die Aussage steht danach nirgends mehr, sie trug auch die Streichung in 3.2 (S-11). Gestrichener Satz:
-%Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt, während eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
-% DURCHSICHT 16.09.2026, B1, Begruendung angebunden. Alte Fassung:
-%Gerechnet wird mit den beobachteten Preisen des Jahres 2025.
 Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt.
-% DURCHSICHT 16.09.2026, B1, im Vorsatz aufgegangen: Beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt.
-% S-04 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: gestrichen, die Begruendung steht in 3.2.1. Gestrichener Satz: Alte Fassung:
-%Eine Preisprognose fügte dem Ergebnis dagegen eine weitere Annahme hinzu, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt, denn der Anteil erneuerbarer Energien soll bis 2030 mindestens 80 Prozent erreichen, der Speicherbestand wächst in allen Szenarien des \ac{NEP}, und der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-% DURCHSICHT 16.09.2026, B1, Anknuepfung. Alte Fassung:
-%Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt.
-% R-10 am 18.09.2026, Kontrolle durch Fable: der Absatz traegt zwei Thesen, hier beginnt die zweite.
-% NEU EINGEORDNET am 18.09.2026, Kommentar des Verfassers: bewertet wird fuer eine Einfuehrung ab 2030. Alte Fassung:
-%Den zeitlichen Rahmen bildet das Jahr 2030: Es dient nicht als Eingangsgröße, sondern als Rahmen für die Frage, ob sich die kurative Systemführung mit \ac{BESS} bis dahin umsetzen lässt.
-%Bewertet und eingeordnet wird der kurative Marktmechanismus für eine Einführung ab dem Jahr 2030.
-%Das Jahr 2030 geht dabei nicht als Eingangsgröße in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung.
-%Bis 2030 soll der Anteil erneuerbarer Energien mindestens 80 Prozent erreichen, und der Speicherbestand wächst in allen Szenarien des \ac{NEP}.
-% DURCHSICHT 16.09.2026, B1, Konsequenz. Alte Fassung:
-%Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-%Der Netzausbau erreicht seinen Zielzustand erst in den Jahren danach, sodass im Jahr 2030 ein Engpassmanagementbedarf fortbesteht und ein wachsender Speicherbestand für die kurative Systemführung zur Verfügung steht \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
-% RAHMEN AUF 2032 am 18.09.2026, Kommentar des Verfassers: die Aussagen zu 2030 waren schwer zu tragen, der NEP beschreibt das Trendjahr 2032. Alte Fassung:
 Bewertet und eingeordnet wird der kurative Marktmechanismus für eine Einführung im Trendjahr 2032 des \ac{NEP}.
-% MIT ZAHLEN BELEGT am 18.09.2026, Vorgabe des Verfassers: der NEP beschreibt in Kapitel 2.8 einen eigenen Ausbauzustand fuer das Trendszenario 2032. Alte Fassung:
-%Für dieses Jahr weist der \ac{NEP} nach Abbildung~\ref{fig:engpassmanagement_nep} einen Engpassmanagementbedarf von 14,8\,\si{TWh} aus, und der Speicherbestand wächst in allen Szenarien \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Für dieses Jahr rechnet der \ac{NEP} mit 260\,\si{GW} Photovoltaik und 115\,\si{GW} Windenergie an Land, sodass etwa 90\,\% der Stromnachfrage aus erneuerbaren Energien stammen, und weist 41{,}1\,\si{GW} Großbatteriespeicher aus \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Der Engpassmanagementbedarf liegt dabei nach Abbildung~\ref{fig:engpassmanagement_nep} bei 14{,}8\,\si{TWh}.
-% GESTRAFFT am 21.09.2026, damit Kapitel 1 nach der Abschwaechung des Abrufsatzes bei fuenf Seiten bleibt. Alte Fassung:
-%Das Trendjahr geht nicht als Eingangsgröße in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung.
 Das Trendjahr geht nicht in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung.
 
-% I-01 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Definition des kurativen Reservierungspreises folgt der Entscheidung K1, also der kleinste Preis mit voller Reservierung statt Indifferenz ueber den ganzen Erloes. Alte Fassung:
-%Bestimmt wird daraus der kurative Reservierungspreis, also der Betrag, den ein Anlagenbetreiber für die Reservierung mindestens verlangen muss, damit er mit ihr genauso viel verdient wie ohne sie.
-% ABSATZ AUFGELOEST am 18.09.2026, Kommentar des Verfassers: der Absatz nahm zu viel vorweg und stand aus dem Zusammenhang. Die Definitionen stehen jetzt als Nebensatz im Zielabsatz, die Abgrenzung zum Gebot in 3.2. Gestrichene Saetze:
-%Bestimmt wird daraus der kurative Reservierungspreis, also der kleinste Preis, bei dem ein Anlagenbetreiber die Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
-%Die Reservierung bindet die Anlage, denn sie verpflichtet den Betreiber, Leistung und Ladezustand über die Bindungsdauer vorzuhalten, also über den Zeitraum, für den die Zusage gilt.
-% I-01 am 17.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: die Opportunitaetskosten beziehen sich auf die zuletzt reservierte Leistung. Alte Fassung:
-%Der kurative Reservierungspreis misst damit die Opportunitätskosten der Bindung, also die Erlöse, die der Betreiber an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
-%Der kurative Reservierungspreis misst damit die Opportunitätskosten der zuletzt reservierten Leistung, also die Erlöse, die der Betreiber für sie an den übrigen Märkten aufgibt, und hängt von Leistung, Energieinhalt und den Preisen dieser Märkte ab.
-% VERSCHOBEN 16.09.2026, B2.4: Wie viel Engpassmanagement die kurative Systemführung einspart, ist nicht Gegenstand der Untersuchung, denn dafür wäre ein Netzmodell erforderlich, Gegenstand ist allein der Preis der Vorhaltung.
-%Wie hoch der Preis ausfällt, folgt aus der Ausgestaltung des Produkts, nämlich aus der Bindungsdauer, der vorzuhaltenden Leistung und der geforderten Reaktionszeit, also der Zeit vom Abrufsignal bis zur vollständig umgesetzten Leistungsänderung.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten, die das Modell nicht abbildet, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
-%Auf den Preis, der sich am Markt einstellt, wirken zusätzlich die Präqualifikation, also die Eignungsprüfung vor der Teilnahme, die Pönale bei Nichterfüllung und die Zahl der Anbieter am betroffenen Netzknoten.
-%Das Modell bildet Präqualifikation, Pönale und Anbieterzahl nicht ab, sodass der ermittelte Preis der opportunitätskostenbasierte Teil eines Gebots ist und nicht das Gebot selbst.
-% DURCHSICHT 16.09.2026, B1, Stilregel 5. Alte Fassung:
-%Zu klären sind dazu drei Teilfragen, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Reservierung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
-% GESTRICHEN am 18.09.2026, Vorgabe des Verfassers, Vorschlag 3: die Ankuendigung faellt ganz weg, der Absatz beginnt mit Kapitel 2. Gestrichene Saetze:
-%Für die Bestimmung des Preises sind drei Teilfragen zu klären, nämlich welche Anforderungen die kurative Systemführung an ein Marktprodukt stellt, wie sich eine Reservierung auf Fahrplan und Erlöse einer Anlage auswirkt und wie sich der daraus folgende Reservierungspreis in die bestehenden Vergütungslogiken für Systemdienstleistungen einordnet.
-%Die drei Teilfragen geben den Aufbau vor.
-% ANKUENDIGUNG am 18.09.2026, Wortlaut des Verfassers, Ueberleitung in die Kapitelfolge:
-%Die Arbeit ist deswegen wie folgt aufgebaut:
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt, und daraus folgt die Wahl der \ac{BESS} als kurativer Akteur.
 In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt.
 Daraus folgt die Wahl der \ac{BESS} als kurativer Akteur.
 In Kapitel~\ref{ch:design_model} werden die Anforderungen an einen kurativen Marktmechanismus abgeleitet und die kurative Reservierung als Produkt entworfen.
-% SATZLAENGE am 15.09.2026, Stilregel 17, alte Fassung als Kommentar:
-%Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit seinen Systemgrenzen, den geführten Märkten und dem Suchverfahren für den Reservierungspreis, und den Abschluss des Kapitels bildet die Prüfung des ungebundenen Erlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
 Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit seinen Systemgrenzen, den geführten Märkten und dem Suchverfahren für den Reservierungspreis.
-% BEGRIFF am 16.09.2026, Kommentar des Verfassers: ungebundener Fahrplan missverstaendlich, jetzt Referenzfahrplan und Referenzerloes. Alte Fassung:
-%Den Abschluss des Kapitels bildet die Prüfung des ungebundenen Erlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
-Den Abschluss des Kapitels bildet die Prüfung des Referenzerlöses gegen einen veröffentlichten Index der Erlöse, die \ac{BESS} am deutschen Markt erzielen.
-% GENAUER GEFASST am 18.09.2026, Vorgabe des Verfassers, nach der Sortierung in KAPITEL_4_AUFBAU.md Abschnitt 4. Alte Fassung:
-%In Kapitel~\ref{ch:results} werden Fahrplan, Ladezustand und Erlöse unter der Reservierung dargestellt, die Produkt- und Anlagenparameter variiert und daraus der kurative Reservierungspreis bestimmt.
-% AKTUALISIERT am 22.09.2026, Entscheidung des Verfassers: der Satz beschrieb noch die Sortierung von Kapitel 4 vom 18.09.2026. Alte Fassung, nicht wieder aufzunehmen:
-%In Kapitel~\ref{ch:results} wird das Verfahren über alle Tage des Jahres 2025 ausgewertet, nämlich nach Höhe und Streuung des kurativen Reservierungspreises, nach seinem Muster über Tag und Jahr und nach seinem Verhältnis zum Engpassmanagementbedarf.
+Den Abschluss bildet die Prüfung des Referenzerlöses gegen einen veröffentlichten Erlösindex für \ac{BESS} am deutschen Markt.
 In Kapitel~\ref{ch:results} wird das Verfahren über alle Tage des Jahres 2025 ausgewertet, nämlich nach der verdrängten Vermarktung, nach den Kosten der vollständigen Verdrängung, nach Höhe und Muster des kurativen Reservierungspreises und nach seinem Verhältnis zum Engpassmanagementbedarf.
-% NEU GEFASST am 21.09.2026, Kommentar des Verfassers: "mehr darauf eingehen, dass wir Sensitivitaeten machen,
-% um verschiedene Einfluesse auf den Preis zu identifizieren, sowohl modelltechnischer Natur als auch
-% Marktentwicklung". Alte Fassung:
-%Die Zahlung bei durchgehender Reservierung wird gegen den Referenzerlös gehalten.
-%Die Variation der Produkt- und Anlagenparameter zeigt, welcher Markt die Opportunität setzt.
-% GESTRICHEN am 21.09.2026, Vorgabe des Verfassers. Nicht wieder aufnehmen:
-%Die Zahlung bei durchgehender Reservierung wird gegen den Referenzerlös gehalten.
 Sensitivitäten zeigen, welche Einflüsse den Preis bestimmen, nämlich Produkt- und Anlagenparameter des Modells und die Entwicklung der Märkte.
-% NEU GEFASST am 18.09.2026, Vorgabe des Verfassers: Kapitel 5 diskutiert Mechanismus, Preis mit Sensitivitaeten und in Teilen die kurative Systemfuehrung im Engpassmanagement. Alte Fassung:
-%In Kapitel~\ref{ch:discussion} wird der Preis in die bestehenden Vergütungslogiken eingeordnet, das Produkt gegen die Anforderungen geprüft und die Modellannahmen werden kritisch gewürdigt.
-In Kapitel~\ref{ch:discussion} werden der kurative Marktmechanismus, der kurative Reservierungspreis mit seinen Sensitivitäten und in Teilen die kurative Systemführung im Engpassmanagement diskutiert.
-% GESTRICHEN am 21.09.2026, Vorgabe des Verfassers. Nicht wieder aufnehmen:
-%Die kurative Reservierung wird dazu gegen die Anforderungen geprüft, und die Annahmen des Modells werden gewürdigt.
-% BEZUG ENTFAELLT am 18.09.2026, die drei Teilfragen sind im Aufbauabsatz gestrichen. Alte Fassung:
-%In Kapitel~\ref{ch:conc} werden die Ergebnisse entlang der drei Teilfragen zusammengefasst und weiterer Forschungsbedarf benannt.
+In Kapitel~\ref{ch:discussion} werden der kurative Marktmechanismus, der kurative Reservierungspreis und die kurative Systemführung im Engpassmanagement diskutiert.
 In Kapitel~\ref{ch:conc} werden die Ergebnisse zusammengefasst und weiterer Forschungsbedarf benannt.

@@ -1,41 +1,19 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                       IAEW LaTeX Template                        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ANGELEGT am 17.09.2026, Auftrag des Verfassers. Die ausfuehrliche
-% Abbildung des Suchverfahrens stand bis dahin in Abschnitt 3.2.4 und hat
-% dort fast eine ganze Seite gefuellt. Im Text steht jetzt eine kompakte
-% Fassung, hier die ausfuehrliche.
 \chapter{Ablauf der Bestimmung des kurativen Reservierungspreises}
 \label{anh:ablauf}
 
 Dieser Anhang stellt das Suchverfahren aus Abschnitt~\ref{sec:reservation_price_search} mit allen Schritten dar.
 Abbildung~\ref{fig:reservierungspreis_ablauf_gross} zeigt beide Iterationen nebeneinander.
-% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Bisektion in beiden Iterationen gleich und gestrichelt umrandet. Alte Fassung:
-%Beide Iterationen folgen demselben Aufbau, denn links bestimmt jede Iteration die Grenzen des Suchintervalls, und rechts halbiert jede Iteration dieses Intervall nach derselben Regel.
 Beide Iterationen folgen demselben Aufbau, denn links bestimmt jede Iteration die Grenzen des Suchintervalls, und rechts durchläuft sie die Stunden und halbiert je Stunde das Intervall.
-% ERGAENZT am 18.09.2026, Auftrag des Verfassers: die Genauigkeit der Iteration gehoert in die Erklaerung des Flussdiagramms. Der Satz davor ist unveraendert.
 Die gestrichelte Box umfasst diese Bisektion, die in beiden Iterationen nach derselben Regel abläuft.
 Die Bisektion endet, sobald das Intervall nicht breiter als 0,05\,\EurMWh{} ist, und der ausgewiesene Preis ist damit auf diesen Betrag genau.
 Als voll reserviert gilt eine Stunde, wenn höchstens 0,01\,\si{MW} der Anschlussleistung fehlen.
-% NEU GEFASST am 17.09.2026: die Iterationen unterscheiden sich auch im Senken vor der Bisektion und in den Durchgaengen, allein im Kriterium nur innerhalb der Bisektion. Alte Fassung:
-%Die Iterationen unterscheiden sich allein im Kriterium, nach dem die Halbierung entscheidet, welche Hälfte des Intervalls entfällt.
-% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
-%In der Bisektion unterscheiden sich die Iterationen allein im Kriterium, nach dem die Halbierung entscheidet, welche Hälfte des Intervalls entfällt.
 In der Bisektion unterscheiden sich die Iterationen allein darin, welche Stunden der Preis in der Mitte voll reservieren muss, nämlich in der ersten Iteration die betrachtete Stunde und in der zweiten alle Stunden des Tages.
-% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Kriterium einfacher erklaeren, Satz zum Vollreservierungspreis unverstaendlich. Alte Fassung:
-%In der ersten Iteration lautet das Kriterium, ob die betrachtete Stunde voll reserviert ist, in der zweiten, ob alle Stunden des Tages voll reserviert bleiben.
-% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Bisektion in beiden Iterationen gleich und gestrichelt umrandet. Alte Fassung:
-%Die Stundenschleife und die Durchgangsschleife treten allein in der zweiten Iteration auf, weil dort je Lauf nur der Preis einer Stunde wechselt.
-% I-29 am 18.09.2026, Kontrolle durch Fable, Entscheidung des Verfassers: Toleranz stand hier fuer die Preisbreite und in 3.2.4 fuer den Fuellgrad. Alte Fassung:
-%Allein die zweite Iteration prüft vor der Bisektion, ob die Stunde bei einem um die Toleranz gesenkten Preis voll reserviert bleibt, und wiederholt den Durchgang über alle Stunden, bis keine Stunde mehr sinkt.
 Allein die zweite Iteration prüft vor der Bisektion, ob die Stunde bei einem um 0,05\,\EurMWh{} gesenkten Preis voll reserviert bleibt, und wiederholt den Durchgang über alle Stunden, bis keine Stunde mehr sinkt.
 In der ersten Iteration teilen sich Stunden mit derselben Intervallmitte einen Lauf, was die Abbildung nicht eigens zeigt.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_3/reservierungspreis_ablauf_gross.pdf}
-% NEU GEFASST am 17.09.2026, Kommentar des Verfassers: Bisektion in beiden Iterationen gleich und gestrichelt umrandet. Alte Fassung:
-%    \caption{Ablauf der Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001. Links bestimmt jede Iteration die Grenzen des Intervalls, rechts halbiert jede Iteration dieses Intervall.}
     \caption{Ablauf der Bestimmung des kurativen Reservierungspreises in zwei Iterationen, Symbole nach DIN 66001. Die gestrichelte Box umfasst die Bisektion.}
     \label{fig:reservierungspreis_ablauf_gross}
 \end{figure}

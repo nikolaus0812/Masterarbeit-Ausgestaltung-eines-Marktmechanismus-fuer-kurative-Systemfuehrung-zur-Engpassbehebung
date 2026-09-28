@@ -49,10 +49,17 @@ allein die Altbefunde zum Doppelpunkt.
 | Literaturverzeichnis | 82 bis 88 | am 27.09.2026 vereinheitlicht |
 | Anhänge A bis H | 93 bis 121 | stehen |
 
-**Der Hauptteil hat 81 Seiten, Ziel sind 80.** Vor `c482ffb` waren es 80;
-die zwölf eingearbeiteten Betreuerkommentare haben eine Seite gekostet.
-Kandidaten zum Kürzen: Kapitel 6 (K3 hat zwei Absätze) oder die längeren
-Absätze in 5.2 (19 und 13 Sätze).
+**Der Hauptteil hat 80 Seiten** (Stand 28.09.2026: 129 Seiten, Kapitel 6
+S. 77 bis 80, Literaturverzeichnis ab S. 81). Die Seite, die die zwölf
+Betreuerkommentare gekostet hatten, ist mit zwei kompakteren Sätzen im
+Aufbau-Absatz von 1.3 zurückgewonnen.
+
+**Die Quelldateien sind seit dem 28.09.2026 ohne Kommentare.** Auf Vorgabe
+des Verfassers sind alle 6938 Kommentarzeilen aus Kapiteln, Anhängen,
+Kurzfassung, Abkürzungen und `main.tex` entfernt (nicht aus
+`extras/header.tex`). Ersetzter Fließtext wird seither **nicht mehr als
+Kommentar in der Datei erhalten**, sondern allein im Protokoll festgehalten;
+CLAUDE.md Abschnitt 10 ist insoweit überholt.
 
 **Kapitel 5 nach dem Durchgang vom 27.09.2026.** Einleitung, 5.1 mit neun
 Absätzen (A1 Reaktionszeit, A2 Vergütung mit Abrufvergütung und

@@ -1,28 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                       IAEW LaTeX Template                        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% This file contains the abstract for your thesis in both versions, german and english. The correct order will be set depending on your language you have choosen in the personal settings file.
-
-% ===============================================================
-% GESCHRIEBEN am 27.09.2026. Beide Fassungen sind hart auf eine Seite
-% begrenzt, gleich gebaut in vier Absaetzen: Problem und Luecke,
-% Entwurf und Methode, Ergebnisse mit vier Zahlen, Schluss. Absatz 1
-% folgt der Vorgabe des Verfassers vom 27.09.2026 in den Woertern der
-% Arbeit: dauerhaft zulaessiger Grenzwert statt Dauerstrombelastbarkeit,
-% Netzsicherheitsrechnung und Ausfallvariante statt
-% Ausfallvariantenrechnung, voruebergehend zulaessige Ueberlast statt
-% transiente Ueberlastfaehigkeit. Entscheidungen des Verfassers: Zahlen
-% ja, ohne Nachkommastellen; der Titel wird in Absatz 2 gespiegelt;
-% aFRR als Akronym. Keine Zitate, keine Dopplung der Einleitung, die
-% das geografische Missverhaeltnis und den Aufbau traegt.
-% Englische Begriffe: curative system operation, curative reservation,
-% curative reservation price, curative provision, congestion management,
-% redispatch, commitment period, energy reserved per activation, aFRR
-% capacity price, energy price of preventive redispatch.
-% ===============================================================
-
-%% English abstact
 \newcommand{\varAbstractEnglish}
 {\chapter*{Abstract}
 Congestion management in the German transmission grid keeps the (N-1) criterion mainly by preventive means, since the security assessment checks every contingency against the permanently admissible limit and keeps a safety margin below it by redispatch.
@@ -48,7 +23,6 @@ BESS belong in congestion management, and curative system operation fits their t
 This requires extending congestion management by a remuneration of reserved capacity alongside Section 13a of the German Energy Industry Act.
 Curative system operation with BESS and renewable plants thus uses the existing grid more efficiently without reducing its security.
 }
-%% German abstract
 \newcommand{\varAbstractGerman}
 {\chapter*{Kurzfassung}
 Das Engpassmanagement im deutschen Übertragungsnetz hält das \mbox{(N-1)-Kriterium} vor allem präventiv ein, denn die Netzsicherheitsrechnung prüft jede Ausfallvariante gegen den dauerhaft zulässigen Grenzwert und wahrt darunter eine Sicherheitsmarge durch Redispatch.
@@ -74,7 +48,6 @@ Die Einplanung hängt deshalb an der Zeit ebenso wie am Engpassmuster im Netz.
 Dafür ist das Engpassmanagement um eine Vergütung der vorgehaltenen Leistung neben §\,13a \ac{EnWG} zu erweitern.
 Die kurative Systemführung mit \acs{BESS} und erneuerbaren Anlagen nutzt das bestehende Netz damit effizienter, ohne seine Sicherheit zu mindern.
 }
-% Include abstracts depending on chosen language
 \ifthenelse{\equal{\varLanguage}{german}}
 	{\varAbstractGerman
 	\varAbstractEnglish}

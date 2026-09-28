@@ -3056,6 +3056,27 @@ Im Wurzelverzeichnis bleiben CLAUDE.md, HANDOFF.md, WORKFLOW.md,
 ENTSCHEIDUNGSPROTOKOLL.md und README.md. CLAUDE.md ist nicht geaendert,
 die noetigen Nachzuege stehen in HANDOFF.md Abschnitt 5 Punkt 4.
 
+### 28.09.2026, alle Kommentarzeilen aus den Quelldateien entfernt
+
+Vorgabe des Verfassers: das LaTeX-Dokument soll sauber sein, alle Kommentare
+entfernen. Entfernt sind alle Zeilen, die mit einem Prozentzeichen beginnen,
+in chapter_1 bis chapter_6, den acht Anhaengen, abstract.tex,
+abbreviations.tex und main.tex, zusammen 6938 Zeilen (Kapitel 1: 511, 2:
+2341, 3: 56, 4: 1235, 5: 2284, 6: 216, uebrige 295). Prozentzeichen im
+Fliesstext bleiben, entstandene doppelte Leerzeilen sind auf eine
+zusammengezogen. Geprueft: Fliesstext Zeile fuer Zeile unveraendert (Skript),
+Text des gebauten PDF vor und nach dem Lauf identisch (pdftotext), Build
+ohne Fehler und Warnung, pruefen.py --alle ohne Befund. Nicht angefasst:
+extras/header.tex, weil dort Kommentarzeilen in Makrodefinitionen stehen.
+Die entfernten alten Fassungen stehen in diesem Protokoll und in der
+Git-Historie bis 22b63f3.
+
+Folge fuer die Arbeitsweise, dem Verfasser gemeldet und ohne Widerspruch
+angewandt: ersetzter Fliesstext wird nicht mehr als Kommentar in der
+Kapiteldatei erhalten, sondern allein hier im Protokoll festgehalten.
+CLAUDE.md Abschnitt 10 nennt noch die Kommentarregel, der Verfasser zieht
+selbst nach.
+
 ## chapter_1.tex
 
 ### 28.08.2026, chapter_1.tex, Kopf und Abschnitt 1.2
@@ -4318,6 +4339,22 @@ Grenze von acht Saetzen ist seit dem 27.09.2026 aufgehoben.
 
 **Geprueft.** python tools/pruefen.py chapter_1.tex ohne Befund nach jeder
 der drei Aenderungen.
+
+### 28.09.2026, Aufbau der Arbeit kompakter, Einleitung wieder auf fuenf Seiten
+
+Nach den zwoelf Betreuerkommentaren (c482ffb) lief die letzte Zeile der
+Einleitung auf eine sechste Seite. Zwei Saetze im Aufbau-Absatz sind
+kompakter, Vorgabe des Verfassers. Alt: Den Abschluss des Kapitels bildet
+die Pruefung des Referenzerloeses gegen einen veroeffentlichten Index der
+Erloese, die BESS am deutschen Markt erzielen. Neu: Den Abschluss bildet die
+Pruefung des Referenzerloeses gegen einen veroeffentlichten Erloesindex fuer
+BESS am deutschen Markt. Alt: In Kapitel 5 werden der kurative
+Marktmechanismus, der kurative Reservierungspreis mit seinen Sensitivitaeten
+und in Teilen die kurative Systemfuehrung im Engpassmanagement diskutiert.
+Neu: ... der kurative Reservierungspreis und die kurative Systemfuehrung im
+Engpassmanagement diskutiert. Kapitel 2 beginnt wieder auf Seite 6, das
+Dokument hat 129 Seiten, Literaturverzeichnis ab Seite 81, Hauptteil 80
+Seiten.
 
 ## chapter_2.tex
 

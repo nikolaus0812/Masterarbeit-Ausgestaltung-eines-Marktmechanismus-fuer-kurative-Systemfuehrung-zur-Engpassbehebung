@@ -1,119 +1,18 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%                       IAEW LaTeX Template                        %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% TITEL GEAENDERT am 22.09.2026, Entscheidung des Verfassers nach
-% ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 1.6. "Exemplarisch" trifft nicht
-% mehr, weil das ganze Jahr 2025 gerechnet ist und das Exemplarische in
-% Kapitel 3 steht. Alte Fassung, nicht wieder aufzunehmen:
-%\chapter{Exemplarische Anwendung und Ergebnisse}
 \chapter{Ergebnisse}
 \label{ch:results}
-% ABBILDUNGSLAGE am 22.09.2026, Vorgabe des Verfassers: kein Abschnitt
-% beginnt mit einem Bild. Alle acht Gleitumgebungen dieses Kapitels
-% standen vor dem Absatz, der sie einfuehrt, sechs davon unmittelbar
-% hinter einer Ueberschrift. Jede Abbildung steht jetzt hinter ihrem
-% einfuehrenden Absatz. Einheitlich auch fuer die beiden Abbildungen
-% im Inneren von 4.4 und 4.6.1, damit das Kapitel eine Reihenfolge
-% traegt. Der Fliesstext ist dabei Wort fuer Wort unveraendert
-% geblieben, allein die Stellung der figure-Umgebungen ist neu.
-% ===============================================================
-% UMBAU am 22.09.2026 nach ANWEISUNG_LIEFERUNG_ABBILDUNGEN.md (Stand
-% 22.09.2026) aus dem Analyse-Repository bess_dispatch_optimization. Diese
-% Fassung ersetzt das Stichpunktgeruest der Sortierung vom 18.09.2026
-% vollstaendig; jenes steht in der Git-Historie.
-%
-% ROTER FADEN nach Abschnitt 1 der Anweisung: erst WAS verdraengt wird
-% (4.1), dann WAS ES KOSTET (4.2), dann die Verteilung (4.3), dann WANN
-% (4.4), dann WOFUER, also gegen den Engpassbedarf (4.5), zuletzt WIE
-% BELASTBAR (4.6 Sensitivitaeten).
-%
-% ZWEI HARTE REGELN der Anweisung:
-%   1. Keine Zahl ist aus einer Abbildung abgelesen. Jede Zahl steht in
-%      ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 7 oder in Abschnitt 4
-%      der Anweisung und ist dort am 22.09.2026 gegen die Parquet-Dateien
-%      nachgerechnet.
-%   2. In das Analyse-Repository wird nicht geschrieben.
-%
-% ABSCHNITTSNUMMERN. Die Anweisung nennt die Sensitivitaeten 4.7 und die
-% Diskussion 4.8, streicht aber zugleich den frueheren Abschnitt 4.6
-% (Zahlung bei vollstaendiger Bindung). Beides zugleich ginge nur mit einer
-% Luecke in der Nummerierung. Hier zaehlt LaTeX fortlaufend, die
-% Sensitivitaeten sind also 4.6 und die Diskussion 4.7. Die Marken tragen
-% die Sache und nicht die Nummer, sodass Verweise stabil bleiben.
-%
-% GRUNDGESAMTHEIT durchgehend: Jahr 2025, 365 Tage, 8758 Stunden je
-% Richtung (8760 abzueglich der beiden gesperrten Stunden der
-% Zeitumstellung), zweite Iteration. Erloese in Tausend Euro je Megawatt
-% und Jahr, Preise in Euro je Megawatt und Stunde.
-%
-% OFFEN nach Abschnitt 5 der Anweisung: 4.6.3 (Handelsspanne am IDC) und
-% 4.6.4 (Zukunft) warten auf die Jahreslaeufe sensi8, die seit dem
-% 22.09.2026 08:36 rechnen. Bis dahin bleiben die Abschnitte leer und
-% werden nicht mit den Einzeltagsfassungen gefuellt.
-% ===============================================================
 
-% NEU GEFASST am 22.09.2026, Vorgabe des Verfassers. Die Einleitung beginnt
-% jetzt mit dem Zweck der Untersuchung statt mit dem Rechenaufbau. Alles zur
-% Modellierung ist gestrichen, weil es in Kapitel 3 steht: der gleiche
-% Anfangs- und Endladezustand in 3.2.2, die Behandlung der Zeitumstellung in
-% 3.2.3, die Bezugsanlage mit 100 MW in 3.2.2 und der Vollreservierungspreis
-% der zweiten Iteration in 3.2.4. Geblieben sind die Einheiten und der Umfang
-% der Auswertung. Der dritte Absatz war ein struktureller Vorverweis nach
-% Stilregel 15 und entfaellt; der Satz zur Referenzrechnung der
-% Sensitivitaeten steht jetzt in der Einleitung von Abschnitt 4.6.
-% ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
-%In Abschnitt~\ref{sec:validation_function} ist die Funktionsweise des Verfahrens am 11.02.2025 geprüft, und offen bleibt die Höhe des kurativen Reservierungspreises über ein ganzes Jahr.
-%Das Optimierungsmodell rechnet deshalb jeden Tag des Jahres 2025 für sich, mit gleichem Anfangs- und Endladezustand, sodass die Tage untereinander vergleichbar bleiben.
-%Ausgewertet werden 365 Tage und damit 8758 Stunden je Richtung, denn an den beiden Tagen der Zeitumstellung ist je eine Stunde gesperrt.
-%Bezugsanlage ist das \ac{BESS} nach Abschnitt~\ref{sec:storage_model} mit einer Nennleistung von 100\,\si{MW}.
-%Alle Erlöse dieses Kapitels sind auf diese Nennleistung bezogen und in Tausend Euro je Megawatt und Jahr angegeben, alle Preise in \EurMWh{}.
-%Der ausgewiesene kurative Reservierungspreis stammt aus der zweiten Iteration des Verfahrens nach Abschnitt~\ref{sec:reservation_price_search}, weil allein der Preisvektor der zweiten Iteration alle Stunden eines Tages zugleich voll reserviert.
-%Die erste Iteration erscheint in diesem Kapitel nur im Erlösvergleich des Abschnitts~\ref{sec:iteration_prices}, wo der Unterschied zwischen beiden Iterationen die Aussage trägt.
-%Das Verfahren liefert in allen 8758 Stunden beider Richtungen einen endlichen Preis, sodass keine Stunde als untere Schranke in die Auswertung eingeht.
-%Die folgenden Abschnitte gehen in fünf Schritten vor.
-%In Abschnitt~\ref{sec:dispatch_displacement} wird gezeigt, welche Märkte die kurative Reservierung mit steigendem Preis verdrängt.
-%Abschnitt~\ref{sec:iteration_prices} beziffert, was die vollständige Verdrängung den \ac{ÜNB} kostet, und Abschnitt~\ref{sec:price_distribution} stellt die Verteilung der Preise über das Jahr dar.
-%In den Abschnitten~\ref{sec:price_pattern} und~\ref{sec:price_vs_redispatch} wird der kurative Reservierungspreis nach Tages- und Jahreszeit eingeordnet und gegen den Engpassmanagementbedarf gehalten.
-%Abschnitt~\ref{sec:sensitivities} prüft zuletzt, wie stark die Annahmen des Optimierungsmodells das Ergebnis tragen.
 Gesucht ist der kurative Reservierungspreis, also der Betrag, den ein Betreiber für die Vorhaltung mindestens fordern muss, um durch die Reservierung nicht schlechter zu stehen als ohne sie.
 Maßgeblich ist dafür die Sicht des Betreibers, denn der Preis folgt aus seinem Betrieb, aus seinen einzelnen Erlösmöglichkeiten und aus der Verteilung des Erlöses auf diese Quellen.
 Zu Anfang ist deshalb zu verstehen, wie ein höherer vorgegebener Reservierungspreis auf den Dispatch wirkt.
-% GEAENDERT am 26.09.2026, Kapiteleinleitung: Abschnitt 4.2 behandelt die Erloeswirkung beider Iterationen, die nicht angekuendigt war
-% Alte Fassung, nicht wieder aufzunehmen:
-%Darauf folgen Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025.
 Darauf folgen die Erlöswirkung der Reservierung sowie Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025.
 Anschließend ist der kurative Reservierungspreis zeitlich gegen das Engpassmanagement zu halten, nämlich gegen dessen Volumen und gegen dessen Kosten.
 Zuletzt prüfen drei Sensitivitäten, wie stark die Annahmen über die einzelnen Märkte den Preis tragen.
 Eine Zukunftsvariante zeigt darüber hinaus, wie sich der kurative Reservierungspreis unter der Annahme einer günstigeren Preisentwicklung verhält.
-% GEAENDERT am 26.09.2026, Einheiten: das Kapitel nennt daneben Energiepreise in Euro je Megawattstunde, etwa in 4.3 und 4.5; CLAUDE.md Abschnitt 8
-% Alte Fassung, nicht wieder aufzunehmen:
-%Alle Preise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), alle Erlöse in Tausend Euro je Megawatt und Jahr (\TsdEurMWa{}).
 Alle kurativen Reservierungspreise dieses Kapitels stehen in Euro je Megawatt und Stunde (\EurMWh{}), alle Erlöse in Tausend Euro je Megawatt und Jahr (\TsdEurMWa{}).
 
-% ---------------------------------------------------------------
 \section{Verlauf des Dispatch und Verdrängung der Märkte}
 \label{sec:dispatch_displacement}
-% Anweisung Abschnitt 4.1 und AUFBAU_KAPITEL_4.md 4.1. Keine eigene
-% Abbildung, Verweis auf die Preisgitterseiten in Anhang F.
-% Zahlen aus ERGEBNISSE_VERDRAENGUNG_UND_AFRR.md Abschnitt 2, 2.1 und 2.2.
 
-% NEU GESCHRIEBEN am 22.09.2026 nach Update 4 des Analyse-Repositorys. Der
-% Satz der Analysetage ist von vier auf fuenf gewachsen, und zwei der vier
-% bisher belegten Aussagen sind an den neuen Tagen widerlegt: die FCR wird am
-% 06.05.2025 sehr wohl verdraengt, und am 20.01.2025 weicht der DA als
-% letzter Markt statt als erster. Die alte Fassung beruhte auf vier Tagen
-% ohne DA-Spread-Extrem und ohne Tag mit teurer FCR bei billiger aFRR.
-% ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
-%Der kurative Reservierungspreis misst die Opportunitätskosten der zuletzt reservierten Leistung, sodass seine Höhe davon abhängt, welche Vermarktung die Reservierung verdrängt.
-%Um diese Reihenfolge sichtbar zu machen, ist der Fahrplan an vier Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200 EurMWh gerechnet.
-%Die vier Tage sind der 11.02., der 22.02., der 15.05. und der 26.08.2025, und die zugehörigen Kachelfolgen stehen in Anhang F.
-%Die FCR tritt an keinem der vier Tage und bei keinem der zehn Preise auf, sodass sie an diesen Tagen als verdrängte Vermarktung ausfällt.
-%Der DA weicht als erster Markt, denn an drei der vier Tage fällt die dort gebundene Leistung schon zwischen 10 und 15 EurMWh unter ein Zehntel ihres Ausgangswertes.
-%Der DA ist mit 7,3 Prozent zugleich der kleinste Posten des Referenzerlöses, sodass sein Rückzug den Erlös des Betreibers wenig kostet.
-%Die aFRR-Leistung weicht dagegen zuletzt und setzt damit den kurativen Reservierungspreis.
-%Am 11.02.2025 hält die aFRR-Leistung bis 20 EurMWh, am 26.08.2025 bis 150 EurMWh und am 15.05.2025 bis zum höchsten gerechneten Preis.
-%Die Reihenfolge der Verdrängung ist an allen vier Tagen dieselbe, die Preise ihres Eintretens unterscheiden sich jedoch um den Faktor zehn, sodass die Reihenfolge und nicht die Schwelle den übertragbaren Teil des Befundes bildet.
 Welche Vermarktung die kurative Reservierung verdrängt, zeigt der Fahrplan unter vorgegebenen Preisen.
 Dafür ist der Speicherbetrieb an fünf Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen null und 200\,\EurMWh{} gerechnet, und die zugehörigen Fahrpläne stehen in Anhang~\ref{anh:preisgitter}.
 Die fünf Tage decken je ein Extrem der geführten Märkte ab, nämlich der 20.01.2025 den größten Spread am \ac{DA}, der 11.02.2025 den größten Redispatchbedarf, der 15.05.2025 die höchsten Preise der \ac{FCR} und der \ac{aFRR}-Leistung und der 26.08.2025 die größte Tagesspanne des \ac{ID1}.
@@ -121,171 +20,33 @@ Der 06.05.2025 tritt daneben, weil dort hohe Preise der \ac{FCR} auf niedrige Pr
 Ein steigender vorgegebener Preis macht die kurative Reservierung für den Betreiber lohnender, sodass die Reservierung nacheinander die Leistung übernimmt, die zuvor an den übrigen Märkten gebunden war.
 Die im Folgenden genannten Leistungen sind Tagesmittel über beide Richtungen, deren Summe höchstens 200\,\si{MW} beträgt.
 
-% UMGESTELLT am 22.09.2026, Vorgabe des Verfassers: die Befunde stehen jetzt
-% in zwei Absaetzen statt in fuenf. Der erste geht die Tage vergleichend
-% durch, der zweite traegt, was ueber alle oder mehrere Tage gilt. Die
-% Aussagen und Zahlen sind unveraendert, allein ihre Reihenfolge ist neu.
-% Der Befund zur Umschichtung steht im ersten Absatz, weil er auf einem Tag
-% beruht. ZURUECKGENOMMENE REIHENFOLGE, nicht wieder aufzunehmen:
-%Die Reihenfolge, in der die Märkte weichen, folgt der Preisstruktur des Tages und nicht einer festen Rangordnung.
-% BERICHTIGT am 22.09.2026. Der Satz nannte den 11.02.2025 als Tag, an dem
-% der Day-Ahead zuerst weicht. Das widerspricht ERGEBNISSE Abschnitt 2.1:
-% dort halbiert sich am 11.02. die aFRR-Leistung bei 10 und der Day-Ahead
-% erst bei 15 Euro je Megawatt und Stunde. Uebernommen war die Aussage aus
-% Abschnitt 2.3 derselben Datei, der seiner eigenen Tabelle widerspricht.
-% Belegt ist der Day-Ahead als Erster am 26.08.2025. Alte Fassung:
-%Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, und das ist am 11.02.2025 der \ac{DA}, am 06.05.2025 die \ac{FCR} und am 20.01.2025 die \ac{aFRR}-Leistung.
-%Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, und das ist am 26.08.2025 der \ac{DA}, am 06.05.2025 die \ac{FCR} und am 20.01.2025 die \ac{aFRR}-Leistung.
-%Am 20.01.2025 fällt die \ac{aFRR}-Leistung schon bei 5\,\EurMWh{} auf die Hälfte ihres Ausgangswertes und ist bei 30\,\EurMWh{} verschwunden.
-%Der \ac{DA} hält dort bis 50\,\EurMWh{} mehr als die Hälfte und fällt erst bei 100\,\EurMWh{} unter ein Zehntel, weicht an diesem Tag also als letzter Markt.
-%Eine Aussage der Art, ein bestimmter Markt weiche zuerst, beschreibt damit den gewählten Tag und nicht den Mechanismus.
-%Die Verdrängung ist dabei nicht allein ein Abbau.
-%Am 20.01.2025 steht der \ac{DA} bei 15\,\EurMWh{} mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage einen Teil der von der \ac{aFRR} frei werdenden Leistung dorthin verschiebt.
-%Zwischen den Märkten wird also umgeschichtet und nicht nur abgebaut.
-%Dieser Befund beruht allerdings auf einem Tag und einem Preispunkt.
-%Die \ac{FCR} tritt an vier der fünf Tage überhaupt nicht auf, am 06.05.2025 dagegen in 16 der 96 Zeitscheiben mit im Mittel 1,95\,\si{MW} je Richtung.
-%Schon bei 10\,\EurMWh{} ist sie dort vollständig verdrängt und damit der billigste Verdrängungskandidat aller geführten Märkte.
-%Dass die \ac{FCR} im Referenzfall nur 2,0 Prozent des Bruttoerlöses trägt, passt dazu, denn sie lohnt sich für die Bezugsanlage nur an wenigen Tagen des Jahres.
-%Sichtbar wird sie erst an einem Tag mit hohen Preisen der \ac{FCR} und zugleich niedrigen Preisen der \ac{aFRR}-Leistung.
-%Zwei Befunde halten dagegen an allen fünf Tagen.
-%Der \ac{IDC} überlebt länger, als sein Anteil am Referenzerlös erwarten lässt, denn am 26.08.2025 bleiben dort auch bei 200\,\EurMWh{} noch 8,8\,\si{MW} gebunden.
-%Die Ursache liegt in der Handelsform, denn der kontinuierliche Handel braucht keinen zusammenhängenden Block und nutzt die Leistung, die die Reservierung in einzelnen Viertelstunden übrig lässt.
-%Die \ac{aFRR}-Leistung weicht an vier der fünf Tage zuletzt oder vorletzt und setzt damit in der Regel den kurativen Reservierungspreis.
-%Am 15.05.2025 hält sie selbst beim höchsten gerechneten Preis noch 16,7\,\si{MW}.
-%Wie vollständig sich die Bezugsanlage binden lässt, hängt stärker vom Tag ab als vom vorgegebenen Preis.
-%Am 11.02.2025 ist sie bei 20\,\EurMWh{} zu 98 Prozent gebunden und am 06.05.2025 bei 50\,\EurMWh{} zu 97 Prozent, am 15.05.2025 dagegen erst bei 200\,\EurMWh{} zu 89 Prozent.
-%An Tagen mit hohen Preisen der \ac{aFRR}-Leistung ist die vollständige Verdrängung somit nicht allein teurer, sondern bleibt auch unvollständig.
-%Alle Befunde dieses Abschnitts beruhen auf fünf Tagen und belegen damit die möglichen Reihenfolgen, nicht ihre Häufigkeit über das Jahr.
-
-% UMGESTELLT am 22.09.2026, Vorgabe des Verfassers: der Absatz wiederholte
-% den Schwellenlauf des Anhangs. Er zeigt jetzt je Tag den Markt, fuer den
-% der Tag ausgewaehlt ist, und hoechstens eine auffaellige
-% Gegenueberstellung. Am Redispatchtag stehen die Handelsmaerkte im
-% Vordergrund, weil sie fuer den Redispatch die naheliegenden sind.
-% ZURUECKGENOMMEN, nicht wieder aufzunehmen:
-%Die fünf Tage unterscheiden sich darin, welcher Markt zuerst weicht und wie weit die Verdrängung überhaupt reicht.
-%Am 20.01.2025 gibt die \ac{aFRR}-Leistung zuerst nach, denn sie fällt bei 5\,\EurMWh{} auf gut die Hälfte und ist bei 30\,\EurMWh{} verschwunden.
-%Der \ac{DA} hält dort bis 50\,\EurMWh{} mehr als die Hälfte und fällt erst bei 100\,\EurMWh{} unter ein Zehntel.
-%Bei 15\,\EurMWh{} steht er sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage einen Teil der von der \ac{aFRR} frei werdenden Leistung dorthin verschiebt.
-%Verdrängung ist dort also Umschichtung und nicht allein Abbau, wobei dieser Befund auf einem Tag und einem Preispunkt beruht.
-%Am 26.08.2025 kehrt sich die Reihenfolge um, denn dort halbiert sich der \ac{DA} bereits bei 10\,\EurMWh{}.
-%Der \ac{IDC} hält an diesem Tag auch beim höchsten gerechneten Preis noch 8,8\,\si{MW}.
-%Am 06.05.2025 tritt als einzigem der fünf Tage die \ac{FCR} auf, nämlich in 16 der 96 Zeitscheiben mit im Mittel 1,95\,\si{MW} je Richtung.
-%Sie ist schon bei 10\,\EurMWh{} vollständig verdrängt und damit der billigste Verdrängungskandidat aller geführten Märkte.
-%Am weitesten kommt die Verdrängung am 11.02.2025, wo die Bezugsanlage bereits bei 20\,\EurMWh{} zu 98 Prozent gebunden ist.
-%Am wenigsten weit kommt sie am 15.05.2025, wo sie selbst bei 200\,\EurMWh{} erst 89 Prozent erreicht und die \ac{aFRR}-Leistung noch 16,7\,\si{MW} hält.
 Im Vergleich der fünf Tage fällt Folgendes auf.
 Am 20.01.2025 weicht der \ac{DA} erwartungsgemäß als letzter Markt, denn er trägt dort den größten Spread des Jahres.
 Der \ac{IDC} ist an diesem Tag bei 100\,\EurMWh{} verschwunden, während der \ac{DA} bis zum höchsten gerechneten Preis belegt bleibt.
-% GEAENDERT am 26.09.2026, Stilregel 5: er konnte IDC oder DA meinen
-% Alte Fassung, nicht wieder aufzunehmen:
-%Bei 15\,\EurMWh{} steht er dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
 Bei 15\,\EurMWh{} steht der \ac{DA} dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
 Am 11.02.2025 tragen die Handelsmärkte den Betrieb, denn der Ladezustand zeigt zwei Zyklen.
 Der \ac{DA} und der \ac{IDC} halten dort länger als die \ac{aFRR}-Leistung.
 Ab 50\,\EurMWh{} ist an diesem Tag die volle Leistung von 200\,\si{MW} über alle 24 Stunden kurativ reserviert.
 
-% ABSATZ GETEILT am 26.09.2026: der Absatz hatte elf Saetze, Stilregel 1. Die ersten beiden Tage tragen den DA, die drei folgenden FCR, aFRR und IDC.
 Am 06.05.2025 tritt als einzigem der fünf Tage die \ac{FCR} auf, nämlich in 16 der 96 Zeitscheiben, und sie ist schon bei 10\,\EurMWh{} verdrängt.
-% GESTRICHEN am 23.09.2026, Vorgabe des Verfassers: die MW-Angabe ist ein
-% Tagesmittel ueber beide Richtungen und sagt nicht, ob der Markt in wenigen
-% Slots mit viel oder in allen mit wenig Leistung gehalten wird. Die Aussage
-% traegt der folgende Satz mit den 11 Prozent. Zurueckgenommene Fassung:
-%Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum lösen, denn sie hält auch beim höchsten gerechneten Preis noch 16,7\,\si{MW}.
 Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum lösen, denn sie bleibt auch beim höchsten gerechneten Preis belegt.
 Die Bezugsanlage bleibt dort zu 11 Prozent ungebunden.
-%Am 26.08.2025 hält der \ac{IDC} bis zum höchsten gerechneten Preis 8,8\,\si{MW}, während der \ac{DA} dort als erster Markt weicht.
 Am 26.08.2025 bleibt der \ac{IDC} bis zum höchsten gerechneten Preis belegt, während der \ac{DA} dort als erster Markt weicht.
 
-% ZUSAMMENGELEGT am 23.09.2026, Vorgabe des Verfassers. Der Abschnitt trug
-% zwei Schlussbloecke, naemlich vier Aussagen aus dem Vergleich und drei
-% Saetze aus der Untersuchung. Beide sind zu einem Absatz mit der
-% gleichbleibenden Eroeffnungsformel verbunden, und die Aussagen sind so
-% aufgebaut, dass jeder Satz etwas mitgibt. Zurueckgenommene Fassung, nicht
-% wieder aufzunehmen:
-%Aus dem Vergleich folgen vier Aussagen, die alle fünf Tage tragen.
-%Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, sodass die Reihenfolge der Märkte der Preisstruktur des Tages folgt.
-%Eine feste Preismarke, ab der ein bestimmter Markt weicht, lässt sich deshalb nicht angeben, und die Aussage, ein bestimmter Markt weiche zuerst, gilt jeweils nur für den gewählten Tag.
-%Die \ac{aFRR}-Leistung weicht an vier der fünf Tage zuletzt oder vorletzt, sodass sie in der Regel den kurativen Reservierungspreis setzt.
-%Der \ac{IDC} bindet zwar deutlich weniger Leistung als die \ac{aFRR}, hält sich aber an mehreren Tagen länger als der \ac{DA}.
-%Die Ursache liegt in der Handelsform, denn der kontinuierliche Handel braucht keinen zusammenhängenden Block und nutzt die Leistung, die die Reservierung in einzelnen Viertelstunden übrig lässt.
-%Die \ac{FCR} spielt für die Bezugsanlage kaum eine Rolle, denn sie tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}.
-%Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung, während der \ac{IDC} seinen Wert aus großen Preisspannen in wenigen Stunden zieht.
-%Der \ac{DA} kann daneben an einzelnen Tagen arbitragereich sein, und die Bezugsanlage verschiebt dann Leistung dorthin, statt sie abzubauen.
-%Der kurative Reservierungspreis wird damit nicht von einem einzelnen Markt bestimmt, sondern bis auf die \ac{FCR} von allen.
-% VARIIERT am 23.09.2026, Vorgabe des Verfassers: der Satz stand sechsmal
-% gleichlautend im Kapitel. Zurueckgenommene Fassung, an dieser Stelle nicht
-% wieder aufzunehmen: Aus dieser Untersuchung laesst sich Folgendes
-% mitnehmen.
 Die Verdrängung der Märkte lässt sich damit in vier Punkten fassen.
-% GEKUERZT UND BERICHTIGT am 23.09.2026, Vorgabe des Verfassers.
-% Erstens sind die beiden ersten Saetze zu einem verbunden, denn dass eine
-% erloesmaximierende Optimierung zuerst den schwaechsten Markt verdraengt,
-% ist erwartbar und braucht keinen eigenen Satz.
-% Zweitens ist die Angabe, die aFRR-Leistung weiche an vier der fuenf Tage
-% zuletzt oder vorletzt, NICHT BELEGT und deshalb gestrichen. Nach ERGEBNISSE
-% Abschnitt 2.1 faellt die aFRR-Leistung am 20.01. und am 11.02. als erste
-% auf die Haelfte, naemlich schon bei 10 Euro je Megawatt und Stunde; die am
-% 23.09.2026 berichtigte Tabelle in Abschnitt 2.3 sagt dasselbe. Die Aussage,
-% dass die aFRR-Leistung den Preis setzt, steht jetzt auf der
-% Jahresauswertung in analysen/zeitmuster_ursachen mit einer Rangkorrelation
-% von 0,90 ladend und 0,74 entladend.
-% Drittens traegt der IDC-Satz die Begruendung des Verfassers, naemlich
-% wenige Viertelstunden mit hohen Arbitragegewinnen. Die Reichweite ist an
-% Abschnitt 2.1 geprueft: der IDC faellt am 06.05. und am 26.08. spaeter auf
-% die Haelfte als aFRR-Leistung und Day-Ahead, also an zwei der fuenf Tage.
-% Zurueckgenommene Fassungen, nicht wieder aufzunehmen:
-%Verdrängt wird zuerst, was an diesem Tag am wenigsten einbringt, sodass die Reihenfolge der Märkte der Preisstruktur des jeweiligen Tages folgt.
-%Eine Preismarke, ab der ein bestimmter Markt weicht, lässt sich deshalb nur für den einzelnen Tag angeben.
-%Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung und weicht an vier der fünf Tage zuletzt oder vorletzt, sodass sie in der Regel den kurativen Reservierungspreis setzt.
-%Der \ac{IDC} bindet weniger Leistung als die \ac{aFRR}, hält sich aber an mehreren Tagen länger als der \ac{DA}, weil der kontinuierliche Handel keinen zusammenhängenden Block braucht.
-%Die \ac{FCR} tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}, sodass der kurative Reservierungspreis von allen Märkten bis auf die \ac{FCR} bestimmt wird.
 Die Märkte sind an verschiedenen Tagen verschieden erlösreich, sodass sich für keinen von ihnen ein einheitlicher Verdrängungspreis angeben lässt.
 Die \ac{aFRR}-Leistung bindet an jedem Tag den größten Teil der Leistung und setzt über das Jahr den kurativen Reservierungspreis.
 Der \ac{IDC} bindet weniger Leistung, hält sich an zwei der fünf Tage aber länger als die \ac{aFRR}-Leistung und der \ac{DA}, weil dort wenige Viertelstunden hohe Arbitragegewinne tragen.
 Die \ac{FCR} tritt nur an einem der fünf Tage auf und weicht dort schon bei 10\,\EurMWh{}, sodass sie für den kurativen Reservierungspreis kaum ins Gewicht fällt.
 
-% ---------------------------------------------------------------
 \section{Preise beider Iterationen und Erlöswirkung}
 \label{sec:iteration_prices}
-% Anweisung Abschnitt 4.2, Zahlen aus ERGEBNISSE Abschnitt 7.8 und 1.
-% Abbildungshinweis der Anweisung: Degradation links der Nulllinie, die
-% Zahl am Balkenende ist der Gesamterloes nach Degradation, die
-% gestrichelte Linie markiert den Referenzwert.
 
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: Abschnitt 4.2 leitet
-% von der tageweisen Betrachtung des Abschnitts 4.1 in die Jahresbetrachtung
-% ein. Der Absatz traegt deshalb zuerst den Uebergang und danach die
-% Aufteilung des Referenzerloeses. Die Einheit steht seit demselben Tag
-% durchgehend als Makro \TsdEurMWa, ausgeschrieben allein bei ihrer
-% Einfuehrung in der Kapiteleinleitung. Zurueckgenommene Fassung:
-%Woher der Erlös ohne kurative Bindung stammt, entscheidet darüber, was die Reservierung kostet.
-%Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös nach Märkten auf: die \ac{aFRR}-Leistung trägt 235,1, der \ac{IDC} 50,2, die \ac{aFRR}-Arbeit 40,1, der \ac{DA} 26,1 und die \ac{FCR} 7,1 Tausend Euro je Megawatt und Jahr.
-%Von dem Bruttoerlös von 358,6 Tausend Euro je Megawatt und Jahr zieht das Optimierungsmodell 18,0 für die Degradation ab, sodass der Referenzerlös 340,6 Tausend Euro je Megawatt und Jahr beträgt.
-%Leistung und Arbeit der \ac{aFRR} tragen zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
-%Die fünf Tage zeigen die möglichen Reihenfolgen der Verdrängung und nicht das Gewicht der Märkte über das ganze Jahr.
-%Aus den fünf Tagen folgt die Reihenfolge der Verdrängung, aus dem Jahreslauf das Gewicht der einzelnen Märkte.
 Aus einem Jahreslauf über alle Tage lässt sich das Gewicht der einzelnen Märkte bestimmen.
-% GEKUERZT am 23.09.2026, Vorgabe des Verfassers: nicht Preis und Anteil je
-% Markt, sondern einmal die Summe und danach die Aufteilung in Anteilen.
-% Der Absatz faellt damit von acht auf sechs Saetze, und die absoluten Werte
-% je Markt stehen allein in Abbildung 4.1. Zurueckgenommene Fassung, nicht
-% wieder aufzunehmen:
-%Die \ac{aFRR}-Leistung trägt 235,1\,\TsdEurMWa{} und damit 65,6 Prozent des Bruttoerlöses von 358,6\,\TsdEurMWa{}.
-%Der \ac{IDC} ist mit 50,2\,\TsdEurMWa{} und 14,0 Prozent auch über das Jahr der zweitgrößte Posten.
-%Die \ac{aFRR}-Arbeit mit 40,1 und der \ac{DA} mit 26,1\,\TsdEurMWa{} ergänzen die beiden großen Posten, denn die \ac{aFRR}-Arbeit fällt nur bei vorgehaltener \ac{aFRR}-Leistung an.
-%Die \ac{FCR} trägt mit 7,1\,\TsdEurMWa{} und 2,0 Prozent kaum zum Erlös bei.
-%Von dem Bruttoerlös zieht das Optimierungsmodell 18,0\,\TsdEurMWa{} für die Degradation ab, sodass der Referenzerlös 340,6\,\TsdEurMWa{} beträgt.
 Abbildung~\ref{fig:erloesvergleich} teilt den Referenzerlös des Jahres 2025 nach Märkten auf.
 Der Bruttoerlös beträgt 358,6\,\TsdEurMWa{}, und nach Abzug von 18,0\,\TsdEurMWa{} für die Degradation bleibt ein Referenzerlös von 340,6\,\TsdEurMWa{}.
 Auf die \ac{aFRR}-Leistung entfallen 65,6 Prozent des Bruttoerlöses, auf den \ac{IDC} 14,0, auf die \ac{aFRR}-Arbeit 11,2, auf den \ac{DA} 7,3 und auf die \ac{FCR} 2,0 Prozent.
 Die \ac{aFRR}-Arbeit fällt dabei nur bei vorgehaltener \ac{aFRR}-Leistung an.
-% BERICHTIGT am 24.09.2026, Befund A4 der Kontrolllesung: 65,6 und 11,2
-% Prozent ergeben 76,8, der genaue Wert aus 235,1 und 40,1 zu 358,6
-% betraegt 76,7 Prozent. Das Lieferdokument nennt in Abschnitt 1 76,6 und
-% in Abschnitt 7.14 76,7; die Schriftfassung folgt der genauen Rechnung.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Leistung und Arbeit der \ac{aFRR} ergeben zusammen 76,6 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
 Leistung und Arbeit der \ac{aFRR} ergeben zusammen 76,7 Prozent des Bruttoerlöses, sodass die Bezugsanlage im Referenzfall vor allem Regelleistung vorhält und daneben am \ac{IDC} handelt.
 
 \begin{figure}[H]
@@ -295,82 +56,19 @@ Leistung und Arbeit der \ac{aFRR} ergeben zusammen 76,7 Prozent des Bruttoerlös
     \label{fig:erloesvergleich}
 \end{figure}
 
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Absatz stellt die
-% erste Iteration als das teurere Verfahren dar, nennt ihren Rechenaufwand
-% und schliesst mit der vollstaendigen Bindung. Das Wort Preisvektor ist
-% auf Vorgabe des Verfassers vom 23.09.2026 gestrichen und kommt in der
-% Arbeit nicht mehr vor. Der Anteil von 97,6 Prozent ist eine eigene
-% Ableitung aus 409,8 zu 420,0. Zurueckgenommene Fassung:
-%Unter dem Preisvektor der ersten Iteration zahlt der \ac{ÜNB} 409,8 Tausend Euro je Megawatt und Jahr für die Vorhaltung, und die Bezugsanlage verdient daneben noch 88,6 an den übrigen Märkten.
-%Der Preisvektor der ersten Iteration bindet die Leistung damit nicht vollständig, denn ein einheitlicher Preis je Tag lässt die teuren Stunden des Tages frei.
-%Die Summe aus Zahlung und Markterlös liegt mit 498,4 Tausend Euro je Megawatt und Jahr um 46,3 Prozent über dem Referenzerlös.
-%Unter dem Preisvektor der zweiten Iteration zahlt der \ac{ÜNB} 420,0 Tausend Euro je Megawatt und Jahr, und die Bezugsanlage verdient an den übrigen Märkten nichts mehr.
-%Die zweite Iteration verdrängt die übrige Vermarktung also vollständig und kostet dabei 23,3 Prozent mehr als der Referenzerlös, während die unvollständige Bindung der ersten Iteration mit 46,3 Prozent teurer ausfällt.
-%Aus diesem Grund wird in diesem Kapitel der Preisvektor der zweiten Iteration ausgewiesen.
 Die erste Iteration der Preissuche bindet die Leistung nicht vollständig, und der \ac{ÜNB} zahlt dafür dennoch beinahe den vollen Preis.
 Unter den Preisen der ersten Iteration zahlt der \ac{ÜNB} 409,8\,\TsdEurMWa{} für die Vorhaltung und damit 97,6 Prozent der Zahlung unter vollständiger Bindung.
 Die Bezugsanlage verdient daneben noch 88,6\,\TsdEurMWa{} an den übrigen Märkten, sodass ihr Gesamterlös mit 498,4\,\TsdEurMWa{} um 46,3 Prozent über dem Referenzerlös liegt.
 Der verbliebene Markterlös verteilt sich auf die \ac{aFRR}-Leistung mit 60,0, den \ac{IDC} mit 16,4, die \ac{aFRR}-Arbeit mit 8,7 und den \ac{DA} mit 7,3\,\TsdEurMWa{}, von denen das Optimierungsmodell 3,8\,\TsdEurMWa{} für die Degradation abzieht.
-% GESTRICHEN am 23.09.2026, Vorgabe des Verfassers: uninteressant.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die \ac{aFRR}-Leistung bleibt damit auch unter unvollständiger Bindung der größte Posten, sodass die Reservierung alle Märkte im Verhältnis ihres Erlösanteils trifft.
 Ursache ist der für den ganzen Tag einheitliche vorgegebene Reservierungspreis, der die teuren Stunden des Tages frei lässt.
-% BERICHTIGT am 23.09.2026. Die Spanne von 84 bis 167 Laeufen aus Abschnitt
-% 3.2.4 gilt fuer die ausgewerteten Tage und nicht fuer die Jahreslaeufe.
-% Eine Zaehlung des Analyse-Repositorys vom 23.09.2026 ueber 16 Tage, naemlich
-% einen je Monat und die fuenf Analysetage, ergibt fuer beide Iterationen
-% zusammen 341 bis 2284 Laeufe je Tag bei einem Median von 432. Die
-% Aufteilung auf die beiden Iterationen wird gerade gemessen und steht noch
-% aus; bis dahin nennt der Text nur die Summe. Zurueckgenommene Fassung:
-%Günstig ist die erste Iteration allein im Rechenaufwand, denn sie kommt mit 84 bis 167 Läufen des Optimierungsmodells je Tag aus.
-%Die zweite Iteration verlangt dafür einige hundert Läufe je Tag und hebt die Zahlung des \ac{ÜNB} um 10,2 auf 420,0\,\TsdEurMWa{}.
-% BERICHTIGT am 23.09.2026, zweite Fassung desselben Tages. Die gemessenen
-% 341 bis 2284 Laeufe entfallen auf die zweite Iteration allein und nicht
-% auf beide zusammen; der Zaehler des Analyse-Repositorys hing an einer
-% Huelle, an der die Bisektion vorbeilaeuft. Die Laeufe der ersten Iteration
-% kommen hinzu und werden gerade gemessen. Zurueckgenommene Fassung:
-%Beide Iterationen zusammen verlangen im Median 432 Läufe des Optimierungsmodells je Tag, bei einem Minimum von 341 und einem Maximum von 2284 Läufen.
-%Der weite Abstand zwischen Median und Maximum geht auf einzelne Tage zurück, an denen die zweite Iteration viele Durchgänge braucht, bis kein Preis mehr sinkt.
-% GEKUERZT am 23.09.2026, Vorgabe des Verfassers: der Rechenaufwand steht
-% als Verhaeltnis der beiden Iterationen und nicht in punktgenauen Zahlen.
-% Zurueckgenommene Fassung:
-%Die zweite Iteration verlangt für sich genommen im Median 432 Läufe des Optimierungsmodells je Tag, gemessen an einer Stichprobe von 16 Tagen des Jahres 2025.
-%Das Minimum liegt bei 341 und das Maximum bei 2284 Läufen, denn einzelne Tage brauchen viele Durchgänge, bis kein Preis mehr sinkt.
 Die zweite Iteration hebt die Zahlung des \ac{ÜNB} um 10,2\,\TsdEurMWa{} auf 420,0\,\TsdEurMWa{}.
 Die übrige Vermarktung entfällt dabei ganz, sodass der Gesamterlös der Bezugsanlage nur noch 23,3 Prozent über dem Referenzerlös liegt.
 
-% ANGEFUEGT am 23.09.2026, Lieferung des Analyse-Repositorys vom selben Tag
-% nach AUFTRAG_FUELLGRAD_TAGESSTUNDEN.md. Zahlen aus ERGEBNISSE Abschnitt
-% 7.9. Der Fuellgrad bezieht die reservierte Leistung auf die in der
-% jeweiligen Stunde reservierbare und nicht auf die Nennleistung, weil die
-% Ladereservierung unterhalb der Gewinnschwelle gar nicht zulaessig ist.
-% Die Anteile 25,9 und 23,1 Prozent stehen statt der absoluten Stundenzahlen
-% im Text, weil der Fuellgrad ueber 8760 und die Preisverteilung in 4.3 ueber
-% 8758 Stunden laeuft; die Abweichung sind die beiden Stunden der
-% Zeitumstellung. Der Schlusssatz zur Wahl der zweiten Iteration stand bis
-% zum 23.09.2026 am Ende des vorigen Absatzes.
 Welche Stunden die erste Iteration offen lässt, zeigt der Füllgrad je Tagesstunde.
 Abbildung~\ref{fig:fuellgrad_tagesstunden} trägt den mittleren Füllgrad unter den Preisen der ersten Iteration über die 24 Stunden des Tages auf.
-% GEKUERZT am 23.09.2026, Vorgabe des Verfassers. Die zweite Iteration ist
-% bis auf die Stunde der Zeitumstellung voll reserviert, das sagt der Text
-% jetzt anstelle der 99,98 Prozent. Der Korrelationskoeffizient faellt
-% ersatzlos weg, die Aussage traegt der Satz davor. Zurueckgenommene
-% Fassung:
-%Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration in beiden Richtungen 99,98 Prozent erreicht.
-%Der Korrelationskoeffizient beträgt $-0{,}853$ in der Entlade- und $-0{,}608$ in der Laderichtung.
-% GEAENDERT am 26.09.2026, Zeitumstellung: es sind zwei Stunden, je eine an beiden Umstellungstagen, wie Kapitel 3 mit 8758 von 8760 Stunden erklaert
-% Alte Fassung, nicht wieder aufzunehmen:
-%Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration bis auf die Stunde der Zeitumstellung voll reserviert.
 Über das ganze Jahr erreicht die erste Iteration 85,94 Prozent in der Entlade- und 89,60 Prozent in der Laderichtung, während die zweite Iteration bis auf die beiden Stunden der Zeitumstellung voll reserviert.
 Nicht voll reserviert bleiben unter der ersten Iteration 25,9 Prozent der Stunden in der Entlade- und 23,1 Prozent in der Laderichtung.
 Diese Stunden verteilen sich nicht gleichmäßig über den Tag, denn der Füllgrad einer Tagesstunde fällt mit ihrem Preis.
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Befund zum
-% niedrigsten Fuellgrad ist umformuliert, und die Ursache steht jetzt als
-% eigener Absatz hinter der Abbildung: die Bezugsanlage verschiebt ihre
-% Geschaefte in die verbleibenden Stunden, deren Opportunitaet dadurch ueber
-% den zuvor gefundenen Preis steigt. Zurueckgenommene Fassung:
-%Am leersten steht die Entladereservierung um 8, 18 und 19 Uhr mit 74,9 bis 75,9 Prozent und die Ladereservierung von 12 bis 14 Uhr mit rund 81 Prozent.
-%Die erste Iteration lässt damit gerade die teuren Stunden frei, und in diesem Kapitel stehen deshalb die Preise der zweiten Iteration.
 Den niedrigsten Füllgrad erreicht die Entladereservierung um 8, 18 und 19 Uhr mit 74,9 bis 75,9 Prozent und die Ladereservierung von 12 bis 14 Uhr mit rund 81 Prozent.
 
 \begin{figure}[H]
@@ -385,61 +83,24 @@ Die Ursache liegt in der Verschiebung des Handels über den Tag.
 Reserviert die Bezugsanlage die übrigen Stunden vollständig, so verschiebt sie ihre Geschäfte in die verbleibenden Stunden.
 Die Opportunität dieser Stunden steigt dadurch über den Preis, den die Preissuche zuvor für sie gefunden hat.
 Je höher der vorgegebene Reservierungspreis liegt, desto häufiger bleibt eine Stunde unreserviert.
-% BERICHTIGT am 23.09.2026 nach der Messung des Analyse-Repositorys. Die
-% Laeufe je Tag betragen im Median 136 fuer die erste und 432 fuer die
-% zweite Iteration, also gut das Dreifache und nicht das Vierfache.
-% Zurueckgenommene Fassung:
-%Der Rechenaufwand der zweiten Iteration beträgt demgegenüber rund das Vierfache des Aufwands der ersten.
 Der Rechenaufwand der zweiten Iteration beträgt demgegenüber gut das Dreifache des Aufwands der ersten.
 An einzelnen Tagen vervielfacht sich dieser Aufwand nochmals, weil viele Durchgänge nötig sind, bis kein Preis mehr sinkt.
 In diesem Kapitel stehen deshalb die Preise der zweiten Iteration.
 
-% VERSCHOBEN am 23.09.2026 in den Iterationsabsatz, Vorgabe des Verfassers.
-% Die beiden Schlusssaetze sind dabei zu einem verbunden. Zurueckgenommene
-% Fassung, nicht wieder aufzunehmen:
-%Der verbliebene Markterlös der ersten Iteration verteilt sich auf die \ac{aFRR}-Leistung mit 60,0, den \ac{IDC} mit 16,4, die \ac{aFRR}-Arbeit mit 8,7 und den \ac{DA} mit 7,3\,\TsdEurMWa{}.
-%Von dieser Summe zieht das Optimierungsmodell 3,8\,\TsdEurMWa{} für die Degradation ab.
-%Die \ac{aFRR}-Leistung bleibt damit auch unter unvollständiger Bindung der größte Posten.
-%Die unvollständige Reservierung trifft alle Märkte im Verhältnis ihres Erlösanteils.
-
-% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers vom 22.09.2026: drei bis
-% fuenf Saetze Schlussfolgerungen je Abschnitt mit gleichbleibender
-% Eroeffnungsformel, kein erstens zweitens drittens, kein Vorverweis auf
-% Kapitel 5.
-% VARIIERT am 23.09.2026, Vorgabe des Verfassers: der Satz stand sechsmal
-% gleichlautend im Kapitel. Zurueckgenommene Fassung, an dieser Stelle nicht
-% wieder aufzunehmen: Aus dieser Untersuchung laesst sich Folgendes
-% mitnehmen.
 Aus dem Jahreslauf und dem Erlösvergleich bleibt Folgendes festzuhalten.
-%Der kurative Reservierungspreis richtet sich über das Jahr vor allem gegen die \ac{aFRR}-Leistung, denn sie trägt mit 235,1\,\TsdEurMWa{} zwei Drittel des Bruttoerlöses.
 Der kurative Reservierungspreis richtet sich über das Jahr vor allem gegen die \ac{aFRR}-Leistung, denn auf sie entfallen zwei Drittel des Bruttoerlöses.
-% GEAENDERT am 23.09.2026 nach der Lieferung zum Fuellgrad. Der Satz zur
-% Vollstaendigkeit der Bindung ist durch den schaerferen Befund ersetzt,
-% dass gerade die teuren Stunden offen bleiben. Zurueckgenommene Fassung:
-%Die Vollständigkeit der Bindung entscheidet weniger über die Zahlung des \ac{ÜNB} als darüber, was er für diese Zahlung erhält.
 Die unvollständige Bindung der ersten Iteration lässt der Bezugsanlage 88,6\,\TsdEurMWa{} an den übrigen Märkten und kostet den \ac{ÜNB} dabei nur 10,2\,\TsdEurMWa{} weniger.
 Offen bleiben dabei gerade die teuren Stunden, sodass der \ac{ÜNB} beinahe den vollen Preis zahlt und die wertvollsten Stunden nicht bindet.
 Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös.
 
-% ---------------------------------------------------------------
 \section{Verteilung der Verdrängungspreise}
 \label{sec:price_distribution}
-% Anweisung Abschnitt 4.3, Zahlen aus ERGEBNISSE Abschnitt 7.1.
-% Abbildungshinweis: Whisker laeuft seit dem 22.09.2026 von Minimum bis
-% Maximum, p5 und p95 stehen als feine Marken darauf.
 
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: der Absatz sagt zuerst,
-% wie der Preis je Zeitscheibe aus den Opportunitaeten dieser Stunde
-% entsteht, und nennt danach die Kennzahlen. Zurueckgenommene Fassung:
-%Der kurative Reservierungspreis ist keine einzelne Zahl, sondern eine Verteilung über die Stunden des Jahres.
 Der kurative Reservierungspreis entsteht für jede Stunde des Jahres neu, denn er misst die Opportunität genau dieser Stunde.
 Für jede Richtung ergeben sich daraus 8758 Preise, deren Höhe sich von Stunde zu Stunde unterscheidet.
 Abbildung~\ref{fig:verteilung_reservierungspreis} zeigt die Verteilung dieser Preise je Richtung.
 Die Entladereservierung kostet im Median 12,22\,\EurMWh{}, bei einem unteren Quartil von 4,33 und einem oberen von 27,47\,\EurMWh{}.
 Die Ladereservierung liegt im Median mit 9,85\,\EurMWh{} niedriger, streut nach oben aber weiter, denn ihr oberes Quartil beträgt 30,64\,\EurMWh{}.
-% GEAENDERT am 26.09.2026, Reihenfolge: ueberall sonst steht die Entladerichtung zuerst
-% Alte Fassung, nicht wieder aufzunehmen:
-%Das 95-Prozent-Quantil beträgt 90,40\,\EurMWh{} in der Lade- und 76,01\,\EurMWh{} in der Entladerichtung.
 Das 95-Prozent-Quantil beträgt 76,01\,\EurMWh{} in der Entlade- und 90,40\,\EurMWh{} in der Laderichtung.
 Eine einzelne Zahl gibt den kurativen Reservierungspreis damit nicht wieder.
 
@@ -450,130 +111,39 @@ Eine einzelne Zahl gibt den kurativen Reservierungspreis damit nicht wieder.
     \label{fig:verteilung_reservierungspreis}
 \end{figure}
 
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Absatz sagt jetzt,
-% welches Mass die Arbeit wofuer verwendet, statt den Leser vor die Wahl zu
-% stellen. Zurueckgenommene Fassung des Schlusssatzes:
-%Wer den kurativen Reservierungspreis in einer Zahl angibt, muss deshalb sagen, welche Zahl gemeint ist: für die Kosten des \ac{ÜNB} ist das arithmetische Mittel die richtige Größe, weil es sich mit der beschafften Menge multipliziert, und für den Preis einer beliebigen Stunde der Median.
 Die Verteilung ist in beiden Richtungen rechtsschief, denn das arithmetische Mittel übersteigt den Median um das 1,93-Fache in der Entlade- und um das 2,47-Fache in der Laderichtung.
 Wenige Stunden mit knapper Leistung tragen den Durchschnitt, während die typische Stunde günstig ist.
-%Zwischen dem 95-Prozent-Quantil und dem Maximum liegt nochmals der Faktor 13,3 beziehungsweise 5,6, sodass die Maxima von 1008 und 510\,\EurMWh{} einzelne Stunden und keinen Preisbereich beschreiben.
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: die Maxima sind eine
-% Erscheinung einzelner Stunden, und ein Preis dieser Hoehe tritt ueber das
-% Jahr kaum auf. Die Angabe stuetzt sich auf das 99-Prozent-Quantil von 173
-% und 161 Euro je Megawatt und Stunde, das weit unter beiden Maxima liegt.
-% Zurueckgenommene Fassung:
-%Zwischen dem 95-Prozent-Quantil und dem Maximum liegt nochmals der Faktor 13,3 beziehungsweise 5,6, sodass die Maxima von 1008 und 510\,\EurMWh{} für einzelne Stunden stehen.
-% GESCHAERFT am 23.09.2026, Vorgabe des Verfassers: der Vergleich laeuft
-% gegen das 99-Prozent-Quantil statt gegen das 95er, weil die Aussage damit
-% staerker wird. **Eigene Ableitung:** 1008 zu 173 ergibt 5,8 und 510 zu 161
-% ergibt 3,2. Die Quantile 173 und 161 Euro je Megawatt und Stunde stehen in
-% ERGEBNISSE Abschnitt 7.3 und werden in 4.4 als Deckel der Farbskala erneut
-% genannt. Zurueckgenommene Fassung:
-%Zwischen dem 95-Prozent-Quantil und dem Maximum liegt nochmals der Faktor 13,3 beziehungsweise 5,6, sodass die Maxima von 1008 und 510\,\EurMWh{} einzelne Stunden des Jahres betreffen.
-%Ein Preis in dieser Höhe tritt in weniger als einem Prozent der Stunden auf.
 Oberhalb des 99-Prozent-Quantils von 173\,\EurMWh{} und 161\,\EurMWh{} liegen nur 88 beziehungsweise 87 Stunden des Jahres.
 Zwischen diesem Quantil und dem Maximum liegt nochmals der Faktor 5,8 beziehungsweise 3,2, sodass die Maxima von 1008\,\EurMWh{} und 510\,\EurMWh{} einzelne Stunden des Jahres betreffen.
-% GEKUERZT am 23.09.2026, Vorgabe des Verfassers: mit der beschafften Menge
-% multiplizieren sich beide Masse, der Zusatz trennt sie also nicht.
-% Zurueckgenommene Fassung:
-%Das arithmetische Mittel schätzt die Kosten des \ac{ÜNB} ab, denn es bezieht die teuren Stunden mit ihrem Gewicht ein und multipliziert sich mit der beschafften Menge.
-% ZUSAMMENGELEGT am 23.09.2026, Vorgabe des Verfassers: ein Absatz statt
-% zweier, die Saetze zur Wahl des Masses an sein Ende. Zwei Satzpaare sind
-% dabei verbunden, damit der Absatz nicht auf zwoelf Saetze laeuft.
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: das 5-Prozent-Quantil
-% traegt nichts, das obere Quartil dagegen sehr wohl, denn dort liegen drei
-% Viertel der Stunden. Die Nullstunden bleiben als Befund erhalten, nicht
-% mehr als Eigenschaft des Whiskers. Zurueckgenommene Fassung:
-%Das untere Ende der Verteilung beschreibt das Optimierungsmodell und nicht den Markt.
-%In der Entladerichtung fallen Minimum und 5-Prozent-Quantil auf 0,00\,\EurMWh{} zusammen, sodass die Entladereservierung in mindestens jeder zwanzigsten Stunde nichts kostet.
-%In der Laderichtung liegen Minimum und 5-Prozent-Quantil bei 1,00 beziehungsweise 1,01\,\EurMWh{} und damit auf der Gewinnschwelle, unterhalb derer das Optimierungsmodell eine Ladereservierung nicht zulässt.
-%Der untere Whisker der Abbildung trägt deshalb keine Aussage über den Markt, der obere dagegen sehr wohl.
-% GEAENDERT am 26.09.2026, Stilregel 1 und 5: Absatz geteilt, und diesen Spitzen wies ueber die neue Absatzgrenze zurueck
-% Alte Fassung, nicht wieder aufzunehmen:
-%Der größte Teil der Stunden liegt weit unter diesen Spitzen, denn drei Viertel der Stunden kosten in der Entladerichtung höchstens 27,47 und in der Laderichtung höchstens 30,64\,\EurMWh{}.
 
-% ABSATZ GETEILT am 26.09.2026: der Absatz hatte zehn Saetze, Stilregel 1. Die Spitze der Verteilung und ihr Hauptfeld sind zwei Gedanken.
 Der größte Teil der Stunden liegt weit unter den Maxima, denn drei Viertel der Stunden kosten in der Entladerichtung höchstens 27,47 und in der Laderichtung höchstens 30,64\,\EurMWh{}.
-% GESTRICHEN am 23.09.2026, Vorgabe des Verfassers: der Abstand ist knapp,
-% und die Lage des Mittels unterhalb des oberen Quartils traegt keine
-% Aussage. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Das arithmetische Mittel von 23,64 und 24,33\,\EurMWh{} liegt damit in beiden Richtungen noch unterhalb des oberen Quartils.
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers. Der Absatz fuehrt die
-% Quartile jetzt zu der Aussage, dass sich ein grosser Teil der Stunden
-% guenstig reservieren laesst. Die Gewinnschwelle der Ladereservierung ist
-% aus dem Ergebnisteil genommen und steht seit dem 23.09.2026 als
-% Modellannahme in Anhang C, denn sie ist eine Eigenschaft des Modells und
-% kein Befund ueber den Markt. Zurueckgenommene Fassung, nicht wieder
-% aufzunehmen:
-%Am unteren Ende steht ein Viertel der Stunden bei höchstens 4,33 beziehungsweise 2,34\,\EurMWh{}.
-%In der Laderichtung liegt das Minimum bei 1,00\,\EurMWh{}, weil das Optimierungsmodell eine Ladereservierung unterhalb dieser Gewinnschwelle nicht zulässt.
 Ein Viertel der Stunden kostet sogar höchstens 4,33 beziehungsweise 2,34\,\EurMWh{}.
 In einem Teil der Stunden kostet die Entladereservierung nichts, denn die Bezugsanlage hat für diese Stunden keine Verwendung an den übrigen Märkten.
 Die Hälfte aller Stunden ist damit zum Median von höchstens 12,22 beziehungsweise 9,85\,\EurMWh{} zu reservieren, und teuer wird allein die Spitze der Verteilung.
 Die folgenden Abschnitte weisen deshalb beide Maße aus, denn das arithmetische Mittel schätzt die Kosten des \ac{ÜNB} ab und bezieht die teuren Stunden mit ihrem Gewicht ein.
 Der Median lässt diese Extreme außer Betracht und zeigt, wie viele Stunden eines Tages in welche Preisspanne fallen.
 
-% ANGEFUEGT am 23.09.2026 nach der Lieferung des Analyse-Repositorys auf
-% AUFTRAG_MAXIMASTUNDEN.md. Zahlen aus ERGEBNISSE Abschnitt 7.11, betrachtet
-% sind die 20 teuersten Stunden je Richtung unter der zweiten Iteration.
-% Der Text sagt, welcher Markt die Leistung im Referenzfall haelt, und nicht,
-% welcher zuletzt weicht; die zweite Frage verlangt ein Preisgitter je Stunde
-% und ist nicht beantwortet.
 In der Spitze der Verteilung setzt ein anderer Markt den Preis als über das übrige Jahr.
 In den 20 teuersten Entladestunden hält der \ac{IDC} im Referenzfall 70,2\,\si{MW} gegen 4,9\,\si{MW} im Jahresmittel, während die \ac{aFRR}-Leistung auf ein Fünftel ihres Jahresmittels fällt.
 Der Preis des \ac{IDC} beträgt in diesen Stunden im Mittel 664 gegen 90 Euro je Megawattstunde über das Jahr.
 In der Laderichtung tragen zwei Ursachen, nämlich ein hoher Leistungspreis der \ac{aFRR} mit 162 gegen 16\,\EurMWh{} und negative Preise am \ac{IDC} mit im Mittel minus 55 gegen 90 Euro je Megawattstunde.
 Wer in einer Stunde mit negativem Preis lädt, wird dafür bezahlt, und die Ladereservierung verhindert genau diese Einnahme.
-% GEAENDERT am 26.09.2026, Pruefung Kapitel 4: die Opportunitaet derselben Stunde ist nach ERGEBNISSE Zeile 1186 ein Obermass, naemlich das Groesste aus aFRR-Leistungspreis, aFRR-Arbeitspreis mal Abrufanteil und Betrag des Intradaypreises. Der Test lautet: unter dem Obermass folgt der Preis aus dieser Stunde, weit darueber aus der Kopplung. Entladend Median 0,89, Maximum 1,24, null von 20 ueber 1,5. Der Text nannte weder Obermass noch Schwelle
-% Alte Fassung, nicht wieder aufzunehmen:
-%Der kurative Reservierungspreis entspricht in der Entladerichtung 89 Prozent der Opportunität derselben Stunde, sodass die Höhe dort aus dieser einen Stunde folgt.
 Der kurative Reservierungspreis erreicht in der Entladerichtung 89 Prozent des höchsten Marktpreises derselben Stunde und übersteigt ihn in keiner der 20 Stunden um mehr als ein Viertel, sodass die Höhe dort aus dieser einen Stunde folgt und nicht aus der Kopplung benachbarter Stunden.
-% GETEILT am 24.09.2026, Befund B4 der Kontrolllesung: "vereinbar mit"
-% behauptet nichts und schliesst nichts aus. Der Befund und der Stand der
-% Pruefung stehen jetzt getrennt. Zurueckgenommene Fassung, nicht wieder
-% aufzunehmen:
-%In der Laderichtung übersteigen 7 der 20 Stunden diesen Rahmen um mehr als die Hälfte, was mit einer Kopplung über das Ladezustandsband vereinbar ist.
-% GEAENDERT am 26.09.2026, Pruefung Kapitel 4: diesen Rahmen ausgeschrieben, Stilregel 5
-% Alte Fassung, nicht wieder aufzunehmen:
-%In der Laderichtung übersteigen 7 der 20 Stunden diesen Rahmen um mehr als die Hälfte.
 In der Laderichtung übersteigen 7 der 20 Stunden den höchsten Marktpreis derselben Stunde um mehr als die Hälfte.
 Die Ursache ist nicht geprüft, in Betracht kommt die Kopplung benachbarter Stunden über das Ladezustandsband.
 
-% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: als Schlussfolgerung
-% traegt die Schieflage der Verteilung.
-% VARIIERT am 23.09.2026, Vorgabe des Verfassers: der Satz stand sechsmal
-% gleichlautend im Kapitel. Zurueckgenommene Fassung, an dieser Stelle nicht
-% wieder aufzunehmen: Aus dieser Untersuchung laesst sich Folgendes
-% mitnehmen.
 Für die Verteilung des kurativen Reservierungspreises ergibt sich damit folgendes Bild.
 Die Verteilung des kurativen Reservierungspreises ist schief, denn einzelne Stunden treiben ihn weit über das Niveau der übrigen.
 Der Abstand zwischen Median und arithmetischem Mittel misst diese Schieflage, nämlich das 1,93-Fache in der Entlade- und das 2,47-Fache in der Laderichtung.
 Drei Viertel der Stunden bleiben dagegen unter 27,47 beziehungsweise 30,64\,\EurMWh{}, sodass der größte Teil der Vorhaltung unterhalb dieser Werte zu beschaffen ist.
 In einem Teil der Stunden bietet die Bezugsanlage die Entladereservierung zum Preis null an, weil sie für diese Stunden keine andere Verwendung hat.
 
-% ---------------------------------------------------------------
 \section{Zeitliches Muster}
 \label{sec:price_pattern}
-% Anweisung Abschnitt 4.4, Zahlen aus ERGEBNISSE Abschnitt 7.2 und 7.3.
-% Abbildungshinweis: Knick der Farbskala seit dem 22.09.2026 bei 10 statt
-% 15 Euro je Megawatt und Stunde, Farbskala nur mit ganzen Zahlen.
 
-% NEU GEFASST am 23.09.2026, Vorgabe des Verfassers. Der Einstieg knuepft
-% jetzt an beide vorangegangenen Abschnitte an, statt mit einer Verneinung
-% zu beginnen. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Kennzahlen des Abschnitts~\ref{sec:price_distribution} geben die Höhe des kurativen Reservierungspreises, nicht aber die Lage der teuren Stunden.
 Neben der Aufteilung des Referenzerlöses und der Zahlung bei vollständiger Verdrängung ist die zeitliche Staffelung des kurativen Reservierungspreises von Belang.
 Abbildung~\ref{fig:heatmap_reservierungspreis} trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf.
-% GEAENDERT am 26.09.2026, S1: der Median der Ladereservierung liegt mit 9,85 unter dem Knick, die Aussage war falsch
-% Alte Fassung, nicht wieder aufzunehmen:
-%Die Farbskala knickt bei 10\,\EurMWh{} und damit unterhalb beider Jahresmediane, sodass die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
 Die Farbskala knickt bei 10\,\EurMWh{} und damit nahe beiden Jahresmedianen, sodass etwa die günstigere Hälfte der Stunden die untere Hälfte der Skala einnimmt.
-% GEKUERZT am 23.09.2026. Abschnitt 4.3 nennt das 99-Prozent-Quantil seit
-% demselben Tag mit denselben vier Zahlen, naemlich 173 und 161 Euro je
-% Megawatt und Stunde sowie 88 und 87 Stunden. Hier braucht der Absatz sie
-% nicht, denn er erklaert allein den Deckel der Farbskala. Zurueckgenommene
-% Fassung:
-%Die Obergrenze je Feld ist das 99-Prozent-Quantil mit 173\,\EurMWh{} in der Entlade- und 161\,\EurMWh{} in der Laderichtung, sodass 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
 Die Obergrenze je Feld ist das 99-Prozent-Quantil, sodass die teuersten 88 beziehungsweise 87 Stunden in der Deckelfarbe stehen.
 
 \begin{figure}[H]
@@ -583,263 +153,55 @@ Die Obergrenze je Feld ist das 99-Prozent-Quantil, sodass die teuersten 88 bezie
     \label{fig:heatmap_reservierungspreis}
 \end{figure}
 
-% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: die Heatmap wird
-% beschrieben, bevor die naechste Abbildung folgt. Zahlen aus der eigenen
-% Auswertung analysen/zeitmuster_ursachen/heatmap_struktur.py, betrachtet
-% sind die je 876 Stunden oberhalb des 90-Prozent-Quantils, also 56,7 und
-% 70,7 Euro je Megawatt und Stunde.
-% UMGEBAUT am 23.09.2026, Vorgabe des Verfassers. Die Heatmap wird jetzt
-% nach Richtungen getrennt beschrieben, weil beide sich in der Abbildung
-% grundlegend anders verhalten. Der Tagesgangabsatz mit der
-% Photovoltaik-Erklaerung ist gestrichen: die Beobachtung, dass die Spitzen
-% auseinanderfallen, folgt schon aus der Heatmap, und die Erklaerung gehoert
-% in die Diskussion. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die teuren Stunden beider Richtungen liegen jahreszeitlich beieinander.
-%Innerhalb des Tages liegen sie verschieden, denn die sechs stärksten Tagesstunden tragen bei der Ladereservierung 62 und bei der Entladereservierung 50 Prozent.
-%Die teuren Ladestunden liegen mittags beieinander, die teuren Entladestunden dagegen in zwei Fenstern am Morgen und am Abend.
-%Die Ladereservierung häuft ihre teuren Stunden zudem an 166 Kalendertagen, die Entladereservierung an 217.
-%Die Ladereservierung bildet damit ein zusammenhängendes Band über die Mitte des Tages, während die Entladereservierung über mehr Tage und zwei Tageszeiten streut.
-%In Abbildung~\ref{fig:zeitmuster_reservierungspreis} sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst.
-%Die Entladereservierung erreicht ihren größten Median mit 43,8\,\EurMWh{} in der Stunde um 19 Uhr und ihren kleinsten mit 2,2\,\EurMWh{} in der Stunde um 4 Uhr.
-%Die Ladereservierung liegt umgekehrt, denn ihr größter Median beträgt 58,6\,\EurMWh{} um 13 Uhr und ihr kleinster 2,2\,\EurMWh{} um 20 Uhr.
-%Die Spitzen beider Richtungen fallen damit auseinander, weil die Einspeisung aus Photovoltaik mittags den Wert des Ladens und abends den Wert des Entladens setzt.
-% BERICHTIGT am 23.09.2026. Die Zahlen der ersten Fassung stammten aus einer
-% Auswertung, die be_pos und be_neg als Reservierungspreis genommen hat, also
-% die ERSTE Iteration. Die Arbeit weist die zweite aus, die in be_full_pos
-% und be_full_neg steht. Neu gerechnet in
-% analysen/zeitmuster_ursachen/neuberechnung.py, gegengeprueft gegen
-% ERGEBNISSE Abschnitt 7.1 mit Median 12,22 und 9,85. Der Befund wird durch
-% die Berichtigung deutlicher, und die Aussage, beide Richtungen glichen sich
-% jahreszeitlich, faellt weg: es sind 99 gegen 79 Prozent.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Von den 876 Stunden oberhalb ihres 90-Prozent-Quantils entfallen 92 Prozent auf diese Monate und 62 Prozent auf sechs Tagesstunden, sodass die teuren Stunden dicht beieinander liegen.
-%Sie verteilen sich auf 166 Kalendertage, treten an einem betroffenen Tag also in mehr als fünf Stunden auf.
-%Die Entladereservierung streut dagegen, denn ihre teuren Stunden liegen in zwei Fenstern am Morgen und am Abend und verteilen sich auf 217 Kalendertage.
-%Auf ihre sechs stärksten Tagesstunden entfallen nur 50 Prozent, sodass einzelne teure Tage das Bild bestimmen und kein Band entsteht.
-%Jahreszeitlich gleichen sich beide Richtungen, denn auch entladend liegen 91 Prozent der teuren Stunden zwischen März und Oktober.
 Die Ladereservierung bildet ein zusammenhängendes Band über die Mitte des Tages, das von März bis Oktober reicht.
 Von den 876 Stunden oberhalb ihres 90-Prozent-Quantils entfallen 99 Prozent auf diese Monate und 80 Prozent auf die sechs Stunden von 11 bis 16 Uhr.
-% BEZUG AUSGESCHRIEBEN am 24.09.2026, Befund B3 der Kontrolllesung,
-% Stilregel 5: das Pronomen stand ueber der Satzgrenze.
-% Zurueckgenommene Fassung:
-%Sie verteilen sich auf 176 Kalendertage, treten an einem betroffenen Tag also in durchschnittlich fünf Stunden auf.
 Die teuren Stunden der Ladereservierung verteilen sich auf 176 Kalendertage und treten an einem betroffenen Tag damit in durchschnittlich fünf Stunden auf.
 Die Entladereservierung streut dagegen über das Jahr, denn nur 79 Prozent ihrer teuren Stunden liegen zwischen März und Oktober.
 Auch über den Tag liegt sie weiter auseinander, denn auf ihre sechs stärksten Tagesstunden entfallen 58 Prozent, und diese verteilen sich auf den Vormittag und den Abend.
-% BEZUG AUSGESCHRIEBEN am 24.09.2026, Befund B3 der Kontrolllesung,
-% Stilregel 5. Zurueckgenommene Fassung:
-%Ihre teuren Stunden treten an 223 Kalendertagen auf, sodass einzelne teure Tage das Bild bestimmen und kein Band entsteht.
 Die teuren Stunden der Entladereservierung treten an 223 Kalendertagen auf, sodass einzelne teure Tage das Bild bestimmen und kein Band entsteht.
 
-% VORGEZOGEN am 23.09.2026, Vorgabe des Verfassers: die Ursache steht dort,
-% wo sie am wichtigsten ist, naemlich hinter der Heatmap und vor der
-% Abbildung zum Zeitmuster. Kompakter als zuvor, die Spannen stehen als
-% Anteil statt als Betragspaar.
 Hinter beiden Mustern steht der Leistungspreis der \ac{aFRR}, der das Niveau des kurativen Reservierungspreises bestimmt, denn er entfällt mit der reservierten Stunde vollständig.
-% BERICHTIGT am 23.09.2026, Vorgabe des Verfassers: die Richtung fehlte.
-% Die 82,2 Euro je Megawatt und Stunde sind der Leistungspreis der aFRR in
-% der Laderichtung, in den Daten die Spalte afrr_cap_neg. Der Text nennt die
-% Richtung jetzt so, wie Abschnitt 4.3 es tut, und ersetzt zugleich das
-% Pronomen. Zurueckgenommene Fassung:
-%Im Mai erreicht er in den Mittagsstunden mit 82,2\,\EurMWh{} das 2,2-Fache des Jahresmittels derselben Stunden.
 Im Mai erreicht der Leistungspreis der \ac{aFRR} in der Laderichtung mittags mit 82,2\,\EurMWh{} das 2,2-Fache des Jahresmittels derselben Stunden.
-% AUSGESCHRIEBEN am 23.09.2026, Vorgabe des Verfassers: die Zahlen waren
-% nicht nachvollziehbar. Der Begriff der Spanne wird jetzt im Satz erklaert,
-% und statt des Paares steht die zehntgroesste Spanne. Gemeint ist: je Tag
-% werden die Viertelstunden sortiert und paarweise verbunden, die guenstigste
-% mit der teuersten und so fort bis zum zehnten Paar. Im Median betraegt die
-% groesste Spanne 179,0 und die zehntgroesste 112,8 Euro je Megawattstunde,
-% am 26.08.2025 dagegen 1603,7 und 165,0. Belege in
-% analysen/zeitmuster_ursachen/BEFUND_ARBITRAGEPAARE.md.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Arbitrage an den Energiemärkten kann die Bezugsanlage dagegen zwischen den Stunden eines Tages verschieben, denn das zehnte Bezugs- und Absatzpaar eines Tages trägt im Median noch 63 Prozent der größten Spanne.
-%Bricht diese Staffel ein, wie am 26.08.2025 auf 10 Prozent, so setzt der Energiemarkt den Reservierungspreis, und die Verdrängung bleibt nach Abschnitt~\ref{sec:dispatch_displacement} auch beim höchsten gerechneten Preis unvollständig.
 Die Arbitrage an den Energiemärkten kann die Bezugsanlage dagegen zwischen den Stunden eines Tages verschieben, solange der Tag mehrere gleichwertige Spannen zwischen einem günstigen Bezug und einem teuren Absatz trägt.
 An einem mittleren Tag beträgt die größte dieser Spannen 179 Euro je Megawattstunde und die zehntgrößte noch 63 Prozent davon, sodass eine reservierte Stunde Ersatz findet.
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: der Rueckgriff auf einen
-% der fuenf Analysetage mischt in einem Jahresabschnitt die Ebenen und traegt
-% schwaecher als eine Aussage ueber alle 365 Tage. An 19 Tagen des Jahres,
-% also an jedem zwanzigsten, faellt die zehntgroesste Spanne unter 30 Prozent
-% der groessten; Beleg in analysen/zeitmuster_ursachen. Der Zusammenhang mit
-% der unvollstaendigen Verdraengung an den beiden steilsten Tagen, naemlich
-% dem 26.08. und dem 15.05.2025, ist fuer Kapitel 5 vorgemerkt.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Am 26.08.2025 sind es dagegen nur 10 Prozent, und der Energiemarkt setzt dort den Reservierungspreis.
-%An diesem Tag bleibt die Verdrängung nach Abschnitt~\ref{sec:dispatch_displacement} auch beim höchsten gerechneten Preis unvollständig.
 An jedem zwanzigsten Tag des Jahres bleiben dagegen weniger als 30 Prozent, und dort setzt der Energiemarkt den Reservierungspreis.
 Abbildung~\ref{fig:zeitmuster_reservierungspreis} fasst dieselben Stundenwerte zum Tages- und zum Jahresgang zusammen.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/reservierungspreis_zeitmuster_2025.pdf}
-% NACHTRAG am 22.09.2026: die Abbildung vom 22.09.2026 11:14 zeigt neben
-    % dem Median auch das arithmetische Mittel und das Band zwischen beiden
-    % Massen. Alte Fassung:
-    %    \caption{Median des kurativen Reservierungspreises im Jahr 2025 über der Stunde des Tages und über dem Monat, je Richtung und als Summe beider Richtungen, zweite Iteration.}
     \caption{Tagesgang und Jahresgang des kurativen Reservierungspreises 2025 je Richtung und als Summe, zweite Iteration. Median durchgezogen, arithmetisches Mittel gestrichelt.}
     \label{fig:zeitmuster_reservierungspreis}
 \end{figure}
 
-% NACHTRAG am 22.09.2026: die Abbildung fuehrt seit dem 22.09.2026 auch
-% das arithmetische Mittel, sodass die Summe nicht mehr die dritte Kurve ist.
-% Alte Fassung: "Die dritte Kurve der Abbildung ist die Summe beider Richtungen."
-% NEU GEFASST am 23.09.2026, Vorgabe des Verfassers. Der Absatz beginnt
-% mit dem Gedankenspiel zweier Anlagen, erklaert einmal die Bildung der
-% Summe und zeigt danach, welche Richtung sie zu welcher Tageszeit traegt.
-% Die Anteile je Stunde sind aus ERGEBNISSE Abschnitt 7.2 abgelesen, also
-% 20,6 von 29,0 um 7 Uhr, 56,9 von 79,3 um 14 Uhr und 43,8 von 55,4 um
-% 19 Uhr. Der Monatsvergleich Juni stammt aus derselben Tabelle.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Neben den beiden Richtungen trägt die Abbildung deren Summe.
-%Entlade- und Ladereservierung werden an keiner Stelle gemittelt, denn beide sind eigene Produkte mit eigener Opportunität und eigenem Ladezustandsband.
-%Wer jedoch ein Produkt in beiden Richtungen beschafft, zahlt beide Richtungen zugleich, sodass die Summe den Preis des Beschafften angibt.
-%Die Summe erreicht ihren größten Median mit 79,3\,\EurMWh{} um 14 Uhr, weil dort beide Richtungen erhöht sind, und ihren kleinsten mit 9,6\,\EurMWh{} um Mitternacht.
-%Über den Tag schwankt die Summe damit um den Faktor 8,3.
-% NEU GEFASST am 23.09.2026, Vorgabe des Verfassers. Die Summe ist der
-% Preis einer bilanziell ausgeglichenen kurativen Massnahme, denn vorgehalten
-% wird sowohl fuer das Herunter- als auch fuer das Hochfahren. Die Anteile
-% stehen als Prozentzahl statt als Betragspaar. Zurueckgenommene Fassung:
-%Über den Tag ist die Summe am Morgen, am Mittag und am Abend am teuersten und schwankt zwischen 9,6 um Mitternacht und 79,3\,\EurMWh{} um 14 Uhr, also um den Faktor 8,3.
-%Welche Richtung die Summe trägt, wechselt dabei über den Tag: um 7 Uhr stammen 20,6 von 29,0\,\EurMWh{} aus der Entladereservierung, um 14 Uhr dagegen 56,9 von 79,3\,\EurMWh{} aus der Ladereservierung.
-%Am Abend bestimmt wieder die Entladereservierung, die um 19 Uhr 43,8 von 55,4\,\EurMWh{} trägt.
-%Über das Jahr liegen beide Richtungen nahe beieinander, und allein im Frühjahr und im Frühsommer trägt die Ladereservierung mehr, im Juni etwa 22,2 gegen 16,4\,\EurMWh{}.
 Eine kurative Maßnahme, die bilanziell ausgeglichen sein soll, verlangt die Vorhaltung in beiden Richtungen, denn der \ac{ÜNB} braucht sie für das Herunterfahren wie für das Hochfahren.
 Die Summe beider Richtungen gibt deren Preis an, und sie ist die Addition beider Preise und kein Mittelwert, denn Entlade- und Ladereservierung sind eigene Produkte mit eigener Opportunität und eigenem Ladezustandsband.
-% BERICHTIGT am 23.09.2026 vor dem Setzen. Die Zeile "Summe" in ERGEBNISSE
-% Abschnitt 7.2 ist der Median der je Stunde gebildeten Summe und nicht die
-% Summe der beiden Mediane; im Juni stehen 56,1 gegen 38,6 Euro je Megawatt
-% und Stunde. Aus demselben Grund laesst sich kein Anteil einer Richtung an
-% der Summe angeben. Der Vergleich laeuft deshalb zwischen den beiden
-% Richtungen. Nicht gesetzte Fassung:
-%Über den Tag schwankt die Summe der Mediane um den Faktor 8,3 ...
-%Welche Richtung sie trägt, wechselt dabei: um 7 Uhr stammen 71 Prozent aus der Entladereservierung ...
 Über den Tag schwankt der Median der Summe um den Faktor 8,3, nämlich von 9,6\,\EurMWh{} um Mitternacht auf 79,3\,\EurMWh{} um 14 Uhr.
 Welche Richtung ihn trägt, wechselt dabei über den Tag, denn um 7 Uhr liegt der Median der Entladereservierung beim 4,6-Fachen der Ladereservierung.
 Um 14 Uhr kehrt sich das Verhältnis auf das 3,7-Fache zugunsten der Ladereservierung um, und um 19 Uhr liegt die Entladereservierung beim 10,7-Fachen.
 Über das Jahr liegen beide Richtungen nahe beieinander, und allein im Frühjahr und im Frühsommer trägt die Ladereservierung mehr, im Juni um ein Drittel.
 
-% ERGAENZT am 22.09.2026 nach ANTWORT_AN_SCHRIFTFASSUNG.md Abschnitt 4,
-% Rueckfrage 3: der Abstand zwischen Median und Mittel ist der neue Befund
-% der ueberarbeiteten Abbildung.
-% UMGESTELLT am 23.09.2026, Vorgabe des Verfassers: der Jahresgang steht
-% jetzt vor dem Abstand der beiden Masse, und dieser Abstand ist zu einem
-% eigenen, deutenden Absatz ausgebaut. Zurueckgenommene Fassung:
-%Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
-%In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians, nämlich 15,4 gegen 4,1\,\EurMWh{}, und um 13 Uhr nur das 1,04-Fache, nämlich 61,0 gegen 58,6\,\EurMWh{}.
-%Die Rechtsschiefe sitzt damit in den Stunden, in denen die Reservierung im Regelfall wenig kostet, und nicht in der Mittagsspitze.
-%Die Summe beider Richtungen erreicht ihren größten Monatsmedian im September mit 56,9\,\EurMWh{} und ihren kleinsten im Dezember mit 13,5\,\EurMWh{}.
-%Das arithmetische Mittel verschiebt diese Aussage über die Monate, denn der Median der Ladereservierung erreicht sein Maximum im September mit 25,5 und das arithmetische Mittel im Juni mit 43,2\,\EurMWh{}.
 Über das Jahr verschiebt sich das Muster von der Tages- auf die Jahreszeit.
 Der Median der Summe schwankt über die Monate um den Faktor 4,2, nämlich von 13,5\,\EurMWh{} im Dezember auf 56,9\,\EurMWh{} im September.
-% ERGAENZT am 24.09.2026, Befund B1 der Kontrolllesung: die beiden
-% Jahreszeiten sind als Vier-Monats-Bloecke gesetzt, und der teuerste
-% Monat September faellt aus beiden heraus. Der angefuegte Satz sagt das,
-% ohne eine Ursache zu behaupten. Die Ursache ist am 24.09.2026 in
-% analysen/afrr_herbst_2025 untersucht und bleibt nach Entscheidung des
-% Verfassers aus dem Text.
 Im Winter von November bis Februar liegt sie bei 23,2\,\EurMWh{} und im Sommer von Mai bis August bei 38,6\,\EurMWh{}, sodass die Reservierung im Winter rund 40 Prozent weniger kostet.
 Ihr Maximum erreicht die Summe im September und damit außerhalb beider Jahreszeiten.
 Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Abschnitt~\ref{sec:price_vs_redispatch} geprüft.
 
-% AUSGEBAUT am 23.09.2026, Vorgabe des Verfassers: der Abstand beider Masse
-% wird gedeutet und nicht nur beziffert. Die Deutung stammt vom Verfasser,
-% naemlich dass ein weiter Abstand auf groessere Preisspannen mit einzelnen
-% Extremwertstunden hinweist und ein enger auf ein gleichmaessig hohes
-% Niveau.
 Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag und über das Jahr nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
 In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians und um 13 Uhr nur das 1,04-Fache.
 Über die Monate zeigt sich dasselbe, denn der Median der Ladereservierung erreicht sein Maximum im September und das arithmetische Mittel im Juni.
 Ein weiter Abstand beider Maße weist auf große Preisspannen mit einzelnen Extremwertstunden hin, ein enger auf ein gleichmäßig hohes Niveau.
 Wo der Preis im Regelfall niedrig ist, treiben deshalb einzelne Stunden das Mittel, und wo er ohnehin hoch ist, liegen beide Maße nahe beieinander.
 
-% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers: das Muster soll nicht nur
-% beschrieben, sondern begruendet werden, damit die Diskussion es deuten
-% kann. Zahlen aus den eigenen Auswertungen in analysen/zeitmuster_ursachen,
-% naemlich BEFUND.md fuer den Leistungspreis der Mittagsstunden und
-% BEFUND_ARBITRAGEPAARE.md fuer die Spannen. Die Deutung stammt vom
-% Verfasser und ist am 23.09.2026 bestaetigt.
-% VERSCHOBEN am 23.09.2026 hinter die Heatmap, Vorgabe des Verfassers.
-% Zurueckgenommene Fassung an dieser Stelle:
-%Hinter beiden Mustern steht dieselbe Ursache.
-%Das Produkt bindet eine Zeitscheibe, und die Bezugsanlage kann ihm nicht ausweichen.
-%Die größte Spanne eines Tages beträgt im Median 179,0 Euro je Megawattstunde, und das zehnte Bezugs- und Absatzpaar trägt davon noch 112,8.
-
-% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers vom 22.09.2026: drei bis
-% fuenf Saetze Schlussfolgerungen je Abschnitt. Der Faktor 4,2 des
-% Jahresgangs ist eine eigene Ableitung aus 56,9 im September gegen 13,5 im
-% Dezember. Was ein Betreiber oder der UENB daraus machen sollte, bleibt
-% Kapitel 5 vorbehalten; die Vormerkungen stehen in HANDOFF.md Abschnitt 7.
-% WEICHER GEFASST am 23.09.2026, Vorgabe des Verfassers. Die Aussage, die
-% Tageszeit treibe den Preis staerker als die Jahreszeit, ist herausgenommen
-% und fuer Abschnitt 4.5 vorgemerkt, wo die Saisonalitaet allein betrachtet
-% wird. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die beiden Richtungen sind gegenläufig, denn die Photovoltaik setzt mittags den Wert des Ladens und abends den des Entladens.
-%Die Summe beider Richtungen ist deshalb mittags am teuersten, obwohl die Entladereservierung dann günstig ist.
-%Über den Tag schwankt die Summe um den Faktor 8,3, über die Monate nur um 4,2, sodass die Tageszeit den Preis stärker treibt als die Jahreszeit.
-%Der Leistungspreis der \ac{aFRR} trägt dabei das Niveau, während einzelne hohe Preisspannen an den Energiemärkten die Extrema tragen.
-% VARIIERT am 23.09.2026, Vorgabe des Verfassers: der Satz stand sechsmal
-% gleichlautend im Kapitel. Zurueckgenommene Fassung, an dieser Stelle nicht
-% wieder aufzunehmen: Aus dieser Untersuchung laesst sich Folgendes
-% mitnehmen.
 Über das zeitliche Muster sind damit vier Aussagen belegt.
 Die Ladereservierung ist mittags teuer und bildet von März bis Oktober ein zusammenhängendes Band, während die Entladereservierung über zwei Tageszeiten und mehr Tage streut.
 Die Summe beider Richtungen, also der Preis einer bilanziell ausgeglichenen Vorhaltung, erreicht ihr Maximum mittags.
 Der Leistungspreis der \ac{aFRR} trägt dabei das Niveau, während einzelne hohe Preisspannen an den Energiemärkten die Extrema tragen.
 Der Abstand zwischen Median und arithmetischem Mittel zeigt an, ob ein hoher Preis auf einem gleichmäßigen Niveau oder auf einzelnen Stunden beruht.
 
-% ---------------------------------------------------------------
 \section{Kurativer Reservierungspreis und Engpassbedarf}
 \label{sec:price_vs_redispatch}
-% NEU GESCHRIEBEN am 23.09.2026, Vorgabe des Verfassers: drei Absaetze,
-% naemlich das Gleichzeitigkeitsproblem, die Jahresebene mit Abbildung 4.6
-% und die Schlussfolgerungen. Alle Zahlen stehen auf der Ebene, die die
-% jeweilige Abbildung zeigt, damit der Leser sie nachvollziehen kann; fuer
-% Abbildung 4.6 ist das die Tagesebene. Keine Korrelationszahlen, wenige
-% Preise, Vergleiche in Prozent.
-% Die Zahlen des Tagesmusters stammen aus analysen/redispatch_tagesmuster,
-% die der Jahreszeiten aus analysen/zeitmuster_ursachen/BEFUND_JAHRESZEITEN_TAG.md.
-% Beide sind vom Analyse-Repository unabhaengig nachgerechnet und bestaetigt.
-% ZURUECKGENOMMEN, NICHT WIEDER AUFZUNEHMEN:
-%Das Muster aus Abschnitt~\ref{sec:price_pattern} sagt, wann die Vorhaltung teuer ist, und lässt offen, ob diese Zeiten mit dem Engpassmanagementbedarf zusammenfallen.
-%In Abbildung~\ref{fig:jahreslauf_mittel} steht das arithmetische Mittel des kurativen Reservierungspreises je Tag neben der Redispatchleistung desselben Tages.
-%Ausgewiesen ist das Mittel und nicht der Median, weil das Mittel sich mit der beschafften Menge multipliziert und damit die Kosten des \ac{ÜNB} trägt.
-%Der Median der Tagesmediane beträgt 12,70\,\EurMWh{} in der Entlade- und 9,88\,\EurMWh{} in der Laderichtung, der Median der Tagesmittel dagegen 18,18 und 21,78\,\EurMWh{}.
-%Der Abstand beider Maße ist die Rechtsschiefe der Verteilung, und die Darstellung im Median steht in Anhang~\ref{anh:jahreslauf_median}.
-%Die waagerechte Linie der Abbildung bezeichnet den Arbeitspreis des heutigen präventiven Redispatch.
-%Die Bundesnetzagentur weist für das Netzengpassmanagement im Jahr 2025 vorläufige Gesamtkosten von 3071 Millionen Euro und ein Maßnahmenvolumen von 30\,319\,\si{GWh} aus \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-%Aus beiden Angaben ergibt sich ein Arbeitspreis von 101 Euro je bewegter Megawattstunde, gemittelt über das gesamte Maßnahmenvolumen.
-%Dieser Vergleichswert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
-%Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
-%Der so gebildete Arbeitspreis ist ein vereinfachter Vergleichswert und keine Kostenkennzahl je Megawattstunde.
-%Die Kosten des Netzengpassmanagements hängen nicht durchgehend an der bewegten Energie, denn allein 952 Millionen Euro entfallen im Jahr 2025 auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-%Das Maßnahmenvolumen fasst zudem Instrumente mit verschiedener Kostenstruktur zusammen, nämlich den Redispatch mit Markt- und Reservekraftwerken, die Entschädigung abgeregelter Anlagen und das Countertrading.
-%Der Wert wird deshalb über das gesamte Maßnahmenvolumen gemittelt und weder nach Richtung aufgeteilt noch halbiert.
-%Er gibt damit eine Größenordnung an, gegen die sich die kurative Vorhaltung einordnen lässt, und nicht den Betrag, den der \ac{ÜNB} je bewegter Megawattstunde zahlt.
-%Gemessen am Tagesmedian bleibt der kurative Reservierungspreis in beiden Richtungen an allen 365 Tagen unter dieser Linie.
-%Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung darunter.
-%Die Stundenebene trägt die schärfere Aussage, denn dort liegen 8485 von 8758 Stunden in der Entlade- und 8477 in der Laderichtung unter der Linie, also 96,9 und 96,8 Prozent.
-%Rund jede dreißigste Stunde je Richtung liegt damit darüber, und für die Summe beider Richtungen sind es mit 7833 von 8758 Stunden nur 89,4 Prozent und damit rund jede zehnte Stunde.
-%Die Redispatchleistung beträgt im Tagesmittel 1523\,\si{MW} nach oben und 1226\,\si{MW} nach unten.
-%Der Korrelationskoeffizient zwischen dem Tagesmedian des kurativen Reservierungspreises und der Redispatchleistung des Tages beträgt minus 0,03 in der Entlade- und plus 0,11 in der Laderichtung, sodass Preis und Bedarf innerhalb des Jahres nicht zusammenlaufen.
-%Zwischen den Jahreszeiten besteht dagegen ein Zusammenhang.
-%Im Winter von Dezember bis Februar kostet die Entladereservierung im Median 9,83 und die Ladereservierung 4,71\,\EurMWh{}, zusammen also 14,55\,\EurMWh{}, während die Redispatchleistung nach oben mit 2314\,\si{MW} ihren größten Wert erreicht.
-%Im Herbst von September bis November stehen 18,93 und 14,77\,\EurMWh{} und damit zusammen 33,70\,\EurMWh{} einer Redispatchleistung von 1767\,\si{MW} gegenüber.
-%Frühjahr und Sommer liegen mit 23,92 und 23,30\,\EurMWh{} dazwischen, bei 1034 und 996\,\si{MW}.
-%Auf Stundenebene bestätigt sich dieser Verlauf, denn im Winter liegen 97,5 Prozent der Stunden unter der Bezugslinie und im Herbst nur 86,1 Prozent.
-%Die Jahreszeit mit dem größten Engpassmanagementbedarf ist damit zugleich die Jahreszeit mit der günstigsten Reservierung.
 
-% GESTRAFFT am 23.09.2026, Vorgabe des Verfassers: praegnanter, und der
-% Beleg steht jetzt im Anhang. Zurueckgenommene Fassung:
-%Über den Tag schwankt die Redispatchleistung zwischen 2029 und 3440\,\si{MW} und damit um den Faktor 1,7, während der Median der Summe beider Reservierungsrichtungen um den Faktor 8,3 schwankt.
-%Die Tageszeit bestimmt damit vor allem den Preis und kaum den Bedarf.
-%Eine Ausnahme bildet der Mittag, denn der Bedarf an Reduzierung der Einspeisung erreicht dort mit 1701\,\si{MW} seinen größten Wert, und die Ladereservierung ist zur selben Zeit am teuersten.
-%In den sechs teuersten Stunden der Ladereservierung fällt ein Drittel dieses Bedarfs an, gegenüber einem Viertel bei gleichmäßiger Verteilung.
-%In der Entladerichtung trifft der teure Abend dagegen keinen erhöhten Bedarf.
-% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: vor dem Verweis steht, was
-% Anhang H zeigt und wie der Redispatch aggregiert ist. Die beiden Saetze
-% standen zuvor im Anhang selbst und sind dort gestrichen, damit sie nicht
-% doppelt erscheinen. Zurueckgenommene Fassung:
-%Über den Tag schwankt der Bedarf nach Anhang~\ref{anh:redispatch_zeitmuster} um den Faktor 1,7, der Preis dagegen um 8,3, sodass die Tageszeit vor allem den Preis bestimmt.
 Ob die kurative Vorhaltung günstig zu beschaffen ist, entscheidet sich daran, ob die teuren Stunden mit dem Engpassmanagementbedarf zusammenfallen.
 Anhang~\ref{anh:redispatch_zeitmuster} zeigt den Engpassmanagementbedarf über die Stunde des Tages und über den Monat, im selben Format wie Abbildung~\ref{fig:zeitmuster_reservierungspreis} den Preis.
 Grundlage sind die 19\,369 Redispatchmaßnahmen des Jahres 2025, deren mittlere Leistung anteilig auf die Stunden ihrer Dauer verteilt ist \cite{netztransparenz_regelenergie_2026}.
@@ -848,33 +210,13 @@ Eine Ausnahme bildet der Mittag, denn dort trifft der größte Bedarf an Reduzie
 In der Entladerichtung trifft der teure Abend dagegen keinen erhöhten Bedarf.
 Der Vergleich von Preis und Bedarf läuft deshalb über die Jahreszeit.
 
-% GEAENDERT am 23.09.2026, drei Vorgaben des Verfassers: die Begruendung des
-% Mittels streichen, die Bezugslinie unter der Annahme linearer Kosten
-% schreiben, den Satz zu den 952 Millionen Euro streichen.
-% Zurueckgenommene Fassung:
-%Abbildung~\ref{fig:jahreslauf_mittel} stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel, denn das Mittel bezieht die teuren Stunden mit ihrem Gewicht ein.
 Abbildung~\ref{fig:jahreslauf_mittel} stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel.
 Die waagerechte Linie bezeichnet den Arbeitspreis des präventiven Redispatch von 101 Euro je bewegter Megawattstunde, den die Bundesnetzagentur aus Gesamtkosten von 3071 Millionen Euro und einem Maßnahmenvolumen von 30\,319\,\si{GWh} ausweist \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Die Zahl ist der Quotient beider Werte und setzt damit voraus, dass die Kosten des Netzengpassmanagements linear mit dem Maßnahmenvolumen steigen.
-% GESTRAFFT am 23.09.2026: die Abgrenzung der Bezugslinie steht in zwei
-% Saetzen statt in dreien. Zurueckgenommene Fassung:
-%Dieser Wert ist ein Arbeitspreis je bewegter Megawattstunde, während der kurative Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit ist.
-%Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, sodass die Abbildung sie nebeneinanderstellt und nicht gegeneinander aufrechnet.
-%Hinzu kommt, dass allein 952 Millionen Euro auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke entfallen, sodass die Linie eine Größenordnung angibt und keine Kostenkennzahl \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
-%Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, denn die Linie ist ein Arbeitspreis je bewegter Megawattstunde und der Reservierungspreis ein Leistungspreis je vorgehaltener Leistung und Zeit.
-%Allein 952 Millionen Euro entfallen zudem auf die vorhalte- und einsatzunabhängigen Kosten der Reservekraftwerke, sodass die Linie eine Größenordnung angibt und keine Kostenkennzahl \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, denn der kurative Reservierungspreis ist ein Leistungspreis je vorgehaltener Leistung und Zeit.
-% GEAENDERT am 23.09.2026, zwei Vorgaben des Verfassers: den Jahresgang am
-% guenstigsten Monat aufhaengen und die Entladereservierung mitnehmen; beim
-% Redispatch die bedarfsreichsten Tage zaehlen statt Mittelwerte je
-% Jahreszeit zu nennen. Zurueckgenommene Fassung:
-%Im Winter kostet die Ladereservierung im Tagesmittel 7,9\,\EurMWh{}, in den übrigen Jahreszeiten zwischen 175 und 265 Prozent mehr.
-%Zugleich erreicht die Redispatchleistung nach oben im Winter 2312\,\si{MW} und liegt in den übrigen Jahreszeiten 24 bis 57 Prozent darunter.
 Beide Reservierungsrichtungen sind im Dezember am günstigsten, nämlich 5,8\,\EurMWh{} in der Lade- und 9,9\,\EurMWh{} in der Entladerichtung, und steigen bis zum Juni auf das 6,4-Fache beziehungsweise bis zum Oktober auf das 3,7-Fache.
 Der Engpassmanagementbedarf verläuft umgekehrt, denn von den zehn Tagen mit dem größten Bedarf fallen sieben in der Erhöhungs- und neun in der Reduzierungsrichtung auf den Winter und höchstens einer auf den Sommer.
 Das Tagesmittel bleibt an 362 von 365 Tagen in der Entlade- und an 364 von 365 Tagen in der Laderichtung unter der Bezugslinie, im Winter an allen Tagen beider Richtungen.
-% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: einordnen, dass das
-% arithmetische Mittel teure Einzelstunden nicht ausschliesst.
 Das arithmetische Mittel eines Tages schließt teure Einzelstunden nicht aus, doch sein Median liegt selbst im Sommer bei 16,7\,\EurMWh{} in der Entlade- und 26,0\,\EurMWh{} in der Laderichtung.
 
 \begin{figure}[H]
@@ -884,243 +226,39 @@ Das arithmetische Mittel eines Tages schließt teure Einzelstunden nicht aus, do
     \label{fig:jahreslauf_mittel}
 \end{figure}
 
-% VARIIERT am 23.09.2026, Vorgabe des Verfassers: der Satz stand sechsmal
-% gleichlautend im Kapitel. Zurueckgenommene Fassung, an dieser Stelle nicht
-% wieder aufzunehmen: Aus dieser Untersuchung laesst sich Folgendes
-% mitnehmen.
 Daraus folgt für die Beschaffung der kurativen Vorhaltung dreierlei.
-% PRAEZISIERT am 23.09.2026: die Aussage gilt fuer das Tagesmittel.
-%Die kurative Vorhaltung bleibt das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
-% GEAENDERT am 26.09.2026, B21: Zeile 844 weist 362 von 365 und 364 von 365 Tagen aus
-% Alte Fassung, nicht wieder aufzunehmen:
-%Die kurative Vorhaltung bleibt im Tagesmittel das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
 Die kurative Vorhaltung bleibt im Tagesmittel fast das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar.
 Das größte Potenzial liegt im Winter, denn dort trifft der größte Engpassmanagementbedarf auf die günstigste Reservierung.
 Die Mittagsstunden bilden die Ausnahme, denn dort fällt der größte Bedarf an Reduzierung der Einspeisung mit der teuersten Ladereservierung zusammen.
 
 \section{Sensitivitäten}
 \label{sec:sensitivities}
-% Anweisung Abschnitt 4.7 und AUFBAU_KAPITEL_4.md 4.7. Alle Varianten als
-% Boxplot mit Whiskern von Minimum bis Maximum; abgeschnittene Whisker
-% tragen ihre Zahl. Die Medianzahl ist am 22.09.2026 aus den Boxplots
-% entfernt worden, weil sie mit der Maximumzahl konkurrierte.
 
 Der kurative Reservierungspreis misst die Opportunitätskosten der verdrängten Vermarktung, sodass er von den Annahmen abhängt, mit denen das Optimierungsmodell diese Vermarktung abbildet.
-% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: die Aufzaehlung nannte drei
-% Groessen, der Abschnitt traegt aber vier Unterabschnitte. Die
-% Zukunftsvariante fehlte, und die Bindungsdauer war als feste Annahme nicht
-% abgegrenzt. Der Verfasser nennt die Zukunftsvariante eine pauschale
-% Untersuchung der Saettigung im Markt fuer aFRR-Leistung und der groesseren
-% Liquiditaet im Kurzfristhandel am IDC; diese Deutung steht jetzt hier,
-% waehrend 4.6.4 die Umsetzung als Abschlaege traegt.
-% Zurueckgenommene Fassung:
-%In den folgenden Abschnitten werden drei Größen geprüft.
 Drei der folgenden Abschnitte prüfen je eine Annahme des Optimierungsmodells, der vierte eine Annahme über die künftige Marktlage.
-% BERICHTIGT am 24.09.2026, Befund A5 der Kontrolllesung: die drei Viertel
-% sind in Abschnitt 4.2 am Bruttoerloes gemessen, naemlich 76,7 Prozent von
-% 358,6 Tsd. Euro je Megawatt und Jahr. Der Referenzerloes ist der Betrag
-% nach Abzug der Degradation. Zurueckgenommene Fassung:
-%Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Referenzerlöses trägt.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Satz soll sagen,
-% warum der Anteil am Erloes fuer die Preisbildung von Belang ist. Das
-% Wort "erheblich" der Vorgabe steht nach Stilregel 15 auf der
-% Verbotsliste und ist durch die vergleichende Aussage ersetzt, die
-% Abschnitt 4.6.1 mit Zahlen traegt. Zurueckgenommene Fassung:
-%Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Bruttoerlöses trägt.
 Die Modellierung der \ac{aFRR} steht voran, weil die \ac{aFRR} nach Abschnitt~\ref{sec:iteration_prices} drei Viertel des Bruttoerlöses trägt und den kurativen Reservierungspreis damit am stärksten bewegt.
-% BERICHTIGT am 24.09.2026, Befund S4 des Durchgangs durch 4.6: die
-% Handelsspanne ist eine Annahme des Optimierungsmodells und nicht der
-% Ansatz eines Betreibers. Abschnitt 4.6.3 sagt, sie beruhe auf dem ID1
-% und einem Aufschlag und ihre Breite sei eine Annahme.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die ein Betreiber zu hoch ansetzen kann.
-% UMGESTELLT am 24.09.2026, Vorgabe des Verfassers: die Abschnitte folgen
-% dem Einfluss auf den Preis, und der IDC steht nach beiden Massstaeben
-% vor der vorgehaltenen Energie. Nach dem Erloesanteil traegt er 14,0
-% gegen 76,7 Prozent der aFRR, nach der gemessenen Wirkung hebt eine
-% verdoppelte Handelsspanne den Median um 36,7 Prozent gegen 4,0 und 12,7
-% Prozent bei der vorgehaltenen Energie. Zurueckgenommene Fassung:
-%Es folgen die Abrufdauer, über die der \ac{ÜNB} entscheidet, und die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt.
-% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: "das
-% Optimierungsmodell schaetzt" ist unpraezise und sagt nicht, warum
-% geschaetzt wird. Der Grund steht in Abschnitt 3.2 im Wortlaut: was der
-% Betreiber durch mehrfachen Handel zusaetzlich verdient, liesse sich nur
-% aus den Orderbuechern ablesen und bleibt ohne sie eine Schaetzung.
-% Zurueckgenommene Fassung:
-%Es folgen die Handelsspanne am \ac{IDC}, die das Optimierungsmodell schätzt, und die vorgehaltene Energie je Abruf, über die der \ac{ÜNB} entscheidet.
 Es folgen die Handelsspanne am \ac{IDC}, deren erzielbare Breite ohne die Orderbücher eine Schätzung bleibt, und die vorgehaltene Energie je Abruf, über die der \ac{ÜNB} entscheidet.
-% GESTRICHEN am 23.09.2026, Vorgabe des Verfassers. Die Abgrenzung der
-% Bindungsdauer steht weiter im Abschnitt 4.6.2 selbst. Zurueckgenommene
-% Fassung, in der Einleitung nicht wieder aufzunehmen:
-%Die Bindungsdauer bleibt in allen Varianten eine Stunde und gehört deshalb nicht zu den geprüften Größen.
-% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: die Variante trifft
-% eine Annahme ueber die Zukunft und steht deshalb im Konjunktiv. Statt
-% der groesseren Liquiditaet steht mehr Wettbewerb, weil das die
-% schmalere Handelsspanne unmittelbar traegt. Der erste Satz von 4.6.4
-% ist mitgezogen, Stilregel 14. Zurueckgenommene Fassung:
-%Die Zukunftsvariante prüft zuletzt pauschal, wie eine Sättigung des Marktes für \ac{aFRR}-Leistung und eine größere Liquidität im Kurzfristhandel am \ac{IDC} auf den kurativen Reservierungspreis wirken.
 Die Zukunftsvariante prüft zuletzt pauschal, wie eine künftige Sättigung des Marktes für \ac{aFRR}-Leistung und mehr Wettbewerb am \ac{IDC} auf den kurativen Reservierungspreis wirken würden.
-% VERSCHOBEN am 22.09.2026 aus der Kapiteleinleitung hierher, weil der Satz
-% die Vergleichbarkeit der Sensitivitaeten betrifft und nicht den Jahreslauf.
-% GESTRICHEN am 23.09.2026, Vorgabe des Verfassers. Der Satz war am
-% 22.09.2026 aus der Kapiteleinleitung hierher verschoben worden.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Sensitivitäten nutzen eine eigene Referenzrechnung, die im Median um 0,01\,\EurMWh{} vom Jahreslauf abweicht und damit mit den übrigen Ergebnissen vergleichbar ist.
 
 \subsection{Modellierung der \acs{aFRR}}
 \label{sec:sensi_afrr}
-% Zahlen aus ERGEBNISSE Abschnitt 7.5 und 7.6, gepaarte Differenzen aus 3.1.
-
-% NEU SORTIERT am 23.09.2026 nach sechs Vorgaben des Verfassers, siehe
-% Entscheidungsprotokoll. Die Reihenfolge lautet jetzt Basisfall, Pruefumfang,
-% Verteidigung der Annahmen, Leistungsdiagramm, Arbeitsdiagramm, Schieflage,
-% Ungewissheit des Abrufs, Abgrenzung der Jahresrechnung.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%In Abbildung~\ref{fig:sensi_afrr_leistung} sind vier Annahmen über die \ac{aFRR}-Leistung gestaffelt, von der Variante ohne \ac{aFRR} bis zur Bewertung der vorgehaltenen Leistung zum Grenzpreis.
-%Ohne \ac{aFRR} fällt der Median auf 3,47\,\EurMWh{} in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
-%Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises.
-%Diese Variante trennt Leistung und Arbeit allerdings nicht, denn unter anteiliger Lieferung hängt die Menge der gelieferten Arbeit an der vorgehaltenen Leistung und entfällt mit ihr.
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_leistung_2025.pdf}
-%    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter vier Annahmen über die \acs{aFRR}-Leistung, zweite Iteration. Der Whisker trägt am oberen Ende seinen Wert.}
-%    \label{fig:sensi_afrr_leistung}
-%\end{figure}
-%Bewertet das Optimierungsmodell die vorgehaltene Leistung mit dem Grenzpreis statt mit dem mengengewichteten Mittel der Zuschläge, steigt der Median auf 14,19 und 11,47\,\EurMWh{} und damit um rund 16 Prozent.
-%Das Maximum der Entladereservierung steigt dagegen von 1008 auf 4687\,\EurMWh{} und damit auf das Viereinhalbfache.
-%Die Annahme über den Zuschlagspreis verschiebt somit nicht das Niveau des kurativen Reservierungspreises, sondern seinen oberen Rand.
-%Der Wert von 4687\,\EurMWh{} ist ein Einzelwert, dessen Ursache nicht untersucht ist.
-%In Abbildung~\ref{fig:sensi_afrr_energie} ist die Lieferung der \ac{aFRR}-Arbeit bei gleichbleibendem Leistungspreis variiert.
-%Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median von 12,22 auf 18,85\,\EurMWh{} in der Entlade- und von 9,85 auf 20,69\,\EurMWh{} in der Laderichtung.
-%Die Lieferung bis zum realen Abruf und die Lieferung bis zur vollen Speicherleistung ergeben mit 20,60 und 20,61\,\EurMWh{} entladend sowie 20,88 und 21,33\,\EurMWh{} ladend nahezu dieselben Werte.
-%Der Sprung liegt damit zwischen anteiliger und freier Lieferung und nicht zwischen den drei freien Liefermodi, sodass allein die Zulassung freier Lieferung zu begründen ist.
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_energie_2025.pdf}
-%    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter vier Liefermodi der \acs{aFRR}-Arbeit bei gleichem Leistungspreis, zweite Iteration.}
-%    \label{fig:sensi_afrr_energie}
-%\end{figure}
-%Die beiden Annahmen wirken an verschiedenen Stellen der Verteilung.
-%Die freie Lieferung hebt das untere Quartil von 4,33 auf 7,64\,\EurMWh{} und den Median von 12,22 auf 20,61\,\EurMWh{}, das 95-Prozent-Quantil dagegen nur von 76 auf 92\,\EurMWh{}.
-%Die freie Lieferung hebt also den Sockel der Verteilung, während der Grenzpreis ihre Spitze hebt.
-%Zwei Annahmen, die sich im Median ähnlich auswirken, verändern das Ergebnis somit an verschiedenen Stellen der Verteilung.
-%Alle Varianten sind über das ganze Jahr gerechnet und nicht über einzelne Analysetage.
-%Eine frühere Fassung dieser Sensitivität fasste vier Tage zu einer Verteilung zusammen, und von deren Streuung entfielen nur 6,7 Prozent in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
-%Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, sodass die frühere Abbildung vor allem zeigte, welcher der vier Tage teuer war.
-%Über das Jahr entfällt dieser Einwand.
-
-% NEU GEGLIEDERT am 23.09.2026, Vorgaben des Verfassers: die beiden ersten
-% Absaetze aehnelten sich sehr und sind einer geworden; beide Abbildungen
-% sind einen Absatz nach hinten gerueckt, sodass zwischen ihnen genau ein
-% Absatz steht; jeder Abbildungsabsatz traegt jetzt Niveau, Quantile und
-% Schieflage seiner eigenen Abbildung; am Ende steht ein
-% Schlussfolgerungsabsatz. Jede Zahl traegt ihre Einheit.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Im Basisfall bewertet das Optimierungsmodell die vorgehaltene \ac{aFRR}-Leistung mit dem mengengewichteten Mittelwert der Zuschläge und die gelieferte Arbeit anteilig, nämlich mit dem Anteil der eigenen Vorhaltung am deutschlandweiten Abruf.
-%Auf der Leistungsseite ist diese Annahme in vier Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit, im Basisfall und mit dem Grenzpreis des letzten Zuschlags.
-%Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
-%Die Trennung beider Seiten zeigt, ob der Abrechnungspreis der Kapazitätsauktion oder die Liefermenge den kurativen Reservierungspreis trägt.
-%Wie weit eine Anlage den \ac{aFRR}-Markt ausschöpfen kann, hängt von drei Größen ab, nämlich vom abgerufenen Energievolumen, von der Handelsstrategie und vom Bietverhalten.
-%Keine dieser Größen ist für eine einzelne Anlage beobachtbar, denn die Ergebnislisten der Auktionen sind anonymisiert \cite{regelleistung_ausschreibungsdaten_2026}.
-%Der Basisfall setzt deshalb die anteilige Lieferung, die die gelieferte Menge je Zeitscheibe festlegt und dem Optimierungsmodell damit die Wahl der Lieferstunden nimmt.
-%Ein freier Liefermodus gibt dem Optimierungsmodell diese Wahl zurück, sodass es die Arbeit in die Stunden mit dem größten Erlös legt.
-%Die anteilige Lieferung verhindert somit, dass der kurative Reservierungspreis aus einer Vermarktung folgt, die eine reale Anlage nicht erreicht.
-%Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die vier Stufen der Leistungsseite.
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_leistung_2025.pdf}
-%    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter vier Annahmen über die \acs{aFRR}-Leistung, zweite Iteration. Der Whisker trägt am oberen Ende seinen Wert.}
-%    \label{fig:sensi_afrr_leistung}
-%\end{figure}
-%Ohne \ac{aFRR} fällt der Median auf 3,47 in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22 und 9,85\,\EurMWh{} im Basisfall.
-%Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises, wobei diese Stufe Leistung und Arbeit gemeinsam entfernt.
-%Bewertet das Optimierungsmodell die vorgehaltene Leistung mit dem Grenzpreis des letzten Zuschlags, steigt der Median in beiden Richtungen um 16 Prozent.
-%Das Maximum der Entladereservierung steigt dagegen von 1008 auf 4687\,\EurMWh{} und damit auf das Viereinhalbfache, das Maximum der Ladereservierung von 510 auf 1920\,\EurMWh{}.
-%Der Abrechnungspreis der Kapazitätsauktion verschiebt somit nicht das Niveau des kurativen Reservierungspreises, sondern seinen oberen Rand.
-%Der Wert von 4687\,\EurMWh{} ist ein Einzelwert, dessen Ursache nicht untersucht ist.
-%Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung.
-%\begin{figure}[H]
-%    \centering
-%    \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_energie_2025.pdf}
-%    \caption{Kurativer Reservierungspreis über das Jahr 2025 unter vier Liefermodi der \acs{aFRR}-Arbeit bei gleichem Leistungspreis, zweite Iteration.}
-%    \label{fig:sensi_afrr_energie}
-%\end{figure}
-%Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median um 54 Prozent in der Entlade- und um 110 Prozent in der Laderichtung, ausgehend von 12,22 und 9,85\,\EurMWh{}.
-%Die Lieferung bis zum deutschlandweiten Abruf und die Lieferung bis zur Nennleistung heben den Median um höchstens weitere 9 Prozent.
-%Der Sprung liegt damit zwischen der anteiligen und der freien Lieferung und nicht zwischen den drei freien Stufen, sodass allein die Zulassung freier Lieferung zu begründen ist.
-%Die Stufe ohne Lieferung von Arbeit trennt beide Erlösteile umgekehrt, denn sie senkt den Median der Ladereservierung um 44 Prozent und lässt den der Entladereservierung mit 12,62\,\EurMWh{} nahezu unverändert.
-%Die \ac{aFRR}-Arbeit trägt in der Laderichtung somit einen größeren Teil des kurativen Reservierungspreises als in der Entladerichtung.
-%Beide Annahmen verschieben die Schieflage der Verteilung in verschiedene Richtungen.
-%Das arithmetische Mittel der Entladereservierung liegt im Basisfall beim 1,9-Fachen des Medians, unter dem Grenzpreis beim 2,3-Fachen und unter der Lieferung bis zur Nennleistung nur noch beim 1,6-Fachen.
-%Der Grenzpreis hebt die Spitze der Verteilung, denn er hebt das 95-Prozent-Quantil der Entladereservierung um 39 Prozent und das Maximum auf das Viereinhalbfache.
-%Die freie Lieferung hebt dagegen den Sockel, denn sie hebt das untere Quartil um 76 und den Median um 69 Prozent, das 95-Prozent-Quantil aber nur um 22 Prozent.
-%Der Abrechnungspreis der Kapazitätsauktion bestimmt somit die teuren Stunden und der Liefermodus die typische Stunde.
-%Die freie Lieferung hat damit einen großen Einfluss auf den typischen Preis, doch der Abruf selbst ist ungewiss.
-%In Deutschland wurden im Jahr 2025 im Mittel 51\,\si{MW} positive und 53\,\si{MW} negative \ac{aFRR}-Arbeit abgerufen, gemessen an den bezuschlagten 2010 und 1820\,\si{MW} also 2,5 und 2,9 Prozent \cite{netztransparenz_regelenergie_2026,regelleistung_ausschreibungsdaten_2026}.
-%In 92 Prozent der Viertelstunden bleibt der Abruf unter einem Zehntel der vorgehaltenen Leistung.
-%Die Stufe bis zum Abruf unterstellt der Bezugsanlage, dass sie diesen Abruf allein bedient, und die Stufe bis zur Nennleistung hebt auch diese Grenze auf.
-%Eine solche Lieferung ist für eine einzelne Anlage von 100\,\si{MW} nicht zu erwarten, sodass der Basisfall mit der anteiligen Lieferung die belastbare Annahme bleibt.
-%Alle Stufen sind über das ganze Jahr gerechnet und nicht über einzelne Analysetage.
-%Eine frühere Fassung dieser Sensitivität fasste vier Tage zu einer Verteilung zusammen, und von deren Streuung entfielen nur 6,7 Prozent in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
-%Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, sodass die frühere Abbildung vor allem zeigte, welcher der vier Tage teuer war.
-%Über das Jahr entfällt dieser Einwand.
 
 Im Basisfall bewertet das Optimierungsmodell die vorgehaltene \ac{aFRR}-Leistung mit dem mengengewichteten Mittelwert der Zuschläge und die gelieferte Arbeit anteilig, nämlich mit dem Anteil der eigenen Vorhaltung am deutschlandweiten Abruf.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: pro rata muss einmal
-% erklaert werden. Der Ausdruck steht allein auf den Achsen der beiden
-% Abbildungen dieses Abschnitts und kommt sonst im ganzen Dokument nicht
-% vor. Der Satz bindet ihn an die Definition der anteiligen Lieferung,
-% Stilregel 13. In der Bildunterschrift hat er keinen Platz, weil beide
-% Unterschriften bereits an der Grenze von zwei gesetzten Zeilen stehen.
 Die Abbildungen dieses Abschnitts bezeichnen diese anteilige Lieferung als pro rata.
 Wie weit eine Anlage den \ac{aFRR}-Markt ausschöpfen kann, hängt vom abgerufenen Energievolumen, von der Handelsstrategie und vom Bietverhalten ab.
 Keine dieser drei Größen ist für eine einzelne Anlage beobachtbar, denn die Ergebnislisten der Auktionen sind anonymisiert \cite{regelleistung_ausschreibungsdaten_2026}.
 Die anteilige Lieferung legt die gelieferte Menge je Zeitscheibe fest und nimmt dem Optimierungsmodell damit die Wahl der Lieferstunden, die ein freier Liefermodus zurückgibt.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die anteilige Lieferung
-% verhindert zugleich, dass das Optimierungsmodell allein die
-% ertragreichsten Abrufstunden waehlt. Der Gedanke des Verfassers, dass
-% der Betreiber stets das Risiko traegt, nicht abgerufen zu werden, ist
-% auf seine ausdrueckliche Vorgabe NICHT gesetzt.
 Ein freier Liefermodus ließe das Optimierungsmodell zudem allein in den Stunden mit dem höchsten Preis für \ac{aFRR}-Arbeit liefern.
 Diese Wahl hat ein Betreiber nicht, denn der Abruf ist nicht vorhersehbar.
 
-% UMBRUCH GESETZT am 24.09.2026, Befund A1 des Durchgangs durch 4.6,
-% Stilregel 1: der Absatz trug acht Saetze und zwei Teilgedanken, naemlich
-% die Annahme des Basisfalls samt ihrer Unbeobachtbarkeit und die
-% geprueften Stufen. Jetzt vier und vier Saetze.
-% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: geprueft sind drei
-% Stufen. Der dritte Balken der Abbildung, in der Lieferung beschriftet
-% als "gemittelter Preis, pro rata", ist der Basisfall und steht dort
-% allein als Bezug. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Auf der Leistungsseite ist diese Annahme in vier Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit, im Basisfall und mit dem Grenzpreis des letzten Zuschlags.
 Auf der Leistungsseite ist diese Annahme in drei Stufen geprüft, nämlich ohne \ac{aFRR}, mit dem gemittelten Zuschlagspreis ohne Lieferung von Arbeit und mit dem Grenzpreis des letzten Zuschlags.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: auf der Arbeitsseite ist
-% zu erinnern, woher der Preis stammt, und festzustellen, dass nicht er
-% die Begrenzung ist, sondern die Liefermenge. Belegt in Abschnitt 3.2:
-% die aFRR-Arbeit wird nach dem Grenzpreisverfahren verguetet, und das
-% Modell setzt das volumengewichtete Mittel der Grenzpreise der Plattform
-% PICASSO aus der Transparenzplattform an. Zurueckgenommene Fassung:
-%Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
 Auf der Arbeitsseite bleibt der gemittelte Zuschlagspreis der Leistung stehen, während die Lieferung von der anteiligen Menge auf die Lieferung bis zur eigenen Reservierung, bis zum deutschlandweiten Abruf und bis zur Nennleistung der Bezugsanlage von 100\,\si{MW} erweitert wird.
 Der Preis der Arbeit selbst ist dabei kein Modellwert, denn er ist nach Abschnitt~\ref{sec:input_data} das volumengewichtete Mittel der Grenzpreise der Plattform PICASSO.
 Nicht der Preis begrenzt den Erlös der Arbeitsseite, denn die \ac{aFRR}-Arbeit wird stets zum Grenzpreis vergütet.
 Ausschlaggebend ist allein die gelieferte Menge.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Satz leitet
-% jetzt auf die beiden Groessen ueber, deren Wirkung die Abbildungen
-% zeigen, naemlich die Ueberschaetzung des Leistungspreises und die freie
-% Wahl der Lieferstunden. Zurueckgenommene Fassung:
-%Die Trennung beider Seiten zeigt, ob der Abrechnungspreis der Kapazitätsauktion oder die Liefermenge den kurativen Reservierungspreis trägt.
 Die Trennung beider Seiten zeigt damit, wie stark eine Überschätzung des Leistungspreises und wie stark eine freie Wahl der Lieferstunden auf den kurativen Reservierungspreis wirken.
-% NACHGEZOGEN am 24.09.2026, wie oben. Zurueckgenommene Fassung:
-%Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die vier Stufen der Leistungsseite.
 Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die drei Stufen der Leistungsseite und stellt ihnen den Basisfall als Bezug zur Seite.
 
-% VORGEZOGEN am 24.09.2026, Befund A3 des Durchgangs durch 4.6: die
-% Abbildung stand hinter dem Absatz, der sie beschreibt, und damit einen
-% Absatz hinter dem, der sie einfuehrt. Die Vorgabe des Verfassers vom
-% 22.09.2026 verlangt, dass jede Abbildung hinter dem Absatz steht, der
-% sie einfuehrt. Die Beschreibung folgt jetzt auf die Abbildung, wie in
-% Abschnitt 4.4 bei der Heatmap.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/sensi_afrr_leistung_2025.pdf}
@@ -1129,38 +267,18 @@ Abbildung~\ref{fig:sensi_afrr_leistung} staffelt die drei Stufen der Leistungsse
 \end{figure}
 
 Ohne \ac{aFRR} fällt der Median auf 3,47\,\EurMWh{} in der Entlade- und auf 4,25\,\EurMWh{} in der Laderichtung, gegenüber 12,22\,\EurMWh{} und 9,85\,\EurMWh{} im Basisfall.
-% BERICHTIGT am 24.09.2026, Befund A5 der Kontrolllesung, wie oben.
-% Zurueckgenommene Fassung:
-%Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises, was sich mit ihrem Anteil von drei Vierteln am Referenzerlös deckt.
 Die \ac{aFRR} trägt damit den größten Teil des kurativen Reservierungspreises, was sich mit ihrem Anteil von drei Vierteln am Bruttoerlös deckt.
 Fällt allein die Lieferung der Arbeit weg, so sinkt der Median der Ladereservierung um 44 Prozent, während der der Entladereservierung mit 12,62\,\EurMWh{} nahezu unverändert bleibt.
 Die \ac{aFRR}-Arbeit wiegt in der Laderichtung damit schwerer als in der Entladerichtung.
-% VEREINHEITLICHT am 24.09.2026, Befund St2 des Durchgangs durch 4.6,
-% Stilregel 14: Abschnitt 4.3 nennt dieselbe Groesse oberes Quartil.
-% Zurueckgenommene Fassung:
-%Der Grenzpreis des letzten Zuschlags hebt den Median in beiden Richtungen um 16 Prozent, das obere Ende der mittleren 50 Prozent der Stunden aber nur um 4,6\,\EurMWh{} und 4,9\,\EurMWh{}.
 Der Grenzpreis des letzten Zuschlags hebt den Median in beiden Richtungen um 16 Prozent, das obere Quartil aber nur um 4,6\,\EurMWh{} und 4,9\,\EurMWh{}.
 Das Maximum steigt dagegen von 1008\,\EurMWh{} auf 4687\,\EurMWh{} und von 510\,\EurMWh{} auf 1920\,\EurMWh{}, also auf das 4,6- und das 3,8-Fache.
 Der Grenzpreis verschiebt somit allein den oberen Rand der Verteilung und vergrößert ihre Schieflage, denn das arithmetische Mittel der Entladereservierung steigt vom 1,9- auf das 2,3-Fache des Medians.
 
-% PRAEZISIERT am 24.09.2026, Vorgabe des Verfassers: der gleichbleibende
-% Zuschlagspreis ist der gemittelte und nicht der Grenzpreis des letzten
-% Zuschlags, den die vorige Abbildung als dritte Stufe fuehrt.
-% Zurueckgenommene Fassung:
-%Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung.
 Abbildung~\ref{fig:sensi_afrr_energie} variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung, nämlich dem gemittelten.
 Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median um 54 Prozent in der Entlade- und um 110 Prozent in der Laderichtung, ausgehend von 12,22\,\EurMWh{} und 9,85\,\EurMWh{}.
 Die Lieferung bis zum deutschlandweiten Abruf und die Lieferung bis zur Nennleistung heben den Median um höchstens weitere 9 Prozent.
-% POSITIV GEWENDET am 24.09.2026, Befund St1 des Durchgangs durch 4.6,
-% Vorgabe des Verfassers vom 23.09.2026: kein Satz nach dem Muster "zeigt
-% A und nicht B". Der vorige Satz traegt bereits, dass die drei freien
-% Stufen nahe beieinander liegen. Zurueckgenommene Fassung:
-%Der Sprung liegt damit zwischen der anteiligen und der freien Lieferung und nicht zwischen den drei freien Stufen, sodass allein die Zulassung freier Lieferung zu begründen ist.
 Der Sprung liegt damit zwischen der anteiligen und der freien Lieferung, sodass allein die Zulassung freier Lieferung zu begründen ist.
 Die freie Lieferung hebt anders als der Grenzpreis das Hauptfeld der Verteilung.
-% VEREINHEITLICHT am 24.09.2026, Befund St2, wie oben.
-% Zurueckgenommene Fassung:
-%In der Entladerichtung steigt das untere Quartil um 76 und das obere Ende der mittleren 50 Prozent um 49 Prozent, das 95-Prozent-Quantil dagegen nur um 22 Prozent.
 In der Entladerichtung steigt das untere Quartil um 76 und das obere Quartil um 49 Prozent, das 95-Prozent-Quantil dagegen nur um 22 Prozent.
 Die Schieflage nimmt dadurch ab, denn das arithmetische Mittel der Entladereservierung sinkt vom 1,9- auf das 1,6-Fache des Medians.
 
@@ -1171,84 +289,28 @@ Die Schieflage nimmt dadurch ab, denn das arithmetische Mittel der Entladereserv
     \label{fig:sensi_afrr_energie}
 \end{figure}
 
-% BEZIFFERT am 24.09.2026, Befund St3 des Durchgangs durch 4.6,
-% Stilregel 7: "grosser Einfluss" stand ohne Bezugsgroesse.
-% Zurueckgenommene Fassung:
-%Die freie Lieferung hat damit einen großen Einfluss auf den typischen Preis, doch der Abruf selbst ist ungewiss.
 Die freie Lieferung hebt den typischen Preis damit um mindestens die Hälfte, doch der Abruf selbst ist ungewiss.
 In Deutschland wurden im Jahr 2025 im Mittel 51\,\si{MW} positive und 53\,\si{MW} negative \ac{aFRR}-Arbeit abgerufen, gemessen an den bezuschlagten 2010\,\si{MW} und 1820\,\si{MW} also 2,5 und 2,9 Prozent \cite{netztransparenz_regelenergie_2026,regelleistung_ausschreibungsdaten_2026}.
 In 92 Prozent der Viertelstunden bleibt der Abruf unter einem Zehntel der vorgehaltenen Leistung.
 Die Stufe bis zum Abruf unterstellt der Bezugsanlage, dass sie diesen Abruf allein bedient, und die Stufe bis zur Nennleistung hebt auch diese Grenze auf.
 Eine solche Lieferung ist für eine einzelne Anlage von 100\,\si{MW} nicht zu erwarten.
 
-% NEU GEFASST am 24.09.2026, Befunde St4 und St1 des Durchgangs durch 4.6:
-% der Absatz erzaehlte von einer frueheren Fassung der Abbildung und war
-% damit eine Arbeitsnotiz. Der Befund dahinter bleibt, naemlich dass der
-% Unterschied zwischen den Kalendertagen groesser ist als der zwischen den
-% Liefermodi. Der erste Satz stand zudem im Muster "A und nicht B".
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Alle Stufen sind über das ganze Jahr gerechnet und nicht über einzelne Analysetage.
-%Eine frühere Fassung dieser Sensitivität fasste vier Tage zu einer Verteilung zusammen, und von deren Streuung entfielen nur 6,7 Prozent in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
-%Der übrige Teil der Streuung war der Unterschied zwischen den Kalendertagen, sodass die frühere Abbildung vor allem zeigte, welcher der vier Tage teuer war.
-%Über das Jahr entfällt dieser Einwand.
-% GESTRICHEN am 24.09.2026, Vorgabe des Verfassers. Der Absatz war am
-% selben Tag aus einer Arbeitsnotiz neu gefasst worden und ist jetzt ganz
-% entfallen. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Alle Stufen sind über das ganze Jahr gerechnet.
-%Über vier einzelne Tage entfielen nur 6,7 Prozent der Streuung in der Entlade- und 4,3 Prozent in der Laderichtung auf den Liefermodus.
-%Der übrige Teil entfiel auf den Unterschied zwischen den Kalendertagen.
-%Erst der Jahreslauf trennt beide Einflüsse.
-
 Beide Annahmen wirken an verschiedenen Stellen der Verteilung.
-% GEAENDERT am 26.09.2026, Stilregel 14: Kapazitaetsauktion war ein einmaliges Synonym
-% Alte Fassung, nicht wieder aufzunehmen:
-%Der Abrechnungspreis der Kapazitätsauktion bestimmt die teuren Stunden, der Liefermodus die typische Stunde.
 Der Zuschlagspreis der \ac{aFRR}-Leistung bestimmt die teuren Stunden, der Liefermodus die typische Stunde.
 Für die Beschaffung wiegt der Liefermodus deshalb schwerer, denn er verschiebt das Hauptfeld der Verteilung, auf das der \ac{ÜNB} in den meisten Stunden trifft.
 Die anteilige Lieferung des Basisfalls ist dabei die belastbare Annahme, denn eine einzelne Anlage zieht den deutschlandweiten Abruf nicht auf sich.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: die uebrigen Liefermodi
-% fuehren zu einer Ueberschaetzung des Preises, und sicher entscheiden
-% laesst sich die Frage nur an den Gebotslisten. Das Wort "immens" der
-% Vorgabe ist nach Stilregel 7 durch die Zahlen ersetzt, die Abschnitt
-% 4.6.1 selbst nennt.
 Die freien Liefermodi heben den Median dagegen um mindestens 54 Prozent entladend und 110 Prozent ladend und überschätzen den kurativen Reservierungspreis damit.
 Sicher entscheiden ließe sich die Frage allein an den Gebotslisten der Auktionen, die jedoch anonymisiert sind.
 
-% GETAUSCHT am 24.09.2026, Vorgabe des Verfassers: die Handelsspanne am
-% IDC steht jetzt vor der vorgehaltenen Energie je Abruf, weil sie den
-% Preis nach beiden Massstaeben staerker bewegt. Nach dem Erloesanteil
-% traegt der IDC 14,0 Prozent des Bruttoerloeses gegen 76,7 Prozent der
-% aFRR, nach der gemessenen Wirkung hebt eine verdoppelte Handelsspanne
-% den Median um 36,7 Prozent, waehrend eine Viertelung der vorgehaltenen
-% Energie ihn um 4,0 und 12,7 Prozent senkt. Die Marken sec:sensi_idc und
-% sec:sensi_abrufdauer bleiben, denn sie tragen die Sache und nicht die
-% Nummer.
 \subsection{Handelsspanne am \acs{IDC}}
 \label{sec:sensi_idc}
-% GEFUELLT am 23.09.2026 nach der Lieferung sensi8. Zahlen aus ERGEBNISSE
-% Abschnitt 7.12. Die Groesse heisst im Quelltext IDC_LAMBDA; die Arbeit
-% fuehrt kein Lambda ein und schreibt deshalb durchgehend Faktor, Vorgabe
-% des Analyse-Repositorys vom 23.09.2026.
 
 Die Handelsspanne am \ac{IDC} beruht im Optimierungsmodell auf dem \ac{ID1} und einem Aufschlag, sodass ihre Breite eine Annahme ist.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Abschnitt soll
-% sagen, warum die Sensitivitaet gerechnet wird. Begruendung nach seiner
-% Vorgabe: der ID1 ist ein Index je Viertelstunde und unterschaetzt den
-% Handel eines Betreibers mit eigener Anlage, der dieselbe Viertelstunde
-% mehrfach handeln kann. Die Sensitivitaet hebt deshalb den Erloes am IDC
-% und misst die Wirkung auf den Preis. Die Herleitung steht in Abschnitt
-% 3.2 und wird hier nur aufgerufen.
 Der \ac{ID1} ist ein Index je Viertelstunde und bildet den mehrfachen Handel derselben Viertelstunde nicht ab.
 Der Aufschlag des Optimierungsmodells bildet diesen Vorteil nach Abschnitt~\ref{sec:input_data} ab, seine Höhe lässt sich ohne die Orderbücher aber nicht bestimmen.
 Die Sensitivität weitet die Handelsspanne deshalb und prüft, wie stark der kurative Reservierungspreis auf einen höheren Erlös am \ac{IDC} reagiert.
 Abbildung~\ref{fig:sensi_idc_spanne} zeigt den kurativen Reservierungspreis unter drei Annahmen über diese Spanne.
 Der Faktor streckt jede Abweichung des Intradaypreises von seinem Tagesmittel, sodass das Niveau der Preise unverändert bleibt und allein die Spanne wächst.
-% ERGAENZT am 24.09.2026, Befund A6 der Kontrolllesung: der Abschnitt
-% nennt drei Annahmen und drei Faktoren, benannte aber nur zwei. Der
-% mittlere Faktor ist 1,5, siehe sensi.py und ERGEBNISSE Abschnitt 7.12,
-% und der letzte Satz des Abschnitts nennt drei Werte. Zurueckgenommene
-% Fassung:
-%Faktor 1 ist der Basisfall, und Faktor 2 verdoppelt jeden Abstand zum Tagesmittel.
 Faktor 1 ist der Basisfall, Faktor 1,5 streckt jeden Abstand zum Tagesmittel um die Hälfte und Faktor 2 verdoppelt ihn.
 
 \begin{figure}[H]
@@ -1258,44 +320,6 @@ Faktor 1 ist der Basisfall, Faktor 1,5 streckt jeden Abstand zum Tagesmittel um 
     \label{fig:sensi_idc_spanne}
 \end{figure}
 
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Anstieg der
-% Maxima war durch Abschnitt 4.3 vorhergesagt und ist deshalb als
-% erwartbar zu kennzeichnen. Zurueckgenommene Fassung:
-%Das deckt sich mit dem Befund des Abschnitts~\ref{sec:price_distribution}, wonach der \ac{IDC} in den teuersten Stunden die Leistung hält.
-% ANGEFUEGT am 24.09.2026, Befund B2 der Kontrolllesung: der Abschnitt
-% endete auf einem technischen Detail statt auf einer Folgerung,
-% Stilregel 4. Die Abschnitte zur aFRR und zur vorgehaltenen Energie tragen
-% Schlusssatz.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Befund an der
-% Spitze war erwartbar, der eigentliche Befund ist der Median. Ein Markt
-% mit 14,0 Prozent des Bruttoerloeses hebt ihn um 37 Prozent. Das Wort
-% "erheblich" der Vorgabe steht nach Stilregel 15 auf der Verbotsliste
-% und ist durch die beiden Anteile ersetzt. Der Satz ersetzt zugleich
-% den am selben Tag angefuegten Schlusssatz aus Befund B2 der
-% Kontrolllesung. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Eine zu breit angesetzte Handelsspanne hebt damit vor allem die Spitze der Verteilung, während das Hauptfeld der Stunden weniger reagiert.
-% BERICHTIGT am 24.09.2026, Vorgabe des Verfassers: Subjekt des Satzes
-% ist die Groesse, die variiert wurde, naemlich die Anpassung der
-% Handelsspanne, und nicht der Markt selbst. Zurueckgenommene Fassung:
-%Der \ac{IDC} bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Absatz trug zu
-% viele Preise. Er traegt jetzt Verhaeltnisse und ist in zwei Absaetze
-% geteilt, je Richtung einer, statt in jedem Satz beide zu nennen. Dabei
-% tritt ein Unterschied hervor, der vorher unterging: das untere Quartil
-% der Ladereservierung sinkt um 47 Prozent, das der Entladereservierung
-% nur um 7 Prozent. Zahlen aus ERGEBNISSE Abschnitt 7.12, eigene
-% Verhaeltnisrechnung: 42,05 zu 27,47 gleich plus 53 Prozent, 121,52 zu
-% 76,01 gleich plus 60 Prozent, 1997,27 zu 1008,00 gleich plus 98 Prozent,
-% 1016,66 zu 510,48 gleich plus 99 Prozent, 1,25 zu 2,34 gleich minus 47
-% Prozent und 4,02 zu 4,33 gleich minus 7 Prozent.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Eine verdoppelte Handelsspanne hebt den Median von 12,22\,\EurMWh{} auf 16,70\,\EurMWh{} in der Entlade- und von 9,85\,\EurMWh{} auf 13,57\,\EurMWh{} in der Laderichtung, also um 36,7 und 37,7 Prozent.
-%Die Reaktion fällt damit unterproportional aus, denn der \ac{IDC} ist nicht der einzige verdrängte Markt.
-%Die Maxima steigen dagegen fast proportional, nämlich von 1008\,\EurMWh{} auf 1997\,\EurMWh{} und von 510\,\EurMWh{} auf 1017\,\EurMWh{}.
-%Dieser Anstieg war zu erwarten, denn nach Abschnitt~\ref{sec:price_distribution} hält der \ac{IDC} in den teuersten Stunden die Leistung.
-%Das untere Quartil der Ladereservierung sinkt zugleich von 2,34\,\EurMWh{} über 1,80\,\EurMWh{} auf 1,25\,\EurMWh{}, weil die Streckung die Täler ebenso vertieft, wie sie die Spitzen hebt.
-%Aufschlussreich ist dagegen der Median, der mit 36,7 und 37,7 Prozent mitsteigt, obwohl der \ac{IDC} im Jahresmittel 14,0 Prozent des Bruttoerlöses trägt.
-%Die Anpassung der Handelsspanne bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
 Eine verdoppelte Handelsspanne hebt den Median der Entladereservierung um 36,7 Prozent.
 Die Reaktion fällt damit unterproportional aus, denn der \ac{IDC} ist nicht der einzige verdrängte Markt.
 Nach oben wächst die Wirkung mit dem Preis der Stunde, nämlich um 53 Prozent im oberen Quartil, um 60 Prozent im 95-Prozent-Quantil und um 98 Prozent im Maximum.
@@ -1308,24 +332,9 @@ Die Streckung vertieft die Täler ebenso, wie sie die Spitzen hebt.
 Eine breitere Handelsspanne spreizt die Verteilung der Ladereservierung dadurch in beide Richtungen.
 Die Anpassung der Handelsspanne bewegt damit die typische Stunde ebenso wie die Spitze der Verteilung.
 
-% UMBENANNT am 24.09.2026, Vorgabe des Verfassers: geprueft ist
-% die Vorhaltung von Energie fuer einen Abruf, und die Energie
-% fuehrt deshalb. Die Abrufdauer steht nur noch dort, wo der UENB
-% ueber sie entscheidet. Der Begriff Abrufdauer war am 14.09.2026
-% entschieden und kam allein in Kapitel 4 und im Geruest von
-% Kapitel 5 vor, nicht in den Kapiteln 2 und 3 und in keinem
-% Anhang. Zurueckgenommene Ueberschrift: Abrufdauer
 \subsection{Vorgehaltene Energie je Abruf}
 \label{sec:sensi_abrufdauer}
-% Zahlen aus ERGEBNISSE Abschnitt 7.7. Die Abbildung zeigt seit dem
-% 22.09.2026 nur die zweite Iteration; die Werte der ersten Iteration
-% stehen deshalb als Zahl im Text und tragen keine eigene Abbildung.
 
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers, siehe die
-% Ueberschrift. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Abrufdauer ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet, denn sie folgt aus der Zeit, über die eine kurative Maßnahme wirken muss.
-%Die Abrufdauer setzt im Optimierungsmodell die Breite des reservierten Ladezustandsbandes, also eine Megawattstunde je Megawatt bei einer Stunde.
-%Abbildung~\ref{fig:sensi_abrufdauer} zeigt die Abrufdauern von einer Stunde, einer halben Stunde und einer Viertelstunde je Richtung.
 Die vorgehaltene Energie je Abruf ist die einzige der geprüften Größen, über die der \ac{ÜNB} entscheidet.
 Die vorgehaltene Energie folgt aus der Abrufdauer, also aus der Zeit, über die eine kurative Maßnahme wirken muss.
 Im Optimierungsmodell setzt die vorgehaltene Energie die Breite des reservierten Ladezustandsbandes und beträgt im Basisfall eine Megawattstunde je Megawatt.
@@ -1335,111 +344,29 @@ Abbildung~\ref{fig:sensi_abrufdauer} zeigt eine, eine halbe und eine viertel Meg
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{figures/chapter_4/sensi_abrufdauer_2025_iteration2.pdf}
-% BILDUNTERSCHRIFT NACHGEZOGEN am 24.09.2026. Zurueckgenommene Fassung:
-%\caption{Kurativer Reservierungspreis über das Jahr 2025 bei drei Abrufdauern je Richtung, zweite Iteration.}
     \caption{Kurativer Reservierungspreis über das Jahr 2025 bei drei Stufen der vorgehaltenen Energie je Richtung, zweite Iteration.}
     \label{fig:sensi_abrufdauer}
 \end{figure}
 
-% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
-%Von einer Stunde auf eine Viertelstunde sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
-% GEAENDERT am 26.09.2026, S2: der Basisfall der Sensitivitaet weicht um 0,01 vom Kapitel-Basisfall 12,22 und 9,85 ab; das Analyse-Repository fuehrt ihn als Gesamtlauf ohne Cache. Der Satz davor sagt das, Vorgabe des Verfassers statt eines Auftrags ans Repository
-% Alte Fassung, nicht wieder aufzunehmen:
-%Von einer auf eine viertel Megawattstunde je Megawatt sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
 Die Sensitivität steht auf einem eigenen Jahreslauf, dessen Median im Basisfall um ein Hundertstel unter dem des Abschnitts~\ref{sec:price_distribution} liegt.
 Von einer auf eine viertel Megawattstunde je Megawatt sinkt der Median der zweiten Iteration von 12,21\,\EurMWh{} auf 11,72\,\EurMWh{} in der Entlade- und von 9,84\,\EurMWh{} auf 8,59\,\EurMWh{} in der Laderichtung, also um 4,0 und 12,7 Prozent.
-% ERGAENZT am 23.09.2026, Vorgabe des Verfassers: die halbe Stunde ist kaum
-% teurer als die Viertelstunde, die volle Stunde dagegen messbar, und die
-% Wirkung ist in der Laderichtung groesser. Zahlen aus ERGEBNISSE Abschnitt
-% 7.7: Median 1 h 12,21/9,84, 0,5 h 11,91/8,56, 0,25 h 11,72/8,59.
 Die Verringerung wirkt in der Laderichtung damit stärker als in der Entladerichtung.
-% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
-%Die halbe Stunde liegt dabei fast auf dem Preis der Viertelstunde, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
-% GEAENDERT am 26.09.2026, S3: ladend 8,56 bei einer halben gegen 8,59 bei einer viertel Megawattstunde ist nicht monoton; das Repository bestaetigt die Zahlen, der Text sagte es nicht
-% Alte Fassung, nicht wieder aufzunehmen:
-%Die halbe Megawattstunde liegt dabei fast auf dem Preis der viertel, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
 Die halbe Megawattstunde liegt dabei fast auf dem Preis der viertel, nämlich bei 11,91\,\EurMWh{} entladend und 8,56\,\EurMWh{} ladend.
 Dass die halbe Megawattstunde ladend um drei Hundertstel unter der viertel liegt, ist keine Ersparnis, sondern die Unschärfe des Abstiegs, der die Stunden nacheinander senkt.
-% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
-%Der Schritt von der halben auf die volle Stunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
 Der Schritt von der halben auf die ganze Megawattstunde kostet dagegen 0,30\,\EurMWh{} entladend und 1,28\,\EurMWh{} ladend.
-% NEU GEFASST am 24.09.2026, die Energie fuehrt, die Empfehlung haengt
-% weiterhin an der Zeit. Zurueckgenommene Fassung:
-%Eine halbe Stunde Abrufdauer ist damit fast zum Preis einer Viertelstunde zu haben und verschafft dem \ac{ÜNB} die doppelte Zeit, die kurative Maßnahme durch eine andere abzulösen.
 
-% UMBRUCH VERSCHOBEN am 26.09.2026: A3 hatte drei Saetze, Stilregel 1. Der Folgerungssatz eroeffnet jetzt A3, A2 traegt die Zahlen.
 Eine halbe Megawattstunde je Megawatt ist damit fast zum Preis einer viertel zu haben und verdoppelt die Abrufdauer, über die der \ac{ÜNB} die kurative Maßnahme durch eine andere ablösen kann.
-% GESTRICHEN am 24.09.2026, Vorgabe des Verfassers: der Absatz zur ersten
-% Iteration ist uninteressant. Der Umbruch aus Befund A2 des Durchgangs
-% vom selben Tag ist damit gegenstandslos, denn der zweite Teilgedanke
-% ist entfallen. Mit dem Absatz faellt zugleich der einzige Doppelpunkt
-% des Kapitels. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%In der ersten Iteration fällt dieselbe Verringerung mit 18,8 und 35,1 Prozent stärker aus.
-%Der Grund liegt im Grad der Bindung: ist der Tag vollständig gebunden, steht ohnehin keine Leistung für andere Märkte frei, sodass die Breite des Ladezustandsbandes keine weitere Vermarktung verdrängt.
-%Ein Befund aus der ersten Iteration lässt sich deshalb nicht auf die zweite übertragen.
-% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
-%Die Spanne der Verteilung bewegt sich zwischen den drei Abrufdauern kaum, denn das Maximum der Entladereservierung beträgt 1008\,\EurMWh{}, 986\,\EurMWh{} und 981\,\EurMWh{}.
 Die Spanne der Verteilung bewegt sich zwischen den drei Stufen kaum, denn das Maximum der Entladereservierung beträgt 1008\,\EurMWh{}, 986\,\EurMWh{} und 981\,\EurMWh{}.
-% POSITIV GEWENDET am 24.09.2026, Befund St1, wie oben.
-% Zurueckgenommene Fassung:
-%Eine kürzere Abrufdauer entlastet damit den typischen Preis und nicht die teuren Stunden.
-% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
-%Eine kürzere Abrufdauer entlastet damit den typischen Preis, während die teuren Stunden bleiben.
 Eine geringere vorgehaltene Energie entlastet damit den typischen Preis, während die teuren Stunden bleiben.
-% ABGESCHWAECHT am 24.09.2026, Befund S3 des Durchgangs durch 4.6: der
-% Satz stand drei Saetze hinter der Aussage, dass die Abrufdauer den
-% Median um 4,0 und 12,7 Prozent bewegt, und behauptete damit zu viel.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der vollständigen Bindung nicht bestimmt.
-% NEU GEFASST am 24.09.2026, die Energie fuehrt. Zurueckgenommene Fassung:
-%Für den Zuschnitt des Produkts folgt daraus, dass die Abrufdauer den Preis der vollständigen Bindung nur schwach bewegt, nämlich um höchstens 12,7 Prozent.
 Für den Zuschnitt des Produkts folgt daraus, dass die vorgehaltene Energie je Abruf den Preis der vollständigen Bindung nur schwach bewegt, nämlich um höchstens 12,7 Prozent.
 
 \subsection{Zukünftig niedrigere Preise}
 \label{sec:sensi_zukunft}
-% GEFUELLT am 23.09.2026 nach der Lieferung sensi8. Zahlen aus ERGEBNISSE
-% Abschnitt 7.13. Die Begruendung der niedrigeren aFRR-Preise ist die
-% Vormerkung G3 des Verfassers vom 22.09.2026.
 
-% GEAENDERT am 23.09.2026: die Einleitung des Abschnitts 4.6 traegt seither
-% die Abgrenzung gegen die uebrigen Sensitivitaeten, sodass der erste Satz
-% sie nicht wiederholt. Stattdessen steht hier, wie die beiden Erwartungen
-% umgesetzt sind. Zurueckgenommene Fassung:
-%Die bisherigen Sensitivitäten prüfen die Belastbarkeit des Optimierungsmodells, während die letzte eine Annahme über die künftige Marktlage trifft.
-%Die Zukunftsvariante senkt die Handelsspanne am \ac{IDC} und die Preise der \ac{aFRR} auf 80 Prozent und die Preise der \ac{FCR} auf 90 Prozent.
-% NACHGEZOGEN am 24.09.2026, Stilregel 14: die Einleitung zu 4.6 spricht
-% seit heute von mehr Wettbewerb statt von groesserer Liquiditaet.
-% Zurueckgenommene Fassung:
-%Die Zukunftsvariante setzt die Sättigung des Marktes für \ac{aFRR}-Leistung und die größere Liquidität am \ac{IDC} als pauschale Abschläge auf die Preise um.
-% ANGEGLICHEN am 24.09.2026, Vorgabe des Verfassers: der Satz folgt der
-% Einleitung zu 4.6, die seit heute von einer kuenftigen Saettigung und
-% von mehr Wettbewerb spricht. Der Wettbewerb stand hier bereits.
-% Zurueckgenommene Fassung:
-%Die Zukunftsvariante setzt die Sättigung des Marktes für \ac{aFRR}-Leistung und mehr Wettbewerb am \ac{IDC} als pauschale Abschläge auf die Preise um.
 Die Zukunftsvariante setzt eine künftige Sättigung des Marktes für \ac{aFRR}-Leistung und mehr Wettbewerb am \ac{IDC} als pauschale Abschläge auf die Preise um.
-% BERICHTIGT am 24.09.2026, Befund A1 der Kontrolllesung: das
-% Analyse-Repository hat die Senkung der FCR am 23.09.2026 aus der
-% Zukunftsvariante genommen, siehe ERGEBNISSE Abschnitt 7.13 und 7.14.
-% Sie trug zum Reservierungspreis nur 1,3 Prozent entladend und 1,7
-% Prozent ladend bei, und die Variante kommt ohne sie mit zwei statt drei
-% Annahmen aus. Die Schriftfassung trug bis heute die alte Fassung in
-% Text und Abbildung. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} sinken auf 80 Prozent, die Preise der \ac{FCR} auf 90 Prozent.
-% AUFGETEILT am 24.09.2026, Vorgabe des Verfassers: die Einleitung soll
-% kurz sagen, wie die 80 Prozent bei der aFRR-Leistung, der aFRR-Arbeit
-% und am IDC umgesetzt sind. Am IDC wirkt der Faktor aus 4.6.2 und nicht
-% ein Abschlag auf das Preisniveau, das ist der Unterschied.
-% Zurueckgenommene Fassung:
-%Die Preise der \ac{aFRR} und die Handelsspanne am \ac{IDC} sinken auf 80 Prozent, während die Preise der \ac{FCR} und des \ac{DA} unverändert bleiben.
 Der Leistungspreis und der Arbeitspreis der \ac{aFRR} sinken dafür auf 80 Prozent ihres Wertes.
 Am \ac{IDC} wirkt der Faktor aus Abschnitt~\ref{sec:sensi_idc} mit 0,8, sodass jede Abweichung des Intradaypreises von seinem Tagesmittel auf 80 Prozent schrumpft.
 Die Preise der \ac{FCR} und des \ac{DA} bleiben unverändert.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Abschlag ist als
-% vereinfachende Annahme darzustellen und damit zu begruenden, dass die
-% Variante allein den Einfluss beziffern soll. Das deckt sich mit der
-% Vorgabe vom 15.09.2026, wonach der kurative Marktmechanismus der
-% Erkenntnis ueber Einfluesse auf den Preis dient und kein Marktdesign
-% mit prognostizierten Preisen ist.
 Der Abschlag ist eine vereinfachende Annahme und keine Prognose, denn die Zukunftsvariante soll allein den Einfluss niedrigerer Marktpreise auf den kurativen Reservierungspreis beziffern.
 Die Richtung folgt der Erwartung, dass der Bestand an \ac{BESS} wächst, während der Bedarf an Regelleistung aus der Dimensionierung des Systems folgt und nicht mitwächst.
 Abbildung~\ref{fig:sensi_zukunft} stellt den Erlös der Bezugsanlage in beiden Welten gegenüber.
@@ -1451,195 +378,25 @@ Abbildung~\ref{fig:sensi_zukunft} stellt den Erlös der Bezugsanlage in beiden W
     \label{fig:sensi_zukunft}
 \end{figure}
 
-% BERICHTIGT am 24.09.2026, Befund A1 der Kontrolllesung: alle Zahlen
-% stammen aus der Variante ohne FCR-Senkung, ERGEBNISSE Abschnitt 7.13.
-% Zugleich sagen die Prozentwerte jetzt, zu welcher Welt sie gehoeren,
-% Befund B6. Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Der Markterlös ohne kurative Bindung sinkt von 340,6\,\TsdEurMWa{} auf 281,4\,\TsdEurMWa{} und damit um 17,4 Prozent.
-%Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 352,0\,\TsdEurMWa{} und damit um 16,2 Prozent.
-%Der Aufschlag gegenüber dem Markterlös bleibt mit 25,1 gegen 23,3 Prozent nahezu gleich, denn der kurative Reservierungspreis ist die entgangene Marktopportunität und sinkt mit ihr.
-%Die vollständige Verdrängung der Zukunftsvariante kostet mit 352,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}.
-% NEU SORTIERT am 24.09.2026, Vorgabe des Verfassers. Der Absatz stellt
-% die Senkung von 17,0 Prozent jetzt der Senkung der Preise um 20 Prozent
-% gegenueber und benennt die Differenz von drei Punkten als den Erloes,
-% den die Anlage in die unveraenderten Maerkte verschiebt. Der Aufschlag
-% steht mit beiden Massen, relativ und absolut.
-% Der letzte Satz ist auf Vorgabe GESTRICHEN, naemlich als schwierige und
-% uninteressante Aussage. Zurueckgenommen und nicht wieder aufzunehmen:
-%Die vollständige Verdrängung der Zukunftsvariante kostet mit 353,0\,\TsdEurMWa{} weiterhin mehr als der heutige Markterlös von 340,6\,\TsdEurMWa{}, sodass niedrigere Marktpreise die kurative Bindung nicht günstiger machen als der heutige Stand.
-% Ebenfalls zurueckgenommen, weil die Reihenfolge neu ist:
-%Der Aufschlag gegenüber dem Markterlös bleibt damit nahezu gleich, nämlich 24,8 Prozent in der Zukunftsvariante gegen 23,3 Prozent im Jahr 2025.
 Der Markterlös ohne kurative Bindung sinkt von 340,6\,\TsdEurMWa{} auf 282,7\,\TsdEurMWa{} und damit um 17,0 Prozent.
-% PRAEZISIERT am 24.09.2026: am IDC ist die Spanne gesenkt und nicht das
-% Preisniveau, deshalb steht hier der Abschlag und nicht der Preis.
-% Zurueckgenommene Fassung:
-%Die Preise der gesenkten Märkte geben 20 Prozent nach, der Markterlös dagegen nur 17,0 Prozent.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: die Differenz von
-% drei Punkten war schwer verstaendlich. Der Weg steht jetzt in drei
-% Schritten, naemlich wen der Abschlag trifft, was die Anlage daraufhin
-% tut und was daraus fuer den Markterloes folgt. Die Verschiebung ist im
-% naechsten Absatz mit Zahlen belegt, denn der Day-Ahead steigt von 7,3
-% auf 12,8 und die FCR von 2,0 auf 5,6 Prozent bei unveraenderten Preisen.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Der Abschlag beträgt 20 Prozent, der Markterlös gibt dagegen nur 17,0 Prozent nach.
-%Die Differenz von drei Punkten ist der Erlös, den die Bezugsanlage in die unveränderten Märkte verschiebt.
 Der Abschlag von 20 Prozent trifft allein die \ac{aFRR} und den \ac{IDC}, während die Preise des \ac{DA} und der \ac{FCR} unverändert bleiben.
 Die Bezugsanlage verschiebt daraufhin Leistung in diese beiden Märkte, deren Erlös dadurch absolut steigt.
 Der Markterlös gibt deshalb weniger nach als der Abschlag.
-% GEKUERZT am 24.09.2026, Vorgabe des Verfassers: der Begruendungssatz
-% entfaellt. Zurueckgenommene Fassung:
-%Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 353,0\,\TsdEurMWa{} und damit um 16,0 Prozent, denn der kurative Reservierungspreis ist die entgangene Marktopportunität.
 Die Zahlung bei vollständiger Verdrängung sinkt von 420,0\,\TsdEurMWa{} auf 353,0\,\TsdEurMWa{} und damit um 16,0 Prozent.
-% GEAENDERT am 26.09.2026, Pruefung Kapitel 4: aus den gedruckten 70,3 und 282,7 folgen 24,9; das Repository rechnet 24,8 aus ungerundeten Werten, die in keiner Datei stehen. CLAUDE.md Abschnitt 8 verlangt Reproduzierbarkeit, deshalb sagt der Satz die Herkunft. Entscheidung des Verfassers gegen 24,9 und gegen rund 25
-% Alte Fassung, nicht wieder aufzunehmen:
-%Der Aufschlag gegenüber dem Markterlös steigt dabei von 23,3 auf 24,8 Prozent und fällt absolut von 79,4\,\TsdEurMWa{} auf 70,3\,\TsdEurMWa{}.
 Der Aufschlag gegenüber dem Markterlös steigt dabei von 23,3 auf 24,8 Prozent, gerechnet aus ungerundeten Erlösen, und fällt absolut von 79,4\,\TsdEurMWa{} auf 70,3\,\TsdEurMWa{}.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: eine Prozentzahl
-% zwischen Prozentzahlen liest sich schlecht. Der Satz sagt jetzt, dass
-% die Verdraengung unter niedrigeren Preisen aehnlich gelingt.
-% NICHT GESETZT ist die weitergehende Deutung des Verfassers, der
-% Mehrerloes der kurativen Bindung sei erloesunabhaengig. Waere er das,
-% bliebe er absolut konstant; waere er streng proportional, fiele er um
-% 17,0 Prozent wie der Markterloes. Er faellt um 11,5 Prozent und liegt
-% damit naeher am proportionalen Fall. Der Satz sagt deshalb nur, dass er
-% weniger nachgibt. Zurueckgenommene Fassung:
-%Der Aufschlag gibt damit mit 11,5 Prozent am wenigsten nach, sodass der kurative Reservierungspreis eine Senkung der Marktpreise besser übersteht als der Markterlös.
 Die vollständige Verdrängung gelingt damit unter niedrigeren Marktpreisen ähnlich wie unter den heutigen, denn der Mehrerlös der kurativen Bindung gibt weniger nach als der Markterlös.
-% ABGESCHWAECHT am 23.09.2026, Vorgabe des Verfassers: der Anstieg des
-% Day-Ahead ist eine Rechenfolge und war erwartbar, denn er steigt, weil die
-% uebrigen Maerkte gesenkt sind. Die Fassung des Analyse-Repositorys, "der
-% Day-Ahead gewinnt, obwohl er gar nicht veraendert wurde", verkauft das als
-% Befund und ist nicht uebernommen. Der Absatz ist zugleich in den vorigen
-% gezogen, weil er fuer sich nur drei Saetze traegt. Zurueckgenommene
-% Fassung, nicht wieder aufzunehmen:
-%Die Aufteilung des verbliebenen Markterlöses der ersten Iteration verschiebt sich dabei.
-%Der \ac{DA} steigt dagegen von 7,3 auf 11,5\,\TsdEurMWa{}, obwohl seine Preise in der Zukunftsvariante unverändert bleiben.
-%Die kurative Reservierung verdrängt, was am wenigsten einbringt, und der \ac{DA} ist gegenüber den gesenkten Märkten relativ teurer geworden.
 
-% UMBRUCH GESETZT am 24.09.2026, Stilregel 1: der Verfasser hatte den
-% Absatz am 23.09.2026 in den vorigen gezogen, weil er nur drei Saetze
-% trug. In der neuen Fassung traegt er fuenf, und zusammen waeren es zehn
-% Saetze in einem Absatz.
-% NEU GEFASST am 24.09.2026, Befund A2 der Kontrolllesung: der Absatz
-% teilte den Marktrest der ersten Iteration auf. Das Lieferdokument sagt
-% in Abschnitt 7.13 ausdruecklich, dass dieser dafuer nicht taugt, weil er
-% das ist, was eine Suche uebrig laesst, die gerade die teuren Stunden
-% offen laesst. Abschnitt 7.14 liefert die Aufteilung ueber den
-% Bruttoerloes ohne kurative Bindung, im Format des Abschnitts 4.2. Das
-% war der Gegenstand von AUFTRAG_REFERENZAUFTEILUNG.md und ist damit
-% beantwortet. Zugleich behoben ist Befund A3: der alte dritte Satz sagte
-% "der DA bleibt unveraendert" unmittelbar nach seinem Anstieg von 7,3
-% auf 11,5. Gemeint waren die Preise. Zurueckgenommene Fassung, nicht
-% wieder aufzunehmen:
-%Die Aufteilung des verbliebenen Markterlöses der ersten Iteration verschiebt sich erwartungsgemäß.
-%Die \ac{aFRR}-Leistung fällt von 60,0\,\TsdEurMWa{} auf 45,7\,\TsdEurMWa{} und der \ac{IDC} von 16,4\,\TsdEurMWa{} auf 10,3\,\TsdEurMWa{}, während der \ac{DA} von 7,3\,\TsdEurMWa{} auf 11,5\,\TsdEurMWa{} steigt.
-%Der \ac{DA} bleibt in der Zukunftsvariante unverändert und wird damit gegenüber den gesenkten Märkten relativ stärker, sodass die Reservierung ihn später verdrängt.
 Die Zukunftsvariante verschiebt zugleich das Gewicht der Märkte am Bruttoerlös ohne kurative Bindung.
 Auf die \ac{aFRR}-Leistung entfallen dort 59,1 statt 65,6 Prozent, auf den \ac{IDC} 10,2 statt 14,0 und auf die \ac{aFRR}-Arbeit 12,3 statt 11,2 Prozent.
 Der \ac{DA} steigt von 7,3 auf 12,8 und die \ac{FCR} von 2,0 auf 5,6 Prozent, obwohl die Preise beider Märkte unverändert bleiben.
 Beide gewinnen allein deshalb, weil die übrigen Märkte gesenkt sind.
-% ERGAENZT am 24.09.2026, Vorgabe des Verfassers: der Day-Ahead faengt
-% etwas vom IDC auf und die FCR etwas von der aFRR, weil die Produkte
-% einander nahe stehen. Beide zusammen halten den Erloes gleichwohl nicht.
 Der \ac{DA} fängt dabei einen Teil der verengten Handelsspanne am \ac{IDC} auf und die \ac{FCR} einen Teil der gesenkten \ac{aFRR}-Leistung.
 Beide zusammen halten den Markterlös gleichwohl nicht, der um 17,0 Prozent nachgibt.
 Die \ac{aFRR} trägt mit 71,4 statt 76,7 Prozent weiterhin rund drei Viertel, sodass die Bezugsanlage auch in der Zukunftsvariante vor allem Regelleistung vorhält.
 
-% ANGEFUEGT am 23.09.2026, Vorgabe des Verfassers vom 22.09.2026: drei bis
-% fuenf Saetze Schlussfolgerungen je Abschnitt. Der Absatz steht am Ende des
-% Abschnitts 4.6 und fasst alle vier Sensitivitaeten.
-% VARIIERT am 23.09.2026, Vorgabe des Verfassers: der Satz stand sechsmal
-% gleichlautend im Kapitel. Zurueckgenommene Fassung, an dieser Stelle nicht
-% wieder aufzunehmen: Aus dieser Untersuchung laesst sich Folgendes
-% mitnehmen.
-% BERICHTIGT am 24.09.2026, Befunde S1 und S2 des Durchgangs durch 4.6.
-% Zwei Drittel steht nirgends: Abschnitt 4.6.1 nennt 54 Prozent entladend
-% und 110 Prozent ladend. Und gut ein Viertel gilt nur entladend, naemlich
-% 3,47 zu 12,22 gleich 28 Prozent gegen 4,25 zu 9,85 gleich 43 Prozent.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn ohne sie fällt der Median auf gut ein Viertel und unter freier Lieferung steigt er um zwei Drittel.
-% OHNE ZAHLEN am 24.09.2026, Vorgabe des Verfassers: der Schlussabsatz
-% trug sechs Prozentzahlen aus drei Abschnitten und las sich als Liste.
-% Er sagt jetzt die Rangfolge und die Folgerung. Die Zahlen stehen in den
-% Abschnitten selbst. Zurueckgenommene Fassung:
-%Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn ohne sie fällt der Median auf 28 Prozent entladend und 43 Prozent ladend, und unter freier Lieferung steigt er um 54 und 110 Prozent.
-% ERGAENZT am 24.09.2026, Rueckmeldung des Verfassers: der Absatz sprang
-% ohne Vorwarnung zwischen zwei Messgroessen. Die Abschnitte 4.6.1 bis
-% 4.6.3 messen die Verteilung der Stundenpreise mit Median und Maxima,
-% Abschnitt 4.6.4 misst den Erloes des ganzen Jahres. Der Wechsel ist
-% jetzt benannt. Zurueckgenommene Fassung:
-%Die Annahmen über die \ac{aFRR} tragen das Ergebnis am stärksten, denn sie bewegen den Median weiter als die Handelsspanne am \ac{IDC} und die vorgehaltene Energie je Abruf.
-% UMGESTELLT am 24.09.2026, Vorgabe des Verfassers: die Reihenfolge folgt
-% der neuen Abschnittsfolge. Zurueckgenommene Fassung:
-%Die Abrufdauer und die Handelsspanne am \ac{IDC} wirken schwächer, denn eine Verkürzung auf eine Viertelstunde senkt den Median um 4,0 und 12,7 Prozent und eine verdoppelte Handelsspanne hebt ihn um gut ein Drittel.
-% GESTRICHEN am 24.09.2026, Vorgabe des Verfassers: die Rangfolge steht
-% jetzt im vorigen Satz, die Zahlen stehen in den Abschnitten selbst.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Die Handelsspanne am \ac{IDC} und die vorgehaltene Energie je Abruf wirken schwächer, denn eine verdoppelte Handelsspanne hebt den Median um gut ein Drittel und eine Verringerung der vorgehaltenen Energie auf ein Viertel senkt ihn um 4,0 und 12,7 Prozent.
-% UMGESTELLT am 24.09.2026: die Folgerung steht jetzt voran, damit der
-% Satz erkennbar zur Verteilung gehoert. Zurueckgenommene Fassung:
-%Die Maxima reagieren auf jede Annahme stärker als der Median, sodass die Spitze der Verteilung weniger belastbar ist als ihr Hauptfeld.
-% BERICHTIGT am 24.09.2026: der Satz stand im Widerspruch zum neu
-% sortierten Abschnitt 4.6.4, der 16,0 gegen 17,0 Prozent ausweist und
-% den Aufschlag mit 11,5 Prozent am wenigsten nachgeben sieht.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis im selben Maß wie der Markterlös, sodass das Verhältnis beider bestehen bleibt.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: ohne Zahlen, dafuer
-% mit der Folgerung. Trotz der Senkung traegt die aFRR-Leistung den Preis
-% weiterhin, denn ihr Anteil am Bruttoerloes gibt mit 65,6 auf 59,1
-% Prozent relativ weniger nach als der des IDC mit 14,0 auf 10,2 Prozent.
-% Die Vorgabe sprach von einer Halbierung des IDC-Anteils; das trifft
-% nicht zu, der Rueckgang betraegt 27 Prozent. Der Satz sagt deshalb nur,
-% dass die aFRR-Leistung weiterhin traegt. Zurueckgenommene Fassung:
-%Unter durchweg niedrigeren Marktpreisen sinkt der kurative Reservierungspreis mit 16,0 Prozent etwas weniger als der Markterlös mit 17,0 Prozent.
-% NACHGEZOGEN am 24.09.2026: der Satz nennt jetzt die Messgroesse.
-% Zurueckgenommene Fassung:
-%Unter durchweg niedrigeren Marktpreisen gibt der kurative Reservierungspreis etwas weniger nach als der Markterlös, und die \ac{aFRR}-Leistung trägt ihn weiterhin.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: der Absatz soll allein
-% die Erkenntnis aus 4.6.4 ziehen und nicht auf die drei vorigen
-% Sensitivitaeten zurueckverweisen. Damit entfaellt zugleich der Sprung
-% zwischen den beiden Messgroessen, denn der Absatz bleibt beim
-% Jahreserloes. Er ist jetzt der Schlussabsatz von 4.6.4 und nicht mehr
-% der von 4.6. **Die Zusammenfassung ueber alle vier Sensitivitaeten geht
-% nicht verloren**, sie steht seit dem 24.09.2026 in der
-% Kapiteleinleitung von Kapitel 5 als Absatz 4 und dort mit Zahlen.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Für die Belastbarkeit des kurativen Reservierungspreises gegenüber den Annahmen bleibt Folgendes.
-%Die ersten drei Sensitivitäten wirken auf die Verteilung der Stundenpreise, die Zukunftsvariante auf den Erlös des ganzen Jahres.
-%In der Verteilung tragen die Annahmen über die \ac{aFRR} das Ergebnis am stärksten, denn sie bewegen den Median weiter als die Handelsspanne am \ac{IDC} und die vorgehaltene Energie je Abruf.
-%Die Spitze der Verteilung ist dabei weniger belastbar als ihr Hauptfeld, denn die Maxima reagieren auf jede Annahme stärker als der Median.
-%Im Jahreserlös gibt der kurative Reservierungspreis unter durchweg niedrigeren Marktpreisen etwas weniger nach als der Markterlös, und die \ac{aFRR}-Leistung trägt ihn weiterhin.
-%Ein gesättigter Markt für \ac{aFRR}-Leistung wirkt damit stärker auf den kurativen Reservierungspreis als mehr Wettbewerb am \ac{IDC}.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers: die Fassung vom
-% selben Tag war zu kurz und traf den Kern nicht. Der Abschnitt trifft
-% fuenf Aussagen, der Absatz trug zwei davon. Es fehlten die Ausweichung
-% der Anlage in die unangetasteten Maerkte, die Grenze dieser Ausweichung
-% und vor allem, dass der Charakter der Anlage nicht kippt.
-% Zurueckgenommene Fassung, nicht wieder aufzunehmen:
-%Für den kurativen Reservierungspreis unter künftigen Marktpreisen bleibt Folgendes.
-%Der Preis folgt dem Markterlös und gibt dabei etwas weniger nach als dieser.
-%Welcher Markt sich verändert, ist von Belang, denn die \ac{aFRR}-Leistung trägt den größten Teil des Erlöses und damit den Preis.
-%Ein gesättigter Markt für \ac{aFRR}-Leistung wirkt deshalb stärker auf den kurativen Reservierungspreis als mehr Wettbewerb am \ac{IDC}.
 Für den kurativen Reservierungspreis unter künftigen Marktpreisen bleibt Folgendes.
-% GEAENDERT am 26.09.2026, Angleichung an 5.4 A5: die Aussage war einseitig, Zeile 1450 zeigt beides
-% Alte Fassung, nicht wieder aufzunehmen:
-%Der Preis sinkt mit dem Markterlös und gibt dabei etwas weniger nach als dieser, sodass die kurative Bindung gegenüber dem Markt nicht günstiger wird.
 Der Preis sinkt mit dem Markterlös und gibt dabei etwas weniger nach als dieser, sodass der Aufschlag auf den Markterlös relativ steigt und absolut sinkt.
 Die Bezugsanlage weicht in die unangetasteten Märkte aus, was den Rückgang dämpft, ihn aber nicht aufhält.
 Die \ac{aFRR} trägt auch danach rund drei Viertel des Erlöses, sodass der kurative Reservierungspreis ein Preis gegen die Regelleistung bleibt.
-% NEU GEFASST am 24.09.2026, Vorgabe des Verfassers. Der Satz begann mit
-% einer abstrakten Wendung und traegt "von Belang" ohne Massstab, dazu
-% zweimal Markt. Er nennt jetzt die Veraenderung als Subjekt und das
-% Senken des Preises als Wirkung. Zurueckgenommene Fassung:
-%Welcher Markt sich verändert, ist damit von Belang, denn eine Sättigung des Marktes für \ac{aFRR}-Leistung wirkt stärker auf den Preis als mehr Wettbewerb am \ac{IDC}.
-% GEAENDERT am 26.09.2026, S4: die Variante senkt beide Preise zugleich, ERGEBNISSE Abschnitt 7.13 kennt keinen Lauf mit nur einem Abschlag; die Aussage folgt allein aus den Erloesanteilen und steht jetzt so
-% Alte Fassung, nicht wieder aufzunehmen:
-%Eine Sättigung des Marktes für \ac{aFRR}-Leistung senkt den kurativen Reservierungspreis damit stärker als ein schärferer Wettbewerb am \ac{IDC}.
 Die Zukunftsvariante trennt die beiden Abschläge nicht.
 Eine Sättigung des Marktes für \ac{aFRR}-Leistung dürfte den kurativen Reservierungspreis stärker senken als ein schärferer Wettbewerb am \ac{IDC}, denn die \ac{aFRR} trägt drei Viertel des Erlöses und der \ac{IDC} ein Siebtel.
-
-% GESTRICHEN am 23.09.2026, Klarstellung des Verfassers: die Diskussion der
-% Ergebnisse ist Kapitel 5 und kein Abschnitt des Kapitels 4. Der leere
-% Abschnitt mit der Marke sec:results_discussion entfaellt deshalb; die
-% Marke war nirgends referenziert. Kapitel 1 verweist mit ch:discussion
-% bereits auf Kapitel 5.
