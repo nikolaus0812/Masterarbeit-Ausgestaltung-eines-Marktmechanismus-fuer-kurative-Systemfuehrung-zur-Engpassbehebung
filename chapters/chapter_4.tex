@@ -21,7 +21,7 @@ Die im Folgenden genannten Leistungen sind Tagesmittel über beide Richtungen, d
 
 Im Vergleich der fünf Beispieltage wird am 20.01.2025 der \ac{DA} erwartungsgemäß als letzter Markt verdrängt, denn er trägt dort den größten Spread des Jahres.
 Der \ac{IDC} ist an diesem Tag bei 100\,\EurMWh{} vollständig verdrängt, während der \ac{DA} bis zum höchsten gerechneten Preis belegt bleibt.
-Bei 15\,\EurMWh{} steht der \ac{DA} dort sogar mit 106 Prozent über seinem Ausgangswert, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
+Bei 15\,\EurMWh{} steht der \ac{DA} dort sogar bei 106 Prozent seines Ausgangswerts, weil die Bezugsanlage Leistung aus der \ac{aFRR} dorthin verschiebt.
 Am 11.02.2025 tragen die Handelsmärkte den Betrieb, denn der Ladezustand zeigt zwei Zyklen.
 Der \ac{DA} und der \ac{IDC} bleiben dort bis zu höheren Preisen belegt als die \ac{aFRR}-Leistung.
 Ab 50\,\EurMWh{} ist an diesem Tag die volle Leistung von 200\,\si{MW} über alle 24 Stunden kurativ reserviert.
@@ -77,7 +77,7 @@ Die erste Iteration lässt damit gerade die teuren Stunden frei.
 Dass gerade die teuren Stunden offen bleiben, erklärt die Verschiebung des Handels über den Tag.
 Reserviert die Bezugsanlage die übrigen Stunden vollständig, so verschiebt sie ihre Geschäfte in die verbleibenden Stunden.
 Die Opportunität dieser Stunden steigt dadurch über den Preis, den die Preissuche zuvor für sie gefunden hat.
-Je höher der vorgegebene Reservierungspreis liegt, desto häufiger bleibt eine Stunde unreserviert.
+Je höher der Preis einer Stunde aus der ersten Iteration liegt, desto häufiger bleibt sie unreserviert.
 In diesem Kapitel stehen deshalb die Preise der zweiten Iteration.
 Der Rechenaufwand der zweiten Iteration beträgt gut das Dreifache des Aufwands der ersten und vervielfacht sich an einzelnen Tagen nochmals, weil viele Durchgänge nötig sind, bis kein Preis mehr sinkt.
 
@@ -86,7 +86,7 @@ Unter der ersten Iteration behält die Bezugsanlage 88,6\,\TsdEurMWa{} aus den �
 Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös.
 Der Aufschlag von 23,3 Prozent folgt aus der Preisbildung nach Abschnitt~\ref{sec:reservation_price_search}: Nur die zuletzt reservierte Leistung ist indifferent, die übrige erhält mehr als ihre Opportunitätskosten.
 
-\section{Verteilung der Verdrängungspreise}
+\section{Verteilung des kurativen Reservierungspreises}
 \label{sec:price_distribution}
 
 Der kurative Reservierungspreis, also der Preis der vollen Reservierung, entsteht für jede Stunde des Jahres neu, denn er gibt die Opportunität genau dieser Stunde wieder.
@@ -171,13 +171,12 @@ Die Summe beider Richtungen gibt deren Preis an, und sie ist die Addition beider
 Über den Tag schwankt der Median der Summe um den Faktor 8,3, nämlich von 9,6\,\EurMWh{} um Mitternacht auf 79,3\,\EurMWh{} um 14 Uhr.
 Welche Richtung ihn trägt, wechselt dabei über den Tag, denn um 7 Uhr liegt der Median der Entladereservierung beim 4,6-Fachen der Ladereservierung.
 Um 14 Uhr kehrt sich das Verhältnis auf das 3,7-Fache zugunsten der Ladereservierung um, und um 19 Uhr liegt die Entladereservierung beim 10,7-Fachen.
-Über das Jahr liegen beide Richtungen nahe beieinander, und allein im Frühjahr und im Frühsommer trägt die Ladereservierung mehr, im Juni um ein Drittel.
+Über das Jahr liegen beide Richtungen nahe beieinander, und von April bis September liegt die Ladereservierung meist höher, im Juni um ein Drittel.
 
 Über das Jahr verschiebt sich das Muster von der Tages- auf die Jahreszeit.
 Der Median der Summe schwankt über die Monate um den Faktor 4,2, nämlich von 13,5\,\EurMWh{} im Dezember auf 56,9\,\EurMWh{} im September.
 Im Winter von November bis Februar liegt sie bei 23,2\,\EurMWh{} und im Sommer von Mai bis August bei 38,6\,\EurMWh{}, sodass die Reservierung im Winter rund 40 Prozent weniger kostet.
 Ihr Maximum erreicht die Summe im September und damit außerhalb beider Jahreszeiten.
-Ob diese Jahreszeiten mit dem Engpassmanagementbedarf zusammenfallen, wird in Abschnitt~\ref{sec:price_vs_redispatch} geprüft.
 
 Der Abstand zwischen Median und arithmetischem Mittel ist über den Tag und über das Jahr nicht gleich groß, und die graue Fläche der Abbildung zeigt ihn für die Summe.
 In der Ladereservierung beträgt das arithmetische Mittel um 19 Uhr das 3,7-Fache des Medians und um 13 Uhr nur das 1,04-Fache.

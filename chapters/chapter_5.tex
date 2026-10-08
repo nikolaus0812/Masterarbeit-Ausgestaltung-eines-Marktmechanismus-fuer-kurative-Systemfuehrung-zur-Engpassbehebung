@@ -125,7 +125,7 @@ Die vollständige Preiskenntnis soll eine Unterschätzung der Opportunität verh
 Der kurative Marktmechanismus konkurriert nach dem Gebotsschluss der Regelleistung mit den Spotmärkten um dieselbe Leistung, weshalb gerade diese Unterschätzung zu vermeiden ist.
 Auf den \ac{IDC} lässt sich das nicht übertragen, denn seine Bewertung mit dem \ac{ID1} unterschätzt die Opportunität eher.
 Die vollständige Preiskenntnis unterschlägt zugleich den Optionswert der Bindung, denn bei bekannter Preisreihe ist dieser Optionswert null.
-Der Optionswert entfällt dabei ohne Verlust, denn die Bezugsanlage ist im Referenzfahrplan bereits bestmöglich vermarktet.
+Der Optionswert fehlt dem ermittelten Preis deshalb, obwohl die Bezugsanlage im Referenzfahrplan bestmöglich vermarktet ist.
 Eine Optimierung je Spotmarkt mit Preisprognosen hätte dagegen zusätzlich Fehler hinzugefügt, die sich von der Wirkung der Reservierung nicht trennen ließen.
 Für die Leistungspreise der \ac{FCR} und der \ac{aFRR} ist die vollständige Kenntnis keine Annahme, denn beide Ausschreibungen schließen vor der kurativen und ein Akteur kennt seinen Zuschlag dort bereits.
 Ein Akteur ohne Zuschlag hat den Erlös der Regelleistung deshalb nicht als Opportunität, und ein Akteur mit Zuschlag steht dem kurativen Markt nicht zur Verfügung.
@@ -299,7 +299,7 @@ Eine eingeplante kurative Maßnahme nutzt dagegen die Leistung des Akteurs am En
 Betriebsvorgabe, Sicherheitsmarge und Anschlussvereinbarung lösen das Problem ebenfalls, doch die Sicherheitsmarge bindet Übertragungskapazität, und Vorgabe und Anschlussvereinbarung beeinträchtigen die Erlösmöglichkeiten eines Speichers stärker als die vergütete Reservierung.
 Die flexible Netzanschlussvereinbarung bleibt dabei nötig, denn der kurative Marktmechanismus ist freiwillig.
 Ein teilnehmendes \ac{BESS} nimmt keine Anschlusskapazität weg, weil der \ac{ÜNB} seine Leistung in den kritischen Stunden abrufen kann, bei einem nicht teilnehmenden greift die Anschlussvereinbarung.
-Deren unvergütete Eingriffe schmälern jedoch die Erlöse und könnten den Zubau der Speicher hemmen, sodass die vergütete Teilnahme Netzanschluss und Netzbetrieb verbindet.
+Die unvergüteten Eingriffe der Anschlussvereinbarung schmälern jedoch die Erlöse und könnten den Zubau der Speicher hemmen, sodass die vergütete Teilnahme Netzanschluss und Netzbetrieb verbindet.
 Die Übertragungskapazität wächst dabei nicht, sie wird in den kritischen Stunden nur gezielter genutzt, sodass der Nutzen nicht allein in der vermiedenen Redispatchmaßnahme liegt, sondern in der zusätzlich anschließbaren Leistung von Speichern, Erzeugungsanlagen und Lasten.
 
 Die Voraussetzungen für die Umsetzung liegen vor allem im Betrieb, denn der \ac{ÜNB} muss die bezuschlagten Gebote als kuratives Maßnahmenset durch Betriebsplanung, Scharfschaltung und Auslösung führen.
@@ -316,15 +316,15 @@ Für den Markt ist zu prüfen, wie viele Anbieter ein Netzknoten braucht, denn o
 Für den Preis sind die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung zu bestimmen, ebenso ein Maßstab für die Pönale, denn beide fehlen dem ermittelten Preis.
 Für den Betrieb bleiben die Redundanz der Wirkungskette, der Nachweis der Verfügbarkeit und die Häufigkeit und Dauer eines Abrufs im Echtbetrieb offen, denn an ihnen hängt die Verbindlichkeit der Zusage.
 Für das System liefert die Perspektive der einzelnen Anlage keine Mengenaussage.
-Eine Hochrechnung setzte eine feste Wirksamkeit je Netzknoten voraus, doch die vorherrschende Erzeugungssituation dürfte sie über die Jahre verschieben.
 Eine systemweite Aussage verlangt deshalb eine Modellkette an einem Datensatz der Netzentwicklungsplanung, nämlich eine Marktsimulation mit der Reservierung kurativer Leistung, eine Lastflussrechnung darauf und eine Redispatchplanung mit den eingeplanten kurativen Maßnahmen.
 Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführung das Engpassmanagement dauerhaft entlastet.
 
 Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, die Höherauslastung, sondern ihr Anlass und ihr Maßstab.
 Heute entsteht der Bedarf aus kurzfristigen Fahrplanänderungen nach der letzten Vorschaurechnung, wie in Abschnitt~\ref{sec:motivation} beschrieben.
-Ein Betriebsmittel, das in der Planung (N-1)-sicher belastet war, verliert durch die Fahrplanänderung eines \ac{BESS} seine Reserve für den Ausfall eines anderen Betriebsmittels, und kein präventives Instrument greift mehr.
-Eine am Vortag vorsorglich an diesem Netzknoten eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, denn die Höherauslastung tritt erst im Fehlerfall ein, und die Maßnahme fängt sie ab.
-In dieser Anwendung sichert die vorsorgliche Reservierung den Betrieb gegen Fahrplanänderungen ab, die kein anderes Instrument auffängt.
+Ein Betriebsmittel, das in der Planung (N-1)-sicher belastet war, verliert durch die Fahrplanänderung eines \ac{BESS} seine Reserve für den Ausfall eines anderen Betriebsmittels, und der \ac{ÜNB} kann ihn nur noch mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch weniger Anlagen absichern.
+Eine am Vortag vorsorglich an diesem Netzknoten eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, denn die Überlast tritt erst im Fehlerfall ein, und die Maßnahme fängt sie ab.
+In dieser Anwendung sichert die vorsorgliche Reservierung den Betrieb gegen Fahrplanänderungen ab, die sonst nur der kurzfristige Redispatch weniger Anlagen auffängt.
+Nach Abschnitt~\ref{sec:prev_vs_cur} ist das der kurative Redispatch, während die zweite Anwendung die kurative Höherauslastung ist.
 Die Bedarfsermittlung nach Abschnitt~\ref{sec:product_parameters} müsste dafür neben den festgestellten Überlastungen eine Marge für solche Fahrplanänderungen enthalten.
 Mit der Ausrollung tritt die zweite Anwendung hinzu, denn der \ac{ÜNB} plant die Höherauslastung an vielen Netzknoten von vornherein ein und spart präventiven Redispatch.
 Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung, und beides ist heute nicht gegeben.

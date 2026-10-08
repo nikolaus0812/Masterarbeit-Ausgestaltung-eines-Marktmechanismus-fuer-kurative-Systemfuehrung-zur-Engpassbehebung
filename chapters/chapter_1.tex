@@ -61,7 +61,7 @@ Wie ein Instrument im Ereignisfall wirken kann, hängt davon ab, wie der \ac{ÜN
 Grundlage ist die Belastung, die jedes Betriebsmittel dauerhaft führen kann.
 Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen betrieblichen Sicherheitsgrenzwert überschreitet, was als (N-1)-Kriterium bezeichnet wird.
 Die präventive Systemführung hält die Belastung deshalb im Normalbetrieb um eine Marge unter der dauerhaft zulässigen Belastung, und das Freihalten dieser Marge ist der Eingriff, der als Redispatch anfällt.
-Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine thermische Reserve der Leitungen und Transformatoren ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine thermische Reserve der Betriebsmittel ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Die ungenutzte thermische Reserve ist der Ansatzpunkt der kurativen Systemführung.
 
 Die präventive Planung setzt zudem voraus, dass die Netzbelastung des Erfüllungszeitpunkts vorab hinreichend genau bekannt ist, und damit tritt zu Volumen und Ort als dritte Eigenschaft der Zeitpunkt, zu dem ein Engpass erkennbar wird.
@@ -69,7 +69,7 @@ Der \ac{ÜNB} prüft die Netzbelastung in Vorschauprozessen am Vortag und im Ver
 Zwischen der letzten Vorschaurechnung und dem Lieferbeginn bleibt ein Handelsfenster offen, das für den Handel innerhalb einer Regelzone, also des Netzgebiets eines \ac{ÜNB}, erst fünf Minuten vor Lieferung schließt.
 Fahrplanänderungen nach der letzten Vorschaurechnung gehen in keine Rechnung mehr ein.
 Gerade Anlagen mit kurzen Reaktionszeiten wie \ac{BESS} handeln in diesem späten Fenster, weil die Nachjustierung dort einen eigenen Wertbeitrag liefert \cite{mahgoub_wie_2025, hornek_value_2025}.
-Entsteht durch solche späten Änderungen ein Zustand, der nicht mehr (N-1)-sicher ist, erkennt ihn der \ac{ÜNB} in der laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation.
+Entsteht durch solche späten Änderungen ein Zustand, der ohne Eingriff nicht (N-1)-sicher wäre, erkennt ihn der \ac{ÜNB} in der laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation.
 Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können.
 Das Netz bleibt damit sicher.
 Der Eingriff wird aber teurer als in der Vorplanung, weil der Kreis geeigneter Anlagen kleiner ist.
@@ -99,24 +99,23 @@ Der \ac{ÜNB} kann eine Anpassung der Einspeisung oder des Bezugs nach §\,13a \
 Die kurative Systemführung verlangt jedoch mehr als ein gesperrtes Band, nämlich die Bereitschaft, die Leistung innerhalb der Reaktionszeit auf Abruf zu ändern, und bei Speichern den dafür nötigen Ladezustand.
 Für diese Bereitschaft besteht im Engpassmanagement keine Vergütung, und wer sie vorhält, verliert Vermarktungsmöglichkeiten.
 Ein Produkt, das diese Anforderungen beinhaltet, lässt den Betreiber im Gebot nennen, was ihn die entgangenen Erlöse kosten, sodass er sich durch die Vorhaltung nicht schlechter stellt.
-Die Regelleistungsmärkte leisten das für ihre eigenen Anforderungen bereits \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
-Sie dienen allerdings der Frequenzhaltung und nicht der Engpassbehebung.
+Die Regelleistungsmärkte leisten das für ihre eigenen Anforderungen bereits, dienen allerdings der Frequenzhaltung und nicht der Engpassbehebung \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.
 Beim Abruf liefert die Anlage dagegen Energie und kommt damit einer Anweisung im Redispatch nahe, sodass dort eine Vergütungslogik ähnlich der des Redispatch anwendbar wäre \cite{bundesnetzagentur_festlegung_2024}.
 Ein kurativer Marktmechanismus verbindet damit beide Logiken.
 Was die Vorhaltung den Betreiber kostet, beantwortet ein Optimierungsmodell aus seiner Position.
 Es bildet für ein \ac{BESS} den Einsatz an den kurzfristigen Strommärkten und in der Regelleistung über einen Liefertag ab, sodass sich nachvollziehen lässt, wie ein Betreiber die kurative Reservierung in seine Fahrplanbildung einbezieht.
-Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn beobachtete Preise tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt.
+Gerechnet wird mit den beobachteten Preisen des Jahres 2025, denn sie tragen die Volatilität, auf die es für den Wert einer Vorhaltung ankommt.
 Bewertet und eingeordnet wird der kurative Marktmechanismus für eine Einführung im Trendjahr 2032 des \ac{NEP}.
 Für dieses Jahr rechnet der \ac{NEP} mit 260\,\si{GW} Photovoltaik und 115\,\si{GW} Windenergie an Land, sodass etwa 90\,\% der Stromnachfrage aus erneuerbaren Energien stammen, und weist 41{,}1\,\si{GW} Großbatteriespeicher aus \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Der Engpassmanagementbedarf liegt dabei nach Abbildung~\ref{fig:engpassmanagement_nep} bei 14{,}8\,\si{TWh}.
 Das Trendjahr geht nicht in das Modell ein, sondern bildet den zeitlichen Rahmen der Einordnung.
 
 In Kapitel~\ref{ch:state_of_the_art} werden die kurative Systemführung, die für sie in Betracht kommenden Technologien, der Marktrahmen und die Vergütungslogiken des Engpassmanagements und der Regelleistung dargestellt.
-Daraus folgt die Wahl der \ac{BESS} als beispielhaft betrachteter kurativer Akteur für die weiteren Analysen.
+Daraus folgt die Wahl der \ac{BESS} als beispielhaft betrachteter kurativer Akteur.
 In Kapitel~\ref{ch:design_model} werden die Anforderungen an einen kurativen Marktmechanismus abgeleitet und die kurative Reservierung als Produkt entworfen.
-Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit seinen Systemgrenzen, den geführten Märkten und dem Suchverfahren für den Reservierungspreis.
-Den Abschluss bildet die Prüfung des Referenzerlöses gegen einen veröffentlichten Erlösindex für \ac{BESS} am deutschen Markt.
+Auf den Produktentwurf folgt das Optimierungsmodell des Speicherbetriebs mit dem Suchverfahren für den Reservierungspreis.
+Den Abschluss bildet die Prüfung des Referenzerlöses gegen einen veröffentlichten Erlösindex.
 In Kapitel~\ref{ch:results} wird das Verfahren über alle Tage des Jahres 2025 ausgewertet, nämlich nach der verdrängten Vermarktung, nach den Kosten der vollständigen Verdrängung, nach Höhe und Muster des kurativen Reservierungspreises und nach seinem Verhältnis zum Engpassmanagementbedarf.
-Sensitivitäten zeigen, welche Einflüsse den Preis bestimmen, nämlich Produkt- und Anlagenparameter des Modells und die Entwicklung der Märkte.
+Sensitivitäten zeigen, welche Einflüsse den Preis bestimmen.
 In Kapitel~\ref{ch:discussion} werden der kurative Marktmechanismus, der kurative Reservierungspreis und die kurative Systemführung im Engpassmanagement diskutiert.
 In Kapitel~\ref{ch:conc} werden die Ergebnisse zusammengefasst und weiterer Forschungsbedarf benannt.
