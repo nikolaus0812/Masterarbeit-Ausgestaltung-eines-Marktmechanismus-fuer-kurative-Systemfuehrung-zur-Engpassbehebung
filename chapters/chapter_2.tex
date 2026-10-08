@@ -1,9 +1,11 @@
 \chapter{Grundlagen und Stand der Technik}
 \label{ch:state_of_the_art}
 
-In diesem Kapitel werden zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dargelegt, und daraus wird begründet, welche Technologien als kurativer Akteur in Betracht kommen.
+In diesem Kapitel werden zunächst die konzeptionellen, physikalischen und regulatorischen Grundlagen der kurativen Systemführung dargelegt.
+Daraus wird begründet, welche Technologien als kurativer Akteur in Betracht kommen.
 Anschließend wird der Marktrahmen mit seinen Dispatch-Modellen, Marktzeithorizonten und Systemdienstleistungen dargestellt.
-Zuletzt wird geprüft, ob sich eine der bestehenden Vergütungslogiken auf die kurative Vorhaltung anwenden lässt und gegen welche Vermarktungswege eine solche Vorhaltung anträte.
+Zuletzt wird dargelegt, ob sich eine der bestehenden Vergütungslogiken auf die kurative Vorhaltung anwenden lässt und gegen welche Vermarktungswege eine solche Vorhaltung anträte.
+Die Reihenfolge folgt dem Weg von der Maßnahme über den Markt zum Preis der Vorhaltung.
 
 \section{Kurative Systemführung}
 \label{sec:curative_basics}
@@ -38,7 +40,7 @@ Der \ac{PATL} ist dabei die Strombelastbarkeit, die ein Betriebsmittel ohne zeit
 Der \ac{TATL} ist eine darüber liegende Strombelastbarkeit, die nur vorübergehend zulässig ist \cite{innosys_2030_gesamtverbund_innovationen_2021, uenb_grenzwertkonzept_2021}.
 Zu jeder Höhe der Überlast ist eine zugehörige zulässige Dauer festzulegen, die von der jeweiligen thermischen Trägheit abhängt.
 Der Abstand zwischen beiden Grenzwerten und die zugehörige Dauer bestimmen damit, wie viel Zeit für eine kurative Gegenmaßnahme zur Verfügung steht.
-Abbildung~\ref{fig:preventiv_kurativ} veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall.
+In Abbildung~\ref{fig:preventiv_kurativ} ist der grundlegende Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall veranschaulicht.
 Im präventiven Betrieb bleibt die Belastung auch nach dem Ausfall unterhalb des \ac{PATL}, weil der \ac{ÜNB} die Vorauslastung so weit begrenzt.
 Die kurative Systemführung erlaubt hingegen eine Vorauslastung bis zum \ac{PATL} im Normalbetrieb.
 Nach Eintreten des Fehlerfalles nutzt die kurative Systemführung das durch den \ac{TATL} definierte Zeitfenster und behebt den Engpass durch eine gezielte Gegenmaßnahme, bevor die zulässige Dauer überschritten ist.
@@ -89,7 +91,7 @@ Die folgende Betrachtung richtet sich deshalb auf die Vorhaltung als solche und 
 \label{sec:curative_functionality}
 
 Der Prozess des kurativen Engpassmanagements gliedert sich in vier Phasen, nämlich die Betriebsplanung, den Normalbetrieb, den Fehlerfall und die Rückführung.
-Abbildung~\ref{fig:curativ_process} stellt die vier Phasen für den Fall dar, dass ein \ac{EIV} die Maßnahme erbringt.
+In Abbildung~\ref{fig:curativ_process} sind die vier Phasen für den Fall dargestellt, dass ein \ac{EIV} die Maßnahme erbringt.
 Der \ac{EIV} wird im Folgenden als kurativer Akteur bezeichnet, sodass zwei Parteien beteiligt sind, nämlich der \ac{ÜNB} und der kurative Akteur.
 
 \begin{figure}[htbp]
@@ -109,7 +111,7 @@ Die Bindungsdauer ist der Zeitraum, über den der Akteur die kurative Bindung h�
 
 In der Betriebsplanung identifiziert der \ac{ÜNB} auf Basis von Netzprognosen mögliche Engpässe und überwacht dabei die thermischen Grenzwerte der Betriebsmittel.
 Im Normalbetrieb prüft der \ac{ÜNB} in der Netzsicherheitsrechnung fortlaufend, ob die geplanten kurativen Maßnahmen bei Eintreten einer Ausfallvariante den Befund beseitigen.
-Die Netzsicherheitsrechnung stützt sich dabei auf Leistungsflussrechnungen mit der State Estimation, also der aus Messwerten geschätzten Netzsituation \cite{leeuwen_integration_2020}.
+Die Netzsicherheitsrechnung stützt sich dabei auf Leistungsflussrechnungen mit der Netzzustandsschätzung (State Estimation), also der aus Messwerten geschätzten Netzsituation \cite{leeuwen_integration_2020}.
 Beseitigen die Maßnahmen den Befund, schaltet der \ac{ÜNB} sie scharf.
 Der Akteur bleibt dann in Bereitschaft.
 Im Fehlerfall löst ein Signal aus dem Leitsystem die scharfgeschaltete Maßnahme aus.
@@ -123,9 +125,10 @@ Die Prüfung beruht auf Prognosen der Netznutzung, nämlich für die Einspeisung
 Optimierungsalgorithmen ermitteln daraus die potenziellen Engpässe und die möglichen Entlastungsmaßnahmen.
 Die Prognosen werden laufend aktualisiert, sodass die Unsicherheit über die Netzsituation von Rechenlauf zu Rechenlauf abnimmt.
 Die Einplanung wird deshalb umso verlässlicher, je näher der Rechenlauf am Lieferzeitpunkt liegt.
-Für kritische Ausfallvarianten identifiziert der \ac{ÜNB} die Möglichkeit einer kurativen Maßnahme zur Engpassbehebung, und der dafür dokumentierte Maßnahmenraum reicht von leistungsflusssteuernden Betriebsmitteln bis zu Eingriffen in Erzeugung und Last \cite{innosys_2030_gesamtverbund_innovationen_2021}, wobei sich die Maßnahmen darin unterscheiden, wer über das eingesetzte Betriebsmittel verfügt.
+Für kritische Ausfallvarianten identifiziert der \ac{ÜNB} die Möglichkeit einer kurativen Maßnahme zur Engpassbehebung, und der dafür dokumentierte Maßnahmenraum reicht von leistungsflusssteuernden Betriebsmitteln bis zu Eingriffen in Erzeugung und Last \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Die Maßnahmen unterscheiden sich darin, wer über das eingesetzte Betriebsmittel verfügt.
 Maßnahmen mit eigenen Betriebsmitteln erfordern keine Zusage eines Dritten, während Eingriffe in Erzeugung, Last und Speicherung voraussetzen, dass ein \ac{EIV} die geforderte Leistungsänderung zusagt und zum Abrufzeitpunkt erbringt.
-Nur bei Eingriffen in Erzeugung, Last und Speicherung stellt sich die Frage nach Vorhaltung und Vergütung, weshalb die weitere Betrachtung auf sie beschränkt bleibt.
+Nur bei Eingriffen in Erzeugung, Last und Speicherung sind Vorhaltung und Vergütung zu regeln, weshalb die weitere Betrachtung auf sie beschränkt bleibt.
 
 Für eine solche Zusage meldet der Akteur dem \ac{ÜNB} sein verfügbares Hoch- und Runterfahrpotenzial, also die positive und die negative Leistungsänderung, die er innerhalb der geforderten Reaktionszeit bereitstellen kann.
 Die Zusage steht zudem nicht allein, denn eine marktbezogene kurative Maßnahme wird in der Regel bilanziell ausgeglichen, sodass die Summe der Einspeisung unverändert bleibt.
@@ -139,7 +142,8 @@ Die Wärmebilanz der Freileitung und der Temperaturverlauf bei einer Überlast s
 
 Aus der Wärmebilanz folgt eine wechselseitige Bindung zwischen dem gewählten Betriebspunkt und der Technologie des Akteurs, denn eine weitergehende Höherauslastung erschließt ein größeres Entlastungspotenzial und verkürzt zugleich das Zeitfenster für die Gegenmaßnahme.
 Die zulässige Dauer fällt zudem für dasselbe Betriebsmittel je nach Vorbelastung und Wetterlage unterschiedlich aus \cite{sous_comparison_2025}.
-Der Akteur kann die ihm verbleibende Reaktionszeit deshalb nicht selbst bestimmen, denn sie ergibt sich aus dem Betriebsmittel und der Situation, und damit der \ac{ÜNB} den Betriebspunkt planen kann, muss der Akteur auf eine feste Reaktionszeit festgelegt sein.
+Der Akteur kann die ihm verbleibende Reaktionszeit deshalb nicht selbst bestimmen, denn sie ergibt sich aus dem Betriebsmittel und der Situation.
+Damit der \ac{ÜNB} den Betriebspunkt planen kann, muss der Akteur auf eine feste Reaktionszeit festgelegt sein.
 Die Höherauslastung ist umgekehrt nur zulässig, soweit der \ac{ÜNB} den Stromkreis dafür freigegeben hat und die zulässige Überlastdauer die Reaktionszeit des Akteurs deckt \cite{uenb_grenzwertkonzept_2021}.
 
 InnoSys~2030 definiert drei Zeitfenster für die vorübergehend zulässige Überlast, an denen sich die kurativen Maßnahmen ausrichten, nämlich ein sehr schnelles unter zehn Sekunden, ein schnelles von etwa zwei Minuten und ein langsames von bis zu 15 Minuten \cite{innosys_2030_gesamtverbund_innovationen_2021}.
@@ -159,10 +163,11 @@ Der folgende Vergleich stützt sich deshalb auf vier Merkmale.
 Das erste Merkmal ist die erreichbare Reaktionszeit.
 Das zweite Merkmal ist die Energiebindung, also ob die Bereitstellung eine Bindung von Energie und nicht nur von Leistung erfordert, gemessen am Energieinhalt je Leistung.
 Der Energieinhalt je Leistung ist die Zeit in Stunden, über die eine Anlage ihre Nennleistung liefern kann.
-Das dritte Merkmal ist der Anlagenbestand mit seiner Entwicklung, denn der Bestand bestimmt die Zahl der geeigneten Anbieter an einem Netzknoten.
+Das dritte Merkmal ist der Anlagenbestand mit seinem Zubau bis 2037, denn der Bestand bestimmt die Zahl der geeigneten Anbieter an einem Netzknoten.
 Das vierte Merkmal ist der Vergütungspfad, über den ein Eingriff im geltenden Regulierungsrahmen abgerechnet würde.
-Der Vergütungspfad betrifft nicht die Eignung der Technologie, sondern die Frage, ob für sie bereits eine Bemessungsgrundlage besteht, also eine Regel, nach der der Ausgleich für den Eingriff berechnet wird.
-Tabelle~\ref{tab:akteursvergleich} stellt die in Betracht kommenden Technologien entlang dieser Merkmale gegenüber.
+Der Vergütungspfad betrifft nicht die Eignung der Technologie, sondern die Frage, ob für sie bereits eine Bemessungsgrundlage besteht.
+Eine Bemessungsgrundlage ist eine Regel, nach der der Ausgleich für den Eingriff berechnet wird.
+In Tabelle~\ref{tab:akteursvergleich} sind die in Betracht kommenden Technologien entlang dieser Merkmale gegenübergestellt.
 Die Systematisierung folgt der Flexibilitätstypologie nach Erzeugung, Verbrauch, Speicherung und netzseitigen Betriebsmitteln \cite{vde_etg_flexibilisierung_2023} und dem Maßnahmenkatalog kurativer Eingriffe aus InnoSys~2030 \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 
 \begin{table}[tbp]
@@ -202,18 +207,18 @@ Die Verfügbarkeit von Wind- und Photovoltaikanlagen hängt am Dargebot, also an
 Soweit die Maßnahme, wie in Abschnitt~\ref{sec:curative_functionality} beschrieben, bilanziell ausgeglichen wird, braucht die Rücknahme der Einspeisung zudem eine Erhöhung an anderer Stelle, sodass Wind- und Photovoltaikanlagen nur eine Hälfte eines Verbunds stellen können.
 
 Anders als Wind- und Photovoltaikanlagen wirkt ein \ac{PSKW} in beide Richtungen und reagiert innerhalb weniger Minuten.
-Sein Energieinhalt je Leistung von drei bis neun Stunden sorgt dafür, dass auch eine über Stunden reichende Bindung nur einen Teil der Kapazität beansprucht.
+Sein Energieinhalt je Leistung von drei bis neun Stunden sorgt dafür, dass auch eine über Stunden anhaltende Bindung nur einen Teil der Kapazität beansprucht.
 Im Pilotbetrieb von KuPilot ist ein \ac{PSKW} bereits eingesetzt worden, dort allerdings auf eine Stunde begrenzt.
 Die kurativ nutzbare Bindungsdauer eines \ac{PSKW} dürfte deshalb von der übrigen Vermarktung des Oberbeckens abhängen, das zugleich die übrigen Turbinen bedient.
 Die Zahl der \ac{PSKW} ist jedoch begrenzt, weil geeignete Standorte eine passende Topografie voraussetzen.
 Die installierte Leistung der \ac{PSKW} wächst nach Tabelle~\ref{tab:akteursvergleich} bis 2037 nur um rund ein Fünftel, sodass \ac{PSKW} nur an wenigen Netzknoten wirksam sind.
 \ac{BESS} vereinen die Eigenschaften, die bei den übrigen Technologien einzeln auftreten: Sie wirken in beide Richtungen und erreichen die kürzesten Reaktionszeiten.
-Ein \ac{BESS} stellt anders als ein konventionelles Kraftwerk und eine Windenergieanlage auch aus dem Stillstand in beide Richtungen.
+Ein \ac{BESS} stellt anders als ein konventionelles Kraftwerk und eine Windenergieanlage auch aus dem Stillstand Leistung in beide Richtungen bereit.
 Wie viel Leistung in welcher Richtung verfügbar ist, hängt allerdings vom aktuellen Betriebspunkt und vom Ladezustand ab.
-Eine Anlage, die bereits mit voller Leistung ein- oder ausspeist, kann in dieser Richtung nicht weiter stellen.
+Eine Anlage, die bereits mit voller Leistung ein- oder ausspeist, kann ihre Leistung in dieser Richtung nicht weiter erhöhen.
 Die zusagbare Leistung eines \ac{BESS} schwankt deshalb mit seinem Fahrplan.
 
-Anders als \ac{PSKW} sind \ac{BESS} in der Standortwahl nicht an die Topografie gebunden, und anders als konventionelle Kraftwerke wächst ihr Bestand.
+Anders als \ac{PSKW} sind \ac{BESS} in der Standortwahl nicht an die Topografie gebunden, und im Gegensatz zu konventionellen Kraftwerken wächst ihr Bestand.
 Für eine knotenscharfe Beschaffung zählt, ob am betroffenen Knoten ein Anbieter steht.
 Die Großspeicher in Betrieb und in Planung verteilen sich nach dem Marktstammdatenregister über das gesamte Bundesgebiet, mit Schwerpunkten in Norddeutschland und in Bayern \cite{isea_batterycharts_2026}.
 Nicht jeder Netzknoten wird einen Speicher erhalten, aber mit einem Bestand von 67,6\,\si{GW} im Szenario~B 2037 entsteht ein Pool von Anlagen, aus dem der \ac{ÜNB} an vielen Knoten wählen kann \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
@@ -239,7 +244,6 @@ Im kurativen Betrieb hängt die Sicherheit dagegen an einer Wirkungskette aus Fe
 Fällt ein Glied dieser Kette aus, führt der kurative Ansatz das System nicht in den (N-1)-sicheren Zustand zurück, sondern lässt die Grenzwertverletzung fortbestehen.
 Ein Schaden entsteht dadurch nicht sofort, denn die thermische Trägheit lässt Zeit, in der der \ac{ÜNB} auf präventive Mittel zurückgreifen kann, nur später und mit weniger Anlagen als in der Vorplanung.
 Zuverlässige kurative Konzepte setzen deshalb eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf voraus \cite{innosys_2030_gesamtverbund_innovationen_2021, sous_untersuchung_2022, sous_comparison_2025}.
-Die Ausgestaltung der Redundanz ist nicht Gegenstand der Untersuchung.
 
 Ein drittes Hindernis liegt auf der Planungsseite, wo die Prognoseunsicherheit die Auswahl der scharfzuschaltenden Maßnahmen erschwert.
 Mit steigendem Anteil wetterabhängiger Einspeisung wächst die Abweichung zwischen prognostizierter und tatsächlicher Netzbelastung, sodass sowohl der Ort als auch der Zeitpunkt eines Engpasses zum Planungszeitpunkt weniger belastbar bestimmbar sind \cite{lindner_operation_2023, rystad_energy_renewables__power_analytics_energy_2026}.
@@ -425,7 +429,7 @@ Der finanzielle Ausgleich ersetzt die Kosten, die durch die Anpassung entstehen.
 Maßstab ist dabei das Indifferenzprinzip: Der Ausgleich ist angemessen, wenn er den Anlagenbetreiber wirtschaftlich weder besser noch schlechter stellt als ohne die Maßnahme.
 Die Norm führt diesen Maßstab in fünf Bestandteile aus, die nur insoweit zu erstatten sind, als die angeforderte Anpassung sie verursacht hat.
 Ersparte Aufwendungen hat der Anlagenbetreiber zugleich zu berücksichtigen.
-Tabelle~\ref{tab:ausgleich_bestandteile} stellt die Bestandteile mit ihrem jeweiligen Bemessungsgegenstand zusammen.
+In Tabelle~\ref{tab:ausgleich_bestandteile} sind die Bestandteile mit ihrem jeweiligen Bemessungsgegenstand zusammengestellt.
 
 \begin{table}[htbp]
     \centering
@@ -458,7 +462,7 @@ Bei einem thermischen Kraftwerk bilden die Brennstoff- und Emissionskosten der z
 Bei einem Speicher tritt an die Stelle der Erzeugungsauslagen ein Einsatzpreis, der nicht die tatsächlichen Beschaffungskosten abbildet, sondern den Wert der gespeicherten Energie in einer künftigen Vermarktung.
 Die Festlegung der \ac{BNetzA} zum angemessenen finanziellen Ausgleich nach §\,13a Abs.~2 \ac{EnWG} bestimmt den Einsatzpreis als Grenzpreis, also als den Preis, ab dem sich die Ein- oder Ausspeicherung lohnt, unter Berücksichtigung des Wirkungsgrades und des Netznutzungsentgelts \cite{bundesnetzagentur_anlage1_2024}.
 Der Grenzpreis tritt damit bei einem Speicher an die Stelle der Brennstoffkosten.
-Die Erzeugungsauslagen fallen deshalb je bewegter Megawattstunde an und setzen eine tatsächliche Änderung des Arbeitspunktes voraus.
+Die Erzeugungsauslagen fallen deshalb je abgerufener Megawattstunde an und setzen eine tatsächliche Änderung des Arbeitspunktes voraus.
 Die übrigen Positionen fallen für ein \ac{BESS} unterschiedlich ins Gewicht.
 Die Betriebsbereitschaft nach Nummer~4 setzt ein Anfahren voraus und läuft bei einem Speicher weitgehend leer, sodass die Nummern~1 bis 3 den Preis bestimmen.
 Der anteilige Werteverbrauch nach Nummer~2 bleibt anwendbar, seine Bemessung über die Betriebsstunden ist jedoch nicht auf die Beanspruchung eines \ac{BESS} zugeschnitten.
@@ -512,7 +516,7 @@ Das Verfahren bewertet jede Viertelstunde für sich und setzt damit voraus, dass
 Bei einem Speicher gilt die Unabhängigkeit nur, solange der Energievorrat groß gegenüber der Leistung ist.
 Weber begründet die Annahme eines über den Tag konstanten Grenzpreises ausdrücklich mit der Voraussetzung eines großen Energievorrats \cite{weber_gutachten_2015}.
 Bei einem \ac{BESS} mit einem Energieinhalt je Leistung von ein bis zwei Stunden ist die Voraussetzung nicht erfüllt, denn jede Ein- oder Ausspeisung verschiebt den Grenzpreis der folgenden Intervalle.
-Das Berechnungsbeispiel rechnet mit vier Volllaststunden \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
+Das Berechnungsbeispiel in Anhang~\ref{anh:weber} rechnet mit vier Volllaststunden \cite{bundesnetzagentur_berechnungsbeispiel_2024}.
 
 Sichtbar wird die Kopplung zunächst an den Volllaststunden, denn sie begrenzen die Zahl der Iterationen und bestimmen darüber die beiden Grenzpreise.
 Wenige Volllaststunden rücken die Grenzpreise auseinander, sodass beide Optionen weiter aus dem Geld liegen, also keinen inneren Wert tragen.

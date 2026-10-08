@@ -130,7 +130,7 @@ Für die kurative Reservierung besteht kein Vergütungsrahmen, an dem sich ein A
 Der kurative Reservierungspreis wird dafür als der kleinste Preis bestimmt, bei dem ein \ac{BESS} eine Zeitscheibe voll reserviert, statt die Leistung anderweitig zu vermarkten.
 Für die Bestimmung wird ein Optimierungsmodell aufgebaut, das abbildet, wie ein \ac{BESS} über einen Liefertag an mehreren Märkten zugleich vermarktet wird.
 Für die kurative Reservierung gibt das Modell je Stunde und Richtung einen Preis in \EurMWh{} vor, im Folgenden vorgegebener Reservierungspreis genannt, auf den der Betreiber seine Vermarktung einstellt.
-Abbildung~\ref{fig:modellkette} zeigt den Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen.
+In Abbildung~\ref{fig:modellkette} ist der Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen dargestellt.
 
 \begin{figure}[htbp]
     \centering
@@ -163,7 +163,7 @@ Gelöst wird je Liefertag ein eigenes Problem, sodass kein Ladezustand in den Fo
 Zielfunktion und Nebenbedingungen sind linear, sodass das Problem im Basisfall ein lineares Programm ist und die kurative Reservierung jeden Wert zwischen null und der Anschlussleistung annehmen darf.
 Zur Untersuchung einzelner vorgegebener Reservierungspreise kann für die kurative Reservierung eine Mindestgröße festgelegt werden, in der Sensitivität 25\,\si{MW}.
 Die Mindestgröße macht die Reservierung halbstetig und verlangt je Stunde und Richtung eine Binärvariable, sodass das Problem gemischt-ganzzahlig wird, wie in Abschnitt~\ref{sec:input_data} beschrieben.
-Gelöst wird in beiden Fällen mit Gurobi 13.0.2, für das gemischt-ganzzahlige Programm mit einer relativen Optimalitätslücke von 0,01 Prozent und einem Zeitlimit von 60 Sekunden je Lauf als Abbruchkriterium \cite{gurobi_reference_2026}.
+Gelöst wird in beiden Fällen mit Gurobi 13.0.2, für das gemischt-ganzzahlige Programm mit einer relativen Optimalitätslücke von null, also bis zum Nachweis der Optimalität, und einem Zeitlimit von 60 Sekunden je Lauf als Abbruchkriterium \cite{gurobi_reference_2026}.
 
 Das Modell betrachtet eine einzelne Anlage als Preisnehmer, denn gesucht ist der kurative Reservierungspreis aus der Sicht eines Betreibers.
 Netzrestriktionen, die Zusammenfassung mehrerer Anlagen zu einem Pool und die Gegenseite der Maßnahme bildet das Modell nicht ab.
@@ -172,11 +172,12 @@ Die Abrufwahrscheinlichkeit bleibt außer Betracht, und der Zuschlag in den Rege
 Beide Vereinfachungen sind mit dem Produkt vereinbar: Weil ein Abruf gesondert vergütet wird, fließt er nicht in den kurativen Reservierungspreis ein, und die sicheren Zuschläge lösen die Erlöse am Regelleistungsmarkt vom Bietverhalten.
 
 Nicht Teil des Modells sind die gesonderte Vergütung eines Abrufs, nämlich der gelieferten Energie und der Nachlaufpflicht, und die Pönale mit der Risikoprämie, die aus ihr folgt.
+Ebenso bleibt die Ausgestaltung der Redundanz in der Wirkungskette aus Abschnitt~\ref{sec:challenges} außer Betracht.
 Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.
 
 Die Rückwirkung der Speicher auf die Preise bleibt ebenfalls außer Betracht, sodass die Preise des Jahres 2025 als gegeben gelten.
 Ein Zubau im Gigawattmaßstab drängt die zusätzliche Leistung überwiegend in die Arbitrage, weil die Regelleistungsmärkte mengenmäßig begrenzt sind \cite{garttan_battery_2025}.
-Dort verzehren Speicher die Spreads, indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}.
+Dort verzehren Speicher die Spreads, also die Preisspannen eines Tages, indem sie Niedrigpreisphasen anheben und Hochpreisphasen absenken \cite{rystad_energy_renewables__power_analytics_energy_2026}.
 
 \label{sec:storage_modelling}
 
@@ -396,7 +397,7 @@ Der Preis einer Stunde stellt damit die zuletzt reservierte Leistung gerade indi
 
 Um die Suche legen sich die Schleifen über Tage, Konfigurationen und Studien, wie Abbildung~\ref{fig:schleifenebenen} zeigt, sodass mehrere Varianten mit demselben Tagesmodell gerechnet werden.
 Die Hauptuntersuchung ist der Jahreslauf über alle Tage des Jahres 2025.
-Daneben prüfen zwei Sensitivitäten den Einfluss der \ac{aFRR}-Modellierung und des Spreads am \ac{IDC}, und die Einzelmarktvalidierung optimiert jeden Markt für sich.
+Daneben prüfen drei Sensitivitäten und eine Zukunftsvariante die Annahmen über die Märkte, wie in Abschnitt~\ref{sec:sensitivities} beschrieben, und die Einzelmarktvalidierung optimiert jeden Markt für sich.
 Je Tag steht neben der Suche die Festpreis-Reservierung mit zehn vorgegebenen Reservierungspreisen, mit der sich einzelne Tage genauer untersuchen lassen, nämlich wie sich die Anlage bei einem festen Reservierungspreis verhält und welche Handelsaktionen die Reservierung verdrängt.
 
 \begin{figure}[t]
@@ -437,7 +438,7 @@ Den Ladezustand hält der Revenue-Index über Geschäfte zum \ac{ID1} im zuläss
 Zuletzt handelt der Revenue-Index im kontinuierlichen Intraday-Handel mit der übrigen Leistung, dem übrigen Speicherinhalt und den übrigen Zyklen, mindestens aber mit der Hälfte der Zyklengrenze, und schließt den Tag mit dem Anfangsladezustand ab.
 Als übrige Leistung zieht der Revenue-Index allein die für die \ac{aFRR}-Arbeit vorgehaltene Leistung ab und nicht die Reservierung der \ac{FCR}.
 In einem Block mit \ac{FCR}-Zuschlag teilt er deshalb bis zum Anderthalbfachen der Nennleistung zu, nämlich die Hälfte für die \ac{FCR}, ein Viertel für die \ac{aFRR}-Arbeit und drei Viertel für den Intraday-Handel.
-Die Aufteilung der Leistung im Revenue-Index taugt damit nicht als Maßstab für die Aufteilung im Optimierungsmodell, während die Höhe des Erlöses als Referenz von außen brauchbar bleibt.
+Die Aufteilung der Leistung im Revenue-Index eignet sich damit nicht als Maßstab für die Aufteilung im Optimierungsmodell, während die Höhe des Erlöses als Referenz von außen brauchbar bleibt.
 
 Der kontinuierliche Intraday-Handel läuft rollierend vom Vortag um 16 Uhr bis zum Ende des Liefertages.
 Alle 15 Minuten bildet der Revenue-Index aus den Geschäften dieses Zeitfensters je Viertelstundenprodukt den volumengewichteten Preis und optimiert damit ohne Prognose den ganzen Tag neu \cite{semmelmann_algorithm_2024}.
@@ -485,7 +486,7 @@ Die Abweichung folgt den Degradationskosten, die das Optimierungsmodell je Zyklu
     \label{fig:validierung_cross}
 \end{figure}
 
-Abbildung~\ref{fig:validierung_cross} stellt marktübergreifend den Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenüber.
+In Abbildung~\ref{fig:validierung_cross} ist marktübergreifend der Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenübergestellt.
 Das Optimierungsmodell liegt im Mittel bei 340,7 und der Revenue-Index bei 260,0 Tausend Euro je Megawatt und Jahr.
 Das Verhältnis beider Reihen beträgt im Median 1,31 bei einer Spanne von 1,04 bis 1,50, und das Optimierungsmodell liegt in allen zwölf Monaten über dem Revenue-Index.
 Die beiden Reihen korrelieren mit einem Koeffizienten von 0,974, sodass das Optimierungsmodell den Jahresgang des Revenue-Index abbildet.
@@ -500,7 +501,7 @@ Marktübergreifend zeigt der Vergleich damit keine Unterschätzung der Erlösmö
 
 Die zweite Prüfung gilt der Funktionsweise, also der Frage, ob die Optimierung die kurative Reservierung so in den Betrieb einfügt, wie das Produkt es vorsieht.
 Dafür eignet sich ein Liefertag bei einem festen Reservierungspreis, weil sich dort Fahrplan, Ladezustand und die verdrängten Handelsaktionen unmittelbar ablesen lassen.
-Abbildung~\ref{fig:dispatch_festpreis} zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem vorgegebenen Reservierungspreis von 5\,\EurMWh{} in beiden Richtungen.
+In Abbildung~\ref{fig:dispatch_festpreis} ist der 11.02.2025 dargestellt, der Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei einem vorgegebenen Reservierungspreis von 5\,\EurMWh{} in beiden Richtungen.
 Die Reservierung belegt die Stunden, in denen die übrigen Märkte wenig bieten, in positiver Richtung etwa die Nachtstunden bis vier Uhr und den späten Abend, während die Stunden mit hohem Leistungspreis bei der \ac{aFRR} bleiben und die Vormittags- und Abendstunden dem \ac{DA} und dem \ac{IDC}.
 In den reservierten Stunden hält der Ladezustand die Energie oder den Speicherraum für einen Abruf von einer Megawattstunde je Megawatt frei, und Anfang und Ende des Tages liegen bei 125 Megawattstunden.
 Der gezeigte Fahrplan enthält die Mindestgröße von 25\,\si{MW} je Zeitscheibe und Richtung, die das Optimierungsmodell gemischt-ganzzahlig macht.

@@ -195,6 +195,8 @@ nicht Schwellenpreis. *Kurative Systemführung* als Oberbegriff für die kurativ
 Höherauslastung und den kurativen Redispatch. *BESS* und *PSKW* als Akronyme,
 keine Pluralform mit `\acp`. *IDA-1* für die Preisreihe der Strikepreise.
 *Akteur* für den Marktteilnehmer, *Technologie* für die Anlage.
+*Abgerufene Arbeit* und *je abgerufener Megawattstunde* für die im Redispatch
+gelieferte Energie, nicht *bewegte Arbeit*, entschieden am 08.10.2026 (C8).
 *Topologieschaltmaßnahmen* einheitlich. *Der PATL* und *der TATL*, maskulin, nach
 InnoSys 2030 und dem Grenzwertkonzept, entschieden am 15.09.2026. *Energieinhalt je Leistung* in Stunden für das Verhältnis von
 Speicherkapazität zu Nennleistung, nicht C-Wert oder C-Rate, denn die C-Rate ist der

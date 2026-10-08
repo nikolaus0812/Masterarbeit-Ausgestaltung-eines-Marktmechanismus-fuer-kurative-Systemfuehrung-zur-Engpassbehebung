@@ -2,11 +2,11 @@
 \label{ch:intro}
 
 Mit einem Anteil erneuerbarer Energien von 58{,}8\,\% an der Nettostromerzeugung im Jahr 2025 \cite{bundesnetzagentur_strommarktdaten_2026} verändert sich nicht allein die Zusammensetzung der Erzeugung, sondern auch ihre räumliche Verteilung und damit die Transportaufgabe des Übertragungsnetzes.
-Das Engpassmanagement, also die Gesamtheit der Maßnahmen, mit denen der Netzbetreiber Überlastungen von Leitungen und Transformatoren beseitigt, bewegt seither Mengen auf anhaltend hohem Niveau und verändert sich zugleich in seiner Struktur.
+Das Engpassmanagement, also die Gesamtheit der Maßnahmen, mit denen der Netzbetreiber Überlastungen von Betriebsmitteln, also von Leitungen und Transformatoren, beseitigt, bewegt seither Energiemengen auf anhaltend hohem Niveau und verändert sich zugleich in seiner Struktur.
 Mit \ac{BESS} tritt eine flexible Technologie in das deutsche Stromsystem ein, die den kurzfristigen Handel mit wachsenden Volumen prägt \cite{garttan_battery_2025}.
 Damit entstehen Engpässe zunehmend erst kurz vor der Lieferung, während die \ac{BESS} selbst noch nicht Teil des Engpassmanagements sind.
-Im bestehenden Regime des Redispatch können nur wenige Anlagen so kurzfristig reagieren, sodass das Engpassmanagement an seine Grenzen stößt.
-Eine Lösung könnte darin liegen, das Engpassmanagement um die kurative Systemführung zu erweitern, die das Netz effizienter nutzt und die technologische Flexibilität erneuerbarer Energien und Speicher gezielt einsetzt.
+Im bestehenden Engpassmanagement können nur wenige Erzeugungsanlagen so kurzfristig reagieren, sodass es an seine Grenzen stößt.
+Ein Lösungsansatz ist die Erweiterung des Engpassmanagements um die kurative Systemführung, die das Netz effizienter nutzt und die technologische Flexibilität erneuerbarer Energien und Speicher gezielt einsetzt.
 Ihre neuartigen Anforderungen an Planung, Scharfschaltung, Abruf und Vergütung lassen eine systemweite Integration bisher jedoch nicht zu \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 
 \section{Motivation und Problemstellung}
@@ -16,11 +16,12 @@ Die Transportaufgabe des Übertragungsnetzes ist durch ein geografisches Missver
 Zugleich wird das Engpassmuster mit dem Zubau der Photovoltaik vielfältiger, denn eine hohe Einspeisung aus Photovoltaikanlagen führte in den Sommermonaten des Jahres 2025 vermehrt zu Ost-West-Lastflüssen \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
 Transportaufgabe und Engpassmuster sind damit nicht stationär, sondern hängen vom Zubau von Erzeugung und Lasten sowie von der Wettersituation ab.
 
-Das Marktdesign des europäischen Binnenmarkts, dem der deutsche Strommarkt folgt, verstärkt dieses Missverhältnis: Im dezentralen Dispatch-Modell bestimmen die Einsatzverantwortlichen (\acs{EIV})\acused{EIV}, also die Marktrollen, die den Einsatz einer Anlage im Betrieb verantworten und ihren Fahrplan melden, die Erzeugungs- und Verbrauchsfahrpläne selbst \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019, europaische_kommission_verordnung_2017_ebgl}.
+Das Marktdesign des europäischen Binnenmarkts, dem der deutsche Strommarkt folgt, verstärkt dieses Missverhältnis: Im dezentralen Dispatch-Modell liegt die Fahrplanbildung bei den Einsatzverantwortlichen (\acs{EIV})\acused{EIV}, also den Marktrollen, die den Einsatz einer Anlage im Betrieb verantworten.
+Die \ac{EIV} bestimmen die Erzeugungs- und Verbrauchsfahrpläne selbst und melden sie dem Netzbetreiber \cite{europaisches_parlament_und_rat_der_eu_verordnung_2019, europaische_kommission_verordnung_2017_ebgl}.
 Maßgeblich für den Einsatz ist damit das Preissignal des Marktes und nicht der Zustand des Netzes.
 Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab, sodass marktoptimale Fahrpläne Leistungsflüsse erzeugen, die das Netz nicht aufnehmen kann.
 Der \ac{ÜNB} sagt die Leistungsflüsse im Netz aus den gemeldeten Fahrplänen voraus und ordnet auf dieser Vorhersage den Redispatch an, also eine Anpassung der Einspeisung einzelner Anlagen.
-Zeichnet sich im laufenden Betrieb eine Überlastung ab, ordnet er den Redispatch auch kurzfristig an.
+Zeichnet sich im laufenden Betrieb die Überlastung eines Betriebsmittels ab, ordnet er den Redispatch auch kurzfristig an.
 Der Engpassmanagementbedarf ist damit nicht allein eine Folge des Netzzustands, sondern auch eine Folge des Marktdesigns.
 
 \begin{figure}[htbp]
@@ -30,7 +31,7 @@ Der Engpassmanagementbedarf ist damit nicht allein eine Folge des Netzzustands, 
     \label{fig:redispatch_jahresbedarf}
 \end{figure}
 
-Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt.
+Der Engpassmanagementbedarf ist hoch, wie Abbildung~\ref{fig:redispatch_jahresbedarf} mit dem jährlichen Maßnahmenvolumen zeigt, und von wenigen Wetterlagen geprägt.
 Mit 30{,}4\,\si{TWh} lag das Maßnahmenvolumen im Jahr 2025 nahezu auf dem Wert des Vorjahres, während die vorläufigen Gesamtkosten um knapp vier Prozent auf rund 3{,}1\,Mrd.\,Euro stiegen.
 Die Jahressummen verdecken dabei, wie stark einzelne Wetterlagen die Kosten prägen: Die monatlichen Gesamtkosten schwankten seit Juli 2022 zwischen rund 123\,Mio.\,Euro im Juni 2023 und rund 485\,Mio.\,Euro im Dezember 2024 \cite{bundesnetzagentur_mengen_nodate}.
 Auf den Dezember 2024, geprägt von einer Windfront, entfielen rund 16\,\% der Jahresgesamtkosten 2024, sodass wenige Wetterlagen über die Kosten eines Jahres mitentscheiden \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
@@ -50,7 +51,7 @@ Nach Abbildung~\ref{fig:engpassmanagement_nep} sinkt der Bedarf bis zum Zieljahr
 Der Restbedarf folgt aus der Zielsetzung des Verfahrens, denn der \ac{NEP} führt den Netzausbau nur so weit, wie die eingesparten Engpassmanagementkosten die Ausbaukosten übersteigen \cite{bundesnetzagentur_netzentwicklungsplan_2026}.
 Ein verbleibender Engpassmanagementbedarf gehört damit zum ermittelten Zielzustand und fällt Instrumenten jenseits des Netzausbaus zu.
 
-Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen wie die Windfront im Dezember 2024 prägen die Kosten eines Jahres stärker als die Jahresmenge \cite{bundesnetzagentur_smard_engpassmanagement_2026}.
+Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen prägen die Kosten eines Jahres stärker als die Jahresmenge.
 Zugleich wandert das Engpassmuster, denn es verschiebt sich mit der vorherrschenden Erzeugungssituation.
 Der Redispatch stützt sich bisher auf wenige große Anlagen: Von den 16{,}5\,\si{TWh}, die die \ac{ÜNB} 2025 in beiden Richtungen anwiesen, entfielen 98\,\% auf 206 Einheiten ab 100\,\si{MW} angewiesener Leistungsänderung \cite{netztransparenz_regelenergie_2026}.
 Der Redispatch ist damit das geeignete Mittel für strukturelle und stationäre Engpässe.
@@ -59,14 +60,15 @@ Das Engpassmanagement ist deshalb um ein Instrument zu erweitern, das möglichst
 Wie ein Instrument im Ereignisfall wirken kann, hängt davon ab, wie der \ac{ÜNB} Engpässe heute beherrscht: Die Versorgungssicherheit im operativen Betrieb beruht auf präventiver Systemführung.
 Grundlage ist die Belastung, die jedes Betriebsmittel dauerhaft führen kann.
 Die präventive Systemführung plant den Einsatz so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen betrieblichen Sicherheitsgrenzwert überschreitet, was als (N-1)-Kriterium bezeichnet wird.
-Die präventive Systemführung hält die Belastung deshalb im Normalbetrieb um eine Marge unter der Dauergrenze, und das Freihalten dieser Marge ist der Eingriff, der als Redispatch anfällt.
-Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine thermische Reserve ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
+Die präventive Systemführung hält die Belastung deshalb im Normalbetrieb um eine Marge unter der dauerhaft zulässigen Belastung, und das Freihalten dieser Marge ist der Eingriff, der als Redispatch anfällt.
+Betriebsmittel vertragen kurzzeitig jedoch mehr, als im Dauerbetrieb zulässig ist, sodass bei der präventiven Systemführung eine thermische Reserve der Leitungen und Transformatoren ungenutzt bleibt \cite{innosys_2030_gesamtverbund_innovationen_2021}.
 Die ungenutzte thermische Reserve ist der Ansatzpunkt der kurativen Systemführung.
 
 Die präventive Planung setzt zudem voraus, dass die Netzbelastung des Erfüllungszeitpunkts vorab hinreichend genau bekannt ist, und damit tritt zu Volumen und Ort als dritte Eigenschaft der Zeitpunkt, zu dem ein Engpass erkennbar wird.
 Der \ac{ÜNB} prüft die Netzbelastung in Vorschauprozessen am Vortag und im Verlauf des Erfüllungstages \cite{leeuwen_integration_2020}.
 Zwischen der letzten Vorschaurechnung und dem Lieferbeginn bleibt ein Handelsfenster offen, das für den Handel innerhalb einer Regelzone, also des Netzgebiets eines \ac{ÜNB}, erst fünf Minuten vor Lieferung schließt.
-Fahrplanänderungen nach der letzten Vorschaurechnung gehen in keine Rechnung mehr ein, und gerade Anlagen mit kurzen Reaktionszeiten wie \ac{BESS} handeln in diesem späten Fenster, weil die Nachjustierung dort einen eigenen Wertbeitrag liefert \cite{mahgoub_wie_2025, hornek_value_2025}.
+Fahrplanänderungen nach der letzten Vorschaurechnung gehen in keine Rechnung mehr ein.
+Gerade Anlagen mit kurzen Reaktionszeiten wie \ac{BESS} handeln in diesem späten Fenster, weil die Nachjustierung dort einen eigenen Wertbeitrag liefert \cite{mahgoub_wie_2025, hornek_value_2025}.
 Entsteht durch solche späten Änderungen ein Zustand, der nicht mehr (N-1)-sicher ist, erkennt ihn der \ac{ÜNB} in der laufenden Netzsicherheitsrechnung auf der aktuellen Netzsituation.
 Der \ac{ÜNB} behebt einen solchen Zustand mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch derjenigen Anlagen, die noch reagieren können.
 Das Netz bleibt damit sicher.
@@ -91,10 +93,10 @@ Die kurative Reservierung ist das Produkt, das der \ac{ÜNB} im kurativen Marktm
 Auszugestalten sind neben dem Produkt die Art der Ausschreibung, die Bezuschlagung, die Zeitschiene und die Vergütung.
 Für die Vergütung ist der kurative Reservierungspreis zu bestimmen, also der kleinste Preis, zu dem ein Betreiber seine Leistung über die Bindungsdauer vollständig reserviert, statt sie anderweitig zu vermarkten.
 Über die Bindungsdauer, also den Zeitraum der Zusage, gibt der Betreiber Erlöse an den übrigen Energiemärkten auf, sodass der kurative Reservierungspreis diese entgangenen Erlöse als Opportunitätskosten abbilden muss.
-Zu prüfen ist, ob die marktlich beschaffte Vorhaltung mit dem präventiven Redispatch mithält, und zwar nicht allein in der Höhe des Preises, sondern auch in seiner zeitlichen Zusammensetzung und seiner künftigen Entwicklung.
+Zu prüfen ist, ob die marktlich beschaffte Vorhaltung gegenüber dem präventiven Redispatch konkurrenzfähig ist, und zwar nicht allein in der Höhe des Preises, sondern auch in seiner zeitlichen Zusammensetzung und seiner künftigen Entwicklung.
 
-Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, während der \ac{ÜNB} eine Anpassung der Einspeisung oder des Bezugs nach §\,13a \ac{EnWG} anordnen kann \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
-Die Vorhaltung kann er dagegen nicht anordnen, denn der Betreiber entscheidet im dezentralen Dispatch-Modell über den Einsatz seiner Anlage selbst.
+Der \ac{ÜNB} kann eine Anpassung der Einspeisung oder des Bezugs nach §\,13a \ac{EnWG} anordnen und damit auch vorab ein Leistungsband sperren \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}.
+Eine Sperre nimmt dem Betreiber Leistung, verschafft dem \ac{ÜNB} aber keine Leistung auf Abruf, und für eine solche Vorhaltung besteht im Engpassmanagement keine Vergütung.
 Hält der Betreiber ein Leistungsband vorab frei, verliert er Vermarktungsmöglichkeiten an den übrigen Märkten.
 Ein Produkt, das diese Leistung reserviert, lässt ihn im Gebot nennen, was ihn die entgangenen Erlöse kosten, sodass er sich durch die Vorhaltung nicht schlechter stellt.
 Genau das leisten unter den Systemdienstleistungen die Regelleistungsmärkte, die die vorgehaltene Leistung selbst vergüten \cite{ubertragungsnetzbetreiber_deutschland_praqualifikationsverfahren_2024}.

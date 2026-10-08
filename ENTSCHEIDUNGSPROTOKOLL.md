@@ -19088,6 +19088,57 @@ anderen Sitzung traegt, und wird mit deren Commit uebernommen.
     sind zu kuerzen. Fuer Ehrhart und Hoersch waere eine Textfassung in
     literature/txt der zuverlaessige Weg.
 
+35. Anordenbarkeit der Vorhaltung, vorgemerkt am 28.09.2026 fuer die
+    Ueberarbeitungsschleife nach den Rueckmeldungen. Anlass ist eine Frage des
+    Verfassers vor dem Vortrag bei TenneT und eine Quellenpruefung durch einen
+    Suchagenten (Gesetzestext § 13a EnWG in literature/txt, Anlage 1 zu
+    BK8-22-0001-A, Beschluss BK6-20-059 und BDEW-Kerndokument Redispatch 2.0
+    aus dem Netz). Betroffen sind chapter_1.tex Zeile 96 bis 97 ("Die
+    Vorhaltung kann er dagegen nicht anordnen, denn der Betreiber entscheidet
+    im dezentralen Dispatch-Modell ueber den Einsatz seiner Anlage selbst"),
+    chapter_2.tex Zeile 626 ("Das Engpassmanagement kennt allein die Anordnung
+    einer Leistungsaenderung und keine Vorhaltung"), chapter_2.tex Zeile 322
+    und chapter_6.tex Zeile 7 ("Eine Vorhaltung kann der UeNB nicht anordnen").
+    Befund: Die Aussage haelt so nicht vollstaendig. Der UeNB kann nach
+    § 13a Abs. 1 EnWG eine Anpassung anordnen und den angewiesenen
+    Arbeitspunkt fuer die Dauer der Massnahme fixieren lassen (Redispatch 2.0,
+    Anweisung mit beidseitiger Fixierung; BDEW-Kerndokument S. 5 f.: die
+    Anlage hat die Einspeisung "herbeizufuehren und beizubehalten", der EIV
+    darf die freien Redispatch-Vermoegen nicht nutzen; Anlage 1 S. 48:
+    "strikte Beibehaltung des angeforderten Arbeitspunktes", Opportunitaet fuer
+    den "gesperrten Leistungsbereich"). Was § 13a nicht kennt, ist eine Zusage
+    fuer den Fehlerfall ueber eine Bindungsdauer ohne angewiesenen
+    Arbeitspunkt; was er nicht verguetet, ist die Bereitschaft als solche
+    (Abs. 2: Ausgleich fuer die "vorgenommene Anpassung"; Abs. 4:
+    "Betriebsbereitschaftsauslagen" werden nicht erstattet). Der Kern von
+    2.1.5 bleibt bestaetigt.
+    Vorgemerkte Neufassung, erst nach dem Wort des Verfassers zu setzen:
+    chapter_1.tex: "Der UeNB kann nach § 13a EnWG eine Anpassung der
+    Einspeisung oder des Bezugs anordnen und den angewiesenen Arbeitspunkt fuer
+    die Dauer der Massnahme fixieren lassen. Eine Zusage, im Fehlerfall
+    innerhalb einer Reaktionszeit zu reagieren, sieht § 13a EnWG nicht vor,
+    und die Bereitschaft dafuer verguetet er nicht, denn der Ausgleich knuepft
+    an die vorgenommene Anpassung an." chapter_2.tex Zeile 626: "Das
+    Engpassmanagement kennt die Anordnung einer Leistungsaenderung mit
+    Fixierung des Arbeitspunkts, aber keine verguetete Vorhaltung fuer den
+    Fehlerfall." chapter_6.tex Zeile 7 entsprechend. Der Begruendungssatz mit
+    dem dezentralen Dispatch-Modell ist zu streichen, denn waehrend der
+    Geltungsdauer einer Fixierung entscheidet der Betreiber nicht frei.
+    Offen: (a) ob eine Anweisung ohne Leistungsaenderung (Fahrplan 0 MW
+    bestaetigen und fixieren) rechtlich eine "Anpassung" ist, keine Quelle,
+    in Betracht kommt ein EnWG-Kommentar zu § 13a oder Anlage 2 zu
+    BK6-20-059; (b) BK6-20-059 ist laut Websuche zum 01.07.2026 durch
+    BK6-25-325 (BilAReM) abgeloest, der Beschluss liegt im Repo
+    (bundesnetzagentur_beschluss_2026), ob er die Fixierungsregeln
+    uebernimmt, ist vor dem Zitieren zu pruefen; (c) BDEW-Kerndokument und
+    BK6-20-059 fehlen in der Literaturdatei; (d) als Beleg fuer die Luecke
+    taugen hirth_kosten_2019 S. 71 ("eine fixe Entschaedigung fuer die
+    Vorhaltung von Redispatch-Leistung anstatt einer Kompensation des Abrufs"
+    als offene Option) und InnoSys 2030 S. 166. Eigenstaendige Ableitung des
+    Suchagenten, nicht vom Verfasser: dass der UeNB die Fixierung faktisch
+    ueber eine Anpassung um ein kleines Delta mit beidseitiger Fixierung
+    erreicht.
+
 ## Anhang, vollstaendiger Kommentarbestand chapter_1.tex vor dem Entfernen am 28.08.2026
 
 Stand nach Abschluss aller offenen Punkte. Die Datei enthaelt danach nur noch
