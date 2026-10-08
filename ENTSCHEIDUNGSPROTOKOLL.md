@@ -22585,3 +22585,1875 @@ Zeile 2778
 % Betroffen ist folglich die Bewertungslogik und nicht allein die Parametrisierung.
 % =====================================================================
 ```
+
+
+---
+
+## Sitzungen vom 30.09. bis 08.10.2026, Kommentare des Betreuers und der Freunde
+
+Eintrag vom 08.10.2026. Er fasst die Sitzungen vom 30.09., 07.10. und 08.10.2026
+zusammen und ersetzt die Arbeitsdateien `KOMMENTARE_FREUNDE.md`,
+`KOMMENTARE_BETREUER_KAP4_5.md`, `WORKFLOW.md`, `HANDOFF.md` und das
+Verzeichnis `archiv/`, die am 08.10.2026 gelöscht werden. Ihr Inhalt steht,
+soweit er noch gebraucht wird, in den Anhängen A bis D dieses Eintrags. Die
+Git-Historie hält die Dateien bis Commit 5e4e400 vor.
+
+### Übergreifende Entscheidungen
+
+**Gegenstand.** Zwei Schwünge von Kommentaren des Betreuers zur PDF-Fassung
+(Betreuerseite = Druckseite + 9): 56 Kommentare zu Abstract, Kapitel 4 und
+5.1 am 07.10.2026 (N1 bis N56) und 92 Kommentare zu 5.2 bis 5.5, Kapitel 6
+und Anhang am 08.10.2026 (K58 bis K149). Dazu 48 Kommentare zweier Freunde
+(Luca L1 bis L19, Julius J1 bis J50) zu den Builds vom 21. und 28.09.2026 und
+zwei allgemeine Kommentare (Einleitung zu lang, Bildunterschriften zu kurz).
+
+**Workflow, vereinbart am 07.10.2026.** Vier Runden mit möglichst wenig
+Rückfragen: Runde 1 Grundsatzentscheidungen mit Empfehlung und Vorgabewert,
+Runde 2 Stufe A ohne Rückfrage mit Tabelle Alt gegen Neu (Widerspruch nur auf
+Nennung), Runde 3 Stufe B als Wortlaut in Paketen je Abschnitt
+(Widerspruchsverfahren), Runde 4 Protokoll und Archiv. Stufen: A automatisch
+durchführbar (Wortersatz, Verweis, Umstellung ohne neue Aussage), B Vorschlag
+mit Freigabe (neuer oder umgebauter Satz mit Inhalt), C Grundsatzentscheidung
+(Regel, mehrere Stellen, Länge). Die Kommentare der Freunde haben weniger
+Gewicht, strukturelle Änderungen werden auf sie hin nicht vorgenommen.
+
+**Randbedingungen des Verfassers.** Formatierung bleibt unangetastet, die
+Kapitel behalten ihre Länge: 129 Seiten, Kapitelanfänge 1, 6, 30, 49, 65, 77,
+Literaturverzeichnis 81 wie im Commit 54048c6. Jede Änderung wurde gegen
+diese Zahlen gebaut. Weil die Abbildungen mit `[H]` gesetzt sind, kippt eine
+Seite schon bei zwei bis drei zusätzlichen Zeilen vor einer Abbildung, und die
+Luft am Kapitelende ist dann nicht nutzbar. Deshalb sind in Kapitel 4 und 5
+rund 30 Zeilen gestrafft worden, im Wortlaut in Anhang A.
+
+**Entscheidungen C1 bis C13 des Verfassers.**
+
+1. C1 (07.10.2026): Listen nur für die fünf Beispieltage in 4.1, nicht für die
+   Schlussabsätze; deren Ankündigungssätze (*in vier Punkten fassen*, *vier
+   Aussagen belegt*, *dreierlei*, *Folgendes festzuhalten*) sind in den
+   ersten Satz der Aussage gefaltet.
+2. C2 (07.10.2026): Englischer Abstract von drei Agenten mit verschiedenen
+   Vorgaben neu geschrieben (journal-schlicht, britisch satztreu, SOGL- und
+   ENTSO-E-Vokabular). Eingebaut ist die britische Fassung mit den
+   Fachbegriffen der dritten (contingency analysis, permanently und
+   temporarily admissible transmission loading, remedial action, balancing
+   capacity, operational security) und der Einheit *per megawatt per hour*
+   gegen *per megawatt-hour*. Der Satz *Scheduling therefore depends on time
+   as much as on the congestion pattern of the grid.* entfällt, weil sein
+   deutsches Gegenstück mit L1 gestrichen wurde. Alt und Neu je Absatz in
+   Anhang A.
+3. C3: *Beispieltage* für die fünf Tage in 4.1 und Anhang F, Begriffsliste.
+4. C4: Einmal je Abschnitt in Kapitel 4 *im Jahreslauf des Optimierungsmodells*
+   bei der ersten Zahl, danach *im Jahreslauf*.
+5. C5: Alle Abbildungs- und Tabellenverweise in Kapitel 2 bis 4 als *In
+   Abbildung X ist ... dargestellt* (Stilregel 10 auf Verweise angewandt).
+6. C6: Einheitensatz am Anfang von Kapitel 4 gestrichen, Einheit bei der
+   ersten Zahl ausgeschrieben.
+7. C7 (08.10.2026): In Kapitel 5 jeder Rückgriff auf ein Ergebnis mit
+   `Abschnitt~\ref{}` am belegten Satzglied, höchstens einer je Satz, 17
+   Stellen. Kapitel 6 ohne Verweise.
+8. C8: *abgerufene Arbeit* und *je abgerufener Megawattstunde* statt *bewegte
+   Arbeit*, fünf Stellen, Begriffsliste in `CLAUDE.md`.
+9. C9: Vier Absätze in 5.5 nach Absatzplan neu (Vergütungsformen, drei Wege,
+   Betrieb, Zweck), Längen nach Erklärungsbedarf gewichtet.
+10. C10: Gebotszonensplit in 5.5 in einem Satz erklärt, der Satz *Der Dispatch
+    der Energiemärkte entlastete das Netz dann von sich aus* entfällt.
+11. C11, **gegen die Empfehlung und gegen den Betreuer**: Der Betreuer wollte
+    *Sicherheit* als Zweck streichen (Ziel sei die Einsparung präventiven
+    Redispatch, Höherauslastung mache das System zunächst unsicherer). Der
+    Verfasser trennt zwei Anwendungen. (a) Geplante Höherauslastung, Ziel
+    Effizienz, Einwand des Betreuers gilt. (b) Absicherung gegen kurzfristige
+    Fahrplanänderungen nach der letzten Vorschaurechnung: Ein Betriebsmittel
+    verliert seine (N-1)-Reserve, kein präventives Instrument greift mehr,
+    die am Vortag vorsorglich eingeplante kurative Reservierung stellt die
+    (N-1)-Sicherheit wieder her, die Höherauslastung tritt erst im Fehlerfall
+    ein. Sicherheitsniveau in beiden Fällen (N-1), Unterschied in Anlass und
+    Zeitpunkt der Einplanung. *Fehlerfall* bleibt der Ausfall eines
+    Betriebsmittels, Auslöser ist die Fahrplanänderung. Zusatz: Die
+    Bedarfsermittlung nach 3.1.2 müsste dafür eine Marge für
+    Fahrplanänderungen enthalten. Umgesetzt im Schlussabsatz von 5.5 und in
+    Kapitel 6.
+12. C12: Kapitel 6 als Bericht der eigenen Leistung (*Die vorliegende Arbeit
+    hat ... entworfen*, Optimierungsmodell bei der ersten Nennung mit seiner
+    Funktion eingeführt, Absätze *Erstens* bis *Viertens*).
+13. C13: Das Verb *tragen* in übertragener Verwendung in Kapitel 5 und 6 an
+    rund 20 Stellen ersetzt (bestimmt, beeinflusst, hat, gilt, liefert,
+    genügen, heben), in Kapitel 4 nur an den vom Betreuer genannten Stellen.
+
+**Einwände und Ergänzungen des Verfassers vom 08.10.2026, mit eigenständigen
+Ableitungen.**
+
+- *Sperre nach § 13a EnWG.* Der ÜNB kann eine Anpassung auch vor der
+  Vermarktung anweisen und sperrt damit ein Leistungsband; die Festlegung
+  vergütet das nach Nummer 3 (Leistungsbereich mal Viertelstunden). Die alte
+  Aussage *Für die Vorhaltung besteht keine Vergütung* war deshalb zu
+  absolut. Eigenständige Ableitung: Eine Sperre nimmt dem Betreiber Leistung,
+  verschafft dem ÜNB aber keine Leistung auf Abruf, denn sie verpflichtet
+  nicht zu einer Leistungsänderung innerhalb einer Reaktionszeit und erfasst
+  den Ladezustand nicht. Unvergütet ist die Abrufbereitschaft, nämlich
+  Leistungsband, Ladezustandsband und Reaktion. Umgesetzt in 1.2 und 5.5
+  Absatz 1. Beleg: § 13a Abs. 1 EnWG und Nummer 3 der Festlegung, beide schon
+  zitiert.
+- *Flexible Netzanschlussvereinbarung.* Sie gehört zur Lösung, denn der
+  kurative Marktmechanismus bleibt freiwillig: Ein teilnehmender Speicher nimmt
+  keine Anschlusskapazität weg, bei einem nicht teilnehmenden greift die
+  Anschlussvereinbarung als Notfall; ihre unvergüteten Eingriffe schmälern die
+  Erlöse und könnten den Zubau hemmen. Betriebsvorgabe und Sicherheitsmarge
+  lösen das Problem ebenfalls, die Sicherheitsmarge ist ineffizient (dauerhaft
+  präventiver Redispatch), Vorgabe und Anschlussvereinbarung beeinträchtigen
+  die Erlösaussichten stärker als die vergütete Reservierung. Der Begriff
+  *Übergangslösung* ist aufgegeben. Anschlusskapazität gilt für Speicher,
+  Erzeugungsanlagen und Lasten. Umgesetzt in 5.5 Absatz 3 und Kapitel 6.
+- *Strukturelle gegen selbst verursachte Engpässe.* Ein Speicher kann
+  strukturelle Engpässe über Stunden nicht heilen, der Redispatch kann die
+  kurzfristigen Engpässe aus den Fahrplanänderungen des Speichers nicht
+  bewirtschaften; dort setzt die kurative Reservierung an. Umgesetzt in 5.4
+  und Kapitel 6.
+- *Netzausbau.* Die Behauptung, ein ausgebauter Übertragungsweg sei über seine
+  Länge einheitlich ausgelegt, war unbelegt. Belegbar schwächer in 5.5 und
+  Kapitel 6: Der Netzausbau verschiebt die begrenzenden Betriebsmittel an
+  andere Stellen des Netzes.
+- *Kapitel 6 Struktur.* Zusammenfassung (Einleitung, Erstens bis Viertens),
+  dann Ausblick in drei Absätzen (Rahmen, Instrumente im Konjunktiv, Bedarf)
+  und ein eigener Schlussabsatz. *Abschließend lässt sich sagen* entfernt.
+  Kapitelanfang neutral: präventive Einhaltung des (N-1)-Kriteriums, Kosten
+  2025 vorläufig 3,1 Milliarden Euro, ohne Zitat wie das übrige Kapitel
+  (Quelle in 1.1).
+- *1.3:* BESS als *beispielhaft betrachteter kurativer Akteur für die weiteren
+  Analysen*.
+- *Dezemberzahlen in 4.5* (5,8 und 9,9 €/(MW·h), Juni 6,4-fach, Oktober
+  3,7-fach) sind gegen den Jahreslauf nachgerechnet: Monatsmedian der
+  Tagesmittel der zweiten Iteration aus
+  `analysen/03_breakeven/jahreslauf/jahr_stunden_2025.parquet` (Spalten
+  `be_full_pos`, `be_full_neg`) im Modell-Repository, in keiner Abbildung
+  ablesbar; der Text nennt die Statistik jetzt.
+- *Optimalitätslücke* (L11, 30.09./07.10.2026): Der Code setzt `MIPGap = 0`
+  seit dem 12.09.2026 (Commit a3b53e0 im Modell-Repository) für die
+  Determinismus des Fülltests; 3.2.1 sagte 0,01 Prozent. Text und `MODELL.md`
+  berichtigt. Kosten gemessen: Wurzelknoten, 0,03 s gegen 0,02 s, gleicher
+  Zielwert.
+
+**Zurückgenommene Formulierungen.** Alle ersetzten Sätze stehen im Wortlaut
+in den Tabellen *Umgesetzt am 07.10.2026* und *Umgesetzt am 08.10.2026* in
+Anhang A sowie in Abschnitt 10 von Anhang B. Keine davon ist wieder
+aufzunehmen. Besonders: *Die Einplanung hängt deshalb an der Zeit ebenso wie
+am Engpassmuster im Netz.* (Kurzfassung, gestrichen für L1), *Der Abstand
+zwischen Median und arithmetischem Mittel misst diese Schieflage, nämlich das
+1,93-Fache in der Entlade- und das 2,47-Fache in der Laderichtung.* (4.3,
+Dopplung), *Am Ergebnis dieser Modellkette lässt sich das Produkt
+wirtschaftlich bewerten.* (5.5), *Die Opportunität des Speichers lässt sich
+deshalb je Maßnahme nicht verlässlich bemessen.* (5.4), *Die Vorhaltung kann
+er dagegen nicht anordnen, denn der Betreiber entscheidet im dezentralen
+Dispatch-Modell über den Einsatz seiner Anlage selbst.* (1.2).
+
+**Nicht umgesetzt.** J29 (Ursache des Kohleausstiegs, InnoSys 2030 trägt die
+Kostenlogik nicht), J43 (KuPilot-Beleg, Scan ohne Text), K120 (Satz nicht
+mehr im Text), die strukturellen Kommentare der Freunde (Anhang B,
+Abschnitt 9.3, zurückgestellt), N43 als Bildunterschrift (stattdessen ein Satz
+im Text vor Abbildung 4.7, weil die Unterschriften die Seite kippten).
+
+**Abbildung 4.6.** Legende im Analyse-Repository
+(`analysen/code/schrift/17_kapitel4/jahreslauf_reservierungspreis_redispatch.py`)
+auf *kurativer Reservierungspreis, arithmetisches Mittel der 24 Stunden je
+Tag* geändert, Abbildung und Medianfassung für Anhang E neu erzeugt und nach
+`figures/chapter_4/` kopiert.
+
+**Endprüfung am 08.10.2026, Abgabe am 09.10.2026.** Sauberer Build von null mit biber: keine undefinierten Verweise oder Zitate, keine Warnungen, 55 Literatureinträge, Prüfsuite ohne Befund. Behoben: ein Satz am Dateiende von 5.5 ohne Zeilenumbruch, der K120 entsprach und C11 widersprach (*Die freie Kapazität verteilt sich damit über viele Netzknoten, sodass der Übergang von der Sicherheits- zur Effizienzmaßnahme ein Entwicklungspfad über ein gleichmäßiger belastbares Netz ist und kein Zustand.*, gestrichen, nicht wieder aufzunehmen); einmalige Bezeichnungen vereinheitlicht (*Händler* zu *Akteur*, *Lieferslots* zu *Lieferstunden*, *Erlösaussichten* zu *Erlösmöglichkeiten*, *Vorgabe für den Betrieb* zu *Betriebsvorgabe*, *Abrufbereitschaft* zu *Bereitschaft zum Abruf*, *Anschlussregeln* zu *Netzanschlussvereinbarungen ... ohne kurative Einbindung*, *Netzkapazität* zu *Übertragungskapazität*, Kurzfassung *in ihren schnellen Reaktionszeitklassen*); ungenutzte Abkürzungen LODF und PTDF aus dem Verzeichnis entfernt; zwei Tabellen in Anhang A um 6 und 12 pt zu breit (letzte Spalte um einen beziehungsweise zwei `	abcolsep` schmaler); Literatureintrag Weber mit Trennstellen `"=` im Titel; `arDate` auf den 9. Oktober 2026; ein Satz in 5.5 Absatz 4 für die Seitenbilanz gestrichen (*Die Überwachung des Netzzustands und die Steuerbarkeit der Anlagen sind dafür Voraussetzung und damit auch eine Hürde.*). Die Eidesstattliche Versicherung bleibt als Seite ii, seit 01.10.2026 ersetzt die Checkbox in DivA sie. Kein RWTH-Logo auf dem Titelblatt, kein Antrag nötig. Stand: 129 Seiten, Kapitelanfänge 6, 30, 49, 65, 77, 81.
+
+**Werkzeuge.** Am 08.10.2026 aus `tools/` gelöscht, weil ohne Gegenstand: `drawio2pdf.py`, `drawio_edit.py`, `drawio_restyle.py`, `svg2pdf.py`, `svg_thesis_style.py` (es gibt keine SVG- oder draw.io-Quellen mehr, alle 36 Abbildungen entstehen als PDF im Modell-Repository unter `analysen/code/schrift/`), `replot_figures.py` (dorthin übernommen), `extract_alle.py` und `kap3_durchsicht_lib.py` (Durchsicht Kapitel 1 bis 3, abgeschlossen am 15.09.2026) und `pruefe_stil.py` (in `pruefen.py` Prüfung 2 enthalten). Es bleiben `pruefen.py`, `quellencheck.py` mit `quellen_map.tsv` und `quellencheck_jobs.tsv`, `absatzlaengen.py` als Auskunft und `check_figure_collisions.py`.
+
+**Stand nach den Commits 31a26f3, 8b0cdee, 9376f3f, 5e4e400.** Build 129
+Seiten, Kapitelanfänge 6, 49, 65, 77, 81, Prüfsuite ohne Befund in 15
+Dateien. Seite 5 (Ende Kapitel 1) und Seite 76 (Ende Kapitel 5) sind bis zur
+letzten Zeile voll; jede Ergänzung dort braucht einen Ausgleich an derselben
+Stelle.
+
+### Je Datei
+
+- `chapters/chapter_1.tex`: Freunde Stufe A (J2, J4, J8, J10, J12, J18/J26,
+  L5/L6/J15, L7, L9, L10) und B (L8, J3/J9, J5); 1.2 Sperre nach § 13a; 1.3
+  BESS beispielhaft.
+- `chapters/chapter_2.tex`: Freunde Stufe A (J23, J33, J35 bis J39, J42, J44
+  bis J46, J49 nach 3.2.1) und B (J24, J25); C5 vier Verweise; C8
+  *abgerufener Megawattstunde*; K148 Verweis auf Anhang A beim
+  Berechnungsbeispiel.
+- `chapters/chapter_3.tex`: L11 Optimalitätslücke, L13, J49; N8 Spread
+  definiert (*die Preisspannen eines Tages*); C5 drei Verweise; N46
+  Sensitivitäten und Zukunftsvariante in 3.2.4 benannt.
+- `chapters/chapter_4.tex`: Betreuer N2 bis N47 (Stufe A und B), C1 bis C6,
+  L14, L17; Seitenbilanz; Whisker-Satz vor Abbildung 4.7; Anhang E
+  referenziert.
+- `chapters/chapter_5.tex`: N48 bis N56; K58 bis K121 (Stufe A und B, C7 bis
+  C11, C13); vier Absätze in 5.5 neu; Einwände des Verfassers; Seitenbilanz.
+- `chapters/chapter_6.tex`: K122 bis K147, C11 bis C13, Review des Verfassers
+  in zwei Durchgängen; L19.
+- `extras/abstract.tex`: L1, L19, K140 (*in ihren schnellen Klassen*),
+  Abstract neu (C2).
+- `extras/attachment_preisgitter.tex`: L14, C3.
+- `CLAUDE.md`: Begriff *abgerufene Arbeit*; am 08.10.2026 auf den neuen
+  Dateibestand angepasst.
+- Modell-Repository: `MODELL.md` zur Optimalitätslücke, Legende Abbildung 4.6.
+
+
+
+### Anhang A, Kommentardatei des Betreuers (KOMMENTARE_BETREUER_KAP4_5.md, Stand 08.10.2026)
+
+Übernommen am 08.10.2026, Überschriften um drei Stufen abgesenkt, leere Entscheidungsspalten mit dem Stand vom 08.10.2026 gefüllt.
+
+#### Betreuerkommentare zu Kurzfassung, Kapitel 4 bis 6 und Anhang, übermittelt am 07. und 08.10.2026
+
+Erster Schwung (N1 bis N56, Abstract, Kapitel 4, 5.1) ab hier, zweiter Schwung (K58 bis K149, 5.2 bis 5.5, Kapitel 6, Anhang) im Abschnitt *Zweiter Schwung* am Ende der Datei.
+
+Der Verfasser hat die Kommentare im Wortlaut aus dem Chat übernommen. Die
+Seitenzahlen des Betreuers sind PDF-Seiten, also Druckseite plus neun Seiten
+Vorspann, und passen zum Build vom 28.09.2026. Jede Stelle ist gegen die
+Kapiteldatei geprüft, alle 56 Stellen stehen noch unverändert im Text.
+
+Kennung N1 bis N56 in der Reihenfolge des Betreuers. Die Spalte *Entscheidung*
+bleibt leer.
+
+**Zwei Randbedingungen des Verfassers für die Einarbeitung.** Die Formatierung
+bleibt unangetastet, und die Kapitel behalten ihre Länge. Deshalb trägt jede
+Zeile die Spalte *Länge*: ±0 heißt Wortersatz ohne Zeilengewinn, +n heißt, der
+Vorschlag kostet etwa n Zeilen und braucht an anderer Stelle einen Ausgleich.
+
+##### Entscheidungsworkflow, vereinbart am 07.10.2026
+
+Ziel: so wenig Rückfragen wie möglich, aber jede Entscheidung mit Gewicht
+bleibt beim Verfasser. Vier Runden, je Runde eine Antwort des Verfassers.
+
+1. **Runde 1, Grundsatzentscheidungen C1 bis C6.** Claude stellt jede Frage
+   mit Empfehlung und Vorgabewert. Der Verfasser antwortet nur, wo er von der
+   Empfehlung abweicht, etwa *C1 b, C5 nur Kapitel 4*. Ein *passt* oder keine
+   Nennung heißt Empfehlung.
+2. **Runde 2, Stufe A ohne Rückfrage.** Claude setzt alle A-Stellen nach den
+   Entscheidungen aus Runde 1 um, je Kapitel ein Durchgang mit Prüfsuite,
+   Build und Seitenzahlvergleich gegen `54048c6`. Der Verfasser sieht eine
+   Tabelle Alt gegen Neu und den Diff. Er nennt nur, was zurück soll.
+3. **Runde 3, Stufe B im Widerspruchsverfahren.** Claude legt den Wortlaut
+   je Stelle vor, mit Vor- und Folgesatz, in Paketen je Abschnitt. Der
+   Verfasser nennt nur die Nummern, die er ablehnt oder anders will, mit
+   einem Stichwort. Nach seiner Antwort geht das Paket in die Datei. Stellen
+   mit Inhalt, die eine Zahl oder einen Beleg brauchen, sind mit **wichtig**
+   markiert und werden einzeln erklärt.
+4. **Runde 4, Archivierung.** Je Kapitel ein Protokolleintrag nach
+   `CLAUDE.md` Abschnitt 9 mit den getroffenen Entscheidungen, den
+   zurückgenommenen Formulierungen im Wortlaut und den eigenständigen
+   Ableitungen. Danach wandern `KOMMENTARE_FREUNDE.md` und diese Datei
+   nach `archiv/`, `HANDOFF.md` wird nachgezogen. Commit erst auf das Wort
+   *commite*.
+
+Die Spalte *Entscheidung* in dieser Datei und in `KOMMENTARE_FREUNDE.md`
+trägt am Ende je Stelle *umgesetzt*, *zurückgestellt* oder *abgelehnt* mit
+Datum, damit das Protokoll daraus geschrieben werden kann.
+
+---
+
+##### Die drei Stufen
+
+| Stufe | Bedeutung | Anzahl |
+|---|---|---|
+| **A** | Automatisch durchführbar. Wortersatz, Verweis, Umstellung ohne neue Aussage. Claude setzt um, Prüfsuite, Verfasser sieht das Ergebnis im Diff. | 35 |
+| **B** | Vorschlag, dann Freigabe. Ein neuer oder umgebauter Satz mit Inhalt, den der Verfasser abnicken muss, bevor er in die Datei geht. Claude legt den Wortlaut vor. | 17 |
+| **C** | Grundlegende Entscheidung. Betrifft eine Regel, mehrere Stellen zugleich oder die Länge. | 6 |
+
+---
+
+##### Stufe A, automatisch durchführbar
+
+| Nr. | Stelle | Kommentar des Betreuers | Umsetzung | Länge | Entscheidung |
+|---|---|---|---|---|---|
+| N2 | 4, `chapter_4.tex:6` | *Zu Anfang* – Anfang von was? Kapitel 4.1 nennen, auch in den folgenden Sätzen die Kapitel benennen. | Die vier Sätze der Kapitelübersicht erhalten je einen `\ref` auf 4.1 bis 4.6, in der Form *in Abschnitt 4.1 wird dargestellt*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N3 | 4, `chapter_4.tex:9` | Sensitivitäten prüfen nicht selbst. | *Zuletzt wird mit drei Sensitivitäten geprüft, wie stark …* Deckt sich mit Stilregel 10. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N4 | 4, `chapter_4.tex:11` | Einheitensatz hat keinen Mehrwert. | Satz streichen. Deckt sich mit `CLAUDE.md` Abschnitt 8, jede Größe trägt ihre Einheit einzeln. Die Makros `\EurMWh` und `\TsdEurMWa` bleiben. | −2 | umgesetzt 07.10.2026, Runde 2 |
+| N6 | 4.1, `chapter_4.tex:17` | *gerechnet* – berechnet, bestimmt? | *optimiert* oder *mit dem Tagesmodell gelöst*, denn es sind Läufe des Optimierungsmodells. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N8 | 4.1, `chapter_4.tex:18` | *größten Spread* – welcher Spread? Muss überall klar sein. | *Spread* ist nirgends definiert, Erstnennung in 3.2.1. Bei der Erstnennung einmal erklären als *Preisspanne zwischen günstigstem Bezug und teuerstem Absatz eines Tages*, danach bleibt das Wort. | +1 in 3.2.1 | umgesetzt 07.10.2026, Runde 2 |
+| N9 | 4.1, `chapter_4.tex:19` | *tritt daneben* – was ist gemeint? | *Der 06.05.2025 ergänzt die vier Tage, weil …* Luca hat dieselbe Stelle angemerkt (L16 in `KOMMENTARE_FREUNDE.md`). | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N11 | 4.1, `chapter_4.tex:24` | *weicht* – wovor? | *wird der DA erwartungsgemäß als letzter Markt verdrängt*. Das Verb *weichen* steht in 4.1 dreimal, alle drei Stellen gleich ersetzen. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N12 | 4.1, `chapter_4.tex:25` | *verschwunden* – wohin? | *Der IDC ist an diesem Tag bei 100 €/(MW·h) vollständig verdrängt*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N13 | 4.1, `chapter_4.tex:28` | *halten* – was bedeutet das? | *Der DA und der IDC bleiben dort bis zu höheren Preisen belegt als die aFRR-Leistung*. Das Verb *halten* steht in 4.1 noch in Zeile 39, gleich ersetzen. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N15 | 4.1, `chapter_4.tex:32` | *lösen* und *belegt* – was bedeuten sie? | *Am 15.05.2025 lässt sich die aFRR-Leistung kaum verdrängen, denn sie bleibt auch beim höchsten gerechneten Preis vorgehalten*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N17 | 4.2, `chapter_4.tex:45` | Auf welcher Basis? Verweis oder Erklärung. | Verweis auf den Jahreslauf nach Abschnitt 3.2.4 und Abbildung 3.4, nämlich *Aus dem Jahreslauf über alle Tage des Jahres 2025, wie in Abschnitt 3.2.4 beschrieben, …* | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N19 | 4.2, `chapter_4.tex:67` | *offen lässt* – was heißt das? | *nicht voll reserviert*, der Begriff steht so in 3.2.4. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N20 | 4.2, `chapter_4.tex:67` | Füllgrad hier nochmal kurz erklären. | Einschub mit *also*: *der Füllgrad, also der Anteil der reservierten an der reservierbaren Leistung*. Wortlaut aus `chapter_3.tex:332`. | +1 | umgesetzt 07.10.2026, Runde 2 |
+| N21 | 4.2, `chapter_4.tex:68` | *des Tages* klingt nach einem bestimmten Tag. | *über die 24 Tagesstunden, gemittelt über alle Tage des Jahres 2025*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N22 | 4.2, `chapter_4.tex:69` | Zweite Iteration voll reserviert – wo zu sehen? | Nicht abgebildet, folgt aus dem Abbruchkriterium der zweiten Iteration. Halbsatz: *was das Abbruchkriterium der zweiten Iteration nach Abschnitt 3.2.4 sicherstellt*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N23 | 4.2, `chapter_4.tex:91` | *lässt der Bezugsanlage 88,6 …* unverständlich. | *Unter der ersten Iteration behält die Bezugsanlage 88,6 Tsd. €/(MW·a) aus den übrigen Märkten, und der ÜNB zahlt dennoch nur 10,2 Tsd. €/(MW·a) weniger als unter der zweiten*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N25 | 4.3, `chapter_4.tex:98` | Ist das der Preis für 100 Prozent Verdrängung? Ab und zu wiederholen. | Einschub: *also der Preis der vollen Reservierung nach Abschnitt 3.2.4*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N26 | 4.3, `chapter_4.tex:98` | Wie kann ein Preis etwas messen? | *denn er gibt die Opportunität genau dieser Stunde wieder*. Das Verb *misst* steht für den Preis auch in 4.6 Zeile 236, gleich ersetzen. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N28 | 4.3, `chapter_4.tex:115` | 99-Prozent-Quantil, 88 Stunden ist 1 Prozent, nicht überraschend. | Satz auf die Aussage kürzen, die trägt: *Das 99-Prozent-Quantil liegt bei 173 und 161 €/(MW·h), das Maximum nochmals um den Faktor 5,8 beziehungsweise 3,2 darüber*. | −1 | umgesetzt 07.10.2026, Runde 2 |
+| N29 | 4.3, `chapter_4.tex:125` | Ein anderer Markt – welcher? | Markt im Satz nennen: *setzt der IDC den Preis und nicht die aFRR-Leistung*. Steht im Folgesatz, wird vorgezogen. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N31 | 4.4, `chapter_4.tex:145` | *knickt* – was heißt das? | *Die Farbskala ist zweigeteilt, linear von null bis 10 €/(MW·h) und darüber linear bis zum 99-Prozent-Quantil*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N32 | 4.4, `chapter_4.tex:146` | Welches Feld? | *je Teilbild*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N33 | 4.4, `chapter_4.tex:166` | Warum genau jeder 20. Tag? | Es ist das 5-Prozent-Quantil: *An den fünf Prozent der Tage mit den kleinsten Ersatzspannen bleiben …* | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N35 | 4.5, `chapter_4.tex:212` | *Abbildung 4.6 stellt* – besser *In Abbildung 4.6 ist dargestellt*. | So umstellen. Dieselbe Form in Zeile 68 (Abbildung 4.2 *trägt auf*), 276 (N44) und bei allen Abbildungsverweisen in Kapitel 4, siehe C5. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N36 | 4.5, `chapter_4.tex:215` | *Beide Größen* – welche? | *Der Arbeitspreis des Redispatch und der kurative Reservierungspreis sind dimensionsgleich …* | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N38 | 4.5, `chapter_4.tex:219` | *Sommer* zu ungenau. | Zeitraum nennen, wie in 4.4 definiert: *von Mai bis August*. Der Text definiert Sommer und Winter in `chapter_4.tex:185`, in 4.5 fehlt die Wiederholung. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N41 | 4.5, `chapter_4.tex:229` | Warum wird der Sommer hervorgehoben? | Begründung anhängen: *weil der Sommer die teuerste Jahreszeit der Reservierung ist*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N42 | 4.6, `chapter_4.tex:237` | *In drei der folgenden Abschnitten wird geprüft*. | So umstellen. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N44 | 4.6.1, `chapter_4.tex:276` | *Abbildung 4.8 variiert* – anders formulieren. | *In Abbildung 4.8 ist die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis variiert*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N48 | 5, `chapter_5.tex:4` | *In den vorangegangenen Kapiteln*. | So umstellen, Stilregel 10. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N49 | 5, `chapter_5.tex:5` | *ob der Entwurf trägt* unüblich. | *ob der Entwurf die Anforderungen erfüllt*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N50 | 5, `chapter_5.tex:6` | Kapitel 5.1 usw. nennen. | Die fünf Sätze der Kapitelübersicht erhalten je einen `\ref` auf 5.1 bis 5.5, wie N2. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N51 | 5.1, `chapter_5.tex:21` | *hängt am Kreis der Technologien*. | *hängt davon ab, welche Technologien ein Potenzial für die kurative Systemführung tragen*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N52 | 5.1, `chapter_5.tex:41` | *geschnitten* – gemeint ist zugeschnitten. | *auf Speicher zugeschnitten wirken*. Gleiche Wendung in `chapter_6.tex:23`, *das Produkt schneidet*, dort *zuschneidet*. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+| N55 | 5.1, `chapter_5.tex:100` | Das Produkt wählt nicht selbst aus. | *Je schärfer die Anforderungen die Anbieter auswählen …* Gleiche Stelle in `chapter_6.tex:23`. | ±0 | umgesetzt 07.10.2026, Runde 2 |
+
+---
+
+##### Stufe B, Vorschlag und Freigabe
+
+| Nr. | Stelle | Kommentar des Betreuers | Was vorzulegen ist | Länge | Entscheidung |
+|---|---|---|---|---|---|
+| N1 | Abstract, `extras/abstract.tex:3` bis `25` | Liest sich deutsch-englisch, mit englischem Auge drüber. | Neufassung des englischen Abstracts, Satz für Satz neben dem alten. Die Kurzfassung bleibt. | ±0 | umgesetzt 07.10.2026 über C2 |
+| N5 | 4.1, `chapter_4.tex:16` | Mehr Kontext, worum es im Kapitel geht. | Ein Überleitungssatz vor Zeile 16, der 4.1 als Vorstufe zum Jahreslauf einordnet, nämlich dass fünf Beispieltage zeigen, in welcher Reihenfolge die Märkte weichen, bevor 4.2 das Jahr auswertet. Stilregel 3. | +2 | umgesetzt 08.10.2026 |
+| N14 | 4.1, durchgehend | *fünf Tage* – bessere Fachsprache, etwa gewählte Stichproben oder Beobachtungszeitraum. | Begriffsentscheidung für Kapitel 4 und Anhang F. Vorschlag *fünf Beispieltage*, einmal in Zeile 17 eingeführt, danach konstant, Stilregel 14. *Stichprobe* passt nicht, weil die Tage nicht zufällig gewählt sind, und *Beobachtungszeitraum* ist das Jahr 2025. Zwölf Stellen. | ±0 | umgesetzt 07.10.2026 über C3 |
+| N18 | 4.2, `chapter_4.tex:59` | Vorschlag *Mit der Modellierung …* | Umbau des Absatzanfangs, damit der Satz nicht die Iteration handeln lässt: *Unter den Preisen der ersten Iteration bleibt die Leistung nicht vollständig gebunden, und der ÜNB zahlt dennoch beinahe den vollen Preis*. | ±0 | umgesetzt 08.10.2026 |
+| N24 | 4.2, `chapter_4.tex:89` bis `93` | Argumentation unklar. Müssten die gelben Balken in Abbildung 4.1 nicht näher am Markterlös ohne kurative Bindung liegen? | Die Antwort steht in 3.2.4, fehlt aber hier: Der Vollreservierungspreis stellt nur die zuletzt reservierte Leistung indifferent, die übrige reservierte Leistung trägt mehr als ihre Opportunitätskosten, deshalb liegt die Zahlung um 23,3 Prozent über dem Referenzerlös. Ein Satz mit Verweis auf 3.2.4 in den Schlussabsatz, und der Absatz wird so umgebaut, dass er mit diesem Grund beginnt. | +2 | umgesetzt 08.10.2026 |
+| N27 | 4.3, `chapter_4.tex:101` und durchgehend | Quelle an der Stelle. Falls Simulationsergebnis, klarer machen. *Jahr 2025* wirkt wie historische Daten. | Formulierungskonvention für Kapitel 4: bei der ersten Zahl jedes Abschnitts *nach dem Jahreslauf des Optimierungsmodells mit den Preisen des Jahres 2025*, danach *im Jahreslauf*. Betrifft 4.2 bis 4.6, etwa zehn Stellen und die Bildunterschriften *über das Jahr 2025*. Siehe auch C6. | +1 je Abschnitt | umgesetzt 07.10.2026 über C4 |
+| N30 | 4.3, `chapter_4.tex:130` | Warum übersteigt der Preis den höchsten Marktpreis derselben Stunde überhaupt? | Begründung: die Reservierung bindet auch das Ladezustandsband, das die Arbitrage der Nachbarstunden braucht, und der zweite Iterationsschritt hält alle Stunden zugleich voll. Ein Satz, der auf die Zeitkopplung in 3.2.4 verweist. Für die Laderichtung sagt der Text schon *Ursache nicht geprüft*. | +1 | umgesetzt 08.10.2026 |
+| N37 | 4.5, `chapter_4.tex:216` | 5,8 und 9,9 €/(MW·h) im Dezember – wo zu sehen? Minimum oder Monatswert, Datum nennen oder markieren. | Es ist das Monatsmittel der Tagesmittel, nicht ein Tag. Satz: *Im Monatsmittel sind beide Richtungen im Dezember am günstigsten …* Die Zahl ist in Abbildung 4.6 nicht ablesbar, aber in Abbildung 4.5 rechts. Verweis dorthin. Gegen die Daten prüfen, bevor es steht. | ±0 | umgesetzt 08.10.2026 |
+| N43 | 4.6.1, Abbildungen 4.7 bis 4.10 | Was bedeuten die grauen Zahlen über den Balken? | Es sind die Maxima, die über die Achse hinausragen. Die Bildunterschrift von 4.7 sagt es, 4.8 bis 4.10 nicht. Entweder Satz in alle vier Unterschriften oder ein Satz im Text vor 4.7. Hängt mit C2 in `KOMMENTARE_FREUNDE.md` zusammen. | +1 je Unterschrift | umgesetzt 08.10.2026 |
+| N45 | 4.6.1, `chapter_4.tex:273` | Maximum 1008 auf 4687 – wo sieht man das? | Verweis auf die grauen Zahlen in Abbildung 4.7, setzt N43 voraus. | ±0 | umgesetzt 07.10.2026 in Runde 2, Verweis auf die Whisker in Abbildung 4.7 |
+| N46 | 4.6.4, `chapter_4.tex:364` | Ist das Zukunftsszenario irgendwo genauer definiert? | Nein, allein in 4.6.4 mit den 80 Prozent. Vorschlag: ein Satz in 4.6 Einleitung oder in 3.2.4, der die Zukunftsvariante als vierte Studie benennt, und in 4.6.4 der Hinweis *allein hier definiert*. Keine Prognose, das sagt der Text. | +1 | umgesetzt 08.10.2026 |
+| N47 | 4.6.4, `chapter_4.tex:379` | Markterlös sinkt um 17 Prozent – warum? Auch oben mehr erklären, oder kommt das in Kapitel 5? | Die Begründung steht in den drei Folgesätzen, nämlich Abschlag trifft aFRR und IDC, Ausweichen in DA und FCR. Umbau: Grund in den ersten Satz, Zahl dahinter. 5.4 greift es auf. | ±0 | umgesetzt 08.10.2026 |
+| N53 | 5.1, `chapter_5.tex:44` | Warum kann der ÜNB ohne knotenscharfe Gebote keine Maßnahme einplanen? | Begründungssatz: weil die Entlastung eines Betriebsmittels von der Sensitivität des Netzknotens abhängt, Anforderung A3, und der ÜNB die Maßnahme in der Netzsicherheitsrechnung je Knoten prüft. | +1 | umgesetzt 08.10.2026 |
+| N54 | 5.1, `chapter_5.tex:83` | *steuert die beschaffte Menge* – wie, über den Preis? | Über die Menge, nicht den Preis: Der ÜNB beschafft den Bedarf aus seiner Redispatchplanung und schreibt keine Mindestmenge aus, 3.1.2. Ein Halbsatz. Dieselbe Wendung in `chapter_5.tex:303`. | ±0 | umgesetzt 08.10.2026 |
+| N56 | 5.1, `chapter_5.tex:98` | Welche acht, welche sieben? | *A1 bis A7 bestimmen den Zuschnitt des Produkts, A8, die Umsetzbarkeit, …* Die Anforderungen tragen in 3.1.1 Kennungen, die 5.1 nicht nutzt. Entscheiden, ob 5.1 durchgehend die Kennungen nennt. | ±0 | umgesetzt 07.10.2026, A1 bis A7 und A8 im Schlusssatz, Kennungen je Erstnennung in Runde 3 |
+| N10 | 4.1, `chapter_4.tex:23` | *fällt Folgendes auf* – komisch. | Hängt an C1. Wenn keine Liste: *Im Vergleich der fünf Beispieltage zeigt sich zuerst der 20.01.2025 …*, also Satz streichen und den Folgesatz anbinden. | −1 | umgesetzt 07.10.2026 über C1a |
+| N39 | 4.5, Abbildung 4.6, Legende | *arithmetisches Mittel der Stunden des Tages* – von was? | Legende im Abbildungsskript ändern auf *kurativer Reservierungspreis, arithmetisches Mittel der 24 Stunden je Tag*. Liegt im Analyse-Repository, Abbildung neu erzeugen. | ±0 | umgesetzt 08.10.2026 |
+
+---
+
+##### Stufe C, grundlegende Entscheidung
+
+| Nr. | Stellen | Kommentar des Betreuers | Worum es geht | Länge | Entscheidung |
+|---|---|---|---|---|---|
+| C1 | N7, N16, N34, N40 und `chapter_4.tex:36`, `89`, `195`, `228`, `395` | Doppelpunkt und Auflistung oder Nummerierung bei *vier Punkten*, *vier Aussagen*, *dreierlei*; Liste der fünf Tage. | Fünf Schlussabsätze in Kapitel 4 sind als Fließtext mit Ankündigungssatz gebaut, dazu die Tagesliste in 4.1. Der Betreuer will Listen. Dagegen stehen Stilregel 16 (Doppelpunkt sparsam) und die Länge, denn jede Liste kostet drei bis fünf Zeilen, sechs Listen also etwa eine halbe Seite in Kapitel 4. Luca hat an Zeile 23 denselben Anstoß genommen (L15). Entscheidung: alle sechs Stellen als Liste, nur die Tagesliste, oder keine. Die Ankündigungssätze selbst werden in jedem Fall nach N10 umgebaut. | +15 bis +25 bei allen sechs | umgesetzt 07.10.2026, Variante a: nur die Tagesliste bleibt Fließtext, Ankündigungssätze umgebaut (C1a) |
+| C2 | N1 | Englischer Abstract. | Keine Regelfrage, aber eine Entscheidung über das Verfahren: Neufassung durch Claude mit Freigabe je Satz, oder der Verfasser lässt einen Muttersprachler lesen. Steht hier, weil der Abstract vor der Abgabe nicht mehr vom Betreuer gelesen wird. | ±0 | umgesetzt 07.10.2026, drei Agentenfassungen, eingebaut Variante 2 mit SOGL-Begriffen aus Variante 3 |
+| C3 | N14 | Fachbegriff für die fünf Tage. | Begriffsentscheidung, die in `CLAUDE.md` Abschnitt 5 einzutragen ist. Vorschlag *Beispieltage*. | ±0 | umgesetzt 07.10.2026, *Beispieltage* |
+| C4 | N27 | Kennzeichnung der Simulationsergebnisse. | Konvention für Kapitel 4, wie oft und mit welcher Wendung der Text sagt, dass eine Zahl aus dem Jahreslauf stammt. Betrifft auch die Bildunterschriften *über das Jahr 2025* und die Frage, ob *2025* als Preisjahr der Eingangsdaten jedes Mal dazugehört. | +1 je Abschnitt | umgesetzt 07.10.2026, einmal je Abschnitt *im Jahreslauf des Optimierungsmodells* |
+| C5 | N35, N44, N42, N48 | Abbildungen und Abschnitte handeln nicht. | Der Betreuer wendet Stilregel 10 auf Abbildungsverweise an. Der Text sagt an rund 20 Stellen in Kapitel 3 bis 5 *Abbildung X zeigt*, *trägt auf*, *stellt gegenüber*, *variiert*. Entscheidung, ob die Regel für Abbildungsverweise durchgängig gilt, dann alle Stellen in einem Durchgang, oder nur die vier genannten. `CLAUDE.md` lässt Sachverweise auf Abbildungen zu, sagt zum Verb nichts. | ±0 | umgesetzt 07.10.2026, alle Abbildungs- und Tabellenverweise in Kapitel 2 bis 4 |
+| C6 | N4 | Einheitensatz am Kapitelanfang. | Streichung ist Stufe A, aber die Makros `\EurMWh` und `\TsdEurMWa` sind dort eingeführt. Wenn der Satz fällt, muss die Einheit bei der ersten Zahl in 4.1 einmal ausgeschrieben stehen, Abschnitt 8 in `CLAUDE.md`. | −2 | umgesetzt 07.10.2026, Einheit bei der ersten Zahl ausgeschrieben |
+
+---
+
+##### Zuordnung der Kennungen zur Reihenfolge des Betreuers
+
+| Abschnitt | Kennungen |
+|---|---|
+| Abstract | N1 |
+| 4 Einleitung | N2, N3, N4 |
+| 4.1 | N5 bis N16, davon N7 (Liste der Tage) und N16 (vier Punkte) unter C1 |
+| 4.2 | N17 bis N24 |
+| 4.3 | N25 bis N30 |
+| 4.4 | N31 bis N34, davon N34 (vier Aussagen) unter C1 |
+| 4.5 | N35 bis N41, davon N40 (dreierlei) unter C1 |
+| 4.6 | N42 |
+| 4.6.1 | N43, N44, N45 |
+| 4.6.4 | N46, N47 |
+| 5 Einleitung | N48, N49, N50 |
+| 5.1 | N51 bis N56 |
+
+Damit sind alle 56 Kommentare zugeordnet, 35 unter A, 17 unter B und 4 allein
+unter C1.
+
+##### Reihenfolge der Einarbeitung
+
+1. Entscheidungen C1 bis C6 vom Verfasser, denn C1, C4 und C5 bestimmen, wie
+   ein Dutzend Stellen der Stufen A und B aussehen.
+2. Stufe A in einem Durchgang je Kapitel, Prüfsuite, Build, Seitenzahl je
+   Kapitel gegen den Stand vom 28.09.2026 prüfen.
+3. Stufe B als Wortlaut je Absatz nach `WORKFLOW.md` Abschnitt 10, mit
+   Vor- und Folgeabsatz, Freigabe, dann Einbau.
+4. Längenbilanz am Ende: Streichungen aus N4, N11, N29 gegen die Zugänge aus
+   N6, N21, N25, N31, N47, N54 und C1.
+
+##### Umgesetzt am 07.10.2026, Runde 2 (Stufe A, C1a, C3 bis C6)
+
+Stand nach Build: 129 Seiten, Ergebnisse ab S. 49, Diskussion ab S. 65, Zusammenfassung ab S. 77, Literaturverzeichnis ab S. 81, wie im Commit 54048c6. Prüfsuite ohne Befund in den Kapiteln. In `extras/abstract.tex` meldet Prüfung 7 das ausgeschriebene Batteriespeichersystem der Kurzfassung, das ist die am 07.10.2026 freigegebene Änderung L1 und bleibt.
+
+Die Spalte Entscheidung bleibt leer, bis der Verfasser widerspricht. Was er nicht nennt, gilt als angenommen (Workflow Runde 2). Spalte Nr. verweist auf die Kennungen aus den Stufen A und C. Zeichen ¶ steht für einen Zeilenumbruch, also eine Satzgrenze.
+
+| # | Nr. | Kap. | Alt | Neu | Entscheidung |
+|---|---|---|---|---|---|
+| 1 | N2 | 4 | Zu Anfang ist deshalb zu verstehen, wie ein höherer vorgegebener Reservierungspreis auf den Dispatch wirkt. | In Abschnitt [sec:dispatch_displacement] wird deshalb zuerst dargestellt, wie ein höherer vorgegebener Reservierungspreis auf den Dispatch wirkt. | angenommen 08.10.2026 |
+| 2 | N2 | 4 | Darauf folgen die Erlöswirkung der Reservierung sowie Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025. | In den Abschnitten [sec:iteration_prices] bis [sec:price_pattern] folgen Erlöswirkung, Höhe, Streuung und zeitliches Muster des kurativen Reservierungspreises im Jahr 2025. (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 3 | N2 | 4 | Anschließend ist der kurative Reservierungspreis zeitlich gegen das Engpassmanagement zu halten, nämlich gegen dessen Volumen und gegen dessen Kosten. | In Abschnitt [sec:price_vs_redispatch] wird der kurative Reservierungspreis zeitlich gegen das Engpassmanagement gehalten, nämlich gegen Volumen und Kosten. (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 4 | N2, N3 | 4 | Zuletzt prüfen drei Sensitivitäten, wie stark die Annahmen über die einzelnen Märkte den Preis tragen. | In Abschnitt [sec:sensitivities] wird mit drei Sensitivitäten geprüft, wie stark die Annahmen über die einzelnen Märkte den Preis tragen. | angenommen 08.10.2026 |
+| 5 | N4, C6 | 4 | ¶ Alle kurativen Reservierungspreise dieses Kapitels stehen in Euro je Megawatt und Stunde (€/(MW·h)), alle Erlöse in Tausend Euro je Megawatt und Jahr (Tsd. €/(MW·a)). | (gestrichen) | angenommen 08.10.2026 |
+| 6 | N6, C3, C6 | 4 | Dafür ist der Speicherbetrieb an fünf Tagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen 0 und 200 €/(MW·h) gerechnet, | Dafür ist der Speicherbetrieb an fünf Beispieltagen des Jahres 2025 unter zehn vorgegebenen kurativen Reservierungspreisen zwischen 0 und 200 Euro je Megawatt und Stunde (€/(MW·h)) optimiert, | angenommen 08.10.2026 |
+| 7 | C3 | 4 | Die fünf Tage decken je ein Extrem | Die fünf Beispieltage decken je ein Extrem | angenommen 08.10.2026 |
+| 8 | N8, C3 | 4 | Der 06.05.2025 tritt daneben, weil | Der 06.05.2025 ergänzt die vier Beispieltage, weil | angenommen 08.10.2026 |
+| 9 | N10, N11, C1a, C3 | 4 | Im Vergleich der fünf Tage fällt Folgendes auf. ¶ Am 20.01.2025 weicht der DA erwartungsgemäß als letzter Markt, denn | Im Vergleich der fünf Beispieltage wird am 20.01.2025 der DA erwartungsgemäß als letzter Markt verdrängt, denn | angenommen 08.10.2026 |
+| 10 | N12 | 4 | ist an diesem Tag bei 100 €/(MW·h) verschwunden, | ist an diesem Tag bei 100 €/(MW·h) vollständig verdrängt, | angenommen 08.10.2026 |
+| 11 | N13 | 4 | Der DA und der IDC halten dort länger als die aFRR-Leistung. | Der DA und der IDC bleiben dort bis zu höheren Preisen belegt als die aFRR-Leistung. | angenommen 08.10.2026 |
+| 12 | C3 | 4 | tritt als einzigem der fünf Tage die FCR auf | tritt als einzigem der fünf Beispieltage die FCR auf → seit Seitenbilanz: tritt als einzigem Beispieltag die FCR auf | angenommen 08.10.2026 |
+| 13 | N15 | 4 | lässt sich die aFRR-Leistung kaum lösen, denn sie bleibt auch beim höchsten gerechneten Preis belegt. | lässt sich die aFRR-Leistung kaum verdrängen, denn sie bleibt auch beim höchsten gerechneten Preis vorgehalten. → seit Seitenbilanz: … denn sie bleibt auch beim höchsten Preis vorgehalten. | angenommen 08.10.2026 |
+| 14 | N11 | 4 | während der DA dort als erster Markt weicht. | während der DA dort als erster Markt verdrängt wird. | angenommen 08.10.2026 |
+| 15 | N16, C1a, C3 | 4 | Die Verdrängung der Märkte lässt sich damit in vier Punkten fassen. ¶ Die Märkte sind an verschiedenen Tagen verschieden erlösreich, | Die Märkte sind an den fünf Beispieltagen verschieden erlösreich, → seit Seitenbilanz: Die Märkte sind an den Beispieltagen verschieden erlösreich, sodass sich für keinen ein einheitlicher … | angenommen 08.10.2026 |
+| 16 | N13, C3 | 4 | hält sich an zwei der fünf Tage aber länger als | bleibt an zwei der fünf Beispieltage aber bis zu höheren Preisen belegt als | angenommen 08.10.2026 |
+| 17 | N11, C3 | 4 | tritt nur an einem der fünf Tage auf und weicht dort schon bei 10 €/(MW·h), sodass | tritt nur an einem der fünf Beispieltage auf und ist dort schon bei 10 €/(MW·h) verdrängt, sodass → seit Seitenbilanz: tritt nur an einem Beispieltag auf und ist dort schon bei 10 €/(MW·h) verdrängt, sodass | angenommen 08.10.2026 |
+| 18 | N17, C4 | 4 | Aus einem Jahreslauf über alle Tage lässt sich das Gewicht der einzelnen Märkte bestimmen. | (gestrichen, Inhalt in der Abbildungsreferenz der nächsten Zeile aufgegangen, Seitenbilanz) | angenommen 08.10.2026 |
+| 19 | C5 | 4 | Abbildung [fig:erloesvergleich] teilt den Referenzerlös des Jahres 2025 nach Märkten auf. | In Abbildung [fig:erloesvergleich] ist der Referenzerlös aus dem Jahreslauf des Optimierungsmodells nach Abschnitt [sec:reservation_price_search] nach Märkten aufgeteilt. (nach Seitenbilanz, trägt C4 und N18) | angenommen 08.10.2026 |
+| 20 | C6 | 4 | Der Bruttoerlös beträgt 358,6 Tsd. €/(MW·a), | Der Bruttoerlös beträgt 358,6 Tausend Euro je Megawatt und Jahr (Tsd. €/(MW·a)), | angenommen 08.10.2026 |
+| 21 | N19, N20 | 4 | Welche Stunden die erste Iteration offen lässt, zeigt der Füllgrad je Tagesstunde. | Welche Stunden unter der ersten Iteration nicht voll reserviert sind, zeigt der Füllgrad je Tagesstunde, also der Anteil der reservierten an der reservierbaren Leistung. | angenommen 08.10.2026 |
+| 22 | N21, C5 | 4 | Abbildung [fig:fuellgrad_tagesstunden] trägt den mittleren Füllgrad unter den Preisen der ersten Iteration über die 24 Stunden des Tages auf. | In Abbildung [fig:fuellgrad_tagesstunden] ist der mittlere Füllgrad unter den Preisen der ersten Iteration über die 24 Tagesstunden im Jahresmittel aufgetragen. (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 23 | N22 | 4 | während die zweite Iteration bis auf die beiden Stunden der Zeitumstellung voll reserviert. | während die zweite Iteration bis auf die beiden Stunden der Zeitumstellung voll reserviert, wie es ihr Abbruchkriterium verlangt. (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 24 | N23 | 4 | Die unvollständige Bindung der ersten Iteration lässt der Bezugsanlage 88,6 Tsd. €/(MW·a) an den übrigen Märkten und kostet den ÜNB dabei nur 10,2 Tsd. €/(MW·a) weniger. | Unter der ersten Iteration behält die Bezugsanlage 88,6 Tsd. €/(MW·a) aus den übrigen Märkten, und der ÜNB zahlt dennoch nur 10,2 Tsd. €/(MW·a) weniger als unter der zweiten. | angenommen 08.10.2026 |
+| 25 | N25, N26 | 4 | Der kurative Reservierungspreis entsteht für jede Stunde des Jahres neu, denn er misst die Opportunität genau dieser Stunde. | Der kurative Reservierungspreis, also der Preis der vollen Reservierung, entsteht für jede Stunde des Jahres neu, denn er gibt die Opportunität genau dieser Stunde wieder. (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 26 | C5 | 4 | Abbildung [fig:verteilung_reservierungspreis] zeigt die Verteilung dieser Preise je Richtung. | In Abbildung [fig:verteilung_reservierungspreis] ist die Verteilung dieser Preise je Richtung dargestellt. | angenommen 08.10.2026 |
+| 27 | C4 | 4 | Die Entladereservierung kostet im Median 12,22 €/(MW·h), | Im Jahreslauf des Optimierungsmodells kostet die Entladereservierung im Median 12,22 €/(MW·h), | angenommen 08.10.2026 |
+| 28 | N28 | 4 | Oberhalb des 99-Prozent-Quantils von 173 €/(MW·h) und 161 €/(MW·h) liegen nur 88 beziehungsweise 87 Stunden des Jahres. | Das 99-Prozent-Quantil liegt bei 173 €/(MW·h) in der Entlade- und 161 €/(MW·h) in der Laderichtung. | angenommen 08.10.2026 |
+| 29 | N29 | 4 | In der Spitze der Verteilung setzt ein anderer Markt den Preis als über das übrige Jahr. | In der Spitze der Verteilung setzt der IDC den Preis und nicht die aFRR-Leistung wie über das übrige Jahr. | angenommen 08.10.2026 |
+| 30 | C4, C5 | 4 | Abbildung [fig:heatmap_reservierungspreis] trägt den Preis jeder Stunde über Kalendertag und Tageszeit auf. | In Abbildung [fig:heatmap_reservierungspreis] ist der Preis jeder Stunde im Jahreslauf über Kalendertag und Tageszeit aufgetragen. (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 31 | N31 | 4 | Die Farbskala knickt bei 10 €/(MW·h) und damit nahe beiden Jahresmedianen, sodass | Die Farbskala wechselt bei 10 €/(MW·h), also nahe beiden Jahresmedianen, ihre Steigung, sodass (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 32 | N32 | 4 | Die Obergrenze je Feld ist das 99-Prozent-Quantil, | Die Obergrenze je Teilbild ist das 99-Prozent-Quantil, | angenommen 08.10.2026 |
+| 33 | N33 | 4 | An jedem zwanzigsten Tag des Jahres bleiben dagegen weniger als 30 Prozent, | An den fünf Prozent der Tage mit den kleinsten Ersatzspannen bleiben dagegen weniger als 30 Prozent, | angenommen 08.10.2026 |
+| 34 | C5 | 4 | Abbildung [fig:zeitmuster_reservierungspreis] fasst dieselben Stundenwerte zum Tages- und zum Jahresgang zusammen. | In Abbildung [fig:zeitmuster_reservierungspreis] sind dieselben Stundenwerte zum Tages- und zum Jahresgang zusammengefasst. | angenommen 08.10.2026 |
+| 35 | N34, C1a | 4 | Über das zeitliche Muster sind damit vier Aussagen belegt. ¶ Die Ladereservierung ist mittags teuer und bildet | Über das zeitliche Muster ist damit belegt, dass die Ladereservierung mittags teuer ist und | angenommen 08.10.2026 |
+| 36 | N35, C4, C5 | 4 | Abbildung [fig:jahreslauf_mittel] stellt für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises neben die Redispatchleistung im Tagesmittel. | In Abbildung [fig:jahreslauf_mittel] ist für jeden Tag des Jahres 2025 das arithmetische Mittel des kurativen Reservierungspreises aus dem Jahreslauf des Optimierungsmodells neben der Redispatchleistung im Tagesmittel dargestellt. | angenommen 08.10.2026 |
+| 37 | N36 | 4 | Beide Größen sind dimensionsgleich, meinen aber nicht dasselbe, | Der Arbeitspreis des Redispatch und der kurative Reservierungspreis sind dimensionsgleich, meinen aber nicht dasselbe, | angenommen 08.10.2026 |
+| 38 | N38 | 4 | doch sein Median liegt selbst im Sommer bei | doch sein Median liegt selbst im Sommer von Mai bis August bei | angenommen 08.10.2026 |
+| 39 | N40, N41, C1a | 4 | Daraus folgt für die Beschaffung der kurativen Vorhaltung dreierlei. ¶ Die kurative Vorhaltung bleibt im Tagesmittel fast das ganze Jahr über unterhalb der Bezugslinie und ist damit auch im Sommer einplanbar. | Daraus folgt für die Beschaffung der kurativen Vorhaltung, dass sie im Tagesmittel fast das ganze Jahr über unterhalb der Bezugslinie bleibt und damit auch im Sommer einplanbar ist, der teuersten Jahreszeit der Reservierung. | angenommen 08.10.2026 |
+| 40 | N26 | 4 | Der kurative Reservierungspreis misst die Opportunitätskosten der verdrängten Vermarktung, sodass | Der kurative Reservierungspreis gibt die Opportunitätskosten der verdrängten Vermarktung wieder, sodass | angenommen 08.10.2026 |
+| 41 | N42 | 4 | Drei der folgenden Abschnitte prüfen je eine Annahme des Optimierungsmodells, der vierte eine Annahme über die künftige Marktlage. | In drei der folgenden Abschnitte wird je eine Annahme des Optimierungsmodells geprüft, im vierten eine Annahme über die künftige Marktlage. | angenommen 08.10.2026 |
+| 42 | C5 | 4 | Abbildung [fig:sensi_afrr_leistung] staffelt die drei Stufen der Leistungsseite und stellt ihnen den Basisfall als Bezug zur Seite. | In Abbildung [fig:sensi_afrr_leistung] sind die drei Stufen der Leistungsseite gestaffelt, mit dem Basisfall als Bezug. | angenommen 08.10.2026 |
+| 43 | N45 | 4 | von 510 €/(MW·h) auf 1920 €/(MW·h), also auf das 4,6- und das 3,8-Fache. | von 510 €/(MW·h) auf 1920 €/(MW·h), also auf das 4,6- und das 3,8-Fache, ablesbar an den Werten am oberen Ende der Whisker in Abbildung [fig:sensi_afrr_leistung]. | angenommen 08.10.2026 |
+| 44 | N44, C5 | 4 | Abbildung [fig:sensi_afrr_energie] variiert daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung, nämlich dem gemittelten. | In Abbildung [fig:sensi_afrr_energie] ist daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung variiert, nämlich dem gemittelten. | angenommen 08.10.2026 |
+| 45 | C5 | 4 | Abbildung [fig:sensi_idc_spanne] zeigt den kurativen Reservierungspreis unter drei Annahmen über diese Spanne. | In Abbildung [fig:sensi_idc_spanne] ist der kurative Reservierungspreis unter drei Annahmen über diese Spanne dargestellt. | angenommen 08.10.2026 |
+| 46 | C5 | 4 | Abbildung [fig:sensi_abrufdauer] zeigt eine, eine halbe und eine viertel Megawattstunde je Megawatt und beschriftet sie als zugehörige Abrufdauer in Stunden. | In Abbildung [fig:sensi_abrufdauer] sind eine, eine halbe und eine viertel Megawattstunde je Megawatt dargestellt, beschriftet als zugehörige Abrufdauer in Stunden. | angenommen 08.10.2026 |
+| 47 | C5 | 4 | Abbildung [fig:sensi_zukunft] stellt den Erlös der Bezugsanlage in beiden Welten gegenüber. | In Abbildung [fig:sensi_zukunft] ist der Erlös der Bezugsanlage in beiden Welten gegenübergestellt. | angenommen 08.10.2026 |
+| 48 | C1a | 4 | Für den kurativen Reservierungspreis unter künftigen Marktpreisen bleibt Folgendes. ¶ Der Preis sinkt mit dem Markterlös | Unter künftigen Marktpreisen sinkt der kurative Reservierungspreis mit dem Markterlös | angenommen 08.10.2026 |
+| 49 | N7 | 3 | Dort verzehren Speicher die Spreads, indem sie | Dort verzehren Speicher die Spreads, also die Preisspannen eines Tages, indem sie (nach Seitenbilanz gekürzt) | angenommen 08.10.2026 |
+| 50 | C5 | 3 | Abbildung [fig:modellkette] zeigt den Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen. | In Abbildung [fig:modellkette] ist der Weg eines Liefertages von den Marktdaten über die Dispatch-Optimierung bis zu den Ergebnissen dargestellt. | angenommen 08.10.2026 |
+| 51 | C5 | 3 | Abbildung [fig:validierung_cross] stellt marktübergreifend den Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenüber. | In Abbildung [fig:validierung_cross] ist marktübergreifend der Revenue-Index dem Referenzerlös des Optimierungsmodells über das Jahr 2025 gegenübergestellt. | angenommen 08.10.2026 |
+| 52 | C5 | 3 | Abbildung [fig:dispatch_festpreis] zeigt den 11.02.2025, den Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei | In Abbildung [fig:dispatch_festpreis] ist der 11.02.2025 dargestellt, der Tag mit dem höchsten Redispatchvolumen des Jahres 2025 \cite{netztransparenz_regelenergie_2026}, bei | angenommen 08.10.2026 |
+| 53 | C5 | 2 | Abbildung [fig:preventiv_kurativ] veranschaulicht den grundlegenden Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall. | In Abbildung [fig:preventiv_kurativ] ist der grundlegende Unterschied zwischen beiden Systemführungsansätzen anhand der Betriebsmittelbelastung im Fehlerfall veranschaulicht. | angenommen 08.10.2026 |
+| 54 | C5 | 2 | Abbildung [fig:curativ_process] stellt die vier Phasen für den Fall dar, dass ein EIV die Maßnahme erbringt. | In Abbildung [fig:curativ_process] sind die vier Phasen für den Fall dargestellt, dass ein EIV die Maßnahme erbringt. | angenommen 08.10.2026 |
+| 55 | C5 | 2 | Tabelle [tab:akteursvergleich] stellt die in Betracht kommenden Technologien entlang dieser Merkmale gegenüber. | In Tabelle [tab:akteursvergleich] sind die in Betracht kommenden Technologien entlang dieser Merkmale gegenübergestellt. | angenommen 08.10.2026 |
+| 56 | C5 | 2 | Tabelle [tab:ausgleich_bestandteile] stellt die Bestandteile mit ihrem jeweiligen Bemessungsgegenstand zusammen. | In Tabelle [tab:ausgleich_bestandteile] sind die Bestandteile mit ihrem jeweiligen Bemessungsgegenstand zusammengestellt. | angenommen 08.10.2026 |
+| 57 | N48 | 5 | und die vorangegangenen Kapitel entwerfen dafür die kurative Reservierung als Produkt und bestimmen den kurativen Reservierungspreis aus der Sicht eines Betreibers. | und in den vorangegangenen Kapiteln sind dafür die kurative Reservierung als Produkt entworfen und der kurative Reservierungspreis aus der Sicht eines Betreibers bestimmt. | angenommen 08.10.2026 |
+| 58 | N49 | 5 | damit sich beurteilen lässt, ob der Entwurf trägt. | damit sich beurteilen lässt, ob der Entwurf die Anforderungen erfüllt. | angenommen 08.10.2026 |
+| 59 | N50 | 5 | Zuerst wird für jede Anforderung aus Abschnitt [sec:requirements_catalogue] geprüft, | In Abschnitt [sec:requirements_assessment] wird für jede Anforderung aus Abschnitt [sec:requirements_catalogue] geprüft, | angenommen 08.10.2026 |
+| 60 | N50 | 5 | Anschließend wird gezeigt, wo die Annahmen der Modellierung | In Abschnitt [sec:model_discussion] wird gezeigt, wo die Annahmen der Modellierung | angenommen 08.10.2026 |
+| 61 | N50 | 5 | Darauf folgt die Bewertung der Wirtschaftlichkeit | In Abschnitt [sec:economics_effectiveness] folgt die Bewertung der Wirtschaftlichkeit | angenommen 08.10.2026 |
+| 62 | N50 | 5 | Danach wird die Technologie der BESS eingehend diskutiert, | In Abschnitt [sec:bess_markets] wird die Technologie der BESS eingehend diskutiert, | angenommen 08.10.2026 |
+| 63 | N50 | 5 | Zuletzt werden der Rahmen und der Betrieb einer Umsetzung, | In Abschnitt [sec:implementation_outlook] werden der Rahmen und der Betrieb einer Umsetzung, | angenommen 08.10.2026 |
+| 64 | N51 | 5 | hängt am Kreis der Technologien, deren Teilnahme ein Potenzial für die kurative Systemführung trägt. | hängt davon ab, welche Technologien mit ihrer Teilnahme ein Potenzial für die kurative Systemführung tragen. | angenommen 08.10.2026 |
+| 65 | N52 | 5 | könnte das Produkt auf Speicher geschnitten wirken. | könnte das Produkt auf Speicher zugeschnitten wirken. | angenommen 08.10.2026 |
+| 66 | N56 | 5 | Sieben der acht Anforderungen bestimmen den Zuschnitt des Produkts, die achte, die Umsetzbarkeit, entscheidet sich | Die Anforderungen A1 bis A7 bestimmen den Zuschnitt des Produkts, die achte, die Umsetzbarkeit nach A8, entscheidet sich | angenommen 08.10.2026 |
+| 67 | N55 | 5 | Je schärfer das Produkt die Anbieter auswählt, | Je schärfer die Anforderungen die Anbieter auswählen, | angenommen 08.10.2026 |
+| 68 | N52, N55 | 6 | Je schärfer eine Anforderung das Produkt schneidet, | Je schärfer eine Anforderung das Produkt zuschneidet, | angenommen 08.10.2026 |
+| 69 | C3 | F | schwankt zwischen den fünf Tagen um | schwankt zwischen den fünf Beispieltagen um | angenommen 08.10.2026 |
+| 70 | C3 | F | die wenigsten aller fünf Tage, | die wenigsten aller fünf Beispieltage, | angenommen 08.10.2026 |
+| 71 | C3 | F | als einzigem der fünf Tage FCR an, | als einzigem der fünf Beispieltage FCR an, | angenommen 08.10.2026 |
+| 72 | C3 | F | kommt an allen fünf Tagen schon bei | kommt an allen fünf Beispieltagen schon bei | angenommen 08.10.2026 |
+| 73 | Seitenbilanz | 4 | ist der Referenzerlös des Jahres 2025 aus dem Jahreslauf | ist der Referenzerlös aus dem Jahreslauf | angenommen 08.10.2026 |
+| 74 | Seitenbilanz | 4 | bleibt der IDC bis zum höchsten gerechneten Preis belegt, während | bleibt der IDC bis zum höchsten Preis belegt, während | angenommen 08.10.2026 |
+
+###### Abstract (C2)
+
+Drei Agenten haben den englischen Abstract mit verschiedenen Vorgaben neu geschrieben, nämlich Variante 1 in schlichtem Journal-Englisch, Variante 2 in britischem akademischem Englisch satztreu zur Kurzfassung, Variante 3 mit dem Vokabular der SOGL und des ENTSO-E-Glossars. Eingebaut ist Variante 2 als Grundlage mit den Fachbegriffen aus Variante 3 (contingency analysis, permanently und temporarily admissible transmission loading, remedial action, balancing capacity, operational security) und der Einheitenschreibweise aus Variante 1 (per megawatt per hour gegen per megawatt-hour). Der Satz *Scheduling therefore depends on time as much as on the congestion pattern of the grid.* entfällt, denn sein deutsches Gegenstück ist am 07.10.2026 mit L1 gestrichen. Die drei Rohfassungen liegen im Scratchpad der Sitzung als `abstract_v1.txt` bis `abstract_v3.txt`.
+
+Alt und Neu je Absatz:
+
+**Absatz 1, alt**
+
+Congestion management in the German transmission grid keeps the (N-1) criterion mainly by preventive means, since the security assessment checks every contingency against the permanently admissible limit and keeps a safety margin below it by redispatch.
+
+**Absatz 1, neu**
+
+Congestion management in the German transmission system meets the (N-1) criterion largely by preventive remedial actions: the contingency analysis checks every contingency against the permanently admissible transmission loading and keeps a security margin below it by redispatch.
+Curative system operation instead exploits the temporarily admissible transmission loading of grid assets without breaching the (N-1) criterion.
+Preventive redispatch calls on energy and remunerates it on a cost basis, whereas the remuneration of participants scheduled for curative remedial actions is still unsettled.
+A curative remedial action does not always call on energy but requires the ability to respond, so the forgone revenue is hard to determine.
+Redispatch compensates renewable plants under its own rules, and for storage the basis of assessment remains open.
+Market-based procurement lets participants price their costs against their own opportunities by scheduling the reserved capacity in their own dispatch.
+
+**Absatz 2, alt**
+
+Curative system operation instead uses the temporarily admissible overload of the assets without violating the (N-1) criterion.
+
+**Absatz 2, neu**
+
+This thesis therefore designs a market mechanism for curative system operation, namely the curative reservation as the product and the curative reservation price as its measure.
+The product commits a power band for every participant and, for storage, an additional state-of-charge band, and sets out the requirements of operational security.
+To assess the economics, an optimisation model of a battery energy storage system (BESS) using 2025 prices determines the lowest price at which an operator fully reserves an hour, against the day-ahead and intraday markets and the balancing capacity markets for frequency containment reserve (FCR) and automatic frequency restoration reserve (aFRR).
+
+**Absatz 3, alt**
+
+Preventive redispatch activates energy and remunerates it on a cost basis, whereas the remuneration of curatively scheduled participants has not been worked out yet.
+
+**Absatz 3, neu**
+
+The aFRR balancing capacity price sets the price level.
+A typical hour costs a median of around twelve euros per megawatt per hour for discharging and ten for charging, while a few hours with wide intraday spreads double the mean.
+In winter, reservation costs around 40 per cent less than in summer.
+On a daily average, the price stays below the energy price of preventive redispatch of around 100 euros per megawatt-hour for almost the whole year, and the largest demand in winter meets the cheapest reservation.
+
+**Absatz 4, alt**
+
+A curative measure does not always activate energy but requires responsiveness, so the foregone revenues are hard to determine.
+
+**Absatz 4, neu**
+
+The curative reservation can therefore be procured at a competitive price that follows the balancing capacity price and stays below the cost of preventive redispatch.
+Time of day and season shape the price: reservation for charging is expensive at midday and in summer, reservation for discharging in the morning and evening.
+BESS belong in congestion management, and curative system operation suits their technology, since it calls for rapid power over a short interval rather than energy for the duration of the congestion.
+This requires extending congestion management by a remuneration of reserved capacity alongside Section 13a of the German Energy Industry Act.
+Curative system operation with BESS and renewable plants thus uses the existing grid more efficiently without compromising its operational security.
+
+
+---
+
+##### Zweiter Schwung, 08.10.2026: Kommentare 58 bis 149 zu 5.2 bis 5.5, Kapitel 6 und Anhang
+
+Der Verfasser hat am 08.10.2026 alle 149 Kommentare des Betreuers neu extrahiert. Die Kommentare 1 bis 57 der neuen Zählung sind die 56 Kommentare des ersten Schwungs, dort als N1 bis N56 geführt. Abweichungen: Neu 53 (*geschnitten*, zweite Stelle) ist in N52 enthalten, neu 54 ist N53, neu 55 ist N54, neu 56 ist N56 und neu 57 ist N55. Die neuen Kommentare 58 bis 149 tragen hier das Präfix K, damit keine Nummer doppelt vergeben ist. Zeilenangaben beziehen sich auf den Arbeitsstand vom 08.10.2026 nach Runde 2.
+
+Übersicht: 92 Kommentare, davon 51 unter A, 37 unter B (darunter die vier Absätze aus C9 und C11) und 4 allein unter den Grundsatzentscheidungen C7 bis C13 (K58, K76, K96, K122). K120 betrifft einen Satz, der seit dem Commit 54048c6 nicht mehr im Text steht, K99 ist die zweite Stelle von K98.
+
+###### Stufe C, grundlegende Entscheidung, zweiter Schwung
+
+| Nr. | Kommentare | Worum es geht | Empfehlung | Länge | Entscheidung |
+|---|---|---|---|---|---|
+| C7 | K58, K76, K70, K94, K95, K111 | **Verweiskonvention für Kapitel 5 und 6.** Der Betreuer will an jeder Stelle, die ein Ergebnis oder eine Annahme aus Kapitel 3 und 4 aufgreift, einen konkreten Abschnitts- oder Abbildungsverweis. In 5.2 bis 5.5 fehlen sie an rund 15 Stellen, in Kapitel 6 durchgehend. Stilregel 15 lässt Sachverweise zu. | Konvention: in Kapitel 5 jeder Rückgriff auf ein Ergebnis mit `Abschnitt~\ref{}`, in Kapitel 6 keine Verweise, denn die Zusammenfassung steht für sich. Umsetzung als Stufe A in einem Durchgang. | +2 bis +4 Zeilen in Kapitel 5 | entschieden 08.10.2026, Empfehlung: Kapitel 5 durchgängig (17 Stellen, Einschub *nach Abschnitt X* am belegten Satzglied, höchstens einer je Satz, Abbildungsverweis nur bei konkreter Abbildung), Kapitel 6 ohne Verweise. |
+| C8 | K78, K98, K99 und `chapter_2.tex:464`, `chapter_4.tex:206` | **Begriff *bewegte Arbeit*.** Der Betreuer schlägt *abgerufene elektrische Arbeit* vor. Fünf Stellen, zwei davon als *je bewegter Megawattstunde* beim Arbeitspreis des Redispatch. | *abgerufene Arbeit* und *je abgerufener Megawattstunde*, denn *Abruf* ist nach `CLAUDE.md` Abschnitt 5 die Handlung des ÜNB. Eintrag in die Begriffsliste. Stufe A. | ±0 | entschieden 08.10.2026, *abgerufene Arbeit* und *je abgerufener Megawattstunde*, fünf Stellen, Begriffsliste ergänzen. |
+| C9 | K96, K106, K110, K121, mit K100, K107, K108, K112 bis K114 | **Abschnitt 5.5 absatzweise neu fassen.** Der Betreuer bemängelt an vier der sechs Absätze Aussage, Argumentation und roten Faden, nämlich 289 bis 296 (Vergütungsformen), 306 bis 312 (drei Wege), 314 bis 321 (Betrieb) und 333 bis 340 (Zweck). Die Einzelkommentare sind unter B mit Wortlaut geführt, der Absatz 333 bis 340 hängt an C11. | Absatzpläne für die vier Absätze nach `WORKFLOW.md`, je Absatz eine Freigabe, Länge je Absatz halten. Die Absätze 298 bis 304 und 323 bis 331 bleiben bis auf die Einzelstellen. | ±0 je Absatz | entschieden 08.10.2026, Absatzpläne freigegeben, vier Absätze am 08.10.2026 ausgeschrieben und eingebaut (Script c9_absaetze.py), Längen nach Erklärungsbedarf gewichtet. Zusatz vom Verfasser: Sperre nach § 13a EnWG vor der Vermarktung ist möglich und wird nach Nummer 3 vergütet, verschafft dem ÜNB aber keine Leistung auf Abruf und erfasst den Ladezustand nicht. 5.5 Absatz 1 Sätze 5 bis 7 und 1.2 Zeile 98/99 entsprechend geschärft (sperre_13a.py). Prüfung der Absätze durch den Verfasser offen. |
+| C10 | K101, K102, K103, dazu `chapter_6.tex:74` | **Gebotszonensplit.** Der Absatz 298 bis 304 führt den Gebotszonensplit ohne Erklärung ein, der Betreuer will erklären oder weglassen. Kapitel 6 Zeile 74 greift ihn wieder auf. | Behalten und in einem Satz erklären, nämlich als Aufteilung der deutschen Gebotszone in Preiszonen, deren Preisunterschied die knappe Übertragungskapazität abbildet. Dafür den Satz 300 (*Der Dispatch entlastete das Netz*) streichen, sodass die Länge gehalten wird. Kapitel 6 bleibt. | ±0 | entschieden 08.10.2026, Empfehlung: Gebotszonensplit in einem Satz erklären, Satz *Der Dispatch der Energiemärkte entlastete das Netz* entfällt. |
+| C11 | K115, K116, K117, K118, K119, K142, K143, dazu `chapter_6.tex:46`, `48`, `60` bis `62` | **Sicherheit oder Effizienz.** Der Text sagt, eine kurative Maßnahme diene heute der Systemsicherheit und werde mit der Ausrollung zur Effizienzmaßnahme. Der Betreuer widerspricht: Das Ziel ist die Einsparung präventiven Redispatch, die Höherauslastung macht das System zunächst unsicherer, die Sicherheit stellt die Maßnahme nur wieder her. Betroffen sind der Schlussabsatz von 5.5 und drei Stellen in Kapitel 6. | Dem Betreuer folgen, denn das deckt sich mit 2.1.1, wo die kurative Systemführung den TATL nutzt, ohne das (N-1)-Kriterium zu verletzen: Die Sicherheit bleibt gleich, der Gewinn ist Effizienz. Neue Kernaussage des Absatzes: Mit der Ausrollung ändert sich nicht der Zweck, sondern der Maßstab, von einzelnen begrenzenden Betriebsmitteln zu vielen Netzknoten. Kapitel 6 Zeile 46 (*Nutzen in der Systemsicherheit*), 48 (*löst ein Sicherheitsproblem*) und 60 (*Maßnahme der Sicherheit*) entsprechend. Der Satz zu BESS, die einen Engpass unwissentlich verschärfen, bleibt, denn das ist ein anderer Punkt. **wichtig** | ±0 | entschieden 08.10.2026, Verfasser widerspricht dem Betreuer mit Begründung: zwei Anwendungen trennen. (1) Geplante Höherauslastung, Ziel Effizienz, Einwand des Betreuers gilt. (2) Absicherung gegen kurzfristige Fahrplanänderungen nach der letzten Vorschaurechnung: Betriebsmittel verliert seine (N-1)-Reserve, kein präventives Instrument greift mehr, die eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, Höherauslastung erst im Fehlerfall. Sicherheitsniveau in beiden Fällen (N-1), Unterschied in Anlass und Zeitpunkt der Einplanung. Auslöser ist die Fahrplanänderung, Fehlerfall bleibt der Ausfall eines Betriebsmittels. Zusätzlich Halbsatz in 5.5, dass die Bedarfsermittlung nach 3.1.2 dafür eine Marge für Fahrplanänderungen enthalten müsste. Kapitel 6 Zeile 46, 48, 60: *stellt die (N-1)-Sicherheit nach kurzfristigen Fahrplanänderungen wieder her, für die kein präventives Instrument mehr greift*. |
+| C12 | K122, K130, K132, K133, K135, K137, K138, K147 | **Kapitel 6 als Bericht der eigenen Leistung.** Der Betreuer will lesen, was die Arbeit gemacht und gezeigt hat, mit angekündigter Zählung der vier Erkenntnisse und ohne offene Verben wie *gerechnet ist*. Er empfiehlt, das Kapitel gegenlesen zu lassen, weil es mit der Einleitung am häufigsten gelesen wird. | Einleitungsabsatz und die vier Absatzanfänge umbauen: *Die Arbeit hat … entworfen*, *Das Optimierungsmodell bestimmt …*, *Vier Erkenntnisse folgen aus den Ergebnissen*, Absatzanfänge *Erstens* bis *Viertens* (heute *Zuerst*, *zweitens*, keine, *Drittens*). Die Erkenntnis 3 beginnt in Zeile 39 ohne Zähler. Stilregel 5 lässt *die vorliegende Arbeit* in der Kapiteleinleitung zu. Die Einzelstellen stehen unter A und B. Fremdleser-Prüfung durch einen Agenten nach Freigabe, wenn der Verfasser sie will. | ±0 | entschieden 08.10.2026, Empfehlung: Einleitung und Absatzanfänge umbauen, Erstens bis Viertens, Fremdleser-Prüfung nach Einbau auf Wunsch. |
+| C13 | K66, K69, K77, K79, K82, K93, K109, K124, K131, K136, dazu Zeile 112, 137, 159, 187, 190, 207, 272, 320, 327 in Kapitel 5 | **Das Verb *tragen*.** Der Betreuer merkt es achtmal an und schreibt *wie schon oft kommentiert*. Kapitel 5 enthält 21, Kapitel 6 sechs und Kapitel 4 dreißig Treffer, ein Teil davon wörtlich (*trägt den Erlös*), der größere Teil übertragen (*trägt das Ergebnis*, *trägt eine Unsicherheit*, *trägt die Dimension*). | Alle übertragenen Verwendungen in Kapitel 5 und 6 ersetzen, Kapitel 4 nur an den Stellen, die der Betreuer nennt (N36 ist schon umgestellt). Ersatz je Sinn: *bestimmt*, *beeinflusst*, *ist mit … verbunden*, *gilt*, *hat*, *liefert*, *wirkt*. Stufe A in einem Durchgang mit Tabelle Alt gegen Neu. | ±0 | entschieden 08.10.2026, Empfehlung: übertragene Verwendungen in Kapitel 5 und 6 ersetzen, Kapitel 4 nur die genannten Stellen. |
+
+###### Stufe A, automatisch durchführbar, zweiter Schwung
+
+| Nr. | Stelle | Kommentar des Betreuers | Umsetzung | Länge | Entscheidung |
+|---|---|---|---|---|---|
+| K61 | 5.2, `chapter_5.tex:119` | *kostet damit einen Lauf* – bessere Wortwahl. | *Jede geprüfte Kombination von Preisen erfordert damit einen eigenen Lauf des Tagesmodells.* | ±0 | umgesetzt 08.10.2026 |
+| K64 | 5.2, `chapter_5.tex:127` | *stärkste Annahme* – sicherste oder einflussreichste? | *Die einflussreichste Annahme des Optimierungsmodells …* | ±0 | umgesetzt 08.10.2026 |
+| K65 | 5.2, `chapter_5.tex:127` | *der Preise* – welche? | *… ist die vollständige Kenntnis der Marktpreise des Liefertages.* | ±0 | umgesetzt 08.10.2026 |
+| K66 | 5.2, `chapter_5.tex:141` | *trägt die Abbildung der Regelleistung das Ergebnis am stärksten* | *… beeinflusst die Abbildung der Regelleistung das Ergebnis am stärksten …* C13. | ±0 | umgesetzt 08.10.2026 |
+| K67 | 5.2, `chapter_5.tex:146` | *Die Sensitivität* – welche? | *Die Sensitivität mit dem Grenzpreis des letzten Zuschlags in Abschnitt~\ref{sec:sensi_afrr} bestätigt den Einfluss, …* C7. | ±0 | umgesetzt 08.10.2026 |
+| K68 | 5.2, `chapter_5.tex:150` | *der Viertelstunde* – welche? | *Der Grenzpreis steht erst nach Ende der Viertelstunde fest, für die die Arbeit geliefert wird, und mit ihm der Abruf der Anlage.* | ±0 | umgesetzt 08.10.2026 |
+| K70 | 5.2, `chapter_5.tex:156` | *Die Sensitivitäten* – welche? Verweis. | *Die Sensitivitäten in Abschnitt~\ref{sec:sensi_afrr} zeigen, …* C7. | ±0 | umgesetzt 08.10.2026 |
+| K73 | 5.2, `chapter_5.tex:162` | *geprüft ist* – was meinst du? | *… weshalb in Abschnitt~\ref{sec:sensi_idc} ein Faktor auf die Handelsspanne als Sensitivität geprüft wird.* C7. | ±0 | umgesetzt 08.10.2026 |
+| K75 | 5.2, `chapter_5.tex:172` | *Die letzte Grenze ist die Perspektive der Untersuchung* – philosophisch. | *Die letzte Vereinfachung ist der Untersuchungsrahmen, denn das Optimierungsmodell rechnet eine einzelne Anlage …* (Satz 172 und 173 zusammengezogen). | −1 | umgesetzt 08.10.2026 |
+| K77 | 5.3, `chapter_5.tex:189` | *tragen dieselbe Dimension* | *… sind dimensionsgleich und meinen Verschiedenes …*, wie in 4.5. C13. | ±0 | umgesetzt 08.10.2026 |
+| K78 | 5.3, `chapter_5.tex:189` | *bewegte Arbeit* | Nach C8 *abgerufene Arbeit*. | ±0 | umgesetzt 08.10.2026 |
+| K79 | 5.3, `chapter_5.tex:190` | *trägt deshalb eine Unsicherheit* – umgangssprachlich. | Vorschlag des Betreuers: *Jeder Vergleich … ist deshalb nur eingeschränkt aussagekräftig.* Gleiche Wendung in `chapter_6.tex:39`. C13. | ±0 | umgesetzt 08.10.2026 |
+| K80 | 5.3, `chapter_5.tex:195` | *welche Richtung den Preis trägt* | *Über den Tag wechselt jedoch, welche Reservierungsrichtung die teurere ist.* | ±0 | umgesetzt 08.10.2026 |
+| K81 | 5.3, `chapter_5.tex:202`, `204`, `212`, `213` | *solche Anlage* – PV, Wind oder BESS? | Viermal *eine Wind- oder Photovoltaikanlage*, Stilregel 5. | ±0 | umgesetzt 08.10.2026 |
+| K82 | 5.3, `chapter_5.tex:207` | *trägt zudem ein Risiko* | *Die Zusage einer Wind- oder Photovoltaikanlage ist zudem unsicher, denn …* C13. | ±0 | umgesetzt 08.10.2026 |
+| K83 | 5.3, `chapter_5.tex:209` | *Liefert … weniger* – besser Einspeisung. | *Speist eine engpasswirksame Anlage wegen einer Prognoseabweichung weniger ein, …* | ±0 | umgesetzt 08.10.2026 |
+| K84 | 5.3, `chapter_5.tex:215` | *Der Jahresverlauf* – welcher? | *Der Jahresverlauf des kurativen Reservierungspreises aus Abschnitt~\ref{sec:price_vs_redispatch} spricht …* C7. | ±0 | umgesetzt 08.10.2026 |
+| K85 | 5.3, `chapter_5.tex:217` | *Redispatch regelt nicht ab*, die Abregelung heißt Redispatch. | *… aus Windfronten, in denen der ÜNB Windenergieanlagen im Norden im Redispatch abregelt.* | ±0 | umgesetzt 08.10.2026 |
+| K86 | 5.3, `chapter_5.tex:232` | *dem Preis* – welcher? | *Dem kurativen Reservierungspreis stehen jedoch …* | ±0 | umgesetzt 08.10.2026 |
+| K87 | 5.3, `chapter_5.tex:227` | *der Zustand* – welcher? | *… dass die Anlage ihre Leistungsänderung im Fehlerfall bis zur ablösenden Maßnahme durchhält.* | ±0 | umgesetzt 08.10.2026 |
+| K89 | 5.3, `chapter_5.tex:230` | *aufgibt* – entgangene Erlöse? | *… denn der Preis aus dem Wettbewerb bildet die Erlöse ab, die einer Anlage durch die Reservierung entgehen.* | ±0 | umgesetzt 08.10.2026 |
+| K90 | 5.4, `chapter_5.tex:245` | *BESS kennt den Netzzustand nicht* – BESS-Betreiber? | *Der Betreiber eines BESS kennt den Netzzustand nicht und handelt allein nach Marktsignalen, sodass er einen Engpass verschärfen kann, ohne es zu wissen.* Gleich in `chapter_6.tex:49` (K139). | ±0 | umgesetzt 08.10.2026 |
+| K91 | 5.4, `chapter_5.tex:248` | *nächste Frage* – was war die erste? | *Aus der Höhe der Leistung folgt die zweite Frage, nämlich die nach dem Netzanschluss eines BESS.* | ±0 | umgesetzt 08.10.2026 |
+| K92 | 5.4, `chapter_5.tex:249` | *dieser Leistung und diesem Energieinhalt* – welche? | *… auf eine Technologie mit hoher Leistung und geringem Energieinhalt nicht zugeschnitten.* | ±0 | umgesetzt 08.10.2026 |
+| K93 | 5.4, `chapter_5.tex:272` | *trägt* | *Die Trennung von Vorhaltung und Abruf gilt deshalb über die kurative Maßnahme hinaus.* C13. | ±0 | umgesetzt 08.10.2026 |
+| K94, K95 | 5.4, `chapter_5.tex:279` | *um ein Sechstel nachgeben* – Referenz; Verweis auf Kapitel 4. | *Die Zukunftsvariante in Abschnitt~\ref{sec:sensi_zukunft} mit gesenkten Preisen der aFRR und mehr Wettbewerb im kurzfristigen Handel lässt den Markterlös der Bezugsanlage um 17 Prozent nachgeben.* Zahl nach 4.6.4, *ein Sechstel* wäre 16,7. C7. | ±0 | umgesetzt 08.10.2026 |
+| K97 | 5.5, `chapter_5.tex:289` | *Vor der Umsetzung* – was, wo? | *Vor der Umsetzung des kurativen Marktmechanismus im Engpassmanagement ist zu klären, …* | ±0 | umgesetzt 08.10.2026 |
+| K98, K99 | 5.5, `chapter_5.tex:289`, `290` | *bewegten Arbeit* | Nach C8. | ±0 | umgesetzt 08.10.2026 |
+| K104 | 5.5, `chapter_5.tex:307` | *machten* – Vergangenheit? | Indikativ: *… machen eine Begrenzung der Anlage entbehrlich, sobald an jedem Netzknoten genügend wirksame Anlagen anbieten.* | ±0 | umgesetzt 08.10.2026 |
+| K105 | 5.5, `chapter_5.tex:308` | *Die drei Wege* – welche? | *Netzanschlussvereinbarung, Betriebsvorgabe und Sicherheitsmarge sind damit Übergangslösungen und keine dauerhaften.* | ±0 | umgesetzt 08.10.2026 |
+| K109 | 5.5, `chapter_5.tex:320` | *trägt* | *Der ÜNB bestimmt damit über die Ablösung, wie lange eine kurative Maßnahme wirken muss.* C13. | ±0 | umgesetzt 08.10.2026 |
+| K111 | 5.5, `chapter_5.tex:323` | *Aus den Grenzen der Untersuchung* – welche? | *Aus den Grenzen der Untersuchung nach Abschnitt~\ref{sec:model_discussion} folgt …* C7. | ±0 | umgesetzt 08.10.2026 |
+| K124 | 6, `chapter_6.tex:5` | *trägt* (Überlast) | *… die ein Betriebsmittel nach dem Ausfall für kurze Zeit aushält …* C13. | ±0 | umgesetzt 08.10.2026 |
+| K126 | 6, `chapter_6.tex:5`, `6` | *Fehler* definieren. | *nach dem Fehler* wird zweimal *nach dem Ausfall eines Betriebsmittels*, wie in 1.1 eingeführt. | ±0 | umgesetzt 08.10.2026 |
+| K128, K129 | 6, `chapter_6.tex:7` | *im Rahmen der gegenwärtigen Regulierung*; *über die Mechanismen des Engpassmanagements nicht vergütet*. | *Eine Vorhaltung kann der ÜNB im Rahmen der gegenwärtigen Regulierung nicht anordnen, und über die Mechanismen des Engpassmanagements wird sie bislang nicht vergütet.* | +1 | umgesetzt 08.10.2026 |
+| K130 | 6, `chapter_6.tex:9` | *Gerechnet ist der Preis* – die Simulation ergibt? | *Das Optimierungsmodell bestimmt den Preis für ein BESS aus der Sicht seines Betreibers, …* C12. | ±0 | umgesetzt 08.10.2026 |
+| K131, K132 | 6, `chapter_6.tex:11` | *tragen*; *Die Ergebnisse zeigen …* | *Vier Erkenntnisse folgen aus den Ergebnissen, und sie werden im Folgenden benannt und auf die kurative Systemführung bezogen.* C12, C13. | ±0 | umgesetzt 08.10.2026 |
+| K135, K138 | 6, `chapter_6.tex:13`, `29`, `39`, `48` | Was ist erstens? Aufzählung ankündigen. | Absatzanfänge *Erstens*, *Zweitens*, *Drittens* (Zeile 39, heute ohne Zähler), *Viertens* (Zeile 48, heute *Drittens*). C12. | ±0 | umgesetzt 08.10.2026 |
+| K136 | 6, `chapter_6.tex:31` | *Sein Niveau trägt der Leistungspreis* | *Sein Niveau bestimmt der Leistungspreis der aFRR, …* C13. | ±0 | umgesetzt 08.10.2026 |
+| K137 | 6, `chapter_6.tex:39` | *Gegen den präventiven Vergleichspreis gehalten* – *wie unter den Annahmen gezeigt*. | *Drittens bleibt der kurative Reservierungspreis unter den Annahmen der Arbeit im Tagesmittel fast das ganze Jahr unter dem präventiven Vergleichspreis, auch wenn der Vergleich nur eingeschränkt aussagekräftig ist.* C12, K79. | ±0 | umgesetzt 08.10.2026 |
+| K139 | 6, `chapter_6.tex:49` | *Ein BESS bewegt große Leistung* | *Der Betreiber eines BESS ändert die Leistung kurzfristig und in großem Umfang und handelt allein nach Marktsignalen, …* wie K90. | ±0 | umgesetzt 08.10.2026 |
+| K141 | 6, `chapter_6.tex:54` | *kurative Systemführung* in Bezug auf BESS. | *Die kurative Systemführung wirkt bei BESS damit in zwei Hinsichten, …* | ±0 | umgesetzt 08.10.2026 |
+| K144 | 6, `chapter_6.tex:64` und 5.5, `chapter_5.tex:312` | *Voraussetzung* – eher Alternative oder Unterstützung des Netzausbaus. | Beide Stellen: *… sodass die kurative Systemführung den Ausbau der Speicher am bestehenden Netz unterstützt.* | ±0 | umgesetzt 08.10.2026 |
+| K147 | 6, `chapter_6.tex:86` | *Der Entwurf* – benennen, auf die Arbeit verweisen. | *Der Entwurf der kurativen Reservierung und der ermittelte kurative Reservierungspreis zeigen aber, dass …* Stilregel 5 verbietet *diese Arbeit* an dieser Stelle. C12. | ±0 | umgesetzt 08.10.2026 |
+| K148 | Anhang A und alle Anhänge | Im Text kaum Verweise auf den Anhang. | Bestand: Kapitel 2 verweist auf A und B, Kapitel 3 auf C, D und den Ablauf, Kapitel 4 auf F und G, Kapitel 5 und 6 auf keinen. Fehlende Verweise setzen: 2.3.3 ein zweiter auf Anhang A beim Berechnungsbeispiel, 5.4 Zeile 259 auf Anhang A (Weber-Ansatz je Viertelstunde), 5.2 Zeile 114 auf Anhang C (Suche), 4.5 auf Anhang E (Median-Jahreslauf) und 4.2 auf Anhang D. Je Stelle ein Halbsatz. | +3 | umgesetzt 08.10.2026 |
+| K149 | Anhang D, Validierung | Im Text an passender Stelle auf den Anhang verweisen. | Kapitel 3 verweist in 3.3 schon einmal auf Anhang D. Zweiter Verweis in 5.2 Zeile 179 (*Die Validierung nach Abschnitt 3.3 und Anhang D belegt …*). Mit K148. | ±0 | umgesetzt 08.10.2026 |
+
+###### Stufe B, Vorschlag und Freigabe, zweiter Schwung
+
+| Nr. | Stelle | Kommentar des Betreuers | Was vorzulegen ist | Länge | Entscheidung |
+|---|---|---|---|---|---|
+| K59, K60 | 5.2, `chapter_5.tex:115`, `116` | *Keine einzelne Stunde lässt sich senken, ohne dass die Bindung bricht* kompliziert; *Absenken*? | *Wird der Preis einer einzelnen Stunde gesenkt, so ist mindestens eine Stunde nicht mehr voll reserviert. Ob mehrere Stunden zugleich einen niedrigeren Preis tragen könnten, prüft das Verfahren dagegen nicht.* | ±0 | umgesetzt 08.10.2026 |
+| K62 | 5.2, `chapter_5.tex:121` | *Reihenfolge des Abstiegs* – welcher Abstieg? | *Die Lage des Minimums hängt zudem davon ab, in welcher Reihenfolge die zweite Iteration die Preise der einzelnen Stunden senkt.* Deckt sich mit 3.2.4: Stunde für Stunde, Durchgänge bis keine Senkung mehr. | ±0 | umgesetzt 08.10.2026 |
+| K63 | 5.2, `chapter_5.tex:114` bis `125` | Logik des ganzen Absatzes unklar. | Absatzplan: These (die Preise der zweiten Iteration sind ein koordinatenweises Minimum, kein globales), Grund (jede geprüfte Kombination kostet einen Lauf, eine gemeinsame Suche über 48 Stunden ist nicht bezahlbar), Folge 1 (ein anderer Abstieg gäbe andere Preise, die ebenso voll reservieren), Folge 2 (ein globales Minimum läge nicht höher, der ausgewiesene Preis ist deshalb eine obere Schranke und der vorsichtigere Wert), Konsequenz (das Jahresniveau ist belastbarer als die einzelne Stunde). Zwölf Sätze auf acht. **wichtig** | −2 | umgesetzt 08.10.2026 |
+| K69 | 5.2, `chapter_5.tex:152` | *darf den kurativen Reservierungspreis nicht tragen* | *Der Abruf ist vielmehr mitzumodellieren, doch die Annahme über den Abruf darf den kurativen Reservierungspreis nicht allein bestimmen.* C13. | ±0 | umgesetzt 08.10.2026 |
+| K71 | 5.2, `chapter_5.tex:158` | Schlussfolgerung *neu aufzubauen* nicht nachvollziehbar. | Grund voranstellen: *Weil die Lieferung der aFRR-Arbeit den Preis so stark bewegt und das Bietverhalten von Speichern nicht bekannt ist, ließe sich die Abbildung der aFRR nur mit Daten aus der Vermarktung von Speichern verbessern.* | ±0 | umgesetzt 08.10.2026 |
+| K72, K74 | 5.2, `chapter_5.tex:162` bis `169` | *unterschätzt eher* – warum? *Der Faktor zeigt die Grenze einer Sensitivität* unverständlich. | Absatzplan: These (die Abbildung mit dem ID1 unterschätzt den Erlös am IDC eher, denn sie lässt den mehrfachen Handel derselben Lieferstunde außer Acht), Sensitivität (der Faktor auf die Handelsspanne belegt, dass ein höherer Erlös am IDC den Preis hebt), Grenze (der Faktor streckt die Abweichung vom Tagesmittel, der Vorteil des mehrfachen Handels entsteht aber um den mittleren Preis, beide fallen nicht zusammen), Konsequenz (die Sensitivität misst allein die Breite der Spanne, der Einfluss des mehrfachen Handels bleibt ohne Orderbücher offen). Satz 163 entfällt. | −1 | umgesetzt 08.10.2026 |
+| K88 | 5.3, `chapter_5.tex:228` | *Preis einer viertel zu haben und verdoppelt die Zeit* – was? | *Eine halbe Megawattstunde je Megawatt kostet nach Abschnitt~\ref{sec:sensi_abrufdauer} kaum mehr als eine viertel, verdoppelt aber die Zeit, die dem ÜNB für die Ablösung bleibt.* C7. | ±0 | umgesetzt 08.10.2026 |
+| K100 | 5.5, `chapter_5.tex:294` | *Redispatch ändert den Fahrplan einmalig* – schränkt ebenfalls über die gesamte Dauer ein. | *Der Redispatch ändert einen bestehenden Fahrplan für die Dauer der Maßnahme, während die kurative Reservierung den Fahrplan vorab über die ganze Bindungsdauer einschränkt, auch wenn kein Abruf eintritt.* Teil von C9, Absatz 289 bis 296. | ±0 | umgesetzt 08.10.2026 |
+| K101 bis K103 | 5.5, `chapter_5.tex:298` bis `304` | Gebotszonensplit: warum, was, Nutzen. | Nach C10: *Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab. Ein Gebotszonensplit, also die Aufteilung in mehrere Preiszonen, deren Preisunterschied die knappe Übertragungskapazität abbildet, gäbe dem Handel ein örtliches Signal und senkte den Bedarf an Engpassmanagement.* Satz 300 entfällt. | ±0 | umgesetzt 08.10.2026 |
+| K106 | 5.5, `chapter_5.tex:306` bis `312` | Argumentation nicht nachvollziehbar. | Absatzplan nach C9: These (die drei Wege aus 5.4 begrenzen den Akteur, statt die Kapazität des Netzes zu nutzen), Gegenstück (eine kurative Maßnahme nutzt die Leistung des Akteurs und macht die Begrenzung entbehrlich, sobald genügend wirksame Anlagen je Netzknoten anbieten), Folge (ein auf BESS abgestimmtes Anschlussverfahren und die Einbindung in das Engpassmanagement erlauben zusammen mehr Speicherleistung am bestehenden Netz), Nutzen (mehr Flexibilität in den kritischen Stunden), Schluss nach K144 (*unterstützt den Ausbau der Speicher*). **wichtig** | ±0 | umgesetzt 08.10.2026 |
+| K107 | 5.5, `chapter_5.tex:315` | *Ausfall eines Gliedes wirkt wie Ausfall eines Betriebsmittels* – langfristig nicht. | *… und der Ausfall eines Gliedes lässt die eingeplante Maßnahme im Fehlerfall ausfallen, sodass das Netz in diesem Moment ohne die eingeplante Entlastung bleibt.* Teil von C9, Absatz 314 bis 321. | ±0 | umgesetzt 08.10.2026 |
+| K108 | 5.5, `chapter_5.tex:318` | *hält den Zustand nur bis zur Ablösung* – muss nicht immer so sein. | *Nach der Auslösung hält eine kurative Maßnahme die Leistungsänderung, bis der Engpass vergeht oder eine ablösende Maßnahme greift, für die der allgemeine Redispatch oder ein zusätzliches Produkt mit längerem Zeitfenster in Betracht kommt.* Teil von C9. | ±0 | umgesetzt 08.10.2026 |
+| K110 | 5.5, `chapter_5.tex:314` bis `321` | Argumentationskette unklar, Start Betrieb, Ende Ablösung. | Absatzplan nach C9: These (die Umsetzung entscheidet sich im Betrieb), drei Glieder in der Reihenfolge der Wirkungskette (Einplanung und Maßnahmenset, Auslösung mit Redundanz nach K107, Ablösung nach K108 mit Rückwirkung auf die vorgehaltene Energie), Schluss (InnoSys 2030 und KuPilot erarbeiten die Voraussetzungen). | ±0 | umgesetzt 08.10.2026 |
+| K112 bis K114 | 5.5, `chapter_5.tex:324` bis `326` | Warum zuerst? Warum? Warum? | *Für den Markt ist zu prüfen, wie viele Anbieter ein Netzknoten braucht, denn ohne Wettbewerb am Knoten trägt jedes Gebot einen Knappheitsaufschlag. Für den Preis sind die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung zu bestimmen, ebenso ein Maßstab für die Pönale, denn beide fehlen dem ermittelten Preis nach Abschnitt 5.2. Für den Betrieb bleiben die Redundanz der Wirkungskette, der Nachweis der Verfügbarkeit und die Häufigkeit und Dauer eines Abrufs offen, denn an ihnen hängt die Verbindlichkeit der Zusage.* | +2 | umgesetzt 08.10.2026 |
+| K115 bis K121 | 5.5, `chapter_5.tex:333` bis `340` | Zweck der kurativen Systemführung, siehe C11. | Absatzplan nach C11: These (mit der Ausrollung ändert sich nicht der Zweck, sondern der Maßstab), heute (einzelne Betriebsmittel begrenzen die Übertragung, die kurative Reservierung spart an wenigen Netzknoten präventiven Redispatch), Voraussetzung (Bestand wirksamer Anlagen je Knoten und ein verlässlicher Prozess der Einplanung), Ausrollung (an vielen Knoten wird die Höherauslastung planmäßig, der Netzausbau verschiebt die Begrenzung von einzelnen Betriebsmitteln auf ganze Übertragungswege), Schluss (Effizienz und Preiseinfluss lassen sich erst in einem eingespielten Markt bestimmen). **wichtig** | ±0 | umgesetzt 08.10.2026 |
+| K123, K125 | 6, `chapter_6.tex:4` | *hält den Grenzwert schon vor dem Fehlerfall ein* sagt nicht das Gemeinte; *kostet Milliarden* klarer. | *Das Engpassmanagement im deutschen Übertragungsnetz kostete im Jahr 2025 rund drei Milliarden Euro, denn es ist präventiv angelegt: Der ÜNB plant den Betrieb so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen dauerhaft zulässigen Grenzwert überschreitet.* Zahl aus 4.5 (3071 Millionen Euro, SMARD). | +1 | umgesetzt 08.10.2026 |
+| K127 | 6, `chapter_6.tex:6` | *diese Bereitschaft* – das Beschriebene ist keine Bereitschaft. | *Dafür braucht der ÜNB Anlagen, die nach dem Ausfall innerhalb der zulässigen Zeit ihre Leistung ändern, und die Zusage einer solchen Leistungsänderung heißt kurative Vorhaltung.* | ±0 | umgesetzt 08.10.2026 |
+| K133 | 6, `chapter_6.tex:13` | Sagen, dass die Arbeit es so gemacht hat. | *Erstens hat die Arbeit die kurative Vorhaltung als Marktprodukt ausgestaltet.* C12. | ±0 | umgesetzt 08.10.2026 |
+| K134 | 6, `chapter_6.tex:14` | *bindet je Stunde ein Leistungsband* – was meinst du? | *Die kurative Reservierung verpflichtet den Betreiber, je zugesagter Stunde ein Leistungsband und bei Speichern ein Ladezustandsband freizuhalten, also diese Leistung nicht anderweitig zu vermarkten.* | +1 | umgesetzt 08.10.2026 |
+| K140 | 6, `chapter_6.tex:53` | *verlangt schnelle Leistung* – nicht allgemein, kurativ geht auch im 30-Minuten-Bereich. | *Die kurative Systemführung verlangt in ihren schnellen Reaktionszeitklassen, was ein Speicher hat, nämlich …* Dieselbe Aussage steht im Abstract (*it demands fast power for a short interval*) und in der Kurzfassung, dort *in ihren schnellen Klassen* ergänzen, wenn die Seite es zulässt. **wichtig**, weil es die Kernaussage zu BESS betrifft. | ±0 | umgesetzt 08.10.2026 |
+| K142, K143 | 6, `chapter_6.tex:60` bis `62` | *Maßnahme der Sicherheit* nein; *freie Kapazität verteilt sich* unklar. | Nach C11: *Anfangs spart die kurative Reservierung an den wenigen begrenzenden Netzknoten präventiven Redispatch. Mit dem Netzausbau verschiebt sich die Begrenzung von einzelnen Betriebsmitteln auf ganze Übertragungswege, und ein eingespielter Markt nutzt die Kapazität an vielen Netzknoten planmäßig aus.* Drei Sätze auf zwei. | −1 | umgesetzt 08.10.2026 |
+| K145, K146 | 6, `chapter_6.tex:69`, `71` | *gleichmäßiger belastbares Netz* warum; *bleibt erneut zurück* nicht zwingend, Widerspruch zu Zeile 74. | Zeile 69: *Holt der Netzausbau auf, so werden die Engpässe seltener und wandern an andere Betriebsmittel.* Zeile 71: *…, so kann der Netzausbau erneut hinter der Nachfrage zurückbleiben, und die Engpässe kehren an anderer Stelle wieder.* (Satz 71 und 72 zusammengezogen, Zeile 74 nennt das Marktdesign als Gegenkraft.) | −1 | umgesetzt 08.10.2026 |
+
+###### Entfällt oder bereits erledigt, zweiter Schwung
+
+| Nr. | Stelle | Grund |
+|---|---|---|
+| K120 | 5.5, S. 85 *Die freie Kapazität verteilt sich damit über viele Netzknoten* | Satz seit Commit 54048c6 nicht mehr in 5.5, der Gedanke steht in `chapter_6.tex:61` und fällt unter K143. |
+| K99 | 5.5, `chapter_5.tex:290` | Zweite Stelle von K98, unter C8. |
+
+###### Zuordnung zur Reihenfolge des Betreuers, zweiter Schwung
+
+| Abschnitt | Kommentare |
+|---|---|
+| 5.2 | K58 bis K75 |
+| 5.3 | K76 bis K89 |
+| 5.4 | K90 bis K95 |
+| 5.5 | K96 bis K121 |
+| 6 | K122 bis K147 |
+| Anhang | K148, K149 |
+
+###### Längenbilanz und Reihenfolge, zweiter Schwung
+
+Kapitel 5 endet auf Seite 76 mit rund 20 Zeilen Luft, Kapitel 6 auf Seite 80 mit rund 30 Zeilen Luft, Kapitel 3 ist voll. Zugänge: C7 (+2 bis +4), K112 bis K114 (+2), K123/K125 (+1), K128 (+1), K134 (+1), K148 (+3). Abgänge: K63 (−2), K72/K74 (−1), K75 (−1), K142/K143 (−1), K145/K146 (−1). Saldo etwa +4 bis +6 Zeilen in Kapitel 5 und +2 in Kapitel 6, beides innerhalb der Luft, sofern keine Gleitumgebung kippt.
+
+1. Entscheidungen C7 bis C13 vom Verfasser.
+2. Stufe A des zweiten Schwungs in einem Durchgang je Kapitel, mit C8 und C13 als Tabellen Alt gegen Neu.
+3. Stufe B als Wortlaut im Widerspruchsverfahren, die vier Absatzpläne aus C9 und C11 je Absatz mit Freigabe.
+4. C12: Kapitel 6 nach Einbau aller Stellen als Ganzes lesen, auf Wunsch Fremdleser-Prüfung durch einen Agenten.
+5. Gemeinsam mit Runde 3 des ersten Schwungs: Build, Seitenzahlen gegen 49, 65, 77, 81, Prüfsuite, Protokoll.
+
+---
+
+##### Umgesetzt am 08.10.2026, Runde 3 des ersten Schwungs und zweiter Schwung
+
+Stand nach Build: 129 Seiten, Ergebnisse ab S. 49, Diskussion ab S. 65, Zusammenfassung ab S. 77, Literaturverzeichnis ab S. 81. Prüfsuite ohne Befund in 15 Dateien. Eingebaut sind Runde 3 des ersten Schwungs (Pakete 1 bis 7, ohne J29), die vier Absätze aus C9, der Einwand des Verfassers zu § 13a, Stufe A und B des zweiten Schwungs sowie C7, C8, C10, C11, C12 und C13. Für die Seitenbilanz sind in Kapitel 4 und 5 gut 20 Zeilen gestrafft, darunter eine Dopplung in 4.3. Offen: K140 im Abstract und in der Kurzfassung (*in ihren schnellen Reaktionszeitklassen*), weil beide Seiten voll sind. Die Spalte Entscheidung bleibt leer, bis der Verfasser widerspricht.
+
+| # | Nr. | Datei | Alt | Neu | Entscheidung |
+|---|---|---|---|---|---|
+| 1 | L8 | Kap. 1 | sodass bei der präventiven Systemführung eine thermische Reserve ungenutzt bleibt | sodass bei der präventiven Systemführung eine thermische Reserve der Leitungen und Transformatoren ungenutzt bleibt | angenommen 08.10.2026 |
+| 2 | J3/J9 | Kap. 1 | Im bestehenden Regime des Redispatch können nur wenige Erzeugungsanlagen so kurzfristig reagieren, sodass das Engpassmanagement an seine Grenzen stößt. | Im bestehenden Engpassmanagement können nur wenige Erzeugungsanlagen so kurzfristig reagieren, sodass es an seine Grenzen stößt. | angenommen 08.10.2026 |
+| 3 | J5 | Kap. 1 | Eine Lösung könnte darin liegen, das Engpassmanagement um die kurative Systemführung zu erweitern, die | Ein Lösungsansatz ist die Erweiterung des Engpassmanagements um die kurative Systemführung, die | angenommen 08.10.2026 |
+| 4 | J24 | Kap. 2 | Zuletzt wird geprüft, ob sich eine der bestehenden Vergütungslogiken | Zuletzt wird dargelegt, ob sich eine der bestehenden Vergütungslogiken | angenommen 08.10.2026 |
+| 5 | J25 | Kap. 2 | eine solche Vorhaltung anträte. | eine solche Vorhaltung anträte. ¶ Die Reihenfolge folgt dem Weg von der Maßnahme über den Markt zum Preis der Vorhaltung. | angenommen 08.10.2026 |
+| 6 | C8 | Kap. 2 | Die Erzeugungsauslagen fallen deshalb je bewegter Megawattstunde an | Die Erzeugungsauslagen fallen deshalb je abgerufener Megawattstunde an | angenommen 08.10.2026 |
+| 7 | K148 | Kap. 2 | Das Berechnungsbeispiel rechnet mit vier Volllaststunden | Das Berechnungsbeispiel in Anhang [anh:weber] rechnet mit vier Volllaststunden | angenommen 08.10.2026 |
+| 8 | N46 | Kap. 3 | Daneben prüfen zwei Sensitivitäten den Einfluss der aFRR-Modellierung und des Spreads am IDC, und die Einzelmarktvalidierung optimiert jeden Markt für sich. | Daneben prüfen drei Sensitivitäten und eine Zukunftsvariante die Annahmen über die Märkte, wie in Abschnitt [sec:sensitivities] beschrieben, und die Einzelmarktvalidierung optimiert jeden Markt für sich. | angenommen 08.10.2026 |
+| 9 | N5 | Kap. 4 | Welche Vermarktung die kurative Reservierung verdrängt, zeigt der Fahrplan unter vorgegebenen Preisen. | Bevor der Jahreslauf in Abschnitt [sec:iteration_prices] alle Tage des Jahres 2025 auswertet, zeigt der Fahrplan einzelner Tage unter vorgegebenen Preisen, welche Vermarktung die kurative Reservierung zuerst verdrängt. | angenommen 08.10.2026 |
+| 10 | N18 | Kap. 4 | Die erste Iteration der Preissuche bindet die Leistung nicht vollständig, und der ÜNB zahlt dafür dennoch beinahe den vollen Preis. ¶ Unter den Preisen der ersten Iteration zahlt der ÜNB 409,8 | Mit den Preisen der ersten Iteration bleibt die Leistung nicht vollständig gebunden, und der ÜNB zahlt dennoch beinahe den vollen Preis. ¶ Der ÜNB zahlt dort 409,8 | angenommen 08.10.2026 |
+| 11 | N24 | Kap. 4 | Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös. | Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös. ¶ Der Aufschlag von 23,3 Prozent unter vollständiger Verdrängung folgt aus der Preisbildung nach Abschnitt [sec:reservation_price_search], denn der Preis einer Stunde stellt allein die zuletzt reservierte Leistung indifferent, während die übrige reservierte Leistung mehr als ihre Opportunitätskosten erhält. | angenommen 08.10.2026 |
+| 12 | N30 | Kap. 4 | Die Ursache ist nicht geprüft, in Betracht kommt die Kopplung benachbarter Stunden über das Ladezustandsband. | Ein Preis über dem höchsten Marktpreis derselben Stunde ist möglich, weil die Reservierung nach Abschnitt [sec:reservation_price_search] neben der Leistung ein Ladezustandsband bindet und damit auch die Vermarktung benachbarter Stunden verdrängt. ¶ Ob diese Kopplung die sieben Stunden erklärt, ist nicht geprüft. | angenommen 08.10.2026 |
+| 13 | N37 | Kap. 4 | Beide Reservierungsrichtungen sind im Dezember am günstigsten, nämlich 5,8 €/(MW·h) in der Lade- und 9,9 €/(MW·h) in der Entladerichtung, und steigen | Im Monatsmedian der Tagesmittel aus Abbildung [fig:jahreslauf_mittel] sind beide Reservierungsrichtungen im Dezember am günstigsten, nämlich mit 5,8 €/(MW·h) in der Lade- und 9,9 €/(MW·h) in der Entladerichtung, und steigen | angenommen 08.10.2026 |
+| 14 | K148 | Kap. 4 | neben der Redispatchleistung im Tagesmittel dargestellt. | neben der Redispatchleistung im Tagesmittel dargestellt. ¶ Dieselbe Darstellung mit dem Median je Tag steht in Anhang [anh:jahreslauf_median]. | angenommen 08.10.2026 |
+| 15 | C8 | Kap. 4 | von 101 Euro je bewegter Megawattstunde | von 101 Euro je abgerufener Megawattstunde | angenommen 08.10.2026 |
+| 16 | N43 | Kap. 4 | Der Whisker trägt am oberen Ende seinen Wert.} | Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | angenommen 08.10.2026 |
+| 17 | N43 | Kap. 4 | unter vier Liefermodi der aFRR-Arbeit bei gleichem Leistungspreis, zweite Iteration.} | unter vier Liefermodi der aFRR-Arbeit bei gleichem Leistungspreis, zweite Iteration. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | angenommen 08.10.2026 |
+| 18 | N43 | Kap. 4 | Der Faktor streckt den Abstand zum Tagesmittel.} | Der Faktor streckt den Abstand zum Tagesmittel. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | angenommen 08.10.2026 |
+| 19 | N43 | Kap. 4 | bei drei Stufen der vorgehaltenen Energie je Richtung, zweite Iteration.} | bei drei Stufen der vorgehaltenen Energie je Richtung, zweite Iteration. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | angenommen 08.10.2026 |
+| 20 | N46 | Kap. 4 | Die Zukunftsvariante setzt eine künftige Sättigung des Marktes für aFRR-Leistung und mehr Wettbewerb am IDC als pauschale Abschläge auf die Preise um. | Die Zukunftsvariante ist allein in diesem Abschnitt definiert und setzt eine künftige Sättigung des Marktes für aFRR-Leistung und mehr Wettbewerb am IDC als pauschale Abschläge auf die Preise um. | angenommen 08.10.2026 |
+| 21 | N47 | Kap. 4 | Der Markterlös ohne kurative Bindung sinkt von 340,6 Tsd. €/(MW·a) auf 282,7 Tsd. €/(MW·a) und damit um 17,0 Prozent. ¶ Der Abschlag von 20 Prozent trifft allein die aFRR und den IDC, während die Preise des DA und der FCR unverändert bleiben. ¶ Die Bezugsanlage verschiebt daraufhin Leistung in diese beiden Märkte, deren Erlös dadurch absolut steigt. | Der Markterlös ohne kurative Bindung sinkt von 340,6 Tsd. €/(MW·a) auf 282,7 Tsd. €/(MW·a) und damit um 17,0 Prozent, weil der Abschlag von 20 Prozent die aFRR und den IDC trifft, auf die zusammen neun Zehntel des Bruttoerlöses entfallen. ¶ Die Preise des DA und der FCR bleiben unverändert, sodass die Bezugsanlage Leistung in diese beiden Märkte verschiebt und ihr Erlös dort absolut steigt. | angenommen 08.10.2026 |
+| 22 | C13 | Kap. 5 | wo die Annahmen der Modellierung das Ergebnis tragen und | wo die Annahmen der Modellierung das Ergebnis bestimmen und | angenommen 08.10.2026 |
+| 23 | N56 | Kap. 5 | Die erste Anforderung betrifft die Reaktionszeit | Die erste Anforderung (A1) betrifft die Reaktionszeit | angenommen 08.10.2026 |
+| 24 | C13 | Kap. 5 | welche Technologien mit ihrer Teilnahme ein Potenzial für die kurative Systemführung tragen. | welche Technologien mit ihrer Teilnahme ein Potenzial für die kurative Systemführung bieten. | angenommen 08.10.2026 |
+| 25 | N56 | Kap. 5 | Die Anforderung an die Vergütung lautet | Die Anforderung an die Vergütung (A4) lautet | angenommen 08.10.2026 |
+| 26 | N56 | Kap. 5 | Die Diskriminierungsfreiheit ist als Anforderung schnell erfüllt | Die Diskriminierungsfreiheit (A5) ist als Anforderung schnell erfüllt | angenommen 08.10.2026 |
+| 27 | N53 | Kap. 5 | Die Standortabhängigkeit knüpft daran an, denn ohne knotenscharfe Gebote und Wirksamkeit am Netzknoten kann der ÜNB keine kurative Maßnahme einplanen. | Die Standortabhängigkeit (A3) knüpft daran an, denn der ÜNB plant eine kurative Maßnahme nur ein, wenn er ihre Wirkung am betroffenen Betriebsmittel kennt. ¶ Diese Wirkung hängt von der Sensitivität des Netzknotens ab, sodass der ÜNB knotenscharfe Gebote braucht und die Maßnahme in der Netzsicherheitsrechnung je Knoten prüft. | angenommen 08.10.2026 |
+| 28 | N56 | Kap. 5 | entscheidet die Anforderung an die Teilnahme. | entscheidet die Anforderung an die Teilnahme (A6). | angenommen 08.10.2026 |
+| 29 | N56 | Kap. 5 | Die Verträglichkeit mit den bestehenden Märkten ist schwerer zu erfüllen | Die Verträglichkeit mit den bestehenden Märkten (A7) ist schwerer zu erfüllen | angenommen 08.10.2026 |
+| 30 | N54 | Kap. 5 | Der Abzug bleibt jedoch begrenzt, denn der ÜNB steuert die beschaffte Menge. | Der Abzug bleibt jedoch begrenzt, denn der ÜNB beschafft allein den Bedarf, den seine Planung des Engpassmanagements am Vortag ausweist. | angenommen 08.10.2026 |
+| 31 | N56 | Kap. 5 | Die Verbindlichkeit der Zusage verlangt eine Pönale | Die Verbindlichkeit der Zusage (A2) verlangt eine Pönale | angenommen 08.10.2026 |
+| 32 | C13 | Kap. 5 | Jede dieser Vereinfachungen trägt eine Unschärfe in den kurativen Reservierungspreis. | Jede dieser Vereinfachungen bringt eine Unschärfe in den kurativen Reservierungspreis. | angenommen 08.10.2026 |
+| 33 | K59-63 | Kap. 5 | Die Grenze des Verfahrens zeigt sich an den Preisen der zweiten Iteration, die ein koordinatenweises und kein globales Minimum sind. ¶ Keine einzelne Stunde lässt sich senken, ohne dass die vollständige Bindung bricht. ¶ Ein Absenken mehrerer Stunden zugleich prüft das Verfahren dagegen nicht. ¶ Der Grund liegt im Aufbau der Suche, denn sie ist eine Minimierung der Preise über der Maximierung des Erlöses im Tagesmodell. ¶ Ob ein Satz von Preisen die vollständige Bindung trägt, zeigt erst ein Lauf des Tagesmodells. ¶ Jede geprüfte Kombination von Preisen kostet damit einen Lauf. ¶ Eine gemeinsame Suche über alle 48 Stunden und Richtungen verlangte ein Vielfaches der einigen hundert Läufe, die die zweite Iteration schon je Tag braucht. ¶ Die Lage des Minimums hängt zudem an der Reihenfolge des Abstiegs. ¶ Eine andere Reihenfolge führte zu einem anderen Satz von Preisen, der die vollständige Bindung ebenso trägt. ¶ Ein globales Minimum läge deshalb nicht über dem ausgewiesenen Preis. ¶ Der ausgewiesene kurative Reservierungspreis ist damit der vorsichtigere Wert. ¶ Belastbarer als die Höhe einer einzelnen Stunde ist deshalb das Niveau über das Jahr. | Die Grenze des Verfahrens nach Abschnitt [sec:reservation_price_search] und Anhang [anh:ablauf] zeigt sich an den Preisen der zweiten Iteration, die ein koordinatenweises und kein globales Minimum sind. ¶ Wird der Preis einer einzelnen Stunde gesenkt, so ist mindestens eine Stunde nicht mehr voll reserviert. ¶ Ob mehrere Stunden zugleich einen niedrigeren Preis haben könnten, prüft das Verfahren dagegen nicht, denn jede geprüfte Kombination von Preisen erfordert einen eigenen Lauf des Tagesmodells. ¶ Eine gemeinsame Suche über alle 48 Stunden und Richtungen verlangte ein Vielfaches der einigen hundert Läufe, die die zweite Iteration schon je Tag braucht. ¶ Die Lage des Minimums hängt zudem davon ab, in welcher Reihenfolge die zweite Iteration die Preise der einzelnen Stunden senkt. ¶ Eine andere Reihenfolge führte zu einem anderen Satz von Preisen, der die vollständige Bindung ebenso sicherstellt. ¶ Ein globales Minimum läge deshalb nicht über dem ausgewiesenen Preis, sodass der ausgewiesene kurative Reservierungspreis eine obere Schranke und damit der vorsichtigere Wert ist. ¶ Belastbarer als die Höhe einer einzelnen Stunde ist deshalb das Niveau über das Jahr. | angenommen 08.10.2026 |
+| 34 | K64/65 | Kap. 5 | Die stärkste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Preise. | Die einflussreichste Annahme des Optimierungsmodells ist die vollständige Kenntnis der Marktpreise des Liefertages. | angenommen 08.10.2026 |
+| 35 | C13 | Kap. 5 | Ein Akteur ohne Zuschlag trägt den Erlös der Regelleistung deshalb nicht als Opportunität, | Ein Akteur ohne Zuschlag hat den Erlös der Regelleistung deshalb nicht als Opportunität, | angenommen 08.10.2026 |
+| 36 | C13 | Kap. 5 | Die Leistungspreise tragen das Niveau des kurativen Reservierungspreises aber als Rechengröße, | Die Leistungspreise bestimmen das Niveau des kurativen Reservierungspreises aber als Rechengröße, | angenommen 08.10.2026 |
+| 37 | K66 | Kap. 5 | Unter den geprüften Annahmen trägt die Abbildung der Regelleistung das Ergebnis am stärksten, denn | Unter den geprüften Annahmen beeinflusst die Abbildung der Regelleistung das Ergebnis am stärksten, denn | angenommen 08.10.2026 |
+| 38 | K67 | Kap. 5 | Die Sensitivität bestätigt den Einfluss, denn der Grenzpreis des letzten Zuschlags hebt den Median | Die Sensitivität mit dem Grenzpreis des letzten Zuschlags in Abbildung [fig:sensi_afrr_leistung] bestätigt den Einfluss, denn dieser Grenzpreis hebt den Median | angenommen 08.10.2026 |
+| 39 | K68 | Kap. 5 | Der Grenzpreis steht erst nach der Viertelstunde fest und mit ihm der Abruf der Anlage. | Der Grenzpreis steht erst nach Ende der Viertelstunde fest, für die die Arbeit geliefert wird, und mit ihm der Abruf der Anlage. | angenommen 08.10.2026 |
+| 40 | K69 | Kap. 5 | Der Abruf ist vielmehr mitzumodellieren, doch die Modellierung darf den kurativen Reservierungspreis nicht tragen. | Der Abruf ist vielmehr mitzumodellieren, doch die Annahme über den Abruf darf den kurativen Reservierungspreis nicht allein bestimmen. | angenommen 08.10.2026 |
+| 41 | K70 | Kap. 5 | Die Sensitivitäten zeigen, wie stark die Modellierung | Die Sensitivitäten in Abschnitt [sec:sensi_afrr] zeigen, wie stark die Modellierung | angenommen 08.10.2026 |
+| 42 | K71 | Kap. 5 | Eine belastbare Abbildung der aFRR wäre deshalb auf Erfahrungswerten und Daten aus der Vermarktung von Speichern neu aufzubauen. | Weil die Lieferung der aFRR-Arbeit den Preis so stark bewegt und das Bietverhalten von Speichern nicht bekannt ist, ließe sich die Abbildung der aFRR nur mit Daten aus der Vermarktung von Speichern verbessern. | angenommen 08.10.2026 |
+| 43 | C13 | Kap. 5 | Für eine konservative Aussage unter marktdurchschnittlichem Bietverhalten tragen der gemittelte Zuschlagspreis der aFRR-Leistung und die anteilige Lieferung der aFRR-Arbeit aber. | Für eine konservative Aussage unter marktdurchschnittlichem Bietverhalten genügen der gemittelte Zuschlagspreis der aFRR-Leistung und die anteilige Lieferung der aFRR-Arbeit aber. | angenommen 08.10.2026 |
+| 44 | K72-74 | Kap. 5 | Der IDC ist mit dem ID1 je Viertelstunde abgebildet, und das Optimierungsmodell lässt nur die Arbitrage zwischen Viertelstunden zu. ¶ Diese Abbildung unterschätzt den Erlös am IDC eher, weshalb ein Faktor auf die Handelsspanne als Sensitivität geprüft ist. ¶ Der Faktor zeigt dabei die Grenze einer Sensitivität. ¶ Ein höherer Erlös am IDC hebt den kurativen Reservierungspreis, und die Sensitivität belegt diesen Zusammenhang. ¶ Der Faktor streckt dafür jede Abweichung des Intradaypreises von seinem Tagesmittel und macht die ohnehin weit vom Tagesmittel entfernten Stunden noch schwerer verdrängbar. ¶ Der Vorteil des mehrfachen Handels entsteht dagegen innerhalb desselben Lieferzeitpunkts. ¶ Ein Händler kauft und verkauft dieselbe Lieferstunde mehrfach und verdient an der Bewegung des Preises innerhalb dieser Stunde. ¶ Unter pay-as-bid liegt der Wert des IDC nicht in größeren Spannen, sondern im mehrfachen Handel um den mittleren Preis, der den Wert aller Lieferslots hebt. ¶ Die vom Tagesmittel entfernten Stunden und die mehrfach gehandelten Stunden fallen nicht zusammen, sodass die Sensitivität allein die Breite der Handelsspanne misst. ¶ Für eine Aussage über den Vorteil des mehrfachen Handels wären die Orderbücher des IDC nötig, sodass sein Einfluss auf den kurativen Reservierungspreis offen bleibt. | Der IDC ist mit dem ID1 je Viertelstunde abgebildet, und das Optimierungsmodell lässt nur die Arbitrage zwischen Viertelstunden zu. ¶ Diese Abbildung unterschätzt den Erlös am IDC eher, denn sie lässt den mehrfachen Handel derselben Lieferstunde außer Acht, bei dem ein Händler dieselbe Stunde mehrfach kauft und verkauft und an der Bewegung des Preises innerhalb dieser Stunde verdient. ¶ Ein Faktor auf die Handelsspanne ist deshalb in Abschnitt [sec:sensi_idc] als Sensitivität geprüft, und er belegt, dass ein höherer Erlös am IDC den kurativen Reservierungspreis hebt. ¶ Der Faktor streckt dafür jede Abweichung des Intradaypreises von seinem Tagesmittel und macht die ohnehin weit vom Tagesmittel entfernten Stunden noch schwerer verdrängbar. ¶ Der Vorteil des mehrfachen Handels entsteht dagegen um den mittleren Preis, denn unter pay-as-bid hebt er den Wert aller Lieferslots und nicht die Spanne. ¶ Die vom Tagesmittel entfernten Stunden und die mehrfach gehandelten Stunden fallen nicht zusammen, sodass die Sensitivität allein die Breite der Handelsspanne misst. ¶ Für eine Aussage über den Vorteil des mehrfachen Handels wären die Orderbücher des IDC nötig, sodass sein Einfluss auf den kurativen Reservierungspreis offen bleibt. | angenommen 08.10.2026 |
+| 45 | K75 | Kap. 5 | Die letzte Grenze ist die Perspektive der Untersuchung. ¶ Das Optimierungsmodell rechnet eine einzelne Anlage und bildet | Die letzte Vereinfachung ist der Untersuchungsrahmen nach Abschnitt [sec:model_scope], denn das Optimierungsmodell rechnet eine einzelne Anlage und bildet | angenommen 08.10.2026 |
+| 46 | K149 | Kap. 5 | Die Validierung belegt, dass der abgebildete Marktumfang | Die Validierung nach Abschnitt [sec:model_verification] und Anhang [anh:validierung] belegt, dass der abgebildete Marktumfang | angenommen 08.10.2026 |
+| 47 | C13 | Kap. 5 | denn eine kurzfristig umplanende Anlage trägt andere Kosten als eine früh angewiesene. | denn eine kurzfristig umplanende Anlage hat andere Kosten als eine früh angewiesene. | angenommen 08.10.2026 |
+| 48 | K77-79 | Kap. 5 | Der Arbeitspreis des Redispatch und der kurative Reservierungspreis tragen zudem dieselbe Dimension und meinen Verschiedenes, denn der eine vergütet bewegte Arbeit und der andere die Vorhaltung. ¶ Jeder Vergleich des kurativen Reservierungspreises mit einem Preis des Redispatch trägt deshalb eine Unsicherheit. ¶ Der mittlere Arbeitspreis des präventiven Redispatch gibt allein einen Anhaltspunkt und dient als präventiver Vergleichspreis. | Der Arbeitspreis des Redispatch und der kurative Reservierungspreis sind zudem dimensionsgleich und meinen Verschiedenes, denn der eine vergütet abgerufene Arbeit und der andere die Vorhaltung. ¶ Jeder Vergleich des kurativen Reservierungspreises mit einem Preis des Redispatch ist deshalb nur eingeschränkt aussagekräftig. ¶ Der mittlere Arbeitspreis des präventiven Redispatch nach Abschnitt [sec:price_vs_redispatch] gibt allein einen Anhaltspunkt und dient als präventiver Vergleichspreis. | angenommen 08.10.2026 |
+| 49 | K79 | Kap. 5 | Trotz dieser Unsicherheit erweist sich der kurative Reservierungspreis als wettbewerbsfähig, | Trotz dieser Einschränkung erweist sich der kurative Reservierungspreis als wettbewerbsfähig, | angenommen 08.10.2026 |
+| 50 | K80 | Kap. 5 | Über den Tag wechselt jedoch, welche Richtung den Preis trägt. | Über den Tag wechselt jedoch nach Abschnitt [sec:price_pattern], welche Reservierungsrichtung die teurere ist. | angenommen 08.10.2026 |
+| 51 | K81 | Kap. 5 | Eine solche Anlage bietet diese Reservierung voraussichtlich günstiger an | Eine Wind- oder Photovoltaikanlage bietet diese Reservierung voraussichtlich günstiger an | angenommen 08.10.2026 |
+| 52 | K81 | Kap. 5 | Für die Rücknahme der Einspeisung eignet sich eine solche Anlage deshalb besonders. | Für die Rücknahme der Einspeisung eignet sich eine Wind- oder Photovoltaikanlage deshalb besonders. | angenommen 08.10.2026 |
+| 53 | K82 | Kap. 5 | Die Zusage einer Wind- oder Photovoltaikanlage trägt zudem ein Risiko, denn | Die Zusage einer Wind- oder Photovoltaikanlage ist zudem unsicher, denn | angenommen 08.10.2026 |
+| 54 | K83 | Kap. 5 | Liefert eine engpasswirksame Anlage wegen einer Prognoseabweichung weniger, so | Speist eine engpasswirksame Anlage wegen einer Prognoseabweichung weniger ein, so | angenommen 08.10.2026 |
+| 55 | K81 | Kap. 5 | Welche Leistung eine solche Anlage gesichert anbieten kann | Welche Leistung eine Wind- oder Photovoltaikanlage gesichert anbieten kann | angenommen 08.10.2026 |
+| 56 | K81 | Kap. 5 | so ist die kurative Reservierung für eine solche Anlage eine zusätzliche Erlösquelle | so ist die kurative Reservierung für eine Wind- oder Photovoltaikanlage eine zusätzliche Erlösquelle | angenommen 08.10.2026 |
+| 57 | K84 | Kap. 5 | Der Jahresverlauf spricht am stärksten für die Beschaffung | Der Jahresverlauf des kurativen Reservierungspreises aus Abschnitt [sec:price_vs_redispatch] spricht am stärksten für die Beschaffung | angenommen 08.10.2026 |
+| 58 | K85 | Kap. 5 | in denen der Redispatch Windstrom im Norden abregelt. | in denen der ÜNB Windenergieanlagen im Norden im Redispatch abregelt. | angenommen 08.10.2026 |
+| 59 | C7 | Kap. 5 | und einem Speicher weniger Flexibilität nimmt als die vollständige Bindung. | und einem Speicher weniger Flexibilität nimmt als die vollständige Bindung nach Abschnitt [sec:iteration_prices]. | angenommen 08.10.2026 |
+| 60 | K87 | Kap. 5 | dass der Zustand im Fehlerfall bis zur ablösenden Maßnahme zu halten ist. | dass die Anlage ihre Leistungsänderung im Fehlerfall bis zur ablösenden Maßnahme durchhält. | angenommen 08.10.2026 |
+| 61 | K88 | Kap. 5 | Eine vorgehaltene Energie von einer halben Megawattstunde je Megawatt ist fast zum Preis einer viertel zu haben und verdoppelt die Zeit für eine solche Ablösung. | Eine halbe Megawattstunde je Megawatt kostet nach Abschnitt [sec:sensi_abrufdauer] kaum mehr als eine viertel, verdoppelt aber die Zeit, die dem ÜNB für die Ablösung bleibt. | angenommen 08.10.2026 |
+| 62 | K89 | Kap. 5 | denn der Preis aus dem Wettbewerb bildet ab, was eine Anlage tatsächlich aufgibt. | denn der Preis aus dem Wettbewerb bildet die Erlöse ab, die einer Anlage durch die Reservierung entgehen. | angenommen 08.10.2026 |
+| 63 | K86 | Kap. 5 | Dem Preis stehen jedoch der Nutzen | Dem kurativen Reservierungspreis stehen jedoch der Nutzen | angenommen 08.10.2026 |
+| 64 | K90 | Kap. 5 | Ein BESS kennt den Netzzustand nicht und handelt allein nach Marktsignalen, sodass es einen Engpass verschärfen kann, ohne es zu wissen. | Der Betreiber eines BESS kennt den Netzzustand nicht und handelt allein nach Marktsignalen, sodass er einen Engpass verschärfen kann, ohne es zu wissen. | angenommen 08.10.2026 |
+| 65 | K91 | Kap. 5 | Der Netzanschluss eines BESS ist damit die nächste Frage. | Aus der Höhe der Leistung folgt die zweite Frage, nämlich die nach dem Netzanschluss eines BESS. | angenommen 08.10.2026 |
+| 66 | K92 | Kap. 5 | auf eine Technologie mit dieser Leistung und diesem Energieinhalt nicht zugeschnitten. | auf eine Technologie mit hoher Leistung und geringem Energieinhalt nicht zugeschnitten. | angenommen 08.10.2026 |
+| 67 | K148 | Kap. 5 | denn die kostenbasierte Vergütung nach dem modifizierten Weber-Ansatz bewertet jede Viertelstunde für sich. | denn die kostenbasierte Vergütung nach dem modifizierten Weber-Ansatz in Anhang [anh:weber] bewertet jede Viertelstunde für sich. | angenommen 08.10.2026 |
+| 68 | K93 | Kap. 5 | Die Trennung von Vorhaltung und Abruf trägt deshalb über die kurative Maßnahme hinaus. | Die Trennung von Vorhaltung und Abruf gilt deshalb über die kurative Maßnahme hinaus. | angenommen 08.10.2026 |
+| 69 | K94/95 | Kap. 5 | Eine Sensitivität mit gesenkten Preisen der aFRR und mit mehr Wettbewerb im kurzfristigen Handel lässt den Markterlös der Bezugsanlage um ein Sechstel nachgeben. | Die Zukunftsvariante in Abschnitt [sec:sensi_zukunft] mit gesenkten Preisen der aFRR und mehr Wettbewerb im kurzfristigen Handel lässt den Markterlös der Bezugsanlage um 17 Prozent nachgeben. | angenommen 08.10.2026 |
+| 70 | C10 | Kap. 5 | Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab, und ein Gebotszonensplit gäbe dem Handel ein örtliches Signal. ¶ Der Dispatch der Energiemärkte entlastete das Netz dann von sich aus, sodass der Bedarf an Engpassmanagement sänke. | Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab. ¶ Ein Gebotszonensplit, also die Aufteilung in mehrere Preiszonen, deren Preisunterschied die knappe Übertragungskapazität abbildet, gäbe dem Handel ein örtliches Signal und senkte den Bedarf an Engpassmanagement. | angenommen 08.10.2026 |
+| 71 | N54 | Kap. 5 | Der Eingriff in die Marktergebnisse bleibt dabei gering, denn der ÜNB steuert die beschaffte Menge. | Der Eingriff in die Marktergebnisse bleibt dabei gering, denn der ÜNB beschafft allein den Bedarf aus seiner Planung des Engpassmanagements. | angenommen 08.10.2026 |
+| 72 | K111 | Kap. 5 | Aus den Grenzen der Untersuchung folgt der weitere Forschungsbedarf, und er betrifft | Aus den Grenzen der Untersuchung nach Abschnitt [sec:model_discussion] folgt der weitere Forschungsbedarf, und er betrifft | angenommen 08.10.2026 |
+| 73 | K112-114 | Kap. 5 | Für den Markt ist zuerst zu prüfen, wie viele Anbieter ein Netzknoten braucht, damit der kurative Marktmechanismus dort wettbewerblich und liquide ist. ¶ Für den Preis sind die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung zu bestimmen, ebenso ein Maßstab für die Höhe der Pönale. ¶ Für den Betrieb bleiben die Ausgestaltung der Redundanz in der Wirkungskette, der Nachweis der Verfügbarkeit und die Häufigkeit und Dauer eines Abrufs im Echtbetrieb offen. | Für den Markt ist zu prüfen, wie viele Anbieter ein Netzknoten braucht, denn ohne Wettbewerb am Knoten enthält jedes Gebot einen Knappheitsaufschlag. ¶ Für den Preis sind die Wahrscheinlichkeit eines Abrufs und damit der Optionswert der Bindung zu bestimmen, ebenso ein Maßstab für die Pönale, denn beide fehlen dem ermittelten Preis. ¶ Für den Betrieb bleiben die Redundanz der Wirkungskette, der Nachweis der Verfügbarkeit und die Häufigkeit und Dauer eines Abrufs im Echtbetrieb offen, denn an ihnen hängt die Verbindlichkeit der Zusage. | angenommen 08.10.2026 |
+| 74 | C13 | Kap. 5 | Für das System trägt die Perspektive der einzelnen Anlage keine Mengenaussage. | Für das System liefert die Perspektive der einzelnen Anlage keine Mengenaussage. | angenommen 08.10.2026 |
+| 75 | K123/125 | Kap. 6 | Das Engpassmanagement im deutschen Übertragungsnetz ist präventiv angelegt und kostet jedes Jahr Milliarden, denn der ÜNB hält den Grenzwert jedes Betriebsmittels schon vor dem Fehlerfall ein. | Das Engpassmanagement im deutschen Übertragungsnetz kostet jedes Jahr Milliarden, denn es ist präventiv angelegt: Der ÜNB plant den Betrieb so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen dauerhaft zulässigen Grenzwert überschreitet. | angenommen 08.10.2026 |
+| 76 | K124/126 | Kap. 6 | die ein Betriebsmittel nach dem Fehler für kurze Zeit trägt, | die ein Betriebsmittel nach dem Ausfall eines anderen Betriebsmittels für kurze Zeit aushält, | angenommen 08.10.2026 |
+| 77 | K126/127 | Kap. 6 | Dafür braucht der ÜNB Anlagen, die nach dem Fehler innerhalb der zulässigen Zeit ihre Leistung ändern, und diese Bereitschaft heißt kurative Vorhaltung. | Dafür braucht der ÜNB Anlagen, die nach dem Ausfall innerhalb der zulässigen Zeit ihre Leistung ändern, und die Zusage einer solchen Leistungsänderung heißt kurative Vorhaltung. | angenommen 08.10.2026 |
+| 78 | K128/129 | Kap. 6 | Eine Vorhaltung kann der ÜNB nicht anordnen, und das Engpassmanagement vergütet sie bislang nicht. | Eine Vorhaltung kann der ÜNB im Rahmen der gegenwärtigen Regulierung nicht anordnen, und über die Mechanismen des Engpassmanagements wird sie bislang nicht vergütet. | angenommen 08.10.2026 |
+| 79 | C12 | Kap. 6 | Die vorliegende Arbeit entwirft deshalb die kurative Reservierung als Produkt, mit dem der ÜNB die Vorhaltung marktlich beschafft, und bestimmt den kurativen Reservierungspreis, den ein Betreiber dafür mindestens fordern muss. | Die vorliegende Arbeit hat deshalb die kurative Reservierung als Produkt entworfen, mit dem der ÜNB die Vorhaltung marktlich beschafft, und den kurativen Reservierungspreis bestimmt, den ein Betreiber dafür mindestens fordern muss. | angenommen 08.10.2026 |
+| 80 | K130 | Kap. 6 | Gerechnet ist der Preis für ein BESS aus der Sicht seines Betreibers, mit den beobachteten Preisen | Das Optimierungsmodell bestimmt den Preis für ein BESS aus der Sicht seines Betreibers, mit den beobachteten Preisen | angenommen 08.10.2026 |
+| 81 | K131/132 | Kap. 6 | Vier Erkenntnisse tragen die Arbeit, und im Folgenden werden sie benannt und auf die kurative Systemführung bezogen. | Vier Erkenntnisse folgen aus den Ergebnissen, und sie werden im Folgenden benannt und auf die kurative Systemführung bezogen. | angenommen 08.10.2026 |
+| 82 | K133 | Kap. 6 | Zuerst lässt sich die kurative Vorhaltung als Marktprodukt ausgestalten. | Erstens ist die kurative Vorhaltung mit der kurativen Reservierung als Marktprodukt ausgestaltet. | angenommen 08.10.2026 |
+| 83 | K134 | Kap. 6 | Die kurative Reservierung bindet je Stunde ein Leistungsband und bei Speichern ein Ladezustandsband, das der Betreiber über die Bindungsdauer freihält. | Die kurative Reservierung verpflichtet den Betreiber, je zugesagter Stunde ein Leistungsband und bei Speichern ein Ladezustandsband freizuhalten, also diese Leistung nicht anderweitig zu vermarkten. | angenommen 08.10.2026 |
+| 84 | K135 | Kap. 6 | Der kurative Reservierungspreis ist zweitens ein Preis gegen die Regelleistung | Zweitens ist der kurative Reservierungspreis ein Preis gegen die Regelleistung | angenommen 08.10.2026 |
+| 85 | K136 | Kap. 6 | Sein Niveau trägt der Leistungspreis der aFRR, denn | Sein Niveau bestimmt der Leistungspreis der aFRR, denn | angenommen 08.10.2026 |
+| 86 | C13 | Kap. 6 | am IDC den Durchschnitt tragen. | am IDC den Durchschnitt heben. | angenommen 08.10.2026 |
+| 87 | K137 | Kap. 6 | Gegen den präventiven Vergleichspreis gehalten, bleibt der kurative Reservierungspreis im Tagesmittel fast das ganze Jahr darunter, auch wenn der Vergleich eine Unsicherheit trägt. | Drittens bleibt der kurative Reservierungspreis unter den getroffenen Annahmen im Tagesmittel fast das ganze Jahr unter dem präventiven Vergleichspreis, auch wenn der Vergleich nur eingeschränkt aussagekräftig ist. | angenommen 08.10.2026 |
+| 88 | C11 | Kap. 6 | Dieses Verhältnis hat der ÜNB zu bewerten, und der Nutzen kann auch in der Systemsicherheit liegen. | Dieses Verhältnis hat der ÜNB zu bewerten, und der Nutzen liegt auch darin, die (N-1)-Sicherheit nach kurzfristigen Fahrplanänderungen wiederherzustellen, für die kein präventives Instrument mehr greift. | angenommen 08.10.2026 |
+| 89 | C11/K138 | Kap. 6 | Drittens müssen BESS in das Engpassmanagement eintreten, denn ihre kurative Einbindung dient nicht allein der Höherauslastung, sondern löst ein Sicherheitsproblem. | Viertens müssen BESS in das Engpassmanagement eintreten, denn ihre kurative Einbindung dient nicht allein der Höherauslastung, sondern stellt die (N-1)-Sicherheit wieder her, die ihre kurzfristigen Fahrplanänderungen gefährden. | angenommen 08.10.2026 |
+| 90 | K139 | Kap. 6 | Ein BESS bewegt große Leistung kurzfristig und handelt allein nach Marktsignalen, sodass es einen Engpass verschärfen kann, ohne es zu wissen. | Der Betreiber eines BESS ändert große Leistung kurzfristig und handelt allein nach Marktsignalen, sodass er einen Engpass verschärfen kann, ohne es zu wissen. | angenommen 08.10.2026 |
+| 91 | K140 | Kap. 6 | Die kurative Systemführung verlangt, was ein Speicher hat, nämlich | Die kurative Systemführung verlangt in ihren schnellen Reaktionszeitklassen, was ein Speicher hat, nämlich | angenommen 08.10.2026 |
+| 92 | K141 | Kap. 6 | Die kurative Systemführung wirkt damit in zwei Hinsichten, | Die kurative Systemführung wirkt bei BESS damit in zwei Hinsichten, | angenommen 08.10.2026 |
+| 93 | K142/143 | Kap. 6 | Anfangs ist die kurative Reservierung an den wenigen begrenzenden Netzknoten eine Maßnahme der Sicherheit, denn sie beschafft dem ÜNB ein kurzfristiges Redispatchpotenzial gegen Grenzwertverletzungen. ¶ Mit dem Netzausbau verteilt sich die freie Kapazität über viele Netzknoten, und die Probleme der Kurzfristigkeit nehmen ab. ¶ Ein eingespielter Markt nutzt die Kapazität dann planmäßig aus, und die kurative Reservierung ergänzt den Redispatch als Maßnahme der Effizienz. | Anfangs sichert die kurative Reservierung an den wenigen begrenzenden Netzknoten den Betrieb gegen kurzfristige Fahrplanänderungen ab und spart dort präventiven Redispatch. ¶ Mit dem Netzausbau verschiebt sich die Begrenzung von einzelnen Betriebsmitteln auf ganze Übertragungswege, und ein eingespielter Markt nutzt die Kapazität an vielen Netzknoten planmäßig aus. | angenommen 08.10.2026 |
+| 94 | K144 | Kap. 6 | sodass die kurative Systemführung zu einer Voraussetzung für den Ausbau der Speicher wird. | sodass die kurative Systemführung den Ausbau der Speicher am bestehenden Netz unterstützt. | angenommen 08.10.2026 |
+| 95 | K145 | Kap. 6 | so werden die Engpässe seltener und verteilen sich über ein gleichmäßiger belastbares Netz. | so werden die Engpässe seltener und wandern an andere Betriebsmittel. | angenommen 08.10.2026 |
+| 96 | K146 | Kap. 6 | so bleibt der Netzausbau erneut hinter der Nachfrage zurück. ¶ Die Engpässe kehren dann an anderer Stelle wieder. | so kann der Netzausbau erneut hinter der Nachfrage zurückbleiben, und die Engpässe kehren an anderer Stelle wieder. | angenommen 08.10.2026 |
+| 97 | C13 | Kap. 6 | denn die Sicht der einzelnen Anlage trägt keine systemweite Aussage. | denn die Sicht der einzelnen Anlage liefert keine systemweite Aussage. | angenommen 08.10.2026 |
+| 98 | K147 | Kap. 6 | Der Entwurf und der ermittelte Preis zeigen aber, dass | Der Entwurf der kurativen Reservierung und der ermittelte kurative Reservierungspreis zeigen aber, dass | angenommen 08.10.2026 |
+| 99 | C9 | Kap. 5, 5.5 | Vor der Umsetzung ist zu klären, wie sich ein Engpassmanagement … neben oder innerhalb des Ausgleichs nach § 13a EnWG. | Vor der Umsetzung des kurativen Marktmechanismus im Engpassmanagement ist zu klären, wie sich die Vergütung der vorgehaltenen Leistung und die heutige Vergütung der abgerufenen Arbeit zueinander verhalten. ¶ Ein Nebeneinander beider Formen ist möglich, denn die abgerufene Arbeit behebt den Engpass dauerhaft, während die vorgehaltene Leistung das Überlastintervall nach dem Fehlerfall überbrückt. ¶ Die vorgehaltene Leistung setzt dabei gerade bei den Technologien an, die im künftigen Stromsystem den Hauptanteil der installierten Leistung stellen, nämlich bei Windenergie, Photovoltaik und Speichern. ¶ Auch der Redispatch ließe sich um eine Komponente für die vorgehaltene Leistung erweitern und mit dem kurativen Marktmechanismus vereinbaren oder vereinen, wie in Abschnitt [sec:bess_markets] am Beispiel der BESS skizziert. ¶ Eine solche Komponente müsste jedoch die Bindungsdauer vergüten und nicht die einzelne Maßnahme. ¶ Der Redispatch ändert einen bestehenden Fahrplan für die Dauer der Maßnahme, während die kurative Reservierung den Fahrplan vorab über die ganze Bindungsdauer einschränkt, auch ohne Abruf. ¶ Für eine Vergütung der Bindungsdauer sieht die geltende Festlegung nach Abschnitt [sec:redispatch_compensation] keine Struktur vor. ¶ Der entworfene kurative Marktmechanismus setzt deshalb eine Vergütung der vorgehaltenen Leistung im Engpassmanagement voraus, neben oder innerhalb des Ausgleichs nach § 13a EnWG. | angenommen 08.10.2026 |
+| 100 | C9 | Kap. 5, 5.5 | Eine flexible Netzanschlussvereinbarung, eine Vorgabe für den Betrieb und eine Sicherheitsmarge … sondern eine Voraussetzung für den Ausbau der Speicher. | Netzanschlussvereinbarung, Betriebsvorgabe und Sicherheitsmarge nach Abschnitt [sec:bess_markets] greifen am Verhalten des Akteurs an, statt die Kapazität des Netzes zu nutzen. ¶ Eine eingeplante kurative Maßnahme nutzt dagegen die Leistung des Akteurs am Engpass und macht seine Begrenzung entbehrlich, sobald an jedem betroffenen Netzknoten genügend wirksame Anlagen anbieten. ¶ Die drei Wege sind damit Übergangslösungen, bis die Einbindung in das Engpassmanagement steht. ¶ Ein auf BESS abgestimmtes Anschlussverfahren und die Einbindung in das Engpassmanagement erlauben zusammen mehr Speicherleistung am bestehenden Netz. ¶ Der Nutzen für das Stromsystem liegt damit nicht allein in der vermiedenen Redispatchmaßnahme, sondern in der zusätzlich anschließbaren Speicherleistung, die dem System in den kritischen Stunden als Flexibilität zur Verfügung steht. ¶ Die kurative Systemführung ist damit nicht allein ein Werkzeug des Netzbetriebs, sondern unterstützt den Ausbau der Speicher am bestehenden Netz. | angenommen 08.10.2026 |
+| 101 | C9 | Kap. 5, 5.5 | Die Voraussetzungen für die Umsetzung liegen vor allem im Betrieb, … sodass sich ihre Lösbarkeit abzeichnet. | Die Voraussetzungen für die Umsetzung liegen vor allem im Betrieb, denn der ÜNB muss die bezuschlagten Gebote als kuratives Maßnahmenset durch Betriebsplanung, Scharfschaltung und Auslösung führen. ¶ Die Auslösung hängt an der Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, wie in Abschnitt [sec:challenges] beschrieben. ¶ Fällt ein Glied dieser Kette aus, so bleibt die eingeplante Maßnahme im Fehlerfall aus, und das Netz steht in diesem Moment ohne die eingeplante Entlastung da. ¶ Die Sicherheitsbetrachtung erstreckt sich deshalb über Leitungen, Transformatoren und Schaltanlagen hinaus auf die Wege des Auslösesignals, sodass eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf Voraussetzung ist. ¶ Die genaue Überwachung des Netzzustands und die Steuerbarkeit der Anlagen wachsen zwar mit dem Zubau steuerbarer Anlagen, sind für die kurative Systemführung aber Voraussetzung und damit auch eine Hürde. ¶ Nach der Auslösung hält eine kurative Maßnahme die Leistungsänderung, bis der Engpass vergeht oder eine ablösende Maßnahme greift, für die der allgemeine Redispatch oder ein zusätzliches Produkt mit längerem Zeitfenster in Betracht kommt. ¶ Die Wahl der Ablösung wirkt auf den kurativen Reservierungspreis zurück, denn eine längere Anlaufzeit der Ablösung verlangt mehr vorgehaltene Energie. ¶ Der ÜNB bestimmt damit über die Ablösung, wie lange eine kurative Maßnahme wirken muss. ¶ Diese Voraussetzungen sind komplex, werden in InnoSys 2030 und im Pilotbetrieb von KuPilot aber bereits erarbeitet, sodass sich ihre Lösbarkeit abzeichnet. | angenommen 08.10.2026 |
+| 102 | C9 | Kap. 5, 5.5 | Mit einer systemweiten Ausrollung ändert sich der Zweck der kurativen Systemführung. … denn ein ausgebauter Übertragungsweg ist über seine Länge einheitlich ausgelegt. | Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, sondern ihr Maßstab. ¶ In beiden Anwendungen dient die kurative Maßnahme der Höherauslastung, doch der Anlass unterscheidet sich. ¶ Heute entsteht der Bedarf aus kurzfristigen Fahrplanänderungen nach der letzten Vorschaurechnung, wie in Abschnitt [sec:motivation] beschrieben. ¶ Ein Betriebsmittel, das in der Planung (N-1)-sicher belastet war, verliert durch die Fahrplanänderung eines BESS seine Reserve für den Ausfall eines anderen Betriebsmittels, und kein präventives Instrument greift mehr. ¶ Eine an diesem Netzknoten eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, denn die Höherauslastung tritt erst im Fehlerfall ein und wird von der eingeplanten Maßnahme abgefangen. ¶ In dieser Anwendung sichert die kurative Reservierung den Betrieb gegen Fahrplanänderungen ab, die kein anderes Instrument auffängt. ¶ Die Bedarfsermittlung nach Abschnitt [sec:product_parameters] müsste dafür neben den festgestellten Überlastungen eine Marge für solche Fahrplanänderungen enthalten, etwa an Netzknoten mit hoher Leistung aus BESS. ¶ Mit der Ausrollung tritt die zweite Anwendung hinzu, denn der ÜNB plant die Höherauslastung an vielen Netzknoten von vornherein ein und spart präventiven Redispatch. ¶ Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung, und beides ist heute nicht gegeben. ¶ Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, verschiebt aber die Begrenzung von einzelnen Betriebsmitteln auf ganze Übertragungswege, denn ein ausgebauter Übertragungsweg ist über seine Länge einheitlich ausgelegt. ¶ Effizienz und Preiseinfluss der kurativen Reservierung lassen sich deshalb erst in einem eingespielten Markt genau bestimmen. | angenommen 08.10.2026 |
+| 103 | § 13a (Verfasser) | Kap. 5 | Eine solche Komponente müsste jedoch die Bindungsdauer vergüten und nicht die einzelne Maßnahme. ¶ Der Redispatch ändert einen bestehenden Fahrplan für die Dauer der Maßnahme, während die kurative Reservierung den Fahrplan vorab über die ganze Bindungsdauer einschränkt, auch ohne Abruf. ¶ Für eine Vergütung der Bindungsdauer sieht die geltende Festlegung nach Abschnitt [sec:redispatch_compensation] keine Struktur vor. | Der ÜNB kann nach § 13a EnWG eine Anlage auch vor ihrer Vermarktung begrenzen, und die Festlegung nach Abschnitt [sec:redispatch_compensation] vergütet das gesperrte Leistungsband je Viertelstunde. ¶ Eine Begrenzung nimmt dem Betreiber aber nur Leistung und verschafft dem ÜNB keine Leistung auf Abruf, denn sie verpflichtet nicht zu einer Leistungsänderung innerhalb einer Reaktionszeit und erfasst den Ladezustand nicht. ¶ Eine Komponente für die vorgehaltene Leistung müsste deshalb die Abrufbereitschaft über die Bindungsdauer vergüten, also über die Zeit, in der eine Anlage ihr Leistungsband und bei Speichern ihr Ladezustandsband freihält, und dafür sieht die Festlegung keine Struktur vor. | angenommen 08.10.2026 |
+| 104 | § 13a (Verfasser) | Kap. 1 | Für die Vorhaltung von Leistung im Engpassmanagement besteht keine Vergütung, während der ÜNB eine Anpassung der Einspeisung oder des Bezugs nach § 13a EnWG anordnen kann \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}. ¶ Die Vorhaltung kann er dagegen nicht anordnen, denn der Betreiber entscheidet im dezentralen Dispatch-Modell über den Einsatz seiner Anlage selbst. | Der ÜNB kann eine Anpassung der Einspeisung oder des Bezugs nach § 13a EnWG anordnen und damit auch vorab ein Leistungsband sperren \cite{bundesministerium_der_justiz_energiewirtschaftsgesetz_2025}. ¶ Eine Sperre nimmt dem Betreiber Leistung, verschafft dem ÜNB aber keine Leistung auf Abruf, und für eine solche Vorhaltung besteht im Engpassmanagement keine Vergütung. | angenommen 08.10.2026 |
+| 105 | Seitenbilanz N5 | Kap. 4 | Bevor der Jahreslauf in Abschnitt [sec:iteration_prices] alle Tage des Jahres 2025 auswertet, zeigt der Fahrplan einzelner Tage unter vorgegebenen Preisen, welche Vermarktung die kurative Reservierung zuerst verdrängt. | Bevor der Jahreslauf in Abschnitt [sec:iteration_prices] alle Tage auswertet, zeigt der Fahrplan einzelner Tage, welche Vermarktung die kurative Reservierung zuerst verdrängt. | angenommen 08.10.2026 |
+| 106 | Seitenbilanz N24 | Kap. 4 | Der Aufschlag von 23,3 Prozent unter vollständiger Verdrängung folgt aus der Preisbildung nach Abschnitt [sec:reservation_price_search], denn der Preis einer Stunde stellt allein die zuletzt reservierte Leistung indifferent, während die übrige reservierte Leistung mehr als ihre Opportunitätskosten erhält. | Der Aufschlag von 23,3 Prozent folgt aus der Preisbildung nach Abschnitt [sec:reservation_price_search], denn der Preis einer Stunde stellt allein die zuletzt reservierte Leistung indifferent, und die übrige reservierte Leistung erhält mehr als ihre Opportunitätskosten. | angenommen 08.10.2026 |
+| 107 | Seitenbilanz 4.3 | Kap. 4 | Für jede Richtung ergeben sich daraus 8758 Preise, deren Höhe sich von Stunde zu Stunde unterscheidet. | Für jede Richtung ergeben sich daraus 8758 Preise. | angenommen 08.10.2026 |
+| 108 | Seitenbilanz N30 | Kap. 4 | Ob diese Kopplung die sieben Stunden erklärt, ist nicht geprüft. | Für die sieben Stunden ist das nicht geprüft. | angenommen 08.10.2026 |
+| 109 | Seitenbilanz N53 | Kap. 5 | Die Standortabhängigkeit (A3) knüpft daran an, denn der ÜNB plant eine kurative Maßnahme nur ein, wenn er ihre Wirkung am betroffenen Betriebsmittel kennt. ¶ Diese Wirkung hängt von der Sensitivität des Netzknotens ab, sodass der ÜNB knotenscharfe Gebote braucht und die Maßnahme in der Netzsicherheitsrechnung je Knoten prüft. | Die Standortabhängigkeit (A3) knüpft daran an, denn die Wirkung einer Maßnahme am Engpass hängt von der Sensitivität des Netzknotens ab, sodass der ÜNB knotenscharfe Gebote braucht und sie je Knoten in der Netzsicherheitsrechnung prüft. | angenommen 08.10.2026 |
+| 110 | Seitenbilanz K71 | Kap. 5 | Weil die Lieferung der aFRR-Arbeit den Preis so stark bewegt und das Bietverhalten von Speichern nicht bekannt ist, ließe sich die Abbildung der aFRR nur mit Daten aus der Vermarktung von Speichern verbessern. | Weil die Lieferung der aFRR-Arbeit den Preis so stark bewegt, ließe sich die Abbildung der aFRR nur mit Daten aus der Vermarktung von Speichern verbessern. | angenommen 08.10.2026 |
+| 111 | Seitenbilanz K72 | Kap. 5 | Diese Abbildung unterschätzt den Erlös am IDC eher, denn sie lässt den mehrfachen Handel derselben Lieferstunde außer Acht, bei dem ein Händler dieselbe Stunde mehrfach kauft und verkauft und an der Bewegung des Preises innerhalb dieser Stunde verdient. | Diese Abbildung unterschätzt den Erlös am IDC eher, denn sie lässt außer Acht, dass ein Händler dieselbe Lieferstunde mehrfach kauft und verkauft und an der Preisbewegung innerhalb dieser Stunde verdient. | angenommen 08.10.2026 |
+| 112 | Seitenbilanz 5.4 | Kap. 5 | Ein Betreiber sucht ohnehin nach jeder Erlösquelle, und ein zusätzlicher Markt am Engpass eröffnet ihm neue Betriebsstrategien. ¶ Bei passender Ausgestaltung helfen diese Strategien dem ÜNB am Engpass und sichern dem Betreiber zugleich Erlöse. | Ein Betreiber sucht ohnehin nach jeder Erlösquelle, und ein zusätzlicher Markt am Engpass eröffnet ihm Betriebsstrategien, die bei passender Ausgestaltung dem ÜNB am Engpass helfen und ihm Erlöse sichern. | angenommen 08.10.2026 |
+| 113 | Seitenbilanz 5.5-4 | Kap. 5 | Die genaue Überwachung des Netzzustands und die Steuerbarkeit der Anlagen wachsen zwar mit dem Zubau steuerbarer Anlagen, sind für die kurative Systemführung aber Voraussetzung und damit auch eine Hürde. | Die Überwachung des Netzzustands und die Steuerbarkeit der Anlagen sind dafür Voraussetzung und damit auch eine Hürde. | angenommen 08.10.2026 |
+| 114 | Seitenbilanz K112 | Kap. 5 | Für den Markt ist zu prüfen, wie viele Anbieter ein Netzknoten braucht, denn ohne Wettbewerb am Knoten enthält jedes Gebot einen Knappheitsaufschlag. | Für den Markt ist zu prüfen, wie viele Anbieter ein Netzknoten braucht, denn ohne Wettbewerb enthält jedes Gebot einen Knappheitsaufschlag. | angenommen 08.10.2026 |
+| 115 | Seitenbilanz 5.5-6 | Kap. 5 | Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, sondern ihr Maßstab. ¶ In beiden Anwendungen dient die kurative Maßnahme der Höherauslastung, doch der Anlass unterscheidet sich. | Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, die Höherauslastung, sondern ihr Anlass und ihr Maßstab. | angenommen 08.10.2026 |
+| 116 | Seitenbilanz 5.5-6 | Kap. 5 | eine Marge für solche Fahrplanänderungen enthalten, etwa an Netzknoten mit hoher Leistung aus BESS. | eine Marge für solche Fahrplanänderungen enthalten. | angenommen 08.10.2026 |
+| 117 | Seitenbilanz 4.2 | Kap. 4 | Die zweite Iteration hebt die Zahlung des ÜNB um 10,2 Tsd. €/(MW·a) auf 420,0 Tsd. €/(MW·a). ¶ Die übrige Vermarktung entfällt dabei ganz, sodass der Gesamterlös der Bezugsanlage nur noch 23,3 Prozent über dem Referenzerlös liegt. | Die zweite Iteration hebt die Zahlung des ÜNB um 10,2 auf 420,0 Tsd. €/(MW·a), und die übrige Vermarktung entfällt ganz, sodass der Gesamterlös nur noch 23,3 Prozent über dem Referenzerlös liegt. | angenommen 08.10.2026 |
+| 118 | Seitenbilanz 4.2 | Kap. 4 | Unter der ersten Iteration behält die Bezugsanlage 88,6 Tsd. €/(MW·a) aus den übrigen Märkten, und der ÜNB zahlt dennoch nur 10,2 Tsd. €/(MW·a) weniger als unter der zweiten. ¶ Offen bleiben dabei gerade die teuren Stunden, sodass der ÜNB beinahe den vollen Preis zahlt und die wertvollsten Stunden nicht bindet. ¶ Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös. ¶ Der Aufschlag von 23,3 Prozent folgt aus der Preisbildung nach Abschnitt [sec:reservation_price_search], denn der Preis einer Stunde stellt allein die zuletzt reservierte Leistung indifferent, und die übrige reservierte Leistung erhält mehr als ihre Opportunitätskosten. | Unter der ersten Iteration behält die Bezugsanlage 88,6 Tsd. €/(MW·a) aus den übrigen Märkten, und der ÜNB zahlt dennoch nur 10,2 Tsd. €/(MW·a) weniger als unter der zweiten, weil gerade die teuren Stunden offen bleiben. ¶ Der Gesamterlös der Bezugsanlage steigt dadurch um 46,3 statt um 23,3 Prozent über den Referenzerlös. ¶ Der Aufschlag von 23,3 Prozent folgt aus der Preisbildung nach Abschnitt [sec:reservation_price_search]: Nur die zuletzt reservierte Leistung ist indifferent, die übrige erhält mehr als ihre Opportunitätskosten. | angenommen 08.10.2026 |
+| 119 | Seitenbilanz 4.5/4.6 | Kap. 4 | In Abbildung [fig:sensi_afrr_leistung] sind die drei Stufen der Leistungsseite gestaffelt, mit dem Basisfall als Bezug. | In Abbildung [fig:sensi_afrr_leistung] sind die drei Stufen der Leistungsseite gestaffelt, mit dem Basisfall als Bezug. ¶ In den Abbildungen [fig:sensi_afrr_leistung] bis [fig:sensi_abrufdauer] enden Whisker über der Achsengrenze in einer Pfeilspitze und sind mit ihrem Maximum beschriftet. | angenommen 08.10.2026 |
+| 120 | Seitenbilanz 4.5/4.6 | Kap. 4 | zweite Iteration. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | zweite Iteration.} | angenommen 08.10.2026 |
+| 121 | Seitenbilanz 4.5/4.6 | Kap. 4 | zweite Iteration. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | zweite Iteration.} | angenommen 08.10.2026 |
+| 122 | Seitenbilanz 4.5/4.6 | Kap. 4 | zweite Iteration. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | zweite Iteration.} | angenommen 08.10.2026 |
+| 123 | Seitenbilanz 4.5/4.6 | Kap. 4 | Der Faktor streckt den Abstand zum Tagesmittel. Whisker über der Achsengrenze enden in einer Pfeilspitze und sind mit ihrem Maximum beschriftet.} | Der Faktor streckt den Abstand zum Tagesmittel.} | angenommen 08.10.2026 |
+| 124 | Seitenbilanz 4.5/4.6 | Kap. 4 | Dieselbe Darstellung mit dem Median je Tag steht in Anhang [anh:jahreslauf_median]. | Der Median je Tag steht in Anhang [anh:jahreslauf_median]. | angenommen 08.10.2026 |
+| 125 | Seitenbilanz 4.5/4.6 | Kap. 4 | Die Zahl ist der Quotient beider Werte und setzt damit voraus, dass die Kosten des Netzengpassmanagements linear mit dem Maßnahmenvolumen steigen. | Der Quotient setzt voraus, dass die Kosten des Engpassmanagements linear mit dem Maßnahmenvolumen steigen. | angenommen 08.10.2026 |
+| 126 | Seitenbilanz 4.5/4.6 | Kap. 4 | Die Zukunftsvariante ist allein in diesem Abschnitt definiert und setzt eine künftige Sättigung | Die Zukunftsvariante, allein hier definiert, setzt eine künftige Sättigung | angenommen 08.10.2026 |
+| 127 | Seitenbilanz 4.5/4.6 | Kap. 4 | Die Richtung folgt der Erwartung, dass der Bestand an BESS wächst, während der Bedarf an Regelleistung aus der Dimensionierung des Systems folgt und nicht mitwächst. | Die Richtung folgt der Erwartung, dass der Bestand an BESS wächst, der Bedarf an Regelleistung aber nicht. | angenommen 08.10.2026 |
+| 128 | Seitenbilanz 4.3 | Kap. 4 | Der Abstand zwischen Median und arithmetischem Mittel misst diese Schieflage, nämlich das 1,93-Fache in der Entlade- und das 2,47-Fache in der Laderichtung. | (gestrichen, Dopplung zum ersten Absatz von 4.3) | angenommen 08.10.2026 |
+| 129 | N39 | Analyse-Repo | Legende Abbildung 4.6: *arithmetisches Mittel der Stunden des Tages* | *kurativer Reservierungspreis, arithmetisches Mittel der 24 Stunden je Tag*, Abbildung neu erzeugt und kopiert, ebenso die Medianfassung für Anhang E | angenommen 08.10.2026 |
+
+
+### Anhang B, Kommentardatei der Freunde (KOMMENTARE_FREUNDE.md, Stand 08.10.2026)
+
+Übernommen am 08.10.2026, Überschriften um drei Stufen abgesenkt, leere Entscheidungsspalten gefüllt.
+
+#### Kommentare der Freunde zur PDF-Fassung, Stand 30.09.2026
+
+Quelle sind zwei kommentierte PDF-Dateien in `sciebo/Masterarbeit/Nils_Feedback/`.
+Die Anmerkungen sind mit pymupdf ausgelesen, markierter Text und Kommentartext
+unverändert übernommen, und jeder Stelle ist die Zeile in der aktuellen
+Kapiteldatei zugeordnet. Die Spalte *Entscheidung* bleibt leer, bis der
+Verfasser entschieden hat. Die Spalte *Einordnung* ist meine Vorsortierung
+gegen `CLAUDE.md` und trägt keine Entscheidung.
+
+| Leser | Datei | Stand des PDF | Umfang | Anmerkungen |
+|---|---|---|---|---|
+| Luca (`lucah`) | `..._LD.pdf` | Build vom 28.09.2026, Kapitel 1 bis 6 mit Anhängen, 129 Seiten | Kurzfassung, Kapitel 1, einzelne Stellen in 3, 4 und 6 | 19, davon drei Markierungen zur Kurzfassung unter L1 zusammengefasst, deshalb keine L2 und L3 |
+| Julius (`Julius.Klupp`) | `..._jkl.pdf` | Build vom 21.09.2026, nur Kapitel 1 bis 3, 85 Seiten | Kapitel 1 und 2.1 bis 2.1.4, gelesen bis 2.1.5 | 50, davon 12 Lob ohne Auftrag |
+| Nicht benannt, vom Verfasser am 30.09.2026 aus dem Chat übernommen | keine Datei | unbekannt | Kapitel 1 und alle Abbildungen | 2 allgemeine Kommentare, Kennung C, Abschnitt 8 |
+
+**Achtung beim Julius-PDF.** Es ist neun Tage älter als der aktuelle Text.
+Alle Zitate sind gegen die Kapiteldateien geprüft, jede kommentierte Stelle
+steht noch im Text. Eine Ausnahme ist L8, dort ist das markierte Wort seither
+geändert, siehe Einordnung.
+
+Kennung: L = Luca, J = Julius, laufend nummeriert. Kategorien: **Wort** (ein
+Wort oder eine Wendung), **Satz** (Satzbau, Trennung, Zeichensetzung),
+**Verständnis** (ein Leser versteht die Stelle nicht), **Aufbau** (Reihenfolge
+von Sätzen, Absätzen oder Abschnitten), **Inhalt** (Aussage, Beleg, Zahl),
+**Zitierweise**, **Lob** (kein Auftrag, zeigt aber, was trägt).
+
+---
+
+##### 1 Vorab entscheidbar, weil eine Regel aus `CLAUDE.md` betroffen ist
+
+Diese Kommentare treffen Stellen, die eine Vorgabe des Verfassers so vorschreibt.
+Sie sind nur mit einer Änderung der Regel umzusetzen.
+
+| Nr. | Stelle | Kommentar | Betroffene Regel | Entscheidung |
+|---|---|---|---|---|
+| J21 | 1.2, `chapter_1.tex:117` | *nämlich* gestrichen | Stilregel 16: Listeneinleitungen mit *nämlich* oder *folgende*. Der Text trägt 49 Stellen mit *nämlich*. | umgesetzt 08.10.2026 |
+| J34 | 2.1.2, `chapter_2.tex:145` | *nämlich* gestrichen | wie J21 | umgesetzt 08.10.2026 |
+| L15 | 4.1, `chapter_4.tex:23` | *fällt Folgendes auf.* Doppelpunkt? | Stilregel 16: Doppelpunkt sparsam und nur für These mit Erklärung. Die Form *Folgendes.* ist im Text mehrfach so gesetzt, in 4.1, 4.2 und 4.6.4. | umgesetzt 08.10.2026 |
+| L14 | 4.1, `chapter_4.tex:17` | *zwischen null und 200 €/(MW·h)* irritiert, Zahl ausschreiben ist zwar üblich | Keine Regel in `CLAUDE.md`. Gleiche Form in Anhang F fünfmal in Bildunterschriften. Wenn geändert, dann überall. | umgesetzt 08.10.2026 |
+
+---
+
+##### 2 Kurzfassung
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| L1 | Kurzfassung, `extras/abstract.tex:37` | BESS, FCR, aFRR | „Ich weiß nicht ob man auch hier Abkürzungen ohne vorige Erklärung nutzen sollte." | Zitierweise | Die drei stehen als `\acs`, EnWG dagegen als `\ac` mit Langform. Uneinheitlich. Die Kurzfassung steht vor dem Abkürzungsverzeichnis, ein Leser der Kurzfassung allein kennt die drei nicht. Der Abstract schreibt alle drei aus. | umgesetzt 08.10.2026 |
+| L19 | Kurzfassung, `extras/abstract.tex:41` und 6, `chapter_6.tex:34` | *zwei Fünftel* | „40 % ?" | Wort | 4.4 sagt an derselben Stelle *rund 40 Prozent*. Zwei Schreibweisen für dieselbe Zahl, nämlich *zwei Fünftel* in Kurzfassung und Kapitel 6, *40 Prozent* in 4.4. | umgesetzt 08.10.2026 |
+
+---
+
+##### 3 Kapitel 1 Einleitung
+
+###### 3.1 Kapiteleinleitung, `chapter_1.tex:4` bis `9`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J1 | Zeile 4 | `[BUN26a]` | „Zitiert ihr so? Max hat nur die Zahl stehen, ich hatte die ganzen Autoren, irgendwie komisch" | Zitierweise | Vorlage des Instituts, alphanumerischer Stil von biblatex. Kein Handlungsbedarf, nur Auskunft. | umgesetzt 08.10.2026 |
+| J2 | Zeile 5 | *bewegt seither Mengen* | „Mengen von was" | Verständnis | Stilregel 5, unbestimmte Nominalphrase ohne Attribut. Gemeint sind Energiemengen im Redispatch. | umgesetzt 08.10.2026 |
+| J3 | Zeile 8 | *Regime des Redispatch* | „würd ich erklären" | Verständnis | Redispatch ist erst in Zeile 22 erklärt, also in 1.1 Absatz 2, wie in `CLAUDE.md` Abschnitt 5 vorgesehen. Die Kurzform in der Kapiteleinleitung steht vor der Definition. Hängt mit J9 zusammen. | umgesetzt 08.10.2026 |
+| J4 | Zeile 8 | *nur wenige Anlagen* | „Stromerzeugungsanlagen?" | Verständnis | Stilregel 5. | umgesetzt 08.10.2026 |
+| J5 | Zeile 9 | *Eine Lösung könnte darin liegen* | „formuliers anders. Ist kurative Systemführung die Lösung des Problems und es geht nur um die Umsetzung? Selbst wenn es alternative Lösungsansätze gibt, würd ich schreiben, dass dies ein Lösungsansatz ist und noch Herausforderungen bestehen." | Inhalt | Der Folgesatz nennt die Herausforderungen schon. Es geht um die Behauptungsstärke des ersten Satzes, Stilregel 11. | umgesetzt 08.10.2026 |
+
+###### 3.2 Abschnitt 1.1, Absätze 1 bis 4, `chapter_1.tex:15` bis `49`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J6 | Zeile 15 | Absatz 1, Satz 1 | „örtliches Problem" | Aufbau | Julius liest die beiden ersten Sätze als Ort und Zeit. Randnotiz, kein Auftrag. | umgesetzt 08.10.2026 |
+| J7 | Zeile 16 | Absatz 1, Satz 2 | „Zeitliches Problem. Die Info fehlt" | Verständnis | Er vermisst, dass der Satz die Zeit als zweite Dimension benennt. Der Absatz schließt mit *nicht stationär*, das trägt es nur implizit. | umgesetzt 08.10.2026 |
+| J8 | Zeile 19 | Absatz 2, Satz 1 | „das ist ein Satz, teil das mal auf" | Satz | Stilregel 17. Der Satz trägt Doppelpunkt, Einschub mit *also* und Relativsatz. | umgesetzt 08.10.2026 |
+| J9 | Zeile 22 | *Redispatch an, also eine Anpassung der Einspeisung einzelner Anlagen* | „da erklärst dus, würd ich nach oben nehmen" | Aufbau | Widerspricht der Festlegung in `CLAUDE.md` Abschnitt 5, Redispatch in 1.1 Absatz 2 zu definieren. Zusammen mit J3 entscheiden. | umgesetzt 08.10.2026 |
+| L4 | Zeile 22 | *sagt … voraus* | „prognostiziert" | Wort | Stilregel 13 verlangt schlichtes Vokabular, *voraussagen* ist schlichter als *prognostizieren*. Geschmacksfrage. | umgesetzt 08.10.2026 |
+| J10 | Zeile 23 | *eine Überlastung ab* | „Überlastung wovon?" | Verständnis | Stilregel 5. Betriebsmittel sind erst in Zeile 60 eingeführt. | umgesetzt 08.10.2026 |
+| J11 | Zeile 24 | Absatz 2, letzter Satz | „gut!" | Lob | | umgesetzt 08.10.2026 |
+| J12 | Zeile 33 | *Der Engpassmanagementbedarf ist hoch und von wenigen Wetterlagen geprägt* | „das zeigt die Abbildung aber nicht" | Inhalt | Trifft zu. Abbildung 1.1 zeigt Jahressummen, die Wetterlagen stehen erst in den Monatskosten im Text. Der Verweis *wie Abbildung 1.1 zeigt* deckt nur die erste Satzhälfte. | umgesetzt 08.10.2026 |
+| L5 | Zeile 36 | Satz zum Dezember 2024 | markiert ohne Text | Inhalt | Gehört zu L6, Wiederholung in Zeile 53. | umgesetzt 08.10.2026 |
+| J13 | Zeile 37 | *In einer solchen Wetterlage regelt der Redispatch Windstrom ab* | „der Satz muss vor den Absatz. Gut wäre: erst erklären, was bei einer kritischen Wetterlage passiert, dann mit dem Diagramm zeigen, dass das in Deutschland relevant ist, dann auf die Kosten überleiten" | Aufbau | Vorschlag für die Reihenfolge des Absatzes 3: Mechanismus, Menge, Kosten. Betrifft denselben Absatz wie J12 und L5. | umgesetzt 08.10.2026 |
+| J14 | Zeile 47 | Absatz 4, NEP | „gut!" | Lob | | umgesetzt 08.10.2026 |
+
+###### 3.3 Abschnitt 1.1, Absätze 5 bis 7, `chapter_1.tex:53` bis `79`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| L6 | Zeile 53 | *Der Engpassmanagementbedarf ist ereignisabhängig, denn einzelne Wetterlagen wie die Windfront im Dezember 2024 prägen …* | „Wiederholung" | Inhalt | Trifft zu. Zeile 36 und Zeile 53 tragen denselben Befund mit derselben Quelle. Beide Leser stoßen sich daran, siehe J15. | umgesetzt 08.10.2026 |
+| J15 | Zeile 53 | derselbe Satz | „den Satz würd ich nach oben zu der Redispatch-Erklärung ziehen" | Aufbau | Julius will die Wiederholung durch Verschieben lösen, Luca durch Streichen. Eine Entscheidung für beide. | umgesetzt 08.10.2026 |
+| J16 | Zeile 56 | *ist damit das geeignete Mittel* | markiert ohne Text | Wort | Vermutlich Anstoß an *geeignet* ohne Vergleichsmaßstab, Stilregel 7. | umgesetzt 08.10.2026 |
+| J17 | Zeile 57 | *ist deshalb um ein Instrument zu erweitern* | markiert ohne Text | Wort | Vermutlich die Folge aus J16, die Schlussfolgerung hängt am vorigen Satz. | umgesetzt 08.10.2026 |
+| J18 | Zeile 60 | *Betriebsmittel* | „Also Anlage? Was ist hier ein Betriebsmittel?" | Verständnis | Betriebsmittel wird erst in 2.1 als *Leitungen und Transformatoren* erklärt, Zeile 11 in `chapter_2.tex`. In Kapitel 1 steht das Wort in Zeile 5 neben *Leitungen und Transformatoren* und ab Zeile 60 ohne Erklärung. Julius bestätigt das Fehlen in J26. | umgesetzt 08.10.2026 |
+| L7 | Zeile 62 | *Dauergrenze* | „Mir ist nicht klar, was du damit meinst. Ist das Gesamtbelastung ohne N-1?" | Verständnis | Das Wort ist in Kapitel 1 nicht definiert, der PATL erst in 2.1.1. Der Vorsatz sagt *die Belastung, die jedes Betriebsmittel dauerhaft führen kann*. | umgesetzt 08.10.2026 |
+| L8 | Zeile 63 | *thermische Reserve* | „Im Sinne von z. B. einem Kessel mit einer Trägheit, der kurzzeitig mehr Leistung schafft?" | Verständnis | Luca versteht *thermisch* als Kraftwerkseigenschaft, gemeint ist die thermische Trägheit des Betriebsmittels. Julius' PDF trägt hier noch *physikalische Reserve*, der Text ist seither auf *thermisch* geändert. | umgesetzt 08.10.2026 |
+| L9 | Zeile 69 | *Fahrplanänderungen nach der letzten Vorschaurechnung gehen in keine Rechnung mehr ein, und gerade Anlagen …* | „Sätze trennen" | Satz | Stilregel 17, zwei Hauptsätze mit Nebensatz. | umgesetzt 08.10.2026 |
+| J19 | Zeile 75 | Absatz 7, *Die kurative Systemführung vermeidet Engpässe nicht im Voraus* | „schöne Überleitung" | Lob | | umgesetzt 08.10.2026 |
+
+###### 3.4 Abschnitt 1.2, `chapter_1.tex:84` bis `119`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| L10 | Zeile 94 | *mit dem präventiven Redispatch mithält* | „ugs., lieber *konkurrenzfähig ist*" | Wort | Die Kurzfassung sagt schon *konkurrenzfähig*. | umgesetzt 08.10.2026 |
+| J20 | Zeile 96 | Absatz 3, *Für die Vorhaltung von Leistung besteht keine Vergütung …* bis *… verbindet damit beide Logiken* | „das ist alles Stand der Technik, weiß nicht, was das in deiner Zielsetzung macht" | Aufbau | Grundsätzlicher Einwand gegen den halben Absatz. Der Absatz begründet, warum ein Optimierungsmodell die Antwort gibt, und holt dafür die Rechtslage und die Regelleistung vor. Betrifft denselben Absatz, den der Betreuerdurchgang bereits gekürzt hat. | umgesetzt 08.10.2026 |
+| J22 | Zeile 112 | Kapitelübersicht | „gut! bisschen lang, aber gut!" | Lob | | umgesetzt 08.10.2026 |
+| J21 | Zeile 117 | *nämlich* | gestrichen | Wort | siehe Abschnitt 1 dieser Datei | umgesetzt 08.10.2026 |
+
+---
+
+##### 4 Kapitel 2 Grundlagen und Stand der Technik
+
+###### 4.1 Kapiteleinleitung und 2.1, `chapter_2.tex:3` bis `20`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J23 | Zeile 4 | *dargelegt, und daraus wird begründet* | „Punkt." | Satz | Stilregel 17. | umgesetzt 08.10.2026 |
+| J24 | Zeile 6 | *Zuletzt wird geprüft* | „du prüfst doch nicht im zweiten Kapitel irgendwas. Das ist das Grundlagen- und Erklär-Kapitel!!" | Wort | 2.3.3 prüft tatsächlich die Übertragbarkeit der Festlegung, insofern trägt das Wort. Julius liest es als Vorgriff auf Kapitel 3. | umgesetzt 08.10.2026 |
+| J25 | Zeile 3 bis 6 | Kapiteleinleitung als Ganzes | „in dem kleinen Absatz fehlt komplett der rote Faden. Warum kurative Systemführung zuerst, warum der Rest danach, wieso ist das wichtig für meine Arbeit" | Aufbau | Stilregel 3, Überleitung. Die Einleitung zählt die drei Teile auf, ohne die Reihenfolge zu begründen. | umgesetzt 08.10.2026 |
+| J26 | Zeile 11 | *Betriebsmitteln wie Leitungen und Transformatoren* | „ahh das sind Betriebsmittel. aiaiai" | Verständnis | Bestätigt J18, die Erklärung kommt zu spät. | umgesetzt 08.10.2026 |
+| J27 | Zeile 20 | Ende von 2.1 | „gutes Kapitel bis hier!" | Lob | | umgesetzt 08.10.2026 |
+
+###### 4.2 Abschnitt 2.1.1, `chapter_2.tex:24` bis `86`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J28 | Zeile 41 | Verweis auf Abbildung 2.1 | „gut eingebunden!" | Lob | | umgesetzt 08.10.2026 |
+| J29 | Zeile 65 | *denn der Kohle- und Kernenergieausstieg reduziert die steuerbare konventionelle Kapazität* | „vielleicht noch um einen Satz weiter ausführen? Warum passiert das gerade durch den Kohleausstieg?" | Inhalt | Ein Satz zur Ursache, Stilregel 4. Belegbar mit InnoSys 2030, das schon zitiert ist. | entfällt 08.10.2026, InnoSys 2030 trägt die Kostenlogik nicht |
+| J30 | Zeile 66 | *Volumen und Kosten … nicht proportional zueinander* | „sehr gut" | Lob | | umgesetzt 08.10.2026 |
+| J31 | Zeile 77 | *Pumpspeicherkraftwerk (PSKW)* | „Mehrzahl" | Wort | Erstnennung über `\ac{PSKW}` liefert den Singular aus `abbreviations.tex`. `CLAUDE.md` Abschnitt 5 schließt `\acp` aus. Änderbar nur über den Satz oder den Eintrag im Verzeichnis. | umgesetzt 08.10.2026 |
+
+###### 4.3 Abschnitt 2.1.2, `chapter_2.tex:90` bis `147`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J32 | Zeile 104 | Absatz mit den Begriffen Scharfschaltung, Auslösung, Abruf, Umsetzung, Reaktionszeit, kurative Bindung, Bindungsdauer | „find ich sehr eklig zu lesen den ganzen Absatz, dabei ist die Grafik eigentlich ganz sauber" | Aufbau | Der Absatz ist eine Begriffsliste nach InnoSys 2030, so in `CLAUDE.md` Abschnitt 5 verlangt. Form bleibt offen, etwa eine Tabelle oder Definitionen je Phase im Folgeabsatz. | umgesetzt 08.10.2026 |
+| J33 | Zeile 112 | *State Estimation* | „deutsch noch dahinter?" | Wort | Der Satz erklärt es bereits mit *also der aus Messwerten geschätzten Netzsituation*. Vielleicht den deutschen Begriff *Netzzustandsschätzung* voran. | umgesetzt 08.10.2026 |
+| J35 | Zeile 126 | *Last [INN21], wobei sich …* | „Punkt. Würd auch nicht mitten im Satz zitieren" | Satz | Stilregel 17 und 15. Der Satz trägt nach dem Zitat noch einen Nebensatz mit *wobei*. | umgesetzt 08.10.2026 |
+| J36 | Zeile 128 | *stellt sich die Frage nach Vorhaltung und Vergütung* | „bis dahin guter Absatz. *stellt sich die Frage* ist nicht gut formuliert. *muss beachtet werden* vielleicht?" | Wort | Sein Vorschlag ist Passiv, Stilregel 12. Alternative ohne Passiv nötig. | umgesetzt 08.10.2026 |
+| J37 | Zeile 142 | *Situation, und damit der ÜNB …* | „puuuuuunkt" | Satz | Stilregel 17. Der Satz trägt *denn*, *und*, *damit*. | umgesetzt 08.10.2026 |
+| J34 | Zeile 145 | *nämlich* | gestrichen | Wort | siehe Abschnitt 1 dieser Datei | umgesetzt 08.10.2026 |
+
+###### 4.4 Abschnitt 2.1.3, `chapter_2.tex:151` bis `226`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J38 | Zeile 162 | *der Anlagenbestand mit seiner Entwicklung* | „versteh ich nicht. Die Entwicklung des Bestandes?" | Verständnis | Gemeint ist der Zubau bis 2037. Das Pronomen *seiner* steht im Satz, also regelkonform, aber unklar. | umgesetzt 08.10.2026 |
+| J39 | Zeile 164 | *Der Vergütungspfad betrifft nicht die Eignung …, also eine Regel, nach der der Ausgleich …* | „vielleicht noch einen Einschub mit Komma in den Satz einbauen?" | Satz | Ironisch, der Satz ist zu verschachtelt. Stilregel 17. | umgesetzt 08.10.2026 |
+| J40 | Zeile 198 | *allein ein Abregelpotenzial* | „lediglich?" | Wort | *allein* ist im Text durchgehend für *nur* gesetzt, 84 Stellen in Kapitel 1 bis 6. Eine einzelne Änderung bräche die Konstanz, Stilregel 14. | umgesetzt 08.10.2026 |
+| J41 | Zeile 199 | Absatz Wind und Photovoltaik | „schöner Absatz" | Lob | | umgesetzt 08.10.2026 |
+| J42 | Zeile 205 | *eine über Stunden reichende Bindung* | „anhaltende" | Wort | | umgesetzt 08.10.2026 |
+| J43 | Zeile 206 | *Im Pilotbetrieb von KuPilot ist ein PSKW bereits eingesetzt worden, dort allerdings auf eine Stunde begrenzt. … Die Zahl der PSKW ist jedoch begrenzt …* | „hier irgendwo noch ne Quelle" | Inhalt | Trifft zu. Der Absatz zu PSKW trägt keinen Beleg, obwohl er KuPilot nennt. TEN25 ist erst in 2.1.4 zitiert. Stilregel 8. | nicht umgesetzt, kein Beleg (Protokoll Zeile 1266) |
+| J44 | Zeile 211 | *Ein BESS stellt anders als ein konventionelles Kraftwerk und eine Windenergieanlage auch aus dem Stillstand in beide Richtungen.* | „… Leistung bereit? Da fehlt doch noch was" | Verständnis | *stellen* ist Fachjargon für *den Betriebspunkt verändern*, in 1.1 als *Stellpotenzial* eingeführt. Ohne Objekt liest ein Fachfremder den Satz als unvollständig. Zusammen mit J45. | umgesetzt 08.10.2026 |
+| J45 | Zeile 213 | *kann in dieser Richtung nicht weiter stellen* | „ist das Strom-Slang?" | Wort | siehe J44 | umgesetzt 08.10.2026 |
+| J46 | Zeile 216 | *anders als konventionelle Kraftwerke* | „im Gegensatz zu" | Wort | Der Satz beginnt schon mit *Anders als PSKW*, die Wiederholung im selben Satz stört. | umgesetzt 08.10.2026 |
+| J47 | Zeile 221 | Absatz Energieinhalt gegen Leistung | „gut erklärt!" | Lob | | umgesetzt 08.10.2026 |
+
+###### 4.5 Abschnitt 2.1.4 und 2.1.5, `chapter_2.tex:228` bis `260`
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| J48 | Zeile 228 | Überschrift *Herausforderungen der Umsetzung* | „boah, würd ich mir überlegen, ob das schon in Stand der Technik kommen sollte und nicht erst in Methodik" | Aufbau | Grundsätzlich. Der Abschnitt trägt die vier Hindernisse aus den Pilotprojekten, also Stand der Technik, und die Anforderungen A1 bis A8 in 3.1.1 bauen darauf auf. Eine Verschiebung zöge die Struktur von Kapitel 3 nach sich. | umgesetzt 08.10.2026 |
+| J49 | Zeile 242 | *Die Ausgestaltung der Redundanz ist nicht Gegenstand der Untersuchung.* | „gerade der Satz darf in Kapitel 2 eigentlich nicht fallen" | Aufbau | Abgrenzung der Arbeit in einem Grundlagenkapitel. Verschiebbar nach 1.2 oder zu den nicht abgebildeten Größen in 3.2.1. | umgesetzt 08.10.2026 |
+| J50 | Zeile 260 | Überschrift 2.1.5 | „hab bis hier gelesen" | Hinweis | Julius' Kommentare enden hier. | umgesetzt 08.10.2026 |
+
+---
+
+##### 5 Kapitel 3 und 4
+
+| Nr. | Stelle | Markiert | Kommentar | Kategorie | Einordnung | Entscheidung |
+|---|---|---|---|---|---|---|
+| L11 | 3.2.1, `chapter_3.tex:166` | *relative Optimalitätslücke von 0,01 Prozent* | „Stimmt das? Nicht dass du eigentlich 1 % meinst" | Inhalt | **Text und Code weichen ab.** `bess_dispatch_optimization/optimizer.py:465` setzt `MIPGap = 0.0`, mit dem Kommentar, ein Gap von 1e-4 entschiede mit darüber, ob eine Stunde als voll reserviert gilt. Der Text nennt 0,01 Prozent, also 1e-4, den Vorgabewert von Gurobi. Der Satz in 3.2.1 ist zu berichtigen, unabhängig davon, wie die Frage von Luca gemeint war. | umgesetzt 08.10.2026 |
+| L12 | 3.3, `chapter_3.tex:409` | Überschrift *Validierung des Optimierungsmodells* | „Gehören die Ergebnisse der Validierung nicht eher in Kapitel 4?" | Aufbau | Die Gliederung ist am 13.09.2026 entschieden, siehe `archiv/STRUKTUR.md`. Die Validierung prüft das Werkzeug, Kapitel 4 trägt die Ergebnisse der Fragestellung. | umgesetzt 08.10.2026 |
+| L13 | 3.3.1, `chapter_3.tex:440` | *taugt damit nicht als Maßstab* | „ugs." | Wort | Stilregel 15, nüchterner Ton. | umgesetzt 08.10.2026 |
+| L14 | 4.1, `chapter_4.tex:17` | *zwischen null und 200* | siehe Abschnitt 1 | Wort | | umgesetzt 08.10.2026 |
+| L16 | 4.1, `chapter_4.tex:19` | *Der 06.05.2025 tritt daneben* | „ugs., lieber *wird zusätzlich betrachtet*" | Wort | Sein Vorschlag ist Passiv, Stilregel 12. | umgesetzt 08.10.2026 |
+| L17 | 4.1, `chapter_4.tex:20` | *macht die kurative Reservierung für den Betreiber lohnender* | markiert ohne Text | Wort | Vermutlich derselbe Anstoß, Stilregel 13 oder 15. | umgesetzt 08.10.2026 |
+| L15 | 4.1, `chapter_4.tex:23` | *fällt Folgendes auf.* | siehe Abschnitt 1 | Satz | | umgesetzt 08.10.2026 |
+
+---
+
+##### 6 Übergreifende Befunde aus beiden Durchsichten
+
+Diese Punkte tragen mehrere Kommentare zugleich und sind vor den Einzelstellen
+zu entscheiden.
+
+1. **Begriffe vor der Definition in Kapitel 1.** *Redispatch* (J3, J9),
+   *Betriebsmittel* (J10, J18, J26), *Dauergrenze* (L7), *thermische Reserve*
+   (L8), *stellen* (J44, J45). Beide Leser stolpern in Kapitel 1 über
+   Fachbegriffe, die erst in 2.1 erklärt sind. Die Liste in `CLAUDE.md`
+   Abschnitt 5 legt die Orte fest, sie deckt *Betriebsmittel* und
+   *Dauergrenze* nicht ab.
+2. **Wiederholung der Windfront im Dezember 2024** in 1.1 Absatz 3 und 5
+   (L5, L6, J15). Beide Leser unabhängig voneinander.
+3. **Satzlänge** (J8, J23, J35, J37, J39, L9). Sechs Stellen gegen Stilregel
+   17, alle in Kapitel 1 und 2.1, die schon zweimal durchgesehen sind.
+4. **Aufbau von 1.1 Absatz 3** (J12, J13): Der Verweis auf Abbildung 1.1
+   deckt die Wetterlagen nicht, und der Mechanismus der Windfront steht am
+   Ende statt am Anfang.
+5. **Kapiteleinleitung 2** (J23, J24, J25): roter Faden und *geprüft*.
+6. **Grenzziehung Kapitel 2 gegen 3** (J48, J49, L12): drei Stellen, an
+   denen ein Leser den Inhalt in einem anderen Kapitel erwartet.
+7. **Umgangssprache** (L10, L13, L16, L17): vier Stellen.
+8. **Zahlen und Zeichen mit Regelbezug** (J21, J34, L14, L15, L19): siehe
+   Abschnitt 1, plus die zwei Schreibweisen für 40 Prozent.
+9. **Zahl gegen den Code** (L11): Der Text sagt 0,01 Prozent, der Code setzt
+   die Lücke auf null. Einzige Stelle, die unabhängig von jeder Entscheidung
+   zu berichtigen ist.
+10. **Beleg fehlt** (J43): PSKW im Pilotbetrieb.
+11. **Länge und Inhalt von Kapitel 1** (C1, J20, J3, J18, L7, L8): Ein
+    Leser will in der Einleitung nur Problem, Relevanz und Aufbau, die
+    Erklärungen zu Netz, Markt und Redispatch erst in Kapitel 2. Die
+    Einzelkommentare zu Begriffen vor der Definition (Punkt 1) sind die
+    Folge desselben Aufbaus. Einzelheiten in Abschnitt 8.
+12. **Bildunterschriften** (C2): alle 43 Bildunterschriften sind Titel in
+    einem Satz, keine erklärt Achsen, Legende oder Aussage. Einzelheiten in
+    Abschnitt 8.
+
+##### 7 Was die Leser loben
+
+J11, J14, J19, J22, J27, J28, J30, J41, J47: der Zusammenhang Marktdesign und
+Engpass, der NEP-Absatz, die Überleitung zur kurativen Systemführung, die
+Kapitelübersicht, 2.1 als Ganzes, die Einbindung von Abbildung 2.1, die
+Nichtproportionalität von Volumen und Kosten, der Absatz zu Wind und
+Photovoltaik und der Absatz zum Energieinhalt. Diese Absätze sind beim Schliff
+nicht anzufassen.
+
+---
+
+##### 8 Allgemeine Kommentare aus dem Chat, 30.09.2026
+
+Zwei Kommentare ohne Stelle im PDF, vom Verfasser im Wortlaut übermittelt.
+Der Leser ist nicht benannt.
+
+###### C1 Länge und Inhalt der Einleitung
+
+Wortlaut: „Ich find die Motivation/Einleitung sehr lang. Da erklärst du schon
+sehr viel, was eigentlich eher in Kapitel 2 gehört. Ist sicherlich ein
+bisschen Geschmackssache, aber ich möchte da nur wissen, wo das Problem
+liegt, welches du mit der Arbeit lösen möchtest, warum das relevant ist und
+wie du deine Arbeit aufgebaut hast. Die ganzen Erklärungen, wie die Märkte,
+Netze, Redispatch und Co. funktionieren, können ruhig später kommen."
+
+Kategorie: Aufbau. Was der Kommentar am Text trifft, in Zahlen:
+
+| Absatz | Zeilen in `chapter_1.tex` | Sätze | Wörter | Trägt |
+|---|---|---|---|---|
+| Kapiteleinleitung | 4 bis 10 | 7 | 168 | Problem |
+| 1.1 Absatz 1, Transportaufgabe | 15 bis 17 | 3 | 85 | Problem |
+| 1.1 Absatz 2, Marktdesign | 19 bis 24 | 6 | 140 | Problem, mit Erklärung des dezentralen Dispatch |
+| 1.1 Absatz 3, Bedarf und Kosten | 33 bis 38 | 6 | 147 | Relevanz |
+| 1.1 Absatz 4, NEP | 47 bis 51 | 5 | 92 | Relevanz |
+| 1.1 Absatz 5, Ereignisabhängigkeit | 53 bis 57 | 5 | 109 | Relevanz, Folgerung |
+| 1.1 Absatz 6, präventive Systemführung | 59 bis 64 | 6 | 118 | **Erklärung**, (N-1)-Kriterium, Dauergrenze, thermische Reserve |
+| 1.1 Absatz 7, Vorschauprozesse und Handelsfenster | 66 bis 73 | 8 | 175 | **Erklärung**, Rechenläufe, Handelsschluss, Netzsicherheitsrechnung |
+| 1.1 Absatz 8, kurative Systemführung | 75 bis 79 | 5 | 100 | **Erklärung**, dann Wahl der BESS |
+| 1.2 Absatz 1, Ziel | 86 bis 94 | 9 | 214 | Ziel |
+| 1.2 Absatz 2, Vergütung und Modell | 96 bis 110 | 15 | 279 | **Erklärung**, § 13a, Regelleistung, dann Modell und Rahmen |
+| 1.2 Absatz 3, Aufbau | 112 bis 119 | 8 | 150 | Aufbau |
+
+Einordnung: Die vier fett markierten Absätze tragen 672 von 1777 Wörtern,
+also gut zwei Fünftel des Kapitels, und genau dort liegen die Begriffe, an
+denen beide anderen Leser gestolpert sind, nämlich Betriebsmittel,
+Dauergrenze, thermische Reserve und Redispatch. Julius sagt zu 1.2 Absatz 2
+dasselbe in J20. Der Kommentar deckt sich also mit sechs Einzelkommentaren.
+
+Gegen eine Kürzung steht: Die Betreuerkommentare vom 14.09.2026 verlangten
+den roten Faden von der Physik zur Vorhaltung, die Absätze 6 bis 8 sind die
+Antwort darauf, und die Länge von fünf Seiten ist am 28.09.2026 bewusst
+wiederhergestellt worden, siehe Commit `2bceb4e`. Eine Kürzung braucht
+deshalb eine Entscheidung, was aus den Absätzen 6, 7 und 1.2 Absatz 2 nach
+2.1.1, 2.2.1 und 2.3 wandert und was als ein Satz je Absatz in Kapitel 1
+bleibt. Die Erklärung des dezentralen Dispatch in 1.1 Absatz 2 steht
+bereits in 2.2, die Vorschauprozesse aus Absatz 7 in 2.2.1, die
+Rechtslage aus 1.2 Absatz 2 in 2.1.5. Eine Kürzung streicht damit
+überwiegend Dopplungen und keine Aussagen.
+
+Entscheidung:
+
+###### C2 Bildunterschriften
+
+Wortlaut: „Grundsätzlich brauchst du längere Bildunterschriften. Jede
+Abbildung muss mit der Bildunterschrift voll verständlich sein, du schreibst
+meistens nur eine Überschrift in den Abbildungstext."
+
+Kategorie: Aufbau. Befund über alle 43 Bildunterschriften in Kapitel 1 bis 6
+und den Anhängen, Tabellen eingeschlossen:
+
+- Kürzeste 3 Wörter (Tabelle C.2), längste 25 (Abbildung 3.2), im Mittel 17.
+- 29 von 43 bestehen aus einem einzigen Satz, der den Gegenstand nennt.
+- 14 tragen einen zweiten Satz. Er nennt die Quelle (Abbildung 1.1, 1.2,
+  Tabelle 2.2, A.1), eine Darstellungsregel (Ordinate ab 50 Prozent, Preisachse
+  logarithmisch, Zeitumstellung steht schwarz, Whisker am oberen Ende) oder
+  die Iteration (zweite Iteration). Keine erklärt, was die Abbildung zeigt,
+  welche Größe auf welcher Achse steht oder was der Leser ablesen soll.
+- Die Legenden stehen in den Abbildungen selbst, die Einheiten meist im
+  Achsentitel.
+
+Einordnung: `CLAUDE.md` trägt keine Regel zur Länge, nur die Ausnahme der
+Bildunterschriften von den Zeichensetzungsregeln in Stilregel 16 und die
+Vorgabe, dass jede Abbildung unmittelbar bei der Stelle steht, die auf sie
+verweist. Der erklärende Satz steht heute im Fließtext vor oder nach der
+Abbildung, etwa zu Abbildung 4.4 der Absatz zur Farbskala. Eine längere
+Bildunterschrift wiederholte diesen Satz. Umsetzbar in zwei Stufen, nämlich
+ein zweiter Satz je Bildunterschrift mit Achsen und Aussage bei den 22
+Abbildungen in Kapitel 1 bis 4, oder nur bei den Ergebnisabbildungen in
+Kapitel 4, die ein Leser ohne den Text am ehesten einzeln ansieht. Die
+Tabellen brauchen ihn nicht, ihre Spaltenköpfe tragen die Einheit.
+
+Entscheidung:
+
+---
+
+##### 9 Stufen und Gewichtung, nachgetragen am 07.10.2026
+
+Dieselben drei Stufen wie in `KOMMENTARE_BETREUER_KAP4_5.md`, mit zwei
+Vorgaben des Verfassers vom 07.10.2026: Die Kommentare der Freunde haben
+weniger Gewicht als die des Betreuers, und strukturelle Änderungen werden
+auf ihre Kommentare hin nicht vorgenommen. Wo ein struktureller Kommentar
+eine leichte Variante zulässt, steht sie bei B, der strukturelle Kern bei
+C mit der Empfehlung *zurückstellen*. Die Spalte *Länge* wie dort, ±0 ist
+Wortersatz.
+
+| Stufe | Anzahl | Bedeutung |
+|---|---|---|
+| A | 31 | Wortersatz oder Satztrennung, automatisch, Verfasser sieht den Diff |
+| B | 8 | Ein leichter Satz oder Halbsatz, Wortlaut wird vorgelegt |
+| C | 8 | Strukturell, Empfehlung zurückstellen, leichte Variante genannt |
+| entfällt | 21 | Lob, Auskunft, Markierung ohne Text, Regelkonflikt, Doppelung mit dem Betreuer |
+
+###### 9.1 Stufe A
+
+| Nr. | Stelle | Umsetzung | Länge | Entscheidung |
+|---|---|---|---|---|
+| L1 | `extras/abstract.tex:37` | BESS, FCR und aFRR bei der ersten Nennung in der Kurzfassung ausschreiben, wie im Abstract. `\acs` bleibt, Langform davor. | +1 | umgesetzt 08.10.2026 |
+| L19 | `extras/abstract.tex:41`, `chapter_6.tex:34` | *zwei Fünftel* durch *rund 40 Prozent* ersetzen, wie 4.4. | ±0 | umgesetzt 08.10.2026 |
+| J2 | `chapter_1.tex:5` | *bewegt seither Energiemengen*. | ±0 | umgesetzt 08.10.2026 |
+| J4 | `chapter_1.tex:8` | *nur wenige Erzeugungsanlagen*. | ±0 | umgesetzt 08.10.2026 |
+| J18, J26 | `chapter_1.tex:5` | Begriff bei der ersten Nennung einführen: *Überlastungen von Betriebsmitteln, also Leitungen und Transformatoren*. Zeile 60 bleibt dann verständlich. | ±0 | umgesetzt 08.10.2026 |
+| J10 | `chapter_1.tex:23` | *eine Überlastung eines Betriebsmittels ab*. Setzt J18 voraus. | ±0 | umgesetzt 08.10.2026 |
+| J8 | `chapter_1.tex:19` | Satz in zwei trennen, Stilregel 17. Die EIV-Erklärung mit *also* wird eigener Satz. | ±0 | umgesetzt 08.10.2026 |
+| J12 | `chapter_1.tex:33` | Verweis auf die Hälfte beziehen, die die Abbildung trägt: *Der Engpassmanagementbedarf ist hoch, wie Abbildung 1.1 mit dem jährlichen Maßnahmenvolumen zeigt, und von wenigen Wetterlagen geprägt.* | ±0 | umgesetzt 08.10.2026 |
+| L5, L6, J15 | `chapter_1.tex:53` | Wiederholung auflösen, ohne zu verschieben: In Zeile 53 den Dezember 2024 und die Quelle streichen, der Satz lautet dann wie im Build vom 21.09.2026, *denn einzelne Wetterlagen prägen die Kosten eines Jahres stärker als die Jahresmenge*. Zeile 36 bleibt mit Beleg. | ±0 | umgesetzt 08.10.2026 |
+| L7 | `chapter_1.tex:62` | *Dauergrenze* durch den Begriff des Vorsatzes ersetzen: *unter der dauerhaft zulässigen Belastung*. | ±0 | umgesetzt 08.10.2026 |
+| L9 | `chapter_1.tex:69` | Satz am *und* trennen. | ±0 | umgesetzt 08.10.2026 |
+| L10 | `chapter_1.tex:94` | *mit dem präventiven Redispatch konkurrenzfähig ist*. | ±0 | umgesetzt 08.10.2026 |
+| J23 | `chapter_2.tex:4` | Satz am *und* trennen. | ±0 | umgesetzt 08.10.2026 |
+| J33 | `chapter_2.tex:112` | *mit der Netzzustandsschätzung (State Estimation), also …* | ±0 | umgesetzt 08.10.2026 |
+| J35 | `chapter_2.tex:126` | Punkt nach dem Zitat, *wobei*-Satz wird eigener Satz: *Die Maßnahmen unterscheiden sich darin, wer …* | ±0 | umgesetzt 08.10.2026 |
+| J36 | `chapter_2.tex:128` | *Nur bei Eingriffen in Erzeugung, Last und Speicherung sind Vorhaltung und Vergütung zu regeln, weshalb …* | ±0 | umgesetzt 08.10.2026 |
+| J37 | `chapter_2.tex:142` | Satz am *und damit* trennen. | ±0 | umgesetzt 08.10.2026 |
+| J38 | `chapter_2.tex:162` | *der Anlagenbestand mit seinem Zubau bis 2037*. | ±0 | umgesetzt 08.10.2026 |
+| J39 | `chapter_2.tex:164` | Satz trennen: *Der Vergütungspfad betrifft nicht die Eignung der Technologie. Er betrifft die Frage, ob für sie eine Bemessungsgrundlage besteht, also eine Regel für die Berechnung des Ausgleichs.* | ±0 | umgesetzt 08.10.2026 |
+| J42 | `chapter_2.tex:205` | *eine über Stunden anhaltende Bindung*. | ±0 | umgesetzt 08.10.2026 |
+| J43 | `chapter_2.tex:206` | `\cite` auf TEN25 an den KuPilot-Satz, die Quelle ist in 2.1.4 schon zitiert und trägt die Aussage. | ±0 | nicht umgesetzt, kein Beleg (Protokoll Zeile 1266) |
+| J44, J45 | `chapter_2.tex:211`, `213` | *stellt … Leistung in beide Richtungen bereit* und *kann ihre Leistung in dieser Richtung nicht weiter erhöhen*. | ±0 | umgesetzt 08.10.2026 |
+| J46 | `chapter_2.tex:216` | *im Gegensatz zu konventionellen Kraftwerken*, weil der Satz schon mit *Anders als* beginnt. | ±0 | umgesetzt 08.10.2026 |
+| L13 | `chapter_3.tex:440` | *eignet sich damit nicht als Maßstab*. | ±0 | umgesetzt 08.10.2026 |
+| L14 | `chapter_4.tex:17` und Anhang F | *zwischen 0 und 200 €/(MW·h)*, an allen sechs Stellen gleich. Keine Regel in `CLAUDE.md`. | ±0 | umgesetzt 08.10.2026 |
+| L17 | `chapter_4.tex:20` | *erhöht den Anreiz zur kurativen Reservierung*. | ±0 | umgesetzt 08.10.2026 |
+| L11 | `chapter_3.tex:166` | Zahl an den Code angleichen, siehe Abschnitt 5. Wortlaut hängt an B unten. | ±0 | umgesetzt 08.10.2026 |
+
+###### 9.2 Stufe B
+
+| Nr. | Stelle | Vorzulegen | Länge | Entscheidung |
+|---|---|---|---|---|
+| L11 | `chapter_3.tex:166` | Der Code setzt die Lücke auf null, also exakte Lösung bis zur Zulässigkeitstoleranz. Der Satz muss das sagen, und der Verfasser bestätigt, dass die ausgewerteten Läufe mit dieser Einstellung gerechnet sind. | ±0 | umgesetzt 08.10.2026 |
+| L8 | `chapter_1.tex:63` | Halbsatz, der *thermisch* auf das Betriebsmittel bezieht: *eine thermische Reserve der Leitungen und Transformatoren ungenutzt bleibt*. | ±0 | umgesetzt 08.10.2026 |
+| J3, J9 | `chapter_1.tex:8` | Leichte Variante statt Verschieben der Definition: *Im bestehenden Engpassmanagement können nur wenige Erzeugungsanlagen so kurzfristig reagieren*. Der Begriff Redispatch fällt dann erst in Zeile 22 mit seiner Erklärung. | ±0 | umgesetzt 08.10.2026 |
+| J5 | `chapter_1.tex:9` | *Ein Lösungsansatz ist die kurative Systemführung, die das Netz effizienter nutzt …* Behauptungsstärke nach Stilregel 11, der Folgesatz trägt die Hürden schon. | ±0 | umgesetzt 08.10.2026 |
+| J24 | `chapter_2.tex:6` | *Zuletzt wird dargelegt, ob sich eine der bestehenden Vergütungslogiken …* Nimmt *prüfen* aus der Kapitelankündigung, 2.3.3 bleibt eine Prüfung. | ±0 | umgesetzt 08.10.2026 |
+| J25 | `chapter_2.tex:3` bis `6` | Ein Satz zur Reihenfolge am Ende der Kapiteleinleitung: *Die Reihenfolge folgt dem Weg von der Maßnahme über den Markt zum Preis der Vorhaltung.* | +1 | umgesetzt 08.10.2026 |
+| J29 | `chapter_2.tex:65` | Ein Satz zur Ursache, belegt mit INN21: steuerbare Kapazität fällt weg, die verbleibenden Anlagen laufen seltener und verlangen für ein Anfahren mehr. Geringes Gewicht, nur wenn die Länge es zulässt. | +1 | entfällt 08.10.2026, InnoSys 2030 trägt die Kostenlogik nicht |
+| J49 | `chapter_2.tex:242` | Den Abgrenzungssatz aus Kapitel 2 nehmen und in 3.2.1 zu den nicht abgebildeten Größen stellen, dort als Halbsatz. Kapitel 2 verliert eine Zeile, 3.2.1 gewinnt keine. | −1 | umgesetzt 08.10.2026 |
+
+###### 9.3 Stufe C, Empfehlung zurückstellen
+
+| Nr. | Kommentar | Warum zurückstellen | Leichte Variante |
+|---|---|---|---|
+| C1, J20 | Einleitung kürzen, Erklärungen nach Kapitel 2 | Vier Absätze mit 672 Wörtern, Gegenposition des Betreuerdurchgangs vom 14.09.2026, Länge am 28.09.2026 bewusst gesetzt. | Allein die A-Stellen in Kapitel 1 oben, die die Begriffe an Ort und Stelle klären. Damit entfällt der Hauptgrund der Freunde, nämlich das Stolpern über Begriffe. |
+| C2 | Längere Bildunterschriften | 43 Unterschriften, jede Ergänzung kostet Zeilen, und der Text neben der Abbildung erklärt sie schon. | Nur dort, wo auch der Betreuer fragt, nämlich die grauen Zahlen in Abbildung 4.7 bis 4.10 (N44). |
+| J13 | 1.1 Absatz 3 umbauen, Mechanismus vor Menge vor Kosten | Absatzumbau im zweimal durchgesehenen Kapitel 1. | J12 oben stellt den Abbildungsverweis richtig, mehr nicht. |
+| J32 | Begriffsabsatz in 2.1.2 als Liste oder Tabelle | Die Begriffsliste ist in `CLAUDE.md` Abschnitt 5 so verlangt, eine Tabelle kostet Platz. | Keine. |
+| J48 | 2.1.4 nach Kapitel 3 | Die Anforderungen A1 bis A8 bauen auf den vier Hindernissen auf, Verschiebung zieht Kapitel 3 nach. | Keine. |
+| L12 | Validierung nach Kapitel 4 | Am 13.09.2026 entschieden, siehe `archiv/STRUKTUR.md`. | Keine. |
+| J31 | PSKW in der Mehrzahl | Erstnennung über `\ac`, Verzeichnis trägt den Singular, `\acp` ist nach `CLAUDE.md` ausgeschlossen. | Keine. |
+
+###### 9.4 Entfällt
+
+- Lob: J11, J14, J19, J22, J27, J28, J30, J41, J47.
+- Auskunft oder Hinweis ohne Auftrag: J1, J6, J7, J50.
+- Markierung ohne Text, Anstoß nicht erkennbar: J16, J17.
+- Regelkonflikt, nur mit Regeländerung: J21, J34 (*nämlich*, Stilregel 16),
+  J40 (*allein*, Konstanz nach Stilregel 14), L4 (*prognostiziert* gegen
+  Stilregel 13, Geschmack).
+- Beim Betreuer bereits enthalten und dort zu entscheiden: L15 (C1 dort),
+  L16 (N9 dort).
+
+---
+
+##### 10 Umgesetzt am 07.10.2026
+
+Freigabe des Verfassers vom 07.10.2026 für Stufe A, dazu L11 und J49 aus
+Stufe B. Prüfsuite ohne Befund, Build geprüft: 129 Seiten, Kapitelanfänge
+1, 6, 30, 49, 65, 77 und Literaturverzeichnis 81 wie im Stand `54048c6`.
+
+| Nr. | Datei | Alt | Neu |
+|---|---|---|---|
+| J18, J26 | `chapter_1.tex:5` | Überlastungen von Leitungen und Transformatoren | Überlastungen von Betriebsmitteln, also von Leitungen und Transformatoren |
+| J2 | `chapter_1.tex:5` | Mengen | Energiemengen |
+| J4 | `chapter_1.tex:8` | Anlagen | Erzeugungsanlagen |
+| J8 | `chapter_1.tex:19` | ein Satz mit Doppelpunkt, Einschub und Relativsatz | zwei Sätze: *liegt die Fahrplanbildung bei den Einsatzverantwortlichen (EIV), also den Marktrollen, die den Einsatz einer Anlage im Betrieb verantworten. Die EIV bestimmen die Erzeugungs- und Verbrauchsfahrpläne selbst und melden sie dem Netzbetreiber.* |
+| J10 | `chapter_1.tex:24` | eine Überlastung | die Überlastung eines Betriebsmittels |
+| J12 | `chapter_1.tex:34` | Verweis am Satzende | Verweis nach *hoch*, Wetterlagen danach |
+| L5, L6, J15 | `chapter_1.tex:54` | *wie die Windfront im Dezember 2024* mit Zitat | gestrichen, Satz ohne Beleg wie am 21.09.2026 |
+| L7 | `chapter_1.tex:63` | Dauergrenze | dauerhaft zulässigen Belastung |
+| L9 | `chapter_1.tex:70` | ein Satz | zwei Sätze am *und* |
+| L10 | `chapter_1.tex:95` | mithält | gegenüber dem präventiven Redispatch konkurrenzfähig ist |
+| J23 | `chapter_2.tex:4` | ein Satz | zwei Sätze am *und* |
+| J33 | `chapter_2.tex:113` | State Estimation | Netzzustandsschätzung (State Estimation) |
+| J35 | `chapter_2.tex:127` | *, wobei sich die Maßnahmen …* | Punkt nach dem Zitat, eigener Satz |
+| J36 | `chapter_2.tex:129` | stellt sich die Frage nach Vorhaltung und Vergütung | sind Vorhaltung und Vergütung zu regeln |
+| J37 | `chapter_2.tex:143` | ein Satz | zwei Sätze am *und damit* |
+| J38 | `chapter_2.tex:163` | mit seiner Entwicklung | mit seinem Zubau bis 2037 |
+| J39 | `chapter_2.tex:165` | *, also eine Regel, nach der …* | eigener Satz *Eine Bemessungsgrundlage ist eine Regel …* |
+| J42 | `chapter_2.tex:206` | reichende | anhaltende |
+| J44 | `chapter_2.tex:212` | stellt … in beide Richtungen. | stellt … Leistung in beide Richtungen bereit. |
+| J45 | `chapter_2.tex:214` | nicht weiter stellen | ihre Leistung in dieser Richtung nicht weiter erhöhen |
+| J46 | `chapter_2.tex:217` | anders als konventionelle Kraftwerke | im Gegensatz zu konventionellen Kraftwerken |
+| J49 | `chapter_2.tex:242` → `chapter_3.tex:175` | Satz in 2.1.4 | gestrichen, in 3.2.1 neu: *Ebenso bleibt die Ausgestaltung der Redundanz in der Wirkungskette aus Abschnitt 2.1.4 außer Betracht.* |
+| L11 | `chapter_3.tex:167` | Optimalitätslücke von 0,01 Prozent | Optimalitätslücke von null, also bis zum Nachweis der Optimalität |
+| L13 | `chapter_3.tex:441` | taugt | eignet sich |
+| L14 | `chapter_4.tex:17`, Anhang F fünfmal | null | 0 |
+| L17 | `chapter_4.tex:20` | lohnender | attraktiver. Die längere Fassung *erhöht den Anreiz des Betreibers* schob eine Abbildung und kostete in Kapitel 4 eine Seite, deshalb verworfen. |
+| L19 | `chapter_6.tex:34`, `abstract.tex:41` | zwei Fünftel | 40 Prozent |
+
+Nicht umgesetzt, obwohl in Stufe A:
+
+- **L1**, Abkürzungen in der Kurzfassung ausschreiben. Am 07.10.2026 nach
+  Freigabe doch gesetzt: *Batteriespeichersystem (BESS)*, *Primärregelleistung
+  (FCR)* und *Sekundärregelleistung (aFRR)*. Dafür gestrichen, weil die
+  Kurzfassung sonst um eine Zeile auf zwei Seiten lief: *Die Einplanung hängt
+  deshalb an der Zeit ebenso wie am Engpassmuster im Netz.* Nicht wieder
+  aufzunehmen. Kurzfassung wieder eine Seite, Build mit 129 Seiten geprüft.
+- **J43**, Beleg für den KuPilot-Satz. Die Pressemitteilung ist ein Scan ohne
+  Textebene, und die Begrenzung auf eine Stunde ist ein Hinweis des Betreuers,
+  nicht Inhalt der Mitteilung. So im Protokoll festgehalten, Zeile 1266. Ein
+  Zitat trüge die Aussage nicht, Regel aus `CLAUDE.md` Abschnitt 2.
+
+Offen aus Stufe B, Wortlaut in Abschnitt 9.2: L8, J3/J9, J5, J24, J25, J29.
+
+
+### Anhang C, Arbeitsweise (WORKFLOW.md, Stand 22.09.2026, übernommen am 08.10.2026)
+
+Gilt weiter als Arbeitsweise, `CLAUDE.md` Abschnitt 3 verweist hierher. Dateinamen darin, die es nicht mehr gibt (KOMMENTARE_KAP3.md, DURCHSICHT_KAP1_3.md, ANWEISUNG_KOMMENTARE.md), sind historisch.
+
+#### Workflow für Korrektur und Neufassung
+
+Stand 14.09.2026. Er ersetzt die Fassung vom 07.09.2026 und das satzweise
+Verfahren aus der alten `CLAUDE.md`. Er gilt für die Korrektur der Kapitel 1
+und 2 nach den Betreuerkommentaren und für das Schreiben der Kapitel 3 bis 6.
+
+---
+
+##### 1 Warum der Absatz und nicht der Satz
+
+Das satzweise Verfahren hat drei Fassungen je Satz erzeugt und den Verfasser
+wählen lassen. Es hat Sätze geliefert, die einzeln tragen, aber zusammen nicht.
+Genau das bemängelt der Betreuer, nämlich Thesen ohne angebundene Begründung,
+fehlende Übergänge, Pronomen ohne Bezug und Absätze ohne Konsequenz. Diese
+Mängel entstehen zwischen den Sätzen und lassen sich nur beheben, wenn der
+Absatz als Ganzes geplant und geschrieben wird.
+
+Deshalb gilt seit dem 14.09.2026: Die Arbeitseinheit ist der Absatz. Ein Absatz
+trägt eine Kernaussage, hat vier bis acht Sätze und entsteht in einem Zug aus
+einem Absatzplan. Fassungen zur Wahl gibt es nur noch für den Aufbau eines
+Absatzes, nicht für den Wortlaut einzelner Sätze. Wortlautvarianten liefert
+Claude nur auf ausdrückliche Anfrage zu einem benannten Satz.
+
+Die Stichpunktphase aus dem Vorgehen vom 09.09.2026 bleibt für neue Abschnitte
+erhalten und geht dem Absatzplan voraus.
+
+---
+
+##### 2 Der Absatzplan
+
+Der Absatzplan ist die Freigabeeinheit. Ohne freigegebenen Plan entsteht kein
+Fließtext. Er hat sechs Zeilen und passt auf einen Bildschirm.
+
+```
+Absatz:        2.1.1 Absatz 3, G 64 bis 72
+Kernaussage:   Der praeventive Ansatz kostet aus drei Gruenden, naemlich ...
+Aufbau:        These (Satz 1) -> Merkmal 1 mit Beleg -> Merkmal 2 mit Zeiten
+               -> Merkmal 3 mit Beleg -> Konsequenz (Satz 7)
+Anschluss:     knuepft an ... des Vorabsatzes an, fuehrt zu ... des Folgeabsatzes
+Begriffe:      Planungshorizont, erstmals hier, Definition im Satz 3
+Belege:        S2 sous_comparison_2025 (zu pruefen), S4 Mechanismus,
+               S6 eigene Ableitung, vom Verfasser zu pruefen
+Nicht sagen:   keine Behauptung, das Netz sei ohne kurativ nicht N-1-sicher
+```
+
+Bei der Korrektur eines bestehenden Absatzes kommen zwei Zeilen hinzu, nämlich
+die **Befunde** mit den Kennungen aus `AENDERUNGEN_KAP1_2.md` und die
+**Maßnahme**, also umbauen, kürzen, streichen oder verschieben.
+
+Gibt es für den Aufbau zwei Wege, die sich in der Sache unterscheiden, etwa in
+der Reihenfolge der Merkmale oder darin, ob eine Nebenaussage mitläuft, legt
+Claude beide vor und sagt, woran sich die Wahl festmacht. Mehr als zwei Wege
+gibt es selten. Wortlaut steht im Plan keiner.
+
+---
+
+##### 3 Der Zyklus, je Abschnitt
+
+Die Einheit des Zyklus ist ein Unterabschnitt, weil die Absätze eines
+Unterabschnitts aneinander hängen und die Übergänge nur im Zusammenhang stimmen
+können.
+
+**Schritt 1, Vorlage.** Claude legt für jeden Absatz des Unterabschnitts den
+Absatzplan vor, in der Reihenfolge des Textes, mit einem Satz zum Anschluss
+zwischen den Absätzen. Bei einer Korrektur stammt der Ausgangspunkt aus
+`AENDERUNGEN_KAP1_2.md`, bei einem neuen Abschnitt aus den gemeinsam
+erarbeiteten Stichpunkten. Claude nennt dabei, welche Begriffe der Abschnitt
+voraussetzt und wo sie definiert sind, welche Belege fehlen und welche
+Entscheidung offen ist. Fehlt eine Entscheidung, endet der Zyklus hier.
+
+**Schritt 2, Freigabe.** Der Verfasser gibt die Pläne frei, ändert sie oder
+streicht Absätze. Änderungen am Plan schreibt er als Anmerkung, nicht als
+Wortlaut. Will er einen Wortlaut vorgeben, kennzeichnet er ihn als wörtlich.
+
+**Schritt 3, Text.** Claude schreibt die Absätze des Unterabschnitts als Ganzes
+in die Datei. Ersetzter Fließtext bleibt als Kommentar über der neuen Fassung
+erhalten, mit Datum, Grund und den Kennungen der Befunde. Marken und
+Kommentare bleiben unberührt. Dazu liefert Claude den Belegzettel und den
+Argumentzettel aus Abschnitt 5.
+
+**Schritt 4, Prüfung.** Die Prüfsuite läuft, dann die Fremdleser-Prüfung aus
+Abschnitt 4. Claude behebt die Befunde, bevor es übergibt, und berichtet, was
+die Fremdleser-Prüfung nicht verstanden hat und wie es darauf reagiert hat.
+
+**Schritt 5, Durchsicht.** Der Verfasser liest das gebaute PDF. Rückmeldungen
+erfolgen satzweise, etwa *Absatz 3, Satz 4, Bezug unklar*. Eine
+Korrekturrunde gehört zum Zyklus. Braucht ein Absatz eine zweite, war der Plan
+zu dünn, und der Absatz geht zurück zu Schritt 1.
+
+**Schritt 6, Protokoll.** Claude schreibt den Eintrag für
+`ENTSCHEIDUNGSPROTOKOLL.md`, ein Eintrag je Unterabschnitt, mit den
+Entscheidungen, den zurückgenommenen Formulierungen und den eigenständigen
+Ableitungen. Danach gilt der Unterabschnitt als abgeschlossen.
+
+Für neue Abschnitte steht vor Schritt 1 die Stichpunktphase, nämlich erst
+gemeinsam die Fragen sammeln, die der Abschnitt beantworten muss, dann die
+Stichpunkte in Blöcken anlegen, ein Stichpunkt je späterem Satz, und die Zahl
+der Stichpunkte gegen das Seitenziel halten. Erst daraus entstehen die
+Absatzpläne.
+
+---
+
+##### 4 Die Fremdleser-Prüfung
+
+Der Betreuer hat empfohlen, einen Absatz jemandem zu geben, der die kurative
+Systemführung nicht kennt, und danach zu fragen, ob er verstanden wurde. Bis
+ein Mensch liest, übernimmt das ein Subagent ohne Zugang zum übrigen Text.
+
+Claude gibt dem Subagenten allein den neuen Unterabschnitt als gerenderten
+Fließtext, ohne Kommentare, ohne Kapitelkontext, ohne diese Anleitung, und
+stellt vier Fragen.
+
+1. Was ist die Kernaussage jedes Absatzes, in einem Satz?
+2. Welche Wörter, Abkürzungen oder Bezüge sind nicht erklärt oder nicht
+   auflösbar?
+3. Wo folgt auf eine Behauptung keine Begründung, oder auf eine Begründung
+   keine Konsequenz?
+4. Welcher Absatz lässt sich mit dem vorigen nicht verbinden?
+
+Weicht die genannte Kernaussage vom Absatzplan ab, ist der Absatz nicht
+gelungen. Was der Subagent nicht auflösen kann, wird im Text aufgelöst, auch
+wenn der Begriff in einem früheren Kapitel definiert ist, denn der Betreuer
+liest genauso.
+
+---
+
+##### 5 Was Claude mit jedem Abschnitt liefert
+
+**Die Datei.** Vollständig, Zeilenenden und UTF-8 unverändert, alle Kommentare
+erhalten, alter Wortlaut als Kommentar.
+
+**Der Belegzettel.** Je Absatz eine Zeile je Aussage mit Quelle oder mit dem
+Vermerk Mechanismus, eigene Ableitung oder unbelegt. Unbelegte Aussagen stehen
+nicht im Text, ohne dass der Verfasser sie gesehen hat.
+
+**Der Argumentzettel.** Jedes Argument, das nicht aus den Stichpunkten oder aus
+`AENDERUNGEN_KAP1_2.md` stammt, einzeln, als eigenständiges Argument
+gekennzeichnet. Dazu zählen auch Hinweise des Betreuers, für die kein Beleg
+vorliegt, etwa die Begrenzung des KuPilot-Einsatzes auf eine Stunde.
+
+**Der Prüfbericht.** Ergebnis der Prüfsuite und der Fremdleser-Prüfung, mit
+dem, was behoben ist und was offen bleibt.
+
+---
+
+##### 6 Korrektur der Kapitel 1 und 2
+
+Die Reihenfolge steht in `AENDERUNGEN_KAP1_2.md` Abschnitt 5. Drei Regeln
+kommen bei der Korrektur hinzu.
+
+- **Erst die Entscheidungen.** V1 bis V13 aus der Änderungsliste binden mehrere
+  Absätze. Die Rückfragen an den Betreuer laufen parallel, die übrigen
+  entscheidet der Verfasser vor dem ersten Zyklus.
+- **Kürzung und Kommentar zusammen.** Ein Absatz wird nur einmal angefasst. Die
+  Kürzungen aus `KUERZUNGEN_KAP1_2.md` und die Betreuerkommentare gehen in
+  denselben Absatzplan.
+- **Definitionen wandern nach vorn.** Wird ein Begriff nach Abschnitt 5 der
+  `CLAUDE.md` an seinem Ort definiert, prüft Claude alle späteren Fundstellen
+  auf abweichende Erklärungen und meldet sie.
+
+Nach jedem Kapitel wird gebaut und der Seitenstand gegen die Ziele in
+`STRUKTUR.md` gehalten, nämlich fünf Seiten für Kapitel 1, 25 für Kapitel 2
+und 14 für Kapitel 3.
+
+---
+
+##### 7 Neue Kapitel
+
+Kapitel 4 bis 6 entstehen nach demselben Zyklus. Zwei Dinge sind anders.
+
+- Vor dem ersten Absatzplan steht die Stichpunktphase aus Abschnitt 3.
+- Die Zeile *Nicht sagen* im Absatzplan ist Pflicht, weil die Kapitel 1 und 2
+  mehrfach Ergebnisse vorweggenommen haben, die erst Kapitel 4 trägt.
+
+Kapitel 4 wartet auf die Rechenläufe für das Jahr 2025. Kapitel 5 trägt die
+beiden Aussagen, die aus 3.1.1 dorthin verschoben sind, siehe `STRUKTUR.md`.
+
+---
+
+##### 8 Zeit
+
+Bis zur Abgabe am 15.10.2026 bleiben vier Wochen und drei Tage.
+
+| Zeitraum | Schreiben | Parallel |
+|---|---|---|
+| 14.09. bis 18.09. | Entscheidungen V1 bis V13, Kapitel 1, Abschnitt 2.1 | Rückfragen an den Betreuer |
+| 19.09. bis 23.09. | Abschnitte 2.2 bis 2.4 mit A1 und A3, Kapitel 3 auf 14 Seiten | Rechenläufe Jahr 2025 |
+| 24.09. bis 30.09. | Kapitel 4 | Abbildungen erzeugen |
+| 01.10. bis 06.10. | Kapitel 5 | Folgeänderungen aus dem Protokoll |
+| 07.10. bis 11.10. | Kapitel 6, Kurzfassung, Verzeichnisse, Gesamtdurchsicht | Literaturdatei bereinigen |
+| 12.10. | Kolloquium | |
+| 13.10. bis 15.10. | Puffer und Abgabe | |
+
+Die Woche für Kapitel 5 ist knapp. Wenn Zeit fehlt, fehlt sie dort.
+
+---
+
+##### 9 Wiederkehrende Fehlerbilder
+
+Die Betreuerkommentare haben zu den fünf Mustern vom 07.09.2026 vier weitere
+ergeben. Der Zyklus fängt sie an bestimmten Stellen ab.
+
+| Muster | Abgefangen durch |
+|---|---|
+| Ergebnisse werden vorweggenommen | Zeile *Nicht sagen* im Absatzplan, Frage in Schritt 5 |
+| Eine Quelle trägt weniger als der Satz | Belegzettel |
+| Ein Begriff wird vor seiner Definition verwendet | Zeile *Begriffe* im Absatzplan, Liste in `CLAUDE.md` Abschnitt 5 |
+| Eine zurückgenommene Formulierung kehrt zurück | alter Wortlaut als Kommentar in der Datei |
+| Zwei Stellen sagen dasselbe | Schritt 1 liest die Nachbarabschnitte mit |
+| These ohne angebundene Begründung | Zeile *Aufbau* im Absatzplan, Frage 3 der Fremdleser-Prüfung |
+| Absatz ohne Konsequenz | Zeile *Aufbau* endet mit der Konsequenz, Frage 3 der Fremdleser-Prüfung |
+| Pronomen und unbestimmte Nominalphrasen ohne Bezug | Frage 2 der Fremdleser-Prüfung, Suchmuster U3 und U4 |
+| Fachliche Pauschalisierung | Zeile *Nicht sagen*, Stilregel 9 |
+
+---
+
+##### 7 Kommentardurchgang des Verfassers, seit 16.09.2026
+
+Nach der Neufassung eines Kapitels liest der Verfasser den Text selbst und
+kommentiert ihn. Dafuer erzeugt Claude eine Kommentardatei je Kapitel, fuer
+Kapitel 3 `KOMMENTARE_KAP3.md`, mit dem gerenderten Text als nummerierte
+Absaetze und Saetze und einem Feld *Kommentar* unter jedem Absatz. Die Datei
+ersetzt die Aenderungslisten aus `archiv/` als Vorlage.
+
+Ablauf:
+
+1. Der Verfasser traegt seine Kommentare in die Felder ein, in freier Form:
+   Streichungen, neue Saetze, Verbindungen, inhaltliche Hinweise und die
+   Entscheidungen zu den offenen Vorschlaegen aus `DURCHSICHT_KAP1_3.md`
+   (Kennung und ja oder nein). Absaetze ohne Aenderung bleiben leer.
+2. Claude liest allein die Kommentardatei und arbeitet Absatz fuer Absatz
+   ein. Kommentare des Verfassers haben Vorrang vor den Vorschlaegen der
+   Durchsicht. Trifft ein Kommentar einen Absatz, zu dem ein offener
+   Vorschlag steht, gilt der Kommentar, und der Vorschlag entfaellt, sofern
+   der Verfasser ihn nicht ausdruecklich annimmt.
+3. Inhaltliche Hinweise ohne Wortlaut formuliert Claude nach den Stilregeln
+   und legt den neuen Absatz im Sammelmodus vor, bevor er in die Datei geht.
+   Wortlaut des Verfassers geht unveraendert in die Datei, nur gegen die
+   Pruefsuite geprueft.
+4. Nach jedem Unterabschnitt Pruefsuite, Build und Protokolleintrag, Commit
+   je Kapitel. Keine Subagenten in diesem Schritt, die Fremdleser-Pruefung
+   entfaellt, weil der Verfasser selbst liest.
+5. Die Kommentardatei wird nach der Einarbeitung nach `archiv/` verschoben,
+   die Kommentare stehen dann im Protokoll.
+
+---
+
+##### 10 Arbeitsweise am Absatz, aus dem Durchgang vom 20. bis 22.09.2026
+
+Diese Regeln sind aus dem Durchgang durch die Kapitel 1 bis 3 mit dem
+Verfasser abgeleitet und gelten für jede Sitzung, unabhängig vom Modell. Sie
+sollen zwei Schwächen abfangen, die der Verfasser bei früheren Sitzungen
+beobachtet hat: schwammige, wenig präzise Formulierungen und das Verharren an
+einer Stelle über mehrere Iterationen, ohne den Absatz als Ganzes neu zu
+denken.
+
+###### 10.1 Bevor ein Satz geändert wird
+
+1. **Den Absatz als Ganzes lesen, mit Vor- und Folgeabsatz.** Der schnellste
+   Weg ist `python tools/extract_alle.py`, das die Kapitel 1 bis 3 als
+   nummerierte Absätze nach `%TEMP%\kap{n}_text.txt` schreibt. Vor der
+   Änderung in einem Satz benennen, welche Kernaussage der Absatz trägt und
+   welche Sätze er dafür braucht. Was er nicht braucht, ist ein
+   Streichkandidat, auch wenn der Verfasser nur einen einzelnen Satz
+   beanstandet hat.
+2. **Jede Behauptung an der Quelle prüfen, bevor sie steht oder bleibt.**
+   `pdftotext` auf die PDF in `literature/PDFs`, dann `grep` nach dem
+   Begriff. Steht der Begriff oder die Zahl in keiner Quelle, wird das gesagt
+   und der Satz auf das gestützt, was die Quelle trägt. Am 21.09.2026 stand
+   eine "Anreizkomponente" mit Zitat im Text, die in keiner Quelle vorkam.
+3. **Begriffe auf ihre erste Verwendung prüfen** (`grep -n` über die
+   Kapiteldatei ohne Kommentarzeilen). Ein Begriff vor seiner Definition ist
+   ein Befund, auch wenn er nicht Gegenstand der Anweisung war.
+4. **Anweisungen aus dem Modellrepository an der Datei dort lesen**, nicht an
+   der Kopie im Chat; die Datei kann zwischen Kopie und Umsetzung geändert
+   worden sein.
+
+###### 10.2 Wie geantwortet wird
+
+5. **Befund, dann Wortlaut, dann Empfehlung.** Auf "verstehe ich nicht" oder
+   "was heißt das" folgt die Sache in zwei bis drei Sätzen und sofort der neue
+   Wortlaut des Absatzes oder Satzes. Höchstens zwei Fassungen, die empfohlene
+   zuerst, mit dem Grund in einem Satz. Nie drei Varianten, nie eine Frage
+   ohne Vorschlag.
+6. **Präzise statt vorsichtig.** Kein *in gewisser Weise*, *unter Umständen*,
+   *kann dazu beitragen*, *tendenziell*. Wo eine Aussage abgeschwächt werden
+   muss, wird gesagt, warum (fehlende Quelle, Randbedingung), und die
+   Abschwächung steht in einem Wort (*dürfte*, *nach Angabe von*), nicht in
+   einer Wolke. Zahlen tragen Bezugsgröße und Einheit. Ein Satz hat einen
+   Hauptsatz und höchstens einen Nebensatz.
+7. **Die Vorgabe des Verfassers in Tippschreibweise wird in einem Satz
+   wiederholt**, wenn sie mehrdeutig ist, und im selben Zug umgesetzt.
+   Rückfragen nur, wenn die Entscheidung tatsächlich seine ist (Streichen
+   oder Umformulieren, Wahl zwischen zwei Abbildungen). Alles andere nach
+   seiner Vorgabe vom 21.09.2026: "Unsichere immer mit deinem Vorschlag."
+8. **Widerspricht seine Vorgabe der Quelle, zuerst die Quelle zeigen**, mit
+   Fundstelle, und dann umsetzen, was er entscheidet. Die Einordnung steht im
+   Protokoll.
+
+8a. **Nach jeder Anpassung den ganzen Absatz zeigen**, nicht nur den
+    geaenderten Satz. Vorgabe des Verfassers vom 24.09.2026. Er beurteilt
+    eine Formulierung am Zusammenhang, und ein einzeln gezeigter Satz laesst
+    nicht erkennen, ob der Uebergang zum Vorsatz noch stimmt, ob eine
+    Dopplung entsteht oder ob der Absatz seine Kernaussage noch traegt. Gilt
+    auch fuer eine einzelne Wortaenderung. Bei mehreren geaenderten
+    Absaetzen jeden einzeln.
+
+###### 10.3 Wenn eine Stelle nicht besser wird
+
+9. **Nach der zweiten Iteration am selben Satz die Ebene wechseln.** Der
+   Fehler liegt dann fast nie im Satz, sondern im Aufbau: Der Satz gehört in
+   einen anderen Absatz, die Definition steht am falschen Ort, der Absatz
+   erzählt in der falschen Reihenfolge, oder die Aussage gehört in den Anhang.
+   Beispiele vom 21.09.2026: Das Fünf-Zustands-Modell in 2.1.1 ließ sich nicht
+   kürzen, bis der Punkt (präventiv hält den PATL, kurativ den TATL, beide im
+   Normalzustand) als zwei Sätze an die Abbildung 2.1 wanderte, wo beide
+   Grenzwerte definiert sind. Die Regelleistungsvergütung in 2.3.4 wurde erst
+   klar, als der Absatz entlang der Staffelung (Zuschlag der Leistung, dann
+   Regelarbeitsmarkt, Merit-Order, Grenzpreis) neu aufgebaut wurde. Der
+   Konsultationsbefund in 2.3.3 war nicht zu retten und ging nach Anhang A.
+10. **Eine Dopplung wird an der Stelle aufgelöst, die sie für ihre Erklärung
+    nicht braucht**, nicht an der ersten Fundstelle. Kapitel 1 darf als
+    Motivation wiederholen, ein Zwischenfazit darf zusammenfassen; kritisch ist
+    die Wiederholung in einem Absatz, der sie nicht braucht.
+11. **Ein Satz, der zwei Dinge sagen soll, wird geteilt oder gestrichen.**
+    Am 21.09.2026 fielen zwei Sätze zur Inc-Dec-Abgrenzung, weil ihr Gegensatz
+    (Eingriff gegen Vorhaltung) das Argument nicht trug; der Satz davor trug
+    die Anforderung bereits.
+
+###### 10.4 Nach der Änderung
+
+12. Differenz der Fließtextzeilen vor und nach der Änderung ausgeben,
+    Prüfsuite, Build, Seitenlage (`pdfinfo`, Anfang von Kapitel 1, 2 und 3),
+    die neue Passage im Chat zeigen, Protokolleintrag mit dem gestrichenen
+    Wortlaut. Committen nur auf "commite".
+
+
+### Anhang D, offene Vorschläge der Durchsicht vom 15.09.2026 (archiv/DURCHSICHT_KAP1_3.md)
+
+Übernommen am 08.10.2026 beim Löschen von `archiv/`. Liste F war seit dem 16.09.2026 den Kommentaren des Verfassers nachgeordnet und ist nicht weiter bearbeitet; was davon noch gelten soll, entscheidet der Verfasser.
+
+#### Durchsicht der Kapitel 1 bis 3, Stand 15.09.2026
+
+> **ABGESCHLOSSEN am 22.09.2026, archiviert.** Die Listen A bis F sind im
+> Durchgang durch die Kapitel 1 bis 3 mit dem Verfasser umgesetzt oder bewusst
+> verworfen. Von Liste G sind G2, G6, G11, G12 und G14 erledigt; G5 und G7
+> betreffen den Text nicht, weil die beiden Zahlen dort nicht stehen. Die
+> Reste G1, G3, G13 sowie G4, G8, G9 und G10 stehen in `HANDOFF.md`
+> Abschnitt 6 und 7. Diese Datei wird nicht weitergeführt.
+
+Prüfung auf Anbindung der Sätze, Zusammenlegung von Absätzen, Dopplungen und
+Platzierung der Gleitumgebungen. Befunde aus drei Subagenten je Kapitel und
+der Sichtung des PDF. Nichts davon ist umgesetzt. Jede Option trägt eine
+Nummer, eine Empfehlung (E = empfohlen, O = offen, N = nicht empfohlen) und
+die erwartete Wirkung. Absatznummern beziehen sich auf die Zählung in den
+gerenderten Textdateien der Sitzung, die ersten Wörter machen die Stelle
+eindeutig.
+
+---
+
+##### A Platzierung im PDF
+
+| Nr. | Befund | Option | Wirkung | E |
+|---|---|---|---|---|
+| A1 | Seite 14 ist zu 40 % leer, weil Tabelle 2.1 mit der Option h nicht mehr auf die Seite passt und auf Seite 15 rutscht. | Tabelle 2.1 auf `[tbp]` setzen. Getestet: Seite 14 voll, Tabelle oben auf Seite 15, Kapitel 2 endet auf Seite 31 mit voller Seite. | Weißraum weg, keine Seite gespart | E |
+| A2 | Seite 6 trägt nur acht Zeilen, Überlauf von Kapitel 1. | Kapitel 1 um etwa acht Zeilen kürzen, Kandidaten in K1. | Kapitel 1 auf 5 Seiten | E |
+| A3 | Seite 31 trägt nur drei Zeilen, Überlauf von Kapitel 2. Nach A1 ist die Seite voll, der Befund entfällt. | Nach A1 prüfen. Sollte Kapitel 2 wieder mit wenigen Zeilen überlaufen, drei Zeilen aus K2 streichen. | eine Seite | O |
+| A4 | Abbildung 3.3 (Ablauf der Preisbestimmung, DIN 66001) steht allein auf Seite 45 mit je einem Drittel Weißraum darüber und darunter. | Abbildung auf `height=0.6\textheight` skalieren, dann passt Text auf die Seite. Alternativ `[p]` belassen. | bis zu eine halbe Seite | E |
+| A5 | Alle übrigen Abbildungen und Tabellen stehen oben auf der Seite, auf der oder nach der sie genannt werden. | keine | | |
+
+---
+
+##### B Kapitel 1
+
+###### B1 Anbindung, mechanisch (ein Paket)
+
+Bindewörter und Umstellungen ohne Inhaltsänderung, Liste im Protokoll nach
+Umsetzung:
+
+- 1.1 Absatz 6 (NEP 2045) bekommt einen Überleitungssatz vom heutigen Stand zur Planung.
+- 1.1 Absatz 10 und 11: Satz 6 von Absatz 11 (zeitliche Lücke gilt auch kurativ) wandert ans Ende von Absatz 10, damit Absatz 11 an Absatz 9 Satz 6 (ungenutzte Reserve) anschließt.
+- 1.2 Absatz 12: Satz 2 „Kurative Vorhaltung bezeichnet dabei“ ohne Bezug, Satz 5 „Abschnitt X nennt“ unverbunden.
+- 1.2 Absatz 13: Satz 3 und Satz 5 bis 7 (2030) ohne Bindewörter, Absatz endet ohne Konsequenz.
+- 1.2 Absatz 14: Satz 4 (Einsparung nicht Gegenstand) unterbricht Satz 3 und 5.
+
+Empfehlung E. Wirkung: keine Zeile.
+
+###### B2 Zusammenlegung
+
+| Nr. | Option | Wirkung | E |
+|---|---|---|---|
+| B2.1 | 1.1 Absatz 7 (ereignisabhängig, räumlich wandernd, Anforderung an das Instrument) auflösen: Satz 2 an Absatz 4, Satz 3 an Absatz 2, Satz 4 als Überleitung vor Absatz 9. Beseitigt zugleich die Dopplungen B3.2 und B3.3. | 1.1 von 8 auf 7 Absätze, etwa 3 Zeilen weniger | E |
+| B2.2 | Alternativ Absatz 6 und 7 verbinden (8 Sätze). | 7 Absätze, keine Zeile | N |
+| B2.3 | 1.2 Absatz 12 (9 Sätze, zwei Kernaussagen) teilen in Ziel und Begriffe (4) und Grund für einen Marktmechanismus (5). | 1.2 von 4 auf 5 Absätze | O |
+| B2.4 | 1.2 Absatz 14 Satz 4 zu Absatz 13 hinter Satz 1 verschieben. | keine | E |
+
+###### B3 Dopplungen
+
+| Nr. | Befund | Option | Wirkung | E |
+|---|---|---|---|---|
+| B3.1 | BESS als Akteur dreimal: Absatz 1 Satz 4, Absatz 11 Satz 8, Absatz 15 Satz 3. | Absatz 15 Satz 3 „Daraus folgt die Wahl der BESS“ streichen. | 1 Zeile | E |
+| B3.2 | Absatz 7 Satz 2 wiederholt Absatz 4 Satz 3 bis 4 (Dezember 2024). | mit B2.1 erledigt | | E |
+| B3.3 | Absatz 7 Satz 3 wiederholt Absatz 2 Satz 3 bis 4 (Engpassmuster wandert). | mit B2.1 erledigt | | E |
+| B3.4 | 1.1 Absatz 3 Satz 1 und 3 bis 5 (Selbstdispatch, zonaler Preis) stehen wörtlich in 2.2.1 Absatz 36. | In Kapitel 1 auf zwei Sätze kürzen: Marktdesign nennt den zonalen Preis, Redispatch ist der vorgesehene Korrekturmechanismus. Definition bleibt in 2.2.1. | 2 bis 3 Zeilen | E |
+| B3.5 | 1.1 Absatz 9 Satz 3 bis 5 (Marge, Betriebsmittel vertragen mehr) wörtlich wie 2.1.1 Absatz 5 und 8. | In Kapitel 1 belassen, es ist die Motivation. In 2.1.1 Absatz 8 Satz 2 den Wortlaut „das Freihalten dieser Marge ist der Eingriff“ variieren. | keine | O |
+| B3.6 | 1.1 Absatz 10 Satz 2 bis 4 (Handelsfenster bis fünf Minuten) viermal: Kap. 1, 2.1.1 Absatz 8, 2.2.2 Absatz 39, 2.2.2 Absatz 40. | In 2.1.1 Absatz 8 Satz 6 bis 7 streichen und auf 2.2.2 verweisen, in Kap. 1 belassen. | 2 Zeilen in Kap. 2 | E |
+| B3.7 | 1.1 Absatz 10 Satz 7 (teurer, kleinerer Kreis) dreimal in Kap. 2 (Absatz 8, 9, 26). | In 2.1.1 Absatz 8 Satz 8 bis 9 streichen, Absatz 9 trägt die Aussage mit Quelle. | 2 Zeilen in Kap. 2 | E |
+| B3.8 | 1.1 Absatz 11 Satz 6 „ebenfalls vorab eingeplant“ steht in 2.1.1 Absatz 10 zweimal (Satz 3 und 6) und in Absatz 12. | In 2.1.1 Absatz 10 Satz 6 kürzen. | 1 Zeile | E |
+| B3.9 | 1.2 Absatz 12 Satz 6 bis 8 nehmen das Zwischenfazit 2.4 Absatz 67 wörtlich vorweg (Verfügbarkeit nur über Preis, zwei Logiken). | In Kap. 1 belassen als Begründung des Vorgehens, in 2.4 Absatz 67 den Wortlaut ändern und auf die Herleitung in 2.3 stützen. | keine | O |
+| B3.10 | 1.2 Absatz 13 Satz 5 (2030 als Rahmen) und 3.2.1 Absatz 20 Satz 5 sagen dasselbe. | In 3.2.1 auf einen Halbsatz mit Verweis kürzen. | 1 Zeile in Kap. 3 | E |
+| B3.11 | 1.2 Absatz 14 Satz 7 begründet „opportunitätskostenbasierter Teil des Gebots“ mit Präqualifikation, Pönale und Anbieterzahl, 3.2.1 Absatz 19 Satz 8 mit der fehlenden Abrufwahrscheinlichkeit. Zwei Begründungen für denselben Satz. | In 1.2 die Abrufwahrscheinlichkeit ergänzen, oder in 3.2.1 die Pönale mitnennen. Vom Verfasser zu entscheiden. | keine | O |
+| B3.12 | Reaktionszeit ist in 1.2 als „Zeit vom Abrufsignal bis zur vollständig umgesetzten Leistungsänderung“ definiert, in 2.1.2 Absatz 18 als „Zeit bis zur vollen Entlastungswirkung“. Bindungsdauer ist in 1.2 und in 3.1.2 Absatz 8 definiert. | Wortlaut in 2.1.2 an 1.2 angleichen. In 3.1.2 „Die Bindungsdauer ist der Zeitraum, über den die Zusage nach dem Zuschlag gilt“ auf „Die Bindungsdauer beträgt eine Zeitscheibe, also eine Stunde des Liefertages“ kürzen. | 1 Zeile | E |
+
+---
+
+##### C Kapitel 2
+
+###### C1 Anbindung, mechanisch (ein Paket)
+
+Bindewörter, Umstellungen innerhalb eines Absatzes und Überleitungssätze
+ohne Inhaltsänderung. Die vollständige Liste hat 45 Stellen, die
+wichtigsten:
+
+- 2.1.1 Absatz 4 und 5: Überleitungen zum Vier-Zustands-Modell und zur Physik, Absatz 4 Satz 7 nutzt „Überlast“ vor der Einführung von PATL und TATL in Absatz 5.
+- 2.1.1 Absatz 8 Satz 5 verweist auf Abbildung 2.3 in 2.2.2, 30 Absätze später.
+- 2.1.1 Absatz 10 Satz 4: These nennt den Grenzwert, die Erklärung nach dem Doppelpunkt den Zeitpunkt.
+- 2.1.1 Absatz 11 Satz 1 bis 3 sagen dreimal dasselbe (kein Fahrplaneingriff, präventiv greift immer ein, kurativ nur vorgehalten).
+- 2.1.2 Absatz 13, 16, 17: Abschnittsbeginn ohne Anknüpfung, KuPilot-Einschub in Absatz 15 Satz 5.
+- 2.1.4 Absatz 25: Absatz 24 kündigt die Vergütung an, es folgen die Herausforderungen. Überleitung an die Gliederung anpassen.
+- 2.1.5 Absatz 32: der anknüpfende Satz steht an zweiter Stelle.
+- 2.2.3 Absatz 41 Satz 7 (Betriebsführung) steht nach der Konsequenz, gehört davor.
+- 2.3.1 Absatz 48: Satz 4 bis 8 (Übersicht der Positionen) logisch vor Satz 1 bis 3 (Einsatzpreis).
+- 2.3.3 Absatz 59 (11 Sätze) trägt vier Gedanken, siehe C2.9.
+- 2.3.4 Absatz 60 (mFRR) und 62 (Anreizkomponente) ohne Anknüpfung.
+- 2.3.5 Absatz 63 Satz 7 „nicht unmittelbar anwendbar“ ohne Grund im Absatz, der Grund (kein Netzknotenbezug) steht erst in 2.4.
+- 2.4 Absatz 69 ohne Übergang von Absatz 68.
+
+Empfehlung E. Wirkung: keine Zeile.
+
+###### C2 Zusammenlegung und Teilung
+
+| Nr. | Option | Absätze vorher, nachher | Wirkung | E |
+|---|---|---|---|---|
+| C2.1 | 2.1.1 Absatz 5 Satz 8 bis 9 (Abbildungsvergleich) zu Absatz 7 ziehen. | 8, 8 | keine | E |
+| C2.2 | 2.1.1 Absatz 8 (11 Sätze) teilen: Satz 1 bis 7 Marge und Planungshorizont, Satz 8 bis 11 mit Absatz 9 (Kosten hängen von der Anlagenart ab) verbinden, dabei Absatz 9 Satz 5 als Dopplung streichen. | 8, 8 | 1 Zeile | E |
+| C2.3 | 2.1.1 Absatz 11 (9 Sätze, drei Kernaussagen) teilen in Satz 1 bis 4 und Satz 5 bis 9, dabei Satz 1 bis 3 auf einen Satz kürzen. | 8, 9 | 2 Zeilen | E |
+| C2.4 | 2.1.1 Absatz 10 mit Absatz 12 Satz 1 bis 2 verbinden (dieselbe thermische Reserve), Absatz 12 Satz 3 bis 5 an Absatz 11 Satz 1 bis 4 hängen. | 8, 7 nach C2.3 | keine | O |
+| C2.5 | 2.1.2 Absatz 16 (11 Sätze) teilen in Maßnahmenraum (5) und Meldung, Ladezustand, Verbund (6). | 5, 6 | keine | E |
+| C2.6 | 2.1.3 Absatz 19 (12 Sätze) teilen in Zusage eines Dritten (4) und vier Merkmale mit Tabelle (8). | 5, 6 | keine | E |
+| C2.7 | 2.1.3 Absatz 22 (3 Sätze) mit Absatz 23 Satz 1 bis 5 verbinden (Speicher in beide Richtungen, 8), Absatz 23 Satz 6 bis 9 als Standort und Bestand (4). | 5, 5 | keine | E |
+| C2.8 | 2.2.2 Absatz 37 (1 Satz) mit Absatz 39 Satz 1 bis 3 verbinden, Absatz 39 Satz 4 bis 8 als eigenen Absatz. | 3, 3 | keine | E |
+| C2.9 | 2.3.3 Absatz 59 (11 Sätze) teilen in Bemessung bei BESS offen (6) und Hirth-Einwand nicht übertragbar (5). | 5, 6 | keine | E |
+| C2.10 | 2.3.3 Absatz 57 (8 Sätze, zwei Kernaussagen) Satz 5 bis 8 mit Absatz 58 Satz 1 bis 2 verbinden. | 5, 5 | keine | O |
+| C2.11 | 2.3.4 Absatz 60 (mFRR, 3 Sätze) mit Absatz 61 verbinden, dabei Absatz 61 Satz 2 bis 3 (Arbeitspreis, PICASSO, beides schon in 2.2.3) streichen. | 4, 3 | 2 Zeilen | E |
+| C2.12 | 2.3.5 Absatz 64 mit 65 verbinden (dieselbe Leistung und derselbe Energieinhalt), Absatz 64 Satz 4 (Wettbewerb unter Anbietern) streichen. | 3, 2 | 1 Zeile | E |
+| C2.13 | 2.4 Absatz 67 mit 68 und Absatz 69 mit 70 verbinden. | 4, 2 | keine | E |
+| C2.14 | Kapiteleinleitung (3 Sätze), 2.2 Einleitung (1 Satz), 2.3 Einleitung (1 Satz) bleiben unter vier Sätzen. | | | N, Einleitungen dürfen kurz sein |
+
+###### C3 Dopplungen innerhalb von Kapitel 2
+
+| Nr. | Befund | Option | Wirkung | E |
+|---|---|---|---|---|
+| C3.1 | Präventiv gegen kurativ fünfmal erklärt: 2.1 Einleitung Absatz 3 Satz 3, 2.1.1 Absatz 4 Satz 8, Absatz 5 Satz 9, Absatz 10 Satz 4 bis 5, 2.1.4 Absatz 26 Satz 2 bis 3. | Absatz 4 Satz 8 und Absatz 26 Satz 2 bis 3 streichen, Absatz 3 und Absatz 5 (mit Abbildung) tragen die Erklärung. | 3 bis 4 Zeilen | E |
+| C3.2 | § 13a knüpft an den Eingriff an, fünfmal: Absatz 11 Satz 9, 31 Satz 2, 44 Satz 4, 46 Satz 3 und 5, 68 Satz 1. | Absatz 11 Satz 9 und 44 Satz 4 bis 6 kürzen, die Aussage bleibt in 2.1.5, 2.3.1 und 2.4. | 3 Zeilen | E |
+| C3.3 | Regelleistung vergütet die Vorhaltung, fünfmal: Absatz 41 Satz 5 bis 6, 42 Satz 3 bis 4, 61 Satz 1, 63 Satz 2, 67 Satz 2. | Absatz 42 Satz 3 bis 4 kürzen, Absatz 63 Satz 2 kürzen. | 2 Zeilen | E |
+| C3.4 | Leistung und Arbeit getrennt, viermal: 42 Satz 6, 43 Satz 6, 61 Satz 2, 63 Satz 3. PICASSO zweimal eingeführt (43 Satz 7, 61 Satz 3). | mit C2.11 erledigt | | E |
+| C3.5 | Ladezustand über die Bindungsdauer freihalten, sechsmal: 11 Satz 4, 16 Satz 7 bis 8, 24 Satz 4, 62 Satz 5 bis 6, 69 Satz 1, 70 Satz 2. | Absatz 24 Satz 4 und 69 Satz 1 kürzen, 62 betrifft die Regelleistung und bleibt. | 2 Zeilen | E |
+| C3.6 | Netzbooster wörtlich zweimal (16 Satz 3, 28 Satz 3), KuPilot als Echtbetrieb zweimal (15 Satz 5, 28 Satz 2), netzseitige Maßnahmen dreimal (4 Satz 6, 16 Satz 3, 29 Satz 4). | Absatz 16 Satz 3 auf die Aufzählung ohne Erklärung kürzen, Absatz 15 Satz 5 den KuPilot-Einschub streichen (steht in 2.1.4). | 2 Zeilen | E |
+| C3.7 | Vorbelastung und Witterung dreimal (17 Satz 6, 18 Satz 1, 25 Satz 4), Freigabe je Stromkreis zweimal (18 Satz 3, 25 Satz 3 und 5). | Absatz 25 Satz 3 bis 5 auf einen Satz mit Verweis kürzen, dann Absatz 25 mit 26 verbinden. | 2 Zeilen, 2.1.4 von 4 auf 3 Absätze | E |
+| C3.8 | Intervalle unabhängig, viermal in 2.3.2 und 2.3.3 (49 Satz 8, 51 Satz 1, 55 Satz 2, 59 Satz 4). | Absatz 49 Satz 8 streichen, 55 Satz 2 kürzen. | 1 Zeile | E |
+| C3.9 | Zeitwert unabhängig vom Anweisungszeitpunkt zweimal (57 Satz 7 bis 8, 68 Satz 3 bis 4). | In 2.4 Absatz 68 auf einen Halbsatz kürzen. | 1 Zeile | E |
+| C3.10 | Beschränkung auf den marktlichen Akteur dreimal (13 Satz 2, 16 Satz 5, 29 Satz 7). | Absatz 16 Satz 5 streichen. | 1 Zeile | E |
+| C3.11 | Handelsfenster nach der letzten Vorschaurechnung dreimal (8 Satz 6 bis 7, 39 Satz 7, 40 Satz 5). | siehe B3.6 | | E |
+| C3.12 | Abschnitt 2.1.2 Absatz 16 Satz 4 und 2.1.3 Absatz 19 Satz 1 (Zusage eines Dritten). | Absatz 19 Satz 1 kürzen zu einem Anschlusssatz. | 1 Zeile | E |
+| C3.13 | 2.3.5 Absatz 66 Satz 5 und Satz 8 (Alternative wechselt mit den Preisen). | Satz 8 streichen. | 1 Zeile | E |
+| C3.14 | 2.3.2 Absatz 55 Satz 5 und Satz 7 (BESS ein bis zwei Stunden). | Satz 7 streichen. | 1 Zeile | E |
+| C3.15 | Widerspruch: 3.2.2 sagt, 2,5 Stunden lägen „am oberen Rand des Bereichs der Großspeicher am Netz, wie in Abschnitt 2.1.3 dargestellt“, dort stehen aber 1 bis 2 Stunden. Nach der Registerauswertung liegen die geplanten Anlagen im Median bei 2 und leistungsgewichtet bei 3 Stunden. | Satz in 3.2.2 ändern: „Die Auslegung liegt über dem Bereich von ein bis zwei Stunden, den die Großspeicher in Betrieb erreichen, und im Bereich der geplanten Anlagen, wie in Abschnitt 2.1.3 dargestellt.“ Dazu die Fußnote von Tabelle 2.1 um „in Planung leistungsgewichtet 3 Stunden“ ergänzen. | keine | E |
+
+###### C4 Dopplungen zwischen Kapitel 2 und 3
+
+| Nr. | Befund | Option | E |
+|---|---|---|---|
+| C4.1 | Vergütungsstruktur der Festlegung mit Quelle in 2.3.2 Absatz 49 Satz 7 und 3.2.4 Absatz 43 Satz 1. | In 3.2.4 auf einen Verweis ohne Wiederholung des Aufbaus kürzen. | E |
+| C4.2 | mFRR-Begründung in 2.3.4 Absatz 60 und 3.2.1 Absatz 20 Satz 4 trotz Verweis wiederholt. | In 3.2.1 auf „Die mFRR führt das Modell nicht, wie in Abschnitt 2.3.4 begründet.“ kürzen. | E |
+| C4.3 | Anforderung A5 und 2.1.3 Absatz 19 Satz 4 wortgleich (Eigenschaften statt Technologie), A1 und 2.1.2 Absatz 18 Satz 2 (Reaktionszeit nicht wählbar), A7 und 2.3.5 Absatz 65 (dieselbe Ressource), A4 Satz 4 und 2.3.3 Absatz 59 Satz 9 (Redispatch löst Arbeit aus). | Im Katalog zulässig, weil er die Befunde bündelt. Wortlaut in A1, A5, A7 leicht variieren. | O |
+| C4.4 | Zusage besteht durchgehend, Abruf nur im Fehlerfall: 2.3.5 Absatz 63 Satz 4 und 3.1.2 Absatz 6 Satz 3 wortgleich. | In 2.3.5 belassen, in 3.1.2 steht die Definition. Keine Änderung. | N |
+
+---
+
+##### D Kapitel 3
+
+Der Verfasser findet, dass Kapitel 3 je Unterabschnitt zu viele Absätze
+hat. Stand: 45 Textabsätze. Mit den empfohlenen Optionen etwa 35.
+
+###### D1 Anbindung, mechanisch (ein Paket)
+
+- Kapiteleinleitung Satz 3 und 4 ohne Bindewörter.
+- Anforderungskatalog: A2, A3, A4, A7 hängen die Begründung ohne denn oder weil an, A8 Satz 2 wiederholt die These, A8 Satz 3 (Verbund) gehört zu A3.
+- 3.1.2 Absatz 9: Satz 8 bis 9 (ungünstigster Fall, Ladezustandsband) nach Satz 3, Satz 10 (Bilanzverantwortung) unverbunden.
+- 3.1.2 Absatz 11: Satz 8 bis 9 vor Satz 5 bis 7, damit Präqualifikation und Standort nicht verschränkt sind.
+- 3.1.2 Absatz 12: Satz 10 bis 11 (Höchstleistung, Teilzuschlag) zu Absatz 13.
+- 3.1.2 Absatz 13 Satz 4 „damit“ ohne Grund, der bilanzielle Ausgleich ist im Absatz nicht genannt.
+- 3.2 Einleitung Absatz 14: Satz 8 „dafür“ und „das Modell“ ohne Einführung.
+- 3.2.1 Absatz 18 Satz 2 „damit“ folgt nicht aus der Tageszerlegung, Absatz 19 als Liste ohne Bindewörter, Absatz 20 Satz 6 gehört zu Satz 1 bis 2.
+- 3.2.3 Absatz DA: drei Sätze in Folge mit „damit“. Absatz 29 Satz 4 bis 5 gehören zur Preisbasis.
+- 3.2.4 Absatz 36 Satz 8 (Monotonie) unterbricht den Ablauf, Absatz 39 Satz 4 gehört vor Satz 3.
+- 3.3.2 Absatz 46 Satz 8 „deshalb“ und „denn“ doppelt.
+
+Empfehlung E. Wirkung: keine Zeile.
+
+###### D2 Zusammenlegung
+
+| Nr. | Option | Absätze vorher, nachher | Sätze danach | E |
+|---|---|---|---|---|
+| D2.1 | 3.1 Einleitung (1 Satz) in den ersten Absatz von 3.1.1 aufnehmen, der dasselbe sagt. | 3.1: 3, 2 | 3 | E |
+| D2.2 | 3.1.2 Absatz 5 (Einleitung, 2 Sätze) und Absatz 6 (Zusage) verbinden, Absatz 6 Satz 6 (Modell bildet Energieanteil nicht ab) streichen, weil er in 3.2.4 steht. | 3.1.2: 9, 8 | 7 | E |
+| D2.3 | 3.1.2 Absatz 7 (Opportunitätskosten, Richtungen) und Absatz 8 (Klasse, Bindungsdauer) verbinden, dabei Absatz 7 Satz 1 bis 2 streichen, weil 1.2 die Opportunitätskosten definiert. | 9, 7 | 8 | E |
+| D2.4 | 3.1.2 Absatz 12 (Ausschreibung, 11 Sätze) und 13 (Zuschlag) nicht verbinden, nur Satz 10 bis 11 verschieben. | 7, 7 | 9 und 9 | E |
+| D2.5 | 3.2 Einleitung Absatz 14: Satz 1 bis 2 und Satz 7 (ÜNB-Abwägung, steht in 1.2) streichen. | 1, 1 | 7 | E |
+| D2.6 | 3.2.1 Absatz 16 und 17 verbinden (ungebundener Fahrplan, Kopplung, Preiskenntnis, obere Schranke), dabei Absatz 16 Satz 4 als Dopplung von Satz 3 streichen. | 3.2.1: 5, 4 | 10 | O, über der Satzgrenze |
+| D2.7 | Alternativ zu D2.6 die Absätze 16 bis 18 neu schneiden: Bezug und Opportunitätskosten (6), Kopplung und obere Schranke (7), lineares Programm und Lösung (7). | 5, 5 | | O |
+| D2.8 | 3.2.1 Absatz 20 auf die Rückwirkung der Preise kürzen (Satz 3 bis 5 sind Dopplungen, siehe D3), Satz 3 bis 4 (nicht geführte Märkte) zu 3.2.3 Absatz 26. | 5, 5 | 4 | E |
+| D2.9 | 3.2.2 Absatz 23 Satz 1 bis 3 (Zeitstruktur, Variablen) mit Absatz 24 und 25 (Zielfunktion, Gleichung) verbinden, Absatz 23 Satz 4 bis 8 (Ladezustandsbilanz, Leistungsschranke) als eigenen Absatz. | 3.2.2: 5, 4 | 6 und 5 | E |
+| D2.10 | 3.2.2 Absatz 21 (Anlage) und 22 (Degradation) verbinden, Absatz 22 Satz 3 bis 4 (Verschleiß real) zu den Systemgrenzen in 3.2.1 Absatz 19. | 4, 3 | 9 | O |
+| D2.11 | 3.2.3 Absatz 26 und 27 verbinden (sechs Märkte, Jahr 2025, Tabelle). | 3.2.3: 11, 10 | 8 | E |
+| D2.12 | 3.2.3 IDC und Absatz 29 verbinden, Dopplung „dieselbe Viertelstunde mehrfach handeln“ streichen, Satz 29.4 (DA neben IDC) zu Absatz 26. | 10, 9 | 9 | E |
+| D2.13 | 3.2.3 aFRR-Leistung und Absatz 31 Satz 1 bis 3 verbinden, die Leiter (Satz 4 bis 7) als eigenen Absatz belassen oder zu den Studien in 3.2.4 Absatz 40. | 9, 8 | 10 | O |
+| D2.14 | 3.2.3 Kurative Reservierung und Absatz 34 verbinden, Absatz 34 Satz 1 bis 3 (Mindestgröße, steht in 3.2.1) streichen. | 8, 7 | 6 | E |
+| D2.15 | 3.2.4 Absatz 42 (Weber) und 43 (Festlegung) verbinden, Satz 43.3 bis 43.5 als Dopplungen streichen. | 3.2.4: 6, 5 | 9 | E |
+| D2.16 | 3.2.4 Absatz 36 Satz 11 bis 12 (Rechenaufwand) zu Absatz 40 Satz 1, Absatz 39 Satz 4 und 10 als Dopplungen streichen. | 5, 5 | 10 und 8 | E |
+| D2.17 | 3.3.1 Absatz 44 und 45 verbinden, Absatz 44 Satz 5 streichen, Absatz 45 Satz 3 bis 4 (Unterschiede) nach 3.3.2. | 3.3.1: 2, 1 | 8 | O |
+| D2.18 | 3.3.2 Absatz 46 (12 Sätze) und 48 (11 Sätze) in vier Absätze schneiden: Unterschiede (7), Prüfkriterium (5), marktübergreifend (4), je Markt (7). | 3.3.2: 2, 4 | | O, gegen die Absatzzahl |
+
+###### D3 Dopplungen in Kapitel 3
+
+| Nr. | Befund | Option | Wirkung | E |
+|---|---|---|---|---|
+| D3.1 | Ankündigung des Katalogs dreimal (Kapiteleinleitung Satz 7, 3.1 Satz 1, 3.1.1 Satz 1). | mit D2.1 erledigt | 1 Zeile | E |
+| D3.2 | 3.1.2 Absatz 5 Satz 1 und Absatz 6 Satz 1 (Akteur sagt Leistungsänderung zu). | mit D2.2 erledigt | 1 Zeile | E |
+| D3.3 | Energieanteil eines Abrufs nicht modelliert: 3.1.2 Absatz 6 Satz 6, 3.2.4 Absatz 43 Satz 3, dazu 3.2.1 Absatz 19 Satz 6. | mit D2.2 und D2.15 erledigt, bleibt in 3.2.1. | 2 Zeilen | E |
+| D3.4 | Pönale nicht bestimmt, wortgleich: 3.1.2 Absatz 10 Satz 8 und 3.2.4 Absatz 43 Satz 4. | mit D2.15 erledigt | 1 Zeile | E |
+| D3.5 | Mindestgröße dreimal: 3.1.2 Absatz 12 Satz 6, 3.2.1 Absatz 18 Satz 5 bis 7, 3.2.3 Absatz 34 Satz 1 bis 3. | mit D2.14 erledigt | 2 Zeilen | E |
+| D3.6 | Opportunitätskostenbasierter Teil des Gebots: 3.2.1 Absatz 19 Satz 8 und 3.2.4 Absatz 43 Satz 5. | 3.2.4 Satz 43.5 bleibt als Schlusssatz, 19.8 kürzen. | 1 Zeile | E |
+| D3.7 | Zahl aus Hornek (rund zehn Prozent) mit Quelle zweimal: 3.2.1 Absatz 17 Satz 2 und 3.3.2 Absatz 46 Satz 4. | In 3.3.2 auf „wie in Abschnitt 3.2.1 dargestellt“ kürzen. | 1 Zeile | E |
+| D3.8 | Tage untereinander vergleichbar, zweimal: 3.2.1 Absatz 18 Satz 1 und 3.2.2 Absatz 23 Satz 5. | 18.1 kürzen auf „Jeder Liefertag bildet ein eigenes Problem.“ | 1 Zeile | E |
+| D3.9 | Verbund aus Geboten beider Richtungen: A8 Satz 3 und 3.1.2 Absatz 13 Satz 4. | A8 Satz 3 streichen, Verbund steht in A3 und 3.1.2. | 1 Zeile | E |
+| D3.10 | Sensitivität zweimal mit „also“ erklärt: 3.1.2 Absatz 11 Satz 5 und Absatz 13 Satz 3. | In Absatz 13 die Erklärung streichen. | 1 Zeile | E |
+| D3.11 | Präqualifikation doppelt: 3.1.2 Absatz 11 Satz 1 und 2. | Satz 1 streichen, Satz 2 als Überleitung umbauen. | 1 Zeile | E |
+| D3.12 | Leistungsschranke: 3.2.2 Absatz 23 Satz 7 bis 8 und 3.2.3 Kur Satz 5. | Kur Satz 5 kürzen. | 1 Zeile | E |
+| D3.13 | Läufe je Tag: 3.2.2 Absatz 22 Satz 4, 3.2.3 Absatz 34 Satz 2, 3.2.4 Absatz 36 Satz 12, Absatz 40 Satz 1. | 40.1 streichen, 34.2 mit D2.14 weg. | 1 Zeile | E |
+| D3.14 | Kopplung über den Ladezustand als Begründung wortgleich in 3.2.4 Absatz 35 Satz 3 und 39 Satz 4. | mit D2.16 erledigt | | E |
+| D3.15 | Vorgegebener Preis zweimal in 3.2.3 Kur Satz 1 und 3. | Satz 3 auf die Variable je Viertelstunde kürzen. | 1 Zeile | E |
+| D3.16 | 2030 als Rahmen: siehe B3.10. | | | E |
+| D3.17 | Widerspruch in der aFRR-Leiter: 3.2.3 Absatz 31 Satz 6 nennt die sechste Stufe „bis zu zehn Prozent des deutschen Abrufs“, aFRR-Arbeit Satz 5 „bis zum vollen Abruf“. | Im Code (erloesaufteilung.py, SATZ_AFRR) ist Stufe 6 „frei bis 10 % des DE-Abrufs“. Der Satz bei der aFRR-Arbeit ist falsch und wird auf „bis zu zehn Prozent des deutschen Abrufs“ berichtigt. | keine | E, Sachfehler |
+| D3.18 | 3.3.1 Absatz 45 Satz 3 bis 4 nimmt die Unterschiede aus 3.3.2 vorweg. | mit D2.17 oder allein verschieben. | | O |
+
+---
+
+##### F Dopplungen in Kapitel 3, Wortlaut zur Entscheidung
+
+Stand 16.09.2026 nach der Umsetzung von A, D1 und D2. Nichts davon ist
+gestrichen. Je Nummer der Wortlaut beider Stellen und der Vorschlag. Antwort
+je Nummer: ja (Vorschlag umsetzen), nein (beide bleiben) oder eine andere
+Anweisung.
+
+| Nr. | Stelle 1 | Stelle 2 | Vorschlag |
+|---|---|---|---|
+| F1 | 3.1 Einleitung: „Aus den Befunden des Kapitels 2 folgen Anforderungen, aus denen die kurative Reservierung als Produkt entwickelt wird.“ | 3.1.1 Satz 1: „Der Katalog überführt die Befunde des vorangehenden Kapitels in Bedingungen, die sich an einem Mechanismus prüfen lassen.“ Dazu Kapiteleinleitung: „In diesem Kapitel werden die Anforderungen abgeleitet …“ | Einleitungssatz von 3.1 streichen, 3.1.1 folgt unmittelbar auf die Überschrift. |
+| F2 | 3.1.2 Absatz 5 Satz 1: „Eine kurative Reservierung verbindet den Akteur mit dem ÜNB: Der Akteur sagt eine Leistungsänderung zu, der ÜNB nimmt sie in seine Einsatzplanung auf und ruft sie im Fehlerfall ab.“ | Satz 3 desselben Absatzes: „Der Akteur sagt zu, seine Leistung im Fehlerfall um die angebotene Leistungsänderung zu verschieben, und reserviert dafür ein Leistungsband.“ | Beide behalten, Satz 1 ist die Definition, Satz 3 der Inhalt der Zusage. Nur Satz 2 „Der folgende Entwurf bestimmt die Merkmale …“ streichen, weil er ein struktureller Vorverweis ist. |
+| F3 | 3.1.2 Absatz 5 Satz 8: „Den Energieanteil eines Abrufs bildet das Modell in Abschnitt 3.2 nicht ab.“ | 3.2.4 letzter Absatz: „Den Energieanteil eines Abrufs, den der Preis der kurativen Reservierung mit abdeckt, bildet das Modell nicht ab.“ Dazu 3.2.1: „das Modell bewertet die Reservierung also ohne Abruf“ | Satz in 3.1.2 streichen, der Produktentwurf spricht nicht über das Modell. In 3.2.4 belassen. |
+| F4 | 3.1.2 Absatz 8 Satz 8: „Höhe und Form der Sanktion bestimmt die Untersuchung nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt.“ | 3.2.4 letzter Absatz: „Die Höhe der Pönale bestimmt die Untersuchung nicht, weil das Modell die daraus folgende Risikoprämie nicht trägt.“ | In 3.1.2 kürzen auf „Höhe und Form der Sanktion bleiben offen.“, die Begründung mit dem Modell steht in 3.2.4. |
+| F5 | 3.2.1 Absatz 16: „Erst die Mindestgröße von 25 MW macht die Reservierung halbstetig … Für die Mindestgröße ist je Stunde und Richtung eine Binärvariable nötig … Die Mindestgröße wird als Sensitivität geführt, wie in Abschnitt 3.2.3 beschrieben.“ | 3.2.3 Kurative Reservierung, nach der Gleichung: „Die Mindestgröße von 25 MW ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird. Im Basisfall rechnet das Modell mit stetiger Reservierung, weil jeder Tag viele Läufe verlangt. Die Mindestgröße wird als Sensitivität zugeschaltet, um ihre Wirkung zu prüfen.“ | Die drei Sätze in 3.2.3 streichen und den Verweis in 3.2.1 entfernen, weil dort alles steht. Alternativ die drei Sätze in 3.2.3 behalten und in 3.2.1 nur den Satz zur Binärvariable lassen. |
+| F6 | 3.2.1 Absatz 17 Satz 8: „Die beiden letzten Vereinfachungen wirken in eine benennbare Richtung auf den Preis: Ohne Abruf ist der Preis der opportunitätskostenbasierte Teil des Gebots, und die sicheren Zuschläge heben die entgangenen Erlöse an.“ | 3.2.4 letzter Satz: „Der ermittelte kurative Reservierungspreis ist damit der opportunitätskostenbasierte Teil des Gebots und nicht das Gebot.“ | Beide behalten, in 3.2.1 ist es die Wirkung der Vereinfachung, in 3.2.4 das Fazit der Abgrenzung. Kein Eingriff. |
+| F7 | 3.2.1 Absatz 15 Satz 5: „… eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses [Hornek].“ | 3.3.2 Satz 4: „Das Modell kennt dagegen alle Preise des Liefertages, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus [Hornek].“ | In 3.3.2 auf „…, und dieser Unterschied allein macht rund zehn Prozent des Erlöses im kontinuierlichen Intraday-Handel aus, wie in Abschnitt 3.2.1 dargestellt.“ ohne zweites Zitat. Zahl bleibt, weil das Prüfkriterium sie braucht. |
+| F8 | 3.2.1 Absatz 16 Satz 1: „Gelöst wird je Liefertag ein eigenes Problem, sodass kein Ladezustand in den Folgetag übergeht und die Tage untereinander vergleichbar bleiben.“ | 3.2.2 Bilanzabsatz: „Anfang und Ende eines Tages tragen denselben Ladezustand, damit kein Tag mit eingelagerter Energie endet und die Tage untereinander vergleichbar bleiben.“ | In 3.2.1 kürzen auf „Gelöst wird je Liefertag ein eigenes Problem.“, die Begründung steht bei der Bilanz. |
+| F9 | Anforderung A8 Satz 2: „Gegenstand der Beschaffung ist nicht das einzelne Gebot, sondern ein Verbund von Geboten, der den Engpass entlastet und bilanziell ausgeglichen ist.“ | 3.1.2 Zuschlag: „Bezuschlagt wird kein einzelnes Gebot, sondern ein Verbund aus Geboten beider Richtungen, denn die Maßnahme muss sich bilanziell ausgleichen.“ | In A8 streichen, der Verbund gehört sachlich nicht zur Umsetzbarkeit. Alternativ zu A3 verschieben. |
+| F10 | 3.1.2 Präqualifikation: „Die Sensitivität des Standorts, also die Wirkung einer Leistungsänderung an diesem Knoten auf das Betriebsmittel, …“ | 3.1.2 Zuschlag: „Für den Zuschlag vergleichen die ÜNB jedes Gebot nach seiner Wirkung, also nach der Sensitivität des Netzknotens, …“ | Im Zuschlagsabsatz „also nach der Sensitivität des Netzknotens“ streichen. |
+| F11 | 3.2.2 Bilanzabsatz: „Auf jeder Seite teilen sich der Handel, die aFRR, die kurative Reservierung und die auf beiden Seiten stehende FCR die Anschlussleistung. Eine kurativ reservierte Leistung steht deshalb keinem anderen Markt zur Verfügung.“ | 3.2.3 Kurative Reservierung: „Die Reservierung tritt in dieselbe Leistungsschranke wie die FCR und die aFRR und bindet darüber hinaus ein Ladezustandsband, das den Abruf über die Bindungsdauer deckt.“ | In 3.2.3 kürzen auf „Die Reservierung bindet ein Ladezustandsband, das den Abruf über die Bindungsdauer deckt.“ |
+| F12 | 3.2.4 erste Iteration: „… genügen 84 bis 167 Läufe je Tag, im Mittel rund 130.“ | 3.2.4 Schleifen: „Beide Iterationen zusammen verlangen je Tag einige hundert Läufe.“ Dazu 3.2.2: „weil die Preissuche das Tagesmodell einige hundert Mal je Tag löst“ | Den Satz bei den Schleifen streichen. Der Satz in 3.2.2 bleibt, weil er die Degradationsvereinfachung begründet. |
+| F13 | 3.2.4 Satz 3: „Ein Lauf löst dabei stets den ganzen Tag mit allen 24 Stunden und beiden Richtungen zugleich, weil die Stunden über den Ladezustand zusammenhängen.“ | 3.2.4 zweite Iteration: „Eine Suche je Stunde führt hier nicht zum Ziel, weil die Stunden über den Ladezustand zusammenhängen.“ | In der zweiten Iteration kürzen auf „Eine Suche je Stunde führt hier nicht zum Ziel.“ |
+| F14 | 3.2.3 Kurative Reservierung Satz 1: „Die Zielfunktion trägt für die kurative Reservierung den Erlös aus vorgegebenem Preis mal reservierter Leistung.“ | Satz 3: „Anders als die übrigen Märkte trägt die kurative Reservierung keinen beobachteten Preis, sondern einen vorgegebenen, und sie ist eine Variable je Viertelstunde und Richtung.“ | Satz 3 kürzen auf „Die reservierte Leistung ist eine Variable je Viertelstunde und Richtung.“ |
+| F15 | 3.2 Einleitung Satz 2: „Ob sich eine systemweite Integration der kurativen Systemführung lohnt, hängt für den ÜNB davon ab, ob der Nutzen der höheren Vorauslastung die Kosten der Reservierung und ihrer Umsetzung übersteigt.“ | Satz 7: „Der Preis liefert die Kostenseite der Abwägung, der der ÜNB den Nutzen der höheren Vorauslastung gegenüberstellen kann.“ Dazu 1.2 Absatz 14 Satz 4 (Einsparung nicht Gegenstand). | Satz 1, 2 und 7 der Einleitung streichen, sie behandeln die ÜNB-Sicht, die nicht Gegenstand ist. Die Einleitung beginnt dann mit „Welchen Preis ein Akteur fordert, …“. |
+| F16 | 3.2.1 Absatz 14 Satz 3: „Der ungebundene Fahrplan zeigt, wie die Anlage ohne kurative Reservierung vermarktet würde.“ | Satz 4: „Am ungebundenen Fahrplan lässt sich ablesen, was die Reservierung verdrängt.“ | Zu einem Satz: „Der ungebundene Fahrplan zeigt, wie die Anlage ohne kurative Reservierung vermarktet würde, und damit, was die Reservierung verdrängt.“ |
+| F17 | 3.2.1 Absatz 15 Satz 3: „Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, …“ | 3.2.3 Absatz 24 Satz 6: „Das Modell setzt alle Märkte eines Liefertages gleichzeitig, und jeder trägt dabei seinen eigenen Produktzuschnitt, seinen Energievorhalt und seinen Preis.“ | In 3.2.3 kürzen auf „Jeder Markt trägt seinen eigenen Produktzuschnitt, seinen Energievorhalt und seinen Preis.“ |
+| F18 | 3.2.3 IDC Satz 5: „Das Modell lässt nur Arbitrage zwischen Viertelstunden zu, während ein Betreiber dieselbe Viertelstunde mehrfach handeln und eine frühere Position … wieder glattstellen kann.“ | Satz 8: „Weil ein Betreiber dieselbe Viertelstunde mehrfach handeln kann, verbessert jede zusätzliche Handelsmöglichkeit den erzielbaren Preis, …“ | Satz 8 kürzen auf „Jede zusätzliche Handelsmöglichkeit verbessert den erzielbaren Preis, sodass der IDC insgesamt mehr trägt als ein einzelnes Geschäft zum Index.“ |
+| F19 | 1.2 Absatz 14: „Der kurative Reservierungspreis misst damit die Opportunitätskosten der Bindung, also die Erlöse, die der Betreiber an den übrigen Märkten aufgibt.“ | 3.1.2 Absatz 6 Satz 1 bis 2: „Der Akteur nimmt die kurativ gebundene Leistung aus seiner übrigen Vermarktung heraus. Daraus entstehen die Opportunitätskosten, die der Akteur über den Preis ersetzt verlangt.“ | In 3.1.2 zu einem Satz: „Weil der Akteur die kurativ gebundene Leistung aus seiner übrigen Vermarktung herausnimmt, verlangt er die Opportunitätskosten über den Preis ersetzt.“ |
+| F20 | 1.2 Absatz 14: „… über die Bindungsdauer …, also über den Zeitraum, für den die Zusage gilt“ | 3.1.2 Absatz 6 letzter Satz: „Die Bindungsdauer ist der Zeitraum, über den die Zusage nach dem Zuschlag gilt, und beträgt eine Zeitscheibe, also eine Stunde des Liefertages.“ | In 3.1.2 kürzen auf „Die Bindungsdauer beträgt eine Zeitscheibe, also eine Stunde des Liefertages.“ |
+| F21 | Kapiteleinleitung 3: „Für BESS ist die Bemessung der Vergütung im Engpassmanagement jedoch nicht abschließend geklärt.“ | 3.2 Einleitung Satz 4: „Für die kurative Reservierung besteht kein Vergütungsrahmen, an dem sich ein Akteur ausrichten könnte.“ Dazu 2.3.3 Absatz 59. | Beide behalten, die Kapiteleinleitung nennt den Befund, 3.2 zieht die Folge. Kein Eingriff. |
+| F22 | 2.3.4 Absatz 60: „… denn die mFRR bietet bei gleichem Produktschnitt den geringeren Leistungspreis.“ | 3.2.3 Absatz 24: „Die mFRR führt das Modell nicht, weil sie der aFRR im Produktschnitt gleicht und im Jahr 2025 den geringeren Leistungspreis erzielte, wie in Abschnitt 2.3.4 dargestellt.“ | In 3.2.3 kürzen auf „Die mFRR führt das Modell nicht, wie in Abschnitt 2.3.4 begründet.“ |
+| F23 | 1.2 Absatz 13: „Das Jahr 2030 dient nicht als Eingangsgröße, sondern als Rahmen …“ | 3.2.1 Absatz 18: „Der Szenariorahmen 2030 ordnet die Untersuchung qualitativ ein und geht nicht als Eingangsgröße in das Modell [NEP].“ | In 3.2.1 belassen, weil dort die Quelle steht, in 1.2 belassen, weil dort die Begründung steht. Kein Eingriff. |
+| F24 | 3.3.1 Absatz 44 Satz 3: „… des ungebundenen Fahrplans, also einer Zwischengröße des Modells.“ | Satz 5: „Der ungebundene Erlös ist eine Zwischengröße und kein Ergebnis der Arbeit.“ | Satz 5 und 6 zu einem Satz: „Weil der ungebundene Erlös kein Ergebnis der Arbeit ist, nennt die Validierung ihre Zahlen schon hier.“ |
+| F25 | 3.2.4 Absatz 42 Satz 6: „Die Kopplung über den Ladezustand wiegt bei einem Energieinhalt je Leistung von 2,5 Stunden schwer, denn …“ | 3.2.4 Absatz 43: „Anders als Anlage 5 der Festlegung … bleibt die Anlage unter der kurativen Reservierung handlungsfähig, …“ | Keine Dopplung, nur Hinweis: Absatz 42 und 43 sind jetzt verbunden und tragen 12 Sätze. Mit F3, F4 und F6 sinkt die Zahl auf 10. |
+
+Umgesetzt ohne Rückfrage, weil zwei Sätze desselben Absatzes dasselbe
+sagten: Präqualifikation in 3.1.2 (zwei Sätze zu einem), A8 Satz 1 und 2
+(These und Erläuterung zu einem Satz), A7 Satz 1 und 2 (These und Begründung
+zu einem Satz).
+
+---
+
+##### E Reihenfolge der Umsetzung, Vorschlag
+
+1. A1 und A4 (Platzierung), dann Build und Seitenzahlen messen.
+2. Sachfehler C3.15 und D3.17.
+3. Kapitel 3: D2 und D3 in einem Skript je Unterabschnitt, danach D1.
+4. Kapitel 2: C3 und C2, danach C1.
+5. Kapitel 1: B2.1, B3.1, B3.4, B3.12, dann B1, Ziel 5 Seiten (A2).
+6. Kapitelübergreifende Abgleiche B3.6 bis B3.11, C4.
+7. Fremdleser-Prüfung je geändertem Abschnitt, Protokoll, Commit je Kapitel.
+
+---
+
+##### G Offene Punkte aus den Kommentaren von chapter_3.tex
+
+Aufgenommen am 17.09.2026, als die Kapiteldatei von Kommentaren befreit wurde.
+Die Spalte Quelle nennt die Zeile im Stand vom 17.09.2026, der vollstaendig in
+`archiv/KOMMENTARBESTAND_KAP3.md` steht. Nichts davon ist umgesetzt.
+
+| Nr. | Befund | Quelle | Stand |
+|---|---|---|---|
+| G1 | Der Unterabschnitt Abgleich bestehender Marktdesignansätze ist am 08.09.2026 geparkt, sein Ort ist nicht entschieden. In Betracht kommen 3.1.2, 3.3.1 und Kapitel 5. Der vom Verfasser bestätigte Gedanke, der kapazitätsbasierte Redispatch beschaffe im Kern dieselbe Größe wie eine kurative Vorhaltung und unterscheide sich nur in Auslöser und Reaktionszeit, steht bis heute in keinem Absatz. | Z367 bis Z551 | offen, Ort zu entscheiden |
+| G2 | Die Belege ehrhart_analysis_2025, horsch_role_2017 und einsiedler_analysis_2025 sind ungeprüft, die Volltexte ließen sich nicht öffnen. Die Aussage, der Mechanismus bemesse die bereitgehaltene Kapazität statt des Eingriffs, stammt aus einem eigenen Kommentar und nicht aus der Quelle. | Z529 | vor Abgabe bestätigen oder zurücknehmen |
+| G3 | Vormerkung des Verfassers vom 09.09.2026: Der Bestand an BESS wächst, während sich der Bedarf an Regelleistung aus der Dimensionierung des Systems ergibt und nicht mitwächst, sodass die Ausschließlichkeit der kurativen Zusage die Regelleistung weniger verdrängt. Das Argument ist nicht geschrieben. | Z1477 | offen, Ort zu entscheiden |
+| G4 | Vormerkung vom 11.09.2026: der Unterschied zur Anlage 5 der Festlegung, die von gesperrter Leistung ausgeht, während das Produkt allein die zugesagte Leistung sperrt. Nach Entscheidung 1 gehört der Vergleich nach Kapitel 5. | Z5264 | offen für Kapitel 5 |
+| G5 | Die Degradationskosten von 8 Euro je Megawattstunde Durchsatz stammen aus main.py Zeile 401 und tragen dort keine Quelle. Der Code nennt die Spanne 3 bis 20 Euro je Megawattstunde, die Sensitivität sensi2_deg fährt 0 bis 18. Ob juelch_comparison_2016, garttan_battery_2025 oder rystad_energy_renewables__power_analytics_energy_2026 die 8 Euro trägt, ist ungeprüft. | Z3247, Z3347 | offen |
+| G6 | Der Aufschlag am IDC von drei Prozent im Verkauf und im Kauf stammt nach MODELL.md aus dem Battery-Revenue-Index von energy-charts, ein Eintrag dafür fehlt. Der Verfasser hat am 12.09.2026 entschieden, dass ein Beleg nicht nötig ist. | Z3873 | entschieden, Eintrag fehlt nur für den Fall eines Zitats |
+| G7 | Der Code setzt die ausgeschriebene aFRR-Menge auf 2000 MW, woraus der Anteil von rund vier Prozent folgt. Die Zahl ist als Eingangsgröße zu nennen und zu belegen. | Z4121 | offen |
+| G8 | Der Code verlangt das Ladezustandsband der Regelleistung nur am Beginn jeder Vier-Stunden-Zeitscheibe, das kurative Band in jeder Viertelstunde. Entweder nennt der Text diese Vereinfachung, oder der Code zieht nach. | Z3970 | offen |
+| G9 | Die Monotonie des Füllgrads über dem Preis ist nur für den Preis einer Stunde bei festen übrigen Preisen gesichert. Die erste Iteration hebt den einheitlichen Preis aller Stunden zugleich, sodass eine Stunde Leistung an eine Nachbarstunde verlieren kann. Der Text sagt deshalb setzt voraus und nicht gilt. Die Einschränkung gehört mit der Reihenfolge des Abstiegs und dem koordinatenweisen Minimum nach Kapitel 5. | Z4504 | offen für Kapitel 5 |
+| G10 | Die Laufzahlen 84 bis 167 stammen nach MODELL.md aus den Schwellen der 20 Sensitivitätstage und nicht aus dem Jahr 2025. Die Rechenzeit von früher 17 bis 44 Sekunden je Tag ist nach dem Umbau der zweiten Iteration nicht nachgemessen, deshalb steht im Text nur die Laufzahl. | Z4509, Z5155 | offen, Nachmessung möglich |
+| G11 | Die Überschrift von 3.2 lautet nach CLAUDE.md Modellierungsansatz und Systemgrenzen und überschneidet sich mit dem ersten Unterabschnitt. Alternative ist Modellierung des Speicherbetriebs. | Z2290 | offen |
+| G12 | Die Methodikveröffentlichung der ISEA Battery Charts fehlt als Eintrag. Ohne sie stützt sich die Beschreibung des Rolling-Intrinsic-Verfahrens allein auf semmelmann_algorithm_2024 und den Quelltext. Offen ist außerdem, ob ergänzend Grenzfallprüfungen am eigenen Modell aufgenommen werden, nämlich Wirkungsgrad eins, Vorhalteleistung null und konstanter Preis. | Z5529 | offen |
+| G13 | Vor Abgabe ist zu prüfen, ob eine Mitteilung der Beschlusskammer zu Batteriespeichern ergangen ist, denn dieser Punkt trägt die Forschungslücke. Recherchestand August 2026 ist, dass keine vorliegt. | Z6072 | offen, vor Abgabe |
+| G14 | Der Verweis auf sec:model_critique am Satz zum Optionswert ist nach Stilregel 15 ein Grenzfall, Befund S7. Zu prüfen, ob sich die Folge ohne Abschnittsnummer sagen lässt. | Z5423 | offen |

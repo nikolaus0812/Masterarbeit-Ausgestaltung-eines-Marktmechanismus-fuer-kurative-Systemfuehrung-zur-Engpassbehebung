@@ -4,11 +4,12 @@ Diese Datei liegt im Wurzelverzeichnis des Repositorys der Schriftfassung und is
 zu Beginn jeder Sitzung zu lesen. Sie bindet dich für alle Arbeiten an diesem
 Repository.
 
-Stand 14.09.2026. Sie ersetzt die Fassung vom 08.09.2026 vollständig. Anlass
-sind die Kommentare des Betreuers zur PDF-Fassung, aus denen die Stilregeln in
-Abschnitt 4 abgeleitet sind, und der Wechsel der Arbeitseinheit vom Satz auf
-den Absatz, der in `WORKFLOW.md` geregelt ist. Die alte Fassung steht in der
-Git-Historie unter 38739f0.
+Stand 08.10.2026. Fassung vom 14.09.2026, am 08.10.2026 auf den bereinigten
+Dateibestand angepasst: Alle Arbeitsdokumente sind in das Entscheidungsprotokoll
+übernommen und gelöscht, die Arbeitsweise steht dort in Anhang C des Eintrags
+vom 08.10.2026. Die Stilregeln in Abschnitt 4 stammen aus den Kommentaren des
+Betreuers vom 14.09.2026. Ältere Fassungen in der Git-Historie (38739f0,
+5e4e400).
 
 ---
 
@@ -24,35 +25,39 @@ kurativen Reservierungspreis, also den Betrag, den ein BESS für die Reservierun
 mindestens fordern muss, um mit ihr genauso viel zu verdienen wie ohne sie.
 
 ```
-main.tex                          Rahmen, Kapitel 4 bis 6 auskommentiert
+main.tex                          Rahmen
 chapters/chapter_1.tex bis chapters/chapter_6.tex
+extras/abstract.tex               Kurzfassung und Abstract
 extras/attachment.tex             Anhang A, modifizierter Weber-Ansatz
-extras/attachment_thermik.tex     Anhang B, zulaessige Ueberlastdauer, seit 15.09.2026
+extras/attachment_thermik.tex     Anhang B, zulaessige Ueberlastdauer
 extras/attachment_modell.tex      Anhang C, vollstaendiges Optimierungsproblem
 extras/attachment_validierung.tex Anhang D, Validierung je Markt
+extras/attachment_jahreslauf.tex  Anhang E, Jahreslauf mit dem Median je Tag
+extras/attachment_preisgitter.tex Anhang F, Fahrplaene der fuenf Beispieltage
+extras/attachment_redispatch.tex  Anhang G, Zeitmuster des Redispatch
+extras/attachment_ablauf.tex      Ablauf der Preissuche
 extras/abbreviations.tex          Abkuerzungsverzeichnis
 literature/literature.bib         Literaturdatei
-literature/PDFs, literature/txt   Volltexte, nicht versioniert
-figures/                          Abbildungen, PDF
+literature/PDFs, literature/txt   Volltexte, PDFs nicht versioniert
+figures/                          Abbildungen, PDF, erzeugt im Modell-Repository unter analysen/code/schrift/
 tools/pruefen.py                  Pruefsuite
-tools/quellencheck.py             Volltextsuche in den Quellen
+tools/quellencheck.py             Volltextsuche in den Quellen, mit quellen_map.tsv und quellencheck_jobs.tsv
+tools/absatzlaengen.py            Absatzlaengen je Kapitel, nur Auskunft
+tools/check_figure_collisions.py  Beruehrungen von Beschriftung und Linien in den Abbildungs-PDF
 ENTSCHEIDUNGSPROTOKOLL.md         Nachweis aller Entscheidungen, nur anhaengen, nie ganz lesen
-WORKFLOW.md                       Vorgehen fuer Korrektur, Neufassung und Kommentardurchgang
-DURCHSICHT_KAP1_3.md              Offene Vorschlaege der Durchsicht vom 15.09.2026, Liste F
-KOMMENTARE_KAP3.md                Kommentardatei, nicht genutzt, der Verfasser kommentiert im Chat
-HANDOFF.md                        Uebergabe der Sitzung vom 17.09.2026 an den naechsten Chat, zuerst lesen
-tools/kap3_durchsicht_lib.py      Hilfsklasse fuer Satz- und Absatzaenderungen mit Kommentarerhalt
-tools/extract_alle.py             Kapitel 1 bis 3 als Text mit nummerierten Absaetzen
 analysen/                         Eigene Auswertungen mit Daten und Skripten als Belege
-archiv/                           Umgesetzte Arbeitsdokumente, nur zum Nachschlagen:
-                                  AENDERUNGEN_KAP1_2.md, AENDERUNGEN_KAP3.md,
-                                  KUERZUNGEN_KAP1_2.md, STRUKTUR.md, ANWEISUNG_KOMMENTARE.md
+README.md                         Hinweise der Vorlage zu LaTeX, unveraendert
 ```
 
-Am 16.09.2026 aufgeraeumt. Die vier Arbeitsdokumente in `archiv/` sind
-vollstaendig umgesetzt, ihre Entscheidungen stehen im Protokoll. Verweise
-auf sie in dieser Datei und in `WORKFLOW.md` gelten als Verweise auf das
-Archiv. Aktiv sind allein `DURCHSICHT_KAP1_3.md` und `KOMMENTARE_KAP3.md`.
+Am 08.10.2026 aufgeraeumt. `WORKFLOW.md`, `HANDOFF.md`, die Kommentardateien,
+das Verzeichnis `archiv/` und neun Werkzeuge in `tools/` (draw.io- und
+SVG-Konverter, replot_figures, extract_alle, kap3_durchsicht_lib, pruefe_stil)
+sind geloescht, denn alle Abbildungen entstehen als PDF im Modell-Repository
+unter `analysen/code/schrift/` und die Pruefsuite deckt die Stilpruefung ab; was davon noch gilt, steht im
+Entscheidungsprotokoll im Eintrag vom 08.10.2026 (Anhaenge A bis D). Die
+Git-Historie bis 5e4e400 haelt die Dateien vor. Das Protokoll hat ueber
+24 000 Zeilen und wird nie ganz gelesen, sondern angehaengt und gezielt
+durchsucht; neue Eintraege kommen ans Ende.
 
 Build in dieser Reihenfolge, biber und nicht bibtex. Vor jeder Durchsicht am
 PDF neu bauen.
@@ -93,16 +98,24 @@ Die Arbeitseinheit ist der Absatz. Ein Absatz trägt eine Kernaussage und
 entsteht als Ganzes aus einem Absatzplan, der vor dem ersten Satz feststeht.
 Das satzweise Vorgehen mit drei Fassungen je Satz ist seit dem 14.09.2026
 abgelöst, weil es den Zusammenhang zwischen den Sätzen verloren hat. Der Ablauf
-steht in `WORKFLOW.md`, dort auch der Absatzplan, die Fremdleser-Prüfung und
-die Zettel, die du mit jedem Absatz lieferst.
+mit Absatzplan, Fremdleser-Prüfung und den Regeln für die Arbeit am Absatz
+(Abschnitt 10 der früheren `WORKFLOW.md`) steht im Entscheidungsprotokoll,
+Eintrag vom 08.10.2026, Anhang C.
 
-Die Korrektur der Kapitel 1 bis 3 nach den Änderungslisten ist am 15.09.2026
-abgeschlossen, die Listen liegen in `archiv/`. Seit dem 16.09.2026 gilt der
-Kommentardurchgang nach `WORKFLOW.md` Abschnitt 7: Der Verfasser kommentiert
-den Text in `KOMMENTARE_KAP3.md`, Claude arbeitet die Kommentare ein, und
-die Kommentare haben Vorrang vor den offenen Vorschlägen in
-`DURCHSICHT_KAP1_3.md`. Die Anweisung für die Sitzung, in der der Verfasser
-seine Kommentare diktiert, steht in `ANWEISUNG_KOMMENTARE.md`.
+Die Arbeit ist inhaltlich vollständig und mit den Kommentaren des Betreuers
+und zweier Freunde bis zum 08.10.2026 durchgesehen. Der Verfasser kommentiert
+im Chat aus dem PDF. Vor jedem Kommentardurchgang neu bauen und jedes Zitat
+gegen die Kapiteldatei prüfen, denn ein älteres PDF zitiert zurückgenommene
+Sätze. Kommentare werden in drei Stufen bearbeitet, nämlich A automatisch mit
+Tabelle Alt gegen Neu, B als Wortlaut im Widerspruchsverfahren, C als
+Grundsatzentscheidung mit Empfehlung; der Ablauf steht im Protokoll im
+Eintrag vom 08.10.2026.
+
+**Seitenbilanz.** Die Kapitel behalten ihre Länge: 129 Seiten, Kapitelanfänge
+1, 6, 30, 49, 65, 77, Literaturverzeichnis 81. Nach jeder Änderung bauen und
+die Kapitelanfänge prüfen. Abbildungen stehen mit `[H]`, deshalb kippt eine
+Seite schon bei zwei bis drei Zeilen vor einer Abbildung; Seite 5 und Seite 76
+sind bis zur letzten Zeile voll.
 
 **Subagenten nur nach Rückfrage.** Prüfagenten wie die Fremdleser-Prüfung
 sind erwünscht, kosten aber Tokens, die der Verfasser steuern will. Vor jedem
@@ -206,8 +219,7 @@ Auswertung des Marktstammdatenregisters vom 15.09.2026 in
 9 Stunden, BESS 1 bis 2 Stunden mit steigender Tendenz.
 
 **Vor der ersten Verwendung zu definieren.** Die Spalte Ort nennt die Stelle,
-an der die Definition nach `AENDERUNGEN_KAP1_2.md` stehen soll. Bis sie dort
-steht, gilt der Begriff als undefiniert.
+an der die Definition steht.
 
 | Begriff | Ort |
 |---|---|
@@ -232,8 +244,7 @@ stehen nur in Zitaten aus SOGL und InnoSys. Entschieden am 14.09.2026, V4.
 **Offen, nicht stellvertretend entscheiden.** Basispreis gegen Strikepreis,
 Aktenzeichen BK8-22-001-A gegen BK8-22-0001-A in der Literaturdatei. Bis zur
 Entscheidung keine der Stellen ändern und keinen der Ausdrücke in einem neuen
-Satz verwenden, ohne ihn zu benennen. Der Stand von V1 bis V13 steht in
-`AENDERUNGEN_KAP1_2.md` Abschnitt 0.
+Satz verwenden, ohne ihn zu benennen.
 
 ---
 
@@ -272,14 +283,15 @@ python tools/pruefen.py --alle
 Von Hand und je Absatz prüfst du zusätzlich die inhaltliche Deckung der
 Belege, die Behauptungsstärke, die Frage, ob der Absatz ein Ergebnis
 vorwegnimmt, das erst ein späteres Kapitel trägt, und die Stilregeln 1 bis 10.
-Die Fremdleser-Prüfung nach `WORKFLOW.md` Abschnitt 4 läuft je Abschnitt.
+Die Fremdleser-Prüfung nach Anhang C des Protokolleintrags vom 08.10.2026
+läuft je Abschnitt.
 
 ---
 
 ## 7 Entscheidungen
 
-Wortlaut und Begründung stehen im Protokoll, die Gliederung von Kapitel 3 in
-`STRUKTUR.md`. Hier steht nur, was beim Schreiben bindet.
+Wortlaut und Begründung stehen im Protokoll. Hier steht nur, was beim
+Schreiben bindet.
 
 ### Getroffen, nicht umkehren
 
@@ -331,10 +343,8 @@ Wortlaut und Begründung stehen im Protokoll, die Gliederung von Kapitel 3 in
 
 ### Offen, nicht stellvertretend entscheiden
 
-Die offenen Punkte stehen im Protokoll unter *Offene Punkte* und in
-`AENDERUNGEN_KAP1_2.md` Abschnitt 0 als V1 bis V13. Dazu gehören die Einheit
-des Reservierungspreises, die Dualvariablen, die Behandlung unzulässiger Läufe,
-der Eintrag für die ISEA Battery Charts und die Kürzungen A1 bis A7.
+Die offenen Punkte stehen im Protokoll unter *Offene Punkte* und, soweit sie
+vom 15.09.2026 stammen, im Eintrag vom 08.10.2026, Anhang D.
 
 ---
 

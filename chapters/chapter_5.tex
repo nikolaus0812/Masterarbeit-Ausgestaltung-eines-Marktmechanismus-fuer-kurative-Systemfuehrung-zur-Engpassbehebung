@@ -155,10 +155,10 @@ Weil die Lieferung der \ac{aFRR}-Arbeit den Preis so stark bewegt, ließe sich d
 Für eine konservative Aussage unter marktdurchschnittlichem Bietverhalten genügen der gemittelte Zuschlagspreis der \ac{aFRR}-Leistung und die anteilige Lieferung der \ac{aFRR}-Arbeit aber.
 
 Der \ac{IDC} ist mit dem \ac{ID1} je Viertelstunde abgebildet, und das Optimierungsmodell lässt nur die Arbitrage zwischen Viertelstunden zu.
-Diese Abbildung unterschätzt den Erlös am \ac{IDC} eher, denn sie lässt außer Acht, dass ein Händler dieselbe Lieferstunde mehrfach kauft und verkauft und an der Preisbewegung innerhalb dieser Stunde verdient.
+Diese Abbildung unterschätzt den Erlös am \ac{IDC} eher, denn sie lässt außer Acht, dass ein Akteur dieselbe Lieferstunde mehrfach kauft und verkauft und an der Preisbewegung innerhalb dieser Stunde verdient.
 Ein Faktor auf die Handelsspanne ist deshalb in Abschnitt~\ref{sec:sensi_idc} als Sensitivität geprüft, und er belegt, dass ein höherer Erlös am \ac{IDC} den kurativen Reservierungspreis hebt.
 Der Faktor streckt dafür jede Abweichung des Intradaypreises von seinem Tagesmittel und macht die ohnehin weit vom Tagesmittel entfernten Stunden noch schwerer verdrängbar.
-Der Vorteil des mehrfachen Handels entsteht dagegen um den mittleren Preis, denn unter pay-as-bid hebt er den Wert aller Lieferslots und nicht die Spanne.
+Der Vorteil des mehrfachen Handels entsteht dagegen um den mittleren Preis, denn unter pay-as-bid hebt er den Wert aller Lieferstunden und nicht die Spanne.
 Die vom Tagesmittel entfernten Stunden und die mehrfach gehandelten Stunden fallen nicht zusammen, sodass die Sensitivität allein die Breite der Handelsspanne misst.
 Für eine Aussage über den Vorteil des mehrfachen Handels wären die Orderbücher des \ac{IDC} nötig, sodass sein Einfluss auf den kurativen Reservierungspreis offen bleibt.
 
@@ -242,7 +242,7 @@ Die Anschlussleistungen der geplanten Anlagen sind hoch, und das Anschlussverfah
 Unter der Annahme des Anschlussverfahrens, dass alle Anlagen zugleich mit voller Leistung fahren, dürfte ein wachsender Bestand an \ac{BESS} die Grenzen der Systemsicherheit erreichen.
 Kritisch wird das Verhalten eines \ac{BESS} voraussichtlich allein in wenigen Stunden des Jahres, nämlich beim Bezug von Energie bei geringer und bei der Einspeisung bei hoher Erzeugung aus Wind und Photovoltaik.
 Eine flexible Netzanschlussvereinbarung begrenzt die Leistung in genau diesen Stunden.
-Eine Vorgabe für den Betrieb schlösse solche Stunden von vornherein aus.
+Eine Betriebsvorgabe schlösse solche Stunden von vornherein aus.
 Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten ebenfalls auf, bindet bei den hohen Anschlussleistungen aber zu viel Übertragungskapazität.
 Alle drei Wege begrenzen die Anlage, statt ihre Leistung zu nutzen.
 
@@ -283,7 +283,7 @@ Die vorgehaltene Leistung setzt dabei gerade bei den Technologien an, die im kü
 Auch der Redispatch ließe sich um eine Komponente für die vorgehaltene Leistung erweitern und mit dem kurativen Marktmechanismus vereinbaren oder vereinen, wie in Abschnitt~\ref{sec:bess_markets} am Beispiel der \ac{BESS} skizziert.
 Der \ac{ÜNB} kann nach §\,13a \ac{EnWG} eine Anlage auch vor ihrer Vermarktung begrenzen, und die Festlegung nach Abschnitt~\ref{sec:redispatch_compensation} vergütet das gesperrte Leistungsband je Viertelstunde.
 Eine Begrenzung nimmt dem Betreiber aber nur Leistung und verschafft dem \ac{ÜNB} keine Leistung auf Abruf, denn sie verpflichtet nicht zu einer Leistungsänderung innerhalb einer Reaktionszeit und erfasst den Ladezustand nicht.
-Eine Komponente für die vorgehaltene Leistung müsste deshalb die Abrufbereitschaft über die Bindungsdauer vergüten, also über die Zeit, in der eine Anlage ihr Leistungsband und bei Speichern ihr Ladezustandsband freihält, und dafür sieht die Festlegung keine Struktur vor.
+Eine Komponente für die vorgehaltene Leistung müsste deshalb die Bereitschaft zum Abruf über die Bindungsdauer vergüten, also über die Zeit, in der eine Anlage ihr Leistungsband und bei Speichern ihr Ladezustandsband freihält, und dafür sieht die Festlegung keine Struktur vor.
 Der entworfene kurative Marktmechanismus setzt deshalb eine Vergütung voraus, die nicht an der gesperrten, sondern an der vorgehaltenen Leistung ansetzt, also an der Bereitschaft zum Abruf, neben oder innerhalb des Ausgleichs nach §\,13a \ac{EnWG}.
 
 Änderungen am Marktrahmen wirken unmittelbar auf den kurativen Reservierungspreis zurück, denn der Preis folgt aus den Erlösmöglichkeiten der übrigen Märkte.
@@ -296,7 +296,7 @@ Mit einem Gebotszonensplit wäre das Engpassmanagement ein anderes, sodass der e
 
 Netzanschlussvereinbarung, Betriebsvorgabe und Sicherheitsmarge nach Abschnitt~\ref{sec:bess_markets} greifen am Verhalten des Akteurs an, statt die Kapazität des Netzes zu nutzen.
 Eine eingeplante kurative Maßnahme nutzt dagegen die Leistung des Akteurs am Engpass und macht seine Begrenzung entbehrlich, sobald an jedem betroffenen Netzknoten genügend wirksame Anlagen anbieten.
-Betriebsvorgabe, Sicherheitsmarge und Anschlussvereinbarung lösen das Problem ebenfalls, doch die Sicherheitsmarge bindet Übertragungskapazität, und Vorgabe und Anschlussvereinbarung beeinträchtigen die Erlösaussichten eines Speichers stärker als die vergütete Reservierung.
+Betriebsvorgabe, Sicherheitsmarge und Anschlussvereinbarung lösen das Problem ebenfalls, doch die Sicherheitsmarge bindet Übertragungskapazität, und Vorgabe und Anschlussvereinbarung beeinträchtigen die Erlösmöglichkeiten eines Speichers stärker als die vergütete Reservierung.
 Die flexible Netzanschlussvereinbarung bleibt dabei nötig, denn der kurative Marktmechanismus ist freiwillig.
 Ein teilnehmendes \ac{BESS} nimmt keine Anschlusskapazität weg, weil der \ac{ÜNB} seine Leistung in den kritischen Stunden abrufen kann, bei einem nicht teilnehmenden greift die Anschlussvereinbarung.
 Deren unvergütete Eingriffe schmälern jedoch die Erlöse und könnten den Zubau der Speicher hemmen, sodass die vergütete Teilnahme Netzanschluss und Netzbetrieb verbindet.
@@ -306,7 +306,6 @@ Die Voraussetzungen für die Umsetzung liegen vor allem im Betrieb, denn der \ac
 Die Auslösung hängt an der Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, wie in Abschnitt~\ref{sec:challenges} beschrieben.
 Fällt ein Glied dieser Kette aus, so bleibt die eingeplante Maßnahme im Fehlerfall aus, und das Netz steht in diesem Moment ohne die eingeplante Entlastung da.
 Die Sicherheitsbetrachtung erstreckt sich deshalb über Leitungen, Transformatoren und Schaltanlagen hinaus auf die Wege des Auslösesignals, sodass eine Redundanz in Fehlerdetektion, Anlagensteuerung und Maßnahmenabruf Voraussetzung ist.
-Die Überwachung des Netzzustands und die Steuerbarkeit der Anlagen sind dafür Voraussetzung und damit auch eine Hürde.
 Nach der Auslösung hält eine kurative Maßnahme die Leistungsänderung, bis der Engpass vergeht oder eine ablösende Maßnahme greift, für die der allgemeine Redispatch oder ein zusätzliches Produkt mit längerem Zeitfenster in Betracht kommt.
 Die Wahl der Ablösung wirkt auf den kurativen Reservierungspreis zurück, denn eine längere Anlaufzeit der Ablösung verlangt mehr vorgehaltene Energie.
 Der \ac{ÜNB} bestimmt damit über die Ablösung, wie lange eine kurative Maßnahme wirken muss.
@@ -331,4 +330,3 @@ Mit der Ausrollung tritt die zweite Anwendung hinzu, denn der \ac{ÜNB} plant di
 Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung, und beides ist heute nicht gegeben.
 Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, sondern verschiebt die begrenzenden Betriebsmittel an andere Stellen des Netzes.
 Effizienz und Preiseinfluss der kurativen Reservierung lassen sich deshalb erst in einem eingespielten Markt genau bestimmen.
-Die freie Kapazität verteilt sich damit über viele Netzknoten, sodass der Übergang von der Sicherheits- zur Effizienzmaßnahme ein Entwicklungspfad über ein gleichmäßiger belastbares Netz ist und kein Zustand.
