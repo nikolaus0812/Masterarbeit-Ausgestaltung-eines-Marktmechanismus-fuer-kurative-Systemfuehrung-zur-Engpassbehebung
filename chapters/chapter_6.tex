@@ -1,12 +1,13 @@
 \chapter{Zusammenfassung und Ausblick}
 \label{ch:conc}
 
-Das Engpassmanagement im deutschen Übertragungsnetz kostet jedes Jahr Milliarden, denn es ist präventiv angelegt: Der \ac{ÜNB} plant den Betrieb so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen dauerhaft zulässigen Grenzwert überschreitet.
+Das Engpassmanagement im deutschen Übertragungsnetz hält das (N-1)-Kriterium präventiv ein: Der \ac{ÜNB} plant den Betrieb so, dass auch nach dem Ausfall eines Betriebsmittels kein anderes seinen dauerhaft zulässigen Grenzwert überschreitet.
+Die dafür nötigen Eingriffe kosteten im Jahr 2025 vorläufig rund 3,1 Milliarden Euro.
 Die kurative Systemführung nutzt dagegen die Überlast, die ein Betriebsmittel nach dem Ausfall eines anderen Betriebsmittels für kurze Zeit aushält, und lässt damit höhere Grenzwerte für die Betriebsmittel zu.
 Dafür braucht der \ac{ÜNB} Anlagen, die nach dem Ausfall innerhalb der zulässigen Zeit ihre Leistung ändern, und die Zusage einer solchen Leistungsänderung heißt kurative Vorhaltung.
 Eine Vorhaltung kann der \ac{ÜNB} im Rahmen der gegenwärtigen Regulierung nicht anordnen, und über die Mechanismen des Engpassmanagements wird sie bislang nicht vergütet.
 Die vorliegende Arbeit hat deshalb die kurative Reservierung als Produkt entworfen, mit dem der \ac{ÜNB} die Vorhaltung marktlich beschafft, und den kurativen Reservierungspreis bestimmt, den ein Betreiber dafür mindestens fordern muss.
-Das Optimierungsmodell bestimmt den Preis für ein \ac{BESS} aus der Sicht seines Betreibers, mit den beobachteten Preisen des Jahres 2025 an den kurzfristigen Strommärkten und in der Regelleistung.
+Den Preis bestimmt ein Optimierungsmodell, das den Betrieb eines \ac{BESS} an den kurzfristigen Strommärkten und in der Regelleistung mit den beobachteten Preisen des Jahres 2025 Tag für Tag optimiert und den kleinsten Preis sucht, zu dem der Betreiber eine Stunde vollständig reserviert.
 Eingeordnet wird der Entwurf für das Trendjahr des \ac{NEP}, in dem Wind, Photovoltaik und Speicher den Hauptanteil der Leistung stellen.
 Vier Erkenntnisse folgen aus den Ergebnissen, und sie werden im Folgenden benannt und auf die kurative Systemführung bezogen.
 
@@ -62,12 +63,16 @@ Anfangs sichert die kurative Reservierung an den wenigen begrenzenden Netzknoten
 Mit dem Netzausbau verschieben sich die begrenzenden Betriebsmittel an andere Stellen des Netzes, und ein eingespielter Markt nutzt die Kapazität an vielen Netzknoten planmäßig aus.
 
 Das Verhalten der Speicher ließe sich auch mit Vorgaben für den Betrieb, Sicherheitsmargen oder Netzanschlussvereinbarungen beherrschen.
-Eine Sicherheitsmarge in der Betriebsplanung bände dafür Übertragungskapazität und wäre damit ineffizient, eine Betriebsvorgabe und eine Anschlussvereinbarung beeinträchtigten die Erlösaussichten eines Speichers, und die kurative Reservierung griffe am wenigsten ein, weil sie die Vorhaltung vergütete.
-Flexible Netzanschlussvereinbarungen fingen zudem den Notfall auf, wenn ein Speicher nicht am kurativen Markt teilnähme, denn die Teilnahme bliebe freiwillig.
-Ein teilnehmender Speicher nähme keine Anschlusskapazität weg, weil der \ac{ÜNB} seine Leistung in den kritischen Stunden abrufen könnte, ein nicht teilnehmender würde in diesen Stunden unvergütet begrenzt.
-Solche Eingriffe schmälerten die Erlöse und könnten den Zubau der Speicher hemmen.
-Die kurative Reservierung verbände deshalb beides: Zusammen mit der Netzanschlussvereinbarung sicherte sie das Netz gegen schädliche Fahrplanänderungen der Speicher, und sie ließe den Betreibern planbare Erlöse, weil der \ac{ÜNB} die Vorhaltung vergütete und der Betreiber ihren Preis selbst böte.
-So erschlösse sie mehr Anschlusskapazität am bestehenden Netz, ohne dass die Übertragungskapazität wüchse.
+Eine Sicherheitsmarge in der Betriebsplanung müsste der \ac{ÜNB} dauerhaft mit präventivem Redispatch freihalten und wäre damit ineffizient.
+Eine Betriebsvorgabe und eine Anschlussvereinbarung begrenzten den Speicher unvergütet und beeinträchtigten damit seine Erlösaussichten.
+Die kurative Reservierung griffe am wenigsten ein, weil sie die Vorhaltung vergütete und der Betreiber ihren Preis selbst böte.
+Die Teilnahme am kurativen Markt bliebe freiwillig.
+Ein teilnehmender Speicher nähme keine Anschlusskapazität in Anspruch, denn der \ac{ÜNB} könnte seine Leistung in den kritischen Stunden abrufen.
+Ein Speicher, der nicht teilnähme, fiele in diesen Stunden unter die flexible Netzanschlussvereinbarung und würde unvergütet begrenzt.
+Das Netz bliebe so in jedem Fall gesichert.
+Für den Betreiber schmälerte die unvergütete Begrenzung die Erlöse und könnte den Zubau hemmen, sodass die vergütete Teilnahme für ihn der bessere Weg wäre.
+Reservierung und Anschlussvereinbarung sicherten das Netz damit gemeinsam gegen schädliche Fahrplanänderungen, und die Reservierung ließe den Betreibern zugleich planbare Erlöse.
+So erschlösse die kurative Systemführung mehr Anschlusskapazität am bestehenden Netz, ohne das Redispatchvolumen zu erhöhen.
 
 Wie viel kurative Systemführung das Netz in den nächsten Jahren braucht, hängt an Netzausbau, Nachfrage, Marktdesign und Anlagenbestand.
 Bleibt der Netzausbau hinter dem Zubau von Wind, Photovoltaik und Speichern zurück, so wachsen die Engpässe mit der Einspeisung.
