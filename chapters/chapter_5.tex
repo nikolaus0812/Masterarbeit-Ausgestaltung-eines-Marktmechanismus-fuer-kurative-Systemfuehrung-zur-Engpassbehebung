@@ -284,7 +284,7 @@ Auch der Redispatch ließe sich um eine Komponente für die vorgehaltene Leistun
 Der \ac{ÜNB} kann nach §\,13a \ac{EnWG} eine Anlage auch vor ihrer Vermarktung begrenzen, und die Festlegung nach Abschnitt~\ref{sec:redispatch_compensation} vergütet das gesperrte Leistungsband je Viertelstunde.
 Eine Begrenzung nimmt dem Betreiber aber nur Leistung und verschafft dem \ac{ÜNB} keine Leistung auf Abruf, denn sie verpflichtet nicht zu einer Leistungsänderung innerhalb einer Reaktionszeit und erfasst den Ladezustand nicht.
 Eine Komponente für die vorgehaltene Leistung müsste deshalb die Abrufbereitschaft über die Bindungsdauer vergüten, also über die Zeit, in der eine Anlage ihr Leistungsband und bei Speichern ihr Ladezustandsband freihält, und dafür sieht die Festlegung keine Struktur vor.
-Der entworfene kurative Marktmechanismus setzt deshalb eine Vergütung der vorgehaltenen Leistung im Engpassmanagement voraus, neben oder innerhalb des Ausgleichs nach §\,13a \ac{EnWG}.
+Der entworfene kurative Marktmechanismus setzt deshalb eine Vergütung voraus, die nicht an der gesperrten, sondern an der vorgehaltenen Leistung ansetzt, also an der Bereitschaft zum Abruf, neben oder innerhalb des Ausgleichs nach §\,13a \ac{EnWG}.
 
 Änderungen am Marktrahmen wirken unmittelbar auf den kurativen Reservierungspreis zurück, denn der Preis folgt aus den Erlösmöglichkeiten der übrigen Märkte.
 Der einheitliche Börsenpreis der deutschen Gebotszone bildet die Belastung der Übertragungswege nicht ab.
@@ -296,10 +296,11 @@ Mit einem Gebotszonensplit wäre das Engpassmanagement ein anderes, sodass der e
 
 Netzanschlussvereinbarung, Betriebsvorgabe und Sicherheitsmarge nach Abschnitt~\ref{sec:bess_markets} greifen am Verhalten des Akteurs an, statt die Kapazität des Netzes zu nutzen.
 Eine eingeplante kurative Maßnahme nutzt dagegen die Leistung des Akteurs am Engpass und macht seine Begrenzung entbehrlich, sobald an jedem betroffenen Netzknoten genügend wirksame Anlagen anbieten.
-Die drei Wege sind damit Übergangslösungen, bis die Einbindung in das Engpassmanagement steht.
-Ein auf \ac{BESS} abgestimmtes Anschlussverfahren und die Einbindung in das Engpassmanagement erlauben zusammen mehr Speicherleistung am bestehenden Netz.
-Der Nutzen für das Stromsystem liegt damit nicht allein in der vermiedenen Redispatchmaßnahme, sondern in der zusätzlich anschließbaren Speicherleistung, die dem System in den kritischen Stunden als Flexibilität zur Verfügung steht.
-Die kurative Systemführung ist damit nicht allein ein Werkzeug des Netzbetriebs, sondern unterstützt den Ausbau der Speicher am bestehenden Netz.
+Betriebsvorgabe und Sicherheitsmarge sind damit Übergangslösungen, bis die Einbindung in das Engpassmanagement steht.
+Die flexible Netzanschlussvereinbarung gehört dagegen zur Lösung, denn der kurative Marktmechanismus bleibt freiwillig.
+Ein teilnehmendes \ac{BESS} nimmt keine Anschlusskapazität weg, weil der \ac{ÜNB} seine Leistung in den kritischen Stunden abrufen kann, und bei einem nicht teilnehmenden greift im Notfall die Anschlussvereinbarung.
+Deren unvergütete Eingriffe schmälern jedoch die Erlöse und könnten den Zubau der Speicher hemmen, sodass die vergütete Teilnahme der Weg ist, der Netzanschluss und Netzbetrieb verbindet.
+Die Übertragungskapazität wächst dabei nicht, sie wird in den kritischen Stunden nur gezielter genutzt, sodass der Nutzen nicht allein in der vermiedenen Redispatchmaßnahme liegt, sondern in der zusätzlich anschließbaren Leistung von Speichern, Erzeugungsanlagen und Lasten.
 
 Die Voraussetzungen für die Umsetzung liegen vor allem im Betrieb, denn der \ac{ÜNB} muss die bezuschlagten Gebote als kuratives Maßnahmenset durch Betriebsplanung, Scharfschaltung und Auslösung führen.
 Die Auslösung hängt an der Wirkungskette aus Fehlererkennung, Signalübertragung und Anlagenreaktion, wie in Abschnitt~\ref{sec:challenges} beschrieben.
@@ -324,11 +325,11 @@ Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführun
 Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, die Höherauslastung, sondern ihr Anlass und ihr Maßstab.
 Heute entsteht der Bedarf aus kurzfristigen Fahrplanänderungen nach der letzten Vorschaurechnung, wie in Abschnitt~\ref{sec:motivation} beschrieben.
 Ein Betriebsmittel, das in der Planung (N-1)-sicher belastet war, verliert durch die Fahrplanänderung eines \ac{BESS} seine Reserve für den Ausfall eines anderen Betriebsmittels, und kein präventives Instrument greift mehr.
-Eine an diesem Netzknoten eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, denn die Höherauslastung tritt erst im Fehlerfall ein und wird von der eingeplanten Maßnahme abgefangen.
-In dieser Anwendung sichert die kurative Reservierung den Betrieb gegen Fahrplanänderungen ab, die kein anderes Instrument auffängt.
+Eine am Vortag vorsorglich an diesem Netzknoten eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, denn die Höherauslastung tritt erst im Fehlerfall ein, und die Maßnahme fängt sie ab.
+In dieser Anwendung sichert die vorsorgliche Reservierung den Betrieb gegen Fahrplanänderungen ab, die kein anderes Instrument auffängt.
 Die Bedarfsermittlung nach Abschnitt~\ref{sec:product_parameters} müsste dafür neben den festgestellten Überlastungen eine Marge für solche Fahrplanänderungen enthalten.
 Mit der Ausrollung tritt die zweite Anwendung hinzu, denn der \ac{ÜNB} plant die Höherauslastung an vielen Netzknoten von vornherein ein und spart präventiven Redispatch.
 Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung, und beides ist heute nicht gegeben.
-Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, verschiebt aber die Begrenzung von einzelnen Betriebsmitteln auf ganze Übertragungswege, denn ein ausgebauter Übertragungsweg ist über seine Länge einheitlich ausgelegt.
+Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, sondern verschiebt die begrenzenden Betriebsmittel an andere Stellen des Netzes.
 Effizienz und Preiseinfluss der kurativen Reservierung lassen sich deshalb erst in einem eingespielten Markt genau bestimmen.
 Die freie Kapazität verteilt sich damit über viele Netzknoten, sodass der Übergang von der Sicherheits- zur Effizienzmaßnahme ein Entwicklungspfad über ein gleichmäßiger belastbares Netz ist und kein Zustand.
