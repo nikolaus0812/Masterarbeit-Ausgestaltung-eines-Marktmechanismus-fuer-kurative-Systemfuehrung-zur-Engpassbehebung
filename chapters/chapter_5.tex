@@ -250,7 +250,7 @@ Ein \ac{BESS} muss deshalb in das Engpassmanagement eintreten, statt am Netzansc
 Ein \ac{BESS} ist heute durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und der \ac{ÜNB} setzt es im Engpassmanagement bislang nicht ein.
 Für den präventiven Redispatch ist die Einbindung schwer, denn die kostenbasierte Vergütung nach dem modifizierten Weber-Ansatz in Anhang~\ref{anh:weber} bewertet jede Viertelstunde für sich.
 Bei einem \ac{BESS} mit ein bis zwei Stunden Energieinhalt je Leistung koppelt der Ladezustand die Viertelstunden, wie in Abschnitt~\ref{sec:weber_limits} dargestellt.
-Die Opportunität des Speichers lässt sich deshalb je Maßnahme nicht verlässlich bemessen.
+Strukturelle Engpässe über Stunden kann ein Speicher mit seinem Energieinhalt ohnehin nicht heilen, während der Redispatch die kurzfristigen Engpässe aus seinen eigenen Fahrplanänderungen nicht bewirtschaften kann.
 Die kurative Systemführung bietet sich dagegen an, denn sie vergütet die Vorhaltung und nicht den Eingriff.
 Der kurative Marktmechanismus bindet ein \ac{BESS} damit in das Engpassmanagement ein und nimmt dem Betreiber mit der Reservierung eines Leistungsbandes die Leistung, mit der er den Engpass verschärfen könnte.
 Ein Zuschlag gibt dem Betreiber zugleich die Rückmeldung, dass seine Anlage am Engpass wirkt.
@@ -296,10 +296,10 @@ Mit einem Gebotszonensplit wäre das Engpassmanagement ein anderes, sodass der e
 
 Netzanschlussvereinbarung, Betriebsvorgabe und Sicherheitsmarge nach Abschnitt~\ref{sec:bess_markets} greifen am Verhalten des Akteurs an, statt die Kapazität des Netzes zu nutzen.
 Eine eingeplante kurative Maßnahme nutzt dagegen die Leistung des Akteurs am Engpass und macht seine Begrenzung entbehrlich, sobald an jedem betroffenen Netzknoten genügend wirksame Anlagen anbieten.
-Betriebsvorgabe und Sicherheitsmarge sind damit Übergangslösungen, bis die Einbindung in das Engpassmanagement steht.
-Die flexible Netzanschlussvereinbarung gehört dagegen zur Lösung, denn der kurative Marktmechanismus bleibt freiwillig.
-Ein teilnehmendes \ac{BESS} nimmt keine Anschlusskapazität weg, weil der \ac{ÜNB} seine Leistung in den kritischen Stunden abrufen kann, und bei einem nicht teilnehmenden greift im Notfall die Anschlussvereinbarung.
-Deren unvergütete Eingriffe schmälern jedoch die Erlöse und könnten den Zubau der Speicher hemmen, sodass die vergütete Teilnahme der Weg ist, der Netzanschluss und Netzbetrieb verbindet.
+Betriebsvorgabe, Sicherheitsmarge und Anschlussvereinbarung lösen das Problem ebenfalls, doch die Sicherheitsmarge bindet Übertragungskapazität, und Vorgabe und Anschlussvereinbarung beeinträchtigen die Erlösaussichten eines Speichers stärker als die vergütete Reservierung.
+Die flexible Netzanschlussvereinbarung bleibt dabei nötig, denn der kurative Marktmechanismus ist freiwillig.
+Ein teilnehmendes \ac{BESS} nimmt keine Anschlusskapazität weg, weil der \ac{ÜNB} seine Leistung in den kritischen Stunden abrufen kann, bei einem nicht teilnehmenden greift die Anschlussvereinbarung.
+Deren unvergütete Eingriffe schmälern jedoch die Erlöse und könnten den Zubau der Speicher hemmen, sodass die vergütete Teilnahme Netzanschluss und Netzbetrieb verbindet.
 Die Übertragungskapazität wächst dabei nicht, sie wird in den kritischen Stunden nur gezielter genutzt, sodass der Nutzen nicht allein in der vermiedenen Redispatchmaßnahme liegt, sondern in der zusätzlich anschließbaren Leistung von Speichern, Erzeugungsanlagen und Lasten.
 
 Die Voraussetzungen für die Umsetzung liegen vor allem im Betrieb, denn der \ac{ÜNB} muss die bezuschlagten Gebote als kuratives Maßnahmenset durch Betriebsplanung, Scharfschaltung und Auslösung führen.
@@ -319,7 +319,6 @@ Für den Betrieb bleiben die Redundanz der Wirkungskette, der Nachweis der Verf�
 Für das System liefert die Perspektive der einzelnen Anlage keine Mengenaussage.
 Eine Hochrechnung setzte eine feste Wirksamkeit je Netzknoten voraus, doch die vorherrschende Erzeugungssituation dürfte sie über die Jahre verschieben.
 Eine systemweite Aussage verlangt deshalb eine Modellkette an einem Datensatz der Netzentwicklungsplanung, nämlich eine Marktsimulation mit der Reservierung kurativer Leistung, eine Lastflussrechnung darauf und eine Redispatchplanung mit den eingeplanten kurativen Maßnahmen.
-Am Ergebnis dieser Modellkette lässt sich das Produkt wirtschaftlich bewerten.
 Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführung das Engpassmanagement dauerhaft entlastet.
 
 Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, die Höherauslastung, sondern ihr Anlass und ihr Maßstab.
