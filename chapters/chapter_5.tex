@@ -247,7 +247,7 @@ Eine Sicherheitsmarge in der Betriebsplanung fängt ein solches Verhalten ebenfa
 Alle drei Wege begrenzen die Anlage, statt ihre Leistung zu nutzen.
 
 Ein \ac{BESS} muss deshalb in das Engpassmanagement eintreten, statt am Netzanschluss begrenzt zu werden.
-Ein \ac{BESS} ist heute durch die kostenbasierte Vergütung kein Teil des Redispatchregimes, und der \ac{ÜNB} setzt es im Engpassmanagement bislang nicht ein.
+Ein \ac{BESS} fällt seit dem Redispatch~2.0 unter §\,13a \ac{EnWG}, doch seine Bemessung ist offen, und der \ac{ÜNB} setzt es im Engpassmanagement bislang nicht ein.
 Für den präventiven Redispatch ist die Einbindung schwer, denn die kostenbasierte Vergütung nach dem modifizierten Weber-Ansatz in Anhang~\ref{anh:weber} bewertet jede Viertelstunde für sich.
 Bei einem \ac{BESS} mit ein bis zwei Stunden Energieinhalt je Leistung koppelt der Ladezustand die Viertelstunden, wie in Abschnitt~\ref{sec:weber_limits} dargestellt.
 Strukturelle Engpässe über Stunden kann ein Speicher mit seinem Energieinhalt ohnehin nicht heilen, während der Redispatch die kurzfristigen Engpässe aus seinen eigenen Fahrplanänderungen nicht bewirtschaften kann.
@@ -317,16 +317,15 @@ Für den Preis sind die Wahrscheinlichkeit eines Abrufs und damit der Optionswer
 Für den Betrieb bleiben die Redundanz der Wirkungskette, der Nachweis der Verfügbarkeit und die Häufigkeit und Dauer eines Abrufs im Echtbetrieb offen, denn an ihnen hängt die Verbindlichkeit der Zusage.
 Für das System liefert die Perspektive der einzelnen Anlage keine Mengenaussage.
 Eine systemweite Aussage verlangt deshalb eine Modellkette an einem Datensatz der Netzentwicklungsplanung, nämlich eine Marktsimulation mit der Reservierung kurativer Leistung, eine Lastflussrechnung darauf und eine Redispatchplanung mit den eingeplanten kurativen Maßnahmen.
-Erst mit diesen Antworten lässt sich entscheiden, ob die kurative Systemführung das Engpassmanagement dauerhaft entlastet.
 
-Mit einer systemweiten Ausrollung ändert sich nicht der Zweck der kurativen Systemführung, die Höherauslastung, sondern ihr Anlass und ihr Maßstab.
+Mit einer systemweiten Ausrollung ändert sich nicht der Ansatz der kurativen Systemführung, die Nutzung der thermischen Reserve, sondern ihr Anlass und ihr Maßstab.
 Heute entsteht der Bedarf aus kurzfristigen Fahrplanänderungen nach der letzten Vorschaurechnung, wie in Abschnitt~\ref{sec:motivation} beschrieben.
-Ein Betriebsmittel, das in der Planung (N-1)-sicher belastet war, verliert durch die Fahrplanänderung eines \ac{BESS} seine Reserve für den Ausfall eines anderen Betriebsmittels, und der \ac{ÜNB} kann ihn nur noch mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch weniger Anlagen absichern.
-Eine am Vortag vorsorglich an diesem Netzknoten eingeplante kurative Reservierung stellt die (N-1)-Sicherheit wieder her, denn die Überlast tritt erst im Fehlerfall ein, und die Maßnahme fängt sie ab.
-In dieser Anwendung sichert die vorsorgliche Reservierung den Betrieb gegen Fahrplanänderungen ab, die sonst nur der kurzfristige Redispatch weniger Anlagen auffängt.
+Ein Betriebsmittel, das in der Planung (N-1)-sicher belastet war, verliert durch die Fahrplanänderung eines \ac{BESS} seine Reserve für den Ausfall eines anderen Betriebsmittels, und der \ac{ÜNB} sichert das Betriebsmittel dann mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch weniger Anlagen ab.
+Eine am Vortag vorsorglich an diesem Netzknoten eingeplante kurative Reservierung sichert das (N-1)-Kriterium vorab ab, denn die Überlast tritt erst im Fehlerfall ein, und die Maßnahme fängt sie ab.
+In dieser Anwendung sichert die vorsorgliche Reservierung den Betrieb gegen Fahrplanänderungen ab, die der \ac{ÜNB} sonst mit Schaltmaßnahmen, Phasenschiebern und kurzfristigem Redispatch weniger Anlagen auffängt.
 Nach Abschnitt~\ref{sec:prev_vs_cur} ist das der kurative Redispatch, während die zweite Anwendung die kurative Höherauslastung ist.
 Die Bedarfsermittlung nach Abschnitt~\ref{sec:product_parameters} müsste dafür neben den festgestellten Überlastungen eine Marge für solche Fahrplanänderungen enthalten.
 Mit der Ausrollung tritt die zweite Anwendung hinzu, denn der \ac{ÜNB} plant die Höherauslastung an vielen Netzknoten von vornherein ein und spart präventiven Redispatch.
-Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung, und beides ist heute nicht gegeben.
+Voraussetzung sind ein Bestand wirksamer Anlagen je Netzknoten und ein verlässlicher Prozess der Einplanung.
 Der Netzausbau nimmt dem Engpassmanagement den Bedarf nicht ab, sondern verschiebt die begrenzenden Betriebsmittel an andere Stellen des Netzes.
 Effizienz und Preiseinfluss der kurativen Reservierung lassen sich deshalb erst in einem eingespielten Markt genau bestimmen.

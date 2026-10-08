@@ -157,7 +157,7 @@ Die Kopplung des Ladezustands bindet auch die Stunden vor einer Zeitscheibe, wei
 Alle Märkte entscheidet das Modell gemeinsam und mit vollständiger Preiskenntnis, während der Akteur in Wirklichkeit nacheinander entscheidet, von der \ac{FCR} am Vortag bis zum regelzoneninternen Handel fünf Minuten vor Lieferbeginn.
 Die Optimierung in einem Lauf mit vollständiger Preiskenntnis ist gewählt, weil eine Preisprognose dem Ergebnis eine weitere Annahme hinzufügte, deren Fehler sich vom Effekt der Reservierung nicht trennen ließe.
 Der Abstand zum Betrieb eines Akteurs ist dabei bekannt und begrenzt, denn eine prognosegestützte Strategie erreicht im kontinuierlichen Intraday-Handel rund neunzig Prozent des unter vollständiger Preiskenntnis erzielbaren Erlöses \cite{hornek_value_2025}.
-Der Erlös des Modells ist damit eine obere Schranke der übrigen Vermarktung.
+Der Erlös des Modells liegt damit tendenziell über dem eines realen Betriebs.
 
 Gelöst wird je Liefertag ein eigenes Problem, sodass kein Ladezustand in den Folgetag übergeht und die Tage untereinander vergleichbar bleiben.
 Zielfunktion und Nebenbedingungen sind linear, sodass das Problem im Basisfall ein lineares Programm ist und die kurative Reservierung jeden Wert zwischen null und der Anschlussleistung annehmen darf.
@@ -319,7 +319,7 @@ Die positive und die negative Reservierung betrachtet das Modell getrennt, jede 
     \label{eq:erloes_kur}
     E^{\mathrm{kur}} = \Delta t \sum_{t \in \mathcal{T}} \sum_{r} \pi_{s(t),r} \, P^{\mathrm{kur}}_{s(t),r}
 \end{equation}
-Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts, sodass eine Stunde entweder ungebunden bleibt oder mit mindestens diesem Wert reserviert wird, wie in Abschnitt~\ref{sec:model_scope} beschrieben.
+Die Mindestgröße von 25\,\si{MW} ist ein Parameter des Produkts und wird im Optimierungsmodell allein in der Sensitivität gesetzt, wie in Abschnitt~\ref{sec:model_assumptions} beschrieben.
 
 \label{sec:model_scope_verification}
 
@@ -449,7 +449,7 @@ Gegen die bekannte Preisreihe lädt der Speicher in den günstigsten und entläd
 Die Spanne des zweiten Zyklus fällt kleiner aus als die des ersten, weil die Zeitscheiben nach dem Preis geordnet zum Einsatz kommen.
 
 Für das Jahr 2025 weist der Revenue-Index marktübergreifend 260,0 Tausend Euro je Megawatt und Jahr aus.
-Je Markt allein erzielt die Bezugsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
+Je Markt allein weist der Revenue-Index für die Vergleichsanlage 107,4 Tausend Euro je Megawatt und Jahr in der \ac{FCR}, 221,3 Tausend Euro je Megawatt und Jahr in der \ac{aFRR} mit Leistung und Arbeit, 89,2 Tausend Euro je Megawatt und Jahr am \ac{DA} und 134,1 Tausend Euro je Megawatt und Jahr im kontinuierlichen Intraday-Handel.
 Den Werten je Markt allein stehen Jahresläufe des Optimierungsmodells gegenüber, in denen die übrigen Märkte abgeschaltet sind.
 Dem marktübergreifenden Wert steht der Referenzerlös aus allen Märkten gegenüber, weil das Optimierungsmodell diese Märkte ebenfalls gemeinsam bedient.
 Weil der Revenue-Index keinen \ac{DA} im marktübergreifenden Wert führt, steht ihm dort der Erlös des Optimierungsmodells aus beiden Energiemärkten zusammen gegenüber.

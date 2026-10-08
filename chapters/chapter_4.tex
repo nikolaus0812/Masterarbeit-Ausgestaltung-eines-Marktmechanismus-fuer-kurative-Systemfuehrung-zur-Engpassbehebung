@@ -26,8 +26,8 @@ Am 11.02.2025 tragen die Handelsmärkte den Betrieb, denn der Ladezustand zeigt 
 Der \ac{DA} und der \ac{IDC} bleiben dort bis zu höheren Preisen belegt als die \ac{aFRR}-Leistung.
 Ab 50\,\EurMWh{} ist an diesem Tag die volle Leistung von 200\,\si{MW} über alle 24 Stunden kurativ reserviert.
 
-Am 06.05.2025 tritt als einzigem Beispieltag die \ac{FCR} auf, nämlich in 16 der 96 Zeitscheiben, und sie ist schon bei 10\,\EurMWh{} verdrängt.
-Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung kaum verdrängen, denn sie bleibt auch beim höchsten Preis vorgehalten.
+Am 06.05.2025 tritt als einzigem Beispieltag die \ac{FCR} auf, nämlich in 16 der 96 Viertelstunden, und sie ist schon bei 10\,\EurMWh{} verdrängt.
+Am 15.05.2025 lässt sich die \ac{aFRR}-Leistung nicht vollständig verdrängen, denn ein Teil bleibt auch beim höchsten Preis vorgehalten.
 Die Bezugsanlage bleibt dort zu 11 Prozent ungebunden.
 Am 26.08.2025 bleibt der \ac{IDC} bis zum höchsten Preis belegt, während der \ac{DA} dort als erster Markt verdrängt wird.
 
@@ -123,7 +123,7 @@ In der Laderichtung tragen zwei Ursachen, nämlich ein hoher Leistungspreis der 
 Wer in einer Stunde mit negativem Preis lädt, wird dafür bezahlt, und die Ladereservierung verhindert genau diese Einnahme.
 Der kurative Reservierungspreis erreicht in der Entladerichtung 89 Prozent des höchsten Marktpreises derselben Stunde und übersteigt ihn in keiner der 20 Stunden um mehr als ein Viertel, sodass die Höhe dort aus dieser einen Stunde folgt und nicht aus der Kopplung benachbarter Stunden.
 In der Laderichtung übersteigen 7 der 20 Stunden den höchsten Marktpreis derselben Stunde um mehr als die Hälfte.
-Ein Preis über dem höchsten Marktpreis derselben Stunde ist möglich, weil die Reservierung nach Abschnitt~\ref{sec:reservation_price_search} neben der Leistung ein Ladezustandsband bindet und damit auch die Vermarktung benachbarter Stunden verdrängt.
+Ein Preis über dem höchsten Marktpreis derselben Stunde ist möglich, weil die Reservierung nach Abschnitt~\ref{sec:input_data} neben der Leistung ein Ladezustandsband bindet und damit auch die Vermarktung benachbarter Stunden verdrängt.
 Für die sieben Stunden ist das nicht geprüft.
 
 Die Verteilung des kurativen Reservierungspreises ist damit schief, denn einzelne Stunden treiben ihn weit über das Niveau der übrigen.
@@ -263,7 +263,7 @@ Fällt allein die Lieferung der Arbeit weg, so sinkt der Median der Ladereservie
 Die \ac{aFRR}-Arbeit wiegt in der Laderichtung damit schwerer als in der Entladerichtung.
 Der Grenzpreis des letzten Zuschlags hebt den Median in beiden Richtungen um 16 Prozent, das obere Quartil aber nur um 4,6\,\EurMWh{} und 4,9\,\EurMWh{}.
 Das Maximum steigt dagegen von 1008\,\EurMWh{} auf 4687\,\EurMWh{} und von 510\,\EurMWh{} auf 1920\,\EurMWh{}, also auf das 4,6- und das 3,8-Fache, ablesbar an den Werten am oberen Ende der Whisker in Abbildung~\ref{fig:sensi_afrr_leistung}.
-Der Grenzpreis verschiebt somit allein den oberen Rand der Verteilung und vergrößert ihre Schieflage, denn das arithmetische Mittel der Entladereservierung steigt vom 1,9- auf das 2,3-Fache des Medians.
+Der Grenzpreis verschiebt somit vor allem den oberen Rand der Verteilung und vergrößert ihre Schieflage, denn das arithmetische Mittel der Entladereservierung steigt vom 1,9- auf das 2,3-Fache des Medians.
 
 In Abbildung~\ref{fig:sensi_afrr_energie} ist daneben die Lieferung der Arbeit bei gleichbleibendem Zuschlagspreis der Leistung variiert, nämlich dem gemittelten.
 Darf die Bezugsanlage bis zur eigenen Reservierung liefern, steigt der Median um 54 Prozent in der Entlade- und um 110 Prozent in der Laderichtung, ausgehend von 12,22\,\EurMWh{} und 9,85\,\EurMWh{}.
