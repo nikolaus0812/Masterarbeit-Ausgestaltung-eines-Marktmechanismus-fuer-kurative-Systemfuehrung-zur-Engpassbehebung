@@ -16,8 +16,8 @@ Betreuers vom 14.09.2026. Ältere Fassungen in der Git-Historie (38739f0,
 ## 1 Gegenstand
 
 Masterarbeit am IAEW der RWTH Aachen mit dem Titel *Ausgestaltung eines
-Marktmechanismus für kurative Systemführung zur Engpassbehebung*. Abgabe am
-15.10.2026, Kolloquium am 12.10.2026. Deutschsprachig, LaTeX mit KOMA-Script und
+Marktmechanismus für kurative Systemführung im Engpassmanagement*. Abgabe am
+09.10.2026, Kolloquium am 12.10.2026. Deutschsprachig, LaTeX mit KOMA-Script und
 biblatex.
 
 Die Arbeit entwirft die kurative Reservierung als Produkt und bestimmt den
